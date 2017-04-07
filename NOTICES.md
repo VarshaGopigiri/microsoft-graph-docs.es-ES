@@ -1,0 +1,5 @@
+#<a name="third-party-notices-for-microsoft-graph-explorer"></a>Avisos de terceros para el Explorador de Microsoft Graph
+
+Este proyecto incorpora material de los proyectos listados a continuación (en conjunto, "código de terceros"). Microsoft no es el autor original del código de terceros. Los avisos de licencias y copyright originales, bajo los cuales Microsoft recibió el código de terceros, figuran a continuación junto al texto completo de dichas licencias. Estos avisos y licencias se proporcionan únicamente con fines informativos. Este código de terceros se le licencia bajo los términos establecidos en las licencias establecidas a continuación. Microsoft se reserva todos los demás derechos no otorgados expresamente en este acuerdo, sea mediante implicación, exclusión o similar. 
+
+- El robot Android se reproduce o modifica a partir del trabajo creado y compartido por Google, y se usa de acuerdo con los términos descritos en la [licencia de atribución de Creative Commons 3.0](http://creativecommons.org/licenses/by/3.0/).

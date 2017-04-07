@@ -1,10 +1,9 @@
 # <a name="contribute-to-microsoft-graph-documentation"></a>Contribuir a la documentación de Microsoft Graph
 
-Gracias por su interés en la documentación de Microsoft Graph. 
+Gracias por su interés en la documentación de Microsoft Graph.
 
 * [Formas de contribuir](#ways-to-contribute)
 * [Antes de que podamos aceptar su solicitud de extracción](#before-we-can-accept-your-pull-request)
-* [Organización del repositorio](#repository-organization)
 * [Usar GitHub, Git y este repositorio](#use-github-git-and-this-repository)
 * [Cómo usar Markdown para dar formato al tema](#how-to-use-markdown-to-format-your-topic)
 * [Markdown estándar](#standard-markdown)
@@ -12,9 +11,11 @@ Gracias por su interés en la documentación de Microsoft Graph.
 
 ## <a name="ways-to-contribute"></a>Formas de contribuir
 
-Puede contribuir a la [documentación de Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) de estas formas:
+Puede contribuir a la [documentación de Microsoft Graph](http://graph.microsoft.io) de estas formas:
 
 * Contribuir a los artículos a través del [repositorio público de documentos de desarrollador de Microsoft Graph](https://github.com/microsoftgraph/microsoft-graph-docs)
+    * Enviar solicitudes de incorporación de cambios independientes a las ramas /beta o /v1.0. Este paso es necesario para garantizar que las ramas de versión se actualizan con los últimos cambios. 
+    * Además, envíe solicitudes de incorporación de cambios independientes a la rama /master. Este paso es para asegurarse de que la documentación del sitio web de Microsoft Graph se actualiza con los últimos cambios. 
 * Informar sobre errores de documentación a través de [problemas de GitHub](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
 * Agregar solicitudes de documentación a [Office Developer Platform UserVoice](http://officespdev.uservoice.com) (UserVoice de la plataforma de desarrolladores de Office)
 
@@ -39,12 +40,6 @@ Firmar el contrato de licencia de distribución (CLA) no le compromete con el re
 Puede descargar el contrato de licencia de contribución (CLA) [aquí](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf). Rellene el formulario y envíelo por correo electrónico a [officedev@microsoft.com](mailto:officedev@microsoft.com).
 
 Tras recibir y procesar su CLA, nos esforzaremos al máximo para revisar las solicitudes de inserción en los próximos 10 días laborables.
-
-## <a name="repository-organization"></a>Organización del repositorio
-
-El contenido del repositorio microsoft-graph-docs se agrupa primero por idioma del artículo y luego por tema. El archivo README.md en la raíz del directorio de cada tema especifica la estructura de los artículos en el tema.
-
-Los artículos de cada tema se denominan por el GUID de MSDN, no por título. Esto es un efecto secundario de nuestro proceso de administración de documentos y no se puede cambiar en este momento. Se recomienda usar la tabla de contenido de cada directorio de temas para desplazarse a los archivos que se quieren ver o editar. Para más información, vea [README.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/README.md).
 
 ## <a name="use-github-git-and-this-repository"></a>Usar GitHub, Git y este repositorio
 
@@ -83,7 +78,7 @@ Limite cada rama para un solo artículo o concepto para optimizar el flujo de tr
 #### <a name="create-a-new-branch"></a>Crear una nueva rama
 
 1.    Abra GitBash.
-2.    Escriba `git pull upstream master:<new branch name>` en el símbolo del sistema. Esto crea una nueva rama local que se copia desde la última rama principal de microsoftgraph. **Nota:** Si es colaborador interno, reemplace `master` en el comando con la rama de la fecha de publicación de destino.
+2.    Escriba `git pull upstream master:<new branch name>` en el símbolo del sistema. Esto crea una nueva rama local que se copia desde la última rama principal de *microsoftgraph*. **Nota:** Si es colaborador interno, reemplace `master` en el comando con la rama de la fecha de publicación de destino.
 3.    Escriba `git push origin <new branch name>` en el símbolo del sistema. Esto alertará a GitHub de la nueva rama. Ahora debería ver la nueva rama de la horquilla del repositorio en GitHub.
 4.    Escriba `git checkout <new branch name>` para cambiar a la nueva rama.
 
@@ -141,7 +136,7 @@ Una vez que los cambios se combinan correctamente en el repositorio central, pue
 Para eliminar la rama siga estos pasos:
 
 1.    En GitBash, escriba `git checkout master` en el símbolo del sistema.  Esto garantiza que no está en la rama que se va a eliminar (lo que no está permitido).
-2.    Después, escriba `git branch -d <branch name>` en el símbolo del sistema.  Esto elimina la rama en el equipo local solo si se combinó correctamente en el repositorio que precede en la cadena. (Puede reemplazar este comportamiento con el indicador `???D`, pero primero asegúrese de que quiere hacerlo).
+2.    Después, escriba `git branch -d <branch name>` en el símbolo del sistema.  Esto elimina la rama en el equipo local solo si se combinó correctamente en el repositorio que precede en la cadena. (Puede reemplazar este comportamiento con el indicador `–D`, pero primero asegúrese de que quiere hacerlo).
 3.    Por último, escriba `git push origin :<branch name>` en el símbolo del sistema (un espacio antes de los dos puntos y sin espacios después).  Esto eliminará la rama en la bifurcación de github.  
 
 Enhorabuena, ha contribuido correctamente al proyecto.
