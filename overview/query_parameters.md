@@ -32,21 +32,25 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 ### <a name="search"></a>$search
 Para restringir los resultados de una solicitud que coincidan con un criterio de búsqueda, utilice el parámetro de consulta **$search**. 
 
->  **Nota**: En la actualidad, puede buscar mensajes, pero no contactos o eventos. Una solicitud **$search** devuelve hasta 250 resultados. No puede utilizar **$filter** u **$orderby** en una solicitud de búsqueda.
+>  **Nota**: Actualmente, puede usar **$search** en colecciones de [mensajes](../api-reference/v1.0/resources/message.md) y [usuarios](../api-reference/beta/resources/person.md) pero no de [contactos](../api-reference/v1.0/resources/contact.md) o [eventos](../api-reference/v1.0/resources/event.md). Una solicitud con el parámetro de consulta **$search** devuelve hasta 250 resultados. No puede usar **$filter** ni **$orderby** en una solicitud con el parámetro de consulta **$search**.
 
-Los criterios de búsqueda se expresan mediante la sintaxis de consulta avanzada (AQS). Los resultados se ordenan por la fecha y la hora en que se envió el mensaje.
+Los criterios de búsqueda se expresan mediante la Sintaxis de consulta avanzada (AQS). 
+
+**Aplicación de $search en los mensajes**
+
+Los resultados de la búsqueda se ordenan por la fecha y la hora en que se envió el mensaje.
 
 Puede especificar las propiedades siguientes en un **mensaje** en un criterio **$search**: **datos adjuntos**, **bccRecipients**, **cuerpo**, **categoría**, **ccRecipients**, **contenido**, **de**, **hasAttachments**, **participantes**, **receivedDateTime**, **emisor**, **asunto**, **toRecipients**
 
 Si realiza una búsqueda en mensajes y especifica un solo valor, la búsqueda se lleva a cabo con las propiedades de búsqueda predeterminadas de **de**, **asunto** y **cuerpo**.
 
-El ejemplo siguiente devuelve todos los mensajes del buzón del usuario que ha iniciado sesión que contienen la palabra "pizza" en cualquiera de las tres propiedades de búsqueda predeterminadas: 
+En el ejemplo siguiente, se devuelven todos los mensajes del buzón del usuario que ha iniciado sesión que contienen la palabra "pizza" en cualquiera de las tres propiedades de búsqueda predeterminadas: 
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
 
-El ejemplo siguiente busca todos los mensajes en el buzón del usuario que se enviaron desde una dirección de correo específica:
+En el ejemplo siguiente, se buscan todos los mensajes en el buzón del usuario que se enviaron desde una dirección de correo electrónico específica:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"

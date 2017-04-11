@@ -2,7 +2,9 @@
 
 Recupere las propiedades y las relaciones de un objeto [message](../resources/message.md).
 
-Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia **message**.
+Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), también puede usar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia **message**.
+
+Actualmente, esta operación devuelve los cuerpos de los mensajes solo en formato HTML.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.Read*  

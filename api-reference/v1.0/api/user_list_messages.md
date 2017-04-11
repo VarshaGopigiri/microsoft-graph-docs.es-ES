@@ -1,6 +1,9 @@
 # <a name="list-messages"></a>Enumerar mensajes
 
-Obtiene los mensajes del buzón del usuario que ha iniciado sesión (incluidas las carpetas Elementos eliminados y Otros correos).
+Obtenga los mensajes del buzón del usuario que ha iniciado sesión (incluidas las carpetas Elementos eliminados y Otros correos).
+
+Actualmente, esta operación devuelve los cuerpos de los mensajes solo en formato HTML.
+
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.Read; Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitud HTTP
@@ -27,9 +30,9 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Autorización  | Portador de <token>. Necesario.  |
-| Content-Type   | application/json  | 
+ 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [Message](../resources/message.md) en el cuerpo de la respuesta.
