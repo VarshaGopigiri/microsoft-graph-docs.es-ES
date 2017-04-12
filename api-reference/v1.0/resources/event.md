@@ -35,8 +35,8 @@ Un evento de un calendario.
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |asistentes|Colección [attendee](attendee.md)|La colección de asistentes del evento.|
-|body|[itemBody](itembody.md)|El cuerpo del mensaje asociado al evento.|
-|bodyPreview|Cadena|La vista previa del mensaje asociado al evento.|
+|body|[itemBody](itembody.md)|El cuerpo del mensaje asociado al evento. Puede mostrarse en formato de texto o HTML.|
+|bodyPreview|Cadena|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
 |categories|Colección string|Las categorías asociadas al evento.|
 |changeKey|String|Identifica la versión del objeto de evento. Cada vez que cambia el evento, cambia también ChangeKey. Esto permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|

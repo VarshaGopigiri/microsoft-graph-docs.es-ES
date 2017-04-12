@@ -38,8 +38,8 @@ Un EventMessage normalmente se encuentra en la carpeta Bandeja de entrada a la q
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |bccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cco: del mensaje.|
-|body|[itemBody](itembody.md)|El cuerpo del mensaje.|
-|bodyPreview|Cadena|Los primeros 255 caracteres del cuerpo del mensaje.|
+|body|[itemBody](itembody.md)|El cuerpo del mensaje. Puede mostrarse en formato de texto o HTML.|
+|bodyPreview|Cadena|Los primeros 255 caracteres del cuerpo del mensaje. Se muestran en formato de texto.|
 |categories|Colección string|Las categorías asociadas al mensaje.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cc: del mensaje.|
 |changeKey|Cadena|La versión del mensaje.|
