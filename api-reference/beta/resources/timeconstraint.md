@@ -1,6 +1,6 @@
 # <a name="timeconstraint-resource-type"></a>Tipo de recurso timeConstraint
 
-Los períodos de tiempo para una actividad del carácter especificado.
+Restringe las sugerencias de hora de reunión a ciertas horas y días de la semana según la naturaleza de la actividad especificada y las franjas horarias disponibles.
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -24,7 +24,7 @@ Aquí tiene una representación JSON del recurso
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|activityDomain|String|La naturaleza de la actividad, opcional. Los valores posibles son: `unknown`, `work`, `personal`. Actualmente [findMeetingTimes](../api/user_findmeetingtimes.md) supone que el valor es siempre `work` y devuelve cualquier sugerencia de reunión solo durante las horas de trabajo del organizador o el asistente.|
+|activityDomain|Cadena|La naturaleza de la actividad, opcional. Los valores posibles son: `work`, `personal`, `unrestricted` o `unknown`.|
 |ranuras de intervalo de tiempo|Colección[timeSlot](timeslot.md)|Matriz de periodos de tiempo.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
