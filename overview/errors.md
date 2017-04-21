@@ -16,27 +16,27 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 
 | Código de estado | Mensaje de estado                  | Descripción                                                                                                                            |
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| 400         | Solicitud incorrecta                     | No se puede procesar la solicitud porque es incorrecta o tiene un formato no válido.                                                                       |
-| 401         | No autorizado                    | La información de autenticación requerida no se encuentra o no es válida para el recurso.                                                   |
-| 403         | Prohibido                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes.                                                 |
-| 404         | No encontrado                       | El recurso solicitado no existe.                                                                                                  |
-| 405         | Método no permitido              | No se permite el método HTTP de la solicitud en el recurso.                                                                         |
-| 406         | No es aceptable                  | Este servicio no es compatible con el formato solicitado en el encabezado Accept.                                                                |
-| 409         | Conflict                        | El estado actual entra en conflicto con lo que la solicitud espera. Por ejemplo, la carpeta principal especificada podría no existir.                   |
-| 410         | Pasado                            | El recurso solicitado ya no está disponible en el servidor.                                               |
-| 411         | Longitud requerida                 | Se requiere un encabezado Content-Length en la solicitud.                                                                                    |
-| 412         | Error de condición previa             | Una condición previa proporcionada en la solicitud (por ejemplo, un encabezado if-match) no coincide con el estado actual del recurso.                       |
-| 413         | Entidad de solicitud demasiado grande        | El tamaño de la solicitud supera el límite máximo.                                                                                            |
-| 415         | Tipo de medio no compatible          | El tipo de contenido de la solicitud es un formato que no es compatible con el servicio.                                                      |
-| 416         | El rango solicitado no se cumple | El rango de bytes especificado no es válido o no está disponible.                                                                                    |
-| 422         | Entidad no procesable            | No se puede procesar la solicitud porque es semánticamente incorrecta.                                                                       |
-| 429         | Demasiadas solicitudes               | La aplicación del cliente se ha limitado y no debería intentar repetir la solicitud hasta haya transcurrido un periodo de tiempo.                |
-| 500         | Error interno del servidor           | Se produjo un error interno del servidor al procesar la solicitud.                                                                       |
-| 501         | No implementado                 | La característica solicitada no se implementó.                                                                                               |
-| 503         | Servicio no disponible             | El servicio no está disponible temporalmente por mantenimiento o está sobrecargado. Puede repetir la solicitud después de un retraso, la longitud de los cuales puede especificarse en un encabezado Retry-After.|
-| 504         | Tiempo de espera de puerta de enlace                 | El servidor, aunque actúa como un proxy, no recibió una respuesta a tiempo del servidor precedente al que necesitaba acceder para completar la solicitud. Puede producirse junto con 503. |
-| 507         | Almacenamiento insuficiente            | Se ha alcanzado la cuota de almacenamiento máxima.                                                                                            |
-| 509         | Ha superado el límite de ancho de banda        | Su aplicación se ha limitado por superar el extremo máximo de ancho de banda. Su aplicación puede reintentar la solicitud de nuevo cuando haya transcurrido más tiempo. |
+| 400         | Solicitud incorrecta (Bad Request)                     | No se puede procesar la solicitud porque es incorrecta o tiene un formato no válido.                                                                       |
+| 401         | No autorizado (Unauthorized)                    | La información de autenticación requerida no se encuentra o no es válida para el recurso.                                                   |
+| 403         | Prohibido (Forbidden)                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes.                                                 |
+| 404         | No encontrado (Not Found)                       | El recurso solicitado no existe.                                                                                                  |
+| 405         | Método no permitido (Method Not Allowed)              | No se permite el método HTTP de la solicitud en el recurso.                                                                         |
+| 406         | No es aceptable (Not Acceptable)                  | Este servicio no es compatible con el formato solicitado en el encabezado Accept.                                                                |
+| 409         | Conflicto (Conflict)                        | El estado actual entra en conflicto con lo que la solicitud espera. Por ejemplo, la carpeta principal especificada podría no existir.                   |
+| 410         | Pasado (Gone)                            | El recurso solicitado ya no está disponible en el servidor.                                               |
+| 411         | Longitud requerida (Length Required)                 | Se requiere un encabezado Content-Length en la solicitud.                                                                                    |
+| 412         | Error de condición previa (Precondition Failed)             | Una condición previa proporcionada en la solicitud (por ejemplo, un encabezado if-match) no coincide con el estado actual del recurso.                       |
+| 413         | Entidad de solicitud demasiado grande (Request Entity Too Large)        | El tamaño de la solicitud supera el límite máximo.                                                                                            |
+| 415         | Tipo de medio no compatible (Unsupported Media Type)          | El tipo de contenido de la solicitud es un formato que no es compatible con el servicio.                                                      |
+| 416         | El rango solicitado no se cumple (Requested Range Not Satisfiable) | El rango de bytes especificado no es válido o no está disponible.                                                                                    |
+| 422         | Entidad no procesable (Unprocessable Entity)            | No se puede procesar la solicitud porque es semánticamente incorrecta.                                                                       |
+| 429         | Demasiadas solicitudes (Too Many Requests)               | La aplicación del cliente se ha limitado y no debería intentar repetir la solicitud hasta haya transcurrido un periodo de tiempo.                |
+| 500         | Error interno del servidor (Internal Server Error)           | Se produjo un error interno del servidor al procesar la solicitud.                                                                       |
+| 501         | No implementado (Not Implemented)                 | La característica solicitada no se implementó.                                                                                               |
+| 503         | Servicio no disponible (Service Unavailable)             | El servicio no está disponible temporalmente por mantenimiento o está sobrecargado. Puede repetir la solicitud después de un retraso, la longitud de los cuales puede especificarse en un encabezado Retry-After.|
+| 504         | Tiempo de espera de puerta de enlace (Gateway Timeout)                 | El servidor, aunque actúa como un proxy, no recibió una respuesta a tiempo del servidor precedente al que necesitaba acceder para completar la solicitud. Puede producirse junto con 503. |
+| 507         | Almacenamiento insuficiente (Insufficient Storage)            | Se ha alcanzado la cuota de almacenamiento máxima.                                                                                            |
+| 509         | Ha superado el límite de ancho de banda (Bandwidth Limit Exceeded)        | Su aplicación se ha limitado por superar el extremo máximo de ancho de banda. Su aplicación puede reintentar la solicitud de nuevo cuando haya transcurrido más tiempo. |
 
 La respuesta de error es un solo objeto JSON que contiene una propiedad única denominada **error**. Este objeto incluye todos los detalles del error. Puede usar la información devuelta aquí en lugar o además del código de estado HTTP. A continuación se muestra un ejemplo de un cuerpo completo de error JSON.
 
@@ -88,9 +88,9 @@ En la respuesta del error se encuentra un recurso de error que incluye las sigui
 
 | Nombre de la propiedad  | Valor                  | Descripción\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **código**       | cadena                 | Una cadena de código de error para el error que se ha producido                                                            |
-| **mensaje**    | cadena                 | Un mensaje preparado de desarrollador sobre el error que se ha producido. Esto no debe mostrarse al usuario directamente. |
-| **error interno** | objeto de error           | Opcional. Objetos de error adicionales que pueden ser más específicos que el error de nivel superior.                     |
+| **code**       | string                 | Una cadena de código de error para el error que se ha producido                                                            |
+| **message**    | string                 | Un mensaje preparado de desarrollador sobre el error que se ha producido. Esto no debe mostrarse al usuario directamente. |
+| **innererror** | error object           | Opcional. Objetos de error adicionales que pueden ser más específicos que el error de nivel superior.                     |
 <!-- {
   "type": "#page.annotation",
   "description": "Understand the error format for the API and error codes.",
