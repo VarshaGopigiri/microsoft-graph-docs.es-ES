@@ -2,6 +2,9 @@
 
 En este artículo, se describen los problemas conocidos de Microsoft Graph. Para obtener información acerca de las actualizaciones más recientes, consulte el [Registro de cambios de Microsoft Graph](http://graph.microsoft.io/en-us/changelog).
 
+## <a name="graph-quick-start"></a>Inicio rápido de Graph
+30 de abril de 2017: hay un error en el inicio rápido. Los flujos tienen un error en el que la URL de redireccionamiento no está configurada correctamente para Asp.Net MVC, Node.js, Angular, PHP, Python y Ruby. Estamos trabajando para obtener la corrección implementada en producción. Para resolver este problema, consulte nuestros [Tutoriales de introducción](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)
+
 ## <a name="graph-explorer"></a>Probador de Graph
 Hemos desactivado los inicios de sesión de la cuenta Microsoft en el Explorador de Graph debido a un problema de servicio. Estamos trabajando activamente en una revisión y actualizaremos este texto cuando esté lista.  
 
@@ -32,6 +35,9 @@ Actualmente, existe una compatibilidad parcial con un calendario basado en una s
 * Puede agregar un calendario basado en ICS a un buzón de usuario mediante la interfaz de usuario, pero no mediante la API de Microsoft Graph. 
 * [Enumerar los calendarios del usuario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id** de cada [calendario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
 * También puede [enumerar los eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
+
+#### <a name="using-delta-query"></a>Usar la consulta de delta
+Para ver los problemas conocidos al usar la consulta de delta, consulte la [sección Consulta de delta](#delta-query) de este artículo.
 
 ## <a name="groups"></a>Grupos
 #### <a name="policy"></a>Directiva
@@ -65,6 +71,8 @@ Actualmente, al [agregar](http://developer.microsoft.com/en-us/graph/docs/api-re
 #### <a name="setting-the-allowexternalsenders-property"></a>Establecer la propiedad allowExternalSenders
 Existe en la actualidad un problema que evita el establecimiento de la propiedad **allowExternalSenders** de un grupo en operaciones POST o PATCH, en `/v1.0` y `/beta`.
 
+#### <a name="using-delta-query"></a>Usar la consulta de delta
+Para ver los problemas conocidos al usar la consulta de delta, consulte la [sección Consulta de delta](#delta-query) de este artículo.
 
 ## <a name="contacts"></a>Contactos
 
@@ -161,4 +169,6 @@ Además, existen las siguientes `/beta` limitaciones:
 
   >  Su opinión es importante para nosotros. Póngase en contacto con nosotros en [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Etiquete sus preguntas con {MicrosoftGraph} y {office365}.
 
+## <a name="delta-query"></a>Consulta de delta
 
+Solo se admite el seguimiento de cambios en las relaciones de usuarios y grupos dentro de la clase de recurso específica en la que se están siguiendo los cambios. Por ejemplo, si un cliente sigue los cambios en *grupos* y ha seleccionado la relación *miembros*, solo recibirá actualizaciones de pertenencia en la respuesta de consulta de delta si esos miembros son también *grupos*. Es decir, aún no es posible realizar el seguimiento de miembros para usuarios. El equipo de Microsoft Graph comprende que se trata de un escenario de alta prioridad y hay prevista una actualización pronto.
