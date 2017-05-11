@@ -3,10 +3,10 @@
 En este artículo, se describen los problemas conocidos de Microsoft Graph. Para obtener información acerca de las actualizaciones más recientes, consulte el [Registro de cambios de Microsoft Graph](http://graph.microsoft.io/en-us/changelog).
 
 ## <a name="graph-quick-start"></a>Inicio rápido de Graph
-30 de abril de 2017: hay un error en el inicio rápido. Los flujos tienen un error en el que la URL de redireccionamiento no está configurada correctamente para Asp.Net MVC, Node.js, Angular, PHP, Python y Ruby. Estamos trabajando para obtener la corrección implementada en producción. Para resolver este problema, consulte nuestros [Tutoriales de introducción](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started)
+30 de abril de 2017: hay un error en el inicio rápido. Los flujos tienen un error en el que la URL de redireccionamiento no está configurada correctamente para Asp.Net MVC, Node.js, Angular, PHP, Python y Ruby. Estamos trabajando para obtener la corrección implementada en producción. Para resolver este problema, consulte nuestros [Tutoriales de introducción](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started).   Esto se ha resuelto el 3 de mayo.
 
 ## <a name="graph-explorer"></a>Probador de Graph
-Hemos desactivado los inicios de sesión de la cuenta Microsoft en el Explorador de Graph debido a un problema de servicio. Estamos trabajando activamente en una revisión y actualizaremos este texto cuando esté lista.  
+Hemos desactivado los inicios de sesión de la cuenta Microsoft en el Explorador de Graph debido a un problema de servicio. Estamos trabajando activamente en una corrección y actualizaremos este texto cuando esté lista.  Actualización del 3 de mayo: ya se ha resuelto.
 
 Los inicios de sesión con Internet Explorer y Microsoft Edge no funcionaban. Este problema está resuelto desde el 2 de febrero de 2017.
 

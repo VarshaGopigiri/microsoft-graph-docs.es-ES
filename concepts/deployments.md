@@ -13,10 +13,10 @@ En este artículo se proporciona información sobre Microsoft Graph ofrecido por
 |---------------------------|----------------|
 | https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
 
-### <a name="microsoft-graph-explorer"></a>Explorador de Microsoft Graph
-| Explorador de Microsoft Graph en China | Explorador de Microsoft Graph|
+### <a name="microsoft-graph-explorer"></a>Probador de Microsoft Graph
+| Probador de Microsoft Graph en China | Probador de Microsoft Graph|
 |---------------------------|----------------|
-|https://graph.microsoft.io/zh-cn/graph-explorer| https://graph.microsoft.io/en-us/graph-explorer|
+|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
 
 ### <a name="azure-openid-connect-and-oauth20"></a>OpenID Connect y OAuth 2.0 de Azure
 Los extremos que se utilizan para adquirir tokens de inicio de sesión o para llamar a Microsoft Graph ofrecido por 21Vianet difieren de las de otras ofertas. 
