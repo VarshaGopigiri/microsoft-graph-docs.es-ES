@@ -8,12 +8,12 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "source"
-  ],
+  "optionalProperties": ["source", "small", "medium", "large"],
+  "openType": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.thumbnailSet"
-}-->
+} -->
+
 ```json
 {
   "id": "string (identifier)",

@@ -44,7 +44,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | Portador<token>. Necesario. |
+| Authorization  | cadena  | Portador de <token>. Necesario. |
 | Prefer: outlook.timezone | string | La zona horaria predeterminada para eventos en la respuesta. Opcional. | 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -63,9 +63,8 @@ Aquí tiene un ejemplo de la solicitud. Especifica lo siguiente:
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Se devuelve la propiedad **body** en el formato HTML predeterminado.

@@ -11,7 +11,7 @@ Actualmente, hay dos opciones para registrar su aplicación con Azure AD.
   - Registre una aplicación para usar el punto de conexión v2.0 de Azure AD que funcione tanto con identidades personales (Microsoft) como con cuentas profesionales y educativas (Azure AD).
   - Registre una aplicación para usar el punto de conexión de Azure AD que admita solo cuentas profesionales y educativas.
 
-Si está leyendo este artículo, se supone que ya ha realizado el registro de v2.0, así que deberá registrar su aplicación en el [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/). Siga las instrucciones de [Registrar su aplicación de Microsoft Graph con el punto de conexión v2.0 de Azure AD](../concepts/auth_register_app_v2.md) para registrar su aplicación. Para obtener información acerca de cómo usar el punto de conexión de Azure AD, consulte [Realizar la autenticación mediante Azure AD](../concepts/auth_overview.md).
+Si está leyendo este artículo, se supone que ya ha realizado el registro de v2.0, así que deberá registrar su aplicación en el [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/). Siga las instrucciones de [Registrar su aplicación de Microsoft Graph con el punto de conexión v2.0 de Azure AD](../concepts/auth_register_app_v2.md) para registrar su aplicación. Para obtener información acerca de cómo usar el punto de conexión de Azure AD, consulte [Realizar la autenticación mediante Azure AD](../concepts/auth_v2_user.md).
 
 > Existen algunas limitaciones en el uso del punto de conexión v2.0. Para decidir si es o no la opción que más le conviene, consulte [¿Debería usar el punto de conexión v2.0?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
@@ -44,7 +44,7 @@ El segmento de *inquilino* en la ruta de acceso controla quién puede iniciar se
 | client_id | El identificador de la aplicación que se genera al registrar la aplicación. Esto permite que Azure AD conozca qué aplicación está solicitando el inicio de sesión. |
 | redirect_uri | La ubicación a la que Azure redirigirá cuando el usuario haya dado su consentimiento a la aplicación. Este valor debe corresponder al valor del **URI de redireccionamiento** que se usó al registrar la aplicación. |
 | response_type | El tipo de respuesta que espera la aplicación. Este valor es `code` para el flujo de concesión del código de autorización. |
-| ámbito | Una lista de los ámbitos de permisos de [Microsoft Graph](../concepts/permissions_reference.md) que está solicitando la aplicación separados por espacios. También puede especificar [ámbitos de OpenId Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) para el [inicio de sesión único](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/).   |
+| ámbito | Una lista de los ámbitos de permisos de [Microsoft Graph](./permissions_reference.md) que está solicitando la aplicación separados por espacios. También puede especificar [ámbitos de OpenId Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) para el [inicio de sesión único](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/).   |
 | estado | Valor que se incluye en la solicitud, que también se devolverá en la respuesta del token y que se usa para la validación. |
 
 Por ejemplo, la URL de solicitud de una aplicación que requiriera acceso de lectura al correo sería similar a la que se muestra a continuación.
@@ -72,7 +72,7 @@ Para obtener un token de acceso, la aplicación publica los parámetros del form
 | código | El código de autorización que se obtuvo en el paso anterior. |
 | redirect_uri | Este valor debe ser el mismo que el valor usado en la solicitud del código de autorización. |
 | grant_type | El tipo de concesión que está usando la aplicación. Este valor es `code` para el flujo de concesión del código de autorización. |
-| ámbito | Una lista de los ámbitos de permisos de [Microsoft Graph](../concepts/permissions_reference.md) que está solicitando la aplicación separados por espacios. |
+| ámbito | Una lista de los ámbitos de permisos de [Microsoft Graph](./permissions_reference.md) que está solicitando la aplicación separados por espacios. |
 
 La URL de solicitud para nuestra aplicación, usando el código del paso anterior, tiene el aspecto que se muestra a continuación.
 
