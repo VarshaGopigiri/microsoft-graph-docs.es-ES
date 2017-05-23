@@ -10,7 +10,7 @@ Las siguientes son las posibles razones por las que [findMeetingTimes](../api/us
 | attendeesUnavailableOrUnknown | Algunos (o todos) los asistentes tienen una disponibilidad desconocida, lo que provoca que la confianza en la reunión caiga por debajo del umbral establecido, que de forma predeterminada es del 50%. La disponibilidad de los asistentes puede ser desconocida si estos se encuentran fuera de la organización, o si hay un error al obtener la información de disponibilidad.|
 | locationsUnavailable | La propiedad **isRequired** del parámetro [locationConstraint](locationconstraint.md) se especifica como obligatoria, aún no hay ninguna ubicación disponible para las franjas de tiempo calculadas. |
 | organizerUnavailable | El parámetro **isOrganizerOptional** es falso y el organizador aún no está disponible durante el tiempo solicitado. |
-| desconocido | No se conoce el motivo por el que no se devuelven sugerencias de reunión.|
+| unknown | No se conoce el motivo por el que no se devuelven sugerencias de reunión.|
 
 ## <a name="json-representation"></a>Representación JSON
 
