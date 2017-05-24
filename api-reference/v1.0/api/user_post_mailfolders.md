@@ -1,6 +1,6 @@
 # <a name="create-mailfolder"></a>Create MailFolder
 
-Use esta API para crear una carpeta de correo.
+Use esta API para crear una carpeta de correo en la carpeta raíz del buzón del usuario.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitud HTTP
@@ -19,11 +19,10 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|parentFolderId|String|Identificador de carpeta de la carpeta principal o el nombre de carpeta conocido `Inbox`, `Drafts`, `SentItems` o `DeletedItems`.|
 |displayName|String|Nombre para mostrar de la nueva carpeta.|
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [MailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y un objeto [MailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
@@ -38,8 +37,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "displayName": "displayName-value"
 }
 ```
 

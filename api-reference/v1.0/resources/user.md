@@ -2,8 +2,12 @@
 
 Representa una cuenta de usuario de Azure AD. Se hereda de [directoryObject](directoryobject.md).
 
+Este recurso admite:
+- que agregue sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md);
+- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/user_delta.md).
 
 ## <a name="methods"></a>Métodos
+
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener usuario](../api/user_get.md) | [usuario](user.md) |Lee las propiedades y las relaciones del objeto de usuario.|
@@ -32,15 +36,23 @@ Representa una cuenta de usuario de Azure AD. Se hereda de [directoryObject](dir
 |[Enumerar ownedObjects](../api/user_list_ownedobjects.md) |Colección [directoryObject](directoryobject.md)| Obtiene los objetos de directorio que son propiedad del usuario desde la propiedad de navegación ownedObjects.|
 |[Enumerar registeredDevices](../api/user_list_registereddevices.md) |Colección [directoryObject](directoryobject.md)| Obtiene los dispositivos registrados del usuario desde la propiedad de navegación registeredDevices.|
 |[Enumerar createdObjects](../api/user_list_createdobjects.md) |Colección [directoryObject](directoryobject.md)| Obtiene los objetos de directorio creados por el usuario desde la propiedad de navegación createdObjects.|
-|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar los planes específicos asociados a una suscripción.|
+|[assignLicense](../api/user_assignlicense.md)|[usuario](user.md)|Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar planes específicos asociados a una suscripción.|
+|[Enumerar licenseDetails](../api/user_list_licensedetails.md) |Colección [licenseDetails](licensedetails.md)| Obtenga una colección de objetos licenseDetails.| 
 |[checkMemberGroups](../api/user_checkmembergroups.md)|Colección string|Comprueba la pertenencia a una lista de grupos. La comprobación es transitiva.|
 |[getMemberGroups](../api/user_getmembergroups.md)|Colección string|Devuelve todos los grupos de los que el usuario es miembro. La comprobación es transitiva.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|Colección string| Devuelve todos los grupos y los roles de directorio de los que el usuario es miembro. La comprobación es transitiva. |
-|[reminderView](../api/user_reminderview.md)|Colección [reminder](reminder.md)|Devuelve una lista de los avisos de calendario entre de las horas de inicio y finalización especificadas.|
+|[reminderView](../api/user_reminderview.md)|Colección [reminder](reminder.md)|Devuelve una lista de los avisos de calendario entre las horas de inicio y finalización especificadas.|
+|[delta](../api/user_delta.md)|Colección user| Obtener los cambios incrementales de usuarios. |
+|**Extensiones abiertas**| | |
+|[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Cree una extensión abierta y agregue propiedades personalizadas en una instancia nueva o un recurso existente.|
+|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga una extensión abierta identificada por el nombre de extensión.|
+|**Extensiones de esquema**| | |
+|[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
 
 
 
 ## <a name="properties"></a>Propiedades
+
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |aboutMe|Cadena|Un campo de entrada de texto de forma libre para que el usuario se describa a sí mismo.|
@@ -48,13 +60,15 @@ Representa una cuenta de usuario de Azure AD. Se hereda de [directoryObject](dir
 |assignedLicenses|Colección [assignedLicense](assignedlicense.md)|Las licencias asignadas al usuario. No admite valores NULL.            |
 |assignedPlans|Colección [assignedPlan](assignedplan.md)|Los planes asignados al usuario. Solo lectura. No admite valores NULL. |
 |birthday|DateTimeOffset|El cumpleaños del usuario. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
+|businessPhones|Colección de cadenas|Los números de teléfono del usuario. NOTA: Aunque se trata de una colección de cadenas, solo se puede establecer un número para esta propiedad.|
 |city|String|La ciudad en la que se encuentra el usuario. Es compatible con $filter.|
 |country|String|El país o la región en la que se encuentra el usuario. Por ejemplo: "US" o "UK". Es compatible con $filter.|
 |department|String|El nombre del departamento en el que trabaja el usuario. Es compatible con $filter.|
 |displayName|String|El nombre del usuario que aparece en la libreta de direcciones. Suele ser la combinación del nombre del usuario, la inicial del segundo nombre y el apellido. Esta propiedad es necesaria cuando se crea un usuario y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
 |givenName|String|El nombre (nombre de pila) del usuario. Es compatible con $filter.|
 |hireDate|DateTimeOffset|La fecha de contratación del usuario. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|String|El identificador único del usuario. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
+|id|Cadena|El identificador único del usuario. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
+|imAddresses|Colección de cadenas|Direcciones del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondientes al usuario. Solo lectura.|
 |interests|Colección string|Una lista para que el usuario describa sus intereses.|
 |jobTitle|String|El puesto del usuario. Es compatible con $filter.|
 |mail|String|La dirección SMTP del usuario, por ejemplo: "jeff@contoso.onmicrosoft.com". Solo lectura. Es compatible con $filter.|
@@ -86,6 +100,7 @@ Representa una cuenta de usuario de Azure AD. Se hereda de [directoryObject](dir
 |userType|String|Un valor de cadena que puede utilizarse para clasificar los tipos de usuario en el directorio. Por ejemplo: "Miembro" e "Invitado". Es compatible con $filter.          |
 
 ## <a name="relationships"></a>Relaciones
+
 | Relación | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|El calendario principal del usuario. Solo lectura.|
@@ -97,17 +112,20 @@ Representa una cuenta de usuario de Azure AD. Se hereda de [directoryObject](dir
 |createdObjects|Colección [directoryObject](directoryobject.md)|Objetos de directorio creados por el usuario. Solo lectura. Admite valores NULL.|
 |directReports|Colección [directoryObject](directoryobject.md)|Los usuarios y contactos que informan al usuario (los usuarios y contactos cuya propiedad manager está establecida para este usuario). Solo lectura. Admite valores NULL. |
 |drive|[drive](drive.md)|OneDrive del usuario. Solo lectura.|
+|drives|Colección [drive](drive.md) | Una colección de unidades disponibles para este usuario. Solo lectura. |
 |events|Colección [event](event.md)|Los eventos del usuario. La opción predeterminada muestra eventos en el calendario predeterminado. Solo lectura. Admite valores NULL.|
+|extensions|Colección [extension](extension.md)|La colección de extensiones abiertas definidas para el usuario. Solo lectura. Admite valores NULL.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Clasificación de relevancia de los mensajes del usuario según las designaciones explícitas que invalidan una relevancia o importancia inferida. |
 |mailFolders|Colección [MailFolder](mailfolder.md)| Las carpetas de correo del usuario. Solo lectura. Admite valores NULL.|
 |manager|[directoryObject](directoryobject.md)|El usuario o el contacto que es administrador de este usuario. Solo lectura. (métodos HTTP: GET, PUT y DELETE).|
 |memberOf|Colección [directoryObject](directoryobject.md)|Los grupos y los roles de directorio de los que el usuario es miembro. Solo lectura. Admite valores NULL.|
 |messages|Colección [message](message.md)|Los mensajes en un buzón o una carpeta. Solo lectura. Admite valores NULL.|
+|onenote|[OneNote](onenote.md)| Solo lectura.|
 |ownedDevices|Colección [directoryObject](directoryobject.md)|Dispositivos que son propiedad del usuario. Solo lectura. Admite valores NULL.|
 |ownedObjects|Colección [directoryObject](directoryobject.md)|Objetos de directorio que son propiedad del usuario. Solo lectura. Admite valores NULL.|
 |Foto|[profilePhoto](profilephoto.md)| La foto de perfil del usuario. Solo lectura.|
 |registeredDevices|Colección [directoryObject](directoryobject.md)|Dispositivos del usuario que están registrados. Solo lectura. Admite valores NULL.|
-
+|sites|Colección [site](site.md) | Una colección de sitios disponibles para este usuario. Solo lectura. |
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -127,15 +145,18 @@ Aquí tiene una representación JSON del recurso
     "directReports",
     "drive",
     "events",
+    "extensions",
     "joinedGroups",
     "mailFolders",
     "manager",
     "memberOf",
     "messages",
     "oauth2PermissionGrants",
+    "onenote",
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "sites",
     "registeredDevices"
   ],
   "keyProperty": "id",
@@ -197,6 +218,7 @@ Aquí tiene una representación JSON del recurso
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
+  "drives": [ { "@odata.type": "microsoft.graph.drive" } ],
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
   "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
@@ -205,10 +227,17 @@ Aquí tiene una representación JSON del recurso
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ {"@odata.type": "microsoft.graph.site" }]
 }
 
 ```
+
+## <a name="see-also"></a>Recursos adicionales
+
+- [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

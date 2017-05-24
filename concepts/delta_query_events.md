@@ -1,4 +1,4 @@
-# <a name="get-incremental-changes-to-events-in-a-calendar-view-preview"></a>Obtener cambios incrementales para los eventos en una vista de calendario (versión preliminar)
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obtener los cambios incrementales en los eventos en una vista de calendario 
 
 Una vista de calendario es una colección de eventos en un intervalo de fecha y hora del calendario predeterminado (../me/calendarview) o algún otro calendario del usuario. Mediante la consulta de delta, puede obtener eventos nuevos, actualizados o eliminados en una vista de calendario. Los eventos devueltos pueden incluir las repeticiones y excepciones de una serie periódica e instancias únicas. Los datos de delta permiten mantener y sincronizar un almacén local de eventos de un usuario, sin tener que capturar cada vez todo el conjunto de eventos del usuario desde el servidor.
 
@@ -8,7 +8,7 @@ La consulta de delta admite la sincronización completa que recupera todos los e
 
 La consulta de delta para eventos es específica del calendario y el intervalo de fecha y hora que se especifique (por ejemplo, una vista de calendario). Para realizar el seguimiento de los cambios en varios calendarios, necesitará realizar el seguimiento de cada calendario individualmente. 
 
-El seguimiento de los cambios de eventos en una vista de calendario normalmente es una ronda de una o varias solicitudes GET con la función [delta](../api-reference/beta/api/event_delta.md). La solicitud GET inicial es muy similar a la forma de [enumerar un objeto calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/calendar_list_calendarview), salvo que se incluye la función **delta**:
+El seguimiento de los cambios de eventos en una vista de calendario normalmente es una ronda de una o varias solicitudes GET con la función [delta](../api-reference/v1.0/api/event_delta.md). La solicitud GET inicial es muy similar a la forma de [enumerar un objeto calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), salvo que se incluye la función **delta**:
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -63,7 +63,7 @@ La primera solicitud especifica lo siguiente:
   "name": "get_calendarview_delta_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -83,8 +83,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -153,7 +153,7 @@ La segunda solicitud especifica la dirección URL `nextLink` devuelta de la resp
   "name": "get_calendarview_delta_2"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -172,8 +172,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -244,7 +244,7 @@ La tercera solicitud continúa usando el último `nextLink` devuelto desde la ú
   "name": "get_calendarview_delta_3"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -264,8 +264,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -311,7 +311,7 @@ Con el `deltaLink` de la [última solicitud](#step-3-sample-third-request) de la
   "name": "get_calendarview_delta_next"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -328,8 +328,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(event)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(event)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcFuQtZdtpk4",
     "value":[
         {
             "@odata.type":"#microsoft.graph.event",
@@ -379,7 +379,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Vea también
 
-- [Consulta de delta de Microsoft Graph](../Concepts/delta_query_overview.md)
-- [Obtener los cambios incrementales de mensajes (versión preliminar)](../Concepts/delta_query_messages.md)
-- [Obtener los cambios incrementales de grupos (versión preliminar)](../Concepts/delta_query_groups.md)
-- [Obtener los cambios incrementales de usuarios (versión preliminar)](../Concepts/delta_query_users.md)
+- [Consulta delta de Microsoft Graph](../Concepts/delta_query_overview.md)
+- [Obtener los cambios incrementales en los mensajes](../Concepts/delta_query_messages.md)
+- [Obtener los cambios incrementales en los grupos](../Concepts/delta_query_groups.md)
+- [Obtener los cambios incrementales en los usuarios](../Concepts/delta_query_users.md)

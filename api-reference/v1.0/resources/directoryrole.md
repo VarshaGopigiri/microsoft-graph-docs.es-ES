@@ -11,10 +11,11 @@ Representa un rol de directorio de Azure AD. Los roles de directorio de Azure AD
 |[Obtener directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | Lea las propiedades y las relaciones del objeto directoryRole. |
 |[Crear miembro](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Agregue un usuario al rol de directorio; para ello, publique en la propiedad de navegación de miembros.|
 |[Enumerar miembros](../api/directoryrole_list_members.md) |Colección [directoryObject](directoryobject.md)| Obtenga los usuarios que son miembros del rol de directorio de la propiedad de navegación de miembros.|
+|[Quitar un miembro](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Elimine un usuario del rol de directorio.|
 |[Activar directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | Active un rol de directorio.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad   | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |description|String|La descripción del rol de directorio. Solo lectura. |
 |displayName|String|El nombre para mostrar del rol de directorio. Solo lectura. |
@@ -22,7 +23,7 @@ Representa un rol de directorio de Azure AD. Los roles de directorio de Azure AD
 |roleTemplateId|String| El **id** de la [directoryRoleTemplate](directoryroletemplate.md) en que se basa este rol. La propiedad debe especificarse al activar un rol de directorio en un inquilino con una operación POST. Una vez activado el rol de directorio, la propiedad es de solo lectura. |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |members|Colección [directoryObject](directoryobject.md)|Usuarios que son miembros de este rol de directorio. Métodos HTTP: GET, POST, DELETE. Solo lectura. Admite valores NULL.|
 

@@ -2,6 +2,12 @@
 
 Un evento de un calendario.
 
+Este recurso admite:
+
+- que agregue sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md);
+- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/event_delta.md).
+
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de valor devuelto  |Descripción|
@@ -14,6 +20,7 @@ Un evento de un calendario.
 |[Aceptar](../api/event_accept.md)|Ninguno|Acepta el evento especificado.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|Ninguno|Acepta provisionalmente el evento especificado.|
 |[Rechazar](../api/event_decline.md)|Ninguno|Rechaza la invitación al evento especificado.|
+|[delta](../api/event_delta.md)|Colección [event](event.md)|Obtenga un conjunto de eventos que se han agregado, eliminado o actualizado en una **calendarView** (un intervalo de eventos) del calendario principal del usuario.|
 |[dismissReminder](../api/event_dismissreminder.md)|Ninguno|Descarta el aviso para el evento especificado.|
 |[snoozeReminder](../api/event_snoozereminder.md)|Ninguno|Pospone el aviso para el evento especificado.|
 |[Enumerar instancias](../api/event_list_instances.md) |Colección [event](event.md)| Obtiene las instancias (repeticiones) de un evento durante un intervalo de tiempo especificado. Si el evento es de tipo `SeriesMaster`, devuelve las repeticiones y excepciones del evento en el intervalo de tiempo especificado.|
@@ -36,7 +43,7 @@ Un evento de un calendario.
 |:---------------|:--------|:----------|
 |asistentes|Colección [attendee](attendee.md)|La colección de asistentes del evento.|
 |body|[itemBody](itembody.md)|El cuerpo del mensaje asociado al evento. Puede mostrarse en formato de texto o HTML.|
-|bodyPreview|Cadena|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
+|bodyPreview|String|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
 |categories|Colección string|Las categorías asociadas al evento.|
 |changeKey|String|Identifica la versión del objeto de evento. Cada vez que cambia el evento, cambia también ChangeKey. Esto permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
@@ -142,11 +149,13 @@ Aquí tiene una representación JSON del recurso
 ```
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
+- [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
+- [Obtener los cambios incrementales de los eventos de una carpeta](../../../concepts/delta_query_events.md)
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](../../../concepts/extensibility_open_users.md)
-- [Agregar datos personalizados a grupos mediante extensiones de esquema (versión preliminar)](../../../concepts/extensibility_schema_groups.md)
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

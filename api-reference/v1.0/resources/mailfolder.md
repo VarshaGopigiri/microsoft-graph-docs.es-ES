@@ -2,6 +2,7 @@
 
 Un recurso mailFolder en el buzón de un usuario, como Bandeja de entrada, Borradores y Elementos enviados. Los recursos mailFolder pueden contener mensajes y recursos mailFolder secundarios.
 
+Este recurso es compatible con el uso de una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/mailfolder_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -15,6 +16,7 @@ Un recurso mailFolder en el buzón de un usuario, como Bandeja de entrada, Borra
 |[Actualizar](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|Actualice el objeto mailFolder especificado. |
 |[Eliminar](../api/mailfolder_delete.md) | Ninguno |Elimine el objeto mailFolder especificado. |
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Copie un objeto mailFolder y su contenido en otro objeto mailFolder.|
+|[delta](../api/mailfolder_delta.md)|Colección [mailFolder](mailfolder.md)|Obtenga un conjunto de carpetas de correo que se hayan agregado, eliminado o quitado del buzón del usuario.|
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Mueva un objeto mailFolder y su contenido a otro objeto mailFolder.|
 |[Crear propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Cree una o varias propiedades extendidas de valor único en un objeto mailFolder nuevo o existente.   |
 |[Obtener mailFolder con propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Obtenga objetos mailFolder que contienen una propiedad extendida de valor único mediante el uso de `$expand` o `$filter`. |
@@ -77,6 +79,12 @@ Aquí tiene una representación JSON del recurso
 }
 
 ```
+
+## <a name="see-also"></a>Consulte también
+
+- [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
+- [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -10,14 +10,17 @@ Representa un objeto de Azure Active Directory. El tipo **directoryObject** es e
 |[Delete directoryObject](../api/directoryobject_delete.md) | None |Elimina un objeto directory. |
 |[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|Colección string|Comprueba la pertenencia a una lista de grupos. La comprobación es transitiva.|
 |[getMemberGroups](../api/directoryobject_getmembergroups.md)|Colección string|Devuelve todos los grupos de los que el usuario, grupo u objeto de directorio sea miembro. La comprobación es transitiva.|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Colección string| Devuelve todos los grupos y roles de directorio de los que el usuario, grupo u objeto de directorio sea miembro. La comprobación es transitiva. |
+|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Colección de cadenas| Devuelve todos los grupos y roles de directorio de los que el usuario, grupo u objeto de directorio sea miembro. La comprobación es transitiva. |
+|[getByIds](../api/directoryobject_getbyids.md) | Colección [directoryObject](directoryobject.md) | Obtenga un conjunto de objetos de directorio basados en un conjunto de identificadores proporcionados. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+
+| Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |id|String|Guid que es el identificador único para el objeto; por ejemplo, 12345678-9abc-def0-1234-56789abcde. Clave. No admite valores NULL. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
+
 Ninguno
 
 

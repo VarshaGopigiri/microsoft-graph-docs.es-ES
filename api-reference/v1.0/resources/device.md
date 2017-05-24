@@ -2,6 +2,9 @@
 
 Representa un dispositivo registrado en la organización. Los dispositivos también se pueden crear en la nube con el servicio de registro de dispositivos o Intune. Las directivas de acceso condicional los usan para la autenticación multifactor. Estos dispositivos pueden ir desde equipos portátiles y de escritorio hasta teléfonos y tabletas. Se hereda de [directoryObject](directoryobject.md).
 
+Este recurso le permite agregar sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md).
+
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de valor devuelto  |Descripción|
@@ -15,6 +18,11 @@ Representa un dispositivo registrado en la organización. Los dispositivos tambi
 |[Enumerar registeredOwners](../api/device_list_registeredowners.md) |Colección [directoryObject](directoryobject.md)| Obtenga los usuarios que son propietarios registrados del dispositivo de la propiedad de navegación registeredOwners.|
 |[Crear registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| Agregue un usuario registrado para el dispositivo; para ello, publique la propiedad de navegación registeredUsers.|
 |[Enumerar registeredUsers](../api/device_list_registeredusers.md) |Colección [directoryObject](directoryobject.md)| Obtenga los usuarios registrados del dispositivo de la propiedad de navegación registeredUsers.|
+|**Extensiones abiertas**| | |
+|[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Cree una extensión abierta y agregue propiedades personalizadas en una instancia nueva o un recurso existente.|
+|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga una extensión abierta identificada por el nombre de extensión.|
+|**Extensiones de esquema**| | |
+|[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
 
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
@@ -39,6 +47,7 @@ Representa un dispositivo registrado en la organización. Los dispositivos tambi
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|
 |:---------------|:--------|:----------|
+|extensions|Colección [extension](extension.md)|La colección de extensiones abiertas definidas para el dispositivo. Solo lectura. Admite valores NULL.|
 |registeredOwners|Colección [directoryObject](directoryobject.md)|Usuarios que son propietarios registrados del dispositivo. Solo lectura. Admite valores NULL.|
 |registeredUsers|Colección [directoryObject](directoryobject.md)|Usuarios que son usuarios registrados del dispositivo. Solo lectura. Admite valores NULL.|
 
@@ -51,6 +60,7 @@ Aquí tiene una representación JSON del recurso
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
@@ -79,6 +89,12 @@ Aquí tiene una representación JSON del recurso
 }
 
 ```
+
+## <a name="see-also"></a>Recursos adicionales
+
+- [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

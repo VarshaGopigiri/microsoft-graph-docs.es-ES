@@ -4,12 +4,10 @@ La propiedad **prepaidUnits** de la entidad [subscribedSku](subscribedsku.md) es
 
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|enabled|Int32|            |
-|suspended|Int32|            |
-|warning|Int32|            |
-
-
+|:-------------|:-----|:----------|
+|enabled|Int32| El número de unidades habilitadas. |
+|suspended|Int32| El número de unidades suspendidas. |
+|warning|Int32| El número de unidades que se encuentran en estado de advertencia. |
 
 ## <a name="json-representation"></a>Representación JSON
 

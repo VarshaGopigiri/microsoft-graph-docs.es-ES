@@ -23,7 +23,9 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |[Agregar datos adjuntos](../api/post_post_attachments.md) |[dato adjunto](attachment.md)| Agrega datos adjuntos a una publicación. |
 |**Extensiones abiertas**| | |
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o existente de un recurso.|
-|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene un objeto u objetos de extensión abierta identificados por nombre o por nombre completo.|
+|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga un objeto u objetos de extensión abierta identificados por nombre o por nombre completo.|
+|**Extensiones de esquema**| | |
+|[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
 |**Propiedades extendidas**| | |
 |[Crear propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[post](post.md)  |Cree una o varias propiedades extendidas de valor único en una publicación nueva o existente.   |
 |[Obtener publicación con propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | Obtenga publicaciones que contienen una propiedad extendida de valor único mediante el uso de `$expand` o `$filter`. |
@@ -94,8 +96,8 @@ Aquí tiene una representación JSON del recurso
 ## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](../../../concepts/extensibility_open_users.md)
-- [Agregar datos personalizados a grupos mediante extensiones de esquema (versión preliminar)](../../../concepts/extensibility_schema_groups.md)
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
