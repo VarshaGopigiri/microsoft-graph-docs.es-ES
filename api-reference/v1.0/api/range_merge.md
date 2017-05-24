@@ -3,21 +3,24 @@
 Combina las celdas del rango en una región de la hoja de cálculo.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/merge
-POST /workbook/worksheets(<id|name>)/range(<address>)/merge
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/merge
+POST /workbook/worksheets/{id|name}/range(<address>)/merge
+POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro       | Tipo    |Descripción|

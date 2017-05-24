@@ -3,17 +3,20 @@
 Obtiene el objeto de intervalo asociado a la fila de totales de la tabla.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/TotalRowRange
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/TotalRowRange
+POST /workbook/tables/{id|name}/TotalRowRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/TotalRowRange
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -30,7 +33,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "table_totalrowrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/TotalRowRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/TotalRowRange
 ```
 
 ##### <a name="response"></a>Respuesta

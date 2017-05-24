@@ -8,9 +8,12 @@ Según el recurso en el que se cree la extensión, se requiere uno de los siguie
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [evento](../resources/event.md) | _Calendars.ReadWrite_ | [evento de grupo](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [publicación de grupo](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ | 
-| [contacto personal](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
+| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+
 
  
 ## <a name="http-request"></a>Solicitud HTTP
@@ -21,11 +24,11 @@ Utilice la misma solicitud REST que al crear la instancia.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts
 POST /users/{id|userPrincipalName}/events
 POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /users/{id|userPrincipalName}/contacts
 ```
 
 >**Nota:** La sintaxis anterior muestra algunas maneras comunes para crear las instancias de recursos admitidos. Todas las otras formas de sintaxis POST que le permiten crear estas instancias de recursos admiten la creación de extensiones abiertas en ellas de una manera similar.
@@ -38,11 +41,15 @@ Identifique la instancia del recurso en la solicitud y haga una `POST` a la prop
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /devices/{id}/extensions
 POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /groups/{id}/extensions
 POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
+POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /organization/{id}/extensions
+POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /users/{id|userPrincipalName}/extensions
 ```
 
 >**Nota:** La sintaxis anterior muestra algunas formas comunes para identificar una instancia del recurso, con el fin de crear una extensión en él. Todas las otras formas de sintaxis que le permiten identificar estas instancias de recursos admiten la creación de extensiones abiertas en ellas de una manera similar.

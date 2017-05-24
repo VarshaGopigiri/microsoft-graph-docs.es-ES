@@ -3,21 +3,24 @@
 Obtiene el objeto de intervalo que contiene la celda en función de los números de fila y columna. La celda puede estar fuera de los límites del intervalo principal, siempre y cuando permanezca dentro de la cuadrícula de la hoja de cálculo. La celda devuelta se ubica con respecto a la celda superior izquierda del intervalo.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Cell
-POST /workbook/worksheets(<id|name>)/range(<address>)/Cell
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Cell
+GET /workbook/names(<name>)/range/Cell
+GET /workbook/worksheets/{id|name}/range(<address>)/Cell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro       | Tipo    |Descripción|
@@ -37,7 +40,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "range_cell"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
 Content-type: application/json
 Content-length: 37
 

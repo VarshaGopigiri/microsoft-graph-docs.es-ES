@@ -8,7 +8,7 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "path" ],
+  "optionalProperties": [ "path", "shareId", "sharepointIds" ],
   "@odata.type": "microsoft.graph.itemReference"
 }-->
 
@@ -16,22 +16,28 @@ Aquí tiene una representación JSON del recurso
 {
   "driveId": "string",
   "id": "string",
-  "path": "string"
+  "name": "string",
+  "path": "string",
+  "shareId": "string",
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
 }
 ```
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo   | Descripción                                                                   |
-|:---------|:-------|:------------------------------------------------------------------------------|
-| driveId  | String | Identificador único de la instancia de OneDrive que contiene el elemento. Solo lectura. |
-| id       | String | Identificador único del elemento en la unidad. Solo lectura.            |
-| ruta de acceso     | String | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.                     |
+| Propiedad      | Tipo                              | Descripción                                                                                                |
+| :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| driveId       | Cadena                            | Identificador único de la instancia de la unidad que contiene el elemento. Solo lectura.                                 |
+| id            | String                            | Identificador único del elemento en la unidad. Solo lectura.                                                     |
+| name          | Cadena                            | El nombre del elemento al que se hace referencia. Solo lectura.                                                          |
+| path          | String                            | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.                                                  |
+| shareId       | Cadena                            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares](../api/shares_get.md). |
+| sharepointIds | [sharepointIds](sharepointids.md) | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                                   |
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para resolver un elemento de un recurso **ItemReference**, cree una dirección URL con el formato:
+Para resolver un **driveItem** de un recurso **itemReference**, cree una dirección URL con el formato:
 
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}

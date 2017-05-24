@@ -3,17 +3,20 @@
 Obtiene el objeto de intervalo asociado a toda la columna.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns(<id|name>)/Range
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns(<id|name>)/Range
+POST /workbook/tables/{id|name}/columns/{id|name}/Range
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -30,7 +33,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "tablecolumn_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns(<id|name>)/Range
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
 ```
 
 ##### <a name="response"></a>Respuesta

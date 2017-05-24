@@ -3,20 +3,23 @@
 Obtiene una columna en función de su posición en la colección.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/columns/ItemAt
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/columns/ItemAt
+POST /workbook/tables/{id|name}/columns/ItemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro       | Tipo    |Descripción|
@@ -35,7 +38,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "tablecolumncollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/columns/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
 Content-type: application/json
 Content-length: 20
 

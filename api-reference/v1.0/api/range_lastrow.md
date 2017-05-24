@@ -3,18 +3,21 @@
 Obtiene la última fila del intervalo. Por ejemplo, la última fila de "B2:D5" es "B5:D5".
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/LastRow
-POST /workbook/worksheets(<id|name>)/range(<address>)/LastRow
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/LastRow
+GET /workbook/names(<name>)/range/LastRow
+GET /workbook/worksheets/{id|name}/range(<address>)/LastRow
+GET /workbook/tables/{id|name}/columns/{id|name}/range/LastRow
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -31,7 +34,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "range_lastrow"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastRow
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastRow
 ```
 
 ##### <a name="response"></a>Respuesta

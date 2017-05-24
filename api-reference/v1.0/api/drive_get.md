@@ -3,12 +3,12 @@
 Recupere las propiedades y relaciones de un recurso [Drive](../resources/drive.md). Un recurso Drive es el contenedor de nivel superior de un sistema de archivos. API Graph le permite acceder al recurso Drive de las bibliotecas de documentos de OneDrive, OneDrive para la Empresa o SharePoint de un usuario.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
-
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="get-a-users-onedrive"></a>Obtener el OneDrive de un usuario
 
@@ -17,29 +17,35 @@ Para acceder al OneDrive o OneDrive para la Empresa de un usuario, la aplicació
 ### <a name="http-request"></a>Solicitud HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-assocaited-with-a-group"></a>Obtener la biblioteca de documentos asociada con un grupo
+## <a name="get-the-document-library-associated-with-a-group"></a>Obtener la biblioteca de documentos asociada a un grupo
 
 Para acceder a la biblioteca de documentos predeterminada de un [grupo](../resources/group.md), la aplicación solicita la relación **drive** en el grupo.
 
 ### <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-body"></a>Cuerpo de solicitud
+
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el recurso [Drive](../resources/drive.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

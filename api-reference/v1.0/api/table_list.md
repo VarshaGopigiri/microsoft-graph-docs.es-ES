@@ -3,11 +3,14 @@
 Recupera una lista de objetos table.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables
-GET /workbook/worksheets(<id|name>)/tables
+GET /workbook/worksheets/{id|name}/tables
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.

@@ -3,21 +3,24 @@
 Obtiene un objeto que representa un intervalo desplazado con respecto al intervalo especificado. La dimensión del intervalo devuelto coincidirá con este intervalo. Si el intervalo resultante se fuerza fuera de los límites de la cuadrícula de la hoja de cálculo, se producirá una excepción.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/OffsetRange
-POST /workbook/worksheets(<id|name>)/range(<address>)/OffsetRange
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/OffsetRange
+GET /workbook/names(<name>)/range/OffsetRange
+GET /workbook/worksheets/{id|name}/range(<address>)/OffsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro       | Tipo    |Descripción|
@@ -37,7 +40,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "range_offsetrange"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
 Content-type: application/json
 Content-length: 49
 

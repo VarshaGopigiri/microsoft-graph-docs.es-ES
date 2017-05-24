@@ -1,6 +1,6 @@
 # <a name="identity-resource-type"></a>Tipo de recurso Identity
 
-El recurso **Identity** representa una identidad de un _actor_. Por ejemplo, un actor puede ser un usuario, dispositivo o aplicación.
+El recurso **Identity** representa una identidad de un _actor_. Por ejemplo, un actor puede ser un usuario, un dispositivo o una aplicación.
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -25,7 +25,7 @@ Aquí tiene una representación JSON del recurso.
 
 | Propiedad    | Tipo   | Descripción                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | El nombre para mostrar de la identidad. Tenga en cuenta que puede que no esté siempre disponible o actualizado. Por ejemplo, si un usuario cambia su nombre para mostrar, la API puede mostrar el nuevo valor en una respuesta futura, pero los elementos asociados con el usuario no se mostrarán como modificados al usar [buscar cambios](../api/item_delta.md) |
+| displayName | String | El nombre para mostrar de la identidad. Tenga en cuenta que puede que no esté siempre disponible o actualizado. Por ejemplo, si un usuario cambia su nombre para mostrar, la API puede mostrar el nuevo valor en una respuesta futura, pero los elementos asociados con el usuario no estarán modificados al usar [delta](../api/item_delta.md).        |
 | id          | String | Identificador único de la identidad.                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>Comentarios

@@ -3,21 +3,24 @@
 Obtiene el objeto de intervalo que representa la intersección rectangular de los intervalos especificados.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Intersection
-POST /workbook/worksheets(<id|name>)/range(<address>)/Intersection
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Intersection
+GET /workbook/names(<name>)/range/Intersection
+GET /workbook/worksheets/{id|name}/range(<address>)/Intersection
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro       | Tipo    |Descripción|
@@ -36,7 +39,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "range_intersection"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
 Content-type: application/json
 Content-length: 42
 

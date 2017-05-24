@@ -2,7 +2,7 @@
 
 El recurso **SharingLink** agrupa en una sola estructura los elementos de datos relacionados con vínculos.
 
-Si un recurso [**Permission**](permission.md) tiene una faceta **sharingLink** que no es null, el permiso representa un vínculo para compartir (a diferencia de los permisos concedidos a una persona o grupo).
+Si un recurso [**Permission**](permission.md) tiene una faceta **sharingLink** que no es NULL, el permiso representa un vínculo para compartir (a diferencia de los permisos concedidos a una persona o un grupo).
 
 ## <a name="json-representation"></a>Representación JSON
 

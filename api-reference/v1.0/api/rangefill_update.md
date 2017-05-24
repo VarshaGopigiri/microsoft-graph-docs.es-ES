@@ -3,20 +3,23 @@
 Actualiza las propiedades del objeto rangefill.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/fill
-PATCH /workbook/worksheets(<id|name>)/range(<address>)/format/fill
-PATCH /workbook/tables(<id|name>)/columns(<id|name>)/range/format/fill
+PATCH /workbook/worksheets/{id|name}/range(<address>)/format/fill
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
 |:-----------|:-----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad       | Tipo    |Descripción|
@@ -53,9 +56,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 28
 
-{
-  "color": "color-value"
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

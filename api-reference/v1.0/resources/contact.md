@@ -2,6 +2,12 @@
 
 Un contacto es un elemento de Outlook donde puede organizar y guardar información sobre las personas y organizaciones con las que se comunica. Los contactos se contienen en carpetas de contactos.
 
+Este recurso admite:
+
+- que agregue sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md);
+- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/contact_delta.md).
+
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de valor devuelto  |Descripción|
@@ -9,9 +15,14 @@ Un contacto es un elemento de Outlook donde puede organizar y guardar informaci�
 |[Obtener contacto](../api/contact_get.md) | [contact](contact.md) |Lea las propiedades y las relaciones del objeto de contacto.|
 |[Crear](../api/user_post_contacts.md) | [contact](contact.md) |Agregue un contacto a la carpeta de contactos raíz o al extremo de contactos de otra carpeta de contactos.|
 |[Actualizar](../api/contact_update.md) | [contact](contact.md) |Actualice el objeto de contacto. |
-|[Eliminar](../api/contact_delete.md) | Ninguno |Elimine el objeto de contacto. |
+|[Eliminar](../api/contact_delete.md) | Ninguno |Elimine el objeto contact. |
+|[delta](../api/contact_delta.md)|Colección [contact](contact.md)| Obtiene un conjunto de contactos que se hayan agregado, eliminado o actualizado en una carpeta determinada.|
+|**Extensiones abiertas**| | |
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o existente de un recurso.|
-|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene un objeto u objetos de extensión abierta identificados por nombre o por nombre completo.|
+|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga un objeto u objetos de extensión abierta identificados por nombre o por nombre completo.|
+|**Extensiones de esquema**| | |
+|[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
+|**Propiedades extendidas**| | |
 |[Crear propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contact](contact.md)  |Cree una o varias propiedades extendidas de valor único en un contacto nuevo o existente.   |
 |[Obtener contacto con propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Obtenga contactos que contienen una propiedad extendida de valor único mediante el uso de `$expand` o `$filter`. |
 |[Crear propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contact](contact.md) | Cree una o varias propiedades extendidas de varios valores en un contacto nuevo o existente.  |
@@ -130,6 +141,15 @@ Aquí tiene una representación JSON del recurso
 }
 
 ```
+
+## <a name="see-also"></a>Consulte también
+
+- [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
+- [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)
+- [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

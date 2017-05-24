@@ -15,9 +15,9 @@ Este método **no** es compatible con los [parámetros de consulta de OData](htt
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | Token de portador Obligatorio. |
+| Authorization  | string  | &lt;token&gt; de portador. *Obligatorio* |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [subscribedSku](../resources/subscribedsku.md) en el cuerpo de la respuesta.

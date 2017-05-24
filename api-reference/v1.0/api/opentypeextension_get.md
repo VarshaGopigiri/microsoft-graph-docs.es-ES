@@ -6,9 +6,9 @@ En la tabla siguiente, se enumeran tres escenarios en los que puede obtener una 
 
 |**Escenario de GET**|**Recursos admitidos**|**Cuerpo de la respuesta**|
 |:-----|:-----|:-----|
-|Obtenga una extensión específica de una instancia de recurso conocida.| [contact](../resources/contact.md), [event](../resources/event.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md) | Solo extensiones abiertas.|
-|Expanda una instancia de recurso conocida con una extensión específica.|Contact, event, group event, message|Una instancia de recurso expandida con la extensión abierta.|
-|Busque y expanda las instancias de recurso con una extensión específica. |Contact, event, group event, message|Instancias de recurso expandidas con la extensión abierta.|
+|Obtenga una extensión específica de una instancia de recurso conocida.| [Dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), [publicación de grupo](../resources/post.md), [mensaje](../resources/message.md), [organización](../resources/organization.md), [contacto personal](../resources/contact.md), [usuario](../resources/user.md) | Solo extensiones abiertas.|
+|Expanda una instancia de recurso conocida con una extensión específica.|Dispositivo, evento, grupo, evento de grupo, publicación de grupo, mensaje, organización, contacto personal, usuario |Una instancia de recurso expandida con la extensión abierta.|
+|Busque y expanda las instancias de recurso con una extensión específica. |Evento, evento de grupo, publicación de grupo, mensaje, contacto personal|Instancias de recurso expandidas con la extensión abierta.|
 
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -17,10 +17,14 @@ Según el recurso que contenga la extensión, se requiere uno de los siguientes 
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [evento](../resources/event.md) | _Calendars.Read_ | [evento de grupo](../resources/event.md) | _Calendars.Read_ | 
-| [Publicación de grupo](../resources/post.md) | _Group.Read.All_ | [mensaje](../resources/message.md) | _Mail.Read_ | 
-| [Contacto personal](../resources/contact.md) | _Contacts.Read_ |
- 
+| [Dispositivo](../resources/device.md) | _Directory.Read.All_ | [Evento](../resources/event.md) | _Calendars.Read_ | 
+| [Grupo](../resources/group.md) | _Group.Read.All_ | [Evento de grupo](../resources/event.md) | _Group.Read.All_ | 
+| [Publicación de grupo](../resources/post.md) | _Group.Read.All_ | [Mensaje](../resources/message.md) | _Mail.Read_ | 
+| [Organización](../resources/organization.md) | _Directory.Read.All_ | [Contacto personal](../resources/contact.md) | _Contacts.Read_ |
+| [Usuario](../resources/user.md) | _User.Read.All_ | | |
+
+
+
 ## <a name="http-request"></a>Solicitud HTTP
 
 En esta sección, se muestra la sintaxis de cada uno de los tres escenarios de `GET` descritos anteriormente.
@@ -31,24 +35,40 @@ Utilice la misma solicitud REST que para la instancia de recurso e identifique l
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /devices/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /organization/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Expanda una instancia de recurso conocida con una extensión coincidente. 
 
-Utilice la misma solicitud REST que al obtener la instancia de recurso, busque una extensión que coincida con un filtro en su propiedad **id** y expándala con la extensión.
+Para los tipos de recurso evento, evento de grupo, publicación de grupo, mensaje y contacto personal, utilice la misma solicitud REST que al obtener la instancia de recurso, busque una extensión que coincida con un filtro en su propiedad **id** y expanda la instancia con la extensión. La respuesta incluye la mayoría de las propiedades del recurso.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+```
+
+
+Para los tipos de recurso dispositivo, grupo, organización y usuario, también debe usar un parámetro `$select` para incluir la propiedad **id** y las demás propiedades que desee de la instancia del recurso:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 ### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>Filtre una instancia de recurso con una extensión coincidente. 
@@ -57,10 +77,11 @@ Use la misma solicitud REST que al obtener una colección del recurso admitido, 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**Nota:** La sintaxis anterior muestra algunas formas comunes para identificar una instancia del recurso o colección, con el fin de obtener una extensión de él. Todas las otras formas de sintaxis que le permiten identificar estas instancias o colecciones de recursos admiten la obtención de extensiones abiertas de ellas de una manera similar.

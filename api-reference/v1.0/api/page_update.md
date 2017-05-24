@@ -1,0 +1,72 @@
+# <a name="update-page"></a>Actualizar página
+
+Actualice el contenido de una página de OneNote.
+## <a name="prerequisites"></a>Requisitos previos
+Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:   
+
+Notes.ReadWrite o Notes.ReadWrite.All 
+
+## <a name="http-request"></a>Solicitud HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /me/onenote/pages/{id}/content
+PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
+PATCH /groups/{id}/onenote/pages/{id}/content
+```
+## <a name="request-headers"></a>Encabezados de solicitud
+| Nombre       | Tipo | Descripción|
+|:-----------|:------|:----------|
+| Authorization  | cadena  | `Bearer <token>` Un token válido de OAuth facilitado a la aplicación en función de las credenciales de usuario y de si este tiene autorizado el acceso. |
+| Content-Type | cadena | `application/json` |
+
+## <a name="request-body"></a>Cuerpo de la solicitud
+En el cuerpo de la solicitud, proporcione una matriz de objetos [patchContentCommand](../resources/patchcontentcommand.md) que representen los cambios a la página. Para obtener más información y ejemplos, consulte <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Actualizar páginas de OneNote</a>.
+
+## <a name="response"></a>Respuesta
+Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.  No se devuelven datos JSON para una solicitud PATCH.
+## <a name="example"></a>Ejemplo
+##### <a name="request"></a>Solicitud
+Aquí tiene un ejemplo de la solicitud.
+<!-- {
+  "blockType": "request",
+  "name": "update_page"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content
+Content-type: application/json
+Content-length: 312
+
+[
+   {
+    'target':'#para-id',
+    'action':'insert',
+    'position':'before',
+    'content':'<img src="image-url-or-part-name" alt="image-alt-text" />'
+  }, 
+  {
+    'target':'#list-id',
+    'action':'append',
+    'content':'<li>new-page-content</li>'
+  }
+]
+```
+##### <a name="response"></a>Respuesta
+Aquí tiene un ejemplo de la respuesta. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onenotePage"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update page",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

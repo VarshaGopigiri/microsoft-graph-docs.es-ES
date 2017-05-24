@@ -3,21 +3,24 @@
 Inserta una celda o un rango de celdas en la hoja de cálculo en lugar de este rango y desplaza las demás celdas para crear espacio. Devuelve un objeto Range en el espacio que queda en blanco.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/insert
-POST /workbook/worksheets(<id|name>)/range(<address>)/insert
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/insert
+POST /workbook/worksheets/{id|name}/range(<address>)/insert
+POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro       | Tipo    |Descripción|

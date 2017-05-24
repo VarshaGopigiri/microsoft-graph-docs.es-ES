@@ -3,21 +3,24 @@
 Obtiene el objeto de intervalo más pequeño que abarca los intervalos especificados. Por ejemplo, el valor GetBoundingRect de "B2:C5" y "D10:E15" es "B2:E16".
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/BoundingRect
-POST /workbook/worksheets(<id|name>)/range(<address>)/BoundingRect
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/BoundingRect
+GET /workbook/names(<name>)/range/BoundingRect
+GET /workbook/worksheets/{id|name}/range(<address>)/BoundingRect
+GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro       | Tipo    |Descripción|
@@ -36,7 +39,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "range_boundingrect"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
 Content-type: application/json
 Content-length: 42
 

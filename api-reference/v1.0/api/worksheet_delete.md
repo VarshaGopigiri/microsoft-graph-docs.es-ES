@@ -3,16 +3,19 @@
 Elimina la hoja de cálculo del libro.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/delete
+POST /workbook/worksheets/{id|name}/delete
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -29,7 +32,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "worksheet_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/delete
 ```
 
 ##### <a name="response"></a>Respuesta

@@ -3,16 +3,19 @@
 Use esta API para crear un objeto ChartSeries.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/series
+POST /workbook/worksheets/{id|name}/charts(<name>)/series
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -30,7 +33,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "create_chartseries_from_chart"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/series
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series
 Content-type: application/json
 Content-length: 26
 

@@ -3,6 +3,9 @@
 Recupera una lista de objetos nameditem.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,10 +17,10 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [NamedItem](../resources/nameditem.md) en el cuerpo de la respuesta.

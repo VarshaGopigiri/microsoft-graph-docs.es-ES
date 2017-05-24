@@ -3,17 +3,20 @@
 Elimina la fila de la tabla.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/rows(<index>)/delete
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows(<index>)/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -30,7 +33,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/rows(<index>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
 ```
 
 ##### <a name="response"></a>Respuesta

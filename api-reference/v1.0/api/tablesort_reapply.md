@@ -3,17 +3,20 @@
 Vuelve a aplicar los parámetros de ordenación actuales a la tabla.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/sort/reapply
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/sort/reapply
+POST /workbook/tables/{id|name}/sort/reapply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -30,7 +33,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "tablesort_reapply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/sort/reapply
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/reapply
 ```
 
 ##### <a name="response"></a>Respuesta

@@ -8,9 +8,11 @@ Según el recurso desde el que elimine la extensión, se requiere uno de los sig
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [evento](../resources/event.md) | _Calendars.ReadWrite_ | [evento de grupo](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [publicación de grupo](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ | 
-| [contacto personal](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
+| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
 
  
 ## <a name="http-request"></a>Solicitud HTTP
@@ -18,11 +20,15 @@ En la solicitud, identifique la instancia de recurso, utilice la propiedad de na
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+DELETE /devices/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+DELETE /groups/{id}/extensions/{extensionId}
 DELETE /groups/{id}/events/{id}/extensions/{extensionId}
 DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+DELETE /organization/{Id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
 >**Nota:** La sintaxis anterior muestra algunas formas comunes para identificar una instancia del recurso, con el fin de eliminar una extensión de él. Todas las otras formas de sintaxis que le permiten identificar estas instancias de recursos admiten la eliminación de extensiones abiertas de ellas de una manera similar.

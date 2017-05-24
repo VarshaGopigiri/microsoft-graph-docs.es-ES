@@ -14,20 +14,26 @@ Según el recurso en el que se creó la extensión, se requiere uno de los sigui
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [evento](../resources/event.md) | _Calendars.ReadWrite_ | [evento de grupo](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [publicación de grupo](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ | 
-| [contacto personal](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
+| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
  
 ## <a name="http-request"></a>Solicitud HTTP
 En la solicitud, identifique la instancia de recurso, utilice la propiedad de navegación **extensiones** de esa instancia para identificar y realizar un `PATCH` en esa instancia de extensión.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /devices/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /groups/{id}/extensions/{extensionId}
 PATCH /groups/{id}/events/{id}/extensions/{extensionId}
 PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
+PATCH /organization/{Id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
+PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
 >**Nota:** La sintaxis anterior muestra algunas formas comunes para identificar una instancia de recurso, con el fin de actualizar una extensión en él. Todas las otras formas de sintaxis que le permiten identificar estas instancias de recurso admiten la actualización de extensiones abiertas en ellas de una manera similar.

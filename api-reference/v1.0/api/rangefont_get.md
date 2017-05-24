@@ -3,12 +3,15 @@
 Recupera las propiedades y relaciones del objeto rangefont.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/font
-GET /workbook/worksheets(<id|name>)/range(<address>)/format/font
-GET /workbook/tables(<id|name>)/columns(<id|name>)/range/format/font
+GET /workbook/worksheets/{id|name}/range(<address>)/format/font
+GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
@@ -16,10 +19,10 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | Portador<code>|
+| Autorización  | Portador {código}|
 
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [RangeFont](../resources/rangefont.md) en el cuerpo de la respuesta.
