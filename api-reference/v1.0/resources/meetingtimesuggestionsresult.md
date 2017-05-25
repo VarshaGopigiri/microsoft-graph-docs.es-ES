@@ -34,8 +34,8 @@ Aquí tiene una representación JSON del recurso
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|Cadena|Un motivo por el que no se devuelven sugerencias de reunión. Los valores posibles son: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` o `unknown`. Esta propiedad es una cadena vacía si la propiedad **meetingTimeSuggestions** incluye alguna sugerencia de reunión.|
-|meetingTimeSuggestions|Colección [meetingTimeSuggestion](meetingTimeSuggestion.md)|Matriz de sugerencias de reunión.|
+|emptySuggestionsReason|String|Un motivo por el que no se devuelven sugerencias de reunión. Los valores posibles son: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` o `unknown`. Esta propiedad es una cadena vacía si la propiedad **meetingTimeSuggestions** incluye alguna sugerencia de reunión.|
+|meetingTimeSuggestions|[meetingTimeSuggestion](meetingTimeSuggestion.md) collection|Matriz de sugerencias de reunión.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
