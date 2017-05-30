@@ -100,9 +100,9 @@ Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools
 
 |**Nombre**|**Valor**|**Descripción**|
 |:---------------|:--------|:-------|
-|$filter|cadena|Devuelve una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
-|$filter con **cualquier** operador|cadena|Devuelve instancias de una colección de recursos que contienen una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.| 
-|$expand|cadena|Expande una instancia de recurso para incluir una extensión. |
+|$filter|string|Devuelve una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
+|$filter con **cualquier** operador|string|Devuelve instancias de una colección de recursos que contienen una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.| 
+|$expand|string|Expande una instancia de recurso para incluir una extensión. |
 
 
 ## <a name="request-headers"></a>Encabezados de solicitud

@@ -22,9 +22,9 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|name|Cadena|Nombre del depósito.|
-|orderHint|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](../resources/planner_order_hint_format.md).|
-|planId|Cadena|Id. de plan al que pertenece el depósito.|
+|name|String|Nombre del depósito.|
+|orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](../resources/planner_order_hint_format.md).|
+|planId|String|Id. de plan al que pertenece el depósito.|
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [plannerBucket](../resources/plannerbucket.md) actualizado en el cuerpo de la respuesta.

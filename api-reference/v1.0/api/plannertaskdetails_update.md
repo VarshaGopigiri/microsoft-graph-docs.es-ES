@@ -22,8 +22,8 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|Colección de elementos de la lista de comprobación de la tarea.|
-|description|Cadena|Descripción de la tarea|
-|previewType|cadena|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
+|description|String|Descripción de la tarea|
+|previewType|string|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|La colección de referencias de la tarea.|
 
 ### <a name="response"></a>Respuesta

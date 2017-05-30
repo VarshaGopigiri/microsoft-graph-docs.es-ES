@@ -17,17 +17,17 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | cadena  | `Bearer <token>` Un token válido de OAuth facilitado a la aplicación en función de las credenciales de usuario y de si este tiene autorizado el acceso. |
-| Content-Type | cadena | `application/json` |
+| Authorization  | string  | `Bearer <token>` Un token válido de OAuth facilitado a la aplicación en función de las credenciales de usuario y de si este tiene autorizado el acceso. |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación.
 
 | Parámetro       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|groupId|Cadena|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
-|id|Cadena|Obligatorio. El id. del bloc de notas de destino. |
-|renameAs|Cadena|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
+|groupId|String|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
+|id|String|Obligatorio. El id. del bloc de notas de destino. |
+|renameAs|String|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted` y un encabezado `Operation-Location`. Sondee el extremo de Operation-Location para [obtener el estado de la operación de copia](onenoteoperation_get.md).
