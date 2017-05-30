@@ -37,8 +37,8 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | Portador de <token>. Necesario. |
-| Prefer | cadena | <Time zone>. Opcional, se supone hora UTC si no se encuentra.|
+| Authorization  | string  | Portador de <token>. Necesario. |
+| Prefer | string | <Time zone>. Opcional, se supone hora UTC si no se encuentra.|
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.

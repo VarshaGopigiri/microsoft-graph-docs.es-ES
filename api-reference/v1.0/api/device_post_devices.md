@@ -14,7 +14,7 @@ POST /devices
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | cadena  | Portador de <token>. Necesario. |
+| Authorization  | string  | Portador de <token>. Necesario. |
 | Tipo de contenido | string | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
