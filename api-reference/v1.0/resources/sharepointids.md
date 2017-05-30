@@ -29,12 +29,12 @@ Aquí tiene una representación JSON del recurso
 
 | Propiedad         | Tipo         | Descripción                                                                                  |
 | :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
-| listId           | cadena       | Identificador único (guid) de la lista del elemento en SharePoint.                              |
+| listId           | string       | Identificador único (guid) de la lista del elemento en SharePoint.                              |
 | listItemId       | string       | Identificador entero del elemento en la lista que lo contiene.                               |
-| listItemUniqueId | cadena       | Identificador único (guid) del elemento contenido en OneDrive para la Empresa o en un sitio de SharePoint. |
-| siteId           | cadena       | Identificador único (guid) de la colección de sitios del elemento (SPSite).                        |
+| listItemUniqueId | string       | Identificador único (guid) del elemento contenido en OneDrive para la Empresa o en un sitio de SharePoint. |
+| siteId           | string       | Identificador único (guid) de la colección de sitios del elemento (SPSite).                        |
 | siteUrl          | string (URL) | La URL de SharePoint del sitio que contiene el elemento.                                      |
-| webId            | cadena       | Identificador único (guid) del sitio del elemento (SPWeb).                                    |
+| webId            | string       | Identificador único (guid) del sitio del elemento (SPWeb).                                    |
 
 ## <a name="remarks"></a>Observaciones
 

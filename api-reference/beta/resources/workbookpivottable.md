@@ -14,7 +14,7 @@ Representa una tabla dinámica de Excel.
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |id|String| ID la tabla dinámica.    Solo lectura.|
-|name|Cadena|Nombre de la tabla dinámica.    |
+|name|String|Nombre de la tabla dinámica.    |
 
 ### <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|

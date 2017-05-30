@@ -13,14 +13,14 @@ Solo se admite la operación de lectura con las SKU suscritas; no se admiten las
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|appliesTo|Cadena| Por ejemplo, "usuario" o "empresa". |
-|capabilityStatus|Cadena| Por ejemplo, "habilitado". |
+|appliesTo|String| Por ejemplo, "usuario" o "empresa". |
+|capabilityStatus|String| Por ejemplo, "habilitado". |
 |consumedUnits|Int32| El número de licencias asignadas. |
-|id|Cadena| El identificador único del recurso del objeto sku suscrito. Clave, no admite valores NULL. |
+|id|String| El identificador único del recurso del objeto sku suscrito. Clave, no admite valores NULL. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Información sobre el número y el estado de las licencias prepagadas. |
 |servicePlans|Colección [servicePlanInfo](serviceplaninfo.md)| Información acerca de los planes de servicio que están disponibles con el SKU. No admite valores NULL |
 |skuId|Guid| El identificador único (GUID) para el SKU de servicio. |
-|skuPartNumber|Cadena| La parte numérica del SKU, por ejemplo: "AAD_PREMIUM" o "RMSBASIC". |
+|skuPartNumber|String| La parte numérica del SKU, por ejemplo: "AAD_PREMIUM" o "RMSBASIC". |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

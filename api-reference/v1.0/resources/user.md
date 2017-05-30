@@ -55,28 +55,28 @@ Este recurso admite:
 
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|aboutMe|Cadena|Un campo de entrada de texto de forma libre para que el usuario se describa a sí mismo.|
+|aboutMe|String|Un campo de entrada de texto de forma libre para que el usuario se describa a sí mismo.|
 |accountEnabled|Booleano| **true** si la cuenta está habilitada; en caso contrario, **false**. Esta propiedad es necesaria cuando se crea un usuario. Es compatible con $filter.    |
 |assignedLicenses|Colección [assignedLicense](assignedlicense.md)|Las licencias asignadas al usuario. No admite valores NULL.            |
 |assignedPlans|Colección [assignedPlan](assignedplan.md)|Los planes asignados al usuario. Solo lectura. No admite valores NULL. |
 |birthday|DateTimeOffset|El cumpleaños del usuario. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|businessPhones|Colección de cadenas|Los números de teléfono del usuario. NOTA: Aunque se trata de una colección de cadenas, solo se puede establecer un número para esta propiedad.|
+|businessPhones|String collection|Los números de teléfono del usuario. NOTA: Aunque se trata de una colección de cadenas, solo se puede establecer un número para esta propiedad.|
 |city|String|La ciudad en la que se encuentra el usuario. Es compatible con $filter.|
 |country|String|El país o la región en la que se encuentra el usuario. Por ejemplo: "US" o "UK". Es compatible con $filter.|
 |department|String|El nombre del departamento en el que trabaja el usuario. Es compatible con $filter.|
 |displayName|String|El nombre del usuario que aparece en la libreta de direcciones. Suele ser la combinación del nombre del usuario, la inicial del segundo nombre y el apellido. Esta propiedad es necesaria cuando se crea un usuario y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
 |givenName|String|El nombre (nombre de pila) del usuario. Es compatible con $filter.|
 |hireDate|DateTimeOffset|La fecha de contratación del usuario. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|Cadena|El identificador único del usuario. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
-|imAddresses|Colección de cadenas|Direcciones del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondientes al usuario. Solo lectura.|
+|id|String|El identificador único del usuario. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
+|imAddresses|String collection|Direcciones del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondientes al usuario. Solo lectura.|
 |interests|Colección string|Una lista para que el usuario describa sus intereses.|
 |jobTitle|String|El puesto del usuario. Es compatible con $filter.|
 |mail|String|La dirección SMTP del usuario, por ejemplo: "jeff@contoso.onmicrosoft.com". Solo lectura. Es compatible con $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Configuración del buzón principal del usuario que ha iniciado sesión. Puede [obtener](../api/user_get_mailboxsettings.md) o [actualizar](../api/user_update_mailboxsettings.md) las opciones para enviar respuestas automáticas a mensajes entrantes, de configuración regional y de zona horaria.|
 |mailNickname|String|El alias de correo del usuario. Esta propiedad debe especificarse al crear un usuario. Es compatible con $filter.|
-|mobilePhone|Cadena|El número de teléfono móvil principal del usuario.|
-|mySite|Cadena|La dirección URL del sitio personal del usuario.|
-|officeLocation|Cadena|La ubicación de la oficina del lugar de trabajo del usuario.|
+|mobilePhone|String|El número de teléfono móvil principal del usuario.|
+|mySite|String|La dirección URL del sitio personal del usuario.|
+|officeLocation|String|La ubicación de la oficina del lugar de trabajo del usuario.|
 |onPremisesImmutableId|String|Esta propiedad se utiliza para asociar una cuenta local de usuario de Active Directory a su objeto de usuario de Azure AD. Esta propiedad debe especificarse al crear una nueva cuenta de usuario en Graph si utiliza un dominio federado para la propiedad **userPrincipalName** (UPN) del usuario. **Importante**: Los caracteres **$** y **_** no se pueden utilizar a la hora de especificar esta propiedad. Es compatible con $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica la última vez que se ha sincronizado el objeto con el directorio local. Por ejemplo: "2013-02-16T03:04:54Z". El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |onPremisesSecurityIdentifier|String|Contiene el identificador de seguridad local (SID) del usuario que se sincroniza desde un recurso local a la nube. Solo lectura.|
@@ -86,14 +86,14 @@ Este recurso admite:
 |pastProjects|Colección string|Una lista para que el usuario enumere sus últimos proyectos.|
 |postalCode|String|El código postal de la dirección del usuario. El código postal es específico del país o de la región del usuario. En Estados Unidos, este atributo contiene el código postal.|
 |preferredLanguage|String|El idioma preferido del usuario. Debe seguir el código ISO 639-1. Por ejemplo, "en-US".|
-|preferredName|Cadena|El nombre preferido del usuario.|
+|preferredName|String|El nombre preferido del usuario.|
 |provisionedPlans|Colección [ProvisionedPlan](provisionedplan.md)|Los planes que se ha aprovisionado para el usuario. Solo lectura. No admite valores NULL. |
 |proxyAddresses|Colección string|Por ejemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` El operador **any** es necesario para las expresiones de filtro en las propiedades de varios valores. Solo lectura, no admite valores NULL. Es compatible con $filter.          |
 |responsibilities|Colección string|Una lista para que el usuario enumere sus responsabilidades.|
 |schools|Colección string|Una lista para que el usuario enumere las escuelas a las que ha ido.|
 |skills|Colección string|Una lista para que el usuario enumere sus aptitudes.|
 |state|String|El estado o la provincia de la dirección del usuario. Es compatible con $filter.|
-|streetAddress|Cadena|La dirección postal del lugar de trabajo del usuario.|
+|streetAddress|String|La dirección postal del lugar de trabajo del usuario.|
 |surname|String|El apellido (o apellidos) del usuario. Es compatible con $filter.|
 |usageLocation|String|Un código de país de dos letras (norma ISO 3166). Es necesario para los usuarios a los que se asignarán licencias debido a un requisito legal para comprobar la disponibilidad de los servicios en los países.  Algunos ejemplos son: "US", "JP" y "GB". No admite valores NULL. Es compatible con $filter.|
 |userPrincipalName|String|El nombre principal del usuario (UPN) del usuario. El UPN es un nombre de inicio de sesión de Internet del usuario basado en la norma RFC 822. Por convención, se debe asignar al nombre de correo electrónico del usuario. El formato general es alias@dominio, donde el dominio debe estar presente en la colección de dominios verificados del inquilino. Esta propiedad es necesaria cuando se crea un usuario. Se puede acceder a los dominios verificados del inquilino desde la propiedad **verifiedDomains** en [organización](organization.md). Es compatible con $filter y $orderby.

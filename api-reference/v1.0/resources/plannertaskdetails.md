@@ -15,9 +15,9 @@ El recurso **plannerTaskDetails** representa la información adicional de una ta
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Colección de elementos de la lista de comprobación de la tarea.|
-|description|Cadena|Descripción de la tarea|
-|id|Cadena| Solo lectura. Id. de los detalles de la tarea. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|previewType|cadena|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
+|description|String|Descripción de la tarea|
+|id|String| Solo lectura. Id. de los detalles de la tarea. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
+|previewType|string|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|La colección de referencias de la tarea.|
 
 ### <a name="relationships"></a>Relaciones

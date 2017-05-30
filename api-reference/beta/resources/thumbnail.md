@@ -29,7 +29,7 @@ A continuación se incluye una representación JSON del recurso **thumbnail**.
 | Propiedad     | Tipo   | Descripción                                                                                                                 |
 | :----------- | :----- | :-------------------------------------------------------------------------------------------------------------------------- |
 | height       | Int32  | Alto de la miniatura en píxeles.                                                                                     |
-| sourceItemId | Cadena | Identificador único del elemento que proporciona la vista en miniatura. Solo está disponible cuando se solicita la miniatura de una carpeta. |
+| sourceItemId | String | Identificador único del elemento que proporciona la vista en miniatura. Solo está disponible cuando se solicita la miniatura de una carpeta. |
 | url          | String | Dirección URL usada para recuperar el contenido de la miniatura.                                                                                |
 | width        | Int32  | Ancho de la miniatura en píxeles.                                                                                      |
 

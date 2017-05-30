@@ -36,14 +36,14 @@ Aquí tiene una representación JSON del recurso.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó la sección. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|Cadena|El identificador único de la sección.  Solo lectura.|
+|id|String|El identificador único de la sección.  Solo lectura.|
 |isDefault|Booleano|Indica si se trata de la sección predeterminada del usuario. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó la sección por última vez. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |links|[SectionLinks](sectionlinks.md)|Vínculos para abrir la sección. El vínculo `oneNoteClientURL` abre la sección en el cliente nativo de OneNote si está instalado. El vínculo `oneNoteWebURL` abre la sección en OneNote Online.|
-|displayName|Cadena|Nombre de la sección. |
-|pagesUrl|Cadena|El punto de conexión `pages` donde puede obtener información detallada de todas las páginas de la sección. Solo lectura.|
-|self|Cadena|El punto de conexión donde puede obtener información detallada sobre la sección. Solo lectura.|
+|displayName|String|Nombre de la sección. |
+|pagesUrl|String|El punto de conexión `pages` donde puede obtener información detallada de todas las páginas de la sección. Solo lectura.|
+|self|String|El punto de conexión donde puede obtener información detallada sobre la sección. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|

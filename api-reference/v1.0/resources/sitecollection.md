@@ -25,7 +25,7 @@ Aquí tiene una representación JSON del recurso.
 
 | Nombre de la propiedad | Tipo    | Descripción                                                                                                                  |
 |:--------------|:--------|:---------------------------------------------------
-| **hostname**  | cadena  | Nombre de host de la colección de sitios. Solo lectura.
+| **hostname**  | string  | Nombre de host de la colección de sitios. Solo lectura.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

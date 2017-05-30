@@ -55,12 +55,12 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
 
 | Nombre de la propiedad            | Tipo                                | Descripción                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | cadena                              | El identificador único del elemento. Solo lectura.                                                  |
+| **id**                   | string                              | El identificador único del elemento. Solo lectura.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | La fecha y la hora de creación del elemento. Solo lectura.                                             |
-| **description**          | cadena                              | Texto descriptivo del sitio.                                                             |
-| **displayName**          | cadena                              | El título completo del sitio. Solo lectura.                                                        |
+| **description**          | string                              | Texto descriptivo del sitio.                                                             |
+| **displayName**          | string                              | El título completo del sitio. Solo lectura.                                                        |
 | **lastModifiedDateTime** | DateTimeOffset                      | Fecha y hora de la última modificación del elemento. Solo lectura.                                       |
-| **name**                 | cadena                              | Nombre o título del elemento.                                                                  |
+| **name**                 | string                              | Nombre o título del elemento.                                                                  |
 | **root**                 | [root](root.md)                     | Si está presente, indica que se trata del sitio raíz de la colección de sitios. Solo lectura.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Proporciona detalles sobre la colección de sitios del sitio. Solo disponible en el sitio raíz. Solo lectura. |

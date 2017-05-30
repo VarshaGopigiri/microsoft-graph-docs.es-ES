@@ -13,7 +13,7 @@ El recurso **plannerUser** proporciona acceso a los recursos Planner de un [usua
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Identificador del planenrUser|
+|id|String| Solo lectura. Identificador del planenrUser|
 
 ### <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|
