@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails/{thumb-
 
 | Nombre         | Tipo   | Descripción                                                                         |
 |:-------------|:-------|:------------------------------------------------------------------------------------|
-| **item-id**  | cadena | El identificador único para el elemento al que se hace referencia.                                      |
+| **item-id**  | string | El identificador único para el elemento al que se hace referencia.                                      |
 | **thumb-id** | número | El índice de la miniatura, normalmente de 0-4.                                            |
 | **size**     | string | El tamaño de la miniatura solicitada. Debe ser uno de los tamaños estándares enumerados. |
 

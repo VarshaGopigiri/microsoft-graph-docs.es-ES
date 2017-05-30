@@ -17,7 +17,7 @@ POST /groups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | cadena  | Portador de <token>. Necesario. |
+| Authorization  | string  | Portador de <token>. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 La tabla siguiente muestra las propiedades del recurso [grupo](../resources/group.md) que debe especificar al mínimo al crear un grupo. 

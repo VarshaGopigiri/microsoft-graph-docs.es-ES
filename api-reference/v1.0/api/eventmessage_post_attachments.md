@@ -12,7 +12,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | cadena  | Portador de <token>. Necesario. |
+| Authorization  | string  | Portador de <token>. Necesario. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

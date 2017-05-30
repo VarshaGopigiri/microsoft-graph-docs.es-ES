@@ -23,7 +23,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |visible|boolean|Especifica si el objeto está visible o no.|
-|comment|    cadena    |Representa el comentario asociado a este nombre.|
+|comment|    string    |Representa el comentario asociado a este nombre.|
 
 ## <a name="response"></a>Response
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [NamedItem](../resources/nameditem.md) actualizado en el cuerpo de la respuesta.

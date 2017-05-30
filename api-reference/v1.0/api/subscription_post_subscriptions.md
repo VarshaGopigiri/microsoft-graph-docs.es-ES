@@ -15,7 +15,7 @@ POST /subscriptions
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | Portador de <token>. Necesario. |
+| Authorization  | string  | Portador de <token>. Necesario. |
 
 
 ## <a name="response"></a>Respuesta

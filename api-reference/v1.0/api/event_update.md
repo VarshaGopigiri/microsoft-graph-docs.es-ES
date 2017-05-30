@@ -26,7 +26,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | Portador de <token>. Necesario. |
+| Authorization  | string  | Portador de <token>. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
@@ -41,14 +41,14 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |isAllDay|Booleano|Se establece en true si el evento dura todo el día.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle el evento al usuario.|
 |location|[Location](../resources/location.md)|La ubicación del evento.|
-|onlineMeetingUrl|Cadena|Una dirección URL para una reunión en línea.|
+|onlineMeetingUrl|String|Una dirección URL para una reunión en línea.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|El patrón de periodicidad del evento.|
 |reminderMinutesBeforeStart|Int32|El número de minutos antes de la hora de inicio del evento en que se producirá la alerta del recordatorio.|
 |responseRequested|Booleano|Se establece en true si el remitente quiere una respuesta cuando el evento se acepta o rechaza.|
-|sensitivity|Cadena| Los valores posibles son: `Normal`, `Personal`, `Private`, `Confidential`.|
+|sensitivity|String| Los valores posibles son: `Normal`, `Personal`, `Private`, `Confidential`.|
 |showAs|String|El estado que se mostrará: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
 |inicio|[DateTimeTimeZone](../resources/datetimetimezone.md)|La hora de inicio del evento. <br/><br/>De manera predeterminada, la hora de inicio está en formato UTC. Puede especificar una zona horaria opcional en StartTimeZone, expresar la hora de inicio en esa zona horaria e incluir una diferencia horaria de UTC. Tenga en cuenta que, si usa StartTimeZone, debe especificar también un valor para EndTimeZone.<br/><br/>En este ejemplo, se especifica el 25 de febrero de 2015, a las 7:34 p. m. en hora estándar del Pacífico: "2015-02-25T19:34:00-08:00".  |
-|subject|Cadena|El texto de la línea de asunto del evento.|
+|subject|String|El texto de la línea de asunto del evento.|
 
 Dado que el recurso **event** admite [extensiones](../../../concepts/extensibility_overview.md), puede utilizar la operación `PATCH` para agregar, actualizar o eliminar sus propios datos específicos de la aplicación en las propiedades personalizadas de una extensión en una instancia **event** existente.
 

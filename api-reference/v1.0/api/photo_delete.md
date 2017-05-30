@@ -18,7 +18,7 @@ DELETE /drive/root/createdByUser/photo
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | if-match  | string  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará.|
-| Autorización  | cadena  | Portador de <token>. Necesario. |
+| Autorización  | string  | Portador de <token>. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de solicitud

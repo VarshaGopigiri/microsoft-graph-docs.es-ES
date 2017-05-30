@@ -13,9 +13,9 @@ DELETE /groups/{id}/owners/{id}/$ref
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | cadena  | Portador de <token>. Necesario. |
+| Authorization  | string  | &lt;Token&gt; de portador. Necesario. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
@@ -29,7 +29,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```
 En la solicitud, especifique la `id` del objeto de directorio que quiere quitar después del segmento de $ref.
 

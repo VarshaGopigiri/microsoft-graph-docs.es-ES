@@ -20,8 +20,8 @@ El seguimiento de cambios en las carpetas de correo conlleva al menos una llamad
 
 | Parámetro de consulta       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-| $deltatoken | cadena | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de carpetas de correo. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
-| $skiptoken | cadena | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de carpetas de correo. |
+| $deltatoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de carpetas de correo. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
+| $skiptoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de carpetas de correo. |
 
 
 #### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
@@ -31,9 +31,9 @@ Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud G
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | cadena  | {código} de portador. Obligatorio.|
-| Tipo de contenido  | cadena  | application/json. Obligatorio. |
-| Prefer | cadena  | odata.maxpagesize={x}. Opcional. |
+| Authorization  | string  | {código} de portador. Obligatorio.|
+| Tipo de contenido  | string  | application/json. Obligatorio. |
+| Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
 
 ### <a name="response"></a>Respuesta

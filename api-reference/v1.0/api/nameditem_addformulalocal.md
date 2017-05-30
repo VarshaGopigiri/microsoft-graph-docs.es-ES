@@ -25,7 +25,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|name|cadena|Nombre del elemento con nombre.|
+|name|string|Nombre del elemento con nombre.|
 |formula|string|Fórmula o rango a los que se refiere el nombre.|
 |comment|string|Comentario asociado al elemento con nombre|
 

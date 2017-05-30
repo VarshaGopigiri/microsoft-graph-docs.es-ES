@@ -19,8 +19,8 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 
 | Parámetro de consulta       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-| $deltatoken | cadena | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de mensajes. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
-| $skiptoken | cadena | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de mensajes. |
+| $deltatoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de mensajes. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
+| $skiptoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de mensajes. |
 
 
 #### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
@@ -35,9 +35,9 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | cadena  | {código} de portador. Obligatorio.|
-| Tipo de contenido  | cadena  | application/json. Obligatorio. |
-| Prefer | cadena  | odata.maxpagesize={x}. Opcional. |
+| Authorization  | string  | {código} de portador. Obligatorio.|
+| Tipo de contenido  | string  | application/json. Obligatorio. |
+| Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
 
 ### <a name="response"></a>Respuesta

@@ -22,7 +22,7 @@ Este método también admite los [parámetros de consulta de OData](http://devel
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Autorización  | Portador de <token>. Necesario.  |
-| Prefer | cadena | <Time zone>. Opcional, se supone hora UTC si no se encuentra.|
+| Prefer | string | <Time zone>. Opcional, se supone hora UTC si no se encuentra.|
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.

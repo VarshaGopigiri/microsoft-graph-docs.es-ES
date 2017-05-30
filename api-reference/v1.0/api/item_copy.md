@@ -23,7 +23,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 | Nombre            | Valor                                          | Descripción                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Opcional. Referencia al elemento primario en que se creará la copia.                                         |
-| name            | cadena                                         | Opcional. El nuevo nombre de la copia. Si no se proporciona, se usará el mismo nombre que el original.    |
+| name            | string                                         | Opcional. El nuevo nombre de la copia. Si no se proporciona, se usará el mismo nombre que el original.    |
 
 **Nota:** _parentReference_ debe incluir un `id` o `path`, pero no ambos. Si se incluyen ambos, tienen que hacer referencia al mismo elemento o se producirá un error.
 
