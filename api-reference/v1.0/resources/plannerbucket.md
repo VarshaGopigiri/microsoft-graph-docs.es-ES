@@ -17,10 +17,10 @@ El recurso **plannerBucket** representa un depósito (o "columna personalizada")
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Id. del depósito. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|nombre|Cadena|Nombre del depósito.|
-|orderHint|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
-|planId|Cadena|Id. de plan al que pertenece el depósito.|
+|id|String| Solo lectura. Id. del depósito. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
+|nombre|String|Nombre del depósito.|
+|orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
+|planId|String|Id. de plan al que pertenece el depósito.|
 
 ### <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|

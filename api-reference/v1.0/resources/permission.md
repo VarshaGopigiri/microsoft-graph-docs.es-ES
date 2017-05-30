@@ -36,7 +36,7 @@ Aquí tiene una representación JSON del recurso
 | inheritedFrom | [ItemReference](itemreference.md)         | Proporciona una referencia al antecesor del permiso actual, si se ha heredado de un antecesor. Solo lectura.
 | vincular          | [SharingLink][]                           | Proporciona los detalles del vínculo del permiso actual, si es un permiso de tipo de vínculo. Solo lectura.
 | role          | Colección de String.                      | El tipo de permiso, p. ej., `read`. Más adelante encontrará una lista completa de roles. Solo lectura.
-| shareId       | Cadena                                    | Token único que se puede utilizar para tener acceso a este elemento compartido a través de la [API **shares**](../api/shares_get.md). Solo lectura.
+| shareId       | String                                    | Token único que se puede utilizar para tener acceso a este elemento compartido a través de la [API **shares**](../api/shares_get.md). Solo lectura.
 
 El recurso permission usa _facets_ para proporcionar información sobre el tipo de permiso que representa el recurso.
 

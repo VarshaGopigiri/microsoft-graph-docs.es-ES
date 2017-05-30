@@ -14,7 +14,7 @@ El recurso **planner** es el punto de entrada para el modelo de objetos de Plann
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Identificador del recurso **planner**.|
+|id|String| Solo lectura. Identificador del recurso **planner**.|
 
 ### <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|

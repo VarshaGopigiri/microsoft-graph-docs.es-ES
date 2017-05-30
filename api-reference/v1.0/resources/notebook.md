@@ -38,17 +38,17 @@ Aquí tiene una representación JSON del recurso
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|Cadena|El identificador único del bloc de notas. Solo lectura.|
+|id|String|El identificador único del bloc de notas. Solo lectura.|
 |isDefault|Booleano|Indica si se trata del bloc de notas predeterminado del usuario. Solo lectura.|
 |isShared|Booleano|Indica si se comparte el bloc de notas. Si es true, además del propietario, otros usuarios pueden ver el contenido del bloc de notas. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |links|[NotebookLinks](notebooklinks.md)|Vínculos para abrir el bloc de notas. El vínculo `oneNoteClientURL` abre el bloc de notas en el cliente nativo de OneNote si está instalado. El vínculo `oneNoteWebURL` abre el bloc de notas en OneNote Online.|
-|displayName|Cadena|El nombre del bloc de notas.|
-|sectionGroupsUrl|Cadena|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del bloc de notas. Solo lectura.|
-|sectionsUrl|Cadena|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del bloc de notas. Solo lectura.|
-|self|Cadena|El punto de conexión donde puede obtener información detallada sobre el bloc de notas. Solo lectura.|
-|userRole|Cadena|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
+|displayName|String|El nombre del bloc de notas.|
+|sectionGroupsUrl|String|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del bloc de notas. Solo lectura.|
+|sectionsUrl|String|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del bloc de notas. Solo lectura.|
+|self|String|El punto de conexión donde puede obtener información detallada sobre el bloc de notas. Solo lectura.|
+|userRole|String|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|

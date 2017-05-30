@@ -27,10 +27,10 @@ Aquí tiene una representación JSON del recurso
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|categories|Colección de cadenas||
+|categories|String collection||
 |changeKey|String||
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|Cadena| Solo lectura.|
+|id|String| Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relaciones

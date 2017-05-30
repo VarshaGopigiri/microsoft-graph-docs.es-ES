@@ -18,9 +18,9 @@ Representa un nombre definido para un rango de celdas o un valor. Los nombres pu
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|name|cadena|El nombre del objeto. Solo lectura.|
-|comment|cadena|Representa el comentario asociado a este nombre.|
-|scope|cadena|Indica si el nombre está en el ámbito del libro o de una hoja de cálculo específica. Solo lectura.|
+|name|string|El nombre del objeto. Solo lectura.|
+|comment|string|Representa el comentario asociado a este nombre.|
+|scope|string|Indica si el nombre está en el ámbito del libro o de una hoja de cálculo específica. Solo lectura.|
 |type|string|Indica el tipo de referencia que está asociado al nombre. Valores posibles: `String`, `Integer`, `Double`, `Boolean`, `Range`. Solo lectura.|
 |value|object|Representa la fórmula a la que debe hacer referencia el nombre, según su definición. Por ejemplo =Sheet14!$B$2:$H$12, =4.75, etc. Solo lectura.|
 |visible|boolean|Especifica si el objeto está visible o no.|

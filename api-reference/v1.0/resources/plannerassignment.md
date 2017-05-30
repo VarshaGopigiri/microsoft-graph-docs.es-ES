@@ -8,7 +8,7 @@ El recurso **plannerAssignment** representa la asignación de una tarea a un usu
 |:---------------|:--------|:----------|
 |assignedBy|[identitySet](identityset.md)|La identidad del usuario que realiza la asignación de la tarea (el asignante).|
 |assignedDateTime|DateTimeOffset|La hora a la que se asignó la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|orderHint|Cadena|La sugerencia usada para ordenar las personas a las que se ha asignado una tarea. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
+|orderHint|String|La sugerencia usada para ordenar las personas a las que se ha asignado una tarea. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
 
 ### <a name="json-representation"></a>Representación JSON
 

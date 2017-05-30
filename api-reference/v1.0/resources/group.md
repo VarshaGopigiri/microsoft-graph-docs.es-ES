@@ -22,9 +22,9 @@ Este recurso admite:
 |[Agregar propietario](../api/group_post_owners.md) |Ninguno| Agrega un nuevo propietario al grupo publicándolo en la propiedad de navegación **owners** (compatible solo con grupos de seguridad y grupos de seguridad habilitados para correo).|
 |[Enumerar propietarios](../api/group_list_owners.md) |Colección [directoryObject](directoryobject.md)| Obtiene los propietarios del grupo desde la propiedad de navegación **owners**.|
 |[Eliminar propietario](../api/group_delete_owners.md) | Ninguno |Elimina a un propietario de un grupo de Office 365, un grupo de seguridad o un grupo de seguridad habilitado para correo a través de la propiedad de navegación **owners**.|
-|[checkMemberGroups](../api/group_checkmembergroups.md)|Colección string|Comprueba la pertenencia de este grupo a una lista de grupos. La función es transitiva.|
-|[getMemberGroups](../api/group_getmembergroups.md)|Colección string|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva.|
-|[getMemberObjects](../api/group_getmemberobjects.md)|Colección string|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva. |
+|[checkMemberGroups](../api/group_checkmembergroups.md)|String collection|Comprueba la pertenencia de este grupo a una lista de grupos. La función es transitiva.|
+|[getMemberGroups](../api/group_getmembergroups.md)|String collection|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva.|
+|[getMemberObjects](../api/group_getmemberobjects.md)|String collection|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva. |
 |[Crear evento](../api/group_post_events.md) |[Evento](event.md)| Crea un nuevo evento publicándolo en la colección de eventos.|
 |[Enumerar eventos](../api/group_list_events.md) |Colección [event](event.md)| Obtiene una colección de objetos de evento.|
 |[Enumerar calendarView](../api/group_list_calendarview.md) |Colección [event](event.md)| Obtiene una colección de eventos en un margen de tiempo especificado.|
@@ -56,9 +56,9 @@ Este recurso admite:
 |allowExternalSenders|Boolean|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
 |autoSubscribeNewMembers|Booleano|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico. Puede establecer esta propiedad en una solicitud PATCH del grupo; no la establezca en la solicitud POST inicial que crea el grupo.|
 |createdDateTime|DateTimeOffset| La fecha y la hora de creación del grupo. |
-|description|Cadena|Una descripción opcional del grupo. |
+|description|String|Una descripción opcional del grupo. |
 |displayName|String|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
-|groupTypes|Colección string| Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad. Es compatible con $filter.|
+|groupTypes|String collection| Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad. Es compatible con $filter.|
 |id|String|El identificador único del grupo. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
 |isSubscribedByMail|Booleano|El valor predeterminado es **true**. Indica si el usuario actual está suscrito para recibir conversaciones de correo electrónico.|
 |Correo|String|La dirección SMTP del grupo, por ejemplo: "serviceadmins@contoso.onmicrosoft.com". Solo lectura. Es compatible con $filter.|
@@ -67,7 +67,7 @@ Este recurso admite:
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica la última vez que el grupo se ha sincronizado con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. Es compatible con $filter.|
 |onPremisesSecurityIdentifier|String|Contiene el identificador de seguridad local (SID) del grupo que se sincroniza desde un recurso local a la nube. Solo lectura. |
 |onPremisesSyncEnabled|Boolean|**true** si este grupo está sincronizado desde un directorio local; **false** si este grupo se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este grupo no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. Es compatible con $filter.|
-|proxyAddresses|Colección string| El operador **any** es necesario para las expresiones de filtro en las propiedades de varios valores. Solo lectura. No admite valores NULL. Es compatible con $filter. |
+|proxyAddresses|String collection| El operador **any** es necesario para las expresiones de filtro en las propiedades de varios valores. Solo lectura. No admite valores NULL. Es compatible con $filter. |
 |securityEnabled|Boolean|Especifica si el grupo es un grupo de seguridad. Si la propiedad **mailEnabled** también es true, el grupo es un grupo de seguridad habilitado para correo electrónico; de lo contrario, es un grupo de seguridad. Debe ser **false** para grupos de Office 365. Es compatible con $filter.|
 |unseenCount|Int32|Número de mensajes que el usuario actual no ha visto desde su última visita.|
 |visibility|String| Especifica la visibilidad de un grupo de Office 365. Los valores posibles son: **Private**, **Public** o vacío (que se interpreta como **Public**).|

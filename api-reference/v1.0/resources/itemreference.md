@@ -27,11 +27,11 @@ Aquí tiene una representación JSON del recurso
 
 | Propiedad      | Tipo                              | Descripción                                                                                                |
 | :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| driveId       | Cadena                            | Identificador único de la instancia de la unidad que contiene el elemento. Solo lectura.                                 |
+| driveId       | String                            | Identificador único de la instancia de la unidad que contiene el elemento. Solo lectura.                                 |
 | id            | String                            | Identificador único del elemento en la unidad. Solo lectura.                                                     |
-| name          | Cadena                            | El nombre del elemento al que se hace referencia. Solo lectura.                                                          |
+| name          | String                            | El nombre del elemento al que se hace referencia. Solo lectura.                                                          |
 | path          | String                            | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.                                                  |
-| shareId       | Cadena                            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares](../api/shares_get.md). |
+| shareId       | String                            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares](../api/shares_get.md). |
 | sharepointIds | [sharepointIds](sharepointids.md) | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                                   |
 
 

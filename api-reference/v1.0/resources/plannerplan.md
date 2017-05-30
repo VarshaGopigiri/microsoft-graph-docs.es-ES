@@ -17,9 +17,9 @@ El recurso **plannerPlan** representa un plan de Office 365. Un plan puede ser p
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se creó el plan. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|Cadena| Solo lectura. Id. del plan. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|owner|Cadena|Id. del [grupo](group.md) que tiene el plan. Para poder establecer este campo, debe existir un grupo válido. Una vez establecido, solo lo puede actualizar el propietario.|
-|title|Cadena|Obligatorio. Título del plan.|
+|id|String| Solo lectura. Id. del plan. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
+|owner|String|Id. del [grupo](group.md) que tiene el plan. Para poder establecer este campo, debe existir un grupo válido. Una vez establecido, solo lo puede actualizar el propietario.|
+|title|String|Obligatorio. Título del plan.|
 |createdBy|[identitySet](identityset.md)|Solo lectura. Usuario que creó el plan|
 
 ### <a name="relationships"></a>Relaciones

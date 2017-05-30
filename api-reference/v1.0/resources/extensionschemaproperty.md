@@ -6,8 +6,8 @@ Use los recursos **extensionSchemaProperty** para definir el nombre y el tipo de
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|name|Cadena| El nombre de la propiedad fuertemente tipada definida como parte de una extensión de esquema.|
-|tipo|Cadena| Tipo de la propiedad que se define como parte de una extensión de esquema.  Los valores permitidos son *Binary, Boolean, DateTime, Integer* y *String*.  Consulte la tabla siguiente para obtener más detalles.|
+|name|String| El nombre de la propiedad fuertemente tipada definida como parte de una extensión de esquema.|
+|tipo|String| Tipo de la propiedad que se define como parte de una extensión de esquema.  Los valores permitidos son *Binary, Boolean, DateTime, Integer* y *String*.  Consulte la tabla siguiente para obtener más detalles.|
 
 #### <a name="supported-property-data-types"></a>Tipos de datos de propiedad admitidos 
 Se admiten los siguientes tipos de datos al definir una propiedad en una extensión de esquema:

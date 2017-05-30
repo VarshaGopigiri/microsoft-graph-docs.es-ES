@@ -36,13 +36,13 @@ Aquí tiene una representación JSON del recurso.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el grupo de secciones. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|Cadena|El identificador único del grupo de secciones. Solo lectura.|
+|id|String|El identificador único del grupo de secciones. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.| 
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el grupo de secciones. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|displayName|Cadena|El nombre del grupo de secciones.|
-|sectionGroupsUrl|Cadena|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del grupo de secciones. Solo lectura.| 
-|sectionsUrl|Cadena|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del grupo de secciones. Solo lectura.|
-|self|Cadena|El punto de conexión donde puede obtener información detallada sobre el grupo de secciones. Solo lectura.|
+|displayName|String|El nombre del grupo de secciones.|
+|sectionGroupsUrl|String|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del grupo de secciones. Solo lectura.| 
+|sectionsUrl|String|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del grupo de secciones. Solo lectura.|
+|self|String|El punto de conexión donde puede obtener información detallada sobre el grupo de secciones. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|

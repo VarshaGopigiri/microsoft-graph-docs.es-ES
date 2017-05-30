@@ -11,7 +11,7 @@ El recurso **plannerGroup** proporciona acceso a los recursos Planner de un [gru
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Identificador del **plannerGroup**|
+|id|String| Solo lectura. Identificador del **plannerGroup**|
 
 ### <a name="relationships"></a>Relaciones
 | Relación | Tipo    |Descripción|

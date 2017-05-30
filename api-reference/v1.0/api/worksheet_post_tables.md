@@ -24,7 +24,7 @@ En el cuerpo de la solicitud, proporcione los parámetros siguientes.
 ### <a name="request-parameters"></a>Parámetros de la solicitud
 | Nombre       | Tipo|Descripción|
 |:---------------|:----------|
-| Dirección  | cadena| Dirección de intervalo. Si llama a esta API de `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
+| Dirección  | string| Dirección de intervalo. Si llama a esta API de `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
 | hasHeaders  | boolean|Valor booleano que indica si el intervalo tiene etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en false), Excel generará de forma automática el encabezado desplazando los datos hacia abajo una fila.|
 
 ## <a name="response"></a>Respuesta

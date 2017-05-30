@@ -47,31 +47,31 @@ Este recurso admite:
 |bccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cco: del mensaje.|
 |body|[itemBody](itembody.md)|El cuerpo del mensaje. Puede mostrarse en formato de texto o HTML.|
 |bodyPreview|String|Los primeros 255 caracteres del cuerpo del mensaje. Se muestran en formato de texto.|
-|categories|Colección string|Las categorías asociadas al mensaje.|
+|categories|String collection|Las categorías asociadas al mensaje.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cc: del mensaje.|
-|changeKey|Cadena|La versión del mensaje.|
-|conversationId|Cadena|El identificador de la conversación a la que pertenece el correo electrónico.|
+|changeKey|String|La versión del mensaje.|
+|conversationId|String|El identificador de la conversación a la que pertenece el correo electrónico.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación del mensaje.|
 |from|[recipient](recipient.md)|El propietario del buzón y el remitente del mensaje.|
 |hasAttachments|Booleano|Indica si el mensaje tiene datos adjuntos.|
-|id|Cadena|Identificador único del mensaje (tenga en cuenta que este valor puede cambiar si se mueve o se altera un mensaje)|
-|importance|Cadena| La importancia del mensaje: `Low`, `Normal` y `High`.|
+|id|String|Identificador único del mensaje (tenga en cuenta que este valor puede cambiar si se mueve o se altera un mensaje)|
+|importance|String| La importancia del mensaje: `Low`, `Normal` y `High`.|
 |inferenceClassification | String | La clasificación del mensaje para el usuario, según relevancia inferida, importancia o según una invalidación explícita. Los valores posibles son: `focused` o `other`. |
-|internetMessageId |Cadena |El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+|internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora de la última modificación del mensaje.|
-|parentFolderId|Cadena|El identificador único para el mailFolder principal del mensaje.|
+|parentFolderId|String|El identificador único para el mailFolder principal del mensaje.|
 |receivedDateTime|DateTimeOffset|La fecha y la hora en las que se recibió el mensaje.|
 |replyTo|Colección [recipient](recipient.md)|Las direcciones de correo electrónico que se utilizan al responder.|
 |sender|[recipient](recipient.md)|La cuenta que se utiliza realmente para generar el mensaje.|
 |sentDateTime|DateTimeOffset|La fecha y la hora de envío del mensaje.|
-|subject|Cadena|El asunto del mensaje.|
+|subject|String|El asunto del mensaje.|
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del mensaje.|
 |uniqueBody|[itemBody](itembody.md)|La parte del cuerpo del mensaje que es única del mensaje actual. El elemento **uniqueBody** no se devuelve de manera predeterminada, pero puede recuperarse para cualquier mensaje con la consulta `?$select=uniqueBody`. Puede mostrarse en formato de texto o HTML.|
-|webLink|Cadena|La dirección URL para abrir el mensaje en Outlook Web App.<br><br>Puede anexar un argumento ispopout al final de la dirección URL para cambiar cómo se muestra el mensaje. Si ispopout no está presente o se establece en 1, se muestra el mensaje en una ventana emergente. Si ispopout se establece en 0, el navegador mostrará el mensaje en el panel de revisión de Outlook Web App.<br><br>El mensaje se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br><br>Se puede obtener acceso a esta dirección URL desde un iFrame.|
+|webLink|String|La dirección URL para abrir el mensaje en Outlook Web App.<br><br>Puede anexar un argumento ispopout al final de la dirección URL para cambiar cómo se muestra el mensaje. Si ispopout no está presente o se establece en 1, se muestra el mensaje en una ventana emergente. Si ispopout se establece en 0, el navegador mostrará el mensaje en el panel de revisión de Outlook Web App.<br><br>El mensaje se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br><br>Se puede obtener acceso a esta dirección URL desde un iFrame.|
 
 **Quitar un script de la propiedad body**
 

@@ -7,8 +7,8 @@ Representa el estado de las operaciones asincrónicas programadas en un dominio.
 | Propiedad   | Tipo | Descripción |
 |:---------------|:--------|:----------|
 | lastActionDateTime | DateTimeOffset | Marca de tiempo de la última actividad. El valor se actualiza cuando se programa una operación, se inicia la tarea asincrónica y cuando termina la operación. |
-| operation | Cadena | Tipo de operación asincrónica. Los valores pueden ser *ForceDelete* o *Verification* |
-| status | Cadena | Estado actual de la operación. <br> *Programada*: La operación se ha programado, pero no se ha iniciado. <br> *En curso*: La tarea se ha iniciado y está en curso. <br> *Error*: Se ha producido un error en la operación. |
+| operation | String | Tipo de operación asincrónica. Los valores pueden ser *ForceDelete* o *Verification* |
+| status | String | Estado actual de la operación. <br> *Programada*: La operación se ha programado, pero no se ha iniciado. <br> *En curso*: La tarea se ha iniciado y está en curso. <br> *Error*: Se ha producido un error en la operación. |
 
 ### <a name="json-representation"></a>Representación JSON
 

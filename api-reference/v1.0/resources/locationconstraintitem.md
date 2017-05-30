@@ -30,7 +30,7 @@ Aquí tiene una representación JSON del recurso
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicalAddress.md) |Dirección postal de la ubicación. |
 | displayName  | String | Nombre asociado a la ubicación.                       |
-| locationEmailAddress | Cadena | Dirección de correo electrónico opcional en la ubicación |
+| locationEmailAddress | String | Dirección de correo electrónico opcional en la ubicación |
 | resolveAvailability | Boolean | Si se establece en verdadero y el recurso especificado está ocupado [findMeetingTimes](../api/user_findmeetingtimes.md) buscará otro recurso que esté libre. Si se establece en falso y el recurso especificado está ocupado, **findMeetingTimes** devolverá el recurso mejor puntuado en la caché del usuario sin comprobar que esté libre o no. El valor predeterminado es "true". |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

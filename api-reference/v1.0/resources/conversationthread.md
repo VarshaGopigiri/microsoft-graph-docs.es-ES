@@ -18,7 +18,7 @@ La colección de destinatarios de la última publicación son los destinatarios 
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura.|
+|id|String| Solo lectura.|
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del hilo.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios CC: del hilo.|
 |topic|String|El tema de la conversación. Esta propiedad se puede establecer al crear la conversación, pero no se puede actualizar.||

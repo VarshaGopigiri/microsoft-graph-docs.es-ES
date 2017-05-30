@@ -8,12 +8,12 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura. |
+|id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura. |
 |isOptional|Booleano| Si es false, el cliente debe configurar el registro TXT en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
-|label|Cadena| Valor que se debe usar al configurar la propiedad *name* del registro TXT en el host DNS.|
-|recordType|Cadena| Tipo de registro DNS. El valor es siempre *Txt*. Clave |
-|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro TXT.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
-|text|Cadena| Valor que se usa al configurar la propiedad *text* en el host DNS. |
+|label|String| Valor que se debe usar al configurar la propiedad *name* del registro TXT en el host DNS.|
+|recordType|String| Tipo de registro DNS. El valor es siempre *Txt*. Clave |
+|supportedService|String| Servicio o función de Microsoft Online que tiene una dependencia en el registro TXT.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
+|text|String| Valor que se usa al configurar la propiedad *text* en el host DNS. |
 |ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL |
 
 ### <a name="relationships"></a>Relaciones

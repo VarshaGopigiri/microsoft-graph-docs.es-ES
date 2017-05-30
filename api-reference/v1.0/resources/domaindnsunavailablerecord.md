@@ -8,7 +8,7 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|description|Cadena|Proporciona el motivo por el que se devuelve la entidad **DomainDnsUnavailableRecord**. |
+|description|String|Proporciona el motivo por el que se devuelve la entidad **DomainDnsUnavailableRecord**. |
 
 ### <a name="relationships"></a>Relaciones
 Ninguno

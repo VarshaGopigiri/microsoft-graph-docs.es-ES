@@ -8,16 +8,16 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
+|id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
 |isOptional|Booleano| Si es false, el cliente debe configurar el registro SRV en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
-|label|Cadena| Valor que se usa al configurar la propiedad *name* del registro SRV en el host DNS. |
-|nameTarget|Cadena| Valor que se debe usar al configurar la propiedad *Target* del registro SRV en el host DNS. |
+|label|String| Valor que se usa al configurar la propiedad *name* del registro SRV en el host DNS. |
+|nameTarget|String| Valor que se debe usar al configurar la propiedad *Target* del registro SRV en el host DNS. |
 |port|Int32| Valor que se debe usar al configurar la propiedad *port* del registro SRV en el host DNS. |
 |priority|Int32| Valor que se debe usar al configurar la propiedad *priority* del registro SRV en el host DNS. |
-|protocol|Cadena| Valor que se debe usar al configurar la propiedad *protocol* del registro SRV en el host DNS. |
-|recordType|Cadena|  Tipo de registro DNS. El valor es siempre *Srv*. Clave |
-|service|Cadena| Valor que se debe usar al configurar la propiedad *service* del registro SRV en el host DNS. |
-|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro SRV.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
+|protocol|String| Valor que se debe usar al configurar la propiedad *protocol* del registro SRV en el host DNS. |
+|recordType|String|  Tipo de registro DNS. El valor es siempre *Srv*. Clave |
+|service|String| Valor que se debe usar al configurar la propiedad *service* del registro SRV en el host DNS. |
+|supportedService|String| Servicio o función de Microsoft Online que tiene una dependencia en el registro SRV.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
 |ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro SRV en el host DNS. No admite valores NULL |
 |weight|Int32| Valor que se debe usar al configurar la propiedad *weight* del registro SRV en el host DNS. |
 

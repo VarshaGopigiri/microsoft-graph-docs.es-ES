@@ -8,13 +8,13 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
+|id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
 |isOptional|Booleano| Si es false, el cliente debe configurar el registro MX en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
-|label|Cadena| Valor que se usa al configurar la propiedad *alias/host/name* del registro MX en el host DNS. |
-|mailExchange|Cadena| Valor que se usa al configurar la propiedad *answer/destination/value* del registro MX en el host DNS.|
+|label|String| Valor que se usa al configurar la propiedad *alias/host/name* del registro MX en el host DNS. |
+|mailExchange|String| Valor que se usa al configurar la propiedad *answer/destination/value* del registro MX en el host DNS.|
 |preference|Int32| Valor que se usa al configurar la propiedad *Preference/Priority* del registro MX en el host DNS. |
-|recordType|Cadena| Tipo de registro DNS. El valor es siempre *Mx*. Clave |
-|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro MX.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
+|recordType|String| Tipo de registro DNS. El valor es siempre *Mx*. Clave |
+|supportedService|String| Servicio o función de Microsoft Online que tiene una dependencia en el registro MX.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
 |ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL |
 
 ### <a name="relationships"></a>Relaciones

@@ -11,7 +11,7 @@
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura.|
+|id|String| Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

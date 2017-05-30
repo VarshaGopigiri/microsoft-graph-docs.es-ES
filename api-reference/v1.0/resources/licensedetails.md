@@ -13,10 +13,10 @@ Contiene información sobre una licencia asignada a un usuario.
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Identificador único del objeto licenseDetails. Solo lectura, no admite valores NULL. |
+|id|String| Identificador único del objeto licenseDetails. Solo lectura, no admite valores NULL. |
 |servicePlans|Colección [servicePlanInfo](serviceplaninfo.md)| Información sobre los planes de servicio asignados a la licencia. Solo lectura, no admite valores NULL. |
 |skuId|Guid| Identificador único (GUID) del SKU de servicio. Es igual a la propiedad skuId en el objeto [SubscribedSku](subscribedsku.md) relacionado. Solo lectura |
-|skuPartNumber|Cadena| Nombre para mostrar de SKU único. Es igual al skuPartNumber en el objeto [SubscribedSku](subscribedsku.md) relacionado; por ejemplo: "AAD_Premium". Solo lectura |
+|skuPartNumber|String| Nombre para mostrar de SKU único. Es igual al skuPartNumber en el objeto [SubscribedSku](subscribedsku.md) relacionado; por ejemplo: "AAD_Premium". Solo lectura |
 
 ### <a name="relationships"></a>Relaciones
 Ninguno

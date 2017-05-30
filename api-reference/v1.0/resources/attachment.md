@@ -32,7 +32,7 @@ A continuación se muestran las propiedades base de cualquier recurso de datos a
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |contentType|String|El tipo MIME.|
-|id|Cadena| Solo lectura.|
+|id|String| Solo lectura.|
 |isInline|Boolean|`true` si los datos adjuntos son datos adjuntos en línea; de lo contrario, `false`.|
 |lastModifiedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |name|String|El nombre de archivo de los datos adjuntos.|

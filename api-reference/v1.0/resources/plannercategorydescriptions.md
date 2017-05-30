@@ -6,12 +6,12 @@ El recurso **plannerCategoryDescriptions** representa las etiquetas descriptivas
 ### <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|category1|Cadena|Etiqueta asociada a la categoría 1|
-|category2|Cadena|Etiqueta asociada a la categoría 2|
-|category3|Cadena|Etiqueta asociada a la categoría 3|
-|category4|Cadena|Etiqueta asociada a la categoría 4|
-|category5|Cadena|Etiqueta asociada a la categoría 5|
-|category6|Cadena|Etiqueta asociada a la categoría 6|
+|category1|String|Etiqueta asociada a la categoría 1|
+|category2|String|Etiqueta asociada a la categoría 2|
+|category3|String|Etiqueta asociada a la categoría 3|
+|category4|String|Etiqueta asociada a la categoría 4|
+|category5|String|Etiqueta asociada a la categoría 5|
+|category6|String|Etiqueta asociada a la categoría 6|
 
 ### <a name="json-representation"></a>Representación JSON
 

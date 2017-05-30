@@ -37,13 +37,13 @@ A continuación se incluye una representación JSON del recurso **baseItem**.
 
 | Propiedad             | Tipo              | Descripción                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | cadena            | El identificador único de la unidad. Solo lectura.                                         |
+| id                   | string            | El identificador único de la unidad. Solo lectura.                                         |
 | createdBy            | [identitySet][]   | Identidad del usuario, del dispositivo o de la aplicación que ha creado el elemento. Solo lectura.        |
 | createdDateTime      | dateTimeOffset    | Fecha y hora de creación del elemento. Solo lectura.                                             |
-| eTag                 | cadena            | ETag para el elemento. Solo lectura.                                                          |
+| eTag                 | string            | ETag para el elemento. Solo lectura.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura. |
 | lastModifiedDateTime | dateTimeOffset    | Fecha y hora de la última modificación del elemento. Solo lectura.                                   |
-| name                 | cadena            | Nombre del elemento. Lectura y escritura.                                                      |
+| name                 | string            | Nombre del elemento. Lectura y escritura.                                                      |
 | parentReference      | [itemReference][] | Información primaria, si el elemento tiene un elemento primario. Lectura y escritura.                              |
 | webUrl               | string (URL)      | Dirección URL que muestra el recurso en el explorador. Solo lectura.                              |
 
