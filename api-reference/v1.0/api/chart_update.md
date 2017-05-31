@@ -1,4 +1,4 @@
-# <a name="update-chart"></a>Update chart
+# <a name="update-chart"></a>Actualizar gráfico
 
 Actualiza las propiedades del objeto chart.
 ## <a name="prerequisites"></a>Requisitos previos

@@ -1,4 +1,4 @@
-# <a name="update-calendargroup"></a>Update calendargroup
+# <a name="update-calendargroup"></a>Actualizar grupo de calendario
 
 Actualiza las propiedades del objeto calendargroup.
 ## <a name="prerequisites"></a>Requisitos previos

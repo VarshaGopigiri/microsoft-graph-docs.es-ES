@@ -1,4 +1,4 @@
-# <a name="update-chartlineformat"></a>Update chartlineformat
+# <a name="update-chartlineformat"></a>Actualizar chartlineformat
 
 Actualiza las propiedades del objeto chartlineformat.
 ## <a name="prerequisites"></a>Requisitos previos

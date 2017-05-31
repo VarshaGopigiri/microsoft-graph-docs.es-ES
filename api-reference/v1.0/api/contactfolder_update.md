@@ -1,4 +1,4 @@
-# <a name="update-contactfolder"></a>Update contactfolder
+# <a name="update-contactfolder"></a>Actualizar contactfolder
 
 Actualiza las propiedades del objeto contactfolder.
 ## <a name="prerequisites"></a>Requisitos previos

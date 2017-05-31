@@ -1,4 +1,4 @@
-# <a name="update-chartseries"></a>Update chartseries
+# <a name="update-chartseries"></a>Actualizar chartseries
 
 Actualiza las propiedades del objeto chartserie.
 ## <a name="prerequisites"></a>Requisitos previos

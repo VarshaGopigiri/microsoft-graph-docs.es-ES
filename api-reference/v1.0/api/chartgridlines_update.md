@@ -1,4 +1,4 @@
-# <a name="update-chartgridlines"></a>Update chartgridlines
+# <a name="update-chartgridlines"></a>Actualizar chartgridlines
 
 Actualiza las propiedades del objeto chartgridlines.
 ## <a name="prerequisites"></a>Requisitos previos

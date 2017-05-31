@@ -1,4 +1,4 @@
-# <a name="update-chartlegend"></a>Update chartlegend
+# <a name="update-chartlegend"></a>Actualizar chartlegend
 
 Actualiza las propiedades del objeto chartlegend.
 ## <a name="prerequisites"></a>Requisitos previos

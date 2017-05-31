@@ -1,4 +1,4 @@
-# <a name="update-chartaxis"></a>Update chartaxis
+# <a name="update-chartaxis"></a>Actualizar chartaxis
 
 Actualiza las propiedades del objeto chartaxis.
 ## <a name="prerequisites"></a>Requisitos previos

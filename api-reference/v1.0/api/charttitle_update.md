@@ -1,4 +1,4 @@
-# <a name="update-charttitle"></a>Update charttitle
+# <a name="update-charttitle"></a>Actualizar charttitle
 
 Actualiza las propiedades del objeto charttitle.
 ## <a name="prerequisites"></a>Requisitos previos

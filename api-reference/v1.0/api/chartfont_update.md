@@ -1,4 +1,4 @@
-# <a name="update-chartfont"></a>Update chartfont
+# <a name="update-chartfont"></a>Actualizar chartfont
 
 Actualiza las propiedades del objeto chartfont.
 ## <a name="prerequisites"></a>Requisitos previos

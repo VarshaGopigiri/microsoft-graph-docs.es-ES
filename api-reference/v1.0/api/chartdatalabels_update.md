@@ -1,4 +1,4 @@
-# <a name="update-chartdatalabels"></a>Update chartdatalabels
+# <a name="update-chartdatalabels"></a>Actualizar chartdatalabels
 
 Actualiza las propiedades del objeto chartdatalabels.
 ## <a name="prerequisites"></a>Requisitos previos
