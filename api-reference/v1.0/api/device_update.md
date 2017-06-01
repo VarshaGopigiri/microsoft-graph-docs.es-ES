@@ -1,4 +1,4 @@
-# <a name="update-device"></a>Update device
+# <a name="update-device"></a>Actualizar device
 
 Actualiza las propiedades de un dispositivo registrado.
 
