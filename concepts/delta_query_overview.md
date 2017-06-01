@@ -1,4 +1,4 @@
-#  <a name="use-delta-query-to-track-changes-in-microsoft-graph-data-preview"></a>Usar la consulta de delta para realizar el seguimiento de los cambios en datos de Microsoft Graph (versión preliminar)
+#  <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph
 
 La consulta de delta permite a las aplicaciones detectar entidades recién creadas, actualizadas o eliminadas sin realizar una operación de lectura completa del recurso de destino con cada solicitud. Las aplicaciones de Microsoft Graph pueden usar consultas de delta para sincronizar los cambios de forma eficaz con un almacén de datos local.
 
@@ -7,9 +7,9 @@ La consulta de delta permite a las aplicaciones detectar entidades recién cread
 El patrón de llamada típico es el siguiente:
 
 1.  La aplicación empieza con una llamada a una solicitud GET con la función delta en el recurso deseado.
-2.  Microsoft Graph enviará una respuesta que contiene el recurso solicitado y un [token de estado](#state-tokens).
+2.  Microsoft Graph envía una respuesta que contiene el recurso solicitado y un [token de estado](#state-tokens).
 
-     a.  Si se devuelve una dirección URL `nextLink`, hay más páginas de datos para recuperar en la sesión. La aplicación continúa realizando solicitudes mediante la dirección URL `nextLink` hasta que se incluya dirección URL `deltaLink` en la respuesta.
+     a.  Si se devuelve una dirección URL `nextLink`, podría haber más páginas de datos para recuperar en la sesión. La aplicación continúa realizando solicitudes mediante la dirección URL `nextLink` para recuperar todas las páginas de datos hasta que se incluya una dirección URL `deltaLink` en la respuesta.
 
      b.  Si se devuelve dirección URL `deltaLink`, no hay más datos sobre el estado existente del recurso para devolver. Para las solicitudes futuras, la aplicación usa la dirección URL `deltaLink` para obtener información sobre los cambios en el recurso.
      
@@ -36,47 +36,49 @@ Para los usuarios y grupos, existen restricciones en el uso de algunos parámetr
 -   Si se usa un parámetro de consulta `$select`, este indica que el cliente prefiere registrar los cambios solo en las propiedades o relaciones especificadas en la instrucción `$select`. Si se produce un cambio en una propiedad que no está activada, el recurso en el que se ha producido el cambio no aparecerá en la respuesta de delta tras una solicitud posterior.
 -   `$expand` no es compatible.
 
-## <a name="resource-representation-in-the-delta-query-response"></a>Representación de recursos en la respuesta de consulta de delta
+Para los usuarios y las API beta para grupos (vista previa), definir el ámbito de los filtros le permite controlar los cambios realizados en uno o más usuarios o grupos específicos mediante objectId. Por ejemplo, la siguiente solicitud: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' o id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' devuelve cambios para los grupos que coinciden con los id. especificados en el filtro de consulta. 
+
+## <a name="resource-representation-in-the-delta-query-response"></a>Representación de recursos en la respuesta de consulta delta
 
 -   Las instancias de un recurso compatible recién creadas se representan en la respuesta de consulta de delta con su representación estándar.
 
--   Instancias actualizadas están representadas por sus **id** con *al menos* las propiedades que se han actualizado, aunque pueden incluirse otras propiedades.
+-   Instancias actualizadas están representadas por sus **id.** con *al menos* las propiedades que se han actualizado, aunque pueden incluirse otras propiedades.
 
--   Los cambios en las relaciones de usuarios y grupos se representan como anotaciones en la representación de recursos estándar. Estas anotaciones usan el formato `propertyName@delta` y solo aparecen si el cliente decide realizar el seguimiento de los cambios en la relación con el parámetro `$select` de forma explícita.
+-   Las relaciones de usuarios y grupos se representan como anotaciones en la representación de recursos estándar. Estas anotaciones utilizan el formato `propertyName@delta`. Las anotaciones se incluyen en la respuesta de la solicitud de consulta inicial de delta.
 
--   Las instancias eliminadas se representan solo con sus **id** y un nodo `@removed`. El nodo `@removed` puede incluir información adicional sobre por qué se quitó la instancia.
+Las instancias eliminadas se representan mediante sus **id.** y un objeto `@removed`. El objeto `@removed` puede incluir información adicional sobre por qué se eliminó la instancia. Por ejemplo, "@removed": {"reason": "changed"}.
 
-> **Nota acerca de futuros cambios**: Instancias eliminadas aparecen actualmente con el nodo `@removed` con el siguiente formato *"@removed": "razón de eliminación"*. Sin embargo, se introducirá un cambio importante en el futuro. Antes de que la consulta de delta pase de /beta a /v1.0, se anidará un objeto en el nodo quitado para dar más información. Por ejemplo, *@removed {motivo: "motivo de eliminación"}*. Este objeto puede ampliarse en el futuro para incluir metadatos adicionales sobre la eliminación.
+Las razones posibles de "@removed" (eliminación) pueden ser *changed* (cambios) o *deleted* (eliminaciones).
+- *Changed* indica que el elemento se eliminó y puede restaurarse desde [deletedItems](../api-reference/beta/resources/directory.md).
+- *Deleted* indica que el elemento se ha eliminado y no se puede restaurar.
+
+Los objetos "@removed" se puede devolver en la respuesta de la consulta inicial de delta y en las respuestas de seguimiento (deltaLink). Los clientes con solicitudes de consulta delta deben diseñarse para manejar estos objetos en las respuestas.
 
 ## <a name="supported-resources"></a>Recursos admitidos
 
-La consulta de delta se admite actualmente en versión preliminar en el punto de conexión /beta de Microsoft Graph para los siguientes recursos.
+Actualmente, la consulta delta es compatible con los siguientes recursos:
 
 | **Colección de recursos** | **API** |
 |:------ | :------ |
-| Eventos en una vista de calendario (intervalo de fechas) del calendario principal | La función [delta](../api-reference/beta/api/event_delta.md) del recurso [event](../api-reference/beta/resources/event.md) |
-| Grupos | La función [delta](../api-reference/beta/api/group_delta.md) del recurso [group](../api-reference/beta/resources/group.md) |
-| Carpetas de correo | La función [delta](../api-reference/beta/api/mailfolder_delta.md) del recurso [mailFolder](../api-reference/beta/resources/mailFolder.md) |
-| Mensajes de una carpeta | La función [delta](../api-reference/beta/api/message_delta.md) del recurso [message](../api-reference/beta/resources/message.md) | 
-| Carpetas de contactos personales | La función [delta](../api-reference/beta/api/contactfolder_delta.md) del recurso [contactFolder](../api-reference/beta/resources/contactfolder.md) |
-| Contactos personales en una carpeta | La función [delta](../api-reference/beta/api/contact_delta.md) del recurso [contact](../api-reference/beta/resources/contact.md) |
-| Usuarios | La función [delta](../api-reference/beta/api/user_delta.md) del recurso [user](../api-reference/beta/resources/user.md) | 
-| Elementos de la unidad\* | La función [delta](../api-reference/beta/api/item_delta.md) del recurso [driveItem](../api-reference/beta/resources/driveItem.md) |
+| Eventos en una vista de calendario (intervalo de fechas) del calendario principal | La función [delta](../api-reference/v1.0/api/event_delta.md) del recurso [event](../api-reference/v1.0/resources/event.md) |
+| Grupos | La función [delta](../api-reference/v1.0/api/group_delta.md) del recurso [group](../api-reference/v1.0/resources/group.md) |
+| Carpetas de correo | La función [delta](../api-reference/v1.0/api/mailfolder_delta.md) del recurso [mailFolder](../api-reference/v1.0/resources/mailFolder.md) |
+| Mensajes de una carpeta | La función [delta](../api-reference/v1.0/api/message_delta.md) del recurso [message](../api-reference/v1.0/resources/message.md) | 
+| Carpetas de contactos personales | La función [delta](../api-reference/v1.0/api/contactfolder_delta.md) del recurso [contactFolder](../api-reference/v1.0/resources/contactfolder.md) |
+| Contactos personales en una carpeta | La función [delta](../api-reference/v1.0/api/contact_delta.md) del recurso [contact](../api-reference/v1.0/resources/contact.md) |
+| Usuarios | La función [delta](../api-reference/v1.0/api/user_delta.md) del recurso [user](../api-reference/v1.0/resources/user.md) | 
+| Elementos de la unidad\* | La función [delta](../api-reference/v1.0/api/item_delta.md) del recurso [driveItem](../api-reference/v1.0/resources/driveItem.md) |
 
 
-> \* La v1.0 ya es compatible con el seguimiento de cambios a unidades y sus elementos secundarios. El patrón de uso es similar a los demás recursos compatibles con algunas diferencias secundarias de sintaxis. La consulta de delta para unidades se actualizará en el futuro para que sea coherente con otros tipos de recursos. Para obtener más detalles sobre la sintaxis actual, vea: <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
+> \* El patrón de uso para los recursos de OneDrive es similar a los demás recursos compatibles con algunas diferencias secundarias de sintaxis. La consulta delta para unidades se actualizará en el futuro para que sea coherente con otros tipos de recursos. Para obtener más detalles sobre la sintaxis actual, vea: <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Los mismos [permisos](../authorization/permission_scopes.md) que se requieren para leer un recurso específico también son necesarios para realizar la consulta de delta en ellos.
+Los mismos [permisos](./permissions_reference.md) que se requieren para leer un recurso específico también son necesarios para realizar la consulta delta en ellos.
 
-## <a name="known-limitations"></a>Limitaciones conocidas
+## <a name="delta-query-request-examples"></a>Ejemplos de solicitud de consulta delta 
 
-Para ver las limitaciones conocidas al usar la consulta de delta, consulte la [sección Consulta de delta](../overview/release_notes.md#delta-query) del artículo de problemas conocidos.
-
-## <a name="delta-query-request-examples"></a>Ejemplos de solicitud de consulta de Delta 
-
-- [Obtener cambios incrementales para los eventos en una vista de calendario (versión preliminar)](../Concepts/delta_query_events.md)
-- [Obtener los cambios incrementales para los mensajes de una carpeta (versión preliminar)](./delta_query_messages.md)
-- [Obtener los cambios incrementales de grupos (versión preliminar)](./delta_query_groups.md)
-- [Obtener los cambios incrementales de usuarios (versión preliminar)](./delta_query_users.md)
+- [Obtener los cambios incrementales de los eventos en una vista de calendario](../Concepts/delta_query_events.md)
+- [Obtener los cambios incrementales en los mensajes de una carpeta](./delta_query_messages.md)
+- [Obtener los cambios incrementales en los grupos](./delta_query_groups.md)
+- [Obtener los cambios incrementales en los usuarios](./delta_query_users.md)
