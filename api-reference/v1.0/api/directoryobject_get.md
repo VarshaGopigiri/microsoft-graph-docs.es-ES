@@ -32,7 +32,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
   "name": "get_directoryobject"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryObject/{id}
+GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>Respuesta
 Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
