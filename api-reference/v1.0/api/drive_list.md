@@ -17,10 +17,11 @@ Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 ```http
 GET /drives
 GET /me/drives
-GET /groups/{id}/drives
+GET /sites/{site-id}/drives
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-body"></a>Cuerpo de solicitud
