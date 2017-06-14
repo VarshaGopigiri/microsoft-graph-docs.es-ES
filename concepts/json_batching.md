@@ -1,12 +1,12 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>Combine varias solicitudes en una llamada HTTP mediante el procesamiento por lotes de JSON procesamiento (vista previa)
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>Combinación de varias solicitudes en una llamada HTTP mediante el procesamiento por lotes de JSON (versión preliminar)
 
-El procesamiento por lotes de JSON le permite optimizar la aplicación combinando varias solicitudes en un solo objeto JSON. Por ejemplo, un cliente desea crear una vista de datos no relacionados, como:
+El procesamiento por lotes de JSON le permite optimizar la aplicación mediante la combinación de varias solicitudes en un solo objeto JSON. Por ejemplo, un cliente desea crear una vista de datos no relacionados, como:
 
 1. Una imagen almacenada en OneDrive
-2. Una lista de tareas del planificador
+2. Una lista de tareas del Planner
 3. El calendario de un grupo
 
-La combinación de estas tres solicitudes individuales en una sola solicitud por lotes puede guardar la latencia de red importante de la aplicación.
+La combinación de estas tres solicitudes individuales en una sola solicitud por lotes puede ahorrarle a la aplicación una importante latencia de red.
 
 ## <a name="first-json-batch-request"></a>Primera solicitud por lotes JSON
 
@@ -81,15 +81,15 @@ Content-Type: application/json
 
 ## <a name="request-format"></a>Formato de solicitud
 
-Las solicitudes por lotes se envían siempre con el punto de conexión de `POST` a `/$batch`.
+Las solicitudes por lotes se envían siempre mediante el método `POST` al punto de conexión `/$batch`.
 
-Un cuerpo de solicitud por lotes JSON consta de un único objeto JSON con una propiedad requerida: `requests`. La propiedad `requests` es una matriz de solicitudes individuales. Para cada solicitud individual, son necesarias las propiedades `id`, `method`, y `url`.
+Un cuerpo de solicitud por lotes JSON consta de un único objeto JSON con una propiedad requerida: `requests`. La propiedad `requests` es una matriz de solicitudes individuales. Para cada solicitud individual, son necesarias las propiedades `id`, `method` y `url`.
 
 La propiedad `id` funciona principalmente como un valor de correlación para asociar las respuestas individuales a las solicitudes. Esto permite que el servidor procese las solicitudes en el lote en el orden más eficaz.
 
 Las propiedades `method` y `url` son exactamente lo que vería al principio de cualquier solicitud HTTP determinada. El método es el método HTTP y la dirección URL es la URL de recurso a la que normalmente se enviaría la solicitud individual.
 
-Opcionalmente, las solicitudes individuales también una propiedad `headers` y una propiedad `body`. Ambas propiedades son normalmente objetos JSON, tal como se muestra en el ejemplo anterior. En algunos casos, la `body` puede ser un valor de dirección URL codificada en base64 en lugar de un objeto JSON, por ejemplo, cuando el cuerpo es una imagen. En estos casos, el objeto `headers` debe contener un valor para `content-type`.
+Opcionalmente, las solicitudes individuales también contienen una propiedad `headers` y una propiedad `body`. Ambas propiedades son normalmente objetos JSON, tal como se muestra en el ejemplo anterior. En algunos casos, `body` puede ser un valor de dirección URL codificada en base64 en lugar de un objeto JSON, por ejemplo, cuando el cuerpo es una imagen. En estos casos, el objeto `headers` debe contener un valor para `content-type`.
 
 ## <a name="response-format"></a>Formato de respuesta
 
@@ -101,7 +101,7 @@ El formato de respuesta para las solicitudes por lotes JSON es similar al format
 
 Normalmente, el código de estado en una respuesta por lotes es `200` o `400`. Si la misma solicitud por lotes está mal formada, el código de estado es `400`. Si la solicitud por lotes se puede analizar, el código de estado es `200`. Un código de estado `200` en la respuesta por lotes no indica que las solicitudes individuales dentro del lote se hayan realizado correctamente. Por ello cada respuesta individual en la propiedad `responses` tiene un código de estado.
 
-Además de la propiedad `responses`, podría haber una propiedad `nextLink` en la respuesta por lotes. Esto permite a Microsoft Graph devolver una respuesta por lotes tan pronto como cualquiera de las solicitudes individuales se haya completado. Para asegurarse de que se recibieron todas las respuestas individuales, continúe con el `nextLink` mientras exista.
+Además de la propiedad `responses`, podría haber una propiedad `nextLink` en la respuesta por lotes. Esto permite a Microsoft Graph devolver una respuesta por lotes tan pronto como cualquiera de las solicitudes individuales se haya completado. Para asegurarse de que se recibieron todas las respuestas individuales, continúe con el `nextLink` en caso de que exista.
 
 ## <a name="sequencing-requests-with-the-dependson-property"></a>Solicitudes de la secuencia con la propiedad dependsOn
 
@@ -140,7 +140,7 @@ Si se produce un error en una solicitud individual, cualquier solicitud que depe
 
 ## <a name="bypassing-url-length-limitations-with-batching"></a>Omitir las limitaciones de longitud de URL con el procesamiento por lotes
 
-Un caso de uso adicional para el procesamiento por lotes de JSON es omitir las limitaciones de longitud de dirección URL. En los casos donde la cláusula de filtro es compleja, la longitud de la dirección URL podría superar las limitaciones integradas en los navegadores u otros clientes HTTP. Puede utilizar el procesamiento por lotes de JSON como solución para ejecutar estas solicitudes simplemente porque la longitud de la URL pasa a formar parte de la carga de la solicitud.
+Un caso de uso adicional para el procesamiento por lotes de JSON es omitir las limitaciones de longitud de dirección URL. En los casos donde la cláusula de filtro es compleja, la longitud de la dirección URL podría superar las limitaciones integradas en los navegadores u otros clientes HTTP. Puede utilizar el procesamiento por lotes de JSON como solución alternativa para ejecutar estas solicitudes simplemente porque la longitud de la URL pasa a formar parte de la carga de la solicitud.
 
 ## <a name="known-issues"></a>Problemas conocidos
 
