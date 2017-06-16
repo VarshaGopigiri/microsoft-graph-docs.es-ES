@@ -12,7 +12,7 @@ En este escenario, vamos a mostrarle cómo:
 4. Agregar, actualizar o eliminar datos personalizados a un grupo existente basado en una definición de extensión de esquema.
 5. Leer un grupo y los datos de extensión.
 
->**Nota:** En este tema, se muestra cómo crear y leer los valores de extensión de esquema en un recurso de **group** (pasos 3-5).  Estos mismos métodos también son compatibles con los tipos de recurso **administrativeUnit**, **device** (dispositivo), **event** (evento), **message** (mensaje), **organization** (organización), **post** (publicación) y **user** (usuario).  Así que puede efectuar operaciones similares a las siguientes solicitudes de ejemplo en cualquiera de esos recursos. Tenga en cuenta que ** administrativeUnit "solo está disponible en el punto de conexión beta.
+>**Nota:** En este tema, se muestra cómo crear y leer los valores de extensión de esquema en un recurso de **group** (pasos 3-5).  Estos mismos métodos también son compatibles con los tipos de recurso **administrativeUnit**, **device** (dispositivo), **event** (evento), **message** (mensaje), **organization** (organización), **post** (publicación) y **user** (usuario).  Así que puede efectuar operaciones similares a las siguientes solicitudes de ejemplo en cualquiera de esos recursos. Tenga en cuenta que **administrativeUnit** solo está disponible en el punto de conexión beta.
 
 ## <a name="1-view-available-schema-extensions"></a>1. Ver extensiones de esquema disponibles
 En primer lugar, como desarrollador, quizá quiera encontrar otras definiciones de extensión de esquema que pueda reutilizar su aplicación.  Esto se puede hacer consultando el recurso **schemaExtension**.  
@@ -228,7 +228,8 @@ Content-length: 326
 
 - [Agregar datos personalizados a los recursos mediante extensiones](extensibility_overview.md)
 - [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](extensibility_open_users.md)
-- [Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- 
+  [Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Agregar y comprobar un dominio para el nuevo Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Tipo de recurso schemaExtension](../api-reference/v1.0/resources/schemaextension.md)
 - [Listar schemaExtensions](../api-reference/v1.0/api/schemaextension_list.md)

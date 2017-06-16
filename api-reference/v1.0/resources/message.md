@@ -42,18 +42,18 @@ Este recurso admite:
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |bccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cco: del mensaje.|
 |body|[itemBody](itembody.md)|El cuerpo del mensaje. Puede mostrarse en formato de texto o HTML.|
 |bodyPreview|String|Los primeros 255 caracteres del cuerpo del mensaje. Se muestran en formato de texto.|
-|categories|String collection|Las categorías asociadas al mensaje.|
+|categories|Colección string|Las categorías asociadas al mensaje.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cc: del mensaje.|
 |changeKey|String|La versión del mensaje.|
 |conversationId|String|El identificador de la conversación a la que pertenece el correo electrónico.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación del mensaje.|
 |from|[recipient](recipient.md)|El propietario del buzón y el remitente del mensaje.|
-|hasAttachments|Booleano|Indica si el mensaje tiene datos adjuntos.|
+|hasAttachments|Booleano|Indica si el mensaje tiene datos adjuntos. Esta propiedad no incluye datos adjuntos insertados, por lo que si un mensaje contiene solo datos adjuntos insertados, esta propiedad es igual a false. Para comprobar si hay datos adjuntos insertados, analice la propiedad **body** en busca de un atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Identificador único del mensaje (tenga en cuenta que este valor puede cambiar si se mueve o se altera un mensaje)|
 |importance|String| La importancia del mensaje: `Low`, `Normal` y `High`.|
 |inferenceClassification | String | La clasificación del mensaje para el usuario, según relevancia inferida, importancia o según una invalidación explícita. Los valores posibles son: `focused` o `other`. |
@@ -88,7 +88,7 @@ Cuando se redacta un mensaje, en la mayoría de los casos, las propiedades From 
 - La propiedad **sender** se puede cambiar si el propietario del buzón ha delegado uno o más usuarios para que puedan enviar mensajes desde ese buzón. El propietario del buzón puede delegar en Outlook. Cuando un delegado envía un mensaje en nombre del propietario del buzón, la propiedad **sender** está establecida en la cuenta del delegado y la propiedad **from** sigue siendo el propietario del buzón. Mediante programación, puede configurar la propiedad **sender** para un usuario que tiene derechos de delegado en ese buzón.
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attachments|Colección [attachment](attachment.md)|Los datos adjuntos [fileAttachment](fileattachment.md) y [itemAttachment](itemattachment.md) del mensaje.|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el mensaje. Solo lectura. Admite valores NULL.|

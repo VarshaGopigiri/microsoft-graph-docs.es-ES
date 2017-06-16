@@ -11,7 +11,7 @@ Microsoft Graph ofrece dos tipos de extensiones. Elija el tipo de extensión que
 
 ## <a name="supported-resources"></a>Recursos admitidos
 
-En la siguiente tabla, se muestra la compatibilidad actual para las extensiones de esquema y abiertas, tanto si están en disponibilidad general (GA en /v1.0 y puntos de conexión /beta) o solo en vista previa (en puntos de conexión /beta). 
+En la tabla siguiente, se enumeran los recursos que admiten extensiones abiertas y de esquema, y se indica si tienen un estado de disponibilidad general (GA) (disponibles en los puntos de conexión beta y v1.0) o si están en versión preliminar (disponibles solo en el punto de conexión beta).  
 
 | Recurso | Extensiones abiertas | Extensiones de esquema |
 |---------------|-------|-------|
@@ -103,7 +103,7 @@ Además, para crear y administrar definiciones de extensión de esquema, una apl
 ### <a name="open-extension-limits"></a>Límites de extensión abiertos
 Los límites siguientes se aplican a los recursos de directorio (como **user**, **group**, **device**):
 
-- Cada extensión abierta puede tener hasta 2 Kb de datos (incluida la propia definición de extensión).
+- Cada extensión abierta puede tener hasta 2 KB de datos (incluida la propia definición de extensión).
 - Una aplicación puede agregar hasta dos extensiones abiertas por cada instancia del recurso.
 
 ### <a name="schema-extension-limits"></a>Límites de extensión del esquema
@@ -121,6 +121,7 @@ Para ver las limitaciones conocidas al usar las extensiones, consulte la [secci�
 
 ## <a name="see-also"></a>Consulte también
 
-[Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+  [Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Agregar y comprobar un dominio para un inquilino de Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

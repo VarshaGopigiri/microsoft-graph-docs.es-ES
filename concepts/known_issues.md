@@ -1,6 +1,6 @@
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conocidos de Microsoft Graph
 
-En este artículo, se describen los problemas conocidos de Microsoft Graph. Para obtener información acerca de las actualizaciones más recientes, consulte el [Registro de cambios de Microsoft Graph](changelog.md).
+En este artículo, se describen los problemas conocidos de Microsoft Graph. Para obtener información sobre las actualizaciones más recientes, consulte el [Registro de cambios de Microsoft Graph](changelog.md).
 
 ## <a name="users"></a>Usuarios
 
@@ -10,7 +10,7 @@ Los usuarios pueden crearse inmediatamente a través de un POST en la entidad de
 
 ### <a name="photo-restrictions"></a>Restricciones de la foto
 
-Leer y actualizar la foto de perfil de un usuario solo es posible si el usuario tiene un buzón. Además, cualquier foto que *pueda* haberse almacenado previamente mediante la propiedad **thumbnailPhoto** (usando la vista previa de la API unificada de Office 365 o Azure AD Graph, o bien mediante la sincronización de AD Connect) ya no será accesible mediante la propiedad de **foto** del recurso de [usuario](../api-reference/v1.0/resources/user.md). En este caso, no poder leer o actualizar una foto provocaría el error siguiente:
+Leer y actualizar la foto de perfil de un usuario solo es posible si el usuario tiene un buzón. Además, cualquier foto que *pueda* haberse almacenado previamente mediante la propiedad **thumbnailPhoto** (usando la vista previa de la API unificada de Office 365 o Azure AD Graph, o bien mediante la sincronización de AD Connect) ya no será accesible mediante la propiedad **photo** del recurso [user](../api-reference/v1.0/resources/user.md). En este caso, no poder leer o actualizar una foto provocaría el error siguiente:
 
 ```javascript
     {
@@ -21,13 +21,6 @@ Leer y actualizar la foto de perfil de un usuario solo es posible si el usuario 
     }
 ```
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Agregar y acceder a calendarios basados en archivos ICS en el buzón del usuario
-
-Actualmente, existe una compatibilidad parcial con un calendario basado en una suscripción a calendarios de Internet (ICS):
-
-* Puede agregar un calendario basado en ICS a un buzón de usuario mediante la interfaz de usuario, pero no mediante la API de Microsoft Graph.
-* [Enumerar los calendarios del usuario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id.** de cada [calendario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
-* También puede [enumerar los eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
 
 ### <a name="using-delta-query"></a>Usar la consulta de delta
 
@@ -35,7 +28,7 @@ Para ver los problemas conocidos al usar la consulta delta, consulte la [secció
 
 ## <a name="groups-and-microsoft-teams"></a>Grupos y Microsoft Teams
 
->**Nota** Teams Microsoft ahora está en estado de vista previa disponible en sólo el extremo de la versión beta de Microsoft Graph.
+>**Nota** Actualmente, Microsoft Teams está en versión preliminar y solo se encuentra disponible en el punto de conexión de la versión beta de Microsoft Graph.
 
 ### <a name="policy"></a>Directiva
 
@@ -43,7 +36,7 @@ Usar Microsoft Graph para crear y nombrar un grupo de Office 365 omite cualquier
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Permisos para grupos y Microsoft Teams
 
-Microsoft Graph expone dos permisos (*Group.Read.All* and *Group.ReadWrite.All*) para obtener acceso a las API de grupos y Microsoft Teams. Un administrador debe aceptar estos permisos (lo que supone un cambio respecto a la vista previa).  En el futuro, plantearemos agregar nuevos permisos para los grupos y equipos que puedan admitir los usuarios.
+Microsoft Graph expone dos permisos (*Group.Read.All* y *Group.ReadWrite.All*) para obtener acceso a las API de grupos y Microsoft Teams. Un administrador debe aceptar estos permisos (lo que supone un cambio respecto a la versión preliminar).  En el futuro, plantearemos agregar nuevos permisos para los grupos y equipos que puedan admitir los usuarios.
 
 Además, solo la API para la administración y gestión del grupo principal admite el acceso con permisos delegados o solo de aplicación. El resto de características de la API de grupo solo admiten permisos delegados.
 
@@ -61,17 +54,17 @@ Ejemplos de funciones de grupo que admiten solo permisos delegados:
 * Remitentes externos, remitentes aceptados o rechazados, suscripciones a grupos
 * Favoritos del usuario y recuento no visto
 
-### <a name="teams-in-microsoft-teams-preview"></a>Equipos de Microsoft Teams (vista previa)
+### <a name="teams-in-microsoft-teams-preview"></a>Equipos de Microsoft Teams (versión preliminar)
 
-Microsoft Teams se basa en grupos de Office 365.  Todas las API de grupo pueden utilizarse también con los equipos, con la excepción de que "Crear grupo" no le permite crear un equipo en este momento.  Las versiones futuras de API serán compatibles con esto.
+Microsoft Teams y Grupos de Office 365 comparten una funcionalidad similar. Todas las API de grupo se pueden usar con los equipos, con la excepción de que la API de creación de grupo no le permite crear un equipo en este momento.  Las versiones futuras de la API admitirán esta posibilidad.
 
-### <a name="microsoft-teams-channels-preview"></a>Canales de Microsoft Teams (vista previa)
+### <a name="microsoft-teams-channels-preview"></a>Canales de Microsoft Teams (versión preliminar)
 
-Actualmente, puede leer y crear canales, pero no puede actualizarlos o eliminarlos.  Las versiones futuras de API serán compatibles con esto.
+Actualmente, puede leer y crear canales, pero no puede actualizarlos o eliminarlos.  Las versiones futuras de la API admitirán esta posibilidad.
 
-### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Mensajes de chat y conversaciones de chat de Microsoft Teams (vista previa)
+### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Mensajes de chat y conversaciones de chat de Microsoft Teams (versión preliminar)
 
-Actualmente, se pueden crear conversaciones de chat en canales, pero no puede leer las conversaciones de chat existentes o agregar respuestas.  Del mismo modo, no se puede leer o escribir chats directos entre los usuarios que están fuera del ámbito de un grupo o un canal.  Las versiones futuras de API agregarán capacidades adicionales en esta área.
+Actualmente, se pueden crear conversaciones de chat en canales, pero no es posible leer las conversaciones de chat existentes o agregar respuestas. Además, no se pueden leer ni escribir chats directos entre los usuarios que están fuera del ámbito de un grupo o canal.  Las versiones futuras de la API agregarán capacidades adicionales en esta área.
 
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>Agregar y obtener los datos adjuntos de las publicaciones de grupo
@@ -84,7 +77,43 @@ Existe en la actualidad un problema que evita el establecimiento de la propiedad
 
 ### <a name="using-delta-query"></a>Usar la consulta de delta
 
-Para ver los problemas conocidos al usar la consulta de delta, consulte la [sección Consulta de delta](#delta-query) de este artículo.
+Para ver los problemas conocidos al usar la consulta de delta, vea la [sección Consulta de delta](#delta-query) de este artículo.
+
+
+## <a name="calendars"></a>Calendarios
+
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Agregar y acceder a calendarios basados en archivos ICS en el buzón del usuario
+
+Actualmente, existe una compatibilidad parcial con un calendario basado en una suscripción a calendarios de Internet (ICS):
+
+* Puede agregar un calendario basado en ICS a un buzón de usuario mediante la interfaz de usuario, pero no mediante la API de Microsoft Graph.
+* [Enumerar los calendarios del usuario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id** de cada [calendario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
+* También puede [enumerar los eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
+
+### <a name="accessing-a-shared-calendar"></a>Acceso a calendarios compartidos
+
+Al intentar tener acceso a los eventos de un calendario que se ha compartido por otro usuario mediante la siguiente operación:
+
+```http
+GET \users('{id}')\calendars('{id}')\events
+```
+
+Puede obtener HTTP 500 con el código de error `ErrorInternalServerTransientError`.
+
+Tradicionalmente existen dos maneras de implementar el uso compartido del calendario, que, con fines de diferenciación, se les hace referencia como la implementación "antigua" y la implementación "nueva". El error se produce porque: 
+
+- Actualmente, solo Outlook en la web, Outlook en iOS y Outlook en Android admiten el uso compartido de calendarios en Office 365 en la nueva implementación.
+- Puede usar la API de REST de calendario para ver o editar los calendarios compartidos, solo si los calendarios se han compartido según la nueva implementación. 
+- No puede usar la API de REST de calendario para ver o editar calendarios (o sus eventos) que se hayan compartido mediante la antigua implementación.
+
+Para solucionar esto, el propietario del calendario debe volver a compartirlo en Outlook en la web, Outlook en iOS o en Outlook en Android y debe volver a aceptar el calendario mediante Outlook en la web. Después de volver a aceptarlo, una manera de comprobar si el calendario se ha compartido con el modelo nuevo es ver correctamente el calendario compartido en Outlook en iOS o en Outlook en Android.
+
+Un calendario compartido con usted mediante la nueva implementación aparece como cualquier otro calendario de su buzón. Puede usar la API de REST de calendario para ver o editar eventos en el calendario compartido, como si fuera su propio calendario. Por ejemplo:
+
+```http
+GET \me\calendars('{id}')\events
+```
+
 
 ## <a name="contacts"></a>Contactos
 
@@ -147,8 +176,8 @@ El parámetro **comentario** para crear una respuesta o enviar un borrador ([cre
 
 * Limitaciones de **$expand**:
     * No se admite para `nextLink`
-     * No se admite para más de un nivel de expansión
-     * No se admite con parámetros adicionales (**$filter**, **$select**)
+    * No se admite para más de un nivel de expansión
+    * No se admite con parámetros adicionales (**$filter**, **$select**)
 * No se admiten varios espacios de nombres
 * Las solicitudes GET en `$ref` y la conversión no se admiten en usuarios, grupos, dispositivos, entidades de servicio y aplicaciones.
 * `@odata.bind` no se admite.  Esto significa que los desarrolladores no podrán establecer correctamente `Accepted` o `RejectedSenders` en un grupo.
@@ -161,6 +190,29 @@ El parámetro **comentario** para crear una respuesta o enviar un borrador ([cre
 * El contexto OData a veces se devuelve de forma incorrecta cuando se realiza el seguimiento de cambios en las relaciones.
 * Las extensiones de esquema (heredadas) no se devuelven con la instrucción $select, pero se devuelven sin $select.
 * Los clientes no pueden controlar los cambios para abrir las extensiones o las extensiones de esquema registradas.
+
+## <a name="application-and-serviceprincipal-api-changes"></a>Cambios en la API servicePrincipal y en aplicaciones
+
+Existen cambios actuales en las entidades [application](../api-reference/beta/resources/application.md) y [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) en el desarrollo. A continuación se muestra un resumen de las limitaciones actuales y las características de la API en el desarrollo.
+
+Limitaciones actuales:
+
+* Algunas propiedades de aplicaciones (como appRoles y addIns) no estarán disponibles hasta que se completen todos los cambios.
+* Solo pueden registrarse las aplicaciones multiinquilino.
+* La actualización de aplicaciones está restringida a las aplicaciones que se han registrado después de la actualización de la versión beta inicial.
+* Los usuarios de Azure Active Directory pueden registrar aplicaciones y agregar propietarios adicionales.
+* Compatibilidad con los protocolos OpenID Connect y OAuth.
+* Error en las asignaciones de directivas en una aplicación. 
+* Las operaciones de ownedObjects que necesiten appId producirán un error (Por ejemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+En desarrollo:
+
+* Capacidad de registrar aplicaciones de inquilino único.
+* Actualizaciones de servicePrincipal.
+* Migración de aplicaciones de Azure AD existentes en un modelo actualizado.
+* Compatibilidad para appRoles, clientes autorizados previamente, notificaciones opcionales, notificaciones de pertenencia a grupos y personalización de marca.
+* Los usuarios de cuentas de Microsoft (MSA) pueden registrar aplicaciones.
+* Compatibilidad con los protocolos SAML y WsFed.
 
 ## <a name="extensions"></a>Extensiones
 
@@ -192,30 +244,57 @@ Microsoft Graph no admite actualmente el procesamiento transaccional de solicitu
 
 ### <a name="uris-must-be-relative"></a>Los URI deben ser relativos
 
-Especificar siempre los identificadores URI relativos en solicitudes por lotes. Microsoft Graph crea estas direcciones URL absolutas mediante el punto de conexión de la versión que está incluido en la URL por lotes.
+Especifique siempre los identificadores URI relativos en solicitudes por lotes. Microsoft Graph crea estas direcciones URL absolutas mediante el punto de conexión de la versión que está incluido en la URL por lotes.
 
 ### <a name="limit-on-batch-size"></a>Límite de tamaño por lotes
 
-Las solicitudes por lotes JSON están limitadas actualmente a cinco solicitudes individuales. A medida se desarrolla el procesamiento por lotes JSON, se produce este límite.
+Las solicitudes por lotes JSON están limitadas actualmente a cinco solicitudes individuales. A medida que se desarrolle el procesamiento por lotes JSON, este límite se elevará.
 
 ### <a name="simplified-dependencies"></a>Dependencias simplificadas
 
 Las solicitudes individuales pueden depender de otras solicitudes individuales. Actualmente, las solicitudes solo pueden depender de una sola solicitud y deben seguir uno de estos tres modelos:
 
-1. En paralelo - Ninguna solicitud individual indica una dependencia de la propiedad `dependsOn`.
-2. En serie - Todas las solicitudes individuales dependen de la anterior solicitud individual.
-3. Mismo - Todas las solicitudes individuales que indican una dependencia de la propiedad `dependsOn`, indican la misma dependencia.
+1. En paralelo: ninguna solicitud individual indica una dependencia de la propiedad `dependsOn`.
+2. En serie: todas las solicitudes individuales dependen de la anterior solicitud individual.
+3. Igual: todas las solicitudes individuales que indican una dependencia de la propiedad `dependsOn`, indican la misma dependencia.
 
-A medida que crece el procesamiento por lotes JSON, se eliminan estas limitaciones.
+A medida que madure el procesamiento por lotes JSON, se irán quitando estas limitaciones.
 
-## <a name="cloud-solution-provider-apps-must-use-azure-ad-endpoint"></a>Las aplicaciones del Proveedor de soluciones en la nube deben utilizar el punto de conexión Azure AD
+## <a name="cloud-solution-provider-apps"></a>Aplicaciones del Proveedor de soluciones en la nube
 
-Las aplicaciones del Proveedor soluciones en la nube (CSP) deben adquirir tokens de los puntos de conexión de Azure AD (v1) para llamar correctamente a Microsoft Graph en sus clientes gestionados por el asociado. Actualmente, no se admite adquirir un token a través de los puntos de conexión de v2.0 de Azure AD más recientes.
+### <a name="csp-apps-must-use-azure-ad-endpoint"></a>Las aplicaciones de CSP deben usar el punto de conexión de Azure AD
 
-## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Esta funcionalidad solo está disponible en las API de REST de Office 365 o las API de Graph de Azure AD
+Las aplicaciones del Proveedor soluciones en la nube (CSP) deben adquirir tokens de los puntos de conexión de Azure AD (v1) para llamar correctamente a Microsoft Graph en sus clientes gestionados por el asociado. Actualmente, no se admite adquirir un token a través del punto de conexión más reciente de Azure AD v2.0.
 
-Algunas funciones todavía no están disponibles en Microsoft Graph. Si no ve la funcionalidad que busca, puede usar las [API de REST de Office 365](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) específicas del punto de conexión. Para Azure Active Directory, consulte la publicación en el blog [Microsoft Graph o Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) que se encuentra en las características que solo están disponibles a través de la API de Azure AD Graph.
+### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>El consentimiento previo de las aplicaciones de CSP no funciona en algunos inquilinos de cliente
 
-### <a name="feedback"></a>Comentarios
+En determinadas circunstancias, el consentimiento previo de las aplicaciones de CSP puede que no funcione para algunos de los inquilinos de cliente.
+
+- Para las aplicaciones que usan permisos delegados, al usar la aplicación por primera vez con un nuevo inquilino de cliente puede recibir este error después del inicio de sesión: `AADSTS50000: There was an error issuing a token`.
+- Para las aplicaciones que usan permisos de aplicación, su aplicación puede adquirir un token, pero obtiene inesperadamente un mensaje de acceso denegado al llamar a Microsoft Graph.
+
+Estamos trabajando en solucionar este problema tan pronto como sea posible para que el consentimiento previo funcione en todos los inquilinos de cliente.
+
+Mientras tanto, para desbloquear el desarrollo y las pruebas, puede usar la siguiente solución alternativa.
+
+>**NOTA:** Esta no es una solución permanente y solo está prevista para desbloquear el desarrollo.  Esta solución alternativa no será necesaria una vez que se solucione el problema mencionado anteriormente.  Esta solución alternativa no necesita deshacerse una vez que se implemente la corrección.
+
+1. Abra una sesión de PowerShell de Azure AD v2 y conéctese al inquilino `customer`. Para ello, escriba sus credenciales de administrador en la ventana de inicio de sesión. Puede descargar e instalar PowerShell V2 para Azure AD desde [aquí](https://www.powershellgallery.com/packages/AzureAD).
+
+    ```PowerShell
+    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
+    ```
+
+2. Cree la entidad de servicio de Microsoft Graph.
+
+    ```PowerShell
+    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
+    ```
+
+## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Esta función solo está disponible en las API de REST de Office 365 o las API de Graph de Azure AD
+
+Algunas funciones todavía no están disponibles en Microsoft Graph. Si no ve la funcionalidad que busca, puede usar las [API de REST de Office 365](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) específicas del punto de conexión. Para Azure Active Directory, consulte la publicación del blog [Microsoft Graph o Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre las características que solo están disponibles a través de la API de Azure AD Graph.
+
+## <a name="feedback"></a>Comentarios
 
 > Su opinión es importante para nosotros. Conecte con nosotros en [Desbordamiento de pila](http://stackoverflow.com/questions/tagged/microsoftgraph).

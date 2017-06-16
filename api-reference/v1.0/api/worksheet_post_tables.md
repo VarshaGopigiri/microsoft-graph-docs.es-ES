@@ -22,10 +22,11 @@ POST /workbook/worksheets/{id|name}/tables/add
 En el cuerpo de la solicitud, proporcione los parámetros siguientes. 
 
 ### <a name="request-parameters"></a>Parámetros de la solicitud
-| Nombre       | Tipo|Descripción|
-|:---------------|:----------|
-| Dirección  | string| Dirección de intervalo. Si llama a esta API de `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
+| Nombre           | Tipo      |Descripción|
+|:---------------|:----------|:----------|
+| Dirección  | cadena| Dirección de intervalo. Si llama a esta API desde la ruta de acceso `worksheets/{id or name}/tables/add`, no tiene que proporcionar el prefijo del nombre de hoja en la dirección. En cambio, si la llama desde la ruta de acceso `workbook/tables/add`, deberá proporcionar el nombre de la hoja en la que se debe crear la tabla (ejemplo: `sheet1!A1:D4`)|
 | hasHeaders  | boolean|Valor booleano que indica si el intervalo tiene etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en false), Excel generará de forma automática el encabezado desplazando los datos hacia abajo una fila.|
+
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.
@@ -43,7 +44,7 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "address": "",
+  "address": "A1:D8",
   "hasHeaders": false
 }
 ```

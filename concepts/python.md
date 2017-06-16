@@ -44,63 +44,46 @@ Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. 
 
 8. Elija **Guardar**.
 
-## <a name="create-oauth-client"></a>Crear el cliente de OAuth
+## <a name="configure-and-run-the-app"></a>Configurar y ejecutar la aplicación
 
-La aplicación debe registrar una instancia del cliente de Flask OAuth que utilizará para iniciar el flujo de OAuth y obtener un token de acceso. 
-
-En el ejemplo Connect, el siguiente código (ubicado en [*connect/__init__.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/__init__.py)) registra el cliente con todos los valores necesarios, incluidos el identificador de aplicación (client_id), el secreto de aplicación (client_secret) y la dirección URL de autorización usada para autenticar al usuario.
-
-```python
-    # Put your consumer key and consumer secret into a config file
-    # and don't check it into github!!
-    microsoft = oauth.remote_app(
-        'microsoft',
-        consumer_key=client_id,
-        consumer_secret=client_secret,
-        request_token_params={'scope': 'User.Read Mail.Send'},
-        base_url='https://graph.microsoft.com/v1.0/',
-        request_token_url=None,
-        access_token_method='POST',
-        access_token_url='https://login.microsoftonline.com/common/oauth2/v2.0/token',
-        authorize_url='https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
-    )
-```
+1. Abra el archivo **_PRIVATE.txt** en el editor de texto que quiera.
+2. Reemplace *ENTER_YOUR_CLIENT_ID* por el identificador de cliente de su aplicación registrada.
+3. Reemplace *ENTER_YOUR_SECRET* por la clave que ha generado para su aplicación.
+4. Inicie el servidor de desarrollo mediante la ejecución de ```python manage.py runserver```.
+5. Vaya a ```http://localhost:5000/``` en el explorador web.
 
 <!--<a name="authCode"></a>-->
 ## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Recibir un código de autorización en la página de la dirección URL de respuesta
 
-Después de que el usuario inicie sesión, el explorador le redirige a la dirección URL de respuesta, la ruta ```login/authorized``` en [*connect/__init__.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/__init__.py), con un token de acceso en la respuesta. En el ejemplo se almacena el token como una variable de sesión.
+Después de que el usuario inicie sesión, el explorador le redirige a la dirección URL de respuesta, la ruta ```login/authorized``` en [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py), con un token de acceso en la respuesta. En el ejemplo, se almacena el token como una variable de sesión.
 
 ```python
-    @app.route('/login/authorized')
-    def authorized():
-        response = microsoft.authorized_response()
-    
-        if response is None:
-            return "Access Denied: Reason=%s\nError=%s" % (
-                request.args['error'], 
-                request.args['error_description']
-            )
-    
-        # Check response for state
-        if str(session['state']) != str(request.args['state']):
-            raise Exception('State has been messed with, end authentication')
-        # Remove state session variable to prevent reuse.
-        session['state'] = ""
-            
-        # Okay to store this in a local variable, encrypt if it's going to client
-        # machine or database. Treat as a password. 
-        session['microsoft_token'] = (response['access_token'], '')
-        # Store the token in another session variable for easy access
-        session['access_token'] = response['access_token']
-        meResponse = microsoft.get('me')
-        meData = json.dumps(meResponse.data)
-        me = json.loads(meData)
-        userName = me['displayName']
-        userEmailAddress = me['userPrincipalName']
-        session['alias'] = userName
-        session['userEmailAddress'] = userEmailAddress
-        return redirect('main')
+@app.route('/login/authorized')
+def authorized():
+    """Handler for login/authorized route."""
+    response = msgraphapi.authorized_response()
+
+    if response is None:
+        return "Access Denied: Reason={0}\nError={1}".format( \
+            request.args['error'], request.args['error_description'])
+
+    # Check response for state
+    if str(session['state']) != str(request.args['state']):
+        raise Exception('State has been messed with, end authentication')
+    session['state'] = '' # reset session state to prevent re-use
+
+    # Okay to store this in a local variable, encrypt if it's going to client
+    # machine or database. Treat as a password.
+    session['microsoft_token'] = (response['access_token'], '')
+    # Store the token in another session variable for easy access
+    session['access_token'] = response['access_token']
+    me_response = msgraphapi.get('me')
+    me_data = json.loads(json.dumps(me_response.data))
+    username = me_data['displayName']
+    email_address = me_data['userPrincipalName']
+    session['alias'] = username
+    session['userEmailAddress'] = email_address
+    return redirect('main')
 ```
 
 <!--<a name="request"></a>-->
@@ -108,7 +91,7 @@ Después de que el usuario inicie sesión, el explorador le redirige a la direcc
 
 El token de acceso permite que su aplicación cree solicitudes autenticadas en la API de Microsoft Graph. Su aplicación debe anexar el token de acceso al encabezado de **autorización** de cada solicitud.
 
-En el ejemplo Connect, se envía un correo electrónico usando el punto de conexión ```me/microsoft.graph.sendMail``` en la API de Microsoft Graph. El código está en la función ```call_sendMail_endpoint``` del archivo [*connect/graph_service.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connect/graph_service.py). Este es el código que muestra cómo anexar el código de acceso al encabezado de autorización.
+En el ejemplo de Connect, se envía un correo electrónico usando el punto de conexión ```me/microsoft.graph.sendMail``` de la API de Microsoft Graph. El código está en la función ```call_sendmail_endpoint``` del archivo [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py). Este es el código que muestra cómo anexar el código de acceso al encabezado de autorización.
 
 ```python
     # Set request headers.

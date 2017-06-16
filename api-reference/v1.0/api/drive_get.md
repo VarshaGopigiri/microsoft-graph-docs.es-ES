@@ -1,6 +1,6 @@
 # <a name="get-drive"></a>Obtener unidad
 
-Recupere las propiedades y relaciones de un recurso [Drive](../resources/drive.md). Un recurso Drive es el contenedor de nivel superior de un sistema de archivos. API Graph le permite acceder al recurso Drive de las bibliotecas de documentos de OneDrive, OneDrive para la Empresa o SharePoint de un usuario.
+Recupere las propiedades y relaciones de un recurso [Drive](../resources/drive.md). Un recurso Drive es el contenedor de nivel superior de un sistema de archivos. La API Graph le permite acceder al recurso Drive de las bibliotecas de documentos de OneDrive, OneDrive para la Empresa o SharePoint de un usuario.
 
 ## <a name="prerequisites"></a>Requisitos previos
 

@@ -11,10 +11,12 @@ Todos los ejemplos siguientes son relativos a `https://graph.microsoft.com/v1.0`
 | [Obtener sitio raíz][]    | GET /sites/root                                   |
 | [Obtener sitio][]         | GET /sites/{site-id}                              |
 | [Obtener sitio por su ruta de acceso][] | GET /sites/{hostname}:/{site-path}                |
+| [Obtener sitio para un grupo][] | GET /groups/{group-id}/sites/root             |
 
 [Obtener sitio]: ../api/site_get.md
 [Obtener sitio raíz]: ../api/site_get.md
 [Obtener sitio por su ruta de acceso]: ../api/site_get.md
+[Obtener sitio para un grupo]: ../api/site_get.md
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -57,10 +59,10 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | El identificador único del elemento. Solo lectura.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | La fecha y la hora de creación del elemento. Solo lectura.                                             |
-| **description**          | string                              | Texto descriptivo del sitio.                                                             |
+| **description**          | cadena                              | Texto descriptivo del sitio.                                                             |
 | **displayName**          | string                              | El título completo del sitio. Solo lectura.                                                        |
 | **lastModifiedDateTime** | DateTimeOffset                      | Fecha y hora de la última modificación del elemento. Solo lectura.                                       |
-| **name**                 | string                              | Nombre o título del elemento.                                                                  |
+| **name**                 | cadena                              | Nombre o título del elemento.                                                                  |
 | **root**                 | [root](root.md)                     | Si está presente, indica que se trata del sitio raíz de la colección de sitios. Solo lectura.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Proporciona detalles sobre la colección de sitios del sitio. Solo disponible en el sitio raíz. Solo lectura. |

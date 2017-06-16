@@ -59,7 +59,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | state |Recomendado |Valor incluido en la solicitud que también se devuelve en la respuesta de token. Puede ser una cadena con cualquier contenido que quiera. El estado se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. |
 
 ### <a name="consent-experience"></a>Experiencia de consentimiento
-Azure AD exige que solo pueda iniciar sesión un administrador de inquilinos para completar la solicitud. Se le pedirá al administrador que apruebe todos los permisos de aplicación directos que se han solicitado para la aplicación en el portal de registro de aplicaciones. A continuación se incluye un ejemplo del cuadro de diálogo de consentimiento que Azure AD muestra al administrador:
+Azure AD exige que solo pueda iniciar sesión un administrador de inquilinos para completar la solicitud. Se le pedirá al administrador que apruebe todos los permisos de aplicación que se han solicitado para la aplicación en el portal de registro de aplicaciones. A continuación se incluye un ejemplo del cuadro de diálogo de consentimiento que Azure AD muestra al administrador:
 
 ![Cuadro de diálogo de consentimiento del administrador.](./images/admin-consent.png)
 
@@ -104,7 +104,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 | --- | --- | --- |
 | tenant |Obligatorio |Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. |
 | client_id |Obligatorio |Identificador de aplicación que el [portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com) ha asignado al registrar la aplicación. |
-| scope |Obligatorio |El valor pasado para el parámetro `scope` en esta solicitud debe ser el identificador de recurso (URI del identificador de aplicación) del recurso que le interesa, con el sufijo `.default` anexado. Para Microsoft Graph, el valor es `https://graph.microsoft.com/.default`. Este valor le indica al punto de conexión de v2.0 que, de todos los permisos de aplicación directos que se han configurado para la aplicación, debe emitir un token para los que están asociados al recurso que quiere usar. |
+| scope |Obligatorio |El valor pasado para el parámetro `scope` en esta solicitud debe ser el identificador de recurso (URI del identificador de aplicación) del recurso que le interesa, con el sufijo `.default` anexado. Para Microsoft Graph, el valor es `https://graph.microsoft.com/.default`. Este valor le indica al punto de conexión de v2.0 que, de todos los permisos de aplicación que se han configurado para la aplicación, debe emitir un token para los que están asociados al recurso que quiere usar. |
 | client_secret |Obligatorio |Secreto de la aplicación generado para la aplicación en el portal de registro de aplicaciones. |
 | grant_type |Obligatorio |Debe ser `client_credentials`. |
 

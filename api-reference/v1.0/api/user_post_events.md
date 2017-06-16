@@ -1,6 +1,6 @@
-# <a name="create-event"></a>Create Event
+# <a name="create-event"></a>Crear evento
 
-Crea un [event](../resources/event.md) en el calendario predeterminado del usuario. 
+Cree un [evento](../resources/event.md) en el calendario predeterminado del usuario o en un calendario especificado.
 
 Puede especificar la zona horaria de cada una de las horas de inicio y finalización del evento como parte de estos valores, ya que las propiedades **start** y **end** son del tipo [dateTimeTimeZone](../resources/datetimetimezone.md). 
 
