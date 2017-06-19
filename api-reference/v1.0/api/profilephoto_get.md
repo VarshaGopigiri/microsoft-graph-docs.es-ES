@@ -9,8 +9,8 @@ Una operación GET busca la foto especificada en el buzón del usuario de Exchan
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-*    Foto de perfil de cualquier usuario del inquilino, incluido el usuario que ha iniciado sesión: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*    Foto de perfil específicamente del usuario que ha iniciado sesión: *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   Foto de perfil de cualquier usuario del inquilino, incluido el usuario que ha iniciado sesión: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   Foto de perfil específicamente del usuario que ha iniciado sesión: *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
 * Foto de perfil de un **grupo** - *Group.Read.All; Group.ReadWrite.All*
 * Foto de un **contacto** - *Contacts.Read; Contacts.ReadWrite*
 
@@ -43,9 +43,9 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | \<Token\> de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Necesario. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response-for-getting-the-photo"></a>Respuesta para obtener la foto
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y los datos binarios de la foto solicitada.  Si no hay ninguna foto, la operación devuelve `404 Not Found`.

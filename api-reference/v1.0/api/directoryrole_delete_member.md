@@ -18,9 +18,9 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | &lt;token&gt; de portador *Necesario* |
+| Authorization  | string  | {token} de portador. Necesario. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 No proporcione un cuerpo de solicitud para este método.
 

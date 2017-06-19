@@ -27,7 +27,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Portador de <token>. Necesario. |
+| Authorization  | string  | {token} de portador. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

@@ -1,8 +1,10 @@
-# <a name="list-owners"></a>Enumerar propietarios
+Enumerar propietarios de Gr#
 
 Recupera una lista de propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo. 
+
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Group.Read.All* o *Group.ReadWrite.All*
+Se requieren los siguientes **ámbitos** para ejecutar esta API: *Group.Read.All* y uno de *User.ReadBasic.All* o *User.Read.All* o *User.ReadWrite.All*
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -13,12 +15,12 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | Portador de <token>. Necesario. |
+| Authorization  | string  | {token} de portador. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [directoryObject](../resources/directoryobject.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [user](../resources/user.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -45,7 +47,7 @@ Content-length: 55
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.user"
     }
   ]
 }

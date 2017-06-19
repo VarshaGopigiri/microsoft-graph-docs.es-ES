@@ -5,7 +5,7 @@ Obtener el objeto [mailboxSettings](../resources/mailboxsettings.md) del usuario
 Puede ver toda la configuración del buzón u obtener una configuración específica.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *Mailboxsettings.ReadWrite*  
+Se requiere el siguiente **ámbito** para ejecutar esta API: *MailboxSettings.Read*  
 
 ## <a name="http-request"></a>Solicitud HTTP
 Para obtener toda la configuración del buzón, que incluye la configuración de las respuestas automáticas:
@@ -32,7 +32,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | Portador de `<token>`. Necesario. |
+| Authorization  | string  | {token} de portador. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
