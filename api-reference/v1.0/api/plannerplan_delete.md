@@ -14,7 +14,7 @@ DELETE /planner/plans/<id>
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador <code>|
+| Authorization  | {token} de portador. Obligatorio. |
 | If-Match  | Último valor ETag conocido para que se elimine **plannerPlan**. Obligatorio.|
 
 ### <a name="request-body"></a>Cuerpo de solicitud

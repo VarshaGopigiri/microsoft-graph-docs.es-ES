@@ -16,7 +16,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ### <a name="request-body"></a>Cuerpo de solicitud

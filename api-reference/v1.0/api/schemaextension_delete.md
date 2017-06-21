@@ -17,7 +17,7 @@ DELETE /schemaExtensions/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | &lt;token&gt; de portador. Necesario. |
+| Authorization  | {token} de portador. Necesario. |
  
 
 ## <a name="request-body"></a>Cuerpo de solicitud

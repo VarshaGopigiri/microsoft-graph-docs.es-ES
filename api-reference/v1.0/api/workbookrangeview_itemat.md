@@ -12,13 +12,13 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/i
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ### <a name="request-body"></a>Cuerpo de solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|Int32|Índice del elemento que se devuelve.|
 

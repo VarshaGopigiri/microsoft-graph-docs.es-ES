@@ -16,17 +16,17 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |fields|SortField|La lista de condiciones por las que realizar la ordenación.|
 |matchCase|boolean|Opcional. Indica si la ordenación de cadenas distingue mayúsculas de minúsculas.|
-|method|string|Opcional. Método de ordenación que se usa para los caracteres chinos.  Valores posibles: `PinYin`, `StrokeCount`.|
+|method|string|Opcional. Método de ordenación que se usa para los caracteres chinos. Valores posibles: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.

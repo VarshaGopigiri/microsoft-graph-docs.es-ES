@@ -15,9 +15,9 @@ POST /planner/tasks
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Portador<code>|
+| Authorization  | {token} de portador. Necesario. |
 
-### <a name="request-body"></a>Cuerpo de la solicitud
+### <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerTask](../resources/plannertask.md). La propiedad planId de **plannerTask** se debe establecer en el id. de un objeto [plannerPlan](../resources/plannerplan.md) existente.
 
 ### <a name="response"></a>Respuesta

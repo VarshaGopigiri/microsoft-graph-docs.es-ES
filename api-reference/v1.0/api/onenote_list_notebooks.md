@@ -23,7 +23,7 @@ El criterio de ordenación predeterminado es `name asc`.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | `Bearer <token>` Un token válido de OAuth facilitado a la aplicación en función de las credenciales de usuario y de si este tiene autorizado el acceso. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |  
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

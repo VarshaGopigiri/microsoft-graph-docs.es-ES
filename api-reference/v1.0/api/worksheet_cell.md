@@ -15,7 +15,7 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | {código} de portador|
+| Authorization  | {token} de portador. Obligatorio. |
 
 
 ## <a name="response"></a>Respuesta
