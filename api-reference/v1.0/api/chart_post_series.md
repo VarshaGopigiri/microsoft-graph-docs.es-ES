@@ -15,10 +15,10 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Necesario. |
 
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ChartSeries](../resources/chartseries.md).
 
 

@@ -1,11 +1,12 @@
 # <a name="create-group"></a>Crear grupo
 
-Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de 3 tipos de grupos:
+Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:
 
-* Grupo de Office 365 (también conocido como grupo unificado)
+* Grupo de Office 365 (grupo unificado)
 * Grupo dinámico
 * Grupo de seguridad
 
+> **Nota**: Aunque Microsoft Teams se basa en grupos de Office 365, actualmente no puede crear un equipo mediante esta API. Puede usar las otras API de grupo para administrar un equipo que se ha creado en la interfaz de usuario de Microsoft Teams.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere el siguiente **ámbito** para ejecutar esta API: _Group.ReadWrite.All_ 
@@ -17,9 +18,9 @@ POST /groups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Portador de <token>. Necesario. |
+| Authorization  | string  | {token} de portador. Necesario. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 La tabla siguiente muestra las propiedades del recurso [grupo](../resources/group.md) que debe especificar al mínimo al crear un grupo. 
 
 | Propiedad | Tipo | Descripción|

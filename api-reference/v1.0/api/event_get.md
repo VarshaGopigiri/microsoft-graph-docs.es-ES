@@ -47,7 +47,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | Portador de <token>. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Prefer: outlook.timezone | string | La zona horaria predeterminada para eventos en la respuesta. |
 
 ## <a name="request-body"></a>Cuerpo de solicitud

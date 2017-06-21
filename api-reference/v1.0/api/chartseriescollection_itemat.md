@@ -15,13 +15,13 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|number|Valor de índice del objeto que se va a recuperar. Indizado con cero.|
 

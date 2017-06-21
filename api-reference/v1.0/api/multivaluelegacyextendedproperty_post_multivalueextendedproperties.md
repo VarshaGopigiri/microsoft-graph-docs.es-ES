@@ -109,7 +109,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | {token} de portador. Obligatorio. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Cuerpo de solicitud

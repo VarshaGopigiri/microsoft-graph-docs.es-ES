@@ -1,6 +1,6 @@
-# <a name="create-thread"></a>Create thread
+# <a name="create-conversation-thread"></a>Crear hilo de conversación
 
-Inicie una nueva conversación creando primero un hilo. 
+Inicie una nueva conversación de grupo creando primero un hilo de conversación. 
 
 Se crea una conversación, un hilo de conversación y una publicación en el grupo. Use [responder hilo](conversationthread_reply.md) o [responder publicación](post_reply.md) para agregar publicaciones al hilo.
 
@@ -16,7 +16,7 @@ POST /groups/{id}/threads
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

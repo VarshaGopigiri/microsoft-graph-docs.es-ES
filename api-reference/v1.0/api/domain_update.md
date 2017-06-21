@@ -20,7 +20,7 @@ PATCH /domains/{id}
 
 | Nombre       | Descripción|
 |:-----------|:-----------|
-| Authorization  | &lt;token&gt; de portador *Necesario* |
+| Authorization  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json |
 
 ### <a name="request-body"></a>Cuerpo de la solicitud

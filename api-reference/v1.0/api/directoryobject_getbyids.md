@@ -23,7 +23,7 @@ POST /directoryObjects/getById
 
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | &lt;token&gt; de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
@@ -32,8 +32,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro   | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|ids|Colección de cadenas| Una colección de identificadores para devolverles objetos. Se pueden especificar hasta 1000 identificadores. |
-|types|Colección de cadenas| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos en el que debe buscarse. Si no se especifica, el valor predeterminado es [directoryObject](../resources/directoryobject.md), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que derive de `directoryObject` puede especificarse en la colección; por ejemplo: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), etc. Los valores no distinguen mayúsculas de minúsculas.|
+|ids|Colección string| Una colección de identificadores para devolverles objetos. Se pueden especificar hasta 1000 identificadores. |
+|types|Colección string| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos en el que debe buscarse. Si no se especifica, el valor predeterminado es [directoryObject](../resources/directoryobject.md), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que derive de `directoryObject` puede especificarse en la colección; por ejemplo: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), etc. Los valores no distinguen mayúsculas de minúsculas.|
 
 ## <a name="response"></a>Respuesta
 

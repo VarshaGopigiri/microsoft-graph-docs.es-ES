@@ -18,9 +18,9 @@ GET /users/<id>/contactFolders/delta
 
 El seguimiento de cambios en las carpetas de contactos conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token (`skiptoken` o `$deltatoken`) de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar una vez por adelantado los parámetros de consulta deseados. En solicitudes posteriores, basta con copiar y aplicar la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
-| Parámetro de consulta       | Tipo    |Descripción|
+| Parámetro de consulta      | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-| $deltatoken | cadena | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de carpetas de contactos. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
+| $deltatoken | string | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de carpetas de contactos. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
 | $skiptoken | cadena | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de carpetas de correo. |
 
 
@@ -31,9 +31,9 @@ Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud G
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | cadena  | {código} del portador. Necesario.|
-| Tipo de contenido  | cadena  | application/json. Necesario. |
-| Prefer | cadena  | odata.maxpagesize={x}. Opcional. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Tipo de contenido  | string  | application/json. Obligatorio. |
+| Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
 
 ### <a name="response"></a>Respuesta
@@ -64,7 +64,7 @@ Si la solicitud es correcta, la respuesta debería incluir un símbolo de estado
 
 La respuesta siguiente muestra un _skipToken_ en un encabezado de respuesta de _@odata.nextLink_.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +89,7 @@ Content-length: 254
 }
 ```
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)

@@ -13,13 +13,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Tipo de contenido  | application/json. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |destinationId|String|Identificador de la carpeta o el nombre de carpeta conocido *Inbox*, *Drafts*, *SentItems* o *DeletedItems*.|
 

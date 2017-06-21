@@ -15,13 +15,13 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |height|número|Opcional. Alto deseado de la imagen resultante.|
 |width|número|Opcional. Ancho deseado de la imagen resultante.|

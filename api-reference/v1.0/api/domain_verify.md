@@ -1,6 +1,6 @@
 # <a name="domain-verify"></a>dominio: verify
 
-Valida la propiedad del dominio.
+Valide la propiedad del dominio.
 
 > **Importante:** Solo se aplica a un dominio sin verificar. En el caso de un dominio sin verificar, la propiedad isVerified del [dominio](../resources/domain.md) es falsa.
 
@@ -21,7 +21,7 @@ POST /domains/{id}/verify
 
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | &lt;token&gt; de portador *Necesario*|
+| Authorization  | {token} de portador. Obligatorio.|
 | Content-Type  | application/json |
 
 ### <a name="request-body"></a>Cuerpo de la solicitud

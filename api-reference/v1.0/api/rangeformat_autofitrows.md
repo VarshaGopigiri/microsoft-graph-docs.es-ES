@@ -17,7 +17,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

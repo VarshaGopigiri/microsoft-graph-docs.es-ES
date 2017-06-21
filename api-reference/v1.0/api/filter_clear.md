@@ -16,7 +16,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

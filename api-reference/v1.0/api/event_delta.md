@@ -20,11 +20,11 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 El seguimiento de cambios en los eventos conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar una vez por adelantado los parámetros de consulta deseados. En solicitudes posteriores, basta con copiar y aplicar la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
 
-| Parámetro de consulta       | Tipo    |Descripción|
+| Parámetro de consulta      | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |startDateTime|String|La fecha y hora de inicio del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|La fecha y hora de finalización del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T20:00:00.0000000".|
-| $deltatoken | cadena | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de usuarios. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de la vista del calendario.|
+| $deltatoken | string | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de usuarios. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de la vista del calendario.|
 | $skiptoken | cadena | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma vista del calendario. |
 
 Al hacer una consulta delta en una vista del calendario, se espera obtener todas las propiedades que se obtendrían con normalidad de una solicitud `GET /calendarview`. `$select` no se admite en este caso. 
@@ -33,10 +33,10 @@ Al hacer una consulta delta en una vista del calendario, se espera obtener todas
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | cadena  | {código} del portador. Necesario.|
-| Tipo de contenido  | cadena  | application/json. Necesario. |
-| Prefer | cadena  | odata.maxpagesize={x}. Opcional. |
-| Prefiere | cadena | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.|
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Tipo de contenido  | string  | application/json. Obligatorio. |
+| Prefer | string  | odata.maxpagesize={x}. Opcional. |
+| Prefer | string | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.|
 
 
 ### <a name="response"></a>Respuesta
@@ -64,7 +64,7 @@ Si la solicitud es correcta, la respuesta debería incluir un token de estado, q
 
 La respuesta siguiente muestra un _skipToken_ en un encabezado de respuesta de _@odata.nextLink_.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +94,7 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los eventos en un calendario](../../../concepts/delta_query_events.md)

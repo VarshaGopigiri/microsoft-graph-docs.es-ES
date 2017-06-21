@@ -12,8 +12,8 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Portador de <token>. Necesario. |
-| Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Tipo de contenido | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Attachment](../resources/attachment.md).

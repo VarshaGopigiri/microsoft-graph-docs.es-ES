@@ -1,6 +1,6 @@
 # <a name="create-domain"></a>Crear dominio
 
-Agrega un dominio al inquilino.
+Agregue un dominio al inquilino.
 
 **Importante**: No puede utilizar un dominio asociado con su inquilino de Azure AD hasta que se verifique la propiedad. Consulte [Enumerar verificationDnsRecords](domain_list_verificationdnsrecords.md) para obtener más información. Los dominios raíz requieren comprobación. Por ejemplo, contoso.com requiere comprobación. Si se comprueba un dominio raíz, los subdominios de este también se comprueban de forma automática. Por ejemplo, subdominio.contoso.com se comprueba de forma automática si se ha comprobado contoso.com.
 
@@ -17,7 +17,7 @@ POST /domains
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | &lt;token&gt; de portador *Necesario*|
+| Authorization  | {token} de portador. Obligatorio.|
 | Content-Type  | application/json |
 
 ### <a name="request-body"></a>Cuerpo de la solicitud

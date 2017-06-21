@@ -17,12 +17,12 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Necesario.  |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |comment|String|Comentario opcional que se envía junto con la publicación.|
 |toRecipients|Colección [recipient](../resources/recipient.md)|Destinatarios a los que se ha reenviado el encadenado de hilos.|

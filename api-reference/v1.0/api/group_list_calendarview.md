@@ -12,7 +12,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta necesarios con valores.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |startDateTime|String|La fecha y hora de inicio del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|La fecha y hora de finalización del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T20:00:00.0000000".|
@@ -21,7 +21,7 @@ Este método también admite los [parámetros de consulta de OData](http://devel
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Prefer | string | <Time zone>. Opcional, se supone hora UTC si no se encuentra.|
 
 ## <a name="request-body"></a>Cuerpo de solicitud
