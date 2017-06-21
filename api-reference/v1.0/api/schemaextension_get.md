@@ -15,7 +15,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | &lt;token&gt; de portador. Obligatorio. |
+| Authorization  | {token} de portador. Obligatorio. |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

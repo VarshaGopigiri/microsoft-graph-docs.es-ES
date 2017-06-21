@@ -17,13 +17,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|Opcional. Solo tiene en cuenta las celdas con valores como celdas usadas.|
 

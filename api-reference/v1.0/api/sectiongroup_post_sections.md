@@ -16,8 +16,8 @@ POST /groups/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | `Bearer <token>` Un token válido de OAuth facilitado a la aplicación en función de las credenciales de usuario y de si este tiene autorizado el acceso. |
-| Content-Type | string | `application/json` |
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Tipo de contenido | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, asigne un nombre a la sección.

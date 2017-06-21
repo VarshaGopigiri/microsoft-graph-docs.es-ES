@@ -14,7 +14,7 @@ GET /planner/plans/<id>/buckets
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | Portador<code>|
+| Authorization  | {token} de portador. Necesario. |
 
 ### <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
