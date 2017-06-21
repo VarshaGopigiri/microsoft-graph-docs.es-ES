@@ -11,13 +11,13 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |addLicenses|AssignedLicense|Colección de objetos [assignedLicense](../resources/assignedlicense.md) que especifican las licencias que se van a agregar. Puede deshabilitar planes asociados a una licencia estableciendo la propiedad **disabledPlans** en un objeto [assignedLicense](../resources/assignedlicense.md).|
 |removeLicenses|Guid|Colección de GUID que identifican las licencias que se van a quitar.|

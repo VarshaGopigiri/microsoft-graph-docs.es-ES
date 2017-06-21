@@ -7,7 +7,7 @@ Puede habilitar, configurar o deshabilitar uno o varios de estos valores como pa
 **Nota** No puede crear ni eliminar ninguna configuración del buzón.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *Mailboxsettings.ReadWrite*  
+Se requiere el siguiente **ámbito** para ejecutar esta API: *MailboxSettings.ReadWrite*  
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -19,12 +19,12 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | Portador de `<token>`. Necesario. |
+| Authorization  | string  | {token} de portador. Necesario. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione los valores de las propiedades relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado. Las siguientes propiedades son modificables o actualizables:
 
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Opciones de configuración para notificar de forma automática al remitente de un mensaje de correo entrante con un mensaje del usuario que ha iniciado sesión.|
 |language|[localeInfo](../resources/localeinfo.md)|Representación de la configuración regional del usuario, como el idioma preferido y el país o región.|

@@ -33,7 +33,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta necesarios con valores.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |startDateTime|String|La fecha y hora de inicio del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|La fecha y hora de finalización del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T20:00:00.0000000".|
@@ -42,8 +42,8 @@ Este método también admite los [parámetros de consulta de OData](http://devel
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | Portador de <token>. Necesario. |
-| Content-Type   | string  | application/json | 
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Tipo de contenido   | string  | application/json | 
 | Prefer | string | <Time zone>. Opcional, se supone hora UTC si no se encuentra.|
 
 ## <a name="request-body"></a>Cuerpo de solicitud

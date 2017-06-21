@@ -12,12 +12,12 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ### <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Portador {código}|
+| Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ### <a name="parameters"></a>Parámetros
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |deltarows|Int32|El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
 |deltaColumns|Int32|El número de columnas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
@@ -25,7 +25,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ### <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |deltaRows|Int32||
 |deltaColumns|Int32||

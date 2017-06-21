@@ -2,7 +2,7 @@
 
 Use esta API para crear un nuevo usuario. El cuerpo de la solicitud contiene el usuario que se creará. Como mínimo, debe especificar las propiedades necesarias para el usuario. De forma opcional, puede especificar cualquier otra propiedad modificable.
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.ReadWrite*
+Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All*
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -11,7 +11,7 @@ POST /users
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
@@ -46,7 +46,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "displayName-value",
   "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"

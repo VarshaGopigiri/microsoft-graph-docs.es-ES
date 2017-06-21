@@ -15,7 +15,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor|
 |:---------------|:----------|
-| Autorización  | Portador<code>. Required.|
+| Authorization  | {token} de portador. Obligatorio. |
 | Prefer: outlook.timezone | Una cadena que representa una zona horaria concreta para la respuesta, por ejemplo, "Hora estándar del Pacífico". Opcional. Se utiliza la hora UTC si no se especifica este encabezado.|
 
 
@@ -23,7 +23,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 Todos los parámetros admitidos se enumeran a continuación. Dependiendo de su escenario, especifique un objeto JSON para cada uno de los parámetros necesarios en el cuerpo de la solicitud. 
 
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attendees|Colección [attendeeBase](../resources/attendeebase.md)|Una colección de los asistentes o los recursos de la reunión. Puesto que findMeetingTimes supone que cualquier asistente que sea una persona siempre es necesario, especifique `required` para una persona y `resource` para un recurso en la propiedad **tipo** correspondiente. Una colección vacía hace que **findMeetingTimes** busque intervalos de tiempo libres solo para el organizador. Opcional.|
 |isOrganizerOptional|Edm.Boolean|Especificar `True` si no es preciso que el organizador asista. El valor predeterminado es `false`. Opcional.|

@@ -14,13 +14,13 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro       | Tipo    |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean|**true** para especificar que solo se deben devolver los grupos de seguridad de los que el usuario es miembro; **false** para especificar que se deben devolver todos los grupos de los que el usuario es miembro. Nota: Establecer este parámetro en **verdadero** solo es posible al llamar este método en un usuario.|
 

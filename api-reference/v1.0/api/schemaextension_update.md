@@ -17,18 +17,18 @@ PATCH /schemaExtensions/{id}
 ### <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | &lt;token&gt; de portador. Obligatorio. |
+| Authorization  | {token} de portador. Obligatorio. |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |description|String|Descripción de la extensión de esquema.|
 |properties|Colección [extensionSchemaProperty](../resources/extensionschemaproperty.md)|La colección de nombres de propiedad y tipos que conforman la definición de la extensión de esquema. Solo se admiten cambios para agregar elementos. |
 |status|String|El estado del ciclo de vida de la extensión de esquema. El estado inicial tras la creación es **InDevelopment**. Las posibles transiciones entre estados son de **InDevelopment** a **Available**, de **Available** a **Deprecated**, y de **Deprecated** a **Available**.|
-|targetTypes|String collection|Conjunto de tipos de Microsoft Graph (compatibles con extensiones) a los que se puede aplicar la extensión de esquema.  Solo se admiten cambios para agregar elementos.|
+|targetTypes|Colección string|Conjunto de tipos de Microsoft Graph (compatibles con extensiones) a los que se puede aplicar la extensión de esquema.  Solo se admiten cambios para agregar elementos.|
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [schemaExtensions](../resources/schemaextension.md) actualizado en el cuerpo de la respuesta.

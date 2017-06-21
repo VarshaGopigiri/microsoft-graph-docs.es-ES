@@ -66,7 +66,7 @@ Consulte la sección [Cuerpo de la solicitud](#request-body) para obtener inform
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | {token} de portador. Obligatorio. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

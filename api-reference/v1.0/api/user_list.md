@@ -2,7 +2,18 @@
 
 Recupera una lista de objetos de usuario.
 
-> Nota: La recuperación de una lista de usuarios solo devuelve un conjunto predeterminado de propiedades (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` para obtener otras propiedades y relaciones del objeto [user](../resources/user.md).
+> Nota: La recuperación de una lista de usuarios solo devuelve un conjunto predeterminado de propiedades (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` para obtener otras propiedades y relaciones del objeto [user](../resources/user.md). En cambio, solo pueden seleccionarse las siguientes propiedades para los usuarios individuales, por ejemplo /v1.0/me?$select=aboutMe, y no para las colecciones de usuarios, por ejemplo /v1.0/users?$select=aboutMe:
+>* aboutMe
+>* birthday
+>* hireDate
+>* interests
+>* mySite
+>* pastProjects
+>* preferredName
+>* responsibilities
+>* schools
+>* skills
+>* mailboxSettings
 
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
@@ -16,7 +27,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor|
 |:-----------|:------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

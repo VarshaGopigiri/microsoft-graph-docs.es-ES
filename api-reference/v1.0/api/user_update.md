@@ -1,8 +1,11 @@
+
 # <a name="update-user"></a>Actualizar usuario
 
 Actualice las propiedades de un objeto de usuario.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.ReadWrite; User.ReadWrite.All; Directory.ReadWrite.All*
+
+Al actualizar la propiedad passwordProfile, se necesita el siguiente ámbito: *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -12,13 +15,13 @@ PATCH /users/{id | userPrincipalName}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor|
 |:-----------|:------|
-| Autorización  | Portador de <token>. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |aboutMe|String|Un campo de entrada de texto de forma libre para que el usuario se describa a sí mismo.|
 |accountEnabled|Booleano| **true** si la cuenta está habilitada; en caso contrario, **false**. Esta propiedad es necesaria cuando se crea un usuario. Es compatible con $filter.    |

@@ -108,7 +108,7 @@ Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
-| Authorization | Bearer %token%|
+| Authorization | {token} de portador. Necesario. |
 
 
 ## <a name="request-body"></a>Cuerpo de solicitud
