@@ -7,23 +7,28 @@ La actualización se aplica a todos los recursos que se incluyen en la propiedad
 Solo la aplicación que ha creado una extensión de esquema (la aplicación propietaria) puede realizar cambios para agregar elementos a la extensión cuando esta se encuentra en los estados **InDevelopment** o **Available**. Esto significa que la aplicación no puede quitar propiedades personalizadas o tipos de recurso de destino de la definición. No obstante, sí puede cambiar la descripción de la extensión.
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 Se requiere el siguiente **ámbito** para ejecutar esta API: *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /schemaExtensions/{id}
 ```
+
 ### <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+
 | Nombre      |Descripción|
 |:----------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Cuerpo de solicitud
+
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |description|String|Descripción de la extensión de esquema.|
 |properties|Colección [extensionSchemaProperty](../resources/extensionschemaproperty.md)|La colección de nombres de propiedad y tipos que conforman la definición de la extensión de esquema. Solo se admiten cambios para agregar elementos. |
@@ -31,9 +36,13 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |targetTypes|Colección string|Conjunto de tipos de Microsoft Graph (compatibles con extensiones) a los que se puede aplicar la extensión de esquema.  Solo se admiten cambios para agregar elementos.|
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [schemaExtensions](../resources/schemaextension.md) actualizado en el cuerpo de la respuesta.
+
+Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.
+
 ## <a name="example"></a>Ejemplo
+
 ##### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
@@ -57,41 +66,16 @@ Content-length: 201
   ],
 }
 ```
+
 ##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 201
-
-{
-  "id": "id-value",
-  "description": "description-value",
-  "targetTypes": [
-    "targetTypes-value"
-  ],
-  "properties": [
-    {
-      "name":"name-value",
-      "type":"type-value"
-    },
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }  
-  ],
-  "status": "status-value",
-  "owner": "owner-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 ## <a name="see-also"></a>Recursos adicionales
