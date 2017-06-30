@@ -8,9 +8,12 @@ Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
 * Files.Read
 * Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
 * Sites.Read.All
+* Sites.ReadWrite.All
 
-## <a name="get-a-users-onedrive"></a>Obtener el OneDrive de un usuario
+## <a name="get-a-users-onedrive"></a>Obtener la cuenta de OneDrive de un usuario
 
 Para acceder al OneDrive o OneDrive para la Empresa de un usuario, la aplicación debe solicitar la relación **drive** en el recurso [User](../resources/user.md).
 

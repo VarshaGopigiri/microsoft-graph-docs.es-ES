@@ -1,6 +1,6 @@
 # <a name="create-calendar"></a>Create Calendar
 
-Use esta API para crear un objeto Calendar.
+Use esta API para crear un calendario.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.ReadWrite*
 ## <a name="http-request"></a>Solicitud HTTP
@@ -15,11 +15,11 @@ POST /users/{id | userPrincipalName}/calendars
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Calendar](../resources/calendar.md).
+En el cuerpo de la solicitud, especifique una representación JSON del objeto [calendar](../resources/calendar.md).
 
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [Calendar](../resources/calendar.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [calendar](../resources/calendar.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
@@ -31,16 +31,12 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendars
 Content-type: application/json
-Content-length: 78
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value"
+  "name": "Volunteer"
 }
 ```
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Calendar](../resources/calendar.md).
+En el cuerpo de la solicitud, proporcione una representación JSON del objeto [calendar](../resources/calendar.md).
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
@@ -51,14 +47,21 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "id":"AAMkADJmMVAAA=",
+    "name":"Volunteer",
+    "color":"auto",
+    "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

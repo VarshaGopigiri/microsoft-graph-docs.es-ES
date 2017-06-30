@@ -10,7 +10,11 @@ Para cargar un archivo mediante una sesión de carga hay que realizar dos pasos:
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
+> **Nota**: El permiso de aplicación Files.ReadWrite.All aún no se admite en esta API. Está prevista la compatibilidad completa próximamente. 
 
 ## <a name="create-an-upload-session"></a>Crear una sesión de carga
 

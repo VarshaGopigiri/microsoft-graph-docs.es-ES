@@ -18,19 +18,19 @@ Al crear una invitación, se devolverá una dirección URL de canje en la respue
 |[Crear invitación](../api/invitation_post.md) | invitation | Escriba las propiedades y relaciones del objeto de invitación.|
 
 ### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|Nombre para mostrar del usuario al que se invita.|
 |invitedUserEmailAddress|String|Dirección de correo electrónico del usuario al que se invita. Necesario.|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configuración adicional para el mensaje que se envía al usuario invitado, incluidos la personalización del texto del mensaje, el idioma y la lista de destinatarios CC.|
-|sendInvitationMessage|Booleano|Indica si se debe enviar un correo electrónico al usuario al que se invita o no. El valor predeterminado es false.|
+|sendInvitationMessage|Boolean|Indica si se debe enviar un correo electrónico al usuario al que se invita o no. El valor predeterminado es false.|
 |inviteRedirectUrl|String|La dirección URL a la que se redirigirá al usuario una vez que se canjee la invitación. Necesario.|
 |inviteRedeemUrl|String|La dirección URL que puede usar el usuario para canjear su invitación. Solo lectura|
 |invitedUserType|String|userType del usuario al que se invita. El valor predeterminado es Guest. Puede invitar como Member si es administrador de la empresa. |
-|status|String|El estado de la invitación. Valores posibles: Completed, InProgress y Error|
+|status|String|El estado de la invitación. Valores posibles: PendingAcceptance, Completed, InProgress y Error|
 
 ### <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|El usuario creado como parte de la creación de la invitación. Solo lectura|
 

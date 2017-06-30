@@ -80,9 +80,9 @@ Content-Type: application/json
 }
 ```
 
-Las propiedades expirationDateTime, notificationUrl, resource y changeType son necesarias. Consulte [tipo de recurso de suscripción](subscription.md) para conocer las definiciones y los valores de las propiedades. Aunque no es necesaria la propiedad clientState, debe incluirla para cumplir nuestro proceso de control de notificaciones recomendado.
+Se necesitan las propiedades `changeType`, `notificationUrl`, `resource` y `expirationDateTime`. Vea las definiciones y los valores de las propiedades en [Tipo de recurso de suscripción](subscription.md). Aunque no se necesita la propiedad `clientState`, tiene que incluirla para cumplir nuestro proceso de control de notificaciones recomendado.
 
-Si se ejecuta correctamente, Microsoft Graph devuelve un código `200 OK` y un objeto [subscription](subscription.md) en el cuerpo.
+Si se ejecuta correctamente, Microsoft Graph devuelve un código `201 Created` y un objeto [subscription](subscription.md) en el cuerpo.
 
 # <a name="renewing-a-subscription"></a>Renovación de una suscripción
 
@@ -116,18 +116,18 @@ El cliente comienza a recibir notificaciones después de crear la suscripción. 
 
 ## <a name="notification-properties"></a>Propiedades de la notificación
 
-El objeto de notificación tiene las siguientes propiedades:
+El objeto “notification” tiene las propiedades siguientes:
 
-* Id - El identificador de la suscripción a la que pertenece esta notificación.
-* expirationDateTime - La fecha de expiración de la suscripción.
-* clientState - La propiedad clientState especificada en la solicitud de suscripción.
+* subscriptionId: el id. de la suscripción a la que pertenece esta notificación.
+* subscriptionExpirationDateTime: la hora de expiración de la suscripción.
+* clientState: la propiedad clientState especificada en la solicitud de suscripción.
 * changeType - El tipo de evento que generó la notificación. Por ejemplo, *creado* al recibir un correo o *actualizado* al marcar un mensaje como leído.
 * resource - El URI del recurso que hace referencia a `https://graph.microsoft.com`. 
 * resourceData - El objeto que depende del recurso al que se suscribe.  Por ejemplo, para recursos de Outlook:
   * @odata.type - El tipo de entidad OData en Microsoft Graph que describe el objeto representado.
   * @odata.id - El identificador OData del objeto.
-  * @odata.etag - La etiqueta de entidad HTTP que representa una versión del objeto.
-  * Id - El identificador del objeto.
+  * @odata.etag: la etiqueta de entidad HTTP que representa una versión del objeto.
+  * id: el identificador del objeto.
 
 
 > Nota: El valor Id proporcionado en resourceData es válido en el momento en que se pone la notificación en cola. Algunas acciones, como mover un mensaje a otra carpeta, pueden provocar que cambie el Id de un recurso. 
@@ -140,8 +140,8 @@ Cuando el usuario recibe un correo electrónico, Microsoft Graph envía una noti
 {
   "value":[
   {
-    "id":"<subscription_guid>",
-    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "subscriptionId":"<subscription_guid>",
+    "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
@@ -150,7 +150,7 @@ Cuando el usuario recibe un correo electrónico, Microsoft Graph envía una noti
       "@odata.type":"#Microsoft.Graph.Message",
       "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-      "Id":"<long_id_string>"
+      "id":"<long_id_string>"
     }
   }
   ]

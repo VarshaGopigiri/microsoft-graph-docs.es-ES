@@ -131,9 +131,9 @@ Ninguno.
 
 ### <a name="remarks"></a>Comentarios
 
-Este permiso es válido en las aplicaciones destinadas a organizaciones.
+Este permiso solo es válido para aplicaciones destinadas a organizaciones.
 
-### <a name="example-usage"></a>Ejemplos de uso
+### <a name="example-usage"></a>Ejemplo de uso
 #### <a name="application"></a>Aplicación
 
 * _Device.ReadWrite.All_: leer todos los dispositivos registrados de la organización (`GET /devices`).
@@ -247,11 +247,11 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 |   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read_ |    Leer los archivos del usuario y los que se han compartido con él | Permite que la aplicación lea los archivos del usuario que ha iniciado sesión y los archivos compartidos con este.| No |
+| _Files.Read_ |    Leer archivos de usuario | Permite a la aplicación leer los archivos del usuario que inició la sesión.| No |
 | _Files.Read.All_ | Leer todos los archivos a  los que el usuario puede tener acceso | Permite que la aplicación lea todos archivos a los que puede tener acceso el usuario que ha iniciado sesión. | No |
-| _Files.ReadWrite_ |   Obtener acceso completo a los archivos del usuario y a los que se han compartido con él | Permite que la aplicación lea, cree, actualice y elimine los archivos del usuario que ha iniciado sesión y los archivos compartidos con el usuario. | No |
-| _Files.ReadWrite.All_ | Tener acceso completo a todos los archivos a los que puede tener acceso el usuario | Permite que la aplicación lea, cree, actualice y elimine todos los archivos a los que puede tener acceso el usuario que ha iniciado sesión. | No |
-| _Files.ReadWrite.AppFolder_ | Tener acceso completo a la carpeta de la aplicación (versión preliminar) | (Versión preliminar) Permite que la aplicación lea, cree, actualice y elimine archivos de la carpeta de la aplicación. | No |
+| _Files.ReadWrite_ |   Obtener acceso total a los archivos de usuario | Permite a la aplicación leer, crear, actualizar y eliminar los archivos del usuario que inició la sesión. | No |
+| _Files.ReadWrite.All_ | Obtener acceso total a todos los archivos a los que puede tener acceso el usuario | Permite que la aplicación lea, cree, actualice y elimine todos los archivos a los que puede obtener acceso el usuario que inició la sesión. | No |
+| _Files.ReadWrite.AppFolder_ | Obtener acceso total a la carpeta de la aplicación (versión preliminar) | (Versión preliminar) Permite que la aplicación lea, cree, actualice y elimine archivos de la carpeta de la aplicación. | No |
 | _Files.Read.Selected_ |    Leer los archivos que el usuario selecciona (versión preliminar) | **Compatibilidad limitada en Microsoft Graph (vea los comentarios)** <br/> (Versión preliminar) Permite que la aplicación lea los archivos que el usuario selecciona. La aplicación puede obtener acceso a un archivo durante varias horas después de que el usuario lo haya seleccionado. | No |
 | _Files.ReadWrite.Selected_ |    Leer los archivos que el usuario selecciona y escribir en ellos (versión preliminar) | **Compatibilidad limitada en Microsoft Graph (vea los comentarios)** <br/> (Versión preliminar) Permite que la aplicación lea y escriba archivos que el usuario selecciona. La aplicación puede obtener acceso a un archivo durante varias horas después de que el usuario lo haya seleccionado. | No |
 
@@ -259,23 +259,20 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 |   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read.All_ | Leer todos los archivos a los que el usuario puede tener acceso (versión preliminar) | **Compatibilidad limitada en Microsoft Graph** <br/> (Versión preliminar) Permite que la aplicación lea todos los archivos de todas las colecciones de sitios sin la necesidad de que un usuario haya iniciado sesión. | Sí |
-| _Files.ReadWrite.All_ | Tener acceso completo a todos los archivos a los que puede tener acceso el usuario (versión preliminar) | **Compatibilidad limitada en Microsoft Graph** <br/> (Versión preliminar) Permite que la aplicación lea, cree, actualice y elimine todos los archivos de todas las colecciones de sitios sin la necesidad de que un usuario haya iniciado sesión. | Sí |
+| _Files.Read.All_ | Leer archivos en todas las colecciones de sitios (versión preliminar) | (Versión preliminar) Permite que la aplicación lea todos los archivos de todas las colecciones de sitios sin que un usuario iniciara sesión. | Sí |
+| _Files.ReadWrite.All_ | Leer y escribir archivos en todas las colecciones de sitios (versión preliminar) | **Compatibilidad limitada en Microsoft Graph** <br/> (Versión preliminar) Permite que la aplicación lea, cree, actualice y elimine todos los archivos de todas las colecciones de sitios sin que un usuario iniciara sesión. | Sí |
 
 ### <a name="remarks"></a>Comentarios
 
-#### <a name="support-for-permissions-in-preview"></a>Compatibilidad con los permisos en vista preliminar
-**Permisos delegados**: 
+Los permisos delegados Files.Read, Files.ReadWrite, Files.Read.All y Files.ReadWrite.All son válidos tanto para cuentas Microsoft personales como para cuentas profesionales o educativas. Tenga en cuenta que, para las cuentas personales, Files.Read y Files.ReadWrite también conceden acceso a archivos compartidos con el usuario que inició la sesión. 
 
-- _Files.Read.Selected_ y _Files.ReadWrite.Selected_ todavía no son compatibles con Microsoft Graph. Para la compatibilidad con versiones anteriores, estos permisos pueden configurarse e incluirse en solicitudes de autorización, pero Microsoft Graph no concede privilegios. Está prevista la compatibilidad futura con estos permisos. 
-- Files.ReadWrite.AppFolder_ solo es compatible con cuentas de Microsoft. 
+Los permisos delegados Files.Read.Selected y Files.ReadWrite.Selected solo son válidos en cuentas profesionales o educativas, y solo se exponen para trabajar con [controladores de archivos de Office 365 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps). No tienen que usarse para llamar directamente a las API de Microsoft Graph. 
 
-**Permisos de la aplicación**: 
+El permiso delegado Files.ReadWrite.AppFolder solo es válido para cuentas personales y se usa para obtener acceso a la [carpeta especial del directorio raíz de la aplicación](https://dev.onedrive.com/items/special_folders.htm) con la API de Microsoft Graph [Obtener carpeta especial](../api-reference/v1.0/api/drive_special.md) de OneDrive.
 
-- En la actualidad, _Files.Read.All_ y _Files.ReadWrite.All_ no son completamente compatibles con Microsoft Graph, pero se conceden algunos privilegios con estos permisos. Está prevista la compatibilidad completa próximamente. 
+El permiso de aplicación Files.ReadWrite.All aún no es compatible con la API de Microsoft Graph [Crear sesión de carga reanudable](../api-reference/v1.0/api/item_createuploadsession.md) de OneDrive. Está prevista la compatibilidad completa próximamente. 
 
-
-### <a name="example-usage"></a>Ejemplos de uso
+### <a name="example-usage"></a>Ejemplo de uso
 #### <a name="delegated"></a>Delegado
 
 * _Files.Read_: leer archivos almacenados en el OneDrive del usuario que ha iniciado sesión (`GET /me/drive/root/children`).

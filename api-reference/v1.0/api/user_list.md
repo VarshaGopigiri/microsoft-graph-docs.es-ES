@@ -2,40 +2,45 @@
 
 Recupera una lista de objetos de usuario.
 
-> Nota: La recuperación de una lista de usuarios solo devuelve un conjunto predeterminado de propiedades (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` para obtener otras propiedades y relaciones del objeto [user](../resources/user.md). En cambio, solo pueden seleccionarse las siguientes propiedades para los usuarios individuales, por ejemplo /v1.0/me?$select=aboutMe, y no para las colecciones de usuarios, por ejemplo /v1.0/users?$select=aboutMe:
->* aboutMe
->* birthday
->* hireDate
->* interests
->* mySite
->* pastProjects
->* preferredName
->* responsibilities
->* schools
->* skills
->* mailboxSettings
-
 ## <a name="prerequisites"></a>Requisitos previos
+
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
+
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para que le resulte más fácil personalizar la respuesta.
+
+De forma predeterminada, solo se devuelve un conjunto limitado de propiedades. (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
+
+Para devolver un conjunto de propiedades alternativo, tiene que especificar el conjunto de propiedades de [usuario](../resources/user.md) que prefiera con el parámetro de consulta `$select` de OData. Por ejemplo, para devolver _displayName_, _givenName_, _id_ y _postalCode_, tendría que agregar lo siguiente a la consulta: `$select=displayName,givenName,postalCode`
+
+> Nota: Algunas propiedades no se pueden devolver dentro de una colección de usuario. Las propiedades siguientes solo se admiten al [recuperar un único usuario](./user_get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_
+
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor|
-|:-----------|:------|
-| Authorization  | {token} de portador. Obligatorio.  |
-| Content-Type   | application/json | 
+
+| Encabezado        | Valor                      |
+|:--------------|:---------------------------|
+| Authorization | {token} de portador (obligatorio).  |
+| Content-Type  | application/json           | 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [user](../resources/user.md) en el cuerpo de la respuesta.
+
 ## <a name="example"></a>Ejemplo
+
 ##### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
@@ -44,7 +49,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 GET https://graph.microsoft.com/v1.0/users
 ```
+
 ##### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",

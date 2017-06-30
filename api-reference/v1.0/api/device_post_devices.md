@@ -3,7 +3,7 @@
 Crea y registra un nuevo dispositivo en la organización.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
+Se necesita uno de los siguientes **ámbitos** para ejecutar esta API: *Device.ReadWrite.All* o *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
