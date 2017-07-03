@@ -25,7 +25,7 @@ Este recurso es compatible con el uso de una [consulta delta](../../../concepts/
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|El número de objetos mailFolder secundarios inmediatos en el objeto mailFolder actual.|
 |displayName|String|El nombre para mostrar del objeto mailFolder.|
@@ -44,7 +44,7 @@ Los objetos MailFolder en Outlook pueden contener más de un tipo de elementos; 
 
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |childFolders|Colección [MailFolder](mailfolder.md)|La colección de carpetas secundarias del objeto mailFolder.|
 |messages|Colección [Message](message.md)|La colección de mensajes del objeto mailFolder.|
@@ -75,7 +75,12 @@ Aquí tiene una representación JSON del recurso
   "id": "string (identifier)",
   "parentFolderId": "string",
   "totalItemCount": 1024,
-  "unreadItemCount": 1024
+  "unreadItemCount": 1024,
+
+  "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```

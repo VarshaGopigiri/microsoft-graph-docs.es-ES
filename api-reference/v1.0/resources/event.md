@@ -39,18 +39,18 @@ Este recurso admite:
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |asistentes|Colección [attendee](attendee.md)|La colección de asistentes del evento.|
 |body|[itemBody](itembody.md)|El cuerpo del mensaje asociado al evento. Puede mostrarse en formato de texto o HTML.|
 |bodyPreview|String|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
-|categories|String collection|Las categorías asociadas al evento.|
+|categories|Colección string|Las categorías asociadas al evento.|
 |changeKey|String|Identifica la versión del objeto de evento. Cada vez que cambia el evento, cambia también ChangeKey. Esto permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |finalización|[dateTimeTimeZone](datetimetimezone.md)|La fecha, la hora y la zona horaria en que finaliza el evento.|
 |hasAttachments|Booleano|Se establece como true si el evento tiene datos adjuntos.|
 |iCalUId|String|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes.|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |importance|String|La importancia del evento: Baja = 0, Normal = 1, Alta = 2. Los valores posibles son: `Low`, `Normal` y `High`.|
 |isAllDay|Booleano|Se establece como true si el evento dura todo el día.|
 |isCancelled|Booleano|Se establece como true si el evento ha sido cancelado.|
@@ -76,7 +76,7 @@ Este recurso admite:
 |webLink|String|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attachments|Colección [attachment](attachment.md)|La colección de datos adjuntos [fileAttachment](fileAttachment.md) y [itemAttachment](itemAttachment.md) del evento. Propiedad de navegación. Solo lectura. Admite valores NULL.|
 |calendario|[calendario](calendar.md)|El calendario que contiene el evento. Propiedad de navegación. Solo lectura.|
@@ -142,7 +142,10 @@ Aquí tiene una representación JSON del recurso
 
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "instances": [ { "@odata.type": "microsoft.graph.event" }]
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
+  "instances": [ { "@odata.type": "microsoft.graph.event" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 
 }
 
