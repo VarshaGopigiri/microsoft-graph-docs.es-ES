@@ -49,9 +49,9 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_id |necesario |Identificador de aplicación que el portal de registro ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) ha asignado a la aplicación. |
 | response_type |necesario |Debe incluir `code` para el flujo del código de autorización. |
 | redirect_uri |recomendado |URI de redireccionamiento de la aplicación, donde la aplicación puede enviar y recibir respuestas de autenticación.  Debe coincidir exactamente con uno de los URI de redireccionamiento que ha registrado en el portal de registro de la aplicación, pero con codificación URL.  En el caso de las aplicaciones nativas y móviles, debe usar el valor predeterminado de `https://login.microsoftonline.com/common/oauth2/nativeclient`. |
-| scope |necesario |Lista separada por espacios de los permisos de Microsoft Graph para los que quiere que el usuario dé su consentimiento. También se pueden incluir ámbitos de OpenID. |
+| ámbito |necesario |Lista separada por espacios de los permisos de Microsoft Graph para los que quiere que el usuario dé su consentimiento. También se pueden incluir ámbitos de OpenID. |
 | response_mode |recomendado |Especifica el método que se debe usar para enviar el token resultante de vuelta a la aplicación.  Puede ser `query` o `form_post`. |
-| state |recomendado |Valor incluido en la solicitud que también se devolverá en la respuesta de token.  Puede ser una cadena con cualquier contenido que quiera.  Normalmente se usa un valor único generado de forma aleatoria para [impedir los ataques de falsificación de solicitud entre sitios](http://tools.ietf.org/html/rfc6749#section-10.12).  El estado también se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. |
+| estado |recomendado |Valor incluido en la solicitud que también se devolverá en la respuesta de token.  Puede ser una cadena con cualquier contenido que quiera.  Normalmente se usa un valor único generado de forma aleatoria para [impedir los ataques de falsificación de solicitud entre sitios](http://tools.ietf.org/html/rfc6749#section-10.12).  El estado también se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. |
 
 > **Importante**: Microsoft Graph expone dos tipos de permisos: de aplicación y delegados. En el caso de las aplicaciones que se ejecutan con un usuario que ha iniciado sesión, los permisos delegados se solicitan en el parámetro `scope`. Estos permisos delegan en la aplicación los privilegios del usuario que ha iniciado sesión, lo que permite que la aplicación actúe como dicho usuario al hacer llamadas a Microsoft Graph. Para obtener más información sobre los permisos disponibles mediante Microsoft Graph, vea la [Referencia de permisos](./permissions_reference.md).
  
@@ -77,8 +77,8 @@ code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 ```
 | Parámetro | Descripción |
 | --- | --- |
-| code |Código de autorización solicitado por la aplicación. La aplicación puede usar el código de autorización para solicitar un token de acceso para el recurso de destino.  Los códigos de autorización duran muy poco. Por lo general, expiran al cabo de 10 minutos. |
-| state |Si se incluye un parámetro de estado en la solicitud, debe aparecer el mismo valor en la respuesta. La aplicación debe comprobar que los valores de estado de la solicitud y la respuesta son idénticos. |
+| código |Código de autorización solicitado por la aplicación. La aplicación puede usar el código de autorización para solicitar un token de acceso para el recurso de destino.  Los códigos de autorización duran muy poco. Por lo general, expiran al cabo de 10 minutos. |
+| estado |Si se incluye un parámetro de estado en la solicitud, debe aparecer el mismo valor en la respuesta. La aplicación debe comprobar que los valores de estado de la solicitud y la respuesta son idénticos. |
 
 ## <a name="3-get-a-token"></a>3. Obtener un token
 La aplicación usa la autorización `code` recibida en el paso anterior para solicitar un token de acceso mediante el envío de una solicitud `POST` al punto de conexión `/token`.
@@ -105,7 +105,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | client_id |necesario |Identificador de aplicación que el portal de registro ([apps.dev.microsoft.com](https://apps.dev.microsoft.com/?referrer=https://azure.microsoft.com/documentation/articles&deeplink=/appList)) ha asignado a la aplicación. |
 | grant_type |necesario |Debe ser `authorization_code` para el flujo del código de autorización. |
 | scope |necesario |Lista de ámbitos separados por espacios.  Los ámbitos solicitados en esta sección deben ser equivalentes a los ámbitos solicitados en la primera sección (autorización) o deben ser un subconjunto de estos.  Si los ámbitos especificados en esta solicitud abarcan varios servidores de recursos, el punto de conexión de v2.0 devolverá un token para el recurso especificado en el primer ámbito. |
-| code |necesario |Código de autorización adquirido en la primera sección del flujo. |
+| código |necesario |Código de autorización adquirido en la primera sección del flujo. |
 | redirect_uri |necesario |Mismo valor del URI de redireccionamiento que se usó para adquirir el código de autorización. |
 | client_secret |necesario para aplicaciones web |Secreto de la aplicación creado en el portal de registro de la aplicación.  No se debe usar en una aplicación nativa, ya que los secretos de cliente no se pueden almacenar de forma confiable en los dispositivos.  Es necesario para aplicaciones web y API web, que pueden almacenar de forma segura el secreto de cliente en el lado servidor. |
 
@@ -124,7 +124,7 @@ Aunque el token de acceso es opaco para la aplicación, la respuesta contiene un
 | Parámetro | Descripción |
 | --- | --- |
 | token_type |Indica el valor de tipo del token. El único tipo que Azure AD admite es Bearer. |
-| scope |Lista separada por espacios de los permisos de Microsoft Graph para los que es válido el token de acceso. |
+| ámbito |Lista separada por espacios de los permisos de Microsoft Graph para los que es válido el token de acceso. |
 | expires_in |Período de validez del token de acceso (en segundos). |
 | access_token |Token de acceso solicitado. La aplicación puede usar este token para llamar a Microsoft Graph. |
 | refresh_token |Token de actualización de OAuth 2.0. La aplicación puede usar este token para adquirir otros tokens de acceso después de que el actual haya expirado.  Los tokens de actualización son de larga duración y se pueden usar para mantener el acceso a los recursos durante períodos prolongados.  Para obtener más información, vea la [Referencia de tokens de v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |

@@ -121,7 +121,11 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 #### <a name="delegated-permissions"></a>Permisos delegados
 
-Ninguno.
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Device.Read_ | Leer los dispositivos del usuario | Permite a la aplicación leer la lista de dispositivos de un usuario en nombre del usuario que inició sesión. | No |
+| _Device.Command_ | Comunicarse con los dispositivos del usuario | Permite a la aplicación iniciar otra aplicación o comunicarse con otra aplicación del dispositivo de un usuario en nombre del usuario que inició sesión. | No |
+
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
@@ -131,9 +135,9 @@ Ninguno.
 
 ### <a name="remarks"></a>Comentarios
 
-Este permiso solo es válido para aplicaciones destinadas a organizaciones.
+Los permisos delegados _Device.Read_ y _Device.Command_ solo son válidos para las cuentas personales de Microsoft.
 
-### <a name="example-usage"></a>Ejemplo de uso
+### <a name="example-usage"></a>Ejemplos de uso
 #### <a name="application"></a>Aplicación
 
 * _Device.ReadWrite.All_: leer todos los dispositivos registrados de la organización (`GET /devices`).
@@ -272,7 +276,7 @@ El permiso delegado Files.ReadWrite.AppFolder solo es válido para cuentas perso
 
 El permiso de aplicación Files.ReadWrite.All aún no es compatible con la API de Microsoft Graph [Crear sesión de carga reanudable](../api-reference/v1.0/api/item_createuploadsession.md) de OneDrive. Está prevista la compatibilidad completa próximamente. 
 
-### <a name="example-usage"></a>Ejemplo de uso
+### <a name="example-usage"></a>Ejemplos de uso
 #### <a name="delegated"></a>Delegado
 
 * _Files.Read_: leer archivos almacenados en el OneDrive del usuario que ha iniciado sesión (`GET /me/drive/root/children`).
@@ -308,9 +312,9 @@ No se admite la funcionalidad de grupo en cuentas de Microsoft.
 
 En el caso de los Grupos de Office 365, los permisos de grupo conceden a la aplicación acceso al contenido del grupo, como conversaciones, archivos, notas, etc. Los permisos de grupo también se usan para controlar el acceso a recursos y API de [Microsoft Planner](../api-reference/beta/resources/planner_overview.md).
 
-En el caso de los permisos de la aplicación, se admiten algunas limitaciones para las API. Para obtener más información, vea [Known issues](../concepts/known_issues.md) (Problemas conocidos).
+En el caso de los permisos de la aplicación, se admiten algunas limitaciones para las API. Para obtener más información, vea los [problemas conocidos](../concepts/known_issues.md).
 
-En algunos casos, una aplicación podría necesitar [permisos de directorio](#directory-permissions) para leer algunas propiedades de grupo, como `member` y `memberOf`. Por ejemplo, si un grupo tiene uno o más entidades de servicio [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) como miembros, la aplicación necesitará permisos efectivos para leer las entidades de servicio mediante la concesión de uno de los permisos _Directory.\*_. De lo contrario, Microsoft Graph devolverá un error. (En el caso de los permisos delegados, el usuario que ha iniciado sesión también deberá tener privilegios suficientes en la organización para leer entidades de servicio). Lo mismo se aplica a la propiedad `memberOf`, que puede devolver [administrativeUnits](../api-reference/beta/resources/administrativeunit.md).
+En algunos casos, una aplicación podría necesitar [permisos de directorio](#directory-permissions) para leer algunas propiedades de grupo, como `member` y `memberOf`. Por ejemplo, si un grupo tiene una o más entidades de servicio [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) como miembros, la aplicación necesitará permisos efectivos para leer las entidades de servicio mediante la concesión de uno de los permisos _Directory.\*_. De lo contrario, Microsoft Graph devolverá un error. (En el caso de los permisos delegados, el usuario que ha iniciado sesión también deberá tener privilegios suficientes en la organización para leer entidades de servicio). Lo mismo se aplica a la propiedad `memberOf`, que puede devolver [administrativeUnits](../api-reference/beta/resources/administrativeunit.md).
 
 ### <a name="example-usage"></a>Ejemplos de uso
 #### <a name="delegated"></a>Delegado
@@ -691,7 +695,7 @@ El permiso _User.ReadBasic.All_ restringe el acceso de la aplicación a un conju
 - surname
 - userPrincipalName
 
-Para leer las pertenencias a grupos de un usuario (`memberOf`), la aplicación debe tener el permiso [_Group.Read.All_](#group-permissions) o [_Group.ReadWrite.All_](#group-permissions). Pero si el usuario es también miembro de un [directoryRole](../api-reference/v1.0/resources/directoryrole.md) o [administrativeUnit](../api-reference/beta/resources/administrativeunit.md), la aplicación necesitará permisos efectivos para leer esos recursos. De lo contrario, Microsoft Graph devolverá un error. Esto significa que la aplicación también necesitará [permisos de directorio](#directory-permissions) y, para los permisos delegados, el usuario que ha iniciado sesión también necesitará privilegios suficientes en la organización para obtener acceso a los roles del directorio y las unidades administrativas. 
+Para leer las pertenencias a grupos de un usuario (`memberOf`), la aplicación debe tener el permiso [_Group.Read.All_](#group-permissions) o [_Group.ReadWrite.All_](#group-permissions). Pero si el usuario es también miembro de [directoryRole](../api-reference/v1.0/resources/directoryrole.md) o [administrativeUnit](../api-reference/beta/resources/administrativeunit.md), la aplicación necesitará permisos efectivos para leer esos recursos. De lo contrario, Microsoft Graph devolverá un error. Esto significa que la aplicación también necesitará [permisos de directorio](#directory-permissions) y, para los permisos delegados, el usuario que ha iniciado sesión también necesitará privilegios suficientes en la organización para obtener acceso a los roles del directorio y las unidades administrativas. 
 
 ### <a name="example-usage"></a>Ejemplos de uso
 #### <a name="delegated"></a>Delegado
@@ -713,7 +717,7 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 ## <a name="permission-scenarios"></a>Escenarios de permisos
 
-En esta sección se muestran algunos escenarios comunes destinados a los recursos de [usuario](../api-reference/v1.0/resources/user.md) y [grupo](../api-reference/v1.0/resources/group.md) de una organización. En las tablas se muestran los permisos que una aplicación necesita para poder realizar operaciones específicas requeridas por el escenario. Tenga en cuenta que, en algunos casos, la capacidad de la aplicación de realizar operaciones específicas dependerá de si un permiso es un permiso delegado o de la aplicación. En el caso de los permisos delegados, los permisos efectivos de la aplicación también dependerán de los privilegios del usuario que ha iniciado sesión en la organización. Para obtener más información, vea [Permisos delegados, permisos de la aplicación y permisos efectivos](#delegated-permissions-application-permissions-and-effective-permissions).
+En esta sección se muestran algunos escenarios comunes destinados a los recursos de [usuario](../api-reference/v1.0/resources/user.md) y [grupo](../api-reference/v1.0/resources/group.md) de una organización. En las tablas se muestran los permisos que una aplicación necesita para poder realizar operaciones específicas requeridas por el escenario. Tenga en cuenta que, en algunos casos, la capacidad de la aplicación de realizar operaciones específicas dependerá de si un permiso es un permiso delegado o un permiso de la aplicación. En el caso de los permisos delegados, los permisos efectivos de la aplicación también dependerán de los privilegios del usuario que ha iniciado sesión en la organización. Para obtener más información, vea [Permisos delegados, permisos de la aplicación y permisos efectivos](#delegated-permissions-application-permissions-and-effective-permissions).
 
 ### <a name="access-scenarios-on-the-user-resource"></a>Escenarios de acceso en el recurso User
 

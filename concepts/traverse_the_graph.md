@@ -6,30 +6,131 @@ Además de utilizar la API de Microsoft Graph para leer y escribir datos, puede 
 
 El documento de metadatos ($metadata) se publica en la raíz del servicio. Puede ver el documento de servicio para las versiones v1.0 y beta de la API de Microsoft Graph a través de las siguientes URL.
 
-**Metadatos de la API de Microsoft Graph `v1.0`**
+**Metadatos de Microsoft Graph API v1.0**
 ```
     https://graph.microsoft.com/v1.0/$metadata
 ```
 
-**Metadatos de la API de Microsoft Graph `beta`**
+**Metadatos beta de la API de Microsoft Graph**
 
 ```
     https://graph.microsoft.com/beta/$metadata
 ```
 
-Los metadatos le permiten ver y entender el modelo de datos de Microsoft Graph, incluidos los tipos y conjuntos de entidades, y las enumeraciones que conforman los recursos que se representan en los paquetes de respuesta y solicitud.
+Los metadatos le permiten ver y entender el modelo de datos de Microsoft Graph, incluidos los tipos de entidades, los tipos complejos y las enumeraciones que conforman los recursos que se representan en los paquetes de respuesta y solicitud.
 
-Puede usar los metadatos para comprender las relaciones entre las entidades en Microsoft Graph y establecer las URL que navegarán entre dichas entidades.
+Puede usar los metadatos para conocer las relaciones entre las entidades en Microsoft Graph y establecer las URL que navegarán entre dichas entidades.
 
 Los nombres de recursos de la URL de la ruta de acceso, los parámetros de consulta, así como los parámetros de acción y los valores no distinguen mayúsculas de minúsculas. Sin embargo, los valores que usted asigne, los identificadores de entidad y otros valores codificados en base64 distinguen entre mayúsculas y minúsculas.
 
+## <a name="view-a-collection-of-resources"></a>Ver una colección de recursos
+
+Microsoft Graph permite ver recursos en un arrendatario mediante consultas HTTP GET. La respuesta a la consulta incluye las propiedades de cada recurso, con cada recurso identificado por su identificador. El formato de un identificador de recurso puede ser un GUID y por lo general varía según el tipo de recurso. 
+
+Por ejemplo, se puede obtener la colección de usuarios definidos en un arrendatario:
+
+```no-highlight 
+GET https://graph.microsoft.com/v1.0/users HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+Si es correcto, se obtendrá una respuesta 200 OK que contiene la colección de recursos del [usuario](..\api-reference\v1.0\resources\user.md) en la carga. Cada usuario está identificado por la propiedad **id** y va acompañado de sus propiedades predeterminadas. Para una mayor brevedad, la carga que se muestra a continuación se trunca.
+
+```no-highlight 
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "value":[
+    {
+      "id":"f71f1f74-bf1f-4e6b-b266-c777ea76e2c7",
+      "businessPhones":[
+
+      ],
+      "displayName":"CIE Administrator",
+      "givenName":"CIE",
+      "jobTitle":null,
+      "mail":"admin@contoso.onmicrosoft.com",
+      "mobilePhone":"+1 3528700812",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Administrator",
+      "userPrincipalName":"admin@contoso.onmicrosoft.com"
+    },
+    {
+      "id":"d66f2902-9d12-4ff8-ab01-21ec6706079f",
+      "businessPhones":[
+
+      ],
+      "displayName":"Alan Steiner",
+      "givenName":"Alan",
+      "jobTitle":"VP Corporate Marketing",
+      "mail":"alans@contoso.onmicrosoft.com",
+      "mobilePhone":null,
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Steiner",
+      "userPrincipalName":"alans@contoso.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+Microsoft Graph también permite ver las colecciones mediante la exploración de las relaciones entre recursos. Por ejemplo, a través de la propiedad de navegación **mailFolders** de un usuario, se puede realizar una consulta en la colección de recursos [mailFolder](..\api-reference\v1.0\resources\mailfolder.md) del buzón de correo del usuario:
+
+```no-highlight 
+GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+Si es correcta, se obtendrá una respuesta 200 OK que contiene la colección de recursos de [mailFolder](..\api-reference\v1.0\resources\user.md) en la carga. Cada **mailFolder** está identificada por la propiedad **id** y va acompañada de sus propiedades predeterminadas. Para una mayor brevedad, la carga que se muestra a continuación se trunca.
+
+```no-highlight 
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('16f5a7b6-5a15-4568-aa5a-31bb117e9967')/mailFolders",
+  "value":[
+    {
+      "id":"AAMkADRm9AABDGisXAAA=",
+      "displayName":"Archive",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":0,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    },
+    {
+      "id":"AQMkADRm0AAAIBXAAAAA==",
+      "displayName":"Sales reports",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":0,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    },
+    {
+      "id":"AAMkADRCxI9AAAT6CAIAAA=",
+      "displayName":"Conversation History",
+      "parentFolderId":"AQMkADRmZWj0AAAIBCAAAAA==",
+      "childFolderCount":1,
+      "unreadItemCount":0,
+      "totalItemCount":0
+    }
+  ]
+}
+```
+
+
+
+
 ## <a name="view-a-specific-resource-from-a-collection-by-id"></a>Ver un recurso específico de una colección por id.
 
-Para ver la información sobre un usuario, se obtiene la colección de todos los usuarios y se utiliza una solicitud GET de HTTPS para obtener un usuario específico por id. de usuario. Para una entidad `User`, se puede usar como identificador la propiedad `id` o la propiedad `userPrincipalName`. En la solicitud de ejemplo siguiente se usa el valor `userPrincipalName` como identificador del usuario. 
+Continuando con el ejemplo de **user**, si se quiere ver la información sobre un usuario, se utiliza una solicitud HTTPS GET para obtener un usuario específico por id. de usuario. Para una entidad **user**, el identificador puede ser la propiedad **id** o la propiedad **userPrincipalName**. En la solicitud de ejemplo siguiente se usa el valor **userPrincipalName** como identificador del usuario. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 Si es correcto, se obtendrá una respuesta 200 OK que contiene la representación de recursos del usuario en la carga, como se muestra.
@@ -58,7 +159,7 @@ Para recuperar tan solo los datos biográficos del usuario, como la descripción
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 La respuesta correcta devuelve el estado 200 OK y una carga en el formato siguiente, como se muestra.
@@ -79,14 +180,14 @@ content-length: 169
     ]
 }
 ```
-Aquí, en lugar de todo el conjunto de propiedades de la entidad `user`, solo se devuelven las propiedades básicas `aboutMe`, `displayName` y `skills`.
+Aquí, en lugar de todos los conjuntos de propiedades de la entidad **user**, solo se devuelven las propiedades básicas **aboutMe**, **displayName** y **skills**.
 
-## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>Lea las propiedades específicas de los recursos en una colección
+## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>Leer las propiedades específicas de los recursos de una colección
 Además de leer las propiedades específicas de un único recurso, también puede aplicar el parámetro de consulta similar [$select](query_parameters.md) a una colección para obtener de nuevo todos los recursos en la colección con tan solo las propiedades específicas en cada uno. Por ejemplo, para consultar el nombre de los elementos de la unidad del usuario que ha iniciado sesión, se puede enviar la siguiente solicitud HTTPS GET:
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 La respuesta correcta devuelve un código de estado 200 OK y una carga que contiene solamente los nombres y los tipos de los archivos compartidos, tal como se muestra en el ejemplo siguiente:
@@ -112,11 +213,11 @@ La respuesta correcta devuelve un código de estado 200 OK y una carga que conti
 ```
 
 ## <a name="traverse-from-one-resource-to-another-via-relationship"></a>Recorrido desde un recurso a otro a través de la relación
-Un administrador mantiene una relación `directReports` con el resto de los usuarios a su cargo. Para consultar la lista de relaciones directas de un usuario, se puede usar la siguiente solicitud HTTPS GET para navegar hasta el destino deseado mediante un recorrido de relaciones. 
+Un administrador mantiene una relación **directReports** con el resto de los usuarios a su cargo. Para consultar la lista de relaciones directas de un usuario, se puede usar la siguiente solicitud HTTPS GET para navegar hasta el destino deseado mediante un recorrido de relaciones. 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
 La respuesta correcta devuelve el estado 200 OK y una carga en el formato siguiente, como se muestra.
@@ -137,12 +238,12 @@ content-length: 152
 }
 ```
 
-De forma similar, se puede seguir una relación para ir a los recursos relacionados. Por ejemplo, la relación `user => messages` permite un recorrido desde un usuario de Azure Active Directory (Azure AD) hasta un conjunto de mensajes de correo de Outlook. En el ejemplo siguiente se muestra cómo realizar esta acción en una llamada de la API de REST:
+De forma similar, se puede seguir una relación para ir a los recursos relacionados. Por ejemplo, la relación usuario-mensajes permite un recorrido desde un usuario de Azure Active Directory (Azure AD) hasta un conjunto de mensajes de correo de Outlook. En el ejemplo siguiente se muestra cómo realizar esta acción en una llamada de la API de REST:
 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization : Bearer {access_token}
 ```
 
     
@@ -189,7 +290,7 @@ Microsoft Graph también es compatible con _funciones_ para manipular los recurs
 
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
-authorization: bearer <access_token>
+authorization: bearer {access_token}
 content-type: application/json
 content-length: 96
 
@@ -225,7 +326,7 @@ Puede ver todas las funciones que están disponibles en los metadatos. Aparecen 
 
 ¿Le gustan la potencia y la facilidad de los SDK? Aunque siempre puede utilizar la API de REST para llamar a Microsoft Graph, hemos proporcionado SDK para muchas plataformas populares. Para explorar las SDK que están disponibles, consulte [Ejemplos de código y SDK](https://graph.microsoft.io/en-us/code-samples-and-sdks).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Usar la API de Microsoft Graph](use_the_api.md)
 - [Obtener tokens de autenticación](auth_overview.md)

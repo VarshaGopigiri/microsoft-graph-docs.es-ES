@@ -10,9 +10,11 @@ Puede usar PATCH o PUT para esta operación en la versión 1.0.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-- Foto de perfil del **user** - *User.ReadWrite* que inició sesión
-- Foto de perfil de un **group** - *Group.ReadWrite.All*
-- Foto de un **contact** - *Contacts.ReadWrite*
+- Foto de perfil del **usuario** que inició sesión - *User.ReadWrite*, *User.ReadWrite.All*
+- Foto de perfil de un **grupo** - *Group.ReadWrite.All*
+- Foto de un **contacto** - *Contacts.ReadWrite*
+
+> **Nota** Para actualizar la foto de un usuario de la organización, la aplicación debe tener el permiso de aplicación User.ReadWrite.All y llamar a esta API bajo su propia identidad, no en nombre de un usuario. Para obtener más información, consulte cómo [obtener acceso sin un usuario que ha iniciado sesión](../../../concepts/auth_v2_service.md).
 
 ## <a name="http-request-to-update-the-photo"></a>Solicitud HTTP para actualizar la foto
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +39,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
-| Tipo de contenido  | image/jpeg. Obligatorio.  |
+| Content-Type  | image/jpeg. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, incluya los datos binarios de la foto.
