@@ -1,9 +1,11 @@
-# <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
+<a id="plannertaskdetails-resource-type" class="xliff"></a>
+# Tipo de recurso plannerTaskDetails
 
 El recurso **plannerTaskDetails** representa la información adicional de una tarea. Cada objeto [task](plannertask.md) tiene un objeto details.
 
 
-### <a name="methods"></a>Métodos
+<a id="methods" class="xliff"></a>
+## Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
@@ -11,21 +13,23 @@ El recurso **plannerTaskDetails** representa la información adicional de una ta
 |[Update](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Actualizar el objeto **plannerTaskDetails**. |
 
 
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+<a id="properties" class="xliff"></a>
+## Propiedades
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Colección de elementos de la lista de comprobación de la tarea.|
-|description|String|Descripción de la tarea|
-|id|String| Solo lectura. Id. de los detalles de la tarea. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
+|description|Cadena|Descripción de la tarea|
+|id|Cadena| Solo lectura. Id. de los detalles de la tarea. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
 |previewType|string|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|La colección de referencias de la tarea.|
 
-### <a name="relationships"></a>Relaciones
+<a id="relationships" class="xliff"></a>
+## Relaciones
 Ninguno
 
 
-### <a name="json-representation"></a>Representación JSON
-
+<a id="json-representation" class="xliff"></a>
+## Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {

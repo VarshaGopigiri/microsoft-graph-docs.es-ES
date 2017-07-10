@@ -1,28 +1,32 @@
-# <a name="pivottable-resource-type"></a>Tipo de recurso PivotTable
+<a id="pivottable-resource-type" class="xliff"></a>
+# Tipo de recurso PivotTable
 
 Representa una tabla dinámica de Excel.
 
-### <a name="methods"></a>Métodos
+<a id="methods" class="xliff"></a>
+## Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get workbookPivotTable](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Lee las propiedades y relaciones del objeto workbookPivotTable.|
-|[Refresh](../api/workbookpivottable_refresh.md)|Ninguno|Actualiza la tabla dinámica.    |
+|[Refresh](../api/workbookpivottable_refresh.md)|Ninguno|Actualiza la tabla dinámica. |
 |[Refreshall](../api/workbookpivottable_refreshall.md)|Ninguno|Actualizar todas las tablas de una hoja de cálculo. Tenga en cuenta que esta acción sólo está disponible en la colección de tabla dinámica.|
 
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+<a id="properties" class="xliff"></a>
+## Propiedades
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| ID la tabla dinámica.    Solo lectura.|
+|id|Cadena| ID la tabla dinámica.   Solo lectura.|
 |name|String|Nombre de la tabla dinámica.    |
 
-### <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+<a id="relationships" class="xliff"></a>
+## Relaciones
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| La hoja de cálculo que contiene la tabla dinámica actual. Solo lectura.    |
+|worksheet|[worksheet](worksheet.md)| La hoja de cálculo que contiene la tabla dinámica actual. Solo lectura.   |
 
-### <a name="json-representation"></a>Representación JSON
-
+<a id="json-representation" class="xliff"></a>
+## Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {
