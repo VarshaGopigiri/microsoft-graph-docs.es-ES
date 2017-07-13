@@ -1,38 +1,16 @@
-# <a name="update-domain"></a>Actualizar dominio
-
-Actualiza las propiedades del objeto del dominio.
-
-> **Importante:** Solo se pueden actualizar los dominios verificados.
-
-### <a name="prerequisites"></a>Requisitos previos
-
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Domain.ReadWrite.All* o *Directory.AccessAsUser.All*
-
-### <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /domains/{id}
-```
-
-> En {id}, especifique el dominio con su nombre completo.
-
-### <a name="request-headers"></a>Encabezados de solicitud
-
-| Nombre       | Descripción|
-|:-----------|:-----------|
-| Authorization  | {token} de portador. Obligatorio. |
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>Cuerpo de la solicitud
+<span data-ttu-id="260d6-p102">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que quiera actualizar. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud conservarán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para un rendimiento óptimo, incluya solo los valores modificados.</span><span class="sxs-lookup"><span data-stu-id="260d6-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que quiera actualizar. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud conservarán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para un rendimiento óptimo, incluya solo los valores modificados.
 
-### <a name="response"></a>Respuesta
+### <span data-ttu-id="260d6-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="260d6-120">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`, pero no el cuerpo de la respuesta.
+<span data-ttu-id="260d6-121">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`, pero no el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="260d6-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-### <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+### <span data-ttu-id="260d6-122">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="260d6-122">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="260d6-123">Solicitud</span><span class="sxs-lookup"><span data-stu-id="260d6-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -51,7 +29,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Respuesta
+##### <span data-ttu-id="260d6-124">Respuesta</span><span class="sxs-lookup"><span data-stu-id="260d6-124">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

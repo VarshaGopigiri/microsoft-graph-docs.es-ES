@@ -1,39 +1,4 @@
-# <a name="list-schemaextensions"></a>Enumerar schemaExtensions
-
-Obtenga una lista de objetos [schemaExtension](../resources/schemaextension.md) creada por cualquier aplicación de su propiedad en el inquilino actual (que puede estar **InDevelopment** (en desarrollo), **Available** (disponible) o **Deprecated** (en desuso) y el resto de extensiones de esquema propiedad de las otras aplicaciones que estén marcadas como **Available**. 
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.Read.All* o *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /schemaExtensions
-```
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
-
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre      |Descripción|
-|:----------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
-| Content-Type   | application/json | 
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-No proporcione un cuerpo de solicitud para este método.
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [schemaExtension](../resources/schemaextension.md) en el cuerpo de la respuesta.
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-En el ejemplo siguiente se muestra cómo buscar una extensión accesible concreta entre todas las demás filtrando por su **id.** único. 
-<!-- {
-  "blockType": "request",
-  "name": "get_schemaextensions"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
-```
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="e5eef-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="e5eef-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
@@ -67,10 +32,11 @@ Content-length: 274
 }
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <span data-ttu-id="e5eef-127">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="e5eef-127">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="e5eef-128">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="e5eef-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="e5eef-129">Agregar datos personalizados a los grupos mediante extensiones de esquema</span><span class="sxs-lookup"><span data-stu-id="e5eef-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

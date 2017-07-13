@@ -1,50 +1,12 @@
-# <a name="event-accept"></a>event: accept
-
-Acepta el evento especificado.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.ReadWrite*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/accept
-POST /users/{id | userPrincipalName}/events/{id}/accept
-POST /groups/{id}/events/{id}/accept
-
-POST /me/calendar/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
-POST /groups/{id}/calendar/events/{id}/accept
-
-POST /me/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
-
-POST /me/calendargroup/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/accept
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|comment|String|Texto incluido en la respuesta. Opcional.|
-|sendResponse|Boolean|`true` si se va a enviar una respuesta al organizador; de lo contrario, `false`. Opcional. El valor predeterminado es `true`.|
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="6aa2d-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6aa2d-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="6aa2d-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6aa2d-135">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="6aa2d-136">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="6aa2d-136">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="6aa2d-137">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6aa2d-137">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="6aa2d-138">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6aa2d-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_accept"
@@ -60,8 +22,9 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="6aa2d-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6aa2d-139">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="6aa2d-140">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6aa2d-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

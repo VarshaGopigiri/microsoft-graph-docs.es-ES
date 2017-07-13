@@ -1,38 +1,12 @@
-# <a name="filter-apply"></a>Filter: apply
-
-Aplica los criterios de filtro especificados en la columna especificada.
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
-
-
-## <a name="request-body"></a>Cuerpo de solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|criterios|FilterCriteria|Criterios que se aplicarán.|
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="397f0-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="397f0-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="397f0-124">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="397f0-124">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="397f0-125">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="397f0-125">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="397f0-126">Solicitud</span><span class="sxs-lookup"><span data-stu-id="397f0-126">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="397f0-127">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="397f0-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_apply"
@@ -61,8 +35,9 @@ Content-length: 321
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="397f0-128">Respuesta</span><span class="sxs-lookup"><span data-stu-id="397f0-128">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="397f0-129">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="397f0-129">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

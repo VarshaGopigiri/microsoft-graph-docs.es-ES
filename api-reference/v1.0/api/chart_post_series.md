@@ -1,48 +1,4 @@
-# <a name="create-chartseries"></a>Create ChartSeries
-
-Use esta API para crear un objeto ChartSeries.
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
-
-
-## <a name="request-body"></a>Cuerpo de solicitud
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ChartSeries](../resources/chartseries.md).
-
-
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [ChartSeries](../resources/chartseries.md) en el cuerpo de la respuesta.
-
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
-<!-- {
-  "blockType": "request",
-  "name": "create_chartseries_from_chart"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series
-Content-type: application/json
-Content-length: 26
-
-{
-  "name": "name-value"
-}
-```
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ChartSeries](../resources/chartseries.md).
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="13719-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="13719-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",

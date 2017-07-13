@@ -1,80 +1,21 @@
-# <a name="accessing-shared-driveitems"></a>Acceder a objetos DriveItem compartidos
-
-Acceda a un objeto [DriveItem](../resources/driveitem.md) compartido o a una colección de elementos compartidos mediante el uso de un **shareId** o una dirección URL para compartir.
-
-Para usar una dirección URL para compartir con esta API, la aplicación debe [transformar la dirección URL en un token para compartir](#transform-a-sharing-url).
-
-## <a name="prerequisites"></a>Requisitos previos
-
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-  * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /shares/{sharingIdOrUrl}
-```
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un recurso [sharedDriveItem](../resources/shareddriveitem.md) en el cuerpo de la respuesta.
-
-## <a name="example"></a>Ejemplo
-
-##### <a name="request"></a>Solicitud
-
-Este es un ejemplo de la solicitud para recuperar un elemento compartido:
-
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
-```
-##### <a name="response"></a>Respuesta
-
-Aquí tiene un ejemplo de la respuesta.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "B64397C8-07AE-43E4-920E-32BFB4331A5B",
-  "name": "contoso project.docx",
-  "owner": {
-    "user": {
-      "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
-      "displayName": "Ryan Gregg"
-    }
-  }
-}
-```
-
-## <a name="access-the-shared-item-directly"></a>Acceder directamente al elemento compartido
+<span data-ttu-id="eedbb-p101">Mientras que [**SharedDriveItem**](../resources/shareddriveitem.md) contiene alguna información útil, la mayoría de las aplicaciones querrán acceder directamente al objeto [DriveItem](../resources/driveitem.md) compartido. El recurso **SharedDriveItem** incluye un **root** y relaciones de **items** que pueden acceder al contenido del ámbito del elemento compartido.</span><span class="sxs-lookup"><span data-stu-id="eedbb-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
 Mientras que [**SharedDriveItem**](../resources/shareddriveitem.md) contiene alguna información útil, la mayoría de las aplicaciones querrán acceder directamente al objeto [DriveItem](../resources/driveitem.md) compartido. El recurso **SharedDriveItem** incluye un **root** y relaciones de **items** que pueden acceder al contenido del ámbito del elemento compartido.
 
-### <a name="exmaple-single-file"></a>Ejemplo (archivo único)
+### <span data-ttu-id="eedbb-122">Ejemplo (archivo único)</span><span class="sxs-lookup"><span data-stu-id="eedbb-122">Example (single file)</span></span>
+<a id="example-single-file" class="xliff"></a>
 
-##### <a name="request"></a>Solicitud
+##### <span data-ttu-id="eedbb-123">Solicitud</span><span class="sxs-lookup"><span data-stu-id="eedbb-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Al solicitar la relación **root**, se devolverá el objeto **DriveItem** compartido.
+<span data-ttu-id="eedbb-124">Al solicitar la relación **root**, se devolverá el objeto **DriveItem** compartido.</span><span class="sxs-lookup"><span data-stu-id="eedbb-124">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <a name="response"></a>Respuesta
+##### <span data-ttu-id="eedbb-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="eedbb-125">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -89,17 +30,20 @@ Content-Type: application/json
 }
 ```
 
-### <a name="exmaple-shared-folder"></a>Ejemplo (carpeta compartida)
+### <span data-ttu-id="eedbb-126">Ejemplo (carpeta compartida)</span><span class="sxs-lookup"><span data-stu-id="eedbb-126">Example (shared folder)</span></span>
+<a id="example-shared-folder" class="xliff"></a>
 
-##### <a name="request"></a>Solicitud
+##### <span data-ttu-id="eedbb-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="eedbb-127">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Al solicitar la relación **root** y expandir la colección **children**, se devolverá el objeto **DriveItem** compartido junto con los archivos de la carpeta compartida.
+<span data-ttu-id="eedbb-128">Al solicitar la relación **root** y expandir la colección **children**, se devolverá el objeto **DriveItem** compartido junto con los archivos de la carpeta compartida.</span><span class="sxs-lookup"><span data-stu-id="eedbb-128">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <a name="response"></a>Respuesta
+##### <span data-ttu-id="eedbb-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="eedbb-129">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -128,19 +72,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>Transformar una dirección URL para compartir
+## <span data-ttu-id="eedbb-130">Transformar una dirección URL para compartir</span><span class="sxs-lookup"><span data-stu-id="eedbb-130">Transform a sharing URL</span></span>
+<a id="transform-a-sharing-url" class="xliff"></a>
 
-Para acceder a una dirección URL para compartir mediante la API **shares**, la dirección URL debe transformarse en un token para compartir.
+<span data-ttu-id="eedbb-131">Para acceder a una dirección URL para compartir mediante la API **shares**, la dirección URL debe transformarse en un token para compartir.</span><span class="sxs-lookup"><span data-stu-id="eedbb-131">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-Para transformar una dirección URL en un token para compartir:
+<span data-ttu-id="eedbb-132">Para transformar una dirección URL en un token para compartir:</span><span class="sxs-lookup"><span data-stu-id="eedbb-132">To transform a URL into a sharing token:</span></span>
 
-1. Codifique en base64 la dirección URL para compartir.
-2. Convierta los datos codificados en base64 en [formato base64url sin rellenar](https://en.wikipedia.org/wiki/Base64); para ello:
-  1. Quite los caracteres `=` finales de la cadena
-  2. Reemplace los caracteres inseguros de dirección URL con un carácter equivalente; reemplace `/` con `_` y `+` con `-`.
-3. Anexe `u!` al principio de la cadena.
+1. <span data-ttu-id="eedbb-133">Codifique en base64 la dirección URL para compartir.</span><span class="sxs-lookup"><span data-stu-id="eedbb-133">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="eedbb-134">Convierta los datos codificados en base64 en [formato base64url sin rellenar](https://en.wikipedia.org/wiki/Base64); para ello:</span><span class="sxs-lookup"><span data-stu-id="eedbb-134">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="eedbb-135">Quite los caracteres `=` finales de la cadena</span><span class="sxs-lookup"><span data-stu-id="eedbb-135">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="eedbb-136">Reemplace los caracteres inseguros de dirección URL por un carácter equivalente; reemplace `/` por `_` y `+` por `-`.</span><span class="sxs-lookup"><span data-stu-id="eedbb-136">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="eedbb-137">Anexe `u!` al principio de la cadena.</span><span class="sxs-lookup"><span data-stu-id="eedbb-137">Append `u!` to the beginning of the string.</span></span>
 
-Por ejemplo, el siguiente método C# transforma una cadena de entrada en un token para compartir:
+<span data-ttu-id="eedbb-138">Por ejemplo, el siguiente método C# transforma una cadena de entrada en un token para compartir:</span><span class="sxs-lookup"><span data-stu-id="eedbb-138">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {

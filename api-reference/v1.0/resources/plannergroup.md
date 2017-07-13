@@ -1,30 +1,8 @@
-<a id="plannergroup-resource-type" class="xliff"></a>
-# Tipo de recurso plannerGroup
+<span data-ttu-id="fa3c1-p103">Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) propiedad del grupo.</span><span class="sxs-lookup"><span data-stu-id="fa3c1-p103">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) propiedad del grupo.|
 
-El recurso **plannerGroup** proporciona acceso a los recursos Planner de un [grupo](group.md). No contiene ninguna propiedad utilizable.
-
-<a id="methods" class="xliff"></a>
-## Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Enumerar planes](../api/plannergroup_list_plans.md) |Colección [plannerPlan](plannerplan.md)| Obtenga una colección de objetos **plannerPlan**.|
-
-<a id="properties" class="xliff"></a>
-## Propiedades
-| Propiedad     | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Identificador del **plannerGroup**|
-
-<a id="relationships" class="xliff"></a>
-## Relaciones
-| Relación | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|plans|Colección [plannerPlan](plannerplan.md)| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) propiedad del grupo.|
-
+## <span data-ttu-id="fa3c1-128">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="fa3c1-128">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Representación JSON
-Aquí tiene una representación JSON del recurso.
+<span data-ttu-id="fa3c1-129">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="fa3c1-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,36 +1,12 @@
-# <a name="conversationthread-reply"></a>conversationThread: reply
-
-Responde a un hilo de una conversación de grupo y agrega una nueva publicación a la misma. Puede especificar la conversación primaria en la solicitud, o bien, especificar solo el hilo sin la conversación primaria.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Group.ReadWrite.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/threads/{id}/reply
-POST /groups/{id}/conversations/{id}/threads/{id}/reply
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor |
-|:---------------|:--------|
-| Authorization  | {token} de portador. Obligatorio.  |
-| Tipo de contenido  | application/json. Obligatorio.  |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|La nueva publicación con que se responde.|
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="9d97c-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9d97c-p104">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="9d97c-127">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9d97c-127">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="9d97c-128">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="9d97c-128">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="9d97c-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9d97c-129">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="9d97c-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9d97c-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "conversationthread_reply"
@@ -50,8 +26,9 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="9d97c-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9d97c-131">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="9d97c-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9d97c-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

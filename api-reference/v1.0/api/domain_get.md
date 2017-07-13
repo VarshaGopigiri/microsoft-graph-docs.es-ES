@@ -1,46 +1,4 @@
-# <a name="get-domain"></a>Obtener dominio
-
-Recupere las propiedades y las relaciones del objeto domain.
-
-### <a name="prerequisites"></a>Requisitos previos
-
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.Read.All* o *Domain.ReadWrite.All*
-
-### <a name="http-request"></a>Solicitud HTTP
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /domains/{id}
-```
-
-> En {id}, especifique el dominio con su nombre completo.
-
-### <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-
-Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
-
-### <a name="request-headers"></a>Encabezados de solicitud
-
-| Nombre      |Descripción|
-|:----------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>Cuerpo de la solicitud
-No proporcione un cuerpo de solicitud para este método.
-### <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [domain](../resources/domain.md) en el cuerpo de la respuesta.
-### <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-
-<!-- {
-  "blockType": "request",
-  "name": "get_domain"
-}-->
-```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com
-```
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="f0179-p102">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="f0179-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",

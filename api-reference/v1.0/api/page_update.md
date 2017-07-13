@@ -1,32 +1,10 @@
-# <a name="update-page"></a>Actualizar página
-
-Actualice el contenido de una página de OneNote.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:   
-
-Notes.ReadWrite o Notes.ReadWrite.All 
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/onenote/pages/{id}/content
-PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
-PATCH /groups/{id}/onenote/pages/{id}/content
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string | `application/json` |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-En el cuerpo de la solicitud, proporcione una matriz de objetos [patchContentCommand](../resources/patchcontentcommand.md) que representen los cambios a la página. Para obtener más información y ejemplos, consulte <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Actualizar páginas de OneNote</a>.
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="db8f0-p103">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.  No se devuelven datos JSON para una solicitud PATCH.</span><span class="sxs-lookup"><span data-stu-id="db8f0-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.  No se devuelven datos JSON para una solicitud PATCH.
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="db8f0-123">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="db8f0-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="db8f0-124">Solicitud</span><span class="sxs-lookup"><span data-stu-id="db8f0-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="db8f0-125">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="db8f0-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_page"
@@ -50,8 +28,9 @@ Content-length: 312
   }
 ]
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="db8f0-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="db8f0-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="db8f0-127">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="db8f0-127">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,81 +1,10 @@
-# <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrar una aplicación con el punto de conexión v2.0 de Azure AD
-
-La aplicación debe estar registrada en Azure AD. Registrar la aplicación establece un identificador de aplicación único y otros valores que la aplicación utiliza para autenticarse con Azure AD y obtener tokens. En el caso del punto de conexión v2.0 de Azure AD, registre su aplicación con el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com). Puede usar una cuenta de Microsoft o una cuenta profesional o educativa para registrar la aplicación. Dependiendo del tipo de aplicación que esté desarrollando, debe copiar una o varias propiedades durante el registro para utilizarlas al configurar la autenticación y autorización para la aplicación. 
-
-
-> **Nota:** Este artículo trata principalmente sobre cómo registrar aplicaciones con el punto de conexión v.2.0 de Azure AD. Para obtener información acerca de cómo registrar la aplicación con el punto de conexión de Azure AD, consulte las [consideraciones del punto de conexión de Azure AD](#azure-ad-endpoint-considerations).
-> 
-> Además, tenga en cuenta que si ya ha registrado aplicaciones en el Portal de administración de Microsoft Azure, esas aplicaciones no aparecerán en el Portal de registro de aplicaciones. Administre esas aplicaciones en el Portal de administración de Azure. 
-
-
-La captura de pantalla siguiente muestra un registro de la aplicación web de ejemplo que se ha configurado con una contraseña y un flujo implícito. ![Registro de aplicación web con contraseña y concesión implícita](./images/v2-web-registration.png).
-
-Para registrar la aplicación, siga estos pasos; asegúrese de copiar los valores indicados para utilizarlos cuando se configure la autorización para la aplicación:
-
-1. Inicie sesión en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/).
-   
-    Puede iniciar sesión con una cuenta de Microsoft o con una cuenta profesional o educativa. 
-
-2. Seleccione **Agregar una aplicación**.
-    > Nota: Si inició la sesión con una cuenta profesional o educativa, seleccione el botón **Agregar una aplicación** para **Aplicaciones convergidas**. 
-
-3. Escriba un nombre para la aplicación y seleccione **Crear aplicación**.
-
-    Se muestra la página de registro, indicando las propiedades de la aplicación.
-
-4. Copie el identificador de la aplicación. Se trata del identificador único para su aplicación.
-
-    Deberá usar el identificador de la aplicación para configurar la aplicación.
-
-5. En **Plataformas**, elija **Agregar plataforma** y seleccione la plataforma adecuada para su aplicación:
-    
-    **Para aplicaciones móviles o nativas**:
-
-    1. Seleccione **Aplicación nativa**.
-
-    2. Copie el valor **URI de redireccionamiento integrado**. Tendrá que configurar la aplicación.
-
-        El URI de redireccionamiento es un URI único que se proporciona para cada aplicación con el fin de garantizar que los mensajes enviados a ese URI solo se envían a esa aplicación. 
-
-    **Para aplicaciones web**:
-
-    1. Seleccione **Web**.
-
-    2. Dependiendo del tipo de flujo de autenticación que se utilice, tendrá que asegurarse de que la casilla **Permitir flujo implícito** está activada. 
-        
-        La opción **Permitir flujo implícito** habilita el OpenID Connect híbrido y los flujos implícitos. El flujo híbrido permite que la aplicación reciba tanto la información de inicio de sesión (el token de id.) como los artefactos (en este caso, un código de autorización) que la aplicación usa para obtener un token de acceso. El flujo híbrido es el flujo predeterminado utilizado por el software intermedio OpenID Connect de OWIN. Para aplicaciones de página única (SPA), el flujo implícito permite a la aplicación recibir información de inicio de sesión y el token de acceso. 
-
-    3. Especifique una URL de redireccionamiento.
-        
-        La URL de redireccionamiento es la ubicación de la aplicación a la que el punto de conexión v2.0 de Azure AD llama una vez que ha procesado la solicitud de autenticación.
-
-    4. En **Secretos de aplicación**, seleccione **Generar nueva contraseña**. Copie el secreto de aplicación del cuadro de diálogo **Nueva contraseña generada**.
-        > **Importante** Debe copiar el secreto de la aplicación antes de cerrar el cuadro de diálogo **Nueva contraseña generada**. Después de cerrar el cuadro de diálogo, no se puede recuperar el secreto. 
-            
-6. Elija **Guardar**.
-
-
-La tabla siguiente muestra las propiedades que necesita para configurar y copiar con distintos tipos de aplicaciones. _Asignado_ significa que debe usar el valor asignado por Azure AD.
-
-
-| Tipo de aplicación | Plataforma | Id. de la aplicación | Secreto de aplicación | URI o URL de redireccionamiento | Flujo implícito 
-| --- | --- | --- | --- | --- | --- |
-| Nativas o móviles | Nativas | Asignado  | No | Asignado | No |
-| Aplicación web | Web | Asignado | Sí | Sí | Opcional <br/>El software intermedio Open ID Connect utiliza el flujo híbrido predeterminado (Sí) | 
-| Aplicación de página única (SPA) | Web | Asignado | Sí | Sí | Sí <br/> Los SPA usan el flujo implícito de Open ID Connect |
-| Servicio o demonio | Web | Asignado | Sí | Sí | No |
-
-Las aplicaciones que proporcionan una experiencia de consentimiento del administrador podrían necesitar una dirección URL de redireccionamiento adicional para que Azure AD devuelva la respuesta.
-
-Para obtener más información sobre el Portal de registro de la aplicación y las propiedades que puede configurar para su aplicación, consulte [Referencia del registro de aplicaciones](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
-
-## <a name="azure-ad-endpoint-considerations"></a>Consideraciones sobre el punto de conexión de Azure AD
+<span data-ttu-id="1259d-p111">[Azure Portal](https://aka.ms/aadapplist) se usa para registrar la aplicación para el punto de conexión de Azure AD. Se configuran las mismas propiedades básicas que con el punto de conexión v2.0, por ejemplo, identificador de la aplicación, secreto de la aplicación y URI o URL de redireccionamiento. Sin embargo, existen algunas diferencias importantes a tener en cuenta:</span><span class="sxs-lookup"><span data-stu-id="1259d-p111">You use the [Azure portal](https://aka.ms/aadapplist) to register your app for the Azure AD endpoint. You configure the same basic properties like Application Id, Application Secret, and Redirect URI/URL, as you would for the v2.0 endpoint; however, there are some important differences to be aware of:</span></span>
 
 [Azure Portal](https://aka.ms/aadapplist) se usa para registrar la aplicación para el punto de conexión de Azure AD. Se configuran las mismas propiedades básicas que con el punto de conexión v2.0, por ejemplo, identificador de la aplicación, secreto de la aplicación y URI o URL de redireccionamiento. Sin embargo, existen algunas diferencias importantes a tener en cuenta: 
 
-- Solo puede utilizar una cuenta de profesional o educativa para registrar una aplicación.
-- La aplicación requerirá un identificador de aplicación diferente para cada plataforma.
-- Si la aplicación es multiinquilino, debe configurarla explícitamente para que sea multiinquilino en el portal.
-- Debe configurar previamente todos los permisos (incluidos los permisos de Microsoft Graph) que su aplicación necesita en el portal. 
+- <span data-ttu-id="1259d-182">Solo puede utilizar una cuenta de profesional o educativa para registrar una aplicación.</span><span class="sxs-lookup"><span data-stu-id="1259d-182">You can only use a work or school account to register an app.</span></span>
+- <span data-ttu-id="1259d-183">La aplicación requerirá un identificador de aplicación diferente para cada plataforma.</span><span class="sxs-lookup"><span data-stu-id="1259d-183">Your app will require a different Application Id for each platform.</span></span>
+- <span data-ttu-id="1259d-184">Si la aplicación es multiinquilino, debe configurarla explícitamente para que sea multiinquilino en el portal.</span><span class="sxs-lookup"><span data-stu-id="1259d-184">If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the portal.</span></span>
+- <span data-ttu-id="1259d-185">Debe configurar previamente todos los permisos (incluidos los permisos de Microsoft Graph) que su aplicación necesita en el portal.</span><span class="sxs-lookup"><span data-stu-id="1259d-185">You must pre-configure all the permissions (including Microsoft Graph permissions) that your app needs at the portal.</span></span> 
 
-Para obtener instrucciones sobre cómo usar Azure Portal para agregar una aplicación, consulte [Integración de aplicaciones con Azure Active Directory: Agregar una aplicación](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
+<span data-ttu-id="1259d-186">Para obtener instrucciones sobre cómo usar Azure Portal para agregar una aplicación, consulte [Integración de aplicaciones con Azure Active Directory: Agregar una aplicación](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).</span><span class="sxs-lookup"><span data-stu-id="1259d-186">For guidance on using the Azure portal to add an app, see [Integrating applications with Azure Active Directory: Adding an application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).</span></span>

@@ -1,33 +1,12 @@
-# <a name="filter-clear"></a>Filter: clear
-
-Borra el filtro de la columna especificada.
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
-
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="87c22-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="87c22-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="87c22-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="87c22-117">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="87c22-118">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="87c22-118">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="87c22-119">Solicitud</span><span class="sxs-lookup"><span data-stu-id="87c22-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="87c22-120">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="87c22-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_clear"
@@ -36,8 +15,9 @@ Aquí tiene un ejemplo de la solicitud.
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="87c22-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="87c22-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="87c22-122">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="87c22-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

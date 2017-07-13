@@ -1,43 +1,4 @@
-# <a name="create-calendar"></a>Create Calendar
-
-Use esta API para crear un calendario.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.ReadWrite*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/calendars
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor |
-|:---------------|:--------|
-| Authorization  | {token} de portador. Obligatorio.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, especifique una representación JSON del objeto [calendar](../resources/calendar.md).
-
-
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [calendar](../resources/calendar.md) en el cuerpo de la respuesta.
-
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
-<!-- {
-  "blockType": "request",
-  "name": "create_calendar_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/calendars
-Content-type: application/json
-
-{
-  "name": "Volunteer"
-}
-```
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [calendar](../resources/calendar.md).
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="c6e31-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="c6e31-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",

@@ -1,39 +1,12 @@
-# <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
-
-Establece el formato de relleno de un elemento de gráfico en un color uniforme.
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
-
-
-## <a name="request-body"></a>Cuerpo de solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|color|string|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="a7e93-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a7e93-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="a7e93-124">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a7e93-124">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="a7e93-125">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="a7e93-125">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="a7e93-126">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a7e93-126">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="a7e93-127">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a7e93-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartfill_setsolidcolor"
@@ -48,8 +21,9 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="a7e93-128">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a7e93-128">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="a7e93-129">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a7e93-129">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

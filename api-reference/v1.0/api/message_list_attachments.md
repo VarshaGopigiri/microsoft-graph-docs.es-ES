@@ -1,47 +1,4 @@
-# <a name="list-attachments"></a>List attachments
-
-Recupera una lista de objetos [attachment](../resources/attachment.md) asociados a un mensaje.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.Read* 
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-Datos adjuntos de un [message](../resources/message.md) en el buzón de un usuario.
-```http
-GET /me/messages/{id}/attachments
-GET /users/{id | userPrincipalName}/messages/{id}/attachments
-```
-Datos adjuntos de un [message](../resources/message.md) contenido en una [mailFolder](../resources/mailfolder.md) de nivel superior en el buzón de un usuario.
-```http
-GET /me/mailFolders/{id}/messages/{id}/attachments
-GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
-```
-Datos adjuntos de un [message](../resources/message.md) contenido en una carpeta secundaria de una [mailFolder](../resources/mailfolder.md) en el buzón de un usuario.  El ejemplo siguiente muestra un nivel de anidamiento, pero un mensaje puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
-```http
-GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
-```
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [Attachment](../resources/attachment.md) en el cuerpo de la respuesta.
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
-<!-- {
-  "blockType": "request",
-  "name": "get_attachments"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
-```
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="971d8-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="971d8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",

@@ -1,37 +1,4 @@
-# <a name="list-overrides"></a>List overrides
-
-Obtiene los reemplazos que un usuario ha configurado para clasificar siempre los mensajes de determinados remitentes de forma específica.
-
-Cada reemplazo corresponde a una dirección SMTP de un remitente. Inicialmente, un usuario no tiene ningún reemplazo.
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: *Mail.Read*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/inferenceClassification/overrides
-GET /users/{id}/inferenceClassification/overrides
-```
-
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) en el cuerpo de la respuesta. Se devuelve una colección vacía si el usuario no ha configurado ningún reemplazo.
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
-<!-- {
-  "blockType": "request",
-  "name": "get_overrides"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
-```
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="7f2bf-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="7f2bf-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",

@@ -1,39 +1,12 @@
-# <a name="post-forward"></a>post: forward
-
-Reenvía una publicación a un destinatario. Puede especificar la conversación y el hilo primarios en la solicitud, o bien, especificar solo el hilo primario sin la conversación primaria. 
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-*Group.ReadWrite*, *Group.Readwrite.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/threads/{id}/posts/{id}/forward
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor |
-|:---------------|:--------|
-| Authorization  | {token} de portador. Necesario.  |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|comment|String|Comentario opcional que se envía junto con la publicación.|
-|toRecipients|Colección [recipient](../resources/recipient.md)|Destinatarios a los que se ha reenviado el encadenado de hilos.|
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="83532-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="83532-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="83532-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="83532-128">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="83532-129">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="83532-129">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="83532-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="83532-130">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="83532-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="83532-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_forward"
@@ -56,8 +29,9 @@ Content-length: 166
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="83532-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="83532-132">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="83532-133">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="83532-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

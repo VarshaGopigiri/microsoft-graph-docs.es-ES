@@ -1,40 +1,19 @@
-# <a name="send-a-sharing-invitation"></a>Enviar una invitación para uso compartido
+<span data-ttu-id="62f90-p102">Un mensaje con formato de texto sin formato que se incluye en la invitación para uso compartido. La longitud máxima es de 2000 caracteres.</span><span class="sxs-lookup"><span data-stu-id="62f90-p102">A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.</span></span>                                          | Un mensaje con formato de texto sin formato que se incluye en la invitación para uso compartido. La longitud máxima es de 2000 caracteres. |
+| <span data-ttu-id="62f90-122">requireSignIn</span><span class="sxs-lookup"><span data-stu-id="62f90-122">requireSignIn</span></span>    | <span data-ttu-id="62f90-123">Boolean</span><span class="sxs-lookup"><span data-stu-id="62f90-123">Boolean</span></span>                                         | <span data-ttu-id="62f90-124">Especifica si el destinatario de la invitación debe iniciar sesión para ver el elemento compartido.</span><span class="sxs-lookup"><span data-stu-id="62f90-124">Specifies where the recipient of the invitation is required to sign-in to view the shared item.</span></span>            |
+| <span data-ttu-id="62f90-125">sendInvitation</span><span class="sxs-lookup"><span data-stu-id="62f90-125">sendInvitation</span></span>   | <span data-ttu-id="62f90-126">Boolean</span><span class="sxs-lookup"><span data-stu-id="62f90-126">Boolean</span></span>                                         | <span data-ttu-id="62f90-127">Especifica si se genera un correo electrónico o una publicación (false) o si se acaba de crear el permiso (true).</span><span class="sxs-lookup"><span data-stu-id="62f90-127">Specifies if an email or post is generated (false) or if the permission is just created (true).</span></span>            |
+| <span data-ttu-id="62f90-128">roles</span><span class="sxs-lookup"><span data-stu-id="62f90-128">roles</span></span>            | <span data-ttu-id="62f90-129">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="62f90-129">Collection(String)</span></span>                              | <span data-ttu-id="62f90-130">Especifica los roles que se conceden a los destinatarios de la invitación para uso compartido.</span><span class="sxs-lookup"><span data-stu-id="62f90-130">Specify the roles that are be granted to the recipients of the sharing invitation.</span></span>                         |
 
-Envía una invitación para uso compartido de un objeto **DriveItem**. Una invitación para uso compartido proporciona permisos a los destinatarios y, de forma opcional, envía un correo electrónico a los destinatarios para notificarles que se ha compartido el elemento.
+## <span data-ttu-id="62f90-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="62f90-131">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="62f90-132">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto de colección [permission](../resources/permission.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="62f90-132">If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.</span></span>
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <span data-ttu-id="62f90-133">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="62f90-133">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="62f90-134">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="62f90-134">Here is an example of how to call this API.</span></span>
 
-  * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/drive/items/{item-id}/invite
-POST /drive/items/{item-id}/invite
-POST /drives/{drive-id}/items/{item-id}/invite
-POST /groups/{group-id}/drive/items/{item-id}/invite
-```
-
-## <a name="request-body"></a>Cuerpo de solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro        | Tipo                                            | Descripción                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| destinatarios       | Collection([DriveRecipient](driverecipient.md)) | Una colección de los destinatarios que recibirán acceso y la invitación para uso compartido.                                            |
-| message          | String                                          | Un mensaje con formato de texto sin formato que se incluye en la invitación para uso compartido. La longitud máxima es de 2000 caracteres. |
-| requireSignIn    | Boolean                                         | Especifica si el destinatario de la invitación debe iniciar sesión para ver el elemento compartido.            |
-| sendInvitation   | Boolean                                         | Especifica si se genera un correo electrónico o una publicación (false) o si se acaba de crear el permiso (true).            |
-| roles            | Collection(String)                              | Especifica los roles que se conceden a los destinatarios de la invitación para uso compartido.                         |
-
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto de colección [permission](../resources/permission.md) en el cuerpo de la respuesta.
-
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+##### <span data-ttu-id="62f90-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="62f90-135">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="62f90-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="62f90-136">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -57,8 +36,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="62f90-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="62f90-137">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="62f90-138">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="62f90-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,10 +69,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Comentarios
+## <span data-ttu-id="62f90-139">Comentarios</span><span class="sxs-lookup"><span data-stu-id="62f90-139">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-* Los [Drives](../resources/drive.md) con un **driveType** de `personal` (OneDrive Personal) no pueden crear ni modificar permisos en el objeto DriveItem raíz. 
-* Para obtener una lista de los roles disponibles, consulte [Enumeración de roles](../resources/permission.md#roles-enumeration).
+* <span data-ttu-id="62f90-140">Los [Drives](../resources/drive.md) con un **driveType** de `personal` (OneDrive Personal) no pueden crear ni modificar permisos en el objeto DriveItem raíz.</span><span class="sxs-lookup"><span data-stu-id="62f90-140">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
+* <span data-ttu-id="62f90-141">Para obtener una lista de los roles disponibles, consulte [Enumeración de roles](../resources/permission.md#roles-enumeration).</span><span class="sxs-lookup"><span data-stu-id="62f90-141">For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

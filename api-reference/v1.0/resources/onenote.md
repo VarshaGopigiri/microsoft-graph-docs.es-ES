@@ -1,81 +1,17 @@
-# <a name="onenote-resource-type"></a>Tipo de recurso OneNote
+<span data-ttu-id="42158-p108">Secciones de todos los blocs de notas de OneNote que son propiedad del usuario o grupo.  Solo lectura. Admite valores NULL.</span><span class="sxs-lookup"><span data-stu-id="42158-p108">The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.</span></span>|Secciones de todos los blocs de notas de OneNote que son propiedad del usuario o grupo.  Solo lectura. Admite valores NULL.|
 
-Punto de entrada para los recursos de OneNote.
 
-Todas las llamadas al servicio de OneNote a través de la API de Microsoft Graph utilizan esta dirección URL raíz del servicio:
+## <span data-ttu-id="42158-170">Métodos</span><span class="sxs-lookup"><span data-stu-id="42158-170">Methods</span></span>
+<a id="methods" class="xliff"></a>
 
-```
-https://graph.microsoft.com/{version}/{location}/onenote/ 
-```
-
-La ubicación puede ser el bloc de notas del usuario en Office 365 o OneDrive para el cliente, y los blocs de notas de grupo en Office 365. Actualmente no se admiten blocs de notas hospedados por el sitio de SharePoint. 
-
-**Blocs de notas del usuario** Para obtener acceso a los blocs de notas personales en OneDrive para el cliente o OneDrive para la Empresa, utilice una de las siguientes direcciones URL:
-
-```
-https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
-https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
-https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
-```
-
-**Blocs de notas de grupo** Para obtener acceso a los blocs de notas que pertenecen a un grupo, utilice la siguiente dirección URL raíz de servicio:
-
-```
-https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
-```
-
-Los siguientes ámbitos de permiso proporcionan niveles de acceso a los blocs de notas de OneNote. Elegir los ámbitos de permiso depende tanto de la ubicación de destino de los blocs de notas como de la funcionalidad de la aplicación. 
-
-**Ámbitos de los blocs de notas personales en OneDrive para el cliente o OneDrive para la Empresa que son propiedad del usuario actual**
-
-| Ámbito | Permiso en Azure Portal | Descripción |
-|:-------|:------|:------|
-| Notes.Create | Crear blocs de notas de usuario de OneNote | Puede ver las secciones y los títulos de los blocs de notas de OneNote, crear páginas, secciones y blocs de notas nuevos. |
-| Notes.Read | Leer blocs de notas de usuario de OneNote | Puede leer los blocs de notas de OneNote. |
-| Notes.ReadWrite | Leer y escribir en los blocs de notas de usuario de OneNote | Puede leer, compartir y modificar sus blocs de notas de OneNote. |
-
-**Ámbitos para blocs de notas personales compartidos por otros usuarios y blocs de notas de grupo a los que el usuario actual puede tener acceso**
-
-| Ámbito | Permiso en Azure Portal | Descripción |
-|:-------|:------|:------|
-| Notes.Read.All | Leer todos los blocs de notas de OneNote a los que el usuario puede tener acceso | Puede leer todos los blocs de notas de OneNote a los que tiene acceso el usuario que ha iniciado sesión. |
-| Notes.ReadWrite.All | Leer y escribir todos los blocs de notas de OneNote a los que el usuario puede tener acceso | Puede leer, compartir o modificar todos los blocs de notas de OneNote a los que tiene acceso el usuario que ha iniciado sesión. |
-
-**Nota:** Actualmente no es posible tener acceso a blocs de notas de sitios de SharePoint a través de la API Graph.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "notebooks",
-    "pages",
-    "resources",
-    "sectionGroups",
-    "sections"
-  ],
-  "@odata.type": "microsoft.graph.onenote"
-}-->
-
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| <span data-ttu-id="42158-171">Método</span><span class="sxs-lookup"><span data-stu-id="42158-171">Method</span></span>           | <span data-ttu-id="42158-172">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="42158-172">Return Type</span></span>    |<span data-ttu-id="42158-173">Descripción</span><span class="sxs-lookup"><span data-stu-id="42158-173">Description</span></span>|
 |:---------------|:--------|:----------|
-|notebooks|Colección de [blocs de notas](notebook.md)|Colección de blocs de notas de OneNote que son propiedad del usuario o grupo. Solo lectura. Admite valores NULL.|
-|operations|Colección de [operaciones](onenoteoperation.md) |El estado de las operaciones de OneNote. No se admite la obtención de una colección de operaciones, pero puede obtener el estado de las operaciones de larga duración si el encabezado `Operation-Location` se devuelve en la respuesta. Solo lectura. Admite valores NULL.|
-|pages|Colección de [páginas](page.md)|Páginas de todos los blocs de notas de OneNote que son propiedad del usuario o grupo.  Solo lectura. Admite valores NULL.|
-|resources|Colección de [recursos](resource.md) |Imagen y otros recursos de archivo en páginas de OneNote. No se admite la obtención de una colección de recursos, pero puede [obtener el contenido binario de un determinado recurso](resource.md). Solo lectura. Admite valores NULL.|
-|sectionGroups|Colección [SectionGroup](sectiongroup.md)|Grupos de secciones de todos los blocs de notas de OneNote que son propiedad del usuario o grupo.  Solo lectura. Admite valores NULL.|
-|sections|Colección de [secciones](section.md)|Secciones de todos los blocs de notas de OneNote que son propiedad del usuario o grupo.  Solo lectura. Admite valores NULL.|
-
-
-## <a name="methods"></a>Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Crear bloc de notas](../api/onenote_post_notebooks.md) |[Bloc de notas](notebook.md)| Crear un bloc de notas mediante su publicación en la colección de blocs de notas.|
-|[Enumerar los blocs de notas](../api/onenote_list_notebooks.md) |Colección de [blocs de notas](notebook.md)| Obtener una colección de blocs de notas.|
-|[Crear página](../api/onenote_post_pages.md) |[Página](page.md)| Crear una página mediante su publicación en la colección de páginas.|
-|[Enumerar páginas](../api/onenote_list_pages.md) |Colección de [páginas](page.md)| Obtener una colección de páginas.|
-|[Enumerar grupos de sección](../api/onenote_list_sectiongroups.md) |Colección [SectionGroup](sectiongroup.md)| Obtener una colección de grupos de secciones.|
-|[Enumerar secciones](../api/onenote_list_sections.md) |Colección de [secciones](section.md)| Obtener una colección de secciones.|
+|[<span data-ttu-id="42158-174">Crear bloc de notas</span><span class="sxs-lookup"><span data-stu-id="42158-174">Create notebook</span></span>](../api/onenote_post_notebooks.md) |[<span data-ttu-id="42158-175">Bloc de notas</span><span class="sxs-lookup"><span data-stu-id="42158-175">Notebook</span></span>](notebook.md)| <span data-ttu-id="42158-176">Crear un bloc de notas mediante su publicación en la colección de blocs de notas.</span><span class="sxs-lookup"><span data-stu-id="42158-176">Create a new Calendar by posting to the calendars collection.</span></span>|
+|[<span data-ttu-id="42158-177">Enumerar los blocs de notas</span><span class="sxs-lookup"><span data-stu-id="42158-177">List notebooks</span></span>](../api/onenote_list_notebooks.md) |<span data-ttu-id="42158-178">Colección de [blocs de notas](notebook.md)</span><span class="sxs-lookup"><span data-stu-id="42158-178">Notebook collection</span></span>| <span data-ttu-id="42158-179">Obtener una colección de blocs de notas.</span><span class="sxs-lookup"><span data-stu-id="42158-179">Represents a collection of notebooks.</span></span>|
+|[<span data-ttu-id="42158-180">Crear página</span><span class="sxs-lookup"><span data-stu-id="42158-180">Create a page layout</span></span>](../api/onenote_post_pages.md) |[<span data-ttu-id="42158-181">Página</span><span class="sxs-lookup"><span data-stu-id="42158-181">Page</span></span>](page.md)| <span data-ttu-id="42158-182">Crear una página mediante su publicación en la colección de páginas.</span><span class="sxs-lookup"><span data-stu-id="42158-182">Create a new CalendarGroup by posting to the calendarGroups collection.</span></span>|
+|[<span data-ttu-id="42158-183">Enumerar páginas</span><span class="sxs-lookup"><span data-stu-id="42158-183">List pages</span></span>](../api/onenote_list_pages.md) |<span data-ttu-id="42158-184">Colección de [páginas](page.md)</span><span class="sxs-lookup"><span data-stu-id="42158-184">Page collection</span></span>| <span data-ttu-id="42158-185">Obtener una colección de páginas.</span><span class="sxs-lookup"><span data-stu-id="42158-185">Represents a collection of pages.</span></span>|
+|[<span data-ttu-id="42158-186">Enumerar grupos de sección</span><span class="sxs-lookup"><span data-stu-id="42158-186">List section groups</span></span>](../api/onenote_list_sectiongroups.md) |<span data-ttu-id="42158-187">Colección [SectionGroup](sectiongroup.md)</span><span class="sxs-lookup"><span data-stu-id="42158-187">SectionGroup collection</span></span>| <span data-ttu-id="42158-188">Obtener una colección de grupos de secciones.</span><span class="sxs-lookup"><span data-stu-id="42158-188">Represents a collection of section groups.</span></span>|
+|[<span data-ttu-id="42158-189">Enumerar secciones</span><span class="sxs-lookup"><span data-stu-id="42158-189">List sections</span></span>](../api/onenote_list_sections.md) |<span data-ttu-id="42158-190">Colección de [secciones](section.md)</span><span class="sxs-lookup"><span data-stu-id="42158-190">Section collection</span></span>| <span data-ttu-id="42158-191">Obtener una colección de secciones.</span><span class="sxs-lookup"><span data-stu-id="42158-191">Represents a collection of sections.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

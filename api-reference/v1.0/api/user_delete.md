@@ -1,29 +1,11 @@
-# <a name="delete-a-user"></a>Eliminar un usuario
-
-Elimine usuario.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.AccessAsUser.All*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id | userPrincipalName}
-```
-
-## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor|
-|:-----------|:------|
-| Authorization  | {token} de portador. Necesario.  |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="eaf78-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="eaf78-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="eaf78-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="eaf78-117">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="eaf78-118">Solicitud</span><span class="sxs-lookup"><span data-stu-id="eaf78-118">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="eaf78-119">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="eaf78-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -31,8 +13,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="eaf78-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="eaf78-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="eaf78-121">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="eaf78-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

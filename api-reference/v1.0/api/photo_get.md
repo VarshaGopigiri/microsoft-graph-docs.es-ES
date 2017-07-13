@@ -1,33 +1,16 @@
-# <a name="get-photo"></a>Get photo
+<span data-ttu-id="e6ef1-p101">{token} de portador. Necesario.</span><span class="sxs-lookup"><span data-stu-id="e6ef1-p101">Bearer token. Required.</span></span>  | {token} de portador. Necesario. |
 
-Recupera las propiedades y las relaciones del objeto photo.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-  * Files.Read
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/photo
-GET /groups/{id}/photo
-GET /drive/root/createdByUser/photo
-```
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
-
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [photo](../resources/photo.md) en el cuerpo de la respuesta.
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="e6ef1-117">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="e6ef1-117">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="e6ef1-118">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="e6ef1-118">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="e6ef1-119">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e6ef1-119">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e6ef1-120">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [photo](../resources/photo.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e6ef1-120">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <span data-ttu-id="e6ef1-121">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e6ef1-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="e6ef1-122">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e6ef1-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e6ef1-123">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e6ef1-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -35,8 +18,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="e6ef1-124">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e6ef1-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e6ef1-125">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e6ef1-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -1,38 +1,12 @@
-# <a name="chart-setdata"></a>Chart: setData
-
-Restablece los datos de origen del gráfico.
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setData
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
-
-
-## <a name="request-body"></a>Cuerpo de solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|sourceData|string|Objeto Range correspondiente a los datos de origen.|
-|seriesBy|string|Opcional. Especifica la manera en que las columnas o las filas se usan como series de datos en el gráfico. Puede ser de una de las siguientes: Auto (valor predeterminado), Rows, Columns.  Valores posibles: `Auto`, `Columns`, `Rows`.|
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="f9dc8-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f9dc8-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="f9dc8-130">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="f9dc8-130">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="f9dc8-131">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="f9dc8-131">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="f9dc8-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="f9dc8-132">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="f9dc8-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="f9dc8-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_setdata"
@@ -48,8 +22,9 @@ Content-length: 70
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="f9dc8-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f9dc8-134">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="f9dc8-135">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f9dc8-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

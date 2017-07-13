@@ -1,41 +1,13 @@
-# <a name="delete-permission"></a>Delete permission
-
-Quita el acceso a un [DriveItem](../resources/driveitem.md).
-
-Solo se pueden eliminar los permisos no heredados. La propiedad **inheritedFrom** debe ser `null`.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-  * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-DELETE /me/drive/root:/{path}:/permissions/{perm-id}
-DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
-DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
-```
-
-## <a name="request-headers"></a>Encabezados de solicitud
-
-| Nombre          | Tipo   | Descripción                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="98baa-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="98baa-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
+## <span data-ttu-id="98baa-123">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="98baa-123">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Solicitud
+##### <span data-ttu-id="98baa-124">Solicitud</span><span class="sxs-lookup"><span data-stu-id="98baa-124">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Aquí tiene un ejemplo de la solicitud.
+<span data-ttu-id="98baa-125">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="98baa-125">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,9 +17,10 @@ Aquí tiene un ejemplo de la solicitud.
 DELETE https://graph.microsoft.com/v1.0/me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
 
-##### <a name="response"></a>Respuesta
+##### <span data-ttu-id="98baa-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="98baa-126">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Aquí tiene un ejemplo de la respuesta.
+<span data-ttu-id="98baa-127">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="98baa-127">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -57,9 +30,10 @@ Aquí tiene un ejemplo de la respuesta.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>Comentarios
+## <span data-ttu-id="98baa-128">Comentarios</span><span class="sxs-lookup"><span data-stu-id="98baa-128">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-* Los [Drives](../resources/drive.md) con un **driveType** de `personal` (OneDrive Personal) no pueden crear ni modificar permisos en la DriveItem raíz. 
+* <span data-ttu-id="98baa-129">Los [Drives](../resources/drive.md) con un **driveType** de `personal` (OneDrive Personal) no pueden crear ni modificar permisos en la DriveItem raíz.</span><span class="sxs-lookup"><span data-stu-id="98baa-129">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

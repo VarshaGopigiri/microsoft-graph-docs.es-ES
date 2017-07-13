@@ -1,29 +1,11 @@
-# <a name="delete-conversation"></a>Eliminar conversation
-
-Elimina la conversación.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Group.ReadWrite.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /groups/{id}/conversations/{id}
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor |
-|:---------------|:--------|
-| Authorization  | {token} de portador. Necesario.  |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="3a768-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3a768-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="3a768-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3a768-117">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="3a768-118">Solicitud</span><span class="sxs-lookup"><span data-stu-id="3a768-118">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="3a768-119">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="3a768-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_conversation"
@@ -31,8 +13,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="3a768-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3a768-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="3a768-121">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3a768-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

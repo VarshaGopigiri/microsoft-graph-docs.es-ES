@@ -1,42 +1,12 @@
-# <a name="page-copytosection"></a>página: copyToSection
-Copia una página en una sección específica.
-
-En el caso de las operaciones de copia, siga un patrón de llamada asincrónico:  Llame primero a la acción de copiar y, a continuación, sondee el extremo de la operación para obtener el resultado.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:   
-
-Notes.Create, Notes.ReadWrite o Notes.ReadWrite.All  
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/onenote/pages/{id}/copyToSection
-POST /users/{id | userPrincipalName}/onenote/pages/{id}/copyToSection
-POST /groups/{id}/onenote/pages/{id}/copyToSection
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string | `application/json` |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|groupId|String|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
-|id|String|Obligatorio. El id. de la sección de destino.|
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="77853-p104">Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted` y un encabezado `Operation-Location`. Sondee el extremo de Operation-Location para [obtener el estado de la operación de copia](onenoteoperation_get.md).</span><span class="sxs-lookup"><span data-stu-id="77853-p104">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation_get.md).</span></span>
 Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted` y un encabezado `Operation-Location`. Sondee el extremo de Operation-Location para [obtener el estado de la operación de copia](onenoteoperation_get.md).
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="77853-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="77853-134">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="77853-135">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="77853-135">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="77853-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="77853-136">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="77853-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="77853-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "page_copytosection"
@@ -52,8 +22,9 @@ Content-length: 52
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="77853-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="77853-138">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="77853-139">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="77853-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

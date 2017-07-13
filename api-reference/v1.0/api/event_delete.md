@@ -1,43 +1,11 @@
-# <a name="delete-event"></a>Delete event
-
-Elimina el evento.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.ReadWrite* 
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/events/{id}
-DELETE /users/{id | userPrincipalName}/events/{id}
-DELETE /groups/{id}/events/{id}
-
-DELETE /me/calendar/events/{id}
-DELETE /users/{id | userPrincipalName}/calendar/events/{id}
-DELETE /groups/{id}/calendar/events/{id}/
-
-DELETE /me/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
-DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="e51d3-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e51d3-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="e51d3-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e51d3-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="e51d3-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e51d3-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e51d3-121">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e51d3-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -45,8 +13,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="e51d3-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e51d3-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e51d3-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e51d3-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

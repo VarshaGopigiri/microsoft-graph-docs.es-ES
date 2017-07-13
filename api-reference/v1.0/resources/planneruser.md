@@ -1,33 +1,8 @@
-<a id="planneruser-resource-type" class="xliff"></a>
-# Tipo de recurso plannerUser
+<span data-ttu-id="b81f4-p104">Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.</span><span class="sxs-lookup"><span data-stu-id="b81f4-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.|
 
-El recurso **plannerUser** proporciona acceso a los recursos Planner de un [usuario](user.md). No contiene ninguna propiedad utilizable.
-
-
-<a id="methods" class="xliff"></a>
-## Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Enumerar planes](../api/planneruser_list_plans.md) |Colección [plannerPlan](plannerplan.md)| Obtenga una colección de objetos **plannerPlan**.|
-|[Enumerar tareas](../api/planneruser_list_tasks.md) |Colección [plannerTask](plannertask.md)| Obtenga una colección de objetos **plannerTask**.|
-
-<a id="properties" class="xliff"></a>
-## Propiedades
-| Propiedad     | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|id|String| Solo lectura. Identificador del planenrUser|
-
-<a id="relationships" class="xliff"></a>
-## Relaciones
-| Relación | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|plans|Colección [plannerPlan](plannerplan.md)| Solo lectura. Admite valores NULL. Devuelve las [plannerTasks](plannertask.md) asignadas al usuario.|
-|tasks|Colección [plannerTask](plannertask.md)| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.|
-
+## <span data-ttu-id="b81f4-136">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b81f4-136">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Representación JSON
-Aquí tiene una representación JSON del recurso.
+<span data-ttu-id="b81f4-137">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="b81f4-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

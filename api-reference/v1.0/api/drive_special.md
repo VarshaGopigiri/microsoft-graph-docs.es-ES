@@ -1,44 +1,20 @@
-# <a name="get-a-special-folder-by-name"></a>Obtener una carpeta especial por su nombre
-
-Use la colección especial para acceder a una carpeta especial por su nombre.
-
-Las carpetas especiales proporcionan alias simples para acceder a carpetas conocidas en OneDrive sin necesidad de buscar la carpeta por su ruta (que requeriría localización) o hacer referencia a la carpeta con un identificador. Si una carpeta especial cambia de nombre o se mueve a otra ubicación de la unidad, esta sintaxis seguirá encontrando esa carpeta.
-
-Las carpetas especiales se crean de forma automática la primera vez que una aplicación intenta escribir en una, si aún no existe. Si un usuario elimina una, se vuelve a crear al volver a escribir en ella.
-
-**Nota:**  Si tiene permisos de solo lectura y solicita una carpeta especial que no existe, recibirá un error `403 Forbidden`.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-  * Files.Read
-  * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/special/{name}
-```
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
-
-## <a name="request-headers"></a>Encabezados de solicitud
-
-| Nombre          | Tipo   | Descripción               |
-|:--------------|:-------|:--------------------------|
-| Authorization | string | {token} de portador. Necesario. |
+<span data-ttu-id="bcfcf-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="bcfcf-p103">Bearer {token}. Required.</span></span> | {token} de portador. Obligatorio. |
 
 
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
+## <span data-ttu-id="bcfcf-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="bcfcf-128">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="bcfcf-129">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="bcfcf-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [driveItem](../resources/driveitem.md) en el cuerpo de la respuesta.
+## <span data-ttu-id="bcfcf-130">Respuesta</span><span class="sxs-lookup"><span data-stu-id="bcfcf-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="bcfcf-131">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [driveItem](../resources/driveitem.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="bcfcf-131">If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.</span></span>
 
-## <a name="example"></a>Ejemplo
+## <span data-ttu-id="bcfcf-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="bcfcf-132">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud de las unidades del usuario.
+##### <span data-ttu-id="bcfcf-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="bcfcf-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="bcfcf-134">Aquí tiene un ejemplo de la solicitud de las unidades del usuario.</span><span class="sxs-lookup"><span data-stu-id="bcfcf-134">Here is an example of the request for the user's drives.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -48,8 +24,9 @@ Aquí tiene un ejemplo de la solicitud de las unidades del usuario.
 GET https://graph.microsoft.com/v1.0/me/drive/special/{name}
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="bcfcf-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="bcfcf-135">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="bcfcf-136">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="bcfcf-136">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -68,9 +45,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Comentarios
+## <span data-ttu-id="bcfcf-137">Comentarios</span><span class="sxs-lookup"><span data-stu-id="bcfcf-137">Remarks</span></span>
+<a id="remarks" class="xliff"></a>
 
-Para solicitar los elementos secundarios de una carpeta especial, puede solicitar la colección `children` o usar la opción [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para expandir la colección de elementos secundarios.
+<span data-ttu-id="bcfcf-138">Para solicitar los elementos secundarios de una carpeta especial, puede solicitar la colección `children` o usar la opción [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para expandir la colección de elementos secundarios.</span><span class="sxs-lookup"><span data-stu-id="bcfcf-138">To request the children of a special folder, you can request the `children` collection or use the [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) option to expand the children collection.</span></span>
 
 
 <!-- {

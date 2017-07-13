@@ -1,42 +1,4 @@
-# <a name="list-buckets"></a>Enumerar depósitos
-
-Recuperar una lista de objetos **plannerbucket**.
-
-### <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: 
-
-*Group.Read.All*
-
-### <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /planner/buckets
-```
-### <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método requiere que se especifique un [filter](http://graph.microsoft.io/docs/overview/query_parameters) de planId.
-
-### <a name="request-headers"></a>Encabezados de solicitud
-| Nombre      |Descripción|
-|:----------|:----------|
-| Authorization  | {token} de portador. Necesario. |
-
-### <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-### <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [plannerBucket](../resources/plannerbucket.md) en el cuerpo de la respuesta.
-
-Este método puede devolver cualquiera de los [códigos de estado HTTP](../../../concepts/errors.md). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).
-### <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
-<!-- {
-  "blockType": "request",
-  "name": "get_buckets"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/planner/buckets
-```
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="eb657-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="eb657-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",

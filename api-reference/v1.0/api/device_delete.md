@@ -1,31 +1,11 @@
-# <a name="delete-device"></a>Delete device
-
-Elimina un dispositivo registrado.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.AccessAsUser.All*, *Device.ReadWrite.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /devices/{id}
-```
-> Nota: El "id" de la solicitud es la propiedad "id" del dispositivo, no la propiedad "deviceId".
-
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="81a78-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="81a78-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="81a78-120">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="81a78-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="81a78-121">Solicitud</span><span class="sxs-lookup"><span data-stu-id="81a78-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="81a78-122">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="81a78-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -33,8 +13,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="81a78-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="81a78-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="81a78-124">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="81a78-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

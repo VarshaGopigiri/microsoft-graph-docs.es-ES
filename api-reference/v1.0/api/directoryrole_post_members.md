@@ -1,29 +1,18 @@
-# <a name="add-directory-role-member"></a>Add directory role member
+<span data-ttu-id="cd26c-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="cd26c-p101">Bearer token. Required.</span></span>  | {token} de portador. Obligatorio. |
+| <span data-ttu-id="cd26c-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cd26c-114">Content-Type</span></span>  | <span data-ttu-id="cd26c-115">application/json</span><span class="sxs-lookup"><span data-stu-id="cd26c-115">application/json</span></span>  |
 
-Use esta API para crear un miembro de rol de directorio.
+## <span data-ttu-id="cd26c-116">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="cd26c-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="cd26c-117">En el cuerpo de la solicitud, proporcione una representación JSON de un objeto [directoryObject](../resources/directoryobject.md) o [user](../resources/user.md) que se va a agregar.</span><span class="sxs-lookup"><span data-stu-id="cd26c-117">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *Directory.AccessAsUser.All*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /directoryRoles/{id}/members/$ref
+## <span data-ttu-id="cd26c-118">Respuesta</span><span class="sxs-lookup"><span data-stu-id="cd26c-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="cd26c-119">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`.</span><span class="sxs-lookup"><span data-stu-id="cd26c-119">If successful, this method returns `204, No Content` response code.</span></span>
 
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione una representación JSON de un objeto [directoryObject](../resources/directoryobject.md) o [user](../resources/user.md) que se va a agregar.
-
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`.
-
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+## <span data-ttu-id="cd26c-120">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="cd26c-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="cd26c-121">Solicitud</span><span class="sxs-lookup"><span data-stu-id="cd26c-121">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -38,8 +27,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. 
+##### <span data-ttu-id="cd26c-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="cd26c-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="cd26c-123">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar.</span><span class="sxs-lookup"><span data-stu-id="cd26c-123">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

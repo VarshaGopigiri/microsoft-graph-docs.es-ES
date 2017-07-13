@@ -1,29 +1,11 @@
-# <a name="delete-contactfolder"></a>Eliminar contactFolder.
-
-Elimina una contactFolder que no sea la predeterminada.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Contacts.ReadWrite*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/contactFolders/{id}
-DELETE /users/{id | userPrincipalName}/contactFolders/{id}
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="2e0bc-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2e0bc-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="2e0bc-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2e0bc-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="2e0bc-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="2e0bc-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="2e0bc-121">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="2e0bc-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_contactfolder"
@@ -31,8 +13,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="2e0bc-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2e0bc-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="2e0bc-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2e0bc-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

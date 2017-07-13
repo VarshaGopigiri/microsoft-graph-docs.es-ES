@@ -1,37 +1,14 @@
-<a id="domaindnssrvrecord-resource-type" class="xliff"></a>
-# Tipo de recurso domainDnsSrvRecord
+<span data-ttu-id="8c444-p105">Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro SRV en el host DNS. No admite valores NULL</span><span class="sxs-lookup"><span data-stu-id="8c444-p105">Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable</span></span>| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro SRV en el host DNS. No admite valores NULL |
+|<span data-ttu-id="8c444-149">weight</span><span class="sxs-lookup"><span data-stu-id="8c444-149">weight</span></span>|<span data-ttu-id="8c444-150">Int32</span><span class="sxs-lookup"><span data-stu-id="8c444-150">Int32</span></span>| <span data-ttu-id="8c444-151">Valor que se debe usar al configurar la propiedad *weight* del registro SRV en el host DNS.</span><span class="sxs-lookup"><span data-stu-id="8c444-151">Value to use when configuring the *weight* property of the SRV record at the DNS host.</span></span> |
 
-Representa un registro SRV agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad [DomainDnsRecord](domaindnsrecord.md).
-
-<a id="methods" class="xliff"></a>
-## Métodos
-No se admiten las consultas directas a este recurso. Consulte el tema [domain](domain.md) para obtener información sobre cómo efectuar consultas para los registros de servicios de dominio.
-
-<a id="properties" class="xliff"></a>
-## Propiedades
-| Propiedad     | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
-|isOptional|Booleano| Si es false, el cliente debe configurar el registro SRV en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
-|label|Cadena| Valor que se usa al configurar la propiedad *name* del registro SRV en el host DNS. |
-|nameTarget|Cadena| Valor que se debe usar al configurar la propiedad *Target* del registro SRV en el host DNS. |
-|port|Int32| Valor que se debe usar al configurar la propiedad *port* del registro SRV en el host DNS. |
-|priority|Int32| Valor que se debe usar al configurar la propiedad *priority* del registro SRV en el host DNS. |
-|protocol|Cadena| Valor que se debe usar al configurar la propiedad *protocol* del registro SRV en el host DNS. |
-|recordType|Cadena|  Tipo de registro DNS. El valor es siempre *Srv*. Clave |
-|service|Cadena| Valor que se debe usar al configurar la propiedad *service* del registro SRV en el host DNS. |
-|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro SRV.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
-|ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro SRV en el host DNS. No admite valores NULL |
-|weight|Int32| Valor que se debe usar al configurar la propiedad *weight* del registro SRV en el host DNS. |
-
+## <span data-ttu-id="8c444-152">Relaciones</span><span class="sxs-lookup"><span data-stu-id="8c444-152">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-## Relaciones
-Ninguno
+<span data-ttu-id="8c444-153">Ninguno</span><span class="sxs-lookup"><span data-stu-id="8c444-153">None</span></span>
 
 
+## <span data-ttu-id="8c444-154">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="8c444-154">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Representación JSON
-Aquí tiene una representación JSON del recurso.
+<span data-ttu-id="8c444-155">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="8c444-155">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

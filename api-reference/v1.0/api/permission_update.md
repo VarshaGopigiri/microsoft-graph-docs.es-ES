@@ -1,46 +1,22 @@
-# <a name="update-permission"></a>Update permission
-
-Actualiza las propiedades de un permiso aplicando revisiones del recurso.
-
-## <a name="prerequisites"></a>Requisitos previos
-
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-  * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/drive/items/{item-id}/permissions/{perm-id}
-PATCH /me/drive/root:/{path}:/permissions/{perm-id}
-PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
-PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
-```
-
-## <a name="request-headers"></a>Encabezados de solicitud
-
-| Nombre          | Tipo   | Descripción                                                                                                                                                                                       |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
-
-
-## <a name="request-body"></a>Cuerpo de la solicitud
+<span data-ttu-id="00c5d-p101">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="00c5d-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   | Descripción                   |
+| <span data-ttu-id="00c5d-120">Propiedad</span><span class="sxs-lookup"><span data-stu-id="00c5d-120">Property</span></span>     | <span data-ttu-id="00c5d-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="00c5d-121">Type</span></span>   | <span data-ttu-id="00c5d-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="00c5d-122">Description</span></span>                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | Matriz de tipos de permisos. |
+| <span data-ttu-id="00c5d-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="00c5d-123">**roles**</span></span>    | <span data-ttu-id="00c5d-124">String</span><span class="sxs-lookup"><span data-stu-id="00c5d-124">String</span></span> | <span data-ttu-id="00c5d-125">Matriz de tipos de permisos.</span><span class="sxs-lookup"><span data-stu-id="00c5d-125">An array of permission types.</span></span> |
 
 
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [permission](../resources/permission.md) actualizado en el cuerpo de la respuesta.
+## <span data-ttu-id="00c5d-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="00c5d-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="00c5d-127">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [permission](../resources/permission.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="00c5d-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="example"></a>Ejemplo
+## <span data-ttu-id="00c5d-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="00c5d-128">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Solicitud
+##### <span data-ttu-id="00c5d-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="00c5d-129">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Aquí tiene un ejemplo de la solicitud.
+<span data-ttu-id="00c5d-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="00c5d-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_permission"
@@ -53,9 +29,10 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-##### <a name="response"></a>Respuesta
+##### <span data-ttu-id="00c5d-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="00c5d-131">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Aquí tiene un ejemplo de la respuesta.
+<span data-ttu-id="00c5d-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="00c5d-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

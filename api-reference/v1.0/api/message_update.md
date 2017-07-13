@@ -1,68 +1,4 @@
-# <a name="update-message"></a>Actualizar mensaje
-
-Actualice las propiedades del objeto de mensaje.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.ReadWrite*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/messages/{id}
-PATCH /users/{id | userPrincipalName}/messages/{id}
-PATCH /me/mailFolders/{id}/messages/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado. Son propiedades Writable/Updatable
-
-| Propiedad     | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|bccRecipients|Destinatario|Los destinatarios CCO del mensaje. Solo se puede actualizar si IsDraft = true.|
-|categories|Colección string|Las categorías asociadas al mensaje.|
-|ccRecipients|Colección Recipient|Los destinatarios CC del mensaje. Solo se puede actualizar si IsDraft = true.|
-|from|Destinatario|El propietario del buzón y el remitente del mensaje. Solo se puede actualizar si IsDraft = true.|
-|importance|String|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | La clasificación del mensaje para el usuario, según relevancia inferida, importancia o según una invalidación explícita. Los valores posibles son: `focused` o `other`. |
-|internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). Solo se puede actualizar si IsDraft = true.|
-|isRead|Booleano|Indica si se ha leído el mensaje.|
-|replyTo|Colección Recipient|Las direcciones de correo electrónico que se usan al responder. Solo se puede actualizar si IsDraft = true.|
-|sender|Destinatario|La cuenta que se usa realmente para generar el mensaje. Solo se puede actualizar si IsDraft = true.|
-|toRecipients|Colección Recipient|Los destinatarios Para del mensaje. Solo se puede actualizar si IsDraft = true.|
-|cuerpo|ItemBody|El cuerpo del mensaje. Solo se puede actualizar si IsDraft = true.|
-|isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
-|isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
-|subject|String|El asunto del mensaje. Solo se puede actualizar si IsDraft = true.|
-
-Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), puede utilizar la operación `PATCH` para agregar, actualizar o eliminar sus propios datos específicos de la aplicación en las propiedades personalizadas de una extensión en una instancia **message** existente.
-
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [message](../resources/message.md) actualizado en el cuerpo de la respuesta.
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
-<!-- {
-  "blockType": "request",
-  "name": "update_message"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/messages/{id}
-Content-type: application/json
-Content-length: 248
-
-{
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "inferenceClassification": "other"
-}
-```
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="53504-p115">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="53504-p115">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
@@ -88,10 +24,11 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <span data-ttu-id="53504-192">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="53504-192">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="53504-193">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="53504-193">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="53504-194">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="53504-194">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

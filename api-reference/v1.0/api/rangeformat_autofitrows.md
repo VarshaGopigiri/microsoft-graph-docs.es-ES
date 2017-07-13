@@ -1,34 +1,12 @@
-# <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
-
-Cambia el alto de las filas del rango actual para obtener el ajuste perfecto (según los datos actuales de las columnas).
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/names(<name>)/range/format/autofitRows
-POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitRows
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
-
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="35698-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="35698-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="35698-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="35698-117">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="35698-118">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="35698-118">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="35698-119">Solicitud</span><span class="sxs-lookup"><span data-stu-id="35698-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="35698-120">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="35698-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangeformat_autofitrows"
@@ -37,8 +15,9 @@ Aquí tiene un ejemplo de la solicitud.
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitRows
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="35698-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="35698-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="35698-122">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="35698-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

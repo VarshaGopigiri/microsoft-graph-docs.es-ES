@@ -1,35 +1,11 @@
-# <a name="delete-schemaextension"></a>Eliminar schemaExtensions
-
-Elimine la definición de una [extensión de esquema](../resources/schemaExtension.md).
-
-Solo la aplicación que creó la extensión de esquema (la aplicación propietaria) puede eliminar la definición de la extensión de esquema, y solo cuando la extensión esté en el estado **InDevelopment**. Eliminar una definición de extensión de esquema no afecta al acceso a los datos personalizados que se han agregado a las instancias de recurso a partir de esa definición.
-
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /schemaExtensions/{id}
-```
-
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre      |Descripción|
-|:----------|:----------|
-| Authorization  | {token} de portador. Necesario. |
- 
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="dea4d-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="dea4d-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="dea4d-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="dea4d-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="dea4d-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="dea4d-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="dea4d-121">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="dea4d-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_schemaextension"
@@ -37,8 +13,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="dea4d-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dea4d-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="dea4d-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="dea4d-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -47,10 +24,11 @@ Aquí tiene un ejemplo de la respuesta.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>Consulte también
+## <span data-ttu-id="dea4d-124">Consulte también</span><span class="sxs-lookup"><span data-stu-id="dea4d-124">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="dea4d-125">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="dea4d-125">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="dea4d-126">Agregar datos personalizados a los grupos mediante extensiones de esquema</span><span class="sxs-lookup"><span data-stu-id="dea4d-126">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

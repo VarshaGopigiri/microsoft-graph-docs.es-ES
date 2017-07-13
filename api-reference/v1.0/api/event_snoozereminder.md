@@ -1,49 +1,12 @@
-# <a name="event-snoozereminder"></a>event: snoozeReminder
-
-Pospone un aviso hasta una nueva hora.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.ReadWrite*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/events/{id}/snoozeReminder
-POST /groups/{id}/events/{id}/snoozeReminder
-
-POST /me/calendar/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
-POST /groups/{id}/calendar/events/{id}/snoozeReminder
-
-POST /me/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|newReminderTime|DateTimeTimeZone|Nueva fecha y hora para desencadenar el aviso.|
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="428ed-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="428ed-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="428ed-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="428ed-129">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="428ed-130">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="428ed-130">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="428ed-131">Solicitud</span><span class="sxs-lookup"><span data-stu-id="428ed-131">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="428ed-132">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="428ed-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -61,8 +24,9 @@ Content-length: 97
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="428ed-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="428ed-133">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="428ed-134">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="428ed-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

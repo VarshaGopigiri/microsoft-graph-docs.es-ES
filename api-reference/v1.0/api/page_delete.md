@@ -1,30 +1,11 @@
-# <a name="delete-page"></a>Eliminar página
-
-Elimine una página de OneNote.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:   
-
-Notes.ReadWrite o Notes.ReadWrite.All 
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/onenote/pages/{id}
-DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
-DELETE /groups/{id}/oennote/pages/{id}
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="66b71-p102">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="66b71-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="66b71-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="66b71-118">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="66b71-119">Solicitud</span><span class="sxs-lookup"><span data-stu-id="66b71-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="66b71-120">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="66b71-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -32,8 +13,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="66b71-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="66b71-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="66b71-122">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="66b71-122">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

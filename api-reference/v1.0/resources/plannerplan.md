@@ -1,35 +1,9 @@
-# <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
+<span data-ttu-id="033ac-p109">Solo lectura. Admite valores NULL. Colección de tareas en el plan.</span><span class="sxs-lookup"><span data-stu-id="033ac-p109">Read-only. Nullable. Collection of tasks in the plan.</span></span>| Solo lectura. Admite valores NULL. Colección de tareas en el plan.|
 
-El recurso **plannerPlan** representa un plan de Office 365. Un plan puede ser propiedad de un [grupo](group.md) y contiene una colección de [plannerTasks](plannerTask.md). También puede tener una colección de [plannerBuckets](plannerBucket.md). Cada objeto plan tiene un objeto [details](plannerPlanDetails.md) que puede contener más información sobre el plan. Para obtener más información sobre la relación entre los grupos, los planes y las categorías, vea [Planner](planner_overview.md).
+## <span data-ttu-id="033ac-171">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="033ac-171">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-## <a name="methods"></a>Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Obtener plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Leer las propiedades y las relaciones del objeto **plannerPlan**.|
-|[Enumerar depósitos](../api/plannerplan_list_buckets.md) |Colección [plannerBucket](plannerbucket.md)| Obtenga una colección de objetos **plannerBucket**.|
-|[Enumerar tareas](../api/plannerplan_list_tasks.md) |Colección [plannerTask](plannertask.md)| Obtenga una colección de objetos **plannerTask**.|
-|[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Actualizar el objeto **plannerPlan**. |
-
-## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se creó el plan. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|String| Solo lectura. Id. del plan. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|owner|String|Id. del [grupo](group.md) que tiene el plan. Para poder establecer este campo, debe existir un grupo válido. Una vez establecido, solo lo puede actualizar el propietario.|
-|title|String|Obligatorio. Título del plan.|
-|createdBy|[identitySet](identityset.md)|Solo lectura. El usuario que creó el plan.|
-
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|buckets|Colección [plannerBucket](plannerbucket.md)| Solo lectura. Admite valores NULL. Colección de depósitos del plan.|
-|detalles|[plannerPlanDetails](plannerplandetails.md)| Solo lectura. Admite valores NULL. Detalles adicionales sobre el plan.|
-|tasks|Colección [plannerTask](plannertask.md)| Solo lectura. Admite valores NULL. Colección de tareas en el plan.|
-
-## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso.
+<span data-ttu-id="033ac-172">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="033ac-172">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,29 +1,17 @@
-# <a name="list-manager"></a>List manager
+<span data-ttu-id="cfb22-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="cfb22-p102">Bearer token. Required.</span></span>  | {token} de portador. Obligatorio.  |
+| <span data-ttu-id="cfb22-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cfb22-115">Content-Type</span></span>   | <span data-ttu-id="cfb22-116">application/json</span><span class="sxs-lookup"><span data-stu-id="cfb22-116">application/json</span></span>  | 
 
-Obtiene el administrador del usuario. Devuelve el usuario o el contacto asignado como administrador del usuario.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/manager
-```
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
-## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor|
-|:-----------|:------|
-| Authorization  | {token} de portador. Obligatorio.  |
-| Content-Type   | application/json  | 
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-No proporcione un cuerpo de solicitud para este método.
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [directoryObject](../resources/directoryobject.md) en el cuerpo de la respuesta.
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <span data-ttu-id="cfb22-117">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="cfb22-117">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="cfb22-118">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="cfb22-118">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="cfb22-119">Respuesta</span><span class="sxs-lookup"><span data-stu-id="cfb22-119">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="cfb22-120">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [directoryObject](../resources/directoryobject.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="cfb22-120">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <span data-ttu-id="cfb22-121">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="cfb22-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="cfb22-122">Solicitud</span><span class="sxs-lookup"><span data-stu-id="cfb22-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="cfb22-123">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="cfb22-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_manager"
@@ -31,8 +19,9 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <span data-ttu-id="cfb22-124">Respuesta</span><span class="sxs-lookup"><span data-stu-id="cfb22-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="cfb22-125">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="cfb22-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

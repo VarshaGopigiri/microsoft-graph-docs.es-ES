@@ -1,86 +1,10 @@
-# <a name="site-resource"></a>Recurso site
+<span data-ttu-id="1e90b-p109">Se utiliza para resolver cualquier elemento contenido en este sitio. Esta colección no se puede enumerar.</span><span class="sxs-lookup"><span data-stu-id="1e90b-p109">Used to address any item contained in this site. This collection cannot be enumerated.</span></span> | Se utiliza para resolver cualquier elemento contenido en este sitio. Esta colección no se puede enumerar.
+| <span data-ttu-id="1e90b-179">**sites**</span><span class="sxs-lookup"><span data-stu-id="1e90b-179">**sites**</span></span>         | <span data-ttu-id="1e90b-180">Collection([site][])</span><span class="sxs-lookup"><span data-stu-id="1e90b-180">Collection([site][])</span></span>     | <span data-ttu-id="1e90b-181">La colección de subsitios de este sitio.</span><span class="sxs-lookup"><span data-stu-id="1e90b-181">The collection of the sub-sites under this site.</span></span>
 
-El recurso **site** proporciona metadatos y relaciones para un sitio de SharePoint.
-
-## <a name="tasks"></a>Tareas
-
-Todos los ejemplos siguientes son relativos a `https://graph.microsoft.com/v1.0`.
-
-| Nombre de tarea            | Solicitud de ejemplo                                   |
-| :------------------- | :------------------------------------------------ |
-| [Obtener sitio raíz][]    | GET /sites/root                                   |
-| [Obtener sitio][]         | GET /sites/{site-id}                              |
-| [Obtener sitio por su ruta de acceso][] | GET /sites/{hostname}:/{site-path}                |
-| [Obtener sitio para un grupo][] | GET /groups/{group-id}/sites/root             |
-
-[Obtener sitio]: ../api/site_get.md
-[Obtener sitio raíz]: ../api/site_get.md
-[Obtener sitio por su ruta de acceso]: ../api/site_get.md
-[Obtener sitio para un grupo]: ../api/site_get.md
-
-## <a name="json-representation"></a>Representación JSON
-
-A continuación se incluye una representación JSON del recurso **site**.
-
-El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las propiedades de ese recurso.
-
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
-
-```json
-{
-  "id": "string",
-  "root": { "@odata.type": "microsoft.graph.root" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-  "displayName": "string",
-
-  /* relationships */
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "drives": [ { "@odata.type": "microsoft.graph.drive" }],
-  "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
-  "sites": [ { "@odata.type": "microsoft.graph.site"} ],
-
-  /* inherited from baseItem */
-  "name": "string",
-  "createdDateTime": "datetime",
-  "description": "string",
-  "eTag": "string",
-  "lastModifiedDateTime": "datetime",
-  "webUrl": "url"
-}
-```
-
-## <a name="properties"></a>Propiedades
-
-| Nombre de la propiedad            | Tipo                                | Descripción                                                                                    |
-| :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string                              | El identificador único del elemento. Solo lectura.                                                  |
-| **createdDateTime**      | DateTimeOffset                      | La fecha y la hora de creación del elemento. Solo lectura.                                             |
-| **description**          | cadena                              | Texto descriptivo del sitio.                                                             |
-| **displayName**          | string                              | El título completo del sitio. Solo lectura.                                                        |
-| **lastModifiedDateTime** | DateTimeOffset                      | Fecha y hora de la última modificación del elemento. Solo lectura.                                       |
-| **name**                 | cadena                              | Nombre o título del elemento.                                                                  |
-| **root**                 | [root](root.md)                     | Si está presente, indica que se trata del sitio raíz de la colección de sitios. Solo lectura.            |
-| **sharepointIds**        | [sharepointIds](sharepointids.md)   | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                       |
-| **siteCollection**       | [siteCollection](sitecollection.md) | Proporciona detalles sobre la colección de sitios del sitio. Solo disponible en el sitio raíz. Solo lectura. |
-| **webUrl**               | string (URL)                        | Dirección URL que muestra el elemento en el explorador. Solo lectura.                                          |
-
-## <a name="relationships"></a>Relaciones
-
-| Nombre de la relación | Tipo                     | Descripción
-|:------------------|:-------------------------|:----------------------------------
-| **drive**         | [drive][]                | La unidad predeterminada (biblioteca de documentos) para este sitio.
-| **drives**        | Collection([drive][])    | La colección de unidades (bibliotecas de documentos) de este sitio.
-| **items**         | Collection([baseItem][]) | Se utiliza para resolver cualquier elemento contenido en este sitio. Esta colección no se puede enumerar.
-| **sites**         | Collection([site][])     | La colección de subsitios de este sitio.
-
-[baseItem]: baseitem.md
-[drive]: drive.md
+<span data-ttu-id="1e90b-182">[baseItem]: baseitem.md</span><span class="sxs-lookup"><span data-stu-id="1e90b-182">[baseItem]: baseitem.md</span></span>
+<span data-ttu-id="1e90b-183">[drive]: drive.md</span><span class="sxs-lookup"><span data-stu-id="1e90b-183">[drive]: drive.md</span></span>
 [identitySet]: identityset.md
-[site]: site.md
+<span data-ttu-id="1e90b-184">[site]: site.md</span><span class="sxs-lookup"><span data-stu-id="1e90b-184">[site]: site.md</span></span>
 
 <!-- {
   "type": "#page.annotation",

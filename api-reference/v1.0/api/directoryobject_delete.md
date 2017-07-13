@@ -1,31 +1,10 @@
-# <a name="delete-directoryobject"></a>Delete directoryObject
-
-Eliminar un directoryObject.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: _Directory.AccessAsUser.All_
-
-**NOTA:** Los usuarios, grupos y contactos son tipos de objeto de Active Directory. Por tanto, si tiene que eliminar usuarios, puede y debe usarse el siguiente **ámbito**: _User.ReadWrite.All_
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /directoryObjects/{id}
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="a86e2-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a86e2-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+## <span data-ttu-id="a86e2-121">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a86e2-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="a86e2-122">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a86e2-122">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -34,7 +13,8 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204,
 ```http
 DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
 ```
-##### <a name="response"></a>Respuesta
+##### <span data-ttu-id="a86e2-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a86e2-123">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

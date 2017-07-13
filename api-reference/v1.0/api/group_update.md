@@ -1,49 +1,15 @@
-# <a name="update-group"></a>Actualizar grupo
-
-Actualice las propiedades de un objeto de grupo.
-
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *Group.ReadWrite.All*
-
-## <a name="http-request"></a>Solicitud HTTP
-
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /groups/{id}
-```
-
-## <a name="request-headers"></a>Encabezados de solicitud
-
-| Nombre       | Tipo | Descripción|
-|:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-
-En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
-
-| Propiedad     | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|autoSubscribeNewMembers|Boolean|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico.|
-|descripción|String|Una descripción opcional del grupo. |
-|displayName|String|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
-|groupTypes|Colección string|Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad.|
-|mailEnabled|Booleano|Especifica si el grupo está habilitado para correo. Si la propiedad **securityEnabled** también es **true**, el grupo es un grupo de seguridad habilitado para correo electrónico; en caso contrario, el grupo es un grupo de distribución de Microsoft Exchange.|
-|mailNickname|String|El alias de correo del grupo. Esta propiedad debe especificarse al crear un grupo. Es compatible con $filter.|
-|securityEnabled|Booleano|Especifica si el grupo es un grupo de seguridad. Si la propiedad **mailEnabled** también es true, el grupo es un grupo de seguridad habilitado para correo electrónico; de lo contrario, es un grupo de seguridad. Debe ser **false** para grupos de Office 365. Es compatible con $filter.|
-|visibility|Boolean|Especifica la visibilidad de un grupo de Office 365. Los valores posibles son: **Private**, **Public** o vacío (que se interpreta como **Public**).|
-
-**Nota**
-
-- Puede actualizar **autoSubscribeNewMembers** especificándolo en su propia solicitud PATCH sin incluir el resto de propiedades de la tabla anterior.
+<span data-ttu-id="7706b-p110">Solo un subconjunto de la API de grupo relativa a la administración de grupos básicos admite permisos delegados y de aplicación. Todos los demás miembros de la API de grupo, incluida la actualización **autoSubscribeNewMembers**, son compatible solo con los permisos delegados. Vea [problemas conocidos](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) para obtener ejemplos.</span><span class="sxs-lookup"><span data-stu-id="7706b-p110">Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.</span></span>
 - Solo un subconjunto de la API de grupo relativa a la administración de grupos básicos admite permisos delegados y de aplicación. Todos los demás miembros de la API de grupo, incluida la actualización **autoSubscribeNewMembers**, son compatible solo con los permisos delegados. Vea [problemas conocidos](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) para obtener ejemplos.
 
-## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.
+## <span data-ttu-id="7706b-162">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7706b-162">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7706b-163">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="7706b-163">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a>Ejemplo
+## <span data-ttu-id="7706b-164">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7706b-164">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Solicitud
+##### <span data-ttu-id="7706b-165">Solicitud</span><span class="sxs-lookup"><span data-stu-id="7706b-165">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -66,7 +32,8 @@ Content-length: 211
 }
 ```
 
-##### <a name="response"></a>Respuesta
+##### <span data-ttu-id="7706b-166">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7706b-166">Response</span></span>
+<a id="response" class="xliff"></a>
 
 <!-- {
   "blockType": "response",

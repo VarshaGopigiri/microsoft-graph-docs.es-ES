@@ -1,29 +1,11 @@
-# <a name="remove-acceptedsender"></a>Remove acceptedSender
-
-Quita un usuario o grupo de la lista de acceptedSenders. 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Group.ReadWrite.All*
-## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
-
-```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor |
-|:---------------|:--------|
-| Authorization  | {token} de portador. Necesario.  |
-
-## <a name="request-body"></a>Cuerpo de solicitud
-No proporcione un cuerpo de solicitud para este método.
-
-
-## <a name="response"></a>Respuesta
+<span data-ttu-id="e0fe8-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e0fe8-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un par de ejemplos de la solicitud.
+## <span data-ttu-id="e0fe8-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e0fe8-117">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="e0fe8-118">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e0fe8-118">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e0fe8-119">Aquí tiene un par de ejemplos de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e0fe8-119">Here are a couple of examples of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -34,8 +16,9 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id="us
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id="groups/{id}"
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. 
+##### <span data-ttu-id="e0fe8-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e0fe8-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e0fe8-121">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e0fe8-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

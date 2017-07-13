@@ -1,33 +1,8 @@
-<a id="pivottable-resource-type" class="xliff"></a>
-# Tipo de recurso PivotTable
+<span data-ttu-id="840b5-p103">La hoja de cálculo que contiene la tabla dinámica actual. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="840b5-p103">The worksheet containing the current PivotTable. Read-only.</span></span>| La hoja de cálculo que contiene la tabla dinámica actual. Solo lectura.   |
 
-Representa una tabla dinámica de Excel.
-
-<a id="methods" class="xliff"></a>
-## Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Get workbookPivotTable](../api/workbookpivottable_get.md) | [workbookPivotTable](workbookpivottable.md) |Lee las propiedades y relaciones del objeto workbookPivotTable.|
-|[Refresh](../api/workbookpivottable_refresh.md)|Ninguno|Actualiza la tabla dinámica. |
-|[Refreshall](../api/workbookpivottable_refreshall.md)|Ninguno|Actualizar todas las tablas de una hoja de cálculo. Tenga en cuenta que esta acción sólo está disponible en la colección de tabla dinámica.|
-
-<a id="properties" class="xliff"></a>
-## Propiedades
-| Propiedad     | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|id|Cadena| ID la tabla dinámica.   Solo lectura.|
-|name|String|Nombre de la tabla dinámica.    |
-
-<a id="relationships" class="xliff"></a>
-## Relaciones
-| Relación | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| La hoja de cálculo que contiene la tabla dinámica actual. Solo lectura.   |
-
+## <span data-ttu-id="840b5-136">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="840b5-136">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-## Representación JSON
-Aquí tiene una representación JSON del recurso.
+<span data-ttu-id="840b5-137">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="840b5-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
