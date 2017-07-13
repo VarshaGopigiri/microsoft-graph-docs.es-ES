@@ -1,14 +1,18 @@
-# <a name="known-issues-with-microsoft-graph"></a>Problemas conocidos de Microsoft Graph
+# Problemas conocidos de Microsoft Graph
+<a id="known-issues-with-microsoft-graph" class="xliff"></a>
 
 En este artículo, se describen los problemas conocidos de Microsoft Graph. Para obtener información sobre las actualizaciones más recientes, consulte el [Registro de cambios de Microsoft Graph](changelog.md).
 
-## <a name="users"></a>Usuarios
+## Usuarios
+<a id="users" class="xliff"></a>
 
-### <a name="no-instant-access-after-creation"></a>No hay acceso instantáneo después de la creación
+### No hay acceso instantáneo después de la creación
+<a id="no-instant-access-after-creation" class="xliff"></a>
 
 Los usuarios pueden crearse inmediatamente a través de un POST en la entidad del usuario. Una licencia de Office 365 primero se debe asignar a un usuario, con el fin de obtener acceso a los servicios de Office 365. Incluso entonces, debido a la naturaleza distribuida del servicio, puede llevar 15 minutos que los archivos, mensajes y entidades de eventos estén disponibles para su uso para este usuario, a través de la API de Microsoft Graph. Durante este tiempo, las aplicaciones recibirán una respuesta de error HTTP 404.
 
-### <a name="photo-restrictions"></a>Restricciones de la foto
+### Restricciones de la foto
+<a id="photo-restrictions" class="xliff"></a>
 
 Leer y actualizar la foto de perfil de un usuario solo es posible si el usuario tiene un buzón. Además, cualquier foto que *pueda* haberse almacenado previamente mediante la propiedad **thumbnailPhoto** (usando la vista previa de la API unificada de Office 365 o Azure AD Graph, o bien mediante la sincronización de AD Connect) ya no será accesible mediante la propiedad **photo** del recurso [user](../api-reference/v1.0/resources/user.md). En este caso, no poder leer o actualizar una foto provocaría el error siguiente:
 
@@ -22,19 +26,23 @@ Leer y actualizar la foto de perfil de un usuario solo es posible si el usuario 
 ```
 
 
-### <a name="using-delta-query"></a>Usar la consulta de delta
+### Usar la consulta de delta
+<a id="using-delta-query" class="xliff"></a>
 
 Para ver los problemas conocidos al usar la consulta delta, consulte la [sección Consulta delta](#delta-query) de este artículo.
 
-## <a name="groups-and-microsoft-teams"></a>Grupos y Microsoft Teams
+## Grupos y Microsoft Teams
+<a id="groups-and-microsoft-teams" class="xliff"></a>
 
 >**Nota** Actualmente, Microsoft Teams está en versión preliminar y solo se encuentra disponible en el punto de conexión de la versión beta de Microsoft Graph.
 
-### <a name="policy"></a>Directiva
+### Directiva
+<a id="policy" class="xliff"></a>
 
 Usar Microsoft Graph para crear y nombrar un grupo de Office 365 omite cualquier directiva de grupo de Office 365 que esté configurada a través de Outlook Web App. 
 
-### <a name="permissions-for-groups-and-microsoft-teams"></a>Permisos para grupos y Microsoft Teams
+### Permisos para grupos y Microsoft Teams
+<a id="permissions-for-groups-and-microsoft-teams" class="xliff"></a>
 
 Microsoft Graph expone dos permisos (*Group.Read.All* y *Group.ReadWrite.All*) para obtener acceso a las API de grupos y Microsoft Teams. Un administrador debe aceptar estos permisos (lo que supone un cambio respecto a la versión preliminar).  En el futuro, plantearemos agregar nuevos permisos para los grupos y equipos que puedan admitir los usuarios.
 
@@ -54,35 +62,43 @@ Ejemplos de funciones de grupo que admiten solo permisos delegados:
 * Remitentes externos, remitentes aceptados o rechazados, suscripciones a grupos
 * Favoritos del usuario y recuento no visto
 
-### <a name="teams-in-microsoft-teams-preview"></a>Equipos de Microsoft Teams (versión preliminar)
+### Equipos de Microsoft Teams (versión preliminar)
+<a id="teams-in-microsoft-teams-preview" class="xliff"></a>
 
 Microsoft Teams y Grupos de Office 365 comparten una funcionalidad similar. Todas las API de grupo se pueden usar con los equipos, con la excepción de que la API de creación de grupo no le permite crear un equipo en este momento.  Las versiones futuras de la API admitirán esta posibilidad.
 
-### <a name="microsoft-teams-channels-preview"></a>Canales de Microsoft Teams (versión preliminar)
+### Canales de Microsoft Teams (versión preliminar)
+<a id="microsoft-teams-channels-preview" class="xliff"></a>
 
 Actualmente, puede leer y crear canales, pero no puede actualizarlos o eliminarlos.  Las versiones futuras de la API admitirán esta posibilidad.
 
-### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Mensajes de chat y conversaciones de chat de Microsoft Teams (versión preliminar)
+### Mensajes de chat y conversaciones de chat de Microsoft Teams (versión preliminar)
+<a id="microsoft-teams-chat-threads-and-chat-messages-preview" class="xliff"></a>
 
 Actualmente, se pueden crear conversaciones de chat en canales, pero no es posible leer las conversaciones de chat existentes o agregar respuestas. Además, no se pueden leer ni escribir chats directos entre los usuarios que están fuera del ámbito de un grupo o canal.  Las versiones futuras de la API agregarán capacidades adicionales en esta área.
 
 
-### <a name="adding-and-getting-attachments-of-group-posts"></a>Agregar y obtener los datos adjuntos de las publicaciones de grupo
+### Agregar y obtener los datos adjuntos de las publicaciones de grupo
+<a id="adding-and-getting-attachments-of-group-posts" class="xliff"></a>
 
 Actualmente, al [agregar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) datos adjuntos a las publicaciones de grupo, así como al [enumerar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) y obtener los datos adjuntos de las publicaciones de grupo, se devuelve el mensaje de error "La solicitud de OData no es compatible". Se ha desarrollado una corrección tanto para la versión `/v1.0` como para la `/beta` y se espera que esté disponible a finales de enero de 2016.
 
-### <a name="setting-the-allowexternalsenders-property"></a>Establecer la propiedad allowExternalSenders
+### Establecer la propiedad allowExternalSenders
+<a id="setting-the-allowexternalsenders-property" class="xliff"></a>
 
 Existe en la actualidad un problema que evita el establecimiento de la propiedad **allowExternalSenders** de un grupo en operaciones POST o PATCH, en `/v1.0` y `/beta`.
 
-### <a name="using-delta-query"></a>Usar la consulta de delta
+### Usar la consulta de delta
+<a id="using-delta-query" class="xliff"></a>
 
 Para ver los problemas conocidos al usar la consulta de delta, vea la [sección Consulta de delta](#delta-query) de este artículo.
 
 
-## <a name="calendars"></a>Calendarios
+## Calendarios
+<a id="calendars" class="xliff"></a>
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Agregar y acceder a calendarios basados en archivos ICS en el buzón del usuario
+### Agregar y acceder a calendarios basados en archivos ICS en el buzón del usuario
+<a id="adding-and-accessing-ics-based-calendars-in-users-mailbox" class="xliff"></a>
 
 Actualmente, existe una compatibilidad parcial con un calendario basado en una suscripción a calendarios de Internet (ICS):
 
@@ -90,7 +106,8 @@ Actualmente, existe una compatibilidad parcial con un calendario basado en una s
 * [Enumerar los calendarios del usuario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id** de cada [calendario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
 * También puede [enumerar los eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
 
-### <a name="accessing-a-shared-calendar"></a>Acceso a calendarios compartidos
+### Acceso a calendarios compartidos
+<a id="accessing-a-shared-calendar" class="xliff"></a>
 
 Al intentar tener acceso a los eventos de un calendario que se ha compartido por otro usuario mediante la siguiente operación:
 
@@ -98,30 +115,39 @@ Al intentar tener acceso a los eventos de un calendario que se ha compartido por
 GET \users('{id}')\calendars('{id}')\events
 ```
 
-Puede obtener HTTP 500 con el código de error `ErrorInternalServerTransientError`.
+Puede obtener HTTP 500 con el código de error `ErrorInternalServerTransientError`. El error se produce porque:
 
-Tradicionalmente existen dos maneras de implementar el uso compartido del calendario, que, con fines de diferenciación, se les hace referencia como la implementación "antigua" y la implementación "nueva". El error se produce porque: 
+- Tradicionalmente existen dos maneras de implementar el uso compartido del calendario, que, con fines de diferenciación, se les hace referencia como el enfoque "antiguo" y el enfoque "nuevo".
+- El enfoque nuevo está disponible en estos momentos para los calendarios de uso compartido con permisos de vista o edición, pero no con permisos delegados. 
+- Puede usar la API de REST de calendario para ver o editar los calendarios compartidos, solo si los calendarios se han compartido según el enfoque **nuevo**. 
+- No puede usar la API de REST de calendario para ver o editar dichos calendarios (o sus eventos) si los calendarios se han compartido según el enfoque **antiguo**.
 
-- Actualmente, solo Outlook en la web, Outlook en iOS y Outlook en Android admiten el uso compartido de calendarios en Office 365 en la nueva implementación.
-- Puede usar la API de REST de calendario para ver o editar los calendarios compartidos, solo si los calendarios se han compartido según la nueva implementación. 
-- No puede usar la API de REST de calendario para ver o editar calendarios (o sus eventos) que se hayan compartido mediante la antigua implementación.
 
-Para solucionar esto, el propietario del calendario debe volver a compartirlo en Outlook en la web, Outlook en iOS o en Outlook en Android y debe volver a aceptar el calendario mediante Outlook en la web. Después de volver a aceptarlo, una manera de comprobar si el calendario se ha compartido con el modelo nuevo es ver correctamente el calendario compartido en Outlook en iOS o en Outlook en Android.
+Si un calendario se ha compartido con permisos de vista o edición pero con el enfoque antiguo, ahora puede trabajar en el error y actualizar manualmente el calendario de uso compartido para que use el enfoque nuevo. Con el tiempo, Outlook actualizará automáticamente todos los calendarios compartidos para que usen el nuevo enfoque, incluidos los calendarios compartidos con permisos de delegado. 
 
-Un calendario compartido con usted mediante la nueva implementación aparece como cualquier otro calendario de su buzón. Puede usar la API de REST de calendario para ver o editar eventos en el calendario compartido, como si fuera su propio calendario. Por ejemplo:
+Para actualizar manualmente un calendario compartido para que use el enfoque nuevo, siga estos pasos:
+1.  El destinatario quita el calendario que se ha compartido anteriormente con ellos.
+2.  El propietario del calendario vuelve a compartirlo en Outlook en la web, Outlook en iOS o Outlook en Android.
+3.  El destinatario vuelve a aceptar el calendario compartido con Outlook en la web. (Será posible usar otros clientes de Outlook pronto).
+4.  El destinatario comprueba que el calendario se ha vuelto a compartir correctamente con el nuevo enfoque al ver el calendario compartido en Outlook en iOS o en Outlook en Android.
+
+Un calendario compartido con usted mediante el nuevo enfoque aparece como cualquier otro calendario de su buzón. Puede usar la API de REST de calendario para ver o editar eventos en el calendario compartido, como si fuera su propio calendario. Por ejemplo:
 
 ```http
 GET \me\calendars('{id}')\events
 ```
 
 
-## <a name="contacts"></a>Contactos
+## Contactos
+<a id="contacts" class="xliff"></a>
 
-### <a name="organization-contacts-available-in-only-beta"></a>Contactos de organización disponibles solo en beta
+### Contactos de organización disponibles solo en beta
+<a id="organization-contacts-available-in-only-beta" class="xliff"></a>
 
 Solo los contactos personales son compatibles actualmente. Actualmente no se admiten contactos de la organización en `/v1.0`, pero pueden encontrarse en `/beta`.
 
-### <a name="default-contacts-folder"></a>Carpeta de contactos predeterminada
+### Carpeta de contactos predeterminada
+<a id="default-contacts-folder" class="xliff"></a>
 
 En la versión `/v1.0`, `GET /me/contactFolders` no incluye la carpeta de contactos predeterminada del usuario. 
 
@@ -137,7 +163,8 @@ En la consulta anterior:
 2. Al anexar `&$select=parentFolderId` se devuelve solo la propiedad **parentFolderId** del contacto, que es el identificador de la carpeta de contactos predeterminada.
 
 
-### <a name="accessing-contacts-via-a-contact-folder-in-beta"></a>Acceder a contactos a través de una carpeta de contactos en la versión beta
+### Acceder a contactos a través de una carpeta de contactos en la versión beta
+<a id="accessing-contacts-via-a-contact-folder-in-beta" class="xliff"></a>
 
 En la versión `/beta`, existe un problema en la actualidad que impide acceder a un [contacto](../api-reference/beta/resources/contact.md) especificando su carpeta primaria en la dirección de solicitud REST, tal y como se muestra en los dos escenarios siguientes.
 
@@ -162,17 +189,21 @@ GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
 
-## <a name="messages"></a>Mensajes
+## Mensajes
+<a id="messages" class="xliff"></a>
 
-### <a name="the-comment-parameter-for-creating-a-draft"></a>El parámetro de comentario para crear un borrador
+### El parámetro de comentario para crear un borrador
+<a id="the-comment-parameter-for-creating-a-draft" class="xliff"></a>
 
 El parámetro **comentario** para crear una respuesta o enviar un borrador ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) no se convierte en parte del cuerpo del borrador del mensaje resultante.  
 
-## <a name="drives-files-and-content-streaming"></a>Unidades, archivos y streaming de contenido
+## Unidades, archivos y streaming de contenido
+<a id="drives-files-and-content-streaming" class="xliff"></a>
 
 * La primera vez que accede a una unidad personal del usuario a través de Microsoft Graph antes de que el usuario acceda a su sitio personal a través del explorador, se produce una respuesta 401.
 
-## <a name="query-parameter-limitations"></a>Limitaciones del parámetro de consulta
+## Limitaciones del parámetro de consulta
+<a id="query-parameter-limitations" class="xliff"></a>
 
 * Limitaciones de **$expand**:
     * No se admite para `nextLink`
@@ -180,18 +211,20 @@ El parámetro **comentario** para crear una respuesta o enviar un borrador ([cre
     * No se admite con parámetros adicionales (**$filter**, **$select**)
 * No se admiten varios espacios de nombres
 * Las solicitudes GET en `$ref` y la conversión no se admiten en usuarios, grupos, dispositivos, entidades de servicio y aplicaciones.
-* `@odata.bind` no se admite.  Esto significa que los desarrolladores no podrán establecer correctamente `Accepted` o `RejectedSenders` en un grupo.
+* `@odata.bind` no es compatible.  Esto significa que los desarrolladores no podrán establecer correctamente `Accepted` o `RejectedSenders` en un grupo.
 * `@odata.id` no está presente en las navegaciones de no contención (como los mensajes) cuando se usan metadatos mínimos
 * No está disponible el filtrado o la búsqueda de carga de trabajo cruzada. 
 * La búsqueda de texto completo (con **$search**) solo está disponible para algunas entidades, como los mensajes.
 
-## <a name="delta-query"></a>Consulta delta
+## Consulta delta
+<a id="delta-query" class="xliff"></a>
 
 * El contexto OData a veces se devuelve de forma incorrecta cuando se realiza el seguimiento de cambios en las relaciones.
 * Las extensiones de esquema (heredadas) no se devuelven con la instrucción $select, pero se devuelven sin $select.
 * Los clientes no pueden controlar los cambios para abrir las extensiones o las extensiones de esquema registradas.
 
-## <a name="application-and-serviceprincipal-api-changes"></a>Cambios en la API servicePrincipal y en aplicaciones
+## Cambios en la API servicePrincipal y en aplicaciones
+<a id="application-and-serviceprincipal-api-changes" class="xliff"></a>
 
 Existen cambios actuales en las entidades [application](../api-reference/beta/resources/application.md) y [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) en el desarrollo. A continuación se muestra un resumen de las limitaciones actuales y las características de la API en el desarrollo.
 
@@ -214,43 +247,54 @@ En desarrollo:
 * Los usuarios de cuentas de Microsoft (MSA) pueden registrar aplicaciones.
 * Compatibilidad con los protocolos SAML y WsFed.
 
-## <a name="extensions"></a>Extensiones
+## Extensiones
+<a id="extensions" class="xliff"></a>
 
-### <a name="change-tracking-is-not-supported"></a>No se admite el seguimiento de cambios
+### No se admite el seguimiento de cambios
+<a id="change-tracking-is-not-supported" class="xliff"></a>
 
 El seguimiento de cambios (consulta delta) aún no se admite para las propiedades de extensiones abiertas o de esquema.
 
-### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Crear un recurso y una extensión abierta al mismo tiempo
+### Crear un recurso y una extensión abierta al mismo tiempo
+<a id="creating-a-resource-and-open-extension-at-the-same-time" class="xliff"></a>
 
 No se puede especificar una extensión abierta a la vez que se crea una instancia de **administrativeUnit**, **device**, **group**, **organization** o **user**. Debe crear primero la instancia y después especificar los datos de extensión abierta en una solicitud ``POST`` posterior en esa instancia.
 
-### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Límite de 100 valores de propiedad de extensión de esquema permitido por cada instancia del recurso
+### Límite de 100 valores de propiedad de extensión de esquema permitido por cada instancia del recurso
+<a id="limit-of-100-schema-extension-property-values-allowed-per-resource-instance" class="xliff"></a>
 
 En la actualidad, los recursos de directorio, como **dispositivos**, **grupos** y **usuarios**, limitan a 100 el número total de valores de propiedad de extensión de esquema que pueden establecerse en un recurso.
 
-## <a name="json-batching"></a>Procesamiento por lotes JSON
+## Procesamiento por lotes JSON
+<a id="json-batching" class="xliff"></a>
 
-### <a name="no-nested-batch"></a>No hay ningún lote anidado
+### No hay ningún lote anidado
+<a id="no-nested-batch" class="xliff"></a>
 
 Las solicitudes por lotes JSON no deben contener ninguna solicitud de proceso por lotes anidados.
 
-### <a name="all-individual-requests-must-be-synchronous"></a>Todas las solicitudes individuales deben ser sincrónicas
+### Todas las solicitudes individuales deben ser sincrónicas
+<a id="all-individual-requests-must-be-synchronous" class="xliff"></a>
 
 Todas las solicitudes de contenido en una solicitud por lotes se deben ejecutar de forma sincrónica. Si está presente, se omitirá la preferencia `respond-async`.
 
-### <a name="no-transactions"></a>No hay transacciones
+### No hay transacciones
+<a id="no-transactions" class="xliff"></a>
 
 Microsoft Graph no admite actualmente el procesamiento transaccional de solicitudes individuales. Se omitirá la propiedad `atomicityGroup` en solicitudes individuales.
 
-### <a name="uris-must-be-relative"></a>Los URI deben ser relativos
+### Los URI deben ser relativos
+<a id="uris-must-be-relative" class="xliff"></a>
 
 Especifique siempre los identificadores URI relativos en solicitudes por lotes. Microsoft Graph crea estas direcciones URL absolutas mediante el punto de conexión de la versión que está incluido en la URL por lotes.
 
-### <a name="limit-on-batch-size"></a>Límite de tamaño por lotes
+### Límite de tamaño por lotes
+<a id="limit-on-batch-size" class="xliff"></a>
 
 Las solicitudes por lotes JSON están limitadas actualmente a cinco solicitudes individuales. A medida que se desarrolle el procesamiento por lotes JSON, este límite se elevará.
 
-### <a name="simplified-dependencies"></a>Dependencias simplificadas
+### Dependencias simplificadas
+<a id="simplified-dependencies" class="xliff"></a>
 
 Las solicitudes individuales pueden depender de otras solicitudes individuales. Actualmente, las solicitudes solo pueden depender de una sola solicitud y deben seguir uno de estos tres modelos:
 
@@ -260,13 +304,16 @@ Las solicitudes individuales pueden depender de otras solicitudes individuales. 
 
 A medida que madure el procesamiento por lotes JSON, se irán quitando estas limitaciones.
 
-## <a name="cloud-solution-provider-apps"></a>Aplicaciones del Proveedor de soluciones en la nube
+## Aplicaciones del Proveedor de soluciones en la nube
+<a id="cloud-solution-provider-apps" class="xliff"></a>
 
-### <a name="csp-apps-must-use-azure-ad-endpoint"></a>Las aplicaciones de CSP deben usar el punto de conexión de Azure AD
+### Las aplicaciones de CSP deben usar el punto de conexión de Azure AD
+<a id="csp-apps-must-use-azure-ad-endpoint" class="xliff"></a>
 
 Las aplicaciones del Proveedor soluciones en la nube (CSP) deben adquirir tokens de los puntos de conexión de Azure AD (v1) para llamar correctamente a Microsoft Graph en sus clientes gestionados por el asociado. Actualmente, no se admite adquirir un token a través del punto de conexión más reciente de Azure AD v2.0.
 
-### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>El consentimiento previo de las aplicaciones de CSP no funciona en algunos inquilinos de cliente
+### El consentimiento previo de las aplicaciones de CSP no funciona en algunos inquilinos de cliente
+<a id="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants" class="xliff"></a>
 
 En determinadas circunstancias, el consentimiento previo de las aplicaciones de CSP puede que no funcione para algunos de los inquilinos de cliente.
 
@@ -291,10 +338,12 @@ Mientras tanto, para desbloquear el desarrollo y las pruebas, puede usar la sigu
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 
-## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Esta función solo está disponible en las API de REST de Office 365 o las API de Graph de Azure AD
+## Esta función solo está disponible en las API de REST de Office 365 o las API de Graph de Azure AD
+<a id="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis" class="xliff"></a>
 
 Algunas funciones todavía no están disponibles en Microsoft Graph. Si no ve la funcionalidad que busca, puede usar las [API de REST de Office 365](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) específicas del punto de conexión. Para Azure Active Directory, consulte la publicación del blog [Microsoft Graph o Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre las características que solo están disponibles a través de la API de Azure AD Graph.
 
-## <a name="feedback"></a>Comentarios
+## Comentarios
+<a id="feedback" class="xliff"></a>
 
 > Su opinión es importante para nosotros. Conecte con nosotros en [Desbordamiento de pila](http://stackoverflow.com/questions/tagged/microsoftgraph).

@@ -1,27 +1,31 @@
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Tipo de recurso plannerBucketTaskBoardTaskFormat
+# Tipo de recurso plannerBucketTaskBoardTaskFormat
+<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
 
 El recurso **plannerBucketTaskBoardTaskFormat** representa la información usada para procesar una tarea correctamente en la vista Depósitos del panel de tareas (una vista organizada por tareas dentro de los depósitos a los que están asignadas). Cada [task](plannertask.md) tendrá un objeto **plannerBucketTaskBoardTaskFormat** asociado.
 
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leer las propiedades y las relaciones del objeto **plannerBucketTaskBoardTaskFormat**.|
-|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)    |Actualizar el objeto **plannerBucketTaskBoardTaskFormat**. |
+|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Actualizar el objeto **plannerBucketTaskBoardTaskFormat**. |
 
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## Propiedades
+<a id="properties" class="xliff"></a>
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura. Identificador del recurso. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|orderHint|String|Sugerencia usada para ordenar tareas en la vista Depósito del panel de tareas. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
+|id|Cadena| Solo lectura. Identificador del recurso. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
+|orderHint|Cadena|Sugerencia usada para ordenar tareas en la vista Depósito del panel de tareas. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
 
-### <a name="relationships"></a>Relaciones
+## Relaciones
+<a id="relationships" class="xliff"></a>
 Ninguno
 
 
-### <a name="json-representation"></a>Representación JSON
-
+## Representación JSON
+<a id="json-representation" class="xliff"></a>
 Aquí tiene una representación JSON del recurso.
 
 <!-- {

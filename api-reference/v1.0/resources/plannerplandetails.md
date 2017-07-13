@@ -1,10 +1,12 @@
-# <a name="plannerplandetails-resource-type"></a>Tipo de recurso plannerPlanDetails
+# Tipo de recurso plannerPlanDetails
+<a id="plannerplandetails-resource-type" class="xliff"></a>
 
 
 El recurso **plannerPlanDetails** representa la información adicional de un plan. Cada objeto [plan](plannerplan.md) tiene un objeto details.
 
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
@@ -12,19 +14,21 @@ El recurso **plannerPlanDetails** representa la información adicional de un pla
 |[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |Actualizar el objeto **plannerPlanDetails**. |
 
 
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## Propiedades
+<a id="properties" class="xliff"></a>
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Objeto que especifica las descripciones de las seis categorías que pueden estar asociadas a las tareas del plan|
-|id|String| Solo lectura. Id. de los detalles del plan. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
+|id|Cadena| Solo lectura. Id. de los detalles del plan. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Conjunto de identificadores de usuario con el que se comparte este plan. Si está aprovechando los grupos de Office 365, use la API de grupos para administrar la pertenencia a los grupos a fin de compartir el plan del [grupo](group.md). También puede agregar los miembros existentes del grupo a esta colección, aunque no es necesario que obtengan acceso al plan propiedad del grupo. |
 
-### <a name="relationships"></a>Relaciones
+## Relaciones
+<a id="relationships" class="xliff"></a>
 Ninguno
 
 
-### <a name="json-representation"></a>Representación JSON
-
+## Representación JSON
+<a id="json-representation" class="xliff"></a>
 Aquí tiene una representación JSON del recurso.
 
 <!-- {
