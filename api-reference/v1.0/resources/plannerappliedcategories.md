@@ -1,14 +1,10 @@
-# <a name="plannerappliedcategories-resource-type"></a>Tipo de recurso plannerAppliedCategories
-
-
-El recurso **AppliedCategoriesCollection** representa la colección de categorías (o de etiquetas) que se han aplicado a una tarea. Forma parte del objeto [plannerTask](plannertask.md). Puede haber hasta 6 categorías aplicadas a una tarea. Las descripciones de las categorías (por ejemplo, `category1`, `category2`, etc.) forman parte del objeto [plan details](plannerplandetails.md). Este es un tipo abierto.
-
-### <a name="properties"></a>Propiedades
+<span data-ttu-id="355f7-p102">El cliente puede definir las propiedades de un tipo abierto. En este caso, el cliente debe proporcionar `category1`, `category2`, `category3`, `category4`, `category5` o `category6` como propiedades con sus valores como booleano `true` cuando se apliquen las categorías correspondientes en la tarea. A continuación se muestra un ejemplo. Si no se aplican, las propiedades se quitan automáticamente estableciendo sus valores en el booleano `false`.</span><span class="sxs-lookup"><span data-stu-id="355f7-p102">Properties of an Open Type can be defined by the client. In this case though, the client must provide `category1`, `category2`, `category3`, `category4`, `category5` and/or `category6` as properties with their values being the `true` boolean when the corresponding categories are applied on the task. Example is shown below. When they do not apply, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 El cliente puede definir las propiedades de un tipo abierto. En este caso, el cliente debe proporcionar `category1`, `category2`, `category3`, `category4`, `category5` o `category6` como propiedades con sus valores como booleano `true` cuando se apliquen las categorías correspondientes en la tarea. A continuación se muestra un ejemplo. Si no se aplican, las propiedades se quitan automáticamente estableciendo sus valores en el booleano `false`. 
 
-## <a name="json-representation"></a>Representación JSON
+## <span data-ttu-id="355f7-112">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="355f7-112">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="355f7-113">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="355f7-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -24,7 +20,7 @@ Aquí tiene una representación JSON del recurso
 }
 ```
 
-Ejemplo: 
+<span data-ttu-id="355f7-114">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="355f7-114">Example:</span></span> 
 
 ```json
 {

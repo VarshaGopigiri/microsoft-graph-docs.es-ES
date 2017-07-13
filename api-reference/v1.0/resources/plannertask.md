@@ -1,9 +1,8 @@
-<span data-ttu-id="4f70c-p118">Solo lectura. Admite valores NULL. Se utiliza para representar la tarea correctamente en la vista del panel de la tarea cuando se agrupan por progreso.</span><span class="sxs-lookup"><span data-stu-id="4f70c-p118">Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.</span></span>| Solo lectura. Admite valores NULL. Se utiliza para representar la tarea correctamente en la vista del panel de la tarea cuando se agrupan por progreso.|
+<span data-ttu-id="973df-p118">Solo lectura. Admite valores NULL. Se utiliza para representar la tarea correctamente en la vista del panel de la tarea cuando se agrupan por progreso.</span><span class="sxs-lookup"><span data-stu-id="973df-p118">Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.</span></span>| Solo lectura. Admite valores NULL. Se utiliza para representar la tarea correctamente en la vista del panel de la tarea cuando se agrupan por progreso.|
 
-### <span data-ttu-id="4f70c-233">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="4f70c-233">JSON representation</span></span>
+## <span data-ttu-id="973df-233">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="973df-233">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-<span data-ttu-id="4f70c-234">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="4f70c-234">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="973df-234">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="973df-234">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

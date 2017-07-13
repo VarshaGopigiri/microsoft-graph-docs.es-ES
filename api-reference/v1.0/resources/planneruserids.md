@@ -1,15 +1,11 @@
-# <a name="planneruserids-resource-type"></a>Tipo de recurso plannerUserIds
-
-El recurso **plannerUserIds** representa la lista de identificadores de usuario con los que se comparte un [plan](plannerplan.md). Este es un tipo abierto. Si está aprovechando los grupos de Office 365, use la API de grupos para administrar la pertenencia a los grupos para compartir el plan del [grupo](group.md). También puede agregar los miembros existentes del grupo a esta colección, aunque no es necesario que obtengan acceso al plan propiedad del grupo.
-
-
-### <a name="properties"></a>Propiedades
+<span data-ttu-id="86bb8-p102">El cliente puede definir las propiedades de un tipo abierto. En este caso, el cliente debe proporcionar los id. de usuario como propiedades y sus valores deben ser el booleano `true`. Si los id. de usuario ya no se comparten, las propiedades se quitarán automáticamente estableciendo sus valores en el booleano `false`.</span><span class="sxs-lookup"><span data-stu-id="86bb8-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide user ids as properties with their values being the `true` boolean. When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 El cliente puede definir las propiedades de un tipo abierto. En este caso, el cliente debe proporcionar los id. de usuario como propiedades y sus valores deben ser el booleano `true`. Si los id. de usuario ya no se comparten, las propiedades se quitarán automáticamente estableciendo sus valores en el booleano `false`.
 
 
-## <a name="json-representation"></a>Representación JSON
+## <span data-ttu-id="86bb8-110">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="86bb8-110">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="86bb8-111">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="86bb8-111">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -25,7 +21,7 @@ Aquí tiene una representación JSON del recurso
 }
 ```
 
-// Ejemplo
+<span data-ttu-id="86bb8-112">// Ejemplo</span><span class="sxs-lookup"><span data-stu-id="86bb8-112">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id

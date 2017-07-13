@@ -1,18 +1,8 @@
-# <a name="plannerassignment-resource-type"></a>Tipo de recurso plannerAssignment
+<span data-ttu-id="b602d-p103">La sugerencia usada para ordenar las personas a las que se ha asignado una tarea. El formato se define tal como se describe [aquí](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="b602d-p103">Hint used to order assignees in a task. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|La sugerencia usada para ordenar las personas a las que se ha asignado una tarea. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
 
-El recurso **plannerAssignment** representa la asignación de una tarea a un usuario. Este tipo se usa en el tipo abierto [plannerAssignments](plannerassignments.md).
-
-
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|assignedBy|[identitySet](identityset.md)|La identidad del usuario que realiza la asignación de la tarea (el asignante).|
-|assignedDateTime|DateTimeOffset|La hora a la que se asignó la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|La sugerencia usada para ordenar las personas a las que se ha asignado una tarea. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
-
-### <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso.
+## <span data-ttu-id="b602d-120">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b602d-120">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="b602d-121">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="b602d-121">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

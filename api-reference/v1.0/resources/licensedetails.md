@@ -1,29 +1,12 @@
-# <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
+<span data-ttu-id="580bd-p104">Nombre para mostrar de SKU único. Es igual al skuPartNumber en el objeto [SubscribedSku](subscribedsku.md) relacionado; por ejemplo: "AAD_Premium". Solo lectura</span><span class="sxs-lookup"><span data-stu-id="580bd-p104">Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". Read-only</span></span>| Nombre para mostrar de SKU único. Es igual al skuPartNumber en el objeto [SubscribedSku](subscribedsku.md) relacionado; por ejemplo: "AAD_Premium". Solo lectura |
 
-Contiene información sobre una licencia asignada a un usuario.
+## <span data-ttu-id="580bd-132">Relaciones</span><span class="sxs-lookup"><span data-stu-id="580bd-132">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="580bd-133">Ninguno</span><span class="sxs-lookup"><span data-stu-id="580bd-133">None</span></span>
 
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Enumerar licenseDetails](../api/user_list_licensedetails.md) | Colección licenseDetails |Recupere una lista de objetos licenseDetails para un usuario.|
-
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
-
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|id|String| Identificador único del objeto licenseDetails. Solo lectura, no admite valores NULL. |
-|servicePlans|Colección [servicePlanInfo](serviceplaninfo.md)| Información sobre los planes de servicio asignados a la licencia. Solo lectura, no admite valores NULL. |
-|skuId|Guid| Identificador único (GUID) del SKU de servicio. Es igual a la propiedad skuId en el objeto [SubscribedSku](subscribedsku.md) relacionado. Solo lectura |
-|skuPartNumber|String| Nombre para mostrar de SKU único. Es igual al skuPartNumber en el objeto [SubscribedSku](subscribedsku.md) relacionado; por ejemplo: "AAD_Premium". Solo lectura |
-
-### <a name="relationships"></a>Relaciones
-Ninguno
-
-### <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso.
+## <span data-ttu-id="580bd-134">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="580bd-134">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="580bd-135">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="580bd-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,28 +1,13 @@
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Tipo de recurso plannerBucketTaskBoardTaskFormat
+<span data-ttu-id="2fb19-p103">Sugerencia usada para ordenar tareas en la vista Depósito del panel de tareas. El formato se define tal como se describe [aquí](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="2fb19-p103">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Sugerencia usada para ordenar tareas en la vista Depósito del panel de tareas. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
 
-El recurso **plannerBucketTaskBoardTaskFormat** representa la información usada para procesar una tarea correctamente en la vista Depósitos del panel de tareas (una vista organizada por tareas dentro de los depósitos a los que están asignadas). Cada [task](plannertask.md) tendrá un objeto **plannerBucketTaskBoardTaskFormat** asociado.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Obtener plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leer las propiedades y las relaciones del objeto **plannerBucketTaskBoardTaskFormat**.|
-|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)    |Actualizar el objeto **plannerBucketTaskBoardTaskFormat**. |
-
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|id|String| Solo lectura. Identificador del recurso. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|orderHint|String|Sugerencia usada para ordenar tareas en la vista Depósito del panel de tareas. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
-
-### <a name="relationships"></a>Relaciones
-Ninguno
+## <span data-ttu-id="2fb19-128">Relaciones</span><span class="sxs-lookup"><span data-stu-id="2fb19-128">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="2fb19-129">Ninguno</span><span class="sxs-lookup"><span data-stu-id="2fb19-129">None</span></span>
 
 
-### <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso.
+## <span data-ttu-id="2fb19-130">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="2fb19-130">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="2fb19-131">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="2fb19-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

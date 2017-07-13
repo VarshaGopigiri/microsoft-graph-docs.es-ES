@@ -1,31 +1,8 @@
-# <a name="planner-resource-type"></a>Tipo de recurso planner
+<span data-ttu-id="212a1-p105">Solo lectura. Admite valores NULL. Devuelve una colección de las tareas especificadas</span><span class="sxs-lookup"><span data-stu-id="212a1-p105">Read-only. Nullable. Returns a collection of the specified tasks</span></span>| Solo lectura. Admite valores NULL. Devuelve una colección de las tareas especificadas|
 
-El recurso **planner** es el punto de entrada para el modelo de objetos de Planner. Devuelve un recurso **planner** singleton.  No contiene ninguna propiedad utilizable.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Crear plannerBucket](../api/planner_post_buckets.md) |[plannerBucket](plannerbucket.md)| Crear un nuevo **plannerBucket** publicándolo en la colección de depósitos.|
-|[Crear plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Crear un nuevo **plannerPlan** publicándolo en la colección de planes.|
-|[Crear plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Crear una nueva **plannerTask** publicándola en la colección de tareas.|
-
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|id|String| Solo lectura. Identificador del recurso **planner**.|
-
-### <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|buckets|Colección [plannerBucket](plannerbucket.md)| Solo lectura. Admite valores NULL. Devuelve una colección de los depósitos especificados|
-|plans|Colección [plannerPlan](plannerplan.md)| Solo lectura. Admite valores NULL. Devuelve una colección de los planes especificados|
-|tasks|Colección [plannerTask](plannertask.md)| Solo lectura. Admite valores NULL. Devuelve una colección de las tareas especificadas|
-
-### <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso.
+## <span data-ttu-id="212a1-145">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="212a1-145">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="212a1-146">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="212a1-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,21 +1,9 @@
-# <a name="plannerchecklistitem-resource-type"></a>Tipo de recurso plannerChecklistItem
+<span data-ttu-id="83c49-p104">Se usa para establecer el orden relativo de los elementos de la lista de comprobación. El formato se define tal como se describe [aquí](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="83c49-p104">Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Se usa para establecer el orden relativo de los elementos de la lista de comprobación. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
+|<span data-ttu-id="83c49-125">title</span><span class="sxs-lookup"><span data-stu-id="83c49-125">title</span></span>|<span data-ttu-id="83c49-126">Cadena</span><span class="sxs-lookup"><span data-stu-id="83c49-126">String</span></span>|<span data-ttu-id="83c49-127">Título del elemento de la lista de comprobación</span><span class="sxs-lookup"><span data-stu-id="83c49-127">Title of the checklist item</span></span>|
 
-
-El recurso **plannerChecklistItem** representa un elemento de la lista de comprobación de una tarea. La lista de comprobación de una tarea está representada por el objeto [checklistItems](plannerchecklistitems.md).
-
-
-### <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|isChecked|Booleano|El valor es `true` si el elemento está activado o `false` si no lo está.|
-|lastModifiedBy|[identitySet](identityset.md)| Solo lectura. Id. del usuario que lo modificó por última vez.|
-|lastModifiedDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se modificó por última vez. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Se usa para establecer el orden relativo de los elementos de la lista de comprobación. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
-|title|String|Título del elemento de la lista de comprobación|
-
-### <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso.
+## <span data-ttu-id="83c49-128">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="83c49-128">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="83c49-129">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="83c49-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

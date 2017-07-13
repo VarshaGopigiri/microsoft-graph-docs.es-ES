@@ -1,14 +1,13 @@
-<span data-ttu-id="6ced8-p108">El identificador único del socio. Clave, solo lectura.</span><span class="sxs-lookup"><span data-stu-id="6ced8-p108">The unique identifier for the partnership. Key, read-only</span></span>| El identificador único del socio. Clave, solo lectura. |
+<span data-ttu-id="22769-p108">El identificador único del socio. Clave, solo lectura.</span><span class="sxs-lookup"><span data-stu-id="22769-p108">The unique identifier for the partnership. Key, read-only</span></span>| El identificador único del socio. Clave, solo lectura. |
 
-### <span data-ttu-id="6ced8-147">Relaciones</span><span class="sxs-lookup"><span data-stu-id="6ced8-147">Relationships</span></span>
+## <span data-ttu-id="22769-147">Relaciones</span><span class="sxs-lookup"><span data-stu-id="22769-147">Relationships</span></span>
 <a id="relationships" class="xliff"></a>
-<span data-ttu-id="6ced8-148">Ninguno</span><span class="sxs-lookup"><span data-stu-id="6ced8-148">None</span></span>
+<span data-ttu-id="22769-148">Ninguno</span><span class="sxs-lookup"><span data-stu-id="22769-148">None</span></span>
 
 
-### <span data-ttu-id="6ced8-149">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="6ced8-149">JSON representation</span></span>
+## <span data-ttu-id="22769-149">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="22769-149">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
-
-<span data-ttu-id="6ced8-150">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="6ced8-150">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="22769-150">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="22769-150">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
