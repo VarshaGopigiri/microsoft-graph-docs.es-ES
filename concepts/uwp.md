@@ -4,7 +4,7 @@
 
 > Para ser compatible con **todos los clientes empresariales** en **todos los escenarios de empresa**, tiene que usar el punto de conexión de AD de Azure y administrar las aplicaciones mediante el [Portal de administración de Azure](https://aka.ms/aadapplist). Para obtener más información, consulte [Decidir entre los puntos de conexión de Azure AD y Azure AD v2.0 ](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-En este artículo se describen las tareas necesarias para obtener un token de acceso desde el [punto de conexión v2.0 de Azure AD](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) y llamar a Microsoft Graph. Le guiará por el código del [Ejemplo Connect de Microsoft Graph para UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) para explicar los conceptos principales que se deben implementar en una aplicación que use Microsoft Graph.
+En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el [punto de conexión v2.0 de Azure AD](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) y llamar a Microsoft Graph. Le guiará por el código del [Ejemplo Connect de Microsoft Graph para UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) para explicar los conceptos principales que se deben implementar en una aplicación que use Microsoft Graph.
 
 **¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://developer.microsoft.com/graph/quick-start) para ponerlo todo en funcionamiento de manera rápida o descargue el [Ejemplo Connect de Microsoft Graph para UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) en el que se basa este artículo. Tenga en cuenta también que tenemos una [versión de REST de esta muestra](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample).
 
@@ -40,7 +40,7 @@ Para comenzar, necesitará:
     Se muestra la página de registro, indicando las propiedades de la aplicación.
  
 4. En **Plataformas**, seleccione **Agregar plataforma**.
-5. Seleccione **Plataforma móvil**.
+5. Seleccione **Aplicación nativa**.
 6. Copie tanto el identificador de cliente (identificador de la aplicación) como los valores del URI de redireccionamiento al Portapapeles. Deberá escribir estos valores en la aplicación de ejemplo.
 
     El identificador de la aplicación es un identificador único para su aplicación. El URI de redireccionamiento es un URI único que proporciona Windows 10 para cada aplicación con el fin de garantizar que los mensajes enviados a ese URI solo se envían a esa aplicación. 
@@ -62,163 +62,11 @@ Para comenzar, necesitará:
     </Application.Resources>
 ```
 
-## <a name="install-the-microsoft-authentication-library-msal"></a>Instalar la Biblioteca de autenticación de Microsoft (MSAL)
-
-La [Biblioteca de autenticación de Microsoft](https://www.nuget.org/packages/Microsoft.Identity.Client) contiene clases y métodos que facilitan la autenticación de los usuarios a través del punto de conexión v2.0 de Azure AD.
-
-1. En el Explorador de soluciones, haga clic con el botón derecho en el nombre del proyecto y seleccione **Administrar paquetes de NuGet...**
-2. Haga clic en Examinar y busque Microsoft.Identity.Client.
-3. Seleccione la versión más reciente de la Biblioteca de autenticación de Microsoft y haga clic en **Instalar**.
-
-## <a name="install-the-microsoft-graph-client-library"></a>Instalar la biblioteca cliente de Microsoft Graph
-
-1. En el Explorador de soluciones, haga clic con el botón derecho en el nombre del proyecto y seleccione **Administrar paquetes de NuGet...**
-2. Haga clic en Examinar y busque Microsoft.Graph.
-3. Seleccione la versión más reciente de la Biblioteca cliente de Microsoft Graph y haga clic en **Instalar**.
-
-## <a name="install-the-newtonsoftjson-library"></a>Instalar la biblioteca Newtonsoft.JSON
-
-1. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto **XamarinConnect (Portable)** y seleccione **Administrar paquetes de NuGet...**
-2. Haga clic en Examinar y busque NewtonSoft.JSON.
-3. Seleccione la versión 9.0.1 de la biblioteca NewtonSoft.JSON y haga clic en **Instalar**.
-
-## <a name="create-the-authenticationhelpercs-class"></a>Crear la clase AuthenticationHelper.cs
-
-Abra el archivo AuthenticationHelper.cs en el proyecto inicial. El archivo contiene el código de autenticación completo, junto con la lógica adicional que almacena la información del usuario, y exige la autenticación solo cuando el usuario se ha desconectado de la aplicación. Esta clase contiene al menos dos métodos: `GetTokenForUserAsync` y `Signout`. Si usa la Biblioteca cliente de Microsoft Graph, necesitará agregar un tercer método: `GetAuthenticatedClient`.
-
-El método ``GetTokenHelperAsync`` se ejecuta cuando el usuario se autentica y, posteriormente, cada vez que la aplicación llama a Microsoft Graph.
-
-**Usar declaraciones**
-
-***Versión de la biblioteca cliente***
-
-Asegúrese de que el archivo contiene estas declaraciones:
-
-```
-using System;
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using Microsoft.Graph;
-using Microsoft.Identity.Client;
-```
-
-**Campos de clase**
-
-Asegúrese de que tiene esos campos en la clase AuthenticationHelper:
-
-```
-// The Client ID is used by the application to uniquely identify itself to the Azure AD v2.0 endpoint.
-static string clientId = App.Current.Resources["ida:ClientID"].ToString();
-public static string[] Scopes = { "User.Read", "Mail.Send" };
-public static PublicClientApplication IdentityClientApp = new PublicClientApplication(clientId);
-public static string TokenForUser = null;
-public static DateTimeOffset Expiration;
-private static GraphServiceClient graphClient = null;
-```
-
-En el ejemplo se almacena el `GraphServicesClient` en un campo de modo que solo deba crearlo una sola vez. Usa la clase `PublicClientApplication` de MSAL para autenticar el usuario. El campo `Scopes` almacena los ámbitos de permisos de Microsoft Graph que la aplicación deberá solicitar cuando el usuario se autentique. 
-
-
-**GetTokenForUserAsync**
-
-El método `GetTokenForUserAsync` usa los valores de configuración PublicClientApplicationClass y ClientId para obtener un token de acceso para el usuario. Si el usuario todavía no se ha autenticado, inicia la interfaz de usuario de autenticación.
-
-```
-        public static async Task<string> GetTokenForUserAsync()
-        {
-            AuthenticationResult authResult;
-            try
-            {
-                authResult = await IdentityClientApp.AcquireTokenSilentAsync(Scopes);
-                TokenForUser = authResult.Token;
-            }
-
-            catch (Exception)
-            {
-                if (TokenForUser == null || Expiration <= DateTimeOffset.UtcNow.AddMinutes(5))
-                {
-                    authResult = await IdentityClientApp.AcquireTokenAsync(Scopes);
-
-                    TokenForUser = authResult.Token;
-                    Expiration = authResult.ExpiresOn;
-                }
-            }
-
-            return TokenForUser;
-        }
-```
-
-**Signout**
-
-El método `Signout` cierra la sesión de todos los usuarios que la hayan iniciado a través de la `PublicClientApplication` (en este caso, solo hay un usuario) y anula el valor `TokenForUser`. También anulan el valor `GraphServicesClient`.
-
-Esta es la versión de la biblioteca cliente del método `Signout`.
-
-```
-        public static void SignOut()
-        {
-            foreach (var user in IdentityClientApp.Users)
-            {
-                user.SignOut();
-            }
-            graphClient = null;
-            TokenForUser = null;
-
-        }
-``` 
-
-**GetAuthenticatedClient**
-
-Por último, necesitará un método que cree un `GraphServicesClient`. Este método crea un cliente que usa el método `GetTokenForUserAsync` para cada llamada a Microsoft Graph que realiza a través del cliente.
-
-```
-        public static GraphServiceClient GetAuthenticatedClient()
-        {
-            if (graphClient == null)
-            {
-                // Create Microsoft Graph client.
-                try
-                {
-                    graphClient = new GraphServiceClient(
-                        "https://graph.microsoft.com/v1.0",
-                        new DelegateAuthenticationProvider(
-                            async (requestMessage) =>
-                            {
-                                var token = await GetTokenForUserAsync();
-                                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
-                            }));
-                    return graphClient;
-                }
-
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Could not create a graph client: " + ex.Message);
-                }
-            }
-
-            return graphClient;
-        }
-```
-
 ## <a name="send-an-email-with-microsoft-graph"></a>Enviar un correo electrónico con Microsoft Graph
 
 Abra el archivo MailHelper.cs en su proyecto inicial. Este archivo contiene el código que crea y envía correos electrónicos. Consta de un único método (``ComposeAndSendMailAsync``) que crea y envía una solicitud POST al punto de conexión **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
 
 El método ``ComposeAndSendMailAsync`` adquiere tres valores de cadena (``subject``, ``bodyContent`` y ``recipients``) que le pasa el archivo MainPage.xaml.cs. Las cadenas ``subject`` y ``bodyContent`` se almacenan, junto con todas las demás cadenas de la interfaz de usuario, en el archivo Resources.resw. La cadena ``recipients`` proviene del cuadro de dirección en la interfaz de la aplicación. 
-
-Asegúrese de que el archivo MailHelper.cs tiene las siguientes declaraciones `using`:
-
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Threading.Tasks;
-using Microsoft.Graph;
-using Windows.Storage;
-```
 
 La primera tarea dentro del método ``ComposeAndSendMailAsync`` consiste en obtener la fotografía del usuario actual de Microsoft Graph. Esta línea llama al método `GetCurrentUserPhotoStreamAsync`:
 
@@ -359,7 +207,7 @@ Ya que el usuario puede pasar potencialmente más de una dirección, la siguient
             }
 ```
 
-La última tarea consiste en crear un objeto `Message` y enviarlo al punto de conexión **me/microsoft.graph.SendMail** a través del `GraphServiceClient`. Ya que la cadena ``bodyContent`` es un documento HTML, la solicitud establece el valor **ContentType** en HTML.
+La última tarea consiste en crear un objeto `Message` y enviarlo al punto de conexión **me/microsoft.graph.SendMail** a través del `GraphServiceClient`. Ya que la cadena ``bodyContent`` es un documento HTML, la solicitud establece el valor **ContentType** a HTML.
 
 ```
             try
@@ -555,122 +403,8 @@ La clase completa tendrá este aspecto:
     }
 ``` 
 
-##<a name="create-the-user-interface-in-mainpagexaml"></a>Crear la interfaz de usuario en MainPage.xaml
-
-Ahora que ya ha escrito el código que realiza todo el trabajo de autenticación del usuario y del envío de un mensaje a través de Microsoft Graph, solo deberá crear la interfaz simple que se describe anteriormente. 
-
-El archivo MainPage.xaml de su proyecto inicial ya incluye todo el lenguaje XAML que necesitará. Solo deberá agregar el código que dirige la interfaz al archivo MainPage.xaml.cs. Busque este archivo en el proyecto y ábralo.
-
-Agregue este código en su espacio de nombres para completar la versión de la biblioteca cliente de la clase MainPage en MainPage.xaml.cs:
-
-```
-    public sealed partial class MainPage : Page
-    {
-        private string _mailAddress;
-        private string _displayName = null;
-        private MailHelper _mailHelper = new MailHelper();
-
-        public MainPage()
-        {
-            this.InitializeComponent();
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            // Developer code - if you haven't registered the app yet, we warn you. 
-            if (!App.Current.Resources.ContainsKey("ida:ClientID"))
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("NoClientIdMessage");
-                ConnectButton.IsEnabled = false;
-            }
-            else
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("ConnectPrompt");
-                ConnectButton.IsEnabled = true;
-            }
-        }
-
-        /// <summary>
-        /// Signs in the current user.
-        /// </summary>
-        /// <returns></returns>
-        public async Task<bool> SignInCurrentUserAsync()
-        {
-            var graphClient = AuthenticationHelper.GetAuthenticatedClient();
-
-            if (graphClient != null)
-            {
-                var user = await graphClient.Me.Request().GetAsync();
-                string userId = user.Id;
-                _mailAddress = user.UserPrincipalName;
-                _displayName = user.DisplayName;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-
-
-        private async void ConnectButton_Click(object sender, RoutedEventArgs e)
-        {
-            ProgressBar.Visibility = Visibility.Visible;
-            if (await SignInCurrentUserAsync())
-            { 
-                InfoText.Text = "Hi " + _displayName + "," + Environment.NewLine + ResourceLoader.GetForCurrentView().GetString("SendMailPrompt");
-                MailButton.IsEnabled = true;
-                EmailAddressBox.IsEnabled = true;
-                ConnectButton.Visibility = Visibility.Collapsed;
-                DisconnectButton.Visibility = Visibility.Visible;
-                EmailAddressBox.Text = _mailAddress;
-            }
-            else
-            {
-                InfoText.Text = ResourceLoader.GetForCurrentView().GetString("AuthenticationErrorMessage");
-            }
-
-            ProgressBar.Visibility = Visibility.Collapsed;
-        }
-
-        private async void MailButton_Click(object sender, RoutedEventArgs e)
-        {
-            _mailAddress = EmailAddressBox.Text;
-            ProgressBar.Visibility = Visibility.Visible;
-            MailStatus.Text = string.Empty;
-            try
-            {
-                await _mailHelper.ComposeAndSendMailAsync(ResourceLoader.GetForCurrentView().GetString("MailSubject"), ResourceLoader.GetForCurrentView().GetString("MailContents"), _mailAddress);
-                MailStatus.Text = string.Format(ResourceLoader.GetForCurrentView().GetString("SendMailSuccess"), _mailAddress);
-            }
-            catch (Exception)
-            {
-                MailStatus.Text = ResourceLoader.GetForCurrentView().GetString("MailErrorMessage");
-            }
-            finally
-            {
-                ProgressBar.Visibility = Visibility.Collapsed;
-            }
-            
-        }
-
-        private void Disconnect_Click(object sender, RoutedEventArgs e)
-        {
-            ProgressBar.Visibility = Visibility.Visible;
-            AuthenticationHelper.SignOut();
-            ProgressBar.Visibility = Visibility.Collapsed;
-            MailButton.IsEnabled = false;
-            EmailAddressBox.IsEnabled = false;
-            ConnectButton.Visibility = Visibility.Visible;
-            InfoText.Text = ResourceLoader.GetForCurrentView().GetString("ConnectPrompt");
-            this._displayName = null;
-            this._mailAddress = null;
-        }
-    }
-```
  
-Ya ha llevado a cabo los tres pasos necesarios para interactuar con Microsoft Graph: el registro de la aplicación, la autenticación del usuario y la creación de las solicitudes. 
+Ya ha realizado los pasos necesarios para interactuar con Microsoft Graph: el registro de la aplicación, la autenticación del usuario y la creación de las solicitudes. 
 
 ## <a name="run-the-app"></a>Ejecutar la aplicación
 1. Pulse F5 para compilar y ejecutar la aplicación. 
@@ -680,11 +414,12 @@ Ya ha llevado a cabo los tres pasos necesarios para interactuar con Microsoft Gr
 3. Elija el botón **Enviar correo electrónico**. Al enviar el correo, se muestra un mensaje de operación correcta debajo del botón. El mensaje del correo incluye la foto como un archivo adjunto y proporciona un vínculo para compartir al archivo cargado en OneDrive.
 
 ## <a name="next-steps"></a>Siguientes pasos
-- Pruebe la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe la API de REST mediante el [Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - Busque ejemplos de operaciones comunes tanto para REST como para SDK en el [Ejemplo de fragmentos de código de UWP para Microsoft Graph (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) y en el [Ejemplo de fragmentos de código de UWP para Microsoft Graph (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample) o explore el resto de nuestros [ejemplos de UWP](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp) en GitHub.
 
 ## <a name="see-also"></a>Recursos adicionales
 - [Biblioteca cliente .NET de Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
 

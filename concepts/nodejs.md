@@ -37,11 +37,11 @@ Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. 
 
     Deberá usar el identificador de la aplicación y la contraseña (secreto) para configurar la aplicación. 
 
-6. En **Plataformas**, elija **Agregar plataforma** > **Web**.
+6. En **Plataformas**, pulse **Agregar plataforma** > **Web**.
 
-7. Escriba *http://localhost:3000/login* como URI de redireccionamiento. 
+7. Escriba *http://localhost:3000/token* como URI de redireccionamiento. 
 
-8. Elija **Guardar**.
+8. Seleccione **Guardar**.
 
 
 ## <a name="configure-the-project"></a>Configurar el proyecto
@@ -205,5 +205,7 @@ La aplicación llama a Microsoft Graph para obtener información del usuario y p
 
 
 ## <a name="see-also"></a>Recursos adicionales
-- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- Pruebe llamadas de REST de ejemplo en nuestro [Explorador de API](https://graph.microsoft.io/graph-explorer)
+- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

@@ -2,7 +2,7 @@
 
 En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el punto de conexión v2.0 de Azure AD y llamar a Microsoft Graph. Le muestra los pasos para la compilación del [Ejemplo Connect de Microsoft Graph para ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample) y describe los conceptos principales que implementará para usar Microsoft Graph.
 
-En la imagen siguiente se muestra la aplicación que va a crear. 
+En la imagen siguiente, se muestra la aplicación que va a crear. 
 
 ![La aplicación web con los botones "Obtener la dirección de correo electrónico" y "Enviar correo electrónico"](images/aspnet-connect-sample.png "La aplicación web con los botones "Obtener la dirección de correo electrónico" y "Enviar correo electrónico"")
 
@@ -53,177 +53,7 @@ En este paso, registrará una aplicación en el Portal de registro de aplicacion
 
 3. Busque las claves de configuración de la aplicación en el elemento **appSettings**. Reemplace los valores de los marcadores de posición ENTER_YOUR_CLIENT_ID y ENTER_YOUR_SECRET por los valores que acaba de copiar.
 
-El URI de redireccionamiento es la URL del proyecto que ha registrado. Los [ámbitos de permisos](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) solicitados permiten a la aplicación obtener la información del perfil de usuario y enviar un correo electrónico.
-
-
-## <a name="authenticate-the-user-and-get-an-access-token"></a>Autenticar al usuario y obtener un token de acceso
-
-En este paso, agregará el código de administración del token y de inicio de sesión. Pero, primero, echemos un vistazo más de cerca al flujo de autenticación.
-
-Esta aplicación usa el flujo de concesión de códigos de autorización con una identidad de usuario delegado. Para una aplicación web, el flujo requiere el Id. de aplicación, la contraseña y el URI de redireccionamiento de la aplicación registrada. 
-
-El flujo de autenticación puede desglosarse en los siguientes pasos básicos:
-
-1. Redirigir al usuario para la autenticación y el consentimiento
-2. Obtener un código de autorización
-3. Canjear el código de autorización por un token de acceso
-4. Use el token de actualización para obtener un token de acceso nuevo cuando expire el actual.
-
-La aplicación usa el [middleware de OWIN de OpenID Connect ASP.Net](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) y la [Biblioteca de autenticación de Microsoft (MSAL) para .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) para el inicio de sesión y la administración de tokens. Estos elementos controlan la mayoría de las tareas de autenticación en su lugar.
-    
-El proyecto inicial ya declara el siguiente middleware y las dependencias de NuGet de la Biblioteca de autenticación de Microsoft:
-
-  - Microsoft.Owin.Security.OpenIdConnect
-  - Microsoft.Owin.Security.Cookies
-  - Microsoft.Owin.Host.SystemWeb
-  - Microsoft.Identity.Client
-
-Ahora volvamos a la compilación de la aplicación.
-
-1. En la carpeta **App_Start** carpeta, abra el archivo Startup.Auth.cs. 
-
-1. Reemplace el método **ConfigureAuth** por el siguiente código. Esta acción configura las coordenadas para la comunicación con Azure AD y configura la autenticación con cookies que usa el middleware de OpenID Connect.
-
-        public void ConfigureAuth(IAppBuilder app)
-        {
-            app.SetDefaultSignInAsAuthenticationType(CookieAuthenticationDefaults.AuthenticationType);
-
-            app.UseCookieAuthentication(new CookieAuthenticationOptions());
-
-            app.UseOpenIdConnectAuthentication(
-                new OpenIdConnectAuthenticationOptions
-                {
-
-                    // The `Authority` represents the Microsoft v2.0 authentication and authorization service.
-                    // The `Scope` describes the permissions that your app will need. See https://azure.microsoft.com/documentation/articles/active-directory-v2-scopes/                    
-                    ClientId = appId,
-                    Authority = "https://login.microsoftonline.com/common/v2.0",
-                    PostLogoutRedirectUri = redirectUri,
-                    RedirectUri = redirectUri,
-                    Scope = "openid email profile offline_access " + graphScopes,
-                    TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = false,
-                        // In a real application you would use IssuerValidator for additional checks, 
-                        // like making sure the user's organization has signed up for your app.
-                        //     IssuerValidator = (issuer, token, tvp) =>
-                        //     {
-                        //         if (MyCustomTenantValidation(issuer)) 
-                        //             return issuer;
-                        //         else
-                        //             throw new SecurityTokenInvalidIssuerException("Invalid issuer");
-                        //     },
-                    },
-                    Notifications = new OpenIdConnectAuthenticationNotifications
-                    {
-                        AuthorizationCodeReceived = async (context) =>
-                        {
-                            var code = context.Code;
-                            string signedInUserID = context.AuthenticationTicket.Identity.FindFirst(ClaimTypes.NameIdentifier).Value;
-                            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                                appId, 
-                                redirectUri,
-                                new ClientCredential(appSecret),
-                                new SessionTokenCache(signedInUserID, context.OwinContext.Environment["System.Web.HttpContextBase"] as HttpContextBase));
-                                string[] scopes = graphScopes.Split(new char[] { ' ' });
-
-                            AuthenticationResult result = await cca.AcquireTokenByAuthorizationCodeAsync(scopes, code);
-                        },
-                        AuthenticationFailed = (context) =>
-                        {
-                            context.HandleResponse();
-                            context.Response.Redirect("/Error?message=" + context.Exception.Message);
-                            return Task.FromResult(0);
-                        }
-                    }
-                });
-        }
-  
-  La clase de inicio de OWIN (definida en Startup.cs) invoca al método **ConfigureAuth** cuando se inicia la aplicación, que a su vez llama a **app.UseOpenIdConnectAuthentication** para inicializar el middleware para el inicio de sesión y la solicitud de token inicial. La aplicación solicita los siguientes ámbitos de permisos:
-
-  - **openid**, **email**, **profile** para el inicio de sesión
-  - **offline\_access** (se requiere para obtener los tokens de actualización), **User.Read** y **Mail.Send** para la adquisición de tokens
-  
-  El objeto **ConfidentialClientApplication** de la Biblioteca de autenticación de Microsoft representa la aplicación y controla las tareas de administración de tokens. Se inicializa con **SessionTokenCache** (la implementación de caché de tokens de ejemplo que se define en TokenStorage/SessionTokenCache.cs), donde se almacena la información de token. La caché guarda los tokens en la sesión HTTP actual en función del Id. de usuario, pero una aplicación de producción probablemente usará un almacenamiento más persistente.
-
-Ahora, deberá agregar el código al proveedor de autenticación de ejemplo, que está diseñado para reemplazarse fácilmente por su propio proveedor de autenticación personalizado. La clase de interfaz y la de proveedor ya se han agregado al proyecto.
-
-1. En la carpeta **Helpers**, abra el archivo SampleAuthProvider.cs.
-
-1. Reemplace el método **GetUserAccessTokenAsync** por la siguiente implementación que usa la Biblioteca de autenticación de Microsoft para obtener un token de acceso.
-
-        // Get an access token. First tries to get the token from the token cache.
-        public async Task<string> GetUserAccessTokenAsync()
-        {
-            string signedInUserID = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-            tokenCache = new SessionTokenCache(
-                signedInUserID, 
-                HttpContext.Current.GetOwinContext().Environment["System.Web.HttpContextBase"] as HttpContextBase);
-            //var cachedItems = tokenCache.ReadItems(appId); // see what's in the cache
-
-            ConfidentialClientApplication cca = new ConfidentialClientApplication(
-                appId, 
-                redirectUri,
-                new ClientCredential(appSecret), 
-                tokenCache);
-
-            try
-            {
-                AuthenticationResult result = await cca.AcquireTokenSilentAsync(scopes.Split(new char[] { ' ' }));
-                return result.Token;
-            }
-
-            // Unable to retrieve the access token silently.
-            catch (MsalSilentTokenAcquisitionException)
-            {
-                HttpContext.Current.Request.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties() { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-
-                throw new Exception(Resource.Error_AuthChallengeNeeded);
-            }
-        }
-
-  La Biblioteca de autenticación de Microsoft comprueba la caché de un token de acceso coincidente que no haya expirado o esté a punto de expirar. Si no encuentra ninguno válido, usa el token de actualización (si existe uno válido) para obtener un nuevo token de acceso. Si no puede obtener un nuevo token de acceso de forma automática, la Biblioteca de autenticación de Microsoft iniciará la excepción **MsalSilentTokenAcquisitionException** para indicar que se necesita un mensaje de usuario. 
-
-A continuación, deberá agregar el código para controlar el inicio y el cierre de sesión desde la interfaz de usuario.
-
-1. En la carpeta **Controllers**, abra el archivo AccountController.cs.  
-
-1. Agregue los siguientes métodos a la clase **AccountController**. El método **SignIn** envía una señal al middleware para que envíe una solicitud de autorización a Azure AD.
-
-        public void SignIn()
-        {
-            if (!Request.IsAuthenticated)
-            {
-                // Signal OWIN to send an authorization request to Azure.
-                HttpContext.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-            }
-        }
-
-        // Here we just clear the token cache, sign out the GraphServiceClient, and end the session with the web app.  
-        public void SignOut()
-        {
-            if (Request.IsAuthenticated)
-            {
-                // Get the user's token cache and clear it.
-                string userObjectId = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-
-                SessionTokenCache tokenCache = new SessionTokenCache(userObjectId, HttpContext);
-                tokenCache.Clear(userObjectId);
-            }
-
-            //SDKHelper.SignOutClient();
-
-            // Send an OpenID Connect sign-out request. 
-            HttpContext.GetOwinContext().Authentication.SignOut(
-            CookieAuthenticationDefaults.AuthenticationType);
-            Response.Redirect("/");
-        }
-
-Ahora está preparado para agregar código para llamar a Microsoft Graph. 
+El URI de redireccionamiento es la URL del proyecto que ha registrado. Los [ámbitos de permisos](https://developer.microsoft.com/en-us/graph/docs/concepts/permission_scopes) solicitados permiten a la aplicación obtener la información del perfil de usuario y enviar un correo electrónico.
 
 ## <a name="call-microsoft-graph"></a>Llamar a Microsoft Graph
 
@@ -296,6 +126,12 @@ El proyecto inicial ya declara una dependencia para el paquete de NuGet de la Bi
   Fíjese en el segmento **Select**, que solo solicita que se devuelvan los elementos **mail** y **userPrinicipalName**. Puede usar los segmentos **Select** y **Filter** para reducir el tamaño de la carga de datos de respuesta.
 
 1. Reemplace *// SendEmail* por los siguientes métodos para crear y enviar el correo electrónico.
+
+        // Send an email message from the current user.
+        public async Task SendEmail(GraphServiceClient graphClient, Message message)
+        {
+            await graphClient.Me.SendMail(message, true).Request().PostAsync();
+        }
 
         public async Task<Message> BuildEmailMessage(GraphServiceClient graphClient, string recipients, string subject)
         {
@@ -460,13 +296,14 @@ El proyecto inicial ya declara una dependencia para el paquete de NuGet de la Bi
                 return View("Graph");
             }
 
-            // Build the email message.
-            Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
             try
             {
 
                 // Initialize the GraphServiceClient.
                 GraphServiceClient graphClient = SDKHelper.GetAuthenticatedClient();
+
+                // Build the email message.
+                Message message = await graphService.BuildEmailMessage(graphClient, Request.Form["recipients"], Request.Form["subject"]);
 
                 // Send the email.
                 await graphService.SendEmail(graphClient, message);
@@ -478,35 +315,10 @@ El proyecto inicial ya declara una dependencia para el paquete de NuGet de la Bi
             }
             catch (ServiceException se)
             {
-                if (se.Error.Message == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
+                if (se.Error.Code == Resource.Error_AuthChallengeNeeded) return new EmptyResult();
                 return RedirectToAction("Index", "Error", new { message = Resource.Error_Message + Request.RawUrl + ": " + se.Error.Message });
-           }
+            }
         }
-
-A continuación, deberá cambiar la excepción que inicia el proveedor de autenticación cuando se necesita un mensaje de usuario.
-
-1. En la carpeta **Helpers**, abra el archivo SampleAuthProvider.cs.
-
-1. Agregue la siguiente instrucción **Using**.
-
-        using Microsoft.Graph;
-  
-1. En el bloque **catch** del método **GetUserAccessTokenAsync**, cambie la excepción que se ha iniciado como se indica a continuación:
-
-        throw new ServiceException(
-            new Error
-            {
-                Code = GraphErrorCode.AuthenticationFailure.ToString(),
-                Message = Resource.Error_AuthChallengeNeeded,
-            });
-
-Por último, agregará una llamada a cerrar la sesión del cliente. 
-
-1. En la carpeta **Controllers**, abra el archivo AccountController.cs. 
-
-1. Quite la marca de comentario de la siguiente línea:
-
-        SDKHelper.SignOutClient();
 
 Ahora ya puede [ejecutar la aplicación](#run-the-app).
 
@@ -528,5 +340,6 @@ Ahora ya puede [ejecutar la aplicación](#run-the-app).
 - [Biblioteca cliente .NET de Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [Aplicación web para el escenario de autenticación de la API web](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api)
 - [Integrar la identidad de Microsoft y Microsoft Graph en una aplicación web usando OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/)
-- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

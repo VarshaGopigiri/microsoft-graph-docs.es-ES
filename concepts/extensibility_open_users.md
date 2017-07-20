@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions"></a>Agregar datos personalizados a usuarios mediante extensiones abiertas
+# <a name="add-custom-data-to-users-using-open-extensions-example"></a>Agregar datos personalizados a usuarios mediante extensiones abiertas (ejemplo)
 Vamos a guiarle a través de un ejemplo para demostrarle cómo usar las *extensiones abiertas*. 
 
 Imagine que está creando una aplicación que está disponible en muchas plataformas cliente distintas, como equipos de sobremesa y móviles.  Quiere que los usuarios puedan configurar su experiencia de interfaz para que sea coherente sin importar en qué dispositivo inicien sesión en su aplicación. Se trata de un requisito común para la mayoría de las aplicaciones. 
@@ -95,7 +95,7 @@ Content-type: application/json
 HTTP/1.1 204 No content
 ```
 
-## <a name="4-delete-a-users-roaming-profile"></a>4. Eliminar un perfil de usuario móvil
+## <a name="4-delete-a-users-roaming-profile"></a>4. Eliminar un perfil móvil de usuario
 El usuario decide que ya no desea tener un perfil móvil y lo elimina. Esto puede realizarse con una solicitud ```DELETE``` en el valor de extensión abierta.
 
 ##### <a name="request"></a>Solicitud
@@ -111,7 +111,7 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](extensibility_overview.md)
-- [Agregar datos personalizados a los grupos mediante extensiones de esquema](extensibility_schema_groups.md)
+- [Agregar datos personalizados a grupos mediante extensiones de esquema (ejemplo)](extensibility_schema_groups.md)
 - [Tipo de recurso openTypeExtension](../api-reference/v1.0/resources/opentypeextension.md)
 - [Crear extensión abierta](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 - [Obtener extensión abierta](../api-reference/v1.0/api/opentypeextension_get.md)

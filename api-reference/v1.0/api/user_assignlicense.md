@@ -2,7 +2,7 @@
 Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar los planes específicos asociados a una suscripción.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.ReadWrite.All; Directory.ReadWrite.All*
+Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.ReadWrite.All; Directory.AccessAsUser.All*
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

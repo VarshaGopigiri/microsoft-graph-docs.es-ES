@@ -1,6 +1,6 @@
 # <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Introducción a Microsoft Graph en una aplicación de Xamarin Forms
 
-> **¿Desea compilar aplicaciones para clientes empresariales?** Es posible que la aplicación no funcione si su cliente empresarial activa características de seguridad de movilidad empresarial como el <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">acceso condicional al dispositivo</a>. En casos así, es posible que no tenga constancia de esta activación y que sus clientes obtengan errores. 
+> **¿Desea compilar aplicaciones para clientes empresariales?** Es posible que la aplicación no funcione si su cliente empresarial activa características de seguridad de movilidad empresarial como el <a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">acceso condicional al dispositivo</a>. En casos así, es posible que no tenga constancia de esta activación y que sus clientes obtengan errores. 
 
 En este artículo se describen las tareas necesarias para obtener un token de acceso desde el punto de conexión de [Azure AD v2.0](https://developer.microsoft.com/graph/docs/concepts/converged_auth) y llamar a Microsoft Graph. Le guiará por el código del [Ejemplo Connect de Microsoft Graph para Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) para explicar los conceptos principales que se deben implementar en una aplicación que use Microsoft Graph. El artículo también describe cómo obtener acceso a Microsoft Graph mediante la [Biblioteca cliente de Microsoft Graph](http://www.nuget.org/packages/Microsoft.Graph/).
 
@@ -27,7 +27,7 @@ Si desea ejecutar el proyecto de iOS en este ejemplo, necesitará lo siguiente:
 - El SDK de iOS más reciente
 - La versión de Xcode más reciente
 - Mac OS X Sierra (10.12) y versiones posteriores 
-- [Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/)
+- [Xamarin.iOS](https://docs.microsoft.com/visualstudio/mac/installation)
 - Un [agente Xamarin Mac conectado a Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
 
 
@@ -35,15 +35,15 @@ Si desea ejecutar el proyecto de iOS en este ejemplo, necesitará lo siguiente:
  
 1. Inicie sesión en el [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/) mediante su cuenta personal, profesional o educativa.
 2. Seleccione **Agregar una aplicación**.
-3. Escriba un nombre para la aplicación y seleccione **Crear aplicación**.
+3. Escriba un nombre para la aplicación y seleccione **Crear**.
     
     Se muestra la página de registro, indicando las propiedades de la aplicación.
  
 4. En **Plataformas**, seleccione **Agregar plataforma**.
-5. Seleccione **Plataforma móvil**.
-6. Copie el identificador de la aplicación. Deberá escribir estos valores en la aplicación de ejemplo.
+5. Seleccione **Aplicación nativa**.
+6. Copie el valor del identificador de la aplicación y el valor personalizado redirección URI (en el encabezado **Aplicación nativa** encabezado) que se crea automáticamente cuando agrega la plataforma de **Aplicación nativa**. Este identificador URI debe contener el valor de identificador de la aplicación y estar en este formulario: `msal[Application Id]://auth` Deberá escribir estos valores en la aplicación de ejemplo.
 
-    El identificador de la aplicación es un identificador único para su aplicación. El URI de redireccionamiento es un URI único que proporciona Windows 10 para cada aplicación con el fin de garantizar que los mensajes enviados a ese URI solo se envían a esa aplicación. 
+    El id. de la aplicación es un identificador único para su aplicación. 
 
 7. Seleccione **Guardar**.
 
@@ -52,15 +52,24 @@ Si desea ejecutar el proyecto de iOS en este ejemplo, necesitará lo siguiente:
 1. Abra el archivo de la solución para el proyecto inicial en Visual Studio.
 2. Abra el archivo **App.cs** del proyecto **XamarinConnect (Portable)** y localice el campo `ClientId`. Reemplace el marcador de posición identificador de la aplicación por el identificador de la aplicación que haya registrado.
 
-```
-public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
-```
-El valor `Scopes` almacena los ámbitos de permisos de Microsoft Graph que la aplicación deberá solicitar cuando el usuario se autentique. Tenga en cuenta que el constructor de clases `App` usa el valor ClientID para crear una instancia de la clase `PublicClientApplication` de MSAL. Más adelante, usará esta clase para autenticar el usuario.
+    ```
+    public static string ClientID = "ENTER_YOUR_CLIENT_ID";
+    public static string RedirectUri = "msal" + ClientID + "://auth";
+    public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
+    ```
+    El valor `Scopes` almacena los ámbitos de permisos de Microsoft Graph que la aplicación deberá solicitar cuando el usuario se autentique. Tenga en cuenta que el constructor de clases `App` usa el valor ClientID para crear una instancia de la clase `PublicClientApplication` de MSAL. Más adelante, usará esta clase para autenticar el usuario.
+    
+    ```
+    IdentityClientApp = new PublicClientApplication(ClientID);
+    ```
 
-```
-IdentityClientApp = new PublicClientApplication(ClientID);
-```
+3. Abra el archivo UserDetailsClient.iOS\info.plist en un editor de texto. Lamentablemente no puede editar este archivo en Visual Studio. Busque el elemento `<string>msalENTER_YOUR_CLIENT_ID</string>` en `CFBundleURLSchemes` clave.
+
+4. Reemplace `ENTER_YOUR_CLIENT_ID` por el valor del id. de aplicación que ha obtenido al registrar la aplicación. Asegúrese de conservar `msal` antes del identificador de aplicación. El valor de cadena resultante debe parecerse al siguiente: `<string>msal[application id]</string>`.
+
+5. Abra el archivo UserDetailsClient.Droid\Properties\AndroidManifest.xml. Busque este elemento: `<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`.
+
+6. Reemplace `ENTER_YOUR_CLIENT_ID` por el valor del id. de aplicación que ha obtenido al registrar la aplicación. Asegúrese de conservar `msal` antes del identificador de aplicación. El valor de cadena resultante debe parecerse al siguiente: `<data android:scheme="msal[application id]" android:host="auth" />`.
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Enviar un correo electrónico con Microsoft Graph
 
@@ -220,7 +229,7 @@ Ya que el usuario puede pasar potencialmente más de una dirección, la siguient
             }
 ```
 
-La última tarea consiste en crear un objeto `Message` y enviarlo al punto de conexión **me/microsoft.graph.SendMail** a través del `GraphServiceClient`. Ya que la cadena ``bodyContent`` es un documento HTML, la solicitud establece el valor **ContentType** en HTML.
+La última tarea consiste en crear un objeto `Message` y enviarlo al punto de conexión **me/microsoft.graph.SendMail** a través del `GraphServiceClient`. Ya que la cadena ``bodyContent`` es un documento HTML, la solicitud establece el valor **ContentType** a HTML.
 
 ```
             try
@@ -415,7 +424,6 @@ La clase completa tendrá este aspecto:
 
 
     }
-}
 ``` 
 
 Ya ha llevado a cabo los tres pasos requeridos para interactuar con Microsoft Graph: el registro de la aplicación, la autenticación del usuario y la creación de una solicitud. 
@@ -433,10 +441,11 @@ Ya ha llevado a cabo los tres pasos requeridos para interactuar con Microsoft Gr
 4. Elija el botón **Enviar correo**. Cuando se envía el correo, se muestra un mensaje de Operación correcta. Este correo incluye la foto como un archivo adjunto y proporciona un vínculo para compartir al archivo cargado en OneDrive.
 
 ## <a name="next-steps"></a>Siguientes pasos
-- Pruebe la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe la API de REST mediante el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Busque ejemplos de operaciones comunes en la [Biblioteca de fragmentos de código del SDK de Microsoft Graph para Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample) o explore el resto de nuestros [ejemplos de Xamarin](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) en GitHub.
 
 ## <a name="see-also"></a>Recursos adicionales
 - [Biblioteca cliente .NET de Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

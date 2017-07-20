@@ -3,10 +3,11 @@
 Recupera las propiedades y relaciones del objeto directoryObject.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: 
+
 - _Directory.Read.All_ 
 - _Directory.AccessAsUser.All_
 
-> Nota: Los ámbitos de permiso se muestran por orden de privilegio mínimo necesario.
+> **Nota:** Los ámbitos de permiso se muestran por orden de menor a mayor privilegio necesario.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -18,9 +19,9 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [directoryObject](../resources/directoryobject.md) en el cuerpo de la respuesta.

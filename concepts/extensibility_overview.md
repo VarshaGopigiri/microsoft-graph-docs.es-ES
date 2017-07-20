@@ -36,7 +36,7 @@ Las extensiones abiertas, junto con sus datos personalizados, son accesibles a t
 
 Puede [crear una extensión abierta](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md) en una instancia de recurso y almacenar datos personalizados en ella en la misma operación (tenga en cuenta la [siguiente limitación conocida](known_issues.md#extensions) para algunos de los recursos admitidos). Posteriormente, puede [leer](../api-reference/v1.0/api/opentypeextension_get.md), [actualizar](../api-reference/v1.0/api/opentypeextension_update.md) o [eliminar](../api-reference/v1.0/api/opentypeextension_delete.md) la extensión y sus datos.
 
-Ejemplo de extensión abierta: [Agregar datos personalizados a los usuarios mediante extensiones abiertas](extensibility_open_users.md)
+Consulte el ejemplo de extensión abierta: [Agregar datos personalizados a los usuarios mediante extensiones abiertas](extensibility_open_users.md)
 
 ## <a name="schema-extensions"></a>Extensiones de esquema
 
@@ -58,7 +58,7 @@ Puesto que las extensiones de esquema son accesibles como tipos complejos en las
 - Utilice el método de recurso `PATCH` para agregar o actualizar datos personalizados en una instancia de recurso existente.
 - Utilice el método de recurso `PATCH` para establecer el tipo complejo en null, para eliminar los datos en la instancia de recurso personalizados. 
 
-Ejemplo de extensión de esquema: [Agregar datos personalizados a los grupos mediante extensiones de esquema](extensibility_schema_groups.md)
+Consulte el ejemplo de extensión de esquema: [Agregar datos personalizados a los grupos mediante extensiones de esquema](extensibility_schema_groups.md)
 
 
 ### <a name="schema-extensions-lifecycle"></a>Ciclo de vida de extensiones de esquema
@@ -113,15 +113,20 @@ Una aplicación no puede crear más de cinco definiciones de **extensión del es
 
 Para ver las limitaciones conocidas al usar las extensiones, consulte la [sección de extensiones](known_issues.md#extensions) del artículo de problemas conocidos.
 
-## <a name="extension-examples"></a>Ejemplos de extensión
+## <a name="see-also"></a>Recursos adicionales
+
+[Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+[Agregar y comprobar un dominio para un inquilino de Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Vea un ejemplo que utiliza una extensión abierta para ampliar el recurso de **usuario** con datos de perfil móvil personalizados:
 
 [Agregar datos personalizados a los usuarios mediante extensiones abiertas](extensibility_open_users.md)
 
+Vea un ejemplo que utiliza una extensión de esquema para ampliar el recurso de **grupo** con datos de curso de aprendizaje:
+
 [Agregar datos personalizados a los grupos mediante extensiones de esquema](extensibility_schema_groups.md)
 
-## <a name="see-also"></a>Consulte también
-
-
-  [Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
-
-[Agregar y comprobar un dominio para un inquilino de Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
