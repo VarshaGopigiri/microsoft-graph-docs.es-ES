@@ -2,13 +2,14 @@
 
 Lea las propiedades y relaciones de un archivo adjunto, conectado a un [evento](../resources/event.md), [mensaje](../resources/message.md), o [publicación](../resources/post.md). 
 
-Un archivo adjunto puede ser uno de las siguientes:
+Los datos adjuntos pueden ser de uno de los tipos siguientes:
 
-* Un archivo (recurso [fileAttachment](../resources/fileattachment.md))
-* Un elemento (contacto, evento o mensaje, representado por un recurso [itemAttachment](../resources/itemattachment.md))
-* Un vínculo a un archivo (recurso [referenceAttachment](../resources/referenceAttachment.md))
+* Un archivo (recurso [fileAttachment](../resources/fileattachment.md)).
+* Un elemento (contacto, evento o mensaje, representado por un recurso [itemAttachment](../resources/itemattachment.md)). Puede usar `$expand` para obtener más propiedades del elemento. Vea un [ejemplo](#request-2) abajo.
+* Un vínculo a un archivo (recurso [referenceAttachment](../resources/referenceAttachment.md)).
 
-Todos estos tipos de recursos de datos adjuntos se derivan del recurso [dato adjunto](../resources/attachment.md). 
+Todos estos tipos de recursos de datos adjuntos se derivan del recurso [attachment](../resources/attachment.md). 
+
 
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
@@ -67,14 +68,14 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [attachment](../resources/attachment.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto **attachment** en el cuerpo de la respuesta. Se devuelven las propiedades de ese tipo de datos adjuntos: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) o [referenceAttachment](../resources/referenceAttachment.md).
 
-## <a name="example-file-attachment"></a>Ejemplo (datos adjuntos del archivo)
+## <a name="example-file-attachment"></a>Ejemplo (datos adjuntos de archivo)
 
 ##### <a name="request"></a>Solicitud
 Este es un ejemplo de la solicitud para obtener un archivo adjunto en un evento.
@@ -111,19 +112,19 @@ Content-length: 199
   "size": 99
 }
 ```
-## <a name="example-item-attachment"></a>Ejemplo (datos adjuntos del elemento)
+## <a name="example-item-attachment"></a>Ejemplo (datos adjuntos de elemento)
 
-##### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud para obtener un elemento adjunto en un evento.
+##### <a name="request-1"></a>Solicitud 1
+En el primer ejemplo se muestra cómo obtener los datos adjuntos de elemento de un mensaje. Se devuelven las propiedades de **itemAttachment**.
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response"></a>Respuesta
+##### <a name="response-1"></a>Respuesta 1
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,15 +135,100 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false
 }
 ```
+
+##### <a name="request-2"></a>Solicitud 2
+En el ejemplo siguiente se muestra cómo usar `$expand` para obtener las propiedades del elemento adjunto al mensaje. En este ejemplo, el elemento es un mensaje; también se devuelven las propiedades del mensaje adjunto.
+<!-- {
+  "blockType": "request",
+  "name": "get_and_expand_item_attachment"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+```
+
+##### <a name="response-2"></a>Respuesta 2
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false,
+  "item@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+  "item":{
+    "@odata.type":"#microsoft.graph.message",
+    "id":"",
+    "createdDateTime":"2017-07-21T00:20:41Z",
+    "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+    "receivedDateTime":"2017-07-21T00:19:55Z",
+    "sentDateTime":"2017-07-21T00:19:52Z",
+    "hasAttachments":false,
+    "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+    "subject":"Reminder - please bring laptop",
+    "importance":"normal",
+    "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":false,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "body":{
+      "contentType":"html",
+      "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+    },
+    "sender":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "from":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "toRecipients":[
+      {
+        "emailAddress":{
+          "name":"Alex Wilbur",
+          "address":"AlexW@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "ccRecipients":[
+      {
+        "emailAddress":{
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.onmicrosoft.com"
+        }
+      }
+    ]
+  }
+}
+```
+
 
 
 ## <a name="example-reference-attachment"></a>Ejemplo (datos adjuntos de referencia)

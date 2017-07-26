@@ -68,18 +68,18 @@ Puede llamar a Microsoft Graph desde los siguientes tipos de aplicaciones:
 - **Aplicaciones web**: aplicaciones que se ejecutan en un servidor e interactúan con el usuario que ha iniciado sesión a través de un agente de usuario, normalmente un explorador web. La mayor parte del nivel de presentación se controla en el servidor, y las llamadas a Microsoft Graph se realizan desde el servidor en nombre de un usuario.
 - **Aplicaciones de página única (SPA)**: aplicaciones web con experiencias de usuario enriquecidas que controlan gran parte del nivel de presentación mediante scripting del lado cliente en el explorador. Las llamadas a Microsoft Graph se realizan desde scripts del lado cliente mediante tecnologías como AJAX y marcos como Angular.js. Las llamadas se realizan en nombre de un usuario.
 - **Servicios y demonios en segundo plano**: servicios y demonios en segundo plano que se ejecutan en un servidor sin la presencia de un usuario y realizan llamadas a Microsoft Graph con su propia identidad.
-- **API web**: una aplicación cliente llama a una API web (protegida por Azure AD) que, después, llama a Microsoft Graph, todo ello en nombre de un usuario. Es compatible con el punto de conexión de Azure AD. Para el punto de conexión de Azure AD v2.0, solo se admite si el cliente y la API web tienen el mismo identificador de aplicación; por ejemplo, una aplicación nativa que llama al back-end de una API web. 
+- **API web**: una aplicación cliente llama a una API web (protegida por Azure AD) que, después, llama a Microsoft Graph, todo ello en nombre de un usuario. Es compatible con el punto de conexión de Azure AD. Para el punto de conexión de Azure AD v2.0, solo se admite si el cliente y la API web tienen el mismo id. de aplicación (por ejemplo, una aplicación nativa que realiza una llamada al back-end de una API web). 
 
 ## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>¿Cómo consigo que mi aplicación se comunique con Azure AD y Microsoft Graph?
 Para que la aplicación pueda obtener un token de Azure AD, debe estar registrada. En el caso del punto de conexión de Azure AD v2.0, use el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/) para registrar su aplicación. En el caso del punto de conexión de Azure AD, use [Azure Portal](https://portal.azure.com/). Mediante el registro, la aplicación se integra con Azure AD y se establecen las coordenadas y los identificadores que usa para obtener tokens. Son:
 
-- **Identificador de la aplicación**: identificador único asignado por Azure AD. 
+- **Id. de aplicación**: identificador único asignado por Azure AD. 
 - **URI/URL de redireccionamiento**: uno o más puntos de conexión en los que la aplicación recibirá respuestas de Azure AD. (En el caso de las aplicaciones móviles y nativas, es un URI asignado por Azure AD).
 - **Secreto de aplicación**: contraseña o par de claves pública y privada que la aplicación usa para autenticarse con Azure AD. (No necesario para aplicaciones móviles o nativas).
 
 En el caso de las aplicaciones que usan el punto de conexión de Azure AD, también se configurarán previamente los permisos de Microsoft Graph que la aplicación necesita durante el registro. En el caso de las aplicaciones que usan el punto de conexión de Azure AD v2.0, puede necesitar o no configurar previamente los permisos. 
 
-Las propiedades configuradas durante el registro se usan en la conexión. Por ejemplo, en la siguiente solicitud de token, *client_id* es el *identificador de la aplicación*, *redirect_uri* es uno de los *URI de redireccionamiento* registrados de la aplicación y *client_secret* es el *secreto de aplicación*. 
+Las propiedades configuradas durante el registro se usan en la conexión. Por ejemplo, en la siguiente solicitud de token: *client_id* es el *id. de aplicación*; *redirect_uri* es uno de los *URI de redireccionamiento* registrados de la aplicación; y *client_secret* es el *secreto de aplicación*. 
 
 ```
 // Line breaks for legibility only
@@ -125,7 +125,7 @@ Las principales diferencias entre Azure AD y Azure AD v2.0 son las siguientes:
 
 Existen algunas ventajas adicionales con Azure AD v2.0. Por ejemplo:
 
-* La aplicación puede usar un solo identificador de aplicación para varias plataformas. Esto simplifica la administración de la aplicación para los desarrolladores y los administradores.
+* La aplicación puede usar un mismo id. de aplicación para varias plataformas. Esto simplifica la administración de aplicaciones para desarrolladores y administradores.
 * [Compatibilidad con el consentimiento dinámico e incremental](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent). Con esta característica, la aplicación puede solicitar permisos adicionales durante el tiempo de ejecución y emparejar la solicitud de consentimiento del usuario con la funcionalidad que lo requiere. Esto proporciona una experiencia mucho más cómoda para los usuarios que tener que dar su consentimiento a una larga lista de permisos cuando inician sesión por primera vez.  
 
 Dado que Azure AD v2.0 es más reciente que Azure AD y todavía se le están agregando características, existen algunas limitaciones en el punto de conexión v2.0 que debe tener en cuenta al tomar una decisión. Por ejemplo:
@@ -167,7 +167,7 @@ La documentación de Azure AD contiene artículos y ejemplos que se centran espe
 Para el punto de conexión de Azure AD v2.0: 
 
 - El mejor punto de partida es la [documentación del punto de conexión de Azure AD v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview). Este artículo contiene vínculos a información general, documentación de protocolos y artículos de introducción para diversas plataformas, todo ello organizado según el tipo de aplicación que se desarrolle. 
-- Para obtener ejemplos ordenados por biblioteca de autenticación de cliente o de servidor, vea [Bibliotecas de autenticación de Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries). 
+- Para obtener ejemplos ordenados por biblioteca de autenticación de cliente o servidor, vea [Bibliotecas de autenticación de Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries). 
 - También puede explorar ejemplos de Azure AD por plataforma en la [Galería de código de Azure](https://azure.microsoft.com/resources/samples/?service=active-directory). Nota: No se puede organizar la búsqueda por versión del punto de conexión. 
 
 Para el punto de conexión de Azure AD: 
@@ -178,7 +178,7 @@ Para el punto de conexión de Azure AD:
 - También puede explorar ejemplos de Azure AD por plataforma en la [Galería de código de Azure](https://azure.microsoft.com/resources/samples/?service=active-directory). Nota: No se puede organizar la búsqueda por versión del punto de conexión. 
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Documentación sobre el punto de conexión de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)
 - [Documentación sobre el punto de conexión de Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)

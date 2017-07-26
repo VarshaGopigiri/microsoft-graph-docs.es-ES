@@ -1,11 +1,13 @@
 # <a name="get-access-without-a-user"></a>Obtener acceso sin un usuario
-Algunas aplicaciones se ejecutan en un servidor sin que haya un usuario presente. Estos tipos de aplicaciones suelen denominarse servicios en segundo plano o demonios. Un ejemplo de una aplicación de este tipo podría ser un servicio de archivado de correo electrónico que se activa y se ejecuta de noche. Los servicios en segundo plano suelen usar el flujo de concesión de credenciales de cliente de OAuth 2.0 para obtener tokens de acceso de Azure AD. En este tema, veremos los pasos básicos para configurar un servicio en segundo plano y usar el flujo de concesión de credenciales de cliente de OAuth para obtener un token de acceso de Azure AD para llamar a Microsoft Graph. 
+Algunas aplicaciones realizan llamadas a Microsoft Graph con su propia identidad, en lugar de hacerlo en nombre de un usuario. En muchos casos, son servicios en segundo plano o demonios que se ejecutan en un servidor sin que un usuario iniciara la sesión. Un ejemplo de una aplicación de este tipo podría ser un servicio de archivado de correo electrónico que se activa y se ejecuta de noche. En algunos casos, puede que las aplicaciones de servidores donde un usuario inicie la sesión necesiten realizar llamadas a Microsoft Graph con su propia identidad. Por ejemplo, puede que una aplicación tenga que usar una función que necesite privilegios más elevados en una organización que los asignados al usuario que inició la sesión.  
+
+Las aplicaciones que realizan llamadas a Microsoft Graph con su propia identidad usan el flujo de concesión de credenciales de cliente de OAuth 2.0 para obtener tokens de acceso de Azure AD. En este tema, le indicaremos los pasos básicos para configurar un servicio y usar el flujo de concesión de credenciales de cliente de OAuth para obtener un token de acceso. 
 
 ## <a name="authentication-and-authorization-steps"></a>Pasos de autenticación y autorización
-Los pasos básicos necesarios para autenticar un servicio en segundo plano y obtener un token del punto de conexión de Azure AD v2.0 para realizar llamadas a Microsoft Graph son los siguientes:
+Estos son los pasos básicos necesarios para configurar un servicio y obtener un token desde el punto de conexión de Azure AD v2.0 que el servicio puede usar para realizar una llamada a Microsoft Graph con su propia identidad:
 
 1. Registrar la aplicación.
-2. Configurar los permisos de Microsoft Graph.
+2. Configurar los permisos de Microsoft Graph en la aplicación.
 3. Obtener el consentimiento del administrador.
 4. Obtener un token de acceso.
 5. Usar el token de acceso para llamar a Microsoft Graph.
@@ -13,21 +15,21 @@ Los pasos básicos necesarios para autenticar un servicio en segundo plano y obt
 ## <a name="1-register-your-app"></a>1. Registrar la aplicación
 Para autenticarse con el punto de conexión de Azure v2.0, primero debe registrar la aplicación en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/). Puede usar una cuenta de Microsoft o una cuenta profesional o educativa para registrar la aplicación. 
 
-En la captura de pantalla siguiente se muestra el registro de una aplicación web que se ha configurado para un servicio en segundo plano. ![Registro de la aplicación de servicio](./images/v2-service-registration.png)
+En la captura de pantalla siguiente se muestra el registro de una aplicación web configurado para un servicio en segundo plano. ![Registro de la aplicación de servicio](./images/v2-service-registration.png)
 
-En el caso de un servicio en segundo plano, debe registrar la aplicación para la plataforma web y copiar los valores siguientes:
+Para un servicio que llamará a Microsoft Graph con su propia identidad, necesita registrar la aplicación en la plataforma web y copiar los valores siguientes:
 
-- El identificador de la aplicación asignado por el portal de registro de aplicaciones.
-- Un secreto de la aplicación, ya sea una contraseña o un par de claves pública y privada (certificado).
+- El id. de aplicación asignado por el portal de registro de aplicaciones.
+- Un secreto de aplicación, ya sea una contraseña o un par de claves pública y privada (certificado).
 - Una dirección URL de redireccionamiento para que el servicio reciba respuestas de token de Azure AD.
 - Una dirección URL de redireccionamiento para que el servicio reciba respuestas de consentimiento del administrador si la aplicación implementa la funcionalidad para solicitar el consentimiento del administrador.  
 
-Para conocer los pasos necesarios para configurar una aplicación mediante el Portal de registro de aplicaciones de Microsoft, vea [Registrar una aplicación](./auth_register_app_v2.md).
+Para conocer los pasos necesarios para configurar una aplicación con el Portal de registro de aplicaciones de Microsoft, vea [Registrar una aplicación](./auth_register_app_v2.md).
 
-Con el flujo de concesión de credenciales de cliente de OAuth 2.0, la aplicación se autentica directamente en el punto de conexión `/token` de Azure AD v2.0 mediante el identificador de aplicación asignado por Azure AD y el secreto de aplicación que ha creado en el portal. 
+Con el flujo de concesión de credenciales de cliente de OAuth 2.0, la aplicación se autentica directamente en el punto de conexión `/token` de Azure AD v2.0 con el id. de aplicación asignado por Azure AD y el secreto de aplicación que creó en el portal. 
 
 ## <a name="2-configure-permissions-for-microsoft-graph"></a>2. Configurar los permisos de Microsoft Graph
-Para las aplicaciones que se ejecutan sin un usuario, Microsoft Graph expone los permisos de la aplicación. (Microsoft Graph también expone los permisos delegados para aplicaciones que se ejecutan en nombre de un usuario). Se configuran previamente los permisos de la aplicación que su aplicación necesita al registrar la aplicación. Los permisos de la aplicación siempre requieren el consentimiento del administrador. Los administradores pueden dar su consentimiento a estos permisos mediante [Azure Portal](https://portal.azure.com) cuando la aplicación se instala en la organización o mediante la experiencia de registro en la aplicación que usted proporcione para que los administradores acepten los permisos que haya configurado. Una vez que Azure AD registra el consentimiento del administrador, la aplicación puede solicitar tokens sin tener que volver a solicitar su consentimiento. Para obtener más información sobre los permisos disponibles con Microsoft Graph, vea la [Referencia de permisos](./permissions_reference.md).
+Para las aplicaciones que realizan llamadas a Microsoft Graph con su propia identidad, Microsoft Graph expone los permisos de la aplicación. (Microsoft Graph también expone los permisos delegados de las aplicaciones que realizan llamadas en nombre de un usuario). Necesita preconfigurar los permisos de la aplicación necesarios al registrar la aplicación. Los permisos de la aplicación siempre requieren el consentimiento del administrador. Los administradores pueden dar su consentimiento a estos permisos mediante [Azure Portal](https://portal.azure.com) cuando la aplicación se instala en la organización o mediante la experiencia de registro en la aplicación que usted proporcione para que los administradores acepten los permisos que haya configurado. Una vez que Azure AD registra el consentimiento del administrador, la aplicación puede solicitar tokens sin tener que volver a solicitar su consentimiento. Para obtener más información sobre los permisos disponibles con Microsoft Graph, vea la [Referencia de permisos](./permissions_reference.md).
 
 Para configurar los permisos de la aplicación en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/): en **Microsoft Graph**, seleccione **Agregar** junto a **Permisos de la aplicación** y, después, seleccione los permisos que requiere la aplicación en el cuadro de diálogo **Seleccionar permisos**.
 
@@ -58,8 +60,8 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | redirect_uri |Obligatorio |URI de redireccionamiento adonde quiere que se envíe la respuesta para que la aplicación la controle. Debe coincidir exactamente con uno de los URI de redireccionamiento que ha registrado en el portal, pero con codificación URL, y puede tener segmentos de ruta de acceso adicionales. |
 | state |Recomendado |Valor incluido en la solicitud que también se devuelve en la respuesta de token. Puede ser una cadena con cualquier contenido que quiera. El estado se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. |
 
-### <a name="consent-experience"></a>Experiencia de consentimiento
-Azure AD exige que solo pueda iniciar sesión un administrador de inquilinos para completar la solicitud. Se le pedirá al administrador que apruebe todos los permisos de aplicación que se han solicitado para la aplicación en el portal de registro de aplicaciones. A continuación se incluye un ejemplo del cuadro de diálogo de consentimiento que Azure AD muestra al administrador:
+### <a name="administrator-consent-experience"></a>Experiencia de consentimiento del administrador
+Con solicitudes al punto de conexión de `/adminconsent`, Azure AD exige que solo un administrador de inquilinos pueda iniciar sesión para completar la solicitud. Se pedirá al administrador que apruebe todos los permisos de aplicación que solicitó para la aplicación en el portal de registro de aplicaciones. A continuación se incluye un ejemplo del cuadro de diálogo de consentimiento que Azure AD muestra al administrador:
 
 ![Cuadro de diálogo de consentimiento del administrador.](./images/admin-consent.png)
 
@@ -85,7 +87,7 @@ https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49
 ```
 
 ## <a name="4-get-an-access-token"></a>4. Obtener un token de acceso
-En el flujo de concesión de credenciales de cliente de OAuth 2.0, se usan los valores del identificador de aplicación y el secreto de aplicación que se guardaron al registrar la aplicación para solicitar un token de acceso directamente del punto de conexión `/token` de Azure AD v2.0.
+En el flujo de concesión de credenciales de cliente de OAuth 2.0 se usan los valores del id. de aplicación y el secreto de aplicación que se guardaron al registrar la aplicación para solicitar un token de acceso directamente desde el punto de conexión `/token` de Azure AD v2.0.
 
 Para especificar los permisos configurados previamente, se pasa `https://graph.microsoft.com/.default` como valor del parámetro `scope` en la solicitud de token. Vea la descripción del parámetro `scope` en la solicitud de token siguiente para obtener más información.
 
@@ -104,7 +106,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 | --- | --- | --- |
 | tenant |Obligatorio |Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. |
 | client_id |Obligatorio |Identificador de aplicación que el [portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com) ha asignado al registrar la aplicación. |
-| scope |Obligatorio |El valor pasado para el parámetro `scope` en esta solicitud debe ser el identificador de recurso (URI del identificador de aplicación) del recurso que le interesa, con el sufijo `.default` anexado. Para Microsoft Graph, el valor es `https://graph.microsoft.com/.default`. Este valor le indica al punto de conexión de v2.0 que, de todos los permisos de aplicación que se han configurado para la aplicación, debe emitir un token para los que están asociados al recurso que quiere usar. |
+| scope |Necesario |El valor pasado para el parámetro `scope` en esta solicitud debe ser el identificador de recurso (URI del identificador de aplicación) del recurso que le interesa, con el sufijo `.default` anexado. Para Microsoft Graph, el valor es `https://graph.microsoft.com/.default`. Este valor le indica al punto de conexión de v2.0 que, de todos los permisos de aplicación que se han configurado para la aplicación, debe emitir un token para los que están asociados al recurso que quiere usar. |
 | client_secret |Obligatorio |Secreto de la aplicación generado para la aplicación en el portal de registro de aplicaciones. |
 | grant_type |Obligatorio |Debe ser `client_credentials`. |
 
@@ -166,7 +168,12 @@ Content-Length: 407
 ```
 
 ## <a name="supported-app-scenarios-and-resources"></a>Escenarios de aplicación admitidos y recursos
-Los servicios en segundo plano se ejecutan en un servidor sin que un usuario haya iniciado sesión y usan la concesión de credenciales de cliente de OAuth 2.0 para autenticarse con Azure AD y obtener un token. En el caso del punto de conexión de v2.0, puede explorar en profundidad este escenario con los recursos siguientes:
+Las aplicaciones que realizan llamadas a Microsoft Graph con su propia identidad están en una de las dos categorías siguientes:
+
+- Servicios en segundo plano (demonios) que se ejecutan en un servidor sin que un usuario iniciara la sesión.
+- Aplicaciones en las que un usuario inició la sesión, pero que realizan llamadas a Microsoft Graph con su propia identidad (por ejemplo, para usar funciones que necesitan privilegios más elevados que los del usuario).
+
+Las aplicaciones que realizan llamadas a Microsoft Graph con su propia identidad usan la concesión de credenciales de cliente de OAuth 2.0 para autenticarse con Azure AD y obtener un token. Para el punto de conexión de v2.0, puede explorar en detalle este escenario con los recursos siguientes:
 
 - Para consultar un tratamiento más completo del flujo de concesión de credenciales de cliente que también incluye las respuestas de error, vea [Azure Active Directory v2.0 y el flujo de credenciales de cliente de OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds). 
 - Para obtener un ejemplo que llama a Microsoft Graph desde un servicio, vea el [ejemplo de demonio de v2.0](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2) en GitHub.

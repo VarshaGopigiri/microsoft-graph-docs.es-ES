@@ -4,12 +4,12 @@ Contiene información sobre un plan de servicio asociado a una SKU suscrita. La 
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|Identificador único del plan de servicio.|
 |servicePlanName|String|Nombre del plan de servicio.|
-|provisioningStatus|String|Estado de aprovisionamiento del plan de servicio.|
-|appliesTo|String||
+|provisioningStatus|String|El estado de aprovisionamiento del plan de servicio. Valores posibles:<br/>“Success”: el servicio está completamente aprovisionado.<br/>“Disabled”: se deshabilitó el servicio.<br/>“PendingInput”: aún no se aprovisionó el servicio; esperando la confirmación del servicio.<br/>“PendingActivation”: el servicio está aprovisionado, pero necesita una activación explícita por el administrador (por ejemplo, plan de servicio de Intune_O365).<br/>“PendingProvisioning”: Microsoft agregó un nuevo servicio al SKU del producto y aún no se activó en el inquilino.|
+|appliesTo|Cadena|El objeto al que se puede asignar el plan de servicio. Valores posibles:<br/>“User”: el plan de servicio se puede asignar a usuarios individuales.<br/>“Company”: el plan de servicio se puede asignar a todo el inquilino.|
 
 
 ## <a name="json-representation"></a>Representación JSON
