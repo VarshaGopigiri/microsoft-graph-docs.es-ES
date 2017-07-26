@@ -1,20 +1,9 @@
-# <a name="serviceplaninfo-resource-type"></a>Tipo de recurso servicePlanInfo
-
-Contiene información sobre un plan de servicio asociado a una SKU suscrita. La propiedad **servicePlans** de la entidad [subscribedSku](subscribedsku.md) es una colección de **servicePlanInfo**.
+<span data-ttu-id="8be9c-p103">El objeto al que se puede asignar el plan de servicio. Valores posibles:</span><span class="sxs-lookup"><span data-stu-id="8be9c-p103">The object the service plan can be assigned to. Possible values:</span></span>|El objeto al que se puede asignar el plan de servicio. Valores posibles:<br/><span data-ttu-id="8be9c-127">“User”: el plan de servicio se puede asignar a usuarios individuales.</span><span class="sxs-lookup"><span data-stu-id="8be9c-127">"User" - service plan can be assigned to individual users.</span></span><br/><span data-ttu-id="8be9c-128">“Company”: el plan de servicio se puede asignar a todo el inquilino.</span><span class="sxs-lookup"><span data-stu-id="8be9c-128">"Company" - service plan can be assigned to the entire tenant.</span></span>|
 
 
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|servicePlanId|Guid|Identificador único del plan de servicio.|
-|servicePlanName|String|Nombre del plan de servicio.|
-|provisioningStatus|String|Estado de aprovisionamiento del plan de servicio.|
-|appliesTo|String||
+## <a name="json-representation"></a><span data-ttu-id="8be9c-129">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="8be9c-129">JSON representation</span></span>
 
-
-## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="8be9c-130">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="8be9c-130">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
