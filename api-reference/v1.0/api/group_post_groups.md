@@ -1,7 +1,5 @@
-<span data-ttu-id="34a70-p108">Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán más propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34a70-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.</span></span>
-
+<span data-ttu-id="ea31b-p107">Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán más propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="ea31b-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. More properties will be returned from an actual call.</span></span>
 Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán más propiedades de una llamada real.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -13,15 +11,15 @@ Content-type: application/json
 Content-length: 244
 
 {
-    "description": "Self help community for library",
-    "displayName": "Library Assist",
-    "groupTypes": [
-        "Unified"
-    ],
-    "mail": "library@contoso.onmicrosoft.com",
-    "mailEnabled": true,
-    "mailNickname": "library",
-    "securityEnabled": false
+  "description": "Self help community for library",
+  "displayName": "Library Assist",
+  "groupTypes": [
+    "Unified"
+  ],
+  "mail": "library@contoso.onmicrosoft.com",
+  "mailEnabled": true,
+  "mailNickname": "library",
+  "securityEnabled": false
 }
 ```
 
