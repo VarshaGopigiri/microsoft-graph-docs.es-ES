@@ -3,11 +3,10 @@
 Recupera las propiedades y relaciones del objeto directoryObject.
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: 
-
 - _Directory.Read.All_ 
 - _Directory.AccessAsUser.All_
 
-> **Nota:** Los ámbitos de permiso se muestran por orden de menor a mayor privilegio necesario.
+> Nota: Los ámbitos de permiso se muestran por orden de privilegio mínimo necesario.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

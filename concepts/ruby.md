@@ -287,8 +287,5 @@ Por último, el código usa el código de respuesta HTTP que se ha devuelto para
 ## <a name="see-also"></a>Recursos adicionales
 - Pruebe la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
 - Explore nuestros otros [ejemplos de Microsoft Graph](https://github.com/microsoftgraph) en GitHub.
-- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
 
 

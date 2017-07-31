@@ -114,7 +114,6 @@ Para explorar los ejemplos de conexión terminados, visite [Microsoft Graph](htt
 </table>
 
 ## <a name="see-also"></a>Recursos adicionales
-- Pruebe llamadas de REST de ejemplo en nuestro [Explorador de API](https://graph.microsoft.io/graph-explorer)
-- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- Pruebe llamadas de REST de ejemplo en nuestro [Explorador de API](https://graph.microsoft.io/graph-explorer).
+- [Documentación acerca del punto de conexión de Azure AD](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Documentación acerca del punto de conexión v2.0 de Azure AD](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

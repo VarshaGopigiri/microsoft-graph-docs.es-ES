@@ -15,7 +15,7 @@ Estos son los pasos básicos necesarios para configurar un servicio y obtener un
 ## <a name="1-register-your-app"></a>1. Registrar la aplicación
 Para autenticarse con el punto de conexión de Azure v2.0, primero debe registrar la aplicación en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/). Puede usar una cuenta de Microsoft o una cuenta profesional o educativa para registrar la aplicación. 
 
-En la captura de pantalla siguiente se muestra el registro de una aplicación web configurado para un servicio en segundo plano. ![Registro de la aplicación de servicio](./images/v2-service-registration.png)
+En la captura de pantalla siguiente se muestra el registro de una aplicación web que se ha configurado para un servicio en segundo plano. ![Registro de la aplicación de servicio](./images/v2-service-registration.png)
 
 Para un servicio que llamará a Microsoft Graph con su propia identidad, necesita registrar la aplicación en la plataforma web y copiar los valores siguientes:
 
@@ -54,7 +54,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 
 | Parámetro | Condición | Descripción |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | tenant |Obligatorio |Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. Si no sabe a qué inquilino pertenece el usuario y quiere permitir que inicie sesión con cualquier inquilino, use `common`. |
 | client_id |Obligatorio |Identificador de aplicación que el [portal de registro de aplicaciones](https://apps.dev.microsoft.com/) ha asignado a la aplicación. |
 | redirect_uri |Obligatorio |URI de redireccionamiento adonde quiere que se envíe la respuesta para que la aplicación la controle. Debe coincidir exactamente con uno de los URI de redireccionamiento que ha registrado en el portal, pero con codificación URL, y puede tener segmentos de ruta de acceso adicionales. |
@@ -73,7 +73,7 @@ GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b
 ```
 
 | Parámetro | Descripción |
-| --- | --- |
+|:----------|:------------|
 | tenant |Inquilino de directorio que ha concedido a la aplicación los permisos que ha solicitado, en formato GUID. |
 | state |Valor incluido en la solicitud que también se devuelve en la respuesta de token. Puede ser una cadena con cualquier contenido que quiera. El estado se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. |
 | admin_consent |Establecido en **true**. |
@@ -103,7 +103,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 ```
 
 | Parámetro | Condición | Descripción |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | tenant |Obligatorio |Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. |
 | client_id |Obligatorio |Identificador de aplicación que el [portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com) ha asignado al registrar la aplicación. |
 | scope |Necesario |El valor pasado para el parámetro `scope` en esta solicitud debe ser el identificador de recurso (URI del identificador de aplicación) del recurso que le interesa, con el sufijo `.default` anexado. Para Microsoft Graph, el valor es `https://graph.microsoft.com/.default`. Este valor le indica al punto de conexión de v2.0 que, de todos los permisos de aplicación que se han configurado para la aplicación, debe emitir un token para los que están asociados al recurso que quiere usar. |
@@ -122,7 +122,7 @@ Una respuesta correcta tiene un aspecto similar al siguiente:
 ```
 
 | Parámetro | Descripción |
-| --- | --- |
+|:----------|:------------|
 | access_token |Token de acceso solicitado. La aplicación puede usar este token en las llamadas a Microsoft Graph. |
 | token_type |Indica el valor de tipo del token. El único tipo que Azure AD admite es `bearer`. |
 | expires_in |Período de validez del token de acceso (en segundos). |

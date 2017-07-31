@@ -210,6 +210,5 @@ Nota: Observará que se han configurado los siguientes ámbitos de permiso para 
 
 ## <a name="see-also"></a>Recursos adicionales
 - [SDK de Microsoft Graph para iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

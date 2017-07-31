@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-groups-using-schema-extensions-example"></a>Agregar datos personalizados a grupos mediante extensiones de esquema (ejemplo)
+# <a name="add-custom-data-to-groups-using-schema-extensions"></a>Agregar datos personalizados a los grupos mediante extensiones de esquema 
 
 Vamos a guiarle a través de un ejemplo para demostrarle cómo usar las *extensiones de esquema*. 
 
@@ -117,7 +117,7 @@ Content-length: 420
 }
 ```
 
-## <a name="3-create-a-new-group-with-extended-data"></a>3. Crear un grupo con datos extendidos 
+## <a name="3-create-a-new-group-with-extended-data"></a>3. Crear un nuevo grupo con datos extendidos 
 Crear un _nuevo_ grupo y ampliarlo con datos adicionales con la definición de extensión de esquema `graphlearn_courses` que acaba de registrar.  Se trata de un ```POST``` estándar para el recurso **grupo**, con la extensión de tipo complejo `graphlearn_courses` adicional definida en el cuerpo de la solicitud.  La respuesta no reflejará ninguna extensión de datos. Necesitamos ```$select``` explícitamente la extensión por el nombre con una operación ```GET```.
 
 ##### <a name="request"></a>Solicitud
@@ -227,7 +227,7 @@ Content-length: 326
 ## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](extensibility_overview.md)
-- [Agregar datos personalizados a usuarios mediante extensiones abiertas (ejemplo)](extensibility_open_users.md)
+- [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](extensibility_open_users.md)
 - [Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Agregar y comprobar un dominio para el nuevo Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Tipo de recurso schemaExtension](../api-reference/v1.0/resources/schemaextension.md)
