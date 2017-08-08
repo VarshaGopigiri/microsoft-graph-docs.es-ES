@@ -260,14 +260,25 @@
       <Item text="Obtener directoryRoleTemplate" url="/en-us/api-reference/v1.0/api/directoryroletemplate_get" SEOKeyword="Obtener directoryRoleTemplate, API de Microsoft Graph, API de directorio" SEODescription="Recupere las propiedades y las relaciones del objeto directoryroletemplate." />
     </Item>
     <Item text="Dominios" url="/en-us/api-reference/v1.0/resources/domain">
-      <Item text="Enumerar dominios" url="/en-us/api-reference/v1.0/api/domain_list" />
+	  <Item text="Enumerar dominios" url="/en-us/api-reference/v1.0/api/domain_list" />
       <Item text="Crear dominio" url="/en-us/api-reference/v1.0/api/domain_post_domains" />
       <Item text="Eliminar dominio" url="/en-us/api-reference/v1.0/api/domain_delete" />
       <Item text="Obtener dominio" url="/en-us/api-reference/v1.0/api/domain_get" />
       <Item text="Actualizar dominio" url="/en-us/api-reference/v1.0/api/domain_update" />
       <Item text="Comprobar dominio" url="/en-us/api-reference/v1.0/api/domain_verify" />
 	  </Item>
-    <Item text="Administrador de invitaciones" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Utilice el Administrador de invitaciones para crear una invitación para agregar un usuario externo al directorio de la organización. ">
+    <Item text="Configuración de grupo" url="/en-us/api-reference/v1.0/resources/groupsetting">
+	  <Item text="Crear configuración" url="/en-us/api-reference/v1.0/api/groupsetting_post_groupsettings" />
+	  <Item text="Obtener configuración" url="/en-us/api-reference/v1.0/api/groupsetting_get" />
+	  <Item text="Configuración de lista" url="/en-us/api-reference/v1.0/api/groupsetting_list" />
+	  <Item text="Actualizar configuración" url="/en-us/api-reference/v1.0/api/groupsetting_update" />
+	  <Item text="Eliminar configuración" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
+	</Item>
+	<Item text="Plantilla de configuración de grupo" url="/en-us/api-reference/v1.0/resources/groupsettingtemplate">
+	  <Item text="Lista de plantillas de configuración de grupo" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
+	  <Item text="Obtener plantilla de configuración de grupo" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
+	</Item>
+	<Item text="Administrador de invitaciones" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Utilice el Administrador de invitaciones para crear una invitación para agregar un usuario externo al directorio de la organización. ">
       <Item text="Crear invitación" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="Cree una invitación para agregar un usuario externo al directorio de la organización." />
     </Item>
     <Item text="Organización" url="/en-us/api-reference/v1.0/resources/organization" SEOKeyword="estructura organizativa de usuario, API de Microsoft Graph, API de usuario" SEODescription="">
@@ -910,7 +921,7 @@
       <Item text="Configuración de directorio" url="/en-us/api-reference/beta/resources/directorysetting" SEOKeyword="API de directorySetting, API de Microsoft Graph, API de directorysetting" SEODescription="Controla los comportamientos de entidades o características, tanto en un nivel de todos los inquilinos como en un nivel de entidad específica.">
         <Item text="Crear configuración" url="/en-us/api-reference/beta/api/directorysetting_post_settings" SEOKeyword="Crear directorySetting, API de Microsoft Graph, API de directorio" SEODescription="Recupere una lista de objetos directoryrole." />
         <Item text="Obtener configuración" url="/en-us/api-reference/beta/api/directorysetting_get" SEOKeyword="Obtener directorySetting, API de Microsoft Graph, API de directorio" SEODescription="Use esta API para crear un nuevo DirectoryRole." />
-        <Item text="Enumerar configuración" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="Enumerar directorySetting, API de Microsoft Graph, API de directorio" SEODescription="Recupere las propiedades y las relaciones del objeto directoryrole." />
+        <Item text="Configuración de lista" url="/en-us/api-reference/beta/api/directorysetting_list" SEOKeyword="Lista de directorySetting, API de Microsoft Graph, API de directorio" SEODescription="Recupere las propiedades y las relaciones del objeto directoryrole." />
         <Item text="Actualizar configuración" url="/en-us/api-reference/beta/api/directorysetting_update" SEOKeyword="Actualizar directorySetting, API de Microsoft Graph, API de directorio" SEODescription="Actualice las propiedades del objeto directoryrole." />
         <Item text="Eliminar configuración" url="/en-us/api-reference/beta/api/directorysetting_delete" SEOKeyword="Eliminar directorySetting, API de Microsoft Graph, API de directorio" SEODescription="Elimine el objeto directoryRole." />
       </Item>
