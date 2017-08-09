@@ -3,6 +3,7 @@
   <Item text="Información general" url="/en-us/concepts/overview" SEOKeyword="Información general, API de Microsoft Graph, Información general" SEODescription="Microsoft Graph permite a las aplicaciones acceder al trabajo digital y a los datos de vida digital a través de la nube inteligente de Microsoft. Grandes ventajas para los desarrolladores: Un punto de conexión unificado de la API de Microsoft para obtener acceso a los datos, a la inteligencia y a la información procedente de la nube de Microsoft." />    
   <Item text="Escenarios destacados" url="/en-us/concepts/featured_scenarios"> 
 	  <Item text="Buscar horas de reunión" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Obtener información sobre los contactos" url="/en-us/concepts/people_example" SEODescription="Utilice la API Contactos para recuperar las personas más importantes para un usuario." />
   </Item>
   <Item text="Compilar una aplicación por primera vez" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, API de Microsoft Graph, Tutoriales" SEODescription="Introducción a Microsoft Graph para obtener acceso a los datos en la nube de Microsoft en una aplicación para Android" />
@@ -543,11 +544,17 @@
       </Item>
       <Item text="Propiedad extendida de varios valores" url="/en-us/api-reference/v1.0/resources/multivaluelegacyextendedproperty" SEODescription="">
         <Item text="Crear una propiedad de varios valores" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_post_multivalueextendedproperties" SEODescription="" />
-        <Item text="Obtener una propiedad de varios valores" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
+        <Item text="Obtener propiedad de varios valores" url="/en-us/api-reference/v1.0/api/multivaluelegacyextendedproperty_get" SEODescription="" />
       </Item>
     </Item>
   </Item>
-  <Item text="Contacto personales" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="contacto de usuario, API de Microsoft Graph, API de usuario" SEODescription="API de contactos personales">
+  <Item text="Contactos" url="/en-us/api-reference/v1.0/resources/social_overview">
+	<Item text="Contacto" url="/en-us/api-reference/v1.0/resources/person">
+		<Item text="Enumerar contactos" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="Obtener contacto" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
+  </Item>
+  <Item text="Contacto personal" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="contacto de usuario, API de Microsoft Graph, API de usuario" SEODescription="API de contactos personales">
     <Item text="Contacto" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="contacto de usuario, API de Microsoft Graph, API de usuario" SEODescription="Contacto">
       <Item text="Enumerar contactos" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="Enumerar contactos, API de Microsoft Graph, API de usuarios" SEODescription="Recupere una lista de objetos de contacto." />
       <Item text="Crear contacto" url="/en-us/api-reference/v1.0/api/user_post_contacts" SEOKeyword="Crear contacto, API de Microsoft Graph, API de usuarios" SEODescription="Use esta API para crear un nuevo contacto." />
@@ -751,7 +758,8 @@
         <Item text="Enumerar grupos eliminados" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Enumerar grupos" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="Enumerar grupos, API de Microsoft Graph, API de grupos" SEODescription="Recuperar una lista de objetos de grupo." />
         <Item text="Enumerar equipos agrupados" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="Incluir en una lista el elemento joinedTeams, API de Microsoft Graph, API de usuarios" SEODescription="Recupere una lista de los equipos de Microsoft a los que pertenece el usuario." />
-        <Item text="Enumerar miembro de" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="Enumerar memberOf, API de Microsoft Graph, API de grupos" SEODescription="Recupere una lista de objetos directoryobject." />
+        <Item text="Enumerar directivas del ciclo de vida" url="/en-us/api-reference/beta/api/group_list_grouplifecyclepolicies" />
+		<Item text="Enumerar miembro de" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="Enumerar memberOf, API de Microsoft Graph, API de grupos" SEODescription="Recupere una lista de objetos directoryobject." />
         <Item text="Enumerar miembros" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="Enumerar miembros, API de Microsoft Graph, API de grupos" SEODescription="Recupere una lista de objetos directoryobject." />
         <Item text="Enumerar propietarios" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="Enumerar propietarios, API de Microsoft Graph, API de grupos" SEODescription="Recupere una lista de objetos directoryobject." />
         <Item text="Eliminar grupo permanentemente" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
@@ -814,7 +822,17 @@
           <Item text="Obtener propiedad de varios valores" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-      <Item text="Notas" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="notas de usuario, API de Microsoft Graph, API de usuario" SEODescription="">
+      <Item text="Directiva del ciclo de vida" url="/en-us/api-reference/beta/resources/grouplifecyclepolicy">
+		<Item text="Crear directiva" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="Lista de directivas" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_list" />
+		<Item text="Obtener directiva" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_get" />
+		<Item text="Actualizar directiva" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_update" />
+		<Item text="Eliminar directiva" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
+		<Item text="Agregar grupo" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
+		<Item text="Quitar grupo" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
+		<Item text="Renovar grupo" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+	  </Item>
+	  <Item text="Notas" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="notas de usuario, API de Microsoft Graph, API de usuario" SEODescription="">
         <Item text="Enumerar blocs de notas" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Enumerar blocs de notas, API de Microsoft Graph, API de notas" SEODescription="Recuperar una lista de objetos de bloc de notas (../resources/notebook.md)." />
         <Item text="Crear bloc de notas" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Crear bloc de notas, API de Microsoft Graph, API de notas" SEODescription="Cree un bloc de notas de OneNote(../resources/notebook.md)." />
       </Item>
@@ -3208,7 +3226,7 @@
           <Item text="Obtener estado de diagnóstico de las aplicaciones administradas" url="/en-us/api-reference/beta/api/intune_mam_user_getmanagedappdiagnosticstatuses" />
           <Item text="Obtener directivas de aplicaciones administradas" url="/en-us/api-reference/beta/api/intune_mam_user_getmanagedapppolicies" />
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_user_list" />
-          <Item text="Incluir en una lista el registro de aplicaciones administradas" url="/en-us/api-reference/beta/api/intune_mam_user_list_managedappregistration" />
+          <Item text="Enumerar el registro de aplicaciones administradas" url="/en-us/api-reference/beta/api/intune_mam_user_list_managedappregistration" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_mam_user_update" />
           <Item text="Borrar por etiqueta de dispositivo" url="/en-us/api-reference/beta/api/intune_mam_user_wipebydevicetag" />
           <Item text="Limpiar el registro de aplicaciones administradas por etiqueta de dispositivo" url="/en-us/api-reference/beta/api/intune_mam_user_wipemanagedappregistrationbydevicetag" />
