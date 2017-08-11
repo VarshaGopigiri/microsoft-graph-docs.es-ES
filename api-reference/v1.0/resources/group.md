@@ -1,10 +1,9 @@
-<span data-ttu-id="45eb8-p139">Los hilos de conversación del grupo. Admite valores NULL.</span><span class="sxs-lookup"><span data-stu-id="45eb8-p139">The group's conversation threads. Nullable.</span></span>| Los hilos de conversación del grupo. Admite valores NULL.|
+<span data-ttu-id="b1209-p142">Los hilos de conversación del grupo. Admite valores NULL.</span><span class="sxs-lookup"><span data-stu-id="b1209-p142">The group's conversation threads. Nullable.</span></span>| Los hilos de conversación del grupo. Admite valores NULL.|
 
 
-## <span data-ttu-id="45eb8-411">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="45eb8-411">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a><span data-ttu-id="b1209-436">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b1209-436">JSON representation</span></span>
 
-<span data-ttu-id="45eb8-412">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="45eb8-412">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="b1209-437">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="b1209-437">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -68,12 +67,11 @@
 
 ```
 
-## <span data-ttu-id="45eb8-413">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="45eb8-413">See also</span></span>
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a><span data-ttu-id="b1209-438">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="b1209-438">See also</span></span>
 
-- [<span data-ttu-id="45eb8-414">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="45eb8-414">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="45eb8-415">Agregar datos personalizados a los usuarios mediante extensiones abiertas</span><span class="sxs-lookup"><span data-stu-id="45eb8-415">Add custom data to users using open extensions</span></span>](../../../concepts/extensibility_open_users.md)
-- [<span data-ttu-id="45eb8-416">Agregar datos personalizados a los grupos mediante extensiones de esquema</span><span class="sxs-lookup"><span data-stu-id="45eb8-416">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="b1209-439">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="b1209-439">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="b1209-440">Agregar datos personalizados a los usuarios mediante extensiones abiertas</span><span class="sxs-lookup"><span data-stu-id="b1209-440">Add custom data to users using open extensions</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="b1209-441">Agregar datos personalizados a los grupos mediante extensiones de esquema</span><span class="sxs-lookup"><span data-stu-id="b1209-441">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

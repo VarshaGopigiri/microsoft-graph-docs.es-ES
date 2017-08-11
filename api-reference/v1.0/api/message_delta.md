@@ -1,6 +1,6 @@
-<span data-ttu-id="d2a94-p111">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d2a94-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="f241c-p111">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.</span><span class="sxs-lookup"><span data-stu-id="f241c-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -30,11 +30,10 @@ Content-length: 337
 }
 ```
 
-### <span data-ttu-id="d2a94-163">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="d2a94-163">See also</span></span>
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a><span data-ttu-id="f241c-163">Consulte también</span><span class="sxs-lookup"><span data-stu-id="f241c-163">See also</span></span>
 
-- [<span data-ttu-id="d2a94-164">Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d2a94-164">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
-- [<span data-ttu-id="d2a94-165">Obtener los cambios incrementales en los mensajes de una carpeta</span><span class="sxs-lookup"><span data-stu-id="d2a94-165">Get incremental changes to messages in a folder</span></span>](../../../concepts/delta_query_messages.md)
+- [<span data-ttu-id="f241c-164">Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f241c-164">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="f241c-165">Obtener los cambios incrementales en los mensajes de una carpeta</span><span class="sxs-lookup"><span data-stu-id="f241c-165">Get incremental changes to messages in a folder</span></span>](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,10 +1,8 @@
-<span data-ttu-id="db8f0-p103">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.  No se devuelven datos JSON para una solicitud PATCH.</span><span class="sxs-lookup"><span data-stu-id="db8f0-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
+<span data-ttu-id="341b9-p103">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.  No se devuelven datos JSON para una solicitud PATCH.</span><span class="sxs-lookup"><span data-stu-id="341b9-p103">If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.</span></span>
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.  No se devuelven datos JSON para una solicitud PATCH.
-## <span data-ttu-id="db8f0-123">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="db8f0-123">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="db8f0-124">Solicitud</span><span class="sxs-lookup"><span data-stu-id="db8f0-124">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="db8f0-125">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="db8f0-125">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="341b9-123">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="341b9-123">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="341b9-124">Solicitud</span><span class="sxs-lookup"><span data-stu-id="341b9-124">Request</span></span>
+<span data-ttu-id="341b9-125">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="341b9-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_page"
@@ -28,9 +26,8 @@ Content-length: 312
   }
 ]
 ```
-##### <span data-ttu-id="db8f0-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="db8f0-126">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="db8f0-127">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="db8f0-127">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="341b9-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="341b9-126">Response</span></span>
+<span data-ttu-id="341b9-127">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="341b9-127">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

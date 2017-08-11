@@ -1,39 +1,4 @@
-# <a name="list-licensedetails"></a>Enumerar licenseDetails
-
-Recupere una lista de objetos licenseDetails.
-
-### <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.Read*; *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-### <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/licenseDetails
-GET /users/{id}/licenseDetails
-```
-### <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método **no** admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
-
-### <a name="request-headers"></a>Encabezados de solicitud
-| Nombre      |Descripción|
-|:----------|:----------|
-| Authorization  | &lt;código&gt; de portador|
-
-### <a name="request-body"></a>Cuerpo de la solicitud
-No proporcione un cuerpo de solicitud para este método.
-### <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [licenseDetails](../resources/licensedetails.md) en el cuerpo de la respuesta.
-### <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-
-<!-- {
-  "blockType": "request",
-  "name": "get_licensedetails"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/licenseDetails
-```
-##### <a name="response"></a>Respuesta
+<span data-ttu-id="24c57-p101">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="24c57-p101">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
