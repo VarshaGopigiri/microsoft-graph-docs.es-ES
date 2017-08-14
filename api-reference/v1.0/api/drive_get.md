@@ -17,7 +17,7 @@ Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
 Para acceder al OneDrive o OneDrive para la Empresa de un usuario, la aplicación debe solicitar la relación **drive** en el recurso [User](../resources/user.md).
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 
 <!-- { "blockType": "ignored" } -->
 
@@ -30,7 +30,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 Para acceder a la biblioteca de documentos predeterminada de un [grupo](../resources/group.md), la aplicación solicita la relación **drive** en el grupo.
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 
 <!-- { "blockType": "ignored" } -->
 

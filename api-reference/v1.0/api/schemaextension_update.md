@@ -17,7 +17,7 @@ Se requiere el siguiente **ámbito** para ejecutar esta API: *Directory.AccessAs
 PATCH /schemaExtensions/{id}
 ```
 
-### <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 
 | Nombre      |Descripción|
 |:----------|:----------|

@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All
 GET /me/onenote/sectionGroups/{id}/sections
 GET /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 GET /groups/{id}/onenote/sectionGroups/{id}/sections
+GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
@@ -39,7 +40,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "get_sections"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/oennote/sectionGroups/{id}/sections
+GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.

@@ -2,9 +2,26 @@
 
 Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.  
 
-Para más información sobre problemas conocidos con las API de Microsoft Graph, vea [Problemas conocidos](known_issues.md).
+Para obtener más información sobre problemas conocidos con las API de Microsoft Graph, vea [Problemas conocidos](known_issues.md).
+
+## <a name="august-2017"></a>Agosto de 2017
+
+### <a name="onenote"></a>OneNote
+
+|**Tipo de cambio**|**Versión**|**Descripción**|
+|:-------------|:-----------|:--------------|
+| Adición | v1.0 y beta | Se ha agregado la propiedad de navegación [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) a **site**.  |
+| Adición | Beta | Se ha agregado los parámetros *siteCollectionId* y *siteId* de destino para las operaciones de copia. Por ejemplo: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md). |
+
 
 ## <a name="july-2017"></a>Julio de 2017
+
+### <a name="group-settings"></a>Configuración de grupo
+
+|**Tipo de cambio**|**Versión**|**Descripción**|
+|:-------------|:-----------|:--------------|
+| Adición     | v1.0       | Se ha agregado compatibilidad para configuraciones de grupo.<br/>Nuevos tipos de recursos: [groupSetting](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsetting.md), [groupSettingTemplate](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/groupsettingtemplate.md), [settingValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingvalue.md) y [settingTemplateValue](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/settingtemplatevalue.md) |
+| Cambio       | v1.0       | Se han agregado la propiedad **classification** y la propiedad de navegación **settings** a [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group.md) |
 
 ### <a name="intune-apis"></a>API de Intune
 
@@ -548,8 +565,8 @@ Para más información sobre problemas conocidos con las API de Microsoft Graph,
 |**Tipo de cambio**|**Versión**|**Descripción**|
 |:-------------|:-----------|:--------------|
 |Adición|Beta|Se agregó compatibilidad para [restaurar y eliminar permanentemente grupos](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/directory).<br/>Nueva entidad: directorio con la propiedad de navegación deleteditems. |
-|Adición|Beta|Nueva entidad:</br>[Extremo](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
-|Cambio  |Beta|Nueva propiedad de navegación de [extremos](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) en [grupos](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) |
+|Adición|Beta|Nueva entidad:</br>[Punto de conexión](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/endpoint) |
+|Cambio  |Beta|Nueva propiedad de navegación de [endpoints](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/group_list_endpoints) en [groups](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/group) |
 |Adición|Beta|Nueva entidad:</br>[licenseDetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/licensedetails) |
 |Cambio  |Beta|Nueva propiedad de navegación [licensedetails](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/user_list_licensedetails) en [users](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/user) |
 
@@ -685,7 +702,7 @@ Para más información sobre problemas conocidos con las API de Microsoft Graph,
 
 |**Tipo de cambio**|**Versión**|**Descripción**|
 |:--------------|:-----------|:--------------|
-|Adición|Beta|Las API del Proxy de aplicación de Azure AD están ahora disponibles en la versión Beta del extremo de Microsoft Graph. Estas API permiten publicar de forma segura aplicaciones locales para usuarios externos a la red corporativa con Azure AD como plano de control común para el acceso. Puede usar las API publicadas para escribir una aplicación que pueda recuperar y actualizar diversos aspectos del proxy de aplicación como _connectors_, _connectorGroups_ y la configuración de _onPremisesPublishing_ de una aplicación.|
+|Adición|Beta|Las API del Proxy de aplicación de Azure AD están ahora disponibles en la versión Beta del punto de conexión de Microsoft Graph. Estas API permiten publicar de forma segura aplicaciones locales para usuarios externos a la red corporativa con Azure AD como plano de control común para el acceso. Puede usar las API publicadas para escribir una aplicación que pueda recuperar y actualizar diversos aspectos del proxy de aplicación como _connectors_, _connectorGroups_ y la configuración de _onPremisesPublishing_ de una aplicación.|
 
 ### <a name="drive"></a>Unidad de disco
 
@@ -739,7 +756,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 |**Tipo de cambio**|**Versión**|**Descripción**|
 |:--------------|:-----------|:--------------|
-|Adición|Beta|Las API del administrador de invitaciones están ahora disponibles en el extremo beta de Microsoft Graph. Puede usar la API del administrador de invitaciones para crear una invitación con el fin de agregar un usuario externo a la organización. Como parte de la invitación, también puede agregar los usuarios invitados a un grupo de Office 365. Para obtener más información, consulte [Administrador de invitaciones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation).|
+|Adición|Beta|Las API del administrador de invitaciones están ahora disponibles en el punto de conexión beta de Microsoft Graph. Puede usar la API del administrador de invitaciones para crear una invitación con el fin de agregar un usuario externo a la organización. Como parte de la invitación, también puede agregar los usuarios invitados a un grupo de Office 365. Para obtener más información, consulte [Administrador de invitaciones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/invitation).|
 
 ### <a name="onedrive"></a>OneDrive
 
@@ -1021,7 +1038,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 ### <a name="subscriptions"></a>Suscripciones
 
-|**Tipo de cambio**|**Extremo**|**Descripción**|
+|**Tipo de cambio**|**Punto de conexión**|**Descripción**|
 |:--------------|:-----------|:--------------|
 |Adición|v1.0|Los webhooks ahora son GA en el punto de conexión versión 1.0 a través del recurso _/Subscriptions_. Crear, leer, renovar y eliminar suscripciones para recibir notificaciones sobre datos de conversaciones de grupo de Office 365 y Outlook.|
 

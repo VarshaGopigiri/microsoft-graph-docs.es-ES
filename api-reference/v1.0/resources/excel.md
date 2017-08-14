@@ -9,11 +9,11 @@ Puede acceder a un conjunto de objetos de Excel (como una tabla, intervalo o gr�
 devuelve una colección de objetos de hoja de cálculo que forman parte del libro.    
 
 
-** Nota: La API de REST de Excel solo es compatible con libros de formato de archivo Office Open XML. Los libros con la extensión `.xls` no son compatibles. 
+**Nota**: La API de REST de Excel solo es compatible con libros de formato de archivo Office Open XML. Los libros con la extensión `.xls` no son compatibles. 
 
 ## <a name="authorization-and-scopes"></a>Autorización y ámbitos
 
-Puede utilizar el [extremo de Azure AD v.20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
+Puede utilizar el [punto de conexión de Azure AD v.20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
   
 Uno de los siguientes [ámbitos de permiso](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) es necesario para utilizar el recurso de Excel:
 
@@ -1138,7 +1138,7 @@ Los valores en blanco en las solicitudes de actualización se tratan como una in
 
 Ejemplos:
 
-* En el caso de `values`, el valor del rango se borra. Esto equivale a borrar el contenido de la aplicación.
+* En el caso de `values`, el valor del intervalo se borra. Esto equivale a borrar el contenido de la aplicación.
 
 * En el caso de `numberFormat`, el formato numérico se establece en `General`.
 
@@ -1256,7 +1256,7 @@ content-type: application/json
 
 Los errores se devuelven con un código de error HTTP y un objeto de error. Los errores `code` y `message` explican el motivo del error.
  
-A continuación se muestra un ejemplo.
+A continuación puede ver un ejemplo.
 
 <!-- { "blockType": "ignored" } -->
 ```http

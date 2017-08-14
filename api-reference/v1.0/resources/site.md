@@ -42,6 +42,7 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
   "name": "string",
@@ -59,14 +60,14 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | El identificador único del elemento. Solo lectura.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | La fecha y la hora de creación del elemento. Solo lectura.                                             |
-| **description**          | cadena                              | Texto descriptivo del sitio.                                                             |
+| **description**          | string                              | Texto descriptivo del sitio.                                                             |
 | **displayName**          | string                              | El título completo del sitio. Solo lectura.                                                        |
 | **lastModifiedDateTime** | DateTimeOffset                      | Fecha y hora de la última modificación del elemento. Solo lectura.                                       |
-| **name**                 | cadena                              | Nombre o título del elemento.                                                                  |
+| **name**                 | string                              | Nombre o título del elemento.                                                                  |
 | **root**                 | [root](root.md)                     | Si está presente, indica que se trata del sitio raíz de la colección de sitios. Solo lectura.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Proporciona detalles sobre la colección de sitios del sitio. Solo disponible en el sitio raíz. Solo lectura. |
-| **webUrl**               | string (URL)                        | Dirección URL que muestra el elemento en el explorador. Solo lectura.                                          |
+| **webUrl**               | string (url)                        | Dirección URL que muestra el elemento en el explorador. Solo lectura.                                          |
 
 ## <a name="relationships"></a>Relaciones
 
@@ -76,11 +77,13 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
 | **drives**        | Collection([drive][])    | La colección de unidades (bibliotecas de documentos) de este sitio.
 | **items**         | Collection([baseItem][]) | Se utiliza para resolver cualquier elemento contenido en este sitio. Esta colección no se puede enumerar.
 | **sites**         | Collection([site][])     | La colección de subsitios de este sitio.
+| **onenote**       | [onenote][]              | Realiza una llamada al servicio de OneNote para operaciones relacionadas con blocs de notas.
 
 [baseItem]: baseitem.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [site]: site.md
+[onenote]: onenote.md
 
 <!-- {
   "type": "#page.annotation",

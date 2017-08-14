@@ -8,7 +8,9 @@ Para usar una dirección URL para compartir con esta API, la aplicación debe [t
 
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -64,7 +66,7 @@ Content-type: application/json
 
 Mientras que [**SharedDriveItem**](../resources/shareddriveitem.md) contiene alguna información útil, la mayoría de las aplicaciones querrán acceder directamente al objeto [DriveItem](../resources/driveitem.md) compartido. El recurso **SharedDriveItem** incluye un **root** y relaciones de **items** que pueden acceder al contenido del ámbito del elemento compartido.
 
-### <a name="exmaple-single-file"></a>Ejemplo (archivo único)
+## <a name="example-single-file"></a>Ejemplo (archivo único)
 
 ##### <a name="request"></a>Solicitud
 
@@ -89,7 +91,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="exmaple-shared-folder"></a>Ejemplo (carpeta compartida)
+## <a name="example-shared-folder"></a>Ejemplo (carpeta compartida)
 
 ##### <a name="request"></a>Solicitud
 
@@ -137,7 +139,7 @@ Para transformar una dirección URL en un token para compartir:
 1. Codifique en base64 la dirección URL para compartir.
 2. Convierta los datos codificados en base64 en [formato base64url sin rellenar](https://en.wikipedia.org/wiki/Base64); para ello:
   1. Quite los caracteres `=` finales de la cadena
-  2. Reemplace los caracteres inseguros de dirección URL con un carácter equivalente; reemplace `/` con `_` y `+` con `-`.
+  2. Reemplace los caracteres inseguros de dirección URL por un carácter equivalente; reemplace `/` por `_` y `+` por `-`.
 3. Anexe `u!` al principio de la cadena.
 
 Por ejemplo, el siguiente método C# transforma una cadena de entrada en un token para compartir:

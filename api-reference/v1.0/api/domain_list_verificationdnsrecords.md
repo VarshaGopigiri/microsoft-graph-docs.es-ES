@@ -6,11 +6,11 @@ No puede utilizar un dominio asociado con su inquilino de Azure AD hasta que se 
 
 Los dominios raíz requieren comprobación. Por ejemplo, contoso.com requiere comprobación. Si se comprueba un dominio raíz, los subdominios de este también se comprueban de forma automática. Por ejemplo, subdominio.contoso.com se comprueba de forma automática si se ha comprobado contoso.com.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.Read.All* o *Domain.ReadWrite.All*
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}/verificationDnsRecords
@@ -18,18 +18,18 @@ GET /domains/{id}/verificationDnsRecords
 
 > En {id}, especifique el dominio con su nombre completo.
 
-### <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
 Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre      |Descripción|
 |:----------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 No proporcione un cuerpo de solicitud para este método.
 
@@ -37,7 +37,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [domainDnsRecord](../resources/domaindnsrecord.md) en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 
 <!-- {

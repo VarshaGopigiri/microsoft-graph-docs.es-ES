@@ -4,10 +4,10 @@ Obtenga un conjunto de eventos que se han agregado, eliminado o actualizado en u
 
 La llamada de una función **delta** para eventos funciona de forma similar a una solicitud `GET /calendarview` para un intervalo de fechas en el calendario principal del usuario, salvo que, al aplicar correctamente los [tokens de estado](../../../concepts/delta_query_overview.md) en al menos una de estas llamadas, pueda realizar una consulta para obtener los cambios incrementales en la vista del calendario. Esto permite mantener y sincronizar un almacén local de eventos de un usuario en el calendario principal, sin tener que capturar cada vez todos los eventos de ese calendario desde el servidor.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: _Calendars.Read_; _Calendars.ReadWrite_ 
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -25,16 +25,16 @@ El seguimiento de cambios en los eventos conlleva al menos una llamada de una fu
 |startDateTime|String|La fecha y hora de inicio del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|La fecha y hora de finalización del intervalo de tiempo, representada en formato ISO 8601. Por ejemplo, "2015-11-08T20:00:00.0000000".|
 | $deltatoken | string | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de usuarios. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de la vista del calendario.|
-| $skiptoken | cadena | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma vista del calendario. |
+| $skiptoken | string | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma vista del calendario. |
 
 Al hacer una consulta delta en una vista del calendario, se espera obtener todas las propiedades que se obtendrían con normalidad de una solicitud `GET /calendarview`. `$select` no se admite en este caso. 
 
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido  | string  | application/json. Obligatorio. |
+| Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 | Prefer | string | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.|
 
@@ -42,7 +42,7 @@ Al hacer una consulta delta en una vista del calendario, se espera obtener todas
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto de colección [event](../resources/event.md) en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 
 En el ejemplo siguiente se muestra cómo realizar una llamada de función **delta** única y limitar el número máximo de eventos en el cuerpo de la respuesta a 2.
@@ -64,7 +64,7 @@ Si la solicitud es correcta, la respuesta debería incluir un token de estado, q
 
 La respuesta siguiente muestra un _skipToken_ en un encabezado de respuesta de _@odata.nextLink_.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +94,7 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Recursos adicionales
+### <a name="see-also"></a>Consulte también
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los eventos en un calendario](../../../concepts/delta_query_events.md)

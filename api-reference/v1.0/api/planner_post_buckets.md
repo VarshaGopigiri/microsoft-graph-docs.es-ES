@@ -2,23 +2,23 @@
 
 Use esta API para crear un nuevo **plannerBucket**.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
 
 *Group.ReadWrite.All*
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/buckets
 
 ```
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
+| Authorization  | {token} de portador. Obligatorio. |
 
-### <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerBucket](../resources/plannerbucket.md).
 
 ### <a name="response"></a>Respuesta
@@ -26,7 +26,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `201,
 
 Este método puede devolver cualquiera de los [códigos de estado HTTP](../../../concepts/errors.md). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 400, 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {

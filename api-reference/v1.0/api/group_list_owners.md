@@ -1,4 +1,4 @@
-Enumerar propietarios de Gr#
+# <a name="list-owners"></a>Enumerar propietarios
 
 Recupera una lista de propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo. 
 
@@ -15,9 +15,9 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [user](../resources/user.md) en el cuerpo de la respuesta.

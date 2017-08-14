@@ -12,12 +12,13 @@ Notes.Create, Notes.ReadWrite o Notes.ReadWrite.All
 POST /me/onenote/notebooks
 POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
+POST /sites/{id}/onenote/notebooks
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, asigne un nombre al bloc de notas. 

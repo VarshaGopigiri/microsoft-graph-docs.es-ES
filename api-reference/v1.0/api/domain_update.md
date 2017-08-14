@@ -4,11 +4,11 @@ Actualiza las propiedades del objeto del dominio.
 
 > **Importante:** Solo se pueden actualizar los dominios verificados.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Domain.ReadWrite.All* o *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /domains/{id}
@@ -16,14 +16,14 @@ PATCH /domains/{id}
 
 > En {id}, especifique el dominio con su nombre completo.
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre       | Descripción|
 |:-----------|:-----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que quiera actualizar. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud conservarán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para un rendimiento óptimo, incluya solo los valores modificados.
 
@@ -31,7 +31,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`, pero no el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 
 <!-- {

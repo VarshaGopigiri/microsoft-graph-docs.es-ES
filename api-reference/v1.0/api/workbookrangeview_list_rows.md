@@ -2,28 +2,28 @@
 
 Recuperar una lista de objetos de vista de rango.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: _Files.Read, Files.ReadWrite_
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/rows
 
 ```
-### <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-### <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [workbookRangeView](../resources/workbookrangeview.md) en el cuerpo de la respuesta.
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {

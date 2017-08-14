@@ -12,6 +12,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All
 GET /me/onenote/notebooks
 GET /users/{id | userPrincipalName}/onenote/notebooks
 GET /groups/{id}/onenote/notebooks
+GET /sites/{id}/onenote/notebooks
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.

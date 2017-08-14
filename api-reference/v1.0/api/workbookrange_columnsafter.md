@@ -2,33 +2,33 @@
 
 Obtiene un número determinado de columnas a la derecha del intervalo especificado.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: _Files.Read, Files.ReadWrite_
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-### <a name="parameters"></a>Parámetros
+## <a name="parameters"></a>Parámetros
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |count|Int32|El número de columnas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1|
 
 
-### <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.

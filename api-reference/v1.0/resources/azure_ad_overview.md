@@ -5,7 +5,7 @@ Con Microsoft Graph, puede obtener acceso a recursos de [Azure Active Directory 
 > **Nota**: Algunos recursos de Azure AD se documentan en otras secciones de la referencia de la API. Para obtener más información, vea [Usuarios](users.md) y [Grupos](group.md).
 
 
-## <a name="authorization"></a>Autorización
+## <a name="authorization"></a>Authorization
  
 Para llamar a las API de Microsoft Graph en recursos de Azure AD, la aplicación necesitará los permisos adecuados. Muchas de las API expuestas en recursos de Azure AD necesitan uno de los [permisos de _directorio_](../../../concepts/permissions_reference.md#directory-permissions). Los permisos de directorio tienen privilegios muy elevados y siempre necesitan el consentimiento del administrador. 
 
@@ -23,6 +23,7 @@ En la tabla siguiente se muestran algunos de los casos de uso comunes para recur
 | `directoryObject` es la clase base de la que heredan muchos de los recursos de directorio (por ejemplo, usuarios y grupos). Microsoft Graph expone varios métodos que puede usar para descubrir información sobre usuarios, grupos y otros objetos de directorio. Por ejemplo, puede comprobar la pertenencia transitiva en una lista de grupos, devolver todos los grupos y roles de directorio de los que es miembro transitivo un objeto de directorio u obtener todos los recursos de un tipo especificado (por ejemplo, usuario o grupo) de una lista de identificadores de recursos genéricos. | [directoryObject](../resources/directoryobject.md) | N/D |
 | **Administrar roles de directorio (administrador)** | | |
 | Active roles de directorio en un inquilino de Azure AD y administre las pertenencias de usuario en los roles de directorio. Los roles de directorio también se conocen como roles de administrador. | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) | [Asignar roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) |
+| Aplique configuraciones de grupo predefinidas en un inquilino o a instancias de recursos individuales. La configuración de grupo controla los comportamientos como las listas de palabras bloqueadas para los nombres para mostrar de grupos o si los usuarios invitados pueden ser propietarios de grupos, entre otros. | [groupSetting](../resources/groupsetting.md) <br/>[groupSettingTemplate](../resources/groupsettingtemplate.md)| [Cmdlets de Azure Active Directory para configurar configuraciones de grupo](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
 | **Administrar dispositivos** | | |
 | Administre los dispositivos registrados en la organización. Los dispositivos se registran en usuarios e incluyen elementos como portátiles, equipos de escritorio, tabletas y teléfonos móviles. Los dispositivos suelen crearse en la nube con el servicio de registro de dispositivos o Microsoft Intune. Las directivas de acceso condicional los usan para la autenticación multifactor. | [device](../resources/device.md) | [Introducción al registro de dispositivos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).<br/><br/>[¿Qué es Intune?](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Inscribir dispositivos para administrarlos en Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **Administración de inquilinos asociados** | | |
@@ -35,12 +36,12 @@ En la tabla siguiente se muestran algunos de los casos de uso comunes para recur
 
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 Las API y los recursos de directorio pueden proporcionar nuevas formas de comunicarse con los usuarios y administrar sus experiencias con Microsoft Graph. Para obtener más información: 
 
 - Explore en profundidad los métodos y las propiedades de los recursos más útiles para su escenario.
 - Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-¿Necesita más ideas? Vea [cómo algunos de nuestros socios usan Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+¿Necesita más ideas? Vea [cómo algunos de nuestros socios utilizan Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 
 

@@ -6,11 +6,11 @@ Elimina un dominio de un inquilino.
 > - Los dominios eliminados no son recuperables.<br />
 > - Los intentos de eliminar el dominio fallarán si hay recursos u objetos que aún dependen de este. Encontrará todos los recursos dependientes mediante el uso de la API [Enumerar domainNameReferences](domain_list_domainnamereferences.md).
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Domain.ReadWrite.All* o *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -18,14 +18,14 @@ DELETE /domains/{id}
 
 > En {id}, especifique el dominio con su nombre completo.
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 No proporcione un cuerpo de solicitud para este método.
 
@@ -33,7 +33,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve un cuerpo de respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 
 <!-- {

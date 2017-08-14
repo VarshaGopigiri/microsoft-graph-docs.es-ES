@@ -1,22 +1,22 @@
 # <a name="update-plannertask"></a>Actualizar plannertask
 
 Actualizar las propiedades del objeto **plannertask**.
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
 
 *Group.ReadWrite.All*
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>
 ```
-### <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
 |:-----------|:-----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | If-Match  | Último valor ETag conocido para que se actualice **plannerTask**. Obligatorio.|
 
-### <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
@@ -29,16 +29,16 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |dueDateTime|DateTimeOffset|Fecha y hora en que vence la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define en [Using order hints in Planner](../resources/planner_order_hint_format.md) (Usar sugerencias de orden en Planner).|
 |percentComplete|Int32|Porcentaje de finalización de la tarea. Si se establece en `100`, la tarea se considera finalizada. |
-|planId|Cadena|Id. de plan al que pertenece la tarea.|
+|planId|String|Id. de plan al que pertenece la tarea.|
 |startDateTime|DateTimeOffset|Fecha y hora en que comienza la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|title|Cadena|Título de la tarea.|
+|title|String|Título de la tarea.|
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [plannerTask](../resources/plannertask.md) actualizado en el cuerpo de la respuesta.
 
 Este método puede devolver cualquiera de los [códigos de estado HTTP](../../../concepts/errors.md). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 400, 403, 404, 409 y 412. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {

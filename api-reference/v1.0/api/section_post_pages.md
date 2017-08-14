@@ -9,17 +9,18 @@ Notes.Create, Notes.ReadWrite o Notes.ReadWrite.All
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/oennote/sections/{id}/pages
+POST /me/onenote/sections/{id}/pages
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
+POST /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string | `text/html` o `application/xhtml+xml` para el contenido HTML, también para la parte requerida "Presentación" de las solicitudes de varias partes. Las solicitudes de varias partes usan el tipo de contenido `multipart/form-data; boundary=your-boundary`. |
+| Content-Type | string | `text/html` o `application/xhtml+xml` para el contenido HTML, también para la parte requerida "Presentación" de las solicitudes de varias partes. Las solicitudes de varias partes usan el tipo de contenido `multipart/form-data; boundary=your-boundary`. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, facilite el contenido HTML de la página.
 
 El cuerpo puede contener código HTML ubicado directamente en el cuerpo de la solicitud o un formato de mensaje de varias partes, como se muestra en el ejemplo. Si quiere enviar datos binarios, debe enviar una solicitud de varias partes.

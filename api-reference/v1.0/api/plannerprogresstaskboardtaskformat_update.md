@@ -1,22 +1,22 @@
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Actualizar plannerProgressTaskBoardTaskFormat
 
 Actualizar las propiedades del objeto **plannerProgressTaskBoardTaskFormat**.
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: 
 
 *Group.ReadWrite.All*
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/progressTaskBoardFormat
 ```
-### <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
 |:-----------|:-----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | If-Match  | Último valor ETag conocido para que se actualice **plannerProgressTaskBoardTaskFormat**. Obligatorio.|
 
-### <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
@@ -28,7 +28,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 Este método puede devolver cualquiera de los [códigos de estado HTTP](../../../concepts/errors.md). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 400, 403, 404, 409 y 412. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {

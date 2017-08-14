@@ -12,12 +12,13 @@ Notes.ReadWrite o Notes.ReadWrite.All
 PATCH /me/onenote/pages/{id}/content
 PATCH /users/{id | userPrincipalName}/onenote/pages/{id}/content
 PATCH /groups/{id}/onenote/pages/{id}/content
+PATCH /sites/{id}/onenote/pages/{id}/content
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione una matriz de objetos [patchContentCommand](../resources/patchcontentcommand.md) que representen los cambios a la página. Para obtener más información y ejemplos, consulte <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Actualizar páginas de OneNote</a>.

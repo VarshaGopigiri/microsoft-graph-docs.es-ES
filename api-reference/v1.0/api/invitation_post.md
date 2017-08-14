@@ -7,21 +7,21 @@ Al crear una invitación, dispone de varias opciones:
 1. En la creación de la invitación, Microsoft Graph puede enviar de forma automática un correo electrónico de invitación directamente al usuario invitado, o la aplicación puede usar la *inviteRedeemUrl* devuelta en la respuesta de la creación para diseñar su propia invitación (mediante el mecanismo de comunicación que quiera) para el usuario invitado. Si decide que Microsoft Graph envíe un correo electrónico de invitación automáticamente, puede controlar el contenido y el idioma del correo electrónico mediante [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
 2. Cuando se invita al usuario, se crea una entidad de usuario (de userType Guest) y se puede usar ahora para controlar el acceso a los recursos. El usuario invitado tiene que pasar por el proceso de canje para tener acceso a los recursos a los que lo han invitado.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes ámbitos para ejecutar esta API: *User.Invite.All*, *User.ReadWrite.All* o *Directory.ReadWrite.All*
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
-### <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de un objeto [invitation](../resources/invitation.md).
 
 En la tabla siguiente, se muestran las propiedades necesarias al crear una invitación.
@@ -35,7 +35,7 @@ En la tabla siguiente, se muestran las propiedades necesarias al crear una invit
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y un objeto [invitation](../resources/invitation.md) en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {

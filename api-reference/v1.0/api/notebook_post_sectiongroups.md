@@ -12,12 +12,13 @@ Notes.Create, Notes.ReadWrite o Notes.ReadWrite.All
 POST /me/onenote/notebooks/{id}/sectionGroups
 POST /users/{id | userPrincipalName}/onenote/notebooks/{id}/sectionGroups
 POST /groups/{id}/onenote/notebooks/{id}/sectionGroups
+POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, asigne un nombre al grupo de sección.

@@ -4,9 +4,9 @@ Obtenga un conjunto de mensajes que se hayan agregado, eliminado o actualizado e
 
 La llamada de una función **delta** para los mensajes de una carteta funciona de forma similar a una solicitud GET, salvo que, al aplicar correctamente [tokens de estado](../../../concepts/delta_query_overview.md) en al menos una de estas llamadas, puede [realizar una consulta para obtener los cambios incrementales en los mensajes de la carpeta](../../../concepts/delta_query_messages.md). Esto permite mantener y sincronizar un almacén local de mensajes de un usuario, sin tener que capturar cada vez todo el conjunto de mensajes desde el servidor.  
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: _Mail.Read_ o _Mail.ReadWrite_
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
@@ -30,20 +30,20 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 - Hay compatibilidad limitada para `$filter` y `$orderby`:
   * Las únicas expresiones `$filter` admitidas son `$filter=receivedDateTime+ge+{value}` y `$filter=receivedDateTime+gt+{value}`.
   * La única expresión `$orderby` admitida es `$orderby=receivedDateTime+desc`. Si no incluye una expresión `$orderby`, no se garantiza el orden de devolución. 
-- No hay compatibilidad con `$search`.
+- No es compatible con `$search`.
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido  | string  | application/json. Obligatorio. |
+| Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto de colección [message](../resources/message.md) en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 En el ejemplo siguiente se muestra cómo realizar una llamada de función **delta** única y limitar el número máximo de mensajes en el cuerpo de la respuesta a 2.
 
@@ -65,7 +65,7 @@ Si la solicitud es correcta, la respuesta debería incluir un símbolo de estado
 
 La respuesta siguiente muestra un _skipToken_ en un encabezado de respuesta de _@odata.nextLink_.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +95,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Recursos adicionales
+### <a name="see-also"></a>Consulte también
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)

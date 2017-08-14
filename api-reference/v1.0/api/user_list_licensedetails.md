@@ -2,28 +2,28 @@
 
 Recupere una lista de objetos licenseDetails.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.Read*; *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
-### <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método **no** admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
 | Authorization  | &lt;código&gt; de portador|
 
-### <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [licenseDetails](../resources/licensedetails.md) en el cuerpo de la respuesta.
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 
 <!-- {

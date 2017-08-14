@@ -19,7 +19,7 @@ Se requiere uno de los siguientes ámbitos para ejecutar esta solicitud:
 GET /sites/{site-id}/sites
 ```
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 
 #### <a name="request"></a>Solicitud
 

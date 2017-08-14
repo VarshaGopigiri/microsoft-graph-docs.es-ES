@@ -1,28 +1,28 @@
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 Obtiene un objeto de rango similar al objeto actual, pero con su esquina inferior derecha expandida (o contraída) mediante un número de filas y columnas.
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 Se requieren los siguientes **ámbitos** para ejecutar esta API: _Files.Read, Files.ReadWrite_
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-### <a name="parameters"></a>Parámetros
+## <a name="parameters"></a>Parámetros
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |deltarows|Int32|El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
 |deltaColumns|Int32|El número de columnas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
 
-### <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 
 | Parámetro    | Tipo   |Descripción|
@@ -33,7 +33,7 @@ En la dirección URL de la solicitud, proporcione los siguientes parámetros de 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.

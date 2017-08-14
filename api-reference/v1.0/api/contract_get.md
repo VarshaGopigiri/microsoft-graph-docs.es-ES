@@ -2,27 +2,27 @@
 
 Recupera las propiedades y las relaciones del objeto [contract](../resources/contract.md).
 
-### <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.Read.All*, *Directory.ReadWrite.All* o *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitud HTTP
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /contracts/{id}
 ```
 
-### <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
 Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {token} de portador. Necesario. |
+| Authorization  | {token} de portador. Obligatorio. |
 
-### <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 No proporcione un cuerpo de solicitud para este método.
 
@@ -30,7 +30,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [Contract](../resources/contract.md) en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 
 <!-- {
