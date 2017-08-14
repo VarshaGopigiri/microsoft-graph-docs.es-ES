@@ -1,11 +1,10 @@
-<span data-ttu-id="e51d3-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e51d3-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="86ef0-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="86ef0-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <span data-ttu-id="e51d3-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e51d3-119">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="e51d3-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e51d3-120">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="e51d3-121">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e51d3-121">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="86ef0-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="86ef0-119">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="86ef0-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="86ef0-120">Request</span></span>
+<span data-ttu-id="86ef0-121">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="86ef0-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -13,9 +12,8 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}
 ```
-##### <span data-ttu-id="e51d3-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e51d3-122">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="e51d3-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e51d3-123">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="86ef0-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="86ef0-122">Response</span></span>
+<span data-ttu-id="86ef0-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="86ef0-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

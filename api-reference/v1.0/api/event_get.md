@@ -1,4 +1,4 @@
-<span data-ttu-id="43271-p105">Aquí tiene un ejemplo de la respuesta. Se devuelve la propiedad **body** en el formato predeterminado de HTML.</span><span class="sxs-lookup"><span data-stu-id="43271-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
+<span data-ttu-id="5b034-p105">Aquí tiene un ejemplo de la respuesta. Se devuelve la propiedad **body** en el formato predeterminado de HTML.</span><span class="sxs-lookup"><span data-stu-id="5b034-p105">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
 
 Aquí tiene un ejemplo de la respuesta. Se devuelve la propiedad **body** en el formato predeterminado de HTML.
 
@@ -68,11 +68,10 @@ Content-length: 1928
 }
 ```
 
-## <span data-ttu-id="43271-142">Consulte también</span><span class="sxs-lookup"><span data-stu-id="43271-142">See also</span></span>
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a><span data-ttu-id="5b034-142">Vea también</span><span class="sxs-lookup"><span data-stu-id="5b034-142">See also</span></span>
 
-- [<span data-ttu-id="43271-143">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="43271-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="43271-144">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="43271-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="5b034-143">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="5b034-143">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="5b034-144">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="5b034-144">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

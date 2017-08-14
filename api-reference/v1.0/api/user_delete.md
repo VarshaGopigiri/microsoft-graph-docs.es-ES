@@ -1,11 +1,10 @@
-<span data-ttu-id="eaf78-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="eaf78-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="7193c-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7193c-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <span data-ttu-id="eaf78-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="eaf78-117">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="eaf78-118">Solicitud</span><span class="sxs-lookup"><span data-stu-id="eaf78-118">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="eaf78-119">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="eaf78-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7193c-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7193c-117">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7193c-118">Solicitud</span><span class="sxs-lookup"><span data-stu-id="7193c-118">Request</span></span>
+<span data-ttu-id="7193c-119">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="7193c-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -13,9 +12,8 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204,
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/mba9a3254-9f18-4209-aeb3-9e42a35b5be4
 ```
-##### <span data-ttu-id="eaf78-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="eaf78-120">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="eaf78-121">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="eaf78-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="7193c-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7193c-120">Response</span></span>
+<span data-ttu-id="7193c-121">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7193c-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

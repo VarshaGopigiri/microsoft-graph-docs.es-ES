@@ -1,4 +1,4 @@
-<span data-ttu-id="d41c1-p106">Nota: El objeto **event** que aparece aquí está truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d41c1-p106">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b52a7-p106">Nota: El objeto **event** que aparece aquí está truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="b52a7-p106">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 Nota: El objeto **event** que aparece aquí está truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 

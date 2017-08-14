@@ -1,4 +1,4 @@
-<span data-ttu-id="c80a3-p107">En el segundo ejemplo, se muestra cómo actualizar una extensión en una publicación de grupo. Inicialmente, la extensión se representa mediante la siguiente carga JSON, con un valor `expirationDate` de `2015-07-03T13:04:00Z`:</span><span class="sxs-lookup"><span data-stu-id="c80a3-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
+<span data-ttu-id="45ad3-p107">En el segundo ejemplo, se muestra cómo actualizar una extensión en una publicación de grupo. Inicialmente, la extensión se representa mediante la siguiente carga JSON, con un valor `expirationDate` de `2015-07-03T13:04:00Z`:</span><span class="sxs-lookup"><span data-stu-id="45ad3-p107">The second example shows how to update an extension in a group post. The extension is initially represented by the following JSON payload, with an `expirationDate` value of `2015-07-03T13:04:00Z`:</span></span>
 
 En el segundo ejemplo, se muestra cómo actualizar una extensión en una publicación de grupo. Inicialmente, la extensión se representa mediante la siguiente carga JSON, con un valor `expirationDate` de `2015-07-03T13:04:00Z`:
 
@@ -21,7 +21,7 @@ En el segundo ejemplo, se muestra cómo actualizar una extensión en una publica
 }
 ```
 
-<span data-ttu-id="c80a3-183">En la siguiente solicitud y cuerpo de la solicitud, tiene que cambiar la propiedad `expirationDate` por `2016-07-30T11:00:00Z`:</span><span class="sxs-lookup"><span data-stu-id="c80a3-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
+<span data-ttu-id="45ad3-183">En la siguiente solicitud y cuerpo de la solicitud, tiene que cambiar la propiedad `expirationDate` por `2016-07-30T11:00:00Z`:</span><span class="sxs-lookup"><span data-stu-id="45ad3-183">The following is the request and request body to change the `expirationDate` to `2016-07-30T11:00:00Z`:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,10 +45,9 @@ Content-type: application/json
 }
 ```
 
-#### <span data-ttu-id="c80a3-184">Respuesta 2</span><span class="sxs-lookup"><span data-stu-id="c80a3-184">Response 2</span></span>
-<a id="response-2" class="xliff"></a>
+#### <a name="response-2"></a><span data-ttu-id="45ad3-184">Respuesta 2</span><span class="sxs-lookup"><span data-stu-id="45ad3-184">Response 2</span></span>
 
-<span data-ttu-id="c80a3-185">Esta es la respuesta del segundo ejemplo que muestra la propiedad `expirationDate` actualizada en la extensión.</span><span class="sxs-lookup"><span data-stu-id="c80a3-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
+<span data-ttu-id="45ad3-185">Esta es la respuesta del segundo ejemplo que muestra la propiedad `expirationDate` actualizada en la extensión.</span><span class="sxs-lookup"><span data-stu-id="45ad3-185">Here is the response of the second example which shows the updated `expirationDate` in the extension.</span></span>
 
 <!-- {  
   "blockType": "response",  

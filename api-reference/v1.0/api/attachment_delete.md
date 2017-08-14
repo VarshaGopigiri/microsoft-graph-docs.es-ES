@@ -1,11 +1,10 @@
-<span data-ttu-id="2d209-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2d209-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3d789-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3d789-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-## <span data-ttu-id="2d209-130">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2d209-130">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="2d209-131">Solicitud</span><span class="sxs-lookup"><span data-stu-id="2d209-131">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="2d209-132">Este es un ejemplo de la solicitud para eliminar un archivo adjunto en un evento.</span><span class="sxs-lookup"><span data-stu-id="2d209-132">Here is an example of the request to delete an attachment on an event.</span></span>
+## <a name="example"></a><span data-ttu-id="3d789-130">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3d789-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3d789-131">Solicitud</span><span class="sxs-lookup"><span data-stu-id="3d789-131">Request</span></span>
+<span data-ttu-id="3d789-132">Este es un ejemplo de la solicitud para eliminar un archivo adjunto en un evento.</span><span class="sxs-lookup"><span data-stu-id="3d789-132">Here is an example of the request to delete an attachment on an event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -13,9 +12,8 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204,
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
-##### <span data-ttu-id="2d209-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2d209-133">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="2d209-134">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2d209-134">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="3d789-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3d789-133">Response</span></span>
+<span data-ttu-id="3d789-134">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3d789-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

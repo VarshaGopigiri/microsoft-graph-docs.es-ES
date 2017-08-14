@@ -1,12 +1,11 @@
-<span data-ttu-id="35491-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="35491-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d08d0-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d08d0-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <span data-ttu-id="35491-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="35491-117">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="35491-118">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="35491-118">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="35491-119">Solicitud</span><span class="sxs-lookup"><span data-stu-id="35491-119">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="35491-120">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="35491-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d08d0-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d08d0-117">Example</span></span>
+<span data-ttu-id="d08d0-118">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="d08d0-118">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="d08d0-119">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d08d0-119">Request</span></span>
+<span data-ttu-id="d08d0-120">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d08d0-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "table_delete"
@@ -15,9 +14,8 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200,
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/delete
 ```
 
-##### <span data-ttu-id="35491-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="35491-121">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="35491-122">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="35491-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d08d0-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d08d0-121">Response</span></span>
+<span data-ttu-id="d08d0-122">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d08d0-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

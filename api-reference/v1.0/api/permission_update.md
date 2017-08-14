@@ -1,22 +1,19 @@
-<span data-ttu-id="00c5d-p101">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="00c5d-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="4b7cc-p101">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="4b7cc-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| <span data-ttu-id="00c5d-120">Propiedad</span><span class="sxs-lookup"><span data-stu-id="00c5d-120">Property</span></span>     | <span data-ttu-id="00c5d-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="00c5d-121">Type</span></span>   | <span data-ttu-id="00c5d-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="00c5d-122">Description</span></span>                   |
+| <span data-ttu-id="4b7cc-120">Propiedad</span><span class="sxs-lookup"><span data-stu-id="4b7cc-120">Property</span></span>     | <span data-ttu-id="4b7cc-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="4b7cc-121">Type</span></span>   | <span data-ttu-id="4b7cc-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="4b7cc-122">Description</span></span>                   |
 |:-------------|:-------|:------------------------------|
-| <span data-ttu-id="00c5d-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="00c5d-123">**roles**</span></span>    | <span data-ttu-id="00c5d-124">String</span><span class="sxs-lookup"><span data-stu-id="00c5d-124">String</span></span> | <span data-ttu-id="00c5d-125">Matriz de tipos de permisos.</span><span class="sxs-lookup"><span data-stu-id="00c5d-125">An array of permission types.</span></span> |
+| <span data-ttu-id="4b7cc-123">**roles**</span><span class="sxs-lookup"><span data-stu-id="4b7cc-123">**roles**</span></span>    | <span data-ttu-id="4b7cc-124">String</span><span class="sxs-lookup"><span data-stu-id="4b7cc-124">String</span></span> | <span data-ttu-id="4b7cc-125">Matriz de tipos de permisos.</span><span class="sxs-lookup"><span data-stu-id="4b7cc-125">An array of permission types.</span></span> |
 
+## <a name="response"></a><span data-ttu-id="4b7cc-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4b7cc-126">Response</span></span>
 
-## <span data-ttu-id="00c5d-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="00c5d-126">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="00c5d-127">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [permission](../resources/permission.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="00c5d-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="4b7cc-127">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [permission](../resources/permission.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4b7cc-127">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <span data-ttu-id="00c5d-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="00c5d-128">Example</span></span>
-<a id="example" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="4b7cc-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4b7cc-128">Example</span></span>
 
-##### <span data-ttu-id="00c5d-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="00c5d-129">Request</span></span>
-<a id="request" class="xliff"></a>
+##### <a name="request"></a><span data-ttu-id="4b7cc-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="4b7cc-129">Request</span></span>
 
-<span data-ttu-id="00c5d-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="00c5d-130">Here is an example of the request.</span></span>
+<span data-ttu-id="4b7cc-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4b7cc-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_permission"
@@ -29,10 +26,9 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-##### <span data-ttu-id="00c5d-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="00c5d-131">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="4b7cc-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4b7cc-131">Response</span></span>
 
-<span data-ttu-id="00c5d-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="00c5d-132">Here is an example of the response.</span></span>
+<span data-ttu-id="4b7cc-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4b7cc-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

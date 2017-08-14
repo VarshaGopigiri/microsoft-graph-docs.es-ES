@@ -1,12 +1,10 @@
-<span data-ttu-id="8af0a-p103">Los autores de llamadas pueden distinguir si el permiso se hereda o no comprobando la propiedad **inheritedFrom**. Esta propiedad es un recurso [**itemReference**](../resources/itemreference.md) que hace referencia al antecesor del que se hereda el permiso.</span><span class="sxs-lookup"><span data-stu-id="8af0a-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
+<span data-ttu-id="e9e60-p103">Los autores de llamadas pueden distinguir si el permiso se hereda o no comprobando la propiedad **inheritedFrom**. Esta propiedad es un recurso [**itemReference**](../resources/itemreference.md) que hace referencia al antecesor del que se hereda el permiso.</span><span class="sxs-lookup"><span data-stu-id="e9e60-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
 Los autores de llamadas pueden distinguir si el permiso se hereda o no comprobando la propiedad **inheritedFrom**. Esta propiedad es un recurso [**itemReference**](../resources/itemreference.md) que hace referencia al antecesor del que se hereda el permiso.
 
-## <span data-ttu-id="8af0a-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8af0a-138">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="8af0a-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="8af0a-139">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="8af0a-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="8af0a-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e9e60-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e9e60-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e9e60-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e9e60-139">Request</span></span>
+<span data-ttu-id="e9e60-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e9e60-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_permissions"
@@ -16,9 +14,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions
 ```
 
 
-##### <span data-ttu-id="8af0a-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8af0a-141">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="8af0a-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8af0a-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="e9e60-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e9e60-141">Response</span></span>
+<span data-ttu-id="e9e60-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e9e60-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="8af0a-143">Consulte [Obtener permiso](permission_get.md) para obtener más información sobre cómo recuperar un solo recurso de permiso.</span><span class="sxs-lookup"><span data-stu-id="8af0a-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
+<span data-ttu-id="e9e60-143">Consulte [Obtener permiso](permission_get.md) para obtener más información sobre cómo recuperar un solo recurso de permiso.</span><span class="sxs-lookup"><span data-stu-id="e9e60-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

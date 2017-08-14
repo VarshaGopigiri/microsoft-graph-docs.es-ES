@@ -1,12 +1,11 @@
-<span data-ttu-id="75719-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="75719-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="187e3-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="187e3-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
-## <span data-ttu-id="75719-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="75719-125">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="75719-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="75719-126">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="75719-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="75719-127">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="75719-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="75719-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="187e3-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="187e3-125">Example</span></span>
+<span data-ttu-id="187e3-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="187e3-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="187e3-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="187e3-127">Request</span></span>
+<span data-ttu-id="187e3-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="187e3-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheetprotection_unprotect"
@@ -21,9 +20,8 @@ Content-length: 34
 }
 ```
 
-##### <span data-ttu-id="75719-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="75719-129">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="75719-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="75719-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="187e3-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="187e3-129">Response</span></span>
+<span data-ttu-id="187e3-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="187e3-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

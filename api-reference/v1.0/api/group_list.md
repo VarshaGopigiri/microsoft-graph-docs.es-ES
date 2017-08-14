@@ -1,4 +1,4 @@
-<span data-ttu-id="278f8-p103">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán las [propiedades predeterminadas](../api/group_get.md#default-properties) de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="278f8-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
+<span data-ttu-id="a125b-p103">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán las [propiedades predeterminadas](../api/group_get.md#default-properties) de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="a125b-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
 
 Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán las [propiedades predeterminadas](../api/group_get.md#default-properties) de una llamada real.
 
