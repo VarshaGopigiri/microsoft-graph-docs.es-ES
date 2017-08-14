@@ -30,7 +30,7 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 - Hay compatibilidad limitada para `$filter` y `$orderby`:
   * Las únicas expresiones `$filter` admitidas son `$filter=receivedDateTime+ge+{value}` y `$filter=receivedDateTime+gt+{value}`.
   * La única expresión `$orderby` admitida es `$orderby=receivedDateTime+desc`. Si no incluye una expresión `$orderby`, no se garantiza el orden de devolución. 
-- No es compatible con `$search`.
+- No hay compatibilidad con `$search`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
@@ -39,8 +39,8 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
+## <a name="response"></a>Respuesta
 
-### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto de colección [message](../resources/message.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
@@ -65,7 +65,7 @@ Si la solicitud es correcta, la respuesta debería incluir un símbolo de estado
 
 La respuesta siguiente muestra un _skipToken_ en un encabezado de respuesta de _@odata.nextLink_.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +95,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)

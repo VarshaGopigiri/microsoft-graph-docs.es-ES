@@ -72,10 +72,12 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto **attachment** en el cuerpo de la respuesta. Se devuelven las propiedades de ese tipo de datos adjuntos: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) o [referenceAttachment](../resources/referenceAttachment.md).
 
-## <a name="example-file-attachment"></a>Ejemplo (datos adjuntos de archivo)
+## <a name="example-file-attachment"></a>Ejemplo (datos adjuntos del archivo)
 
 ##### <a name="request"></a>Solicitud
 Este es un ejemplo de la solicitud para obtener un archivo adjunto en un evento.

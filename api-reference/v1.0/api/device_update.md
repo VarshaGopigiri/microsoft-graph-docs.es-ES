@@ -19,7 +19,9 @@ PATCH /devices/{id}
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de las propiedades [device](../resources/device.md) que deben actualizarse.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.
 
 ## <a name="example"></a>Ejemplo

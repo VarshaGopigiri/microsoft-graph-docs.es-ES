@@ -25,7 +25,8 @@ En el cuerpo de la solicitud, proporcione una representación JSON del objeto [d
 
 > El cuerpo de la solicitud contiene la propiedad de id. del dominio nuevo. Id. es la única propiedad que se puede especificar y que es necesaria. El valor de la propiedad de id. es el nombre de dominio completo que se va a crear.
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [domain](../resources/domain.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

@@ -23,6 +23,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |removeLicenses|Guid|Colección de GUID que identifican las licencias que se van a quitar.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto [user](../resources/user.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

@@ -16,7 +16,8 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRangeView](../resources/workbookrangeview.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

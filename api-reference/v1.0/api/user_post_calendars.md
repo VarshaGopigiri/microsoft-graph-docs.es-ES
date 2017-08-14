@@ -17,8 +17,8 @@ POST /users/{id | userPrincipalName}/calendars
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [calendar](../resources/calendar.md).
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [calendar](../resources/calendar.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

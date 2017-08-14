@@ -57,6 +57,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |userType|String|Un valor de cadena que puede utilizarse para clasificar los tipos de usuario en el directorio. Por ejemplo: "Miembro" e "Invitado". Es compatible con $filter.          |
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

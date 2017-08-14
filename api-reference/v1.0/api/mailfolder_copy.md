@@ -14,7 +14,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
-| Tipo de contenido  | application/json. Obligatorio.  |
+| Content-Type  | application/json. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
@@ -24,6 +24,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |destinationId|String|Identificador de la carpeta o el nombre de carpeta conocido *Inbox*, *Drafts*, *SentItems* o *DeletedItems*.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [MailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

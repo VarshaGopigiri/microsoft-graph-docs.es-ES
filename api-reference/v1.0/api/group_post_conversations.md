@@ -19,8 +19,8 @@ POST /groups/{id}/conversations
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [conversation](../resources/conversation.md) que contiene un [conversationThread](../resources/conversationThread.md) y un [post](../resources/post.md).
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [conversation](../resources/conversation.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

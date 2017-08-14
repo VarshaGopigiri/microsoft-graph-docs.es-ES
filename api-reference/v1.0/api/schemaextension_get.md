@@ -22,6 +22,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [schemaExtensions](../resources/schemaextension.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

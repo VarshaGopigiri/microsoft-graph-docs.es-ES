@@ -12,7 +12,7 @@ PATCH /organization
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
@@ -20,7 +20,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |assignedPlans|AssignedPlan|La colección de planes de servicio asociados con el inquilino.                            **Notas**: no admite valores NULL.            |
-|ciudad|String|            |
+|city|String|            |
 |companyLastDirSyncTime|DateTimeOffset|La fecha y hora en que el inquilino se ha sincronizado por última vez con el directorio local.|
 |country|String|            |
 |countryLetterCode|String|            |
@@ -42,6 +42,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |verifiedDomains|VerifiedDomain|La colección de dominios asociados a este inquilino.                            **Notas**: no admite valores NULL.            |
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [organization](../resources/organization.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

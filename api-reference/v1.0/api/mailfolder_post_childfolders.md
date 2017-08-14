@@ -17,7 +17,7 @@ Especifique la carpeta principal en la dirección URL de consulta como identific
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
-| Tipo de contenido  | application/json. Obligatorio.  |
+| Content-Type  | application/json. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros. **displayName** es la única propiedad que se puede escribir de un objeto [MailFolder](../resources/mailfolder.md).
@@ -27,6 +27,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |displayName|String|Nombre para mostrar de la nueva carpeta.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [MailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

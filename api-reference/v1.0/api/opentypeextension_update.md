@@ -64,7 +64,6 @@ Proporcione un cuerpo JSON del objeto [openTypeExtension](../resources/openTypeE
 | @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %unique_string% |
 
-
 ## <a name="response"></a>Respuesta
 
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [openTypeExtension](../resources/openTypeExtension.md) actualizado.

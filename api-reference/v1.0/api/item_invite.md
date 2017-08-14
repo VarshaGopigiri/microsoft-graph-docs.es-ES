@@ -5,7 +5,9 @@ Envía una invitación para uso compartido de un objeto **DriveItem**. Una invit
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -21,13 +23,14 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro        | Tipo                                            | Descripción                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| destinatarios       | Collection([DriveRecipient](driverecipient.md)) | Una colección de los destinatarios que recibirán acceso y la invitación para uso compartido.                                            |
+| destinatarios       | Collection([DriveRecipient](../resources/driverecipient.md)) | Una colección de los destinatarios que recibirán acceso y la invitación para uso compartido.                                            |
 | message          | String                                          | Un mensaje con formato de texto sin formato que se incluye en la invitación para uso compartido. La longitud máxima es de 2000 caracteres. |
 | requireSignIn    | Boolean                                         | Especifica si el destinatario de la invitación debe iniciar sesión para ver el elemento compartido.            |
 | sendInvitation   | Boolean                                         | Especifica si se genera un correo electrónico o una publicación (false) o si se acaba de crear el permiso (true).            |
 | roles            | Collection(String)                              | Especifica los roles que se conceden a los destinatarios de la invitación para uso compartido.                         |
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto de colección [permission](../resources/permission.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

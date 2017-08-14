@@ -24,7 +24,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

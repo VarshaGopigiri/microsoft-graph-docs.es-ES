@@ -6,7 +6,9 @@ Actualiza las propiedades de un permiso aplicando revisiones del recurso.
 
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -32,8 +34,8 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |:-------------|:-------|:------------------------------|
 | **roles**    | String | Matriz de tipos de permisos. |
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [permission](../resources/permission.md) actualizado en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

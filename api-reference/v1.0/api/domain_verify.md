@@ -1,6 +1,6 @@
 # <a name="domain-verify"></a>dominio: verify
 
-Valida la propiedad del dominio.
+Valide la propiedad del dominio.
 
 > **Importante:** Solo se aplica a un dominio sin verificar. En el caso de un dominio sin verificar, la propiedad isVerified del [dominio](../resources/domain.md) es falsa.
 
@@ -26,7 +26,8 @@ POST /domains/{id}/verify
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto [domain](../resources/domain.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

@@ -152,17 +152,19 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:-----|:-----|:-----|
 |_Parámetros de dirección URL_|
 |id_value|String|El identificador de la propiedad extendida que debe coincidir. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
-|property_value|String|El valor de la propiedad extendida que debe coincidir. Es necesario donde aparece en la sección anterior de la **solicitud HTTP**.|
+|property_value|Cadena|El valor de la propiedad extendida que debe coincidir. Es necesario donde aparece en la sección anterior de la **solicitud HTTP**.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {token} de portador. Necesario. |
+| Authorization  | {token} de portador. Obligatorio. |
 
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK`.
 
 #### <a name="get-resource-instance-using-expand"></a>GET (OBTENER) una instancia de recurso mediante el uso de `$expand`

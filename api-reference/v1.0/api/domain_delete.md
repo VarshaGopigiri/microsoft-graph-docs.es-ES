@@ -29,7 +29,7 @@ DELETE /domains/{id}
 
 No proporcione un cuerpo de solicitud para este método.
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
 
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve un cuerpo de respuesta.
 

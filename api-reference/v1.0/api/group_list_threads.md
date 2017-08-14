@@ -1,6 +1,6 @@
 # <a name="list-threads"></a>List threads
 
-Obtenga todos los hilos de un grupo.
+Obtiene todos los hilos de un grupo.
 
 Nota: También puede [obtener todos los hilos de una conversación](conversation_list_threads.md).
 
@@ -16,11 +16,13 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Authorization  | {token} de portador. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [ConversationThread](../resources/conversationthread.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

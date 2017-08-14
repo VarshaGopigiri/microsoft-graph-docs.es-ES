@@ -1,4 +1,4 @@
-# <a name="list-events"></a>Enumerar eventos
+# <a name="list-events"></a>List events
 
 Recupera una lista de eventos de un calendario.  La lista contiene patrones de serie y reuniones de instancia única.
 
@@ -37,7 +37,9 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [Event](../resources/event.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

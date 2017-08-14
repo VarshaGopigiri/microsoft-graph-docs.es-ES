@@ -15,8 +15,12 @@ La colección de permisos incluye información potencialmente confidencial y pue
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,6 +45,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de recursos de [Permission](../resources/permission.md) en el cuerpo de la respuesta.
 
 Los permisos efectivos de un elemento pueden provenir de dos orígenes:

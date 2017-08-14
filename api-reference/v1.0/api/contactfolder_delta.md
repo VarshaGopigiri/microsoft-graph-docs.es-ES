@@ -35,8 +35,8 @@ Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud G
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
+## <a name="response"></a>Respuesta
 
-### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto de colección [contactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
@@ -64,7 +64,7 @@ Si la solicitud es correcta, la respuesta debería incluir un símbolo de estado
 
 La respuesta siguiente muestra un _skipToken_ en un encabezado de respuesta de _@odata.nextLink_.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,7 +89,7 @@ Content-length: 254
 }
 ```
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)

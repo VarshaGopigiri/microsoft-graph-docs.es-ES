@@ -19,8 +19,8 @@ DELETE /sites/{id}/onenote/pages/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

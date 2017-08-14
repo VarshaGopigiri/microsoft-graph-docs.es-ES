@@ -16,12 +16,13 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/Range
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
+| Authorization  | {token} de portador. Obligatorio. |
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

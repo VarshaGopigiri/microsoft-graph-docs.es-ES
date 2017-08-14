@@ -15,13 +15,13 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
-| Tipo de contenido  | application/json. Obligatorio.  |
+| Content-Type  | application/json. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ContactFolder](../resources/contactfolder.md).
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [ContactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

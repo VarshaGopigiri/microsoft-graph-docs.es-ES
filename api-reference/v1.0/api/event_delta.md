@@ -38,8 +38,8 @@ Al hacer una consulta delta en una vista del calendario, se espera obtener todas
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 | Prefer | string | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.|
 
+## <a name="response"></a>Respuesta
 
-### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto de colección [event](../resources/event.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
@@ -64,7 +64,7 @@ Si la solicitud es correcta, la respuesta debería incluir un token de estado, q
 
 La respuesta siguiente muestra un _skipToken_ en un encabezado de respuesta de _@odata.nextLink_.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán en una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +94,7 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los eventos en un calendario](../../../concepts/delta_query_events.md)

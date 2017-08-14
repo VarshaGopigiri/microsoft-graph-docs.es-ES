@@ -25,7 +25,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 | Encabezado       | Valor |
 |:-----------|:------|
 | Authorization  | {token} de portador. Obligatorio.  |
-| Tipo de contenido  | application/json. Obligatorio.  |
+| Content-Type  | application/json. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [event](../resources/event.md).
@@ -33,6 +33,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON del objeto [e
 Dado que el recurso **event** admite [extensiones](../../../concepts/extensibility_overview.md), puede utilizar la operación `POST` y agregar propiedades personalizadas con sus propios datos al evento al crearla.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [event](../resources/event.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

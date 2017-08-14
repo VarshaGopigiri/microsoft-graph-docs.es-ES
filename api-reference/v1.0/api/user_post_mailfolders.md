@@ -22,6 +22,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |displayName|String|Nombre para mostrar de la nueva carpeta.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y un objeto [MailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

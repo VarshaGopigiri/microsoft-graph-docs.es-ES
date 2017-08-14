@@ -16,10 +16,10 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
+| Authorization  | {token} de portador. Obligatorio. |
 
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
@@ -28,6 +28,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |values|(boolean, string o number)|Opcional. Matriz bidimensional de valores sin formato de la fila de la tabla.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto [TableRow](../resources/tablerow.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

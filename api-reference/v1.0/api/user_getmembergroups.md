@@ -25,6 +25,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |securityEnabledOnly|Boolean|**true** para especificar que solo se deben devolver los grupos de seguridad de los que el usuario es miembro; **false** para especificar que se deben devolver todos los grupos de los que el usuario es miembro. Nota: Establecer este parámetro en **verdadero** solo es posible al llamar este método en un usuario.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y la colección String en el cuerpo de la respuesta que contiene los identificadores de los grupos de los que el usuario sea miembro.
 
 ## <a name="example"></a>Ejemplo

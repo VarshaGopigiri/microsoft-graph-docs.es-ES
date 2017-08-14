@@ -10,7 +10,7 @@ Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
 * Files.ReadWrite
 * Files.ReadWrite.All
-* Shares.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -23,6 +23,7 @@ GET /shares/{sharingIdOrUrl}
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un recurso [sharedDriveItem](../resources/shareddriveitem.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

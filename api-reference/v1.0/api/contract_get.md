@@ -26,7 +26,7 @@ Este método admite los [parámetros de consulta de OData](http://graph.microsof
 
 No proporcione un cuerpo de solicitud para este método.
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
 
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [Contract](../resources/contract.md) en el cuerpo de la respuesta.
 

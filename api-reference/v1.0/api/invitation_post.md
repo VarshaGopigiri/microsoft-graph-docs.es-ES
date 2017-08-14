@@ -31,8 +31,8 @@ En la tabla siguiente, se muestran las propiedades necesarias al crear una invit
 |invitedUserEmailAddress |string | Dirección de correo electrónico del usuario al que invita.|
 |inviteRedirectUrl |string |Dirección URL a la que se redirigirá al usuario después del canje.|
 
+## <a name="response"></a>Respuesta
 
-### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y un objeto [invitation](../resources/invitation.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

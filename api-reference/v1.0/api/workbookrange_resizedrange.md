@@ -30,7 +30,8 @@ En la dirección URL de la solicitud, proporcione los siguientes parámetros de 
 |deltaRows|Int32||
 |deltaColumns|Int32||
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

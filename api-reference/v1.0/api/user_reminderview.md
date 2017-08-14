@@ -29,6 +29,7 @@ En la dirección URL de la solicitud, proporcione los siguientes parámetros de 
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto de colección [reminder](../resources/reminder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

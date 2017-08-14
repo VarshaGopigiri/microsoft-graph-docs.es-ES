@@ -41,6 +41,7 @@ Especificar la propiedad **groupTypes** si está creando un grupo de Office 365 
 Especifique otras propiedades modificables según sea necesario para su grupo. Para más información, vea las propiedades del recurso [grupo](../resources/group.md).
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [group](../resources/group.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

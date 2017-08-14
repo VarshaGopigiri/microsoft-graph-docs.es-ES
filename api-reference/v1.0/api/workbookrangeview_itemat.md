@@ -22,7 +22,8 @@ En la dirección URL de la solicitud, proporcione los siguientes parámetros de 
 |:---------------|:--------|:----------|
 |index|Int32|Índice del elemento que se devuelve.|
 
-### <a name="response"></a>Respuesta
+## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRangeView](../resources/workbookrangeview.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

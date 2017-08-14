@@ -14,9 +14,9 @@ POST /groups/{id}/getMemberGroups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
@@ -24,6 +24,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |securityEnabledOnly|Boolean|Establecer en **false**. La devolución solo de grupos con la seguridad activada solo es compatible para usuarios.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y la colección String en el cuerpo de la respuesta que contiene los identificadores de los grupos de los que el grupo sea miembro.
 
 ## <a name="example"></a>Ejemplo
