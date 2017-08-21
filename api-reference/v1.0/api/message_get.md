@@ -1,5 +1,46 @@
-<span data-ttu-id="2cd06-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="2cd06-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+# <a name="get-message"></a><span data-ttu-id="ad578-101">Obtener mensaje</span><span class="sxs-lookup"><span data-stu-id="ad578-101">Get message</span></span>
+
+<span data-ttu-id="ad578-102">Recupere las propiedades y las relaciones de un objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="ad578-102">Retrieve the properties and relationships of a [message](../resources/message.md) object.</span></span>
+
+<span data-ttu-id="ad578-103">Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia **message**.</span><span class="sxs-lookup"><span data-stu-id="ad578-103">Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
+
+<span data-ttu-id="ad578-104">Actualmente, esta operación devuelve los cuerpos de los mensajes solo en formato HTML.</span><span class="sxs-lookup"><span data-stu-id="ad578-104">Currently, this operation returns message bodies in only HTML format.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="ad578-105">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="ad578-105">Prerequisites</span></span>
+<span data-ttu-id="ad578-106">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.Read*</span><span class="sxs-lookup"><span data-stu-id="ad578-106">One of the following **scopes** is required to execute this API: *Mail.Read*</span></span>  
+## <a name="http-request"></a><span data-ttu-id="ad578-107">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ad578-107">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages/{id}
+GET /users/{id | userPrincipalName}/messages/{id}
+GET /me/mailFolders/{id}/messages/{id}
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="ad578-108">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="ad578-108">Optional query parameters</span></span>
+<span data-ttu-id="ad578-109">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ad578-109">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ad578-110">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="ad578-110">Request headers</span></span>
+| <span data-ttu-id="ad578-111">Nombre</span><span class="sxs-lookup"><span data-stu-id="ad578-111">Name</span></span>       | <span data-ttu-id="ad578-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="ad578-112">Type</span></span> | <span data-ttu-id="ad578-113">Descripción</span><span class="sxs-lookup"><span data-stu-id="ad578-113">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="ad578-114">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad578-114">Authorization</span></span>  | <span data-ttu-id="ad578-115">string</span><span class="sxs-lookup"><span data-stu-id="ad578-115">string</span></span>  | <span data-ttu-id="ad578-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="ad578-p101">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="ad578-118">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="ad578-118">Request body</span></span>
+<span data-ttu-id="ad578-119">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="ad578-119">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="ad578-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ad578-120">Response</span></span>
+
+<span data-ttu-id="ad578-121">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [message](../resources/message.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ad578-121">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ad578-122">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ad578-122">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ad578-123">Solicitud</span><span class="sxs-lookup"><span data-stu-id="ad578-123">Request</span></span>
+<span data-ttu-id="ad578-124">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="ad578-124">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_message"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/{id}
+```
+##### <a name="response"></a><span data-ttu-id="ad578-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ad578-125">Response</span></span>
+<span data-ttu-id="ad578-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="ad578-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -23,11 +64,10 @@ Content-length: 248
 }
 ```
 
-## <span data-ttu-id="2cd06-129">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="2cd06-129">See also</span></span>
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a><span data-ttu-id="ad578-129">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="ad578-129">See also</span></span>
 
-- [<span data-ttu-id="2cd06-130">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="2cd06-130">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="2cd06-131">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="2cd06-131">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="ad578-130">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="ad578-130">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="ad578-131">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="ad578-131">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->
