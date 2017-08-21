@@ -7,7 +7,10 @@ No se pueden mover elementos entre [Drives](../resources/drive.md) con esta soli
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -31,6 +34,7 @@ En el cuerpo de la solicitud, proporcione el nuevo valor de la propiedad **paren
 **Nota:** Al mover elementos a la raíz de un OneDrive, no puede usar la sintaxis `"id:" "root"`. Tendrá que usar el identificador real de la carpeta raíz o usar `{"path": "/drive/root"}` para la referencia primaria.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el recurso [DriveItem](../resources/driveitem.md) actualizado en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
@@ -50,8 +54,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <a name="response"></a>Respuesta
+
+En el ejemplo siguiente se muestra la respuesta.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,7 +2,18 @@
 
 Suscripción a una aplicación de escucha para recibir notificaciones cuando cambian los datos en Microsoft Graph.
 ## <a name="prerequisites"></a>Requisitos previos
-Según el recurso de destino, se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* o *Files.ReadWrite.All*. ***Nota:*** El extremo /v1.0 permite permisos de aplicación para la mayoría de recursos. Las conversaciones de un grupo y los elementos de raíz de unidad de OneDrive no son compatibles con los permisos de la aplicación.
+La creación de una suscripción requiere un ámbito de lectura para el recurso. Por ejemplo, para obtener mensajes de notificaciones, la aplicación necesita el permiso `Mail.Read`. En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso.
+
+| Tipo de recurso o elemento        | Ámbito               |
+|-----------------------------|---------------------|
+| Contactos                    | Contacts.Read       |
+| Conversaciones               | Group.Read.All      |
+| Eventos                      | Calendars.Read      |
+| Mensajes                    | Mail.Read           |
+| Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
+| Unidades de disco (unidades de disco y contenido compartido de SharePoint) | Files.ReadWrite.All |
+
+ ***Nota:*** El punto de conexión /v1.0 permite permisos de aplicación para la mayoría de recursos. Las conversaciones de un grupo y los elementos de raíz de unidad de OneDrive no son compatibles con los permisos de la aplicación.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -17,8 +28,8 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y un objeto de [suscripción](../resources/subscription.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
@@ -84,7 +95,7 @@ Content-type: text/plain
 Content-length: 7
 <token>
 ```
-##### <a name="notification-payload"></a>Carga de notificaciones
+## <a name="notification-payload"></a>Carga de notificaciones
 Cuando el recurso suscrito cambia, la herramienta de webhooks envía una notificación a su dirección URL de notificación con la siguiente carga.  El extremo de notificación debe enviar una respuesta 200 o 204 sin cuerpo de respuesta en menos de 30 segundos o se intentará volver a enviar la notificación en intervalos que aumentan de manera exponencial.  Los servicios que tardan constantemente 30 segundos o más pueden limitarse y recibir un conjunto de notificaciones más escaso.
 
 Los servicios también pueden devolver una respuesta 422 desde una notificación, en cuyo caso la suscripción se eliminará automáticamente y la secuencia de notificaciones se detendrá.

@@ -16,7 +16,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
+| Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
@@ -26,6 +26,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |DestinationId|String|El ID de la carpeta de destino o el nombre de carpeta conocido `Inbox`, `Drafts`, `SentItems` o `DeletedItems`.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [Message](../resources/message.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

@@ -156,8 +156,8 @@ Ninguno.
 
 |   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfiguration.Read.All_ | Leer configuración de Microsoft Intune (vista previa) | Permite que la aplicación lea las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
-| _DeviceManagementServiceConfiguration.ReadWrite.All_ | Leer y escribir la configuración de Microsoft Intune (vista previa) | Permite que la aplicación lea y escriba las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
+| _DeviceManagementServiceConfig.Read.All_ | Leer la configuración de Microsoft Intune (versión preliminar) | Permite que la aplicación lea las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | Leer y escribir la configuración de Microsoft Intune (versión preliminar) | Permite que la aplicación lea y escriba las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
 | _DeviceManagementConfiguration.Read.All_ | Leer las directivas y configuración de dispositivo de Microsoft Intune (vista previa) | Permite que la aplicación lea las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
 | _DeviceManagementConfiguration.ReadWrite.All_ | Leer y escribir las directivas y configuración de dispositivo de Microsoft Intune (vista previa) | Permite que la aplicación lea y escriba las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
 | _DeviceManagementApps.Read.All_ | Leer aplicaciones de Microsoft Intune (vista previa) | Permite que la aplicación lea las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
@@ -523,18 +523,23 @@ Con el punto de conexión de Azure AD v2.0, se especifica el permiso _offline\_a
 
 |   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read_ |    Leer las listas de contactos relevantes de los usuarios (versión preliminar) | Permite que la aplicación lea un listado ordenado de los contactos relevantes del usuario que ha iniciado sesión. La lista incluye los contactos locales, los contactos de las redes sociales, el directorio de su organización y los contactos de comunicaciones recientes (como el correo electrónico y Skype).| No |
+| _People.Read_ |    Leer las listas de personas relevantes de los usuarios | Permite que la aplicación lea una lista con puntuación de los contactos relevantes del usuario que ha iniciado sesión. La lista puede incluir contactos locales, contactos de las redes sociales o el directorio de la organización y contactos de comunicaciones recientes (como de correo electrónico y Skype). | No |
+| _People.Read.All_ | Leer las listas de personas relevantes de todos los usuarios | Permite leer una lista con puntuación de los contactos relevantes para el usuario que ha iniciado sesión o para otros usuarios de la organización del usuario que ha iniciado sesión. La lista puede incluir contactos locales, contactos de las redes sociales o el directorio de la organización y contactos de comunicaciones recientes (como de correo electrónico y Skype). También permite que la aplicación busque en todo el directorio de la organización del usuario que ha iniciado sesión. | Sí |
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
-Ninguno.
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _People.Read.All_ | Leer las listas de personas relevantes de todos los usuarios | Permite leer una lista con puntuación de los contactos relevantes para el usuario que ha iniciado sesión o para otros usuarios de la organización del usuario que ha iniciado sesión. La lista puede incluir contactos locales, contactos de las redes sociales o el directorio de la organización y contactos de comunicaciones recientes (como de correo electrónico y Skype). También permite que la aplicación busque en todo el directorio de la organización del usuario que ha iniciado sesión. | Sí |
 
 ### <a name="remarks"></a>Comentarios
 
+El permiso People.Read.All solo es válido para las cuentas profesionales y educativas. 
 
 ### <a name="example-usage"></a>Ejemplos de uso
 #### <a name="delegated"></a>Delegado
-
+* _People.Read_ : Leer una lista de los contactos relevantes (`GET /me/people`)
+* _People.Read.All_ : Leer una lista de los contactos relevantes para otro usuario de la misma organización (`GET /users('{id})/people`)
 
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
@@ -640,7 +645,6 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 | _User.Read.All_  |     Leer los perfiles completos de todos los usuarios           | Permite que la aplicación lea el conjunto completo de las propiedades del perfil, los informes y los administradores de otros usuarios de su organización, en nombre del usuario que ha iniciado sesión. | Sí |
 | _User.ReadWrite.All_ |     Leer los perfiles completos de todos los usuarios y escribir en ellos | Permite que la aplicación lea y escriba el conjunto completo de las propiedades del perfil, los informes y los administradores de otros usuarios de su organización, en nombre del usuario que ha iniciado sesión. También permite que la aplicación cree y elimine usuarios, así como restablecer contraseñas de usuario en nombre del usuario que ha iniciado sesión. | Sí |
 | _User.Invite.All_  |     Invitar a usuarios a la organización | Permite que la aplicación invite a usuarios a la organización en nombre del usuario que ha iniciado sesión. | Sí |
-| _UserTimelineActivity.Write.CreatedByApp_  |     Escribir la actividad de la aplicación en la escala de tiempo de los usuarios | Permite que la aplicación notifique la información de la actividad de la aplicación del usuario que ha iniciado sesión en la escala de tiempo de Microsoft. | No |
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
@@ -652,7 +656,7 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 ### <a name="remarks"></a>Comentarios
 
-Los únicos permisos válidos para las cuentas de Microsoft son _User.Read_, _User.ReadWrite_ y _UserTimelineActivity.Write.CreatedByApp_. Para las cuentas profesionales o educativas, todos los permisos son válidos excepto _UserTimelineActivity.Write.CreatedByApp_.
+Los únicos permisos válidos para las cuentas de Microsoft son _User.Read_ y _User.ReadWrite_. En el caso de las cuentas profesionales o educativas, son válidos todos los permisos.
 
 Con el permiso _User.Read_, una aplicación también puede leer información empresarial básica del usuario que ha iniciado sesión para una cuenta profesional o educativa en el recurso de [organización](../api-reference/v1.0/resources/organization.md). Están disponibles las propiedades siguientes: id, displayName y verifiedDomains.
 
@@ -738,8 +742,8 @@ En esta sección se muestran algunos escenarios comunes destinados a los recurso
     
 | **Tareas de la aplicación que implican el uso del recurso Group**  |  **Permisos necesarios** |  **Cadenas de permiso** |
 |:-------------------------------|:---------------------|:---------------|
-| La aplicación quiere leer información básica del grupo como el nombre para mostrar y la imagen, para, por ejemplo, mostrarla en una experiencia de selección de grupos  | _Group.Read.All_  | Leer todos los grupos|
-| La aplicación quiere leer todo el contenido de todos los grupos de Office 365, incluidos los archivos y las conversaciones.  También necesita mostrar los miembros del grupo.  |  _Group.Read.All_, _User.ReadBasic.All_ | Leer todos los grupos, Leer perfiles básicos de todos los usuarios |
-| La aplicación quiere leer y escribir todo el contenido de todos los grupos de Office 365, incluidos los archivos y las conversaciones.  También necesita mostrar los miembros del grupo y poder actualizarlos (si el usuario que inició sesión es propietario del grupo).  |     _Group.ReadWrite.All_, _User.ReadBasic.All_ |  Leer y escribir en todos los grupos, Leer perfiles básicos de todos los usuarios |
-| La aplicación quiere permitir al usuario unirse a grupos públicos de Office 365. Permite al usuario buscar un determinado grupo y elegir uno desde la lista enumerada para unirse a él. El usuario se agrega a cualquier grupo que seleccione.    |   _Group.ReadWrite.All_, _User.Read_ | Leer y escribir en todos los grupos, Iniciar sesión y leer el perfil del usuario |
-| La aplicación quiere crear un grupo a través de Microsoft Graph. |    _Group.ReadWrite.All_ | Leer y escribir en todos los grupos|
+| La aplicación quiere leer la información básica del grupo (solo el nombre para mostrar y la imagen), por ejemplo, para mostrarla en una experiencia de selección de grupos  | _Group.Read.All_  | Leer todos los grupos|
+| La aplicación quiere leer todo el contenido de todos los grupos de Office 365, incluidos los archivos y las conversaciones.  También necesita mostrar las pertenencias a grupos, ser capaz de actualizar las pertenencias a grupos (si es el propietario).  |  _Group.Read.All_ | Leer los elementos de todas las colecciones de sitios, Leer todos los grupos|
+| La aplicación quiere leer y escribir todo el contenido de todos los grupos de Office 365, incluidos los archivos y las conversaciones.  También necesita mostrar las pertenencias a grupos, ser capaz de actualizar las pertenencias a grupos (si es el propietario).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Leer y escribir en todos los grupos, Editar o eliminar elementos en todas las colecciones de sitios |
+| La aplicación quiere descubrir (buscar) un grupo de Office 365. Permite al usuario buscar un determinado grupo y elegir uno desde la lista enumerada para permitir que el usuario se una al grupo.     | _Group.ReadWrite.All_ | Leer y escribir en todos los grupos|
+| La aplicación desea crear un grupo a través de AAD Graph |   _Group.ReadWrite.All_ | Leer y escribir en todos los grupos|

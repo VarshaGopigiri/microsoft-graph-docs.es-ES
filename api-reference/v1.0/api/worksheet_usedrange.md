@@ -27,6 +27,7 @@ En la URL de solicitud, proporcione un parámetro de consulta opcional.
 | Authorization  | {token} de portador. Obligatorio. |
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

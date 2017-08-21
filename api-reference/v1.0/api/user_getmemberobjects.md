@@ -23,6 +23,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |securityEnabledOnly|Boolean|**true** para especificar que solo deben devolverse los grupos de seguridad de los que el usuario sea miembro; **false** para especificar que deben devolverse todos los grupos y roles de directorio de los que el usuario sea miembro. Nota: Establecer este parámetro en **verdadero** solo es posible al llamar este método en un usuario.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y la colección de cadenas en el cuerpo de la respuesta que contiene los identificadores de los grupos y los roles de directorio de los que el usuario sea miembro.
 
 ## <a name="example"></a>Ejemplo

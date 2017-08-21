@@ -2,7 +2,18 @@
 
 Recupera las propiedades y relaciones de un objeto subscription.
 ## <a name="prerequisites"></a>Requisitos previos
-Según el recurso de destino, se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* o *Files.ReadWrite.All*
+
+En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso.
+
+| Tipo de recurso o elemento        | Ámbito               |
+|-----------------------------|---------------------|
+| Contactos                    | Contacts.Read       |
+| Conversaciones               | Group.Read.All      |
+| Eventos                      | Calendars.Read      |
+| Mensajes                    | Mail.Read           |
+| Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
+| Unidades de disco (unidades de disco y contenido compartido de SharePoint) | Files.ReadWrite.All |
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,11 +25,13 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [subscription](../resources/subscription.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

@@ -60,8 +60,9 @@ La respuesta a esta solicitud ofrecerá los detalles de la [uploadSession](../re
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-#### <a name="response-example"></a>Ejemplo de respuesta
-Aquí tiene un ejemplo de la respuesta.
+##### <a name="response"></a>Respuesta 
+
+En el ejemplo siguiente se muestra la respuesta.
 
 <!-- {
   "blockType": "response",
@@ -79,7 +80,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="upload-bytes-to-the-upload-session"></a>Cargar bytes a la sesión de carga
+## <a name="upload-bytes-to-the-upload-session"></a>Cargar bytes en la sesión de carga
 
 Para cargar el archivo o una parte del archivo, la aplicación envía una solicitud PUT al valor **uploadUrl** recibido en la respuesta **createUploadSession**. Puede cargar el archivo completo o dividir el archivo en fragmentos, siempre y cuando el número máximo de bytes de cualquier solicitud dada sea inferior a 60 MiB. Los fragmentos del archivo se deben cargar secuencialmente en orden. La carga de fragmentos sin un orden producirá un error.
 
@@ -100,7 +101,10 @@ Content-Range: bytes 0-25/128
 
 **Importante:** Su aplicación debe asegurarse de que el tamaño total del archivo especificado en el encabezado **Content-Range** sea el mismo en todas las solicitudes. Si un fragmento indica un tamaño de archivo diferente, se producirá un error en la solicitud.
 
-#### <a name="response-example"></a>Ejemplo de respuesta
+##### <a name="response"></a>Respuesta
+
+En el ejemplo siguiente se muestra la respuesta.
+
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -149,7 +153,7 @@ Content-Type: application/json
   "file": { }
 }
 ```
-**Nota**: La respuesta del elemento está truncada para que la documentación sea más clara.
+**Nota:** La respuesta del elemento está truncada para que la documentación sea más clara.
 
 ## <a name="cancel-an-upload-session"></a>Cancelar una sesión de carga
 
@@ -166,14 +170,16 @@ La solicitud DELETE hará que la sesión de carga expire inmediatamente y elimin
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-#### <a name="response-example"></a>Ejemplo de respuesta
+##### <a name="response"></a>Respuesta 
+
+En el ejemplo siguiente se muestra la respuesta.
 
 <!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 204 No Content
 ```
 
-## <a name="resuming-an-in-progress-upload"></a>Reanudación de una carga en curso
+## <a name="resuming-an-in-progress-upload"></a>Reanudar una carga en curso
 
 Si una solicitud de carga se desconecta o si falla antes de que se complete la solicitud, se pasan por alto todos los bytes de dicha solicitud. Esto puede ocurrir si se interrumpe la conexión entre la aplicación y el servicio. Si esto ocurre, la aplicación todavía puede reanudar la transferencia de archivos desde el fragmento completado anteriormente.
 

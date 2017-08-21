@@ -17,10 +17,10 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
+| Authorization  | {token} de portador. Obligatorio. |
 
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
@@ -32,6 +32,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |method|string|Opcional. Método de ordenación que se usa para los caracteres chinos.  Valores posibles: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

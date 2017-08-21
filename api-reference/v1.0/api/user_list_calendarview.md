@@ -43,12 +43,14 @@ Este método también admite los [parámetros de consulta de OData](http://devel
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido   | string  | application/json | 
-| Prefer | string | <Time zone>. Opcional, se supone hora UTC si no se encuentra.|
+| Content-Type   | string  | application/json | 
+| Prefer | string | outlook.timezone="Hora estándar del Este". Opcional. Se usa para especificar la zona horaria en las horas de inicio y final en la respuesta. Si no se especifica, la respuesta se devuelve en hora UTC. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [Event](../resources/event.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

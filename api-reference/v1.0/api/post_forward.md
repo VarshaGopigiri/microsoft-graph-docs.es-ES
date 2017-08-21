@@ -5,7 +5,7 @@ Reenvía una publicación a un destinatario. Puede especificar la conversación 
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-*Group.ReadWrite*, *Group.Readwrite.All*
+*Group.ReadWrite.All*
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -17,9 +17,9 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Authorization  | {token} de portador. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
@@ -28,6 +28,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |toRecipients|Colección [recipient](../resources/recipient.md)|Destinatarios a los que se ha reenviado el encadenado de hilos.|
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

@@ -17,8 +17,8 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

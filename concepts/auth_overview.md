@@ -12,7 +12,7 @@ A continuación se muestra un ejemplo de un token de acceso de Azure AD:
 
 `EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/oeJX6U8nnL9nJ5pHLVuPWD0aNnTPTJD8Y4oQTp5zLhDIIfaJCaGcQperULVF7K6yX8MhHxIBwek418rKIp11om0SWBXOYSGOM0rNNN59qNiKwLNK+MPUf7ObcRBN5I5vg8jB7IMoz66jrNmT2uiWCyI8MmYDZgAACPoaZ9REyqke+AE1/x1ZX0w7OamUexKF8YGZiw+cDpT/BP1GsONnwI4a8M7HsBtDgZPRd6/Hfqlq3HE2xLuhYX8bAc1MUr0gP9KuH6HDQNlIV4KaRZWxyRo1wmKHOF5G5wTHrtxg8tnXylMc1PKOtaXIU4JJZ1l4x/7FwhPmg9M86PBPWr5zwUj2CVXC7wWlL/6M89Mlh8yXESMO3AIuAmEMKjqauPrgi9hAdI2oqnLZWCRL9gcHBida1y0DTXQhcwMv1ORrk65VFHtVgYAegrxu3NDoJiDyVaPZxDwTYRGjPII3va8GALAMVy5xou2ikzRvJjW7Gm3XoaqJCTCExN4m5i/Dqc81Gr4uT7OaeypYTUjnwCh7aMhsOTDJehefzjXhlkn//2eik+NivKx/BTJBEdT6MR97Wh/ns/VcK7QTmbjwbU2cwLngT7Ylq+uzhx54R9JMaSLhnw+/nIrcVkG77Hi3neShKeZmnl5DC9PuwIbtNvVge3Q+V0ws2zsL3z7ndz4tTMYFdvR/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==`
 
-Para llamar a Microsoft Graph, asocie el token de acceso como token de portador al encabezado de autorización de una solicitud HTML. Por ejemplo, a continuación se muestra una llamada que devuelve la información de perfil del usuario que ha iniciado sesión (el token de acceso se ha truncado para mejorar la legibilidad):
+Para llamar a Microsoft Graph, asocie el token de acceso como token de portador al encabezado de autorización de una solicitud HTTP. Por ejemplo, a continuación se muestra una llamada que devuelve la información de perfil del usuario que ha iniciado sesión (el token de acceso se ha truncado para mejorar la legibilidad):
 
 ```
 HTTP/1.1
@@ -167,7 +167,7 @@ La documentación de Azure AD contiene artículos y ejemplos que se centran espe
 Para el punto de conexión de Azure AD v2.0: 
 
 - El mejor punto de partida es la [documentación del punto de conexión de Azure AD v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview). Este artículo contiene vínculos a información general, documentación de protocolos y artículos de introducción para diversas plataformas, todo ello organizado según el tipo de aplicación que se desarrolle. 
-- Para obtener ejemplos ordenados por biblioteca de autenticación de cliente o servidor, vea [Bibliotecas de autenticación de Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries). 
+- Para obtener ejemplos ordenados por biblioteca de autenticación de cliente o de servidor, vea [Bibliotecas de autenticación de Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries). 
 - También puede explorar ejemplos de Azure AD por plataforma en la [Galería de código de Azure](https://azure.microsoft.com/resources/samples/?service=active-directory). Nota: No se puede organizar la búsqueda por versión del punto de conexión. 
 
 Para el punto de conexión de Azure AD: 
@@ -178,7 +178,7 @@ Para el punto de conexión de Azure AD:
 - También puede explorar ejemplos de Azure AD por plataforma en la [Galería de código de Azure](https://azure.microsoft.com/resources/samples/?service=active-directory). Nota: No se puede organizar la búsqueda por versión del punto de conexión. 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Documentación sobre el punto de conexión de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)
 - [Documentación sobre el punto de conexión de Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)

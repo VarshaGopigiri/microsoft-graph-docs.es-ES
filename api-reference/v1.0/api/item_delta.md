@@ -6,15 +6,19 @@ La aplicación comienza llamando a `delta` sin ningún parámetro. El servicio c
 
 Una vez que termine de recibir todos los cambios, puede aplicarlos a su estado local. Para comprobar si hay cambios en el futuro, llame a `delta` con el `@odata.deltaLink` de la respuesta anterior.
 
-Los elementos eliminados se devuelven con la [`deleted`faceta](../resources/deleted.md). Los elementos con este conjunto de propiedades deben ser eliminados de su estado local. 
+Los elementos eliminados se devuelven con la [faceta `deleted`](../resources/deleted.md). Los elementos con este conjunto de propiedades deben ser eliminados de su estado local. 
 
 **Nota:** solo debe eliminar una carpeta de forma local si está vacía después de sincronizar todos los cambios.
 
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.Read
-  * Files.Readwrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -31,6 +35,7 @@ Este método admite los [parámetros de consulta OData](http://developer.microso
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de recursos [DriveItem](../resources/driveitem.md) en el cuerpo de la respuesta.
 
 Además de la colección de DriveItems, la respuesta también incluirá una de las siguientes propiedades:
@@ -103,7 +108,7 @@ Aquí tiene un ejemplo después de la solicitud inicial.
   "name": "get_item_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='123123901209310923!23alksjd')
+GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -144,7 +149,7 @@ La última página de elementos incluirá la propiedad **@odata.deltaLink**, que
 ## <a name="remarks"></a>Comentarios
 
 * La fuente delta muestra el estado más reciente de cada elemento, no cada cambio. Si se ha cambiado el nombre de un elemento dos veces, solo aparecerá una vez con el nombre más reciente.
-* El mismo elemento puede aparecer más de una vez en una fuente delta por diversas razones. Debe utilizar la última repetición que vea.
+* El mismo elemento puede aparecer más de una vez en una fuente delta por diversas razones. Debe usar la última repetición que vea.
 * La propiedad `parentReference` de los elementos no incluirá un valor de **ruta de acceso**. Esto ocurre porque el cambio de nombre de una carpeta no devuelve los descendientes de la carpeta desde **delta**. **Cuando utilice delta, debe hacer siempre un seguimiento de los elementos mediante id**.
 
 En algunos casos, puede que el servicio no pueda proporcionar una lista de cambios de un token determinado (por ejemplo, si un cliente intenta reutilizar un token anterior después de haber estado desconectado durante mucho tiempo o si ha cambiado el estado del servidor y se requiere un nuevo token). En estos casos, el servicio devolverá un error `HTTP 410 Gone` con una respuesta de error que contiene uno de los códigos de error siguientes y un encabezado `Location` con un nuevo nextLink que comienza una nueva enumeración delta desde cero. Cuando finalice la enumeración completa, compare los elementos devueltos con su estado local y siga estas instrucciones.

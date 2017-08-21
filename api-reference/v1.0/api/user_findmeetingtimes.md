@@ -29,7 +29,7 @@ Todos los parámetros admitidos se enumeran a continuación. Dependiendo de su e
 |isOrganizerOptional|Edm.Boolean|Especificar `True` si no es preciso que el organizador asista. El valor predeterminado es `false`. Opcional.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Los requisitos del organizador sobre la ubicación de la reunión, por ejemplo si se requiere una sugerencia para una ubicación de la reunión o si hay ubicaciones específicas en las que únicamente pueda tener lugar la reunión. Opcional.|
 |maxCandidates|Edm.Int32|El número máximo de sugerencias de hora de la reunión que se va a devolver. Opcional.|
-|meetingDuration|Edm.Duration|La duración de la reunión, en formato [ISO8601](http://www.iso.org/iso/iso8601). Por ejemplo, 1 hora se indica como 'PT1H', donde 'P' es el designador de duración, 't' es el designador de tiempo y 'H' es el designador de hora. Si no se especifica ninguna duración de la reunión, **findMeetingTimes** usa el valor predeterminado de 30 minutos. Opcional.|
+|meetingDuration|Edm.Duration|La duración de la reunión en formato [ISO8601](http://www.iso.org/iso/iso8601). Por ejemplo, 1 hora se indica como "PT1H", donde "P" es el designador de duración, "T" es el designador de tiempo y "H" es el designador de hora. Use M para indicar los minutos de la duración; por ejemplo, 2 horas y 30 minutos sería "PT2H30M". Si no se especifica ninguna duración de la reunión, **findMeetingTimes** usa el valor predeterminado de 30 minutos. Opcional.|
 |minimumAttendeePercentage|Edm.Double| La [confianza](#the-confidence-of-a-meeting-suggestion) mínima necesaria para que se devuelva un intervalo de tiempo en la respuesta. Es un valor de porcentaje (%) comprendido entre 0 y 100. Opcional.|
 |returnSuggestionReasons|Edm.Boolean|Especifique `True` para devolver un motivo para cada sugerencia de la reunión en la propiedad **suggestionReason**. El valor predeterminado es `false` para no devolver esa propiedad. Opcional.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Las restricciones de tiempo para una reunión, que pueden incluir la naturaleza de la reunión (propiedad **activityDomain**) y posibles periodos de tiempo de la reunión (propiedad **timeSlots**). **findMeetingTimes** asume **activityDomain** como `work` si no especifica este parámetro. Opcional.|
@@ -38,7 +38,7 @@ En la tabla siguiente se describen las restricciones puede especificar en el par
 
 |**valor activityDomain en timeConstraint**|**Sugerencias de hora de reunión**|
 |:-----|:-----|
-|trabajo| Las sugerencias se encuentran dentro de la jornada laboral del usuario, que está definida en su configuración de calendario y tanto el administrador como el propio usuario pueden personalizar. Las horas de trabajo por defecto son de lunes al viernes, de 8 a.m. a 5 p.m. en la zona horaria establecida para el buzón. Este es el valor predeterminado si no se especifica **activityDomain**. |
+|trabajo| Las sugerencias se encuentran dentro de la jornada laboral del usuario, que está definida en su configuración de calendario y tanto el administrador como el propio usuario pueden personalizar. Las horas de trabajo por defecto son de lunes a viernes, de 8 a.m. a 5 p.m. en la zona horaria establecida para el buzón. Este es el valor predeterminado si no se especifica **activityDomain**. |
 |personal| Las sugerencias se encuentran dentro de la jornada laboral del usuario y en sábado y domingo. El valor predeterminado es del lunes al domingo, de 8 a.m. a 5 p.m., en la configuración de zona horaria para el buzón.|
 |sin restricciones | Las sugerencias pueden pertenecer a cualquier hora del día, todos los días de la semana.|
 |desconocido | No utilice este valor, pues quedará obsoleto en el futuro. Actualmente se comporta igual que `work`. Cambie cualquier código existente para usar `work`, `personal` o `unrestricted` según corresponda.
@@ -46,8 +46,8 @@ En la tabla siguiente se describen las restricciones puede especificar en el par
 
 Basándose en los parámetros especificados, **findMeetingTimes** comprueba el estado de disponibilidad en los calendarios principales del organizador y los asistentes. La acción calcula la mejor hora de la reunión posible y devuelve cualquier sugerencia de reunión.
 
-
 ## <a name="response"></a>Respuesta
+
 Si es correcto, este método devuelve un código de respuesta `200, OK` y un objeto [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) en el cuerpo de la respuesta. 
 
 Un objeto **meetingTimeSuggestionsResult** incluye una colección de sugerencias de la reunión y una propiedad **emptySuggestionsReason**. Cada sugerencia se define como una [meetingTimeSuggestion](../resources/meetingTimeSuggestion.md), con los asistentes con un nivel de confianza medio del 50 % de asistir o un porcentaje concreto que especificó en el parámetro **minimumAttendeePercentage**. 

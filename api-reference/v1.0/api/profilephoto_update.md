@@ -45,6 +45,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 En el cuerpo de la solicitud, incluya los datos binarios de la foto.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK`.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

@@ -8,20 +8,40 @@ Mediante la API de REST de Microsoft Graph, una aplicación puede suscribirse a 
 * Eventos
 * Contactos
 * Conversaciones de grupo
-* Elementos raíz de la unidad
+* Contenido compartido en OneDrive, incluidas las unidades de disco asociadas a sitios de SharePoint
+* Carpetas de OneDrive personales del usuario
+
+Por ejemplo, puede crear una suscripción a una carpeta específica: `me/mailfolders('inbox')/messages`
+
+O a un recurso de nivel superior: `me/messages`, `me/contacts`, `me/events`
+
+O en una unidad de disco de SharePoint o de OneDrive para la Empresa: `/drive/root`
+
+O a una instancia de OneDrive personal del usuario: `/drives/{id}/root`
+`/drives/{id}/root/subfolder`
 
 Microsoft Graph acepta la solicitud de suscripción y después manda las notificaciones a la dirección URL especificada en la suscripción. La aplicación actúa entonces según su lógica de negocios. Por ejemplo, recupera más datos, actualiza la caché y las vistas, etc.
 
-Las aplicaciones deben renovar sus suscripciones antes de que caduquen. También pueden cancelar la suscripción en cualquier momento para dejar de recibir notificaciones.
+Las aplicaciones deben renovar sus suscripciones antes de que expiren. El plazo actual de expiración más largo es de tres días menos 90 minutos desde el momento de su creación. Las aplicaciones tienen que renovar sus suscripciones antes de la fecha de expiración. De lo contrario tendrán que crear otra suscripción.
 
-Consulte los siguientes ejemplos de código en GitHub.
+Las aplicaciones también pueden cancelar la suscripción en cualquier momento para dejar de recibir notificaciones.
+
+En general, las operaciones de suscripción requieren permiso de lectura en el recurso. Por ejemplo, para obtener notificaciones en mensajes, la aplicación necesita el permiso `Mail.Read`. En el artículo sobre cómo [crear suscripciones](../api/subscription_post_subscriptions.md) se muestran los permisos necesarios para cada tipo de recurso. En la siguiente tabla aparecen los tipos de permisos que la aplicación puede solicitar para usar webhooks con tipos de recurso concretos. 
+
+| Tipo de permiso | Tipos de recursos admitidos en v1.0 |
+|:----------------|:---------------------------------|
+| Delegado: cuenta profesional o educativa | [contacto](contact.md), [conversación](conversation.md), [unidad de disco](drive.md), [evento](event.md), [mensaje](message.md) |
+| Delegado: cuenta personal de Microsoft | Ninguno |
+| Aplicación | [contacto](contact.md), [conversación](conversation.md), [evento](event.md), [mensaje](message.md) |
+
+## <a name="code-samples"></a>Ejemplos de código
+
+Los siguientes ejemplos de código están disponibles en GitHub.
 
 * [Ejemplo de webhooks de Microsoft Graph para Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Ejemplo de webhooks de Microsoft Graph para ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 
-Veamos el proceso de suscripción.
-
-# <a name="creating-a-subscription"></a>Creación de una suscripción
+# <a name="creating-a-subscription"></a>Crear una suscripción
 
 La creación de una suscripción es el primer paso para empezar a recibir notificaciones de un recurso. El proceso de suscripción es el siguiente:
 
@@ -32,20 +52,6 @@ La creación de una suscripción es el primer paso para empezar a recibir notifi
 3. El cliente envía el token de validación a Microsoft Graph.
 
 El cliente debe almacenar el identificador de suscripción para establecer la correlación de una notificación con la suscripción correspondiente.
-
-## <a name="characteristics-of-subscriptions"></a>Características de las suscripciones
-
-Puede crear suscripciones para recursos como mensajes, eventos, contactos y elementos raíz de la unidad.
-
-Puede crear una suscripción a una carpeta específica: `https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
-
-O a un recurso de nivel superior: `https://graph.microsoft.com/v1.0/me/messages`
-
-O en elementos raíz de una unidad: `https://graph.microsoft.com/v1.0/me/drive/root`
-
-La creación de una suscripción en la mayoría de los casos requiere un ámbito de lectura para el recurso. Por ejemplo, para obtener mensajes de notificaciones, la aplicación necesita el permiso `mail.read`. Tenga en cuenta que actualmente el permiso `Files.ReadWrite` es necesario para los elementos raíz de la unidad de OneDrive. Las unidades asociadas a los sitios de SharePoint requieren `Files.ReadWrite.All`.
-
-Las suscripciones expiran. Actualmente, la fecha de expiración más larga son tres días menos 90 minutos (4230 en total) desde el momento de su creación. Las aplicaciones necesitan renovar sus suscripciones antes de la fecha de expiración. De lo contrario necesitarán crear una nueva suscripción.
 
 ## <a name="notification-url-validation"></a>Validación de la dirección URL de notificación
 
@@ -88,7 +94,7 @@ Si se ejecuta correctamente, Microsoft Graph devuelve un código `201 Created` y
 
 El cliente puede renovar una suscripción con una fecha de expiración específica de hasta tres días desde el momento de la solicitud. La propiedad expirationDateTime es necesaria.
 
-## <a name="subscription-renewal-example"></a>Ejemplo de renovación de la suscripción
+## <a name="subscription-renewal-example"></a>Ejemplo de renovación de suscripción
 
 ```
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id};
@@ -157,13 +163,13 @@ Cuando el usuario recibe un correo electrónico, Microsoft Graph envía una noti
 }
 ```
 
-Tenga en cuenta que el objeto de valor contiene una lista. Si hay muchas notificaciones en cola, Microsoft Graph las envía en una sola solicitud.
+Observe que el objeto de valor contiene una lista. Si hay muchas notificaciones en cola, Microsoft Graph las envía en una sola solicitud.
 
 ## <a name="processing-the-notification"></a>Procesar la notificación
 
 La aplicación comienza a recibir notificaciones y luego debe procesarlas. Estas son las tareas mínimas que debe realizar la aplicación para procesar una notificación:
 
-1. Validar la propiedad `clientState`. La propiedad clientState en la notificación debe coincidir con la enviada con la solicitud de suscripción.
+1. Valide la propiedad `clientState`. La propiedad clientState en la notificación debe coincidir con la enviada con la solicitud de suscripción.
   > Nota: Si no es así, no debe considerar la notificación como válida. También debe investigar de dónde proviene la notificación y tomar las medidas adecuadas.
 
 2. Actualizar la aplicación según la lógica empresarial.
