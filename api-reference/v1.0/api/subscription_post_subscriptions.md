@@ -1,4 +1,106 @@
-<span data-ttu-id="b4757-p107">Al recibir notificaciones de suscripciones de unidad, el campo resourceData será NULL y se deberá llamar a la API de [delta](item_delta.md) para determinar los cambios que han ocurrido. Aquí tiene un ejemplo de notificación de unidad:</span><span class="sxs-lookup"><span data-stu-id="b4757-p107">When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](item_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:</span></span>
+# <a name="create-subscription"></a><span data-ttu-id="36e75-101">Crear suscripción</span><span class="sxs-lookup"><span data-stu-id="36e75-101">Create subscription</span></span>
+
+<span data-ttu-id="36e75-102">Suscripción a una aplicación de escucha para recibir notificaciones cuando cambian los datos en Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="36e75-102">Subscribes a listener application to receive notifications when data on the Microsoft Graph changes.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="36e75-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="36e75-103">Prerequisites</span></span>
+<span data-ttu-id="36e75-p101">La creación de una suscripción requiere un ámbito de lectura para el recurso. Por ejemplo, para obtener mensajes de notificaciones, la aplicación necesita el permiso `Mail.Read`. En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso.</span><span class="sxs-lookup"><span data-stu-id="36e75-p101">Creating a subscription requires read scope to the resource. For example, to get notifications messages, your app needs the `Mail.Read` permission. The following table lists the suggested permission needed for each resource.</span></span>
+
+| <span data-ttu-id="36e75-107">Tipo de recurso o elemento</span><span class="sxs-lookup"><span data-stu-id="36e75-107">Resource type / Item</span></span>        | <span data-ttu-id="36e75-108">Ámbito</span><span class="sxs-lookup"><span data-stu-id="36e75-108">Scope</span></span>               |
+|-----------------------------|---------------------|
+| <span data-ttu-id="36e75-109">Contactos</span><span class="sxs-lookup"><span data-stu-id="36e75-109">Contacts</span></span>                    | <span data-ttu-id="36e75-110">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="36e75-110">Contacts.Read</span></span>       |
+| <span data-ttu-id="36e75-111">Conversaciones</span><span class="sxs-lookup"><span data-stu-id="36e75-111">Conversations</span></span>               | <span data-ttu-id="36e75-112">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="36e75-112">Group.Read.All</span></span>      |
+| <span data-ttu-id="36e75-113">Eventos</span><span class="sxs-lookup"><span data-stu-id="36e75-113">Events</span></span>                      | <span data-ttu-id="36e75-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="36e75-114">Calendars.Read</span></span>      |
+| <span data-ttu-id="36e75-115">Mensajes</span><span class="sxs-lookup"><span data-stu-id="36e75-115">Messages</span></span>                    | <span data-ttu-id="36e75-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="36e75-116">Mail.Read</span></span>           |
+| <span data-ttu-id="36e75-117">Unidad de disco (OneDrive del usuario)</span><span class="sxs-lookup"><span data-stu-id="36e75-117">Drive  (User's OneDrive)</span></span>    | <span data-ttu-id="36e75-118">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="36e75-118">Files.ReadWrite</span></span>     |
+| <span data-ttu-id="36e75-119">Unidades de disco (unidades de disco y contenido compartido de SharePoint)</span><span class="sxs-lookup"><span data-stu-id="36e75-119">Drives (Sharepoint shared content and drives)</span></span> | <span data-ttu-id="36e75-120">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36e75-120">Files.ReadWrite.All</span></span> |
+
+ <span data-ttu-id="36e75-p102">***Nota:*** El punto de conexión /v1.0 permite permisos de aplicación para la mayoría de recursos. Las conversaciones de un grupo y los elementos de raíz de unidad de OneDrive no son compatibles con los permisos de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="36e75-p102">One of the following scopes, depending on the target resource, are required to execute this API: Mail.Read, Calendars.Read, Contacts.Read, Group.Read.All, Files.ReadWrite or Files.ReadWrite.All. ***Note:*** The /v1.0 endpoint allows Application permissions for most resources. Conversations in a Group and OneDrive drive root items are not supported with Application permissions.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="36e75-123">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="36e75-123">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /subscriptions
+
+```
+
+## <a name="request-headers"></a><span data-ttu-id="36e75-124">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="36e75-124">Request headers</span></span>
+| <span data-ttu-id="36e75-125">Nombre</span><span class="sxs-lookup"><span data-stu-id="36e75-125">Name</span></span>       | <span data-ttu-id="36e75-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="36e75-126">Type</span></span> | <span data-ttu-id="36e75-127">Descripción</span><span class="sxs-lookup"><span data-stu-id="36e75-127">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="36e75-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="36e75-128">Authorization</span></span>  | <span data-ttu-id="36e75-129">string</span><span class="sxs-lookup"><span data-stu-id="36e75-129">string</span></span>  | <span data-ttu-id="36e75-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="36e75-p103">Bearer {token}. Required.</span></span> |
+
+## <a name="response"></a><span data-ttu-id="36e75-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="36e75-132">Response</span></span>
+
+<span data-ttu-id="36e75-133">Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y un objeto de [suscripción](../resources/subscription.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="36e75-133">If successful, this method returns `201, Created` response code and a [subscription](../resources/subscription.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="36e75-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="36e75-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="36e75-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="36e75-135">Request</span></span>
+<span data-ttu-id="36e75-136">Este es un ejemplo de solicitud para enviar una notificación cuando el usuario recibe un nuevo correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="36e75-136">Here is an example of the request to send a notification when the user receives a new mail.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_from_subscriptions"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-type: application/json
+
+{
+   "changeType": "created,updated",
+   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+   "resource": "me/mailFolders('Inbox')/messages",
+   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
+   "clientState": "subscription-identifier"
+}
+```
+<span data-ttu-id="36e75-p104">En el cuerpo de la solicitud, proporcione una representación JSON del objeto de [suscripción](../resources/subscription.md). El campo *clientState* es opcional.</span><span class="sxs-lookup"><span data-stu-id="36e75-p104">In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object. The *clientState* field is optional.</span></span>
+
+##### <a name="resources-examples"></a><span data-ttu-id="36e75-139">Ejemplos de recursos</span><span class="sxs-lookup"><span data-stu-id="36e75-139">Resources examples</span></span>
+<span data-ttu-id="36e75-140">A continuación puede ver algunos valores válidos para la propiedad de recurso de la suscripción:</span><span class="sxs-lookup"><span data-stu-id="36e75-140">The following are valid values for the resource property of the subscription:</span></span>
+
+| <span data-ttu-id="36e75-141">Tipo de recurso</span><span class="sxs-lookup"><span data-stu-id="36e75-141">Resource type</span></span> | <span data-ttu-id="36e75-142">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="36e75-142">Examples</span></span> |
+|:------ |:----- |
+|<span data-ttu-id="36e75-143">Correo</span><span class="sxs-lookup"><span data-stu-id="36e75-143">Mail</span></span>|<span data-ttu-id="36e75-144">me/mailfolders("inbox")/messages</span><span class="sxs-lookup"><span data-stu-id="36e75-144">me/mailfolders('inbox')/messages</span></span><br /><span data-ttu-id="36e75-145">me/messages</span><span class="sxs-lookup"><span data-stu-id="36e75-145">me/messages</span></span>|
+|<span data-ttu-id="36e75-146">Contactos</span><span class="sxs-lookup"><span data-stu-id="36e75-146">Contacts</span></span>|<span data-ttu-id="36e75-147">me/contacts</span><span class="sxs-lookup"><span data-stu-id="36e75-147">me/contacts</span></span>|
+|<span data-ttu-id="36e75-148">Calendarios</span><span class="sxs-lookup"><span data-stu-id="36e75-148">Calendars</span></span>|<span data-ttu-id="36e75-149">me/events</span><span class="sxs-lookup"><span data-stu-id="36e75-149">me/events</span></span>|
+|<span data-ttu-id="36e75-150">Conversaciones</span><span class="sxs-lookup"><span data-stu-id="36e75-150">Conversations</span></span>|<span data-ttu-id="36e75-151">groups("*{id}*")/conversations</span><span class="sxs-lookup"><span data-stu-id="36e75-151">groups('*{id}*')/conversations</span></span>|
+|<span data-ttu-id="36e75-152">Unidades</span><span class="sxs-lookup"><span data-stu-id="36e75-152">Drives</span></span>|<span data-ttu-id="36e75-153">me/drive/root</span><span class="sxs-lookup"><span data-stu-id="36e75-153">me/drive/root</span></span>|
+
+##### <a name="response"></a><span data-ttu-id="36e75-154">Respuesta</span><span class="sxs-lookup"><span data-stu-id="36e75-154">Response</span></span>
+<span data-ttu-id="36e75-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="36e75-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.subscription"
+} -->
+```http
+HTTP/1.1 201 Created
+
+{
+  "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
+  "resource":"me/mailFolders('Inbox')/messages",
+  "changeType":"created, updated",
+  "clientState":"subscription-identifier",
+  "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
+  "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
+}
+```
+## <a name="subscription-validation"></a><span data-ttu-id="36e75-158">Validación de suscripciones</span><span class="sxs-lookup"><span data-stu-id="36e75-158">Subscription validation</span></span>
+<span data-ttu-id="36e75-p106">Para evitar que las suscripciones equivocadas envíen notificaciones a direcciones URL arbitrarias, el extremo de la notificación de suscripción debe ser capaz de responder a una solicitud de validación. Durante el procesamiento del `POST` al extremo de `/subscriptions`, Microsoft Graph enviará una solicitud de `POST` a su `notificationUrl` de la siguiente forma:</span><span class="sxs-lookup"><span data-stu-id="36e75-p106">In order to to avoid mistaken subscriptions directing notifications to arbitrary URLs, the subscription notification endpoint must be capable of responding to a validation request. During processing of the `POST` to the `/subscriptions` endpoint, the Microsoft Graph will send a `POST` request back to your `notificationUrl` in the following form:</span></span> 
+```http
+POST https://webhook.azurewebsites.net/api/send/myNotifyClient?validationToken=<token>
+```
+<span data-ttu-id="36e75-161">El extremo de notificación debe enviar en menos de 10 segundos una respuesta 200 con el valor `<token>` como cuerpo y un tipo de contenido `text/plain`, como se muestra a continuación, o se descartará la solicitud de creación.</span><span class="sxs-lookup"><span data-stu-id="36e75-161">The notification endpoint must send a 200 response with the value of `<token>` as its body and a content type of `text/plain`, as shown below, within 10 seconds otherwise the creation request will be discarded.</span></span>
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+Content-length: 7
+<token>
+```
+## <a name="notification-payload"></a><span data-ttu-id="36e75-162">Carga de notificaciones</span><span class="sxs-lookup"><span data-stu-id="36e75-162">Notification payload</span></span>
+<span data-ttu-id="36e75-p107">Cuando el recurso suscrito cambia, la herramienta de webhooks envía una notificación a su dirección URL de notificación con la siguiente carga.  El extremo de notificación debe enviar una respuesta 200 o 204 sin cuerpo de respuesta en menos de 30 segundos o se intentará volver a enviar la notificación en intervalos que aumentan de manera exponencial.  Los servicios que tardan constantemente 30 segundos o más pueden limitarse y recibir un conjunto de notificaciones más escaso.</span><span class="sxs-lookup"><span data-stu-id="36e75-p107">When the subscribed resource changes, the webhooks facility sends a notification to your notification URL with the following payload.  The notification endpoint must send a response of 200 or 204 with no response body within 30 seconds otherwise the notification attempt will be retried at exponentially increasing intervals.  Services that consistently take 30 seconds or more may be throttled and receive a sparser notification set.</span></span>
+
+<span data-ttu-id="36e75-166">Los servicios también pueden devolver una respuesta 422 desde una notificación, en cuyo caso la suscripción se eliminará automáticamente y la secuencia de notificaciones se detendrá.</span><span class="sxs-lookup"><span data-stu-id="36e75-166">Services may also return a 422 response from a notification, in which case the subscription will be automatically deleted and the stream of notifications will come to a halt.</span></span>
+
+<span data-ttu-id="36e75-167">En función del recurso suscrito, un campo resourceData adicional puede proporcionar más información.</span><span class="sxs-lookup"><span data-stu-id="36e75-167">Depending on the subscribed resource, an additional resourceData field may provide additional information.</span></span>
 
 ```http
 {
@@ -19,7 +121,7 @@
    ]
 }
 ```
-Al recibir notificaciones de suscripciones de unidad, el campo resourceData será NULL y se deberá llamar a la API de [delta](item_delta.md) para determinar los cambios que han ocurrido. Aquí tiene un ejemplo de notificación de unidad:
+<span data-ttu-id="36e75-p108">Al recibir notificaciones de suscripciones de unidad, el campo resourceData será NULL y se deberá llamar a la API de [delta](item_delta.md) para determinar los cambios que han ocurrido. Aquí tiene un ejemplo de notificación de unidad:</span><span class="sxs-lookup"><span data-stu-id="36e75-p108">When receiving notifications from Drive subscriptions the resourceData will be null and the [delta](item_delta.md) API should be called to determine the changes that have occured. Here is an example of a Drive notification:</span></span>
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",
