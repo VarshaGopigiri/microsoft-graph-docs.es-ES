@@ -1,4 +1,19 @@
-<span data-ttu-id="52bbb-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="52bbb-p101">Bearer {token}. Required.</span></span>  | {token} de portador. Obligatorio. |
+# <a name="add-directory-role-member"></a><span data-ttu-id="52bbb-101">Add directory role member</span><span class="sxs-lookup"><span data-stu-id="52bbb-101">Add directory role member</span></span>
+
+<span data-ttu-id="52bbb-102">Use esta API para crear un miembro de rol de directorio.</span><span class="sxs-lookup"><span data-stu-id="52bbb-102">Use this API to create a new directory role member.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="52bbb-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="52bbb-103">Prerequisites</span></span>
+<span data-ttu-id="52bbb-104">Se requiere el siguiente **ámbito** para ejecutar esta API: *Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="52bbb-104">The following **scope** is required to execute this API: *Directory.AccessAsUser.All*</span></span>
+## <a name="http-request"></a><span data-ttu-id="52bbb-105">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="52bbb-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryRoles/{id}/members/$ref
+
+```
+## <a name="request-headers"></a><span data-ttu-id="52bbb-106">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="52bbb-106">Request headers</span></span>
+| <span data-ttu-id="52bbb-107">Nombre</span><span class="sxs-lookup"><span data-stu-id="52bbb-107">Name</span></span>       | <span data-ttu-id="52bbb-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="52bbb-108">Type</span></span> | <span data-ttu-id="52bbb-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="52bbb-109">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="52bbb-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="52bbb-110">Authorization</span></span>  | <span data-ttu-id="52bbb-111">string</span><span class="sxs-lookup"><span data-stu-id="52bbb-111">string</span></span>  | <span data-ttu-id="52bbb-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="52bbb-p101">Bearer {token}. Required.</span></span> |
 | <span data-ttu-id="52bbb-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="52bbb-114">Content-Type</span></span>  | <span data-ttu-id="52bbb-115">application/json</span><span class="sxs-lookup"><span data-stu-id="52bbb-115">application/json</span></span>  |
 
 ## <a name="request-body"></a><span data-ttu-id="52bbb-116">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="52bbb-116">Request body</span></span>

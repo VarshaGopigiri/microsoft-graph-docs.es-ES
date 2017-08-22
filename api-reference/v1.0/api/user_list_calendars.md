@@ -1,5 +1,55 @@
+# <a name="list-calendars"></a><span data-ttu-id="09bf9-101">List calendars</span><span class="sxs-lookup"><span data-stu-id="09bf9-101">List calendars</span></span>
+
+<span data-ttu-id="09bf9-102">Obtiene todos los calendarios del usuario (propiedad de navegación `/calendars`), los calendarios del grupo de calendarios predeterminado o de un grupo de calendarios específico.</span><span class="sxs-lookup"><span data-stu-id="09bf9-102">Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group.</span></span> 
+## <a name="prerequisites"></a><span data-ttu-id="09bf9-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="09bf9-103">Prerequisites</span></span>
+<span data-ttu-id="09bf9-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.Read; Calendars.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="09bf9-104">One of the following scopes is required to execute this API: Calendars.Read; Calendars.ReadWrite</span></span>
+## <a name="http-request"></a><span data-ttu-id="09bf9-105">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="09bf9-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+
+<span data-ttu-id="09bf9-106">Todos los calendarios del usuario.</span><span class="sxs-lookup"><span data-stu-id="09bf9-106">All the user's calendars.</span></span>
+```http
+GET /me/calendars
+GET /users/{id | userPrincipalName}/calendars
+```
+
+<span data-ttu-id="09bf9-107">Calendarios del usuario en el [calendarGroup](../resources/calendarGroup.md) predeterminado.</span><span class="sxs-lookup"><span data-stu-id="09bf9-107">The user's calendars in the default [calendarGroup](../resources/calendarGroup.md).</span></span>
+```http
+GET /me/calendargroups/{calendar_group_id}/calendars
+GET /users/{id | userPrincipalName}/calendarGroup/calendars
+```
+
+<span data-ttu-id="09bf9-108">Calendarios del usuario en un [calendarGroup](../resources/calendarGroup.md) específico.</span><span class="sxs-lookup"><span data-stu-id="09bf9-108">The user's calendars in a specific [calendarGroup](../resources/calendarGroup.md).</span></span>
+```http
+GET /me/calendarGroups/{calendar_group_id}/calendars
+GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="09bf9-109">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="09bf9-109">Optional query parameters</span></span>
+<span data-ttu-id="09bf9-110">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="09bf9-110">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="09bf9-111">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="09bf9-111">Request headers</span></span>
+| <span data-ttu-id="09bf9-112">Encabezado</span><span class="sxs-lookup"><span data-stu-id="09bf9-112">Header</span></span>       | <span data-ttu-id="09bf9-113">Valor</span><span class="sxs-lookup"><span data-stu-id="09bf9-113">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="09bf9-114">Authorization</span><span class="sxs-lookup"><span data-stu-id="09bf9-114">Authorization</span></span>  | <span data-ttu-id="09bf9-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="09bf9-p101">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="09bf9-117">Content-Type</span><span class="sxs-lookup"><span data-stu-id="09bf9-117">Content-Type</span></span>   | <span data-ttu-id="09bf9-118">application/json</span><span class="sxs-lookup"><span data-stu-id="09bf9-118">application/json</span></span> | 
+
+## <a name="request-body"></a><span data-ttu-id="09bf9-119">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="09bf9-119">Request body</span></span>
+<span data-ttu-id="09bf9-120">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="09bf9-120">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="09bf9-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="09bf9-121">Response</span></span>
+
+<span data-ttu-id="09bf9-122">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [Calendar](../resources/calendar.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="09bf9-122">If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="09bf9-123">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="09bf9-123">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="09bf9-124">Solicitud</span><span class="sxs-lookup"><span data-stu-id="09bf9-124">Request</span></span>
+<span data-ttu-id="09bf9-125">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="09bf9-125">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_calendars"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/calendars
+```
+##### <a name="response"></a><span data-ttu-id="09bf9-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="09bf9-126">Response</span></span>
 <span data-ttu-id="09bf9-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="09bf9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

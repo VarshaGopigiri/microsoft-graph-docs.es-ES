@@ -1,6 +1,35 @@
-<span data-ttu-id="6dde0-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6dde0-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="range-merge"></a><span data-ttu-id="6dde0-101">Range: merge</span><span class="sxs-lookup"><span data-stu-id="6dde0-101">Range: merge</span></span>
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
+<span data-ttu-id="6dde0-102">Combina las celdas del rango en una región de la hoja de cálculo.</span><span class="sxs-lookup"><span data-stu-id="6dde0-102">Merge the range cells into one region in the worksheet.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6dde0-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="6dde0-103">Prerequisites</span></span>
+<span data-ttu-id="6dde0-104">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="6dde0-104">The following **scopes** are required to execute this API:</span></span> 
+
+    * <span data-ttu-id="6dde0-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6dde0-105">Files.ReadWrite</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="6dde0-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6dde0-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/names(<name>)/range/merge
+POST /workbook/worksheets/{id|name}/range(<address>)/merge
+POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
+
+```
+## <a name="request-headers"></a><span data-ttu-id="6dde0-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6dde0-107">Request headers</span></span>
+| <span data-ttu-id="6dde0-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="6dde0-108">Name</span></span>       | <span data-ttu-id="6dde0-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="6dde0-109">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="6dde0-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="6dde0-110">Authorization</span></span>  | <span data-ttu-id="6dde0-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="6dde0-p101">Bearer {token}. Required.</span></span> |
+
+
+## <a name="request-body"></a><span data-ttu-id="6dde0-113">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6dde0-113">Request body</span></span>
+<span data-ttu-id="6dde0-114">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="6dde0-114">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="6dde0-115">Parámetro</span><span class="sxs-lookup"><span data-stu-id="6dde0-115">Parameter</span></span>    | <span data-ttu-id="6dde0-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="6dde0-116">Type</span></span>   |<span data-ttu-id="6dde0-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="6dde0-117">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="6dde0-118">across</span><span class="sxs-lookup"><span data-stu-id="6dde0-118">across</span></span>|<span data-ttu-id="6dde0-119">boolean</span><span class="sxs-lookup"><span data-stu-id="6dde0-119">boolean</span></span>|<span data-ttu-id="6dde0-p102">Opcional. Verdadero para que se combinen las celdas de cada fila del rango especificado como celdas combinadas distintas. El valor predeterminado es falso.</span><span class="sxs-lookup"><span data-stu-id="6dde0-p102">Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="6dde0-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6dde0-123">Response</span></span>
+
+<span data-ttu-id="6dde0-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6dde0-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
 ## <a name="example"></a><span data-ttu-id="6dde0-126">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6dde0-126">Example</span></span>
 <span data-ttu-id="6dde0-127">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="6dde0-127">Here is an example of how to call this API.</span></span>

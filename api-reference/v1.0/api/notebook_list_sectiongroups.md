@@ -1,5 +1,50 @@
+# <a name="list-sectiongroups"></a><span data-ttu-id="88799-101">Enumerar sectionGroups</span><span class="sxs-lookup"><span data-stu-id="88799-101">List sectionGroups</span></span>
+
+<span data-ttu-id="88799-102">Recupere una lista de [grupos de sección](../resources/sectiongroup.md) desde el bloc de notas especificado.</span><span class="sxs-lookup"><span data-stu-id="88799-102">Retrieve a list of [section groups](../resources/sectiongroup.md) from the specified notebook.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="88799-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="88799-103">Prerequisites</span></span>
+<span data-ttu-id="88799-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="88799-104">One of the following **scopes** is required to execute this API:</span></span>  
+
+<span data-ttu-id="88799-105">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88799-105">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="88799-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="88799-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onenote/notebooks/{id}/sectionGroups
+GET /users/{id | userPrincipalName}/onenote/notebooks/{id}/sectionGroups
+GET /groups/{id}/onenote/notebooks/{id}/sectionGroups
+GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="88799-107">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="88799-107">Optional query parameters</span></span>
+<span data-ttu-id="88799-108">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="88799-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+<span data-ttu-id="88799-109">El criterio de ordenación predeterminado es `name asc`.</span><span class="sxs-lookup"><span data-stu-id="88799-109">The default sort order is `name asc`.</span></span>
+
+<span data-ttu-id="88799-p101">La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades `id`, `displayName` y `self`. Los valores válidos de `expand` de los grupos de secciones son `sections`, `sectionGroups`, `parentNotebook` y `parentSectionGroup`.</span><span class="sxs-lookup"><span data-stu-id="88799-p101">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for section groups are `sections`, `sectionGroups`, `parentNotebook`, and `parentSectionGroup`.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="88799-112">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="88799-112">Request headers</span></span>
+| <span data-ttu-id="88799-113">Nombre</span><span class="sxs-lookup"><span data-stu-id="88799-113">Name</span></span>       | <span data-ttu-id="88799-114">Tipo</span><span class="sxs-lookup"><span data-stu-id="88799-114">Type</span></span> | <span data-ttu-id="88799-115">Descripción</span><span class="sxs-lookup"><span data-stu-id="88799-115">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="88799-116">Authorization</span><span class="sxs-lookup"><span data-stu-id="88799-116">Authorization</span></span>  | <span data-ttu-id="88799-117">string</span><span class="sxs-lookup"><span data-stu-id="88799-117">string</span></span>  | <span data-ttu-id="88799-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="88799-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="88799-120">Aceptar</span><span class="sxs-lookup"><span data-stu-id="88799-120">Accept</span></span> | <span data-ttu-id="88799-121">string</span><span class="sxs-lookup"><span data-stu-id="88799-121">string</span></span> | `application/json` |  
+
+## <a name="request-body"></a><span data-ttu-id="88799-122">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="88799-122">Request body</span></span>
+<span data-ttu-id="88799-123">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="88799-123">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="88799-124">Respuesta</span><span class="sxs-lookup"><span data-stu-id="88799-124">Response</span></span>
+
+<span data-ttu-id="88799-125">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [sectionGroup](../resources/sectiongroup.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="88799-125">If successful, this method returns a `200 OK` response code and collection of [sectionGroup](../resources/sectiongroup.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="88799-126">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="88799-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="88799-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="88799-127">Request</span></span>
+<span data-ttu-id="88799-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="88799-128">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_sectiongroups"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
+```
+##### <a name="response"></a><span data-ttu-id="88799-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="88799-129">Response</span></span>
 <span data-ttu-id="88799-p103">Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="88799-p103">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,5 +1,24 @@
+# <a name="update-photo"></a><span data-ttu-id="e9341-101">Update photo</span><span class="sxs-lookup"><span data-stu-id="e9341-101">Update photo</span></span>
+
+<span data-ttu-id="e9341-102">Actualiza las propiedades del objeto photo.</span><span class="sxs-lookup"><span data-stu-id="e9341-102">Update the properties of photo object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e9341-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="e9341-103">Prerequisites</span></span>
+<span data-ttu-id="e9341-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="e9341-104">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="http-request"></a><span data-ttu-id="e9341-105">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="e9341-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /users/{id | userPrincipalName}/photo
+PATCH /groups/{id}/photo
+PATCH /drive/root/createdByUser/photo
+```
+
+## <a name="request-headers"></a><span data-ttu-id="e9341-106">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="e9341-106">Request headers</span></span>
+| <span data-ttu-id="e9341-107">Nombre</span><span class="sxs-lookup"><span data-stu-id="e9341-107">Name</span></span>       | <span data-ttu-id="e9341-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="e9341-108">Type</span></span> | <span data-ttu-id="e9341-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="e9341-109">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="e9341-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="e9341-110">Authorization</span></span>  | <span data-ttu-id="e9341-111">string</span><span class="sxs-lookup"><span data-stu-id="e9341-111">string</span></span>  | <span data-ttu-id="e9341-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="e9341-p101">Bearer {token}. Required.</span></span> |
+
+
+## <a name="request-body"></a><span data-ttu-id="e9341-114">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="e9341-114">Request body</span></span>
 <span data-ttu-id="e9341-p102">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="e9341-p102">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
-En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | <span data-ttu-id="e9341-118">Propiedad</span><span class="sxs-lookup"><span data-stu-id="e9341-118">Property</span></span>     | <span data-ttu-id="e9341-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="e9341-119">Type</span></span>   |<span data-ttu-id="e9341-120">Descripción</span><span class="sxs-lookup"><span data-stu-id="e9341-120">Description</span></span>|
 |:---------------|:--------|:----------|

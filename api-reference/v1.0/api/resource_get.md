@@ -1,4 +1,24 @@
-<span data-ttu-id="9c161-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9c161-p101">Bearer {token}. Required.</span></span>  | {token} de portador. Obligatorio. |
+# <a name="get-resource"></a><span data-ttu-id="9c161-101">Obtener recurso</span><span class="sxs-lookup"><span data-stu-id="9c161-101">Get resource</span></span>
+
+<span data-ttu-id="9c161-102">Recupere los datos binarios de un objeto [resource](../resources/resource.md) de un archivo o una imagen.</span><span class="sxs-lookup"><span data-stu-id="9c161-102">Retrieve the binary data of a file or image [resource](../resources/resource.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9c161-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="9c161-103">Prerequisites</span></span>
+<span data-ttu-id="9c161-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="9c161-104">One of the following **scopes** is required to execute this API:</span></span>  
+
+<span data-ttu-id="9c161-105">Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c161-105">Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="9c161-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9c161-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onenote/resources/{id}/content
+GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
+GET /groups/{id}/onenote/resources/{id}/content
+GET /sites/{id}/onenote/resources/{id}/content
+```
+
+## <a name="request-headers"></a><span data-ttu-id="9c161-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9c161-107">Request headers</span></span>
+| <span data-ttu-id="9c161-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="9c161-108">Name</span></span>       | <span data-ttu-id="9c161-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="9c161-109">Type</span></span> | <span data-ttu-id="9c161-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="9c161-110">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="9c161-111">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c161-111">Authorization</span></span>  | <span data-ttu-id="9c161-112">string</span><span class="sxs-lookup"><span data-stu-id="9c161-112">string</span></span>  | <span data-ttu-id="9c161-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9c161-p101">Bearer {token}. Required.</span></span> |
 
 ## <a name="request-body"></a><span data-ttu-id="9c161-115">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9c161-115">Request body</span></span>
 <span data-ttu-id="9c161-116">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="9c161-116">Do not supply a request body for this method.</span></span>

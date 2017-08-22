@@ -1,5 +1,51 @@
+# <a name="user-reminderview"></a><span data-ttu-id="a1bf0-101">user: reminderView</span><span class="sxs-lookup"><span data-stu-id="a1bf0-101">user: reminderView</span></span>
+<span data-ttu-id="a1bf0-102">Devolver una lista de los avisos de calendario entre las horas de inicio y finalización especificadas.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-102">Return a list of calendar reminders within the specified start and end times.</span></span> 
+
+## <a name="prerequisites"></a><span data-ttu-id="a1bf0-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="a1bf0-103">Prerequisites</span></span>
+<span data-ttu-id="a1bf0-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.Read; Calendars.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="a1bf0-104">One of the following scopes is required to execute this API: Calendars.Read; Calendars.ReadWrite</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1bf0-105">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="a1bf0-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+```
+
+## <a name="function-parameters"></a><span data-ttu-id="a1bf0-106">Parámetros de función</span><span class="sxs-lookup"><span data-stu-id="a1bf0-106">Function Parameters</span></span>
+<span data-ttu-id="a1bf0-107">En la dirección URL de la solicitud, proporcione los siguientes parámetros de función con valores.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-107">In the request URL, provide the following function parameters with values.</span></span>
+
+| <span data-ttu-id="a1bf0-108">Parámetro</span><span class="sxs-lookup"><span data-stu-id="a1bf0-108">Parameter</span></span>    | <span data-ttu-id="a1bf0-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="a1bf0-109">Type</span></span>   |<span data-ttu-id="a1bf0-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="a1bf0-110">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="a1bf0-111">startDateTime</span><span class="sxs-lookup"><span data-stu-id="a1bf0-111">startDateTime</span></span>|<span data-ttu-id="a1bf0-112">String</span><span class="sxs-lookup"><span data-stu-id="a1bf0-112">String</span></span>|<span data-ttu-id="a1bf0-p101">Fecha y hora de inicio del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T19:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="a1bf0-p101">The start date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="a1bf0-115">endDateTime</span><span class="sxs-lookup"><span data-stu-id="a1bf0-115">endDateTime</span></span>|<span data-ttu-id="a1bf0-116">String</span><span class="sxs-lookup"><span data-stu-id="a1bf0-116">String</span></span>|<span data-ttu-id="a1bf0-p102">Fecha y hora de finalización del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T20:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="a1bf0-p102">The end date and time of the event for which the reminder is set up. The value is represented in ISO 8601 format, for example, "2015-11-08T20:00:00.0000000".</span></span>|
+
+
+## <a name="request-headers"></a><span data-ttu-id="a1bf0-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="a1bf0-119">Request headers</span></span>
+| <span data-ttu-id="a1bf0-120">Encabezado</span><span class="sxs-lookup"><span data-stu-id="a1bf0-120">Header</span></span>       | <span data-ttu-id="a1bf0-121">Valor</span><span class="sxs-lookup"><span data-stu-id="a1bf0-121">Value</span></span>|
+|:-----------|:------|
+| <span data-ttu-id="a1bf0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a1bf0-122">Authorization</span></span>  | <span data-ttu-id="a1bf0-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a1bf0-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a1bf0-125">Content-Type</span></span>   | <span data-ttu-id="a1bf0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a1bf0-126">application/json</span></span> |
+| <span data-ttu-id="a1bf0-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="a1bf0-127">Prefer</span></span> | <span data-ttu-id="a1bf0-p104">{Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-p104">{Time-zone}. Optional, UTC assumed if absent.</span></span>| 
+
+## <a name="request-body"></a><span data-ttu-id="a1bf0-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="a1bf0-130">Request body</span></span>
+<span data-ttu-id="a1bf0-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-131">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="a1bf0-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a1bf0-132">Response</span></span>
+
+<span data-ttu-id="a1bf0-133">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto de colección [reminder](../resources/reminder.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-133">If successful, this method returns `200, OK` response code and [reminder](../resources/reminder.md) collection object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="a1bf0-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a1bf0-134">Example</span></span>
+<span data-ttu-id="a1bf0-135">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-135">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a1bf0-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a1bf0-136">Request</span></span>
+<span data-ttu-id="a1bf0-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-137">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "user_reminderview"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
+```
+
+##### <a name="response"></a><span data-ttu-id="a1bf0-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a1bf0-138">Response</span></span>
 <span data-ttu-id="a1bf0-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="a1bf0-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

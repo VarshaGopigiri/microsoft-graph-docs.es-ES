@@ -1,5 +1,40 @@
+# <a name="list-registereddevices"></a><span data-ttu-id="dcdd5-101">List registeredDevices</span><span class="sxs-lookup"><span data-stu-id="dcdd5-101">List registeredDevices</span></span>
+
+<span data-ttu-id="dcdd5-102">Obtiene la lista de dispositivos registrados del usuario.</span><span class="sxs-lookup"><span data-stu-id="dcdd5-102">Get the list of user's registered devices.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="dcdd5-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="dcdd5-103">Prerequisites</span></span>
+<span data-ttu-id="dcdd5-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="dcdd5-104">One of the following **scopes** is required to execute this API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="dcdd5-105">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="dcdd5-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id | userPrincipalName}/registeredDevices
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="dcdd5-106">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="dcdd5-106">Optional query parameters</span></span>
+<span data-ttu-id="dcdd5-107">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="dcdd5-107">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dcdd5-108">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="dcdd5-108">Request headers</span></span>
+| <span data-ttu-id="dcdd5-109">Encabezado</span><span class="sxs-lookup"><span data-stu-id="dcdd5-109">Header</span></span>       | <span data-ttu-id="dcdd5-110">Valor</span><span class="sxs-lookup"><span data-stu-id="dcdd5-110">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="dcdd5-111">Authorization</span><span class="sxs-lookup"><span data-stu-id="dcdd5-111">Authorization</span></span>  | <span data-ttu-id="dcdd5-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="dcdd5-p101">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="dcdd5-114">Aceptar</span><span class="sxs-lookup"><span data-stu-id="dcdd5-114">Accept</span></span>  | <span data-ttu-id="dcdd5-115">application/json</span><span class="sxs-lookup"><span data-stu-id="dcdd5-115">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="dcdd5-116">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="dcdd5-116">Request body</span></span>
+<span data-ttu-id="dcdd5-117">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="dcdd5-117">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="dcdd5-118">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dcdd5-118">Response</span></span>
+
+<span data-ttu-id="dcdd5-119">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [directoryObject](../resources/directoryobject.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="dcdd5-119">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="dcdd5-120">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="dcdd5-120">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dcdd5-121">Solicitud</span><span class="sxs-lookup"><span data-stu-id="dcdd5-121">Request</span></span>
+<span data-ttu-id="dcdd5-122">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="dcdd5-122">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_registereddevices"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/registeredDevices
+```
+##### <a name="response"></a><span data-ttu-id="dcdd5-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dcdd5-123">Response</span></span>
 <span data-ttu-id="dcdd5-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="dcdd5-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

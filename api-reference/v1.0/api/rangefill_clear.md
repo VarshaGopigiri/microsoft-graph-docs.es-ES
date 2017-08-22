@@ -1,6 +1,30 @@
-<span data-ttu-id="4ac0a-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4ac0a-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="rangefill-clear"></a><span data-ttu-id="4ac0a-101">RangeFill: clear</span><span class="sxs-lookup"><span data-stu-id="4ac0a-101">RangeFill: clear</span></span>
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
+<span data-ttu-id="4ac0a-102">Restablece el fondo del rango.</span><span class="sxs-lookup"><span data-stu-id="4ac0a-102">Resets the range background.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4ac0a-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="4ac0a-103">Prerequisites</span></span>
+<span data-ttu-id="4ac0a-104">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="4ac0a-104">The following **scopes** are required to execute this API:</span></span> 
+
+    * <span data-ttu-id="4ac0a-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4ac0a-105">Files.ReadWrite</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="4ac0a-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4ac0a-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/names(<name>)/range/format/fill/clear
+POST /workbook/worksheets/{id|name}/range(<address>)/format/fill/clear
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
+
+```
+## <a name="request-headers"></a><span data-ttu-id="4ac0a-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4ac0a-107">Request headers</span></span>
+| <span data-ttu-id="4ac0a-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="4ac0a-108">Name</span></span>       | <span data-ttu-id="4ac0a-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="4ac0a-109">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="4ac0a-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ac0a-110">Authorization</span></span>  | <span data-ttu-id="4ac0a-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="4ac0a-p101">Bearer {token}. Required.</span></span> |
+
+
+## <a name="request-body"></a><span data-ttu-id="4ac0a-113">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4ac0a-113">Request body</span></span>
+
+## <a name="response"></a><span data-ttu-id="4ac0a-114">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4ac0a-114">Response</span></span>
+
+<span data-ttu-id="4ac0a-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4ac0a-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
 ## <a name="example"></a><span data-ttu-id="4ac0a-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4ac0a-117">Example</span></span>
 <span data-ttu-id="4ac0a-118">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="4ac0a-118">Here is an example of how to call this API.</span></span>

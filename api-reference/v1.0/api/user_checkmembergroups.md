@@ -1,5 +1,54 @@
+# <a name="checkmembergroups"></a><span data-ttu-id="a1256-101">checkMemberGroups</span><span class="sxs-lookup"><span data-stu-id="a1256-101">checkMemberGroups</span></span>
+<span data-ttu-id="a1256-p101">Comprueba la pertenencia en la lista especificada de grupos. Devuelve de la lista los grupos en los que el grupo especificado tenga una pertenencia directa o transitiva.</span><span class="sxs-lookup"><span data-stu-id="a1256-p101">Check for membership in the specified list of groups. Returns from the list those groups of which the user has a direct or transitive membership.</span></span> 
+
+<span data-ttu-id="a1256-p102">Puede comprobarse un máximo de 20 grupos por solicitud. Esta función es compatible con Office 365 y otros tipos de grupos aprovisionados en Azure AD. Tenga en cuenta que los grupos de Office 365 no pueden contener grupos. Por tanto, la pertenencia a un grupo de Office 365 es siempre directa.</span><span class="sxs-lookup"><span data-stu-id="a1256-p102">You can check up to a maximum of 20 groups per request. This function supports Office 365 and other types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.</span></span> 
+
+## <a name="prerequisites"></a><span data-ttu-id="a1256-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="a1256-108">Prerequisites</span></span>
+<span data-ttu-id="a1256-109">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="a1256-109">One of the following **scopes** is required to execute this API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*</span></span>
+## <a name="http-request"></a><span data-ttu-id="a1256-110">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="a1256-110">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{id | userPrincipalName}/checkMemberGroups
+```
+## <a name="request-headers"></a><span data-ttu-id="a1256-111">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="a1256-111">Request headers</span></span>
+| <span data-ttu-id="a1256-112">Encabezado</span><span class="sxs-lookup"><span data-stu-id="a1256-112">Header</span></span>       | <span data-ttu-id="a1256-113">Valor</span><span class="sxs-lookup"><span data-stu-id="a1256-113">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="a1256-114">Authorization</span><span class="sxs-lookup"><span data-stu-id="a1256-114">Authorization</span></span>  | <span data-ttu-id="a1256-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="a1256-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a1256-117">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a1256-117">Content-Type</span></span>  | <span data-ttu-id="a1256-118">application/json</span><span class="sxs-lookup"><span data-stu-id="a1256-118">application/json</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="a1256-119">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="a1256-119">Request body</span></span>
+<span data-ttu-id="a1256-120">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="a1256-120">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="a1256-121">Parámetro</span><span class="sxs-lookup"><span data-stu-id="a1256-121">Parameter</span></span>    | <span data-ttu-id="a1256-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="a1256-122">Type</span></span>   |<span data-ttu-id="a1256-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="a1256-123">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="a1256-124">groupIds</span><span class="sxs-lookup"><span data-stu-id="a1256-124">groupIds</span></span>|<span data-ttu-id="a1256-125">String</span><span class="sxs-lookup"><span data-stu-id="a1256-125">String</span></span>|<span data-ttu-id="a1256-126">Matriz de identificadores de grupo</span><span class="sxs-lookup"><span data-stu-id="a1256-126">An array of group ids</span></span>|
+
+## <a name="response"></a><span data-ttu-id="a1256-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a1256-127">Response</span></span>
+
+<span data-ttu-id="a1256-128">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto de colección String en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a1256-128">If successful, this method returns `200, OK` response code and String collection object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="a1256-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a1256-129">Example</span></span>
+<span data-ttu-id="a1256-130">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="a1256-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a1256-131">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a1256-131">Request</span></span>
+<span data-ttu-id="a1256-132">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a1256-132">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "user_checkmembergroups"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+Content-type: application/json
+Content-length: 44
+
+{
+  "groupIds": [
+    "groupIds-value"
+  ]
+}
+```
+
+##### <a name="response"></a><span data-ttu-id="a1256-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a1256-133">Response</span></span>
 <span data-ttu-id="a1256-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="a1256-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

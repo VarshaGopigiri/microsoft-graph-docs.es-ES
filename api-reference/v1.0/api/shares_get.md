@@ -1,6 +1,71 @@
-<span data-ttu-id="e37d7-p101">Mientras que [**SharedDriveItem**](../resources/shareddriveitem.md) contiene alguna información útil, la mayoría de las aplicaciones querrán acceder directamente al objeto [DriveItem](../resources/driveitem.md) compartido. El recurso **SharedDriveItem** incluye un **root** y relaciones de **items** que pueden acceder al contenido del ámbito del elemento compartido.</span><span class="sxs-lookup"><span data-stu-id="e37d7-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+# <a name="accessing-shared-driveitems"></a><span data-ttu-id="e37d7-101">Acceder a objetos DriveItem compartidos</span><span class="sxs-lookup"><span data-stu-id="e37d7-101">Accessing shared DriveItems</span></span>
 
-Mientras que [**SharedDriveItem**](../resources/shareddriveitem.md) contiene alguna información útil, la mayoría de las aplicaciones querrán acceder directamente al objeto [DriveItem](../resources/driveitem.md) compartido. El recurso **SharedDriveItem** incluye un **root** y relaciones de **items** que pueden acceder al contenido del ámbito del elemento compartido.
+<span data-ttu-id="e37d7-102">Acceda a un objeto [DriveItem](../resources/driveitem.md) compartido o a una colección de elementos compartidos mediante el uso de un **shareId** o una dirección URL para compartir.</span><span class="sxs-lookup"><span data-stu-id="e37d7-102">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
+
+<span data-ttu-id="e37d7-103">Para usar una dirección URL para compartir con esta API, la aplicación debe [transformar la dirección URL en un token para compartir](#transform-a-sharing-url).</span><span class="sxs-lookup"><span data-stu-id="e37d7-103">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#transform-a-sharing-url).</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="e37d7-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="e37d7-104">Prerequisites</span></span>
+
+<span data-ttu-id="e37d7-105">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="e37d7-105">One of the following **scopes** is required to execute this API:</span></span>
+
+* <span data-ttu-id="e37d7-106">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e37d7-106">Files.ReadWrite</span></span>
+* <span data-ttu-id="e37d7-107">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e37d7-107">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="e37d7-108">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e37d7-108">Sites.ReadWrite.All</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="e37d7-109">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="e37d7-109">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /shares/{sharingIdOrUrl}
+```
+
+## <a name="request-body"></a><span data-ttu-id="e37d7-110">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="e37d7-110">Request body</span></span>
+<span data-ttu-id="e37d7-111">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="e37d7-111">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="e37d7-112">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e37d7-112">Response</span></span>
+
+<span data-ttu-id="e37d7-113">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un recurso [sharedDriveItem](../resources/shareddriveitem.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e37d7-113">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="e37d7-114">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e37d7-114">Example</span></span>
+
+##### <a name="request"></a><span data-ttu-id="e37d7-115">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e37d7-115">Request</span></span>
+
+<span data-ttu-id="e37d7-116">Este es un ejemplo de la solicitud para recuperar un elemento compartido:</span><span class="sxs-lookup"><span data-stu-id="e37d7-116">Here is an example of the request to retrieve a shared item:</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_shares_by_url"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
+```
+##### <a name="response"></a><span data-ttu-id="e37d7-117">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e37d7-117">Response</span></span>
+
+<span data-ttu-id="e37d7-118">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e37d7-118">Here is an example of the response.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharedDriveItem"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "B64397C8-07AE-43E4-920E-32BFB4331A5B",
+  "name": "contoso project.docx",
+  "owner": {
+    "user": {
+      "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
+      "displayName": "Ryan Gregg"
+    }
+  }
+}
+```
+
+## <a name="access-the-shared-item-directly"></a><span data-ttu-id="e37d7-119">Acceder directamente al elemento compartido</span><span class="sxs-lookup"><span data-stu-id="e37d7-119">Access the shared item directly</span></span>
+
+<span data-ttu-id="e37d7-p101">Mientras que [**SharedDriveItem**](../resources/shareddriveitem.md) contiene alguna información útil, la mayoría de las aplicaciones querrán acceder directamente al objeto [DriveItem](../resources/driveitem.md) compartido. El recurso **SharedDriveItem** incluye un **root** y relaciones de **items** que pueden acceder al contenido del ámbito del elemento compartido.</span><span class="sxs-lookup"><span data-stu-id="e37d7-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
 ## <a name="example-single-file"></a><span data-ttu-id="e37d7-122">Ejemplo (archivo único)</span><span class="sxs-lookup"><span data-stu-id="e37d7-122">Example (single file)</span></span>
 
