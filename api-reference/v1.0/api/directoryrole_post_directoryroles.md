@@ -25,8 +25,8 @@ En la tabla siguiente, se muestran las propiedades necesarias al activar un rol 
 |:---------|:---------|:---------|
 |roleTemplateId | string | El identificador de la [directoryRoleTemplate](../resources/directoryroletemplate.md) en que se basa el rol. Es la única propiedad que se puede especificar en la solicitud.|
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [directoryRole](../resources/directoryrole.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

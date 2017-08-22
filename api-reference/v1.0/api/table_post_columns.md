@@ -16,14 +16,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Necesario. |
+| Authorization  | {token} de portador. Obligatorio. |
 
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [TableColumn](../resources/tablecolumn.md).
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [TableColumn](../resources/tablecolumn.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

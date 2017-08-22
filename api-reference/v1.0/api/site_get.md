@@ -49,7 +49,7 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>Ejemplo
 
-### <a name="request"></a>Solicitud
+##### <a name="request"></a>Solicitud
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -57,7 +57,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
-### <a name="response"></a>Respuesta
+##### <a name="response"></a>Respuesta
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

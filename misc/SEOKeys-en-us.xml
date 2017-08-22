@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="Información general" url="/en-us/concepts/overview" SEOKeyword="Información general, API de Microsoft Graph, Información general" SEODescription="Microsoft Graph permite a las aplicaciones acceder al trabajo digital y a los datos de vida digital a través de la nube inteligente de Microsoft. Grandes ventajas para los desarrolladores: Un punto de conexión unificado de la API de Microsoft para obtener acceso a los datos, a la inteligencia y a la información procedente de la nube de Microsoft." />    
   <Item text="Escenarios destacados" url="/en-us/concepts/featured_scenarios"> 

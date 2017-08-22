@@ -13,13 +13,13 @@ POST /groups/{id}/acceptedSenders/$ref
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Authorization  | {token} de portador. Necesario.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione el identificador de un objeto de usuario o grupo.
 
-
 ## <a name="response"></a>Respuesta
+
 Este método devuelve el código de respuesta `204, No Content` y ningún cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

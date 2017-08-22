@@ -7,7 +7,9 @@ También puede usar una actualización para [mover un elemento](item_move.md) a 
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -28,6 +30,7 @@ PATCH /groups/{group-id}/drive/items/{item-id}
 En el cuerpo de la solicitud, proporcione los valores de las propiedades que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento la aplicación no debe incluir propiedades que no hayan cambiado.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el recurso [DriveItem](../resources/driveitem.md) actualizado en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
@@ -46,8 +49,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Esta respuesta se trunca para mejorar la legibilidad.
+##### <a name="response"></a>Respuesta
+
+En el ejemplo siguiente se muestra la respuesta. Esta respuesta se trunca para mejorar la legibilidad.
 
 <!-- {
   "blockType": "response",

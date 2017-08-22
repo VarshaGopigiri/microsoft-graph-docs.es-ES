@@ -19,7 +19,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Tipo de contenido | string | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación. Puede enviarse un cuerpo vacío si no se necesita ninguno.
@@ -29,8 +29,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parám
 |groupId|String|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
 |renameAs|String|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
 
-
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted` y un encabezado `Operation-Location`. Sondee el extremo de Operation-Location para [obtener el estado de la operación de copia](onenoteOperation_get.md).
 
 ## <a name="example"></a>Ejemplo
