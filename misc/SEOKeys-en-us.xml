@@ -2120,11 +2120,9 @@
         <Item text="Configuración de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
           <Item text="Asignar" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="Obtener información general sobre la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get_deviceconfigurationdeviceoverview" />
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="Incluir en una lista el estado del dispositivo de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationdevicestatus" />
-          <Item text="Incluir en una lista la asignación de grupos de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationgroupassignment" />
-          <Item text="Incluir en una lista el estado del usuario de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list_deviceconfigurationuserstatus" />
+
+          <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
         </Item>
         <Item text="Asignación de configuración de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_get" />
@@ -2511,6 +2509,8 @@
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
+          <Item text="acción windowsDefenderScan" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
+          <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
         <Item text="Clasificación del contenido multimedia de Australia" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingaustralia" />
         <Item text="Clasificación del contenido multimedia de Canadá" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingcanada" />
@@ -2549,15 +2549,6 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsdevicemalwarestate_update" />
         </Item>
-        <Item text="Aplicaciones asociadas a Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
-        <Item text="Base de perfil de certificado de Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
-          <Item text="Obtener información general sobre la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
-          <Item text="Incluir en una lista el estado del dispositivo de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
-          <Item text="Incluir en una lista la asignación de grupos de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
-          <Item text="Incluir en una lista el estado del usuario de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
-        </Item>
         <Item text="Resumen de dispositivo de estado de configuración" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_settingstatedevicesummary_get" />
@@ -2579,6 +2570,15 @@
         <Item text="Resumen del estado de la actualización de software" url="/en-us/api-reference/beta/resources/intune_deviceconfig_softwareupdatestatussummary">
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_softwareupdatestatussummary_update" />
+        </Item>
+        <Item text="Aplicaciones asociadas a Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10associatedapps" />
+        <Item text="Base de perfil de certificado de Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10certificateprofilebase">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get" />
+          <Item text="Obtener información general sobre la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_get_deviceconfigurationdeviceoverview" />
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list" />
+          <Item text="Incluir en una lista el estado del dispositivo de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationdevicestatus" />
+          <Item text="Incluir en una lista la asignación de grupos de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationgroupassignment" />
+          <Item text="Incluir en una lista el estado del usuario de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10certificateprofilebase_list_deviceconfigurationuserstatus" />
         </Item>
         <Item text="Directiva de cumplimiento de Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy">
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10compliancepolicy_create" />
@@ -2902,6 +2902,13 @@
           <Item text="Incluir en una lista el estado del usuario de la configuración de dispositivos" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphoneeasemailprofileconfiguration_update" />
         </Item>
+      <Item text="Elemento de control de acceso a datos de privacidad de Windows" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windowsprivacydataaccesscontrolitem">
+        <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_list" />
+        <Item text="Obtener" url="/en-us/api-reference/beta/api/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_get" />
+        <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_create" />
+        <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_delete" />
+        <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsprivacydataaccesscontrolitem_update" />
+      </Item>
         <Item text="Estado de protección de Windows" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsprotectionstate">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsprotectionstate_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta" />
@@ -3880,6 +3887,7 @@
 		  <Item text="Obtener informe de uso del sitio de SharePoint" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="Obtener informe de uso del sitio de SharePoint, API de Microsoft Graph, API de informe" SEODescription="Recuperar los informes de uso del sitio de SharePoint La respuesta será un archivo CSV en una secuencia binaria." />
 		  <Item text="Obtener informe de actividad de Yammer" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Obtener informe de actividad de Yammer, API de Microsoft Graph, API de informe" SEODescription="Recupere los informes de actividad de Yammer. La respuesta será un archivo CSV en una secuencia binaria." />
 		  <Item text="Obtener informe de uso del dispositivo de Yammer" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Obtener informe de uso del dispositivo de Yammer, API de Microsoft Graph, API de informe" SEODescription="Recupere los informes de uso del dispositivo de Yammer. La respuesta será un archivo CSV en una secuencia binaria." />
+		  <Item text="Obtener informe de actividad de grupos de Yammer" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Recuperar el informe de actividad de grupos de Yammer" />
 		</Item>
 	</Item>
     <Item text="Extensiones de esquema" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="API de extensión, API de Microsoft Graph, API de extensión de esquema, extensiones de esquema" SEODescription="API para agregar datos personalizados a los recursos de Microsoft Graph.">
