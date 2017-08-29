@@ -1,11 +1,14 @@
 # <a name="list-attachments"></a>List attachments
 
 Recupera una lista de objetos [attachment](../resources/attachment.md) asociados a una publicación.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Group.Read.All
-* Group.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Group.Read.All, Group.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | Group.Read.All, Group.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

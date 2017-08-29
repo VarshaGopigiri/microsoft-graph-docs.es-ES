@@ -2,11 +2,16 @@
 
 Use esta API para crear una nueva configuración basada en las plantillas disponibles en [groupSettingTemplates](../resources/groupsettingtemplate.md). Esta configuración puede establecerse a nivel de arrendatario o de grupo. La solicitud de creación debe proporcionar [settingValues](../resources/settingvalue.md) para toda la configuración establecida en la plantilla. Para configuraciones específicas de grupos, solo se puede establecer la configuración que indique si los miembros de un grupo pueden invitar a otros usuarios como invitados o no. Esto establecerá este comportamiento una vez que esté disponible de forma general la posibilidad de agregar usuarios como invitados.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.ReadWrite.All* o *Directory.AccessAsUser.All*
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-> Nota: Solo los administradores de inquilinos tienen permiso para realizar operaciones de creación, actualización y eliminación.
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

@@ -4,13 +4,12 @@ La propiedad **assignedPlans** de la entidad [user](user.md) y la entidad [organ
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|Fecha y hora en que se asignó el plan; por ejemplo: 2013-01-02T19:32:30Z. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |capabilityStatus|String|Por ejemplo, "Habilitado".|
 |service|String|Nombre del servicio; por ejemplo, "Exchange".|
 |servicePlanId|Guid|GUID que identifica el plan de servicio.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

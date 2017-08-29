@@ -8,8 +8,15 @@ Si hay una invalidación para un remitente y este cambia su nombre para mostrar,
 
 Si hay una invalidación para un remitente y este cambia su dirección SMTP, la única forma de "actualizar" la invalidación de este remitente es [eliminar](inferenceclassificationoverride_delete.md) la invalidación existente y [crear](inferenceclassification_post_overrides.md) una nueva con la nueva dirección SMTP.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: *Mail.ReadWrite*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Mail.ReadWrite    | 
+|Delegado (cuenta personal de Microsoft) | Mail.ReadWrite    | 
+|Aplicación | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

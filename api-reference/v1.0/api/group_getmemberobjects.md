@@ -1,8 +1,14 @@
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 Devuelve todos los grupos de los que el grupo es miembro. La comprobación es transitiva. Nota: Los grupos no pueden ser miembros de roles de directorio, por lo que no se devolverá ningún rol de directorio.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | Directory.Read.All, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -22,7 +28,6 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |securityEnabledOnly|Boolean| Establecer en **false**. La devolución solo de grupos con la seguridad activada solo es compatible para usuarios.|
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y la colección String en el cuerpo de la respuesta que contiene los identificadores de los grupos de los que el grupo sea miembro.
 
 ## <a name="example"></a>Ejemplo

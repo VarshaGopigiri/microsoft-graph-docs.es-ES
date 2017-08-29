@@ -1,9 +1,16 @@
 # <a name="add-directory-role-member"></a>Add directory role member
 
-Use esta API para crear un miembro de rol de directorio.
+Usa esta API para crear un miembro de rol de directorio.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *Directory.AccessAsUser.All*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | No admitida. |
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

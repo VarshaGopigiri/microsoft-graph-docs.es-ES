@@ -6,10 +6,14 @@ La acción **createLink** creará un nuevo vínculo para compartir si el tipo de
 
 Los recursos DriveItem heredan permisos de sus antecesores.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-  * Files.ReadWrite
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Aplicación | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -140,7 +144,7 @@ Content-Type: application/json
 
 Cuando se utiliza el tipo de vínculo `embed`, la webUrl que se devuelve se puede insertar en un elemento HTML `<iframe>`. Cuando se crea un vínculo para insertar, la propiedad `webHtml` contiene el código HTML de un `<iframe>` para hospedar el contenido.
 
-**Nota:** Los vínculos para insertar solo se admiten en [unidades](../resources/drive.md) donde el **driveType** es `personal`.
+**Nota**: Los vínculos para insertar solo se admiten en [unidades](../resources/drive.md) donde el **driveType** es `personal`.
 
 ## <a name="remarks"></a>Comentarios
 

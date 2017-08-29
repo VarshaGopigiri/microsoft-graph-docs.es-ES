@@ -19,12 +19,16 @@ GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-La opción de consulta `includeIDs=true` se utiliza para [actualizar páginas](../api/page_update.md).
+La opción de consulta `includeIDs=true` se usa para [actualizar páginas](../api/page_update.md).
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:  
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | Notes.Read, Notes.ReadWrite    | 
+|Aplicación | Notes.Read.All, Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

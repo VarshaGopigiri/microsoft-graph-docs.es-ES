@@ -1,8 +1,15 @@
 # <a name="list-attachments"></a>List attachments
 
 Recupera una lista de objetos [attachment](../resources/attachment.md) asociados a un evento.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.Read* 
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Calendars.Read    |
+|Delegado (cuenta personal de Microsoft) | Calendars.Read    |
+|Aplicación | Calendars.Read |
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 Datos adjuntos de un [event](../resources/event.md) en el [calendar](../resources/calendar.md) predeterminado del usuario o del grupo.

@@ -1,11 +1,17 @@
 # <a name="delete-directoryobject"></a>Delete directoryObject
 
-Eliminar un directoryObject.
+Elimina un directoryObject.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: _Directory.AccessAsUser.All_
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-**NOTA:** Los usuarios, grupos y contactos son tipos de objeto de Active Directory. Por tanto, si tiene que eliminar usuarios, puede y debe usarse el siguiente **ámbito**: _User.ReadWrite.All_
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | No admitida. | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -1,12 +1,19 @@
 # <a name="domain-verify"></a>dominio: verify
 
-Valide la propiedad del dominio.
+Valida la propiedad del dominio.
 
 > **Importante:** Solo se aplica a un dominio sin verificar. En el caso de un dominio sin verificar, la propiedad isVerified del [dominio](../resources/domain.md) es falsa.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.Read.All* o *Domain.ReadWrite.All*
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Directory.Read.All    | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | Directory.Read.All, Domain.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 

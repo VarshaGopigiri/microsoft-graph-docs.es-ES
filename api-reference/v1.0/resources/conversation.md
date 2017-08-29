@@ -13,9 +13,8 @@ Una conversación es una colección de [hilos](conversationthread.md) y un hilo 
 |[Enumerar hilos de conversación](../api/conversation_list_threads.md) |Colección [conversationThread](conversationthread.md)| Obtenga todos los hilos de una conversación de grupo.|
 |[Crear hilo de conversación](../api/conversation_post_threads.md) |Colección [conversationThread](conversationthread.md)| Cree un hilo en la conversación especificada.|
 
-
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Indica si alguna de las publicaciones de esta conversación tiene al menos un dato adjunto.|
 |id|String|El identificador único de las conversaciones. Solo lectura.|
@@ -25,10 +24,9 @@ Una conversación es una colección de [hilos](conversationthread.md) y un hilo 
 |uniqueSenders|Colección String|Todos los usuarios que envían un mensaje a esta conversación.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |threads|Colección [conversationThread](conversationthread.md)|Una colección de todos los hilos de la conversación. Una propiedad de navegación. Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

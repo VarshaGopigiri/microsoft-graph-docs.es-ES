@@ -33,7 +33,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |[Obtener publicación con propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | Obtenga una publicación que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|Los contenidos de la publicación. Esta es la propiedad predeterminada. Esta propiedad puede ser null.|
 |categories|Colección String|Las categorías asociadas a la publicación.|
@@ -43,21 +43,20 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |createdDateTime|DateTimeOffset|Especifica cuándo se ha creado la publicación. El tipo DateTimeOffset representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|Se usa en escenarios de acceso delegado. Indica quién ha publicado el mensaje en nombre de otro usuario. Esta es la propiedad predeterminada.|
 |hasAttachments|Boolean|Indica si la publicación tiene al menos un dato adjunto. Esta es la propiedad predeterminada.|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|Especifica cuándo se ha modificado por última vez la publicación. El tipo DateTimeOffset representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |newParticipants|Colección [recipient](recipient.md)|Participantes de la conversación que se han agregado al hilo como parte de esta publicación.|
 |receivedDateTime|DateTimeOffset|Especifica cuándo se ha recibido la publicación. El tipo DateTimeOffset representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|Contiene la dirección del remitente. El valor de Sender se supone que es la dirección del usuario autenticado en el caso de que no se especifique ningún Sender. Esta es la propiedad predeterminada.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attachments|Colección [attachment](attachment.md)| Solo lectura. Admite valores NULL.|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para la publicación. Solo lectura. Admite valores NULL.|
 |inReplyTo|[post](post.md)| Solo lectura.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para la publicación. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para la publicación. Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

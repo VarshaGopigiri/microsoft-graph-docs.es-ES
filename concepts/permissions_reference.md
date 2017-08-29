@@ -421,7 +421,9 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 #### <a name="delegated-permissions"></a>Permisos delegados
 
-Ninguno.
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Member.Read.Hidden_ | Leer todas las pertenencias ocultas | Permite a la aplicación leer las pertenencias a grupos ocultos y unidades administrativas en nombre del usuario que inició sesión, para esos grupos ocultos y unidades administrativas a los que dicho usuario tiene acceso. | Sí |
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
@@ -430,9 +432,16 @@ Ninguno.
 | _Member.Read.Hidden_ | Leer todas las pertenencias ocultas | Permite que la aplicación lea las pertenencias de grupos ocultos y unidades administrativas sin la necesidad de que un usuario haya iniciado sesión. | Sí |
 
 ### <a name="remarks"></a>Comentarios
+_Member.Read.Hidden_ solo es válido en las cuentas profesionales o educativas.
+
 Es posible ocultar la pertenencia a algunos Grupos de Office 365. Esto significa que solo los miembros del grupo pueden ver a los demás miembros. Puede usar esta característica para ayudar a cumplir los reglamentos que exigen que una organización oculte la pertenencia a grupos a usuarios externos (por ejemplo, un Grupo de Office 365 que representa a los alumnos inscritos en una clase).
 
 ### <a name="example-usage"></a>Ejemplos de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _Member.Read.Hidden_: leer los miembros de una unidad administrativa con pertenencia oculta en nombre del usuario que inició sesión (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_: leer los miembros de un grupo con pertenencia oculta en nombre del usuario que inició sesión (`GET /groups/{id}/members`).
 
 #### <a name="application"></a>Aplicación
 

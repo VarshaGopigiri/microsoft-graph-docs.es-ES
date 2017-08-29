@@ -200,7 +200,7 @@ La aplicación llama a Microsoft Graph para obtener información del usuario y p
 1. De forma opcional, edite la dirección de correo electrónico del destinatario y elija el botón **Enviar correo**. Cuando se envíe el correo, se mostrará un mensaje de Operación correcta debajo del botón. 
 
 ## <a name="next-steps"></a>Pasos siguientes
-- Pruebe la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe la API de REST mediante el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Explore el resto de nuestros [ejemplos de Node.js](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) en GitHub.
 
 

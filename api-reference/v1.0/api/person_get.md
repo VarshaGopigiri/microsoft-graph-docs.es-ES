@@ -2,11 +2,18 @@
 
 Recupere las propiedades y las relaciones del objeto [person](../resources/person.md).
 
-Puede obtener esta información a través de la API de contactos. Para obtener ejemplos, vea la sección [Ejemplos](#examples) y el artículo sobre cómo [obtener información relevante sobre los contactos](../../../concepts/people_example.md).
+Puede obtener esta información a través de la API de contactos. Para obtener ejemplos, vea la sección [Ejemplos](#examples) y el artículo sobre cómo [Obtener información relevante sobre los contactos](../../../concepts/people_example.md).
 
-## <a name="prerequisites"></a>Requisitos previos
-Los siguientes **permisos** son necesarios para ejecutar partes de esta API: *People.Read*; *People.Read.All*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
  
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | People.Read, People.Read.All    | 
+|Delegado (cuenta personal de Microsoft) | People.Read    | 
+|Aplicación | People.Read.All | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 

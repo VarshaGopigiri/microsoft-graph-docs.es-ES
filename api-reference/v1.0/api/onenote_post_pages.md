@@ -5,10 +5,14 @@ Cree una página de OneNote en la sección predeterminada del bloc de notas pred
 Para crear una página en una sección diferente del bloc de notas predeterminado, puede utilizar el parámetro de consulta `sectionName`.  Ejemplo: `../onenote/pages?sectionName=My%20section`
 
 La operación `POST /onenote/pages` solo se utiliza para crear páginas en el bloc de notas predeterminado del usuario actual. Si su objetivo son otros blocs de notas, puede [crear páginas en una sección especificada](../api/section_post_pages.md).           
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:  
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.ReadWrite o Notes.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | Notes.Create, Notes.ReadWrite    | 
+|Aplicación | Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

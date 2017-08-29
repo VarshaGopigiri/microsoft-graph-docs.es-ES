@@ -4,15 +4,15 @@ Obtenga el objeto [profilePhoto](../resources/profilephoto.md) especificado o su
 
 Una operación GET busca la foto especificada en el buzón del usuario de Exchange Online.
 
-> **Nota** Esta operación en la versión 1.0 admite solo un buzón de usuario de trabajo o escuela y no uno personal.
+> **Nota** Esta operación en la versión 1.0 admite solo un buzón profesional o educativo del usuario y no uno personal.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-*   Foto de perfil de cualquier usuario del inquilino, incluido el usuario que ha iniciado sesión: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*   Foto de perfil específicamente del usuario que ha iniciado sesión: *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-* Foto de perfil de un **grupo** - *Group.Read.All; Group.ReadWrite.All*
-* Foto de un **contacto** - *Contacts.Read; Contacts.ReadWrite*
+*   Foto de perfil de cualquier usuario del inquilino, incluido el usuario que inició sesión: User.ReadBasic.All; User.Read.All; User.ReadWrite.All
+*   Foto de perfil específicamente del usuario que inició sesión: User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+* Foto de perfil de un **grupo**: Group.Read.All, Group.ReadWrite.All
+* Foto de un **contacto**: Contacts.Read; Contacts.ReadWrite
 
 ## <a name="http-request-to-get-the-photo"></a>Solicitud HTTP para obtener la foto
 <!-- { "blockType": "ignored" } -->
@@ -43,9 +43,9 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Necesario. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 ## <a name="response-for-getting-the-photo"></a>Respuesta para obtener la foto
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y los datos binarios de la foto solicitada.  Si no hay ninguna foto, la operación devuelve `404 Not Found`.

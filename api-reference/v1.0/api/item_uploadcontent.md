@@ -4,13 +4,14 @@ La API de carga simple le permite proporcionar el contenido de un archivo nuevo 
 
 Para cargar archivos grandes, consulte [Upload large files with an upload session](item_createuploadsession.md) (Cargar archivos grandes con una sesión de carga).
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
-
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Aplicación | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

@@ -21,13 +21,13 @@ También los siguientes recursos de grupo:
 
 Consulte el artículo de [información general sobre las propiedades extendidas](../resources/extended-properties-overview.md) para obtener más información sobre cuándo usar las extensiones abiertas o las propiedades extendidas y cómo especificar las propiedades extendidas.
 
-## <a name="prerequisites"></a>Requisitos previos
-Según el recurso que quiera obtener, se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Según el recurso que seleccione, se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-- _Mail.Read_
-- _Calendars.Read_
-- _Contacts.Read_
-- _Group.Read.All_ 
+- Mail.Read
+- Calendars.Read
+- Contacts.Read
+- Group.Read.All 
  
 ## <a name="http-request"></a>Solicitud HTTP
 

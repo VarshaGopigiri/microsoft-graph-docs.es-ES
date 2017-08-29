@@ -1,8 +1,15 @@
 # <a name="assignlicense"></a>assignLicense
-Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar los planes específicos asociados a una suscripción.
+Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar planes específicos asociados a una suscripción.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *User.ReadWrite.All; Directory.ReadWrite.All*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | User.ReadWrite.All, Directory.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | User.ReadWrite.All, Directory.ReadWrite.All | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

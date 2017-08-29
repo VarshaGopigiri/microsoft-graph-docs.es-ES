@@ -5,12 +5,11 @@ Asistente a un evento.
 Derivadas de [attachment](attendeebase.md).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Respuesta del asistente (ninguna, aceptada, rechazada, etc.) para el evento y fecha y hora en que se envió la respuesta.|
 |type|String|Tipo de asistente: `Required`, `Optional`, `Resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Incluye el nombre y la dirección de SMTP del asistente.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

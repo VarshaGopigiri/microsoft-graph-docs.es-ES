@@ -125,7 +125,7 @@ Siempre debe determinar el tamaño del fragmento según las siguientes recomenda
 * La propiedad `nextExpectedRanges` no siempre enumera todos los intervalos que faltan.
 * Cuando las escrituras de fragmento se ejecuten correctamente, devolverá el siguiente intervalo desde el que empezar (ej. "523-").
 * Cuando se produzcan errores en los que el cliente envíe un fragmento que el servidor ya ha recibido, el servidor responderá `HTTP 416 Requested Range Not Satisfiable`. Puede [solicitar el estado de la carga](#resuming-an-in-progress-upload) para obtener una lista más detallada de los intervalos que faltan.
-* Incluir el encabezado de autorización al emitir la llamada `PUT` puede resultar en la respuesta `HTTP 401 Unauthoized`. El encabezado de autorización y token portador debería enviarse únicamente al emitir el `POST` durante el primer paso. No debería incluirse al emitir el `PUT`.   
+* Incluir el encabezado de autorización al emitir la llamada `PUT` puede resultar en la respuesta `HTTP 401 Unauthorized`. El encabezado de autorización y el token de portador deberían enviarse únicamente al emitir el `POST` durante el primer paso. No debería incluirse al emitir el `PUT`.   
 
 
 ## <a name="completing-a-file"></a>Finalización de un archivo

@@ -1,8 +1,15 @@
 # <a name="list-calendarview"></a>List calendarView
 
 Obtiene las repeticiones, excepciones e instancias únicas de eventos en una vista de calendario definida por un intervalo de tiempo del calendario predeterminado de un usuario, o alguno de los otros calendarios del usuario.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.Read; Calendars.ReadWrite*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Calendars.Read, Calendars.ReadWrite    | 
+|Delegado (cuenta personal de Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
+|Aplicación | Calendars.Read, Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 
 [calendar](../resources/calendar.md) predeterminado de un usuario.

@@ -5,8 +5,15 @@ Elimine la definición de una [extensión de esquema](../resources/schemaExtensi
 Solo la aplicación que creó la extensión de esquema (la aplicación propietaria) puede eliminar la definición de la extensión de esquema, y solo cuando la extensión esté en el estado **InDevelopment**. Eliminar una definición de extensión de esquema no afecta al acceso a los datos personalizados que se han agregado a las instancias de recurso a partir de esa definición.
 
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *Directory.AccessAsUser.All*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | No admitida. | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

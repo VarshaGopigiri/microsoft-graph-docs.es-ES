@@ -1,20 +1,18 @@
 # <a name="create-open-extension"></a>Crear extensión abierta
 
-Cree una extensión abierta (objeto [openTypeExtension](../resources/openTypeExtension.md)) y agregue propiedades personalizadas en una instancia nueva o existente de un recurso. 
+Crea una extensión abierta (objeto [openTypeExtension](../resources/openTypeExtension.md)) y agrega propiedades personalizadas en una instancia nueva o existente de un recurso. 
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
 
-Según el recurso en el que se cree la extensión, se requiere uno de los siguientes **permisos** para ejecutar esta API:
+Según el recurso en el que se cree la extensión, se requiere uno de los siguientes permisos para llamar a esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
-
+| [dispositivo](../resources/device.md) | Device.ReadWrite.All | [evento](../resources/event.md) | Calendars.ReadWrite |
+| [grupo](../resources/group.md) | Group.ReadWrite.All | [evento de grupo](../resources/event.md) | Group.ReadWrite.All |
+| [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | [mensaje](../resources/message.md) | Mail.ReadWrite |
+| [organización](../resources/organization.md) | Directory.AccessAsUser.All | [contacto personal](../resources/contact.md) | Contacts.ReadWrite |
+| [usuario](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -432,7 +430,7 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
 
 Aquí está la respuesta del quinto ejemplo que contiene la nueva conversación y un identificador del hilo. Este nuevo hilo contiene una publicación creada automáticamente, que a su vez contiene la nueva extensión. 
 
-Nota: Puede que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
 
 Para obtener la nueva extensión, primero debe [obtener todas las publicaciones](../api/conversationthread_list_posts.md) de este hilo, inicialmente debería haber solo una. A continuación, aplique el identificador de la publicación y el nombre de la extensión `Com.Contoso.Benefits` para [obtener la extensión](../api/opentypeextension_get.md).
 

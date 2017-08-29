@@ -13,14 +13,17 @@ Un recurso **site** se resuelve con un identificador único compuesto de los sig
 También hay un identificador de sitio reservado, `root`, que siempre hace referencia al sitio raíz para un destino especificado de la manera siguiente:
 
 * `/sites/root`: El sitio raíz del inquilino.
-* `/groups/{group-id}/sites/root`: Sitio del grupo.
+* `/groups/{group-id}/sites/root`: The group's team site.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes ámbitos para ejecutar esta solicitud:
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | Sites.Read.All, Sites.ReadWrite.All | 
 
 ## <a name="get-the-tenants-root-site"></a>Obtener el sitio raíz del inquilino
 

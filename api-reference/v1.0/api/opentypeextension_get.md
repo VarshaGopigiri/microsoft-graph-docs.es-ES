@@ -11,17 +11,17 @@ En la tabla siguiente, se enumeran tres escenarios en los que puede obtener una 
 |Busque y expanda las instancias de recurso con una extensión específica. |Evento, evento de grupo, publicación de grupo, mensaje, contacto personal|Instancias de recurso expandidas con la extensión abierta.|
 
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
 
-Según el recurso que contenga la extensión, se requiere uno de los siguientes **permisos** para ejecutar esta API:
+Según el recurso que contenga la extensión, se requiere uno de los siguientes permisos para ejecutar esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [Dispositivo](../resources/device.md) | _Directory.Read.All_ | [Evento](../resources/event.md) | _Calendars.Read_ | 
-| [Grupo](../resources/group.md) | _Group.Read.All_ | [Evento de grupo](../resources/event.md) | _Group.Read.All_ | 
-| [Publicación de grupo](../resources/post.md) | _Group.Read.All_ | [Mensaje](../resources/message.md) | _Mail.Read_ | 
-| [Organización](../resources/organization.md) | _Directory.Read.All_ | [Contacto personal](../resources/contact.md) | _Contacts.Read_ |
-| [Usuario](../resources/user.md) | _User.Read.All_ | | |
+| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read | 
+| [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All | 
+| [Publicación de grupo](../resources/post.md) | Group.Read.All | [Mensaje](../resources/message.md) | Mail.Read | 
+| [Organización](../resources/organization.md) | Directory.Read.All | [Contacto personal](../resources/contact.md) | Contacts.Read |
+| [Usuario](../resources/user.md) | User.Read.All | | |
 
 
 
@@ -361,7 +361,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 
 En esta respuesta del quinto ejemplo solo hay un mensaje en el buzón del usuario que tiene una extensión cuyo **identificador** es igual a `Com.Contoso.Referral`.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
+Nota: Puede que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",

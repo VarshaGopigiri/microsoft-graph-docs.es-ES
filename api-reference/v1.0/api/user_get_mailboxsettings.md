@@ -4,8 +4,14 @@ Obtener el objeto [mailboxSettings](../resources/mailboxsettings.md) del usuario
 
 Puede ver toda la configuración del buzón u obtener una configuración específica.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere el siguiente **ámbito** para ejecutar esta API: *MailboxSettings.Read*  
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | MailboxSettings.Read, MailboxSettings.ReadWrite    | 
+|Delegado (cuenta personal de Microsoft) | MailboxSettings.Read, MailboxSettings.ReadWrite    | 
+|Aplicación | MailboxSettings.Read, MailboxSettings.ReadWrite | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 Para obtener toda la configuración del buzón, que incluye la configuración de las respuestas automáticas:

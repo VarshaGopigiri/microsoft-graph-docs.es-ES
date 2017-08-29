@@ -3,11 +3,10 @@
 Representa una licencia asignada a un usuario. La propiedad **assignedLicenses** de la entidad [user](user.md) es una colección de **assignedLicense**.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |disabledPlans|Colección Guid|Colección de los identificadores únicos para los planes que se han deshabilitado.|
 |skuId|Guid|Identificador único de la SKU.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

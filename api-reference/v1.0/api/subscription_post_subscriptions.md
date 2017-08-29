@@ -1,10 +1,10 @@
 # <a name="create-subscription"></a>Crear suscripción
 
 Suscripción a una aplicación de escucha para recibir notificaciones cuando cambian los datos en Microsoft Graph.
-## <a name="prerequisites"></a>Requisitos previos
-La creación de una suscripción requiere un ámbito de lectura para el recurso. Por ejemplo, para obtener mensajes de notificaciones, la aplicación necesita el permiso `Mail.Read`. En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso.
+## <a name="permissions"></a>Permisos
+La creación de una suscripción requiere un ámbito de lectura para el recurso. Por ejemplo, para obtener mensajes de notificaciones, la aplicación necesita el permiso `Mail.Read`. En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-| Tipo de recurso o elemento        | Ámbito               |
+| Tipo de recurso o elemento        | Permiso          |
 |-----------------------------|---------------------|
 | Contactos                    | Contacts.Read       |
 | Conversaciones               | Group.Read.All      |

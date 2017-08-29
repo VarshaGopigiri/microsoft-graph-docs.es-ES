@@ -2,13 +2,16 @@
 
 Recupere una colección de recursos [DriveItem](../resources/driveitem.md) que se han compartido con el propietario del [Drive](../resources/drive.md).
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-  * Files.Read.All
-  * Files.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | Files.Read.All, Files.ReadWrite.All    | 
+|Aplicación | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
 
-**Nota:** aunque la solicitud de /sharedWithMe será correcta con los ámbitos Files.Read o Files.ReadWrite, pueden perderse algunas propiedades. Además, sin uno de estos ámbitos **Todo**, los elementos compartidos devueltos a esta API no serán accesibles.
+Además, sin uno de estos ámbitos **Todo**, los elementos compartidos devueltos desde esta API no serán accesibles.
 
 ## <a name="http-request"></a>Solicitud HTTP
 

@@ -2,11 +2,11 @@
 
 Obtiene las repeticiones, excepciones e instancias únicas de eventos en una vista de calendario definida por un intervalo de tiempo del calendario predeterminado `(../me/calendarview)` de un usuario o grupo, o alguno de los otros calendarios del usuario.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Eventos en el calendario de un usuario: _Calendars.Read_ o _Calendars.ReadWrite_
-* Eventos de un calendario de grupo: _Group.Read.All_ o _Group.ReadWrite.All_
+* Eventos en el calendario de un usuario: Calendars.Read o Calendars.ReadWrite
+* Eventos de un calendario de grupo: Group.Read.All o Group.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitud HTTP
 

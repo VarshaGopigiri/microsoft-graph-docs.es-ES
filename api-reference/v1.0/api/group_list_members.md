@@ -1,8 +1,15 @@
 # <a name="list-members"></a>Enumerar miembros
 
 Obtiene una lista de los miembros directos del grupo. Un grupo puede tener usuarios, contactos y otros grupos como miembros. Esta operación no es transitiva.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Directory.Read.All*, *Directory.AccessAsUser.All*, *User.ReadBasic.All* o *User.Read.All*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | User.ReadBasic.All, User.Read.All, Directory.Read.All, Directory.AccessAsUser.All   | 
+|Delegado (cuenta personal de Microsoft) | No admitida.    | 
+|Aplicación | User.Read.All, Directory.Read.All | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

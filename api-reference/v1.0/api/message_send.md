@@ -2,8 +2,15 @@
 
 Envía un mensaje de la carpeta Borrador. El borrador del mensaje puede ser un borrador de mensaje nuevo, un borrador de respuesta, un borrador de respuesta a todos o un borrador de reenvío. El mensaje se guarda en la carpeta Elementos enviados.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.Send*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Mail.Send    |
+|Delegado (cuenta personal de Microsoft) | Mail.Send    |
+|Aplicación | Mail.Send |
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -22,7 +29,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
+En el siguiente ejemplo se muestra cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
@@ -34,7 +41,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
 ##### <a name="response"></a>Respuesta
-##### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta.
 <!-- {
   "blockType": "response",

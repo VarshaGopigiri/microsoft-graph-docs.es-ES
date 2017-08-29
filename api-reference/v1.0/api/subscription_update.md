@@ -4,11 +4,11 @@ Renueva una suscripción ampliando su tiempo de expiración.
 
 Las suscripciones a recursos caducan en fechas prohibidas por los tipos de recursos individuales.  Para no perder las notificaciones, las suscripciones deben renovarse antes de su fecha de expiración.  Consulte [subscription](../resources/subscription.md) para más información sobre fechas de expiración individuales.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
 
-En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso.
+En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-| Tipo de recurso o elemento        | Ámbito               |
+| Tipo de recurso o elemento        | Permiso          |
 |-----------------------------|---------------------|
 | Contactos                    | Contacts.Read       |
 | Conversaciones               | Group.Read.All      |

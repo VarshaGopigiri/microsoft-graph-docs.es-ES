@@ -19,14 +19,13 @@ También los siguientes recursos de grupo:
 
 Consulte el artículo de [información general sobre las propiedades extendidas](../resources/extended-properties-overview.md) para obtener más información sobre cuándo usar las extensiones abiertas o las propiedades extendidas y cómo especificar las propiedades extendidas.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
+Según el recurso en el que cree la propiedad extendida, se requiere uno de los siguientes ámbitos para ejecutar esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-Según el recurso en el que cree la propiedad extendida, se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
+- Mail.ReadWrite
+- Calendars.ReadWrite
+- Contacts.ReadWrite
+- Group.ReadWrite.All
  
 ## <a name="http-request"></a>Solicitud HTTP
 Puede crear propiedades extendidas en una instancia de recurso nueva o existente.

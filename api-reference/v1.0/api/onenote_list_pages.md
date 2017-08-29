@@ -1,10 +1,14 @@
 # <a name="list-pages"></a>Enumerar páginas
 
-Recupere una lista de objetos [page](../resources/page.md).
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:  
+Recupera una lista de objetos [page](../resources/page.md).
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | Notes.Read, Notes.ReadWrite    | 
+|Aplicación | Notes.Read.All, Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

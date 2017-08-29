@@ -11,12 +11,12 @@ Los datos adjuntos pueden ser de uno de los tipos siguientes:
 Todos estos tipos de recursos de datos adjuntos se derivan del recurso [attachment](../resources/attachment.md). 
 
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Si accede a datos adjuntos de mensajes: *Mail.Read*
-* Si accede a datos adjuntos de eventos: *Calendars.Read*
-* Si accede a datos adjuntos de publicaciones o eventos de grupo: *Group.Read.All*
+* Si accede a datos adjuntos de mensajes: Mail.Read.
+* Si accede a datos adjuntos de eventos: Calendars.Read.
+* Si accede a datos adjuntos de publicaciones o eventos de grupo: Group.Read.All.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

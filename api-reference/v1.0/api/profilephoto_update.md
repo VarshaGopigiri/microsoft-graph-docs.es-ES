@@ -4,15 +4,14 @@ Actualiza la foto del **user** que inició sesión o el **group** o **contact** 
 
 Puede usar PATCH o PUT para esta operación en la versión 1.0.
 
-> **Nota** Esta operación en la versión 1.0 admite solo un buzón de usuario de trabajo o escuela y no uno personal.
+> **Nota** Esta operación en la versión 1.0 admite solo un buzón profesional o educativo del usuario y no uno personal.
 
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
-
-- Foto de perfil del **usuario** que inició sesión - *User.ReadWrite*, *User.ReadWrite.All*
-- Foto de perfil de un **grupo** - *Group.ReadWrite.All*
-- Foto de un **contacto** - *Contacts.ReadWrite*
+- Foto de perfil del **usuario** que inició sesión: User.ReadWrite, User.ReadWrite.All
+- Foto de perfil de un **grupo**: Group.ReadWrite.All
+- Foto de un **contacto**:Contacts.ReadWrite
 
 > **Nota** Para actualizar la foto de un usuario de la organización, la aplicación debe tener el permiso de aplicación User.ReadWrite.All y llamar a esta API bajo su propia identidad, no en nombre de un usuario. Para obtener más información, consulte cómo [obtener acceso sin un usuario que ha iniciado sesión](../../../concepts/auth_v2_service.md).
 

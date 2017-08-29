@@ -1,10 +1,14 @@
 # <a name="get-sectiongroup"></a>Obtener sectionGroup
 
-Recupere las propiedades y relaciones de un objeto [sectionGroup](../resources/sectiongroup.md).
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:  
+Recupera las propiedades y relaciones de un objeto [sectionGroup](../resources/sectiongroup.md).
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
+|Delegado (cuenta personal de Microsoft) | Notes.Create, Notes.Read, Notes.ReadWrite    | 
+|Aplicación | Notes.Read.All, Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

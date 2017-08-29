@@ -2,11 +2,11 @@
 
 Elimina una suscripción.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="permissions"></a>Permisos
 
-En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso.
+En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-| Tipo de recurso o elemento        | Ámbito               |
+| Tipo de recurso o elemento        | Permiso          |
 |-----------------------------|---------------------|
 | Contactos                    | Contacts.Read       |
 | Conversaciones               | Group.Read.All      |

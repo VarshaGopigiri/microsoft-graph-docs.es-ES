@@ -2,10 +2,17 @@
 
 Elimine un grupo de calendarios que no sea el predeterminado.
 
-**Nota** Outlook.com solo admite el grupo de calendarios predeterminado que es accesible mediante el acceso directo /me/calendars. No se puede eliminar ningún grupo de calendarios de Outlook.com.
+**Nota** Outlook.com solo admite el grupo de calendarios predeterminado que es accesible mediante el acceso directo /me/calendars. No puede eliminar ningún grupo de calendarios de Outlook.com.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.ReadWrite*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Calendars.ReadWrite    | 
+|Delegado (cuenta personal de Microsoft) | Calendars.ReadWrite    | 
+|Aplicación | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

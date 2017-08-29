@@ -4,8 +4,15 @@ Obtenga un conjunto de carpetas de correo que se hayan agregado, eliminado o qui
 
 Las llamadas de una función **delta** para las carpetas de correo de un buzón funcionan de forma similar a una solicitud GET, salvo que, al aplicar correctamente [tokens de estado](../../../concepts/delta_query_overview.md) en al menos una de estas llamadas, puede realizar una consulta para obtener los cambios incrementales en las carpetas de correo. Esto permite mantener y sincronizar un almacén local de carpetas de correo de un usuario, sin tener que capturar cada vez todas las carpetas de correo de ese buzón desde el servidor.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: _Mail.Read_ o _Mail.ReadWrite_
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Mail.Read, Mail.ReadWrite    | 
+|Delegado (cuenta personal de Microsoft) | Mail.Read, Mail.ReadWrite    | 
+|Aplicación | Mail.Read, Mail.ReadWrite | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

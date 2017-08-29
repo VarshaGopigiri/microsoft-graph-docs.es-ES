@@ -1,8 +1,15 @@
 # <a name="update-eventmessage"></a>Update eventmessage
 
 Actualiza las propiedades del objeto eventmessage.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Mail.ReadWrite*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (cuenta profesional o educativa) | Mail.ReadWrite    | 
+|Delegado (cuenta personal de Microsoft) | Mail.ReadWrite    | 
+|Aplicación | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,7 +30,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |categories|String|Categorías asociadas al mensaje.|
-|importance|String|La importancia del mensaje. Valores posibles: `Low`, `Normal`, `High`.|
+|importance|String|Importancia del mensaje. Valores posibles: `Low`, `Normal`, `High`.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|

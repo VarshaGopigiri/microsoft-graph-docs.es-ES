@@ -12,8 +12,8 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |[Obtener organización](../api/organization_get.md) | [organization](organization.md) |Lea las propiedades y las relaciones del objeto organization.|
 |[Actualizar](../api/organization_update.md) | [organization](organization.md)  |Actualice el objeto organization. (Solo se pueden actualizar las propiedades **marketingNotificationMails** y **technicalNotificationMails**). |
 |**Extensiones abiertas**| | |
-|[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Cree una extensión abierta y agregue propiedades personalizadas en una instancia nueva o un recurso existente.|
-|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga una extensión abierta identificada por el nombre de extensión.|
+|[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
+|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
 |**Extensiones de esquema**| | |
 |[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
 
@@ -22,7 +22,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | Propiedad                             | Tipo                                                              | Descripción                                                                                                                                                                                                                                                                          |
 |:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | assignedPlans                        | Colección [assignedPlan](assignedplan.md)                        | La colección de planes de servicio asociados con el inquilino. No admite valores NULL.                                                                                                                                                                                                            |
-| ciudad                                 | String                                                            |                                                                                                                                                                                                                                                                                      |
+| city                                 | String                                                            |                                                                                                                                                                                                                                                                                      |
 | companyLastDirSyncTime               | DateTimeOffset                                                    | La fecha y hora en que se ha sincronizado por última vez el inquilino con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'` |
 | country                              | String                                                            |                                                                                                                                                                                                                                                                                      |
 | countryLetterCode                    | String                                                            |                                                                                                                                                                                                                                                                                      |
@@ -45,10 +45,9 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | verifiedDomains                      | Colección [VerifiedDomain](verifieddomain.md)                    | La colección de dominios asociados a este inquilino. No admite valores NULL.                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |extensions|Colección [extension](extension.md)|La colección de extensiones abiertas definidas para la organización. Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

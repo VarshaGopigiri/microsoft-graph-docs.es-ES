@@ -1,12 +1,12 @@
 # <a name="delete-attachment"></a>Eliminar datos adjuntos
 
-Elimine datos adjuntos de un evento de calendario, mensaje de correo o publicación de grupo.
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+Elimina datos adjuntos de un evento de calendario, mensaje de correo o publicación de grupo.
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Si accede a datos adjuntos de mensajes: *Mail.ReadWrite*
-* Si accede a datos adjuntos de eventos: *Calendars.ReadWrite*
-* Si accede a datos adjuntos de publicaciones o eventos de grupo: *Group.ReadWrite.All*
+* Si accede a datos adjuntos en Mensajes: Mail.ReadWrite.
+* Si accede a datos adjuntos en Eventos: Calendars.ReadWrite.
+* Si accede a datos adjuntos en Publicaciones o Eventos de grupo: Group.ReadWrite.All.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

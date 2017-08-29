@@ -7,18 +7,17 @@ Actualice una extensión abierta (objeto [openTypeExtension](../resources/openTy
 
 Los datos de una extensión pueden ser de tipo primitivo o matrices de tipos primitivos.
 
+## <a name="permissions"></a>Permisos
 
-## <a name="prerequisites"></a>Requisitos previos
-
-Según el recurso en el que se creó la extensión, se requiere uno de los siguientes **permisos** para ejecutar esta API:
+Según el recurso en el que se creó la extensión, se requiere uno de los siguientes permisos para llamar a esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensaje](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+| [dispositivo](../resources/device.md) | Device.ReadWrite.All | [evento](../resources/event.md) | Calendars.ReadWrite |
+| [grupo](../resources/group.md) | Group.ReadWrite.All | [evento de grupo](../resources/event.md) | Group.ReadWrite.All |
+| [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | [mensaje](../resources/message.md) | Mail.ReadWrite |
+| [organización](../resources/organization.md) | Directory.AccessAsUser.All | [contacto personal](../resources/contact.md) | Contacts.ReadWrite |
+| [usuario](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>Solicitud HTTP
 En la solicitud, identifique la instancia de recurso, utilice la propiedad de navegación **extensiones** de esa instancia para identificar y realizar un `PATCH` en esa instancia de extensión.

@@ -30,7 +30,6 @@ Aquí tiene una representación JSON del recurso
 | latitude  | Doble | Opcional. Latitud en formato decimal del elemento. Solo lectura.   |
 | longitude | Doble | Opcional. Longitud en formato decimal del elemento. Solo lectura.  |
 
-
 ## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
