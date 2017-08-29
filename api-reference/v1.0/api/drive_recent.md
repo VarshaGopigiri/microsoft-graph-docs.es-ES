@@ -1,36 +1,36 @@
-# <a name="list-recent-files"></a><span data-ttu-id="5695c-101">Enumerar archivos recientes</span><span class="sxs-lookup"><span data-stu-id="5695c-101">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="ecea7-101">Enumerar archivos recientes</span><span class="sxs-lookup"><span data-stu-id="ecea7-101">List recent files</span></span>
 
-<span data-ttu-id="5695c-p101">Enumere un conjunto de elementos que ha usado recientemente el usuario que ha iniciado sesión. Esta colección incluye elementos que están en la unidad del usuario, así como elementos de otras unidades a los que tiene acceso.</span><span class="sxs-lookup"><span data-stu-id="5695c-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="ecea7-p101">Enumere un conjunto de elementos que ha usado recientemente el usuario que ha iniciado sesión. Esta colección incluye elementos que están en la unidad del usuario, así como elementos de otras unidades a los que tiene acceso.</span><span class="sxs-lookup"><span data-stu-id="ecea7-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5695c-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="5695c-104">Permissions</span></span>
-<span data-ttu-id="5695c-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5695c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ecea7-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="ecea7-104">Permissions</span></span>
+<span data-ttu-id="ecea7-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="ecea7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="5695c-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="5695c-107">Permission type</span></span>      | <span data-ttu-id="5695c-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="5695c-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="5695c-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="5695c-109">Delegated (work or school account)</span></span> | <span data-ttu-id="5695c-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5695c-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="5695c-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5695c-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5695c-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5695c-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="5695c-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="5695c-113">Application</span></span> | <span data-ttu-id="5695c-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5695c-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> | 
+|<span data-ttu-id="ecea7-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="ecea7-107">Permission type</span></span>      | <span data-ttu-id="ecea7-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="ecea7-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="ecea7-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ecea7-109">Delegated (work or school account)</span></span> | <span data-ttu-id="ecea7-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ecea7-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ecea7-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ecea7-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecea7-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ecea7-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ecea7-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ecea7-113">Application</span></span> | <span data-ttu-id="ecea7-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ecea7-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5695c-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="5695c-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ecea7-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ecea7-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```
 GET /me/drive/recent
 ```
 
-## <a name="request-body"></a><span data-ttu-id="5695c-116">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="5695c-116">Request body</span></span>
-<span data-ttu-id="5695c-117">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="5695c-117">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ecea7-116">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="ecea7-116">Request body</span></span>
+<span data-ttu-id="ecea7-117">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="ecea7-117">Do not supply a request body for this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5695c-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="5695c-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ecea7-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ecea7-118">Example</span></span>
 
 <!-- { "blockType": "request", "name": "drive-recent", "scopes": "files.read" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/recent
 ```
 
-## <a name="response"></a><span data-ttu-id="5695c-119">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5695c-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ecea7-119">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ecea7-119">Response</span></span>
 
-<span data-ttu-id="5695c-p103">Devuelve una colección de recursos [DriveItem](../resources/driveitem.md) para los elementos a los que ha accedido recientemente el propietario de la unidad. Los elementos fuera de la unidad del usuario incluirán la faceta [RemoteItem](../resources/remoteitem.md), que ofrece información para acceder al elemento compartido.</span><span class="sxs-lookup"><span data-stu-id="5695c-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed. Items outside of the user's drive will include the [RemoteItem](../resources/remoteitem.md) facet, which provides information to access the shared item.</span></span>
+<span data-ttu-id="ecea7-p103">Devuelve una colección de recursos [DriveItem](../resources/driveitem.md) para los elementos a los que ha accedido recientemente el propietario de la unidad. Los elementos fuera de la unidad del usuario incluirán la faceta [RemoteItem](../resources/remoteitem.md), que ofrece información para acceder al elemento compartido.</span><span class="sxs-lookup"><span data-stu-id="ecea7-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed. Items outside of the user's drive will include the [RemoteItem](../resources/remoteitem.md) facet, which provides information to access the shared item.</span></span>
 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
@@ -68,9 +68,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="5695c-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="5695c-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ecea7-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ecea7-122">Remarks</span></span>
 
-<span data-ttu-id="5695c-p104">Algunos recursos driveItem devueltos de la acción **recent** incluirán la faceta **remoteItem**, que indica que son elementos de otra unidad. Para acceder al objeto driveItem original, deberá realizar una solicitud con la información proporcionada en **remoteItem** en el siguiente formato:</span><span class="sxs-lookup"><span data-stu-id="5695c-p104">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="ecea7-p104">Algunos recursos driveItem devueltos de la acción **recent** incluirán la faceta **remoteItem**, que indica que son elementos de otra unidad. Para acceder al objeto driveItem original, deberá realizar una solicitud con la información proporcionada en **remoteItem** en el siguiente formato:</span><span class="sxs-lookup"><span data-stu-id="ecea7-p104">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- {"blockType": "ignored"} -->
 ```http

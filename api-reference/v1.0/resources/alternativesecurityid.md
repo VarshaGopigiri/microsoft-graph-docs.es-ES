@@ -1,18 +1,17 @@
-# <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
+# <a name="alternativesecurityid-resource-type"></a><span data-ttu-id="a83b2-101">Tipo de recurso alternativeSecurityId</span><span class="sxs-lookup"><span data-stu-id="a83b2-101">alternativeSecurityId resource type</span></span>
 
-Contiene un identificador de seguridad alternativo asociado a un dispositivo. La propiedad **alternativeSecurityIds** de la entidad [Device](device.md) es una colección de **alternativeSecurityId**.
+<span data-ttu-id="a83b2-p101">Contiene un identificador de seguridad alternativo asociado a un dispositivo. La propiedad **alternativeSecurityIds** de la entidad [Device](device.md) es una colección de **alternativeSecurityId**.</span><span class="sxs-lookup"><span data-stu-id="a83b2-p101">Contains an alternative security ID associated with a device. The **alternativeSecurityIds** property of the [Device](device.md) entity is a collection of **alternativeSecurityId**.</span></span>
 
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## <a name="properties"></a><span data-ttu-id="a83b2-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="a83b2-104">Properties</span></span>
+| <span data-ttu-id="a83b2-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="a83b2-105">Property</span></span>     | <span data-ttu-id="a83b2-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="a83b2-106">Type</span></span>   |<span data-ttu-id="a83b2-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="a83b2-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|identityProvider|String|            |
-|key|Binary|            |
-|type|Int32|            |
+|<span data-ttu-id="a83b2-108">identityProvider</span><span class="sxs-lookup"><span data-stu-id="a83b2-108">identityProvider</span></span>|<span data-ttu-id="a83b2-109">String</span><span class="sxs-lookup"><span data-stu-id="a83b2-109">String</span></span>|            |
+|<span data-ttu-id="a83b2-110">key</span><span class="sxs-lookup"><span data-stu-id="a83b2-110">key</span></span>|<span data-ttu-id="a83b2-111">Binary</span><span class="sxs-lookup"><span data-stu-id="a83b2-111">Binary</span></span>|            |
+|<span data-ttu-id="a83b2-112">type</span><span class="sxs-lookup"><span data-stu-id="a83b2-112">type</span></span>|<span data-ttu-id="a83b2-113">Int32</span><span class="sxs-lookup"><span data-stu-id="a83b2-113">Int32</span></span>|            |
 
+## <a name="json-representation"></a><span data-ttu-id="a83b2-114">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="a83b2-114">JSON representation</span></span>
 
-## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="a83b2-115">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="a83b2-115">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,38 +1,38 @@
-# <a name="create-contactfolder"></a><span data-ttu-id="4c53e-101">Create ContactFolder</span><span class="sxs-lookup"><span data-stu-id="4c53e-101">Create ContactFolder</span></span>
+# <a name="create-contactfolder"></a><span data-ttu-id="c60c2-101">Create ContactFolder</span><span class="sxs-lookup"><span data-stu-id="c60c2-101">Create ContactFolder</span></span>
 
-<span data-ttu-id="4c53e-102">Crea una contactFolder en la carpeta predeterminada de contactos del usuario.</span><span class="sxs-lookup"><span data-stu-id="4c53e-102">Create a new contactFolder under the user's default contacts folder.</span></span>
+<span data-ttu-id="c60c2-102">Crea una contactFolder en la carpeta predeterminada de contactos del usuario.</span><span class="sxs-lookup"><span data-stu-id="c60c2-102">Create a new contactFolder under the user's default contacts folder.</span></span>
 
-<span data-ttu-id="4c53e-103">También se puede [crear una contactfolder como elemento secundario de cualquier carpeta de contacto especificada](contactfolder_post_childfolders.md).</span><span class="sxs-lookup"><span data-stu-id="4c53e-103">You can also [create a new contactfolder as a child of any specified contact folder](contactfolder_post_childfolders.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="4c53e-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="4c53e-104">Permissions</span></span>
-<span data-ttu-id="4c53e-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="4c53e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="c60c2-103">También se puede [crear una contactfolder como elemento secundario de cualquier carpeta de contacto especificada](contactfolder_post_childfolders.md).</span><span class="sxs-lookup"><span data-stu-id="c60c2-103">You can also [create a new contactfolder as a child of any specified contact folder](contactfolder_post_childfolders.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c60c2-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="c60c2-104">Permissions</span></span>
+<span data-ttu-id="c60c2-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c60c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="4c53e-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="4c53e-107">Permission type</span></span>      | <span data-ttu-id="4c53e-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="4c53e-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="4c53e-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="4c53e-109">Delegated (work or school account)</span></span> | <span data-ttu-id="4c53e-110">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4c53e-110">Contacts.ReadWrite</span></span>    | 
-|<span data-ttu-id="4c53e-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4c53e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c53e-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4c53e-112">Contacts.ReadWrite</span></span>    | 
-|<span data-ttu-id="4c53e-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="4c53e-113">Application</span></span> | <span data-ttu-id="4c53e-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4c53e-114">Contacts.ReadWrite</span></span> | 
+|<span data-ttu-id="c60c2-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="c60c2-107">Permission type</span></span>      | <span data-ttu-id="c60c2-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="c60c2-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="c60c2-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="c60c2-109">Delegated (work or school account)</span></span> | <span data-ttu-id="c60c2-110">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c60c2-110">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="c60c2-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c60c2-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c60c2-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c60c2-112">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="c60c2-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="c60c2-113">Application</span></span> | <span data-ttu-id="c60c2-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c60c2-114">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4c53e-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4c53e-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c60c2-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="c60c2-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/contactFolders
 ```
-## <a name="request-headers"></a><span data-ttu-id="4c53e-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4c53e-116">Request headers</span></span>
-| <span data-ttu-id="4c53e-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="4c53e-117">Header</span></span>       | <span data-ttu-id="4c53e-118">Valor</span><span class="sxs-lookup"><span data-stu-id="4c53e-118">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c60c2-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="c60c2-116">Request headers</span></span>
+| <span data-ttu-id="c60c2-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="c60c2-117">Header</span></span>       | <span data-ttu-id="c60c2-118">Valor</span><span class="sxs-lookup"><span data-stu-id="c60c2-118">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4c53e-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="4c53e-119">Authorization</span></span>  | <span data-ttu-id="4c53e-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="4c53e-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="4c53e-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4c53e-122">Content-Type</span></span>  | <span data-ttu-id="4c53e-123">application/json</span><span class="sxs-lookup"><span data-stu-id="4c53e-123">application/json</span></span>  |
+| <span data-ttu-id="c60c2-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="c60c2-119">Authorization</span></span>  | <span data-ttu-id="c60c2-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c60c2-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c60c2-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c60c2-122">Content-Type</span></span>  | <span data-ttu-id="c60c2-123">application/json</span><span class="sxs-lookup"><span data-stu-id="c60c2-123">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4c53e-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4c53e-124">Request body</span></span>
-<span data-ttu-id="4c53e-125">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ContactFolder](../resources/contactfolder.md).</span><span class="sxs-lookup"><span data-stu-id="4c53e-125">In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c60c2-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="c60c2-124">Request body</span></span>
+<span data-ttu-id="c60c2-125">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ContactFolder](../resources/contactfolder.md).</span><span class="sxs-lookup"><span data-stu-id="c60c2-125">In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4c53e-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4c53e-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c60c2-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c60c2-126">Response</span></span>
 
-<span data-ttu-id="4c53e-127">Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [ContactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4c53e-127">If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.</span></span>
+<span data-ttu-id="c60c2-127">Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [ContactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c60c2-127">If successful, this method returns `201, Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4c53e-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4c53e-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4c53e-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="4c53e-129">Request</span></span>
-<span data-ttu-id="4c53e-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4c53e-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c60c2-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c60c2-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c60c2-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c60c2-129">Request</span></span>
+<span data-ttu-id="c60c2-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c60c2-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_contactfolder_from_user"
@@ -47,9 +47,9 @@ Content-length: 84
   "displayName": "displayName-value"
 }
 ```
-<span data-ttu-id="4c53e-131">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [contactFolder](../resources/contactfolder.md).</span><span class="sxs-lookup"><span data-stu-id="4c53e-131">In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="4c53e-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4c53e-132">Response</span></span>
-<span data-ttu-id="4c53e-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="4c53e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c60c2-131">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [contactFolder](../resources/contactfolder.md).</span><span class="sxs-lookup"><span data-stu-id="c60c2-131">In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="c60c2-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c60c2-132">Response</span></span>
+<span data-ttu-id="c60c2-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="c60c2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

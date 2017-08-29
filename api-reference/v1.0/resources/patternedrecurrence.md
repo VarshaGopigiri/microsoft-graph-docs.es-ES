@@ -1,17 +1,16 @@
-# <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="f47fa-101">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="f47fa-101">patternedRecurrence resource type</span></span>
 
-Patrón e intervalo de periodicidad.
+<span data-ttu-id="f47fa-102">Patrón e intervalo de periodicidad.</span><span class="sxs-lookup"><span data-stu-id="f47fa-102">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## <a name="properties"></a><span data-ttu-id="f47fa-103">Propiedades</span><span class="sxs-lookup"><span data-stu-id="f47fa-103">Properties</span></span>
+| <span data-ttu-id="f47fa-104">Propiedad</span><span class="sxs-lookup"><span data-stu-id="f47fa-104">Property</span></span>     | <span data-ttu-id="f47fa-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="f47fa-105">Type</span></span>   |<span data-ttu-id="f47fa-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="f47fa-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|Frecuencia de un evento.|
-|range|[RecurrenceRange](recurrencerange.md)|Duración de un evento.|
+|<span data-ttu-id="f47fa-107">pattern</span><span class="sxs-lookup"><span data-stu-id="f47fa-107">pattern</span></span>|[<span data-ttu-id="f47fa-108">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="f47fa-108">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="f47fa-109">Frecuencia de un evento.</span><span class="sxs-lookup"><span data-stu-id="f47fa-109">The frequency of an event.</span></span>|
+|<span data-ttu-id="f47fa-110">range</span><span class="sxs-lookup"><span data-stu-id="f47fa-110">range</span></span>|[<span data-ttu-id="f47fa-111">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="f47fa-111">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="f47fa-112">Duración de un evento.</span><span class="sxs-lookup"><span data-stu-id="f47fa-112">The duration of an event.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="f47fa-113">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="f47fa-113">JSON representation</span></span>
 
-## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="f47fa-114">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="f47fa-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

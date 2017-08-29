@@ -1,19 +1,18 @@
-# <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="d6197-101">Tipo de recurso provisionedPlan</span><span class="sxs-lookup"><span data-stu-id="d6197-101">provisionedPlan resource type</span></span>
 
-La propiedad **provisionedPlans** de la entidad [user](user.md) y la entidad [organization](organization.md) es una colección de **provisionedPlan**.
+<span data-ttu-id="d6197-102">La propiedad **provisionedPlans** de la entidad [user](user.md) y la entidad [organization](organization.md) es una colección de **provisionedPlan**.</span><span class="sxs-lookup"><span data-stu-id="d6197-102">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## <a name="properties"></a><span data-ttu-id="d6197-103">Propiedades</span><span class="sxs-lookup"><span data-stu-id="d6197-103">Properties</span></span>
+| <span data-ttu-id="d6197-104">Propiedad</span><span class="sxs-lookup"><span data-stu-id="d6197-104">Property</span></span>     | <span data-ttu-id="d6197-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="d6197-105">Type</span></span>   |<span data-ttu-id="d6197-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="d6197-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Por ejemplo, "Habilitado".|
-|provisioningStatus|String|Por ejemplo, "Correcto".|
-|service|String|Nombre del servicio; por ejemplo, "AccessControlS2S".|
+|<span data-ttu-id="d6197-107">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="d6197-107">capabilityStatus</span></span>|<span data-ttu-id="d6197-108">String</span><span class="sxs-lookup"><span data-stu-id="d6197-108">String</span></span>|<span data-ttu-id="d6197-109">Por ejemplo, "Habilitado".</span><span class="sxs-lookup"><span data-stu-id="d6197-109">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="d6197-110">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="d6197-110">provisioningStatus</span></span>|<span data-ttu-id="d6197-111">String</span><span class="sxs-lookup"><span data-stu-id="d6197-111">String</span></span>|<span data-ttu-id="d6197-112">Por ejemplo, "Correcto".</span><span class="sxs-lookup"><span data-stu-id="d6197-112">For example, “Success”.</span></span>|
+|<span data-ttu-id="d6197-113">service</span><span class="sxs-lookup"><span data-stu-id="d6197-113">service</span></span>|<span data-ttu-id="d6197-114">String</span><span class="sxs-lookup"><span data-stu-id="d6197-114">String</span></span>|<span data-ttu-id="d6197-115">Nombre del servicio; por ejemplo, "AccessControlS2S".</span><span class="sxs-lookup"><span data-stu-id="d6197-115">The name of the service; for example, “AccessControlS2S”</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="d6197-116">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="d6197-116">JSON representation</span></span>
 
-## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="d6197-117">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="d6197-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
