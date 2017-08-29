@@ -173,7 +173,7 @@ Ya puede probar la aplicación PHP.
 Compruebe la Bandeja de entrada de la dirección de correo electrónico que configuró en la sección [Llamar a Microsoft Graph con REST](#call-microsoft-graph-using-rest). Debe tener un correo electrónico de la cuenta que utilizó para iniciar sesión en la aplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
-- Pruebe el [Probador de Microsoft Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe el [Probador de Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## <a name="see-also"></a>Recursos adicionales

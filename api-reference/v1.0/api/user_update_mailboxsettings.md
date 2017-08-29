@@ -9,11 +9,11 @@ Puede habilitar, configurar o deshabilitar uno o varios de estos valores como pa
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | MailboxSettings.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | MailboxSettings.ReadWrite    | 
-|Aplicación | MailboxSettings.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | MailboxSettings.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | MailboxSettings.ReadWrite    |
+|Aplicación | MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

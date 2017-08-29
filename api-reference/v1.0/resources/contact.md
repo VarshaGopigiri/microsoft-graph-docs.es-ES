@@ -28,9 +28,8 @@ Este recurso admite:
 |[Crear propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contact](contact.md) | Cree una o varias propiedades extendidas de varios valores en un contacto nuevo o existente.  |
 |[Obtener contacto con propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Obtenga un contacto que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
 
-
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |assistantName|String|El nombre del ayudante del contacto.|
 |birthday|DateTimeOffset|El cumpleaños del contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
@@ -72,13 +71,12 @@ Este recurso admite:
 |yomiSurname|String|El apellido fonético japonés del contacto.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el contacto. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el contacto. Solo lectura. Admite valores NULL.|
-|Foto|[profilePhoto](profilephoto.md)| Imagen de contacto opcional. Puede obtener o establecer una foto para un contacto.|
+|photo|[profilePhoto](profilephoto.md)| Imagen de contacto opcional. Puede obtener o establecer una foto para un contacto.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el contacto. Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

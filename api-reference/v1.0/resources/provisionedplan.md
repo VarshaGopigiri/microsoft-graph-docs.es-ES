@@ -4,12 +4,11 @@ La propiedad **provisionedPlans** de la entidad [user](user.md) y la entidad [or
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|Por ejemplo, "Habilitado".|
 |provisioningStatus|String|Por ejemplo, "Correcto".|
 |service|String|Nombre del servicio; por ejemplo, "AccessControlS2S".|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

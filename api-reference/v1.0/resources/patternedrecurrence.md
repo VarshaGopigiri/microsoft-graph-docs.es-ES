@@ -3,11 +3,10 @@
 Patrón e intervalo de periodicidad.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |pattern|[RecurrencePattern](recurrencepattern.md)|Frecuencia de un evento.|
 |range|[RecurrenceRange](recurrencerange.md)|Duración de un evento.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

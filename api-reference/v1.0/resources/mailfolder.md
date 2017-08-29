@@ -23,7 +23,6 @@ Este recurso es compatible con el uso de una [consulta delta](../../../concepts/
 |[Crear propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | Cree una o varias propiedades extendidas de varios valores en un objeto mailFolder nuevo o existente.  |
 |[Obtener mailFolder con propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Obtenga un objeto mailFolder que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
 
-
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
@@ -50,7 +49,6 @@ Los objetos MailFolder en Outlook pueden contener más de un tipo de elementos; 
 |messages|Colección [Message](message.md)|La colección de mensajes del objeto mailFolder.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el objeto mailFolder. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el objeto mailFolder. Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

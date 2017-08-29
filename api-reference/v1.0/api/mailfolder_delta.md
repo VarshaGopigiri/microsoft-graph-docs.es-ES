@@ -8,11 +8,11 @@ Las llamadas de una función **delta** para las carpetas de correo de un buzón 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Mail.Read, Mail.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Mail.Read, Mail.ReadWrite    | 
-|Aplicación | Mail.Read, Mail.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Mail.Read, Mail.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Mail.Read, Mail.ReadWrite    |
+|Aplicación | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -29,7 +29,6 @@ El seguimiento de cambios en las carpetas de correo conlleva al menos una llamad
 |:---------------|:--------|:----------|
 | $deltatoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de carpetas de correo. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
 | $skiptoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de carpetas de correo. |
-
 
 #### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
 

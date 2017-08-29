@@ -40,11 +40,11 @@ GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Group.Read.All, Group.ReadWrite.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | Group.Read.All, Group.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

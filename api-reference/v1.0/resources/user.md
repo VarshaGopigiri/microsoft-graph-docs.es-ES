@@ -39,8 +39,8 @@ Este recurso admite:
 |[Enumerar ownedObjects](../api/user_list_ownedobjects.md) |Colección [directoryObject](directoryobject.md)| Obtiene los objetos de directorio que son propiedad del usuario desde la propiedad de navegación ownedObjects.|
 |[Enumerar registeredDevices](../api/user_list_registereddevices.md) |Colección [directoryObject](directoryobject.md)| Obtiene los dispositivos registrados del usuario desde la propiedad de navegación registeredDevices.|
 |[Enumerar createdObjects](../api/user_list_createdobjects.md) |Colección [directoryObject](directoryobject.md)| Obtiene los objetos de directorio creados por el usuario desde la propiedad de navegación createdObjects.|
-|[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar los planes específicos asociados a una suscripción.|
-|[Enumerar licenseDetails](../api/user_list_licensedetails.md) |Colección [licenseDetails](licensedetails.md)| Obtenga una colección de objetos licenseDetails.| 
+|[assignLicense](../api/user_assignlicense.md)|[usuario](user.md)|Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar planes específicos asociados a una suscripción.|
+|[Enumerar licenseDetails](../api/user_list_licensedetails.md) |Colección [licenseDetails](licensedetails.md)| Obtenga una colección de objetos licenseDetails.|
 |[checkMemberGroups](../api/user_checkmembergroups.md)|Colección string|Comprueba la pertenencia a una lista de grupos. La comprobación es transitiva.|
 |[getMemberGroups](../api/user_getmembergroups.md)|Colección string|Devuelve todos los grupos de los que el usuario es miembro. La comprobación es transitiva.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|Colección string| Devuelve todos los grupos y los roles de directorio de los que el usuario es miembro. La comprobación es transitiva. |
@@ -51,8 +51,6 @@ Este recurso admite:
 |[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
 |**Extensiones de esquema**| | |
 |[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
-
-
 
 ## <a name="properties"></a>Propiedades
 
@@ -91,7 +89,7 @@ Este recurso admite:
 |postalCode|String|El código postal de la dirección del usuario. El código postal es específico del país o de la región del usuario. En Estados Unidos, este atributo contiene el código postal.|
 |preferredLanguage|String|El idioma preferido del usuario. Debe seguir el código ISO 639-1. Por ejemplo, "en-US".|
 |preferredName|String|El nombre preferido del usuario.|
-|provisionedPlans|Colección [ProvisionedPlan](provisionedplan.md)|Los planes que se ha aprovisionado para el usuario. Solo lectura. No admite valores NULL. |
+|provisionedPlans|Colección [provisionedPlan](provisionedplan.md)|Los planes que se ha aprovisionado para el usuario. Solo lectura. No admite valores NULL. |
 |proxyAddresses|Colección string|Por ejemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` El operador **any** es necesario para las expresiones de filtro en las propiedades de varios valores. Solo lectura, no admite valores NULL. Es compatible con $filter.          |
 |responsibilities|Colección string|Una lista para que el usuario enumere sus responsabilidades.|
 |schools|Colección string|Una lista para que el usuario enumere las escuelas a las que ha ido.|
@@ -107,27 +105,27 @@ Este recurso admite:
 
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|calendar|[Calendar](calendar.md)|El calendario principal del usuario. Solo lectura.|
+|calendar|[Calendario](calendar.md)|El calendario principal del usuario. Solo lectura.|
 |calendarGroups|Colección [calendarGroup](calendargroup.md)|Los grupos de calendario del usuario. Solo lectura. Admite valores NULL.|
 |calendarView|Colección [event](event.md)|La vista Calendario del calendario. Solo lectura. Admite valores NULL.|
 |calendars|Colección [calendar](calendar.md)|Los calendarios del usuario. Solo lectura. Admite valores NULL.|
 |contactFolders|Colección [contactFolder](contactfolder.md)|Las carpetas de contactos del usuario. Solo lectura. Admite valores NULL.|
-|contactos|Colección [contacts](contact.md)|Los contactos del usuario. Solo lectura. Admite valores NULL.|
+|contacts|Colección [contacts](contact.md)|Los contactos del usuario. Solo lectura. Admite valores NULL.|
 |createdObjects|Colección [directoryObject](directoryobject.md)|Objetos de directorio creados por el usuario. Solo lectura. Admite valores NULL.|
 |directReports|Colección [directoryObject](directoryobject.md)|Los usuarios y contactos que informan al usuario (los usuarios y contactos cuya propiedad manager está establecida para este usuario). Solo lectura. Admite valores NULL. |
 |drive|[drive](drive.md)|OneDrive del usuario. Solo lectura.|
 |drives|Colección [drive](drive.md) | Una colección de unidades disponibles para este usuario. Solo lectura. |
 |events|Colección [event](event.md)|Los eventos del usuario. La opción predeterminada muestra eventos en el calendario predeterminado. Solo lectura. Admite valores NULL.|
-|extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el usuario. Solo lectura. Admite valores NULL.|
+|extensions|Colección [extension](extension.md)|La colección de extensiones abiertas definidas para el usuario. Solo lectura. Admite valores NULL.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Clasificación de relevancia de los mensajes del usuario según las designaciones explícitas que invalidan una relevancia o importancia inferida. |
-|mailFolders|Colección [MailFolder](mailfolder.md)| Las carpetas de correo del usuario. Solo lectura. Admite valores NULL.|
+|mailFolders|Colección [mailFolder](mailfolder.md)| Las carpetas de correo del usuario. Solo lectura. Admite valores NULL.|
 |manager|[directoryObject](directoryobject.md)|El usuario o el contacto que es administrador de este usuario. Solo lectura. (métodos HTTP: GET, PUT y DELETE).|
 |memberOf|Colección [directoryObject](directoryobject.md)|Los grupos y los roles de directorio de los que el usuario es miembro. Solo lectura. Admite valores NULL.|
 |messages|Colección [message](message.md)|Los mensajes en un buzón o una carpeta. Solo lectura. Admite valores NULL.|
 |onenote|[OneNote](onenote.md)| Solo lectura.|
 |ownedDevices|Colección [directoryObject](directoryobject.md)|Dispositivos que son propiedad del usuario. Solo lectura. Admite valores NULL.|
 |ownedObjects|Colección [directoryObject](directoryobject.md)|Objetos de directorio que son propiedad del usuario. Solo lectura. Admite valores NULL.|
-|Foto|[profilePhoto](profilephoto.md)| La foto de perfil del usuario. Solo lectura.|
+|photo|[profilePhoto](profilephoto.md)| La foto de perfil del usuario. Solo lectura.|
 |registeredDevices|Colección [directoryObject](directoryobject.md)|Dispositivos del usuario que están registrados. Solo lectura. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON

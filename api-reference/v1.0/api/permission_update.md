@@ -6,11 +6,11 @@ Actualiza las propiedades de un permiso aplicando revisiones del recurso.
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
-|Delegado (cuenta personal de Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
-|Aplicación | Files.ReadWrite.All, Sites.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | Files.ReadWrite, Files.ReadWrite.All    |
+|Aplicación | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -27,7 +27,6 @@ PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 | Nombre          | Tipo   | Descripción                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
-
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.

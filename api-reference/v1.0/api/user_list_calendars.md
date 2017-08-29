@@ -4,11 +4,11 @@ Obtiene todos los calendarios del usuario (propiedad de navegación `/calendars`
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
-|Aplicación | Calendars.Read, Calendars.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Calendars.Read, Calendars.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Calendars.Read, Calendars.ReadWrite    |
+|Aplicación | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 | Encabezado       | Valor |
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

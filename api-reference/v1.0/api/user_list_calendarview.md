@@ -4,11 +4,11 @@ Obtiene las repeticiones, excepciones e instancias únicas de eventos en una vis
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
-|Aplicación | Calendars.Read, Calendars.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Calendars.Read, Calendars.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Calendars.Read, Calendars.ReadWrite    |
+|Aplicación | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -50,7 +50,7 @@ Este método también admite los [parámetros de consulta de OData](http://devel
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type   | string  | application/json | 
+| Content-Type   | string  | application/json |
 | Prefer | string | outlook.timezone="Hora estándar del Este". Opcional. Se usa para especificar la zona horaria en las horas de inicio y final en la respuesta. Si no se especifica, la respuesta se devuelve en hora UTC. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

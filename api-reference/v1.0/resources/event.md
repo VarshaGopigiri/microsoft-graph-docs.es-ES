@@ -36,8 +36,6 @@ Este recurso admite:
 |[Crear propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [evento](event.md) | Crea una o más propiedades extendidas de varios valores en un evento nuevo o existente.  |
 |[Obtener evento con propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_get.md)  | [evento](event.md) | Obtiene un evento que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
 
-
-
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
@@ -72,19 +70,18 @@ Este recurso admite:
 |showAs|String|El estado que se mostrará: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
 |inicio|[dateTimeTimeZone](datetimetimezone.md)|La fecha, la hora y la zona horaria en que comienza el evento.|
 |subject|String|El texto de la línea de asunto del evento.|
-|type|String|El tipo de evento: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Los valores posibles son: `SingleInstance`, `Occurrence`, `Exception` y `SeriesMaster`.|
+|type|Cadena|El tipo de evento: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Los valores posibles son: `SingleInstance`, `Occurrence`, `Exception` y `SeriesMaster`.|
 |webLink|String|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attachments|Colección [attachment](attachment.md)|La colección de datos adjuntos [fileAttachment](fileAttachment.md) y [itemAttachment](itemAttachment.md) del evento. Propiedad de navegación. Solo lectura. Admite valores NULL.|
-|calendario|[calendario](calendar.md)|El calendario que contiene el evento. Propiedad de navegación. Solo lectura.|
+|calendar|[calendario](calendar.md)|El calendario que contiene el evento. Propiedad de navegación. Solo lectura.|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el evento. Solo lectura. Admite valores NULL.|
 |instances|Colección [event](event.md)|Las instancias del evento. Propiedad de navegación. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el evento. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el evento. Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

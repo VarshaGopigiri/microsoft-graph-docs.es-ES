@@ -205,7 +205,7 @@ Nota: Observará que se han configurado los siguientes ámbitos de permiso para 
 3. Elija el botón **Enviar correo electrónico**. Cuando se envíe el correo, se mostrará un mensaje de operación correcta debajo del botón.
 
 ## <a name="next-steps"></a>Pasos siguientes
-- Pruebe la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe la API de REST mediante el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Busque ejemplos de operaciones comunes tanto para REST como para SDK en el [Ejemplo de fragmentos de código de Objective C para Microsoft Graph para iOS](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample). 
 
 ## <a name="see-also"></a>Recursos adicionales

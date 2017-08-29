@@ -13,7 +13,7 @@ Según el recurso en el que se cree la extensión, se requiere uno de los siguie
 | [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | [mensaje](../resources/message.md) | Mail.ReadWrite |
 | [organización](../resources/organization.md) | Directory.AccessAsUser.All | [contacto personal](../resources/contact.md) | Contacts.ReadWrite |
 | [usuario](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>Solicitud HTTP
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Crear una extensión en una instancia de recurso nueva
@@ -60,7 +60,6 @@ Consulte la sección [Cuerpo de la solicitud](#request-body) para obtener inform
 |_Parámetros de dirección URL_|
 |id|string|Un identificador único para un objeto en la colección correspondiente. Necesario.|
 
-
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
@@ -91,8 +90,6 @@ Al crear una extensión en la misma operación en la que se crea una instancia d
 | Crear una extensión al crear explícitamente una _nueva_ instancia de recursos | [contacto](../resources/contact.md), [evento](../resources/event.md), [mensaje](../resources/message.md) | Incluye la nueva instancia ampliada con el objeto [openTypeExtension](../resources/openTypeExtension.md). |
 | Crear una extensión al crear implícitamente una instancia de recursos | [post](../resources/post.md) | La respuesta incluye sólo un código de respuesta, pero no un cuerpo de respuesta. |
 | Crear una extensión en una instancia de recurso _existente_ | Todos los recursos admitidos | Incluye el objeto **openTypeExtension**. |
- 
-
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request-1"></a>Solicitud 1

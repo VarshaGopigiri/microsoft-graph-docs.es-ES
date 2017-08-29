@@ -12,7 +12,7 @@ Representa una tabla de Excel.
 |[List columns](../api/table_list_columns.md) |Colección [TableColumn](tablecolumn.md)| Obtiene una colección de objetos TableColumn.|
 |[Create TableRow](../api/table_post_rows.md) |[TableRow](tablerow.md)| Crea un TableRow publicándolo en la colección rows.|
 |[List rows](../api/table_list_rows.md) |Colección [TableRow](tablerow.md)| Obtiene una colección de objetos TableRow.|
-|[Update](../api/table_update.md) | [Table](table.md)    |Actualiza el objeto Table. |
+|[Update](../api/table_update.md) | [Table](table.md)   |Actualiza el objeto Table. |
 |[Databodyrange](../api/table_databodyrange.md)|[Range](range.md)|Obtiene el objeto de rango asociado al cuerpo de datos de la tabla.|
 |[Headerrowrange](../api/table_headerrowrange.md)|[Range](range.md)|Obtiene el objeto de rango asociado a la fila de encabezado de la tabla.|
 |[Range](../api/table_range.md)|[Range](range.md)|Obtiene el objeto de rango asociado a toda la tabla.|
@@ -24,29 +24,27 @@ Representa una tabla de Excel.
 |[List](../api/table_list.md) | Colección [Table](table.md) |Obtener la colección de objetos table. |
 |[Add](../api/tablecollection_add.md)|[Table](table.md)|Crea una tabla nueva. La dirección de origen del rango determina la hoja de cálculo en la que se agregará la tabla. Si no se puede agregar la tabla (por ejemplo, porque la dirección no es válida o porque la tabla se superpondría con otra tabla), se producirá un error.|
 
-
-
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|int|Devuelve un valor que identifica de forma única la tabla de un libro determinado. El valor del identificador permanece igual, incluso cuando se cambia el nombre de la tabla. Solo lectura.|
 |name|string|Nombre de la tabla.|
 |showHeaders|boolean|Indica si la fila de encabezado está visible o no. Este valor puede establecerse para que muestre o quite la fila de encabezado.|
 |showTotals|boolean|Indica si la fila de totales está visible o no. Este valor puede establecerse para que muestre o quite la fila de totales.|
 |style|string|Valor constante que representa el estilo de tabla. Los valores posibles son: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. También puede especificarse un estilo personalizado definido por el usuario presente en el libro.|
-|highlightFirstColumn|Booleano|Indica si la primera columna contiene un formato especial.    |
-|highlightLastColumn|Booleano|Indica si la última columna contiene un formato especial.    |
-|showBandedColumns|Booleano|Indica si las columnas muestran un formato con bandas en el que las columnas impares están resaltadas de manera diferente que las pares para facilitar la lectura de la tabla.    |
+|highlightFirstColumn|Booleano|Indica si la primera columna contiene un formato especial.   |
+|highlightLastColumn|Booleano|Indica si la última columna contiene un formato especial. |
+|showBandedColumns|Booleano|Indica si las columnas muestran un formato con bandas en el que las columnas impares están resaltadas de manera diferente que las pares para facilitar la lectura de la tabla.   |
 |showBandedRows|Booleano|Indica si las filas muestran un formato con bandas en el que las filas impares están resaltadas de manera diferente que las pares para facilitar la lectura de la tabla.    |
-|showFilterButton|Booleano|Indica si los botones de filtro son visibles en la parte superior de cada encabezado de columna. Esta configuración solo se permite si la tabla contiene una fila de encabezado.    |
+|showFilterButton|Booleano|Indica si los botones de filtro son visibles en la parte superior de cada encabezado de columna. Esta configuración solo se permite si la tabla contiene una fila de encabezado.   |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |columns|Colección [TableColumn](tablecolumn.md)|Representa una colección de todas las columnas de la tabla. Solo lectura.|
 |rows|Colección [TableRow](tablerow.md)|Representa una colección de todas las filas de la tabla. Solo lectura.|
 |sort|[TableSort](tablesort.md)|Representa la ordenación de la tabla. Solo lectura.|
-|worksheet|[Worksheet](worksheet.md)|Hoja de cálculo que contiene la tabla actual. Solo lectura.|
+|worksheet|[Worksheet](worksheet.md)|La hoja de cálculo que contiene la tabla actual. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 

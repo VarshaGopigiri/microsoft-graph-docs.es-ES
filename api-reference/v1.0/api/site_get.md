@@ -19,11 +19,11 @@ También hay un identificador de sitio reservado, `root`, que siempre hace refer
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Sites.Read.All, Sites.ReadWrite.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | Sites.Read.All, Sites.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="get-the-tenants-root-site"></a>Obtener el sitio raíz del inquilino
 

@@ -3,10 +3,9 @@
 Representa información sobre un usuario en la finalización del envío o la recepción de un evento, un mensaje o una publicación de grupo. 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|Dirección de correo del destinatario.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -4,14 +4,13 @@ Duración de un evento.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |endDate|Date|Fecha de finalización de la serie.|
 |numberOfOccurrences|Int32|Número de veces que se repite el evento.|
 |recurrenceTimeZone|String |Zona horaria de las propiedades **startDate** y **endDate**. |
 |startDate|Date|Fecha de inicio de la tarea.|
 |type|String|Intervalo de periodicidad: EndDate = 0, NoEnd = 1, Numbered = 2. Valores posibles: `EndDate`, `NoEnd`, `Numbered`.||
-
 
 ## <a name="json-representation"></a>Representación JSON
 

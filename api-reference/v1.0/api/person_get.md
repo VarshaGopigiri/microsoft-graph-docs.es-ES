@@ -8,11 +8,11 @@ Puede obtener esta información a través de la API de contactos. Para obtener e
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
  
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | People.Read, People.Read.All    | 
-|Delegado (cuenta personal de Microsoft) | People.Read    | 
-|Aplicación | People.Read.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | People.Read, People.Read.All    |
+|Delegado (cuenta personal de Microsoft) | People.Read    |
+|Aplicación | People.Read.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 ## <a name="parameters"></a>Parámetros
 | Parámetro |Tipo       |Descripción|
 |:----------|:----------|:----------|
-|property_value|Cadena     |El valor de la propiedad extendida que debe coincidir. Es necesario cuando aparece en la sección de la **solicitud HTTP**.|
+|property_value|String     |El valor de la propiedad extendida que debe coincidir. Es necesario cuando aparece en la sección de la **solicitud HTTP**.|
 |person_property|String    |La propiedad person que debe coincidir. Es necesario cuando aparece en la sección de la **solicitud HTTP**.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud

@@ -4,14 +4,13 @@ Especifica un dominio para un inquilino. La propiedad **verifiedDomains** de la 
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |capabilities|String|Por ejemplo, "Email", "OfficeCommunicationsOnline".|
 |isDefault|Boolean|                **true** si se trata del dominio predeterminado asociado al inquilino; de lo contrario, **false**.            |
 |isInitial|Boolean|**true** si se trata del dominio inicial asociado al inquilino; de lo contrario, **false**.|
 |name|String|Nombre del dominio; por ejemplo, "contoso.onmicrosoft.com".|
 |type|String|Por ejemplo, "Administrado".|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

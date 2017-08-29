@@ -7,11 +7,11 @@ Al crear el borrador en la misma llamada **POST**, puede incluir [datos adjuntos
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Mail.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Mail.ReadWrite    | 
-|Aplicación | Mail.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Mail.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Mail.ReadWrite    |
+|Aplicación | Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

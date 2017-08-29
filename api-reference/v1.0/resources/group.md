@@ -57,17 +57,16 @@ Este recurso admite:
 |[Enumerar plannerPlans](../api/plannergroup_list_plans.md) |Colección [plannerPlan](plannerPlan.md)| Obtiene planes de Planner que pertenecen al grupo.|
 |**Configuración de usuario**| | |
 |[addFavorite](../api/group_addfavorite.md)|Ninguno|Agrega el grupo a la lista de grupos favoritos del usuario actual. Compatible solo con grupos de Office 365.|
-|[removeFavorite](../api/group_removefavorite.md)|Ninguno|Elimina el grupo de la lista de grupos favoritos del usuario actual. Se admite solo para grupos de Office 365.|
+|[removeFavorite](../api/group_removefavorite.md)|Ninguno|Quita el grupo de la lista de grupos favoritos del usuario actual. Compatible solo con grupos de Office 365.|
 |[Enumerar memberOf](../api/group_list_memberof.md) |Colección [directoryObject](directoryobject.md)| Obtiene los grupos y las unidades administrativas de los que el usuario es miembro directo desde la propiedad de navegación **memberOf**.|
 |[subscribeByMail](../api/group_subscribebymail.md)|Ninguno|Establece la propiedad isSubscribedByMail como **true**. Permite que el usuario actual pueda recibir conversaciones de correo electrónico. Compatible solo con grupos de Office 365.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|Ninguno|Establece la propiedad isSubscribedByMail como **false**. Impide que el usuario actual pueda recibir conversaciones de correo electrónico. Compatible solo con grupos de Office 365.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|Ninguno|Restablece a 0 la unseenCount de todas las publicaciones que el usuario actual no ha visto desde su última visita. Compatible solo con grupos de Office 365.|
 
-
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Booleano|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
+|allowExternalSenders|Boolean|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
 |autoSubscribeNewMembers|Booleano|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico. Puede establecer esta propiedad en una solicitud PATCH del grupo; no la establezca en la solicitud POST inicial que crea el grupo.|
 |classification|String|Describe una clasificación para el grupo (como impacto en el negocio bajo, medio o alto). Los valores válidos para esta propiedad se definen mediante la creación de un valor [setting](groupsetting.md) ClassificationList, basado en la [definición de plantilla](groupsettingtemplate.md).|
 |createdDateTime|DateTimeOffset| La fecha y la hora de creación del grupo. |
@@ -76,7 +75,7 @@ Este recurso admite:
 |groupTypes|Colección string| Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad. Es compatible con $filter.|
 |id|String|El identificador único del grupo. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
 |isSubscribedByMail|Booleano|El valor predeterminado es **true**. Indica si el usuario actual está suscrito para recibir conversaciones de correo electrónico.|
-|mail|String|La dirección SMTP del grupo, por ejemplo: "serviceadmins@contoso.onmicrosoft.com". Solo lectura. Es compatible con $filter.|
+|Correo|String|La dirección SMTP del grupo, por ejemplo: "serviceadmins@contoso.onmicrosoft.com". Solo lectura. Es compatible con $filter.|
 |mailEnabled|Boolean|Especifica si el grupo está habilitado para correo. Si la propiedad **securityEnabled** también es **true**, el grupo es un grupo de seguridad habilitado para correo electrónico; en caso contrario, el grupo es un grupo de distribución de Microsoft Exchange.|
 |mailNickname|String|El alias de correo del grupo. Esta propiedad debe especificarse al crear un grupo. Es compatible con $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica la última vez que el grupo se ha sincronizado con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. Es compatible con $filter.|
@@ -95,9 +94,9 @@ Este recurso admite:
 |calendarView|Colección [event](event.md)|La vista Calendario del calendario. Solo lectura.|
 |conversations|Colección [conversation](conversation.md)|Las conversaciones del grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| El usuario (o la aplicación) que creó el grupo. NOTA: No se establece si el usuario es un administrador. Solo lectura.|
-|drive|[drive](drive.md)|La unidad del grupo. Solo lectura.|
+|Unidad|[drive](drive.md)|La unidad del grupo. Solo lectura.|
 |events|Colección [event](event.md)|Los eventos de calendario del grupo.|
-|extensions|Colección [extension](extension.md)|La colección de extensiones abiertas definidas para el grupo. Solo lectura. Admite valores NULL.|
+|extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el grupo. Solo lectura. Admite valores NULL.|
 |memberOf|Colección [directoryObject](directoryobject.md)|Grupos a los que pertenece este grupo. Métodos HTTP: GET (compatible con todos los grupos). Solo lectura. Admite valores NULL.|
 |members|Colección [directoryObject](directoryobject.md)| Los usuarios y los grupos que son miembros de este grupo. Métodos HTTP: GET (compatible con todos los grupos), POST (compatible con grupos de Office 365, grupos de seguridad y los grupos de seguridad habilitados para correo), DELETE (compatible con grupos de Office 365 y grupos de seguridad). Admite valores NULL.|
 |onenote|[OneNote](onenote.md)| Solo lectura.|
@@ -105,11 +104,10 @@ Este recurso admite:
 |Foto|[profilePhoto](profilephoto.md)| La foto de perfil del grupo. |
 |photos|Colección [profilePhoto](profilephoto.md)| Las fotos de perfil que pertenecen al grupo. Solo lectura. Admite valores NULL.|
 |planner|[Planner](planner.md)| Punto de entrada al recurso de Planner que puede existir para un grupo unificado.|
-|rejectedSenders|Colección [directoryObject](directoryobject.md)|La lista de usuarios o grupos que no tienen permiso para crear publicaciones o eventos de calendario en este grupo. Nullable|
+|rejectedSenders|Colección [directoryObject](directoryobject.md)|La lista de usuarios o grupos que no tienen permiso para crear publicaciones o eventos de calendario en este grupo. Admite valores NULL|
 |configuración|Colección de [groupSetting](groupsetting.md)| Solo lectura. Admite valores NULL.|
 |sites|Colección [site](site.md)|La lista de sitios de SharePoint de este grupo. Acceda al sitio predeterminado con /sites/root.
 |threads|Colección [conversationThread](conversationthread.md)| Los hilos de conversación del grupo. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

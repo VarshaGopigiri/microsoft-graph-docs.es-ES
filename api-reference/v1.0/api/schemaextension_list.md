@@ -6,11 +6,11 @@ Obtenga una lista de objetos [schemaExtension](../resources/schemaextension.md) 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | No admitida. | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -24,7 +24,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 | Nombre      |Descripción|
 |:----------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

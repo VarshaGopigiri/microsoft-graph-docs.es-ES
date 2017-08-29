@@ -19,15 +19,15 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |[Crear registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| Agregue un usuario registrado para el dispositivo; para ello, publique la propiedad de navegación registeredUsers.|
 |[Enumerar registeredUsers](../api/device_list_registeredusers.md) |Colección [directoryObject](directoryobject.md)| Obtenga los usuarios registrados del dispositivo de la propiedad de navegación registeredUsers.|
 |**Extensiones abiertas**| | |
-|[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Cree una extensión abierta y agregue propiedades personalizadas en una instancia nueva o un recurso existente.|
-|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga una extensión abierta identificada por el nombre de extensión.|
+|[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
+|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
 |**Extensiones de esquema**| | |
 |[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** si la cuenta está habilitada; en caso contrario, **false**. Necesario.|
+|accountEnabled|Booleano| **true** si la cuenta está habilitada; en caso contrario, **false**. Necesario.|
 |alternativeSecurityIds|Colección [alternativeSecurityId](alternativesecurityid.md)| El operador **any** es necesario para las expresiones de filtro en las propiedades de varios valores. No admite valores NULL. Necesario. |
 |approximateLastSignInDateTime|DateTimeOffset| El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |deviceId|Guid| GUID especificado de cliente único para representar el dispositivo. Necesario. |
@@ -45,13 +45,11 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |trustType|String|    ||
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |extensions|Colección [extension](extension.md)|La colección de extensiones abiertas definidas para el dispositivo. Solo lectura. Admite valores NULL.|
 |registeredOwners|Colección [directoryObject](directoryobject.md)|Usuarios que son propietarios registrados del dispositivo. Solo lectura. Admite valores NULL.|
 |registeredUsers|Colección [directoryObject](directoryobject.md)|Usuarios que son usuarios registrados del dispositivo. Solo lectura. Admite valores NULL.|
-
-
 
 ## <a name="json-representation"></a>Representación JSON
 

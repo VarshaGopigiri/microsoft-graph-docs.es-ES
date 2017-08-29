@@ -10,20 +10,17 @@ En la tabla siguiente, se enumeran tres escenarios en los que puede obtener una 
 |Expanda una instancia de recurso conocida con una extensión específica.|Dispositivo, evento, grupo, evento de grupo, publicación de grupo, mensaje, organización, contacto personal, usuario |Una instancia de recurso expandida con la extensión abierta.|
 |Busque y expanda las instancias de recurso con una extensión específica. |Evento, evento de grupo, publicación de grupo, mensaje, contacto personal|Instancias de recurso expandidas con la extensión abierta.|
 
-
 ## <a name="permissions"></a>Permisos
 
 Según el recurso que contenga la extensión, se requiere uno de los siguientes permisos para ejecutar esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
 |:-----|:-----|:-----|:-----|
-| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read | 
-| [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All | 
-| [Publicación de grupo](../resources/post.md) | Group.Read.All | [Mensaje](../resources/message.md) | Mail.Read | 
+| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read |
+| [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All |
+| [Publicación de grupo](../resources/post.md) | Group.Read.All | [Mensaje](../resources/message.md) | Mail.Read |
 | [Organización](../resources/organization.md) | Directory.Read.All | [Contacto personal](../resources/contact.md) | Contacts.Read |
 | [Usuario](../resources/user.md) | User.Read.All | | |
-
-
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -93,7 +90,6 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |Id|string|Marcador de posición de un identificador único para un objeto en la colección correspondiente, como mensajes, contactos o eventos. Necesario. No se debe confundir con la propiedad **id** de una **openTypeExtension**.|
 |extensionId|string|Marcador de posición para un nombre de extensión que es un identificador de texto único de una extensión o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad **id** cuando crea la extensión. Necesario.|
 
-
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
 Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools.com/tags/ref_urlencode.asp) a los caracteres de espacio de la cadena `$filter`.
@@ -101,15 +97,13 @@ Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools
 |**Nombre**|**Valor**|**Descripción**|
 |:---------------|:--------|:-------|
 |$filter|string|Devuelve una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
-|$filter con **cualquier** operador|string|Devuelve instancias de una colección de recursos que contienen una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.| 
+|$filter con **cualquier** operador|string|Devuelve instancias de una colección de recursos que contienen una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
 |$expand|string|Expande una instancia de recurso para incluir una extensión. |
-
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
 | Authorization | {token} de portador. Obligatorio. |
-
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -104,7 +104,6 @@ PATCH /groups/{id}/events/{id}
 |id|String|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique esto para identificar la propiedad. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
 |value|string|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique el valor de la propiedad. Necesario.|
 
-
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|

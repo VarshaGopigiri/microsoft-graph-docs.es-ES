@@ -4,11 +4,11 @@ Devuelve una lista de los avisos de calendario entre las horas de inicio y final
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
-|Aplicación | Calendars.Read, Calendars.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Calendars.Read, Calendars.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Calendars.Read, Calendars.ReadWrite    |
+|Aplicación | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -24,13 +24,12 @@ En la dirección URL de la solicitud, proporcione los siguientes parámetros de 
 |startDateTime|String|Fecha y hora de inicio del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|Fecha y hora de finalización del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T20:00:00.0000000".|
 
-
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor|
 |:-----------|:------|
 | Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type   | application/json |
-| Prefer | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.| 
+| Prefer | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

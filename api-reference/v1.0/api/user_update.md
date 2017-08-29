@@ -5,11 +5,11 @@ Actualiza las propiedades de un objeto de usuario.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
-|Delegado (cuenta personal de Microsoft) | User.ReadWrite    | 
-|Aplicación | User.ReadWrite.All, Directory.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (cuenta personal de Microsoft) | User.ReadWrite    |
+|Aplicación | User.ReadWrite.All, Directory.ReadWrite.All |
 
 Al actualizar la propiedad passwordProfile, se necesita el siguiente ámbito: Directory.AccessAsUser.All.
 

@@ -3,7 +3,7 @@
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |changeKey|String|Identifica la versión del aviso. Cada vez que cambia el aviso, cambia también **changeKey**. Permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Fecha, hora y zona horaria en que finaliza el evento.|
@@ -13,7 +13,6 @@
 |eventSubject|String|Texto de la línea de asunto del evento.|
 |eventWebLink|String|Dirección URL para abrir el evento en Outlook en la web.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook en la web. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|Fecha, hora y zona horaria en que se establece que se produzca el aviso.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

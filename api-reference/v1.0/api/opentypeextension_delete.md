@@ -39,12 +39,10 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |id|string|Un identificador único para una instancia en la colección correspondiente. Necesario.|
 |extensionId|string|Puede ser un nombre de extensión, que es un identificador de texto único de la extensión, o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad `id` al crear la extensión. Necesario.|
 
-
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
 | Authorization | {token} de portador. Obligatorio. |
-
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

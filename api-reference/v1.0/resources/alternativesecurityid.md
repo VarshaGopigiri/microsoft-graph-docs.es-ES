@@ -3,12 +3,11 @@
 Contiene un identificador de seguridad alternativo asociado a un dispositivo. La propiedad **alternativeSecurityIds** de la entidad [Device](device.md) es una colección de **alternativeSecurityId**.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |identityProvider|String|            |
 |key|Binary|            |
 |type|Int32|            |
-
 
 ## <a name="json-representation"></a>Representación JSON
 

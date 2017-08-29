@@ -19,7 +19,6 @@ Las extensiones abiertas son compatibles con los recursos siguientes en las vers
 | [Contacto personal](contact.md) | GA |
 | [user](user.md) | GA |
 
-
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>¿Se deben utilizar extensiones abiertas (para recursos de Outlook) o propiedades extendidas?
 
 Las extensiones abiertas son la solución recomendada en la mayoría de escenarios relacionados con el almacenamiento y el acceso de datos personalizados. Sin embargo, si necesita acceder a datos personalizados para las propiedades MAPI de Outlook que no están ya expuestas en los [metadatos API de Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs/overview/call_api), puede usar [propiedades extendidas y su API REST](extended-properties-overview.md). Puede comprobar las propiedades que exponen los metadatos en: https://graph.microsoft.com/v1.0/$metadata.
@@ -45,7 +44,7 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |extensionName|String|Un identificador de texto único para una extensión abierta de tipo abierto. Necesario.|
 |id|String| Un identificador completo que concatena el tipo de extensión con el **extensionName**. Solo lectura.|
@@ -58,9 +57,9 @@ Ninguno
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md) (en una instancia de recurso existente) o un [contacto](../resources/contact.md), [evento](../resources/event.md) o [mensaje](../resources/message.md) nuevo que contenga un objeto openTypeExtension. | Cree un objeto openTypeExtension en una instancia de recursos nueva o existente.| 
+|[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md) (en una instancia de recurso existente) o un [contacto](../resources/contact.md), [evento](../resources/event.md) o [mensaje](../resources/message.md) nuevo que contenga un objeto openTypeExtension. | Cree un objeto openTypeExtension en una instancia de recursos nueva o existente.|
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Lea las propiedades y las relaciones del objeto openTypeExtension.|
-|[Actualizar](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)    |Actualice el objeto openTypeExtension. |
+|[Actualizar](../api/opentypeextension_update.md) | [openTypeExtension](opentypeextension.md)   |Actualice el objeto openTypeExtension. |
 |[Eliminar](../api/opentypeextension_delete.md) | Ninguno |Elimine el objeto openTypeExtension. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

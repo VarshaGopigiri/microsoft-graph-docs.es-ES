@@ -1,6 +1,6 @@
 # <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
 
-Un grupo de calendarios.
+Grupo de calendarios.
 
 **Nota** Outlook.com solo admite el grupo de calendarios predeterminado que es accesible mediante el acceso directo ../me/calendars. No se puede eliminar ese grupo de calendarios.
 
@@ -16,9 +16,8 @@ Un grupo de calendarios.
 |[List calendars](../api/calendargroup_list_calendars.md) |Colección [Calendar](calendar.md)| Muestra la lista de calendarios de un grupo de calendarios.|
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Crea un calendario en un grupo de calendarios.|
 
-
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |name|String|Nombre del grupo.|
 |changeKey|String|Identifica la versión del grupo de calendarios. Cada vez que cambia el grupo de calendarios, cambia también ChangeKey. Permite que Exchange aplique los cambios a la versión correcta del objeto. Solo lectura.|
@@ -26,10 +25,9 @@ Un grupo de calendarios.
 |id|String|Identificador único del grupo. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|calendars|Colección [calendar](calendar.md)|Calendarios del grupo de calendarios. Propiedad de navegación. Solo lectura. Admite valores NULL.|
-
+|calendars|Colección [Calendar](calendar.md)|Calendarios del grupo de calendarios. Propiedad de navegación. Solo lectura. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -18,7 +18,7 @@ Según el recurso en el que se creó la extensión, se requiere uno de los sigui
 | [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | [mensaje](../resources/message.md) | Mail.ReadWrite |
 | [organización](../resources/organization.md) | Directory.AccessAsUser.All | [contacto personal](../resources/contact.md) | Contacts.ReadWrite |
 | [usuario](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>Solicitud HTTP
 En la solicitud, identifique la instancia de recurso, utilice la propiedad de navegación **extensiones** de esa instancia para identificar y realizar un `PATCH` en esa instancia de extensión.
 
@@ -46,7 +46,6 @@ Consulte la sección [Cuerpo de la solicitud](#request-body) sobre cómo incluir
 |_Parámetros de dirección URL_|
 |id|string|Un identificador único para una instancia de la colección correspondiente. Necesario.|
 |extensionId|string|Puede ser un nombre de extensión, que es un identificador de texto único de una extensión, o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad `id` al crear la extensión. Necesario.|
-
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |

@@ -285,7 +285,7 @@ Por último, el código usa el código de respuesta HTTP que se ha devuelto para
 3. Vaya a `http://localhost:3000` en el explorador web.
 
 ## <a name="see-also"></a>Recursos adicionales
-- Pruebe la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe la API de REST mediante el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Explore nuestros otros [ejemplos de Microsoft Graph](https://github.com/microsoftgraph) en GitHub.
 
 

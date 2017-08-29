@@ -34,8 +34,6 @@ En la tabla siguiente se muestran algunos de los casos de uso comunes para recur
 | Obtenga información sobre las SKU de servicio a las que está suscrita una empresa. | [subscribedSku](../resources/subscribedsku.md) | N/D |
 | Invite a usuarios externos (invitados) a una organización. | [invitation](../resources/invitation.md) | [¿Qué es la colaboración B2B de Azure AD?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 
-
-
 ## <a name="next-steps"></a>Siguientes pasos
 Las API y los recursos de directorio pueden proporcionar nuevas formas de comunicarse con los usuarios y administrar sus experiencias con Microsoft Graph. Para obtener más información: 
 

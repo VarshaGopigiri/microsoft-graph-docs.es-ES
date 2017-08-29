@@ -22,23 +22,20 @@ Este recurso es compatible con el uso de una [consulta delta](../../../concepts/
 |[Crear propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | Cree una o varias propiedades extendidas de varios valores en un objeto contactFolder nuevo o existente.  |
 |[Obtener contactFolder con propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Obtenga un objeto contactFolder que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
 
-
-
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |displayName|String|El nombre para mostrar de la carpeta.|
 |id|String|Identificador único de la carpeta de contactos. Solo lectura.|
 |parentFolderId|String|El identificador de la carpeta principal de la carpeta.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|childFolders|Colección [contactFolder](contactfolder.md)|La colección de carpetas secundarias de la carpeta. Propiedad Navigation. Solo lectura. Admite valores NULL.|
-|contactos|Colección [contacts](contact.md)|Los contactos de la carpeta. Propiedad Navigation. Solo lectura. Admite valores NULL.|
+|childFolders|Colección [ContactFolder](contactfolder.md)|La colección de carpetas secundarias de la carpeta. Propiedad Navigation. Solo lectura. Admite valores NULL.|
+|contacts|Colección [contact](contact.md)|Los contactos de la carpeta. Propiedad Navigation. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el objeto contactFolder. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el objeto contactFolder. Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

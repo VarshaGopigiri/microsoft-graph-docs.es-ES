@@ -11,11 +11,11 @@ Al crear una invitación, dispone de varias opciones:
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

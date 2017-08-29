@@ -40,7 +40,7 @@ Necesita registrar la aplicación en el [Portal de registro de aplicaciones de M
 
 Registre una aplicación en el portal de registro de aplicaciones de Microsoft. Este proceso generará el id. de aplicación y la contraseña que usará para configurar la aplicación.
 
-1. Inicie sesión en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/) con su cuenta personal, profesional o educativa.
+1. Inicie sesión en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/) mediante su cuenta personal, profesional o educativa.
 
 2. Seleccione **Agregar una aplicación**.
 
@@ -64,7 +64,7 @@ Registre una aplicación en el portal de registro de aplicaciones de Microsoft. 
 
     Para el flujo no guiado:
 
-    Se muestra la página de registro con una lista de las propiedades de la aplicación.
+    Se muestra la página de registro, indicando las propiedades de la aplicación.
 
     a. Copie el id. de aplicación. Es el identificador único de la aplicación. 
 
@@ -548,7 +548,7 @@ Está preparado para probar la aplicación de Android.
 Compruebe la Bandeja de entrada de la dirección de correo electrónico que configuró en [Llamar a Microsoft Graph](#call-microsoft-graph). Debe tener un correo electrónico de la cuenta que utilizó para iniciar sesión en la aplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
-- Pruebe el [Probador de Microsoft Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe el [Probador de Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Encuentre ejemplos de operaciones comunes en [Fragmentos de código de ejemplo para Android](https://github.com/microsoftgraph/android-java-snippets-sample) o explore nuestros otros [Ejemplos de Android](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) en GitHub.
 
 

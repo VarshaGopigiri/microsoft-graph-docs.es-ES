@@ -10,11 +10,11 @@ Solo la aplicación que ha creado una extensión de esquema (la aplicación prop
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | No admitida. | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -28,7 +28,7 @@ PATCH /schemaExtensions/{id}
 | Nombre      |Descripción|
 |:----------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
-| Content-Type   | application/json | 
+| Content-Type   | application/json |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 

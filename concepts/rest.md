@@ -133,7 +133,7 @@ Authorization: Bearer eyJ0eXAi...b66LoPVA
 Ahora que ha visto cómo realizar llamadas a Microsoft Graph, puede usar la referencia de la API para construir cualquier otro tipo de llamada que su aplicación necesite realizar. Sin embargo, tenga en cuenta que su aplicación debe tener los permisos adecuados configurados en el registro de aplicaciones para las llamadas que realice.
 
 ## <a name="next-steps"></a>Pasos siguientes
-- Pruebe más características de la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
+- Pruebe más características de la API de REST mediante el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 ## <a name="see-also"></a>Recursos adicionales
 - [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)

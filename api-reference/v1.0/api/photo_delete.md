@@ -4,11 +4,11 @@ Elimina una foto.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Files.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Files.ReadWrite    | 
-|Aplicación | No admitida. | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Files.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Files.ReadWrite    |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +23,6 @@ DELETE /drive/root/createdByUser/photo
 |:---------------|:--------|:----------|
 | if-match  | string  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará.|
 | Autorización  | string  | {token} de portador. Obligatorio. |
-
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

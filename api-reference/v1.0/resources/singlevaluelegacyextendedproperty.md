@@ -12,9 +12,8 @@ Consulte el artículo de [información general sobre las propiedades extendidas]
 |[Post](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) | Instancia de recurso admitida: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md) o [contactFolder](../resources/contactfolder.md), pero no [post](../resources/post.md) de grupo. | Crea una **singleValueLegacyExtendedProperty** en una instancia nueva o existente de un recurso compatible. |
 |[Get](../api/singlevaluelegacyextendedproperty_get.md) |Instancia o colección de instancias de recurso admitidas: ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md) o [post](../resources/post.md) de grupo), o una instancia de este tipo expandida con un objeto [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md). |Obtiene una instancia del recurso con una propiedad extendida mediante `$expand` o `$filter`.|
 
-
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|string|Identificador de propiedad que se usa para identificar la propiedad. Solo lectura.|
 |value|string|Valor de la propiedad.|

@@ -4,11 +4,10 @@ Contiene el perfil de contraseña asociado al usuario. La propiedad **passwordPr
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolean| **true** si el usuario debe cambiar su contraseña en el próximo inicio de sesión; en caso contrario **false**. |
 |password|String|Contraseña del usuario. Esta propiedad es necesaria cuando se crea un usuario. Se puede actualizar, pero el usuario deberá cambiar la contraseña en el próximo inicio de sesión. La contraseña debe cumplir los requisitos mínimos especificados por la propiedad **passwordPolicies** del usuario. De manera predeterminada, se requiere una contraseña segura.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 
