@@ -1,37 +1,43 @@
-# <a name="conversationthread-reply"></a><span data-ttu-id="d76ed-101">conversationThread: reply</span><span class="sxs-lookup"><span data-stu-id="d76ed-101">conversationThread: reply</span></span>
+# <a name="conversationthread-reply"></a><span data-ttu-id="0a4e3-101">conversationThread: reply</span><span class="sxs-lookup"><span data-stu-id="0a4e3-101">conversationThread: reply</span></span>
 
-<span data-ttu-id="d76ed-p101">Responde a un hilo de una conversación de grupo y agrega una nueva publicación a la misma. Puede especificar la conversación primaria en la solicitud, o bien, especificar solo el hilo sin la conversación primaria.</span><span class="sxs-lookup"><span data-stu-id="d76ed-p101">Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.</span></span>
+<span data-ttu-id="0a4e3-p101">Responde a un hilo de una conversación de grupo y agrega una nueva publicación a la misma. Puede especificar la conversación primaria en la solicitud, o bien, especificar solo el hilo sin la conversación primaria.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-p101">Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d76ed-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="d76ed-104">Prerequisites</span></span>
-<span data-ttu-id="d76ed-105">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Group.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="d76ed-105">One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*</span></span>
+## <a name="permissions"></a><span data-ttu-id="0a4e3-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="0a4e3-104">Permissions</span></span>
+<span data-ttu-id="0a4e3-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0a4e3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d76ed-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d76ed-106">HTTP request</span></span>
+|<span data-ttu-id="0a4e3-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="0a4e3-107">Permission type</span></span>      | <span data-ttu-id="0a4e3-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="0a4e3-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="0a4e3-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="0a4e3-109">Delegated (work or school account)</span></span> | <span data-ttu-id="0a4e3-110">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a4e3-110">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0a4e3-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0a4e3-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0a4e3-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-112">Not supported.</span></span>    |
+|<span data-ttu-id="0a4e3-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="0a4e3-113">Application</span></span> | <span data-ttu-id="0a4e3-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a4e3-114">Group.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="0a4e3-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="0a4e3-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
-## <a name="request-headers"></a><span data-ttu-id="d76ed-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="d76ed-107">Request headers</span></span>
-| <span data-ttu-id="d76ed-108">Encabezado</span><span class="sxs-lookup"><span data-stu-id="d76ed-108">Header</span></span>       | <span data-ttu-id="d76ed-109">Valor</span><span class="sxs-lookup"><span data-stu-id="d76ed-109">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="0a4e3-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="0a4e3-116">Request headers</span></span>
+| <span data-ttu-id="0a4e3-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="0a4e3-117">Header</span></span>       | <span data-ttu-id="0a4e3-118">Valor</span><span class="sxs-lookup"><span data-stu-id="0a4e3-118">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d76ed-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="d76ed-110">Authorization</span></span>  | <span data-ttu-id="d76ed-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d76ed-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d76ed-113">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d76ed-113">Content-Type</span></span>  | <span data-ttu-id="d76ed-p103">application/json. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d76ed-p103">application/json. Required.</span></span>  |
+| <span data-ttu-id="0a4e3-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="0a4e3-119">Authorization</span></span>  | <span data-ttu-id="0a4e3-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="0a4e3-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0a4e3-122">Content-Type</span></span>  | <span data-ttu-id="0a4e3-p104">application/json. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d76ed-116">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="d76ed-116">Request body</span></span>
-<span data-ttu-id="d76ed-117">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="d76ed-117">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0a4e3-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="0a4e3-125">Request body</span></span>
+<span data-ttu-id="0a4e3-126">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="d76ed-118">Parámetro</span><span class="sxs-lookup"><span data-stu-id="d76ed-118">Parameter</span></span>    | <span data-ttu-id="d76ed-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="d76ed-119">Type</span></span>   |<span data-ttu-id="d76ed-120">Descripción</span><span class="sxs-lookup"><span data-stu-id="d76ed-120">Description</span></span>|
+| <span data-ttu-id="0a4e3-127">Parámetro</span><span class="sxs-lookup"><span data-stu-id="0a4e3-127">Parameter</span></span>    | <span data-ttu-id="0a4e3-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="0a4e3-128">Type</span></span>   |<span data-ttu-id="0a4e3-129">Descripción</span><span class="sxs-lookup"><span data-stu-id="0a4e3-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d76ed-121">post</span><span class="sxs-lookup"><span data-stu-id="d76ed-121">post</span></span>|[<span data-ttu-id="d76ed-122">post</span><span class="sxs-lookup"><span data-stu-id="d76ed-122">post</span></span>](../resources/post.md)|<span data-ttu-id="d76ed-123">La nueva publicación con que se responde.</span><span class="sxs-lookup"><span data-stu-id="d76ed-123">The new post that is being replied with.</span></span>|
+|<span data-ttu-id="0a4e3-130">post</span><span class="sxs-lookup"><span data-stu-id="0a4e3-130">post</span></span>|[<span data-ttu-id="0a4e3-131">post</span><span class="sxs-lookup"><span data-stu-id="0a4e3-131">post</span></span>](../resources/post.md)|<span data-ttu-id="0a4e3-132">La nueva publicación con que se responde.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-132">The new post that is being replied with.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d76ed-124">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d76ed-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0a4e3-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0a4e3-133">Response</span></span>
 
-<span data-ttu-id="d76ed-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d76ed-p104">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0a4e3-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d76ed-127">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d76ed-127">Example</span></span>
-<span data-ttu-id="d76ed-128">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="d76ed-128">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="d76ed-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d76ed-129">Request</span></span>
-<span data-ttu-id="d76ed-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d76ed-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0a4e3-136">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0a4e3-136">Example</span></span>
+<span data-ttu-id="0a4e3-137">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="0a4e3-138">Solicitud</span><span class="sxs-lookup"><span data-stu-id="0a4e3-138">Request</span></span>
+<span data-ttu-id="0a4e3-139">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "conversationthread_reply"
@@ -51,8 +57,8 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="d76ed-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d76ed-131">Response</span></span>
-<span data-ttu-id="d76ed-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d76ed-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="0a4e3-140">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0a4e3-140">Response</span></span>
+<span data-ttu-id="0a4e3-141">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="0a4e3-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,12 +1,16 @@
-# <a name="get-resource"></a><span data-ttu-id="9c161-101">Obtener recurso</span><span class="sxs-lookup"><span data-stu-id="9c161-101">Get resource</span></span>
+# <a name="get-resource"></a><span data-ttu-id="ca672-101">Obtener recurso</span><span class="sxs-lookup"><span data-stu-id="ca672-101">Get resource</span></span>
 
-<span data-ttu-id="9c161-102">Recupere los datos binarios de un objeto [resource](../resources/resource.md) de un archivo o una imagen.</span><span class="sxs-lookup"><span data-stu-id="9c161-102">Retrieve the binary data of a file or image [resource](../resources/resource.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9c161-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="9c161-103">Prerequisites</span></span>
-<span data-ttu-id="9c161-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="9c161-104">One of the following **scopes** is required to execute this API:</span></span>  
+<span data-ttu-id="ca672-102">Recupera los datos binarios de un objeto [resource](../resources/resource.md) de un archivo o una imagen.</span><span class="sxs-lookup"><span data-stu-id="ca672-102">Retrieve the binary data of a file or image [resource](../resources/resource.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ca672-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="ca672-103">Permissions</span></span>
+<span data-ttu-id="ca672-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="ca672-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-<span data-ttu-id="9c161-105">Notes.Read, Notes.ReadWrite, Notes.Read.All o Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c161-105">Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span>
+|<span data-ttu-id="ca672-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="ca672-106">Permission type</span></span>      | <span data-ttu-id="ca672-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="ca672-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="ca672-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ca672-108">Delegated (work or school account)</span></span> | <span data-ttu-id="ca672-109">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ca672-109">Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="ca672-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ca672-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca672-111">Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca672-111">Notes.Read, Notes.ReadWrite</span></span>    | 
+|<span data-ttu-id="ca672-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ca672-112">Application</span></span> | <span data-ttu-id="ca672-113">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ca672-113">Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="9c161-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9c161-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ca672-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ca672-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/resources/{id}/content
@@ -15,22 +19,22 @@ GET /groups/{id}/onenote/resources/{id}/content
 GET /sites/{id}/onenote/resources/{id}/content
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9c161-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9c161-107">Request headers</span></span>
-| <span data-ttu-id="9c161-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="9c161-108">Name</span></span>       | <span data-ttu-id="9c161-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="9c161-109">Type</span></span> | <span data-ttu-id="9c161-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="9c161-110">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ca672-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="ca672-115">Request headers</span></span>
+| <span data-ttu-id="ca672-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="ca672-116">Name</span></span>       | <span data-ttu-id="ca672-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="ca672-117">Type</span></span> | <span data-ttu-id="ca672-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="ca672-118">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="9c161-111">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c161-111">Authorization</span></span>  | <span data-ttu-id="9c161-112">string</span><span class="sxs-lookup"><span data-stu-id="9c161-112">string</span></span>  | <span data-ttu-id="9c161-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9c161-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ca672-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="ca672-119">Authorization</span></span>  | <span data-ttu-id="ca672-120">string</span><span class="sxs-lookup"><span data-stu-id="ca672-120">string</span></span>  | <span data-ttu-id="ca672-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="ca672-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9c161-115">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9c161-115">Request body</span></span>
-<span data-ttu-id="9c161-116">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="9c161-116">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ca672-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="ca672-123">Request body</span></span>
+<span data-ttu-id="ca672-124">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="ca672-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9c161-117">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9c161-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ca672-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ca672-125">Response</span></span>
 
-<span data-ttu-id="9c161-118">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y los datos binarios del archivo o la imagen en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9c161-118">If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.</span></span>
+<span data-ttu-id="ca672-126">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y los datos binarios del archivo o la imagen en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ca672-126">If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.</span></span>
 
-<span data-ttu-id="9c161-119">Nota: Las imágenes no se procesan directamente en un explorador porque requieren autorización para recuperarlas, al igual que el resto del contenido de la página.</span><span class="sxs-lookup"><span data-stu-id="9c161-119">Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.</span></span>
-## <a name="example"></a><span data-ttu-id="9c161-120">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9c161-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9c161-121">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9c161-121">Request</span></span>
-<span data-ttu-id="9c161-122">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9c161-122">Here is an example of the request.</span></span>
+<span data-ttu-id="ca672-127">Nota: Las imágenes no se procesan directamente en un explorador porque requieren autorización para recuperarlas, al igual que el resto del contenido de la página.</span><span class="sxs-lookup"><span data-stu-id="ca672-127">Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.</span></span>
+## <a name="example"></a><span data-ttu-id="ca672-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ca672-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ca672-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="ca672-129">Request</span></span>
+<span data-ttu-id="ca672-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="ca672-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_resource"
@@ -38,8 +42,8 @@ GET /sites/{id}/onenote/resources/{id}/content
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
-##### <a name="response"></a><span data-ttu-id="9c161-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9c161-123">Response</span></span>
-<span data-ttu-id="9c161-124">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9c161-124">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="ca672-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ca672-131">Response</span></span>
+<span data-ttu-id="ca672-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ca672-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

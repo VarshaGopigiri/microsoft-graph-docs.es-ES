@@ -1,30 +1,37 @@
-# <a name="group-resetunseencount"></a><span data-ttu-id="71413-101">group: resetUnseenCount</span><span class="sxs-lookup"><span data-stu-id="71413-101">group: resetUnseenCount</span></span>
+# <a name="group-resetunseencount"></a><span data-ttu-id="82c3d-101">group: resetUnseenCount</span><span class="sxs-lookup"><span data-stu-id="82c3d-101">group: resetUnseenCount</span></span>
 
-<span data-ttu-id="71413-p101">Restablece la unseenCount de todas las publicaciones que el usuario actual no ha visto desde su última visita. Compatible solo con grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="71413-p101">Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.</span></span>
+<span data-ttu-id="82c3d-p101">Restablece la unseenCount de todas las publicaciones que el usuario actual no ha visto desde su última visita. Compatible solo con grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="82c3d-p101">Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="71413-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="71413-104">Prerequisites</span></span>
-<span data-ttu-id="71413-105">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Group.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="71413-105">One of the following **scopes** is required to execute this API: *Group.ReadWrite.All*</span></span> 
-## <a name="http-request"></a><span data-ttu-id="71413-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="71413-106">HTTP request</span></span>
+## <a name="permissions"></a><span data-ttu-id="82c3d-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="82c3d-104">Permissions</span></span>
+<span data-ttu-id="82c3d-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="82c3d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="82c3d-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="82c3d-107">Permission type</span></span>      | <span data-ttu-id="82c3d-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="82c3d-108">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="82c3d-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="82c3d-109">Delegated (work or school account)</span></span> | <span data-ttu-id="82c3d-110">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82c3d-110">Group.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="82c3d-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="82c3d-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82c3d-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="82c3d-112">Not supported.</span></span>    | 
+|<span data-ttu-id="82c3d-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="82c3d-113">Application</span></span> | <span data-ttu-id="82c3d-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82c3d-114">Group.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="82c3d-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="82c3d-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/resetUnseenCount
 ```
-## <a name="request-headers"></a><span data-ttu-id="71413-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="71413-107">Request headers</span></span>
-| <span data-ttu-id="71413-108">Encabezado</span><span class="sxs-lookup"><span data-stu-id="71413-108">Header</span></span>       | <span data-ttu-id="71413-109">Valor</span><span class="sxs-lookup"><span data-stu-id="71413-109">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="82c3d-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="82c3d-116">Request headers</span></span>
+| <span data-ttu-id="82c3d-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="82c3d-117">Header</span></span>       | <span data-ttu-id="82c3d-118">Valor</span><span class="sxs-lookup"><span data-stu-id="82c3d-118">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="71413-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="71413-110">Authorization</span></span>  | <span data-ttu-id="71413-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="71413-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="82c3d-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="82c3d-119">Authorization</span></span>  | <span data-ttu-id="82c3d-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="82c3d-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="71413-113">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="71413-113">Request body</span></span>
-<span data-ttu-id="71413-114">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="71413-114">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="82c3d-122">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="82c3d-122">Request body</span></span>
+<span data-ttu-id="82c3d-123">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="82c3d-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="71413-115">Respuesta</span><span class="sxs-lookup"><span data-stu-id="71413-115">Response</span></span>
+## <a name="response"></a><span data-ttu-id="82c3d-124">Respuesta</span><span class="sxs-lookup"><span data-stu-id="82c3d-124">Response</span></span>
 
-<span data-ttu-id="71413-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="71413-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="82c3d-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="82c3d-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="71413-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="71413-118">Example</span></span>
-<span data-ttu-id="71413-119">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="71413-119">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="71413-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="71413-120">Request</span></span>
-<span data-ttu-id="71413-121">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="71413-121">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="82c3d-127">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="82c3d-127">Example</span></span>
+<span data-ttu-id="82c3d-128">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="82c3d-128">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="82c3d-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="82c3d-129">Request</span></span>
+<span data-ttu-id="82c3d-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="82c3d-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_resetunseencount"
@@ -33,8 +40,8 @@ POST /groups/{id}/resetUnseenCount
 POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 ```
 
-##### <a name="response"></a><span data-ttu-id="71413-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="71413-122">Response</span></span>
-<span data-ttu-id="71413-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="71413-123">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="82c3d-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="82c3d-131">Response</span></span>
+<span data-ttu-id="82c3d-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="82c3d-132">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

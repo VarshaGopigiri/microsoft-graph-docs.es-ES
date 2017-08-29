@@ -1,40 +1,47 @@
-# <a name="delete-domain"></a><span data-ttu-id="dce22-101">Eliminar dominio</span><span class="sxs-lookup"><span data-stu-id="dce22-101">Delete domain</span></span>
+# <a name="delete-domain"></a><span data-ttu-id="0f15d-101">Eliminar dominio</span><span class="sxs-lookup"><span data-stu-id="0f15d-101">Delete domain</span></span>
 
-<span data-ttu-id="dce22-102">Elimina un dominio de un inquilino.</span><span class="sxs-lookup"><span data-stu-id="dce22-102">Deletes a domain from a tenant.</span></span>
+<span data-ttu-id="0f15d-102">Elimina un dominio de un inquilino.</span><span class="sxs-lookup"><span data-stu-id="0f15d-102">Deletes a domain from a tenant.</span></span>
 
-> <span data-ttu-id="dce22-103">**Importante:**</span><span class="sxs-lookup"><span data-stu-id="dce22-103">**Important:**</span></span>
-> - <span data-ttu-id="dce22-104">Los dominios eliminados no son recuperables.</span><span class="sxs-lookup"><span data-stu-id="dce22-104">Deleted domains are not recoverable.</span></span><br />
-> - <span data-ttu-id="dce22-p101">Los intentos de eliminar el dominio fallarán si hay recursos u objetos que aún dependen de este. Encontrará todos los recursos dependientes mediante el uso de la API [Enumerar domainNameReferences](domain_list_domainnamereferences.md).</span><span class="sxs-lookup"><span data-stu-id="dce22-p101">Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](domain_list_domainnamereferences.md) API.</span></span>
+> <span data-ttu-id="0f15d-103">**Importante:**</span><span class="sxs-lookup"><span data-stu-id="0f15d-103">**Important:**</span></span>
+> - <span data-ttu-id="0f15d-104">Los dominios eliminados no son recuperables.</span><span class="sxs-lookup"><span data-stu-id="0f15d-104">Deleted domains are not recoverable.</span></span><br />
+> - <span data-ttu-id="0f15d-p101">Los intentos de eliminar el dominio fallarán si hay recursos u objetos que aún dependen de este. Encontrará todos los recursos dependientes mediante el uso de la API [Enumerar domainNameReferences](domain_list_domainnamereferences.md).</span><span class="sxs-lookup"><span data-stu-id="0f15d-p101">Attempts to delete will fail if there are any resources or objects still dependent on the domain. You can find all dependent resources by using the [List domainNameReferences](domain_list_domainnamereferences.md) API.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="dce22-107">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="dce22-107">Prerequisites</span></span>
+## <a name="permissions"></a><span data-ttu-id="0f15d-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="0f15d-107">Permissions</span></span>
 
-<span data-ttu-id="dce22-108">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Domain.ReadWrite.All* o *Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="dce22-108">One of the following **scopes** is required to execute this API: *Domain.ReadWrite.All* or *Directory.AccessAsUser.All*</span></span>
+<span data-ttu-id="0f15d-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0f15d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="dce22-109">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="dce22-109">HTTP request</span></span>
+
+|<span data-ttu-id="0f15d-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="0f15d-110">Permission type</span></span>      | <span data-ttu-id="0f15d-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="0f15d-111">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="0f15d-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="0f15d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0f15d-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0f15d-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="0f15d-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0f15d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f15d-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0f15d-115">Not supported.</span></span>    |
+|<span data-ttu-id="0f15d-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="0f15d-116">Application</span></span> | <span data-ttu-id="0f15d-117">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f15d-117">Domain.ReadWrite.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="0f15d-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="0f15d-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
 ```
 
-> <span data-ttu-id="dce22-110">En {id}, especifique el dominio con su nombre completo.</span><span class="sxs-lookup"><span data-stu-id="dce22-110">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="0f15d-119">En {id}, especifique el dominio con su nombre completo.</span><span class="sxs-lookup"><span data-stu-id="0f15d-119">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="dce22-111">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="dce22-111">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0f15d-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="0f15d-120">Request headers</span></span>
 
-| <span data-ttu-id="dce22-112">Nombre</span><span class="sxs-lookup"><span data-stu-id="dce22-112">Name</span></span>       | <span data-ttu-id="dce22-113">Descripción</span><span class="sxs-lookup"><span data-stu-id="dce22-113">Description</span></span>|
+| <span data-ttu-id="0f15d-121">Nombre</span><span class="sxs-lookup"><span data-stu-id="0f15d-121">Name</span></span>       | <span data-ttu-id="0f15d-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="0f15d-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="dce22-114">Authorization</span><span class="sxs-lookup"><span data-stu-id="dce22-114">Authorization</span></span>  | <span data-ttu-id="dce22-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="dce22-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="dce22-117">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dce22-117">Content-Type</span></span>  | <span data-ttu-id="dce22-118">application/json</span><span class="sxs-lookup"><span data-stu-id="dce22-118">application/json</span></span> |
+| <span data-ttu-id="0f15d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f15d-123">Authorization</span></span>  | <span data-ttu-id="0f15d-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="0f15d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0f15d-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0f15d-126">Content-Type</span></span>  | <span data-ttu-id="0f15d-127">application/json</span><span class="sxs-lookup"><span data-stu-id="0f15d-127">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dce22-119">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="dce22-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0f15d-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="0f15d-128">Request body</span></span>
 
-<span data-ttu-id="dce22-120">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="dce22-120">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="0f15d-129">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="0f15d-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dce22-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dce22-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0f15d-130">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0f15d-130">Response</span></span>
 
-<span data-ttu-id="dce22-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve un cuerpo de respuesta.</span><span class="sxs-lookup"><span data-stu-id="dce22-p103">If successful, this method returns `204, No Content` response code. It does not return a response body.</span></span>
+<span data-ttu-id="0f15d-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve un cuerpo de respuesta.</span><span class="sxs-lookup"><span data-stu-id="0f15d-p104">If successful, this method returns `204, No Content` response code. It does not return a response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dce22-124">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="dce22-124">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dce22-125">Solicitud</span><span class="sxs-lookup"><span data-stu-id="dce22-125">Request</span></span>
+## <a name="example"></a><span data-ttu-id="0f15d-133">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0f15d-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0f15d-134">Solicitud</span><span class="sxs-lookup"><span data-stu-id="0f15d-134">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -44,9 +51,9 @@ DELETE /domains/{id}
 DELETE https://graph.microsoft.com/V1.0/domains/contoso.com
 ```
 
-##### <a name="response"></a><span data-ttu-id="dce22-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dce22-126">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="0f15d-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0f15d-135">Response</span></span>
 
-<span data-ttu-id="dce22-p104">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="dce22-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0f15d-p105">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="0f15d-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

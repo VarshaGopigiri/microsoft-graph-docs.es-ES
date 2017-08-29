@@ -1,9 +1,16 @@
-# <a name="delete-event"></a><span data-ttu-id="86ef0-101">Delete event</span><span class="sxs-lookup"><span data-stu-id="86ef0-101">Delete event</span></span>
+# <a name="delete-event"></a><span data-ttu-id="2fbe6-101">Delete event</span><span class="sxs-lookup"><span data-stu-id="2fbe6-101">Delete event</span></span>
 
-<span data-ttu-id="86ef0-102">Elimina el evento.</span><span class="sxs-lookup"><span data-stu-id="86ef0-102">Delete event.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="86ef0-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="86ef0-103">Prerequisites</span></span>
-<span data-ttu-id="86ef0-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: *Calendars.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="86ef0-104">One of the following **scopes** is required to execute this API: *Calendars.ReadWrite*</span></span> 
-## <a name="http-request"></a><span data-ttu-id="86ef0-105">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="86ef0-105">HTTP request</span></span>
+<span data-ttu-id="2fbe6-102">Elimina el evento.</span><span class="sxs-lookup"><span data-stu-id="2fbe6-102">Delete event.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2fbe6-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="2fbe6-103">Permissions</span></span>
+<span data-ttu-id="2fbe6-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="2fbe6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="2fbe6-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="2fbe6-106">Permission type</span></span>      | <span data-ttu-id="2fbe6-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="2fbe6-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="2fbe6-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="2fbe6-108">Delegated (work or school account)</span></span> | <span data-ttu-id="2fbe6-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fbe6-109">Calendars.ReadWrite</span></span>    | 
+|<span data-ttu-id="2fbe6-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2fbe6-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2fbe6-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fbe6-111">Calendars.ReadWrite</span></span>    | 
+|<span data-ttu-id="2fbe6-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="2fbe6-112">Application</span></span> | <span data-ttu-id="2fbe6-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2fbe6-113">Calendars.ReadWrite</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="2fbe6-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="2fbe6-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}
@@ -23,21 +30,21 @@ DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="86ef0-106">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="86ef0-106">Request headers</span></span>
-| <span data-ttu-id="86ef0-107">Nombre</span><span class="sxs-lookup"><span data-stu-id="86ef0-107">Name</span></span>       | <span data-ttu-id="86ef0-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="86ef0-108">Type</span></span> | <span data-ttu-id="86ef0-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="86ef0-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2fbe6-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="2fbe6-115">Request headers</span></span>
+| <span data-ttu-id="2fbe6-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="2fbe6-116">Name</span></span>       | <span data-ttu-id="2fbe6-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="2fbe6-117">Type</span></span> | <span data-ttu-id="2fbe6-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="2fbe6-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="86ef0-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="86ef0-110">Authorization</span></span>  | <span data-ttu-id="86ef0-111">string</span><span class="sxs-lookup"><span data-stu-id="86ef0-111">string</span></span>  | <span data-ttu-id="86ef0-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="86ef0-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2fbe6-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="2fbe6-119">Authorization</span></span>  | <span data-ttu-id="2fbe6-120">string</span><span class="sxs-lookup"><span data-stu-id="2fbe6-120">string</span></span>  | <span data-ttu-id="2fbe6-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="2fbe6-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="86ef0-114">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="86ef0-114">Request body</span></span>
-<span data-ttu-id="86ef0-115">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="86ef0-115">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2fbe6-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="2fbe6-123">Request body</span></span>
+<span data-ttu-id="2fbe6-124">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="2fbe6-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="86ef0-116">Respuesta</span><span class="sxs-lookup"><span data-stu-id="86ef0-116">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2fbe6-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2fbe6-125">Response</span></span>
 
-<span data-ttu-id="86ef0-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="86ef0-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2fbe6-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2fbe6-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="86ef0-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="86ef0-119">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="86ef0-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="86ef0-120">Request</span></span>
-<span data-ttu-id="86ef0-121">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="86ef0-121">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2fbe6-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2fbe6-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2fbe6-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="2fbe6-129">Request</span></span>
+<span data-ttu-id="2fbe6-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="2fbe6-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -45,8 +52,8 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="86ef0-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="86ef0-122">Response</span></span>
-<span data-ttu-id="86ef0-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="86ef0-123">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2fbe6-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2fbe6-131">Response</span></span>
+<span data-ttu-id="2fbe6-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2fbe6-132">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

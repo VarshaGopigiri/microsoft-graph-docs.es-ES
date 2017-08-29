@@ -1,16 +1,17 @@
-# <a name="create-a-new-folder"></a><span data-ttu-id="ea786-101">Create a new folder</span><span class="sxs-lookup"><span data-stu-id="ea786-101">Create a new folder</span></span>
+# <a name="create-a-new-folder"></a><span data-ttu-id="77b88-101">Create a new folder</span><span class="sxs-lookup"><span data-stu-id="77b88-101">Create a new folder</span></span>
 
-<span data-ttu-id="ea786-102">Crea una carpeta o [DriveItem](../resources/driveitem.md) en un [Drive](../resources/drive.md) con un elemento primario especificado o la ruta de acceso.</span><span class="sxs-lookup"><span data-stu-id="ea786-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="77b88-102">Crea una carpeta nueva o un [DriveItem](../resources/driveitem.md) en un [Drive](../resources/drive.md) con un elemento primario o una ruta de acceso especificados.</span><span class="sxs-lookup"><span data-stu-id="77b88-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ea786-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="ea786-103">Prerequisites</span></span>
-<span data-ttu-id="ea786-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="ea786-104">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="permissions"></a><span data-ttu-id="77b88-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="77b88-103">Permissions</span></span>
+<span data-ttu-id="77b88-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="77b88-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-* <span data-ttu-id="ea786-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ea786-105">Files.ReadWrite</span></span>
-* <span data-ttu-id="ea786-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea786-106">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="ea786-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea786-107">Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="77b88-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="77b88-106">Permission type</span></span>      | <span data-ttu-id="77b88-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="77b88-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="77b88-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="77b88-108">Delegated (work or school account)</span></span> | <span data-ttu-id="77b88-109">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77b88-109">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="77b88-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="77b88-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77b88-111">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77b88-111">Files.ReadWrite, Files.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="77b88-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="77b88-112">Application</span></span> | <span data-ttu-id="77b88-113">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77b88-113">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> | 
 
-
-## <a name="http-request"></a><span data-ttu-id="ea786-108">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ea786-108">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="77b88-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="77b88-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
@@ -19,17 +20,17 @@ POST /drives/{drive-id}/items/{parent-item-id}/children
 POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a><span data-ttu-id="ea786-109">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="ea786-109">Request body</span></span>
-<span data-ttu-id="ea786-110">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [DriveItem](../resources/driveitem.md) que quiere crear.</span><span class="sxs-lookup"><span data-stu-id="ea786-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+## <a name="request-body"></a><span data-ttu-id="77b88-115">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="77b88-115">Request body</span></span>
+<span data-ttu-id="77b88-116">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [DriveItem](../resources/driveitem.md) que quiere crear.</span><span class="sxs-lookup"><span data-stu-id="77b88-116">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ea786-111">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ea786-111">Response</span></span>
+## <a name="response"></a><span data-ttu-id="77b88-117">Respuesta</span><span class="sxs-lookup"><span data-stu-id="77b88-117">Response</span></span>
 
-<span data-ttu-id="ea786-112">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el recurso [DriveItem](../resources/driveitem.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ea786-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="77b88-118">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el recurso [DriveItem](../resources/driveitem.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="77b88-118">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ea786-113">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ea786-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="77b88-119">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="77b88-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="ea786-114">Solicitud</span><span class="sxs-lookup"><span data-stu-id="ea786-114">Request</span></span>
-<span data-ttu-id="ea786-115">Aquí tiene un ejemplo de la solicitud para crear una carpeta en la raíz de OneDrive del usuario.</span><span class="sxs-lookup"><span data-stu-id="ea786-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
+##### <a name="request"></a><span data-ttu-id="77b88-120">Solicitud</span><span class="sxs-lookup"><span data-stu-id="77b88-120">Request</span></span>
+<span data-ttu-id="77b88-121">Aquí tiene un ejemplo de la solicitud para crear una carpeta en la raíz de OneDrive del usuario.</span><span class="sxs-lookup"><span data-stu-id="77b88-121">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,9 +46,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="ea786-116">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ea786-116">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="77b88-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="77b88-122">Response</span></span>
 
-<span data-ttu-id="ea786-117">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ea786-117">Here is an example of the response.</span></span>
+<span data-ttu-id="77b88-123">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="77b88-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

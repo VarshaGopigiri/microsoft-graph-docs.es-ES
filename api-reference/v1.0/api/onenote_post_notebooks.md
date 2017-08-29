@@ -1,12 +1,16 @@
-# <a name="create-notebook"></a><span data-ttu-id="702d6-101">Crear bloc de notas</span><span class="sxs-lookup"><span data-stu-id="702d6-101">Create notebook</span></span>
+# <a name="create-notebook"></a><span data-ttu-id="c29ca-101">Crear bloc de notas</span><span class="sxs-lookup"><span data-stu-id="c29ca-101">Create notebook</span></span>
 
-<span data-ttu-id="702d6-102">Cree un [bloc de notas](../resources/notebook.md) de OneNote.</span><span class="sxs-lookup"><span data-stu-id="702d6-102">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="702d6-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="702d6-103">Prerequisites</span></span>
-<span data-ttu-id="702d6-104">Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="702d6-104">One of the following **scopes** is required to execute this API:</span></span>   
+<span data-ttu-id="c29ca-102">Crea un [bloc de notas](../resources/notebook.md) de OneNote.</span><span class="sxs-lookup"><span data-stu-id="c29ca-102">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c29ca-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="c29ca-103">Permissions</span></span>
+<span data-ttu-id="c29ca-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c29ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-<span data-ttu-id="702d6-105">Notes.Create, Notes.ReadWrite o Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="702d6-105">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span>
+|<span data-ttu-id="c29ca-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="c29ca-106">Permission type</span></span>      | <span data-ttu-id="c29ca-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="c29ca-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="c29ca-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="c29ca-108">Delegated (work or school account)</span></span> | <span data-ttu-id="c29ca-109">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c29ca-109">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="c29ca-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c29ca-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c29ca-111">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c29ca-111">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="c29ca-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="c29ca-112">Application</span></span> | <span data-ttu-id="c29ca-113">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c29ca-113">Notes.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="702d6-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="702d6-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c29ca-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="c29ca-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks
@@ -14,24 +18,24 @@ POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
-## <a name="request-headers"></a><span data-ttu-id="702d6-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="702d6-107">Request headers</span></span>
-| <span data-ttu-id="702d6-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="702d6-108">Name</span></span>       | <span data-ttu-id="702d6-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="702d6-109">Type</span></span> | <span data-ttu-id="702d6-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="702d6-110">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c29ca-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="c29ca-115">Request headers</span></span>
+| <span data-ttu-id="c29ca-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="c29ca-116">Name</span></span>       | <span data-ttu-id="c29ca-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="c29ca-117">Type</span></span> | <span data-ttu-id="c29ca-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="c29ca-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="702d6-111">Authorization</span><span class="sxs-lookup"><span data-stu-id="702d6-111">Authorization</span></span>  | <span data-ttu-id="702d6-112">string</span><span class="sxs-lookup"><span data-stu-id="702d6-112">string</span></span>  | <span data-ttu-id="702d6-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="702d6-p101">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="702d6-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="702d6-115">Content-Type</span></span> | <span data-ttu-id="702d6-116">string</span><span class="sxs-lookup"><span data-stu-id="702d6-116">string</span></span> | `application/json` |
+| <span data-ttu-id="c29ca-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="c29ca-119">Authorization</span></span>  | <span data-ttu-id="c29ca-120">string</span><span class="sxs-lookup"><span data-stu-id="c29ca-120">string</span></span>  | <span data-ttu-id="c29ca-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c29ca-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c29ca-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c29ca-123">Content-Type</span></span> | <span data-ttu-id="c29ca-124">string</span><span class="sxs-lookup"><span data-stu-id="c29ca-124">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="702d6-117">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="702d6-117">Request body</span></span>
-<span data-ttu-id="702d6-118">En el cuerpo de la solicitud, asigne un nombre al bloc de notas.</span><span class="sxs-lookup"><span data-stu-id="702d6-118">In the request body, supply a name for the notebook.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="c29ca-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="c29ca-125">Request body</span></span>
+<span data-ttu-id="c29ca-126">En el cuerpo de la solicitud, asigne un nombre al bloc de notas.</span><span class="sxs-lookup"><span data-stu-id="c29ca-126">In the request body, supply a name for the notebook.</span></span> 
 
-<span data-ttu-id="702d6-p102">Los nombres del bloc de notas deben ser únicos. El nombre no puede contener más de 128 caracteres ni los caracteres siguientes: ?*\/:<>|'"</span><span class="sxs-lookup"><span data-stu-id="702d6-p102">Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?*\/:<>|'"</span></span>
+<span data-ttu-id="c29ca-p103">Los nombres del bloc de notas deben ser únicos. El nombre no puede contener más de 128 caracteres ni los caracteres siguientes: ?*\/:<>|'"</span><span class="sxs-lookup"><span data-stu-id="c29ca-p103">Notebook names must be unique. The name cannot contain more than 128 characters or contain the following characters:  ?*\/:<>|'"</span></span>
 
-## <a name="response"></a><span data-ttu-id="702d6-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="702d6-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c29ca-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c29ca-129">Response</span></span>
 
-<span data-ttu-id="702d6-122">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el nuevo objeto [notebook](../resources/notebook.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="702d6-122">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
+<span data-ttu-id="c29ca-130">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el nuevo objeto [notebook](../resources/notebook.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c29ca-130">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="702d6-123">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="702d6-123">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="702d6-124">Solicitud</span><span class="sxs-lookup"><span data-stu-id="702d6-124">Request</span></span>
-<span data-ttu-id="702d6-125">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="702d6-125">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c29ca-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c29ca-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c29ca-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c29ca-132">Request</span></span>
+<span data-ttu-id="c29ca-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c29ca-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_notebook_from_onenote"
@@ -46,8 +50,8 @@ Content-length: 30
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="702d6-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="702d6-126">Response</span></span>
-<span data-ttu-id="702d6-p103">Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="702d6-p103">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c29ca-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c29ca-134">Response</span></span>
+<span data-ttu-id="c29ca-p104">Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="c29ca-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
