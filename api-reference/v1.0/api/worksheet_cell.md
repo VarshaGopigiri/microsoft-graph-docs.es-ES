@@ -1,30 +1,34 @@
-# <a name="worksheet-cell"></a><span data-ttu-id="10844-101">Worksheet: Cell</span><span class="sxs-lookup"><span data-stu-id="10844-101">Worksheet: Cell</span></span>
+# <a name="worksheet-cell"></a><span data-ttu-id="25eaf-101">Worksheet: Cell</span><span class="sxs-lookup"><span data-stu-id="25eaf-101">Worksheet: Cell</span></span>
 
-<span data-ttu-id="10844-p101">Obtiene el objeto de rango que contiene la celda en función de los números de fila y columna. La celda puede estar fuera de los límites del rango principal, siempre y cuando permanezca dentro de la cuadrícula de la hoja de cálculo.</span><span class="sxs-lookup"><span data-stu-id="10844-p101">Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="10844-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="10844-104">Prerequisites</span></span>
-<span data-ttu-id="10844-105">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="10844-105">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="25eaf-p101">Obtiene el objeto de rango que contiene la celda en función de los números de fila y columna. La celda puede estar fuera de los límites del rango principal, siempre y cuando permanezca dentro de la cuadrícula de la hoja de cálculo.</span><span class="sxs-lookup"><span data-stu-id="25eaf-p101">Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it's stays within the worksheet grid.</span></span>
+## <a name="permissions"></a><span data-ttu-id="25eaf-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="25eaf-104">Permissions</span></span>
+<span data-ttu-id="25eaf-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="25eaf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="10844-106">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="10844-106">Files.ReadWrite</span></span>
+|<span data-ttu-id="25eaf-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="25eaf-107">Permission type</span></span>      | <span data-ttu-id="25eaf-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="25eaf-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="25eaf-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="25eaf-109">Delegated (work or school account)</span></span> | <span data-ttu-id="25eaf-110">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="25eaf-110">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="25eaf-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="25eaf-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="25eaf-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="25eaf-112">Not supported.</span></span>    |
+|<span data-ttu-id="25eaf-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="25eaf-113">Application</span></span> | <span data-ttu-id="25eaf-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="25eaf-114">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="10844-107">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="10844-107">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="25eaf-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="25eaf-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="10844-108">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="10844-108">Request headers</span></span>
-| <span data-ttu-id="10844-109">Nombre</span><span class="sxs-lookup"><span data-stu-id="10844-109">Name</span></span>       | <span data-ttu-id="10844-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="10844-110">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="25eaf-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="25eaf-116">Request headers</span></span>
+| <span data-ttu-id="25eaf-117">Nombre</span><span class="sxs-lookup"><span data-stu-id="25eaf-117">Name</span></span>       | <span data-ttu-id="25eaf-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="25eaf-118">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="10844-111">Authorization</span><span class="sxs-lookup"><span data-stu-id="10844-111">Authorization</span></span>  | <span data-ttu-id="10844-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="10844-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="25eaf-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="25eaf-119">Authorization</span></span>  | <span data-ttu-id="25eaf-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="25eaf-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="10844-114">Respuesta</span><span class="sxs-lookup"><span data-stu-id="10844-114">Response</span></span>
+## <a name="response"></a><span data-ttu-id="25eaf-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="25eaf-122">Response</span></span>
 
-<span data-ttu-id="10844-115">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="10844-115">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="25eaf-123">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="25eaf-123">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10844-116">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="10844-116">Example</span></span>
-<span data-ttu-id="10844-117">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="10844-117">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="10844-118">Solicitud</span><span class="sxs-lookup"><span data-stu-id="10844-118">Request</span></span>
-<span data-ttu-id="10844-119">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="10844-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="25eaf-124">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="25eaf-124">Example</span></span>
+<span data-ttu-id="25eaf-125">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="25eaf-125">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="25eaf-126">Solicitud</span><span class="sxs-lookup"><span data-stu-id="25eaf-126">Request</span></span>
+<span data-ttu-id="25eaf-127">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="25eaf-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheet_cell"
@@ -33,8 +37,8 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 ```
 
-##### <a name="response"></a><span data-ttu-id="10844-120">Respuesta</span><span class="sxs-lookup"><span data-stu-id="10844-120">Response</span></span>
-<span data-ttu-id="10844-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="10844-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="25eaf-128">Respuesta</span><span class="sxs-lookup"><span data-stu-id="25eaf-128">Response</span></span>
+<span data-ttu-id="25eaf-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="25eaf-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

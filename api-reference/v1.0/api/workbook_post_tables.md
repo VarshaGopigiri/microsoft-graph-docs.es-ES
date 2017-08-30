@@ -1,33 +1,36 @@
-# <a name="create-table"></a><span data-ttu-id="734ff-101">Create Table</span><span class="sxs-lookup"><span data-stu-id="734ff-101">Create Table</span></span>
+# <a name="create-table"></a><span data-ttu-id="0ed3e-101">Create Table</span><span class="sxs-lookup"><span data-stu-id="0ed3e-101">Create Table</span></span>
 
-<span data-ttu-id="734ff-102">Use esta API para crear un objeto Table.</span><span class="sxs-lookup"><span data-stu-id="734ff-102">Use this API to create a new Table.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="734ff-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="734ff-103">Prerequisites</span></span>
-<span data-ttu-id="734ff-104">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="734ff-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="0ed3e-102">Use esta API para crear un objeto Table.</span><span class="sxs-lookup"><span data-stu-id="0ed3e-102">Use this API to create a new Table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0ed3e-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="0ed3e-103">Permissions</span></span>
+<span data-ttu-id="0ed3e-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0ed3e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="734ff-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="734ff-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="0ed3e-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="0ed3e-106">Permission type</span></span>      | <span data-ttu-id="0ed3e-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="0ed3e-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="0ed3e-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="0ed3e-108">Delegated (work or school account)</span></span> | <span data-ttu-id="0ed3e-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0ed3e-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0ed3e-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0ed3e-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ed3e-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0ed3e-111">Not supported.</span></span>    |
+|<span data-ttu-id="0ed3e-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="0ed3e-112">Application</span></span> | <span data-ttu-id="0ed3e-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0ed3e-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="734ff-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="734ff-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ed3e-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="0ed3e-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/$/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="734ff-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="734ff-107">Request headers</span></span>
-| <span data-ttu-id="734ff-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="734ff-108">Name</span></span>       | <span data-ttu-id="734ff-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="734ff-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0ed3e-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="0ed3e-115">Request headers</span></span>
+| <span data-ttu-id="0ed3e-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="0ed3e-116">Name</span></span>       | <span data-ttu-id="0ed3e-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="0ed3e-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="734ff-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="734ff-110">Authorization</span></span>  | <span data-ttu-id="734ff-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="734ff-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0ed3e-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="0ed3e-118">Authorization</span></span>  | <span data-ttu-id="0ed3e-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="0ed3e-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="0ed3e-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="0ed3e-121">Request body</span></span>
+<span data-ttu-id="0ed3e-122">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Table](../resources/table.md).</span><span class="sxs-lookup"><span data-stu-id="0ed3e-122">In the request body, supply a JSON representation of [Table](../resources/table.md) object.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="734ff-113">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="734ff-113">Request body</span></span>
-<span data-ttu-id="734ff-114">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Table](../resources/table.md).</span><span class="sxs-lookup"><span data-stu-id="734ff-114">In the request body, supply a JSON representation of [Table](../resources/table.md) object.</span></span>
+## <a name="response"></a><span data-ttu-id="0ed3e-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0ed3e-123">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="734ff-115">Respuesta</span><span class="sxs-lookup"><span data-stu-id="734ff-115">Response</span></span>
+<span data-ttu-id="0ed3e-124">Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="0ed3e-124">If successful, this method returns `201, Created` response code and [Table](../resources/table.md) object in the response body.</span></span>
 
-<span data-ttu-id="734ff-116">Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="734ff-116">If successful, this method returns `201, Created` response code and [Table](../resources/table.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="734ff-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="734ff-117">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="734ff-118">Solicitud</span><span class="sxs-lookup"><span data-stu-id="734ff-118">Request</span></span>
-<span data-ttu-id="734ff-119">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="734ff-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0ed3e-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0ed3e-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0ed3e-126">Solicitud</span><span class="sxs-lookup"><span data-stu-id="0ed3e-126">Request</span></span>
+<span data-ttu-id="0ed3e-127">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="0ed3e-127">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_table_from_workbook"
@@ -45,9 +48,9 @@ Content-length: 109
   "style": "style-value"
 }
 ```
-<span data-ttu-id="734ff-120">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Table](../resources/table.md).</span><span class="sxs-lookup"><span data-stu-id="734ff-120">In the request body, supply a JSON representation of [Table](../resources/table.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="734ff-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="734ff-121">Response</span></span>
-<span data-ttu-id="734ff-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="734ff-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0ed3e-128">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Table](../resources/table.md).</span><span class="sxs-lookup"><span data-stu-id="0ed3e-128">In the request body, supply a JSON representation of [Table](../resources/table.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="0ed3e-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0ed3e-129">Response</span></span>
+<span data-ttu-id="0ed3e-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="0ed3e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

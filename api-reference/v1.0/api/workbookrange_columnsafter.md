@@ -1,38 +1,43 @@
-# <a name="workbookrange-columnsafter"></a><span data-ttu-id="7f335-101">workbookRange: columnsAfter</span><span class="sxs-lookup"><span data-stu-id="7f335-101">workbookRange: columnsAfter</span></span>
+# <a name="workbookrange-columnsafter"></a><span data-ttu-id="6f228-101">workbookRange: columnsAfter</span><span class="sxs-lookup"><span data-stu-id="6f228-101">workbookRange: columnsAfter</span></span>
 
-<span data-ttu-id="7f335-102">Obtiene un número determinado de columnas a la derecha del intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="7f335-102">Gets a certain number of columns to the right of the given range.</span></span>
+<span data-ttu-id="6f228-102">Obtiene un número determinado de columnas a la derecha del rango especificado.</span><span class="sxs-lookup"><span data-stu-id="6f228-102">Gets a certain number of columns to the right of the given range.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7f335-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="7f335-103">Prerequisites</span></span>
-<span data-ttu-id="7f335-104">Se requieren los siguientes **ámbitos** para ejecutar esta API: _Files.Read, Files.ReadWrite_</span><span class="sxs-lookup"><span data-stu-id="7f335-104">The following **scopes** are required to execute this API: _Files.Read, Files.ReadWrite_</span></span>
-## <a name="http-request"></a><span data-ttu-id="7f335-105">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="7f335-105">HTTP request</span></span>
+## <a name="permissions"></a><span data-ttu-id="6f228-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="6f228-103">Permissions</span></span>
+<span data-ttu-id="6f228-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="6f228-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="6f228-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6f228-106">Permission type</span></span>      | <span data-ttu-id="6f228-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6f228-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="6f228-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6f228-108">Delegated (work or school account)</span></span> | <span data-ttu-id="6f228-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6f228-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="6f228-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f228-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f228-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6f228-111">Not supported.</span></span>    |
+|<span data-ttu-id="6f228-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6f228-112">Application</span></span> | <span data-ttu-id="6f228-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6f228-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="6f228-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6f228-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="7f335-106">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="7f335-106">Request headers</span></span>
-| <span data-ttu-id="7f335-107">Nombre</span><span class="sxs-lookup"><span data-stu-id="7f335-107">Name</span></span>       | <span data-ttu-id="7f335-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="7f335-108">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6f228-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6f228-115">Request headers</span></span>
+| <span data-ttu-id="6f228-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="6f228-116">Name</span></span>       | <span data-ttu-id="6f228-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="6f228-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7f335-109">Authorization</span><span class="sxs-lookup"><span data-stu-id="7f335-109">Authorization</span></span>  | <span data-ttu-id="7f335-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="7f335-p101">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7f335-112">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="7f335-112">Workbook-Session-Id</span></span>  | <span data-ttu-id="7f335-p102">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="7f335-p102">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="6f228-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="6f228-118">Authorization</span></span>  | <span data-ttu-id="6f228-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="6f228-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6f228-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6f228-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="6f228-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="6f228-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="parameters"></a><span data-ttu-id="7f335-115">Parámetros</span><span class="sxs-lookup"><span data-stu-id="7f335-115">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6f228-124">Parámetros</span><span class="sxs-lookup"><span data-stu-id="6f228-124">Parameters</span></span>
 
-| <span data-ttu-id="7f335-116">Parámetro</span><span class="sxs-lookup"><span data-stu-id="7f335-116">Parameter</span></span>    | <span data-ttu-id="7f335-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="7f335-117">Type</span></span>   |<span data-ttu-id="7f335-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="7f335-118">Description</span></span>|
+| <span data-ttu-id="6f228-125">Parámetro</span><span class="sxs-lookup"><span data-stu-id="6f228-125">Parameter</span></span>    | <span data-ttu-id="6f228-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f228-126">Type</span></span>   |<span data-ttu-id="6f228-127">Descripción</span><span class="sxs-lookup"><span data-stu-id="6f228-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7f335-119">count</span><span class="sxs-lookup"><span data-stu-id="7f335-119">count</span></span>|<span data-ttu-id="7f335-120">Int32</span><span class="sxs-lookup"><span data-stu-id="7f335-120">Int32</span></span>|<span data-ttu-id="7f335-p103">El número de columnas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1</span><span class="sxs-lookup"><span data-stu-id="7f335-p103">The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1</span></span>|
+|<span data-ttu-id="6f228-128">count</span><span class="sxs-lookup"><span data-stu-id="6f228-128">count</span></span>|<span data-ttu-id="6f228-129">Int32</span><span class="sxs-lookup"><span data-stu-id="6f228-129">Int32</span></span>|<span data-ttu-id="6f228-p104">El número de columnas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1</span><span class="sxs-lookup"><span data-stu-id="6f228-p104">The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1</span></span>|
 
+## <a name="request-body"></a><span data-ttu-id="6f228-134">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="6f228-134">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="7f335-125">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="7f335-125">Request body</span></span>
+### <a name="response"></a><span data-ttu-id="6f228-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6f228-135">Response</span></span>
+<span data-ttu-id="6f228-136">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6f228-136">If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7f335-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7f335-126">Response</span></span>
-
-<span data-ttu-id="7f335-127">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7f335-127">If successful, this method returns `200, OK` response code and [workbookRange](../resources/range.md) object in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="7f335-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7f335-128">Example</span></span>
-<span data-ttu-id="7f335-129">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="7f335-129">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="7f335-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="7f335-130">Request</span></span>
-<span data-ttu-id="7f335-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="7f335-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6f228-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6f228-137">Example</span></span>
+<span data-ttu-id="6f228-138">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="6f228-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="6f228-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6f228-139">Request</span></span>
+<span data-ttu-id="6f228-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6f228-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "workbookrange_columnsafter"
@@ -41,8 +46,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=2)
 ```
 
-##### <a name="response"></a><span data-ttu-id="7f335-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7f335-132">Response</span></span>
-<span data-ttu-id="7f335-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="7f335-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6f228-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6f228-141">Response</span></span>
+<span data-ttu-id="6f228-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="6f228-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,15 +1,17 @@
-# <a name="check-member-groups"></a><span data-ttu-id="14a1e-101">Comprobar grupos de miembro</span><span class="sxs-lookup"><span data-stu-id="14a1e-101">Check member groups</span></span>
+# <a name="check-member-groups"></a><span data-ttu-id="d41bf-101">Comprobar grupos de miembro</span><span class="sxs-lookup"><span data-stu-id="d41bf-101">Check member groups</span></span>
 
-<span data-ttu-id="14a1e-p101">Comprueba la pertenencia en una lista especificada de grupos y devuelve de la lista los grupos de los que el objeto especificado de usuario, grupo o directorio sea miembro. Esta función es transitiva.</span><span class="sxs-lookup"><span data-stu-id="14a1e-p101">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, or directory object is a member. This function is transitive.</span></span>
+<span data-ttu-id="d41bf-p101">Comprueba la pertenencia en una lista especificada de grupos y devuelve de la lista los grupos de los que el objeto especificado de usuario, grupo o directorio sea miembro. Esta función es transitiva.</span><span class="sxs-lookup"><span data-stu-id="d41bf-p101">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, or directory object is a member. This function is transitive.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="14a1e-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="14a1e-104">Prerequisites</span></span>
-<span data-ttu-id="14a1e-105">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="14a1e-105">The following **scopes** are required to execute this API:</span></span> 
-- <span data-ttu-id="14a1e-106">_User.Read.All_ Y _Group.Read.All_</span><span class="sxs-lookup"><span data-stu-id="14a1e-106">_User.Read.All_ AND _Group.Read.All_</span></span>
-- <span data-ttu-id="14a1e-107">_Directory.Read.All_</span><span class="sxs-lookup"><span data-stu-id="14a1e-107">_Directory.Read.All_</span></span>
+## <a name="permissions"></a><span data-ttu-id="d41bf-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="d41bf-104">Permissions</span></span>
+<span data-ttu-id="d41bf-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d41bf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-> <span data-ttu-id="14a1e-108">Nota: Los ámbitos de permiso se muestran por orden de privilegio mínimo necesario.</span><span class="sxs-lookup"><span data-stu-id="14a1e-108">Note: Permission scopes are listed in least privilege required order.</span></span>
+|<span data-ttu-id="d41bf-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="d41bf-107">Permission type</span></span>      | <span data-ttu-id="d41bf-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="d41bf-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="d41bf-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="d41bf-109">Delegated (work or school account)</span></span> | <span data-ttu-id="d41bf-110">User.Read.All y Group.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="d41bf-110">User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
+|<span data-ttu-id="d41bf-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d41bf-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d41bf-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d41bf-112">Not supported.</span></span>    |
+|<span data-ttu-id="d41bf-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="d41bf-113">Application</span></span> | <span data-ttu-id="d41bf-114">User.Read.All y Group.Read.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="d41bf-114">User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="14a1e-109">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="14a1e-109">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d41bf-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d41bf-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -17,26 +19,26 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 POST /groups/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
-## <a name="request-headers"></a><span data-ttu-id="14a1e-110">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="14a1e-110">Request headers</span></span>
-| <span data-ttu-id="14a1e-111">Nombre</span><span class="sxs-lookup"><span data-stu-id="14a1e-111">Name</span></span>       | <span data-ttu-id="14a1e-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="14a1e-112">Type</span></span> | <span data-ttu-id="14a1e-113">Descripción</span><span class="sxs-lookup"><span data-stu-id="14a1e-113">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d41bf-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="d41bf-116">Request headers</span></span>
+| <span data-ttu-id="d41bf-117">Nombre</span><span class="sxs-lookup"><span data-stu-id="d41bf-117">Name</span></span>       | <span data-ttu-id="d41bf-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="d41bf-118">Type</span></span> | <span data-ttu-id="d41bf-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="d41bf-119">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="14a1e-114">Authorization</span><span class="sxs-lookup"><span data-stu-id="14a1e-114">Authorization</span></span>  | <span data-ttu-id="14a1e-115">string</span><span class="sxs-lookup"><span data-stu-id="14a1e-115">string</span></span>  | <span data-ttu-id="14a1e-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="14a1e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="14a1e-118">Content-Type</span><span class="sxs-lookup"><span data-stu-id="14a1e-118">Content-Type</span></span>  | <span data-ttu-id="14a1e-119">application/json</span><span class="sxs-lookup"><span data-stu-id="14a1e-119">application/json</span></span>  |
+| <span data-ttu-id="d41bf-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d41bf-120">Authorization</span></span>  | <span data-ttu-id="d41bf-121">string</span><span class="sxs-lookup"><span data-stu-id="d41bf-121">string</span></span>  | <span data-ttu-id="d41bf-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d41bf-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d41bf-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d41bf-124">Content-Type</span></span>  | <span data-ttu-id="d41bf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d41bf-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="14a1e-120">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="14a1e-120">Request body</span></span>
-<span data-ttu-id="14a1e-121">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="14a1e-121">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d41bf-126">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="d41bf-126">Request body</span></span>
+<span data-ttu-id="d41bf-127">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="d41bf-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="14a1e-122">Parámetro</span><span class="sxs-lookup"><span data-stu-id="14a1e-122">Parameter</span></span>    | <span data-ttu-id="14a1e-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="14a1e-123">Type</span></span>   |<span data-ttu-id="14a1e-124">Descripción</span><span class="sxs-lookup"><span data-stu-id="14a1e-124">Description</span></span>|
+| <span data-ttu-id="d41bf-128">Parámetro</span><span class="sxs-lookup"><span data-stu-id="d41bf-128">Parameter</span></span>    | <span data-ttu-id="d41bf-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="d41bf-129">Type</span></span>   |<span data-ttu-id="d41bf-130">Descripción</span><span class="sxs-lookup"><span data-stu-id="d41bf-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="14a1e-125">groupIds</span><span class="sxs-lookup"><span data-stu-id="14a1e-125">groupIds</span></span>|<span data-ttu-id="14a1e-126">String</span><span class="sxs-lookup"><span data-stu-id="14a1e-126">String</span></span>|<span data-ttu-id="14a1e-p103">Colección que contiene los identificadores de objeto de los grupos en los que se comprueba la pertenencia. Pueden especificarse hasta 20 grupos.</span><span class="sxs-lookup"><span data-stu-id="14a1e-p103">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
+|<span data-ttu-id="d41bf-131">groupIds</span><span class="sxs-lookup"><span data-stu-id="d41bf-131">groupIds</span></span>|<span data-ttu-id="d41bf-132">String</span><span class="sxs-lookup"><span data-stu-id="d41bf-132">String</span></span>|<span data-ttu-id="d41bf-p104">Colección que contiene los identificadores de objeto de los grupos en los que se comprueba la pertenencia. Pueden especificarse hasta 20 grupos.</span><span class="sxs-lookup"><span data-stu-id="d41bf-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="14a1e-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="14a1e-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d41bf-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d41bf-135">Response</span></span>
 
-<span data-ttu-id="14a1e-130">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto de colección String en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="14a1e-130">If successful, this method returns `200, OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="d41bf-136">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto de colección String en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d41bf-136">If successful, this method returns `200, OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="14a1e-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="14a1e-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d41bf-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d41bf-137">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="14a1e-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="14a1e-132">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="d41bf-138">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d41bf-138">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -54,8 +56,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="14a1e-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="14a1e-133">Response</span></span>
-<span data-ttu-id="14a1e-p104">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="14a1e-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d41bf-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d41bf-139">Response</span></span>
+<span data-ttu-id="d41bf-p105">Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d41bf-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

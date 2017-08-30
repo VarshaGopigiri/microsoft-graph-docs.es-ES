@@ -1,12 +1,16 @@
-# <a name="chartlineformat-clear"></a><span data-ttu-id="6621d-101">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="6621d-101">ChartLineFormat: clear</span></span>
+# <a name="chartlineformat-clear"></a><span data-ttu-id="7ba3a-101">ChartLineFormat: clear</span><span class="sxs-lookup"><span data-stu-id="7ba3a-101">ChartLineFormat: clear</span></span>
 
-<span data-ttu-id="6621d-102">Borra el formato de línea de un elemento de gráfico.</span><span class="sxs-lookup"><span data-stu-id="6621d-102">Clear the line format of a chart element.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6621d-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="6621d-103">Prerequisites</span></span>
-<span data-ttu-id="6621d-104">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="6621d-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="7ba3a-102">Borrar el formato de línea de un elemento de gráfico.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-102">Clear the line format of a chart element.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ba3a-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="7ba3a-103">Permissions</span></span>
+<span data-ttu-id="7ba3a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="7ba3a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="6621d-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6621d-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="7ba3a-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="7ba3a-106">Permission type</span></span>      | <span data-ttu-id="7ba3a-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="7ba3a-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="7ba3a-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="7ba3a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="7ba3a-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7ba3a-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="7ba3a-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7ba3a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ba3a-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-111">Not supported.</span></span>    |
+|<span data-ttu-id="7ba3a-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="7ba3a-112">Application</span></span> | <span data-ttu-id="7ba3a-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6621d-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6621d-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ba3a-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="7ba3a-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
@@ -14,22 +18,21 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line
 POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6621d-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6621d-107">Request headers</span></span>
-| <span data-ttu-id="6621d-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="6621d-108">Name</span></span>       | <span data-ttu-id="6621d-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="6621d-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7ba3a-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="7ba3a-115">Request headers</span></span>
+| <span data-ttu-id="7ba3a-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="7ba3a-116">Name</span></span>       | <span data-ttu-id="7ba3a-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="7ba3a-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6621d-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="6621d-110">Authorization</span></span>  | <span data-ttu-id="6621d-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="6621d-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7ba3a-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="7ba3a-118">Authorization</span></span>  | <span data-ttu-id="7ba3a-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="7ba3a-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="7ba3a-121">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="6621d-113">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6621d-113">Request body</span></span>
+## <a name="response"></a><span data-ttu-id="7ba3a-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7ba3a-122">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="6621d-114">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6621d-114">Response</span></span>
+<span data-ttu-id="7ba3a-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="6621d-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6621d-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="6621d-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6621d-117">Example</span></span>
-<span data-ttu-id="6621d-118">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="6621d-118">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6621d-119">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6621d-119">Request</span></span>
-<span data-ttu-id="6621d-120">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6621d-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7ba3a-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7ba3a-125">Example</span></span>
+<span data-ttu-id="7ba3a-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="7ba3a-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="7ba3a-127">Request</span></span>
+<span data-ttu-id="7ba3a-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartlineformat_clear"
@@ -38,8 +41,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridline
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="6621d-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6621d-121">Response</span></span>
-<span data-ttu-id="6621d-122">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6621d-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="7ba3a-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7ba3a-129">Response</span></span>
+<span data-ttu-id="7ba3a-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7ba3a-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

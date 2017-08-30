@@ -1,33 +1,36 @@
-# <a name="worksheet-delete"></a><span data-ttu-id="f97a6-101">Worksheet: delete</span><span class="sxs-lookup"><span data-stu-id="f97a6-101">Worksheet: delete</span></span>
+# <a name="worksheet-delete"></a><span data-ttu-id="e73c3-101">Worksheet: delete</span><span class="sxs-lookup"><span data-stu-id="e73c3-101">Worksheet: delete</span></span>
 
-<span data-ttu-id="f97a6-102">Elimina la hoja de cálculo del libro.</span><span class="sxs-lookup"><span data-stu-id="f97a6-102">Deletes the worksheet from the workbook.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f97a6-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="f97a6-103">Prerequisites</span></span>
-<span data-ttu-id="f97a6-104">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="f97a6-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="e73c3-102">Elimina la hoja de cálculo del libro.</span><span class="sxs-lookup"><span data-stu-id="e73c3-102">Deletes the worksheet from the workbook.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e73c3-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="e73c3-103">Permissions</span></span>
+<span data-ttu-id="e73c3-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="e73c3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="f97a6-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f97a6-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="e73c3-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="e73c3-106">Permission type</span></span>      | <span data-ttu-id="e73c3-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="e73c3-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="e73c3-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="e73c3-108">Delegated (work or school account)</span></span> | <span data-ttu-id="e73c3-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e73c3-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e73c3-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e73c3-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e73c3-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="e73c3-111">Not supported.</span></span>    |
+|<span data-ttu-id="e73c3-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="e73c3-112">Application</span></span> | <span data-ttu-id="e73c3-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="e73c3-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f97a6-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="f97a6-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e73c3-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="e73c3-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="f97a6-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="f97a6-107">Request headers</span></span>
-| <span data-ttu-id="f97a6-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="f97a6-108">Name</span></span>       | <span data-ttu-id="f97a6-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="f97a6-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e73c3-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="e73c3-115">Request headers</span></span>
+| <span data-ttu-id="e73c3-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="e73c3-116">Name</span></span>       | <span data-ttu-id="e73c3-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="e73c3-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f97a6-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="f97a6-110">Authorization</span></span>  | <span data-ttu-id="f97a6-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="f97a6-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e73c3-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="e73c3-118">Authorization</span></span>  | <span data-ttu-id="e73c3-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="e73c3-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="e73c3-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="e73c3-121">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="f97a6-113">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="f97a6-113">Request body</span></span>
+## <a name="response"></a><span data-ttu-id="e73c3-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e73c3-122">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="f97a6-114">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f97a6-114">Response</span></span>
+<span data-ttu-id="e73c3-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e73c3-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="f97a6-p102">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f97a6-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="f97a6-117">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="f97a6-117">Example</span></span>
-<span data-ttu-id="f97a6-118">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="f97a6-118">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="f97a6-119">Solicitud</span><span class="sxs-lookup"><span data-stu-id="f97a6-119">Request</span></span>
-<span data-ttu-id="f97a6-120">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="f97a6-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e73c3-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e73c3-125">Example</span></span>
+<span data-ttu-id="e73c3-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="e73c3-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e73c3-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e73c3-127">Request</span></span>
+<span data-ttu-id="e73c3-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e73c3-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheet_delete"
@@ -36,8 +39,8 @@ POST /workbook/worksheets/{id|name}/delete
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/delete
 ```
 
-##### <a name="response"></a><span data-ttu-id="f97a6-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f97a6-121">Response</span></span>
-<span data-ttu-id="f97a6-122">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f97a6-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e73c3-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e73c3-129">Response</span></span>
+<span data-ttu-id="e73c3-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e73c3-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

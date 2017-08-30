@@ -1,12 +1,16 @@
-# <a name="range-insert"></a><span data-ttu-id="dbfa6-101">Range: insert</span><span class="sxs-lookup"><span data-stu-id="dbfa6-101">Range: insert</span></span>
+# <a name="range-insert"></a><span data-ttu-id="8d601-101">Range: insert</span><span class="sxs-lookup"><span data-stu-id="8d601-101">Range: insert</span></span>
 
-<span data-ttu-id="dbfa6-p101">Inserta una celda o un rango de celdas en la hoja de cálculo en lugar de este rango y desplaza las demás celdas para crear espacio. Devuelve un objeto Range en el espacio que queda en blanco.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-p101">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="dbfa6-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="dbfa6-104">Prerequisites</span></span>
-<span data-ttu-id="dbfa6-105">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="dbfa6-105">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="8d601-p101">Inserta una celda o un intervalo de celdas en la hoja de cálculo en lugar de este intervalo y desplaza las demás celdas para crear espacio. Devuelve un objeto Range en el espacio que queda en blanco.</span><span class="sxs-lookup"><span data-stu-id="8d601-p101">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8d601-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="8d601-104">Permissions</span></span>
+<span data-ttu-id="8d601-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="8d601-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="dbfa6-106">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dbfa6-106">Files.ReadWrite</span></span>
+|<span data-ttu-id="8d601-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="8d601-107">Permission type</span></span>      | <span data-ttu-id="8d601-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="8d601-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="8d601-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="8d601-109">Delegated (work or school account)</span></span> | <span data-ttu-id="8d601-110">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8d601-110">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8d601-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8d601-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8d601-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="8d601-112">Not supported.</span></span>    |
+|<span data-ttu-id="8d601-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="8d601-113">Application</span></span> | <span data-ttu-id="8d601-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="8d601-114">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dbfa6-107">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="dbfa6-107">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8d601-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="8d601-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/insert
@@ -14,27 +18,26 @@ POST /workbook/worksheets/{id|name}/range(<address>)/insert
 POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="dbfa6-108">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="dbfa6-108">Request headers</span></span>
-| <span data-ttu-id="dbfa6-109">Nombre</span><span class="sxs-lookup"><span data-stu-id="dbfa6-109">Name</span></span>       | <span data-ttu-id="dbfa6-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="dbfa6-110">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8d601-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="8d601-116">Request headers</span></span>
+| <span data-ttu-id="8d601-117">Nombre</span><span class="sxs-lookup"><span data-stu-id="8d601-117">Name</span></span>       | <span data-ttu-id="8d601-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="8d601-118">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="dbfa6-111">Authorization</span><span class="sxs-lookup"><span data-stu-id="dbfa6-111">Authorization</span></span>  | <span data-ttu-id="dbfa6-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8d601-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="8d601-119">Authorization</span></span>  | <span data-ttu-id="8d601-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="8d601-p103">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="8d601-122">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="8d601-122">Request body</span></span>
+<span data-ttu-id="8d601-123">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="8d601-123">In the request body, provide a JSON object with the following parameters.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="dbfa6-114">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="dbfa6-114">Request body</span></span>
-<span data-ttu-id="dbfa6-115">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-115">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="dbfa6-116">Parámetro</span><span class="sxs-lookup"><span data-stu-id="dbfa6-116">Parameter</span></span>    | <span data-ttu-id="dbfa6-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="dbfa6-117">Type</span></span>   |<span data-ttu-id="dbfa6-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="dbfa6-118">Description</span></span>|
+| <span data-ttu-id="8d601-124">Parámetro</span><span class="sxs-lookup"><span data-stu-id="8d601-124">Parameter</span></span>    | <span data-ttu-id="8d601-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="8d601-125">Type</span></span>   |<span data-ttu-id="8d601-126">Descripción</span><span class="sxs-lookup"><span data-stu-id="8d601-126">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dbfa6-119">Shift</span><span class="sxs-lookup"><span data-stu-id="dbfa6-119">shift</span></span>|<span data-ttu-id="dbfa6-120">string</span><span class="sxs-lookup"><span data-stu-id="dbfa6-120">string</span></span>|<span data-ttu-id="dbfa6-p103">Especifica hacia dónde se desplazarán las celdas.  Valores posibles: `Down`, `Right`.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-p103">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
+|<span data-ttu-id="8d601-127">Shift</span><span class="sxs-lookup"><span data-stu-id="8d601-127">shift</span></span>|<span data-ttu-id="8d601-128">string</span><span class="sxs-lookup"><span data-stu-id="8d601-128">string</span></span>|<span data-ttu-id="8d601-p104">Especifica hacia dónde se desplazarán las celdas.  Valores posibles: `Down`, `Right`.</span><span class="sxs-lookup"><span data-stu-id="8d601-p104">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="dbfa6-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dbfa6-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8d601-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8d601-131">Response</span></span>
 
-<span data-ttu-id="dbfa6-124">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-124">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="8d601-132">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8d601-132">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dbfa6-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="dbfa6-125">Example</span></span>
-<span data-ttu-id="dbfa6-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-126">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="dbfa6-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="dbfa6-127">Request</span></span>
-<span data-ttu-id="dbfa6-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8d601-133">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8d601-133">Example</span></span>
+<span data-ttu-id="8d601-134">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="8d601-134">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="8d601-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="8d601-135">Request</span></span>
+<span data-ttu-id="8d601-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="8d601-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_insert"
@@ -49,8 +52,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="dbfa6-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dbfa6-129">Response</span></span>
-<span data-ttu-id="dbfa6-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="dbfa6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8d601-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8d601-137">Response</span></span>
+<span data-ttu-id="8d601-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="8d601-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

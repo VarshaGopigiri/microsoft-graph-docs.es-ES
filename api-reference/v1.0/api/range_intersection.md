@@ -1,12 +1,16 @@
-# <a name="range-intersection"></a><span data-ttu-id="104a9-101">Range: Intersection</span><span class="sxs-lookup"><span data-stu-id="104a9-101">Range: Intersection</span></span>
+# <a name="range-intersection"></a><span data-ttu-id="048bd-101">Range: Intersection</span><span class="sxs-lookup"><span data-stu-id="048bd-101">Range: Intersection</span></span>
 
-<span data-ttu-id="104a9-102">Obtiene el objeto de intervalo que representa la intersección rectangular de los intervalos especificados.</span><span class="sxs-lookup"><span data-stu-id="104a9-102">Gets the range object that represents the rectangular intersection of the given ranges.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="104a9-103">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="104a9-103">Prerequisites</span></span>
-<span data-ttu-id="104a9-104">Se requieren los siguientes **ámbitos** para ejecutar esta API:</span><span class="sxs-lookup"><span data-stu-id="104a9-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="048bd-102">Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados.</span><span class="sxs-lookup"><span data-stu-id="048bd-102">Gets the range object that represents the rectangular intersection of the given ranges.</span></span>
+## <a name="permissions"></a><span data-ttu-id="048bd-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="048bd-103">Permissions</span></span>
+<span data-ttu-id="048bd-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="048bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="104a9-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="104a9-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="048bd-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="048bd-106">Permission type</span></span>      | <span data-ttu-id="048bd-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="048bd-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="048bd-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="048bd-108">Delegated (work or school account)</span></span> | <span data-ttu-id="048bd-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="048bd-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="048bd-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="048bd-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="048bd-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="048bd-111">Not supported.</span></span>    |
+|<span data-ttu-id="048bd-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="048bd-112">Application</span></span> | <span data-ttu-id="048bd-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="048bd-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="104a9-106">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="104a9-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="048bd-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="048bd-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/Intersection
@@ -14,27 +18,26 @@ GET /workbook/worksheets/{id|name}/range(<address>)/Intersection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="104a9-107">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="104a9-107">Request headers</span></span>
-| <span data-ttu-id="104a9-108">Nombre</span><span class="sxs-lookup"><span data-stu-id="104a9-108">Name</span></span>       | <span data-ttu-id="104a9-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="104a9-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="048bd-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="048bd-115">Request headers</span></span>
+| <span data-ttu-id="048bd-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="048bd-116">Name</span></span>       | <span data-ttu-id="048bd-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="048bd-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="104a9-110">Authorization</span><span class="sxs-lookup"><span data-stu-id="104a9-110">Authorization</span></span>  | <span data-ttu-id="104a9-p101">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="104a9-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="048bd-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="048bd-118">Authorization</span></span>  | <span data-ttu-id="048bd-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="048bd-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="048bd-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="048bd-121">Request body</span></span>
+<span data-ttu-id="048bd-122">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="048bd-122">In the request body, provide a JSON object with the following parameters.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="104a9-113">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="104a9-113">Request body</span></span>
-<span data-ttu-id="104a9-114">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="104a9-114">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="104a9-115">Parámetro</span><span class="sxs-lookup"><span data-stu-id="104a9-115">Parameter</span></span>    | <span data-ttu-id="104a9-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="104a9-116">Type</span></span>   |<span data-ttu-id="104a9-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="104a9-117">Description</span></span>|
+| <span data-ttu-id="048bd-123">Parámetro</span><span class="sxs-lookup"><span data-stu-id="048bd-123">Parameter</span></span>    | <span data-ttu-id="048bd-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="048bd-124">Type</span></span>   |<span data-ttu-id="048bd-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="048bd-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="104a9-118">anotherRange</span><span class="sxs-lookup"><span data-stu-id="104a9-118">anotherRange</span></span>|<span data-ttu-id="104a9-119">string</span><span class="sxs-lookup"><span data-stu-id="104a9-119">string</span></span>|<span data-ttu-id="104a9-120">Objeto de intervalo o dirección de intervalo que se usará para determinar la intersección de los intervalos.</span><span class="sxs-lookup"><span data-stu-id="104a9-120">The range object or range address that will be used to determine the intersection of ranges.</span></span>|
+|<span data-ttu-id="048bd-126">anotherRange</span><span class="sxs-lookup"><span data-stu-id="048bd-126">anotherRange</span></span>|<span data-ttu-id="048bd-127">string</span><span class="sxs-lookup"><span data-stu-id="048bd-127">string</span></span>|<span data-ttu-id="048bd-128">Objeto de intervalo o dirección de intervalo que se usará para determinar la intersección de los intervalos.</span><span class="sxs-lookup"><span data-stu-id="048bd-128">The range object or range address that will be used to determine the intersection of ranges.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="104a9-121">Respuesta</span><span class="sxs-lookup"><span data-stu-id="104a9-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="048bd-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="048bd-129">Response</span></span>
 
-<span data-ttu-id="104a9-122">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="104a9-122">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="048bd-130">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="048bd-130">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="104a9-123">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="104a9-123">Example</span></span>
-<span data-ttu-id="104a9-124">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="104a9-124">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="104a9-125">Solicitud</span><span class="sxs-lookup"><span data-stu-id="104a9-125">Request</span></span>
-<span data-ttu-id="104a9-126">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="104a9-126">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="048bd-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="048bd-131">Example</span></span>
+<span data-ttu-id="048bd-132">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="048bd-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="048bd-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="048bd-133">Request</span></span>
+<span data-ttu-id="048bd-134">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="048bd-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_intersection"
@@ -49,8 +52,8 @@ Content-length: 42
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="104a9-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="104a9-127">Response</span></span>
-<span data-ttu-id="104a9-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="104a9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="048bd-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="048bd-135">Response</span></span>
+<span data-ttu-id="048bd-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="048bd-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
