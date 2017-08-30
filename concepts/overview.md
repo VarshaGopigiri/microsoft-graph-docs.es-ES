@@ -27,7 +27,7 @@ Puede realizar todas estas acciones, entre otras, con la API de Microsoft Graph.
 ## <a name="next-steps"></a>Siguientes pasos
 
 - Consulte algunos [escenarios destacados](../concepts/featured_scenarios.md).
-- Probar una solicitud de ejemplo en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer)
+- Pruebe una solicitud de ejemplo en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use el [inicio rápido](https://developer.microsoft.com/graph/quick-start) para configurar una aplicación de ejemplo lista para ejecutar.
 - Descubra cómo [obtener un token de autenticación](../concepts/auth_overview.md) en su aplicación.
 - Empiece a [usar la API](../concepts/use_the_api.md).

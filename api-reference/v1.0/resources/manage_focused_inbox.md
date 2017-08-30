@@ -15,7 +15,8 @@ Tenga en cuenta que el sistema de clasificación solo aprende y aplica clasifica
 [Actualizar la propiedad inferenceClassification de un mensaje](../api/message_update.md)
 
 
-**Utilizar invalidaciones para clasificar de forma coherente según el remitente**
+**Uso de invalidaciones para clasificar de forma coherente según el remitente**
 
-[Crear una invalidación para un remitente](../api/inferenceclassification_post_overrides.md) | [Enumerar todas las invalidaciones del usuario](../api/inferenceclassification_list_overrides.md) | 
-[Actualizar una invalidación para un remitente](../api/inferenceclassificationoverride_update.md) | [Eliminar una invalidación del remitente](../api/inferenceclassificationoverride_delete.md) 
+[Crear una invalidación para un remitente](../api/inferenceclassification_post_overrides.md) | [Enumerar todas las invalidaciones de usuario](../api/inferenceclassification_list_overrides.md) |
+
+[Actualizar una invalidación para un remitente](../api/inferenceclassificationoverride_update.md) | [Eliminar una invalidación de remitente](../api/inferenceclassificationoverride_delete.md) 

@@ -55,7 +55,7 @@ El recurso **drive** deriva de [**baseItem**](baseitem.md) y hereda las propieda
 | owner                | [identitySet](identityset.md) | Opcional. La cuenta de usuario propietaria de la unidad. Solo lectura.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Opcional. Información sobre la cuota de espacio de almacenamiento de la unidad. Solo lectura.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                                                                                                                                                         |
-| webUrl               | string (URL)                  | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                                                                                        |
+| webUrl               | string (url)                  | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
@@ -67,7 +67,6 @@ El recurso **drive** deriva de [**baseItem**](baseitem.md) y hereda las propieda
 | items        | Colección [driveitem](driveitem.md) | Todos los elementos contenidos en la unidad. Solo lectura. Admite valores NULL.                   |
 | root         | [driveitem](driveitem.md)            | La carpeta raíz de la unidad. Solo lectura.                                 |
 | special      | Colección [driveitem](driveitem.md) | Colección de carpetas comunes disponibles en OneDrive. Solo lectura. Admite valores NULL. |
-
 
 ## <a name="methods"></a>Métodos
 

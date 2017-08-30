@@ -29,7 +29,7 @@ Aquí tiene una representación JSON del recurso.
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | Hash SHA1 para el contenido del archivo (si está disponible). Solo lectura. |
 | **crc32Hash**    | String | El valor CRC32 del archivo (si está disponible). Solo lectura.            |
-| **quickXorHash** | String | Un hash de propietario del archivo que se puede usar para determinar si ha cambiado el contenido del archivo (si está disponible). Solo lectura. | 
+| **quickXorHash** | String | Un hash de propietario del archivo que se puede usar para determinar si ha cambiado el contenido del archivo (si está disponible). Solo lectura. |
 
 **Nota:** En algunos casos, puede que no estén disponibles los valores hash. Si este es el caso, los valores hash de un elemento se actualizarán después de que se descargue el elemento.
 

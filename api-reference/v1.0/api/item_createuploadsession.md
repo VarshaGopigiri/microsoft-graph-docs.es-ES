@@ -1,18 +1,20 @@
 # <a name="upload-large-files-with-an-upload-session"></a>Cargar archivos de gran tamaño con una sesión de carga
 
-Cree una sesión de carga para permitir que su aplicación cargue archivos de hasta el tamaño de archivo máximo. Una sesión de carga permite que su aplicación cargue intervalos del archivo en solicitudes API secuenciales, lo que permite que la transferencia se reanude si se interrumpe una conexión mientras la carga está en curso.
+Cree una sesión de carga para permitir que la aplicación cargue archivos de hasta el tamaño de archivo máximo. Una sesión de carga permite que la aplicación cargue intervalos del archivo en solicitudes API secuenciales, lo que permite que la transferencia se reanude si se interrumpe una conexión mientras la carga está en curso.
 
 Para cargar un archivo mediante una sesión de carga hay que realizar dos pasos:
 
 1. [Crear una sesión de carga](#create-an-upload-session)
 2. [Cargar bytes a la sesión de carga](#upload-bytes-to-the-upload-session)
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API:
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | Files.ReadWrite, Files.ReadWrite.All    |
+|Aplicación | Sites.ReadWrite.All |
 
 > **Nota**: El permiso de aplicación Files.ReadWrite.All aún no se admite en esta API. Está prevista la compatibilidad completa próximamente. 
 
@@ -45,7 +47,6 @@ Por ejemplo, para controlar el comportamiento si ya existe el nombre de archivo,
 | Nombre       | Valor | Descripción                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Si se incluye este encabezado de solicitud y la eTag (o cTag) proporcionada no coincide con la eTag actual en el elemento, se devuelve una respuesta de error `412 Precondition Failed`. |
-
 
 ### <a name="response"></a>Respuesta
 La respuesta a esta solicitud ofrecerá los detalles de la [uploadSession](../resources/uploadsession.md) recién creada, que incluye la dirección URL utilizada para cargar las partes del archivo. 

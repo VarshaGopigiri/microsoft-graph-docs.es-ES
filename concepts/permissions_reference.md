@@ -146,27 +146,27 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 ---
 
-## <a name="microsoft-intune-device-management-permissions"></a>Permisos de la administración de dispositivos con Microsoft Intune
+## <a name="intune-device-management-permissions"></a>Permisos de la administración de dispositivos de Intune
 
 #### <a name="delegated-permissions"></a>Permisos delegados
 
-Ninguno.
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _DeviceManagementApps.Read.All_ | Leer aplicaciones de Microsoft Intune | Permite que la aplicación lea las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
+| _DeviceManagementApps.ReadWrite.All_ | Leer y escribir aplicaciones de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
+| _DeviceManagementConfiguration.Read.All_ | Leer las directivas y configuración de dispositivo de Microsoft Intune | Permite que la aplicación lea las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
+| _DeviceManagementConfiguration.ReadWrite.All_ | Leer y escribir las directivas y configuración de dispositivo de Microsoft Intune  | Permite que la aplicación lea y escriba las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
+| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Realizar acciones remotas que repercutan en el usuario en dispositivos de Microsoft Intune | Permite que la aplicación realice acciones de alto impacto remotas como la eliminación remota de datos del dispositivo o restablecer la contraseña en dispositivos administrados por Microsoft Intune. | Sí |
+| _DeviceManagementManagedDevices.Read.All_ | Leer dispositivos de Microsoft Intune | Permite que la aplicación lea las propiedades de dispositivos administrados por Microsoft Intune. | Sí |
+| _DeviceManagementManagedDevices.ReadWrite.All_ | Leer y escribir dispositivos de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades de dispositivos administrados por Microsoft Intune. No permite operaciones de alto impacto como la eliminación remota y el restablecimiento de contraseña del propietario del dispositivo. | Sí |
+| _DeviceManagementRBAC.Read.All_ | Leer la configuración de RBAC de Microsoft Intune | Permite que la aplicación lea las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
+| _DeviceManagementRBAC.ReadWrite.All_ | Leer y escribir la configuración de RBAC de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
+| _DeviceManagementServiceConfig.Read.All_ | Leer la configuración de Microsoft Intune | Permite que la aplicación lea las propiedades de servicio de Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
+| _DeviceManagementServiceConfig.ReadWrite.All_ | Leer y escribir la configuración de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
-|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _DeviceManagementServiceConfig.Read.All_ | Leer la configuración de Microsoft Intune (versión preliminar) | Permite que la aplicación lea las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
-| _DeviceManagementServiceConfig.ReadWrite.All_ | Leer y escribir la configuración de Microsoft Intune (versión preliminar) | Permite que la aplicación lea y escriba las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
-| _DeviceManagementConfiguration.Read.All_ | Leer las directivas y configuración de dispositivo de Microsoft Intune (vista previa) | Permite que la aplicación lea las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
-| _DeviceManagementConfiguration.ReadWrite.All_ | Leer y escribir las directivas y configuración de dispositivo de Microsoft Intune (vista previa) | Permite que la aplicación lea y escriba las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
-| _DeviceManagementApps.Read.All_ | Leer aplicaciones de Microsoft Intune (vista previa) | Permite que la aplicación lea las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
-| _DeviceManagementApps.ReadWrite.All_ | Leer y escribir aplicaciones de Microsoft Intune (vista previa) | Permite que la aplicación lea y escriba las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
-| _DeviceManagementRBAC.Read.All_ | Leer la configuración de RBAC de Microsoft Intune (vista previa) | Permite que la aplicación lea las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
-| _DeviceManagementRBAC.ReadWrite.All_ | Leer y escribir la configuración de RBAC de Microsoft Intune (vista previa) | Permite que la aplicación lea y escriba las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
-| _DeviceManagementManagedDevices.Read.All_ | Leer dispositivos de Microsoft Intune (vista previa) | Permite que la aplicación lea las propiedades de dispositivos administrados por Microsoft Intune. | Sí |
-| _DeviceManagementManagedDevices.ReadWrite.All_ | Leer y escribir dispositivos de Microsoft Intune (vista previa) | Permite que la aplicación lea y escriba las propiedades de dispositivos administrados por Microsoft Intune. No permite operaciones de alto impacto como la eliminación remota y el restablecimiento de contraseña del propietario del dispositivo. | Sí |
-| _DeviceManagementManagedDevices.PrivilegedOperations.All_ | Realizar acciones remotas que repercutan en el usuario en dispositivos de Microsoft Intune (vista previa) | Permite que la aplicación realice acciones de alto impacto remotas como la eliminación remota de datos del dispositivo o restablecer la contraseña en dispositivos administrados por Microsoft Intune. | Sí |
+Ninguno.
 
 ### <a name="remarks"></a>Comentarios
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
@@ -308,15 +308,18 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 ### <a name="remarks"></a>Comentarios
 
-No se admite la funcionalidad de grupo en cuentas de Microsoft. 
+No se admite la funcionalidad de grupo en cuentas personales de Microsoft. 
 
-En el caso de los Grupos de Office 365, los permisos de grupo conceden a la aplicación acceso al contenido del grupo, como conversaciones, archivos, notas, etc. Los permisos de grupo también se usan para controlar el acceso a recursos y API de [Microsoft Planner](../api-reference/beta/resources/planner_overview.md).
+En el caso de los grupos de Office 365, los permisos de grupo conceden a la aplicación acceso al contenido del grupo, como conversaciones, archivos, notas, etc. 
 
 En el caso de los permisos de la aplicación, se admiten algunas limitaciones para las API. Para obtener más información, vea los [problemas conocidos](../concepts/known_issues.md).
 
 En algunos casos, una aplicación podría necesitar [permisos de directorio](#directory-permissions) para leer algunas propiedades de grupo, como `member` y `memberOf`. Por ejemplo, si un grupo tiene una o más entidades de servicio [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) como miembros, la aplicación necesitará permisos efectivos para leer las entidades de servicio mediante la concesión de uno de los permisos _Directory.\*_. De lo contrario, Microsoft Graph devolverá un error. (En el caso de los permisos delegados, el usuario que ha iniciado sesión también deberá tener privilegios suficientes en la organización para leer entidades de servicio). Lo mismo se aplica a la propiedad `memberOf`, que puede devolver [administrativeUnits](../api-reference/beta/resources/administrativeunit.md).
 
-### <a name="example-usage"></a>Ejemplos de uso
+Los permisos de grupo también se usan para controlar el acceso a recursos y API de [Microsoft Planner](../api-reference/beta/resources/planner_overview.md). Solo se admiten los permisos delegados para las API de Microsoft Planner ; no se admiten los permisos de aplicación. No se admiten las cuentas personales de Microsoft.
+
+
+### <a name="example-usage"></a>Ejemplo de uso
 #### <a name="delegated"></a>Delegado
 
 * _Group.Read.All_: leer todos los Grupos de Office 365 de los que es miembro el usuario que ha iniciado sesión (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
@@ -592,7 +595,10 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
-Ninguno.
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Sites.Read.All_ |    Leer los elementos de todas las colecciones de sitios (versión preliminar) | Permite que la aplicación lea todos los documentos y elementos de lista de todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión. | Sí |
+| _Sites.ReadWrite.All_ |    Leer y escribir elementos en todas las colecciones de sitios (versión preliminar) | Permite que la aplicación cree, lea, actualice y elimine documentos y elementos de lista de todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión. | Sí |
 
 ### <a name="remarks"></a>Comentarios
 Los permisos de sitios solo son válidos en las cuentas profesionales o educativas.
@@ -602,7 +608,6 @@ Los permisos de sitios solo son válidos en las cuentas profesionales o educativ
 
 * _Sites.Read.All_: leer las listas del sitio raíz de SharePoint (`GET /beta/sharePoint/site/lists`).
 * _Sites.ReadWrite.All_: crear elementos de lista en una lista de SharePoint (`POST /beta/sharePoint/site/lists/123/items`).
-
 
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 

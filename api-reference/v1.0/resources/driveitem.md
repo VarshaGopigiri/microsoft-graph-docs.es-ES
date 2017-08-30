@@ -2,7 +2,7 @@
 
 El recurso **driveItem** representa un archivo, una carpeta u otro elemento almacenado en una unidad. Todos los objetos del sistema de archivos en OneDrive y SharePoint se devuelven como recursos de **driveItem**.
 
-Hay dos formas principales de resolver un recurso **driveItem**:
+Hay dos maneras principales de abordar un recurso **driveItem**:
 
 * Con el identificador único **driveItem** utilizando `drive/items/{item-id}`
 * Con la ruta de acceso del sistema de archivos utilizando `/drive/root:/path/to/file`
@@ -105,12 +105,12 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
 | remoteItem           | [remoteItem](remoteitem.md)         | Datos de elemento remoto, si el elemento se comparte desde una unidad distinta a la de acceso. Solo lectura.                                                                        |
 | root                 | [root](root.md)                     | Si esta propiedad no es NULL, indica que el driveItem es el driveItem de nivel superior de la unidad.                                                                     |
 | searchResult         | [searchResult](searchresult.md)     | Metadatos de búsqueda, si el elemento es un resultado de búsqueda. Solo lectura.                                                                                                          |
-| compartido               | [shared](shared.md)                 | Indica que el elemento se ha compartido con otros usuarios y proporciona información sobre el estado del elemento compartido. Solo lectura.                                               |
+| shared               | [shared](shared.md)                 | Indica que el elemento se ha compartido con otros usuarios y proporciona información sobre el estado del elemento compartido. Solo lectura.                                               |
 | sharepointIds        | [sharepointIds](sharepointids.md)   | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                                                                                                  |
 | size                 | Int64                               | Tamaño del elemento en bytes. Solo lectura.                                                                                                                                     |
 | specialFolder        | [specialFolder](specialfolder.md)   | Si el elemento actual también está disponible como una carpeta especial, se devuelve esta faceta. Solo lectura.                                                                             |
 | video                | [video](video.md)                   | Metadatos de vídeo, si el elemento es un vídeo. Solo lectura.                                                                                                                        |
-| webDavUrl            | String                              | Dirección URL compatible con WebDAV del elemento.                                                                                                                                       |
+| webDavUrl            | Cadena                              | Dirección URL compatible con WebDAV del elemento.                                                                                                                                       |
 | webUrl               | String                              | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                                 |
 
 **Nota:** Las propiedades eTag y cTag funcionan de forma diferente en los contenedores (carpetas). El valor de cTag se modifica cuando se cambia el contenido o los metadatos de cualquier descendiente de la carpeta. El valor de eTag solo se modifica cuando se cambian las propiedades de la carpeta, excepto las propiedades que derivan de descendientes (como **childCount** o **lastModifiedDateTime**).
@@ -121,11 +121,10 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
 | :----------------- | :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | content            | Secuencia                                     | La secuencia de contenido, si el elemento representa un archivo.                                                                                                                                |
 | children           | Colección [driveitem](driveitem.md)       | Colección que contiene objetos de elemento de los elementos secundarios inmediatos. Solo los elementos que representan carpetas tienen elementos secundarios. Solo lectura. Admite valores NULL.                                        |
-| createdByUser      | [user](user.md)                            | Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.                                                                                                  |
-| lastModifiedByUser | [user](user.md)                            | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.                                                                                            |
-| permisos        | Colección [permission](permission.md)     | El conjunto de permisos del elemento. Solo lectura. Admite valores NULL.                                                                                                                         |
+| createdByUser      | [usuario](user.md)                            | Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.                                                                                                  |
+| lastModifiedByUser | [usuario](user.md)                            | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.                                                                                            |
+| permissions        | Colección [permission](permission.md)     | El conjunto de permisos del elemento. Solo lectura. Admite valores NULL.                                                                                                                         |
 | miniaturas         | Colección [thumbnailSet](thumbnailset.md) | Colección que contiene objetos [ThumbnailSet](thumbnailSet.md) asociados al elemento. Para obtener más información, consulte [obtener miniaturas](../api/thumbnailset_get.md). Solo lectura. Admite valores NULL. |
-
 
 ## <a name="instance-attributes"></a>Atributos de instancia
 
@@ -160,7 +159,6 @@ Los atributos de instancia son propiedades con comportamientos especiales. Estas
 | [Agregar permisos](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |
 | [Enumerar permisos](../api/item_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
 | [Eliminar permiso](../api/permission_delete.md)       | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
-
 
 ## <a name="remarks"></a>Observaciones
 

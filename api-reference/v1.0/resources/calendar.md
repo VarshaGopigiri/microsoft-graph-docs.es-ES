@@ -19,7 +19,6 @@ Un calendario que es un contenedor de eventos.
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [calendar](calendar.md) | Cree una o varias propiedades extendidas de varios valores en un calendario nuevo o existente.  |
 |[Get calendar with multi-value extended property](../api/multivaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Obtenga un calendario que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
 
-
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
@@ -35,10 +34,10 @@ Un calendario que es un contenedor de eventos.
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|calendarView|[Event](event.md) collection|La vista Calendario del calendario. Propiedad Navigation. Solo lectura.|
-|events|[Event](event.md) collection|Los eventos del calendario. Propiedad Navigation. Solo lectura.|
+|calendarView|Colección [event](event.md)|La vista Calendario del calendario. Propiedad Navigation. Solo lectura.|
+|events|Colección [Event](event.md)|Los eventos del calendario. Propiedad Navigation. Solo lectura.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el calendario. Solo lectura. Admite valores NULL.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| La colección de propiedades extendidas de valor único definidas para el calendario. Solo lectura. Admite valores NULL.|
+|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el calendario. Solo lectura. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -15,7 +15,7 @@ O bien en los siguientes recursos de grupo de Office 365:
 - [calendar](../resources/calendar.md) de grupo
 - [post](../resources/post.md) de grupo 
 
-## <a name="use-extended-properties-or-open-extensions"></a>¿Utiliza propiedades extendidas o extensiones abiertas?
+## <a name="use-extended-properties-or-open-extensions"></a>¿Usa propiedades extendidas o extensiones abiertas?
 
 En los casos más comunes, debería poder utilizar las extensiones abiertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conocidas como extensiones de datos de Office 365) para almacenar y acceder a datos personalizados de instancias de recurso en el buzón de un usuario. Utilice las propiedades extendidas solo si necesita acceder a datos personalizados de las propiedades MAPI de Outlook que aún no están expuestos en los [metadatos de la API de Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs/overview/call_api). 
 
@@ -41,17 +41,15 @@ Cuando cree una propiedad extendida de valor único o de varios valores, puede e
 
 |**Formato**|**Ejemplo**|**Descripción**|
 |:---------|:----------|:--------------|
-| "*{type} {guid} **Name** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica una propiedad mediante el espacio de nombres (GUID) al que pertenece y mediante un nombre.         |
-| "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifica una propiedad mediante el espacio de nombres (GUID) al que pertenece y mediante un identificador.  |
-
+| "*{tipo} {guid} **Nombre** {nombre}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica una propiedad mediante el espacio de nombres (GUID) al que pertenece y mediante un nombre.         |
+| "*{tipo} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifica una propiedad mediante el espacio de nombres (GUID) al que pertenece y mediante un identificador.  |
 
 **Formatos de identificador válidos para propiedades extendidas de varios valores**
 
 |**Formato**|**Ejemplo**|**Descripción**|
 |:---------|:----------|:--------------|
-| "*{type} {guid} **Name** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica una propiedad mediante un espacio de nombres (GUID) y un nombre.         |
-| "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifica una propiedad mediante un espacio de nombres (GUID) y un identificador.   |
-
+| "*{tipo} {guid} **Nombre** {nombre}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica una propiedad mediante un espacio de nombres (GUID) y un nombre.         |
+| "*{tipo} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifica una propiedad mediante un espacio de nombres (GUID) y un identificador.   |
 
 ### <a name="rest-api-operations"></a>Operaciones de la API de REST
  

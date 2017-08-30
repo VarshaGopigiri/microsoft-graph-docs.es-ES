@@ -1,13 +1,15 @@
-# <a name="get-member-groups"></a>Obtener grupos de miembro
+# <a name="get-member-groups"></a>Get member groups
 
 Devuelve todos los grupos de los que el usuario, grupo u objeto de directorio que se especifique sea miembro. Esta función es transitiva.
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes **ámbitos** para ejecutar esta API: 
-- _User.Read.All_ Y _Group.Read.All_
-- _Directory.Read.All_
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-> Nota: Los ámbitos de permiso se muestran por orden de privilegio mínimo necesario.
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | User.Read.All y Group.Read.All, Directory.Read.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | User.Read.All y Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

@@ -6,24 +6,27 @@ Las carpetas especiales proporcionan alias simples para acceder a carpetas conoc
 
 Las carpetas especiales se crean de forma automática la primera vez que una aplicación intenta escribir en una, si aún no existe. Si un usuario elimina una, se vuelve a crear al volver a escribir en ella.
 
-**Nota:**  Si tiene permisos de solo lectura y solicita una carpeta especial que no existe, recibirá un error `403 Forbidden`.
+>**Nota:**  Si tiene permisos de solo lectura y solicita una carpeta especial que no existe, recibirá un error `403 Forbidden`.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
-|Delegado (cuenta personal de Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Files.ReadWrite.AppFolder    | 
-|Aplicación | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
+|Tipo de permiso                        | Permisos (de menos a más privilegiados)                                                           |
+|:--------------------------------------|:------------------------------------------------------------------------------------------------------|
+|Delegado (cuenta profesional o educativa)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Delegado (cuenta personal de Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Files.ReadWrite.AppFolder           |
+|Aplicación                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/special/{name}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+
+Este método admite los [parámetros de consulta OData](../../../concepts/query_parameters.md) `$expand` y `$select` para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
@@ -31,8 +34,8 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 |:--------------|:-------|:--------------------------|
 | Authorization | string | {token} de portador. Obligatorio. |
 
-
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
@@ -42,6 +45,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 ## <a name="example"></a>Ejemplo
 
 ##### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud de las unidades del usuario.
 
 <!-- {
@@ -74,7 +78,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>Comentarios
 
-Para solicitar los elementos secundarios de una carpeta especial, puede solicitar la colección `children` o usar la opción [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para expandir la colección de elementos secundarios.
+Para solicitar los elementos secundarios de una carpeta especial, puede solicitar la colección `children` o usar la opción [$expand](../../../concepts/query_parameters.md) para expandir la colección de elementos secundarios.
 
 
 <!-- {

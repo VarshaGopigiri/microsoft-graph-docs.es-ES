@@ -1,6 +1,7 @@
-# <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
+# <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
-Obtiene el objeto de rango asociado al cuerpo de datos de la columna.
+Obtiene un número determinado de columnas a la izquierda del rango especificado.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -13,20 +14,25 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/DataBodyRange
+POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
+| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
+
+## <a name="parameters"></a>Parámetros
+
+| Parámetro    | Tipo   |Descripción|
+|:---------------|:--------|:----------|
+|count|Int32|El número de columnas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-## <a name="response"></a>Respuesta
-
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.
+### <a name="response"></a>Respuesta
+Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.
@@ -34,10 +40,10 @@ Aquí tiene un ejemplo de cómo llamar a esta API.
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
-  "name": "tablecolumn_databodyrange"
+  "name": "workbookrange_columnsbefore"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -50,24 +56,14 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "TableColumn: DataBodyRange",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

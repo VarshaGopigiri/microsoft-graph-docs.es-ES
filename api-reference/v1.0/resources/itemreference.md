@@ -31,11 +31,10 @@ Aquí tiene una representación JSON del recurso
 | id            | String                            | Identificador único del elemento en la unidad. Solo lectura.                                                     |
 | name          | String                            | El nombre del elemento al que se hace referencia. Solo lectura.                                                          |
 | path          | String                            | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.                                                  |
-| shareId       | String                            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares](../api/shares_get.md). |
+| shareId       | Cadena                            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares](../api/shares_get.md). |
 | sharepointIds | [sharepointIds](sharepointids.md) | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                                   |
 
-
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para resolver un **driveItem** de un recurso **itemReference**, cree una dirección URL con el formato:
 

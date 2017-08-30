@@ -2,7 +2,7 @@
 
 El recurso **Image** agrupa en una sola estructura las propiedades relacionadas con la imagen. Si un [**DriveItem**](driveitem.md) tiene una faceta de **image** no null, el elemento representa una imagen de mapa de bits.
 
-**Nota:** Si el servicio no puede determinar el ancho y el alto de la imagen, puede que el recurso **image** esté vacío.
+**Nota**: Si el servicio no puede determinar el ancho y el alto de la imagen, puede que el recurso **image** esté vacío.
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -27,7 +27,6 @@ Aquí tiene una representación JSON del recurso.
 |:-----------|:------|:-------------------------------------------|
 | **height** | Int32 | Opcional. Ancho o alto de la imagen en píxeles. Solo lectura. |
 | **width**  | Int32 | Opcional. Ancho de la imagen en píxeles. Solo lectura.  |
-
 
 ## <a name="remarks"></a>Observaciones
 

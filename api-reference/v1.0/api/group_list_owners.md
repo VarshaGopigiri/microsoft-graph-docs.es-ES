@@ -1,9 +1,15 @@
-# <a name="list-owners"></a>Enumerar propietarios
+# <a name="list-owners"></a>List owners
 
 Recupera una lista de propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo. 
 
-## <a name="prerequisites"></a>Requisitos previos
-Se requieren los siguientes **ámbitos** para ejecutar esta API: *Group.Read.All* y uno de *User.ReadBasic.All* o *User.Read.All* o *User.ReadWrite.All*
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Group.Read.All y User.ReadBasic.All, Group.Read.All y User.Read.All, Group.Read.All y User.ReadWrite.All   |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | Group.Read.All y User.Read.All, Group.Read.All y User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
