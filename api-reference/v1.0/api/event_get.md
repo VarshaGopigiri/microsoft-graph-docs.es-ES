@@ -23,11 +23,11 @@ Puede usar las propiedades **OriginalStartTimeZone** y **OriginalEndTimeZone** d
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Calendars.Read    | 
-|Delegado (cuenta personal de Microsoft) | Calendars.Read    | 
-|Aplicación | Calendars.Read | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Calendars.Read    |
+|Delegado (cuenta personal de Microsoft) | Calendars.Read    |
+|Aplicación | Calendars.Read |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -125,8 +125,8 @@ Content-length: 1928
                 "time":"0001-01-01T00:00:00Z"
             },
             "emailAddress":{
-                "name":"Fanny Downs",
-                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+                "name":"Samantha Booth",
+                "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
             }
         },
         {
@@ -143,8 +143,8 @@ Content-length: 1928
     ],
     "organizer":{
         "emailAddress":{
-            "name":"Fanny Downs",
-            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            "name":"Samantha Booth",
+            "address":"samanthab@a830edad905084922E17020313.onmicrosoft.com"
         }
     }
 }
