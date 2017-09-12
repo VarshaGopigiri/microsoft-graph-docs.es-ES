@@ -1,33 +1,34 @@
 
-# <a name="paging-microsoft-graph-data-in-your-app"></a>Paginación de los datos de Microsoft Graph en su aplicación 
- 
-Cuando las solicitudes de Microsoft Graph devuelven demasiada información para mostrarla en una página, puede usar la paginación para dividir la información en fragmentos manejables. 
+# <a name="paging-microsoft-graph-data-in-your-app"></a><span data-ttu-id="f9f6c-101">Paginación de los datos de Microsoft Graph en la aplicación</span><span class="sxs-lookup"><span data-stu-id="f9f6c-101">Paging Microsoft Graph data in your app</span></span> 
 
-Puede adelantar o retroceder una página en las respuestas de Microsoft Graph. Una respuesta que contenga resultados paginados incluirá un token de omisión (**odata.nextLink**) que le permitirá obtener la siguiente página de resultados. Este token de omisión puede combinarse con un argumento de consulta **previous-page=true** para retroceder una página.
+<span data-ttu-id="f9f6c-p101">Algunas consultas realizadas en Microsoft Graph devuelven varias páginas de datos debido a la paginación del servidor o al uso del parámetro `$top` para limitar específicamente el tamaño de página en una solicitud. Cuando un conjunto de resultados abarca varias páginas, Microsoft Graph devuelve una propiedad `@odata.nextLink` en la respuesta que contiene una dirección URL a la siguiente página de resultados.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-p101">Some queries against Microsoft Graph return multiple pages of data either due to server-side paging or due to the use of the `$top` query parameter to specifically limit the page size in a request. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results.</span></span> 
 
-En el siguiente ejemplo de solicitud, se muestra la paginación hacia adelante:
+<span data-ttu-id="f9f6c-104">Por ejemplo, la dirección URL siguiente solicita todos los usuarios en una organización con un tamaño de página de 5 especificado con el parámetro de consulta `$top`:</span><span class="sxs-lookup"><span data-stu-id="f9f6c-104">For example, the following URL requests all of the users in an organization with a page size of 5 specified with the `$top` query parameter:</span></span>
 
+```html
+https://graph.microsoft.com/v1.0/users?$top=5
 ```
-https://graph.microsoft.com/v1.0/users?$top=5$skiptoken=X'4453707402.....0000'
+
+<span data-ttu-id="f9f6c-105">Si el resultado contiene más de cinco usuarios, Microsoft Graph devolverá una propiedad `odata:nextLink` similar a la siguiente junto con la primera página de usuarios.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-105">If the result contains more than 5 users, Microsoft Graph will return an `odata:nextLink` property similar to the following along with the first page of users.</span></span>
+
+```json
+"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
 ```
-El parámetro **$skiptoken** de la respuesta anterior se incluye, y le permite obtener la siguiente página de resultados.
 
-En el siguiente ejemplo de solicitud se muestra la paginación hacia atrás:
+<span data-ttu-id="f9f6c-106">Puede recuperar la siguiente página de resultados enviando el valor de dirección URL de la propiedad `@odata:nextLink` a Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-106">You can retrieve the next page of results by sending the URL value of the `@odata:nextLink` property to Microsoft Graph.</span></span> 
 
+```html
+https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
-https://graph.microsoft.com/v1.0/users?$top=5$skiptoken=X'4453707.....00000'&previous-page=true
-```
-Se incluye el parámetro **$skiptoken** de la respuesta anterior. Cuando este parámetro se combine con el parámetro **&previous-page=true**, se recuperará la página anterior de los resultados.
 
-Los siguientes son los pasos de solicitud y respuesta para adelantar y retroceder de página:
+<span data-ttu-id="f9f6c-107">Microsoft Graph continuará devolviendo una referencia a la siguiente página de datos en la propiedad `@odata:nextLink` con cada respuesta, hasta que se hayan leído todas las páginas del resultado.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-107">Microsoft Graph will continue to return a reference to the next page of data in the `@odata:nextLink` property with each response until all pages of the result have been read.</span></span>
 
-1. Se realiza una solicitud para obtener una lista de los primeros 10 usuarios de 15. La respuesta contiene un token de omisión para indicar la página final de los 10 usuarios.
-2. Para obtener los 5 usuarios finales, se realiza otra solicitud que contiene el token de omisión devuelto de la respuesta previa.
-3. Para retroceder la página, se realiza una solicitud usando el token de omisión devuelto en el paso 1 y se agrega el parámetro **&previous-page=true** a la solicitud.
-4. La respuesta contiene la página anterior (primera) de 10 usuarios. En un escenario diferente donde quedan más páginas, se devolverá un nuevo token de omisión. Este nuevo token de omisión puede agregarse a la solicitud junto con **&previous-page=true** para retroceder una página de nuevo.
+><span data-ttu-id="f9f6c-p102">**Importante:** Debe incluir la dirección URL completa en la propiedad `@odata:nextLink` de la solicitud de la siguiente página de resultados. Según la API en la que se realice la consulta, el valor de dirección URL `@odata:nextLink` contendrá un `$skiptoken` o un parámetro de consulta `$skip`. La dirección URL contiene también todos los demás parámetros de consulta presentes en la solicitud original. No intente extraer el `$skiptoken` o el valor `$skip` y usarlo en una solicitud diferente.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-p102">**Important:** You should include the entire URL in the `@odata:nextLink` property in your request for the next page of results. Depending on the API that the query is being performed against, the `@odata:nextLink` URL value will contain either a `$skiptoken` or a `$skip` query parameter. The URL also contains all of the other query parameters present in the original request. Do not try to extract the `$skiptoken` or `$skip` value and use it in a different request.</span></span> 
 
-Las siguientes restricciones se aplican a las solicitudes de paginación:
+<span data-ttu-id="f9f6c-p103">El comportamiento de paginación varía entre las distintas API de Microsoft Graph. Al trabajar con datos paginados debe tener en cuenta lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="f9f6c-p103">Paging behavior varies across different Microsoft Graph APIs. You should consider the following when working with paged data:</span></span>
 
-- El tamaño predeterminado de la página es 100. El tamaño de página máximo es 999.
-- Las consultas contra los roles no son compatibles con la paginación. Esto incluye los objetos de rol de lectura así como los miembros de rol.
-- La paginación no es compatible con las búsquedas de vínculos, como consultar los miembros de grupo.
+- <span data-ttu-id="f9f6c-114">Las distintas API pueden tener tamaños de página predeterminados y máximos diferentes.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-114">Different APIs may have different default and maximum page sizes.</span></span>
+- <span data-ttu-id="f9f6c-p104">Las distintas API pueden comportarse de forma diferente si se especifica un tamaño de página (a través del parámetro de consulta `$top`) que supera el tamaño máximo de página para la API. Según la API, se puede omitir el tamaño de página solicitado, se puede usar el tamaño de página máximo predeterminado para la API o Microsoft Graph puede devolver un error.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-p104">Different APIs may behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API. Depending on the API, the requested page size may be ignored, it may default to the maximum page size for that API, or Microsoft Graph may return an error.</span></span> 
+- <span data-ttu-id="f9f6c-p105">No todos los recursos o relaciones admiten la paginación. Por ejemplo, las consultas a [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) no admiten la paginación. Esto incluye los objetos de rol de lectura así como los miembros de rol.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-p105">Not all resources or relationships support paging. For example, queries against [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) do not support paging. This includes reading role objects themselves as well as role members.</span></span>
+- <span data-ttu-id="f9f6c-p106">Algunas API de Microsoft Graph admiten la paginación hacia atrás anexando el parámetro de consulta `previous-page` (`&previous-page=true`) al valor de dirección URL de la propiedad `@odata:nextLink`. Una vez que se anexe este parámetro a la solicitud, se incluirá en el valor de dirección URL `@odata:nextLink` en las respuestas siguientes. Puede continuar a la paginación hacia atrás hasta que se devuelva una respuesta con un resultado vacío. Si se continúa la paginación se devolverá un error. Como alternativa, puede reanudar la paginación hacia delante desde la respuesta actual si quita el parámetro `previous-page` al enviar la solicitud de la siguiente página de resultados.</span><span class="sxs-lookup"><span data-stu-id="f9f6c-p106">Some Microsoft Graph APIs support backward paging by appending the `previous-page` query parameter (`&previous-page=true`) to the URL value of the `@odata:nextLink` property. Once you append this parameter to a request, the `@odata:nextLink` URL value in subsequent responses will include it. You can continue to page backward until a response with an empty result is returned. Paging further will return an error. Alternatively, you can resume paging forward from the current response by removing the `previous-page` parameter when you send the request for the next page of results.</span></span> 
+
