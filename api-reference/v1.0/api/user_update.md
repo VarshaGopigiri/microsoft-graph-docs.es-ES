@@ -11,7 +11,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta personal de Microsoft) | User.ReadWrite    |
 |Aplicación | User.ReadWrite.All, Directory.ReadWrite.All |
 
-Al actualizar la propiedad passwordProfile, se necesita el siguiente ámbito: Directory.AccessAsUser.All.
+Al actualizar la propiedad passwordProfile, se necesita el permiso siguiente: Directory.AccessAsUser.All.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

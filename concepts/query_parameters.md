@@ -1,22 +1,20 @@
-# Usar parámetros de consulta para personalizar respuestas
-<a id="use-query-parameters-to-customize-responses" class="xliff"></a>
+# <a name="use-query-parameters-to-customize-responses"></a>Usar parámetros de consulta para personalizar respuestas
 
 Microsoft Graph proporciona parámetros de consulta opcionales que puede usar para especificar y controlar la cantidad de datos devueltos en una respuesta. Se admiten los siguientes parámetros de consulta.
 
 |Nombre|Descripción|Ejemplo (haga clic en los ejemplos para probar en [Probador de Graph][graph-explorer])
 |:---------------|:--------|:-------|
-|[$filter](#filter)|Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$select](#select)|Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$expand](#expand)|Recupera los recursos relacionados.|[`/groups/{id}?$expand=members`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups/22be6ccb-15a5-459f-94ac-d1393bdd9e66?$expand=members&method=GET&version=v1.0)
-|[$orderby](#orderby)|Ordena los resultados.|[`/users?$orderby=displayName,userPrincipalName desc`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$orderby=displayName,userPrincipalName%20DESC&method=GET&version=v1.0)
-|[$top](#top)|Limita los resultados. Se usa normalmente con `$skipToken`.|[`/users?$top=2`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
-|[$skipToken](#skiptoken)|Se usa con `$top` para recuperar una página de resultados.|Vea `nextLink` desde la consulta $top para obtener un ejemplo.
-|[$count](#count)|Recupera el número total de recursos coincidentes.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-<!-- TODO: figure out whether $search is actually used
-|[`$search`](#search)|A property and value pair separated by a colon.|
--->
+|[$count](#count)|Recupera el número total de recursos coincidentes.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
+|[$expand](#expand)|Recupera los recursos relacionados.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
+|[$filter](#filter)|Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+|[$orderby](#orderby)|Ordena los resultados.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
+|[$search](#search)| Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
+|[$select](#select)|Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
+|[$skip](#skip)|Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
+|[$skipToken](#skiptoken)|Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
+|[$top](#top)|Establece el tamaño de la página de resultados. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
 
-Estos parámetros son compatibles con el [lenguaje de consulta de OData V4][odata-query].
+Estos parámetros son compatibles con el [lenguaje de consulta de OData V4][odata-query]. No todos los parámetros se admiten en todas las API de Microsoft Graph y la compatibilidad puede variar considerablemente entre los puntos de conexión `v1.0` y `beta`. 
 
 > **Nota:** En el punto de conexión `beta`, el prefijo `$` es opcional. Por ejemplo, en lugar de `$filter`, puede usar `filter`. Para obtener más detalles y ejemplos, vea [Compatibilidad con los parámetros de consulta sin el prefijo "$" en Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
@@ -36,196 +34,113 @@ Una dirección URL codificada correctamente tiene el siguiente aspecto:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## filter
-<a id="filter" class="xliff"></a>
+## <a name="count"></a>count
 
-`$filter` puede usarse para recuperar solo un subconjunto de una colección. Por ejemplo, para buscar usuarios cuyos nombres para mostrar comiencen por `J`, use `startswith`.
+Use el parámetro de consulta `$count` para incluir un recuento del número total de elementos de una colección junto con la página de valores de datos que se devuelve desde Microsoft Graph. 
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-
-**Solicitud:**
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
-```
-
-**Respuesta:**
-
-```json
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
-    "value": [
-        {
-            "id": "e013b9f3-a1ab-48d1-907b-e716c39d6363",
-            "businessPhones": [
-                "4255550100"
-            ],
-            "displayName": "Jan Madden",
-            "givenName": "Jan",
-            "jobTitle": null,
-            "mail": "demo32@a830edad9050849NDA1.onmicrosoft.com",
-            "mobilePhone": null,
-            "officeLocation": null,
-            "preferredLanguage": null,
-            "surname": "Madden",
-            "userPrincipalName": "demo32@a830edad9050849NDA1.onmicrosoft.com"
-        },
-        {
-            "id": "89efe8ed-d141-4151-a3e4-570a70022dff",
-            "businessPhones": [
-                "+1 425 555 0109"
-            ],
-            "displayName": "Janet Schorr",
-            "givenName": "Janet",
-            "jobTitle": "Product Marketing Manager",
-            "mail": "janets@a830edad9050849NDA1.onmicrosoft.com",
-            "mobilePhone": null,
-            "officeLocation": "18/2111",
-            "preferredLanguage": null,
-            "surname": "Schorr",
-            "userPrincipalName": "janets@a830edad9050849NDA1.onmicrosoft.com"
-        },
-        ...
-    ]
-}
-```
-
-`$filter` tiene una sintaxis muy rica y expresiva con muchos operadores integrados. Los operadores lógicos incluyen es igual a (`eq`), no es igual a (`ne`), mayor que (`gt`), mayor o igual que (`gte`) y (`and`), o (`or`), no (`not`) etc. Los operadores aritméticos incluyen sumar (`add`), restar (`sub`), etc. Los operadores de cadena incluyen contiene (`contains`), empieza con (`startswith`), etc. Los operadores lambda incluyen cualquier (`any`) y todos (`all`). Para obtener detalles adicionales sobre la sintaxis `$filter`, vea el [protocolo OData][odata-filter].
-
-
-## select
-<a id="select" class="xliff"></a>
-
-En una colección o una entidad individual, para especificar un conjunto diferente de propiedades que se van a devolver en lugar del conjunto predeterminado, use el parámetro de consulta `$select`. El parámetro `$select` permite elegir un subconjunto o un superconjunto del conjunto predeterminado que se haya devuelto. Por ejemplo, al recuperar los mensajes, quizás quiera que solo se devuelvan las propiedades `from` y `subject` de los mensajes.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
-```
-
-<!--For example, when retrieving the children of an item on a drive, you want to select that only the `name` and `size` properties of items are returned.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name,size
-```
-
-By submitting the request with the `$select=name,size` query string, the objects
-in the response will only have those property values included.
-
-```json
-{
-  "value": [
-    {
-      "id": "13140a9sd9aba",
-      "name": "Documents",
-      "size": 1024
-    },
-    {
-      "id": "123901909124a",
-      "name": "Pictures",
-      "size": 1012010210
-    }
-  ]
-}
-```-->
-
-## expand
-<a id="expand" class="xliff"></a>
-
-En las solicitudes de la API de Microsoft Graph, las navegaciones a un objeto o a una colección del elemento al que se hace referencia no se expanden automáticamente. Esto es así por diseño para reducir el tráfico de la red y el tiempo que se tarda en generar una respuesta desde el servicio. Sin embargo, en algunos casos puede que desee incluir esos resultados en una respuesta.
-
-Puede usar el parámetro de cadena de consulta `$expand` para indicar a la API que expanda una colección u objeto secundarios y que incluya esos resultados.
-
-Por ejemplo, para recuperar la información de la unidad raíz y los elementos secundarios del nivel superior en una unidad, use el parámetro `$expand`. En este ejemplo, también se usa una instrucción [`$select`](#select) para devolver solo las propiedades `id` y `name` de los elementos secundarios.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
-```
-
-> **Nota:** El número máximo de objetos expandidos para una solicitud es 20. Asimismo, si realiza una consulta en el recurso [`user`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user), puede usar `$expand` para obtener las propiedades de un solo objeto secundario o de una colección a la vez. El ejemplo siguiente obtiene objetos `user`, cada uno con hasta 20 objetos `directReport` en la colección `directReports` ampliada:
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$expand=directReports
-```
-
-Otros recursos también pueden tener un límite, así que siempre compruébelo para evitar posibles errores.
-
-## orderby
-<a id="orderby" class="xliff"></a>
-
-Para especificar el orden de clasificación de los elementos devueltos de la API de Microsoft Graph, use el parámetro de consulta `$orderby`.
-
-Por ejemplo, para devolver los usuarios de la organización ordenados por su nombre para mostrar, la sintaxis será la siguiente:
-
-```http
-GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
-```
-
-También puede ordenar por entidades de tipo complejo. En el ejemplo siguiente se obtienen los mensajes y los ordena por el campo `address` de la propiedad `from`, que es del tipo complejo `emailAddress`:
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
-```
-
-Para ordenar los resultados en orden ascendente o descendente, anexe `asc` o `desc` al nombre del campo, separado por un espacio. Por ejemplo, `?$orderby=name%20desc`.
-
- > **Nota:** Si realiza una consulta en el recurso de [`user`](../api-reference/v1.0/resources/user.md), `$orderby` no se podrá combinar con expresiones de filtro.
-
-## top
-<a id="top" class="xliff"></a>
-
-Para especificar el número máximo de elementos a devolver en un conjunto de resultados, use el parámetro de consulta `$top`. El parámetro de consulta `$top` identifica un subconjunto de la colección. Este subconjunto se forma al seleccionar solo los primeros N elementos del conjunto, donde N es un entero positivo especificado mediante este parámetro de consulta. Por ejemplo, para devolver los cinco primeros mensajes en el buzón del usuario, la sintaxis es la siguiente:
-
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$top=5
-```
-
-## skip
-<a id="skip" class="xliff"></a>
-
-Para establecer el número de elementos que se omitirán antes de recuperar elementos de una colección, use el parámetro de consulta `$skip`. Por ejemplo, para que se devuelvan los eventos ordenados por fecha de creación y comenzando por el evento 21, la sintaxis será la siguiente:
-
-```http
-GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
-```
-
-## skipToken
-<a id="skiptoken" class="xliff"></a>
-
-Para solicitar la segunda y las páginas posteriores de datos de Graph, use el parámetro de consulta `$skipToken`. El parámetro de consulta `$skipToken` se proporciona en direcciones URL devueltas de Graph cuando este ha devuelto un subconjunto parcial de resultados, normalmente debido a la paginación del lado del servidor. Identifica en una colección el punto en el que el servidor ha terminado de enviar los resultados y se devuelve a Graph para indicar el punto desde el cual debe reanudar el envío de los resultados. Por ejemplo, el valor de un parámetro de consulta `$skipToken` podría identificar el décimo elemento de una colección o el número 20 de una colección que contuviera 50, o bien cualquier otra posición de la colección.
-
-En algunas respuestas, verá un valor `@odata.nextLink`. Algunas de ellas incluirán un valor `$skipToken`. El valor `$skipToken` es como un marcador que indica al servicio el punto en el que deberá reanudarse para obtener el siguiente conjunto de resultados. El siguiente es un ejemplo de un valor `@odata.nextLink` de una respuesta en la que se han solicitado los usuarios ordenados por `displayName`:
-
-```json
-"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27"
-```
-
-Para devolver la siguiente página de usuarios de su organización, la sintaxis será como la que se muestra a continuación.
-
-```http
-GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
-```
-
-## count
-<a id="count" class="xliff"></a>
-
-Use `$count` como parámetro de consulta para incluir un recuento del número total de elementos de una colección junto con la página de valores de datos que se devuelve de Graph, como en el ejemplo siguiente:
+Por ejemplo, la siguiente solicitud devolverá tanto la colección `contacts` del usuario actual como el número de elementos de la colección `contacts` en la propiedad `@odata.count`.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-Esta acción devolvería tanto la colección de `contacts` como el número de elementos de la colección de `contacts` en la propiedad `@odata.count`.
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
->**Nota:** Esto no es compatible con las colecciones de [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject).
 
-## search
-<a id="search" class="xliff"></a>
+>**Nota:** `$count` no se admite para colecciones de recursos que se derivan de [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md) como las colecciones de [user](../api-reference/v1.0/resources/user.md) o [group](../api-reference/v1.0/resources/group.md).
 
-Para restringir los resultados de una solicitud que coincidan con un criterio de búsqueda, use el parámetro de consulta `$search`.
+## <a name="expand"></a>expand
 
-> **Nota:** Actualmente **solo** puede buscar las colecciones [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message) y [person](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/person). Una solicitud `$search` devuelve hasta 250 resultados. No puede usar [`$filter`](#filter) o [`$orderby`](#orderby) en una solicitud de búsqueda.
+Muchos de los recursos de Microsoft Graph exponen ambas propiedades declaradas de los recursos, así como sus relaciones con otros recursos. Estas relaciones también se denominan propiedades de referencia o propiedades de navegación, y pueden hacer referencia a un único recurso o a una colección de recursos. Por ejemplo, las carpetas de correo, el administrador y los informes directos de un usuario se exponen como relaciones. 
 
-Los criterios de búsqueda se expresan mediante la Sintaxis de consulta avanzada (AQS). Los resultados se ordenan por la fecha y la hora en que se ha enviado el mensaje.
+Normalmente, se pueden consultar las propiedades de un recurso o una de sus relaciones en una sola solicitud, pero no ambas. Puede usar el parámetro de cadena de consulta `$expand` para incluir en los resultados de la consulta el recurso expandido o la colección a la que se hace referencia con una única relación (propiedad de navegación).
+
+En el ejemplo siguiente se obtiene la información de la unidad raíz junto con los elementos secundarios de nivel superior de una unidad:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
+```
+
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
+
+Con algunas colecciones de recursos, también se pueden especificar las propiedades que se van a devolver en los recursos expandidos si se agrega un parámetro `$select`. En el ejemplo siguiente se realiza la misma consulta que en el anterior, pero se usa una instrucción [`$select`](#select) para limitar las propiedades devueltas para los elementos secundarios expandidos a las propiedades `id` y `name`.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
+```
+
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
+
+> **Nota:** No todas las relaciones y recursos admiten el parámetro de consulta `$expand`. Por ejemplo, se pueden expandir las relaciones `directReports`, `manager` y `memberOf` en un usuario, pero no se pueden expandir sus relaciones `events`, `messages` o `photo`. No todos los recursos o relaciones admiten el uso de `$select` en elementos expandidos. 
+> 
+> Con recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), solo se admite `$expand` para `beta` y normalmente devuelve un máximo de 20 elementos para la relación expandida.
+
+## <a name="filter"></a>filter
+
+Use el parámetro de consulta `$filter` para recuperar solo un subconjunto de una colección. 
+
+Por ejemplo, para buscar usuarios cuyos nombres para mostrar comiencen por la letra "J", use `startswith`.
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
+```
+
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+
+La compatibilidad con los operadores `$filter` varía entre las API de Microsoft Graph. Generalmente se admiten los siguientes operadores lógicos: es igual a (`eq`), no es igual a (`ne`), mayor que (`gt`), mayor o igual que (`ge`), menor que (`lt`), menor o igual que (`le`), y (`and`), o (`or`) y no (`not`). El operador de la cadena `startswith` se suele admitir. El operador lambda `any` se admite para algunas API. Para obtener algunos ejemplos de uso, vea la tabla siguiente. Para obtener detalles adicionales sobre la sintaxis de `$filter`, vea el [protocolo OData][odata-filter].  
+
+En la tabla siguiente se muestran algunos ejemplos de uso del parámetro de consulta `$filter`.
+
+|Descripción|Ejemplo (haga clic en los ejemplos para probar en [Probador de Graph][graph-explorer])|
+|:--------|:-------|
+|  Buscar usuarios con el nombre Mary en varias propiedades. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Obtener todos los eventos del usuario que inició sesión que se inicien después del 1/7/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
+| Obtener todos los correos electrónicos de una dirección específica recibidos por el usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
+| Obtener todos los correos electrónicos recibidos por el usuario que inició sesión en abril de 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
+| Obtener todos los correos electrónicos no leídos en la Bandeja de entrada del usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
+| Enumerar todos los grupos de Office 365 en una organización | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+
+> **Nota:** Los operadores `$filter` siguientes no se admiten para recursos de Azure AD: `ne`, `gt`, `ge`, `lt`, `le` y `not`. El operador de cadena `contains` actualmente no se admite en ningún recurso de Microsoft Graph.
+
+## <a name="orderby"></a>orderby
+
+Use el parámetro de consulta `$orderby` para especificar el criterio de ordenación de los elementos devueltos desde Microsoft Graph
+
+Por ejemplo, la solicitud siguiente devuelve los usuarios de la organización ordenados por su nombre para mostrar:
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
+```
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName&method=GET&version=v1.0)
+
+También puede ordenar por entidades de tipo complejo. En la solicitud siguiente se obtienen los mensajes y se ordenan por el campo `address` de la propiedad `from`, que es del tipo complejo `emailAddress`:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
+```
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
+
+Para ordenar los resultados en orden ascendente o descendente, anexe `asc` o `desc` al nombre del campo, separado por un espacio. Por ejemplo, `?$orderby=name%20desc`.
+
+Con algunas API se pueden ordenar los resultados por varias propiedades. Por ejemplo, en la siguiente solicitud se ordenan los mensajes en la Bandeja de entrada del usuario primero por el nombre de la persona que lo envió en orden descendente (de la Z a la A) y, después, por asunto en orden ascendente (el valor predeterminado).
+
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
+```
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
+
+
+ > **Nota:** Con recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), no se puede combinar `$orderby` con expresiones`$filter`. 
+
+## <a name="search"></a>search
+
+Use el parámetro de consulta `$search` para restringir los resultados de una solicitud para que coincidan con un criterio de búsqueda
+
+> **Nota:** Actualmente **solo** se pueden buscar las colecciones [message](../api-reference/v1.0/resources/message.md) y [person](../api-reference/v1.0/resources/person.md). Una solicitud `$search` devuelve hasta 250 resultados. No puede usar [`$filter`](#filter) o [`$orderby`](#orderby) en una solicitud de búsqueda.
+
+### <a name="using-search-on-message-collections"></a>Uso de $search en colecciones `message`
+
+Los criterios de búsqueda se expresan mediante la [Sintaxis de consulta avanzada (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). Los resultados se ordenan por la fecha y la hora en que se ha enviado el mensaje.
 
 Puede especificar las siguientes propiedades en `message` en un criterio `$search`: `attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`, `toRecipients`
 
@@ -243,6 +158,105 @@ En el ejemplo siguiente se buscan todos los mensajes en el buzón del usuario qu
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 
-[graph-explorer]: https://graph.microsoft.io/en-us/graph-explorer
+### <a name="using-search-on-person-collections"></a>Uso de $search en colecciones `person`
+
+Puede usar la API de contactos de Microsoft Graph para recuperar los contactos más relevantes para un usuario. La relevancia viene determinada por las relaciones empresariales y los patrones de comunicación y colaboración del usuario. La API de contactos admite el parámetro de consulta `$search`.
+
+Las búsquedas de contactos se realizan en las propiedades `displayName` y `emailAddress` del recurso [person](../api-reference/v1.0/resources/person.md). Las búsquedas implementan un algoritmo de coincidencia aproximada. Se devuelven resultados basados en una coincidencia exacta y también en inferencias sobre la intención de la búsqueda. Por ejemplo, imagine un usuario con el nombre para mostrar "Tyler Lee" y la dirección de correo tylerle@example.com que se encuentra en la colección `people` del usuario que inició sesión. Todas las búsquedas siguientes devolverán resultados que contienen Tyler.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+```
+
+También puede realizar búsquedas de contactos interesados en un tema determinado. Las búsquedas se realizan en función de inferencias derivadas de las conversaciones de correo del usuario. Por ejemplo, la búsqueda siguiente devolverá un conjunto de contactos relevantes para el usuario que inició sesión que han expresado interés en pizza en sus comunicaciones con el usuario. Tenga en cuenta que la frase de búsqueda se escribe entre comillas.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+```
+
+Por último, puede combinar tanto búsquedas de contactos y de temas en la misma solicitud mediante la combinación de los dos tipos de expresión de búsqueda.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+Esta solicitud realiza básicamente dos búsquedas: una búsqueda parcial en las propiedades `displayName` y `emailAddress` de los contactos relevantes del usuario que ha iniciado sesión y una búsqueda de tema para "pizza" en los contactos relevantes del usuario. Después, los resultados se clasifican, ordenan y devuelven. Tenga en cuenta que la búsqueda no es restrictiva; puede obtener resultados que contengan contactos que coincidan con "tyl" de forma aproximada, o que están interesados en "pizza", o ambos.
+
+Para más información sobre la API de contactos, vea [Obtener información sobre contactos relevantes](./people_example.md).  
+
+## <a name="select"></a>select
+
+Use el parámetro de consulta `$select` para devolver un conjunto de propiedades diferente al predeterminado para un recurso individual o una colección de recursos. Con $select puede especificar un subconjunto o un superconjunto de las propiedades predeterminadas.
+
+Por ejemplo, al recuperar los mensajes del usuario que ha iniciado sesión, puede especificar que solo se devuelvan las propiedades `from` y `subject`:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
+```
+
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
+
+> **Importante:** En general, se recomienda usar `$select` para limitar las propiedades devueltas por una consulta a las necesarias para la aplicación. Esto es especialmente cierto para las consultas que potencialmente pueden devolver un conjunto de resultados grande. Limitar las propiedades devueltas en cada fila reducirá la carga en la red y ayudará a mejorar el rendimiento de la aplicación.
+>
+> En `v1.0`, algunos recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), devuelven un subconjunto predeterminado limitado de propiedades en las operaciones de lectura. Para estos recursos, debe usar `$select` para devolver propiedades fuera el conjunto predeterminado.  
+
+## <a name="skip"></a>skip
+
+Use el parámetro de consulta `$skip` para establecer el número de elementos que se omitirán al inicio de una colección. Por ejemplo, la solicitud siguiente devuelve eventos para el usuario ordenados por fecha de creación, empezando por el evento 21 de la colección:
+
+```http
+GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
+```
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
+
+> **Nota:** En algunas API de Microsoft Graph, como Correo y Calendario de Outlook (`message`, `event` y `calendar`), se usa `$skip` para implementar la paginación. Cuando los resultados de una consulta ocupan varias páginas, estas API devolverán una propiedad `@odata:nextLink` con una dirección URL que contiene un parámetro `$skip`. Puede usar esta dirección URL para devolver la siguiente página de resultados. Para obtener más información, vea [Paginación](./paging.md).
+
+## <a name="skiptoken"></a>skipToken
+
+Algunas consultas devuelven varias páginas de datos debido a la paginación del servidor o al uso del parámetro [`$top`](#top) para limitar el tamaño de página de la respuesta. Muchas API de Microsoft Graph usan el parámetro de consulta `skipToken` para hacer referencia a las páginas siguientes del resultado. El parámetro `$skiptoken` contiene un token opaco que hace referencia a la siguiente página de resultados y se devuelve en la dirección URL proporcionada en la propiedad `@odata.nextLink` en la respuesta. Para obtener más información, vea [Paginación](./paging.md).
+
+
+## <a name="top"></a>top
+
+Use el parámetro de consulta `$top` para especificar el tamaño de página del conjunto de resultados. 
+
+Si quedan más elementos en el conjunto de resultados, el cuerpo de la respuesta contendrá un parámetro `@odata.nextLink`. Este parámetro contiene una dirección URL que se puede usar para obtener la siguiente página de resultados. Para obtener más información, vea [Paginación](./paging.md). 
+
+Por ejemplo, la solicitud siguiente devuelve los cinco primeros mensajes en el buzón del usuario:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$top=5
+```
+
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
+
+
+## <a name="error-handling-for-query-parameters"></a>Control de errores para parámetros de consulta
+
+Algunas solicitudes devolverán un mensaje de error si no se admite un parámetro de consulta especificado. Por ejemplo, no se puede usar `$expand` en la relación `user/photo`. 
+
+```http
+https://graph.microsoft.com/beta/me?$expand=photo
+```
+
+```json
+{
+    "error":{
+        "code":"ExpandNotSupported",
+        "message":"Expand is not allowed for property 'Photo' according to the entity schema.",
+        "innerError":{
+            "request-id":"1653fefd-bc31-484b-bb10-8dc33cb853ec",
+            "date":"2017-07-31T20:55:01"
+        }
+    }
+}
+```
+
+Pero es importante tener en cuenta que los parámetros de consulta especificados en una solicitud pueden devolver un error silenciosamente. Esto puede suceder con parámetros de consulta no admitidos, así como con combinaciones no compatibles de parámetros de consulta. En estos casos, debe examinar los datos devueltos por la solicitud para determinar si los parámetros de consulta especificados tuvieron el efecto previsto. 
+
+[graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356

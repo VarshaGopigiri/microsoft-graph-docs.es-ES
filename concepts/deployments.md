@@ -1,52 +1,72 @@
-# <a name="sovereign-cloud-deployments"></a>Implementaciones de nube soberana
+# <a name="national-cloud-deployments"></a>Implementaciones de nube nacionales
 
 
-Este artículo proporciona información sobre las diferentes instancias de nube soberana de Microsoft Graph y las funcionalidades que están disponibles para los desarrolladores. 
+Los servicios en la nube de Microsoft están disponibles en tres nubes nacionales independientes. Estas versiones de nube nacional son las instancias aisladas de red físicas y lógicas de los servicios en la nube empresariales de Microsoft, que se confinan a los límites geográficos de países específicos y están operados por personal local. Para más información, vea [Microsoft National Clouds](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud) (Nubes nacionales de Microsoft).
 
+Las nubes nacionales actuales incluyen:
 
-## <a name="microsoft-graph-operated-by-21vianet-in-china"></a>Microsoft Graph operado por 21Vianet en China
+- Microsoft Cloud for US Government
+- Microsoft Cloud Alemania
+- Azure y Office 365 operado por 21Vianet en China
 
-En este artículo se proporciona información sobre Microsoft Graph ofrecido por 21Vianet y las funcionalidades que están disponibles para los desarrolladores. 
+En este artículo se proporciona información sobre las diferentes implementaciones de nube nacional de Microsoft Graph y las funcionalidades de cada implementación que están disponibles para los desarrolladores. 
 
-### <a name="microsoft-graph-service-root-endpoints"></a>Extremos de raíz del servicio de Microsoft Graph
-| Microsoft Graph operado por 21Vianet | Microsoft Graph|
+## <a name="microsoft-graph-and-microsoft-graph-explorer-service-root-endpoints"></a>Puntos de conexión raíz de servicio de Microsoft Graph y Probador de Microsoft Graph
+
+En la tabla siguiente se muestran los puntos de conexión raíz de servicio de Microsoft Graph y Probador de Microsoft Graph para cada nube nacional. 
+
+| Nube nacional | Microsoft Graph | Probador de Microsoft Graph
+|---------------------------|----------------|----------------|
+| Microsoft Graph operado por 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
+| Microsoft Graph Alemania | https://graph.microsoft.de | No se admite. |
+| Microsoft Graph for US Government | https://graph.microsoft.com | No se admite. |
+| Servicio global de Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
+
+> **Nota**: Las aplicaciones solo pueden tener acceso a los datos de la organización a través de los puntos de conexión de la nube nacional. Esto significa que solo se puede tener acceso a los datos de los espacios empresariales registrados en la nube nacional específica. Las aplicaciones que intenten tener acceso a los datos de consumidor asociados a cuentas personales de Microsoft a través de Microsoft Graph deben usar el servicio global (https://graph.microsoft.com). Los tokens de acceso adquiridos para una implementación de nube nacional no son intercambiables con los adquiridos para el servicio global.
+
+## <a name="azure-ad-openid-connect-and-oauth20-endpoints"></a>Puntos de conexión de OpenID Connect y OAuth2.0 de Azure AD
+
+En la tabla siguiente se muestran las direcciones URL base para los puntos de conexión de Azure Active Directory (AD Azure) que se usan para adquirir tokens para llamar a Microsoft Graph en cada nube nacional. 
+
+| Nube nacional | Punto de conexión raíz de Azure AD |
 |---------------------------|----------------|
-| https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
+| Microsoft Graph operado por 21Vianet |https://login.chinacloudapi.cn | 
+| Microsoft Graph Alemania | https://login.microsoftonline.de | 
+| Microsoft Graph for US Government | https://login-us.microsoftonline.com | 
+| Microsoft Graph (servicio global) | https://login.microsoftonline.com | 
 
-### <a name="microsoft-graph-explorer"></a>Probador de Microsoft Graph
-| Probador de Microsoft Graph en China | Probador de Microsoft Graph|
-|---------------------------|----------------|
-|https://developer.microsoft.com/zh-cn/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
+Las solicitudes a los puntos de conexión de tokens o de autorización de Azure AD pueden formarse con la dirección URL base específica para la región correspondiente. Por ejemplo, para Alemania:
 
-### <a name="azure-openid-connect-and-oauth20"></a>OpenID Connect y OAuth 2.0 de Azure
-Los extremos que se utilizan para adquirir tokens de inicio de sesión o para llamar a Microsoft Graph ofrecido por 21Vianet difieren de las de otras ofertas. 
+- El punto de conexión común de autorización es https://login.microsoftonline.de/common/oauth2/authorize.
+- El punto de conexión común de token es https://login.microsoftonline.de/common/oauth2/token.
 
-| Microsoft Graph operado por 21Vianet | Microsoft Graph|
-|---------------------------|----------------|
-| https://login.chinacloudapi.cn | https://login.microsoftonline.com|
- 
-Use https://login.chinacloudapi.cn/common/oauth2/authorize para autenticar el usuario y https://login.chinacloudapi.cn/common/oauth2/token para adquirir un token para su aplicación para llamar a Microsoft Graph operado por 21Vianet.
+Los puntos de conexión específicos del espacio empresarial se pueden formar reemplazando "common" en las direcciones URL anteriores con el identificador del espacio empresarial o un dominio comprobado para el espacio empresarial. El uso de puntos de conexión comunes o específicos del espacio empresarial dependerá de los requisitos de la aplicación y del flujo de autenticación que se use para obtener los tokens. Para obtener más información sobre los tokens de acceso de Azure AD y Microsoft Graph, vea [Obtener tokens de autenticación](./auth_overview.md).
 
-> **Nota:** Los [puntos de conexión de tokens y de autorización de v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) más recientes NO están disponibles para su uso con Microsoft Graph operado por 21Vianet. 
+> **Nota:** Los [puntos de conexión de autorización y tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) solo están disponibles en el servicio global; todavía no son compatibles para su uso con implementaciones de nube nacional. 
 
->Las aplicaciones solo pueden acceder a datos de la organización y no a datos de clientes a través del punto de conexión **https://microsoftgraph.chinacloudapi.cn**. Las aplicaciones deben usar el punto de conexión **https://graph.microsoft.com** para acceder a los datos de clientes.
+## <a name="supported-features"></a>Características admitidas
 
-### <a name="service-capabilities-offered-by-microsoft-graph-operated-by-21vianet"></a>Funcionalidades del servicio ofrecidas por Microsoft Graph operado por 21Vianet
-Las siguientes características de Microsoft Graph están generalmente disponibles (en el punto de conexión de `/v1.0`):
+Las siguientes características de Microsoft Graph están disponibles con carácter general (en el punto de conexión `/v1.0`) en todas las implementaciones de nube nacional, excepto donde se indique:
 
 * Usuarios
-* Groups
-* Files
-* Correo
-* Calendario
+* Grupos
+* Excel (el soporte es limitado en Microsoft Graph operado por 21Vianet en China).
+* OneDrive (el soporte es limitado en Microsoft Graph operado por 21Vianet en China).
+* Correo de Outlook
+* Calendario de Outlook
 * Contactos personales 
-* Crear, leer, actualizar y eliminar (CRUD) operaciones 
-* Compatibilidad para compartir recursos de origen cruzado (CORS).
+* SharePoint (el soporte es limitado en Microsoft Graph operado por 21Vianet en China).
+* Consulta delta (la compatibilidad varía entre diferentes recursos en cada implementación de nube nacional).
+* Webhooks (la compatibilidad varía entre diferentes recursos en cada implementación de nube nacional).
 
-Las siguientes características de Microsoft Graph también están disponibles en versión preliminar (en el punto de conexión de `/beta`):
+Las siguientes características adicionales de Microsoft Graph están disponibles en versión preliminar (en el punto de conexión `/beta`) en todas las implementaciones de nube nacional, excepto donde se indique:
 
 * Contactos de la organización
 * Aplicaciones
 * Entidades de servicio
+
+Las siguientes características de Microsoft Graph todavía no se admiten en las implementaciones de nube nacionales:
+
+* Microsoft Planner
 * Extensiones de esquema de directorio
-* Webhooks
+* Extensiones de tipo abierto

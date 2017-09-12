@@ -11,7 +11,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta personal de Microsoft) | Files.Read.All, Files.ReadWrite.All    |
 |Aplicación | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-Además, sin uno de estos ámbitos **Todo**, los elementos compartidos devueltos desde esta API no serán accesibles.
+Además, sin uno de los permisos **Todo**, los elementos compartidos devueltos desde esta API no serán accesibles.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
