@@ -4,7 +4,44 @@ Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas
 
 Para obtener más información sobre problemas conocidos con las API de Microsoft Graph, vea [Problemas conocidos](known_issues.md).
 
+## <a name="september-2017"></a>septiembre 2017
+
+### <a name="outlook-calendar"></a>Calendario de Outlook
+
+|**Tipo de cambio**|**Versión**|**Descripción**|
+|:-------------|:-----------|:--------------|
+| Adición | Beta | Se agregó la propiedad **ubicaciones** al recurso de [evento](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) para ayudar en la organización de un evento al que puedan asistir los asistentes de más de una ubicación. |
+| Adición | Beta | Se agregó la propiedad **locationType** para el tipo complejo [ubicación](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location).|
+| Adición | Beta | Se agregaron las propiedades **uniqueId** y **uniqueIdType** al tipo complejo [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location). Estas propiedades son solo para uso interno en este momento.|
+
+
+### <a name="outlook-inbox-message-rules"></a>Reglas de mensaje de bandeja de entrada de Outlook
+
+|**Tipo de cambio**|**Versión**|**Descripción**|
+|:-------------|:-----------|:--------------|
+| Adición | Beta | Se agregó la propiedad de navegación **messageRules** al recurso [buzón de correo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mailfolder). **messageRules** es una colección de instancias de [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule). |
+| Adición | Beta | Se agregó la entidad [messageRule](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerule) y los tipos complejos [messageRuleActions](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/messagerulepredicates), y [sizeRange](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sizerange).  |
+| Adición | Beta | Se agregaron las siguientes operaciones de CRUD para reglas de mensaje: [crear](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_post_messagerules), [lista](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/mailfolder_list_messagerules), [obtener](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_get), [actualizar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_update), y [eliminar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/messagerule_delete). |
+
+
+### <a name="outlook-user-choices"></a>Opciones de usuario de Outlook
+
+|**Tipo de cambio**|**Versión**|**Descripción**|
+|:-------------|:-----------|:--------------|
+| Adición | Beta | Se agregó la nueva propiedad de navegación **masterCategories** a la entidad [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+| Adición | Beta | Se agregó la nueva función [supportedLanguages](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedlanguages) a la entidad [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+| Adición | Beta | Se agregó la nueva función [supportedTimeZones](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/outlookuser_supportedtimezones) a la entidad [outlookUser](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/outlookuser).  |
+
+
 ## <a name="august-2017"></a>Agosto de 2017
+
+### <a name="group-lifecycle-policy"></a>Directiva de ciclo de vida del grupo
+
+|**Tipo de cambio**|**Versión**|**Descripción**|
+|:-------------|:-----------|:--------------|
+| Adición | Beta | Se ha agregado la entidad [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
+| Adición | Beta | Se han agregado las siguientes API para la directiva de ciclo de vida del grupo: [crear](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [enumerar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [obtener](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [actualizar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [eliminar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [agregar grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [quitar grupo ](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) y [renovar un grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Adición | Beta | Se agregó la función [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) (Mostrar groupLifecylePolicies) a la entidad [grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group). |
 
 ### <a name="intune-apis"></a>API de Intune
 |Tipo de cambio|Versión|Descripción|
@@ -32,27 +69,20 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Cambio|Beta|Se agregó la propiedad **secureByDefault** al tipo complejo [deviceManagementSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings)|
 |Cambio|Beta|Se agregó la propiedad **restartMode** al tipo complejo [windowsUpdateScheduledInstall](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsupdatescheduledinstall)|
 
-
-### <a name="people"></a>Contactos 
-
-|**Tipo de cambio**|**Versión**|**Descripción**|
-|:-------------|:-----------|:--------------|
-| Adición | v1.0 | Se han agregado las [API de contactos](../api-reference/v1.0/resources/person.md) a v1.0. Para más información sobre la API de contactos, vea el artículo sobre cómo [obtener información relevante sobre los contactos](people_example.md).|
-
-### <a name="group-lifecycle-policy"></a>Directiva de ciclo de vida del grupo
-
-|**Tipo de cambio**|**Versión**|**Descripción**|
-|:-------------|:-----------|:--------------|
-| Adición | Beta | Se ha agregado la entidad [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
-| Adición | Beta | Se han agregado las siguientes API para la directiva de ciclo de vida del grupo: [crear](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [enumerar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [obtener](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [actualizar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [eliminar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [agregar grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [quitar grupo ](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) y [renovar un grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
-| Adición | Beta | Se ha agregado la función [List groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) (Mostrar groupLifecylePolicies) a la entidad [grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group). |
-
 ### <a name="onenote"></a>OneNote
 
 |**Tipo de cambio**|**Versión**|**Descripción**|
 |:-------------|:-----------|:--------------|
 | Adición | v1.0 y beta | Se ha agregado la propiedad de navegación [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) a **site**.  |
 | Adición | Beta | Se ha agregado los parámetros *siteCollectionId* y *siteId* de destino para las operaciones de copia. Por ejemplo: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
+
+### <a name="people"></a>Contactos 
+
+|**Tipo de cambio**|**Versión**|**Descripción**|
+|:-------------|:-----------|:--------------|
+| Adición | v1.0 | Se han agregado las [API de contactos](../api-reference/v1.0/resources/person.md) a v1.0. Para más información sobre la API de contactos, vea el artículo [Obtener información relevante sobre los contactos](people_example.md).|
+
+
 
 
 ## <a name="july-2017"></a>Julio de 2017

@@ -130,8 +130,8 @@ La respuesta incluye dos mensajes y un encabezado de respuesta `@odata.nextLink`
             "subject":"Holiday promotion sale",
             "sender":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AQMkADNkNAAAVRMKAAAAA=="

@@ -77,7 +77,7 @@ Por ejemplo, si una sugerencia de hora de la reunión implica tres asistentes co
 |:-----|:-----|:-----|
 |Dana | Libre | 100 % |
 |Pelayo | Desconocido | 49 % |
-|Fanny | Ocupado | 0 % |
+|Naiara | Ocupado | 0 % |
 
 Entonces la confianza de la sugerencia de hora de la reunión, que es la posibilidad media de asistencia, es (100 % + 49 % + 0 %)/3 = 49,66 %.
 
@@ -114,8 +114,8 @@ Content-Type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -188,7 +188,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
@@ -219,7 +219,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

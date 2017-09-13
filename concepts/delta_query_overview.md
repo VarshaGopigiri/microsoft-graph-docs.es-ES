@@ -42,7 +42,7 @@ Para los usuarios y las API beta para grupos (vista previa), definir el ámbito 
 
 -   Las instancias de un recurso compatible recién creadas se representan en la respuesta de consulta de delta con su representación estándar.
 
--   Instancias actualizadas están representadas por sus **id.** con *al menos* las propiedades que se han actualizado, aunque pueden incluirse otras propiedades.
+-   Las instancias actualizadas están representadas por sus **id.** con *al menos* las propiedades que se han actualizado, pero pueden incluirse otras propiedades.
 
 -   Las relaciones de usuarios y grupos se representan como anotaciones en la representación de recursos estándar. Estas anotaciones utilizan el formato `propertyName@delta`. Las anotaciones se incluyen en la respuesta de la solicitud de consulta inicial de delta.
 
@@ -78,7 +78,7 @@ Los mismos [permisos](./permissions_reference.md) que se requieren para leer un 
 
 ## <a name="delta-query-request-examples"></a>Ejemplos de solicitud de consulta delta 
 
-- [Obtener los cambios incrementales de los eventos en una vista de calendario](../Concepts/delta_query_events.md)
+- [Obtener los cambios incrementales en los eventos en una vista de calendario](../concepts/delta_query_events.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](./delta_query_messages.md)
 - [Obtener los cambios incrementales en los grupos](./delta_query_groups.md)
 - [Obtener los cambios incrementales en los usuarios](./delta_query_users.md)

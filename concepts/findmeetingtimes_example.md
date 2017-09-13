@@ -17,7 +17,7 @@ Si **findMeetingTimes** no puede sugerir un horario de reunión, indica un motiv
 
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo se muestra cómo utilizar **findMeetingTimes** para devolver las horas posibles para que dos usuarios se reúnan durante un par de horas, teniendo en cuenta la programación profesional y la disponibilidad de los usuarios, y que los asistentes estarán ausentes durante una parte del tiempo. Como solo hay dos usuarios para esta reunión, las sugerencias requieren la asistencia del 100 %. A continuación, se muestra la disponibilidad de los usuarios.
+En el siguiente ejemplo, se muestra cómo utilizar **findMeetingTimes** para devolver las horas posibles para que dos usuarios se reúnan durante un par de horas, teniendo en cuenta la programación profesional y la disponibilidad de los usuarios, y que los asistentes estarán ausentes durante una parte del tiempo. Como solo hay dos usuarios para esta reunión, las sugerencias requieren la asistencia del 100 %. A continuación, se muestra la disponibilidad de los usuarios.
 
 ### <a name="organizers-calendar"></a>Calendario del organizador
 
@@ -43,7 +43,7 @@ Las dos llamadas a **findMeetingTimes** incluyen los siguientes parámetros. Tod
 
 ### <a name="first-request"></a>Primera solicitud
 
-Buscar un intervalo de tiempo libre de dos horas para ambos usuarios entre el 18 y el 20 de abril.
+Busque un intervalo de tiempo libre de dos horas para ambos usuarios entre el 18 y el 20 de abril.
 
 <!-- {
   "blockType": "request",
@@ -59,8 +59,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -119,7 +119,7 @@ Content-Length: 184
 ```
 
 ### <a name="second-request"></a>Segunda solicitud
-Buscar un intervalo de tiempo de dos horas el 21 de abril.
+Busque un intervalo de tiempo de dos horas el 21 de abril.
 <!-- {
   "blockType": "request",
   "name": "findmeetingtimes_example_second"
@@ -134,8 +134,8 @@ Content-type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -208,7 +208,7 @@ Content-Length: 714
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
@@ -227,7 +227,7 @@ Content-Length: 714
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Hay ocasiones en las que no todos los asistentes pueden asistir a una reunión. Puede hacer que **findMeetingTimes** sugiera una hora si la _seguridad_ de asistencia alcanza un determinado porcentaje al especificar el parámetro opcional **minimumAttendeePercentage**. Obtenga más información acerca de la [seguridad de una sugerencia de reunión](../api-reference/v1.0/api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) y otros [parámetros](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) y cómo aplicarlos como apropiados para las reuniones de mayor tamaño.
+Hay ocasiones en las que no todos los asistentes pueden asistir a una reunión. Puede hacer que **findMeetingTimes** sugiera una hora si la _seguridad_ de asistencia alcanza un determinado porcentaje al especificar el parámetro opcional **minimumAttendeePercentage**. Obtenga más información acerca de la [seguridad de una sugerencia de reunión](../api-reference/v1.0/api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) y otros [parámetros](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) y cómo aplicarlos según corresponda para las reuniones de mayor tamaño.
 
 Después de obtener sugerencias para los horarios de reunión, es aconsejable:
 

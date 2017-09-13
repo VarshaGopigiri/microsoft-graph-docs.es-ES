@@ -70,9 +70,8 @@ Registre una aplicación en el portal de registro de aplicaciones de Microsoft. 
 
     b. Seleccione **Agregar plataforma** y **Aplicación nativa**.
 
-    > **Nota**: El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con el valor *msal<SU NUEVO ID. DE APLICACIÓN>://auth*. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
+    > **Nota:** El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con el valor *msalENTER_YOUR_CLIENT_ID://auth*. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
 
-    Para un flujo de configuración guiada y un flujo no guiado
 
     a. Agregue los permisos delegados. Necesitará **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** y **User.ReadBasic.All**. 
    
@@ -232,27 +231,40 @@ La aplicación de ejemplo de conexión tiene el botón **Conectar** en la activi
 
 Es necesario que prepare la aplicación para controlar la respuesta del servidor de autorización, que contiene un código que se puede intercambiar por un token de acceso.
 
-1. Necesitamos indicarle al sistema Android que la aplicación de conexión admite solicitudes a la URL de redireccionamiento configurada en el registro de la aplicación. Para hacerlo, abra el archivo **AndroidManifest** y agregue los siguientes elementos secundarios al elemento **\<application/\>** del proyecto.
+1. Necesita indicarle al sistema Android que la aplicación de conexión admite solicitudes a la URL de redireccionamiento configurada en el registro de la aplicación. Para hacerlo, abra el archivo de recursos de cadenas **strings.xml** y agregue los siguientes elementos secundarios al elemento **\<application/\>**de proyectos.
+   ```xml
+   <!DOCTYPE resources [
+       <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
+       ]>
+
+    ...
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+
+   ```
+
+   Los recursos de cadena se utilizan en el archivo **AndroidManifest.xml**. La biblioteca **MSAL** lee el id. de cliente en tiempo de ejecución y devuelve las respuestas REST a la redirección de la dirección URL definida para la **BrowserTabActivity**.
+
     ```xml
         <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
         <application ...>
             ...
-            <activity
-                android:name="com.microsoft.identity.client.BrowserTabActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.VIEW" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <category android:name="android.intent.category.BROWSABLE" />
-                    <data android:scheme="msalENTER_YOUR_CLIENT_ID"
-                        android:host="auth" />
-                </intent-filter>
-            </activity>
-            <meta-data
-                android:name="https://login.microsoftonline.com/common"
-                android:value="authority string"/>
-            <meta-data
-                android:name="com.microsoft.identity.client.ClientId"
-                android:value="ENTER_YOUR_CLIENT_ID"/>
+           <activity
+               android:name="com.microsoft.identity.client.BrowserTabActivity">
+               <intent-filter>
+                   <action android:name="android.intent.action.VIEW" />
+                   <category android:name="android.intent.category.DEFAULT" />
+                   <category android:name="android.intent.category.BROWSABLE" />
+                   <data android:scheme="@string/msalPrefix"
+                       android:host="auth" />
+               </intent-filter>
+           </activity>
+           <meta-data
+               android:name="https://login.microsoftonline.com/common"
+               android:value="authority string"/>
+           <meta-data
+               android:name="com.microsoft.identity.client.ClientId"
+               android:value="@string/client_Id"/>
         </application>
     ```
 2. La biblioteca de **MSAL** necesita obtener acceso al id. de aplicación asignado por el portal de registro. **La biblioteca de MSAL hace referencia al id. de aplicación como “id. de cliente”**. Obtiene el id. de aplicación (id. de cliente) del contexto de la aplicación que pase en el constructor de la biblioteca. 
