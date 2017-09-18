@@ -4,11 +4,11 @@ Crea un [grupo de sección](../resources/sectiongroup.md) en el grupo de secció
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    | 
-|Delegado (cuenta personal de Microsoft) | Notes.Create, Notes.ReadWrite    | 
-|Aplicación | Notes.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | Notes.Create, Notes.ReadWrite    |
+|Aplicación | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -71,7 +71,7 @@ Content-length: 305
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": 
+  "lastModifiedBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
