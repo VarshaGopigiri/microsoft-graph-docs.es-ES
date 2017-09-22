@@ -34,7 +34,7 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
@@ -44,14 +44,14 @@ Aquí tiene una representación JSON del recurso
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |links|[NotebookLinks](notebooklinks.md)|Vínculos para abrir el bloc de notas. El vínculo `oneNoteClientURL` abre el bloc de notas en el cliente nativo de OneNote si está instalado. El vínculo `oneNoteWebURL` abre el bloc de notas en OneNote Online.|
-|displayName|String|El nombre del bloc de notas.|
-|sectionGroupsUrl|String|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del bloc de notas. Solo lectura.|
-|sectionsUrl|String|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del bloc de notas. Solo lectura.|
+|displayName|Cadena|El nombre del bloc de notas.|
+|sectionGroupsUrl|Cadena|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del bloc de notas. Solo lectura.|
+|sectionsUrl|Cadena|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del bloc de notas. Solo lectura.|
 |self|String|El punto de conexión donde puede obtener información detallada sobre el bloc de notas. Solo lectura.|
-|userRole|String|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
+|userRole|Cadena|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |sectionGroups|Colección [SectionGroup](sectiongroup.md)|Los grupos de secciones del bloc de notas. Solo lectura. Admite valores NULL.|
 |sections|Colección [Section](section.md)|Secciones del bloc de notas. Solo lectura. Admite valores NULL.|
@@ -61,6 +61,7 @@ Aquí tiene una representación JSON del recurso
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener bloc de notas](../api/notebook_get.md) | [Notebook](notebook.md) |Leer las propiedades y las relaciones del bloc de notas.|
+|[getRecentNotebooks](../api/notebook_getrecentnotebooks.md) | Colección [recentNotebook](recentnotebook.md) | Obtener una colección de los blocs de notas a los que ha tenido acceso más recientemente el usuario. |
 |[Crear grupo de secciones](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crear un grupo de secciones publicándolo en el bloc de notas especificado de la colección sectionGroups.|
 |[Enumerar grupos de secciones](../api/notebook_list_sectiongroups.md) |Colección [SectionGroup](sectiongroup.md)| Obtener una colección de grupos de secciones en el bloc de notas especificado.|
 |[Crear sección](../api/notebook_post_sections.md) |[Section](section.md)| Crear una sección publicándola en el bloc de notas especificado de la colección de secciones.|
