@@ -23,6 +23,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 | Authorization  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 

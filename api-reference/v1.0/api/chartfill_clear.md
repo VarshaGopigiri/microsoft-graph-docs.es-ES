@@ -24,6 +24,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Authorization  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
