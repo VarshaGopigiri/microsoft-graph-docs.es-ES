@@ -26,7 +26,7 @@ Este método admite los [parámetros de consulta de OData](http://graph.microsof
 |:----------|:----------|
 | Authorization | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
@@ -80,6 +80,7 @@ Content-length: 1341
             "defaultValue": "",
             "description": "A comma-delimited list of structured strings describing the classification values in the ClassificationList. The structure of the string is: Value: Description"
         }
+    ]
 }
 ```
 

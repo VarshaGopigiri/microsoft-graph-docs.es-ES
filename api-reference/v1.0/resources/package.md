@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Paquete
+ms.openlocfilehash: 33be73ed79438bdf28b76747b6efb79290be8d0c
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2017
+---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 
 El recurso **Package** indica que un objeto DriveItem es el elemento de nivel superior en un "paquete" o una colección de elementos que deben tratarse como una colección en lugar de elementos individuales.
@@ -11,7 +22,7 @@ Los objetos DriveItem con la faceta **package** no incluyen una faceta **folder*
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
 ```json
 {
-  "type": "string"
+  "type": "oneNote"
 }
 ```
 
@@ -28,5 +39,6 @@ Para obtener más información sobre las facetas de un objeto DriveItem, consult
   "type": "#page.annotation",
   "description": "The Package facet indicates that an item is the root of a special collection of items that should be treated as a single unit.",
   "keywords": "package, facet, onenote",
-  "section": "documentation"
+  "section": "documentation",
+  "tocPath": "Facets/Package"
 } -->
