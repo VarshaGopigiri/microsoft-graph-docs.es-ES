@@ -90,7 +90,7 @@ Cuando se redacta un mensaje, en la mayoría de los casos, las propiedades From 
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attachments|Colección [attachment](attachment.md)|Los datos adjuntos [fileAttachment](fileattachment.md) y [itemAttachment](itemattachment.md) del mensaje.|
-|extensions|Colección [extension](extension.md)|La colección de extensiones abiertas definidas para el mensaje. Solo lectura. Admite valores NULL.|
+|extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el mensaje. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el mensaje. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el mensaje. Solo lectura. Admite valores NULL.|
 
@@ -139,7 +139,12 @@ Aquí tiene una representación JSON del recurso
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
-  "webLink": "string"
+  "webLink": "string",
+
+  "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```

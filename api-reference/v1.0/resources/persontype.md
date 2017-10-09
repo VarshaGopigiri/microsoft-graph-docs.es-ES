@@ -12,7 +12,7 @@ La siguiente es una representación JSON del recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.persontype
+  "@odata.type": "microsoft.graph.personType"
 }-->
 
 ```json
