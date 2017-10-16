@@ -2,6 +2,14 @@
 
 Use esta API para agregar un objeto [attachment](../resources/attachment.md) a un mensaje. 
 
+Los datos adjuntos pueden ser de uno de los tipos siguientes:
+
+* Un archivo (recurso [fileAttachment](../resources/fileattachment.md)).
+* Un elemento (contacto, evento o mensaje, representado por un recurso [itemAttachment](../resources/itemattachment.md)).
+* Un vínculo a un archivo (recurso [referenceAttachment](../resources/referenceAttachment.md)).
+
+Todos estos tipos de recursos de datos adjuntos se derivan del recurso [attachment](../resources/attachment.md). 
+
 Puede agregar datos adjuntos a un mensaje existente publicándolos en su colección de datos adjuntos, o puede agregar datos adjuntos a un mensaje que se [crea y envía en el acto](../api/user_sendmail.md).
 
 Puesto que actualmente hay un límite de 4 MB en el tamaño total de cada solicitud REST, esto limita el tamaño de los datos adjuntos que agregar a menos de 4 MB.

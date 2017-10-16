@@ -1,6 +1,6 @@
 # <a name="message-createreply"></a>message: createReply
 
-Crea un borrador del mensaje de respuesta. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.
+Cree un borrador de la respuesta al [mensaje](../resources/message.md) especificado. Después, puede [actualizar](../api/message_update.md) el borrador para agregar el contenido de la respuesta al **cuerpo**, cambiar otras propiedades del mensaje o, simplemente, [enviar](../api/message_send.md) el borrador.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -26,6 +26,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
@@ -41,12 +42,6 @@ Aquí tiene un ejemplo de la solicitud.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
 ```
 
 ##### <a name="response"></a>Respuesta

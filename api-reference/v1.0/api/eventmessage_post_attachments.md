@@ -1,6 +1,15 @@
 # <a name="add-attachment"></a>Agregar datos adjuntos
 
-Usa esta API para crear nuevos datos adjuntos.
+Use esta API para crear datos adjuntos.
+
+Los datos adjuntos pueden ser de uno de los tipos siguientes:
+
+* Un archivo (recurso [fileAttachment](../resources/fileattachment.md)).
+* Un elemento (contacto, evento o mensaje, representado por un recurso [itemAttachment](../resources/itemattachment.md)).
+* Un vínculo a un archivo (recurso [referenceAttachment](../resources/referenceAttachment.md)).
+
+Todos estos tipos de recursos de datos adjuntos se derivan del recurso [attachment](../resources/attachment.md). 
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 

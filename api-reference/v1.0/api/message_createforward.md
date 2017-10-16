@@ -1,15 +1,15 @@
 # <a name="message-createforward"></a>message: createForward
 
-Crea un borrador del mensaje que de reenvío. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.
+Cree un borrador para reenviar el [mensaje](../resources/message.md) especificado. Después, puede [actualizar](../api/message_update.md) el borrador para agregar contenido al **cuerpo**, cambiar otras propiedades del mensaje o, simplemente, [enviar](../api/message_send.md) el borrador.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Mail.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Mail.ReadWrite    | 
-|Aplicación | Mail.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Mail.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Mail.ReadWrite    |
+|Aplicación | Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -25,7 +25,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
+No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
@@ -41,24 +42,6 @@ Aquí tiene un ejemplo de la solicitud.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "Comment-value",
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    },
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    }
-  ]
-}
 ```
 
 ##### <a name="response"></a>Respuesta

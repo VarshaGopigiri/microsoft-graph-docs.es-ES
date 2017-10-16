@@ -113,8 +113,8 @@ Para explorar los ejemplos de conexión terminados, visite [Microsoft Graph](htt
   </tr>
 </table>
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
-- Pruebe llamadas de REST de ejemplo en nuestro [Explorador de API](https://graph.microsoft.io/graph-explorer).
+- Pruebe a usar las llamadas de REST de ejemplo en el [Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - [Documentación acerca del punto de conexión de Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Documentación acerca del punto de conexión v2.0 de Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)

@@ -19,7 +19,7 @@ Derivadas de [attachment](attachment.md).
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|El contenido binario del archivo.|
+|contentBytes|Binario|El contenido del archivo codificado en base64.|
 |contentId|String|El identificador de los datos de adjuntos del almacén de Exchange.|
 |contentLocation|String|El identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de los datos adjuntos.|
 |contentType|String|El tipo de contenido de los datos adjuntos.|
