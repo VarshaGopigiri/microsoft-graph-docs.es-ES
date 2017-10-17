@@ -12,7 +12,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
@@ -31,36 +33,46 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/di
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
+
+<br/>
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+<br/>
 
 ## <a name="response"></a>Respuesta
 
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
+
 Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
+
+### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
+
 <!-- {
   "blockType": "request",
   "name": "event_dismissreminder"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
 
-##### <a name="response"></a>Respuesta
-##### <a name="response"></a>Respuesta
+<br/>
+
+### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 ```

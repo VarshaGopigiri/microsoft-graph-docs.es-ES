@@ -23,9 +23,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
