@@ -20,11 +20,11 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para que le resulte más fácil personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 De forma predeterminada, solo se devuelve un conjunto limitado de propiedades. (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
-Para devolver un conjunto de propiedades alternativo, tiene que especificar el conjunto de propiedades de [usuario](../resources/user.md) que prefiera con el parámetro de consulta `$select` de OData. Por ejemplo, para devolver _displayName_, _givenName_, _id_ y _postalCode_, tendría que agregar lo siguiente a la consulta: `$select=displayName,givenName,postalCode`
+Para devolver un conjunto de propiedades alternativo, tiene que especificar el conjunto de propiedades de [usuario](../resources/user.md) que prefiera con el parámetro de consulta `$select` de OData. Por ejemplo, para devolver _displayName_, _givenName_ y _postalCode_, tendría que agregar lo siguiente a la consulta: `$select=displayName,givenName,postalCode`
 
 > Nota: Algunas propiedades no se pueden devolver dentro de una colección de usuario. Las propiedades siguientes solo se admiten al [recuperar un único usuario](./user_get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_
 
@@ -43,11 +43,14 @@ No proporcione un cuerpo de solicitud para este método.
 
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [user](../resources/user.md) en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
+## <a name="examples"></a>Ejemplos
+
+### <a name="example-1-standard-users-request"></a>Ejemplo 1: Solicitud de usuarios estándar
+
+De forma predeterminada, solo se devuelve un conjunto limitado de propiedades. (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). Este ejemplo ilustra las solicitudes y respuestas predeterminadas. 
 
 ##### <a name="request"></a>Solicitud
 
-Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -58,7 +61,6 @@ GET https://graph.microsoft.com/v1.0/users
 
 ##### <a name="response"></a>Respuesta
 
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,6 +88,45 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>Ejemplo 2: Solicitud de los usuarios mediante $select
+
+Si necesita otro conjunto de propiedades, puede usar el parámetro de consulta `$select` de OData. Por ejemplo, para devolver _displayName_, _givenName_ y _postalCode_, tendría que agregar lo siguiente a la consulta: `$select=displayName,givenName,postalCode`
+
+##### <a name="request"></a>Solicitud
+
+<!-- {
+  "blockType": "request",
+  "name": "get_users"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
+```
+
+##### <a name="response"></a>Respuesta
+
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 159
+
+{
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "postalCode": "postalCode-value"
     }
   ]
 }

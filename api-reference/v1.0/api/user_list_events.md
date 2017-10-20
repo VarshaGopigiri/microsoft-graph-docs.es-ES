@@ -6,6 +6,37 @@ Actualmente, esta operación devuelve los cuerpos de los eventos solo en formato
 
 Para obtener instancias de evento de expansión, puede [obtener la vista de calendario](calendar_list_calendarview.md) o bien [obtener las instancias de un evento](event_list_instances.md).
 
+
+### <a name="get-events-in-another-users-calendar"></a>Obtener los eventos del calendario de otro usuario
+
+Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener los eventos del calendario de otro usuario. Esta sección se centra en escenarios que implican permisos delegados.
+
+Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John. Suponga que otro usuario, Garth, ha compartido un calendario con John. Puede obtener los eventos de dicho calendario compartido especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events
+```
+
+Esta capacidad se aplica a todas las operaciones de eventos GET compatibles para un usuario individual, como se muestra en la sección [solicitud HTTP](#http-request) a continuación. También se aplica si Garth ha delegado todo el buzón en John.
+
+Si Garth no ha compartido su calendario con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error. En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener los eventos de los calendarios del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events
+```
+
+Esta capacidad solo está disponible en las operaciones GET de:
+
+- Carpetas de contactos compartidas
+- Calendarios compartidos
+- Contactos y eventos en carpetas compartidas
+- Los recursos anteriores en buzones delegados
+
+Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.
+
+
 ### <a name="support-various-time-zones"></a>Compatibilidad con varias zonas horarias
 
 Para todas las operaciones GET que devuelven eventos, puede usar el encabezado `Prefer: outlook.timezone` para especificar la zona horaria de las horas de inicio y finalización del evento en la respuesta. 

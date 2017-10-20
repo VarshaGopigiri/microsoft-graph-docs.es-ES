@@ -44,10 +44,10 @@ Las [extensiones de esquema](../api-reference/v1.0/resources/schemaextension.md)
 
 Al crear una definición de extensión de esquema, debe proporcionar un nombre único para su **id**. Existen dos opciones de nomenclaturas:
 
-- Si ya tiene un dominio de cortesía `.com` que haya comprobado con su arrendatario, puede utilizar el nombre de dominio junto con el nombre de esquema para definir un nombre exclusivo, con este formato \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Por ejemplo, si su dominio de cortesía es contoso.com, puede definir un **id** de `contoso_mySchema`.  Esta es la opción preferida.
+- Si ya tiene un dominio de cortesía `.com`, `.net`, `.gov`, `.edu` o `.org` que haya comprobado con su arrendatario, puede usar el nombre de dominio junto con el nombre de esquema para definir un nombre exclusivo, con este formato \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Por ejemplo, si su dominio de cortesía es contoso.com, puede definir un **id** de `contoso_mySchema`.  Esta es la opción preferida.
 - Si no tiene un dominio de cortesía comprobado, solo puede establecer el **id** a un esquema de nombres (sin un prefijo de nombre de dominio), por ejemplo, `mySchema`. Microsoft Graph le asignará un identificador de cadena basado en el nombre proporcionado en este formato: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  Por ejemplo, `extkvbmkofy_mySchema`.
 
-Verá que este nombre único en el **id** se utiliza como el nombre del tipo complejo que almacenará sus datos personalizados en la instancia de recurso extendido. 
+Verá que este nombre único en el **id** se utiliza como el nombre del tipo complejo que almacenará sus datos personalizados en la instancia de recurso extendido.
 
 A diferencia de las extensiones abiertas, la administración de las definiciones de extensión de esquema ([list](../api-reference/v1.0/api/schemaextension_list.md), [create](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [get](../api-reference/v1.0/api/schemaextension_get.md), [update](../api-reference/v1.0/api/schemaextension_update.md) y [delete](../api-reference/v1.0/api/schemaextension_delete.md)) y de sus datos (agregar, obtener, actualizar y eliminar datos) son conjuntos independientes de operaciones de API. 
 
@@ -84,7 +84,7 @@ Se admiten los siguientes tipos de datos al definir una propiedad en una extensi
 | Booleano | No se admite para los mensajes, eventos y publicaciones. |
 | DateTime | Debe especificarse en el formato ISO 8601. Se almacenarán en UTC. |
 | Entero | Valor de 32 bits. No se admite para los mensajes, eventos y publicaciones. |
-| String | Máximo de 256 caracteres. |
+| Cadena | Máximo de 256 caracteres. |
 
 >**Nota:** No se admiten propiedades de varios valores.
 

@@ -2,9 +2,9 @@
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg_status_code)
+-   [Error resource type](#msg_error_resource_type)
+-   [Code property](#msg_code_property)
 
 <a name="msg_error_response"> </a> -->
 
@@ -18,7 +18,7 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Solicitud incorrecta (Bad Request)                     | No se puede procesar la solicitud porque es incorrecta o tiene un formato no válido.                                                                       |
 | 401         | No autorizado (Unauthorized)                    | La información de autenticación requerida no se encuentra o no es válida para el recurso.                                                   |
-| 403         | Prohibido (Forbidden)                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes.                                                 |
+| 403         | Prohibido                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes. <br /><br /> **Importante:** Si se aplican las directivas de acceso condicional a un recurso, puede que se devuelva un error HTTP 403; Forbidden error = insufficent_claims. Para obtener más información sobre Microsoft Graph y el acceso condicional vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | No encontrado (Not Found)                       | El recurso solicitado no existe.                                                                                                  |
 | 405         | Método no permitido (Method Not Allowed)              | No se permite el método HTTP de la solicitud en el recurso.                                                                         |
 | 406         | No es aceptable (Not Acceptable)                  | Este servicio no es compatible con el formato solicitado en el encabezado Accept.                                                                |
@@ -36,7 +36,7 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 | 503         | Servicio no disponible (Service Unavailable)             | El servicio no está disponible temporalmente por mantenimiento o está sobrecargado. Puede repetir la solicitud después de un retraso, la longitud de los cuales puede especificarse en un encabezado Retry-After.|
 | 504         | Tiempo de espera de puerta de enlace (Gateway Timeout)                 | El servidor, aunque actúa como un proxy, no recibió una respuesta a tiempo del servidor precedente al que necesitaba acceder para completar la solicitud. Puede producirse junto con 503. |
 | 507         | Almacenamiento insuficiente (Insufficient Storage)            | Se ha alcanzado la cuota de almacenamiento máxima.                                                                                            |
-| 509         | Ha superado el límite de ancho de banda (Bandwidth Limit Exceeded)        | Su aplicación se ha limitado por superar el extremo máximo de ancho de banda. Su aplicación puede reintentar la solicitud de nuevo cuando haya transcurrido más tiempo. |
+| 509         | Ha superado el límite de ancho de banda        | Su aplicación se ha limitado por superar el extremo máximo de ancho de banda. Su aplicación puede reintentar la solicitud de nuevo cuando haya transcurrido más tiempo. |
 
 La respuesta de error es un solo objeto JSON que contiene una propiedad única denominada **error**. Este objeto incluye todos los detalles del error. Puede usar la información devuelta aquí en lugar o además del código de estado HTTP. A continuación se muestra un ejemplo de un cuerpo completo de error JSON.
 
@@ -90,7 +90,7 @@ En la respuesta del error se encuentra un recurso de error que incluye las sigui
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | Una cadena de código de error para el error que se ha producido                                                            |
 | **message**    | string                 | Un mensaje preparado de desarrollador sobre el error que se ha producido. Esto no debe mostrarse al usuario directamente. |
-| **innererror** | error object           | Opcional. Objetos de error adicionales que pueden ser más específicos que el error de nivel superior.                     |
+| **error interno** | error object           | Opcional. Objetos de error adicionales que pueden ser más específicos que el error de nivel superior.                     |
 <!-- {
   "type": "#page.annotation",
   "description": "Understand the error format for the API and error codes.",

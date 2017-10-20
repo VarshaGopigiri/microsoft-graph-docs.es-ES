@@ -1,6 +1,38 @@
 # <a name="get-contact"></a>Get contact
 
 Recupera las propiedades y relaciones de un objeto contact.
+
+
+### <a name="get-contacts-in-another-users-contact-folder"></a>Obtener los contactos de la carpeta de contactos de otro usuario
+
+Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener los contactos de la carpeta de contactos de otro usuario. Esta sección se centra en escenarios que implican permisos delegados.
+
+Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John. Suponga que otro usuario, Garth, ha compartido una carpeta de contactos con John. Puede obtener un contacto de dicha carpeta compartida especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/contacts/{id}
+```
+
+Esta capacidad se aplica a todas las operaciones de contactos GET compatibles para un usuario individual, como se muestra en la sección [solicitud HTTP](#http-request) a continuación. También se aplica si Garth ha delegado todo el buzón en John.
+
+Si Garth no ha compartido su carpeta de contactos con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error. En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener un contacto de las carpetas de contactos del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/contacts/{id}
+```
+
+Esta capacidad solo está disponible en las operaciones GET de:
+
+- Carpetas de contactos compartidas
+- Calendarios compartidos
+- Contactos y eventos en carpetas compartidas
+- Los recursos anteriores en buzones delegados
+
+Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.
+
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -22,7 +54,7 @@ Un [contact](../resources/contact.md) desde la [contactFolder](../resources/cont
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-[contact](../resources/contact.md) contenido en una carpeta secundaria de una [contactFolder](../resources/mailfolder.md). En el ejemplo, siguiente se muestra un nivel de anidamiento, pero un contacto puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
+Un [contact](../resources/contact.md) contenido en una carpeta secundaria de una [contactFolder](../resources/mailfolder.md). En el ejemplo, siguiente se muestra un nivel de anidamiento, pero un contacto puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -38,7 +70,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta

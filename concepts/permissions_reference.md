@@ -249,22 +249,22 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 #### <a name="delegated-permissions"></a>Permisos delegados
 
-|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read_ |    Leer archivos de usuario | Permite a la aplicación leer los archivos del usuario que inició la sesión.| No |
-| _Files.Read.All_ | Leer todos los archivos a  los que el usuario puede tener acceso | Permite que la aplicación lea todos archivos a los que puede tener acceso el usuario que ha iniciado sesión. | No |
-| _Files.ReadWrite_ |   Obtener acceso total a los archivos de usuario | Permite a la aplicación leer, crear, actualizar y eliminar los archivos del usuario que inició la sesión. | No |
-| _Files.ReadWrite.All_ | Obtener acceso total a todos los archivos a los que puede tener acceso el usuario | Permite que la aplicación lea, cree, actualice y elimine todos los archivos a los que puede obtener acceso el usuario que inició la sesión. | No |
-| _Files.ReadWrite.AppFolder_ | Obtener acceso total a la carpeta de la aplicación (versión preliminar) | (Versión preliminar) Permite que la aplicación lea, cree, actualice y elimine archivos de la carpeta de la aplicación. | No |
-| _Files.Read.Selected_ |    Leer los archivos que el usuario selecciona (versión preliminar) | **Compatibilidad limitada en Microsoft Graph (vea los comentarios)** <br/> (Versión preliminar) Permite que la aplicación lea los archivos que el usuario selecciona. La aplicación puede obtener acceso a un archivo durante varias horas después de que el usuario lo haya seleccionado. | No |
-| _Files.ReadWrite.Selected_ |    Leer los archivos que el usuario selecciona y escribir en ellos (versión preliminar) | **Compatibilidad limitada en Microsoft Graph (vea los comentarios)** <br/> (Versión preliminar) Permite que la aplicación lea y escriba archivos que el usuario selecciona. La aplicación puede obtener acceso a un archivo durante varias horas después de que el usuario lo haya seleccionado. | No |
+| Permiso                  | Cadena para mostrar                                         | Descripción                                                                                                                                                                                             | Se requiere el consentimiento del administrador |
+| :-------------------------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------- |
+| _Files.Read_                | Leer archivos de usuario                                        | Permite a la aplicación leer los archivos del usuario que inició la sesión.                                                                                                                                                      | No                     |
+| _Files.Read.All_            | Leer todos los archivos a  los que el usuario puede tener acceso                    | Permite que la aplicación lea todos archivos a los que puede tener acceso el usuario que ha iniciado sesión.                                                                                                                                         | No                     |
+| _Files.ReadWrite_           | Obtener acceso total a los archivos de usuario                         | Permite a la aplicación leer, crear, actualizar y eliminar los archivos del usuario que inició la sesión.                                                                                                                          | No                     |
+| _Files.ReadWrite.All_       | Obtener acceso total a todos los archivos a los que puede tener acceso el usuario          | Permite que la aplicación lea, cree, actualice y elimine todos los archivos a los que puede obtener acceso el usuario que inició la sesión.                                                                                                             | No                     |
+| _Files.ReadWrite.AppFolder_ | Obtener acceso total a la carpeta de la aplicación (versión preliminar) | (Versión preliminar) Permite que la aplicación lea, cree, actualice y elimine archivos de la carpeta de la aplicación.                                                                                                         | No                     |
+| _Files.Read.Selected_       | Leer los archivos que el usuario selecciona                       | **Compatibilidad limitada en Microsoft Graph (vea los comentarios)** <br/> (Versión preliminar) Permite que la aplicación lea los archivos que el usuario selecciona. La aplicación puede obtener acceso a un archivo durante varias horas después de que el usuario lo haya seleccionado.            | No                     |
+| _Files.ReadWrite.Selected_  | Leer los archivos que el usuario selecciona y escribir en ellos             | **Compatibilidad limitada en Microsoft Graph (vea los comentarios)** <br/> (Versión preliminar) Permite que la aplicación lea y escriba archivos que el usuario selecciona. La aplicación puede obtener acceso a un archivo durante varias horas después de que el usuario lo haya seleccionado. | No                     |
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
-|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read.All_ | Leer archivos en todas las colecciones de sitios (versión preliminar) | (Versión preliminar) Permite que la aplicación lea todos los archivos de todas las colecciones de sitios sin que un usuario iniciara sesión. | Sí |
-| _Files.ReadWrite.All_ | Leer y escribir archivos en todas las colecciones de sitios (versión preliminar) | **Compatibilidad limitada en Microsoft Graph** <br/> (Versión preliminar) Permite que la aplicación lea, cree, actualice y elimine todos los archivos de todas las colecciones de sitios sin que un usuario iniciara sesión. | Sí |
+| Permiso            | Cadena para mostrar                               | Descripción                                                                                                    | Se requiere el consentimiento del administrador |
+| :-------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| _Files.Read.All_      | Leer archivos en todas las colecciones de sitios           | Permite que la aplicación lea todos los archivos de todas las colecciones de sitios sin la necesidad de que un usuario haya iniciado sesión.                             | Sí                    |
+| _Files.ReadWrite.All_ | Leer y escribir archivos en todas las colecciones de sitios | Permite que la aplicación lea, cree, actualice y elimine todos los archivos de todas las colecciones de sitios sin la necesidad de que un usuario haya iniciado sesión. | Sí                    |
 
 ### <a name="remarks"></a>Comentarios
 
@@ -272,9 +272,8 @@ Los permisos delegados Files.Read, Files.ReadWrite, Files.Read.All y Files.ReadW
 
 Los permisos delegados Files.Read.Selected y Files.ReadWrite.Selected solo son válidos en cuentas profesionales o educativas, y solo se exponen para trabajar con [controladores de archivos de Office 365 (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps). No tienen que usarse para llamar directamente a las API de Microsoft Graph. 
 
-El permiso delegado Files.ReadWrite.AppFolder solo es válido para cuentas personales y se usa para obtener acceso a la [carpeta especial del directorio raíz de la aplicación](https://dev.onedrive.com/items/special_folders.htm) con la API de Microsoft Graph [Obtener carpeta especial](../api-reference/v1.0/api/drive_special.md) de OneDrive.
+El permiso delegado Files.ReadWrite.AppFolder solo es válido para cuentas personales y se usa para obtener acceso a la [carpeta especial del directorio raíz de la aplicación](https://dev.onedrive.com/misc/appfolder.htm) con la API de Microsoft Graph [Obtener carpeta especial](../api-reference/v1.0/api/drive_get_specialfolder.md) de OneDrive.
 
-El permiso de aplicación Files.ReadWrite.All aún no es compatible con la API de Microsoft Graph [Crear sesión de carga reanudable](../api-reference/v1.0/api/item_createuploadsession.md) de OneDrive. Está prevista la compatibilidad completa próximamente. 
 
 ### <a name="example-usage"></a>Ejemplos de uso
 #### <a name="delegated"></a>Delegado
@@ -316,7 +315,7 @@ En el caso de los permisos de la aplicación, se admiten algunas limitaciones pa
 
 En algunos casos, una aplicación podría necesitar [permisos de directorio](#directory-permissions) para leer algunas propiedades de grupo, como `member` y `memberOf`. Por ejemplo, si un grupo tiene una o más entidades de servicio [servicePrincipals](../api-reference/beta/resources/serviceprincipal.md) como miembros, la aplicación necesitará permisos efectivos para leer las entidades de servicio mediante la concesión de uno de los permisos _Directory.\*_. De lo contrario, Microsoft Graph devolverá un error. (En el caso de los permisos delegados, el usuario que ha iniciado sesión también deberá tener privilegios suficientes en la organización para leer entidades de servicio). Lo mismo se aplica a la propiedad `memberOf`, que puede devolver [administrativeUnits](../api-reference/beta/resources/administrativeunit.md).
 
-Los permisos de grupo también se usan para controlar el acceso a recursos y API de [Microsoft Planner](../api-reference/beta/resources/planner_overview.md). Solo se admiten los permisos delegados para las API de Microsoft Planner ; no se admiten los permisos de aplicación. No se admiten las cuentas personales de Microsoft.
+Los permisos de grupo también se usan para controlar el acceso a los recursos y las API de [Microsoft Planner](../api-reference/beta/resources/planner_overview.md). Solo se admiten los permisos delegados para las API de Microsoft Planner; no se admiten los permisos de aplicación. No se admiten las cuentas personales de Microsoft.
 
 
 ### <a name="example-usage"></a>Ejemplo de uso
@@ -588,28 +587,35 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 #### <a name="delegated-permissions"></a>Permisos delegados
 
-|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Sites.Read.All_ |    Leer los elementos de todas las colecciones de sitios | Permite que la aplicación lea los documentos y enumere los elementos en todas las colecciones del sitio en nombre del usuario que ha iniciado sesión. | No |
-| _Sites.ReadWrite.All_ |    Leer y escribir elementos en todas las colecciones de sitios. | Permite que la aplicación edite o elimine los documentos y enumere los elementos de todas las colecciones de sitios en nombre del usuario que ha iniciado sesión. | No |
+| Permiso              | Cadena para mostrar                                                   | Descripción                                                                                                                   | Se requiere el consentimiento del administrador |
+| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| _Sites.Read.All_        | Leer los elementos de todas las colecciones de sitios                               | Permite que la aplicación lea los documentos y enumere los elementos en todas las colecciones de sitios en nombre del usuario que ha iniciado sesión.                      | No                     |
+| _Sites.ReadWrite.All_   | Leer y escribir elementos en todas las colecciones de sitios.                     | Permite que la aplicación edite o elimine los documentos y enumere los elementos en todas las colecciones de sitios en nombre del usuario que ha iniciado sesión.            | No                     |
+| _Sites.Manage.All_      | Leer, editar y eliminar elementos y listas en todas las colecciones de sitios | Permite que la aplicación administre y cree listas, documentos y elementos de listas en todas las colecciones de sitios en nombre del usuario que ha iniciado sesión. | No                     |
+| _Sites.FullControl.All_ | Tomar el control total de todas las colecciones de sitios                        | Permite que la aplicación tenga control total de los sitios de SharePoint en todas las colecciones de sitios en nombre del usuario que ha iniciado sesión.              | Sí                    |
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
-|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Sites.Read.All_ |    Leer los elementos de todas las colecciones de sitios (versión preliminar) | Permite que la aplicación lea todos los documentos y elementos de lista de todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión. | Sí |
-| _Sites.ReadWrite.All_ |    Leer y escribir elementos en todas las colecciones de sitios (versión preliminar) | Permite que la aplicación cree, lea, actualice y elimine documentos y elementos de lista de todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión. | Sí |
+| Permiso              | Cadena para mostrar                                                   | Descripción                                                                                                                   | Se requiere el consentimiento del administrador |
+| :---------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| _Sites.Read.All_        | Leer los elementos de todas las colecciones de sitios                               | Permite que la aplicación lea todos los documentos y elementos de lista de todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión.                             | Sí                    |
+| _Sites.ReadWrite.All_   | Leer y escribir elementos en todas las colecciones de sitios.                     | Permite que la aplicación cree, lea, actualice y elimine documentos y elementos de lista de todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión. | Sí                    |
+| _Sites.Manage.All_      | Tomar el control total de todas las colecciones de sitios                        | Permite que la aplicación administre y cree listas, documentos y elementos de listas en todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión.        | Sí                    |
+| _Sites.FullControl.All_ | Leer, editar y eliminar elementos y listas en todas las colecciones de sitios | Permite que la aplicación tenga control total de los sitios de SharePoint en todas las colecciones de sitios sin necesidad de que un usuario haya iniciado sesión.                     | Sí                    |
+
 
 ### <a name="remarks"></a>Comentarios
+
 Los permisos de sitios solo son válidos en las cuentas profesionales o educativas.
 
 ### <a name="example-usage"></a>Ejemplos de uso
+
 #### <a name="delegated"></a>Delegado
 
-* _Sites.Read.All_: leer las listas del sitio raíz de SharePoint (`GET /beta/sharePoint/site/lists`).
-* _Sites.ReadWrite.All_: crear elementos de lista en una lista de SharePoint (`POST /beta/sharePoint/site/lists/123/items`).
-
-Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
+* _Sites.Read.All_: leer las listas del sitio raíz de SharePoint (`GET /v1.0/sites/root/lists`).
+* _Sites.ReadWrite.All_: crear elementos de lista en una lista de SharePoint (`POST /v1.0/sites/root/lists/123/items`).
+* _Sites.Manage.All_: agregar una nueva lista a un sitio de SharePoint (`POST /v1.0/sites/root/lists`).
+* _Sites.FullControl.All_: acceso completo a listas y sitios de SharePoint.
 
 ---
 

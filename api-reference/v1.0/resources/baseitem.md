@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: BaseItem
+ms.openlocfilehash: bbfebd734407259c391cdb1ce74beb96dc74d8bf
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2017
+---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
 El recurso **baseItem** es un recurso abstracto que contiene un conjunto común de propiedades compartidas entre varios tipos de recursos. Recursos derivados de **baseItem**:
@@ -45,9 +56,9 @@ A continuación se incluye una representación JSON del recurso **baseItem**.
 | lastModifiedDateTime | dateTimeOffset    | Fecha y hora de la última modificación del elemento. Solo lectura.                                   |
 | name                 | string            | Nombre del elemento. Lectura y escritura.                                                      |
 | parentReference      | [itemReference][] | Información primaria, si el elemento tiene un elemento primario. Lectura y escritura.                              |
-| webUrl               | string (URL)      | Dirección URL que muestra el recurso en el explorador. Solo lectura.                              |
+| webUrl               | string (url)      | Dirección URL que muestra el recurso en el explorador. Solo lectura.                              |
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
 
 ## <a name="remarks"></a>Observaciones
@@ -61,8 +72,5 @@ El tipo `baseItem` no debe utilizarse directamente.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->

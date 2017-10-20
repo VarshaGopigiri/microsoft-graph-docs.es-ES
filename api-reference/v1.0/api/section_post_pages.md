@@ -1,14 +1,15 @@
 # <a name="create-page"></a>Crear página
 
 Crea una [página](../resources/page.md) en la sección especificada.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    | 
-|Delegado (cuenta personal de Microsoft) | Notes.Create, Notes.ReadWrite    | 
-|Aplicación | Notes.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | Notes.Create, Notes.ReadWrite    |
+|Aplicación | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -22,9 +23,9 @@ POST /sites/{id}/onenote/sections/{id}/pages
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type | string | `text/html` o `application/xhtml+xml` para el contenido HTML, también para la parte requerida "Presentación" de las solicitudes de varias partes. Las solicitudes de varias partes usan el tipo de contenido `multipart/form-data; boundary=your-boundary`. |
+| Tipo de contenido | string | `text/html` o `application/xhtml+xml` para el contenido HTML, también para la parte requerida "Presentación" de las solicitudes de varias partes. Las solicitudes de varias partes usan el tipo de contenido `multipart/form-data; boundary=your-boundary`. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, facilite el contenido HTML de la página.
 
 El cuerpo puede contener código HTML ubicado directamente en el cuerpo de la solicitud o un formato de mensaje de varias partes, como se muestra en el ejemplo. Si quiere enviar datos binarios, debe enviar una solicitud de varias partes.

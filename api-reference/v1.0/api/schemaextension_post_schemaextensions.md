@@ -36,7 +36,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear una exte
 | Parámetro | Tipo | Descripción|
 |:---------------|:--------|:----------|
 |description|String|Descripción de la extensión de esquema.|
-|id|Cadena|Identificador único para la definición de la extensión de esquema. <br>Puede asignar un valor de dos maneras: <ul><li>Concatenar el nombre de uno de los dominios comprobados con un nombre para la extensión del esquema con el fin de formar una cadena única en este formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Por ejemplo, `contoso_mySchema`. </li><li>Proporcionar un nombre de esquema y permitir a Microsoft Graph utilizar ese nombre de esquema para completar la asignación del **id.** en este formato: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Un ejemplo sería `extkvbmkofy_mySchema`.</li></ul>Una vez creada, esta propiedad no se puede modificar. |
+|id|Cadena|Identificador único para la definición de la extensión de esquema. <br>Puede asignar un valor de dos maneras: <ul><li>Concatenar el nombre de uno de los dominios comprobados con un nombre para la extensión del esquema con el fin de formar una cadena única en este formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Por ejemplo: `contoso_mySchema`. NOTA: Solo se admiten los dominios comprobados bajo los siguientes dominios de primer nivel: `.com`, `.net`, `.gov`, `.edu` o `.org`. </li><li>Proporcionar un nombre de esquema y permitir a Microsoft Graph utilizar ese nombre de esquema para completar la asignación del **id.** en este formato: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Un ejemplo sería `extkvbmkofy_mySchema`.</li></ul>Una vez creada, esta propiedad no se puede modificar. |
+|owner|String|(Opcional) El `appId` de la aplicación que es el propietario de la extensión del esquema. Esta propiedad se puede proporcionar en la creación, para establecer el propietario.  Si no se proporciona, entonces la aplicación de llamada `appId` se establecerá como la propietaria. Así, por ejemplo, si crea una nueva definición de extensión de esquema mediante el Probador de gráfico, **debe** proporcionar la propiedad owner. Una vez establecida, esta propiedad es de solo lectura y no se puede cambiar.|
 |properties|Colección [extensionSchemaProperty](../resources/extensionschemaproperty.md)|La colección de tipos y nombres de propiedad que conforman la definición de la extensión de esquema.|
 |targetTypes|Colección de cadenas|Conjunto de tipos de recursos de Microsoft Graph (compatibles con extensiones de esquema) a los que se puede aplicar la definición de extensión de esquema.|
 
@@ -194,7 +195,7 @@ Content-length: 420
 ```
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)

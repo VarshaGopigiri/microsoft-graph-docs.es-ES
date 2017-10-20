@@ -2,7 +2,7 @@
 
 Suscripción a una aplicación de escucha para recibir notificaciones cuando cambian los datos en Microsoft Graph.
 ## <a name="permissions"></a>Permisos
-La creación de una suscripción requiere un ámbito de lectura para el recurso. Por ejemplo, para obtener mensajes de notificaciones, la aplicación necesita el permiso `Mail.Read`. En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+La creación de una suscripción requiere un ámbito de lectura para el recurso. Por ejemplo, para obtener mensajes de notificaciones, la aplicación necesita el permiso `Mail.Read`. En la tabla siguiente se muestra el permiso propuesto que se necesita para cada recurso. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 | Tipo de recurso o elemento        | Permiso          |
 |-----------------------------|---------------------|
@@ -13,7 +13,7 @@ La creación de una suscripción requiere un ámbito de lectura para el recurso.
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
 | Unidades de disco (unidades de disco y contenido compartido de SharePoint) | Files.ReadWrite.All |
 
- ***Nota:*** El punto de conexión /v1.0 permite permisos de aplicación para la mayoría de recursos. Las conversaciones de un grupo y los elementos de raíz de unidad de OneDrive no son compatibles con los permisos de la aplicación.
+ ***Nota:*** El punto de conexión /v1.0 permite permisos de la aplicación para la mayoría de los recursos. Las conversaciones de un grupo y los elementos de raíz de la unidad de OneDrive no son compatibles con los permisos de la aplicación.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -121,7 +121,7 @@ En función del recurso suscrito, un campo resourceData adicional puede proporci
    ]
 }
 ```
-Al recibir notificaciones de suscripciones de unidad, el campo resourceData será NULL y se deberá llamar a la API de [delta](item_delta.md) para determinar los cambios que han ocurrido. Aquí tiene un ejemplo de notificación de unidad:
+Al recibir notificaciones de suscripciones de unidad, el campo resourceData será NULL y se deberá llamar a la API de [delta](driveitem_delta.md) para determinar los cambios que han ocurrido. Aquí tiene un ejemplo de notificación de unidad:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",

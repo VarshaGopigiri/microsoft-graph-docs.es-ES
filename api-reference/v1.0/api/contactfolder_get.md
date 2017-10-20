@@ -1,6 +1,38 @@
 # <a name="get-contactfolder"></a>Get contactFolder
 
 Obtiene una carpeta de contactos mediante el id. de carpeta de contactos.
+
+
+### <a name="get-another-users-contact-folder"></a>Obtener la carpeta de contactos de otro usuario
+
+Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener la carpeta de contactos de otro usuario. Esta sección se centra en escenarios que implican permisos delegados.
+
+Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John. Suponga que otro usuario, Garth, ha compartido una carpeta de contactos con John. Puede obtener dicha carpeta compartida especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/contactFolders/{id}
+```
+
+Esta capacidad se aplica a todas las operaciones de carpeta de contactos GET compatibles para un usuario individual, como se describe en la sección [solicitud HTTP](#http-request) a continuación. También se aplica si Garth ha delegado todo el buzón en John.
+
+Si Garth no ha compartido su carpeta de contactos con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error. En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener una carpeta de contactos del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/contactFolders/{id}
+```
+
+Esta capacidad solo está disponible en las operaciones GET de:
+
+- Carpetas de contactos compartidas
+- Calendarios compartidos
+- Contactos y eventos en carpetas compartidas
+- Los recursos anteriores en buzones delegados
+
+Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.
+
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -23,7 +55,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 |:-----------|:------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta

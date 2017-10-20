@@ -1,8 +1,20 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+ms.openlocfilehash: 84e67df8aae6e72363d4ba148e92f9046f41bb29
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2017
+---
 # <a name="specialfolder-resource-type"></a>Tipo de recurso SpecialFolder
 
 El recurso **SpecialFolder** agrupa en una sola estructura los elementos de datos relacionados con carpetas especiales.
 
-Si un objeto **DriveItem** tiene una faceta **specialFolder** que no es null, el elemento representa una carpeta especial (con nombre). Se puede acceder a las carpetas especiales directamente a través de la [colección de carpetas especiales](../api/drive_special.md).
+Si un objeto **DriveItem** tiene una faceta **specialFolder** que no es NULL, el elemento representa una carpeta especial (con nombre).
+Se puede obtener acceso a las carpetas especiales directamente a través de la [colección de carpetas especiales](../api/drive_get_specialfolder.md).
 
 Las carpetas especiales proporcionan alias simples para acceder a carpetas conocidas sin necesidad de buscar la carpeta por su ruta (que requeriría localización) o hacer referencia a la carpeta con un identificador. Si una carpeta especial cambia de nombre o se mueve a otra ubicación de la unidad, esta sintaxis seguirá devolviendo esa carpeta.
 
@@ -47,13 +59,10 @@ Estas son las carpetas especiales disponibles en OneDrive Personal y OneDrive pa
 
 Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SpecialFolder"
+} -->

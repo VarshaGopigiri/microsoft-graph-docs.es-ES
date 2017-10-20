@@ -4,6 +4,8 @@ Para llamar a Microsoft Graph, su aplicación debe adquirir un token de acceso d
 
 En este tema se proporciona información general sobre los tokens de acceso, Azure AD y la manera en que la aplicación puede obtener tokens de acceso. Si ya está familiarizado con la integración de una aplicación con Azure AD para obtener tokens, puede ir directamente a [Pasos siguientes](#next-steps) para obtener información y ejemplos específicos de Microsoft Graph. 
 
+> **Importante:**  Cómo se aplican las directivas de acceso condicional a Microsoft Graph es algo que está cambiando. Las aplicaciones deben actualizarse para administrar los escenarios donde se configuran las directivas de acceso condicional. Para obtener más información y directrices, vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 ## <a name="what-is-an-access-token-and-how-do-i-use-it"></a>¿Qué es un token de acceso y cómo se usa?
 
 Los tokens de acceso emitidos por Azure AD son JSON Web Tokens (JWT) codificados en base 64. Contienen información (notificaciones) que las API web protegidas por Azure AD, como Microsoft Graph, usan para validar al llamador y para garantizar que este tiene los permisos adecuados para realizar la operación que solicita. Al llamar a Microsoft Graph, puede tratar los tokens de acceso como opacos. Siempre debe transmitir los tokens de acceso por un canal seguro, como Seguridad de la capa de transporte (HTTPS).
@@ -178,7 +180,7 @@ Para el punto de conexión de Azure AD:
 - También puede explorar ejemplos de Azure AD por plataforma en la [Galería de código de Azure](https://azure.microsoft.com/resources/samples/?service=active-directory). Nota: No se puede organizar la búsqueda por versión del punto de conexión. 
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Documentación sobre el punto de conexión de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)
 - [Documentación sobre el punto de conexión de Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)

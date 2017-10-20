@@ -2,6 +2,8 @@
 
 Microsoft Graph es una API para web REST que permite tener acceso a los recursos del servicio Microsoft Cloud. Después de [registrar su aplicación](auth_register_app_v2.md) y [obtener tokens de autenticación para un usuario](auth_v2_user.md) o [servicio](auth_v2_service.md), puede realizar solicitudes a la API de Microsoft Graph.
 
+> **Importante:**  Cómo se aplican las directivas de acceso condicional a Microsoft Graph es algo que está cambiando. Las aplicaciones deben actualizarse para administrar los escenarios donde se configuran las directivas de acceso condicional. Para obtener más información y directrices, vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 Para leer o escribir en recursos como usuarios o mensajes de correo electrónico, se construye una solicitud similar a la siguiente.
 
 ```http
@@ -28,11 +30,11 @@ Microsoft Graph utiliza el método HTTP en la solicitud para determinar lo que e
 
 |**Método** |**Descripción**                             |
 | :----- | :------------------------------------------- |
-| GET    | Leer datos de un recurso.                   |
-| POST   | Crear un nuevo recurso o realizar una acción. |
-| PATCH  | Actualizar un recurso con nuevos valores.           |
-| PUT    | Reemplazar un recurso por otro nuevo.           |
-| DELETE | Eliminar un recurso.                           |
+| GET    | Lee datos de un recurso.                   |
+| POST   | Crea un nuevo recurso o realiza una acción. |
+| PATCH  | Actualiza un recurso con nuevos valores.           |
+| PUT    | Reemplaza un recurso por otro nuevo.           |
+| DELETE | Elimina un recurso.                           |
 
 * Para los métodos **GET** y **DELETE**, no es necesario un cuerpo de solicitud.
 * Los métodos **POST**, **PATCH** y **PUT** requieren un cuerpo de la solicitud —generalmente especificado en formato JSON— que contiene información adicional, como los valores de las propiedades del recurso.
@@ -50,17 +52,17 @@ Para obtener más información sobre las versiones de API, consulte [Control de 
 
 ## <a name="resource"></a>Recurso
 
-La dirección URL incluirá el recurso o los recursos con los que interactúa en la solicitud, como `me`, `users`, `groups`, `drives` y `sites`. Cada uno de los recursos de nivel superior también incluye **relaciones** que se pueden usar para tener acceso a recursos adicionales, como `me/messages` o `me/drive`. También puede interactuar con los recursos mediante **métodos**, por ejemplo, para enviar un correo electrónico, utilice `me/sendMail`.
+La dirección URL incluirá el recurso o los recursos con los que interactúa en la solicitud, como `me`, `users`, `groups`, `drives` y `sites`. Cada uno de los recursos de nivel superior también incluye **relaciones** que se pueden usar para tener acceso a recursos adicionales, como `me/messages` o `me/drive`. También puede interactuar con los recursos mediante **métodos**, por ejemplo, para enviar un correo electrónico, use `me/sendMail`.
 
 Para obtener más información sobre cómo desplazarse por los métodos y relaciones de recursos, consulte el recorrido del gráfico. 
 
-Cada recurso podría necesitar diferentes permisos de acceso. A menudo necesitará un mayor nivel de permisos para crear o actualizar un recurso que para leerlo. Para obtener más información acerca de los permisos necesarios, consulte el tema de referencia del método. 
+Cada recurso podría necesitar diferentes permisos de acceso. A menudo necesitará un nivel de permisos mayor para crear o actualizar un recurso que para leerlo. Para obtener más información sobre los permisos necesarios, consulte el tema de referencia del método. 
 
 Para obtener más información acerca de los permisos, consulte [Referencia de permisos](permissions_reference.md).
 
 ## <a name="query-parameters-optional"></a>Parámetros de consulta (opcional)
 
-Puede utilizar parámetros de consulta opcionales para personalizar la respuesta de la aplicación Microsoft Graph. Use parámetros de consulta para incluir más o menos propiedades que la respuesta predeterminada, filtrar la respuesta según los elementos que coincidan con una consulta personalizada o proporcionar parámetros adicionales para un método.
+Puede usar parámetros de consulta opcionales para personalizar la respuesta de la aplicación Microsoft Graph. Use parámetros de consulta para incluir más o menos propiedades que la respuesta predeterminada, filtrar la respuesta según los elementos que coincidan con una consulta personalizada o proporcionar parámetros adicionales para un método.
 
 Por ejemplo, agregar el siguiente parámetro de filtro restringe los mensajes devueltos solo a aquellos que tengan la propiedad `emailAddress` de `jon@contoso.com`.
 

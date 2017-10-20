@@ -1,10 +1,23 @@
-# <a name="delete-permission"></a>Delete permission
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Eliminar el acceso a un elemento
+ms.openlocfilehash: cf573b49edc326ca221545657b29b1f2e86ba417
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2017
+---
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Eliminar un permiso de uso compartido de un archivo o una carpeta
 
 Quita el acceso a un [DriveItem](../resources/driveitem.md).
 
-Solo se pueden eliminar los permisos no heredados. La propiedad **inheritedFrom** debe ser `null`.
+Solo se pueden eliminar los permisos de uso compartido **no** heredados.
+La propiedad **inheritedFrom** debe ser `null`.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
@@ -16,48 +29,39 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-DELETE /me/drive/items/{item-id}/permissions/{perm-id}
-DELETE /me/drive/root:/{path}:/permissions/{perm-id}
-DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
+DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
+DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="request-headers"></a>Encabezados de solicitud
+## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 
 | Nombre          | Tipo   | Descripción                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
-No proporcione un cuerpo de solicitud para este método.
-
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`.
 
 ## <a name="example"></a>Ejemplo
 
-##### <a name="request"></a>Solicitud
+En este ejemplo, se quita el permiso identificado como {perm-id} del elemento {item-id} del OneDrive del usuario actual.
 
-Aquí tiene un ejemplo de la solicitud.
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
 
-<!-- {
-  "blockType": "request",
-  "name": "delete_permission"
-}-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
 
-##### <a name="response"></a>Respuesta
+### <a name="response"></a>Respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+<!-- { "blockType": "response", "truncated": false } -->
 
-<!-- {
-  "blockType": "response",
-  "truncated": false
-} -->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -70,8 +74,8 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete permission",
-  "keywords": "",
+  "description": "Remove an item's sharing permissions",
+  "keywords": "permission, permissions, sharing, remove permissions, delete permissions",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Delete permission"
-}-->
+  "tocPath": "Sharing/Remove permissions"
+} -->

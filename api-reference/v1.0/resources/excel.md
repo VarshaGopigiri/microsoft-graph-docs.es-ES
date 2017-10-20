@@ -5,28 +5,29 @@ Puede utilizar Microsoft Graph para permitir que las aplicaciones web y móviles
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-Puede acceder a un conjunto de objetos de Excel (como una tabla, intervalo o gráfico) mediante las API de REST estándares para crear, leer, actualizar y eliminar operaciones (CRUD) en el libro. Por ejemplo: `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
+Puede acceder a un conjunto de objetos de Excel (como una tabla, intervalo o gráfico) mediante las API de REST estándares para crear, leer, actualizar y eliminar operaciones (CRUD) en el libro. Por ejemplo: `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 devuelve una colección de objetos de hoja de cálculo que forman parte del libro.    
 
 
-**Nota**: La API de REST de Excel solo es compatible con libros de formato de archivo Office Open XML. Los libros con la extensión `.xls` no son compatibles. 
+**Nota:** La API de REST de Excel solo es compatible con libros de formato de archivo Office Open XML. Los libros con la extensión `.xls` no son compatibles. 
 
 ## <a name="authorization-and-scopes"></a>Autorización y ámbitos
 
-Puede utilizar el [punto de conexión de Azure AD v.20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
+Puede usar el [punto de conexión de Azure AD v.2](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
   
 Uno de los siguientes [ámbitos de permiso](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) es necesario para utilizar el recurso de Excel:
 
-* Files.Read 
-* Files.ReadWrite
+* Files.Read (para acciones de lectura)
+* Files.ReadWrite (para acciones de lectura y escritura)
 
 
 ## <a name="sessions-and-persistence"></a>Sesiones y persistencia
 
-Se puede llamar a las API de Excel de dos modos: 
+Se puede llamar a las API de Excel de tres modos: 
 
-1. Sesión persistente - Todos los cambios realizados en el libro son persistentes (se guardan). Este es el modo de operación habitual. 
-2. Sesión no persistente - Los cambios realizados por la API no se guardan en la ubicación de origen. En su lugar, el servidor backend de Excel conserva una copia temporal del archivo que refleja los cambios realizados durante esa sesión API en concreto. Cuando expira la sesión de Excel, se pierden los cambios. Este modo es útil para aplicaciones que necesitan realizar análisis u obtener los resultados de un cálculo o una imagen de gráfico, pero no afecta al estado de documento.   
+1. Sesión persistente - Todos los cambios realizados en el libro son persistentes (se guardan). Este es el modo de operación más eficiente y eficaz. 
+2. Sesión no persistente - Los cambios realizados por la API no se guardan en la ubicación de origen. En su lugar, el servidor backend de Excel conserva una copia temporal del archivo que refleja los cambios realizados durante esa sesión API en concreto. Cuando expira la sesión de Excel, se pierden los cambios. Este modo es útil para aplicaciones que necesitan realizar análisis u obtener los resultados de un cálculo o una imagen de gráfico, pero no afecta al estado de documento. 
+3. Sin sesión - Se realiza la llamada a la API sin información de la sesión. Los servidores de Excel tienen que localizar la copia del libro del servidor cada vez que se realiza la operación y, por tanto, no es una forma eficaz de llamar a las API de Excel. Es adecuada para hacer solicitudes únicas. 
 
 Para representar la sesión en la API, utilice el encabezado `workbook-session-id: {session-id}`. 
 
@@ -75,6 +76,8 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
+
+>Nota: Si el identificador de sesión ha caducado, se devuelve un código de error HTTP `404` en la sesión. En este tipo de escenario, puede crear una nueva sesión y continuar. Otra solución sería actualizar la sesión periódicamente para mantener la sesión activa. Normalmente, la sesión persistente caduca después de 7 minutos de inactividad. La sesión no persistente caduca después de 5 minutos de inactividad. 
 
 ## <a name="common-excel-scenarios"></a>Escenarios comunes de Excel
 
@@ -149,7 +152,9 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-a-new-worksheet"></a>Obtener una hoja de cálculo nueva 
- 
+
+Obtener una hoja de cálculo basada en el nombre. 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
@@ -1138,7 +1143,7 @@ Los valores en blanco en las solicitudes de actualización se tratan como una in
 
 Ejemplos:
 
-* En el caso de `values`, el valor del intervalo se borra. Esto equivale a borrar el contenido de la aplicación.
+* En el caso de `values`, el valor del rango se borra. Esto equivale a borrar el contenido de la aplicación.
 
 * En el caso de `numberFormat`, el formato numérico se establece en `General`.
 
@@ -1171,7 +1176,7 @@ Una dirección de intervalo sin delimitar solo contiene identificadores de colum
 
 Cuando la API realiza una solicitud para recuperar un intervalo sin delimitar (`getRange('C:C')`), la respuesta devuelta contiene `null` para las propiedades de nivel de celda, como `values`, `text`, `numberFormat` o `formula`. Otras propiedades de intervalo como `address` o `cellCount` reflejarán el intervalo sin delimitar.
 
-#### <a name="write"></a>Write
+#### <a name="write"></a>Escritura
 
 El establecimiento de propiedades de nivel de celda (como valores, formato numérico, etc.) en el intervalo sin delimitar **no está permitido**, ya que la solicitud de entrada podría ser demasiado grande para controlarla.
 
