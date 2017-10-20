@@ -1,10 +1,19 @@
-# <a name="searchresult-resource-type"></a>Tipo de recurso SearchResult
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SearchResult
+ms.openlocfilehash: 33ce07c947d858f05844dd9dc2589379131c9dbb
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2017
+---
+# <a name="searchresult-resource-type"></a><span data-ttu-id="6f191-102">Tipo de recurso SearchResult</span><span class="sxs-lookup"><span data-stu-id="6f191-102">SearchResult resource type</span></span>
 
-El recurso **SearchResult** indica que un elemento es la respuesta a una búsqueda.
+<span data-ttu-id="6f191-103">El recurso **SearchResult** indica que un elemento es la respuesta a una consulta de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="6f191-103">The **SearchResult** resource indicates than an item is the response to a search.</span></span>
 
-## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso.
+## <a name="json-representation"></a><span data-ttu-id="6f191-104">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="6f191-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -18,24 +27,20 @@ Aquí tiene una representación JSON del recurso.
 }
 ```
 
-## <a name="properties"></a>Propiedades
+## <a name="properties"></a><span data-ttu-id="6f191-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="6f191-105">Properties</span></span>
 
-| Propiedad            | Tipo   | Descripción                                                                                                                                                                         |
-|:--------------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| onClickTelemetryUrl | String | Dirección URL de devolución de llamada que se puede usar para registrar información de telemetría. La aplicación debe emitir un GET en esta dirección URL si el usuario interactúa con este elemento para mejorar la calidad de los resultados. |
+| <span data-ttu-id="6f191-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="6f191-106">Property</span></span>            | <span data-ttu-id="6f191-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f191-107">Type</span></span>   | <span data-ttu-id="6f191-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="6f191-108">Description</span></span>
+|:--------------------|:-------|:----------------------------------------------
+| <span data-ttu-id="6f191-109">onClickTelemetryUrl</span><span class="sxs-lookup"><span data-stu-id="6f191-109">onClickTelemetryUrl</span></span> | <span data-ttu-id="6f191-110">String</span><span class="sxs-lookup"><span data-stu-id="6f191-110">String</span></span> | <span data-ttu-id="6f191-p101">Dirección URL de devolución de llamada que se puede usar para registrar información de telemetría. La aplicación debe emitir un GET en esta dirección URL si el usuario interactúa con este elemento para mejorar la calidad de los resultados.</span><span class="sxs-lookup"><span data-stu-id="6f191-p101">A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.</span></span>
 
-## <a name="remarks"></a>Comentarios 
+## <a name="remarks"></a><span data-ttu-id="6f191-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="6f191-113">Remarks</span></span> 
 
-Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
+<span data-ttu-id="6f191-114">Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="6f191-114">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchResult resource",
-  "keywords": "",
+  "description": "The search result facet indicates an item is from a search.",
+  "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SearchResult"
+} -->

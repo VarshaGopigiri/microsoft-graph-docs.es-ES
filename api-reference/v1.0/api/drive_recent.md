@@ -1,39 +1,47 @@
-# <a name="list-recent-files"></a><span data-ttu-id="ecea7-101">Enumerar archivos recientes</span><span class="sxs-lookup"><span data-stu-id="ecea7-101">List recent files</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Enumerar archivos recientes
+ms.openlocfilehash: fd1b25a41369d354d18167f17b3c35e9d40bf3f4
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/28/2017
+---
+# <a name="list-recent-files"></a><span data-ttu-id="f7092-102">Enumerar archivos recientes</span><span class="sxs-lookup"><span data-stu-id="f7092-102">List recent files</span></span>
 
-<span data-ttu-id="ecea7-p101">Enumere un conjunto de elementos que ha usado recientemente el usuario que ha iniciado sesión. Esta colección incluye elementos que están en la unidad del usuario, así como elementos de otras unidades a los que tiene acceso.</span><span class="sxs-lookup"><span data-stu-id="ecea7-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="f7092-p101">Enumere un conjunto de elementos que ha usado recientemente el usuario que ha iniciado sesión. Esta colección incluye elementos que están en la unidad del usuario, así como elementos de otras unidades a los que tiene acceso.</span><span class="sxs-lookup"><span data-stu-id="f7092-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ecea7-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="ecea7-104">Permissions</span></span>
-<span data-ttu-id="ecea7-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="ecea7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7092-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="f7092-105">Permissions</span></span>
 
-|<span data-ttu-id="ecea7-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="ecea7-107">Permission type</span></span>      | <span data-ttu-id="ecea7-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="ecea7-108">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="f7092-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="f7092-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="f7092-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="f7092-108">Permission type</span></span>      | <span data-ttu-id="f7092-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="f7092-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ecea7-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ecea7-109">Delegated (work or school account)</span></span> | <span data-ttu-id="ecea7-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ecea7-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ecea7-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ecea7-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecea7-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ecea7-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ecea7-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ecea7-113">Application</span></span> | <span data-ttu-id="ecea7-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ecea7-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="f7092-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="f7092-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f7092-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7092-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f7092-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f7092-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7092-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7092-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f7092-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="f7092-114">Application</span></span> | <span data-ttu-id="f7092-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7092-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ecea7-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ecea7-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7092-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="f7092-116">HTTP request</span></span>
 
-<!-- { "blockType": "ignored" } -->
-```
+<!-- { "blockType": "request",
+       "name": "view-recent-files", 
+       "scopes": "files.read",
+       "target": "action" } -->
+
+```http
 GET /me/drive/recent
 ```
 
-## <a name="request-body"></a><span data-ttu-id="ecea7-116">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="ecea7-116">Request body</span></span>
-<span data-ttu-id="ecea7-117">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="ecea7-117">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="f7092-117">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f7092-117">Response</span></span>
 
-## <a name="example"></a><span data-ttu-id="ecea7-118">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ecea7-118">Example</span></span>
+<span data-ttu-id="f7092-118">Este método devuelve una colección de recursos [DriveItem](../resources/driveitem.md) para los elementos a los que ha obtenido acceso recientemente el propietario de la unidad.</span><span class="sxs-lookup"><span data-stu-id="f7092-118">This returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed. Items outside of the user's drive will include the RemoteItem facet, which provides information to access the shared item.</span></span>
 
-<!-- { "blockType": "request", "name": "drive-recent", "scopes": "files.read" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive/recent
-```
+<!-- { "blockType": "response",
+       "@odata.type": "Collection(microsoft.graph.driveItem)",
+       "truncated": true} -->
 
-## <a name="response"></a><span data-ttu-id="ecea7-119">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ecea7-119">Response</span></span>
-
-<span data-ttu-id="ecea7-p103">Devuelve una colección de recursos [DriveItem](../resources/driveitem.md) para los elementos a los que ha accedido recientemente el propietario de la unidad. Los elementos fuera de la unidad del usuario incluirán la faceta [RemoteItem](../resources/remoteitem.md), que ofrece información para acceder al elemento compartido.</span><span class="sxs-lookup"><span data-stu-id="ecea7-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed. Items outside of the user's drive will include the [RemoteItem](../resources/remoteitem.md) facet, which provides information to access the shared item.</span></span>
-
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -52,6 +60,9 @@ Content-Type: application/json
           "driveId": "1991210caf",
           "id": "1991210caf!104"
         }
+      },
+      "fileSystemInfo": {
+        "lastAccessedDateTime": "2017-02-20T19:13:00Z"
       }
     },
     {
@@ -62,25 +73,29 @@ Content-Type: application/json
       "parentReference": {
         "driveId": "1312def",
         "id": "1312def!123"
+      },
+      "fileSystemInfo": {
+        "lastAccessedDateTime": "2017-02-20T16:43:21Z"
       }
     }
   ]
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="ecea7-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ecea7-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f7092-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="f7092-119">Remarks</span></span>
 
-<span data-ttu-id="ecea7-p104">Algunos recursos driveItem devueltos de la acción **recent** incluirán la faceta **remoteItem**, que indica que son elementos de otra unidad. Para acceder al objeto driveItem original, deberá realizar una solicitud con la información proporcionada en **remoteItem** en el siguiente formato:</span><span class="sxs-lookup"><span data-stu-id="ecea7-p104">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="f7092-p103">Algunos recursos driveItem devueltos de la acción **recent** incluirán la faceta **remoteItem**, que indica que son elementos de otra unidad. Para acceder al objeto driveItem original, deberá realizar una solicitud con la información proporcionada en **remoteItem** en el siguiente formato:</span><span class="sxs-lookup"><span data-stu-id="f7092-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
-<!-- {"blockType": "ignored"} -->
+<!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
+
 ```http
-GET https://graph.microsoft.com/v1.0/drives/{remoteItem.driveId}/items/{remoteItem.id}
+GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Retrieve a list of files shared with the signed-in user.",
-  "keywords": "sharedWithMe onedrive shared files",
+  "description": "Retrieve a list of recently used files for the owner of the drive.",
+  "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Shared with me"
+  "tocPath": "Drives/Recent files"
 } -->

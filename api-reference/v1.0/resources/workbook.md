@@ -1,35 +1,44 @@
-# <a name="workbook-resource-type"></a>Tipo de recurso Workbook
+# <a name="workbook-resource-type"></a><span data-ttu-id="1f14a-101">Tipo de recurso Workbook</span><span class="sxs-lookup"><span data-stu-id="1f14a-101">Workbook resource type</span></span>
 
-Workbook es el objeto de nivel superior que contiene los objetos de libro relacionados, como hojas de cálculo, tablas, intervalos, etc.
+<span data-ttu-id="1f14a-102">Workbook es el objeto de nivel superior que contiene los objetos de libro relacionados, como hojas de cálculo, tablas, intervalos, etc.</span><span class="sxs-lookup"><span data-stu-id="1f14a-102">Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.</span></span>
 
-## <a name="properties"></a>Propiedades
-Ninguno
+## <a name="properties"></a><span data-ttu-id="1f14a-103">Propiedades</span><span class="sxs-lookup"><span data-stu-id="1f14a-103">Properties</span></span>
+<span data-ttu-id="1f14a-104">Ninguno</span><span class="sxs-lookup"><span data-stu-id="1f14a-104">None</span></span>
 
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+## <a name="methods"></a><span data-ttu-id="1f14a-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="1f14a-105">Methods</span></span>
+
+| <span data-ttu-id="1f14a-106">Método</span><span class="sxs-lookup"><span data-stu-id="1f14a-106">Method</span></span>       | <span data-ttu-id="1f14a-107">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="1f14a-107">Return Type</span></span>  |<span data-ttu-id="1f14a-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="1f14a-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|names|Colección [NamedItem](nameditem.md)|Representa una colección de elementos con nombre en el ámbito del libro (intervalos y constantes con nombre). Solo lectura.|
-|tables|Colección [Table](table.md)|Representa una colección de tablas asociadas con el libro. Solo lectura.|
-|worksheets|Colección [Worksheet](worksheet.md)|Representa una colección de hojas de cálculo asociadas con el libro. Solo lectura.|
+|[<span data-ttu-id="1f14a-109">Crear una sesión</span><span class="sxs-lookup"><span data-stu-id="1f14a-109">Create Upload Session</span></span>](../api/workbook_createsession.md) | [<span data-ttu-id="1f14a-110">workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="1f14a-110">workbookSessionInfo</span></span>](workbooksessioninfo.md) |<span data-ttu-id="1f14a-111">Crear una sesión de libro para iniciar una sesión persistente o no persistente.</span><span class="sxs-lookup"><span data-stu-id="1f14a-111">Create a workbook session to start a persistent or non-persistent session.</span></span>|
+|[<span data-ttu-id="1f14a-112">Cerrar sesión</span><span class="sxs-lookup"><span data-stu-id="1f14a-112">Close Session</span></span>](../api/workbook_closesession.md) | <span data-ttu-id="1f14a-113">Ninguno</span><span class="sxs-lookup"><span data-stu-id="1f14a-113">None</span></span> |<span data-ttu-id="1f14a-114">Cerrar una sesión existente.</span><span class="sxs-lookup"><span data-stu-id="1f14a-114">Close an existing session.</span></span>|
+|[<span data-ttu-id="1f14a-115">Actualizar sesión</span><span class="sxs-lookup"><span data-stu-id="1f14a-115">Refresh Session</span></span>](../api/workbook_refreshsession.md) | <span data-ttu-id="1f14a-116">Ninguno</span><span class="sxs-lookup"><span data-stu-id="1f14a-116">None</span></span> |<span data-ttu-id="1f14a-117">Actualizar una sesión existente.</span><span class="sxs-lookup"><span data-stu-id="1f14a-117">Refresh an existing session.</span></span>|
 
-## <a name="functions"></a>Funciones
 
-[Funciones de Excel](#functions): Para invocar una función de libro, use la sintaxis `POST /workbook/functions/{function-name}` y proporcione los argumentos de la función en el cuerpo mediante un objeto JSON. Las cadenas `value` y `error` resultantes de la función se devuelven en el objeto de resultado de la función. El valor `error` de `null` indica que la función se ha ejecutado correctamente. 
+## <a name="relationships"></a><span data-ttu-id="1f14a-118">Relaciones</span><span class="sxs-lookup"><span data-stu-id="1f14a-118">Relationships</span></span>
+| <span data-ttu-id="1f14a-119">Relación</span><span class="sxs-lookup"><span data-stu-id="1f14a-119">Relationship</span></span> | <span data-ttu-id="1f14a-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="1f14a-120">Type</span></span>   |<span data-ttu-id="1f14a-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="1f14a-121">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="1f14a-122">names</span><span class="sxs-lookup"><span data-stu-id="1f14a-122">names</span></span>|<span data-ttu-id="1f14a-123">Colección [NamedItem](nameditem.md)</span><span class="sxs-lookup"><span data-stu-id="1f14a-123">[NamedItem](nameditem.md) collection</span></span>|<span data-ttu-id="1f14a-p101">Representa una colección de elementos con nombre en el ámbito del libro (intervalos y constantes con nombre). Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="1f14a-p101">Represents a collection of workbook scoped named items (named ranges and constants). Read-only.</span></span>|
+|<span data-ttu-id="1f14a-126">tables</span><span class="sxs-lookup"><span data-stu-id="1f14a-126">tables</span></span>|<span data-ttu-id="1f14a-127">Colección [Table](table.md)</span><span class="sxs-lookup"><span data-stu-id="1f14a-127">[Table](table.md) collection</span></span>|<span data-ttu-id="1f14a-p102">Representa una colección de tablas asociadas con el libro. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="1f14a-p102">Represents a collection of tables associated with the workbook. Read-only.</span></span>|
+|<span data-ttu-id="1f14a-130">worksheets</span><span class="sxs-lookup"><span data-stu-id="1f14a-130">worksheets</span></span>|<span data-ttu-id="1f14a-131">Colección [Worksheet](worksheet.md)</span><span class="sxs-lookup"><span data-stu-id="1f14a-131">[Worksheet](worksheet.md) collection</span></span>|<span data-ttu-id="1f14a-p103">Representa una colección de hojas de cálculo asociadas con el libro. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="1f14a-p103">Represents a collection of worksheets associated with the workbook. Read-only.</span></span>|
 
-La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.
+## <a name="functions"></a><span data-ttu-id="1f14a-134">Funciones</span><span class="sxs-lookup"><span data-stu-id="1f14a-134">Functions</span></span>
 
-_Notas importantes:_ 
-* El parámetro de entrada de intervalo se suministra mediante un objeto range en lugar de la cadena de dirección de intervalo.  
-* El parámetro de índice es 1 indexado, a diferencia del índice 0 usado en la mayoría de las API. 
+<span data-ttu-id="1f14a-135">[Funciones de Excel](#functions): Para invocar una función de libro, use la sintaxis `POST /workbook/functions/{function-name}` y proporcione los argumentos de la función en el cuerpo mediante un objeto JSON.</span><span class="sxs-lookup"><span data-stu-id="1f14a-135">[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting  and any  strings are returned in the function result object. The  value of  indicates successful execution of the function.</span></span> <span data-ttu-id="1f14a-136">Las cadenas `value` y `error` resultantes de la función se devuelven en el objeto de resultado de la función.</span><span class="sxs-lookup"><span data-stu-id="1f14a-136">The function's resulting `value` and any `error` strings are returned in the function result object.</span></span> <span data-ttu-id="1f14a-137">El valor `error` de `null` indica que la función se ha ejecutado correctamente.</span><span class="sxs-lookup"><span data-stu-id="1f14a-137">The `error` value of `null` indicates successful execution of the function.</span></span> 
 
-Ejemplo: 
+<span data-ttu-id="1f14a-138">La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188).</span><span class="sxs-lookup"><span data-stu-id="1f14a-138">The complete list of supported functions are listed here. Refer to the function signature for specific parameter names and data types.</span></span> <span data-ttu-id="1f14a-139">Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.</span><span class="sxs-lookup"><span data-stu-id="1f14a-139">The complete list of supported functions are listed here. Refer to the function signature for specific parameter names and data types.</span></span>
 
-En el ejemplo siguiente, para llamar a la función `vlookup`, se pasan el valor de búsqueda, el rango de entrada y el valor que se devolverá. 
+<span data-ttu-id="1f14a-140">_Notas importantes:_</span><span class="sxs-lookup"><span data-stu-id="1f14a-140">_Important notes:_</span></span> 
+* <span data-ttu-id="1f14a-141">El parámetro de entrada de intervalo se suministra mediante un objeto range en lugar de la cadena de dirección de intervalo.</span><span class="sxs-lookup"><span data-stu-id="1f14a-141">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
+* <span data-ttu-id="1f14a-142">El parámetro de índice es 1 indexado, a diferencia del índice 0 usado en la mayoría de las API.</span><span class="sxs-lookup"><span data-stu-id="1f14a-142">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span> 
 
-Solicitud: 
+<span data-ttu-id="1f14a-143">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="1f14a-143">Example:</span></span> 
+
+<span data-ttu-id="1f14a-144">En el ejemplo siguiente, para llamar a la función `vlookup`, se pasan el valor de búsqueda, el rango de entrada y el valor que se devolverá.</span><span class="sxs-lookup"><span data-stu-id="1f14a-144">In the below example, `vlookup` function is called by passing lookup value, input range and the value to be returned.</span></span> 
+
+<span data-ttu-id="1f14a-145">Solicitud:</span><span class="sxs-lookup"><span data-stu-id="1f14a-145">Request:</span></span> 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -42,14 +51,14 @@ workbook-session-id: {session-id}
 }
 ```
 
-Respuesta:
+<span data-ttu-id="1f14a-146">Respuesta:</span><span class="sxs-lookup"><span data-stu-id="1f14a-146">Response:</span></span>
 
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadata 
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
     "@odata.type": "#microsoft.graph.workbookFunctionResult",
     "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/vlookup()",
     "error": null,
@@ -57,14 +66,14 @@ content-type: application/json;odata.metadata
 }
 ```
 
-Ejemplo: 
+<span data-ttu-id="1f14a-147">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="1f14a-147">Example:</span></span> 
 
-En el ejemplo siguiente, para llamar a la función `median`, se pasan los intervalos de entrada en una matriz. 
+<span data-ttu-id="1f14a-148">En el ejemplo siguiente, para llamar a la función `median`, se pasan los intervalos de entrada en una matriz.</span><span class="sxs-lookup"><span data-stu-id="1f14a-148">In the below example, `median` function is called by passing the input range(s) in an array.</span></span> 
 
-Solicitud: 
+<span data-ttu-id="1f14a-149">Solicitud:</span><span class="sxs-lookup"><span data-stu-id="1f14a-149">Request:</span></span> 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/median
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -77,14 +86,14 @@ workbook-session-id: {session-id}
 }
 ```
 
-Respuesta:
+<span data-ttu-id="1f14a-150">Respuesta:</span><span class="sxs-lookup"><span data-stu-id="1f14a-150">Response:</span></span>
 
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
   "@odata.type": "#microsoft.graph.workbookFunctionResult",
   "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
   "error": null,

@@ -1,35 +1,66 @@
-# <a name="get-event"></a><span data-ttu-id="a532d-101">Obtener evento</span><span class="sxs-lookup"><span data-stu-id="a532d-101">Get event</span></span>
+# <a name="get-event"></a><span data-ttu-id="8319a-101">Obtener evento</span><span class="sxs-lookup"><span data-stu-id="8319a-101">Get event</span></span>
 
-<span data-ttu-id="a532d-102">Obtenga las propiedades y relaciones del objeto [event](../resources/event.md) especificado.</span><span class="sxs-lookup"><span data-stu-id="a532d-102">Get the properties and relationships of the specified [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="8319a-102">Obtenga las propiedades y relaciones del objeto [event](../resources/event.md) especificado.</span><span class="sxs-lookup"><span data-stu-id="8319a-102">Get the properties and relationships of the specified [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="a532d-103">Actualmente, esta operación devuelve los cuerpos de los eventos solo en formato HTML.</span><span class="sxs-lookup"><span data-stu-id="a532d-103">Currently, this operation returns event bodies in only HTML format.</span></span>
+<span data-ttu-id="8319a-103">Actualmente, esta operación devuelve los cuerpos de los eventos solo en formato HTML.</span><span class="sxs-lookup"><span data-stu-id="8319a-103">Currently, this operation returns event bodies in only HTML format.</span></span>
 
-<span data-ttu-id="a532d-104">Dado que el recurso **event** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia **event**.</span><span class="sxs-lookup"><span data-stu-id="a532d-104">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.</span></span>
+<span data-ttu-id="8319a-104">Dado que el recurso **event** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia **event**.</span><span class="sxs-lookup"><span data-stu-id="8319a-104">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.</span></span>
 
-### <a name="support-various-time-zones"></a><span data-ttu-id="a532d-105">Compatibilidad con varias zonas horarias</span><span class="sxs-lookup"><span data-stu-id="a532d-105">Support various time zones</span></span>
 
-<span data-ttu-id="a532d-106">Para todas las operaciones GET que devuelven eventos, puede usar el encabezado `Prefer: outlook.timezone` para especificar la zona horaria de las horas de inicio y finalización del evento en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a532d-106">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
+### <a name="get-events-in-another-users-calendar"></a><span data-ttu-id="8319a-105">Obtener los eventos del calendario de otro usuario</span><span class="sxs-lookup"><span data-stu-id="8319a-105">Get events in another user's calendar</span></span>
 
-<span data-ttu-id="a532d-107">Por ejemplo, el siguiente encabezado `Prefer: outlook.timezone` establece las horas de inicio y finalización en la respuesta en la hora estándar del Este.</span><span class="sxs-lookup"><span data-stu-id="a532d-107">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
+<span data-ttu-id="8319a-106">Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener los eventos del calendario de otro usuario.</span><span class="sxs-lookup"><span data-stu-id="8319a-106">If you have application permissions, or if you have the appropriate delegated [permissions](#permissions) from one user, it's possible to get events from another user's calendar.</span></span> <span data-ttu-id="8319a-107">Esta sección se centra en escenarios que implican permisos delegados.</span><span class="sxs-lookup"><span data-stu-id="8319a-107">This section focuses on scenarios that involve delegated permissions.</span></span>
+
+<span data-ttu-id="8319a-108">Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John.</span><span class="sxs-lookup"><span data-stu-id="8319a-108">For example, your app has acquired delegated permissions from the user, John.</span></span> <span data-ttu-id="8319a-109">Suponga que otro usuario, Garth, ha compartido un calendario con John.</span><span class="sxs-lookup"><span data-stu-id="8319a-109">Suppose another user, Garth, has shared a calendar with John.</span></span> <span data-ttu-id="8319a-110">Puede obtener un evento de dicho calendario compartido especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.</span><span class="sxs-lookup"><span data-stu-id="8319a-110">You can get an event in that shared calendar by specifying Garth’s user ID (or user principal name) in the example query shown below.</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events/{id}
+```
+
+<span data-ttu-id="8319a-111">Esta capacidad se aplica a todas las operaciones de eventos GET compatibles para un usuario individual, como se muestra en la sección [solicitud HTTP](#http-request) a continuación.</span><span class="sxs-lookup"><span data-stu-id="8319a-111">This capability applies to all the supported GET events operations for an individual user, as listed in the [HTTP request](#http-request) section below .</span></span> <span data-ttu-id="8319a-112">También se aplica si Garth ha delegado todo el buzón en John.</span><span class="sxs-lookup"><span data-stu-id="8319a-112">It also applies if Garth has delegated his entire mailbox to John.</span></span>
+
+<span data-ttu-id="8319a-113">Si Garth no ha compartido su calendario con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error.</span><span class="sxs-lookup"><span data-stu-id="8319a-113">If Garth has not shared his calendar with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error.</span></span> <span data-ttu-id="8319a-114">En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener un evento de los calendarios del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:</span><span class="sxs-lookup"><span data-stu-id="8319a-114">In such cases, specifying a user ID or user principal name only works for getting an event in the signed-in user’s own calendars, and the query is equivalent to using the /me shortcut:</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events/{id}
+```
+
+<span data-ttu-id="8319a-115">Esta capacidad solo está disponible en las operaciones GET de:</span><span class="sxs-lookup"><span data-stu-id="8319a-115">This capability is available in only GET operations of:</span></span>
+
+- <span data-ttu-id="8319a-116">Carpetas de contactos compartidas</span><span class="sxs-lookup"><span data-stu-id="8319a-116">Shared contact folders</span></span>
+- <span data-ttu-id="8319a-117">Calendarios compartidos</span><span class="sxs-lookup"><span data-stu-id="8319a-117">Shared calendars</span></span>
+- <span data-ttu-id="8319a-118">Contactos y eventos en carpetas compartidas</span><span class="sxs-lookup"><span data-stu-id="8319a-118">Contacts and events in shared folders</span></span>
+- <span data-ttu-id="8319a-119">Los recursos anteriores en buzones delegados</span><span class="sxs-lookup"><span data-stu-id="8319a-119">The above resources in delegated mailboxes</span></span>
+
+<span data-ttu-id="8319a-120">Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.</span><span class="sxs-lookup"><span data-stu-id="8319a-120">This capability is not available in other operations for contacts, events, and their folders.</span></span>
+
+
+### <a name="support-various-time-zones"></a><span data-ttu-id="8319a-121">Compatibilidad con varias zonas horarias</span><span class="sxs-lookup"><span data-stu-id="8319a-121">Support various time zones</span></span>
+
+<span data-ttu-id="8319a-122">Para todas las operaciones GET que devuelven eventos, puede usar el encabezado `Prefer: outlook.timezone` para especificar la zona horaria de las horas de inicio y finalización del evento en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8319a-122">For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response.</span></span> 
+
+<span data-ttu-id="8319a-123">Por ejemplo, el siguiente encabezado `Prefer: outlook.timezone` establece las horas de inicio y finalización en la respuesta en la hora estándar del Este.</span><span class="sxs-lookup"><span data-stu-id="8319a-123">For example, the following `Prefer: outlook.timezone` header sets the start and end times in the response to Eastern Standard Time.</span></span>
 ```http
 Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
-<span data-ttu-id="a532d-p101">Si el evento se ha creado en una zona horaria diferente, las horas de inicio y finalización se ajustarán a la zona horaria especificada en ese encabezado `Prefer`. Consulte esta [lista](../resources/datetimetimezone.md) para ver los nombres de zona horaria admitidos. Si no se especifica el encabezado `Prefer: outlook.timezone`, se devuelven las horas de inicio y finalización en hora UTC.</span><span class="sxs-lookup"><span data-stu-id="a532d-p101">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
+<span data-ttu-id="8319a-p105">Si el evento se ha creado en una zona horaria diferente, las horas de inicio y finalización se ajustarán a la zona horaria especificada en ese encabezado `Prefer`. Consulte esta [lista](../resources/datetimetimezone.md) para ver los nombres de zona horaria admitidos. Si no se especifica el encabezado `Prefer: outlook.timezone`, se devuelven las horas de inicio y finalización en hora UTC.</span><span class="sxs-lookup"><span data-stu-id="8319a-p105">If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header. See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.</span></span>
 
-<span data-ttu-id="a532d-111">Puede usar las propiedades **OriginalStartTimeZone** y **OriginalEndTimeZone** del recurso **event** para averiguar la zona horaria usada al crear el evento.</span><span class="sxs-lookup"><span data-stu-id="a532d-111">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
+<span data-ttu-id="8319a-127">Puede usar las propiedades **OriginalStartTimeZone** y **OriginalEndTimeZone** del recurso **event** para averiguar la zona horaria usada al crear el evento.</span><span class="sxs-lookup"><span data-stu-id="8319a-127">You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to find out the time zone used when the event was created.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="a532d-112">Permisos</span><span class="sxs-lookup"><span data-stu-id="a532d-112">Permissions</span></span>
-<span data-ttu-id="a532d-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="a532d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8319a-128">Permisos</span><span class="sxs-lookup"><span data-stu-id="8319a-128">Permissions</span></span>
+<span data-ttu-id="8319a-p106">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="8319a-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="a532d-115">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="a532d-115">Permission type</span></span>      | <span data-ttu-id="a532d-116">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="a532d-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8319a-131">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="8319a-131">Permission type</span></span>      | <span data-ttu-id="8319a-132">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="8319a-132">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a532d-117">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="a532d-117">Delegated (work or school account)</span></span> | <span data-ttu-id="a532d-118">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="a532d-118">Calendars.Read</span></span>    |
-|<span data-ttu-id="a532d-119">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a532d-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a532d-120">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="a532d-120">Calendars.Read</span></span>    |
-|<span data-ttu-id="a532d-121">Aplicación</span><span class="sxs-lookup"><span data-stu-id="a532d-121">Application</span></span> | <span data-ttu-id="a532d-122">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="a532d-122">Calendars.Read</span></span> |
+|<span data-ttu-id="8319a-133">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="8319a-133">Delegated (work or school account)</span></span> | <span data-ttu-id="8319a-134">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8319a-134">Calendars.Read</span></span>    |
+|<span data-ttu-id="8319a-135">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8319a-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8319a-136">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8319a-136">Calendars.Read</span></span>    |
+|<span data-ttu-id="8319a-137">Aplicación</span><span class="sxs-lookup"><span data-stu-id="8319a-137">Application</span></span> | <span data-ttu-id="8319a-138">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8319a-138">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a532d-123">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="a532d-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8319a-139">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="8319a-139">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}
@@ -49,26 +80,26 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a532d-124">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="a532d-124">Optional query parameters</span></span>
-<span data-ttu-id="a532d-125">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a532d-125">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="a532d-126">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="a532d-126">Request headers</span></span>
-| <span data-ttu-id="a532d-127">Nombre</span><span class="sxs-lookup"><span data-stu-id="a532d-127">Name</span></span>       | <span data-ttu-id="a532d-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="a532d-128">Type</span></span> | <span data-ttu-id="a532d-129">Descripción</span><span class="sxs-lookup"><span data-stu-id="a532d-129">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="8319a-140">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="8319a-140">Optional query parameters</span></span>
+<span data-ttu-id="8319a-141">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8319a-141">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8319a-142">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="8319a-142">Request headers</span></span>
+| <span data-ttu-id="8319a-143">Nombre</span><span class="sxs-lookup"><span data-stu-id="8319a-143">Name</span></span>       | <span data-ttu-id="8319a-144">Tipo</span><span class="sxs-lookup"><span data-stu-id="8319a-144">Type</span></span> | <span data-ttu-id="8319a-145">Descripción</span><span class="sxs-lookup"><span data-stu-id="8319a-145">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a532d-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="a532d-130">Authorization</span></span>  | <span data-ttu-id="a532d-131">string</span><span class="sxs-lookup"><span data-stu-id="a532d-131">string</span></span>  | <span data-ttu-id="a532d-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="a532d-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a532d-134">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="a532d-134">Prefer: outlook.timezone</span></span> | <span data-ttu-id="a532d-135">string</span><span class="sxs-lookup"><span data-stu-id="a532d-135">string</span></span> | <span data-ttu-id="a532d-136">La zona horaria predeterminada para eventos en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a532d-136">The default time zone for events in the response.</span></span> |
+| <span data-ttu-id="8319a-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="8319a-146">Authorization</span></span>  | <span data-ttu-id="8319a-147">string</span><span class="sxs-lookup"><span data-stu-id="8319a-147">string</span></span>  | <span data-ttu-id="8319a-p107">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="8319a-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8319a-150">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="8319a-150">Prefer: outlook.timezone</span></span> | <span data-ttu-id="8319a-151">string</span><span class="sxs-lookup"><span data-stu-id="8319a-151">string</span></span> | <span data-ttu-id="8319a-152">La zona horaria predeterminada para eventos en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8319a-152">The default time zone for events in the response.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a532d-137">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="a532d-137">Request body</span></span>
-<span data-ttu-id="a532d-138">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="a532d-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8319a-153">Cuerpo de solicitud</span><span class="sxs-lookup"><span data-stu-id="8319a-153">Request body</span></span>
+<span data-ttu-id="8319a-154">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="8319a-154">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a532d-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a532d-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8319a-155">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8319a-155">Response</span></span>
 
-<span data-ttu-id="a532d-140">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [event](../resources/event.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a532d-140">If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a532d-141">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a532d-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a532d-142">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a532d-142">Request</span></span>
-<span data-ttu-id="a532d-p104">El primer ejemplo obtiene el evento especificado. Especifica lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="a532d-p104">The first example gets the specified event. It specifies the following:</span></span>
+<span data-ttu-id="8319a-156">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [event](../resources/event.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8319a-156">If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8319a-157">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8319a-157">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8319a-158">Solicitud</span><span class="sxs-lookup"><span data-stu-id="8319a-158">Request</span></span>
+<span data-ttu-id="8319a-p108">El primer ejemplo obtiene el evento especificado. Especifica lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="8319a-p108">The first example gets the specified event. It specifies the following:</span></span>
 
-- <span data-ttu-id="a532d-145">Un encabezado `Prefer: outlook.timezone` para obtener valores de fecha y hora devueltos en la hora estándar del Pacífico.</span><span class="sxs-lookup"><span data-stu-id="a532d-145">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
-- <span data-ttu-id="a532d-p105">Un parámetro de consulta `$select` para devolver propiedades específicas. Sin ningún parámetro `$select`, se devolverán todas las propiedades de evento.</span><span class="sxs-lookup"><span data-stu-id="a532d-p105">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
+- <span data-ttu-id="8319a-161">Un encabezado `Prefer: outlook.timezone` para obtener valores de fecha y hora devueltos en la hora estándar del Pacífico.</span><span class="sxs-lookup"><span data-stu-id="8319a-161">A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.</span></span> 
+- <span data-ttu-id="8319a-p109">Un parámetro de consulta `$select` para devolver propiedades específicas. Sin ningún parámetro `$select`, se devolverán todas las propiedades de evento.</span><span class="sxs-lookup"><span data-stu-id="8319a-p109">A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -80,9 +111,9 @@ GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=su
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### <a name="response"></a><span data-ttu-id="a532d-148">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a532d-148">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8319a-164">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8319a-164">Response</span></span>
 
-<span data-ttu-id="a532d-p106">Aquí tiene un ejemplo de la respuesta. Se devuelve la propiedad **body** en el formato predeterminado de HTML.</span><span class="sxs-lookup"><span data-stu-id="a532d-p106">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
+<span data-ttu-id="8319a-p110">Aquí tiene un ejemplo de la respuesta. Se devuelve la propiedad **body** en el formato predeterminado de HTML.</span><span class="sxs-lookup"><span data-stu-id="8319a-p110">Here is an example of the response. The **body** property is returned in the default format of HTML.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -150,10 +181,10 @@ Content-length: 1928
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a532d-151">Consulte también</span><span class="sxs-lookup"><span data-stu-id="a532d-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8319a-167">Vea también</span><span class="sxs-lookup"><span data-stu-id="8319a-167">See also</span></span>
 
-- [<span data-ttu-id="a532d-152">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="a532d-152">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="a532d-153">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="a532d-153">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="8319a-168">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="8319a-168">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="8319a-169">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="8319a-169">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->
