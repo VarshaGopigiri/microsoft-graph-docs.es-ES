@@ -1,37 +1,37 @@
-# <a name="create-rejectedsender"></a><span data-ttu-id="1f795-101">Create rejectedSender</span><span class="sxs-lookup"><span data-stu-id="1f795-101">Create rejectedSender</span></span>
+# <a name="create-rejectedsender"></a><span data-ttu-id="9ec61-101">Create rejectedSender</span><span class="sxs-lookup"><span data-stu-id="9ec61-101">Create rejectedSender</span></span>
 
-<span data-ttu-id="1f795-102">Agrega un nuevo usuario o grupo a la lista de rejectedSender.</span><span class="sxs-lookup"><span data-stu-id="1f795-102">Add a new user or group to the rejectedSender list.</span></span>
+<span data-ttu-id="9ec61-102">Agrega un nuevo usuario o grupo a la lista de rejectedSender.</span><span class="sxs-lookup"><span data-stu-id="9ec61-102">Add a new user or group to the rejectedSender list.</span></span>
 
-<span data-ttu-id="1f795-p101">En el cuerpo de la solicitud, especifique el usuario o grupo en `@odata.id`. Los usuarios de la lista de remitentes rechazados no pueden publicar conversaciones del grupo (identificado en la dirección URL de solicitud POST). Asegúrese de no especificar el mismo usuario o grupo en las listas de remitentes rechazados y de remitentes aceptados, de lo contrario se producirá un error.</span><span class="sxs-lookup"><span data-stu-id="1f795-p101">Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1f795-106">Permisos</span><span class="sxs-lookup"><span data-stu-id="1f795-106">Permissions</span></span>
-<span data-ttu-id="1f795-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="1f795-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="9ec61-p101">En el cuerpo de la solicitud, especifique el usuario o grupo en `@odata.id`. Los usuarios de la lista de remitentes rechazados no pueden publicar conversaciones del grupo (identificado en la dirección URL de solicitud POST). Asegúrese de no especificar el mismo usuario o grupo en las listas de remitentes rechazados y de remitentes aceptados, de lo contrario se producirá un error.</span><span class="sxs-lookup"><span data-stu-id="9ec61-p101">Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9ec61-106">Permisos</span><span class="sxs-lookup"><span data-stu-id="9ec61-106">Permissions</span></span>
+<span data-ttu-id="9ec61-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="9ec61-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="1f795-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="1f795-109">Permission type</span></span>      | <span data-ttu-id="1f795-110">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="1f795-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9ec61-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="9ec61-109">Permission type</span></span>      | <span data-ttu-id="9ec61-110">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="9ec61-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1f795-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="1f795-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1f795-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f795-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1f795-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1f795-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f795-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="1f795-114">Not supported.</span></span>    |
-|<span data-ttu-id="1f795-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="1f795-115">Application</span></span> | <span data-ttu-id="1f795-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f795-116">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="9ec61-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="9ec61-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9ec61-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ec61-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9ec61-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9ec61-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ec61-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9ec61-114">Not supported.</span></span>    |
+|<span data-ttu-id="9ec61-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="9ec61-115">Application</span></span> | <span data-ttu-id="9ec61-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ec61-116">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1f795-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="1f795-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9ec61-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9ec61-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/rejectedSenders/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="1f795-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="1f795-118">Request headers</span></span>
-| <span data-ttu-id="1f795-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="1f795-119">Header</span></span>       | <span data-ttu-id="1f795-120">Valor</span><span class="sxs-lookup"><span data-stu-id="1f795-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="9ec61-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9ec61-118">Request headers</span></span>
+| <span data-ttu-id="9ec61-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="9ec61-119">Header</span></span>       | <span data-ttu-id="9ec61-120">Valor</span><span class="sxs-lookup"><span data-stu-id="9ec61-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1f795-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1f795-121">Authorization</span></span>  | <span data-ttu-id="1f795-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="1f795-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9ec61-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9ec61-121">Authorization</span></span>  | <span data-ttu-id="9ec61-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9ec61-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1f795-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="1f795-124">Request body</span></span>
-<span data-ttu-id="1f795-125">En el cuerpo de la solicitud, proporcione el identificador de un objeto de usuario o grupo.</span><span class="sxs-lookup"><span data-stu-id="1f795-125">In the request body, supply the id of a user or group object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9ec61-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9ec61-124">Request body</span></span>
+<span data-ttu-id="9ec61-125">En el cuerpo de la solicitud, proporcione el identificador de un objeto de usuario o grupo.</span><span class="sxs-lookup"><span data-stu-id="9ec61-125">In the request body, supply the id of a user or group object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1f795-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1f795-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9ec61-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9ec61-126">Response</span></span>
 
-<span data-ttu-id="1f795-127">Este método devuelve el código de respuesta `204, No Content` y ningún cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1f795-127">This method returns `204, No Content` response code and no response body.</span></span>
+<span data-ttu-id="9ec61-127">Este método devuelve el código de respuesta `204 No Content` y ningún cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9ec61-127">This method returns `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f795-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="1f795-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1f795-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="1f795-129">Request</span></span>
-<span data-ttu-id="1f795-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="1f795-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9ec61-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9ec61-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9ec61-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9ec61-129">Request</span></span>
+<span data-ttu-id="9ec61-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9ec61-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -45,8 +45,8 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="1f795-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1f795-131">Response</span></span>
-<span data-ttu-id="1f795-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1f795-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="9ec61-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9ec61-131">Response</span></span>
+<span data-ttu-id="9ec61-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9ec61-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

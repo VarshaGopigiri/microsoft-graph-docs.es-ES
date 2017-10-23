@@ -1,39 +1,39 @@
-# <a name="create-plannerbucket"></a><span data-ttu-id="7bc2b-101">Crear plannerBucket</span><span class="sxs-lookup"><span data-stu-id="7bc2b-101">Create plannerBucket</span></span>
+# <a name="create-plannerbucket"></a><span data-ttu-id="9712d-101">Crear plannerBucket</span><span class="sxs-lookup"><span data-stu-id="9712d-101">Create plannerBucket</span></span>
 
-<span data-ttu-id="7bc2b-102">Use esta API para crear un objeto **plannerBucket**.</span><span class="sxs-lookup"><span data-stu-id="7bc2b-102">Use this API to create a new **plannerBucket**.</span></span>
+<span data-ttu-id="9712d-102">Use esta API para crear un objeto **plannerBucket**.</span><span class="sxs-lookup"><span data-stu-id="9712d-102">Use this API to create a new **plannerBucket**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7bc2b-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="7bc2b-103">Permissions</span></span>
-<span data-ttu-id="7bc2b-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="7bc2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9712d-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="9712d-103">Permissions</span></span>
+<span data-ttu-id="9712d-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="9712d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="7bc2b-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="7bc2b-106">Permission type</span></span>      | <span data-ttu-id="7bc2b-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="7bc2b-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9712d-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="9712d-106">Permission type</span></span>      | <span data-ttu-id="9712d-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="9712d-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7bc2b-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="7bc2b-108">Delegated (work or school account)</span></span> | <span data-ttu-id="7bc2b-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7bc2b-109">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7bc2b-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7bc2b-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7bc2b-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="7bc2b-111">Not supported.</span></span>    |
-|<span data-ttu-id="7bc2b-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="7bc2b-112">Application</span></span> | <span data-ttu-id="7bc2b-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="7bc2b-113">Not supported.</span></span> |
+|<span data-ttu-id="9712d-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="9712d-108">Delegated (work or school account)</span></span> | <span data-ttu-id="9712d-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9712d-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9712d-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9712d-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9712d-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9712d-111">Not supported.</span></span>    |
+|<span data-ttu-id="9712d-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="9712d-112">Application</span></span> | <span data-ttu-id="9712d-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9712d-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7bc2b-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="7bc2b-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9712d-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9712d-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/buckets
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="7bc2b-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="7bc2b-115">Request headers</span></span>
-| <span data-ttu-id="7bc2b-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="7bc2b-116">Name</span></span>       | <span data-ttu-id="7bc2b-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="7bc2b-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9712d-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9712d-115">Request headers</span></span>
+| <span data-ttu-id="9712d-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="9712d-116">Name</span></span>       | <span data-ttu-id="9712d-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="9712d-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7bc2b-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="7bc2b-118">Authorization</span></span>  | <span data-ttu-id="7bc2b-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="7bc2b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9712d-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="9712d-118">Authorization</span></span>  | <span data-ttu-id="9712d-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9712d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7bc2b-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="7bc2b-121">Request body</span></span>
-<span data-ttu-id="7bc2b-122">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerBucket](../resources/plannerbucket.md).</span><span class="sxs-lookup"><span data-stu-id="7bc2b-122">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9712d-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9712d-121">Request body</span></span>
+<span data-ttu-id="9712d-122">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerBucket](../resources/plannerbucket.md).</span><span class="sxs-lookup"><span data-stu-id="9712d-122">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7bc2b-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7bc2b-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9712d-123">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9712d-123">Response</span></span>
 
-<span data-ttu-id="7bc2b-124">Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [plannerBucket](../resources/plannerbucket.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7bc2b-124">If successful, this method returns `201, Created` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
+<span data-ttu-id="9712d-124">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [plannerBucket](../resources/plannerbucket.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9712d-124">If successful, this method returns `201 Created` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
 
-<span data-ttu-id="7bc2b-p103">Este método puede devolver cualquiera de los [códigos de estado HTTP](../../../concepts/errors.md). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 400, 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="7bc2b-p103">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="9712d-p103">Este método puede devolver cualquiera de los [códigos de estado HTTP](../../../concepts/errors.md). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 400, 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="9712d-p103">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="7bc2b-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7bc2b-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7bc2b-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="7bc2b-129">Request</span></span>
-<span data-ttu-id="7bc2b-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="7bc2b-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9712d-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9712d-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9712d-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9712d-129">Request</span></span>
+<span data-ttu-id="9712d-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9712d-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_plannerbucket_from_planner"
@@ -49,9 +49,9 @@ Content-length: 92
   "orderHint": " !"
 }
 ```
-<span data-ttu-id="7bc2b-131">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerBucket](../resources/plannerbucket.md).</span><span class="sxs-lookup"><span data-stu-id="7bc2b-131">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="7bc2b-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7bc2b-132">Response</span></span>
-<span data-ttu-id="7bc2b-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="7bc2b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="9712d-131">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerBucket](../resources/plannerbucket.md).</span><span class="sxs-lookup"><span data-stu-id="9712d-131">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="9712d-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9712d-132">Response</span></span>
+<span data-ttu-id="9712d-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="9712d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

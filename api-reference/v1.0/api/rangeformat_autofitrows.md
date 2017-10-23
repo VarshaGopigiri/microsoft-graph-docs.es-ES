@@ -1,16 +1,16 @@
-# <a name="rangeformat-autofitrows"></a><span data-ttu-id="e86dc-101">RangeFormat: autofitRows</span><span class="sxs-lookup"><span data-stu-id="e86dc-101">RangeFormat: autofitRows</span></span>
+# <a name="rangeformat-autofitrows"></a><span data-ttu-id="c3f9a-101">RangeFormat: autofitRows</span><span class="sxs-lookup"><span data-stu-id="c3f9a-101">RangeFormat: autofitRows</span></span>
 
-<span data-ttu-id="e86dc-102">Cambia el alto de las filas del rango actual para obtener el ajuste perfecto (según los datos actuales de las columnas).</span><span class="sxs-lookup"><span data-stu-id="e86dc-102">Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e86dc-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="e86dc-103">Permissions</span></span>
-<span data-ttu-id="e86dc-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="e86dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="c3f9a-102">Cambia el alto de las filas del rango actual para obtener el ajuste perfecto (según los datos actuales de las columnas).</span><span class="sxs-lookup"><span data-stu-id="c3f9a-102">Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c3f9a-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="c3f9a-103">Permissions</span></span>
+<span data-ttu-id="c3f9a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c3f9a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="e86dc-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="e86dc-106">Permission type</span></span>      | <span data-ttu-id="e86dc-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="e86dc-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c3f9a-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="c3f9a-106">Permission type</span></span>      | <span data-ttu-id="c3f9a-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="c3f9a-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e86dc-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="e86dc-108">Delegated (work or school account)</span></span> | <span data-ttu-id="e86dc-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e86dc-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e86dc-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e86dc-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e86dc-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="e86dc-111">Not supported.</span></span>    |
-|<span data-ttu-id="e86dc-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="e86dc-112">Application</span></span> | <span data-ttu-id="e86dc-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="e86dc-113">Not supported.</span></span> |
+|<span data-ttu-id="c3f9a-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="c3f9a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="c3f9a-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c3f9a-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c3f9a-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c3f9a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3f9a-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="c3f9a-111">Not supported.</span></span>    |
+|<span data-ttu-id="c3f9a-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="c3f9a-112">Application</span></span> | <span data-ttu-id="c3f9a-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="c3f9a-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e86dc-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="e86dc-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c3f9a-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="c3f9a-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/autofitRows
@@ -18,21 +18,21 @@ POST /workbook/worksheets/{id|name}/range(<address>)/format/autofitRows
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="e86dc-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="e86dc-115">Request headers</span></span>
-| <span data-ttu-id="e86dc-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="e86dc-116">Name</span></span>       | <span data-ttu-id="e86dc-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="e86dc-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c3f9a-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="c3f9a-115">Request headers</span></span>
+| <span data-ttu-id="c3f9a-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="c3f9a-116">Name</span></span>       | <span data-ttu-id="c3f9a-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="c3f9a-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e86dc-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="e86dc-118">Authorization</span></span>  | <span data-ttu-id="e86dc-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="e86dc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c3f9a-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="c3f9a-118">Authorization</span></span>  | <span data-ttu-id="c3f9a-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c3f9a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e86dc-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="e86dc-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c3f9a-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="c3f9a-121">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="e86dc-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e86dc-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c3f9a-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c3f9a-122">Response</span></span>
 
-<span data-ttu-id="e86dc-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e86dc-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c3f9a-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c3f9a-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e86dc-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e86dc-125">Example</span></span>
-<span data-ttu-id="e86dc-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="e86dc-126">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="e86dc-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e86dc-127">Request</span></span>
-<span data-ttu-id="e86dc-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e86dc-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c3f9a-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c3f9a-125">Example</span></span>
+<span data-ttu-id="c3f9a-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="c3f9a-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c3f9a-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c3f9a-127">Request</span></span>
+<span data-ttu-id="c3f9a-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c3f9a-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangeformat_autofitrows"
@@ -41,8 +41,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitRows
 ```
 
-##### <a name="response"></a><span data-ttu-id="e86dc-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e86dc-129">Response</span></span>
-<span data-ttu-id="e86dc-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e86dc-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c3f9a-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c3f9a-129">Response</span></span>
+<span data-ttu-id="c3f9a-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c3f9a-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,37 +1,37 @@
-# <a name="tablesort-reapply"></a><span data-ttu-id="cd402-101">TableSort: reapply</span><span class="sxs-lookup"><span data-stu-id="cd402-101">TableSort: reapply</span></span>
+# <a name="tablesort-reapply"></a><span data-ttu-id="00c4b-101">TableSort: reapply</span><span class="sxs-lookup"><span data-stu-id="00c4b-101">TableSort: reapply</span></span>
 
-<span data-ttu-id="cd402-102">Vuelve a aplicar los parámetros de ordenación actuales a la tabla.</span><span class="sxs-lookup"><span data-stu-id="cd402-102">Reapplies the current sorting parameters to the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cd402-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="cd402-103">Permissions</span></span>
-<span data-ttu-id="cd402-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="cd402-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="00c4b-102">Vuelve a aplicar los parámetros de ordenación actuales a la tabla.</span><span class="sxs-lookup"><span data-stu-id="00c4b-102">Reapplies the current sorting parameters to the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="00c4b-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="00c4b-103">Permissions</span></span>
+<span data-ttu-id="00c4b-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="00c4b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="cd402-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="cd402-106">Permission type</span></span>      | <span data-ttu-id="cd402-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="cd402-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="00c4b-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="00c4b-106">Permission type</span></span>      | <span data-ttu-id="00c4b-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="00c4b-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cd402-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="cd402-108">Delegated (work or school account)</span></span> | <span data-ttu-id="cd402-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cd402-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="cd402-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cd402-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd402-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="cd402-111">Not supported.</span></span>    |
-|<span data-ttu-id="cd402-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="cd402-112">Application</span></span> | <span data-ttu-id="cd402-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="cd402-113">Not supported.</span></span> |
+|<span data-ttu-id="00c4b-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="00c4b-108">Delegated (work or school account)</span></span> | <span data-ttu-id="00c4b-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="00c4b-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="00c4b-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="00c4b-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00c4b-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="00c4b-111">Not supported.</span></span>    |
+|<span data-ttu-id="00c4b-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="00c4b-112">Application</span></span> | <span data-ttu-id="00c4b-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="00c4b-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cd402-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="cd402-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="00c4b-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="00c4b-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/sort/reapply
 POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="cd402-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="cd402-115">Request headers</span></span>
-| <span data-ttu-id="cd402-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="cd402-116">Name</span></span>       | <span data-ttu-id="cd402-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="cd402-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="00c4b-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="00c4b-115">Request headers</span></span>
+| <span data-ttu-id="00c4b-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="00c4b-116">Name</span></span>       | <span data-ttu-id="00c4b-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="00c4b-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="cd402-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="cd402-118">Authorization</span></span>  | <span data-ttu-id="cd402-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="cd402-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="00c4b-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="00c4b-118">Authorization</span></span>  | <span data-ttu-id="00c4b-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="00c4b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cd402-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="cd402-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="00c4b-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="00c4b-121">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="cd402-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="cd402-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="00c4b-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="00c4b-122">Response</span></span>
 
-<span data-ttu-id="cd402-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="cd402-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="00c4b-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="00c4b-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cd402-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="cd402-125">Example</span></span>
-<span data-ttu-id="cd402-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="cd402-126">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="cd402-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="cd402-127">Request</span></span>
-<span data-ttu-id="cd402-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="cd402-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="00c4b-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="00c4b-125">Example</span></span>
+<span data-ttu-id="00c4b-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="00c4b-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="00c4b-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="00c4b-127">Request</span></span>
+<span data-ttu-id="00c4b-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="00c4b-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablesort_reapply"
@@ -40,8 +40,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/reapply
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/reapply
 ```
 
-##### <a name="response"></a><span data-ttu-id="cd402-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="cd402-129">Response</span></span>
-<span data-ttu-id="cd402-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="cd402-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="00c4b-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="00c4b-129">Response</span></span>
+<span data-ttu-id="00c4b-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="00c4b-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
