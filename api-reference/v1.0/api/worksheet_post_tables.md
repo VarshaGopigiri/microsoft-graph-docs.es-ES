@@ -32,7 +32,7 @@ En el cuerpo de la solicitud, proporcione los parámetros siguientes.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

@@ -1,4 +1,4 @@
-# <a name="get-member-groups"></a>Get member groups
+# <a name="get-member-groups"></a>Obtener grupos de miembro
 
 Devuelve todos los grupos de los que el usuario, grupo u objeto de directorio que se especifique sea miembro. Esta función es transitiva.
 
@@ -34,7 +34,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto de colección String en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto de colección String en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 

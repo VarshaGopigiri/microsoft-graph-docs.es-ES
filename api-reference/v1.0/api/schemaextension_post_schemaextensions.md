@@ -43,7 +43,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear una exte
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `201, Created` y el objeto [schemaExtensions](../resources/schemaextension.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [schemaExtensions](../resources/schemaextension.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 
@@ -195,7 +195,7 @@ Content-length: 420
 ```
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)

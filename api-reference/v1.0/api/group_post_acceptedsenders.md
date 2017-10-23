@@ -27,7 +27,7 @@ En el cuerpo de la solicitud, proporcione el identificador de un objeto de usuar
 
 ## <a name="response"></a>Respuesta
 
-Este método devuelve el código de respuesta `204, No Content` y ningún cuerpo de la respuesta.
+Este método devuelve el código de respuesta `204 No Content` y ningún cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

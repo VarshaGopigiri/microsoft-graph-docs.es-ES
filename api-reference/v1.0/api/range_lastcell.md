@@ -1,6 +1,6 @@
 # <a name="range-lastcell"></a>Range: LastCell
 
-Obtiene la última celda del rango. Por ejemplo, la última celda de "B2:D5" es "D5".
+Obtiene la última celda del intervalo. Por ejemplo, la última celda de "B2:D5" es "D5".
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -27,7 +27,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastCell
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [Range](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.

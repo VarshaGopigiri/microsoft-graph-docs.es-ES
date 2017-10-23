@@ -46,7 +46,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON del objeto [a
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [attachment](../resources/attachment.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [attachment](../resources/attachment.md) en el cuerpo de la respuesta.
 
 ## <a name="example-file-attachment"></a>Ejemplo (datos adjuntos del archivo)
 

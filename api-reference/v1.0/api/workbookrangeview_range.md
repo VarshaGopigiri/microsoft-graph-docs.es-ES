@@ -26,7 +26,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 ## <a name="request-body"></a>Cuerpo de solicitud
 
 ### <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.

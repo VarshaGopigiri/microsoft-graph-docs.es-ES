@@ -34,7 +34,7 @@ Dado que el recurso **message** admite [extensiones](../../../concepts/extensibi
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [message](../resources/message.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [message](../resources/message.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request-1"></a>Solicitud 1

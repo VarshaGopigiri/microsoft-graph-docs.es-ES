@@ -43,7 +43,7 @@ Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud G
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto de colección [contactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto de colección [contactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

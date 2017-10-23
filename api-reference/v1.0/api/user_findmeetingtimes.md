@@ -54,7 +54,7 @@ Basándose en los parámetros especificados, **findMeetingTimes** comprueba el e
 
 ## <a name="response"></a>Respuesta
 
-Si es correcto, este método devuelve un código de respuesta `200, OK` y un objeto [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) en el cuerpo de la respuesta. 
+Si es correcto, este método devuelve un código de respuesta `200 OK` y un objeto [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) en el cuerpo de la respuesta. 
 
 Un objeto **meetingTimeSuggestionsResult** incluye una colección de sugerencias de la reunión y una propiedad **emptySuggestionsReason**. Cada sugerencia se define como una [meetingTimeSuggestion](../resources/meetingTimeSuggestion.md), con los asistentes con un nivel de confianza medio del 50 % de asistir o un porcentaje concreto que especificó en el parámetro **minimumAttendeePercentage**. 
 

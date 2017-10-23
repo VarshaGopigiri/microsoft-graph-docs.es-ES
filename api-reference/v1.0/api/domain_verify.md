@@ -1,6 +1,6 @@
 # <a name="domain-verify"></a>dominio: verify
 
-Valida la propiedad del dominio.
+Valide la propiedad del dominio.
 
 > **Importante:** Solo se aplica a un dominio sin verificar. En el caso de un dominio sin verificar, la propiedad isVerified del [dominio](../resources/domain.md) es falsa.
 
@@ -9,11 +9,11 @@ Valida la propiedad del dominio.
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Directory.Read.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | Directory.Read.All, Domain.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Directory.Read.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -35,7 +35,7 @@ POST /domains/{id}/verify
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200, OK` y el objeto [domain](../resources/domain.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [domain](../resources/domain.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
