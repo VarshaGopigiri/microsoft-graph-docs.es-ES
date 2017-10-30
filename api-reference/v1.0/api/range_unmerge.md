@@ -1,38 +1,38 @@
-# <a name="range-unmerge"></a><span data-ttu-id="18c93-101">Range: unmerge</span><span class="sxs-lookup"><span data-stu-id="18c93-101">Range: unmerge</span></span>
+# <a name="range-unmerge"></a><span data-ttu-id="3b72c-101">Range: unmerge</span><span class="sxs-lookup"><span data-stu-id="3b72c-101">Range: unmerge</span></span>
 
-<span data-ttu-id="18c93-102">Separar las celdas del rango en celdas independientes.</span><span class="sxs-lookup"><span data-stu-id="18c93-102">Unmerge the range cells into separate cells.</span></span>
-## <a name="permissions"></a><span data-ttu-id="18c93-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="18c93-103">Permissions</span></span>
-<span data-ttu-id="18c93-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="18c93-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="3b72c-102">Separar las celdas del rango en celdas independientes.</span><span class="sxs-lookup"><span data-stu-id="3b72c-102">Unmerge the range cells into separate cells.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3b72c-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="3b72c-103">Permissions</span></span>
+<span data-ttu-id="3b72c-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3b72c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="18c93-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="18c93-106">Permission type</span></span>      | <span data-ttu-id="18c93-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="18c93-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3b72c-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="3b72c-106">Permission type</span></span>      | <span data-ttu-id="3b72c-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="3b72c-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="18c93-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="18c93-108">Delegated (work or school account)</span></span> | <span data-ttu-id="18c93-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="18c93-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="18c93-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="18c93-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18c93-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="18c93-111">Not supported.</span></span>    |
-|<span data-ttu-id="18c93-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="18c93-112">Application</span></span> | <span data-ttu-id="18c93-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="18c93-113">Not supported.</span></span> |
+|<span data-ttu-id="3b72c-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="3b72c-108">Delegated (work or school account)</span></span> | <span data-ttu-id="3b72c-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3b72c-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3b72c-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b72c-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b72c-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="3b72c-111">Not supported.</span></span>    |
+|<span data-ttu-id="3b72c-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="3b72c-112">Application</span></span> | <span data-ttu-id="3b72c-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="3b72c-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="18c93-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="18c93-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3b72c-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="3b72c-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/unmerge
-POST /workbook/worksheets/{id|name}/range(<address>)/unmerge
+POST /workbook/worksheets/{id|name}/range(address='<address>')/unmerge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="18c93-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="18c93-115">Request headers</span></span>
-| <span data-ttu-id="18c93-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="18c93-116">Name</span></span>       | <span data-ttu-id="18c93-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="18c93-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3b72c-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="3b72c-115">Request headers</span></span>
+| <span data-ttu-id="3b72c-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="3b72c-116">Name</span></span>       | <span data-ttu-id="3b72c-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="3b72c-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="18c93-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="18c93-118">Authorization</span></span>  | <span data-ttu-id="18c93-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="18c93-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3b72c-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="3b72c-118">Authorization</span></span>  | <span data-ttu-id="3b72c-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="3b72c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="18c93-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="18c93-121">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3b72c-121">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="3b72c-121">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="18c93-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="18c93-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3b72c-122">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3b72c-122">Response</span></span>
 
-<span data-ttu-id="18c93-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="18c93-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3b72c-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3b72c-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18c93-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="18c93-125">Example</span></span>
-<span data-ttu-id="18c93-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="18c93-126">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="18c93-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="18c93-127">Request</span></span>
-<span data-ttu-id="18c93-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="18c93-128">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3b72c-125">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3b72c-125">Example</span></span>
+<span data-ttu-id="3b72c-126">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="3b72c-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3b72c-127">Solicitud</span><span class="sxs-lookup"><span data-stu-id="3b72c-127">Request</span></span>
+<span data-ttu-id="3b72c-128">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="3b72c-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_unmerge"
@@ -41,8 +41,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/unmerge
 ```
 
-##### <a name="response"></a><span data-ttu-id="18c93-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="18c93-129">Response</span></span>
-<span data-ttu-id="18c93-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="18c93-130">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="3b72c-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3b72c-129">Response</span></span>
+<span data-ttu-id="3b72c-130">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3b72c-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
