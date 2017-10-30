@@ -14,7 +14,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets/{id|name}/range(<address>)/format/borders/ItemAt
+POST /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
