@@ -7,8 +7,9 @@ Puede acceder a los [usuarios](user.md) a través de Microsoft Graph de dos form
 - Mediante su identificador, `/users/{id | userPrincipalName}` 
 - Mediante el alias `/me` del usuario que ha iniciado sesión, que es el mismo que `/users/{signed-in user's id}`
 
-## <a name="authorization"></a>Autorización
-Se requiere uno de los siguientes [permisos](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) para acceder a las operaciones de usuario. Los tres primeros permisos los puede conceder un usuario a una aplicación. El resto solo los puede conceder el administrador a una aplicación.
+## <a name="authorization"></a>Authorization
+
+Se requiere uno de los siguientes [permisos](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) para tener acceso a las operaciones de usuario. Los tres primeros permisos los puede conceder un usuario a una aplicación. El resto solo los puede conceder el administrador a una aplicación.
 
 - User.ReadBasic.All
 - User.Read
@@ -20,10 +21,11 @@ Se requiere uno de los siguientes [permisos](https://developer.microsoft.com/en-
 - Directory.AccessAsUser.All
 
 ## <a name="common-properties"></a>Propiedades comunes
-Las siguientes propiedades representan el conjunto predeterminado de propiedades que se devuelven al obtener un usuario o enumerar usuarios.  Son un subconjunto de todas las propiedades disponibles. Para obtener más propiedades de usuario, use el parámetro de consulta `$select`. 
 
-| Propiedad | Descripción |
-|----------|-------------|
+Las siguientes propiedades representan el conjunto predeterminado de propiedades que se devuelven al obtener un usuario o enumerar usuarios. Son un subconjunto de todas las propiedades disponibles. Para obtener más propiedades de usuario, use el parámetro de consulta `$select`. 
+
+|Propiedad |Descripción |
+|:----------|:-------------|
 |id | El identificador único del usuario.|
 |businessPhones | Los números de teléfono del usuario.|
 |displayName | El nombre del usuario que aparece en la libreta de direcciones.|
@@ -36,13 +38,16 @@ Las siguientes propiedades representan el conjunto predeterminado de propiedades
 |surname| El apellido del usuario. |
 |userPrincipalName| El nombre principal del usuario. |
 
+<br/>
+
 Para obtener información detallada y una lista de todas las propiedades, consulte el objeto [user](user.md).
 
 ## <a name="common-operations"></a>Operaciones comunes
->**Nota:** Algunas de estas operaciones requieren permisos adicionales.
 
-| Path    | Descripción |
-|---------|-------------|
+> **Nota:** Algunas de estas operaciones requieren permisos adicionales.
+
+| Ruta de acceso    | Descripción |
+|:---------|:-------------|
 |[`/users`](../api/user_list.md) | Enumera los usuarios de la organización. |
 |[`/users/{id}`](../api/user_get.md) | Obtiene un usuario específico por su identificador. |
 |[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| Obtiene la foto de perfil del usuario. |

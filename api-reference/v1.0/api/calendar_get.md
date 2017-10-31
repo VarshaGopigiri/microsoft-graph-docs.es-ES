@@ -1,6 +1,6 @@
-# <a name="get-calendar"></a>Get calendar
+# <a name="get-calendar"></a>Obtener calendario
 
-Recuperar las propiedades y las relaciones del objeto de calendario.
+Obtiene las propiedades y relaciones de un objeto de [calendario](../resources/calendar.md). El calendario puede ser de un [usuario](../resources/user.md) o el calendario predeterminado de un [grupo](../resources/group.md) de Office 365.
 
 
 ### <a name="get-another-users-calendar"></a>Obtener el calendario de otro usuario
@@ -70,7 +70,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 |:-----------|:------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta

@@ -1,15 +1,15 @@
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
-Un calendario que es un contenedor de eventos.
+Un calendario que es un contenedor de eventos. Puede ser un calendario de un [usuario](user.md) o el calendario predeterminado de un [grupo](group.md) de Office 365.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |[List calendars](../api/user_list_calendars.md)|[calendar](calendar.md) collection|Obtenga todos los calendarios del usuario o los calendarios en el grupo de calendarios predeterminado o en otro grupo de calendarios específico.|
-|[Create calendar](../api/user_post_calendars.md) |[calendar](calendar.md)| Cree un calendario en el grupo de calendarios predeterminado o en el grupo de calendario especificado.|
-|[Get calendar](../api/calendar_get.md) | [calendar](calendar.md) |Lea las propiedades y las relaciones del objeto de calendario.|
-|[Update](../api/calendar_update.md) | [calendar](calendar.md)  |Actualice el objeto de calendario. |
+|[Create calendar](../api/user_post_calendars.md) |[calendar](calendar.md)| Cree un calendario en el grupo de calendarios predeterminado o en el grupo de calendario especificado de un usuario.|
+|[Get calendar](../api/calendar_get.md) | [calendar](calendar.md) |Obtiene las propiedades y relaciones de un objeto de **calendario**. El calendario puede ser de un usuario o el calendario predeterminado de un grupo de Office 365. |
+|[Update](../api/calendar_update.md) | [calendar](calendar.md)  |Actualiza las propiedades del objeto de **calendario**. El calendario puede ser de un usuario o el calendario predeterminado de un grupo de Office 365. |
 |[Delete](../api/calendar_delete.md) | Ninguno |Elimine el objeto de calendario. |
 |[List calendarView](../api/calendar_list_calendarview.md) |Colección [event](event.md)| Obtiene las repeticiones, excepciones e instancias únicas de eventos en una vista de calendario definida por un intervalo de tiempo del calendario principal del usuario `(../me/calendarview)` o de un calendario especificado.|
 |[List events](../api/calendar_list_events.md) |Colección [event](event.md)| Recupera una lista de eventos de un calendario.  La lista contiene patrones de serie y reuniones de instancia única.|
@@ -34,10 +34,10 @@ Un calendario que es un contenedor de eventos.
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|calendarView|Colección [event](event.md)|La vista Calendario del calendario. Propiedad Navigation. Solo lectura.|
-|events|Colección [Event](event.md)|Los eventos del calendario. Propiedad Navigation. Solo lectura.|
+|calendarView|[Event](event.md) collection|La vista Calendario del calendario. Propiedad Navigation. Solo lectura.|
+|events|[Event](event.md) collection|Los eventos del calendario. Propiedad Navigation. Solo lectura.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el calendario. Solo lectura. Admite valores NULL.|
-|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el calendario. Solo lectura. Admite valores NULL.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| La colección de propiedades extendidas de valor único definidas para el calendario. Solo lectura. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
 

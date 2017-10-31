@@ -6,9 +6,11 @@
 
 En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el punto de conexión v2.0 de Azure AD y llamar a Microsoft Graph. Le muestra los pasos para la creación del [Ejemplo Connect de Android](https://github.com/microsoftgraph/android-java-connect-sample) y explica los conceptos principales que implementará para usar Microsoft Graph en la aplicación de Android. En el artículo, también se describe cómo obtener acceso a Microsoft Graph usando el [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) o llamadas de REST sin procesar.
 
-Para utilizar Microsoft Graph en su aplicación para Android, debe mostrar la página de inicio de sesión de Microsoft a los usuarios, como se ve en la siguiente captura de pantalla.
+Para usar Microsoft Graph en su aplicación para Android, debe mostrar la página de inicio de sesión de Microsoft a los usuarios, como se muestra en la siguiente captura de pantalla.
 
 ![Página de inicio de sesión para cuentas Microsoft en Android](images/AndroidConnect.png)
+
+<br/>
 
 **¿No desea compilar una aplicación?** Puede ponerse a trabajar rápidamente si descarga el [Ejemplo Connect de Android](https://github.com/microsoftgraph/android-java-connect-sample) en el que se basa este artículo.
 
@@ -23,13 +25,13 @@ Para comenzar, necesitará:
 
 ## <a name="configure-a-new-project"></a>Configurar un proyecto nuevo
 
-Si descargó el [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample), omita este paso. 
+Si ha descargado el [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample), omita este paso. 
 
 Inicie un nuevo proyecto en Android Studio. Puede dejar los valores predeterminados para la mayoría del proceso del asistente, pero asegúrese de elegir las siguientes opciones:
 
-* Dispositivos Android de destino: **teléfonos y tabletas**
-    * Minimum SDK - **API 16: Android 4.1 (Jelly Bean)** (SDK mínimo: API 16: Android 4.1 (Jelly Bean))
-* Add an Activity to Mobile - **Basic Activity** (Agregar una actividad al dispositivo móvil: actividad básica)
+- Dispositivos Android objetivo: **Teléfono y tableta**
+- SDK mínimo: **API 16: Android 4.1 (Jelly Bean)**
+- Agregar una actividad a Mobile: **Actividad básica**
  
 Esto le proporciona un proyecto de Android con una actividad y un botón que puede usar para autenticar al usuario.
 
@@ -44,7 +46,7 @@ Registre una aplicación en el portal de registro de aplicaciones de Microsoft. 
 
 2. Seleccione **Agregar una aplicación**.
 
->Sugerencia: Si descargó el [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) y simplemente está creando un registro para este, desactive la casilla **Configuración guiada** antes de hacer clic en el botón **Crear**.
+    > **Sugerencia:** Si descargó el [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) y simplemente está creando un registro para este, desactive la casilla **Configuración guiada** antes de hacer clic en el botón **Crear**.
 
 3. Escriba un nombre para la aplicación y seleccione **Crear**. 
     
@@ -62,20 +64,21 @@ Registre una aplicación en el portal de registro de aplicaciones de Microsoft. 
 
     f. En la página **Configurar**, el portal creó automáticamente un id. de aplicación único. Úselo para configurar la aplicación.
 
+    <br/>
+    
     Para el flujo no guiado:
 
-    Se muestra la página de registro, indicando las propiedades de la aplicación.
+    Se muestra la página de registro con una lista de las propiedades de la aplicación.
 
     a. Copie el id. de aplicación. Es el identificador único de la aplicación. 
 
     b. Seleccione **Agregar plataforma** y **Aplicación nativa**.
 
-    > **Nota:** El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con el valor *msalENTER_YOUR_CLIENT_ID://auth*. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
+      > **Nota**: El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con un valor de `msalENTER_YOUR_CLIENT_ID://auth`. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
+      
+      c. Agregue los permisos delegados. Necesitará **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** y **User.ReadBasic.All**. 
 
-
-    a. Agregue los permisos delegados. Necesitará **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** y **User.ReadBasic.All**. 
-   
-    b. Seleccione **Guardar**.
+      d. Haga clic en **Guardar**.
 
 
 ## <a name="authenticate-the-user-and-get-an-access-token"></a>Autenticar al usuario y obtener un token de acceso
@@ -93,8 +96,9 @@ Abra el archivo `build.gradle` en el módulo de la aplicación e incluya la depe
         exclude group: 'com.android.support', module: 'appcompat-v7'
     }
     compile 'com.android.volley:volley:1.0.0'
-
 ```
+
+<br/>
 
 ### <a name="start-the-authentication-flow"></a>Iniciar el flujo de autenticación
 
@@ -116,6 +120,7 @@ Abra el archivo `build.gradle` en el módulo de la aplicación e incluya la depe
 
    ```
 
+<br/>
 
 2. En la clase**ConnectActivity**, busque el controlador de eventos del evento de clic de **mConnectButton**. Busque el método **onClick** y revise el código relevante.
   
@@ -160,6 +165,9 @@ Abra el archivo `build.gradle` en el módulo de la aplicación e incluya la depe
     }
 
    ```
+   
+<br/>
+
 3. Busque el controlador de eventos que procesa la respuesta de redireccionamiento generada por Azure AD cuando el usuario cierra el cuadro de diálogo de autenticación. Este controlador está en la clase **ConnectActivity**.
 
    ```java
@@ -184,10 +192,12 @@ Abra el archivo `build.gradle` en el módulo de la aplicación e incluya la depe
         }
     }
 
-   ```    
-3. Busque el método de devolución de llamada de autenticación que almacena en la memoria caché el token de autenticación usado en las llamadas API de Graph.
+   ```  
+   
+   <br/>
 
- 
+4. Busque el método de devolución de llamada de autenticación que almacena en la memoria caché el token de autenticación usado en las llamadas API de Graph.
+
 
 ```java
     /* Callback used for interactive request.  If succeeds we use the access
@@ -224,14 +234,17 @@ Abra el archivo `build.gradle` en el módulo de la aplicación e incluya la depe
     }
 
 ```
-    
-La aplicación de ejemplo de conexión tiene el botón **Conectar** en la actividad principal. Si pulsa el botón en el primer uso, la aplicación mostrará una página de autenticación en el explorador del dispositivo. El paso siguiente es controlar el código que envía el servidor de autorización al URI de redireccionamiento y cambiarlo por un token de acceso.
+
+<br/>
+   
+La aplicación de ejemplo de conexión tiene el botón **Conectar** en la actividad principal. Si selecciona el botón en el primer uso, la aplicación mostrará una página de autenticación en el explorador del dispositivo. El paso siguiente es controlar el código que envía el servidor de autorización al URI de redireccionamiento y cambiarlo por un token de acceso.
 
 ### <a name="exchange-the-authorization-code-for-an-access-token"></a>Cambiar el código de autorización por un token de acceso
 
 Es necesario que prepare la aplicación para controlar la respuesta del servidor de autorización, que contiene un código que se puede intercambiar por un token de acceso.
 
 1. Necesita indicarle al sistema Android que la aplicación de conexión admite solicitudes a la URL de redireccionamiento configurada en el registro de la aplicación. Para hacerlo, abra el archivo de recursos de cadenas **strings.xml** y agregue los siguientes elementos secundarios al elemento **\<application/\>**de proyectos.
+
    ```xml
    <!DOCTYPE resources [
        <!ENTITY clientId "ENTER_YOUR_CLIENT_ID">
@@ -240,8 +253,9 @@ Es necesario que prepare la aplicación para controlar la respuesta del servidor
     ...
     <string name="client_Id">&clientId;</string>
     <string name="msalPrefix">msal&clientId;</string>
-
    ```
+
+   <br/>
 
    Los recursos de cadena se utilizan en el archivo **AndroidManifest.xml**. La biblioteca **MSAL** lee el id. de cliente en tiempo de ejecución y devuelve las respuestas REST a la redirección de la dirección URL definida para la **BrowserTabActivity**.
 
@@ -267,9 +281,11 @@ Es necesario que prepare la aplicación para controlar la respuesta del servidor
                android:value="@string/client_Id"/>
         </application>
     ```
+
+
 2. La biblioteca de **MSAL** necesita obtener acceso al id. de aplicación asignado por el portal de registro. **La biblioteca de MSAL hace referencia al id. de aplicación como “id. de cliente”**. Obtiene el id. de aplicación (id. de cliente) del contexto de la aplicación que pase en el constructor de la biblioteca. 
 
-   >Nota: También puede proporcionar el id. de cliente en el tiempo de ejecución si pasa un parámetro de cadena al constructor. 
+   > **Nota**: También puede proporcionar el id. de cliente en el tiempo de ejecución si pasa un parámetro de cadena al constructor. 
 
 3. La actividad se invoca cuando el servidor de autorización envía una respuesta. Puede solicitar un token de acceso con la respuesta del servidor de autorización. Vaya al **AuthenticationManager** y busque el código siguiente en la clase.
 
@@ -331,23 +347,28 @@ Es necesario que prepare la aplicación para controlar la respuesta del servidor
 
    ```
 
+<br/>
 
 ## <a name="call-microsoft-graph"></a>Llamar a Microsoft Graph
+
 Puede [utilizar el SDK de Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-sdk) o la [API de REST de Microsoft Graph](#call-microsoft-graph-using-the-microsoft-graph-rest-api) para llamar a Microsoft Graph.
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-sdk"></a>Llame a Microsoft Graph mediante el SDK de Microsoft Graph
+
 El [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) proporciona clases que generan solicitudes y procesan los resultados de Microsoft Graph. Siga estos pasos para utilizar el SDK de Microsoft Graph.
 
 1. Conceda permisos de Internet a la aplicación. Abra el archivo **AndroidManifest** y agregue el siguiente elemento secundario al elemento de manifiesto.
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     ```
 
+
 2. Agregue dependencias al SDK de Microsoft Graph y GSON.
+   
    ```gradle
     compile 'com.microsoft.graph:msgraph-sdk-android:1.3.2'
     compile 'com.google.code.gson:gson:2.7'
@@ -382,6 +403,7 @@ El [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgra
         }
     }
    ```
+
 
 4. Cree un borrador de correo electrónico y envíelo con los siguientes métodos auxiliares desde la clase auxiliar **GraphServiceController**.
 
@@ -472,13 +494,18 @@ El [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgra
     }
 
    ```
+  
+
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Llamar a Microsoft Graph con la API de REST de Microsoft Graph
+
 La [API de REST de Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) expone varias API de servicios de nube de Microsoft a través de un único punto de conexión de la API de REST. Siga estos pasos para utilizar la API de REST.
 
 1. Conceda permisos de Internet a la aplicación. Abra el archivo **AndroidManifest** y agregue el siguiente elemento secundario al elemento de manifiesto.
+    
     ```xml
     <uses-permission android:name="android.permission.INTERNET" />
     ```
+
 
 2. Agregue una dependencia a la biblioteca HTTP Volley.
 
@@ -486,7 +513,9 @@ La [API de REST de Microsoft Graph](http://developer.microsoft.com/en-us/graph/d
     compile 'com.android.volley:volley:1.0.0'
     ```
    
+
 3. Reemplace la línea `String accessToken = tokenResponse.accessToken;` por el siguiente código. Escriba su dirección de correo electrónico en el marcador de posición marcado como **\<YOUR_EMAIL_ADDRESS\>**.
+   
    ```java
     final String accessToken = tokenResponse.accessToken;
 
@@ -547,24 +576,27 @@ La [API de REST de Microsoft Graph](http://developer.microsoft.com/en-us/graph/d
     });
    ```
 
+
 ## <a name="run-the-app"></a>Ejecutar la aplicación
 Está preparado para probar la aplicación de Android.
 
 1. Inicie el emulador de Android o conecte el dispositivo físico a su equipo.
-2. En Android Studio, presione Mayús + F10 para ejecutar la aplicación.
-3. Elija el emulador de  Android o el dispositivo en el cuadro de diálogo de implementación.
-4. Pulse el botón de acción flotante en la actividad principal.
-5. Inicie sesión con su cuenta personal, profesional o educativa y conceda los permisos solicitados.
+2. En Android Studio, presione Mayús y F10 para ejecutar la aplicación.
+3. Elija el emulador de Android o el dispositivo en el cuadro de diálogo de implementación.
+4. Pulse el botón **Acción flotante** en la actividad principal.
+5. Inicie sesión con su cuenta personal, profesional o educativa, y conceda los permisos solicitados.
 6. En el cuadro de diálogo de selección de la aplicación, pulse en la aplicación para continuar.
 
-Compruebe la Bandeja de entrada de la dirección de correo electrónico que configuró en [Llamar a Microsoft Graph](#call-microsoft-graph). Debe tener un correo electrónico de la cuenta que utilizó para iniciar sesión en la aplicación.
+Compruebe la Bandeja de entrada de la dirección de correo electrónico que configuró en [Llamar a Microsoft Graph](#call-microsoft-graph). Debe tener un correo electrónico de la cuenta que usó para iniciar sesión en la aplicación.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
+
 - Pruebe el [Probador de Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Encuentre ejemplos de operaciones comunes en [Fragmentos de código de ejemplo para Android](https://github.com/microsoftgraph/android-java-snippets-sample) o explore nuestros otros [Ejemplos de Android](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) en GitHub.
 
 
 ## <a name="see-also"></a>Recursos adicionales
+
 - [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
 - [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
 - [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)

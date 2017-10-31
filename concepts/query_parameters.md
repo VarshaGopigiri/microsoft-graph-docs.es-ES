@@ -6,15 +6,16 @@ Microsoft Graph proporciona parámetros de consulta opcionales que puede usar pa
 
 |Nombre|Descripción|Ejemplo|
 |:---------------|:--------|:-------|
-|[$count](#count)|Recupera el número total de recursos coincidentes.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
-|[$expand](#expand)|Recupera los recursos relacionados.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
-|[$filter](#filter)|Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
-|[$orderby](#orderby)|Ordena los resultados.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)
-|[$search](#search)| Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)
-|[$select](#select)|Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
-|[$skip](#skip)|Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)
-|[$skipToken](#skiptoken)|Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`
-|[$top](#top)|Establece el tamaño de la página de resultados. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)
+|[$count](#count)|Recupera el número total de recursos coincidentes.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
+|[$expand](#expand)|Recupera los recursos relacionados.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
+|[$filter](#filter)|Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
+|[$format](#format)|Devuelve los resultados en el formato de medio especificado.|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
+|[$orderby](#orderby)|Ordena los resultados.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
+|[$search](#search)| Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
+|[$select](#select)|Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
+|[$skip](#skip)|Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
+|[$skipToken](#skiptoken)|Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
+|[$top](#top)|Establece el tamaño de la página de resultados. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
 
 Estos parámetros son compatibles con el [lenguaje de consulta de OData V4][odata-query]. No todos los parámetros se admiten en todas las API de Microsoft Graph, y la compatibilidad puede variar considerablemente entre los puntos de conexión `v1.0` y `beta`. 
 
@@ -116,6 +117,20 @@ En la tabla siguiente se muestran algunos ejemplos de uso del parámetro de cons
 | Enumerar todos los grupos de Office 365 de una organización. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **Nota:** Los operadores `$filter` siguientes no se admiten para recursos de Azure AD: `ne`, `gt`, `ge`, `lt`, `le` y `not`. El operador de cadena `contains` actualmente no se admite en ningún recurso de Microsoft Graph.
+
+## <a name="format"></a>format
+
+Use el parámetro de consulta `$format` para especificar el formato de medio de los elementos devueltos desde Microsoft Graph
+
+Por ejemplo, la solicitud siguiente devuelve los usuarios de la organización en formato JSON:
+
+```http
+GET https://graph.microsoft.com/v1.0/users?$format=json
+```
+
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+
+> **Nota**: El parámetro de consulta `$format` admite varios formatos, como atom, xml y json, pero puede que no todos los formatos devuelvan resultados.
 
 ## <a name="orderby"></a>orderby
 

@@ -9,7 +9,6 @@ Una agregación de información sobre un contacto de correo electrónico, contac
 |[List people](../api/user_list_people.md) | **person** |Obtenga una colección de objetos person ordenados por su relevancia para el [user](../resources/user.md).|
 |[Get person](../api/person_get.md) | **person** |Recupere las propiedades y las relaciones del objeto person.|
 
-
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
@@ -20,7 +19,7 @@ Una agregación de información sobre un contacto de correo electrónico, contac
 |scoredEmailAddresses|Colección [scoredEmailAddress](scoredemailaddress.md)|Direcciones de correo electrónico del contacto.|
 |givenName|String|Nombre propio del contacto.|
 |id|String|Identificador único del contacto. Solo lectura.|
-|imAddress|Colección string|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
+|imAddress|Cadena|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
 |isFavorite|Boolean|`true` si el usuario ha marcado este contacto como favorito.|
 |jobTitle|String|Puesto del contacto.|
 |officeLocation|String|Ubicación de la oficina del contacto.|
@@ -56,14 +55,15 @@ La siguiente es una representación JSON del recurso
   "companyName": "string",
   "department": "string",
   "displayName": "string",
-  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredemailaddress"}],
+  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "imAddress": "string",
   "isFavorite": true,
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.persontype"}],
+  "personType": [{"@odata.type": "microsoft.graph.personType"}],
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",

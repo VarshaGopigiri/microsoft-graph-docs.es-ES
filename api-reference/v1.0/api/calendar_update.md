@@ -1,6 +1,6 @@
 # <a name="update-calendar"></a>Actualizar calendario
 
-Actualiza las propiedades del objeto de calendario.
+Actualiza las propiedades de un objeto de [calendario](../resources/calendar.md). El calendario puede ser de un [usuario](../resources/user.md) o el calendario predeterminado de un [grupo](../resources/group.md) de Office 365.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 

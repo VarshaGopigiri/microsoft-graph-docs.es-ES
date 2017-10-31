@@ -1,13 +1,17 @@
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensiones abiertas)
 
-Las extensiones abiertas (anteriormente conocidas como extensiones de datos de Office 365) ofrecen una manera fácil de agregar propiedades sin tipo directamente a un recurso en Microsoft Graph. El recurso **openTypeExtension** representa las extensiones abiertas. Las extensiones abiertas agregadas a un recurso se muestran en la propiedad de navegación **extensions**, que se deriva del tipo abstracto [extension](extension.md).  Cada extensión tiene una propiedad **extensionName** que es la única predefinida y que puede ser escrita para todas las extensiones, junto con los datos personalizados. Una forma de asegurarse de que los nombres de extensión son únicos es usar un método inverso del formato de nombres de dominio (DNS) que dependa de _su propio dominio_, por ejemplo, `Com.Contoso.ContactInfo`. No use el dominio de Microsoft (`Com.Microsoft` o `Com.OnMicrosoft`) en un nombre de extensión.
+Las extensiones abiertas (anteriormente conocidas como extensiones de datos de Office 365) ofrecen una manera fácil de agregar propiedades sin tipo directamente a un recurso en Microsoft Graph. 
+
+El recurso **openTypeExtension** representa las extensiones abiertas. Las extensiones abiertas agregadas a un recurso se muestran en la propiedad de navegación **extensions**, que se deriva del tipo abstracto [extension](extension.md). Cada extensión tiene una propiedad **extensionName** que es la única predefinida y que puede ser escrita para todas las extensiones, junto con los datos personalizados. 
+
+Una forma de asegurarse de que los nombres de extensión son únicos es usar un método inverso del formato de nombres de dominio (DNS) que dependa de _su propio dominio_, por ejemplo, `Com.Contoso.ContactInfo`. No use el dominio de Microsoft (`Com.Microsoft` o `Com.OnMicrosoft`) en un nombre de extensión.
 
 Ejemplo de extensión abierta: [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
 
 Las extensiones abiertas son compatibles con los recursos siguientes en las versiones correspondientes: disponibilidad general (GA: /v1.0 y /beta) o en versión preliminar (/beta).
 
-| Recurso | Versión |
-|---------------|-------|
+|Recurso |Versión |
+|:---------------|:-------|
 | [Unidad administrativa](../../beta/resources/administrativeunit.md)  | Solo versión preliminar |
 | [Evento de calendario](event.md) | GA |
 | [Evento de calendario](event.md) de grupo | GA |
@@ -26,7 +30,7 @@ Las extensiones abiertas son la solución recomendada en la mayoría de escenari
 
 ## <a name="json-representation"></a>Representación JSON
 
-Aquí tiene una representación JSON del recurso
+Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
@@ -43,19 +47,24 @@ Aquí tiene una representación JSON del recurso
 }
 
 ```
+
+<br/>
+
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+
+|Propiedad      |Tipo    |Descripción |
 |:---------------|:--------|:----------|
 |extensionName|String|Un identificador de texto único para una extensión abierta de tipo abierto. Necesario.|
 |id|String| Un identificador completo que concatena el tipo de extensión con el **extensionName**. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
+
 Ninguno
 
 
 ## <a name="methods"></a>Métodos
 
-| Método           | Tipo de valor devuelto    |Descripción|
+|Método        |Tipo de valor devuelto |Descripción |
 |:---------------|:--------|:----------|
 |[Post](../api/opentypeextension_post_opentypeextension.md) | [openTypeExtension](opentypeextension.md) (en una instancia de recurso existente) o un [contacto](../resources/contact.md), [evento](../resources/event.md) o [mensaje](../resources/message.md) nuevo que contenga un objeto openTypeExtension. | Cree un objeto openTypeExtension en una instancia de recursos nueva o existente.|
 |[Get](../api/opentypeextension_get.md) | [openTypeExtension](opentypeextension.md) |Lea las propiedades y las relaciones del objeto openTypeExtension.|
