@@ -234,6 +234,10 @@ El seguimiento de cambios (consulta delta) aún no se admite para las propiedade
 
 No se puede especificar una extensión abierta a la vez que se crea una instancia de **administrativeUnit**, **device**, **group**, **organization** o **user**. Debe crear primero la instancia y después especificar los datos de extensión abierta en una solicitud ``POST`` posterior en esa instancia.
 
+### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Creación de una instancia de recurso y adición de datos de extensión de esquema al mismo tiempo
+
+No se puede especificar una extensión de esquema en la misma operación de creación de una instancia de **contacto**, **evento**, **mensaje** o **publicación**. Debe crear primero la instancia de recurso y, a continuación, aplicar una revisión `PATCH` a esa instancia para agregar una extensión de esquema y datos personalizados. 
+
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Límite de 100 valores de propiedad de extensión de esquema permitido por cada instancia del recurso
 
 En la actualidad, los recursos de directorio, como **dispositivos**, **grupos** y **usuarios**, limitan a 100 el número total de valores de propiedad de extensión de esquema que pueden establecerse en un recurso.

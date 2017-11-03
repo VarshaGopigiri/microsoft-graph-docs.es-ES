@@ -41,16 +41,6 @@ Aquí tiene un ejemplo de la solicitud.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-Content-type: application/json
-Content-length: 77
-
-{
-  "height": {
-  },
-  "width": {
-  },
-  "fittingMode": "fittingMode-value"
-}
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -58,13 +48,24 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
+Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 {
 "value" : "base-64 chart image string"
 }
 ```
+
+## <a name="usage"></a>Uso
+
+Puede mostrar la cadena en base 64 en una etiqueta de imagen HTML: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
+
+Para usar el comportamiento predeterminado, utilice `Image(width=0,height=0,fittingMode='fit')`. Este es un ejemplo de una imagen de gráfico devuelta con los parámetros predeterminados.
+
+![Imagen de gráfico de Excel con alto y ancho predeterminados.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+
+Si quiere personalizar la visualización de la imagen, especifique un alto, un ancho y un modo de ajuste. Esta es la misma imagen de gráfico si la recupera con estos parámetros: `Image(width=500,height=500,fittingMode='Fill')`.
+
+![Imagen de gráfico de Excel con alto y ancho predeterminados.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

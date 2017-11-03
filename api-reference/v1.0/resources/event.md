@@ -67,17 +67,17 @@ Este recurso admite:
 |responseStatus|[responseStatus](responsestatus.md)|Indica el tipo de respuesta que se envía en respuesta a un mensaje de evento.|
 |confidencialidad|String| Los valores posibles son: `Normal`, `Personal`, `Private` y `Confidential`.|
 |seriesMasterId|String|Las categorías asignadas al elemento.|
-|showAs|String|El estado que se mostrará: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
+|showAs|String|El estado que se mostrará. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
 |inicio|[dateTimeTimeZone](datetimetimezone.md)|La fecha, la hora y la zona horaria en que comienza el evento.|
 |subject|String|El texto de la línea de asunto del evento.|
-|type|Cadena|El tipo de evento: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Los valores posibles son: `SingleInstance`, `Occurrence`, `Exception` y `SeriesMaster`.|
+|type|String|El tipo de evento. Los valores posibles son: `SingleInstance`, `Occurrence`, `Exception` y `SeriesMaster`. Solo lectura.|
 |webLink|String|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attachments|Colección [attachment](attachment.md)|La colección de datos adjuntos [fileAttachment](fileAttachment.md) y [itemAttachment](itemAttachment.md) del evento. Propiedad de navegación. Solo lectura. Admite valores NULL.|
-|calendar|[calendario](calendar.md)|El calendario que contiene el evento. Propiedad de navegación. Solo lectura.|
+|calendario|[calendario](calendar.md)|El calendario que contiene el evento. Propiedad de navegación. Solo lectura.|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el evento. Solo lectura. Admite valores NULL.|
 |instances|Colección [event](event.md)|Las instancias del evento. Propiedad de navegación. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el evento. Solo lectura. Admite valores NULL.|

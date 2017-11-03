@@ -25,12 +25,11 @@ GET /me/contacts/{id}
 
 Esta capacidad solo está disponible en las operaciones GET de:
 
-- Carpetas de contactos compartidas
-- Calendarios compartidos
-- Contactos y eventos en carpetas compartidas
+- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
+- Contactos, eventos y mensajes en carpetas compartidas
 - Los recursos anteriores en buzones delegados
 
-Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.
+Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
 
 
 ## <a name="permissions"></a>Permisos
@@ -54,7 +53,7 @@ Un [contact](../resources/contact.md) desde la [contactFolder](../resources/cont
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-Un [contact](../resources/contact.md) contenido en una carpeta secundaria de una [contactFolder](../resources/mailfolder.md). En el ejemplo, siguiente se muestra un nivel de anidamiento, pero un contacto puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
+[contact](../resources/contact.md) contenido en una carpeta secundaria de una [contactFolder](../resources/mailfolder.md). En el ejemplo, siguiente se muestra un nivel de anidamiento, pero un contacto puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -70,7 +69,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 |:---------------|:--------|
 | Authorization  | {token} de portador. Obligatorio.  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta

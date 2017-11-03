@@ -24,6 +24,8 @@ Puede usar Microsoft Graph para crear experiencias en torno al contexto único d
 
 Puede realizar todas estas acciones, entre otras, con la API de Microsoft Graph.
 
+>**Nota**: Al usar la API de Microsoft Graph, acepta las [Condiciones de uso de Microsoft Graph](../misc/terms-of-use.md) y la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
+
 ## <a name="next-steps"></a>Siguientes pasos
 
 - Consulte algunos [escenarios destacados](../concepts/featured_scenarios.md).

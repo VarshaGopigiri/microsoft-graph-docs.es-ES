@@ -53,8 +53,8 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |reminderMinutesBeforeStart|Int32|El número de minutos antes de la hora de inicio del evento en que se producirá la alerta del recordatorio.|
 |responseRequested|Booleano|Se establece en true si el remitente quiere una respuesta cuando el evento se acepta o rechaza.|
 |sensitivity|String| Los valores posibles son: `Normal`, `Personal`, `Private`, `Confidential`.|
-|showAs|String|El estado que se mostrará: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
-|inicio|[DateTimeTimeZone](../resources/datetimetimezone.md)|La hora de inicio del evento. <br/><br/>De manera predeterminada, la hora de inicio está en formato UTC. Puede especificar una zona horaria opcional en StartTimeZone, expresar la hora de inicio en esa zona horaria e incluir una diferencia horaria de UTC. Tenga en cuenta que, si usa StartTimeZone, debe especificar también un valor para EndTimeZone.<br/><br/>En este ejemplo, se especifica el 25 de febrero de 2015, a las 7:34 p. m. en hora estándar del Pacífico: "2015-02-25T19:34:00-08:00".  |
+|showAs|String|El estado que se mostrará. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
+|start|[DateTimeTimeZone](../resources/datetimetimezone.md)|La hora de inicio del evento. <br/><br/>De manera predeterminada, la hora de inicio está en formato UTC. Puede especificar una zona horaria opcional en StartTimeZone, expresar la hora de inicio en esa zona horaria e incluir una diferencia horaria de UTC. Tenga en cuenta que, si usa StartTimeZone, debe especificar también un valor para EndTimeZone.<br/><br/>En este ejemplo, se especifica el 25 de febrero de 2015, a las 7:34 p. m. en hora estándar del Pacífico: "2015-02-25T19:34:00-08:00".  |
 |subject|String|El texto de la línea de asunto del evento.|
 
 Dado que el recurso **event** admite [extensiones](../../../concepts/extensibility_overview.md), puede utilizar la operación `PATCH` para agregar, actualizar o eliminar sus propios datos específicos de la aplicación en las propiedades personalizadas de una extensión en una instancia **event** existente.
@@ -62,8 +62,11 @@ Dado que el recurso **event** admite [extensiones](../../../concepts/extensibili
 ## <a name="response"></a>Respuesta
 
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [event](../resources/event.md) actualizado en el cuerpo de la respuesta.
+
 ## <a name="example"></a>Ejemplo
+
 ##### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
@@ -81,12 +84,15 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
+
 ##### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
@@ -105,6 +111,7 @@ Content-length: 285
     "response": "",
     "time": "datetime-value"
   },
+  "recurrence": null,  
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true

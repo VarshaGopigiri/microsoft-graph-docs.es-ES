@@ -75,7 +75,7 @@ Este recurso admite:
 |:---------------|:--------|:----------|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el contacto. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el contacto. Solo lectura. Admite valores NULL.|
-|photo|[profilePhoto](profilephoto.md)| Imagen de contacto opcional. Puede obtener o establecer una foto para un contacto.|
+|Foto|[profilePhoto](profilephoto.md)| Imagen de contacto opcional. Puede obtener o establecer una foto para un contacto.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el contacto. Solo lectura. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON

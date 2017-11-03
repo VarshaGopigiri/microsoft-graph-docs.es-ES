@@ -25,12 +25,11 @@ GET /me/contactFolders/{id}
 
 Esta capacidad solo está disponible en las operaciones GET de:
 
-- Carpetas de contactos compartidas
-- Calendarios compartidos
-- Contactos y eventos en carpetas compartidas
+- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
+- Contactos, eventos y mensajes en carpetas compartidas
 - Los recursos anteriores en buzones delegados
 
-Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.
+Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
 
 
 ## <a name="permissions"></a>Permisos
@@ -55,7 +54,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 |:-----------|:------|:----------|
 | Authorization  | string  | {token} de portador. Obligatorio. |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta

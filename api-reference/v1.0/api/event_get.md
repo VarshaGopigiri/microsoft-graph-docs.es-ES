@@ -29,12 +29,11 @@ GET /me/events/{id}
 
 Esta capacidad solo está disponible en las operaciones GET de:
 
-- Carpetas de contactos compartidas
-- Calendarios compartidos
-- Contactos y eventos en carpetas compartidas
+- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
+- Contactos, eventos y mensajes en carpetas compartidas
 - Los recursos anteriores en buzones delegados
 
-Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.
+Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
 
 
 ### <a name="support-various-time-zones"></a>Compatibilidad con varias zonas horarias
@@ -181,7 +180,7 @@ Content-length: 1928
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](../../../concepts/extensibility_open_users.md)

@@ -29,12 +29,11 @@ GET /me/events
 
 Esta capacidad solo está disponible en las operaciones GET de:
 
-- Carpetas de contactos compartidas
-- Calendarios compartidos
-- Contactos y eventos en carpetas compartidas
+- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
+- Contactos, eventos y mensajes en carpetas compartidas
 - Los recursos anteriores en buzones delegados
 
-Esta capacidad no está disponible en otras operaciones de contactos, eventos y sus carpetas.
+Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
 
 
 ### <a name="support-various-time-zones"></a>Compatibilidad con varias zonas horarias
