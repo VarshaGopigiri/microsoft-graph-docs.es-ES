@@ -15,7 +15,7 @@ En este tutorial, se describe cómo realizar solicitudes a la API de REST de Exc
 
 
 ## <a name="authorization-and-scopes"></a>Autorización y ámbitos
-Puede usar el [punto de conexión de Azure AD v2.0](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) para autenticar las llamadas API de REST de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
+Puede usar el [punto de conexión de Azure AD v2.0](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) para autenticar las llamadas a la API de REST de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
   
 Uno de los siguientes [ámbitos de permiso](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference) es necesario para usar el recurso de Excel:
 
@@ -49,7 +49,7 @@ Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. 
 
 4. Copie el identificador de la aplicación. Se trata del identificador único para su aplicación.
 
-5. En **Secretos de aplicación**, seleccione **Generar nueva contraseña**. Copie el secreto de aplicación del cuadro de diálogo **Nueva contraseña generada**.
+5. En **Secretos de aplicación**, elija **Generar nueva contraseña**. Copie el secreto de aplicación del cuadro de diálogo **Nueva contraseña generada**.
 
     Deberá usar el ID y el secreto de aplicación para configurar la aplicación.
 
@@ -59,7 +59,7 @@ Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. 
 
     La opción **Permitir flujo implícito** habilita el flujo híbrido de OpenID Connect. Durante la autenticación, esto permite que la aplicación reciba tanto la información de inicio de sesión (el **id_token**) como los artefactos (en este caso, un código de autorización) que la aplicación usa para obtener un token de acceso.
 
-8. Elija **Guardar**.
+8. Seleccione **Guardar**.
 
 ### <a name="create-oauth-client"></a>Crear el cliente de OAuth
 
@@ -118,8 +118,8 @@ El token de acceso permite que su aplicación cree solicitudes autenticadas en l
     headers = { 
         'User-Agent' : 'python_tutorial/1.0',
         'Authorization' : 'Bearer {0}'.format(access_token),
-         'Accept' : 'application/json',
-         'Content-Type' : 'application/json'
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
     }
 ```
 > **Nota**: La solicitud también debe enviar un encabezado **Content-Type** con un valor que acepte la API de Graph. Por ejemplo, `application/json`.
@@ -130,7 +130,7 @@ El token de acceso permite que su aplicación cree solicitudes autenticadas en l
 Transmita un objeto JSON al establecer el valor `persistChanges` en `true` o `false`. Cuando el valor de `persistChanges` se establece en `false`, se devuelve un identificador de sesión no persistente. En este ejemplo, se usa la biblioteca HTTP [Requests](http://docs.python-requests.org/en/latest/user/quickstart) 
 
 ```python
-     # Replace the id with your Excel workbook's drive id
+    # Replace the id with your Excel workbook's drive id
     url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
     # Set request headers
     headers = { 
@@ -151,7 +151,7 @@ Transmita un objeto JSON al establecer el valor `persistChanges` en `true` o `fa
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -183,7 +183,7 @@ El identificador de sesión devuelto de la llamada anterior se pasa como un enca
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

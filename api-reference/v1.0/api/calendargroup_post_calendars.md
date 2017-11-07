@@ -1,14 +1,14 @@
 # <a name="create-calendar"></a>Create Calendar
 
-Usa esta API para crear un calendario nuevo en un grupo de calendarios.
+Use esta API para crear un calendario en un grupo de calendarios para un [usuario](../resources/user.md). 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Calendars.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Calendars.ReadWrite    | 
-|Aplicación | Calendars.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Calendars.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Calendars.ReadWrite    |
+|Aplicación | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -28,12 +28,12 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json. Obligatorio.  |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Calendar](../resources/calendar.md).
+## <a name="request-body"></a>Cuerpo de solicitud
+En el cuerpo de la solicitud, especifique una representación JSON del objeto [calendar](../resources/calendar.md).
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201, Created` y el objeto [Calendar](../resources/calendar.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [calendar](../resources/calendar.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud

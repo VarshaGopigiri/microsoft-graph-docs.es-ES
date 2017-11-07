@@ -33,7 +33,7 @@ Vea el [ejemplo](#example-to-synchronize-events-in-a-calendar-view) siguiente pa
 
 ### <a name="optional-request-header"></a>Encabezado de solicitud opcional
 
-Cada solicitud GET de la consulta de delta devuelve una colección de uno o más eventos en la respuesta. Opcionalmente se puede especificar el encabezado de solicitud, _Prefer: odata.maxpagesize={x}_, para establecer el número máximo de eventos en una respuesta.
+Cada solicitud GET de la consulta delta devuelve una colección de uno o más eventos en la respuesta. Opcionalmente se puede especificar el encabezado de solicitud, `Prefer: odata.maxpagesize={x}`, para establecer el número máximo de eventos en una respuesta.
 
 
 ## <a name="example-to-synchronize-events-in-a-calendar-view"></a>Ejemplo para sincronizar los eventos en una vista de calendario
