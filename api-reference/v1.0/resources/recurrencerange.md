@@ -32,7 +32,7 @@ Aquí tiene una representación JSON del recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.recurrencerange"
+  "@odata.type": "microsoft.graph.recurrenceRange"
 }-->
 
 ```json

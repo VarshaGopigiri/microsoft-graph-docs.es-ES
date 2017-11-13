@@ -1,4 +1,3 @@
-
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paginación de los datos de Microsoft Graph en la aplicación 
 
 Algunas consultas realizadas en Microsoft Graph devuelven varias páginas de datos debido a la paginación del servidor o al uso del parámetro `$top` para limitar específicamente el tamaño de página en una solicitud. Cuando un conjunto de resultados abarca varias páginas, Microsoft Graph devuelve una propiedad `@odata.nextLink` en la respuesta que contiene una dirección URL a la siguiente página de resultados. 
@@ -30,5 +29,3 @@ El comportamiento de paginación varía entre las distintas API de Microsoft Gra
 - Las distintas API pueden tener tamaños de página predeterminados y máximos diferentes.
 - Las distintas API pueden comportarse de forma diferente si se especifica un tamaño de página (a través del parámetro de consulta `$top`) que supera el tamaño máximo de página para la API. Según la API, se puede omitir el tamaño de página solicitado, se puede usar el tamaño de página máximo predeterminado para la API o Microsoft Graph puede devolver un error. 
 - No todos los recursos o relaciones admiten la paginación. Por ejemplo, las consultas a [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) no admiten la paginación. Esto incluye los objetos de rol de lectura así como los miembros de rol.
-- Algunas API de Microsoft Graph admiten la paginación hacia atrás mediante la anexión del parámetro de consulta `previous-page` (`&previous-page=true`) al valor de dirección URL de la propiedad `@odata:nextLink`. Una vez que se anexe este parámetro a la solicitud, se incluirá en el valor de dirección URL `@odata:nextLink` en las respuestas posteriores. Puede continuar con la paginación hacia atrás hasta que se devuelva una respuesta con un resultado vacío. Si se continúa la paginación se devolverá un error. Como alternativa, puede reanudar la paginación hacia delante desde la respuesta actual si quita el parámetro `previous-page` al enviar la solicitud de la siguiente página de resultados. 
-

@@ -26,7 +26,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `202, Accepted`. No devuelve nada en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `202 Accepted`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 En el siguiente ejemplo se muestra cómo llamar a esta API.
