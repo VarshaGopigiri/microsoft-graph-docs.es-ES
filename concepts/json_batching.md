@@ -3,7 +3,7 @@
 El procesamiento por lotes de JSON le permite optimizar la aplicación mediante la combinación de varias solicitudes en un solo objeto JSON. Por ejemplo, un cliente desea crear una vista de datos no relacionados, como:
 
 1. Una imagen almacenada en OneDrive
-2. Una lista de tareas del Planner
+2. Una lista de tareas de Planner
 3. El calendario de un grupo
 
 La combinación de estas tres solicitudes individuales en una sola solicitud por lotes puede ahorrarle a la aplicación una importante latencia de red.
@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 ```
 
-Las respuestas a las solicitudes por lotes pueden aparecer en un orden diferente. La propiedad `id` puede utilizarse para poner en correlación las respuestas y solicitudes individuales.
+Las respuestas a las solicitudes por lotes pueden aparecer en otro orden. La propiedad `id` puede utilizarse para poner en correlación las respuestas y solicitudes individuales.
 
 ```http
 200 OK
@@ -83,13 +83,13 @@ Content-Type: application/json
 
 Las solicitudes por lotes se envían siempre mediante el método `POST` al punto de conexión `/$batch`.
 
-Un cuerpo de solicitud por lotes JSON consta de un único objeto JSON con una propiedad requerida: `requests`. La propiedad `requests` es una matriz de solicitudes individuales. Para cada solicitud individual, son necesarias las propiedades `id`, `method` y `url`.
+Un cuerpo de solicitud por lotes JSON consta de un único objeto JSON con una propiedad necesaria: `requests`. La propiedad `requests` es una matriz de solicitudes individuales. Para cada solicitud individual, las propiedades `id`, `method` y `url` son necesarias.
 
 La propiedad `id` funciona principalmente como un valor de correlación para asociar las respuestas individuales a las solicitudes. Esto permite que el servidor procese las solicitudes en el lote en el orden más eficaz.
 
 Las propiedades `method` y `url` son exactamente lo que vería al principio de cualquier solicitud HTTP determinada. El método es el método HTTP y la dirección URL es la URL de recurso a la que normalmente se enviaría la solicitud individual.
 
-Opcionalmente, las solicitudes individuales también contienen una propiedad `headers` y una propiedad `body`. Ambas propiedades son normalmente objetos JSON, tal como se muestra en el ejemplo anterior. En algunos casos, `body` puede ser un valor de dirección URL codificada en base64 en lugar de un objeto JSON, por ejemplo, cuando el cuerpo es una imagen. En estos casos, el objeto `headers` debe contener un valor para `content-type`.
+Opcionalmente, las solicitudes individuales también contienen una propiedad `headers` y una propiedad `body`. Ambas propiedades son normalmente objetos JSON. En algunos casos, `body` puede ser un valor de dirección URL codificada en base64 en lugar de un objeto JSON, por ejemplo, cuando el cuerpo es una imagen. Cuando se incluye un `body` con la solicitud, el objeto `headers` debe contener un valor para `content-type`.
 
 ## <a name="response-format"></a>Formato de respuesta
 
@@ -99,13 +99,13 @@ El formato de respuesta para las solicitudes por lotes JSON es similar al format
 * Las respuestas individuales pueden aparecer en un orden diferente a las solicitudes.
 * En lugar de `method` y `url`, las respuestas individuales tienen una propiedad `status`. El valor de `status` es un número que representa el código de estado HTTP.
 
-Normalmente, el código de estado en una respuesta por lotes es `200` o `400`. Si la misma solicitud por lotes está mal formada, el código de estado es `400`. Si la solicitud por lotes se puede analizar, el código de estado es `200`. Un código de estado `200` en la respuesta por lotes no indica que las solicitudes individuales dentro del lote se hayan realizado correctamente. Por ello cada respuesta individual en la propiedad `responses` tiene un código de estado.
+Normalmente, el código de estado en una respuesta por lotes es `200` o `400`. Si la propia solicitud por lotes tiene un formato incorrecto, el código de estado es `400`. Si la solicitud por lotes se puede analizar, el código de estado es `200`. Un código de estado `200` en la respuesta por lotes no indica que las solicitudes individuales comprendidas en el lote se hayan realizado correctamente. Por ello, cada respuesta individual en la propiedad `responses` tiene un código de estado.
 
-Además de la propiedad `responses`, podría haber una propiedad `nextLink` en la respuesta por lotes. Esto permite a Microsoft Graph devolver una respuesta por lotes tan pronto como cualquiera de las solicitudes individuales se haya completado. Para asegurarse de que se recibieron todas las respuestas individuales, continúe con el `nextLink` en caso de que exista.
+Además de la propiedad `responses`, podría haber una propiedad `nextLink` en la respuesta por lotes. Esto permite a Microsoft Graph devolver una respuesta por lotes tan pronto como cualquiera de las solicitudes individuales se haya completado. Para asegurarse de que se recibieron todas las respuestas individuales, siga el `nextLink` en caso de que exista.
 
-## <a name="sequencing-requests-with-the-dependson-property"></a>Solicitudes de la secuencia con la propiedad dependsOn
+## <a name="sequencing-requests-with-the-dependson-property"></a>Secuenciar solicitudes con la propiedad dependsOn
 
-Las solicitudes individuales se pueden ejecutar en un orden especificado utilizando la propiedad `dependsOn`. Esta propiedad es una matriz de cadenas que hace referencia a la `id` de una solicitud individual diferente. Por este motivo, los valores de `id` deben ser únicos. Por ejemplo, en la siguiente solicitud, el cliente especifica que las solicitudes 1 y 3 se deben ejecutar en primer lugar, después, la solicitud 2 y, a continuación, la solicitud 4.
+Las solicitudes individuales se pueden ejecutar en un orden especificado mediante la propiedad `dependsOn`. Esta propiedad es una matriz de cadenas que hace referencia al `id` de otra solicitud individual. Por este motivo, los valores de `id` deben ser únicos. Por ejemplo, en la siguiente solicitud, el cliente especifica que las solicitudes 1 y 3 se deben ejecutar en primer lugar, luego la solicitud 2 y luego la 4.
 
 ```json
 {
@@ -140,7 +140,7 @@ Si se produce un error en una solicitud individual, cualquier solicitud que depe
 
 ## <a name="bypassing-url-length-limitations-with-batching"></a>Omitir las limitaciones de longitud de URL con el procesamiento por lotes
 
-Un caso de uso adicional para el procesamiento por lotes de JSON es omitir las limitaciones de longitud de dirección URL. En los casos donde la cláusula de filtro es compleja, la longitud de la dirección URL podría superar las limitaciones integradas en los navegadores u otros clientes HTTP. Puede utilizar el procesamiento por lotes de JSON como solución alternativa para ejecutar estas solicitudes simplemente porque la longitud de la URL pasa a formar parte de la carga de la solicitud.
+Un caso de uso adicional para el procesamiento por lotes de JSON es omitir las limitaciones de longitud de dirección URL. En los casos donde la cláusula de filtro es compleja, la longitud de la dirección URL podría superar las limitaciones integradas en los navegadores u otros clientes HTTP. Puede utilizar el procesamiento por lotes de JSON como solución alternativa para ejecutar estas solicitudes porque la longitud de la URL simplemente pasa a formar parte de la carga de la solicitud.
 
 ## <a name="known-issues"></a>Problemas conocidos
 
@@ -152,5 +152,5 @@ Para obtener una lista de las limitaciones actuales relacionadas con el procesam
 
 ## <a name="see-also"></a>Consulte también
 
-Para obtener más información sobre el formato de solicitud o respuesta por lotes JSON, consulte la [especificación OData JSON versión de formato 4.01][odata-4.01-json], sección 18. Tenga en cuenta que actualmente esta especificación es un borrador, pero no se espera que cambie.
+Para obtener más información sobre el formato de solicitud o respuesta por lotes JSON, consulte la [especificación OData JSON, versión de formato 4.01][odata-4.01-json], sección 18. Tenga en cuenta que actualmente esta especificación es un borrador, pero no se espera que cambie.
 

@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Carga de archivos reanudable
-ms.openlocfilehash: 11418e4f2dcb761faddbb8d8ed045e87278b8699
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 39aee7121483e423c4adbd910c80e1ca059c685a
+ms.sourcegitcommit: e9b5d370a1d9a03d908dc430994d6a196b1345b4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Cargar archivos de gran tamaño con una sesión de carga
 
@@ -50,6 +50,7 @@ No es necesario ningún cuerpo de solicitud. Sin embargo, puede especificar un c
 
 Por ejemplo, para controlar el comportamiento si ya existe el nombre de archivo, puede especificar la propiedad de comportamiento ante conflictos en el cuerpo de la solicitud.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "item": {
@@ -64,7 +65,7 @@ Por ejemplo, para controlar el comportamiento si ya existe el nombre de archivo,
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Si se incluye este encabezado de solicitud y la eTag (o cTag) proporcionada no coincide con la eTag actual en el elemento, se devuelve una respuesta de error `412 Precondition Failed`. |
 
-### <a name="response"></a>Respuesta
+### <a name="request"></a>Solicitud
 
 La respuesta a esta solicitud ofrecerá los detalles de la [uploadSession](../resources/uploadsession.md) recién creada, que incluye la dirección URL utilizada para cargar las partes del archivo. 
 
@@ -310,7 +311,7 @@ If-Match: {etag or ctag}
 
 Si el archivo puede confirmarse con los nuevos metadatos, se devolverá una respuesta `HTTP 201 Created` o `HTTP 200 OK` con los metadatos Item para el archivo cargado.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created
