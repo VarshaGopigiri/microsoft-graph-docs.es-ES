@@ -1,0 +1,112 @@
+# <a name="workbook-resource-type"></a><span data-ttu-id="cc364-101">Tipo de recurso Workbook</span><span class="sxs-lookup"><span data-stu-id="cc364-101">Workbook resource type</span></span>
+
+<span data-ttu-id="cc364-102">Workbook es el objeto de nivel superior que contiene los objetos de libro relacionados, como hojas de cálculo, tablas, intervalos, etc.</span><span class="sxs-lookup"><span data-stu-id="cc364-102">Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="cc364-103">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cc364-103">Properties</span></span>
+<span data-ttu-id="cc364-104">Ninguno</span><span class="sxs-lookup"><span data-stu-id="cc364-104">None</span></span>
+
+## <a name="methods"></a><span data-ttu-id="cc364-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="cc364-105">Methods</span></span>
+
+| <span data-ttu-id="cc364-106">Método</span><span class="sxs-lookup"><span data-stu-id="cc364-106">Method</span></span>       | <span data-ttu-id="cc364-107">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="cc364-107">Return Type</span></span>  |<span data-ttu-id="cc364-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="cc364-108">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="cc364-109">Crear una sesión</span><span class="sxs-lookup"><span data-stu-id="cc364-109">Create Session</span></span>](../api/workbook_createsession.md) | [<span data-ttu-id="cc364-110">workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="cc364-110">workbookSessionInfo</span></span>](workbooksessioninfo.md) |<span data-ttu-id="cc364-111">Crear una sesión de libro para iniciar una sesión persistente o no persistente.</span><span class="sxs-lookup"><span data-stu-id="cc364-111">Create a workbook session to start a persistent or non-persistent session.</span></span>|
+|[<span data-ttu-id="cc364-112">Cerrar sesión</span><span class="sxs-lookup"><span data-stu-id="cc364-112">Close Session</span></span>](../api/workbook_closesession.md) | <span data-ttu-id="cc364-113">Ninguno</span><span class="sxs-lookup"><span data-stu-id="cc364-113">None</span></span> |<span data-ttu-id="cc364-114">Cerrar una sesión existente.</span><span class="sxs-lookup"><span data-stu-id="cc364-114">Close an existing session.</span></span>|
+|[<span data-ttu-id="cc364-115">Actualizar sesión</span><span class="sxs-lookup"><span data-stu-id="cc364-115">Refresh Session</span></span>](../api/workbook_refreshsession.md) | <span data-ttu-id="cc364-116">Ninguno</span><span class="sxs-lookup"><span data-stu-id="cc364-116">None</span></span> |<span data-ttu-id="cc364-117">Actualizar una sesión existente.</span><span class="sxs-lookup"><span data-stu-id="cc364-117">Refresh an existing session.</span></span>|
+
+
+## <a name="relationships"></a><span data-ttu-id="cc364-118">Relaciones</span><span class="sxs-lookup"><span data-stu-id="cc364-118">Relationships</span></span>
+| <span data-ttu-id="cc364-119">Relación</span><span class="sxs-lookup"><span data-stu-id="cc364-119">Relationship</span></span> | <span data-ttu-id="cc364-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="cc364-120">Type</span></span>   |<span data-ttu-id="cc364-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="cc364-121">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="cc364-122">names</span><span class="sxs-lookup"><span data-stu-id="cc364-122">names</span></span>|<span data-ttu-id="cc364-123">Colección [NamedItem](nameditem.md)</span><span class="sxs-lookup"><span data-stu-id="cc364-123">[NamedItem](nameditem.md) collection</span></span>|<span data-ttu-id="cc364-p101">Representa una colección de elementos con nombre en el ámbito del libro (intervalos y constantes con nombre). Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="cc364-p101">Represents a collection of workbook scoped named items (named ranges and constants). Read-only.</span></span>|
+|<span data-ttu-id="cc364-126">tables</span><span class="sxs-lookup"><span data-stu-id="cc364-126">tables</span></span>|<span data-ttu-id="cc364-127">Colección [Table](table.md)</span><span class="sxs-lookup"><span data-stu-id="cc364-127">[Table](table.md) collection</span></span>|<span data-ttu-id="cc364-p102">Representa una colección de tablas asociadas con el libro. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="cc364-p102">Represents a collection of tables associated with the workbook. Read-only.</span></span>|
+|<span data-ttu-id="cc364-130">worksheets</span><span class="sxs-lookup"><span data-stu-id="cc364-130">worksheets</span></span>|<span data-ttu-id="cc364-131">Colección [Worksheet](worksheet.md)</span><span class="sxs-lookup"><span data-stu-id="cc364-131">[Worksheet](worksheet.md) collection</span></span>|<span data-ttu-id="cc364-p103">Representa una colección de hojas de cálculo asociadas con el libro. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="cc364-p103">Represents a collection of worksheets associated with the workbook. Read-only.</span></span>|
+
+## <a name="functions"></a><span data-ttu-id="cc364-134">Funciones</span><span class="sxs-lookup"><span data-stu-id="cc364-134">Functions</span></span>
+
+<span data-ttu-id="cc364-135">[Funciones de Excel](#functions): Para invocar una función de libro, use la sintaxis `POST /workbook/functions/{function-name}` y proporcione los argumentos de la función en el cuerpo mediante un objeto JSON.</span><span class="sxs-lookup"><span data-stu-id="cc364-135">[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object.</span></span> <span data-ttu-id="cc364-136">Las cadenas `value` y `error` resultantes de la función se devuelven en el objeto de resultado de la función.</span><span class="sxs-lookup"><span data-stu-id="cc364-136">The function's resulting `value` and any `error` strings are returned in the function result object.</span></span> <span data-ttu-id="cc364-137">El valor `error` de `null` indica que la función se ha ejecutado correctamente.</span><span class="sxs-lookup"><span data-stu-id="cc364-137">The `error` value of `null` indicates successful execution of the function.</span></span> 
+
+<span data-ttu-id="cc364-138">La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188).</span><span class="sxs-lookup"><span data-stu-id="cc364-138">The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188).</span></span> <span data-ttu-id="cc364-139">Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.</span><span class="sxs-lookup"><span data-stu-id="cc364-139">Refer to the function signature for specific parameter names and data types.</span></span>
+
+<span data-ttu-id="cc364-140">_Notas importantes:_</span><span class="sxs-lookup"><span data-stu-id="cc364-140">_Important notes:_</span></span> 
+* <span data-ttu-id="cc364-141">El parámetro de entrada de intervalo se suministra mediante un objeto range en lugar de la cadena de dirección de intervalo.</span><span class="sxs-lookup"><span data-stu-id="cc364-141">The range input parameter is supplied using a range object instead of the range address string.</span></span>  
+* <span data-ttu-id="cc364-142">El parámetro de índice es 1 indexado, a diferencia del índice 0 usado en la mayoría de las API.</span><span class="sxs-lookup"><span data-stu-id="cc364-142">The index parameter is 1-indexed unlike the 0-index used in most of the APIs.</span></span> 
+
+<span data-ttu-id="cc364-143">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="cc364-143">Example:</span></span> 
+
+<span data-ttu-id="cc364-144">En el ejemplo siguiente, para llamar a la función `vlookup`, se pasan el valor de búsqueda, el rango de entrada y el valor que se devolverá.</span><span class="sxs-lookup"><span data-stu-id="cc364-144">In the below example, `vlookup` function is called by passing lookup value, input range and the value to be returned.</span></span> 
+
+<span data-ttu-id="cc364-145">Solicitud:</span><span class="sxs-lookup"><span data-stu-id="cc364-145">Request:</span></span> 
+
+```http 
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{
+    "lookupValue": "Temperature",
+    "tableArray": { "Address": "Sheet1!E1:G5" },
+    "colIndexNum": 2,
+    "rangeLookup": false
+}
+```
+
+<span data-ttu-id="cc364-146">Respuesta:</span><span class="sxs-lookup"><span data-stu-id="cc364-146">Response:</span></span>
+
+```http
+HTTP code: 200 OK
+content-type: application/json;odata.metadata 
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
+    "@odata.type": "#microsoft.graph.workbookFunctionResult",
+    "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/vlookup()",
+    "error": null,
+    "value": "28.3"
+}
+```
+
+<span data-ttu-id="cc364-147">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="cc364-147">Example:</span></span> 
+
+<span data-ttu-id="cc364-148">En el ejemplo siguiente, para llamar a la función `median`, se pasan los intervalos de entrada en una matriz.</span><span class="sxs-lookup"><span data-stu-id="cc364-148">In the below example, `median` function is called by passing the input range(s) in an array.</span></span> 
+
+<span data-ttu-id="cc364-149">Solicitud:</span><span class="sxs-lookup"><span data-stu-id="cc364-149">Request:</span></span> 
+
+```http 
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{
+"values" :  [
+        { "address": "Sheet2!A1:A5" },
+        { "address": "Sheet2!B1:B5" },
+      ] 
+}
+```
+
+<span data-ttu-id="cc364-150">Respuesta:</span><span class="sxs-lookup"><span data-stu-id="cc364-150">Response:</span></span>
+
+```http
+HTTP code: 200 OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
+  "@odata.type": "#microsoft.graph.workbookFunctionResult",
+  "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
+  "error": null,
+  "value": 30
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Workbook resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
