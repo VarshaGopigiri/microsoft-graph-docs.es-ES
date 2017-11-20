@@ -4,18 +4,20 @@ Microsoft Graph proporciona parámetros de consulta opcionales que puede usar pa
 
 >**Nota:** Haga clic en los ejemplos para probarlos en [Probador de Graph][graph-explorer].
 
-|Nombre|Descripción|Ejemplo|
-|:---------------|:--------|:-------|
-|[$count](#count)|Recupera el número total de recursos coincidentes.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)|
-|[$expand](#expand)|Recupera los recursos relacionados.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)|
-|[$filter](#filter)|Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)|
-|[$format](#format)|Devuelve los resultados en el formato de medio especificado.|[`/users?$format=json`](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)|
-|[$orderby](#orderby)|Ordena los resultados.|[`/users?$orderby=displayName desc`](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0)|
-|[$search](#search)| Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0)|
-|[$select](#select)|Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)|
-|[$skip](#skip)|Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados.  | [`/me/messages?$skip=11`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0)|
-|[$skipToken](#skiptoken)|Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707402000100000017 ... 65612D643839392D343230372D613033662D306332623836633432363932B900000000000000000000%27`|
-|[$top](#top)|Establece el tamaño de la página de resultados. |[`/users?$top=2`](https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0)|
+| Nombre                     | Descripción | Ejemplo
+|:-------------------------|:------------|:---------|
+| [$count](#count)         | Recupera el número total de recursos coincidentes. | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand)       | Recupera los recursos relacionados.|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter)       | Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format)       | Devuelve los resultados en el formato de medio especificado.|[`/users?$format=json`][format-example]
+| [$orderby](#orderby)     | Ordena los resultados.|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search)       | Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select)       | Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip)           | Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados. | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken) | Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top)             | Establece el tamaño de la página de resultados. |[`/users?$top=2`][top-example]
+
+
 
 Estos parámetros son compatibles con el [lenguaje de consulta de OData V4][odata-query]. No todos los parámetros se admiten en todas las API de Microsoft Graph, y la compatibilidad puede variar considerablemente entre los puntos de conexión `v1.0` y `beta`. 
 
@@ -72,7 +74,7 @@ Con algunas colecciones de recursos, también se pueden especificar las propieda
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children($select=id,name)&method=GET&version=v1.0)
+[Probar en el Probador de Graph][expand-example]
 
 > **Nota:** No todas las relaciones y recursos admiten el parámetro de consulta `$expand`. Por ejemplo, se pueden expandir las relaciones `directReports`, `manager` y `memberOf` en un usuario, pero no se pueden expandir sus relaciones `events`, `messages` o `photo`. No todos los recursos o relaciones admiten el uso de `$select` en elementos expandidos. 
 > 
@@ -88,7 +90,7 @@ Por ejemplo, para buscar usuarios cuyos nombres para mostrar comiencen por la le
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
+[Probar en el Probador de Graph][filter-example]
 
 La compatibilidad con los operadores `$filter` varía en función de la API de Microsoft Graph. Generalmente, se admiten los siguientes operadores lógicos: 
 
@@ -105,16 +107,16 @@ El operador de cadena `startswith` se suele admitir. El operador lambda `any` se
 
 En la tabla siguiente se muestran algunos ejemplos de uso del parámetro de consulta `$filter`.
 
->**Nota:** Haga clic en los ejemplos para probarlos en [Probador de Graph][graph-explorer].
+> **Nota:** Haga clic en los ejemplos para probarlos en [Probador de Graph][graph-explorer].
 
-|Descripción|Ejemplo|
-|:--------|:-------|
-|  Buscar usuarios con el nombre Mary en varias propiedades. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| Obtener todos los eventos del usuario que inició sesión que comiencen después del 1/7/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
-| Obtener todos los correos electrónicos de una dirección específica recibidos por el usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| Obtener todos los correos electrónicos recibidos en abril de 2017 por el usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
-| Obtener todos los correos electrónicos no leídos en la Bandeja de entrada del usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| Enumerar todos los grupos de Office 365 de una organización. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| Descripción | Ejemplo
+|:------------|:--------|
+| Buscar usuarios con el nombre Mary en varias propiedades. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) 
+| Obtener todos los eventos del usuario que inició sesión que comiencen después del 1/7/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) 
+| Obtener todos los correos electrónicos de una dirección específica recibidos por el usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) 
+| Obtener todos los correos electrónicos recibidos en abril de 2017 por el usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
+| Obtener todos los correos electrónicos no leídos en la Bandeja de entrada del usuario que inició sesión. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
+| Enumerar todos los grupos de Office 365 de una organización. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
 
 > **Nota:** Los operadores `$filter` siguientes no se admiten para recursos de Azure AD: `ne`, `gt`, `ge`, `lt`, `le` y `not`. El operador de cadena `contains` actualmente no se admite en ningún recurso de Microsoft Graph.
 
@@ -128,7 +130,7 @@ Por ejemplo, la solicitud siguiente devuelve los usuarios de la organización en
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0)
+[Probar en el Probador de Graph][format-example]
 
 > **Nota**: El parámetro de consulta `$format` admite varios formatos, como atom, xml y json, pero puede que no todos los formatos devuelvan resultados.
 
@@ -141,7 +143,7 @@ Por ejemplo, la solicitud siguiente devuelve los usuarios de la organización or
 ```http
 GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName&method=GET&version=v1.0)
+[Probar en el Probador de Graph][orderby-example]
 
 También puede ordenar por entidades de tipo complejo. En la solicitud siguiente se obtienen los mensajes y se ordenan por el campo `address` de la propiedad `from`, que es del tipo complejo `emailAddress`:
 
@@ -157,12 +159,13 @@ Con algunas API se pueden ordenar los resultados por varias propiedades. Por eje
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
+
 [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 
  > **Nota:** Con recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), no se puede combinar `$orderby` con expresiones`$filter`. 
 
-## <a name="search"></a>buscar
+## <a name="search"></a>buscar 
 
 Use el parámetro de consulta `$search` para restringir los resultados de una solicitud para que coincidan con un criterio de búsqueda
 
@@ -196,7 +199,9 @@ En el ejemplo siguiente, se devuelven todos los mensajes del buzón del usuario 
 GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 ```
 
-En el ejemplo siguiente se buscan todos los mensajes en el buzón del usuario que se enviaron desde una dirección de correo específica:
+[Probar en el Probador de Graph][search-example]
+
+En el ejemplo siguiente, se buscan todos los mensajes en el buzón del usuario que se enviaron desde una dirección de correo específica:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
@@ -227,6 +232,7 @@ Por último, puede combinar búsquedas de contactos y de temas en la misma solic
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
+
 Esta solicitud realiza básicamente dos búsquedas: una búsqueda parcial en las propiedades `displayName` y `emailAddress` de los contactos pertinentes del usuario que ha iniciado sesión, y una búsqueda de tema para "pizza" en los contactos pertinentes del usuario. Después, los resultados se clasifican, ordenan y devuelven. Tenga en cuenta que la búsqueda no es restrictiva; puede obtener resultados que contengan contactos que coincidan con "tyl" de forma aproximada, o que están interesados en "pizza", o ambos.
 
 Para más información sobre la API de contactos, vea [Obtener información sobre contactos relevantes](./people_example.md).  
@@ -241,7 +247,7 @@ Por ejemplo, al recuperar los mensajes del usuario que ha iniciado sesión, pued
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
+[Probar en el Probador de Graph][select-example]
 
 > **Importante:** En general, se recomienda usar `$select` para limitar las propiedades devueltas por una consulta a las necesarias para la aplicación. Esto es especialmente cierto para las consultas que potencialmente pueden devolver un conjunto de resultados grande. Limitar las propiedades devueltas en cada fila reducirá la carga en la red y ayudará a mejorar el rendimiento de la aplicación.
 >
@@ -254,7 +260,7 @@ Use el parámetro de consulta `$skip` para establecer el número de elementos qu
 ```http
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
+[Probar en el Probador de Graph][skip-example]
 
 > **Nota:** En algunas API de Microsoft Graph, como Correo y Calendario de Outlook (`message`, `event` y `calendar`), se usa `$skip` para implementar la paginación. Cuando los resultados de una consulta ocupan varias páginas, estas API devolverán una propiedad `@odata:nextLink` con una dirección URL que contiene un parámetro `$skip`. Puede usar esta dirección URL para devolver la siguiente página de resultados. Para obtener más información, vea [Paginación](./paging.md).
 
@@ -275,7 +281,7 @@ Por ejemplo, la solicitud siguiente devuelve los cinco primeros mensajes en el b
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=5&method=GET&version=v1.0)
+[Probar en el Probador de Graph][top-example]
 
 
 ## <a name="error-handling-for-query-parameters"></a>Control de errores para parámetros de consulta
@@ -304,3 +310,14 @@ Pero es importante tener en cuenta que los parámetros de consulta especificados
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358
 [odata-query]: http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356
+[count-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0
+[expand-example]: https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0
+[filter-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0
+[format-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$format=json&method=GET&version=v1.0
+[orderby-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$orderby=displayName%20DESC&method=GET&version=v1.0
+[search-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=pizza&method=GET&version=v1.0
+[select-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0
+[skip-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$skip=11&method=GET&version=v1.0
+[top-example]: https://developer.microsoft.com/graph/graph-explorer?request=users?$top=2&method=GET&version=v1.0
+
+

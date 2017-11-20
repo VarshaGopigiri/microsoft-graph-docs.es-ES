@@ -1,5 +1,4 @@
-<a id="invitation-manager" class="xliff"></a>
-# administrador de invitaciones
+# <a name="invitation-manager"></a>administrador de invitaciones
 
 Use el Administrador de invitaciones para crear una invitación para agregar un usuario externo a la organización. 
 
@@ -13,14 +12,12 @@ El proceso de invitación sigue el flujo siguiente:
 Al crear una invitación, se devolverá una dirección URL de canje en la respuesta (*inviteRedeemUrl*). La API para crear la invitación puede enviar automáticamente un correo electrónico con la dirección URL de canje al usuario invitado, al establecer *sendInvitationMessage* en true. También puede personalizar el mensaje que se enviará al usuario invitado. En su lugar, si quiere enviar la dirección URL de canje a través de otros medios, puede establecer *sendInvitationMessage* en false y usar la dirección URL de canje de la respuesta para elaborar su propia comunicación. Actualmente, no hay ninguna API para realizar el proceso de canje. El usuario invitado tiene que hacer clic en el vínculo *inviteRedeemUrl* enviado en la comunicación en el paso anterior y pasar por el proceso de canje interactivo en un explorador. Una vez completado, el usuario invitado se convierte en usuario externo de la organización.
 
 
-<a id="methods" class="xliff"></a>
-## Métodos
+## <a name="methods"></a>Métodos
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |[Crear invitación](../api/invitation_post.md) | invitation | Escriba las propiedades y relaciones del objeto de invitación.|
 
-<a id="properties" class="xliff"></a>
-## Propiedades
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|Nombre para mostrar del usuario al que se invita.|
@@ -29,17 +26,15 @@ Al crear una invitación, se devolverá una dirección URL de canje en la respue
 |sendInvitationMessage|Boolean|Indica si se debe enviar un correo electrónico al usuario al que se invita o no. El valor predeterminado es false.|
 |inviteRedirectUrl|String|La dirección URL a la que se redirigirá al usuario una vez que se canjee la invitación. Necesario.|
 |inviteRedeemUrl|String|La dirección URL que puede usar el usuario para canjear su invitación. Solo lectura|
-|invitedUserType|String|userType del usuario al que se invita. El valor predeterminado es Guest. Puede invitar como Member si es administrador de la empresa. |
+|invitedUserType|String|userType del usuario al que se invita. El valor predeterminado es Guest. Puede invitar como Member si es administrador de una empresa. |
 |status|String|El estado de la invitación. Valores posibles: PendingAcceptance, Completed, InProgress y Error|
 
-<a id="relationships" class="xliff"></a>
-## Relaciones
+## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|El usuario creado como parte de la creación de la invitación. Solo lectura|
 
-<a id="json-representation" class="xliff"></a>
-## Representación JSON
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
