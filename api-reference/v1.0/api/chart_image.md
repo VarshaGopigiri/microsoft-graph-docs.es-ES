@@ -20,14 +20,15 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
+| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|height|número|Opcional. Alto deseado de la imagen resultante.|
-|width|número|Opcional. Ancho deseado de la imagen resultante.|
+|height|number|Opcional. Alto deseado de la imagen resultante.|
+|width|number|Opcional. Ancho deseado de la imagen resultante.|
 |fittingMode|string|Opcional. Método usado para escalar el gráfico a las dimensiones especificadas (si se han establecido el alto y el ancho)".  Valores posibles: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Respuesta

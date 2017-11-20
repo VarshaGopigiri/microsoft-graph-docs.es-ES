@@ -17,10 +17,11 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridline
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
-## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:-----------|:-----------|
 | Authorization  | {token} de portador. Obligatorio. |
+| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.

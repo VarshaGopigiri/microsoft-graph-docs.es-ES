@@ -28,7 +28,7 @@ PATCH /groups/{id}/settings/{id}
 | Authorization  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. 
 
 | Propiedad | Tipo | Descripción |
@@ -55,8 +55,56 @@ Content-length: 173
   "templateId": "templateId-value",
   "values": [
     {
-      "name": "name-value",
-      "value": "value-value"
+      "name": "CustomBlockedWordsList",
+      "value": ""
+    },
+    {
+      "name": "EnableMSStandardBlockedWords",
+      "value": "False"
+    },
+    {
+      "name": "ClassificationDescriptions",
+      "value": ""
+    },
+    {
+      "name": "DefaultClassification",
+      "value": ""
+    },
+    {
+      "name": "PrefixSuffixNamingRequirement",
+      "value": ""
+    },
+    {
+      "name": "AllowGuestsToBeGroupOwner",
+      "value": "False"
+    },
+    {
+      "name": "AllowGuestsToAccessGroups",
+      "value": "True"
+    },
+    {
+      "name": "GuestUsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "GroupCreationAllowedGroupId",
+      "value": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "name": "AllowToAddGuests",
+      "value": "True"
+    },
+    {
+      "name": "UsageGuidelinesUrl",
+      "value": ""
+    },
+    {
+      "name": "ClassificationList",
+      "value": ""
+    },
+    {
+      "name": "EnableGroupCreation",
+      "value": "True"
     }
   ]
 }
