@@ -20,6 +20,7 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
+| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="response"></a>Respuesta
 

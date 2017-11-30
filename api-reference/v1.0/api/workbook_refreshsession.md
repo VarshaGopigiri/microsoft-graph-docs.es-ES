@@ -21,9 +21,9 @@ workbook-session-id: {session-id}
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
-| workbook-session-id | Workbook session Id que se va a actualizar |
+| workbook-session-id | Id. de sesión del libro que se va a actualizar |
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-body"></a>Cuerpo de solicitud
 Esta API no requiere ningún cuerpo de la solicitud.
 
 ## <a name="response"></a>Respuesta
