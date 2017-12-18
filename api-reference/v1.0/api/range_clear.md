@@ -1,50 +1,50 @@
-# <a name="range-clear"></a><span data-ttu-id="a6f3a-101">Range: clear</span><span class="sxs-lookup"><span data-stu-id="a6f3a-101">Range: clear</span></span>
+# <a name="range-clear"></a><span data-ttu-id="c76cb-101">Range: clear</span><span class="sxs-lookup"><span data-stu-id="c76cb-101">Range: clear</span></span>
 
-<span data-ttu-id="a6f3a-102">Borrar valores de rango, formato, relleno, borde, etc.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-102">Clear range values, format, fill, border, etc.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a6f3a-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="a6f3a-103">Permissions</span></span>
-<span data-ttu-id="a6f3a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="a6f3a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="c76cb-102">Borrar valores de rango, formato, relleno, borde, etc.</span><span class="sxs-lookup"><span data-stu-id="c76cb-102">Clear range values, format, fill, border, etc.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c76cb-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="c76cb-103">Permissions</span></span>
+<span data-ttu-id="c76cb-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c76cb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="a6f3a-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="a6f3a-106">Permission type</span></span>      | <span data-ttu-id="a6f3a-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="a6f3a-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c76cb-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="c76cb-106">Permission type</span></span>      | <span data-ttu-id="c76cb-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="c76cb-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a6f3a-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="a6f3a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="a6f3a-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a6f3a-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a6f3a-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a6f3a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6f3a-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-111">Not supported.</span></span>    |
-|<span data-ttu-id="a6f3a-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="a6f3a-112">Application</span></span> | <span data-ttu-id="a6f3a-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-113">Not supported.</span></span> |
+|<span data-ttu-id="c76cb-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="c76cb-108">Delegated (work or school account)</span></span> | <span data-ttu-id="c76cb-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c76cb-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c76cb-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c76cb-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c76cb-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="c76cb-111">Not supported.</span></span>    |
+|<span data-ttu-id="c76cb-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="c76cb-112">Application</span></span> | <span data-ttu-id="c76cb-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="c76cb-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a6f3a-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="a6f3a-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c76cb-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="c76cb-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/clear
-GET /workbook/worksheets/{id|name}/range(address='<address>')/clear
-GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
+POST /workbook/names(<name>)/range/clear
+POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
+POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="a6f3a-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="a6f3a-115">Request headers</span></span>
-| <span data-ttu-id="a6f3a-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="a6f3a-116">Name</span></span>       | <span data-ttu-id="a6f3a-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="a6f3a-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c76cb-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="c76cb-115">Request headers</span></span>
+| <span data-ttu-id="c76cb-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="c76cb-116">Name</span></span>       | <span data-ttu-id="c76cb-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="c76cb-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a6f3a-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="a6f3a-118">Authorization</span></span>  | <span data-ttu-id="a6f3a-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a6f3a-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a6f3a-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="a6f3a-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c76cb-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="c76cb-118">Authorization</span></span>  | <span data-ttu-id="c76cb-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c76cb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c76cb-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c76cb-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="c76cb-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="c76cb-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a6f3a-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="a6f3a-124">Request body</span></span>
-<span data-ttu-id="a6f3a-125">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-125">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c76cb-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="c76cb-124">Request body</span></span>
+<span data-ttu-id="c76cb-125">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="c76cb-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a6f3a-126">Parámetro</span><span class="sxs-lookup"><span data-stu-id="a6f3a-126">Parameter</span></span>    | <span data-ttu-id="a6f3a-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="a6f3a-127">Type</span></span>   |<span data-ttu-id="a6f3a-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="a6f3a-128">Description</span></span>|
+| <span data-ttu-id="c76cb-126">Parámetro</span><span class="sxs-lookup"><span data-stu-id="c76cb-126">Parameter</span></span>    | <span data-ttu-id="c76cb-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="c76cb-127">Type</span></span>   |<span data-ttu-id="c76cb-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="c76cb-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a6f3a-129">applyTo</span><span class="sxs-lookup"><span data-stu-id="a6f3a-129">applyTo</span></span>|<span data-ttu-id="a6f3a-130">string</span><span class="sxs-lookup"><span data-stu-id="a6f3a-130">string</span></span>|<span data-ttu-id="a6f3a-p104">Opcional. Determina el tipo de acción de borrado.  Valores posibles: `All`, `Formats`, `Contents`.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-p104">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
+|<span data-ttu-id="c76cb-129">applyTo</span><span class="sxs-lookup"><span data-stu-id="c76cb-129">applyTo</span></span>|<span data-ttu-id="c76cb-130">string</span><span class="sxs-lookup"><span data-stu-id="c76cb-130">string</span></span>|<span data-ttu-id="c76cb-p104">Opcional. Determina el tipo de acción de borrado.  Valores posibles: `All`, `Formats`, `Contents`.</span><span class="sxs-lookup"><span data-stu-id="c76cb-p104">Optional. Determines the type of clear action.  Possible values are: `All`, `Formats`, `Contents`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a6f3a-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a6f3a-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c76cb-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c76cb-134">Response</span></span>
 
-<span data-ttu-id="a6f3a-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c76cb-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c76cb-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a6f3a-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a6f3a-137">Example</span></span>
-<span data-ttu-id="a6f3a-138">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-138">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a6f3a-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a6f3a-139">Request</span></span>
-<span data-ttu-id="a6f3a-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c76cb-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c76cb-137">Example</span></span>
+<span data-ttu-id="c76cb-138">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="c76cb-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c76cb-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c76cb-139">Request</span></span>
+<span data-ttu-id="c76cb-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c76cb-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_clear"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
 Content-type: application/json
 Content-length: 32
 
@@ -53,15 +53,15 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a6f3a-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a6f3a-141">Response</span></span>
-<span data-ttu-id="a6f3a-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a6f3a-142">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c76cb-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c76cb-141">Response</span></span>
+<span data-ttu-id="c76cb-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c76cb-142">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
