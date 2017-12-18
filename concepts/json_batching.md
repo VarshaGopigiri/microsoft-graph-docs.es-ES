@@ -35,6 +35,17 @@ Content-Type: application/json
       "id": "3",
       "method": "GET",
       "url": "/groups/{id}/events"
+    },
+    {
+      "id": "4",
+      "url": "/me",
+      "method": "PATCH",
+      "body": {
+        "city" : "Redmond"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   ]
 }
@@ -74,6 +85,11 @@ Content-Type: application/json
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
+    },
+    {
+      "id": "4",
+      "status": 204,
+      "body": null
     }
   ]
 }
@@ -89,7 +105,7 @@ La propiedad `id` funciona principalmente como un valor de correlación para aso
 
 Las propiedades `method` y `url` son exactamente lo que vería al principio de cualquier solicitud HTTP determinada. El método es el método HTTP y la dirección URL es la URL de recurso a la que normalmente se enviaría la solicitud individual.
 
-Opcionalmente, las solicitudes individuales también contienen una propiedad `headers` y una propiedad `body`. Ambas propiedades son normalmente objetos JSON. En algunos casos, `body` puede ser un valor de dirección URL codificada en base64 en lugar de un objeto JSON, por ejemplo, cuando el cuerpo es una imagen. Cuando se incluye un `body` con la solicitud, el objeto `headers` debe contener un valor para `content-type`.
+Opcionalmente, las solicitudes individuales también contienen una propiedad `headers` y una propiedad `body`. Ambas propiedades normalmente son objetos JSON, tal y como se muestra en el ejemplo anterior. En algunos casos, `body` puede ser un valor de dirección URL codificada en base64 en lugar de un objeto JSON, por ejemplo, cuando el cuerpo es una imagen. Cuando se incluye un `body` con la solicitud, el objeto `headers` debe contener un valor para `Content-Type`.
 
 ## <a name="response-format"></a>Formato de respuesta
 

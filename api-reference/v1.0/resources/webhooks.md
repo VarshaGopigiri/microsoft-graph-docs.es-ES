@@ -22,7 +22,7 @@ O a una instancia de OneDrive personal del usuario: `/drives/{id}/root`
 
 Microsoft Graph acepta la solicitud de suscripción y después manda las notificaciones a la dirección URL especificada en la suscripción. La aplicación actúa entonces según su lógica de negocios. Por ejemplo, recupera más datos, actualiza la caché y las vistas, etc.
 
-Las aplicaciones deben renovar sus suscripciones antes de que expiren. El plazo actual de expiración más largo es de tres días menos 90 minutos desde el momento de su creación. Las aplicaciones tienen que renovar sus suscripciones antes de la fecha de expiración. De lo contrario tendrán que crear otra suscripción.
+Las aplicaciones tienen que renovar sus suscripciones antes de la fecha de expiración. De lo contrario tendrán que crear otra suscripción. Para obtener una lista de las fechas de expiración máximas, consulte [Duración máxima de la suscripción por tipo de recurso](subscription.md#maximum-length-of-subscription-per-resource-type).
 
 Las aplicaciones también pueden cancelar la suscripción en cualquier momento para dejar de recibir notificaciones.
 
@@ -94,7 +94,7 @@ Si se ejecuta correctamente, Microsoft Graph devuelve un código `201 Created` y
 
 El cliente puede renovar una suscripción con una fecha de expiración específica de hasta tres días desde el momento de la solicitud. La propiedad expirationDateTime es necesaria.
 
-## <a name="subscription-renewal-example"></a>Ejemplo de renovación de suscripción
+## <a name="subscription-renewal-example"></a>Ejemplo de renovación de la suscripción
 
 ```
 PATCH https://graph.microsoft.com/v1.0/subscriptions/{id};
@@ -169,7 +169,7 @@ Observe que el objeto de valor contiene una lista. Si hay muchas notificaciones 
 
 La aplicación comienza a recibir notificaciones y luego debe procesarlas. Estas son las tareas mínimas que debe realizar la aplicación para procesar una notificación:
 
-1. Valide la propiedad `clientState`. La propiedad clientState en la notificación debe coincidir con la enviada con la solicitud de suscripción.
+1. Validar la propiedad `clientState`. La propiedad clientState en la notificación debe coincidir con la enviada con la solicitud de suscripción.
   > Nota: Si no es así, no debe considerar la notificación como válida. También debe investigar de dónde proviene la notificación y tomar las medidas adecuadas.
 
 2. Actualizar la aplicación según la lógica empresarial.
