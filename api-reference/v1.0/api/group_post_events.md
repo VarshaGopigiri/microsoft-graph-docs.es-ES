@@ -1,6 +1,6 @@
 # <a name="create-event"></a>Create Event
-
 Use esta API para crear un objeto [event](../resources/event.md).
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -8,7 +8,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.ReadWrite.All |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -16,6 +16,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
@@ -25,11 +26,10 @@ POST /groups/{id}/calendar/events
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Event](../resources/event.md).
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [Event](../resources/event.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+#### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
@@ -53,8 +53,11 @@ Content-length: 285
 }
 ```
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [event](../resources/event.md).
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+
+#### <a name="response"></a>Respuesta
+Aquí tiene un ejemplo de la respuesta.
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -47,7 +47,6 @@ Ejemplos de funciones de grupo que admiten permisos delegados y de aplicación:
 * Grupo [configuración del directorio](../api-reference/v1.0/resources/directoryobject.md), tipo y sincronización
 * Propietarios de grupo y pertenencia
 
-
 Ejemplos de funciones de grupo que admiten solo permisos delegados:
 
 * Conversaciones, eventos y fotos de grupo
@@ -73,7 +72,7 @@ Actualmente, [el listado de los equipos a los que un usuario se ha unido](../api
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>Agregar y obtener los datos adjuntos de las publicaciones de grupo
 
-Actualmente, al [agregar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) datos adjuntos a las publicaciones de grupo, así como al [enumerar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) y obtener los datos adjuntos de las publicaciones de grupo, se devuelve el mensaje de error "La solicitud de OData no es compatible". Se ha desarrollado una corrección tanto para la versión `/v1.0` como para la `/beta` y se espera que esté disponible a finales de enero de 2016.
+Actualmente, al [agregar](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/post_post_attachments) datos adjuntos a las publicaciones de grupo, así como al [enumerar](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/post_list_attachments) y obtener los datos adjuntos de las publicaciones de grupo, se devuelve el mensaje de error "La solicitud de OData no es compatible". Se ha desarrollado una corrección tanto para la versión `/v1.0` como para la `/beta` y se espera que esté disponible a finales de enero de 2016.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Establecer la propiedad allowExternalSenders
 
@@ -91,8 +90,8 @@ Para ver los problemas conocidos al usar la consulta de delta, vea la [sección 
 Actualmente, existe una compatibilidad parcial con un calendario basado en una suscripción a calendarios de Internet (ICS):
 
 * Puede agregar un calendario basado en ICS a un buzón de usuario mediante la interfaz de usuario, pero no mediante la API de Microsoft Graph.
-* [Enumerar los calendarios del usuario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id** de cada [calendario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
-* También puede [enumerar los eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
+* [Enumerar los calendarios del usuario](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id** de cada [calendario](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
+* También puede [enumerar los eventos](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
 
 ### <a name="accessing-a-shared-calendar"></a>Acceso a calendarios compartidos
 
@@ -135,7 +134,7 @@ Solo los contactos personales son compatibles actualmente. Actualmente no se adm
 
 En la versión `/v1.0`, `GET /me/contactFolders` no incluye la carpeta de contactos predeterminada del usuario. 
 
-Estará disponible una corrección. Mientras tanto, puede usar la siguiente consulta [enumerar contactos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts) y la propiedad **parentFolderId** como una solución alternativa para obtener el identificador de la carpeta de contactos predeterminada:
+Estará disponible una corrección. Mientras tanto, puede usar la siguiente consulta [enumerar contactos](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/user_list_contacts) y la propiedad **parentFolderId** como una solución alternativa para obtener el identificador de la carpeta de contactos predeterminada:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -143,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 En la consulta anterior:
 
-1. `/me/contacts?$top=1` obtiene las propiedades de un elemento [contact](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) de la carpeta de contactos predeterminada.
+1. `/me/contacts?$top=1` obtiene las propiedades de un elemento [contact](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/contact) de la carpeta de contactos predeterminada.
 2. Al anexar `&$select=parentFolderId` se devuelve solo la propiedad **parentFolderId** del contacto, que es el identificador de la carpeta de contactos predeterminada.
 
 
@@ -307,7 +306,7 @@ Mientras tanto, para desbloquear el desarrollo y las pruebas, puede usar la sigu
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Esta función solo está disponible en las API de REST de Office 365 o las API de Graph de Azure AD
 
-Algunas funciones todavía no están disponibles en Microsoft Graph. Si no ve la funcionalidad que busca, puede usar las [API de REST de Office 365](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) específicas del punto de conexión. Para Azure Active Directory, consulte la publicación del blog [Microsoft Graph o Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre las características que solo están disponibles a través de la API de Azure AD Graph.
+Algunas funciones todavía no están disponibles en Microsoft Graph. Si no ve la funcionalidad que busca, puede usar las [API de REST de Office 365](https://msdn.microsoft.com/es-ES/office/office365/api/api-catalog) específicas del punto de conexión. Para Azure Active Directory, consulte la publicación del blog [Microsoft Graph o Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre las características que solo están disponibles a través de la API de Azure AD Graph.
 
 ## <a name="feedback"></a>Comentarios
 

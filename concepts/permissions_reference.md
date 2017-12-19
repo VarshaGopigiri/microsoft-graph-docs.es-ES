@@ -4,13 +4,13 @@ Microsoft Graph expone permisos pormenorizados que controlan el acceso que las a
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Permisos delegados, permisos de la aplicación y permisos efectivos
 Microsoft Graph tiene dos tipos de permisos: **permisos delegados** y **permisos de la aplicación**. 
 
-- Los **permisos delegados** los usan las aplicaciones en las que un usuario debe haber iniciado sesión. En estas aplicaciones, el usuario o un administrador dan su consentimiento a los permisos que solicita la aplicación, y se delega permiso a la aplicación para que actúe como usuario que ha iniciado sesión cuando se hacen llamadas a Microsoft Graph. En ocasiones, los usuarios no administrativos pueden recibir permisos delegados, pero existen permisos con privilegios mayores que requieren el consentimiento del administrador.  
+- Los **permisos delegados** los usan las aplicaciones en las que un usuario debe haber iniciado sesión. En estas aplicaciones, el usuario o un administrador dan su consentimiento a los permisos que solicita la aplicación, y se delega permiso a la aplicación para que actúe como usuario que ha iniciado sesión cuando se hacen llamadas a Microsoft Graph. En ocasiones, los usuarios no administrativos pueden recibir permisos delegados, pero existen permisos con privilegios mayores que requieren el [consentimiento del administrador](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- Los **permisos de la aplicación** son los que usan las aplicaciones que se ejecutan sin que un usuario haya iniciado sesión, como las aplicaciones que se ejecutan como servicios en segundo plano o demonios.  Solo un administrador puede dar su consentimiento a los permisos de la aplicación. 
+- Los **permisos de la aplicación** son los que usan las aplicaciones que se ejecutan sin que un usuario haya iniciado sesión, como las aplicaciones que se ejecutan como servicios en segundo plano o demonios.  Solo un administrador puede dar su [consentimiento a los permisos de la aplicación](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 Los _permisos efectivos_ son los permisos que tendrá la aplicación al realizar solicitudes a Microsoft Graph. Es importante comprender la diferencia entre los permisos delegados y de aplicación concedidos a la aplicación y sus permisos efectivos al realizar llamadas a Microsoft Graph.
 
-- En el caso de los permisos delegados, los _permisos efectivos_ de la aplicación serán la intersección menos privilegiada de los permisos delegados concedidos a la aplicación (a través del consentimiento) y los privilegios del usuario que ha iniciado sesión. La aplicación nunca puede tener más privilegios que el usuario que ha iniciado sesión. Dentro de las organizaciones, los privilegios del usuario que ha iniciado sesión se pueden determinar mediante directiva o mediante la pertenencia a uno o más roles de administrador. Para obtener más información sobre los roles de administrador, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por ejemplo, supongamos que se le ha concedido a la aplicación el permiso delegado _User.ReadWrite.All_. En teoría, este permiso concede a la aplicación el permiso de leer y actualizar el perfil de todos los usuarios de una organización. Si el usuario que ha iniciado sesión es un administrador global, la aplicación podrá actualizar el perfil de cada usuario de la organización. Pero si el usuario que ha iniciado sesión no está incluido en un rol de administrador, la aplicación solo podrá actualizar el perfil del usuario que ha iniciado sesión. No podrá actualizar los perfiles de otros usuarios de la organización, ya que el usuario en cuyo nombre tiene permiso para actuar no cuenta con esos privilegios.
+- En el caso de los permisos delegados, los _permisos efectivos_ de la aplicación serán la intersección menos privilegiada de los permisos delegados concedidos a la aplicación (a través del consentimiento) y los privilegios del usuario que ha iniciado sesión. La aplicación nunca puede tener más privilegios que el usuario que ha iniciado sesión. Dentro de las organizaciones, los privilegios del usuario que ha iniciado sesión se pueden determinar mediante directiva o mediante la pertenencia a uno o más roles de administrador. Para obtener más información sobre los roles de administrador, vea [Asignación de roles de administrador en Azure Active Directory](https://docs.microsoft.com/es-ES/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por ejemplo, supongamos que se le ha concedido a la aplicación el permiso delegado _User.ReadWrite.All_. En teoría, este permiso concede a la aplicación el permiso de leer y actualizar el perfil de todos los usuarios de una organización. Si el usuario que ha iniciado sesión es un administrador global, la aplicación podrá actualizar el perfil de cada usuario de la organización. Pero si el usuario que ha iniciado sesión no está incluido en un rol de administrador, la aplicación solo podrá actualizar el perfil del usuario que ha iniciado sesión. No podrá actualizar los perfiles de otros usuarios de la organización, ya que el usuario en cuyo nombre tiene permiso para actuar no cuenta con esos privilegios.
   
 - En el caso de los permisos de aplicación, los _permisos efectivos_ de la aplicación serán el nivel completo de privilegios que conlleva el permiso. Por ejemplo, una aplicación que tiene el permiso de aplicación _User.ReadWrite.All_ puede actualizar el perfil de todos los usuarios de la organización. 
 
@@ -254,6 +254,41 @@ El permiso _Directory.ReadWrite.All_ concede los privilegios siguientes:
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
 ---
+
+## <a name="education-graph-permissions"></a>Permisos del gráfico de educación
+
+#### <a name="delegated-permissions"></a>Permisos delegados
+
+|Permiso |Cadena para mostrar |Descripción | Se requiere el consentimiento del administrador |
+|:--------- |:------------- |:---------- | :--------------------- |
+|EduAssignments.ReadBasic | Leer las tareas de clase de los usuarios sin calificaciones | Permite a la aplicación leer las tareas sin calificaciones en nombre del usuario | Sí |
+|EduAssignments.ReadWriteBasic | Leer y escribir las tareas de clase de los usuarios sin calificaciones | Permite a la aplicación leer y escribir las tareas sin calificaciones en nombre del usuario | Sí |
+|EduAssignments.Read | Leer la vista de los usuarios de las tareas de clase y sus calificaciones | Permite a la aplicación leer las tareas y sus calificaciones en nombre del usuario| Sí |
+|EduAssignments.ReadWrite | Leer y escribir la vista de los usuarios de las tareas de clase y sus calificaciones | Permite a la aplicación leer y escribir las tareas y sus calificaciones en nombre del usuario|Sí |
+|EduRostering.ReadBasic| Leer un subconjunto limitado de la vista de los usuarios de la lista | Permite a la aplicación leer un subconjunto limitado de los datos de la estructura de escuelas y clases en una lista de organización, y leer la información específica de educación sobre los usuarios en nombre del usuario.  | Sí  |
+
+
+#### <a name="application-permissions"></a>Permisos de la aplicación
+
+| Permiso | Cadena para mostrar | Descripción | Se requiere el consentimiento del administrador |
+| :--------- | :------------- | :---------- | :--------------------- |
+|EduAssignments.ReadBasic.All| Leer las tareas de clase sin calificaciones|Permite a la aplicación leer las tareas sin calificaciones para todos los usuarios| Sí |
+|EduAssignments.ReadWriteBasic.All | Leer y escribir las tareas de clase sin calificaciones | Permite a la aplicación leer y escribir las tareas sin calificaciones para todos los usuarios| Sí |
+|EduAssignments.Read.All| Leer las tareas de clase con calificaciones | Permite a la aplicación leer las tareas y sus calificaciones para todos los usuarios | Sí |
+|EduAssignments.ReadWrite.All | Leer y escribir las tareas de clase con calificaciones | Permite a la aplicación leer y escribir las tareas y sus calificaciones para todos los usuarios | Sí |
+|EduRostering.ReadBasic.All | Leer un subconjunto limitado de la lista de la organización. | Permite a la aplicación leer un subconjunto limitado de los datos de la estructura de escuelas y de clases en una lista de organización, y leer la información específica de educación sobre los usuarios. | Sí |
+|EduRostering.Read.All | Lea la lista de la organización. | Permite a la aplicación leer la estructura de escuelas y de clases en una lista de organización, y leer la información específica de educación sobre los usuarios. | Sí |
+|EduRostering.ReadWrite.All| Leer y escribir la lista de la organización. | Permite a la aplicación leer y escribir la estructura de escuelas y de clases en una lista de organización, y leer y escribir la información específica de educación sobre los usuarios.  | Sí |
+
+### <a name="example-usage"></a>Ejemplos de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _EduAssignments.Read_: Obtener información de las tareas del alumno que haya iniciado sesión (`GET /education/classes/<id>/assignments/<id>`)
+* _EduAssignments.ReadWriteBasic_: Enviar la tarea del alumno que haya iniciado sesión (`GET /education/classes/<id>/assignments/<id>submit`)
+* _EduRoster.ReadBasic_: Clases a las que asiste o en las que enseña un alumno que haya iniciado sesión (`GET /education/classes/<id>/members`)
+
+Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
 ## <a name="files-permissions"></a>Permisos de archivos
 

@@ -13,9 +13,9 @@ devuelve una colección de objetos de hoja de cálculo que forman parte del libr
 
 ## <a name="authorization-and-scopes"></a>Autorización y ámbitos
 
-Puede usar el [punto de conexión de Azure AD v.2](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
+Puede usar el [punto de conexión de Azure AD v.2](https://developer.microsoft.com/es-ES/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
   
-Uno de los siguientes [ámbitos de permiso](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) es necesario para utilizar el recurso de Excel:
+Uno de los siguientes [ámbitos de permiso](https://developer.microsoft.com/es-ES/graph/docs/authorization/permission_scopes) es necesario para utilizar el recurso de Excel:
 
 * Files.Read (para acciones de lectura)
 * Files.ReadWrite (para acciones de lectura y escritura)
@@ -390,6 +390,36 @@ Respuesta
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
+```
+
+#### <a name="create-table"></a>Crear tabla
+
+Solicitud 
+<!-- { "blockType": "ignored" } -->
+```http 
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{ "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
+```
+
+Respuesta 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 201 Created
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)",
+  "id": "2",
+  "name": "NewTableName",
+  "showHeaders": true,
+  "showTotals": false,
+  "style": "TableStyleMedium4"
+}
 ```
 
 #### <a name="update-table"></a>Actualizar tabla

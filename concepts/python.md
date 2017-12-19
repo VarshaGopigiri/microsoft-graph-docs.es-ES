@@ -1,108 +1,67 @@
 # <a name="get-started-with-microsoft-graph-in-a-python-app"></a>Introducción a Microsoft Graph en una aplicación de Python 
 
-En este artículo, se describen las tareas necesarias para obtener un token de acceso desde Azure AD y llamar a Microsoft Graph. Le muestra los pasos para la compilación del [Ejemplo Connect de Microsoft Graph para Python](https://github.com/microsoftgraph/python3-connect-rest-sample) y explica los conceptos principales que implementará para usar la API de Microsoft Graph. El artículo describe cómo obtener acceso a Microsoft Graph mediante llamadas de REST directas.
+En este artículo, se describen las tareas necesarias para obtener un token de acceso desde Azure AD y llamar a Microsoft Graph. Le muestra los pasos para [Enviar un correo electrónico a través de Microsoft Graph desde Python](https://github.com/microsoftgraph/python-sample-send-mail) y explica los conceptos principales que implementará para usar la API de Microsoft Graph. El artículo describe cómo obtener acceso a Microsoft Graph mediante llamadas de REST directas.
 
-![Captura de pantalla del ejemplo Connect de Python de Office 365](./images/web-screenshot.png)
+![Enviar formulario de correo electrónico](https://raw.githubusercontent.com/microsoftgraph/python-sample-send-mail/master/static/images/sendmail.png)
 
-##  <a name="prerequisites"></a>Requisitos previos
+## <a name="choosing-an-authentication-library"></a>Selección de una biblioteca de autenticación
 
-* [Python 3.5.2](https://www.python.org/downloads/)
-* [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib)
-* [Flask-Script 0.4](http://flask-script.readthedocs.io/en/latest/)
-* Una [cuenta de Microsoft](https://www.outlook.com/) o una [cuenta de Office 365 para empresas](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
-* [Ejemplo Connect de Microsoft Graph para Python](https://github.com/microsoftgraph/python3-connect-rest-sample)
+Para realizar llamadas a Microsoft Graph, la aplicación debe obtener un token de acceso válido de Azure Active Directory (Azure AD), el servicio de identidad de nube de Microsoft, y el token se debe pasar de un encabezado HTTP con cada llamada a la API de REST de Microsoft Graph. El método de autenticación de Graph se basa en los estándares de OAuth 2.0 y Open ID Connect, por lo que existen muchas [bibliotecas de autenticación](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-libraries) de las que puede elegir para implementar la autenticación en la aplicación.
 
-## <a name="register-the-application-in-azure-active-directory"></a>Registrar la aplicación en Azure Active Directory
+En el ejemplo siguiente se usa la biblioteca [Flask-OAuthlib](https://flask-oauthlib.readthedocs.io/en/latest/) para implementar el flujo de trabajo [Concesión de código de autorización](https://tools.ietf.org/html/rfc6749#section-4.1) de OAuth 2.0 , que es el flujo de trabajo de autenticación recomendado para las aplicaciones web escritas en Python. Para obtener información sobre otras opciones de autenticación, vea [Ejemplos de autenticación de Python para Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth).
 
-En primer lugar, deberá registrar la aplicación y establecer los permisos para usar Microsoft Graph. Esto permite a los usuarios iniciar sesión en la aplicación con cuentas profesionales o educativas.
+## <a name="installing-and-running-the-send-mail-sample"></a>Instalación y ejecución del ejemplo de envío de correos electrónicos
 
-## <a name="register-the-application"></a>Registrar la aplicación
+Para instalar y configurar la aplicación de ejemplo, siga las instrucciones de [Instalar los ejemplos de REST de Python](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md). Para el ejemplo de envío de correos electrónicos que se muestra a continuación, use este comando para clonar el repo:
 
-Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. Esta acción generará el ID y la contraseña de aplicación que usará para configurar la aplicación para la autenticación.
+    ```git clone https://github.com/microsoftgraph/python-sample-send-mail.git```
 
-1. Inicie sesión en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/) mediante su cuenta personal, profesional o educativa.
+Al registrar la aplicación como se explica en las [instrucciones de instalación](https://github.com/microsoftgraph/python-sample-auth/blob/master/installation.md), asegúrese de incluir los permisos **User.Read** y **Mail.Send**, que son necesarios para en este ejemplo.
 
-2. Seleccione **Agregar una aplicación**.
+Después de completar la instalación o configuración, puede ejecutar la aplicación de ejemplo siguiendo las instrucciones de [ejecutar el ejemplo](https://github.com/microsoftgraph/python-sample-send-mail#running-the-sample).
 
-3. Escriba un nombre para la aplicación y seleccione **Crear aplicación**.
+## <a name="code-walkthrough"></a>Tutorial de código
 
-    Se muestra la página de registro, indicando las propiedades de la aplicación.
+La siguiente es una descripción general del [código fuente](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py) para la aplicación de ejemplo.
 
-4. Copie el identificador de la aplicación. Se trata del identificador único para su aplicación.
+Las primeras líneas de código son las [importaciones](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L4-L11) para los paquetes y módulos de Python utilizados en este ejemplo:
 
-5. En **Secretos de aplicación**, seleccione **Generar nueva contraseña**. Copie el secreto de aplicación del cuadro de diálogo **Nueva contraseña generada**.
+* El módulo **base64** de la biblioteca estándar se usa para los datos adjuntos de correo electrónico de codificación.
+* El módulo **pprint** de la biblioteca estándar se usa para imprimir con sangría los mensajes de error que devuelve Graph. (Por ejemplo, si intenta enviar un mensaje de correo electrónico a una dirección no válida).
+* El módulo **uuid** de la biblioteca estándar se usa para generar una cadena aleatoria de 36 caracteres para identificar exclusivamente cada solicitud de gráfico. Esto puede resultar útil para propósitos de depuración.
+* El paquete **Flask** es el marco de la web para el ejemplo.
+* La clase **OAuth** de **flask_oauthlib.client** es el empaquetador de la aplicación Flask que implementa el flujo de trabajo de autenticación de OAuth 2.0.
+* El módulo **config** contiene la configuración de registro de la aplicación, como se ha configurado en el proceso de instalación anterior.
 
-    Deberá usar el ID y el secreto de aplicación para configurar la aplicación.
+Después, se [crea una aplicación Flask](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L13-L15) y, a continuación, se crea el [objeto de cliente de Graph](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L17-L26), denominado **MSGRAPH**.
 
-6. En **Plataformas**, elija **Agregar plataforma** > **Web**.
+Después de estos pasos de instalación iniciales, vienen tres funciones de identificador de ruta Flask que implementan el flujo de trabajo de autenticación: [homepage()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L28-L31), [login()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L33-L37), and [authorized()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L39-L46). Para más información sobre el flujo de trabajo de autenticación, vea la sección [Arquitectura de ejemplo](https://github.com/microsoftgraph/python-sample-auth#sample-architecture) del repo de autenticación de Phyton.
 
-7. Asegúrese de que la casilla **Permitir flujo implícito** está seleccionada y escriba *http://localhost:5000/login/authorized* como URI de redireccionamiento.
+El controlador de ruta siguiente, [mailform()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L48-L54), es el formulario donde especificar los destinatarios, asunto y cuerpo de correo electrónico. Tenga en cuenta que esta función también incluye la primera llamada a Graph: [recuperar el perfil de usuario](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L51-L51) para obtener la dirección de correo electrónico y el nombre actual del usuario que se muestra, que se [pasan a la plantilla mailform.html](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L52-L54).
 
-    La opción **Permitir flujo implícito**habilita el flujo híbrido de OpenID Connect. Durante la autenticación, esto permite que la aplicación reciba tanto la información de inicio de sesión (el **id_token**) como los artefactos (en este caso, un código de autorización) que la aplicación usa para obtener un token de acceso.
-
-    El URI de redireccionamiento *http://localhost:5000/login/authorized* es el valor con el que el middleware de OmniAuth se ha configurado para usar una vez que haya procesado la solicitud de autenticación.
-
-8. Elija **Guardar**.
-
-## <a name="configure-and-run-the-app"></a>Configurar y ejecutar la aplicación
-
-1. Abra el archivo **_PRIVATE.txt** en el editor de texto que quiera.
-2. Reemplace *ENTER_YOUR_CLIENT_ID* por el identificador de cliente de su aplicación registrada.
-3. Reemplace *ENTER_YOUR_SECRET* por la clave que ha generado para su aplicación.
-4. Inicie el servidor de desarrollo mediante la ejecución de ```python manage.py runserver```.
-5. Vaya a ```http://localhost:5000/``` en el explorador web.
-
-<!--<a name="authCode"></a>-->
-## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Recibir un código de autorización en la página de la dirección URL de respuesta
-
-Después de que el usuario inicie sesión, el explorador le redirige a la dirección URL de respuesta, la ruta ```login/authorized``` en [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py), con un token de acceso en la respuesta. En el ejemplo, se almacena el token como una variable de sesión.
+La siguiente es la función [send_mail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L56-L73), que envía el correo electrónico y muestra la respuesta de la API de Graph. Usa una función auxiliar sendmail(), y pasa a los parámetros de cadena de consulta que se publicaron desde el formulario:
 
 ```python
-@app.route('/login/authorized')
-def authorized():
-    """Handler for login/authorized route."""
-    response = msgraphapi.authorized_response()
-
-    if response is None:
-        return "Access Denied: Reason={0}\nError={1}".format( \
-            request.args['error'], request.args['error_description'])
-
-    # Check response for state
-    if str(session['state']) != str(request.args['state']):
-        raise Exception('State has been messed with, end authentication')
-    session['state'] = '' # reset session state to prevent re-use
-
-    # Okay to store this in a local variable, encrypt if it's going to client
-    # machine or database. Treat as a password.
-    session['microsoft_token'] = (response['access_token'], '')
-    # Store the token in another session variable for easy access
-    session['access_token'] = response['access_token']
-    me_response = msgraphapi.get('me')
-    me_data = json.loads(json.dumps(me_response.data))
-    username = me_data['displayName']
-    email_address = me_data['userPrincipalName']
-    session['alias'] = username
-    session['userEmailAddress'] = email_address
-    return redirect('main')
+response = sendmail(MSGRAPH,
+                    subject=flask.request.args['subject'],
+                    recipients=flask.request.args['email'].split(';'),
+                    html=flask.request.args['body'])
 ```
 
-<!--<a name="request"></a>-->
-## <a name="use-the-access-token-in-a-request-to-the-microsoft-graph-api"></a>Usar el token de acceso en una solicitud a la API de Microsoft Graph
+La función [get_token()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L75-L78) se usa por la instancia de cliente Flask-OAuthlib (```MSGRAPH```) para obtener un token de acceso cuando realice llamadas a Graph. Se pasa el token de acceso en un encabezado HTTP denominado **Autorización**, pero no es necesario hacer esto en el código. Solo puede realizar llamadas a Graph mediante métodos de verbo HTTP del cliente (por ejemplo, get() o post()) y la instancia de cliente sabrá cómo llamar a ```get_token()``` para obtener un token, porque la función está [decorada](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L75-L75) con ```tokengetter```.
 
-El token de acceso permite que su aplicación cree solicitudes autenticadas en la API de Microsoft Graph. Su aplicación debe anexar el token de acceso al encabezado de **autorización** de cada solicitud.
+A continuación viene [request_headers()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L80-L85), que devuelve un diccionario de encabezados HTTP que se envían con cada llamada a Graph.
 
-En el ejemplo de Connect, se envía un correo electrónico usando el punto de conexión ```me/microsoft.graph.sendMail``` de la API de Microsoft Graph. El código está en la función ```call_sendmail_endpoint``` del archivo [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py). Este es el código que muestra cómo anexar el código de acceso al encabezado de autorización.
+Por último tenemos [sendmail()](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L87-L129), la función auxiliar para enviar un correo electrónico. Envía un mensaje con el punto de conexión ```me/microsoft.graph.sendMail``` en la API de Microsoft Graph, y puede volver a usar esta función en su propio código cuando sea necesario enviar un correo electrónico a través de Microsoft Graph. Consulte la [docstring](https://github.com/microsoftgraph/python-sample-send-mail/blob/master/sample.py#L88-L97) para obtener información sobre cómo se llama a esta función.
 
-```python
-    # Set request headers.
-    headers = { 
-      'User-Agent' : 'python_tutorial/1.0',
-      'Authorization' : 'Bearer {0}'.format(access_token),
-      'Accept' : 'application/json',
-      'Content-Type' : 'application/json'
-    }
-```
+## <a name="other-python-rest-samples"></a>Otros ejemplos de REST de Python
 
-> **Nota**: La solicitud también debe enviar un encabezado **Content-Type** con un valor que acepte la API de Graph. Por ejemplo, `application/json`.
+Además del ejemplo explicado anteriormente, los ejemplos siguientes muestran cómo trabajar con otras características de Microsoft Graph desde Phyton:
 
-La API de Microsoft Graph es una interfaz unificadora y muy avanzada que permite trabajar con todos los tipos de datos de Microsoft. Consulte la referencia de la API para ver todas las posibilidades que ofrece Microsoft Graph.
+* [Ejemplos de autenticación de Python para Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
+* [Trabajar con respuestas de Microsoft Graph paginadas en Python](https://github.com/microsoftgraph/python-sample-pagination)
+* [Trabajar con extensiones abiertas de Graph en Python](https://github.com/microsoftgraph/python-sample-open-extensions)
+
+Si hay un ejemplo concreto que quiera ver, háganoslo saber al [enviar un problema](https://github.com/microsoftgraph/python-sample-auth/issues). Estamos muy interesados en sus comentarios sobre cualquier escenario de Microsoft Graph que desee compilar en Python.
+
+La API de Microsoft Graph es una interfaz unificadora y muy avanzada que permite trabajar con todos los tipos de datos de Microsoft. Consulte la [documentación de desarrollador](https://developer.microsoft.com/es-ES/graph/docs/concepts/overview) o el [Probador de Graph](https://developer.microsoft.com/es-ES/graph/graph-explorer) para explorar qué más puede realizar con Microsoft Graph.

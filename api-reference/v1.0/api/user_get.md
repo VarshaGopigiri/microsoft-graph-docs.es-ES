@@ -14,12 +14,20 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
+Para un usuario específico:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+Para un usuario con sesión iniciada:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 De forma predeterminada, solo se devuelve un conjunto limitado de propiedades. (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
@@ -43,6 +51,41 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 ### <a name="example-1-standard-users-request"></a>Ejemplo 1: Solicitud de usuarios estándar
 
 De forma predeterminada, solo se devuelve un conjunto limitado de propiedades. (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). Este ejemplo ilustra las solicitudes y respuestas predeterminadas. 
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
+```
+
+##### <a name="response"></a>Respuesta
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+  "businessPhones": [
+       "businessPhones-value"
+   ],
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "jobTitle": "jobTitle-value",
+   "mail": "mail-value",
+   "mobilePhone": "mobilePhone-value",
+   "officeLocation": "officeLocation-value",
+   "preferredLanguage": "preferredLanguage-value",
+   "surname": "surname-value",
+   "userPrincipalName": "userPrincipalName-value",
+   "id": "id-value"
+}
+```
+
+
+### <a name="example-2-signed-in-user-request"></a>Ejemplo 2: Solicitud de usuario de inicio de sesión
+
+Puede obtener la información de usuario para el usuario que hayan iniciado sesión reemplazando `/users/{id | userPrincipalName}` con `/me`.
 
 ##### <a name="request"></a>Solicitud
 
@@ -82,24 +125,17 @@ Content-length: 491
 }
 ```
 
-### <a name="example-2-users-request-using-select"></a>Ejemplo 2: Solicitud de los usuarios mediante $select
+### <a name="example-3-users-request-using-select"></a>Ejemplo 3: Solicitud de los usuarios mediante $select
 
 Si necesita otro conjunto de propiedades, puede usar el parámetro de consulta `$select` de OData. Por ejemplo, para devolver _displayName_, _givenName_ y _postalCode_, tendría que agregar lo siguiente a la consulta: `$select=displayName,givenName,postalCode`
 
 ##### <a name="request"></a>Solicitud
-<!-- {
-  "blockType": "request",
-  "name": "get_user"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
 ##### <a name="response"></a>Respuesta
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

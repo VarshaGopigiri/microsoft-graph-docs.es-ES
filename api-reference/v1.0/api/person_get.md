@@ -18,25 +18,21 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/people/?$search='{property_value}'
-GET /me/people/?$filter={person_property} eq '{property_value}'
+GET /me/people/{id}
+GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-|Nombre|Valor|Descripción|
-|:---------------|:--------|:-------|
-|$filter|string|Limita la respuesta a solo los contactos cuyo registro contiene los criterios especificados.|
-|$orderby|string|De manera predeterminada, los contactos de la respuesta se ordenan por su relevancia para la consulta. Puede cambiar el orden de los contactos en la respuesta con el parámetro *$orderby*.|
-|$search|string|Se buscan contactos por nombre o alias. Admite coincidencia aproximada.|
-|$select|string|Lista separada por comas de las propiedades que se van a incluir en la respuesta. Para un rendimiento óptimo, seleccione solo el subconjunto de propiedades necesarias.|
-|$skip|int|Se omiten los primeros resultados n, útil para la paginación. Esta opción no se admite cuando se usa *$search*.|
-|$top|int|Número de resultados que se van a devolver.|
+Este método admite los siguientes [parámetros de consulta de OData](../../../concepts/people_example.md) a modo de ayuda para personalizar la respuesta.
 
-## <a name="parameters"></a>Parámetros
-| Parámetro |Tipo       |Descripción|
-|:----------|:----------|:----------|
-|property_value|String     |El valor de la propiedad extendida que debe coincidir. Es necesario cuando aparece en la sección de la **solicitud HTTP**.|
-|person_property|String    |La propiedad person que debe coincidir. Es necesario cuando aparece en la sección de la **solicitud HTTP**.|
+|Nombre|Valor|Descripción| 
+|:---------------|:--------|:-------| 
+|$filter|string|Limita la respuesta a solo los contactos cuyo registro contiene los criterios especificados.| 
+|$orderby|cadena|De manera predeterminada, los contactos de la respuesta se ordenan por su relevancia para la consulta. Puede cambiar el orden de los contactos en la respuesta con el parámetro *$orderby*.| 
+|$search|string|Se buscan contactos por nombre o alias. Admite coincidencia aproximada| 
+|$select|string|Lista separada por comas de las propiedades que se van a incluir en la respuesta. Para un rendimiento óptimo, seleccione solo el subconjunto de propiedades necesarias.| 
+|$skip|int|Se omiten los primeros resultados n, útil para la paginación. Esta opción no se admite cuando se usa *$search*.| 
+|$top|int|Número de resultados que se van a devolver.| 
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
@@ -45,126 +41,106 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
+
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [person](../resources/person.md) en el cuerpo de la respuesta. La respuesta puede contener una instancia person o una colección de instancias person. 
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [person](../resources/person.md) en el cuerpo de la respuesta.
+
 ## <a name="examples"></a>Ejemplos
-### <a name="perform-a-search"></a>Realizar una búsqueda 
-La siguiente solicitud realiza una búsqueda de un contacto llamado Irene McGowan. 
+#### <a name="request-1"></a>Solicitud 1
+El siguiente es un ejemplo de la solicitud que obtiene el usuario que tiene este identificador en la organización del usuario. 
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_by_id"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowan"
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85
 ```
 
-En el ejemplo siguiente se muestra la respuesta. 
+#### <a name="response-1"></a>Respuesta 1
+Aquí tiene un ejemplo de la respuesta.
+
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",
-  "name": "get_person",
+  "name": "get_person_by_id",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 629
 
 {
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": [
-               {
-                    "class": "Person",
-                    "subclass": "OrganizationUser"
-                }
-            ]
-       }
-   ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer",
+  "givenName": "Isaiah",
+  "surname": "Langer",
+  "birthday": "",
+  "personNotes": "",
+  "isFavorite": false,
+  "jobTitle": "Web Marketing Manager",
+  "companyName": null,
+  "yomiCompany": "",
+  "department": "Sales & Marketing",
+  "officeLocation": "20/1101",
+  "profession": "",
+  "userPrincipalName": "IsaiahL@contoso.com",
+  "imAddress": "sip:isaiahl@contoso.com",
+  "scoredEmailAddresses": [
+      {
+          "address": "IsaiahL@contoso.com",
+          "relevanceScore": 20.0
+      }
+  ],
+  "phones": [
+      {
+          "type": "business",
+          "number": "+1 918 555 0101"
+      }
+  ],
+  "postalAddresses": [],
+  "websites": [],
+  "personType": {
+      "class": "Person",
+      "subclass": "OrganizationUser"
+  }
 }
 ```
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a>Seleccionar los campos que se van a devolver en una respuesta filtrada 
-Puede combinar los parámetros *$select* y *$filter* para crear una lista personalizada de contactos relevantes para el usuario y obtener solo los campos que la aplicación necesita. 
 
-En el ejemplo siguiente se obtiene el **displayName** y el **scoredEmailAddresses** de los contactos cuyo nombre para mostrar es igual al nombre especificado. En este ejemplo, solo se devuelven los contactos cuyo nombre para mostrar es igual a "Lorrie Frye".
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
-```
-
-Esta es la dirección URL correctamente codificada para la solicitud de ejemplo.
+#### <a name="request-2"></a>Solicitud 2
+El siguiente es un ejemplo de la solicitud que obtiene la persona que tenga este identificador en la organización del usuario y restringe la respuesta a las propiedades seleccionadas.
 
 <!-- {
   "blockType": "request",
-  "name": "get_person_select_and_filter"
+  "name": "get_person_by_id_with_select"
 }-->
-
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName%20eq%20'Lorrie Frye'
+GET https://graph.microsoft.com/v1.0/me/people/e3d0513b-449e-4198-ba6f-bd97ae7cae85?$select=displayName
 ```
+#### <a name="response-2"></a>Respuesta 2
+Aquí tiene un ejemplo de la respuesta.
 
-En el ejemplo siguiente se muestra la respuesta. 
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",
-  "name": "get_person_select_and_filter",
+  "name": "get_person_by_id_with_select",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.person"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 305
 
 {
-    "value": [
-        {
-            "id": "8CE6E1DE-CB84-4BF5-971D-D3ECF452E2B5",
-            "displayName": "Lorrie Frye",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8.0
-                }
-            ]
-        }
-    ]
+  "id": "e3d0513b-449e-4198-ba6f-bd97ae7cae85",
+  "displayName": "Isaiah Langer"
 }
 ```
 

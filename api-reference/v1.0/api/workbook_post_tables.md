@@ -22,8 +22,11 @@ POST /workbook/tables/$/add
 | Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Table](../resources/table.md).
+### <a name="request-parameters"></a>Parámetros de la solicitud
+| Nombre           | Tipo      |Descripción|
+|:---------------|:----------|:----------|
+| Dirección  | string| Dirección de intervalo. Si llama a esta API desde la ruta de acceso `worksheets/{id or name}/tables/add`, no tiene que proporcionar el prefijo del nombre de hoja en la dirección. En cambio, si la llama desde la ruta de acceso `workbook/tables/add`, deberá proporcionar el nombre de la hoja en la que se debe crear la tabla (ejemplo: `sheet1!A1:D4`)|
+| hasHeaders  | boolean|Valor booleano que indica si el intervalo tiene etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en false), Excel generará de forma automática el encabezado desplazando los datos hacia abajo una fila.|
 
 ## <a name="response"></a>Respuesta
 
@@ -42,14 +45,10 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "id": 99,
-  "name": "name-value",
-  "showHeaders": true,
-  "showTotals": true,
-  "style": "style-value"
+  "address": "A1:D8",
+  "hasHeaders": false
 }
 ```
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Table](../resources/table.md).
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {

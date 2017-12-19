@@ -1,8 +1,8 @@
 # <a name="create-conversation"></a>Create Conversation
-
 Crea una nueva conversación incluyendo un hilo y una publicación. 
 
 Use [responder hilo](conversationthread_reply.md) o [responder publicación](post_reply.md) para agregar publicaciones a la conversación.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -10,13 +10,14 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.ReadWrite.All |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations
 ```
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
@@ -27,11 +28,10 @@ POST /groups/{id}/conversations
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [conversation](../resources/conversation.md) que contiene un [conversationThread](../resources/conversationThread.md) y un [post](../resources/post.md).
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [conversation](../resources/conversation.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+#### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
@@ -59,8 +59,11 @@ Content-type: application/json
   }]
 }
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+
+#### <a name="response"></a>Respuesta
+Aquí tiene un ejemplo de la respuesta.
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

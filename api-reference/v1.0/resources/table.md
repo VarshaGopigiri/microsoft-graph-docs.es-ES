@@ -27,7 +27,7 @@ Representa una tabla de Excel.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|int|Devuelve un valor que identifica de forma única la tabla de un libro determinado. El valor del identificador permanece igual, incluso cuando se cambia el nombre de la tabla. Solo lectura.|
+|id|cadena|Devuelve un valor que identifica de forma única la tabla de un libro determinado. El valor del identificador permanece igual, incluso cuando se cambia el nombre de la tabla. Esta propiedad debe interpretarse como un valor de cadena opaco y no se debería analizar para ningún otro tipo. Solo lectura.|
 |name|string|Nombre de la tabla.|
 |showHeaders|boolean|Indica si la fila de encabezado está visible o no. Este valor puede establecerse para que muestre o quite la fila de encabezado.|
 |showTotals|boolean|Indica si la fila de totales está visible o no. Este valor puede establecerse para que muestre o quite la fila de totales.|
@@ -44,7 +44,7 @@ Representa una tabla de Excel.
 |columns|Colección [TableColumn](tablecolumn.md)|Representa una colección de todas las columnas de la tabla. Solo lectura.|
 |rows|Colección [TableRow](tablerow.md)|Representa una colección de todas las filas de la tabla. Solo lectura.|
 |sort|[TableSort](tablesort.md)|Representa la ordenación de la tabla. Solo lectura.|
-|worksheet|[Worksheet](worksheet.md)|La hoja de cálculo que contiene la tabla actual. Solo lectura.|
+|worksheet|[Worksheet](worksheet.md)|Hoja de cálculo que contiene la tabla actual. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
