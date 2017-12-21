@@ -1,10 +1,10 @@
 # <a name="input-and-output-html-in-onenote-pages"></a>HTML de entrada y salida en páginas de OneNote
 
-El código HTML que define el contenido y la estructura de la página cuando [crea](../api-reference/v1.0/api/section_post_pages.md) o [actualiza](../api-reference/v1.0/api/page_update.md) una página de OneNote se llama *HTML de entrada *. 
+El código HTML que define el contenido y la estructura de la página cuando [crea](../api-reference/v1.0/api/section_post_pages.md) o [actualiza](../api-reference/v1.0/api/page_update.md) una página de OneNote se llama *HTML de entrada*. 
 
 El código HTML que se devuelve cuando [,obtiene el contenido de la página](../api-reference/v1.0/api/page_get.md) se denomina *HTML de salida*. El HTML de salida no será el mismo que el de entrada.
 
-Las API de OneNote en Microsoft Graph conservan el contenido semántico y la estructura básica del HTML de entrada, pero la convierten en un conjunto de [elementos HTML y propiedades CSS compatibles](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-create-page#supported-html). Las API también agregan atributos personalizados que admiten las características de OneNote.
+Las API de OneNote en Microsoft Graph conservan el contenido semántico y la estructura básica del HTML de entrada, pero la convierten en un conjunto de [elementos HTML y propiedades CSS compatibles](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-create-page#supported-html). Las API también agregan atributos personalizados que admiten las características de OneNote.
  
 Este artículo describe los principales elementos y atributos del HTML de entrada y de salida. Puede ser útil comprender el HTML de entrada cuando crea o actualiza el contenido de la página, y el HTML de salida cuando analiza el contenido de la página devuelto. 
 
@@ -15,7 +15,7 @@ El contenido HTML en el cuerpo de la página representa el contenido y la estruc
 
 |Atributo de entrada|Descripción|
 |:------|:------|
-| data-absolute-enabled | Indica si el cuerpo de entrada admite los elementos [con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos). |
+| data-absolute-enabled | Indica si el cuerpo de entrada admite los elementos [con posición absoluta](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-abs-pos). |
 | style | <p>Las propiedades CSS [style](#styles) del cuerpo. En el HTML de salida, la configuración de entrada podría devolverse insertada en los elementos secundarios adecuados.</p><p>Actualmente, el color de fondo no es compatible con el elemento **body**.</p> |
  
 
@@ -23,7 +23,7 @@ El contenido HTML en el cuerpo de la página representa el contenido y la estruc
 
 |Atributo de salida|Descripción|
 |:------|:------|
-| data-absolute-enabled | Indica si el cuerpo admite los elementos [con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos). Siempre **true** en el HTML de salida. |
+| data-absolute-enabled | Indica si el cuerpo admite los elementos [con posición absoluta](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-abs-pos). Siempre **true** en el HTML de salida. |
 | style | Las propiedades **font-family** y **font-size** del cuerpo. |
 
 
@@ -35,17 +35,17 @@ Los elementos **div** contienen texto, imágenes y otro contenido. Un elemento *
 |Atributo de entrada|Descripción|
 |:------|:------|
 | data-id | Una referencia para el elemento. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
-| data-render-fallback | La acción de reserva si falla la [extracción](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data): **render** (predeterminado) o **none**. |
-| data-render-method | El método [extraction](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data) para llevar a cabo, por ejemplo: `extract.businesscard` o `extract.recipe`. |
-| data-render-src | El origen del contenido para la [extracción](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data). |
-| style | <p>La posición, tamaño, fuente y propiedades de color del elemento div:</p><p> - **posición** (**absoluta** solo), **izquierda**, **arriba** y **ancho**. (La altura se configura automáticamente para los elementos div).<br />Se usa para crear un elemento div [con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos), solo si el div es un elemento secundario directo del cuerpo cuando el cuerpo indica `data-absolute-enabled="true"`.<br />Ejemplo: `<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</p><p> Las propiedades CSS [style](#styles) del elemento. En el HTML de salida, estos valores podrían devolverse insertados en los elementos secundarios adecuados.</p> |
+| data-render-fallback | La acción de reserva si falla la [extracción](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-extract-data): **render** (predeterminado) o **none**. |
+| data-render-method | El método [extraction](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-extract-data) para llevar a cabo, por ejemplo: `extract.businesscard` o `extract.recipe`. |
+| data-render-src | El origen del contenido para la [extracción](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-extract-data). |
+| style | <p>La posición, tamaño, fuente y propiedades de color del elemento div:</p><p> - **posición** (**absoluta** solo), **izquierda**, **arriba** y **ancho**. (La altura se configura automáticamente para los elementos div).<br />Se usa para crear un elemento div [con posición absoluta](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-abs-pos), solo si el div es un elemento secundario directo del cuerpo cuando el cuerpo indica `data-absolute-enabled="true"`.<br />Ejemplo: `<div style="position:absolute;width:360px;top:350px;left:300px" ... />`</p><p> Las propiedades CSS [style](#styles) del elemento. En el HTML de salida, estos valores podrían devolverse insertados en los elementos secundarios adecuados.</p> |
  
 
 Las API de OneNote en Microsoft Graph ajustan todo el contenido del cuerpo en al menos un div. La API crea un div predeterminado (con atributos `data-id="_default"`) para contener el contenido del cuerpo si:
 
 - El atributo **data-absolute-enabled** del elemento de entrada del cuerpo se omite o se establece en **false**. En este caso, se coloca todo el contenido del cuerpo en el div predeterminado.
 
-- El atributo **data-absolute-enabled** del elemento de entrada del cuerpo es **true**, pero el HTML de entrada contiene elementos secundarios directos que no son elementos [con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img** u **object**. En este caso, los elementos secundarios directos que no son elementos [con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img** u **object** se colocan en el div predeterminado.
+- El atributo **data-absolute-enabled** del elemento de entrada del cuerpo es **true**, pero el HTML de entrada contiene elementos secundarios directos que no son elementos [con posición absoluta](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img** u **object**. En este caso, los elementos secundarios directos que no son elementos [con posición absoluta](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-abs-pos)&nbsp;**div**, **img** u **object** se colocan en el div predeterminado.
 
 
 **Atributos de salida**
@@ -106,8 +106,8 @@ Las imágenes en las páginas de OneNote están representadas por elementos **im
 | alt | El texto alternativo que se proporciona para la imagen. |
 | data-id | Una referencia para el elemento. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
 | data-render-src |Se necesita **data-render-src** o **src**.<br/><br/>La página web para representar como imagen como mapa de bits en la página de OneNote:<br /> - `data-render-src="http://..."` para una dirección URL pública.<br /> - `data-render-src="name:BlockName"` para una parte de imagen en el bloque "Presentación" de una [solicitud de varias partes](../api-reference/v1.0/api/section_post_pages.md#example).<br/><br/>Este método es útil cuando la página web es más compleja que la página que OneNote puede representar fielmente, o cuando la página requiere credenciales de inicio de sesión.|
-| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) en el elemento. |
-| style |Las propiedades de posición y tamaño de la imagen: **posición** (**absoluta** solo), **izquierda**, **arriba**, **ancho** y **alto**.<br/><br/>El tamaño se puede establecer en cualquier imagen. Las propiedades de posición se usan para crear una imagen [con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos), solo si la imagen es un elemento secundario directo del cuerpo cuando el cuerpo indica `data-absolute-enabled="true"`.<br />Ejemplo: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>En el HTML de salida, el tamaño de la imagen se devuelve por separado en los atributos **width** y **height**. |
+| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags) en el elemento. |
+| style |Las propiedades de posición y tamaño de la imagen: **posición** (**absoluta** solo), **izquierda**, **arriba**, **ancho** y **alto**.<br/><br/>El tamaño se puede establecer en cualquier imagen. Las propiedades de posición se usan para crear una imagen [con posición absoluta](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-abs-pos), solo si la imagen es un elemento secundario directo del cuerpo cuando el cuerpo indica `data-absolute-enabled="true"`.<br />Ejemplo: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>En el HTML de salida, el tamaño de la imagen se devuelve por separado en los atributos **width** y **height**. |
 | src |Se necesita **src** o **data-render-src**.<br/><br/>La imagen para representar en la página de OneNote:<br /> - `src="http://..."` para una dirección URL a una imagen disponible públicamente en Internet.<br /> - `src="name:BlockName"` para una parte con nombre en una solicitud con varias partes que representa a la imagen.|
 | width, height | El ancho o alto de la imagen, en píxeles pero sin px. Ejemplo: `width="400"` |
  
@@ -126,7 +126,7 @@ Las imágenes en las páginas de OneNote están representadas por elementos **im
 | data-options | El tipo de origen: **copia impresa** para archivos PDF o **imagen dividida** para todos los demás. Solo se aplica a [imágenes divididas](#split-images) creadas con el atributo **data-render-src**. |
 | data-render-original-src | La dirección URL de origen de la imagen, si la imagen de origen proviene de Internet pública y se creó con el atributo **data-render-src**. |
 | data-src-type | El tipo de medios del recurso **src**. Por ejemplo: `image/png` o `image/jpeg`. |
-| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) en el elemento. |
+| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags) en el elemento. |
 | id | Un identificador único, generado para el elemento. Devuelto por [solicitudes GET al punto de conexión del *contenido* de una página](../api-reference/v1.0/api/page_get.md) cuando se usa la opción de consulta `includeIDs=true`. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
 | src | El extremo para la versión del recurso de imagen que se ha optimizado para exploradores web y factores de forma móviles y de tabletas. |
 | style | Las propiedades de posición de la imagen. |
@@ -231,13 +231,13 @@ Debido a que los usuarios pueden mover las imágenes en la página, los índices
 ## <a name="iframe-elements"></a>elementos iframe
 Las páginas de OneNote pueden contener vídeos insertados representados por elementos **iframe**. 
 
->**Nota**: También puede [adjuntar un archivo de vídeo mediante un elemento **object**](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#files).
+>**Nota**: También puede [adjuntar un archivo de vídeo mediante un elemento **object**](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-images-files#files).
 
 **Atributos de entrada**
 
 |Atributo de entrada|Descripción|
 |:------|:------|
-| data-original-src | Obligatorio. La dirección URL del origen del vídeo. Consulte la [lista de orígenes de vídeo compatibles](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos). Ejemplo: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
+| data-original-src | Obligatorio. La dirección URL del origen del vídeo. Consulte la [lista de orígenes de vídeo compatibles](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-images-files#videos). Ejemplo: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
 | width, height | El ancho o alto del iframe, en píxeles. Ejemplo: `width=300` |
 
 **Atributos de salida**
@@ -272,7 +272,7 @@ Las páginas de OneNote pueden contener archivos adjuntos representados por elem
 | data | Obligatorio. El nombre de la parte que representa el archivo en una [solicitud de varias partes](../api-reference/v1.0/api/section_post_pages.md#example). |
 | data-attachment | Obligatorio. El nombre del archivo. |
 | data-id | Una referencia para el elemento. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
-| style | <p>Las propiedades de posición y tamaño del objeto: **posición** (**absoluta** solo), **izquierda**, **arriba** y **ancho**.</p><p>Se usa para crear un objeto [con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos), solo si el objeto es un elemento secundario directo del cuerpo cuando el cuerpo indica `data-absolute-enabled="true"`.<br />Ejemplo: `<object style="position:absolute;top:350px;left:300px" ... />`</p> |
+| style | <p>Las propiedades de posición y tamaño del objeto: **posición** (**absoluta** solo), **izquierda**, **arriba** y **ancho**.</p><p>Se usa para crear un objeto [con posición absoluta](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-abs-pos), solo si el objeto es un elemento secundario directo del cuerpo cuando el cuerpo indica `data-absolute-enabled="true"`.<br />Ejemplo: `<object style="position:absolute;top:350px;left:300px" ... />`</p> |
 | type | Obligatorio. El tipo de archivo de medios estándar. Los tipos de archivo conocidos muestran el icono asociado con el tipo de archivo en la página de OneNote. Los tipos de archivo desconocidos muestran un icono de archivo genérico. |
 <!--todo: add link to known file types--> 
 
@@ -309,7 +309,7 @@ Los párrafos, encabezados y otros contenedores de texto pueden contener los sig
 |Atributo de entrada|Descripción|
 |:------|:------|
 | data-id | Una referencia para el elemento. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
-| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) en un elemento de **p** o **h1** - **h6**. |
+| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags) en un elemento de **p** o **h1** - **h6**. |
 | style | Las propiedades CSS [style](#styles) del elemento. |
  
 
@@ -318,7 +318,7 @@ Los párrafos, encabezados y otros contenedores de texto pueden contener los sig
 |Atributo de salida|Descripción|
 |:------|:------|
 | data-id | Una referencia para el elemento. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
-| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) en un elemento de **p** o **h1** - **h6**. |
+| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags) en un elemento de **p** o **h1** - **h6**. |
 | id | Un identificador único, generado para el elemento. Devuelto por [solicitudes GET al punto de conexión del *contenido* de una página](../api-reference/v1.0/api/page_get.md) cuando se usa la opción de consulta `includeIDs=true`. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
 | style | Las propiedades CSS [style](#styles) del elemento. En el HTML de salida, estos valores podrían devolverse insertados en los elementos secundarios adecuados o en elementos **span**. |
  
@@ -352,7 +352,7 @@ Los elementos lists y list pueden contener los siguientes atributos en el HTML d
 |Atributo de entrada|Descripción|
 |:------|:------|
 | data-id | Una referencia para el elemento. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
-| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) en un elemento de **ul**, **ol** o de **li**. |
+| etiqueta de datos | Una [etiqueta de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags) en un elemento de **ul**, **ol** o de **li**. |
 | style | Las propiedades CSS **list-style-type** y [style](#styles) para la lista o el elemento de lista. |
  
 
@@ -361,7 +361,7 @@ Los elementos lists y list pueden contener los siguientes atributos en el HTML d
 |Atributo de salida|Descripción|
 |:------|:------|
 | data-id | Una referencia para el elemento. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
-| etiqueta de datos |  Una [etiqueta de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags) en un span en un elemento de **li**. |
+| etiqueta de datos |  Una [etiqueta de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags) en un span en un elemento de **li**. |
 | id | Un identificador único, generado para el elemento. Devuelto por [solicitudes GET al punto de conexión del *contenido* de una página](../api-reference/v1.0/api/page_get.md) cuando se usa la opción de consulta `includeIDs=true`. Se usa para [actualizar el contenido de la página](../api-reference/v1.0/api/page_update.md). |
 | style | Las propiedades **list-style-type** y CSS [style](#styles) del elemento. En el HTML de salida, la configuración de nivel de lista se devuelve en elementos list. No se devuelven las propiedades predeterminadas. |
  
@@ -619,4 +619,4 @@ Este es el HTML de salida que Microsoft Graph devuelve cuando [obtiene el conten
 - [Obtener el contenido y la estructura de OneNote](../api-reference/v1.0/api/page_get.md)
 - [Crear páginas de OneNote](../api-reference/v1.0/api/section_post_pages.md)
 - [Actualizar el contenido de la página de OneNote](../api-reference/v1.0/api/page_update.md)
-- [Agregar imágenes y archivos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+- [Agregar imágenes y archivos](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags)
