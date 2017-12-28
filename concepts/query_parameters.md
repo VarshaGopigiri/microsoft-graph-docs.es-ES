@@ -6,16 +6,16 @@ Microsoft Graph proporciona parámetros de consulta opcionales que puede usar pa
 
 | Nombre                     | Descripción | Ejemplo
 |:-------------------------|:------------|:---------|
-| [$count](#count)         | Recupera el número total de recursos coincidentes. | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand)       | Recupera los recursos relacionados.|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter)       | Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format)       | Devuelve los resultados en el formato de medio especificado.|[`/users?$format=json`][format-example]
-| [$orderby](#orderby)     | Ordena los resultados.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search)       | Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`][search-example]
-| [$select](#select)       | Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip)           | Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken) | Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `/users?$skiptoken=X%274453707402000100000017...`|
-| [$top](#top)             | Establece el tamaño de la página de resultados. |[`/users?$top=2`][top-example]
+| [$count](#count-parameter)         | Recupera el número total de recursos coincidentes. | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand-parameter)       | Recupera los recursos relacionados.|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter-parameter)       | Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format-parameter)       | Devuelve los resultados en el formato de medio especificado.|[`/users?$format=json`][format-example]
+| [$orderby](#orderby-parameter)     | Ordena los resultados.|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search-parameter)       | Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`][search-example]
+| [$select](#select-parameter)       | Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip-parameter)           | Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados. | [`/me/messages?$skip=11`][skip-example]
+| [$skipToken](#skiptoken-parameter) | Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$top](#top-parameter)             | Establece el tamaño de la página de resultados. |[`/users?$top=2`][top-example]
 
 
 
@@ -39,7 +39,7 @@ Una dirección URL codificada correctamente tiene el siguiente aspecto:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="count"></a>count
+## <a name="count-parameter"></a>parámetro de recuento
 
 Use el parámetro de consulta `$count` para incluir un recuento del número total de elementos de una colección junto con la página de valores de datos que se devuelve desde Microsoft Graph. 
 
@@ -54,7 +54,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 >**Nota:** `$count` no se admite con colecciones de recursos que se derivan de [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md), como las colecciones de [user](../api-reference/v1.0/resources/user.md) o [group](../api-reference/v1.0/resources/group.md).
 
-## <a name="expand"></a>expand
+## <a name="expand-parameter"></a>parámetro de expansión
 
 Muchos de los recursos de Microsoft Graph exponen ambas propiedades declaradas de los recursos, así como sus relaciones con otros recursos. Estas relaciones también se denominan propiedades de referencia o propiedades de navegación, y pueden hacer referencia a un único recurso o a una colección de recursos. Por ejemplo, las carpetas de correo, el administrador y los informes directos de un usuario se exponen como relaciones. 
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-Con algunas colecciones de recursos, también se pueden especificar las propiedades que se van a devolver en los recursos expandidos si se agrega un parámetro `$select`. En el ejemplo siguiente se realiza la misma consulta que en el anterior, pero se usa una instrucción [`$select`](#select) para limitar las propiedades devueltas para los elementos secundarios expandidos a las propiedades `id` y `name`.
+Con algunas colecciones de recursos, también se pueden especificar las propiedades que se van a devolver en los recursos expandidos si se agrega un parámetro `$select`. En el ejemplo siguiente se realiza la misma consulta que en el anterior, pero se usa una instrucción [`$select`](#select-parameter) para limitar las propiedades devueltas para los elementos secundarios expandidos a las propiedades `id` y `name`.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > 
 > Con recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), solo se admite `$expand` para `beta` y normalmente devuelve un máximo de 20 elementos para la relación expandida.
 
-## <a name="filter"></a>filter
+## <a name="filter-parameter"></a>parámetro de filtrado
 
 Use el parámetro de consulta `$filter` para recuperar solo un subconjunto de una colección. 
 
@@ -120,7 +120,7 @@ En la tabla siguiente se muestran algunos ejemplos de uso del parámetro de cons
 
 > **Nota:** Los operadores `$filter` siguientes no se admiten para recursos de Azure AD: `ne`, `gt`, `ge`, `lt`, `le` y `not`. El operador de cadena `contains` actualmente no se admite en ningún recurso de Microsoft Graph.
 
-## <a name="format"></a>format
+## <a name="format-parameter"></a>parámetro de formato
 
 Use el parámetro de consulta `$format` para especificar el formato de medio de los elementos devueltos desde Microsoft Graph
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 > **Nota**: El parámetro de consulta `$format` admite varios formatos, como atom, xml y json, pero puede que no todos los formatos devuelvan resultados.
 
-## <a name="orderby"></a>orderby
+## <a name="orderby-parameter"></a>parámetro orderby
 
 Use el parámetro de consulta `$orderby` para especificar el criterio de ordenación de los elementos devueltos desde Microsoft Graph
 
@@ -165,11 +165,11 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
  > **Nota:** Con recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), no se puede combinar `$orderby` con expresiones`$filter`. 
 
-## <a name="search"></a>buscar 
+## <a name="search-parameter"></a>parámetro de búsqueda
 
 Use el parámetro de consulta `$search` para restringir los resultados de una solicitud para que coincidan con un criterio de búsqueda
 
-> **Nota:** Actualmente **solo** se pueden buscar las colecciones [message](../api-reference/v1.0/resources/message.md) y [person](../api-reference/v1.0/resources/person.md). Una solicitud `$search` devuelve hasta 250 resultados. No puede usar [`$filter`](#filter) o [`$orderby`](#orderby) en una solicitud de búsqueda.
+> **Nota:** Actualmente **solo** se pueden buscar las colecciones [message](../api-reference/v1.0/resources/message.md) y [person](../api-reference/v1.0/resources/person.md). Una solicitud `$search` devuelve hasta 250 resultados. No puede usar [`$filter`](#filter-parameter) o [`$orderby`](#orderby-parameter) en una solicitud de búsqueda.
 
 ### <a name="using-search-on-message-collections"></a>Uso de $search en colecciones `message`
 
@@ -237,7 +237,7 @@ Esta solicitud realiza básicamente dos búsquedas: una búsqueda parcial en las
 
 Para más información sobre la API de contactos, vea [Obtener información sobre contactos relevantes](./people_example.md).  
 
-## <a name="select"></a>select
+## <a name="select-parameter"></a>parámetro de selección
 
 Use el parámetro de consulta `$select` para devolver un conjunto de propiedades diferente al predeterminado para un recurso individual o una colección de recursos. Con $select puede especificar un subconjunto o un superconjunto de las propiedades predeterminadas.
 
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 >
 > En `v1.0`, algunos recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), devuelven un subconjunto predeterminado limitado de propiedades en las operaciones de lectura. Para estos recursos, debe usar `$select` para devolver propiedades fuera el conjunto predeterminado.  
 
-## <a name="skip"></a>skip
+## <a name="skip-parameter"></a>parámetros de omisión
 
 Use el parámetro de consulta `$skip` para establecer el número de elementos que se omitirán al inicio de una colección. Por ejemplo, la solicitud siguiente devuelve eventos para el usuario ordenados por fecha de creación, empezando por el evento 21 de la colección:
 
@@ -264,12 +264,12 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 > **Nota:** En algunas API de Microsoft Graph, como Correo y Calendario de Outlook (`message`, `event` y `calendar`), se usa `$skip` para implementar la paginación. Cuando los resultados de una consulta ocupan varias páginas, estas API devolverán una propiedad `@odata:nextLink` con una dirección URL que contiene un parámetro `$skip`. Puede usar esta dirección URL para devolver la siguiente página de resultados. Para obtener más información, vea [Paginación](./paging.md).
 
-## <a name="skiptoken"></a>skipToken
+## <a name="skiptoken-parameter"></a>parámetro skipToken
 
-Algunas consultas devuelven varias páginas de datos debido a la paginación del servidor o al uso del parámetro [`$top`](#top) para limitar el tamaño de página de la respuesta. Muchas API de Microsoft Graph usan el parámetro de consulta `skipToken` para hacer referencia a las páginas siguientes del resultado. El parámetro `$skiptoken` contiene un token opaco que hace referencia a la siguiente página de resultados y se devuelve en la dirección URL proporcionada en la propiedad `@odata.nextLink` en la respuesta. Para obtener más información, vea [Paginación](./paging.md).
+Algunas consultas devuelven varias páginas de datos debido a la paginación del servidor o al uso del parámetro [`$top`](#top-parameter) para limitar el tamaño de página de la respuesta. Muchas API de Microsoft Graph usan el parámetro de consulta `skipToken` para hacer referencia a las páginas siguientes del resultado. El parámetro `$skiptoken` contiene un token opaco que hace referencia a la siguiente página de resultados y se devuelve en la dirección URL proporcionada en la propiedad `@odata.nextLink` en la respuesta. Para obtener más información, vea [Paginación](./paging.md).
 
 
-## <a name="top"></a>top
+## <a name="top-parameter"></a>parámetro superior
 
 Use el parámetro de consulta `$top` para especificar el tamaño de página del conjunto de resultados. 
 
