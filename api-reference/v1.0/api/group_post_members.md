@@ -1,10 +1,10 @@
-# <a name="add-member"></a>Agregar miembro
+# <a name="add-member"></a>Add member
+Use esta API para agregar un miembro a un grupo de Office 365, un grupo de seguridad o un grupo de seguridad habilitado para correo a través de la propiedad de navegación **members**.
 
-Use esta API para agregar un miembro a un grupo de Office 365, un grupo de seguridad o un grupo de seguridad habilitado para correo a través de la propiedad de navegación **members**. Puede agregar usuarios u otros grupos. Importante: Solo puede agregar usuarios a grupos de Office 365.
+Puede agregar usuarios u otros grupos. Importante: Solo se pueden agregar usuarios a grupos de Office 365.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
-
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
@@ -17,6 +17,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ```http
 POST /groups/{id}/members/$ref
 ```
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
@@ -26,12 +27,11 @@ POST /groups/{id}/members/$ref
 En el cuerpo de la solicitud, proporcione una representación JSON de un objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) o [group](../resources/group.md) que se va a agregar.
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+#### <a name="request"></a>Solicitud
+Este es un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -46,8 +46,10 @@ Content-length: 30
 }
 ```
 En el cuerpo de la solicitud, proporcione una representación JSON del `id` de un objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) o [group](../resources/group.md) que quiera agregar.
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

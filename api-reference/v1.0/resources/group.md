@@ -13,10 +13,10 @@ Este recurso admite:
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |**Administración de grupos**| | |
-|[Crear grupo](../api/group_post_groups.md) | [grupo](group.md) |Crea un grupo nuevo. Puede ser un grupo, un grupo dinámico o un grupo de seguridad de Office 365.|
+|[Crear grupo](../api/group_post_groups.md) | [grupo](group.md) |Crea un grupo. Puede ser un grupo, un grupo dinámico o un grupo de seguridad de Office 365.|
 |[Obtener grupo](../api/group_get.md) | [grupo](group.md) |Lee las propiedades de un objeto de grupo.|
 |[Enumerar grupos](../api/group_list.md) |Colección [group](group.md) |Enumera los objetos de grupo y sus propiedades.|
-|[Actualizar grupo](../api/group_update.md) | [grupo](group.md) |Actualiza las propiedades de un objeto de grupo. |
+|[Grupo de actualización](../api/group_update.md) | Ninguno |Actualiza las propiedades de un objeto de grupo. |
 |[Eliminar grupo](../api/group_delete.md) | Ninguno |Elimina el objeto de grupo. |
 |[Agregar propietario](../api/group_post_owners.md) |Ninguno| Agrega un nuevo propietario al grupo al publicarlo en la propiedad de navegación **owners** (se admite solo para grupos de seguridad y grupos de seguridad habilitados para correo).|
 |[Enumerar propietarios](../api/group_list_owners.md) |Colección [directoryObject](directoryobject.md)| Obtiene los propietarios del grupo desde la propiedad de navegación **owners**.|
@@ -29,14 +29,22 @@ Este recurso admite:
 |[getMemberObjects](../api/group_getmemberobjects.md)|Colección string|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva. |
 |[delta](../api/group_delta.md)|Colección group| Obtiene los cambios incrementales de grupos. |
 |**Calendario**| | |
-|[Crear evento](../api/group_post_events.md) |[Evento](event.md)| Crea un nuevo evento publicándolo en la colección de eventos.|
-|[Enumerar eventos](../api/group_list_events.md) |Colección [event](event.md)| Obtiene una colección de objetos de evento.|
-|[Enumerar calendarView](../api/group_list_calendarview.md) |Colección [event](event.md)| Obtiene una colección de eventos en un margen de tiempo especificado.|
+|[Crear evento](../api/group_post_events.md) |[evento](event.md)| Crea un evento al publicarlo en la colección de eventos.|
+|[Obtener evento](../api/group_get_event.md) |[evento](event.md)|Lee las propiedades de un objeto de evento.|
+|[Lista de eventos](../api/group_list_events.md) |Colección de [eventos](event.md)| Obtiene una colección de objetos de evento.|
+|[Actualizar evento](../api/group_update_event.md) |Ninguno|Actualiza las propiedades del objeto de evento.|
+|[Eliminar evento](../api/group_delete_event.md) |Ninguno|Elimina el objeto de evento.|
+|[Lista de calendarView](../api/group_list_calendarview.md) |Colección de [eventos](event.md)| Obtiene una colección de eventos en un intervalo de tiempo especificado.|
 |**Conversaciones**| | |
-|[Crear conversación](../api/group_post_conversations.md) |[Conversación](conversation.md)| Crea una nueva conversación publicándola en la colección de conversaciones.|
-|[Enumerar conversaciones](../api/group_list_conversations.md) |Colección [conversation](conversation.md)| Obtiene una colección de objetos de conversación.|
-|[Enumerar hilos](../api/group_list_threads.md) |Colección [conversationThread](conversationthread.md)| Obtiene todos los hilos de un grupo.|
-|[Enumerar acceptedSenders](../api/group_list_acceptedsenders.md) |Colección [directoryObject](directoryobject.md)| Obtiene una lista de usuarios o grupos que se encuentran en la lista de acceptedSenders de este grupo.|
+|[Crear conversación](../api/group_post_conversations.md) |[conversación](conversation.md)| Crea una conversación al publicarla en la colección de conversaciones.|
+|[Obtener conversación](../api/group_get_conversation.md) |[conversación](conversation.md)| Lee las propiedades de un objeto de conversación.|
+|[Lista de conversaciones](../api/group_list_conversations.md) |Colección de [conversaciones](conversation.md)| Obtiene una colección de objetos de conversación.|
+|[Eliminar conversación](../api/group_delete_conversation.md) |Ninguno|Elimina un objeto de conversación.|
+|[Obtener conversación](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Lee las propiedades de un objeto de conversación.|
+|[Lista de conversaciones](../api/group_list_threads.md) |Colección [conversationThread](conversationthread.md)| Obtiene todas las conversaciones de un grupo.|
+|[Actualizar conversación](../api/group_update_thread.md) |Ninguno| Actualiza las propiedades de un objeto de conversación.|
+|[Eliminar conversación](../api/group_delete_thread.md) |Ninguno| Elimina un objeto de conversación.|
+|[Lista de acceptedSenders](../api/group_list_acceptedsenders.md) |Colección [directoryObject](directoryobject.md)| Obtiene una lista de usuarios o grupos que se encuentran en la lista de acceptedSenders de este grupo.|
 |[Agregar acceptedSenders](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Agrega un usuario o grupo a la colección acceptSenders.|
 |[Eliminar acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Elimina a un usuario o grupo de la colección acceptedSenders.|
 |[Enumerar rejectedSenders](../api/group_list_rejectedsenders.md) |Colección [directoryObject](directoryobject.md)| Obtiene una lista de usuarios o grupos que se encuentran en la lista de rejectedSenders de este grupo.|
@@ -45,7 +53,7 @@ Este recurso admite:
 |[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
 |[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
 |[List settings](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
-|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Actualiza el objeto de configuración. |
+|[Configuración de actualización](../api/groupsetting_update.md) | Ninguno | Actualiza el objeto de configuración. |
 |[Delete setting](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
 |**Extensiones abiertas**| | |
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
@@ -103,15 +111,15 @@ Este recurso admite:
 |owners|Colección [directoryObject](directoryobject.md)|Los propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar este objeto. Limitado a 10 propietarios. Métodos HTTP: GET (compatible con todos los grupos), POST (compatible con grupos de Office 365, grupos de seguridad y los grupos de seguridad habilitados para correo), DELETE (compatible con grupos de Office 365 y grupos de seguridad). Admite valores NULL.|
 |Foto|[profilePhoto](profilephoto.md)| La foto de perfil del grupo. |
 |photos|Colección [profilePhoto](profilephoto.md)| Las fotos de perfil que pertenecen al grupo. Solo lectura. Admite valores NULL.|
-|planner|[Planner](planner.md)| Punto de entrada al recurso de Planner que puede existir para un grupo unificado.|
+|planner|[planner](planner.md)| Punto de entrada al recurso de Planner que puede existir para un grupo unificado.|
 |rejectedSenders|Colección [directoryObject](directoryobject.md)|La lista de usuarios o grupos que no tienen permiso para crear publicaciones o eventos de calendario en este grupo. Admite valores NULL|
 |configuración|Colección de [groupSetting](groupsetting.md)| Solo lectura. Admite valores NULL.|
-|sites|Colección [site](site.md)|La lista de sitios de SharePoint de este grupo. Acceda al sitio predeterminado con /sites/root.
+|sites|Colección [site](site.md)|La lista de sitios de SharePoint de este grupo. Acceda al sitio predeterminado con /sites/root.|
 |threads|Colección [conversationThread](conversationthread.md)| Los hilos de conversación del grupo. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
 
-Aquí tiene una representación JSON del recurso
+Esta es una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
@@ -175,7 +183,7 @@ Aquí tiene una representación JSON del recurso
 
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)

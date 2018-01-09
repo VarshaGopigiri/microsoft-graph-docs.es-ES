@@ -1,11 +1,8 @@
 # <a name="group-delta"></a>grupo: delta
-
 La [consulta delta](../../../concepts/delta_query_overview.md) permite a las aplicaciones detectar entidades recién creadas, actualizadas o eliminadas sin realizar una operación de lectura completa del recurso de destino con cada solicitud. Para detectar cambios en grupos, realice una solicitud usando la función *delta*. Consulte [Usar la consulta delta](../../../concepts/delta_query_overview.md) para obtener más detalles.
 
 ## <a name="permissions"></a>Permisos
-
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
-
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
@@ -14,7 +11,6 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
-
 Para comenzar los cambios, debe realizar una solicitud incluyendo la función delta en el recurso grupo. 
 
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +19,6 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>Parámetros de consulta
-
 El seguimiento de cambios en los grupos conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar los parámetros de consulta deseados una vez por adelantado. En solicitudes posteriores, copie y aplique la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
 | Parámetro de consulta      | Tipo   |Descripción|
@@ -32,7 +27,6 @@ El seguimiento de cambios en los grupos conlleva al menos una llamada de una fun
 | $skiptoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de grupos. |
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-
 Este método admite parámetros de consulta de OData a modo de ayuda para personalizar la respuesta.
 
 - Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud GET para especificar solo las propiedades que necesita para un mejor rendimiento. Siempre se devuelve la propiedad _id_. 
@@ -50,7 +44,6 @@ Este método admite parámetros de consulta de OData a modo de ayuda para person
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto de colección [grupo](../resources/group.md) en el cuerpo de la respuesta. La respuesta también incluye un token de estado, que puede ser una URL de nextLink o de deltaLink.
 
 - Si se devuelve una dirección URL nextLink, hay más páginas de datos para recuperar en la sesión. La aplicación continúa realizando solicitudes mediante la dirección URL nextLink hasta que se incluya una dirección URL deltaLink en la respuesta.
@@ -62,7 +55,7 @@ Vea:</br>
 - [Obtener los cambios incrementales para grupos](../../../concepts/delta_query_groups.md) para obtener ejemplos de solicitudes.</br>
     
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+#### <a name="request"></a>Solicitud
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -71,8 +64,8 @@ Vea:</br>
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
-##### <a name="response"></a>Respuesta
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
+#### <a name="response"></a>Respuesta
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",

@@ -1,8 +1,8 @@
 # <a name="create-acceptedsender"></a>Create acceptedSender
-
 Agrega un nuevo usuario o grupo a la lista de acceptedSender.
 
 En el cuerpo de la solicitud, especifique el usuario o grupo en `@odata.id`. Los usuarios de la lista de remitentes aceptados pueden publicar conversaciones del grupo. Asegúrese de no especificar el mismo usuario o grupo en las listas de remitentes aceptados y de remitentes rechazados, de lo contrario se producirá un error.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.ReadWrite.All |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -26,12 +26,11 @@ POST /groups/{id}/acceptedSenders/$ref
 En el cuerpo de la solicitud, proporcione el identificador de un objeto de usuario o grupo.
 
 ## <a name="response"></a>Respuesta
-
 Este método devuelve el código de respuesta `204 No Content` y ningún cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+#### <a name="request"></a>Solicitud
+Este es un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -45,8 +44,9 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta.
 <!-- {
   "blockType": "response",
   "truncated": true

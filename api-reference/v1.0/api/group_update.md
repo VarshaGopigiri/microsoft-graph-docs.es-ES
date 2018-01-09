@@ -1,10 +1,8 @@
 # <a name="update-group"></a>Actualizar grupo
-
 Actualiza las propiedades de un objeto de grupo.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
-
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,16 +41,15 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 **Nota**
 
 - Puede actualizar **autoSubscribeNewMembers** especificándolo en su propia solicitud PATCH sin incluir el resto de propiedades de la tabla anterior.
-- Solo un subconjunto de la API de grupo relativa a la administración de grupos básicos admite permisos delegados y de aplicación. Todos los demás miembros de la API de grupo, incluida la actualización **autoSubscribeNewMembers**, son compatible solo con los permisos delegados. Vea [problemas conocidos](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) para obtener ejemplos.
+- Solo un subconjunto de la API de grupo relativa a la administración de grupos básicos admite permisos delegados y de aplicación. Todos los demás miembros de la API de grupo, incluida la actualización **autoSubscribeNewMembers**, son compatible solo con los permisos delegados. Vea [problemas conocidos](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes) para obtener ejemplos.
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.
 
 ## <a name="example"></a>Ejemplo
 
-##### <a name="request"></a>Solicitud
-
+#### <a name="request"></a>Solicitud
+Este es un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -74,8 +71,9 @@ Content-length: 211
 }
 ```
 
-##### <a name="response"></a>Respuesta
-
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,5 +1,4 @@
 # <a name="create-conversation-thread"></a>Crear hilo de conversación
-
 Inicie una nueva conversación de grupo creando primero un hilo de conversación. 
 
 Se crea una conversación, un hilo de conversación y una publicación en el grupo. Use [responder hilo](conversationthread_reply.md) o [responder publicación](post_reply.md) para agregar publicaciones al hilo.
@@ -13,7 +12,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.ReadWrite.All |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -30,12 +29,11 @@ POST /groups/{id}/threads
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [conversationThread](../resources/conversationthread.md) que contiene un [post](../resources/post.md).
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [conversationThread](../resources/conversationthread.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+#### <a name="request"></a>Solicitud
+Este es un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "create_conversationthread_from_group"
@@ -60,8 +58,9 @@ Content-type: application/json
   }]
 }
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

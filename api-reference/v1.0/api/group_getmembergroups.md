@@ -6,7 +6,6 @@ Esta función es compatible con Office 365 y otros tipos de grupos aprovisionado
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
@@ -31,13 +30,11 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |securityEnabledOnly|Boolean|Establecer en **false**. La devolución solo de grupos con la seguridad activada solo es compatible para usuarios.|
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y la colección String en el cuerpo de la respuesta que contiene los identificadores de los grupos de los que el grupo sea miembro.
 
 ## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+#### <a name="request"></a>Solicitud
+Este es un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "group_getmembergroups"
@@ -52,8 +49,9 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

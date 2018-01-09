@@ -25,15 +25,28 @@ Ninguno
 
 [Funciones de Excel](#functions): Para invocar una función de libro, use la sintaxis `POST /workbook/functions/{function-name}` y proporcione los argumentos de la función en el cuerpo mediante un objeto JSON. Las cadenas `value` y `error` resultantes de la función se devuelven en el objeto de resultado de la función. El valor `error` de `null` indica que la función se ha ejecutado correctamente. 
 
-La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.
+La lista completa de funciones admitidas se encuentra [aquí]((https://support.office.com/es-ES/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)). Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.
 
 _Notas importantes:_ 
 * El parámetro de entrada de intervalo se suministra mediante un objeto range en lugar de la cadena de dirección de intervalo.  
-* El parámetro de índice es 1 indexado, a diferencia del índice 0 usado en la mayoría de las API. 
+* El parámetro de índice es “1 indexado”, a diferencia del “índice 0” usado en la mayoría de las API. 
 
-Ejemplo: 
+Ejemplo: **BUSCARV**
 
-En el ejemplo siguiente, para llamar a la función `vlookup`, se pasan el valor de búsqueda, el rango de entrada y el valor que se devolverá. 
+En una hoja de cálculo de Excel, la función `vlookup` admite estos argumentos:
+
+1. El valor que quiere buscar, también llamado el valor de búsqueda.
+2. El rango donde se encuentra el valor de búsqueda. Recuerde que el valor de búsqueda siempre tiene que estar en la primera columna del rango para que BUSCARV funcione correctamente. Por ejemplo, si el valor de búsqueda se encuentra en la celda C2, el rango tiene que empezar con C.
+3. El número de columna en el rango que contiene el valor devuelto. Por ejemplo, si especifica B2:D11 como el rango, B será la primera columna, C la segunda, etc.
+4. De forma opcional, puede especificar VERDADERO si quiere obtener una coincidencia aproximada, o bien FALSO si quiere obtener una coincidencia exacta del valor devuelto. Si no especifica nada, el valor predeterminado será siempre VERDADERO o coincidencia aproximada.
+
+Dentro de una celda, la función `vlookup` es similar a esta: 
+
+= BUSCARV(valor de búsqueda, rango que contiene el valor de búsqueda, el número de columna en el rango que contiene el valor devuelto, de forma opcional, especifique VERDADERO para obtener una coincidencia aproximada o FALSO para una coincidencia exacta)
+
+(Vea la documentación de la [Función de Excel BUSCARV]((https://support.office.com/es-ES/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1))).
+
+En el ejemplo siguiente, se muestra cómo realizar una llamada a la función `vlookup` y pasar estos parámetros con la API de REST de Excel.
 
 Solicitud: 
 
@@ -66,9 +79,17 @@ content-type: application/json;odata.metadata
 }
 ```
 
-Ejemplo: 
+Ejemplo: `median`
 
-En el ejemplo siguiente, para llamar a la función `median`, se pasan los intervalos de entrada en una matriz. 
+En una hoja de cálculo de Excel, la función `median` admite una matriz de uno o más rangos de entrada.
+
+Dentro de una celda, la función `median` es similar a este ejemplo:
+
+=MEDIANA(A2:A6)
+
+(Vea la documentación de la [Función de Excel MEDIANA]((https://support.office.com/es-ES/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2))).
+
+En el ejemplo siguiente, se muestra cómo realizar una llamada a la función `median` y uno o más rangos de entrada con la API de REST de Excel. 
 
 Solicitud: 
 

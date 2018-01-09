@@ -1,5 +1,5 @@
 # <a name="create-conversation"></a>Create Conversation
-Crea una nueva conversación incluyendo un hilo y una publicación. 
+Crea una [conversación](../resources/conversation.md) al incluir un hilo y una publicación. 
 
 Use [responder hilo](conversationthread_reply.md) o [responder publicación](post_reply.md) para agregar publicaciones a la conversación.
 

@@ -1,5 +1,4 @@
 # <a name="list-groups"></a>Enumerar grupos
-
 Lista de todos los grupos disponibles en una organización, incluidos pero sin limitarse a ellos los grupos de Office 365. Se devuelven las [propiedades predeterminadas](../api/group_get.md#default-properties) de cada grupo.
 
 Para enumerar únicamente grupos de Office 365 (también denominados grupos unificados), aplique un filtro en **groupTypes**:
@@ -11,7 +10,6 @@ Puede usar la opción de consulta de OData `$orderby` para ordenar grupos de una
 ```
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
-
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -27,8 +25,10 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ```http
 GET /groups
 ```
+
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](../../../concepts/query_parameters.md) a modo de ayuda para personalizar la respuesta.
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
@@ -38,11 +38,11 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [group](../resources/group.md) en el cuerpo de la respuesta.
+
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+#### <a name="request"></a>Solicitud
+Este es un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -50,10 +50,11 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 GET https://graph.microsoft.com/v1.0/groups
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán las [propiedades predeterminadas](../api/group_get.md#default-properties) de una llamada real.
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta.
+
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán las [propiedades predeterminadas](../api/group_get.md#default-properties) de una llamada real.
 
 <!-- {
   "blockType": "response",

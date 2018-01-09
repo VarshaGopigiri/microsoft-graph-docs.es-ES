@@ -1,0 +1,13 @@
+# <a name="yammer-activity-reports"></a>Obtener informe de actividades de Yammer
+
+Puede usar los informes de actividades de Yammer para comprender el nivel de interacción de la organización con Yammer; estos informes le permitirán conocer las actividades que se generan en la organización y el número de usuarios únicos que publican, leen y etiquetan con “Me gusta” mensajes en Yammer.
+
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de Yammer]((https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)).
+
+## <a name="reports"></a>Informes
+
+| Función                                 | Tipo de valor devuelto | Descripción                              |
+| :--------------------------------------- | :---------- | :--------------------------------------- |
+| [Obtener detalles del usuario](../api/reportroot_getyammeractivityuserdetail.md) | Secuencia      | Obtiene información sobre las actividades de Yammer por usuario. |
+| [Obtener recuentos de actividad](../api/reportroot_getyammeractivitycounts.md) | Secuencia      | Obtiene las tendencias sobre el número de actividades de Yammer en la organización y el número de mensajes que se publicaron, leyeron y etiquetaron como “Me gusta”. |
+| [Obtener número de usuarios](../api/reportroot_getyammeractivityusercounts.md) | Secuencia      | Obtiene las tendencias sobre el número de usuarios únicos que publicaron, leyeron y etiquetaron como “Me gusta” mensajes de Yammer. |

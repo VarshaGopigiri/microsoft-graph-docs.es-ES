@@ -1,5 +1,5 @@
-# <a name="list-conversations"></a>List conversations
-Recupera la lista de conversaciones en este grupo.
+# <a name="list-conversations"></a>Lista de conversaciones
+Recupera la lista de [conversaciones](../resources/conversation.md) en este grupo.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -17,7 +17,7 @@ GET /groups/{id}/conversations
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](../../../concepts/query_parameters.md) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
@@ -28,7 +28,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [Conversation](../resources/conversation.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos de [conversación](../resources/conversation.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud

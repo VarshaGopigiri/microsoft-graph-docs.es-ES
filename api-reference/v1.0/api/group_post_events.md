@@ -1,4 +1,4 @@
-# <a name="create-event"></a>Create Event
+# <a name="create-event"></a>Crear evento
 Use esta API para crear un objeto [event](../resources/event.md).
 
 ## <a name="permissions"></a>Permisos
@@ -23,10 +23,10 @@ POST /groups/{id}/calendar/events
 | Authorization  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Event](../resources/event.md).
+En el cuerpo de la solicitud, proporcione una representación JSON del objeto [event](../resources/event.md).
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [Event](../resources/event.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [event](../resources/event.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud

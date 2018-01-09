@@ -6,7 +6,6 @@ Puede obtener esta información a través de la API de contactos. Para obtener e
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
- 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
@@ -23,13 +22,13 @@ GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los siguientes [parámetros de consulta de OData](../../../concepts/people_example.md) a modo de ayuda para personalizar la respuesta.
+Este método admite los siguientes [parámetros de consulta de OData](../../../concepts/query_parameters.md) para que le resulte más fácil personalizar la respuesta, con ejemplos que se muestran en el artículo [Obtener información relevante sobre contactos](../../../concepts/people_example.md).
 
 |Nombre|Valor|Descripción| 
 |:---------------|:--------|:-------| 
 |$filter|string|Limita la respuesta a solo los contactos cuyo registro contiene los criterios especificados.| 
 |$orderby|cadena|De manera predeterminada, los contactos de la respuesta se ordenan por su relevancia para la consulta. Puede cambiar el orden de los contactos en la respuesta con el parámetro *$orderby*.| 
-|$search|string|Se buscan contactos por nombre o alias. Admite coincidencia aproximada| 
+|$search|string|Busca contactos por nombre o alias. Admite la coincidencia aproximada.| 
 |$select|string|Lista separada por comas de las propiedades que se van a incluir en la respuesta. Para un rendimiento óptimo, seleccione solo el subconjunto de propiedades necesarias.| 
 |$skip|int|Se omiten los primeros resultados n, útil para la paginación. Esta opción no se admite cuando se usa *$search*.| 
 |$top|int|Número de resultados que se van a devolver.| 

@@ -1,5 +1,4 @@
 # <a name="get-group"></a>Obtener grupo
-
 Obtiene las propiedades y relaciones de un objeto de grupo.
 
 ##### <a name="default-properties"></a>Propiedades predeterminadas
@@ -51,8 +50,10 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ```http
 GET /groups/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](../../../concepts/query_parameters.md) a modo de ayuda para personalizar la respuesta.
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
@@ -62,11 +63,11 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [group](../resources/group.md) en el cuerpo de la respuesta.
+
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+#### <a name="request"></a>Solicitud
+Este es un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "get_group"
@@ -74,10 +75,11 @@ Aquí tiene un ejemplo de la solicitud.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}
 ```
-##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
 
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real, como se describió anteriormente.
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta.
+
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades predeterminadas de una llamada real, como se describió anteriormente.
 <!-- {
   "blockType": "response",
   "truncated": true,

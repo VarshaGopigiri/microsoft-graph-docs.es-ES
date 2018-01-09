@@ -1,16 +1,14 @@
 # <a name="remove-rejectedsender"></a>Remove rejectedSender
-
 Quita un usuario o grupo de la lista de rejectedSenders.
 
 ## <a name="permissions"></a>Permisos
-
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 | Tipo de permiso                        | Permisos (de menos a más privilegiados)  |
 |:---------------------------------------|:-------------------------------------------- |
-| Delegado (cuenta profesional o educativa)     | Group.ReadWrite.All    
-| Delegado (cuenta personal de Microsoft) | No admitido
-| Aplicación                            | Group.ReadWrite.All
+| Delegado (cuenta profesional o educativa)     | Group.ReadWrite.All |
+| Delegado (cuenta personal de Microsoft) | No admitida. |
+| Aplicación                            | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -25,18 +23,14 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 | Authorization  | {token} de portador. Obligatorio. 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
-
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-
-##### <a name="request"></a>Solicitud
-
-Aquí tiene un par de ejemplos de la solicitud.
+#### <a name="request"></a>Solicitud
+Estos son un par de ejemplos de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -47,9 +41,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-##### <a name="response"></a>Respuesta
-
-Aquí tiene un ejemplo de la respuesta. 
+#### <a name="response"></a>Respuesta
+Este es un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
   "truncated": true
