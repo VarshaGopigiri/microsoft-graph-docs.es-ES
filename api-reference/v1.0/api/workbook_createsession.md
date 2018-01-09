@@ -11,6 +11,10 @@ Para representar la sesión en la API, utilice el encabezado `workbook-session-i
 
 >**Nota:** El encabezado de sesión no es necesario para que funcione una API de Excel. Sin embargo, recomendamos que utilice el encabezado de sesión para mejorar el rendimiento. Si no utiliza un encabezado de sesión, los cambios realizados durante la llamada API _sí_ persisten en el archivo.  
 
+## <a name="error-handling"></a>Control de errores
+
+En ocasiones, esta solicitud puede recibir el error HTTP 504. La respuesta adecuada a este error es repetir la solicitud.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 

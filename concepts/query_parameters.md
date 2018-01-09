@@ -11,7 +11,7 @@ Microsoft Graph proporciona parámetros de consulta opcionales que puede usar pa
 | [$filter](#filter-parameter)       | Filtra los resultados (filas).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | Devuelve los resultados en el formato de medio especificado.|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | Ordena los resultados.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Devuelve los resultados en función de criterios de búsqueda. Actualmente se admite en las colecciones `messages` y `person`.|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | Devuelve los resultados en función de los criterios de búsqueda. Actualmente, se admite en las colecciones de **mensajes** y **usuarios**.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados. | [`/me/messages?$skip=11`][skip-example]
 | [$skipToken](#skiptoken-parameter) | Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `/users?$skiptoken=X%274453707402000100000017...`|
@@ -21,7 +21,7 @@ Microsoft Graph proporciona parámetros de consulta opcionales que puede usar pa
 
 Estos parámetros son compatibles con el [lenguaje de consulta de OData V4][odata-query]. No todos los parámetros se admiten en todas las API de Microsoft Graph, y la compatibilidad puede variar considerablemente entre los puntos de conexión `v1.0` y `beta`. 
 
-> **Nota:** En el punto de conexión `beta`, el prefijo `$` es opcional. Por ejemplo, en lugar de `$filter`, puede usar `filter`. Para obtener más detalles y ejemplos, vea [Compatibilidad con los parámetros de consulta sin el prefijo "$" en Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
+> **Nota:** En el punto de conexión `beta`, el prefijo `$` es opcional. Por ejemplo, en lugar de `$filter`, puede usar `filter`. Para obtener más detalles y ejemplos, vea [Compatibilidad con los parámetros de consulta sin el prefijo "$" en Microsoft Graph]((http://dev.office.com/queryparametersinMicrosoftGraph)).
 
 ## <a name="encoding-query-parameters"></a>Codificación de parámetros de consulta
 
@@ -43,7 +43,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 Use el parámetro de consulta `$count` para incluir un recuento del número total de elementos de una colección junto con la página de valores de datos que se devuelve desde Microsoft Graph. 
 
-Por ejemplo, la siguiente solicitud devolverá tanto la colección `contacts` del usuario actual como el número de elementos de la colección `contacts` en la propiedad `@odata.count`.
+Por ejemplo, la siguiente solicitud devolverá tanto la colección de **contactos** del usuario actual como el número de elementos de la colección de **contactos** en la propiedad `@odata.count`.
 
 ```http
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
@@ -52,7 +52,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**Nota:** `$count` no se admite con colecciones de recursos que se derivan de [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md), como las colecciones de [user](../api-reference/v1.0/resources/user.md) o [group](../api-reference/v1.0/resources/group.md).
+>**Nota:** `$count` no se admite con colecciones de recursos que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como las colecciones de [usuarios](../api-reference/v1.0/resources/user.md) o [grupos](../api-reference/v1.0/resources/group.md).
 
 ## <a name="expand-parameter"></a>parámetro de expansión
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
-Con algunas colecciones de recursos, también se pueden especificar las propiedades que se van a devolver en los recursos expandidos si se agrega un parámetro `$select`. En el ejemplo siguiente se realiza la misma consulta que en el anterior, pero se usa una instrucción [`$select`](#select-parameter) para limitar las propiedades devueltas para los elementos secundarios expandidos a las propiedades `id` y `name`.
+Con algunas colecciones de recursos, también se pueden especificar las propiedades que se van a devolver en los recursos expandidos si se agrega un parámetro `$select`. En el ejemplo siguiente se realiza la misma consulta que en el anterior, pero se usa una instrucción [`$select`](#select-parameter) para limitar las propiedades devueltas para los elementos secundarios expandidos a las propiedades **id** y **name**.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,name)
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 [Probar en el Probador de Graph][expand-example]
 
-> **Nota:** No todas las relaciones y recursos admiten el parámetro de consulta `$expand`. Por ejemplo, se pueden expandir las relaciones `directReports`, `manager` y `memberOf` en un usuario, pero no se pueden expandir sus relaciones `events`, `messages` o `photo`. No todos los recursos o relaciones admiten el uso de `$select` en elementos expandidos. 
+> **Nota:** No todas las relaciones y recursos admiten el parámetro de consulta `$expand`. Por ejemplo, se pueden expandir las relaciones **directReports**, **manager** y **memberOf** de un usuario, pero no se pueden expandir sus relaciones **events**, **messages** o **photo**. No todos los recursos o relaciones admiten el uso de `$select` en elementos expandidos. 
 > 
 > Con recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), solo se admite `$expand` para `beta` y normalmente devuelve un máximo de 20 elementos para la relación expandida.
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```
 [Probar en el Probador de Graph][orderby-example]
 
-También puede ordenar por entidades de tipo complejo. En la solicitud siguiente se obtienen los mensajes y se ordenan por el campo `address` de la propiedad `from`, que es del tipo complejo `emailAddress`:
+También puede ordenar por entidades de tipo complejo. La solicitud siguiente obtiene los mensajes y los ordena por el campo **address** de la propiedad **from**, que es del tipo complejo **emailAddress**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
@@ -171,27 +171,29 @@ Use el parámetro de consulta `$search` para restringir los resultados de una so
 
 > **Nota:** Actualmente **solo** se pueden buscar las colecciones [message](../api-reference/v1.0/resources/message.md) y [person](../api-reference/v1.0/resources/person.md). Una solicitud `$search` devuelve hasta 250 resultados. No puede usar [`$filter`](#filter-parameter) o [`$orderby`](#orderby-parameter) en una solicitud de búsqueda.
 
-### <a name="using-search-on-message-collections"></a>Uso de $search en colecciones `message`
+### <a name="using-search-on-message-collections"></a>Uso de $search en colecciones de mensajes
 
-Los criterios de búsqueda se expresan mediante la [Sintaxis de consulta avanzada (AQS)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). Los resultados se ordenan por la fecha y la hora en que se ha enviado el mensaje.
+Las aplicaciones de Office 365, como Outlook y SharePoint, admiten la sintaxis del lenguaje de consulta de palabras clave (KQL) para realizar búsquedas. Esto proporciona la comodidad de un dominio de detección común para sus almacenes de datos. 
 
-Puede especificar las siguientes propiedades en `message` en un criterio `$search`:
+Cuando busca en las colecciones de mensajes, los resultados se ordenan por la fecha y la hora en que se ha enviado el mensaje. 
 
-- `attachments`
-- `bccRecipients`
-- `body`
-- `category`
-- `ccRecipients`
-- `content`
-- `from`
-- `hasAttachments`
-- `participants`
-- `receivedDateTime`
-- `sender`
-- `subject`
-- `toRecipients`
+Puede especificar las siguientes propiedades en un **mensaje** en un criterio `$search`:
 
-Si realiza una búsqueda en mensajes y especifica un solo valor, la búsqueda se realiza con las propiedades de búsqueda predeterminadas de `from`, `subject` y `body`.
+- **attachments**
+- **bccRecipients**
+- **body**
+- **category**
+- **ccRecipients**
+- **content**
+- **from**
+- **hasAttachments**
+- **participants**
+- **receivedDateTime**
+- **sender**
+- **subject**
+- **toRecipients**
+
+Si realiza una búsqueda en mensajes y especifica un solo valor, la búsqueda se lleva a cabo con las propiedades de búsqueda predeterminadas de **from**, **subject** y **body**.
 
 En el ejemplo siguiente, se devuelven todos los mensajes del buzón del usuario que ha iniciado sesión que contienen la palabra "pizza" en cualquiera de las tres propiedades de búsqueda predeterminadas:
 
@@ -206,12 +208,18 @@ En el ejemplo siguiente, se buscan todos los mensajes en el buzón del usuario q
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
+Para obtener más información sobre KQL, como la sintaxis, operadores compatibles y sugerencias de búsqueda, vea los artículos siguientes:
 
-### <a name="using-search-on-person-collections"></a>Uso de $search en colecciones `person`
+- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)]((https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference))
+
+- 
+  [Propiedades de mensajes y operadores de búsqueda para eDiscovery local en Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+
+### <a name="using-search-on-person-collections"></a>Uso de $search en colecciones de usuarios
 
 Puede usar la API de contactos de Microsoft Graph para recuperar los contactos más relevantes para un usuario. La relevancia viene determinada por las relaciones empresariales y los patrones de comunicación y colaboración del usuario. La API de contactos admite el parámetro de consulta `$search`.
 
-Las búsquedas de contactos se realizan en las propiedades `displayName` y `emailAddress` del recurso [person](../api-reference/v1.0/resources/person.md). Las búsquedas implementan un algoritmo de coincidencia aproximada. Se devuelven resultados basados en una coincidencia exacta y también en inferencias sobre la intención de la búsqueda. Por ejemplo, imagine un usuario con el nombre para mostrar "Tyler Lee" y la dirección de correo tylerle@example.com que se encuentra en la colección `people` del usuario que inició sesión. Todas las búsquedas siguientes devolverán resultados que contienen Tyler.
+Las búsquedas de contactos se realizan en las propiedades **displayName** y **emailAddress** del recurso [person](../api-reference/v1.0/resources/person.md). Las búsquedas implementan un algoritmo de coincidencia aproximada. Se devolverán resultados basados en una coincidencia exacta y también en inferencias sobre la intención de la búsqueda. Por ejemplo, imagine un usuario con el nombre para mostrar "Tyler Lee" y la dirección de correo tylerle@example.com que se encuentra en la colección de **usuarios** del usuario que inició sesión. Todas las búsquedas siguientes devolverán resultados que contengan Tyler.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
@@ -233,15 +241,15 @@ Por último, puede combinar búsquedas de contactos y de temas en la misma solic
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
 
-Esta solicitud realiza básicamente dos búsquedas: una búsqueda parcial en las propiedades `displayName` y `emailAddress` de los contactos pertinentes del usuario que ha iniciado sesión, y una búsqueda de tema para "pizza" en los contactos pertinentes del usuario. Después, los resultados se clasifican, ordenan y devuelven. Tenga en cuenta que la búsqueda no es restrictiva; puede obtener resultados que contengan contactos que coincidan con "tyl" de forma aproximada, o que están interesados en "pizza", o ambos.
+Esta solicitud realiza básicamente dos búsquedas: una búsqueda parcial en las propiedades **displayName** y **emailAddress** de los contactos pertinentes del usuario que ha iniciado sesión, y una búsqueda de tema para "pizza" en los contactos pertinentes del usuario. Después, los resultados se clasificarán, se ordenarán y se devolverán. Tenga en cuenta que la búsqueda no es restrictiva; puede obtener resultados que contengan contactos que coincidan con "tyl" de forma aproximada, o que están interesados en "pizza", o ambos.
 
 Para más información sobre la API de contactos, vea [Obtener información sobre contactos relevantes](./people_example.md).  
 
 ## <a name="select-parameter"></a>parámetro de selección
 
-Use el parámetro de consulta `$select` para devolver un conjunto de propiedades diferente al predeterminado para un recurso individual o una colección de recursos. Con $select puede especificar un subconjunto o un superconjunto de las propiedades predeterminadas.
+Use el parámetro de consulta `$select` para devolver un conjunto de propiedades diferente al predeterminado para un recurso individual o una colección de recursos. Con $select, puede especificar un subconjunto o un superconjunto de las propiedades predeterminadas.
 
-Por ejemplo, al recuperar los mensajes del usuario que ha iniciado sesión, puede especificar que solo se devuelvan las propiedades `from` y `subject`:
+Por ejemplo, al recuperar los mensajes del usuario que ha iniciado sesión, puede especificar que solo se devuelvan las propiedades **from** y **subject**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
@@ -262,7 +270,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Probar en el Probador de Graph][skip-example]
 
-> **Nota:** En algunas API de Microsoft Graph, como Correo y Calendario de Outlook (`message`, `event` y `calendar`), se usa `$skip` para implementar la paginación. Cuando los resultados de una consulta ocupan varias páginas, estas API devolverán una propiedad `@odata:nextLink` con una dirección URL que contiene un parámetro `$skip`. Puede usar esta dirección URL para devolver la siguiente página de resultados. Para obtener más información, vea [Paginación](./paging.md).
+> **Nota:** En algunas API de Microsoft Graph, como Correo y Calendario de Outlook (**message**, **event** y **calendar**), se usa `$skip` para implementar la paginación. Cuando los resultados de una consulta ocupen varias páginas, estas API devolverán una propiedad `@odata:nextLink` con una dirección URL que contendrá un parámetro `$skip`. Puede usar esta dirección URL para devolver la siguiente página de resultados. Para obtener más información, vea [Paginación](./paging.md).
 
 ## <a name="skiptoken-parameter"></a>parámetro skipToken
 

@@ -1,6 +1,11 @@
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
 Agrega una nueva fila a la tabla.
+
+## <a name="error-handling"></a>Control de errores
+
+En ocasiones, esta solicitud puede recibir el error HTTP 504. La respuesta adecuada a este error es repetir la solicitud.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
