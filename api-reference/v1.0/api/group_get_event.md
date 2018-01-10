@@ -21,9 +21,11 @@ GET /groups/{id}/calendar/events/{id}
 Este método admite los [parámetros de consulta de OData](../../../concepts/query_parameters.md) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor |
-|:---------------|:--------|
-| Authorization  | {token} de portador. Obligatorio.  |
+| Nombre       | Tipo | Descripción |
+|:---------------|:--------|:--------|
+| Authorization  | string | {token} de portador. Obligatorio.  |
+| Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
+| Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -33,7 +35,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "get_group_event"
@@ -43,8 +45,8 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 ```
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
->**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+Aquí tiene un ejemplo de la respuesta.
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",

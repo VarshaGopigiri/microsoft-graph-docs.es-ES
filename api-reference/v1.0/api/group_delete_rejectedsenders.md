@@ -33,7 +33,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 Estos son un par de ejemplos de la solicitud.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "remove_rejectedSender_from_group"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
@@ -55,7 +55,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create rejectedSender",
+  "description": "Remove rejectedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
