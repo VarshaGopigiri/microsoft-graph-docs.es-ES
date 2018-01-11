@@ -1,14 +1,14 @@
 # <a name="get-started-with-microsoft-graph-in-a-python-app"></a>Introducción a Microsoft Graph en una aplicación de Python 
 
-En este artículo, se describen las tareas necesarias para obtener un token de acceso desde Azure AD y llamar a Microsoft Graph. Le muestra los pasos para [Enviar un correo electrónico a través de Microsoft Graph desde Python]((https://github.com/microsoftgraph/python-sample-send-mail)) y explica los conceptos principales que implementará para usar la API de Microsoft Graph. El artículo describe cómo obtener acceso a Microsoft Graph mediante llamadas de REST directas.
+En este artículo, se describen las tareas necesarias para obtener un token de acceso desde Azure AD y llamar a Microsoft Graph. Le muestra los pasos para [Enviar un correo electrónico a través de Microsoft Graph desde Python](https://github.com/microsoftgraph/python-sample-send-mail) y explica los conceptos principales que implementará para usar la API de Microsoft Graph. El artículo describe cómo obtener acceso a Microsoft Graph mediante llamadas de REST directas.
 
 ![Enviar formulario de correo electrónico](https://raw.githubusercontent.com/microsoftgraph/python-sample-send-mail/master/static/images/sendmail.png)
 
 ## <a name="choosing-an-authentication-library"></a>Selección de una biblioteca de autenticación
 
-Para realizar llamadas a Microsoft Graph, la aplicación debe obtener un token de acceso válido de Azure Active Directory (Azure AD), el servicio de identidad de nube de Microsoft, y el token se debe pasar de un encabezado HTTP con cada llamada a la API de REST de Microsoft Graph. El método de autenticación de Graph se basa en los estándares de OAuth 2.0 y Open ID Connect, por lo que existen muchas [bibliotecas de autenticación]((https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-libraries)) de las que puede elegir para implementar la autenticación en la aplicación.
+Para realizar llamadas a Microsoft Graph, la aplicación debe obtener un token de acceso válido de Azure Active Directory (Azure AD), el servicio de identidad de nube de Microsoft, y el token se debe pasar de un encabezado HTTP con cada llamada a la API de REST de Microsoft Graph. El método de autenticación de Graph se basa en los estándares de OAuth 2.0 y Open ID Connect, por lo que existen muchas [bibliotecas de autenticación](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-libraries) de las que puede elegir para implementar la autenticación en la aplicación.
 
-En el ejemplo siguiente se usa la biblioteca [Flask-OAuthlib]((https://flask-oauthlib.readthedocs.io/en/latest/)) para implementar el flujo de trabajo [Concesión de código de autorización](https://tools.ietf.org/html/rfc6749#section-4.1) de OAuth 2.0 , que es el flujo de trabajo de autenticación recomendado para las aplicaciones web escritas en Python. Para obtener información sobre otras opciones de autenticación, vea [Ejemplos de autenticación de Python para Microsoft Graph]((https://github.com/microsoftgraph/python-sample-auth)).
+En el ejemplo siguiente se usa la biblioteca [Flask-OAuthlib](https://flask-oauthlib.readthedocs.io/en/latest/) para implementar el flujo de trabajo [Concesión de código de autorización](https://tools.ietf.org/html/rfc6749#section-4.1) de OAuth 2.0 , que es el flujo de trabajo de autenticación recomendado para las aplicaciones web escritas en Python. Para obtener información sobre otras opciones de autenticación, vea [Ejemplos de autenticación de Python para Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth).
 
 ## <a name="installing-and-running-the-send-mail-sample"></a>Instalación y ejecución del ejemplo de envío de correos electrónicos
 
@@ -67,10 +67,10 @@ Puede que estas funciones auxiliares le resulten útiles en otras aplicaciones.
 
 Estos son otros ejemplos de Python donde se demuestra cómo trabajar con diferentes aspectos de Microsoft Graph:
 
-* [Ejemplos de autenticación de Python para Microsoft Graph]((https://github.com/microsoftgraph/python-sample-auth))
-* [Trabajar con respuestas de Microsoft Graph paginadas en Python]((https://github.com/microsoftgraph/python-sample-pagination))
-* [Trabajar con extensiones abiertas de Graph en Python]((https://github.com/microsoftgraph/python-sample-open-extensions))
+* [Ejemplos de autenticación de Python para Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
+* [Trabajar con respuestas de Microsoft Graph paginadas en Python](https://github.com/microsoftgraph/python-sample-pagination)
+* [Trabajar con extensiones abiertas de Graph en Python](https://github.com/microsoftgraph/python-sample-open-extensions)
 
 Si hay un ejemplo concreto que quiera ver, háganoslo saber al [enviar un problema]((https://github.com/microsoftgraph/python-sample-auth)/issues). Estamos muy interesados en sus comentarios sobre cualquier escenario de Microsoft Graph que desee compilar en Python.
 
-La API de Microsoft Graph es una interfaz unificadora y muy avanzada que permite trabajar con todos los tipos de datos de Microsoft. Consulte la [documentación de desarrollador]((https://developer.microsoft.com/es-ES/graph/docs/concepts/overview)) o el [Probador de Graph]((https://developer.microsoft.com/es-ES/graph/graph-explorer)) para explorar qué más puede realizar con Microsoft Graph.
+La API de Microsoft Graph es una interfaz unificadora y muy avanzada que permite trabajar con todos los tipos de datos de Microsoft. Consulte la [documentación de desarrollador](https://developer.microsoft.com/es-ES/graph/docs/concepts/overview) o el [Probador de Graph](https://developer.microsoft.com/es-ES/graph/graph-explorer) para explorar qué más puede realizar con Microsoft Graph.

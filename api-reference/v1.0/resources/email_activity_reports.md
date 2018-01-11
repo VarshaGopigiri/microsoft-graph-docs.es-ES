@@ -2,7 +2,7 @@
 
 Use los informes de actividades de correo electrónico para obtener una vista general del tráfico de correo electrónico en la organización. También puede explorar en profundidad el widget “Actividades de correo electrónico” para comprender las tendencias y los detalles de las actividades de correo electrónico por usuario en la organización.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividades de correo electrónico]((https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividades de correo electrónico](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
 ## <a name="reports"></a>Informes
 

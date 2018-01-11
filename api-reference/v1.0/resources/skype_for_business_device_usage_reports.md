@@ -2,7 +2,7 @@
 
 Puede usar los informes de uso de dispositivos de Skype Empresarial para obtener información sobre los tipos de clientes y dispositivos que se usan en la organización. Estos detalles son muy útiles para investigar, planear y tomar otras decisiones empresariales en la organización.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Clientes usados de Skype Empresarial]((https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Clientes usados de Skype Empresarial](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).
 
 ## <a name="reports"></a>Informes
 

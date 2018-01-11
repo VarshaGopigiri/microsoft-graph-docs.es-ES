@@ -34,7 +34,7 @@ Según el recurso que seleccione, se requiere uno de los siguientes permisos par
 ## <a name="http-request"></a>Solicitud HTTP
 
 #### <a name="get-a-resource-instance-using-expand"></a>GET (OBTENER) una instancia de recurso mediante el uso de `$expand`
-Expanda una instancia de recurso con la propiedad extendida que coincida con un filtro en la propiedad **id**. Asegúrese de aplicar [la codificación de direcciones URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) a los caracteres de espacio de la cadena de filtro.
+Expanda una instancia de recurso con la propiedad extendida que coincida con un filtro en la propiedad **id**. Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools.com/tags/ref_urlencode.asp) a los caracteres de espacio de la cadena de filtro.
 
 Obtener una instancia de **message**:
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>GET (OBTENER) instancias de recurso mediante el uso de `$filter`
 
-Obtenga instancias de un recurso compatible con la propiedad extendida que coincide con un filtro en las propiedades **id** y **value**. Asegúrese de aplicar [la codificación de direcciones URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) a los siguientes caracteres de la cadena de filtro: dos puntos, barra diagonal y espacio.
+Obtenga instancias de un recurso compatible con la propiedad extendida que coincide con un filtro en las propiedades **id** y **value**. Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools.com/tags/ref_urlencode.asp) a los siguientes caracteres de la cadena de filtro: dos puntos, barra diagonal y espacio.
 
 
 Obtener instancias de **message**:

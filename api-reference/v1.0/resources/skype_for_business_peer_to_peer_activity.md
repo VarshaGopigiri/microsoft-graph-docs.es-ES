@@ -2,7 +2,7 @@
 
 Puede usar los informes de actividades de punto a punto de Skype Empresarial para obtener detalles sobre actividades de punto a punto en la organización. Estos detalles son muy útiles para investigar, planear y tomar otras decisiones empresariales en la organización.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de punto a punto de Skype Empresarial]((https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de punto a punto de Skype Empresarial](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).
 
 ## <a name="reports"></a>Informes
 

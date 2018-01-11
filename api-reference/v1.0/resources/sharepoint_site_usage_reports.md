@@ -2,7 +2,7 @@
 
 Puede usar los informes de uso de sitio de SharePoint para obtener una vista general del valor que obtiene de SharePoint en términos del número total de archivos que los usuarios almacenan en sitios de SharePoint, el número de archivos usados de forma activa y el almacenamiento usado en todos estos sitios. Después, puede explorar en profundidad estos informes para comprender las tendencias y los detalles de nivel de sitio de todos los sitios.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Uso de sitio de SharePoint]((https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Uso de sitio de SharePoint](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
 ## <a name="reports"></a>Informes
 

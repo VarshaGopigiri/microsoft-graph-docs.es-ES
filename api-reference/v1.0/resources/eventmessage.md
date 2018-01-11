@@ -54,7 +54,7 @@ Además de en una convocatoria de reunión, una instancia **eventMessage** se pu
 |id|String||
 |importance|String| La importancia del mensaje: `low`, `normal` y `high`.|
 |inferenceClassification|String| Los valores posibles son: `focused` y `other`.|
-|internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)). |
+|internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|

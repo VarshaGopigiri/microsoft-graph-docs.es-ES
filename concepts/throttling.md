@@ -41,4 +41,4 @@ Actualmente, los siguientes recursos proporcionan un encabezado retry-after:
 - [Contactos y redes sociales](../api-reference/beta/resources/social_overview.md)
 - [Unidad (OneDrive)](../api-reference/v1.0/resources/drive.md)
 
-Para obtener una explicación más amplia de la limitación en Microsoft Cloud, vea [Patrón Throttling]((https://msdn.microsoft.com/es-ES/library/office/dn589798.aspx)).
+Para obtener una explicación más amplia de la limitación en Microsoft Cloud, vea [Patrón Throttling](https://msdn.microsoft.com/es-ES/library/office/dn589798.aspx).

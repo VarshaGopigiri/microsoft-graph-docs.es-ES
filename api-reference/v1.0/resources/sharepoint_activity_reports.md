@@ -2,7 +2,7 @@
 
 Puede usar los informes de actividades de SharePoint para obtener la actividad de todos los usuarios con licencia para usar SharePoint al analizar sus interacciones con los archivos. También puede conocer el nivel de colaboración basándose en el número de archivos compartidos.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de SharePoint]((https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de SharePoint](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
 ## <a name="reports"></a>Informes
 

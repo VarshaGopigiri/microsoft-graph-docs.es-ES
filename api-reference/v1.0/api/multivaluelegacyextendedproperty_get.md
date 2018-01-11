@@ -31,7 +31,7 @@ Según el recurso que seleccione, se requiere uno de los siguientes permisos par
  
 ## <a name="http-request"></a>Solicitud HTTP
 
-Expanda una instancia de recurso con la propiedad extendida que coincida con un filtro en la propiedad **id**. Asegúrese de aplicar la [codificación de direcciones URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) a los caracteres de espacio de la cadena de filtro.
+Expanda una instancia de recurso con la propiedad extendida que coincida con un filtro en la propiedad **id**. Asegúrese de aplicar la [codificación de direcciones URL](http://www.w3schools.com/tags/ref_urlencode.asp) a los caracteres de espacio de la cadena de filtro.
 
 Obtener una instancia de **message**:
 <!-- { "blockType": "ignored" } -->

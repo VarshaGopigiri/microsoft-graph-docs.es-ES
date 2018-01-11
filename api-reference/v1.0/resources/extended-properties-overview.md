@@ -17,7 +17,7 @@ O bien en los siguientes recursos de grupo de Office 365:
 
 ## <a name="use-extended-properties-or-open-extensions"></a>¿Usa propiedades extendidas o extensiones abiertas?
 
-En los casos más comunes, debería poder utilizar las extensiones abiertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conocidas como extensiones de datos de Office 365) para almacenar y acceder a datos personalizados de instancias de recurso en el buzón de un usuario. Utilice las propiedades extendidas solo si necesita acceder a datos personalizados de las propiedades MAPI de Outlook que aún no están expuestos en los [metadatos de la API de Microsoft Graph]((http://developer.microsoft.com/es-ES/graph/docs/overview/call_api)). 
+En los casos más comunes, debería poder utilizar las extensiones abiertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conocidas como extensiones de datos de Office 365) para almacenar y acceder a datos personalizados de instancias de recurso en el buzón de un usuario. Utilice las propiedades extendidas solo si necesita acceder a datos personalizados de las propiedades MAPI de Outlook que aún no están expuestos en los [metadatos de la API de Microsoft Graph](http://developer.microsoft.com/es-ES/graph/docs/overview/call_api). 
 
 ## <a name="types-of-extended-properties"></a>Tipos de propiedades extendidas
 
@@ -34,7 +34,7 @@ Puede utilizar **id** para obtener una instancia de un recurso específico junto
 
 Cuando cree una propiedad extendida de valor único o de varios valores, podrá especificar la propiedad **id** en uno de los dos formatos, mediante un nombre de cadena (**Name**) o un identificador numérico (**Id**), y en el tipo real del valor o de los valores de la propiedad. En las siguientes dos tablas, se describen los formatos compatibles para especificar propiedades extendidas de valor único y de varios valores. {_type_} representa el tipo de valor o valores de la propiedad. Lo que se muestra en los ejemplos son la cadena, el número entero y las matrices de esos tipos.
 
-Como las propiedades extendidas interoperan en la mayoría de los casos con propiedades MAPI definidas que no están expuestas en los metadatos de la API de Microsoft Graph, por simplicidad, el formato que elija debe reflejar si la propiedad MAPI correspondiente usa una cadena de caracteres o un valor numérico en su [identificador de propiedad MAPI]((https://msdn.microsoft.com/es-ES/library/office/cc815528.aspx)).
+Como las propiedades extendidas interoperan en la mayoría de los casos con propiedades MAPI definidas que no están expuestas en los metadatos de la API de Microsoft Graph, por simplicidad, el formato que elija debe reflejar si la propiedad MAPI correspondiente usa una cadena de caracteres o un valor numérico en su [identificador de propiedad MAPI](https://msdn.microsoft.com/es-ES/library/office/cc815528.aspx).
 Encontrará información sobre la asignación de una propiedad extendida a una propiedad MAPI existente (como el identificador de la propiedad y el GUID) en \[MS-OXPROPS\] Microsoft Corporation, [“Exchange Server Protocols Master Property List” (Lista de propiedades Master de los protocolos de Exchange Server)](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
 
 **Nota**: Después de elegir un formato para el **id.**, deberá obtener acceso a la propiedad extendida únicamente con ese formato.

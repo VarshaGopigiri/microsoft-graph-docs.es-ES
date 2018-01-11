@@ -2,7 +2,7 @@
 
 Puede usar los informes de actividades de participantes de Skype Empresarial para obtener información sobre las actividades de conferencias en la organización. Estos detalles son muy útiles para investigar, planear y tomar otras decisiones empresariales en la organización.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de participantes de conferencias de Skype Empresarial]((https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de participantes de conferencias de Skype Empresarial](https://support.office.com/client/Skype-for-Business-Online-conference-participant-activity-c3c89995-65dd-4715-9e38-bb244c742c6b).
 
 ## <a name="reports"></a>Informes
 

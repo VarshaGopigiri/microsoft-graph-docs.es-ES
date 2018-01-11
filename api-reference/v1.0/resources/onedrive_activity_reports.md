@@ -2,7 +2,7 @@
 
 Use los informes de actividades de OneDrive para obtener la actividad de cada usuario con licencia para usar OneDrive al analizar sus interacciones con archivos en OneDrive. Estos informes pueden ayudarle a comprender el nivel de colaboración al mostrarle el número de archivos compartidos.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de OneDrive para la Empresa]((https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Actividad de OneDrive para la Empresa](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
 
 ## <a name="reports"></a>Informes
 

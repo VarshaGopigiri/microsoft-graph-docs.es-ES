@@ -2,7 +2,7 @@
 
 Puede usar los informes de uso de OneDrive para obtener una vista general del valor que obtiene de OneDrive en términos del número total de archivos y la cantidad de almacenamiento usado en todas las cuentas de OneDrive de la organización. Después, puede explorar en profundidad para comprender las tendencias de las cuentas de OneDrive activas, el número de archivos con el que interactuaron los usuarios y la cantidad de almacenamiento usado. Estos informes también pueden ofrecerle detalles por cada cuenta de OneDrive.
 
-> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Uso de OneDrive para la Empresa]((https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680)).
+> **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Uso de OneDrive para la Empresa](https://support.office.com/client/OneDrive-for-Business-usage-0de3b312-c4e8-4e4b-a02d-32b2f726a680).
 
 ## <a name="reports"></a>Informes
 

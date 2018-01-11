@@ -2,7 +2,7 @@
 
 Microsoft Graph es una API para web REST que permite tener acceso a los recursos del servicio Microsoft Cloud. Después de [registrar su aplicación](auth_register_app_v2.md) y [obtener tokens de autenticación para un usuario](auth_v2_user.md) o [servicio](auth_v2_service.md), puede realizar solicitudes a la API de Microsoft Graph.
 
-> **Importante:**  Cómo se aplican las directivas de acceso condicional a Microsoft Graph es algo que está cambiando. Las aplicaciones deben actualizarse para administrar los escenarios donde se configuran las directivas de acceso condicional. Para obtener más información y directrices, vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)).
+> **Importante:**  Cómo se aplican las directivas de acceso condicional a Microsoft Graph es algo que está cambiando. Las aplicaciones deben actualizarse para administrar los escenarios donde se configuran las directivas de acceso condicional. Para obtener más información y directrices, vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 Para leer o escribir en recursos como usuarios o mensajes de correo electrónico, se construye una solicitud similar a la siguiente.
 
@@ -46,7 +46,7 @@ Microsoft Graph admite actualmente dos versiones: `v1.0` y `beta`.
 * `v1.0` incluye las API que por lo general están disponibles. Utilice la versión v1.0 para todas las aplicaciones de producción.
 * `beta` incluye las API que todavía están en versión preliminar. Debido a que podríamos introducir cambios importantes en nuestras API beta, recomendamos que utilice la versión beta solo para probar aplicaciones que están en desarrollo, y no en sus aplicaciones de producción.
 
-Siempre agradecemos los comentarios sobre nuestras API beta. Para dar su opinión o solicitar características, visite nuestra página [UserVoice]((https://officespdev.uservoice.com/)).
+Siempre agradecemos los comentarios sobre nuestras API beta. Para dar su opinión o solicitar características, visite nuestra página [UserVoice](https://officespdev.uservoice.com/).
 
 Para obtener más información sobre las versiones de API, consulte [Control de versiones y soporte](versioning_and_support.md).
 
@@ -74,4 +74,4 @@ Para obtener más información sobre los parámetros de consulta, vea [Personali
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Está listo para poner en funcionamiento Microsoft Graph. Para obtener más información, vaya a [Graph Explorer]((https://developer.microsoft.com/es-ES/graph/graph-explorer)) y pruebe algunas solicitudes y el [Inicio rápido]((https://developer.microsoft.com/es-ES/graph/quick-start)), o comience con uno de nuestros [ejemplos de código y SDK]((https://developer.microsoft.com/es-ES/graph/code-samples-and-sdks)).
+Está listo para poner en funcionamiento Microsoft Graph. Para obtener más información, vaya a [Graph Explorer](https://developer.microsoft.com/es-ES/graph/graph-explorer) y pruebe algunas solicitudes y el [Inicio rápido](https://developer.microsoft.com/es-ES/graph/quick-start), o comience con uno de nuestros [ejemplos de código y SDK](https://developer.microsoft.com/es-ES/graph/code-samples-and-sdks).

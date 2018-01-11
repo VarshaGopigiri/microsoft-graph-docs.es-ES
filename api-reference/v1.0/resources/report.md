@@ -11,6 +11,6 @@ Microsoft Graph controla el acceso a los recursos con permisos. Necesita especif
 Las API y los recursos de informes pueden proporcionar nuevas formas de comunicarse con los usuarios y administrar sus experiencias con Microsoft Graph. Para obtener más información:
 
 - Explore en profundidad los métodos y las propiedades de los recursos más útiles para su escenario.
-- Pruebe la API en el [Probador de Graph]((https://developer.microsoft.com/graph/graph-explorer)).
+- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 ¿Necesita más ideas? Vea [cómo algunos de nuestros socios utilizan Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
