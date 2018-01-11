@@ -1,6 +1,6 @@
-# <a name="update-eventmessage"></a>Update eventmessage
+# <a name="update-eventmessage"></a>Update eventMessage
 
-Actualiza las propiedades del objeto eventmessage.
+Actualiza las propiedades de un objeto [eventMessage](../resources/eventmessage.md).
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -59,7 +59,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 } -->
 ```http
 HTTP/1.1 200 OK

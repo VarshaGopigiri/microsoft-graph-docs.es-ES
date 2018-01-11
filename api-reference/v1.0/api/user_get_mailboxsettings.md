@@ -4,6 +4,10 @@ Obtener el objeto [mailboxSettings](../resources/mailboxsettings.md) del usuario
 
 Puede ver toda la configuración del buzón u obtener una configuración específica.
 
+La zona horaria es una de las opciones preferidas que puede configurar un usuario para su buzón. Los formatos de zona horaria válidos son el formato Windows y la [zona horaria de la autoridad de asignación de números de Internet (IANA)]((http://www.iana.org/time-zones)), también conocida como “zona horaria Olson”. El formato Windows es el predeterminado. 
+
+Cuando se obtiene la zona horaria preferida de un usuario, esta se devuelve en el formato en el que se configuró. Si quiere que esa zona horaria se muestre en un formato específico (Windows o IANA), puede [actualizar primero la zona horaria preferida en ese formato como opción de configuración del buzón](user_update_mailboxsettings.md). Posteriormente, podrá obtener la zona horaria en ese formato. Como alternativa, puede administrar la conversión de formato por separado en la aplicación.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -34,7 +38,7 @@ GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData]((http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters)) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|

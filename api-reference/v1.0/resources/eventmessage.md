@@ -1,9 +1,14 @@
 # <a name="eventmessage-resource-type"></a>tipo de recurso eventMessage
 
-Un mensaje que representa una solicitud de reunión, un mensaje de cancelación de reunión, un mensaje de aceptación de reunión, un mensaje de aceptación provisional de reunión o un mensaje de rechazo de reunión.
+Un mensaje que representa una convocatoria, una cancelación o una respuesta de reunión (puede ser uno de los siguientes: aceptación, aceptación provisional o rechazo).
 
-Un EventMessage normalmente se encuentra en la carpeta Bandeja de entrada a la que llega cuando un organizador de eventos crea una reunión o cuando un asistente responde a una convocatoria de reunión. Actúe en los mensajes de evento de la misma forma que actúa en el mensaje, con algunas diferencias pequeñas descritas en la tabla siguiente.
+La entidad **eventMessage** se deriva de [message](message.md). La propiedad **meetingMessageType** identifica el tipo de mensaje de evento.
 
+Cuando un organizador o aplicación envía una convocatoria de reunión, esta llega a la bandeja de entrada del asistente como instancia **eventMessage** con el **meetingMessageType** de **meetingRequest**. Además, Outlook crea automáticamente una instancia **event** en el calendario del asistente con la propiedad **showAs** como **provisional**. 
+
+Para obtener las propiedades del evento asociado en el buzón del asistente, la aplicación puede usar la propiedad de navegación de **evento** del **eventMessage**, tal y como se muestra en este [ejemplo de obtención de un mensaje de evento](../api/eventmessage_get.md#request-2). La aplicación también puede responder al evento en nombre del asistente mediante programación, [aceptando](../api/event_accept.md), [aceptando provisionalmente](../api/event_tentativelyaccept.md) o [rechazando](../api/event_decline.md) el evento.
+
+Además de en una convocatoria de reunión, una instancia **eventMessage** se puede encontrar en la carpeta Bandeja de entrada de un asistente como resultado de la cancelación de una reunión por parte de un organizador de eventos o en la carpeta Bandeja de entrada del organizador cuando un asistente haya respondido a la convocatoria de reunión. Una aplicación puede actuar con los mensajes de evento casi de la misma forma que con los mensajes.
 
 ## <a name="methods"></a>Métodos
 
@@ -12,18 +17,18 @@ Un EventMessage normalmente se encuentra en la carpeta Bandeja de entrada a la q
 |[Obtener eventMessage](../api/eventmessage_get.md) | [eventMessage](eventmessage.md) |Lee las propiedades y las relaciones del objeto eventMessage.|
 |[Actualizar](../api/eventmessage_update.md) | [eventMessage](eventmessage.md)  |Actualiza el objeto eventMessage. |
 |[Eliminar](../api/message_delete.md) | Ninguno |Elimina el objeto eventMessage. |
-|[copy](../api/message_copy.md)|[Mensaje](message.md)|Copia un mensaje a una carpeta.|
-|[createForward](../api/message_createforward.md)|[Mensaje](message.md)|Crea un borrador del mensaje que de reenvío. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.|
-|[createReply](../api/message_createreply.md)|[Mensaje](message.md)|Crea un borrador del mensaje de respuesta. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.|
-|[createReplyAll](../api/message_createreplyall.md)|[Mensaje](message.md)|Crea un borrador del mensaje de respuesta a todos. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.|
+|[copy](../api/message_copy.md)|[message](message.md)|Copia un mensaje a una carpeta.|
+|[createForward](../api/message_createforward.md)|[message](message.md)|Crea un borrador del mensaje de reenvío. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.|
+|[createReply](../api/message_createreply.md)|[message](message.md)|Crea un borrador del mensaje de respuesta. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.|
+|[createReplyAll](../api/message_createreplyall.md)|[message](message.md)|Crea un borrador del mensaje de respuesta a todos. Después puede [actualizar](../api/message_update.md) o [enviar](../api/message_send.md) el borrador.|
 |[forward](../api/message_forward.md)|Ninguno|Reenvía un mensaje. El mensaje se guarda en la carpeta Elementos enviados.|
-|[move](../api/message_move.md)|[Mensaje](message.md)|Mueve un mensaje a una carpeta. Se crea una nueva copia del mensaje en la carpeta de destino.|
+|[move](../api/message_move.md)|[message](message.md)|Mueve un mensaje a una carpeta. Se crea una nueva copia del mensaje en la carpeta de destino.|
 |[reply](../api/message_reply.md)|Ninguno|Responde al remitente de un mensaje. El mensaje se guarda en la carpeta Elementos enviados.|
 |[replyAll](../api/message_replyall.md)|Ninguno|Responde a todos los remitentes de un mensaje. El mensaje se guarda en la carpeta Elementos enviados.|
 |[send](../api/message_send.md)|Ninguno|Envía un borrador de mensaje creado anteriormente. El mensaje se guarda en la carpeta Elementos enviados.|
 |**Datos adjuntos**| | |
-|[Enumerar datos adjuntos](../api/eventmessage_list_attachments.md) |Colección [attachment](attachment.md)| Obtener todos los datos adjuntos en un eventMessage.|
-|[Agregar datos adjuntos](../api/eventmessage_post_attachments.md) |[Dato adjunto](attachment.md)| Agrega un dato adjunto nuevo a un eventMessage publicándolo en la colección de datos adjuntos.|
+|[Enumerar datos adjuntos](../api/eventmessage_list_attachments.md) |Colección de [datos adjuntos](attachment.md)| Obtiene todos los datos adjuntos en un eventMessage.|
+|[Agregar datos adjuntos](../api/eventmessage_post_attachments.md) |[attachment](attachment.md)| Agrega datos adjuntos nuevos a un eventMessage al publicarlos en la colección de datos adjuntos.|
 |**Extensiones abiertas**| | |
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o existente de un recurso.|
 |[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene un objeto u objetos de extensión abierta identificados por nombre o por nombre completo.|
@@ -47,14 +52,15 @@ Un EventMessage normalmente se encuentra en la carpeta Bandeja de entrada a la q
 |from|[recipient](recipient.md)|El propietario del buzón y el remitente del mensaje.|
 |hasAttachments|Booleano|Indica si el mensaje tiene datos adjuntos.|
 |id|String||
-|importance|String| La importancia del mensaje: `Low`, `Normal` y `High`.|
-|internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+|importance|String| La importancia del mensaje: `low`, `normal` y `high`.|
+|inferenceClassification|String| Los valores posibles son: `focused` y `other`.|
+|internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)). |
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora de la última modificación del mensaje.|
-|meetingMessageType|String| El tipo de mensaje de evento: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|meetingMessageType|String| El tipo de mensaje de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|El identificador único para el mailFolder principal del mensaje.|
 |receivedDateTime|DateTimeOffset|La fecha y la hora en las que se recibió el mensaje.|
 |replyTo|Colección [recipient](recipient.md)|Las direcciones de correo electrónico que se utilizan al responder.|
@@ -68,9 +74,9 @@ Un EventMessage normalmente se encuentra en la carpeta Bandeja de entrada a la q
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|attachments|Colección [attachment](attachment.md)| Solo lectura. Admite valores NULL.|
-|evento|[Evento](event.md)| El evento asociado al mensaje de evento. La hipótesis de los asistentes o los recursos de la sala es que el Supervisor de calendario está configurado para actualizar el calendario automáticamente con un evento cuando lleguen mensajes de eventos de convocatoria de reunión. Propiedad de navegación.  Solo lectura.|
-|extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el eventMessage. Solo lectura. Admite valores NULL.|
+|attachments|Colección de [datos adjuntos](attachment.md)| Solo lectura. Admite valores NULL.|
+|evento|[event](event.md)| El evento asociado al mensaje de evento. La hipótesis de los asistentes o los recursos de la sala es que el Supervisor de calendario está configurado para actualizar el calendario automáticamente con un evento cuando lleguen mensajes de eventos de convocatoria de reunión. Propiedad de navegación.  Solo lectura.|
+|extensions|Colección de [extensiones](extension.md)|La colección de extensiones abiertas definidas para el eventMessage. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el eventMessage. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el eventMessage. Solo lectura. Admite valores NULL.|
 
@@ -87,7 +93,7 @@ Aquí tiene una representación JSON del recurso
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 }-->
 
 ```json
@@ -99,23 +105,24 @@ Aquí tiene una representación JSON del recurso
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "createdDateTime": "String (timestamp)",
+  "createdDateTime": "DateTimeOffset",
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
+  "inferenceClassification": "String",
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isRead": true,
   "isReadReceiptRequested": true,
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "DateTimeOffset",
   "meetingMessageType": "String",
   "parentFolderId": "string",
-  "receivedDateTime": "String (timestamp)",
+  "receivedDateTime": "DateTimeOffset",
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
-  "sentDateTime": "String (timestamp)",
+  "sentDateTime": "DateTimeOffset",
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
