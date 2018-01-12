@@ -40,8 +40,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 En la solicitud, especifique la `id` del objeto de directorio que quiere quitar después del segmento de $ref.
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
->**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+Aquí tiene un ejemplo de la respuesta.
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

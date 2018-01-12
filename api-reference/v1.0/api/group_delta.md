@@ -19,7 +19,11 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>Parámetros de consulta
-El seguimiento de cambios en los grupos conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar los parámetros de consulta deseados una vez por adelantado. En solicitudes posteriores, copie y aplique la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
+El seguimiento de cambios en grupos conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (uno diferente a `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta.
+
+Solo debe especificar una vez por adelantado los parámetros de consulta deseados.
+
+En solicitudes posteriores, copie y aplique la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
 | Parámetro de consulta      | Tipo   |Descripción|
 |:---------------|:--------|:----------|
@@ -56,6 +60,7 @@ Vea:</br>
     
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -65,7 +70,8 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
 #### <a name="response"></a>Respuesta
->**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+Aquí tiene un ejemplo de la respuesta.
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",

@@ -5,7 +5,7 @@ Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud
 * Grupo dinámico
 * Grupo de seguridad
 
-> **Nota**: Aunque Microsoft Teams se basa en grupos de Office 365, actualmente no puede crear un equipo mediante esta API. Puede usar las otras API de grupo para administrar un equipo que se ha creado en la interfaz de usuario de Microsoft Teams.
+> **Nota**: Aunque Microsoft Teams se basa en Grupos de Office 365, actualmente no puede crear un equipo mediante esta API. Puede usar las otras API de grupo para administrar un equipo que se ha creado en la interfaz de usuario de Microsoft Teams.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -52,10 +52,10 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `201 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de una solicitud que crea un grupo de Office 365.
+A continuación, se incluye un ejemplo de una solicitud para crear un grupo de Office 365.
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
@@ -75,8 +75,8 @@ Content-length: 244
 ```
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
->**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+Aquí tiene un ejemplo de la respuesta.
+>**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
