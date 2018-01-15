@@ -8,9 +8,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    |
+|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Device.ReadWrite.All |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -42,7 +42,7 @@ Aquí tiene un ejemplo de la solicitud.
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
 ##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
