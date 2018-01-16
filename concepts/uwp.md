@@ -28,7 +28,7 @@ Para comenzar, necesitará:
 
 - Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
 - Visual Studio 2017 
-- [Proyecto inicial de Microsoft Graph para UWP (biblioteca)]((https://github.com/microsoftgraph/uwp-csharp-connect-sample)/tree/master/starter). Ambas plantillas contienen clases a las que agregará código. También contienen cadenas de recursos. Para obtener este proyecto, clone o descargue el [Ejemplo Connect de Microsoft Graph UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) y abra la solución dentro de la carpeta **starter**.
+- [Proyecto inicial de Microsoft Graph para UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter). Ambas plantillas contienen clases a las que agregará código. También contienen cadenas de recursos. Para obtener este proyecto, clone o descargue el [Ejemplo Connect de Microsoft Graph UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) y abra la solución dentro de la carpeta **starter**.
 
 
 ## <a name="register-the-app"></a>Registrar la aplicación
