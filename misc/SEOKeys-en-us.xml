@@ -125,7 +125,7 @@
         <Item text="Enumerar tareas" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="Enumerar planes, API de Microsoft Graph, API de usuario" SEODescription="Recupere una lista de objetos de plan." />
     </Item>  
   </Item>
-  <Item text="Grupos" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="grupos de usuario, API de Microsoft Graph, API de usuario" SEODescription="API de grupos">
+  <Item text="Grupos" url="/en-us/api-reference/v1.0/resources/groups-overview" SEOKeyword="grupos de usuario, API de Microsoft Graph, API de usuario" SEODescription="API de grupos">
     <Item text="Grupo" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="grupos de usuarios, API de Microsoft Graph, API de usuario" SEODescription="API de grupos">
       <Item text="Agregar favorito" url="/en-us/api-reference/v1.0/api/group_addfavorite" />
       <Item text="Agregar miembro" url="/en-us/api-reference/v1.0/api/group_post_members" SEOKeyword="Crear miembro, API de Microsoft Graph, API de grupos" SEODescription="Use esta API para crear un nuevo miembro." />
@@ -900,7 +900,7 @@
         <Item text="Enumerar tareas" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="Enumerar planes, API de Microsoft Graph, API de usuario" SEODescription="Recupere una lista de objetos de plan." />
       </Item>
     </Item>
-    <Item text="Grupos" url="/en-us/api-reference/beta/resources/group" SEOKeyword="API de Grupos, API de Microsoft Graph, API de Grupos, API de Microsoft Teams, API de Teams" SEODescription="Representa un grupo de Azure Active Directory. Heredado de DirectoryObject.">
+    <Item text="Grupos" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="API de Grupos, API de Microsoft Graph, API de Grupos, API de Microsoft Teams, API de Teams" SEODescription="Representa un grupo de Azure Active Directory. Heredado de DirectoryObject.">
       <Item text="Grupo" url="/en-us/api-reference/beta/resources/group" SEOKeyword="API de grupos, API de Microsoft Graph, API de grupos, API de Microsoft Teams, API de equipos" SEODescription="Representa un grupo de Azure Active Directory. Hereda de DirectoryObject.">
         <Item text="Agregar favorito" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="grupo: addFavorite, API de Microsoft Graph, API de grupo" SEODescription="" />
         <Item text="Agregar miembro" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="Crear miembro, API de Microsoft Graph, API de grupos" SEODescription="Use esta API para crear un nuevo miembro." />
