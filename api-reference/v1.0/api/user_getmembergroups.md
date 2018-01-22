@@ -9,7 +9,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | User.Read and Group.Read.All, User.ReadBasic.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | User.ReadBasic.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Aplicación | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
