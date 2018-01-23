@@ -6,7 +6,7 @@ Para utilizar Microsoft Graph en la aplicación PHP, debe mostrar la página de 
 
 ![Página de inicio de sesión para cuentas Microsoft](images/MicrosoftSignIn.png)
 
-**¿No desea compilar una aplicación?** Puede ponerlo todo en funcionamiento de manera rápida descargando el [Ejemplo Connect para PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) en el que se basa este artículo. O pruebe la versión [Ejemplo de conexión para PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample) que utiliza la [biblioteca de Microsoft Graph para PHO](https://github.com/microsoftgraph/msgraph-sdk-php) (versión preliminar)
+**¿No quiere compilar una aplicación?** Puede ponerlo todo en funcionamiento de manera rápida si descarga el [ejemplo Connect para PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) en el que se basa este artículo. También puede probar la versión del [ejemplo Connect para PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample) que usa la [biblioteca de Microsoft Graph para PHP](https://github.com/microsoftgraph/msgraph-sdk-php).
 
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -177,5 +177,5 @@ Compruebe la Bandeja de entrada de la dirección de correo electrónico que conf
 
 
 ## <a name="see-also"></a>Recursos adicionales
-* [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+* [Protocolos de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-protocols/)
+* [Tokens de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-tokens/)

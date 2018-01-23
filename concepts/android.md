@@ -2,7 +2,7 @@
 
 > **¿Desea compilar aplicaciones para clientes empresariales?** Es posible que la aplicación no funcione si su cliente empresarial activa características de seguridad de movilidad empresarial como el <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">acceso condicional al dispositivo</a>. En casos así, es posible que no tenga constancia de esta activación y que sus clientes obtengan errores. 
 
-> Para admitir **todos los clientes empresariales** en **todos los escenarios de empresa**, deberá usar el punto de conexión de Azure AD y administrar las aplicaciones mediante el [Portal de administración de Azure](https://aka.ms/aadapplist). Para obtener más información, consulte [Decidir entre los puntos de conexión de Azure AD y Azure AD v2.0 ](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+> Para ser compatible con **todos los clientes empresariales** en **todos los escenarios de empresa**, tiene que usar el punto de conexión de AD de Azure y administrar las aplicaciones mediante [Azure Portal](https://aka.ms/aadapplist). Para más información, vea [Decidir entre los puntos de conexión de Azure AD y Azure AD v2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el punto de conexión v2.0 de Azure AD y llamar a Microsoft Graph. Le muestra los pasos para la creación del [Ejemplo Connect de Android](https://github.com/microsoftgraph/android-java-connect-sample) y explica los conceptos principales que implementará para usar Microsoft Graph en la aplicación de Android. En el artículo, también se describe cómo obtener acceso a Microsoft Graph usando el [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) o llamadas de REST sin procesar.
 
@@ -68,13 +68,13 @@ Registre una aplicación en el portal de registro de aplicaciones de Microsoft. 
     
     Para el flujo no guiado:
 
-    Se muestra la página de registro con una lista de las propiedades de la aplicación.
+    Se muestra la página de registro, indicando las propiedades de la aplicación.
 
     a. Copie el id. de aplicación. Es el identificador único de la aplicación. 
 
     b. Seleccione **Agregar plataforma** y **Aplicación nativa**.
 
-      > **Nota**: El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con un valor de `msalENTER_YOUR_CLIENT_ID://auth`. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
+      > **Nota**: El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con un valor de `msalENTER_YOUR_CLIENT_ID://auth`. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
       
       c. Agregue los permisos delegados. Necesitará **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** y **User.ReadBasic.All**. 
 
@@ -498,7 +498,7 @@ El [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgra
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Llamar a Microsoft Graph con la API de REST de Microsoft Graph
 
-La [API de REST de Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) expone varias API de servicios de nube de Microsoft a través de un único punto de conexión de la API de REST. Siga estos pasos para utilizar la API de REST.
+La [API de REST de Microsoft Graph](http://developer.microsoft.com/es-ES/graph/docs) expone varias API de servicios de nube de Microsoft a través de un único punto de conexión de la API de REST. Siga estos pasos para utilizar la API de REST.
 
 1. Conceda permisos de Internet a la aplicación. Abra el archivo **AndroidManifest** y agregue el siguiente elemento secundario al elemento de manifiesto.
     
@@ -598,6 +598,6 @@ Compruebe la Bandeja de entrada de la dirección de correo electrónico que conf
 ## <a name="see-also"></a>Recursos adicionales
 
 - [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/es-ES/graph/docs/concepts/auth_overview)
+- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/es-ES/graph/docs/concepts/auth_v2_user)
+- [Obtener acceso sin un usuario](https://developer.microsoft.com/es-ES/graph/docs/concepts/auth_v2_service)

@@ -1,10 +1,10 @@
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Asociar la cuenta de Office 365 a Azure AD para crear y administrar aplicaciones
 
-Para autenticar las aplicaciones mediante Microsoft Azure Active Directory (Azure AD), debe registrarlas en Azure AD. Aquí es donde se almacena la información de las aplicaciones y de la cuenta de usuario de Office 365. Para administrar Azure AD a través del Portal de administración de Azure, necesita una suscripción a Microsoft Azure. Puede usar el Portal de administración de Microsoft Azure para administrar usuarios, roles y aplicaciones. 
+Para autenticar las aplicaciones mediante Microsoft Azure Active Directory (Azure AD), debe registrarlas en Azure AD. Aquí es donde se almacena la información de las aplicaciones y de la cuenta de usuario de Office 365. Para administrar Azure AD a través de Azure Portal, necesita una suscripción a Microsoft Azure. Puede usar el portal en Microsoft Azure para administrar usuarios, roles y aplicaciones. 
 
-En este artículo, se le muestra cómo asociar su cuenta de Office 365 a Azure AD para crear y administrar aplicaciones.
+En este artículo se muestra cómo asociar la cuenta de Office 365 a Azure AD para crear y administrar aplicaciones.
 
- >**Nota:** En este artículo, se usa Azure AD como proveedor de autenticación de su aplicación. Si usa el punto de conexión v2.0 de Azure AD, no será necesario realizar este paso. Para obtener más información, consulte [Autenticación de aplicaciones con Microsoft Graph](auth_overview.md).
+ >**Nota:** En este artículo se usa Azure AD como proveedor de autenticación de la aplicación. Si usa el punto de conexión de Azure AD v2.0, no será necesario realizar este paso. Para más información, vea [Autenticación de aplicaciones con Microsoft Graph](auth_overview.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -12,7 +12,7 @@ En este artículo, se le muestra cómo asociar su cuenta de Office 365 a Azure A
 
 Si no tiene una cuenta de Office 365 para empresas, realice una de las siguientes acciones:
 
-- Regístrese en uno de los [planes de Office 365 para empresas](http://products.office.com/en-us/business/compare-office-365-for-business-plans) enumerados anteriormente, o
+- Regístrese en uno de los [planes de Office 365 para empresas](http://products.office.com/es-ES/business/compare-office-365-for-business-plans) enumerados anteriormente, o
 - [Únase al programa Office 365 Developer y consiga una suscripción gratuita de 1 año a Office 365](https://aka.ms/devprogramsignup).
 
 **Suscripción a Microsoft Azure** 
@@ -24,18 +24,18 @@ Si no tiene una cuenta de Office 365 para empresas, realice una de las siguiente
 
 <!---<a name="bk_AssociateExistingAzureSubscription"> </a>-->
 
-## <a name="to-associate-an-existing-azure-subscription-with-your-office-365-account"></a>Para asociar una suscripción de Azure existente con su cuenta de Office 365
+## <a name="to-associate-an-existing-azure-subscription-with-your-office-365-account"></a>Para asociar una suscripción de Azure existente con la cuenta de Office 365
 
 
-1. Inicie sesión en el [Portal de administración de Microsoft Azure](https://manage.windowsazure.com) con sus credenciales de Azure existentes (por ejemplo, un identificador de Microsoft como user@live.com).
+1. Inicie sesión en [Microsoft Azure Portal](https://portal.azure.com) con sus credenciales de Azure existentes (por ejemplo, un identificador de Microsoft como user@live.com).
         
-2. Seleccione el nodo **Active Directory**. A continuación, seleccione la pestaña **Directorio** y, en la parte inferior de la pantalla, seleccione **Nuevo**. 
+2. Seleccione el nodo **Active Directory**. Después, seleccione la pestaña **Directorio** y, en la parte inferior de la pantalla, haga clic en **Nuevo**. 
      
 4. En el menú **Nuevo**, seleccione **Active Directory**  >  **Directorio**  >  **Creación personalizada**.
     
-5. En **Agregar directorio**, en el cuadro desplegable **Directorio**, seleccione **Usar directorio existente**. Active **Todo listo para cerrar sesión** y seleccione la casilla en la esquina inferior derecha. 
+5. En **Agregar directorio**, en el cuadro desplegable **Directorio**, seleccione **Usar directorio existente**. Seleccione **Estoy listo para cerrar la sesión hora** y active la casilla de la esquina inferior derecha. 
     
-    Regresará al Portal de administración de Azure.
+    Regresará a Azure Portal.
         
 3. Inicie sesión con su cuenta de Office 365. 
     
@@ -44,7 +44,7 @@ Si no tiene una cuenta de Office 365 para empresas, realice una de las siguiente
     >**Importante:** Para poder asociar su cuenta de Office 365 a Azure AD, necesitará una cuenta de Office 365 para empresas con privilegios de administrador global. 
     
         
-4. Seleccione **Continuar** y luego **Cerrar sesión ahora**.
+4. Seleccione **Continuar** y, luego, **Cerrar sesión ahora**.
         
 5. Cierre el explorador y vuelva a abrir el [portal](https://manage.windowsazure.com). Si no lo hace, obtendrá un mensaje de acceso denegado.
     
@@ -54,10 +54,10 @@ Si no tiene una cuenta de Office 365 para empresas, realice una de las siguiente
 
 <!--<a name="bk_AssociateNewAzureSubscription"> </a>-->
 
-## <a name="to-create-a-new-azure-subscription-and-associate-it-with-your-office-365-account"></a>Cómo crear una nueva suscripción a Azure y asociarla a su cuenta de Office 365
+## <a name="to-create-a-new-azure-subscription-and-associate-it-with-your-office-365-account"></a>Cómo crear una suscripción a Azure y asociarla a la cuenta de Office 365
 
 
-1. Inicie sesión en Office 365. Desde la página **Inicio**, seleccione el icono **Administrador** para abrir el Centro de administración de Office 365.
+1. Inicie sesión en Office 365. En la página **Inicio**, seleccione el icono **Administrador** para abrir el Centro de administración de Office 365.
 2. En el lado izquierdo de la página de menú, desplácese hacia abajo hasta **Administrador** y seleccione **Azure AD**.
 
     >**Importante:** Para abrir el Centro de administración de Office 365 y obtener acceso a Azure AD, necesitará una cuenta de Office 365 para empresas con privilegios de administrador global. 
@@ -82,5 +82,5 @@ Si no tiene una cuenta de Office 365 para empresas, realice una de las siguiente
     Ahora, debería ver todos los elementos de su suscripción a Azure. El directorio que se muestra incluye el nombre de su espacio empresarial de Office 365.
     
 ## <a name="see-also"></a>Recursos adicionales
-- [Conceptos básicos del registro de aplicaciones en Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Agregar, actualizar o quitar una aplicación en Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [Conceptos básicos del registro de aplicaciones en Azure AD](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Agregar, actualizar o quitar una aplicación en Azure AD](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-integrating-applications/)

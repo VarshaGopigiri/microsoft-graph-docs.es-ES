@@ -1,13 +1,13 @@
 # <a name="get-started-with-microsoft-graph-in-a-nodejs-app"></a>Introducción a Microsoft Graph en una aplicación de Node.js
 
-En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el punto de conexión v2.0 de Azure AD y llamar a Microsoft Graph. Le muestra los pasos para la compilación del [Ejemplo Connect de Microsoft para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) y explica los conceptos principales que implementará para usar Microsoft Graph. El artículo describe cómo obtener acceso a la API de Microsoft Graph mediante llamadas de REST sin procesar.
+En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el punto de conexión de Azure AD v2.0 y llamar a Microsoft Graph. Le muestra los pasos para la compilación del [ejemplo Connect de Microsoft para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) y explica los conceptos principales que implementará para usar Microsoft Graph. En el artículo se describe cómo obtener acceso a la API de Microsoft Graph mediante llamadas de REST sin procesar. Si le interesa compilar una aplicación Node.js que se conecte a Microsoft Graph con el SDK de JavaScript, vea nuestro [ejemplo Connect de Node.js basado en el SDK de Microsoft Graph](https://github.com/microsoftgraph/nodejs-connect-sample).
 
 En la imagen siguiente, se muestra la aplicación que va a crear. 
 
 ![Aplicación web después del inicio de sesión que muestra el botón “Enviar correo”](./images/web-screenshot.png)
 
 
-**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) para ponerlo todo en funcionamiento de manera rápida.
+**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://graph.microsoft.io/es-ES/getting-started) para ponerlo todo en funcionamiento de manera rápida.
 
 Para descargar una versión del ejemplo Connect que usa el punto de conexión de Azure AD, consulte el [Ejemplo Connect de Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -18,9 +18,9 @@ Para comenzar, necesitará:
 
 - Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
 - [Node.js con npm](https://nodejs.org/en/download/) 
-- [Ejemplo Connect de Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Usará la carpeta **starter-project** en los archivos de ejemplo para este tutorial.
+- El [ejemplo Connect de Microsoft para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Usará la carpeta **starter-project** en los archivos de ejemplo para este tutorial.
 
-## <a name="register-the-application"></a>Registrar la aplicación
+## <a name="register-the-application"></a>Registro de la aplicación
 Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. Esta acción generará el identificador de la aplicación y la contraseña que usará para configurar la aplicación en Visual Studio.
 
 1. Inicie sesión en el [Portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com/) mediante su cuenta personal, profesional o educativa.
@@ -201,9 +201,11 @@ La aplicación llama a Microsoft Graph para obtener información del usuario y p
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Pruebe la API de REST mediante el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Explore el resto de nuestros [ejemplos de Node.js](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) en GitHub.
+- Explore nuestros otros [ejemplos de Node.js](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) en GitHub.
+- Use los [tipos TypeScript de Microsoft Graph](https://github.com/microsoftgraph/msgraph-typescript-typings).
+- Pruebe el [SDK de JavaScript de Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-javascript).
 
-
-## <a name="see-also"></a>Recursos adicionales
-- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+## <a name="see-also"></a>Ver también
+- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-protocols/)
+- [Tokens de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-tokens/)
+- [Ejemplo Connect de Node.js del SDK de JavaScript de Microsoft Graph](https://github.com/microsoftgraph/nodejs-connect-sample)

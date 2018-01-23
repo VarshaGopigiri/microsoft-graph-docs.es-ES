@@ -5,7 +5,7 @@ La aplicación debe estar registrada en Azure AD. Registrar la aplicación estab
 
 > **Nota:** Este artículo trata principalmente sobre cómo registrar aplicaciones con el punto de conexión v.2.0 de Azure AD. Para obtener información acerca de cómo registrar la aplicación con el punto de conexión de Azure AD, consulte las [consideraciones del punto de conexión de Azure AD](#azure-ad-endpoint-considerations).
 > 
-> Además, tenga en cuenta que si ya ha registrado aplicaciones en el Portal de administración de Microsoft Azure, esas aplicaciones no aparecerán en el Portal de registro de aplicaciones. Administre esas aplicaciones en el Portal de administración de Azure. 
+> Además, tenga en cuenta que si ya ha registrado aplicaciones en Microsoft Azure Portal, esas aplicaciones no aparecerán en el Portal de registro de aplicaciones. Administre esas aplicaciones en Azure Portal. 
 
 
 La captura de pantalla siguiente muestra un registro de la aplicación web de ejemplo que se ha configurado con una contraseña y un flujo implícito. ![Registro de aplicación web con contraseña y concesión implícita](./images/v2-web-registration.png).
@@ -49,7 +49,7 @@ Para registrar la aplicación, siga estos pasos y asegúrese de copiar los valor
         
         La URL de redireccionamiento es la ubicación de la aplicación a la que el punto de conexión v2.0 de Azure AD llama una vez que ha procesado la solicitud de autenticación.
 
-    4. En **Secretos de aplicación**, elija **Generar nueva contraseña**. Copie el secreto de aplicación del cuadro de diálogo **Nueva contraseña generada**.
+    4. En **Secretos de aplicación**, seleccione **Generar nueva contraseña**. Copie el secreto de aplicación del cuadro de diálogo **Nueva contraseña generada**.
         > **Importante** Debe copiar el secreto de la aplicación antes de cerrar el cuadro de diálogo **Nueva contraseña generada**. Después de cerrar el cuadro de diálogo, no se puede recuperar el secreto. 
             
 6. Elija **Guardar**.
@@ -67,7 +67,7 @@ La tabla siguiente muestra las propiedades que necesita para configurar y copiar
 
 Las aplicaciones que proporcionan una experiencia de consentimiento del administrador podrían necesitar una dirección URL de redireccionamiento adicional para que Azure AD devuelva la respuesta.
 
-Para obtener más información sobre el Portal de registro de la aplicación y las propiedades que puede configurar para su aplicación, consulte [Referencia del registro de aplicaciones](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
+Para obtener más información sobre el Portal de registro de la aplicación y las propiedades que puede configurar para su aplicación, consulte [Referencia del registro de aplicaciones](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-registration-portal).  
 
 ## <a name="azure-ad-endpoint-considerations"></a>Consideraciones sobre el punto de conexión de Azure AD
 
