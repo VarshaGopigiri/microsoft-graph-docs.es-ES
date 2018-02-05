@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
-ms.openlocfilehash: eabb88eb6ad2eee7a032b2486555aa26c557ba1a
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 0f5afaeff29da6f3a6330975adece44731e014bc
+ms.sourcegitcommit: 4bdff5fdaea824c7c1204ec7dd641abc282d32a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -17,7 +17,7 @@ Los valores de columna de la lista están disponibles a través del diccionario 
 ## <a name="tasks-on-a-listitem"></a>Tareas en un recurso listItem
 
 Las tareas siguientes están disponibles para los recursos **listItem**.
-Todos los ejemplos siguientes son relativos a una **[lista][]**, por ejemplo: `https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}`.
+Todos los ejemplos siguientes son relativos a una **[lista][]**, por ejemplo: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
 
 | Tarea común                    | Método HTTP
 |:-------------------------------|:------------------------
@@ -79,7 +79,7 @@ Las siguientes propiedades se heredan de **[baseItem][]**.
 | name                 | string           | Nombre o título del elemento.
 | createdBy            | [identitySet][]  | Identidad del creador de este elemento. Solo lectura.
 | createdDateTime      | DateTimeOffset   | La fecha y la hora de creación del elemento. Solo lectura.
-| descripción          | string           | Texto descriptivo del elemento.
+| description          | string           | Texto descriptivo del elemento.
 | lastModifiedBy       | [identitySet][]  | Identidad del usuario que modificó por última vez este elemento. Solo lectura.
 | lastModifiedDateTime | DateTimeOffset   | Fecha y hora de la última modificación del elemento. Solo lectura.
 | webUrl               | string (url)     | Dirección URL que muestra el elemento en el explorador. Solo lectura.
