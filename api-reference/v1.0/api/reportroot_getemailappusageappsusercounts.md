@@ -61,7 +61,7 @@ El archivo CSV tiene los siguientes encabezados de columna.
 
 #### <a name="request"></a>Solicitud
 
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 
 <!-- {
   "blockType": "request",

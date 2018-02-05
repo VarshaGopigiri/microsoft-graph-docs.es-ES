@@ -6,11 +6,12 @@ Puede comprobarse un máximo de 20 grupos por solicitud. Esta función es compat
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
+>**Nota:** En este momento, esta API requiere el permiso Directory.Read.All o superior. El uso del permiso Group.Read.All devolverá un error. Se trata de un problema conocido.
+
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+
+| Delegado (cuenta profesional o educativa) | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All || Delegado (cuenta personal de Microsoft) | No son compatibles.    | |Aplicación | *Group.Read.All*, Directory.Read.All. Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

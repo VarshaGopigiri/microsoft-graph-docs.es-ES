@@ -15,6 +15,7 @@ Puede utilizar nombres de carpeta conocidos como `Inbox`, `Drafts`, `SentItems` 
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).
 
 ## <a name="common-use-cases"></a>Casos de uso común 
 
@@ -43,8 +44,8 @@ La API de Microsoft Graph también proporciona métodos y acciones que admiten c
 La API de correo puede abrir nuevas formas de comunicarse con los usuarios: 
 
 - Profundizar en los [métodos](../resources/message.md#methods), las [propiedades](../resources/message.md#properties) y las [relaciones](../resources/message.md#relationships) de los recursos [message](../resources/message.md) y [mailFolder](../resources/mailfolder.md).
-- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/es-ES/graph/graph-explorer).
 
-¿Necesita más ideas? Vea [cómo algunos de nuestros socios utilizan Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+¿Necesita más ideas? Vea [cómo algunos de nuestros socios utilizan Microsoft Graph](https://developer.microsoft.com/es-ES/graph/graph/examples#partners).
 
 

@@ -25,7 +25,7 @@ GET /reports/getEmailAppUsageUserDetail(date={date_value})
 
 ## <a name="request-parameters"></a>Parámetros de la solicitud
 
-En la URL de la solicitud, especifique el parámetro de consulta seleccionado con un valor válido.
+En la URL de la solicitud, especifique uno de los parámetros siguientes con un valor válido.
 
 | Parámetro | Tipo   | Descripción                              |
 | :-------- | :----- | :--------------------------------------- |
@@ -70,7 +70,7 @@ El archivo CSV tiene los siguientes encabezados de columna.
 
 #### <a name="request"></a>Solicitud
 
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 
 <!-- {
   "blockType": "request",

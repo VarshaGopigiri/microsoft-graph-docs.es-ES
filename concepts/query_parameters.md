@@ -228,31 +228,62 @@ Para obtener más información sobre KQL, como la sintaxis, operadores compatibl
 
 Puede usar la API de contactos de Microsoft Graph para recuperar los contactos más relevantes para un usuario. La relevancia viene determinada por las relaciones empresariales y los patrones de comunicación y colaboración del usuario. La API de contactos admite el parámetro de consulta `$search`.
 
-Las búsquedas de contactos se realizan en las propiedades **displayName** y **emailAddress** del recurso [person](../api-reference/v1.0/resources/person.md). Las búsquedas implementan un algoritmo de coincidencia aproximada. Se devolverán resultados basados en una coincidencia exacta y también en inferencias sobre la intención de la búsqueda. Por ejemplo, imagine un usuario con el nombre para mostrar "Tyler Lee" y la dirección de correo tylerle@example.com que se encuentra en la colección de **usuarios** del usuario que inició sesión. Todas las búsquedas siguientes devolverán resultados que contengan Tyler.
+Las búsquedas de contactos se realizan en las propiedades **displayName** y **emailAddress** del recurso [person](../api-reference/v1.0/resources/person.md).
+
+La solicitud siguiente busca una persona llamada "Irene McGowen" en las propiedades **displayName** y **emailAddress** de todos los miembros de la colección **people** del usuario que ha iniciado sesión. Dado que existe una persona llamada "Irene McGowan" relevante para el usuario que ha iniciado sesión, se devuelve la información de "Irene McGowan".
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
-GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
-GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
 
-También puede realizar búsquedas de contactos interesados en un tema determinado. Las búsquedas se realizan en función de inferencias derivadas de las conversaciones de correo del usuario. Por ejemplo, la búsqueda siguiente devolverá un conjunto de contactos relevantes para el usuario que inició sesión que han expresado interés en pizza en sus comunicaciones con el usuario. Tenga en cuenta que la frase de búsqueda se escribe entre comillas.
+En el ejemplo siguiente se muestra la respuesta. 
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
+           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.onmicrosoft.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
 ```
 
-Por último, puede combinar búsquedas de contactos y de temas en la misma solicitud mediante la combinación de los dos tipos de expresión de búsqueda.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
-```
-
-Esta solicitud realiza básicamente dos búsquedas: una búsqueda parcial en las propiedades **displayName** y **emailAddress** de los contactos pertinentes del usuario que ha iniciado sesión, y una búsqueda de tema para "pizza" en los contactos pertinentes del usuario. Después, los resultados se clasificarán, se ordenarán y se devolverán. Tenga en cuenta que la búsqueda no es restrictiva; puede obtener resultados que contengan contactos que coincidan con "tyl" de forma aproximada, o que están interesados en "pizza", o ambos.
-
-Para más información sobre la API de contactos, vea [Obtener información sobre contactos relevantes](./people_example.md).  
+Para más información sobre la API de contactos, vea [Obtener información sobre contactos relevantes](./people_example.md#search-people).  
 
 ## <a name="select-parameter"></a>parámetro de selección
 

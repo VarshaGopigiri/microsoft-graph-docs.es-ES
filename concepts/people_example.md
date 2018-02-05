@@ -659,7 +659,7 @@ Las solicitudes de esta sección le permiten buscar contactos relevantes para el
 ### <a name="use-search-to-select-people"></a>Usar la búsqueda para seleccionar contactos 
 Use el parámetro *$search* para seleccionar contactos que reúnan un conjunto de criterios concreto. 
 
-La siguiente consulta de búsqueda devuelve contactos relevantes para `/me` cuyo **displayName** incluya una palabra que comience con la letra "j".
+La siguiente consulta de búsqueda devuelve contactos relevantes para `/me` cuyo **displayName** o *emailAddress" incluya una palabra que comience con la letra "j".
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
@@ -772,58 +772,40 @@ Content-type: application/json
 }
 ```
 ### <a name="perform-a-fuzzy-search"></a>Realizar una búsqueda aproximada 
-La siguiente solicitud realiza una búsqueda de un contacto llamado "Irene McGowen". Dado que una persona llamada "Irene McGowan" es relevante para el usuario que ha iniciado sesión, se devuelve la información de "Irene McGowan".
+
+Las búsquedas implementan un algoritmo de coincidencia aproximada. Se devolverán resultados basados en una coincidencia exacta y también en inferencias sobre la intención de la búsqueda. Por ejemplo, imagine un usuario con el nombre para mostrar "Tyler Lee" y la dirección de correo tylerle@example.com que se encuentra en la colección de **usuarios** del usuario que inició sesión. Todas las búsquedas siguientes devolverán este usuario Tyler como uno de los resultados.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-En el ejemplo siguiente se muestra la respuesta. 
+También puede realizar búsquedas de contactos relevantes para el usuario que ha iniciado sesión y hayan expresado interés en comunicarse con ese usuario sobre temas como pizzas, en el ejemplo siguiente:
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
-       }
-   ]
-}
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
 ```
+
+Los temas en este contexto son tan solo palabras que los usuarios han usado más a menudo en conversaciones de correo electrónico. Microsoft extrae esas palabras y crea un índice con estos datos para facilitar las búsquedas aproximadas. 
+
+Tenga en cuenta que la frase de búsqueda se incluye entre comillas y los temas de estos datos se extraen sin contexto. Por ejemplo, la búsqueda de "ventanas" en la consulta siguiente:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:windows" 
+```
+es una búsqueda aproximada en el índice de datos de tema y los resultados pueden incluir instancias relacionadas con una abertura en una pared o con otras definiciones.
+
+Por último, puede combinar búsquedas de contactos y de temas en la misma solicitud combinando los dos tipos de expresión de búsqueda.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+
+Esta solicitud realiza básicamente dos búsquedas: una búsqueda parcial en las propiedades **displayName** y **emailAddress** de los contactos pertinentes del usuario que ha iniciado sesión, y una búsqueda de tema para "pizza" en los contactos pertinentes del usuario. Después, los resultados se clasificarán, se ordenarán y se devolverán. Tenga en cuenta que la búsqueda no es restrictiva; puede obtener resultados que contengan contactos que coincidan con "tyl" de forma aproximada, o que están interesados en "pizza", o ambos.
+
 ### <a name="search-other-users-relevant-people"></a>Buscar otros contactos relevantes para el usuario
 La siguiente solicitud obtiene los contactos más relevantes para otro contacto de la organización del usuario que ha iniciado sesión. Esta solicitud requiere el permiso People.Read.All. En este ejemplo, se muestran los contactos relevantes de Roscoe Seidel.
 

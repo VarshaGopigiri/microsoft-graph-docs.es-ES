@@ -6,11 +6,13 @@ Esta función es compatible con Office 365 y otros tipos de grupos aprovisionado
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
+>**Nota:** En este momento, esta API requiere el permiso Directory.Read.All o superior. El uso del permiso Group.Read.All devolverá un error. Se trata de un problema conocido.
+
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (cuenta profesional o educativa) | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Aplicación | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +36,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "group_getmembergroups"
@@ -50,7 +52,7 @@ Content-length: 33
 ```
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
+Aquí tiene un ejemplo de la respuesta.
 >**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",

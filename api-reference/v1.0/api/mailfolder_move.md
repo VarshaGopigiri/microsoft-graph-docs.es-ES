@@ -28,7 +28,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|destinationId|String|Identificador de la carpeta o el nombre de carpeta conocido *Inbox*, *Drafts*, *SentItems* o *DeletedItems*.|
+|destinationId|String|El identificador de la carpeta o un nombre de carpeta conocido como, por ejemplo, *Inbox*, *Drafts*, *SentItems* o *DeletedItems*. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Respuesta
 

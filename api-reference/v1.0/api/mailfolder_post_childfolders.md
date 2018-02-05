@@ -18,7 +18,7 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Especifique la carpeta principal en la dirección URL de consulta como identificador de la carpeta o el nombre de carpeta conocido `Inbox`, `Drafts`, `SentItems` o `DeletedItems`.
+En la dirección URL de la consulta, especifique la carpeta principal como identificador de la carpeta o un nombre de carpeta conocido como, por ejemplo, *Inbox*, *Drafts*, *SentItems* o *DeletedItems*. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |

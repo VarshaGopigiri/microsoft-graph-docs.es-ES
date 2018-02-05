@@ -1,8 +1,10 @@
 # <a name="mailfolder-resource-type"></a>Tipo de recurso mailFolder
 
-Un recurso mailFolder en el buzón de un usuario, como Bandeja de entrada, Borradores y Elementos enviados. Los recursos mailFolder pueden contener mensajes y recursos mailFolder secundarios.
+Carpeta de recurso en el buzón de un usuario, como Bandeja de entrada y Borradores. Las carpetas de correo pueden contener mensajes, otros elementos de Outlook y carpetas de correo secundarias.
 
-Este recurso es compatible con el uso de una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/mailfolder_delta.md).
+Outlook crea determinadas carpetas para los usuarios de manera predeterminada. Para mayor comodidad, en lugar de usar la carpeta correspondiente al valor **id**, puede usar los siguientes nombres de carpeta conocidos al obtener acceso a estas carpetas en una colección **mailFolder**: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, `Drafts`, `Inbox`, `JunkEmail`, `Outbox` y `SentItems`.
+
+Este recurso es compatible con el uso de una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de las adiciones incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/mailfolder_delta.md).
 
 ## <a name="methods"></a>Métodos
 
