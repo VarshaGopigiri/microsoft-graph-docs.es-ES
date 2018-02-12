@@ -261,7 +261,7 @@ Especifique siempre los identificadores URI relativos en solicitudes por lotes. 
 
 ### <a name="limit-on-batch-size"></a>Límite de tamaño por lotes
 
-Las solicitudes por lotes JSON están limitadas actualmente a cinco solicitudes individuales. A medida que se desarrolle el procesamiento por lotes JSON, este límite se elevará.
+Las solicitudes por lotes JSON están limitadas actualmente a veinte solicitudes individuales.
 
 ### <a name="simplified-dependencies"></a>Dependencias simplificadas
 

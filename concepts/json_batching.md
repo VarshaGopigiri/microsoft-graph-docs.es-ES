@@ -1,4 +1,4 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>Combinación de varias solicitudes en una llamada HTTP mediante el procesamiento por lotes de JSON (versión preliminar)
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinación de varias solicitudes en una llamada HTTP mediante el procesamiento por lotes de JSON
 
 El procesamiento por lotes de JSON le permite optimizar la aplicación mediante la combinación de varias solicitudes en un solo objeto JSON. Por ejemplo, un cliente desea crear una vista de datos no relacionados, como:
 
@@ -13,7 +13,7 @@ La combinación de estas tres solicitudes individuales en una sola solicitud por
 En primer lugar, se construye la solicitud por lotes JSON para el ejemplo anterior. En este escenario, las solicitudes individuales no son interdependientes de ningún modo y, por lo tanto, se pueden colocar en la solicitud por lotes en cualquier orden.
 
 ```http
-POST https://graph.microsoft.com/beta/$batch
+POST https://graph.microsoft.com/v1.0/$batch
 Accept: application/json
 Content-Type: application/json
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
       "id": "2",
       "status": 200,
       "body": {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
     },
