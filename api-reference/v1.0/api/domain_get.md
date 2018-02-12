@@ -47,7 +47,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 ##### <a name="response"></a>Respuesta
 Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.

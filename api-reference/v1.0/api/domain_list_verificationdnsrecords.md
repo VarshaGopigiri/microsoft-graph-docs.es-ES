@@ -52,7 +52,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/V1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>Respuesta
