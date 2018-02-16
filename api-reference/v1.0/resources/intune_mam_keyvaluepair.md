@@ -7,7 +7,7 @@ Par clave-valor para almacenar la configuración personalizada
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |name|cadena|Nombre de este par clave-valor|
-|value|cadena|Valor de este par clave-valor|
+|valor|cadena|Valor de este par clave-valor|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -1,13 +1,14 @@
-# <a name="mimecontent-resource-type"></a>Tipo de recurso mimeContent
+# <a name="alldevicesassignmenttarget-resource-type"></a>Tipo de recurso allDevicesAssignmentTarget
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Contiene las propiedades de un contenido MIME genérico.
+Representa una tarea para todos los dispositivos administrados en el espacio empresarial.
+
+Hereda de [deviceAndAppManagementAssignmentTarget](../resources/intune_apps_deviceandappmanagementassignmenttarget.md)
+
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|type|cadena|Indica el tipo de contenido MIME.|
-|valor|Binario|Matriz de bytes que contiene el contenido real.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -16,14 +17,12 @@ Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mimeContent"
+  "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mimeContent",
-  "type": "String",
-  "value": "binary"
+  "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget"
 }
 ```
 
