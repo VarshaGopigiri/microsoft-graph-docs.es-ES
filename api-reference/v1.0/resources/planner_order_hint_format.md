@@ -45,7 +45,8 @@ Una vez que estos cambios en los valores de sugerencia de ordenación se envíen
 4. Elemento 2 (sugerencia de ordenación: `'adhg'`)
 5. Elemento 1 (sugerencia de ordenación: `'de5%'`)
 
-Se pueden especificar las sugerencias de ordenación para crear el primer elemento en la lista como ` !`, puesto que en este caso no existe ni un elemento anterior ni uno posterior. Sin embargo, esto no es necesario dado que el servicio generará automáticamente todos los valores de sugerencia de ordenación de elementos si no se especifican durante la creación del elemento. El ejemplo siguiente muestra que las sugerencias de ordenación se deben utilizar al colocar elementos en una lista previamente vacía. Agregue el primer elemento:
+Se pueden especificar las sugerencias de ordenación para crear el primer elemento en la lista como ` !`, puesto que en este caso no existe ni un elemento anterior ni uno posterior. Sin embargo, esto no es necesario dado que el servicio generará automáticamente todos los valores de sugerencia de ordenación de elementos si no se especifican durante la creación del elemento. El ejemplo siguiente muestra que las sugerencias de ordenación se deben utilizar al colocar elementos en una lista previamente vacía.
+Agregue el primer elemento:
 
 1. Elemento 1 (sugerencia de ordenación: `' !'`)
 
