@@ -49,7 +49,7 @@ Este recurso admite:
 |hasAttachments|Booleano|Se establece como true si el evento tiene datos adjuntos.|
 |iCalUId|String|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes.|
 |id|Cadena| Solo lectura.|
-|importance|String|La importancia del evento: Baja = 0, Normal = 1, Alta = 2. Los valores posibles son: `Low`, `Normal` y `High`.|
+|importance|String|Importancia del evento. Los valores posibles son: `Low`, `Normal` y `High`.|
 |isAllDay|Booleano|Se establece como true si el evento dura todo el día.|
 |isCancelled|Booleano|Se establece como true si el evento ha sido cancelado.|
 |isOrganizer|Booleano|Se establece como true si el remitente del mensaje también es el organizador.|

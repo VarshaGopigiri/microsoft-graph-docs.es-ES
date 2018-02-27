@@ -44,7 +44,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |body|[ItemBody](../resources/itembody.md)|El cuerpo del mensaje asociado con el evento.|
 |categories|String|Las categorías asociadas con el evento.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|La fecha y hora en que finaliza el evento.<br/><br/>De manera predeterminada, la hora de finalización está en formato UTC. Puede especificar una zona horaria opcional en EndTimeZone, expresar la hora de finalización en esa zona horaria e incluir una diferencia horaria de UTC. Tenga en cuenta que, si usa EndTimeZone, debe especificar también un valor para StartTimeZone.<br/><br/>En este ejemplo, se especifica el 25 de febrero de 2015, a las 9:34 p. m. en hora estándar del Pacífico: "2015-02-25T21:34:00-08:00". |
-|importance|String|La importancia del evento: Baja = 0, Normal = 1, Alta = 2. Los valores posibles son: `Low`, `Normal` y `High`.|
+|importance|String|Importancia del evento. Los valores posibles son: `Low`, `Normal` y `High`.|
 |isAllDay|Booleano|Se establece en true si el evento dura todo el día.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle el evento al usuario.|
 |location|[Location](../resources/location.md)|La ubicación del evento.|

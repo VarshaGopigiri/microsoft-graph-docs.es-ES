@@ -19,7 +19,7 @@ Derivado de [attachment](attachment.md).
 |isInline|Boolean|Se establece en true si los datos adjuntos aparecen en insertados en el cuerpo del objeto embedding.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de los datos adjuntos. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |name|String|Texto que aparece debajo del icono que representa al archivo adjunto incrustado. No tiene que ser el nombre de archivo real.|
-|size|Int32|Tamaño en bytes de los datos adjuntos.|
+|size|Int32|Tamaño en bytes de los metadatos almacenados en el mensaje del archivo adjunto. Este valor no indica el tamaño del archivo real.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
