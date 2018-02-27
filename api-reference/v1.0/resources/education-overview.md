@@ -10,9 +10,9 @@ Para llamar a las API para el ámbito educativo de Microsoft Graph, la aplicaci�
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>Permisos de aplicación para habilitar a los administradores de TI del centro educativo para dar consentimiento 
 
-Para implementar aplicaciones que se integran con las API para el ámbito educativo de Microsoft Graph, los administradores de TI del centro educativo deben dar primero consentimiento a los permisos que solicita la aplicación. Este consentimiento únicamente hay que darlo una sola vez, a menos que cambien los permisos. Cuando el administrador da el consentimiento, la aplicación está aprovisionada para todos los usuarios del inquilino.
+Para implementar aplicaciones que se integran con las API para el ámbito educativo de Microsoft Graph, los administradores de TI del centro educativo deben dar primero consentimiento a los permisos que solicita la aplicación. Este consentimiento únicamente hay que darlo una sola vez, a menos que cambien los permisos. Cuando el administrador da el consentimiento, la aplicación se aprovisiona para todos los usuarios del inquilino.
 
-Para activar un cuadro de diálogo de consentimiento, use la siguiente llamada a REST.
+Para mostrar un cuadro de diálogo de consentimiento, use la siguiente llamada a REST.
 
 ```
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
