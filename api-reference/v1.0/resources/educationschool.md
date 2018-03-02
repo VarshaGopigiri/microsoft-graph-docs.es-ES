@@ -1,14 +1,6 @@
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
-Centro educativo. El recurso **educationSchool** actualmente corresponde a un recurso [administrativeUnit](../../beta/resources/administrativeunit.md) y comparte el mismo identificador.  
-
->**Nota:** Los recursos la **administrativeUnit** y **educationOrganization** se encuentran actualmente en versión beta. Si usa estos recursos, asegúrese de revisar el [registro de cambios](../../../concepts/changelog.md) periódicamente. Al publicar recursos de la API de Microsoft Graph en el punto de conexión /v1.0, se indica la versión en el registro de cambios. Si la aplicación usa los recursos **administrativeUnit** o **educationOrganization**, habrá que declarar las direcciones URL de la solicitud base, tal y como se muestra en el siguiente bloque de código:  
-  ```JavaScript
-  var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-  var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-  ```
-
-Este recurso es un subtipo de [educationOrganization](../../beta/resources/educationorganization.md).
+Un recurso que representa una escuela y que se usa para administrar las clases, los profesores y los alumnos de la escuela representada.  
 
 
 ## <a name="methods"></a>Métodos
@@ -21,8 +13,7 @@ Este recurso es un subtipo de [educationOrganization](../../beta/resources/educa
 |[Quitar clase](../api/educationschool_delete_classes.md) |[educationClass](educationclass.md)| Quite un **educationClass** del centro educativo mediante la propiedad de navegación de clases.|
 |[Agregar usuario](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Agregue un nuevo **educationUser** en el centro educativo publicando en la propiedad de navegación **users**.|
 |[Enumerar usuarios](../api/educationschool_list_users.md) |Colección [educationUser](educationuser.md)| Obtenga la colección de objetos **educationUser**.|
-|[Quitar usuario](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Quite un **educationUser** del centro educativo mediante la propiedad de navegación **users**.|
-|[Obtener administrativeUnit](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](../../beta/resources/administrativeunit.md)| Obtenga el directorio simple **administrativeUnit** correspondiente a este objeto **educationSchool**.|
+|[Quitar usuario](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Quite un elemento **educationUser** del centro educativo mediante la propiedad de navegación **users**.|
 |[Actualizar](../api/educationschool_update.md) | [educationSchool](educationschool.md) |Actualice un objeto **educationSchool**. |
 |[Eliminar](../api/educationschool_delete.md) | Ninguno |Elimine un objeto **educationSchool**. |
 
