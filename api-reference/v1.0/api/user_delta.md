@@ -36,8 +36,10 @@ El seguimiento de cambios en los usuarios conlleva al menos una llamada de una f
 Este método admite parámetros de consulta de OData a modo de ayuda para personalizar la respuesta.
 
 - Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud GET para especificar solo las propiedades que necesita para un mejor rendimiento. Siempre se devuelve la propiedad _id_. 
-- Compatibilidad con consultas de delta `$select`, `$top` y `$expand` para los mensajes. 
-- Hay compatibilidad limitada para `$orderby`: La única expresión `$orderby` admitida es `$orderby=receivedDateTime+desc`. Si no incluye ninguna expresión `$orderby`, no se garantizará el orden de devolución. 
+- Compatibilidad con consultas de delta `$select`, `$top`, y `$expand` para los mensajes. 
+- Hay compatibilidad limitada para `$filter` y `$orderby`:
+  * La única expresión `$filter` admitida es para realizar un seguimiento de los cambios en uno o varios usuarios específicos: `$filter=id+eq+{value}` o `$filter=id+eq+{value1}+or+id+eq+{value2}`. 
+  * La única expresión `$orderby` admitida es `$orderby=receivedDateTime+desc`. Si no incluye ninguna expresión `$orderby`, no se garantizará el orden de devolución. 
 - No hay compatibilidad con `$search`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud

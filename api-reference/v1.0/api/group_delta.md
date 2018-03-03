@@ -35,7 +35,8 @@ Este método admite parámetros de consulta de OData a modo de ayuda para person
 
 - Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud GET para especificar solo las propiedades que necesita para un mejor rendimiento. Siempre se devuelve la propiedad _id_. 
 - Compatibilidad con consultas delta `$select`, `$top`, y `$expand` para los grupos. 
-- Hay compatibilidad limitada para `$orderby`: La única expresión `$orderby` admitida es `$orderby=receivedDateTime+desc`. Si no incluye una expresión `$orderby`, no se garantiza el orden de devolución. 
+- Hay compatibilidad limitada para `$filter` y `$orderby`:
+  * La única expresión `$filter` admitida es para realizar un seguimiento de los cambios en un objeto específico: `$filter=id+eq+{value}`. Puede filtrar varios objetos. Por ejemplo, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`. Hay un límite de 50 objetos filtrados.
 - No hay compatibilidad con `$search`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -71,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 #### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.
->**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",

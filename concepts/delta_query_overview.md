@@ -36,7 +36,7 @@ Para los usuarios y grupos, existen restricciones en el uso de algunos parámetr
 -   Si se usa un parámetro de consulta `$select`, este indica que el cliente prefiere registrar los cambios solo en las propiedades o relaciones especificadas en la instrucción `$select`. Si se produce un cambio en una propiedad que no está activada, el recurso en el que se ha producido el cambio no aparecerá en la respuesta de delta tras una solicitud posterior.
 -   `$expand` no es compatible.
 
-Para los usuarios y las API beta para grupos (vista previa), definir el ámbito de los filtros le permite controlar los cambios realizados en uno o más usuarios o grupos específicos mediante objectId. Por ejemplo, la siguiente solicitud: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' o id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' devuelve cambios para los grupos que coinciden con los id. especificados en el filtro de consulta. 
+Para los usuarios y las API para grupos, definir el ámbito de los filtros le permite controlar los cambios realizados en uno o varios usuarios o grupos específicos mediante objectId. Por ejemplo, la siguiente solicitud: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' o id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' devuelve cambios para los grupos que coinciden con los identificadores especificados en el filtro de consulta. 
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Representación de recursos en la respuesta de consulta delta
 
@@ -70,7 +70,7 @@ Actualmente, la consulta delta es compatible con los siguientes recursos.
 | Elementos de la unidad\* | Función [delta](../api-reference/v1.0/api/driveitem_delta.md) del recurso [driveItem](../api-reference/v1.0/resources/driveitem.md) |
 
 
-> \* El patrón de uso para los recursos de OneDrive es similar a los demás recursos compatibles con algunas diferencias secundarias de sintaxis. La consulta delta para unidades se actualizará en el futuro para que sea coherente con otros tipos de recursos. Para obtener más información sobre la sintaxis actual, vea [Control de cambios de una unidad](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta).
+> \* El patrón de uso para los recursos de OneDrive es similar a los demás recursos compatibles con algunas diferencias secundarias de sintaxis. La consulta delta para unidades se actualizará en el futuro para que sea coherente con otros tipos de recursos. Para obtener más información sobre la sintaxis actual, vea [Control de cambios de una unidad](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/item_delta).
 
 ## <a name="prerequisites"></a>Requisitos previos
 

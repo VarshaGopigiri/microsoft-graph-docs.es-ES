@@ -6,7 +6,7 @@ Los grupos son colecciones de [usuarios](user.md) y otras entidades de seguridad
 
 | Tipo              | Caso de uso | groupType | Con correo habilitado | Con seguridad habilitada | ¿Se puede crear mediante API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Grupos de Office 365](#office-365-groups) | Facilitar la colaboración de usuarios con recursos compartidos en línea de Microsoft. | `["Unified"]` | `true` | `false` | Sí | [user](user.md) |
+| [Grupos de Office 365](#office-365-groups) | Facilitar la colaboración de usuarios con recursos compartidos en línea de Microsoft. | `["Unified"]` | `true` | `false` | Sí |
 | [Grupos de seguridad](#security-groups-and-mail-enabled-security-groups) | Controlar el acceso de los usuarios a recursos de la aplicación. | `[]` | `false` | `true` | Sí |
 | [Grupos de seguridad habilitados para correo](#security-groups-and-mail-enabled-security-groups) | Controlar el acceso de los usuarios a recursos de la aplicación, con un buzón de grupo compartido. | `[]` | `true` | `true` | No |
 | Grupos de distribución | Distribuir correo a los miembros del grupo. Se recomienda usar Grupos de Office 365 debido al variado conjunto de recursos que proporcionan. | `[]` | `true` | `false` | No |
@@ -58,7 +58,7 @@ Para más información sobre Grupos de Office 365 y las experiencias de administ
 
 Los grupos de seguridad están diseñados para controlar el acceso de los usuarios a los recursos. Al comprobar si un usuario es miembro de un grupo de seguridad, la aplicación puede tomar decisiones de autorización cuando el usuario intenta obtener acceso a algunos recursos seguros de la aplicación. Los grupos de seguridad pueden tener como miembros usuarios y otros grupos de seguridad.
 
-Los grupos de seguridad con correo habilitado se usan de la misma manera que los grupos de seguridad, pero incluyen la función de buzón compartido para los grupos. No es posible crear grupos de seguridad con correo habilitado mediante la API, pero otras operaciones de grupo seguirán funcionando. Obtenga más información en el artículo [Administrar grupos de seguridad de correo en Exchange](https://technet.microsoft.com/es-ES/library/bb123521%28v=exchg.160%29.aspx).
+Los grupos de seguridad con correo habilitado se usan de la misma manera que los grupos de seguridad, pero incluyen la función de buzón compartido para los grupos. No es posible crear grupos de seguridad habilitados para correo electrónico mediante la API, pero funcionan otras operaciones de grupo.  Los grupos de seguridad habilitados para correo electrónico son de solo lectura. Obtenga más información en el artículo [Administrar grupos de seguridad de correo en Exchange](https://technet.microsoft.com/es-ES/library/bb123521%28v=exchg.160%29.aspx).
 
 ### <a name="security-group-example"></a>Ejemplo de grupo de seguridad
 
