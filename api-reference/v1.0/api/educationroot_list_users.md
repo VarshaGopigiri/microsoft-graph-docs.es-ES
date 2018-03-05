@@ -7,7 +7,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) |  EduRoster.ReadBasic  |
+|Delegado (cuenta profesional o educativa) |  No admitida.  |
 |Delegado (cuenta personal de Microsoft) |  No admitida.  |
 |Aplicación | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
