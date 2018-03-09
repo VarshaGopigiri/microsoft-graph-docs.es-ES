@@ -1,12 +1,21 @@
 # <a name="getting-started-building-microsoft-graph-apps"></a>Introducción a la compilación de aplicaciones de Microsoft Graph
 
-En los artículos de esta sección, se proporcionan instrucciones detalladas acerca de cómo compilar aplicaciones que se conecten a Microsoft Graph en una variedad de lenguajes y plataformas de desarrollo. Cada artículo empieza con un proyecto inicial de ejemplo para la plataforma apropiada y le guía por el proceso de agregar funcionalidad que autentique el usuario. Además, realiza una solicitud de ejemplo para que Microsoft Graph envíe un correo electrónico desde su cuenta. El proyecto completado es idéntico al [ejemplo Connect del repositorio de Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) de esa plataforma.
+En los artículos de esta sección, se proporcionan instrucciones detalladas sobre cómo compilar aplicaciones que se conecten a Microsoft Graph en una amplia variedad de lenguajes y plataformas de desarrollo. En cada artículo, se usa un proyecto inicial y se explican los pasos básicos para conectarse a Microsoft Graph:
 
-Elija el artículo que trate sobre el proveedor de autenticación y la plataforma de desarrollo que desee y empiece a conectarse a Microsoft Graph. Para obtener más información, consulte [¿Qué hay diferente en el punto de conexión v2.0?](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)
+ 1. Registrar la aplicación
+ 2. Autenticar al usuario y obtener un token de acceso en la aplicación
+ 3. Llamar a Microsoft Graph desde la aplicación
+ 4. Ejecutar la aplicación
 
-Puede seguir los pasos del artículo que trate sobre la plataforma de desarrollo que desee o, para poner en funcionamiento rápidamente una solución de trabajo, pruebe la experiencia de [inicio rápido](https://developer.microsoft.com/graph/quick-start).
+Para empezar a usar una solución con mayor rapidez, pruebe la experiencia de [inicio rápido](https://developer.microsoft.com/graph/quick-start).
 
-Para explorar los ejemplos terminados de Connect, consulte [Microsoft Graph](https://github.com/microsoftgraph) en GitHub. En la siguiente tabla se enumeran los ejemplos por proveedor de autenticación y plataforma y se muestra una nota para indicar si se conectan a Microsoft Graph mediante REST o una biblioteca cliente de Microsoft Graph.
+El proyecto completado es idéntico al [Ejemplo de conexión del repositorio de Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) de esa plataforma.
+
+¿Quiere ver incluso más código?
+
+Explore todos los [Ejemplos de Microsoft Graph](https://github.com/microsoftgraph) en GitHub. En la tabla siguiente, se muestra una lista de versiones tradicionales de los ejemplos descritos en esta sección. Se muestra cómo autenticar al usuario con puntos de conexión de ADAL (versiones 1.0 y 2.0) y, para conectarse a Microsoft Graph, se usan llamadas a REST sin formato, o bien la biblioteca cliente de Microsoft Graph (SDK).
+
+(Seleccione el artículo sobre el proveedor de autenticación y la plataforma de desarrollo que prefiera y conéctese a Microsoft Graph. Para obtener más información, vea [¿Cuáles son las novedades de la versión 2.0 del punto de conexión?](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-compare)).
 
 
 |Plataforma |Punto de conexión de Azure AD |Punto de conexión v2.0 de Azure AD |
@@ -27,6 +36,6 @@ Para explorar los ejemplos terminados de Connect, consulte [Microsoft Graph](htt
 
 ## <a name="see-also"></a>Ver también
 
-- [Prueba de las llamadas de REST de ejemplo en el Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- [Documentación acerca del punto de conexión de Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
-- [Documentación acerca del punto de conexión v2.0 de Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [Prueba de las llamadas de REST de ejemplo en el Probador de Graph](https://developer.microsoft.com/es-ES/graph/graph-explorer)
+- [Documentación acerca del punto de conexión de Azure AD](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-developers-guide)
+- [Documentación acerca del punto de conexión v2.0 de Azure AD](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-appmodel-v2-overview)

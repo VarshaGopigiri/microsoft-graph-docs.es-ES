@@ -19,10 +19,10 @@ En la captura de pantalla siguiente se muestra un ejemplo del registro de una ap
 Para configurar una aplicación para que use el flujo de concesión del código de autorización de OAuth 2.0, debe guardar los valores siguientes al registrar la aplicación:
 
 - El id. de aplicación asignado por el portal de registro de aplicaciones.
-- Un secreto de aplicación, ya sea una contraseña o un par de claves pública y privada (certificado). Esto no es necesario para las aplicaciones nativas. 
+- Un secreto de la aplicación, ya sea una contraseña o un par de claves pública y privada (certificado). Esto no es necesario para las aplicaciones nativas. 
 - Una dirección URL de redireccionamiento para que la aplicación reciba respuestas de Azure AD.
 
-Para conocer los pasos necesarios para configurar una aplicación mediante el Portal de registro de aplicaciones de Microsoft, vea [Register your app](./auth_register_app_v2.md) (Registrar la aplicación).
+Para conocer los pasos necesarios para configurar una aplicación con el Portal de registro de aplicaciones de Microsoft, vea [Registrar una aplicación](./auth_register_app_v2.md).
 
 ## <a name="2-get-authorization"></a>2. Obtener la autorización
 El primer paso para obtener un token de acceso para varios flujos de OpenID Connect y OAuth 2.0 consiste en redirigir al usuario al punto de conexión `/authorize` de Azure AD v2.0. Azure AD iniciará la sesión del usuario y obtendrá su consentimiento para los permisos que solicite la aplicación. En el flujo de concesión del código de autorización, después de obtener el consentimiento, Azure AD devolverá un código de autorización a la aplicación que puede canjear en el punto de conexión `/token` de Azure AD v2.0 por un token de acceso.
@@ -51,7 +51,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | redirect_uri |recomendado |URI de redireccionamiento de la aplicación, donde la aplicación puede enviar y recibir respuestas de autenticación.  Debe coincidir exactamente con uno de los URI de redireccionamiento que ha registrado en el portal de registro de la aplicación, pero con codificación URL.  En el caso de las aplicaciones nativas y móviles, debe usar el valor predeterminado de `https://login.microsoftonline.com/common/oauth2/nativeclient`. |
 | ámbito |necesario |Lista separada por espacios de los permisos de Microsoft Graph para los que quiere que el usuario dé su consentimiento. También se pueden incluir ámbitos de OpenID. |
 | response_mode |recomendado |Especifica el método que se debe usar para enviar el token resultante de vuelta a la aplicación.  Puede ser `query` o `form_post`. |
-| state |recomendado |Valor incluido en la solicitud que también se devolverá en la respuesta de token.  Puede ser una cadena con cualquier contenido que quiera.  Normalmente se usa un valor único generado de forma aleatoria para [impedir los ataques de falsificación de solicitud entre sitios](http://tools.ietf.org/html/rfc6749#section-10.12).  El estado también se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. |
+| estado |recomendado |Valor incluido en la solicitud que también se devolverá en la respuesta de token.  Puede ser una cadena con cualquier contenido que quiera.  Normalmente se usa un valor único generado de forma aleatoria para [impedir los ataques de falsificación de solicitud entre sitios](http://tools.ietf.org/html/rfc6749#section-10.12).  El estado también se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. |
 
 > **Importante**: Microsoft Graph expone dos tipos de permisos: de aplicación y delegados. En el caso de las aplicaciones que se ejecutan con un usuario que ha iniciado sesión, los permisos delegados se solicitan en el parámetro `scope`. Estos permisos delegan en la aplicación los privilegios del usuario que ha iniciado sesión, lo que permite que la aplicación actúe como dicho usuario al hacer llamadas a Microsoft Graph. Para obtener más información sobre los permisos disponibles mediante Microsoft Graph, vea la [Referencia de permisos](./permissions_reference.md).
  
@@ -127,7 +127,7 @@ Aunque el token de acceso es opaco para la aplicación, la respuesta contiene un
 | ámbito |Lista separada por espacios de los permisos de Microsoft Graph para los que es válido el token de acceso. |
 | expires_in |Período de validez del token de acceso (en segundos). |
 | access_token |Token de acceso solicitado. La aplicación puede usar este token para llamar a Microsoft Graph. |
-| refresh_token |Token de actualización de OAuth 2.0. La aplicación puede usar este token para adquirir otros tokens de acceso después de que el actual haya expirado.  Los tokens de actualización son de larga duración y se pueden usar para mantener el acceso a los recursos durante períodos prolongados.  Para obtener más información, vea la [Referencia de tokens de v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
+| refresh_token |Un token de actualización de OAuth 2.0. Cuando expire el token de acceso actual, la aplicación puede usar este token para obtener otros tokens de acceso.  Los tokens de actualización son de larga duración y se pueden usar para mantener el acceso a los recursos durante períodos prolongados.  Para obtener más información, vea la [Referencia de tokens v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
 
 ## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4. Usar el token de acceso para llamar a Microsoft Graph
 
@@ -139,7 +139,7 @@ Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
 
 ```
-Una respuesta correcta será similar a la siguiente (se quitaron algunos encabezados de respuesta):
+Una respuesta correcta tendrá un aspecto similar al siguiente (se han quitado algunos encabezados de respuesta):
 
 ```
 HTTP/1.1 200 OK
@@ -251,5 +251,3 @@ Para obtener más información sobre cómo obtener acceso a Microsoft Graph en n
 - Para obtener información sobre cómo usar el punto de conexión de Azure AD con diferentes tipos de aplicaciones, vea los vínculos de **introducción** de la guía de [Azure Active Directory para desarrolladores](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). La guía contiene vínculos a temas con información general, tutoriales de código y documentación de protocolos para distintos tipos de aplicaciones admitidas por el punto de conexión de Azure AD.
 - Para obtener información sobre la Biblioteca de autenticación de Active Directory (ADAL) y el software intermedio de servidor disponible para su uso con el punto de conexión de Azure AD, vea [Bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
 
-
- 

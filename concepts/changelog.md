@@ -5,6 +5,39 @@ Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas
 Para obtener más información sobre problemas conocidos con las API de Microsoft Graph, vea [Problemas conocidos](known_issues.md).
 ## <a name="february-2018"></a>Febrero de 2018
 
+### <a name="microsoft-intune-apis"></a>API de Microsoft Intune
+|Tipo de cambio|Versión|Descripción|
+|:---|:---|:---|
+|Adición|beta|Se agregaron nuevas entidades:<br/>[androidForWorkImportedPFXCertificateProfile](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidforworkimportedpfxcertificateprofile)<br/>[androidImportedPFXCertificateProfile](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidimportedpfxcertificateprofile)<br/>[importedWindowsAutopilotDeviceIdentity](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentity)<br/>[iosImportedPFXCertificateProfile](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile)<br/>[windows10ImportedPFXCertificateProfile](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile)<br/>[windows10KioskConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_windows10kioskconfiguration)<br/>[windowsPhone81ImportedPFXCertificateProfile](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_windowsphone81importedpfxcertificateprofile)<br/>|
+|Adición|beta|Se agregaron nuevos tipos complejos:<br/>[importedWindowsAutopilotDeviceIdentityState](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate)<br/>|
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureDetails](https://developer.microsoft.com/es-ES/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_reportroot). |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureDetails](https://developer.microsoft.com/es-ES/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_reportroot). |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureTrends](https://developer.microsoft.com/es-ES/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuretrends.md) en [reportRoot](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_reportroot). |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentTopFailures](https://developer.microsoft.com/es-ES/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_reportroot). |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentTopFailures](https://developer.microsoft.com/es-ES/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_reportroot). |
+|Cambio|beta|Se agregaron las propiedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** y **requireCompanyPortalAppIntegrity** a la entidad [androidCompliancePolicy](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy).|
+|Cambio|beta|Se agregaron las propiedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** y **requireCompanyPortalAppIntegrity** a la entidad [androidForWorkCompliancePolicy](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy).|
+|Cambio|beta|Se quitaron las propiedades **name**, **modifiedDateTime**, **totalEnrollmentCount** y **qrCode** de la entidad [androidForWorkEnrollmentProfile](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile).|
+|Cambio|beta|Se quitaron las propiedades **nonEapAuthenticationMethodForEapTtls**, **nonEapAuthenticationMethodForPeap** y **enableOuterIdentityPrivacy** de la entidad [androidForWorkEnterpriseWiFiConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration).|
+|Cambio|beta|Se agregó la propiedad **workProfileBlockAddingAccounts** a la entidad [androidForWorkGeneralDeviceConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration).|
+|Cambio|beta|Se agregaron las propiedades **blockCrossProfileCopyPaste** y **requireAppVerify** a la entidad [androidForWorkGeneralDeviceConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration).|
+|Cambio|beta|Se agregó la propiedad **deviceOwnerManagementEnabled** a la entidad [androidForWorkSettings](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_androidforwork_androidforworksettings).|
+|Cambio|beta|Se quitó la propiedad **requireAppVerify** de la entidad [androidGeneralDeviceConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_androidgeneraldeviceconfiguration).|
+|Cambio|beta|Se agregó la propiedad **exemptedAppPackages** a la entidad [androidManagedAppProtection](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_mam_androidmanagedappprotection).|
+|Cambio|beta|Se agregan las propiedades **exemptedAppProtocols** y **exemptedAppPackages** a la entidad [defaultManagedAppProtection](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_mam_defaultmanagedappprotection).|
+|Cambio|beta|Se agregó la propiedad **exemptedAppProtocols** a la entidad [iosManagedAppProtection](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_mam_iosmanagedappprotection).|
+|Cambio|beta|Se agregó la propiedad **lastLoggedOnUserId** a la entidad [managedDevice](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_devices_manageddevice).|
+|Cambio|beta|Se agregó la propiedad **isFrameworkFile** a la entidad [mobileAppContentFile](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_apps_mobileappcontentfile).|
+|Cambio|beta|Se agregó la propiedad **targetedAppManagementLevels** a la entidad [targetedManagedAppProtection](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_mam_targetedmanagedappprotection).|
+|Cambio|beta|Se agregan las propiedades **localSecurityOptionsBlockMicrosoftAccounts**, **localSecurityOptionsEnableAdministratorAccount**, **defenderPreventCredentialStealingType**, **defenderProcessCreationType**, **defenderUntrustedUSBProcessType**, **defenderUntrustedExecutableType**, **defenderPasswordProtectedEmailContentExecutionType**, **defenderAdvancedRansomewareProtectionType** y **applicationGuardAllowFileSaveOnHost** a la entidad [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration).|
+|Cambio|beta|Se agregan las propiedades **edgeFavoritesListLocation** y **edgeBlockEditFavorites** a la entidad [windows10GeneralConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration).|
+|Cambio|beta|Se agregan las propiedades **printerNames**, **defaultPrinterName** y **blockAddingNewPrinter** a la entidad [windows10SecureAssessmentConfiguration](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration).|
+|Cambio|beta|Se agregó la propiedad de navegación **importedWindowsAutopilotDeviceIdentities** a la entidad [deviceManagement](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_androidforwork_devicemanagement).|
+|Cambio|beta|Se agregó la propiedad **shareAPNSData** al tipo complejo [adminConsent](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_devices_adminconsent).|
+|Cambio|beta|Se quitó la propiedad **collectFullIOSAppInventory** del tipo complejo [adminConsent](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_devices_adminconsent).|
+|Cambio|beta|Se quitó la propiedad **deviceUsageType** del tipo complejo [outOfBoxExperienceSettings](https://developer.microsoft.com/es-ES/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings).|
+
+
 ### <a name="planner-apis"></a>API de Planner
 
 |Tipo de cambio|Versión|Descripción|
@@ -13,7 +46,13 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Adición|Beta|Se agregaron las propiedades `favoritePlanReferences` y `recentPlanReferences` a la entidad [plannerUser](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/plannerUser). |
 |Adición|Beta|Se agregaron las propiedades de navegación `favoritePlans` y `recentPlans` a la entidad [plannerUser](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/plannerUser). |
 |Adición|Beta|Se agregó la propiedad `contexts` a la entidad [plannerPlan](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/plannerPlan). |
-|Adición|Beta|Se agregó la propiedad `contextDetails` a la entidad [plannerPlanDetails](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/plannerPlanDetails). |## Enero de 2018
+|Adición|Beta|Se agregó la propiedad `contextDetails` a la entidad [plannerPlanDetails](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/plannerPlanDetails). |
+
+### <a name="reports-apis"></a>API de informes
+| Tipo de cambio | Versión | Descripción                              |
+|:------------|:--------|:-----------------------------------------|
+| Adición    | Beta    | Se agregó la propiedad **activatedOnSharedComputer** a la entidad [userActivationCounts](../api-reference/beta/resources/useractivationcounts.md).|
+| Adición    | Beta    | Se agregó la propiedad **sharedComputerActivation** a la entidad [office365ActivationsUserCounts](../api-reference/beta/resources/office365activationsusercounts.md).|
 
 ## <a name="january-2018"></a>Enero de 2018
 
@@ -161,17 +200,20 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Cambio|Beta|Se agregó la propiedad **showDisplayNameNextToLogo** al tipo complejo [intuneBrand](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_onboarding_intunebrand)|
 |Cambio|Beta|Se agregó la propiedad **deviceUsageType** al tipo complejo [outOfBoxExperienceSettings](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings)|
 |Cambio|Beta|Se agregaron las propiedades **supportsUserLicensing** y **supportsDeviceLicensing** al tipo complejo [vppLicensingType](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_apps_vpplicensingtype)|
-|Cambio|Beta|Se quitó la propiedad **actionMessage** del tipo complejo [vppTokenActionResult](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult)|
-
-## <a name="january-2018"></a>Enero de 2018
+|Cambio|Beta|Se quitó la propiedad **actionMessage** del tipo complejo [vppTokenActionResult](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_onboarding_vpptokenactionresult).|
 
 ### <a name="reports-apis"></a>API de informes
 | Tipo de cambio | Versión | Descripción                              |
 |:------------|:--------|:-----------------------------------------|
 | Adición    | v1.0    | Se agregaron las API siguientes:<br>[getTeamsUserActivityUserDetail](../api-reference/v1.0/api/reportroot_getteamsuseractivityuserdetail.md)<br>[getTeamsUserActivityCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivitycounts.md)<br>[getTeamsUserActivityUserCounts](../api-reference/v1.0/api/reportroot_getteamsuseractivityusercounts.md)<br>[getTeamsDeviceUsageUserDetail](../api-reference/v1.0/api/reportroot_getteamsdeviceusageuserdetail.md)<br>[getTeamsDeviceUsageUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusageusercounts.md)<br>[getTeamsDeviceUsageDistributionUserCounts](../api-reference/v1.0/api/reportroot_getteamsdeviceusagedistributionusercounts.md) |
 
-
 ## <a name="december-2017"></a>Diciembre de 2017
+
+### <a name="delta-query"></a>Consulta delta
+
+| Tipo de cambio | Versión | Descripción                              |
+|:------------|:--------|:-----------------------------------------|
+| Cambio      | v1.0    | Se agregó la función opcional de filtrado de consultas a [usuarios](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/user_delta) y [grupos](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/group_delta). |
 
 ### <a name="microsoft-intune-apis"></a>API de Microsoft Intune
 
@@ -821,7 +863,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adición        | v1.0        | Agregue la compatibilidad con la función delta a v1.0. Agréguela a las siguientes entidades para realizar una [consulta delta](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_overview):<br/>contacto<br/>contactFolder<br/>evento<br/>grupo<br/>mailFolder<br/>mensaje<br/>usuario<br/>Vea los ejemplos siguientes:<br/>[Obtener los cambios incrementales en los grupos](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_groups)<br/>[Obtener los cambios incrementales en los mensajes de una carpeta](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_messages)<br/>[Obtener los cambios incrementales en los usuarios](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_users) |
+| Adición        | v1.0        | En la versión 1.0, se agregó la compatibilidad con la función delta. Se agrega a las siguientes entidades para realizar una [consulta delta](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>evento<br/>grupo<br/>mailFolder<br/>mensaje<br/>usuario<br/>Vea los ejemplos siguientes:<br/>[Obtener los cambios incrementales en los grupos](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_groups)<br/>[Obtener los cambios incrementales en los mensajes de una carpeta](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_messages)<br/>[Obtener los cambios incrementales en los usuarios](https://developer.microsoft.com/es-ES/graph/docs/concepts/delta_query_users) |
 | Cambio          | Beta        | Agregue una consulta opcional adicional filtrando la capacidad (por id.) para [users](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/api/user_delta) y [groups](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/api/group_delta). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Compatibilidad con los recursos de usuario agregada para los elementos eliminados
@@ -849,13 +891,13 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adición        | V1.0        | Operaciones agregadas en [dominios](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domain).<br/>Nuevas entidades:</br>[domain](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>Nuevas acciones:</br>[comprobar](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/api/domain_verify) |
+| Adición        | v1.0        | Se agregaron operaciones en [domains](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domain).<br/>Nuevas entidades:</br>[domain](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>Nuevas acciones:</br>[comprobar](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/api/domain_verify) |
 
 ### <a name="added-contracts-to-v10"></a>Contratos agregados a v1.0
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adición        | V1.0        | Nueva entidad:</br>[contract](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/contract) |
+| Adición        | v1.0        | Nueva entidad:</br>[contract](https://graph.microsoft.io/es-ES/docs/api-reference/v1.0/resources/contract) |
 
 ### <a name="added-licensedetails-to-v10"></a>Propiedad licenseDetails agregada a v1.0
 
@@ -1701,9 +1743,9 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Punto de conexión** | **Descripción**                          |
 | :-------------- | :----------- | :--------------------------------------- |
-| Adición        | v1.0         | Los webhooks ahora son GA en el punto de conexión versión 1.0 a través del recurso _/Subscriptions_. Crear, leer, renovar y eliminar suscripciones para recibir notificaciones sobre datos de conversaciones de grupo de Office 365 y Outlook. |
+| Adición        | v1.0         | Los webhooks ya están disponibles para el público en general en la versión 1.0 del punto de conexión con el recurso _/Subscriptions_. Permiten crear, leer, renovar y eliminar suscripciones para recibir notificaciones sobre datos de conversaciones de grupo de Office 365 y Outlook. |
 
-### <a name="user"></a>Usuario
+### <a name="user"></a>User
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
 | :-------------- | :---------- | :--------------------------------------- |
