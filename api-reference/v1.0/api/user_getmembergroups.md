@@ -5,7 +5,7 @@ Esta función es compatible con Office 365 y otros tipos de grupos aprovisionado
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
->**Nota:** En este momento, esta API requiere el permiso Directory.Read.All o superior. El uso de los permisos User.Read o User.ReadBasic.All junto con el permiso Group.Read.All devolverá un error. Se trata de un problema conocido.
+>**Nota:** En este momento, esta API requiere el permiso Directory.Read.All o superior. El uso del permiso Group.Read.All, bien sea de forma independiente o junto con el permiso User devolverá un error. Se trata de un problema conocido.
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
