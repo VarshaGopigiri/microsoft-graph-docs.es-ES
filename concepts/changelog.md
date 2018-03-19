@@ -3,6 +3,18 @@
 Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.  
 
 Para obtener más información sobre problemas conocidos con las API de Microsoft Graph, vea [Problemas conocidos](known_issues.md).
+
+## <a name="march-2018"></a>Marzo de 2018
+
+### <a name="group-lifecycle-policy"></a>Directiva de ciclo de vida del grupo
+
+| **Tipo de cambio** | **Versión** | **Descripción**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adición        | v1.0        | Se agregó [groupLifecyclePolicy](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy). |
+| Adición        | v1.0        | Se agregaron las siguientes API para la directiva de ciclo de vida del grupo: [Crear](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [Enumerar](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list), [Obtener](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get), [Actualizar](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update), [Eliminar](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete), [Agregar grupo](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup), [Quitar grupo ](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
+| Adición        | v1.0        | Se agregó la función [List groupLifecylePolicies](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) al [grupo](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/group). |
+| Cambio | V1.0 | Se agregó la propiedad renewedDateTime y [renew](https://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/group_renew) al [grupo](../api-reference/v1.0/resources/group.md) | 
+
 ## <a name="february-2018"></a>Febrero de 2018
 
 ### <a name="microsoft-intune-apis"></a>API de Microsoft Intune
@@ -250,7 +262,6 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Cambio|Beta|Se agregaron las propiedades **tpmSpecificationVersion**, **operatingSystemEdition**, **deviceFullQualifiedDomainName**, **deviceGuardVirtualizationBasedSecurityHardwareRequirementState**, **deviceGuardVirtualizationBasedSecurityState** y **deviceGuardLocalSystemAuthorityCredentialGuardState** al tipo complejo [hardwareInformation](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_devices_hardwareinformation).|
 |Cambio|Beta|Se agregó la propiedad **vpnConfigurationId** al tipo complejo [iosVppAppAssignmentSettings](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings).|
 |Cambio|Beta|Se agregó la propiedad **resourceActions** al tipo complejo [rolePermission](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_rbac_rolepermission).|
-
 
 ### <a name="reports-apis"></a>API de informes
 | Tipo de cambio | Versión | Descripción                              |

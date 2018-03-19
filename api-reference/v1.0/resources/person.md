@@ -19,7 +19,7 @@ Una agregación de información sobre un contacto de correo electrónico, contac
 |scoredEmailAddresses|Colección [scoredEmailAddress](scoredemailaddress.md)|Direcciones de correo electrónico del contacto.|
 |givenName|String|Nombre propio del contacto.|
 |id|String|Identificador único del contacto. Solo lectura.|
-|imAddress|Cadena|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
+|imAddress|String|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
 |isFavorite|Boolean|`true` si el usuario ha marcado este contacto como favorito.|
 |jobTitle|String|Puesto del contacto.|
 |officeLocation|String|Ubicación de la oficina del contacto.|

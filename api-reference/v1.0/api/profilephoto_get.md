@@ -2,17 +2,25 @@
 
 Obtenga el objeto [profilePhoto](../resources/profilephoto.md) especificado o sus metadatos (propiedades profilePhoto).
 
-Una operación GET busca la foto especificada en el buzón del usuario de Exchange Online.
-
 > **Nota** Esta operación en la versión 1.0 admite solo un buzón profesional o educativo del usuario y no uno personal.
 
+Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504' y '648x648'. Las fotos pueden ser de cualquier dimensión si se almacenan en Azure Active Directory.
+
+Puede obtener los metadatos de la foto más grande disponible, o bien especifique un tamaño para obtener los metadatos de ese tamaño de foto.
+Si el tamaño solicitado no está disponible, puede obtener un tamaño menor que el usuario haya cargado y facilitado.
+Por ejemplo, si el usuario carga una foto de 504 x 504 píxeles, todos los tamaños de la foto salvo el de 648 x 648 estarán disponible para su descarga.
+Si el tamaño especificado no está disponible en el buzón del usuario o en Azure Active Directory, se devolverá el tamaño de "1 x 1" con el resto de los metadatos.
+
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-*   Foto de perfil de cualquier usuario del inquilino, incluido el usuario que inició sesión: User.ReadBasic.All; User.Read.All; User.ReadWrite.All
-*   Foto de perfil específicamente del usuario que inició sesión: User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All
-* Foto de perfil de un **grupo**: Group.Read.All, Group.ReadWrite.All
-* Foto de un **contacto**: Contacts.Read; Contacts.ReadWrite
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Tipo de recurso del **usuario**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Para el recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para el recurso de **contacto**:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegado (cuenta personal de Microsoft) | No admitido |
+|Aplicación                        | Tipo de recurso del **usuario**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para el recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para el recurso de **contacto**:<br />Contacts.Read, Contacts.ReadWrite |
+
 
 ## <a name="http-request-to-get-the-photo"></a>Solicitud HTTP para obtener la foto
 <!-- { "blockType": "ignored" } -->
@@ -36,6 +44,14 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
+
+## <a name="parameters"></a>Parámetros
+
+|**Parámetro**|**Tipo**|**Descripción**|
+|:-----|:-----|:-----|
+|_Parámetros de dirección URL_|
+|size  |String  | Un tamaño de foto. Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', 
+'360x360','432x432', '504x504' y '648x648'. Las fotos pueden ser de cualquier dimensión si se almacenan en Azure Active Directory. |
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
@@ -65,6 +81,20 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 Contiene los datos binarios de la foto solicitada. El código de respuesta HTTP es 200.
 
 ##### <a name="request-2"></a>Solicitud 2
+Esta solicitud recibe la foto de 48x48 para el usuario que inició sesión.
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+Content-Type: image/jpg
+```
+
+##### <a name="response-2"></a>Respuesta 2
+Contiene los datos binarios de la foto de 48x48 solicitada. El código de respuesta HTTP es 200.
+
+##### <a name="request-3"></a>Solicitud 3
 Esta solicitud obtiene los metadatos de la foto del usuario que ha iniciado sesión.
 <!-- {
   "blockType": "ignored"
@@ -73,7 +103,7 @@ Esta solicitud obtiene los metadatos de la foto del usuario que ha iniciado sesi
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-2"></a>Respuesta 2
+##### <a name="response-3"></a>Respuesta 3
 
 Los siguientes datos de respuesta muestran los metadatos de la foto. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar.
 <!-- {
