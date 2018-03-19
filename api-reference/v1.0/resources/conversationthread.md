@@ -16,9 +16,9 @@ La colección de destinatarios de la última publicación son los destinatarios 
 |[Enumerar publicaciones](../api/conversationthread_list_posts.md) |Colección [post](post.md)| Obtenga las publicaciones del hilo especificado. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del hilo.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios CC: del hilo.|
 |topic|String|El tema de la conversación. Esta propiedad se puede establecer al crear la conversación, pero no se puede actualizar.||
@@ -29,10 +29,9 @@ La colección de destinatarios de la última publicación son los destinatarios 
 |isLocked|Boolean|Indica si el hilo está bloqueado.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |posts|Colección [post](post.md)| Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

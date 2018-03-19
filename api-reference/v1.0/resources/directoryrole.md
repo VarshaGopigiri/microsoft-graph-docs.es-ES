@@ -26,7 +26,6 @@ Representa un rol de directorio de Azure AD. Los roles de directorio de Azure AD
 |:---------------|:--------|:----------|
 |members|Colección [directoryObject](directoryobject.md)|Usuarios que son miembros de este rol de directorio. Métodos HTTP: GET, POST, DELETE. Solo lectura. Admite valores NULL.|
 
-
 ## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso
