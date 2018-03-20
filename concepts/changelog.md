@@ -6,6 +6,11 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 ## <a name="march-2018"></a>Marzo de 2018
 
+### <a name="reports-apis"></a>API de informes
+|Tipo de cambio|Versión|Descripción|
+|:---|:---|:---|
+|Adición|beta|Agregada la propiedad **Id. del sitio** a la entidad [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md).|
+
 ### <a name="group-lifecycle-policy"></a>Directiva de ciclo de vida del grupo
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
@@ -1264,7 +1269,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adición        | Beta        | Ampliar Microsoft Graph con datos de aplicaciones mediante [extensiones de esquema](https://developer.microsoft.com/es-ES/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Esto es compatible con los siguientes recursos:<br/>unidad administrativa<br/>evento de calendario<br/>Dispositivo<br/>grupo<br/>mensaje<br/>organización<br/>contacto personal<br/>publicar<br/>usuario<br/>Vea el ejemplo siguiente:<br/>[Agregar datos personalizados a grupos mediante extensiones de esquema (vista previa)](https://developer.microsoft.com/es-ES/graph/docs/concepts/extensibility_schema_groups) |
+| Adición        | Beta        | Ampliar Microsoft Graph con datos de aplicaciones mediante [extensiones de esquema](https://developer.microsoft.com/es-ES/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Esto es compatible con los siguientes recursos:<br/>unidad administrativa<br/>evento de calendario<br/>dispositivo<br/>grupo<br/>mensaje<br/>organización<br/>contacto personal<br/>publicar<br/>usuario<br/>Vea el ejemplo siguiente:<br/>[Agregar datos personalizados a grupos mediante extensiones de esquema (vista previa)](https://developer.microsoft.com/es-ES/graph/docs/concepts/extensibility_schema_groups) |
 | Adición        | Beta        | Se ha proporcionado una forma alternativa de crear una definición de extensión de esquema sin necesidad de un dominio personal .com comprobado. Vea las [extensiones de esquema](https://developer.microsoft.com/es-ES/graph/docs/concepts/extensibility_overview#schema-extensions-preview) para obtener más información. |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Agregar datos personalizados a Microsoft Graph mediante extensiones abiertas
@@ -1639,10 +1644,10 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adición        | V1.0 y beta | Se agregó compatibilidad para respetar _Accept-Encoding:gzip_. |
-| Adición        | v1.0          | Agregada compatibilidad con el segmento de transmisión en la ruta de acceso de $expand. Por ejemplo, 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'. |
+| Adición        | v1.0          | Agregada compatibilidad con el segmento de transmisión en la ruta de acceso de $expand. Por ejemplo, "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event". |
 | Adición        | Beta          | Se agregó compatibilidad con la solicitud PATCH en propiedades estructurales. Por ejemplo: 'PATCH /me/mailboxSettings'. |
 | Adición        | Beta          | Azure Active Directory ahora se usa como una reserva para solicitudes de /beta/users/id/photo cuando Outlook no puede procesar las solicitudes (por ejemplo, si el usuario no tiene una licencia de buzón o si el espacio empresarial no tiene una suscripción a Exchange Online). NOTA: Esta reserva está disponible para GET y PATCH. |
-| Adición        | Beta          | Agregada compatibilidad con el segmento de transmisión en la ruta de acceso de $expand. Por ejemplo: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'. |
+| Adición        | Beta          | Agregada compatibilidad con el segmento de transmisión en la ruta de acceso de $expand. Por ejemplo: "https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event". |
 
 ### <a name="onedrive"></a>OneDrive
 
@@ -1707,7 +1712,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 | :-------------- | :------------ | :--------------------------------------- |
 | Adición        | V1.0 y beta | Se mejoran los mensajes de error al resolver alias de inquilino y tokens de JWT (AAD) rechazados. |
 | Adición        | V1.0 y beta | La ubicación del punto de conexión de servicio de autorización ahora se devuelve en el encabezado _www-authenticate_ cuando se recibe una solicitud con un token de portador vacío. |
-| Adición        | V1.0 y beta | Se solucionó la capacidad para filtrar en una propiedad de identificador de entidad. Ejemplo: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Anteriormente, cualquier solicitud POST para acciones de servicio y funciones necesitaba el nombre de la acción o función con el prefijo microsoft.graph. Por ejemplo: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>El prefijo ya no es necesario (aunque todavía se puede especificar). Por lo que ahora también funcionaría lo siguiente: POST https://graph.microsoft.com/v1.0/me/getMemberGroups. |
+| Adición        | V1.0 y beta | Se solucionó la capacidad para filtrar en una propiedad de identificador de entidad. Ejemplo: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+"x"<br/>Anteriormente, cualquier solicitud POST para acciones de servicio y funciones necesitaba el nombre de la acción o función con el prefijo microsoft.graph. Por ejemplo, POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>El prefijo ya no es necesario (aunque todavía se puede especificar). Por lo que ahora también funcionaría lo siguiente: POST https://graph.microsoft.com/v1.0/me/getMemberGroups. |
 | Cambio          | Beta          | Se limpiaron los nombres de propiedad de suscripción.  |
 | Adición        | Beta          | Se agregó la capacidad de detectar (a través de _directorySettingTemplates_) y de invalidar el comportamiento predeterminado (al crear una _configuración_ a partir de la plantilla) para entidades y su función asociada. Inicialmente, esta plantilla solo se proporciona para controlar comportamientos en los grupos de Office. |
 
@@ -1840,6 +1845,6 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Solución             | V1.0 y beta | Se solucionó la capacidad para seleccionar determinadas propiedades de usuario en otros usuarios, cuando se hacía referencia al usuario con el nombre principal de usuario (UPN). Por ejemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| Solución             | V1.0 y beta | Se solucionó la capacidad de seleccionar determinadas propiedades de usuario en otros usuarios, cuando se hacía referencia al usuario con el nombre principal de usuario (UPN). Por ejemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Solución             | V1.0 y beta | Se solucionó la llamada a la función enlazada de usuario _microsoft.graph.reminderView_, que generaba el siguiente error: No se pudo encontrar una propiedad denominada businessPhones en el tipo Microsoft.OutlookServices.Reminder. |
 | Solución             | V1.0 y beta | Se solucionó la creación y actualización de usuarios (POST/PATCH /v1.0/users), que generaba el error 400. |
