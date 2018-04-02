@@ -34,12 +34,12 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
+|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |accountBlockModification|Boolean|Indica si se va a permitir la modificación de cuentas cuando el dispositivo está en modo supervisado.|
 |activationLockAllowWhenSupervised|Boolean|Indica si se va a permitir el bloqueo de activación cuando el dispositivo está en modo supervisado.|
 |airDropBlocked|Boolean|Indica si se va a permitir AirDrop cuando el dispositivo está en modo supervisado.|
@@ -48,7 +48,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |appleWatchBlockPairing|Boolean|Indica si se va a permitir el emparejamiento con Apple Watch cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
 |appleWatchForceWristDetection|Boolean|Indica si se va a forzar que un Apple Watch emparejado use la detección de muñeca (iOS 8.2 y versiones posteriores).|
 |appleNewsBlocked|Boolean|Indica si se va a impedir que el usuario utilice Noticias cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
-|appsSingleAppModeList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Obtiene o establece la lista de aplicaciones de iOS que pueden entrar de forma autónoma en el Modo de aplicación única. Solo bajo supervisión. iOS 7.0 y versiones posteriores. Esta colección puede contener un máximo de 500 elementos.|
+|appsSingleAppModeList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Obtiene o establece la lista de aplicaciones permitidas de iOS que pueden entrar de forma autónoma en el Modo de aplicación única. Solo bajo supervisión. iOS 7.0 y versiones posteriores. Esta colección puede contener un máximo de 500 elementos.|
 |appsVisibilityList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en la lista de visibilidad (sea la lista de aplicaciones visibles o que se pueden iniciar o la lista de aplicaciones ocultas o que no se pueden iniciar, controlada por AppsVisibilityListType) (iOS 9.3 y versiones posteriores). Esta colección puede contener un máximo de 10 000 elementos.|
 |appsVisibilityListType|String|Tipo de lista que se encuentra en la AppsVisibilityList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Boolean|Indica si se va a impedir la descarga automática de aplicaciones compradas en otros dispositivos cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
@@ -115,13 +115,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |kioskModeAllowVoiceOverSettings|Boolean|Indica si se va a permitir el acceso a la configuración de voz en off en el modo de pantalla completa.|
 |kioskModeAllowVolumeButtons|Boolean|Indica si se va a permitir el uso de los botones de volumen en el modo de pantalla completa.|
 |kioskModeAllowZoomSettings|Boolean|Indica si se va a permitir el acceso a la configuración de zoom en el modo de pantalla completa.|
-|kioskModeAppStoreUrl|String|Dirección URL en la tienda de aplicaciones a la aplicación que se usará para el modo de pantalla completa. Úsela si se desconoce KioskModeManagedAppId.|
+|kioskModeAppStoreUrl|String|Dirección URL en la tienda de aplicaciones a la aplicación que se usará para el modo de pantalla completa. Úsela si KioskModeManagedAppId es desconocido.|
 |kioskModeRequireAssistiveTouch|Boolean|Indica si se va a requerir AssistiveTouch en el modo de pantalla completa.|
 |kioskModeRequireColorInversion|Boolean|Indica si se va a requerir la inversión de color en el modo de pantalla completa.|
 |kioskModeRequireMonoAudio|Boolean|Indica si se va a requerir el audio mono en el modo de pantalla completa.|
 |kioskModeRequireVoiceOver|Boolean|Indica si se va a requerir la voz en off en el modo de pantalla completa.|
 |kioskModeRequireZoom|Boolean|Indica si se va a requerir el zoom en el modo de pantalla completa.|
-|kioskModeManagedAppId|String|Identificador de la aplicación administrada que se usará para el modo de pantalla completa. Si se especifica KioskModeManagedAppId, se omitirá KioskModeAppStoreUrl.|
+|kioskModeManagedAppId|String|identificador de la aplicación administrada de la aplicación que se usará para el modo de pantalla completa. Si se especifica KioskModeManagedAppId, entonces se omitirá KioskModeAppStoreUrl.|
 |lockScreenBlockControlCenter|Boolean|Indica si se va a impedir que el usuario utilice el centro de control en la pantalla de bloqueo.|
 |lockScreenBlockNotificationView|Boolean|Indica si se va a impedir que el usuario utilice la visualización de notificaciones en la pantalla de bloqueo.|
 |lockScreenBlockPassbook|Boolean|Indica si se va a impedir que el usuario utilice Passbook cuando el dispositivo está bloqueado.|
@@ -143,13 +143,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passcodeBlockFingerprintModification|Boolean|Bloquear la modificación de huellas digitales registradas de Touch ID en el modo supervisado.|
 |passcodeBlockModification|Boolean|Indica si se va a permitir la modificación de los códigos de acceso en el dispositivo supervisado (iOS 9.0 y versiones posteriores).|
 |passcodeBlockSimple|Boolean|Indica si se van a bloquear los códigos de acceso simples.|
-|passcodeExpirationDays|Int32|Número de días antes de que expire el código de acceso. Valores válidos de 1 a 65 535.|
-|passcodeMinimumLength|Int32|Longitud mínima del código de acceso. Valores válidos de 4 a 14.|
+|passcodeExpirationDays|Int32|Número de días antes de que expire el código de acceso. Valores válidos de 1 a 65535|
+|passcodeMinimumLength|Int32|Longitud mínima de los códigos de acceso. Valores válidos de 4 a 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesario un código de acceso.|
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
 |passcodeMinimumCharacterSetCount|Int32|Número de juegos de caracteres que debe contener un código de acceso. Valores válidos de 0 a 4.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acceso anteriores que bloquear. Valores válidos de 1 a 24.|
-|passcodeSignInFailureCountBeforeWipe|Int32|Número de errores de inicio de sesión permitidos antes de borrar los datos del dispositivo. Valores válidos de 4 a 11.|
+|passcodeSignInFailureCountBeforeWipe|Int32|Número de errores de inicio de sesión permitidos antes de borrar los datos del dispositivo. Valores válidos de 4 a 11|
 |passcodeRequiredType|String|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passcodeRequired|Boolean|Indica si se va a requerir un código de acceso.|
 |podcastsBlocked|Boolean|Indica si se va a impedir que el usuario utilice Podcasts en el dispositivo supervisado (iOS 8.0 y versiones posteriores).|
@@ -159,7 +159,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |safariBlocked|Boolean|Indica si se va a impedir que el usuario utilice Safari.|
 |safariCookieSettings|String|Configuración de cookies para Safari. Los valores posibles son: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited` y `allowAlways`.|
 |safariManagedDomains|Colección String|Las direcciones URL que coinciden con los patrones mostrados aquí se considerarán administradas.|
-|safariPasswordAutoFillDomains|Colección String|Los usuarios solo pueden guardar las contraseñas en Safari de las direcciones URL que coinciden con los patrones mostrados aquí. Se aplica a dispositivos en modo supervisado (iOS 9.3 o posterior).|
+|safariPasswordAutoFillDomains|Colección String|Los usuarios pueden guardar las contraseñas en Safari únicamente de las direcciones URL que coinciden con los patrones que se enumeran aquí. Se aplica solo a dispositivos en modo supervisado (iOS 9.3 o posterior).|
 |safariRequireFraudWarning|Boolean|Indica si se va a requerir una advertencia de fraude en Safari.|
 |screenCaptureBlocked|Boolean|Indica si se va a impedir que el usuario tome capturas de pantalla.|
 |siriBlocked|Boolean|Indica si se va a impedir que el usuario utilice Siri.|
