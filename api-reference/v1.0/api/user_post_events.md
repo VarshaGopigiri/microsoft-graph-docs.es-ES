@@ -4,7 +4,25 @@ Cree un [evento](../resources/event.md) en el calendario predeterminado del usua
 
 Puede especificar la zona horaria de cada una de las horas de inicio y finalización del evento como parte de estos valores, ya que las propiedades **start** y **end** son del tipo [dateTimeTimeZone](../resources/datetimetimezone.md). 
 
-Cuando se crea el evento, el servidor envía invitaciones a todos los asistentes.
+Cuando se envía un evento, el servidor envía invitaciones a todos los asistentes.
+
+**Definir la ubicación de un evento**
+
+Un administrador de Exchange puede configurar un buzón y una dirección de correo electrónico para un recurso, como una sala de reuniones, o equipamiento, como un proyector. Los usuarios pueden luego invitar al recurso como asistente a una reunión. En nombre de recurso, el servidor acepta o rechaza la convocatoria de reunión en función de la programación de disponibilidad del recurso. Si el servidor acepta una reunión para el recurso, se crea un evento de la reunión en el calendario del recurso. Si se vuelve a programar la reunión, el servidor actualiza automáticamente el evento en el calendario del recurso.
+
+Otra ventaja de configurar un buzón para un recurso es controlar la programación del recurso; por ejemplo, solo los ejecutivos o los delegados pueden reservar una sala de reuniones privadas.
+
+Si se organiza un evento que implica una ubicación de la reunión:
+
+1. Configure la propiedad **location** del **evento** en consecuencia. 
+2. Establezca la propiedad **locationEmailAddress** si la ubicación de la reunión tiene una dirección de correo electrónico.
+
+Además, si la ubicación de la reunión se ha configurado como recurso o el evento implica equipos que se han configurado como recurso:
+
+3. Invite al recurso como [asistente](../resources/attendee.md).
+4. Establezca la propiedad **type** como `resource`.
+5. Establezca la **emailAddress** del asistente como dirección de correo electrónico del recurso.
+
 
 
 ## <a name="permissions"></a>Permisos
