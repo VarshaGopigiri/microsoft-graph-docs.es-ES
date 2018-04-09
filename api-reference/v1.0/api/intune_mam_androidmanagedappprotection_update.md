@@ -2,15 +2,15 @@
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Actualice las propiedades de un objeto [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md).
+Actualiza las propiedades de un objeto [androidManagedAppProtection](../resources/intune_mam_androidmanagedappprotection.md).
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, que incluye cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementApps.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitido.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -68,7 +68,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |minimumWarningAppVersion|String|Las versiones anteriores a la versión especificada provocarán un mensaje de advertencia en la aplicación administrada. Heredado de [managedAppProtection](../resources/intune_mam_managedappprotection.md).|
 |isAssigned|Boolean|Indica si la directiva se implementará en los grupos de inclusión. Heredado de [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md).|
 |screenCaptureBlocked|Boolean|Indica si un usuario administrado puede realizar capturas de pantalla de las aplicaciones administradas.|
-|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Cuando se habilita esta configuración, el cifrado de nivel de aplicación está deshabilitado si el cifrado de nivel de dispositivo está activado.|
+|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Cuando se habilita esta configuración, el cifrado de nivel de aplicación está deshabilitado si el cifrado de nivel de dispositivo está habilitado.|
 |encryptAppData|Boolean|Indica si se deben cifrar los datos de aplicaciones para las aplicaciones administradas.|
 |deployedAppCount|Int32|Número de aplicaciones en las que se implementará la directiva actual.|
 |minimumRequiredPatchVersion|String|Definir el nivel más antiguo de revisión de seguridad de Android necesario para que un usuario pueda tener acceso seguro a la aplicación.|

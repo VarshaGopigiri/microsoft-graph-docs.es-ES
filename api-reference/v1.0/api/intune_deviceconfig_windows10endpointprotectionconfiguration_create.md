@@ -2,15 +2,15 @@
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Crear un objeto [windows10EndpointProtectionConfiguration](../resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md).
+Crea un objeto [windows10EndpointProtectionConfiguration](../resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md).
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, que incluye cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitido.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -42,12 +42,12 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
 |firewallBlockStatefulFTP|Boolean|Bloquea las conexiones FTP con estado en el dispositivo.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configura el tiempo de espera inactivo para asociaciones de seguridad, en segundos, de 300 a 3600 inclusive. Se trata del período tras el cual expiran y se eliminan las asociaciones de seguridad. Valores válidos de 300 a 3600.|
-|firewallPreSharedKeyEncodingMethod|String|Seleccione la codificación de clave previamente compartida que se debe usar. Los valores posibles son: `deviceDefault`, `none` y `utF8`.|
+|firewallPreSharedKeyEncodingMethod|String|Selecciona la codificación de clave previamente compartida que se debe usar. Los valores posibles son: `deviceDefault`, `none` y `utF8`.|
 |firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Configura las exenciones IPSec para permitir los códigos de tipo ICMP de IPv6 de detección de vecinos.|
 |firewallIPSecExemptionsAllowICMP|Boolean|Configura las exenciones IPSec para permitir ICMP.|
 |firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Configura las exenciones IPSec para permitir los códigos de tipo ICMP de IPv6 de detección de enrutadores.|
 |firewallIPSecExemptionsAllowDHCP|Boolean|Configura las exenciones IPSec para permitir el tráfico DHCP de IPv4 e IPv6.|
-|firewallCertificateRevocationListCheckMethod|String|Especifique cómo se aplica la lista de revocación de certificados. Los valores posibles son: `deviceDefault`, `none`, `attempt` y `require`.|
+|firewallCertificateRevocationListCheckMethod|String|Especifica cómo se aplica la lista de revocación de certificados. Los valores posibles son: `deviceDefault`, `none`, `attempt` y `require`.|
 |firewallMergeKeyingModuleSettings|Boolean|Si un conjunto de autenticación no es totalmente compatible con un módulo de generación de claves, dirija el módulo para que solo ignore los conjuntos de autenticación no admitidos, en lugar de todo el conjunto.|
 |firewallPacketQueueingMethod|String|Configura cómo debe aplicarse la cola de paquetes en el escenario de puerta de enlace de túnel. Los valores posibles son: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound` y `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configura las opciones del perfil de firewall para redes de dominio.|
@@ -62,16 +62,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |appLockerApplicationControl|String|Permite que el administrador elija los tipos de aplicación que se permiten en los dispositivos. Los valores posibles son: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker` y `auditComponentsStoreAppsAndSmartlocker`.|
 |smartScreenEnableInShell|Boolean|Permite que los administradores de TI configuren SmartScreen para Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Permite que los administradores de TI controlen si los usuarios pueden omitir advertencias de SmartScreen y ejecutar archivos malintencionados.|
-|applicationGuardEnabled|Boolean|Habilitar la Protección de aplicaciones de Windows Defender.|
-|applicationGuardBlockFileTransfer|String|Impedir que el Portapapeles transfiera archivos de imagen, de texto o ambos. Los valores posibles son: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone` y `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Boolean|Impedir que los sitios de la empresa carguen contenido no empresarial, como complementos de terceros.|
-|applicationGuardAllowPersistence|Boolean|Permitir el almacenamiento de los datos generados por el usuario en el contenedor de la protección de aplicaciones (favoritos, cookies, contraseñas web, etc.).|
+|applicationGuardEnabled|Boolean|Habilita la Protección de aplicaciones de Windows Defender.|
+|applicationGuardBlockFileTransfer|String|Impide que el Portapapeles transfiera archivos de imagen, de texto o ambos. Los valores posibles son: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone` y `blockTextFile`.|
+|applicationGuardBlockNonEnterpriseContent|Boolean|Impide que los sitios de la empresa carguen contenido no empresarial, como complementos de terceros.|
+|applicationGuardAllowPersistence|Boolean|Permite el almacenamiento de los datos generados por el usuario en el contenedor de la protección de aplicaciones (favoritos, cookies, contraseñas web, etc.).|
 |applicationGuardForceAuditing|Boolean|La auditoría forzada conservará los registros y eventos de Windows para cumplir con los criterios de seguridad y cumplimiento (algunos eventos de ejemplo son el inicio y cierre de sesión del usuario, el uso de derechos de privilegio, la instalación de software, los cambios del sistema, etc.).|
-|applicationGuardBlockClipboardSharing|String|Impedir que el Portapapeles comparta los datos del host al contenedor, del contenedor al host, en ambas direcciones o en ninguna. Los valores posibles son: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost` y `blockNone`.|
-|applicationGuardAllowPrintToPDF|Boolean|Permitir la impresión en PDF desde el contenedor.|
-|applicationGuardAllowPrintToXPS|Boolean|Permitir la impresión en XPS desde el contenedor.|
-|applicationGuardAllowPrintToLocalPrinters|Boolean|Permitir la impresión en impresoras locales desde el contenedor.|
-|applicationGuardAllowPrintToNetworkPrinters|Boolean|Permitir la impresión en impresoras en red desde el contenedor.|
+|applicationGuardBlockClipboardSharing|String|Impide que el Portapapeles comparta los datos del host al contenedor, del contenedor al host, en ambas direcciones o en ninguna. Los valores posibles son: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost` y `blockNone`.|
+|applicationGuardAllowPrintToPDF|Boolean|Permite la impresión en PDF desde el contenedor.|
+|applicationGuardAllowPrintToXPS|Boolean|Permite la impresión en XPS desde el contenedor.|
+|applicationGuardAllowPrintToLocalPrinters|Boolean|Permite la impresión en impresoras locales desde el contenedor.|
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|Permite la impresión en impresoras en red desde el contenedor.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Permite que el administrador deshabilite el mensaje de advertencia para otro cifrado de disco en los equipos de usuario.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Permite que el administrador exija que se active el cifrado con BitLocker. Esta directiva solo es válida para una SKU móvil.|
 |bitLockerEncryptDevice|Boolean|Permite que el administrador exija que se active el cifrado con BitLocker.|

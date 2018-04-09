@@ -2,15 +2,15 @@
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Actualice las propiedades de un objeto [managedDevice](../resources/intune_devices_manageddevice.md).
+Actualiza las propiedades de un objeto [managedDevice](../resources/intune_devices_manageddevice.md).
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, que incluye cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitido.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -44,7 +44,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |lastSyncDateTime|DateTimeOffset|Fecha y hora en que el dispositivo completó por última vez una sincronización correcta con Intune.|
 |operatingSystem|String|Sistema operativo del dispositivo. Windows, iOS, etc.|
 |complianceState|String|Estado de cumplimiento del dispositivo. Los valores posibles son: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod` y `configManager`.|
-|jailBroken|String|Indica si se trata de un dispositivo con jailbreak o rooting.|
+|jailBroken|String|Indica si se trata de un dispositivo liberado o con permisos elevados.|
 |managementAgent|String|Canal de administración del dispositivo. Intune, EAS, etc. Los valores posibles son: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf` y `googleCloudDevicePolicyController`.|
 |osVersion|String|Versión del sistema operativo del dispositivo.|
 |easActivated|Boolean|Indica si el dispositivo tiene Exchange ActiveSync activado.|
@@ -58,7 +58,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |deviceRegistrationState|String|Estado de registro del dispositivo. Los valores posibles son: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment` y `unknown`.|
 |deviceCategoryDisplayName|String|Nombre para mostrar de la categoría de dispositivo.|
 |isSupervised|Boolean|Estado supervisado del dispositivo.|
-|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que el dispositivo contactó con Exchange.|
+|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que el dispositivo estableció contacto con Exchange.|
 |exchangeAccessState|String|Estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `allowed`, `blocked` y `quarantined`.|
 |exchangeAccessStateReason|String|Motivo del estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` y `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Dirección URL que permite que se establezca una sesión remota con el dispositivo.|
