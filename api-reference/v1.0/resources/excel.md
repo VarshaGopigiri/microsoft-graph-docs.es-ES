@@ -1,6 +1,6 @@
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabajar con Excel en Microsoft Graph
 
-Puede utilizar Microsoft Graph para permitir que las aplicaciones web y móviles lean y modifiquen los libros de Excel almacenados en OneDrive, SharePoint u otras plataformas de almacenamiento de información admitidas. El recurso `Workbook` (o el archivo de Excel) contiene todos los demás recursos de Excel mediante relaciones. Puede acceder a un libro a través de la [API de Drive](drive.md) si identifica la ubicación del archivo en la dirección URL. Por ejemplo:
+Puede usar Microsoft Graph para permitir que las aplicaciones web y móviles lean y modifiquen libros de Excel almacenados en OneDrive para la Empresa, un sitio de SharePoint o una unidad de grupo. El recurso `Workbook` (o el archivo de Excel) contiene todos los demás recursos de Excel mediante relaciones. Puede obtener acceso a un libro a través de la [API de Drive](drive.md) si identifica la ubicación del archivo en la dirección URL. Por ejemplo:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
@@ -9,7 +9,9 @@ Puede acceder a un conjunto de objetos de Excel (como una tabla, intervalo o gr�
 devuelve una colección de objetos de hoja de cálculo que forman parte del libro.    
 
 
-**Nota:** La API de REST de Excel solo es compatible con libros de formato de archivo Office Open XML. Los libros con la extensión `.xls` no son compatibles. 
+La API REST de Excel solo es compatible con libros de formato de archivo Office Open XML. Los libros con la extensión `.xls` no son compatibles. 
+
+**Nota**: Aún no se admiten los libros almacenados en la plataforma para consumidores de OneDrive. En este momento, las API REST de Excel solo admiten los archivos almacenados en la plataforma empresarial. 
 
 ## <a name="authorization-and-scopes"></a>Autorización y ámbitos
 

@@ -37,6 +37,7 @@ Representa una tabla de Excel.
 |showBandedColumns|Booleano|Indica si las columnas muestran un formato con bandas en el que las columnas impares están resaltadas de manera diferente que las pares para facilitar la lectura de la tabla.   |
 |showBandedRows|Booleano|Indica si las filas muestran un formato con bandas en el que las filas impares están resaltadas de manera diferente que las pares para facilitar la lectura de la tabla.    |
 |showFilterButton|Booleano|Indica si los botones de filtro son visibles en la parte superior de cada encabezado de columna. Esta configuración solo se permite si la tabla contiene una fila de encabezado.   |
+|legacyId|String|Identificador heredado usado en clientes anteriores de Excel. El valor del identificador permanece igual, incluso cuando se cambia el nombre de la tabla. Esta propiedad debe interpretarse como un valor de cadena opaco y no se debería analizar para ningún otro tipo. Solo lectura.   |
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
@@ -53,7 +54,7 @@ Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+     "legacyId"
   ],
   "@odata.type": "microsoft.graph.table"
 }-->
@@ -69,7 +70,8 @@ Aquí tiene una representación JSON del recurso.
   "showFilterButton": true,
   "showHeaders": true,
   "showTotals": true,
-  "style": "String"
+  "style": "String",
+  "legacyId": "String"
 }
 
 ```

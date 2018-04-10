@@ -6,6 +6,12 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 ## <a name="march-2018"></a>Marzo de 2018
 
+### <a name="excel-apis"></a>API de Excel
+|Tipo de cambio|Versión|Descripción|
+|:---|:---|:---|
+|Cambio|v1.0|Se agregó la propiedad **legacyId** a la entidad [Tabla de Excel](../api-reference/v1.0/resources/table.md). Esta contendrá el identificador de valor numérico (tipo de datos String) que quedará constante para una tabla de Excel determinada. Se proporciona como metadatos adicionales si la aplicación dependía del identificador heredado usado en aplicaciones cliente de Excel anteriores. Nota: Las propiedades `id` y `legacyId` deben tratarse como un valor de cadena opaco y no se deberían analizar para ningún otro tipo de la aplicación. |
+
+
 ### <a name="reports-apis"></a>API de informes
 |Tipo de cambio|Versión|Descripción|
 |:---|:---|:---|
@@ -187,7 +193,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Cambio|Beta|Se agregó la propiedad **allowPartnerToCollectIOSApplicationMetadata** a la entidad [mobileThreatDefenseConnector](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_onboarding_mobilethreatdefenseconnector)|
 |Cambio|Beta|Se quitó la propiedad **members** de la entidad [roleAssignment](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_rbac_roleassignment)|
 |Cambio|Beta|Se agregó la propiedad **lastModifiedDateTime** a la entidad [termsAndConditions](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_companyterms_termsandconditions).|
-|Cambio|Beta|Se agregaron la propiedades**deviceThreatProtectionEnabled** y **deviceThreatProtectionRequiredSecurityLevel** a la entidad [windows10CompliancePolicy](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy)|
+|Cambio|Beta|Se agregaron las propiedades**deviceThreatProtectionEnabled** y **deviceThreatProtectionRequiredSecurityLevel** a la entidad [windows10CompliancePolicy](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy)|
 |Cambio|Beta|Se eliminó la propiedad **minimumUpdateAutoInstallClassification** de la entidad [windows10CompliancePolicy](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10compliancepolicy).|
 |Cambio|Beta|Se agregaron las propiedades **privacyBlockPublishUserActivities** y **privacyBlockActivityFeed** a la entidad [windows10GeneralConfiguration](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10generalconfiguration)|
 |Cambio|Beta|Se agregó la propiedad **configurationAccountType** a la entidad [windows10SecureAssessmentConfiguration](https://developer.microsoft.com/es-ES/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration)|
