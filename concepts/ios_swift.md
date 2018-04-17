@@ -8,7 +8,7 @@ En este artículo se describen las tareas necesarias para obtener un token de ac
 
 Puede descargar la versión de la aplicación que creará desde este repositorio de GitHub:
 
-* [Ejemplo Connect de Office 365 para iOS con el SDK de Microsoft Graph](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
+* [Ejemplo Connect de Office 365 para iOS con el SDK de Microsoft Graph](https://github.com/microsoftgraph/ios-swift-connect-sample)
 
 En la imagen siguiente, se muestra la aplicación que va a crear.
 

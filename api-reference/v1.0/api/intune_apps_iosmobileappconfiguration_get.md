@@ -1,16 +1,14 @@
-# <a name="get-devicemanagement"></a>Obtener deviceManagement
-
-> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se permite el uso de estas API en aplicaciones de producción.
+# <a name="get-iosmobileappconfiguration"></a>Obtener iosMobileAppConfiguration
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Lea las propiedades y las relaciones del objeto [deviceManagement](../resources/intune_troubleshooting_devicemanagement.md).
+Lee las propiedades y las relaciones del objeto [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md).
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
-|Delegado (cuenta profesional o educativa)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegado (cuenta profesional o educativa)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -20,7 +18,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 }
 -->
 ``` http
-GET /deviceManagement
+GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
@@ -35,13 +33,13 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [deviceManagement](../resources/intune_troubleshooting_devicemanagement.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
 ### <a name="response"></a>Respuesta
@@ -49,12 +47,29 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 130
+Content-Length: 763
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b"
+    "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
+    "id": "b2c33191-3191-b2c3-9131-c3b29131c3b2",
+    "targetedMobileApps": [
+      "Targeted Mobile Apps value"
+    ],
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "description": "Description value",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "displayName": "Display Name value",
+    "version": 7,
+    "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
+    "settings": [
+      {
+        "@odata.type": "microsoft.graph.appConfigurationSettingItem",
+        "appConfigKey": "App Config Key value",
+        "appConfigKeyType": "integerType",
+        "appConfigKeyValue": "App Config Key Value value"
+      }
+    ]
   }
 }
 ```

@@ -41,7 +41,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |publishedDateTime|DateTimeOffset|La fecha y la hora en que se publicó el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Cubierta de libro. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que el libro electrónico se modificó por última vez. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |informationUrl|String|Dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |privacyInformationUrl|String|Dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|El Id. de token de VPP.|

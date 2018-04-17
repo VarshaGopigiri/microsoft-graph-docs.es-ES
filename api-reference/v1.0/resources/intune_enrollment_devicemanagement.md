@@ -12,10 +12,13 @@ El recurso deviceManagement representa las identidades de dispositivo de colecci
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|El GUID para el objeto.|
+|id|String|El GUID para el objeto.|
 
 ## <a name="relationships"></a>Relaciones
-Ninguna
+|Relación|Tipo|Descripción|
+|:---|:---|:---|
+|importedWindowsAutopilotDeviceIdentities|Colección [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Colección de dispositivos importados de Windows Autopilot|
+
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 <!-- {
