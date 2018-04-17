@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitida.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -25,7 +25,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto mobileThreatDefenseConnector.
@@ -35,13 +35,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|String|Todavía no documentado|
-|lastHeartbeatDateTime|DateTimeOffset|Marca de tiempo del último latido después de habilitar la opción de administrador Conectarse a MTP.|
-|partnerState|String|Estado de partner de este espacio empresarial. Los valores posibles son: `unavailable`, `available`, `enabled` y `unresponsive`.|
-|androidEnabled|Boolean|Alternancia de activación y desactivación de Android.|
-|androidDeviceBlockedOnMissingPartnerData|Boolean|Para Android, permite que el administrador configure que debe recibir datos del partner de sincronización de datos antes de que se considere compatible.|
-|iosDeviceBlockedOnMissingPartnerData|Boolean|Para iOS, permite que el administrador configure que debe recibir datos del partner de sincronización de datos antes de que se considere compatible.|
-|partnerUnsupportedOsVersionBlocked|Boolean|Permite que el administrador bloquee los dispositivos en las plataformas habilitadas que no cumplan los requisitos de versión mínima.|
-|iosEnabled|Boolean|Alternancia de activación y desactivación de IOS.|
+|lastHeartbeatDateTime|DateTimeOffset|Fecha y hora del último latido recibido del partner de sincronización de datos|
+|partnerState|String|Estado del partner de sincronización de datos para esta cuenta. Los valores posibles son: `unavailable`, `available`, `enabled` y `unresponsive`.|
+|androidEnabled|Boolean|Para Android, configure si se deberían utilizar los datos del partner de sincronización de datos durante las evaluaciones de cumplimiento normativo.|
+|iosEnabled|Boolean|Para iOS, obtenga o configure si se deberían utilizar los datos del partner de sincronización de datos durante las evaluaciones de cumplimiento normativo.|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|Para Android, configure si Intune debe recibir datos del partner de sincronización de datos antes de marcar un dispositivo compatible.|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|Para iOS, configure si Intune debe recibir datos del partner de sincronización de datos antes de marcar un dispositivo compatible.|
+|partnerUnsupportedOsVersionBlocked|Boolean|Obtenga o configure si se deben bloquear los dispositivos de las plataformas habilitadas que no cumplan los requisitos de versión mínima.|
 |partnerUnresponsivenessThresholdInDays|Int32|Obtener o definir los días de tolerancia por espacio empresarial para la falta de respuesta de esta integración de partner.|
 
 
@@ -62,10 +62,10 @@ Content-length: 414
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
   "androidEnabled": true,
+  "iosEnabled": true,
   "androidDeviceBlockedOnMissingPartnerData": true,
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
-  "iosEnabled": true,
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
@@ -83,10 +83,10 @@ Content-Length: 463
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
   "androidEnabled": true,
+  "iosEnabled": true,
   "androidDeviceBlockedOnMissingPartnerData": true,
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
-  "iosEnabled": true,
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
