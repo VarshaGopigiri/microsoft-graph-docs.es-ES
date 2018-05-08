@@ -1,14 +1,18 @@
 # <a name="list-organization"></a>List organization
 
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
 Recupera una lista de objetos organization.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | No admitida.    |
+|Delegado (cuenta profesional o educativa) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | No admitida. |
+|Aplicación | Directory.Read.All, Directory.ReadWrite.All |
+
+> Nota: Las aplicaciones que tienen el permiso User.Read solamente pueden leer las propiedades *id*, *displayName* y *verifiedDomains* de la organización.  El resto de propiedades devolverá valores `null`. Para leer todas las propiedades, use Directory.Read.All.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -16,7 +20,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /organization
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
@@ -36,7 +40,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "get_organization"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/organization
+GET https://graph.microsoft.com/beta/organization
 ```
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
@@ -56,7 +60,7 @@ Content-length: 500
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "datetime-value",
+          "assignedDateTime": "2016-10-19T10:37:00Z",
           "capabilityStatus": "capabilityStatus-value",
           "service": "service-value",
           "servicePlanId": "servicePlanId-value"

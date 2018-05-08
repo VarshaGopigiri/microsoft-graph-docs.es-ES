@@ -104,9 +104,10 @@ Content-length: 600
 ```
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [event](../resources/event.md).
 ##### <a name="response-1"></a>Respuesta 1
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+Este es un ejemplo de la respuesta, que muestra las propiedades **start** y **end** que usan la zona horaria especificada en el encabezado `Prefer: outlook.timezone`. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
 <!-- {
   "blockType": "response",
+  "name": "create_event_from_user",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
@@ -160,9 +161,19 @@ Content-length: 2197
         "dateTime":"2017-04-15T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
-    "location":{
-        "displayName":"Harry's Bar"
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
     },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
     "recurrence":null,
     "attendees":[
         {
@@ -186,8 +197,213 @@ Content-length: 2197
 }
 ```
 
+
 ##### <a name="request-2"></a>Solicitud 2
-En el segundo ejemplo se muestra cómo crear un evento periódico. El evento se produce de las 10:00 a. m. a las 11:00 a. m., todos los lunes a partir del 4 de septiembre de 2017 hasta el final del año.
+En el siguiente ejemplo de solicitud se especifican tres ubicaciones en donde el organizador y los asistentes pueden asistir a la reunión.
+
+En el cuerpo de la solicitud, proporcione una representación JSON del objeto [event](../resources/event.md).
+<!-- {
+  "blockType": "request",
+  "name": "create_event_from_user_multiple_locations"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+Content-length: 1390
+
+{
+  "subject": "Plan summer company picnic",
+  "body": {
+    "contentType": "HTML",
+    "content": "Let's kick-start this event planning!"
+  },
+  "start": {
+      "dateTime": "2017-08-30T11:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-08-30T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address": "DanaS@contoso.onmicrosoft.com",
+        "name": "Dana Swope"
+      },
+      "type": "Required"
+    },
+    {
+      "emailAddress": {
+        "address": "AlexW@contoso.onmicrosoft.com",
+        "name": "Alex Wilber"
+      },
+      "type": "Required"
+    }
+  ],
+  "location": {
+    "displayName": "Conf Room 3; Fourth Coffee; Home Office",
+    "locationType": "Default"
+  },
+  "locations": [
+    {
+      "displayName": "Conf Room 3"
+    },
+    {
+      "displayName": "Fourth Coffee",
+      "address": {
+        "street": "4567 Main St",
+        "city": "Redmond",
+        "state": "WA",
+        "countryOrRegion": "US",
+        "postalCode": "32008"
+      },
+      "coordinates": {
+        "latitude": 47.672,
+        "longitude": -102.103
+      }
+    },
+    {
+      "displayName": "Home Office"
+    }
+  ]
+
+}
+```
+
+##### <a name="response-2"></a>Respuesta 2
+La respuesta del ejemplo siguiente muestra el evento creado que especifica la información de las tres ubicaciones para la reunión. Debido al encabezado de solicitud `Prefer: outlook.timezone="Pacific Standard Time"`, las propiedades **start** y **end** se expresan en el archivo PST.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_from_user_multiple_locations",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 2985
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "createdDateTime":"2017-08-30T07:06:33.8673345Z",
+  "lastModifiedDateTime":"2017-08-30T07:06:34.5079772Z",
+  "changeKey":"y53lbKh6jkaxHzFwGhgyxgAAz3IKMA==",
+  "categories":[
+
+  ],
+  "originalStartTimeZone":"Pacific Standard Time",
+  "originalEndTimeZone":"Pacific Standard Time",
+  "iCalUId":"04000000820089190544",
+  "reminderMinutesBeforeStart":15,
+  "isReminderOn":true,
+  "hasAttachments":false,
+  "subject":"Plan summer company picnic",
+  "bodyPreview":"Let's kick-start this event planning!",
+  "importance":"normal",
+  "sensitivity":"normal",
+  "isAllDay":false,
+  "isCancelled":false,
+  "isOrganizer":true,
+  "responseRequested":true,
+  "seriesMasterId":null,
+  "showAs":"busy",
+  "type":"singleInstance",
+  "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
+  "onlineMeetingUrl":null,
+  "responseStatus":{
+    "response":"organizer",
+    "time":"0001-01-01T00:00:00Z"
+  },
+  "body":{
+    "contentType":"html",
+    "content":"<html>\r\n<head>\r\n</head>\r\n<body>\r\nLet's kick-start this event planning!\r\n</body>\r\n</html>\r\n"
+  },
+  "start":{
+    "dateTime":"2017-08-30T11:00:00.0000000",
+    "timeZone":"Pacific Standard Time"
+  },
+  "end":{
+    "dateTime":"2017-08-30T12:00:00.0000000",
+    "timeZone":"Pacific Standard Time"
+  },
+  "location":{
+    "displayName":"Conf Room 3; Fourth Coffee; Home Office",
+    "locationType":"default",
+    "uniqueId":"Conf Room 3; Fourth Coffee; Home Office",
+    "uniqueIdType":"private"
+  },
+  "locations":[
+    {
+      "displayName":"Conf Room 3",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    },
+    {
+      "displayName":"Fourth Coffee",
+      "locationType":"default",
+      "uniqueId":"Fourth Coffee",
+      "uniqueIdType":"private",
+      "address":{
+        "type":"unknown",
+        "street":"4567 Main St",
+        "city":"Redmond",
+        "state":"WA",
+        "countryOrRegion":"US",
+        "postalCode":"32008"
+      },
+      "coordinates":{
+        "latitude":47.672,
+        "longitude":-102.103
+      }
+    },
+    {
+      "displayName":"Home Office",
+      "locationType":"default",
+      "uniqueIdType":"unknown"
+    }
+  ],
+  "recurrence":null,
+  "attendees":[
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Dana Swope",
+        "address":"DanaS@contoso.onmicrosoft.com"
+      }
+    },
+    {
+      "type":"required",
+      "status":{
+        "response":"none",
+        "time":"0001-01-01T00:00:00Z"
+      },
+      "emailAddress":{
+        "name":"Alex Wilber",
+        "address":"AlexW@contoso.onmicrosoft.com"
+      }
+    }
+  ],
+  "organizer":{
+    "emailAddress":{
+      "name":"Adele Vance",
+      "address":"AdeleV@contoso.onmicrosoft.com"
+    }
+  }
+}
+```
+
+
+##### <a name="request-3"></a>Solicitud 3
+En el tercer ejemplo se muestra cómo crear un evento periódico. El evento se produce de las 12:00 a las 14:00, todos los lunes a partir del 4 de septiembre de 2017 hasta el final del año.
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -197,17 +413,17 @@ POST https://graph.microsoft.com/v1.0/me/events
 Content-type: application/json
 
 {
-  "subject": "Let's go for coffee",
+  "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon time work for you?"
   },
   "start": {
-      "dateTime": "2017-09-04T10:00:00",
+      "dateTime": "2017-09-04T12:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "end": {
-      "dateTime": "2017-09-04T11:00:00",
+      "dateTime": "2017-09-04T14:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "recurrence": {
@@ -237,7 +453,7 @@ Content-type: application/json
 }
 ```
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [event](../resources/event.md).
-##### <a name="response-2"></a>Respuesta 2
+##### <a name="response-3"></a>Respuesta 3
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
@@ -251,21 +467,21 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('919717da-0460-4cca-a6be-d25382429896')/events/$entity",
-    "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==\"",
-    "id":"AAMkADQwMDI5YT",
-    "createdDateTime":"2017-10-14T07:37:39.0083072Z",
-    "lastModifiedDateTime":"2017-10-14T07:37:40.0239406Z",
-    "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA7WsvGQ==",
+    "@odata.etag":"W/\"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==\"",
+    "id":"AAMkADQwMD",
+    "createdDateTime":"2017-10-07T04:59:12.9698856Z",
+    "lastModifiedDateTime":"2017-10-07T04:59:13.8136423Z",
+    "changeKey":"+T8RDneHMkKe2BGYEaQZ4wAA5a9Acw==",
     "categories":[
 
     ],
     "originalStartTimeZone":"Pacific Standard Time",
     "originalEndTimeZone":"Pacific Standard Time",
-    "iCalUId":"040000008200E00074C5B7101A82E008000000000068AD4FBF44D301000000000000000010000000CA802EEBDE19CB4AB552714F48C7EEFB",
+    "iCalUId":"040000008200E00074C5B7101A82E0080000000028CEBE04293FD3010000000000000000100000009F85AB8AF8ED4D4FAC777FA89954BDB7",
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
-    "subject":"Let's go for coffee",
+    "subject":"Let's go for lunch",
     "bodyPreview":"Does late morning work for you?",
     "importance":"normal",
     "sensitivity":"normal",
@@ -276,7 +492,7 @@ Content-type: application/json
     "seriesMasterId":null,
     "showAs":"busy",
     "type":"seriesMaster",
-    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMDI5YT&exvsurl=1&path=/calendar/item",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
     "responseStatus":{
         "response":"organizer",
@@ -287,16 +503,26 @@ Content-type: application/json
         "content":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes late morning work for you?\r\n</body>\r\n</html>\r\n"
     },
     "start":{
-        "dateTime":"2017-09-04T10:00:00.0000000",
+        "dateTime":"2017-09-04T12:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
     "end":{
-        "dateTime":"2017-09-04T11:00:00.0000000",
+        "dateTime":"2017-09-04T14:00:00.0000000",
         "timeZone":"Pacific Standard Time"
     },
     "location":{
-        "displayName":"Harry's Bar"
+        "displayName":"Harry's Bar",
+        "locationType":"default",
+        "uniqueId":"Harry's Bar",
+        "uniqueIdType":"private"
     },
+    "locations":[
+        {
+            "displayName":"Harry's Bar",
+            "locationType":"default",
+            "uniqueIdType":"unknown"
+        }
+    ],
     "recurrence":{
         "pattern":{
             "type":"weekly",
@@ -335,7 +561,8 @@ Content-type: application/json
             "name":"Alex Wilber",
             "address":"AlexW@contoso.onmicrosoft.com"
         }
-    }
+    },
+    "OnlineMeeting":null
 }
 ```
 
@@ -343,10 +570,9 @@ Content-type: application/json
 ## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

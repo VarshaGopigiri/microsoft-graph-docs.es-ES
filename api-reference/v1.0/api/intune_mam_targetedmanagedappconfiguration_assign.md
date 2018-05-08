@@ -24,7 +24,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,7 +34,7 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|assignments|Colección [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Todavía no documentado|
+|asignaciones|Colección targetedManagedAppPolicyAssignment|Todavía no documentado|
 
 
 

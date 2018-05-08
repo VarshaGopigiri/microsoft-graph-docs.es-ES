@@ -16,7 +16,7 @@
 |[Get drive](../api/drive_get.md) | [drive](drive.md)  |Obtiene las propiedades del objeto drive. |
 |[Create group](../api/group_post_groups.md) |[group](group.md)| Crear un group publicándolo en la colección groups.|
 |[List group](../api/group_list.md) | Colección [group](group.md) |Obtiene la colección de objetos group. |
-|[List organization](../api/organization_list.md) | Colección [organization](organization.md) |Obtiene la colección de objetos organization. |
+|[List organization](../api/organization_get.md) | Colección [organization](organization.md) |Obtiene la colección de objetos organization. |
 |[List subscribedSku](../api/subscribedsku_list.md) | Colección [subscribedSku](subscribedsku.md) |Obtiene la colección de objetos subscribedSku. |
 |[Create user](../api/user_post_users.md) |[user](user.md)| Crea un user publicándolo en la colección users.|
 |[List user](../api/user_list.md) | Colección [user](user.md) |Obtiene la colección de objetos user. |

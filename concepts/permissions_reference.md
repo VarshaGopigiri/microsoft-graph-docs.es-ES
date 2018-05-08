@@ -634,7 +634,9 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 #### <a name="delegated-permissions"></a>Permisos delegados
 
-Ninguno.
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Reports.Read.All_ | Leer todos los informes de uso | Permite a una aplicación leer todos los informes de uso de servicio sin necesidad de que un usuario haya iniciado sesión. Los servicios que proporcionan informes de uso incluyen Office 365 y Azure Active Directory. | Sí |
 
 #### <a name="application-permissions"></a>Permisos de la aplicación
 
@@ -654,6 +656,35 @@ Los permisos de informes solo son válidos para las cuentas profesionales o educ
 * _Reports.Read.All_: leer el informe de detalles de activaciones de Office 365 (`GET /reports/Office365Activations(view='Detail')/content`).
 
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
+
+---
+
+## <a name="security-permissions"></a>Permisos de seguridad
+
+#### <a name="delegated-permissions"></a>Permisos delegados
+
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Leer los eventos de seguridad de la organización | Permite a la aplicación leer los eventos de seguridad de la organización en nombre del usuario que ha iniciado sesión. | Sí  |
+| _SecurityEvents.ReadWrite.All_   | Leer y actualizar los eventos de seguridad de la organización | Permite a la aplicación leer los eventos de seguridad de la organización en nombre del usuario que ha iniciado sesión. También le permite actualizar las propiedades editables de los eventos de seguridad en nombre del usuario que ha iniciado sesión. | Sí  |
+
+#### <a name="application-permissions"></a>Permisos de la aplicación
+
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Leer los eventos de seguridad de la organización | Permite a la aplicación leer los eventos de seguridad de la organización | Sí  |
+| _SecurityEvents.ReadWrite.All_   | Leer y actualizar los eventos de seguridad de la organización | Permite a la aplicación leer los eventos de seguridad de la organización También permite la aplicación actualizar propiedades editables de los eventos de seguridad. | Sí  |
+
+### <a name="remarks"></a>Comentarios
+
+Los permisos de seguridad solo son válidos en las cuentas profesionales o educativas.
+
+### <a name="example-usage"></a>Ejemplos de uso
+
+#### <a name="delegated-and-application"></a>Permisos delegados y de la aplicación
+
+- _SecurityEvents.Read.All_: leer la lista completa de alertas de seguridad de todos los proveedores de seguridad con licencia disponibles para su inquilino (`GET /beta/security/alerts`)
+- _SecurityEvents.Write.All_: actualizar o leer las alertas de seguridad de todos los proveedores de seguridad con licencia disponibles para su inquilino (`PATCH /beta/security/alerts/{id}`)
 
 ---
 
@@ -722,6 +753,36 @@ Los permisos _Shared_ actualmente solo se admiten para las cuentas profesionales
 * _Tasks.Read_: obtener todas las tareas sin completar del buzón de un usuario (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
 * _Tasks.ReadWrite_: actualizar una tarea del buzón de un usuario (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
 * _Tasks.ReadWrite.Shared_: completar una tarea en nombre de otro usuario (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
+
+Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
+
+---
+
+## <a name="terms-of-use-permissions"></a>Permisos de términos de uso
+
+#### <a name="delegated-permissions"></a>Permisos delegados
+
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Agreement.Read.All_ | Leer todos los acuerdos de términos de uso | Permite a la aplicación leer los acuerdos de términos de uso en nombre del usuario que inició sesión. | Sí |
+| _Agreement.ReadWrite.All_ | Leer y escribir todos los acuerdos de términos de uso | Permite a la aplicación leer y escribir los acuerdos de términos de uso en nombre del usuario que inició sesión. | Sí |
+| _AgreementAcceptance.Read_ | Leer los estados de aceptación de los términos de uso del usuario | Permite a la aplicación leer los estados de aceptación de los términos de uso en nombre del usuario que inició sesión. | Sí |
+| _AgreementAcceptance.Read.All_ | Leer los estados de aceptación de los términos de uso del usuario a los que el usuario tiene acceso | Permite a la aplicación leer los estados de aceptación de los términos de uso en nombre del usuario que inició sesión. | Sí |
+
+### <a name="remarks"></a>Comentarios
+
+Todos los permisos anteriores solo son válidos en las cuentas profesionales o educativas.
+
+Para que una aplicación lea o escriba todos los acuerdos o las aceptaciones de acuerdo con permisos delegados, el usuario que ha iniciado sesión debe tener asignado el rol de administrador global, administrador de acceso condicional o administrador de seguridad. Para obtener más información sobre los roles de administrador, vea [Asignar roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+### <a name="example-usage"></a>Ejemplos de uso
+
+#### <a name="delegated"></a>Delegado
+Los siguientes usos son válidos para ambos permisos delegados:
+
+* _Agreement.Read.All_: Leer todos los acuerdos de términos de uso (`GET /beta/agreements`)
+* _Agreement.ReadWrite.All_: Leer y escribir todos los acuerdos de términos de uso (`POST /beta/agreements`)
+* _AgreementAcceptance.Read_: Leer los estados de aceptación de los términos de uso (`GET /beta/me/agreementAcceptances`)
 
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 

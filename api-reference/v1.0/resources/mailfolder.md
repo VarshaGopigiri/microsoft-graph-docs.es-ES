@@ -48,6 +48,7 @@ Los objetos MailFolder en Outlook pueden contener más de un tipo de elementos; 
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |childFolders|Colección [MailFolder](mailfolder.md)|La colección de carpetas secundarias del objeto mailFolder.|
+|messageRules | Colección [messageRule](messagerule.md) | Conjunto de reglas que se aplican a la Bandeja de entrada del usuario. | 
 |messages|Colección [Message](message.md)|La colección de mensajes del objeto mailFolder.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el objeto mailFolder. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el objeto mailFolder. Solo lectura. Admite valores NULL.|
@@ -60,6 +61,7 @@ Aquí tiene una representación JSON del recurso
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
+    "messageRules", 
     "messages",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
@@ -78,6 +80,7 @@ Aquí tiene una representación JSON del recurso
   "unreadItemCount": 1024,
 
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]

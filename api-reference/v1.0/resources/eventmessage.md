@@ -49,11 +49,13 @@ Además de en una convocatoria de reunión, una instancia **eventMessage** se pu
 |changeKey|String|La versión del mensaje.|
 |conversationId|String|El identificador de la conversación a la que pertenece el correo electrónico.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación del mensaje.|
+|flag|[followUpFlag](followupflag.md)|Valor de marca que indica el estado, la fecha de inicio, la fecha de vencimiento o la fecha de finalización del mensaje.|
 |from|[recipient](recipient.md)|El propietario del buzón y el remitente del mensaje.|
 |hasAttachments|Booleano|Indica si el mensaje tiene datos adjuntos.|
 |id|String||
 |importance|String| La importancia del mensaje: `low`, `normal` y `high`.|
 |inferenceClassification|String| Los valores posibles son: `focused` y `other`.|
+|internetMessageHeaders | Colección [internetMessageHeader](internetmessageheader.md) | Colección de encabezados de mensajes, definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que proporcionan los detalles de la ruta en la red que sigue un mensaje desde el remitente hasta el destinatario. Solo lectura.|
 |internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
@@ -106,11 +108,13 @@ Aquí tiene una representación JSON del recurso
   "changeKey": "string",
   "conversationId": "string",
   "createdDateTime": "DateTimeOffset",
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
   "hasAttachments": true,
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "internetMessageHeaders": [{"@odata.type": "microsoft.graph.internetMessageHeader"}],
   "internetMessageId": "String",
   "isDeliveryReceiptRequested": true,
   "isDraft": true,

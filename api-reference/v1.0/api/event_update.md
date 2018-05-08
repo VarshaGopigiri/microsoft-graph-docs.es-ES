@@ -44,16 +44,17 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |body|[ItemBody](../resources/itembody.md)|El cuerpo del mensaje asociado con el evento.|
 |categories|String|Las categorías asociadas con el evento.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|La fecha y hora en que finaliza el evento.<br/><br/>De manera predeterminada, la hora de finalización está en formato UTC. Puede especificar una zona horaria opcional en EndTimeZone, expresar la hora de finalización en esa zona horaria e incluir una diferencia horaria de UTC. Tenga en cuenta que, si usa EndTimeZone, debe especificar también un valor para StartTimeZone.<br/><br/>En este ejemplo, se especifica el 25 de febrero de 2015, a las 9:34 p. m. en hora estándar del Pacífico: "2015-02-25T21:34:00-08:00". |
-|importance|String|Importancia del evento. Los valores posibles son: `Low`, `Normal` y `High`.|
+|importance|String|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isAllDay|Booleano|Se establece en true si el evento dura todo el día.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle el evento al usuario.|
 |location|[Location](../resources/location.md)|La ubicación del evento.|
+|locations|Colección [location](../resources/location.md)|Ubicaciones donde se celebra el evento o en las que se asiste. Las propiedades **location** y **locations** siempre se corresponden entre sí. Si se actualiza la propiedad **location**, se eliminarían las ubicaciones anteriores de la colección **locations** y se reemplazarían por el nuevo valor de **location**. |
 |onlineMeetingUrl|String|Una dirección URL para una reunión en línea.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|El patrón de periodicidad del evento.|
 |reminderMinutesBeforeStart|Int32|El número de minutos antes de la hora de inicio del evento en que se producirá la alerta del recordatorio.|
 |responseRequested|Booleano|Se establece en true si el remitente quiere una respuesta cuando el evento se acepta o rechaza.|
-|sensitivity|String| Los valores posibles son: `Normal`, `Personal`, `Private`, `Confidential`.|
-|showAs|String|El estado que se mostrará. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
+|sensitivity|String| Los valores posibles son: `normal`, `personal`, `private`, `confidential`.|
+|showAs|String|El estado que se mostrará. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[DateTimeTimeZone](../resources/datetimetimezone.md)|La hora de inicio del evento. <br/><br/>De manera predeterminada, la hora de inicio está en formato UTC. Puede especificar una zona horaria opcional en StartTimeZone, expresar la hora de inicio en esa zona horaria e incluir una diferencia horaria de UTC. Tenga en cuenta que, si usa StartTimeZone, debe especificar también un valor para EndTimeZone.<br/><br/>En este ejemplo, se especifica el 25 de febrero de 2015, a las 7:34 p. m. en hora estándar del Pacífico: "2015-02-25T19:34:00-08:00".  |
 |subject|String|El texto de la línea de asunto del evento.|
 
@@ -121,10 +122,9 @@ Content-length: 285
 ## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](../../../concepts/extensibility_open_users.md)
-<!--
-- [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
--->
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
+
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

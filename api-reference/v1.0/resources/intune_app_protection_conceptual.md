@@ -42,7 +42,6 @@ Los siguientes recursos de Graph están disponibles para administrar las directi
 - [Identificador de aplicaciones para móviles](intune_mam_mobileappidentifier.md)
 - [Dominio con proxy](intune_mam_proxieddomain.md)
 - [Configuración de aplicaciones administradas dirigidas](intune_mam_targetedmanagedappconfiguration.md)
-- [Asignación de directiva de administración de aplicaciones objetivo](intune_mam_targetedmanagedapppolicyassignment.md)
 - [Protección de aplicaciones administradas de objetivo](intune_mam_targetedmanagedappprotection.md)
 - [User](intune_mam_user.md)
 - [Resumen de aprendizaje sobre las aplicaciones de Windows Information Protection](intune_wip_windowsinformationprotectionapplearningsummary.md)

@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 | Tipo de permiso                        | Permisos (de menos a más privilegiados) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegado (cuenta profesional o educativa)     | No admitida.                           |
+| Delegado (cuenta profesional o educativa)     | Reports.Read.All                         |
 | Delegado (cuenta personal de Microsoft) | No admitida.                           |
 | Aplicación                            | Reports.Read.All                         |
 
@@ -52,7 +52,7 @@ El archivo CSV tiene los siguientes encabezados de columna.
 
 #### <a name="request"></a>Solicitud
 
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 
 <!-- {
   "blockType": "request",

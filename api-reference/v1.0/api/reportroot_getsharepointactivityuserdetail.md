@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 | Tipo de permiso                        | Permisos (de menos a más privilegiados) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegado (cuenta profesional o educativa)     | No admitida.                           |
+| Delegado (cuenta profesional o educativa)     | Reports.Read.All                         |
 | Delegado (cuenta personal de Microsoft) | No admitida.                           |
 | Aplicación                            | Reports.Read.All                         |
 
@@ -29,16 +29,16 @@ En la URL de la solicitud, especifique uno de los parámetros siguientes con un 
 
 | Parámetro | Tipo   | Descripción                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | cadena | Especifica la duración de tiempo durante la que se agrega el informe. Los valores admitidos para {period_value} son: D7, D30, D90 y D180. Estos valores tienen el formato D*n*, donde *n* representa el número de días durante el que se agrega el informe. |
+| period    | cadena | Especifica la duración de tiempo durante la que se agrega el informe. Los valores admitidos para {period_value} son: D7, D30, D90 y D180. Estos valores tienen el formato D*n*, donde *n* representa el número de días durante los que se agrega el informe. |
 | date      | Fecha   | Especifica la fecha en que quiere ver los usuarios que realizaron alguna actividad. {date_value} necesita tener el formato de AAAA-MM-DD. Como este informe solo está disponible para los últimos 30 días, {date_value} tiene que ser una fecha de ese intervalo. |
 
 > **Nota:** Necesita establecer un período o una fecha en la URL.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre          | Descripción               |
-| :------------ | :------------------------ |
-| Authorization | {token} de portador. Obligatorio. |
+| Nombre          | Descripción                              |
+| :------------ | :--------------------------------------- |
+| Authorization | {token} de portador. Obligatorio.                |
 | If-None-Match | Si se incluye el encabezado de la solicitud y la eTag proporcionada coincide con la etiqueta actual del archivo, se devuelve un código de respuesta `304 Not Modified`. Opcional. |
 
 ## <a name="response"></a>Respuesta

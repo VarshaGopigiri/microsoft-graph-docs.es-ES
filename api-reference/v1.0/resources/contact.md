@@ -44,6 +44,7 @@ Este recurso admite:
 |departamento|String|El departamento del contacto.|
 |displayName|String|El nombre para mostrar del contacto.|
 |emailAddresses|Colección [EmailAddress](emailaddress.md)|Las direcciones de correo electrónico del contacto.|
+|flag|[followUpFlag](followupflag.md)|Valor de marca que indica el estado, la fecha de inicio, la fecha de vencimiento o la fecha de finalización del mensaje.|
 |fileAs|String|El nombre con el que se ha archivado el contacto.|
 |generation|String|La generación del contacto.|
 |givenName|String|El nombre del contacto.|
@@ -109,6 +110,7 @@ Aquí tiene una representación JSON del recurso
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
+  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

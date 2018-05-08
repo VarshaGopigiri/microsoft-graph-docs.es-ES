@@ -49,28 +49,29 @@ Este recurso admite:
 |hasAttachments|Booleano|Se establece como true si el evento tiene datos adjuntos.|
 |iCalUId|String|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes.|
 |id|Cadena| Solo lectura.|
-|importance|String|Importancia del evento. Los valores posibles son: `Low`, `Normal` y `High`.|
+|importance|String|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isAllDay|Booleano|Se establece como true si el evento dura todo el día.|
 |isCancelled|Booleano|Se establece como true si el evento ha sido cancelado.|
 |isOrganizer|Booleano|Se establece como true si el remitente del mensaje también es el organizador.|
 |isReminderOn|Booleano|Se establece como true si se crea una alerta para recordarle el evento al usuario.|
 |lastModifiedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |location|[ubicación](location.md)|La ubicación del evento.|
+|locations|Colección [location](location.md)|Ubicaciones donde se celebra el evento o en las que se asiste. Las propiedades **location** y **locations** siempre se corresponden entre sí. Si se actualiza la propiedad **location**, se eliminarían las ubicaciones anteriores de la colección **locations** y se reemplazarían por el nuevo valor de **location**. |
 |onlineMeetingUrl|String|Una dirección URL para una reunión en línea.|
 |organizador|[recipient](recipient.md)|El organizador del evento.|
-|originalEndTimeZone|String|La zona horaria de finalización que se estableció cuando se creó el evento. Un valor de `tzone://Microsoft/Custom` indica que la zona horaria personalizada legado se estableció en el cliente de escritorio de Outlook.|
+|originalEndTimeZone|Cadena|Zona horaria de finalización que se estableció cuando se creó el evento. Un valor de `tzone://Microsoft/Custom` indica que se ha establecido una zona horaria heredada en el cliente de escritorio de Outlook.|
 |originalStart|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|String|La zona horaria de inicio que se estableció cuando se creó el evento. Un valor de `tzone://Microsoft/Custom` indica que se ha establecido una zona horaria legado en el cliente de escritorio de Outlook. |
 |periodicidad|[patternedRecurrence](patternedrecurrence.md)|El patrón de periodicidad del evento.|
 |reminderMinutesBeforeStart|Int32|El número de minutos antes de la hora de inicio del evento en que se producirá la alerta del recordatorio.|
 |responseRequested|Booleano|Se establece como true si el remitente quiere una respuesta cuando el evento se acepta o se rechaza.|
 |responseStatus|[responseStatus](responsestatus.md)|Indica el tipo de respuesta que se envía en respuesta a un mensaje de evento.|
-|confidencialidad|String| Los valores posibles son: `Normal`, `Personal`, `Private` y `Confidential`.|
+|confidencialidad|String| Los valores posibles son: `normal`, `personal`, `private` y `confidential`.|
 |seriesMasterId|String|Las categorías asignadas al elemento.|
-|showAs|String|El estado que se mostrará. Los valores posibles son: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` y `Unknown`.|
+|showAs|String|El estado que se mostrará. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |inicio|[dateTimeTimeZone](datetimetimezone.md)|La fecha, la hora y la zona horaria en que comienza el evento.|
 |subject|String|El texto de la línea de asunto del evento.|
-|type|String|El tipo de evento. Los valores posibles son: `SingleInstance`, `Occurrence`, `Exception` y `SeriesMaster`. Solo lectura.|
+|type|String|El tipo de evento. Los valores posibles son: `singleInstance`, `occurrence`, `exception` y `seriesMaster`. Solo lectura.|
 |webLink|String|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
@@ -120,6 +121,7 @@ Aquí tiene una representación JSON del recurso
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

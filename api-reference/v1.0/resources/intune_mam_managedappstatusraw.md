@@ -11,17 +11,14 @@ Hereda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |:---|:---|:---|
 |[Enumerar managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|Colección [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Enumere las propiedades y las relaciones de los objetos [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
 |[Obtener managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Lea las propiedades y las relaciones del objeto [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Crear managedAppStatusRaw](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Cree un objeto [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Eliminar managedAppStatusRaw](../api/intune_mam_managedappstatusraw_delete.md)|Ninguna|Elimina un [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Actualizar managedAppStatusRaw](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Actualice las propiedades de un objeto [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|cadena|Nombre descriptivo del informe de estado. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|id|cadena|Clave de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|versión|cadena|Versión de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|contenido|[Json](../resources/intune_mam_json.md)|Contenido del informe de estado.|
+|displayName|String|Nombre descriptivo del informe de estado. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|id|String|Clave de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|version|String|Versión de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|content|[Json](../resources/intune_mam_json.md)|Contenido del informe de estado.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

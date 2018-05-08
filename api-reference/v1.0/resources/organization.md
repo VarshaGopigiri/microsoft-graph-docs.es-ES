@@ -10,8 +10,8 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener organización](../api/organization_get.md) | [organization](organization.md) |Lea las propiedades y las relaciones del objeto organization.|
-|[Actualizar](../api/organization_update.md) | [organization](organization.md)  |Actualice el objeto organization. (Solo se pueden actualizar las propiedades **marketingNotificationMails** y **technicalNotificationMails**). |
-|**Extensiones abiertas**| | |
+|[Actualizar](../api/organization_update.md) | [organization](organization.md)  |Actualizar el objeto organization. Las únicas propiedades que pueden actualizarse son: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** y **privacyProfile**. |
+|**Extensiones abiertas**| | ||**Extensiones abiertas**| | |
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
 |[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
 |**Extensiones de esquema**| | |
@@ -33,7 +33,8 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | marketingNotificationEmails          | Colección String                                                 | No admite valores NULL.                                                                                                                                                                                                                                                                        |
 | objectType                           | String                                                            | Una cadena que identifica el tipo de objeto. Para los inquilinos, el valor es siempre "Company".                                                                                                                                                                                                 |
 | postalCode                           | String                                                            | Código postal de la dirección de la organización.                                                                                                                                                                                                                                      |
-| preferredLanguage                    | String                                                            | El idioma preferido de la organización. Debe seguir el código ISO 639-1. Por ejemplo, "en".                                                                                                                                                                                         |
+| preferredLanguage                    | String                                                            | El idioma preferido de la organización. Debe seguir el código ISO 639-1; por ejemplo, "es".                                                                                                                                                                                         |
+| privacyProfile                       | [privacyProfile](privacyprofile.md)                               | Perfil de privacidad de una organización.                                                                                                                                                                                                                                              |
 | provisionedPlans                     | Colección [ProvisionedPlan](provisionedplan.md)                  | No admite valores NULL.                                                                                                                                                                                                                                                                        |
 | provisioningErrors                   | Colección ProvisioningError                                      | No admite valores NULL.                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | Colección String                                                 |                                                                                                                                                                                                                                                                                      |
@@ -76,6 +77,7 @@ Aquí tiene una representación JSON del recurso
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],
