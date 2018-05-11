@@ -1,20 +1,20 @@
-# <a name="reportroot-getoffice365activationcounts"></a><span data-ttu-id="17b55-101">reportRoot: getOffice365ActivationCounts</span><span class="sxs-lookup"><span data-stu-id="17b55-101">reportRoot: getOffice365ActivationCounts</span></span>
+# <a name="reportroot-getoffice365activationcounts"></a><span data-ttu-id="01b35-101">reportRoot: getOffice365ActivationCounts</span><span class="sxs-lookup"><span data-stu-id="01b35-101">reportRoot: getOffice365ActivationCounts</span></span>
 
-<span data-ttu-id="17b55-102">Obtiene el número de activaciones de Office 365 en dispositivos y equipos de escritorio.</span><span class="sxs-lookup"><span data-stu-id="17b55-102">Get the count of Office 365 activations on desktops and devices.</span></span>
+<span data-ttu-id="01b35-102">Obtiene el número de activaciones de Office 365 en dispositivos y equipos de escritorio.</span><span class="sxs-lookup"><span data-stu-id="01b35-102">Get the count of Office 365 activations on desktops and devices.</span></span>
 
-> <span data-ttu-id="17b55-103">**Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Activaciones de Microsoft Office]((https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)).</span><span class="sxs-lookup"><span data-stu-id="17b55-103">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations]((https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)).</span></span>
+> <span data-ttu-id="01b35-103">**Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Activaciones de Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span><span class="sxs-lookup"><span data-stu-id="01b35-103">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="17b55-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="17b55-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="01b35-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="01b35-104">Permissions</span></span>
 
-<span data-ttu-id="17b55-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="17b55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="01b35-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="01b35-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-| <span data-ttu-id="17b55-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="17b55-107">Permission type</span></span>                        | <span data-ttu-id="17b55-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="17b55-108">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="01b35-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="01b35-107">Permission type</span></span>                        | <span data-ttu-id="01b35-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="01b35-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="17b55-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="17b55-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="17b55-110">No admitida.</span><span class="sxs-lookup"><span data-stu-id="17b55-110">Not supported.</span></span>                           |
-| <span data-ttu-id="17b55-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="17b55-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17b55-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="17b55-112">Not supported.</span></span>                           |
-| <span data-ttu-id="17b55-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="17b55-113">Application</span></span>                            | <span data-ttu-id="17b55-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="17b55-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="01b35-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="01b35-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="01b35-110">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="01b35-110">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="01b35-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="01b35-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01b35-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="01b35-112">Not supported.</span></span>                           |
+| <span data-ttu-id="01b35-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="01b35-113">Application</span></span>                            | <span data-ttu-id="01b35-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="01b35-114">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="17b55-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="17b55-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="01b35-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="01b35-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -22,34 +22,34 @@
 GET /reports/getOffice365ActivationCounts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="17b55-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="17b55-116">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="01b35-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="01b35-116">Request headers</span></span>
 
-| <span data-ttu-id="17b55-117">Nombre</span><span class="sxs-lookup"><span data-stu-id="17b55-117">Name</span></span>          | <span data-ttu-id="17b55-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="17b55-118">Description</span></span>                              |
+| <span data-ttu-id="01b35-117">Nombre</span><span class="sxs-lookup"><span data-stu-id="01b35-117">Name</span></span>          | <span data-ttu-id="01b35-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="01b35-118">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="17b55-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="17b55-119">Authorization</span></span> | <span data-ttu-id="17b55-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="17b55-p102">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="17b55-122">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="17b55-122">if-none-match</span></span> | <span data-ttu-id="17b55-123">Si se incluye el encabezado de la solicitud y la eTag proporcionada coincide con la etiqueta actual del archivo, se devuelve un código de respuesta `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="17b55-123">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `304 Not Modified` response is returned.</span></span> <span data-ttu-id="17b55-124">Opcional.</span><span class="sxs-lookup"><span data-stu-id="17b55-124">Optional.</span></span> |
+| <span data-ttu-id="01b35-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="01b35-119">Authorization</span></span> | <span data-ttu-id="01b35-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="01b35-p102">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="01b35-122">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="01b35-122">If-None-Match</span></span> | <span data-ttu-id="01b35-123">Si se incluye el encabezado de la solicitud y la eTag proporcionada coincide con la etiqueta actual del archivo, se devuelve un código de respuesta `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="01b35-123">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="01b35-124">Opcional.</span><span class="sxs-lookup"><span data-stu-id="01b35-124">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="17b55-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="17b55-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="01b35-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="01b35-125">Response</span></span>
 
-<span data-ttu-id="17b55-126">Si se ejecuta correctamente, este método devuelve una respuesta `302 Found` que redirige a una URL de descarga con autenticación previa para el informe.</span><span class="sxs-lookup"><span data-stu-id="17b55-126">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="17b55-127">La URL se encuentra en el encabezado `Location` de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="17b55-127">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="01b35-126">Si se ejecuta correctamente, este método devuelve una respuesta `302 Found` que redirige a una URL de descarga con autenticación previa para el informe.</span><span class="sxs-lookup"><span data-stu-id="01b35-126">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="01b35-127">La URL se encuentra en el encabezado `Location` de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="01b35-127">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="17b55-128">Las URL de descarga con autenticación previa solo son válidas durante un breve período de tiempo (unos minutos) y no necesitan un encabezado `Authorization` para descargarlas.</span><span class="sxs-lookup"><span data-stu-id="17b55-128">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
+<span data-ttu-id="01b35-128">Las URL de descarga con autenticación previa solo son válidas durante un breve período de tiempo (unos minutos) y no necesitan un encabezado `Authorization` para descargarlas.</span><span class="sxs-lookup"><span data-stu-id="01b35-128">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="17b55-129">El archivo CSV tiene los siguientes encabezados de columna.</span><span class="sxs-lookup"><span data-stu-id="17b55-129">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="01b35-129">El archivo CSV tiene los siguientes encabezados de columna.</span><span class="sxs-lookup"><span data-stu-id="01b35-129">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="17b55-130">Fecha de actualización del informe</span><span class="sxs-lookup"><span data-stu-id="17b55-130">Report Refresh Date</span></span>
-- <span data-ttu-id="17b55-131">Tipo de producto</span><span class="sxs-lookup"><span data-stu-id="17b55-131">Product External Content Type</span></span>
-- <span data-ttu-id="17b55-132">Windows</span><span class="sxs-lookup"><span data-stu-id="17b55-132">Windows</span></span>
-- <span data-ttu-id="17b55-133">Mac</span><span class="sxs-lookup"><span data-stu-id="17b55-133">"mac"</span></span>
-- <span data-ttu-id="17b55-134">Android</span><span class="sxs-lookup"><span data-stu-id="17b55-134">Android</span></span>
-- <span data-ttu-id="17b55-135">iOS</span><span class="sxs-lookup"><span data-stu-id="17b55-135">iOS</span></span>
-- <span data-ttu-id="17b55-136">Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="17b55-136">Windows 10 Mobile</span></span>
+- <span data-ttu-id="01b35-130">Fecha de actualización del informe</span><span class="sxs-lookup"><span data-stu-id="01b35-130">Report Refresh Date</span></span>
+- <span data-ttu-id="01b35-131">Tipo de producto</span><span class="sxs-lookup"><span data-stu-id="01b35-131">Product Type</span></span>
+- <span data-ttu-id="01b35-132">Windows</span><span class="sxs-lookup"><span data-stu-id="01b35-132">Windows</span></span>
+- <span data-ttu-id="01b35-133">Mac</span><span class="sxs-lookup"><span data-stu-id="01b35-133">Mac</span></span>
+- <span data-ttu-id="01b35-134">Android</span><span class="sxs-lookup"><span data-stu-id="01b35-134">Android</span></span>
+- <span data-ttu-id="01b35-135">iOS</span><span class="sxs-lookup"><span data-stu-id="01b35-135">iOS</span></span>
+- <span data-ttu-id="01b35-136">Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="01b35-136">Windows 10 Mobile</span></span>
 
-## <a name="example"></a><span data-ttu-id="17b55-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="17b55-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="01b35-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="01b35-137">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="17b55-138">Solicitud</span><span class="sxs-lookup"><span data-stu-id="17b55-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="01b35-138">Solicitud</span><span class="sxs-lookup"><span data-stu-id="01b35-138">Request</span></span>
 
-<span data-ttu-id="17b55-139">Este es un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="17b55-139">The following is an example of making the request in ASP.NET that uses the TokenHelper file:</span></span>
+<span data-ttu-id="01b35-139">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="01b35-139">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -60,9 +60,9 @@ GET /reports/getOffice365ActivationCounts
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationCounts
 ```
 
-#### <a name="response"></a><span data-ttu-id="17b55-140">Respuesta</span><span class="sxs-lookup"><span data-stu-id="17b55-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="01b35-140">Respuesta</span><span class="sxs-lookup"><span data-stu-id="01b35-140">Response</span></span>
 
-<span data-ttu-id="17b55-141">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="17b55-141">Here is an example of the response.</span></span>
+<span data-ttu-id="01b35-141">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="01b35-141">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -72,7 +72,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="17b55-142">Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema siguiente.</span><span class="sxs-lookup"><span data-stu-id="17b55-142">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="01b35-142">Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema siguiente.</span><span class="sxs-lookup"><span data-stu-id="01b35-142">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,37 +1,39 @@
-# <a name="get-organization"></a><span data-ttu-id="1d006-101">Get organization</span><span class="sxs-lookup"><span data-stu-id="1d006-101">Get organization</span></span>
+# <a name="get-organization"></a><span data-ttu-id="68fdd-101">Get organization</span><span class="sxs-lookup"><span data-stu-id="68fdd-101">Get organization</span></span>
 
-<span data-ttu-id="1d006-102">Recupera las propiedades y relaciones de la organización actualmente autenticada.</span><span class="sxs-lookup"><span data-stu-id="1d006-102">Retrieve the properties and relationships of currently authenticated organization.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1d006-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="1d006-103">Permissions</span></span>
-<span data-ttu-id="1d006-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="1d006-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="68fdd-102">Recupera las propiedades y relaciones de la organización actualmente autenticada.</span><span class="sxs-lookup"><span data-stu-id="68fdd-102">Retrieve the properties and relationships of currently authenticated organization.</span></span>
+## <a name="permissions"></a><span data-ttu-id="68fdd-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="68fdd-103">Permissions</span></span>
+<span data-ttu-id="68fdd-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="68fdd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="1d006-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="1d006-106">Permission type</span></span>      | <span data-ttu-id="1d006-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="1d006-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="68fdd-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="68fdd-106">Permission type</span></span>      | <span data-ttu-id="68fdd-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="68fdd-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1d006-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="1d006-108">Delegated (work or school account)</span></span> | <span data-ttu-id="1d006-109">No admitida.</span><span class="sxs-lookup"><span data-stu-id="1d006-109">Not supported.</span></span>    |
-|<span data-ttu-id="1d006-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1d006-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d006-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="1d006-111">Not supported.</span></span>    |
-|<span data-ttu-id="1d006-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="1d006-112">Application</span></span> | <span data-ttu-id="1d006-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="1d006-113">Not supported.</span></span> |
+|<span data-ttu-id="68fdd-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="68fdd-108">Delegated (work or school account)</span></span> | <span data-ttu-id="68fdd-109">User.Read, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68fdd-109">User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>   |
+|<span data-ttu-id="68fdd-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="68fdd-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="68fdd-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="68fdd-111">Not supported.</span></span>    |
+|<span data-ttu-id="68fdd-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="68fdd-112">Application</span></span> | <span data-ttu-id="68fdd-113">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="68fdd-113">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1d006-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="1d006-114">HTTP request</span></span>
+> <span data-ttu-id="68fdd-114">Nota: Las aplicaciones que tienen el permiso User.Read solamente pueden leer las propiedades *id*, *displayName* y *verifiedDomains* de la organización.</span><span class="sxs-lookup"><span data-stu-id="68fdd-114">Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.</span></span>  <span data-ttu-id="68fdd-115">El resto de propiedades devolverá valores `null`.</span><span class="sxs-lookup"><span data-stu-id="68fdd-115">All other properties will return with `null` values.</span></span> <span data-ttu-id="68fdd-116">Para leer todas las propiedades, use Directory.Read.All.</span><span class="sxs-lookup"><span data-stu-id="68fdd-116">To read all properties, use Directory.Read.All.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="68fdd-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="68fdd-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /organization
 
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1d006-115">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="1d006-115">Optional query parameters</span></span>
-<span data-ttu-id="1d006-116">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1d006-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1d006-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="1d006-117">Request headers</span></span>
-| <span data-ttu-id="1d006-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="1d006-118">Name</span></span>       | <span data-ttu-id="1d006-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="1d006-119">Type</span></span> | <span data-ttu-id="1d006-120">Descripción</span><span class="sxs-lookup"><span data-stu-id="1d006-120">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="68fdd-118">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="68fdd-118">Optional query parameters</span></span>
+<span data-ttu-id="68fdd-119">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="68fdd-119">This method supports the [OData Query Parameters](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="68fdd-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="68fdd-120">Request headers</span></span>
+| <span data-ttu-id="68fdd-121">Nombre</span><span class="sxs-lookup"><span data-stu-id="68fdd-121">Name</span></span>       | <span data-ttu-id="68fdd-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="68fdd-122">Type</span></span> | <span data-ttu-id="68fdd-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="68fdd-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="1d006-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1d006-121">Authorization</span></span>  | <span data-ttu-id="1d006-122">string</span><span class="sxs-lookup"><span data-stu-id="1d006-122">string</span></span>  | <span data-ttu-id="1d006-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="1d006-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="68fdd-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="68fdd-124">Authorization</span></span>  | <span data-ttu-id="68fdd-125">string</span><span class="sxs-lookup"><span data-stu-id="68fdd-125">string</span></span>  | <span data-ttu-id="68fdd-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="68fdd-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1d006-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="1d006-125">Request body</span></span>
-<span data-ttu-id="1d006-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="1d006-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="68fdd-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="68fdd-128">Request body</span></span>
+<span data-ttu-id="68fdd-129">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="68fdd-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1d006-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1d006-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="68fdd-130">Respuesta</span><span class="sxs-lookup"><span data-stu-id="68fdd-130">Response</span></span>
 
-<span data-ttu-id="1d006-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [organization](../resources/organization.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1d006-128">If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1d006-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="1d006-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1d006-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="1d006-130">Request</span></span>
-<span data-ttu-id="1d006-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="1d006-131">Here is an example of the request.</span></span>
+<span data-ttu-id="68fdd-131">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [organization](../resources/organization.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="68fdd-131">If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="68fdd-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="68fdd-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="68fdd-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="68fdd-133">Request</span></span>
+<span data-ttu-id="68fdd-134">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="68fdd-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_organization"
@@ -39,8 +41,8 @@ GET /organization
 ```http
 GET https://graph.microsoft.com/v1.0/organization
 ```
-##### <a name="response"></a><span data-ttu-id="1d006-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1d006-132">Response</span></span>
-<span data-ttu-id="1d006-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="1d006-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="68fdd-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="68fdd-135">Response</span></span>
+<span data-ttu-id="68fdd-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="68fdd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
