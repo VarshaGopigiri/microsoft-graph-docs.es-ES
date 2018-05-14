@@ -35,7 +35,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|String|Identificador único de la entidad.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_companyterms_deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
 
 
 

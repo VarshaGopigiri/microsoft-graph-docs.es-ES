@@ -18,7 +18,7 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 |descripción|String|Descripción.|
 |publicador|String|Publicador.|
 |publishedDateTime|DateTimeOffset|La fecha y la hora en que se publicó el libro electrónico.|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Cubierta de libro.|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Cubierta de libro.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico.|
 |informationUrl|String|La dirección URL para obtener más información.|

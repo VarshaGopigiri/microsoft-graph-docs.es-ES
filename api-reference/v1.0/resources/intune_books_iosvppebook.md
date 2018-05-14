@@ -23,11 +23,11 @@ Hereda de [managedEBook](../resources/intune_books_managedebook.md)
 |description|String|Descripción. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publicador|String|Publicador. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publishedDateTime|DateTimeOffset|La fecha y la hora en que se publicó el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Cubierta de libro. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Cubierta de libro. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|String|Dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|Dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|La dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|String|La dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|El Id. de token de VPP.|
 |appleId|String|El ID de Apple asociado a un token de VPP.|
 |vppOrganizationName|String|El nombre de la organización del token de VPP.|

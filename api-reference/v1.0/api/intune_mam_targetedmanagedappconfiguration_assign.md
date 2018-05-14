@@ -34,7 +34,7 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|asignaciones|Colección targetedManagedAppPolicyAssignment|Todavía no documentado|
+|asignaciones|Colección [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Todavía no documentado|
 
 
 

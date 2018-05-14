@@ -13,7 +13,7 @@ Para utilizar Microsoft Graph en la aplicación PHP, debe mostrar la página de 
 
 Para comenzar, necesitará: 
 
-- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
+- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - PHP (versión 5.5.9 o superior)
 - [Composer](https://getcomposer.org/)
 
@@ -177,5 +177,5 @@ Compruebe la Bandeja de entrada de la dirección de correo electrónico que conf
 
 
 ## <a name="see-also"></a>Recursos adicionales
-* [Protocolos de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-protocols/)
-* [Tokens de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-tokens/)
+* [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+* [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

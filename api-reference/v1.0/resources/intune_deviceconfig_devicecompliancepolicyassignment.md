@@ -16,7 +16,7 @@ Asignación de directivas de cumplimiento de dispositivos.
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|cadena|Clave de la entidad.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|Destino de la asignación de directivas de cumplimiento|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Destino de la asignación de directivas de cumplimiento|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

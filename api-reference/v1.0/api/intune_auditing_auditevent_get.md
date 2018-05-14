@@ -22,7 +22,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
@@ -47,7 +47,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1598
+Content-Length: 1535
 
 {
   "value": {
@@ -58,9 +58,6 @@ Content-Length: 1598
     "actor": {
       "@odata.type": "microsoft.graph.auditActor",
       "type": "Type value",
-      "permissions": [
-        "Permissions value"
-      ],
       "userPermissions": [
         "User Permissions value"
       ],

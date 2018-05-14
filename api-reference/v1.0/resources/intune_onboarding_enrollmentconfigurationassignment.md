@@ -16,7 +16,7 @@ Todavía no documentado
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|cadena|Todavía no documentado|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|Todavía no documentado|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Todavía no documentado|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

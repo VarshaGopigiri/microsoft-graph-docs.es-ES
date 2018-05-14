@@ -16,8 +16,8 @@ intuneBrand contiene datos que se usan para personalizar las aplicaciones del Po
 |onlineSupportSiteName|Cadena|Nombre para mostrar del sitio del departamento de soporte técnico de la empresa u organización.|
 |themeColor|[rgbColor](../resources/intune_onboarding_rgbcolor.md)|Color de tema principal utilizado en el portal web y las aplicaciones del Portal de empresa.|
 |showLogo|Booleano|Booleano que indica si se muestran o no las imágenes de logotipo proporcionadas por el administrador.|
-|lightBackgroundLogo|[mimeContent](../resources/intune_onboarding_mimecontent.md)|Imagen de logotipo que se muestra en las aplicaciones del Portal de empresa con un fondo claro detrás del logotipo.|
-|darkBackgroundLogo|[mimeContent](../resources/intune_onboarding_mimecontent.md)|Imagen de logotipo que se muestra en las aplicaciones del Portal de empresa con un fondo oscuro detrás del logotipo.|
+|lightBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Imagen de logotipo que se muestra en las aplicaciones del Portal de empresa con un fondo claro detrás del logotipo.|
+|darkBackgroundLogo|[mimeContent](../resources/intune_shared_mimecontent.md)|Imagen de logotipo que se muestra en las aplicaciones del Portal de empresa con un fondo oscuro detrás del logotipo.|
 |showNameNextToLogo|Booleano|Booleano que indica si se muestra o no el nombre para mostrar proporcionado por el administrador.|
 |showDisplayNameNextToLogo|Booleano|Booleano que indica si se muestra o no el nombre para mostrar proporcionado por el administrador.|
 

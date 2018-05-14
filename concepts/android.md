@@ -19,7 +19,7 @@ Para usar Microsoft Graph en su aplicación para Android, debe mostrar la págin
 
 Para comenzar, necesitará: 
 
-- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
+- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - Android Studio 2.0 o una versión más reciente
 
 
@@ -74,7 +74,7 @@ Registre una aplicación en el portal de registro de aplicaciones de Microsoft. 
 
     b. Seleccione **Agregar plataforma** y **Aplicación nativa**.
 
-      > **Nota**: El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con un valor de `msalENTER_YOUR_CLIENT_ID://auth`. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
+      > **Nota**: El Portal de registro de aplicaciones proporciona un URI de redireccionamiento con un valor de `msalENTER_YOUR_CLIENT_ID://auth`. No use los URI de redireccionamiento integrados. El [Ejemplo de conexión para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa la biblioteca de autenticación de MSAL, que necesita el URI de redireccionamiento. Si usa una [biblioteca de terceros compatible](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) o la biblioteca de **ADAL**, necesita usar los URI de redireccionamiento integrados.
       
       c. Agregue los permisos delegados. Necesitará **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** y **User.ReadBasic.All**. 
 
@@ -243,7 +243,7 @@ La aplicación de ejemplo de conexión tiene el botón **Conectar** en la activi
 
 Es necesario que prepare la aplicación para controlar la respuesta del servidor de autorización, que contiene un código que se puede intercambiar por un token de acceso.
 
-1. Necesita indicarle al sistema Android que la aplicación de conexión admite solicitudes a la URL de redireccionamiento configurada en el registro de la aplicación. Para hacerlo, abra el archivo de recursos de cadenas **strings.xml** y agregue los siguientes elementos secundarios al elemento **\<application/\>**de proyectos.
+1. Necesita indicarle al sistema Android que la aplicación de conexión admite solicitudes a la URL de redireccionamiento configurada en el registro de la aplicación. Para hacerlo, abra el archivo de recursos de cadenas **strings.xml** y agregue los siguientes elementos secundarios al elemento **\<application/\>** de proyectos.
 
    ```xml
    <!DOCTYPE resources [
@@ -498,7 +498,7 @@ El [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgra
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Llamar a Microsoft Graph con la API de REST de Microsoft Graph
 
-La [API de REST de Microsoft Graph](http://developer.microsoft.com/es-ES/graph/docs) expone varias API de servicios de nube de Microsoft a través de un único punto de conexión de la API de REST. Siga estos pasos para utilizar la API de REST.
+La [API de REST de Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) expone varias API de servicios de nube de Microsoft a través de un único punto de conexión de la API de REST. Siga estos pasos para utilizar la API de REST.
 
 1. Conceda permisos de Internet a la aplicación. Abra el archivo **AndroidManifest** y agregue el siguiente elemento secundario al elemento de manifiesto.
     
@@ -598,6 +598,6 @@ Compruebe la Bandeja de entrada de la dirección de correo electrónico que conf
 ## <a name="see-also"></a>Recursos adicionales
 
 - [SDK de Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/es-ES/graph/docs/concepts/auth_overview)
-- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/es-ES/graph/docs/concepts/auth_v2_user)
-- [Obtener acceso sin un usuario](https://developer.microsoft.com/es-ES/graph/docs/concepts/auth_v2_service)
+- [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obtener acceso en nombre de un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obtener acceso sin un usuario](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

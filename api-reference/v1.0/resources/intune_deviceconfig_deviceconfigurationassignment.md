@@ -16,7 +16,7 @@ La entidad de asignación de la configuración de dispositivo asigna un grupo AA
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|cadena|La clave de la asignación.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|El destino de la tarea para la configuración del dispositivo.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|El destino de la tarea para la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

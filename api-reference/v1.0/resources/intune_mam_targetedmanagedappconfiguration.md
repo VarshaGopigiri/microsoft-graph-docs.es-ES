@@ -35,7 +35,7 @@ Hereda de [managedAppConfiguration](../resources/intune_mam_managedappconfigurat
 |:---|:---|:---|
 |aplicaciones|Colección [managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Lista de aplicaciones en las que se implementará la directiva.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Propiedad de navegación para el resumen de implementación de la configuración.|
-|asignaciones|Colección targetedManagedAppPolicyAssignment|Propiedad de navegación a la lista de inclusión y exclusión de los grupos en los que se implementará la directiva.|
+|asignaciones|Colección [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Propiedad de navegación a la lista de inclusión y exclusión de los grupos en los que se implementará la directiva.|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.

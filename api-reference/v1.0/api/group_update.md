@@ -29,8 +29,9 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
+|allowExternalSenders|Boolean|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
 |autoSubscribeNewMembers|Boolean|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico.|
-|descripción|String|Una descripción opcional del grupo. |
+|description|String|Una descripción opcional del grupo. |
 |displayName|String|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
 |groupTypes|Colección string|Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad.|
 |mailEnabled|Boolean|Especifica si el grupo está habilitado para correo. Si la propiedad **securityEnabled** también es **true**, el grupo es un grupo de seguridad habilitado para correo electrónico; en caso contrario, el grupo es un grupo de distribución de Microsoft Exchange.|
@@ -49,7 +50,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `204 
 ## <a name="example"></a>Ejemplo
 
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "update_group"
@@ -72,7 +73,7 @@ Content-length: 211
 ```
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
+Aquí tiene un ejemplo de la respuesta.
 >**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",

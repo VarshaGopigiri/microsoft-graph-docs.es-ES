@@ -24,7 +24,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevice
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
@@ -49,7 +49,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4878
+Content-Length: 4920
 
 {
   "value": {
@@ -57,6 +57,7 @@ Content-Length: 4878
     "id": "705c034c-034c-705c-4c03-5c704c035c70",
     "userId": "User Id value",
     "deviceName": "Device Name value",
+    "managedDeviceOwnerType": "company",
     "deviceActionResults": [
       {
         "@odata.type": "microsoft.graph.deviceActionResult",

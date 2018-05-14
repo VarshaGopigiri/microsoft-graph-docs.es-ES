@@ -16,7 +16,7 @@ Una entidad termsAndConditionsAssignment representa la asignación de una direct
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|Identificador único de la entidad.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_companyterms_deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

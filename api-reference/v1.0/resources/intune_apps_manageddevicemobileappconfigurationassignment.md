@@ -16,7 +16,7 @@ Contiene las propiedades usadas para asignar una configuración de la aplicació
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|cadena|Identificador único de la entidad.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_apps_deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignado la directiva de TyC.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignado la directiva de TyC.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
