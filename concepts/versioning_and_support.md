@@ -41,7 +41,7 @@ Los siguientes son ejemplos de cambios que son compatibles con versiones anterio
 Actualmente, existen las siguientes versiones de la API de Microsoft Graph.
 
 ### <a name="beta-version"></a>Versión beta
-La versión beta de la API de Microsoft Graph contiene características que se encuentran en su versión preliminar, según se expone en `https://graph.microsoft.com/beta`. Para consultar documentación sobre la API beta, vea [Referencia del punto de conexión de Microsoft Graph beta](../api-reference/beta/beta-overview.md). Cada cierto tiempo, se producirán cambios importantes en la versión beta. Por tanto, no establezca dependencias de producción en las API /beta.
+La versión beta de la API de Microsoft Graph contiene funciones que se encuentran en su _**versión preliminar**_, según se expone en `https://graph.microsoft.com/beta`. Para consultar documentación sobre la API beta, vea [Referencia del punto de conexión de Microsoft Graph beta](../api-reference/beta/beta-overview.md). Cada cierto tiempo, se producirán cambios importantes en la versión beta. Por tanto, no establezca dependencias de producción en las API /beta.
 
 No ofrecemos ninguna garantía de que una característica de la versión beta se incluya en la versión actual. Cuando el equipo de la API de Microsoft Graph crea que una característica de la versión beta está lista para tener disponibilidad general (GA), agregaremos esa característica a la versión más actual. Si la promoción de la característica da como resultado un cambio importante en la versión actual, se incrementará el número de versión, y la nueva versión se convertirá en la versión actual.
 Nuestra comunidad de desarrolladores puede enviar una solicitud de característica en [UserVoice](https://officespdev.uservoice.com/), incluidas las solicitudes de nuevas características, así como solicitudes para promover la API beta existente a la versión actual. 
@@ -56,6 +56,6 @@ Actualmente, no hay versiones de Microsoft Graph en desuso.
 
 ## <a name="terms-of-use"></a>Condiciones de uso
 
-Su uso de las API de Microsoft Graph implica la aceptación de las [Condiciones de uso](https://msdn.microsoft.com/es-ES/cc300389). 
+Su uso de las API de Microsoft Graph implica la aceptación de las [Condiciones de uso](../misc/terms-of-use.md). 
 
 Su opinión es importante para nosotros. Póngase en contacto con nosotros en [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Etiquete sus preguntas con {MicrosoftGraph}.
