@@ -8,6 +8,7 @@
 		<Item text="Implementaciones híbridas (versión preliminar)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	</Item>
 	<Item text="Control de versiones y soporte técnico" url="/en-us/concepts/versioning_and_support" />
+	<Item text="Términos de uso" url="/en-us/misc/terms-of-use" />
   </Item>
   <Item text="Inicios rápidos" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, API de Microsoft Graph, Tutoriales" SEODescription="Introducción a Microsoft Graph para obtener acceso a los datos en la nube de Microsoft en una aplicación para Android" />
@@ -35,6 +36,7 @@
   <Item text="Experiencias entre dispositivos" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview">
     <Item text="Noticias de actividad" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="Retransmisión de dispositivo (versión preliminar)" url="/en-us/concepts/device-relay-concept-overview" />
+	<Item text="Crear aplicaciones para varios dispositivos" url="/en-us/concepts/cross-device-app-configuration" />
   </Item>
   <Item text="Reserva de cliente (versión preliminar)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="Dispositivos y aplicaciones" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
@@ -64,6 +66,7 @@
   <Item text="Informes" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Seguridad (versión preliminar)" url="/en-us/concepts/security-concept-overview">
 	<Item text="Integración con un SIEM" url="/en-us/concepts/security_siemintegration" />
+	<Item text="Autorización" url="/en-us/concepts/security-authorization" />
   </Item>
   <Item text="Listas y sitios" ProdTag="SharePoint" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Inteligencia social" url="/en-us/concepts/social-intel-concept-overview">
@@ -5572,7 +5575,6 @@
 			<Item text="Actualizar alerta" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="Errores" url="/en-us/api-reference/beta/resources/security-error-codes" />
-	    <Item text="Integración con un SIEM" url="/en-us/concepts/security_siemintegration" />
 	</Item>
 	<Item text="Listas y sitios" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sitios, listas, unidades, api de microsoft graph, api de sharepoint">
       <Item text="Sitios" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, sitio, sitios, api de microsoft graph, api de sitios de sharepoint">
