@@ -4,7 +4,7 @@ Este artículo describe el soporte y las directivas de cambios importantes para 
 
 ## <a name="support-policy-and-deprecation-information"></a>Información de degradación y directiva de soporte
 
-Microsoft Graph sigue la [Microsoft Lifecycle Policy](https://support.microsoft.com/es-ES/lifecycle). 
+Microsoft Graph sigue la [Microsoft Lifecycle Policy](https://support.microsoft.com/en-us/lifecycle). 
 
 A medida que vayan apareciendo nuevas versiones de los SDK de Microsoft Graph y de las API de REST de Microsoft Graph, se irán retirando las versiones anteriores. Microsoft declarará una versión en desuso con al menos 24 meses de antelación a la retirada de una API o un SDK. 
 
@@ -34,7 +34,7 @@ Los siguientes son ejemplos de cambios que son compatibles con versiones anterio
  - Cambios en el orden de propiedades
  - Cambios en la longitud o el formato de cadenas opacas, como identificadores de recursos
 
->**Nota:** Con el tiempo, actualizaremos la lista de cambios compatibles con versiones anteriores. Si genera su propio proxy de cliente (como clientes WCF), nuestro consejo es que las aplicaciones cliente estén preparadas para recibir propiedades y tipos derivados que no estaban definidos previamente por el servicio de API de Microsoft Graph. La API de Microsoft Graph sigue las instrucciones descritas en la sección de [Versiones del modelo](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) en las [directrices de la API de REST de Microsoft](https://github.com/microsoft/api-guidelines/). 
+>**Nota:** Con el tiempo, actualizaremos la lista de cambios compatibles con versiones anteriores. Si genera su propio proxy de cliente (como clientes WCF), nuestro consejo es que las aplicaciones cliente estén preparadas para recibir propiedades y tipos derivados que no estaban definidos previamente por el servicio de API de Microsoft Graph. La API de Microsoft Graph sigue las instrucciones descritas en la sección de [Versiones del modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) en las [directrices de la API de REST de Microsoft](https://github.com/microsoft/api-guidelines/). 
 
 ## <a name="versions"></a>Versiones
 
