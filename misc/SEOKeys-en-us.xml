@@ -48,19 +48,20 @@
 	  <Item text="Organizar mensajes" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Compartir carpetas de mensajes" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
-  <Item text="Notas" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph para integrar sus aplicaciones con OneNote.">
-    <Item text="Procedimientos recomendados" url="/en-us/concepts/onenote_best_practices" SEODescription="Siga procedimientos recomendados al trabajar con las API de OneNote en Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
-	<Item text="Instrucciones de personalización de marcas" url="/en-us/concepts/onenote-branding" />
-	<Item text="Abrir el cliente de OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Abra una aplicación de OneNote en una página o un bloc de notas en concreto." />
-	<Item text="Uso de etiquetas de nota" url="/en-us/concepts/onenote-note-tags" />
-	<Item text="Códigos de error" url="/en-us/concepts/onenote_error_codes" SEODescription="Encuentre códigos de error que las API de OneNote devuelven en Microsoft Graph." />
-  <Item text="Obtener contenido de OneNote" url="/en-us/concepts/onenote-get-content" />
+  <Item text="Notas" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Usar Microsoft Graph para integrar sus aplicaciones con OneNote.">
+    <Item text="Obtener contenido de OneNote" url="/en-us/concepts/onenote-get-content" />
+	<Item text="Abrir el cliente de OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Abrir una aplicación de OneNote en una página o un bloc de notas en concreto." />
 	<Item text="Crear páginas" url="/en-us/concepts/onenote-create-page" />
 	<Item text="Actualizar contenido de la página" url="/en-us/concepts/onenote_update_page" />
-	<Item text="Crear elementos con posición absoluta" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Agregar imágenes, vídeos y archivos" url="/en-us/concepts/onenote_images_files" />
+	<Item text="Crear elementos con posición absoluta" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Extraer datos" url="/en-us/concepts/onenote-extract-data" />
+	<Item text="Usar etiquetas de nota" url="/en-us/concepts/onenote-note-tags" />
+	<Item Label="RECURSOS" url="" />
 	<Item text="HTML de entrada y salida" url="/en-us/concepts/onenote_input_output_html" SEODescription="Comprenda un HTML de entrada y salida cuando se crea, actualiza o analiza el contenido de página de OneNote devuelto." />
+	<Item text="Procedimientos recomendados" url="/en-us/concepts/onenote_best_practices" SEODescription="Siga procedimientos recomendados al trabajar con las API de OneNote en Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+	<Item text="Instrucciones de personalización de marcas" url="/en-us/concepts/onenote-branding" />
+	<Item text="Códigos de error" url="/en-us/concepts/onenote_error_codes" SEODescription="Encuentre códigos de error que las API de OneNote devuelven en Microsoft Graph." />
   </Item>
   <Item text="Contactos personales" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Informes" url="/en-us/concepts/reportroot-concept-overview" />
@@ -2168,6 +2169,7 @@
   </Item>
    <Item text="Notificaciones de cambios" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="información, API de Microsoft Graph, API de usuario" SEODescription="">
     <Item text="Suscripción" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="Información, API de Microsoft Graph, API de usuario" SEODescription="">
+	  <Item text="Suscripción a lista" url="/en-us/api-reference/v1.0/api/subscription_list" />
       <Item text="Obtener suscripción" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="Enumerar suscripciones, API de Microsoft Graph, API de Webhooks" SEODescription="Recupere una lista de suscripción." />
       <Item text="Crear suscripción" url="/en-us/api-reference/v1.0/api/subscription_post_subscriptions" />
       <Item text="Actualizar suscripción" url="/en-us/api-reference/v1.0/api/subscription_update" />
@@ -5072,7 +5074,7 @@
           <Item text="Obtener aplicación" url="/en-us/api-reference/beta/api/application_get" SEOKeyword="Obtener aplicación, API de Microsoft Graph, API de aplicación" SEODescription="Recuperar las propiedades y las relaciones del objeto de aplicación." />
           <Item text="Actualizar aplicación" url="/en-us/api-reference/beta/api/application_update" SEOKeyword="Actualizar aplicaciones, API de Microsoft Graph, API de aplicación" SEODescription="Actualizar las propiedades del objeto de aplicación." />
           <Item text="Eliminar aplicación" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="Eliminar aplicaciones, API de Microsoft Graph, API de aplicación" SEODescription="Eliminar aplicación." />
-          <Item text="Enumerar propietarios" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="Enumerar propietarios, API de Microsoft Graph, API de aplicación" SEODescription="Recupere una lista de objetos directoryobject." />
+          <Item text="Enumerar propietarios" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="Enumerar propietarios, API de Microsoft Graph, API de aplicación" SEODescription="Recuperar una lista de objetos directoryobject." />
           <Item text="Asignar propietario" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Crear propietario, API de Microsoft Graph, API de aplicación" SEODescription="Use esta API para crear un nuevo propietario." />
           <Item text="Enumerar propiedades de extensión" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Enumerar extensionProperties, API de Microsoft Graph, API de aplicación" SEODescription="Recuperar una lista de objetos extensionproperty." />
         </Item>
