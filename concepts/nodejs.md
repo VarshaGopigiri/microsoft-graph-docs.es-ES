@@ -16,7 +16,7 @@ Para descargar una versión del ejemplo Connect que usa el punto de conexión de
 
 Para comenzar, necesitará: 
 
-- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
+- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/es-ES/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js con npm](https://nodejs.org/en/download/) 
 - El [ejemplo Connect de Microsoft para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Usará la carpeta **starter-project** en los archivos de ejemplo para este tutorial.
 
@@ -39,7 +39,7 @@ Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. 
 
 6. En **Plataformas**, pulse **Agregar plataforma** > **Web**.
 
-7. Escriba *http://localhost:3000/token* como URI de redireccionamiento. 
+7. Escriba *http://localhost:3000/token* como el URI de redireccionamiento. 
 
 8. Seleccione **Guardar**.
 
@@ -193,7 +193,7 @@ La aplicación llama a Microsoft Graph para obtener información del usuario y p
 
         npm start
 
-1. En un explorador, vaya a *http://localhost:3000* y elija el botón **Conectarse a Office 365**.
+1. En un explorador, navegue a *http://localhost:3000* y seleccione el botón **Conectarse a Office 365**.
 
 1. Inicie sesión y conceda los permisos solicitados. 
 

@@ -229,7 +229,9 @@ Content-Length: 714
 
 Hay ocasiones en las que no todos los asistentes pueden asistir a una reunión. Puede hacer que **findMeetingTimes** sugiera una hora si la _seguridad_ de asistencia alcanza un determinado porcentaje al especificar el parámetro opcional **minimumAttendeePercentage**. Obtenga más información acerca de la [seguridad de una sugerencia de reunión](../api-reference/v1.0/api/user_findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) y otros [parámetros](../api-reference/v1.0/api/user_findmeetingtimes.md#request-body) y cómo aplicarlos según corresponda para las reuniones de mayor tamaño.
 
-Después de obtener sugerencias para los horarios de reunión, es aconsejable:
+Después de obtener sugerencias para horas de reunión, le recomendamos que:
 
-1. [Crear un evento y enviarlo como convocatoria de reunión](../api-reference/v1.0/api/user_post_events.md) 
-2. [Agregar datos adjuntos](../api-reference/v1.0/api/event_post_attachments.md) al evento
+1. [Cree un evento y lo envíe como una convocatoria de reunión](../api-reference/v1.0/api/user_post_events.md).
+2. [Agregue datos adjuntos](../api-reference/v1.0/api/event_post_attachments.md) al evento.
+
+Obtenga más información sobre la [integración con el Calendario de Outlook](outlook-calendar-concept-overview.md).

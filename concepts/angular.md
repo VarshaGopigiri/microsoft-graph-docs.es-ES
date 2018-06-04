@@ -7,7 +7,7 @@ En la imagen siguiente, se muestra la aplicación que va a crear.
 ![Aplicación web después del inicio de sesión que muestra el botón “Enviar correo”](./images/angular-connect-sample.png)
 
 
-**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) para ponerlo todo en funcionamiento de manera rápida.
+**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://graph.microsoft.io/es-ES/getting-started) para ponerlo todo en funcionamiento de manera rápida.
 
 Para descargar una versión del ejemplo Connect que usa el punto de conexión de Azure AD, consulte el [Ejemplo Connect de Microsoft Graph para AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -16,7 +16,7 @@ Para descargar una versión del ejemplo Connect que usa el punto de conexión de
 
 Para comenzar, necesitará: 
 
-- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
+- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/es-ES/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js con npm](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
 - [Ejemplo Connect de Microsoft para AngularJS](https://github.com/microsoftgraph/angular-connect-sample). Usará la carpeta **starter-project** en los archivos de ejemplo para este tutorial.
@@ -34,11 +34,11 @@ Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. 
 
 4. Copie el identificador de la aplicación. Este es el identificador único de la aplicación que usará para configurarla.
 
-5. En **Plataformas**, elija **Agregar plataforma** > **Web**.
+5. En **Plataformas**, pulse **Agregar plataforma** > **Web**.
 
-6. Asegúrese de que la casilla **Permitir flujo implícito** esté seleccionada y escriba *http://localhost:8080/* como URI de redireccionamiento. 
+6. Asegúrese de que la casilla **Permitir flujo implícito** esté activada y escriba *http://localhost:8080* como el URI de redireccionamiento. 
 
-7. Elija **Guardar**.
+7. Seleccione **Guardar**.
 
 
 ## <a name="configure-the-project"></a>Configurar el proyecto
@@ -160,7 +160,7 @@ Abra app.js y agregue el código siguiente al final del archivo. Esto inicializa
 
         npm start
 
-2. En un explorador, vaya a *http://localhost:8080* y elija el botón **Conectar**.
+2. En un explorador, navegue a *http://localhost:8080* y seleccione el botón **Conectar**.
 
 3. Inicie sesión y conceda los permisos solicitados. 
 
@@ -172,5 +172,5 @@ Abra app.js y agregue el código siguiente al final del archivo. Esto inicializa
 
 
 ## <a name="see-also"></a>Recursos adicionales
-- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-protocols/)
+- [Tokens de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-tokens/)

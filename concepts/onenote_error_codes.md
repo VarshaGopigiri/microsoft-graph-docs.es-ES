@@ -36,7 +36,7 @@ La cuenta de usuario actual ha superado el número máximo de solicitudes activa
 El servicio no puede crear una página en la sección solicitada porque la sección está protegida por contraseña.
 
 ### <a name="10005"></a>10005
-La solicitud contiene más del número máximo de etiquetas de imagen en las que el atributo **data-render-src** contiene un PDF. Vea [Agregar imágenes y archivos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files).
+La solicitud contiene más del número máximo de etiquetas de imagen en las que el atributo **data-render-src** contiene un PDF. Vea [Agregar imágenes y archivos](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-images-files).
 
 ### <a name="10006"></a>10006
 La API de OneNote no pudo crear una página en la sección especificada porque esta sección está dañada.
@@ -48,7 +48,7 @@ El servidor está demasiado ocupado para atender la solicitud entrante en este m
 Uno o más de las bibliotecas de documentos en OneDrive del usuario o del grupo contiene más de 5000 elementos de OneNote (blocs de notas, secciones, grupos de secciones) y no se puede consultar mediante la API. Asegúrese de que ninguna de las bibliotecas de documentos del grupo o del usuario contiene más de 5000 elementos de OneNote. Consulte el [blog de desarrollo de OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para conocer los pasos de mitigación.
 
 ### <a name="10012"></a>10012
-No se puede crear o actualizar la entidad porque la biblioteca que contiene el bloc de notas requiere que los elementos estén desprotegidos para poder modificarlos. Para obtener más información, consulte https://support.office.com/es-es/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
+No se puede crear ni actualizar la entidad porque la biblioteca que contiene el bloc de notas necesita extraer del repositorio los elementos antes de editarlos. Para obtener más información, vea https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
 
 Quite el requisito de desprotección de la biblioteca o mueva el bloc de notas.
 
@@ -142,7 +142,7 @@ La propiedad que ha solicitado no existe.
 Ha solicitado un recurso que no existe.
 
 ### <a name="20103"></a>20103
-La consulta **expand** no se admite para esta solicitud. Vea [Opciones de cadena de consultas OData admitidas](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+La consulta **expand** no se admite para esta solicitud. Vea [Opciones de cadena de consultas OData admitidas](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-get-content#query-options).
 
 ### <a name="20104"></a>20104
 La opción de consulta **pagelevel** solo se admite al realizar consultas para la colección de páginas de una sección o de una página específica. Por ejemplo:  
@@ -231,7 +231,7 @@ La solicitud especifica un elemento no válido como destino de la acción PATCH.
 Su solicitud especifica un tipo de entidad que no es compatible con la operación PATCH. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20136"></a>20136
-La solicitud contiene un atributo **data-render-src** o **data-render-method** no válido o que falta. Vea [Extraer los datos de las capturas](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data).
+La solicitud contiene un atributo **data-render-src** o **data-render-method** no válido o que falta. Vea [Extraer los datos de las capturas](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-extract-data).
 
 ### <a name="20137"></a>20137
 La página de destino no admite solicitudes PATCH.
@@ -240,20 +240,20 @@ La página de destino no admite solicitudes PATCH.
 El tipo de elemento de destino de la solicitud PATCH no admite la acción **append** especificada. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20139"></a>20139
-La solicitud contiene un valor de atributo **data-tag** no válido. Vea [Uso de etiquetas de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+La solicitud contiene un valor de atributo **data-tag** no válido. Vea [Uso de etiquetas de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags).
 
 ### <a name="20140"></a>20140
 La solicitud contiene un valor de estado **data-tag** no válido. Las etiquetas de nota de casillas pueden tener un estado **completed**. Ejemplo:
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-Vea [Uso de etiquetas de nota](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+Vea [Uso de etiquetas de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags).
 
 ### <a name="20141"></a>20141
 El destino de la solicitud PATCH no admite la acción especificada. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20142"></a>20142
-La solicitud contiene una expresión **expand** para un elemento primario de entidades secundarias o un elemento secundario de entidades primarias, lo cual no es compatible. Vea [Opciones de cadena de consultas OData admitidas](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+La solicitud contiene una expresión **expand** para un elemento primario de entidades secundarias o un elemento secundario de entidades primarias, lo cual no es compatible. Vea [Opciones de cadena de consultas OData admitidas](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-get-content#query-options).
 
 ### <a name="20143"></a>20143
 La consulta OData no es válida.
@@ -265,13 +265,13 @@ La solicitud contiene una expresión **expand** para una propiedad de no navegac
 La expresión **select** o **expand** de la solicitud contiene un término no válido.
 
 ### <a name="20146"></a>20146
-El atributo `style="position:absolute"` se especifica en un elemento, pero el elemento **body** no especifica `data-absolute-enabled="true"`, que es necesario para admitir el posicionamiento. Se omitirán todas las configuraciones de posición. Vea [Crear elementos con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+El atributo `style="position:absolute"` se especifica en un elemento, pero el elemento **body** no especifica `data-absolute-enabled="true"`, que es necesario para admitir el posicionamiento. Se omitirán todas las configuraciones de posición. Vea [Crear elementos con posición absoluta](onenote-abs-pos.md).
 
 ### <a name="20147"></a>20147
-El atributo `style="position:absolute"` se especifica en un elemento que no es un elemento secundario directo del elemento **body**, que no es compatible. Si el elemento es un **div**, **img **u **object**, haga que sea un elemento secundario directo del cuerpo; en caso contrario, se pasarán por alto los valores de posición y representará su contenido dentro de un div de posición absoluta Vea [Crear elementos con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+El atributo `style="position:absolute"` se especifica en un elemento que no es un elemento secundario directo del elemento **body**, que no es compatible. Si el elemento es un **div**, **img **u **object**, haga que sea un elemento secundario directo del cuerpo; en caso contrario, se pasarán por alto los valores de posición y representará su contenido dentro de un div de posición absoluta Vea [Crear elementos con posición absoluta](onenote-abs-pos.md).
 
 ### <a name="20148"></a>20148
-El atributo `style="position:absolute"` se especifica en un tipo de elemento que no es compatible. Solo **div**, **img** y **object** admiten la posición de los elementos que son elementos secundarios directos del cuerpo de la página. Vea [Crear elementos con posición absoluta](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+El atributo `style="position:absolute"` se especifica en un tipo de elemento que no es compatible. Solo **div**, **img** y **object** admiten la posición de los elementos que son elementos secundarios directos del cuerpo de la página. Vea [Crear elementos con posición absoluta](onenote-abs-pos.md).
 
 ### <a name="20149"></a>20149
 Su solicitud especifica un elemento de destino que no se encuentra.
@@ -315,14 +315,14 @@ La aplicación ha emitido demasiadas solicitudes en nombre de un usuario en un c
 Para obtener más información, consulte [OneNote API throttling and how to avoid it](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx) (Limitación de la API de OneNote y cómo evitarla).
 
 ### <a name="20168"></a>20168
-No se admite el origen de vídeo especificado en la solicitud. Vea [Sitios de vídeo compatibles](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos) para obtener la lista actual.
+No se admite el origen de vídeo especificado en la solicitud. Vea [Sitios de vídeo compatibles](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-images-files#videos) para obtener la lista actual.
 
 
 ## <a name="codes-from-30001-to-39999"></a>Códigos de 30001 a 39999
 Hay algún fallo en la cuenta del usuario.
 
 ### <a name="30101"></a>30101
-La cuenta de usuario ha excedido su cuota de OneDrive. Vea [OneDrive](https://onedrive.live.com/about/en-us/).
+La cuenta de usuario ha excedido su cuota de OneDrive. Vea [OneDrive](https://onedrive.live.com/about/es-ES/).
 
 ### <a name="30102"></a>30102
 No se puede agregar nada más a la sección solicitada porque ha alcanzado su tamaño máximo.

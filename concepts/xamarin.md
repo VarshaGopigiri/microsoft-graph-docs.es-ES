@@ -16,7 +16,7 @@ Esta es la aplicación que va a crear.
 
 Para comenzar, necesitará: 
 
-- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
+- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/es-ES/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - [Xamarin para Visual Studio](https://www.xamarin.com/visual-studio)
 - Windows 10 ([modo de desarrollo habilitado](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx))
@@ -73,7 +73,7 @@ Si desea ejecutar el proyecto de iOS en este ejemplo, necesitará lo siguiente:
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Enviar un correo electrónico con Microsoft Graph
 
-Abra el archivo MailHelper.cs en su proyecto inicial. Este archivo contiene el código que crea y envía correos electrónicos. Consta de un único método (``ComposeAndSendMailAsync``) que crea y envía una solicitud POST al punto de conexión **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
+Abra el archivo MailHelper.cs en su proyecto inicial. Este archivo contiene código que crea y envía correos electrónicos. Consiste en un único método (``ComposeAndSendMailAsync``) que crea y envía una solicitud POST al punto de conexión **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
 
 El método ``ComposeAndSendMailAsync`` toma tres valores de cadena (``subject``, ``bodyContent`` y ``recipients``) que se le pasan mediante el archivo MainPage.xaml.cs. Las cadenas ``subject`` y ``bodyContent`` se almacenan, junto con todas las demás cadenas de la interfaz de usuario, en el archivo AppResources.resx. La cadena ``recipients`` proviene del cuadro de dirección en la interfaz de la aplicación. 
 
@@ -431,7 +431,7 @@ Ya ha llevado a cabo los tres pasos requeridos para interactuar con Microsoft Gr
 ## <a name="run-the-app"></a>Ejecutar la aplicación
 1. Seleccione el proyecto que desee ejecutar. Si selecciona la opción de plataforma universal de Windows, puede ejecutar el ejemplo en el equipo local. Si desea ejecutar el proyecto iOS, necesitará conectarse a un [Mac que tenga las herramientas Xamarin](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) instaladas. (También puede abrir esta solución en Xamarin Studio en un Mac y ejecutar el ejemplo directamente desde allí). Puede usar el [Emulador de Visual Studio para Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx) si desea ejecutar el proyecto de Android. 
 
-    ![](images/SelectProject.png "Select project in Visual Studio")
+    ![](images/SelectProject.png "Seleccionar un proyecto en Visual Studio")
 
 2. Pulse F5 para compilar y depurar. Ejecute la solución e inicie sesión con su cuenta personal, profesional o educativa.
     > **Nota** Es posible que tenga que abrir el administrador de configuración de compilación para asegurarse de que los pasos de compilación e implementación están seleccionados para el proyecto UWP. 

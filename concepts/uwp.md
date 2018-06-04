@@ -26,7 +26,7 @@ Todas las cadenas de la interfaz de usuario del ejemplo se almacenan en el archi
 
 Para comenzar, necesitará: 
 
-- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
+- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/es-ES/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2017 
 - [Proyecto inicial de Microsoft Graph para UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter). Ambas plantillas contienen clases a las que agregará código. También contienen cadenas de recursos. Para obtener este proyecto, clone o descargue el [Ejemplo Connect de Microsoft Graph UWP (biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) y abra la solución dentro de la carpeta **starter**.
 
@@ -64,7 +64,7 @@ Para comenzar, necesitará:
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Enviar un correo electrónico con Microsoft Graph
 
-Abra el archivo MailHelper.cs en su proyecto inicial. Este archivo contiene el código que crea y envía correos electrónicos. Consta de un único método (``ComposeAndSendMailAsync``) que crea y envía una solicitud POST al punto de conexión **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
+Abra el archivo MailHelper.cs en su proyecto inicial. Este archivo contiene código que crea y envía correos electrónicos. Consiste en un único método (``ComposeAndSendMailAsync``) que crea y envía una solicitud POST al punto de conexión **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
 
 El método ``ComposeAndSendMailAsync`` adquiere tres valores de cadena (``subject``, ``bodyContent`` y ``recipients``) que le pasa el archivo MainPage.xaml.cs. Las cadenas ``subject`` y ``bodyContent`` se almacenan, junto con todas las demás cadenas de la interfaz de usuario, en el archivo Resources.resw. La cadena ``recipients`` proviene del cuadro de dirección en la interfaz de la aplicación. 
 

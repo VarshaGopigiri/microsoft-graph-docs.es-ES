@@ -8,7 +8,7 @@ En la imagen siguiente, se muestra la aplicación que va a crear.
 
 ![Captura de pantalla del ejemplo Microsoft Ruby on Rails Connect ](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) para ponerlo todo en funcionamiento de manera rápida o descargue el [Ejemplo Connect de REST de Ruby](https://github.com/microsoftgraph/ruby-connect-rest-sample) en el que se basa este artículo.
+**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://graph.microsoft.io/es-ES/getting-started) para ponerlo todo en funcionamiento de manera rápida o descargue el [Ejemplo Connect de REST de Ruby](https://github.com/microsoftgraph/ruby-connect-rest-sample) en el que se basa este artículo.
 
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -19,7 +19,7 @@ Para comenzar, necesitará:
 - Marco Rails (el ejemplo se probó con Rails 4.2).
 - Administrador de dependencias Bundler.
 - Interfaz de servidor web Rack para Ruby.
-- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](http://dev.office.com/devprogram)
+- Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/es-ES/office/developer-program/office-365-developer-program-faq#account-types)
 - Proyecto inicial de conexión de Microsoft Graph para Ruby on Rails. Descargue el [Ejemplo Connect de Microsoft Graph de Ruby on Rails](https://github.com/microsoftgraph/ruby-connect-rest-sample). El proyecto inicial se encuentra en la carpeta _starter_.
 
 
@@ -41,15 +41,15 @@ Registre una aplicación en el Portal de registro de aplicaciones de Microsoft. 
 
     Deberá usar el ID y el secreto de aplicación para configurar la aplicación.
 
-6. En **Plataformas**, elija **Agregar plataforma** > **Web**.
+6. En **Plataformas**, pulse **Agregar plataforma** > **Web**.
 
-7. Asegúrese de que la casilla **Permitir flujo implícito** está seleccionada y escriba *http://localhost:3000/auth/microsoft_v2_auth/callback* como URI de redireccionamiento.
+7. Asegúrese de que la casilla **Permitir flujo implícito** esté activada y escriba *http://localhost:3000/auth/microsoft_v2_auth/callback* como el URI de redireccionamiento.
 
     La opción Permitir flujo implícito habilita el flujo híbrido de OpenID Connect. Durante la autenticación, esto permite que la aplicación reciba tanto la información de inicio de sesión (id_token) como los artefactos (en este caso, un código de autorización) que la aplicación usa para obtener un token de acceso.
 
-    El URI de redireccionamiento *http://localhost:3000/auth/microsoft_v2_auth/callback* es el valor con el que el middleware de OmniAuth se ha configurado para usar una vez que haya procesado la solicitud de autenticación.
+    El URI de redireccionamiento *http://localhost:3000/auth/microsoft_v2_auth/callback* es el valor que usará el middleware de OmniAuth después de procesar la solicitud de autenticación.
 
-8. Elija **Guardar**.
+8. Seleccione **Guardar**.
 
 ## <a name="configure-the-project"></a>Configurar el proyecto
 
@@ -79,7 +79,7 @@ El flujo de autenticación puede desglosarse en los siguientes pasos básicos:
 2. Obtener un código de autorización
 3. Canjear el código de autorización por un token de acceso
 
->Para obtener más información acerca de este flujo de autenticación, consulte [Aplicación web a API web](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) e [Integrar la identidad de Microsoft y Microsoft Graph en una aplicación web mediante OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) en la documentación de Azure AD.
+>Para obtener más información acerca de este flujo de autenticación, consulte [Aplicación web a API web](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) e [Integrar la identidad de Microsoft y Microsoft Graph en una aplicación web mediante OpenID Connect](https://azure.microsoft.com/es-ES/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) en la documentación de Azure AD.
 
 Usaremos una pila de tres partes del middleware [Rack](http://rack.github.io/) para habilitar la aplicación para que se autentique en Microsoft Graph:
 
@@ -127,11 +127,11 @@ Esto dirige las solicitudes de inicio de sesión al método `login` del controla
         redirect_to '/auth/microsoft_v2_auth'
     end
 
-A continuación, deberemos especificar la ubicación de la aplicación a la que OmniAuth debería redirigir una vez que se haya realizado la autenticación. Quite la marca de comentario de la siguiente ruta.
+Después, necesita especificar la ubicación de la aplicación a la que OmniAuth redirigirá cuando se realice la autenticación. Quite la marca de comentario de la ruta siguiente.
 
     match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
-Cuando OmniAuth termine de autenticar el usuario, llamará a la URL de redireccionamiento que se haya especificado en el registro de aplicaciones; en este caso, *http://localhost:3000/auth/microsoft_v2_auth/callback*. El patrón de ruta anterior coincide con esa URL y, en consecuencia, redirige la solicitud al método `callback` del controlador de páginas.
+Cuando OmniAuth termine de autenticar al usuario, llamará a la URL de redireccionamiento especificada en el registro de la aplicación (en este caso, *http://localhost:3000/auth/microsoft_v2_auth/callback*). El patrón de ruta anterior coincide con esa URL y, en consecuencia, redirige la solicitud al método `callback` del controlador de páginas.
 
 ### <a name="get-an-access-token"></a>Obtener un token de acceso
 

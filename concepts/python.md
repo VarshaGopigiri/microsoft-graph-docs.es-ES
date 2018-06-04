@@ -70,7 +70,8 @@ Estos son otros ejemplos de Python donde se demuestra cómo trabajar con diferen
 * [Ejemplos de autenticación de Python para Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
 * [Trabajar con respuestas de Microsoft Graph paginadas en Python](https://github.com/microsoftgraph/python-sample-pagination)
 * [Trabajar con extensiones abiertas de Graph en Python](https://github.com/microsoftgraph/python-sample-open-extensions)
+* [Conectar una aplicación web de Python a la API para seguridad](https://github.com/microsoftgraph/python-security-rest-sample)
 
-Si hay un ejemplo concreto que quiera ver, háganoslo saber al [enviar un problema](https://github.com/microsoftgraph/python-sample-auth/issues). Estamos muy interesados en sus comentarios sobre cualquier escenario de Microsoft Graph que desee compilar en Python.
+Si hay un ejemplo concreto que le gustaría ver, [envíe un problema](https://github.com/microsoftgraph/python-sample-auth/issues) para hacérnoslo saber. Estamos muy interesados en sus comentarios sobre cualquier escenario de Microsoft Graph que desee compilar en Python.
 
 La API de Microsoft Graph es una interfaz unificadora y muy avanzada que permite trabajar con todos los tipos de datos de Microsoft. Consulte la [documentación de desarrollador](https://developer.microsoft.com/es-ES/graph/docs/concepts/overview) o el [Probador de Graph](https://developer.microsoft.com/es-ES/graph/graph-explorer) para explorar qué más puede realizar con Microsoft Graph.
