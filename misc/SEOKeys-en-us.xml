@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item Label="EXPLORAR" url="" />
   <Item text="Información general" url="/en-us/concepts/overview" SEOKeyword="Información general, API de Microsoft Graph, Información general" SEODescription="Microsoft Graph permite a las aplicaciones acceder al trabajo digital y a los datos de vida digital a través de la nube inteligente de Microsoft. Grandes ventajas para los desarrolladores: Un punto de conexión unificado de la API de Microsoft para obtener acceso a los datos, a la inteligencia y a la información procedente de la nube de Microsoft.">
@@ -243,8 +243,6 @@
       <Item text="Actualizar evento" url="/en-us/api-reference/v1.0/api/group_update_event" />
       <Item text="Eliminar evento" url="/en-us/api-reference/v1.0/api/group_delete_event" />
       <Item text="Incluir en una lista la vista Calendario" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="Enumerar calendarView, API de Microsoft Graph, API de grupos" SEODescription="Recupere una lista de objetos de evento." />
-      <Item text="Enumerar datos adjuntos" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="Enumerar datos adjuntos, API de Microsoft Graph, API de calendario de Outlook" SEODescription="Recupere una lista de objetos de datos adjuntos." />
-      <Item text="Agregar datos adjuntos" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Crear datos adjuntos, API de Microsoft Graph, API de Calendario de Outlook" SEODescription="Use esta API para crear datos adjuntos." />
       <Item text="Crear extensión abierta" url="/en-us/api-reference/v1.0/api/opentypeextension_post_opentypeextension" SEOKeyword="Obtener extensión de datos, API de Microsoft Graph, API de opentypeextension" SEODescription="Recupere las propiedades y las relaciones del objeto opentypeextension." />
       <Item text="Obtener extensión abierta" url="/en-us/api-reference/v1.0/api/opentypeextension_get" SEOKeyword="Obtener extensión de datos, API de Microsoft Graph, API de opentypeextension" SEODescription="Recupere las propiedades y las relaciones del objeto opentypeextension." />
     </Item>
@@ -1763,7 +1761,7 @@
       <Item text="Eliminar mensaje" url="/en-us/api-reference/v1.0/api/message_delete" SEOKeyword="Eliminar mensaje, API de Microsoft Graph, API de correo de Outlook" SEODescription="Elimine mensaje." />
       <Item text="Enviar mensajes" url="/en-us/api-reference/v1.0/api/message_send" SEOKeyword="Enviar mensajes, API de Microsoft Graph, API de correo de Outlook" SEODescription="Enviar mensaje" />
       <Item text="Copiar mensajes" url="/en-us/api-reference/v1.0/api/message_copy" SEOKeyword="Copiar mensajes, API de Microsoft Graph, API de correo de Outlook" SEODescription="Copiar mensaje" />
-      <Item text="Mover mensajes" url="/en-us/api-reference/v1.0/api/message_move" SEOKeyword="Mover mensajes, API de Microsoft Graph, API de Correo de Outlook" SEODescription="Mover mensaje" />
+      <Item text="Mover mensajes" url="/en-us/api-reference/v1.0/api/message_move" SEOKeyword="Mover mensajes, API de Microsoft Graph, API de correo de Outlook" SEODescription="Mover mensaje" />
       <Item text="Crear responder a los mensajes" url="/en-us/api-reference/v1.0/api/message_createreply" SEOKeyword="Crear responder a los mensajes, API de Microsoft Graph, API de correo de Outlook" SEODescription="" />
       <Item text="Responder a los mensajes" url="/en-us/api-reference/v1.0/api/message_reply" SEOKeyword="Responder a los mensajes, API de Microsoft Graph, API de correo de Outlook" SEODescription="Responder a los mensajes" />
       <Item text="Crear responder a todos los mensajes" url="/en-us/api-reference/v1.0/api/message_createreplyall" SEOKeyword="Crear responder a todos los mensajes, API de Microsoft Graph, API de correo de Outlook" SEODescription="Crear responder a todos los mensajes" />
@@ -1812,7 +1810,7 @@
 	<Item text="Reglas" url="/en-us/api-reference/v1.0/resources/messagerule">
 		<Item text="Enumerar reglas" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 		<Item text="Crear regla" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
-		<Item text="Obtener regla" url="/en-us/api-reference/v1.0/messagerule_get" />
+		<Item text="Obtener regla" url="/en-us/api-reference/v1.0/api/messagerule_get" />
 		<Item text="Actualizar regla" url="/en-us/api-reference/v1.0/api/messagerule_update" />
 		<Item text="Eliminar regla" url="/en-us/api-reference/v1.0/api/messagerule_delete" />
 	  </Item>
@@ -2200,8 +2198,8 @@
         <Item text="Vista enumerar calendario" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="Enumerar calendarView, API de Microsoft Graph, API de usuarios" SEODescription="Recupere una lista de objetos de evento." />
         <Item text="Vista recordatorio" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="usuario: reminderView, API de Microsoft Graph, API de usuario" SEODescription="" />
         <Item text="Buscar horas de reunión" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="usuario: horas de reunión, API de Microsoft Graph, API de usuario" SEODescription="" />
-		<Item text="Buscar listas de salas" url="/en-us/api-reference/beta/api/user_findroomlists" />
-		<Item text="Buscar salas" url="/en-us/api-reference/beta/api/user_findrooms" />
+        <Item text="Buscar listas de salas" url="/en-us/api-reference/beta/api/user_findroomlists" />
+        <Item text="Buscar salas" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
       <Item text="Contactos" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="contacto de usuario, API de Microsoft Graph, API de usuario" SEODescription="">
         <Item text="Enumerar contactos" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="Enumerar contactos, API de Microsoft Graph, API de usuarios" SEODescription="Recupere una lista de objetos de contacto." />
@@ -2243,8 +2241,8 @@
         <Item text="Crear carpeta de correo" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="Crear MailFolder, API de Microsoft Graph, API de usuarios" SEODescription="Use esta API para crear un nuevo MailFolder." />
         <Item text="Enviar correo" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="usuario: sendMail, API de Microsoft Graph, API de usuario" SEODescription="" />
         <Item text="Enumerar reglas" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
-		<Item text="Crear reglas" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
-		<Item text="Obtener sugerencias de correo electrónico " url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="Crear reglas" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+        <Item text="Obtener sugerencias de correo electrónico " url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
       <Item text="Notas" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="notas de usuario, API de Microsoft Graph, API de usuario" SEODescription="">
         <Item text="Enumerar blocs de notas" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Enumerar blocs de notas, API de Microsoft Graph, API de notas" SEODescription="Recuperar una lista de objetos de bloc de notas (../resources/notebook.md)." />
@@ -2325,8 +2323,6 @@
         <Item text="Actualizar evento" url="/en-us/api-reference/beta/api/group_update_event" />
         <Item text="Eliminar evento" url="/en-us/api-reference/beta/api/group_delete_event" />
         <Item text="Incluir en una lista la vista Calendario" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="Enumerar calendarView, API de Microsoft Graph, API de grupos" SEODescription="Recupere una lista de objetos de evento." />
-        <Item text="Enumerar datos adjuntos" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="Enumerar datos adjuntos, API de Microsoft Graph, API de calendario de Outlook" SEODescription="Recupere una lista de objetos de datos adjuntos." />
-        <Item text="Agregar datos adjuntos" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Crear datos adjuntos, API de Microsoft Graph, API de Calendario de Outlook" SEODescription="Use esta API para crear datos adjuntos." />
         <Item text="Crear extensión abierta" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Crear extensión abierta, API de Microsoft Graph, API de mensaje" SEODescription="Use esta API para crear una extensión abierta." />
         <Item text="Obtener extensión abierta" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Obtener extensión abierta, API de Microsoft Graph, API de mensaje" SEODescription="Use esta API para obtener una extensión abierta." />
       </Item>
@@ -2553,8 +2549,8 @@
 			<Item text="Eliminar" url="/en-us/api-reference/beta/api/bookingstaffmember_delete" />
 		</Item>
 	</Item>
-	<Item text="Dispositivos y aplicaciones" ProdTag="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
-      <Item text="Administración de aplicaciones" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
+  <Item text="Dispositivos y aplicaciones" ProdTag="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
+    <Item text="Administración de aplicaciones" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
         <Item text="Perfil de inscripción de dispositivo Android propietario" url="/en-us/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_get" />
@@ -2564,15 +2560,6 @@
           <Item text="Acción revokeToken" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_revoketoken" />
           <Item text="Acción createToken" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_createtoken" />
         </Item>
-        <Item text="Tipo de datos del elemento de esquema de configuración de la aplicación Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitemdatatype" />
-        <Item text="Elemento de esquema de configuración de la aplicación Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
-        <Item text="Esquema de configuración de la aplicación Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschema">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
-        </Item>
         <Item text="Aplicación de Android for Work" url="/en-us/api-reference/beta/resources/intune_apps_androidforworkapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_get" />
@@ -2580,6 +2567,15 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_androidforworkapp_update" />
         </Item>
+        <Item text="Esquema de configuración de la aplicación Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschema">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkappconfigurationschema_update" />
+        </Item>
+        <Item text="Elemento de esquema de configuración de la aplicación Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitem" />
+        <Item text="Tipo de datos del elemento de esquema de configuración de la aplicación Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkappconfigurationschemaitemdatatype" />
         <Item text="Estado de enlace de Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkbindstatus" />
         <Item text="Perfil de inscripción de Android for Work" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
@@ -2625,8 +2621,6 @@
           <Item text="Acción syncApps" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_syncapps" />
           <Item text="Acción unbind" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_unbind" />
         </Item>
-        <Item text="Tipo de datos del elemento de esquema de configuración de la aplicación de la tienda administrada de Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitemdatatype" />
-        <Item text="Elemento de esquema de configuración de la aplicación de la tienda administrada de Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem" />
         <Item text="Esquema de configuración de la aplicación de la tienda administrada de Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschema">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_get" />
@@ -2634,9 +2628,11 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidmanagedstoreappconfigurationschema_update" />
         </Item>
+        <Item text="Elemento de esquema de configuración de la aplicación de la tienda administrada de Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem" />
+        <Item text="Tipo de datos del elemento de esquema de configuración de la aplicación de la tienda administrada de Android" url="/en-us/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitemdatatype" />
         <Item text="Versión mínima del sistema operativo Android" url="/en-us/api-reference/beta/resources/intune_apps_androidminimumoperatingsystem" />
-        <Item text="Tipo de acción de permisos para Android" url="/en-us/api-reference/beta/resources/intune_apps_androidpermissionactiontype" />
         <Item text="Acción de permisos para Android" url="/en-us/api-reference/beta/resources/intune_apps_androidpermissionaction" />
+        <Item text="Tipo de acción de permisos para Android" url="/en-us/api-reference/beta/resources/intune_apps_androidpermissionactiontype" />
         <Item text="Aplicación de la tienda Android" url="/en-us/api-reference/beta/resources/intune_apps_androidstoreapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_androidstoreapp_get" />
@@ -2646,7 +2642,6 @@
         </Item>
         <Item text="Elemento de configuración de la configuración de la aplicación" url="/en-us/api-reference/beta/resources/intune_apps_appconfigurationsettingitem" />
         <Item text="Estado de certificado" url="/en-us/api-reference/beta/resources/intune_apps_certificatestatus" />
-        <Item text="Estado de cumplimiento" url="/en-us/api-reference/beta/resources/intune_apps_compliancestatus" />
         <Item text="Estado de instalación del dispositivo" url="/en-us/api-reference/beta/resources/intune_books_deviceinstallstate">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_books_deviceinstallstate_get" />
@@ -2667,18 +2662,16 @@
         </Item>
         <Item text="Aplicaciones excluidas" url="/en-us/api-reference/beta/resources/intune_apps_excludedapps" />
         <Item text="Información de cifrado de archivos" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo" />
-        <Item text="Objetivo de instalación" url="/en-us/api-reference/beta/resources/intune_apps_installintent" />
-        <Item text="Objetivo de instalación" url="/en-us/api-reference/beta/resources/intune_books_installintent" />
         <Item text="Estado de instalación" url="/en-us/api-reference/beta/resources/intune_books_installstate" />
         <Item text="Tipo de dispositivo iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype" />
-        <Item text="Configuración de asignación de la aplicación de LOB para iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappassignmentsettings" />
-        <Item text="Asignación de configuración de aprovisionamiento de la aplicación de LOB para iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
-          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update" />
+        <Item text="Aplicación de LOB para iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_update" />
         </Item>
+        <Item text="Configuración de asignación de la aplicación de LOB para iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappassignmentsettings" />
         <Item text="Configuración de aprovisionamiento de la aplicación de LOB para iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfiguration">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_get" />
@@ -2687,12 +2680,12 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_update" />
           <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign" />
         </Item>
-        <Item text="Aplicación de LOB para iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_update" />
+        <Item text="Asignación de configuración de aprovisionamiento de la aplicación de LOB para iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
+          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update" />
         </Item>
         <Item text="Versión mínima del sistema operativo iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosminimumoperatingsystem" />
         <Item text="Configuración de aplicaciones para móviles de iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosmobileappconfiguration">
@@ -2702,7 +2695,6 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_iosmobileappconfiguration_update" />
         </Item>
-        <Item text="Configuración de asignación de la aplicación de la tienda de iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="Aplicación de la tienda de iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_get" />
@@ -2710,7 +2702,7 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_iosstoreapp_update" />
         </Item>
-        <Item text="Configuración de asignación de la aplicación VPP para iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings" />
+        <Item text="Configuración de asignación de la aplicación de la tienda de iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosstoreappassignmentsettings" />
         <Item text="Aplicación VPP para iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosvppapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_get" />
@@ -2718,19 +2710,20 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_iosvppapp_update" />
         </Item>
-        <Item text="Asignación de e-book de VPP para iOS" url="/en-us/api-reference/beta/resources/intune_books_iosvppebookassignment">
-          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update" />
-        </Item>
+        <Item text="Configuración de asignación de la aplicación VPP para iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosvppappassignmentsettings" />
         <Item text="E-book de VPP para iOS" url="/en-us/api-reference/beta/resources/intune_books_iosvppebook">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_get" />
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_update" />
+        </Item>
+        <Item text="Asignación de e-book de VPP para iOS" url="/en-us/api-reference/beta/resources/intune_books_iosvppebookassignment">
+          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update" />
         </Item>
         <Item text="Aplicación LOB de macOS" url="/en-us/api-reference/beta/resources/intune_apps_macoslobapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list" />
@@ -2762,10 +2755,15 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_managedandroidstoreapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_managedandroidstoreapp_update" />
         </Item>
-        <Item text="Disponibilidad de aplicación administrada" url="/en-us/api-reference/beta/resources/intune_apps_managedappavailability" />
         <Item text="Aplicación administrada" url="/en-us/api-reference/beta/resources/intune_apps_managedapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_managedapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_managedapp_get" />
+        </Item>
+        <Item text="Disponibilidad de aplicación administrada" url="/en-us/api-reference/beta/resources/intune_apps_managedappavailability" />
+        <Item text="Configuración de aplicación móvil para el dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_get" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
         </Item>
         <Item text="Asignación de configuración de aplicaciones móviles para dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
@@ -2796,10 +2794,10 @@
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationusersummary_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationusersummary_update" />
         </Item>
-        <Item text="Configuración de aplicación móvil para el dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_get" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
+        <Item text="E-book administrado" url="/en-us/api-reference/beta/resources/intune_books_managedebook">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_books_managedebook_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_books_managedebook_get" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Asignación de e-book administrado" url="/en-us/api-reference/beta/resources/intune_books_managedebookassignment">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_list" />
@@ -2814,11 +2812,6 @@
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_books_managedebookcategory_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_books_managedebookcategory_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_books_managedebookcategory_update" />
-        </Item>
-        <Item text="E-book administrado" url="/en-us/api-reference/beta/resources/intune_books_managedebook">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_books_managedebook_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_books_managedebook_get" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_books_managedebook_assign" />
         </Item>
         <Item text="Aplicación de LOB para iOS administrada" url="/en-us/api-reference/beta/resources/intune_apps_managedioslobapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_managedioslobapp_list" />
@@ -2839,7 +2832,6 @@
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_managedmobilelobapp_get" />
         </Item>
         <Item text="Tipo de clave de configuración de aplicación MDM" url="/en-us/api-reference/beta/resources/intune_apps_mdmappconfigkeytype" />
-        <Item text="Configuración de asignación de la aplicación de Microsoft Store para empresas" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
         <Item text="Aplicación de Microsoft Store para empresas" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_get" />
@@ -2847,6 +2839,7 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update" />
         </Item>
+        <Item text="Configuración de asignación de la aplicación de Microsoft Store para empresas" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings" />
         <Item text="Aplicación contenida de Microsoft Store para empresas" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_get" />
@@ -2855,7 +2848,12 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_update" />
         </Item>
         <Item text="Tipo de licencia de Microsoft Store para empresas" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesslicensetype" />
-        <Item text="Configuración de asignación de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_apps_mobileappassignmentsettings" />
+        <Item text="Aplicación para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileapp">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_get" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assign" />
+          <Item text="getTopMobileApps" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_gettopmobileapps" />
+        </Item>
         <Item text="Asignación de aplicación móvil" url="/en-us/api-reference/beta/resources/intune_apps_mobileappassignment">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get" />
@@ -2863,6 +2861,7 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update" />
         </Item>
+        <Item text="Configuración de asignación de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_apps_mobileappassignmentsettings" />
         <Item text="Categoría de aplicación para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcategory">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_get" />
@@ -2870,7 +2869,13 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_mobileappcategory_update" />
         </Item>
-        <Item text="Estado de carga de archivo de contenido de las aplicaciones para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfileuploadstate" />
+        <Item text="Contenido de aplicación para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontent">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_update" />
+        </Item>
         <Item text="Archivo de contenido de las aplicaciones para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfile">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_get" />
@@ -2880,13 +2885,7 @@
           <Item text="Acción commit" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_commit" />
           <Item text="Acción renewUpload" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontentfile_renewupload" />
         </Item>
-        <Item text="Contenido de aplicación para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontent">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_mobileappcontent_update" />
-        </Item>
+        <Item text="Estado de carga de archivo de contenido de las aplicaciones para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileappcontentfileuploadstate" />
         <Item text="Estado de instalación de las aplicaciones para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileappinstallstatus">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallstatus_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileappinstallstatus_get" />
@@ -2906,12 +2905,6 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_mobileappprovisioningconfiggroupassignment_update" />
         </Item>
         <Item text="Estado de publicación de aplicación móvil" url="/en-us/api-reference/beta/resources/intune_apps_mobileapppublishingstate" />
-        <Item text="Aplicación para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobileapp">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_get" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_assign" />
-          <Item text="getTopMobileApps" url="/en-us/api-reference/beta/api/intune_apps_mobileapp_gettopmobileapps" />
-        </Item>
         <Item text="Aplicación contenida para móviles" url="/en-us/api-reference/beta/resources/intune_apps_mobilecontainedapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_mobilecontainedapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_mobilecontainedapp_get" />
@@ -2930,8 +2923,6 @@
         </Item>
         <Item text="Nivel de presentación del progreso de instalación del conjunto de aplicaciones de Office" url="/en-us/api-reference/beta/resources/intune_apps_officesuiteinstallprogressdisplaylevel" />
         <Item text="Canal de actualización de Office" url="/en-us/api-reference/beta/resources/intune_apps_officeupdatechannel" />
-        <Item text="Estado de aplicación resultante" url="/en-us/api-reference/beta/resources/intune_apps_resultantappstate" />
-        <Item text="Opciones generadas del estado de UI guardadas" url="/en-us/api-reference/beta/resources/intune_apps_saveduistategenerationoptions" />
         <Item text="Certificado de firma de código de Symantec" url="/en-us/api-reference/beta/resources/intune_apps_symanteccodesigningcertificate">
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_symanteccodesigningcertificate_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_symanteccodesigningcertificate_update" />
@@ -2951,7 +2942,6 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_books_userinstallstatesummary_update" />
         </Item>
         <Item text="Tipo de licencia de VPP" url="/en-us/api-reference/beta/resources/intune_apps_vpplicensingtype" />
-        <Item text="Tipo de cuenta de token VPP" url="/en-us/api-reference/beta/resources/intune_apps_vpptokenaccounttype" />
         <Item text="Aplicación web" url="/en-us/api-reference/beta/resources/intune_apps_webapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_webapp_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_webapp_get" />
@@ -2959,7 +2949,6 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_webapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_webapp_update" />
         </Item>
-        <Item text="Configuración de asignación de la aplicación de AppX de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings" />
         <Item text="AppX de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsappx">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_get" />
@@ -2967,6 +2956,7 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsappx_update" />
         </Item>
+        <Item text="Configuración de asignación de la aplicación de AppX de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings" />
         <Item text="Arquitectura de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsarchitecture" />
         <Item text="Tipo de dispositivo de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsdevicetype" />
         <Item text="Versión mínima del sistema operativo Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsminimumoperatingsystem" />
@@ -2978,19 +2968,19 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsmobilemsi_update" />
         </Item>
         <Item text="Información del paquete de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowspackageinformation" />
-        <Item text="Paquete de AppX de Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81appxbundle">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_update" />
-        </Item>
         <Item text="AppX de Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81appx">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_get" />
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appx_update" />
+        </Item>
+        <Item text="Paquete de AppX de Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81appxbundle">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81appxbundle_update" />
         </Item>
         <Item text="Aplicación de Windows Phone 8.1 Store" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81storeapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsphone81storeapp_list" />
@@ -3013,6 +3003,13 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsstoreapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsstoreapp_update" />
         </Item>
+        <Item text="AppX universal de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappx">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_update" />
+        </Item>
         <Item text="Configuración de asignación de aplicaciones de AppX universal de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxappassignmentsettings" />
         <Item text="Aplicación contenida de AppX universal de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappxcontainedapp">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappxcontainedapp_list" />
@@ -3021,15 +3018,15 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappxcontainedapp_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappxcontainedapp_update" />
         </Item>
-        <Item text="AppX universal de Windows" url="/en-us/api-reference/beta/resources/intune_apps_windowsuniversalappx">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappx_update" />
-        </Item>
       </Item>
       <Item text="Términos de la empresa" url="/en-us/api-reference/beta/resources/intune_company_conceptual">
+        <Item text="Términos y condiciones" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_update" />
+        </Item>
         <Item text="Estado de aceptación de los términos y condiciones" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditionsacceptancestatus">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_get" />
@@ -3050,13 +3047,6 @@
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_update" />
-        </Item>
-        <Item text="Términos y condiciones" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_update" />
         </Item>
       </Item>
       <Item text="Inscripción corporativa" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
@@ -3081,7 +3071,6 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_update" />
         </Item>
-        <Item text="Tipo de token DEP" url="/en-us/api-reference/beta/resources/intune_enrollment_deptokentype" />
         <Item text="Fuente de detección" url="/en-us/api-reference/beta/resources/intune_corpenrollment_discoverysource" />
         <Item text="Perfil de inscripción" url="/en-us/api-reference/beta/resources/intune_corpenrollment_enrollmentprofile">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_list" />
@@ -3091,16 +3080,6 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_update" />
           <Item text="Acción updateDeviceProfileAssignment" url="/en-us/api-reference/beta/api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment" />
         </Item>
-        <Item text="Estado de inscripción" url="/en-us/api-reference/beta/resources/intune_corpenrollment_enrollmentstate" />
-        <Item text="Estado de inscripción" url="/en-us/api-reference/beta/resources/intune_enrollment_enrollmentstate" />
-        <Item text="Modo de emparejamiento de iTunes" url="/en-us/api-reference/beta/resources/intune_corpenrollment_itunespairingmode" />
-        <Item text="Resultado de identidad de dispositivo de Apple importada" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentityresult">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_update" />
-        </Item>
         <Item text="Identidad de dispositivo de Apple importada" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentity">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_get" />
@@ -3108,6 +3087,21 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_update" />
           <Item text="Acción importAppleDeviceIdentityList" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentity_importappledeviceidentitylist" />
+        </Item>
+        <Item text="Resultado de identidad de dispositivo de Apple importada" url="/en-us/api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentityresult">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_corpenrollment_importedappledeviceidentityresult_update" />
+        </Item>
+        <Item text="Identidad de dispositivo importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentity">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_update" />
+          <Item text="Acción importDeviceIdentityList" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_importdeviceidentitylist" />
         </Item>
         <Item text="Resultado de identidad de dispositivo importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentityresult">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_list" />
@@ -3117,16 +3111,6 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentityresult_update" />
         </Item>
         <Item text="Tipo de identidad de dispositivo importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentitytype" />
-        <Item text="Identidad de dispositivo importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importeddeviceidentity">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_update" />
-          <Item text="Acción importDeviceIdentityList" url="/en-us/api-reference/beta/api/intune_enrollment_importeddeviceidentity_importdeviceidentitylist" />
-        </Item>
-        <Item text="Estado de importación de identidad del dispositivo de Windows Autopilot importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
-        <Item text="Identidad de estado del dispositivo de Windows Autopilot importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
         <Item text="Identidad del dispositivo de Windows Autopilot importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get" />
@@ -3134,21 +3118,22 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
         </Item>
+        <Item text="Estado de importación de identidad del dispositivo de Windows Autopilot importado" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
+        <Item text="Identidad de estado del dispositivo de Windows Autopilot importada" url="/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
+        <Item text="Modo de emparejamiento de iTunes" url="/en-us/api-reference/beta/resources/intune_corpenrollment_itunespairingmode" />
         <Item text="Certificado de administración con huella digital" url="/en-us/api-reference/beta/resources/intune_corpenrollment_managementcertificatewiththumbprint" />
-        <Item text="Configuración rápida" url="/en-us/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings" />
-        <Item text="Plataforma" url="/en-us/api-reference/beta/resources/intune_corpenrollment_platform" />
-        <Item text="Plataforma" url="/en-us/api-reference/beta/resources/intune_enrollment_platform" />
-        <Item text="Opciones generadas del estado de UI guardadas" url="/en-us/api-reference/beta/resources/intune_enrollment_saveduistategenerationoptions" />
+        <Item text="Configuración de experiencia no incluida" url="/en-us/api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings" />
+        <Item text="Configuración de inscripción piloto automático de Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotenrollmentsettings" />
+        <Item text="Perfil de la implementación de Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign" />
+        </Item>
         <Item text="Asignación de perfil de la implementación de Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofileassignment">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_get" />
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofileassignment_update" />
-        </Item>
-        <Item text="Perfil de la implementación de Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeploymentprofile">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign" />
         </Item>
         <Item text="Identidad del dispositivo de Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_list" />
@@ -3164,10 +3149,7 @@
           <Item text="Acción de sincronización" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync" />
         </Item>
         <Item text="Estado de sincronización de Windows Autopilot" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotsyncstatus" />
-        <Item text="Configuración de combinación de dominio de Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsdomainjoinconfiguration">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update" />
-        </Item>
+        <Item text="Tipo de uso de dispositivo de Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsdeviceusagetype" />
         <Item text="Configuración de pantalla de estado de la inscripción de Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsenrollmentstatusscreensettings" />
         <Item text="Tipo de usuario de Windows" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsusertype" />
       </Item>
@@ -3190,24 +3172,6 @@
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_update" />
-        </Item>
-        <Item text="Base de acción local para el cumplimiento de dispositivos Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionbase">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionbase_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionbase_get" />
-        </Item>
-        <Item text="Dispositivo de bloqueo de acción local para el cumplimiento de dispositivos Android con código de acceso" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode">
-          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_update" />
-        </Item>
-        <Item text="Dispositivo de bloqueo de acción local para el cumplimiento de dispositivos Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevice_update" />
         </Item>
         <Item text="Modo de batería conectada de propietario de dispositivo Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddeviceownerbatterypluggedmode" />
         <Item text="Tipo de directiva de permisos de aplicación predeterminado de propietario de dispositivo Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androiddeviceownerdefaultapppermissionpolicytype" />
@@ -3387,6 +3351,13 @@
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecertificateprofilebase_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecertificateprofilebase_get" />
         </Item>
+        <Item text="Directiva de cumplimiento del perfil de trabajo Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecompliancepolicy">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecompliancepolicy_update" />
+        </Item>
         <Item text="Tipo de uso compartido de datos entre perfiles de perfil profesional de Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype" />
         <Item text="Configuración personalizada de perfil profesional de Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecustomconfiguration">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidworkprofilecustomconfiguration_list" />
@@ -3497,7 +3468,6 @@
         <Item text="Almacén de certificados de destino" url="/en-us/api-reference/beta/resources/intune_deviceconfig_certificatedestinationstore" />
         <Item text="Almacén de certificados" url="/en-us/api-reference/beta/resources/intune_deviceconfig_certificatestore" />
         <Item text="Escala del período de validez del certificado" url="/en-us/api-reference/beta/resources/intune_deviceconfig_certificatevalidityperiodscale" />
-        <Item text="Estado de cumplimiento" url="/en-us/api-reference/beta/resources/intune_deviceconfig_compliancestatus" />
         <Item text="Uso de configuración" url="/en-us/api-reference/beta/resources/intune_deviceconfig_configurationusage" />
         <Item text="Día de la semana" url="/en-us/api-reference/beta/resources/intune_deviceconfig_dayofweek" />
         <Item text="Directiva de cumplimiento de dispositivos predeterminada" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defaultdevicecompliancepolicy">
@@ -3515,8 +3485,10 @@
         <Item text="Aviso de Defender para el envío de ejemplo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderpromptforsamplesubmission" />
         <Item text="Tipo de protección de Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderprotectiontype" />
         <Item text="Tipo de análisis de Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderscantype" />
+        <Item text="Día de análisis de programación Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderschedulescanday" />
         <Item text="Tipo de visualización de contactos de TI del Centro de seguridad de Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defendersecuritycenteritcontactdisplaytype" />
         <Item text="Notificaciones del Centro de seguridad de Defender del tipo de aplicación" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defendersecuritycenternotificationsfromapptype" />
+        <Item text="Tipo de consentimiento de ejemplos de enviar Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defendersubmitsamplesconsenttype" />
         <Item text="Acción de amenaza de Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_defenderthreataction" />
         <Item text="Elemento de acción de cumplimiento de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecomplianceactionitem">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceactionitem_list" />
@@ -3537,6 +3509,12 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancedevicestatus_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancedevicestatus_update" />
         </Item>
+        <Item text="Directiva de cumplimiento de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
+          <Item text="Acción scheduleActionsForRules" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
+        </Item>
         <Item text="Asignación de directivas de cumplimiento de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicyassignment">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicyassignment_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicyassignment_get" />
@@ -3548,19 +3526,13 @@
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicydevicestatesummary_update" />
         </Item>
+        <Item text="Estado de configuración de la directiva de cumplimiento de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
         <Item text="Resumen de estado de configuración de directiva de cumplimiento de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_get" />
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicysettingstatesummary_update" />
-        </Item>
-        <Item text="Estado de configuración de la directiva de cumplimiento de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicysettingstate" />
-        <Item text="Directiva de cumplimiento de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
-          <Item text="Acción scheduleActionsForRules" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_scheduleactionsforrules" />
         </Item>
         <Item text="Acción programada de cumplimiento de dispositivos para la regla" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicecompliancescheduledactionforrule">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancescheduledactionforrule_list" />
@@ -3586,6 +3558,13 @@
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceuserstatus_create" />
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceuserstatus_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecomplianceuserstatus_update" />
+        </Item>
+        <Item text="Configuración de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
+          <Item text="Acción windowsPrivacyAccessControls" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
+          <Item text="Acción assignedAccessMultiModeProfiles" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
         </Item>
         <Item text="Asignación de configuración de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationassignment_list" />
@@ -3632,27 +3611,24 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatus_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfigurationuserstatus_update" />
         </Item>
-        <Item text="Configuración de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfiguration">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
-          <Item text="Acción windowsPrivacyAccessControls" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
-          <Item text="Acción assignedAccessMultiModeProfiles" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
-        </Item>
         <Item text="Tipo de restricción de credenciales de autoridad de sistema local de restricción de dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceguardlocalsystemauthoritycredentialguardtype" />
         <Item text="Configuración de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings" />
         <Item text="Tipo de plataforma de dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceplatformtype" />
         <Item text="Nivel de protección contra amenazas del dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicethreatprotectionlevel" />
-        <Item text="Tipo de dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicetype" />
         <Item text="Modo de envío de datos de diagnóstico" url="/en-us/api-reference/beta/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
+        <Item text="Origen de nombres de dominio" url="/en-us/api-reference/beta/resources/intune_deviceconfig_domainnamesource" />
         <Item text="Configuración rápida de EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_eapfastconfiguration" />
         <Item text="Tipo de EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_eaptype" />
         <Item text="Método de autenticación de EAS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_easauthenticationmethod" />
+        <Item text="Base de configuración de perfil de correo electrónico de EAS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_easemailprofileconfigurationbase">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_easemailprofileconfigurationbase_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_easemailprofileconfigurationbase_get" />
+        </Item>
         <Item text="Directiva de cookies de Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgecookiepolicy" />
+        <Item text="Motor de búsqueda de Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchengine" />
         <Item text="Base de motor de búsqueda de Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchenginebase" />
         <Item text="Motor de búsqueda de Edge personalizado" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchenginecustom" />
         <Item text="Tipo de motor de búsqueda de Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchenginetype" />
-        <Item text="Motor de búsqueda de Edge" url="/en-us/api-reference/beta/resources/intune_deviceconfig_edgesearchengine" />
         <Item text="Configuración de la actualización de edición" url="/en-us/api-reference/beta/resources/intune_deviceconfig_editionupgradeconfiguration">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_get" />
@@ -3673,13 +3649,13 @@
         <Item text="Propósito previsto" url="/en-us/api-reference/beta/resources/intune_deviceconfig_intendedpurpose" />
         <Item text="Nivel de seguridad de sitio de Internet" url="/en-us/api-reference/beta/resources/intune_deviceconfig_internetsitesecuritylevel" />
         <Item text="Marcador de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosbookmark" />
-        <Item text="Base de perfil de certificado de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_get" />
-        </Item>
         <Item text="Perfil de certificado de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofile">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofile_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofile_get" />
+        </Item>
+        <Item text="Base de perfil de certificado de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscertificateprofilebase_get" />
         </Item>
         <Item text="Directiva de cumplimiento de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_ioscompliancepolicy_list" />
@@ -3739,8 +3715,8 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_iosgeneraldeviceconfiguration_update" />
         </Item>
         <Item text="Aplicación de la pantalla de inicio de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenapp" />
-        <Item text="Página de la carpeta para la pantalla de inicio de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="Carpeta para la pantalla de inicio de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolder" />
+        <Item text="Página de la carpeta para la pantalla de inicio de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenfolderpage" />
         <Item text="Elemento de la pantalla de inicio de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenitem" />
         <Item text="Página de pantalla de inicio de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioshomescreenpage" />
         <Item text="Perfil de certificado PFX importado de iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile">
@@ -3810,10 +3786,12 @@
         <Item text="Tamaño de la clave" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keysize" />
         <Item text="Opción de proveedor de almacenamiento de claves" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keystorageprovideroption" />
         <Item text="Usos de claves" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyusages" />
+        <Item text="Valor de clave" url="/en-us/api-reference/beta/resources/intune_deviceconfig_keyvalue" />
         <Item text="Tipo de comportamiento de solicitud de elevación de administrador de opciones de seguridad locales" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsadministratorelevationpromptbehaviortype" />
         <Item text="Tipo de usuario que puede realizar las opciones de seguridad locales de formato y expulsión de medios extraíbles" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsformatandejectofremovablemediaallowedusertype" />
         <Item text="Tipo de información de opciones de seguridad locales que se muestra en la pantalla de bloqueo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsinformationdisplayedonlockscreentype" />
         <Item text="Tipo de información de opciones de seguridad locales que se muestra en la pantalla de bloqueo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsinformationshownonlockscreentype" />
+        <Item text="Tipo de comportamiento de eliminación de tarjeta inteligente de opciones de seguridad local" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionssmartcardremovalbehaviortype" />
         <Item text="Tipo de comportamiento de solicitud de elevación de usuario estándar de opciones de seguridad locales" url="/en-us/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsstandarduserelevationpromptbehaviortype" />
         <Item text="Base de perfil de certificado de macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list" />
@@ -3916,7 +3894,6 @@
         <Item text="Clasificación del contenido multimedia del Reino Unido" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="Clasificación de contenido multimedia de Estados Unidos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates" />
         <Item text="Canal de Miracast" url="/en-us/api-reference/beta/resources/intune_deviceconfig_miracastchannel" />
-        <Item text="Estado de conector NDES" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnectorstate" />
         <Item text="Conector NDES" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_get" />
@@ -3924,17 +3901,18 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_update" />
         </Item>
+        <Item text="Estado de conector NDES" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnectorstate" />
         <Item text="Tipo de método de autenticación no EAP para TTLS de EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_noneapauthenticationmethodforeapttlstype" />
         <Item text="Tipo de método de autenticación no EAP para PEAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_noneapauthenticationmethodforpeap" />
         <Item text="Rango numérico" url="/en-us/api-reference/beta/resources/intune_deviceconfig_numberrange" />
+        <Item text="Configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasetting" />
         <Item text="Base64 de la configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingbase64" />
         <Item text="Booleano de la configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingboolean" />
         <Item text="Fecha y hora de la configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingdatetime" />
         <Item text="Número de punto flotante de la configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingfloatingpoint" />
         <Item text="Entero de la configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettinginteger" />
-        <Item text="Cadena de configuración XML de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="Cadena de configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingstring" />
-        <Item text="Configuración de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasetting" />
+        <Item text="Cadena de configuración XML de OMA" url="/en-us/api-reference/beta/resources/intune_deviceconfig_omasettingstringxml" />
         <Item text="Rango de la versión del sistema operativo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_operatingsystemversionrange" />
         <Item text="Directiva de plataforma de dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_policyplatformtype" />
         <Item text="Características de versión preliminar" url="/en-us/api-reference/beta/resources/intune_deviceconfig_prereleasefeatures" />
@@ -3967,7 +3945,6 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_restrictedappsviolation_update" />
         </Item>
         <Item text="Tipo de filtro de búsqueda segura" url="/en-us/api-reference/beta/resources/intune_deviceconfig_safesearchfiltertype" />
-        <Item text="Opciones generadas del estado de UI guardadas" url="/en-us/api-reference/beta/resources/intune_deviceconfig_saveduistategenerationoptions" />
         <Item text="Tipo de cuenta de evaluación segura" url="/en-us/api-reference/beta/resources/intune_deviceconfig_secureassessmentaccounttype" />
         <Item text="Origen de la configuración" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingsource" />
         <Item text="Resumen de dispositivo de estado de configuración" url="/en-us/api-reference/beta/resources/intune_deviceconfig_settingstatedevicesummary">
@@ -3996,20 +3973,29 @@
         <Item text="Configuración de administración de estado" url="/en-us/api-reference/beta/resources/intune_deviceconfig_statemanagementsetting" />
         <Item text="Tipo de nombre alternativo del asunto" url="/en-us/api-reference/beta/resources/intune_deviceconfig_subjectalternativenametype" />
         <Item text="Formato de nombre del asunto" url="/en-us/api-reference/beta/resources/intune_deviceconfig_subjectnameformat" />
+        <Item text="Configuración de dispositivo no admitida" url="/en-us/api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfiguration">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_unsupporteddeviceconfiguration_update" />
+        </Item>
+        <Item text="Detalle de la configuración de dispositivo no admitida" url="/en-us/api-reference/beta/resources/intune_deviceconfig_unsupporteddeviceconfigurationdetail" />
         <Item text="Clasificación de actualización" url="/en-us/api-reference/beta/resources/intune_deviceconfig_updateclassification" />
         <Item text="Origen de correo electrónico del usuario" url="/en-us/api-reference/beta/resources/intune_deviceconfig_useremailsource" />
+        <Item text="Origen de nombre de usuario" url="/en-us/api-reference/beta/resources/intune_deviceconfig_usernamesource" />
         <Item text="Configuración de visibilidad" url="/en-us/api-reference/beta/resources/intune_deviceconfig_visibilitysetting" />
         <Item text="Método de autenticación de VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnauthenticationmethod" />
         <Item text="Regla de DNS de VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpndnsrule" />
+        <Item text="Regla bajo demanda de VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandrule" />
         <Item text="Acción de conexión de regla bajo demanda de VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandruleconnectionaction" />
         <Item text="Acción de dominio de conexión de regla bajo demanda de VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandruleconnectiondomainaction" />
-        <Item text="Regla bajo demanda de VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnondemandrule" />
         <Item text="Servidor proxy de VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnproxyserver" />
         <Item text="Ruta VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnroute" />
         <Item text="Servidor VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpnserver" />
+        <Item text="Regla de tráfico VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficrule" />
         <Item text="Tipo de aplicación de regla de tráfico VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficruleapptype" />
         <Item text="Tipo de directiva de enrutamiento de regla de tráfico VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficruleroutingpolicytype" />
-        <Item text="Regla de tráfico VPN" url="/en-us/api-reference/beta/resources/intune_deviceconfig_vpntrafficrule" />
         <Item text="Configuración de cookies del explorador web" url="/en-us/api-reference/beta/resources/intune_deviceconfig_webbrowsercookiesettings" />
         <Item text="Programación semanal" url="/en-us/api-reference/beta/resources/intune_deviceconfig_weeklyschedule" />
         <Item text="Información de la reunión de la pantalla de inicio de sesión" url="/en-us/api-reference/beta/resources/intune_deviceconfig_welcomescreenmeetinginformation" />
@@ -4192,14 +4178,29 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
         </Item>
         <Item text="Modo de optimización de entrega de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdeliveryoptimizationmode" />
-        <Item text="Configuración de combinación de dominio de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
-          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update" />
-        </Item>
         <Item text="Perfil de red del Firewall de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsfirewallnetworkprofile" />
+        <Item text="Grupo de Active Directory de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskactivedirectorygroup" />
+        <Item text="Base de la aplicación de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskappbase" />
+        <Item text="Configuración de aplicación de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskappconfiguration" />
+        <Item text="Inicio automático de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskautologon" />
+        <Item text="Grupo de Windows Azure AD de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskazureadgroup" />
+        <Item text="Usuario de Azure AD de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskazureaduser" />
+        <Item text="Configuración de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskconfiguration">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowskioskconfiguration_update" />
+        </Item>
+        <Item text="Aplicación de escritorio de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskdesktopapp" />
+        <Item text="Grupo local de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskiosklocalgroup" />
+        <Item text="Usuario local de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskiosklocaluser" />
+        <Item text="Varias aplicaciones de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskmultipleapps" />
+        <Item text="Perfil de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskprofile" />
+        <Item text="Aplicación UWP única de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskiosksingleuwpapp" />
+        <Item text="Usuario de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskuser" />
+        <Item text="Aplicación UWP de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskuwpapp" />
+        <Item text="Visitante de quiosco de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowskioskvisitor" />
         <Item text="Directiva de aislamiento de red de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsnetworkisolationpolicy" />
         <Item text="Base de perfil de certificado de Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_list" />
@@ -4294,9 +4295,8 @@
         <Item text="Tipo de conexión de VPN de Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsvpnconnectiontype" />
       </Item>
       <Item text="Administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_conceptual">
-        <Item text="Estado de acción" url="/en-us/api-reference/beta/resources/intune_devices_actionstate" />
-        <Item text="Estado de consentimiento del administrador" url="/en-us/api-reference/beta/resources/intune_devices_adminconsentstate" />
         <Item text="Consentimiento del administrador" url="/en-us/api-reference/beta/resources/intune_devices_adminconsent" />
+        <Item text="Estado de consentimiento del administrador" url="/en-us/api-reference/beta/resources/intune_devices_adminconsentstate" />
         <Item text="Certificado de notificación de inserción de Apple" url="/en-us/api-reference/beta/resources/intune_devices_applepushnotificationcertificate">
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_applepushnotificationcertificate_update" />
@@ -4334,15 +4334,23 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_detectedapp_update" />
         </Item>
         <Item text="Resultado de la acción de dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_deviceactionresult" />
-        <Item text="Tipo de inscripción de dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_deviceenrollmenttype" />
+        <Item text="Motivo del error de la inscripción de dispositivo" url="/en-us/api-reference/beta/resources/intune_troubleshooting_deviceenrollmentfailurereason" />
         <Item text="Resumen del estado de acceso del dispositivo a Exchange" url="/en-us/api-reference/beta/resources/intune_devices_deviceexchangeaccessstatesummary" />
         <Item text="Geolocalización de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicegeolocation" />
         <Item text="Estado de restricción de credenciales de autoridad de sistema local de restricción de dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_deviceguardlocalsystemauthoritycredentialguardstate" />
         <Item text="Estado de requisito de hardware de seguridad basada en virtualización de protección de dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_deviceguardvirtualizationbasedsecurityhardwarerequirementstate" />
         <Item text="Estado de seguridad basado en protección de virtualización de dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_deviceguardvirtualizationbasedsecuritystate" />
         <Item text="Estado de la atestación de estado del dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_devicehealthattestationstate" />
-        <Item text="Motivo del estado de acceso de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
         <Item text="Estado de acceso de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementexchangeaccessstate" />
+        <Item text="Motivo del estado de acceso de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementexchangeaccessstatereason" />
+        <Item text="Script de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
+        </Item>
         <Item text="Asignación del script de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscriptassignment">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptassignment_get" />
@@ -4375,14 +4383,6 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscriptuserstate_update" />
         </Item>
-        <Item text="Script de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementscript">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_update" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_devices_devicemanagementscript_assign" />
-        </Item>
         <Item text="Estado de suscripción de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementsubscriptionstate" />
         <Item text="Suscripciones de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_devicemanagementsubscriptions" />
         <Item text="Evento de solución de problemas de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
@@ -4395,7 +4395,6 @@
         <Item text="Resumen de sistemas operativos de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_deviceoperatingsystemsummary" />
         <Item text="Información general de protección de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_deviceprotectionoverview" />
         <Item text="Estado de registro de dispositivos" url="/en-us/api-reference/beta/resources/intune_devices_deviceregistrationstate" />
-        <Item text="Tipo de dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_devicetype" />
         <Item text="Evento de solución de problemas de inscripción" url="/en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
@@ -4416,20 +4415,13 @@
         <Item text="Resultado de la acción Buscar dispositivo" url="/en-us/api-reference/beta/resources/intune_devices_locatedeviceactionresult" />
         <Item text="Usuario con sesión iniciada" url="/en-us/api-reference/beta/resources/intune_devices_loggedonuser" />
         <Item text="Estado de modo Perdido" url="/en-us/api-reference/beta/resources/intune_devices_lostmodestate" />
-        <Item text="Fabricantes y modelos de dispositivos administrados" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers" />
-        <Item text="Resumen de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
-        </Item>
-        <Item text="Tipo de propietario de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceownertype" />
-        <Item text="Estado notificado de partner de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
-        <Item text="Acción remota de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceremoteaction" />
         <Item text="Dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddevice">
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_update" />
           <Item text="Acción executeAction" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_executeaction" />
           <Item text="Acción enableLostMode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_enablelostmode" />
           <Item text="Acción playLostModeSound" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_playlostmodesound" />
+          <Item text="acción setDeviceName" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_setdevicename" />
           <Item text="Acción retire" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_retire" />
           <Item text="Acción wipe" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_wipe" />
           <Item text="Acción resetPasscode" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_resetpasscode" />
@@ -4450,8 +4442,40 @@
           <Item text="Acción updateWindowsDeviceAccount" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
           <Item text="Acción revokeAppleVppLicenses" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses" />
         </Item>
+        <Item text="Opciones de limpieza de dispositivos administrados" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicecleanupsettings" />
+        <Item text="Fabricantes y modelos de dispositivos administrados" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers" />
+        <Item text="Resumen de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceoverview">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_get" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_manageddeviceoverview_update" />
+        </Item>
+        <Item text="Tipo de propietario de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceownertype" />
+        <Item text="Estado notificado de partner de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicepartnerreportedhealthstate" />
+        <Item text="Acción remota de dispositivo administrado" url="/en-us/api-reference/beta/resources/intune_devices_manageddeviceremoteaction" />
         <Item text="Tipo de agente de administración" url="/en-us/api-reference/beta/resources/intune_devices_managementagenttype" />
         <Item text="Estado de administración" url="/en-us/api-reference/beta/resources/intune_devices_managementstate" />
+        <Item text="Tipo de acción de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappactiontype" />
+        <Item text="Intención de aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappintent" />
+        <Item text="Estado e intención de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappintentandstate">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileappintentandstate_update" />
+        </Item>
+        <Item text="Detalles del estado e intención de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileappintentandstatedetail" />
+        <Item text="Historial de creación de la directiva de aplicaciones de solución de problemas de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory" />
+        <Item text="Historial de estado de aplicaciones de solución de problemas de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory" />
+        <Item text="Historial de destino de aplicaciones de solución de problemas de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory" />
+        <Item text="Historial de actualización de aplicaciones de solución de problemas de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory" />
+        <Item text="Historial de protección de dispositivo de solución de problemas de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory" />
+        <Item text="Evento de solución de problemas de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootingevent">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_troubleshooting_mobileapptroubleshootingevent_update" />
+        </Item>
+        <Item text="Elemento del historial de solución de problemas de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem" />
         <Item text="Plantilla de mensaje de notificación" url="/en-us/api-reference/beta/resources/intune_notification_notificationmessagetemplate">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_notification_notificationmessagetemplate_get" />
@@ -4462,6 +4486,7 @@
         </Item>
         <Item text="Opciones de marca de plantilla de notificación" url="/en-us/api-reference/beta/resources/intune_notification_notificationtemplatebrandingoptions" />
         <Item text="Tipo de propietario" url="/en-us/api-reference/beta/resources/intune_devices_ownertype" />
+        <Item text="Acción remota" url="/en-us/api-reference/beta/resources/intune_devices_remoteaction" />
         <Item text="Auditoría de acciones remotas" url="/en-us/api-reference/beta/resources/intune_devices_remoteactionaudit">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_get" />
@@ -4469,7 +4494,6 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_remoteactionaudit_update" />
         </Item>
-        <Item text="Acción remota" url="/en-us/api-reference/beta/resources/intune_devices_remoteaction" />
         <Item text="Estado de incorporación de asistencia remota" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistanceonboardingstatus" />
         <Item text="Partner de asistencia remota" url="/en-us/api-reference/beta/resources/intune_remoteassistance_remoteassistancepartner">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_remoteassistance_remoteassistancepartner_list" />
@@ -4485,7 +4509,6 @@
         <Item text="Resultado de la acción Revocar licencias VPP de Apple" url="/en-us/api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult" />
         <Item text="Tipo de Ejecutar como cuenta" url="/en-us/api-reference/beta/resources/intune_devices_runasaccounttype" />
         <Item text="Ejecutar programación" url="/en-us/api-reference/beta/resources/intune_devices_runschedule" />
-        <Item text="Estado de ejecución" url="/en-us/api-reference/beta/resources/intune_devices_runstate" />
         <Item text="Usuario de dispositivo Apple compartido" url="/en-us/api-reference/beta/resources/intune_devices_sharedappledeviceuser" />
         <Item text="Parámetro de la acción Actualizar la cuenta del dispositivo Windows" url="/en-us/api-reference/beta/resources/intune_devices_updatewindowsdeviceaccountactionparameter" />
         <Item text="Resultado de la acción Examinar de Windows Defender" url="/en-us/api-reference/beta/resources/intune_devices_windowsdefenderscanactionresult" />
@@ -4518,6 +4541,10 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_windowsmanageddevice_update" />
         </Item>
+        <Item text="Aplicación de administración de Windows" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
+        </Item>
         <Item text="Estado de mantenimiento de la aplicación de administración de Windows" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapphealthstate">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthstate_get" />
@@ -4529,16 +4556,12 @@
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapphealthsummary_update" />
         </Item>
-        <Item text="Aplicación de administración de Windows" url="/en-us/api-reference/beta/resources/intune_devices_windowsmanagementapp">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_get" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_windowsmanagementapp_update" />
-        </Item>
         <Item text="Estado de protección de Windows" url="/en-us/api-reference/beta/resources/intune_devices_windowsprotectionstate">
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_windowsprotectionstate_update" />
         </Item>
       </Item>
-      <Item text="Protección de aplicaciones" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
+      <Item text="Protección de la aplicación móvil" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
         <Item text="Protección de aplicaciones administradas de Android" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_get" />
@@ -4591,17 +4614,17 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_mam_managedappoperation_update" />
         </Item>
-        <Item text="Juego de caracteres anclado de aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedapppincharacterset" />
-        <Item text="Resumen de implementación de directivas de aplicaciones administradas por aplicación" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
-        <Item text="Resumen de implementación de directivas de aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_update" />
-        </Item>
+        <Item text="Juego de caracteres del PIN de aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedapppincharacterset" />
         <Item text="Directiva de aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicy">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get" />
           <Item text="Acción targetApps" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
+        <Item text="Resumen de implementación de directivas de aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_update" />
+        </Item>
+        <Item text="Resumen de implementación de directivas de aplicaciones administradas por aplicación" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummaryperapp" />
         <Item text="Protección de aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedappprotection">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_get" />
@@ -4612,13 +4635,13 @@
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_get" />
         </Item>
         <Item text="Acción de corrección de aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedappremediationaction" />
-        <Item text="Estado de las aplicaciones administradas sin procesar" url="/en-us/api-reference/beta/resources/intune_mam_managedappstatusraw">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_get" />
-        </Item>
         <Item text="Estado de las aplicaciones administradas" url="/en-us/api-reference/beta/resources/intune_mam_managedappstatus">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_managedappstatus_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedappstatus_get" />
+        </Item>
+        <Item text="Estado de las aplicaciones administradas sin procesar" url="/en-us/api-reference/beta/resources/intune_mam_managedappstatusraw">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_managedappstatusraw_get" />
         </Item>
         <Item text="Aplicación móvil administrada" url="/en-us/api-reference/beta/resources/intune_mam_managedmobileapp">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_list" />
@@ -4655,6 +4678,12 @@
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_get" />
           <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_assign" />
         </Item>
+        <Item text="Protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotection">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_get" />
+          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_assign" />
+        </Item>
+        <Item text="Aplicación de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Resumen de aprendizaje sobre las aplicaciones de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_wip_windowsinformationprotectionapplearningsummary">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_wip_windowsinformationprotectionapplearningsummary_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_wip_windowsinformationprotectionapplearningsummary_get" />
@@ -4669,7 +4698,6 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionapplockerfile_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionapplockerfile_update" />
         </Item>
-        <Item text="Aplicación de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionapp" />
         <Item text="Certificado de recuperación de datos de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectiondatarecoverycertificate" />
         <Item text="Aplicación de escritorio de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectiondesktopapp" />
         <Item text="Nivel de cumplimiento de Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionenforcementlevel" />
@@ -4681,7 +4709,7 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_wip_windowsinformationprotectionnetworklearningsummary_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_wip_windowsinformationprotectionnetworklearningsummary_update" />
         </Item>
-        <Item text="Requisitos de caracteres anclados de Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionpincharacterrequirements" />
+        <Item text="Requisitos de caracteres del PIN de protección de la información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionpincharacterrequirements" />
         <Item text="Directiva de Windows Information Protection" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionpolicy">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionpolicy_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotectionpolicy_get" />
@@ -4692,14 +4720,8 @@
         <Item text="Colección de dominios con proxy de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionproxieddomaincollection" />
         <Item text="Colección de recursos de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionresourcecollection" />
         <Item text="Aplicación de la tienda de protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotectionstoreapp" />
-        <Item text="Protección de información de Windows" url="/en-us/api-reference/beta/resources/intune_mam_windowsinformationprotection">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_get" />
-          <Item text="asignar acción" url="/en-us/api-reference/beta/api/intune_mam_windowsinformationprotection_assign" />
-        </Item>
       </Item>
       <Item text="Incorporación" url="/en-us/api-reference/beta/resources/intune_onboarding_conceptual">
-        <Item text="Estado de acción" url="/en-us/api-reference/beta/resources/intune_onboarding_actionstate" />
         <Item text="Configuración de conectores de certificado" url="/en-us/api-reference/beta/resources/intune_onboarding_certificateconnectorsetting" />
         <Item text="Configuración de incorporación de DEP" url="/en-us/api-reference/beta/resources/intune_onboarding_deponboardingsetting">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_onboarding_deponboardingsetting_list" />
@@ -4740,11 +4762,8 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update" />
         </Item>
         <Item text="Nivel de acceso de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccesslevel" />
-        <Item text="Tipo de regla de acceso de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccessruletype" />
         <Item text="Regla de acceso de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccessrule" />
-        <Item text="Estado de conector de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
-        <Item text="Tipo de sincronización de conector de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
-        <Item text="Tipo de conector de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
+        <Item text="Tipo de regla de acceso de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeaccessruletype" />
         <Item text="Conector de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_get" />
@@ -4753,13 +4772,14 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_update" />
           <Item text="Acción de sincronización" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
         </Item>
+        <Item text="Estado de conector de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorstatus" />
+        <Item text="Tipo de sincronización de conector de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectorsynctype" />
+        <Item text="Tipo de conector de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnectortype" />
         <Item text="Clase de dispositivo de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangedeviceclass" />
         <Item text="Directiva local de Exchange de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy">
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update" />
         </Item>
-        <Item text="Tipo de aplicación de partner de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnerapptype" />
-        <Item text="Estado de inquilino de partner de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnertenantstate" />
         <Item text="Partner de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartner">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_get" />
@@ -4767,6 +4787,8 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_update" />
         </Item>
+        <Item text="Tipo de aplicación de partner de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnerapptype" />
+        <Item text="Estado de inquilino de partner de administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnertenantstate" />
         <Item text="Activación" url="/en-us/api-reference/beta/resources/intune_onboarding_enablement" />
         <Item text="Tarea de configuración de inscripción" url="/en-us/api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_list" />
@@ -4803,13 +4825,7 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update" />
         </Item>
-        <Item text="Tipo de cuenta de token VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenaccounttype" />
-        <Item text="Motivo de fallo de acción de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionfailurereason" />
-        <Item text="Resultado de la acción de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionresult" />
-        <Item text="Resultado de la acción Revocar licencias de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenrevokelicensesactionresult" />
-        <Item text="Estado de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenstate" />
-        <Item text="Estado de sincronización de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokensyncstatus" />
-        <Item text="Token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptoken">
+        <Item text="Token VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptoken">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_get" />
           <Item text="Crear" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create" />
@@ -4819,6 +4835,11 @@
           <Item text="Acción syncLicenses" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses" />
           <Item text="Acción revokeLicenses" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses" />
         </Item>
+        <Item text="Motivo de fallo de acción de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionfailurereason" />
+        <Item text="Resultado de la acción de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenactionresult" />
+        <Item text="Resultado de la acción Revocar licencias de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenrevokelicensesactionresult" />
+        <Item text="Estado de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokenstate" />
+        <Item text="Estado de sincronización de token de VPP" url="/en-us/api-reference/beta/resources/intune_onboarding_vpptokensyncstatus" />
         <Item text="Configuración de página de finalización de inscripción de Windows 10" url="/en-us/api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
           <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get" />
@@ -4858,6 +4879,7 @@
           <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_rbac_roleassignment_delete" />
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_rbac_roleassignment_update" />
         </Item>
+        <Item text="Tipo de ámbito de asignación de roles" url="/en-us/api-reference/beta/resources/intune_rbac_roleassignmentscopetype" />
         <Item text="Definición de roles" url="/en-us/api-reference/beta/resources/intune_rbac_roledefinition">
           <Item text="Lista" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list" />
           <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_get" />
@@ -4866,6 +4888,68 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update" />
         </Item>
         <Item text="Permiso de rol" url="/en-us/api-reference/beta/resources/intune_rbac_rolepermission" />
+      </Item>
+      <Item text="Recursos compartidos" url="/en-us/api-reference/beta/resources/intune_shared_conceptual">
+        <Item text="Estado de acción" url="/en-us/api-reference/beta/resources/intune_shared_actionstate" />
+        <Item text="Destino de asignación de todos los dispositivos" url="/en-us/api-reference/beta/resources/intune_shared_alldevicesassignmenttarget" />
+        <Item text="Destino de asignación de todos los usuarios con licencia" url="/en-us/api-reference/beta/resources/intune_shared_alllicensedusersassignmenttarget" />
+        <Item text="Estado de cumplimiento" url="/en-us/api-reference/beta/resources/intune_shared_compliancestatus" />
+        <Item text="Destino de asignación de administración de dispositivos y aplicaciones" url="/en-us/api-reference/beta/resources/intune_shared_deviceandappmanagementassignmenttarget" />
+        <Item text="Administración de aplicaciones de dispositivo" url="/en-us/api-reference/beta/resources/intune_shared_deviceappmanagement">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_get" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_update" />
+          <Item text="Acción syncMicrosoftStoreForBusinessApps" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
+        </Item>
+        <Item text="Categoría de dispositivo" url="/en-us/api-reference/beta/resources/intune_shared_devicecategory">
+          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_update" />
+        </Item>
+        <Item text="Tipo de inscripción de dispositivo" url="/en-us/api-reference/beta/resources/intune_shared_deviceenrollmenttype" />
+        <Item text="Administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_get" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_update" />
+        </Item>
+        <Item text="Tipo de dispositivo" url="/en-us/api-reference/beta/resources/intune_shared_devicetype" />
+        <Item text="Estado de inscripción" url="/en-us/api-reference/beta/resources/intune_shared_enrollmentstate" />
+        <Item text="Destino de asignación de grupo de exclusión" url="/en-us/api-reference/beta/resources/intune_shared_exclusiongroupassignmenttarget" />
+        <Item text="Destino de asignación de grupo" url="/en-us/api-reference/beta/resources/intune_shared_groupassignmenttarget" />
+        <Item text="Objetivo de instalación" url="/en-us/api-reference/beta/resources/intune_shared_installintent" />
+        <Item text="Intervalo IP" url="/en-us/api-reference/beta/resources/intune_shared_iprange" />
+        <Item text="Intervalo IPv4" url="/en-us/api-reference/beta/resources/intune_shared_ipv4range" />
+        <Item text="Intervalo IPv6" url="/en-us/api-reference/beta/resources/intune_shared_ipv6range" />
+        <Item text="Par clave-valor" url="/en-us/api-reference/beta/resources/intune_shared_keyvaluepair" />
+        <Item text="Contenido MIME" url="/en-us/api-reference/beta/resources/intune_shared_mimecontent" />
+        <Item text="Plataforma" url="/en-us/api-reference/beta/resources/intune_shared_platform" />
+        <Item text="Dominio con proxy" url="/en-us/api-reference/beta/resources/intune_shared_proxieddomain" />
+        <Item text="Informe" url="/en-us/api-reference/beta/resources/intune_shared_report" />
+        <Item text="Raíz de informes" url="/en-us/api-reference/beta/resources/intune_shared_reportroot">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_reportroot_get" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_reportroot_update" />
+        </Item>
+        <Item text="Estado de aplicación resultante" url="/en-us/api-reference/beta/resources/intune_shared_resultantappstate" />
+        <Item text="Estado de ejecución" url="/en-us/api-reference/beta/resources/intune_shared_runstate" />
+        <Item text="Opciones generadas del estado de UI guardadas" url="/en-us/api-reference/beta/resources/intune_shared_saveduistategenerationoptions" />
+        <Item text="URI" url="/en-us/api-reference/beta/resources/intune_shared_uri" />
+        <Item text="Usuario" url="/en-us/api-reference/beta/resources/intune_shared_user">
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_user_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_shared_user_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_shared_user_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_user_update" />
+          <Item text="Acción removeAllDevicesFromManagement" url="/en-us/api-reference/beta/api/intune_shared_user_removealldevicesfrommanagement" />
+          <Item text="Acción wipeManagedAppRegistrationByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationbydevicetag" />
+          <Item text="Acción wipeManagedAppRegistrationsByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
+        </Item>
+        <Item text="Tipo de cuenta de token VPP" url="/en-us/api-reference/beta/resources/intune_shared_vpptokenaccounttype" />
+        <Item text="Configuración de combinación de dominio de Windows" url="/en-us/api-reference/beta/resources/intune_shared_windowsdomainjoinconfiguration">
+          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_list" />
+          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get" />
+          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_create" />
+          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_delete" />
+          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update" />
+        </Item>
       </Item>
       <Item text="Gastos de telecomunicaciones" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
         <Item text="Partner de administración de gastos de telecomunicaciones" url="/en-us/api-reference/beta/resources/intune_tem_telecomexpensemanagementpartner">
@@ -4876,59 +4960,7 @@
           <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_tem_telecomexpensemanagementpartner_update" />
         </Item>
       </Item>
-      <Item text="Compartidos" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
-        <Item text="Destino de asignación de todos los dispositivos" url="/en-us/api-reference/beta/resources/intune_shared_alldevicesassignmenttarget" />
-        <Item text="Destino de asignación de todos los usuarios con licencia" url="/en-us/api-reference/beta/resources/intune_shared_alllicensedusersassignmenttarget" />
-        <Item text="Destino de asignación de administración de dispositivos y aplicaciones" url="/en-us/api-reference/beta/resources/intune_shared_deviceandappmanagementassignmenttarget" />
-        <Item text="Administración de aplicaciones de dispositivo" url="/en-us/api-reference/beta/resources/intune_shared_deviceappmanagement">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_get" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_update" />
-          <Item text="Acción syncMicrosoftStoreForBusinessApps" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps" />
-        </Item>
-        <Item text="Categoría de dispositivo" url="/en-us/api-reference/beta/resources/intune_shared_devicecategory">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update" />
-        </Item>
-        <Item text="Administración de dispositivos" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_get" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_devices_devicemanagement_update" />
-        </Item>
-        <Item text="Destino de asignación de grupo de exclusión" url="/en-us/api-reference/beta/resources/intune_shared_exclusiongroupassignmenttarget" />
-        <Item text="Destino de asignación de grupo" url="/en-us/api-reference/beta/resources/intune_shared_groupassignmenttarget" />
-        <Item text="Intervalo IP" url="/en-us/api-reference/beta/resources/intune_shared_iprange" />
-        <Item text="Intervalo IPv4" url="/en-us/api-reference/beta/resources/intune_shared_ipv4range" />
-        <Item text="Intervalo IPv6" url="/en-us/api-reference/beta/resources/intune_shared_ipv6range" />
-        <Item text="Par clave-valor" url="/en-us/api-reference/beta/resources/intune_shared_keyvaluepair" />
-        <Item text="Contenido MIME" url="/en-us/api-reference/beta/resources/intune_shared_mimecontent" />
-        <Item text="Dominio con proxy" url="/en-us/api-reference/beta/resources/intune_shared_proxieddomain" />
-        <Item text="Raíz de informes" url="/en-us/api-reference/beta/resources/intune_shared_reportroot">
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_reportroot_get" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_reportroot_update" />
-        </Item>
-        <Item text="Informe" url="/en-us/api-reference/beta/resources/intune_shared_report" />
-        <Item text="URI" url="/en-us/api-reference/beta/resources/intune_shared_uri" />
-        <Item text="User" url="/en-us/api-reference/beta/resources/intune_shared_user">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_shared_user_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_shared_user_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_shared_user_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_shared_user_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_shared_user_update" />
-          <Item text="Acción removeAllDevicesFromManagement" url="/en-us/api-reference/beta/api/intune_shared_user_removealldevicesfrommanagement" />
-          <Item text="Acción wipeManagedAppRegistrationByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationbydevicetag" />
-          <Item text="Acción wipeManagedAppRegistrationsByDeviceTag" url="/en-us/api-reference/beta/api/intune_shared_user_wipemanagedappregistrationsbydevicetag" />
-        </Item>
-        <Item text="Configuración de combinación de dominio de Windows" url="/en-us/api-reference/beta/resources/intune_shared_windowsdomainjoinconfiguration">
-          <Item text="Incluir en una lista" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list" />
-          <Item text="Obtener" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get" />
-          <Item text="Crear" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_create" />
-          <Item text="Eliminar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_delete" />
-          <Item text="Actualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update" />
-        </Item>
-      </Item>
-    </Item>
+  </Item>
 	<Item text="Educación" url="/en-us/api-reference/beta/resources/education-overview">
 		<Item text="Centros educativos" url="/en-us/api-reference/beta/resources/educationschool">
 			<Item text="Enumerar centros educativos" url="/en-us/api-reference/beta/api/educationroot_list_schools" />
@@ -4986,11 +5018,11 @@
 			<Item text="Eliminar recurso de envío" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
 			<Item text="Obtener envío" url="/en-us/api-reference/beta/api/educationsubmission_get" />
 			<Item text="Enviar envío" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
-			<Item text="Recuperar envío" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="Cancelar envío de envío" url="/en-us/api-reference/beta/api/educationsubmission_unsubmit" />
 			<Item text="Enumerar recursos enviados" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
 			<Item text="Obtener recurso enviado" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
 			<Item text="Calificar envío" url="/en-us/api-reference/beta/api/educationsubmission_update" />
-			<Item text="Liberar envío" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+			<Item text="Devolver envío" url="/en-us/api-reference/beta/api/educationsubmission_return" />
 		</Item>
 		<Item text="Perfil de sincronización" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile">
 			<Item text="Enumerar perfil" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
@@ -5065,7 +5097,7 @@
       </Item>
       <Item text="Asignación de roles de la aplicación" url="/en-us/api-reference/beta/resources/approleassignment" SEOKeyword="API de approleassignment, API de Microsoft Graph, API de approleassignment" SEODescription="Se usa para registrar cuándo un usuario o un grupo se asigna a una aplicación. En este caso, la asignación de roles dará como resultado un mosaico de aplicación que se muestra en el panel de acceso de usuario de la aplicación. Esta entidad también puede usarse para conceder el acceso de otra aplicación (modelada como servicio principal) a una aplicación de recursos en un rol determinado. Puede crear, leer, actualizar y eliminar asignaciones de rol. Hereda de DirectoryObject.">
           <Item text="Obtener appRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_get" SEOKeyword="Obtener appRoleAssignment, API de Microsoft Graph, API de approleassignment" SEODescription="Recuperar las propiedades y las relaciones del objeto approleassignment." />
-          <Item text="Actualizar approleassignment" url="/en-us/api-reference/beta/api/approleassignment_update" SEOKeyword="Actualizar approleassignment, API de Microsoft Graph, API de approleassignment" SEODescription="Actualizar las propiedades del objeto approleassignment." />
+          <Item text="Actualizar approleassignment" url="/en-us/api-reference/beta/api/approleassignment_update" SEOKeyword="Actualizar approleassignment, API de Microsoft Graph, API de approleassignment" SEODescription="Actualice las propiedades del objeto approleassignment." />
           <Item text="Eliminar appRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_delete" SEOKeyword="Eliminar appRoleAssignment, API de Microsoft Graph, API de approleassignment" SEODescription="Elimine el objeto appRoleAssignment." />
         </Item>
       <Item text="Aplicación" url="/en-us/api-reference/beta/resources/application" SEOKeyword="API de aplicación, API de Microsoft Graph, API de aplicación" SEODescription="">
@@ -5202,7 +5234,7 @@
         <Item text="Actualizar directiva" url="/en-us/api-reference/beta/api/policy_update" SEODescription="Actualice las propiedades de una directiva." />
         <Item text="Eliminar directiva" url="/en-us/api-reference/beta/api/policy_delete" SEODescription="Elimine una directiva existente." />
         <Item text="Asignar directiva" url="/en-us/api-reference/beta/api/policy_assign" SEODescription="Asigne directivas a las entidades de una organización, como aplicaciones y entidades de seguridad." />
-        <Item text="Lista de directivas asignadas" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="Lista de directivas asignadas de la entidad." />
+        <Item text="Enumerar directivas asignadas" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="Enumere las directivas asignadas de la entidad." />
         <Item text="Lista que se aplica a las aplicaciones" url="/en-us/api-reference/beta/api/policy_list_appliesto" SEODescription="Incluir en una lista las aplicaciones y las entidades de servicio a las que se aplica la directiva especificada." />
       </Item>
     <Item text="Privileged Identity Management" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="API de Privileged Identity Management, Azure AD, AADPIM, PIM, API de Microsoft Graph" SEODescription="Privileged Identity Management de Azure Active Directory">
@@ -5876,3 +5908,4 @@
     </Item>
 	</Item>
 	</Menu>
+
