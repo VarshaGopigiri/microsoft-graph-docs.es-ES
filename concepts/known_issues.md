@@ -32,7 +32,7 @@ Para ver los problemas conocidos al usar la consulta delta, consulte la [secció
 
 ### <a name="policy"></a>Directiva
 
-Usar Microsoft Graph para crear y nombrar un grupo de Office 365 omite cualquier directiva de grupo de Office 365 que esté configurada a través de Outlook Web App. 
+Usar Microsoft Graph para crear y nombrar un grupo de Office 365 omite cualquier directiva de grupo de Office 365 que esté configurada a través de Outlook Web App.
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Permisos para grupos y Microsoft Teams
 
@@ -104,12 +104,13 @@ GET \users('{id}')\calendars('{id}')\events
 Puede obtener HTTP 500 con el código de error `ErrorInternalServerTransientError`. El error se produce porque:
 
 - Tradicionalmente existen dos maneras de implementar el uso compartido del calendario, que, con fines de diferenciación, se les hace referencia como el enfoque "antiguo" y el enfoque "nuevo".
-- El enfoque nuevo está disponible en estos momentos para los calendarios de uso compartido con permisos de vista o edición, pero no con permisos delegados. 
-- Puede usar la API de REST de calendario para ver o editar los calendarios compartidos, solo si los calendarios se han compartido según el enfoque **nuevo**. 
+- El enfoque nuevo está disponible en estos momentos para los calendarios de uso compartido con permisos de vista o edición, pero no con permisos delegados.
+- Puede usar la API de REST de calendario para ver o editar los calendarios compartidos, solo si los calendarios se han compartido según el enfoque **nuevo**.
 - No puede usar la API de REST de calendario para ver o editar dichos calendarios (o sus eventos) si los calendarios se han compartido según el enfoque **antiguo**.
 
 
-Si un calendario se ha compartido con permisos de vista o edición pero con el enfoque antiguo, ahora puede trabajar en el error y actualizar manualmente el calendario de uso compartido para que use el enfoque nuevo. Con el tiempo, Outlook actualizará automáticamente todos los calendarios compartidos para que usen el nuevo enfoque, incluidos los calendarios compartidos con permisos de delegado. 
+Si un calendario se ha compartido con permisos de vista o edición pero con el enfoque antiguo, ahora puede trabajar en el error y actualizar manualmente el calendario de uso compartido para que use el enfoque nuevo.
+Con el tiempo, Outlook actualizará automáticamente todos los calendarios compartidos para que usen el nuevo enfoque, incluidos los calendarios compartidos con permisos de delegado.
 
 Para actualizar manualmente un calendario compartido para que use el enfoque nuevo, siga estos pasos:
 1.  El destinatario quita el calendario que se ha compartido anteriormente con ellos.
@@ -132,7 +133,7 @@ Solo los contactos personales son compatibles actualmente. Actualmente no se adm
 
 ### <a name="default-contacts-folder"></a>Carpeta de contactos predeterminada
 
-En la versión `/v1.0`, `GET /me/contactFolders` no incluye la carpeta de contactos predeterminada del usuario. 
+En la versión `/v1.0`, `GET /me/contactFolders` no incluye la carpeta de contactos predeterminada del usuario.
 
 Estará disponible una corrección. Mientras tanto, puede usar la siguiente consulta [enumerar contactos](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/user_list_contacts) y la propiedad **parentFolderId** como una solución alternativa para obtener el identificador de la carpeta de contactos predeterminada:
 
@@ -175,7 +176,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>El parámetro de comentario para crear un borrador
 
-El parámetro **comentario** para crear una respuesta o enviar un borrador ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) no se convierte en parte del cuerpo del borrador del mensaje resultante.  
+El parámetro **comentario** para crear una respuesta o enviar un borrador ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) no se convierte en parte del cuerpo del borrador del mensaje resultante.
 
 ## <a name="drives-files-and-content-streaming"></a>Unidades, archivos y streaming de contenido
 
@@ -183,16 +184,20 @@ El parámetro **comentario** para crear una respuesta o enviar un borrador ([cre
 
 ## <a name="query-parameter-limitations"></a>Limitaciones del parámetro de consulta
 
-* Limitaciones de **$expand**:
-    * No se admite para `nextLink`
-    * No se admite para más de un nivel de expansión
-    * No se admite con parámetros adicionales (**$filter**, **$select**)
-* No se admiten varios espacios de nombres
-* Las solicitudes GET en `$ref` y la conversión no se admiten en usuarios, grupos, dispositivos, entidades de servicio y aplicaciones.
-* `@odata.bind` no se admite.  Esto significa que los desarrolladores no podrán establecer correctamente `Accepted` o `RejectedSenders` en un grupo.
+* No se admiten varios espacios de nombres.
+* Las solicitudes GET en `$ref` y la conversión no se admiten en usuarios, grupos, dispositivos, entidades de seguridad y aplicaciones.
+* No se admite `@odata.bind`. Esto significa que los desarrolladores no podrán establecer correctamente `Accepted` o `RejectedSenders` en un grupo.
 * `@odata.id` no está presente en las navegaciones de no contención (como los mensajes) cuando se usan metadatos mínimos
-* No está disponible el filtrado o la búsqueda de carga de trabajo cruzada. 
-* La búsqueda de texto completo (con **$search**) solo está disponible para algunas entidades, como los mensajes.
+* `$expand`:
+  * No es compatible con `nextLink`
+  * No es compatible con más de un nivel de expansión
+  * No es compatible con parámetros adicionales (`$filter`, `$select`)
+* `$filter`:
+  * El punto de conexión `/attachments` no admite filtros. Si están presentes, se ignora el parámetro `$filter`.
+  * No se admite el filtrado de cargas de trabajo cruzadas.
+* `$search`:
+  * La búsqueda de texto completo solo está disponible para un subconjunto de entidades tales como mensajes.
+  * No se admite la búsqueda de cargas de trabajo cruzadas.
 
 ## <a name="delta-query"></a>Consulta delta
 
@@ -211,7 +216,7 @@ Limitaciones actuales:
 * La actualización de aplicaciones está restringida a las aplicaciones que se han registrado después de la actualización de la versión beta inicial.
 * Los usuarios de Azure Active Directory pueden registrar aplicaciones y agregar propietarios adicionales.
 * Compatibilidad con los protocolos OpenID Connect y OAuth.
-* Error en las asignaciones de directivas en una aplicación. 
+* Error en las asignaciones de directivas en una aplicación.
 * Las operaciones de ownedObjects que necesiten appId producirán un error (Por ejemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
 
 En desarrollo:
@@ -235,7 +240,8 @@ No se puede especificar una extensión abierta a la vez que se crea una instanci
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Creación de una instancia de recurso y adición de datos de extensión de esquema al mismo tiempo
 
-No se puede especificar una extensión de esquema en la misma operación de creación de una instancia de **contacto**, **evento**, **mensaje** o **publicación**. Debe crear primero la instancia de recurso y, a continuación, aplicar una revisión `PATCH` a esa instancia para agregar una extensión de esquema y datos personalizados. 
+No se puede especificar una extensión de esquema en la misma operación de creación de una instancia de **contacto**, **evento**, **mensaje** o **publicación**.
+Debe crear primero la instancia de recurso y, a continuación, aplicar una revisión `PATCH` a esa instancia para agregar una extensión de esquema y datos personalizados.
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Límite de 100 valores de propiedad de extensión de esquema permitido por cada instancia del recurso
 
