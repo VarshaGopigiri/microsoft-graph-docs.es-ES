@@ -5110,7 +5110,7 @@
           <Item text="Asignar propietario" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Crear propietario, API de Microsoft Graph, API de aplicación" SEODescription="Use esta API para crear un nuevo propietario." />
           <Item text="Enumerar propiedades de extensión" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Enumerar extensionProperties, API de Microsoft Graph, API de aplicación" SEODescription="Recuperar una lista de objetos extensionproperty." />
         </Item>
-	  <Item text="Registros de auditoría" url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="Registros de auditoría" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Auditoría de directorio" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="objeto directoryAudit, API de Microsoft Graph, Azure AD, registros de auditoría" SEODescription="">
 			<Item text="Auditorías de directorio de lista" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="API de registro de auditoría, API de Microsoft Graph, Azure AD, registros de auditoría" SEODescription="API para obtener una lista de objetos directoryAudit." />
 			<Item text="Obtener auditoría de directorio" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="API de registro de auditoría, API de Microsoft Graph, Azure AD, registros de auditoría" SEODescription="API para obtener objeto directoryAudit" />
