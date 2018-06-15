@@ -1689,6 +1689,7 @@
       <Item text="Enumerar elementos eliminados" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
       <Item text="Eliminar permanentemente" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
       <Item text="Restaurar elemento eliminado" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="Enumerar elementos eliminados que son propiedad del usuario" url="/en-us/api-reference/v1.0/api/directory_deleteditems_user_owned" />
     </Item>
     <Item text="Dispositivo" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="API de dispositivo, API de Microsoft Graph, API de dispositivo" SEODescription="Representa un dispositivo registrado en el directorio. Herede de DirectoryObject.">
       <Item text="Enumerar dispositivos" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="Enumerar dispositivos, API de Microsoft Graph, API de dispositivo" SEODescription="Recuperar una lista de objetos de dispositivo." />
@@ -5129,7 +5130,7 @@
         <Item text="Enumerar elementos eliminados" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Eliminar permanentemente" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restaurar elemento eliminado" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
-		<Item text="Enumerar elementos eliminados que son propiedad del usuario" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
+        <Item text="Enumerar elementos eliminados que son propiedad del usuario" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
 
       <Item text="Dispositivo" url="/en-us/api-reference/beta/resources/device" SEOKeyword="API de dispositivo, API de Microsoft Graph, API de dispositivo" SEODescription="Representa un dispositivo registrado en el directorio. Herede de DirectoryObject.">

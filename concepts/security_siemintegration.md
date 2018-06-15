@@ -48,10 +48,12 @@ Las alertas de seguridad consisten en datos con privilegios elevados que suelen 
 
 > **Nota:** Por ahora, la hoja de configuración de diagnósticos de Azure Monitor no permite la configuración de recursos en el nivel de inquilino. Dado que las alertas de seguridad de API son un recurso de nivel de inquilino, tendrá que usar la API de Azure Resource Manager para configurar Azure Monitor en relación con las alertas de seguridad de la organización.
 
+1. En su suscripción de Azure, registrar "microsoft.insights" (Azure Monitor) como un proveedor de recursos.  
+> **Nota:** No registre "Microsoft.SecurityGraph" (API de Security Graph) como proveedor de recursos en su suscripción a Azure, ya que "Microsoft.SecurityGraph" es un proveedor de nivel de espacio empresarial. La configuración de nivel de espacio empresarial formará parte del paso 6, a continuación. 
 
-1. Para configurar Azure Monitor usando la API de Azure Resource Manager, hágase con la herramienta [ARMClient](https://github.com/projectkudu/ARMClient). Esta herramienta se usará para enviar llamadas de API de REST a Azure Portal desde una línea de comandos.
+2. Para configurar Azure Monitor con la API de Azure Resource Manager, obtenga la herramienta [ARMClient](https://github.com/projectkudu/ARMClient). Esta herramienta se usará para enviar llamadas de API de REST a Azure Portal desde una línea de comandos.
 
-2. Prepare un archivo JSON de solicitud de configuración de diagnóstico del siguiente modo:
+3. Prepare un archivo JSON de solicitud de configuración de diagnóstico del siguiente modo:
 
     ``` json
     {
@@ -83,26 +85,26 @@ Las alertas de seguridad consisten en datos con privilegios elevados que suelen 
      
      **“days”:** 7 es el número de días que quiere conservar los mensajes en el centro de eventos.
 
-3. Guarde el archivo como JSON en el directorio donde vaya a invocar ARMClient.exe. Por ejemplo, denomine el archivo **AzMonConfig.json**.
+4. Guarde el archivo como JSON en el directorio donde vaya a invocar ARMClient.exe. Por ejemplo, denomine el archivo **AzMonConfig.json**.
 
-4. Ejecute el siguiente comando para iniciar sesión en la herramienta ARMClient. Necesitará usar credenciales de una cuenta de administrador global.
+5. Ejecute el siguiente comando para iniciar sesión en la herramienta ARMClient. Necesitará usar credenciales de una cuenta de administrador global.
 
     ``` shell
     ARMClient.exe login
     ```
 
-5. Ejecute el siguiente comando para configurar Azure Monitor de modo que envíe alertas de seguridad al espacio de nombres del centro de eventos. Esto aprovisionará automáticamente un centro de eventos en el espacio de nombres e iniciará el flujo de alertas de seguridad hacia el centro de eventos. Asegúrese de que el nombre de la configuración (en este ejemplo, **securityApiAlerts**) coincide con el nombre de configuración especificado en el archivo JSON dentro del campo **name**.
+6. Ejecute el siguiente comando para configurar Azure Monitor de modo que envíe alertas de seguridad al espacio de nombres del centro de eventos. Esto aprovisionará automáticamente un centro de eventos en el espacio de nombres e iniciará el flujo de alertas de seguridad hacia el centro de eventos. Asegúrese de que el nombre de la configuración (en este ejemplo, **securityApiAlerts**) coincide con el nombre de configuración especificado en el archivo JSON dentro del campo **name**.
 
     ``` shell
     ARMClient.exe put https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview  @".\AzMonConfig.json"
     ```
 
-6. Para confirmar que la configuración se ha aplicado correctamente, ejecute este comando y compruebe que la salida coincide con la configuración del archivo JSON.
+7. Para confirmar que la configuración se ha aplicado correctamente, ejecute este comando y compruebe que la salida coincide con la configuración del archivo JSON.
 
     ``` shell
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
-7. Cierre la herramienta ARMClient. Ya ha acabado de configurar Azure Monitor para enviar alertas de seguridad desde el inquilino al centro del eventos.
+8. Cierre la herramienta ARMClient. Ya ha acabado de configurar Azure Monitor para enviar alertas de seguridad desde el inquilino al centro del eventos.
 
 ## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>Paso 3: Descargar e instalar el complemento de Azure Monitor para Splunk, que permitirá a Splunk consumir alertas de seguridad
 
