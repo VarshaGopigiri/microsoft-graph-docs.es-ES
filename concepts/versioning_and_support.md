@@ -56,6 +56,6 @@ Actualmente, no hay versiones de Microsoft Graph en desuso.
 
 ## <a name="terms-of-use"></a>Condiciones de uso
 
-Su uso de las API de Microsoft Graph implica la aceptación de las [Condiciones de uso](../misc/terms-of-use.md). 
+Su uso de las API de Microsoft Graph implica la aceptación de las [Condiciones de uso](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). 
 
 Su opinión es importante para nosotros. Póngase en contacto con nosotros en [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Etiquete sus preguntas con {MicrosoftGraph}.
