@@ -5132,7 +5132,6 @@
         <Item text="Restaurar elemento eliminado" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
         <Item text="Enumerar elementos eliminados que son propiedad del usuario" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
-
       <Item text="Dispositivo" url="/en-us/api-reference/beta/resources/device" SEOKeyword="API de dispositivo, API de Microsoft Graph, API de dispositivo" SEODescription="Representa un dispositivo registrado en el directorio. Herede de DirectoryObject.">
         <Item text="Enumerar dispositivos" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="Enumerar dispositivos, API de Microsoft Graph, API de dispositivo" SEODescription="Recuperar una lista de objetos de dispositivo." />
         <Item text="Creación de dispositivos" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Creación de dispositivos, API de Microsoft Graph, API de dispositivo" SEODescription="Use esta API para crear un nuevo dispositivo." />
@@ -5260,8 +5259,33 @@
       <Item text="Evento de auditoría" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="API de Privileged Identity Management, Azure AD, AADPIM, PIM, API de Microsoft Graph y auditoría" SEODescription="Evento de auditoría de Privileged Identity Management">
         <Item text="Enumerar eventos de auditoría" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="API de Privileged Identity Management, Azure AD, AADPIM, PIM, API de Microsoft Graph, auditar" SEODescription="Recupere una lista de eventos de auditoría." />
       </Item>
+	  <Item text="Administración de recursos" url="/en-us/api-reference/beta/resources/governanceresource">
+		<Item text="Lista" url="/en-us/api-reference/beta/api/governanceresource_list" />
+		<Item text="Obtener" url="/en-us/api-reference/beta/api/governanceresource_get" />
+	  </Item>
+	  <Item text="Definiciones de roles" url="/en-us/api-reference/beta/resources/governanceroledefinition">
+		<Item text="Lista" url="/en-us/api-reference/beta/api/governanceroledefinition_list" />
+		<Item text="Obtener" url="/en-us/api-reference/beta/api/governanceroledefinition_get" />
+	  </Item>
+	  <Item text="Configuración de roles" url="/en-us/api-reference/beta/resources/governancerolesetting">
+		<Item text="Lista" url="/en-us/api-reference/beta/api/governancerolesetting_list" />
+		<Item text="Obtener" url="/en-us/api-reference/beta/api/governancerolesetting_get" />
+		<Item text="Actualizar" url="/en-us/api-reference/beta/api/governancerolesetting_update" />
+	  </Item>
+	  <Item text="Asignaciones de roles" url="/en-us/api-reference/beta/resources/governanceroleassignment">
+		<Item text="Lista" url="/en-us/api-reference/beta/api/governanceroleassignment_list" />
+		<Item text="Obtener" url="/en-us/api-reference/beta/api/governanceroleassignment_get" />
+		<Item text="Exportar" url="/en-us/api-reference/beta/api/governanceroleassignment_export" />
+	  </Item>
+	  <Item text="Solicitudes de asignación de roles" url="/en-us/api-reference/beta/resources/governanceroleassignmentrequest">
+		<Item text="Lista" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_list" />
+		<Item text="Crear" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_post" />
+		<Item text="Obtener" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_get" />
+		<Item text="Actualizar" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_update" />
+		<Item text="Cancelar" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_cancel" />
+	  </Item>
     </Item>
-      <Item text="Entidad de servicio" url="/en-us/api-reference/beta/resources/serviceprincipal">
+      <Item text="Servicio principal" url="/en-us/api-reference/beta/resources/serviceprincipal">
         <Item text="Lista de entidades de servicio" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
 		    <Item text="Obtención de entidades de servicio" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="Actualizar entidad de servicio" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
