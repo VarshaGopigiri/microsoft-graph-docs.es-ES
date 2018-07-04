@@ -15,6 +15,7 @@ Los _permisos efectivos_ son los permisos que tendrá la aplicación al realizar
 - En el caso de los permisos de aplicación, los _permisos efectivos_ de la aplicación serán el nivel completo de privilegios que conlleva el permiso. Por ejemplo, una aplicación que tiene el permiso de aplicación _User.ReadWrite.All_ puede actualizar el perfil de todos los usuarios de la organización. 
 
 ### <a name="microsoft-graph-permission-names"></a>Nombres de permisos de Microsoft Graph
+
 Los nombres de permisos de Microsoft Graph siguen un patrón sencillo: _recurso.operación.restricción_. Por ejemplo, _User.Read_ concede el permiso de leer el perfil del usuario que ha iniciado sesión, _User.ReadWrite_ concede el permiso de leer y modificar el perfil del usuario que ha iniciado sesión, y _Mail.Send_ concede el permiso de enviar correo en nombre del usuario que ha iniciado sesión. 
 
 El elemento _restricción_ del nombre determina el posible alcance del acceso que tendrá la aplicación dentro del directorio. Actualmente, Microsoft Graph admite las siguientes restricciones: 
@@ -38,6 +39,41 @@ Si el usuario que ha iniciado sesión es un usuario invitado, en función de los
 
 Con los permisos adecuados, la aplicación puede leer los perfiles de usuarios o grupos que obtiene al seguir los vínculos de las propiedades de navegación, como `/users/{id}/directReports` o `/groups/{id}/members`.
 
+---
+
+## <a name="application-resource-permissions"></a>Permisos de recursos de aplicación
+
+#### <a name="delegated-permissions"></a>Permisos delegados
+
+Ninguno.
+
+#### <a name="application-permissions"></a>Permisos de la aplicación
+
+|   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.ReadWrite.All_ | Leer y escribir en todas las aplicaciones | Permite que la aplicación de llamada cree y administre (leer, actualizar, actualizar los secretos de la aplicación y eliminar) aplicaciones y entidades de seguridad sin que haya un usuario con sesión iniciada.  No permite la administración de concesiones de consentimiento ni de asignaciones de aplicación para usuarios o grupos. | Sí |
+| _Application.ReadWrite.OwnedBy_ | Administrar aplicaciones que esta aplicación cree o posea | Permite que la aplicación de llamada cree otras aplicaciones y administre por completo esas aplicaciones y entidades de seguridad (leer, actualizar, actualizar los secretos de la aplicación y eliminar) sin que haya un usuario con sesión iniciada.  No puede actualizar ninguna aplicación de la que no sea propietaria. No permite la administración de concesiones de consentimiento ni de asignaciones de aplicación para usuarios o grupos. | Sí |
+
+### <a name="remarks"></a>Comentarios
+
+El permiso _Application.ReadWrite.OwnedBy_ permite las mismas operaciones que _Application.ReadWrite.All_, excepto en que el primero solo permite estas operaciones en las aplicaciones y las entidades de seguridad que sean propiedad de la aplicación de llamada. La propiedad se indica mediante la propiedad de navegación `owners` en el recurso [aplicación](../api-reference/beta/api/application_list_owners.md) o [entidad de seguridad](../api-reference/beta/api/serviceprincipal_list_owners.md) de destino.
+> NOTA: La utilización del permiso _Application.ReadWrite.OwnedBy_ para llamar a `GET /applications` para que muestre la lista de aplicaciones generará un código 403.  En su lugar, use `GET servicePrincipals/{id}/ownedObjects` para mostrar la lista de aplicaciones que son propiedad de la aplicación de llamada.
+
+### <a name="example-usage"></a>Ejemplos de uso
+
+#### <a name="delegated"></a>Delegado
+
+Ninguno.
+
+#### <a name="application"></a>Aplicación
+
+* _Application.ReadWrite.All_: Mostrar lista de todas las aplicaciones (`GET /beta/applications`)
+* _Application.ReadWrite.All_: Eliminar una entidad de seguridad (`DELETE /beta/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_: Crear una aplicación (`POST /beta/applications`)
+* _Application.ReadWrite.OwnedBy_: Mostrar lista de todas las aplicaciones propiedad de la aplicación de llamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_: Agregar otro propietario a una aplicación que tiene propietario (`POST /applications/{id}/owners/$ref`).  NOTA: Es posible que se requieran permisos adicionales.
+
+---
 
 ## <a name="bookings-permissions"></a>Permisos de Bookings
 
@@ -62,8 +98,6 @@ Ninguno.
 * _Bookings.ReadWrite.Appointments_: crea una cita para un servicio en una empresa de Bookings (`POST /bookingBusinesses/{id}/appointments`).
 * _Bookings.ReadWrite.All_: crea un servicio para la empresa de Bookings especificada (`POST /bookingBusinesses/{id}/services`).
 * _Bookings.Manage_: permite que la página de programación de esta empresa esté disponible para clientes externos (`POST /bookingBusinesses/{id}/publish`).
-
----
 
 ## <a name="calendars-permissions"></a>Permisos de calendarios
 
@@ -175,53 +209,7 @@ Los permisos delegados _Device.Read_ y _Device.Command_ solo son válidos para l
 
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
-
-## <a name="intune-device-management-permissions"></a>Permisos de la administración de dispositivos de Intune
-
-#### <a name="delegated-permissions"></a>Permisos delegados
-
-|Permiso    |Cadena para mostrar   |Descripción |Se requiere el consentimiento del administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_DeviceManagementApps.Read.All_ | Leer aplicaciones de Microsoft Intune | Permite que la aplicación lea las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
-|_DeviceManagementApps.ReadWrite.All_ | Leer y escribir aplicaciones de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
-|_DeviceManagementConfiguration.Read.All_ | Leer las directivas y configuración de dispositivo de Microsoft Intune | Permite que la aplicación lea las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
-|_DeviceManagementConfiguration.ReadWrite.All_ | Leer y escribir las directivas y configuración de dispositivo de Microsoft Intune  | Permite que la aplicación lea y escriba las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
-|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Realizar acciones remotas que repercutan en el usuario en dispositivos de Microsoft Intune | Permite que la aplicación realice acciones de alto impacto remotas como la eliminación remota de datos del dispositivo o restablecer la contraseña en dispositivos administrados por Microsoft Intune. | Sí |
-|_DeviceManagementManagedDevices.Read.All_ | Leer dispositivos de Microsoft Intune | Permite que la aplicación lea las propiedades de dispositivos administrados por Microsoft Intune. | Sí |
-|_DeviceManagementManagedDevices.ReadWrite.All_ | Leer y escribir dispositivos de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades de dispositivos administrados por Microsoft Intune. No permite operaciones de alto impacto como la eliminación remota y el restablecimiento de contraseña del propietario del dispositivo. | Sí |
-|_DeviceManagementRBAC.Read.All_ | Leer la configuración de RBAC de Microsoft Intune | Permite que la aplicación lea las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
-|_DeviceManagementRBAC.ReadWrite.All_ | Leer y escribir la configuración de RBAC de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
-|_DeviceManagementServiceConfig.Read.All_ | Leer la configuración de Microsoft Intune | Permite que la aplicación lea las propiedades de servicio de Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
-|_DeviceManagementServiceConfig.ReadWrite.All_ | Leer y escribir la configuración de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
-
-#### <a name="application-permissions"></a>Permisos de la aplicación
-
-Ninguno.
-
-### <a name="remarks"></a>Comentarios
-
-> **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
-
-Estos permisos solo son válidos para las cuentas profesionales o educativas.
-
-### <a name="example-usage"></a>Ejemplos de uso
-
-#### <a name="application"></a>Aplicación
-
-* _DeviceManagementServiceConfiguration.Read.All_: comprobar el estado actual de la suscripción de Intune (`GET /deviceManagement/subscriptionState`).
-* _DeviceManagementServiceConfiguration.ReadWrite.All_: crear términos y condiciones (`POST /deviceManagement/termsAndConditions`).
-* _DeviceManagementConfiguration.Read.All_: encontrar el estado de una configuración de dispositivo (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
-* _DeviceManagementConfiguration.ReadWrite.All_: asignar una directiva de cumplimiento de dispositivos a un grupo (`POST deviceCompliancePolicies/{id}/assign`).
-* _DeviceManagementApps.Read.All_: buscar todas las aplicaciones de la Tienda Windows publicadas en Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
-* _DeviceManagementApps.ReadWrite.All_: publicar una aplicación nueva (`POST /deviceAppManagement/mobileApps`).
-* _DeviceManagementRBAC.Read.All_: buscar una asignación de roles por nombre (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
-* _DeviceManagementRBAC.ReadWrite.All_: crear un rol personalizado (`POST /deviceManagement/roleDefinitions`).
-* _DeviceManagementManagedDevices.Read.All_: buscar un dispositivo administrado por nombre (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
-* _DeviceManagementManagedDevices.ReadWrite.All_: eliminar un dispositivo administrado (`DELETE /managedDevices/{id}`).
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_: restablecer el código de acceso del dispositivo administrado de un usuario (`POST /managedDevices/{id}/resetPasscode`).
-
-Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
-
+---
 
 ## <a name="directory-permissions"></a>Permisos de directorio
 
@@ -318,6 +306,8 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
+---
+
 ## <a name="files-permissions"></a>Permisos de archivos
 
 #### <a name="delegated-permissions"></a>Permisos delegados
@@ -360,6 +350,7 @@ El permiso delegado Files.ReadWrite.AppFolder solo es válido para cuentas perso
 
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
+---
 
 ## <a name="group-permissions"></a>Permisos de grupo
 
@@ -439,6 +430,7 @@ Los siguientes usos son válidos para los permisos delegados y de la aplicación
  
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
+---
 
 ## <a name="identity-provider-permissions"></a>Permisos del proveedor de identidades
 
@@ -467,6 +459,55 @@ Los siguientes usos son válidos para los permisos delegados:
 Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
 
 ---
+
+## <a name="intune-device-management-permissions"></a>Permisos de la administración de dispositivos de Intune
+
+#### <a name="delegated-permissions"></a>Permisos delegados
+
+|Permiso    |Cadena para mostrar   |Descripción |Se requiere el consentimiento del administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_DeviceManagementApps.Read.All_ | Leer aplicaciones de Microsoft Intune | Permite que la aplicación lea las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
+|_DeviceManagementApps.ReadWrite.All_ | Leer y escribir aplicaciones de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades, asignaciones de grupos y estados de aplicaciones, configuraciones de aplicaciones y directivas de protección de aplicaciones administradas por Microsoft Intune. | Sí |
+|_DeviceManagementConfiguration.Read.All_ | Leer las directivas y configuración de dispositivo de Microsoft Intune | Permite que la aplicación lea las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
+|_DeviceManagementConfiguration.ReadWrite.All_ | Leer y escribir las directivas y configuración de dispositivo de Microsoft Intune  | Permite que la aplicación lea y escriba las propiedades de una configuración de dispositivo administrada por Microsoft Intune y las directivas de cumplimiento de dispositivos y su asignación a grupos. | Sí |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Realizar acciones remotas que repercutan en el usuario en dispositivos de Microsoft Intune | Permite que la aplicación realice acciones de alto impacto remotas como la eliminación remota de datos del dispositivo o restablecer la contraseña en dispositivos administrados por Microsoft Intune. | Sí |
+|_DeviceManagementManagedDevices.Read.All_ | Leer dispositivos de Microsoft Intune | Permite que la aplicación lea las propiedades de dispositivos administrados por Microsoft Intune. | Sí |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Leer y escribir dispositivos de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades de dispositivos administrados por Microsoft Intune. No permite operaciones de alto impacto como la eliminación remota y el restablecimiento de contraseña del propietario del dispositivo. | Sí |
+|_DeviceManagementRBAC.Read.All_ | Leer la configuración de RBAC de Microsoft Intune | Permite que la aplicación lea las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
+|_DeviceManagementRBAC.ReadWrite.All_ | Leer y escribir la configuración de RBAC de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades relacionadas con la configuración del control de acceso basado en roles (RBAC) de Microsoft Intune. | Sí |
+|_DeviceManagementServiceConfig.Read.All_ | Leer la configuración de Microsoft Intune | Permite que la aplicación lea las propiedades de servicio de Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | Leer y escribir la configuración de Microsoft Intune | Permite que la aplicación lea y escriba las propiedades de servicio de Microsoft Intune, incluidas la inscripción del dispositivo y la configuración de conexión del servicio de terceros. | Sí |
+
+#### <a name="application-permissions"></a>Permisos de la aplicación
+
+Ninguno.
+
+### <a name="remarks"></a>Comentarios
+
+> **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
+
+Estos permisos solo son válidos para las cuentas profesionales o educativas.
+
+### <a name="example-usage"></a>Ejemplos de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _DeviceManagementServiceConfiguration.Read.All_: Comprobar el estado actual de la suscripción de Intune (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_: crear términos y condiciones (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_: encontrar el estado de una configuración de dispositivo (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_: asignar una directiva de cumplimiento de dispositivos a un grupo (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_: buscar todas las aplicaciones de la Tienda Windows publicadas en Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_: publicar una aplicación nueva (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_: buscar una asignación de roles por nombre (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_: crear un rol personalizado (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_: buscar un dispositivo administrado por nombre (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_: eliminar un dispositivo administrado (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_: restablecer el código de acceso del dispositivo administrado de un usuario (`POST /managedDevices/{id}/resetPasscode`).
+
+Para obtener información sobre escenarios más complejos que implican varios permisos, vea [Escenarios de permisos](#permission-scenarios).
+
+---
+
 ## <a name="mail-permissions"></a>Permisos de correo
 
 #### <a name="delegated-permissions"></a>Permisos delegados
