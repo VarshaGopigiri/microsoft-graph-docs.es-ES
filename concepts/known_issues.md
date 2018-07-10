@@ -83,6 +83,29 @@ Existe en la actualidad un problema que evita el establecimiento de la propiedad
 Para ver los problemas conocidos al usar la consulta de delta, vea la [sección Consulta de delta](#delta-query) de este artículo.
 
 
+## <a name="bookings"></a>Bookings
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>ErrorExceededFindCountLimit al consultar bookingBusinesses
+
+La obtención de la lista de `bookingBusinesses` genera el siguiente código de error si una organización tiene varias empresas de Bookings y la cuenta que realiza la solicitud no es de administrador:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+Como solución alternativa, puede limitar el conjunto de empresas devuelto por la solicitud mediante la inclusión de un parámetro `query`, por ejemplo:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
+
 ## <a name="calendars"></a>Calendarios
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Agregar y acceder a calendarios basados en archivos ICS en el buzón del usuario
@@ -178,29 +201,8 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 El parámetro **comentario** para crear una respuesta o enviar un borrador ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) no se convierte en parte del cuerpo del borrador del mensaje resultante.
 
-## <a name="bookings"></a>Bookings
 
-### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>ErrorExceededFindCountLimit al consultar bookingBusinesses
-
-La obtención de la lista de `bookingBusinesses` genera el siguiente código de error si una organización tiene varias empresas de reservas y la cuenta que realiza la solicitud no es de administrador:
-
-```json
-{
-  "error": {
-    "code": "ErrorExceededFindCountLimit",
-    "message":
-      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
-  }
-}
-```
-
-El conjunto de empresas que devuelve la solicitud puede limitarse incluyendo un parámetro de consulta, por ejemplo:
-
-```
-GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
-```
-
-## <a name="drives-files-and-content-streaming"></a>Unidades de disco, archivos y streaming de contenido
+## <a name="drives-files-and-content-streaming"></a>Unidades, archivos y streaming de contenido
 
 * La primera vez que accede a una unidad personal del usuario a través de Microsoft Graph antes de que el usuario acceda a su sitio personal a través del explorador, se produce una respuesta 401.
 

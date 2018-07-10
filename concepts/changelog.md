@@ -12,6 +12,24 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 | :-------------- | :---------- | :--------------------------------------- |
 | Cambio          | Beta        | Las API [application](https://graph.microsoft.io/es-ES/docs/api-reference/beta/resources/application) y [servicePrincipal](https://graph.microsoft.io/es-ES/docs/api-reference/beta/resources/serviceprincipal) se actualizarán en la versión preliminar (beta). El primer conjunto de cambios se aplicará el 16 de julio de 2018. Entre los cambios se incluyen la reestructuración y el cambio de nombre de propiedades. La mayoría de las propiedades existentes no estarán disponibles hasta que se completen los cambios. Se agregarán nuevas propiedades. Los cambios se publicarán en versión preliminar (beta) antes de publicarse la versión 1.0. |
 
+### <a name="microsoft-teams-apis"></a>API de Microsoft Teams
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Eliminación|beta|Quitar ELIMINAR /grupos/{id}/grupo/canales/{id}, use ELIMINAR /equipos/{id}/canales/{id} en su lugar. |
+|Eliminación|beta|Quitar OBTENER /grupos/{id}/grupo/canales/{id}, use OBTENER /equipos/{id}/canales/{id} en su lugar. |
+|Eliminación|beta|Quitar REVISIÓN /grupos/{id}/grupo/canales/{id}, use REVISIÓN /equipos/{id}/canales/{id} en su lugar. |
+|Eliminación|beta|Quitar PUBLICAR /grupos/{id}/grupo/canales/{id}/hilos de chat, use PUBLICAR /equipos/{id}/canales/{id}/hilos de chat en su lugar. |
+|Eliminación|beta|Quitar OBTENER /grupos/{id}/grupo/canales, use OBTENER /equipos/{id}/canales en su lugar. |
+|Eliminación|beta|Quitar ELIMINAR /grupos/{id}/canales/{id}, use ELIMINAR /equipos/{id}/canales/{id} en su lugar. |
+|Eliminación|beta|Quitar OBTENER /grupos/{id}/canales/{id}, use OBTENER /equipos/{id}/canales/{id} en su lugar. |
+|Eliminación|beta|Quitar REVISIÓN /grupos/{id}/canales/{id}, use REVISIÓN /equipos/{id}/canales/{id} en su lugar. |
+|Eliminación|beta|Quitar PUBLICAR /grupos/{id}/canales/{id}/hilos de chat, use PUBLICAR /equipos/{id}/canales/{id}/hilos de chat en su lugar. |
+|Eliminación|beta|Quitar OBTENER /grupos/{id}/canales, use OBTENER /equipos/{id}/canales en su lugar. |
+|Eliminación|beta|Quitar PUBLICAR /grupos/{id}/equipo/canales, use PUBLICAR /equipos/{id}/canales en su lugar. |
+|Eliminación|beta|Quitar OBTENER /grupos/{id}/equipo, use OBTENER /equipos/{id} en su lugar. |
+|Eliminación|beta|Quitar REVISIÓN /grupos/{id}/equipo, use REVISIÓN /equipos/{id} en su lugar. |
+
+
 ## <a name="june-2018"></a>Junio de 2018
 
 ### <a name="directory-apis"></a>API de directorio
