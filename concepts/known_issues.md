@@ -58,10 +58,6 @@ Ejemplos de funciones de grupo que admiten solo permisos delegados:
 
 Microsoft Teams y Grupos de Office 365 [comparten una funcionalidad similar](../api-reference/beta/resources/teams_api_overview.md). Todas las API de grupo se pueden usar con los equipos, salvo que en este momento la API de creación de grupo no le permite crear un equipo.  Las versiones futuras de la API admitirán esta posibilidad.
 
-### <a name="microsoft-teams-channels-preview"></a>Canales de Microsoft Teams (versión preliminar)
-
-Actualmente, puede leer y crear canales, pero no puede actualizarlos o eliminarlos.  Las versiones futuras de la API admitirán esta posibilidad.
-
 ### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Mensajes de chat y conversaciones de chat de Microsoft Teams (versión preliminar)
 
 Actualmente, se pueden crear conversaciones de chat en canales, pero no es posible leer las conversaciones de chat existentes o agregar respuestas. Además, no se pueden leer ni escribir chats directos entre los usuarios que están fuera del ámbito de un grupo o canal.  Las versiones futuras de la API agregarán capacidades adicionales en esta área.
