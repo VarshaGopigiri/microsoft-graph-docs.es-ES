@@ -1302,7 +1302,7 @@
         <Item text="Intervalo IPv6" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range" />
         <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json" />
         <Item text="Par clave-valor" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair" />
-        <Item text="Nivel de uso compartido del portapapeles de la aplicaciones administradas" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
+        <Item text="Nivel de uso compartido del portapapeles de las aplicaciones administradas" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel" />
         <Item text="Configuración de aplicaciones administradas" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
           <Item text="Lista" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_list" />
           <Item text="Obtener" url="/en-us/api-reference/v1.0/api/intune_mam_managedappconfiguration_get" />
@@ -2490,7 +2490,6 @@
 		<Item text="Noticias de actividad" url="/en-us/api-reference/beta/resources/activity-feed-api-overview">
 			<Item text="Actividad" url="/en-us/api-reference/beta/resources/projectrome_activity">
 				<Item text="Crear o reemplazar una actividad" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-				<Item text="Crear o reemplazar actividad" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
 				<Item text="Eliminar una actividad" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
 				<Item text="Obtener actividades" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
 				<Item text="Obtener actividades recientes" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
@@ -2513,12 +2512,13 @@
 			<Item text="Cancelar la publicación" url="/en-us/api-reference/beta/api/bookingbusiness_unpublish" />
 		</Item>
 		<Item text="Reserva de citas" url="/en-us/api-reference/beta/resources/bookingappointment">
-			<Item text="Lista" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
-			<Item text="Crear" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
-			<Item text="Obtener" url="/en-us/api-reference/beta/api/bookingappointment_get" />
-			<Item text="Actualizar" url="/en-us/api-reference/beta/api/bookingappointment_update" />
-			<Item text="Eliminar" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
-			<Item text="Cancelar" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
+			<Item text="Incluir en una lista la vista Calendario" url="/en-us/api-reference/beta/api/bookingbusiness_list_calendarview" />
+			<Item text="Enumerar citas" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
+			<Item text="Creación de una cita" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
+			<Item text="Obtención de una cita" url="/en-us/api-reference/beta/api/bookingappointment_get" />
+			<Item text="Actualización de una cita" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="Eliminación de una cita" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
+			<Item text="Cancelación de una cita" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
 		</Item>
 		<Item text="Moneda de reserva" url="/en-us/api-reference/beta/resources/bookingcurrency">
 			<Item text="Lista" url="/en-us/api-reference/beta/api/bookingcurrency_list" />
@@ -5174,7 +5174,6 @@
           <Item text="Eliminar aplicación" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="Eliminar aplicaciones, API de Microsoft Graph, API de aplicación" SEODescription="Eliminar aplicación." />
           <Item text="Enumerar propietarios" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="Enumerar propietarios, API de Microsoft Graph, API de aplicación" SEODescription="Recuperar una lista de objetos directoryobject." />
           <Item text="Asignar propietario" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Crear propietario, API de Microsoft Graph, API de aplicación" SEODescription="Use esta API para crear un nuevo propietario." />
-          <Item text="Enumerar propiedades de extensión" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Enumerar extensionProperties, API de Microsoft Graph, API de aplicación" SEODescription="Recuperar una lista de objetos extensionproperty." />
         </Item>
 	  <Item text="Registros de auditoría" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Auditoría de directorio" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="objeto directoryAudit, API de Microsoft Graph, Azure AD, registros de auditoría" SEODescription="">
@@ -5248,11 +5247,6 @@
         <Item text="Obtener dominio" url="/en-us/api-reference/beta/api/domain_get" />
         <Item text="Actualizar dominio" url="/en-us/api-reference/beta/api/domain_update" />
         <Item text="Comprobar dominio" url="/en-us/api-reference/beta/api/domain_verify" />
-      </Item>
-      <Item text="Propiedad de extensión" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="API de extensionproperty, API de Microsoft Graph, API de extensionproperty" SEODescription="Permite que una aplicación defina y use un conjunto de propiedades adicionales que pueden agregarse a objetos de directorio (usuarios, grupos, detalles de inquilino, dispositivos, aplicaciones y entidades de servicio) sin que la aplicación requiera un almacenamiento de datos externo. Para obtener más información sobre propiedades de extensión, consulte Extensiones de esquema de directorio de la API de Graph de Azure AD (https://msdn.microsoft.com/es-es/library/azure/dn720459.aspx). Herede de DirectoryObject.">
-        <Item text="Obtener extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_get" SEOKeyword="Obtener extensionProperty, API de Microsoft Graph, API de extensionproperty" SEODescription="Recuperar las propiedades y las relaciones del objeto extensionproperty." />
-        <Item text="Actualizar extensionproperty" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="Actualizar extensionproperty, API de Microsoft Graph, API de extensionproperty" SEODescription="Actualizar las propiedades del objeto extensionproperty." />
-        <Item text="Eliminar extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="Eliminar extensionProperty, API de Microsoft Graph, API de extensionproperty" SEODescription="Elimine el objeto extensionProperty." />
       </Item>
     <Item text="Identity Protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="API de Identity Protection, Azure AD, AADIP, API de Microsoft Graph, Identity Protection" SEODescription="API para consultar datos y usar Identity Protection de Azure Active Directory">
       <Item text="Eventos de riesgo de identidad" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="API de Identity Protection, Azure AD, AADIP, API de Microsoft Graph, Identity Protection, riesgo de eventos, riesgo de identidad" SEODescription="Consultas de datos de eventos de riesgo de Identity Protection de Azure AD">
