@@ -8,7 +8,7 @@ Los usuarios son la representación de una cuenta de usuario profesional o educa
 
 Puede usar Microsoft Graph para obtener acceso a las relaciones, documentos, contactos y preferencias que son relevantes contextualmente para el usuario que inició la sesión. El recurso **user** ofrece una forma sencilla de obtener acceso y manipular recursos de usuario sin tener que realizar llamadas adicionales, buscar información de autenticación específica y enviar directamente las consultas a otros recursos de Microsoft Graph.
 
-Para obtener acceso a la información y los datos de un usuario, necesitará [obtener acceso en su nombre](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Al autenticar su aplicación con el [consentimiento del administrador](https://developer.microsoft.com/es-ES/graph/docs/concepts/permissions_reference), podrá trabajar con más entidades asociadas a un usuario, así como actualizarlas.
+Para obtener acceso a la información y los datos de un usuario, necesitará [obtener acceso en su nombre](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Al autenticar su aplicación con el [consentimiento del administrador](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference), podrá trabajar con más entidades asociadas a un usuario, así como actualizarlas.
 
 ### <a name="manage-your-organization"></a>Administración de su organización
 
@@ -52,5 +52,5 @@ Maximice la relevancia en la aplicación al promocionar los documentos y contact
 - Establezca directivas y control de acceso para usuarios con la [API de Azure AD](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Revise los [permisos](permissions_reference.md) de la aplicación necesarios para obtener acceso a datos de usuarios. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
+- Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->

@@ -3,6 +3,7 @@
 Este artículo proporciona recomendaciones para el trabajo con las API de OneNote en Microsoft Graph. Estas recomendaciones se basan en respuestas a preguntas comunes que se hacen en Stack Overflow y Twitter.
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>Use $select para seleccionar el conjunto mínimo de propiedades que necesita.
+
 Cuando consulta un recurso (por ejemplo, las secciones dentro de un bloc de notas), realiza una solicitud similar a la siguiente.
 
 ```http
@@ -18,11 +19,15 @@ GET ~/notebooks/{id}/sections?$select=id,displayName
 El mismo enfoque se aplica a otras API de OneNote.
 
 ## <a name="use-expand-instead-of-making-multiple-api-calls"></a>Use $expand en lugar de realizar varias llamadas a la API.
+
 Supongamos que quiere recuperar todos los grupos de sección, secciones y blocs de notas del usuario en una vista jerárquica. Pueden conseguirlo mediante el procedimiento siguiente:
 
 * Llame a `GET ~/notebooks` para obtener la lista de blocs de notas.
+
 * Para todos los blocs de notas recuperados, llame a `GET ~/notebooks/{notebookId}/sections` para recuperar la lista de secciones.
+
 * Para todos los blocs de notas recuperados, llame a `GET ~/notebooks/{notebookId}/sectionGroups` para recuperar la lista de grupos de secciones.
+
 * Opcionalmente, itere recursivamente por los grupos de sección.
 
 Aunque esto funcionará (con algunos ciclos de ida y vuelta al servicios adicionales), un enfoque mejor es usar el parámetro de consulta `$expand`. 
