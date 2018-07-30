@@ -77,7 +77,6 @@ En el ejemplo siguiente, se envía el código HTML de entrada directamente en el
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
-Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
 <!DOCTYPE html>
