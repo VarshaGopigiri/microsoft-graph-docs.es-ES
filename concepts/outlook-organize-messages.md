@@ -1,23 +1,25 @@
 # <a name="organize-outlook-messages"></a>Organizar mensajes de Outlook
 
-Outlook permite a los clientes organizar sus mensajes como prefieran, tanto si quieren dejar todos sus mensajes en la carpeta Bandeja de entrada, como si prefieren organizar sus mensajes en una estructura de carpetas tipo árbol dentro de la Bandeja de entrada para adaptarse a sus necesidades específicas. Puede [filtrar, buscar u ordenar](query_parameters.md) fácilmente los mensajes de todo el buzón del usuario o de carpetas específicas.
+Outlook permite a los clientes organizar sus mensajes como prefieran, tanto si quieren dejar todos sus mensajes en la carpeta Bandeja de entrada como si prefieren organizar sus mensajes en una estructura de carpetas tipo árbol dentro de la Bandeja de entrada para adaptarse a sus necesidades específicas. Puede [filtrar, buscar u ordenar](query_parameters.md) fácilmente los mensajes de todo el buzón del usuario o de carpetas específicas.
 
 ## <a name="accessing-mail-folders"></a>Obtener acceso a carpetas de correo
 
-Con programación, las carpetas de mensajes se representan con el recurso [mailFolder](../api-reference/v1.0/resources/mailfolder.md), y la bandeja de entrada es una de las carpetas en el directorio raíz de la estructura de carpetas. El acceso directo `/users/{id}/mailfolders` representa el directorio raíz. 
+Con programación, las carpetas de mensajes se representan con el recurso [mailFolder](../api-reference/v1.0/resources/mailfolder.md), y la bandeja de entrada es una de las carpetas en el directorio raíz de la estructura de carpetas.
 
-Cada **mailFolder** se identifica por su id. de carpeta y tiene una propiedad que permite la escritura **displayName**. Outlook crea otras carpetas para los clientes de forma predeterminada. Puede hacer referencia a estas carpetas predeterminadas por los id. de carpeta, o bien por los nombres conocidos: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, `Drafts`, `Inbox`, `JunkEmail`, `Outbox` y `SentItems`. 
+Cada **mailFolder** se identifica por su id. de carpeta y tiene una propiedad que permite la escritura **displayName**. Outlook crea otras carpetas para los clientes de forma predeterminada. Puede hacer referencia a estas carpetas predeterminadas por los id. de carpeta, o bien por los nombres conocidos. Para obtener una lista de los nombres de carpetas conocidos disponibles, vea [Tipo de recurso mailFolder](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names).
 
 Para una carpeta personalizada que no sea predeterminada, si conoce la ruta de la carpeta, puede obtener acceso a la carpeta si primero usa el acceso directo `/users/{id}/mailfolders` para obtener acceso al nivel raíz y obtener todas las carpetas de nivel superior:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders
 ```
+
 Después, especifique el id. de carpeta (`{folder_id}`) al navegar a cada nivel del árbol de carpetas:
 
-```
+```http
 GET https://graph.microsoft.com/v1.0/users/{id}/mailFolders/{folder_id}/childfolders
 ```
+
 Repita este procedimiento hasta que llegue a la carpeta personalizada en el árbol.
 
 ## <a name="creating-and-organizing-the-folder-tree"></a>Crear y organizar el árbol de carpetas
@@ -25,17 +27,17 @@ Repita este procedimiento hasta que llegue a la carpeta personalizada en el árb
 Puede [crear carpetas de correo dentro de la bandeja de entrada](../api-reference/v1.0/api/user_post_mailfolders.md), o bien como [carpetas secundarias dentro de otras carpetas](../api-reference/v1.0/api/mailfolder_post_childfolders.md). Al crear, [copiar](../api-reference/v1.0/api/mailfolder_copy.md) o [mover](../api-reference/v1.0/api/mailfolder_move.md) una carpeta y su contenido, Outlook actualiza las propiedades **parentFolderId** y **childFolderCount** de solo lectura de las carpetas correspondientes. Cuando se copia o mueve el contenido de una carpeta a otra carpeta, de forma predeterminada, los id. de entrada individuales de los contenidos también cambiarán.
 
 En el nivel de los contenidos, **totalItemCount** y **unreadItemCount** indican respectivamente el número de elementos y el número de elementos no leídos de una carpeta de correo.
-En el nivel de las carpetas secundarias, puede [mostrar una lista de las carpetas secundarias](../api-reference/v1.0/api/user_list_mailfolders.md) dentro de la bandeja de entrada o de cualquier otra carpeta. La propiedad **childFolderCount** representa el número de carpetas secundarias inmediatas.
+En el nivel de las carpetas secundarias, puede [mostrar una lista de las carpetas secundarias](../api-reference/v1.0/api/user_list_mailfolders.md) dentro de la bandeja de entrada o de cualquier otra carpeta.
+La propiedad **childFolderCount** representa el número de carpetas secundarias inmediatas.
 
 Tenga en cuenta que las carpetas de correo de Outlook pueden contener mensajes y elementos que no sean mensajes, como eventos y contactos. En general, las carpetas de Outlook pueden contener elementos heterogéneos.
 
 ## <a name="using-rules-to-automate-copying-or-moving-messages"></a>Usar reglas para automatizar la copia o movimiento de mensajes
 
-<!-- Change links for rules API to v1 once it GAs in Feb. -->
+Outlook permite a los clientes configurar reglas para automatizar acciones específicas en mensajes entrantes cuando se cumplan condiciones predeterminadas. Puede [crear una regla](../api-reference/v1.0/api/mailfolder_post_messagerules.md) para la bandeja de entrada, como [messageRule](../api-reference/v1.0/resources/messagerule.md) para copiar o mover un mensaje en una carpeta específica cuando se cumplan condiciones específicas.
+Las condiciones son [messageRulePredicates](../api-reference/v1.0/resources/messagerulepredicates.md). Algunos ejemplos pueden ser texto que aparezca en el cuerpo o el asunto del mensaje, que el mensaje se envíe desde direcciones de correo electrónico específicas, que el mensaje esté marcado como importante, etc.
 
-Outlook permite a los clientes configurar reglas para automatizar acciones específicas en mensajes entrantes cuando se cumplan condiciones predeterminadas. Puede [crear una regla](../api-reference/beta/api/mailfolder_post_messagerules.md) para la bandeja de entrada, como [messageRule](../api-reference/beta/resources/messagerule.md) para copiar o mover un mensaje en una carpeta específica cuando se cumplan condiciones específicas. Las condiciones son [messageRulePredicates](../api-reference/beta/resources/messagerulepredicates.md). Algunos ejemplos pueden ser texto que aparezca en el cuerpo o el asunto del mensaje, que el mensaje se envíe desde direcciones de correo electrónico específicas, que el mensaje esté marcado como importante, etc. 
-
-## <a name="directing-only-the-messages-you-care-for-to-the-focused-inbox"></a>Dirigir solo los mensajes importantes a la Bandeja de entrada Prioritarios 
+## <a name="directing-only-the-messages-you-care-for-to-the-focused-inbox"></a>Dirigir solo los mensajes importantes a la Bandeja de entrada Prioritarios
 
 La Bandeja de entrada Prioritarios permite a los clientes entrenar Outlook para mostrar solo los mensajes entrantes de remitentes que consideren importantes en la pestaña **Prioritarios**, y el resto de los mensajes en la pestaña **Otros correos**. Inicialmente, el sistema de clasificación de Outlook organiza los mensajes de la bandeja de entrada de una forma predeterminada. Puede corregir y entrenar el sistema con el tiempo a través de la interfaz de usuario o con programación. Cuanto más use la Bandeja de entrada Prioritarios, mejor podrá el sistema de clasificación deducir qué mensajes entrantes quiere ver en la pestaña **Prioritarios**.
 
@@ -49,8 +51,7 @@ Las notificaciones se entregan con [webhooks](../api-reference/v1.0/resources/we
 
 Para sincronizar inicialmente un buzón de usuario, primero [realice una consulta delta en las carpetas de correo, empezando en el nivel raíz](../api-reference/v1.0/api/mailfolder_delta.md), para sincronizar todas las carpetas de correo, seguido de una [consulta delta de los mensajes en cada carpeta](../api-reference/v1.0/api/message_delta.md) para sincronizar los mensajes individuales.
 
-Para encontrar las entidades exactas que se cambiaron sin tener que leer todo el recurso con cada notificación, puede usar una [consulta delta](delta_query_overview.md) para realizar un seguimiento de los cambios que más le interesen y sincronizar el almacén local con esos cambios. Puede [realizar un seguimiento de los cambios en los mensajes de una carpeta específica](delta_query_messages.md). También puede realizar un seguimiento de los cambios en las carpetas de correo en el nivel raíz (por ejemplo, `/me/mailfolders`). 
-
+Para encontrar las entidades exactas que se cambiaron sin tener que leer todo el recurso con cada notificación, puede usar una [consulta delta](delta_query_overview.md) para realizar un seguimiento de los cambios que más le interesen y sincronizar el almacén local con esos cambios. Puede [realizar un seguimiento de los cambios en los mensajes de una carpeta específica](delta_query_messages.md). También puede realizar un seguimiento de los cambios en las carpetas de correo en el nivel raíz (por ejemplo, `/me/mailfolders`).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

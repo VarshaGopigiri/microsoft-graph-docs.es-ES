@@ -167,10 +167,10 @@ Si especifica $filter, el servidor deducirá un criterio de ordenación para los
 En el siguiente ejemplo, se muestra una consulta filtrada por las propiedades **subject** y **importance**, y después ordenada por las propiedades **subject**, **importance** y **receivedDateTime** en orden descendente.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Nota:** Con recursos de Azure AD que se derivan de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) y [group](../api-reference/v1.0/resources/group.md), no se puede combinar `$orderby` con expresiones`$filter`. 
 
@@ -184,25 +184,26 @@ Use el parámetro de consulta `$search` para restringir los resultados de una so
 
 Las aplicaciones de Office 365, como Outlook y SharePoint, admiten la sintaxis del lenguaje de consulta de palabras clave (KQL) para realizar búsquedas. Esto proporciona la comodidad de un dominio de detección común para sus almacenes de datos. 
 
-Cuando busca en las colecciones de mensajes, los resultados se ordenan por la fecha y la hora en que se ha enviado el mensaje. 
+Puede especificar los siguientes nombres de propiedad que reconoce KQL en una cadena de consulta $search. Estos nombres de propiedades no son propiedades que se definen en la entidad **message**, sino que son asignados internamente a las propiedades de la entidad **message**. Vea [propiedades susceptibles de búsqueda en Exchange](https://docs.microsoft.com/es-ES/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange) para obtener más información y ejemplos.
 
-Puede especificar las siguientes propiedades en un **mensaje** en un criterio `$search`:
-
-- **attachments**
-- **bccRecipients**
+- **attachment**
+- **bcc**
 - **body**
 - **category**
-- **ccRecipients**
+- **cc**
 - **content**
 - **from**
-- **hasAttachments**
+- **has**
+- **importance**
 - **participants**
-- **receivedDateTime**
+- **received**
 - **sender**
 - **subject**
-- **toRecipients**
+- **to**
 
 Si realiza una búsqueda en mensajes y especifica un solo valor, la búsqueda se lleva a cabo con las propiedades de búsqueda predeterminadas de **from**, **subject** y **body**.
+
+Los resultados de una búsqueda en una colección de mensajes se ordenan por la fecha y la hora en que se ha enviado el mensaje.
 
 En el ejemplo siguiente, se devuelven todos los mensajes del buzón del usuario que ha iniciado sesión que contienen la palabra "pizza" en cualquiera de las tres propiedades de búsqueda predeterminadas:
 

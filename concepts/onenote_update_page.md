@@ -1,42 +1,42 @@
 # <a name="update-onenote-page-content"></a>Actualizar el contenido de la página de OneNote
 
-*__Se aplica a:__ blocs de notas para consumidores de OneDrive | blocs de notas para empresa de Office 365*
+**Se aplica a:** Blocs de notas para consumidores de OneDrive | Blocs de notas empresariales de Office 365
 
 
 Para actualizar el contenido de una página de OneNote, envíe una solicitud PATCH al punto de conexión *content* de la página.
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-Envíe un objeto de cambio JSON en el cuerpo del mensaje. Si la solicitud es correcta, Microsoft Graph devuelve un código de estado HTTP 204.
+Envíe un objeto de cambio JSON en el cuerpo del mensaje. Si la solicitud se completa correctamente, Microsoft Graph devuelve un código de estado HTTP 204.
 
 
 <a name="request-uri"></a>
+
 ## <a name="construct-the-request-uri"></a>Crear el URI de la solicitud
 
 Para crear el URI de la solicitud, comience con la dirección URL raíz del servicio:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
+<br/>
+
 Luego anexe el punto de conexión *content* de la página:
 
-**Obtenga el HTML de página y todos los valores de *data-id* definidos**.</p>
-`../pages/{id}/content`   
+- **Obtenga el HTML de página y todos los valores de *data-id* definidos**.<br/><br/>`../pages/{id}/content`   
 
-**Obtenga el HTML de página y todos los valores de *data-id* definidos y todos los valores de *id* generados**.  
-`../pages/{page-id}/content?includeIDs=true` 
+- **Obtenga el HTML de página y todos los valores de *data-id* definidos y todos los valores de *id* generados**.<br/><br/>`../pages/{page-id}/content?includeIDs=true` 
 
 Los valores de **data-id** y de **id** se usan como identificadores **target** de los elementos que se quieren actualizar.
 
  
-El identificador URI de solicitud completo tendrá un aspecto similar al siguiente:
-
-`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
+El identificador URI de solicitud completo tendrá un aspecto similar al siguiente:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
 Obtenga más información sobre la [dirección URL raíz del servicio](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
 
 
 <a name="message-body"></a>
+
 ## <a name="construct-the-message-body"></a>Crear al cuerpo del mensaje
 
 El código HTML de una página de OneNote contiene texto, imágenes y otro contenido organizado en estructuras tales como **div**, **img** y **ol** elementos. Para actualizar el contenido de la página de OneNote, puede agregar y reemplazar elementos HTML en la página.
@@ -68,18 +68,20 @@ Vea [más ejemplos](#example-requests).
 
 Use los atributos **target**, **action**, **position** y **content** para definir objetos JSON para solicitudes PATCH.
 
-**target**  
+#### <a name="target"></a>target
+
 Elemento que se va a actualizar. El valor debe ser uno de los siguientes identificadores:
 
 | Identificador | Descripción |  
 |------|------|  
-| #{data-id} | <p>Este identificador se define opcionalmente en los elementos del HTML de entrada [al crear una página](onenote-create-page.md) o [actualizar una página](onenote_update_page.md). Use # como prefijo.</p><p> Ejemplo: `'target':'#intro'` tiene como destino el elemento `<div data-id="intro" ...>`</p> |  
-| id | <p>Se trata del [identificador generado](#generated-ids) en Microsoft Graph, y es necesario para la mayoría de las operaciones de reemplazo. No use # como prefijo.</p><p> Ejemplo: `'target':'div:{33f8a2...}{37}'` tiene como destino el elemento `<div id="div:{33f8a2...}{37}" ...>`</p><p>No debe confundirse con los valores de **id** definidos en el [HTML de entrada](onenote_input_output_html.md). Todos los valores de **id** enviados en el HTML de entrada se descartan.</p> |  
+| #{data-id} | <p>Este identificador se define opcionalmente en los elementos del HTML de entrada [al crear una página](onenote-create-page.md) o [actualizar una página](onenote_update_page.md). Use # como prefijo.</p><p> Ejemplo:<br/>`'target':'#intro'` tiene como destino el elemento `<div data-id="intro" ...>`</p> |  
+| id | <p>Se trata del [identificador generado](#generated-ids) en Microsoft Graph, y es necesario para la mayoría de las operaciones de reemplazo. No use # como prefijo.</p><p> Ejemplo:<br/>`'target':'div:{33f8a2...}{37}'` tiene como destino el elemento `<div id="div:{33f8a2...}{37}" ...>`</p><p>No debe confundirse con los valores de **id** definidos en el [HTML de entrada](onenote_input_output_html.md). Todos los valores de **id** enviados en el HTML de entrada se descartan.</p> |  
 | body | Palabra clave que tiene como destino el primer div en la página. No use # como prefijo. |  
 | title | Palabra clave que tiene como destino el título de página. No use # como prefijo. |  
  
-**action**  
-Acción que se debe efectuar en el elemento de destino. Vea [acciones admitidas para elementos](#supported-elements-and-actions).
+#### <a name="action"></a>action
+
+La acción que se va a realizar en el elemento de destino. Vea [acciones admitidas para elementos](#supported-elements-and-actions).
 
 | Acción | Descripción |  
 |------|------|  
@@ -88,15 +90,17 @@ Acción que se debe efectuar en el elemento de destino. Vea [acciones admitidas 
 | prepend | <p>Agrega el contenido especificado al destino como primer elemento secundario. Acceso directo a **append** + **before**.</p><p>Solo se aplica a los elementos **body**, **div**, **ol** y **ul**.</p> |  
 | replace | <p>Reemplaza el destino por el contenido especificado.</p><p>La mayoría de las acciones **replace** requieren el uso del [identificador generado](#generated-ids) para el elemento de destino (excepto **img** y **object** dentro de un div, que también admiten el uso de **data-id**).</p> |  
  
-**position**  
-Ubicación donde se debe agregar el contenido provisto, en relación con el elemento de destino. Si se omite, se establece de manera predeterminada en **after**.
+#### <a name="position"></a>position
+
+La ubicación donde agregar el contenido provisto, relativa al elemento de destino. Queda predeterminado como **after** si se omite.
 
 | Posición | Descripción |  
 |------|------|  
-| after (valor predeterminado) | <p>-Con **append**: último elemento secundario del elemento de destino.</p><p>- Con **insert**: siguiente elemento del mismo nivel del elemento de destino.</p> |
-| before | <p>-Con **append**: primer elemento secundario del elemento de destino.</p><p>- Con **insert**: anterior elemento del mismo nivel del elemento de destino.</p> |
+| after (valor predeterminado) |<p>Con **append**: último elemento secundario del elemento de destino.</p><p>Con **insert**: siguiente elemento del mismo nivel del elemento de destino.</p> |
+| before | <p>Con **append**: primer elemento secundario del elemento de destino.</p><p>Con **insert**: anterior elemento del mismo nivel del elemento de destino.</p> |
 
-**content**  
+#### <a name="content"></a>content
+
 Cadena de HTML sintácticamente correcta que se agrega a la página y datos binarios de cualquier imagen o archivo. Si el contenido contiene datos binarios, la solicitud debe enviarse utilizando el tipo de contenido `multipart/form-data` con una parte "Comandos" (véase un [ejemplo](#multipart-request-with-binary-content)). 
  
 
@@ -141,19 +145,21 @@ En el siguiente ejemplo se usa el valor de **id** como destino. No use el prefij
 <a name="support-matrix"></a>
 
 ## <a name="supported-elements-and-actions"></a>Acciones y elementos admitidos
+
 Se pueden actualizar muchos elementos de la página, pero cada tipo de elemento admite acciones específicas. En la siguiente tabla se muestran los elementos de destino admitidos y las acciones de actualización que admiten.
 
 | Elemento | Reemplazar | Anexar elemento secundario | Insertar elemento del mismo nivel |  
-|------|------|------|------|  
+|------|:------:|:------:|:------:|  
 | body<br /> (tiene como destino el primer div en la página) | no | **sí** | no |  
 | div<br /> ([posición absoluta](onenote-abs-pos.md)) | no | **sí** | no |  
-| div<br /> (en un elemento div) | **sí** (solo identificador) | **sí** | **sí** |   
+| div<br /> (en un elemento div) | **sí**<br/>(solo identificador) | **sí** | **sí** |   
 | img, object<br /> (en un elemento div) | **sí** | no | **sí** |   
-| ol, ul | **sí** (solo identificador) | **sí** | **sí** |   
-| table | **sí** (solo identificador) | no | **sí** |   
-| p, li, h1-h6 | **sí** (solo identificador) | no | **sí** |   
+| ol, ul | **sí**<br/>(solo identificador) | **sí** | **sí** |   
+| table | **sí**<br/>(solo identificador) | no | **sí** |   
+| p, li, h1-h6 | **sí**<br/>(solo identificador) | no | **sí** |   
 | title | **sí** | no | no |  
  
+<br/>
 
 Los siguientes elementos no admiten ninguna acción de actualización.
 
@@ -168,17 +174,23 @@ Los siguientes elementos no admiten ninguna acción de actualización.
 
 
 <a name="examples"></a>
+
 ## <a name="example-requests"></a>Solicitudes de ejemplo
+
 Una solicitud de actualización contiene uno o más cambios que se representan como objetos de cambio JSON. Estos objetos pueden definir diferentes destinos en la página y diferentes acciones y contenido para los destinos.
 
 En los siguientes ejemplos se incluyen objetos JSON usados en solicitudes PATCH y solicitudes PATCH completas:
 
-[Anexar elementos secundarios](#append-child-elements)&nbsp;&nbsp;|&nbsp;&nbsp;[Insertar elementos del mismo nivel](#insert-sibling-elements)&nbsp;&nbsp;|&nbsp;&nbsp;[Reemplazar elementos](#replace-elements)&nbsp;&nbsp;|&nbsp;&nbsp;[Completar solicitudes PATCH](#complete-patch-request-examples)
+- [Anexar elementos secundarios](#append-child-elements)
+- [Insertar elementos del mismo nivel](#insert-sibling-elements)
+- [Reemplazar elementos](#replace-elements)
+- [Solicitud PATCH completa](#complete-patch-request-examples)
 
 
 <a name="append-examples"></a>
 
 ### <a name="append-child-elements"></a>Anexar elementos secundarios
+
 La acción **append** agrega un elemento secundario a un elemento **body**, **div** (dentro de un div), **ol** o **ul**. El atributo **position** determina si el elemento secundario se va a anexar antes o después del destino. La posición predeterminada es **after**.
 
 #### <a name="append-to-a-div"></a>Anexar a un div
@@ -226,7 +238,7 @@ En el siguiente ejemplo se agregan dos párrafos como primer elemento secundario
 
 #### <a name="append-to-a-list"></a>Anexar a una lista
 
-En el ejemplo siguiente se agrega un elemento de lista como último elemento secundario a la lista de destino. Se define la propiedad **list-style-type** porque el elemento usa un estilo de lista no predeterminado.
+La acción insert agrega un elemento relacionado al elemento de destino. El atributo position determina si el elemento relacionado se insertará antes o después del elemento de destino. La posición predeterminada es after. Consulte elementos que admiten insertar.
 
 ```json
 [
@@ -242,11 +254,12 @@ En el ejemplo siguiente se agrega un elemento de lista como último elemento sec
 <a name="insert-examples"></a>
 
 ### <a name="insert-sibling-elements"></a>Insertar elementos del mismo nivel
+
 La acción **insert** agrega un elemento del mismo nivel al elemento de destino. El atributo **position** determina si el elemento del mismo nivel se va a insertar antes o después del destino. La posición predeterminada es **after**. Vea [elementos que admiten **insert**](#supported-elements-and-actions).
 
-**Insertar elementos del mismo nivel**
+#### <a name="insert-siblings"></a>Insertar elementos del mismo nivel
 
-En el ejemplo siguiente se agregan dos nodos del mismo nivel a la página. Agrega una imagen por encima del elemento **para1** y un párrafo por debajo del elemento **para2**.
+Puede usar tanto el data-id o el id generado como valor de destino para reemplazar elementosimg y object que se encuentran dentro de un div. Para reemplazar el título de una página, use la palabra clave title. Para todos los demás elementos que admiten reemplazo, debe usar el Id. generado.
 
 ```json
 [
@@ -288,7 +301,7 @@ En este ejemplo se reemplaza una imagen por un div mediante el **data-id** de la
 
 #### <a name="update-a-table"></a>Actualizar una tabla 
 
-En este ejemplo se muestra cómo actualizar una tabla mediante su identificador generado. No se admite el reemplazo de los elementos **tr** y **td**, pero puede reemplazarse toda la tabla.
+Este ejemplo muestra cómo cambiar el título de una página. Para cambiar el título, use la palabra clave title como el valor del elemento de destino. No use # con el elemento de destino title.
 
 ```json
 [
@@ -343,10 +356,11 @@ Vea [Uso de etiquetas de nota](onenote-note-tags.md) para más información sobr
 
 En los ejemplos siguientes se muestran solicitudes PATCH completas.
 
-#### <a name="request-with-text-content-only"></a>Solicitud con solo contenido de texto  
+#### <a name="request-with-text-content-only"></a>Solicitud con solo contenido de texto
+
 En el siguiente ejemplo se muestra una solicitud PATCH que utiliza el tipo de contenido **application/json**. Puede usar este formato cuando el contenido no contiene datos binarios.
 
-```
+```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -373,7 +387,7 @@ Authorization: Bearer {token}
 
 En el ejemplo siguiente se muestra una solicitud PATCH de varias partes que incluye datos binarios. Las solicitudes de varias partes requieren una parte "Comandos" que especifica el tipo de contenido **application/json** y contiene la matriz de objetos de cambio JSON. Otras partes de datos pueden contener datos binarios. Los nombres de parte suelen ser cadenas anexadas con la hora actual en milisegundos o un GUID aleatorio.
 
-```
+```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: multipart/form-data; boundary=PartBoundary123
@@ -412,9 +426,10 @@ Content-Type: image/png
 | Datos de solicitud | Descripción |  
 |------|------|  
 | Protocolo | Todas las solicitudes usan el protocolo HTTPS SSL/TLS. |  
-| Encabezado Authorization | <p>`Bearer {token}`, donde *{token}* es un token de acceso de OAuth 2.0 válido para la aplicación registrada.</p><p>Si falta o no es válido, se produce un error en la solicitud con un código de estado 401. Vea [Authentication and permissions](permissions_reference.md) (Autenticación y permisos).</p> |  
-| Encabezado Content-Type | <p>`application/json` para la matriz de objetos de cambio JSON, tanto si se envía directamente en el cuerpo del mensaje como si se envía en la parte "Comandos" necesaria de las [solicitudes de varias partes](#multipart-request-with-binary-content).</p><p>Se necesitan solicitudes de varias partes cuando se envían datos binarios y se utiliza el tipo de contenido `multipart/form-data; boundary=part-boundary`, donde *{part-boundary}* es una cadena que señala el inicio y el final de cada parte de datos.</p> |  
- 
+| Encabezado Authorization | <p>`Bearer {token}`, donde `{token}` es un token de acceso de OAuth 2.0 válido para la aplicación registrada.</p><p>Si falta o no es válido, la solicitud producirá errores con el código de estado 401. Vea [Authentication and permissions](permissions_reference.md) (Autenticación y permisos).</p> |  
+| Encabezado Content-Type | <p>`application/json` para la matriz de objetos de cambio JSON, tanto si se envía directamente en el cuerpo del mensaje como si se envía en la parte "Comandos" necesaria de las [solicitudes de varias partes](#multipart-request-with-binary-content).</p><p>Se necesitan solicitudes de varias partes cuando se envían datos binarios y se utiliza el tipo de contenido `multipart/form-data; boundary=part-boundary`, donde `{part-boundary}` es una cadena que señala el inicio y el final de cada parte de datos.</p> |  
+
+<br/> 
 
 | Datos de respuesta | Descripción |  
 |------|------|  
@@ -425,19 +440,15 @@ Content-Type: image/png
 
 <a name="root-url"></a>
 
-### <a name="constructing-the-microsoft-graph-service-root-url"></a>Crear la dirección URL raíz del servicio de Microsoft Graph
+### <a name="constructing-the-microsoft-graph-service-root-url"></a>Crear la URL raíz del servicio de Microsoft Graph
 
-<a name="root-url"></a>
+La dirección URL raíz del servicio OneNote utiliza el siguiente formato para todas las llamadas a la API de OneNote:
 
-## <a name="root-url"></a>Dirección URL raíz
-La dirección URL raíz del servicio OneNote utiliza el siguiente formato para todas las llamadas a la API de OneNote.
 `https://graph.microsoft.com/{version}/me/onenote/`
 
-El segmento `version` de la URL representa la versión de Microsoft Graph que se quiere utilizar.
-- `v1.0` corresponde al código de producción estable.
-- `beta` corresponde a la prueba de una característica que se encuentra en desarrollo. Las características y la funcionalidad de la versión beta pueden cambiar, por lo que no se debe usar en el código de producción.
-- `me` corresponde a contenido de OneNote al que el usuario actual tiene acceso (de su propiedad y compartido).
-- `users/{id}` corresponde a contenido de OneNote que el usuario especificado (en la dirección URL) ha compartido con el usuario actual. Use la [API de Azure AD Graph](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).
+El segmento `version` de la URL representa la versión de Microsoft Graph que se quiere utilizar. `v1.0` corresponde al código de producción estable. `beta` corresponde a la prueba de una característica que se encuentra en desarrollo. Las características y la funcionalidad de la versión beta pueden cambiar, por lo que no se debe usar en el código de producción.
+
+`me` corresponde a contenido de OneNote al que el usuario actual tiene acceso (de su propiedad y compartido). `users/{id}` corresponde a contenido de OneNote que el usuario especificado (en la dirección URL) ha compartido con el usuario actual. Use la [API de Azure AD Graph](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).
 
 
 > **Nota:** Puede obtener identificadores de usuario realizando una solicitud GET en `https://graph.microsoft.com/v1.0/users`.
@@ -458,7 +469,7 @@ Para obtener más información sobre los ámbitos de permiso y cómo funcionan, 
 
 <a name="see-also"></a>
 
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Agregar imágenes y archivos](onenote_images_files.md)
 - [Integración con OneNote](integrate_with_onenote.md)

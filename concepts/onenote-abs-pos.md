@@ -4,6 +4,7 @@
 El cuerpo de una página de OneNote puede contener varios elementos secundarios `div`, `img` y `object` directos que pueden colocarse en la página por separado.
 
 <a name="attributes"></a>
+
 ## <a name="attributes-and-positioning-behavior"></a>Comportamiento de posicionamiento y atributos
 
 Use los atributos `data-absolute-enabled` y [`style`](#supported-css-style-attributes) para crear elementos con posición absoluta en una página, como se indica a continuación:
@@ -23,11 +24,11 @@ Use los atributos `data-absolute-enabled` y [`style`](#supported-css-style-attri
 - Los elementos con posición absoluta no se pueden anidar ni contener elementos con posición. La API omite cualquier configuración de la posición especificada en los elementos anidados dentro de una div con posición absoluta, procesa el contenido anidado dentro de la div primaria con posición absoluta y devuelve una advertencia en la propiedad **api.diagnostics** en la respuesta.
 
 
-# <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
- El ejemplo siguiente contiene un secundario `p` directo, una div con posición absoluta y una div sin posición absoluta.
+El ejemplo siguiente contiene un secundario `p` directo, una div con posición absoluta y una div sin posición absoluta.
 
-## <a name="input-html"></a>HTML de entrada  
+#### <a name="input-html"></a>HTML de entrada  
 
    ```html 
    <body data-absolute-enabled="true">
@@ -43,7 +44,7 @@ Use los atributos `data-absolute-enabled` y [`style`](#supported-css-style-attri
 
 La API representa la div sin posición absoluta en la div predeterminada. Tenga en cuenta que las etiquetas `<div>` anidadas se descartan porque no definen información semántica (como `data-id`).
 
-## <a name="output-html"></a>HTML de salida 
+#### <a name="output-html"></a>HTML de salida 
 
    ```html 
    <body data-absolute-enabled="true" style="font-family:Calibri;font-size:11pt">
@@ -57,12 +58,12 @@ La API representa la div sin posición absoluta en la div predeterminada. Tenga 
    </body>
    ```
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
- El siguiente ejemplo crea una página que contiene una div con posición absoluta y una imagen con posición absoluta.
+El siguiente ejemplo crea una página que contiene una div con posición absoluta y una imagen con posición absoluta.
 
 
-### <a name="input-html"></a>HTML de entrada  
+#### <a name="input-html"></a>HTML de entrada  
 
 ```html 
 <html>
@@ -91,7 +92,8 @@ Observe los cambios en la div anidada no colaborador del HTML de entrada. La API
 Para obtener más información sobre cómo la API de OneNote controla el HTML de entrada y salida, consulte [HTML de entrada y salida para páginas de OneNote](onenote_input_output_html.md).
 
 <a name="style-attributes"></a>
-### <a name="supported-css-style-attributes"></a>Atributos de estilo CSS compatibles
+
+## <a name="supported-css-style-attributes"></a>Atributos de estilo CSS compatibles
 
 Todos los elementos con posición absoluta pueden especificar las posiciones superior e izquierda. Las div e imágenes pueden especificar la anchura y las imágenes también pueden especificar la altura. Por ejemplo:
 
@@ -101,16 +103,18 @@ Todos los elementos con posición absoluta pueden especificar las posiciones sup
 
 | Atributo | Elemento admitido | Descripción |  
 |:------|:------|:------|  
-| top | div, img, object | Las coordenadas del eje y del borde superior del elemento, en píxeles únicamente. El valor predeterminado es 120 píxeles.<p>Ejemplo: `top:140px`</p> |  
-| left |  div, img, object  | La coordenada del eje x del borde izquierdo del elemento en píxeles únicamente. El valor predeterminado es 48 píxeles.<p>Ejemplo: `left:95px`</p> |  
-| width |  div, img  | La anchura del elemento, en píxeles únicamente.<p>Ejemplo: `width:480px`</p> |  
-| height | img | La altura del elemento, en píxeles únicamente. Para div, se calcula la altura en runtime y se omite cualquier valor de altura especificado.<p>Ejemplo: `height:665px`</p> |  
+| top | div, img, object | Las coordenadas del eje y del borde superior del elemento, en píxeles únicamente. El valor predeterminado es 120 píxeles.<br/><br/>Ejemplo: `top:140px` |  
+| left |  div, img, object  | La coordenada del eje x del borde izquierdo del elemento en píxeles únicamente. El valor predeterminado es 48 píxeles.<br/><br/>Ejemplo: `left:95px` |  
+| width |  div, img  | La anchura del elemento, en píxeles únicamente.<br/><br/>Ejemplo: `width:480px` |  
+| height | img | La altura del elemento, en píxeles únicamente. Para div, se calcula la altura en runtime y se omite cualquier valor de altura especificado.<br/><br/>Ejemplo: `height:665px` |  
  
 Se ignoran otros atributos de posición, como `z-index`. Las imágenes con posición absolutas pueden usar el atributo `data-render-src` o `src`.
 
 
 <a name="request-response-info"></a>
+
 ## <a name="response-information"></a>Información de respuesta
+
 La API de OneNote proporciona la siguiente información en la respuesta.
 
 | Datos de respuesta | Descripción |  
@@ -121,17 +125,19 @@ La API de OneNote proporciona la siguiente información en la respuesta.
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Permisos
 
-Para crear o actualizar páginas OneNote, debe solicitar los permisos adecuados. Elija el nivel más bajo de permisos que necesita la aplicación para hacer su trabajo.
+Para crear o actualizar páginas de OneNote, necesita solicitar los permisos adecuados. Seleccione el nivel inferior de permisos que necesita la aplicación para funcionar correctamente.
 
-### <a name="permissions-for-post-pages"></a>Permisos de _páginas POST_ 
+#### <a name="permissions-for-post-pages"></a>Permisos para páginas POST 
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
 
-### <a name="permissions-for-patch-pages"></a>Permisos de _páginas PATCH_ 
+#### <a name="permissions-for-patch-pages"></a>Permisos para páginas PATCH 
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -140,7 +146,8 @@ Para obtener más información sobre los ámbitos de permiso y cómo funcionan, 
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Recursos adicionales
+
+## <a name="see-also"></a>Vea también
 
 - [Crear páginas de OneNote](onenote-create-page.md)
 - [Actualizar el contenido de la página de OneNote](onenote_update_page.md)

@@ -3,6 +3,7 @@
 Este artículo describe los códigos de error que devuelven las API de OneNote en Microsoft Graph cuando se produce un error en una solicitud enviada a través de la API.
 
 ## <a name="error-response-example"></a>Ejemplo de respuesta de error
+
 Cuando la solicitud genera un error, la API de OneNote deja de realizar la solicitud y devuelve una respuesta de error como un objeto JSON. Una respuesta de error contiene el código de error asociado, un mensaje y un vínculo a la sección correspondiente en este artículo. El ejemplo siguiente muestra el aspecto de una respuesta de error.
 
 ```json
@@ -21,6 +22,7 @@ Cuando la solicitud genera un error, la API de OneNote deja de realizar la solic
 Para obtener más información sobre los errores de Microsoft Graph, consulte [Respuestas de error de Microsoft Graph y tipos de recursos](errors.md).
 
 ## <a name="codes-from-10001-to-19999"></a>Códigos de 10001 a 19999
+
 El servicio tiene problemas o está enviando información a la aplicación.
 
 ### <a name="10001"></a>10001
@@ -36,7 +38,7 @@ La cuenta de usuario actual ha superado el número máximo de solicitudes activa
 El servicio no puede crear una página en la sección solicitada porque la sección está protegida por contraseña.
 
 ### <a name="10005"></a>10005
-La solicitud contiene más del número máximo de etiquetas de imagen en las que el atributo **data-render-src** contiene un PDF. Vea [Agregar imágenes y archivos](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-images-files).
+La solicitud contiene más del número máximo de etiquetas de imagen en las que el atributo **data-render-src** contiene un PDF. Vea [Agregar imágenes y archivos](onenote_images_files.md).
 
 ### <a name="10006"></a>10006
 La API de OneNote no pudo crear una página en la sección especificada porque esta sección está dañada.
@@ -48,7 +50,7 @@ El servidor está demasiado ocupado para atender la solicitud entrante en este m
 Uno o más de las bibliotecas de documentos en OneDrive del usuario o del grupo contiene más de 5000 elementos de OneNote (blocs de notas, secciones, grupos de secciones) y no se puede consultar mediante la API. Asegúrese de que ninguna de las bibliotecas de documentos del grupo o del usuario contiene más de 5000 elementos de OneNote. Consulte el [blog de desarrollo de OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para conocer los pasos de mitigación.
 
 ### <a name="10012"></a>10012
-No se puede crear ni actualizar la entidad porque la biblioteca que contiene el bloc de notas necesita extraer del repositorio los elementos antes de editarlos. Para obtener más información, vea https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
+No se puede crear ni actualizar la entidad porque la biblioteca que contiene el bloc de notas necesita extraer del repositorio los elementos antes de editarlos. Para obtener más información, vea [Configurar una biblioteca para requerir la desprotección de archivos](https://support.office.com/es-ES/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Quite el requisito de desprotección de la biblioteca o mueva el bloc de notas.
 
@@ -71,6 +73,7 @@ Solicitud incorrecta (Bad Request)
 Ha habido un error en la solicitud porque se produjo un error sin determinar.
 
 ## <a name="codes-from-20001-to-29999"></a>Códigos de 20001 a 29999
+
 El código de la aplicación ha hecho algo mal.
 
 ### <a name="20001"></a>20001
@@ -109,6 +112,7 @@ La solicitud contiene una carga de varias partes con formato incorrecto. Entre l
 
 ### <a name="20012"></a>20012
 La solicitud no proporciona un tipo de contenido para la parte especificada. 
+
 ### <a name="20013"></a>20013
 La solicitud no proporciona los encabezados Content-Type y Content-Disposition para la parte especificada. 
 
@@ -135,6 +139,7 @@ Se encontró JSON con formato incorrecto en el cuerpo de la solicitud.
 
 ### <a name="20100"></a>20100
 Hay algún fallo en la sintaxis de su solicitud. 
+
 ### <a name="20101"></a>20101
 La propiedad que ha solicitado no existe.
 
@@ -142,7 +147,7 @@ La propiedad que ha solicitado no existe.
 Ha solicitado un recurso que no existe.
 
 ### <a name="20103"></a>20103
-La consulta **expand** no se admite para esta solicitud. Vea [Opciones de cadena de consultas OData admitidas](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-get-content#query-options).
+La consulta **expand** no se admite para esta solicitud. Vea [Opciones de cadena de consultas OData admitidas](onenote-get-content.md#supported-odata-query-string-options).
 
 ### <a name="20104"></a>20104
 La opción de consulta **pagelevel** solo se admite al realizar consultas para la colección de páginas de una sección o de una página específica. Por ejemplo:  
@@ -186,19 +191,19 @@ El código HTML de la parte "Presentation" contiene un atributo **data-attachmen
 Su solicitud especifica un destino PATCH que no se encuentra.
 
 ### <a name="20121"></a>20121
-La solicitud contiene un argumento PATCH no válido. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+La solicitud contiene un argumento PATCH no válido. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20122"></a>20122
-La solicitud especifica una acción PATCH no compatible. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+La solicitud especifica una acción PATCH no compatible. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20123"></a>20123
 La solicitud PATCH no puede modificar la página especificada.
 
 ### <a name="20124"></a>20124
-La solicitud PATCH de varias partes no incluye una parte "commands" con la estructura JSON de la acción PATCH. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+La solicitud PATCH de varias partes no incluye una parte "commands" con la estructura JSON de la acción PATCH. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20125"></a>20125
-La solicitud PATCH no contiene acciones. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+La solicitud PATCH no contiene acciones. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20126"></a>20126
 El cuerpo del mensaje contiene JSON con un formato incorrecto o campos que no son compatibles con esta operación.
@@ -222,38 +227,41 @@ La solicitud contiene un valor no válido para Content-Type. Use el valor indica
 Su solicitud incluye contenido no válido. Las causas comunes son la falta de un encabezado Content-Type o un cuerpo de la solicitud sin contenido. 
 
 ### <a name="20133"></a>20133
-Su solicitud especifica un destino PATCH que no es compatible. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+Su solicitud especifica un destino PATCH que no es compatible. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20134"></a>20134
-La solicitud especifica un elemento no válido como destino de la acción PATCH. Si el destino usa el identificador **data-id**, asegúrese de que tiene el prefijo con el símbolo #. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+La solicitud especifica un elemento no válido como destino de la acción PATCH. Si el destino usa el identificador **data-id**, asegúrese de que tenga el símbolo # como prefijo. Consulte [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20135"></a>20135
-Su solicitud especifica un tipo de entidad que no es compatible con la operación PATCH. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+Su solicitud especifica un tipo de entidad que no es compatible con la operación PATCH. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20136"></a>20136
-La solicitud contiene un atributo **data-render-src** o **data-render-method** no válido o que falta. Vea [Extraer los datos de las capturas](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-extract-data).
+La solicitud contiene un atributo **data-render-src** o **data-render-method** no válido o que falta. Vea [Extraer los datos de las capturas](onenote-extract-data.md).
 
 ### <a name="20137"></a>20137
 La página de destino no admite solicitudes PATCH.
 
 ### <a name="20138"></a>20138
-El tipo de elemento de destino de la solicitud PATCH no admite la acción **append** especificada. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+El tipo de elemento de destino de la solicitud PATCH no admite la acción **append** especificada. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20139"></a>20139
-La solicitud contiene un valor de atributo **data-tag** no válido. Vea [Uso de etiquetas de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags).
+La solicitud contiene un valor de atributo **data-tag** no válido. Vea [Usar etiquetas de nota](onenote-note-tags.md).
 
 ### <a name="20140"></a>20140
-La solicitud contiene un valor de estado **data-tag** no válido. Las etiquetas de nota de casillas pueden tener un estado **completed**. Ejemplo:
+La solicitud contiene un valor de estado **data-tag** no válido. Las etiquetas de nota de casillas pueden tener un estado **completed**. 
+
+Ejemplo:
+
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-Vea [Uso de etiquetas de nota](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-note-tags).
+Vea [Uso de etiquetas de nota](onenote-note-tags.md).
 
 ### <a name="20141"></a>20141
-El destino de la solicitud PATCH no admite la acción especificada. Vea [Actualizar contenido de la página](../api-reference/v1.0/api/page_update.md).
+El destino de la solicitud PATCH no admite la acción especificada. Vea [Actualizar contenido de la página](onenote_update_page.md).
 
 ### <a name="20142"></a>20142
-La solicitud contiene una expresión **expand** para un elemento primario de entidades secundarias o un elemento secundario de entidades primarias, lo cual no es compatible. Vea [Opciones de cadena de consultas OData admitidas](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-get-content#query-options).
+La solicitud contiene una expresión **expand** para un elemento primario de entidades secundarias o un elemento secundario de entidades primarias, lo cual no es compatible. Vea [Opciones de cadena de consultas OData admitidas](onenote-get-content.md#supported-odata-query-string-options).
 
 ### <a name="20143"></a>20143
 La consulta OData no es válida.
@@ -283,7 +291,7 @@ La solicitud no es válida para este tipo de autenticación. Use la ruta de acce
 La solicitud no es válida para este tipo de autenticación. Use el punto de conexión `../me/onenote/section/{id}/pages` para crear una página en una sección específica.
 
 ### <a name="20152"></a>20152
-No hay ningún valor name especificado para la entidad. Debe definirse el nombre y no puede contener únicamente espacios en blanco.
+No hay ningún valor name especificado para la entidad. El nombre debe estar definido y no puede contener solo espacios en blanco.
 
 ### <a name="20153"></a>20153
 El nombre de la entidad contiene caracteres no válidos. El nombre de la organización no puede contener los siguientes caracteres: `? * \ / : < > | & # " % ~`
@@ -315,7 +323,7 @@ La aplicación ha emitido demasiadas solicitudes en nombre de un usuario en un c
 Para obtener más información, consulte [OneNote API throttling and how to avoid it](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx) (Limitación de la API de OneNote y cómo evitarla).
 
 ### <a name="20168"></a>20168
-No se admite el origen de vídeo especificado en la solicitud. Vea [Sitios de vídeo compatibles](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-images-files#videos) para obtener la lista actual.
+No se admite el origen de vídeo especificado en la solicitud. Vea [Sitios de vídeo compatibles](onenote_images_files.md#adding-videos) para obtener la lista actual.
 
 
 ## <a name="codes-from-30001-to-39999"></a>Códigos de 30001 a 39999

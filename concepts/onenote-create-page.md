@@ -1,10 +1,12 @@
 # <a name="create-onenote-pages"></a>Crear páginas de OneNote
 
-*__Se aplica a:__ Blocs de notas para consumidores de OneDrive | Blocs de notas empresariales de Office 365*
+**Se aplica a**: Blocs de notas para consumidores de OneDrive | Blocs de notas empresariales de Office 365
 
 Para crear una página de OneNote, envíe una solicitud POST al punto de conexión *pages*. Por ejemplo:
 
-`POST ../notes/sections/{id}/pages`</p>
+`POST ../notes/sections/{id}/pages`
+
+<br/>
 
 Envíe el HTML que define la página en el cuerpo del mensaje. Si la solicitud se completa correctamente, Microsoft Graph devuelve un código de estado HTTP 201.
 
@@ -13,44 +15,43 @@ Envíe el HTML que define la página en el cuerpo del mensaje. Si la solicitud s
 
 
 <a name="request-uri"></a>
+
 ## <a name="construct-the-request-uri"></a>Crear el URI de la solicitud
 
 Para crear el URI de la solicitud POST, empiece con la dirección URL raíz del servicio:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
+<br/>
+
 Después, anexe el punto de conexión *pages*:
 
-**Crear una página en cualquier sección (especificado por el nombre de sección)**
+- **Crear una página en cualquier sección (especificado por el nombre de sección)**<br/><br/>`.../pages?sectionName=DefaultSection`
 
-`.../pages?sectionName=DefaultSection`
-
-**Crear una página en cualquier sección (especificado por el id.)** 
-
-`.../sections/{section-id}/pages` 
+- **Crear una página en cualquier sección (especificado por el id.)**<br/><br/>`.../sections/{section-id}/pages` 
 
 Si va a crear páginas en el bloc de notas personal del usuario, Microsoft Graph también proporciona puntos de conexión que puede usar para crear páginas en el bloc de notas predeterminado:
 
-**Crear una página de OneNote en la sección predeterminada del bloc de notas predeterminado** 
-
-`../pages` 
+- **Crear una página de OneNote en la sección predeterminada del bloc de notas predeterminado**<br/><br/>`../pages` 
 
 
 
 La URI de la solicitud completa tendrá un aspecto similar a uno de estos ejemplos:
-* `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
-* `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
+
+- `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
+- `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
 Obtenga más información sobre la [URL de raíz del servicio](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
 
 <a name="post-pages-section-name"></a>
+
 ### <a name="using-the-sectionname-url-parameter"></a>Usar el parámetro de URL *sectionName*
 
 Las reglas siguientes se aplican al usar el parámetro *sectionName* para crear una página en una sección con nombre del bloc de notas predeterminado:
 
 - Solo se puede hacer referencia a las secciones de nivel superior (no a las secciones dentro de grupos de secciones).
 
-- Si en el bloc de notas predeterminado no existe una sección con el nombre especificado, la API la creará. Los caracteres siguientes no pueden usarse en los nombres de sección: ? * \ / : &lt; &gt; | &amp; # " % ~
+- Si en el bloc de notas predeterminado no existe una sección con el nombre especificado, la API la creará. Los caracteres siguientes no pueden usarse en los nombres de sección: `? * \ / : < > | & # " % ~`
 
 - Los nombres de sección no distinguen mayúsculas de minúsculas, pero el uso de mayúsculas se conserva al crear las secciones. Por lo tanto, “Mi nueva sección” se mostrará de esa forma, pero “mi nueva sección” también coincidirá en las publicaciones posteriores.
 
@@ -64,6 +65,7 @@ Como se crearán secciones si no existen, es seguro usar esta llamada con todas 
 
 
 <a name="message-body"></a>
+
 ## <a name="construct-the-message-body"></a>Crear el cuerpo del mensaje
 
 El código HTML que define el contenido de la página se denomina *HTML de entrada*. El código HTML de entrada admite un [subconjunto de HTML y CSS estándar](#supported-html-and-css-for-onenote-pages), además de atributos personalizados. (Los atributos personalizados, como **data-id** y **data-render-src**, se describen en [HTML de entrada y salida](onenote_input_output_html.md)). 
@@ -72,7 +74,7 @@ Envíe el código HTML de entrada en el cuerpo del mensaje de la solicitud POST.
 
 En el ejemplo siguiente, se envía el código HTML de entrada directamente en el cuerpo del mensaje.
 
-```
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
 Authorization: Bearer {token}
@@ -91,12 +93,15 @@ Content-Type: application/xhtml+xml
 </html>
 ```
 
+<br/>
+
 Si envía datos binarios, tendrá que usar una [solicitud de varias partes](#example-request). 
 
->Para simplificar la programación y la coherencia en la aplicación, puede usar solicitudes de varias partes para crear todas las páginas. Le recomendamos que use una biblioteca para crear mensajes de varias partes. Esto reduce el riesgo de crear cargas de trabajo con formato incorrecto.
+> **Nota:** Para simplificar la programación y la coherencia en la aplicación, puede usar solicitudes de varias partes para crear todas las páginas. Le recomendamos que use una biblioteca para crear mensajes de varias partes. Esto reduce el riesgo de crear cargas de trabajo con formato incorrecto.
 
 
 <a name="input-html-rules"></a>
+
 ### <a name="requirements-and-limitations-for-input-html-in-post-pages-requests"></a>Requisitos y limitaciones para HTML de entrada en solicitudes de páginas POST
 
 Al enviar HTML de entrada, tenga en cuenta estos requisitos y limitaciones generales:  
@@ -113,6 +118,7 @@ Al enviar HTML de entrada, tenga en cuenta estos requisitos y limitaciones gener
 
 
 <a name="supported-html"></a>
+
 ### <a name="supported-html-and-css-for-onenote-pages"></a>HTML y CSS admitido para páginas de OneNote
 
 No se admiten todos los elementos, atributos y propiedades (en HTML4, XHTML, CSS, HTML5, etc.). En su lugar, Microsoft Graph admite un conjunto limitado de HTML que se adapta mejor a la forma en que los usuarios usan OneNote. Para obtener más información, vea [Etiquetas HTML admitidas para páginas](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). Si una etiqueta no se muestra aquí, lo más probable es que se omita.
@@ -134,11 +140,12 @@ Microsoft Graph conserva el contenido semántico y la estructura básica del HTM
 
 
 <a name="example"></a>
+
 ## <a name="example-request"></a>Ejemplo de solicitud
 
-En esta solicitud de varias partes de ejemplo, se crea una página que contiene imágenes y un archivo incrustado. El elemento **Presentation** necesario contiene el HTML de entrada que define la página. El elemento **imageBlock1** contiene los datos de imágenes binarias, y **fileBlock1** contiene los datos de archivos binarios. Los elementos de datos también pueden contener HTML; en ese caso, Microsoft Graph [representa el código HTML como una imagen](onenote_images_files.md#add-an-image-using-binary-data) en la página de OneNote. 
+En esta solicitud de varias partes de ejemplo, se crea una página que contiene imágenes y un archivo incrustado. El elemento **Presentation** necesario contiene el HTML de entrada que define la página. El elemento **imageBlock1** contiene los datos de imágenes binarias y **fileBlock1** contiene los datos de archivos binarios. Los elementos de datos también pueden contener HTML; en ese caso, Microsoft Graph [representa el código HTML como una imagen](onenote_images_files.md#add-an-image-using-binary-data) en la página de OneNote. 
 
-```
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
 Content-Type: multipart/form-data; boundary=MyPartBoundary198374
@@ -178,22 +185,27 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-Para obtener más ejemplos donde se muestra cómo crear páginas que contienen imágenes y otros archivos, vea [Agregar imágenes y archivos](onenote_images_files.md), [tutoriales](https://msdn.microsoft.com/es-ES/office/office365/howto/onenote-tutorial) y [ejemplos](https://github.com/onenotedev). Además, obtenga información sobre cómo [crear elementos con posición absoluta](onenote-abs-pos.md), [usar etiquetas de notas](onenote-note-tags.md) y [extraer datos de capturas](onenote-extract-data.md) de tarjetas de presentación y listas de productos y recetas en línea.
+Para obtener más ejemplos donde se muestra cómo crear páginas que contienen imágenes y otros archivos, vea [Agregar imágenes y archivos](onenote_images_files.md), [tutoriales](https://docs.microsoft.com/es-ES/previous-versions/office/office-365-api/how-to/onenote-tutorial) y [ejemplos](https://github.com/onenotedev). Además, obtenga información sobre cómo [crear elementos con posición absoluta](onenote-abs-pos.md), [usar etiquetas de notas](onenote-note-tags.md) y [extraer datos de capturas](onenote-extract-data.md) de tarjetas de presentación y listas de productos y recetas en línea.
 
-Microsoft Graph es estricto en relación con algunos formatos, como nuevas líneas CRLF en el cuerpo de un mensaje de varias partes. Para reducir el riesgo de crear cargas de trabajo con formato incorrecto, necesita usar una biblioteca para crear mensajes de varias partes. Si recibe un código de estado 400 para una carga con formato incorrecto, compruebe el formato de las nuevas líneas y los espacios en blanco, y asegúrese de que no haya problemas de codificación. Por ejemplo, pruebe a usar `charset=utf-8` (ejemplo: `Content-Type: text/html; charset=utf-8`).
+Microsoft Graph es estricto en relación con algunos formatos, como nuevas líneas CRLF en el cuerpo de un mensaje de varias partes. Para reducir el riesgo de crear cargas de trabajo con formato incorrecto, necesita usar una biblioteca para crear mensajes de varias partes. 
+
+Si recibe un código de estado 400 para una carga con formato incorrecto, compruebe el formato de las nuevas líneas y los espacios en blanco, y asegúrese de que no haya problemas de codificación. Por ejemplo, pruebe a usar `charset=utf-8` (ejemplo: `Content-Type: text/html; charset=utf-8`).
 
 Vea [Requisitos y limitaciones de HTML de entrada](#requirements-and-limitations-for-input-html-in-post-pages-requests) y [Límites de tamaño de solicitudes POST](onenote_images_files.md#size-limitations-for-post-pages-requests).
 
 
 <a name="request-response-info"></a>
+
 ## <a name="request-and-response-information-for-post-pages-requests"></a>Información de solicitudes y respuestas para solicitudes de *páginas POST*
 
 | Solicitar datos | Descripción |  
 |------|------|  
 | Protocolo | Todas las solicitudes usan el protocolo HTTPS SSL/TLS. |  
-| Encabezado Authorization | <p>`Bearer {token}`, donde *{token}* es un token de acceso de OAuth 2.0 válido para la aplicación registrada.</p><p>Si falta o no es válido, la solicitud producirá errores con el código de estado 401. Vea [Autenticación y permisos](permissions_reference.md).</p> |  
-| Encabezado Content-Type | <p>`text/html` o `application/xhtml+xml` para el contenido HTML, sin importar si se envía directamente en el cuerpo del mensaje o en el elemento “Presentación” necesario de las solicitudes de varias partes.</p><p>Las solicitudes de varias partes son necesarias al enviar datos binarios y usar el tipo de contenido `multipart/form-data; boundary=part-boundary`, donde *{límite-de-elemento}* es una cadena que señala el principio y el final de cada elemento de datos.</p> |  
+| Encabezado Authorization | <p>`Bearer {token}`, donde `{token}` es un token de acceso de OAuth 2.0 válido para la aplicación registrada.</p><p>Si falta o no es válido, la solicitud producirá errores con el código de estado 401. Vea [Authentication and permissions](permissions_reference.md) (Autenticación y permisos).</p> |  
+| Encabezado Content-Type | <p>`text/html` o `application/xhtml+xml` para el contenido HTML, sin importar si se envía directamente en el cuerpo del mensaje o en el elemento “Presentación” necesario de las solicitudes de varias partes.</p><p>Las solicitudes de varias partes son necesarias al enviar datos binarios y usar el tipo de contenido `multipart/form-data; boundary=part-boundary`, donde `{part-boundary}` es una cadena que señala el principio y el final de cada elemento de datos.</p> |  
 | Encabezado Accept | `application/json` | 
+
+<br/>
 
 | Datos de respuesta | Descripción |  
 |------|------|  
@@ -205,17 +217,26 @@ Vea [Requisitos y limitaciones de HTML de entrada](#requirements-and-limitations
 
 
 <a name="root-url"></a>
+
 ### <a name="constructing-the-microsoft-graph-service-root-url"></a>Crear la URL raíz del servicio de Microsoft Graph
 
-La URL raíz del servicio de Microsoft Graph usa el formato siguiente para todas las llamadas que se realicen a Microsoft Graph. `https://graph.microsoft.com/{version}/me/onenote/` El segmento `version` de la URL representa la versión de Microsoft Graph que quiere usar. Use `v1.0` para código de producción estable. Use `beta` para probar una característica que esté en desarrollo. Las características y funciones en versión beta pueden cambiar, por lo que no le recomendamos que las use en el código de producción. Use `me` para contenido de OneNote al que puede obtener acceso el usuario actual (contenido compartido y del que sea propietario). Use `users/{id}` para contenido de OneNote que el usuario especificado (en la URL) compartió con el usuario actual. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) para obtener identificadores de usuario. 
+La URL raíz del servicio de Microsoft Graph usa el formato siguiente para todas las llamadas que se realicen a Microsoft Graph:
+
+`https://graph.microsoft.com/{version}/me/onenote/`  
+
+El segmento `version` de la URL representa la versión de Microsoft Graph que se quiere utilizar. Use `v1.0` para código de producción estable. Use `beta` para probar una característica que esté en desarrollo. Las características y la funcionalidad de la versión beta pueden cambiar, por lo que no se debe usar en el código de producción. 
+
+Use `me` para contenido de OneNote al que puede obtener acceso el usuario actual (contenido compartido y del que sea propietario). Use `users/{id}` para contenido de OneNote que el usuario especificado (en la URL) compartió con el usuario actual. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) para obtener identificadores de usuario. 
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Permisos
 
 Para crear páginas de OneNote, necesitará solicitar los permisos adecuados. Seleccione el nivel inferior de permisos que necesita la aplicación para funcionar correctamente.
 
-Seleccione entre: 
+Seleccione entre:
+
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -226,7 +247,8 @@ Para obtener más información sobre los ámbitos de permiso y cómo funcionan, 
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Recursos adicionales
+
+## <a name="see-also"></a>Vea también
 
 - [Agregar imágenes y archivos](onenote_images_files.md)
 - [Crear elementos con posición absoluta](onenote-abs-pos.md)  

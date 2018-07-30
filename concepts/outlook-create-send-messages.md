@@ -1,6 +1,6 @@
 # <a name="create-and-send-outlook-messages"></a>Crear y enviar mensajes de Outlook
 
-Los correos electrónicos se representan mediante el recurso [message](../api-reference/v1.0/resources/message.md) en Microsoft Graph. 
+Los correos electrónicos se representan mediante el recurso [message](../api-reference/v1.0/resources/message.md) en Microsoft Graph.
 
 De forma predeterminada, los mensajes se identifican por un identificador de entrada único en la propiedad **id**. Un proveedor de almacenamiento asigna a un mensaje un identificador de entidad cuando el mensaje se guarda inicialmente como un borrador o se envía. Ese identificador cambia cuando el mensaje se copia o se mueve a otra carpeta, almacenamiento o archivo .PST.
 
@@ -10,9 +10,9 @@ En Outlook, puede crear y enviar un correo electrónico en la misma acción [sen
 
 De forma similar, cuando responde a un correo electrónico, puede crear y enviar la respuesta en la misma acción ([reply](../api-reference/v1.0/api/message_reply.md), [reply-all](../api-reference/v1.0/api//message_replyall.md) o [forward](../api-reference/v1.0/api/message_forward.md)). O bien, puede crear un borrador de la respuesta ([reply](../api-reference/v1.0/api/message_createreply.md), [reply-all](../api-reference/v1.0/api//message_createreplyall.md) or [forward](../api-reference/v1.0/api/message_createforward.md)), [agregar contenido](../api-reference/v1.0/api/message_update.md) y [enviar](../api-reference/v1.0/api/message_send.md) el borrador más tarde.
 
-Para distinguir un borrador de un mensaje enviado mediante programación, consulte la propiedad **isDraft**. 
+Para distinguir un borrador de un mensaje enviado mediante programación, consulte la propiedad **isDraft**.
 
-De forma predeterminada, los borradores se guardan en la carpeta `Drafts` y los mensajes enviados en la carpeta `Sent Items`. Para mayor comodidad, puede identificar las carpetas Drafts y SentItems por sus nombres de carpeta correspondientes conocidos. Por ejemplo, puede hacer lo siguiente para [obtener los mensajes](../api-reference/v1.0/api/user_list_messages.md) en la carpeta Drafts:
+De forma predeterminada, los borradores se guardan en la carpeta `Drafts` y los mensajes enviados en la carpeta `Sent Items`. Para mayor comodidad, puede identificar las carpetas Drafts y SentItems por sus [nombres de carpeta correspondientes conocidos](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). Por ejemplo, puede hacer lo siguiente para [obtener los mensajes](../api-reference/v1.0/api/user_list_messages.md) en la carpeta Drafts:
 
 ```http
 GET /me/mailfolders('Drafts')
@@ -20,18 +20,20 @@ GET /me/mailfolders('Drafts')
 
 ### <a name="body-format-and-malicious-script"></a>Formato de cuerpo y script malintencionado
 
-<!-- Remove the following 2 sections from the message.md topics 
+<!-- Remove the following 2 sections from the message.md topics
 -->
 
 El cuerpo del mensaje puede ser HTML o texto, con HTML como el tipo de cuerpo del mensaje predeterminado que se devuelve en una respuesta GET.
 
 Cuando [obtenga un mensaje](../api-reference/v1.0/api/message_get.md), puede especificar el siguiente encabezado de solicitud para devolver las propiedades **body** y **uniqueBody** en el formato del texto:
 
-```
+```http
 Prefer: outlook.body-content-type="text"
 ```
+
 Puede especificar el siguiente encabezado o, simplemente omita el encabezado, para obtener el cuerpo del mensaje en formato HTML:
-```
+
+```http
 Prefer: outlook.body-content-type="html"
 ```
 
@@ -43,7 +45,8 @@ Al especificar cualquier encabezado, una respuesta correcta incluirá el encabez
 Si el cuerpo se muestra en HTML, de forma predeterminada, Outlook quita cualquier código HTML potencialmente peligroso (por ejemplo, JavaScript) insertado en la propiedad **body** antes de devolver el contenido del cuerpo en una respuesta REST.
 
 Para obtener todo el contenido HTML original, incluya el siguiente encabezado de solicitud HTTP:
-```
+
+```http
 Prefer: outlook.allow-unsafe-html
 ```
 
@@ -56,7 +59,8 @@ Cuando se redacta un mensaje, en la mayoría de los casos, Outlook establece las
 
 ## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Usar Sugerencias de correo electrónico para comprobar el estado del destinatario y ahorrar tiempo (versión preliminar)
 
-Use [Sugerencias de correo electrónico](../api-reference/beta/resources/mailtips.md) para tomar decisiones inteligentes antes de enviar un correo electrónico. Las sugerencias de correo electrónico pueden proporcionarle información, como que el buzón del destinatario está limitado a determinados remitentes o si se necesita aprobación para enviar un correo electrónico al destinatario.
+Use [Sugerencias de correo electrónico](../api-reference/beta/resources/mailtips.md) para tomar decisiones inteligentes antes de enviar un correo electrónico.
+Las sugerencias de correo electrónico pueden proporcionarle información, como que el buzón del destinatario está limitado a determinados remitentes o si se necesita aprobación para enviar un correo electrónico al destinatario.
 
 ## <a name="integrating-with--social-gesture-preview"></a>Integración con gesto de redes sociales "@" (versión preliminar)
 
@@ -65,8 +69,7 @@ Puede:
 
 - Crear @menciones al [crear un mensaje](../api-reference/beta/api/user_post_messages.md#request-2)
 - [Obtener todos los mensajes del buzón de un usuario que contiene una @mención al usuario](../api-reference/beta/api/user_list_messages.md#request-2)
-- [Obtener todas las @menciones en un mensaje](../api-reference/beta/api/message_get.md#request-2) 
-
+- [Obtener todas las @menciones en un mensaje](../api-reference/beta/api/message_get.md#request-2)
 
 ## <a name="other-shared-capabilities"></a>Otras funcionalidades compartidas
 
@@ -81,5 +84,5 @@ Aproveche las ventajas de las siguientes funciones comunes que se comparten entr
 
 Obtenga más información sobre:
 
-- [¿Por qué debería realizar la integración con Correo de Outlook?](outlook-mail-concept-overview.md)
-- [Usar la API de correo](../api-reference/v1.0/resources/mail_api_overview.md) y sus [casos de uso](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) en la versión 1.0 de Microsoft Graph.
+- [¿Por qué integrar con el correo de Outlook?](outlook-mail-concept-overview.md)
+- [Usar la API de correo](../api-reference/v1.0/resources/mail_api_overview.md) y sus [casos de uso](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) en Microsoft Graph v1.0.
