@@ -197,8 +197,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 El parámetro **comentario** para crear una respuesta o enviar un borrador ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) no se convierte en parte del cuerpo del borrador del mensaje resultante.
 
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>Los mensajes de GET devuelven chats en Microsoft Teams
 
-## <a name="drives-files-and-content-streaming"></a>Unidades, archivos y streaming de contenido
+En los extremos de la v1 y la beta, la respuesta de `GET /users/id/messages` incluye los chats de Microsoft Teams del usuario efectuados fuera del ámbito de un equipo o un canal. Estos mensajes de chat tienen "Mensajería instantánea" como el asunto.
+
+
+## <a name="drives-files-and-content-streaming"></a>Unidades de disco, archivos y streaming de contenido
 
 * La primera vez que accede a una unidad personal del usuario a través de Microsoft Graph antes de que el usuario acceda a su sitio personal a través del explorador, se produce una respuesta 401.
 

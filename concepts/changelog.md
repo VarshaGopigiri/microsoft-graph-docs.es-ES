@@ -6,6 +6,25 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 ## <a name="july-2018"></a>Julio de 2018
 
+### <a name="directory-apis"></a>API de directorio
+
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adición | Beta | Se agregó la propiedad isMultipleDataLocationsForServicesEnabled al recurso [Organization](../api-reference/beta/resources/organization.md) que permite a las aplicaciones comprobar que el inquilino está habilitado para funciones multigeográficas. Se agregó la propiedad preferredDataLocation a los recursos [user](../api-reference/beta/resources/user.md) y [group](../api-reference/beta/resources/group.md) que permiten la configuración de una ubicación de datos preferida para un usuario y grupo.|
+
+### <a name="microsoft-teams-apis"></a>API de Microsoft Teams
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Cambio|beta|Se actualizó el recurso [chatmessage](../api-reference/beta/resources/chatmessage.md))|
+|Adición|beta|Se actualizó el tipo de recurso [Datos adjuntos de chat](../api-reference/beta/resources/chatattachment.md)|
+|Adición|beta|Se actualizó el tipo de recurso [Mención de chat](../api-reference/beta/resources/chatattachment.md)|
+|Adición|beta|Se actualizó el tipo de recurso [Reacción de chat](../api-reference/beta/resources/chatattachment.md)|
+|Adición|beta|Se agregó la [API Obtener todos los mensajes del canal](../api-reference/beta/api/channel_list_messages.md) |
+|Adición|beta|Se agregó la [API Obtener mensaje del canal](../api-reference/beta/api/channel_get_message.md) |
+|Adición|beta|Se agregó la [API Obtener todas las respuestas de mensaje](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Adición|beta|Se agregó la [API Obtener respuesta a un mensaje](../api-reference/beta/api/channel_get_messagereply.md) |
+
+
 ### <a name="application-and-serviceprincipal-api-changes"></a>Cambios en la API servicePrincipal y en aplicaciones
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
@@ -15,6 +34,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 ### <a name="microsoft-teams-apis"></a>API de Microsoft Teams
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Adición|beta| Se agregó la compatibilidad con permisos de aplicación a [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Eliminación|beta|Quitar ELIMINAR /grupos/{id}/grupo/canales/{id}, use ELIMINAR /equipos/{id}/canales/{id} en su lugar. |
 |Eliminación|beta|Quitar OBTENER /grupos/{id}/grupo/canales/{id}, use OBTENER /equipos/{id}/canales/{id} en su lugar. |
 |Eliminación|beta|Quitar REVISIÓN /grupos/{id}/grupo/canales/{id}, use REVISIÓN /equipos/{id}/canales/{id} en su lugar. |
@@ -27,7 +47,8 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Eliminación|beta|Quitar OBTENER /grupos/{id}/canales, use OBTENER /equipos/{id}/canales en su lugar. |
 |Eliminación|beta|Quitar PUBLICAR /grupos/{id}/equipo/canales, use PUBLICAR /equipos/{id}/canales en su lugar. |
 |Eliminación|beta|Quitar OBTENER /grupos/{id}/equipo, use OBTENER /equipos/{id} en su lugar. |
-|Eliminación|beta|Quitar REVISIÓN /grupos/{id}/equipo, use REVISIÓN /equipos/{id} en su lugar. |
+|Eliminación|beta|Se quitó PATCH /groups/{id}/team, use PATCH /teams/{id} en su lugar. |
+|Adición|beta|Agrega la API para [lista de todos los equipos de la organización](../api-reference/beta/api/team_list_all_teams.md). |
 
 ### <a name="webhooks"></a>Webhooks
 | Tipo de cambio | Versión | Descripción                              |
@@ -40,7 +61,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición | Todo | Nuevos permisos de aplicación, _Application.ReadWrite.All_ y _Application.ReadWrite.OwnedBy, que permiten que una aplicación cliente cree, lea, actualice y elimine aplicaciones y entidades de seguridad tal y como se describe en el [tema sobre permisos](permissions_reference.md#application-resource-permissions). |
+| Adición | Todo | Nuevos permisos de aplicación, _Application.ReadWrite.All_ y _Application.ReadWrite.OwnedBy_, que permiten que una aplicación cliente cree, lea, actualice y elimine aplicaciones y entidades de seguridad tal y como se describe en el [tema sobre permisos](permissions_reference.md#application-resource-permissions). |
 
 ### <a name="microsoft-intune-apis"></a>API de Microsoft Intune
 
@@ -85,7 +106,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Adición|beta|Se ha agregado el miembro **notConfigured** al tipo de enumeración [editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md).|
 |Adición|beta|Se ha agregado el miembro **unknown** al tipo de enumeración [iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md).|
 |Adición|beta|Se ha agregado el miembro **userRequestedInstall** al tipo de enumeración [mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md).|
-|Adición|beta|Se ha agregado el miembro **notConfigured** al tipo de enumeración [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md).|
+|Adición|beta|Se ha agregado el miembro **notConfigured** al tipo de enumeración [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md).
 
 ### <a name="microsoft-teams-apis"></a>API de Microsoft Teams
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |

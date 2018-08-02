@@ -601,7 +601,7 @@ Para obtener información sobre escenarios más complejos que implican varios pe
 
 |   Permiso    |  Cadena para mostrar   |  Descripción | Se requiere el consentimiento del administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Notes.Read_ |    Leer blocs de notas de usuario de OneNote | Permite que la aplicación lea los títulos de los blocs de notas y las secciones de OneNote y cree páginas, blocs de notas y secciones en nombre del usuario que ha iniciado sesión. | No |
+| _Notes.Read_ |    Leer blocs de notas de usuario de OneNote | Permite que la aplicación lea blocs de notas de OneNote en nombre del usuario que ha iniciado sesión.| No |
 | _Notes.Create_ |    Crear blocs de notas de usuario de OneNote | Permite que la aplicación lea los títulos de los blocs de notas y las secciones de OneNote y cree páginas, blocs de notas y secciones en nombre del usuario que ha iniciado sesión.| No |
 | _Notes.ReadWrite_ |    Leer y escribir blocs de notas de usuario de OneNote | Permite que la aplicación lea, comparta y modifique blocs de notas de OneNote en nombre del usuario que ha iniciado sesión. | No |
 | _Notes.Read.All_ |    Leer todos los blocs de notas de OneNote a los que el usuario puede tener acceso | Permite que la aplicación lea blocs de notas de OneNote a los que tiene acceso en la organización el usuario que ha iniciado sesión. | No |
