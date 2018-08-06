@@ -6,7 +6,7 @@ Outlook permite a los clientes organizar sus mensajes como prefieran, tanto si q
 
 Con programación, las carpetas de mensajes se representan con el recurso [mailFolder](../api-reference/v1.0/resources/mailfolder.md), y la bandeja de entrada es una de las carpetas en el directorio raíz de la estructura de carpetas.
 
-Cada **mailFolder** se identifica por su id. de carpeta y tiene una propiedad que permite la escritura **displayName**. Outlook crea otras carpetas para los clientes de forma predeterminada. Puede hacer referencia a estas carpetas predeterminadas por los id. de carpeta, o bien por los nombres conocidos. Para obtener una lista de los nombres de carpetas conocidos disponibles, vea [Tipo de recurso mailFolder](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names).
+Cada **mailFolder** se identifica por su id. de carpeta y tiene una propiedad que permite la escritura **displayName**. Outlook crea otras carpetas para los clientes de forma predeterminada. Puede hacer referencia a estas carpetas predeterminadas por los id. de carpeta, o bien por los nombres conocidos. Para obtener una lista de los nombres de carpetas conocidos disponibles, vea [Tipo de recurso mailFolder](../api-reference/v1.0/resources/mailfolder.md).
 
 Para una carpeta personalizada que no sea predeterminada, si conoce la ruta de la carpeta, puede obtener acceso a la carpeta si primero usa el acceso directo `/users/{id}/mailfolders` para obtener acceso al nivel raíz y obtener todas las carpetas de nivel superior:
 

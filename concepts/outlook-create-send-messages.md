@@ -12,7 +12,7 @@ De forma similar, cuando responde a un correo electrónico, puede crear y enviar
 
 Para distinguir un borrador de un mensaje enviado mediante programación, consulte la propiedad **isDraft**.
 
-De forma predeterminada, los borradores se guardan en la carpeta `Drafts` y los mensajes enviados en la carpeta `Sent Items`. Para mayor comodidad, puede identificar las carpetas Drafts y SentItems por sus [nombres de carpeta correspondientes conocidos](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). Por ejemplo, puede hacer lo siguiente para [obtener los mensajes](../api-reference/v1.0/api/user_list_messages.md) en la carpeta Drafts:
+De forma predeterminada, los borradores se guardan en la carpeta `Drafts` y los mensajes enviados en la carpeta `Sent Items`. Para mayor comodidad, puede identificar las carpetas Drafts y SentItems por sus [nombres de carpeta correspondientes conocidos](../api-reference/v1.0/resources/mailfolder.md). Por ejemplo, puede hacer lo siguiente para [obtener los mensajes](../api-reference/v1.0/api/user_list_messages.md) en la carpeta Drafts:
 
 ```http
 GET /me/mailfolders('Drafts')
