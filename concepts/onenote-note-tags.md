@@ -1,4 +1,4 @@
-# <a name="use-note-tags-in-onenote-pages"></a>Usar etiquetas en páginas de OneNote
+# <a name="use-note-tags-in-onenote-pages"></a>Usar etiquetas de nota en páginas de OneNote
 
 **Se aplica a:** Blocs de notas para consumidores de OneDrive | Blocs de notas empresariales de Office 365
 
@@ -11,11 +11,11 @@ Use el atributo `data-tag` para agregar y actualizar casillas, estrellas y otras
 
 ## <a name="note-tag-attributes"></a>Atributos de etiqueta de nota
 
-En el HTML de una página de OneNote, una etiqueta de nota se representa mediante el atributo `data-tag`. Por ejemplo:
+En el código HTML de una página de OneNote, una etiqueta de nota se representa mediante el atributo `data-tag`. Por ejemplo:
 
-- Un cuadro de tareas pendientes sin marcar: `<p data-tag="to-do">` 
+- Una casilla de tarea pendiente sin marcar: `<p data-tag="to-do">` 
 
-- Un cuadro de tareas pendientes marcado: `<p data-tag="to-do:completed">` 
+- Una casilla de tarea pendiente marcada: `<p data-tag="to-do:completed">` 
 
 - Una estrella: `<h2 data-tag="important">` 
 
@@ -29,7 +29,7 @@ Un valor `data-tag` se compone de una forma y, a veces, de un estado (vea todos 
 
 <a name="note-tags"></a>
 
-## <a name="add-or-update-note-tags"></a>Agregar o actualizar etiquetas de notas
+## <a name="add-or-update-note-tags"></a>Agregar o actualizar etiquetas de nota
 
 Para agregar o actualizar una etiqueta de nota integrada, use el atributo `data-tag` en un elemento compatible. Por ejemplo, este es un párrafo marcado como importante:
 
@@ -37,7 +37,7 @@ Para agregar o actualizar una etiqueta de nota integrada, use el atributo `data-
 <p data-tag="important">...</p>
 ```
 
-Separe las distintas etiquetas de notas mediante comas.
+Separe las distintas etiquetas de nota mediante comas:
 
 ```html
 <p data-tag="important, critical">...</p>
@@ -63,7 +63,7 @@ Aquí se muestra una lista de tareas pendientes simple con el primer elemento co
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
 
-Tenga en cuenta que las etiquetas `<p>` anteriores incluyen cada una un atributo `data-id`. Esto simplifica la actualización de las etiquetas de nota de casilla. Por ejemplo, la solicitud siguiente marca el elemento de tarea pendiente de plantación de primavera como completado.
+Tenga en cuenta que las etiquetas `<p>` anteriores incluyen cada una un atributo `data-id`. Esto simplifica la actualización de las etiquetas de nota de casilla. Por ejemplo, la solicitud siguiente marca el elemento de tarea pendiente de siembra de primavera como completado.
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
@@ -151,7 +151,7 @@ Authorization: Bearer {token}
 </html>
 ``` 
 
-Para obtener más información sobre la creación de páginas, consulte [Crear páginas de OneNote](onenote-create-page.md). Para obtener más información sobre actualizar páginas, consulte [Actualizar páginas de OneNote](onenote_update_page.md).
+Para obtener más información sobre la creación de páginas, vea [Crear páginas de OneNote](onenote-create-page.md). Para obtener más información sobre actualizar páginas, vea [Actualizar páginas de OneNote](onenote_update_page.md).
 
 
 <a name="note-tags-lists"></a>
@@ -164,7 +164,7 @@ Aquí encontrará algunas directrices para trabajar con etiquetas de nota en lis
 
 - Para crear o actualizar listas que muestren la **misma** etiqueta de nota para todos los elementos de la lista, defina `data-tag` en `ul` o `ol`. Para actualizar la lista completa, tendrá que volver a definir la `data-tag` en el `ul` o `ol`.
 
-- Para crear o actualizar listas que muestren una etiqueta de nota **unique** para algunos o todos los elementos de lista, defina `data-tag` en elementos `li` y no anide los elementos `li` en una `ul` o `ol`. Para actualizar la lista completa, tendrá que quitar el `ul` que se devuelve en el HTML de salida y proporcionar solo los elementos `li` anidados.
+- Para crear o actualizar listas que muestren una etiqueta de nota **unique** para algunos o todos los elementos de lista, defina `data-tag` en elementos `li` y no anide los elementos `li` en una `ul` o `ol`. Para actualizar la lista completa, tendrá que quitar el `ul` que se devuelve en el HTML de salida y proporcionar solo los elementos `li` desanidados.
 
 - Para actualizar elementos `li` específicos, ponga como objetivo los elementos `li` por separado y defina la `data-tag` en el elemento `li`. Cualquier elemento `li` individualmente dirigido puede actualizarse para mostrar una etiqueta de nota única, independientemente de cómo se haya definido la lista originalmente.
 
@@ -180,12 +180,12 @@ Aquí encontrará algunas directrices para trabajar con etiquetas de nota en lis
 
   - Un elemento `li` se trata individualmente en una solicitud de actualización.
 
-- Los elementos `li` sin anidar enviados en el HTML de entrada se devuelven en un `ul` en el HTML de salida.
+- Los elementos `li` sin anidar enviados en el código HTML de entrada se devuelven en un `ul` en el código HTML de salida.
 
-- En el HTML de salida, todos las opciones de configuración de la lista `data-tag` se definen en elementos `span` de la lista de elementos.
+- En el código HTML de salida, todos las opciones de configuración de la lista `data-tag` se definen en elementos `span` de la lista de elementos.
 
 
-El siguiente código muestra cómo se aplican algunas de estas reglas. El HTML de entrada crea dos listas con etiquetas. El HTML de salida es lo que se devuelve para las listas cuando se recupera el contenido de la página.
+El siguiente código muestra cómo se aplican algunas de estas reglas. El código HTML de entrada crea dos listas con etiquetas de nota. El código HTML de salida es lo que se devuelve para las listas cuando se recupera el contenido de la página.
 
 #### <a name="input-html"></a>HTML de entrada
 
@@ -219,11 +219,11 @@ El siguiente código muestra cómo se aplican algunas de estas reglas. El HTML d
 
 ## <a name="retrieve-note-tags"></a>Recuperar etiquetas de nota
 
-Las etiquetas de nota integradas se incluyen en el HTML de salida cuando obtiene el contenido de página:
+Las etiquetas de nota integradas se incluyen en el código HTML de salida cuando obtiene el contenido de página:
 
 `GET ../api/v1.0/pages/{page-id}/content` 
 
-Un atributo `data-tag` en el HTML de salida incluye siempre un valor de forma y solo incluye el estado si representa una etiqueta de nota de casilla establecida en completada. Los siguientes ejemplos muestran el HTML de salida utilizado para crear algunas etiquetas de nota y el HTML de salida que se devuelve.
+Un atributo `data-tag` en el código HTML de salida incluye siempre un valor de forma y solo incluye el estado si representa una etiqueta de nota de casilla establecida en completada. Los siguientes ejemplos muestran el código HTML de salida utilizado para crear algunas etiquetas de nota y el código HTML de salida que se devuelve.
 
 #### <a name="input-html"></a>HTML de entrada
 
@@ -253,9 +253,9 @@ Un atributo `data-tag` en el HTML de salida incluye siempre un valor de forma y 
 </ul>
 ```
 
-Tenga en cuenta que el atributo `data-tag` definido en el nivel de lista se inserta en los elementos de lista. Para obtener más información sobre el uso de etiquetas con listas, consulte [Etiquetas de nota en listas](#note-tags-on-lists).
+Tenga en cuenta que el atributo `data-tag` definido en el nivel de lista se inserta en los elementos de lista. Para obtener más información sobre el uso de etiquetas de nota con listas, consulte [Etiquetas de nota en listas](#note-tags-on-lists).
 
-> **Nota:** en el HTML de salida, las etiquetas definición y notas de recordatorio se devuelven como `data-tag="remember-for-later"`. El elemento `title` no devuelve información de etiqueta de nota.
+> **Nota:** En el código HTML de salida, las etiquetas de definición y de notas de recordatorio se devuelven como `data-tag="remember-for-later"`. El elemento `title` no devuelve información de etiqueta de nota.
 
 
 

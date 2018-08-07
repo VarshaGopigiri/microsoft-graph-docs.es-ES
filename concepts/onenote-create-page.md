@@ -8,7 +8,7 @@ Para crear una página de OneNote, envíe una solicitud POST al punto de conexi�
 
 <br/>
 
-Envíe el HTML que define la página en el cuerpo del mensaje. Si la solicitud se completa correctamente, Microsoft Graph devuelve un código de estado HTTP 201.
+Envíe el código HTML que define la página en el cuerpo del mensaje. Si la solicitud se completa correctamente, Microsoft Graph devuelve un código de estado HTTP 201.
 
 
 > **Nota:** Para obtener información sobre las solicitudes POST que puede enviar para crear secciones, grupos de secciones y blocs de notas, vea la [referencia de REST interactiva](http://dev.onenote.com/docs).
@@ -101,9 +101,9 @@ Si envía datos binarios, tendrá que usar una [solicitud de varias partes](#exa
 
 <a name="input-html-rules"></a>
 
-### <a name="requirements-and-limitations-for-input-html-in-post-pages-requests"></a>Requisitos y limitaciones para HTML de entrada en solicitudes de páginas POST
+### <a name="requirements-and-limitations-for-input-html-in-post-pages-requests"></a>Requisitos y limitaciones para código HTML de entrada en solicitudes de páginas POST
 
-Al enviar HTML de entrada, tenga en cuenta estos requisitos y limitaciones generales:  
+Al enviar código HTML de entrada, tenga en cuenta estos requisitos y limitaciones generales:  
 
 - El código HTML de entrada necesita tener codificación UTF-8 y XHTML con un formato correcto. Todas las etiquetas de inicio del contenedor necesitan las etiquetas de cierre correspondientes. Todos los valores de atributo tienen que delimitarse con comillas dobles o simples.  <!--docs say MUST be encoded-->
 
@@ -135,14 +135,14 @@ En la lista siguiente, se muestran los tipos de elementos básicos admitidos por
 - `<pre>` para texto con formato previo (conserva el espacio en blanco y los saltos de línea)</p>
 - `<b>` y `<i>` para estilos de carácter negrita y cursiva</p>
 
-Microsoft Graph conserva el contenido semántico y la estructura básica del HTML de entrada al crear páginas, pero convierte el HTML de entrada para usar el conjunto admitido de HTML y CSS. Las características que no existen en OneNote no pueden traducirse a nada, por lo que es posible que no se reconozcan en el HTML de origen. 
+Microsoft Graph conserva el contenido semántico y la estructura básica del código HTML de entrada al crear páginas, pero convierte el código HTML de entrada para usar el conjunto admitido de HTML y CSS. Las características que no existen en OneNote no pueden traducirse a nada, por lo que es posible que no se reconozcan en el código HTML de origen. 
 
 
 <a name="example"></a>
 
 ## <a name="example-request"></a>Ejemplo de solicitud
 
-En esta solicitud de varias partes de ejemplo, se crea una página que contiene imágenes y un archivo incrustado. El elemento **Presentation** necesario contiene el HTML de entrada que define la página. El elemento **imageBlock1** contiene los datos de imágenes binarias y **fileBlock1** contiene los datos de archivos binarios. Los elementos de datos también pueden contener HTML; en ese caso, Microsoft Graph [representa el código HTML como una imagen](onenote_images_files.md#add-an-image-using-binary-data) en la página de OneNote. 
+En esta solicitud de varias partes de ejemplo, se crea una página que contiene imágenes y un archivo incrustado. El elemento **Presentation** necesario contiene el código HTML de entrada que define la página. El elemento **imageBlock1** contiene los datos de imágenes binarias y **fileBlock1** contiene los datos de archivos binarios. Los elementos de datos también pueden contener HTML; en ese caso, Microsoft Graph [representa el código HTML como una imagen](onenote_images_files.md#add-an-image-using-binary-data) en la página de OneNote. 
 
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
@@ -184,7 +184,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-Para obtener más ejemplos donde se muestra cómo crear páginas que contienen imágenes y otros archivos, vea [Agregar imágenes y archivos](onenote_images_files.md), [tutoriales](https://docs.microsoft.com/es-ES/previous-versions/office/office-365-api/how-to/onenote-tutorial) y [ejemplos](https://github.com/onenotedev). Además, obtenga información sobre cómo [crear elementos con posición absoluta](onenote-abs-pos.md), [usar etiquetas de notas](onenote-note-tags.md) y [extraer datos de capturas](onenote-extract-data.md) de tarjetas de presentación y listas de productos y recetas en línea.
+Para obtener más ejemplos donde se muestra cómo crear páginas que contienen imágenes y otros archivos, vea [Agregar imágenes y archivos](onenote_images_files.md), [tutoriales](https://docs.microsoft.com/es-ES/previous-versions/office/office-365-api/how-to/onenote-tutorial) y [ejemplos](https://github.com/onenotedev). Además, obtenga información sobre cómo [crear elementos con posición absoluta](onenote-abs-pos.md), [usar etiquetas de nota](onenote-note-tags.md) y [extraer datos de capturas](onenote-extract-data.md) de tarjetas de presentación y listas de productos y recetas en línea.
 
 Microsoft Graph es estricto en relación con algunos formatos, como nuevas líneas CRLF en el cuerpo de un mensaje de varias partes. Para reducir el riesgo de crear cargas de trabajo con formato incorrecto, necesita usar una biblioteca para crear mensajes de varias partes. 
 
@@ -252,7 +252,7 @@ Para obtener más información sobre los ámbitos de permiso y cómo funcionan, 
 - [Agregar imágenes y archivos](onenote_images_files.md)
 - [Crear elementos con posición absoluta](onenote-abs-pos.md)  
 - [Extraer datos](onenote-extract-data.md)
-- [Usar etiquetas de notas](onenote-note-tags.md)
+- [Usar etiquetas de nota](onenote-note-tags.md)
 - [Integración con OneNote](integrate_with_onenote.md)
 - [Blog para desarrolladores de OneNote](http://go.microsoft.com/fwlink/?LinkID=390183)
 - [Preguntas de desarrollo de OneNote en Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=390182)

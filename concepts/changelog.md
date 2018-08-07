@@ -50,10 +50,17 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Eliminación|beta|Se quitó PATCH /groups/{id}/team, use PATCH /teams/{id} en su lugar. |
 |Adición|beta|Agrega la API para [lista de todos los equipos de la organización](../api-reference/beta/api/team_list_all_teams.md). |
 
+### <a name="outlook-contacts"></a>Contactos de Outlook
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|Adición |Beta | Agregar el tipo complejo [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md). |
+|Cambio | Beta | Cambiar el tipo de la propiedad **emailAddresses** de [contact](../api-reference/beta/resources/contact.md) para que sea una colección de instancias **typedEmailAddress**.|
+
 ### <a name="webhooks"></a>Webhooks
 | Tipo de cambio | Versión | Descripción                              |
 |:------------|:--------|:-----------------------------------------|
 | Cambio importante | Beta y v1.0 | Para los [webhooks](../api-reference/v1.0/resources/webhooks.md), [se redujo la duración máxima de la fecha de expiración de la suscripción](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) para elementos de la raíz de la unidad a 3 días. | 
+
 
 ## <a name="june-2018"></a>Junio de 2018
 

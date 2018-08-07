@@ -104,14 +104,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 
 ## <a name="calendars"></a>Calendarios
 
-### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Agregar y acceder a calendarios basados en archivos ICS en el buzón del usuario
-
-Actualmente, existe una compatibilidad parcial con un calendario basado en una suscripción a calendarios de Internet (ICS):
-
-* Puede agregar un calendario basado en ICS a un buzón de usuario mediante la interfaz de usuario, pero no mediante la API de Microsoft Graph.
-* [Enumerar los calendarios del usuario](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id** de cada [calendario](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
-* También puede [enumerar los eventos](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
-
 ### <a name="accessing-a-shared-calendar"></a>Acceso a calendarios compartidos
 
 Al intentar tener acceso a los eventos de un calendario que se ha compartido por otro usuario mediante la siguiente operación:
@@ -143,8 +135,19 @@ Un calendario compartido con usted mediante el nuevo enfoque aparece como cualqu
 GET \me\calendars('{id}')\events
 ```
 
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Agregar y acceder a calendarios basados en archivos ICS en el buzón del usuario
 
-## <a name="contacts"></a>Contactos
+Actualmente, existe una compatibilidad parcial con un calendario basado en una suscripción a calendarios de Internet (ICS):
+
+* Puede agregar un calendario basado en ICS a un buzón de usuario mediante la interfaz de usuario, pero no mediante la API de Microsoft Graph.
+* [Enumerar los calendarios del usuario](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/user_list_calendars) le permite obtener las propiedades **name**, **color** e **id** de cada [calendario](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/calendar) en el grupo de calendarios predeterminado del usuario, o en un grupo de calendarios especificado, incluidos los calendarios basados en ICS. No puede almacenar ni acceder a la dirección URL de una ICS en el recurso del calendario.
+* También puede [enumerar los eventos](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/api/calendar_list_events) de un calendario basado en ICS.
+
+### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Compatibilidad con la propiedad onlineMeetingUrl de Microsoft Teams
+
+Actualmente, la propiedad **onlineMeetingUrl** de un [evento](../api-reference/v1.0/resources/event.md) de una reunión de Skype indicaría la dirección URL de la reunión en línea. Sin embargo, se establece esa propiedad para un evento de reunión de Microsoft Teams en nulo.
+
+## <a name="contacts"></a>Contacts
 
 ### <a name="organization-contacts-available-in-only-beta"></a>Contactos de organización disponibles solo en beta
 
