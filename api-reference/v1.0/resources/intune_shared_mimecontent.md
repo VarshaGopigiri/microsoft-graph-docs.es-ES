@@ -6,12 +6,11 @@ Contiene las propiedades de un contenido MIME genérico.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|type|cadena|Indica el tipo de contenido MIME.|
+|type|String|Indica el tipo de contenido MIME.|
 |valor|Binario|Matriz de bytes que contiene el contenido real.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
-
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 <!-- {

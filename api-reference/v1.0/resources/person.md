@@ -4,13 +4,13 @@ Una agregación de información sobre un contacto de correo electrónico, contac
 
 ## <a name="methods"></a>Métodos
 
-| Método           | Tipo de valor devuelto    |Descripción|
+| Método | Tipo de valor devuelto | Descripción |
 |:---------------|:--------|:----------|
 |[List people](../api/user_list_people.md) | **person** |Obtenga una colección de objetos person ordenados por su relevancia para el [user](../resources/user.md).|
-|[Get person](../api/person_get.md) | **person** |Recupere las propiedades y las relaciones del objeto person.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+
+| Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |birthday|String|Cumpleaños del contacto.|
 |companyName|String|Nombre de la compañía del contacto.|
@@ -34,8 +34,8 @@ Una agregación de información sobre un contacto de correo electrónico, contac
 |yomiCompany|String|Nombre fonético japonés de la compañía del contacto.|
 
 ## <a name="relationships"></a>Relaciones
-Ninguna.
 
+Ninguna.
 
 ## <a name="json-representation"></a>Representación JSON
 

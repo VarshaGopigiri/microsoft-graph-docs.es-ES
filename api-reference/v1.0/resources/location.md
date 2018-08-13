@@ -15,7 +15,7 @@ Según cómo se cree el evento, se espera que Outlook establezca la propiedad **
 | Propiedad  | Tipo   | Descripción                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Dirección postal de la ubicación. |
-| coordinates | [outlookGeoCoordinates](outlookGeoCoordinates.md) | Coordenadas geográficas y elevación de la ubicación. |
+| coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Coordenadas geográficas y elevación de la ubicación. |
 | displayName  | String | Nombre asociado a la ubicación.                       |
 | locationEmailAddress | String | Dirección de correo electrónico opcional de la ubicación              |
 | locationUri | String | URI opcional que representa la ubicación. |

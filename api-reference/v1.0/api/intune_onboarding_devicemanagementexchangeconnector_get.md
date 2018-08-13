@@ -26,7 +26,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -47,7 +47,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 521
+Content-Length: 580
 
 {
   "value": {
@@ -57,6 +57,7 @@ Content-Length: 521
     "status": "connectionPending",
     "primarySmtpAddress": "Primary Smtp Address value",
     "serverName": "Server Name value",
+    "connectorServerName": "Connector Server Name value",
     "exchangeConnectorType": "hosted",
     "version": "Version value",
     "exchangeAlias": "Exchange Alias value",

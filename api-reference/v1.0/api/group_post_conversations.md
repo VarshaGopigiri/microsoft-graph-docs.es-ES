@@ -70,7 +70,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.
->**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {
   "blockType": "response",

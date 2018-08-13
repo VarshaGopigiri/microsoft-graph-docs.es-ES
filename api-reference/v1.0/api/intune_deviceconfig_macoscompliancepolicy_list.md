@@ -24,7 +24,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -45,7 +45,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1035
+Content-Length: 1150
 
 {
   "value": [
@@ -70,7 +70,10 @@ Content-Length: 1035
       "systemIntegrityProtectionEnabled": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
-      "storageRequireEncryption": true
+      "storageRequireEncryption": true,
+      "firewallEnabled": true,
+      "firewallBlockAllIncoming": true,
+      "firewallEnableStealthMode": true
     }
   ]
 }

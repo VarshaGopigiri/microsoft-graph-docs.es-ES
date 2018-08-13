@@ -38,7 +38,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
   "name": "create_directoryobject_from_directoryrole"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
+POST https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/$ref
 Content-type: application/json
 
 {

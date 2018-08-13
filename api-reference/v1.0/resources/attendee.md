@@ -9,7 +9,7 @@ Derivadas de [attendeeBase](attendeebase.md).
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Respuesta del asistente (ninguna, aceptada, rechazada, etc.) para el evento y fecha y hora en que se envió la respuesta.|
 |type|String|Tipo de asistente: `required`, `optional`, `resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Incluye el nombre y la dirección de SMTP del asistente.|
+|emailAddress|[emailAddress](emailaddress.md)|Incluye el nombre y la dirección de SMTP del asistente.|
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Compartir un archivo con un vínculo"
-ms.openlocfilehash: 342e6ce403225a5d4b8b555a79355a721055e465
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Compartir un archivo con un vínculo
+ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
+ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "22223479"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Crear un vínculo para compartir para un DriveItem
 
@@ -62,7 +63,7 @@ Se pueden usar los siguientes valores para el parámetro de **tipo**.
 
 ### <a name="scope-types"></a>Tipos de ámbitos
 
-Se permiten los siguientes valores para el parámetro de **ámbito**.
+Se permiten los siguientes valores para el parámetro **scope**.
 Si el parámetro **scope** no se especifica, se crea el tipo de vínculo predeterminado para la organización.
 
 | Valor del tipo     | Descripción                                                                                                                   |
@@ -168,7 +169,7 @@ Content-Type: application/json
 
 Cuando se utiliza el tipo de vínculo `embed`, la webUrl que se devuelve se puede insertar en un elemento HTML `<iframe>`. Cuando se crea un vínculo para insertar, la propiedad `webHtml` contiene el código HTML de un `<iframe>` para hospedar el contenido.
 
-**Nota**: La acción de insertar vínculos solo se admite en OneDrive Personal.
+**Nota:** La acción de insertar vínculos solo se admite en OneDrive Personal.
 
 ### <a name="request"></a>Solicitud
 
@@ -197,7 +198,7 @@ Content-Type: application/json
   "link": {
     "type": "embed",
     "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
-    "webUrl": "https://onedive.live.com/...",
+    "webUrl": "https://onedrive.live.com/...",
     "application": {
       "id": "1234",
       "displayName": "Sample Application"

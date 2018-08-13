@@ -34,14 +34,17 @@ No proporcione un cuerpo de solicitud para este método.
 Si se ejecuta correctamente, esta función devuelve un código de respuesta `200 OK` y una colección [managedAppPolicy](../resources/intune_mam_managedapppolicy.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
+
 ### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
+
 ``` http
 GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedAppPolicies
 ```
 
 ### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

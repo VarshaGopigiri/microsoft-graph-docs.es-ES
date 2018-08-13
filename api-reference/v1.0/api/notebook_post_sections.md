@@ -57,7 +57,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece
   "@odata.type": "microsoft.graph.onenoteSection"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 272
 

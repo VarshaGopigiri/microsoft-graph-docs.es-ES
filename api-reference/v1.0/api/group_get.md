@@ -3,7 +3,7 @@ Obtiene las propiedades y relaciones de un objeto de grupo.
 
 ##### <a name="default-properties"></a>Propiedades predeterminadas
 
-Las siguientes propiedades representan el conjunto predeterminado de propiedades que se devuelven al obtener o enumerar grupos. Son un subconjunto de todas las propiedades disponibles. 
+Las siguientes propiedades representan el conjunto predeterminado de propiedades que se devuelven al obtener o enumerar grupos. Son un subconjunto de todas las propiedades disponibles.
 
 * descripción
 * displayName
@@ -67,7 +67,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "get_group"
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
+Aquí tiene un ejemplo de la respuesta.
 
 >**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades predeterminadas de una llamada real, como se describió anteriormente.
 <!-- {
