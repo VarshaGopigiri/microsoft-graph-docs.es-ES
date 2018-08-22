@@ -25,7 +25,7 @@ POST /deviceManagement/deviceCategories
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceCategory.
@@ -36,7 +36,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
 |displayName|String|Nombre para mostrar de la categoría de dispositivo.|
-|description|String|Descripción opcional de la categoría de dispositivo.|
+|descripción|String|Descripción opcional de la categoría de dispositivo.|
 
 
 
