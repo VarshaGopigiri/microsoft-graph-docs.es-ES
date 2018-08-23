@@ -1,0 +1,16 @@
+# <a name="runstate-enum-type"></a><span data-ttu-id="bd91c-101">Tipo de enumeración runState</span><span class="sxs-lookup"><span data-stu-id="bd91c-101">runState enum type</span></span>
+
+> <span data-ttu-id="bd91c-102">**Importante:** Las API de la versión / beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="bd91c-102">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bd91c-103">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="bd91c-103">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="bd91c-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="bd91c-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="bd91c-105">Indica el tipo de estado de ejecución de la secuencia de comandos de administración de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="bd91c-105">Indicates the type of execution status of the device management script.</span></span>
+## <a name="members"></a><span data-ttu-id="bd91c-106">Miembros</span><span class="sxs-lookup"><span data-stu-id="bd91c-106">Members</span></span>
+|<span data-ttu-id="bd91c-107">Miembro</span><span class="sxs-lookup"><span data-stu-id="bd91c-107">Member</span></span>|<span data-ttu-id="bd91c-108">Valor</span><span class="sxs-lookup"><span data-stu-id="bd91c-108">Value</span></span>|<span data-ttu-id="bd91c-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="bd91c-109">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="bd91c-110">unknown</span><span class="sxs-lookup"><span data-stu-id="bd91c-110">unknown</span></span>|<span data-ttu-id="bd91c-111">0</span><span class="sxs-lookup"><span data-stu-id="bd91c-111">0%</span></span>|<span data-ttu-id="bd91c-112">Resultado desconocido.</span><span class="sxs-lookup"><span data-stu-id="bd91c-112">Unknown result.</span></span>|
+|<span data-ttu-id="bd91c-113">success</span><span class="sxs-lookup"><span data-stu-id="bd91c-113">success</span></span>|<span data-ttu-id="bd91c-114">1</span><span class="sxs-lookup"><span data-stu-id="bd91c-114">$1</span></span>|<span data-ttu-id="bd91c-115">Secuencia de comandos ejecutada correctamente.</span><span class="sxs-lookup"><span data-stu-id="bd91c-115">Script is run successfully.</span></span>|
+|<span data-ttu-id="bd91c-116">fail</span><span class="sxs-lookup"><span data-stu-id="bd91c-116">Fail</span></span>|<span data-ttu-id="bd91c-117">2</span><span class="sxs-lookup"><span data-stu-id="bd91c-117">-2</span></span>|<span data-ttu-id="bd91c-118">No se pudo ejecutar la secuencia de comandos.</span><span class="sxs-lookup"><span data-stu-id="bd91c-118">Script failed to run.</span></span>|
+
+
+
