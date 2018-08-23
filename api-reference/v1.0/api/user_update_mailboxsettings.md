@@ -24,20 +24,20 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de las propiedades relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado. Las siguientes propiedades son modificables o actualizables:
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Opciones de configuración para notificar de forma automática al remitente de un mensaje de correo entrante con un mensaje del usuario que ha iniciado sesión.|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Opciones de configuración para notificar de forma automática al remitente de un mensaje de correo entrante con un mensaje del usuario que ha iniciado sesión. Puede establecer dichas notificaciones solo para un intervalo de fechas futuras.|
 |language|[localeInfo](../resources/localeinfo.md)|Representación de la configuración regional del usuario, como el idioma preferido y el país o región.|
-|timeZone|string|La zona horaria predeterminada del buzón del usuario.|
+|timeZone|cadena|La zona horaria predeterminada del buzón del usuario.|
 |workingHours|[workingHours](../resources/workinghours.md)|Horas, días de la semana y zona horaria en la que trabaja el usuario.|
 
 ## <a name="response"></a>Respuesta
@@ -66,11 +66,11 @@ En el primer ejemplo se habilitan las respuestas automáticas para un intervalo 
   "name": "update_mailboxsettings"
 }-->
 ```http
-PATCH https://graph.microsoft.com/api/v1.0/me/mailboxSettings
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "Scheduled",
         "scheduledStartDateTime": {
@@ -96,7 +96,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "scheduled",
         "externalAudience": "all",
@@ -115,7 +115,7 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-2"></a>Solicitud 2
+##### <a name="request-2"></a>Solicitud 2
 En el segundo ejemplo se personaliza la zona horaria del horario laboral del usuario que ha iniciado sesión; para ello, se establece la propiedad **timeZone** en una [zona horaria personalizada](../resources/customtimezone.md).
 
 <!-- {
@@ -123,7 +123,7 @@ En el segundo ejemplo se personaliza la zona horaria del horario laboral del usu
   "name": "update_mailboxsettings_2"
 }-->
 ```http
-PATCH https://graph.microsoft.com/api/v1.0/me/mailboxSettings
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
 Content-Type: application/json
 
 {
@@ -160,7 +160,7 @@ Content-Type: application/json
   }
 } 
 ```
-##### <a name="response-2"></a>Respuesta 2
+##### <a name="response-2"></a>Respuesta 2
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "ignored",

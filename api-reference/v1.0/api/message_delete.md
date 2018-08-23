@@ -1,6 +1,9 @@
-# <a name="delete-message"></a>Delete message
+# <a name="delete-message"></a>Borrar mensaje
 
-Elimina un mensaje.
+Eliminar un mensaje en el buzón del usuario especificado, o eliminar una relación del mensaje.
+
+>**Nota** Es posible que no pueda eliminar elementos de la carpeta de eliminaciones de elementos recuperables (representado por el [nombre de carpeta conocido](../resources/mailfolder.md) `recoverableitemsdeletions`). Para obtener más información, vea [Retención de elementos eliminados](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) y [Limpiar elementos eliminados](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -21,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
