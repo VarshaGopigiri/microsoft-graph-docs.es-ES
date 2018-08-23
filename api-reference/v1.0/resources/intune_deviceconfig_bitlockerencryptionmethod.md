@@ -1,0 +1,15 @@
+# <a name="bitlockerencryptionmethod-enum-type"></a><span data-ttu-id="a5b72-101">Tipo de enumeración bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="a5b72-101">bitLockerEncryptionMethod enum type</span></span>
+
+> <span data-ttu-id="a5b72-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="a5b72-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="a5b72-103">Tipos de BitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="a5b72-103">BitLockerEncryptionMethod types</span></span>
+## <a name="members"></a><span data-ttu-id="a5b72-104">Miembros</span><span class="sxs-lookup"><span data-stu-id="a5b72-104">Members</span></span>
+|<span data-ttu-id="a5b72-105">Miembro</span><span class="sxs-lookup"><span data-stu-id="a5b72-105">Member</span></span>|<span data-ttu-id="a5b72-106">Valor</span><span class="sxs-lookup"><span data-stu-id="a5b72-106">Value</span></span>|<span data-ttu-id="a5b72-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="a5b72-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="a5b72-108">aesCbc128</span><span class="sxs-lookup"><span data-stu-id="a5b72-108">aesCbc128</span></span>|<span data-ttu-id="a5b72-109">3</span><span class="sxs-lookup"><span data-stu-id="a5b72-109">-3</span></span>|<span data-ttu-id="a5b72-110">AES-CBC 128 bits.</span><span class="sxs-lookup"><span data-stu-id="a5b72-110">AES-CBC 128-bit.</span></span>|
+|<span data-ttu-id="a5b72-111">aesCbc256</span><span class="sxs-lookup"><span data-stu-id="a5b72-111">aesCbc256</span></span>|<span data-ttu-id="a5b72-112">4</span><span class="sxs-lookup"><span data-stu-id="a5b72-112">-4</span></span>|<span data-ttu-id="a5b72-113">AES-CBC 256 bits.</span><span class="sxs-lookup"><span data-stu-id="a5b72-113">AES-CBC 256-bit.</span></span>|
+|<span data-ttu-id="a5b72-114">xtsAes128</span><span class="sxs-lookup"><span data-stu-id="a5b72-114">xtsAes128</span></span>|<span data-ttu-id="a5b72-115">6</span><span class="sxs-lookup"><span data-stu-id="a5b72-115">-6</span></span>|<span data-ttu-id="a5b72-116">XTS AES 128-bits.</span><span class="sxs-lookup"><span data-stu-id="a5b72-116">XTS-AES 128-bit.</span></span>|
+|<span data-ttu-id="a5b72-117">xtsAes256</span><span class="sxs-lookup"><span data-stu-id="a5b72-117">xtsAes256</span></span>|<span data-ttu-id="a5b72-118">7</span><span class="sxs-lookup"><span data-stu-id="a5b72-118">-7</span></span>|<span data-ttu-id="a5b72-119">XTS-AES 256 bits.</span><span class="sxs-lookup"><span data-stu-id="a5b72-119">XTS-AES 256-bit.</span></span>|
+
+
+

@@ -1,0 +1,14 @@
+# <a name="safesearchfiltertype-enum-type"></a><span data-ttu-id="8dc7c-101">tipo de enumeración safeSearchFilterType</span><span class="sxs-lookup"><span data-stu-id="8dc7c-101">safeSearchFilterType enum type</span></span>
+
+> <span data-ttu-id="8dc7c-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="8dc7c-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="8dc7c-103">Especifica qué nivel de búsqueda segura (filtrado de contenido para adultos) se requiere</span><span class="sxs-lookup"><span data-stu-id="8dc7c-103">Specifies what filter level of safe search is required.</span></span>
+## <a name="members"></a><span data-ttu-id="8dc7c-104">Miembros</span><span class="sxs-lookup"><span data-stu-id="8dc7c-104">Members</span></span>
+|<span data-ttu-id="8dc7c-105">Miembro</span><span class="sxs-lookup"><span data-stu-id="8dc7c-105">Member</span></span>|<span data-ttu-id="8dc7c-106">Valor</span><span class="sxs-lookup"><span data-stu-id="8dc7c-106">Value</span></span>|<span data-ttu-id="8dc7c-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="8dc7c-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="8dc7c-108">userDefined</span><span class="sxs-lookup"><span data-stu-id="8dc7c-108">UserDefined</span></span>|<span data-ttu-id="8dc7c-109">0</span><span class="sxs-lookup"><span data-stu-id="8dc7c-109">0%</span></span>|<span data-ttu-id="8dc7c-110">Definido por el usuario, valor predeterminado, sin intención.</span><span class="sxs-lookup"><span data-stu-id="8dc7c-110">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="8dc7c-111">strict</span><span class="sxs-lookup"><span data-stu-id="8dc7c-111">Strict</span></span>|<span data-ttu-id="8dc7c-112">1</span><span class="sxs-lookup"><span data-stu-id="8dc7c-112">$1</span></span>|<span data-ttu-id="8dc7c-113">Estricto, mayor filtrado de contenido para adultos.</span><span class="sxs-lookup"><span data-stu-id="8dc7c-113">Strict, highest filtering against adult content.</span></span>|
+|<span data-ttu-id="8dc7c-114">moderate</span><span class="sxs-lookup"><span data-stu-id="8dc7c-114">Moderate</span></span>|<span data-ttu-id="8dc7c-115">2</span><span class="sxs-lookup"><span data-stu-id="8dc7c-115">-2</span></span>|<span data-ttu-id="8dc7c-116">Filtrado moderado de contenido para adultos (no se filtrarán los resultados de búsqueda válidos).</span><span class="sxs-lookup"><span data-stu-id="8dc7c-116">Moderate filtering against adult content (valid search results will not be filtered).</span></span>|
+
+
+
