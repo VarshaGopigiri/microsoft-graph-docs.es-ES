@@ -50,12 +50,12 @@ El servidor está demasiado ocupado para atender la solicitud entrante en este m
 Uno o más de las bibliotecas de documentos en OneDrive del usuario o del grupo contiene más de 5000 elementos de OneNote (blocs de notas, secciones, grupos de secciones) y no se puede consultar mediante la API. Asegúrese de que ninguna de las bibliotecas de documentos del grupo o del usuario contiene más de 5000 elementos de OneNote. Consulte el [blog de desarrollo de OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para conocer los pasos de mitigación.
 
 ### <a name="10012"></a>10012
-No se puede crear ni actualizar la entidad porque la biblioteca que contiene el bloc de notas necesita extraer del repositorio los elementos antes de editarlos. Para obtener más información, vea [Configurar una biblioteca para requerir la desprotección de archivos](https://support.office.com/es-ES/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
+No se puede crear ni actualizar la entidad porque la biblioteca que contiene el bloc de notas necesita extraer del repositorio los elementos antes de editarlos. Para obtener más información, vea [Configurar una biblioteca para requerir la desprotección de archivos](https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Quite el requisito de desprotección de la biblioteca o mueva el bloc de notas.
 
 ### <a name="10013"></a>10013
-Uno o más de las bibliotecas de documentos en OneDrive del usuario o del grupo contiene más de 20 000 elementos y no se puede indexar para realizar consultas mediante la API. Asegúrese de que ninguna de las bibliotecas de documentos del grupo o del usuario contiene más de 20 000 elementos. Consulte el [blog de desarrollo de OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para conocer los pasos de mitigación.
+Uno o más de las bibliotecas de documentos en OneDrive del usuario o del grupo contiene más de 20 000 elementos y no se puede indexar para realizar consultas mediante la API. Asegúrese de que ninguna de las bibliotecas de documentos del grupo o del usuario contiene más de 20 000 elementos. Consulte el [blog de desarrollo de OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para conocer los pasos de mitigación.
 
 ### <a name="10014"></a>10014
 Azure Key Vault está demasiado ocupado para atender la solicitud entrante en este momento. Inténtelo de nuevo más tarde.
@@ -64,7 +64,7 @@ Azure Key Vault está demasiado ocupado para atender la solicitud entrante en es
 SharePoint no está disponible actualmente. Inténtelo de nuevo más tarde.
 
 ### <a name="10016"></a>10016
-La biblioteca de documentos en OneDrive del usuario o del grupo superó el límite de umbral de ámbitos de seguridad único. El número máximo de ámbitos de seguridad únicos establecidos para una biblioteca no debe exceder de 50 000.
+La biblioteca de documentos en OneDrive del usuario o del grupo superó el límite de umbral de ámbitos de seguridad único. El número máximo de ámbitos de seguridad únicos establecidos para una biblioteca no debe exceder de 50 000.
 
 ### <a name="10017"></a>10017
 Solicitud incorrecta (Bad Request)
@@ -90,7 +90,7 @@ El tipo de contenido de la parte "Presentación" puede ser solo texto/HTML o apl
 El HTML de la parte "Presentación" contiene una etiqueta de imagen con ambos conjuntos de propiedades: **src** y **data-render-src**. La API omitirá la propiedad **src** y usará la propiedad **data-render-src**. 
 
 ### <a name="20005"></a>20005
-El URI de la solicitud es demasiado largo. El tamaño máximo del URI (incluyendo todos los parámetros y datos) es de 16 KB o 16 384 caracteres.
+El URI de la solicitud es demasiado largo. El tamaño máximo del URI (incluyendo todos los parámetros y datos) es de 16 KB o 16 384 caracteres.
 
 ### <a name="20006"></a>20006
 El HTML de la parte "Presentación" contiene una etiqueta de imagen sin los conjuntos de propiedades src o **data-render-src**. La API omitirá la etiqueta **imagen**. 
@@ -117,13 +117,13 @@ La solicitud no proporciona un tipo de contenido para la parte especificada.
 La solicitud no proporciona los encabezados Content-Type y Content-Disposition para la parte especificada. 
 
 ### <a name="20014"></a>20014
-La longitud de una parte en el mensaje de varias partes supera el tamaño máximo de 25 MB. 
+La longitud de una parte en el mensaje de varias partes supera el tamaño máximo de 25 MB. 
 
 ### <a name="20015"></a>20015
 El recuento de partes en el mensaje de varias partes supera el límite de 500. 
 
 ### <a name="20016"></a>20016
-La longitud del mensaje de varias partes supera el límite de 75 MB. 
+La longitud del mensaje de varias partes supera el límite de 75 MB. 
 
 ### <a name="20017"></a>20017
 El correo electrónico MIME está mal formado. 
@@ -330,7 +330,7 @@ No se admite el origen de vídeo especificado en la solicitud. Vea [Sitios de v�
 Hay algún fallo en la cuenta del usuario.
 
 ### <a name="30101"></a>30101
-La cuenta de usuario ha excedido su cuota de OneDrive. Vea [OneDrive](https://onedrive.live.com/about/es-ES/).
+La cuenta de usuario ha excedido su cuota de OneDrive. Vea [OneDrive](https://onedrive.live.com/about/en-us/).
 
 ### <a name="30102"></a>30102
 No se puede agregar nada más a la sección solicitada porque ha alcanzado su tamaño máximo.

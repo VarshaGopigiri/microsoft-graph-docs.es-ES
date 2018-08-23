@@ -3,6 +3,7 @@
 Envía un mensaje de la carpeta Borrador. El borrador del mensaje puede ser un borrador de mensaje nuevo, un borrador de respuesta, un borrador de respuesta a todos o un borrador de reenvío. El mensaje se guarda en la carpeta Elementos enviados.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
@@ -12,15 +13,20 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Mail.Send |
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/messages/{id}/send
 POST /users/{id | userPrincipalName}/messages/{id}/send
 ```
+
 ## <a name="request-headers"></a>Encabezados de solicitud
+
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
+| Content-Length | number | 0. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -29,13 +35,17 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 Si se ejecuta correctamente, este método devuelve el código de respuesta `202 Accepted`. No devuelve nada en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
+
 En el siguiente ejemplo se muestra cómo llamar a esta API.
+
 ##### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "message_send"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
@@ -47,6 +57,7 @@ Aquí tiene un ejemplo de la respuesta.
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```

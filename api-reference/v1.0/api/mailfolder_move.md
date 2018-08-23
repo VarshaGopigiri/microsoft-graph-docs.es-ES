@@ -3,45 +3,55 @@
 Mueve un objeto mailfolder y su contenido a otro objeto mailfolder.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
-|:--------------------|:---------------------------------------------------------|
+| Tipo de permiso | Permisos (de menos a más privilegiados) |
+|:----------------|:--------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Mail.ReadWrite    |
 |Delegado (cuenta personal de Microsoft) | Mail.ReadWrite    |
 |Aplicación | Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/mailFolders/{id}/move
 POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 ```
+
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Encabezado       | Valor |
-|:---------------|:--------|
-| Authorization  | {token} de portador. Obligatorio.  |
-| Content-Type  | application/json. Obligatorio.  |
+
+| Encabezado | Valor |
+|:-------|:------|
+| Authorization | `Bearer {token}`. Obligatorio. |
+| Content-Type | `application/json`. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|destinationId|String|El identificador de la carpeta o un nombre de carpeta conocido como, por ejemplo, *Inbox*, *Drafts*, *SentItems* o *DeletedItems*. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).|
+| Parámetro | Tipo | Descripción |
+|:----------|:-----|:------------|
+|destinationId|Cadena|El identificador de la carpeta, o un nombre de carpeta conocido. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [MailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y un recurso [mailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
+
 Aquí tiene un ejemplo de cómo llamar a esta API.
+
 ##### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "mailfolder_move"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/move
 Content-type: application/json
@@ -53,12 +63,16 @@ Content-length: 44
 ```
 
 ##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+
+Aquí tiene un ejemplo de la respuesta.
+
+> **Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

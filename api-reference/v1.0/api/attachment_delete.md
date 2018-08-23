@@ -4,23 +4,32 @@ Elimina datos adjuntos de un evento de calendario, mensaje de correo o publicaci
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-* Si accede a datos adjuntos en Mensajes: Mail.ReadWrite.
-* Si accede a datos adjuntos en Eventos: Calendars.ReadWrite.
-* Si accede a datos adjuntos en Publicaciones o Eventos de grupo: Group.ReadWrite.All.
+* Si accede a datos adjuntos en mensajes: Mail.ReadWrite.
+* Si accede a datos adjuntos en eventos: Calendars.ReadWrite.
+* Si accede a datos adjuntos en publicaciones de grupo: Group.ReadWrite.All.
+
+<!--
+* If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
+-->
 
 ## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
 Datos adjuntos de un [event](../resources/event.md) en el [calendar](../resources/calendar.md) predeterminado del usuario o del grupo.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-DELETE /groups/{id}/events/{id}/attachments/{id}
 
 DELETE /me/calendar/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 ```
+
+<!--
+DELETE /groups/{id}/events/{id}/attachments/{id}
+DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
+-->
+
 Datos adjuntos de un [event](../resources/event.md) en un [calendar](../resources/calendar.md) perteneciente al [calendarGroup](../resources/calendargroup.md) predeterminado del usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
@@ -29,26 +38,31 @@ DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 Datos adjuntos de un [event](../resources/event.md) en un [calendar](../resources/calendar.md) perteneciente al [calendarGroup](../resources/calendargroup.md) de un usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
 Datos adjuntos de un [message](../resources/message.md) en el buzón de un usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
 Datos adjuntos de un [message](../resources/message.md) contenido en una [mailFolder](../resources/mailfolder.md) de nivel superior en el buzón de un usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Datos adjuntos de un [message](../resources/message.md) contenido en una carpeta secundaria de una [mailFolder](../resources/mailfolder.md) en el buzón de un usuario.  En el ejemplo, siguiente se muestra un nivel de anidamiento, pero un mensaje puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
+Datos adjuntos de un [message](../resources/message.md) contenidos en una carpeta secundaria de una [mailFolder](../resources/mailfolder.md) en el buzón de un usuario.  En el ejemplo siguiente se muestra un nivel de anidamiento, pero un mensaje puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-Datos adjuntos para un [post](../resources/post.md) de un [thread](../resources/conversationthread.md) perteneciente a una [conversation](../resources/conversation.md) de un grupo.
+Datos adjuntos de un [post](../resources/post.md) en un [thread](../resources/conversationthread.md) perteneciente a una [conversation](../resources/conversation.md) de un grupo.
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
@@ -56,7 +70,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
