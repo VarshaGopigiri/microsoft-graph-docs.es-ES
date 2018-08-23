@@ -53,8 +53,8 @@ Las [extensiones de esquema](../api-reference/v1.0/resources/schemaextension.md)
 
 Al crear una definición de extensión de esquema, debe proporcionar un nombre único para su **id**. Existen dos opciones de nomenclaturas:
 
-- Si ya tiene un dominio de cortesía `.com`, `.net`, `.gov`, `.edu` o `.org` que haya comprobado con su arrendatario, puede usar el nombre de dominio junto con el nombre de esquema para definir un nombre exclusivo, con este formato \{_&#65279;nombreDominio_\}\_\{_&#65279;nombreEsquema_\}. Por ejemplo, si su dominio de cortesía es contoso.com, puede definir un **id.** de `contoso_mySchema`. Esta es la opción preferida.
-- Si no tiene un dominio de cortesía comprobado, solo puede establecer el **id** a un esquema de nombres (sin un prefijo de nombre de dominio), por ejemplo, `mySchema`. Microsoft Graph le asignará un identificador de cadena basado en el nombre proporcionado en este formato: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}.  Por ejemplo, `extkvbmkofy_mySchema`.
+- Si ya tiene un dominio de cortesía `.com`, `.net`, `.gov`, `.edu` o `.org` que haya comprobado con su arrendatario, puede usar el nombre de dominio junto con el nombre de esquema para definir un nombre exclusivo, con este formato \{_﻿nombreDominio_\}\_\{_﻿nombreEsquema_\}. Por ejemplo, si su dominio de cortesía es contoso.com, puede definir un **id.** de `contoso_mySchema`. Esta es la opción preferida.
+- Si no tiene un dominio de cortesía comprobado, solo puede establecer el **id** a un esquema de nombres (sin un prefijo de nombre de dominio), por ejemplo, `mySchema`. Microsoft Graph le asignará un identificador de cadena basado en el nombre proporcionado en este formato: ext\{_﻿8-random-alphanumeric-chars_\}\_\{_﻿schema-name_\}.  Por ejemplo, `extkvbmkofy_mySchema`.
 
 Verá que este nombre único en el **id.** se usa como el nombre del tipo complejo que almacenará sus datos personalizados en la instancia de recurso extendido.
 
@@ -77,7 +77,7 @@ La aplicación propietaria puede mover la extensión a través de diferentes est
 
 |Estado |Comportamiento de estado de ciclo de vida |
 |:-------------|:------------|
-| InDevelopment | <ul><li>Estado inicial después de su creación. El propietario de la aplicación aún está desarrollando la extensión de esquema. </li><li>En este estado, cualquier aplicación que esté en el mismo directorio donde se ha registrado la aplicación propietaria puede ampliar las instancias de recursos con esta definición de esquema (siempre y cuando la aplicación tenga los permisos de ese recurso). </li><li>Solamente la aplicación propietaria puede actualizar la definición de extensión con cambios que se incorporen o eliminarla. </li><li>La aplicación del propietario puede mover la extensión de **InDevelopment** al estado **Disponible**.</li></ul> |
+| En desarrollo | <ul><li>Estado inicial después de su creación. El propietario de la aplicación aún está desarrollando la extensión de esquema. </li><li>En este estado, cualquier aplicación que esté en el mismo directorio donde se ha registrado la aplicación propietaria puede ampliar las instancias de recursos con esta definición de esquema (siempre y cuando la aplicación tenga los permisos de ese recurso). </li><li>Solamente la aplicación propietaria puede actualizar la definición de extensión con cambios que se incorporen o eliminarla. </li><li>La aplicación del propietario puede mover la extensión de **InDevelopment** al estado **Disponible**.</li></ul> |
 | Disponible | <ul><li>La extensión de esquema está disponible para su uso por todas las aplicaciones de los inquilinos. </li><li>Después de que la aplicación propietaria establezca la extensión en **Disponible**, cualquier aplicación puede simplemente agregar datos personalizados a instancias de esos tipos de recursos especificadas en la extensión (siempre que la aplicación tenga permisos para ese recurso). La aplicación puede asignar datos personalizados al crear una nueva instancia o al actualizar una instancia existente. </li><li>Solamente la aplicación propietaria puede actualizar la definición de extensión con cambios que se incorporen. Ninguna aplicación puede eliminar la definición de la extensión en este estado. </li><li>La aplicación del propietario puede mover la extensión de esquema de **Disponible** al estado **En desuso**.</li></ul> |
 | En desuso | <ul><li>La definición de la extensión de esquema ya no se puede leer o modificar. </li><li>Ninguna aplicación puede ver, actualizar, agregar nuevas propiedades o eliminar la extensión. </li><li>Sin embargo, las aplicaciones todavía pueden leer, actualizar o eliminar los _valores de la propiedad_ de la extensión existente. </li><li>La aplicación del propietario puede mover la extensión de esquema de **En desuso** al estado **Disponible**.</li></ul> |
 
@@ -89,15 +89,15 @@ Se admiten los siguientes tipos de datos al definir una propiedad en una extensi
 |:-------------|:------------|
 | Binario | Máximo de 256 bytes. |
 | Booleano | No se admite para los mensajes, eventos y publicaciones. |
-| DateTime | Debe especificarse en el formato ISO 8601. Se almacenarán en UTC. |
+| Fecha y hora | Debe especificarse en el formato ISO 8601. Se almacenarán en UTC. |
 | Entero | Valor de 32 bits. No se admite para los mensajes, eventos y publicaciones. |
-| String | Máximo de 256 caracteres. |
+| Cadena | Máximo de 256 caracteres. |
 
 > **Nota:** No se admiten propiedades de varios valores.
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Extensiones de esquema de directorio de Azure AD
 
-Azure AD es compatible con un tipo similar de extensiones, conocido como las [extensiones de esquema de directorio](https://msdn.microsoft.com/es-ES/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), en unos pocos recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Aunque debe utilizar la [API Graph de Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) para crear y administrar las definiciones de las extensiones de esquema de directorio, puede utilizar la API de Microsoft Graph para agregar, obtener, actualizar y eliminar _datos_ en las propiedades de estas extensiones.
+Azure AD es compatible con un tipo similar de extensiones, conocido como las [extensiones de esquema de directorio](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), en unos pocos recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Aunque debe utilizar la [API Graph de Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) para crear y administrar las definiciones de las extensiones de esquema de directorio, puede utilizar la API de Microsoft Graph para agregar, obtener, actualizar y eliminar _datos_ en las propiedades de estas extensiones.
 
 ## <a name="permissions"></a>Permisos
 
@@ -134,6 +134,6 @@ Para ver las limitaciones conocidas al usar las extensiones, consulte la [secci�
 
 ## <a name="see-also"></a>Consulte también
 
-- [Dominios de Office 365](https://technet.microsoft.com/es-ES/library/office-365-domains.aspx)
+- [Dominios de Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 - [Agregar y comprobar un dominio para un inquilino de Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
