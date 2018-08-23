@@ -1,4 +1,4 @@
-# <a name="add-group-owner"></a>Add group owner
+# <a name="add-group-owner"></a>Añadir propietario de grupo
 Agrega un usuario a los propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo.
 
 ## <a name="permissions"></a>Permisos
@@ -8,7 +8,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicación | Group.ReadWrite.All y User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -18,7 +18,7 @@ POST /groups/{id}/owners/$ref
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [user](../resources/user.md) que se va a agregar.
@@ -45,7 +45,7 @@ Content-length: 30
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [user](../resources/user.md) que se va a agregar.
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
+Aquí tiene un ejemplo de la respuesta.
 >**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
