@@ -2,6 +2,8 @@
 
 Use esta API para crear una nueva configuración basada en las plantillas disponibles en [groupSettingTemplates](../resources/groupsettingtemplate.md). Esta configuración puede establecerse a nivel de arrendatario o de grupo. La solicitud de creación debe proporcionar [settingValues](../resources/settingvalue.md) para toda la configuración establecida en la plantilla. Para configuraciones específicas de grupos, solo se puede establecer la configuración que indique si los miembros de un grupo pueden invitar a otros usuarios como invitados o no. Esto establecerá este comportamiento una vez que esté disponible de forma general la posibilidad de agregar usuarios como invitados.
 
+Para obtener una lista de plantillas y las propiedades que admiten en v1.0, utilice una [consulta groupSettingTemplate](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groupSettingTemplates&version=v1.0) (para puntos de conexión beta, use [directorySettingTemplates](https://developer.microsoft.com/en-us/graph/graph-explorer?request=directorySettingTemplates&version=beta).)
+
 ## <a name="permissions"></a>Permisos
 
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -48,16 +50,14 @@ Content-type: application/json
 Content-length: 215
 
 {
-  "groupSetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
-    "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ]
-  }
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
+  "values": [
+    {
+      "name": "name-value",
+      "value": "value-value"
+    }
+  ]
 }
 ```
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [groupSetting](../resources/groupsetting.md).
@@ -75,17 +75,15 @@ Content-type: application/json
 Content-length: 238
 
 {
-  "groupSetting": {
-    "displayName": "displayName-value",
-    "templateId": "templateId-value",
-    "values": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ],
-    "id": "id-value"
-  }
+  "displayName": "displayName-value",
+  "templateId": "templateId-value",
+  "values": [
+    {
+      "name": "name-value",
+      "value": "value-value"
+    }
+  ],
+  "id": "id-value"
 }
 ```
 
