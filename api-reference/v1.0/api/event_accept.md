@@ -1,6 +1,6 @@
 # <a name="event-accept"></a>event: accept
 
-Acepta el evento especificado.
+Acepte el [evento](../resources/event.md) especificado en el [calendario](../resources/calendar.md) de un usuario.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -16,11 +16,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ```http
 POST /me/events/{id}/accept
 POST /users/{id | userPrincipalName}/events/{id}/accept
-POST /groups/{id}/events/{id}/accept
 
 POST /me/calendar/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
-POST /groups/{id}/calendar/events/{id}/accept
 
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
@@ -42,8 +40,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|comment|String|Texto incluido en la respuesta. Opcional.|
-|sendResponse|Boolean|`true` si se va a enviar una respuesta al organizador; de lo contrario, `false`. Opcional. El valor predeterminado es `true`.|
+|comment|Cadena|Texto incluido en la respuesta. Opcional.|
+|sendResponse|Booleano|`true` si se va a enviar una respuesta al organizador; de lo contrario, `false`. Opcional. El valor predeterminado es `true`.|
 
 ## <a name="response"></a>Respuesta
 

@@ -1,6 +1,6 @@
 # <a name="event-decline"></a>event: decline
 
-Rechaza la invitación al evento especificado.
+Rechaza la invitación para el [evento](../resources/event.md) especificado en un [calendario](../resources/calendar.md)de usuario.
 
 ## <a name="permissions"></a>Permisos
 
@@ -19,11 +19,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
 
 POST /me/calendar/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
 
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
@@ -41,8 +39,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Content-Type | cadena  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -50,8 +48,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|comment|String|Texto incluido en la respuesta. Opcional.|
-|sendResponse|Boolean|`true` si se va a enviar una respuesta al organizador; de lo contrario, `false`. Opcional. El valor predeterminado es `true`.|
+|comment|Cadena|Texto incluido en la respuesta. Opcional.|
+|sendResponse|Booleano|`true` si se va a enviar una respuesta al organizador; de lo contrario, `false`. Opcional. El valor predeterminado es `true`.|
 
 ## <a name="response"></a>Respuesta
 

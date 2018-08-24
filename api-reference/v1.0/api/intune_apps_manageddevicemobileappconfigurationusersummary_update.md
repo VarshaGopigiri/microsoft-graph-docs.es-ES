@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,9 +34,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |pendingCount|Int32|Número de usuarios pendientes|
-|notApplicableCount|Int32|Número de dispositivos no aplicables|
+|notApplicableCount|Int32|Número de usuarios no aplicables|
 |successCount|Int32|Número de usuarios correctos|
 |errorCount|Int32|Número de usuarios con error|
 |failedCount|Int32|Número de usuarios erróneos|

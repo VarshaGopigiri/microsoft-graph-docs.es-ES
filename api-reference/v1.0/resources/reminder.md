@@ -1,17 +1,17 @@
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 
-
+Un aviso para un [evento](event.md) en un [calendario](calendar.md)de usuario.
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|changeKey|String|Identifica la versión del aviso. Cada vez que cambia el aviso, cambia también **changeKey**. Permite que Exchange aplique los cambios a la versión correcta del objeto.|
+|changeKey|Cadena|Identifica la versión del aviso. Cada vez que cambia el aviso, cambia también **changeKey**. Permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Fecha, hora y zona horaria en que finaliza el evento.|
-|eventId|String|Identificador único del evento. Solo lectura.|
-|eventLocation|[Location](location.md)|Ubicación del evento.|
+|eventId|Cadena|Identificador único del evento. Solo lectura.|
+|eventLocation|[Ubicación](location.md)|Ubicación del evento.|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|Fecha, hora y zona horaria en que comienza el evento.|
-|eventSubject|String|Texto de la línea de asunto del evento.|
-|eventWebLink|String|Dirección URL para abrir el evento en Outlook en la web.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook en la web. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
+|eventSubject|Cadena|Texto de la línea de asunto del evento.|
+|eventWebLink|Cadena|Dirección URL para abrir el evento en Outlook en la web.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook en la web. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|Fecha, hora y zona horaria en que se establece que se produzca el aviso.|
 
 ## <a name="json-representation"></a>Representación JSON

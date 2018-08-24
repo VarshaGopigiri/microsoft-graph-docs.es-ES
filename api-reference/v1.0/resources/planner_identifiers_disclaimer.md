@@ -1,6 +1,6 @@
-# <a name="identifiers-in-planner"></a>Identificadores de Planner
+# <a name="identifiers-in-planner"></a>Identificadores en Planner
 
-Los identificadores de objetos de Planner son valores de cadena generados por el servicio. Los valores tienen una longitud de 28 caracteres y distinguen mayúsculas de minúsculas. Si se pasa tal cual, el servicio efectuará una validación de formato simple del identificador. Si se produce un error en la validación del formato, los llamadores recibirán una respuesta de error Bad Request (400) indicando este problema. Este error indica un error en la aplicación de llamada como, por ejemplo:
+Los identificadores de objetos en Planner son valores de cadena generados por el servicio. Los valores son 28 caracteres de longitud y distinguen mayúsculas de minúsculas. Si se pasa tal cual, el servicio efectuará una validación de formato simple del identificador. Si se produce un error en la validación del formato, los llamadores recibirán una respuesta de error Bad Request (400) indicando este problema. Este error indica un error en la aplicación de llamada como, por ejemplo:
 
 - La aplicación de llamada ha procesado el identificador como una cadena que no distingue mayúsculas de minúsculas. Los identificadores de tareas distinguen mayúsculas de minúsculas.
 - La aplicación de llamada ha truncado el identificador. Los identificadores de tareas tienen una longitud de 28 caracteres.

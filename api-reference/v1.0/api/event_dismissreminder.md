@@ -1,6 +1,6 @@
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
-Descarta un recordatorio que se ha desencadenado.
+Descarta un aviso que desencadena un [evento](../resources/event.md) en un [calendario](../resources/calendar.md)de usuario.
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -18,11 +18,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
-POST /groups/{id}/events/{id}/dismissReminder
 
 POST /me/calendar/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
-POST /groups/{id}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
@@ -39,7 +37,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 <br/>
 

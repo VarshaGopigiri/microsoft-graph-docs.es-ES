@@ -4,7 +4,7 @@
 
 > Para ser compatible con **todos los clientes empresariales** en **todos los escenarios de empresa**, tiene que usar el punto de conexión de AD de Azure y administrar las aplicaciones mediante [Azure Portal](https://aka.ms/aadapplist). Para más información, vea [Decidir entre los puntos de conexión de Azure AD y Azure AD v2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el [punto de conexión de Azure AD v2.0](https://developer.microsoft.com/es-ES/graph/docs/concepts/converged_auth) y llamar a Microsoft Graph. Se describe el código del [Ejemplo de conexión a Office 365 para iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) para explicar los conceptos básicos que se implementan en una aplicación que use Microsoft Graph. Se describe cómo obtener acceso a Microsoft Graph con operaciones de REST en un modelo asincrónico de **cadena de promesa**. Las promesas del ejemplo se implementan con el elemento [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) de CocoaPod. 
+En este artículo, se describen las tareas necesarias para obtener un token de acceso desde el [punto de conexión de Azure AD v2.0](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) y llamar a Microsoft Graph. Se describe el código del [Ejemplo de conexión a Office 365 para iOS (REST)](https://github.com/microsoftgraph/ios-swift-connect-rest-sample) para explicar los conceptos básicos que se implementan en una aplicación que use Microsoft Graph. Se describe cómo obtener acceso a Microsoft Graph con operaciones de REST en un modelo asincrónico de **cadena de promesa**. Las promesas del ejemplo se implementan con el elemento [mxcl/PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/README.md) de CocoaPod. 
 
 Este ejemplo se creó con **Xcode 9.2** y **Swift 3.2**.
 
@@ -19,7 +19,7 @@ En la imagen siguiente, se muestra la aplicación que va a crear.
 
 El flujo de trabajo autentica y autoriza el ejemplo para obtener acceso a recursos de Microsoft Graph, inicia sesión con su cuenta personal o profesional y, por último, envía un correo a un destinatario.
 
-**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://developer.microsoft.com/es-ES/graph/quick-start) para ponerlo todo en funcionamiento de manera rápida.
+**¿No desea compilar una aplicación?** Use el [inicio rápido de Microsoft Graph](https://developer.microsoft.com/en-us/graph/quick-start) para ponerlo todo en funcionamiento de manera rápida.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -29,7 +29,7 @@ Para comenzar, necesitará:
 * Instalación de [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) como un administrador de dependencias.
 * Instalación de [Carthage](https://github.com/Carthage/Carthage) para importar y compilar la biblioteca de biblioteca de **MSAL**.
 * Instalación del elemento [PromiseKit 4.5.2](https://github.com/mxcl/PromiseKit/blob/master/Documentation/Installation.md) de CocoaPod. 
-* Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/es-ES/office/developer-program/office-365-developer-program-faq#account-types).
+* Una [cuenta Microsoft](https://www.outlook.com/) o una [cuenta profesional o educativa](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types).
 
 ## <a name="register-the-app"></a>Registrar la aplicación
  
@@ -56,7 +56,7 @@ Para comenzar, necesitará:
 
         pod install
 
-   Recibirá la confirmación de la importación de los pods al proyecto. Para obtener más información, vea [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html).
+   Recibirá la confirmación de la importación de los pods al proyecto. Para obtener más información, vea [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
 ## <a name="install-the-msal-authentication-framework"></a>Instalación del marco de autenticación de MSAL
 
@@ -483,5 +483,5 @@ El código con el que trabajaremos aquí está en la clase **SendMailViewControl
 - Busque ejemplos de operaciones comunes, tanto para REST como para SDK, en el [Ejemplo de fragmentos de código de Objective C para Microsoft Graph para iOS](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>Vea también
-- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-protocols/)
-- [Tokens de Azure AD v2.0](https://azure.microsoft.com/es-ES/documentation/articles/active-directory-v2-tokens/)
+- [Protocolos de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Tokens de Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
