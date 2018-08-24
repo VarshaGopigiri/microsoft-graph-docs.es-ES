@@ -62,10 +62,10 @@ GET https://login.microsoftonline.com/{tenant}/adminconsent
 
 | Parámetro     | Condición   | Descripción 
 |:--------------|:------------|:------------
-| tenant        | Obligatorio    | Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. Si no sabe a qué inquilino pertenece el usuario y quiere permitir que inicie sesión con cualquier inquilino, use `common`. 
+| inquilino        | Obligatorio    | Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. Si no sabe a qué inquilino pertenece el usuario y quiere permitir que inicie sesión con cualquier inquilino, use `common`. 
 | client_id     | Obligatorio    | Identificador de aplicación que el [portal de registro de aplicaciones](https://apps.dev.microsoft.com/) ha asignado a la aplicación. 
 | redirect_uri  | Obligatorio    | URI de redireccionamiento adonde quiere que se envíe la respuesta para que la aplicación la controle. Debe coincidir exactamente con uno de los URI de redireccionamiento que ha registrado en el portal, pero con codificación URL, y puede tener segmentos de ruta de acceso adicionales. 
-| state         | Recomendado | Valor incluido en la solicitud que también se devuelve en la respuesta de token. Puede ser una cadena con cualquier contenido que quiera. El estado se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. 
+| estado         | Recomendado | Valor incluido en la solicitud que también se devuelve en la respuesta de token. Puede ser una cadena con cualquier contenido que quiera. El estado se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. 
 
 ### <a name="administrator-consent-experience"></a>Experiencia de consentimiento del administrador
 
@@ -83,13 +83,13 @@ Si el administrador aprueba los permisos de la aplicación, la respuesta correct
 // Line breaks are for legibility only.
 
 GET http://localhost/myapp/permissions
-?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=state=12345
+?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=12345
 &admin_consent=True
 ```
 
 | Parámetro     | Descripción 
 |:--------------|:------------
-| tenant        | Inquilino de directorio que ha concedido a la aplicación los permisos que ha solicitado, en formato GUID. 
+| inquilino        | Inquilino de directorio que ha concedido a la aplicación los permisos que ha solicitado, en formato GUID. 
 | state         | Valor incluido en la solicitud que también se devuelve en la respuesta de token. Puede ser una cadena con cualquier contenido que quiera. El estado se usa para codificar la información sobre el estado del usuario en la aplicación antes de que se produjese la solicitud de autenticación, como la página o la visualización en la que estaba. 
 | admin_consent | Establecido en **true**. 
 
@@ -123,7 +123,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 
 | Parámetro     | Condición | Descripción 
 |:--------------|:----------|:------------
-| tenant        | Obligatorio  | Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. 
+| inquilino        | Obligatorio  | Inquilino de directorio al que quiere solicitar permiso. Puede estar en formato GUID o de nombre descriptivo. 
 | client_id     | Obligatorio  | Identificador de aplicación que el [portal de registro de aplicaciones de Microsoft](https://apps.dev.microsoft.com) ha asignado al registrar la aplicación. 
 | scope         | Necesario  | El valor pasado para el parámetro `scope` en esta solicitud debe ser el identificador de recurso (URI del identificador de aplicación) del recurso que le interesa, con el sufijo `.default` anexado. Para Microsoft Graph, el valor es `https://graph.microsoft.com/.default`. Este valor le indica al punto de conexión de v2.0 que, de todos los permisos de aplicación que se han configurado para la aplicación, debe emitir un token para los que están asociados al recurso que quiere usar. 
 | client_secret | Obligatorio  | Secreto de la aplicación generado para la aplicación en el portal de registro de aplicaciones. 
