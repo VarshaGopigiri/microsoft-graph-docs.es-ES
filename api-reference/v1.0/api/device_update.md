@@ -23,7 +23,7 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -32,11 +32,11 @@ En el cuerpo de la solicitud, proporcione los valores de las propiedades [device
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |accountEnabled|Booleano| **true** si la cuenta está habilitada; en caso contrario, **false**. |
-|operatingSystem|String|Tipo de sistema operativo del dispositivo.|
-|operatingSystemVersion|String|Versión del sistema operativo del dispositivo.|
-|displayName|String|Nombre para mostrar del dispositivo.|
-|isCompliant|Boolean|**true** si el dispositivo cumple con las directivas de administración de dispositivos móviles (MDM); en caso contrario, **false**. Solo lo puede actualizar una aplicación MDM aprobada. |
-|isManaged|Boolean|**true** si una aplicación de administración de dispositivos móviles (MDM) administra el dispositivo; en caso contrario, **false**. Solo lo puede actualizar una aplicación MDM aprobada. |
+|operatingSystem|Cadena|Tipo de sistema operativo del dispositivo.|
+|operatingSystemVersion|Cadena|Versión del sistema operativo del dispositivo.|
+|displayName|Cadena|Nombre para mostrar del dispositivo.|
+|isCompliant|Booleano|**true** si el dispositivo cumple con las directivas de administración de dispositivos móviles (MDM); en caso contrario, **false**. Esto solo lo puede actualizar Intune para cualquier tipo de sistema operativo del dispositivo o por una [aplicación MDM aprobada](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos de sistema operativo Windows. |
+|isManaged|Booleano|**true** si una aplicación de administración de dispositivos móviles (MDM) administra el dispositivo; en caso contrario, **false**. Esto solo lo puede actualizar Intune para cualquier tipo de sistema operativo del dispositivo o por una [aplicación MDM aprobada](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos de sistema operativo Windows. |
 
 ## <a name="response"></a>Respuesta
 
