@@ -84,5 +84,18 @@ Aproveche las ventajas de las siguientes funciones comunes que se comparten entr
 
 Obtenga más información sobre:
 
-- [¿Por qué integrar con el correo de Outlook?](outlook-mail-concept-overview.md)
-- [Usar la API de correo](../api-reference/v1.0/resources/mail_api_overview.md) y sus [casos de uso](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) en Microsoft Graph v1.0.
+- [¿Por qué debería realizar la integración con Correo de Outlook?](outlook-mail-concept-overview.md)
+- [Usar la API de correo](../api-reference/v1.0/resources/mail_api_overview.md) y sus [casos de uso](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) en la versión 1.0 de Microsoft Graph.
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /concepts/outlook-create-send-messages.md:
+        BookmarkSkippedDocFileNotFound: Link '[creating a message](../api-reference/beta/api/user_post_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](../api-reference/beta/api/user_list_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2)'."
+  ]
+}-->
