@@ -1,47 +1,47 @@
-# <a name="list-members"></a><span data-ttu-id="4fa82-101">Enumerar miembros</span><span class="sxs-lookup"><span data-stu-id="4fa82-101">List members</span></span>
+# <a name="list-members"></a><span data-ttu-id="4781b-101">Enumerar miembros</span><span class="sxs-lookup"><span data-stu-id="4781b-101">List members</span></span>
 
-<span data-ttu-id="4fa82-102">Recupera los profesores y alumnos de una clase.</span><span class="sxs-lookup"><span data-stu-id="4fa82-102">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="4fa82-103">Tenga en cuenta que si se usa el token delegado, los miembros solo pueden ser vistos por otros miembros de la clase.</span><span class="sxs-lookup"><span data-stu-id="4fa82-103">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
+<span data-ttu-id="4781b-102">Recupera los profesores y alumnos de una clase.</span><span class="sxs-lookup"><span data-stu-id="4781b-102">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="4781b-103">Tenga en cuenta que si se usa el token delegado, los miembros solo pueden ser vistos por otros miembros de la clase.</span><span class="sxs-lookup"><span data-stu-id="4781b-103">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4fa82-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="4fa82-104">Permissions</span></span>
-<span data-ttu-id="4fa82-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="4fa82-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4781b-104">Permisos</span><span class="sxs-lookup"><span data-stu-id="4781b-104">Permissions</span></span>
+<span data-ttu-id="4781b-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="4781b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="4fa82-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="4fa82-107">Permission type</span></span>      | <span data-ttu-id="4fa82-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="4fa82-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4781b-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="4781b-107">Permission type</span></span>      | <span data-ttu-id="4781b-108">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="4781b-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4fa82-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="4fa82-109">Delegated (work or school account)</span></span> |  <span data-ttu-id="4fa82-110">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="4fa82-110">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="4fa82-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4fa82-111">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="4fa82-112">No admitido</span><span class="sxs-lookup"><span data-stu-id="4fa82-112">Not supported</span></span>  |
-|<span data-ttu-id="4fa82-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="4fa82-113">Application</span></span> | <span data-ttu-id="4fa82-114">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fa82-114">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="4781b-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="4781b-109">Delegated (work or school account)</span></span> |  <span data-ttu-id="4781b-110">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="4781b-110">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="4781b-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4781b-111">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="4781b-112">No admitido</span><span class="sxs-lookup"><span data-stu-id="4781b-112">Not supported</span></span>  |
+|<span data-ttu-id="4781b-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="4781b-113">Application</span></span> | <span data-ttu-id="4781b-114">EduRoster.Read.All, EduRoster.ReadWrite.All y Member.Read.Hidden</span><span class="sxs-lookup"><span data-stu-id="4781b-114">EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="4fa82-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4fa82-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4781b-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4781b-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/members
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4fa82-116">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="4fa82-116">Optional query parameters</span></span>
-<span data-ttu-id="4fa82-117">Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4fa82-117">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4781b-116">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="4781b-116">Optional query parameters</span></span>
+<span data-ttu-id="4781b-117">Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4781b-117">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4fa82-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4fa82-118">Request headers</span></span>
-| <span data-ttu-id="4fa82-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="4fa82-119">Header</span></span>       | <span data-ttu-id="4fa82-120">Valor</span><span class="sxs-lookup"><span data-stu-id="4fa82-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="4781b-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4781b-118">Request headers</span></span>
+| <span data-ttu-id="4781b-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="4781b-119">Header</span></span>       | <span data-ttu-id="4781b-120">Valor</span><span class="sxs-lookup"><span data-stu-id="4781b-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4fa82-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4fa82-121">Authorization</span></span>  | <span data-ttu-id="4fa82-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="4fa82-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="4781b-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="4781b-121">Authorization</span></span>  | <span data-ttu-id="4781b-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="4781b-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4fa82-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4fa82-124">Request body</span></span>
-<span data-ttu-id="4fa82-125">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="4fa82-125">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="4fa82-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4fa82-126">Response</span></span>
-<span data-ttu-id="4fa82-127">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [educationUser](../resources/educationuser.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4fa82-127">If successful, this method returns a `200 OK` response code and collection of [groupSettingTemplate](../resources/educationuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4fa82-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4fa82-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4fa82-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="4fa82-129">Request</span></span>
-<span data-ttu-id="4fa82-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4fa82-130">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4781b-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4781b-124">Request body</span></span>
+<span data-ttu-id="4781b-125">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="4781b-125">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="4781b-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4781b-126">Response</span></span>
+<span data-ttu-id="4781b-127">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [educationUser](../resources/educationuser.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4781b-127">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4781b-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4781b-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4781b-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="4781b-129">Request</span></span>
+<span data-ttu-id="4781b-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4781b-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11016/members
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ```
-##### <a name="response"></a><span data-ttu-id="4fa82-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4fa82-131">Response</span></span>
-<span data-ttu-id="4fa82-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4fa82-132">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="4781b-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4781b-131">Response</span></span>
+<span data-ttu-id="4781b-132">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4781b-132">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="4fa82-p104">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="4fa82-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="4781b-p104">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="4781b-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -79,8 +79,6 @@ Content-length: 593
         "street": "12345 Main St."
       },
       "primaryRole": "teacher",
-      "externalId": "13013",
-      "teacherNumber": "8802",
       "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -88,6 +86,10 @@ Content-length: 593
         "state": "CA",
         "street": "12345 Main St."
       },
+      "teacher": {
+        "externalId": "13013",
+        "teacherNumber": "8802",
+      }
     },
     {
       "id": "13005",
@@ -111,13 +113,15 @@ Content-length: 593
         "state": "NY",
         "street": "12345 Main St."
       },
+      "student": {
+        "birthDate": "2001-01-01T00:00:00Z",
+        "externalId": "13005",
+        "gender": "female",
+        "grade": "9",
+        "graduationYear": "2019",
+        "studentNumber": "13005",
+      },
       "primaryRole": "student",
-      "externalId": "13005",
-      "birthDate": "2001-01-01T00:00:00Z",
-      "gender": "female",
-      "grade": "9",
-      "graduationYear": "2019",
-      "studentNumber": "13005",
       "residenceAddress": {
         "city": "Long Beach",
         "countryOrRegion": "United States",
