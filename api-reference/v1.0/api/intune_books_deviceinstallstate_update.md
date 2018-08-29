@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -35,15 +35,15 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|deviceName|String|Nombre del dispositivo.|
-|deviceId|String|Id. del dispositivo|
+|id|Cadena|Clave de la entidad.|
+|deviceName|Cadena|Nombre del dispositivo.|
+|deviceId|Cadena|Id. del dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización.|
-|installState|String|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
-|errorCode|String|El código de error si hay errores de instalación.|
-|osVersion|String|Versión del sistema operativo.|
-|osDescription|String|Descripción del sistema operativo.|
-|userName|String|Nombre de usuario del dispositivo.|
+|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
+|errorCode|Cadena|El código de error si hay errores de instalación.|
+|osVersion|Cadena|Versión del sistema operativo.|
+|osDescription|Cadena|Descripción del sistema operativo.|
+|userName|Cadena|Nombre de usuario del dispositivo.|
 
 
 
