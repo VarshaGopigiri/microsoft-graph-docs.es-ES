@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Paquete
-ms.openlocfilehash: 33be73ed79438bdf28b76747b6efb79290be8d0c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 12ae750a0f4fbe0e951554308d4041928c31a16d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267545"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 
@@ -26,9 +27,11 @@ Los objetos DriveItem con la faceta **package** no incluyen una faceta **folder*
 }
 ```
 
-| Nombre de propiedad | Tipo   | Descripción                                                                                                                                                                      |
+## <a name="properties"></a>Propiedades
+
+| Nombre de la propiedad | Tipo   | Descripción                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**      | string | Una cadena que indica el tipo de paquete. Mientras que `oneNote` es el único valor definido actualmente, debe esperar que se devuelvan otros tipos de paquetes y debe controlarlos en consecuencia. |
+| type          | cadena | Una cadena que indica el tipo de paquete. Mientras que `oneNote` es el único valor definido actualmente, debe esperar que se devuelvan otros tipos de paquetes y debe controlarlos en consecuencia. |
 
 ## <a name="remarks"></a>Comentarios 
 

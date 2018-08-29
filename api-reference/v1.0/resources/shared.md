@@ -3,16 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Compartidos
-ms.openlocfilehash: 1d828310a226edd0443ff3b5f60156df1e7c98cb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 0a94a1d5ddf671151cf786d9ff93ae4f9e012a7b
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267902"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
-El recurso **Shared** indica que se ha compartido un objeto DriveItem con otros usuarios.
-El recurso incluye información sobre cómo se comparte el elemento.
+El recurso **Shared** indica que se ha compartido un objeto DriveItem con otros usuarios. El recurso incluye información sobre cómo se comparte el elemento.
 
 Si un objeto [**DriveItem**](driveitem.md) tiene una faceta **shared** que no es null, el elemento se ha compartido.
 
@@ -38,11 +38,11 @@ Si un objeto [**DriveItem**](driveitem.md) tiene una faceta **shared** que no es
 | Propiedad       | Tipo                          | Descripción
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | La identidad del propietario del elemento compartido. Solo lectura.
-| scope          | String                        | Indica el ámbito sobre cómo se comparte el elemento: `anonymous`, `organization` o `users`. Solo lectura.
+| scope          | Cadena                        | Indica el ámbito sobre cómo se comparte el elemento: `anonymous`, `organization` o `users`. Solo lectura.
 | sharedBy       | [identitySet](identityset.md) | La identidad del usuario que ha compartido el elemento. Solo lectura.
 | sharedDateTime | DateTimeOffset                | Fecha y hora UTC de la última vez que se compartió el elemento. Solo lectura.
 
-## <a name="scope-values"></a>Valores del ámbito
+## <a name="scope-options"></a>Opciones de ámbito
 
 | Valor          | Descripción                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|
@@ -59,5 +59,9 @@ Para obtener más información sobre las facetas de **driveItem**, consulte [**d
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/shared.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization,users) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/Shared"
 } -->

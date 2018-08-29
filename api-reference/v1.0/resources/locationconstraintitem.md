@@ -8,11 +8,10 @@ Derivado de [ubicación](location.md).
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-  
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.location",
   "@odata.type": "microsoft.graph.locationConstraintItem"
 }-->
 
@@ -26,12 +25,12 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicalAddress.md) |Dirección postal de la ubicación. |
-| displayName  | String | Nombre asociado a la ubicación.                       |
-| locationEmailAddress | String | Dirección de correo electrónico opcional en la ubicación |
-| resolveAvailability | Boolean | Si se establece en verdadero y el recurso especificado está ocupado [findMeetingTimes](../api/user_findmeetingtimes.md) buscará otro recurso que esté libre. Si se establece en falso y el recurso especificado está ocupado, **findMeetingTimes** devolverá el recurso mejor puntuado en la caché del usuario sin comprobar que esté libre o no. El valor predeterminado es "true". |
+| displayName  | Cadena | Nombre asociado a la ubicación.                       |
+| locationEmailAddress | Cadena | Dirección de correo electrónico opcional en la ubicación |
+| resolveAvailability | Booleano | Si se establece en verdadero y el recurso especificado está ocupado [findMeetingTimes](../api/user_findmeetingtimes.md) buscará otro recurso que esté libre. Si se establece en falso y el recurso especificado está ocupado, **findMeetingTimes** devolverá el recurso mejor puntuado en la caché del usuario sin comprobar que esté libre o no. El valor predeterminado es "true". |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -7,14 +7,14 @@ Representa el fondo de un objeto de rango.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Lee las propiedades y relaciones del objeto rangeFill.|
-|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |Actualiza el objeto RangeFill. |
-|[Clear](../api/rangefill_clear.md)|None|Restablece el fondo del rango.|
+|[Obtener RangeFill](../api/rangefill_get.md) | [WorkbookRangeFill](rangefill.md) |Lee las propiedades y relaciones del objeto rangeFill.|
+|[Actualizar](../api/rangefill_update.md) | [WorkbookRangeFill](rangefill.md)   |Actualiza el objeto RangeFill. |
+|[Borrar](../api/rangefill_clear.md)|Ninguno|Restablece el fondo del rango.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|color|string|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
+|color|cadena|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -24,12 +24,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFill"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 }-->
 
 ```json

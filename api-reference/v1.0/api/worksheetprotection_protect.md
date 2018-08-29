@@ -27,7 +27,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|opciones|WorksheetProtectionOptions|Opcional. Opciones de protección de la hoja.|
+|options|WorkbookWorksheetProtectionOptions|Opcional. Opciones de protección de la hoja.|
 
 ## <a name="response"></a>Respuesta
 
@@ -67,8 +67,7 @@ Content-length: 383
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

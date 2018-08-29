@@ -93,17 +93,6 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>Parámetros
-|**Parámetro**|**Tipo**|**Descripción**|
-|:-----|:-----|:-----|
-|_Parámetros de dirección URL_|
-|id|string|Un identificador único para un objeto en la colección correspondiente. Necesario.|
-|_Parámetros de cuerpo_|
-|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)| Una matriz de una o varias propiedades extendidas de valor único. |
-|id|String|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique esto para identificar la propiedad. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
-|value|string|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique el valor de la propiedad. Necesario.|
-
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
@@ -113,6 +102,12 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-body"></a>Cuerpo de solicitud
 
 Proporcione un cuerpo JSON para cada objeto [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) en la propiedad de la colección **singleValueExtendedProperties** de la instancia de recurso.
+
+|Propiedad|Tipo|Descripción|
+|:-----|:-----|:-----|
+|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)| Una matriz de una o varias propiedades extendidas de valor único. |
+|id|Cadena|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique esto para identificar la propiedad. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
+|value|cadena|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique el valor de la propiedad. Necesario.|
 
 Al crear una propiedad extendida en una instancia de recurso _nueva_, además de la nueva colección **singleValueExtendedProperties**, proporcione una representación JSON de esa instancia de recurso (es decir, un [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.).
 
@@ -193,7 +188,7 @@ El segundo ejemplo crea una propiedad extendida de valor único para el mensaje 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')
+PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=
 
 Content-Type: application/json
 

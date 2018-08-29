@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Cambiar los permisos de uso compartido
-ms.openlocfilehash: ead6babf88b7efc578ef8be6d11cc9fb59dd5fdd
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 051520ed62fdfe6499a8cca2387e65f14714205f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267286"
 ---
 # <a name="update-sharing-permission"></a>Actualizar permisos de uso compartido
 
@@ -41,7 +42,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Nombre          | Tipo   | Descripción                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
+| if-match      | cadena | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -50,9 +51,9 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad.
 Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   | Descripción                   |
-|:-------------|:-------|:------------------------------|
-| **roles**    | String | Matriz de tipos de permisos. |
+| Propiedad | Tipo              | Descripción                   |
+|:---------|:------------------|:------------------------------|
+| roles    | String collection | Una matriz de tipos de permisos. |
 
 ## <a name="response"></a>Respuesta
 
@@ -62,7 +63,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 Aquí tiene un ejemplo de la solicitud que cambia el rol en el permiso de uso compartido a solo lectura.
 
-<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+<!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}/permissions/{perm-id}

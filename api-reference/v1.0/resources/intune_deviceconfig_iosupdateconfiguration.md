@@ -23,10 +23,10 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|versión|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|Inicio de horas activas (las horas activas son el intervalo de tiempo en que no se deberían instalar actualizaciones)|
 |activeHoursEnd|TimeOfDay|Fin de horas activas (las horas activas son el intervalo de tiempo en que no se deberían instalar actualizaciones)|
-|scheduledInstallDays|Colección string|Días de la semana para los que se configuran las horas activas. Esta colección puede contener un máximo de 7 elementos.|
+|scheduledInstallDays|Colección de [dayOfWeek enum](../resources/intune_deviceconfig_dayofweek.md)|Días de la semana para los que se configuran las horas activas. Esta colección puede contener un máximo de 7 elementos.|
 |utcTimeOffsetInMinutes|Int32|Diferencia horaria UTC indicada en minutos|
 
 ## <a name="relationships"></a>Relaciones
@@ -41,12 +41,12 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "@odata.type": "microsoft.graph.iosUpdateConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",

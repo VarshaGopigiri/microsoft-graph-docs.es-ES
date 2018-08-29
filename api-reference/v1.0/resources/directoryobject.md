@@ -7,17 +7,17 @@ Representa un objeto de Azure Active Directory. El tipo **directoryObject** es e
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |[Get directoryObject](../api/directoryobject_get.md) | [directoryObject](directoryobject.md) |Lee las propiedades de un objeto directory.|
-|[Delete directoryObject](../api/directoryobject_delete.md) | None |Elimina un objeto directory. |
+|[Delete directoryObject](../api/directoryobject_delete.md) | Ninguno |Elimina un objeto directory. |
 |[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|Colección string|Comprueba la pertenencia a una lista de grupos. La comprobación es transitiva.|
 |[getMemberGroups](../api/directoryobject_getmembergroups.md)|Colección string|Devuelve todos los grupos de los que el usuario, grupo u objeto de directorio sea miembro. La comprobación es transitiva.|
-|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Colección de cadenas| Devuelve todos los grupos y roles de directorio de los que el usuario, grupo u objeto de directorio sea miembro. La comprobación es transitiva. |
+|[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Colección string| Devuelve todos los grupos y roles de directorio de los que el usuario, grupo u objeto de directorio sea miembro. La comprobación es transitiva. |
 |[getByIds](../api/directoryobject_getbyids.md) | Colección [directoryObject](directoryobject.md) | Obtenga un conjunto de objetos de directorio basados en un conjunto de identificadores proporcionados. |
 
 ## <a name="properties"></a>Propiedades
 
 | Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|id|String|Guid que es el identificador único para el objeto; por ejemplo, 12345678-9abc-def0-1234-56789abcde. Clave. No admite valores NULL. Solo lectura.|
+|id|Cadena|Guid que es el identificador único para el objeto; por ejemplo, 12345678-9abc-def0-1234-56789abcde. Clave. No admite valores NULL. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 
@@ -28,13 +28,25 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

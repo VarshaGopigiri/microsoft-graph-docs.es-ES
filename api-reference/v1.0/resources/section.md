@@ -8,6 +8,7 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "pages",
     "parentNotebook",
@@ -36,19 +37,19 @@ Aquí tiene una representación JSON del recurso.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó la sección. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|String|El identificador único de la sección.  Solo lectura.|
+|id|Cadena|El identificador único de la sección.  Solo lectura.|
 |isDefault|Booleano|Indica si se trata de la sección predeterminada del usuario. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó la sección por última vez. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |vínculos|[SectionLinks](sectionlinks.md)|Vínculos para abrir la sección. El vínculo `oneNoteClientURL` abre la sección en el cliente nativo de OneNote si está instalado. El vínculo `oneNoteWebURL` abre la sección en OneNote Online.|
 |displayName|Cadena|Nombre de la sección. |
 |pagesUrl|Cadena|El punto de conexión `pages` donde puede obtener información detallada de todas las páginas de la sección. Solo lectura.|
-|self|String|El punto de conexión donde puede obtener información detallada sobre la sección. Solo lectura.|
+|self|Cadena|El punto de conexión donde puede obtener información detallada sobre la sección. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|pages|Colección [Page](page.md)|Colección de páginas de la sección.  Solo lectura. Admite valores NULL.|
+|pages|Colección de [OnenotePage](page.md)|Colección de páginas de la sección. Solo lectura. Admite valores NULL.|
 |parentNotebook|[Notebook](notebook.md)|Bloc de notas que contiene la sección.  Solo lectura.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|Grupo de secciones que contiene la sección.  Solo lectura.|
 
@@ -56,7 +57,7 @@ Aquí tiene una representación JSON del recurso.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Obtener sección](../api/section_get.md) | [Section](section.md) |Leer las propiedades y las relaciones de la sección.|
+|[Obtener sección](../api/section_get.md) | [OnenoteSection](section.md) |Leer las propiedades y las relaciones de la sección.|
 |[Crear página](../api/section_post_pages.md) |[Page](page.md)| Crear una página publicándola en la sección especificada de la colección de páginas.|
 |[Enumerar páginas](../api/section_list_pages.md) |Colección [Page](page.md)| Obtener una colección de páginas en la sección especificada.|
 |[copyToNotebook](../api/section_copytonotebook.md)|Ninguno|Copiar la sección en un bloc de notas específico.|

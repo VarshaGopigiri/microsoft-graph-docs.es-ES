@@ -1,4 +1,4 @@
-# <a name="update-range"></a>Update range
+# <a name="update-range"></a>Actualizar intervalo
 
 Actualizar las propiedades del objeto de rango.
 ## <a name="permissions"></a>Permisos
@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range
+PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
@@ -28,13 +28,13 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|Representa si todas las columnas del rango actual están ocultas.|
-|formulas|json|Representa la fórmula en notación de estilo A1.|
-|formulasLocal|json|Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.|
-|formulasR1C1|json|Representa la fórmula en notación de estilo R1C1.|
-|numberFormat|json|Representa el código de formato numérico de Excel para la celda especificada.|
-|rowHidden|boolean|Representa si todas las filas del rango actual están ocultas.|
-|values|json|Representa los valores sin formato del rango especificado. Los datos devueltos pueden ser de tipo string, number o boolean. La celda que contenga un error devolverá la cadena de error.|
+|columnHidden|booleano|Representa si todas las columnas del rango actual están ocultas.|
+|formulas|Json|Representa la fórmula en notación de estilo A1.|
+|formulasLocal|Json|Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.|
+|formulasR1C1|Json|Representa la fórmula en notación de estilo R1C1.|
+|numberFormat|Json|Representa el código de formato numérico de Excel para la celda especificada.|
+|rowHidden|booleano|Representa si todas las filas del rango actual están ocultas.|
+|valores|Json|Representa los valores sin formato del intervalo especificado. Los datos devueltos pueden ser de tipo string, number o boolean. La celda que contenga un error devolverá la cadena de error.|
 
 ## <a name="response"></a>Respuesta
 
@@ -48,7 +48,7 @@ Aquí tiene un ejemplo de la solicitud. Actualiza un rango: valores, formato de 
   "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
 Content-length: 169
 
@@ -63,7 +63,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +87,15 @@ Content-length: 169
   "description": "Update range",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

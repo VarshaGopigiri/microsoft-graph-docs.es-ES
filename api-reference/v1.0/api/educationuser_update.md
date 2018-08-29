@@ -22,22 +22,22 @@ PATCH /education/users/{id}
 | Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|displayName| String| Nombre para mostrar del usuario.|
-|givenName| String | Nombre. |
-|middleName| String | Segundo nombre del usuario.|
-|surname| String | Apellido del usuario.|
-|mail| String| Dirección de correo electrónico.|
-|mobilePhone| String | Número de móvil del usuario. |
-|externalSource|string| Los valores posibles son: `sis`, `manual` y `enum_sentinel`.|
-|externalSource|string| Indica desde dónde se ha creado este usuario.  Los valores posibles son: `sis`, `manual` y `enum_sentinel`.|
+|displayName| Cadena| Nombre para mostrar del usuario.|
+|givenName| Cadena | Nombre. |
+|middleName| Cadena | Segundo nombre del usuario.|
+|surname| Cadena | Apellido del usuario.|
+|mail| Cadena| Dirección de correo electrónico.|
+|mobilePhone| Cadena | Número de móvil del usuario. |
+|externalSource|cadena| Los valores posibles son: `sis`, `manual` y `enum_sentinel`.|
+|externalSource|cadena| Indica desde dónde se ha creado este usuario.  Los valores posibles son: `sis`, `manual` y `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Dirección de correo del usuario.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Dirección donde reside el usuario.|
-|primaryRole|string| Rol predeterminado de un usuario.  Puede que el rol del usuario sea distinto en una clase individual. Los valores posibles son: `student`, `teacher` y `enum_sentinel`.|
+|primaryRole|cadena| Rol predeterminado de un usuario.  Puede que el rol del usuario sea distinto en una clase individual. Los valores posibles son: `student`, `teacher` y `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| Si el rol principal es alumno, este bloque contendrá datos específicos de alumnos.|
 |teacher|[educationTeacher](../resources/educationteacher.md)| Si el rol principal es profesor, este bloque contendrá datos específicos de profesores.|
 
@@ -52,7 +52,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_educationuser"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/13020
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
 Content-length: 508
 
@@ -97,7 +97,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "string",
+  "primaryRole": "student",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -106,7 +106,6 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
-      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }

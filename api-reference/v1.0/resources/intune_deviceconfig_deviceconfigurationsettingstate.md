@@ -6,29 +6,27 @@ Estado de la configuración de dispositivos de un dispositivo determinado.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|ajustes|cadena|La configuración que se está notificando|
-|settingName|cadena|Nombre descriptivo de la configuración de usuario o localizada que se está notificando|
-|instanceDisplayName|cadena|Nombre de la instancia de configuración que se está notificando.|
-|estado|cadena|Estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|ajustes|Cadena|La configuración que se está notificando|
+|settingName|Cadena|Nombre descriptivo de la configuración de usuario o localizada que se está notificando|
+|instanceDisplayName|Cadena|Nombre de la instancia de configuración que se está notificando.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
 |errorCode|Int64|Código de error de la configuración|
-|errorDescription|cadena|Descripción del error|
-|userId|cadena|UserId|
-|userName|cadena|UserName|
-|userEmail|cadena|UserEmail|
-|userPrincipalName|cadena|UserPrincipalName.|
-|orígenes|Colección [settingSource](../resources/intune_deviceconfig_settingsource.md)|Directivas colaboradoras|
-|currentValue|cadena|Valor actual de la configuración en el dispositivo|
+|errorDescription|Cadena|Descripción del error|
+|userId|Cadena|UserId|
+|userName|Cadena|UserName|
+|userEmail|Cadena|UserEmail|
+|userPrincipalName|Cadena|UserPrincipalName.|
+|sources|Colección [settingSource](../resources/intune_deviceconfig_settingsource.md)|Directivas colaboradoras|
+|currentValue|Cadena|Valor actual de la configuración en el dispositivo|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationSettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationSettingState",

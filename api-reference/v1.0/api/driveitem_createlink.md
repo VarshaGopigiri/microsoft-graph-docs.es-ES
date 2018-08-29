@@ -3,14 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Compartir un archivo con un vínculo
-ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
-ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
+ms.openlocfilehash: bbdf872216a5a9e266e04c95868e0179cf15e553
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "22223479"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266810"
 ---
-# <a name="create-a-sharing-link-for-a-driveitem"></a>Crear un vínculo para compartir para un DriveItem
+# <a name="create-a-sharing-link-for-a-driveitem"></a>Crear un vínculo para compartir para un objeto DriveItem
 
 Puede usar la acción **createLink** para compartir un [DriveItem](../resources/driveitem.md) mediante un vínculo para compartir.
 
@@ -40,15 +40,15 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### <a name="request-body"></a>Cuerpo de solicitud
+### <a name="request-body"></a>Cuerpo de la solicitud
 
 El cuerpo de la solicitud define las propiedades del vínculo para compartir que solicita su aplicación.
 La solicitud debe ser un objeto JSON con las siguientes propiedades.
 
 |   Nombre    |  Tipo  |                                 Descripción                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | El tipo de vínculo para compartir que se creará. `view`, `edit` o `embed`.       |
-| **ámbito** | string | Opcional. El ámbito del vínculo que se creará. `anonymous` o `organization`. |
+| **type**  | cadena | El tipo de vínculo para compartir que se creará. `view`, `edit` o `embed`.       |
+| **ámbito** | cadena | Opcional. El ámbito del vínculo que se creará. o `organization`.`anonymous` |
 
 
 ### <a name="link-types"></a>Tipos de vínculos
@@ -66,10 +66,11 @@ Se pueden usar los siguientes valores para el parámetro de **tipo**.
 Se permiten los siguientes valores para el parámetro **scope**.
 Si el parámetro **scope** no se especifica, se crea el tipo de vínculo predeterminado para la organización.
 
-| Valor del tipo     | Descripción                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Crea un vínculo al objeto DriveItem accesible para cualquier usuario con el vínculo. Un administrador puede deshabilitar los vínculos anónimos.                 |
-| `organization` | Crea un vínculo al objeto DriveItem accesible para cualquier usuario de la organización del usuario. El ámbito del vínculo de la organización no está disponible para OneDrive Personal. |
+| Valor          | Descripción
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Cualquier usuario con el vínculo tiene acceso, sin necesidad de iniciar sesión. Esto puede incluir personas fuera de la organización. Un administrador puede deshabilitar la compatibilidad con vínculos anónimos.
+| `organization` | Cualquier usuario que ha iniciado sesión en su organización (cuenta empresarial) puede usar el vínculo para acceder. Sólo está disponible en OneDrive para Business y SharePoint.
+
 
 ## <a name="response"></a>Respuesta
 
@@ -86,11 +87,11 @@ El vínculo para compartir está configurado para que sea de solo lectura y lo p
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -130,7 +131,7 @@ Para crear un vínculo de empresa para compartir, utilice el parámetro de **ám
 
 ### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -173,7 +174,7 @@ Cuando se utiliza el tipo de vínculo `embed`, la webUrl que se devuelve se pued
 
 ### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink

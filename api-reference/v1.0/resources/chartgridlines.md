@@ -7,18 +7,18 @@ Representa las líneas de cuadrícula principales o secundarias del eje de un gr
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |Lee las propiedades y relaciones del objeto chartGridlines.|
-|[Update](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)    |Actualiza el objeto ChartGridlines. |
+|[Get ChartGridlines](../api/chartgridlines_get.md) | [WorkbookChartGridlines](chartgridlines.md) |Lee las propiedades y relaciones del objeto chartGridlines.|
+|[Actualizar](../api/chartgridlines_update.md) | [WorkbookChartGridlines](chartgridlines.md)    |Actualiza el objeto ChartGridlines. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|visible|boolean|Valor booleano que representa si las líneas de cuadrícula del eje están visibles o no.|
+|visible|booleano|Valor booleano que representa si las líneas de cuadrícula del eje están visibles o no.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|format|[ChartGridlinesFormat](chartgridlinesformat.md)|Representa el formato de las líneas de cuadrícula del gráfico. Solo lectura.|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Representa el formato de las líneas de cuadrícula del gráfico. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -26,10 +26,11 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 }-->
 
 ```json

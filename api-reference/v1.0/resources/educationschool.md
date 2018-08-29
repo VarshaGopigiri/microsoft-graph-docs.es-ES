@@ -7,7 +7,7 @@ Un recurso que representa una escuela y que se usa para administrar las clases, 
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get](../api/educationschool_get.md) | [educationSchool](educationschool.md) |Lea las propiedades y relaciones de un objeto **educationSchool**.|
+|[Obtener](../api/educationschool_get.md) | [educationSchool](educationschool.md) |Lea las propiedades y relaciones de un objeto **educationSchool**.|
 |[Agregar clase](../api/educationschool_post_classes.md) |[educationClass](educationclass.md)| Agregue un nuevo **educationClass** en el centro educativo publicando en la propiedad de navegación de clases.|
 |[Enumerar clases](../api/educationschool_list_classes.md) |Colección [educationClass](educationclass.md)| Obtenga la colección de objetos **educationClass**.|
 |[Quitar clase](../api/educationschool_delete_classes.md) |[educationClass](educationclass.md)| Quite un **educationClass** del centro educativo mediante la propiedad de navegación de clases.|
@@ -20,23 +20,22 @@ Un recurso que representa una escuela y que se usa para administrar las clases, 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String|GUID de este centro educativo.|
-|displayName| String| Nombre para mostrar del centro educativo.| 
-|description| String | Descripción del centro educativo.| 
-|status| string| Solo lectura. Los valores posibles son: `inactive`, `active`, `expired` y `deleteable`.|
-|externalSource| string| Solo lectura.  Los valores posibles son: `sis`, `manual` y `unknownFutureValue`.|
-|principalEmail| String| Dirección de correo electrónico del director.|
-|principalName| String | Nombre del director.|
-|externalPrincipalId| String | Identificador del director en el sistema de sincronización. |
-|highestGrade|String| Curso más alto que se imparte. |
-|lowestGrade|String| Curso más bajo que se imparte. |
-|schoolNumber|String| Número del centro educativo|
-|externalId|String| Identificador del centro educativo en el sistema de sincronización. |
-|phone|String| Número de teléfono del centro educativo. |
-|fax|String| Número de fax del centro educativo. |
+|id|Cadena|GUID de este centro educativo.|
+|displayName| Cadena| Nombre para mostrar del centro educativo.| 
+|description| Cadena | Descripción del centro educativo.| 
+|status| cadena| Solo lectura. Los valores posibles son: `inactive`, `active`, `expired` y `deleteable`.|
+|externalSource| educationExternalSource| Solo lectura.  Los valores posibles son: `sis`, `manual` y `unknownFutureValue`.|
+|principalEmail| Cadena| Dirección de correo electrónico del director.|
+|principalName| Cadena | Nombre del director.|
+|externalPrincipalId| Cadena | Identificador del director en el sistema de sincronización. |
+|highestGrade|Cadena| Curso más alto que se imparte. |
+|lowestGrade|Cadena| Curso más bajo que se imparte. |
+|schoolNumber|Cadena| Número del centro educativo|
+|externalId|Cadena| Identificador del centro educativo en el sistema de sincronización. |
+|phone|Cadena| Número de teléfono del centro educativo. |
+|fax|Cadena| Número de fax del centro educativo. |
 |address|[physicalAddress](physicaladdress.md)| Dirección del centro educativo.|
 |createdBy|[identitySet](identityset.md)|Entidad que ha creado el centro educativo.|
-
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
@@ -48,11 +47,10 @@ Un recurso que representa una escuela y que se usa para administrar las clases, 
 
 La siguiente es una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

@@ -2,11 +2,12 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-ms.openlocfilehash: 9de6923146b915207fc771721d7aeb6767e9f99e
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 92882910ecf86d19e1f0a8a5767d148f5aa95775
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264038"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso Hashes
 
@@ -36,9 +37,9 @@ Aquí tiene una representación JSON del recurso.
 
 | Propiedad         | Tipo   | Descripción                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | Hash SHA1 para el contenido del archivo (si está disponible). Solo lectura. |
-| **crc32Hash**    | String | El valor CRC32 del archivo (si está disponible). Solo lectura.            |
-| **quickXorHash** | String | Un hash de propietario del archivo que se puede usar para determinar si ha cambiado el contenido del archivo (si está disponible). Solo lectura. |
+| **sha1Hash**     | Cadena | Hash SHA1 para el contenido del archivo (si está disponible). Solo lectura. |
+| **crc32Hash**    | Cadena | El valor de CRC32 del archivo en little endian (si está disponible). Solo lectura.            |
+| **quickXorHash** | Cadena | Un hash de propietario del archivo que se puede usar para determinar si ha cambiado el contenido del archivo (si está disponible). Solo lectura. |
 
 **Nota:** En algunos casos, puede que no estén disponibles los valores hash. Si este es el caso, los valores hash de un elemento se actualizarán después de que se descargue el elemento.
 

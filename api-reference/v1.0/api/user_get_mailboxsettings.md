@@ -18,15 +18,13 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
-Para obtener toda la configuración de buzón de un usuario:
-<!-- { "blockType": "ignored" } -->
+Para obtener toda la configuración de buzón de un usuario: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Para obtener una configuración específica (por ejemplo, solo la configuración de las respuestas automáticas, la configuración regional, la zona horaria o el horario laboral):
-<!-- { "blockType": "ignored" } -->
+Para obtener una configuración específica (por ejemplo, solo la configuración de las respuestas automáticas, la configuración regional, la zona horaria o el horario laboral): <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -41,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -61,7 +59,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 - [workingHours](../resources/workinghours.md)
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request-1"></a>Solicitud 1
+##### <a name="request-1"></a>Solicitud 1
 En el primer ejemplo se obtiene toda la configuración del buzón del usuario que ha iniciado sesión, que incluye la configuración de la zona horaria, las respuestas automáticas, la configuración regional (idioma y país o región) y el horario laboral.
 <!-- {
   "blockType": "request",
@@ -70,7 +68,7 @@ En el primer ejemplo se obtiene toda la configuración del buzón del usuario qu
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
-##### <a name="response-1"></a>Respuesta 1
+##### <a name="response-1"></a>Respuesta 1
 La respuesta incluye toda la configuración del buzón. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
@@ -111,8 +109,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.0000000",
-        "endTime":"17:00:00.0000000",
+        "startTime":"08:00:00.000",
+        "endTime":"17:00:00.000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }
@@ -142,7 +140,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
     "status": "alwaysEnabled",
     "externalAudience": "None",
     "scheduledStartDateTime": {
@@ -159,7 +157,7 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-3"></a>Solicitud 3
+##### <a name="request-3"></a>Solicitud 3
 En el tercer ejemplo se obtiene específicamente la configuración del horario laboral del buzón del usuario que ha iniciado sesión.
 <!-- {
   "blockType": "ignored",
@@ -168,7 +166,7 @@ En el tercer ejemplo se obtiene específicamente la configuración del horario l
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
-##### <a name="response-3"></a>Respuesta 3
+##### <a name="response-3"></a>Respuesta 3
 La respuesta solo incluye la configuración del horario laboral. Observe que la jornada laboral del usuario se encuentra en una [zona horaria personalizada](../resources/customtimezone.md). Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
 <!-- {
   "blockType": "ignored",

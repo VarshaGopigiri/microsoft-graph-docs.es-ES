@@ -27,7 +27,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|criterios|FilterCriteria|Criterios que se aplicarán.|
+|criteria|WorkbookFilterCriteria|Criterios que se aplicarán.|
 
 ## <a name="response"></a>Respuesta
 
@@ -69,8 +69,7 @@ Content-length: 321
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

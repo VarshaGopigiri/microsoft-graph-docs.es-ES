@@ -32,12 +32,11 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 
 >**Nota:** La sintaxis anterior muestra algunas formas comunes para identificar una instancia del recurso, con el fin de eliminar una extensión de él. Todas las otras formas de sintaxis que le permiten identificar estas instancias de recursos admiten la eliminación de extensiones abiertas de ellas de una manera similar.
 
-## <a name="parameters"></a>Parámetros
-|**Parámetro**|**Tipo**|**Descripción**|
+## <a name="path-parameters"></a>Parámetros de ruta de acceso
+|Parámetro|Tipo|Descripción|
 |:-----|:-----|:-----|
-|_Parámetros de dirección URL_|
-|id|string|Un identificador único para una instancia en la colección correspondiente. Necesario.|
-|extensionId|string|Puede ser un nombre de extensión, que es un identificador de texto único de la extensión, o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad `id` al crear la extensión. Necesario.|
+|id|cadena|Un identificador único para una instancia en la colección correspondiente. Necesario.|
+|extensionId|cadena|Puede ser un nombre de extensión, que es un identificador de texto único de la extensión, o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad `id` al crear la extensión. Necesario.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
@@ -56,17 +55,18 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 El primer ejemplo hace referencia a una extensión por su nombre y elimina la extensión en el mensaje especificado.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "delete_opentypeextension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 El segundo ejemplo elimina una extensión en el evento de grupo especificado.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVlN17IsAAA=')/extensions('Com.Contoso.Referral')
+DELETE https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
 
  

@@ -6,8 +6,8 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|movieRating|cadena|Calificación de películas seleccionada para Japón. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15` y `agesAbove18`.|
-|tvRating|cadena|Calificación de TV seleccionada para Japón. Los valores posibles son: `allAllowed`, `allBlocked` y `explicitAllowed`.|
+|movieRating|[ratingJapanMoviesType](../resources/intune_deviceconfig_ratingjapanmoviestype.md)|Clasificación de películas seleccionada para Japón. Los valores posibles son `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15` y `agesAbove18`.|
+|tvRating|[ratingJapanTelevisionType](../resources/intune_deviceconfig_ratingjapantelevisiontype.md)|Clasificación de TV seleccionada para Japón. Los valores posibles son: `allAllowed`, `allBlocked` y `explicitAllowed`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -15,7 +15,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingJapan"
 }
 -->

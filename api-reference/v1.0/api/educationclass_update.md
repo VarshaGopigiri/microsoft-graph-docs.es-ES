@@ -22,16 +22,15 @@ PATCH /education/classes/{id}
 | Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|description|String| Descripción de la clase|
-|displayName|String| Nombre de la clase.|
-|mailNickname|String| Alias de correo electrónico para enviar correo electrónico a todos los usuarios si esa característica está habilitada. |
-<!-- Please verify the revised description here. -->
-|classCode|String| Código de clase que usa el centro educativo.| |externalId|String| Identificador de la clase en el sistema de sincronización. | |externalName|String|Nombre de la clase en el sistema de sincronización.| |externalSource|string| Forma en que se ha creado la clase. Los valores posibles son: `sis`, `manual` y `enum_sentinel`.|
+|description|Cadena| Descripción de la clase|
+|displayName|Cadena| Nombre de la clase.|
+|mailNickname|Cadena| Alias de correo electrónico para enviar correo electrónico a todos los usuarios si esa característica está habilitada. |
+<!-- Please verify the revised description here. --> |classCode|String| Código de clase que usa el centro educativo.| |externalId|String| Identificador de la clase en el sistema de sincronización. | |externalName|String|Nombre de la clase en el sistema de sincronización.| |externalSource|string| Forma en que se ha creado la clase. Los valores posibles son: `sis`, `manual` y `enum_sentinel`.|
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [educationClass](../resources/educationclass.md) actualizado en el cuerpo de la respuesta.
@@ -43,7 +42,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_educationclass"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/11014
+PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
 Content-length: 224
 

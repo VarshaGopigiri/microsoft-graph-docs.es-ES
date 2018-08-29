@@ -25,19 +25,21 @@ POST /groups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 La tabla siguiente muestra las propiedades del recurso [grupo](../resources/group.md) que debe especificar al mínimo al crear un grupo. 
 
 | Propiedad | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| displayName | string | El nombre para mostrar en la libreta de direcciones del grupo. |
-| mailEnabled | boolean | Establézcalo en **true** para grupos habilitados para correo. Establézcalo en **true** si está creando un grupo de Office 365. Establézcalo en **false** si está creando un grupo dinámico o de seguridad.|
-| mailNickname | string | El alias de correo del grupo. |
-| securityEnabled | boolean | Establézcalo en **true** para grupos con seguridad habilitada. Establézcalo en **true** si está creando un grupo dinámico o de seguridad. Establézcalo en **false** si está creando un grupo de Office 365. |
+| displayName | cadena | El nombre para mostrar en la libreta de direcciones del grupo. |
+| mailEnabled | booleano | Establézcalo en **true** para grupos habilitados para correo. Establézcalo en **true** si está creando un grupo de Office 365. Establézcalo en **false** si está creando un grupo dinámico o de seguridad.|
+| mailNickname | cadena | El alias de correo del grupo. |
+| securityEnabled | booleano | Establézcalo en **true** para grupos con seguridad habilitada. Establézcalo en **true** si está creando un grupo dinámico o de seguridad. Establézcalo en **false** si está creando un grupo de Office 365. |
 
-Especificar la propiedad **groupTypes** si está creando un grupo de Office 365 o dinámico, como se indica a continuación.
+Especifique la propiedad **groupTypes** si está creando un grupo de Office 365 o dinámico, como se indica a continuación.
+
+### <a name="grouptypes-options"></a>Opciones de groupTypes
 
 | Tipo de grupo | Propiedad **groupTypes** |
 |:--------------|:------------------------|
@@ -76,7 +78,7 @@ Content-length: 244
 
 #### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.
->**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

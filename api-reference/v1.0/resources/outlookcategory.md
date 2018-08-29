@@ -11,11 +11,10 @@ A cada categoría se le asignan atributos con dos propiedades: **displayName** y
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|displayName|String|Nombre único que identifica una categoría en el buzón del usuario. Después de crear una categoría, no puede cambiarse el nombre. Solo lectura.|
-|color|String|Constante de color preestablecida que caracteriza a una categoría y a la que se asigna uno de los 25 colores predefinidos. Vea la nota siguiente. |
+|displayName|Cadena|Nombre único que identifica una categoría en el buzón del usuario. Después de crear una categoría, no puede cambiarse el nombre. Solo lectura.|
+|color|categoryColor|Constante de color preestablecida que caracteriza a una categoría y a la que se asigna uno de los 25 colores predefinidos. Vea la nota siguiente. |
 
 > **Nota** Los posibles valores de **color** son constantes preestablecidas tales como `None`, `preset0` y `preset1`. A cada constante preestablecida se le asigna asimismo un color; el color real depende del cliente de Outlook en que se muestran las categorías. La siguiente tabla muestra los colores asignados a cada constante preestablecida en Outlook (cliente de escritorio). 
-
 
 | Constante preestablecida  | Color al que se asigna en Outlook |
 |:---------------|:--------|
@@ -54,6 +53,7 @@ Esta es una representación JSON del recurso.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookCategory"
 }-->
 
@@ -82,6 +82,10 @@ Esta es una representación JSON del recurso.
   "description": "outlookCategory resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/resources/outlookcategory.md:
+      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
+  ],
   "tocPath": ""
 }-->
  

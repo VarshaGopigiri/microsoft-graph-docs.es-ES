@@ -7,20 +7,20 @@ Solo se admite la operación de lectura con las SKU suscritas; no se admiten las
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Lea las propiedades y relaciones del objeto subscribedSku.|
-|[Enumerar subscribedsku](../api/subscribedsku_list.md) | Colección [subscribedSku](subscribedsku.md) |Recupere la lista de suscripciones comerciales que ha adquirido una organización.|
+|[Obtener subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Lee las propiedades y relaciones del objeto subscribedSku.|
+|[Listar subscribedSku](../api/subscribedsku_list.md) | Colección [subscribedSku](subscribedsku.md) |Recupera la lista de suscripciones comerciales que ha adquirido una organización.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|appliesTo|String| Por ejemplo, "usuario" o "empresa". |
-|capabilityStatus|String| Por ejemplo, "habilitado". |
+|appliesTo|Cadena| Por ejemplo, "usuario" o "empresa". |
+|capabilityStatus|Cadena| Por ejemplo, "habilitado". |
 |consumedUnits|Int32| El número de licencias asignadas. |
-|id|String| El identificador único del recurso del objeto sku suscrito. Clave, no admite valores NULL. |
+|id|Cadena| El identificador único del recurso del objeto sku suscrito. Clave, no admite valores NULL. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Información sobre el número y el estado de las licencias prepagadas. |
 |servicePlans|Colección [servicePlanInfo](serviceplaninfo.md)| Información acerca de los planes de servicio que están disponibles con el SKU. No admite valores NULL |
 |skuId|Guid| El identificador único (GUID) para el SKU de servicio. |
-|skuPartNumber|String| La parte numérica del SKU, por ejemplo: "AAD_PREMIUM" o "RMSBASIC". |
+|skuPartNumber|Cadena| La parte numérica del SKU, por ejemplo: "AAD_PREMIUM" o "RMSBASIC". |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -29,13 +29,25 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

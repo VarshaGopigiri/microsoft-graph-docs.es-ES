@@ -24,7 +24,7 @@ POST /deviceManagement/remoteAssistancePartners
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único del partner.|
-|displayName|String|Nombre para mostrar del partner.|
-|onboardingUrl|String|Dirección URL del portal de integración del partner, donde un administrador puede configurar el servicio de Asistencia remota.|
-|onboardingStatus|String|Por determinar Los valores posibles son: `notOnboarded`, `onboarding` y `onboarded`.|
+|id|Cadena|Identificador único del partner.|
+|displayName|Cadena|Nombre para mostrar del partner.|
+|onboardingUrl|Cadena|Dirección URL del portal de integración del partner, donde un administrador puede configurar el servicio de Asistencia remota.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Por determinar. Los valores posibles son: `notOnboarded`, `onboarding` y `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|
 
 

@@ -2,17 +2,17 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: Carpeta
-ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Folder
+ms.openlocfilehash: c0ab787f1c1f04ff77eeb69979dc6a825d4f3c33
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266565"
 ---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 
-El recurso **Folder** agrupa en una sola estructura los datos relacionados con carpetas de un elemento. 
-Los objetos [**DriveItems**](driveitem.md) con una faceta **folder** que no sea NULL son contenedores de otros objetos DriveItems.
+El recurso **Folder** agrupa en una sola estructura los datos relacionados con carpetas de un elemento. [**DriveItems**](driveitem.md) con una faceta **folder** no null son contenedores para otros DriveItems.
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -37,7 +37,7 @@ Aquí tiene una representación JSON del recurso.
 
 | Propiedad       | Tipo           | Descripción
 |:---------------|:---------------|:-------------------------------------------
-| **childCount** | Int64          | Número de elementos secundarios que se incluyen inmediatamente dentro de este contenedor.
+| **childCount** | Int32          | Número de elementos secundarios que se incluyen inmediatamente dentro de este contenedor.
 | **view**       | [folderView][] | Una colección de propiedades que definen la vista recomendada de la carpeta.
 
 ## <a name="remarks"></a>Comentarios 

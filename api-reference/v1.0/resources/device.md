@@ -24,22 +24,22 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** si la cuenta está habilitada; en caso contrario, **false**. Necesario.|
+|accountEnabled|Booleano| **true** si la cuenta está habilitada; en caso contrario, **false**. Necesario.|
 |alternativeSecurityIds|Colección alternativeSecurityId| Solo para uso interno. No admite valores NULL. |
 |approximateLastSignInDateTime|DateTimeOffset| El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'` Solo lectura. |
-|deviceId|Guid| Identificador único establecido por el servicio de registro de dispositivos de Azure en el momento del registro. |
-|deviceMetadata|String| Solo para uso interno. Establecido en NULL. |
+|deviceId|cadena| Identificador único establecido por el servicio de registro de dispositivos de Azure en el momento del registro. |
+|deviceMetadata|Cadena| Solo para uso interno. Establecido en NULL. |
 |deviceVersion|Int32| Solo para uso interno. |
-|displayName|String|El nombre para mostrar del dispositivo. Necesario. |
-|id|String|El identificador único del dispositivo. Hereda de [directoryObject](directoryobject.md). Clave, no admite valores NULL. Solo lectura.|
-|isCompliant|Boolean|**true** si el dispositivo cumple con las directivas de administración de dispositivos móviles (MDM); en caso contrario, **false**. Solo lectura. |
-|isManaged|Boolean|**true** si una aplicación de administración de dispositivos móviles (MDM) administra el dispositivo; en caso contrario, **false**.|
+|displayName|Cadena|El nombre para mostrar del dispositivo. Necesario. |
+|id|Cadena|El identificador único del dispositivo. Hereda de [directoryObject](directoryobject.md). Clave, no admite valores NULL. Solo lectura.|
+|isCompliant|Booleano|**true** si el dispositivo cumple con las directivas de administración de dispositivos móviles (MDM); en caso contrario, **false**. Solo lectura. Esto solo lo puede actualizar Intune para cualquier tipo de sistema operativo del dispositivo o por una [aplicación MDM aprobada](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos de sistema operativo Windows.|
+|isManaged|Booleano|**true** si una aplicación de administración de dispositivos móviles (MDM) administra el dispositivo; en caso contrario, **false**. Esto solo lo puede actualizar Intune para cualquier tipo de sistema operativo del dispositivo o por una [aplicación MDM aprobada](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos de sistema operativo Windows. |
 |onPremisesLastSyncDateTime|DateTimeOffset|La última hora en que se ha sincronizado el objeto con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'` Solo lectura.|
 |onPremisesSyncEnabled|Booleano|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. |
-|operatingSystem|String| El tipo de sistema operativo del dispositivo. Necesario. |
-|operatingSystemVersion|String|La versión del sistema operativo del dispositivo. Necesario. |
+|operatingSystem|Cadena| El tipo de sistema operativo del dispositivo. Necesario. |
+|operatingSystemVersion|Cadena|La versión del sistema operativo del dispositivo. Necesario. |
 |physicalIds|Colección string| Solo para uso interno. No admite valores NULL. |
-|trustType|String| Tipo de confianza del dispositivo que se ha unido. Solo lectura. Valores posibles: <br />**Área de trabajo**: indica *dispositivos personales BYOD*.<br />**AzureAd**: dispositivos unidos solo a la nube.<br />**ServerAd**: dispositivos unidos al dominio local que se han unido a Azure AD. Para más información, vea [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/es-ES/azure/active-directory/device-management-introduction). |
+|trustType|Cadena| Tipo de confianza del dispositivo que se ha unido. Solo lectura. Valores posibles: <br />**Área de trabajo**: indica *dispositivos personales BYOD*.<br />**AzureAd**: dispositivos unidos solo a la nube.<br />**ServerAd**: dispositivos unidos al dominio local que se han unido a Azure AD. Para más información, vea [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction). |
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
@@ -52,20 +52,23 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.device"
 }-->
 
 ```json
 {
   "accountEnabled": true,
+  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
@@ -81,14 +84,14 @@ Aquí tiene una representación JSON del recurso
   "physicalIds": ["string"],
   "trustType": "string"
 }
-
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
 - [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -7,19 +7,17 @@ Contiene las propiedades del elemento de configuración de la configuración de 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |appConfigKey|Cadena|Clave de configuración de la aplicación.|
-|appConfigKeyType|Cadena|Tipo de clave de configuración de la aplicación. Los valores posibles son: `stringType`, `integerType`, `realType`, `booleanType` y `tokenType`.|
+|appConfigKeyType|mdmAppConfigKeyType|Tipo de clave de configuración de la aplicación. Los valores posibles son: `stringType`, `integerType`, `realType`, `booleanType` y`tokenType`.|
 |appConfigKeyValue|Cadena|Valor de clave de configuración de la aplicación.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",

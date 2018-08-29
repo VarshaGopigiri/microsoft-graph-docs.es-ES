@@ -24,6 +24,6 @@ Aquí tiene una representación JSON del recurso
 
 | Propiedad | Tipo  | Descripción                               |
 |:---------|:------|:------------------------------------------|
-| id  | string | Identificador de la sesión del libro. |
-| persistChanges | string |  `true` para la sesión persistente. `false` para la sesión no persistente (modo de visualización) |
+| id  | cadena | Identificador de la sesión del libro. |
+| persistChanges | booleano |  `true` para la sesión persistente. `false` para la sesión no persistente (modo de visualización) |
 

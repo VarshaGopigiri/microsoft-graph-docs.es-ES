@@ -22,17 +22,16 @@ Representa una clase en un centro educativo. El recurso **educationClass** corre
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id| String| Identificador único de la clase|
-|description|String| Descripción de la clase|
-|displayName|String| Nombre de la clase.|
-|mailNickname|String| Nombre de correo para enviar correo electrónico a todos los miembros, si esta opción está habilitada. |
+|id| Cadena| Identificador único de la clase|
+|description|Cadena| Descripción de la clase|
+|displayName|Cadena| Nombre de la clase.|
+|mailNickname|Cadena| Nombre de correo para enviar correo electrónico a todos los miembros, si esta opción está habilitada. |
 |createdBy|[identitySet](identityset.md)| Entidad que ha creado la clase. |
-|classCode|String| Código de clase que usa el centro educativo para identificar la clase.|
-|externalId|String| Identificador de la clase en el sistema de sincronización. |
-|externalName|String|Nombre de la clase en el sistema de sincronización.|
-|externalSource|string| Forma en que se ha creado la clase. Los valores posibles son: `sis`, `manual` y `unknownFutureValue`.|
+|classCode|Cadena| Código de clase que usa el centro educativo para identificar la clase.|
+|externalId|Cadena| Identificador de la clase en el sistema de sincronización. |
+|externalName|Cadena|Nombre de la clase en el sistema de sincronización.|
+|externalSource|educationExternalSource| Forma en que se ha creado la clase. Los valores posibles son: `sis`, `manual` y `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Período de la clase.|
-
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
@@ -40,16 +39,17 @@ Representa una clase en un centro educativo. El recurso **educationClass** corre
 |members|Colección [educationUser](../resources/educationuser.md)| Todos los usuarios de la clase. Admite valores NULL.|
 |schools|Colección [educationSchool](../resources/educationschool.md)| Todos los centros educativos a los que está asociada la clase. Admite valores NULL.|
 |teachers|Colección [educationUser](../resources/educationuser.md)|  Todos los profesores de la clase. Admite valores NULL.|
+|group|[group](../resources/group.md)| El grupo de directorio correspondiente a esta clase.|
 
 ## <a name="json-representation"></a>Representación JSON
 
 La siguiente es una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 
@@ -64,7 +64,7 @@ La siguiente es una representación JSON del recurso
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

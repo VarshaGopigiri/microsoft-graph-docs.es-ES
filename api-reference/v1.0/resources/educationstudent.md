@@ -5,12 +5,12 @@ Información adicional que se agrega a un [educationUser](educationuser.md) que 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|birthDate|Date| Fecha de nacimiento del alumno.|
-|externalId|String| Identificador del alumno en el sistema de origen.|
-|gender|`educationGender enumeration`| Los valores posibles son: `female`, `male`, `other` y `unkownFutureValue`.|
-|grade|String|Curso actual del alumno.|
-|graduationYear|String| Año de graduación del alumno en el centro educativo.|
-|studentNumber|String| Número de alumno.|
+|birthDate|Fecha| Fecha de nacimiento del alumno.|
+|externalId|Cadena| Identificador del alumno en el sistema de origen.|
+|gender|educationGender| Los valores posibles son: `female`, `male`, `other` y `unknownFutureValue`.|
+|grade|Cadena|Curso actual del alumno.|
+|graduationYear|Cadena| Año de graduación del alumno en el centro educativo.|
+|studentNumber|Cadena| Número de alumno.|
 
 ## <a name="json-representation"></a>Representación JSON
 

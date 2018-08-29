@@ -8,14 +8,14 @@ Representa una plantilla de rol de directorio. Una plantilla de rol de directori
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Lea las propiedades y las relaciones del objeto directoryRoleTemplate.|
-|[Enumerar directoryRoleTemplate](../api/directoryroletemplate_list.md) | Colección [directoryRoleTemplate](directoryroletemplate.md) |Recupere una lista de objetos directoryRoleTemplate.|
+|[Listar directoryRoleTemplate](../api/directoryroletemplate_list.md) | Colección [directoryRoleTemplate](directoryroletemplate.md) |Recupere una lista de objetos directoryRoleTemplate.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|description|String|La descripción del rol de directorio que se establecerá. Solo lectura.|
-|displayName|String|El nombre para mostrar del rol de directorio que se establecerá. Solo lectura. |
-|id|String|El identificador único de la plantilla. Hereda de [directoryObject](directoryobject.md). Especifique el **id** de la plantilla de rol de directorio de la propiedad **roleTemplateId** en la solicitud POST para activar un [directoryRole](directoryrole.md) en un inquilino. Clave, no admite valores NULL. Solo lectura.|
+|description|Cadena|La descripción del rol de directorio que se establecerá. Solo lectura.|
+|displayName|Cadena|El nombre para mostrar del rol de directorio que se establecerá. Solo lectura. |
+|id|Cadena|El identificador único de la plantilla. Hereda de [directoryObject](directoryobject.md). Especifique el **id** de la plantilla de rol de directorio de la propiedad **roleTemplateId** en la solicitud POST para activar un [directoryRole](directoryrole.md) en un inquilino. Clave, no admite valores NULL. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -26,13 +26,20 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

@@ -16,12 +16,12 @@ Según cómo se cree el evento, se espera que Outlook establezca la propiedad **
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |Dirección postal de la ubicación. |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Coordenadas geográficas y elevación de la ubicación. |
-| displayName  | String | Nombre asociado a la ubicación.                       |
-| locationEmailAddress | String | Dirección de correo electrónico opcional de la ubicación              |
-| locationUri | String | URI opcional que representa la ubicación. |
-| locationType | String | Tipo de ubicación. Los valores posibles son: `conferenceRoom`, `homeAddress`, `businessAddress`, `geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `default`, `localBusiness` y `postalAddress`. Solo lectura.|
-| uniqueId | String | Solo para uso interno.|
-| uniqueIdType | String | Solo para uso interno. |
+| displayName  | Cadena | Nombre asociado a la ubicación.                       |
+| locationEmailAddress | Cadena | Dirección de correo electrónico opcional de la ubicación              |
+| locationUri | Cadena | URI opcional que representa la ubicación. |
+| locationType | locationType | Tipo de ubicación. Los valores posibles son: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness` y `postalAddress`. Solo lectura.|
+| uniqueId | Cadena | Solo para uso interno.|
+| uniqueIdType | locationUniqueIdType | Solo para uso interno. |
 
 ## <a name="json-representation"></a>Representación JSON
 

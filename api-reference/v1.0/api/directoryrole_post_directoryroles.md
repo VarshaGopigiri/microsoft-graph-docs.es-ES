@@ -20,17 +20,17 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type  | application/json  |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
+| Content-Type  | cadena  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryRole](../resources/directoryrole.md).
 
 En la tabla siguiente, se muestran las propiedades necesarias al activar un rol de directorio.
 
-|Parámetro obligatorio | Tipo | Descripción|
+|Parámetro | Tipo | Descripción|
 |:---------|:---------|:---------|
-|roleTemplateId | string | El identificador de la [directoryRoleTemplate](../resources/directoryroletemplate.md) en que se basa el rol. Es la única propiedad que se puede especificar en la solicitud.|
+|roleTemplateId | cadena | Obligatorio. El identificador del [directoryRoleTemplate](../resources/directoryroletemplate.md) en el que se basa el rol. Esta es la única propiedad que se puede especificar en la solicitud.|
 
 ## <a name="response"></a>Respuesta
 

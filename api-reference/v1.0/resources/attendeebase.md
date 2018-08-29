@@ -10,6 +10,7 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -24,9 +25,9 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|type|String| El tipo de asistente. Los valores posibles son: `required`, `optional`, `resource`. Actualmente, si el asistente es una persona, [findMeetingTimes](../api/user_findmeetingtimes.md) siempre la considera del tipo `Required`.|
+|type|attendeeType| El tipo de asistente. Los valores posibles son: `required`, `optional` y `resource`. Nota: si el asistente es una persona, [findMeetingTimes](../api/user_findmeetingtimes.md) siempre considera que la persona es del tipo `Required`.|
 |emailAddress|[emailAddress](emailAddress.md)|Incluye el nombre y la dirección de SMTP del asistente.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
