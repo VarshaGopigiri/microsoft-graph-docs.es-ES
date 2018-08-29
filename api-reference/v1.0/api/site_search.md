@@ -3,37 +3,38 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Buscar sitios de SharePoint por palabra clave
-ms.openlocfilehash: 53c9d735ad791bd42fb8b0e1c9b9f412ef469dd8
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 0f9c562da7509b213e78da85d52a091d9cec421c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265361"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="2cba0-102">Buscar sitios</span><span class="sxs-lookup"><span data-stu-id="2cba0-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="88070-102">Buscar sitios</span><span class="sxs-lookup"><span data-stu-id="88070-102">Search for sites</span></span>
 
-<span data-ttu-id="2cba0-103">Busque en el inquilino de SharePoint [sitios][] que coincidan con las palabras clave proporcionadas.</span><span class="sxs-lookup"><span data-stu-id="2cba0-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="88070-103">Busque en el inquilino de SharePoint [sitios][] que coincidan con las palabras clave proporcionadas.</span><span class="sxs-lookup"><span data-stu-id="88070-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
 
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="2cba0-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="2cba0-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="88070-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="88070-105">Permissions</span></span>
 
-<span data-ttu-id="2cba0-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="2cba0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="88070-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="88070-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="2cba0-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="2cba0-108">Permission type</span></span>                        | <span data-ttu-id="2cba0-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="2cba0-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="88070-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="88070-108">Permission type</span></span>                        | <span data-ttu-id="88070-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="88070-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="2cba0-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="2cba0-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="2cba0-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2cba0-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="2cba0-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2cba0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2cba0-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="2cba0-113">Not supported.</span></span>
-|<span data-ttu-id="2cba0-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="2cba0-114">Application</span></span>                            | <span data-ttu-id="2cba0-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2cba0-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="88070-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="88070-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="88070-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88070-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="88070-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="88070-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88070-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="88070-113">Not supported.</span></span>
+|<span data-ttu-id="88070-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="88070-114">Application</span></span>                            | <span data-ttu-id="88070-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88070-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2cba0-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="2cba0-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88070-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="88070-116">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET /sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="2cba0-117">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2cba0-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="88070-117">Respuesta</span><span class="sxs-lookup"><span data-stu-id="88070-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 

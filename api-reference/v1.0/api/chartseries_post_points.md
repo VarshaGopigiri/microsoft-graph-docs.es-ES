@@ -1,56 +1,56 @@
-# <a name="create-chartpoints"></a><span data-ttu-id="c7ff8-101">Create ChartPoints</span><span class="sxs-lookup"><span data-stu-id="c7ff8-101">Create ChartPoints</span></span>
+# <a name="create-chartpoints"></a><span data-ttu-id="fd9b0-101">Create ChartPoints</span><span class="sxs-lookup"><span data-stu-id="fd9b0-101">Create ChartPoints</span></span>
 
-<span data-ttu-id="c7ff8-102">Use esta API para crear un objeto ChartPoints.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-102">Use this API to create a new ChartPoints.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c7ff8-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="c7ff8-103">Permissions</span></span>
-<span data-ttu-id="c7ff8-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c7ff8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="fd9b0-102">Use esta API para crear un objeto ChartPoints.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-102">Use this API to create a new ChartPoints.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fd9b0-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="fd9b0-103">Permissions</span></span>
+<span data-ttu-id="fd9b0-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="fd9b0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="c7ff8-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="c7ff8-106">Permission type</span></span>      | <span data-ttu-id="c7ff8-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="c7ff8-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fd9b0-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="fd9b0-106">Permission type</span></span>      | <span data-ttu-id="fd9b0-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="fd9b0-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c7ff8-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="c7ff8-108">Delegated (work or school account)</span></span> | <span data-ttu-id="c7ff8-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c7ff8-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c7ff8-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c7ff8-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7ff8-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-111">Not supported.</span></span>    |
-|<span data-ttu-id="c7ff8-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="c7ff8-112">Application</span></span> | <span data-ttu-id="c7ff8-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-113">Not supported.</span></span> |
+|<span data-ttu-id="fd9b0-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="fd9b0-108">Delegated (work or school account)</span></span> | <span data-ttu-id="fd9b0-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd9b0-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="fd9b0-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fd9b0-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd9b0-111">No admitida.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-111">Not supported.</span></span>    |
+|<span data-ttu-id="fd9b0-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="fd9b0-112">Application</span></span> | <span data-ttu-id="fd9b0-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c7ff8-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="c7ff8-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fd9b0-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="fd9b0-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c7ff8-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="c7ff8-115">Request headers</span></span>
-| <span data-ttu-id="c7ff8-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="c7ff8-116">Name</span></span>       | <span data-ttu-id="c7ff8-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="c7ff8-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fd9b0-115">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="fd9b0-115">Request headers</span></span>
+| <span data-ttu-id="fd9b0-116">Nombre</span><span class="sxs-lookup"><span data-stu-id="fd9b0-116">Name</span></span>       | <span data-ttu-id="fd9b0-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="fd9b0-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c7ff8-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="c7ff8-118">Authorization</span></span>  | <span data-ttu-id="c7ff8-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c7ff8-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c7ff8-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="c7ff8-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="fd9b0-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="fd9b0-118">Authorization</span></span>  | <span data-ttu-id="fd9b0-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fd9b0-121">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="fd9b0-121">Workbook-Session-Id</span></span>  | <span data-ttu-id="fd9b0-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c7ff8-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="c7ff8-124">Request body</span></span>
-<span data-ttu-id="c7ff8-125">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ChartPoints](../resources/chartpoint.md).</span><span class="sxs-lookup"><span data-stu-id="c7ff8-125">In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fd9b0-124">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="fd9b0-124">Request body</span></span>
+<span data-ttu-id="fd9b0-125">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ChartPoints](../resources/chartpoint.md).</span><span class="sxs-lookup"><span data-stu-id="fd9b0-125">In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c7ff8-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c7ff8-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fd9b0-126">Respuesta</span><span class="sxs-lookup"><span data-stu-id="fd9b0-126">Response</span></span>
 
-<span data-ttu-id="c7ff8-127">Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [ChartPoints](../resources/chartpoint.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-127">If successful, this method returns `201 Created` response code and [ChartPoints](../resources/chartpoint.md) object in the response body.</span></span>
+<span data-ttu-id="fd9b0-127">Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [ChartPoints](../resources/chartpoint.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-127">If successful, this method returns `201 Created` response code and [ChartPoints](../resources/chartpoint.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c7ff8-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c7ff8-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c7ff8-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c7ff8-129">Request</span></span>
-<span data-ttu-id="c7ff8-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fd9b0-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="fd9b0-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fd9b0-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="fd9b0-129">Request</span></span>
+<span data-ttu-id="fd9b0-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chartpoints_from_chartseries"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 Content-type: application/json
 Content-length: 3
 
 {
 }
 ```
-<span data-ttu-id="c7ff8-131">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ChartPoints](../resources/chartpoint.md).</span><span class="sxs-lookup"><span data-stu-id="c7ff8-131">In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="c7ff8-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c7ff8-132">Response</span></span>
-<span data-ttu-id="c7ff8-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="c7ff8-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="fd9b0-131">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ChartPoints](../resources/chartpoint.md).</span><span class="sxs-lookup"><span data-stu-id="fd9b0-131">In the request body, supply a JSON representation of [ChartPoints](../resources/chartpoint.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="fd9b0-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="fd9b0-132">Response</span></span>
+<span data-ttu-id="fd9b0-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="fd9b0-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartPoint"
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 } -->
 ```http
 HTTP/1.1 201 Created

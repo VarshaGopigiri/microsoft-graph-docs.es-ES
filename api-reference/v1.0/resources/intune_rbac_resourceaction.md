@@ -1,24 +1,22 @@
-# <a name="resourceaction-resource-type"></a><span data-ttu-id="7446f-101">Tipo de recurso resourceAction</span><span class="sxs-lookup"><span data-stu-id="7446f-101">resourceAction resource type</span></span>
+# <a name="resourceaction-resource-type"></a><span data-ttu-id="bb654-101">Tipo de recurso resourceAction</span><span class="sxs-lookup"><span data-stu-id="bb654-101">resourceAction resource type</span></span>
 
-> <span data-ttu-id="7446f-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="7446f-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bb654-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="bb654-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="7446f-103">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="7446f-103">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="7446f-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="7446f-104">Properties</span></span>
-|<span data-ttu-id="7446f-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="7446f-105">Property</span></span>|<span data-ttu-id="7446f-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="7446f-106">Type</span></span>|<span data-ttu-id="7446f-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="7446f-107">Description</span></span>|
+<span data-ttu-id="bb654-103">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="bb654-103">Not yet documented</span></span>
+## <a name="properties"></a><span data-ttu-id="bb654-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="bb654-104">Properties</span></span>
+|<span data-ttu-id="bb654-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="bb654-105">Property</span></span>|<span data-ttu-id="bb654-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="bb654-106">Type</span></span>|<span data-ttu-id="bb654-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="bb654-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7446f-108">allowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="7446f-108">allowedResourceActions</span></span>|<span data-ttu-id="7446f-109">Colección de cadenas</span><span class="sxs-lookup"><span data-stu-id="7446f-109">String collection</span></span>|<span data-ttu-id="7446f-110">Acciones permitidas</span><span class="sxs-lookup"><span data-stu-id="7446f-110">Allowed Actions</span></span>|
-|<span data-ttu-id="7446f-111">notAllowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="7446f-111">notAllowedResourceActions</span></span>|<span data-ttu-id="7446f-112">Colección de cadenas</span><span class="sxs-lookup"><span data-stu-id="7446f-112">String collection</span></span>|<span data-ttu-id="7446f-113">Acciones no permitidas</span><span class="sxs-lookup"><span data-stu-id="7446f-113">Not Allowed Actions</span></span>|
+|<span data-ttu-id="bb654-108">allowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="bb654-108">allowedResourceActions</span></span>|<span data-ttu-id="bb654-109">Colección de cadenas</span><span class="sxs-lookup"><span data-stu-id="bb654-109">String collection</span></span>|<span data-ttu-id="bb654-110">Acciones permitidas</span><span class="sxs-lookup"><span data-stu-id="bb654-110">Allowed Actions</span></span>|
+|<span data-ttu-id="bb654-111">notAllowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="bb654-111">notAllowedResourceActions</span></span>|<span data-ttu-id="bb654-112">Colección de cadenas</span><span class="sxs-lookup"><span data-stu-id="bb654-112">String collection</span></span>|<span data-ttu-id="bb654-113">Acciones no permitidas</span><span class="sxs-lookup"><span data-stu-id="bb654-113">Not Allowed Actions</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="7446f-114">Relaciones</span><span class="sxs-lookup"><span data-stu-id="7446f-114">Relationships</span></span>
-<span data-ttu-id="7446f-115">Ninguna</span><span class="sxs-lookup"><span data-stu-id="7446f-115">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="7446f-116">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="7446f-116">JSON Representation</span></span>
-<span data-ttu-id="7446f-117">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="7446f-117">Here is a JSON representation of the resource.</span></span>
-<!-- {
+## <a name="relationships"></a><span data-ttu-id="bb654-114">Relaciones</span><span class="sxs-lookup"><span data-stu-id="bb654-114">Relationships</span></span>
+<span data-ttu-id="bb654-115">Ninguna</span><span class="sxs-lookup"><span data-stu-id="bb654-115">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bb654-116">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="bb654-116">JSON Representation</span></span>
+<span data-ttu-id="bb654-117">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="bb654-117">Here is a JSON representation of the resource.</span></span>
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.resourceAction"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.resourceAction",

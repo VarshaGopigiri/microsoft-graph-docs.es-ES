@@ -1,16 +1,31 @@
-<span data-ttu-id="408da-p105">Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL</span><span class="sxs-lookup"><span data-stu-id="408da-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span>| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL |
+# <a name="domaindnstxtrecord-resource-type"></a><span data-ttu-id="eff5c-101">Tipo de recurso domainDnsTxtRecord</span><span class="sxs-lookup"><span data-stu-id="eff5c-101">domainDnsTxtRecord resource type</span></span>
 
-## <span data-ttu-id="408da-137">Relaciones</span><span class="sxs-lookup"><span data-stu-id="408da-137">Relationships</span></span>
-<a id="relationships" class="xliff"></a>
-<span data-ttu-id="408da-138">Ninguno</span><span class="sxs-lookup"><span data-stu-id="408da-138">None</span></span>
+<span data-ttu-id="eff5c-p101">Representa un registro TXT agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad [DomainDnsRecord](domaindnsrecord.md).</span><span class="sxs-lookup"><span data-stu-id="eff5c-p101">Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="eff5c-104">Métodos</span><span class="sxs-lookup"><span data-stu-id="eff5c-104">Methods</span></span>
+<span data-ttu-id="eff5c-p102">No se admiten las consultas directas a este recurso. Consulte el tema [domain](domain.md) para obtener información sobre cómo efectuar consultas para los registros de servicios de dominio.</span><span class="sxs-lookup"><span data-stu-id="eff5c-p102">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="eff5c-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="eff5c-107">Properties</span></span>
+| <span data-ttu-id="eff5c-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="eff5c-108">Property</span></span>     | <span data-ttu-id="eff5c-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="eff5c-109">Type</span></span>   |<span data-ttu-id="eff5c-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="eff5c-110">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="eff5c-111">id</span><span class="sxs-lookup"><span data-stu-id="eff5c-111">id</span></span>|<span data-ttu-id="eff5c-112">String</span><span class="sxs-lookup"><span data-stu-id="eff5c-112">String</span></span>| <span data-ttu-id="eff5c-p103">Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.</span><span class="sxs-lookup"><span data-stu-id="eff5c-p103">Unique identifier assigned to this entity. Not nullable, Read-only.</span></span> |
+|<span data-ttu-id="eff5c-115">isOptional</span><span class="sxs-lookup"><span data-stu-id="eff5c-115">isOptional</span></span>|<span data-ttu-id="eff5c-116">Booleano</span><span class="sxs-lookup"><span data-stu-id="eff5c-116">Boolean</span></span>| <span data-ttu-id="eff5c-117">Si es false, el cliente debe configurar el registro TXT en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio.</span><span class="sxs-lookup"><span data-stu-id="eff5c-117">If false, the TXT record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.</span></span> |
+|<span data-ttu-id="eff5c-118">label</span><span class="sxs-lookup"><span data-stu-id="eff5c-118">label</span></span>|<span data-ttu-id="eff5c-119">Cadena</span><span class="sxs-lookup"><span data-stu-id="eff5c-119">String</span></span>| <span data-ttu-id="eff5c-120">Valor que se debe usar al configurar la propiedad *name* del registro TXT en el host DNS.</span><span class="sxs-lookup"><span data-stu-id="eff5c-120">Value to use when configuring the *name* property of the TXT record at the DNS host.</span></span>|
+|<span data-ttu-id="eff5c-121">recordType</span><span class="sxs-lookup"><span data-stu-id="eff5c-121">recordType</span></span>|<span data-ttu-id="eff5c-122">Cadena</span><span class="sxs-lookup"><span data-stu-id="eff5c-122">String</span></span>| <span data-ttu-id="eff5c-p104">Tipo de registro DNS. El valor es siempre *Txt*. Clave</span><span class="sxs-lookup"><span data-stu-id="eff5c-p104">Type of DNS record. The value is always *Txt*. Key</span></span> |
+|<span data-ttu-id="eff5c-126">supportedService</span><span class="sxs-lookup"><span data-stu-id="eff5c-126">supportedService</span></span>|<span data-ttu-id="eff5c-127">String</span><span class="sxs-lookup"><span data-stu-id="eff5c-127">String</span></span>| <span data-ttu-id="eff5c-128">Servicio o función de Microsoft Online que tiene una dependencia en el registro TXT.</span><span class="sxs-lookup"><span data-stu-id="eff5c-128">Microsoft Online Service or feature that has a dependency on this TXT record.</span></span></br></br><span data-ttu-id="eff5c-129">Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune*</span><span class="sxs-lookup"><span data-stu-id="eff5c-129">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span> |
+|<span data-ttu-id="eff5c-130">text</span><span class="sxs-lookup"><span data-stu-id="eff5c-130">text</span></span>|<span data-ttu-id="eff5c-131">Cadena</span><span class="sxs-lookup"><span data-stu-id="eff5c-131">String</span></span>| <span data-ttu-id="eff5c-132">Valor que se usa al configurar la propiedad *text* en el host DNS.</span><span class="sxs-lookup"><span data-stu-id="eff5c-132">Value used when configuring the *text* property at the DNS host.</span></span> |
+|<span data-ttu-id="eff5c-133">ttl</span><span class="sxs-lookup"><span data-stu-id="eff5c-133">ttl</span></span>|<span data-ttu-id="eff5c-134">Int32</span><span class="sxs-lookup"><span data-stu-id="eff5c-134">Int32</span></span>| <span data-ttu-id="eff5c-p105">Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL</span><span class="sxs-lookup"><span data-stu-id="eff5c-p105">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span> |
+
+## <a name="relationships"></a><span data-ttu-id="eff5c-137">Relaciones</span><span class="sxs-lookup"><span data-stu-id="eff5c-137">Relationships</span></span>
+<span data-ttu-id="eff5c-138">Ninguno</span><span class="sxs-lookup"><span data-stu-id="eff5c-138">None</span></span>
 
 
-## <span data-ttu-id="408da-139">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="408da-139">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
-<span data-ttu-id="408da-140">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="408da-140">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="eff5c-139">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="eff5c-139">JSON representation</span></span>
+<span data-ttu-id="eff5c-140">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="eff5c-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -19,7 +34,6 @@
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
