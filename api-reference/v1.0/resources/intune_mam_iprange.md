@@ -11,12 +11,11 @@ Clase base del intervalo IP para representar intervalos de direcciones IPv4 e IP
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.ipRange"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.ipRange"

@@ -18,11 +18,11 @@ Hereda de [roleAssignment](../resources/intune_rbac_roleassignment.md)
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|displayName|cadena|El nombre descriptivo o para mostrar de la asignación de roles. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|descripción|cadena|Descripción de la asignación de roles. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|resourceScopes|Colección de cadenas|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|miembros|Colección de cadenas|La lista de identificadores de grupos de seguridad de miembros de roles. Estos son los identificadores de Azure Active Directory.|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|displayName|String|El nombre descriptivo o para mostrar de la asignación de roles. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|descripción|String|Descripción de la asignación de roles. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|members|Colección string|La lista de identificadores de grupos de seguridad de miembros de roles. Estos son los identificadores de Azure Active Directory.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -31,12 +31,12 @@ Hereda de [roleAssignment](../resources/intune_rbac_roleassignment.md)
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.roleAssignment",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",

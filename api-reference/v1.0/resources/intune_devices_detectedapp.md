@@ -15,9 +15,9 @@ Una aplicación administrada o no administrada que está instalada en un disposi
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|El identificador único de la aplicación detectada. Intune lo genera automáticamente en el momento en que se crea la aplicación. Solo lectura.|
-|displayName|Cadena|Nombre de la aplicación detectada. Solo lectura|
-|versión|Cadena|Versión de la aplicación detectada. Solo lectura|
+|id|String|El identificador único de la aplicación detectada. Intune lo genera automáticamente en el momento en que se crea la aplicación. Solo lectura.|
+|displayName|String|Nombre de la aplicación detectada. Solo lectura|
+|version|String|Versión de la aplicación detectada. Solo lectura|
 |sizeInByte|Int64|Tamaño en bytes de la aplicación detectada. Solo lectura|
 |deviceCount|Int32|El número de dispositivos que han instalado esta aplicación.|
 
@@ -28,12 +28,12 @@ Una aplicación administrada o no administrada que está instalada en un disposi
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.detectedApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.detectedApp",

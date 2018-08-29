@@ -2,7 +2,7 @@
 
 Representa las opciones de protección de hoja.
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |allowAutoFilter|boolean|Representa la opción de protección de la hoja de cálculo que permite usar la característica de filtro automático.|
@@ -26,7 +26,7 @@ Aquí tiene una representación JSON del recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

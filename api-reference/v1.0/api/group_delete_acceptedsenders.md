@@ -14,7 +14,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
+DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -30,16 +31,14 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Estos son un par de ejemplos de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
-
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
 #### <a name="response"></a>Respuesta

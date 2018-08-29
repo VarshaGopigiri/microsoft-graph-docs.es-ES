@@ -10,20 +10,19 @@ Hereda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|cadena|Nombre para mostrar. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|description|cadena|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|descripción|String|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|cadena|OMA. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|value|Booleano|Valor.|
+|valor|Booleano|Valor.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingBoolean"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingBoolean",

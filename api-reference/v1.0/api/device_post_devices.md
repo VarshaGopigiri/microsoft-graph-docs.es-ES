@@ -21,7 +21,7 @@ POST /devices
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 | Tipo de contenido | string | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +48,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
@@ -75,7 +75,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",

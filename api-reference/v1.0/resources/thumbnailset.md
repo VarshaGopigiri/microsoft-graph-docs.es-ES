@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ThumbnailSet
-ms.openlocfilehash: c8f8d9c2232b845c746a6a215c81194e97c0431d
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 2ba45363b684142b91aac62d4b2a5b0d371d6b3d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270814"
 ---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
 
@@ -17,13 +18,19 @@ El recurso **ThumbnailSet** es una colección de claves de recursos [thumbnail](
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": ["source", "small", "medium", "large"],
-  "openType": true,
+  "optionalProperties": [
+    "source",
+    "small",
+    "medium",
+    "large"
+  ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.thumbnailSet"
-} -->
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.thumbnailSet",
+  "openType": true
+}-->
 
 ```json
 {

@@ -22,10 +22,10 @@ POST /directoryObjects/{id}/getMemberGroups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type  | application/json  |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Content-Type   | string  | application/json  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
@@ -45,7 +45,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{object-id}/getMemberGroups
 Content-type: application/json
 
 {

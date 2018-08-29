@@ -12,16 +12,14 @@ Informes del historial del perfil de configuración del dispositivo.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.report"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.report",
-  "content": "<Unknown Primitive Type Edm.Stream>"
+  "content": {"@odata.type": "Edm.Stream"}
 }
 ```
 

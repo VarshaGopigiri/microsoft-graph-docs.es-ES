@@ -16,9 +16,9 @@ Esta es la clase base para la directiva de cumplimiento. Las directivas de cumpl
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
@@ -36,7 +36,8 @@ Esta es la clase base para la directiva de cumplimiento. Las directivas de cumpl
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
 }
 -->

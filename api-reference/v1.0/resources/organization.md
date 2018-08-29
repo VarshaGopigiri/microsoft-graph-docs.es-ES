@@ -24,8 +24,8 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | assignedPlans                        | Colección [assignedPlan](assignedplan.md)                        | La colección de planes de servicio asociados con el inquilino. No admite valores NULL.                                                                                                                                                                                                            |
 | ciudad                                 | String                                                            | Nombre de la ciudad de la dirección de la organización.                                                                                                                                                                                                                                        |
 | companyLastDirSyncTime               | DateTimeOffset                                                    | La fecha y hora en que se ha sincronizado por última vez el inquilino con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'` |
-| country                              | String                                                            | Nombre del país o región de la dirección de la organización.                                                                                                                                                                                                                                     |
-| countryLetterCode                    | String                                                            | Abreviatura del país o región de la organización.                                                                                                                                                                                                                                            |
+| country                              | String                                                            | Nombre del país o región de la dirección de la organización.                                                                                                                                                                                                                              |
+| countryLetterCode                    | String                                                            | Abreviatura del país o región de la organización.                                                                                                                                                                                                                                     |
 | deletionTimestamp                    | DateTimeOffset                                                    | El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`                                                                                     |
 | dirSyncEnabled                       | Boolean                                                           | **true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado).                        |
 | displayName                          | String                                                            | El nombre para mostrar del inquilino.                                                                                                                                                                                                                                                     |
@@ -36,7 +36,6 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | preferredLanguage                    | String                                                            | El idioma preferido de la organización. Debe seguir el código ISO 639-1; por ejemplo, "es".                                                                                                                                                                                         |
 | privacyProfile                       | [privacyProfile](privacyprofile.md)                               | Perfil de privacidad de una organización.                                                                                                                                                                                                                                              |
 | provisionedPlans                     | Colección [ProvisionedPlan](provisionedplan.md)                  | No admite valores NULL.                                                                                                                                                                                                                                                                        |
-| provisioningErrors                   | Colección ProvisioningError                                      | No admite valores NULL.                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | Colección String                                                 |                                                                                                                                                                                                                                                                                      |
 | securityComplianceNotificationPhones | Colección String                                                 |                                                                                                                                                                                                                                                                                      |
 | state                                | String                                                            | Nombre del estado de la dirección de la organización.                                                                                                                                                                                                                                       |
@@ -54,12 +53,14 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "extensions"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.organization"
 }-->
 
@@ -68,11 +69,15 @@ Aquí tiene una representación JSON del recurso
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["string"],
   "city": "string",
+  "companyLastDirSyncTime": "2018-05-12T13:09:20.111Z",
   "country": "string",
   "countryLetterCode": "string",
+  "deletionTimestamp": "2018-05-12T15:37:52.763Z",
+  "dirSyncEnabled": true,
   "displayName": "string",
   "id": "string (identifier)",
   "marketingNotificationEmails": ["string"],
+  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -84,12 +89,13 @@ Aquí tiene una representación JSON del recurso
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
+  "telephoneNumber": "555-555-6568",
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
@@ -102,5 +108,17 @@ Aquí tiene una representación JSON del recurso
   "description": "organization resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'businessPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'onPremisesLastSyncDateTime' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'onPremisesSyncEnabled' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'securityComplianceNotificationMails' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'securityComplianceNotificationPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table."
+  ],
   "tocPath": ""
 }-->

@@ -33,7 +33,7 @@ Este recurso es compatible con el uso de una [consulta delta](../../../concepts/
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |childFolders|Colección [ContactFolder](contactfolder.md)|La colección de carpetas secundarias de la carpeta. Propiedad Navigation. Solo lectura. Admite valores NULL.|
-|contacts|Colección [contact](contact.md)|Los contactos de la carpeta. Propiedad Navigation. Solo lectura. Admite valores NULL.|
+|contactos|Colección [contact](contact.md)|Los contactos de la carpeta. Propiedad Navigation. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el objeto contactFolder. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el objeto contactFolder. Solo lectura. Admite valores NULL.|
 
@@ -41,7 +41,7 @@ Este recurso es compatible con el uso de una [consulta delta](../../../concepts/
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -50,7 +50,26 @@ Aquí tiene una representación JSON del recurso
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contactFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.contactFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "navigability": "single",
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "contacts",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -62,7 +81,7 @@ Aquí tiene una representación JSON del recurso
 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)

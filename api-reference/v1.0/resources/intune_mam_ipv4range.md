@@ -18,7 +18,7 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.ipRange",
   "@odata.type": "microsoft.graph.iPv4Range"
 }
 -->

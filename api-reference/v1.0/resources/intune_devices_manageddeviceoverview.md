@@ -12,7 +12,7 @@ Datos de resumen de los dispositivos administrados
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Identificador único del resumen|
+|id|String|Identificador único del resumen|
 |enrolledDeviceCount|Int32|Número total de dispositivos inscritos. No incluye equipos administrados mediante el agente de PC de Intune|
 |mdmEnrolledCount|Int32|El número de dispositivos inscritos en MDM|
 |dualEnrolledDeviceCount|Int32|El número de dispositivos inscritos tanto en MDM como EAS|
@@ -23,12 +23,12 @@ Datos de resumen de los dispositivos administrados
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedDeviceOverview"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",

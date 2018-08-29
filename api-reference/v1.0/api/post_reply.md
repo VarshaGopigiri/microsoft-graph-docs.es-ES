@@ -101,7 +101,6 @@ Content-length: 1131
 ```
 
 ##### <a name="response"></a>Respuesta
-##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.
 <!-- {
   "blockType": "response",

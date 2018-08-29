@@ -24,7 +24,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,7 +34,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |displayName|String|Nombre para mostrar del evento.|
 |componentName|String|Nombre del componente.|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|Usuario y aplicación de AAD que están asociados al evento de auditoría.|
@@ -45,7 +45,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |activityResult|String|El resultado de la actividad.|
 |correlationId|Guid|El identificador de la solicitud de cliente que se usa para correlacionar las actividades dentro del sistema.|
 |recursos|Colección [auditResource](../resources/intune_auditing_auditresource.md)|Recursos que se están modificando.|
-|categoría|String|Categoría de auditoría.|
+|.|String|Categoría de auditoría.|
 
 
 
@@ -82,7 +82,7 @@ Content-length: 1387
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -133,7 +133,7 @@ Content-Length: 1436
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

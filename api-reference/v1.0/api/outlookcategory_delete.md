@@ -38,10 +38,11 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"],
   "name": "delete_outlookcategory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories('4b1c2495-54c9-4a5e-90a2-0ab0b31987d8')
+DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.

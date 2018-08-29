@@ -44,6 +44,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http

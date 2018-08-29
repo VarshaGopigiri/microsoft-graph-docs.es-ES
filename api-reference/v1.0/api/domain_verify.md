@@ -44,7 +44,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/domains/contoso.com/verify
+POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -66,7 +66,7 @@ Content-length: 192
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
-  "name": "contoso.com"
+  "id": "contoso.com"
 }
 ```
 

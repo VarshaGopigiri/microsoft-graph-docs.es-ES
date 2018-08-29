@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obtener un sitio de SharePoint
-ms.openlocfilehash: c1f3d8096906a1cebafe15bfea18d924c1fd111c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: f3153845a0ce117c5442b5e66d1e96a388ac6720
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264066"
 ---
 # <a name="get-a-site-resource"></a>Obtener un recurso site
 
@@ -21,7 +22,7 @@ Un recurso **site** se resuelve con un identificador único compuesto de los sig
 * Identificador único (GUID) de la colección de sitios
 * Identificador único (GUID) del sitio
 
-También hay un identificador de sitio reservado, `root`, que siempre hace referencia al sitio raíz para un destino especificado de la manera siguiente:
+También hay un identificador de sitio reservado, `root`, que siempre hace referencia al sitio raíz de un destino especificado de la manera siguiente:
 
 * `/sites/root`: El sitio raíz del inquilino.
 * `/groups/{group-id}/sites/root`: Sitio del grupo.
@@ -67,7 +68,7 @@ GET /groups/{group-id}/sites/root
 
 ### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "get-site" } -->
+<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}
@@ -83,12 +84,6 @@ Content-type: application/json
 
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
-  "owner": {
-    "user": {
-      "displayName": "Daron Spektor",
-      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
-    }
-  },
   "displayName": "OneDrive Team Site",
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",

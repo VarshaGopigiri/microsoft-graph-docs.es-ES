@@ -17,7 +17,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
-GET /users/<id>/contactFolders/{id}/contacts/delta
+GET /users/{id}/contactFolders/{id}/contacts/delta
 ```
 
 ### <a name="query-parameters"></a>Parámetros de consulta
@@ -37,7 +37,7 @@ El seguimiento de cambios en los contactos conlleva al menos una llamada de una 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
@@ -59,7 +59,6 @@ Encontrará un ejemplo similar en el que se muestra cómo usar los tokens de est
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
 Prefer: odata.maxpagesize=2
 ```
 

@@ -14,12 +14,10 @@ Las reglas de uso de red permiten a las empresas especificar cómo las aplicacio
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosNetworkUsageRule",

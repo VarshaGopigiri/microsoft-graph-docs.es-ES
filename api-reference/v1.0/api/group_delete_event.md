@@ -20,7 +20,7 @@ DELETE /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -30,9 +30,10 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA=="],
   "name": "delete_group_event"
 }-->
 ```http
@@ -40,7 +41,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 ```
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta. 
+Aquí tiene un ejemplo de la respuesta. 
 >**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",

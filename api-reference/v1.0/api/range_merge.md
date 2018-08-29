@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/merge
+POST /workbook/names/{name}/range/merge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
@@ -44,7 +44,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "range_merge"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/merge
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
 Content-length: 20
 
@@ -56,9 +56,7 @@ Content-length: 20
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

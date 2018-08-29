@@ -36,7 +36,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "get_educationuser"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/users/13012
+GET https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. 

@@ -35,7 +35,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_schemaextension"
 }-->
 ```http
@@ -44,7 +44,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->

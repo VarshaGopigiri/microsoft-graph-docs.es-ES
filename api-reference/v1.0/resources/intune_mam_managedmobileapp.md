@@ -16,19 +16,19 @@ El identificador de la implementación de una aplicación.
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|El identificador de una aplicación con el tipo de sistema operativo.|
-|id|cadena|Clave de la entidad.|
-|versión|cadena|Versión de la entidad.|
+|id|Cadena|Clave de la entidad.|
+|version|String|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedMobileApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",

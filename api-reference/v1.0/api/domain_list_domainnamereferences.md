@@ -47,7 +47,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
   "name": "get_domainnamereferences"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 ```
 
 ##### <a name="response"></a>Respuesta

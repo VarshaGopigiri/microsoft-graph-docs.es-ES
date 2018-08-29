@@ -3,11 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
-ms.openlocfilehash: ef7fef6fb6ca35f1117433b452de0841691282a0
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cdae360afb6e626ee481a7e98ed5f90e657203b2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265123"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
 
@@ -18,7 +19,10 @@ Un recurso **columnLink** en un recurso [contentType][] adjunta el recurso **col
 ## <a name="json-representation"></a>Representación JSON
 
 A continuación se incluye una representación JSON de un recurso **columnLink**.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {
@@ -29,9 +33,9 @@ A continuación se incluye una representación JSON de un recurso **columnLink**
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad | Tipo   | Descripción
+| Nombre de propiedad | Tipo   | Descripción
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | string | El identificador único de la columna.
+| **id**        | cadena | El identificador único de la columna.
 | **name**      | string | El nombre de la columna de este tipo de contenido.
 
 <!-- {

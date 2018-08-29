@@ -15,22 +15,22 @@ Representa una operación que se aplica a un registro de la aplicación.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|Cadena|El nombre de la operación.|
+|displayName|String|El nombre de la operación.|
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
-|estado|Cadena|El estado actual de la operación|
+|estado|String|El estado actual de la operación|
 |id|Cadena|Clave de la entidad.|
-|versión|Cadena|Versión de la entidad.|
+|version|String|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppOperation"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppOperation",

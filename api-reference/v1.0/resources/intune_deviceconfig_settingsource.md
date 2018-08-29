@@ -6,8 +6,8 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Todavía no documentado|
-|displayName|cadena|Todavía no documentado|
+|id|String|Todavía no documentado|
+|displayName|String|Todavía no documentado|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -15,7 +15,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.settingSource"
 }
 -->

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Obtener una lista de SharePoint
-ms.openlocfilehash: e0e0ccdc0836c40ac4f5a719cd64f02178030ccd
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+ms.openlocfilehash: 042e9d6352d99f3a9e8d57daed685b6d9b2f7f65
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264017"
 ---
 # <a name="get-metadata-for-a-list"></a>Obtener los metadatos de una lista
 
@@ -32,7 +33,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 No proporcione un cuerpo de solicitud con este método.
 
@@ -40,7 +41,7 @@ No proporcione un cuerpo de solicitud con este método.
 
 #### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "get-list" } -->
+<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
@@ -48,7 +49,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 #### <a name="response"></a>Respuesta
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -70,21 +71,22 @@ Con las instrucciones `select` y `expand`, puede recuperar metadatos de listas, 
 
 #### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
+<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
 ```http
-GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 #### <a name="response"></a>Respuesta
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "1234-112-112-4",
   "name": "Inventory",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "columns": [

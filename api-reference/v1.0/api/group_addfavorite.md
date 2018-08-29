@@ -30,7 +30,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "group_addfavorite"
@@ -43,8 +43,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 Este es un ejemplo de la respuesta.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

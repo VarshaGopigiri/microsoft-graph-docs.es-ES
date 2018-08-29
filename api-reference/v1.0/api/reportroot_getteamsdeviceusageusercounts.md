@@ -71,7 +71,11 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserCounts(perio
 
 Este es un ejemplo de la respuesta.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -81,11 +85,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema siguiente.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

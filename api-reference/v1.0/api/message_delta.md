@@ -17,7 +17,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
-GET /users/<id>/mailFolders/{id}/messages/delta
+GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
 ### <a name="query-parameters"></a>Parámetros de consulta
@@ -41,7 +41,7 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
@@ -61,7 +61,6 @@ Para realizar un seguimiento de los cambios de los mensajes de una carpeta, debe
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
-
 Prefer: odata.maxpagesize=2
 ```
 

@@ -61,3 +61,11 @@ Aquí tiene un ejemplo de la respuesta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: close_excel_session//api-reference/v1.0/api/workbook_closesession.md:
+      Request includes a non-standard header: workbook-session-id"
+  ]
+}-->

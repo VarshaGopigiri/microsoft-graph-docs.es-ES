@@ -22,11 +22,11 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -66,7 +66,7 @@ Content-Length: 1030
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "informationUrl": "https://example.com/informationUrl/",
     "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-    "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+    "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
     "appleId": "Apple Id value",
     "vppOrganizationName": "Vpp Organization Name value",
     "genres": [

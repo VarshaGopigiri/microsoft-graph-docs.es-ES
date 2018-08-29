@@ -32,9 +32,10 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 #### <a name="request"></a>Solicitud
-Este es un ejemplo de la solicitud.
+Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q=="],
   "name": "get_group_thread"
 }-->
 ```http
@@ -42,7 +43,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 ```
 
 #### <a name="response"></a>Respuesta
-Este es un ejemplo de la respuesta.
+Aquí tiene un ejemplo de la respuesta.
 >**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 
 <!-- {

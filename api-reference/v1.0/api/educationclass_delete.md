@@ -37,7 +37,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "delete_educationclass"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/11022
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ```
 ##### <a name="response"></a>Respuesta
 Este es un ejemplo de la respuesta. 

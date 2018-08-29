@@ -1,36 +1,32 @@
-<a id="planneruser-resource-type" class="xliff"></a>
-# Tipo de recurso plannerUser
+# <a name="planneruser-resource-type"></a>Tipo de recurso plannerUser
 
 El recurso **plannerUser** proporciona acceso a los recursos Planner de un [usuario](user.md). No contiene ninguna propiedad utilizable.
 
 
-<a id="methods" class="xliff"></a>
-## Métodos
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Enumerar planes](../api/planneruser_list_plans.md) |Colección [plannerPlan](plannerplan.md)| Obtenga una colección de objetos **plannerPlan**.|
 |[Enumerar tareas](../api/planneruser_list_tasks.md) |Colección [plannerTask](plannertask.md)| Obtenga una colección de objetos **plannerTask**.|
 
-<a id="properties" class="xliff"></a>
-## Propiedades
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|String| Solo lectura. Identificador del planenrUser|
 
-<a id="relationships" class="xliff"></a>
-## Relaciones
+## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |plans|Colección [plannerPlan](plannerplan.md)| Solo lectura. Admite valores NULL. Devuelve las [plannerTasks](plannertask.md) asignadas al usuario.|
 |tasks|Colección [plannerTask](plannertask.md)| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.|
 
-<a id="json-representation" class="xliff"></a>
-## Representación JSON
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

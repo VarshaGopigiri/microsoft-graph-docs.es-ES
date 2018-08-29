@@ -15,8 +15,8 @@ Una entidad termsAndConditionsAcceptanceStatus representa el estado de aceptaci�
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único de la entidad.|
-|userDisplayName|Cadena|Nombre para mostrar del usuario cuya aceptación representa la entidad.|
+|id|String|Identificador único de la entidad.|
+|userDisplayName|String|Nombre para mostrar del usuario cuya aceptación representa la entidad.|
 |acceptedVersion|Int32|Número de versión más reciente de los TyC aceptados por el usuario.|
 |acceptedDateTime|DateTimeOffset|Fecha y hora en la que el usuario aceptó los términos por última vez.|
 
@@ -27,12 +27,12 @@ Una entidad termsAndConditionsAcceptanceStatus representa el estado de aceptaci�
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.termsAndConditionsAcceptanceStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",

@@ -24,7 +24,7 @@ GET /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -65,7 +65,7 @@ Content-Length: 1094
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "informationUrl": "https://example.com/informationUrl/",
       "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-      "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+      "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
       "appleId": "Apple Id value",
       "vppOrganizationName": "Vpp Organization Name value",
       "genres": [

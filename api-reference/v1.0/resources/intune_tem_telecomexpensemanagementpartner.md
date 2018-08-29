@@ -15,23 +15,23 @@ Los recursos telecomExpenseManagementPartner representan los metadatos y el esta
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único del partner de TEM.|
-|displayName|Cadena|Nombre para mostrar del partner de TEM.|
-|url|Cadena|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
-|appAuthorized|Booleano|Si se ha autorizado a la aplicación de AAD del partner para que obtenga acceso a Intune.|
-|habilitado|Booleano|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
+|id|String|Identificador único del partner de TEM.|
+|displayName|String|Nombre para mostrar del partner de TEM.|
+|url|String|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
+|appAuthorized|Boolean|Si se ha autorizado a la aplicación de AAD del partner para que obtenga acceso a Intune.|
+|enabled|Boolean|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",

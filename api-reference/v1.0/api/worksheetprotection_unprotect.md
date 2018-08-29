@@ -55,8 +55,7 @@ Content-length: 34
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

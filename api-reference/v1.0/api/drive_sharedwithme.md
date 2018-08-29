@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Enumerar archivos compartidos conmigo
-ms.openlocfilehash: df6ae423c1c474f8707c71379970c51153eee5c2
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 6c59fa5dcb07000467ff7442449524283e38d450
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264297"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Enumerar elementos compartidos con el usuario que ha iniciado sesión
 
@@ -28,7 +29,7 @@ Además, sin uno de los permisos **Todo**, los elementos compartidos devueltos d
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/sharedWithMe

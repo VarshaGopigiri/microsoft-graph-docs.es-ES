@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: CalculatedColumn
-ms.openlocfilehash: 44700ba7606243002798ec0ec84c3be30d38ef1f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 7e26b3683c2c84d1c413f3214da39e0a3d016f40
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267846"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
 
@@ -28,7 +29,7 @@ A continuación se incluye una representación JSON de un recurso **calculatedCo
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad  | Tipo    | Descripción
+| Nombre de propiedad  | Tipo    | Descripción
 |:---------------|:--------|:--------------------------------------------------
 | **format**     | string  | Para tipos de salida `dateTime`, el formato del valor. Debe ser `dateOnly` o `dateTime`.
 | **formula**    | string  | La fórmula usada para calcular el valor de esta columna.
@@ -44,5 +45,11 @@ Vea [Ejemplos de fórmulas comunes en listas de SharePoint][SPFormulas] para obt
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(boolean,currency,dateTime,number,text) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/CalculatedColumn"
 } -->

@@ -14,7 +14,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/<id>/users/{userId}/$ref
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
@@ -36,7 +36,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/10001/users/13006
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
 ```
 
 ##### <a name="response"></a>Respuesta

@@ -45,6 +45,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "delete_domain"
 }-->
 ```http

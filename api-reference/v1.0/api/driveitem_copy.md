@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Copiar un archivo o carpeta
-ms.openlocfilehash: 6740091f887e42a14b2a42c99ee586af4254c473
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 2b54f183daa716f1a872f373a499368fdfd558d9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265256"
 ---
 # <a name="copy-a-driveitem"></a>Copiar un objeto DriveItem
 
@@ -35,7 +36,7 @@ POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
 
-### <a name="request-body"></a>Cuerpo de solicitud
+### <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
@@ -45,14 +46,14 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 | parentReference | [ItemReference](../resources/itemreference.md) | Opcional. Referencia al elemento primario en que se creará la copia.                                         |
 | name            | string                                         | Opcional. El nuevo nombre de la copia. Si no se proporciona, se usará el mismo nombre que el original.    |
 
-**Nota**: El valor _parentReference_ debe incluir los parámetros `driveId` y `id` para la carpeta de destino.
+**Nota:** El valor _parentReference_ debe incluir los parámetros `driveId` y `id` para la carpeta de destino.
 
 ## <a name="example"></a>Ejemplo
 
 Este ejemplo copia un archivo identificado por `{item-id}` en una carpeta identificada con un valor `driveId` y `id`.
 La nueva copia del archivo se denominará `contoso plan (copy).txt`.
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy

@@ -18,7 +18,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
-GET /users/<id>/mailFolders/delta
+GET /users/{id}/mailFolders/delta
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
@@ -37,7 +37,7 @@ Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud G
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
@@ -90,8 +90,7 @@ Content-length: 254
       "parentFolderId": "parentFolderId-value",
       "childFolderCount": 99,
       "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "wellKnownName": "wellKnownName-value"
+      "totalItemCount": 99
     }
   ]
 }

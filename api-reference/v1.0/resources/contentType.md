@@ -3,11 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
-ms.openlocfilehash: ee869e5f2925af92fea9eef04fd26ec483baad5b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cb16559aa9da3a885be1977bbd1466265d0a72f0
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268336"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
 
@@ -20,7 +21,10 @@ Los tipos de contenido le permiten definir un conjunto de columnas que debe esta
 ## <a name="json-representation"></a>Representación JSON
 
 A continuación se incluye una representación JSON de un recurso **contentType**.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- {
+  "blockType": "resource",
+ "baseType": "microsoft.graph.entity",
+ "@odata.type": "microsoft.graph.contentType" } -->
 
 ```json
 {
@@ -41,14 +45,14 @@ A continuación se incluye una representación JSON de un recurso **contentType*
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad     | Tipo                 | Descripción
+| Nombre de propiedad     | Tipo                 | Descripción
 |:------------------|:---------------------|:----------------------------------
 | **description**   | string               | Texto descriptivo del elemento.
 | **group**         | string               | El nombre del grupo al que pertenece este tipo de contenido. Ayuda a organizar los tipos de contenido relacionados.
 | **hidden**        | boolean              | Indica si el tipo de contenido está oculto en el menú "Nuevo" de la lista.
 | **id**            | string               | El identificador único del tipo de contenido.
 | **inheritedFrom** | [itemReference][]    | Si este tipo de contenido se hereda de otro ámbito (por ejemplo, un sitio), proporciona una referencia al elemento en que se define el tipo de contenido.
-| **name**          | string               | El nombre del tipo de contenido.
+| **name**          | cadena               | El nombre del tipo de contenido.
 | **order**         | [contentTypeOrder][] | Especifica el orden en el que aparece el tipo de contenido en la interfaz de usuario de selección.
 | **parentId**      | string               | El identificador único del tipo de contenido.
 | **readOnly**      | boolean              | Si es `true`, no se puede modificar el tipo de contenido, a menos que este valor se establezca primero en `false`.

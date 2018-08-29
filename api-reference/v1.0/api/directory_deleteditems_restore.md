@@ -28,7 +28,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directory/deleteditems/{id}/restore
+POST /directory/deletedItems/{id}/restore
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -52,7 +52,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
   "name": "create_directoryobject_from_directory"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ```
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryObject](../resources/directoryobject.md).
 ##### <a name="response"></a>Respuesta

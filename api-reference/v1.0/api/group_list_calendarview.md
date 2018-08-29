@@ -29,7 +29,7 @@ Este método también admite los [parámetros de consulta de OData](../../../con
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
-| Authorization  | string | {token} de portador. Obligatorio.  |
+| Authorization  | cadena | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 | Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 
@@ -44,6 +44,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 En el ejemplo siguiente, se solicita la devolución de cuerpos de evento en texto sin formato.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
   "name": "get_calendarview"
 }-->
 ```http
@@ -53,7 +54,7 @@ Prefer: outlook.body-content-type="text"
 
 #### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.
->**Nota:** Se puede reducir el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

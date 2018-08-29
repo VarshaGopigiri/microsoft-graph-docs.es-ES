@@ -53,7 +53,7 @@ Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado pa
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.contract"
 } -->
 ```http
 HTTP/1.1 200 OK

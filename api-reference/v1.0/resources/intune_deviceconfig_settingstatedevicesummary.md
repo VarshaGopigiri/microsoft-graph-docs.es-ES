@@ -15,9 +15,9 @@ Directiva de cumplimiento y configuración del dispositivo para ver un resumen d
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Clave de la entidad.|
-|settingName|cadena|Nombre de la configuración|
-|instancePath|cadena|Nombre de InstancePath para la configuración|
+|id|Cadena|Clave de la entidad.|
+|settingName|String|Nombre de la configuración|
+|instancePath|String|Nombre de InstancePath para la configuración|
 |unknownDeviceCount|Int32|Número de dispositivos desconocido para la configuración|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables para la configuración|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles para la configuración|
@@ -30,12 +30,12 @@ Directiva de cumplimiento y configuración del dispositivo para ver un resumen d
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.settingStateDeviceSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.settingStateDeviceSummary",

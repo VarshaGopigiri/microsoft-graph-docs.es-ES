@@ -17,7 +17,7 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.groupAssignmentTarget",
   "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
 }
 -->

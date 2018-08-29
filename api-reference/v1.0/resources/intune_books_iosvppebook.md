@@ -18,9 +18,9 @@ Hereda de [managedEBook](../resources/intune_books_managedebook.md)
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|id|Cadena|Clave de la entidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|String|Nombre del libro electrónico Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|description|String|Descripción. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|descripción|String|Descripción. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publicador|String|Publicador. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publishedDateTime|DateTimeOffset|La fecha y la hora en que se publicó el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Cubierta de libro. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
@@ -47,12 +47,12 @@ Hereda de [managedEBook](../resources/intune_books_managedebook.md)
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedEBook",
   "@odata.type": "microsoft.graph.iosVppEBook"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -70,7 +70,7 @@ Aquí tiene una representación JSON del recurso.
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [

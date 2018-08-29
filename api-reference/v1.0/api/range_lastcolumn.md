@@ -13,9 +13,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/LastColumn
-GET /workbook/worksheets/{id|name}/range(address='<address>')/LastColumn
-GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
+GET /workbook/names/{name}/range/lastColumn
+GET /workbook/worksheets/{id|name}/range(address='<address>')/lastColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/lastColumn
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -34,12 +34,13 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 Aquí tiene un ejemplo de cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_lastcolumn"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastColumn
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -47,7 +48,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

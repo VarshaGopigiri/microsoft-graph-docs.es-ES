@@ -46,6 +46,8 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

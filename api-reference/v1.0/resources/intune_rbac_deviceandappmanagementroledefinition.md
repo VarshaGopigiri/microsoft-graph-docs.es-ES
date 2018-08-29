@@ -19,10 +19,10 @@ Hereda de [roleDefinition](../resources/intune_rbac_roledefinition.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|Cadena|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|descripción|Cadena|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|displayName|String|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|descripción|String|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |rolePermissions|Colección [rolePermission](../resources/intune_rbac_rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltIn|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|isBuiltIn|Boolean|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -31,12 +31,12 @@ Hereda de [roleDefinition](../resources/intune_rbac_roledefinition.md)
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.roleDefinition",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleDefinition"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",

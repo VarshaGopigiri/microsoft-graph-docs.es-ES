@@ -1,10 +1,8 @@
-# Tipo de recurso licenseDetails
-<a id="licensedetails-resource-type" class="xliff"></a>
+# <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
 
 Contiene información sobre una licencia asignada a un usuario.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
@@ -12,8 +10,7 @@ Contiene información sobre una licencia asignada a un usuario.
 
 <!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|String| Identificador único del objeto licenseDetails. Solo lectura, no admite valores NULL. |
@@ -21,16 +18,15 @@ Contiene información sobre una licencia asignada a un usuario.
 |skuId|Guid| Identificador único (GUID) del SKU de servicio. Es igual a la propiedad skuId en el objeto [SubscribedSku](subscribedsku.md) relacionado. Solo lectura |
 |skuPartNumber|Cadena| Nombre para mostrar de SKU único. Es igual al skuPartNumber en el objeto [SubscribedSku](subscribedsku.md) relacionado; por ejemplo: "AAD_Premium". Solo lectura |
 
-## Relaciones
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relaciones
 Ninguno
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

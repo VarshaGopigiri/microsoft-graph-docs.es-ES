@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Enumerar quién tiene acceso a un archivo"
-ms.openlocfilehash: 8b8671fbad37601a42127119f8bef6e5eca23dea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Enumerar quién tiene acceso a un archivo
+ms.openlocfilehash: d7090939fb2b950ed92fd9574cf9dd5b80ec8a6c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266635"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Mostrar permisos de uso compartido en un objeto DriveItem
 
@@ -46,7 +47,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
-Este método admite los `$select` [parámetros de consulta OData](../../../concepts/query_parameters.md) para personalizar la respuesta.
+Este método admite los [parámetros de consulta OData](../../../concepts/query_parameters.md) `$select` para personalizar la respuesta.
 
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 
@@ -56,7 +57,7 @@ Este método admite los `$select` [parámetros de consulta OData](../../../conce
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de recursos de [Permission](../resources/permission.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de recursos [Permission](../resources/permission.md) en el cuerpo de la respuesta.
 
 Los permisos de uso compartido efectivos de un objeto DriveItem pueden provenir de dos orígenes:
 
@@ -71,7 +72,7 @@ Los niveles de permiso de SharePoint establecidos en un elemento se devuelven co
 
 En este ejemplo, se recupera la colección de permisos en un elemento de la unidad del usuario que ha iniciado sesión.
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions

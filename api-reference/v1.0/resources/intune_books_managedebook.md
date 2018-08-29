@@ -8,12 +8,12 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 |:---|:---|:---|
 |[Enumerar managedEBooks](../api/intune_books_managedebook_list.md)|Colección [managedEBook](../resources/intune_books_managedebook.md)|Enumere las propiedades y las relaciones de los objetos [managedEBook](../resources/intune_books_managedebook.md).|
 |[Obtener managedEBook](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Lea las propiedades y las relaciones del objeto [managedEBook](../resources/intune_books_managedebook.md).|
-|[Acción assign](../api/intune_books_managedebook_assign.md)|Ninguno|Todavía no documentado|
+|[Acción assign](../api/intune_books_managedebook_assign.md)|Ninguna|Todavía no documentado|
 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |displayName|String|Nombre del libro electrónico|
 |descripción|String|Descripción.|
 |publicador|String|Publicador.|
@@ -34,12 +34,13 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedEBook"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBook",

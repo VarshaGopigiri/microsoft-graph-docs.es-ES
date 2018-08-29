@@ -19,7 +19,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -33,6 +33,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["98f5bdef-576a-404d-a2ea-07a3cf34af4r"],
   "name": "delete_inferenceclassificationoverride"
 }-->
 ```http

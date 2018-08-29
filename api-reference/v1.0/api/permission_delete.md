@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Eliminar el acceso a un elemento
-ms.openlocfilehash: cf573b49edc326ca221545657b29b1f2e86ba417
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 011345afb9789b0ff2927704a1e678f39656a719
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268623"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Eliminar un permiso de uso compartido de un archivo o una carpeta
 
@@ -42,7 +43,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Nombre          | Tipo   | Descripción                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
+| if-match      | cadena | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará. |
 
 ## <a name="response"></a>Respuesta
 
@@ -52,10 +53,10 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `204 
 
 En este ejemplo, se quita el permiso identificado como {perm-id} del elemento {item-id} del OneDrive del usuario actual.
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE /me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ### <a name="response"></a>Respuesta

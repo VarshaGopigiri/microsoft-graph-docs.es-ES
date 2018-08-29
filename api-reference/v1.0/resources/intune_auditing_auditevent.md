@@ -17,18 +17,18 @@ Una clase que contiene las propiedades del evento de auditoría.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Clave de la entidad.|
-|displayName|cadena|Nombre para mostrar del evento.|
-|componentName|cadena|Nombre del componente.|
+|id|Cadena|Clave de la entidad.|
+|displayName|String|Nombre para mostrar del evento.|
+|componentName|String|Nombre del componente.|
 |actor|[auditActor](../resources/intune_auditing_auditactor.md)|Usuario y aplicación de AAD que están asociados al evento de auditoría.|
-|actividad|cadena|Nombre descriptivo de la actividad.|
+|actividad|String|Nombre descriptivo de la actividad.|
 |activityDateTime|DateTimeOffset|La fecha y hora en UTC a la que se realizó la actividad.|
-|activityType|cadena|El tipo de actividad que se realizó.|
-|activityOperationType|cadena|El tipo de operación HTTP de la actividad.|
-|activityResult|cadena|El resultado de la actividad.|
+|activityType|String|El tipo de actividad que se realizó.|
+|activityOperationType|String|El tipo de operación HTTP de la actividad.|
+|activityResult|String|El resultado de la actividad.|
 |correlationId|Guid|El identificador de la solicitud de cliente que se usa para correlacionar las actividades dentro del sistema.|
 |recursos|Colección [auditResource](../resources/intune_auditing_auditresource.md)|Recursos que se están modificando.|
-|categoría|cadena|Categoría de auditoría.|
+|.|String|Categoría de auditoría.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -64,7 +64,7 @@ Aquí tiene una representación JSON del recurso.
   "activityType": "String",
   "activityOperationType": "String",
   "activityResult": "String",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

@@ -13,9 +13,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/BoundingRect
-GET /workbook/worksheets/{id|name}/range(address='<address>')/BoundingRect
-GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
+GET /workbook/names/{name}/range/boundingRect
+GET /workbook/worksheets/{id|name}/range(address='<address>')/boundingRect
+GET /workbook/tables/{id|name}/columns/{id|name}/range/boundingRect
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -41,10 +41,11 @@ Aquí tiene un ejemplo de cómo llamar a esta API.
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_boundingrect"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/BoundingRect
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/boundingRect
 Content-type: application/json
 Content-length: 42
 
@@ -58,7 +59,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

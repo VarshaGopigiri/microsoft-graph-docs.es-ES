@@ -6,11 +6,10 @@ Estado de ciertas operaciones de OneNote de larga duración.
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -34,13 +33,13 @@ Aquí tiene una representación JSON del recurso.
 |error|[onenoteOperationError](onenoteoperationerror.md)|Error devuelto por la operación.|
 |id|string|Id. de operación. Solo lectura.|
 |lastActionDateTime| DateTimeOffset |Hora de la última acción de la operación.|
-|resourceId|cadena|Identificador del recurso.|
+|resourceId|string|Identificador del recurso.|
 |resourceLocation|string|URI de recurso del objeto. Por ejemplo, el URI de recurso de una página o sección copiada. |
 |status|cadena|Estado actual de la operación: `notstarted`, `running`, `completed` o `failed` |
 |percentComplete|cadena|El porcentaje de operación completada si la operación todavía tiene el estado `running`
 
 ## <a name="relationships"></a>Relaciones
-Ninguno
+Ninguna
 
 
 ## <a name="methods"></a>Métodos

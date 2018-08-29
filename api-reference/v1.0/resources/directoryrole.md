@@ -30,8 +30,9 @@ Representa un rol de directorio de Azure AD. Los roles de directorio de Azure AD
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "memberOf",
     "members",
@@ -39,7 +40,15 @@ Aquí tiene una representación JSON del recurso
     "owners"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRole"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRole",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

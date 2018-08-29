@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/<id>/planner/plans
+GET /groups/{id}/planner/plans
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -37,7 +37,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874/planner/plans
+GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ```
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.

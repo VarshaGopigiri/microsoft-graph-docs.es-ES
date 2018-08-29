@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>
+GET /planner/tasks/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -38,7 +38,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "get_plannertask"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 ```
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.

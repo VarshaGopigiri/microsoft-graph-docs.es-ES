@@ -13,9 +13,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidColor
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidColor
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -44,7 +44,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 
@@ -57,8 +57,7 @@ Content-length: 28
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

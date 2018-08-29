@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Mostrar el contenido de una carpeta
-ms.openlocfilehash: e4c8f7b66333d739aeeaff9a8b92c0088d2fde0b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265221"
 ---
 # <a name="list-children-of-a-driveitem"></a>Mostrar los elementos secundarios de un objeto driveItem
 
@@ -44,7 +45,7 @@ Este método admite los [parámetros de consulta OData](../../../concepts/query_
 
 ### <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 
-| Nombre de encabezado     | Valor | Descripción                                                                                                                                              |
+| Nombre     | Valor | Descripción                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | ETag  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
 
@@ -54,7 +55,7 @@ Este método admite los [parámetros de consulta OData](../../../concepts/query_
 
 Para recuperar archivos en la raíz de la unidad, use la relación `root` en la unidad y, después, obtenga acceso a la relación secundaria.
 
-<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/root/children
@@ -82,7 +83,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ## <a name="response"></a>Respuesta
 
 Si se realiza correctamente, este método devuelve la lista de elementos en la colección de elemento secundarios del elemento de destino.
-La colección de elementos secundarios estará formada de recursos [driveItem][item-resource].
+La colección de elementos secundarios estará formada por recursos [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

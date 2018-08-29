@@ -36,7 +36,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/<id>/teachers/14012
+DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{teacher-id}
 ```
 
 ##### <a name="response"></a>Respuesta

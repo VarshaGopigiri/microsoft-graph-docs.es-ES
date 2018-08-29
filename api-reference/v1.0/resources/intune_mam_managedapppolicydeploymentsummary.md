@@ -12,23 +12,23 @@ El objeto ManagedAppEntity es el tipo de entidad base para todos los demás tipo
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|cadena|Todavía no documentado|
+|displayName|String|Todavía no documentado|
 |configurationDeployedUserCount|Int32|Todavía no documentado|
 |lastRefreshTime|DateTimeOffset|Todavía no documentado|
 |configurationDeploymentSummaryPerApp|Colección [managedAppPolicyDeploymentSummaryPerApp](../resources/intune_mam_managedapppolicydeploymentsummaryperapp.md)|Todavía no documentado|
-|id|cadena|Clave de la entidad.|
-|versión|cadena|Versión de la entidad.|
+|id|Cadena|Clave de la entidad.|
+|version|String|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummary",

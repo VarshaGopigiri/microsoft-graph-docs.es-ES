@@ -1,5 +1,4 @@
-# Tipo de recurso de dominio
-<a id="domain-resource-type" class="xliff"></a>
+# <a name="domain-resource-type"></a>Tipo de recurso de dominio
 
 Representa un dominio asociado al inquilino.
 
@@ -17,8 +16,7 @@ Para asociar un dominio a un espacio empresarial:
 
 5. [Configure](../api/domain_list_serviceconfigurationrecords.md) los servicios admitidos al recuperar una lista de registros necesarios para habilitar los servicios para el dominio. Agregar los detalles de registro de configuración para el archivo de zona del dominio mediante el registrador de dominio o la configuración del servidor DNS.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de valor devuelto |Descripción|
 |:---------------|:--------|:----------|
@@ -31,8 +29,7 @@ Para asociar un dominio a un espacio empresarial:
 |[Eliminar dominio](../api/domain_delete.md) | Ninguno |Eliminar un dominio.|
 |[Comprobar dominio](../api/domain_verify.md)|[dominio](domain.md)|Valide la propiedad del dominio.|
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 
 | Propiedad   | Tipo | Descripción |
 |:---------------|:--------|:----------|
@@ -47,8 +44,7 @@ Para asociar un dominio a un espacio empresarial:
 |supportedServices|Colección de cadenas| Funciones asignadas al dominio.<br><br>Puede incluir 0, 1 o más de los siguientes valores: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Los valores que puede agregar o quitar mediante la API de Graph incluyen: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>No admite valores NULL|
 |state|[domainState](domainstate.md)| Estado de las operaciones asincrónicas programadas para el dominio. |
 
-## Relaciones
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relaciones
 
 Las relaciones entre un dominio y otros objetos en el directorio, como sus registros de comprobación y registros de configuración de servicio, se exponen a través de las propiedades de navegación. Para leer estas relaciones, puede abordar las propiedades de navegación en las solicitudes.
 
@@ -58,15 +54,14 @@ Las relaciones entre un dominio y otros objetos en el directorio, como sus regis
 |serviceConfigurationRecords|Colección [domainDnsRecord](domaindnsrecord.md)| Registros DNS que el cliente agrega al archivo de zona de DNS del dominio antes de que Microsoft Online Services pueda usar el dominio.<br>Solo lectura, admite valores NULL |
 |verificationDnsRecords|Colección [domainDnsRecord](domaindnsrecord.md)| Registros DNS que el cliente agrega al archivo de zona de DNS del dominio antes de que el cliente pueda completar la comprobación de propiedad de dominio con Azure AD.<br>Solo lectura, admite valores NULL|
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.domain"
 }-->
 

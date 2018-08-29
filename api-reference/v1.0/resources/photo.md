@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Foto
-ms.openlocfilehash: a4284caa7c20e266d87e22e9b3d729e17bc88abf
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 391eafd84ab1abd4670c953720ff7097e060bfd3
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267069"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 
@@ -20,6 +21,7 @@ El recurso **photo** proporciona propiedades de foto y cámara, por ejemplo, los
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.photo"
 }-->
+
 ```json
 {
   "cameraMake": "string",
@@ -44,9 +46,10 @@ El recurso **photo** proporciona propiedades de foto y cámara, por ejemplo, los
 | **exposureDenominator** | Double         | Denominador de la fracción de tiempo de exposición de la cámara. Solo lectura.
 | **exposureNumerator**   | Double         | Numerador de la fracción de tiempo de exposición de la cámara. Solo lectura.
 | **focalLength**         | Doble         | Distancia focal de la cámara. Solo lectura.
-| **iso**                 | Int64          | El valor ISO de la cámara. Solo lectura.
+| **iso**                 | Int32          | Valor ISO de la cámara. Solo lectura.
 
 ## <a name="remarks"></a>Comentarios
+
 OneDrive para la Empresa y SharePoint solo devuelven la propiedad **takenDateTime**.
 
 Para obtener más información sobre las facetas de un DriveItem, consulte [DriveItem](driveitem.md).

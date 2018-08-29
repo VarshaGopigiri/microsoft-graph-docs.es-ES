@@ -16,7 +16,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "samples" } --> 
 
 ```http
 GET /reports/getSharePointSiteUsageDetail(period='{period_value}')
@@ -69,8 +69,9 @@ El archivo CSV tiene los siguientes encabezados de columna.
 
 Aquí tiene un ejemplo de la solicitud.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getsharepointsiteusageuserdetail"
 }-->
 
@@ -82,7 +83,11 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageDetail(period
 
 Este es un ejemplo de la respuesta.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -92,11 +97,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema siguiente.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ItemReference
-ms.openlocfilehash: abd8b438e6c4e364a7a4b010d0808255425fa4df
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e83b0a18725d587094a00e9cc84a51b030d83340
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268469"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
@@ -39,11 +40,11 @@ Aquí tiene una representación JSON del recurso
 
 | Propiedad      | Tipo              | Descripción
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | Cadena            | Identificador único de la instancia de la unidad que contiene el elemento. Solo lectura.
-| driveType     | String            | Identifica el tipo de unidad. Consulte el recurso [drive][] para ver los valores.
+| driveId       | String            | Identificador único de la instancia de la unidad que contiene el elemento. Solo lectura.
+| driveType     | Cadena            | Identifica el tipo de unidad. Consulte el recurso [drive][] para ver los valores.
 | id            | String            | Identificador único del elemento en la unidad. Solo lectura.
-| name          | String            | El nombre del elemento al que se hace referencia. Solo lectura.
-| path          | String            | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.
+| name          | Cadena            | El nombre del elemento al que se hace referencia. Solo lectura.
+| path          | Cadena            | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.
 | shareId       | Cadena            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares][].
 | sharepointIds | [sharepointIds][] | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.
 
@@ -69,5 +70,9 @@ Para recuperar la ruta de acceso legible de una ruta de navegación, puede ignor
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

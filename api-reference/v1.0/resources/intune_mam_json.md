@@ -11,17 +11,20 @@ Representa los datos devueltos con formato JSON
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "openType": true,
   "@odata.type": "microsoft.graph.Json"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
 
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: Resource microsoft.graph.Json is defined in multiple files: /api-reference/v1.0/resources/intune_mam_json.md, /api-reference/v1.0/resources/json.md"
+  ]
+}-->

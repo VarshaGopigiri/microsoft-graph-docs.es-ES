@@ -3,17 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Enumerar los subsitios de un sitio de SharePoint
-ms.openlocfilehash: a2acf82fca78249e6ea8d05a4a95f88ed741c913
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 873b3666352e7e90dc7ffeccdfe984b384f857f2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265424"
 ---
 # <a name="enumerate-subsites"></a>Enumerar subsitios
 
 Obtener una colección de subsitios definidos para un objeto [site][].
 
-[sitio]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>Permisos
 
@@ -27,7 +28,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites

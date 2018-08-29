@@ -29,6 +29,7 @@ Esta es una representación JSON del recurso.
   "blockType": "resource",
   "optionalProperties": [
    ],
+   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.messageRule"
 }-->
 

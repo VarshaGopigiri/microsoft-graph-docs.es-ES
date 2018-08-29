@@ -16,7 +16,7 @@ Hereda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|String|Nombre descriptivo del informe de estado. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|id|String|Clave de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|id|Cadena|Clave de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |version|String|Versión de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |content|[Json](../resources/intune_mam_json.md)|Contenido del informe de estado.|
 
@@ -24,12 +24,12 @@ Hereda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppStatus",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatusRaw",

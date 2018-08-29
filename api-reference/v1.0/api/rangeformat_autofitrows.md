@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/autofitRows
+POST /workbook/names/{name}/range/format/autofitRows
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
@@ -39,15 +39,14 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "rangeformat_autofitrows"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitRows
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/autofitRows
 ```
 
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

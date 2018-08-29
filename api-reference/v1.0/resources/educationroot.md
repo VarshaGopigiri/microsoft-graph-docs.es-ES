@@ -24,6 +24,42 @@ Ninguna.
 |schools|Colección [educationSchool](educationschool.md)| Solo lectura. Admite valores NULL.|
 |users|Colección [educationUser](educationuser.md)| Solo lectura. Admite valores NULL.|
 
+## <a name="json-representation"></a>Representación JSON
+Aquí tiene una representación JSON del recurso.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.educationRoot"
+}-->
+
+```json
+{
+}
+```
+
+<!-- {
+  "blockType": "request",
+  "name": "get_education"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/education
+```
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationRoot"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

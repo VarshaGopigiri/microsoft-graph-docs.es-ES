@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Mover un archivo o carpeta
-ms.openlocfilehash: ebffe8451c6cf5ce7f025b70225054cfb8080cf6
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 5ecde28e0e3e8dd5f72079271305903c1fce5a7a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268189"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover un objeto DriveItem a una carpeta nueva
 
@@ -49,7 +50,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 En el cuerpo de la solicitud, proporcione el nuevo valor de la propiedad **parentReference**. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-**Nota**: Al mover elementos a la raíz de una unidad, la aplicación no puede usar la sintaxis `"id:" "root"`.
+**Nota:** Al mover elementos a la raíz de una unidad, la aplicación no puede usar la sintaxis `"id:" "root"`.
 La aplicación debe proporcionar el identificador real de la carpeta raíz para la referencia primaria.
 
 ## <a name="response"></a>Respuesta
@@ -60,7 +61,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 En este ejemplo, se mueve un elemento especificado mediante {item-id} a una carpeta en la unidad del usuario con el identificador `new-parent-folder-id`.
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -68,7 +69,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "new-parent-folder-id"
+    "id": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }

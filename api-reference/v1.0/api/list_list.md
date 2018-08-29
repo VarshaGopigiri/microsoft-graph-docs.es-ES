@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Enumerar las listas de SharePoint en un sitio
-ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+ms.openlocfilehash: 5d88720ecf3d183f806526364130dd2812874f3c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267650"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumere listas en un sitio.
 
@@ -36,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 #### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
@@ -75,6 +76,13 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="remarks"></a>Comentarios
+
+De manera predeterminada, las listas con la faceta [system][] están ocultas.
+Para obtener una lista de ellas, incluya `system` en su instrucción `$select`.
+
+[system]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",

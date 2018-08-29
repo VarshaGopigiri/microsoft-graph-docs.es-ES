@@ -14,21 +14,21 @@ Hereda de [managedAppConfiguration](../resources/intune_mam_managedappconfigurat
 |[Crear targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_create.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|Cree un objeto [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md).|
 |[Eliminar targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_delete.md)|Ninguno|Elimina un [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md).|
 |[Actualizar targetedManagedAppConfiguration](../api/intune_mam_targetedmanagedappconfiguration_update.md)|[targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md)|Actualice las propiedades de un objeto [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md).|
-|[Acción assign](../api/intune_mam_targetedmanagedappconfiguration_assign.md)|Ninguno|Todavía no documentado|
-|[Acción targetApps](../api/intune_mam_targetedmanagedappconfiguration_targetapps.md)|Ninguno|Todavía no documentado|
+|[Acción assign](../api/intune_mam_targetedmanagedappconfiguration_assign.md)|Ninguna|Todavía no documentado|
+|[Acción targetApps](../api/intune_mam_targetedmanagedappconfiguration_targetapps.md)|Ninguna|Todavía no documentado|
 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|String|Nombre para mostrar de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|description|String|Descripción de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|descripción|String|Descripción de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Última vez que se modificó la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|id|String|Clave de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|id|Cadena|Clave de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |version|String|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |customSettings|Colección [keyValuePair](../resources/intune_mam_keyvaluepair.md)|Un conjunto de pares de clave de cadena y valor de cadena que se va a enviar a las aplicaciones para aquellos usuarios que tienen limitada la configuración, sin modificar por este servicio. Heredado de [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)|
 |deployedAppCount|Int32|Número de aplicaciones en las que se implementará la directiva actual.|
-|isAssigned|Booleano|Indica si la directiva se implementará en los grupos de inclusión o no.|
+|isAssigned|Boolean|Indica si la directiva se implementará en los grupos de inclusión o no.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -39,12 +39,12 @@ Hereda de [managedAppConfiguration](../resources/intune_mam_managedappconfigurat
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedAppConfiguration",
   "@odata.type": "microsoft.graph.targetedManagedAppConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",

@@ -12,20 +12,21 @@ Representa el estado de protección y configuración de la aplicación para la o
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|cadena|Nombre descriptivo del informe de estado.|
-|id|cadena|Clave de la entidad.|
-|versión|cadena|Versión de la entidad.|
+|displayName|String|Nombre descriptivo del informe de estado.|
+|id|Cadena|Clave de la entidad.|
+|version|String|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppStatus",

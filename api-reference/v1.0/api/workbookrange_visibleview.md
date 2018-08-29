@@ -21,7 +21,7 @@ GET /me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView
 | Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [workbookRangeView](../resources/workbookrangeview.md) en el cuerpo de la respuesta.
@@ -35,7 +35,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "workbookrange_visibleview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView
 ```
 
 ##### <a name="response"></a>Respuesta

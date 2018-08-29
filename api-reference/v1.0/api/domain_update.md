@@ -43,6 +43,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `204 
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http

@@ -23,11 +23,11 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -40,10 +40,11 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 En el primer ejemplo, se muestra cómo obtener las propiedades de un mensaje de evento a partir del id. del mensaje de evento.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAImV_lAAA="],
   "name": "get_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_lAAA=')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ```
 ##### <a name="response-1"></a>Respuesta 1
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
@@ -124,10 +125,11 @@ Content-type: application/json
 En el segundo ejemplo, se muestra cómo obtener el evento asociado a un mensaje. Usa el id. del mensaje de evento para obtener el mensaje de evento, proporciona explícitamente una conversión en el mensaje de evento para obtener acceso a su propiedad de navegación de **evento** y aplica un parámetro $expand para obtener las propiedades del evento.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAImV_jAAA="],
   "name": "get_event_based_on_eventmessage"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
 ##### <a name="response-2"></a>Respuesta 2
 Este es un ejemplo de la respuesta. Las propiedades del evento asociado se devuelven en la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.

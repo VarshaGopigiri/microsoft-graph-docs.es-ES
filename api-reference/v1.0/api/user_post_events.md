@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 | Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json. Obligatorio.  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [event](../resources/event.md).
 
 Dado que el recurso **event** admite [extensiones](../../../concepts/extensibility_overview.md), puede utilizar la operación `POST` y agregar propiedades personalizadas con sus propios datos al evento al crearla.
@@ -349,7 +349,6 @@ Content-length: 2985
       "uniqueId":"Fourth Coffee",
       "uniqueIdType":"private",
       "address":{
-        "type":"unknown",
         "street":"4567 Main St",
         "city":"Redmond",
         "state":"WA",
