@@ -24,7 +24,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|objetivo|String|El objetivo de instalación definido por el administrador. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_apps_deviceandappmanagementassignmenttarget.md)|La asignación de grupo de destino definida por el administrador.|
-|configuración|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|La asignación de la configuración para el destino definida por el administrador.|
+|id|Cadena|Clave de la entidad.|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|La intención de instalar definida por el administrador. Los valores posibles son: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|La asignación de grupo de destino definida por el administrador.|
+|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|La asignación de la configuración para el destino definida por el administrador.|
 
 
 

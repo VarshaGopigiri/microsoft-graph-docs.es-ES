@@ -25,13 +25,13 @@ POST /users/{id | userPrincipalName}/sendMail
 | Authorization  | {token} de portador. Obligatorio.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|Mensaje que se va a enviar. Obligatorio.|
-|SaveToSentItems|Boolean|Indica si se va a guardar el mensaje en Elementos enviados. Especifíquelo solo si el parámetro es falso, de forma predeterminada es verdadero.  Opcional. |
+|message|[Mensaje](../resources/message.md)|Mensaje que se va a enviar. Obligatorio.|
+|saveToSentItems|Booleano|Indica si se va a guardar el mensaje en Elementos enviados. Especifíquelo solo si el parámetro es falso, de forma predeterminada es verdadero.  Opcional. |
 
 ## <a name="response"></a>Respuesta
 

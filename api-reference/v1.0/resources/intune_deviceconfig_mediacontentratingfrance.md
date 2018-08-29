@@ -6,8 +6,8 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|movieRating|cadena|Calificación de películas seleccionada para Francia. Los valores posibles son: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16` y `agesAbove18`.|
-|tvRating|cadena|Calificación de TV seleccionada para Francia. Los valores posibles son: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16` y `agesAbove18`.|
+|movieRating|[ratingFranceMoviesType](../resources/intune_deviceconfig_ratingfrancemoviestype.md)|Clasificación de películas seleccionada para Francia. Los valores posibles son `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16` y `agesAbove18`.|
+|tvRating|[ratingFranceTelevisionType](../resources/intune_deviceconfig_ratingfrancetelevisiontype.md)|Clasificación de TV seleccionada para Francia. Los valores posibles son `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16` y `agesAbove18`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -15,7 +15,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingFrance"
 }
 -->

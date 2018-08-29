@@ -9,7 +9,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (cuenta profesional o educativa) | Directory.ReadWrite.All y Directory.AccessAsUser.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Directory.ReadWrite.All |
 
@@ -33,7 +33,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
-| values | settingValue | Conjunto actualizado de valores.  NOTA: Debe proporcionar el conjunto de toda la colección. No puede actualizar un único conjunto de valores. |
+| valores | Colección de settingValue | Conjunto actualizado de valores.  NOTA: Debe proporcionar el conjunto de toda la colección. No puede actualizar un único conjunto de valores. |
 
 ## <a name="response"></a>Respuesta
 

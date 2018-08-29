@@ -3,16 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: RemoteItem
-ms.openlocfilehash: fd324460b3486f90c342feb1c782c0cf74d77416
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 549b0804a1d6449a71d2cc870836c0d044099a38
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264276"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
-El recurso **remoteItem** indica que un objeto [**driveItem**](driveitem.md) hace referencia a un elemento que existe en otra unidad.
-Este recurso proporciona los identificadores únicos de la unidad de origen y del elemento de destino.
+El recurso **remoteItem** indica que un objeto [**driveItem**](driveitem.md) hace referencia a un elemento que existe en otra unidad. Este recurso proporciona los identificadores únicos de la unidad de origen y del elemento de destino.
 
 Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no sea null son recursos que se comparten, agregan al OneDrive del usuario o que están en elementos devueltos de colecciones heterogéneas de elementos (como los resultados de la búsqueda).
 
@@ -39,6 +39,7 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "size": 1024,
   "webDavUrl": "url",
   "webUrl": "url"
@@ -47,24 +48,27 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad        | Tipo                                | Descripción                                                                                                                                                       |
+| Nombre de propiedad        | Tipo                                | Descripción                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [IdentitySet](identityset.md)       | Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.                                                                                  |
-| createdDateTime      | Timestamp                           | Fecha y hora de creación del elemento. Solo lectura.                                                                                                                        |
-| file                 | [File](file.md)                     | Indica que el elemento remoto es un archivo. Solo lectura.                                                                                                              |
+| createdDateTime      | Marca de tiempo                           | Fecha y hora de creación del elemento. Solo lectura.                                                                                                                        |
+| file                 | [Archivo](file.md)                     | Indica que el elemento remoto es un archivo. Solo lectura.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Información sobre el elemento remoto del sistema de archivos local. Solo lectura.                                                                                          |
-| folder               | [Folder](folder.md)                 | Indica que el elemento remoto es una carpeta. Solo lectura.                                                                                                            |
-| id                   | String                              | Identificador único del elemento remoto en su unidad. Solo lectura.                                                                                                    |
+| folder               | [Carpeta](folder.md)                 | Indica que el elemento remoto es una carpeta. Solo lectura.                                                                                                            |
+| id                   | Cadena                              | Identificador único del elemento remoto en su unidad. Solo lectura.                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.                                                                            |
-| lastModifiedDateTime | Timestamp                           | Fecha y hora de la última modificación del elemento. Solo lectura.                                                                                                              |
-| name                 | String                              | Opcional. Nombre de archivo del elemento remoto. Solo lectura.                                                                                                                 |
-| package              | [Package](package.md)               | Si está presente, indica que este elemento es un paquete en lugar de una carpeta o archivo. Los paquetes se tratan como archivos en algunos contextos y como carpetas en otros. Solo lectura. |
+| lastModifiedDateTime | Marca de tiempo                           | Fecha y hora de la última modificación del elemento. Solo lectura.                                                                                                              |
+| name                 | Cadena                              | Opcional. Nombre de archivo del elemento remoto. Solo lectura.                                                                                                                 |
+| paquete              | [Paquete](package.md)               | Si está presente, indica que este elemento es un paquete en lugar de una carpeta o archivo. Los paquetes se tratan como archivos en algunos contextos y como carpetas en otros. Solo lectura. |
 | parentReference      | [ItemReference](itemreference.md)   | Propiedades del elemento primario del elemento remoto. Solo lectura.                                                                                                           |
 | shared               | [shared](shared.md)                 | Indica que el elemento se ha compartido con otros usuarios y proporciona información sobre el estado del elemento compartido. Solo lectura.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Proporciona interoperabilidad entre elementos de OneDrive para la Empresa y SharePoint con el conjunto completo de identificadores de elementos. Solo lectura.                                          |
 | size                 | Int64                               | Tamaño del elemento remoto. Solo lectura.                                                                                                                               |
+| specialFolder        | [specialFolder][]                   | Si el elemento actual también está disponible como una carpeta especial, se devuelve esta faceta. Solo lectura.                                                                     |
 | webDavUrl            | Url                                 | Dirección URL compatible con DAV del elemento.                                                                                                                                  |
 | webUrl               | Url                                 | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                         |
+
+[specialFolder]: specialFolder.md
 
 ## <a name="remarks"></a>Comentarios
 

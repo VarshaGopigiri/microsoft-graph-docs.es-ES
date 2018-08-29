@@ -6,7 +6,7 @@ Estado de la respuesta de una convocatoria de reunión.
 
 | Propiedad | Tipo           | Descripción |
 |:---------|:---------------|:------------|
-| response | String         | Tipo de la respuesta. Los valores posibles son: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined` y `NotResponded`.
+| response | responseType   | Tipo de la respuesta. Los valores posibles son `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined` y `NotResponded`.
 | time     | DateTimeOffset | Fecha y hora en que se devolvió la respuesta. Usa el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`
 
 ## <a name="json-representation"></a>Representación JSON

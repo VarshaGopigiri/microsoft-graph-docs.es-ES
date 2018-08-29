@@ -9,7 +9,7 @@ Estados de configuración de directivas de cumplimiento del dispositivo para un 
 |ajustes|Cadena|La configuración que se está notificando|
 |settingName|Cadena|Nombre descriptivo de la configuración de usuario o localizada que se está notificando|
 |instanceDisplayName|Cadena|Nombre de la instancia de configuración que se está notificando.|
-|estado|Cadena|Estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|estado|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
 |errorCode|Int64|Código de error de la configuración|
 |errorDescription|Cadena|Descripción del error|
 |userId|Cadena|UserId|
@@ -23,12 +23,10 @@ Estados de configuración de directivas de cumplimiento del dispositivo para un 
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingState",

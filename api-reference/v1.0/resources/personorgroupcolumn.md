@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-ms.openlocfilehash: 715c6ca22957cbd951784e6cf32edf2bf47f1098
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 37c324ddb1863e3e589e7d17ea60bd879e50771f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267559"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
@@ -28,17 +29,17 @@ A continuación se incluye una representación JSON de un recurso **personOrGrou
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad              | Tipo    | Descripción
+| Nombre de propiedad              | Tipo    | Descripción
 |:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | boolean | Indica si se pueden seleccionar varios valores desde el origen.
-| **displayAs**              | string  | Cómo mostrar la información sobre la persona o el grupo elegido. Véalo a continuación.
-| **chooseFromType**         | string  | Si quiere permitir la selección solo de personas, o de personas y grupos. Debe ser `peopleAndGroups` o `peopleOnly`.
+| **allowMultipleSelection** | booleano | Indica si se pueden seleccionar varios valores desde el origen.
+| **displayAs**              | cadena  | Cómo mostrar la información sobre la persona o el grupo elegido. Véalo a continuación.
+| **chooseFromType**         | cadena  | Si quiere permitir la selección solo de personas, o de personas y grupos. Debe ser `peopleAndGroups` o `peopleOnly`.
 
-## <a name="displayas-values"></a>Valores displayAs
+## <a name="displayas-options"></a>Opciones de displayAs
 
 | Valor displayAs               | Descripción
 |:------------------------------|:-----------------------
-| **account**                   | La cadena de notificación codificada de SharePoint sin formato de la persona o el grupo (por ejemplo, i:0#.f|pertenencia|jane@contoso.com).
+| **account**                   | La cadena de notificación codificada de SharePoint sin formato de la persona o el grupo (por ejemplo, i:0#.f|membership|jane@contoso.com).
 | **department**                | Departamento de la persona o el grupo.
 | **firstName**                 | Nombre de la persona.
 | **id**                        | Identificador de la persona o el grupo en el directorio.
@@ -64,5 +65,11 @@ Nota: Se pueden devolver tipos DisplayAs adicionales.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->

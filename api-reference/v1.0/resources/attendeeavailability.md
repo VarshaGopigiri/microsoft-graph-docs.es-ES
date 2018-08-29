@@ -22,10 +22,10 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|asistente|[AttendeeBase](attendeebase.md)|El tipo de asistente, ya sea una persona o un recurso, y en caso de ser una persona, si es obligatorio u opcional.|
-|disponibilidad|String| El estado de disponibilidad del asistente. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|attendee|[AttendeeBase](attendeebase.md)|El tipo de asistente, ya sea una persona o un recurso, y en caso de ser una persona, si es obligatorio u opcional.|
+|availability|freeBusyStatus| El estado de disponibilidad del asistente. Los valores posibles son `free`, `tentative`, `busy`, `oof`, `workingElsewhere` y `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

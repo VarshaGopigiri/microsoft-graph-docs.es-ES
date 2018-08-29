@@ -4,14 +4,14 @@ Opciones de configuración para notificar de forma automática al remitente de u
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|externalAudience|String| El conjunto de audiencia externa a la organización del usuario que ha iniciado sesión que recibirá el **ExternalReplyMessage**, si **Status** es `AlwaysEnabled` o `Scheduled`. Los valores posibles son: `none`, `contactsOnly`, `all`.|
-|externalReplyMessage|string|La respuesta automática para enviar a la audiencia externa especificada, si **Status** es `AlwaysEnabled` o `Scheduled`.|
-|internalReplyMessage|string|La respuesta automática para enviar a la audiencia interna de la organización del usuario que ha iniciado sesión, si **Status** es `AlwaysEnabled` o `Scheduled`. |
+|externalAudience|externalAudienceScope| El conjunto de audiencia externa a la organización del usuario que ha iniciado sesión que recibirá el **ExternalReplyMessage**, si **Status** es `AlwaysEnabled` o `Scheduled`. Los valores posibles son: `none`, `contactsOnly` y `all`.|
+|externalReplyMessage|cadena|La respuesta automática para enviar a la audiencia externa especificada, si **Status** es `AlwaysEnabled` o `Scheduled`.|
+|internalReplyMessage|cadena|La respuesta automática para enviar a la audiencia interna de la organización del usuario que ha iniciado sesión, si **Status** es `AlwaysEnabled` o `Scheduled`. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha y hora en que se establece la finalización de las respuestas automáticas, si **Status** se establece en `Scheduled`. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha y hora en que se establece el inicio de las respuestas automáticas, si **Status** se establece en `Scheduled`.|
-|status|String|Estado de las configuraciones para las respuestas automáticas. Los valores posibles son: `disabled`, `alwaysEnabled`, `scheduled`.|
+|status|automaticRepliesStatus|Estado de las configuraciones de las respuestas automáticas. Los valores posibles son: `disabled`, `alwaysEnabled` y `scheduled`.|
 
 ## <a name="json-representation"></a>Representación JSON
 
