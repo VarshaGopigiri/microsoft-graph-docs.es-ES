@@ -7,21 +7,17 @@ Administra operaciones de ordenación en objetos Table.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Lee las propiedades y relaciones del objeto tableSort.|
-|[Apply](../api/tablesort_apply.md)|None|Realiza una operación de ordenación.|
-|[Clear](../api/tablesort_clear.md)|None|Borra la ordenación que se aplica actualmente en la tabla. Aunque esto no modifica la ordenación de la tabla, borra el estado de los botones de encabezado.|
-|[Reapply](../api/tablesort_reapply.md)|None|Vuelve a aplicar los parámetros de ordenación actuales a la tabla.|
+|[Get TableSort](../api/tablesort_get.md) | [WorkbookTableSort](tablesort.md) |Lee las propiedades y relaciones del objeto tableSort.|
+|[Apply](../api/tablesort_apply.md)|Ninguno|Realiza una operación de ordenación.|
+|[Clear](../api/tablesort_clear.md)|Ninguno|Borra la ordenación que se aplica actualmente en la tabla. Aunque esto no modifica la ordenación de la tabla, borra el estado de los botones de encabezado.|
+|[Reapply](../api/tablesort_reapply.md)|Ninguno|Vuelve a aplicar los parámetros de ordenación actuales a la tabla.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|matchCase|boolean|Indica si última ordenación de la tabla distinguía mayúsculas de minúsculas. Solo lectura.|
-|method|string|Representa el método de ordenación de caracteres chinos usado por última vez para ordenar la tabla. Valores posibles: `PinYin`, `StrokeCount`. Solo lectura.|
-
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|Representa las condiciones actuales que se usaron por última vez para ordenar la tabla. Solo lectura.|
+|fields|Colección de [WorkbookSortField](sortfield.md)|Representa las condiciones actuales que se usaron por última vez para ordenar la tabla. Solo lectura.|
+|matchCase|booleano|Indica si última ordenación de la tabla distinguía mayúsculas de minúsculas. Solo lectura.|
+|method|cadena|Representa el método utilizado por última vez para ordenar la tabla de orden de los caracteres chinos. Los valores posibles son: `PinYin` y `StrokeCount`. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -32,13 +28,15 @@ Aquí tiene una representación JSON del recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.tableSort"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableSort"
 }-->
 
 ```json
 {
   "matchCase": true,
-  "method": "string"
+  "method": "string",
+  "fields": [{ "@odata.type": "microsoft.graph.workbookSortField" }]
 }
 
 ```

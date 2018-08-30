@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: e5942ddee4b505243cb64121862ce9e89e52d245
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 2fd6c08e1cfc28a77019d174763b9d698519b6a2
+ms.sourcegitcommit: 9e4dc7745eb1bbbe595afd8c7f3db4c19c6bb4ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "23271318"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 
@@ -15,8 +16,13 @@ ms.lasthandoff: 09/28/2017
 
 A continuación se incluye una representación JSON de un recurso ColumnDefinition.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnDefinition",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnDefinition"
+}-->
 
 ```json
 {
@@ -49,16 +55,16 @@ El recurso **columnDefinition** tiene las siguientes propiedades.
 
 | Nombre de propiedad           | Tipo    | Descripción
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | string  | Para las columnas de sitio, el nombre del grupo al que pertenece esta columna. Ayuda a organizar las columnas relacionadas.
-| **description**         | string  | Descripción de cara al usuario de la columna.
-| **displayName**         | string  | Nombre de cara al usuario de la columna.
-| **enforceUniqueValues** | boolean | Si es true, dos elementos de la lista no pueden tener el mismo valor para esta columna.
-| **hidden**              | boolean | Especifica si la columna se muestra en la interfaz de usuario.
-| **id**                  | string  | El identificador único de la columna.
-| **indexed**             | boolean | Especifica si los valores de columna se pueden usar para ordenar y buscar.
-| **name**                | string  | El nombre de cara a la API de la columna tal como aparece en [fields][] en un recurso [listItem][]. Para el nombre de cara al usuario, consulte **displayName**.
-| **readOnly**            | bool    | Especifica si se pueden modificar los valores de columna.
-| **required**            | boolean | Especifica si el valor de columna no es opcional.
+| **columnGroup**         | cadena  | Para las columnas de sitio, el nombre del grupo al que pertenece esta columna. Ayuda a organizar las columnas relacionadas.
+| **description**         | cadena  | Descripción de cara al usuario de la columna.
+| **displayName**         | cadena  | Nombre de cara al usuario de la columna.
+| **enforceUniqueValues** | booleano | Si es true, dos elementos de la lista no pueden tener el mismo valor para esta columna.
+| **hidden**              | booleano | Especifica si la columna se muestra en la interfaz de usuario.
+| **id**                  | cadena  | El identificador único de la columna.
+| **indexed**             | booleano | Especifica si los valores de columna se pueden usar para ordenar y buscar.
+| **name**                | cadena  | El nombre de cara a la API de la columna tal como aparece en [fields][] en un recurso [listItem][]. Para el nombre de cara al usuario, consulte **displayName**.
+| **readOnly**            | booleano    | Especifica si se pueden modificar los valores de columna.
+| **required**            | booleano | Especifica si el valor de columna no es opcional.
 
 Las columnas pueden contener datos de distintos tipos.
 Las propiedades siguientes indican qué tipo de datos almacena una columna, así como una configuración adicional para esos datos.
@@ -66,7 +72,7 @@ Estas propiedades son mutuamente exclusivas, una columna solo puede tener uno de
 
 | Nombre de propiedad     | Tipo                    | Descripción
 |:------------------|:------------------------|:-------------------------------
-| **boolean**       | [booleanColumn][]       | Esta columna almacena valores booleanos.
+| **booleano**       | [booleanColumn][]       | Esta columna almacena valores booleanos.
 | **calculated**    | [calculatedColumn][]    | Los datos de la columna se calculan en función de otras columnas.
 | **choice**        | [choiceColumn][]        | Esta columna almacena los datos de una lista de opciones.
 | **currency**      | [currencyColumn][]      | Esta columna almacena valores de moneda.
@@ -78,7 +84,7 @@ Estas propiedades son mutuamente exclusivas, una columna solo puede tener uno de
 | **text**          | [textColumn][]          | Esta columna almacena valores de texto.
 
 Nota: Estas propiedades se corresponden con la enumeración [SPFieldType][] de SharePoint.
-Aunque los tipos más comunes de campo están representados en la tabla anterior, aún faltan algunos en esta API de versión beta.
+Aunque los tipos más comunes de campo están representados en la tabla anterior, aún faltan algunos en esta API.
 En esos casos, no se rellenará ninguna de las facetas de tipo de columna y la columna solo tendrá sus propiedades básicas.
 
 ## <a name="remarks"></a>Comentarios

@@ -13,11 +13,10 @@ Por ejemplo, si se especifica una zona horaria con las propiedades siguientes:
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 | dayOccurrence | Edm.Int32 | Representa la enésima repetición del día de la semana en el que se produce la transición del horario de verano a la hora estándar. |
-| dayOfWeek | string | Representa el día de la semana en el que se produce la transición del horario de verano a la hora estándar. |
+| dayOfWeek | dayOfWeek | Representa el día de la semana en el que se produce la transición del horario de verano a la hora estándar. |
 | month | Edm.Int32 | Representa el mes del año en el que se produce la transición del horario de verano a la hora estándar. |
 | time | Edm.TimeOfDay | Representa la hora del día en la que se produce la transición del horario de verano a la hora estándar. |
 | year | Edm.Int32 | Representa la frecuencia en términos de años con que se produce el cambio del horario de verano a la hora estándar. Por ejemplo, un valor 0 significa todos los años.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

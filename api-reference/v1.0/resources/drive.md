@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Unidad de disco
-ms.openlocfilehash: 0b178967f7eb8da8bdf8584bb13a7d4f9950392b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: c1abdfefa30dc2f510f3207adaf1d61a4d6a5edd
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270100"
 ---
 # <a name="drive-resource-type"></a>Tipo de recurso Drive
 
@@ -21,10 +22,27 @@ A continuación se muestra una representación JSON de un recurso Drive.
 
 El recurso **drive** deriva de [**baseItem**](baseitem.md) y hereda las propiedades de ese recurso.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.drive",
-       "keyProperty": "id", 
-       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "activities",
+    "createdBy",
+    "createdDateTime",
+    "description",
+    "lastModifiedBy",
+    "lastModifiedDateTime",
+    "name",
+    "webUrl",
+    "items",
+    "root",
+    "sharepointIds",
+    "special",
+    "system"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.drive"
+}-->
 
 ```json
 {
@@ -40,6 +58,7 @@ El recurso **drive** deriva de [**baseItem**](baseitem.md) y hereda las propieda
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
   "quota": { "@odata.type": "microsoft.graph.quota" },
   "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"
@@ -52,17 +71,17 @@ El recurso **drive** deriva de [**baseItem**](baseitem.md) y hereda las propieda
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | Identidad del usuario, del dispositivo o de la aplicación que ha creado el elemento. Solo lectura.                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | Fecha y hora de creación del elemento. Solo lectura.                                                                                                                                                                                       |
-| description          | String                        | Proporciona una descripción de la unidad visible para el usuario. Lectura y escritura.
-| driveType            | String                        | Describe el tipo de unidad que representa este recurso. Las unidades personales de OneDrive devolverán `personal`. OneDrive para la Empresa devolverá `business`. Las bibliotecas de documentos de SharePoint devolverán `documentLibrary`. Solo lectura. |
-| id                   | String                        | El identificador único de la unidad. Solo lectura.                                                                                                                                                                                   |
+| description          | Cadena                        | Proporciona una descripción de la unidad visible para el usuario. Lectura y escritura.
+| driveType            | Cadena                        | Describe el tipo de unidad que representa este recurso. Las unidades personales de OneDrive devolverán `personal`. OneDrive para la Empresa devolverá `business`. Las bibliotecas de documentos de SharePoint devolverán `documentLibrary`. Solo lectura. |
+| id                   | Cadena                        | El identificador único de la unidad. Solo lectura.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | Fecha y hora de la última modificación del elemento. Solo lectura.                                                                                                                                                                             |
-| name                 | string                        | Nombre del elemento. Lectura y escritura.                                                                                                                                                                                                |
+| name                 | cadena                        | Nombre del elemento. Lectura y escritura.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Opcional. La cuenta de usuario propietaria de la unidad. Solo lectura.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Opcional. Información sobre la cuota de espacio de almacenamiento de la unidad. Solo lectura.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                                                                                                                                                         |
-| sistema               | [systemFacet][]               | Si está presente, indica que se trata de una unidad administrada por el sistema. Solo lectura.
-| webUrl               | string (url)                  | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                                                                                        |
+| system               | [systemFacet][]               | Si está presente, indica que se trata de una unidad administrada por el sistema. Solo lectura.
+| webUrl               | cadena (url)                  | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
@@ -72,9 +91,10 @@ El recurso **drive** deriva de [**baseItem**](baseitem.md) y hereda las propieda
 
 | Relación | Tipo                                 | Descripción
 |:-------------|:-------------------------------------|:-----------------------
-| items        | Colección [driveitem](driveitem.md) | Todos los elementos contenidos en la unidad. Solo lectura. Admite valores NULL.
-| root         | [driveitem](driveitem.md)            | La carpeta raíz de la unidad. Solo lectura.
-| special      | Colección [driveitem](driveitem.md) | Colección de carpetas comunes disponibles en OneDrive. Solo lectura. Admite valores NULL.
+| items        | Colección [DriveItem](driveitem.md) | Todos los elementos contenidos en la unidad de disco. Solo lectura. Admite un valor NULL.
+| root         | [DriveItem](driveitem.md)            | La carpeta raíz de la unidad de disco. Solo lectura.
+| special      | Colección [DriveItem](driveitem.md) | Colección de carpetas comunes disponibles en OneDrive. Solo lectura. Admite un valor NULL.
+| list         | [Lista](list.md)                      | Para unidades de disco en SharePoint, la lista subyacente de la biblioteca de documentos. Solo lectura. Admite un valor NULL.
 
 ## <a name="methods"></a>Métodos
 
@@ -105,6 +125,10 @@ En la tabla anterior, los ejemplos usan `/drive` pero también son válidas otra
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/drive.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Drives",
   "tocBookmarks": { "Resources/Drive": "#" }
 } -->

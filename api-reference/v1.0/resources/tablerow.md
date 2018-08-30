@@ -7,19 +7,19 @@ Representa una fila de una tabla.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get TableRow](../api/tablerow_get.md) | [TableRow](tablerow.md) |Lee las propiedades y relaciones del objeto tableRow.|
-|[Update](../api/tablerow_update.md) | [TableRow](tablerow.md)    |Actualiza el objeto TableRow. |
+|[Get TableRow](../api/tablerow_get.md) | [WorkbookTableRow](tablerow.md) |Lee las propiedades y relaciones del objeto tableRow.|
+|[Update](../api/tablerow_update.md) | [WorkbookTableRow](tablerow.md)  |Actualiza el objeto TableRow. |
 |[Range](../api/tablerow_range.md)|[Range](range.md)|Devuelve el objeto de rango asociado a toda la fila.|
-|[Delete](../api/tablerow_delete.md)|None|Elimina la fila de la tabla.|
-|[List](../api/tablerow_list.md) | Colección [TableRow](tablerow.md) |Obtiene la colección de objetos tableRow. |
-|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Obtiene una fila en función de su posición en la colección.|
-|[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Agrega una nueva fila a la tabla.|
+|[Delete](../api/tablerow_delete.md)|Ninguno|Elimina la fila de la tabla.|
+|[List](../api/tablerow_list.md) | Colección de [WorkbookTableRow](tablerow.md) |Obtiene la colección de objetos tableRow. |
+|[Itemat](../api/tablerowcollection_itemat.md)|[WorkbookTableRow](tablerow.md)|Obtiene una fila en función de su posición en la colección.|
+|[Add](../api/tablerowcollection_add.md)|[WorkbookTableRow](tablerow.md)|Agrega una nueva fila a la tabla.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|int|Devuelve el número de índice de la fila dentro de la colección de filas de la tabla. Indizado con cero. Solo lectura.|
-|values|json|Representa los valores sin formato del intervalo especificado. Los datos devueltos pueden ser de tipo string, number o boolean. La celda que contenga un error devolverá la cadena de error.|
+|values|Json|Representa los valores sin formato del intervalo especificado. Los datos devueltos pueden ser de tipo string, number o boolean. La celda que contenga un error devolverá la cadena de error.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -29,12 +29,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableRow"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableRow"
 }-->
 
 ```json

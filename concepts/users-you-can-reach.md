@@ -28,11 +28,11 @@ Con su consentimiento, puede usar Microsoft Graph para llegar a los usuarios y o
 
 ## <a name="connect-to-school-services"></a>Conectarse a servicios académicos
 
-Use Microsoft Graph para llegar a los estudiantes, profesores y escuelas con licencias para los servicios de Microsoft 365 para el ámbito educativo. Con su consentimiento, puede usar las API para el ámbito educativo de Microsoft Graph que mejoran los recursos y los datos de Office 365 con la información pertinente para los escenarios de educación, que incluye centros educativos, estudiantes, profesores, clases, inscripciones y tareas. 
+Use Microsoft Graph para llegar a los estudiantes, profesores y escuelas con licencias para los servicios de Microsoft 365 para el ámbito educativo. Con su consentimiento, puede usar las API para el ámbito educativo de Microsoft Graph que mejoran los recursos y los datos de Office 365 con la información pertinente para los escenarios de educación, que incluye centros educativos, estudiantes, profesores, clases, inscripciones y tareas. Obtenga más información sobre la [integración con la API de educación](education-concept-overview.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- Consulte algunos [escenarios destacados](https://developer.microsoft.com/es-ES/graph/examples).
+- Consulte algunos [escenarios destacados](https://developer.microsoft.com/en-us/graph/examples).
 - Pruebe una solicitud de ejemplo en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use el [inicio rápido](https://developer.microsoft.com/graph/quick-start) para configurar una aplicación de ejemplo lista para ejecutar.
 - En la tabla de contenido, busque en **Aprender** para obtener información sobre los servicios y las características que puede usar en los escenarios. 

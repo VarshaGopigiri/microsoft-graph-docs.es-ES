@@ -6,7 +6,7 @@ Directivas de perfiles de firewall de Windows.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|firewallEnabled|Cadena|Activa el firewall y el cumplimiento de seguridad avanzada. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
+|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Activa el firewall y el cumplimiento de seguridad avanzada. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
 |stealthModeBlocked|Booleano|Evita que el servidor funcione en modo silencioso|
 |incomingTrafficBlocked|Booleano|Configura el firewall para bloquear todo el tráfico entrante independientemente de otras opciones de configuración de directiva|
 |unicastResponsesToMulticastBroadcastsBlocked|Booleano|Configura el firewall para bloquear las respuestas de unidifusión al tráfico de multidifusión.|
@@ -23,12 +23,10 @@ Directivas de perfiles de firewall de Windows.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsFirewallNetworkProfile",

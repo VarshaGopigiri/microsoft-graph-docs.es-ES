@@ -6,21 +6,20 @@ Directiva de administrador de cuentas de PC compartido. Solo se aplica cuando el
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|accountDeletionPolicy|Cadena|Configura cuándo se eliminan las cuentas. Los valores posibles son: `immediate`, `diskSpaceThreshold` y `diskSpaceThresholdOrInactiveThreshold`.|
+|accountDeletionPolicy|[sharedPCAccountDeletionPolicyType](../resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype.md)|Configura cuándo se eliminan las cuentas. Los valores posibles son: `immediate`, `diskSpaceThreshold` y `diskSpaceThresholdOrInactiveThreshold`.|
 |cacheAccountsAboveDiskFreePercentage|Int32|Establece el porcentaje de espacio en disco disponible que debería tener un equipo antes de detener la eliminación de cuentas de equipo compartido en caché. Solo se aplica cuando AccountDeletionPolicy es DiskSpaceThreshold o DiskSpaceThresholdOrInactiveThreshold. Valores válidos de 0 a 100|
 |inactiveThresholdDays|Int32|Especifica si se empezarán a eliminar las cuentas cuando no se haya iniciado sesión durante el período especificado, expresado como número de días. Solo se aplica cuando AccountDeletionPolicy es DiskSpaceThreshold o DiskSpaceThresholdOrInactiveThreshold.|
 |removeAccountsBelowDiskFreePercentage|Int32|Establece el porcentaje de espacio en disco restante en un equipo antes de que se eliminen las cuentas en caché para liberar espacio en disco. Las cuentas que hayan estado inactivas más tiempo se eliminarán en primer lugar. Solo se aplica cuando AccountDeletionPolicy es DiskSpaceThresholdOrInactiveThreshold. Valores válidos de 0 a 100|
+
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedPCAccountManagerPolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharedPCAccountManagerPolicy",

@@ -27,9 +27,9 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|count|Int32|El número de columnas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1|
+|count|Int32|Opcional. El número de columnas a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede utilizar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1|
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
@@ -38,12 +38,14 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 Aquí tiene un ejemplo de cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_columnsafter"
+  "isComposable": true,
+  "name": "workbookrange_columnsafter",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=2)
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=2)
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -51,7 +53,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

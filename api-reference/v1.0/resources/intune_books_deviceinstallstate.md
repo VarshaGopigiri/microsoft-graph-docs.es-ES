@@ -15,26 +15,26 @@ Contiene las propiedades del estado de la instalación para un dispositivo.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Clave de la entidad.|
-|deviceName|cadena|Nombre del dispositivo.|
-|deviceId|cadena|Id. del dispositivo|
+|id|Cadena|Clave de la entidad.|
+|deviceName|Cadena|Nombre del dispositivo.|
+|deviceId|Cadena|Id. del dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización.|
-|installState|cadena|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
-|errorCode|cadena|El código de error si hay errores de instalación.|
-|osVersion|cadena|Versión del sistema operativo.|
-|osDescription|cadena|Descripción del sistema operativo.|
-|userName|cadena|Nombre de usuario del dispositivo.|
+|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
+|errorCode|Cadena|El código de error si hay errores de instalación.|
+|osVersion|Cadena|Versión del sistema operativo.|
+|osDescription|Cadena|Descripción del sistema operativo.|
+|userName|Cadena|Nombre de usuario del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceInstallState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceInstallState",

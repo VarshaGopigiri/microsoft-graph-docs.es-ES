@@ -1,4 +1,4 @@
-# <a name="microsoft-teams-teamwork-api-overview"></a>Información general sobre la API de trabajo en equipo de Microsoft Teams
+# <a name="microsoft-teams-api-overview-preview"></a>Introducción a la API de Microsoft Teams (vista previa)
 
 Microsoft Teams es el centro definitivo para el trabajo en equipo y las comunicaciones inteligentes. Basado en la escala y la solidez de Office 365 con más de 120 millones de usuarios, Microsoft Teams ofrece colaboración basada en chat, reuniones, llamadas y características de telefonía IP empresarial.
 
@@ -16,7 +16,7 @@ Los sitios web, los servicios y las aplicaciones de la plataforma nativa no se e
 
 ![Llamar a la API de Microsoft Teams desde pestañas, bots, sitios web y servicios](images/TeamsAppEndpoints.png)
 
-Entre estas herramientas de colaboración, se incluyen las aplicaciones de bots o pestañas habilitadas para Microsoft Graph que se ejecutan dentro de Microsoft Teams. También puede realizar llamadas a Microsoft Graph desde fuera de una aplicación de Microsoft Teams (por ejemplo, desde un sitio web o un servicio web). Si ya habilitó su sitio web para Microsoft Graph, puede usar ese trabajo para Microsoft Teams con la [plataforma para desarrolladores de Microsoft Teams](https://docs.microsoft.com/es-ES/microsoftteams/platform/#pivot=home&panel=home-all) para crear una aplicación de pestaña que use el código del sitio web existente.
+Entre estas herramientas de colaboración, se incluyen las aplicaciones de bots o pestañas habilitadas para Microsoft Graph que se ejecutan dentro de Microsoft Teams. También puede realizar llamadas a Microsoft Graph desde fuera de una aplicación de Microsoft Teams (por ejemplo, desde un sitio web o un servicio web). Si ya habilitó su sitio web para Microsoft Graph, puede usar ese trabajo para Microsoft Teams con la [plataforma para desarrolladores de Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) para crear una aplicación de pestaña que use el código del sitio web existente.
 
 Si una aplicación de bot o pestaña de Microsoft Teams no es la forma ideal de completar el escenario, seleccione uno de los tipos de aplicación siguiente.
 
@@ -31,7 +31,6 @@ Si una aplicación de bot o pestaña de Microsoft Teams no es la forma ideal de 
 |Extensiones de mensajería|Permite a los usuarios consultar y compartir tarjetas mejoradas en conversaciones.|
 |Servicios|Mejora las aplicaciones cliente con datos de Microsoft Graph con un servicio web.|
 
-
 ### <a name="create-multiple-teams-and-channels"></a>Crear varios equipos y canales
 
 Permita a sus clientes crear [equipos](../api-reference/beta/resources/team.md) y [canales](../api-reference/beta/resources/channel.md) vinculados a la aplicación. Permita fácilmente crear un gran número de equipos y rellenarlos con usuarios y canales con la API de Microsoft Teams.
@@ -45,9 +44,7 @@ Cuando se solucione el problema empresarial y ya no necesite el equipo virtual, 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - Obtenga información sobre cómo [usar la API de Microsoft Teams](../api-reference/beta/resources/teams_api_overview.md).
-- Explore en profundidad los métodos, propiedades y relaciones de los recursos de [equipo](../api-reference/beta/resources/team.md), [canal](../api-reference/beta/resources/channel.md) y [grupo](.../api-reference/v1.0/resources/group.md).
-- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/es-ES/graph/graph-explorer).
-- Obtenga más información sobre el [modelo de programación de Microsoft Teams](https://docs.microsoft.com/es-ES/microsoftteams/platform/concepts/concepts-overview).
+- Explore en profundidad los métodos, propiedades y relaciones de los recursos de [equipo](../api-reference/beta/resources/team.md), [canal](../api-reference/beta/resources/channel.md) y [grupo](../api-reference/v1.0/resources/group.md).
+- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Obtenga más información sobre el [modelo de programación de Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Empiece rápidamente con [código de ejemplo](https://github.com/OfficeDev/microsoft-teams-sample-graph).
-
-
