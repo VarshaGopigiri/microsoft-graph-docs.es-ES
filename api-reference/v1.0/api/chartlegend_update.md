@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
+PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
@@ -26,13 +26,13 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|overlay|boolean|Valor booleano que indica si la leyenda del gráfico debe superponerse al cuerpo principal del gráfico.|
-|position|string|Representa la posición de la leyenda del gráfico. Valores posibles: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
-|visible|boolean|Valor booleano que representa la visibilidad de un objeto ChartLegend.|
+|overlay|booleano|Valor booleano que indica si la leyenda del gráfico debe superponerse al cuerpo principal del gráfico.|
+|position|cadena|Representa la posición de la leyenda del gráfico. Los valores posibles son `Top`, `Bottom`, `Left`, `Right`, `Corner` y `Custom`.|
+|visible|booleano|Valor booleano que representa la visibilidad de un objeto ChartLegend.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [ChartLegend](../resources/chartlegend.md) actualizado en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta`200 OK` y el objeto [WorkbookChartLegend](../resources/chartlegend.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -41,7 +41,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_chartlegend"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/legend
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend
 Content-type: application/json
 Content-length: 72
 
@@ -56,7 +56,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

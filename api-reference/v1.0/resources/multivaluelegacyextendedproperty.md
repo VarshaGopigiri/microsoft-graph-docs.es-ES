@@ -8,13 +8,13 @@ Consulte el artículo de [información general sobre las propiedades extendidas]
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | Instancia de recurso admitida: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md) o [contactFolder](../resources/contactfolder.md). Tenga en cuenta que no se admite [post](../resources/post.md) de grupo. | Crea una **multiValueLegacyExtendedProperty** en una instancia nueva o existente de un recurso compatible. |
+|[Publicar](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | Instancia de recurso admitida: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md) o [contactFolder](../resources/contactfolder.md). Tenga en cuenta que no se admite [post](../resources/post.md) de grupo. | Crea una **multiValueLegacyExtendedProperty** en una instancia nueva o existente de un recurso compatible. |
 |[Get](../api/multivaluelegacyextendedproperty_get.md) |Instancia de recurso admitida ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md) o [post](../resources/post.md) de grupo) expandida con un objeto [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md). |Obtiene una instancia del recurso con una propiedad extendida mediante `$expand`.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|string|Identificador de la propiedad. Solo lectura.|
+|id|cadena|Identificador de la propiedad. Solo lectura.|
 |value|colección string|Colección de valores de propiedad.|
 
 ## <a name="relationships"></a>Relaciones
@@ -25,12 +25,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 }-->
 
 ```json

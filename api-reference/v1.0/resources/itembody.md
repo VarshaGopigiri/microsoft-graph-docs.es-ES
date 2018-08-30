@@ -5,8 +5,8 @@ Representa las propiedades del cuerpo de un elemento, como un mensaje, un evento
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|content|String|Contenido del elemento.|
-|contentType|String|Tipo de contenido. Valores posibles: `Text` y `HTML`.|
+|content|Cadena|Contenido del elemento.|
+|contentType|bodyType|Tipo de contenido. Valores posibles: `Text` y `HTML`.|
 
 ## <a name="json-representation"></a>Representación JSON
 

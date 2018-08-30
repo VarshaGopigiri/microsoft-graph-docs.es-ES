@@ -7,14 +7,29 @@ Representa el formato de relleno de un elemento de gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill_clear.md)|None|Borra el color de relleno de un elemento de gráfico.|
-|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|None|Establece el formato de relleno de un elemento de gráfico en un color uniforme.|
+|[Clear](../api/chartfill_clear.md)|Ninguno|Borra el color de relleno de un elemento de gráfico.|
+|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|Ninguno|Establece el formato de relleno de un elemento de gráfico en un color uniforme.|
 
 ## <a name="properties"></a>Propiedades
 Ninguno
 
 ## <a name="relationships"></a>Relaciones
-None
+Ninguno
+
+
+## <a name="json-representation"></a>Representación JSON
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartFill"
+}-->
+
+```json
+{
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

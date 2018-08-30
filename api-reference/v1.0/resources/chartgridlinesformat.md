@@ -4,15 +4,34 @@ Encapsula las propiedades de formato de las líneas de cuadrícula del gráfico.
 
 
 ## <a name="methods"></a>Métodos
-None
+Ninguno
 
 ## <a name="properties"></a>Propiedades
 Ninguno
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|line|[ChartLineFormat](chartlineformat.md)|Representa el formato de línea de gráfico. Solo lectura.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Representa el formato de línea de gráfico. Solo lectura.|
+
+
+## <a name="json-representation"></a>Representación JSON
+
+Aquí tiene una representación JSON del recurso.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartGridlinesFormat"
+}-->
+
+```json
+{
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
