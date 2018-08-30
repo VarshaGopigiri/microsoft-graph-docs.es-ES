@@ -24,7 +24,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,11 +34,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |passwordRequired|Booleano|Exige una contraseña para desbloquear el dispositivo Windows.|
 |passwordBlockSimple|Booleano|Indica si quiere bloquear o no la contraseña simple.|
@@ -47,13 +47,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordExpirationDays|Int32|La expiración de la contraseña en días.|
 |passwordMinimumLength|Int32|La longitud mínima de contraseña.|
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passwordRequiredType|String|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que impide su reutilización.|
 |requireHealthyDeviceReport|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos.|
-|osMinimumVersion|String|Versión mínima de Windows 10.|
-|osMaximumVersion|String|Versión máxima de Windows 10.|
-|mobileOsMinimumVersion|String|Versión mínima de Windows Phone.|
-|mobileOsMaximumVersion|String|Versión máxima de Windows Phone.|
+|osMinimumVersion|Cadena|Versión mínima de Windows 10.|
+|osMaximumVersion|Cadena|Versión máxima de Windows 10.|
+|mobileOsMinimumVersion|Cadena|Versión mínima de Windows Phone.|
+|mobileOsMaximumVersion|Cadena|Versión máxima de Windows Phone.|
 |earlyLaunchAntiMalwareDriverEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; el controlador antimalware de inicio temprano está habilitado.|
 |bitLockerEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; BitLocker está habilitado.|
 |secureBootEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; el arranque seguro está habilitado.|
