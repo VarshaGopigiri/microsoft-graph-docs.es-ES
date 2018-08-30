@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Permiso
-ms.openlocfilehash: 9f73684d51ab4cee047219e142f72edf778cb171
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4c39722653cd61f5d58a4de5b317cb3a1a9afb9d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269617"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso Permission
 
@@ -20,10 +21,17 @@ El recurso **Permission** representa estas formas diferentes a través de faceta
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -42,12 +50,12 @@ Aquí tiene una representación JSON del recurso
 
 | Propiedad      | Tipo                                      | Descripción
 |:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | El identificador único del permiso entre todos los permisos del elemento. Solo lectura.
+| id            | Cadena                                    | El identificador único del permiso entre todos los permisos del elemento. Solo lectura.
 | grantedTo     | [IdentitySet](identityset.md)             | Para los permisos de tipo de usuario, los detalles de los usuarios y aplicaciones para este permiso. Solo lectura.
 | invitation    | [SharingInvitation][]                     | Detalles de cualquier invitación para uso compartido asociada de este permiso. Solo lectura.
 | inheritedFrom | [ItemReference](itemreference.md)         | Proporciona una referencia al antecesor del permiso actual, si se ha heredado de un antecesor. Solo lectura.
-| link          | [SharingLink][]                           | Proporciona los detalles del vínculo del permiso actual, si es un permiso de tipo de vínculo. Solo lectura.
-| role          | Colección de String.                      | El tipo de permiso, p. ej., `read`. Más adelante encontrará una lista completa de roles. Solo lectura.
+| vincular          | [SharingLink][]                           | Proporciona los detalles del vínculo del permiso actual, si es un permiso de tipo de vínculo. Solo lectura.
+| roles         | Colección de String.                      | El tipo de permiso, p. ej., `read`. Más adelante encontrará una lista completa de roles. Solo lectura.
 | shareId       | Cadena                                    | Token único que se puede utilizar para tener acceso a este elemento compartido a través de la [API **shares**](../api/shares_get.md). Solo lectura.
 
 El recurso de permiso usa _facetas_ para proporcionar información sobre el tipo de permiso que representa el recurso.

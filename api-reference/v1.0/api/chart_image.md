@@ -11,25 +11,27 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-
+GET /workbook/worksheets/{id|name}/charts/{name}/image
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
+| Autorización  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="path-parameters"></a>Parámetros de ruta
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|height|number|Opcional. Alto deseado de la imagen resultante.|
-|width|number|Opcional. Ancho deseado de la imagen resultante.|
-|fittingMode|string|Opcional. Método usado para escalar el gráfico a las dimensiones especificadas (si se han establecido el alto y el ancho)".  Valores posibles: `Fit`, `FitAndCenter`, `Fill`.|
+|height|Int32|Alto deseado de la imagen resultante. Opcional.|
+|width|Int32|Ancho deseado de la imagen resultante. Opcional.|
+|fittingMode|cadena|Método utilizado para escalar el gráfico a las dimensiones especificadas (si se establecen height y width)."  Los valores posibles son: `Fit`, `FitAndCenter` y `Fill`.|
 
 ## <a name="response"></a>Respuesta
 
@@ -37,16 +39,18 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.
+
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
-<!-- { "blockType": "ignored" } -->
+Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true

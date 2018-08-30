@@ -9,7 +9,7 @@ Hereda de [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchengi
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|edgeSearchEngineType|cadena|Permite a los administradores de TI configurar un motor de búsqueda predeterminado predefinido para dispositivos controlados por MDM. Los valores posibles son: `default` y `bing`.|
+|edgeSearchEngineType|[edgeSearchEngineType](../resources/intune_deviceconfig_edgesearchenginetype.md)|Permite a los administradores de TI configurar un motor de búsqueda predeterminado predefinido para dispositivos controlados por MDM. Los valores posibles son: `default` y `bing`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -17,7 +17,7 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.edgeSearchEngineBase",
   "@odata.type": "microsoft.graph.edgeSearchEngine"
 }
 -->

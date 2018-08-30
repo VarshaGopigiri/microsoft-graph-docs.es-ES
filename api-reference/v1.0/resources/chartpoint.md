@@ -7,35 +7,37 @@ Representa un punto de una serie de un gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |Lee las propiedades y relaciones del objeto chartPoint.|
-|[List](../api/chartpoint_list.md) | Colección [ChartPoint](chartpoint.md) |Obtiene la colección de objetos chartPoint. |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Recupera un punto en función de su posición dentro de la serie.|
+|[Get ChartPoint](../api/chartpoint_get.md) | [WorkbookChartPoint](chartpoint.md) |Lee las propiedades y relaciones del objeto chartPoint.|
+|[Lista](../api/chartpoint_list.md) | Colección de [WorkbookChartPoint](chartpoint.md) |Obtiene la colección de objetos chartPoint. |
+|[Itemat](../api/chartpointscollection_itemat.md)|[WorkbookChartPoint](chartpoint.md)|Recupera un punto en función de su posición dentro de la serie.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|value|object|Devuelve el valor de un punto del gráfico. Solo lectura.|
+|value|Json|Devuelve el valor de un punto del gráfico. Solo lectura.|
+|id|cadena|identificador único|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|format|[ChartPointFormat](chartpointformat.md)|Encapsula las propiedades de formato del punto del gráfico. Solo lectura.|
+|format|[WorkbookChartPointFormat](chartpointformat.md)|Encapsula las propiedades de formato del punto del gráfico. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartPoint"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 }-->
 
 ```json
 {
-  "value": "string"
+  "value": "string",
+  "id": "string"
 }
 
 ```

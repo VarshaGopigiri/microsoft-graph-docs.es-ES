@@ -31,52 +31,52 @@ Este recurso admite:
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|assistantName|String|El nombre del ayudante del contacto.|
+|assistantName|Cadena|El nombre del ayudante del contacto.|
 |birthday|DateTimeOffset|El cumpleaños del contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|La dirección del trabajo del contacto.|
-|businessHomePage|String|La página principal de la empresa del contacto.|
+|businessHomePage|Cadena|La página principal de la empresa del contacto.|
 |businessPhones|Colección String|Los números de teléfono del trabajo del contacto.|
 |categories|Colección String|Las categorías asociadas con el contacto.|
-|changeKey|String|Identifica la versión del contacto. Cada vez que cambia el contacto, cambia también ChangeKey. Permite que Exchange aplique los cambios a la versión correcta del objeto.|
+|changeKey|Cadena|Identifica la versión del contacto. Cada vez que cambia el contacto, cambia también ChangeKey. Permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |children|Colección String|Los nombres de los hijos del contacto.|
-|companyName|String|El nombre de la empresa del contacto.|
+|companyName|Cadena|El nombre de la empresa del contacto.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|departamento|String|El departamento del contacto.|
-|displayName|String|El nombre para mostrar del contacto.|
+|departamento|Cadena|El departamento del contacto.|
+|displayName|Cadena|El nombre para mostrar del contacto.|
 |emailAddresses|Colección [EmailAddress](emailaddress.md)|Las direcciones de correo electrónico del contacto.|
 |flag|[followUpFlag](followupflag.md)|Valor de marca que indica el estado, la fecha de inicio, la fecha de vencimiento o la fecha de finalización del mensaje.|
-|fileAs|String|El nombre con el que se ha archivado el contacto.|
-|generation|String|La generación del contacto.|
-|givenName|String|El nombre del contacto.|
+|fileAs|Cadena|El nombre con el que se ha archivado el contacto.|
+|generation|Cadena|La generación del contacto.|
+|givenName|Cadena|El nombre del contacto.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|La dirección particular del contacto.|
 |homePhones|Colección String|Los números de teléfono particular del contacto.|
-|id|String|El identificador único del contacto. Solo lectura.|
+|id|Cadena|El identificador único del contacto. Solo lectura.|
 |imAddresses|Colección String|Las direcciones de mensajería instantánea (MI) del contacto.|
-|initials|String|Las iniciales del contacto.|
-|jobTitle|String|El puesto del contacto.|
+|initials|Cadena|Las iniciales del contacto.|
+|jobTitle|Cadena|El puesto del contacto.|
 |lastModifiedDateTime|DateTimeOffset|La hora en que se ha modificado el contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|manager|String|El nombre del administrador del contacto.
-|middleName|String|El segundo nombre del contacto.|
-|mobilePhone|String|El número de teléfono móvil del contacto.|
-|nickName|String|El sobrenombre del contacto.|
-|officeLocation|String|La ubicación de la oficina del contacto.|
+|manager|Cadena|El nombre del administrador del contacto.
+|middleName|Cadena|El segundo nombre del contacto.|
+|mobilePhone|Cadena|El número de teléfono móvil del contacto.|
+|nickName|Cadena|El sobrenombre del contacto.|
+|officeLocation|Cadena|La ubicación de la oficina del contacto.|
 |otherAddress|[PhysicalAddress](physicaladdress.md)|Otras direcciones del contacto.|
-|parentFolderId|String|El identificador de la carpeta principal del contacto.|
-|personalNotes|String|Las notas del usuario sobre el contacto.|
-|profession|String|La profesión del contacto.|
-|spouseName|String|El nombre del cónyuge del contacto.|
-|surname|String|Los apellidos del contacto.|
-|title|String|El título del contacto.|
-|yomiCompanyName|String|El nombre fonético japonés de la empresa del contacto.|
-|yomiGivenName|String|El nombre (nombre de pila) fonético japonés del contacto.|
-|yomiSurname|String|El apellido fonético japonés del contacto.|
+|parentFolderId|Cadena|El identificador de la carpeta principal del contacto.|
+|personalNotes|Cadena|Las notas del usuario sobre el contacto.|
+|profession|Cadena|La profesión del contacto.|
+|spouseName|Cadena|El nombre del cónyuge del contacto.|
+|surname|Cadena|Los apellidos del contacto.|
+|title|Cadena|El título del contacto.|
+|yomiCompanyName|Cadena|El nombre fonético japonés de la empresa del contacto.|
+|yomiGivenName|Cadena|El nombre (nombre de pila) fonético japonés del contacto.|
+|yomiSurname|Cadena|El apellido fonético japonés del contacto.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el contacto. Solo lectura. Admite valores NULL.|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el contacto. Solo lectura. Admite valores NULL.|
-|Foto|[profilePhoto](profilephoto.md)| Imagen de contacto opcional. Puede obtener o establecer una foto para un contacto.|
+|photo|[profilePhoto](profilephoto.md)| Imagen de contacto opcional. Puede obtener o establecer una foto para un contacto.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el contacto. Solo lectura. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
@@ -85,6 +85,8 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "extensions",
     "multiValueExtendedProperties",
@@ -92,7 +94,26 @@ Aquí tiene una representación JSON del recurso
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "@odata.annotations": [
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -142,7 +163,7 @@ Aquí tiene una representación JSON del recurso
 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)

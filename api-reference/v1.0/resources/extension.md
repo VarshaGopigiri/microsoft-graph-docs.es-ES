@@ -7,7 +7,10 @@ Tipo abstracto para admitir el tipo abierto de OData v4 [openTypeExtension](open
 Aquí tiene una representación JSON del recurso
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -21,12 +24,12 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
-Ninguno
+Ninguna
 
 
 ## <a name="methods"></a>Métodos

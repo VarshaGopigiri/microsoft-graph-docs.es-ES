@@ -7,14 +7,14 @@ Encapsula las opciones de formato para los elementos de línea.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |Lee las propiedades y relaciones del objeto chartLineFormat.|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |Actualiza el objeto ChartLineFormat. |
-|[Clear](../api/chartlineformat_clear.md)|None|Borra el formato de línea de un elemento de gráfico.|
+|[Get ChartLineFormat](../api/chartlineformat_get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Lee las propiedades y relaciones del objeto chartLineFormat.|
+|[Update](../api/chartlineformat_update.md) | [WorkbookChartLineFormat](chartlineformat.md) |Actualiza el objeto ChartLineFormat. |
+|[Clear](../api/chartlineformat_clear.md)|Ninguno|Borra el formato de línea de un elemento de gráfico.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|color|string|Código de color HTML que representa el color de las líneas del gráfico.|
+|color|cadena|Código de color HTML que representa el color de las líneas del gráfico.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -24,12 +24,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

@@ -23,7 +23,7 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|versión|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |omaSettings|Colección [omaSetting](../resources/intune_deviceconfig_omasetting.md)|Configuración de OMA. Esta colección puede contener un máximo de 1000 elementos.|
 
 ## <a name="relationships"></a>Relaciones
@@ -38,12 +38,12 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "@odata.type": "microsoft.graph.windows10CustomConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -55,7 +55,7 @@ Aquí tiene una representación JSON del recurso.
   "version": 1024,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
       "omaUri": "String",
