@@ -11,10 +11,10 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |:---------------|:--------|:----------|
 |[Obtener organización](../api/organization_get.md) | [organization](organization.md) |Lea las propiedades y las relaciones del objeto organization.|
 |[Actualizar](../api/organization_update.md) | [organization](organization.md)  |Actualizar el objeto organization. Las únicas propiedades que pueden actualizarse son: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** y **privacyProfile**. |
-|**Extensiones abiertas**| | ||**Extensiones abiertas**| | |
+|**Extensiones abiertas**| 
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
 |[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
-|**Extensiones de esquema**| | |
+|**Extensiones de esquema**| 
 |[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
 
 ## <a name="properties"></a>Propiedades
