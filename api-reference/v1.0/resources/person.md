@@ -12,26 +12,26 @@ Una agregación de información sobre un contacto de correo electrónico, contac
 
 | Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
-|birthday|String|Cumpleaños del contacto.|
-|companyName|String|Nombre de la compañía del contacto.|
-|department|String|Departamento del contacto.|
-|displayName|String|Nombre para mostrar del contacto.|
+|birthday|Cadena|Cumpleaños del contacto.|
+|companyName|Cadena|Nombre de la compañía del contacto.|
+|department|Cadena|Departamento del contacto.|
+|displayName|Cadena|Nombre para mostrar del contacto.|
 |scoredEmailAddresses|Colección [scoredEmailAddress](scoredemailaddress.md)|Direcciones de correo electrónico del contacto.|
-|givenName|String|Nombre propio del contacto.|
-|id|String|Identificador único del contacto. Solo lectura.|
-|imAddress|String|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
-|isFavorite|Boolean|`true` si el usuario ha marcado este contacto como favorito.|
-|jobTitle|String|Puesto del contacto.|
-|officeLocation|String|Ubicación de la oficina del contacto.|
-|personNotes|String|Notas de forma libre que el usuario ha tomado sobre este contacto.|
-|personType|Colección [personType](persontype.md)|Tipo de contacto.|
+|givenName|Cadena|Nombre propio del contacto.|
+|id|Cadena|Identificador único del contacto. Solo lectura.|
+|imAddress|Cadena|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
+|isFavorite|Booleano|`true` si el usuario ha marcado este contacto como favorito.|
+|jobTitle|Cadena|Puesto del contacto.|
+|officeLocation|Cadena|Ubicación de la oficina del contacto.|
+|personNotes|Cadena|Notas de forma libre que el usuario ha tomado sobre este contacto.|
+|personType|[personType](persontype.md) |El tipo de contacto.|
 |phones|Colección [phone](phone.md)|Número de teléfono del contacto.|
 |postalAddresses|Colección [location](location.md)|Direcciones del contacto.|
-|profession|String|Profesión del contacto.|
-|surname|String|Apellido del contacto.|
-|userPrincipalName|String|Nombre principal de usuario (UPN) del contacto. El UPN es un nombre de inicio de sesión de Internet del contacto basado en la norma [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). Por convención, se debe asignar al nombre de correo electrónico del contacto. El formato general es alias@domain.|
+|profession|Cadena|Profesión del contacto.|
+|surname|Cadena|Apellido del contacto.|
+|userPrincipalName|Cadena|Nombre principal de usuario (UPN) del contacto. El UPN es un nombre de inicio de sesión de Internet del contacto basado en la norma [RFC 822](http://www.ietf.org/rfc/rfc0822.txt). Por convención, se debe asignar al nombre de correo electrónico del contacto. El formato general es alias@domain.|
 |websites|Colección [website](website.md)|Sitios web del contacto.|
-|yomiCompany|String|Nombre fonético japonés de la compañía del contacto.|
+|yomiCompany|Cadena|Nombre fonético japonés de la compañía del contacto.|
 
 ## <a name="relationships"></a>Relaciones
 
@@ -41,11 +41,10 @@ Ninguna.
 
 La siguiente es una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.person"
 }-->
 

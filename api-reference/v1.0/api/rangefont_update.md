@@ -1,4 +1,4 @@
-# <a name="update-rangefont"></a>Update rangefont
+# <a name="update-rangefont"></a>Actualizar rangefont
 
 Actualizar las propiedades del objeto rangefont.
 ## <a name="permissions"></a>Permisos
@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/font
+PATCH /workbook/names/{name}/range/format/font
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
@@ -28,16 +28,16 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|bold|boolean|Representa el estado de negrita de la fuente.|
-|color|string|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
-|italic|boolean|Representa el estado de cursiva de la fuente.|
-|name|string|Nombre de fuente (por ejemplo, "Calibri")|
+|bold|booleano|Representa el estado de negrita de la fuente.|
+|color|cadena|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
+|italic|booleano|Representa el estado de cursiva de la fuente.|
+|name|cadena|Nombre de fuente (por ejemplo, "Calibri")|
 |Tamaño|Double|Tamaño de fuente|
-|underline|string|Tipo de subrayado aplicado a la fuente. Valores posibles: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline|cadena|Tipo de subrayado aplicado a la fuente. Los valores posibles son: `None`, `Single`, `Double`, `SingleAccountant` y `DoubleAccountant`.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [RangeFont](../resources/rangefont.md) actualizado en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookRangeFont](../resources/rangefont.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -46,7 +46,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_rangefont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/font
 Content-type: application/json
 Content-length: 134
 
@@ -64,7 +64,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK

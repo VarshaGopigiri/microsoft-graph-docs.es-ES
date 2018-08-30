@@ -21,36 +21,36 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|versión|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |applyOnlyToWindowsPhone81|Booleano|Valor que indica si esta directiva se aplica solo a Windows Phone 8.1. Esta propiedad es de solo lectura.|
 |appsBlockCopyPaste|Booleano|Indica si se va a impedir cortar y pegar.|
-|bluetoothBlocked|Booleano|Indica si se va a bloquear el Bluetooth.|
+|bluetoothBlocked|Booleano|Indica si se va a bloquear Bluetooth.|
 |cameraBlocked|Booleano|Indica si se va a bloquear la cámara.|
 |cellularBlockWifiTethering|Booleano|Indica si se va a bloquear el tethering Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
-|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
-|compliantAppListType|Cadena|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
 |emailBlockAddingAccounts|Booleano|Indica si se van a bloquear las cuentas de correo electrónico personalizadas.|
 |locationServicesBlocked|Booleano|Indica si se van a bloquear los servicios de ubicación.|
-|microsoftAccountBlocked|Booleano|Indica si se va a impedir usar una cuenta de Microsoft.|
+|microsoftAccountBlocked|Booleano|Indica si se va a bloquear el uso de una cuenta de Microsoft.|
 |nfcBlocked|Booleano|Indica si se va a bloquear la transmisión de datos en proximidad.|
 |passwordBlockSimple|Booleano|Indica si se va a bloquear la sincronización del calendario.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña.|
 |passwordMinimumLength|Int32|Longitud mínima de las contraseñas.|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes del tiempo de espera de la pantalla.|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres que debe contener una contraseña.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica.|
-|passwordRequiredType|Cadena|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passwordRequired|Booleano|Indica si se va a requerir una contraseña.|
 |screenCaptureBlocked|Booleano|Indica si se van a impedir las capturas de pantalla.|
 |storageBlockRemovableStorage|Booleano|Indica si se va a impedir el almacenamiento extraíble.|
 |storageRequireEncryption|Booleano|Indica si se va a requerir cifrado.|
 |webBrowserBlocked|Booleano|Indica si se va a bloquear el explorador web.|
-|wifiBlocked|Booleano|Indica si se va a bloquear el Wi-Fi.|
-|wifiBlockAutomaticConnectHotspots|Booleano|Indica si se va a impedir automáticamente la conexión a zonas Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
+|wifiBlocked|Booleano|Indica si se va a bloquear el uso de Wi-Fi.|
+|wifiBlockAutomaticConnectHotspots|Booleano|Indica si se va a bloquear automáticamente la conexión a zonas Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
 |wifiBlockHotspotReporting|Booleano|Indica si se van a bloquear los informes de zona Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
 |windowsStoreBlocked|Booleano|Indica si se va a bloquear la Tienda Windows.|
 
@@ -59,19 +59,28 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |:---|:---|:---|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|Colección [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Estado de instalación de configuración del dispositivo por dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|Colección [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Estado de instalación de configuración del dispositivo por usuario. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|Colección [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Estado de instalación de la configuración del dispositivo por usuario. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Información general sobre el estado de dispositivos de la configuración de dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Información general sobre el estado de usuarios de la configuración de dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|Colección [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Resumen de dispositivo sobre el estado de configuración de la configuración de dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration"
-}
--->
+  "baseType": "microsoft.graph.deviceConfiguration",
+  "@odata.type": "microsoft.graph.windowsPhone81GeneralConfiguration",
+  "@odata.annotations": [
+    {
+      "property": "applyOnlyToWindowsPhone81",
+      "capabilities": {
+        "computed": true,
+        "permissions": "Read"
+      }
+    }
+  ]
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsPhone81GeneralConfiguration",

@@ -1,4 +1,4 @@
-# <a name="list-tablecolumncollection"></a>List TableColumnCollection
+# <a name="list-tablecolumncollection"></a>Listar TableColumnCollection
 
 Recuperar una lista de objetos tablecolumn.
 ## <a name="permissions"></a>Permisos
@@ -30,7 +30,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [TableColumn](../resources/tablecolumn.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [WorkbookTableColumn](../resources/tablecolumn.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -46,7 +46,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn",
+  "@odata.type": "microsoft.graph.workbookTableColumn",
   "isCollection": true
 } -->
 ```http

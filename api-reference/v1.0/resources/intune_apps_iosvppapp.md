@@ -18,29 +18,29 @@ Hereda de [mobileApp](../resources/intune_apps_mobileapp.md)
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|displayName|Cadena|El título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|descripción|Cadena|La descripción de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publicador|Cadena|El publicador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|El icono grande, se muestra en los detalles de la aplicación y se usa para cargar el icono. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|createdDateTime|DateTimeOffset|La fecha y la hora de creación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|isFeatured|Booleano|El valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|propietario|Cadena|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|desarrollador|Cadena|El desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|notas|Cadena|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|Cadena|El estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
-|usedLicenseCount|Int32|El número de licencias de VPP en uso.|
-|totalLicenseCount|Int32|El número total de licencias de VPP.|
-|releaseDateTime|DateTimeOffset|La fecha y hora de publicación de la aplicación de VPP.|
-|appStoreUrl|Cadena|La dirección URL de la tienda.|
-|licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|El tipo de licencia compatible.|
-|applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|El tipo de dispositivo iOS aplicable.|
-|vppTokenOrganizationName|Cadena|La organización asociada con el token del Programa de Compras por Volumen de Apple|
-|vppTokenAccountType|Cadena|El tipo de programa de compras por volumen al que está asociado el token del Programa de Compras por Volumen de Apple especificado. Los valores posibles son: `business` y `education`. Los valores posibles son: `business` y `education`.|
-|vppTokenAppleId|Cadena|El Id. de Apple asociado con el token del Programa de Compras por Volumen de Apple especificado.|
+|id|Cadena|Clave de la entidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|displayName|Cadena|Título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|descripción|Cadena|Descripción de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publicador|Cadena|Publicador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Icono grande que se mostrará en los detalles de la aplicación y se usa para cargar el icono. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|createdDateTime|DateTimeOffset|Fecha y hora de creación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|isFeatured|Booleano|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|owner|Cadena|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|developer|Cadena|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|notas|Cadena|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
+|usedLicenseCount|Int32|Número de licencias VPP en uso.|
+|totalLicenseCount|Int32|Número total de licencias VPP.|
+|releaseDateTime|DateTimeOffset|Fecha y hora de publicación de la aplicación de VPP.|
+|appStoreUrl|Cadena|Dirección URL de la tienda.|
+|licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|Tipo de licencia compatible.|
+|applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|Tipo de dispositivo iOS aplicable.|
+|vppTokenOrganizationName|Cadena|Organización asociada al token del Programa de Compras por Volumen de Apple|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|Tipo de programa de compras por volumen al que está asociado el token del programa de compras por volumen de Apple especificado. Los valores posibles son: `business` y `education`. Los valores posibles son: `business` y `education`.|
+|vppTokenAppleId|Cadena|Identificador de Apple asociado al token del Programa de Compras por Volumen de Apple especificado.|
 |bundleId|Cadena|El nombre de la identidad.|
 
 ## <a name="relationships"></a>Relaciones
@@ -51,12 +51,12 @@ Hereda de [mobileApp](../resources/intune_apps_mobileapp.md)
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileApp",
   "@odata.type": "microsoft.graph.iosVppApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
