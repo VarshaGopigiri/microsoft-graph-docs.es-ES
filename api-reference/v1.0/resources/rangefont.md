@@ -7,18 +7,18 @@ Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fue
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Lee las propiedades y relaciones del objeto rangeFont.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)    |Actualiza el objeto RangeFont. |
+|[Get RangeFont](../api/rangefont_get.md) | [WorkbookRangeFont](rangefont.md) |Lee las propiedades y relaciones del objeto rangeFont.|
+|[Update](../api/rangefont_update.md) | [WorkbookRangeFont](rangefont.md)   |Actualiza el objeto RangeFont. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|bold|boolean|Representa el estado de negrita de la fuente.|
-|color|string|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
-|italic|boolean|Representa el estado de cursiva de la fuente.|
-|name|string|Nombre de fuente (por ejemplo, "Calibri")|
-|Tamaño|Double|Tamaño de fuente|
-|underline|string|Tipo de subrayado aplicado a la fuente. Valores posibles: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|bold|booleano|Representa el estado de negrita de la fuente.|
+|color|cadena|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
+|italic|booleano|Representa el estado de cursiva de la fuente.|
+|name|cadena|Nombre de fuente (por ejemplo, "Calibri")|
+|size|doble|Tamaño de fuente|
+|underline|cadena|Tipo de subrayado aplicado a la fuente. Los valores posibles son: `None`, `Single`, `Double`, `SingleAccountant` y `DoubleAccountant`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -28,12 +28,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFont"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 }-->
 
 ```json

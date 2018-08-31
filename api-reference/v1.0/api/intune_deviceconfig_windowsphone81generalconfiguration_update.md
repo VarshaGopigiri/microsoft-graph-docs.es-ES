@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitida.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -34,41 +34,41 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|applyOnlyToWindowsPhone81|Boolean|Valor que indica si esta directiva se aplica solo a Windows Phone 8.1. Esta propiedad es de solo lectura.|
-|appsBlockCopyPaste|Boolean|Indica si se va a impedir cortar y pegar.|
-|bluetoothBlocked|Boolean|Indica si se va a bloquear Bluetooth.|
-|cameraBlocked|Boolean|Indica si se va a bloquear la cámara.|
-|cellularBlockWifiTethering|Boolean|Indica si se va a bloquear el tethering Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
-|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
-|compliantAppListType|String|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolean|Indica si se va a bloquear el envío de datos de diagnóstico.|
-|emailBlockAddingAccounts|Boolean|Indica si se van a bloquear las cuentas de correo electrónico personalizadas.|
-|locationServicesBlocked|Boolean|Indica si se van a bloquear los servicios de ubicación.|
-|microsoftAccountBlocked|Boolean|Indica si se va a bloquear el uso de una cuenta de Microsoft.|
-|nfcBlocked|Boolean|Indica si se va a bloquear la transmisión de datos en proximidad.|
-|passwordBlockSimple|Boolean|Indica si se va a bloquear la sincronización del calendario.|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|applyOnlyToWindowsPhone81|Booleano|Valor que indica si esta directiva se aplica solo a Windows Phone 8.1. Esta propiedad es de solo lectura.|
+|appsBlockCopyPaste|Booleano|Indica si se va a impedir cortar y pegar.|
+|bluetoothBlocked|Booleano|Indica si se va a bloquear Bluetooth.|
+|cameraBlocked|Booleano|Indica si se va a bloquear la cámara.|
+|cellularBlockWifiTethering|Booleano|Indica si se va a bloquear el tethering Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
+|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|diagnosticDataBlockSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
+|emailBlockAddingAccounts|Booleano|Indica si se van a bloquear las cuentas de correo electrónico personalizadas.|
+|locationServicesBlocked|Booleano|Indica si se van a bloquear los servicios de ubicación.|
+|microsoftAccountBlocked|Booleano|Indica si se va a bloquear el uso de una cuenta de Microsoft.|
+|nfcBlocked|Booleano|Indica si se va a bloquear la transmisión de datos en proximidad.|
+|passwordBlockSimple|Booleano|Indica si se va a bloquear la sincronización del calendario.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña.|
 |passwordMinimumLength|Int32|Longitud mínima de las contraseñas.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres que debe contener una contraseña.|
-|passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24.|
+|passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica.|
-|passwordRequiredType|String|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
-|passwordRequired|Boolean|Indica si se va a requerir una contraseña.|
-|screenCaptureBlocked|Boolean|Indica si se van a impedir las capturas de pantalla.|
-|storageBlockRemovableStorage|Boolean|Indica si se va a impedir el almacenamiento extraíble.|
-|storageRequireEncryption|Boolean|Indica si se va a requerir cifrado.|
-|webBrowserBlocked|Boolean|Indica si se va a bloquear el explorador web.|
-|wifiBlocked|Boolean|Indica si se va a bloquear el uso de Wi-Fi.|
-|wifiBlockAutomaticConnectHotspots|Boolean|Indica si se va a bloquear automáticamente la conexión a zonas Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
-|wifiBlockHotspotReporting|Boolean|Indica si se van a bloquear los informes de zona Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
-|windowsStoreBlocked|Boolean|Indica si se va a bloquear la Tienda Windows.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequired|Booleano|Indica si se va a requerir una contraseña.|
+|screenCaptureBlocked|Booleano|Indica si se van a impedir las capturas de pantalla.|
+|storageBlockRemovableStorage|Booleano|Indica si se va a impedir el almacenamiento extraíble.|
+|storageRequireEncryption|Booleano|Indica si se va a requerir cifrado.|
+|webBrowserBlocked|Booleano|Indica si se va a bloquear el explorador web.|
+|wifiBlocked|Booleano|Indica si se va a bloquear el uso de Wi-Fi.|
+|wifiBlockAutomaticConnectHotspots|Booleano|Indica si se va a bloquear automáticamente la conexión a zonas Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
+|wifiBlockHotspotReporting|Booleano|Indica si se van a bloquear los informes de zona Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
+|windowsStoreBlocked|Booleano|Indica si se va a bloquear la Tienda Windows.|
 
 
 

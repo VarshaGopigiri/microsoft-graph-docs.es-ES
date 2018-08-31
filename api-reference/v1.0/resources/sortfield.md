@@ -3,29 +3,23 @@
 Representa una condición en una operación de ordenación.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|ascending|boolean|Representa si la ordenación se realiza en orden ascendente.|
-|color|string|Representa el color que es el destino de la condición si la ordenación se realiza según la fuente o el color de celda.|
-|dataOption|string|Representa opciones de ordenación adicionales para este campo. Valores posibles: `Normal`, `TextAsNumber`.|
-|Key|int|Representa la columna (o fila, según la orientación de ordenación) en que se encuentra la condición. Se representa como un desplazamiento de la primera columna (o fila).|
-|sortOn|string|Representa el tipo de ordenación de esta condición. Valores posibles: `Value`, `CellColor`, `FontColor`, `Icon`.|
-
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|icon|[Icon](icon.md)|Representa el icono que es el destino de la condición si la ordenación se realiza según el icono de la celda.|
+|ascending|booleano|Representa si la ordenación se realiza en orden ascendente.|
+|color|cadena|Representa el color que es el destino de la condición si la ordenación se realiza según la fuente o el color de celda.|
+|dataOption|cadena|Representa las opciones de ordenación adicionales para este campo. Los valores posibles son: `Normal`, `TextAsNumber`.|
+|key|entero|Representa la columna (o fila, según la orientación de ordenación) en que se encuentra la condición. Se representa como un desplazamiento de la primera columna (o fila).|
+|sortOn|cadena|Representa el tipo de ordenación de esta condición. Los valores posibles son: `Value`, `CellColor`, `FontColor` y `Icon`.|
+|icon|[WorkbookIcon](icon.md)|Representa el icono que es el destino de la condición si la ordenación se realiza según el icono de la celda.|
 
 ## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.sortField"
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookSortField"
 }-->
 
 ```json
@@ -34,7 +28,8 @@ Aquí tiene una representación JSON del recurso.
   "color": "string",
   "dataOption": "string",
   "key": 1024,
-  "sortOn": "string"
+  "sortOn": "string",
+  "icon": { "@odata.type": "microsoft.graph.workbookIcon" }
 }
 
 ```
