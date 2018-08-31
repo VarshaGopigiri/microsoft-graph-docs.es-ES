@@ -6,8 +6,8 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|movieRating|cadena|Calificación de películas seleccionada para Nueva Zelanda. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted` y `agesAbove16Restricted`.|
-|tvRating|cadena|Calificación de TV seleccionada para Nueva Zelanda. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `parentalGuidance` y `adults`.|
+|movieRating|[ratingNewZealandMoviesType](../resources/intune_deviceconfig_ratingnewzealandmoviestype.md)|Calificación de películas seleccionada para Nueva Zelanda. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted` y `agesAbove16Restricted`.|
+|tvRating|[ratingNewZealandTelevisionType](../resources/intune_deviceconfig_ratingnewzealandtelevisiontype.md)|Calificación de TV seleccionada para Nueva Zelanda. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `parentalGuidance` y `adults`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -15,7 +15,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingNewZealand"
 }
 -->
