@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
+PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ```
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
@@ -26,18 +26,18 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|position|string|Valor DataLabelPosition que representa la posición de la etiqueta de datos. Valores posibles: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
-|separator|string|Cadena que representa el separador empleado para las etiquetas de datos de un gráfico.|
-|showBubbleSize|boolean|Valor booleano que representa si el tamaño de la burbuja de la etiqueta de datos es visible o no.|
-|showCategoryName|boolean|Valor booleano que representa si el nombre de categoría de la etiqueta de datos es visible o no.|
-|showLegendKey|boolean|Valor booleano que representa si la clave de leyenda de la etiqueta de datos es visible o no.|
-|showPercentage|boolean|Valor booleano que representa si el porcentaje de la etiqueta de datos es visible o no.|
-|showSeriesName|boolean|Valor booleano que representa si el nombre de serie de la etiqueta de datos es visible o no.|
-|showValue|boolean|Valor booleano que representa si el valor de la etiqueta de datos es visible o no.|
+|position|cadena|Valor de DataLabelPosition que representa la posición de la etiqueta de datos. Los valores posibles son: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit` y `Callout`.|
+|separator|cadena|Cadena que representa el separador empleado para las etiquetas de datos de un gráfico.|
+|showBubbleSize|booleano|Valor booleano que representa si el tamaño de la burbuja de la etiqueta de datos es visible o no.|
+|showCategoryName|booleano|Valor booleano que representa si el nombre de categoría de la etiqueta de datos es visible o no.|
+|showLegendKey|booleano|Valor booleano que representa si la clave de leyenda de la etiqueta de datos es visible o no.|
+|showPercentage|booleano|Valor booleano que representa si el porcentaje de la etiqueta de datos es visible o no.|
+|showSeriesName|booleano|Valor booleano que representa si el nombre de serie de la etiqueta de datos es visible o no.|
+|showValue|booleano|Valor booleano que representa si el valor de la etiqueta de datos es visible o no.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [ChartDataLabels](../resources/chartdatalabels.md) actualizado en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookChartDataLabels](../resources/chartdatalabels.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -46,7 +46,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_chartdatalabels"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/datalabels
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels
 Content-type: application/json
 Content-length: 134
 
@@ -63,7 +63,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

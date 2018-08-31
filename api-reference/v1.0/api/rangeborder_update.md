@@ -1,4 +1,4 @@
-# <a name="update-rangeborder"></a>Update rangeborder
+# <a name="update-rangeborder"></a>Actualizar rangeborder
 
 Actualizar las propiedades del objeto rangeborder.
 ## <a name="permissions"></a>Permisos
@@ -13,9 +13,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/borders(<sideIndex>)
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
+PATCH /workbook/names/{name}/range/format/borders/{sideIndex}
+PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{sideIndex}
+PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
 ```
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
@@ -28,13 +28,13 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|color|string|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
-|style|string|Una de las constantes de estilo de línea que especifica el estilo de línea del borde. Valores posibles: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Especifica el grosor del borde alrededor de un rango. Valores posibles: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|color|cadena|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
+|style|cadena|Una de las constantes de estilo de línea que especifica el estilo de línea para el borde. Los valores posibles son: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double` y `SlantDashDot`.|
+|weight|cadena|Especifica el grosor del borde que rodea un rango. Los valores posibles son: `Hairline`, `Thin`, `Medium` y `Thick`.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [RangeBorder](../resources/rangeborder.md) actualizado en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookRangeBorder](../resources/rangeborder.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -43,7 +43,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_rangeborder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders(<sideIndex>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/{sideIndex}
 Content-type: application/json
 Content-length: 136
 
@@ -59,7 +59,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 } -->
 ```http
 HTTP/1.1 200 OK

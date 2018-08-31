@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>
+PATCH /planner/tasks/{id}
 ```
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
@@ -21,22 +21,22 @@ PATCH /planner/tasks/<id>
 | Authorization  | {token} de portador. Obligatorio. |
 | If-Match  | Último valor ETag conocido para que se actualice **plannerTask**. Obligatorio.|
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Categorías a las que se ha aplicado la tarea. Consulte [las categorías aplicadas](../resources/plannerappliedcategories.md) para ver los posibles valores.|
-|assigneePriority|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define en [Using order hints in Planner](../resources/planner_order_hint_format.md) (Usar sugerencias de orden en Planner).|
+|assigneePriority|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define en [Using order hints in Planner](../resources/planner_order_hint_format.md) (Usar sugerencias de orden en Planner).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|Conjunto de usuarios al que se asigna la tarea.|
-|bucketId|String|Id. de depósito al que pertenece la tarea. El depósito debe estar en el plan en el que se encuentra la tarea. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](../resources/planner_identifiers_disclaimer.md) se efectúa en el servicio. |
-|conversationThreadId|String|Identificador de subproceso de la conversación en la tarea. Es el identificador del objeto de subproceso de conversación creado en el grupo.|
+|bucketId|Cadena|Identificador de cubo al que pertenece la tarea. El cubo debe estar en el plan en el que la tarea se encuentra. Tiene 28 caracteres y distingue mayúsculas y minúsculas. La [validación de formato](../resources/planner_identifiers_disclaimer.md) se realiza en el servicio. |
+|conversationThreadId|Cadena|Identificador de subproceso de la conversación en la tarea. Es el identificador del objeto de subproceso de conversación creado en el grupo.|
 |dueDateTime|DateTimeOffset|Fecha y hora en que vence la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define en [Using order hints in Planner](../resources/planner_order_hint_format.md) (Usar sugerencias de orden en Planner).|
+|orderHint|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define en [Using order hints in Planner](../resources/planner_order_hint_format.md) (Usar sugerencias de orden en Planner).|
 |percentComplete|Int32|Porcentaje de finalización de la tarea. Si se establece en `100`, la tarea se considera finalizada. |
-|planId|String|Id. de plan al que pertenece la tarea.|
+|planId|Cadena|Id. de plan al que pertenece la tarea.|
 |startDateTime|DateTimeOffset|Fecha y hora en que comienza la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|title|String|Título de la tarea.|
+|title|Cadena|Título de la tarea.|
 
 ## <a name="response"></a>Respuesta
 
@@ -52,7 +52,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_plannertask"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 Content-type: application/json
 Content-length: 247
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

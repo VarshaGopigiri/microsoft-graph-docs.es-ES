@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Carga de archivos reanudable
-ms.openlocfilehash: 39aee7121483e423c4adbd910c80e1ca059c685a
-ms.sourcegitcommit: e9b5d370a1d9a03d908dc430994d6a196b1345b4
+ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265515"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Cargar archivos de gran tamaño con una sesión de carga
 
@@ -44,18 +45,29 @@ POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
 
-### <a name="request-body"></a>Cuerpo de la solicitud
+### <a name="request-body"></a>Cuerpo de solicitud
 
-No es necesario ningún cuerpo de solicitud. Sin embargo, puede especificar un cuerpo de la solicitud para proporcionar datos adicionales sobre el archivo que se está cargando.
+No es necesario ningún cuerpo de solicitud.
+Sin embargo, puede especificar una propiedad `item` en el cuerpo de la solicitud, que proporciona datos adicionales sobre el archivo que se está cargando.
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+```json
+{
+  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "description": "description",
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "name": "filename.txt"
+}
+```
 
 Por ejemplo, para controlar el comportamiento si ya existe el nombre de archivo, puede especificar la propiedad de comportamiento ante conflictos en el cuerpo de la solicitud.
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-    "item": {
-        "@microsoft.graph.conflictBehavior": "rename"
-    }
+  "item": {
+    "@microsoft.graph.conflictBehavior": "rename"
+  }
 }
 ```
 
@@ -65,6 +77,14 @@ Por ejemplo, para controlar el comportamiento si ya existe el nombre de archivo,
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Si se incluye este encabezado de solicitud y la eTag (o cTag) proporcionada no coincide con la eTag actual en el elemento, se devuelve una respuesta de error `412 Precondition Failed`. |
 
+## <a name="properties"></a>Propiedades
+
+| Propiedad             | Tipo               | Descripción
+|:---------------------|:-------------------|:---------------------------------
+| description          | Cadena             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
+| fileSystemInfo       | [fileSystemInfo][] | Información del sistema de archivos del cliente. Lectura y escritura.
+| name                 | Cadena             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
+
 ### <a name="request"></a>Solicitud
 
 La respuesta a esta solicitud ofrecerá los detalles de la [uploadSession](../resources/uploadsession.md) recién creada, que incluye la dirección URL utilizada para cargar las partes del archivo. 
@@ -72,11 +92,12 @@ La respuesta a esta solicitud ofrecerá los detalles de la [uploadSession](../re
 <!-- { "blockType": "request", "name": "upload-fragment-create-session", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST /drive/root:/{item-path}:/createUploadSession
+POST /me/drive/root:/{item-path}:/createUploadSession
 Content-Type: application/json
 
 {
   "item": {
+    "@odata.type": "microsoft.graph.driveItemUploadableProperties",
     "@microsoft.graph.conflictBehavior": "rename",
     "name": "largefile.dat"
   }
@@ -110,7 +131,7 @@ Puede cargar el archivo completo o dividir el archivo en varios intervalos de by
 Los fragmentos del archivo se deben cargar secuencialmente en orden.
 La carga de fragmentos sin un orden producirá un error.
 
-**Nota**: Si su aplicación divide un archivo en varios intervalos de bits, el tamaño de cada uno **DEBE** ser un múltiplo de 320 KiB (327 680 bytes). Usar un tamaño de fragmento que no puede dividirse uniformemente por 320 KiB ocasionará errores a la hora de confirmar algunos archivos.
+**Nota:** Si su aplicación divide un archivo en varios intervalos de bits, el tamaño de cada uno **DEBE** ser un múltiplo de 320 KiB (327 680 bytes). Usar un tamaño de fragmento que no puede dividirse uniformemente por 320 KiB ocasionará errores a la hora de confirmar algunos archivos.
 
 ### <a name="example"></a>Ejemplo
 
@@ -120,7 +141,7 @@ En este ejemplo, la aplicación carga los primeros 26 bytes de un archivo de 128
 * El encabezado **Content-Range** indica el intervalo de bytes en el archivo global que representa esta solicitud.
 * La longitud total del archivo se conoce antes de cargar el primer fragmento del archivo.
 
-<!-- { "blockType": "request", "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
 
 ```http
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -182,7 +203,7 @@ Content-Type: application/json
 Cuando se reciba el último intervalo de bytes de un archivo, el servidor responderá `HTTP 201 Created` o `HTTP 200 OK`.
 El cuerpo de la respuesta incluirá también la propiedad predeterminada establecida del **driveItem** que representa el archivo completo.
 
-<!-- { "blockType": "request", "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
 ```
 PUT https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -232,7 +253,7 @@ Puede que los archivos temporales no se eliminen inmediatamente después de que 
 
 ### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-cancel", "scopes": "files.readwrite" } -->
 
 ```http
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
@@ -258,7 +279,7 @@ Para averiguar qué intervalos de bytes se han recibido anteriormente, su aplica
 
 Consulte el estado de la carga mediante el envío de una solicitud GET a `uploadUrl`.
 
-<!-- { "blockType": "request", "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
 ```
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
@@ -270,6 +291,7 @@ El servidor responderá con una lista de los intervalos de bytes que faltan por 
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "expirationDateTime": "2015-01-29T09:21:55.523Z",
@@ -291,7 +313,7 @@ Esta nueva solicitud debería corregir el origen del error que ha generado el er
 
 Para indicar que su aplicación está confirmando una sesión de carga existente, la solicitud PUT debe incluir la propiedad `@microsoft.graph.sourceUrl` con el valor de la URL de la sesión de carga.
 
-<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PUT /me/drive/root:/{path_to_parent}
@@ -299,13 +321,13 @@ Content-Type: application/json
 If-Match: {etag or ctag}
 
 {
-  "name": "largefile_2.vhd",
+  "name": "largefile.vhd",
   "@microsoft.graph.conflictBehavior": "rename",
   "@microsoft.graph.sourceUrl": "{upload session URL}"
 }
 ```
 
-**Nota**: Puede usar los encabezados `@microsoft.graph.conflictBehavior` y `if-match` como se esperaba en esta llamada.
+**Nota:** Puede usar los encabezados `@microsoft.graph.conflictBehavior` y `if-match` como se esperaba en esta llamada.
 
 ### <a name="http-response"></a>Respuesta HTTP
 
@@ -334,7 +356,7 @@ Content-Type: application/json
   * `504 Gateway Timeout`
 * Utilice una estrategia de interrupción exponencial si se devuelve cualquier error 5xx del servidor al reanudar o volver a ejecutar solicitudes de carga.
 * Si hay otros errores, no debe utilizar una estrategia de interrupción exponencial sino limitar el número de reintentos realizados.
-* Controle los errores `404 Not Found` al realizar cargas reanudables volviendo a iniciar la carga completa. Esto indica que ya no existe la sesión de carga.
+* Vuelva a iniciar la carga completa para controla los errores `404 Not Found` al realizar cargas reanudables. Esto indica que ya no existe la sesión de carga.
 * Use transferencias de archivo reanudables para los archivos de más de 10 MiB (10.485.760 bytes).
 * Un tamaño de intervalo de bytes de 10 MiB para conexiones estables de alta velocidad es óptimo. Para conexiones más lentas o menos fiables puede obtener mejores resultados con tamaños de fragmento más pequeños. El tamaño de fragmento recomendado es entre 5 y 10 MiB.
 * Use un tamaño de intervalo de bytes que sea múltiplo de 320 KiB (327 680 bytes). Si no usa un tamaño de fragmento que sea múltiplo de 320 KiB, se puede producir un error en las transferencias de archivos de gran tamaño después de que se cargue el último intervalo de bytes.
@@ -345,10 +367,15 @@ Vea el tema [Respuestas de error][error-response] para obtener más información
 
 [error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md
+[fileSystemInfo]: ../resources/filesysteminfo.md
 
 <!-- {
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+  ],
   "section": "documentation"
 } -->

@@ -26,16 +26,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|deltarows|Int32|El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
-|deltaColumns|Int32|El número de columnas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
-
-## <a name="request-body"></a>Cuerpo de la solicitud
-En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|deltaRows|Int32||
-|deltaColumns|Int32||
+|deltaRows|Int32|El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
+|deltaColumns|Int32|El número de columnas que se usará expandir la esquina inferior derecha, en relación con el intervalo actual. Use un número positivo para expandir el intervalo o un número negativo para reducirlo.|
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
@@ -44,12 +36,14 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 Aquí tiene un ejemplo de cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_resizedrange"
+  "isComposable": true,
+  "name": "workbookrange_resizedrange",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/resizedRange(deltarows={n}, deltaColumns={n})
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -57,7 +51,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

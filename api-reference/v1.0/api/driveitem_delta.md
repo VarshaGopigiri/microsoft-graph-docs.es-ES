@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sincronizar el contenido de una unidad
-ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
-ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
+ms.openlocfilehash: f87bfcd686ab98297c8b33aefc55705162438a35
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "20050834"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265018"
 ---
 # <a name="track-changes-for-a-drive"></a>Control de cambios de una unidad
 
@@ -28,9 +28,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (cuenta personal de Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Aplicación | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Delegado (cuenta profesional o educativa) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All y Sites.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All y Files.ReadWrite.All    |
+|Aplicación | Files.Read.All, Files.ReadWrite.All, Sites.Read.All y Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -47,6 +47,12 @@ GET /users/{userId}/drive/root/delta
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
 Este método admite los [parámetros de consulta OData](../../../concepts/query_parameters.md) `$select`, `$expand` y `$top` para personalizar la respuesta.
+
+## <a name="parameters"></a>Parámetros
+
+| Nombre   | Valor  | Descripción                                                                                                                          |
+|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| token  | cadena | Opcional. Si no se especifica, enumera el estado actual de la jerarquía. Si `latest`, devuelve vacío respuesta con un símbolo (token) delta más reciente. Si hay un token delta anterior, devuelve el nuevo estado desde ese token.
 
 ## <a name="response"></a>Respuesta
 
@@ -67,7 +73,7 @@ Aquí tiene un ejemplo de cómo llamar a esta API para establecer su estado loca
 
 Aquí tiene un ejemplo de la solicitud inicial.
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -115,7 +121,7 @@ Aquí tiene un ejemplo de cómo llamar a esta API para actualizar su estado loca
 
 Aquí tiene un ejemplo después de la solicitud inicial.
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -167,11 +173,11 @@ En algunos casos, puede ser útil solicitar el valor deltaLink actual sin enumer
 Esto puede ser útil si su aplicación solo quiere conocer los cambios y no necesita saber si hay elementos existentes.
 Para recuperar el último valor deltaLink, llame a `delta` con un parámetro de cadena de consulta `?token=latest`.
 
-**Nota: Si está intentando mantener una representación local completa de los elementos de una carpeta o una unidad, debe usar `delta` para la enumeración inicial. Otros enfoques, como la paginación mediante la colección `children` de una carpeta, no se garantizan para devolver cada elemento único si se produce una escritura durante la enumeración. Usar `delta` es la única manera de garantizar que ha leído todos los datos que necesita en **.
+****Nota: Si está intentando mantener una representación local completa de los elementos de una carpeta o una unidad, debe usar `delta` para la enumeración inicial. Otros enfoques, como la paginación mediante la colección `children` de una carpeta, no se garantizan para devolver cada elemento único si se produce una escritura durante la enumeración. Usar `delta` es la única manera de garantizar que ha leído todos los datos que necesita en **.**
 
 ### <a name="request"></a>Solicitud
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -179,7 +185,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>Respuesta
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK

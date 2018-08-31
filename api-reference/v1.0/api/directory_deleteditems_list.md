@@ -26,11 +26,11 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deleteditems/microsoft.graph.group
+GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-Actualmente, esta API admite la recuperación de tipos de objeto de grupos (microsoft.graph.group) o de usuarios (microsoft.graph.user) de los elementos eliminados. El tipo se especifica como parte necesaria del URI. No se admite realizar llamadas GET /directory/deleteditems sin un tipo.
+Actualmente, esta API admite la recuperación de tipos de objeto de grupos (microsoft.graph.group) o de usuarios (microsoft.graph.user) de los elementos eliminados. El tipo se especifica como parte necesaria del URI. No se admite realizar llamadas GET /directory/deletedItems sin un tipo.
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
@@ -38,7 +38,7 @@ Este método admite los [parámetros de consulta de OData](http://graph.microsof
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | &lt;Código&gt; de portador *necesario*|
+| Authorization  | Código&gt; de portador *necesario*&lt;|
 | Accept  | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -55,7 +55,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
   "name": "get_deleteditems"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/deleteditems/microsoft.graph.group
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
 ##### <a name="response"></a>Respuesta
 Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.

@@ -21,9 +21,9 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|versión|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |accountBlockModification|Booleano|Indica si se va a permitir la modificación de cuentas cuando el dispositivo está en modo supervisado.|
 |activationLockAllowWhenSupervised|Booleano|Indica si se va a permitir el bloqueo de activación cuando el dispositivo está en modo supervisado.|
 |airDropBlocked|Booleano|Indica si se va a permitir AirDrop cuando el dispositivo está en modo supervisado.|
@@ -33,8 +33,8 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |appleWatchForceWristDetection|Booleano|Indica si se va a forzar que un Apple Watch emparejado use la detección de muñeca (iOS 8.2 y posteriores).|
 |appleNewsBlocked|Booleano|Indica si se va a impedir que el usuario use Noticias cuando el dispositivo está en modo supervisado (iOS 9.0 o posterior).|
 |appsSingleAppModeList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Obtiene o establece la lista de aplicaciones permitidas de iOS que pueden entrar de forma autónoma en el Modo de aplicación única. Solo bajo supervisión. iOS 7.0 y versiones posteriores. Esta colección puede contener un máximo de 500 elementos.|
-|appsVisibilityList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en la lista de visibilidad (sea la lista de aplicaciones visibles o que se pueden iniciar o la lista de aplicaciones ocultas o que no se pueden iniciar, controlada por AppsVisibilityListType) (iOS 9.3 y versiones posteriores). Esta colección puede contener un máximo de 10 000 elementos.|
-|appsVisibilityListType|Cadena|Tipo de lista que se encuentra en la AppsVisibilityList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|appsVisibilityList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en la lista de visibilidad (sea la lista de aplicaciones visibles o que se pueden iniciar o la lista de aplicaciones ocultas o que no se pueden iniciar, controlada por AppsVisibilityListType) (iOS 9.3 y versiones posteriores). Esta colección puede contener un máximo de 10 000 elementos.|
+|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Tipo de lista que se encuentra en la AppsVisibilityList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Booleano|Indica si se va a bloquear la descarga automática de aplicaciones compradas en otros dispositivos cuando el dispositivo está en modo supervisado (iOS 9.0 o posterior).|
 |appStoreBlocked|Booleano|Indica si se va a impedir que el usuario use el App Store.|
 |appStoreBlockInAppPurchases|Booleano|Indica si se va a impedir que el usuario haga compras en la aplicación.|
@@ -50,8 +50,8 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |certificatesBlockUntrustedTlsCertificates|Booleano|Indica si se van a bloquear los certificados TLS que no son de confianza.|
 |classroomAppBlockRemoteScreenObservation|Booleano|Indica si se va a permitir la observación de pantalla remota de la aplicación Classroom cuando el dispositivo está en modo supervisado (iOS 9.3 o posterior).|
 |classroomAppForceUnpromptedScreenObservation|Booleano|Indica si se va a autorizar de forma automática al profesor de un curso administrado en la aplicación Classroom para que vea la pantalla de un alumno sin preguntarle cuando el dispositivo está en modo supervisado.|
-|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
-|compliantAppListType|Cadena|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Booleano|Indica si se va a impedir que el usuario instale perfiles de configuración y certificados de forma interactiva cuando el dispositivo está en modo supervisado.|
 |definitionLookupBlocked|Booleano|Indica si se va a bloquear la búsqueda de definiciones cuando el dispositivo está en modo supervisado (iOS 8.1.3 o posterior).|
 |deviceBlockEnableRestrictions|Booleano|Indica si se va a permitir que el usuario active las restricciones en los ajustes del dispositivo cuando el dispositivo está en modo supervisado.|
@@ -61,7 +61,7 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |diagnosticDataBlockSubmissionModification|Booleano|Indica si se va a permitir modificar los ajustes del envío de diagnósticos cuando el dispositivo está en modo supervisado (iOS 9.3.2 o posterior).|
 |documentsBlockManagedDocumentsInUnmanagedApps|Booleano|Indica si se va a impedir que el usuario visualice documentos administrados en las aplicaciones no administradas.|
 |documentsBlockUnmanagedDocumentsInManagedApps|Booleano|Indica si se va a impedir que el usuario visualice documentos no administrados en las aplicaciones administradas.|
-|emailInDomainSuffixes|Colección de cadenas|Una dirección de correo electrónico que carezca de un sufijo que coincida con cualquiera de estas cadenas se considerará fuera de dominio.|
+|emailInDomainSuffixes|Colección String|Una dirección de correo electrónico que carezca de un sufijo que coincida con cualquiera de estas cadenas se considerará fuera de dominio.|
 |enterpriseAppBlockTrust|Booleano|Indica si se va a impedir que el usuario confíe en una aplicación empresarial.|
 |enterpriseAppBlockTrustModification|Booleano|Indica si se va a impedir que el usuario modifique la configuración de confianza de una aplicación empresarial.|
 |faceTimeBlocked|Booleano|Indica si se va a impedir que el usuario use FaceTime.|
@@ -120,7 +120,7 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune_deviceconfig_mediacontentratingunitedkingdom.md)|Clasificación de contenido multimedia para el Reino Unido|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune_deviceconfig_mediacontentratingunitedstates.md)|Clasificación de contenido multimedia para Estados Unidos|
 |networkUsageRules|Colección [iosNetworkUsageRule](../resources/intune_deviceconfig_iosnetworkusagerule.md)|Lista de aplicaciones administradas y las reglas de red que se les aplican. Esta colección puede contener un máximo de 1000 elementos.|
-|mediaContentRatingApps|Cadena|Configuración de clasificación de contenido multimedia para aplicaciones. Los valores posibles son: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12` y `agesAbove17`.|
+|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|Configuración de la calificación de los contenidos de elementos multimedia para aplicaciones. Los valores posibles son `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12` y `agesAbove17`.|
 |messagesBlocked|Booleano|Indica si se va a impedir que el usuario use la aplicación Mensajes en el dispositivo supervisado.|
 |notificationsBlockSettingsModification|Booleano|Indica si se van a permitir modificar la configuración de las notificaciones (iOS 9,3 y versiones posteriores).|
 |passcodeBlockFingerprintUnlock|Booleano|Indica si se va a impedir el desbloqueo por huella dactilar.|
@@ -134,16 +134,16 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |passcodeMinimumCharacterSetCount|Int32|Número de juegos de caracteres que debe contener un código de acceso. Valores válidos de 0 a 4.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acceso anteriores que bloquear. Valores válidos de 1 a 24.|
 |passcodeSignInFailureCountBeforeWipe|Int32|Número de errores de inicio de sesión permitidos antes de borrar los datos del dispositivo. Valores válidos de 4 a 11|
-|passcodeRequiredType|Cadena|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passcodeRequired|Booleano|Indica si se va a requerir un código de acceso.|
 |podcastsBlocked|Booleano|Indica si se va a impedir que el usuario use Podcasts cuando el dispositivo está en modo supervisado (iOS 8.0 o posterior).|
 |safariBlockAutofill|Booleano|Indica si se va a impedir que el usuario use la opción de autorrellenado en Safari.|
 |safariBlockJavaScript|Booleano|Indica si se va a bloquear JavaScript en Safari.|
 |safariBlockPopups|Booleano|Indica si se van a bloquear los elementos emergentes en Safari.|
 |safariBlocked|Booleano|Indica si se va a impedir que el usuario use Safari.|
-|safariCookieSettings|Cadena|Configuración de cookies para Safari. Los valores posibles son: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited` y `allowAlways`.|
-|safariManagedDomains|Colección de cadenas|Las direcciones URL que coinciden con los patrones que se enumeran aquí se considerarán administradas.|
-|safariPasswordAutoFillDomains|Colección de cadenas|Los usuarios pueden guardar las contraseñas en Safari únicamente de las direcciones URL que coinciden con los patrones que se enumeran aquí. Se aplica solo a dispositivos en modo supervisado (iOS 9.3 o posterior).|
+|safariCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Configuración de cookies para Safari. Los valores posibles son: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited` y `allowAlways`.|
+|safariManagedDomains|Colección String|Las direcciones URL que coinciden con los patrones que se enumeran aquí se considerarán administradas.|
+|safariPasswordAutoFillDomains|Colección String|Los usuarios pueden guardar las contraseñas en Safari únicamente de las direcciones URL que coinciden con los patrones que se enumeran aquí. Se aplica solo a dispositivos en modo supervisado (iOS 9.3 o posterior).|
 |safariRequireFraudWarning|Booleano|Indica si se va a requerir una advertencia de fraude en Safari.|
 |screenCaptureBlocked|Booleano|Indica si se impide o no que el usuario tome capturas de pantalla.|
 |siriBlocked|Booleano|Indica si se va a impedir que el usuario use Siri.|
@@ -160,19 +160,19 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 |:---|:---|:---|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|Colección [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Estado de instalación de configuración del dispositivo por dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|Colección [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Estado de instalación de configuración del dispositivo por usuario. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|Colección [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Estado de instalación de la configuración del dispositivo por usuario. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Información general sobre el estado de dispositivos de la configuración de dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Información general sobre el estado de usuarios de la configuración de dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|Colección [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Resumen de dispositivo sobre el estado de configuración de la configuración de dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "@odata.type": "microsoft.graph.iosGeneralDeviceConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",

@@ -69,8 +69,9 @@ El archivo CSV tiene los siguientes encabezados de columna.
 
 Aquí tiene un ejemplo de la solicitud.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammerdeviceusageuserdetail"
 }-->
 
@@ -80,9 +81,39 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(peri
 
 #### <a name="response"></a>Respuesta
 
+Aquí tiene un ejemplo de la respuesta.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+#### <a name="request"></a>Solicitud
+
+Si se llama con el parámetro `date`, el informe se limita al uso en la fecha determinada.
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammerdeviceusageuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(date='2018-03-05')
+```
+
+#### <a name="response"></a>Respuesta
+
 Este es un ejemplo de la respuesta.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -92,11 +123,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema siguiente.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

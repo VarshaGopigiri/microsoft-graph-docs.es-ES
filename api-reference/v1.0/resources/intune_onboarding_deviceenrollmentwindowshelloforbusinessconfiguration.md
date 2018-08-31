@@ -18,25 +18,25 @@ Hereda de [deviceEnrollmentConfiguration](../resources/intune_onboarding_devicee
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|displayName|cadena|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|descripción|cadena|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|prioridad|Int32|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|id|Cadena|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|displayName|Cadena|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|description|Cadena|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|priority|Int32|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
-|versión|Int32|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
+|version|Int32|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Todavía no documentado|
 |pinMaximumLength|Int32|Todavía no documentado|
-|pinUppercaseCharactersUsage|cadena|Todavía no documentado Los valores posibles son: `allowed`, `required` y `disallowed`.|
-|pinLowercaseCharactersUsage|cadena|Todavía no documentado Los valores posibles son: `allowed`, `required` y `disallowed`.|
-|pinSpecialCharactersUsage|cadena|Todavía no documentado Los valores posibles son: `allowed`, `required` y `disallowed`.|
-|estado|cadena|Todavía no documentado Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Todavía no documentado. Los valores posibles son: `allowed`, `required` y `disallowed`.|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Todavía no documentado. Los valores posibles son: `allowed`, `required` y `disallowed`.|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Todavía no documentado. Los valores posibles son: `allowed`, `required` y `disallowed`.|
+|state|[habilitación](../resources/intune_onboarding_enablement.md)|Todavía no documentado. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
 |securityDeviceRequired|Booleano|Todavía no documentado|
 |unlockWithBiometricsEnabled|Booleano|Todavía no documentado|
 |remotePassportEnabled|Booleano|Todavía no documentado|
 |pinPreviousBlockCount|Int32|Todavía no documentado|
 |pinExpirationInDays|Int32|Todavía no documentado|
-|enhancedBiometricsState|cadena|Todavía no documentado Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
+|enhancedBiometricsState|[habilitación](../resources/intune_onboarding_enablement.md)|Todavía no documentado. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -45,12 +45,12 @@ Hereda de [deviceEnrollmentConfiguration](../resources/intune_onboarding_devicee
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceEnrollmentConfiguration",
   "@odata.type": "microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",

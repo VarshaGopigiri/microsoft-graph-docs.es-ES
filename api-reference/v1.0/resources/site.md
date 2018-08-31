@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sitio
-ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 20d31a9cdc0e540c2b2f2d93fedabdc254e9c03e
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265718"
 ---
 # <a name="site-resource"></a>Recurso site
 
@@ -35,12 +36,22 @@ Todos los ejemplos siguientes son relativos a `https://graph.microsoft.com/v1.0`
 
 A continuación se incluye una representación JSON del recurso **site**.
 
-El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las propiedades de ese recurso.
+El recurso **site** deriva de [**baseItem**](baseitem.md) y hereda sus propiedades.
 
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "root",
+    "sharepointIds",
+    "siteCollection",
+    "drive",
+    "drives",
+    "sites"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.site"
+}-->
 
 ```json
 {
@@ -58,7 +69,7 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
+  "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
   /* inherited from baseItem */
   "name": "string",
@@ -72,18 +83,19 @@ El recurso **driveItem** deriva de [**baseItem**](baseitem.md) y hereda las prop
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad            | Tipo                                | Descripción                                                                                    |
+| Nombre de propiedad            | Tipo                                | Descripción                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string                              | El identificador único del elemento. Solo lectura.                                                  |
+| **id**                   | cadena                              | El identificador único del elemento. Solo lectura.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | La fecha y la hora de creación del elemento. Solo lectura.                                             |
-| **description**          | string                              | Texto descriptivo del sitio.                                                             |
-| **displayName**          | string                              | El título completo del sitio. Solo lectura.                                                        |
+| **description**          | cadena                              | Texto descriptivo del sitio.                                                             |
+| **displayName**          | cadena                              | El título completo del sitio. Solo lectura.                                                        |
+| **eTag**                 | cadena                              | ETag para el elemento. Solo lectura.                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | Fecha y hora de la última modificación del elemento. Solo lectura.                                       |
-| **name**                 | string                              | Nombre o título del elemento.                                                                  |
+| **name**                 | cadena                              | Nombre o título del elemento.                                                                  |
 | **root**                 | [root](root.md)                     | Si está presente, indica que se trata del sitio raíz de la colección de sitios. Solo lectura.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Proporciona detalles sobre la colección de sitios del sitio. Solo disponible en el sitio raíz. Solo lectura. |
-| **webUrl**               | string (url)                        | Dirección URL que muestra el elemento en el explorador. Solo lectura.                                          |
+| **webUrl**               | cadena (url)                        | Dirección URL que muestra el elemento en el explorador. Solo lectura.                                          |
 
 ## <a name="relationships"></a>Relaciones
 

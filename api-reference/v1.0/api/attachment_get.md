@@ -16,21 +16,34 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 * Si accede a datos adjuntos de mensajes: Mail.Read.
 * Si accede a datos adjuntos de eventos: Calendars.Read.
-* Si accede a datos adjuntos de publicaciones o eventos de grupo: Group.Read.All.
+* Si accede a datos adjuntos de publicaciones de grupo: Group.Read.All.
+
+<!--
+* If accessing attachments in group events or posts: Group.Read.All.
+-->
 
 ## <a name="http-request"></a>Solicitud HTTP
+Datos adjuntos de un [event](../resources/event.md) en el [calendar](../resources/calendar.md) predeterminado del usuario.
+
+<!--
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
 <!-- { "blockType": "ignored" } -->
-Datos adjuntos de un [event](../resources/event.md) en el [calendar](../resources/calendar.md) predeterminado del usuario o del grupo.
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-GET /groups/{id}/events/{id}/attachments/{id}
 
 GET /me/calendar/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-GET /groups/{id}/calendar/events/{id}/attachments/{id}
 ```
+
+<!--
+GET /groups/{id}/events/{id}/attachments/{id}
+GET /groups/{id}/calendar/events/{id}/attachments/{id}
+-->
+
 Datos adjuntos de un [event](../resources/event.md) en un [calendar](../resources/calendar.md) perteneciente al [calendarGroup](../resources/calendargroup.md) predeterminado del usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
@@ -39,26 +52,31 @@ GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 Datos adjuntos de un [event](../resources/event.md) en un [calendar](../resources/calendar.md) perteneciente al [calendarGroup](../resources/calendargroup.md) de un usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
 Datos adjuntos de un [message](../resources/message.md) en el buzón de un usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
 Datos adjuntos de un [message](../resources/message.md) contenido en una [mailFolder](../resources/mailfolder.md) de nivel superior en el buzón de un usuario.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Datos adjuntos de un [message](../resources/message.md) contenido en una carpeta secundaria de una [mailFolder](../resources/mailfolder.md) en el buzón de un usuario.  En el ejemplo, siguiente se muestra un nivel de anidamiento, pero un mensaje puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
+Datos adjuntos de un [message](../resources/message.md) contenidos en una carpeta secundaria de una [mailFolder](../resources/mailfolder.md) en el buzón de un usuario.  En el ejemplo siguiente se muestra un nivel de anidamiento, pero un mensaje puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 Datos adjuntos para un [post](../resources/post.md) de un [thread](../resources/conversationthread.md) perteneciente a una [conversation](../resources/conversation.md) de un grupo.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
@@ -68,7 +86,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -105,7 +123,7 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
+  "contentBytes": "binary",
   "contentId": "null",
   "lastModifiedDateTime": "2016-01-01T12:00:00Z",
   "id": "id-value",
@@ -120,10 +138,11 @@ Content-length: 199
 En el primer ejemplo se muestra cómo obtener los datos adjuntos de elemento de un mensaje. Se devuelven las propiedades de **itemAttachment**.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
 ```
 
 ##### <a name="response-1"></a>Respuesta 1
@@ -152,10 +171,11 @@ Content-type: application/json
 En el ejemplo siguiente se muestra cómo usar `$expand` para obtener las propiedades del elemento adjunto al mensaje. En este ejemplo, el elemento es un mensaje; también se devuelven las propiedades del mensaje adjunto.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_and_expand_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
 ```
 
 ##### <a name="response-2"></a>Respuesta 2
@@ -275,5 +295,9 @@ Content-length: 215
   "description": "Get attachment",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: get_and_expand_item_attachment/item:
+      Property 'item' is of type Custom but has no custom members."
+  ],
   "tocPath": ""
 }-->

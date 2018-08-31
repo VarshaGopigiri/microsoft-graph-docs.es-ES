@@ -5,6 +5,7 @@ Recupera una colección de objetos [person](../resources/person.md) ordenados po
 Puede obtener esta información a través de la API de contactos. Para obtener ejemplos, vea la sección [Ejemplos](#examples) y el artículo sobre cómo [Obtener información relevante sobre los contactos](../../../concepts/people_example.md).
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
@@ -14,49 +15,59 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | People.Read.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+
 Este método admite los [parámetros de consulta de OData](../../../concepts/query_parameters.md) para que le resulte más fácil personalizar la respuesta, como se muestra en los ejemplos del artículo [Obtener información relevante sobre contactos](../../../concepts/people_example.md).
 
-|Nombre|Valor|Descripción| 
-|:---------------|:--------|:-------| 
-|$filter|string|Limita la respuesta a solo los contactos cuyo registro contiene los criterios especificados.| 
-|$orderby|cadena|De manera predeterminada, los contactos de la respuesta se ordenan por su relevancia para la consulta. Puede cambiar el orden de los contactos en la respuesta con el parámetro *$orderby*.| 
-|$search|string|Busca contactos por nombre o alias. Admite la coincidencia aproximada.| 
-|$select|string|Lista separada por comas de las propiedades que se van a incluir en la respuesta. Para un rendimiento óptimo, seleccione solo el subconjunto de propiedades necesarias.| 
-|$skip|int|Se omiten los primeros resultados n, útil para la paginación. Esta opción no se admite cuando se usa *$search*.| 
-|$top|int|Número de resultados que se van a devolver.| 
+|Nombre|Valor|Descripción|
+|:---------------|:--------|:-------|
+|$filter|cadena|Limita la respuesta a solo los contactos cuyo registro contiene los criterios especificados.|
+|$orderby|cadena|De manera predeterminada, los contactos de la respuesta se ordenan por su relevancia para la consulta. Puede cambiar el orden de los contactos en la respuesta con el parámetro *$orderby*.|
+|$search|cadena|Busca contactos por nombre o alias. Admite la coincidencia aproximada. El parámetro solo funciona para la búsqueda de personas relevantes del usuario que ha iniciado sesión, no para buscar personas relevantes para otros usuarios. También es compatible con la palabra clave `topic` para buscar personas en función de los temas que se extraen de las conversaciones de correo electrónico con esa persona. Consulte la sección *Realizar una búsqueda parcial* al [Obtener información relevante acerca de personas](../../../concepts/people_example.md#perform-a-fuzzy-search) para obtener información y ejemplos. |
+|$select|cadena|Lista separada por comas de las propiedades que se van a incluir en la respuesta. Para un rendimiento óptimo, seleccione solo el subconjunto de propiedades necesarias.|
+|$skip|entero|Se omiten los primeros resultados n, útil para la paginación. Esta opción no se admite cuando se usa *$search*.|
+|$top|entero|Número de resultados que se van a devolver.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud
+
 | Nombre      |Descripción|
 |:----------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
-| Aceptar | application/json |
+| Accept | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
+
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [person](../resources/person.md) en el cuerpo de la respuesta. La respuesta puede contener un objeto person o una colección de objetos person.
 
 ## <a name="examples"></a>Ejemplos
+
 #### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 
 <!-- {
   "blockType": "request",
   "name": "get_person_collection"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/people
 ```
 
 #### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta.
 
 <!-- {

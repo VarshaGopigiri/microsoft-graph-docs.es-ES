@@ -13,9 +13,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/font
+PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
@@ -28,16 +28,16 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|bold|boolean|Representa el estado de negrita de la fuente.|
-|color|string|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
-|italic|boolean|Representa el estado de cursiva de la fuente.|
-|name|string|Nombre de fuente (por ejemplo, "Calibri")|
-|Tamaño|Double|Tamaño de la fuente (por ejemplo, 11).|
-|underline|string|Tipo de subrayado aplicado a la fuente. Valores posibles: `None`, `Single`.|
+|bold|booleano|Representa el estado de negrita de la fuente.|
+|color|cadena|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
+|italic|booleano|Representa el estado de cursiva de la fuente.|
+|name|cadena|Nombre de fuente (por ejemplo, "Calibri")|
+|Tamaño|doble|Tamaño de la fuente (por ejemplo, 11).|
+|underline|cadena|Tipo de subrayado aplicado a la fuente. Los valores posibles son: `None`, `Single`.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [ChartFont](../resources/chartfont.md) actualizado en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookChartFont](../resources/chartfont.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -46,7 +46,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_chartfont"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font
 Content-type: application/json
 Content-length: 134
 
@@ -64,7 +64,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK

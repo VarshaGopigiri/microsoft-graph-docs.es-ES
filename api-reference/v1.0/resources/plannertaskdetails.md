@@ -14,9 +14,9 @@ El recurso **plannerTaskDetails** representa la información adicional de una ta
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Colección de elementos de la lista de comprobación de la tarea.|
-|description|String|Descripción de la tarea|
-|id|String| Solo lectura. Id. de los detalles de la tarea. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|previewType|string|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
+|description|Cadena|Descripción de la tarea|
+|id|Cadena| Solo lectura. Identificador de los detalles de la tarea. Tiene 28 caracteres y distingue mayúsculas y minúsculas. La [validación de formato](planner_identifiers_disclaimer.md) se realiza en el servicio.|
+|previewType|cadena|Esto establece el tipo de vista previa que se muestra en la tarea. Los valores posibles son: `automatic`, `noPreview`, `checklist`, `description` y `reference`. Cuando se establece en `automatic` la vista previa que se muestra es elegida por la aplicación de visualización de la tarea.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|La colección de referencias de la tarea.|
 
 ## <a name="relationships"></a>Relaciones
@@ -26,11 +26,10 @@ Ninguno
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerTaskDetails"
 }-->
 
