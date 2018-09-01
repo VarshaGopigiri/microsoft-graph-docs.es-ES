@@ -20,7 +20,7 @@ GET /me/contactFolders/{id}/contacts/delta
 GET /users/{id}/contactFolders/{id}/contacts/delta
 ```
 
-### <a name="query-parameters"></a>Parámetros de consulta
+## <a name="query-parameters"></a>Parámetros de consulta
 
 El seguimiento de cambios en los contactos conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar una vez por adelantado los parámetros de consulta deseados. En solicitudes posteriores, basta con copiar y aplicar la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
@@ -29,7 +29,7 @@ El seguimiento de cambios en los contactos conlleva al menos una llamada de una 
 | $deltatoken | string | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de contactos. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
 | $skiptoken | string | [Token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de contactos. |
 
-#### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
+### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
 
 - Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud GET para especificar solo las propiedades que necesita para un mejor rendimiento. Siempre se devuelve la propiedad _id_. 
 
@@ -37,7 +37,7 @@ El seguimiento de cambios en los contactos conlleva al menos una llamada de una 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
@@ -95,7 +95,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Recursos adicionales
+### <a name="see-also"></a>Consulte también
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)

@@ -22,7 +22,7 @@ GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 
 ```
 
-### <a name="query-parameters"></a>Parámetros de consulta
+## <a name="query-parameters"></a>Parámetros de consulta
 
 El seguimiento de cambios en los eventos conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar una vez por adelantado los parámetros de consulta deseados. En solicitudes posteriores, basta con copiar y aplicar la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
@@ -40,7 +40,7 @@ Al hacer una consulta delta en una vista del calendario, se espera obtener todas
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 | Prefer | string | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.|
@@ -101,7 +101,7 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Recursos adicionales
+### <a name="see-also"></a>Consulte también
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obtener los cambios incrementales en los eventos en un calendario](../../../concepts/delta_query_events.md)
