@@ -25,17 +25,16 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones
 GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
+
+## <a name="function-parameters"></a>Parámetros de función
+| Parámetro       | Tipo | Descripción|
+|:---------------|:--------|:----------|
+| TimeZoneStandard  | timeZoneStandard  | Formato de una zona horaria. Los valores admitidos son: `Windows` y `Iana`. Opcional. |
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-
-
-## <a name="parameters"></a>Parámetros
-| Parámetro de la función       | Tipo | Descripción|
-|:---------------|:--------|:----------|
-| TimeZoneStandard  | String  | Formato de una zona horaria. Los valores admitidos son: `Windows` y `Iana`. Opcional. |
-
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -45,7 +44,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 
-##### <a name="request-1"></a>Solicitud 1
+##### <a name="request-1"></a>Solicitud 1
 En el ejemplo siguiente no se especifica el parámetro `timeZoneStandard` y se obtiene la lista de zonas horarias admitidas representadas en el formato de zona horaria de Windows. 
 <!-- {
   "blockType": "request",
@@ -55,7 +54,7 @@ En el ejemplo siguiente no se especifica el parámetro `timeZoneStandard` y se o
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
 
-##### <a name="response-1"></a>Respuesta 1
+##### <a name="response-1"></a>Respuesta 1
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
@@ -91,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Solicitud 2
+##### <a name="request-2"></a>Solicitud 2
 En el ejemplo siguiente se especifica el `Iana` para el parámetro `TimeZoneStandard` y se obtiene la lista de zonas horarias admitidas representadas en el formato IANA. 
 
 <!-- {
@@ -103,7 +102,7 @@ En el ejemplo siguiente se especifica el `Iana` para el parámetro `TimeZoneStan
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 
-##### <a name="response-2"></a>Respuesta 2
+##### <a name="response-2"></a>Respuesta 2
 Aquí tiene un ejemplo de la respuesta. 
 
 <!-- {

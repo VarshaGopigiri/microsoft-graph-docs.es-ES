@@ -18,11 +18,11 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Solicitud incorrecta (Bad Request)                     | No se puede procesar la solicitud porque es incorrecta o tiene un formato no válido.                                                                       |
 | 401         | No autorizado (Unauthorized)                    | La información de autenticación requerida no se encuentra o no es válida para el recurso.                                                   |
-| 403         | Prohibido                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes. <br /><br /> **Importante:** Si se aplican las directivas de acceso condicional a un recurso, puede que se devuelva un error HTTP 403; Forbidden error = insufficent_claims. Para obtener más información sobre Microsoft Graph y el acceso condicional vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Prohibido (Forbidden)                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes. <br /><br /> **Importante:** Si se aplican las directivas de acceso condicional a un recurso, puede que se devuelva un error HTTP 403; Forbidden error = insufficent_claims. Para obtener más información sobre Microsoft Graph y el acceso condicional vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | No encontrado (Not Found)                       | El recurso solicitado no existe.                                                                                                  |
 | 405         | Método no permitido (Method Not Allowed)              | No se permite el método HTTP de la solicitud en el recurso.                                                                         |
 | 406         | No es aceptable (Not Acceptable)                  | Este servicio no es compatible con el formato solicitado en el encabezado Accept.                                                                |
-| 409         | Conflicto (Conflict)                        | El estado actual entra en conflicto con lo que la solicitud espera. Por ejemplo, la carpeta principal especificada podría no existir.                   |
+| 409         | Conflicto                        | El estado actual entra en conflicto con lo que la solicitud espera. Por ejemplo, la carpeta principal especificada podría no existir.                   |
 | 410         | Pasado (Gone)                            | El recurso solicitado ya no está disponible en el servidor.                                               |
 | 411         | Longitud requerida (Length Required)                 | Se requiere un encabezado Content-Length en la solicitud.                                                                                    |
 | 412         | Error de condición previa (Precondition Failed)             | Una condición previa proporcionada en la solicitud (por ejemplo, un encabezado if-match) no coincide con el estado actual del recurso.                       |
@@ -33,14 +33,14 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 | 429         | Demasiadas solicitudes (Too Many Requests)               | La aplicación del cliente se ha limitado y no debería intentar repetir la solicitud hasta haya transcurrido un periodo de tiempo.                |
 | 500         | Error interno del servidor (Internal Server Error)           | Se produjo un error interno del servidor al procesar la solicitud.                                                                       |
 | 501         | No implementado (Not Implemented)                 | La característica solicitada no se implementó.                                                                                               |
-| 503         | Servicio no disponible (Service Unavailable)             | El servicio no está disponible temporalmente por mantenimiento o está sobrecargado. Puede repetir la solicitud después de un retraso, la longitud de los cuales puede especificarse en un encabezado Retry-After.|
+| 503         | Servicio no disponible             | El servicio no está disponible temporalmente por mantenimiento o está sobrecargado. Puede repetir la solicitud después de un retraso, la longitud de los cuales puede especificarse en un encabezado Retry-After.|
 | 504         | Tiempo de espera de puerta de enlace (Gateway Timeout)                 | El servidor, aunque actúa como un proxy, no recibió una respuesta a tiempo del servidor precedente al que necesitaba acceder para completar la solicitud. Puede producirse junto con 503. |
 | 507         | Almacenamiento insuficiente (Insufficient Storage)            | Se ha alcanzado la cuota de almacenamiento máxima.                                                                                            |
-| 509         | Ha superado el límite de ancho de banda        | Su aplicación se ha limitado por superar el extremo máximo de ancho de banda. Su aplicación puede reintentar la solicitud de nuevo cuando haya transcurrido más tiempo. |
+| 509         | Ha superado el límite de ancho de banda (Bandwidth Limit Exceeded)        | Su aplicación se ha limitado por superar el extremo máximo de ancho de banda. Su aplicación puede reintentar la solicitud de nuevo cuando haya transcurrido más tiempo. |
 
 La respuesta de error es un solo objeto JSON que contiene una propiedad única denominada **error**. Este objeto incluye todos los detalles del error. Puede usar la información devuelta aquí en lugar o además del código de estado HTTP. A continuación se muestra un ejemplo de un cuerpo completo de error JSON.
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -66,7 +66,7 @@ Las respuestas de error siguen la definición en la especificación [OData v4](h
 
 El recurso de error se compone de estos recursos:
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -88,20 +88,13 @@ En la respuesta del error se encuentra un recurso de error que incluye las sigui
 
 | Nombre de la propiedad  | Valor                  | Descripción\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | Una cadena de código de error para el error que se ha producido                                                            |
-| **message**    | string                 | Un mensaje preparado de desarrollador sobre el error que se ha producido. Esto no debe mostrarse al usuario directamente. |
-| **error interno** | error object           | Opcional. Objetos de error adicionales que pueden ser más específicos que el error de nivel superior.                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
+| **code**       | cadena                 | Una cadena de código de error para el error que se ha producido                                                            |
+| **message**    | cadena                 | Un mensaje preparado de desarrollador sobre el error que se ha producido. Esto no debe mostrarse al usuario directamente. |
+| **innererror** | objecto error           | Opcional. Objetos de error adicionales que pueden ser más específicos que el error de nivel superior.                     |
 
 <!--<a name="msg_code_property"> </a> -->
 
-#### <a name="code-property"></a>Propiedad del código
+#### <a name="code-property"></a>Propiedad code
 
 La propiedad `code` contiene uno de los siguientes valores posibles. Sus aplicaciones deben estar preparadas para controlar cualquiera de estos errores.
 
@@ -121,7 +114,7 @@ La propiedad `code` contiene uno de los siguientes valores posibles. Sus aplicac
 | **resyncRequired**        | El token delta ya no es válido, y la aplicación debe restablecer el estado de sincronización.
 | **serviceNotAvailable**   | El servicio no está disponible. Intente la solicitud de nuevo tras un retraso. Puede haber un encabezado Retry-After. 
 | **quotaLimitReached**     | El usuario ha alcanzado su límite de cuota.
-| **no autenticado**       | El autor de llamada no está autenticado.
+| **no autenticado**       | El autor de la llamada no está autenticado.
 
 El objeto `innererror` puede contener de forma recursiva más objetos `innererror` con códigos de error adicionales y más concretos. Al controlar un error, las aplicaciones deben recorrer todos los códigos de error disponibles y usar el más detallado que comprendan. Algunos de los códigos más detallados se enumeran en la parte inferior de esta página.
 
@@ -198,3 +191,15 @@ A continuación, se presentan algunos errores adicionales que su aplicación pue
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
 - [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->

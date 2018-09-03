@@ -7,15 +7,15 @@ Representa el reemplazo de un usuario sobre cómo se deben clasificar siempre lo
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |Cambie el campo **ClassifyAs** de un reemplazo tal y como se especifica. |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | None |Elimina un reemplazo especificado por su identificador. |
+|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Cambie el campo **ClassifyAs** de una invalidación tal y como se especifica. |
+|[Delete](../api/inferenceclassificationoverride_delete.md) | Ninguno |Elimina un reemplazo especificado por su identificador. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|classifyAs|string| Especifica cómo se deben clasificar siempre los mensajes entrantes de un remitente determinado. Valores posibles: `focused`, `other`.|
-|id|string| Identificador único del reemplazo. Solo lectura.|
-|senderEmailAddress|[emailAddress](emailaddress.md)|Información de la dirección de correo del remitente para el que se creó el reemplazo.|
+|classifyAs|inferenceClassificationType| Especifica cómo se deben clasificar siempre los mensajes entrantes de un remitente determinado. Los valores posibles son: `focused` y `other`.|
+|id|cadena| Identificador único del reemplazo. Solo lectura.|
+|senderEmailAddress|[emailAddress](emailaddress.md)|Información de la dirección de correo del remitente para el que se creó la invalidación.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -27,6 +27,7 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

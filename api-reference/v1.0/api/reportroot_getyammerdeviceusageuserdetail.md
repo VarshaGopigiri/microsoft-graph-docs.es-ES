@@ -23,7 +23,7 @@ GET /reports/getYammerDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Parámetros de la solicitud
+## <a name="function-parameters"></a>Parámetros de función
 
 En la URL de la solicitud, especifique el parámetro de consulta seleccionado con un valor válido.
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(peri
 
 #### <a name="response"></a>Respuesta
 
-Aquí tiene un ejemplo de la respuesta.
+Este es un ejemplo de la respuesta.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 

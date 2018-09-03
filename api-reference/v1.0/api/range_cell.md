@@ -13,9 +13,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Cell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Cell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
+GET /workbook/names/{name}/range/cell
+GET /workbook/worksheets/{id|name}/range(address='<address>')/cell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -24,13 +24,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 | Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
+## <a name="path-parameters"></a>Parámetros de ruta de acceso
+En la ruta de acceso, proporcione los parámetros siguientes.
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|row|number|Número de fila de la celda que se va a recuperar. Indizado con cero.|
-|column|number|Número de columna de la celda que se va a recuperar. Indizado con cero.|
+|row|Int32|Número de fila de la celda que se va a recuperar. Indizado con cero.|
+|columna|Int32|Número de columna de la celda que se va a recuperar. Indizado con cero.|
 
 ## <a name="response"></a>Respuesta
 
@@ -40,21 +40,13 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 Aquí tiene un ejemplo de cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
-Content-type: application/json
-Content-length: 37
-
-{
-  "row": {
-  },
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 
 ##### <a name="response"></a>Respuesta
@@ -62,7 +54,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

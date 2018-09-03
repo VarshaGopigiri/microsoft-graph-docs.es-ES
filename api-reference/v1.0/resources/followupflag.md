@@ -8,7 +8,7 @@ Permite establecer una marca para que el usuario realice más adelante el seguim
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|Fecha y hora en que se finalizó el seguimiento.|
 |dueDateTime|**dateTimeTimeZone**|Fecha y hora en que se va a finalizar el seguimiento.|
-|flagStatus|String|Estado del seguimiento de un elemento. Los valores posibles son: `notFlagged`, `complete` y `flagged`.|
+|flagStatus|followupFlagStatus|Estado del seguimiento de un elemento. Los valores posibles son: `notFlagged`, `complete` y `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Fecha y hora en que va a iniciarse el seguimiento.|
 
 ## <a name="json-representation"></a>Representación JSON

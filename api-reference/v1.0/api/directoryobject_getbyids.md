@@ -23,24 +23,24 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type  | application/json  |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
+| Content-Type  | cadena | application/json  |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
 | Parámetro   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |ids|Colección string| Una colección de identificadores para devolverles objetos. Se pueden especificar hasta 1000 identificadores. |
-|types|Colección string| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos en el que debe buscarse. Si no se especifica, el valor predeterminado es [directoryObject](../resources/directoryobject.md), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que derive de `directoryObject` puede especificarse en la colección; por ejemplo: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), etc. Los valores no distinguen mayúsculas de minúsculas.|
+|types|Colección String| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos para buscar. Si no se especifica, el valor predeterminado es [directoryObject](../resources/directoryobject.md), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto derivado de `directoryObject` puede especificarse en la colección; Por ejemplo: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md), etc.. Los valores no distinguen entre mayúsculas y minúsculas.|
 
 ## <a name="response"></a>Respuesta
 
@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
 Content-type: application/json
 
 {
-    "ids":["84b80893-8749-40a3-97b7-68513b600544","5d6059b6-368d-45f8-91e1-8e07d485f1d0"],
+    "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
     "types":["user"]
 }
 ```
