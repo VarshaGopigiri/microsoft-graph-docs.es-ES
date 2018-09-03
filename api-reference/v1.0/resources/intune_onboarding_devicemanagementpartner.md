@@ -15,12 +15,12 @@ Entidad que representa una conexión a un partner de administración de disposit
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|cadena|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Marca de tiempo del último latido después de habilitar la opción de administrador Conectarse a los partners de administración de dispositivos|
-|partnerState|cadena|Estado de partner de este espacio empresarial. Los valores posibles son: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected` y `unresponsive`.|
-|partnerAppType|cadena|Tipo de aplicación de partner. Los valores posibles son: `unknown`, `singleTenantApp` y `multiTenantApp`.|
-|singleTenantAppId|cadena|Identificador de aplicación de espacio empresarial único de partner|
-|displayName|cadena|Nombre para mostrar del partner|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune_onboarding_devicemanagementpartnertenantstate.md)|Estado de socio de esta cuenta empresarial. Los valores posibles son `unknown`, `unavailable`, `enabled`, `terminated`, `rejected` y `unresponsive`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune_onboarding_devicemanagementpartnerapptype.md)|Tipo de aplicación de socio. Los valores posibles son: `unknown`, `singleTenantApp` y `multiTenantApp`.|
+|singleTenantAppId|Cadena|Identificador de aplicación de espacio empresarial único de partner|
+|displayName|Cadena|Nombre para mostrar del partner|
 |isConfigured|Booleano|Si el partner de administración de dispositivos está configurado o no|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|Fecha y hora en UTC de cuándo se quitará PartnerDevices|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|Fecha y hora en UTC de cuándo PartnerDevices se marcará como no compatible|
@@ -29,12 +29,12 @@ Entidad que representa una conexión a un partner de administración de disposit
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceManagementPartner"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",

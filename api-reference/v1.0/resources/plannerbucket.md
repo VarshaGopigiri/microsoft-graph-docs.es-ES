@@ -1,12 +1,10 @@
-# Tipo de recurso plannerBucket
-<a id="plannerbucket-resource-type" class="xliff"></a>
+# <a name="plannerbucket-resource-type"></a>Tipo de recurso plannerBucket
 
 El recurso **plannerBucket** representa un depósito (o "columna personalizada") para las tareas de un plan de Office 365. Se encuentra en un [plannerPlan](plannerPlan.md) y puede tener una colección de [plannerTasks](plannerTask.md).
 
 
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
@@ -16,27 +14,25 @@ El recurso **plannerBucket** representa un depósito (o "columna personalizada")
 |[Update](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)   |Actualizar el objeto **plannerBucket**. |
 |[Delete](../api/plannerbucket_delete.md) | Ninguno |Eliminar el objeto **plannerBucket**. |
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Id. del depósito. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|nombre|Cadena|Nombre del depósito.|
+|id|Cadena| Solo lectura. Identificador del depósito. Tiene 28 caracteres y distingue mayúsculas y minúsculas. [La validación de formato](planner_identifiers_disclaimer.md) se realiza en el servicio.|
+|name|Cadena|Nombre del depósito.|
 |orderHint|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
 |planId|Cadena|Id. de plan al que pertenece el depósito.|
 
-## Relaciones
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |tasks|Colección [plannerTask](plannertask.md)| Solo lectura. Admite valores NULL. Colección de tareas del depósito.|
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

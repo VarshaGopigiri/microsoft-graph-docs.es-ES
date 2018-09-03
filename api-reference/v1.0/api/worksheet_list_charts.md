@@ -1,4 +1,4 @@
-# <a name="list-charts"></a>List charts
+# <a name="list-charts"></a>Enumerar gráficos
 
 Recuperar una lista de objetos chart.
 ## <a name="permissions"></a>Permisos
@@ -29,7 +29,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [Chart](../resources/chart.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [WorkbookNamedItem](../resources/chart.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -45,7 +45,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart",
+  "@odata.type": "microsoft.graph.workbookChart",
   "isCollection": true
 } -->
 ```http

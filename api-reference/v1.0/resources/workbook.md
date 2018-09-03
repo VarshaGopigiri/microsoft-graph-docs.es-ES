@@ -1,6 +1,25 @@
 # <a name="workbook-resource-type"></a>Tipo de recurso Workbook
 
-Workbook es el objeto de nivel superior que contiene los objetos de libro relacionados, como hojas de cálculo, tablas, intervalos, etc.
+Workbook es el objeto de nivel superior que contiene los objetos workbook relacionados, como hojas de cálculo, tablas, intervalos, etc.
+
+## <a name="json-representation"></a>Representación JSON
+
+Aquí tiene una representación JSON del recurso
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
 
 ## <a name="properties"></a>Propiedades
 Ninguno
@@ -17,15 +36,15 @@ Ninguno
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|names|Colección [NamedItem](nameditem.md)|Representa una colección de elementos con nombre en el ámbito del libro (intervalos y constantes con nombre). Solo lectura.|
-|tables|Colección [Table](table.md)|Representa una colección de tablas asociadas con el libro. Solo lectura.|
-|worksheets|Colección [Worksheet](worksheet.md)|Representa una colección de hojas de cálculo asociadas con el libro. Solo lectura.|
+|names|Colección de [WorkbookNamedItem](nameditem.md)|Representa una colección de elementos con nombre en el ámbito del libro (intervalos y constantes con nombre). Solo lectura.|
+|tables|Colección de [WorkbookTable](table.md)|Representa una colección de tablas asociadas con el libro. Solo lectura.|
+|worksheets|Colección de [WorkbookWorksheet](worksheet.md)|Representa una colección de hojas de cálculo asociadas con el libro. Solo lectura.|
 
 ## <a name="functions"></a>Funciones
 
 [Funciones de Excel](#functions): Para invocar una función de libro, use la sintaxis `POST /workbook/functions/{function-name}` y proporcione los argumentos de la función en el cuerpo mediante un objeto JSON. Las cadenas `value` y `error` resultantes de la función se devuelven en el objeto de resultado de la función. El valor `error` de `null` indica que la función se ha ejecutado correctamente. 
 
-La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/es-ES/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.
+La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Consulte la signatura de función para tipos de datos y nombres de parámetros específicos.
 
 _Notas importantes:_ 
 * El parámetro de entrada de intervalo se suministra mediante un objeto range en lugar de la cadena de dirección de intervalo.  
@@ -44,7 +63,7 @@ Dentro de una celda, la función `vlookup` es similar a esta:
 
 = BUSCARV(valor de búsqueda, rango que contiene el valor de búsqueda, el número de columna en el rango que contiene el valor devuelto, de forma opcional, especifique VERDADERO para obtener una coincidencia aproximada o FALSO para una coincidencia exacta)
 
-(Vea la documentación de la [Función de Excel BUSCARV](https://support.office.com/es-ES/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
+(Vea la documentación de la [Función de Excel BUSCARV](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
 
 En el ejemplo siguiente, se muestra cómo realizar una llamada a la función `vlookup` y pasar estos parámetros con la API de REST de Excel.
 
@@ -87,7 +106,7 @@ Dentro de una celda, la función `median` es similar a este ejemplo:
 
 =MEDIANA(A2:A6)
 
-(Vea la documentación de la [Función de Excel MEDIANA](https://support.office.com/es-ES/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
+(Vea la documentación de la [Función de Excel MEDIANA](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
 
 En el ejemplo siguiente, se muestra cómo realizar una llamada a la función `median` y uno o más rangos de entrada con la API de REST de Excel. 
 

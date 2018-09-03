@@ -22,7 +22,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /reports/getSharePointActivityPages(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a>Parámetros de la solicitud
+## <a name="function-parameters"></a>Parámetros de función
 
 En la URL de la solicitud, especifique el siguiente parámetro de consulta con un valor válido.
 
@@ -34,7 +34,7 @@ En la URL de la solicitud, especifique el siguiente parámetro de consulta con u
 
 | Nombre          | Descripción                              |
 | :------------ | :--------------------------------------- |
-| Authorization | {token} de portador. Obligatorio.                |
+| Autorización | {token} de portador. Obligatorio.                |
 | If-None-Match | Si se incluye el encabezado de la solicitud y la eTag proporcionada coincide con la etiqueta actual del archivo, se devuelve un código de respuesta `304 Not Modified`. Opcional. |
 
 ## <a name="response"></a>Respuesta

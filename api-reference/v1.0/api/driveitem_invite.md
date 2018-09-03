@@ -2,16 +2,18 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Enviar una invitación para obtener acceso a un elemento"
-ms.openlocfilehash: 5be2060c190434c4b9d587d20fe68d69786b3aa5
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Enviar una invitación para obtener acceso a un elemento
+ms.openlocfilehash: c68289049503e70e04b2e403ca09cfc1f67e4096
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268735"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar una invitación para uso compartido
 
-Envía una invitación para uso compartido de un objeto **DriveItem**. Una invitación para uso compartido proporciona permisos a los destinatarios y, de forma opcional, envía un correo electrónico a los destinatarios para notificarles que se ha compartido el elemento.
+Envía una invitación para uso compartido para un **DriveItem**.
+Una invitación para uso compartido proporciona permisos a los destinatarios y, opcionalmente, les envía un correo electrónico con un [vínculo para uso compartido][].
 
 ## <a name="permissions"></a>Permisos
 
@@ -35,11 +37,11 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
 ```json
 {
@@ -54,33 +56,33 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 }
 ```
 
-| Parámetro        | Tipo                                            | Descripción                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| destinatarios       | Collection([DriveRecipient](../resources/driverecipient.md)) | Una colección de los destinatarios que recibirán acceso y la invitación para uso compartido.                                            |
-| message          | String                                          | Un mensaje con formato de texto sin formato que se incluye en la invitación para uso compartido. La longitud máxima es de 2000 caracteres. |
-| requireSignIn    | Boolean                                         | Especifica si el destinatario de la invitación debe iniciar sesión para ver el elemento compartido.            |
-| sendInvitation   | Boolean                                         | Especifica si se genera un correo electrónico o una publicación (false) o si se acaba de crear el permiso (true).            |
-| roles            | Collection(String)                              | Especifica los roles que se conceden a los destinatarios de la invitación para uso compartido.                         |
+| Parámetro        | Tipo                           | Descripción
+|:-----------------|:-------------------------------|:-------------------------
+| destinatarios       | Colección ([DriveRecipient][]) | Una colección de los destinatarios que recibirán acceso y la invitación para uso compartido.
+| message          | Cadena                         | Un mensaje con formato de texto sin formato que se incluye en la invitación para uso compartido. La longitud máxima es de 2000 caracteres.
+| requireSignIn    | Booleano                        | Especifica si el destinatario de la invitación debe iniciar sesión para ver el elemento compartido.
+| sendInvitation   | Booleano                        | Si es verdadero, se envía un [vínculo para uso compartido][] al destinatario. De lo contrario, se concede un permiso directamente sin enviar una notificación.
+| roles            | Colección (Cadena)             | Especifica los roles que se conceden a los destinatarios de la invitación para uso compartido.
 
 ## <a name="example"></a>Ejemplo
 
-Este ejemplo envía una invitación para uso compartido a un usuario con la dirección de correo electrónico "ryan@contoso.org" y un mensaje sobre un archivo en el que se colabora.
+Este ejemplo envía una invitación para uso compartido a un usuario con la dirección de correo electrónico "ryan@contoso.org" y un mensaje sobre un archivo en el que colabora.
 La invitación concede a Ryan acceso de lectura y escritura al archivo.
 
 ### <a name="http-request"></a>Solicitud HTTP
 
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto de colección [permission](../resources/permission.md) en el cuerpo de la respuesta.
 
-<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```http
+```json
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
 {
   "recipients": [
     {
-      "email": "ryan@contoso.org"
+      "email": "ryan@contoso.com"
     }
   ],
   "message": "Here's the file that we're collaborating on.",
@@ -96,7 +98,7 @@ Aquí tiene un ejemplo de la respuesta.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -127,10 +129,12 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>Respuestas de error
 
-Lea el tema [Respuestas de error][error-response] para obtener más información sobre la manera en que se devuelven los errores.
+Consulte [Respuestas de error][error-response] para obtener más información sobre la manera en que se reciben los errores.
 
 
+[driveRecipient]: ../resources/driverecipient.md
 [error-response]: ../../../concepts/errors.md
+[vínculo para uso compartido]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

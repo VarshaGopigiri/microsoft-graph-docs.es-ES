@@ -13,8 +13,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
+POST /workbook/tables/{id|name}/rows/itemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -28,28 +28,30 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|index|number|Valor de índice del objeto que se va a recuperar. Indizado con cero.|
+|index|Int32|Valor del índice del objeto que se va a recuperar. Indizado con cero.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [TableRow](../resources/tablerow.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookTableRow](../resources/tablerow.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablerowcollection_itemat"
+  "isComposable": true,
+  "name": "tablerowcollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.tablerowcollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 4
 }
 ```
 
@@ -58,7 +60,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK

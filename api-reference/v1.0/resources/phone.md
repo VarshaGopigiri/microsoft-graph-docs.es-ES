@@ -6,8 +6,8 @@ Representa un número de teléfono.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|number|string|El número de teléfono.|
-|type|String|El tipo de número de teléfono. Valores posibles: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|number|cadena|El número de teléfono.|
+|type|phoneType|El tipo de número de teléfono. Los valores posibles son: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager` y `radio`.|
 
 ## <a name="json-representation"></a>Representación JSON
 

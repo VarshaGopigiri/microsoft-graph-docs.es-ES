@@ -15,10 +15,10 @@ Resumen de estado de la configuración de directiva cumplimiento de dispositivo 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|ajustes|cadena|El nombre de la clase de configuración y el nombre de propiedad.|
-|settingName|cadena|Nombre de la configuración.|
-|platformType|cadena|Plataforma de configuración Los valores posibles son: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` y `all`.|
-|id|cadena|Clave de la entidad.|
+|setting|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
+|settingName|Cadena|Nombre de la configuración.|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Plataforma de configuración. Los valores posibles son: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` y `all`.|
+|id|Cadena|Clave de la entidad.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles|
@@ -34,12 +34,12 @@ Resumen de estado de la configuración de directiva cumplimiento de dispositivo 
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingStateSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",

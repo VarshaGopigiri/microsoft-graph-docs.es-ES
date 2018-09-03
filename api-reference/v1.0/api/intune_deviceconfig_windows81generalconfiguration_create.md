@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitida.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -25,7 +25,7 @@ POST /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto windows81GeneralConfiguration.
@@ -34,45 +34,45 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indica si se va a impedir que el usuario agregue cuentas de correo electrónico en el dispositivo que no están asociadas a una cuenta de Microsoft.|
-|applyOnlyToWindows81|Boolean|Valor que indica si esta directiva se aplica solo a Windows 8.1. Esta propiedad es de solo lectura.|
-|browserBlockAutofill|Boolean|Indica si se va a bloquear el autorrelleno.|
-|browserBlockAutomaticDetectionOfIntranetSites|Boolean|Indica si se va a bloquear la detección automática de sitios de intranet.|
-|browserBlockEnterpriseModeAccess|Boolean|Indica si se va a bloquear el acceso al modo de empresa.|
-|browserBlockJavaScript|Boolean|Indica si se va a impedir que el usuario utilice JavaScript.|
-|browserBlockPlugins|Boolean|Indica si se van a bloquear los complementos.|
-|browserBlockPopups|Boolean|Indica si se van a bloquear los elementos emergentes.|
-|browserBlockSendingDoNotTrackHeader|Boolean|Indica si se va a impedir que el usuario envíe el encabezado Do Not Track.|
-|browserBlockSingleWordEntryOnIntranetSites|Boolean|Indica si se va a bloquear la entrada de palabra única en sitios de intranet.|
-|browserRequireSmartScreen|Boolean|Indica si se va a requerir que el usuario use el filtro de pantalla inteligente.|
-|browserEnterpriseModeSiteListLocation|String|Ubicación de la lista de sitios del modo de empresa. Puede ser un archivo local, la red local o la ubicación http.|
-|browserInternetSecurityLevel|String|Nivel de seguridad de Internet. Los valores posibles son: `userDefined`, `medium`, `mediumHigh` y `high`.|
-|browserIntranetSecurityLevel|String|Nivel de seguridad de la intranet. Los valores posibles son: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh` y `high`.|
-|browserLoggingReportLocation|String|Ubicación del informe de registro.|
-|browserRequireHighSecurityForRestrictedSites|Boolean|Indica si se va a requerir alta seguridad para los sitios restringidos.|
-|browserRequireFirewall|Boolean|Indica si se va a requerir un firewall.|
-|browserRequireFraudWarning|Boolean|Indica si se va a requerir una advertencia de fraude.|
-|browserTrustedSitesSecurityLevel|String|Nivel de seguridad de los sitios de confianza. Los valores posibles son: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh` y `high`.|
-|cellularBlockDataRoaming|Boolean|Indica si se va a bloquear la itinerancia de datos.|
-|diagnosticsBlockDataSubmission|Boolean|Indica si se va a bloquear el envío de datos de diagnóstico.|
-|passwordBlockPicturePasswordAndPin|Boolean|Indica si se va a impedir que el usuario utilice una contraseña de imágenes y un PIN.|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|accountsBlockAddingNonMicrosoftAccountEmail|Booleano|Indica si se va a impedir que el usuario agregue cuentas de correo electrónico en el dispositivo que no están asociadas a una cuenta de Microsoft.|
+|applyOnlyToWindows81|Booleano|Valor que indica si esta directiva se aplica solo a Windows 8.1. Esta propiedad es de solo lectura.|
+|browserBlockAutofill|Booleano|Indica si se va a bloquear el autorrelleno.|
+|browserBlockAutomaticDetectionOfIntranetSites|Booleano|Indica si se va a bloquear la detección automática de sitios de intranet.|
+|browserBlockEnterpriseModeAccess|Booleano|Indica si se va a bloquear el acceso al modo de empresa.|
+|browserBlockJavaScript|Booleano|Indica si se va a impedir que el usuario utilice JavaScript.|
+|browserBlockPlugins|Booleano|Indica si se van a bloquear los complementos.|
+|browserBlockPopups|Booleano|Indica si se van a bloquear los elementos emergentes.|
+|browserBlockSendingDoNotTrackHeader|Booleano|Indica si se va a impedir que el usuario envíe el encabezado Do Not Track.|
+|browserBlockSingleWordEntryOnIntranetSites|Booleano|Indica si se va a bloquear la entrada de palabra única en sitios de intranet.|
+|browserRequireSmartScreen|Booleano|Indica si se va a requerir que el usuario use el filtro de pantalla inteligente.|
+|browserEnterpriseModeSiteListLocation|Cadena|Ubicación de la lista de sitios del modo de empresa. Puede ser un archivo local, la red local o la ubicación http.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|Nivel de seguridad de Internet. Los valores posibles son: `userDefined`, `medium`, `mediumHigh` y `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Nivel de seguridad de la intranet. Los valores posibles son `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh` y `high`.|
+|browserLoggingReportLocation|Cadena|Ubicación del informe de registro.|
+|browserRequireHighSecurityForRestrictedSites|Booleano|Indica si se va a requerir alta seguridad para los sitios restringidos.|
+|browserRequireFirewall|Booleano|Indica si se va a requerir un firewall.|
+|browserRequireFraudWarning|Booleano|Indica si se va a requerir una advertencia de fraude.|
+|browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|Nivel de seguridad de los sitios de confianza. Los valores posibles son `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh` y `high`.|
+|cellularBlockDataRoaming|Booleano|Indica si se va a bloquear la itinerancia de datos.|
+|diagnosticsBlockDataSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
+|passwordBlockPicturePasswordAndPin|Booleano|Indica si se va a impedir que el usuario utilice una contraseña de imágenes y un PIN.|
 |passwordExpirationDays|Int32|Expiración de la contraseña en días.|
-|passwordMinimumLength|Int32|Longitud mínima de la contraseña.|
+|passwordMinimumLength|Int32|La longitud mínima de contraseña.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que impide su reutilización. Valores válidos de 0 a 24.|
-|passwordRequiredType|String|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que impide su reutilización. Valores válidos de 0 a 24|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica.|
-|storageRequireDeviceEncryption|Boolean|Indica si se va a requerir el cifrado en un dispositivo móvil.|
-|updatesRequireAutomaticUpdates|Boolean|Indica si se van a requerir las actualizaciones automáticas.|
-|userAccountControlSettings|String|Configuración de control de la cuenta de usuario. Los valores posibles son: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming` y `neverNotify`.|
-|workFoldersUrl|String|Dirección URL de las carpetas de trabajo.|
+|storageRequireDeviceEncryption|Booleano|Indica si se va a requerir el cifrado en un dispositivo móvil.|
+|updatesRequireAutomaticUpdates|Booleano|Indica si se van a requerir las actualizaciones automáticas.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|Configuración de control de la cuenta de usuario. Los valores posibles son: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming` y `neverNotify`.|
+|workFoldersUrl|Cadena|Dirección URL de las carpetas de trabajo.|
 
 
 

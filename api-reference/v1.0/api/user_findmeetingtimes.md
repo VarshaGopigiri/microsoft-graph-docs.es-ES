@@ -22,7 +22,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
+| Autorización  | {token} de portador. Obligatorio. |
 | Prefer: outlook.timezone | Una cadena que representa una zona horaria concreta para la respuesta, por ejemplo, "Hora estándar del Pacífico". Opcional. Se utiliza la hora UTC si no se especifica este encabezado.|
 
 ## <a name="request-body"></a>Cuerpo de solicitud
@@ -40,11 +40,11 @@ Todos los parámetros admitidos se enumeran a continuación. Dependiendo de su e
 |returnSuggestionReasons|Edm.Boolean|Especifique `True` para devolver un motivo para cada sugerencia de la reunión en la propiedad **suggestionReason**. El valor predeterminado es `false` para no devolver esa propiedad. Opcional.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Las restricciones de tiempo para una reunión, que pueden incluir la naturaleza de la reunión (propiedad **activityDomain**) y posibles periodos de tiempo de la reunión (propiedad **timeSlots**). **findMeetingTimes** asume **activityDomain** como `work` si no especifica este parámetro. Opcional.|
 
-En la tabla siguiente se describen las restricciones puede especificar en el parámetro **timeConstraint**.
+En la tabla siguiente se describen las restricciones **activityDomain** que puede especificar adicionalmente en el parámetro **timeConstraint**.
 
-|**valor activityDomain en timeConstraint**|**Sugerencias de hora de reunión**|
+|Valor de activityDomain|Sugerencias de hora de reunión|
 |:-----|:-----|
-|trabajo| Las sugerencias se encuentran dentro de la jornada laboral del usuario, que está definida en su configuración de calendario y tanto el administrador como el propio usuario pueden personalizar. Las horas de trabajo por defecto son de lunes a viernes, de 8 a.m. a 5 p.m. en la zona horaria establecida para el buzón. Este es el valor predeterminado si no se especifica **activityDomain**. |
+|work| Las sugerencias se encuentran dentro de la jornada laboral del usuario, que está definida en su configuración de calendario y tanto el administrador como el propio usuario pueden personalizar. Las horas de trabajo por defecto son de lunes a viernes, de 8 a.m. a 5 p.m. en la zona horaria establecida para el buzón. Este es el valor predeterminado si no se especifica **activityDomain**. |
 |personal| Las sugerencias se encuentran dentro de la jornada laboral del usuario y en sábado y domingo. El valor predeterminado es del lunes al domingo, de 8 a.m. a 5 p.m., en la configuración de zona horaria para el buzón.|
 |sin restricciones | Las sugerencias pueden pertenecer a cualquier hora del día, todos los días de la semana.|
 |desconocido | No utilice este valor, pues quedará obsoleto en el futuro. Actualmente se comporta igual que `work`. Cambie cualquier código existente para usar `work`, `personal` o `unrestricted` según corresponda.
@@ -145,8 +145,8 @@ Content-Type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100.0
 }
 ```
 
@@ -241,5 +241,9 @@ Content-Length: 976
   "description": "user: findMeetingTimes",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/user_findmeetingtimes.md:
+      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|"
+  ],
   "tocPath": ""
 }-->

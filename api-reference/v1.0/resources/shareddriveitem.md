@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
-ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: abcf686be46e15a523a1a88170981cb318e71b00
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268203"
 ---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso de SharedDriveItem
 
@@ -21,6 +22,7 @@ El recurso **sharedDriveItem** deriva de [**baseItem**](baseitem.md) y hereda la
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
@@ -31,7 +33,7 @@ El recurso **sharedDriveItem** deriva de [**baseItem**](baseitem.md) y hereda la
   "name": "string",
   "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "list": { "@odata.type": "microsoft.graph.list" },
   "listItem": { "@odata.type": "microsoft.graph.listItem" },
@@ -44,8 +46,8 @@ El recurso **sharedDriveItem** deriva de [**baseItem**](baseitem.md) y hereda la
 
 | Propiedad | Tipo                          | Descripción                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | El identificador único del recurso compartido al que se accede.              |
-| name     | String                        | El nombre para mostrar del elemento compartido.                             |
+| id       | Cadena                        | El identificador único del recurso compartido al que se accede.              |
+| name     | Cadena                        | El nombre para mostrar del elemento compartido.                             |
 | owner    | [IdentitySet](identityset.md) | Información sobre el propietario del elemento compartido al que se hace referencia. |
 
 ## <a name="relationships"></a>Relaciones
@@ -57,13 +59,12 @@ El recurso **sharedDriveItem** deriva de [**baseItem**](baseitem.md) y hereda la
 | **listItem**      | [**listItem**][listItem]    | Usado para obtener acceso al recurso **listItem** subyacente.
 | **site**          | [**site**][site]        | Usado para obtener acceso al recurso **site** subyacente.
 
-
 O bien, para recursos **driveItem** compartidos de cuentas personales de OneDrive, también se pueden usar las siguientes relaciones.
 
 | Nombre de la relación | Tipo                         | Descripción
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | Colección [**driveItem**][driveItem] | Todos los recursos driveItem que se incluyen en la raíz de uso compartido. Esta colección no se puede enumerar.
-| **driveItem**     | [**driveItem**][driveItem]            | Usado para obtener acceso al recurso **driveItem** subyacente.
+| **root**          | [**driveItem**][driveItem]   | Usado para obtener acceso al recurso **driveItem** subyacente. Obsoleto; use `driveItem` en su lugar.
 
 [driveItem]: driveItem.md
 [list]: list.md

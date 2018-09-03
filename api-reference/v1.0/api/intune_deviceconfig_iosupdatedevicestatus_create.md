@@ -24,8 +24,8 @@ POST /deviceManagement/iosUpdateStatuses
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Aceptar|aplicación/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto iosUpdateDeviceStatus.
@@ -34,18 +34,18 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|installStatus|String|Estado de la instalación del informe de directiva. Los valores posibles son: `success`, `available`, `idle`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation` y `sharedDeviceUserLoggedInError`.|
-|osVersion|String|La versión del dispositivo que se está notificando.|
-|deviceId|String|El identificador del dispositivo que se está notificando.|
-|userId|String|El identificador del usuario que se está notificando.|
-|deviceDisplayName|String|Nombre de dispositivo de DevicePolicyStatus.|
-|userName|String|El nombre de usuario que se está notificando|
-|deviceModel|String|El modelo de dispositivo que se está notificando|
+|id|Cadena|Clave de la entidad.|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune_deviceconfig_iosupdatesinstallstatus.md)|Estado de la instalación del informe de directivas. Los valores posibles son: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
+|osVersion|Cadena|La versión del dispositivo que se está notificando.|
+|deviceId|Cadena|El identificador del dispositivo que se está notificando.|
+|userId|Cadena|El identificador del usuario que se está notificando.|
+|deviceDisplayName|Cadena|Nombre de dispositivo de DevicePolicyStatus.|
+|userName|Cadena|El nombre de usuario que se está notificando|
+|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
-|status|String|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directivas. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadena|UserPrincipalName.|
 
 
 

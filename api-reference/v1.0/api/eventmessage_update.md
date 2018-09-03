@@ -22,15 +22,15 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Content-Type | cadena  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado. Son propiedades Writable/Updatable
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|categories|String|Categorías asociadas al mensaje.|
-|importance|String|Importancia del mensaje. Valores posibles: `Low`, `Normal`, `High`.|
+|categories|Cadena|Categorías asociadas al mensaje.|
+|importance|Cadena|La importancia del mensaje. Los valores posibles son: `Low`, `Normal` y `High`.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|

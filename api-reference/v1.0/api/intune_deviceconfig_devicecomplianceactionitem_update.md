@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Aceptar|aplicación/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md).
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |gracePeriodHours|Int32|Número de horas de espera hasta que se aplica la acción. Valores válidos de 0 a 8760|
-|actionType|String|Qué acción tomar. Los valores posibles son: `noAction`, `notification`, `block`, `retire`, `wipe` y `removeResourceAccessProfiles`.|
-|notificationTemplateId|String|Qué plantilla de mensaje de notificación usar|
+|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|Qué acción tomar. Los valores posibles son: `noAction`, `notification`, `block`, `retire`, `wipe` y `removeResourceAccessProfiles`.|
+|notificationTemplateId|Cadena|Qué plantilla de mensaje de notificación usar|
 |notificationMessageCCList|Colección string|Una lista de identificadores de grupo para especificar a quién enviar este mensaje de notificación.|
 
 
