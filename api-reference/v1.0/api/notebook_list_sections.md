@@ -1,16 +1,16 @@
-# <a name="list-sections"></a><span data-ttu-id="5095a-101">Enumerar secciones</span><span class="sxs-lookup"><span data-stu-id="5095a-101">List sections</span></span>
+# <a name="list-sections"></a><span data-ttu-id="347bb-101">Enumerar secciones</span><span class="sxs-lookup"><span data-stu-id="347bb-101">List sections</span></span>
 
-<span data-ttu-id="5095a-102">Recupera una lista de objetos [section](../resources/section.md) desde el bloc de notas especificado.</span><span class="sxs-lookup"><span data-stu-id="5095a-102">Retrieve a list of [section](../resources/section.md) objects from the specified notebook.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5095a-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="5095a-103">Permissions</span></span>
-<span data-ttu-id="5095a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5095a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="347bb-102">Recupera una lista de objetos [onenoteSection](../resources/section.md) desde el bloc de notas especificado.</span><span class="sxs-lookup"><span data-stu-id="347bb-102">Retrieve a list of [section](../resources/section.md) objects from the specified notebook.</span></span>
+## <a name="permissions"></a><span data-ttu-id="347bb-103">Permisos</span><span class="sxs-lookup"><span data-stu-id="347bb-103">Permissions</span></span>
+<span data-ttu-id="347bb-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="347bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="5095a-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="5095a-106">Permission type</span></span>      | <span data-ttu-id="5095a-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="5095a-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="347bb-106">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="347bb-106">Permission type</span></span>      | <span data-ttu-id="347bb-107">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="347bb-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5095a-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="5095a-108">Delegated (work or school account)</span></span> | <span data-ttu-id="5095a-109">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5095a-109">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5095a-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5095a-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5095a-111">Notes.Create, Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5095a-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5095a-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="5095a-112">Application</span></span> | <span data-ttu-id="5095a-113">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5095a-113">Notes.Read, Notes.ReadWrite, Notes.Read.All, or Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="347bb-108">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="347bb-108">Delegated (work or school account)</span></span> | <span data-ttu-id="347bb-109">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="347bb-109">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="347bb-110">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="347bb-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="347bb-111">Notes.Create, Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="347bb-111">Notes.Create, Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="347bb-112">Aplicación</span><span class="sxs-lookup"><span data-stu-id="347bb-112">Application</span></span> | <span data-ttu-id="347bb-113">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="347bb-113">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5095a-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="5095a-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="347bb-114">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="347bb-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/notebooks/{id}/sections
@@ -18,29 +18,29 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/{id}/sections
 GET /groups/{id}/onenote/notebooks/{id}/sections
 GET /sites/{id}/onenote/notebooks/{id}/sections
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5095a-115">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="5095a-115">Optional query parameters</span></span>
-<span data-ttu-id="5095a-116">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5095a-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="347bb-115">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="347bb-115">Optional query parameters</span></span>
+<span data-ttu-id="347bb-116">Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="347bb-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="5095a-117">El criterio de ordenación predeterminado es `name asc`.</span><span class="sxs-lookup"><span data-stu-id="5095a-117">The default sort order is `name asc`.</span></span>
+<span data-ttu-id="347bb-117">El criterio de ordenación predeterminado es `name asc`.</span><span class="sxs-lookup"><span data-stu-id="347bb-117">The default sort order is `name asc`.</span></span>
 
-<span data-ttu-id="5095a-p102">La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades `id`, `displayName` y `self`. Los valores válidos de `expand` para las secciones son `parentNotebook` y `parentSectionGroup`.</span><span class="sxs-lookup"><span data-stu-id="5095a-p102">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.</span></span>
+<span data-ttu-id="347bb-p102">La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades `id`, `displayName` y `self`. Los valores válidos de `expand` para las secciones son `parentNotebook` y `parentSectionGroup`.</span><span class="sxs-lookup"><span data-stu-id="347bb-p102">The default query expands `parentNotebook` and selects its `id`, `displayName`, and `self` properties. Valid `expand` values for sections are `parentNotebook` and `parentSectionGroup`.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="5095a-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="5095a-120">Request headers</span></span>
-| <span data-ttu-id="5095a-121">Nombre</span><span class="sxs-lookup"><span data-stu-id="5095a-121">Name</span></span>       | <span data-ttu-id="5095a-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="5095a-122">Type</span></span> | <span data-ttu-id="5095a-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="5095a-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="347bb-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="347bb-120">Request headers</span></span>
+| <span data-ttu-id="347bb-121">Nombre</span><span class="sxs-lookup"><span data-stu-id="347bb-121">Name</span></span>       | <span data-ttu-id="347bb-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="347bb-122">Type</span></span> | <span data-ttu-id="347bb-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="347bb-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="5095a-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5095a-124">Authorization</span></span>  | <span data-ttu-id="5095a-125">string</span><span class="sxs-lookup"><span data-stu-id="5095a-125">string</span></span>  | <span data-ttu-id="5095a-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="5095a-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5095a-128">Aceptar</span><span class="sxs-lookup"><span data-stu-id="5095a-128">Accept</span></span> | <span data-ttu-id="5095a-129">string</span><span class="sxs-lookup"><span data-stu-id="5095a-129">string</span></span> | `application/json` |
+| <span data-ttu-id="347bb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="347bb-124">Authorization</span></span>  | <span data-ttu-id="347bb-125">cadena</span><span class="sxs-lookup"><span data-stu-id="347bb-125">string</span></span>  | <span data-ttu-id="347bb-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="347bb-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="347bb-128">Aceptar</span><span class="sxs-lookup"><span data-stu-id="347bb-128">Accept</span></span> | <span data-ttu-id="347bb-129">cadena</span><span class="sxs-lookup"><span data-stu-id="347bb-129">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="5095a-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="5095a-130">Request body</span></span>
-<span data-ttu-id="5095a-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="5095a-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="347bb-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="347bb-130">Request body</span></span>
+<span data-ttu-id="347bb-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="347bb-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5095a-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5095a-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="347bb-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="347bb-132">Response</span></span>
 
-<span data-ttu-id="5095a-133">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [section](../resources/section.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5095a-133">If successful, this method returns a `200 OK` response code and a collection of [section](../resources/section.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5095a-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="5095a-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5095a-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="5095a-135">Request</span></span>
-<span data-ttu-id="5095a-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="5095a-136">Here is an example of the request.</span></span>
+<span data-ttu-id="347bb-133">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [onenoteSection](../resources/section.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="347bb-133">If successful, this method returns a `200 OK` response code and a collection of [user](../resources/section.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="347bb-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="347bb-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="347bb-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="347bb-135">Request</span></span>
+<span data-ttu-id="347bb-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="347bb-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_sections"
@@ -48,8 +48,8 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sections
 ```
-##### <a name="response"></a><span data-ttu-id="5095a-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5095a-137">Response</span></span>
-<span data-ttu-id="5095a-p104">Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="5095a-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="347bb-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="347bb-137">Response</span></span>
+<span data-ttu-id="347bb-p104">Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="347bb-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
