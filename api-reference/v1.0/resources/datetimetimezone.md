@@ -5,8 +5,8 @@ Describe la fecha, la hora y la zona horaria de un momento dado.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|DateTime|String|Un único momento dado en una fecha combinada y la representación de tiempo (`<date>T<time>`).|
-|TimeZone|String|Uno de los siguientes nombres de zona horaria.|
+|dateTime|Cadena|Un único momento dado en una fecha combinada y la representación de tiempo (`<date>T<time>`).|
+|timeZone|Cadena|Uno de los siguientes nombres de zona horaria.|
 
 La propiedad _TimeZone_ puede establecerse en cualquiera de las zonas horarias compatibles con Windows, así como los nombres de zona horaria siguientes.
 
@@ -18,7 +18,7 @@ Pacific/Honolulu
 
 America/Anchorage
 
-America/Santa_Isabel
+América/Santa Isabel
 
 America/Los_Angeles
 

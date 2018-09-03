@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 526001ad9a6c52c5b031c1734466772861f1c67e
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 60f2d58331f349f9990f78f36f04df055ce90b9e
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269841"
 ---
 # <a name="driveitem-resource-type"></a>Tipo de recurso DriveItem
 
@@ -34,6 +35,7 @@ A continuación se incluye una representación JSON del recurso **driveItem**.
 El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propiedades de ese recurso.
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
@@ -43,6 +45,7 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -53,6 +56,7 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
   "root": { "@odata.type": "microsoft.graph.root" },
   "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
@@ -64,12 +68,12 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
   "webDavUrl": "string",
 
   /* relationships */
-  "content": { "@odata.type": "Edm.Stream" },
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -94,34 +98,36 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 | Propiedad             | Tipo               | Descripción
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Metadatos de audio, si el elemento es un archivo de audio. Solo lectura.
+| content              | Secuencia             | La secuencia de contenido, si el elemento representa un archivo.
 | createdBy            | [identitySet][]    | Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.
 | createdDateTime      | DateTimeOffset     | Fecha y hora de creación del elemento. Solo lectura.
-| cTag                 | String             | Un eTag del contenido del elemento. No se cambia este eTag si solo se modifican los metadatos. **Nota** Esta propiedad no se devuelve si el elemento es una carpeta. Solo lectura.
+| cTag                 | Cadena             | Un eTag del contenido del elemento. No se cambia este eTag si solo se modifican los metadatos. **Nota** Esta propiedad no se devuelve si el elemento es una carpeta. Solo lectura.
 | deleted              | [deleted][]        | Información sobre el estado del elemento eliminado. Solo lectura.
-| description          | String             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
-| eTag                 | String             | ETag de todo el elemento (metadatos + contenido). Solo lectura.
+| description          | Cadena             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
+| eTag                 | Cadena             | ETag de todo el elemento (metadatos + contenido). Solo lectura.
 | file                 | [file][]           | Metadatos de archivo, si el elemento es un archivo. Solo lectura.
 | fileSystemInfo       | [fileSystemInfo][] | Información del sistema de archivos del cliente. Lectura y escritura.
 | folder               | [folder][]         | Metadatos de carpeta, si el elemento es una carpeta. Solo lectura.
-| id                   | String             | El identificador único del elemento dentro del Drive. Solo lectura.
+| id                   | Cadena             | El identificador único del elemento dentro del Drive. Solo lectura.
 | image                | [image][]          | Metadatos de imagen, si el elemento es una imagen. Solo lectura.
 | lastModifiedBy       | [identitySet][]    | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.
 | lastModifiedDateTime | DateTimeOffset     | Fecha y hora de la última modificación del elemento. Solo lectura.
 | location             | [geoCoordinates][] | Metadatos de ubicación, si el elemento tiene datos de ubicación. Solo lectura.
-| name                 | String             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
-| package              | [package][]        | Si está presente, indica que este elemento es un paquete en lugar de una carpeta o archivo. Los paquetes se tratan como archivos en algunos contextos y como carpetas en otros. Solo lectura.
+| name                 | Cadena             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
+| paquete              | [package][]        | Si está presente, indica que este elemento es un paquete en lugar de una carpeta o archivo. Los paquetes se tratan como archivos en algunos contextos y como carpetas en otros. Solo lectura.
 | parentReference      | [itemReference][]  | Información primaria, si el elemento tiene un elemento primario. Lectura y escritura.
 | photo                | [photo][]          | Metadatos de foto, si el elemento es una foto. Solo lectura.
+| publication          | [publicationFacet][] | Proporciona información sobre el estado publicado o extraído de un elemento, en ubicaciones que admiten esas acciones. Esta propiedad no se devuelve de forma predeterminada. Solo lectura. |
 | remoteItem           | [remoteItem][]     | Datos de elemento remoto, si el elemento se comparte desde una unidad distinta a la de acceso. Solo lectura.
 | root                 | [root][]           | Si esta propiedad no es NULL, indica que el driveItem es el driveItem de nivel superior de la unidad.
 | searchResult         | [searchResult][]   | Metadatos de búsqueda, si el elemento es un resultado de búsqueda. Solo lectura.
-| shared               | [shared][]         | Indica que el elemento se ha compartido con otros usuarios y proporciona información sobre el estado del elemento compartido. Solo lectura.
+| compartido               | [shared][]         | Indica que el elemento se ha compartido con otros usuarios y proporciona información sobre el estado del elemento compartido. Solo lectura.
 | sharepointIds        | [sharepointIds][]  | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.
 | size                 | Int64              | Tamaño del elemento en bytes. Solo lectura.
 | specialFolder        | [specialFolder][]  | Si el elemento actual también está disponible como una carpeta especial, se devuelve esta faceta. Solo lectura.
 | video                | [video][]          | Metadatos de vídeo, si el elemento es un vídeo. Solo lectura.
 | webDavUrl            | Cadena             | Dirección URL compatible con WebDAV del elemento.
-| webUrl               | String             | Dirección URL que muestra el recurso en el explorador. Solo lectura.
+| webUrl               | Cadena             | Dirección URL que muestra el recurso en el explorador. Solo lectura.
 
 **Nota:** Las propiedades eTag y cTag funcionan de forma diferente en los contenedores (carpetas). El valor de cTag se modifica cuando se cambia el contenido o los metadatos de cualquier descendiente de la carpeta. El valor de eTag solo se modifica cuando se cambian las propiedades de la carpeta, excepto las propiedades que derivan de descendientes (como **childCount** o **lastModifiedDateTime**).
 
@@ -129,22 +135,24 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 
 | Relación       | Tipo                        | Descripción
 |:-------------------|:----------------------------|:--------------------------
-| content            | Secuencia                      | La secuencia de contenido, si el elemento representa un archivo.
-| children           | Colección driveItem        | Colección que contiene objetos de elemento de los elementos secundarios inmediatos. Solo los elementos que representan carpetas tienen elementos secundarios. Solo lectura. Admite valores NULL.
+| children           | Colección driveItem        | Colección que contiene objetos Item de los elementos secundarios inmediatos del elemento. Solo los elementos que representan carpetas tienen elementos secundarios. Solo lectura. Admite valores NULL.
 | createdByUser      | [user][]                    | Identidad del usuario que ha creado el elemento. Solo lectura.
 | lastModifiedByUser | [user][]                    | Identidad del usuario que ha modificado por última vez el elemento. Solo lectura.
+| listItem           | [listItem][]                | Para unidades de disco en SharePoint, el elemento de lista de la biblioteca de documentos asociada. Solo lectura. Admite valores NULL.
 | permissions        | Colección [permission][]   | El conjunto de permisos del elemento. Solo lectura. Admite valores NULL.
-| thumbnails         | Colección [thumbnailSet][] | Colección que contiene objetos [ThumbnailSet][] asociados al elemento. Para obtener más información, consulte [obtener miniaturas][]. Solo lectura. Admite valores NULL.
+| miniaturas         | Colección [thumbnailSet][] | Colección que contiene objetos [ThumbnailSet][] asociados al elemento. Para obtener más información, consulte [obtener miniaturas][]. Solo lectura. Admite valores NULL.
+| versions           | colección de [driveItemVersion][] | La lista de las versiones anteriores del elemento. Para obtener más información, vea [obtener versiones anteriores][]. Solo lectura. Admite valores NULL.
+| workbook           | [workbook][]                | Para los archivos que son hojas de cálculo de Excel, accede a la API para trabajar con el contenido de la hoja de cálculo. Admite valores NULL.
 
 ## <a name="instance-attributes"></a>Atributos de instancia
 
 Los atributos de instancia son propiedades con comportamientos especiales. Estas propiedades son temporales y o bien a) definen el comportamiento que debería tener el servicio o b) proporcionan valores de propiedad a corto plazo, como una dirección URL de descarga de un elemento que expira.
 
-| Nombre de la propiedad                     | Tipo   | Descripción
+| Nombre de propiedad                     | Tipo   | Descripción
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | El comportamiento de resolución de conflictos para las acciones que crean un nuevo elemento. Puede utilizar los valores de *fail*, *replace*, o *rename*. El valor predeterminado de PUT es *replace*. Nunca se devuelve un elemento con esta anotación. Solo escritura.
-| @microsoft.graph.downloadUrl      | string | Una dirección URL que puede utilizarse para descargar el contenido de este archivo. No es necesaria la autenticación con esta dirección URL. Solo lectura.
-| @microsoft.graph.sourceUrl        | string | Al emitir una solicitud PUT, esta anotación de instancia puede utilizarse para indicar al servicio que descargue el contenido de la dirección URL y lo guarde como el archivo. Solo escritura.
+| @microsoft.graph.conflictBehavior | cadena | El comportamiento de resolución de conflictos para las acciones que crean un nuevo elemento. Puede utilizar los valores de *fail*, *replace*, o *rename*. El valor predeterminado de PUT es *replace*. Nunca se devuelve un elemento con esta anotación. Solo escritura.
+| @microsoft.graph.downloadUrl      | cadena | Una dirección URL que puede utilizarse para descargar el contenido de este archivo. No es necesaria la autenticación con esta dirección URL. Solo lectura.
+| @microsoft.graph.sourceUrl        | cadena | Al emitir una solicitud PUT, esta anotación de instancia puede utilizarse para indicar al servicio que descargue el contenido de la dirección URL y lo guarde como el archivo. Solo escritura.
 
 **Nota:** El valor @microsoft.graph.downloadUrl es una dirección URL de corta duración y no puede almacenarse en caché. La dirección URL solo estará disponible durante un breve período de tiempo (1 hora) antes de ser invalidada.
 
@@ -154,6 +162,7 @@ Los atributos de instancia son propiedades con comportamientos especiales. Estas
 |:---------------------------------------------------------|:------------------
 | [Obtener elemento](../api/driveitem_get.md)                      | `GET /drive/items/{item-id}`
 | [Enumerar elementos secundarios](../api/driveitem_list_children.md)       | `GET /drive/items/{item-id}/children`
+| [Enumerar versiones](../api/driveitem_list_versions.md)       | `GET /drive/items/{item-id}/versions`
 | [Crear elemento](../api/driveitem_post_children.md)         | `POST /drive/items/{item-id}/children`
 | [Actualizar elemento](../api/driveitem_update.md)                | `PATCH /drive/items/{item-id}`
 | [Cargar contenido](../api/driveitem_put_content.md)        | `PUT /drive/items/{item-id}/content`
@@ -179,14 +188,17 @@ En las bibliotecas de documentos de OneDrive para la Empresa o SharePoint, no se
 [baseItem]: baseItem.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem_get_content_format.md
+[driveItemVersion]: driveItemVersion.md
 [file]: file.md
 [fileSystemInfo]: fileSystemInfo.md
 [folder]: folder.md
+[obtener versiones anteriores]: ../api/driveitem_list_versions.md
 [obtener miniaturas]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
 [image]: image.md
 [itemReference]: itemReference.md
 [geoCoordinates]: geoCoordinates.md
+[listItem]: listItem.md
 [package]: package.md
 [permission]: permission.md
 [photo]: photo.md
@@ -198,7 +210,9 @@ En las bibliotecas de documentos de OneDrive para la Empresa o SharePoint, no se
 [specialFolder]: specialFolder.md
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
+[workbook]: workbook.md
 [user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[publicationFacet]: publicationfacet.md
 
 <!-- {
   "type": "#page.annotation",

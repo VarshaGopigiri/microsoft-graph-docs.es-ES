@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/clear
+POST /workbook/names/{name}/range/clear
 POST /workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
@@ -29,7 +29,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|applyTo|string|Opcional. Determina el tipo de acción de borrado.  Valores posibles: `All`, `Formats`, `Contents`.|
+|applyTo|cadena|Opcional. Determina el tipo de acción Borrar.  Los valores posibles son: `All`, `Formats`, `Contents`.|
 
 ## <a name="response"></a>Respuesta
 
@@ -44,7 +44,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "range_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/clear
 Content-type: application/json
 Content-length: 32
 
@@ -56,9 +56,7 @@ Content-length: 32
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
