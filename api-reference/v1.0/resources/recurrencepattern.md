@@ -22,12 +22,12 @@ Use la propiedad **type** para especificar los diferentes tipos de **recurrenceP
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|Día del mes en el que se produce el evento. Se requiere si **type** es `absoluteMonthly` o `absoluteYearly`. |
-|daysOfWeek|Colección de cadenas|Colección de los días de la semana en los que se produce el evento. Valores posibles: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Si **type** es `relativeMonthly` o `relativeYearly`, y **daysOfWeek** especifica más de un día, el evento ocurre en el primer día que cumpla con el patrón. <br> Se requiere si **type** es `weekly`, `relativeMonthly` o `relativeYearly`.|
-|firstDayOfWeek|Cadena|Primer día de la semana Valores posibles: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. El valor predeterminado es `sunday`. Se requiere si **type** es `weekly`. |
-|index|Cadena|Especifica en qué instancia de los días permitidos especificados en **daysOfsWeek** se produce el evento, contados a partir de la primera instancia del mes. Valores posibles: `first`, `second`, `third`, `fourth`, `last`. El valor predeterminado es `first`. Es opcional y se usa si **type** es `relativeMonthly` o `relativeYearly`. |
+|daysOfWeek|Colección dayOfWeek|Colección de los días de la semana en los que se produce el evento. Los valores posibles son: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday` y `saturday`. <br>Si **type** es `relativeMonthly` o `relativeYearly`, y **daysOfWeek** especifica más de un día, el evento ocurre en el primer día que cumpla con el patrón. <br> Se requiere si **type** es `weekly`, `relativeMonthly` o `relativeYearly`.|
+|firstDayOfWeek|dayOfWeek|Primer día de la semana. Los valores posibles son: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday` y `saturday`. El valor predeterminado es `sunday`. Se requiere si **type** es `weekly`. |
+|index|weekIndex|Especifica en qué instancia de los días permitidos especificados en **daysOfsWeek** se produce el evento, contados a partir de la primera instancia del mes. Los valores posibles son: `first`, `second`, `third`, `fourth` y `last`. El valor predeterminado es `first`. Es opcional y se usa si **type** es `relativeMonthly` o `relativeYearly`. |
 |interval|Int32|El número de unidades entre repeticiones, donde las unidades pueden ser días, semanas, meses o años, dependiendo de **type**. Obligatorio. |
 |mes|Int32|Mes en el que se produce el evento.  Se trata de un número entre 1 y 12.|
-|type|String|Tipo de patrón de periodicidad: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Obligatorio.|
+|type|recurrencePatternType|Tipo de patrón de periodicidad: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Obligatorio.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -61,5 +61,9 @@ Aquí tiene una representación JSON del recurso
   "description": "recurrencePattern resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/recurrencepattern.md/microsoft.graph.recurrencePattern/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->

@@ -12,7 +12,7 @@ Los desarrolladores empresariales utilizan Microsoft Graph para integrar la admi
 
 Para muchos desarrolladores empresariales, Microsoft Graph y Azure AD ayudan a migrar mediante lift-and-shift aplicaciones existentes a la nube, lo que acelera la transformación digital de una organización. Puede aprovechar las ventajas de las funciones de Azure AD para agregar mecanismos de control de acceso a aplicaciones, como comprobar la pertenencia de un usuario a un grupo, el rol de directorio o la pertenencia a la unidad administrativa.
 
-Puede usar Microsoft Graph y Azure AD como una forma de llegar rápida y fácilmente a más de 15 millones de organizaciones, incluyendo el 90 % de las empresas del Fortune 500 que ya usan servicios de Azure AD. Las aplicaciones integradas cuentan con experiencias de inicio de sesión directa y pueden usar los datos existentes de la organización para crear experiencias personalizadas.  
+Puede usar Microsoft Graph y Azure AD como una forma de llegar rápida y fácilmente a más de 15 millones de organizaciones, incluyendo el 90 % de las empresas del Fortune 500 que ya usan servicios de Azure AD. Las aplicaciones integradas cuentan con experiencias de inicio de sesión directa y pueden usar los datos existentes de la organización para crear experiencias personalizadas.  
 
 Puede usar la API de Azure AD de Microsoft Graph para consultar el perfil de usuario, buscar otros usuarios, administrar relaciones de la organización, realizar un seguimiento de tareas o crear soluciones originales que incorporan datos de la organización existentes. Estas API ofrecen una base sólida para integrar perfectamente aplicaciones empresariales personalizadas en los servicios digitales existentes de una organización.
 
@@ -30,7 +30,7 @@ Puede asignar usuarios a [roles de directorio](../api-reference/v1.0/resources/d
 
 ### <a name="manage-devices"></a>Administrar dispositivos
 
-[Administre los dispositivos](https://docs.microsoft.com/es-ES/azure/active-directory/device-management-introduction.md) registrados en la organización. Los dispositivos se registran en usuarios e incluyen elementos como portátiles, equipos de escritorio, tabletas y teléfonos móviles. Los dispositivos suelen crearse en la nube con el servicio de registro de dispositivos o Microsoft Intune. Las directivas de acceso condicional los usan para la autenticación multifactor.
+[Administre los dispositivos](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md) registrados en la organización. Los dispositivos se registran en usuarios e incluyen elementos como portátiles, equipos de escritorio, tabletas y teléfonos móviles. Los dispositivos suelen crearse en la nube con el servicio de registro de dispositivos o Microsoft Intune. Las directivas de acceso condicional los usan para la autenticación multifactor.
 
 ### <a name="partner-tenant-management"></a>Administración de inquilinos de partners
 
@@ -54,11 +54,14 @@ Puede recuperar eventos de riesgo generados mediante Azure AD [Identity Protecti
 
 Puede obtener acceso seguro a los recursos mediante la activación bajo petición de los privilegios administrativos. [Privileged Identity Management](../api-reference/beta/resources/privilegedidentitymanagement_root.md) está incluido en Azure AD Premium P2.
 
+### <a name="manage-user-access-reviews-preview"></a>Administrar las revisiones de acceso de usuario (vista previa)
 
-## <a name="next-steps"></a>Siguientes pasos
+Puede configurar revisiones de acceso de pertenencias a grupos y acceso a aplicaciones. Las [revisiones de acceso](../api-reference/beta/resources/accessreviews_root.md) está incluido en Azure AD Premium P2.
+
+## <a name="next-steps"></a>Pasos siguientes
 
 - Descubra cómo [Usar la API de REST de Azure AD](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Usar Azure AD para [autenticar](auth_overview.md) en Microsoft Graph. 
-- Integrar el [inicio de sesión de Azure AD](https://azure.microsoft.com/es-ES/develop/identity/signin/) en su aplicación o sitio web.
+- Integrar el [inicio de sesión de Azure AD](https://azure.microsoft.com/en-us/develop/identity/signin/) en su aplicación o sitio web.
 - Consulte el [registro de cambios](changelog.md) para obtener información sobre las novedades de la API de Azure AD.
-- Explore los [ejemplos](https://developer.microsoft.com/es-ES/graph/graph/examples) para obtener más ideas sobre cómo usar Microsoft Graph.
+- Explore los [ejemplos](https://developer.microsoft.com/en-us/graph/graph/examples) para obtener más ideas sobre cómo usar Microsoft Graph.

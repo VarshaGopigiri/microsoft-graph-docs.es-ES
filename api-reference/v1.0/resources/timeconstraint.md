@@ -11,7 +11,7 @@ Aquí tiene una representación JSON del recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json
@@ -22,10 +22,10 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|activityDomain|String|La naturaleza de la actividad, opcional. Los valores posibles son: `work`, `personal`, `unrestricted` o `unknown`.|
-|ranuras de intervalo de tiempo|Colección[timeSlot](timeslot.md)|Matriz de periodos de tiempo.|
+|activityDomain|activityDomain|La naturaleza de la actividad, de forma opcional. Los valores posibles son: `work`, `personal`, `unrestricted` o `unknown`.|
+|timeslots|colección [timeSlot](timeslot.md)|Una matriz de periodos de tiempo.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

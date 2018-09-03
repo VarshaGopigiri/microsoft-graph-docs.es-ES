@@ -21,17 +21,16 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 
 El `<id | userPrincipalName>` del usuario debe coincidir con el usuario codificado en el token de autorización que se usa para realizar la solicitud.
 
+## <a name="function-parameters"></a>Parámetros de función
+
+| Parámetro    | Tipo   |Descripción|
+|:---------------|:--------|:----------|
+|includePersonalNotebooks|Booleano|Incluir los blocs de notas que pertenecen al usuario. Se establece en `true` para incluir los blocs de notas que pertenecen al usuario; en caso contrario, se establece en `false`. Si no incluye el parámetro `includePersonalNotebooks`, la solicitud devolverá una respuesta de error `400`.|
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Autorización  | Portador {código}|
-
-## <a name="request-parameters"></a>Parámetros de la solicitud
-En la dirección URL de la solicitud, especifique los siguientes parámetros de consulta con valores.
-
-| Parámetro    | Tipo   |Descripción|
-|:---------------|:--------|:----------|
-|includePersonalNotebooks|Boolean|Incluir los blocs de notas que pertenecen al usuario. Se establece en `true` para incluir los blocs de notas que pertenecen al usuario; en caso contrario, se establece en `false`. Si no incluye el parámetro `includePersonalNotebooks`, la solicitud devolverá una respuesta de error `400`.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

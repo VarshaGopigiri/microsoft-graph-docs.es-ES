@@ -6,9 +6,9 @@ Representa un sitio web.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|type|String| Valores posibles: `other`, `home`, `work`, `blog`, `profile`.|
-|address|string|Dirección URL del sitio web.|
-|displayName|string|Nombre para mostrar del sitio web.|
+|type|websiteType| Los valores posibles son: `other`, `home`, `work`, `blog` y`profile`.|
+|address|cadena|Dirección URL del sitio web.|
+|displayName|cadena|Nombre para mostrar del sitio web.|
 
 ## <a name="json-representation"></a>Representación JSON
 

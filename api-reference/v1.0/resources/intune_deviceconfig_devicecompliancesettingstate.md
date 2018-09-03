@@ -25,19 +25,19 @@ Estados de configuración de cumplimiento del dispositivo para un dispositivo de
 |userName|Cadena|El nombre de usuario que se está notificando|
 |userPrincipalName|Cadena|El nombre principal de usuario que se está notificando|
 |deviceModel|Cadena|El modelo de dispositivo que se está notificando|
-|estado|Cadena|Estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceComplianceSettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceSettingState",

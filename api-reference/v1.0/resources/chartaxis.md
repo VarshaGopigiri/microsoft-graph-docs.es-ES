@@ -7,43 +7,49 @@ Representa un solo eje de un gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Lee las propiedades y relaciones del objeto chartAxis.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |Actualiza el objeto ChartAxis. |
+|[Get ChartAxis](../api/chartaxis_get.md) | [WorkbookChartAxis](chartaxis.md) |Lee las propiedades y relaciones del objeto chartAxis.|
+|[Update](../api/chartaxis_update.md) | [WorkbookChartAxis](chartaxis.md)   |Actualiza el objeto ChartAxis. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|majorUnit|object|Representa el intervalo entre dos marcas de graduación principales. Puede establecerse en un valor numérico o en una cadena vacía.  El valor devuelto siempre es un número.|
-|maximum|object|Representa el valor máximo del eje de valores.  Puede establecerse en un valor numérico o en una cadena vacía (para valores de eje automáticos).  El valor devuelto siempre es un número.|
-|minimum|object|Representa el valor mínimo del eje de valores. Puede establecerse en un valor numérico o en una cadena vacía (para valores de eje automáticos). El valor devuelto siempre es un número.|
-|minorUnit|object|Representa el rango entre dos marcas de graduación secundarias. Puede establecerse en un valor numérico o en una cadena vacía (para valores de eje automáticos). El valor devuelto siempre es un número.|
+| id       |cadena   | Identificador único. Solo lectura.|
+|majorUnit|Json|Representa el intervalo entre dos marcas de graduación principales. Puede establecerse en un valor numérico o en una cadena vacía.  El valor devuelto siempre es un número.|
+|maximum|Json|Representa el valor máximo del eje de valores.  Puede establecerse en un valor numérico o en una cadena vacía (para valores de eje automáticos).  El valor devuelto siempre es un número.|
+|minimum|Json|Representa el valor mínimo del eje de valores. Puede establecerse en un valor numérico o en una cadena vacía (para valores de eje automáticos). El valor devuelto siempre es un número.|
+|minorUnit|Json|Representa el rango entre dos marcas de graduación secundarias. Puede establecerse en un valor numérico o en una cadena vacía (para valores de eje automáticos). El valor devuelto siempre es un número.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|format|[ChartAxisFormat](chartaxisformat.md)|Representa el formato de un objeto de gráfico, que incluye el formato de línea y de fuente. Solo lectura.|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|Devuelve un objeto de línea de cuadrícula que representa las líneas de cuadrícula principales del eje especificado. Solo lectura.|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|Devuelve un objeto de línea de cuadrícula que representa las líneas de cuadrícula secundarias del eje especificado. Solo lectura.|
-|title|[ChartAxisTitle](chartaxistitle.md)|Representa el título del eje. Solo lectura.|
+|format|[WorkbookChartAxisFormat](chartaxisformat.md)|Representa el formato de un objeto de gráfico, que incluye el formato de línea y de fuente. Solo lectura.|
+|majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Devuelve un objeto de línea de cuadrícula que representa las líneas de cuadrícula principales del eje especificado. Solo lectura.|
+|minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|Devuelve un objeto de línea de cuadrícula que representa las líneas de cuadrícula secundarias del eje especificado. Solo lectura.|
+|title|[WorkbookChartAxisTitle](chartaxistitle.md)|Representa el título del eje. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartaxis"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 }-->
 
 ```json
 {
+  "id": "string",
   "majorUnit": "string",
   "maximum": "string",
   "minimum": "string",
-  "minorUnit": "string"
+  "minorUnit": "string",
+   "format": {"@odata.type": "microsoft.graph.workbookChartAxisFormat"},
+  "majorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "minorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
+  "title": {"@odata.type": "microsoft.graph.workbookChartAxisTitle"}
 }
 
 ```

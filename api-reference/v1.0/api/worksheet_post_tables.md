@@ -1,6 +1,6 @@
-# <a name="create-table"></a>Create Table
+# <a name="create-table"></a>Crear tabla
 
-Use esta API para crear un objeto Table.
+Use esta API para crear una nueva tabla.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -19,21 +19,20 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
+| Autorización  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione los parámetros siguientes. 
+En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-### <a name="request-parameters"></a>Parámetros de la solicitud
-| Nombre           | Tipo      |Descripción|
+| Parámetro           | Tipo      |Descripción|
 |:---------------|:----------|:----------|
-| Dirección  | string| Dirección de intervalo. Si llama a esta API desde la ruta de acceso `worksheets/{id or name}/tables/add`, no tiene que proporcionar el prefijo del nombre de hoja en la dirección. En cambio, si la llama desde la ruta de acceso `workbook/tables/add`, deberá proporcionar el nombre de la hoja en la que se debe crear la tabla (ejemplo: `sheet1!A1:D4`)|
-| hasHeaders  | boolean|Valor booleano que indica si el intervalo tiene etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en false), Excel generará de forma automática el encabezado desplazando los datos hacia abajo una fila.|
+| Dirección  | cadena| Dirección de intervalo. Si llama a esta API desde la ruta de acceso `worksheets/{id or name}/tables/add`, no tiene que proporcionar el prefijo del nombre de hoja en la dirección. En cambio, si la llama desde la ruta de acceso `workbook/tables/add`, deberá proporcionar el nombre de la hoja en la que se debe crear la tabla (ejemplo: `sheet1!A1:D4`)|
+| hasHeaders  | booleano|Valor booleano que indica si el intervalo tiene etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en false), Excel generará de forma automática el encabezado desplazando los datos hacia abajo una fila.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [WorkbookTable](../resources/table.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
@@ -43,7 +42,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "create_table_from_worksheet"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/$/add
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id}/add
 Content-type: application/json
 Content-length: 109
 
@@ -57,7 +56,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created

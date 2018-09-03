@@ -67,8 +67,9 @@ El archivo CSV tiene los siguientes encabezados de columna.
 
 Aquí tiene un ejemplo de la solicitud.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammeractivityuserdetail"
 }-->
 
@@ -78,9 +79,9 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(period=
 
 #### <a name="response"></a>Respuesta
 
-Este es un ejemplo de la respuesta.
+Aquí tiene un ejemplo de la respuesta.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
 ```http
 HTTP/1.1 302 Found
@@ -88,13 +89,40 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema siguiente.
+#### <a name="request"></a>Solicitud
+
+Si se especifica el parámetro `date`, el informe se limita a las actividades que tuvieron lugar en la fecha determinada.
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammeractivityuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2018-03-05')
+```
+
+#### <a name="response"></a>Respuesta
+
+Este es un ejemplo de la respuesta.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "stream"
+  "@odata.type": "microsoft.graph.report"
 } -->
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+
+Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema siguiente.
+
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

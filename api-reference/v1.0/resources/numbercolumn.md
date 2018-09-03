@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
-ms.openlocfilehash: 8aa366e3c4f59fc5d22f945c863bab4f91373b67
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4aaff6539fc9c7ce77029463562c0f8fca57cac6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266509"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
@@ -29,14 +30,14 @@ A continuación se incluye una representación JSON de un recurso **numberColumn
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad      | Tipo   | Descripción
+| Nombre de propiedad      | Tipo   | Descripción
 |:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | El número de decimales que se mostrará. Consulte a continuación para obtener información sobre los valores posibles.
-| **displayAs**      | string | Cómo se debe presentar el valor en la experiencia de usuario. Debe ser `number` o `percentage`. Si no se especifica, se trata como `number`.
-| **maximum**        | double | El valor máximo permitido.
-| **minimum**        | double | El valor mínimo permitido.
+| **decimalPlaces**  | cadena | El número de decimales que se mostrará. Consulte a continuación para obtener información sobre los valores posibles.
+| **displayAs**      | cadena | Cómo se debe presentar el valor en la experiencia de usuario. Debe ser `number` o `percentage`. Si no se especifica, se trata como `number`.
+| **maximum**        | doble | El valor máximo permitido.
+| **minimum**        | doble | El valor mínimo permitido.
 
-## <a name="decimalplaces-values"></a>Valores DecimalPlaces
+## <a name="decimalplaces"></a>DecimalPlaces
 
 | Valor          | Descripción
 |:---------------|:--------------------------------------------------------------
@@ -56,5 +57,11 @@ Estas propiedades se pueden actualizar.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(automatic,none,one,two,three,four,five) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(number,percentage) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/NumberColumn"
 } -->

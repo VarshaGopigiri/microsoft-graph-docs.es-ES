@@ -21,7 +21,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Parámetros de la solicitud
+## <a name="function-parameters"></a>Parámetros de función
 
 En la URL de la solicitud, especifique uno de los parámetros siguientes con un valor válido.
 
@@ -36,7 +36,7 @@ En la URL de la solicitud, especifique uno de los parámetros siguientes con un 
 
 | Nombre          | Descripción               |
 | :------------ | :------------------------ |
-| Authorization | {token} de portador. Obligatorio. |
+| Autorización | {token} de portador. Obligatorio. |
 
 ## <a name="response"></a>Respuesta
 

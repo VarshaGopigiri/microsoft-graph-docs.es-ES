@@ -4,12 +4,11 @@ Obtenga el objeto [profilePhoto](../resources/profilephoto.md) especificado o su
 
 > **Nota** Esta operación en la versión 1.0 admite solo un buzón profesional o educativo del usuario y no uno personal.
 
-Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504' y '648x648'. Las fotos pueden ser de cualquier dimensión si se almacenan en Azure Active Directory.
+Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504' y '648x648'. Las fotos pueden ser de cualquier dimensión si se almacenan en Azure Active Directory.
 
 Puede obtener los metadatos de la foto más grande disponible, o bien especifique un tamaño para obtener los metadatos de ese tamaño de foto.
 Si el tamaño solicitado no está disponible, puede obtener un tamaño menor que el usuario haya cargado y facilitado.
-Por ejemplo, si el usuario carga una foto de 504 x 504 píxeles, todos los tamaños de la foto salvo el de 648 x 648 estarán disponible para su descarga.
-Si el tamaño especificado no está disponible en el buzón del usuario o en Azure Active Directory, se devolverá el tamaño de "1 x 1" con el resto de los metadatos.
+Por ejemplo, si el usuario carga una foto de 504 x 504 píxeles, todos los tamaños de la foto salvo el de 648 x 648 estarán disponible para su descarga.
 
 ## <a name="permissions"></a>Permisos
 
@@ -37,6 +36,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
+GET /me/photos
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /me/contacts/{id}/photo
@@ -45,21 +45,32 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
+## <a name="http-request-to-get-the-metadata-for-a-specific-photo-size"></a>Solicitud HTTP para obtener los metadatos para un tamaño de foto determinado
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+```
+
 ## <a name="parameters"></a>Parámetros
 
-|**Parámetro**|**Tipo**|**Descripción**|
+|Parámetro|Tipo|Descripción|
 |:-----|:-----|:-----|
-|_Parámetros de dirección URL_|
-|size  |String  | Un tamaño de foto. Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', 
+|size  |Cadena  | Un tamaño de foto. Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', 
 '360x360','432x432', '504x504' y '648x648'. Las fotos pueden ser de cualquier dimensión si se almacenan en Azure Active Directory. |
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

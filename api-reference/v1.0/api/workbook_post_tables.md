@@ -1,4 +1,4 @@
-# <a name="create-table"></a>Crear Table
+# <a name="create-table"></a>Crear tabla
 
 Use esta API para crear un objeto Table.
 ## <a name="permissions"></a>Permisos
@@ -22,8 +22,10 @@ POST /workbook/tables/{table-id}/add
 | Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-### <a name="request-parameters"></a>Parámetros de la solicitud
-| Nombre           | Tipo      |Descripción|
+## <a name="request-body"></a>Cuerpo de la solicitud
+En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
+
+| Parámetro           | Tipo      |Descripción|
 |:---------------|:----------|:----------|
 | Dirección  | cadena| Dirección de intervalo. Si llama a esta API desde la ruta de acceso `worksheets/{id or name}/tables/add`, no tiene que proporcionar el prefijo del nombre de hoja en la dirección. En cambio, si la llama desde la ruta de acceso `workbook/tables/add`, deberá proporcionar el nombre de la hoja en la que se debe crear la tabla (ejemplo: `sheet1!A1:D4`)|
 | hasHeaders  | booleano|Valor booleano que indica si el intervalo tiene etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en false), Excel generará de forma automática el encabezado desplazando los datos hacia abajo una fila.|

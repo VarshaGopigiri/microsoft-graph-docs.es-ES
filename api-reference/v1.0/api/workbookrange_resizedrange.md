@@ -16,18 +16,22 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
-| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-## <a name="parameters"></a>Parámetros
+## <a name="function-parameters"></a>Parámetros de función
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.|
 |deltaColumns|Int32|El número de columnas que se usará expandir la esquina inferior derecha, en relación con el intervalo actual. Use un número positivo para expandir el intervalo o un número negativo para reducirlo.|
+
+## <a name="request-headers"></a>Encabezados de solicitud
+| Nombre       | Descripción|
+|:---------------|:----------|
+| Autorización  | {token} de portador. Obligatorio. |
+| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
+
+## <a name="request-body"></a>Cuerpo de la solicitud
+No proporcione un cuerpo de solicitud para este método.
 
 ### <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.

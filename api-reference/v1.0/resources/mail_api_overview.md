@@ -14,7 +14,7 @@ Los cuerpos del mensaje se pueden mostrar en formato de texto o HTML.
 
 Puede usar nombres de carpetas conocidos como `Inbox`, `Drafts`, `SentItems` o `DeletedItems` para identificar ciertas carpetas de correo que existen de forma predeterminada para todos los usuarios. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).
 
-Por ejemplo, puede obtener los mensajes en la carpeta **Elementos enviados** de Outlook del usuario que ha iniciado sesión sin obtener primero el ID de la carpeta:
+Por ejemplo, puede obtener los mensajes en la carpeta **Elementos enviados** de Outlook del usuario que ha iniciado sesión sin obtener primero el id. de la carpeta:
 
 ```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
@@ -34,6 +34,7 @@ La API de Microsoft Graph también proporciona métodos y acciones que admiten c
 | Permitir que el usuario vea primero los mensajes más importantes | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Bandeja de entrada Prioritarios](../resources/manage_focused_inbox.md) |
 | Agregar, obtener o eliminar datos adjuntos de un mensaje | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [mensaje](../resources/message.md) | [Métodos de attachment](../resources/attachment.md#methods) |
 | Obtener o actualizar la configuración regional, la zona horaria, el horario laboral o la respuesta automática de un usuario | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Obtener la configuración del buzón del usuario](../api/user_get_mailboxsettings.md), <br> [[Actualizar la configuración del buzón del usuario](../api/user_update_mailboxsettings.md),](../api/user_update_mailboxsettings.md) |
+| Obtener sugerencias de correo electrónico de estado especial del resto de los destinatarios, como fuera de la oficina | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Obtener sugerencias de correo electrónico](../api/user_getmailtips.md) |
 | **Administración de carpetas y correo** | | |
 | Organizar los mensajes en una jerarquía de carpetas del correo | [mailFolder](../resources/mailfolder.md)  | [Métodos de mailFolder](../resources/mailfolder.md#methods) |
 | Buscar y filtrar mensajes | [mensaje](../resources/message.md) | [Parámetros de consulta](../../../concepts/query_parameters.md)  |

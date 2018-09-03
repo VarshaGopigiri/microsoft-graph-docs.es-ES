@@ -13,22 +13,26 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/cell(row=<row>,column=<column>)
+GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 
 ```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
-| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-## <a name="parameters"></a>Parámetros
+## <a name="function-parameters"></a>Parámetros de función
 En la ruta de acceso de la solicitud, proporcione los parámetros siguientes.
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |row|Int32|Número de fila de la celda que se va a recuperar. Indizado con cero.|
 |column|Int32|Número de columna de la celda que se va a recuperar. Indizado con cero.|
+
+## <a name="request-headers"></a>Encabezados de solicitud
+| Nombre       | Descripción|
+|:---------------|:----------|
+| Autorización  | {token} de portador. Obligatorio. |
+| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
+
+## <a name="request-body"></a>Cuerpo de la solicitud
+No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 

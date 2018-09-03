@@ -1,4 +1,4 @@
-# <a name="update-worksheet"></a>Update worksheet
+# <a name="update-worksheet"></a>Actualizar worksheet
 
 Actualizar las propiedades del objeto worksheet.
 ## <a name="permissions"></a>Permisos
@@ -26,13 +26,13 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|string|Nombre para mostrar de la hoja de cálculo.|
+|name|cadena|Nombre para mostrar de la hoja de cálculo.|
 |position|entero|Posición de base cero de la hoja de cálculo dentro del libro.|
-|visibility|string|Visibilidad de la hoja de cálculo. Valores posibles: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|cadena|La visibilidad de la hoja de cálculo. Los valores posibles son: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [Worksheet](../resources/worksheet.md) actualizado en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookWorksheet](../resources/worksheet.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -56,7 +56,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

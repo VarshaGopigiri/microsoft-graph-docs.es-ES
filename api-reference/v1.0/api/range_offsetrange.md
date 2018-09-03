@@ -13,15 +13,15 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/OffsetRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
+GET /workbook/names/{name}/range/offsetRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/offsetRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/offsetRange
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
+| Autorización  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -29,8 +29,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|rowOffset|number|Número de filas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia abajo, mientras que los negativos lo hacen hacia arriba.|
-|columnOffset|number|Número de columnas (número positivo, negativo o 0) que debe desplazarse el rango. Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.|
+|rowOffset|Int32|Número de filas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia abajo, mientras que los negativos lo hacen hacia arriba.|
+|columnOffset|Int32|Número de columnas (número positivo, negativo o 0) que debe desplazarse el rango. Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.|
 
 ## <a name="response"></a>Respuesta
 
@@ -42,18 +42,17 @@ Aquí tiene un ejemplo de cómo llamar a esta API.
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
+  "isComposable": true,
   "name": "range_offsetrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/offsetRange
 Content-type: application/json
 Content-length: 49
 
 {
-  "rowOffset": {
-  },
-  "columnOffset": {
-  }
+  "rowOffset": 3,
+  "columnOffset": 5
 }
 ```
 
@@ -62,7 +61,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

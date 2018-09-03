@@ -1,6 +1,6 @@
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
-Agrega una nueva fila a la tabla.
+Agrega filas al final de la tabla. Tenga en cuenta que la API puede aceptar múltiples filas de datos con esta API. La adición de una fila a la vez podría provocar una degradación del rendimiento. El método recomendado sería agrupar las filas juntas en una única llamada en lugar de hacer inserciones de una sola fila. Para obtener mejores resultados, reúna las filas que se insertarán en el lado de la aplicación y realice una operación de adición de filas únicas. Experimente con el número de filas para determinar el número de filas ideal para usar en una sola llamada API. 
 
 ## <a name="error-handling"></a>Control de errores
 
@@ -33,15 +33,16 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|index|number|Opcional. Especifica la posición relativa de la nueva fila. Si es null, se produce la adición al final. Las filas situadas debajo de la fila insertada se desplazan hacia abajo. Indizado con cero.|
-|values|(boolean, string o number)|Opcional. Matriz bidimensional de valores sin formato de la fila de la tabla.|
+|index|Int32|Opcional. Especifica la posición relativa de la nueva fila. Si es null, se produce la adición al final. Las filas situadas debajo de la fila insertada se desplazan hacia abajo. Indizado con cero.|
+|values|Json|Opcional. Matriz bidimensional de valores sin formato de la fila de la tabla.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [TableRow](../resources/tablerow.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookTableRow](../resources/tablerow.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-Aquí tiene un ejemplo de cómo llamar a esta API.
+En este ejemplo se insertan dos filas de datos al final de la tabla. 
+
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
@@ -54,7 +55,7 @@ Content-type: application/json
 Content-length: 51
 
 {
-  "index": null,
+  "index": 5,
   "values": [
     [1, 2, 3],
     [4, 5, 6]
@@ -67,7 +68,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +88,11 @@ Content-length: 45
   "description": "TableRowCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/tablerowcollection_add.md/tablerowcollection_add/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->
