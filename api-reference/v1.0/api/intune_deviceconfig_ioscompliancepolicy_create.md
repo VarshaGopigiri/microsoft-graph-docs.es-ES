@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitida.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -25,7 +25,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|aplicación/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto iosCompliancePolicy.
@@ -34,26 +34,26 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|passcodeBlockSimple|Boolean|Indica si se van a bloquear los códigos de acceso simples.|
-|passcodeExpirationDays|Int32|Número de días antes de que expire el código de acceso. Valores válidos de 1 a 65 535.|
-|passcodeMinimumLength|Int32|Longitud mínima del código de acceso. Valores válidos de 4 a 14.|
+|passcodeBlockSimple|Booleano|Indica si se van a bloquear los códigos de acceso simples.|
+|passcodeExpirationDays|Int32|Número de días antes de que expire el código de acceso. Valores válidos de 1 a 65535|
+|passcodeMinimumLength|Int32|Longitud mínima de los códigos de acceso. Valores válidos de 4 a 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesario un código de acceso.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acceso anteriores que bloquear. Valores válidos de 1 a 24.|
 |passcodeMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passcodeRequiredType|String|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
-|passcodeRequired|Boolean|Indica si se va a requerir un código de acceso.|
-|osMinimumVersion|String|Versión mínima de iOS.|
-|osMaximumVersion|String|Versión máxima de iOS.|
-|securityBlockJailbrokenDevices|Boolean|No pueden usarse dispositivos con jailbreak o rooting.|
-|deviceThreatProtectionEnabled|Boolean|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
-|deviceThreatProtectionRequiredSecurityLevel|String|Requiere que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
-|managedEmailProfileRequired|Boolean|Indica si se va a requerir un perfil de correo electrónico administrado.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passcodeRequired|Booleano|Indica si se va a requerir un código de acceso.|
+|osMinimumVersion|Cadena|Versión mínima de iOS.|
+|osMaximumVersion|Cadena|Versión máxima de iOS.|
+|securityBlockJailbrokenDevices|Booleano|No pueden usarse dispositivos con jailbreak o rooting.|
+|deviceThreatProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige que el nivel de riesgo mínimo de la protección de amenaza móvil informe del no cumplimiento. Los valores posibles son `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
+|managedEmailProfileRequired|Booleano|Indica si se va a requerir un perfil de correo electrónico administrado.|
 
 
 

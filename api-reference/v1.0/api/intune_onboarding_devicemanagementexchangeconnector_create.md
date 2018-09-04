@@ -34,15 +34,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |lastSyncDateTime|DateTimeOffset|Última hora de sincronización para Exchange Connector|
-|status|String|Estado de Exchange Connector Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
-|primarySmtpAddress|String|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
-|serverName|String|El nombre del servidor que hospeda el Exchange Connector.|
-|exchangeConnectorType|String|El tipo de Exchange Connector configurado. Los valores posibles son: `onPremises`, `hosted`, `serviceToService` y `dedicated`.|
-|version|String|La versión del ExchangeConnectorAgent|
-|exchangeAlias|String|Un alias asignado al servidor de Exchange|
-|exchangeOrganization|String|Organización de Exchange al servidor de Exchange|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Estado de Exchange Connector. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
+|primarySmtpAddress|Cadena|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
+|serverName|Cadena|El nombre del servidor de Exchange.|
+|connectorServerName|Cadena|El nombre del servidor que hospeda el Exchange Connector.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|El tipo de Exchange Connector configurado. Los valores posibles son: `onPremises`, `hosted`, `serviceToService` y `dedicated`.|
+|version|Cadena|La versión del ExchangeConnectorAgent|
+|exchangeAlias|Cadena|Un alias asignado al servidor de Exchange|
+|exchangeOrganization|Cadena|Organización de Exchange al servidor de Exchange|
 
 
 
@@ -55,7 +56,7 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors
 Content-type: application/json
-Content-length: 433
+Content-length: 490
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -63,6 +64,7 @@ Content-length: 433
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",
@@ -75,7 +77,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 482
+Content-Length: 539
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -84,6 +86,7 @@ Content-Length: 482
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
   "serverName": "Server Name value",
+  "connectorServerName": "Connector Server Name value",
   "exchangeConnectorType": "hosted",
   "version": "Version value",
   "exchangeAlias": "Exchange Alias value",

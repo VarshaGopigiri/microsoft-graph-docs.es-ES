@@ -6,8 +6,8 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|movieRating|cadena|Calificación de películas seleccionada para Reino Unido. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15` y `adults`.|
-|tvRating|cadena|Calificación de TV seleccionada para Reino Unido. Los valores posibles son: `allAllowed`, `allBlocked` y `caution`.|
+|movieRating|[ratingUnitedKingdomMoviesType](../resources/intune_deviceconfig_ratingunitedkingdommoviestype.md)|Clasificación de películas seleccionada para el Reino Unido. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15` y `adults`.|
+|tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)|Clasificación de TV seleccionada para el Reino Unido. Los valores posibles son: `allAllowed`, `allBlocked` y `caution`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -15,7 +15,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingUnitedKingdom"
 }
 -->

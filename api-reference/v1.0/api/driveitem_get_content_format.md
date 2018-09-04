@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Convertir a otros formatos
-ms.openlocfilehash: 3031500beaec2d765075abfd925a6333f50368f9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 46e8ed178384a81f232a753fe683f8e11efe8585
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269183"
 ---
 # <a name="download-a-file-in-another-format"></a>Descargar un archivo en otro formato
 
@@ -33,28 +34,30 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | Nombre            | Valor   | Descripción                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | String  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
+| _if-none-match_ | Cadena  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
 
 
 ### <a name="query-string-parameters"></a>Parámetros de la cadena de consulta
 
 | Nombre      | Valor  | Descripción                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _format_  | string | Especifique el formato en el que debe descargarse el contenido del elemento. |
+| _format_  | cadena | Especifique el formato en el que debe descargarse el contenido del elemento. |
 
 
-Los siguientes valores son válidos para el parámetro **convert**:
+#### <a name="format-options"></a>Opciones de format
 
-| Valor   | Descripción                        | Extensiones de origen compatibles |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | Convierte el elemento en formato PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx | 
+Los siguientes valores son válidos para el parámetro **format**:
+
+| Valor de format | Descripción                        | Extensiones de origen compatibles
+|:-------------|:-----------------------------------|----------------------------
+| pdf          | Convierte el elemento en formato PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
 ### <a name="example"></a>Ejemplo
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## <a name="response"></a>Respuesta
