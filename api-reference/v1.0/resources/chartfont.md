@@ -7,18 +7,18 @@ Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fue
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Lee las propiedades y relaciones del objeto chartFont.|
-|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)    |Actualiza el objeto ChartFont. |
+|[Get ChartFont](../api/chartfont_get.md) | [WorkbookChartFont](chartfont.md) |Lee las propiedades y relaciones del objeto chartFont.|
+|[Update](../api/chartfont_update.md) | [WorkbookChartFont](chartfont.md)   |Actualiza el objeto ChartFont. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|bold|boolean|Representa el estado de negrita de la fuente.|
-|color|string|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
-|italic|boolean|Representa el estado de cursiva de la fuente.|
-|name|string|Nombre de fuente (por ejemplo, "Calibri")|
-|Tamaño|Double|Tamaño de la fuente (por ejemplo, 11).|
-|Subrayado|string|Tipo de subrayado aplicado a la fuente. Valores posibles: `None`, `Single`.|
+|bold|booleano|Representa el estado de negrita de la fuente.|
+|color|cadena|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
+|italic|booleano|Representa el estado de cursiva de la fuente.|
+|name|cadena|Nombre de fuente (por ejemplo, "Calibri")|
+|Tamaño|doble|Tamaño de la fuente (por ejemplo, 11).|
+|underline|cadena|Tipo de subrayado aplicado a la fuente. Los valores posibles son: `None` y `Single`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -28,12 +28,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartFont"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartFont"
 }-->
 
 ```json
