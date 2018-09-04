@@ -4,13 +4,13 @@
 
 Crea un objeto [windows10EndpointProtectionConfiguration](../resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md).
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, que incluye cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No admitido.|
+|Aplicación|No admitida.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -25,7 +25,7 @@ POST /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto windows10EndpointProtectionConfiguration.
@@ -34,47 +34,47 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md).|
-|firewallBlockStatefulFTP|Boolean|Bloquea las conexiones FTP con estado en el dispositivo.|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|firewallBlockStatefulFTP|Booleano|Bloquea las conexiones FTP con estado en el dispositivo.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configura el tiempo de espera inactivo para asociaciones de seguridad, en segundos, de 300 a 3600 inclusive. Se trata del período tras el cual expiran y se eliminan las asociaciones de seguridad. Valores válidos de 300 a 3600.|
-|firewallPreSharedKeyEncodingMethod|String|Selecciona la codificación de clave previamente compartida que se debe usar. Los valores posibles son: `deviceDefault`, `none` y `utF8`.|
-|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Configura las exenciones IPSec para permitir los códigos de tipo ICMP de IPv6 de detección de vecinos.|
-|firewallIPSecExemptionsAllowICMP|Boolean|Configura las exenciones IPSec para permitir ICMP.|
-|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Configura las exenciones IPSec para permitir los códigos de tipo ICMP de IPv6 de detección de enrutadores.|
-|firewallIPSecExemptionsAllowDHCP|Boolean|Configura las exenciones IPSec para permitir el tráfico DHCP de IPv4 e IPv6.|
-|firewallCertificateRevocationListCheckMethod|String|Especifica cómo se aplica la lista de revocación de certificados. Los valores posibles son: `deviceDefault`, `none`, `attempt` y `require`.|
-|firewallMergeKeyingModuleSettings|Boolean|Si un conjunto de autenticación no es totalmente compatible con un módulo de generación de claves, dirija el módulo para que solo ignore los conjuntos de autenticación no admitidos, en lugar de todo el conjunto.|
-|firewallPacketQueueingMethod|String|Configura cómo debe aplicarse la cola de paquetes en el escenario de puerta de enlace de túnel. Los valores posibles son: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound` y `queueBoth`.|
+|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype.md)|Selecciona la clave de codificación previamente compartida que se utilizará. Los valores posibles son: `deviceDefault`, `none` y `utF8`.|
+|firewallIPSecExemptionsAllowNeighborDiscovery|Booleano|Configura las exenciones IPSec para permitir los códigos de tipo ICMP de IPv6 de detección de vecinos.|
+|firewallIPSecExemptionsAllowICMP|Booleano|Configura las exenciones IPSec para permitir ICMP.|
+|firewallIPSecExemptionsAllowRouterDiscovery|Booleano|Configura las exenciones IPSec para permitir los códigos de tipo ICMP de IPv6 de detección de enrutadores.|
+|firewallIPSecExemptionsAllowDHCP|Booleano|Configura las exenciones IPSec para permitir el tráfico DHCP de IPv4 e IPv6.|
+|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype.md)|Especifica cómo se aplica la lista de revocación de certificados. Los valores posibles son: `deviceDefault`, `none`, `attempt` y `require`.|
+|firewallMergeKeyingModuleSettings|Booleano|Si un conjunto de autenticación no es totalmente compatible con un módulo de generación de claves, dirija el módulo para que solo ignore los conjuntos de autenticación no admitidos, en lugar de todo el conjunto.|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune_deviceconfig_firewallpacketqueueingmethodtype.md)|Configura cómo debe aplicarse el encolado de paquetes en el escenario de puerta de enlace de túnel. Los valores posibles son: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound` y`queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configura las opciones del perfil de firewall para redes de dominio.|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configura las opciones del perfil de firewall para redes públicas.|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Configura las opciones del perfil de firewall para redes privadas.|
 |defenderAttackSurfaceReductionExcludedPaths|Colección String|Lista de archivos exe y carpetas que se deben excluir de las reglas de reducción de la superficie expuesta a ataques.|
 |defenderGuardedFoldersAllowedAppPaths|Colección String|Lista de rutas de acceso a exe que pueden obtener acceso a carpetas protegidas.|
 |defenderAdditionalGuardedFolders|Colección String|Lista de las rutas de acceso de carpeta que se van a agregar a la lista de carpetas protegidas.|
-|defenderExploitProtectionXml|Binary|Contenido XML que contiene información sobre detalles de protección contra vulnerabilidades de seguridad.|
-|defenderExploitProtectionXmlFileName|String|Nombre del archivo del que se obtuvo DefenderExploitProtectionXml.|
-|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indica si se va a impedir que el usuario invalide la configuración de protección contra vulnerabilidades.|
-|appLockerApplicationControl|String|Permite que el administrador elija los tipos de aplicación que se permiten en los dispositivos. Los valores posibles son: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker` y `auditComponentsStoreAppsAndSmartlocker`.|
-|smartScreenEnableInShell|Boolean|Permite que los administradores de TI configuren SmartScreen para Windows.|
-|smartScreenBlockOverrideForFiles|Boolean|Permite que los administradores de TI controlen si los usuarios pueden omitir advertencias de SmartScreen y ejecutar archivos malintencionados.|
-|applicationGuardEnabled|Boolean|Habilita la Protección de aplicaciones de Windows Defender.|
-|applicationGuardBlockFileTransfer|String|Impide que el Portapapeles transfiera archivos de imagen, de texto o ambos. Los valores posibles son: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone` y `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Boolean|Impide que los sitios de la empresa carguen contenido no empresarial, como complementos de terceros.|
-|applicationGuardAllowPersistence|Boolean|Permite el almacenamiento de los datos generados por el usuario en el contenedor de la protección de aplicaciones (favoritos, cookies, contraseñas web, etc.).|
-|applicationGuardForceAuditing|Boolean|La auditoría forzada conservará los registros y eventos de Windows para cumplir con los criterios de seguridad y cumplimiento (algunos eventos de ejemplo son el inicio y cierre de sesión del usuario, el uso de derechos de privilegio, la instalación de software, los cambios del sistema, etc.).|
-|applicationGuardBlockClipboardSharing|String|Impide que el Portapapeles comparta los datos del host al contenedor, del contenedor al host, en ambas direcciones o en ninguna. Los valores posibles son: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost` y `blockNone`.|
-|applicationGuardAllowPrintToPDF|Boolean|Permite la impresión en PDF desde el contenedor.|
-|applicationGuardAllowPrintToXPS|Boolean|Permite la impresión en XPS desde el contenedor.|
-|applicationGuardAllowPrintToLocalPrinters|Boolean|Permite la impresión en impresoras locales desde el contenedor.|
-|applicationGuardAllowPrintToNetworkPrinters|Boolean|Permite la impresión en impresoras en red desde el contenedor.|
-|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Permite que el administrador deshabilite el mensaje de advertencia para otro cifrado de disco en los equipos de usuario.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Permite que el administrador exija que se active el cifrado con BitLocker. Esta directiva solo es válida para una SKU móvil.|
-|bitLockerEncryptDevice|Boolean|Permite que el administrador exija que se active el cifrado con BitLocker.|
+|defenderExploitProtectionXml|Binario|Contenido XML que contiene información sobre detalles de protección contra vulnerabilidades de seguridad.|
+|defenderExploitProtectionXmlFileName|Cadena|Nombre del archivo del que se obtuvo DefenderExploitProtectionXml.|
+|defenderSecurityCenterBlockExploitProtectionOverride|Booleano|Indica si se va a impedir que el usuario invalide la configuración de protección contra vulnerabilidades.|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune_deviceconfig_applockerapplicationcontroltype.md)|Permite que el administrador elija los tipos de aplicación que se permiten en los dispositivos. Los valores posibles son: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker` y`auditComponentsStoreAppsAndSmartlocker`.|
+|smartScreenEnableInShell|Booleano|Permite que los administradores de TI configuren SmartScreen para Windows.|
+|smartScreenBlockOverrideForFiles|Booleano|Permite que los administradores de TI controlen si los usuarios pueden omitir advertencias de SmartScreen y ejecutar archivos malintencionados.|
+|applicationGuardEnabled|Booleano|Habilita la Protección de aplicaciones de Windows Defender.|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune_deviceconfig_applicationguardblockfiletransfertype.md)|Impide que el Portapapeles transfiera archivos de imagen, de texto o ambos. Los valores posibles son: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone` y`blockTextFile`.|
+|applicationGuardBlockNonEnterpriseContent|Booleano|Impide que los sitios de la empresa carguen contenido no empresarial, como complementos de terceros.|
+|applicationGuardAllowPersistence|Booleano|Permite el almacenamiento de los datos generados por el usuario en el contenedor de la protección de aplicaciones (favoritos, cookies, contraseñas web, etc.).|
+|applicationGuardForceAuditing|Booleano|La auditoría forzada conservará los registros y eventos de Windows para cumplir con los criterios de seguridad y cumplimiento (algunos eventos de ejemplo son el inicio y cierre de sesión del usuario, el uso de derechos de privilegio, la instalación de software, los cambios del sistema, etc.).|
+|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune_deviceconfig_applicationguardblockclipboardsharingtype.md)|Impide que el Portapapeles comparta datos del host al contenedor, del contenedor al host, en ambas direcciones o en ninguna. Los valores posibles son: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost` y`blockNone`.|
+|applicationGuardAllowPrintToPDF|Booleano|Permite la impresión en PDF desde el contenedor.|
+|applicationGuardAllowPrintToXPS|Booleano|Permite la impresión en XPS desde el contenedor.|
+|applicationGuardAllowPrintToLocalPrinters|Booleano|Permite la impresión en impresoras locales desde el contenedor.|
+|applicationGuardAllowPrintToNetworkPrinters|Booleano|Permite la impresión en impresoras en red desde el contenedor.|
+|bitLockerDisableWarningForOtherDiskEncryption|Booleano|Permite que el administrador deshabilite el mensaje de advertencia para otro cifrado de disco en los equipos de usuario.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Booleano|Permite que el administrador exija que se active el cifrado con BitLocker. Esta directiva solo es válida para una SKU móvil.|
+|bitLockerEncryptDevice|Booleano|Permite que el administrador exija que se active el cifrado con BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune_deviceconfig_bitlockerremovabledrivepolicy.md)|Directiva de unidad extraíble de BitLocker.|
 
 

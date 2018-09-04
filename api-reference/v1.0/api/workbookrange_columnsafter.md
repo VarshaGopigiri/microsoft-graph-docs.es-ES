@@ -17,21 +17,23 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ```
-## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
-|:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
-| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-## <a name="parameters"></a>Parámetros
+## <a name="function-parameters"></a>Parámetros de función
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |count|Int32|Opcional. El número de columnas a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede utilizar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1|
 
-## <a name="request-body"></a>Cuerpo de la solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
+| Nombre       | Descripción|
+|:---------------|:----------|
+| Autorización  | {token} de portador. Obligatorio. |
+| Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
-### <a name="response"></a>Respuesta
+## <a name="request-body"></a>Cuerpo de la solicitud
+No proporcione un cuerpo de solicitud para este método.
+
+## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [workbookRange](../resources/range.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo

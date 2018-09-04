@@ -1,4 +1,4 @@
-# <a name="add-named-item-formulalocal"></a>Agregar FormulaLocal del elemento con nombre 
+# <a name="add-named-item-formulalocal"></a>Agregar FormulaLocal del elemento con nombre
 Agrega un nuevo nombre a la colección del ámbito especificado, empleando la configuración regional del usuario para la fórmula.
 
 ## <a name="permissions"></a>Permisos
@@ -20,7 +20,7 @@ POST /workbook/worksheets({id|name})/names/add
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | {token} de portador. Obligatorio. |
+| Autorización  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -28,13 +28,13 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|string|Nombre del elemento con nombre.|
-|formula|string|Fórmula o rango a los que se refiere el nombre.|
-|comment|string|Comentario asociado al elemento con nombre|
+|name|cadena|Nombre del elemento con nombre.|
+|formula|cadena|Fórmula o rango a los que se refiere el nombre.|
+|comment|cadena|Comentario asociado al elemento con nombre|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto [NamedItem](../resources/NamedItem.md) en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookNamedItem](../resources/NamedItem.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.
@@ -63,7 +63,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

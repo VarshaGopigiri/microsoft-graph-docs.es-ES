@@ -21,7 +21,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación                        | Tipo de recurso del **usuario**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para el recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para el recurso de **contacto**:<br />Contacts.Read, Contacts.ReadWrite |
 
 
-## <a name="http-request-to-get-the-photo"></a>Solicitud HTTP para obtener la foto
+## <a name="http-request"></a>Solicitud HTTP 
+
+### <a name="get-the-photo"></a>Obtener la foto
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -32,7 +34,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-## <a name="http-request-to-get-the-metadata-of-the-photo"></a>Solicitud HTTP para obtener los metadatos de la foto
+### <a name="get-the-metadata-of-the-photo"></a>Obtener los metadatos de la foto
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -45,7 +47,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-## <a name="http-request-to-get-the-metadata-for-a-specific-photo-size"></a>Solicitud HTTP para obtener los metadatos para un tamaño de foto determinado
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>Obtener los metadatos de un tamaño de foto específico
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -57,12 +59,11 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
-## <a name="parameters"></a>Parámetros
+## <a name="path-parameters"></a>Parámetros de ruta
 
 |Parámetro|Tipo|Descripción|
 |:-----|:-----|:-----|
-|size  |Cadena  | Un tamaño de foto. Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', 
-'360x360','432x432', '504x504' y '648x648'. Las fotos pueden ser de cualquier dimensión si se almacenan en Azure Active Directory. |
+|size  |Cadena  | Un tamaño de foto. Los tamaños de fotos HD admitidos en Office 365 son los siguientes: '48x48', '64x64', '96x96', '120x120', '240x240', '360x360','432x432', '504x504' y '648x648'. Las fotos pueden ser de cualquier dimensión si se almacenan en Azure Active Directory. |
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
@@ -70,13 +71,15 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Autorización  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
-## <a name="response-for-getting-the-photo"></a>Respuesta para obtener la foto
+
+## <a name="response"></a>Respuesta
+### <a name="response-for-getting-the-photo"></a>Respuesta para obtener la foto
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y los datos binarios de la foto solicitada.  Si no hay ninguna foto, la operación devuelve `404 Not Found`.
-## <a name="response-for-getting-the-metadata-of-the-photo"></a>Respuesta para obtener los metadatos de la foto
+### <a name="response-for-getting-the-metadata-of-the-photo"></a>Respuesta para obtener los metadatos de la foto
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [profilePhoto](../resources/profilePhoto.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request-1"></a>Solicitud 1
