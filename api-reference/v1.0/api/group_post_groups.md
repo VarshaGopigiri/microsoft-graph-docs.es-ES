@@ -28,16 +28,19 @@ POST /groups
 | Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-La tabla siguiente muestra las propiedades del recurso [grupo](../resources/group.md) que debe especificar al mínimo al crear un grupo. 
+La tabla siguiente muestra las propiedades del recurso [grupo](../resources/group.md) que debe especificar al crear un grupo. 
 
 | Propiedad | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| displayName | cadena | El nombre para mostrar en la libreta de direcciones del grupo. |
-| mailEnabled | booleano | Establézcalo en **true** para grupos habilitados para correo. Establézcalo en **true** si está creando un grupo de Office 365. Establézcalo en **false** si está creando un grupo dinámico o de seguridad.|
-| mailNickname | cadena | El alias de correo del grupo. |
-| securityEnabled | booleano | Establézcalo en **true** para grupos con seguridad habilitada. Establézcalo en **true** si está creando un grupo dinámico o de seguridad. Establézcalo en **false** si está creando un grupo de Office 365. |
+| displayName | cadena | El nombre que se muestra en la libreta de direcciones del grupo. Necesario. |
+| mailEnabled | booleano | Establézcalo en **true** para grupos habilitados para correo. Establézcalo en **true** si crea un grupo de Office 365. Establézcalo en **false** si crea un grupo de seguridad o dinámico. Necesario. |
+| mailNickname | cadena | El alias de correo del grupo. Necesario. |
+| securityEnabled | booleano | Establézcalo en **true** para los grupos de seguridad. Establézcalo en **true** si crea un grupo de seguridad o dinámico. Establézcalo en **false** si crea un grupo de Office 365. Necesario. |
+| owners | string collection | Esta propiedad representa los propietarios del grupo en el momento de la creación. Opcional. |
+| members | string collection | Esta propiedad representa a los miembros del grupo en el momento de la creación. Opcional. |
 
-Especifique la propiedad **groupTypes** si está creando un grupo de Office 365 o dinámico, como se indica a continuación.
+
+Especificar la propiedad **groupTypes** si está creando un grupo de Office 365 o dinámico, como se indica a continuación.
 
 ### <a name="grouptypes-options"></a>Opciones de groupTypes
 
@@ -47,14 +50,17 @@ Especifique la propiedad **groupTypes** si está creando un grupo de Office 365 
 | Dinámico | "DynamicMembership" |
 | Seguridad | Sin establecer. |
 
+
+>**Nota:** Si crea un grupo de Office 365 mediante programación sin un contexto de usuario y sin especificar los propietarios, se creará el grupo de forma anónima.  Al hacerlo, es posible que el sitio de SharePoint Online no se cree automáticamente hasta que se lleve a cabo una acción manual.  
+
 Especifique otras propiedades modificables según sea necesario para su grupo. Para más información, vea las propiedades del recurso [grupo](../resources/group.md).
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [group](../resources/group.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-#### <a name="request"></a>Solicitud
-A continuación, se incluye un ejemplo de una solicitud para crear un grupo de Office 365.
+#### <a name="request-1"></a>Solicitud 1
+La primera solicitud de ejemplo crea un grupo de Office 365.
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -76,7 +82,7 @@ Content-length: 244
 }
 ```
 
-#### <a name="response"></a>Respuesta
+#### <a name="response-1"></a>Respuesta 1
 Aquí tiene un ejemplo de la respuesta.
 >**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
 <!-- {
@@ -99,6 +105,55 @@ Content-length: 244
   "mailEnabled": true,
   "mailNickname": "library",
   "securityEnabled": false
+}
+```
+
+#### <a name="request-2"></a>Solicitud 2
+La segunda solicitud de ejemplo crea un grupo de Office 365 con los propietarios especificados.
+<!-- {
+  "blockType": "request"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/groups
+Content-Type: application/json
+
+{
+  "description": "Group with owners",
+  "displayName": "Group1",
+  "groupTypes": [
+    "Unified"
+  ],
+  "mailEnabled": true,
+  "mailNickname": "group1",
+  "securityEnabled": false,
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ]
+}
+```
+
+#### <a name="response-2"></a>Respuesta 2
+Aquí tiene un ejemplo de respuesta adecuada.
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "description": "Group with owners",
+    "displayName": "Group1",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "group1@contoso.onmicrosoft.com",
+    "mailEnabled": true,
+    "mailNickname": "group1",
+    "securityEnabled": false
 }
 ```
 

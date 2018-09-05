@@ -82,10 +82,15 @@ Este recurso admite:
 |mobilePhone|Cadena|El número de teléfono móvil principal del usuario.|
 |mySite|Cadena|La dirección URL del sitio personal del usuario.|
 |officeLocation|Cadena|La ubicación de la oficina del lugar de trabajo del usuario.|
+|onPremisesDomainName|Cadena| Contiene los locales `domainFQDN`, también se conoce como dnsDomainName sincronizado desde el directorio local. La propiedad solo se rellena para los clientes que sincronizan su directorio local a Azure Active Directory a través de Azure AD Connect. Solo lectura. |
+|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contiene extensionAttributes 1-15 para el usuario. Tenga en cuenta que los atributos de extensión individuales no se pueden seleccionar ni filtrar. Para un usuario `onPremisesSyncEnabled`, este conjunto de propiedades se controla localmente y es de solo lectura. Para un usuario solo en la nube (donde `onPremisesSyncEnabled` es false), estas propiedades se pueden establecer durante la creación o la actualización. |
 |onPremisesImmutableId|Cadena|Esta propiedad se utiliza para asociar una cuenta local de usuario de Active Directory a su objeto de usuario de Azure AD. Esta propiedad debe especificarse al crear una nueva cuenta de usuario en Graph si utiliza un dominio federado para la propiedad **userPrincipalName** (UPN) del usuario. **Importante**: Los caracteres **$** y **_** no se pueden utilizar a la hora de especificar esta propiedad. Es compatible con $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica la última vez que se ha sincronizado el objeto con el directorio local. Por ejemplo: "2013-02-16T03:04:54Z". El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
+|onPremisesProvisioningErrors|Colección [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Errores al usar el producto de sincronización de Microsoft durante el aprovisionamiento. |
+|onPremisesSamAccountName|Cadena| Contiene los locales `samAccountName` sincronizados desde el directorio local. La propiedad solo se rellena para los clientes que sincronizan su directorio local a Azure Active Directory a través de Azure AD Connect. Solo lectura. |
 |onPremisesSecurityIdentifier|Cadena|Contiene el identificador de seguridad local (SID) del usuario que se sincroniza desde un recurso local a la nube. Solo lectura.|
 |onPremisesSyncEnabled|Booleano| **true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura |
+|onPremisesUserPrincipalName|Cadena| Contiene los locales `userPrincipalName` sincronizados desde el directorio local. La propiedad solo se rellena para los clientes que sincronizan su directorio local a Azure Active Directory a través de Azure AD Connect. Solo lectura. |
 |passwordPolicies|Cadena|Especifica las directivas de contraseña del usuario. Este valor es una enumeración con un valor posible de "DisableStrongPassword" y permite especificar contraseñas menos seguras que la directiva predeterminada. También se puede especificar "DisablePasswordExpiration". Los dos se pueden especificar a la vez. Por ejemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica el perfil de contraseña del usuario. El perfil contiene la contraseña del usuario. Esta propiedad es necesaria cuando se crea un usuario. La contraseña del perfil debe cumplir los requisitos mínimos especificados por la propiedad **passwordPolicies**. De manera predeterminada, se requiere una contraseña segura.|
 |pastProjects|Colección string|Una lista para que el usuario enumere sus últimos proyectos.|
@@ -119,7 +124,7 @@ Esta propiedad de solo lectura se usa en los desarrolladores de aplicaciones de 
 |null|0|Valor predeterminado, ningún `ageGroup` se ha establecido para el usuario.|
 |minorWithoutParentalConsent |1|(Reservado para uso futuro)|
 |minorWithParentalConsent|2| El usuario se considera un menor de edad según las reglamentaciones relacionadas con la edad de su país o región y el administrador de la cuenta ha obtenido apropiado consentimiento de un padre o tutor.|
-|adult|3|El usuario considera un contenido para adultos según las reglamentaciones relacionadas con la edad de su país o región.|
+|adulto|3|El usuario considera un contenido para adultos según las reglamentaciones relacionadas con la edad de su país o región.|
 |notAdult|4|El usuario es de un país o región que tiene regulaciones adicionales relacionados con la edad (por ejemplo, Estados Unidos, Reino Unido, Unión Europea o Corea del sur) y la edad del usuario se encuentra entre la de un menor y la de un adulto (como está estipulado en función del país o región). Por lo general, esto significa que los adolescentes se consideran `notAdult` en países regulados.|
 |minorNoParentalConsentRequired|5|El usuario es un menor de edad, pero es de un país o región que no tiene reglamentaciones relacionadas con la edad.|
 
@@ -134,7 +139,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 |null|0|Valor predeterminado, ningún `ageGroup` se ha establecido para el usuario.|
 |minor|1|El usuario se considere un menor de edad.|
 |notAdult|2|El usuario es de un país que tiene regulaciones estatutarias (Estados Unidos, Reino Unido, Unión Europea o Corea del Sur) y la edad del usuario es mayor que el límite superior de la edad del niño (según el país) y menor que el límite inferior de la edad del adulto (según lo estipulado en base al país o región). Básicamente, los adolescentes se consideran `notAdult` en los países regulados.|
-|adult|3|El usuario debe ser tratado como un adulto.|
+|adulto|3|El usuario debe ser tratado como un adulto.|
 
 #### <a name="consentprovidedforminor-property"></a>Propiedad consentProvidedForMinor
 
@@ -142,7 +147,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 |:---------------|:--------|:----------|
 |null|0|Valor predeterminado, ningún `consentProvidedForMinor` se ha establecido para el usuario.|
 |granted|1|Se ha obtenido el consentimiento para que el usuario tenga una cuenta.|
-|denied|2|No se ha obtenido el consentimiento para que el usuario tenga una cuenta.|
+|denegado|2|No se ha obtenido el consentimiento para que el usuario tenga una cuenta.|
 |notRequired|3|El usuario es de una ubicación que no requiere su consentimiento.|
  
 ## <a name="relationships"></a>Relaciones
@@ -150,7 +155,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |activities|Colección [userActivity](projectrome_activity.md)|Las actividades del usuario a través de dispositivos. Solo lectura. Admite valores NULL.|
-|calendar|[Calendario](calendar.md)|El calendario principal del usuario. Solo lectura.|
+|calendario|[Calendario](calendar.md)|El calendario principal del usuario. Solo lectura.|
 |calendarGroups|Colección [calendarGroup](calendargroup.md)|Los grupos de calendario del usuario. Solo lectura. Admite valores NULL.|
 |calendarView|Colección [event](event.md)|La vista Calendario del calendario. Solo lectura. Admite valores NULL.|
 |calendars|Colección [calendar](calendar.md)|Los calendarios del usuario. Solo lectura. Admite valores NULL.|
@@ -174,7 +179,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 |ownedObjects|Colección [directoryObject](directoryobject.md)|Objetos de directorio que son propiedad del usuario. Solo lectura. Admite valores NULL.|
 |people|Colección [person](person.md)| Personas que son relevantes para el usuario. Solo lectura. Admite valores NULL.
 |photo|[profilePhoto](profilephoto.md)| La foto de perfil del usuario. Solo lectura.|
-|planner|[plannerUser](planneruser.md)| Punto de entrada para el recurso de Planner que pudiera existir para un usuario. Solo lectura.|
+|planner|[plannerUser](planneruser.md)| Punto de entrada para el recurso de Planner que un usuario puede tener. Solo lectura.|
 |registeredDevices|Colección [directoryObject](directoryobject.md)|Dispositivos del usuario que están registrados. Solo lectura. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
@@ -366,10 +371,15 @@ Aquí tiene una representación JSON del recurso
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDomainName": "string",
+  "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesSamAccountName": "string",
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "onPremisesUserPrincipalName": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
