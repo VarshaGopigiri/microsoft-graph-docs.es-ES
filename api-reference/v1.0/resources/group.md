@@ -30,11 +30,11 @@ Este recurso admite:
 |[checkMemberGroups](../api/group_checkmembergroups.md)|Colección string|Comprueba la pertenencia de este grupo a una lista de grupos. La función es transitiva.|
 |[getMemberGroups](../api/group_getmembergroups.md)|Colección string|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|Colección string|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva. |
-|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
-|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
-|[List settings](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
-|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Actualiza el objeto de configuración. |
-|[Delete setting](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
+|[Crear ajuste](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
+|[Ajuste Get](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
+|[Configuración de la lista](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
+|[Actualizar ajuste](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Actualiza el objeto de configuración. |
+|[Eliminar ajuste](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
 |**Calendario**| | |
 |[Crear evento](../api/group_post_events.md) |[evento](event.md)| Crea un evento al publicarlo en la colección de eventos.|
 |[Obtener evento](../api/group_get_event.md) |[evento](event.md)|Lee las propiedades de un objeto de evento.|
@@ -43,7 +43,7 @@ Este recurso admite:
 |[Eliminar evento](../api/group_delete_event.md) |Ninguno|Elimina el objeto de evento.|
 |[Lista de calendarView](../api/group_list_calendarview.md) |Colección de [eventos](event.md)| Obtiene una colección de eventos en un intervalo de tiempo especificado.|
 |**Conversaciones**| | |
-|[Create conversation](../api/group_post_conversations.md) |[conversación](conversation.md)| Crea una conversación al publicarla en la colección de conversaciones.|
+|[Crear conversación](../api/group_post_conversations.md) |[conversación](conversation.md)| Crea una conversación al publicarla en la colección de conversaciones.|
 |[Obtener conversación](../api/group_get_conversation.md) |[conversación](conversation.md)| Lee las propiedades de un objeto de conversación.|
 |[Lista de conversaciones](../api/group_list_conversations.md) |Colección de [conversaciones](conversation.md)| Obtiene una colección de objetos de conversación.|
 |[Eliminar conversación](../api/group_delete_conversation.md) |Ninguno|Elimina un objeto de conversación.|
@@ -57,11 +57,11 @@ Este recurso admite:
 |[Enumerar rejectedSenders](../api/group_list_rejectedsenders.md) |Colección [directoryObject](directoryobject.md)| Obtiene una lista de usuarios o grupos que se encuentran en la lista de rejectedSenders de este grupo.|
 |[Agregar rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Agrega un nuevo usuario o grupo a la colección rejectedSenders.|
 |[Eliminar rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Elimina un nuevo usuario o grupo de la colección rejectedSenders.|
-|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
-|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
-|[List settings](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
+|[Crear ajuste](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
+|[Ajuste Get](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
+|[Configuración de la lista](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
 |[Configuración de actualización](../api/groupsetting_update.md) | Ninguno | Actualiza el objeto de configuración. |
-|[Delete setting](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
+|[Eliminar ajuste](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
 |**Extensiones abiertas**| | |
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
 |[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
@@ -94,6 +94,7 @@ Este recurso admite:
 |mailEnabled|Booleano|Especifica si el grupo está habilitado para correo. Si la propiedad **securityEnabled** también es **true**, el grupo es un grupo de seguridad habilitado para correo electrónico; en caso contrario, el grupo es un grupo de distribución de Microsoft Exchange.|
 |mailNickname|Cadena|Alias de correo del grupo, único en la organización. Esta propiedad debe especificarse al crear un grupo. Admite $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica la última vez que el grupo se ha sincronizado con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. Es compatible con $filter.|
+|onPremisesProvisioningErrors|Colección [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Errores al usar el producto de sincronización de Microsoft durante el aprovisionamiento. |
 |onPremisesSecurityIdentifier|Cadena|Contiene el identificador de seguridad local (SID) del grupo que se sincroniza desde un recurso local a la nube. Solo lectura. |
 |onPremisesSyncEnabled|Booleano|**true** si este grupo está sincronizado desde un directorio local; **false** si este grupo se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este grupo no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. Es compatible con $filter.|
 |proxyAddresses|Colección string| El operador **any** es necesario para las expresiones de filtro en las propiedades de varios valores. Solo lectura. No admite valores NULL. Es compatible con $filter. |
@@ -110,7 +111,7 @@ Este recurso admite:
 |calendarView|Colección [event](event.md)|La vista Calendario del calendario. Solo lectura.|
 |conversations|Colección [conversation](conversation.md)|Las conversaciones del grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| El usuario (o la aplicación) que creó el grupo. NOTA: No se establece si el usuario es un administrador. Solo lectura.|
-|Unidad|[drive](drive.md)|La unidad predeterminada del grupo. Solo lectura.|
+|drive|[drive](drive.md)|La unidad predeterminada del grupo. Solo lectura.|
 |drives|Colección [drive](drive.md)|Las unidades del grupo. Solo lectura.|
 |events|Colección [event](event.md)|Los eventos de calendario del grupo.|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el grupo. Solo lectura. Admite valores NULL.|
@@ -265,6 +266,7 @@ Esta es una representación JSON del recurso.
   "mailEnabled": true,
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],
