@@ -1,6 +1,6 @@
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
-Obtiene el número de usuarios habilitados y el número de usuarios que activaron la suscripción de Office en dispositivos o equipos de escritorio.
+Obtiene el número de usuarios habilitados y el número de usuarios que activaron la suscripción de Office en dispositivos o equipos de escritorio o compartidos.
 
 > **Nota:** Para obtener información sobre los diferentes nombres de informes y vistas de informes, vea [Informes de Office 365: Activaciones de Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -41,6 +41,7 @@ El archivo CSV tiene los siguientes encabezados de columna.
 - Tipo de producto
 - Asignado
 - Activado
+- Activación en equipos compartidos
 
 ## <a name="example"></a>Ejemplo
 
@@ -82,5 +83,5 @@ Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema si
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Product Type,Assigned,Activated
+Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 ```
