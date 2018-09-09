@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Convertir a otros formatos
-ms.openlocfilehash: 46e8ed178384a81f232a753fe683f8e11efe8585
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
+ms.openlocfilehash: 7798905363217d366caabbdd9c82559f578c01aa
+ms.sourcegitcommit: 809748ea18943f5fd1d99c4c65a9b964f39a5f25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23269183"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "23893301"
 ---
 # <a name="download-a-file-in-another-format"></a>Descargar un archivo en otro formato
 
@@ -30,21 +30,14 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-### <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+## <a name="query-parameters"></a>Parámetros de consulta
 
-| Nombre            | Valor   | Descripción                                                                                                                                              |
-|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | Cadena  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
-
-
-### <a name="query-string-parameters"></a>Parámetros de la cadena de consulta
-
-| Nombre      | Valor  | Descripción                                                    |
+| Parámetro      | Tipo  | Descripción                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | cadena | Especifique el formato en el que debe descargarse el contenido del elemento. |
 
 
-#### <a name="format-options"></a>Opciones de format
+### <a name="format-options"></a>Opciones de format
 
 Los siguientes valores son válidos para el parámetro **format**:
 
@@ -52,7 +45,13 @@ Los siguientes valores son válidos para el parámetro **format**:
 |:-------------|:-----------------------------------|----------------------------
 | pdf          | Convierte el elemento en formato PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
-### <a name="example"></a>Ejemplo
+## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+
+| Nombre            | Valor   | Descripción                                                                                                                                              |
+|:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _if-none-match_ | Cadena  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
+
+## <a name="example"></a>Ejemplo
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
