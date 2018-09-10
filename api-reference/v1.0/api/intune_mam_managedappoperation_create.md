@@ -1,18 +1,18 @@
-# <a name="create-managedappoperation"></a><span data-ttu-id="d58f7-101">Crear managedAppOperation</span><span class="sxs-lookup"><span data-stu-id="d58f7-101">Create managedAppOperation</span></span>
+# <a name="create-managedappoperation"></a><span data-ttu-id="fcaed-101">Crear managedAppOperation</span><span class="sxs-lookup"><span data-stu-id="fcaed-101">Create managedAppOperation</span></span>
 
-> <span data-ttu-id="d58f7-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="d58f7-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="fcaed-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="fcaed-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="d58f7-103">Cree un objeto [managedAppOperation](../resources/intune_mam_managedappoperation.md).</span><span class="sxs-lookup"><span data-stu-id="d58f7-103">Create a new [plannerBucket](../resources/intune_mam_managedappoperation.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="d58f7-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="d58f7-104">Prerequisites</span></span>
-<span data-ttu-id="d58f7-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d58f7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="fcaed-103">Cree un objeto [managedAppOperation](../resources/intune_mam_managedappoperation.md).</span><span class="sxs-lookup"><span data-stu-id="fcaed-103">Create a new [managedAppOperation](../resources/intune_mam_managedappoperation.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fcaed-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="fcaed-104">Prerequisites</span></span>
+<span data-ttu-id="fcaed-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="fcaed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="d58f7-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="d58f7-107">Permission type</span></span>|<span data-ttu-id="d58f7-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="d58f7-108">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="fcaed-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="fcaed-107">Permission type</span></span>|<span data-ttu-id="fcaed-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="fcaed-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d58f7-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="d58f7-109">Delegated (work or school account)</span></span>|<span data-ttu-id="d58f7-110">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d58f7-110">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="d58f7-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d58f7-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d58f7-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d58f7-112">Not supported.</span></span>|
-|<span data-ttu-id="d58f7-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="d58f7-113">Application</span></span>|<span data-ttu-id="d58f7-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d58f7-114">Not supported.</span></span>|
+|<span data-ttu-id="fcaed-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="fcaed-109">Delegated (work or school account)</span></span>|<span data-ttu-id="fcaed-110">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fcaed-110">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="fcaed-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fcaed-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fcaed-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="fcaed-112">Not supported.</span></span>|
+|<span data-ttu-id="fcaed-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="fcaed-113">Application</span></span>|<span data-ttu-id="fcaed-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="fcaed-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d58f7-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d58f7-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fcaed-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="fcaed-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,33 +21,33 @@
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d58f7-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="d58f7-116">Request headers</span></span>
-|<span data-ttu-id="d58f7-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="d58f7-117">Header</span></span>|<span data-ttu-id="d58f7-118">Valor</span><span class="sxs-lookup"><span data-stu-id="d58f7-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fcaed-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="fcaed-116">Request headers</span></span>
+|<span data-ttu-id="fcaed-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="fcaed-117">Header</span></span>|<span data-ttu-id="fcaed-118">Valor</span><span class="sxs-lookup"><span data-stu-id="fcaed-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d58f7-119">Autorización</span><span class="sxs-lookup"><span data-stu-id="d58f7-119">Authorization</span></span>|<span data-ttu-id="d58f7-120">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="d58f7-120">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="d58f7-121">Aceptar</span><span class="sxs-lookup"><span data-stu-id="d58f7-121">Accept</span></span>|<span data-ttu-id="d58f7-122">application/json</span><span class="sxs-lookup"><span data-stu-id="d58f7-122">application/json</span></span>|
+|<span data-ttu-id="fcaed-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="fcaed-119">Authorization</span></span>|<span data-ttu-id="fcaed-120">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="fcaed-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fcaed-121">Accept</span><span class="sxs-lookup"><span data-stu-id="fcaed-121">Accept</span></span>|<span data-ttu-id="fcaed-122">application/json</span><span class="sxs-lookup"><span data-stu-id="fcaed-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d58f7-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="d58f7-123">Request body</span></span>
-<span data-ttu-id="d58f7-124">En el cuerpo de la solicitud, especifique una representación JSON del objeto managedAppOperation.</span><span class="sxs-lookup"><span data-stu-id="d58f7-124">In the request body, supply a JSON representation of the schemaExtension object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fcaed-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="fcaed-123">Request body</span></span>
+<span data-ttu-id="fcaed-124">En el cuerpo de la solicitud, especifique una representación JSON del objeto managedAppOperation.</span><span class="sxs-lookup"><span data-stu-id="fcaed-124">In the request body, supply a JSON representation for the managedAppOperation object.</span></span>
 
-<span data-ttu-id="d58f7-125">En la tabla siguiente se muestran las propiedades necesarias para crear el objeto managedAppOperation.</span><span class="sxs-lookup"><span data-stu-id="d58f7-125">The following table shows the properties that are required when you create a user.</span></span>
+<span data-ttu-id="fcaed-125">En la tabla siguiente se muestran las propiedades necesarias para crear el objeto managedAppOperation.</span><span class="sxs-lookup"><span data-stu-id="fcaed-125">The following table shows the properties that are required when you create the managedAppOperation.</span></span>
 
-|<span data-ttu-id="d58f7-126">Propiedad</span><span class="sxs-lookup"><span data-stu-id="d58f7-126">Property</span></span>|<span data-ttu-id="d58f7-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="d58f7-127">Type</span></span>|<span data-ttu-id="d58f7-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="d58f7-128">Description</span></span>|
+|<span data-ttu-id="fcaed-126">Propiedad</span><span class="sxs-lookup"><span data-stu-id="fcaed-126">Property</span></span>|<span data-ttu-id="fcaed-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="fcaed-127">Type</span></span>|<span data-ttu-id="fcaed-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="fcaed-128">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d58f7-129">displayName</span><span class="sxs-lookup"><span data-stu-id="d58f7-129">displayName</span></span>|<span data-ttu-id="d58f7-130">String</span><span class="sxs-lookup"><span data-stu-id="d58f7-130">String</span></span>|<span data-ttu-id="d58f7-131">El nombre de la operación.</span><span class="sxs-lookup"><span data-stu-id="d58f7-131">The operation name.</span></span>|
-|<span data-ttu-id="d58f7-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="d58f7-132">lastModifiedDateTime</span></span>|<span data-ttu-id="d58f7-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d58f7-133">DateTimeOffset</span></span>|<span data-ttu-id="d58f7-134">La última vez que se modificó el funcionamiento de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="d58f7-134">The last time the app operation was modified.</span></span>|
-|<span data-ttu-id="d58f7-135">state</span><span class="sxs-lookup"><span data-stu-id="d58f7-135">state</span></span>|<span data-ttu-id="d58f7-136">String</span><span class="sxs-lookup"><span data-stu-id="d58f7-136">String</span></span>|<span data-ttu-id="d58f7-137">El estado actual de la operación</span><span class="sxs-lookup"><span data-stu-id="d58f7-137">The current state of the operation</span></span>|
-|<span data-ttu-id="d58f7-138">id</span><span class="sxs-lookup"><span data-stu-id="d58f7-138">id</span></span>|<span data-ttu-id="d58f7-139">String</span><span class="sxs-lookup"><span data-stu-id="d58f7-139">String</span></span>|<span data-ttu-id="d58f7-140">Clave de la entidad.</span><span class="sxs-lookup"><span data-stu-id="d58f7-140">Key of the setting.</span></span>|
-|<span data-ttu-id="d58f7-141">version</span><span class="sxs-lookup"><span data-stu-id="d58f7-141">version</span></span>|<span data-ttu-id="d58f7-142">String</span><span class="sxs-lookup"><span data-stu-id="d58f7-142">String</span></span>|<span data-ttu-id="d58f7-143">Versión de la entidad.</span><span class="sxs-lookup"><span data-stu-id="d58f7-143">Version of the entity.</span></span>|
+|<span data-ttu-id="fcaed-129">displayName</span><span class="sxs-lookup"><span data-stu-id="fcaed-129">displayName</span></span>|<span data-ttu-id="fcaed-130">String</span><span class="sxs-lookup"><span data-stu-id="fcaed-130">String</span></span>|<span data-ttu-id="fcaed-131">El nombre de la operación.</span><span class="sxs-lookup"><span data-stu-id="fcaed-131">The operation name.</span></span>|
+|<span data-ttu-id="fcaed-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="fcaed-132">lastModifiedDateTime</span></span>|<span data-ttu-id="fcaed-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fcaed-133">DateTimeOffset</span></span>|<span data-ttu-id="fcaed-134">La última vez que se modificó el funcionamiento de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="fcaed-134">The last time the app operation was modified.</span></span>|
+|<span data-ttu-id="fcaed-135">estado</span><span class="sxs-lookup"><span data-stu-id="fcaed-135">state</span></span>|<span data-ttu-id="fcaed-136">String</span><span class="sxs-lookup"><span data-stu-id="fcaed-136">String</span></span>|<span data-ttu-id="fcaed-137">El estado actual de la operación</span><span class="sxs-lookup"><span data-stu-id="fcaed-137">The current state of the operation</span></span>|
+|<span data-ttu-id="fcaed-138">id</span><span class="sxs-lookup"><span data-stu-id="fcaed-138">id</span></span>|<span data-ttu-id="fcaed-139">Cadena</span><span class="sxs-lookup"><span data-stu-id="fcaed-139">String</span></span>|<span data-ttu-id="fcaed-140">Clave de la entidad.</span><span class="sxs-lookup"><span data-stu-id="fcaed-140">Key of the entity.</span></span>|
+|<span data-ttu-id="fcaed-141">version</span><span class="sxs-lookup"><span data-stu-id="fcaed-141">version</span></span>|<span data-ttu-id="fcaed-142">Cadena</span><span class="sxs-lookup"><span data-stu-id="fcaed-142">String</span></span>|<span data-ttu-id="fcaed-143">Versión de la entidad.</span><span class="sxs-lookup"><span data-stu-id="fcaed-143">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="d58f7-144">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d58f7-144">Response</span></span>
-<span data-ttu-id="d58f7-145">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y un objeto [managedAppOperation](../resources/intune_mam_managedappoperation.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d58f7-145">If successful, this method returns a `201 Created` response code and a [section](../resources/intune_mam_managedappoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fcaed-144">Respuesta</span><span class="sxs-lookup"><span data-stu-id="fcaed-144">Response</span></span>
+<span data-ttu-id="fcaed-145">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y un objeto [managedAppOperation](../resources/intune_mam_managedappoperation.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="fcaed-145">If successful, this method returns a `201 Created` response code and a [managedAppOperation](../resources/intune_mam_managedappoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d58f7-146">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d58f7-146">Example</span></span>
-### <a name="request"></a><span data-ttu-id="d58f7-147">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d58f7-147">Request</span></span>
-<span data-ttu-id="d58f7-148">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d58f7-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fcaed-146">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="fcaed-146">Example</span></span>
+### <a name="request"></a><span data-ttu-id="fcaed-147">Solicitud</span><span class="sxs-lookup"><span data-stu-id="fcaed-147">Request</span></span>
+<span data-ttu-id="fcaed-148">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="fcaed-148">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations
 Content-type: application/json
@@ -62,8 +62,8 @@ Content-length: 223
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d58f7-149">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d58f7-149">Response</span></span>
-<span data-ttu-id="d58f7-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d58f7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fcaed-149">Respuesta</span><span class="sxs-lookup"><span data-stu-id="fcaed-149">Response</span></span>
+<span data-ttu-id="fcaed-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="fcaed-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -78,6 +78,11 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,18 +1,18 @@
-# <a name="assign-action"></a><span data-ttu-id="9e0df-101">asignar acción</span><span class="sxs-lookup"><span data-stu-id="9e0df-101">assign action</span></span>
+# <a name="assign-action"></a><span data-ttu-id="64772-101">asignar acción</span><span class="sxs-lookup"><span data-stu-id="64772-101">assign action</span></span>
 
-> <span data-ttu-id="9e0df-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="9e0df-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="64772-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="64772-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="9e0df-103">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="9e0df-103">Not yet documented</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9e0df-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="9e0df-104">Prerequisites</span></span>
-<span data-ttu-id="9e0df-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="9e0df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="64772-103">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="64772-103">Not yet documented</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="64772-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="64772-104">Prerequisites</span></span>
+<span data-ttu-id="64772-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="64772-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="9e0df-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="9e0df-107">Permission type</span></span>|<span data-ttu-id="9e0df-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="9e0df-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="64772-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="64772-107">Permission type</span></span>|<span data-ttu-id="64772-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="64772-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9e0df-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="9e0df-109">Delegated (work or school account)</span></span>|<span data-ttu-id="9e0df-110">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e0df-110">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="9e0df-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9e0df-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9e0df-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9e0df-112">Not supported.</span></span>|
-|<span data-ttu-id="9e0df-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="9e0df-113">Application</span></span>|<span data-ttu-id="9e0df-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9e0df-114">Not supported.</span></span>|
+|<span data-ttu-id="64772-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="64772-109">Delegated (work or school account)</span></span>|<span data-ttu-id="64772-110">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64772-110">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="64772-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="64772-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="64772-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="64772-112">Not supported.</span></span>|
+|<span data-ttu-id="64772-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="64772-113">Application</span></span>|<span data-ttu-id="64772-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="64772-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9e0df-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9e0df-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="64772-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="64772-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -23,29 +23,29 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/app
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9e0df-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9e0df-116">Request headers</span></span>
-|<span data-ttu-id="9e0df-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="9e0df-117">Header</span></span>|<span data-ttu-id="9e0df-118">Valor</span><span class="sxs-lookup"><span data-stu-id="9e0df-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="64772-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="64772-116">Request headers</span></span>
+|<span data-ttu-id="64772-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="64772-117">Header</span></span>|<span data-ttu-id="64772-118">Valor</span><span class="sxs-lookup"><span data-stu-id="64772-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9e0df-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e0df-119">Authorization</span></span>|<span data-ttu-id="9e0df-120">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="9e0df-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9e0df-121">Aceptar</span><span class="sxs-lookup"><span data-stu-id="9e0df-121">Accept</span></span>|<span data-ttu-id="9e0df-122">application/json</span><span class="sxs-lookup"><span data-stu-id="9e0df-122">application/json</span></span>|
+|<span data-ttu-id="64772-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="64772-119">Authorization</span></span>|<span data-ttu-id="64772-120">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="64772-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="64772-121">Accept</span><span class="sxs-lookup"><span data-stu-id="64772-121">Accept</span></span>|<span data-ttu-id="64772-122">application/json</span><span class="sxs-lookup"><span data-stu-id="64772-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9e0df-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9e0df-123">Request body</span></span>
-<span data-ttu-id="9e0df-124">En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.</span><span class="sxs-lookup"><span data-stu-id="9e0df-124">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="64772-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="64772-123">Request body</span></span>
+<span data-ttu-id="64772-124">En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.</span><span class="sxs-lookup"><span data-stu-id="64772-124">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="9e0df-125">La siguiente tabla muestra los parámetros que se pueden usar con esta acción.</span><span class="sxs-lookup"><span data-stu-id="9e0df-125">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="64772-125">La siguiente tabla muestra los parámetros que se pueden usar con esta acción.</span><span class="sxs-lookup"><span data-stu-id="64772-125">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="9e0df-126">Propiedad</span><span class="sxs-lookup"><span data-stu-id="9e0df-126">Property</span></span>|<span data-ttu-id="9e0df-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="9e0df-127">Type</span></span>|<span data-ttu-id="9e0df-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="9e0df-128">Description</span></span>|
+|<span data-ttu-id="64772-126">Propiedad</span><span class="sxs-lookup"><span data-stu-id="64772-126">Property</span></span>|<span data-ttu-id="64772-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="64772-127">Type</span></span>|<span data-ttu-id="64772-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="64772-128">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9e0df-129">asignaciones</span><span class="sxs-lookup"><span data-stu-id="9e0df-129">assignments</span></span>|<span data-ttu-id="9e0df-130">Colección [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)</span><span class="sxs-lookup"><span data-stu-id="9e0df-130">[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection</span></span>|<span data-ttu-id="9e0df-131">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="9e0df-131">Not yet documented</span></span>|
+|<span data-ttu-id="64772-129">asignaciones</span><span class="sxs-lookup"><span data-stu-id="64772-129">assignments</span></span>|<span data-ttu-id="64772-130">Colección [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)</span><span class="sxs-lookup"><span data-stu-id="64772-130">[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection</span></span>|<span data-ttu-id="64772-131">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="64772-131">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9e0df-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9e0df-132">Response</span></span>
-<span data-ttu-id="9e0df-133">Si se ejecuta correctamente, esta acción devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9e0df-133">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="64772-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="64772-132">Response</span></span>
+<span data-ttu-id="64772-133">Si se ejecuta correctamente, esta acción devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="64772-133">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9e0df-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9e0df-134">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9e0df-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9e0df-135">Request</span></span>
-<span data-ttu-id="9e0df-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9e0df-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="64772-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="64772-134">Example</span></span>
+### <a name="request"></a><span data-ttu-id="64772-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="64772-135">Request</span></span>
+<span data-ttu-id="64772-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="64772-136">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
 
@@ -65,11 +65,16 @@ Content-length: 282
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9e0df-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9e0df-137">Response</span></span>
-<span data-ttu-id="9e0df-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="9e0df-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="64772-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="64772-137">Response</span></span>
+<span data-ttu-id="64772-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="64772-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 
