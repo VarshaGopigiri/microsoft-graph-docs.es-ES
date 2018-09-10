@@ -17,8 +17,8 @@ Hereda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |:---|:---|:---|
 |displayName|String|Nombre descriptivo del informe de estado. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
 |id|Cadena|Clave de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|version|String|Versión de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|content|[Json](../resources/intune_mam_json.md)|Contenido del informe de estado.|
+|version|Cadena|Versión de la entidad. Heredado de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|content|[Json](../resources/json.md)|Contenido del informe de estado.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -26,8 +26,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppStatus",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppStatusRaw"
 }-->
 ``` json
@@ -41,6 +41,11 @@ Aquí tiene una representación JSON del recurso.
   }
 }
 ```
+
+
+
+
+
 
 
 

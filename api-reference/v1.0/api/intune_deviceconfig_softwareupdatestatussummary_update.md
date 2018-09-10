@@ -25,7 +25,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md).
@@ -34,7 +34,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |displayName|String|El nombre de la directiva.|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos no compatibles.|
@@ -110,6 +110,11 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
+
+
+
+
 
 
 

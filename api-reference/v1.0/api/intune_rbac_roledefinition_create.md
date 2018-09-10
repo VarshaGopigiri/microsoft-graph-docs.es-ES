@@ -25,7 +25,7 @@ POST /deviceManagement/roleDefinitions
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto roleDefinition.
@@ -34,7 +34,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
 |displayName|String|Nombre para mostrar de la definición de rol.|
 |description|String|Descripción de la definición de rol.|
 |rolePermissions|Colección [rolePermission](../resources/intune_rbac_rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission.|
@@ -108,6 +108,11 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

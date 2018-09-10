@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
@@ -34,7 +34,7 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|assignments|Colección [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|Todavía no documentado|
+|asignaciones|Colección [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|Todavía no documentado|
 
 
 
@@ -82,6 +82,11 @@ Content-Length: 274
   ]
 }
 ```
+
+
+
+
+
 
 
 
