@@ -29,8 +29,8 @@ El recurso de la asignación de roles. Las asignaciones de roles unen la definic
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Aquí tiene una representación JSON del recurso.
   ]
 }
 ```
+
+
+
+
+
 
 
 

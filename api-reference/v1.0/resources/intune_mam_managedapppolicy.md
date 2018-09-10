@@ -13,12 +13,12 @@ El recurso ManagedAppPolicy representa un tipo base para las directivas específ
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|String|Nombre para mostrar de la directiva.|
-|descripción|String|La descripción de la directiva.|
+|displayName|Cadena|Nombre para mostrar de la directiva.|
+|descripción|Cadena|La descripción de la directiva.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación de la directiva.|
 |lastModifiedDateTime|DateTimeOffset|Última vez que se modificó la directiva.|
 |id|Cadena|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -26,9 +26,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppPolicy"
 }-->
 ``` json
@@ -42,6 +41,11 @@ Aquí tiene una representación JSON del recurso.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

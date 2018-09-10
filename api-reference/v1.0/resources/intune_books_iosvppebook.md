@@ -26,8 +26,8 @@ Hereda de [managedEBook](../resources/intune_books_managedebook.md)
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Cubierta de libro. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|String|La dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|La dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|El Id. de token de VPP.|
 |appleId|String|El ID de Apple asociado a un token de VPP.|
 |vppOrganizationName|String|El nombre de la organización del token de VPP.|
@@ -49,8 +49,8 @@ Hereda de [managedEBook](../resources/intune_books_managedebook.md)
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedEBook",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBook"
 }-->
 ``` json
@@ -70,7 +70,7 @@ Aquí tiene una representación JSON del recurso.
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "Guid",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [
@@ -82,6 +82,11 @@ Aquí tiene una representación JSON del recurso.
   "usedLicenseCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

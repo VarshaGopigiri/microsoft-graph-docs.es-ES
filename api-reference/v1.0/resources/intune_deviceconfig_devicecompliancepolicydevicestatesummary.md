@@ -29,8 +29,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicyDeviceStateSummary"
 }-->
 ``` json
@@ -48,6 +48,11 @@ Aquí tiene una representación JSON del recurso.
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

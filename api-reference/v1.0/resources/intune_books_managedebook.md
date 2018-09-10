@@ -21,8 +21,8 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Cubierta de libro.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico.|
-|informationUrl|String|La dirección URL para obtener más información.|
-|privacyInformationUrl|String|La dirección URL de la declaración de privacidad.|
+|informationUrl|Cadena|La dirección URL para obtener más información.|
+|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -36,9 +36,8 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
 }-->
 ``` json
@@ -60,6 +59,11 @@ Aquí tiene una representación JSON del recurso.
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -13,11 +13,10 @@ Par clave-valor para almacenar la configuración personalizada
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.keyValuePair"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.keyValuePair",
@@ -25,6 +24,11 @@ Aquí tiene una representación JSON del recurso.
   "value": "String"
 }
 ```
+
+
+
+
+
 
 
 

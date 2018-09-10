@@ -27,7 +27,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -73,7 +73,7 @@ Content-Length: 1535
     "activityType": "Activity Type value",
     "activityOperationType": "Activity Operation Type value",
     "activityResult": "Activity Result value",
-    "correlationId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+    "correlationId": "<Unknown Primitive Type Edm.Guid>",
     "resources": [
       {
         "@odata.type": "microsoft.graph.auditResource",
@@ -94,6 +94,11 @@ Content-Length: 1535
   }
 }
 ```
+
+
+
+
+
 
 
 

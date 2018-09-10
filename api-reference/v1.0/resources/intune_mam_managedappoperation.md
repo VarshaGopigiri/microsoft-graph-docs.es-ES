@@ -19,7 +19,7 @@ Representa una operación que se aplica a un registro de la aplicación.
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
 |estado|String|El estado actual de la operación|
 |id|Cadena|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -27,8 +27,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppOperation"
 }-->
 ``` json
@@ -41,6 +41,11 @@ Aquí tiene una representación JSON del recurso.
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

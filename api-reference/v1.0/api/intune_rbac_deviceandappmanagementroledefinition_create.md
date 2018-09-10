@@ -25,7 +25,7 @@ POST /deviceManagement/roleDefinitions
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceAndAppManagementRoleDefinition.
@@ -34,9 +34,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |displayName|String|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|String|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|descripción|String|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |rolePermissions|Colección [rolePermission](../resources/intune_rbac_rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |isBuiltIn|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada. Heredado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
@@ -108,6 +108,11 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

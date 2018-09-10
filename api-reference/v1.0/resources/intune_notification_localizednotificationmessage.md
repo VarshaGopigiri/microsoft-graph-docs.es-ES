@@ -20,7 +20,7 @@ El contenido de texto de una plantilla de mensaje de notificación para la confi
 |configuración regional|String|La configuración regional para la que se destina este mensaje.|
 |subject|String|El asunto de la plantilla del mensaje.|
 |messageTemplate|String|El contenido de la plantilla del mensaje.|
-|isDefault|Boolean|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
+|isDefault|Booleano|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -28,8 +28,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Aquí tiene una representación JSON del recurso.
   "isDefault": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -22,12 +22,12 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -47,7 +47,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8404
+Content-Length: 8470
 
 {
   "value": {
@@ -160,6 +160,7 @@ Content-Length: 8404
     "kioskModeAllowVolumeButtons": true,
     "kioskModeAllowZoomSettings": true,
     "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+    "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
     "kioskModeRequireAssistiveTouch": true,
     "kioskModeRequireColorInversion": true,
     "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8404
   }
 }
 ```
+
+
+
+
+
 
 
 

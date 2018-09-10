@@ -1,7 +1,5 @@
 # <a name="list-enrollmenttroubleshootingevents"></a>Enumerar enrollmentTroubleshootingEvents
 
-> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se permite el uso de estas API en aplicaciones de producción.
-
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
 Enumere las propiedades y las relaciones de los objetos [enrollmentTroubleshootingEvent](../resources/intune_troubleshooting_enrollmenttroubleshootingevent.md).
@@ -27,7 +25,7 @@ GET /deviceManagement/troubleshootingEvents
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -39,7 +37,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 ### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>Respuesta
@@ -68,6 +66,7 @@ Content-Length: 639
   ]
 }
 ```
+
 
 
 

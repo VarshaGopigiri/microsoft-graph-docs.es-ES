@@ -10,7 +10,7 @@ Hereda de [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccoun
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |password|cadena|Todavía no documentado. Heredado de [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount.md)|
-|userPrincipalName|String|Todavía no documentado|
+|userPrincipalName|Cadena|Todavía no documentado|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -18,7 +18,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceAzureADAccount"
 }-->
 ``` json
@@ -28,6 +27,11 @@ Aquí tiene una representación JSON del recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

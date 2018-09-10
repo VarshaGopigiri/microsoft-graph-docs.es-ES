@@ -19,7 +19,7 @@ El recurso de la definición de rol. La definición de rol es el pilar del acces
 |displayName|String|Nombre para mostrar de la definición de rol.|
 |description|String|Descripción de la definición de rol.|
 |rolePermissions|Colección [rolePermission](../resources/intune_rbac_rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission.|
-|isBuiltIn|Boolean|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada.|
+|isBuiltIn|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -30,8 +30,8 @@ El recurso de la definición de rol. La definición de rol es el pilar del acces
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
 }-->
 ``` json
@@ -59,6 +59,11 @@ Aquí tiene una representación JSON del recurso.
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

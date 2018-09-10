@@ -24,8 +24,8 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md).
@@ -37,8 +37,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |id|String|Identificador único del partner de TEM.|
 |displayName|String|Nombre para mostrar del partner de TEM.|
 |url|String|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
-|appAuthorized|Boolean|Si se ha autorizado a la aplicación de AAD del partner para que obtenga acceso a Intune.|
-|enabled|Boolean|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
+|appAuthorized|Booleano|Si se ha autorizado a la aplicación de AAD del partner para que obtenga acceso a Intune.|
+|enabled|Booleano|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|
 
 
@@ -80,6 +80,11 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
+
+
 
 
 

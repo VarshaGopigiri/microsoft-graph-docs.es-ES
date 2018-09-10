@@ -19,6 +19,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -67,6 +68,11 @@ Content-Length: 675
   ]
 }
 ```
+
+
+
+
+
 
 
 

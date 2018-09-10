@@ -30,8 +30,8 @@ Una aplicación administrada o no administrada que está instalada en un disposi
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.detectedApp"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Aquí tiene una representación JSON del recurso.
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

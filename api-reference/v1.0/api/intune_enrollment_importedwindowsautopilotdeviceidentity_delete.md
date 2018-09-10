@@ -19,6 +19,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 -->
 ``` http
 DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
+DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -45,6 +46,11 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

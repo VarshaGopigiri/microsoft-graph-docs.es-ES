@@ -12,7 +12,7 @@ Entidad singleton que representa la configuración de acceso condicional de Exch
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |enabled|Booleano|Indica si está habilitado el acceso condicional local para esta organización|
 |includedGroups|Colección Guid|Grupos de usuarios a los que se dirigirá el acceso condicional local. Todos los usuarios de estos grupos deberán tener dispositivos móviles administrados y compatibles para tener acceso al correo.|
 |excludedGroups|Colección Guid|Grupos de usuarios que estarán exentos del acceso condicional local. Todos los usuarios de estos grupos estarán exentos de la directiva de acceso condicional.|
@@ -24,8 +24,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
 }-->
 ``` json
@@ -34,14 +34,19 @@ Aquí tiene una representación JSON del recurso.
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
+    "Guid"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "Guid"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

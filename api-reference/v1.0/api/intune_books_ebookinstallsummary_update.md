@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [eBookInstallSummary](../resources/intune_books_ebookinstallsummary.md).
@@ -34,7 +34,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |installedDeviceCount|Int32|Número de dispositivos que han instalado correctamente este libro.|
 |failedDeviceCount|Int32|Número de dispositivos que no han podido instalar este libro.|
 |notInstalledDeviceCount|Int32|Número de dispositivos que no han instalado este libro.|
@@ -83,6 +83,11 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
+
+
+
+
 
 
 

@@ -13,7 +13,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
 }-->
 ``` json
@@ -21,6 +20,11 @@ Aquí tiene una representación JSON del recurso.
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
+
+
+
+
+
 
 
 

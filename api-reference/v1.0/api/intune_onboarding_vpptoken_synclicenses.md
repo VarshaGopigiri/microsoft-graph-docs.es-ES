@@ -25,7 +25,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -65,6 +65,11 @@ Content-Length: 619
   }
 }
 ```
+
+
+
+
+
 
 
 

@@ -15,18 +15,21 @@ Hereda de [mobileAppAssignmentSettings](../resources/intune_apps_mobileappassign
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosLobAppAssignmentSettings",
   "vpnConfigurationId": "String"
 }
 ```
+
+
+
+
+
 
 
 

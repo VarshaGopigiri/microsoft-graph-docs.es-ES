@@ -19,13 +19,14 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 -->
 ``` http
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
+POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto importedWindowsAutopilotDeviceIdentity.
@@ -93,6 +94,11 @@ Content-Length: 590
   }
 }
 ```
+
+
+
+
+
 
 
 
