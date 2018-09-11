@@ -44,9 +44,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) actualizado en el cuerpo de la respuesta.
 
-## <a name="example"></a>Ejemplo
-### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <a name="example-request"></a>Ejemplo de solicitud
+
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement
 Content-type: application/json
@@ -55,8 +54,10 @@ Content-length: 2
 {}
 ```
 
-### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+## <a name="example-response"></a>Respuesta de ejemplo
+
+Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

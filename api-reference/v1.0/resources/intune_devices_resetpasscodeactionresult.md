@@ -10,7 +10,7 @@ Hereda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |actionName|Cadena|Nombre de la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción Inherited desde [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son `none`, `pending`, `canceled`, `active`, `done`, `failed` y `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción Inherited desde [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora en la que se inició la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora en la que se actualizó por última vez el estado de acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |código de acceso|Cadena|Código de acceso recién generado para el dispositivo |
@@ -21,7 +21,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.resetPasscodeActionResult"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Aquí tiene una representación JSON del recurso.
   "passcode": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,17 +6,17 @@ Estados de configuración de directivas de cumplimiento del dispositivo para un 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|ajustes|Cadena|La configuración que se está notificando|
+|setting|Cadena|La configuración que se está notificando|
 |settingName|Cadena|Nombre descriptivo de la configuración de usuario o localizada que se está notificando|
 |instanceDisplayName|Cadena|Nombre de la instancia de configuración que se está notificando.|
-|estado|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de error de la configuración|
 |errorDescription|Cadena|Descripción del error|
 |userId|Cadena|UserId|
 |userName|Cadena|UserName|
 |userEmail|Cadena|UserEmail|
 |userPrincipalName|Cadena|UserPrincipalName.|
-|orígenes|Colección [settingSource](../resources/intune_deviceconfig_settingsource.md)|Directivas colaboradoras|
+|sources|Colección [settingSource](../resources/intune_deviceconfig_settingsource.md)|Directivas colaboradoras|
 |currentValue|Cadena|Valor actual de la configuración en el dispositivo|
 
 ## <a name="relationships"></a>Relaciones
@@ -50,6 +50,11 @@ Aquí tiene una representación JSON del recurso.
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -13,6 +13,12 @@ Todavía no documentado
 |nonCompliant|4|Todavía no documentado|
 |error|5|Todavía no documentado|
 |conflict|6|Todavía no documentado|
+|notAssigned|7|Todavía no documentado|
+
+
+
+
+
 
 
 

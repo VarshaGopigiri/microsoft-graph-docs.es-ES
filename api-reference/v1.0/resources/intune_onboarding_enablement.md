@@ -6,9 +6,14 @@ Todavía no documentado
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|notConfigured|0|Todavía no documentado|
-|enabled|1|Todavía no documentado|
-|desactivado|2|Todavía no documentado|
+|notConfigured (no configurado)|0|Todavía no documentado|
+|enabled (habilitado)|1|Todavía no documentado|
+|disabled (deshabilitado)|2|Todavía no documentado|
+
+
+
+
+
 
 
 

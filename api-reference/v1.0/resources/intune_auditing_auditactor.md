@@ -12,7 +12,7 @@ Una clase que contiene las propiedades del actor de auditoría.
 |applicationDisplayName|cadena|Nombre de la aplicación.|
 |userPrincipalName|cadena|Nombre principal de usuario (UPN).|
 |servicePrincipalName|cadena|Nombre de entidad de seguridad de servicio (SPN).|
-|ipAddress|cadena|IPAddress.|
+|ipAddress|cadena|Dirección IP.|
 |userId|cadena|Id. de usuario.|
 
 ## <a name="relationships"></a>Relaciones
@@ -38,6 +38,11 @@ Aquí tiene una representación JSON del recurso.
   "userId": "String"
 }
 ```
+
+
+
+
+
 
 
 

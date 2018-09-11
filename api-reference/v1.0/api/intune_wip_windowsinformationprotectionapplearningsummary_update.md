@@ -36,7 +36,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |id|Cadena|Identificador único para WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadena|Nombre de la aplicación|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Tipo de aplicación. Los valores posibles son: `universal`, `desktop`.|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Tipo de aplicación. Los valores posibles son: `universal` y `desktop`.|
 |deviceCount|Int32|Recuento de dispositivos|
 
 
@@ -74,6 +74,11 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
+
+
+
 
 
 

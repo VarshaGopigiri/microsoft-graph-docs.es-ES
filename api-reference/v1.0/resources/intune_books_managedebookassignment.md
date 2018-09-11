@@ -17,7 +17,7 @@ Contiene las propiedades que se usan para asignar un libro electrónico a un gru
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|El destino de la asignación para el libro electrónico.|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|El objetivo de instalación para el libro electrónico. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|La intención de instalación para el libro electrónico. Los valores posibles son: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -25,8 +25,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBookAssignment"
 }-->
 ``` json
@@ -39,6 +39,11 @@ Aquí tiene una representación JSON del recurso.
   "installIntent": "String"
 }
 ```
+
+
+
+
+
 
 
 

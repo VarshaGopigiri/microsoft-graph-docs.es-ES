@@ -45,7 +45,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinimumLength|Int32|Longitud mínima de las contraseñas.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de contraseña requerida. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
 |passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
 |osMinimumVersion|Cadena|Versión mínima de Windows Phone.|
@@ -113,6 +113,11 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 
