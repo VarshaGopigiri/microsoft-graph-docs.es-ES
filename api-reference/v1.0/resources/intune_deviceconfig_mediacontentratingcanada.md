@@ -6,18 +6,17 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|movieRating|[ratingCanadaMoviesType](../resources/intune_deviceconfig_ratingcanadamoviestype.md)|Clasificación de películas seleccionada para Canadá. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18` y `restricted`.|
-|tvRating|[ratingCanadaTelevisionType](../resources/intune_deviceconfig_ratingcanadatelevisiontype.md)|Clasificación de TV seleccionada para Canadá. Los valores posibles son: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14` y `agesAbove18`.|
+|movieRating|[ratingCanadaMoviesType](../resources/intune_deviceconfig_ratingcanadamoviestype.md)|Calificación de películas seleccionada para Canadá. Los valores posibles son: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18` y `restricted`.|
+|tvRating|[ratingCanadaTelevisionType](../resources/intune_deviceconfig_ratingcanadatelevisiontype.md)|Clasificación de TV seleccionada para Canadá. Los valores posibles son: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingCanada"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingCanada",
@@ -25,6 +24,11 @@ Aquí tiene una representación JSON del recurso.
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

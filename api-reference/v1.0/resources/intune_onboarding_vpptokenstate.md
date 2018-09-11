@@ -10,6 +10,12 @@ Estados posibles asociados con el token del programa de compras por volumen de A
 |valid|1|Símbolo (token) es válido.|
 |expired|2|Símbolo (token) ha expirado.|
 |invalid|3|Símbolo (token) no es válido.|
+|assignedToExternalMDM|4|Token administrado por otro servicio de MDM.|
+
+
+
+
+
 
 
 

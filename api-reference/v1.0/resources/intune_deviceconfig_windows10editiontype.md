@@ -21,3 +21,8 @@ Tipo de edición de Windows 10.
 
 
 
+
+
+
+
+

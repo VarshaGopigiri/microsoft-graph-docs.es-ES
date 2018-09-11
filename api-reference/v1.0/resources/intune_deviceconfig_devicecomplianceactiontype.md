@@ -8,10 +8,16 @@ Tipo de enumeración Acción programada
 |:---|:---|:---|
 |noAction|0|Sin acción|
 |notification|1|Enviar notificación|
-|bloquear|2|Bloquear el dispositivo en AAD|
+|block|2|Bloquear el dispositivo en AAD|
 |retire|3|Retirar el dispositivo|
-|borrar|4|Borrar el dispositivo|
+|wipe|4|Borrar el dispositivo|
 |removeResourceAccessProfiles|5|Quitar del dispositivo los perfiles de acceso a los recursos|
+|pushNotification|9|Enviar notificación de inserción para dispositivos|
+
+
+
+
+
 
 
 
