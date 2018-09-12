@@ -15,19 +15,18 @@ El recurso organization representa una instancia de la configuración global y l
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|El GUID para el objeto.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Entidad de administración de dispositivos móviles. Los valores posibles son: `unknown`, `intune`, `sccm` y `office365`.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autoridad de administración de dispositivos móviles. Los valores posibles son: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "openType": true,
   "keyProperty": "id",
-  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.organization"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.organization",
@@ -39,6 +38,22 @@ Aquí tiene una representación JSON del recurso.
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md"
-  ]
-}-->
+
+"Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md",
+
+"Warning: Schema type organization has a different BaseType value microsoft.graph.directoryObject than the documentation .",
+
+"Warning: Schema type organization has a different OpenType value False than the documentation True.",
+
+"Warning: Resource organization has multiple declarations with mismatched OpenType declarations."
+
+  ],
+
+}
+-->
+
+
+
+
+
+

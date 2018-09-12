@@ -36,9 +36,8 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosCertificateProfile"
 }-->
 ``` json
@@ -52,6 +51,11 @@ Aquí tiene una representación JSON del recurso.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 
