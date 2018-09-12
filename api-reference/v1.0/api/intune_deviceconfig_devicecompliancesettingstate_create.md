@@ -44,7 +44,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |userName|Cadena|El nombre de usuario que se está notificando|
 |userPrincipalName|Cadena|El nombre principal de usuario que se está notificando|
 |deviceModel|Cadena|El modelo de dispositivo que se está notificando|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 
 
@@ -99,6 +99,11 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
+
+
 
 
 
