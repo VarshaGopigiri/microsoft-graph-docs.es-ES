@@ -9,7 +9,7 @@ Estado de la configuración de dispositivos de un dispositivo determinado.
 |ajustes|Cadena|La configuración que se está notificando|
 |settingName|Cadena|Nombre descriptivo de la configuración de usuario o localizada que se está notificando|
 |instanceDisplayName|Cadena|Nombre de la instancia de configuración que se está notificando.|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de error de la configuración|
 |errorDescription|Cadena|Descripción del error|
 |userId|Cadena|UserId|
@@ -50,6 +50,11 @@ Aquí tiene una representación JSON del recurso.
   "currentValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@ Hereda de [windowsUpdateInstallScheduleType](../resources/intune_deviceconfig_wi
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Día de instalación programada de la semana. Los valores posibles son: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday` y `saturday`.|
+|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Día de la semana de instalación programada. Los valores posibles son: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Hora de instalación programada durante el día|
 
 ## <a name="relationships"></a>Relaciones
@@ -18,7 +18,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsUpdateInstallScheduleType",
   "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall"
 }-->
 ``` json
@@ -28,6 +27,11 @@ Aquí tiene una representación JSON del recurso.
   "scheduledInstallTime": "String (time of day)"
 }
 ```
+
+
+
+
+
 
 
 

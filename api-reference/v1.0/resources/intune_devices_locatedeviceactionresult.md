@@ -10,7 +10,7 @@ Hereda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |actionName|Cadena|Nombre de la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son `none`, `pending`, `canceled`, `active`, `done`, `failed` y `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción Inherited desde [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora en la que se inició la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora en la que se actualizó por última vez el estado de acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune_devices_devicegeolocation.md)|ubicación del dispositivo|
@@ -21,7 +21,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.locateDeviceActionResult"
 }-->
 ``` json
@@ -31,9 +30,24 @@ Aquí tiene una representación JSON del recurso.
   "actionState": "String",
   "startDateTime": "String (timestamp)",
   "lastUpdatedDateTime": "String (timestamp)",
-  "deviceLocation": {"@odata.type": "microsoft.graph.deviceGeoLocation"}
+  "deviceLocation": {
+    "@odata.type": "microsoft.graph.deviceGeoLocation",
+    "lastCollectedDateTime": "String (timestamp)",
+    "longitude": "<Unknown Primitive Type Edm.Double>",
+    "latitude": "<Unknown Primitive Type Edm.Double>",
+    "altitude": "<Unknown Primitive Type Edm.Double>",
+    "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
+    "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
+    "heading": "<Unknown Primitive Type Edm.Double>",
+    "speed": "<Unknown Primitive Type Edm.Double>"
+  }
 }
 ```
+
+
+
+
+
 
 
 

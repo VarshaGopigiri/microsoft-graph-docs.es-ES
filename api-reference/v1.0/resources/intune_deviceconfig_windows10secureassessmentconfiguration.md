@@ -44,8 +44,8 @@ Hereda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigura
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10SecureAssessmentConfiguration"
 }-->
 ``` json
@@ -64,6 +64,11 @@ Aquí tiene una representación JSON del recurso.
   "allowTextSuggestion": true
 }
 ```
+
+
+
+
+
 
 
 

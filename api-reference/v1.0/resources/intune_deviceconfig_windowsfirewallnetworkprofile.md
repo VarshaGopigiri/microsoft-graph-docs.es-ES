@@ -6,18 +6,18 @@ Directivas de perfiles de firewall de Windows.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Activa el firewall y el cumplimiento de seguridad avanzada. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
-|stealthModeBlocked|Booleano|Evita que el servidor funcione en modo silencioso|
-|incomingTrafficBlocked|Booleano|Configura el firewall para bloquear todo el tráfico entrante independientemente de otras opciones de configuración de directiva|
-|unicastResponsesToMulticastBroadcastsBlocked|Booleano|Configura el firewall para bloquear las respuestas de unidifusión al tráfico de multidifusión.|
-|inboundNotificationsBlocked|Booleano|Impide que el firewall muestre notificaciones cuando se impide que una aplicación escuche en un puerto|
-|authorizedApplicationRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar reglas de aplicaciones autorizadas de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local|
-|globalPortRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar reglas de puerto global de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local|
-|connectionSecurityRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar reglas de seguridad de la conexión de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local|
-|outboundConnectionsBlocked|Booleano|Configura el firewall para que bloquee todas las conexiones salientes de forma predeterminada|
-|inboundConnectionsBlocked|Booleano|Configura el firewall para que bloquee todas las conexiones entrantes de forma predeterminada|
-|securedPacketExemptionAllowed|Booleano|Configura el firewall para permitir que el equipo host responda al tráfico de red no solicitado si ese tráfico se protege con IPSec, incluso cuando stealthModeBlocked se establece en true|
-|policyRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar directivas de regla de firewall de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local|
+|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Configura los dispositivos del host para permitir o bloquear el firewall y el cumplimiento de seguridad avanzada para el perfil de red. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
+|stealthModeBlocked|Booleano|Evita que el servidor funcione en modo silencioso. Cuando StealthModeRequired y StealthModeBlocked son true, StealthModeBlocked tiene prioridad.|
+|incomingTrafficBlocked|Booleano|Configura el firewall para bloquear todo el tráfico entrante independientemente de otras opciones de configuración de directiva. Cuando IncomingTrafficRequired y IncomingTrafficBlocked son true, IncomingTrafficBlocked tiene prioridad.|
+|unicastResponsesToMulticastBroadcastsBlocked|Booleano|Configura el firewall para bloquear las respuestas de unidifusión al tráfico de multidifusión. Cuando UnicastResponsesToMulticastBroadcastsRequired y UnicastResponsesToMulticastBroadcastsBlocked son true, UnicastResponsesToMulticastBroadcastsBlocked tiene prioridad.|
+|inboundNotificationsBlocked|Booleano|Impide que el firewall muestre notificaciones cuando se impide que una aplicación escuche en un puerto. Cuando InboundNotificationsRequired y InboundNotificationsBlocked son true, InboundNotificationsBlocked tiene prioridad.|
+|authorizedApplicationRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar reglas de aplicaciones autorizadas de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local. Cuando AuthorizedApplicationRulesFromGroupPolicyNotMerged y AuthorizedApplicationRulesFromGroupPolicyMerged son true, AuthorizedApplicationRulesFromGroupPolicyMerged tiene prioridad.|
+|globalPortRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar reglas de puerto global de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local. Cuando GlobalPortRulesFromGroupPolicyNotMerged y GlobalPortRulesFromGroupPolicyMerged son true, GlobalPortRulesFromGroupPolicyMerged tiene prioridad.|
+|connectionSecurityRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar reglas de seguridad de la conexión de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local. Cuando ConnectionSecurityRulesFromGroupPolicyNotMerged y ConnectionSecurityRulesFromGroupPolicyMerged son true, ConnectionSecurityRulesFromGroupPolicyMerged tiene prioridad.|
+|outboundConnectionsBlocked|Booleano|Configura el firewall para que bloquee todas las conexiones salientes de forma predeterminada. Cuando OutboundConnectionsRequired y OutboundConnectionsBlocked son true, OutboundConnectionsBlocked tiene prioridad.|
+|inboundConnectionsBlocked|Booleano|Configura el firewall para que bloquee todas las conexiones entrantes de forma predeterminada. Cuando InboundConnectionsRequired y InboundConnectionsBlocked son true, InboundConnectionsBlocked tiene prioridad.|
+|securedPacketExemptionAllowed|Booleano|Configura el firewall para permitir que el equipo host responda al tráfico de red no solicitado si ese tráfico se protege con IPSec, incluso cuando stealthModeBlocked se establece en true. Cuando SecuredPacketExemptionBlocked y SecuredPacketExemptionAllowed son true, SecuredPacketExemptionAllowed tiene prioridad.|
+|policyRulesFromGroupPolicyMerged|Booleano|Configura el firewall para combinar directivas de regla de firewall de directiva de grupo con las de almacén local en lugar de omitir las reglas del almacén local. Cuando PolicyRulesFromGroupPolicyNotMerged y PolicyRulesFromGroupPolicyMerged son true, PolicyRulesFromGroupPolicyMerged tiene prioridad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -44,6 +44,11 @@ Aquí tiene una representación JSON del recurso.
   "policyRulesFromGroupPolicyMerged": true
 }
 ```
+
+
+
+
+
 
 
 

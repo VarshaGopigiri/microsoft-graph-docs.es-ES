@@ -8,7 +8,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
-|Delegado (cuenta profesional o educativa)| (incorporación) DeviceManagementApps.ReadWrite.All|
+|Delegado (cuenta profesional o educativa)| 
+| &nbsp; &nbsp; _Incorporación_ | DeviceManagementApps.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -25,7 +26,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -33,15 +34,16 @@ No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, esta acción devuelve un código de respuesta `204 No Content`.
 
-## <a name="example"></a>Ejemplo
-### <a name="request"></a>Solicitud
-Aquí tiene un ejemplo de la solicitud.
+## <a name="example-request"></a>Ejemplo de solicitud
+
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
 ### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
+
+Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
+
 ``` http
 HTTP/1.1 204 No Content
 ```
