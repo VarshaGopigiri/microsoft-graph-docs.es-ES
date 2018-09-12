@@ -15,8 +15,8 @@ Una clase abstracta que contiene las propiedades base para las aplicaciones móv
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad.|
 |displayName|Cadena|El título de la aplicación importado o proporcionado por el administrador.|
-|descripción|Cadena|La descripción de la aplicación.|
-|publicador|Cadena|El publicador de la aplicación.|
+|description|Cadena|La descripción de la aplicación.|
+|publisher|Cadena|El publicador de la aplicación.|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|El icono grande, se muestra en los detalles de la aplicación y se usa para cargar el icono.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación de la aplicación.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de la aplicación.|
@@ -25,8 +25,8 @@ Una clase abstracta que contiene las propiedades base para las aplicaciones móv
 |informationUrl|Cadena|La dirección URL para obtener más información.|
 |propietario|Cadena|Propietario de la aplicación.|
 |desarrollador|Cadena|El desarrollador de la aplicación.|
-|notas|Cadena|Notas de la aplicación.|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Los valores posibles son: `notPublished`, `processing` y `published`.|
+|notes|Cadena|Notas de la aplicación.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|El estado de publicación para la aplicación. La aplicación no se puede asignar a menos que se publique la aplicación. Los valores posibles son: `notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -38,9 +38,8 @@ Una clase abstracta que contiene las propiedades base para las aplicaciones móv
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileApp"
 }-->
 ``` json
@@ -66,6 +65,11 @@ Aquí tiene una representación JSON del recurso.
   "publishingState": "String"
 }
 ```
+
+
+
+
+
 
 
 

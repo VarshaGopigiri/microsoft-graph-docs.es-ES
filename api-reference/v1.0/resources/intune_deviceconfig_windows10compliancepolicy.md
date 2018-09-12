@@ -20,7 +20,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompli
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
@@ -31,7 +31,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompli
 |passwordExpirationDays|Int32|La expiración de la contraseña en días.|
 |passwordMinimumLength|Int32|La longitud mínima de contraseña.|
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de contraseña requerida. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que impide su reutilización.|
 |requireHealthyDeviceReport|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos.|
 |osMinimumVersion|Cadena|Versión mínima de Windows 10.|
@@ -59,8 +59,8 @@ Hereda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompli
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10CompliancePolicy"
 }-->
 ``` json
@@ -93,6 +93,11 @@ Aquí tiene una representación JSON del recurso.
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

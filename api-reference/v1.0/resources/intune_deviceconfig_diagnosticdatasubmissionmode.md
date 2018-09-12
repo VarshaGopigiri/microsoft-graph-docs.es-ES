@@ -14,3 +14,8 @@ Permitir que el dispositivo envíe datos de telemetría de diagnóstico y de uso
 
 
 
+
+
+
+
+

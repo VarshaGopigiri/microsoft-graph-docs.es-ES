@@ -20,7 +20,7 @@ Hereda de [managedEBookAssignment](../resources/intune_books_managedebookassignm
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad. Heredado de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|El destino de la asignación para el libro electrónico. Heredado de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|El objetivo de instalación para el libro electrónico. Heredado de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|La intención de instalación para el libro electrónico. Se hereda de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Los valores posibles son: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
@@ -28,8 +28,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedEBookAssignment",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBookAssignment"
 }-->
 ``` json
@@ -42,6 +42,11 @@ Aquí tiene una representación JSON del recurso.
   "installIntent": "String"
 }
 ```
+
+
+
+
+
 
 
 

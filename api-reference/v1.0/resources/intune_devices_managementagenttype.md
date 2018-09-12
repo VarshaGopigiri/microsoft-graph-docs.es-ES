@@ -4,7 +4,7 @@
 
 Tipo de agente de administración.
 ## <a name="members"></a>Miembros
-|Miembros|Valor|Descripción|
+|Miembro|Valor|Descripción|
 |:---|:---|:---|
 |eas|1|El dispositivo se administra mediante Exchange server.|
 |mdm|2|El dispositivo se administra mediante Intune MDM.|
@@ -17,6 +17,11 @@ Tipo de agente de administración.
 |unknown|16|Tipo de agente de administración desconocido.|
 |jamf|32|Los atributos del dispositivo se obtienen de Jamf.|
 |googleCloudDevicePolicyController|64|El dispositivo se administra mediante CloudDPC de Google.|
+
+
+
+
+
 
 
 

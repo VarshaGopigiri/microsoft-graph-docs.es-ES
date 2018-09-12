@@ -25,7 +25,7 @@ Hereda de [managedAppRegistration](../resources/intune_mam_managedappregistratio
 |deviceType|Cadena|Tipo de dispositivo host. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceTag|Cadena|Etiqueta generada por el SDK de administración de la aplicación, que ayuda a relacionar las aplicaciones que se hospedan en el mismo dispositivo. No garantiza que las aplicaciones se relacionen en todas las condiciones. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceName|Cadena|Nombre del dispositivo host. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|Colección [managedAppFlaggedReason enum](../resources/intune_mam_managedappflaggedreason.md)|Cero o más razones por las que se ha marcado el registro de una aplicación. Por ejemplo, una aplicación que se ejecuta en un dispositivo liberado. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|Colección [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Cero o más razones por las que se ha marcado el registro de una aplicación. Por ejemplo, una aplicación que se ejecuta en un dispositivo liberado. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |userId|Cadena|Identificador de usuario al que pertenece este registro de la aplicación. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Identificador del paquete de la aplicación. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |id|Cadena|Clave de la entidad. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
@@ -36,17 +36,16 @@ Hereda de [managedAppRegistration](../resources/intune_mam_managedappregistratio
 |:---|:---|:---|
 |appliedPolicies|Colección [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Ya se habían aplicado cero o más directivas en la aplicación registrada cuando se sincronizó por última vez con el servicio de administración. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |intendedPolicies|Colección [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|El administrador esperaba cero o más directivas hasta el momento. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|operaciones|Colección [managedAppOperation](../resources/intune_mam_managedappoperation.md)|Se activaron cero o más operaciones de larga duración en el registro de la aplicación. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|operations|Colección [managedAppOperation](../resources/intune_mam_managedappoperation.md)|Se activaron cero o más operaciones de larga duración en el registro de la aplicación. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppRegistration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidManagedAppRegistration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -63,13 +62,18 @@ Aquí tiene una representación JSON del recurso.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementApps.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitida.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -34,31 +34,31 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|displayName|String|Título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|description|String|Descripción de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publisher|String|Publicador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|Icono grande que se mostrará en los detalles de la aplicación y se usa para cargar el icono. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|id|Cadena|Clave de la entidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|displayName|Cadena|Título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|description|Cadena|Descripción de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publisher|Cadena|Publicador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Icono grande que se mostrará en los detalles de la aplicación y se usa para cargar el icono. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|isFeatured|Boolean|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|privacyInformationUrl|String|Dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|informationUrl|String|Dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|owner|String|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|developer|String|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|notes|String|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|String|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
-|committedContentVersion|String|Versión interna del contenido confirmado. Heredado de [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|fileName|String|Nombre del archivo de la aplicación de LOB principal. Heredado de [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
+|isFeatured|Booleano|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|owner|Cadena|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|developer|Cadena|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|notes|Cadena|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
+|committedContentVersion|Cadena|Versión interna del contenido confirmado. Heredado de [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
+|fileName|Cadena|Nombre del archivo de la aplicación de LOB principal. Heredado de [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
 |size|Int64|Tamaño total, incluidos todos los archivos cargados. Heredado de [mobileLobApp](../resources/intune_apps_mobilelobapp.md).|
-|applicableArchitectures|String|Arquitecturas de Windows en las que se puede ejecutar esta aplicación. Los valores posibles son: `none`, `x86`, `x64`, `arm` y `neutral`.|
-|applicableDeviceTypes|String|Tipos de dispositivos Windows en los que se puede ejecutar esta aplicación. Los valores posibles son: `none`, `desktop`, `mobile`, `holographic` y `team`.|
-|identityName|String|Nombre de la identidad.|
-|identityPublisherHash|String|Hash del publicador de identidad.|
-|identityResourceIdentifier|String|Identificador del recurso de identidad.|
-|isBundle|Boolean|Indica si la aplicación es una agrupación.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune_apps_windowsarchitecture.md)|Arquitecturas de Windows en las que se puede ejecutar esta aplicación. Los valores posibles son: `none`, `x86`, `x64`, `arm` y `neutral`.|
+|applicableDeviceTypes|[windowsDeviceType](../resources/intune_apps_windowsdevicetype.md)|Tipos de dispositivos Windows en los que se puede ejecutar esta aplicación. Los valores posibles son: `none`, `desktop`, `mobile`, `holographic` y `team`.|
+|identityName|Cadena|Nombre de la identidad.|
+|identityPublisherHash|Cadena|Hash del publicador de identidad.|
+|identityResourceIdentifier|Cadena|Identificador del recurso de identidad.|
+|isBundle|Booleano|Indica si la aplicación es una agrupación.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune_apps_windowsminimumoperatingsystem.md)|Valor del sistema operativo mínimo aplicable.|
-|identityVersion|String|Versión de la identidad.|
+|identityVersion|Cadena|Versión de la identidad.|
 
 
 
@@ -155,6 +155,11 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
+
+
+
+
+
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [iosCompliancePolicy](../resources/intune_deviceconfig_ioscompliancepolicy.md).
@@ -46,13 +46,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesario un código de acceso.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acceso anteriores que bloquear. Valores válidos de 1 a 24.|
 |passcodeMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Booleano|Indica si se va a requerir un código de acceso.|
 |osMinimumVersion|Cadena|Versión mínima de iOS.|
 |osMaximumVersion|Cadena|Versión máxima de iOS.|
 |securityBlockJailbrokenDevices|Booleano|No pueden usarse dispositivos con jailbreak o rooting.|
 |deviceThreatProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Requerir que el nivel de riesgo mínimo de la Protección contra amenazas móviles informe de un incumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Booleano|Indica si se va a requerir un perfil de correo electrónico administrado.|
 
 
@@ -121,6 +121,11 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
+
+
+
+
+
 
 
 

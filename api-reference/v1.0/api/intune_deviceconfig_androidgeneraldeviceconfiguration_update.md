@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|aplicación/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [androidGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidgeneraldeviceconfiguration.md).
@@ -37,7 +37,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |appsBlockClipboardSharing|Booleano|Indica si se va a bloquear el uso compartido del Portapapeles para copiar y pegar entre aplicaciones.|
@@ -50,7 +50,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |cellularBlockVoiceRoaming|Booleano|Indica si se va a bloquear la itinerancia de voz.|
 |cellularBlockWiFiTethering|Booleano|Indica si se va a bloquear la sincronización de tethering Wi-Fi.|
 |compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Tipo de lista que se encuentra en la CompliantAppsList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Tipo de lista que se encuentra en la CompliantAppsList. Los valores posibles son: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
 |locationServicesBlocked|Booleano|Indica si se van a bloquear los servicios de ubicación.|
 |googleAccountBlockAutoSync|Booleano|Indica si se va a bloquear la sincronización automática de cuentas de Google.|
@@ -66,7 +66,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica. Valores válidos de 4 a 11|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` y `any`.|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Tipo de contraseña que se requiere. Los valores posibles son: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordRequired|Booleano|Indica si se va a requerir una contraseña.|
 |powerOffBlocked|Booleano|Indica si se va a bloquear el apagado del dispositivo.|
 |factoryResetBlocked|Booleano|Indica si se va a impedir que el usuario realice un restablecimiento de fábrica.|
@@ -82,7 +82,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |webBrowserBlockAutofill|Booleano|Indica si se va a bloquear la característica de autorrellenado del explorador web.|
 |webBrowserBlockJavaScript|Booleano|Indica si se va a bloquear JavaScript en el explorador web.|
 |webBrowserBlocked|Booleano|Indica si se va a bloquear el explorador web.|
-|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Configuración de cookies en el explorador web. Los valores posibles son: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited` y `allowAlways`.|
+|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Configuración de las cookies en el explorador web. Los valores posibles son: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|Booleano|Indica si se va a bloquear la sincronización de Wi-Fi.|
 |appsInstallAllowList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones que se pueden instalar en el dispositivo KNOX. Esta colección puede contener un máximo de 500 elementos.|
 |appsLaunchBlockList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones cuyo inicio en el dispositivo KNOX está bloqueado. Esta colección puede contener un máximo de 500 elementos.|
@@ -303,6 +303,11 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
+
+
 
 
 

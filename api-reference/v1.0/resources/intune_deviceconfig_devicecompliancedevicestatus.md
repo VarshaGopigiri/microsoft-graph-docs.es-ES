@@ -20,7 +20,7 @@ Todavía no documentado
 |userName|Cadena|El nombre de usuario que se está notificando|
 |deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
 |userPrincipalName|Cadena|UserPrincipalName.|
 
@@ -30,8 +30,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceDeviceStatus"
 }-->
 ``` json
@@ -47,6 +47,11 @@ Aquí tiene una representación JSON del recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

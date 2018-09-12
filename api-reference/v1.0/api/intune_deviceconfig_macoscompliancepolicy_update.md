@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|aplicación/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [macOSCompliancePolicy](../resources/intune_deviceconfig_macoscompliancepolicy.md).
@@ -47,13 +47,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 1 a 24.|
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de contraseña requerida. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|Cadena|Versión mínima de iOS.|
 |osMaximumVersion|Cadena|Versión máxima de iOS.|
 |systemIntegrityProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección de integridad del sistema.|
 |deviceThreatProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige que el nivel de riesgo mínimo de la protección de amenaza móvil informe del no cumplimiento. Los valores posibles son `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
-|storageRequireEncryption|Booleano|Exige cifrado en dispositivos Mac OS.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Requerir que el nivel de riesgo mínimo de la Protección contra amenazas móviles informe de un incumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|storageRequireEncryption|Booleano|Exige el cifrado en dispositivos Mac OS.|
 |firewallEnabled|Booleano|Si el firewall se debe habilitar o no.|
 |firewallBlockAllIncoming|Booleano|Corresponde a la opción "Bloquear todas las conexiones entrantes".|
 |firewallEnableStealthMode|Booleano|Corresponde a "Habilitar el modo sigiloso".|
@@ -130,6 +130,11 @@ Content-Length: 1021
   "firewallEnableStealthMode": true
 }
 ```
+
+
+
+
+
 
 
 
