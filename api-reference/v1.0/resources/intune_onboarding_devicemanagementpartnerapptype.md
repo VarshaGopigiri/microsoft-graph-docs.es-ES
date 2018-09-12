@@ -6,9 +6,14 @@ Tipo de aplicación de socio.
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|unknown|0|El tipo de aplicación de socio es desconocido.|
+|desconocido|0|El tipo de aplicación de socio es desconocido.|
 |singleTenantApp|1|La aplicación de socio es una cuenta empresarial única en AAD.|
 |multiTenantApp|2|La aplicación de socio es una cuenta multiempresarial en AAD.|
+
+
+
+
+
 
 
 

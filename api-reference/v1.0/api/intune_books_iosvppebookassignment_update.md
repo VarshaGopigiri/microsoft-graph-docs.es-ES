@@ -36,7 +36,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad. Heredado de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|El destino de la asignación para el libro electrónico. Heredado de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|El objetivo de instalación para el libro electrónico. Heredado de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|La intención de instalación para el libro electrónico. Se hereda de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Los valores posibles son: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -75,6 +75,11 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

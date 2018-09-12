@@ -25,7 +25,7 @@ POST /deviceAppManagement/managedAppRegistrations
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto androidManagedAppRegistration.
@@ -42,7 +42,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |deviceType|Cadena|Tipo de dispositivo host. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceTag|Cadena|Etiqueta generada por el SDK de administración de la aplicación, que ayuda a relacionar las aplicaciones que se hospedan en el mismo dispositivo. No garantiza que las aplicaciones se relacionen en todas las condiciones. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceName|Cadena|Nombre del dispositivo host. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|Colección [managedAppFlaggedReason enum](../resources/intune_mam_managedappflaggedreason.md)|Cero o más razones por las que se ha marcado el registro de una aplicación. Por ejemplo, una aplicación que se ejecuta en un dispositivo con rooting. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md). Los valores posibles son: `none`, `rootedDevice`.|
+|flaggedReasons|Colección [managedAppFlaggedReason enum](../resources/intune_mam_managedappflaggedreason.md)|Cero o más motivos por las que se marca un registro de aplicación. Por ejemplo, la aplicación se está ejecutando en un dispositivo con permisos de administrador. Heredado desde [managedAppRegistration](../resources/intune_mam_managedappregistration.md). Los valores posibles son: `none`, `rootedDevice`.|
 |userId|Cadena|Identificador de usuario al que pertenece este registro de la aplicación. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|Identificador del paquete de la aplicación. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |id|Cadena|Clave de la entidad. Heredado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
@@ -111,6 +111,11 @@ Content-Length: 753
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

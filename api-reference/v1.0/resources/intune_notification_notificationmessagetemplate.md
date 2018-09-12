@@ -20,7 +20,7 @@ Los mensajes de notificación son mensajes que se envían a los usuarios finales
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |displayName|Cadena|Nombre para mostrar de la plantilla de mensajes de notificación.|
 |defaultLocale|Cadena|La configuración regional predeterminada de reserva para los casos en que la configuración regional solicitada no está disponible.|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|Las opciones de personalización de marca de la plantilla de mensaje. La personalización de marca está definida en la consola de administración de Intune. Los valores posibles son: `none`, `includeCompanyLogo`, `includeCompanyName` y `includeContactInformation`.|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|Las opciones de personalización de marca de la plantilla del mensaje. La personalización de marca se define en la consola de administración de Intune. Los valores posibles son: `none`, `includeCompanyLogo`, `includeCompanyName` y `includeContactInformation`.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -31,8 +31,8 @@ Los mensajes de notificación son mensajes que se envían a los usuarios finales
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.notificationMessageTemplate"
 }-->
 ``` json
@@ -45,6 +45,11 @@ Aquí tiene una representación JSON del recurso.
   "brandingOptions": "String"
 }
 ```
+
+
+
+
+
 
 
 
