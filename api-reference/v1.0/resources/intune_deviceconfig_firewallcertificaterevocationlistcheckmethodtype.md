@@ -9,7 +9,12 @@ Valores posibles para firewallCertificateRevocationListCheckMethod
 |deviceDefault|0|No hay ningún valor configurado por Intune, no invalidar el valor predeterminado del dispositivo configurado por el usuario|
 |none|1|No comprobar la lista de revocación de certificados|
 |attempt|2|Intentar la comprobación de CRL y permitir un certificado solo si el certificado se confirma mediante la comprobación|
-|require|3|Requerir una comprobación de CRL correcta antes de permitir un certificado|
+|require|2|Requerir una comprobación de CRL correcta antes de permitir un certificado|
+
+
+
+
+
 
 
 

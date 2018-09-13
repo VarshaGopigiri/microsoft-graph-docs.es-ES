@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [windows10GeneralConfiguration](../resources/intune_deviceconfig_windows10generalconfiguration.md).
@@ -37,7 +37,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |enterpriseCloudPrintDiscoveryEndPoint|Cadena|Punto de conexión para la detección de impresoras en la nube.|
@@ -53,7 +53,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |searchDisableIndexerBackoff|Booleano|Indica si se va a deshabilitar la característica que reduce la velocidad del indexador de búsqueda.|
 |searchDisableIndexingRemovableDrive|Booleano|Indica si se va a permitir que los usuarios agreguen ubicaciones existentes en unidades extraíbles a las bibliotecas e indexarlas.|
 |searchEnableAutomaticIndexSizeManangement|Booleano|Especifica la cantidad mínima de espacio en disco duro en la misma unidad que la ubicación del índice antes de detener la indexación.|
-|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|Obtiene o establece un valor que permite que el dispositivo envíe datos de diagnóstico y telemetría de uso, como Watson. Los valores posibles son: `userDefined`, `none`, `basic`, `enhanced` y `full`.|
+|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|Obtiene o establece un valor que permite el dispositivo enviar el diagnóstico y los datos de telemetría de uso, como Watson. Los valores posibles son: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Booleano|Obtiene o establece un valor que permite que los administradores de TI impidan que las aplicaciones y características funcionen con archivos en OneDrive.|
 |smartScreenEnableAppInstallControl|Booleano|Permite que los administradores de TI controlen si los usuarios pueden instalar aplicaciones desde lugares que no sean la Tienda.|
 |personalizationDesktopImageUrl|Cadena|Dirección URL http o https a una imagen jpg, jpeg o png que debe descargarse y usarse como la imagen de escritorio, o dirección URL de archivo a una imagen local en el sistema de archivos que debe usarse como la imagen de escritorio.|
@@ -64,7 +64,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |bluetoothBlockPrePairing|Booleano|Indica si se va a impedir que determinados periféricos Bluetooth agrupados se emparejen automáticamente con el dispositivo host.|
 |edgeBlockAutofill|Booleano|Indica si se va a bloquear el autorrelleno.|
 |edgeBlocked|Booleano|Indica si se va a impedir que el usuario utilice el explorador Edge.|
-|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|Indica las cookies que se van a bloquear en el explorador Edge. Los valores posibles son: `userDefined`, `allow`, `blockThirdParty` y `blockAll`.|
+|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|Indica qué cookies desea bloquear en el navegador Edge. Los valores posibles son: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
 |edgeBlockDeveloperTools|Booleano|Indica si se van a bloquear las herramientas de desarrollador en el explorador Edge.|
 |edgeBlockSendingDoNotTrackHeader|Booleano|Indica si se va a impedir que el usuario envíe el encabezado Do Not Track.|
 |edgeBlockExtensions|Booleano|Indica si se van a bloquear las extensiones en el explorador Edge.|
@@ -84,13 +84,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |defenderBlockEndUserAccess|Booleano|Indica si se va a impedir que el usuario final tenga acceso a Defender.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Número de días antes de que se elimine el malware en cuarentena. Valores válidos de 0 a 90.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune_deviceconfig_defenderdetectedmalwareactions.md)|Obtiene o especifica las acciones de Defender para el malware detectado por nivel de amenaza.|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Día de la semana para el análisis del sistema de Defender. Los valores posibles son: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Día de la semana para que Defender haga la exploración del sistema. Los valores posibles son: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |defenderFilesAndFoldersToExclude|Colección String|Archivos y carpetas que se van a excluir de los análisis y la protección en tiempo real.|
 |defenderFileExtensionsToExclude|Colección String|Extensiones de archivo que se van a excluir de los análisis y la protección en tiempo real.|
 |defenderScanMaxCpu|Int32|Porcentaje máximo de uso de CPU durante el análisis. Valores válidos de 0 a 100.|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|Valor para supervisar la actividad de archivo. Los valores posibles son: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly` y `monitorOutgoingFilesOnly`.|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|Valor para supervisar la actividad de archivo. Los valores posibles son: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderProcessesToExclude|Colección String|Procesos que se van a excluir de los análisis y la protección en tiempo real.|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|Configuración de cómo solicitar al usuario el envío de muestras. Los valores posibles son: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData` y `sendAllDataWithoutPrompting`.|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|La configuración de cómo solicitar confirmación de usuario para el envío de muestras. Los valores posibles son: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderRequireBehaviorMonitoring|Booleano|Indica si se va a requerir la supervisión de comportamiento.|
 |defenderRequireCloudProtection|Booleano|Indica si se va a requerir la protección en la nube.|
 |defenderRequireNetworkInspectionSystem|Booleano|Indica si se va a requerir el sistema de inspección de red.|
@@ -103,10 +103,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |defenderScanRemovableDrivesDuringFullScan|Booleano|Indica si se van a analizar las unidades extraíbles durante el análisis completo.|
 |defenderScanScriptsLoadedInInternetExplorer|Booleano|Indica si se van a analizar scripts cargados en el explorador Internet Explorer.|
 |defenderSignatureUpdateIntervalInHours|Int32|Intervalo de actualización de la firma en horas. Especifique 0 para no comprobarla. Valores válidos de 0 a 24|
-|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|Tipo de análisis del sistema de Defender. Los valores posibles son: `userDefined`, `disabled`, `quick` y `full`.|
+|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|El tipo de análisis de sistema de Defender. Los valores posibles son: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledScanTime|TimeOfDay|Hora de Defender para el análisis del sistema.|
 |defenderScheduledQuickScanTime|TimeOfDay|Hora en la que se realiza un análisis rápido diariamente.|
-|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|Especifica el nivel de protección que proporciona la nube. Los valores posibles son: `notConfigured`, `high`, `highPlus` y `zeroTolerance`.|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|Especifica el nivel de protección proporcionada en la nube. Los valores posibles son: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
 |lockScreenAllowTimeoutConfiguration|Booleano|Especifica si se mostrará una opción configurable por el usuario para controlar el tiempo de espera de la pantalla mientras se está en la pantalla de bloqueo de dispositivos Windows 10 Mobile. Si esta directiva está establecida en Permitir, se ignora el valor establecido por lockScreenTimeoutInSeconds.|
 |lockScreenBlockActionCenterNotifications|Booleano|Indica si se van a bloquear las notificaciones del centro de acciones en la pantalla de bloqueo.|
 |lockScreenBlockCortana|Booleano|Indica si el usuario puede interactuar con Cortana mediante la voz mientras el sistema está bloqueado.|
@@ -120,13 +120,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que impiden su reutilización. Valores válidos de 0 a 50.|
 |passwordRequired|Booleano|Indica si se va a requerir que el usuario tenga una contraseña.|
 |passwordRequireWhenResumeFromIdleState|Booleano|Indica si se va a requerir una contraseña al reanudar desde un estado inactivo.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de contraseña requerida. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica. Valores válidos de 0 a 999.|
-|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Habilita o deshabilita el uso del identificador de publicidad. Se agregó en Windows 10, versión 1607. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
+|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Habilita o deshabilita el uso del identificador de publicidad. Se agregó en Windows 10, versión 1607. Los valores posibles son: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Booleano|Indica si se va a permitir la aceptación automática de los cuadros de diálogo de consentimiento del usuario de emparejamiento y privacidad al iniciar aplicaciones.|
 |privacyBlockInputPersonalization|Booleano|Indica si se va a bloquear el uso de servicios de voz basados en la nube de Cortana, el dictado o las aplicaciones de la tienda.|
 |startBlockUnpinningAppsFromTaskbar|Booleano|Indica si se va a impedir que el usuario desancle aplicaciones de la barra de tareas.|
-|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|Al configurar este valor, se contrae la lista de aplicaciones, se quita la lista de aplicaciones por completo o se deshabilita la alternancia correspondiente en la aplicación Configuración. Los valores posibles son: `userDefined`, `collapse`, `remove` y `disableSettingsApp`.|
+|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|Al establecer el valor de esto se contrae la lista de aplicaciones, se quita completamente la lista de aplicaciones o se deshabilita la alternancia correspondiente en la aplicación de configuración. Los valores posibles son: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Booleano|Al habilitar esta directiva, se impide que la opción Cambiar configuración de cuenta aparezca en el icono de usuario del menú Inicio.|
 |startMenuHideFrequentlyUsedApps|Booleano|Al habilitar esta directiva, se ocultan la mayoría de las aplicaciones usadas en el menú Inicio y se deshabilita la conmutación correspondiente en la aplicación Configuración.|
 |startMenuHideHibernate|Booleano|Al habilitar esta directiva, se oculta la opción de hibernación en el botón de encendido del menú Inicio.|
@@ -142,17 +142,17 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |startMenuHideUserTile|Booleano|Al habilitar esta directiva, se oculta el icono de usuario del menú Inicio.|
 |startMenuLayoutEdgeAssetsXml|Binario|Esta configuración de directiva permite importar los recursos de Microsoft Edge que se van a usar con la directiva startMenuLayoutXml. El diseño de la pantalla de inicio puede contener un icono secundario de la aplicación Microsoft Edge que busca el archivo de recursos locales de Edge. En este caso, el recurso local de Microsoft Edge no existirá y hará que el icono secundario de Microsoft Edge aparezca vacío. Esta directiva solo se aplica cuando se modifica la directiva startMenuLayoutXml. El valor debe ser una matriz de bytes codificada base64 UTF8.|
 |startMenuLayoutXml|Binario|Permite que los administradores invaliden el diseño predeterminado del menú Inicio e impide que el usuario lo cambie. Para modificar el diseño, se especifica un archivo XML basado en el esquema de modificación del diseño. El archivo XML debe estar en un formato de matriz de bytes codificada UTF8.|
-|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|Permite que los administradores decidan cómo se muestra el menú Inicio. Los valores posibles son: `userDefined`, `fullScreen` y `nonFullScreen`.|
-|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Documentos en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Documentos en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Explorador de archivos en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Grupo Hogar en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Música en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Red en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Personal en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Imágenes en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Configuración en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
-|startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Vídeos en el menú Inicio. Los valores posibles son: `notConfigured`, `hide` y `show`.|
+|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|Permite a los administradores decidir cómo se muestra el menú Inicio. Los valores posibles son: `userDefined`, `fullScreen`, `nonFullScreen`.|
+|startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Documentos en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Descargas en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo del Explorador de archivos en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Grupo Hogar en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Música en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Red en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta personal en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Imágenes en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Configuración en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Controla la visibilidad (mostrar u ocultar) del acceso directo de la carpeta Vídeos en el menú Inicio. Los valores posibles son: `notConfigured`, `hide`, `show`.|
 |settingsBlockSettingsApp|Booleano|Indica si se va a bloquear el acceso a la aplicación Ajustes.|
 |settingsBlockSystemPage|Booleano|Indica si se va a bloquear el acceso a Sistema en la aplicación Ajustes.|
 |settingsBlockDevicesPage|Booleano|Indica si se va a bloquear el acceso a Dispositivos en la aplicación Ajustes.|
@@ -187,7 +187,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |cortanaBlocked|Booleano|Indica si se va a impedir que el usuario utilice Cortana.|
 |deviceManagementBlockFactoryResetOnMobile|Booleano|Indica si se va a impedir que el usuario restablezca el teléfono.|
 |deviceManagementBlockManualUnenroll|Booleano|Indica si se va a impedir que el usuario realice una anulación manual de la inscripción desde la administración del dispositivo.|
-|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|Especifica el nivel de filtro de búsqueda segura que es necesario. Los valores posibles son: `userDefined`, `strict` y `moderate`.|
+|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|Especifica qué nivel de filtro de búsqueda segura es necesario. Los valores posibles son: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Booleano|Indica si se van a bloquear los elementos emergentes.|
 |edgeBlockSearchSuggestions|Booleano|Indica si se va a impedir que el usuario utilice las sugerencias de búsqueda en la barra de direcciones.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Booleano|Indica si se va a impedir que el usuario envíe tráfico de Intranet a Internet Explorer desde Edge.|
@@ -226,9 +226,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |wirelessDisplayBlockUserInputFromReceiver|Booleano|Indica si se va a permitir la entrada del usuario desde un receptor de visualización inalámbrico.|
 |wirelessDisplayRequirePinForPairing|Booleano|Indica si se va a requerir un PIN para iniciar el emparejamiento con nuevos dispositivos.|
 |windowsStoreBlocked|Booleano|Indica si se va a impedir que el usuario utilice la Tienda Windows.|
-|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica si las aplicaciones de paquetes AppX firmados con un certificado de confianza se pueden transferir localmente. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
+|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica si las aplicaciones desde paquetes AppX firmados con un certificado de confianza se pueden transferir localmente. Los valores posibles son: `notConfigured`, `blocked`, `allowed`.|
 |windowsStoreBlockAutoUpdate|Booleano|Indica si se va a bloquear la actualización automática de aplicaciones desde la Tienda Windows.|
-|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica si se va a permitir el desbloqueo de desarrollador. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
+|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica si se permite o no el desbloqueo para desarrolladores. Los valores posibles son: `notConfigured`, `blocked`, `allowed`.|
 |sharedUserAppDataAllowed|Booleano|Indica si se va a impedir que varios usuarios de la misma aplicación compartan datos.|
 |appsBlockWindowsStoreOriginatedApps|Booleano|Indica si se va a deshabilitar el inicio de todas las aplicaciones que vienen preinstaladas o que se han descargado desde la Tienda Windows.|
 |windowsStoreEnablePrivateStoreOnly|Booleano|Indica si se va a habilitar solo la tienda privada.|
@@ -726,6 +726,11 @@ Content-Length: 9875
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+
+
+
 
 
 

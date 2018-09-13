@@ -12,7 +12,7 @@ Un elemento que describe la configuración de notificaciones.
 |habilitado|Booleano|Indica si se permiten las notificaciones para esta aplicación.|
 |showInNotificationCenter|Booleano|Indica si se pueden mostrar notificaciones en el centro de notificaciones.|
 |showOnLockScreen|Booleano|Indica si se pueden mostrar notificaciones en la pantalla de bloqueo.|
-|alertType|Cadena|Indica el tipo de alerta para las notificaciones de esta aplicación. Los valores posibles son: `deviceDefault`, `banner`, `modal` y `none`.|
+|alertType|[iosNotificationAlertType](../resources/intune_deviceconfig_iosnotificationalerttype.md)|Indica el tipo de alerta para las notificaciones de esta aplicación. Los valores posibles son: `deviceDefault`, `banner`, `modal` y `none`.|
 |badgesEnabled|Booleano|Indica si se permiten los distintivos para esta aplicación.|
 |soundsEnabled|Booleano|Indica si se permiten los sonidos para esta aplicación.|
 
@@ -20,12 +20,10 @@ Un elemento que describe la configuración de notificaciones.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosNotificationSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosNotificationSettings",
@@ -40,6 +38,11 @@ Aquí tiene una representación JSON del recurso.
   "soundsEnabled": true
 }
 ```
+
+
+
+
+
 
 
 

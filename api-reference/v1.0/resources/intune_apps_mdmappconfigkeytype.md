@@ -9,8 +9,13 @@ Tipos de clave de configuración de aplicación.
 |stringType|0|Todavía no documentado|
 |integerType|1|Todavía no documentado|
 |realType|2|Todavía no documentado|
-|booleanType|2|Todavía no documentado|
+|booleanType|3|Todavía no documentado|
 |tokenType|4|Todavía no documentado|
+
+
+
+
+
 
 
 
