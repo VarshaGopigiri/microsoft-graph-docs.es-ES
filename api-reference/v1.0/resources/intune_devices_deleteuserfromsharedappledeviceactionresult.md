@@ -10,7 +10,7 @@ Hereda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |actionName|Cadena|Nombre de la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción Inherited desde [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son `none`, `pending`, `canceled`, `active`, `done`, `failed` y `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción Inherited desde [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora en la que se inició la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora en la que se actualizó por última vez el estado de acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |userPrincipalName|cadena|Nombre principal de usuario del usuario que se va a eliminar.|
@@ -19,12 +19,10 @@ Hereda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.deleteUserFromSharedAppleDeviceActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deleteUserFromSharedAppleDeviceActionResult",
@@ -35,6 +33,11 @@ Aquí tiene una representación JSON del recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

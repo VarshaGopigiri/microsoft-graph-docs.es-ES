@@ -20,7 +20,7 @@ Correlacione alertas en soluciones de seguridad más fácilmente con un esquema 
 
 ### <a name="update-alert-tags-status-and-assignments"></a>Actualizar las etiquetas de alertas, el estado y las asignaciones
 
-Etiquete las alertas con información adicional del contexto o amenaza para una mejor respuesta y corrección. Asegúrese de que se capturan los comentarios en las alertas para tener visibilidad de todos los flujos de trabajo. Mantenga sincronizados los estados de alerta y las asignaciones para que todas las soluciones integradas reflejan el estado actual. Utilice suscripciones de webhook para recibir notificación de cambios.  
+Etiquete las alertas con información adicional del contexto o amenaza para una mejor respuesta y corrección. Asegúrese de que se capturan los comentarios en las alertas para tener visibilidad de todos los flujos de trabajo. Mantenga sincronizados los estados de alerta y las asignaciones para que todas las soluciones integradas reflejen el estado actual. Utilice suscripciones de webhook para recibir notificación de cambios.  
 
 ### <a name="unlock-security-context-to-drive-investigation"></a>Desbloquear el contexto de seguridad para impulsar la investigación
 
@@ -38,7 +38,7 @@ En la siguiente tabla se enumeran las ventajas a las que pueden acceder distinta
 |:---------------|:---------|
 |**Proveedores de servicios de seguridad administrados (MSSP)**|<ul><li>Integración optimizada con servicios y herramientas de operaciones de seguridad.</li> <li>Menos tiempo y esfuerzos de implementación y mantenimiento.</li> <li>Capacidad para ofrecer más valor a los clientes MSSP.</li></ul>|
 |**Soluciones de administración de riesgos de TI y SIEM**|<ul><li>Perfecta integración con soluciones de seguridad y asociados del ecosistema de Microsoft.</li> <li>Metadatos de alerta enriquecidos.</li> <li>Mejor correlación de alertas.</li></ul>|
-|**Aplicaciones** <br> (información sobre amenazas, móvil, nube, IdC, detección de fraudes, identidad y acceso, riesgo y cumplimiento, cortafuegos, etc.)|<ul><li>Administración unificada de amenazas, prevención y administración de riesgos en varias soluciones de seguridad.</li> <li>Alertas, inventario, configuración y acciones que se exponen mediante Microsoft Graph.</li> <li>Integración instantánea con soluciones compatibles con Microsoft Graph.</li></ul>|
+|**Aplicaciones** <br>(información sobre amenazas, móvil, nube, IdC, detección de fraudes, identidad y acceso, riesgo y cumplimiento, cortafuegos, etc.)|<ul><li>Administración unificada de amenazas, prevención y administración de riesgos en varias soluciones de seguridad.</li> <li>Alertas, inventario, configuración y acciones que se exponen mediante Microsoft Graph.</li> <li>Integración instantánea con soluciones compatibles con Microsoft Graph.</li></ul>|
 
 ## <a name="next-steps"></a>Pasos siguientes
 
