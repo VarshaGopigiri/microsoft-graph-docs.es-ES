@@ -24,3 +24,4 @@ Puede usar las siguientes API de Microsoft Graph para crear y recuperar las acti
 - [Eliminar una actividad](../api/projectrome_delete_activity.md)
 - [Crear o reemplazar un elemento de historial](../api/projectrome_put_historyitem.md)
 - [Eliminar un elemento de historial](../api/projectrome_delete_historyitem.md)
+
