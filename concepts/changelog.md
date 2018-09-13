@@ -10,11 +10,17 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Eliminación|beta| Se han quitado las propiedades isBlocks y installedState de [teamsApp](../api-reference/beta/resources/teamsapp.md)|
-|Cambio | beta | Se anunció el futuro cambio de nombre de la propiedad del contexto en [teamsApp](../api-reference/beta/resources/teamsapp.md)|
-|Adición|beta|Se agregó la compatibilidad con permisos de aplicación a [GET /teams/{id}](../api-reference/beta/api/team_get.md) |
-|Adición|beta|Se agregó la compatibilidad con permisos de aplicación a [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md) |
-|Adición|beta|Se agregó la compatibilidad con permisos de aplicación a [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md) |
+|Eliminación|beta| Se han quitado las propiedades isBlocks y installedState de [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Cambio | beta | Se anunció el futuro cambio de nombre de la propiedad del contexto en [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Adición|beta|Se agregó la compatibilidad con permisos de aplicación a [GET /teams/{id}](../api-reference/beta/api/team_get.md). |
+|Adición|beta|Se agregó la compatibilidad con permisos de aplicación a [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
+|Adición|beta|Se agregó la compatibilidad con permisos de aplicación a [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
+
+### <a name="outlook-mail"></a>Correo de Outlook
+
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adición        | v1.0 y beta | La propiedad **internetMessageHeaders** de la entidad de [message](../api-reference/v1.0/resources/message.md) ahora es grabable en la creación del mensaje. |
 
 ### <a name="project-rome-notifications-api"></a>API de notificaciones de Project Rome
 
@@ -27,7 +33,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión** | **Descripción**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adición        | Beta       | Se agregaron las API de Secure Score a la [API de seguridad](../api-reference/beta/resources/security-api-overview.md), incluidos los recursos y las operaciones siguientes:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (y las entidades relacionadas)<br/>[Lista secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[Enumerar secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Actualizar secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
+| Adición        | Beta       | Se agregaron las API de Secure Score a la [API de seguridad](../api-reference/beta/resources/security-api-overview.md), incluidos los recursos y las operaciones siguientes:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (y entidades relacionadas)<br/>[Lista secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[Enumerar secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Actualizar secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
 
 ## <a name="august-2018"></a>Agosto del 2018
 
@@ -35,8 +41,8 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición | v1.0 | Se agregó la propiedad [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) a las entidades [User](../api-reference/v1.0/resources/user.md) y [Group](../api-reference/v1.0/resources/group.md), que representa los errores de sincronización de directorio al sincronizar los directorios locales para Azure Active Directory cuando se usa el producto de sincronización de Microsoft (incluidos Azure AD Connect, DirSync y MIM + Connector).|
-| Adición | v1.0 | Se agregó la propiedad [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesextensionattributes.md) a la entidad [User](../api-reference/v1.0/resources/user.md), que contiene quince propiedades de atributos de extensiones personalizadas. Para un usuario onPremisesSyncEnabled, este conjunto de propiedades se controla en Active Directory local y sincroniza con Azure AD y es de solo lectura. Para un usuario solo en la nube (donde onPremisesSyncEnabled es false), estas propiedades se pueden establecer durante la creación o la actualización.|
+| Adición | v1.0 | Se agregó la propiedad [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) a las entidades [User](../api-reference/v1.0/resources/user.md) y [Group](../api-reference/v1.0/resources/group.md), la cual representa los errores de sincronización de directorio al sincronizar los directorios locales para Azure Active Directory cuando se usa el producto de sincronización de Microsoft (incluidos Azure AD Connect, DirSync y MIM + Connector).|
+| Adición | v1.0 | Se agregó la propiedad [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesextensionattributes.md) a la entidad [User](../api-reference/v1.0/resources/user.md), la cual contiene quince propiedades de atributos de extensiones personalizadas. Para un usuario onPremisesSyncEnabled, este conjunto de propiedades se controla en Active Directory local y sincroniza con Azure AD y es de solo lectura. Para un usuario solo en la nube (donde onPremisesSyncEnabled es false), estas propiedades se pueden establecer durante la creación o la actualización.|
 |Adición|v1.0|Se agregaron las propiedades **onPremisesDomainName**, **onPremisesSamAccountName** y **onPremisesUserPrincipalName** a la entidad [User](../api-reference/v1.0/resources/user.md)|
 
 ### <a name="microsoft-intune-apis"></a>API de Microsoft Intune
@@ -45,8 +51,8 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |:---|:---|:---|
 |Adición|v1.0|Nuevas entidades agregadas:<br/>[androidWorkProfileCompliancePolicy](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md)<br/>[androidWorkProfileCustomConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md)<br/>[androidWorkProfileGeneralDeviceConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md)<br/>|
 |Adición|v1.0|Se agregaron nuevos tipos de enumeración:<br/>[androidWorkProfileCrossProfileDataSharingType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype.md)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofiledefaultapppermissionpolicytype.md)<br/>[androidWorkProfileRequiredPasswordType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype.md)<br/>|
-|Adición|v1.0|Se agregó la función [managedDeviceEnrollmentFailureDetails](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md). |
-|Adición|v1.0|Se agregó la función [managedDeviceEnrollmentTopFailures](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md). |
+|Adición|v1.0|Se agregó la función [managedDeviceEnrollmentFailureDetails](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md) |
+|Adición|v1.0|Se agregó la función [managedDeviceEnrollmentTopFailures](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md) |
 |Adición|v1.0|Se agregó la propiedad **kioskModeBuiltInAppId** a la entidad [iosGeneralDeviceConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md)|
 |Adición|v1.0|Se agregó el miembro **notAssigned** al tipo de enumeración [complianceStatus](../api-reference/v1.0/resources/intune_shared_compliancestatus.md)|
 |Adición|v1.0|Se agregó el miembro **pushNotification** al tipo de enumeración [deviceComplianceActionType](../api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype.md)|
@@ -83,7 +89,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Adición|beta|Se agregó la propiedad **roleScopeTagIds** a la entidad [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |Adición|beta|Se agregaron las propiedades **roleScopeTagIds** y **supportsScopeTags** a la entidad [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md)|
 |Adición|beta|Se agregó la propiedad **windowsMalwareOverview** a la entidad [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)|
-|Cambio|beta|Se cambiaron las propiedades siguientes en la entidad [iosCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase.md):<br/>**subjectAlternativeNameType** pasó de obligatoria a opcional<br/>|
+|Cambio|beta|Se cambiaron las siguientes propiedades en la entidad [iosCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase.md):<br/>**subjectAlternativeNameType** pasó de obligatoria a opcional<br/>|
 |Adición|beta|Se agregó la propiedad **restrictedApps** a la entidad [iosCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy.md)|
 |Adición|beta|Se añadieron las propiedades **certificateStore** y **customSubjectAlternativeNames** a la entidad [iosScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_iosscepcertificateprofile.md)|
 |Adición|beta|Se agregó la propiedad **enforcedSoftwareUpdateDelayInDays** a la entidad [iosUpdateConfiguration](../api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration.md)|
@@ -332,7 +338,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Cambio          | versión 1.0 y beta | El ámbito **Members.Read.Hidden** se requiere para leer o actualizar la colección **Members** de una entidad [educationClass](../api-reference/v1.0/resources/educationclass.md) con tokens solo de aplicación. |
+| Cambio          | v1.0 y beta | El ámbito **Members.Read.Hidden** se requiere para leer o actualizar la colección **Members** de una entidad [educationClass](../api-reference/v1.0/resources/educationclass.md) con tokens solo de aplicación. |
 |Cambio           |Beta           |Se han actualizado los valores posibles del tipo **educationSubmissionStatus** en la propiedad del estado de [educationsubmission](../api-reference/beta/resources/educationsubmission.md).|
 |Cambio           |Beta           |Se agregó el tipo complejo **educationAssignmentIndividualRecipient** a la propiedad assignTo de [educationAssignment](../api-reference/beta/resources/educationassignment.md).|
 |Cambio           |Beta           |Se agregaron las propiedades **unsubmittedBy**, **unsubmittedDate**, **returnedBy** y **returnedDate** de [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
@@ -733,11 +739,11 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |:---|:---|:---|
 |Adición|beta|Nuevas entidades agregadas:<br/>[androidForWorkImportedPFXCertificateProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkimportedpfxcertificateprofile)<br/>[androidImportedPFXCertificateProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_androidimportedpfxcertificateprofile)<br/>[importedWindowsAutopilotDeviceIdentity](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentity)<br/>[iosImportedPFXCertificateProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile)<br/>[windows10ImportedPFXCertificateProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile)<br/>[windows10KioskConfiguration](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_windows10kioskconfiguration)<br/>[windowsPhone81ImportedPFXCertificateProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81importedpfxcertificateprofile)<br/>|
 |Adición|beta|Nuevos tipos complejos agregados:<br/>[importedWindowsAutopilotDeviceIdentityState](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate)<br/>|
-|Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureDetails](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot). |
-|Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureDetails](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot). |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureDetails](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot) |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureDetails](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuredetails.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot) |
 |Adición|beta|Se agregó la función [managedDeviceEnrollmentFailureTrends](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentfailuretrends.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot). |
-|Adición|beta|Se agregó la función [managedDeviceEnrollmentTopFailures](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot). |
-|Adición|beta|Se agregó la función [managedDeviceEnrollmentTopFailures](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot). |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentTopFailures](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot) |
+|Adición|beta|Se agregó la función [managedDeviceEnrollmentTopFailures](https://developer.microsoft.com/en-us/api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmenttopfailures.md) en [reportRoot](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_reportroot) |
 |Cambio|beta|Se agregaron las propiedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** y **requireCompanyPortalAppIntegrity** a la entidad [androidCompliancePolicy](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_androidcompliancepolicy).|
 |Cambio|beta|Se agregaron las propiedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** y **requireCompanyPortalAppIntegrity** a la entidad [androidForWorkCompliancePolicy](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy).|
 |Cambio|beta|Se quitaron las propiedades **name**, **modifiedDateTime**, **totalEnrollmentCount** y **qrCode** de la entidad [androidForWorkEnrollmentProfile](https://developer.microsoft.com/en-us/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile).|
@@ -1136,7 +1142,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | Tipo de cambio | Versión | Descripción                              |
 | :---------- | :------ | :--------------------------------------- |
-| Cambio          | V1.0 y beta | Esta mejora de comportamiento es acerca de cómo conseguir una carpeta de correo compartida o el contenido del mensaje, cuando un usuario ha compartido una carpeta de correo con el usuario que ha iniciado sesión, o cuando ha delegado el buzón al usuario que ha iniciado sesión. En estos casos, una aplicación puede especificar la Id. del usuario o el nombre principal del usuario para [obtener la carpeta de correo compartida](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_get), o [obtener los mensajes en el calendario compartido](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), siempre que el usuario que ha iniciado sesión haya proporcionado permisos delegados para la aplicación. |
+| Cambio          | v1.0 y beta | Esta mejora de comportamiento es acerca de cómo conseguir una carpeta de correo compartida o el contenido del mensaje, cuando un usuario ha compartido una carpeta de correo con el usuario que ha iniciado sesión, o cuando ha delegado el buzón al usuario que ha iniciado sesión. En estos casos, una aplicación puede especificar la Id. del usuario o el nombre principal del usuario para [obtener la carpeta de correo compartida](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/mailfolder_get), o [obtener los mensajes en el calendario compartido](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), siempre que el usuario que ha iniciado sesión haya proporcionado permisos delegados para la aplicación. |
 
 
 ### <a name="outlook-user-choices"></a>Opciones de usuario de Outlook
@@ -1279,13 +1285,13 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 | Adición        | Beta          | Se agregó la propiedad **locations** al recurso [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/event) para ayudar en la organización de un evento al que puedan asistir los asistentes de más de una ubicación. |
 | Adición        | Beta          | Se agregó la propiedad **locationType** para el tipo complejo [ubicación](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location). |
 | Adición        | Beta          | Se agregaron las propiedades **uniqueId** y **uniqueIdType** al tipo complejo [location](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/location). Estas propiedades son solo para uso interno en este momento. |
-| Cambio          | V1.0 y beta | Esta mejora de comportamiento es acerca de cómo conseguir un calendario compartido o el contenido de los eventos, cuando un usuario ha compartido un calendario con el usuario que ha iniciado sesión o ha delegado el buzón al usuario que ha iniciado sesión. En estos casos, una aplicación puede especificar la Id. del usuario o el nombre principal del usuario para [obtener el calendario compartido](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get), o [obtener los eventos en el calendario compartido](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), siempre que el usuario que ha iniciado sesión haya proporcionado permisos delegados para la aplicación. |
+| Cambio          | v1.0 y beta | Esta mejora de comportamiento es acerca de cómo conseguir un calendario compartido o el contenido de los eventos, cuando un usuario ha compartido un calendario con el usuario que ha iniciado sesión o ha delegado el buzón al usuario que ha iniciado sesión. En estos casos, una aplicación puede especificar la Id. del usuario o el nombre principal del usuario para [obtener el calendario compartido](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_get), o [obtener los eventos en el calendario compartido](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_events), siempre que el usuario que ha iniciado sesión haya proporcionado permisos delegados para la aplicación. |
 
 ### <a name="outlook-contacts"></a>Contactos de Outlook
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Cambio          | V1.0 y beta | Esta mejora de comportamiento es acerca de cómo conseguir una carpeta de contactos compartida o el contenido de contactos, cuando un usuario ha compartido una carpeta de contactos con el usuario que ha iniciado sesión, o cuando ha delegado el buzón al usuario que ha iniciado sesión. En estos casos, una aplicación puede especificar la Id. del usuario o el nombre principal del usuario para [obtener la carpeta de contactos compartida](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get), o [obtener los contactos en la carpeta compartida](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), siempre que el usuario que ha iniciado sesión haya proporcionado permisos delegados para la aplicación. |
+| Cambio          | v1.0 y beta | Esta mejora de comportamiento es acerca de cómo conseguir una carpeta de contactos compartida o el contenido de contactos, cuando un usuario ha compartido una carpeta de contactos con el usuario que ha iniciado sesión, o cuando ha delegado el buzón al usuario que ha iniciado sesión. En estos casos, una aplicación puede especificar la Id. del usuario o el nombre principal del usuario para [obtener la carpeta de contactos compartida](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get), o [obtener los contactos en la carpeta compartida](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), siempre que el usuario que ha iniciado sesión haya proporcionado permisos delegados para la aplicación. |
 
 ### <a name="outlook-mail"></a>Correo de Outlook
 
@@ -1645,7 +1651,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adición        | v1.0          | Compatibilidad con [openTypeExtension](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/opentypeextension) en los siguientes recursos: [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization) y [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
-| Adición        | V1.0 y beta | Cuando el usuario ha iniciado sesión con una cuenta personal de Microsoft, son compatibles con las extensiones abiertas los siguientes recursos: event, post, group, message, contact y user. (Cuando el usuario inicia sesión mediante una cuenta profesional o educativa, a la compatibilidad con extensiones abiertas se le agregan, además de estos, los recursos device, group, organization y user). |
+| Adición        | v1.0 y beta | Cuando el usuario ha iniciado sesión con una cuenta personal de Microsoft, son compatibles con las extensiones abiertas los siguientes recursos: event, post, group, message, contact y user. (Cuando el usuario inicia sesión mediante una cuenta profesional o educativa, a la compatibilidad con extensiones abiertas se le agregan, además de estos, los recursos device, group, organization y user). |
 | Adición        | v1.0 y beta | Compatibilidad con `$expand` para [obtener extensiones abiertas](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) en los siguientes recursos: [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [post](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post) y [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
 | Adición        | Beta          | Compatibilidad con `$expand` para [obtener extensiones abiertas](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/opentypeextension_get) en [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit). |
 
@@ -1656,7 +1662,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 | :-------------- | :------------ | :--------------------------------------- |
 | Adición        | v1.0          | Nuevo recurso [schemaExtension](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/schemaextension) y métodos CRUD para administrar definiciones de extensión para los siguientes recursos: [contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact), [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message), [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [post](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post) y [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). Tenga en cuenta que la compatibilidad con [administrativeUnit](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/administrativeunit) sigue estando limitada a la versión beta como antes. |
 | Adición        | v1.0          | Los métodos POST, GET y PATCH existentes de los recursos [contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact), [device](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/device), [event](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event), [group](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group), [message](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message), [organization](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/organization), [post](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/post) y [user](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) ya son compatibles con la adición, la obtención, la actualización y la eliminación de los datos personalizados que están almacenados como extensiones de esquema en las instancias de recurso correspondientes. |
-| Adición        | V1.0 y beta | Ahora puede usar `$filter` para buscar instancias de recurso con propiedades que coincidan con valores de propiedad de extensión específicos, como los nombres de extensión. Consulte este [ejemplo](https://devx.microsoft-tst.com/en-us/graph/docs/concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data) para obtener detalles. |
+| Adición        | v1.0 y beta | Ahora puede usar `$filter` para buscar instancias de recurso con propiedades que coincidan con valores de propiedad de extensión específicos, como los nombres de extensión. Consulte este [ejemplo](https://devx.microsoft-tst.com/en-us/graph/docs/concepts/extensibility_schema_groups#5-get-a-group-and-its-extension-data) para obtener detalles. |
 | Cambio          | v1.0 y beta | [Eliminar una definición de extensión de esquema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/schemaextension_delete) ya no afecta al acceso a los datos personalizados que se han agregado a partir de esa definición. |
 | Cambio          | v1.0 y beta | Ahora puede establecer un tipo complejo de extensión de esquema como nulo para quitar una extensión de esquema de una instancia de recurso. |
 
@@ -1742,7 +1748,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición        | V1.0 y beta | Para **findMeetingTimes**, se agregó el nuevo valor de enumeración **unrestricted** que debe especificar como propiedad **activityDomain**, que forma parte del parámetro **timeConstraint**. Esto permite que **findMeetingTimes** busque las horas adecuadas para el tipo de actividad que está programando. Consulte los detalles en la sección [Cuerpo de la solicitud](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body). |
+| Adición        | v1.0 y beta | Para **findMeetingTimes**, se agregó el nuevo valor de enumeración **unrestricted** que debe especificar como propiedad **activityDomain**, que forma parte del parámetro **timeConstraint**. Esto permite que **findMeetingTimes** busque las horas adecuadas para el tipo de actividad que está programando. Consulte los detalles en la sección [Cuerpo de la solicitud](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body). |
 | Adición        | Beta          | Compatibilidad con la obtención del cuerpo de un **evento** en texto sin formato como alternativa al formato HTML predeterminado. Consulte los eventos [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get) y [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events) para obtener detalles. |
 
 ### <a name="outlook-mail"></a>Correo de Outlook
@@ -1983,7 +1989,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Cambio          | V1.0 y beta | Se cambió el nombre anterior "extensiones de datos de Office 365" por "extensiones abiertas". |
+| Cambio          | v1.0 y beta | Se cambió el nombre anterior "extensiones de datos de Office 365" por "extensiones abiertas". |
 | Adición        | Beta          | Se agregaron recursos que admiten las [extensiones abiertas](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>unidad administrativa<br/>dispositivo<br/>grupo<br/>organización<br/>usuario<br/>Vea el ejemplo siguiente:<br/>[Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
 
 ### <a name="directory-apis"></a>API de directorio
@@ -2111,9 +2117,9 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición        | V1.0 y beta | La versión 2.0 del punto de conexión de autenticación ahora es compatible con la concesión de OAuth client_credentials, que se puede usar para [demonios y procesos de ejecución prolongada en escenarios empresariales](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/). |
-| Adición        | V1.0 y beta | La versión 2.0 del punto de conexión de autenticación ahora es compatible con [ámbitos de permisos que requieren el consentimiento del administrador](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) a través del [punto de conexión de consentimiento de administrador](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
-| Adición        | V1.0 y beta | La versión 2.0 del punto de conexión de autenticación ahora es compatible con el consentimiento administrativo para todos los usuarios de un inquilino a través del [punto de conexión de consentimiento de administrador](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
+| Adición        | v1.0 y beta | La versión 2.0 del punto de conexión de autenticación ahora es compatible con la concesión de OAuth client_credentials, que se puede usar para [demonios y procesos de ejecución prolongada en escenarios empresariales](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oauth-client-creds/). |
+| Adición        | v1.0 y beta | La versión 2.0 del punto de conexión de autenticación ahora es compatible con [ámbitos de permisos que requieren el consentimiento del administrador](http://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) a través del [punto de conexión de consentimiento de administrador](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
+| Adición        | v1.0 y beta | La versión 2.0 del punto de conexión de autenticación ahora es compatible con el consentimiento administrativo para todos los usuarios de un inquilino a través del [punto de conexión de consentimiento de administrador](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#admin-restricted-scopes). |
 
 ### <a name="invitation-apis"></a>API de invitación
 
@@ -2262,7 +2268,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 | :-------------- | :---------- | :--------------------------------------- |
 | Cambio          | Beta        | La propiedad _WebSite_ cambia de nombre por _Websites_. Para obtener más información, vea [Cambios próximos a las API de Contactos y Personas](https://blogs.msdn.microsoft.com/exchangedev/2016/06/09/upcoming-changes-to-contacts-and-people-apis/). |
 
-### <a name="privileged-identity-management"></a>Privileged Identity Management
+### <a name="privileged-identity-management"></a>Gestión de identidad privilegiada
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2379,18 +2385,18 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición        | V1.0 y beta | Se agregó la función _recent_ para hacer una lista de un conjunto de elementos usados recientemente por el usuario que ha iniciado sesión. Esta lista incluye elementos que están en la unidad de disco del usuario, así como elementos de otras unidades de disco a los que tiene acceso. Ejemplo: GET /me/drive/recent. |
-| Adición        | V1.0 y beta | Se agregó la función _sharedWithMe_ para hacer una lista de un conjunto de elementos que se comparten actualmente con el usuario actual. Ejemplo: GET /me/drive/sharedWithMe. |
+| Adición        | v1.0 y beta | Se agregó la función _recent_ para hacer una lista de un conjunto de elementos usados recientemente por el usuario que ha iniciado sesión. Esta lista incluye elementos que están en la unidad de disco del usuario, así como elementos de otras unidades de disco a los que tiene acceso. Ejemplo: GET /me/drive/recent. |
+| Adición        | v1.0 y beta | Se agregó la función _sharedWithMe_ para hacer una lista de un conjunto de elementos que se comparten actualmente con el usuario actual. Ejemplo: GET /me/drive/sharedWithMe. |
 
 ### <a name="driveitem"></a>DriveItem
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición        | V1.0 y beta | Se agregó el tipo _remoteItem_ que proporciona un vínculo a un elemento en otra unidad de disco. |
-| Adición        | V1.0 y beta | Se agregó el tipo _sharingInvitation_ que proporciona detalles de cualquier invitación para uso compartido asociada a este permiso. |
-| Adición        | V1.0 y beta | Se agregó la función _delta_ para el control de cambios a elementos de una unidad de disco. Ejemplo: GET /me/drive/items/{item-id}/delta |
-| Adición        | V1.0 y beta | Se agregó _copy_, que crea una copia de un _driveItem_ (incluidos los elementos secundarios), en un nuevo elemento primario o con un nuevo nombre. Ejemplo: POST /me/drive/items/{item-id}/copy. |
-| Adición        | V1.0 y beta | Los atributos de la instancia _conflictBehavior_ son ahora aplicables a _driveItem_. |
+| Adición        | v1.0 y beta | Se agregó el tipo _remoteItem_ que proporciona un vínculo a un elemento en otra unidad de disco. |
+| Adición        | v1.0 y beta | Se agregó el tipo _sharingInvitation_ que proporciona detalles de cualquier invitación para uso compartido asociada a este permiso. |
+| Adición        | v1.0 y beta | Se agregó la función _delta_ para el control de cambios a elementos de una unidad de disco. Ejemplo: GET /me/drive/items/{item-id}/delta |
+| Adición        | v1.0 y beta | Se agregó _copy_, que crea una copia de un _driveItem_ (incluidos los elementos secundarios), en un nuevo elemento primario o con un nuevo nombre. Ejemplo: POST /me/drive/items/{item-id}/copy. |
+| Adición        | v1.0 y beta | Los atributos de la instancia _conflictBehavior_ son ahora aplicables a _driveItem_. |
 |Adición|Beta|Se agregó la función _invite_ para enviar una invitación para uso compartido a un elemento existente. Una invitación para uso compartido crea un enlace único para compartir y envía un correo al destinatario de la invitación que incluye el vínculo para compartir. Ejemplo: POST /drive/items/{item-id}/invite.
 
 ### <a name="event"></a>Evento
@@ -2417,9 +2423,9 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición        | V1.0 y beta | Se mejoran los mensajes de error al resolver alias de inquilino y tokens de JWT (AAD) rechazados. |
-| Adición        | V1.0 y beta | La ubicación del punto de conexión de servicio de autorización ahora se devuelve en el encabezado _www-authenticate_ cuando se recibe una solicitud con un token de portador vacío. |
-| Adición        | V1.0 y beta | Se solucionó la capacidad para filtrar en una propiedad de identificador de entidad. Ejemplo: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+"x"<br/>Anteriormente, cualquier solicitud POST para acciones de servicio y funciones necesitaba el nombre de la acción o función con el prefijo microsoft.graph. Por ejemplo, POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>El prefijo ya no es necesario (aunque todavía se puede especificar). Por lo que ahora también funcionaría lo siguiente: POST https://graph.microsoft.com/v1.0/me/getMemberGroups. |
+| Adición        | v1.0 y beta | Se mejoran los mensajes de error al resolver alias de inquilino y tokens de JWT (AAD) rechazados. |
+| Adición        | v1.0 y beta | La ubicación del punto de conexión de servicio de autorización ahora se devuelve en el encabezado _www-authenticate_ cuando se recibe una solicitud con un token de portador vacío. |
+| Adición        | v1.0 y beta | Se solucionó la capacidad para filtrar en una propiedad de identificador de entidad. Ejemplo: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+"x"<br/>Anteriormente, cualquier solicitud POST para acciones de servicio y funciones necesitaba el nombre de la acción o función con el prefijo microsoft.graph. Por ejemplo, POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>El prefijo ya no es necesario (aunque todavía se puede especificar). Por lo que ahora también funcionaría lo siguiente: POST https://graph.microsoft.com/v1.0/me/getMemberGroups. |
 | Cambio          | Beta          | Se limpiaron los nombres de propiedad de suscripción.  |
 | Adición        | Beta          | Se agregó la capacidad de detectar (a través de _directorySettingTemplates_) y de invalidar el comportamiento predeterminado (al crear una _configuración_ a partir de la plantilla) para entidades y su función asociada. Inicialmente, esta plantilla solo se proporciona para controlar comportamientos en los grupos de Office. |
 
@@ -2435,7 +2441,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adición        | v1.0          | Se agregó la propiedad _mobilePhone_.            |
-| Adición        | V1.0 y beta | Se agregó la propiedad _internetMessageId_. El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
+| Adición        | v1.0 y beta | Se agregó la propiedad _internetMessageId_. El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 | Cambio          | Beta          | El nombre de la propiedad _mobilePhone1_ se cambió a _mobilePhone_. |
 | Cambio          | Beta          | _createReply_ y _createReplyAll_ aceptan los nuevos parámetros _Message_ y _comment_. |
 | Cambio          | Beta          | _createForward_ acepta los nuevos parámetros _Message_, _ToRecipients_ y _comment_. |
@@ -2445,7 +2451,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición        | V1.0 y beta | Se agregó la propiedad _sharingInvitation_ que proporciona detalles de cualquier invitación para uso compartido asociada a este permiso. |
+| Adición        | v1.0 y beta | Se agregó la propiedad _sharingInvitation_ que proporciona detalles de cualquier invitación para uso compartido asociada a este permiso. |
 
 ### <a name="person"></a>Usuario
 
@@ -2480,14 +2486,14 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adición        | V1.0 y beta | Nueva propiedad _remoteItem_ en driveItem para cuentas de Microsoft. |
+| Adición        | v1.0 y beta | Nueva propiedad _remoteItem_ en driveItem para cuentas de Microsoft. |
 
 ### <a name="general"></a>General
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Cambio          | V1.0 y beta | -_/me/drive_ funciona ahora para cuentas de Microsoft y cuentas profesionales y educativas. |
-| Cambio          | V1.0 y beta | Las solicitudes de unidad de disco para cuentas cuyo almacenamiento de OneDrive se aprovisionó a petición funcionan de manera más confiable y en más escenarios en los que los sitios de SharePoint predeterminados de inquilinos utilizan nombres no estándar. |
+| Cambio          | v1.0 y beta | -_/me/drive_ funciona ahora para cuentas de Microsoft y cuentas profesionales y educativas. |
+| Cambio          | v1.0 y beta | Las solicitudes de unidad de disco para cuentas cuyo almacenamiento de OneDrive se aprovisionó a petición funcionan de manera más confiable y en más escenarios en los que los sitios de SharePoint predeterminados de inquilinos utilizan nombres no estándar. |
 | Eliminación        | Beta          | Se quitaron diversos tipos no implementados del esquema beta para que se parezca más al esquema 1.0. |
 
 ### <a name="subscriptions"></a>Suscripciones
@@ -2501,7 +2507,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Cambio          | V1.0 y beta | _displayName_ ahora se devuelve para cuentas Microsoft. |
+| Cambio          | v1.0 y beta | _displayName_ ahora se devuelve para cuentas Microsoft. |
 
 ## <a name="january-2016"></a>Enero de 2016
 
@@ -2515,7 +2521,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Solución             | V1.0 y beta | Se solucionaron las acciones de llamada que estaban enlazadas a directoryObjects y que producían el error siguiente:  El tipo de valor devuelto de la operación no se admite con el conjunto de entidades especificado. Se aplica a las siguientes acciones: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_. |
+| Solución             | v1.0 y beta | Se solucionaron las acciones de llamada que estaban enlazadas a directoryObjects y que producían el error siguiente:  El tipo de valor devuelto de la operación no se admite con el conjunto de entidades especificado. Se aplica a las siguientes acciones: _microsoft.graph.checkMemberObjects_, _microsoft.graph.getMemberObjects_, _microsoft.graph.checkMemberGroups_, _microsoft.graph.assignLicense_, _microsoft.graph.changePassword_. |
 
 ## <a name="december-2015"></a>Diciembre de 2015
 
@@ -2529,18 +2535,18 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Solución             | V1.0 y beta | Se solucionaron las solicitudes en las que se usaban expresiones de $filter y se especificaba la misma propiedad más de una vez, que producían el siguiente error 500: Ya se ha agregado un elemento con la misma clave. |
-| Solución             | V1.0 y beta | Se solucionó el problema de no distinción de mayúsculas de minúsculas para nombres de parámetros de acción y sus valores. |
-| Solución             | V1.0 y beta | Se solucionó el procesamiento de solicitudes de cargas que contenían valores nulos para algunas propiedades complejas integradas y que generaban una excepción de referencia nula. |
-| Adición        | V1.0 y beta | Se agregó la compatibilidad con la ordenación y filtrado de propiedades de tipo complejo. |
-| Adición        | V1.0 y beta | Se agregó la propiedad authorization_uri en el encabezado www-authenticate de una respuesta 401. Este URI se puede usar para iniciar el flujo de adquisición de tokens. |
-| Adición        | V1.0 y beta | Se mejoraron los mensajes de error en usuarios y grupos. |
+| Solución             | v1.0 y beta | Se solucionaron las solicitudes en las que se usaban expresiones de $filter y se especificaba la misma propiedad más de una vez, que producían el siguiente error 500: Ya se ha agregado un elemento con la misma clave. |
+| Solución             | v1.0 y beta | Se solucionó el problema de no distinción de mayúsculas de minúsculas para nombres de parámetros de acción y sus valores. |
+| Solución             | v1.0 y beta | Se solucionó el procesamiento de solicitudes de cargas que contenían valores nulos para algunas propiedades complejas integradas y que generaban una excepción de referencia nula. |
+| Adición        | v1.0 y beta | Se agregó la compatibilidad con la ordenación y filtrado de propiedades de tipo complejo. |
+| Adición        | v1.0 y beta | Se agregó la propiedad authorization_uri en el encabezado www-authenticate de una respuesta 401. Este URI se puede usar para iniciar el flujo de adquisición de tokens. |
+| Adición        | v1.0 y beta | Se mejoraron los mensajes de error en usuarios y grupos. |
 
 ### <a name="groups"></a>Grupos
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Solución             | V1.0 y beta | Se solucionaron las llamadas a las siguientes acciones de grupo: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ y _microsoft.graph.resetUnseenCount_. |
+| Solución             | v1.0 y beta | Se solucionaron las llamadas a las siguientes acciones de grupo: _microsoft.graph.addFavorite_, _microsoft.graph.removeFavorite_ y _microsoft.graph.resetUnseenCount_. |
 
 ### <a name="messages"></a>Mensajes
 
@@ -2552,7 +2558,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Solución             | V1.0 y beta | Se solucionó la capacidad de seleccionar determinadas propiedades de usuario en otros usuarios, cuando se hacía referencia al usuario con el nombre principal de usuario (UPN). Por ejemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
-| Solución             | V1.0 y beta | Se solucionó la llamada a la función enlazada de usuario _microsoft.graph.reminderView_, que generaba el siguiente error: No se pudo encontrar una propiedad denominada businessPhones en el tipo Microsoft.OutlookServices.Reminder. |
-| Solución             | V1.0 y beta | Se solucionó la creación y actualización de usuarios (POST/PATCH /v1.0/users), que generaba el error 400. |
+| Solución             | v1.0 y beta | Se solucionó la capacidad de seleccionar determinadas propiedades de usuario en otros usuarios, cuando se hacía referencia al usuario con el nombre principal de usuario (UPN). Por ejemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| Solución             | v1.0 y beta | Se solucionó la llamada a la función enlazada de usuario _microsoft.graph.reminderView_, que generaba el siguiente error: No se pudo encontrar una propiedad denominada businessPhones en el tipo Microsoft.OutlookServices.Reminder. |
+| Solución             | v1.0 y beta | Se solucionó la creación y actualización de usuarios (POST/PATCH /v1.0/users), que generaba el error 400. |
 
