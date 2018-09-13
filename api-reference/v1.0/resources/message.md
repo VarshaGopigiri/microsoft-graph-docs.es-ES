@@ -4,8 +4,9 @@ Un mensaje en un mailFolder.
 
 Este recurso admite:
 
-- que agregue sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md);
-- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/message_delta.md).
+- Adición de sus propios datos como encabezados de mensaje de Internet personalizados. Agregue encabezados personalizados solo al crear un mensaje y asignarle un nombre que empieza con "x-". Una vez que se ha enviado el mensaje, los encabezados no se pueden modificar. Para obtener los encabezados de un mensaje, aplique el parámetro de consulta `$select` en una operación [get message](../api/message_get.md).
+- Adición de sus propios datos como propiedades personalizadas en [extensiones](../../../concepts/extensibility_overview.md).
+- Uso de una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos, las eliminaciones y las actualizaciones incrementales mediante una función [delta](../api/message_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -57,7 +58,7 @@ Este recurso admite:
 |id|Cadena|Identificador único del mensaje (tenga en cuenta que este valor puede cambiar si se mueve o se altera un mensaje)|
 |importance|importance| La importancia del mensaje: `Low`, `Normal` y `High`.|
 |inferenceClassification | inferenceClassificationType | La clasificación del mensaje para el usuario, según la importancia o relevancia inferida, o según una invalidación explícita. Los valores posibles son`focused`, o `other`. |
-|internetMessageHeaders | Colección [internetMessageHeader](internetmessageheader.md) | Colección de encabezados de mensajes, definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que proporcionan los detalles de la ruta en la red que sigue un mensaje desde el remitente hasta el destinatario. Solo lectura.|
+|internetMessageHeaders | Colección [internetMessageHeader](internetmessageheader.md) | Una colección de encabezados de mensaje definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). El conjunto incluye encabezados de mensaje que indican la ruta de acceso de red que recorre un mensaje desde el remitente al destinatario. También puede contener encabezados de mensaje personalizado que contienen datos de aplicación para el mensaje. |
 |internetMessageId |Cadena |El identificador del mensaje en el formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isDraft|Booleano|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|

@@ -28,16 +28,18 @@ Use Microsoft Graph para sugerir datos contextuales a los usuarios de la aplicac
 
 - Integre la [Bandeja de entrada Prioritarios](../api-reference/v1.0/resources/manage_focused_inbox.md) y las [@menciones (versión preliminar)](../api-reference/beta/api/message_get.md#request-2), y permita a los usuarios de la aplicación leer y responder primero a lo que sea más relevante para ellos. 
 
-- Vea [sugerencias de correo (versión preliminar)](../api-reference/beta/resources/mailtips.md) al redactar un mensaje para obtener información de estado útil sobre un destinatario (por ejemplo, cuando el destinatario envía una respuesta automática o tiene el buzón lleno). Las sugerencias de correo pueden avisar a las aplicaciones de determinadas condiciones para, en su lugar, realizar acciones de seguimiento más eficientes. 
+- Vea [sugerencias de correo](../api-reference/v1.0/resources/mailtips.md) al redactar un mensaje para obtener información de estado útil sobre un destinatario (por ejemplo, cuando el destinatario envía una respuesta automática o tiene un buzón lleno). Las sugerencias de correo pueden avisar a las aplicaciones de determinadas condiciones para, en su lugar, realizar acciones de seguimiento más eficientes. 
 
 - Use la [API de contactos](people_example.md) para proporcionar controles interactivos, como el Selector de personas, en su aplicación. La API de contactos puede sugerir los contactos más relevantes para un usuario basándose en las relaciones empresariales y los modelos de colaboración y comunicación del usuario. 
 
-- Ofrezca a los usuarios de la aplicación un selector de archivos inteligente y sugiera archivos con los que interactuaron recientemente para agregarlos como datos adjuntos al redactar un mensaje. [Información](../api-reference/beta/resources/insights.md) usa análisis avanzados para sugerir archivos con actividad reciente sobre un usuario, vistos o editados recientemente por el usuario, o compartidos con el usuario.
+- Ofrezca a los usuarios de la aplicación un selector de archivos inteligente y sugiera archivos con los que interactuaron recientemente para agregarlos como datos adjuntos al redactar un mensaje. [Insights (versión preliminar)](../api-reference/beta/resources/insights.md) usa análisis avanzados para sugerir archivos que son tendencia en torno a un usuario, que el usuario ha visualizado o editado recientemente o que se comparten con el usuario.
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>Almacenar los datos de aplicaciones en un recurso o una instancia de recurso
 
-Con frecuencia, las aplicaciones necesitan almacenar sus datos en un almacén de datos externos, lo que conlleva una sobrecarga al administrar y obtener acceso a los datos. Microsoft Graph permite a la aplicación simplemente [almacenar datos personalizados en instancias de recursos individuales](extensibility_overview.md#open-extensions) o, si corresponde, extender el esquema, agregar propiedades personalizadas y almacenar datos escritos en recursos de Microsoft Graph. También puede hacer que esas [extensiones de esquema](extensibility_overview.md#schema-extensions) se puedan compartir y descubrir. 
+Con frecuencia, las aplicaciones necesitan almacenar sus datos en un almacén de datos externos, lo que conlleva una sobrecarga al administrar y obtener acceso a los datos. Microsoft Graph permite simplemente incluir datos de aplicaciones como encabezados de mensaje de Internet al [crear](../api-reference/v1.0/api/user_post_messages.md#request-2) o [enviar](../api-reference/v1.0/api/user_sendmail.md#request-2) un mensaje nuevo o una respuesta a un mensaje. 
+
+Si necesita agregar y, posteriormente, actualizar datos personalizados, puede [almacenar los datos en instancias de recursos individuales](extensibility_overview.md#open-extensions). Si es necesario, como alternativa, puede extender el esquema, agregar propiedades personalizadas y almacenar datos de tipo en Microsoft Graph. También puede hacer que esas [extensiones de esquema](extensibility_overview.md#schema-extensions) se puedan compartir y descubrir. 
 
 
 ## <a name="next-steps"></a>Pasos siguientes
