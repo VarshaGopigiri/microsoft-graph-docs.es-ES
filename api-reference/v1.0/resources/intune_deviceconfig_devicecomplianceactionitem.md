@@ -17,7 +17,7 @@ Configuración de la acción programada
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad.|
 |gracePeriodHours|Int32|Número de horas de espera hasta que se aplica la acción. Valores válidos de 0 a 8760|
-|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|Qué acción tomar. Los valores posibles son `noAction`, `notification`, `block`, `retire`, `wipe` y `removeResourceAccessProfiles`.|
+|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|Qué acción realizar. Los valores posibles son: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`.|
 |notificationTemplateId|Cadena|Qué plantilla de mensaje de notificación usar|
 |notificationMessageCCList|Colección string|Una lista de identificadores de grupo para especificar a quién enviar este mensaje de notificación.|
 
@@ -27,8 +27,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceActionItem"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Aquí tiene una representación JSON del recurso.
   ]
 }
 ```
+
+
+
+
+
 
 
 

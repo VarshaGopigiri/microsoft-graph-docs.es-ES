@@ -13,11 +13,10 @@ Todavía no documentado
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingGermany"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingGermany",
@@ -25,6 +24,11 @@ Aquí tiene una representación JSON del recurso.
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 
