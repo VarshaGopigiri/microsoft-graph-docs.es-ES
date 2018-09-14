@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md).
@@ -39,7 +39,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |userName|Cadena|El nombre de usuario que se está notificando|
 |deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
 |userPrincipalName|Cadena|UserPrincipalName.|
 
@@ -86,6 +86,11 @@ Content-Length: 478
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
+
+
 
 
 
