@@ -7,8 +7,13 @@ Todavía no documentado
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
 |notOnboarded|0|Todavía no documentado|
-|onboarding|1|Todavía no documentado|
-|onboarded|2|Todavía no documentado|
+|incorporación|1|Todavía no documentado|
+|incorporado|2|Todavía no documentado|
+
+
+
+
+
 
 
 

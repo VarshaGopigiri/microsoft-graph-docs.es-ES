@@ -10,9 +10,9 @@ Hereda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|cadena|Nombre para mostrar. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|descripción|String|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|descripción|Cadena|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|cadena|OMA. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|fileName|cadena|Nombre de archivo asociado a la propiedad de valor (*.cer | *.crt).|
+|fileName|cadena|Nombre de archivo asociado a la propiedad de valor (*.cer | *.crt | *.p7b | *.bin).|
 |valor|cadena|Valor. (Cadena codificada en Base64)|
 
 ## <a name="relationships"></a>Relaciones
@@ -21,7 +21,6 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingBase64"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Aquí tiene una representación JSON del recurso.
   "value": "String"
 }
 ```
+
+
+
+
+
 
 
 

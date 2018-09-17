@@ -6,11 +6,16 @@ Todavía no documentado
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|unknown|0|Estado desconocido.|
-|pending|1|Estado pendiente.|
-|partial|2|Estado parcial.|
-|complete|3|Estado completado.|
+|desconocido|0|Estado desconocido.|
+|pendiente|1|Estado pendiente.|
+|parcial|2|Estado parcial.|
+|completo|3|Estado completado.|
 |error|4|Estado de error.|
+
+
+
+
+
 
 
 

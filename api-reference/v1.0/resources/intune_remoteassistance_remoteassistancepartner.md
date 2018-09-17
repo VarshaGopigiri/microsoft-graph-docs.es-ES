@@ -17,7 +17,7 @@ Los recursos remoteAssistPartner representan los metadatos y el estado de un ser
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único del partner.|
+|id.|Cadena|Identificador único del partner.|
 |displayName|Cadena|Nombre para mostrar del partner.|
 |onboardingUrl|Cadena|Dirección URL del portal de integración del partner, donde un administrador puede configurar el servicio de Asistencia remota.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Por determinar. Los valores posibles son: `notOnboarded`, `onboarding` y `onboarded`.|
@@ -29,8 +29,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Aquí tiene una representación JSON del recurso.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
+
+
+
 
 
 

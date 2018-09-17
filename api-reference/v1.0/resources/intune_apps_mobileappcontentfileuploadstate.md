@@ -6,22 +6,27 @@ Contiene las propiedades de los estados de solicitud de subida.
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|correcto|0|Sin documentar todavía|
-|transientError|1|Sin documentar todavía|
-|error|2|Sin documentar todavía|
-|desconocido|3|Sin documentar todavía|
-|azureStorageUriRequestSuccess|100|Sin documentar todavía|
-|azureStorageUriRequestPending|101|Sin documentar todavía|
-|azureStorageUriRequestFailed|102|Sin documentar todavía|
-|azureStorageUriRequestTimedOut|103|Sin documentar todavía|
-|azureStorageUriRenewalSuccess|200|Sin documentar todavía|
-|azureStorageUriRenewalPending|201|Sin documentar todavía|
-|azureStorageUriRenewalFailed|202|Sin documentar todavía|
-|azureStorageUriRenewalTimedOut|203|Sin documentar todavía|
-|commitFileSuccess|300|Sin documentar todavía|
-|commitFilePending|301|Sin documentar todavía|
-|commitFileFailed|302|Sin documentar todavía|
-|commitFileTimedOut|303|Sin documentar todavía|
+|correcto|0|Todavía no documentado|
+|transientError|1|Todavía no documentado|
+|error|2|Todavía no documentado|
+|desconocido|3|Todavía no documentado|
+|azureStorageUriRequestSuccess|100|Todavía no documentado|
+|azureStorageUriRequestPending|101|Todavía no documentado|
+|azureStorageUriRequestFailed|102|Todavía no documentado|
+|azureStorageUriRequestTimedOut|103|Todavía no documentado|
+|azureStorageUriRenewalSuccess|200|Todavía no documentado|
+|azureStorageUriRenewalPending|201|Todavía no documentado|
+|azureStorageUriRenewalFailed|202|Todavía no documentado|
+|azureStorageUriRenewalTimedOut|203|Todavía no documentado|
+|commitFileSuccess|300|Todavía no documentado|
+|commitFilePending|301|Todavía no documentado|
+|commitFileFailed|302|Todavía no documentado|
+|commitFileTimedOut|303|Todavía no documentado|
+
+
+
+
+
 
 
 

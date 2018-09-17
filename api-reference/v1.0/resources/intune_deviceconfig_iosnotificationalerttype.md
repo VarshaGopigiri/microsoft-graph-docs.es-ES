@@ -7,9 +7,14 @@ Tipo de alerta de la configuración de notificación.
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado del dispositivo, sin intención.|
-|banner|1|Mensaje emergente.|
+|mensaje emergente|1|Mensaje emergente.|
 |modal|2|Modal.|
-|ninguno|3|Ninguno.|
+|ninguno|3|Ninguna.|
+
+
+
+
+
 
 
 

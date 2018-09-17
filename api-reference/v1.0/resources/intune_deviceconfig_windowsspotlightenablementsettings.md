@@ -6,9 +6,14 @@ Permite a los administradores de TI configurar un motor de búsqueda predetermin
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|notConfigured|0|El Contenido destacado no está configurado en la pantalla de bloqueo|
-|disabled|1|Deshabilitar el Contenido destacado de Windows en la pantalla de bloqueo|
-|enabled|2|Habilitar el Contenido destacado de Windows en la pantalla de bloqueo|
+|notConfigured (no configurado)|0|El Contenido destacado no está configurado en la pantalla de bloqueo|
+|desactivado|1|Deshabilitar el Contenido destacado de Windows en la pantalla de bloqueo|
+|activado|2|Habilitar el Contenido destacado de Windows en la pantalla de bloqueo|
+
+
+
+
+
 
 
 

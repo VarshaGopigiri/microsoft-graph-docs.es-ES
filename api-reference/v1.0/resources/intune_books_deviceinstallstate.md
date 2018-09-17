@@ -15,11 +15,11 @@ Contiene las propiedades del estado de la instalación para un dispositivo.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id.|Cadena|Clave de la entidad.|
 |deviceName|Cadena|Nombre del dispositivo.|
 |deviceId|Cadena|Id. del dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización.|
-|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
+|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|Cadena|El código de error si hay errores de instalación.|
 |osVersion|Cadena|Versión del sistema operativo.|
 |osDescription|Cadena|Descripción del sistema operativo.|
@@ -31,8 +31,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceInstallState"
 }-->
 ``` json
@@ -49,6 +49,11 @@ Aquí tiene una representación JSON del recurso.
   "userName": "String"
 }
 ```
+
+
+
+
+
 
 
 

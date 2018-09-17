@@ -6,10 +6,15 @@ Posibles valores para el intento de instalación elegido por el administrador.
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|available|0|Intento de instalación disponible.|
-|required|1|Intento de instalación requerido.|
+|disponible|0|Intento de instalación disponible.|
+|necesario|1|Intento de instalación requerido.|
 |uninstall|2|Desinstalar el intento de instalación.|
 |availableWithoutEnrollment|3|Disponible sin intento de instalación de inscripción.|
+
+
+
+
+
 
 
 
