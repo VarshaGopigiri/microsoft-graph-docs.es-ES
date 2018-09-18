@@ -4,8 +4,9 @@ Representa una cuenta de usuario de Azure AD. Se hereda de [directoryObject](dir
 
 Este recurso admite:
 
-- que agregue sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md);
-- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/user_delta.md).
+- Agregar sus propios datos a las propiedades personalizadas como [extensiones](../../../concepts/extensibility_overview.md).
+- Suscribirse a [las notificaciones de cambios](../../../concepts/webhooks.md).
+- Usar una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/user_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -124,7 +125,7 @@ Esta propiedad de solo lectura se usa en los desarrolladores de aplicaciones de 
 |null|0|Valor predeterminado, ningún `ageGroup` se ha establecido para el usuario.|
 |minorWithoutParentalConsent |1|(Reservado para uso futuro)|
 |minorWithParentalConsent|2| El usuario se considera un menor de edad según las reglamentaciones relacionadas con la edad de su país o región y el administrador de la cuenta ha obtenido apropiado consentimiento de un padre o tutor.|
-|adulto|3|El usuario considera un contenido para adultos según las reglamentaciones relacionadas con la edad de su país o región.|
+|adult|3|El usuario considera un contenido para adultos según las reglamentaciones relacionadas con la edad de su país o región.|
 |notAdult|4|El usuario es de un país o región que tiene regulaciones adicionales relacionados con la edad (por ejemplo, Estados Unidos, Reino Unido, Unión Europea o Corea del sur) y la edad del usuario se encuentra entre la de un menor y la de un adulto (como está estipulado en función del país o región). Por lo general, esto significa que los adolescentes se consideran `notAdult` en países regulados.|
 |minorNoParentalConsentRequired|5|El usuario es un menor de edad, pero es de un país o región que no tiene reglamentaciones relacionadas con la edad.|
 
@@ -139,7 +140,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 |null|0|Valor predeterminado, ningún `ageGroup` se ha establecido para el usuario.|
 |minor|1|El usuario se considere un menor de edad.|
 |notAdult|2|El usuario es de un país que tiene regulaciones estatutarias (Estados Unidos, Reino Unido, Unión Europea o Corea del Sur) y la edad del usuario es mayor que el límite superior de la edad del niño (según el país) y menor que el límite inferior de la edad del adulto (según lo estipulado en base al país o región). Básicamente, los adolescentes se consideran `notAdult` en los países regulados.|
-|adulto|3|El usuario debe ser tratado como un adulto.|
+|adult|3|El usuario debe ser tratado como un adulto.|
 
 #### <a name="consentprovidedforminor-property"></a>Propiedad consentProvidedForMinor
 
@@ -155,7 +156,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |activities|Colección [userActivity](projectrome_activity.md)|Las actividades del usuario a través de dispositivos. Solo lectura. Admite valores NULL.|
-|calendario|[Calendario](calendar.md)|El calendario principal del usuario. Solo lectura.|
+|calendar|[Calendario](calendar.md)|El calendario principal del usuario. Solo lectura.|
 |calendarGroups|Colección [calendarGroup](calendargroup.md)|Los grupos de calendario del usuario. Solo lectura. Admite valores NULL.|
 |calendarView|Colección [event](event.md)|La vista Calendario del calendario. Solo lectura. Admite valores NULL.|
 |calendars|Colección [calendar](calendar.md)|Los calendarios del usuario. Solo lectura. Admite valores NULL.|

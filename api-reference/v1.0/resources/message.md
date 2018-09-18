@@ -5,8 +5,9 @@ Un mensaje en un mailFolder.
 Este recurso admite:
 
 - Adición de sus propios datos como encabezados de mensaje de Internet personalizados. Agregue encabezados personalizados solo al crear un mensaje y asignarle un nombre que empieza con "x-". Una vez que se ha enviado el mensaje, los encabezados no se pueden modificar. Para obtener los encabezados de un mensaje, aplique el parámetro de consulta `$select` en una operación [get message](../api/message_get.md).
-- Adición de sus propios datos como propiedades personalizadas en [extensiones](../../../concepts/extensibility_overview.md).
-- Uso de una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos, las eliminaciones y las actualizaciones incrementales mediante una función [delta](../api/message_delta.md).
+- Agregar sus propios datos a las propiedades personalizadas como [extensiones](../../../concepts/extensibility_overview.md).
+- Suscribirse a [las notificaciones de cambios](../../../concepts/webhooks.md).
+- Usar una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/message_delta.md).
 
 ## <a name="methods"></a>Métodos
 

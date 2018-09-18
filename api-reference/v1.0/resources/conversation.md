@@ -2,6 +2,8 @@
 
 Una conversación es una colección de [hilos](conversationthread.md) y un hilo contiene publicaciones de ese hilo. Todos los hilos y publicaciones de una conversación comparten el mismo asunto.
 
+Este recurso es compatible con la suscripción a [las notificaciones de cambios](../../../concepts/webhooks.md).
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de valor devuelto  |Descripción|
@@ -16,11 +18,11 @@ Una conversación es una colección de [hilos](conversationthread.md) y un hilo 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|Indica si alguna de las publicaciones de esta conversación tiene al menos un dato adjunto.|
-|id|String|El identificador único de las conversaciones. Solo lectura.|
-|lastDeliveredDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|preview|String|Un breve resumen del cuerpo de la última publicación de esta conversación.|
-|topic|String|El tema de la conversación. Esta propiedad se puede establecer al crear la conversación, pero no se puede actualizar.|
+|hasAttachments|Booleano|Indica si alguna de las publicaciones de esta conversación tiene al menos un dato adjunto.|
+|id|Cadena|El identificador único de las conversaciones. Solo lectura.|
+|lastDeliveredDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
+|preview|Cadena|Un breve resumen del cuerpo de la última publicación de esta conversación.|
+|topic|Cadena|El tema de la conversación. Esta propiedad se puede establecer al crear la conversación, pero no se puede actualizar.|
 |uniqueSenders|Colección String|Todos los usuarios que envían un mensaje a esta conversación.|
 
 ## <a name="relationships"></a>Relaciones

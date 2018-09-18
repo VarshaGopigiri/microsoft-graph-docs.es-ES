@@ -4,8 +4,9 @@ Representa un grupo de Azure Active Directory (Azure AD) que puede ser un grupo 
 
 Este recurso admite:
 
-- que agregue sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md);
-- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/user_delta.md).
+- Agregar sus propios datos a las propiedades personalizadas como [extensiones](../../../concepts/extensibility_overview.md).
+- Suscribirse a [las notificaciones de cambios](../../../concepts/webhooks.md).
+- Usar una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones mediante la provisión de una función [delta](../api/user_delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -85,7 +86,7 @@ Este recurso admite:
 |autoSubscribeNewMembers|Booleano|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico. Puede establecer esta propiedad en una solicitud PATCH del grupo; no la establezca en la solicitud POST inicial que crea el grupo.|
 |classification|Cadena|Describe una clasificación para el grupo (como impacto en el negocio bajo, medio o alto). Los valores válidos para esta propiedad se definen mediante la creación de un valor [setting](groupsetting.md) ClassificationList, basado en la [definición de plantilla](groupsettingtemplate.md).|
 |createdDateTime|DateTimeOffset| Marca de tiempo de cuando se creó el grupo. El valor no puede modificarse y se rellena automáticamente al crear el grupo. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |
-|description|Cadena|Una descripción opcional del grupo. |
+|descripción|Cadena|Una descripción opcional del grupo. |
 |displayName|Cadena|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
 |groupTypes|Colección string| Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad. Es compatible con $filter.|
 |id|Cadena|El identificador único del grupo. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
