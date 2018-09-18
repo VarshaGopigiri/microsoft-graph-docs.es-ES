@@ -14,7 +14,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 | Delegado (cuenta personal de Microsoft) | No admitida.                                                                              |
 | Aplicación                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **Nota:** En este momento, esta API requiere el permiso `Directory.Read.All` o superior. El uso del permiso `Gorup.Read.All` devolverá un error. Se trata de un problema conocido.
+> **Nota:** En este momento, esta API requiere el permiso `Directory.Read.All` o superior. El uso del permiso `Group.Read.All` devolverá un error. Se trata de un problema conocido.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
