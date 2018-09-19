@@ -27,14 +27,14 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|string|Nombre de la tabla.|
-|showHeaders|boolean|Indica si la fila de encabezado está visible o no. Este valor puede establecerse para que muestre o quite la fila de encabezado.|
-|showTotals|boolean|Indica si la fila de totales está visible o no. Este valor puede establecerse para que muestre o quite la fila de totales.|
-|style|string|Valor constante que representa el estilo de tabla. Los valores posibles son: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. También puede especificarse un estilo personalizado definido por el usuario presente en el libro.|
+|name|cadena|Nombre de la tabla.|
+|showHeaders|booleano|Indica si la fila de encabezado está visible o no. Este valor puede establecerse para que muestre o quite la fila de encabezado.|
+|showTotals|booleano|Indica si la fila de totales está visible o no. Este valor puede establecerse para que muestre o quite la fila de totales.|
+|style|cadena|Valor constante que representa el estilo de tabla. Los valores posibles son: de TableStyleLight1 a TableStyleLight21, de TableStyleMedium1 a TableStyleMedium28, de TableStyleStyleDark1 a TableStyleStyleDark11. También se puede especificar un estilo definido por el usuario personalizado presente en el libro.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [Table](../resources/table.md) actualizado en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookTable](../resources/table.md) actualizado en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -59,7 +59,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 200 OK

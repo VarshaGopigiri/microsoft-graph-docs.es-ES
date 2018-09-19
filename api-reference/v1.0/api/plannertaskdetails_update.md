@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/details
+PATCH /planner/tasks/{id}/details
 ```
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
@@ -21,14 +21,14 @@ PATCH /planner/tasks/<id>/details
 | Authorization  | {token} de portador. Obligatorio. |
 | If-Match  | Último valor ETag conocido para que se actualice **plannerTaskDetails**. Obligatorio.|
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|Colección de elementos de la lista de comprobación de la tarea.|
-|description|String|Descripción de la tarea|
-|previewType|string|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
+|description|Cadena|Descripción de la tarea|
+|previewType|Cadena|Establece el tipo de vista previa que se muestra en la tarea. Los valores posibles son: `automatic`, `noPreview`, `checklist`, `description` y `reference`. Cuando el valor establecido sea `automatic`, la vista previa que se muestre será elegida por la aplicación que esté visualizando la tarea.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|La colección de referencias de la tarea.|
 
 ## <a name="response"></a>Respuesta
@@ -45,7 +45,7 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_plannertaskdetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 Content-type: application/json
 Content-length: 857
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
