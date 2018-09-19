@@ -65,9 +65,10 @@ Este recurso admite:
 |birthday|DateTimeOffset|El cumpleaños del usuario. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |businessPhones|Colección string|Los números de teléfono del usuario. NOTA: Aunque se trata de una colección de cadenas, solo se puede establecer un número para esta propiedad.|
 |city|Cadena|La ciudad en la que se encuentra el usuario. Es compatible con $filter.|
-|companyName| Cadena | El nombre de la compañía a la que está asociado el usuario. Solo lectura.
+|companyName | Cadena | El nombre de la compañía a la que está asociado el usuario. Solo lectura. |
 |consentProvidedForMinor|Cadena|Establece si se ha obtenido el consentimiento para menores. Valores permitidos: `null`, `granted`, `denied` y `notRequired`. Consulte las [definiciones de propiedades de grupo de edad legal](#legal-age-group-property-definitions) para obtener más información.|
 |country|Cadena|El país o la región en la que se encuentra el usuario. Por ejemplo: "US" o "UK". Es compatible con $filter.|
+|createdDateTime | DateTimeOffset |La fecha de creación del objeto de usuario. |
 |department|Cadena|El nombre del departamento en el que trabaja el usuario. Es compatible con $filter.|
 |displayName|Cadena|El nombre del usuario que aparece en la libreta de direcciones. Suele ser la combinación del nombre del usuario, la inicial del segundo nombre y el apellido. Esta propiedad es necesaria cuando se crea un usuario y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
 |givenName|Cadena|El nombre (nombre de pila) del usuario. Es compatible con $filter.|
@@ -148,7 +149,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 |:---------------|:--------|:----------|
 |null|0|Valor predeterminado, ningún `consentProvidedForMinor` se ha establecido para el usuario.|
 |granted|1|Se ha obtenido el consentimiento para que el usuario tenga una cuenta.|
-|denegado|2|No se ha obtenido el consentimiento para que el usuario tenga una cuenta.|
+|denied|2|No se ha obtenido el consentimiento para que el usuario tenga una cuenta.|
 |notRequired|3|El usuario es de una ubicación que no requiere su consentimiento.|
  
 ## <a name="relationships"></a>Relaciones
@@ -436,6 +437,10 @@ Aquí tiene una representación JSON del recurso
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
+  "suppressions" : [
+     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
+      Property 'createdDateTime' found in markdown table but not in resource definition."
+  ],
   "section": "documentation",
   "tocPath": ""
 }-->
