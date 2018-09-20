@@ -38,4 +38,5 @@ Puede usar operaciones CRUD típicas en un [contacto](../api-reference/v1.0/reso
 ## <a name="next-steps"></a>Pasos siguientes
 
 - Seleccione y pruebe consultas de ejemplo de contactos en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0). Seleccione la opción **Mostrar más ejemplos** en la columna de la izquierda. Use el menú para activar los **Contactos personales**.
-- Vea la referencia de la [API de contactos](../api-reference/v1.0/resources/contact.md) de Outlook.
+- Obtenga información sobre cómo [obtener los contactos compartidos](outlook-get-shared-contacts-folders.md)
+- Consulte la referencia de la [API de contactos](../api-reference/v1.0/resources/contact.md) de Outlook.

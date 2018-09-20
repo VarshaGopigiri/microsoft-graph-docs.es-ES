@@ -1,4 +1,4 @@
-# <a name="get-freebusy-schedule-for-users-and-resources-preview"></a>Obtener el programa sobre la disponibilidad de los usuarios y los recursos (vista previa)
+# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Obtener la programación de la disponibilidad de los usuarios y los recursos (vista previa)
 
 En el entorno laboral o escolar, un escenario común es tratar de averiguar cuándo un usuario está disponible para una reunión, así como examinar la disponibilidad de un grupo, sala o equipo para un período de tiempo.
 
@@ -162,7 +162,7 @@ Además del estado de disponibilidad y el horario laboral de las entidades solic
 - El calendario del usuario solicitado se comparta con el usuario conectado
 - El usuario conectado sea un administrador de la misma organización que el usuario solicitado.
 
-## <a name="time-zone-representation"></a>Representación de la zona horaria
+## <a name="time-zone-representation"></a>Representación de zona horaria
 De forma predeterminada, las horas de inicio y final de los elementos del programa devueltos se presentan en UTC. Puede utilizar un encabezado `Prefer` para especificar una zona horaria adecuada para su aplicación. Por ejemplo: 
 ```
 Prefer: outlook.timezone="Pacific Standard Time"
@@ -175,6 +175,6 @@ Tenga en cuenta los siguientes límites y condiciones de error:
 - El período de tiempo para hacer la búsqueda debe ser inferior a 42 días.
 - Si **getSchedule** no puede identificar a un usuario o recurso específico, devuelve un único elemento de programa e indica el error. 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 - [Referencia de permisos](permissions_reference.md#calendars-permissions)
-- [Buscar horas posibles para una reunión en el calendario de Outlook](findmeetingtimes_example.md)
+- [Buscar horas posibles para una reunión en el Calendario de Outlook](findmeetingtimes_example.md)

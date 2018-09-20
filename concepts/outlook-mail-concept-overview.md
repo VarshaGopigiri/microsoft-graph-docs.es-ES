@@ -49,7 +49,7 @@ Si necesita agregar y, posteriormente, actualizar datos personalizados, puede [a
 
   - [Crear y enviar mensajes](outlook-create-send-messages.md)
   - Formas de [organizar mensajes](outlook-organize-messages.md)
-  - Compartir [carpetas de mensajes](outlook-share-messages-folders.md)
+  - Cómo [obtener los mensajes compartidos](outlook-share-messages-folders.md)
 
 - Obtenga más información sobre cómo [usar la API de correo](../api-reference/v1.0/resources/mail_api_overview.md) y sus [casos de uso](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) en Microsoft Graph v1.0.
 

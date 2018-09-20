@@ -2,38 +2,14 @@
 
 Recupere las propiedades y las relaciones de un objeto [message](../resources/message.md).
 
-Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia **message**.
-
 Actualmente, esta operación devuelve los cuerpos de los mensajes solo en formato HTML.
 
+Existen dos escenarios en los que una aplicación puede obtener un mensaje en la carpeta de correo de otro usuario:
 
-### <a name="get-messages-in-another-users-message-folder"></a>Obtener mensajes en la carpeta de mensajes de otro usuario
+* Si la aplicación tiene permisos de aplicación, o bien,
+* si la aplicación tiene los correspondientes [permisos](#permissions) delegados de un usuario, y otro usuario ha compartido una carpeta de correos con ese usuario, o se le ha concedido acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-share-messages-folders.md).
 
-Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener los contactos de la carpeta de contactos de otro usuario. Esta sección se centra en escenarios que implican permisos delegados.
-
-Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John. Suponga que otro usuario, Garth, ha compartido una carpeta de mensajes con John. Puede obtener un mensaje de dicha carpeta compartida especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/messages/{id}
-```
-
-Esta capacidad se aplica a todas las operaciones de mensajes GET compatibles para un usuario individual, como se muestra en la sección [solicitud HTTP](#http-request) a continuación. También se aplica si Garth ha delegado todo el buzón en John.
-
-Si Garth no ha compartido su carpeta de mensajes con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error. En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener un mensaje de las carpetas de mensajes del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/messages/{id}
-```
-
-Esta capacidad solo está disponible en las operaciones GET de:
-
-- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
-- Contactos, eventos y mensajes en carpetas compartidas
-- Los recursos anteriores en buzones delegados
-
-Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
+Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia de **message**.
 
 
 ## <a name="permissions"></a>Permisos
@@ -59,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | cadena  | {token} de portador. Obligatorio. |
-| Prefer: outlook.body-content-type | cadena | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
+| Preferido: outlook.body-content-type | cadena | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -164,7 +140,7 @@ En el ejemplo siguiente se usa un parámetro de consulta `$select` para obtener 
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>Respuesta 2
-Aquí tiene un ejemplo de la respuesta. Nota: El conjunto de encabezados de mensaje en el objeto de respuesta se trunca por razones de brevedad. En una llamada real se devolverán todas las propiedades.
+Aquí tiene un ejemplo de la respuesta. Nota: El conjunto de encabezados de mensaje en el objeto de respuesta se trunca por razones de brevedad. Se devolverán todos los encabezados de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

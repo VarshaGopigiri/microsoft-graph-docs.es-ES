@@ -45,7 +45,7 @@ La API de calendario permite que los clientes organicen sus días y mejoren la p
 Outlook y la API de calendario ofrecen varias ventajas inteligentes para programar eventos:
 
 - A través de la configuración de la aplicación de calendario de Outlook, los clientes pueden habilitar que se agreguen eventos desde los correos electrónicos de forma automática, como reservas de vuelos, hoteles o restaurante, y facturas. Una vez que se han agregado, puede interactuar con estos eventos como si fuesen cualquier otro objeto [event](../api-reference/v1.0/resources/event.md) en el buzón del usuario y crear escenarios creativos en esta funcionalidad de Outlook.
-- ** En Outlook, reservar una sala de reuniones es tan fácil como agregar un asistente al **evento**. La API de calendario representa una sala de reuniones como un objeto [emailAddress](../api-reference/v1.0/resources/emailaddress.md). Puede [obtener salas (vista previa)](../api-reference/beta/api/user_findrooms.md) y [obtener listas de salas (vista previa)](../api-reference/beta/api/user_findroomlists.md) que están disponibles en una cuenta empresarial. Para organizar una reunión en una sala específica, puede asignarla a la propiedad **location** del **event**.
+- ** En Outlook, reservar una sala de reuniones es tan fácil como agregar un asistente al **evento**. La API de calendario representa una sala de reuniones como un objeto [emailAddress](../api-reference/v1.0/resources/emailaddress.md). Puede [obtener salas (vista previa)](../api-reference/beta/api/user_findrooms.md) y [obtener listas de salas (vista previa)](../api-reference/beta/api/user_findroomlists.md) que están disponibles en una cuenta empresarial. Para organizar una reunión en una sala específica, puede asignarla a la propiedad **location** del **evento**.
 - ** Puede [buscar la información de libre/ocupado para los usuarios y recursos (vista previa)](outlook-get-free-busy-schedule.md) para un período de tiempo específico. A continuación, puede usar estos datos para aplicarlos a los distintos escenarios, incluida la planificación de recursos y programación de eventos. 
 - ** Si su escenario implica la programación de reuniones en un momento óptimo, puede considerar [utilizar findMeetingTimes para identificar posibles momentos o ubicaciones para reunirarse](findmeetingtimes_example.md). La función [findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) considera el estado de disponibilidad de los asistentes y las salas y horas preferidas y otras restricciones que indique. Si el primer intento no devuelve una hora de reunión común, compruebe la razón, ajuste los criterios y llame a **findMeetingTimes** de nuevo.
 
@@ -71,7 +71,9 @@ Evite sobrecargas de almacenamiento y administración de datos en almacenes de d
 - Seleccione y pruebe consultas de ejemplo de calendario en [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0).
 - Obtenga información sobre:
   - [Buscar horas posibles para una reunión en el Calendario de Outlook](findmeetingtimes_example.md)
+  - [Obtener la programación de la disponibilidad de los usuarios y los recursos (vista previa)](outlook-get-free-busy-schedule.md)
   - [Programar citas repetidas como eventos periódicos en Outlook](outlook-schedule-recurring-events.md)
+  - [Obtener eventos compartidos](outlook-get-shared-events-calendars.md)
 - Eche un vistazo a la referencia [de la API de calendario](../api-reference/v1.0/resources/calendar.md) de Outlook.
 
 <!-- Replace the last item with the calendar API overview when it's published.

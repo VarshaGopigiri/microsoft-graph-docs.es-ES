@@ -1,36 +1,11 @@
 # <a name="get-calendar"></a>Obtener calendario
 
-Obtiene las propiedades y relaciones de un objeto de [calendario](../resources/calendar.md). El calendario puede ser de un [usuario](../resources/user.md) o el calendario predeterminado de un [grupo](../resources/group.md) de Office 365.
+Obtiene las propiedades y relaciones de un objeto de [calendario](../resources/calendar.md). El calendario puede ser de un [usuario](../resources/user.md) o el predeterminado de un [grupo](../resources/group.md) de Office 365.
 
+Existen dos escenarios en los que una aplicación puede obtener el calendario de otro usuario:
 
-### <a name="get-another-users-calendar"></a>Obtener el calendario de otro usuario
-
-Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener el calendario de otro usuario. Esta sección se centra en escenarios que implican permisos delegados.
-
-Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John. Suponga que otro usuario, Garth, ha compartido un calendario con John. Puede obtener dicho calendario compartido especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/calendar
-```
-
-Esta capacidad se aplica a todas las operaciones de calendario GET compatibles para un usuario individual, como se muestra en la sección [solicitud HTTP](#http-request) a continuación. También se aplica si Garth ha delegado todo el buzón en John.
-
-Si Garth no ha compartido su calendario con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error. En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener un calendario del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendar
-```
-
-Esta capacidad solo está disponible en las operaciones GET de:
-
-- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
-- Contactos, eventos y mensajes en carpetas compartidas
-- Los recursos anteriores en buzones delegados
-
-Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
-
+* Si la aplicación tiene permisos de aplicación, o bien,
+* si la aplicación tiene los correspondientes [permisos](#permissions) delegados de un usuario, y otro usuario ha compartido un calendario con ese usuario, o se le ha concedido acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-get-shared-events-calendars.md).
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -42,14 +17,13 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Calendars.Read |
 
 ## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-[calendar](../resources/calendar.md) predeterminado de un usuario o grupo.
+<!-- { "blockType": "ignored" } --> El [calendario](../resources/calendar.md) predeterminado de un usuario o grupo.
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
 GET /groups/{id}/calendar
 ```
-[calendar](../resources/calendar.md) de un usuario del [calendarGroup](../resources/calendargroup.md) predeterminado.
+El [calendario](../resources/calendar.md) de un usuario del [calendarGroup (grupo de calendario)](../resources/calendargroup.md) predeterminado.
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
@@ -67,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Authorization  | cadena  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

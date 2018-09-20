@@ -1,35 +1,11 @@
-# <a name="list-contacts"></a>List contacts
+# <a name="list-contacts"></a>Listar contactos
 
-Obtiene una colección de contactos de la carpeta de contactos predeterminada del usuario que inició sesión.
+Obtiene una colección de contactos de la carpeta de contactos predeterminada del usuario que ha iniciado sesión.
 
+Hay dos escenarios donde una aplicación puede obtener los contactos en la carpeta de contactos de otro usuario:
 
-### <a name="get-contacts-in-another-users-contact-folder"></a>Obtener los contactos de la carpeta de contactos de otro usuario
-
-Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener los contactos de la carpeta de contactos de otro usuario. Esta sección se centra en escenarios que implican permisos delegados.
-
-Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John. Suponga que otro usuario, Garth, ha compartido una carpeta de contactos con John. Puede obtener los contactos de dicha carpeta compartida especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/contacts
-```
-
-Esta capacidad se aplica a todas las operaciones de contactos GET compatibles para un usuario individual, como se muestra en la sección [solicitud HTTP](#http-request) a continuación. También se aplica si Garth ha delegado todo el buzón en John.
-
-Si Garth no ha compartido su carpeta de contactos con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error. En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener los contactos de las carpetas de contactos del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contacts
-```
-
-Esta capacidad solo está disponible en las operaciones GET de:
-
-- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
-- Contactos, eventos y mensajes en carpetas compartidas
-- Los recursos anteriores en buzones delegados
-
-Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
+* Si la aplicación tiene permisos de aplicación, o bien,
+* Si la aplicación tiene [los permisos](#permissions) adecuados de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o se le concede acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Permisos
