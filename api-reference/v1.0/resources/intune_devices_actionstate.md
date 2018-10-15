@@ -6,13 +6,18 @@ Estado de la acción en el dispositivo
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|none|0|No es un estado de acción válido|
-|pending|1|La acción está pendiente|
-|canceled|2|Se ha cancelado la acción.|
-|active|3|La acción está activa.|
-|done|4|Acción completada sin errores.|
-|failed|5|Acción fallida|
+|ninguno|0|No es un estado de acción válido|
+|pendiente|1|La acción está pendiente|
+|cancelado|2|Se ha cancelado la acción.|
+|activo|3|La acción está activa.|
+|hecho|4|Acción completada sin errores.|
+|fallido|5|Acción fallida|
 |notSupported|6|No se admite la acción.|
+
+
+
+
+
 
 
 

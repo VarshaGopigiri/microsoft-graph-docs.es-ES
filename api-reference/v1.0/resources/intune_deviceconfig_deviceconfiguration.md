@@ -13,7 +13,7 @@ Configuración de dispositivos.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id.|Cadena|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
 |descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
@@ -34,9 +34,8 @@ Configuración de dispositivos.
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfiguration"
 }-->
 ``` json
@@ -50,6 +49,11 @@ Aquí tiene una representación JSON del recurso.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

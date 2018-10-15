@@ -33,72 +33,74 @@ Dispositivos administrados o inscritos previamente a través de Intune
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único del dispositivo|
-|userId|Cadena|Identificador único para el usuario asociado con el dispositivo|
+|id|Cadena|Identificador único del dispositivo.|
+|userId|Cadena|Identificador único del usuario asociado al dispositivo.|
 |deviceName|Cadena|Nombre del dispositivo|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune_devices_manageddeviceownertype.md)|Propietario del dispositivo. Puede ser 'company' o 'personal'. Los valores posibles son: `unknown`, `company` y `personal`.|
 |deviceActionResults|Colección [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|Lista de objetos deviceActionResult ComplexType.|
-|enrolledDateTime|DateTimeOffset|Tiempo de inscripción del dispositivo.|
-|lastSyncDateTime|DateTimeOffset|La fecha y la hora en que el dispositivo completó por última vez una sincronización correcta con Intune.|
+|enrolledDateTime|DateTimeOffset|Hora de inscripción del dispositivo.|
+|lastSyncDateTime|DateTimeOffset|Fecha y hora en que el dispositivo completó por última vez una sincronización correcta con Intune.|
 |operatingSystem|Cadena|Sistema operativo del dispositivo. Windows, iOS, etc.|
-|complianceState|Cadena|Estado de cumplimiento del dispositivo. Los valores posibles son: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod` y `configManager`.|
-|jailBroken|Cadena|Si el dispositivo está liberado o tiene acceso raíz.|
-|managementAgent|Cadena|Canal de administración del dispositivo. Intune, EAS, etc. Los valores posibles son: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf` y `googleCloudDevicePolicyController`.|
+|complianceState|[complianceState](../resources/intune_devices_compliancestate.md)|Estado de cumplimiento del dispositivo. Los valores posibles son: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod` y `configManager`.|
+|jailBroken|Cadena|Indica si se trata de un dispositivo liberado o con permisos elevados.|
+|managementAgent|[managementAgentType](../resources/intune_devices_managementagenttype.md)|Canal de administración del dispositivo. Intune, EAS, etc. Los valores posibles son: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf` y `googleCloudDevicePolicyController`.|
 |osVersion|Cadena|Versión del sistema operativo del dispositivo.|
-|easActivated|Booleano|Si el dispositivo tiene Exchange ActiveSync activado.|
+|easActivated|Booleano|Indica si el dispositivo tiene Exchange ActiveSync activado.|
 |easDeviceId|Cadena|Identificador de Exchange ActiveSync del dispositivo.|
-|easActivationDateTime|DateTimeOffset|Tiempo de activación de Exchange ActivationSync del dispositivo.|
-|azureADRegistered|Booleano|Si el dispositivo está registrado en Azure Active Directory.|
-|deviceEnrollmentType|Cadena|Tipo de inscripción del dispositivo. Los valores posibles son: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin` y `windowsCoManagement`.|
+|easActivationDateTime|DateTimeOffset|Hora de activación de Exchange ActivationSync del dispositivo.|
+|azureADRegistered|Booleano|Indica si el dispositivo está registrado en Azure Active Directory.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune_shared_deviceenrollmenttype.md)|Tipo de inscripción del dispositivo. Los valores posibles son: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin` y `windowsCoManagement`.|
 |activationLockBypassCode|Cadena|Código que permite que se omita el bloqueo de activación en un dispositivo.|
-|emailAddress|Cadena|Direcciones de correo electrónico para el usuario asociado con el dispositivo|
-|azureADDeviceId|Cadena|El identificador único del dispositivo de Azure Active Directory. Solo lectura.|
-|deviceRegistrationState|Cadena|El estado de registro del dispositivo. Los valores posibles son: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment` y `unknown`.|
+|emailAddress|Cadena|Direcciones de correo electrónico del usuario asociado al dispositivo.|
+|azureADDeviceId|Cadena|Identificador único del dispositivo de Azure Active Directory. Solo lectura.|
+|deviceRegistrationState|[deviceRegistrationState](../resources/intune_devices_deviceregistrationstate.md)|Estado de registro del dispositivo. Los valores posibles son: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment` y `unknown`.|
 |deviceCategoryDisplayName|Cadena|Nombre para mostrar de la categoría de dispositivo.|
-|isSupervised|Booleano|Estado supervisado del dispositivo|
-|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que el dispositivo contactó con Exchange.|
-|exchangeAccessState|Cadena|El estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `allowed`, `blocked` y `quarantined`.|
-|exchangeAccessStateReason|Cadena|Motivo del estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` y `deviceNotKnownWithManagedApp`.|
+|isSupervised|Booleano|Estado supervisado del dispositivo.|
+|exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que el dispositivo estableció contacto con Exchange.|
+|exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune_devices_devicemanagementexchangeaccessstate.md)|Estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `allowed`, `blocked` y `quarantined`.|
+|exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune_devices_devicemanagementexchangeaccessstatereason.md)|Motivo del estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` y `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|Cadena|Dirección URL que permite que se establezca una sesión remota con el dispositivo.|
-|remoteAssistanceSessionErrorDetails|Cadena|Una cadena de error que identifica los problemas al crear objetos de la sesión de asistencia remota.|
-|isEncrypted|Booleano|Estado del cifrado del dispositivo|
-|userPrincipalName|Cadena|Nombre principal de usuario del dispositivo|
-|modelo|Cadena|Modelo del dispositivo|
-|fabricante|Cadena|Fabricante del dispositivo|
-|IMEI|Cadena|IMEI|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
-|serialNumber|Cadena|Número de serie|
-|phoneNumber|Cadena|Número de teléfono del dispositivo|
-|androidSecurityPatchLevel|Cadena|Nivel de revisión de seguridad de Android|
-|userDisplayName|Cadena|Nombre para mostrar del usuario|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|Características activadas del cliente ConfigrMgr|
-|wiFiMacAddress|Cadena|MAC de Wi-Fi|
-|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune_devices_devicehealthattestationstate.md)|El estado de la atestación de estado del dispositivo.|
-|subscriberCarrier|Cadena|Operador de suscriptores|
+|remoteAssistanceSessionErrorDetails|Cadena|Cadena de error que identifica los problemas al crear objetos de la sesión de asistencia remota.|
+|isEncrypted|Booleano|Estado del cifrado del dispositivo.|
+|userPrincipalName|Cadena|Nombre principal de usuario del dispositivo.|
+|model|Cadena|Modelo del dispositivo.|
+|manufacturer|Cadena|Fabricante del dispositivo.|
+|imei|Cadena|IMEI|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|Fecha y hora en que expira el período de gracia de cumplimiento del dispositivo.|
+|serialNumber|Cadena|Número de serie.|
+|phoneNumber|Cadena|Número de teléfono del dispositivo.|
+|androidSecurityPatchLevel|Cadena|Nivel de revisión de seguridad de Android.|
+|userDisplayName|Cadena|Nombre para mostrar del usuario.|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune_devices_configurationmanagerclientenabledfeatures.md)|Características activadas del cliente ConfigrMgr.|
+|wiFiMacAddress|Cadena|MAC de Wi-Fi.|
+|deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune_devices_devicehealthattestationstate.md)|Estado de la atestación de estado del dispositivo.|
+|subscriberCarrier|Cadena|Operador del suscriptor.|
 |meid|Cadena|MEID|
-|totalStorageSpaceInBytes|Int64|Almacenamiento total en bytes|
-|freeStorageSpaceInBytes|Int64|Almacenamiento libre en bytes|
-|managedDeviceName|Cadena|Nombre generado automáticamente para identificar un dispositivo. Se puede sobrescribir por un nombre descriptivo del usuario.|
-|partnerReportedThreatState|Cadena|Indica el estado de amenazas de un dispositivo cuando la cuenta y el dispositivo usan un partner de Mobile Threat Defense. Solo lectura. Los valores posibles son: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity` y `unresponsive`.|
+|totalStorageSpaceInBytes|Int64|Almacenamiento total en bytes.|
+|freeStorageSpaceInBytes|Int64|Almacenamiento disponible en bytes.|
+|managedDeviceName|Cadena|Nombre generado automáticamente para identificar un dispositivo. Se puede sobrescribir con un nombre descriptivo del usuario.|
+|partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|Indica el estado de amenazas de un dispositivo cuando la cuenta y el dispositivo usan un partner de Mobile Threat Defense. Solo lectura. Los valores posibles son: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised` y `misconfigured`.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
 |:---|:---|:---|
-|deviceCategory|[deviceCategory](../resources/intune_devices_devicecategory.md)|Categoría de dispositivo|
+|deviceCategory|[deviceCategory](../resources/intune_shared_devicecategory.md)|Categoría de dispositivo|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDevice"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDevice",
   "id": "String (identifier)",
   "userId": "String",
   "deviceName": "String",
+  "managedDeviceOwnerType": "String",
   "deviceActionResults": [
     {
       "@odata.type": "microsoft.graph.deviceActionResult",
@@ -194,6 +196,11 @@ Aquí tiene una representación JSON del recurso.
   "partnerReportedThreatState": "String"
 }
 ```
+
+
+
+
+
 
 
 

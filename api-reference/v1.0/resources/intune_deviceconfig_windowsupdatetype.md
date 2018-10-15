@@ -15,3 +15,8 @@ De qué rama los dispositivos recibirán sus actualizaciones
 
 
 
+
+
+
+
+

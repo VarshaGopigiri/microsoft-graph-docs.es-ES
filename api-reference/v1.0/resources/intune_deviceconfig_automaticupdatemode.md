@@ -15,3 +15,8 @@ Valores posibles para el modo de actualización automática.
 
 
 
+
+
+
+
+

@@ -16,7 +16,7 @@ Una clase que contiene las propiedades que se usan para la asignación de grupo 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad.|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|La intención de instalar definida por el administrador. Los valores posibles son: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|intent|[installIntent](../resources/intune_shared_installintent.md)|El objetivo de instalación definido por el administrador. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|La asignación de grupo de destino definida por el administrador.|
 |configuración|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|La asignación de la configuración para el destino definida por el administrador.|
 
@@ -26,8 +26,8 @@ Ninguna
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
 }-->
 ``` json
@@ -43,6 +43,11 @@ Aquí tiene una representación JSON del recurso.
   }
 }
 ```
+
+
+
+
+
 
 
 

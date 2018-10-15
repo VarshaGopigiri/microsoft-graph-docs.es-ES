@@ -34,19 +34,19 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|id.|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|versión|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |applyOnlyToWindowsPhone81|Booleano|Valor que indica si esta directiva se aplica solo a Windows Phone 8.1. Esta propiedad es de solo lectura.|
 |appsBlockCopyPaste|Booleano|Indica si se va a impedir cortar y pegar.|
 |bluetoothBlocked|Booleano|Indica si se va a bloquear Bluetooth.|
 |cameraBlocked|Booleano|Indica si se va a bloquear la cámara.|
 |cellularBlockWifiTethering|Booleano|Indica si se va a bloquear el tethering Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
 |compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
 |emailBlockAddingAccounts|Booleano|Indica si se van a bloquear las cuentas de correo electrónico personalizadas.|
 |locationServicesBlocked|Booleano|Indica si se van a bloquear los servicios de ubicación.|
@@ -59,7 +59,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres que debe contener una contraseña.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de contraseña requerida. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Booleano|Indica si se va a requerir una contraseña.|
 |screenCaptureBlocked|Booleano|Indica si se van a impedir las capturas de pantalla.|
 |storageBlockRemovableStorage|Booleano|Indica si se va a impedir el almacenamiento extraíble.|
@@ -183,6 +183,11 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
+
+
+
+
 
 
 

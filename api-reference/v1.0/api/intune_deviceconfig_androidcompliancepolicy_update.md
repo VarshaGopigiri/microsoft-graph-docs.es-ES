@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No compatible.|
+|Aplicación|No admitida.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -24,7 +24,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,33 +34,33 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordRequired|Boolean|Exigir una contraseña para desbloquear el dispositivo.|
+|id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|passwordRequired|Booleano|Exigir una contraseña para desbloquear el dispositivo.|
 |passwordMinimumLength|Int32|Longitud mínima de la contraseña. Valores válidos de 4 a 16|
-|passwordRequiredType|String|Tipo de caracteres en la contraseña. Los valores posibles son: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` y `any`.|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Tipo de caracteres en la contraseña. Los valores posibles son: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` y `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|
-|passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 365|
+|passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 65535|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear.|
-|securityPreventInstallAppsFromUnknownSources|Boolean|Exigir que los dispositivos impidan la instalación de aplicaciones de orígenes desconocidos.|
-|securityDisableUsbDebugging|Boolean|Deshabilitar la depuración USB en dispositivos Android.|
-|securityRequireVerifyApps|Boolean|Exigir que la característica Verificar aplicaciones de Android esté activada.|
-|deviceThreatProtectionEnabled|Boolean|Exigir que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
-|deviceThreatProtectionRequiredSecurityLevel|String|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
-|securityBlockJailbrokenDevices|Boolean|No pueden usarse dispositivos con jailbreak o rooting.|
-|osMinimumVersion|String|Versión mínima de Android.|
-|osMaximumVersion|String|Versión máxima de Android.|
-|minAndroidSecurityPatchLevel|String|Nivel de revisión de seguridad mínimo de Android.|
-|storageRequireEncryption|Boolean|Exigir cifrado en dispositivos Android.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Exigir que el dispositivo supere la comprobación de integridad básica de SafetyNet.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Exigir que el dispositivo supere la comprobación de dispositivos certificados de SafetyNet.|
-|securityRequireGooglePlayServices|Boolean|Exigir que Google Play Services esté instalado y habilitado en el dispositivo.|
-|securityRequireUpToDateSecurityProviders|Boolean|Exigir que el dispositivo tenga los proveedores de seguridad actualizados. El dispositivo requerirá que Google Play Services esté instalado y habilitado.|
-|securityRequireCompanyPortalAppIntegrity|Boolean|Exigir que el dispositivo supere la comprobación de integridad en tiempo de ejecución de la aplicación cliente del Portal de empresa.|
+|securityPreventInstallAppsFromUnknownSources|Booleano|Exigir que los dispositivos impidan la instalación de aplicaciones de orígenes desconocidos.|
+|securityDisableUsbDebugging|Booleano|Deshabilitar la depuración USB en dispositivos Android.|
+|securityRequireVerifyApps|Booleano|Exigir que la característica Verificar aplicaciones de Android esté activada.|
+|deviceThreatProtectionEnabled|Booleano|Exigir que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
+|securityBlockJailbrokenDevices|Booleano|No pueden usarse dispositivos con jailbreak o rooting.|
+|osMinimumVersion|Cadena|Versión mínima de Android.|
+|osMaximumVersion|Cadena|Versión máxima de Android.|
+|minAndroidSecurityPatchLevel|Cadena|Nivel de revisión de seguridad mínimo de Android.|
+|storageRequireEncryption|Booleano|Exigir cifrado en dispositivos Android.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Booleano|Exigir que el dispositivo supere la comprobación de integridad básica de SafetyNet.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Booleano|Exigir que el dispositivo supere la comprobación de dispositivos certificados de SafetyNet.|
+|securityRequireGooglePlayServices|Booleano|Exigir que Google Play Services esté instalado y habilitado en el dispositivo.|
+|securityRequireUpToDateSecurityProviders|Booleano|Exigir que el dispositivo tenga los proveedores de seguridad actualizados. El dispositivo requerirá que Google Play Services esté instalado y habilitado.|
+|securityRequireCompanyPortalAppIntegrity|Booleano|Exigir que el dispositivo supere la comprobación de integridad en tiempo de ejecución de la aplicación cliente del Portal de empresa.|
 
 
 

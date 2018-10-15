@@ -12,3 +12,8 @@ Valores posibles para la pantalla de bienvenida de información de la reunión.
 
 
 
+
+
+
+
+

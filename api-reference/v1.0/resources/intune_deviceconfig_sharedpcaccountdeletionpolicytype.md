@@ -12,3 +12,8 @@ Valores posibles para cuando se eliminan cuentas en un PC compartido.
 
 
 
+
+
+
+
+

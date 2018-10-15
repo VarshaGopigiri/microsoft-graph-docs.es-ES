@@ -24,7 +24,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|ajustes|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
+|id.|Cadena|Clave de la entidad.|
+|configuración|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
 |settingName|Cadena|Nombre de la configuración.|
 |platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Plataforma de configuración. Los valores posibles son: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` y `all`.|
-|id|Cadena|Clave de la entidad.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles|
@@ -83,10 +83,10 @@ Content-Length: 440
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "platformType": "iOS",
-  "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -96,6 +96,11 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
+
+
+
 
 
 

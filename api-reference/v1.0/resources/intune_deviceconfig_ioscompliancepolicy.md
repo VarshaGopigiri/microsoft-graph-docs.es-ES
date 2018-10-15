@@ -30,13 +30,13 @@ Hereda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompli
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesario un código de acceso.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acceso anteriores que bloquear. Valores válidos de 1 a 24.|
 |passcodeMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Booleano|Indica si se va a requerir un código de acceso.|
 |osMinimumVersion|Cadena|Versión mínima de iOS.|
 |osMaximumVersion|Cadena|Versión máxima de iOS.|
 |securityBlockJailbrokenDevices|Booleano|No pueden usarse dispositivos con jailbreak o rooting.|
 |deviceThreatProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Requiere el nivel de riesgo mínimo de Mobile Threat Protection para informar de incumplimiento. Los valores posibles son `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Requerir que el nivel de riesgo mínimo de la Protección contra amenazas móviles informe de un incumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Booleano|Indica si quiere requerir o no un perfil de correo electrónico administrado.|
 
 ## <a name="relationships"></a>Relaciones
@@ -52,13 +52,12 @@ Hereda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompli
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -84,6 +83,11 @@ Aquí tiene una representación JSON del recurso.
   "managedEmailProfileRequired": true
 }
 ```
+
+
+
+
+
 
 
 

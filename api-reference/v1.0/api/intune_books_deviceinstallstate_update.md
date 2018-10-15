@@ -39,7 +39,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |deviceName|Cadena|Nombre del dispositivo.|
 |deviceId|Cadena|Id. del dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización.|
-|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
+|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|Cadena|El código de error si hay errores de instalación.|
 |osVersion|Cadena|Versión del sistema operativo.|
 |osDescription|Cadena|Descripción del sistema operativo.|
@@ -90,6 +90,11 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
+
+
 
 
 

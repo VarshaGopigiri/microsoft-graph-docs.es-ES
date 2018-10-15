@@ -16,16 +16,16 @@
 | busy (ocupado)              | 2
 | oof (fuera de la oficina)               | 3
 | workingElsewhere (trabajando en otro lugar)  | 4
-| unknown (desconocido)           | -1
+| unknown           | -1
 
 
 ### <a name="attendeetype-values"></a>valores de attendeeType
 
 | Valor
 |:-------------------------
-| obligatorio
-| opcional
-| recurso
+| required (obligatorio)
+| optional (opcional)
+| resource (recurso)
 
 
 ### <a name="externalaudiencescope-values"></a>valores de externalAudienceScope
@@ -108,7 +108,7 @@
 |:-------------------------
 | low (baja)
 | normal
-| high (alta)
+| high
 
 
 ### <a name="educationuserrole-values"></a>valores de educationUserRole
@@ -162,7 +162,7 @@
 
 | Valor
 |:-------------
-| unknown (desconocido)
+| unknown
 | authentication (autenticación)
 | authorization (autorización)
 | accountValidation (validación de la cuenta)
@@ -201,7 +201,7 @@
 
 | Valor
 |:-------------------------
-| unknown (desconocido)
+| unknown
 | locationStore (almacén de ubicación)
 | directory (directorio)
 | private (privado)
@@ -217,7 +217,7 @@
 | doNotForward (no reenviar)
 | followUp (seguimiento)
 | fyi (para su información)
-| forward (reenviar)
+| forward (desviar)
 | noResponseNecessary (respuesta no necesaria)
 | read (leído)
 | reply (responder)
@@ -290,7 +290,7 @@
 | reference (referencia)
 
 
-### <a name="status-values"></a>valores de Status
+### <a name="status-values"></a>valores de estado
 
 | Valor
 |:-----------------
@@ -348,7 +348,7 @@
 ### <a name="onenotesourceservice-values"></a>valores de onenoteSourceService
 | Valor
 |:---------------------
-| Unknown (desconocido)
+| Desconocido
 | OneDrive
 | oneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -358,7 +358,7 @@
 
 | Valor
 |:-------------------------
-| none (ninguna)
+| none (ninguno)
 | organizer (organizador)
 | tentativelyAccepted (aceptada provisionalmente)
 | accepted (aceptada)
@@ -370,7 +370,7 @@
 
 | Valor
 |:-------------------------
-| unknown (desconocido)
+| unknown
 | work (trabajo)
 | personal
 | unrestricted (sin restricciones)
@@ -384,7 +384,7 @@
 | home (casa)
 | work (trabajo)
 | blog
-| ata-id="undefined" class="unusedGlossaryTerm">blog
+| profiel (perfil)
 
 
 ### <a name="categorycolor-values"></a>valores de categoryColor
@@ -417,3 +417,194 @@
 | preset22 | 22      
 | preset23 | 23      
 | preset24 | 24      
+
+# <a name="security-api-enums"></a>Enumeraciones de la API de seguridad
+
+# <a name="alertfeedback-enum-type"></a>Tipo de enumeración alertFeedback
+
+Valores posibles comentarios en la alerta proporcionado por un analista.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Desconocido.|
+|truePositive|1|Alerta es true positivo.|
+|falsePositive|2| Alerta es falso positivo.|
+|benignPositive|3| Alerta es favorable positivo.|
+
+# <a name="filehashtype-enum-type"></a>Tipo de enumeración fileHashType
+
+Tipo de enumeración fileHashType
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Tipo desconocido|
+|sha1|1|Tipo de hash de SHA1.|
+|sha256|2| Tipo de hash SHA256.|
+|md5|3| Tipo de hash MD5.|
+|authenticodeHash256|4| Tipo de algoritmo hash AuthenticodeHash256.|
+|lsHash|5| Tipo de algoritmo hash LsHash.|
+|ctph|6| Tipo de algoritmo hash CTPH.|
+|peSha1|7| Tipo de algoritmo hash PESHA1.|
+|peSha256|8| Tipo de algoritmo hash PESHA256.|
+
+# <a name="connectiondirection-enum-type"></a>tipo de enumeración connectionDirection
+
+Enumeración para la dirección de la conexión de red (entrante y saliente).
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Conexión desconocida.|
+|inbound|1|Conexión de entrada.|
+|outbound|2| Conexión de salida.|
+
+# <a name="connectionstatus-enum-type"></a>Tipo de enumeración connectionStatus
+
+Enumeración para el estado de las conexiones.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Estado de conexión desconocido.|
+|attempted|1|Intenta establecer la conexión.|
+|succeeded|2| La conexión se ha realizado con éxito.|
+|blocked|3| Conexión bloqueada.|
+|failed|4| Conexión fallida.|
+
+# <a name="processintegritylevel-enum-type"></a>tipo de enumeración processIntegrityLevel
+
+Valores de nivel de la integridad de los posibles del proceso.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Desconocido.|
+|untrusted|10|El nivel de integridad es no confiado.|
+|low (baja)|20| El nivel de integridad es bajo.|
+|medium|30| El nivel de integridad es medio.|
+|high|40| El nivel de integridad es alto.|
+|system|50| El nivel de integridad es sistema.|
+
+# <a name="registryhive-enum-type"></a>Tipo de enumeración registryHive
+
+Enumeración para el registro secciones tal como se define por [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Sección desconocida.|
+|currentConfig|1|Sección HKEY_CURRENT_CONFIG.|
+|currentUser|2| Sección HKEY_CURRENT_USER.|
+|localMachineSam|3| Sección HKEY_LOCAL_MACHINE\SAM.|
+|localMachineSamSoftware|4| Sección HKEY_LOCAL_MACHINE\Software.|
+|localMachineSystem|5| Sección HKEY_LOCAL_MACHINE\System.|
+|usersDefault|6| Sección HKEY_USERS\\.DEFAULT.|
+
+# <a name="registryoperation-enum-type"></a>Tipo de enumeración registryOperation
+
+Operación que ha cambiado el nombre y/ valor de la clave de registro.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Tipo de valor del registro desconocido.|
+|create|1|Crear el registro.|
+|modify|2|Modificar el registro.|
+|delete|3|Eliminar del registro.|
+
+# <a name="registryvaluetype-enum-type"></a>Tipo de enumeración registryValueType
+
+Tipos de enumeración de valor del registro tal como se define por [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Tipo de valor del registro desconocido.|
+|binario|1|Tipo de valor del registro REG_BINARY.|
+|dword|2| Tipo de valor del registro REG_DWORD.|
+|dwordLittleEndian|3| Tipo de valor del registro REG_DWORD_LITTLE_ENDIAN.|
+|dwordBigEndian|4| Tipo de valor del registro REG_DWORD_BIG_ENDIAN.|
+|expandSz|5| Tipo de valor del registro REG_EXPAND_SZ.|
+|vincular|6| Tipo de valor del registro REG_LINK.|
+|multiSz|7| Tipo de valor del Registro REG_MULTI_SZ.|
+|none (ninguno)|8| Tipo de valor del registro REG_LINK.|
+|qword|9| Tipo de valor del registro REG_QWORD.|
+|qwordlittleEndian|10| Tipo de valor del registro REG_QWORD_LITTLE_ENDIAN.|
+|sz|11| Tipo de valor del registro REG_SZ.|
+
+# <a name="alertseverity-enum-type"></a>Tipo de enumeración alertSeverity
+
+Enumeración de gravedad de alertas.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|La gravedad es desconocida.|
+|informational|1|La gravedad es solo con fines informativos.|
+|low (baja)|2| La gravedad es baja.|
+|medium|3| La gravedad es media.|
+|high|4| La gravedad es alta.|
+
+# <a name="alertstatus-enum-type"></a>Tipo de enumeración alertStatus
+
+Posibles valores de un estado de ciclo de vida de alerta (fase).
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Estado desconocido.|
+|newAlert|10| La alerta es nueva.|
+|inProgress|20|La alerta está en curso.|
+|resolved|30|La alerta se ha resuelto.|
+
+# <a name="emailrole-enum-type"></a>Tipo de enumeración emailRole
+
+Valores posibles para funciones de correo electrónico.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|0|Rol desconocido|
+|sender|1|Remitente del correo electrónico.|
+|recipient|2|Destinatario del correo electrónico.|
+
+# <a name="logontype-enum-type"></a>Tipo de enumeración logonType
+
+Valores posibles para el método de inicio de sesión de usuario.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|-1|Desconocido.|
+|interactive|0|Inicio de sesión es interactivo.|
+|remoteInteractive|1| Inicio de sesión es remoto interactivo.|
+|network|2| Inicio de sesión es en la red.|
+|batch|3| Inicio de sesión es por lotes.|
+|service|4| Inicio de sesión es el servicio.|
+
+# <a name="useraccountsecuritytype-enum-type"></a>Tipo de enumeración userAccountSecurityType
+
+Valores posibles para los tipos de cuenta de usuario (pertenencia a grupos), por definición de Windows.
+
+## <a name="members"></a>Miembros
+
+|Miembro|Valor|Descripción|
+|:---|:---|:---|
+|unknown|-1|Desconocido.|
+|standard|0|Miembro de la cuenta de Grupos estándar.|
+|power|1| Miembro de la cuenta de Grupos Power|
+|administrator|2| Miembro del grupo Administradores|

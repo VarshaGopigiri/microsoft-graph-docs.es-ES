@@ -31,8 +31,8 @@ Hereda de [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)
 |owner|Cadena|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |developer|Cadena|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |notas|Cadena|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|Disponibilidad de la aplicación. Heredado de [managedApp](../resources/intune_apps_managedapp.md). Los valores posibles son: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|El estado de publicación para la aplicación. La aplicación no se puede asignar a menos que se publique la aplicación. Se hereda de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|Disponibilidad de la aplicación. Se hereda de [managedApp](../resources/intune_apps_managedapp.md). Los valores posibles son: `global`, `lineOfBusiness`.|
 |version|Cadena|Versión de la aplicación. Heredado de [managedApp](../resources/intune_apps_managedapp.md)|
 |committedContentVersion|Cadena|Versión interna del contenido confirmado. Heredado de [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
 |fileName|Cadena|Nombre del archivo de la aplicación de LOB principal. Heredado de [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md).|
@@ -53,8 +53,8 @@ Hereda de [managedMobileLobApp](../resources/intune_apps_managedmobilelobapp.md)
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedMobileLobApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAndroidLobApp"
 }-->
 ``` json
@@ -99,6 +99,11 @@ Aquí tiene una representación JSON del recurso.
   "versionCode": "String"
 }
 ```
+
+
+
+
+
 
 
 

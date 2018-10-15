@@ -7,13 +7,18 @@ Estado de registro de dispositivo.
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
 |notRegistered|0|El dispositivo no está registrado.|
-|registered|2|El dispositivo está registrado.|
-|revoked|3|El dispositivo se ha bloqueado, borrado o retirado.|
+|registrado|2|El dispositivo está registrado.|
+|revocado|3|El dispositivo se ha bloqueado, borrado o retirado.|
 |keyConflict|4|El dispositivo tiene un conflicto con la clave.|
 |approvalPending|5|El dispositivo está pendiente de aprobación.|
 |certificateReset|6|El certificado del dispositivo se ha restablecido.|
 |notRegisteredPendingEnrollment|7|El dispositivo no está registrado y está pendiente de inscripción.|
-|unknown|8|El estado de registro del dispositivo es desconocido.|
+|desconocido|8|El estado de registro del dispositivo es desconocido.|
+
+
+
+
+
 
 
 

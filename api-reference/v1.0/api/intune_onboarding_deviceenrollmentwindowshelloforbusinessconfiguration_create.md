@@ -46,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Todavía no documentado. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Todavía no documentado. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune_onboarding_windowshelloforbusinesspinusage.md)|Todavía no documentado. Los valores posibles son: `allowed`, `required` y `disallowed`.|
-|estado|[habilitación](../resources/intune_onboarding_enablement.md)|Todavía no documentado. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
+|state|[habilitación](../resources/intune_onboarding_enablement.md)|Todavía no documentado. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
 |securityDeviceRequired|Booleano|Todavía no documentado|
 |unlockWithBiometricsEnabled|Booleano|Todavía no documentado|
 |remotePassportEnabled|Booleano|Todavía no documentado|
@@ -119,6 +119,11 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
+
+
+
+
+
 
 
 

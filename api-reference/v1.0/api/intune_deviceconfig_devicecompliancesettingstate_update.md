@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md).
@@ -35,7 +35,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad|
-|ajustes|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
+|setting|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
 |settingName|Cadena|El nombre de configuración que se está notificando|
 |deviceId|Cadena|El identificador del dispositivo que se está notificando|
 |deviceName|Cadena|El nombre del dispositivo que se está notificando|
@@ -44,7 +44,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |userName|Cadena|El nombre de usuario que se está notificando|
 |userPrincipalName|Cadena|El nombre principal de usuario que se está notificando|
 |deviceModel|Cadena|El modelo de dispositivo que se está notificando|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error` y `conflict`.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 
 
@@ -98,6 +98,11 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
+
+
 
 
 

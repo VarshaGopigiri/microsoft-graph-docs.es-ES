@@ -93,17 +93,6 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>Parámetros
-|**Parámetro**|**Tipo**|**Descripción**|
-|:-----|:-----|:-----|
-|_Parámetros de dirección URL_|
-|id|string|Un identificador único para un objeto en la colección correspondiente. Necesario.|
-|_Parámetros de cuerpo_|
-|multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)| Una matriz de una o más propiedades extendidas con varios valores. |
-|id|String|Para cada propiedad de la colección **multiValueExtendedProperties**, especifique esto para identificar la propiedad. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
-|value|cadena|Para cada propiedad de la colección **multiValueExtendedProperties**, especifique el valor de la propiedad. Necesario.|
-
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |
 |:---------------|:----------|
@@ -114,7 +103,14 @@ PATCH /groups/{id}/events/{id}
 
 Proporcione un cuerpo JSON para cada objeto [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) en la propiedad de la colección **multiValueExtendedProperties** de la instancia de recurso.
 
-Al crear una propiedad extendida en una instancia de recurso _nueva_, además de la nueva colección **multiValueExtendedProperties**, proporcione una representación JSON de esa instancia de recurso (es decir, un [mensaje](../resources/message.md), [mailFolder](../resources/mailfolder.md), [evento](../resources/event.md), etc.)
+|Propiedad|Tipo|Descripción|
+|:-----|:-----|:-----|
+|multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)| Una matriz de una o más propiedades extendidas con varios valores. |
+|id|Cadena|Para cada propiedad de la colección **multiValueExtendedProperties**, especifique esto para identificar la propiedad. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
+|value|cadena|Para cada propiedad de la colección **multiValueExtendedProperties**, especifique el valor de la propiedad. Necesario.|
+
+Al crear una propiedad extendida en una instancia de recurso _nueva_, además de la nueva colección **multiValueExtendedProperties**, proporcione una representación JSON de esa instancia de recurso (es decir, un [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.).
+
 
 ## <a name="response"></a>Respuesta
 

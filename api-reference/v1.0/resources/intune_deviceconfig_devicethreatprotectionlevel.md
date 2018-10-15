@@ -6,12 +6,17 @@ Niveles de protección contra amenazas de dispositivo de la API de protección c
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|unavailable|0|Valor predeterminado. No usar.|
-|secured|1|Requisito de nivel de amenaza de dispositivo: protegido. Este es el nivel más seguro y representa que no se encontraron amenazas en el dispositivo.|
-|low|2|Requisito de nivel de protección contra amenazas de dispositivo: baja. Baja indica una gravedad de amenaza que representa un riesgo mínimo para el dispositivo o los datos que contiene.|
-|medium|3|Requisito de nivel de protección contra amenazas de dispositivo: media. Media indica una gravedad de amenaza que representa un riesgo moderado para el dispositivo o los datos que contiene.|
-|high|4|Requisito de nivel de protección contra amenazas de dispositivo: alta. Alta indica una gravedad de amenaza que representa un riesgo grave para el dispositivo o los datos que contiene.|
+|no disponible|0|Valor predeterminado. No la use.|
+|asegurado|1|Requisito de nivel de amenaza de dispositivo: protegido. Este es el nivel más seguro y representa que no se encontraron amenazas en el dispositivo.|
+|bajo|2|Requisito de nivel de protección contra amenazas de dispositivo: baja. Baja indica una gravedad de amenaza que representa un riesgo mínimo para el dispositivo o los datos que contiene.|
+|medio|3|Requisito de nivel de protección contra amenazas de dispositivo: media. Media indica una gravedad de amenaza que representa un riesgo moderado para el dispositivo o los datos que contiene.|
+|alta|4|Requisito de nivel de protección contra amenazas de dispositivo: alta. Alta indica una gravedad de amenaza que representa un riesgo grave para el dispositivo o los datos que contiene.|
 |notSet|10|Requisito de nivel de protección contra amenazas de dispositivo: no establecido. No establecido indica que no hay ningún requisito de que el dispositivo cumpla un nivel de protección contra amenazas.|
+
+
+
+
+
 
 
 

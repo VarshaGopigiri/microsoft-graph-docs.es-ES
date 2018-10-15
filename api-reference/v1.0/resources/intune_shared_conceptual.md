@@ -18,6 +18,8 @@ Los siguientes recursos de Graph se comparten entre los flujos de trabajo Intune
 - [Destino de asignación de grupo](intune_shared_groupassignmenttarget.md)
 - [Intento de instalación](intune_shared_installintent.md)
 - [Contenido MIME](intune_shared_mimecontent.md)
+- [Informe](intune_shared_report.md)
+- [Raíz de informes](intune_shared_reportroot.md)
 - [Opciones guardadas de generación de estado de la interfaz de usuario](intune_shared_saveduistategenerationoptions.md)
 - [URI](intune_shared_uri.md)
 - [Usuario](intune_shared_user.md)

@@ -2,14 +2,14 @@
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-El recurso deviceManagement representa un contenedor cuyo contenido varía según el flujo de trabajo, incluidos:
+El recurso deviceManagement representa un contenedor cuyo contenido varía según el flujo de trabajo, incluidos:  
 
 - Eventos de auditoría
 - Términos y condiciones corporativos 
 - Perfiles de inscripción corporativa
 - Opciones de configuración de dispositivo
 - Administración de dispositivos
-- Protección de extremo
+- Protección de punto de conexión
 - Perfiles de inscripción
 - Notificaciones
 - Las directivas de incorporación, configuración y detalles
@@ -23,7 +23,7 @@ El recurso deviceManagement representa un contenedor cuyo contenido varía segú
 |Método|Tipo de valor devuelto|Descripción|
 |:---|:---|:---|
 |[Obtener deviceManagement](../api/intune_shared_devicemanagement_get.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Lea las propiedades y las relaciones del objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
-|[Actualizar deviceManagement](../api/intune_shared_devicemanagement_update.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Actualiza las propiedades de un objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
+|[Actualizar deviceManagement](../api/intune_shared_devicemanagement_update.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Actualice las propiedades de un objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
 |**Incorporación**|
 |[Función verifyWindowsEnrollmentAutoDiscovery](../api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md)|Booleano|Todavía no documentado|
 |**RBAC**|
@@ -36,7 +36,7 @@ El recurso deviceManagement representa un contenedor cuyo contenido varía segú
 |**Configuración de dispositivos**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Configuración de niveles de cuenta.|
 |**Administración de dispositivos**|
-|subscriptionState|Cadena|Estado de suscripción de administración de dispositivos móviles del espacio empresarial. Los valores posibles son: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked` y `lockedOut`.|
+|subscriptionState|Cadena|Estado de suscripción de administración de dispositivos móviles de la cuenta empresarial. Los valores posibles son: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked` y `lockedOut`.|
 |**Incorporación**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contiene datos que se usan para personalizar las aplicaciones del Portal de empresa, así como el portal web del usuario final.|
 
@@ -56,31 +56,32 @@ El recurso deviceManagement representa un contenedor cuyo contenido varía segú
 |iosUpdateStatuses|Colección [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md)|Los estados de instalación de actualización del software de iOS para esta cuenta.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|El resumen del estado de la actualización de software.|
 |**Administración de dispositivos**|
-|applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md)|Certificado de notificación de inserción de Apple.|
+|applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md)|Certificado de notificación push de Apple.|
 |detectedApps|Colección [detectedApp](../resources/intune_devices_detectedapp.md)|La lista de aplicaciones detectadas asociadas a un dispositivo.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md)|Resumen de dispositivos|
 |managedDevices|Colección [managedDevice](../resources/intune_devices_manageddevice.md)|La lista de dispositivos administrados.|
 |**Inscripción**|
 |importedWindowsAutopilotDeviceIdentities|Colección [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Colección de dispositivos importados de Windows Autopilot.|
+|importedWindowsAutopilotDeviceIdentityUploads|Colección [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)|Subida de colección de dispositivos de Windows Autopilot.|
 |**Notificaciones**|
 |notificationMessageTemplates|Colección [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Las plantillas de mensajes de notificación.|
 |**Incorporación**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|La configuración de acceso condicional local de Exchange. El acceso condicional local requiere que los dispositivos estén inscritos y sean compatibles para tener acceso al correo|
-|deviceCategories|Colección [deviceCategory](../resources/intune_shared_devicecategory.md)|La lista de categorías de dispositivo con el espacio empresarial.|
+|deviceCategories|Colección [deviceCategory](../resources/intune_shared_devicecategory.md)|La lista de categorías de dispositivo con la cuenta empresarial.|
 |deviceEnrollmentConfigurations|Colección [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|La lista de configuraciones de la inscripción de dispositivos|
-|deviceManagementPartners|Colección [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md)|La lista de partners de administración de dispositivos configurados por el espacio empresarial.|
-|exchangeConnectors|Colección [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md)|La lista de conectores de Exchange configurados por el espacio empresarial.|
-|mobileThreatDefenseConnectors|Colección [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md)|La lista de conectores de Mobile Threat Defense configurados por el espacio empresarial.|
+|deviceManagementPartners|Colección [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md)|La lista de asociados de administración de dispositivos configurados por la cuenta empresarial.|
+|exchangeConnectors|Colección [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md)|La lista de conectores de Exchange configurados por la cuenta empresarial.|
+|mobileThreatDefenseConnectors|Colección [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md)|La lista de conectores de Mobile Threat Defense configurados por la cuenta empresarial.|
 |**RBAC**|
 |resourceOperations|Colección [resourceOperation](../resources/intune_rbac_resourceoperation.md)|Las operaciones de recursos.|
 |roleAssignments|Colección [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md)|Las asignaciones de roles.|
 |roleDefinitions|Colección [roleDefinition](../resources/intune_rbac_roledefinition.md)|Las definiciones de roles.|
 |**Asistencia remota**|
-|remoteAssistancePartners|Colección [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)|Los partners de asistencia remota.|
+|remoteAssistancePartners|Colección [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)|Los asociados de asistencia remota.|
 |**Gestión de gastos de telecomunicaciones**|
-|telecomExpenseManagementPartners|Colección [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|El partner de administración de gastos de telecomunicaciones.|
+|telecomExpenseManagementPartners|Colección [telecomExpenseManagementPartner](../resources/intune_tem_telecomexpensemanagementpartner.md)|El asociado de administración de gastos de telecomunicaciones.|
 |**Solución de problemas**|
-|troubleshootingEvents|Colección [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)|La lista de eventos de solución de problemas del espacio empresarial.|
+|troubleshootingEvents|Colección [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md)|La lista de eventos de solución de problemas de la cuenta empresarial.|
 |**Protección de la información de Windows**|
 |windowsInformationProtectionAppLearningSummaries|Colección [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md)|Los resúmenes de aprendizaje sobre las aplicaciones de Windows Information Protection|
 |windowsInformationProtectionNetworkLearningSummaries|Colección [windowsInformationProtectionNetworkLearningSummary](../resources/intune_wip_windowsinformationprotectionnetworklearningsummary.md)|Los resúmenes de aprendizaje sobre la red de Windows Information Protection|

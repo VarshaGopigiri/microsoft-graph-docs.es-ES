@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
-ms.openlocfilehash: 0f5afaeff29da6f3a6330975adece44731e014bc
-ms.sourcegitcommit: 4bdff5fdaea824c7c1204ec7dd641abc282d32a1
+ms.openlocfilehash: 13ddb00d90880570361c7dcbe198c7c90e044957
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264402"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -37,17 +38,22 @@ Todos los ejemplos siguientes son relativos a una **[lista][]**, por ejemplo: `h
 
 A continuación se incluye una representación JSON del recurso **listItem**.
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.listItem",
-       "keyProperty": "id" } -->
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
 
 ```json
 {
-  "contentType": { "@odata.type": "microsoft.graph.contentType" },
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
   "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
 
   /* relationships */
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string",
@@ -58,6 +64,7 @@ A continuación se incluye una representación JSON del recurso **listItem**.
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
   "webUrl": "url"
 }
 ```
@@ -69,35 +76,42 @@ El recurso **listItem** tiene las siguientes propiedades.
 | Nombre de propiedad | Tipo                | Descripción
 |:--------------|:--------------------|:-------------------------------
 | contentType   | [contentTypeInfo][] | El tipo de contenido de este elemento de lista
-| fields        | [fieldValueSet][]   | Los valores de las columnas establecidos en este elemento de lista.
 
 Las siguientes propiedades se heredan de **[baseItem][]**.
 
-| Nombre de propiedad        | Tipo             | Descripción
-|:---------------------|:-----------------|:-----------------------------------
-| id                   | string           | El identificador único del elemento. Solo lectura.
-| name                 | string           | Nombre o título del elemento.
-| createdBy            | [identitySet][]  | Identidad del creador de este elemento. Solo lectura.
-| createdDateTime      | DateTimeOffset   | La fecha y la hora de creación del elemento. Solo lectura.
-| description          | string           | Texto descriptivo del elemento.
-| lastModifiedBy       | [identitySet][]  | Identidad del usuario que modificó por última vez este elemento. Solo lectura.
-| lastModifiedDateTime | DateTimeOffset   | Fecha y hora de la última modificación del elemento. Solo lectura.
-| webUrl               | string (url)     | Dirección URL que muestra el elemento en el explorador. Solo lectura.
+| Nombre de propiedad        | Tipo              | Descripción
+|:---------------------|:------------------|:----------------------------------
+| id                   | string            | El identificador único del elemento. Solo lectura.
+| name                 | string            | Nombre o título del elemento.
+| createdBy            | [identitySet][]   | Identidad del creador de este elemento. Solo lectura.
+| createdDateTime      | DateTimeOffset    | La fecha y la hora de creación del elemento. Solo lectura.
+| descripción          | string            | Texto descriptivo del elemento.
+| eTag                 | string            | ETag para el elemento. Solo lectura.                                                          |
+| lastModifiedBy       | [identitySet][]   | Identidad del usuario que modificó por última vez este elemento. Solo lectura.
+| lastModifiedDateTime | DateTimeOffset    | Fecha y hora de la última modificación del elemento. Solo lectura.
+| parentReference      | [itemReference][] | Información primaria, si el elemento tiene un elemento primario. Lectura y escritura.
+| sharepointIds        | [sharepointIds][] | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.
+| webUrl               | string (url)      | Dirección URL que muestra el elemento en el explorador. Solo lectura.
 
 ## <a name="relationships"></a>Relaciones
 
  El recurso **listItem** tiene las siguientes relaciones con otros recursos.
 
-| Nombre de la relación | Tipo                        | Descripción
-|:------------------|:----------------------------|:-------------------------------
-| driveItem         | [driveItem][]               | Para bibliotecas de documentos, la relación **driveItem** expone el recurso listItem como un recurso **[driveItem][]**
+| Nombre de la relación | Tipo                           | Descripción
+|:------------------|:-------------------------------|:-------------------------------
+| driveItem         | [driveItem][]                  | Para bibliotecas de documentos, la relación **driveItem** expone el recurso listItem como un recurso **[driveItem][]**
+| fields            | [fieldValueSet][]              | Los valores de las columnas establecidos en este elemento de lista.
+| versions          | Colección [listItemVersion][] | La lista de las versiones anteriores del elemento.
 
 [baseItem]: baseItem.md
 [contentTypeInfo]: contentTypeInfo.md
 [driveItem]: driveItem.md
 [fieldValueSet]: fieldValueSet.md
 [identitySet]: identitySet.md
+[itemReference]: itemreference.md
 [list]: list.md
+[listItemVersion]: listItemVersion.md
+[sharepointIds]: sharepointIds.md
 
 <!-- {
   "type": "#page.annotation",

@@ -31,7 +31,7 @@ Hereda de [mobileApp](../resources/intune_apps_mobileapp.md)
 |owner|Cadena|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |developer|Cadena|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |notas|Cadena|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|El estado de publicación para la aplicación. La aplicación no se puede asignar a menos que se publique la aplicación. Se hereda de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing`, `published`.|
 |packageId|Cadena|El identificador del paquete.|
 |appStoreUrl|Cadena|La dirección URL de la tienda de aplicaciones de Android.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune_apps_androidminimumoperatingsystem.md)|El valor para el sistema operativo mínimo aplicable.|
@@ -46,8 +46,8 @@ Hereda de [mobileApp](../resources/intune_apps_mobileapp.md)
 Aquí tiene una representación JSON del recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidStoreApp"
 }-->
 ``` json
@@ -86,6 +86,11 @@ Aquí tiene una representación JSON del recurso.
   }
 }
 ```
+
+
+
+
+
 
 
 

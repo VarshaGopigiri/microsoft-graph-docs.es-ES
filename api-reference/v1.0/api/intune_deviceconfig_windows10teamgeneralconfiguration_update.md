@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|aplicación/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [windows10TeamGeneralConfiguration](../resources/intune_deviceconfig_windows10teamgeneralconfiguration.md).
@@ -37,7 +37,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Booleano|Indica si se va a bloquear Azure Operational Insights.|
@@ -47,7 +47,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |maintenanceWindowBlocked|Booleano|Indica si se va a bloquear la configuración de un período de mantenimiento para las actualizaciones del dispositivo.|
 |maintenanceWindowDurationInHours|Int32|Duración del período de mantenimiento para las actualizaciones del dispositivo. Valores válidos de 0 a 5|
 |maintenanceWindowStartTime|TimeOfDay|Hora de inicio del periodo de mantenimiento para las actualizaciones del dispositivo.|
-|miracastChannel|[miracastChannel](../resources/intune_deviceconfig_miracastchannel.md)|El canal. Los valores posibles son: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne` y `oneHundredSixtyFive`.|
+|miracastChannel|[miracastChannel](../resources/intune_deviceconfig_miracastchannel.md)|El canal. Los posibles valores son: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
 |miracastBlocked|Booleano|Indica si se van a bloquear las proyecciones inalámbricas.|
 |miracastRequirePin|Booleano|Indica si se va a requerir un PIN para las proyecciones inalámbricas.|
 |settingsBlockMyMeetingsAndFiles|Booleano|Especifica si se deshabilita la característica "Mis reuniones y archivos" en el menú Inicio, que muestra las reuniones y los archivos del usuario que ha iniciado sesión en Office 365.|
@@ -59,7 +59,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |settingsSleepTimeoutInMinutes|Int32|Especifica el número de minutos hasta que el concentrador entra en modo de suspensión.|
 |welcomeScreenBlockAutomaticWakeUp|Booleano|Indica si se va a impedir que la pantalla de inicio de sesión se reactive automáticamente cuando alguien entre en la sala.|
 |welcomeScreenBackgroundImageUrl|Cadena|Dirección URL de la imagen de fondo de la pantalla de inicio de sesión. La dirección URL debe utilizar el protocolo HTTPS y devolver una imagen PNG.|
-|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|La información de la reunión que se muestra en la pantalla de bienvenida. Los valores posibles son: `userDefined`, `showOrganizerAndTimeOnly` y `showOrganizerAndTimeAndSubject`.|
+|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|La información de reunión de la de pantalla de bienvenida se muestra. Los valores posibles son: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
 
 
 
@@ -139,6 +139,11 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
+
+
+
+
 
 
 

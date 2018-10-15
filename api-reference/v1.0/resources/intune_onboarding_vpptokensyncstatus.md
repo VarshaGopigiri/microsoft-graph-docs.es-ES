@@ -6,10 +6,15 @@ Estados de sincronización posibles asociados con el token del programa de compr
 ## <a name="members"></a>Miembros
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
-|none|0|Estado predeterminado.|
+|ninguno|0|Estado predeterminado.|
 |inProgress|1|Última sincronización en curso.|
-|completed|2|La última sincronización se ha completado correctamente.|
-|failed|3|Error en la última sincronización.|
+|completado|2|La última sincronización se ha completado correctamente.|
+|fallido|3|Error en la última sincronización.|
+
+
+
+
+
 
 
 

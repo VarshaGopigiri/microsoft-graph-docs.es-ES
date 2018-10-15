@@ -10,7 +10,12 @@ Etiquetas de clasificación de contenido de TV en Nueva Zelanda
 |allBlocked|1|No permitir ningún contenido de programas de TV|
 |general|2|La clasificación G excluye materiales que puedan ser dañinos para niños de menos de 14 años|
 |parentalGuidance|3|La clasificación PGR anima a los padres y tutores a supervisar a los espectadores más jóvenes|
-|adults|4|La clasificación AO no es apta para niños|
+|adultos|4|La clasificación AO no es apta para niños|
+
+
+
+
+
 
 
 

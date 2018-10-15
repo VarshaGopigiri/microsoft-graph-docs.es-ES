@@ -7,10 +7,15 @@ Valores posibles para firewallPacketQueueingMethod
 |Miembro|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|No hay ningún valor configurado por Intune, no invalide el valor predeterminado del dispositivo configurado por el usuario|
-|deshabilitado|1|Deshabilitar la puesta en cola de paquetes|
+|disabled|1|Deshabilitar la puesta en cola de paquetes|
 |queueInbound|2|Poner en cola los paquetes cifrados entrantes|
 |queueOutbound|3|Poner en cola los paquetes salientes descifrados para reenviarlos|
 |queueBoth|4|Poner en cola los paquetes entrantes y salientes|
+
+
+
+
+
 
 
 
