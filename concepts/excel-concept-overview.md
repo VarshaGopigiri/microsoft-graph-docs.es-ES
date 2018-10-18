@@ -33,7 +33,7 @@ Puede obtener acceso a un conjunto de objetos de Excel (como una tabla, interval
 
 * [Administrar sesiones de Excel con Microsoft Graph](excel-manage-sessions.md)
 * [Escribir en un libro de Excel con Microsoft Graph](excel-write-to-workbook.md)
-* [Usar funciones de libro de Excel con Microsoft Graph](excel-use-functions.md)
+* [Usar funciones de libro en Excel con Microsoft Graph](excel-use-functions.md)
 * [Actualizar el formato de un rango en Excel con Microsoft Graph](excel-update-range-format.md)
-* [Mostrar una imagen del gráfico en Excel con Microsoft Graph](excel-display-chart-image.md)
+* [Mostrar una imagen de gráfico de Excel con Microsoft Graph](excel-display-chart-image.md)
 * [Usar la API de REST de Excel](../api-reference/v1.0/resources/excel.md)

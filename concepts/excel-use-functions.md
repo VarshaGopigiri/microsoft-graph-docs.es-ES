@@ -2,7 +2,7 @@
 
 Puede invocar cualquier función de libro con la sintaxis siguiente: `POST /workbook/functions/{function-name}`. Especifique los argumentos de la función en el cuerpo con un objeto JSON. Las cadenas `value` y `error` resultantes de la función se devuelven en el objeto de resultado de la función. El valor `error` de `null` indica que la función se ha ejecutado correctamente.
 
-La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/es-ES/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.
+La lista completa de funciones admitidas se encuentra [aquí](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Consulte la firma de la función para obtener tipos de datos y nombres de parámetros específicos.
 
 _Notas importantes:_
 * El parámetro de entrada de intervalo se suministra mediante un objeto range en lugar de la cadena de dirección de intervalo.  
@@ -21,7 +21,7 @@ Dentro de una celda, la función `vlookup` es similar a esta:
 
 = BUSCARV(valor de búsqueda, rango que contiene el valor de búsqueda, el número de columna en el rango que contiene el valor devuelto, de forma opcional, especifique VERDADERO para obtener una coincidencia aproximada o FALSO para una coincidencia exacta)
 
-(Vea la documentación de la [Función de Excel BUSCARV](https://support.office.com/es-ES/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
+(Vea la documentación de la [Función de Excel BUSCARV](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
 
 
 ##### <a name="request"></a>Solicitud:
@@ -64,7 +64,7 @@ Dentro de una celda, la función `median` es similar a este ejemplo:
 
 =MEDIANA(A2:A6)
 
-(Vea la documentación de la [Función de Excel MEDIANA](https://support.office.com/es-ES/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
+(Vea la documentación de la [Función de Excel MEDIANA](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
 
 ##### <a name="request"></a>Solicitud
 En el ejemplo siguiente, se muestra cómo realizar una llamada a la función `median` y uno o más rangos de entrada con la API de REST de Excel.

@@ -1,40 +1,15 @@
-# <a name="list-events"></a>List events
+# <a name="list-events"></a>Listar eventos
 
 Obtiene una lista de objetos [event](../resources/event.md) en el buzón del usuario. La lista contiene patrones de serie y reuniones de instancia única.
 
+Para recibir instancias de eventos ampliados, puede [obtener la vista de calendario](calendar_list_calendarview.md) o bien [obtener las instancias de un evento](event_list_instances.md).
+
 Actualmente, esta operación devuelve los cuerpos de los eventos solo en formato HTML.
 
-Para obtener instancias de evento de expansión, puede [obtener la vista de calendario](calendar_list_calendarview.md) o bien [obtener las instancias de un evento](event_list_instances.md).
+Existen dos escenarios en los que una aplicación puede obtener eventos en el calendario de otro usuario:
 
-
-### <a name="get-events-in-another-users-calendar"></a>Obtener los eventos del calendario de otro usuario
-
-Si dispone de permisos de la aplicación o si tiene los [permisos](#permissions) delegados apropiados de un usuario, es posible obtener los eventos del calendario de otro usuario. Esta sección se centra en escenarios que implican permisos delegados.
-
-Por ejemplo, su aplicación ha adquirido permisos delegados del usuario John. Suponga que otro usuario, Garth, ha compartido un calendario con John. Puede obtener los eventos de dicho calendario compartido especificando el identificador de usuario de Garth (o su nombre principal de usuario) en la consulta de ejemplo que se muestra a continuación.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events
-```
-
-Esta capacidad se aplica a todas las operaciones de eventos GET compatibles para un usuario individual, como se muestra en la sección [solicitud HTTP](#http-request) a continuación. También se aplica si Garth ha delegado todo el buzón en John.
-
-Si Garth no ha compartido su calendario con John ni ha delegado su buzón en John, especificar el identificador de usuario del Garth o el nombre principal de usuario en esas operaciones GET devolverá un error. En tales casos, especificar un identificador de usuario o un nombre principal de usuario solo funciona para obtener los eventos de los calendarios del usuario que ha iniciado sesión, y la consulta es equivalente a usar el método abreviado de /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events
-```
-
-Esta capacidad solo está disponible en las operaciones GET de:
-
-- Uso compartido de carpetas de contactos, calendarios y carpetas de mensajes 
-- Contactos, eventos y mensajes en carpetas compartidas
-- Los recursos anteriores en buzones delegados
-
-Esta capacidad no está disponible en otras operaciones de contactos, eventos, mensajes y sus carpetas.
-
+* Si la aplicación tiene permisos de aplicación, o bien,
+* si la aplicación tiene los correspondientes [permisos](#permissions) delegados de un usuario, y otro usuario ha compartido un calendario con ese usuario, o se le ha concedido acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-get-shared-events-calendars.md).
 
 ### <a name="support-various-time-zones"></a>Compatibilidad con varias zonas horarias
 
@@ -81,9 +56,9 @@ Este método admite los [parámetros de consulta de OData](http://developer.micr
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
-| Authorization  | string | {token} de portador. Obligatorio.  |
-| Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
+| Autorización  | cadena | {token} de portador. Obligatorio.  |
+| Preferido: outlook.timezone  | cadena | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
+| Preferido: outlook.body-content-type | cadena | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

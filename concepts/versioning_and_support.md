@@ -34,7 +34,7 @@ Los siguientes son ejemplos de cambios que son compatibles con versiones anterio
  - Cambios en el orden de propiedades
  - Cambios en la longitud o el formato de cadenas opacas, como identificadores de recursos
 
->**Nota:** Con el tiempo, actualizaremos la lista de cambios compatibles con versiones anteriores. Si genera su propio proxy de cliente (como clientes WCF), nuestro consejo es que las aplicaciones cliente estén preparadas para recibir propiedades y tipos derivados que no estaban definidos previamente por el servicio de API de Microsoft Graph. La API de Microsoft Graph sigue las instrucciones descritas en la sección de [Versiones del modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) en las [directrices de la API de REST de Microsoft](https://github.com/microsoft/api-guidelines/). 
+>**Nota:** Con el tiempo, actualizaremos la lista de cambios compatibles con versiones anteriores. Si genera su propio proxy de cliente (como clientes WCF), nuestro consejo es que las aplicaciones cliente estén preparadas para recibir propiedades y tipos derivados que no estaban definidos previamente por el servicio de API de Microsoft Graph. La API de Microsoft Graph sigue las instrucciones descritas en la sección de [Control de versiones](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) en las [directrices de la API de REST de Microsoft](https://github.com/microsoft/api-guidelines/). 
 
 ## <a name="versions"></a>Versiones
 
@@ -43,8 +43,7 @@ Actualmente, existen las siguientes versiones de la API de Microsoft Graph.
 ### <a name="beta-version"></a>Versión beta
 La versión beta de la API de Microsoft Graph contiene funciones que se encuentran en su _**versión preliminar**_, según se expone en `https://graph.microsoft.com/beta`. Para consultar documentación sobre la API beta, vea [Referencia del punto de conexión de Microsoft Graph beta](../api-reference/beta/beta-overview.md). Cada cierto tiempo, se producirán cambios importantes en la versión beta. Por tanto, no establezca dependencias de producción en las API /beta.
 
-No ofrecemos ninguna garantía de que una característica de la versión beta se incluya en la versión actual. Cuando el equipo de la API de Microsoft Graph crea que una característica de la versión beta está lista para tener disponibilidad general (GA), agregaremos esa característica a la versión más actual. Si la promoción de la característica da como resultado un cambio importante en la versión actual, se incrementará el número de versión, y la nueva versión se convertirá en la versión actual.
-Nuestra comunidad de desarrolladores puede enviar una solicitud de característica en [UserVoice](https://officespdev.uservoice.com/), incluidas las solicitudes de nuevas características, así como solicitudes para promover la API beta existente a la versión actual. 
+No ofrecemos ninguna garantía de que una característica de la versión beta se incluya en la versión actual. Cuando el equipo de la API de Microsoft Graph crea que una característica de la versión beta está lista para tener disponibilidad general (GA), agregaremos esa característica a la versión más actual. Si la promoción de la característica da como resultado un cambio importante en la versión actual, se incrementará el número de versión, y la nueva versión se convertirá en la versión actual. Nuestra comunidad de desarrolladores puede enviar una solicitud de característica en [UserVoice](https://officespdev.uservoice.com/), incluidas las solicitudes de nuevas características, así como solicitudes para promover la API beta existente a la versión actual. 
 
 ### <a name="current-version"></a>Versión actual
 

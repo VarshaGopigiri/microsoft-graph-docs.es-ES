@@ -134,7 +134,7 @@ Para volver a visitar el flujo de trabajo de la interfaz de usuario, la aplicaci
 
 Después de configurar el proyecto para que pueda autenticar, las siguientes tareas corresponderán al envío de un correo a un usuario mediante la API de Microsoft Graph. De forma predeterminada, el usuario que inició sesión será el destinatario, pero tiene la posibilidad de cambiarlo a cualquier otro destinatario. El código con el que trabajaremos aquí está ubicado en la carpeta **Controllers** y en la clase **SendMailViewController.m.** Verá que aquí hay otro código representado para la interfaz de usuario y un método auxiliar para recuperar la información del perfil del usuario desde el servicio Microsoft Graph. Nos concentraremos en los métodos para crear un mensaje de correo y enviarlo.
 
-1. Abra el archivo **SendMailViewController.m** de la carpeta Controllers y agregue el siguiente código al método **viewDidLoad**, después de `self.graphClient = [MSGraphClient client]`.
+1. Abra el archivo **SendMailViewController.m** de la carpeta Controllers y agregue el siguiente código al método **viewDidLoad**, después de `self.graphClient = [MSGraphClient client]`. `self.graphClient = [MSGraphClient client]`
    ```objectivec
        [self getUserInfo:(self.emailAddress) completion:^( NSError *error) {
         if (!error) {
@@ -329,7 +329,7 @@ Este método obtiene el recurso del [usuario](https://developer.microsoft.com/en
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Pruebe la API de REST mediante el [Probador de Graph](https://graph.microsoft.io/graph-explorer).
-- Busque ejemplos de operaciones comunes tanto para REST como para SDK en el [Ejemplo de fragmentos de código de Objective C para Microsoft Graph para iOS](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample). 
+- Busque ejemplos de operaciones comunes tanto para REST como para SDK en el [Ejemplo de fragmentos de código de Objective C para Microsoft Graph para iOS](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>Recursos adicionales
 - [SDK de Microsoft Graph para iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)

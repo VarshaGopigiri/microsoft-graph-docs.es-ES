@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Si es correcto, se obtendrá una respuesta 200 OK que contiene la colección de recursos del [usuario](..\api-reference\v1.0\resources\user.md) en la carga. Cada usuario está identificado por la propiedad **id** y va acompañado de sus propiedades predeterminadas. Para una mayor brevedad, la carga que se muestra a continuación se trunca.
+Si es correcto, se obtendrá una respuesta 200 OK que contiene la colección de recursos del [usuario](../api-reference/v1.0/resources/user.md) en la carga. Cada usuario está identificado por la propiedad **id** y va acompañado de sus propiedades predeterminadas. Para una mayor brevedad, la carga que se muestra a continuación se trunca.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -77,14 +77,14 @@ Content-type: application/json
 }
 ```
 
-Microsoft Graph también permite ver las colecciones mediante la exploración de las relaciones entre recursos. Por ejemplo, a través de la propiedad de navegación **mailFolders** de un usuario, se puede realizar una consulta en la colección de recursos [mailFolder](..\api-reference\v1.0\resources\mailfolder.md) del buzón de correo del usuario:
+Microsoft Graph también permite ver las colecciones mediante la exploración de las relaciones entre recursos. Por ejemplo, a través de la propiedad de navegación **mailFolders** de un usuario, se puede realizar una consulta en la colección de recursos [mailFolder](../api-reference/v1.0/resources/mailfolder.md) del buzón de correo del usuario:
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Si es correcta, se obtendrá una respuesta 200 OK que contiene la colección de recursos de [mailFolder](..\api-reference\v1.0\resources\user.md) en la carga. Cada **mailFolder** está identificada por la propiedad **id** y va acompañada de sus propiedades predeterminadas. Para una mayor brevedad, la carga que se muestra a continuación se trunca.
+Si es correcta, se obtendrá una respuesta 200 OK que contiene la colección de recursos de [mailFolder](../api-reference/v1.0/resources/user.md) en la carga. Cada **mailFolder** está identificada por la propiedad **id** y va acompañada de sus propiedades predeterminadas. Para una mayor brevedad, la carga que se muestra a continuación se trunca.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -310,7 +310,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -326,7 +326,7 @@ Puede ver todas las funciones que están disponibles en los metadatos. Aparecen 
 
 ¿Le gustan la potencia y la facilidad de los SDK? Aunque siempre puede utilizar la API de REST para llamar a Microsoft Graph, hemos proporcionado SDK para muchas plataformas populares. Para explorar las SDK que están disponibles, consulte [Ejemplos de código y SDK](https://graph.microsoft.io/en-us/code-samples-and-sdks).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Usar la API de Microsoft Graph](use_the_api.md)
 - [Obtener tokens de autenticación](auth_overview.md)

@@ -1,14 +1,14 @@
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Usar las API de REST para acceder a los buzones en las implementaciones híbridas de Exchange (versión preliminar)
 
 Microsoft Graph siempre ha proporcionado acceso a buzones de cliente en la nube en Exchange Online como parte de Office 365.
-La actualización acumulativa 3 (CU3) de Exchange 2016, que se publicó en setiembre de 2016 para los servidores locales de Exchange, permite la integración de la API de REST con Office 365. Si la aplicación usa la versión 1.0 de la API de [correo](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/message), de [calendario](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/calendar) o de [contactos](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/contact), podrá disfrutar de una experiencia de aplicación y autenticación ininterrumpida en implementaciones _híbridas_, independientemente de que el buzón sea local o esté en la nube, siempre que dicha implementación cumpla con los [requisitos](#requirements-for-the-rest-api-to-work-in-hybrid-deployments) específicos. 
+La actualización acumulativa 3 (CU3) de Exchange 2016, que se publicó en setiembre de 2016 para los servidores locales de Exchange, permite la integración de la API de REST con Office 365. Si la aplicación usa la versión 1.0 de la API de [correo](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message), de [calendario](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) o de [contactos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact), podrá disfrutar de una experiencia de aplicación y autenticación ininterrumpida en implementaciones _híbridas_, independientemente de que el buzón sea local o esté en la nube, siempre que dicha implementación cumpla con los [requisitos](#requirements-for-the-rest-api-to-work-in-hybrid-deployments) específicos. 
 
 
 Cuando Microsoft Graph identifica que la llamada de una API de REST está intentando obtener acceso a un buzón local de una implementación híbrida, pasa la solicitud de REST a un extremo de REST local que procede a procesar la solicitud. Este descubrimiento permite acceder a la API de REST.
 
 >**Nota:** La posibilidad de usar estas API de REST en implementaciones híbridas actualmente se encuentra en versión preliminar.
 
->Solo la versión 1.0 de la API de correo, de calendario y de contactos está disponible para los buzones de implementaciones híbridas. Otros conjuntos de las API versión 1.0, como la API de [grupos](http://developer.microsoft.com/es-ES/graph/docs/api-reference/v1.0/resources/group) o las API en otras versiones, no están disponibles. Si intenta usar una API que no forma parte del conjunto admitido en una implementación híbrida, obtendrá el siguiente mensaje de error:
+>Solo la versión 1.0 de la API de Correo, Calendario y Contactos está disponible para los buzones de implementaciones híbridas. Otros conjuntos de versiones 1.0 de API, como la API de [Grupos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/group) u otras versiones de las API, no están disponibles. Si intenta usar una API que no forma parte del conjunto admitido en una implementación híbrida, obtendrá el siguiente mensaje de error:
 
 >"Las API de REST para este buzón están actualmente en versión preliminar. Encontrará más información sobre las API de REST en versión preliminar en https://dev.outlook.com".
 
@@ -34,7 +34,6 @@ Microsoft Graph ofrece apertura (compatibilidad con estándares abiertos como JS
 
 Los administradores de TI pueden encontrar más información en los siguientes recursos:
 
-- 
-  [Implementaciones híbridas de Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+- [Implementaciones híbridas de Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [Lanzamiento de la actualización acumulativa de septiembre de 2016](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [Requisitos de la arquitectura local de la API de REST](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)
