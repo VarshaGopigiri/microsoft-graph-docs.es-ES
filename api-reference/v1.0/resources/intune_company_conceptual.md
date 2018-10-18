@@ -8,6 +8,6 @@ Puede crear e implementar varias directivas que contienen los diferentes términ
 
 Los siguientes recursos de Graph están disponibles para administrar los términos y condiciones de la empresa en Intune:
 
+- [Términos y condiciones](intune_companyterms_termsandconditions.md)
 - [Estado de aceptación de los términos y condiciones](intune_companyterms_termsandconditionsacceptancestatus.md)
 - [Asignación de términos y condiciones](intune_companyterms_termsandconditionsassignment.md)
-- [Términos y condiciones](intune_companyterms_termsandconditions.md)
