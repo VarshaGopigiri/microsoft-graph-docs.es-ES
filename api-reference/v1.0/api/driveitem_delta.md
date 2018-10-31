@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sincronizar el contenido de una unidad
-ms.openlocfilehash: 64ca2eb0593c7eb6da518dadf3722b65c8472966
-ms.sourcegitcommit: 7d7c4476483b95e960d944053974794a4073a4c6
+ms.openlocfilehash: f87bfcd686ab98297c8b33aefc55705162438a35
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23798190"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265018"
 ---
 # <a name="track-changes-for-a-drive"></a>Control de cambios de una unidad
 
@@ -44,15 +44,15 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
-## <a name="function-parameters"></a>Parámetros de función
+## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+
+Este método admite los parámetros de consulta `$select`, `$expand` y `$top` [de OData ](../../../concepts/query_parameters.md)para personalizar la respuesta.
+
+## <a name="parameters"></a>Parámetros
 
 | Nombre   | Valor  | Descripción                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | cadena | Opcional. Si no se especifica, enumera el estado actual de la jerarquía. Si `latest`, devuelve vacío respuesta con un símbolo (token) delta más reciente. Si hay un token delta anterior, devuelve el nuevo estado desde ese token.
-
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-
-Este método admite los [parámetros de consulta OData](../../../concepts/query_parameters.md) `$select`, `$expand` y `$top` para personalizar la respuesta.
 
 ## <a name="response"></a>Respuesta
 

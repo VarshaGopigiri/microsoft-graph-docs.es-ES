@@ -31,7 +31,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 ## <a name="response"></a>Respuesta
 
-|||UNTRANSLATED_CONTENT_START|||If successful, this method returns `200 OK` response code and [WorkbookChartPoint](../resources/chartpoint.md) object in the response body.|||UNTRANSLATED_CONTENT_END|||
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookChartPoint](../resources/chartpoint.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 Aquí tiene un ejemplo de cómo llamar a esta API.
