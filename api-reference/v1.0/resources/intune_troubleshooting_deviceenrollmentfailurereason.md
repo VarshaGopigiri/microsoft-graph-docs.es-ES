@@ -1,25 +1,23 @@
-# <a name="deviceenrollmentfailurereason-enum-type"></a>Tipo de enumeración deviceEnrollmentFailureReason
+# <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enumeración deviceEnrollmentFailureReason
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Categorías de fallos de nivel superior para la inscripción.
-
+Categorías de errores de nivel superior para la inscripción.
 ## <a name="members"></a>Miembros
-
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
-|unknown|0|Valor predeterminado, se desconoce la razón de este fallo.|
-|authentication|1|Error de autenticación|
-|authorization|2|La llamada se ha autenticado, pero no se ha autorizado para la inscripción.|
-|accountValidation|3|Error al validar la cuenta para la inscripción. (Cuenta bloqueada, inscripción no habilitada)|
-|userValidation|4|No se pudo validar el usuario. (El usuario no existe, falta la licencia)|
-|deviceNotSupported|5|El dispositivo no es compatible con la administración de dispositivos móviles.|
-|inMaintenance|6|La cuenta está en mantenimiento.|
-|badRequest|7|El cliente envió una solicitud que el servicio no entiende o que es incompatible con él.|
-|featureNotSupported|8|La(s) característica(s) utilizada(s) por esta inscripción no son compatibles con esta cuenta.|
-|enrollmentRestrictionsEnforced|9|Esta inscripción fue bloqueada por restricciones de inscripción configuradas por el administrador.|
-|clientDisconnected|10|El cliente agotó el tiempo de espera o el usuario final anuló la inscripción.|
-|userAbandonment|11|El usuario final abandonó la inscripción. (El usuario final inició la incorporación pero no se pudo completar a tiempo)|
+|desconocido|0|Valor predeterminado, el motivo del error es desconocido.|
+|autenticación|1|Error de autenticación|
+|autorización|2|La llamada se ha autenticado pero no autorizado para inscribirse.|
+|accountValidation|3|Error al validar la cuenta para la inscripción. (Cuenta bloqueada, no se ha habilitado la inscripción)|
+|userValidation|4|No se pudo validar el usuario. (Usuario no existe, licencia que faltan)|
+|deviceNotSupported|5|Dispositivo no es compatible para la administración de dispositivos móviles.|
+|inMaintenance|6|Cuenta está en mantenimiento.|
+|badRequest|7|Cliente envió una solicitud que no se entiende/admitidos por el servicio.|
+|featureNotSupported|8|Utilizado por este inscripción las características no se admiten para esta cuenta.|
+|enrollmentRestrictionsEnforced|9|Restricciones de inscripción configuradas por el administrador bloquean esta inscripción.|
+|clientDisconnected|10|Cliente agotó el tiempo de espera o inscripción se anuló por para el usuario final.|
+|userAbandonment|11|Se ha cancelado la inscripción por para el usuario final. (Para el usuario final inicia la incorporación de redes pero no se pudo completar en forma oportuna)|
 
 
 <!-- {
@@ -29,5 +27,3 @@ Categorías de fallos de nivel superior para la inscripción.
   ],
 }
 -->
-
-

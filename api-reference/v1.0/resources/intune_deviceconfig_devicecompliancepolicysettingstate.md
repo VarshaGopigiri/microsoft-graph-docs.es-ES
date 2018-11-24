@@ -6,27 +6,28 @@ Estados de configuración de directivas de cumplimiento del dispositivo para un 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|setting|Cadena|La configuración que se está notificando|
+|ajustes|Cadena|La configuración que se está notificando|
 |settingName|Cadena|Nombre descriptivo de la configuración de usuario o localizada que se está notificando|
 |instanceDisplayName|Cadena|Nombre de la instancia de configuración que se está notificando.|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|estado|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |errorCode|Int64|Código de error de la configuración|
 |errorDescription|Cadena|Descripción del error|
 |userId|Cadena|UserId|
 |userName|Cadena|UserName|
 |userEmail|Cadena|UserEmail|
-|userPrincipalName|Cadena|UserPrincipalName.|
-|sources|Colección [settingSource](../resources/intune_deviceconfig_settingsource.md)|Directivas colaboradoras|
+|userPrincipalName|String|UserPrincipalName.|
+|orígenes|Colección [settingSource](../resources/intune_deviceconfig_settingsource.md)|Directivas colaboradoras|
 |currentValue|Cadena|Valor actual de la configuración en el dispositivo|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingState",
@@ -50,11 +51,6 @@ Aquí tiene una representación JSON del recurso.
   "currentValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -17,22 +17,22 @@ Los recursos remoteAssistPartner representan los metadatos y el estado de un ser
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Identificador único del partner.|
-|displayName|Cadena|Nombre para mostrar del partner.|
-|onboardingUrl|Cadena|Dirección URL del portal de integración del partner, donde un administrador puede configurar el servicio de Asistencia remota.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Por determinar. Los valores posibles son: `notOnboarded`, `onboarding` y `onboarded`.|
+|id|cadena|Identificador único del partner.|
+|displayName|cadena|Nombre para mostrar del partner.|
+|onboardingUrl|cadena|Dirección URL del portal de integración del partner, donde un administrador puede configurar el servicio de Asistencia remota.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD. Los valores posibles son: `notOnboarded`, `onboarding` y `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.remoteAssistancePartner"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteAssistancePartner",
@@ -43,11 +43,6 @@ Aquí tiene una representación JSON del recurso.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

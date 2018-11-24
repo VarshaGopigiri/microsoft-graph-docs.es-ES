@@ -1,6 +1,6 @@
-# <a name="get-user-activities"></a>Obtener actividades del usuario
+# <a name="get-user-activities"></a>Obtener las actividades del usuario
 
-Obtenga las actividades para un usuario determinado. A diferencia de la función OData **recent**, se devolverán las actividades sin historiales. El permiso UserActivity.ReadWrite.CreatedByApp aplicará filtrado adicional a la respuesta, para que se devuelvan únicamente las actividades creadas por la aplicación. Este filtrado del lado del servidor podría producir páginas vacías si el usuario está especialmente activo y otras aplicaciones han creado actividades más recientes. Para obtener las actividades de la aplicación, utilice la propiedad **nextLink** para paginar.
+Obtener las actividades de un usuario determinado. A diferencia de la **reciente** OData (función), se devolverán las actividades sin historiales. El permiso UserActivity.ReadWrite.CreatedByApp se aplicará filtrado adicional a la respuesta, para que se devuelvan únicamente las actividades creadas por la aplicación. Este filtrado del lado del servidor, se podría producir páginas vacías si el usuario está especialmente activo y otras aplicaciones han creado actividades más recientes. Para obtener las actividades de la aplicación, utilice la propiedad **nextLink** a paginar.
 
 ## <a name="permissions"></a>Permisos
 
@@ -22,13 +22,13 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta. Se admiten los siguientes parámetros de consulta:
+Este método es compatible con algunos de [Los parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ayudar a personalizar la respuesta. Se admiten los siguientes parámetros de consulta:
 
-- $expand para la propiedad de navegación **historyItems**.
+- Expanda $ para la propiedad de navegación **historyItems** .
 - $top para limitar el número máximo de elementos en las páginas.
-- $filter en la propiedad **lastModifiedDateTime** para activities o **historyItems**, si se expande.
+- $filter en la propiedad **lastModifiedDateTime** para actividades o **historyItems**, si expandida.
 
-Los siguientes son algunos ejemplos de consultas compatibles con codificación de dirección URL:
+Los siguientes son algunos ejemplos de consultas compatibles con codificación URL:
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -42,7 +42,7 @@ Los siguientes son algunos ejemplos de consultas compatibles con codificación d
 
 |Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
-|Authorization | cadena | {token} de portador. Obligatorio.|
+|Authorization | string | {token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -50,7 +50,7 @@ Ningún cuerpo de la solicitud.
 
 ## <a name="response"></a>Respuesta
 
-Si tiene éxito, este método devuelve el código de respuesta `200 OK` con las actividades del usuario para la aplicación.
+Si tiene éxito, este método devuelve el `200 OK` código de respuesta con las actividades del usuario para la aplicación.
 
 ## <a name="example"></a>Ejemplo
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

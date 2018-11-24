@@ -24,8 +24,8 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [roleAssignment](../resources/intune_rbac_roleassignment.md).
@@ -34,9 +34,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
 |displayName|String|El nombre descriptivo o para mostrar de la asignación de roles.|
-|descripción|String|Descripción de la asignación de roles.|
+|description|String|Descripción de la asignación de roles.|
 |resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory.|
 
 
@@ -50,9 +50,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
 Content-type: application/json
-Content-length: 140
+Content-length: 193
 
 {
+  "@odata.type": "#microsoft.graph.roleAssignment",
   "displayName": "Display Name value",
   "description": "Description value",
   "resourceScopes": [
@@ -78,11 +79,6 @@ Content-Length: 242
   ]
 }
 ```
-
-
-
-
-
 
 
 

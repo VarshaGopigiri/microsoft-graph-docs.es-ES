@@ -25,7 +25,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [resourceOperation](../resources/intune_rbac_resourceoperation.md).
@@ -50,9 +50,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations/{resourceOperationId}
 Content-type: application/json
-Content-length: 122
+Content-length: 178
 
 {
+  "@odata.type": "#microsoft.graph.resourceOperation",
   "resourceName": "Resource Name value",
   "actionName": "Action Name value",
   "description": "Description value"
@@ -74,11 +75,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
-
-
-
-
 
 
 

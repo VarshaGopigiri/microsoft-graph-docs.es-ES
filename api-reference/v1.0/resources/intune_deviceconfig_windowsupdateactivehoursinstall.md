@@ -16,10 +16,11 @@ Hereda de [windowsUpdateInstallScheduleType](../resources/intune_deviceconfig_wi
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdateActiveHoursInstall"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdateActiveHoursInstall",
@@ -27,11 +28,6 @@ Aquí tiene una representación JSON del recurso.
   "activeHoursEnd": "String (time of day)"
 }
 ```
-
-
-
-
-
 
 
 

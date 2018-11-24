@@ -7,17 +7,18 @@ Definición de la configuración de OMA.
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|cadena|Nombre para mostrar.|
-|description|String|Descripción.|
+|description|cadena|Descripción.|
 |omaUri|cadena|OMA.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSetting"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSetting",
@@ -26,11 +27,6 @@ Aquí tiene una representación JSON del recurso.
   "omaUri": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -11,8 +11,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-Un [contact](../resources/contact.md) desde la [contactFolder](../resources/contactfolder.md) predeterminado de un usuario.
+<!-- { "blockType": "ignored" } -->Un [contacto](../resources/contact.md) desde predeterminado de un usuario [contactFolder](../resources/contactfolder.md).
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -47,7 +46,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |children|String|Los nombres de los hijos del contacto.|
 |companyName|String|El nombre de la empresa del contacto.|
 |department|String|El departamento del contacto.|
-|displayName|String|El nombre para mostrar del contacto.|
+|displayName|String|El nombre para mostrar del contacto. Tenga en cuenta que las actualizaciones posteriores a otras propiedades pueden causar un valor generado automáticamente sobrescribir el valor de displayName que haya especificado. Para conservar un valor existente, siempre incluirla como displayName en una operación de actualización.|
 |emailAddresses|Colección [EmailAddress](../resources/emailaddress.md)|Las direcciones de correo electrónico del contacto.|
 |fileAs|String|El nombre con el que se ha archivado el contacto.|
 |generation|String|La generación del contacto.|
@@ -144,7 +143,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

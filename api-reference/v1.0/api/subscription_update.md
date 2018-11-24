@@ -1,8 +1,8 @@
-# <a name="update-subscription"></a>Actualizar suscripción
+# <a name="update-subscription"></a>Update subscription
 
-Renovar una suscripción ampliando su tiempo de expiración.
+Renueva una suscripción ampliando su tiempo de expiración.
 
-Las suscripciones expiran después de un período de tiempo que varía en función del tipo de recurso. Con el fin de evitar la pérdida de notificaciones, una aplicación debe renovar sus suscripciones antes de su fecha de expiración. Vea [suscripción](../resources/subscription.md) para conocer la longitud máxima de una suscripción para cada tipo de recurso.
+Las suscripciones caducan después de un período de tiempo que varía en función del tipo de recurso. Con el fin de evitar la pérdida de notificaciones, una aplicación debe renovar sus suscripciones antes de su fecha de expiración. Vea la [suscripción](../resources/subscription.md) para la longitud máxima de una suscripción para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permisos
 
@@ -14,10 +14,11 @@ En la tabla siguiente se muestra el permiso propuesto que se requiere para cada 
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Grupos                      | Group.Read.All      |
-| Usuarios                       | User.Read.All       |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
-| Unidades de disco (unidades de disco y contenido compartido de SharePoint) | Files.ReadWrite.All |
+| Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
+|Alerta de seguridad| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -31,7 +32,7 @@ PATCH /subscriptions/{id}
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="response"></a>Respuesta
 

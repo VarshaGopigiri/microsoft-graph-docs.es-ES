@@ -16,8 +16,8 @@ El recurso de la asignación de roles. Las asignaciones de roles unen la definic
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
-|displayName|String|El nombre descriptivo o para mostrar de la asignación de roles.|
-|descripción|String|Descripción de la asignación de roles.|
+|displayName|Cadena|El nombre descriptivo o para mostrar de la asignación de roles.|
+|descripción|Cadena|Descripción de la asignación de roles.|
 |resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory.|
 
 ## <a name="relationships"></a>Relaciones
@@ -27,12 +27,12 @@ El recurso de la asignación de roles. Las asignaciones de roles unen la definic
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleAssignment",
@@ -44,11 +44,6 @@ Aquí tiene una representación JSON del recurso.
   ]
 }
 ```
-
-
-
-
-
 
 
 

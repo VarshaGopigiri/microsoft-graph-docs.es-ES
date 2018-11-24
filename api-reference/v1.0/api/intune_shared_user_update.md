@@ -9,10 +9,10 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
 |Delegado (cuenta profesional o educativa)| _varía según el contexto_|
-| &nbsp; &nbsp; Dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Incorporación | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Solución de problemas | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Administración de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Incorporación | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Solución de problemas | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -38,8 +38,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único del usuario.|
-|**Incorporación**|
+|id|String|Identificador único del usuario.|
+|**Incorporación de redes**|
 |deviceEnrollmentLimit|Int32|El límite del número máximo de dispositivos que el usuario puede inscribir. Los valores permitidos son 5 o 1000.|
 
 ## <a name="response"></a>Respuesta
