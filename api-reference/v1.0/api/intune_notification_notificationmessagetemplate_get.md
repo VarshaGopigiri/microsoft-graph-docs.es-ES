@@ -1,18 +1,18 @@
-# <a name="get-notificationmessagetemplate"></a><span data-ttu-id="520ee-101">Obtener notificationMessageTemplate</span><span class="sxs-lookup"><span data-stu-id="520ee-101">Get notificationMessageTemplate</span></span>
+# <a name="get-notificationmessagetemplate"></a><span data-ttu-id="f4074-101">Obtener notificationMessageTemplate</span><span class="sxs-lookup"><span data-stu-id="f4074-101">Get notificationMessageTemplate</span></span>
 
-> <span data-ttu-id="520ee-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="520ee-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f4074-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="f4074-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="520ee-103">Lea las propiedades y las relaciones del objeto [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="520ee-103">Read properties and relationships of the [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="520ee-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="520ee-104">Prerequisites</span></span>
-<span data-ttu-id="520ee-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="520ee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="f4074-103">Lea las propiedades y las relaciones del objeto [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="f4074-103">Read properties and relationships of the [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f4074-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="f4074-104">Prerequisites</span></span>
+<span data-ttu-id="f4074-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="f4074-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="520ee-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="520ee-107">Permission type</span></span>|<span data-ttu-id="520ee-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="520ee-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f4074-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="f4074-107">Permission type</span></span>|<span data-ttu-id="f4074-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="f4074-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="520ee-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="520ee-109">Delegated (work or school account)</span></span>|<span data-ttu-id="520ee-110">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="520ee-110">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="520ee-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="520ee-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="520ee-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="520ee-112">Not supported.</span></span>|
-|<span data-ttu-id="520ee-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="520ee-113">Application</span></span>|<span data-ttu-id="520ee-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="520ee-114">Not supported.</span></span>|
+|<span data-ttu-id="f4074-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="f4074-109">Delegated (work or school account)</span></span>|<span data-ttu-id="f4074-110">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="f4074-110">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="f4074-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f4074-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f4074-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="f4074-112">Not supported.</span></span>|
+|<span data-ttu-id="f4074-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="f4074-113">Application</span></span>|<span data-ttu-id="f4074-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="f4074-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="520ee-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="520ee-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f4074-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="f4074-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,29 +21,29 @@
 GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="520ee-116">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="520ee-116">Optional query parameters</span></span>
-<span data-ttu-id="520ee-117">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="520ee-117">This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="520ee-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="520ee-118">Request headers</span></span>
-|<span data-ttu-id="520ee-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="520ee-119">Header</span></span>|<span data-ttu-id="520ee-120">Valor</span><span class="sxs-lookup"><span data-stu-id="520ee-120">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="f4074-116">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="f4074-116">Optional query parameters</span></span>
+<span data-ttu-id="f4074-117">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f4074-117">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f4074-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="f4074-118">Request headers</span></span>
+|<span data-ttu-id="f4074-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="f4074-119">Header</span></span>|<span data-ttu-id="f4074-120">Valor</span><span class="sxs-lookup"><span data-stu-id="f4074-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="520ee-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="520ee-121">Authorization</span></span>|<span data-ttu-id="520ee-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="520ee-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="520ee-123">Accept</span><span class="sxs-lookup"><span data-stu-id="520ee-123">Accept</span></span>|<span data-ttu-id="520ee-124">application/json</span><span class="sxs-lookup"><span data-stu-id="520ee-124">application/json</span></span>|
+|<span data-ttu-id="f4074-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="f4074-121">Authorization</span></span>|<span data-ttu-id="f4074-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="f4074-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f4074-123">Aceptar</span><span class="sxs-lookup"><span data-stu-id="f4074-123">Accept</span></span>|<span data-ttu-id="f4074-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f4074-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="520ee-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="520ee-125">Request body</span></span>
-<span data-ttu-id="520ee-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="520ee-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f4074-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="f4074-125">Request body</span></span>
+<span data-ttu-id="f4074-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="f4074-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="520ee-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="520ee-127">Response</span></span>
-<span data-ttu-id="520ee-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="520ee-128">If successful, this method returns a `200 OK` response code and [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f4074-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f4074-127">Response</span></span>
+<span data-ttu-id="f4074-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f4074-128">If successful, this method returns a `200 OK` response code and [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="520ee-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="520ee-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="520ee-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="520ee-130">Request</span></span>
-<span data-ttu-id="520ee-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="520ee-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f4074-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="f4074-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f4074-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="f4074-130">Request</span></span>
+<span data-ttu-id="f4074-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="f4074-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}
 ```
 
-### <a name="response"></a><span data-ttu-id="520ee-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="520ee-132">Response</span></span>
-<span data-ttu-id="520ee-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="520ee-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f4074-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f4074-132">Response</span></span>
+<span data-ttu-id="f4074-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="f4074-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -60,11 +60,6 @@ Content-Length: 341
   }
 }
 ```
-
-
-
-
-
 
 
 
