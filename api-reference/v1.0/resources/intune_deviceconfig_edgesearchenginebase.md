@@ -11,20 +11,16 @@ Permite a los administradores de TI configurar un motor de búsqueda predetermin
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineBase"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
-
-
-
-
-
 
 
 

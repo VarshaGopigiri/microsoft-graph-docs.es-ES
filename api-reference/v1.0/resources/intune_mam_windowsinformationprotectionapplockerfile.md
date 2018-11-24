@@ -15,22 +15,22 @@ Archivo de bloqueo de aplicaciones de Windows Information Protection
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|String|El nombre descriptivo|
-|fileHash|String|Hash del archivo SHA256|
+|displayName|cadena|El nombre descriptivo|
+|fileHash|cadena|Hash del archivo SHA256|
 |file|Binario|Archivo como una matriz de bytes|
-|id|Cadena|Clave de la entidad.|
-|version|Cadena|Versión de la entidad.|
+|id|cadena|Clave de la entidad.|
+|versión|cadena|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLockerFile"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",
@@ -41,11 +41,6 @@ Aquí tiene una representación JSON del recurso.
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 

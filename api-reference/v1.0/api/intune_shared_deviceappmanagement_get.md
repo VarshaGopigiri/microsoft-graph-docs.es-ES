@@ -6,7 +6,7 @@ Lea las propiedades y las relaciones del objeto [deviceAppManagement](../resourc
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).  Tenga en cuenta que el permiso adecuado varía según el flujo de trabajo.
+Uno de los siguientes permisos se requiere para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).  Tenga en cuenta que el permiso adecuado varía según el flujo de trabajo.
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
@@ -24,12 +24,12 @@ GET /deviceAppManagement
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -38,14 +38,14 @@ No proporcione un cuerpo de solicitud para este método.
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) en el cuerpo de la respuesta.
 
-## <a name="example-request"></a>Solicitud de ejemplo
+## <a name="example-request"></a>Ejemplo de solicitud
 
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ## <a name="example-response"></a>Respuesta de ejemplo
-Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.
+El objeto de respuesta que se muestra aquí es posible que esté truncado por razones de brevedad. Se devolverán todas las propiedades de una llamada real.
 
 ``` http
 HTTP/1.1 200 OK

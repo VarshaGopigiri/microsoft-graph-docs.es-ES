@@ -6,7 +6,7 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Estado del dispositivo notificado por el Servicio de administración de directorios (DDS). Los valores posibles son: `unknown`, `pending`, `partial`, `complete`, `error`.|
+|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Estado del dispositivo detectado por el servicio de directorio de dispositivo (DDS). Los valores posibles son: `unknown`, `pending`, `partial`, `complete` y `error`.|
 |deviceRegistrationId|Cadena|Identificador del registro del dispositivo para el dispositivo agregado correctamente notificado por el servicio de directorio de dispositivo (DDS).|
 |deviceErrorCode|Int32|Código de error de dispositivo detectado por el servicio de directorio de dispositivo (DDS).|
 |deviceErrorName|Cadena|Nombre de error de dispositivo detectado por el servicio de directorio de dispositivo (DDS).|
@@ -15,10 +15,11 @@ Todavía no documentado
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -28,11 +29,6 @@ Aquí tiene una representación JSON del recurso.
   "deviceErrorName": "String"
 }
 ```
-
-
-
-
-
 
 
 

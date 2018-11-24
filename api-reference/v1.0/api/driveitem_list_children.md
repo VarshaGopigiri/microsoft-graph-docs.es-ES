@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Mostrar el contenido de una carpeta
-ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 2bf094f424ed0a1fda1c790c435619bf65f25e36
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265221"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26596689"
 ---
 # <a name="list-children-of-a-driveitem"></a>Mostrar los elementos secundarios de un objeto driveItem
 
@@ -47,7 +47,7 @@ Este método admite los [parámetros de consulta OData](../../../concepts/query_
 
 | Nombre     | Valor | Descripción                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | ETag  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
+| _if-none-match_ | ETag  | Si se incluye el encabezado de la solicitud y la ETag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
 
 ## <a name="examples"></a>Ejemplos
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 **Nota:** Si una colección supera el tamaño de página predeterminado (200 elementos), se devuelve la propiedad **@odata.nextLink** en la respuesta para indicar que hay más elementos disponibles y proporcionar la dirección URL de solicitud de la siguiente página de elementos.
 
-Puede controlar el tamaño de la página mediante los [parámetros de cadena de consulta opcionales](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
+Puede controlar el tamaño de la página mediante los [parámetros de cadena de consulta opcionales](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
 ### <a name="error-responses"></a>Respuestas de error
 

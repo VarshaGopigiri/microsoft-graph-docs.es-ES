@@ -24,8 +24,8 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
@@ -60,11 +60,6 @@ Content-Length: 61
   ]
 }
 ```
-
-
-
-
-
 
 
 

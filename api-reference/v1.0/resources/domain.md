@@ -27,6 +27,7 @@ Para asociar un dominio a un espacio empresarial:
 |[Enumerar verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |Colección [domainDnsRecord](domaindnsrecord.md)|  Recuperar una lista de registros DNS del dominio para la comprobación del dominio.|
 |[Actualizar dominio](../api/domain_update.md) | [dominio](domain.md) |Actualizar un dominio.|
 |[Eliminar dominio](../api/domain_delete.md) | Ninguno |Eliminar un dominio.|
+|[Dominio ForceDelete](../api/domain_forcedelete.md)|Ninguno|Elimina un dominio mediante una operación asincrónica.|
 |[Comprobar dominio](../api/domain_verify.md)|[dominio](domain.md)|Valide la propiedad del dominio.|
 
 ## <a name="properties"></a>Propiedades

@@ -34,11 +34,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|Cadena|Nombre para mostrar de la plantilla de mensajes de notificación.|
-|defaultLocale|Cadena|La configuración regional predeterminada de reserva para los casos en que la configuración regional solicitada no está disponible.|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|Las opciones de personalización de marca de la plantilla del mensaje. La personalización de marca se define en la consola de administración de Intune. Los valores posibles son: `none`, `includeCompanyLogo`, `includeCompanyName` y `includeContactInformation`.|
+|displayName|String|Nombre para mostrar de la plantilla de mensajes de notificación.|
+|defaultLocale|String|La configuración regional predeterminada de reserva para los casos en que la configuración regional solicitada no está disponible.|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|Las opciones de personalización de marca de la plantilla de mensaje. La personalización de marca está definida en la consola de administración de Intune. Los valores posibles son: `none`, `includeCompanyLogo`, `includeCompanyName` y `includeContactInformation`.|
 
 
 
@@ -51,11 +51,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplates
 Content-type: application/json
-Content-length: 261
+Content-length: 197
 
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "defaultLocale": "Default Locale value",
   "brandingOptions": "includeCompanyLogo"
@@ -78,11 +77,6 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
-
-
-
-
-
 
 
 

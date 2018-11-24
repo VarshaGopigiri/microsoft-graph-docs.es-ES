@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md).
@@ -36,7 +36,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Número de dispositivos que se encuentran en el período de gracia|
 |configManagerCount|Int32|Número de dispositivos cuyo cumplimiento lo administra System Center Configuration Manager|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles|
@@ -56,9 +56,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyDeviceStateSummary
 Content-type: application/json
-Content-length: 270
+Content-length: 349
 
 {
+  "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
   "inGracePeriodCount": 2,
   "configManagerCount": 2,
   "unknownDeviceCount": 2,
@@ -92,11 +93,6 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

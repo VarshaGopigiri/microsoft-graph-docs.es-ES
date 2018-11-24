@@ -15,10 +15,11 @@ Una clase que contiene las propiedades del recurso de auditoría.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditResource"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.auditResource",
@@ -35,11 +36,6 @@ Aquí tiene una representación JSON del recurso.
   "resourceId": "String"
 }
 ```
-
-
-
-
-
 
 
 

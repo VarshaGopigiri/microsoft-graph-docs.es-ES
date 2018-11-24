@@ -8,12 +8,12 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 |:---|:---|:---|
 |[Enumerar managedEBooks](../api/intune_books_managedebook_list.md)|Colección [managedEBook](../resources/intune_books_managedebook.md)|Enumere las propiedades y las relaciones de los objetos [managedEBook](../resources/intune_books_managedebook.md).|
 |[Obtener managedEBook](../api/intune_books_managedebook_get.md)|[managedEBook](../resources/intune_books_managedebook.md)|Lea las propiedades y las relaciones del objeto [managedEBook](../resources/intune_books_managedebook.md).|
-|[Acción assign](../api/intune_books_managedebook_assign.md)|Ninguna|Todavía no documentado|
+|[Acción assign](../api/intune_books_managedebook_assign.md)|Ninguno|Todavía no documentado|
 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |displayName|String|Nombre del libro electrónico|
 |descripción|String|Descripción.|
 |publicador|String|Publicador.|
@@ -21,8 +21,8 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Cubierta de libro.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico.|
-|informationUrl|Cadena|La dirección URL para obtener más información.|
-|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad.|
+|informationUrl|String|La dirección URL para obtener más información.|
+|privacyInformationUrl|String|La dirección URL de la declaración de privacidad.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -34,12 +34,12 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBook",
@@ -59,11 +59,6 @@ Aquí tiene una representación JSON del recurso.
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

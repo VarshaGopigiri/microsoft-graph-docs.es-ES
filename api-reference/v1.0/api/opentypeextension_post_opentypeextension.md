@@ -2,19 +2,23 @@
 
 Crea una extensión abierta (objeto [openTypeExtension](../resources/openTypeExtension.md)) y agrega propiedades personalizadas en una instancia nueva o existente de un recurso.
 
-> **Nota:** Si está creando extensiones abiertas en recursos de Outlook, consulte **Consideraciones específicas de Outlook** en [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
+> **Nota:** Si está creando extensiones open en recursos de Outlook, consulte **Consideraciones sobre específica de Outlook** en [openTypeExtension el tipo de recurso](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Permisos
 
-Según el recurso en el que se cree la extensión, se requiere uno de los siguientes permisos para llamar a esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Según el recurso que está creando la extensión y el permiso solicitado tipo (delegada o de la aplicación), el permiso especificado en la tabla siguiente es la con privilegios mínimos necesarios para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
+| Recurso admitido | Delegado (cuenta profesional o educativa) | Delegado (cuenta personal de Microsoft) | Aplicación |
 |:-----|:-----|:-----|:-----|
-| [dispositivo](../resources/device.md) | Device.ReadWrite.All | [evento](../resources/event.md) | Calendars.ReadWrite |
-| [grupo](../resources/group.md) | Group.ReadWrite.All | [evento de grupo](../resources/event.md) | Group.ReadWrite.All |
-| [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | [mensaje](../resources/message.md) | Mail.ReadWrite |
-| [organización](../resources/organization.md) | Directory.AccessAsUser.All | [contacto personal](../resources/contact.md) | Contacts.ReadWrite |
-| [usuario](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | No admitido | Device.ReadWrite.All |
+| [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [grupo](../resources/group.md) | Group.ReadWrite.All | No admitido | Group.ReadWrite.All |
+| [evento de grupo](../resources/event.md) | Group.ReadWrite.All | No admitido | No admitido |
+| [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | No admitido | Group.ReadWrite.All |
+| [mensaje](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organización](../resources/organization.md) | Directory.AccessAsUser.All | No admitido | No admitido |
+| [contacto personal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [usuario](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -31,7 +35,7 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Nota:** Esta sintaxis muestra algunas formas comunes para crear las instancias de recursos admitidos. Todas las otras sintaxis POST que le permiten crear estas instancias de recursos admiten crear extensiones abiertas en ellas de forma similar.
+>**Nota:** Esta sintaxis muestran algunas formas comunes para crear las instancias de recursos admitidos. Todos los otras sintaxis POST que le permite crear estas instancias de recursos admite crear extensiones open en ellos de forma similar.
 
 Consulte la sección [Cuerpo de la solicitud](#request-body) para obtener información sobre cómo incluir las propiedades de la nueva instancia de recurso _y la extensión_ en el cuerpo de la solicitud.
 
@@ -52,14 +56,14 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Nota:** Esta sintaxis muestra algunas formas comunes para identificar una instancia del recurso, con el fin de crear una extensión en ella. Todas las otras sintaxis que permiten identificar estas instancias de recursos admiten la creación de extensiones abiertas en ellas de forma similar.
+>**Nota:** Esta sintaxis muestran algunas formas comunes para identificar una instancia del recurso, con el fin de crear una extensión en ella. Todos los otras sintaxis que permite identificar estas instancias de recursos admite la creación de extensiones de open en ellos de forma similar.
 
 Consulte la sección [Cuerpo de la solicitud](#request-body) para obtener información sobre cómo incluir _la extensión_ en el cuerpo de la solicitud.
 
 ## <a name="path-parameters"></a>Parámetros de ruta de acceso
 |Parámetro|Tipo|Descripción|
 |:-----|:-----|:-----|
-|id|cadena|Un identificador único para un objeto en la colección correspondiente. Necesario.|
+|id|string|Un identificador único para un objeto en la colección correspondiente. Necesario.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
@@ -85,8 +89,8 @@ Al crear una extensión en una instancia de recurso _nueva_, además del nuevo o
 
 Dependiendo de la operación, el código de respuesta puede ser `201 Created` o `202 Accepted`.
 
-Cuando se crea una extensión usando la misma operación que se utiliza para crear una instancia de recurso, la operación devuelve el mismo código de respuesta que devuelve cuando se usa la operación para crear la instancia de recurso sin la extensión.
-Consulte los temas correspondientes para la creación de la instancia, como se enumeran [anteriormente](#create-an-extension-in-a-new-resource-instance).
+Cuando se crea una extensión de uso de la misma operación que se utiliza para crear una instancia de recursos, la operación devuelve el mismo código de respuesta que devuelve cuando se usa la operación para crear la instancia de recurso sin la extensión.
+Consulte los temas correspondientes para la creación de la instancia, como enumerados [anteriormente](#create-an-extension-in-a-new-resource-instance).
 
 ### <a name="response-body"></a>Cuerpo de la respuesta
 
@@ -107,7 +111,7 @@ El primer ejemplo crea un mensaje y una extensión en la misma llamada. El cuerp
 
   - El tipo `microsoft.graph.openTypeExtension`.
   - El nombre de la extensión "Com.Contoso.Referral".
-  - Los datos adicionales se almacenan como 3 propiedades personalizadas en la carga útil JSON: `companyName`, `expirationDate` y `dealValue`.
+  - Datos adicionales que se almacenan como tres propiedades personalizadas en la carga JSON: `companyName`, `expirationDate`, y `dealValue`.
 
 <!-- {
   "blockType": "ignored",

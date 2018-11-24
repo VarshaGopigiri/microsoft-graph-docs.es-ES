@@ -16,27 +16,27 @@ Entidad que representa una conexión a un entorno de Exchange.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Todavía no documentado|
+|id|cadena|Todavía no documentado|
 |lastSyncDateTime|DateTimeOffset|Última hora de sincronización para Exchange Connector|
-|estado|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Estado del Connector Status. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
-|primarySmtpAddress|Cadena|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
-|serverName|Cadena|El nombre del Exchange Server.|
-|connectorServerName|Cadena|El nombre del servidor que hospeda el Exchange Connector.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|El tipo de Exchange Connector configurado. Los valores posibles son: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|versión|Cadena|La versión del ExchangeConnectorAgent|
-|exchangeAlias|Cadena|Un alias asignado al servidor de Exchange|
-|exchangeOrganization|Cadena|Organización de Exchange al servidor de Exchange|
+|estado|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Estado del conector de Exchange. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
+|primarySmtpAddress|String|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
+|serverName|String|El nombre del servidor de Exchange.|
+|connectorServerName|String|El nombre del servidor que hospeda el Exchange Connector.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|El tipo de Exchange Connector configurado. Los valores posibles son: `onPremises`, `hosted`, `serviceToService` y `dedicated`.|
+|version|String|La versión del ExchangeConnectorAgent|
+|exchangeAlias|String|Un alias asignado al servidor de Exchange|
+|exchangeOrganization|String|Organización de Exchange al servidor de Exchange|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementExchangeConnector"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
@@ -52,11 +52,6 @@ Aquí tiene una representación JSON del recurso.
   "exchangeOrganization": "String"
 }
 ```
-
-
-
-
-
 
 
 

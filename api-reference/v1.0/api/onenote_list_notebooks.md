@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/notebooks
 GET /sites/{id}/onenote/notebooks
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 El criterio de ordenación predeterminado es `name asc`. 
 

@@ -1,4 +1,4 @@
-# <a name="get-subscription"></a>Obtener suscripción
+# <a name="get-subscription"></a>Get subscription
 
 Recupera las propiedades y relaciones de una suscripción.
 
@@ -12,10 +12,11 @@ En la tabla siguiente se muestra el permiso propuesto que se requiere para cada 
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Grupos                      | Group.Read.All      |
-| Usuarios                       | User.Read.All       |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
-| Unidades de disco (unidades de disco y contenido compartido de SharePoint) | Files.ReadWrite.All |
+| Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
+|Alerta de seguridad| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -27,13 +28,13 @@ GET /subscriptions/{id}
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

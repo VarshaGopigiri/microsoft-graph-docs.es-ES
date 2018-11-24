@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -35,15 +35,15 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|deviceName|Cadena|Nombre del dispositivo.|
-|deviceId|Cadena|Id. del dispositivo|
+|id|String|Clave de la entidad.|
+|deviceName|String|Nombre del dispositivo.|
+|deviceId|String|Id. del dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización.|
-|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Cadena|El código de error si hay errores de instalación.|
-|osVersion|Cadena|Versión del sistema operativo.|
-|osDescription|Cadena|Descripción del sistema operativo.|
-|userName|Cadena|Nombre de usuario del dispositivo.|
+|installState|[installState](../resources/intune_books_installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
+|errorCode|String|El código de error si hay errores de instalación.|
+|osVersion|String|Versión del sistema operativo.|
+|osDescription|String|Descripción del sistema operativo.|
+|userName|String|Nombre de usuario del dispositivo.|
 
 
 
@@ -56,9 +56,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceInstallStateId}
 Content-type: application/json
-Content-length: 317
+Content-length: 374
 
 {
+  "@odata.type": "#microsoft.graph.deviceInstallState",
   "deviceName": "Device Name value",
   "deviceId": "Device Id value",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
@@ -90,11 +91,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
-
-
-
-
 
 
 

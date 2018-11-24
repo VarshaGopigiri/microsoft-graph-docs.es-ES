@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto mobileAppContentFile.
@@ -34,15 +34,15 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|azureStorageUri|Cadena|El URI de Azure Storage.|
-|isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
-|id|Cadena|El Id. de archivo.|
+|azureStorageUri|String|El URI de Azure Storage.|
+|isCommitted|Boolean|Un valor que indica si el archivo está confirmado.|
+|id|String|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
-|name|Cadena|El nombre del archivo.|
+|name|String|El nombre del archivo.|
 |size|Int64|El tamaño del archivo antes del cifrado.|
 |sizeEncrypted|Int64|El tamaño del archivo después del cifrado.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|La hora en que expira el URI de Azure Storage.|
-|manifest|Binario|La información del manifiesto.|
+|manifiesto|Binario|La información del manifiesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|El estado de la solicitud de carga actual. Los valores posibles son: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` y `commitFileTimedOut`.|
 
 
@@ -92,11 +92,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
-
-
-
-
 
 
 

@@ -15,29 +15,29 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Clave de la entidad.|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune_deviceconfig_iosupdatesinstallstatus.md)|El estado de instalación del informe de directiva. Los valores posibles son: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
-|osVersion|Cadena|La versión del dispositivo que se está notificando.|
-|deviceId|Cadena|El identificador del dispositivo que se está notificando.|
-|userId|Cadena|El identificador del usuario que se está notificando.|
-|deviceDisplayName|Cadena|Nombre de dispositivo de DevicePolicyStatus.|
-|userName|Cadena|El nombre de usuario que se está notificando|
-|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
+|id|cadena|Clave de la entidad.|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune_deviceconfig_iosupdatesinstallstatus.md)|Estado de la instalación del informe de directiva. Los valores posibles son: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
+|osVersion|cadena|La versión del dispositivo que se está notificando.|
+|deviceId|cadena|El identificador del dispositivo que se está notificando.|
+|userId|cadena|El identificador del usuario que se está notificando.|
+|deviceDisplayName|cadena|Nombre de dispositivo de DevicePolicyStatus.|
+|userName|cadena|El nombre de usuario que se está notificando|
+|deviceModel|cadena|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
-|estado|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|estado|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|Cadena|UserPrincipalName.|
+|userPrincipalName|cadena|UserPrincipalName.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosUpdateDeviceStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosUpdateDeviceStatus",
@@ -55,11 +55,6 @@ Aquí tiene una representación JSON del recurso.
   "userPrincipalName": "String"
 }
 ```
-
-
-
-
-
 
 
 

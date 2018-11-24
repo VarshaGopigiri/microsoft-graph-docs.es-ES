@@ -2,9 +2,9 @@
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Contiene las propiedades de los estados de solicitud de subida.
+Contiene las propiedades de los Estados de solicitud de carga.
 ## <a name="members"></a>Miembros
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |correcto|0|Todavía no documentado|
 |transientError|1|Todavía no documentado|
@@ -22,11 +22,6 @@ Contiene las propiedades de los estados de solicitud de subida.
 |commitFilePending|301|Todavía no documentado|
 |commitFileFailed|302|Todavía no documentado|
 |commitFileTimedOut|303|Todavía no documentado|
-
-
-
-
-
 
 
 

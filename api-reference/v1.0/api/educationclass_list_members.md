@@ -9,7 +9,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) |  EduRoster.ReadBasic  |
 |Delegado (cuenta personal de Microsoft) |  No admitido  |
-|Aplicación | EduRoster.Read.All, EduRoster.ReadWrite.All y Member.Read.Hidden | 
+|Aplicación | EduRoster.Read.All, EduRoster.ReadWrite.All más Member.Read.Hidden | 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -17,12 +17,12 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /education/classes/{id}/members
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|
-| Autorización  | {token} de portador. Obligatorio.  |
+| Authorization  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

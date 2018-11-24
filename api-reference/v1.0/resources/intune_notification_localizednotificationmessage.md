@@ -15,23 +15,23 @@ El contenido de texto de una plantilla de mensaje de notificación para la confi
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|cadena|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|configuración regional|String|La configuración regional para la que se destina este mensaje.|
-|subject|String|El asunto de la plantilla del mensaje.|
-|messageTemplate|String|El contenido de la plantilla del mensaje.|
+|configuración regional|cadena|La configuración regional para la que se destina este mensaje.|
+|asunto|cadena|El asunto de la plantilla del mensaje.|
+|messageTemplate|cadena|El contenido de la plantilla del mensaje.|
 |isDefault|Booleano|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",
@@ -43,11 +43,6 @@ Aquí tiene una representación JSON del recurso.
   "isDefault": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -9,7 +9,7 @@ Puede acceder a los [usuarios](user.md) a través de Microsoft Graph de dos form
 
 ## <a name="authorization"></a>Authorization
 
-Se requiere uno de los siguientes [permisos](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) para tener acceso a las operaciones de usuario. Los tres primeros permisos los puede conceder un usuario a una aplicación. El resto solo los puede conceder el administrador a una aplicación.
+Se requiere uno de los siguientes [permisos](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) para acceder a las operaciones de usuario. Los tres primeros permisos los puede conceder un usuario a una aplicación. El resto solo los puede conceder el administrador a una aplicación.
 
 - User.ReadBasic.All
 - User.Read

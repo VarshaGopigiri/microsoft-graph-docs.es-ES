@@ -1,21 +1,16 @@
-# <a name="ratingnewzealandtelevisiontype-enum-type"></a>Tipo de enumeración ratingNewZealandTelevisionType
+# <a name="ratingnewzealandtelevisiontype-enum-type"></a>tipo de enumeración ratingNewZealandTelevisionType
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
 Etiquetas de clasificación de contenido de TV en Nueva Zelanda
 ## <a name="members"></a>Miembros
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
-|allAllowed|0|Valor predeterminado, permitir cualquier contenido de programas de TV|
-|allBlocked|1|No permitir ningún contenido de programas de TV|
-|general|2|La clasificación G excluye materiales que puedan ser dañinos para niños de menos de 14 años|
-|parentalGuidance|3|La clasificación PGR anima a los padres y tutores a supervisar a los espectadores más jóvenes|
-|adultos|4|La clasificación AO no es apta para niños|
-
-
-
-
-
+|allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
+|allBlocked|1|No permitir que cualquier TV muestra contenido|
+|general|2|Excluye de la clasificación G materiales que puedan dañar los elementos secundarios en 14|
+|parentalGuidance|3|La clasificación de PGR anima a elementos primarios y tutores para supervisar los visores de jóvenes|
+|adultos|4|La clasificación AO no es adecuada para los elementos secundarios|
 
 
 

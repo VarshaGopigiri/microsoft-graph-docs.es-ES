@@ -21,7 +21,7 @@ GET /me/mailFolders/delta
 GET /users/{id}/mailFolders/delta
 ```
 
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+## <a name="query-parameters"></a>Parámetros de consulta
 
 El seguimiento de cambios en las carpetas de correo conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar los parámetros de consulta deseados una vez por adelantado. En solicitudes posteriores, basta con copiar y aplicar la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
@@ -30,14 +30,14 @@ El seguimiento de cambios en las carpetas de correo conlleva al menos una llamad
 | $deltatoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de carpetas de correo. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
 | $skiptoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de carpetas de correo. |
 
-#### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
+### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
 
 Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud GET para especificar solo las propiedades que necesita para un mejor rendimiento. Siempre se devuelve la propiedad _id_. 
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 

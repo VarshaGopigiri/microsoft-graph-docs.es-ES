@@ -6,18 +6,18 @@ El recurso **plannerPlan** representa un plan de Office 365. Un plan puede ser p
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Leer las propiedades y las relaciones del objeto **plannerPlan**.|
-|[List buckets](../api/plannerplan_list_buckets.md) |Colección [plannerBucket](plannerbucket.md)| Obtenga una colección de objetos **plannerBucket**.|
+|[Obtener plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Leer las propiedades y las relaciones del objeto **plannerPlan**.|
+|[Enumerar depósitos](../api/plannerplan_list_buckets.md) |Colección [plannerBucket](plannerbucket.md)| Obtenga una colección de objetos **plannerBucket**.|
 |[Enumerar tareas](../api/plannerplan_list_tasks.md) |Colección [plannerTask](plannertask.md)| Obtenga una colección de objetos **plannerTask**.|
-|[Actualizar](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Actualizar el objeto **plannerPlan**. |
+|[Update](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Actualizar el objeto **plannerPlan**. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se creó el plan. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|Cadena| Solo lectura. Identificador del plan. Tiene 28 caracteres y distingue mayúsculas y minúsculas. [La validación de formato](planner_identifiers_disclaimer.md) se realiza en el servicio.|
-|owner|Cadena|Id. del [grupo](group.md) que tiene el plan. Para poder establecer este campo, debe existir un grupo válido. Una vez establecido, solo lo puede actualizar el propietario.|
-|title|Cadena|Obligatorio. Título del plan.|
+|id|String| Solo lectura. Identificador del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner_identifiers_disclaimer.md) se realiza en el servicio.|
+|owner|String|Identificador del [grupo](group.md) que posee el plan. Un grupo válido debe existir antes de que se puede establecer en este campo. Una vez establecida, esta propiedad no se puede actualizar.|
+|title|String|Obligatorio. Título del plan.|
 |createdBy|[identitySet](identityset.md)|Solo lectura. El usuario que creó el plan.|
 
 ## <a name="relationships"></a>Relaciones

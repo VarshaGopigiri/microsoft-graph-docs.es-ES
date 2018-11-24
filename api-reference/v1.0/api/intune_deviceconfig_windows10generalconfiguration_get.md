@@ -22,12 +22,12 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -47,7 +47,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10356
+Content-Length: 10423
 
 {
   "value": {
@@ -281,15 +281,11 @@ Content-Length: 10356
     "experienceBlockDeviceDiscovery": true,
     "experienceBlockErrorDialogWhenNoSIM": true,
     "experienceBlockTaskSwitcher": true,
-    "logonBlockFastUserSwitching": true
+    "logonBlockFastUserSwitching": true,
+    "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
   }
 }
 ```
-
-
-
-
-
 
 
 

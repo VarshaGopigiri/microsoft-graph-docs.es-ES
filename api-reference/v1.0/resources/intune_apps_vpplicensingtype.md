@@ -13,10 +13,11 @@ Contiene las propiedades del tipo de licencia del Programa de Compras por Volume
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vppLicensingType"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.vppLicensingType",
@@ -24,11 +25,6 @@ Aquí tiene una representación JSON del recurso.
   "supportsDeviceLicensing": true
 }
 ```
-
-
-
-
-
 
 
 

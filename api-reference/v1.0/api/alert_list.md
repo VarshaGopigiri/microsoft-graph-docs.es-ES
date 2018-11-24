@@ -1,6 +1,6 @@
-# <a name="list-alerts"></a>Alertas de lista
+# <a name="list-alerts"></a>List alerts
 
-Recuperar una lista de objetos de [alerta](../resources/alert.md).
+Recuperar una lista de objetos de [alerta](../resources/alert.md) .
 
 ## <a name="permissions"></a>Permisos
 
@@ -26,22 +26,22 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
-Este método admite los siguientes [parámetros de consulta de OData](../../../concepts/query_parameters.md) a modo de ayuda para personalizar la respuesta:
+Este método admite los siguientes [parámetros de consulta de OData](../../../concepts/query_parameters.md) para ayudar a personalizar la respuesta:
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` devolverá los primeros resultados agregados para cada proveedor API de seguridad.  
+- `$top`devolverá los primeros resultados agregados de cada proveedor de API de seguridad.  
 
-Para usar un conjunto de propiedades alternativo, utilice el parámetro de consulta`$select` para especificar el conjunto de propiedades de **alerta** que quiere.  Por ejemplo, para devolver las propiedades **assignedTo**, **category**, y **severity** añada lo siguiente a su consulta: `$select=assignedTo,category,severity`.
+Para devolver un conjunto de propiedades alternativo, utilice la OData `$select` parámetro para especificar el conjunto de propiedades de la **alerta** que desee de la consulta.  Por ejemplo, para devolver el **assignedTo**, **categoría**y propiedades de **gravedad** , agregue lo siguiente a la consulta: `$select=assignedTo,category,severity`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre      |Descripción|
 |:----------|:----------|
-| Autorización  | {código} del portador. Necesario.|
+| Authorization  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -49,7 +49,7 @@ No proporcione un cuerpo de solicitud para este método. Se pasará por alto el 
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos **alerta** en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y la colección de objetos de **alerta** en el cuerpo de la respuesta. Si se devuelve un código de estado que no sea 2xx o 404 desde un proveedor o un proveedor de tiempo de espera, la respuesta será un `206 Partial Content` código de estado con la respuesta de proveedores en un encabezado de advertencia. Para obtener más información, vea [respuestas de error de la API de seguridad de Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Ejemplo
 

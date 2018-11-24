@@ -10,7 +10,7 @@ Hereda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|cadena|Nombre para mostrar. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|descripción|String|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|description|cadena|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|cadena|OMA. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |value|DateTimeOffset|Valor.|
 
@@ -18,10 +18,11 @@ Hereda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingDateTime"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingDateTime",
@@ -31,11 +32,6 @@ Aquí tiene una representación JSON del recurso.
   "value": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

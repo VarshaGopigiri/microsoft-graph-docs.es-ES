@@ -15,8 +15,8 @@ Acción programada para la regla
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|ruleName|String|Nombre de la regla a la que se aplica esta acción programada.|
+|id|cadena|Clave de la entidad.|
+|ruleName|cadena|Nombre de la regla a la que se aplica esta acción programada.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -25,12 +25,12 @@ Acción programada para la regla
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceScheduledActionForRule"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
@@ -38,11 +38,6 @@ Aquí tiene una representación JSON del recurso.
   "ruleName": "String"
 }
 ```
-
-
-
-
-
 
 
 

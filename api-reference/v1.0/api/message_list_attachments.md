@@ -1,4 +1,4 @@
-# <a name="list-attachments"></a>Enumerar attachments
+# <a name="list-attachments"></a>List attachments
 
 Recupera una lista de objetos [attachment](../resources/attachment.md) asociados a un mensaje.
 ## <a name="permissions"></a>Permisos
@@ -11,7 +11,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Mail.Read |
 
 ## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } --> Datos adjuntos de un [message](../resources/message.md) en el buzón de un usuario.
+<!-- { "blockType": "ignored" } -->Datos adjuntos de un [mensaje](../resources/message.md) en el buzón del usuario.
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -27,11 +27,11 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

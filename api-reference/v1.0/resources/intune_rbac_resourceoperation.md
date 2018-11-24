@@ -15,21 +15,21 @@ Define una operación o una acción que puede realizar un recurso (o entidad) de
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
-|resourceName|String|Nombre del recurso en el que se realiza esta operación.|
-|actionName|String|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
-|description|String|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
+|id|Cadena|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
+|resourceName|Cadena|Nombre del recurso en el que se realiza esta operación.|
+|actionName|Cadena|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
+|description|Cadena|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.resourceOperation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.resourceOperation",
@@ -39,11 +39,6 @@ Aquí tiene una representación JSON del recurso.
   "description": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -10,29 +10,27 @@ Contiene las propiedades del sistema operativo mínimo necesario para una aplica
 |v9_0|Booleano|Versión 9.0 o posterior.|
 |v10_0|Booleano|Versión 10.0 o posterior.|
 |v11_0|Booleano|Versión 11.0 o posterior.|
+|v12_0|Booleano|Versión 12.0 o posterior.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMinimumOperatingSystem",
   "v8_0": true,
   "v9_0": true,
   "v10_0": true,
-  "v11_0": true
+  "v11_0": true,
+  "v12_0": true
 }
 ```
-
-
-
-
-
 
 
 

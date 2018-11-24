@@ -24,8 +24,8 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto roleAssignment.
@@ -34,9 +34,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
 |displayName|String|El nombre descriptivo o para mostrar de la asignación de roles.|
-|descripción|String|Descripción de la asignación de roles.|
+|description|String|Descripción de la asignación de roles.|
 |resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory.|
 
 
@@ -79,11 +79,6 @@ Content-Length: 242
   ]
 }
 ```
-
-
-
-
-
 
 
 

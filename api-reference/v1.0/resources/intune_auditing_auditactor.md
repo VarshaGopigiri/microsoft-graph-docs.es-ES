@@ -12,17 +12,18 @@ Una clase que contiene las propiedades del actor de auditoría.
 |applicationDisplayName|cadena|Nombre de la aplicación.|
 |userPrincipalName|cadena|Nombre principal de usuario (UPN).|
 |servicePrincipalName|cadena|Nombre de entidad de seguridad de servicio (SPN).|
-|ipAddress|cadena|Dirección IP.|
+|ipAddress|cadena|IPAddress.|
 |userId|cadena|Id. de usuario.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditActor"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.auditActor",
@@ -38,11 +39,6 @@ Aquí tiene una representación JSON del recurso.
   "userId": "String"
 }
 ```
-
-
-
-
-
 
 
 

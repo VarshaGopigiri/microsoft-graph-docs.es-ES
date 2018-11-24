@@ -4,10 +4,10 @@ Obtenga los mensajes del buzón del usuario que ha iniciado sesión (incluidas l
 
 Actualmente, esta operación devuelve los cuerpos de los mensajes solo en formato HTML.
 
-Existen dos casos en los que una aplicación puede obtener mensajes en la carpeta de correo de otro usuario:
+Hay dos escenarios donde una aplicación puede obtener los mensajes en la carpeta de correo de otro usuario:
 
 * Si la aplicación tiene permisos de aplicación, o bien,
-* Si la aplicación tiene [los permisos](#permissions) adecuados de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario, o se le concede acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-share-messages-folders.md).
+* Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de correo con ese usuario o, se le concede acceso delegado a ese usuario. Consulte los [Detalles y un ejemplo](../../../concepts/outlook-share-messages-folders.md).
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -37,12 +37,12 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
-| Prefer: outlook.body-content-type | cadena | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Prefer: outlook.body-content-type | string | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -4,9 +4,9 @@ Representa un grupo de Azure Active Directory (Azure AD) que puede ser un grupo 
 
 Este recurso admite:
 
-- Agregar sus propios datos a las propiedades personalizadas como [extensiones](../../../concepts/extensibility_overview.md).
+- Adición de sus propios datos a las propiedades personalizadas como [extensiones](../../../concepts/extensibility_overview.md).
 - Suscribirse a [las notificaciones de cambios](../../../concepts/webhooks.md).
-- Usar una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones mediante la provisión de una función [delta](../api/user_delta.md).
+- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/user_delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -14,8 +14,8 @@ Este recurso admite:
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |**Administración de grupos**| | |
-|[Crear grupo](../api/group_post_groups.md) | [group](group.md) |Crea un grupo. Puede ser un grupo, un grupo dinámico o un grupo de seguridad de Office 365.|
-|[Obtener grupo](../api/group_get.md) | [group](group.md) |Lee las propiedades de un objeto de grupo.|
+|[Crear grupo](../api/group_post_groups.md) | [grupo](group.md) |Crea un grupo. Puede ser un grupo, un grupo dinámico o un grupo de seguridad de Office 365.|
+|[Obtener grupo](../api/group_get.md) | [grupo](group.md) |Lee las propiedades de un objeto de grupo.|
 |[Enumerar grupos](../api/group_list.md) |Colección [group](group.md) |Enumera los objetos de grupo y sus propiedades.|
 |[Grupo de actualización](../api/group_update.md) | Ninguno |Actualiza las propiedades de un objeto de grupo. |
 |[Eliminar grupo](../api/group_delete.md) | Ninguno |Elimina el objeto de grupo. |
@@ -31,11 +31,11 @@ Este recurso admite:
 |[checkMemberGroups](../api/group_checkmembergroups.md)|Colección string|Comprueba la pertenencia de este grupo a una lista de grupos. La función es transitiva.|
 |[getMemberGroups](../api/group_getmembergroups.md)|Colección string|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|Colección string|Devuelve todos los grupos de los que el grupo es miembro. La función es transitiva. |
-|[Crear ajuste](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
-|[Ajuste Get](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
-|[Configuración de la lista](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
-|[Actualizar ajuste](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Actualiza el objeto de configuración. |
-|[Eliminar ajuste](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
+|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
+|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
+|[List settings](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
+|[Update setting](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Actualiza el objeto de configuración. |
+|[Delete setting](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
 |**Calendario**| | |
 |[Crear evento](../api/group_post_events.md) |[evento](event.md)| Crea un evento al publicarlo en la colección de eventos.|
 |[Obtener evento](../api/group_get_event.md) |[evento](event.md)|Lee las propiedades de un objeto de evento.|
@@ -44,7 +44,7 @@ Este recurso admite:
 |[Eliminar evento](../api/group_delete_event.md) |Ninguno|Elimina el objeto de evento.|
 |[Lista de calendarView](../api/group_list_calendarview.md) |Colección de [eventos](event.md)| Obtiene una colección de eventos en un intervalo de tiempo especificado.|
 |**Conversaciones**| | |
-|[Crear conversación](../api/group_post_conversations.md) |[conversación](conversation.md)| Crea una conversación al publicarla en la colección de conversaciones.|
+|[Crear conversación](../api/group_post_conversations.md) |[conversation](conversation.md)| Crea una conversación al publicarla en la colección de conversaciones.|
 |[Obtener conversación](../api/group_get_conversation.md) |[conversación](conversation.md)| Lee las propiedades de un objeto de conversación.|
 |[Lista de conversaciones](../api/group_list_conversations.md) |Colección de [conversaciones](conversation.md)| Obtiene una colección de objetos de conversación.|
 |[Eliminar conversación](../api/group_delete_conversation.md) |Ninguno|Elimina un objeto de conversación.|
@@ -58,11 +58,11 @@ Este recurso admite:
 |[Enumerar rejectedSenders](../api/group_list_rejectedsenders.md) |Colección [directoryObject](directoryobject.md)| Obtiene una lista de usuarios o grupos que se encuentran en la lista de rejectedSenders de este grupo.|
 |[Agregar rejectedSender](../api/group_post_rejectedsenders.md) |[directoryObject](directoryobject.md)| Agrega un nuevo usuario o grupo a la colección rejectedSenders.|
 |[Eliminar rejectedSender](../api/group_delete_rejectedsenders.md) |[directoryObject](directoryobject.md)| Elimina un nuevo usuario o grupo de la colección rejectedSenders.|
-|[Crear ajuste](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
-|[Ajuste Get](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
-|[Configuración de la lista](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
+|[Create setting](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crea un objeto de configuración según una plantilla de groupSettingTemplate. La solicitud POST debe proporcionar settingValues para toda la configuración establecida en la plantilla. Solo se pueden usar plantillas específicas de grupos para esta operación.|
+|[Get setting](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Lee las propiedades de un objeto de configuración específico. |
+|[List settings](../api/groupsetting_list.md) | Colección de [groupSetting](groupsetting.md) | Enumera las propiedades de todos los objetos de configuración. |
 |[Configuración de actualización](../api/groupsetting_update.md) | Ninguno | Actualiza el objeto de configuración. |
-|[Eliminar ajuste](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
+|[Delete setting](../api/groupsetting_delete.md) | Ninguno | Elimina un objeto de configuración. |
 |**Extensiones abiertas**| | |
 |[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
 |[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
@@ -84,25 +84,37 @@ Este recurso admite:
 |:---------------|:--------|:----------|
 |allowExternalSenders|Booleano|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
 |autoSubscribeNewMembers|Booleano|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico. Puede establecer esta propiedad en una solicitud PATCH del grupo; no la establezca en la solicitud POST inicial que crea el grupo.|
-|classification|Cadena|Describe una clasificación para el grupo (como impacto en el negocio bajo, medio o alto). Los valores válidos para esta propiedad se definen mediante la creación de un valor [setting](groupsetting.md) ClassificationList, basado en la [definición de plantilla](groupsettingtemplate.md).|
+|classification|String|Describe una clasificación para el grupo (como impacto en el negocio bajo, medio o alto). Los valores válidos para esta propiedad se definen mediante la creación de un valor [setting](groupsetting.md) ClassificationList, basado en la [definición de plantilla](groupsettingtemplate.md).|
 |createdDateTime|DateTimeOffset| Marca de tiempo de cuando se creó el grupo. El valor no puede modificarse y se rellena automáticamente al crear el grupo. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |
-|descripción|Cadena|Una descripción opcional del grupo. |
-|displayName|Cadena|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
-|groupTypes|Colección string| Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad. Es compatible con $filter.|
-|id|Cadena|El identificador único del grupo. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
+|description|String|Una descripción opcional del grupo. |
+|displayName|String|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
+|groupTypes|Colección String| Especifica el tipo de grupo para crear. Los valores posibles son `Unified` para crear un grupo de Office 365, o `DynamicMembership` para grupos dinámicos.  Para otro grupo de todos los tipos, como los grupos de seguridad y grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad. Es compatible con $filter.|
+|id|String|El identificador único del grupo. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
 |isSubscribedByMail|Booleano|El valor predeterminado es **true**. Indica si el usuario actual está suscrito para recibir conversaciones de correo electrónico.|
-|mail|Cadena|La dirección SMTP del grupo, por ejemplo: "serviceadmins@contoso.onmicrosoft.com". Solo lectura. Es compatible con $filter.|
-|mailEnabled|Booleano|Especifica si el grupo está habilitado para correo. Si la propiedad **securityEnabled** también es **true**, el grupo es un grupo de seguridad habilitado para correo electrónico; en caso contrario, el grupo es un grupo de distribución de Microsoft Exchange.|
-|mailNickname|Cadena|Alias de correo del grupo, único en la organización. Esta propiedad debe especificarse al crear un grupo. Admite $filter.|
+|mail|String|La dirección SMTP del grupo, por ejemplo: "serviceadmins@contoso.onmicrosoft.com". Solo lectura. Es compatible con $filter.|
+|mailEnabled|Boolean|Especifica si el grupo está habilitado para correo. Si la propiedad **securityEnabled** también es **true**, el grupo es un grupo de seguridad habilitado para correo electrónico; en caso contrario, el grupo es un grupo de distribución de Microsoft Exchange.|
+|mailNickname|String|Alias de correo del grupo, único en la organización. Esta propiedad debe especificarse al crear un grupo. Admite $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica la última vez que el grupo se ha sincronizado con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. Es compatible con $filter.|
-|onPremisesProvisioningErrors|Colección [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Errores al usar el producto de sincronización de Microsoft durante el aprovisionamiento. |
-|onPremisesSecurityIdentifier|Cadena|Contiene el identificador de seguridad local (SID) del grupo que se sincroniza desde un recurso local a la nube. Solo lectura. |
-|onPremisesSyncEnabled|Booleano|**true** si este grupo está sincronizado desde un directorio local; **false** si este grupo se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este grupo no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. Es compatible con $filter.|
+|onPremisesProvisioningErrors|colección de [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Errores al usar el producto de sincronización de Microsoft durante el aprovisionamiento. |
+|onPremisesSecurityIdentifier|String|Contiene el identificador de seguridad local (SID) del grupo que se sincroniza desde un recurso local a la nube. Solo lectura. |
+|onPremisesSyncEnabled|Boolean|**true** si este grupo está sincronizado desde un directorio local; **false** si este grupo se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este grupo no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. Es compatible con $filter.|
+|preferredDataLocation|String|La ubicación de datos preferido para el grupo. Para obtener más información, vea [OneDrive en línea Multi-ubican](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |proxyAddresses|Colección string| El operador **any** es necesario para las expresiones de filtro en las propiedades de varios valores. Solo lectura. No admite valores NULL. Es compatible con $filter. |
 |renewedDateTime|DateTimeOffset| Marca de tiempo de la última vez que se renovó el grupo. Esto no se puede modificar directamente y solo se actualiza a través de la [acción de servicio de renovación](../api/group_renew.md). El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|securityEnabled|Booleano|Especifica si el grupo es un grupo de seguridad. Si la propiedad **mailEnabled** también es true, el grupo es un grupo de seguridad habilitado para correo electrónico; de lo contrario, es un grupo de seguridad. Debe ser **false** para grupos de Office 365. Es compatible con $filter.|
-|unseenCount|Int32|Número de mensajes que el usuario actual no ha visto desde su última visita.|
-|visibility|Cadena| Especifica la visibilidad de un grupo de Office 365. Los valores posibles son: **Private**, **Public**, **HiddenMembership** o vacío (que se interpreta como **Public**).|
+|securityEnabled|Boolean|Especifica si el grupo es un grupo de seguridad. Si la propiedad **mailEnabled** también es true, el grupo es un grupo de seguridad habilitado para correo electrónico; de lo contrario, es un grupo de seguridad. Debe ser **false** para grupos de Office 365. Es compatible con $filter.|
+|unseenCount|Int32|Recuento de las conversaciones que se han entregado una o varias entradas de nuevo desde la última visita al grupo del usuario que ha iniciado sesión.|
+|visibility|String| Especifica la visibilidad de un grupo de Office 365. Los valores posibles son: `private`, `public`, o `hiddenmembership`; los valores en blanco se tratan como público.  Para obtener más información, vea [Opciones de visibilidad del grupo](#group-visibility-options) .<br>Se puede establecer la visibilidad solo cuando se crea un grupo; no es editable.<br>Visibilidad sólo se admite para grupos unificados; no se admite para grupos de seguridad.|
+
+### <a name="group-visibility-options"></a>Opciones de visibilidad de grupo
+
+Aquí es lo que significa cada valor de la propiedad de **visibilidad** :
+ 
+|Valor|Descripción|
+|:----|-----------|
+| `public` | Cualquier usuario puede unirse al grupo sin necesidad de permiso de propietario.<br>Cualquier usuario puede ver el contenido del grupo.|
+| `private` | Se necesita el permiso de propietario para unirse al grupo.<br>Que no sean miembros no pueden ver el contenido del grupo.|
+| `hiddenmembership` | Se necesita el permiso de propietario para unirse al grupo.<br>Que no sean miembros no pueden ver el contenido del grupo.<br>Que no sean miembros no pueden ver a los miembros del grupo.<br>Los administradores (global, compañía, usuario y departamento de soporte técnico) pueden ver la pertenencia del grupo.<br>El grupo aparece en la libreta de direcciones global (GAL).|
+
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
@@ -112,14 +124,14 @@ Este recurso admite:
 |calendarView|Colección [event](event.md)|La vista Calendario del calendario. Solo lectura.|
 |conversations|Colección [conversation](conversation.md)|Las conversaciones del grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| El usuario (o la aplicación) que creó el grupo. NOTA: No se establece si el usuario es un administrador. Solo lectura.|
-|drive|[drive](drive.md)|La unidad predeterminada del grupo. Solo lectura.|
-|drives|Colección [drive](drive.md)|Las unidades del grupo. Solo lectura.|
+|Unidad|[drive](drive.md)|Unidad de predeterminado del grupo. Solo lectura.|
+|drives|Colección [drive](drive.md)|Unidades del grupo. Solo lectura.|
 |events|Colección [event](event.md)|Los eventos de calendario del grupo.|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el grupo. Solo lectura. Admite valores NULL.|
 |groupLifecyclePolicies|Colección de [groupLifecyclePolicy](groupLifecyclePolicy.md)|La colección de las directivas de ciclo de vida para este grupo. Solo lectura. Admite valores NULL.|
 |memberOf|Colección [directoryObject](directoryobject.md)|Grupos a los que pertenece este grupo. Métodos HTTP: GET (compatible con todos los grupos). Solo lectura. Admite valores NULL.|
 |members|Colección [directoryObject](directoryobject.md)| Los usuarios y los grupos que son miembros de este grupo. Métodos HTTP: GET (compatible con todos los grupos), POST (compatible con grupos de Office 365, grupos de seguridad y los grupos de seguridad habilitados para correo), DELETE (compatible con grupos de Office 365 y grupos de seguridad). Admite valores NULL.|
-|onenote|[Onenote](onenote.md)| Solo lectura.|
+|onenote|[OneNote](onenote.md)| Solo lectura.|
 |owners|Colección [directoryObject](directoryobject.md)|Los propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar este objeto. Limitado a 10 propietarios. Métodos HTTP: GET (compatible con todos los grupos), POST (compatible con grupos de Office 365, grupos de seguridad y los grupos de seguridad habilitados para correo), DELETE (compatible con grupos de Office 365 y grupos de seguridad). Admite valores NULL.|
 |photo|[profilePhoto](profilephoto.md)| La foto de perfil del grupo. |
 |photos|Colección [profilePhoto](profilephoto.md)| Las fotos de perfil que pertenecen al grupo. Solo lectura. Admite valores NULL.|
@@ -270,6 +282,7 @@ Esta es una representación JSON del recurso.
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,

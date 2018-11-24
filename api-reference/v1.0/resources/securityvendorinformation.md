@@ -1,20 +1,20 @@
-# <a name="securityvendorinformation-resource-type"></a>Tipo de recurso securityVendorInformation
+# <a name="securityvendorinformation-resource-type"></a>tipo de recurso securityVendorInformation
 
-Contiene detalles sobre el proveedor del producto o servicio de seguridad, el proveedor y el subproveedor (por ejemplo, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).
+Contiene detalles sobre el proveedor del producto o servicio de seguridad, el proveedor y la subprovider (por ejemplo, proveedor = Microsoft; proveedor = Windows Defender ATP; subProvider = AppLocker).
 
 ## <a name="properties"></a>Propiedades
 
 | Propiedad   | Tipo|Descripción|
 |:---------------|:--------|:----------|
-|proveedor *|Cadena|Proveedor específico (producto/servicio - no empresa proveedora); por ejemplo, WindowsDefenderATP.|
-|providerVersion|Cadena|Versión del proveedor o subprovider, si existe, que generó la alerta.|
-|subProvider|Cadena|Subproveedor específico (debajo de agregación de proveedor); Por ejemplo, WindowsDefenderATP.SmartScreen.|
-|proveedor *|Cadena|Nombre del proveedor de alerta (por ejemplo, Microsoft, Dell, FireEye).|
-(\* Indica un campo obligatorio.)
+|proveedor |String|Proveedor específico (producto o servicio - empresa del proveedor no); Por ejemplo, WindowsDefenderATP.|
+|providerVersion|String|Versión del proveedor o subprovider, si existe, que generó la alerta. *Required*|
+|subProvider|String|Subprovider específico (debajo de agregación de proveedor); Por ejemplo, WindowsDefenderATP.SmartScreen.|
+|proveedor |String|Nombre del proveedor de alerta (por ejemplo, Microsoft, Dell, FireEye). *Required*|
+
 
 ## <a name="json-representation"></a>Representación JSON
 
-La siguiente es una representación JSON del recurso.
+La siguiente es una representación de JSON del recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

@@ -6,7 +6,7 @@ Las API para el ámbito educativo incluyen recursos de generación de listados y
 
 ## <a name="authorization"></a>Autorización
 
-Para llamar a las API para el ámbito educativo de Microsoft Graph, la aplicación tiene que adquirir un token de acceso. Para obtener más información sobre los tokens de acceso, vea [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/es-ES/graph/docs/concepts/auth_overview). La aplicación también necesitará los permisos adecuados. Para obtener más información, vea [Permisos para el ámbito educativo](../../../concepts/permissions_reference.md#education-permissions). 
+Para llamar a las API para el ámbito educativo de Microsoft Graph, la aplicación tiene que adquirir un token de acceso. Para obtener más información sobre los tokens de acceso, vea [Obtener tokens de acceso para llamar a Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). La aplicación también necesitará los permisos adecuados. Para obtener más información, vea [Permisos para el ámbito educativo](../../../concepts/permissions_reference.md#education-permissions). 
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>Permisos de aplicación para habilitar a los administradores de TI del centro educativo para dar consentimiento 
 
@@ -64,5 +64,5 @@ Las API de generación de listados admiten los siguientes escenarios:
 Use las API para el ámbito educativo de Microsoft Graph para compilar soluciones educativas con acceso a listados de centro educativo. Para obtener más información:
 
 - Explore los recursos y los métodos que son más útiles para su escenario.
-- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/es-ES/graph/graph-explorer).
+- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 

@@ -1,6 +1,6 @@
 # <a name="list-plans"></a>Enumerar planes
 
-Recuperar una lista de objetos **plannerplan** propiedad de un objeto [group](../resources/group.md).
+Recuperar una lista de objetos **plannerPlan** que pertenecen a un objeto de [grupo](../resources/group.md) .
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -13,7 +13,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud

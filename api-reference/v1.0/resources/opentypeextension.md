@@ -1,6 +1,6 @@
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensiones abiertas)
 
-Las extensiones abiertas (anteriormente conocidas como extensiones de datos de Office 365) ofrecen una manera fácil de agregar propiedades sin tipo directamente a un recurso en Microsoft Graph.
+Extensiones Open (anteriormente conocidas como extensiones de datos de Office 365) proporcionan una forma sencilla de agregar propiedades sin tipo directamente en un recurso de Microsoft Graph.
 
 El recurso **openTypeExtension** representa las extensiones abiertas. Las extensiones abiertas agregadas a un recurso se muestran en la propiedad de navegación **extensions**, que se deriva del tipo abstracto [extension](extension.md). Cada extensión tiene una propiedad **extensionName** que es la única predefinida y que puede ser escrita para todas las extensiones, junto con los datos personalizados.
 
@@ -21,20 +21,20 @@ Las extensiones abiertas son compatibles con los recursos siguientes en las vers
 | [message](message.md) | GA |
 | [organization](organization.md) | GA |
 | [Contacto personal](contact.md) | GA |
-| [usuario](user.md) | GA |
+| [user](user.md) | GA |
 
-## <a name="outlook-specific-considerations"></a>Consideraciones específicas sobre Outlook
+## <a name="outlook-specific-considerations"></a>Consideraciones sobre específica de Outlook
 
-Cada extensión abierta presente en un recurso de Outlook (evento, mensaje o contacto personal) se almacena en una [propiedad con nombre MAPI](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx). Al crear extensiones abiertas para Outlook, tenga en cuenta que las propiedades con nombre MAPI son un recurso finito en el buzón de un usuario. Cuando se agota la cuota de propiedades con nombre de un usuario, no puede crear más propiedades con nombre para ese usuario. Esto puede resultar en un comportamiento inesperado de los clientes que dependen de las propiedades con nombre para funcionar.
+Cada extensión open presente en un recurso de Outlook (evento, mensaje o contacto personal) se almacena en una [propiedad con nombre de MAPI](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx). Al crear extensiones open para Outlook, tenga en cuenta que con el nombre de las propiedades de MAPI son un recurso finito en el buzón del usuario. Cuando se agota la cuota de la propiedad con nombre de un usuario, no se puede crear las propiedades más con nombre de dicho usuario. Esto se puede producir un comportamiento inesperado de clientes que se basan en las propiedades con nombre para la función.
 
-Aplique las siguientes directrices al crear extensiones abiertas en los recursos de Outlook:
+Aplique las siguientes directrices al crear extensiones open en recursos de Outlook:
 
-- Cree el número mínimo de extensiones necesarias. La mayoría de las aplicaciones no requieren más de una extensión. Las extensiones no tienen una estructura o propiedades definidas, por lo que puede almacenar varios valores en una sola extensión.
-- Evite nombrar las extensiones de una manera variable (como por ejemplo, basado en la entrada del usuario, etc.). Cada vez que se crea una extensión abierta con un nuevo nombre que no se ha utilizado antes en el buzón de un usuario, se crea una nueva propiedad con nombre MAPI. Quitar la extensión no elimina la propiedad con nombre.
+- Cree el número mínimo de extensiones necesarias. La mayoría de las aplicaciones deben requerir no más de una extensión. Las extensiones no tienen propiedades de conjunto definido ni estructura, por lo que puede almacenar varios valores en una única extensión.
+- Evitar extensiones de nombres de una forma variable (por ejemplo, basándose en la entrada del usuario, etcetera.). Cada vez que se crea una extensión abierta con un nombre nuevo que no se ha usado en el buzón de un usuario antes, se crea un nuevo MAPI con nombre de propiedad. Quitar la extensión no quita la propiedad con nombre.
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>¿Se deben utilizar extensiones abiertas (para recursos de Outlook) o propiedades extendidas?
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Utilizar extensiones open (para recursos de Outlook) o las propiedades extendidas
 
-Las extensiones abiertas son la solución recomendada para la mayoría de los escenarios que implican el almacenamiento y el acceso a datos personalizados. Sin embargo, si necesita acceder a datos personalizados para las propiedades MAPI de Outlook que aún no están expuestas a través de los [metadatos de la API de Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs/overview/call_api), puede usar las [propiedades extendidas y su API de REST](extended-properties-overview.md). Puede verificar qué propiedades expone el metadato en [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+Extensiones de Open son la solución recomendada para la mayoría de los escenarios que implican almacenar y obtener acceso a datos personalizados. Si, sin embargo, necesita tener acceso a datos personalizados para las propiedades de MAPI de Outlook que ya no están expuestas a través de los [metadatos de la API de Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), puede usar [las propiedades extendidas y su API de REST](extended-properties-overview.md). Puede comprobar qué propiedades expone los metadatos en [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -60,12 +60,12 @@ Aquí tiene una representación JSON del recurso.
 
 |Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
-|extensionName|Cadena|Un identificador de texto único para una extensión abierta de tipo abierto. Necesario.|
-|id|Cadena| Un identificador completo que concatena el tipo de extensión con el **extensionName**. Solo lectura.|
+|extensionName|String|Un identificador de texto único para una extensión abierta de tipo abierto. Necesario.|
+|id|String| Un identificador completo que concatena el tipo de extensión con el **extensionName**. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 
-Ninguna
+Ninguno
 
 ## <a name="methods"></a>Métodos
 

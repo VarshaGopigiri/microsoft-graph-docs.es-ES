@@ -24,8 +24,8 @@ GET /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -45,7 +45,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1629
+Content-Length: 1632
 
 {
   "value": [
@@ -72,7 +72,7 @@ Content-Length: 1629
       "activityType": "Activity Type value",
       "activityOperationType": "Activity Operation Type value",
       "activityResult": "Activity Result value",
-      "correlationId": "<Unknown Primitive Type Edm.Guid>",
+      "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
       "resources": [
         {
           "@odata.type": "microsoft.graph.auditResource",
@@ -94,11 +94,6 @@ Content-Length: 1629
   ]
 }
 ```
-
-
-
-
-
 
 
 

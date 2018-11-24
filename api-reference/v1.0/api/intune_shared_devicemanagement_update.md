@@ -6,23 +6,22 @@ Actualice las propiedades de un objeto [deviceManagement](../resources/intune_sh
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-| Tipo de&nbsp;permiso&nbsp;(por&nbsp;flujo de trabajo) | Permisos (de más a menos privilegiados) |
+| Permisos&nbsp;tipo&nbsp;(por&nbsp;flujo de trabajo) | Permisos (de más a menos privilegiados) |
 |:---|:---|
 | Delegado (cuenta profesional o educativa) |
-| &nbsp; &nbsp; Auditoría | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Condiciones de la compañía | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Inscripción corporativa | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp; &nbsp; Configuración de dispositivos | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; Administración de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Protección de extremo | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Inscripción | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Notificación | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Incorporación | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp; &nbsp; Asistencia remota | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Gestión de gastos de telecomunicaciones | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Solución de problemas | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; Protección de la información de Windows | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Auditoría | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Los términos de la empresa | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Inscripción corporativa | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp; Configuración de dispositivo | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; Administración de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Protección de extremo | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Notificación | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Incorporación | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Control de acceso basado en roles | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp; Asistencia remota | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Gestión de gastos de telecomunicaciones | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Solución de problemas | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Protección de la información de Windows | DeviceManagementApps.ReadWrite.All |
 | Delegado (cuenta personal de Microsoft) | No admitida.|
 | Aplicación | No admitida. |
 
@@ -39,7 +38,7 @@ PATCH /deviceManagement
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).
@@ -48,15 +47,15 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único del dispositivo|
+|id|String|Identificador único del dispositivo.|
 |**Configuración de dispositivos**|
-|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Configuración de niveles de cuenta.|
+|configuración|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Configuración de niveles de cuenta.|
 |**Administración de dispositivos**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Estado de suscripción de administración de dispositivos móviles del espacio empresarial. Los valores posibles son: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked` y `lockedOut`.|
-|**Incorporación**|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Estado de suscripción de administración de dispositivos móviles del espacio empresarial. Los valores posibles son: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|**Incorporación de redes**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contiene datos que se usan para personalizar las aplicaciones del Portal de empresa, así como el portal web del usuario final.|
 
-La compatibilidad con las propiedades de cuerpo de solicitud varía según el flujo de trabajo.
+Compatibilidad con propiedades de cuerpo de solicitud varía según el flujo de trabajo.
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [deviceManagement](../resources/intune_shared_devicemanagement.md) actualizado en el cuerpo de la respuesta.
@@ -96,7 +95,7 @@ Content-length: 751
 
 ### <a name="response"></a>Respuesta
 
-Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Las propiedades devueltas varían según el flujo de trabajo y el contexto.
+Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Propiedades devueltas varían según el flujo de trabajo y el contexto.
 
 ``` http
 HTTP/1.1 200 OK

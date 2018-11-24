@@ -14,10 +14,11 @@ Color en RGB.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rgbColor"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.rgbColor",
@@ -26,11 +27,6 @@ Aquí tiene una representación JSON del recurso.
   "b": 1024
 }
 ```
-
-
-
-
-
 
 
 

@@ -2,7 +2,7 @@
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Crear un nuevo objeto [androidWorkProfileCompliancePolicy](../resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md).
+Crear un nuevo objeto [androidWorkProfileCompliancePolicy](../resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md) .
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -24,25 +24,25 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, especifique una representación JSON del objeto androidWorkProfileCompliancePolicy.
+En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto androidWorkProfileCompliancePolicy.
 
-En la tabla siguiente se muestran las propiedades necesarias para crear el objeto androidWorkProfileCompliancePolicy.
+La siguiente tabla muestran las propiedades que son necesarias cuando se crea el androidWorkProfileCompliancePolicy.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|id|String|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
-|versión|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
+|version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md).|
 |passwordRequired|Booleano|Exigir una contraseña para desbloquear el dispositivo.|
 |passwordMinimumLength|Int32|Longitud mínima de la contraseña. Valores válidos de 4 a 16|
-|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Tipo de caracteres en la contraseña. Los valores posibles son: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` y `any`.|
+|passwordRequiredType|[androidRequiredPasswordType](../resources/intune_deviceconfig_androidrequiredpasswordtype.md)|Tipo de caracteres de contraseña. Los valores posibles son: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` y `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 365|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear.|
@@ -52,9 +52,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |deviceThreatProtectionEnabled|Booleano|Exigir que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
 |securityBlockJailbrokenDevices|Booleano|No pueden usarse dispositivos con jailbreak o rooting.|
-|osMinimumVersion|Cadena|Versión mínima de Android.|
-|osMaximumVersion|Cadena|Versión máxima de Android.|
-|minAndroidSecurityPatchLevel|Cadena|Nivel de revisión de seguridad mínimo de Android.|
+|osMinimumVersion|String|Versión mínima de Android.|
+|osMaximumVersion|String|Versión máxima de Android.|
+|minAndroidSecurityPatchLevel|String|Nivel de revisión de seguridad mínimo de Android.|
 |storageRequireEncryption|Booleano|Exigir cifrado en dispositivos Android.|
 |securityRequireSafetyNetAttestationBasicIntegrity|Booleano|Exigir que el dispositivo supere la comprobación de integridad básica de SafetyNet.|
 |securityRequireSafetyNetAttestationCertifiedDevice|Booleano|Exigir que el dispositivo supere la comprobación de dispositivos certificados de SafetyNet.|
@@ -65,7 +65,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [androidWorkProfileCompliancePolicy](../resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `201 Created` código de respuesta y un objeto [androidWorkProfileCompliancePolicy](../resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ### <a name="request"></a>Solicitud
@@ -73,12 +73,11 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1234
+Content-length: 1170
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -143,11 +142,6 @@ Content-Length: 1342
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
-
-
-
-
 
 
 

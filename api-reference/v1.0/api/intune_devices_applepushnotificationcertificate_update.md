@@ -24,8 +24,8 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [applePushNotificationCertificate](../resources/intune_devices_applepushnotificationcertificate.md).
@@ -52,12 +52,12 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 264
+Content-length: 271
 
 {
+  "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
   "appleIdentifier": "Apple Identifier value",
   "topicIdentifier": "Topic Identifier value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificate": "Certificate value"
 }
@@ -80,11 +80,6 @@ Content-Length: 384
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
 
 
 

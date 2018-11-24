@@ -8,7 +8,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
-|Delegado (cuenta profesional o educativa)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (cuenta profesional o educativa)||
+| &nbsp;&nbsp; Incorporación | DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 

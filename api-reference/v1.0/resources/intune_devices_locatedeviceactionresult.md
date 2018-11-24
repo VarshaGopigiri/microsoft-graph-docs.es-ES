@@ -9,8 +9,8 @@ Hereda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|actionName|Cadena|Nombre de la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción Inherited desde [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionName|cadena|Nombre de la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado de la acción Inherited desde [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Los valores posibles son: `none`, `pending`, `canceled`, `active`, `done`, `failed` y `notSupported`.|
 |startDateTime|DateTimeOffset|Hora en la que se inició la acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora en la que se actualizó por última vez el estado de acción. Heredado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune_devices_devicegeolocation.md)|ubicación del dispositivo|
@@ -19,10 +19,11 @@ Hereda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.locateDeviceActionResult"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.locateDeviceActionResult",
@@ -43,11 +44,6 @@ Aquí tiene una representación JSON del recurso.
   }
 }
 ```
-
-
-
-
-
 
 
 

@@ -10,7 +10,7 @@ Hereda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|cadena|Nombre para mostrar. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|descripción|String|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
+|descripción|cadena|Descripción. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|cadena|OMA. Heredado de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |fileName|cadena|Nombre de archivo asociado a la propiedad de valor (*.xml).|
 |valor|Binario|Valor. (Matriz de bytes codificada UTF8)|
@@ -19,10 +19,11 @@ Hereda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingStringXml",
@@ -33,11 +34,6 @@ Aquí tiene una representación JSON del recurso.
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

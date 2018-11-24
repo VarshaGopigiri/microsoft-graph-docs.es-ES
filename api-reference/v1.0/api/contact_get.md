@@ -1,11 +1,11 @@
-# <a name="get-contact"></a>Obtener contacto
+# <a name="get-contact"></a>Get contact
 
-Recupera las propiedades y relaciones de un objeto de contacto.
+Recupera las propiedades y relaciones de un objeto contact.
 
-Existen dos casos en los que una aplicación puede obtener un contacto en la carpeta de contactos de otro usuario:
+Hay dos escenarios donde una aplicación puede obtener un contacto en la carpeta de contactos de otro usuario:
 
 * Si la aplicación tiene permisos de aplicación, o bien,
-* Si la aplicación tiene [los permisos](#permissions) adecuados de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o se le concede acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
+* Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o, se le concede acceso delegado a ese usuario. Consulte los [Detalles y un ejemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Permisos
@@ -18,7 +18,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } --> Un [contacto](../resources/contact.md) de la [contactFolder](../resources/contactfolder.md) predeterminada de un usuario.
+<!-- { "blockType": "ignored" } -->Un [contacto](../resources/contact.md) desde predeterminado de un usuario [contactFolder](../resources/contactfolder.md).
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -36,8 +36,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 |Nombre|Valor|Descripción|
 |:---------------|:--------|:-------|
-|$expand|cadena|Lista separada por comas de relaciones para expandir e incluir en la respuesta. Consulte la tabla de relaciones del objeto [contact](../resources/contact.md) para saber los nombres admitidos. |
-|$select|cadena|Lista separada por comas de propiedades para incluir en la respuesta.|
+|$expand|string|Lista separada por comas de relaciones para expandir e incluir en la respuesta. Consulte la tabla de relaciones del objeto [contact](../resources/contact.md) para saber los nombres admitidos. |
+|$select|string|Lista separada por comas de propiedades para incluir en la respuesta.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
@@ -106,7 +106,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

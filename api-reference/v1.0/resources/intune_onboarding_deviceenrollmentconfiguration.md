@@ -14,9 +14,9 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Todavía no documentado|
-|displayName|Cadena|Todavía no documentado|
-|descripción|Cadena|Todavía no documentado|
+|id|cadena|Todavía no documentado|
+|displayName|cadena|Todavía no documentado|
+|descripción|cadena|Todavía no documentado|
 |prioridad|Int32|Todavía no documentado|
 |createdDateTime|DateTimeOffset|Todavía no documentado|
 |lastModifiedDateTime|DateTimeOffset|Todavía no documentado|
@@ -29,12 +29,12 @@ Todavía no documentado
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentConfiguration",
@@ -47,11 +47,6 @@ Aquí tiene una representación JSON del recurso.
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

@@ -15,7 +15,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 > **Nota** Para actualizar la foto de un usuario de la organización, la aplicación debe tener el permiso de aplicación User.ReadWrite.All y llamar a esta API bajo su propia identidad, no en nombre de un usuario. Para obtener más información, consulte cómo [obtener acceso sin un usuario que ha iniciado sesión](../../../concepts/auth_v2_service.md).
 
-## <a name="http-request-to-update-the-photo"></a>Solicitud HTTP para actualizar la foto
+## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value

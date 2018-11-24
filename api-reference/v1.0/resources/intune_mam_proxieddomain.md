@@ -13,10 +13,11 @@ Dominio con proxy
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.proxiedDomain"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.proxiedDomain",
@@ -24,11 +25,6 @@ Aquí tiene una representación JSON del recurso.
   "proxy": "String"
 }
 ```
-
-
-
-
-
 
 
 

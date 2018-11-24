@@ -19,10 +19,11 @@ Contiene las propiedades del sistema operativo mínimo necesario para una aplica
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMinimumOperatingSystem",
@@ -36,11 +37,6 @@ Aquí tiene una representación JSON del recurso.
   "v5_1": true
 }
 ```
-
-
-
-
-
 
 
 

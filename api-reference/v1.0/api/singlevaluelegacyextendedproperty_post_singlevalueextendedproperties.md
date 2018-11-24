@@ -4,29 +4,36 @@ Cree una o varias propiedades extendidas de valor único en una instancia nueva 
 
 Se admiten los siguientes recursos de usuario:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [event](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 También los siguientes recursos de grupo:
 
-- [event](../resources/event.md) de grupo
 - [calendar](../resources/calendar.md) de grupo
+- [event](../resources/event.md) de grupo
 - [post](../resources/post.md) de grupo 
 
 Consulte el artículo de [información general sobre las propiedades extendidas](../resources/extended-properties-overview.md) para obtener más información sobre cuándo usar las extensiones abiertas o las propiedades extendidas y cómo especificar las propiedades extendidas.
 
 ## <a name="permissions"></a>Permisos
-Según el recurso en el que cree la propiedad extendida, se requiere uno de los siguientes ámbitos para ejecutar esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Dependiendo del recurso que está creando la propiedad extendida en y el permiso escriba (delegada o de la aplicación) se solicitud, el permiso especificado en la tabla siguiente es el requisito mínimo para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| Recurso admitido | Delegado (cuenta profesional o educativa) | Delegado (cuenta personal de Microsoft) | Aplicación |
+|:-----|:-----|:-----|:-----|
+| [calendario](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| [calendar](../resources/calendar.md) de grupo | Group.ReadWrite.All | No admitido | No admitido |
+| [event](../resources/event.md) de grupo | Group.ReadWrite.All | No admitido | No admitido |
+| [post](../resources/post.md) de grupo | Group.ReadWrite.All | No admitido | No admitido |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [mensaje](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## <a name="http-request"></a>Solicitud HTTP
 Puede crear propiedades extendidas en una instancia de recurso nueva o existente.
 
@@ -106,8 +113,8 @@ Proporcione un cuerpo JSON para cada objeto [singleValueLegacyExtendedProperty](
 |Propiedad|Tipo|Descripción|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)| Una matriz de una o varias propiedades extendidas de valor único. |
-|id|Cadena|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique esto para identificar la propiedad. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
-|value|cadena|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique el valor de la propiedad. Necesario.|
+|id|String|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique esto para identificar la propiedad. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
+|value|string|Para cada propiedad de la colección **singleValueExtendedProperties**, especifique el valor de la propiedad. Necesario.|
 
 Al crear una propiedad extendida en una instancia de recurso _nueva_, además de la nueva colección **singleValueExtendedProperties**, proporcione una representación JSON de esa instancia de recurso (es decir, un [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.).
 

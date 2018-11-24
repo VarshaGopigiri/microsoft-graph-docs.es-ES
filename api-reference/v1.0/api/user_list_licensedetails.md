@@ -18,7 +18,7 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método **no** admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
+Este método **no** admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|

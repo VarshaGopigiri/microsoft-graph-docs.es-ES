@@ -34,16 +34,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Todavía no documentado|
+|id|String|Todavía no documentado|
 |lastSyncDateTime|DateTimeOffset|Última hora de sincronización para Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Estado de Exchange Connector Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
-|primarySmtpAddress|Cadena|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
-|serverName|Cadena|El nombre del servidor de Exchange.|
-|connectorServerName|Cadena|El nombre del servidor que hospeda el Exchange Connector.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|El tipo de Exchange Connector configurado. Los valores posibles son: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|version|Cadena|La versión del ExchangeConnectorAgent|
-|exchangeAlias|Cadena|Un alias asignado al servidor de Exchange|
-|exchangeOrganization|Cadena|Organización de Exchange al servidor de Exchange|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Estado del conector de Exchange. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
+|primarySmtpAddress|String|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
+|serverName|String|El nombre del servidor de Exchange.|
+|connectorServerName|String|El nombre del servidor que hospeda el Exchange Connector.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|El tipo de Exchange Connector configurado. Los valores posibles son: `onPremises`, `hosted`, `serviceToService` y `dedicated`.|
+|version|String|La versión del ExchangeConnectorAgent|
+|exchangeAlias|String|Un alias asignado al servidor de Exchange|
+|exchangeOrganization|String|Organización de Exchange al servidor de Exchange|
 
 
 
@@ -93,11 +93,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

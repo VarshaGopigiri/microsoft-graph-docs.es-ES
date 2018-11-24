@@ -12,8 +12,8 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|displayName|String|El nombre de la directiva.|
+|id|cadena|Clave de la entidad.|
+|displayName|cadena|El nombre de la directiva.|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos no compatibles.|
 |remediatedDeviceCount|Int32|Número de dispositivos corregidos.|
@@ -33,12 +33,12 @@ Todavía no documentado
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.softwareUpdateStatusSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
@@ -60,11 +60,6 @@ Aquí tiene una representación JSON del recurso.
   "notApplicableUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

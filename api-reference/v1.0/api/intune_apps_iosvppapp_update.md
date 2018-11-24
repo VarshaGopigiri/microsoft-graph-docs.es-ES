@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,30 +34,30 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Clave de la entidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|displayName|Cadena|Título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|descripción|Cadena|Descripción de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publicador|Cadena|Publicador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|id|String|Clave de la entidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|displayName|String|Título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|description|String|Descripción de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publicador|String|Publicador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|Icono grande que se mostrará en los detalles de la aplicación y se usa para cargar el icono. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
 |isFeatured|Booleano|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|propietario/a|Cadena|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|programador|Cadena|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|notas|Cadena|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|El estado de publicación para la aplicación. La aplicación no se puede asignar a menos que se publique la aplicación. Se hereda de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing`, `published`.|
+|privacyInformationUrl|String|Dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|informationUrl|String|Dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|owner|String|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|developer|String|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|notas|String|Notas de la aplicación. Heredado de [mobileApp](../resources/intune_apps_mobileapp.md).|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Se hereda de [mobileApp](../resources/intune_apps_mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
 |usedLicenseCount|Int32|Número de licencias VPP en uso.|
 |totalLicenseCount|Int32|Número total de licencias VPP.|
 |releaseDateTime|DateTimeOffset|Fecha y hora de publicación de la aplicación de VPP.|
-|appStoreUrl|Cadena|Dirección URL de la tienda.|
+|appStoreUrl|String|Dirección URL de la tienda.|
 |licensingType|[vppLicensingType](../resources/intune_apps_vpplicensingtype.md)|Tipo de licencia compatible.|
 |applicableDeviceType|[iosDeviceType](../resources/intune_apps_iosdevicetype.md)|Tipo de dispositivo iOS aplicable.|
-|vppTokenOrganizationName|Cadena|Organización asociada al token del Programa de Compras por Volumen de Apple|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|El tipo de programa de compra de volumen al que está asociado el Token de programa de compra de volumen de Apple determinado. Los valores posibles son: `business`, `education`. Los valores posibles son: `business`, `education`.|
-|vppTokenAppleId|Cadena|Identificador de Apple asociado al token del Programa de Compras por Volumen de Apple especificado.|
-|bundleId|Cadena|Nombre de la identidad.|
+|vppTokenOrganizationName|String|Organización asociada al token del Programa de Compras por Volumen de Apple|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|Tipo de programa de compras por volumen al que está asociado el token del Programa de Compras por Volumen de Apple especificado. Los valores posibles son: `business` y `education`. Los valores posibles son: `business` y `education`.|
+|vppTokenAppleId|String|Identificador de Apple asociado al token del Programa de Compras por Volumen de Apple especificado.|
+|bundleId|String|Nombre de la identidad.|
 
 
 
@@ -70,9 +70,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1238
+Content-length: 1222
 
 {
+  "@odata.type": "#microsoft.graph.iosVppApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -81,7 +82,6 @@ Content-length: 1238
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -157,11 +157,6 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,37 +1,37 @@
-# <a name="list-subscriptions"></a>Listar subscripciones
+# <a name="list-subscriptions"></a>Suscripciones de lista
 
 Recuperar las propiedades y relaciones de suscripciones de webhook, según el identificador de la aplicación, el usuario y el rol del usuario con un inquilino.
 
 ## <a name="permissions"></a>Permisos
 
-Esta API admite los siguientes ámbitos de permisos; para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Esta API admite los siguientes ámbitos de permisos; Para obtener más información, incluido cómo elegir permisos, vea [permisos](../../../concepts/permissions_reference.md).
 
 | Tipo de permiso  | Permisos (de menos a más privilegiados)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegado](../../../concepts/auth_v2_user.md) (cuenta profesional o educativa) | Rol necesario para [crear una suscripción](subscription_get.md) o para Subscriptions.Read.All (ver abajo). |
-| [Delegado](../../../concepts/auth_v2_user.md) (cuenta personal de Microsoft) | Rol necesario para [crear una suscripción](./subscription_get.md) o para Subscriptions.Read.All (ver abajo). |
-| [Aplicación](../../../concepts/auth_v2_service.md) | Función necesaria para [crear una suscripción](./subscription_get.md). |
+| [Permisos de delegado](../../../concepts/auth_v2_user.md) (cuenta de trabajo o escuela) | Función necesaria para [crear la suscripción](subscription_post_subscriptions.md) o Subscription.Read.All (vea a continuación). |
+| [Permisos de delegado](../../../concepts/auth_v2_user.md) (cuenta Microsoft personal) | Función necesaria para [crear la suscripción](subscription_post_subscriptions.md) o Subscription.Read.All (vea a continuación). |
+| [Permiso de aplicación](../../../concepts/auth_v2_service.md) | Función necesaria para [crear la suscripción](subscription_post_subscriptions.md). |
 
-Los resultados de la respuesta se basan en el contexto de la aplicación que hace la llamada. El siguiente es un resumen de las situaciones comunes:
+Los resultados de la respuesta se basan en el contexto de la aplicación que llama. El siguiente es un resumen de los escenarios comunes:
 
-### <a name="basic-scenarios"></a>Situaciones básicas
+### <a name="basic-scenarios"></a>Escenarios básicos
 
-Normalmente, una aplicación desea recuperar las suscripciones que creó originalmente para el usuario que ha iniciado la sesión actual, o para todos los usuarios en el directorio (cuentas de trabajo o escuela). Estas situaciones no requieren ningún permiso especial más allá de los que la aplicación que se usó originalmente para crear sus suscripciones.
+Con más frecuencia, una aplicación desea recuperar las suscripciones que creó originalmente para el usuario que ha iniciado la sesión actual, o para todos los usuarios en el directorio (las cuentas de trabajo o escuela). Estos escenarios no requieren ningún permiso especial más allá de los que la aplicación que se usó originalmente para crear sus suscripciones.
 
-| Contexto de la aplicación que llama | La respuesta contiene |
+| Contexto de la aplicación que llama | Contiene la respuesta |
 |:-----|:---------------- |
-| La aplicación llama en nombre del usuario que ha iniciado sesión (permiso delegado). <br/>-y-<br/>La aplicación tiene el permiso original necesario para [crear la suscripción](subscription_post_subscriptions.md).<br/><br/>Nota: Esto se aplica a las cuentas de Microsoft personales y las cuentas de trabajo o escuela. | Suscripciones creadas por **esta aplicación** solo para el usuario que ha iniciado sesión. |
-| La aplicación llama en nombre propio (permiso de aplicación).<br/>-y-<br/>La aplicación tiene el permiso original necesario para [crear la suscripción](subscription_post_subscriptions.md).<br/><br/>Nota: Esto solo se aplica a cuentas de trabajo/escuela.| Suscripciones creadas por **esta aplicación** para sí misma o para cualquier usuario en el directorio.|
+| Aplicación está llamando en nombre del usuario ha iniciado sesión (delegar permisos). <br/>- y -<br/>Aplicación tiene el permiso original necesario para [crear la suscripción](subscription_post_subscriptions.md).<br/><br/>Nota: Esto se aplica a las cuentas de Microsoft personal y las cuentas de trabajo o escuela. | Suscripciones creadas por **esta aplicación** para sólo el usuario ha iniciado sesión. |
+| Aplicación está llamando en nombre propio (permiso a la aplicación).<br/>- y -<br/>Aplicación tiene el permiso original necesario para [crear la suscripción](subscription_post_subscriptions.md).<br/><br/>Nota: Esto se aplica sólo las cuentas de trabajo o escuela.| Suscripciones creadas por **esta aplicación** para sí o para cualquier usuario en el directorio.|
 
-### <a name="advanced-scenarios"></a>Situaciones avanzadas
+### <a name="advanced-scenarios"></a>Escenarios avanzados
 
 En algunos casos, una aplicación desea recuperar las suscripciones creadas por otras aplicaciones. Por ejemplo, un usuario desea ver todas las suscripciones creadas por cualquier aplicación en su nombre. O bien, puede que un administrador desee ver todas las suscripciones de todas las aplicaciones en su directorio.
 Para estos escenarios, se requiere un permiso delegado Subscription.Read.All.
 
-| Contexto de la aplicación que llama | La respuesta contiene |
+| Contexto de la aplicación que llama | Contiene la respuesta |
 |:-----|:---------------- |
-| La aplicación llama en nombre del usuario que ha iniciado sesión (permiso delegado). *Si el usuario no es administrador*. <br/>-y-<br/>La aplicación tiene el permiso Subscription.Read.All<br/><br/>Nota: Esto se aplica a las cuentas de Microsoft personales y las cuentas de trabajo o escuela. | Suscripciones creadas por **cualquier aplicación** solo para el usuario que ha iniciado sesión. |
-| La aplicación llama en nombre del usuario que ha iniciado sesión (permiso delegado). *El usuario es un administrador*.<br/>-y-<br/>La aplicación tiene el permiso Subscription.Read.All<br/><br/>Nota: Esto solo se aplica a cuentas de trabajo/escuela. | Suscripciones creadas por **cualquier aplicación** para **cualquier usuario** en el directorio.|
+| Aplicación está llamando en nombre del usuario ha iniciado sesión (delegar permisos). *El usuario es un usuario sin permisos de administrador*. <br/>- y -<br/>Aplicación tiene el permiso Subscription.Read.All<br/><br/>Nota: Esto se aplica a las cuentas de Microsoft personal y las cuentas de trabajo o escuela. | Suscripciones creadas por **cualquier aplicación** para sólo el usuario ha iniciado sesión. |
+| Aplicación está llamando en nombre del usuario ha iniciado sesión (delegar permisos). *El usuario es un administrador*.<br/>- y -<br/>Aplicación tiene el permiso Subscription.Read.All<br/><br/>Nota: Esto se aplica sólo las cuentas de trabajo o escuela. | Suscripciones creadas por **cualquier aplicación** para **cualquier usuario** en el directorio.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -43,13 +43,13 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
-Este método no es compatible con los [Parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ayudar a personalizar la respuesta.
+Este método no es compatible con los [Parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ayudar a personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -57,7 +57,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una lista de objetos de [suscripción](../resources/subscription.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y una lista de objetos de [suscripción](../resources/subscription.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 ##### <a name="response"></a>Respuesta
 
-Este es un ejemplo de la respuesta.  Tenga en cuenta que es posible que esté truncada por razones de brevedad.  Todas las propiedades admitidas adecuadas para la solicitud y el contexto de la llamada se devolverán de una llamada real.
+Este es un ejemplo de la respuesta.  Tenga en cuenta que es posible que esté truncada por razones de brevedad.  Todos los admiten propiedades adecuadas para la solicitud y se devolverá el contexto de la llamada de una llamada real.
 
 <!-- {
   "blockType": "response",
@@ -115,4 +115,4 @@ Content-length: 586
   "tocPath": ""
 }-->
 
-Cuando una solicitud devuelve varias páginas de datos, la respuesta incluye una propiedad `@odata.nextLink` que le ayudará a administrar los resultados.  Para obtener más información, vea [Paginación de datos de Microsoft Graph en su aplicación](../../../concepts/paging.md).
+Cuando una solicitud devuelve varias páginas de datos, la respuesta incluye un `@odata.nextLink` (propiedad) que le ayudarán a administrar los resultados.  Para obtener más información, vea [datos de paginación Microsoft Graph en su aplicación](../../../concepts/paging.md).

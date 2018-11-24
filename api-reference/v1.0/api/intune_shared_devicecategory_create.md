@@ -8,7 +8,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
-|Delegado (cuenta profesional o educativa)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (cuenta profesional o educativa)||
+| &nbsp;&nbsp; **Incorporación** | DeviceManagementManaged Devices.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -35,6 +36,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
+|**Incorporación de redes**|
 |displayName|String|Nombre para mostrar de la categoría de dispositivo.|
 |descripción|String|Descripción opcional de la categoría de dispositivo.|
 

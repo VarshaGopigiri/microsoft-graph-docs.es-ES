@@ -7,17 +7,18 @@ Contiene las propiedades del elemento de configuración de la configuración de 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |appConfigKey|Cadena|Clave de configuración de la aplicación.|
-|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|Tipo de clave de configuración de aplicación. Los valores posibles son: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|Tipo de clave de configuración de la aplicación. Los valores posibles son: `stringType`, `integerType`, `realType`, `booleanType` y `tokenType`.|
 |appConfigKeyValue|Cadena|Valor de clave de configuración de la aplicación.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
@@ -26,11 +27,6 @@ Aquí tiene una representación JSON del recurso.
   "appConfigKeyValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -13,23 +13,23 @@ Certificado de notificación de inserción de Apple.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único del certificado|
-|appleIdentifier|String|Id. de Apple de la cuenta que se usó para crear el certificado push MDM.|
-|topicIdentifier|String|Id. del tema|
+|id|cadena|Identificador único del certificado|
+|appleIdentifier|cadena|Id. de Apple de la cuenta que se usó para crear el certificado push MDM.|
+|topicIdentifier|cadena|Id. del tema|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación del certificado de notificación push de Apple.|
 |expirationDateTime|DateTimeOffset|Fecha y hora de la expiración del certificado de notificación push de Apple.|
-|certificado|String|Todavía no documentado|
+|certificado|cadena|Todavía no documentado|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.applePushNotificationCertificate"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -41,11 +41,6 @@ Aquí tiene una representación JSON del recurso.
   "certificate": "String"
 }
 ```
-
-
-
-
-
 
 
 

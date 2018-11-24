@@ -27,7 +27,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
@@ -70,11 +70,6 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [managedAppOperation](../resources/intune_mam_managedappoperation.md).
@@ -36,9 +36,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |displayName|String|El nombre de la operación.|
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
-|estado|String|El estado actual de la operación|
-|id|Cadena|Clave de la entidad.|
-|version|Cadena|Versión de la entidad.|
+|state|String|El estado actual de la operación|
+|id|String|Clave de la entidad.|
+|version|String|Versión de la entidad.|
 
 
 
@@ -51,11 +51,11 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/operations/{managedAppOperationId}
 Content-type: application/json
-Content-length: 165
+Content-length: 159
 
 {
+  "@odata.type": "#microsoft.graph.managedAppOperation",
   "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "State value",
   "version": "Version value"
 }
@@ -77,11 +77,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

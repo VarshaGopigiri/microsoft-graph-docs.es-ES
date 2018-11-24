@@ -25,7 +25,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceComplianceSettingState](../resources/intune_deviceconfig_devicecompliancesettingstate.md).
@@ -34,17 +34,17 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad|
-|setting|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
-|settingName|Cadena|El nombre de configuración que se está notificando|
-|deviceId|Cadena|El identificador del dispositivo que se está notificando|
-|deviceName|Cadena|El nombre del dispositivo que se está notificando|
-|userId|Cadena|El identificador del usuario que se está notificando|
-|userEmail|Cadena|La dirección de correo electrónico del usuario que se está notificando|
-|userName|Cadena|El nombre de usuario que se está notificando|
-|userPrincipalName|Cadena|El nombre principal de usuario que se está notificando|
-|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
-|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|id|String|Clave de la entidad|
+|ajustes|String|El nombre de la clase de configuración y el nombre de propiedad.|
+|settingName|String|El nombre de configuración que se está notificando|
+|deviceId|String|El identificador del dispositivo que se está notificando|
+|deviceName|String|El nombre del dispositivo que se está notificando|
+|userId|String|El identificador del usuario que se está notificando|
+|userEmail|String|La dirección de correo electrónico del usuario que se está notificando|
+|userName|String|El nombre de usuario que se está notificando|
+|userPrincipalName|String|El nombre principal de usuario que se está notificando|
+|deviceModel|String|El modelo de dispositivo que se está notificando|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 
 
@@ -58,9 +58,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}/deviceComplianceSettingStates/{deviceComplianceSettingStateId}
 Content-type: application/json
-Content-length: 450
+Content-length: 517
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceSettingState",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "deviceId": "Device Id value",
@@ -98,11 +99,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
-
-
-
 
 
 

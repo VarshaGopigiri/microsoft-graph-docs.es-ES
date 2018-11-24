@@ -1,11 +1,11 @@
-# <a name="get-contactfolder"></a>Obtener contactFolder
+# <a name="get-contactfolder"></a>Get contactFolder
 
 Obtiene una carpeta de contactos mediante el id. de carpeta de contactos.
 
-Existen dos casos en los que una aplicación puede obtener la carpeta de contactos de otros usuario:
+Hay dos escenarios donde una aplicación puede obtener la carpeta de contactos de otro usuario:
 
 * Si la aplicación tiene permisos de aplicación, o bien,
-* Si la aplicación tiene [los permisos](#permissions) adecuados de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o se le concede acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
+* Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o, se le concede acceso delegado a ese usuario. Consulte los [Detalles y un ejemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Permisos
@@ -24,11 +24,11 @@ GET /me/contactFolders/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

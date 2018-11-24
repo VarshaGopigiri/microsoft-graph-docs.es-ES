@@ -30,7 +30,7 @@ PATCH /schemaExtensions/{id}
 | Authorization  | {token} de portador. Obligatorio. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
@@ -38,7 +38,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |:---------------|:--------|:----------|
 |description|String|Descripción de la extensión de esquema.|
 |properties|Colección [extensionSchemaProperty](../resources/extensionschemaproperty.md)|La colección de nombres de propiedad y tipos que conforman la definición de la extensión de esquema. Solo se admiten cambios para agregar elementos. |
-|status|String|El estado del ciclo de vida de la extensión de esquema. El estado inicial tras la creación es **InDevelopment**. Las posibles transiciones entre estados son de **InDevelopment** a **Available**, de **Available** a **Deprecated**, y de **Deprecated** a **Available**.|
+|status|Cadena|El estado del ciclo de vida de la extensión de esquema. El estado inicial después de su creación es **InDevelopment**. Transiciones de los Estados posibles son de **InDevelopment** a **disponible** y **disponible** para **ya no se utiliza**.|
 |targetTypes|Colección string|Conjunto de tipos de Microsoft Graph (compatibles con extensiones) a los que se puede aplicar la extensión de esquema.  Solo se admiten cambios para agregar elementos.|
 
 ## <a name="response"></a>Respuesta
@@ -84,7 +84,7 @@ Content-length: 201
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)

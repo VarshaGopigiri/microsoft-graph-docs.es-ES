@@ -13,10 +13,11 @@ Contiene las propiedades de un contenido MIME genérico.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mimeContent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mimeContent",
@@ -24,11 +25,6 @@ Aquí tiene una representación JSON del recurso.
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

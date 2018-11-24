@@ -9,15 +9,15 @@ Puede acceder a un conjunto de objetos de Excel (como una tabla, intervalo o gr�
 devuelve una colección de objetos de hoja de cálculo que forman parte del libro.    
 
 
-La API de REST de Excel solo es compatible con libros de formato de archivo XML abierto de Office. Los libros con la extensión `.xls` no son compatibles. 
+La API REST de Excel solo es compatible con libros de formato de archivo Office Open XML. Los libros con la extensión `.xls` no son compatibles. 
 
 **Nota**: Aún no se admiten los libros almacenados en la plataforma para consumidores de OneDrive. En este momento, las API REST de Excel solo admiten los archivos almacenados en la plataforma empresarial. 
 
 ## <a name="authorization-and-scopes"></a>Autorización y ámbitos
 
-Puede usar el [punto de conexión de Azure AD v.2](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
+Puede usar el [punto de conexión de Azure AD v.2](https://developer.microsoft.com/graph/docs/authorization/converged_auth) para autenticar las API de Excel. Todas las API requieren el encabezado HTTP `Authorization: Bearer {access-token}`.   
   
-Uno de los siguientes [ámbitos de permiso](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) es necesario para utilizar el recurso de Excel:
+Uno de los siguientes [ámbitos de permiso](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) es necesario para utilizar el recurso de Excel:
 
 * Files.Read (para acciones de lectura)
 * Files.ReadWrite (para acciones de lectura y escritura)
@@ -70,7 +70,7 @@ content-type: application/json;odata.metadata
 #### <a name="usage"></a>Uso 
 
 El identificador de sesión devuelto de la llamada anterior se pasa como un encabezado en las subsiguientes solicitudes API en  
-`workbook-session-id` el encabezado HTTP `workbook-session-id`. 
+el encabezado HTTP `workbook-session-id`. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -137,7 +137,7 @@ workbook-session-id: {session-id}
 { "name": "Sheet32243" }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -164,7 +164,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -191,13 +191,13 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
-#### <a name="update-worksheet-properties"></a>Actualizar las propiedades de una hoja de cálculo
+#### <a name="update-worksheet-properties"></a>Actualizar las propiedades de la hoja de cálculo
 
 Solicitud 
 
@@ -230,9 +230,9 @@ content-type: application/json;odata.metadata
 
 ### <a name="chart-operations"></a>Operaciones de gráficos
 
-#### <a name="list-charts-that-are-part-of-the-worksheet"></a>Enumerar los gráficos que forman parte de una hoja de cálculo 
+#### <a name="list-charts-that-are-part-of-the-worksheet"></a>Enumerar los gráficos que forman parte de la hoja de cálculo. 
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
 accept: Application/Json 
@@ -240,7 +240,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -265,14 +265,14 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>Obtener imagen de gráfico
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id} 
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -297,7 +297,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -346,9 +346,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="update-chart-source-data"></a>Actualizar los datos de origen de un gráfico 
+#### <a name="update-chart-source-data"></a>Actualizar los datos de origen del gráfico 
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -359,7 +359,7 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -368,7 +368,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>Obtener una lista de tablas 
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
 accept: Application/Json 
@@ -376,7 +376,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -384,7 +384,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>Crear tabla
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/{table-id}/add
 content-type: Application/Json 
@@ -394,7 +394,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -412,7 +412,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>Actualizar tabla
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
 content-type: Application/Json 
@@ -422,7 +422,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -438,7 +438,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-rows"></a>Obtener una lista de las filas de una tabla
+#### <a name="get-list-of-table-rows"></a>Obtener una lista de las filas de la tabla
 Solicitud 
 
 <!-- { "blockType": "ignored" } -->
@@ -528,9 +528,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="get-list-of-table-columns"></a>Obtener una lista de las columnas de una tabla
+#### <a name="get-list-of-table-columns"></a>Obtener una lista de las columnas de la tabla
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns
 authorization: Bearer {access-token} 
@@ -639,9 +639,9 @@ content-type: application/json;odata.metadata
 ```
 
 
-#### <a name="add-a-table-row"></a>Agregar una fila a una tabla
+#### <a name="add-a-table-row"></a>Agregar una fila a la tabla
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows
 content-type: Application/Json 
@@ -651,7 +651,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
 content-type: application/json;odata.metadata 
@@ -670,9 +670,9 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="add-a-table-column"></a>Agregar una columna a una tabla 
+#### <a name="add-a-table-column"></a>Agregar una columna a la tabla 
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/columns
 content-type: Application/Json 
@@ -709,49 +709,49 @@ content-type: application/json;odata.metadata
 }
 ```
 
-#### <a name="delete-table-row"></a>Eliminar una fila de una tabla
+#### <a name="delete-table-row"></a>Eliminar fila de la tabla
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/rows/$/itemAt(index=6)
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="delete-table-column"></a>Eliminar una columna de una tabla 
-Solicitud <!-- { "blockType": "ignored" } -->
+#### <a name="delete-table-column"></a>Eliminar columna de la tabla 
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/columns('3')
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
-#### <a name="convert-table-to-range"></a>Convertir una tabla en un intervalo 
-Solicitud <!-- { "blockType": "ignored" } -->
+#### <a name="convert-table-to-range"></a>Convertir tabla a intervalo 
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
 content-type: application/json;odata.metadata 
 ```
 
 #### <a name="table-sort"></a>Ordenar tabla
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
 authorization: Bearer {access-token} 
@@ -767,13 +767,13 @@ workbook-session-id: {session-id}
 ```
 
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>Filtro de tabla
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
 authorization: Bearer {access-token} 
@@ -790,21 +790,21 @@ workbook-session-id: {session-id}
 }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 
 #### <a name="clear-filter"></a>Borrar filtro
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -813,7 +813,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-range"></a>Obtener intervalo 
 
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/{item-id}/workbook/worksheets/{worksheet-id}/range(address='A1:B2')
 authorization: Bearer {access-token} 
@@ -1018,7 +1018,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="range-sort"></a>Ordenar intervalo
-Solicitud <!-- { "blockType": "ignored" } -->
+Solicitud<!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/usedRange/sort/apply
 authorization: Bearer {access-token} 
@@ -1033,7 +1033,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Respuesta <!-- { "blockType": "ignored" } -->
+Respuesta<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
@@ -1088,7 +1088,7 @@ content-type: application/json
 
 #### <a name="null-input-in-2-d-array"></a>entrada NULL en una matriz bidimensional
 
-`null` La entrada `null` dentro de una matriz bidimensional (para valores, formato numérico, fórmulas) se omite en los recursos Range y Table. No se producirá ninguna actualización en el objetivo previsto (celda) cuando la entrada `null` se envíe en valores, en formato numérico o en una cuadrícula de fórmulas de valores.
+La entrada `null` dentro de una matriz bidimensional (para valores, formato numérico, fórmulas) se omite en los recursos Range y Table. No se producirá ninguna actualización en el objetivo previsto (celda) cuando la entrada `null` se envíe en valores, en formato numérico o en una cuadrícula de fórmulas de valores.
 
 Por ejemplo, para actualizar solamente partes específicas del intervalo, como el formato numérico de una celda, y conservar el formato numérico existente en otras partes del intervalo, establezca el formato numérico donde sea necesario y envíe `null` para las demás celdas.
 
@@ -1173,7 +1173,7 @@ Una dirección de intervalo sin delimitar solo contiene identificadores de colum
 
 Cuando la API realiza una solicitud para recuperar un intervalo sin delimitar (`getRange('C:C')`), la respuesta devuelta contiene `null` para las propiedades de nivel de celda, como `values`, `text`, `numberFormat` o `formula`. Otras propiedades de intervalo como `address` o `cellCount` reflejarán el intervalo sin delimitar.
 
-#### <a name="write"></a>Escritura
+#### <a name="write"></a>Write
 
 El establecimiento de propiedades de nivel de celda (como valores, formato numérico, etc.) en el intervalo sin delimitar **no está permitido**, ya que la solicitud de entrada podría ser demasiado grande para controlarla.
 

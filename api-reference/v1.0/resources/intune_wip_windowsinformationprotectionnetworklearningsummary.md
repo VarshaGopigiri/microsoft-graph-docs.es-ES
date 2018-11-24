@@ -15,20 +15,20 @@ Entidad del resumen de aprendizaje sobre la red de Windows Information Protectio
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para WindowsInformationProtectionNetworkLearningSummary.|
-|url|String|Dirección URL del sitio web|
+|id|cadena|Identificador único para WindowsInformationProtectionNetworkLearningSummary.|
+|url|cadena|Dirección URL del sitio web|
 |deviceCount|Int32|Recuento de dispositivos|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionNetworkLearningSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
@@ -37,11 +37,6 @@ Aquí tiene una representación JSON del recurso.
   "deviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

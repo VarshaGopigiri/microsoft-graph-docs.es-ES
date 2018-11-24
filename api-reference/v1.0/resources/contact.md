@@ -4,9 +4,9 @@ Un contacto es un elemento de Outlook donde puede organizar y guardar informaci�
 
 Este recurso admite:
 
-- Agregar sus propios datos a las propiedades personalizadas como [extensiones](../../../concepts/extensibility_overview.md).
+- Adición de sus propios datos a las propiedades personalizadas como [extensiones](../../../concepts/extensibility_overview.md).
 - Suscribirse a [las notificaciones de cambios](../../../concepts/webhooks.md).
-- Usar una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/contact_delta.md).
+- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/contact_delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -32,45 +32,44 @@ Este recurso admite:
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|assistantName|Cadena|El nombre del ayudante del contacto.|
+|assistantName|String|El nombre del ayudante del contacto.|
 |birthday|DateTimeOffset|El cumpleaños del contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|La dirección del trabajo del contacto.|
-|businessHomePage|Cadena|La página principal de la empresa del contacto.|
+|businessHomePage|String|La página principal de la empresa del contacto.|
 |businessPhones|Colección String|Los números de teléfono del trabajo del contacto.|
 |categories|Colección String|Las categorías asociadas con el contacto.|
-|changeKey|Cadena|Identifica la versión del contacto. Cada vez que cambia el contacto, cambia también ChangeKey. Permite que Exchange aplique los cambios a la versión correcta del objeto.|
+|changeKey|String|Identifica la versión del contacto. Cada vez que cambia el contacto, cambia también ChangeKey. Permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |children|Colección String|Los nombres de los hijos del contacto.|
-|companyName|Cadena|El nombre de la empresa del contacto.|
+|companyName|String|El nombre de la empresa del contacto.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|departamento|Cadena|El departamento del contacto.|
-|displayName|Cadena|El nombre para mostrar del contacto.|
+|departamento|String|El departamento del contacto.|
+|displayName|String|El nombre para mostrar del contacto. Puede especificar el nombre para mostrar en una operación de [creación](../api/user_post_contacts.md) o [actualización](../api/contact_update.md) . Tenga en cuenta que las actualizaciones posteriores a otras propiedades pueden causar un valor generado automáticamente sobrescribir el valor de displayName que haya especificado. Para conservar un valor existente, siempre incluirla como displayName en una operación [de actualización](../api/contact_update.md) .|
 |emailAddresses|Colección [EmailAddress](emailaddress.md)|Las direcciones de correo electrónico del contacto.|
-|flag|[followUpFlag](followupflag.md)|Valor de marca que indica el estado, la fecha de inicio, la fecha de vencimiento o la fecha de finalización del mensaje.|
-|fileAs|Cadena|El nombre con el que se ha archivado el contacto.|
-|generation|Cadena|La generación del contacto.|
-|givenName|Cadena|El nombre del contacto.|
+|fileAs|String|El nombre con el que se ha archivado el contacto.|
+|generation|String|La generación del contacto.|
+|givenName|String|El nombre del contacto.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|La dirección particular del contacto.|
 |homePhones|Colección String|Los números de teléfono particular del contacto.|
-|id|Cadena|El identificador único del contacto. Solo lectura.|
+|id|String|El identificador único del contacto. Solo lectura.|
 |imAddresses|Colección String|Las direcciones de mensajería instantánea (MI) del contacto.|
-|initials|Cadena|Las iniciales del contacto.|
-|jobTitle|Cadena|El puesto del contacto.|
+|initials|String|Las iniciales del contacto.|
+|jobTitle|String|El puesto del contacto.|
 |lastModifiedDateTime|DateTimeOffset|La hora en que se ha modificado el contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|manager|Cadena|El nombre del administrador del contacto.
-|middleName|Cadena|El segundo nombre del contacto.|
-|mobilePhone|Cadena|El número de teléfono móvil del contacto.|
-|nickName|Cadena|El sobrenombre del contacto.|
-|officeLocation|Cadena|La ubicación de la oficina del contacto.|
+|manager|String|El nombre del administrador del contacto.
+|middleName|String|El segundo nombre del contacto.|
+|mobilePhone|String|El número de teléfono móvil del contacto.|
+|nickName|String|El sobrenombre del contacto.|
+|officeLocation|String|La ubicación de la oficina del contacto.|
 |otherAddress|[PhysicalAddress](physicaladdress.md)|Otras direcciones del contacto.|
-|parentFolderId|Cadena|El identificador de la carpeta principal del contacto.|
-|personalNotes|Cadena|Las notas del usuario sobre el contacto.|
-|profession|Cadena|La profesión del contacto.|
-|spouseName|Cadena|El nombre del cónyuge del contacto.|
-|surname|Cadena|Los apellidos del contacto.|
-|title|Cadena|El título del contacto.|
-|yomiCompanyName|Cadena|El nombre fonético japonés de la empresa del contacto.|
-|yomiGivenName|Cadena|El nombre (nombre de pila) fonético japonés del contacto.|
-|yomiSurname|Cadena|El apellido fonético japonés del contacto.|
+|parentFolderId|String|El identificador de la carpeta principal del contacto.|
+|personalNotes|String|Las notas del usuario sobre el contacto.|
+|profession|String|La profesión del contacto.|
+|spouseName|String|El nombre del cónyuge del contacto.|
+|surname|String|Los apellidos del contacto.|
+|title|String|El título del contacto.|
+|yomiCompanyName|String|El nombre fonético japonés de la empresa del contacto.|
+|yomiGivenName|String|El nombre (nombre de pila) fonético japonés del contacto.|
+|yomiSurname|String|El apellido fonético japonés del contacto.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
@@ -132,7 +131,6 @@ Aquí tiene una representación JSON del recurso
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
-  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

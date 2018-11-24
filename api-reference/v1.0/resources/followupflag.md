@@ -1,7 +1,7 @@
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
 
-Permite establecer una marca para que el usuario realice más adelante el seguimiento en un elemento. Los elementos admitidos incluyen [message](message.md) y [contact](contact.md).
+Permite establecer un indicador en un elemento para el usuario realizar el seguimiento más adelante. 
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

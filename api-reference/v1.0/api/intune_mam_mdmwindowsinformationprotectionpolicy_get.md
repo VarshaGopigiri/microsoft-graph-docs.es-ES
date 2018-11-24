@@ -22,12 +22,12 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -47,11 +47,11 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4343
+Content-Length: 4346
 
 {
   "value": {
-    "@odata.type": "#microsoft.intune_mam_graph.windowsInformationProtectionPolicy",
+    "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
     "displayName": "Display Name value",
     "description": "Description value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -78,7 +78,7 @@ Content-Length: 4343
       "certificate": "Y2VydGlmaWNhdGU="
     },
     "revokeOnUnenrollDisabled": true,
-    "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+    "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
     "protectedApps": [
@@ -179,11 +179,6 @@ Content-Length: 4343
   }
 }
 ```
-
-
-
-
-
 
 
 

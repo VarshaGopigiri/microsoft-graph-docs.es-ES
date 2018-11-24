@@ -12,7 +12,7 @@ Contiene las propiedades del resumen de la instalación de un libro para un disp
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|cadena|Clave de la entidad.|
 |installedDeviceCount|Int32|Número de dispositivos que han instalado correctamente este libro.|
 |failedDeviceCount|Int32|Número de dispositivos que no han podido instalar este libro.|
 |notInstalledDeviceCount|Int32|Número de dispositivos que no han instalado este libro.|
@@ -24,12 +24,12 @@ Contiene las propiedades del resumen de la instalación de un libro para un disp
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.eBookInstallSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.eBookInstallSummary",
@@ -42,11 +42,6 @@ Aquí tiene una representación JSON del recurso.
   "notInstalledUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

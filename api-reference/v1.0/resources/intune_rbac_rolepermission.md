@@ -12,10 +12,11 @@ Todavía no documentado
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rolePermission"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.rolePermission",
@@ -32,11 +33,6 @@ Aquí tiene una representación JSON del recurso.
   ]
 }
 ```
-
-
-
-
-
 
 
 

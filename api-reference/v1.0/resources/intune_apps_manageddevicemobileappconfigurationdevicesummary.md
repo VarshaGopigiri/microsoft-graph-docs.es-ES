@@ -12,7 +12,7 @@ Contiene las propiedades, las propiedades heredadas y las acciones para un resum
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|cadena|Clave de la entidad.|
 |pendingCount|Int32|Número de dispositivos pendientes|
 |notApplicableCount|Int32|Número de dispositivos no aplicables|
 |successCount|Int32|Número de dispositivos correctos|
@@ -25,12 +25,12 @@ Contiene las propiedades, las propiedades heredadas y las acciones para un resum
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceSummary",
@@ -44,11 +44,6 @@ Aquí tiene una representación JSON del recurso.
   "configurationVersion": 1024
 }
 ```
-
-
-
-
-
 
 
 

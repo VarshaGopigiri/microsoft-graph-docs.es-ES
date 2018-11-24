@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No admitida.|
+|Aplicación|No compatible.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -34,95 +34,95 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|description|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|accountBlockModification|Booleano|Indica si se va a permitir la modificación de cuentas cuando el dispositivo está en modo supervisado.|
-|activationLockAllowWhenSupervised|Booleano|Indica si se va a permitir el bloqueo de activación cuando el dispositivo está en modo supervisado.|
-|airDropBlocked|Booleano|Indica si se va a permitir AirDrop cuando el dispositivo está en modo supervisado.|
-|airDropForceUnmanagedDropTarget|Booleano|Indica si se va a hacer que AirDrop se considere un destino de colocación no administrado (iOS 9.0 o posterior).|
-|airPlayForcePairingPasswordForOutgoingRequests|Booleano|Indica si se va a forzar que todos los dispositivos que reciban solicitudes de AirPlay de este dispositivo usen una contraseña de emparejamiento.|
-|appleWatchBlockPairing|Booleano|Indica si se va a permitir el emparejamiento con Apple Watch cuando el dispositivo está en modo supervisado (iOS 9.0 o posterior).|
-|appleWatchForceWristDetection|Booleano|Indica si se va a forzar que un Apple Watch emparejado use la detección de muñeca (iOS 8.2 y posteriores).|
-|appleNewsBlocked|Booleano|Indica si se va a impedir que el usuario use Noticias cuando el dispositivo está en modo supervisado (iOS 9.0 o posterior).|
+|accountBlockModification|Boolean|Indica si se va a permitir la modificación de cuentas cuando el dispositivo está en modo supervisado.|
+|activationLockAllowWhenSupervised|Boolean|Indica si se va a permitir el bloqueo de activación cuando el dispositivo está en modo supervisado.|
+|airDropBlocked|Boolean|Indica si se va a permitir AirDrop cuando el dispositivo está en modo supervisado.|
+|airDropForceUnmanagedDropTarget|Boolean|Indica si se va a hacer que AirDrop se considere un destino de colocación no administrado (iOS 9.0 y versiones posteriores).|
+|airPlayForcePairingPasswordForOutgoingRequests|Boolean|Indica si se va a forzar que todos los dispositivos que reciban solicitudes de AirPlay de este dispositivo usen una contraseña de emparejamiento.|
+|appleWatchBlockPairing|Boolean|Indica si se va a permitir el emparejamiento con Apple Watch cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
+|appleWatchForceWristDetection|Boolean|Indica si se va a forzar que un Apple Watch emparejado use la detección de muñeca (iOS 8.2 y versiones posteriores).|
+|appleNewsBlocked|Boolean|Indica si se va a impedir que el usuario utilice Noticias cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
 |appsSingleAppModeList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Obtiene o establece la lista de aplicaciones permitidas de iOS que pueden entrar de forma autónoma en el Modo de aplicación única. Solo bajo supervisión. iOS 7.0 y versiones posteriores. Esta colección puede contener un máximo de 500 elementos.|
-|appsVisibilityList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en la lista de visibilidad (sea la lista de aplicaciones visibles o que se pueden iniciar o la lista de aplicaciones ocultas o que no se pueden iniciar, controlada por AppsVisibilityListType) (iOS 9.3 y versiones posteriores). Esta colección puede contener un máximo de 10 000 elementos.|
-|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Tipo de lista que se encuentra en la CompliantAppsList. Los valores posibles son: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|appStoreBlockAutomaticDownloads|Booleano|Indica si se va a bloquear la descarga automática de aplicaciones compradas en otros dispositivos cuando el dispositivo está en modo supervisado (iOS 9.0 o posterior).|
-|appStoreBlocked|Booleano|Indica si se va a impedir que el usuario use el App Store.|
-|appStoreBlockInAppPurchases|Booleano|Indica si se va a impedir que el usuario haga compras en la aplicación.|
-|appStoreBlockUIAppInstallation|Booleano|Indica si se va a bloquear la aplicación App Store, sin restringir la instalación mediante aplicaciones host. Se aplica solo al modo supervisado (iOS 9.0 o posterior).|
-|appStoreRequirePassword|Booleano|Indica si se va a requerir una contraseña cuando se use la tienda de aplicaciones.|
-|bluetoothBlockModification|Booleano|Indica si se va a permitir la modificación de la configuración Bluetooth cuando el dispositivo está en modo supervisado (iOS 10.0 o posterior).|
-|cameraBlocked|Booleano|Indica si se va a impedir que el usuario obtenga acceso a la cámara del dispositivo.|
-|cellularBlockDataRoaming|Booleano|Indica si se va a bloquear la itinerancia de datos.|
-|cellularBlockGlobalBackgroundFetchWhileRoaming|Booleano|Indica si se va a impedir la captura de fondo global mientras se está en itinerancia.|
-|cellularBlockPerAppDataModification|Booleano|Indica si se van a permitir los cambios en la configuración de uso de datos de aplicaciones de telefonía móvil cuando el dispositivo está en modo supervisado.|
-|cellularBlockPersonalHotspot|Booleano|Indica si se va a bloquear el punto de acceso personal.|
-|cellularBlockVoiceRoaming|Booleano|Indica si se va a bloquear la itinerancia de voz.|
-|certificatesBlockUntrustedTlsCertificates|Booleano|Indica si se van a bloquear los certificados TLS que no son de confianza.|
-|classroomAppBlockRemoteScreenObservation|Booleano|Indica si se va a permitir la observación de pantalla remota de la aplicación Classroom cuando el dispositivo está en modo supervisado (iOS 9.3 o posterior).|
-|classroomAppForceUnpromptedScreenObservation|Booleano|Indica si se va a autorizar de forma automática al profesor de un curso administrado en la aplicación Classroom para que vea la pantalla de un alumno sin preguntarle cuando el dispositivo está en modo supervisado.|
-|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|configurationProfileBlockChanges|Booleano|Indica si se va a impedir que el usuario instale perfiles de configuración y certificados de forma interactiva cuando el dispositivo está en modo supervisado.|
-|definitionLookupBlocked|Booleano|Indica si se va a bloquear la búsqueda de definiciones cuando el dispositivo está en modo supervisado (iOS 8.1.3 o posterior).|
-|deviceBlockEnableRestrictions|Booleano|Indica si se va a permitir que el usuario active las restricciones en los ajustes del dispositivo cuando el dispositivo está en modo supervisado.|
-|deviceBlockEraseContentAndSettings|Booleano|Indica si se va a permitir el uso de la opción "Borrar todo el contenido y la configuración" en el dispositivo cuando el dispositivo está en modo supervisado.|
-|deviceBlockNameModification|Booleano|Indica si se va a permitir modificar el nombre del dispositivo cuando el dispositivo está en modo supervisado (iOS 9.0 o posterior).|
-|diagnosticDataBlockSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
-|diagnosticDataBlockSubmissionModification|Booleano|Indica si se va a permitir modificar los ajustes del envío de diagnósticos cuando el dispositivo está en modo supervisado (iOS 9.3.2 o posterior).|
-|documentsBlockManagedDocumentsInUnmanagedApps|Booleano|Indica si se va a impedir que el usuario visualice documentos administrados en las aplicaciones no administradas.|
-|documentsBlockUnmanagedDocumentsInManagedApps|Booleano|Indica si se va a impedir que el usuario visualice documentos no administrados en las aplicaciones administradas.|
+|appsVisibilityList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en la lista de visibilidad (sea la lista de aplicaciones visibles o que se pueden iniciar o la lista de aplicaciones ocultas o que no se pueden iniciar, controlada por AppsVisibilityListType) (iOS 9.3 y versiones posteriores). Esta colección puede contener un máximo de 10 000 elementos.|
+|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Tipo de lista que se encuentra en la AppsVisibilityList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|appStoreBlockAutomaticDownloads|Boolean|Indica si se va a impedir la descarga automática de aplicaciones compradas en otros dispositivos cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
+|appStoreBlocked|Boolean|Indica si se va a impedir que el usuario utilice la aplicación App Store.|
+|appStoreBlockInAppPurchases|Boolean|Indica si se va a impedir que el usuario haga compras en la aplicación.|
+|appStoreBlockUIAppInstallation|Boolean|Indica si se va a bloquear la aplicación App Store, sin restringir la instalación mediante aplicaciones host. Se aplica solo al modo supervisado (iOS 9.0 o posterior).|
+|appStoreRequirePassword|Boolean|Indica si se va a requerir una contraseña cuando se use la tienda de aplicaciones.|
+|bluetoothBlockModification|Boolean|Indica si se va a permitir la modificación de la configuración Bluetooth cuando el dispositivo está en modo supervisado (iOS 10.0 y versiones posteriores).|
+|cameraBlocked|Boolean|Indica si se va a impedir que el usuario tenga acceso a la cámara del dispositivo.|
+|cellularBlockDataRoaming|Boolean|Indica si se va a bloquear la itinerancia de datos.|
+|cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Indica si se va a bloquear la captura de fondo global mientras se está en itinerancia.|
+|cellularBlockPerAppDataModification|Boolean|Indica si se van a permitir los cambios en la configuración de uso de datos de aplicaciones de telefonía móvil cuando el dispositivo está en modo supervisado.|
+|cellularBlockPersonalHotspot|Boolean|Indica si se va a bloquear el punto de acceso personal.|
+|cellularBlockVoiceRoaming|Boolean|Indica si se va a bloquear la itinerancia de voz.|
+|certificatesBlockUntrustedTlsCertificates|Boolean|Indica si se van a bloquear los certificados TLS que no son de confianza.|
+|classroomAppBlockRemoteScreenObservation|Boolean|Indica si se va a permitir la observación de pantalla remota de la aplicación Classroom cuando el dispositivo está en modo supervisado (iOS 9.3 y versiones posteriores).|
+|classroomAppForceUnpromptedScreenObservation|Boolean|Indica si se va a autorizar de forma automática al profesor de un curso administrado en la aplicación Classroom para que vea la pantalla de un alumno sin preguntarle cuando el dispositivo está en modo supervisado.|
+|compliantAppsList|Colección [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
+|configurationProfileBlockChanges|Boolean|Indica si se va a impedir que el usuario instale perfiles de configuración y certificados de forma interactiva cuando el dispositivo está en modo supervisado.|
+|definitionLookupBlocked|Boolean|Indica si se va a bloquear la búsqueda de definiciones cuando el dispositivo está en modo supervisado (iOS 8.1.3 y versiones posteriores).|
+|deviceBlockEnableRestrictions|Boolean|Indica si se va a permitir que el usuario active las restricciones en los ajustes del dispositivo cuando el dispositivo está en modo supervisado.|
+|deviceBlockEraseContentAndSettings|Boolean|Indica si se va a permitir el uso de la opción "Borrar todo el contenido y la configuración" en el dispositivo cuando está en modo supervisado.|
+|deviceBlockNameModification|Boolean|Indica si se va a permitir la modificación del nombre del dispositivo cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
+|diagnosticDataBlockSubmission|Boolean|Indica si se va a bloquear el envío de datos de diagnóstico.|
+|diagnosticDataBlockSubmissionModification|Boolean|Indica si se va a permitir la modificación de los ajustes del envío de diagnósticos cuando el dispositivo está en modo supervisado (iOS 9.3.2 y versiones posteriores).|
+|documentsBlockManagedDocumentsInUnmanagedApps|Boolean|Indica si se va a impedir que el usuario visualice documentos administrados en las aplicaciones no administradas.|
+|documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Indica si se va a impedir que el usuario visualice documentos no administrados en las aplicaciones administradas.|
 |emailInDomainSuffixes|Colección String|Una dirección de correo electrónico que carezca de un sufijo que coincida con cualquiera de estas cadenas se considerará fuera de dominio.|
-|enterpriseAppBlockTrust|Booleano|Indica si se va a impedir que el usuario confíe en una aplicación empresarial.|
-|enterpriseAppBlockTrustModification|Booleano|Indica si se va a impedir que el usuario modifique la configuración de confianza de una aplicación empresarial.|
-|faceTimeBlocked|Booleano|Indica si se va a impedir que el usuario use FaceTime.|
-|findMyFriendsBlocked|Booleano|Indica si se va a bloquear Buscar a mis amigos cuando el dispositivo está en modo supervisado.|
-|gamingBlockGameCenterFriends|Booleano|Indica si se va a impedir que el usuario tenga amigos en el Game Center.|
-|gamingBlockMultiplayer|Booleano|Indica si se va a impedir que el usuario use los juegos multijugador.|
-|gameCenterBlocked|Booleano|Indica si se va a impedir que el usuario use el Game Center cuando el dispositivo está en modo supervisado.|
-|hostPairingBlocked|Booleano|Indica si se va a permitir el emparejamiento de host para controlar los dispositivos con los que se puede emparejar un dispositivo iOS cuando el dispositivo iOS está en modo supervisado.|
-|iBooksStoreBlocked|Booleano|Indica si se va a impedir que el usuario use iBooks Store cuando el dispositivo está en modo supervisado.|
-|iBooksStoreBlockErotica|Booleano|Indica si se va a impedir que el usuario descargue archivos multimedia desde el iBook Store que se han etiquetado como eróticos.|
-|iCloudBlockActivityContinuation|Booleano|Indica si se va a impedir que el usuario continúe con el trabajo que empezó en el dispositivo iOS en otro dispositivo macOS o iOS.|
-|iCloudBlockBackup|Booleano|Indica si se va a impedir la copia de seguridad de iCloud.|
-|iCloudBlockDocumentSync|Booleano|Indica si se va a impedir la sincronización de documentos de iCloud.|
-|iCloudBlockManagedAppsSync|Booleano|Indica si se va a impedir la sincronización en la nube de aplicaciones administradas.|
-|iCloudBlockPhotoLibrary|Booleano|Indica si se va a bloquear la Fototeca de iCloud.|
-|iCloudBlockPhotoStreamSync|Booleano|Indica si se va a bloquear la sincronización de fotos en streaming de iCloud.|
-|iCloudBlockSharedPhotoStream|Booleano|Indica si se va a bloquear la sincronización de fotos en streaming compartidas.|
-|iCloudRequireEncryptedBackup|Booleano|Indica si se va a requerir que las copias de seguridad de iCloud estén cifradas.|
-|iTunesBlockExplicitContent|Booleano|Indica si se va a impedir que el usuario obtenga acceso a contenido explícito en iTunes y el App Store.|
-|iTunesBlockMusicService|Booleano|Indica si se va a bloquear el servicio Música y revertir la aplicación Música al modo clásico cuando el dispositivo está en modo supervisado (iOS 9.3 y versiones posteriores, y macOS 10.12 y versiones posteriores).|
-|iTunesBlockRadio|Booleano|Indica si se va a impedir que el usuario use iTunes Radio cuando el dispositivo está en modo supervisado (iOS 9.3 o posterior).|
-|keyboardBlockAutoCorrect|Booleano|Indica si se va a bloquear el autocorrector cuando el dispositivo está en modo supervisado (iOS 8.1.3 o posterior).|
-|keyboardBlockDictation|Booleano|Indica si se va a impedir que el usuario use la entrada dictada cuando el dispositivo está en modo supervisado.|
-|keyboardBlockPredictive|Booleano|Indica si se van a bloquear los teclados predictivos cuando el dispositivo está en modo supervisado (iOS 8.1.3 o posterior).|
-|keyboardBlockShortcuts|Booleano|Indica si se van a bloquear los atajos del teclado cuando el dispositivo está en modo supervisado (iOS 9.0 o posterior).|
-|keyboardBlockSpellCheck|Booleano|Indica si se va a bloquear la revisión ortográfica cuando el dispositivo está en modo supervisado (iOS 8.1.3 o posterior).|
-|kioskModeAllowAssistiveSpeak|Booleano|Indica si se va a permitir la lectura de asistencia en el modo de pantalla completa.|
-|kioskModeAllowAssistiveTouchSettings|Booleano|Indica si se va a permitir el acceso a la configuración de AssistiveTouch en el modo de pantalla completa.|
-|kioskModeAllowAutoLock|Booleano|Indica si se va a permitir el bloqueo automático del dispositivo en el modo de pantalla completa.|
-|kioskModeAllowColorInversionSettings|Booleano|Indica si se va a permitir el acceso a la configuración de la inversión del color en el modo de pantalla completa.|
-|kioskModeAllowRingerSwitch|Booleano|Indica si se va a permitir el uso del cambio de tono en el modo de pantalla completa.|
-|kioskModeAllowScreenRotation|Booleano|Indica si se va a permitir la rotación de pantalla en el modo de pantalla completa.|
-|kioskModeAllowSleepButton|Booleano|Indica si se va a permitir el uso del botón de suspensión en el modo de pantalla completa.|
-|kioskModeAllowTouchscreen|Booleano|Indica si se va a permitir el uso de la pantalla táctil en el modo de pantalla completa.|
-|kioskModeAllowVoiceOverSettings|Booleano|Indica si se va a permitir el acceso a la configuración de voz en off en el modo de pantalla completa.|
-|kioskModeAllowVolumeButtons|Booleano|Indica si se va a permitir el uso de los botones de volumen en el modo de pantalla completa.|
-|kioskModeAllowZoomSettings|Booleano|Indica si se va a permitir el acceso a la configuración de zoom en el modo de pantalla completa.|
-|kioskModeAppStoreUrl|Cadena|Dirección URL en la tienda de aplicaciones a la aplicación que se usará para el modo de pantalla completa. Úsela si KioskModeManagedAppId es desconocido.|
-|kioskModeBuiltInAppId|Cadena|Identificador de aplicaciones integradas que se usará para el modo de pantalla completa. Se usa cuando no se establecen KioskModeManagedAppId y KioskModeAppStoreUrl.|
+|enterpriseAppBlockTrust|Boolean|Indica si se va a impedir que el usuario confíe en una aplicación empresarial.|
+|enterpriseAppBlockTrustModification|Boolean|Indica si se va a impedir que el usuario modifique la configuración de confianza de una aplicación empresarial.|
+|faceTimeBlocked|Boolean|Indica si se va a impedir que el usuario utilice FaceTime.|
+|findMyFriendsBlocked|Boolean|Indica si se va a bloquear la aplicación Buscar a mis amigos cuando el dispositivo está en modo supervisado.|
+|gamingBlockGameCenterFriends|Boolean|Indica si se va a impedir que el usuario tenga amigos en Game Center.|
+|gamingBlockMultiplayer|Boolean|Indica si se va a impedir que el usuario utilice los juegos multijugador.|
+|gameCenterBlocked|Boolean|Indica si se va a impedir que el usuario utilice Game Center cuando el dispositivo está en modo supervisado.|
+|hostPairingBlocked|Boolean|Indica si se va a permitir el emparejamiento de host para controlar los dispositivos con los que se puede emparejar un dispositivo iOS cuando está en modo supervisado.|
+|iBooksStoreBlocked|Boolean|Indica si se va a impedir que el usuario utilice iBooks Store cuando el dispositivo está en modo supervisado.|
+|iBooksStoreBlockErotica|Boolean|Indica si se va a impedir que el usuario descargue archivos multimedia que se han etiquetado como eróticos desde iBookstore.|
+|iCloudBlockActivityContinuation|Boolean|Indica si se va a impedir que el usuario continúe con el trabajo que empezó en el dispositivo iOS en otro dispositivo macOS o iOS.|
+|iCloudBlockBackup|Boolean|Indica si se va a bloquear la copia de seguridad de iCloud.|
+|iCloudBlockDocumentSync|Boolean|Indica si se va a bloquear la sincronización de documentos de iCloud.|
+|iCloudBlockManagedAppsSync|Boolean|Indica si se va a bloquear la sincronización en la nube de aplicaciones administradas.|
+|iCloudBlockPhotoLibrary|Boolean|Indica si se va a bloquear la Fototeca de iCloud.|
+|iCloudBlockPhotoStreamSync|Boolean|Indica si se va a bloquear la sincronización de fotos en streaming de iCloud.|
+|iCloudBlockSharedPhotoStream|Boolean|Indica si se va a bloquear la sincronización de fotos en streaming compartidas.|
+|iCloudRequireEncryptedBackup|Boolean|Indica si se va a requerir que las copias de seguridad de iCloud estén cifradas.|
+|iTunesBlockExplicitContent|Boolean|Indica si se va a impedir que el usuario tenga acceso a contenido explícito en iTunes y la aplicación App Store.|
+|iTunesBlockMusicService|Boolean|Indica si se va a bloquear el servicio Música y revertir la aplicación Música al modo clásico cuando el dispositivo está en modo supervisado (iOS 9.3 y versiones posteriores, y macOS 10.12 y versiones posteriores).|
+|iTunesBlockRadio|Boolean|Indica si se va a impedir que el usuario utilice iTunes Radio cuando el dispositivo está en modo supervisado (iOS 9.3 y versiones posteriores).|
+|keyboardBlockAutoCorrect|Boolean|Indica si se va a bloquear el autocorrector cuando el dispositivo está en modo supervisado (iOS 8.1.3 y versiones posteriores).|
+|keyboardBlockDictation|Boolean|Indica si se va a impedir que el usuario utilice la entrada por dictado cuando el dispositivo está en modo supervisado.|
+|keyboardBlockPredictive|Boolean|Indica si se van a bloquear los teclados predictivos cuando el dispositivo está en modo supervisado (iOS 8.1.3 y versiones posteriores).|
+|keyboardBlockShortcuts|Boolean|Indica si se van a bloquear los métodos abreviados de teclado cuando el dispositivo está en modo supervisado (iOS 9.0 y versiones posteriores).|
+|keyboardBlockSpellCheck|Boolean|Indica si se va a bloquear la revisión ortográfica cuando el dispositivo está en modo supervisado (iOS 8.1.3 y versiones posteriores).|
+|kioskModeAllowAssistiveSpeak|Boolean|Indica si se va a permitir la lectura de asistencia en el modo de pantalla completa.|
+|kioskModeAllowAssistiveTouchSettings|Boolean|Indica si se va a permitir el acceso a los ajustes de AssistiveTouch en el modo de pantalla completa.|
+|kioskModeAllowAutoLock|Boolean|Indica si se va a permitir el bloqueo automático del dispositivo en el modo de pantalla completa.|
+|kioskModeAllowColorInversionSettings|Boolean|Indica si se va a permitir el acceso a la configuración de inversión del color en el modo de pantalla completa.|
+|kioskModeAllowRingerSwitch|Boolean|Indica si se va a permitir el uso del cambio de tono en el modo de pantalla completa.|
+|kioskModeAllowScreenRotation|Boolean|Indica si se va a permitir la rotación de pantalla en el modo de pantalla completa.|
+|kioskModeAllowSleepButton|Boolean|Indica si se va a permitir el uso del botón de suspensión en el modo de pantalla completa.|
+|kioskModeAllowTouchscreen|Boolean|Indica si se va a permitir el uso de la pantalla táctil en el modo de pantalla completa.|
+|kioskModeAllowVoiceOverSettings|Boolean|Indica si se va a permitir el acceso a la configuración de voz en off en el modo de pantalla completa.|
+|kioskModeAllowVolumeButtons|Boolean|Indica si se va a permitir el uso de los botones de volumen en el modo de pantalla completa.|
+|kioskModeAllowZoomSettings|Boolean|Indica si se va a permitir el acceso a la configuración de zoom en el modo de pantalla completa.|
+|kioskModeAppStoreUrl|String|Dirección URL en la tienda de aplicaciones a la aplicación que se usará para el modo de pantalla completa. Úsela si KioskModeManagedAppId es desconocido.|
+|kioskModeBuiltInAppId|String|Identificador de aplicaciones integradas que se usará para el modo de pantalla completa. Se usa cuando no se establecen KioskModeManagedAppId y KioskModeAppStoreUrl.|
 |kioskModeRequireAssistiveTouch|Booleano|Indica si se va a requerir la AssistiveTouch en el modo de pantalla completa.|
 |kioskModeRequireColorInversion|Booleano|Indica si se va a requerir la inversión de color en el modo de pantalla completa.|
 |kioskModeRequireMonoAudio|Booleano|Indica si se va a requerir el audio mono en el modo de pantalla completa.|
 |kioskModeRequireVoiceOver|Booleano|Indica si se va a requerir la voz en off en el modo de pantalla completa.|
 |kioskModeRequireZoom|Booleano|Indica si se va a requerir el zoom en el modo de pantalla completa.|
-|kioskModeManagedAppId|Cadena|identificador de la aplicación administrada de la aplicación que se usará para el modo de pantalla completa. Si se especifica KioskModeManagedAppId, entonces se omitirá KioskModeAppStoreUrl.|
+|kioskModeManagedAppId|String|identificador de la aplicación administrada de la aplicación que se usará para el modo de pantalla completa. Si se especifica KioskModeManagedAppId, entonces se omitirá KioskModeAppStoreUrl.|
 |lockScreenBlockControlCenter|Booleano|Indica si se va a impedir que el usuario use el centro de control en la pantalla de bloqueo.|
 |lockScreenBlockNotificationView|Booleano|Indica si se va a impedir que el usuario use la visualización de notificaciones en la pantalla de bloqueo.|
 |lockScreenBlockPassbook|Booleano|Indica si se va a impedir que el usuario use Passbook cuando el dispositivo está bloqueado.|
@@ -137,7 +137,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune_deviceconfig_mediacontentratingunitedkingdom.md)|Clasificación de contenido multimedia para el Reino Unido|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune_deviceconfig_mediacontentratingunitedstates.md)|Clasificación de contenido multimedia para Estados Unidos|
 |networkUsageRules|Colección [iosNetworkUsageRule](../resources/intune_deviceconfig_iosnetworkusagerule.md)|Lista de aplicaciones administradas y las reglas de red que se les aplican. Esta colección puede contener un máximo de 1000 elementos.|
-|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|Configuración de la calificación de los contenidos de elementos multimedia para aplicaciones. Los valores posibles son: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
+|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|Configuración de clasificación para las aplicaciones de contenido de medios. Los valores posibles son: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Booleano|Indica si se va a impedir que el usuario use la aplicación Mensajes en el dispositivo supervisado.|
 |notificationsBlockSettingsModification|Booleano|Indica si se van a permitir modificar la configuración de las notificaciones (iOS 9,3 y versiones posteriores).|
 |passcodeBlockFingerprintUnlock|Booleano|Indica si se va a impedir el desbloqueo por huella dactilar.|
@@ -183,10 +183,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 7837
+Content-length: 7841
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -634,11 +634,6 @@ Content-Length: 8013
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
-
-
-
-
-
 
 
 
