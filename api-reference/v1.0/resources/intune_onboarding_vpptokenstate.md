@@ -1,21 +1,16 @@
-# <a name="vpptokenstate-enum-type"></a>Tipo de enumeración vppTokenState
+# <a name="vpptokenstate-enum-type"></a>tipo de enumeración vppTokenState
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Estados posibles asociados con el token del programa de compras por volumen de Apple.
+Estados posibles asociados con un token de programa de compra de volumen de Apple.
 ## <a name="members"></a>Miembros
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
-|unknown|0|Estado predeterminado.|
-|valid|1|Símbolo (token) es válido.|
-|expired|2|Símbolo (token) ha expirado.|
-|invalid|3|Símbolo (token) no es válido.|
-|assignedToExternalMDM|4|Token administrado por otro servicio de MDM.|
-
-
-
-
-
+|desconocido|0|Estado predeterminado.|
+|válido|1|Símbolo (token) es válido.|
+|expirado|2|Símbolo (token) ha expirado.|
+|No válido|3|Símbolo (token) no es válido.|
+|assignedToExternalMDM|4|Símbolo (token) administrado por otro servicio de MDM.|
 
 
 

@@ -4,7 +4,7 @@
 
 Actualice las propiedades de un objeto [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md).
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).  Tenga en cuenta que el permiso adecuado varía según el flujo de trabajo.
+Uno de los siguientes permisos se requiere para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).  Tenga en cuenta que el permiso adecuado varía según el flujo de trabajo.
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|**Incorporación**|
+|id|String|Clave de la entidad.|
+|**Incorporación de redes**|
 |isEnabledForMicrosoftStoreForBusiness|Booleano|Indica si la cuenta está habilitada para la sincronización de aplicaciones de Microsoft Store para Empresas.|
-|microsoftStoreForBusinessLanguage|Cadena|Información local que se usa para sincronizar las aplicaciones de Microsoft Store para Empresas. Referencias culturales que son específicas de un país o región. Los nombres de dichas referencias culturales siguen RFC 4646 (Windows Vista y versiones posteriores). El formato es <languagecode2>-<country/regioncode2>, donde <languagecode2> es un código de dos letras en minúsculas proveniente de ISO 639-1 y <country/regioncode2> es un código de dos letras en mayúsculas derivado de ISO 3166. Por ejemplo, en-US para inglés (Estados Unidos) es una referencia cultural específica.|
+|microsoftStoreForBusinessLanguage|String|Información local que se usa para sincronizar las aplicaciones de Microsoft Store para Empresas. Referencias culturales que son específicas de un país o región. Los nombres de dichas referencias culturales siguen RFC 4646 (Windows Vista y versiones posteriores). El formato es <languagecode2>-<country/regioncode2>, donde <languagecode2> es un código de dos letras en minúsculas proveniente de ISO 639-1 y <country/regioncode2> es un código de dos letras en mayúsculas derivado de ISO 3166. Por ejemplo, en-US para inglés (Estados Unidos) es una referencia cultural específica.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|La última vez que se completó una sincronización de aplicaciones desde Microsoft Store para Empresas.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que se sincronizaron correctamente las aplicaciones de Microsoft Store para Empresas en la cuenta.|
 
@@ -56,7 +56,7 @@ Content-length: 2
 
 ## <a name="example-response"></a>Respuesta de ejemplo
 
-Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
+El objeto de respuesta que se muestra aquí es posible que esté truncado por razones de brevedad. Todas las propiedades se devolverán desde una llamada real.
 
 ``` http
 HTTP/1.1 200 OK

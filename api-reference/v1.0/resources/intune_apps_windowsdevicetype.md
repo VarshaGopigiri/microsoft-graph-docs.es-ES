@@ -4,18 +4,13 @@
 
 Contiene las propiedades de tipo de dispositivo de Windows.
 ## <a name="members"></a>Miembros
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |ninguno|0|Sin marcadores establecidos.|
-|desktop (escritorio)|1|Si se admite o no el tipo de dispositivo de Escritorio de Windows.|
-|mobile (móvil)|2|Si se admite o no el tipo de dispositivo Móvil de Windows.|
-|holographic (holográfico)|4|Si se admite o no el tipo de dispositivo Holográfico de Windows.|
-|team (equipo)|8|Si se admite o no el tipo de dispositivo de Equipo de Windows.|
-
-
-
-
-
+|escritorio|1|Si no se admite el tipo de dispositivo de escritorio Windows.|
+|mobile|2|Si no se admite el tipo de dispositivo de Windows Mobile.|
+|holográfica|4|Si no se admite el tipo de dispositivo de Windows holográfica.|
+|equipo|8|Si no se admite el tipo de dispositivo de Windows del equipo.|
 
 
 

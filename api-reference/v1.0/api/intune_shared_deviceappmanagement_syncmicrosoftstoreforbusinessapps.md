@@ -9,7 +9,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
 |Delegado (cuenta profesional o educativa)| 
-| &nbsp; &nbsp; _Incorporación_ | DeviceManagementApps.ReadWrite.All|
+| &nbsp;&nbsp; _Incorporación_ | DeviceManagementApps.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -26,7 +26,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -42,7 +42,7 @@ POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForB
 
 ### <a name="response"></a>Respuesta
 
-Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
+El objeto de respuesta que se muestra aquí es posible que esté truncado por razones de brevedad. Todas las propiedades se devolverán desde una llamada real.
 
 ``` http
 HTTP/1.1 204 No Content

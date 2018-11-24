@@ -1,7 +1,7 @@
 # <a name="timezoneinformation-resource-type"></a>Tipo de recurso timeZoneInformation
 
 
-Representa una zona horaria. El formato admitido es Windows y, cuando se corrija el problema conocido actual, también se admitirá el formato de [zona horaria Internet Assigned Numbers Authority (IANA)](http://www.iana.org/time-zones) (también conocida como "zona horaria Olson").
+Representa una zona horaria. El formato admitido es Windows y, cuando se corrija el problema conocido actual, también se admitirá el formato de [zona horaria Internet Assigned Numbers Authority (IANA)](https://www.iana.org/time-zones) (también conocida como "zona horaria Olson").
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

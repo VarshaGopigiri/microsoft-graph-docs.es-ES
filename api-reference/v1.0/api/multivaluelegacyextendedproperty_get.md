@@ -6,87 +6,94 @@ El uso del parámetro de consulta `$expand` le permite expandir la instancia esp
 
 Se admiten los siguientes recursos de usuario:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [event](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md) 
 
 También los siguientes recursos de grupo:
 
-- [event](../resources/event.md) de grupo
 - [calendar](../resources/calendar.md) de grupo
-- [post](../resources/post.md) de grupo 
+- [event](../resources/event.md) de grupo
+- [post](../resources/post.md) de grupo
 
 Consulte el artículo de [información general sobre las propiedades extendidas](../resources/extended-properties-overview.md) para obtener más información sobre cuándo usar las extensiones abiertas o las propiedades extendidas y cómo especificar las propiedades extendidas.
 
 ## <a name="permissions"></a>Permisos
-Según el recurso que seleccione, se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Dependiendo del recurso está obteniendo la propiedad extendida desde y el permiso escriba (delegada o de la aplicación) se solicitud, el permiso especificado en la tabla siguiente es el requisito mínimo para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-- Mail.Read
-- Calendars.Read
-- Contacts.Read
-- Group.Read.All 
+| Recurso admitido | Delegado (cuenta profesional o educativa) | Delegado (cuenta personal de Microsoft) | Aplicación |
+|:-----|:-----|:-----|:-----|
+| [calendario](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [calendar](../resources/calendar.md) de grupo | Group.Read.All | No admitido | No admitido |
+| [event](../resources/event.md) de grupo | Group.Read.All | No admitido | No admitido |
+| [post](../resources/post.md) de grupo | Group.Read.All | No admitido | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
  
 ## <a name="http-request"></a>Solicitud HTTP
 
-Expanda una instancia de recurso con la propiedad extendida que coincida con un filtro en la propiedad **id**. Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools.com/tags/ref_urlencode.asp) a los caracteres de espacio de la cadena de filtro.
+Expanda una instancia de recurso con la propiedad extendida que coincida con un filtro en la propiedad **id**. Asegúrese de aplicar la [codificación de direcciones URL](https://www.w3schools.com/tags/ref_urlencode.asp) a los caracteres de espacio de la cadena de filtro.
 
-Obtener una instancia de **message**: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **mensaje** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtener una instancia de **mailFolder**: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **mailFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Obtener una instancia de **event**: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **evento** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtener una instancia de **calendar**: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **calendario** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtener una instancia de **contact**: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **ponerse en contacto con** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtener una instancia de **contactFolder**: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **contactFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtener una instancia de **event** de grupo: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **evento** de grupo:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Obtener una instancia de **post** de grupo: <!-- { "blockType": "ignored" } -->
+Obtener una instancia de **entrada** de grupo:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-## <a name="path-parameters"></a>Parámetros de ruta
+## <a name="path-parameters"></a>Parámetros de ruta de acceso
 |Parámetro|Tipo|Descripción|
 |:-----|:-----|:-----|
-|id_value|Cadena|El identificador de la propiedad extendida que debe coincidir. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
+|id_value|String|El identificador de la propiedad extendida que debe coincidir. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Autorización  | {token} de portador. Obligatorio. |
+| Authorization  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

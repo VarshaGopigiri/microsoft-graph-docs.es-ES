@@ -17,7 +17,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /directoryRoles/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método **no** es compatible con los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para facilitar la personalización de la respuesta (por ejemplo, aquí no se admite $filter).
+Este método **no** es compatible con los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para facilitar la personalización de la respuesta (por ejemplo, aquí no se admite $filter).
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|

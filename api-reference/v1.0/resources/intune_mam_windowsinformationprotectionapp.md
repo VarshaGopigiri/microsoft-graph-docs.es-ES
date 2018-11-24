@@ -16,10 +16,11 @@ Aplicación para Windows Information Protection
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionApp",
@@ -30,11 +31,6 @@ Aquí tiene una representación JSON del recurso.
   "denied": true
 }
 ```
-
-
-
-
-
 
 
 

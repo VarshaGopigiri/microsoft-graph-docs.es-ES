@@ -24,8 +24,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [termsAndConditionsAssignment](../resources/intune_companyterms_termsandconditionsassignment.md).
@@ -48,9 +48,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{termsAndConditionsAssignmentId}
 Content-type: application/json
-Content-length: 101
+Content-length: 168
 
 {
+  "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   }
@@ -72,11 +73,6 @@ Content-Length: 217
   }
 }
 ```
-
-
-
-
-
 
 
 

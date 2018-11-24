@@ -24,7 +24,7 @@ PATCH /organization/{organizationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,8 +34,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|El GUID para el objeto.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autoridad de administración de dispositivos móviles. Los valores posibles son: `unknown`, `intune`, `sccm`, `office365`.|
+|id|String|El GUID para el objeto.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Entidad de administración de dispositivos móviles. Los valores posibles son: `unknown`, `intune`, `sccm` y `office365`.|
 
 
 
@@ -48,9 +48,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/organization/{organizationId}
 Content-type: application/json
-Content-length: 51
+Content-length: 102
 
 {
+  "@odata.type": "#microsoft.graph.organization",
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
@@ -68,11 +69,6 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceComplianceDeviceStatus.
@@ -34,14 +34,14 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|deviceDisplayName|Cadena|Nombre de dispositivo de DevicePolicyStatus.|
-|userName|Cadena|El nombre de usuario que se está notificando|
-|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
+|id|String|Clave de la entidad.|
+|deviceDisplayName|String|Nombre de dispositivo de DevicePolicyStatus.|
+|userName|String|El nombre de usuario que se está notificando|
+|deviceModel|String|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|Cadena|UserPrincipalName.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 
@@ -87,11 +87,6 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -12,10 +12,11 @@ En la tabla siguiente se muestra el permiso propuesto que se requiere para cada 
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Grupos                      | Group.Read.All      |
-| Usuarios                       | User.Read.All       |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
-| Unidades de disco (unidades de disco y contenido compartido de SharePoint) | Files.ReadWrite.All |
+| Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
+|Alerta de seguridad| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -29,7 +30,7 @@ DELETE /subscriptions/{id}
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

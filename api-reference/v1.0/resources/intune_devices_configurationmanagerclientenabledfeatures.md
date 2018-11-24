@@ -17,10 +17,11 @@ Características habilitadas del cliente de Configuration Manager
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientEnabledFeatures",
@@ -32,11 +33,6 @@ Aquí tiene una representación JSON del recurso.
   "windowsUpdateForBusiness": true
 }
 ```
-
-
-
-
-
 
 
 

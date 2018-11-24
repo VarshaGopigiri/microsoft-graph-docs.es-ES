@@ -17,7 +17,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /planner/buckets
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método requiere que se especifique un [filter](http://graph.microsoft.io/docs/overview/query_parameters) de planId.
+Este método requiere que se especifique un [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) de planId.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|

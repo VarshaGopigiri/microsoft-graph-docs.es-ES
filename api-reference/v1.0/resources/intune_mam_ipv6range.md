@@ -16,10 +16,11 @@ Hereda de [ipRange](../resources/intune_mam_iprange.md)
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iPv6Range"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iPv6Range",
@@ -27,11 +28,6 @@ Aquí tiene una representación JSON del recurso.
   "upperAddress": "String"
 }
 ```
-
-
-
-
-
 
 
 

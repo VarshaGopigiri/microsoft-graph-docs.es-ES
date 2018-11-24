@@ -1,6 +1,6 @@
 # <a name="user-delta"></a>user: delta
 
-La [consulta delta](../../../concepts/delta_query_overview.md) permite a las aplicaciones detectar entidades recién creadas, actualizadas o eliminadas sin realizar una operación de lectura completa del recurso de destino con cada solicitud. Para detectar cambios en los usuarios, realice una solicitud usando la función *delta*. Consulte [Usar la consulta delta](../../../concepts/delta_query_overview.md) para obtener más detalles.
+Get recién creado, actualiza o elimina los usuarios sin tener que realizar un acceso completo de lectura de la colección completa de usuario. Para obtener información detallada, vea [control de cambios](../../../concepts/delta_query_overview.md) .
 
 ## <a name="permissions"></a>Permisos
 
@@ -15,7 +15,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 ## <a name="http-request"></a>Solicitud HTTP
 
-Para comenzar los cambios, debe realizar una solicitud incluyendo la función delta en el recurso de los usuarios. 
+Para comenzar los cambios, debe realizar una solicitud incluyendo la función delta en el recurso de los usuarios.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,63 +24,94 @@ GET /users/delta
 
 ## <a name="query-parameters"></a>Parámetros de consulta
 
-El seguimiento de cambios en los usuarios conlleva al menos una llamada de una función **delta**. Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificarlo en la solicitud **delta** inicial. Microsoft Graph codifica automáticamente cualquier parámetro especificado en la parte del token de la URL `nextLink` o `deltaLink` proporcionada en la respuesta. Solo debe especificar los parámetros de consulta deseados una vez por adelantado. En solicitudes posteriores, copie y aplique la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
+Seguimiento de los cambios en los usuarios incurre en una ronda de una o más llamadas de función de **delta** . Si usa cualquier parámetro de consulta (distinto de `$deltatoken` y `$skiptoken`), debe especificar en la solicitud inicial del **delta** . Microsoft Graph codifica automáticamente los parámetros especificados en la parte de símbolo (token) de la `nextLink` o `deltaLink` dirección URL proporcionada en la respuesta.
+
+Solo debe especificar una vez por adelantado los parámetros de consulta deseados.
+
+En solicitudes posteriores, copie y aplique la dirección URL `nextLink` o `deltaLink` de la respuesta anterior, dado que la dirección URL ya incluye los parámetros codificados deseados.
 
 | Parámetro de consulta      | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-| $deltatoken | cadena | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de usuarios. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
-| $skiptoken | cadena | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de usuarios. |
+| $deltatoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `deltaLink` de la llamada de función **delta** anterior para la misma colección de usuarios. Indica el progreso de la ronda de seguimiento de cambios. Guarde y aplique toda la dirección URL `deltaLink`, incluido este token, en la primera solicitud de la siguiente ronda de seguimiento de cambios de la colección.|
+| $skiptoken | string | Un [token de estado](../../../concepts/delta_query_overview.md) que se devuelve en la dirección URL de `nextLink` de la llamada de función **delta**. Indica que debe realizarse el seguimiento de más cambios en la misma colección de usuarios. |
 
 ### <a name="odata-query-parameters"></a>Parámetros de consulta de OData
 
-Este método admite los parámetros opcionales de consulta de OData a modo de ayuda para personalizar la respuesta.
+Este método es compatible con parámetros opcionales de consulta de OData para ayudar a personalizar la respuesta.
 
-- Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud GET para especificar solo las propiedades que necesita para un mejor rendimiento. Siempre se devuelve la propiedad _id_. 
-- Compatibilidad con consultas de delta `$select`, `$top`, y `$expand` para los mensajes. 
-- Hay compatibilidad limitada para `$filter` y `$orderby`:
-  * La única expresión `$filter` admitida es para realizar un seguimiento de los cambios en uno o varios usuarios específicos: `$filter=id+eq+{value}` o `$filter=id+eq+{value1}+or+id+eq+{value2}`. `$filter=id+eq+{value1}+or+id+eq+{value2}` 
-  * La única expresión `$orderby` admitida es `$orderby=receivedDateTime+desc`. Si no incluye ninguna expresión `$orderby`, no se garantizará el orden de devolución. 
-- No hay compatibilidad con `$search`.
+- Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud GET para especificar solo las propiedades que necesita para un mejor rendimiento. Siempre se devuelve la propiedad *id*.
+- No hay compatibilidad limitada para `$filter`:
+  - La única expresión `$filter` admitida es para realizar un seguimiento de los cambios en un objeto específico: `$filter=id+eq+{value}`. Puede filtrar varios objetos. Por ejemplo, `https://graph.microsoft.com/v1.0/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Hay un límite de 50 objetos filtrados.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | token&gt; de portador&gt;|
+| Authorization  | &lt;token&gt; de portador|
 | Content-Type  | application/json |
+| Prefer | devolver = mínimo <br><br>Si se especifica este encabezado con una solicitud que utiliza un `deltaLink` devolvería sólo las propiedades del objeto que han cambiado desde la última round. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 
-## <a name="response"></a>Respuesta
+### <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK` y el objeto de colección [user](../resources/user.md) en el cuerpo de la respuesta. La respuesta también incluye una dirección URL nextLink o deltaLink. 
+Si tiene éxito, este método devuelve `200 OK` objeto de colección de respuesta código y [usuario](../resources/user.md) en el cuerpo de la respuesta. La respuesta incluye también un `nextLink` dirección URL o un `deltaLink` dirección URL.
 
-- Si se devuelve una dirección URL nextLink, hay más páginas de datos para recuperar en la sesión. La aplicación continúa realizando solicitudes mediante la dirección URL nextLink hasta que se incluya una dirección URL deltaLink en la respuesta.
+- Si un `nextLink` se devuelve la dirección URL:
+  - Esto indica que hay páginas adicionales de datos que se recuperarán en la sesión. La aplicación continúa realizar solicitudes mediante el `nextLink` dirección URL hasta un `deltaLink` dirección URL se incluye en la respuesta.
+  - La respuesta incluye el mismo conjunto de propiedades como se muestra en la solicitud de consulta delta inicial. Esto le permite capturar el estado actual y completa de los objetos al iniciar el ciclo de delta.
 
-- Si se devuelve la dirección URL deltaLink, no hay que devolver más datos sobre el estado existente del recurso. En solicitudes futuras, la aplicación usa la dirección URL deltaLink para obtener información sobre los cambios en el recurso.
+- Si un `deltaLink` se devuelve la dirección URL:
+  - Esto indica que no hay ningún dato más sobre el estado existente del recurso que se devolverá. Guardar y utilizar el `deltaLink` dirección URL para obtener más información acerca de cambia para el recurso en la ronda siguiente.
+  - Tiene una opción para especificar el `Prefer:return=minimal` encabezado, que se incluirá en los valores de respuesta sólo para las propiedades que han cambiado desde el momento en que el `deltaLink` se emitió.
 
-Vea:</br>
-- [Usar la consulta delta](../../../concepts/delta_query_overview.md) para obtener más detalles.</br>
-- [Obtener los cambios incrementales de usuarios](../../../concepts/delta_query_users.md) para obtener un ejemplo de solicitud.</br>
+#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>Valor predeterminado: devolver las mismas propiedades que la solicitud inicial del delta
 
-## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+De forma predeterminada, las solicitudes con un `deltaLink` o `nextLink` devolver las mismas propiedades como seleccionado en la consulta inicial del delta de las siguientes maneras:
+
+- Si la propiedad ha cambiado, devuelva la propiedad en la respuesta JSON.
+- Si se ha establecido la propiedad en un valor vacío, devuelve el valor de la propiedad como null.
+- Si la propiedad no ha cambiado, devolver el valor como null.
+
+> **Nota:** Con el comportamiento anterior, no es posible diferenciar entre una propiedad que no ha cambiado y uno que ha cambiado a un `null` valor. Vea el [segundo ejemplo](#request-2) siguiente. Si esto es importante, se recomienda usar el comportamiento alternativo que se describen en la siguiente sección.
+
+#### <a name="alternative-return-only-the-changed-properties"></a>Alternativa: devolver sólo las propiedades modificadas
+
+Adición de un encabezado de solicitud opcional - `prefer:return=minimal` -da como resultado el siguiente comportamiento:
+
+- Si la propiedad ha cambiado, devuelva la propiedad en la respuesta JSON.
+- Si se ha establecido la propiedad en un valor vacío, devuelve el valor de la propiedad como null.
+- Si la propiedad no ha cambiado, no incluya la propiedad en la respuesta JSON. (Distinto del comportamiento predeterminado).
+
+> **Nota:** El encabezado puede agregarse a un `deltaLink` solicitud en cualquier momento en el ciclo de delta. El encabezado sólo afecta el conjunto de propiedades que se incluyen en la respuesta y no afecta a cómo se ejecuta la consulta de delta. Vea el [tercer ejemplo](#request-3) siguiente.
+
+### <a name="example"></a>Ejemplo
+
+#### <a name="request-1"></a>Solicitud 1
+
+Aquí tiene un ejemplo de la solicitud. No hay ningún `$select` parámetro, por lo que se realiza un seguimiento y devuelve un conjunto predeterminado de propiedades.
 <!-- {
   "blockType": "request",
   "name": "user_delta"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/users/delta
 ```
 
-##### <a name="response"></a>Respuesta
-Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
-<!-- { 
+#### <a name="response-1"></a>Respuesta 1
+
+El siguiente es un ejemplo de la respuesta al usar `deltaLink` obtenido de la inicialización de la consulta.
+
+>**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+
+<!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.user",
-  "isCollection": true 
-} --> 
+  "isCollection": true
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -107,6 +138,89 @@ Content-type: application/json
   ]
 }
 ```
+
+#### <a name="request-2"></a>Solicitud 2
+
+En el ejemplo siguiente se muestra la solicitud inicial seleccionando 3 propiedades para el seguimiento de cambios, con comportamiento de respuesta predeterminado:
+<!-- {
+  "blockType": "request",
+  "name": "user_delta"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
+```
+
+#### <a name="response-2"></a>Respuesta 2
+
+El siguiente es un ejemplo de la respuesta al usar `deltaLink` obtenido de la inicialización de la consulta. Tenga en cuenta que `jobTitle` y `mobilePhone` tienen el valor de `null` lo que significa que es posible que no se han cambiado o se han establecido en un valor vacío.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "jobTitle": null,
+      "mobilePhone": null
+    }
+  ]
+}
+```
+
+#### <a name="request-3"></a>Solicitud 3
+
+En el ejemplo siguiente se muestra la solicitud inicial seleccionando 3 propiedades para el seguimiento de cambios, con el comportamiento de respuesta mínimo alternativo:
+<!-- {
+  "blockType": "request",
+  "name": "user_delta"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
+Prefer: return=minimal
+```
+
+#### <a name="response-3"></a>Respuesta 3
+
+El siguiente es un ejemplo de la respuesta al usar `deltaLink` obtenido de la inicialización de la consulta. Tenga en cuenta que el `mobilePhone` (propiedad) no se incluye, lo que significa que no ha cambiado desde la última consulta delta; `displayName` y `jobTitle` se incluyen lo que significa que se han cambiado sus valores.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "jobTitle": null
+    }
+  ]
+}
+```
+
+- [Consulta de delta de uso para realizar un seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md).
+- [Obtener cambios incrementales para los usuarios](../../../concepts/delta_query_users.md).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

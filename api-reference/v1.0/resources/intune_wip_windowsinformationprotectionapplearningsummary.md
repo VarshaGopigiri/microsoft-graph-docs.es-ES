@@ -15,8 +15,8 @@ Entidad del resumen de aprendizaje de aplicación de Windows Information Protect
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único para WindowsInformationProtectionAppLearningSummary.|
-|applicationName|Cadena|Nombre de la aplicación|
+|id|cadena|Identificador único para WindowsInformationProtectionAppLearningSummary.|
+|applicationName|cadena|Nombre de la aplicación|
 |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Tipo de aplicación. Los valores posibles son: `universal` y `desktop`.|
 |deviceCount|Int32|Recuento de dispositivos|
 
@@ -24,12 +24,12 @@ Entidad del resumen de aprendizaje de aplicación de Windows Information Protect
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLearningSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
@@ -39,11 +39,6 @@ Aquí tiene una representación JSON del recurso.
   "deviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

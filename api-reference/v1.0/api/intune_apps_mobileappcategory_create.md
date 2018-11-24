@@ -25,8 +25,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto mobileAppCategory.
@@ -50,12 +50,11 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories
 Content-type: application/json
-Content-length: 163
+Content-length: 99
 
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
-  "displayName": "Display Name value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "displayName": "Display Name value"
 }
 ```
 
@@ -73,11 +72,6 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -45,7 +45,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1632
+Content-Length: 1656
 
 {
   "value": [
@@ -85,7 +85,8 @@ Content-Length: 1632
         "v8_0": true,
         "v9_0": true,
         "v10_0": true,
-        "v11_0": true
+        "v11_0": true,
+        "v12_0": true
       },
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "versionNumber": "Version Number value",
@@ -94,11 +95,6 @@ Content-Length: 1632
   ]
 }
 ```
-
-
-
-
-
 
 
 

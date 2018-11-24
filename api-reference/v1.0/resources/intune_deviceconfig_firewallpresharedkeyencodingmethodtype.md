@@ -4,16 +4,11 @@
 
 Valores posibles para firewallPreSharedKeyEncodingMethod
 ## <a name="members"></a>Miembros
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
-|deviceDefault|0|No hay ningún valor configurado por Intune, no se invalida el valor predeterminado del dispositivo configurado por el usuario|
-|none|1|No se ha codificado una clave previamente compartida. En su lugar, se ha mantenido en el formato de caracteres anchos|
-|utF8|2|Codifica la clave previamente compartida con UTF-8|
-
-
-
-
-
+|deviceDefault|0|No hay un valor configurado mediante Intune, invalidar el valor predeterminado de dispositivo configurado por el usuario|
+|ninguno|1|No se ha codificado clave previamente compartida. En su lugar, se guarda en su formato de caracteres anchos|
+|utF8|2|Codificar la clave previamente compartida con UTF-8|
 
 
 

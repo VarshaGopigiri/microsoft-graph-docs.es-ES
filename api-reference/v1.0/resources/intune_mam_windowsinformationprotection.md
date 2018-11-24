@@ -11,18 +11,18 @@ Hereda de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |:---|:---|:---|
 |[Enumerar windowsInformationProtections](../api/intune_mam_windowsinformationprotection_list.md)|Colección [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|Enumere las propiedades y las relaciones de los objetos [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |[Obtener windowsInformationProtection](../api/intune_mam_windowsinformationprotection_get.md)|[windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|Lea las propiedades y las relaciones del objeto [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
-|[Acción assign](../api/intune_mam_windowsinformationprotection_assign.md)|Ninguna|Todavía no documentado|
+|[Acción assign](../api/intune_mam_windowsinformationprotection_assign.md)|Ninguno|Todavía no documentado|
 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|Cadena|Nombre para mostrar de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|descripción|Cadena|Descripción de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|displayName|String|Nombre para mostrar de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|description|String|Descripción de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Última vez que se modificó la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|id.|Cadena|Clave de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|version|Cadena|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Nivel de obligatoriedad del WIP (trabajo en curso). Consulte la definición de enumeración para los valores compatibles. Los valores posibles son: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt` y `encryptAuditAndBlock`.|
+|id|String|Clave de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|version|String|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Nivel de aplicación de trabajo en curso. Vea la definición de enumeración para los valores admitidos. Los valores posibles son: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt` y `encryptAuditAndBlock`.|
 |enterpriseDomain|Cadena|Dominio empresarial principal|
 |enterpriseProtectedDomainNames|Colección [windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md)|Lista de dominios empresariales que quiere proteger|
 |protectionUnderLockConfigRequired|Booleano|Especifica si es necesario configurar la protección en la característica de bloqueo (también conocida como cifrar con PIN)|
@@ -54,12 +54,12 @@ Hereda de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedAppPolicy",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtection",
@@ -89,7 +89,7 @@ Aquí tiene una representación JSON del recurso.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "Guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -189,11 +189,6 @@ Aquí tiene una representación JSON del recurso.
   "isAssigned": true
 }
 ```
-
-
-
-
-
 
 
 

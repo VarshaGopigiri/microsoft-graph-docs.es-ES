@@ -12,12 +12,13 @@ La creación de una suscripción requiere un ámbito de lectura para el recurso.
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Grupos                      | Group.Read.All      |
-| Usuarios                       | User.Read.All       |
+| Groups                      | Group.Read.All      |
+| Users                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
-| Unidades de disco (unidades de disco y contenido compartido de SharePoint) | Files.ReadWrite.All |
+| Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
+|Alerta de seguridad| SecurityEvents.ReadWrite.All |
 
- > **Nota:** El extremo /v1.0 da permisos de aplicación para la mayoría de los recursos. Las conversaciones de un grupo y los elementos de raíz de la unidad de OneDrive no son compatibles con los permisos de la aplicación.
+ > **Nota:** El extremo de /v1.0 permite que los permisos de aplicación para la mayoría de los recursos. Las conversaciones de un grupo y OneDrive para la unidad raíz los elementos no son compatibles con los permisos de la aplicación.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -31,7 +32,7 @@ POST /subscriptions
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="response"></a>Respuesta
 
@@ -60,8 +61,8 @@ Content-type: application/json
 }
 ```
 
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto de [suscripción](../resources/subscription.md).
-El campo `clientState` es opcional.
+En el cuerpo de la solicitud, proporcionar una representación JSON del objeto de [suscripción](../resources/subscription.md) .
+El `clientState` campo es opcional.
 
 ##### <a name="resources-examples"></a>Ejemplos de recursos
 
@@ -72,10 +73,11 @@ A continuación puede ver algunos valores válidos para la propiedad de recurso 
 |Correo|me/mailfolders("inbox")/messages<br />me/messages|
 |Contactos|me/contacts|
 |Calendarios|me/events|
-|Usuarios|users|
-|Grupos|grupos|
+|Users|users|
+|Groups|grupos|
 |Conversaciones|groups("*{id}*")/conversations|
 |Unidades|me/drive/root|
+|Alerta de seguridad|alertas de seguridad /? $filter = estado eq 'New'|
 
 ##### <a name="response"></a>Respuesta
 
@@ -106,7 +108,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>Validación de extremo de notificación
 
-El extremo de la notificación de suscripción (especificado en la propiedad `notificationUrl`) debe ser capaz de responder a una solicitud de validación, como se describe en [Configurar notificaciones para los cambios en los datos de usuario](../../../concepts/webhooks.md#notification-endpoint-validation). Si se produce un error en la validación, la solicitud para crear la suscripción devuelve un error 400 de solicitud incorrecta.
+El extremo de la notificación de suscripción (especificado en el `notificationUrl` (propiedad)) debe ser capaz de responder a una solicitud de validación, como se describe en [Configurar notificaciones para los cambios en los datos de usuario](../../../concepts/webhooks.md#notification-endpoint-validation). Si se produce un error en la validación, la solicitud para crear la suscripción devuelve un error 400 de solicitud incorrecta.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

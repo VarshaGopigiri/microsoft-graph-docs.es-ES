@@ -14,19 +14,19 @@ El tipo para la implementación de aplicaciones o grupos.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Id|
+|id|String|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Identificador para la implementación de un grupo o una aplicación|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.targetedManagedAppPolicyAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
@@ -36,11 +36,6 @@ Aquí tiene una representación JSON del recurso.
   }
 }
 ```
-
-
-
-
-
 
 
 

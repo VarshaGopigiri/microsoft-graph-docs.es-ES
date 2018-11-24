@@ -4,7 +4,7 @@ Obtenga el objeto [mailboxSettings](../resources/mailboxsettings.md) del usuario
 
 Puede ver toda la configuración del buzón u obtener una configuración específica.
 
-La zona horaria es una de las opciones preferidas que puede configurar un usuario para su buzón. Los formatos de zona horaria válidos son el formato Windows y la [zona horaria de la autoridad de asignación de números de Internet (IANA)](http://www.iana.org/time-zones), también conocida como “zona horaria Olson”. El formato Windows es el predeterminado. 
+La zona horaria es una de las opciones preferidas que puede configurar un usuario para su buzón. Los formatos de zona horaria válidos son el formato Windows y la [zona horaria de la autoridad de asignación de números de Internet (IANA)](https://www.iana.org/time-zones), también conocida como “zona horaria Olson”. El formato Windows es el predeterminado. 
 
 Cuando se obtiene la zona horaria preferida de un usuario, esta se devuelve en el formato en el que se configuró. Si quiere que esa zona horaria se muestre en un formato específico (Windows o IANA), puede [actualizar primero la zona horaria preferida en ese formato como opción de configuración del buzón](user_update_mailboxsettings.md). Posteriormente, podrá obtener la zona horaria en ese formato. Como alternativa, puede administrar la conversión de formato por separado en la aplicación.
 
@@ -18,13 +18,13 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
-Para obtener toda la configuración de buzón de un usuario: <!-- { "blockType": "ignored" } -->
+Para obtener todas las opciones de buzón de correo para un usuario:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Para obtener una configuración específica (por ejemplo, solo la configuración de las respuestas automáticas, la configuración regional, la zona horaria o el horario laboral): <!-- { "blockType": "ignored" } -->
+Para obtener la configuración específica - por ejemplo, sólo las respuestas automáticas configuración, configuración regional, zona horaria u horario laboral:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -39,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -59,7 +59,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 - [workingHours](../resources/workinghours.md)
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request-1"></a>Solicitud 1
+##### <a name="request-1"></a>Solicitud 1
 En el primer ejemplo se obtiene toda la configuración del buzón del usuario que ha iniciado sesión, que incluye la configuración de la zona horaria, las respuestas automáticas, la configuración regional (idioma y país o región) y el horario laboral.
 <!-- {
   "blockType": "request",
@@ -68,7 +68,7 @@ En el primer ejemplo se obtiene toda la configuración del buzón del usuario qu
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
-##### <a name="response-1"></a>Respuesta 1
+##### <a name="response-1"></a>Respuesta 1
 La respuesta incluye toda la configuración del buzón. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
@@ -157,7 +157,7 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-3"></a>Solicitud 3
+##### <a name="request-3"></a>Solicitud 3
 En el tercer ejemplo se obtiene específicamente la configuración del horario laboral del buzón del usuario que ha iniciado sesión.
 <!-- {
   "blockType": "ignored",
@@ -166,7 +166,7 @@ En el tercer ejemplo se obtiene específicamente la configuración del horario l
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
-##### <a name="response-3"></a>Respuesta 3
+##### <a name="response-3"></a>Respuesta 3
 La respuesta solo incluye la configuración del horario laboral. Observe que la jornada laboral del usuario se encuentra en una [zona horaria personalizada](../resources/customtimezone.md). Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
 <!-- {
   "blockType": "ignored",

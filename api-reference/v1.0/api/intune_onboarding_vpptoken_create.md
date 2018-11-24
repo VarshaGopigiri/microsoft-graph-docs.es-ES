@@ -24,7 +24,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,16 +34,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el vppTo
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Esto se genera automáticamente cuando se crea el appleVolumePurchaseProgramToken. Es la clave de la entidad.|
+|id|Cadena|Esto se genera automáticamente cuando se crea el appleVolumePurchaseProgramToken. Es la clave de la entidad.|
 |organizationName|Cadena|Organización asociada al token del Programa de Compras por Volumen de Apple|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|El tipo de programa de compra de volumen al que está asociado el Token de programa de compra de volumen de Apple determinado. Los valores posibles son: `business`, `education`. Los valores posibles son: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|Tipo de programa de compras por volumen al que está asociado el token del Programa de Compras por Volumen de Apple especificado. Los valores posibles son: `business` y `education`. Los valores posibles son: `business` y `education`.|
 |Id. de Apple|Cadena|Identificador de Apple asociado al token del Programa de compras por volumen de Apple especificado.|
 |expirationDateTime|DateTimeOffset|La fecha y hora de vencimiento del token del Programa de compras por volumen de Apple.|
 |lastSyncDateTime|DateTimeOffset|La última vez que se realizó la sincronización de una aplicación con el servicio del programa de compras por volumen de Apple utilizando el token de ese programa de compras.|
 |token|Cadena|La cadena del token del programa de compras por volumen de Apple descargada desde ese programa de compras.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de modificación asociada con el token del Programa de compras por volumen de Apple.|
-|estado|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Estado actual del token del Programa de compras de volumen de Apple. Los valores posibles son: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Los valores posibles son: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
-|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Estado de la sincronización actual de la última sincronización de la aplicación que se desencadenó con el token del programa de compra de volumen de Apple. Los valores posibles son: `none`, `inProgress`, `completed`, `failed`. Los valores posibles son: `none`, `inProgress`, `completed`, `failed`.|
+|estado|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Estado actual del token del Programa de compras por volumen de Apple. Los valores posibles son: `unknown`, `valid`, `expired`, `invalid` y `assignedToExternalMDM`. Los valores posibles son: `unknown`, `valid`, `expired`, `invalid` y `assignedToExternalMDM`.|
+|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Estado de sincronización actual de la última sincronización de la aplicación que se activó con el Token del programa de compras por volumen de Apple. Los valores posibles son: `none`, `inProgress`, `completed` y `failed`. Los valores posibles son: `none`, `inProgress`, `completed` y `failed`.|
 |automaticallyUpdateApps|Booleano|Si las aplicaciones para el token VPP se actualizarán automáticamente o no.|
 |countryOrRegion|Cadena|Si las aplicaciones para el token VPP se actualizarán automáticamente o no.|
 
@@ -58,7 +58,7 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 525
+Content-length: 461
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -68,7 +68,6 @@ Content-length: 525
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
@@ -99,11 +98,6 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
-
-
-
-
-
 
 
 

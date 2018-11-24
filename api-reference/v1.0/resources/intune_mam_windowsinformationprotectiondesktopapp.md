@@ -22,10 +22,11 @@ Hereda de [windowsInformationProtectionApp](../resources/intune_mam_windowsinfor
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionDesktopApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionDesktopApp",
@@ -39,11 +40,6 @@ Aquí tiene una representación JSON del recurso.
   "binaryVersionHigh": "String"
 }
 ```
-
-
-
-
-
 
 
 

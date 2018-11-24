@@ -9,15 +9,19 @@ Los datos de una extensión pueden ser de tipo primitivo o matrices de tipos pri
 
 ## <a name="permissions"></a>Permisos
 
-Según el recurso en el que se creó la extensión, se requiere uno de los siguientes permisos para llamar a esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Según el recurso que se creó la extensión en y el permiso solicitado tipo (delegada o de la aplicación), el permiso especificado en la tabla siguiente es la con privilegios mínimos necesarios para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
+| Recurso admitido | Delegado (cuenta profesional o educativa) | Delegado (cuenta personal de Microsoft) | Aplicación |
 |:-----|:-----|:-----|:-----|
-| [dispositivo](../resources/device.md) | Device.ReadWrite.All | [evento](../resources/event.md) | Calendars.ReadWrite |
-| [grupo](../resources/group.md) | Group.ReadWrite.All | [evento de grupo](../resources/event.md) | Group.ReadWrite.All |
-| [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | [mensaje](../resources/message.md) | Mail.ReadWrite |
-| [organización](../resources/organization.md) | Directory.AccessAsUser.All | [contacto personal](../resources/contact.md) | Contacts.ReadWrite |
-| [usuario](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | No admitido | Device.ReadWrite.All |
+| [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [grupo](../resources/group.md) | Group.ReadWrite.All | No admitido | Group.ReadWrite.All |
+| [evento de grupo](../resources/event.md) | Group.ReadWrite.All | No admitido | No admitido |
+| [publicación de grupo](../resources/post.md) | Group.ReadWrite.All | No admitido | Group.ReadWrite.All |
+| [mensaje](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organización](../resources/organization.md) | Directory.AccessAsUser.All | No admitido | No admitido |
+| [contacto personal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [usuario](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 En la solicitud, identifique la instancia de recurso, utilice la propiedad de navegación **extensiones** de esa instancia para identificar y realizar un `PATCH` en esa instancia de extensión.
@@ -43,8 +47,8 @@ Consulte la sección [Cuerpo de la solicitud](#request-body) sobre cómo incluir
 ## <a name="path-parameters"></a>Parámetros de ruta de acceso
 |Parámetro|Tipo|Descripción|
 |:-----|:-----|:-----|
-|id|cadena|Un identificador único para una instancia de la colección correspondiente. Necesario.|
-|extensionId|cadena|Puede ser un nombre de extensión, que es un identificador de texto único de una extensión, o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad `id` al crear la extensión. Necesario.|
+|id|string|Un identificador único para una instancia de la colección correspondiente. Necesario.|
+|extensionId|string|Puede ser un nombre de extensión, que es un identificador de texto único de una extensión, o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad `id` al crear la extensión. Necesario.|
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |

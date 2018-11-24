@@ -15,10 +15,11 @@ Resultado de la acción de dispositivo
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceActionResult"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceActionResult",
@@ -28,11 +29,6 @@ Aquí tiene una representación JSON del recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

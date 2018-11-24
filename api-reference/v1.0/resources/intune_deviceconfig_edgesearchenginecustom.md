@@ -15,21 +15,17 @@ Hereda de [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchengi
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineCustom"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineCustom",
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

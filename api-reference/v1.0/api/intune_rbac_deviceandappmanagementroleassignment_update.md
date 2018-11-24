@@ -24,8 +24,8 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md).
@@ -34,9 +34,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |displayName|String|El nombre descriptivo o para mostrar de la asignación de roles. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
-|descripción|String|Descripción de la asignación de roles. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
+|description|String|Descripción de la asignación de roles. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory. Heredado de [roleAssignment](../resources/intune_rbac_roleassignment.md)|
 |members|Colección string|La lista de identificadores de grupos de seguridad de miembros de roles. Estos son los identificadores de Azure Active Directory.|
 
@@ -51,9 +51,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 Content-type: application/json
-Content-length: 183
+Content-length: 258
 
 {
+  "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleAssignment",
   "displayName": "Display Name value",
   "description": "Description value",
   "resourceScopes": [
@@ -85,11 +86,6 @@ Content-Length: 307
   ]
 }
 ```
-
-
-
-
-
 
 
 

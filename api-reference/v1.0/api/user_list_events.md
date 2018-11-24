@@ -1,15 +1,15 @@
-# <a name="list-events"></a>Listar eventos
+# <a name="list-events"></a>List events
 
 Obtiene una lista de objetos [event](../resources/event.md) en el buzón del usuario. La lista contiene patrones de serie y reuniones de instancia única.
 
-Para recibir instancias de eventos ampliados, puede [obtener la vista de calendario](calendar_list_calendarview.md) o bien [obtener las instancias de un evento](event_list_instances.md).
+Para obtener instancias de evento de expansión, puede [obtener la vista de calendario](calendar_list_calendarview.md) o bien [obtener las instancias de un evento](event_list_instances.md).
 
 Actualmente, esta operación devuelve los cuerpos de los eventos solo en formato HTML.
 
-Existen dos escenarios en los que una aplicación puede obtener eventos en el calendario de otro usuario:
+Hay dos escenarios donde una aplicación puede obtener eventos de calendario de otro usuario:
 
 * Si la aplicación tiene permisos de aplicación, o bien,
-* si la aplicación tiene los correspondientes [permisos](#permissions) delegados de un usuario, y otro usuario ha compartido un calendario con ese usuario, o se le ha concedido acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-get-shared-events-calendars.md).
+* Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido un calendario con ese usuario o, se le concede acceso delegado a ese usuario. Consulte los [Detalles y un ejemplo](../../../concepts/outlook-get-shared-events-calendars.md).
 
 ### <a name="support-various-time-zones"></a>Compatibilidad con varias zonas horarias
 
@@ -52,13 +52,13 @@ GET /me/calendargroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
-| Autorización  | cadena | {token} de portador. Obligatorio.  |
-| Preferido: outlook.timezone  | cadena | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
-| Preferido: outlook.body-content-type | cadena | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
+| Authorization  | string | {token} de portador. Obligatorio.  |
+| Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
+| Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

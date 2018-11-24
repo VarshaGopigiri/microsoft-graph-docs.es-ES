@@ -14,7 +14,7 @@ Todavía no documentado
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Número de dispositivos que se encuentran en el período de gracia|
 |configManagerCount|Int32|Número de dispositivos cuyo cumplimiento lo administra System Center Configuration Manager|
-|id|Cadena|Clave de la entidad.|
+|id|cadena|Clave de la entidad.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles|
@@ -27,12 +27,12 @@ Todavía no documentado
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicyDeviceStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
@@ -48,11 +48,6 @@ Aquí tiene una representación JSON del recurso.
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

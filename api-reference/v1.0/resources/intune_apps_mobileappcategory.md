@@ -15,20 +15,20 @@ Contiene las propiedades de una categoría de aplicación de Intune.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|La clave de la entidad.|
-|displayName|String|El nombre de la categoría de aplicación.|
+|id|cadena|La clave de la entidad.|
+|displayName|cadena|El nombre de la categoría de aplicación.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de mobileAppCategory.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppCategory"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppCategory",
@@ -37,11 +37,6 @@ Aquí tiene una representación JSON del recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

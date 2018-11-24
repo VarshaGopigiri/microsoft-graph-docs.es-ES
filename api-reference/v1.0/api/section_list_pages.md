@@ -19,7 +19,7 @@ GET /groups/{id}/onenote/sections/{id}/pages
 GET /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 La consulta predeterminada para páginas devuelve las primeras 20 páginas ordenadas por `lastModifiedTime desc`. Si la consulta predeterminada devuelve más de 20 páginas, la respuesta contendrá un `@odata.nextLink` que podrá usar para revisar el conjunto de resultados. El número máximo de páginas devueltas para una solicitud `top` es de 100.
 
@@ -45,7 +45,7 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
 ```
 ##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.
+Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que se muestra aquí se trunca por razones de brevedad. Todas las propiedades se devolverán desde una llamada real.
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

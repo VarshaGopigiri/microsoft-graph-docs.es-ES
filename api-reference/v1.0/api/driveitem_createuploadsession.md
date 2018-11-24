@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Carga de archivos reanudable
-ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 14b9047f84b5390aea2f5285660e6c04a6bc3149
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265515"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564761"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Cargar archivos de gran tamaño con una sesión de carga
 
@@ -45,15 +45,15 @@ POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
 
-### <a name="request-body"></a>Cuerpo de solicitud
+### <a name="request-body"></a>Cuerpo de la solicitud
 
 No es necesario ningún cuerpo de solicitud.
-Sin embargo, puede especificar una propiedad `item` en el cuerpo de la solicitud, que proporciona datos adicionales sobre el archivo que se está cargando.
+Sin embargo, puede especificar un `item` (propiedad) en el cuerpo de la solicitud, que proporciona datos adicionales sobre el archivo que se está cargando.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
   "description": "description",
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "name": "filename.txt"
@@ -81,9 +81,9 @@ Por ejemplo, para controlar el comportamiento si ya existe el nombre de archivo,
 
 | Propiedad             | Tipo               | Descripción
 |:---------------------|:-------------------|:---------------------------------
-| description          | Cadena             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
+| description          | String             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
 | fileSystemInfo       | [fileSystemInfo][] | Información del sistema de archivos del cliente. Lectura y escritura.
-| name                 | Cadena             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
+| name                 | String             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
 
 ### <a name="request"></a>Solicitud
 
@@ -375,7 +375,7 @@ Vea el tema [Respuestas de error][error-response] para obtener más información
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
     "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

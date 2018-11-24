@@ -8,7 +8,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
-|Delegado (cuenta profesional o educativa)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (cuenta profesional o educativa)||
+| &nbsp;&nbsp; **Incorporación** y <br> &nbsp;&nbsp; **Administración de dispositivos**| DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -25,7 +26,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -35,10 +36,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|El identificador único de la categoría de dispositivo. Solo lectura.|
-|**Incorporación**|
-|displayName|Cadena|Nombre para mostrar de la categoría de dispositivo.|
-|descripción|Cadena|Descripción opcional de la categoría de dispositivo.|
+|id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
+|**Incorporación de redes**|
+|displayName|String|Nombre para mostrar de la categoría de dispositivo.|
+|descripción|String|Descripción opcional de la categoría de dispositivo.|
 
 
 
@@ -47,7 +48,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 ### <a name="request"></a>Solicitud
-Aquí tiene ejemplos de la solicitud.
+Estos son ejemplos de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
 Content-type: application/json
@@ -62,7 +63,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que se muestra aquí se trunque para abreviar. Las propiedades de la respuesta variarán según el contexto.
+Aquí tiene un ejemplo de la respuesta. Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Propiedades de la respuesta variará según el contexto.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

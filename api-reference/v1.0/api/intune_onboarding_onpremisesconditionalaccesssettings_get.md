@@ -22,12 +22,12 @@ GET /deviceManagement/conditionalAccessSettings
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -47,7 +47,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 357
+Content-Length: 363
 
 {
   "value": {
@@ -55,20 +55,15 @@ Content-Length: 357
     "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
     "enabled": true,
     "includedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "77c9d466-d466-77c9-66d4-c97766d4c977"
     ],
     "excludedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
     ],
     "overrideDefaultRule": true
   }
 }
 ```
-
-
-
-
-
 
 
 

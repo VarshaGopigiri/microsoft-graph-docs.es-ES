@@ -1,11 +1,11 @@
-# <a name="list-contacts"></a>Listar contactos
+# <a name="list-contacts"></a>List contacts
 
-Obtiene una colección de contactos de la carpeta de contactos predeterminada del usuario que ha iniciado sesión.
+Obtener una colección de contacto desde la carpeta Contactos predeterminada del usuario que ha iniciado sesión.
 
 Hay dos escenarios donde una aplicación puede obtener los contactos en la carpeta de contactos de otro usuario:
 
 * Si la aplicación tiene permisos de aplicación, o bien,
-* Si la aplicación tiene [los permisos](#permissions) adecuados de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o se le concede acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
+* Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o, se le concede acceso delegado a ese usuario. Consulte los [Detalles y un ejemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Permisos
@@ -38,7 +38,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 Por ejemplo, puede usar el parámetro de consulta `$filter` para filtrar contactos en función del dominio de sus direcciones de correo:
 

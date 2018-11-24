@@ -1,4 +1,4 @@
-# <a name="get-rangeformat"></a>Obtener RangeFormat
+# <a name="get-rangeformat"></a>Get RangeFormat
 
 Recuperar las propiedades y relaciones del objeto rangeformat.
 ## <a name="permissions"></a>Permisos
@@ -18,7 +18,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
@@ -31,7 +31,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookRangeFormat](../resources/rangeformat.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y [WorkbookRangeFormat](../resources/rangeformat.md) objeto en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.

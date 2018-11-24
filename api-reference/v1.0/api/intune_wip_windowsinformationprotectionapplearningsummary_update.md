@@ -25,7 +25,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|aplicación/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [windowsInformationProtectionAppLearningSummary](../resources/intune_wip_windowsinformationprotectionapplearningsummary.md).
@@ -34,8 +34,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único para WindowsInformationProtectionAppLearningSummary.|
-|applicationName|Cadena|Nombre de la aplicación|
+|id|String|Identificador único para WindowsInformationProtectionAppLearningSummary.|
+|applicationName|String|Nombre de la aplicación|
 |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Tipo de aplicación. Los valores posibles son: `universal` y `desktop`.|
 |deviceCount|Int32|Recuento de dispositivos|
 
@@ -50,9 +50,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
-Content-length: 106
+Content-length: 191
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",
   "applicationName": "Application Name value",
   "applicationType": "desktop",
   "deviceCount": 11
@@ -74,11 +75,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,7 +24,7 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único del partner.|
-|displayName|Cadena|Nombre para mostrar del partner.|
-|onboardingUrl|Cadena|Dirección URL del portal de integración del partner, donde un administrador puede configurar el servicio de Asistencia remota.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|Por determinar. Los valores posibles son: `notOnboarded`, `onboarding` y `onboarded`.|
+|id|String|Identificador único del partner.|
+|displayName|String|Nombre para mostrar del partner.|
+|onboardingUrl|String|Dirección URL del portal de integración del partner, donde un administrador puede configurar el servicio de Asistencia remota.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|TBD. Los valores posibles son: `notOnboarded`, `onboarding` y `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|
 
 
@@ -51,9 +51,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
+  "@odata.type": "#microsoft.graph.remoteAssistancePartner",
   "displayName": "Display Name value",
   "onboardingUrl": "https://example.com/onboardingUrl/",
   "onboardingStatus": "onboarding",
@@ -77,11 +78,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
-
-
-
-
 
 
 

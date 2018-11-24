@@ -4,12 +4,12 @@ Recupere las propiedades y las relaciones de un objeto [message](../resources/me
 
 Actualmente, esta operación devuelve los cuerpos de los mensajes solo en formato HTML.
 
-Existen dos escenarios en los que una aplicación puede obtener un mensaje en la carpeta de correo de otro usuario:
+Hay dos escenarios donde una aplicación puede obtener un mensaje en la carpeta de correo de otro usuario:
 
 * Si la aplicación tiene permisos de aplicación, o bien,
-* si la aplicación tiene los correspondientes [permisos](#permissions) delegados de un usuario, y otro usuario ha compartido una carpeta de correos con ese usuario, o se le ha concedido acceso delegado a ese usuario. Consulte los [detalles y un ejemplo](../../../concepts/outlook-share-messages-folders.md).
+* Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de correo con ese usuario o, se le concede acceso delegado a ese usuario. Consulte los [Detalles y un ejemplo](../../../concepts/outlook-share-messages-folders.md).
 
-Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia de **message**.
+Dado que el recurso **message** admite [extensiones](../../../concepts/extensibility_overview.md), también puede utilizar la operación `GET` para obtener propiedades personalizadas y datos de extensión en una instancia **message**.
 
 
 ## <a name="permissions"></a>Permisos
@@ -30,12 +30,12 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | cadena  | {token} de portador. Obligatorio. |
-| Preferido: outlook.body-content-type | cadena | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Prefer: outlook.body-content-type | string | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -130,7 +130,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Solicitud 2
-En el ejemplo siguiente se usa un parámetro de consulta `$select` para obtener los encabezados de mensaje de Internet de un mensaje. 
+En el ejemplo siguiente se usa un `$select` parámetro para obtener los encabezados de mensaje de Internet de un mensaje de consulta. 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -139,7 +139,7 @@ En el ejemplo siguiente se usa un parámetro de consulta `$select` para obtener 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
-##### <a name="response-2"></a>Respuesta 2
+##### <a name="response-2"></a>Respuesta 2
 Aquí tiene un ejemplo de la respuesta. Nota: El conjunto de encabezados de mensaje en el objeto de respuesta se trunca por razones de brevedad. Se devolverán todos los encabezados de una llamada real.
 <!-- {
   "blockType": "response",
@@ -176,7 +176,7 @@ Content-type: application/json
 ```
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
 - [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](../../../concepts/extensibility_open_users.md)

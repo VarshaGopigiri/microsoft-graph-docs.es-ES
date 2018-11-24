@@ -1,6 +1,6 @@
-# <a name="get-section"></a>Obtener section
+# <a name="get-section"></a>Obtener sección
 
-Recuperar las propiedades y relaciones de un objeto [onenoteSection](../resources/section.md).
+Recuperar las propiedades y relaciones de un objeto [onenoteSection](../resources/section.md) .
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -19,22 +19,22 @@ GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) de `select` y `expand` a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) de `select` y `expand` a modo de ayuda para personalizar la respuesta.
 
 La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades `id`, `displayName` y `self`. Los valores válidos de `expand` para las secciones son `parentNotebook` y `parentSectionGroup`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | cadena  | {token} de portador. Obligatorio. |
-| Accept | cadena | `application/json` |
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [onenoteSection](../resources/section.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y un objeto [onenoteSection](../resources/section.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.

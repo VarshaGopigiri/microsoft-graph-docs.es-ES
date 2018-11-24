@@ -9,7 +9,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
-|Delegado (cuenta profesional o educativa)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegado (cuenta profesional o educativa)||
+| &nbsp;&nbsp; Control de acceso basado en roles | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -26,7 +27,7 @@ GET /deviceManagement/getEffectivePermissions
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
@@ -34,7 +35,7 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|scope|Cadena|Todavía no documentado|
+|scope|String|Todavía no documentado|
 
 
 ## <a name="response"></a>Respuesta

@@ -1,15 +1,15 @@
-# <a name="list-members"></a>List members
+# <a name="list-members"></a>Enumerar miembros
 
 Recupera una lista de los usuarios que están asignados al rol de directorio.  Solo los usuarios se pueden asignar a un rol de directorio.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | Directory.Read.All, Directory.ReadWrite.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -17,7 +17,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /directoryRoles/{id}/members
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|

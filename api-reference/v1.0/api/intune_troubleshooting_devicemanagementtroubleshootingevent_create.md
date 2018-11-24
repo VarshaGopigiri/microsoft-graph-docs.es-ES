@@ -25,7 +25,7 @@ POST /deviceManagement/troubleshootingEvents
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceManagementTroubleshootingEvent.
@@ -47,7 +47,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `201 
 ### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 ``` http
-POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 179
 
@@ -72,7 +72,6 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
-
 
 
 

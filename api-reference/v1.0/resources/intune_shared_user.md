@@ -7,23 +7,23 @@ Representa un objeto de usuario de Azure Active Directory.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de valor devuelto|Descripción|
 |:---|:---|:---|
-|Objetos [List users](../api/intune_shared_user_list.md).|Colección [user](../resources/intune_shared_user.md)|Enumere las propiedades y las relaciones de los objetos [user](../resources/intune_shared_user.md).|
-|Objeto [Get user](../api/intune_shared_user_get.md).|Colección [user](../resources/intune_shared_user.md)|Lea las propiedades y las relaciones del objeto [user](../resources/intune_shared_user.md).|
-|Objeto [Create user](../api/intune_shared_user_create.md).|Colección [user](../resources/intune_shared_user.md)|Cree un objeto [user](../resources/intune_shared_user.md).|
-|[Delete user](../api/intune_shared_user_delete.md).|Ninguno|Elimina un [user](../resources/intune_shared_user.md).|
-|Objeto [Update user](../api/intune_shared_user_update.md).|[usuario](../resources/intune_shared_user.md)|Actualice las propiedades de un objeto [user](../resources/intune_shared_user.md).|
+|[Los usuarios de la lista](../api/intune_shared_user_list.md) de objetos.|Colección [user](../resources/intune_shared_user.md)|Enumere las propiedades y las relaciones de los objetos [user](../resources/intune_shared_user.md).|
+|Objeto [obtener el usuario](../api/intune_shared_user_get.md) .|Colección [user](../resources/intune_shared_user.md)|Lea las propiedades y las relaciones del objeto [user](../resources/intune_shared_user.md).|
+|Objeto de [usuario de crear](../api/intune_shared_user_create.md) .|Colección [user](../resources/intune_shared_user.md)|Cree un objeto [user](../resources/intune_shared_user.md).|
+|[Eliminar el usuario](../api/intune_shared_user_delete.md).|Ninguna|Elimina un [user](../resources/intune_shared_user.md).|
+|Objeto de [usuario de actualización](../api/intune_shared_user_update.md) .|[user](../resources/intune_shared_user.md)|Actualice las propiedades de un objeto [user](../resources/intune_shared_user.md).|
 |**Administración de dispositivos**|
-|[Acción removeAllDevicesFromManagement](../api/intune_shared_user_removealldevicesfrommanagement.md)|Ninguno|Retirar todos los dispositivos de la administración para este usuario|
+|[Acción removeAllDevicesFromManagement](../api/intune_shared_user_removealldevicesfrommanagement.md)|Ninguna|Retirar todos los dispositivos de la administración para este usuario|
 |**Administración de aplicaciones móviles (MAM)**|
 |[Función getManagedAppDiagnosticStatuses](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|Colección [getManagedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md)|Obtiene estados de validación de diagnósticos de un usuario determinado.|
 |[Función getManagedAppPolicies](../api/intune_shared_user_getmanagedapppolicies.md)|Colección [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Obtiene las restricciones de aplicaciones de un usuario determinado.|
-|[Acción wipeManagedAppRegistrationsByDeviceTag](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|Ninguno|Emite una operación de borrado en un registro de la aplicación con la etiqueta del dispositivo especificado.|
+|[Acción wipeManagedAppRegistrationsByDeviceTag](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|Ninguna|Emite una operación de borrado en un registro de la aplicación con la etiqueta del dispositivo especificado.|
 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Identificador único del usuario.|
-|**Incorporación**|
+|id|String|Identificador único del usuario.|
+|**Incorporación de redes**|
 |deviceEnrollmentLimit|Int32|El límite del número máximo de dispositivos que el usuario puede inscribir. Los valores permitidos son 5 o 1000.|
 
 
@@ -45,7 +45,7 @@ Aquí tiene una representación JSON del recurso.
   "openType": true,
   "@odata.type": "microsoft.graph.user"
 }
--->
+--> 
 ``` json
 {
   "@odata.type": "#microsoft.graph.user",

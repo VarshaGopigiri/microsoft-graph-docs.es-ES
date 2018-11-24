@@ -24,8 +24,8 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [managedDeviceOverview](../resources/intune_devices_manageddeviceoverview.md).
@@ -52,9 +52,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 625
+Content-length: 685
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceOverview",
   "enrolledDeviceCount": 3,
   "mdmEnrolledCount": 0,
   "dualEnrolledDeviceCount": 7,
@@ -110,11 +111,6 @@ Content-Length: 734
   }
 }
 ```
-
-
-
-
-
 
 
 

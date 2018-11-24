@@ -27,19 +27,19 @@ Hereda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompli
 |passwordRequired|Booleano|Exigir una contraseña para desbloquear el dispositivo de Windows Phone.|
 |passwordBlockSimple|Booleano|Si quiere bloquear o no la sincronización del calendario.|
 |passwordMinimumLength|Int32|Longitud mínima de la contraseña. Valores válidos de 4 a 16|
-|passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|El tipo de contraseña requerida. Los valores posibles son: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que impide su reutilización.|
+|passwordMinimumCharacterSetCount|Int32|El número de los juegos de caracteres necesarios en la contraseña.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
+|passwordPreviousPasswordBlockCount|Int32|El número de contraseñas anteriores que se impedirá volver a usar.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|
-|passwordRequireToUnlockFromIdle|Booleano|Exige una contraseña para desbloquear el dispositivo inactivo.|
+|passwordRequireToUnlockFromIdle|Booleano|Exigir una contraseña para desbloquear el dispositivo inactivo.|
 |osMinimumVersion|Cadena|Versión mínima de Windows Phone.|
 |osMaximumVersion|Cadena|Versión máxima de Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; el controlador antimalware de inicio temprano está habilitado.|
-|bitLockerEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; BitLocker está habilitado.|
-|secureBootEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; el arranque seguro está habilitado.|
-|codeIntegrityEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos.|
-|storageRequireEncryption|Booleano|Exige el cifrado en dispositivos Windows.|
+|earlyLaunchAntiMalwareDriverEnabled|Booleano|Exigir que la atestación del mantenimiento de dispositivos Windows notifique los dispositivos como correctos; el controlador antimalware de inicio temprano está habilitado.|
+|bitLockerEnabled|Booleano|Exigir que la atestación del mantenimiento de dispositivos Windows notifique los dispositivos como correctos; BitLocker está habilitado.|
+|secureBootEnabled|Booleano|Exigir que la atestación del mantenimiento de dispositivos Windows notifique los dispositivos como correctos; el arranque seguro está habilitado.|
+|codeIntegrityEnabled|Booleano|Exigir que la atestación del mantenimiento de dispositivos Windows notifique los dispositivos como correctos.|
+|storageRequireEncryption|Booleano|Exigir el cifrado en dispositivos Windows.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -50,16 +50,16 @@ Hereda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompli
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune_deviceconfig_devicecompliancedeviceoverview.md)|Información general sobre el estado de dispositivos del cumplimiento de dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune_deviceconfig_devicecomplianceuseroverview.md)|Información general sobre el estado de usuarios del cumplimiento de dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |deviceSettingStateSummaries|Colección [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Resumen de dispositivo sobre el estado de configuración de cumplimiento. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|assignments|Colección [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|El conjunto de asignaciones para esta directiva de cumplimiento. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|asignaciones|Colección [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|El conjunto de asignaciones para esta directiva de cumplimiento. Heredado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10MobileCompliancePolicy"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10MobileCompliancePolicy",
@@ -87,11 +87,6 @@ Aquí tiene una representación JSON del recurso.
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

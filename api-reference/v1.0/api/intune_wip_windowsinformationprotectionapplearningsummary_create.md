@@ -24,8 +24,8 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto windowsInformationProtectionAppLearningSummary.
@@ -34,8 +34,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único para WindowsInformationProtectionAppLearningSummary.|
-|applicationName|Cadena|Nombre de la aplicación|
+|id|String|Identificador único para WindowsInformationProtectionAppLearningSummary.|
+|applicationName|String|Nombre de la aplicación|
 |applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Tipo de aplicación. Los valores posibles son: `universal` y `desktop`.|
 |deviceCount|Int32|Recuento de dispositivos|
 
@@ -75,11 +75,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

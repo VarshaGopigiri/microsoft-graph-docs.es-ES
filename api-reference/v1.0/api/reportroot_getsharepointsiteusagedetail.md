@@ -38,7 +38,7 @@ En la URL de la solicitud, especifique uno de los parámetros siguientes con un 
 
 | Nombre          | Descripción                              |
 | :------------ | :--------------------------------------- |
-| Autorización | {token} de portador. Obligatorio.                |
+| Authorization | {token} de portador. Obligatorio.                |
 | If-None-Match | Si se incluye el encabezado de la solicitud y la eTag proporcionada coincide con la etiqueta actual del archivo, se devuelve un código de respuesta `304 Not Modified`. Opcional. |
 
 ## <a name="response"></a>Respuesta
@@ -50,6 +50,7 @@ Las URL de descarga con autenticación previa solo son válidas durante un breve
 El archivo CSV tiene los siguientes encabezados de columna.
 
 - Fecha de actualización del informe
+- Identificador de sitio
 - Dirección URL del sitio
 - Nombre para mostrar del propietario
 - Eliminado
@@ -103,5 +104,5 @@ Siga el redireccionamiento 302 y el archivo CSV descargado tendrá el esquema si
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
 ```

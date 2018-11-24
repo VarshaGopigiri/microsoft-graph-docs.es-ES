@@ -16,10 +16,11 @@ Hereda de [iosHomeScreenItem](../resources/intune_deviceconfig_ioshomescreenitem
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenApp",
@@ -27,11 +28,6 @@ Aquí tiene una representación JSON del recurso.
   "bundleID": "String"
 }
 ```
-
-
-
-
-
 
 
 

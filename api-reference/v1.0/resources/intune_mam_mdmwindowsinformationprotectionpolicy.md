@@ -1,8 +1,8 @@
-tipo de recurso dmWindowsInformationProtectionPolicy
+# <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>Tipo de recurso mdmWindowsInformationProtectionPolicy
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Directiva para Windows Information Protection con MDM.  
+Directiva para Windows Information Protection con MDM
 
 Hereda de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)
 
@@ -18,14 +18,14 @@ Hereda de [windowsInformationProtection](../resources/intune_mam_windowsinformat
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|Cadena|Nombre para mostrar de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|descripción|Cadena|Descripción de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|displayName|String|Nombre para mostrar de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|description|String|Descripción de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación de la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Última vez que se modificó la directiva. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|id.|Cadena|Clave de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|versión|Cadena|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Nivel de obligatoriedad del trabajo en curso. Vea la definición de enumeración para los valores compatibles. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Los valores posibles son: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt` y `encryptAuditAndBlock`.|
-|enterpriseDomain|Cadena|Dominio empresarial principal. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
+|id|String|Clave de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|version|String|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md).|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Nivel de aplicación de trabajo en curso. Vea la definición de enumeración para los valores admitidos Inherited desde [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Los valores posibles son: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt` y `encryptAuditAndBlock`.|
+|enterpriseDomain|String|Dominio empresarial principal. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |enterpriseProtectedDomainNames|Colección [windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md)|Lista de dominios de empresa que se van a proteger. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |protectionUnderLockConfigRequired|Booleano|Especifica si es necesario configurar la protección en la característica de bloqueo (también conocida como cifrar con PIN). Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md).|
 |dataRecoveryCertificate|[windowsInformationProtectionDataRecoveryCertificate](../resources/intune_mam_windowsinformationprotectiondatarecoverycertificate.md)|Especifica un certificado de recuperación que se puede usar para recuperar datos de archivos cifrados. Es igual al certificado del agente de recuperación de datos (DRA) para el sistema de cifrado de archivos (EFS). Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
@@ -50,21 +50,21 @@ Hereda de [windowsInformationProtection](../resources/intune_mam_windowsinformat
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
 |:---|:---|:---|
-|protectedAppLockerFiles|Colección [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Otra forma de introducir aplicaciones protegidas mediante archivos XML. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|exemptAppLockerFiles|Colección [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Otra forma de introducir aplicaciones exentas mediante archivos XML. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedAppLockerFiles|Colección [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Otra forma de introducir aplicaciones protegidas por archivos XML. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|exemptAppLockerFiles|Colección [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Otra forma de excluir aplicaciones protegidas por archivos XML. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |asignaciones|Colección [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Propiedad de navegación a la lista de grupos de seguridad destinados a la directiva. Heredado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtection",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
-}-->
+}
+-->
 ``` json
 {
-  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -91,7 +91,7 @@ Aquí tiene una representación JSON del recurso.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "guid",
+  "rightsManagementServicesTemplateId": "Guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -191,30 +191,6 @@ Aquí tiene una representación JSON del recurso.
   "isAssigned": true
 }
 ```
-
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-
-"Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
-      Inconsistent types between parameter (String) and table (Object)",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
-      Paragraph text found before a valid header: dmWindowsInformation...",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
-      Paragraph text found before a valid header: Policy for Windows i...",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
-      Paragraph text found before a valid header: Inherits from [windo...",
-
-"Warning: /api-reference/v1.0/resources/intune_mam_managedappprotection.md/microsoft.graph.managedAppProtection/allowedDataStorageLocations:
-      Inconsistent types between parameter (String) and table (Object)"
-
-  ],
-}
--->
 
 
 

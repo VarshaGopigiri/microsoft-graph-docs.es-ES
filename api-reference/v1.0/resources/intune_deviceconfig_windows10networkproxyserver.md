@@ -14,10 +14,11 @@ Directiva del servidor proxy de red
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10NetworkProxyServer"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10NetworkProxyServer",
@@ -28,11 +29,6 @@ Aquí tiene una representación JSON del recurso.
   "useForLocalAddresses": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -25,7 +25,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [iosVppEBook](../resources/intune_books_iosvppebook.md).
@@ -34,16 +34,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|id|String|Clave de la entidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|String|Nombre del libro electrónico Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|descripción|String|Descripción. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|description|String|Descripción. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publicador|String|Publicador. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publishedDateTime|DateTimeOffset|La fecha y la hora en que se publicó el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Cubierta de libro. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|Dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|String|Dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|El Id. de token de VPP.|
 |appleId|String|El ID de Apple asociado a un token de VPP.|
 |vppOrganizationName|String|El nombre de la organización del token de VPP.|
@@ -64,9 +64,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 Content-type: application/json
-Content-length: 803
+Content-length: 792
 
 {
+  "@odata.type": "#microsoft.graph.iosVppEBook",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -76,10 +77,9 @@ Content-length: 803
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -97,7 +97,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 964
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -115,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -127,11 +127,6 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
-
-
-
-
-
 
 
 

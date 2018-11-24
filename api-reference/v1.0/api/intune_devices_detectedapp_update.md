@@ -24,8 +24,8 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [detectedApp](../resources/intune_devices_detectedapp.md).
@@ -51,9 +51,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
-Content-length: 117
+Content-length: 167
 
 {
+  "@odata.type": "#microsoft.graph.detectedApp",
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,
@@ -77,11 +78,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

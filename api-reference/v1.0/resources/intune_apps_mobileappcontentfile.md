@@ -21,23 +21,23 @@ Contiene las propiedades de un archivo instalador único que está asociado a un
 |isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
 |id|Cadena|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
-|name|Cadena|El nombre del archivo.|
-|size|Int64|El tamaño del archivo antes del cifrado.|
+|nombre|Cadena|El nombre del archivo.|
+|tamaño|Int64|El tamaño del archivo antes del cifrado.|
 |sizeEncrypted|Int64|El tamaño del archivo después del cifrado.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|La hora en que expira el URI de Azure Storage.|
-|manifest|Binario|La información del manifiesto.|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|El estado de la solicitud de carga actual. Los valores posibles son: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|manifiesto|Binario|La información del manifiesto.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune_apps_mobileappcontentfileuploadstate.md)|El estado de la solicitud de carga actual. Los valores posibles son: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` y `commitFileTimedOut`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContentFile"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -53,11 +53,6 @@ Aquí tiene una representación JSON del recurso.
   "uploadState": "String"
 }
 ```
-
-
-
-
-
 
 
 

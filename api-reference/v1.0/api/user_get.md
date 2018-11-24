@@ -14,20 +14,18 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
-Para un usuario específico:
-<!-- { "blockType": "ignored" } -->
+Para un usuario específico:<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-Para un usuario con sesión iniciada:
-<!-- { "blockType": "ignored" } -->
+Para el usuario ha iniciado sesión:<!-- { "blockType": "ignored" } -->
 ```http
 GET /me
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/es-ES/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 De forma predeterminada, solo se devuelve un conjunto limitado de propiedades. (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 

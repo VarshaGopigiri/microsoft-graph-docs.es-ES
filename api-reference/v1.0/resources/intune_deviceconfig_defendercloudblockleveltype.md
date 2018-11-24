@@ -1,20 +1,15 @@
-# <a name="defendercloudblockleveltype-enum-type"></a>Tipo de enumeración defenderCloudBlockLevelType
+# <a name="defendercloudblockleveltype-enum-type"></a>tipo de enumeración defenderCloudBlockLevelType
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Posibles valores de nivel de bloqueo en la nube
+Posibles valores de nivel de bloque en la nube
 ## <a name="members"></a>Miembros
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
-|notConfigured|0|Valor predeterminado, se utiliza el nivel de bloqueo predeterminado de Windows Defender Antivirus y se proporciona una detección segura sin aumentar el riesgo de detectar archivos legítimos.|
-|high|1|High aplica un nivel de detección alto.|
-|highPlus|2|High + utiliza el nivel High y aplica medidas de protección adicionales.|
-|zeroTolerance|3|Zero tolerance bloquea todos los archivos ejecutables desconocidos.|
-
-
-
-
-
+|No configurado|0|Valor predeterminado, se utiliza el bloqueo de Windows Defender Antivirus predeterminado de nivel y se proporciona una detección de segura sin aumentar el riesgo de detectar legítimos archivos|
+|alta|1|Alta aplica a un alto nivel de detección.|
+|highPlus|2|Alta + utiliza el nivel alto y se aplica a las medidas de protección de adición|
+|zeroTolerance|3|Cero tolerancia bloquea todos los archivos ejecutables desconocidos|
 
 
 

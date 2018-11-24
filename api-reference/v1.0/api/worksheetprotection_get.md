@@ -1,4 +1,4 @@
-# <a name="get-worksheetprotection"></a>Obtener WorksheetProtection
+# <a name="get-worksheetprotection"></a>Get WorksheetProtection
 
 Recuperar las propiedades y relaciones del objeto worksheetprotection.
 ## <a name="permissions"></a>Permisos
@@ -16,7 +16,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /workbook/worksheets/{id|name}/protection
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
@@ -29,7 +29,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [WorkbookWorksheetProtection](../resources/worksheetprotection.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y [WorkbookWorksheetProtection](../resources/worksheetprotection.md) objeto en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.

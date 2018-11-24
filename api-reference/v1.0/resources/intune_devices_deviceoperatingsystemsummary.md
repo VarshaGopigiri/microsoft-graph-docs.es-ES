@@ -17,10 +17,11 @@ Resumen de sistemas operativos de dispositivos.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceOperatingSystemSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceOperatingSystemSummary",
@@ -32,11 +33,6 @@ Aquí tiene una representación JSON del recurso.
   "unknownCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

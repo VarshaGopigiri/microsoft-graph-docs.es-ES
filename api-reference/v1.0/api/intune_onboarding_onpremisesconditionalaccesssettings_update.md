@@ -25,7 +25,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md).
@@ -34,7 +34,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Todavía no documentado|
+|id|String|Todavía no documentado|
 |enabled|Booleano|Indica si está habilitado el acceso condicional local para esta organización|
 |includedGroups|Colección Guid|Grupos de usuarios a los que se dirigirá el acceso condicional local. Todos los usuarios de estos grupos deberán tener dispositivos móviles administrados y compatibles para tener acceso al correo.|
 |excludedGroups|Colección Guid|Grupos de usuarios que estarán exentos del acceso condicional local. Todos los usuarios de estos grupos estarán exentos de la directiva de acceso condicional.|
@@ -51,15 +51,16 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
-Content-length: 195
+Content-length: 275
 
 {
+  "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
@@ -70,26 +71,21 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 318
+Content-Length: 324
 
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "String"
+    "77c9d466-d466-77c9-66d4-c97766d4c977"
   ],
   "excludedGroups": [
-    "String"
+    "2a0afae4-fae4-2a0a-e4fa-0a2ae4fa0a2a"
   ],
   "overrideDefaultRule": true
 }
 ```
-
-
-
-
-
 
 
 

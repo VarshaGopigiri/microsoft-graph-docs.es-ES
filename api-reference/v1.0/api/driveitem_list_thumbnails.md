@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Recuperar miniaturas de un archivo o una carpeta
-ms.openlocfilehash: 98bfa0bee80beabc9934ae603f317627facffb4a
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: b7b842a5aac4b8505db3b4fc1c77dcb7c983f521
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23266838"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564847"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Enumerar miniaturas de un DriveItem
 
@@ -23,7 +23,7 @@ Hay muchas maneras de trabajar con miniaturas en OneDrive. Aquí tiene las más 
 * Recuperar el contenido de miniaturas
 * Recuperar miniaturas para varios elementos en una sola solicitud
 * Recuperar los tamaños personalizados de miniaturas
-* Cargar una miniatura personalizada para un elemento
+* Cargar una miniatura personalizada para un elemento 
 * Determinar si existe una miniatura cargada personalizada
 
 ## <a name="permissions"></a>Permisos
@@ -32,9 +32,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All y Sites.ReadWrite.All    |
-|Delegado (cuenta personal de Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All y Files.ReadWrite.All    |
-|Aplicación | Files.Read.All, Files.ReadWrite.All, Sites.Read.All y Sites.ReadWrite.All |
+|Delegado (cuenta profesional o educativa) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Aplicación | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -108,7 +108,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 | Nombre         | Tipo   | Descripción                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| **item-id**  | Cadena | El identificador único para el elemento al que se hace referencia.                                           |
+| **item-id**  | string | El identificador único para el elemento al que se hace referencia.                                           |
 | **thumb-id** | número | El índice de la miniatura, normalmente de 0 a 4. Si existe una miniatura personalizada, su índice es 0. |
 | **size**     | cadena | El tamaño de la miniatura solicitada. Puede ser uno de los tamaños estándares enumerados a continuación o uno personalizado. |
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 {
   "width": 100,
   "height": 100,
-  "url": "http://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
+  "url": "https://onedrive.com/asd123a/asdjlkasjdkasdjlk.jpg"
 }
 ```
 
@@ -213,9 +213,9 @@ Esta tabla define los tamaños posibles de las miniaturas. Puede solicitar cualq
 | `small`        | borde más largo 96  | Original     | Miniatura pequeña y muy comprimida recortada en una relación de aspecto cuadrada. |
 | `medium`       | borde más largo 176 | Original     | Miniatura recortada al tamaño estándar del elemento para la vista web de OneDrive.         |
 | `large`        | borde más largo 800 | Original     | Miniatura con el borde más largo cambiado a un tamaño de 800 píxeles.               |
-| `smallSquare`  | 96 x 96       | Recorte cuadrado  | Miniatura de cuadrado pequeño                                               |
-| `mediumSquare` | 176 x 176     | Recorte cuadrado  | Miniatura de cuadrado pequeño                                               |
-| `largeSquare`  | 800 x 800     | Recorte cuadrado  | Miniatura de cuadrado grande                                               |
+| `smallSquare`  | 96x96       | Recorte cuadrado  | Miniatura de cuadrado pequeño                                               |
+| `mediumSquare` | 176x176     | Recorte cuadrado  | Miniatura de cuadrado pequeño                                               |
+| `largeSquare`  | 800x800     | Recorte cuadrado  | Miniatura de cuadrado grande                                               |
 
 ## <a name="requesting-custom-thumbnail-sizes"></a>Solicitar tamaños personalizados de miniaturas
 
@@ -252,8 +252,8 @@ Puede especificar las siguientes opciones después del tamaño de la miniatura s
 
 | Identificador de miniatura | Resolución             | Relación de aspecto | Descripción                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| c300 x 400             | Limitado por un cuadro de 300x400 | Original     | Genera una miniatura que se adapta dentro de un cuadro de 300x400 píxeles, manteniendo la relación de aspecto                                                                 |
-| c300x400_Crop        | 300 x 400                | Recortado      | Genera una miniatura que tiene 300x400 píxeles. Esto funciona cambiando el tamaño de la imagen para rellenar el cuadro de 300x400 y recortando lo que sobresalga de este. |
+| c300x400             | Limitado por un cuadro de 300x400 | Original     | Genera una miniatura que se adapta dentro de un cuadro de 300x400 píxeles, manteniendo la relación de aspecto                                                                 |
+| c300x400_Crop        | 300x400                | Recortado      | Genera una miniatura que tiene 300x400 píxeles. Esto funciona cambiando el tamaño de la imagen para rellenar el cuadro de 300x400 y recortando lo que sobresalga de este. |
 
 **Nota:** La miniatura devuelta puede no coincidir exactamente con las dimensiones en píxeles que se solicitaron, pero coincidirá con la relación de aspecto.
 En algunos casos, puede devolverse una miniatura más grande que la que se ha solicitado si la miniatura ya existe y se puede escalar fácilmente para ajustarse a la resolución solicitada.

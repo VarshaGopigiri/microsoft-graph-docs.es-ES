@@ -12,15 +12,20 @@ En la tabla siguiente, se enumeran tres escenarios en los que puede obtener una 
 
 ## <a name="permissions"></a>Permisos
 
-Según el recurso que contenga la extensión, se requiere uno de los siguientes permisos para ejecutar esta API: Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
+Dependiendo del recurso que contiene la extensión y el permiso solicitado tipo (delegada o de la aplicación), el permiso especificado en la tabla siguiente es la con privilegios mínimos necesarios para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|**Recurso admitido**|**Permiso**|**Recurso admitido**|**Permiso** |
+| Recurso admitido | Delegado (cuenta profesional o educativa) | Delegado (cuenta personal de Microsoft) | Aplicación |
 |:-----|:-----|:-----|:-----|
-| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read |
-| [Group](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All |
-| [Publicación de grupo](../resources/post.md) | Group.Read.All | [Mensaje](../resources/message.md) | Mail.Read |
-| [Organización](../resources/organization.md) | Directory.Read.All | [Contacto personal](../resources/contact.md) | Contacts.Read |
-| [User](../resources/user.md) | User.ReadBasic.All | | |
+| [device](../resources/device.md) | Directory.Read.All | No admitido | Device.ReadWrite.All |
+| [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [group](../resources/group.md) | Group.Read.All | No admitido | Group.Read.All |
+| [evento de grupo](../resources/event.md) | Group.Read.All | No admitido | No admitido |
+| [publicación de grupo](../resources/post.md) | Group.Read.All | No admitido | Group.Read.All |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organization](../resources/organization.md) | User.Read | No admitido | No admitido |
+| [contacto personal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -86,18 +91,18 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="path-parameters"></a>Parámetros de ruta de acceso
 |Parámetro|Tipo|Descripción|
 |:-----|:-----|:-----|
-|Id|cadena|Marcador de posición de un identificador único para un objeto en la colección correspondiente, como mensajes, contactos o eventos. Necesario. No se debe confundir con la propiedad **id** de una **openTypeExtension**.|
-|extensionId|cadena|Marcador de posición para un nombre de extensión que es un identificador de texto único de una extensión o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad **id** cuando crea la extensión. Necesario.|
+|Id|string|Marcador de posición de un identificador único para un objeto en la colección correspondiente, como mensajes, contactos o eventos. Necesario. No se debe confundir con la propiedad **id** de una **openTypeExtension**.|
+|extensionId|string|Marcador de posición para un nombre de extensión que es un identificador de texto único de una extensión o un nombre completo que concatena el tipo de extensión y un identificador de texto único. Se devuelve el nombre completo de la propiedad **id** cuando crea la extensión. Necesario.|
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 
-Asegúrese de aplicar [la codificación de direcciones URL](http://www.w3schools.com/tags/ref_urlencode.asp) a los caracteres de espacio de la cadena `$filter`.
+Asegúrese de aplicar [la codificación de direcciones URL](https://www.w3schools.com/tags/ref_urlencode.asp) a los caracteres de espacio de la cadena `$filter`.
 
 |Nombre|Valor|Descripción|
 |:---------------|:--------|:-------|
-|$filter|cadena|Devuelve una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
-|$filter con **cualquier** operador|cadena|Devuelve instancias de una colección de recursos que contienen una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
-|$expand|cadena|Expande una instancia de recurso para incluir una extensión. |
+|$filter|string|Devuelve una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
+|$filter con **cualquier** operador|string|Devuelve instancias de una colección de recursos que contienen una extensión cuyo **identificador** coincide con el valor de parámetro `extensionId`.|
+|$expand|string|Expande una instancia de recurso para incluir una extensión. |
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Valor |

@@ -4,17 +4,12 @@
 
 Entidad de administración de dispositivos móviles.
 ## <a name="members"></a>Miembros
-|Miembro|Valor|Descripción|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Desconocido|
-|intune|1|Intune|
-|sccm|2|SCCM|
+|Intune|1|Intune|
+|SCCM|2|SCCM|
 |office365|3|Office365|
-
-
-
-
-
 
 
 

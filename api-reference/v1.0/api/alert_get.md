@@ -1,6 +1,6 @@
-# <a name="get-alert"></a>Obtener alerta
+# <a name="get-alert"></a>Get alert
 
- Recuperar las propiedades y relaciones de un objeto de [alert](../resources/alert.md).
+ Recuperar las propiedades y relaciones de un objeto de [alerta](../resources/alert.md) .
 
 ## <a name="permissions"></a>Permisos
 
@@ -24,7 +24,7 @@ GET /security/alerts/{alert_id}
 
 | Nombre      |Descripción|
 |:----------|:----------|
-| Autorización  | {código} del portador. Necesario.|
+| Authorization  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -32,7 +32,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un `200 OK`código de respuesta y el objeto **alert** en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y un objeto de **alerta** en el cuerpo de la respuesta. Si se devuelve un código de estado que no sea 2xx o 404 desde un proveedor o un proveedor de tiempo de espera, la respuesta será un `206 Partial Content` código de estado con la respuesta de proveedores en un encabezado de advertencia. Para obtener más información, vea [respuestas de error de la API de seguridad de Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Ejemplo
 

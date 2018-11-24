@@ -34,12 +34,12 @@ Esta es la clase base para la directiva de cumplimiento. Las directivas de cumpl
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
@@ -51,11 +51,6 @@ Aquí tiene una representación JSON del recurso.
   "version": 1024
 }
 ```
-
-
-
-
-
 
 
 

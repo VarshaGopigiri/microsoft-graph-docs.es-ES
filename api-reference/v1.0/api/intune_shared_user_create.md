@@ -4,15 +4,15 @@
 
 Cree un objeto [user](../resources/intune_shared_user.md).
 ## <a name="prerequisites"></a>Requisitos previos
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).  Según el contexto, se le requerirá un permiso específico.
+Uno de los siguientes permisos se requiere para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).  Los permisos específicos necesarios depende del contexto.
 
 |Tipo de permiso|Permisos (de más a menos privilegiados)|
 |:---|:---|
 |Delegado (cuenta profesional o educativa)| _varía según el contexto_ |
-| &nbsp; &nbsp; Administración de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; Incorporación | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; Solución de problemas | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Administración de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Incorporación | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Solución de problemas | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegado (cuenta personal de Microsoft)|No admitida.|
 |Aplicación|No admitida.|
 
@@ -28,7 +28,7 @@ POST /users
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -38,11 +38,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Identificador único del usuario.|
-|**Incorporación**|
+|id|String|Identificador único del usuario.|
+|**Incorporación de redes**|
 |deviceEnrollmentLimit|Int32|El límite del número máximo de dispositivos que el usuario puede inscribir. Los valores permitidos son 5 o 1000.|
 
-La compatibilidad con las propiedades de cuerpo de solicitud varía según el contexto.
+Compatibilidad con propiedades de cuerpo de solicitud varía según el contexto.
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y un objeto [user](../resources/intune_shared_user.md) en el cuerpo de la respuesta.

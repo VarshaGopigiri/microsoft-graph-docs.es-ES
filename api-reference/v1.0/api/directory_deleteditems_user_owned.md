@@ -2,13 +2,13 @@
 
 Recupera una lista de los elementos recientemente eliminados que pertenecen al usuario especificado.  
 
-Actualmente, la funcionalidad de la lista de elementos eliminados solo es compatible con los recursos [group](../resources/group.md) que pertenecen al usuario.
+Actualmente, la funcionalidad de elementos de lista eliminada sólo se admite para [agrupar](../resources/group.md) los recursos que pertenecen al usuario.
 
-Se trata de una acción de servicio, por lo que no admite paginación.  La API devuelve hasta 1000 objetos eliminados que pertenecen al usuario, ordenados por id.
+Se trata de una acción de servicio, lo que significa que no admite la paginación.  La API devuelve objetos eliminados hasta 1.000 que pertenecen al usuario, ordenado por identificador.
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
 | Tipo de permiso | Permisos (de menos a más privilegiados) |
 | --- | --- |
@@ -26,7 +26,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 | Nombre          | Descripción               |
 | ------------- | ------------------------- |
-| Autorización | {token} de portador. Obligatorio. |
+| Authorization | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -37,17 +37,17 @@ POST /directory/deletedItems/getUserOwnedObjects
 }
 ```
 
-El cuerpo de la solicitud requiere los siguientes parámetros:
+El cuerpo de solicitud requiere los siguientes parámetros:
 
 | Parámetro    | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|userId|Cadena|Id. del propietario/a.|
-|type|Cadena|Tipo de objetos para devolver; `Group` es actualmente el único valor admitido.|
+|userId|String|Identificador del propietario.|
+|type|String|Tipo de objetos que posea para devolver; `Group` actualmente es el único valor admitido.|
 
 
 ## <a name="response"></a>Respuesta
 
-`200 OK` devuelve con éxito solicitudes de códigos de respuesta; el objeto de la respuesta incluye propiedades de [directorio (elementos eliminados)](../resources/directory.md).
+Solicitudes correctas devuelven `200 OK` los códigos de respuesta; el objeto de respuesta incluye las propiedades del [directorio (elementos eliminados)](../resources/directory.md) .
 
 ## <a name="example"></a>Ejemplo
 
@@ -69,7 +69,7 @@ Content-type: application/json
 
 ###### <a name="response"></a>Respuesta
 
-Aquí tiene un ejemplo de la respuesta. Nota: es posible que el objeto de respuesta que aparece aquí esté truncado para abreviar. Todas las propiedades admitidas se devuelven de llamadas reales.
+Aquí tiene un ejemplo de la respuesta. Nota: Este objeto de respuesta es posible que esté truncada por razones de brevedad. Se devuelven todas las propiedades admitidas de llamadas reales.
 
 ``` http
 HTTP/1.1 200

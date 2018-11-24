@@ -24,8 +24,8 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto resourceOperation.
@@ -75,11 +75,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
-
-
-
-
 
 
 

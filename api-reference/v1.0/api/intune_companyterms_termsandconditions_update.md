@@ -10,7 +10,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---|:---|
 |Delegado (cuenta profesional o educativa)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (cuenta personal de Microsoft)|No admitida.|
-|Aplicación|No admitida.|
+|Aplicación|No compatible.|
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- {
@@ -25,8 +25,8 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [termsAndConditions](../resources/intune_companyterms_termsandconditions.md).
@@ -56,10 +56,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
-Content-length: 280
+Content-length: 273
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.termsAndConditions",
   "displayName": "Display Name value",
   "description": "Description value",
   "title": "Title value",
@@ -89,11 +89,6 @@ Content-Length: 445
   "version": 7
 }
 ```
-
-
-
-
-
 
 
 

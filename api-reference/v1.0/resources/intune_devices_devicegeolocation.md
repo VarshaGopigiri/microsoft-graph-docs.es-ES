@@ -19,10 +19,11 @@ Ubicación del dispositivo
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
@@ -36,11 +37,6 @@ Aquí tiene una representación JSON del recurso.
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
-
-
-
-
-
 
 
 

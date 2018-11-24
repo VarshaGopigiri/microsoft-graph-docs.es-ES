@@ -25,7 +25,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md).
@@ -34,16 +34,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Todavía no documentado|
+|id|String|Todavía no documentado|
 |lastSyncDateTime|DateTimeOffset|Última hora de sincronización para Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Estado de Exchange Connector. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
-|primarySmtpAddress|Cadena|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
-|serverName|Cadena|El nombre del servidor de Exchange.|
-|connectorServerName|Cadena|El nombre del servidor que hospeda el Exchange Connector.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Estado del conector de Exchange. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
+|primarySmtpAddress|String|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|
+|serverName|String|El nombre del servidor de Exchange.|
+|connectorServerName|String|El nombre del servidor que hospeda el Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|El tipo de Exchange Connector configurado. Los valores posibles son: `onPremises`, `hosted`, `serviceToService` y `dedicated`.|
-|version|Cadena|La versión del ExchangeConnectorAgent|
-|exchangeAlias|Cadena|Un alias asignado al servidor de Exchange|
-|exchangeOrganization|Cadena|Organización de Exchange al servidor de Exchange|
+|version|String|La versión del ExchangeConnectorAgent|
+|exchangeAlias|String|Un alias asignado al servidor de Exchange|
+|exchangeOrganization|String|Organización de Exchange al servidor de Exchange|
 
 
 
@@ -56,9 +56,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
-Content-length: 418
+Content-length: 490
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementExchangeConnector",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "status": "connectionPending",
   "primarySmtpAddress": "Primary Smtp Address value",
@@ -92,11 +93,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

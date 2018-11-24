@@ -15,7 +15,7 @@ Contiene las propiedades del contenido de una versión de aplicación específic
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|La versión de contenido de la aplicación.|
+|id|cadena|La versión de contenido de la aplicación.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
@@ -24,23 +24,18 @@ Contiene las propiedades del contenido de una versión de aplicación específic
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppContent",
   "id": "String (identifier)"
 }
 ```
-
-
-
-
-
 
 
 

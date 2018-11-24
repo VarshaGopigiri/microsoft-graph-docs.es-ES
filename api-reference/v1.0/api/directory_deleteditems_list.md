@@ -30,15 +30,15 @@ GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-Actualmente, esta API admite la recuperación de tipos de objeto de grupos (microsoft.graph.group) o de usuarios (microsoft.graph.user) de los elementos eliminados. El tipo se especifica como parte necesaria del URI. No se admite realizar llamadas GET /directory/deletedItems sin un tipo.
+Actualmente, esta API admite la recuperación de tipos de objeto de grupos (microsoft.graph.group) o de usuarios (microsoft.graph.user) de los elementos eliminados. El tipo se especifica como parte necesaria del URI. Llamar a GET/directory/deletedItems sin un tipo no es compatible.
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | Código&gt; de portador *necesario*&lt;|
+| Authorization  | &lt;Código&gt; de portador *necesario*|
 | Accept  | application/json |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

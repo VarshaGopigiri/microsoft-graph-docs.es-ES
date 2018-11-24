@@ -20,7 +20,7 @@ GET /me/mailFolders/inbox/messageRules/{id}
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://graph.microsoft.io/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
@@ -46,7 +46,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 ##### <a name="response"></a>Respuesta
 Este es un ejemplo de la respuesta. De forma predeterminada, las propiedades de fecha y hora de la respuesta están en hora UTC. 
 
-Nota: Es posible que el objeto de respuesta que se muestra aquí aparezca truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
+Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán desde una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,8 +1,8 @@
-# <a name="user-getmailtips"></a>user: getMailTips
+# <a name="user-getmailtips"></a>usuario: getMailTips
 
-Obtenga las sugerencias de correo electrónico de uno o más destinatarios como disponibles para el [usuario](../resources/user.md) que ha iniciado sesión.
+Obtenga las sugerencias de correo electrónico de uno o más destinatarios como disponibles para el [usuario](../resources/user.md)de ha iniciado sesión.
 
-Tenga en cuenta que al hacer una `POST` llamada a la acción `getMailTips`, puede solicitar tipos específicos de sugerencias de correo electrónico que se devolverán para más de un destinatario a la vez. Las sugerencias de correo electrónico solicitadas se devuelven en una colección [mailTips](../resources/mailtips.md).
+Tenga en cuenta que al hacer que un `POST` llamar a la `getMailTips` acción, puede solicitar tipos específicos de sugerencias de correo electrónico que se devolverá para más de un destinatario a la vez. Las sugerencias de correo electrónico solicitados se devuelven en una colección de [sugerencias de correo electrónico](../resources/mailtips.md) .
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
@@ -20,7 +20,7 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor|
 |:-----------  |:------|
@@ -32,15 +32,15 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|EmailAddresses|Colección String|Una colección de direcciones SMTP de destinatarios de las que obtener sugerencias de correo electrónico.|
-|MailTipsOptions|Cadena|Una enumeración de marcas que representa las sugerencias de mensajes de correo solicitadas. Los valores posibles son: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, y `totalMemberCount`.|
+|EmailAddresses|Colección String|Una colección de direcciones SMTP de los destinatarios para obtener sugerencias de correo electrónico para.|
+|MailTipsOptions|String|Una enumeración de indicadores que representa las sugerencias de correo electrónico solicitado. Los valores posibles son: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, y `totalMemberCount`.|
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [mailTips](../resources/mailtips.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y una colección de objetos de [sugerencias de correo electrónico](../resources/mailtips.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
-El siguiente ejemplo obtiene sugerencias de correo electrónico para los destinatarios especificados, para cualquier configuración de respuesta automática y estado completo del buzón.
+En el ejemplo siguiente se obtiene sugerencias de correo electrónico para los destinatarios especificados, para cualquier configuración de respuestas automáticas y el estado completo del buzón de correo.
 
 <!-- {
   "blockType": "request",

@@ -5,11 +5,11 @@ Obtiene las publicaciones del hilo especificado. Puede especificar la conversaci
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Group.ReadWrite.All, Group.Read.All    | 
-|Delegado (cuenta personal de Microsoft) | No admitida.    | 
-|Aplicación | Group.ReadWrite.All, Group.Read.All | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Group.ReadWrite.All, Group.Read.All    |
+|Delegado (cuenta personal de Microsoft) | No admitida.    |
+|Aplicación | Group.ReadWrite.All, Group.Read.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +19,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|

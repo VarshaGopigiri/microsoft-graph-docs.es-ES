@@ -2,7 +2,7 @@
 
 Obtener la lista de zonas horarias compatibles con el usuario, según la configuración del servidor de buzones del usuario.
 
-Puede especificarse explícitamente que las zonas horarias se devuelvan en el formato de zona horaria de Windows o el formato de [zona horaria Internet Assigned Numbers Authority (IANA)](http://www.iana.org/time-zones) (también conocida como "zona horaria Olson"). El formato Windows es el predeterminado.
+Puede especificarse explícitamente que las zonas horarias se devuelvan en el formato de zona horaria de Windows o el formato de [zona horaria Internet Assigned Numbers Authority (IANA)](https://www.iana.org/time-zones) (también conocida como "zona horaria Olson"). El formato Windows es el predeterminado.
 
 Al configurar un cliente de Outlook, el usuario selecciona la zona horaria preferida de esta lista admitida. Posteriormente, puede obtener la zona horaria preferida [obteniendo la configuración del buzón del usuario](user_get_mailboxsettings.md).
 
@@ -34,7 +34,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | cadena  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -44,7 +44,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 
 ## <a name="example"></a>Ejemplo
 
-##### <a name="request-1"></a>Solicitud 1
+##### <a name="request-1"></a>Solicitud 1
 En el ejemplo siguiente no se especifica el parámetro `timeZoneStandard` y se obtiene la lista de zonas horarias admitidas representadas en el formato de zona horaria de Windows. 
 <!-- {
   "blockType": "request",
@@ -54,7 +54,7 @@ En el ejemplo siguiente no se especifica el parámetro `timeZoneStandard` y se o
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
 
-##### <a name="response-1"></a>Respuesta 1
+##### <a name="response-1"></a>Respuesta 1
 Aquí tiene un ejemplo de la respuesta. 
 <!-- {
   "blockType": "response",
@@ -90,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Solicitud 2
+##### <a name="request-2"></a>Solicitud 2
 En el ejemplo siguiente se especifica el `Iana` para el parámetro `TimeZoneStandard` y se obtiene la lista de zonas horarias admitidas representadas en el formato IANA. 
 
 <!-- {
@@ -102,7 +102,7 @@ En el ejemplo siguiente se especifica el `Iana` para el parámetro `TimeZoneStan
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 
-##### <a name="response-2"></a>Respuesta 2
+##### <a name="response-2"></a>Respuesta 2
 Aquí tiene un ejemplo de la respuesta. 
 
 <!-- {

@@ -4,11 +4,11 @@ Obtiene la colección de carpetas en la carpeta especificada. Puede usar el acce
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
-|Tipo de permiso      | Permisos (de menos a más privilegiados)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (cuenta profesional o educativa) | Mail.Read, Mail.ReadWrite    | 
-|Delegado (cuenta personal de Microsoft) | Mail.Read, Mail.ReadWrite    | 
-|Aplicación | Mail.Read, Mail.ReadWrite | 
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Mail.Read, Mail.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Mail.Read, Mail.ReadWrite    |
+|Aplicación | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -17,7 +17,7 @@ GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|

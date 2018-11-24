@@ -25,7 +25,7 @@ GET /deviceManagement/troubleshootingEvents
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -37,7 +37,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `200 
 ### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
 ``` http
-GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>Respuesta
@@ -66,7 +66,6 @@ Content-Length: 639
   ]
 }
 ```
-
 
 
 

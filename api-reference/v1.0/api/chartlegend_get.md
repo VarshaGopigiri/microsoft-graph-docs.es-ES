@@ -1,4 +1,4 @@
-# <a name="get-chartlegend"></a>Obtener ChartLegend
+# <a name="get-chartlegend"></a>Get ChartLegend
 
 Recuperar las propiedades y relaciones del objeto chartlegend.
 ## <a name="permissions"></a>Permisos
@@ -16,12 +16,12 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 GET /workbook/worksheets/{id|name}/charts/{name}/legend
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Autorización  | {token} de portador. Obligatorio. |
+| Authorization  | {token} de portador. Obligatorio. |
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -29,7 +29,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta`200 OK` y el objeto [WorkbookChartLegend](../resources/chartlegend.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y [WorkbookChartLegend](../resources/chartlegend.md) objeto en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.

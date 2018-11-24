@@ -24,8 +24,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [mobileAppAssignment](../resources/intune_apps_mobileappassignment.md).
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|El objetivo de instalación definido por el administrador. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
+|id|String|Clave de la entidad.|
+|objetivo|[installIntent](../resources/intune_shared_installintent.md)|El objetivo de instalación definido por el administrador. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|La asignación de grupo de destino definida por el administrador.|
-|settings|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|La asignación de la configuración para el destino definida por el administrador.|
+|configuración|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|La asignación de la configuración para el destino definida por el administrador.|
 
 
 
@@ -50,9 +50,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 215
+Content-length: 273
 
 {
+  "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
@@ -82,11 +83,6 @@ Content-Length: 322
   }
 }
 ```
-
-
-
-
-
 
 
 

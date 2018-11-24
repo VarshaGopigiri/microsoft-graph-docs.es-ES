@@ -26,7 +26,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 |Encabezado|Valor|
 |:---|:---|
 |Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto settingStateDeviceSummary.
@@ -35,7 +35,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |settingName|String|Nombre de la configuración|
 |instancePath|String|Nombre de InstancePath para la configuración|
 |unknownDeviceCount|Int32|Número de dispositivos desconocido para la configuración|
@@ -94,11 +94,6 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 
