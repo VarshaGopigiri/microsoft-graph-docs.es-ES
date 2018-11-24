@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Accept|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md).
@@ -34,9 +34,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|setting|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
-|settingName|Cadena|Nombre de la configuración.|
+|id|String|Clave de la entidad.|
+|ajustes|String|El nombre de la clase de configuración y el nombre de propiedad.|
+|settingName|String|Nombre de la configuración.|
 |platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Plataforma de configuración. Los valores posibles son: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` y `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
@@ -57,9 +57,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
 Content-type: application/json
-Content-length: 311
+Content-length: 391
 
 {
+  "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
   "setting": "Setting value",
   "settingName": "Setting Name value",
   "platformType": "iOS",
@@ -95,11 +96,6 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|aplicación/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceComplianceActionItem](../resources/intune_deviceconfig_devicecomplianceactionitem.md).
@@ -34,10 +34,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |gracePeriodHours|Int32|Número de horas de espera hasta que se aplica la acción. Valores válidos de 0 a 8760|
-|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|Qué acción realizar. Los valores posibles son: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`.|
-|notificationTemplateId|Cadena|Qué plantilla de mensaje de notificación usar|
+|actionType|[deviceComplianceActionType](../resources/intune_deviceconfig_devicecomplianceactiontype.md)|¿Qué acción debe realizar. Los valores posibles son: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles` y `pushNotification`.|
+|notificationTemplateId|String|Qué plantilla de mensaje de notificación usar|
 |notificationMessageCCList|Colección string|Una lista de identificadores de grupo para especificar a quién enviar este mensaje de notificación.|
 
 
@@ -51,9 +51,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations/{deviceComplianceActionItemId}
 Content-type: application/json
-Content-length: 206
+Content-length: 271
 
 {
+  "@odata.type": "#microsoft.graph.deviceComplianceActionItem",
   "gracePeriodHours": 0,
   "actionType": "notification",
   "notificationTemplateId": "Notification Template Id value",
@@ -81,11 +82,6 @@ Content-Length: 320
   ]
 }
 ```
-
-
-
-
-
 
 
 

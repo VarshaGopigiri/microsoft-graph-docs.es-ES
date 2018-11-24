@@ -1,4 +1,4 @@
-# <a name="use-the-outlook-mail-rest-api"></a>Utilizar la API de REST del Correo de Outlook
+# <a name="use-the-outlook-mail-rest-api"></a>Usar la API de REST de correo de Outlook
 
 Microsoft Graph permite que su aplicación obtenga acceso autorizado a los datos de correo de Outlook de un usuario en una cuenta personal o de organización. Con los [permisos apropiados delegados o de la aplicación](../../../concepts/permissions_reference.md), su aplicación puede tener acceso a los datos de correo del usuario que ha iniciado sesión o cualquier usuario en un espacio empresarial. Los datos de correo pueden estar en la nube en Exchange Online como parte de Office 365 o en Exchange local en una [implementación híbrida](../../../concepts/hybrid_rest_support.md).
 
@@ -12,9 +12,9 @@ Los mensajes de correo electrónico están representados por el recurso [message
 
 Los cuerpos del mensaje se pueden mostrar en formato de texto o HTML.
 
-Puede usar nombres de carpetas conocidos como `Inbox`, `Drafts`, `SentItems` o `DeletedItems` para identificar ciertas carpetas de correo que existen de forma predeterminada para todos los usuarios. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).
+Puede usar los nombres de las carpetas conocidas como `Inbox`, `Drafts`, `SentItems`, o `DeletedItems` para identificar ciertas carpetas de correo que existen de forma predeterminada para todos los usuarios. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).
 
-Por ejemplo, puede obtener los mensajes en la carpeta **Elementos enviados** de Outlook del usuario que ha iniciado sesión sin obtener primero el identificador de la carpeta:
+Por ejemplo, puede obtener los mensajes en la carpeta **Elementos enviados** de Outlook del usuario ha iniciado sesión, sin obtener primero el identificador de carpeta:
 
 ```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
@@ -33,8 +33,8 @@ La API de Microsoft Graph también proporciona métodos y acciones que admiten c
 | Delegar a otro usuario para enviar mensajes en nombre del propietario del buzón | [message](../resources/message.md) | Configuración de las propiedades **de** y **remitente** en un [mensaje](../resources/message.md) |
 | Permitir que el usuario vea primero los mensajes más importantes | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Bandeja de entrada Prioritarios](../resources/manage_focused_inbox.md) |
 | Agregar, obtener o eliminar datos adjuntos de un mensaje | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Métodos de attachment](../resources/attachment.md#methods) |
-| Obtener o actualizar la configuración regional, la zona horaria, el horario laboral o la respuesta automática de un usuario | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Obtener la configuración del buzón del usuario](../api/user_get_mailboxsettings.md), <br> [[Actualizar la configuración del buzón del usuario](../api/user_update_mailboxsettings.md),](../api/user_update_mailboxsettings.md) |
-| Obtener sugerencias de correo electrónico de estado especial del resto de los destinatarios, como fuera de la oficina | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Obtener sugerencias de correo electrónico](../api/user_getmailtips.md) |
+| Obtener o actualizar la configuración regional, la zona horaria, el horario laboral o la respuesta automática de un usuario | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Obtener la configuración del buzón del usuario](../api/user_get_mailboxsettings.md), <br> [Actualizar la configuración del buzón del usuario](../api/user_update_mailboxsettings.md), |
+| Obtener sugerencias de correo electrónico de estado especial del resto de los destinatarios, como fuera de la oficina | [usuario](../resources/user.md), <br> [sugerencias de correo electrónico](../resources/mailtips.md) | [Obtener sugerencias de correo electrónico](../api/user_getmailtips.md) |
 | **Administración de carpetas y correo** | | |
 | Organizar los mensajes en una jerarquía de carpetas del correo | [mailFolder](../resources/mailfolder.md)  | [Métodos de mailFolder](../resources/mailfolder.md#methods) |
 | Buscar y filtrar mensajes | [message](../resources/message.md) | [Parámetros de consulta](../../../concepts/query_parameters.md)  |
@@ -51,6 +51,6 @@ La API de correo puede abrir nuevas formas de comunicarse con los usuarios:
 
 - [Información general sobre la API de correo de Outlook](../../../concepts/outlook-mail-concept-overview.md)
 - Profundizar en los [métodos](../resources/message.md#methods), las [propiedades](../resources/message.md#properties) y las [relaciones](../resources/message.md#relationships) de los recursos [message](../resources/message.md) y [mailFolder](../resources/mailfolder.md).
-- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Pruebe la API en el [Probador de Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-¿Necesita más ideas? Vea [cómo algunos de nuestros socios utilizan Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+¿Necesita más ideas? Vea [cómo algunos de nuestros socios utilizan Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).

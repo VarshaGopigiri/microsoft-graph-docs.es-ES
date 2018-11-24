@@ -1,4 +1,4 @@
-# <a name="list-tablecollection"></a>Enumerar TableCollection
+# <a name="list-tablecollection"></a>List TableCollection
 
 Recuperar una lista de objetos table.
 ## <a name="permissions"></a>Permisos
@@ -17,7 +17,7 @@ GET /workbook/tables
 GET /workbook/worksheets/{id|name}/tables
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
@@ -30,7 +30,7 @@ No proporcione un cuerpo de solicitud para este método.
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y la colección de objetos [WorkbookTable](../resources/table.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y la colección de objetos de [WorkbookTable](../resources/table.md) en el cuerpo de la respuesta.
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 Aquí tiene un ejemplo de la solicitud.
@@ -66,7 +66,7 @@ Content-length: 158
   ]
 }
 ```
-> **Nota**: Use los parámetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) y [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) para examinar un gran número de tablas.
+> **Nota**: Use los parámetros de consulta [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) y [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) para examinar un gran número de tablas.
 
 Ejemplo: 
 

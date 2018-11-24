@@ -1,20 +1,20 @@
-# <a name="security-api-error-responses"></a>Respuestas de error de la API de seguridad
+# <a name="microsoft-graph-security-api-error-responses"></a>Respuestas de error de la API de seguridad de Microsoft Graph
 
-Los errores en la API de seguridad en Microsoft Graph se devuelven mediante códigos de estado HTTP estándar y se entregan por medio de un encabezado de advertencia.
+Errores en la API de seguridad de Microsoft Graph en Microsoft Graph se devuelven mediante código de estado HTTP 206 parcial contenido estándar y se entregan por medio de un encabezado de advertencia.
 
-La API de seguridad es un servicio federado que recibe varias respuestas de todos los proveedores de datos. Cuando la API de seguridad recibe un error HTTP, devolverá un encabezado de advertencia con el siguiente formato: <!-- { "blockType": "ignored" } -->
+La API de seguridad de Microsoft Graph es un servicio federado que recibe varias respuestas de todos los proveedores de datos. Cuando se recibe un error HTTP por la API de seguridad de Microsoft Graph, bien va a volver a enviar un encabezado de advertencia en el siguiente formato:<!-- { "blockType": "ignored" } -->
 
 ```http
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-Este encabezado de advertencia sólo se envía a los clientes cuando uno de los proveedores de datos devuelve un código de error que no sea 2xx o 404. Por ejemplo:
+Este encabezado de advertencia sólo se envía a los clientes cuando uno de los proveedores de datos devuelve un código de error que no sean 2xx o 404. Por ejemplo:
 
-- Es posible que se devuelva HttpStatusCode.Forbidden (403) si no se ha concedido el acceso al recurso.
-- Si un proveedor excede el tiempo espera, se devuelve HttpStatusCode.GatewayTimeout (504) en el encabezado de advertencia.
+- Es posible que se devuelva HttpStatusCode.Forbidden (403) si no se concede el acceso al recurso.
+- Si un proveedor de tiempo de espera, se devuelve HttpStatusCode.GatewayTimeout (504) en el encabezado de advertencia.
 - Si se produce un error interno del proveedor, se usa HttpStatusCode.InternalServerError (500) en el encabezado de advertencia.
 
-Si un proveedor de datos devuelve 2xx o 404, no se muestra en el encabezado de advertencia debido a que estos códigos se preven, respectivamente, cuando el resultado es correcto o cuando no se han encontrado datos. En un sistema federado, se prevé un error 404 de no encontrado tantas veces como los datos solo los conozcan uno o varios proveedores, pero no todos.
+Si un proveedor de datos devuelve 2xx o 404, no se muestra en el encabezado de advertencia debido a que se esperan que estos códigos para el éxito o cuando no se encontraron datos respectivamente. En un sistema federado, se prevé un error 404 no se encontró como número de veces que los datos sólo se conocen a uno o varios, pero no todos los proveedores.
 
 ## <a name="example"></a>Ejemplo
 
@@ -28,12 +28,12 @@ Un usuario solicita `security/alerts/{alert_id}`.
 Dado que 404 y 200 son las condiciones previstas, el encabezado de advertencia contiene lo siguiente: 
 
 ```HTTP
-Warning : 199 - "{Vendor2}/{Provider 2}/504/29000",    (usual timeout limit is set at 29 seconds)
+Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
-> **Nota:** Cada encabezado HTTP es una colección de subelementos, por lo que los usuarios pueden enumerar el encabezado de advertencia y comprobar todos los elementos.
+> **Nota:** Cada encabezado HTTP es una colección de subelementos, por lo que los usuarios pueden enumerar el encabezado de advertencia y compruebe todos los elementos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-Si tiene problemas con la autorización, consulte nuestra [entrada de blog](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).
+Si tiene problemas con la autorización, consulte nuestro [blog post](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).

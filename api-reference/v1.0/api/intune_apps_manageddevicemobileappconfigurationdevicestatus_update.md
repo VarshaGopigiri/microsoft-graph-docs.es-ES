@@ -2,7 +2,7 @@
 
 > **Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.
 
-Actualiza las propiedades de un objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md).
+Actualizar las propiedades de un objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) .
 ## <a name="prerequisites"></a>Requisitos previos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).
 
@@ -24,29 +24,29 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|aplicación/json|
+|Authorization|Se requiere &lt;token&gt; de portador.|
+|Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, especifique una representación JSON del objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md).
+En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) .
 
-La tabla siguiente muestra las propiedades necesarias a la hora de crear el objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md).
+La siguiente tabla muestran las propiedades que son necesarias cuando se crea el [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md).
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id.|Cadena|Clave de la entidad.|
-|deviceDisplayName|Cadena|Nombre de dispositivo de DevicePolicyStatus.|
-|userName|Cadena|El nombre de usuario que se está notificando|
-|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
+|id|String|Clave de la entidad.|
+|deviceDisplayName|String|Nombre de dispositivo de DevicePolicyStatus.|
+|userName|String|El nombre de usuario que se está notificando|
+|deviceModel|String|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
-|estado|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|Cadena|UserPrincipalName.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) actualizado en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `200 OK` código de respuesta y un objeto actualizado [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_apps_manageddevicemobileappconfigurationdevicestatus.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 ### <a name="request"></a>Solicitud
@@ -54,9 +54,10 @@ Aquí tiene un ejemplo de la solicitud.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
 Content-type: application/json
-Content-length: 359
+Content-length: 445
 
 {
+  "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
   "deviceDisplayName": "Device Display Name value",
   "userName": "User Name value",
   "deviceModel": "Device Model value",
@@ -86,11 +87,6 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,54 +1,53 @@
 # <a name="alert-resource-type"></a>tipo de recurso de alerta
 
-Representa los posibles problemas de seguridad dentro de la cuenta empresarial de un cliente que las soluciones de seguridad de Microsoft o de un socio han identificado. Usar alertas para unificar y simplificar la administración de problemas de seguridad a través de todas las soluciones integradas. Para obtener más información, vea las consultas de ejemplo en [Probador de Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+Representa los posibles problemas de seguridad dentro de inquilino de un cliente que han identificado las soluciones de seguridad de Microsoft o socio. Usar alertas para unificar y simplificar la administración de problemas de seguridad a través de todas las soluciones integradas. Para obtener más información, vea las consultas de ejemplo en [El Explorador de gráfico](https://developer.microsoft.com/graph/graph-explorer).
 
-Las alertas se pueden recuperar de los siguientes proveedores: Azure Security Center y Azure Active Directory Identity Protection. En los meses siguientes se integrarán proveedores de alerta adicionales.
+Las alertas se pueden recuperar de proveedores de seguridad diferentes que aparecen en la [Información general de seguridad de Microsoft Graph](security-api-overview.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método   | Tipo de valor devuelto|Descripción|
 |:---------------|:--------|:----------|
-|[Obtener alerta](../api/alert_get.md) | [alerta](alert.md) |Lee propiedades y relaciones de un objeto de alerta.|
-|[Actualizar alerta](../api/alert_update.md) | [alerta](alert.md) |Actualiza un objeto de alerta. |
-|[Alertas de lista](../api/alert_list.md) | colección de [alert](alert.md) |Obtiene una colección de objetos de alerta.|
+|[Get alert](../api/alert_get.md) | [alerta](alert.md) |Leer propiedades y relaciones de un objeto de alerta.|
+|[Update alert](../api/alert_update.md) | [alerta](alert.md) |Actualizar un objeto de alerta. |
+|[List alerts](../api/alert_list.md) | colección de [alerta](alert.md) |Obtener una colección de objetos de alerta.|
 
 ## <a name="properties"></a>Propiedades
 
 | Propiedad   | Tipo|Descripción|
 |:---------------|:--------|:----------|
-|activityGroupName|Cadena|Nombre o alias del grupo de actividades (atacante) al que se atribuye esta alerta.|
-|assignedTo|Cadena|Nombre del analista que se le ha asignado a la alerta para la evaluación de errores, investigación o corrección (admite la [actualización](../api/alert_update.md)).|
-|azureSubscriptionId|Cadena|Identificador de suscripción de Azure, presente si esta alerta está relacionada con un recurso de Azure.|
-|azureTenantId *|Cadena|Identificador de la cuenta empresarial de Azure Active Directory.|
-|category|Cadena|Categoría de la alerta (por ejemplo, credentialTheft, ransomware, etc.).|
-|closedDateTime|DateTimeOffset|Hora a la que se ha cerrado la alerta. El tipo Timestamp (marca de hora) representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 tendría este aspecto: `'2014-01-01T00:00:00Z'` (admite la [actualización](../api/alert_update.md)).|
-|cloudAppStates|colección de [cloudAppSecurityState](cloudappsecuritystate.md)|Información con seguimiento de estado sobre la seguridad generada por el proveedor acerca de la aplicación/es en la nube relacionada/s con esta alerta.|
-|comments|Colección de cadenas|Comentarios proporcionados por el cliente sobre la alerta (para la administración de alertas del cliente) (admite la [actualización](../api/alert_update.md)).|
-|confidence|Int32|Confianza de la lógica de detección (porcentaje entre 1 y 100).|
-|createdDateTime *|DateTimeOffset|Hora a la que el proveedor de alerta creó la alerta. El tipo Timestamp (marca de hora) representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|descripción|Cadena|Descripción de la alerta.|
-|detectionIds|Colección de cadenas|Conjunto de alertas relacionadas con esta entidad de alerta (cada alerta se inserta en el SIEM como un registro independiente).|
-|eventDateTime *|DateTimeOffset|Hora a la que se produjo el evento o eventos que sirve(n) como desencadenador(es) para generar la alerta. El tipo Timestamp (marca de hora) representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|feedback|alertFeedback|Comentarios del analista sobre la alerta. Los valores posibles son: `unknown`, `truePositive`, `falsePositive` y `benignPositive`. (admite la [actualización](../api/alert_update.md))|
-|fileStates|colección de [fileSecurityState](filesecuritystate.md)|Información con seguimiento de estado sobre la seguridad generada por el proveedor acerca del archivo o archivos relacionados con esta alerta.|
-|hostStates|colección de [hostSecurityState](hostsecuritystate.md)|Información con seguimiento de estado sobre la seguridad generada por el proveedor acerca del host o hosts relacionados con esta alerta.|
-|id *|Cadena|Identificador GUID/único generado por el proveedor. (Solo lectura)|
-|lastModifiedDateTime|DateTimeOffset|Hora a la que se modificó por última vez la entidad de alerta. El tipo Timestamp (marca de hora) representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|malwareStates|colección de [malwareState](malwarestate.md)|Inteligencia sobre amenazas perteneciente a malware relacionados con esta alerta.|
-|networkConnections|colección de [networkConnection](networkconnection.md)|Información con seguimiento de estado sobre la seguridad generada por el proveedor acerca de la conexión o conexiones de red relacionadas con esta alerta.|
-|processes|colección de [process](process.md)|Información con seguimiento de estado sobre la seguridad generada por el proveedor acerca del proceso o procesos relacionados con esta alerta.|
-|recommendedActions|Colección de cadenas|La acción o acciones que realizar recomendadas por el proveedor como resultado de la alerta (por ejemplo, aislar la máquina, enforce2FA, restablecer la imagen inicial del host).|
-|registryKeyStates|colección de [registryKeyState](registrykeystate.md)|Información con seguimiento de estado sobre la seguridad generada por el proveedor acerca de las claves de registro relacionadas con esta alerta.|
-|severity *|alertSeverity|Gravedad de alerta - establecida por el proveedor. Los valores posibles son: `unknown`, `informational`, `low`, `medium` y `high`.|
-|sourceMaterials|Colección de cadenas|Hipervínculos (URI) al material de origen relacionado con la alerta, por ejemplo, la interfaz de usuario del proveedor para las alertas o la búsqueda de registros, etc.|
-|status *|alertStatus|Estado del ciclo de vida de la alerta (fase). Los valores posibles son: `unknown`, `newAlert`, `inProgress` y `resolved`. (admite la [actualización](../api/alert_update.md))|
-|tags|Colección de cadenas|Etiquetas definidas por el usuario que se pueden aplicar a una alerta y pueden servir como condiciones de filtro (por ejemplo, "HVA", "SAW", etc.) (admite la [actualización](../api/alert_update.md)).|
-|title *|Cadena|Título de la alerta.|
-|triggers|colección de [alertTrigger](alerttrigger.md)|Información sobre la seguridad acerca de las propiedades específicas que desencadenaron la alerta (propiedades que aparecen en la alerta). Las alertas pueden contener información acerca de varios usuarios, hosts, archivos y direcciones ip. Este campo indica qué propiedades desencadenaron la generación de alertas.|
-|userStates|colección de [userSecurityState](usersecuritystate.md)|Información con seguimiento de estado sobre la seguridad generada por el proveedor acerca de las cuentas de usuario relacionadas con esta alerta.|
-|vendorInformation *|[securityVendorInformation](securityvendorinformation.md)|Tipo complejo que contiene detalles sobre el vendor del producto o servicio de seguridad, el proveedor y el subproveedor (por ejemplo, vendor=Microsoft; proveedor=Windows Defender ATP; subproveedor=AppLocker).|
-|vulnerabilityStates|colección de [vulnerabilityState](vulnerabilitystate.md)|Inteligencia sobre amenazas perteneciente a una o más vulnerabilidades relacionadas con esta alerta.|
-(\* Indica un campo obligatorio.)
+|activityGroupName|String|Nombre o el alias del grupo de actividades (atacante) se expresarán esta alerta.|
+|assignedTo|String|Nombre del analista de la alerta se asigna a para la evaluación de errores, investigación o corrección (admite [Actualizar](../api/alert_update.md)).|
+|azureSubscriptionId|String|Identificador de suscripción de Azure, presente si esta alerta está relacionada con un recurso de Azure.|
+|azureTenantId |String|Identificador del inquilino. Azure Active Directory Obligatorio.|
+|.|String|Categoría de la alerta (por ejemplo, credentialTheft, ransomware, etcetera).|
+|closedDateTime|DateTimeOffset|Hora a la que se ha cerrado la alerta. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 tendrá este aspecto: `'2014-01-01T00:00:00Z'` (admite [Actualizar](../api/alert_update.md)).|
+|cloudAppStates|colección de [cloudAppSecurityState](cloudappsecuritystate.md)|Información con seguimiento de estado relacionadas con la seguridad generada por el proveedor acerca de la aplicación en la nube/s relacionados con esta alerta.|
+|comments|Colección String|Comentarios proporcionado por el cliente de alerta (para la administración de alertas del cliente) (admite [Actualizar](../api/alert_update.md)).|
+|confidence|Int32|Confianza de la lógica de detección (el porcentaje entre 1 y 100).|
+|createdDateTime |DateTimeOffset|Hora en que se creó la alerta por el proveedor de alerta. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Obligatorio.|
+|descripción|String|Descripción de la alerta.|
+|detectionIds|Colección String|Conjunto de alertas relacionadas con esta entidad alerta (cada alerta se inserta en el SIEM como un registro independiente).|
+|eventDateTime |DateTimeOffset|Hora a la que se produjo el evento o eventos que sirven como desencadenador que se va a generar la alerta. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Obligatorio.|
+|comentarios|alertFeedback|Comentarios de analistas de la alerta. Los valores posibles son: `unknown`, `truePositive`, `falsePositive` y `benignPositive`. (admite la [actualización](../api/alert_update.md))|
+|fileStates|colección de [fileSecurityState](filesecuritystate.md)|Información con seguimiento de estado relacionadas con la seguridad generada por el proveedor acerca de los archivos relacionados con esta alerta.|
+|hostStates|colección de [hostSecurityState](hostsecuritystate.md)|Información con seguimiento de estado relacionadas con la seguridad generada por el proveedor acerca de los hosts relacionados con esta alerta.|
+|id |String|Identificador GUID/único generado por el proveedor. Solo lectura. Obligatorio.|
+|lastModifiedDateTime|DateTimeOffset|Hora a la que se modificó por última vez la entidad de alerta. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
+|malwareStates|colección de [malwareState](malwarestate.md)|Inteligencia de amenaza perteneciente a malware relacionados con esta alerta.|
+|networkConnections|colección [networkConnection](networkconnection.md)|Información con seguimiento de estado relacionadas con la seguridad generada por el proveedor acerca de las conexiones de red relacionadas con esta alerta.|
+|procesos|colección de [proceso](process.md)|Información con seguimiento de estado relacionadas con la seguridad generada por el proveedor sobre el proceso o los procesos relacionados con esta alerta.|
+|recommendedActions|Colección String|Proveedor/proveedor recomienda acciones que desea realizar como resultado de la alerta (por ejemplo, aislar máquina, enforce2FA, host de crear una nueva imagen).|
+|registryKeyStates|colección de [registryKeyState](registrykeystate.md)|Generados por el proveedor acerca de las claves del registro de información con estado relacionadas con la seguridad relacionados con esta alerta.|
+|gravedad |alertSeverity|Gravedad de alerta - establecida por el proveedor o proveedor. Los valores posibles son: `unknown`, `informational`, `low`, `medium` y `high`. Obligatorio.|
+|sourceMaterials|Colección String|Hipervínculos (URI) para el material de origen relacionados con la alerta, por ejemplo, interfaz de usuario del proveedor para las alertas o búsqueda de registro, etcetera.|
+|status |alertStatus|Estado de alerta del ciclo de vida (escenario). Los valores posibles son: `unknown`, `newAlert`, `inProgress` y `resolved`. (admite [Actualizar](../api/alert_update.md)). Obligatorio.|
+|de cierre|Colección String|Etiquetas definidos por el usuario que se pueden aplicar a una alerta y pueden servir como condiciones de filtro (por ejemplo "HVA", "Han visto", etcetera.) (admite [Actualizar](../api/alert_update.md)).|
+|title |String|Título de la alerta. Obligatorio.|
+|desencadenadores|colección de [alertTrigger](alerttrigger.md)|Información relacionada con la seguridad acerca de las propiedades específicas que desencadenan la alerta (propiedades que aparecen en la alerta). Alertas pueden contener información acerca de varios usuarios, hosts, archivos, las direcciones ip. Este campo indica qué propiedades desencadenan la generación de alertas.|
+|userStates|colección de [userSecurityState](usersecuritystate.md)|Información de estado relacionada con la seguridad generado por el proveedor acerca de las cuentas de usuario relacionados con esta alerta.|
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Tipo complejo que contiene detalles sobre el proveedor del producto o servicio de seguridad, el proveedor y la subprovider (por ejemplo, proveedor = Microsoft; proveedor = Windows Defender ATP; subProvider = AppLocker). Obligatorio.|
+|vulnerabilityStates|colección de [vulnerabilityState](vulnerabilitystate.md)|Inteligencia de amenaza perteneciente a uno o más de las vulnerabilidades relacionadas con esta alerta.|
 
 ## <a name="relationships"></a>Relaciones
 

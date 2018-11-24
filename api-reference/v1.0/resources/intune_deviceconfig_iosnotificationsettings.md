@@ -20,10 +20,11 @@ Un elemento que describe la configuración de notificaciones.
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNotificationSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosNotificationSettings",
@@ -38,11 +39,6 @@ Aquí tiene una representación JSON del recurso.
   "soundsEnabled": true
 }
 ```
-
-
-
-
-
 
 
 

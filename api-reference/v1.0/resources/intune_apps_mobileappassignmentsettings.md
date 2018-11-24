@@ -11,20 +11,16 @@ Clase abstracta que contiene las propiedades que se usan para asignar a un grupo
 Ninguna
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
-
-
-
-
-
 
 
 

@@ -39,7 +39,7 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) de `select` y `expand` a modo de ayuda para personalizar la respuesta.
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) de `select` y `expand` a modo de ayuda para personalizar la respuesta.
 
 La respuesta predeterminada expande `parentSection` y selecciona las propiedades `id`, `name` y `self` de la sección. Los valores válidos de `expand` de las páginas son `parentNotebook` y `parentSection`.
 
@@ -63,7 +63,7 @@ Aquí tiene un ejemplo de la solicitud.
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>Respuesta
-Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.
+Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que se muestra aquí se trunca por razones de brevedad. Todas las propiedades se devolverán desde una llamada real.
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
