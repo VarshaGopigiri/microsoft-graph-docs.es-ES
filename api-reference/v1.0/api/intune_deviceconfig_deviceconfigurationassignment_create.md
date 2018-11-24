@@ -1,18 +1,18 @@
-# <a name="create-deviceconfigurationassignment"></a><span data-ttu-id="be409-101">Crear deviceConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="be409-101">Create deviceConfigurationAssignment</span></span>
+# <a name="create-deviceconfigurationassignment"></a><span data-ttu-id="db4ab-101">Crear deviceConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="db4ab-101">Create deviceConfigurationAssignment</span></span>
 
-> <span data-ttu-id="be409-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="be409-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="db4ab-102">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="db4ab-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="be409-103">Cree un objeto [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="be409-103">Create a new [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="be409-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="be409-104">Prerequisites</span></span>
-<span data-ttu-id="be409-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="be409-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="db4ab-103">Cree un objeto [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="db4ab-103">Create a new [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="db4ab-104">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="db4ab-104">Prerequisites</span></span>
+<span data-ttu-id="db4ab-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="db4ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="be409-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="be409-107">Permission type</span></span>|<span data-ttu-id="be409-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="be409-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="db4ab-107">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="db4ab-107">Permission type</span></span>|<span data-ttu-id="db4ab-108">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="db4ab-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="be409-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="be409-109">Delegated (work or school account)</span></span>|<span data-ttu-id="be409-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be409-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="be409-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="be409-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="be409-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="be409-112">Not supported.</span></span>|
-|<span data-ttu-id="be409-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="be409-113">Application</span></span>|<span data-ttu-id="be409-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="be409-114">Not supported.</span></span>|
+|<span data-ttu-id="db4ab-109">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="db4ab-109">Delegated (work or school account)</span></span>|<span data-ttu-id="db4ab-110">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db4ab-110">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="db4ab-111">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="db4ab-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="db4ab-112">No admitida.</span><span class="sxs-lookup"><span data-stu-id="db4ab-112">Not supported.</span></span>|
+|<span data-ttu-id="db4ab-113">Aplicación</span><span class="sxs-lookup"><span data-stu-id="db4ab-113">Application</span></span>|<span data-ttu-id="db4ab-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="db4ab-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="be409-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="be409-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db4ab-115">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="db4ab-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,30 +21,30 @@
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="be409-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="be409-116">Request headers</span></span>
-|<span data-ttu-id="be409-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="be409-117">Header</span></span>|<span data-ttu-id="be409-118">Valor</span><span class="sxs-lookup"><span data-stu-id="be409-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="db4ab-116">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="db4ab-116">Request headers</span></span>
+|<span data-ttu-id="db4ab-117">Encabezado</span><span class="sxs-lookup"><span data-stu-id="db4ab-117">Header</span></span>|<span data-ttu-id="db4ab-118">Valor</span><span class="sxs-lookup"><span data-stu-id="db4ab-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="be409-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="be409-119">Authorization</span></span>|<span data-ttu-id="be409-120">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="be409-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="be409-121">Accept</span><span class="sxs-lookup"><span data-stu-id="be409-121">Accept</span></span>|<span data-ttu-id="be409-122">application/json</span><span class="sxs-lookup"><span data-stu-id="be409-122">application/json</span></span>|
+|<span data-ttu-id="db4ab-119">Autorización</span><span class="sxs-lookup"><span data-stu-id="db4ab-119">Authorization</span></span>|<span data-ttu-id="db4ab-120">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="db4ab-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="db4ab-121">Aceptar</span><span class="sxs-lookup"><span data-stu-id="db4ab-121">Accept</span></span>|<span data-ttu-id="db4ab-122">application/json</span><span class="sxs-lookup"><span data-stu-id="db4ab-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="be409-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="be409-123">Request body</span></span>
-<span data-ttu-id="be409-124">En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="be409-124">In the request body, supply a JSON representation for the deviceConfigurationAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db4ab-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="db4ab-123">Request body</span></span>
+<span data-ttu-id="db4ab-124">En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="db4ab-124">In the request body, supply a JSON representation for the deviceConfigurationAssignment object.</span></span>
 
-<span data-ttu-id="be409-125">En la tabla siguiente se muestran las propiedades necesarias para crear el objeto deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="be409-125">The following table shows the properties that are required when you create the deviceConfigurationAssignment.</span></span>
+<span data-ttu-id="db4ab-125">En la tabla siguiente se muestran las propiedades necesarias para crear el objeto deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="db4ab-125">The following table shows the properties that are required when you create the deviceConfigurationAssignment.</span></span>
 
-|<span data-ttu-id="be409-126">Propiedad</span><span class="sxs-lookup"><span data-stu-id="be409-126">Property</span></span>|<span data-ttu-id="be409-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="be409-127">Type</span></span>|<span data-ttu-id="be409-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="be409-128">Description</span></span>|
+|<span data-ttu-id="db4ab-126">Propiedad</span><span class="sxs-lookup"><span data-stu-id="db4ab-126">Property</span></span>|<span data-ttu-id="db4ab-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="db4ab-127">Type</span></span>|<span data-ttu-id="db4ab-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="db4ab-128">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="be409-129">id</span><span class="sxs-lookup"><span data-stu-id="be409-129">id</span></span>|<span data-ttu-id="be409-130">String</span><span class="sxs-lookup"><span data-stu-id="be409-130">String</span></span>|<span data-ttu-id="be409-131">La clave de la asignación.</span><span class="sxs-lookup"><span data-stu-id="be409-131">The key of the assignment.</span></span>|
-|<span data-ttu-id="be409-132">target</span><span class="sxs-lookup"><span data-stu-id="be409-132">target</span></span>|[<span data-ttu-id="be409-133">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="be409-133">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="be409-134">El destino de la tarea para la configuración del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="be409-134">The assignment target for the device configuration.</span></span>|
+|<span data-ttu-id="db4ab-129">id</span><span class="sxs-lookup"><span data-stu-id="db4ab-129">id</span></span>|<span data-ttu-id="db4ab-130">String</span><span class="sxs-lookup"><span data-stu-id="db4ab-130">String</span></span>|<span data-ttu-id="db4ab-131">La clave de la asignación.</span><span class="sxs-lookup"><span data-stu-id="db4ab-131">The key of the assignment.</span></span>|
+|<span data-ttu-id="db4ab-132">target</span><span class="sxs-lookup"><span data-stu-id="db4ab-132">target</span></span>|[<span data-ttu-id="db4ab-133">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="db4ab-133">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="db4ab-134">El destino de la tarea para la configuración del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="db4ab-134">The assignment target for the device configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="be409-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="be409-135">Response</span></span>
-<span data-ttu-id="be409-136">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y un objeto [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="be409-136">If successful, this method returns a `201 Created` response code and a [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="db4ab-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="db4ab-135">Response</span></span>
+<span data-ttu-id="db4ab-136">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y un objeto [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="db4ab-136">If successful, this method returns a `201 Created` response code and a [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="be409-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="be409-137">Example</span></span>
-### <a name="request"></a><span data-ttu-id="be409-138">Solicitud</span><span class="sxs-lookup"><span data-stu-id="be409-138">Request</span></span>
-<span data-ttu-id="be409-139">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="be409-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="db4ab-137">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="db4ab-137">Example</span></span>
+### <a name="request"></a><span data-ttu-id="db4ab-138">Solicitud</span><span class="sxs-lookup"><span data-stu-id="db4ab-138">Request</span></span>
+<span data-ttu-id="db4ab-139">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="db4ab-139">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 Content-type: application/json
@@ -58,8 +58,8 @@ Content-length: 169
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="be409-140">Respuesta</span><span class="sxs-lookup"><span data-stu-id="be409-140">Response</span></span>
-<span data-ttu-id="be409-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="be409-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="db4ab-140">Respuesta</span><span class="sxs-lookup"><span data-stu-id="db4ab-140">Response</span></span>
+<span data-ttu-id="db4ab-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="db4ab-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -73,11 +73,6 @@ Content-Length: 218
   }
 }
 ```
-
-
-
-
-
 
 
 

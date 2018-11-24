@@ -1,0 +1,14 @@
+#<a name="teamsappinstalledstate-enum-type"></a><span data-ttu-id="d8b6f-101">tipo de enumeración teamsAppInstalledState</span><span class="sxs-lookup"><span data-stu-id="d8b6f-101">teamsAppInstalledState enum type</span></span>
+
+
+
+<span data-ttu-id="d8b6f-102">Describe el estado actual de la instalación de un [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="d8b6f-102">Describes the current installation status of a [teamsApp](teamsapp.md).</span></span>
+
+## <a name="members"></a><span data-ttu-id="d8b6f-103">Miembros</span><span class="sxs-lookup"><span data-stu-id="d8b6f-103">Members</span></span>
+
+| <span data-ttu-id="d8b6f-104">Miembro	</span><span class="sxs-lookup"><span data-stu-id="d8b6f-104">Member</span></span> | <span data-ttu-id="d8b6f-105">Valor</span><span class="sxs-lookup"><span data-stu-id="d8b6f-105">Value</span></span>| <span data-ttu-id="d8b6f-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="d8b6f-106">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="d8b6f-107">estáninstaladas</span><span class="sxs-lookup"><span data-stu-id="d8b6f-107">notInstalled</span></span>|<span data-ttu-id="d8b6f-108">0</span><span class="sxs-lookup"><span data-stu-id="d8b6f-108">0</span></span>|<span data-ttu-id="d8b6f-109">No se instala la aplicación al equipo.</span><span class="sxs-lookup"><span data-stu-id="d8b6f-109">App is not installed to team.</span></span>|
+|<span data-ttu-id="d8b6f-110">instalado</span><span class="sxs-lookup"><span data-stu-id="d8b6f-110">installed</span></span>|<span data-ttu-id="d8b6f-111">1</span><span class="sxs-lookup"><span data-stu-id="d8b6f-111">1</span></span>|<span data-ttu-id="d8b6f-112">Aplicación se instala normalmente.</span><span class="sxs-lookup"><span data-stu-id="d8b6f-112">App is installed normally.</span></span>|
+|<span data-ttu-id="d8b6f-113">installedAndHidden</span><span class="sxs-lookup"><span data-stu-id="d8b6f-113">installedAndHidden</span></span>|<span data-ttu-id="d8b6f-114">2</span><span class="sxs-lookup"><span data-stu-id="d8b6f-114">2</span></span>|<span data-ttu-id="d8b6f-115">Aplicación está instalada pero se oculta de la vista.</span><span class="sxs-lookup"><span data-stu-id="d8b6f-115">App is installed but hidden from view.</span></span>|
+|<span data-ttu-id="d8b6f-116">installedAndPermanent</span><span class="sxs-lookup"><span data-stu-id="d8b6f-116">installedAndPermanent</span></span>|<span data-ttu-id="d8b6f-117">3</span><span class="sxs-lookup"><span data-stu-id="d8b6f-117">3</span></span>|<span data-ttu-id="d8b6f-118">Aplicación se instala de forma permanente y no se puede quitar.</span><span class="sxs-lookup"><span data-stu-id="d8b6f-118">App is permanently installed and may not be removed.</span></span>|
