@@ -49,7 +49,7 @@ Las API de generación de listados admiten los siguientes escenarios:
 - [Mostrar todos los centros educativos](../api/educationroot_list_schools.md) 
 - [Mostrar los centros educativos en los que se imparte una clase](../api/educationclass_list_schools.md)
 - [Mostrar los centros educativos correspondientes a un usuario](../api/educationuser_list_schools.md)
-- [Obtener todas las clases](../api/educationroot_list_classes.md )
+- [Obtener todas las clases](../api/educationroot_list_classes.md)
 - [Obtener las clases de un centro educativo](../api/educationschool_list_classes.md)
 - [Mostrar las clases correspondientes a un usuario](../api/educationuser_list_classes.md)
 - [Agregar clases a un centro educativo](../api/educationschool_post_classes.md)
