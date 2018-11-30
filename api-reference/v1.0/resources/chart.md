@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso Chart
+description: Representa un objeto de gráfico de una hoja de cálculo.
+ms.openlocfilehash: bada94032dcc00e3f6294b20559f44044570f2ec
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030114"
+---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
 Representa un objeto de gráfico de una hoja de cálculo.
@@ -7,20 +17,20 @@ Representa un objeto de gráfico de una hoja de cálculo.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get Chart](../api/chart_get.md) | [Chart](chart.md) |Lee las propiedades y relaciones del objeto chart.|
-|[Create ChartSeries](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Crea un ChartSeries publicándolo en la colección series.|
-|[List series](../api/chart_list_series.md) |Colección [ChartSeries](chartseries.md)| Obtiene una colección de objetos ChartSeries.|
-|[Update](../api/chart_update.md) | [Chart](chart.md)    |Actualiza el objeto Chart. |
-|[Image](../api/chart_image.md)|Cadena codificada en base64 de imagen|Representa el gráfico como una imagen con codificación base64 al escalar el gráfico a las dimensiones especificadas.|
-|[Delete](../api/chart_delete.md)|None|Elimina el objeto chart.|
-|[Setdata](../api/chart_setdata.md)|None|Restablece los datos de origen del gráfico.|
-|[Setposition](../api/chart_setposition.md)|None|Coloca el gráfico con respecto a las celdas de la hoja de cálculo.|
-|[List](../api/chart_list.md) | Colección [Chart](chart.md) |Obtiene la colección de objetos chart. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Obtiene un gráfico en función de su posición en la colección.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Crea un gráfico.|
+|[Get Chart](../api/chart-get.md) | [WorkbookChart](chart.md) |Lee las propiedades y relaciones del objeto chart.|
+|[Create ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Crea un ChartSeries publicándolo en la colección series.|
+|[List series](../api/chart-list-series.md) |Colección de [WorkbookChartSeries](chartseries.md)| Obtiene una colección de objetos ChartSeries.|
+|[Update](../api/chart-update.md) | [WorkbookChart](chart.md)   |Actualiza el objeto Chart. |
+|[Image](../api/chart-image.md)|Cadena codificada en base64 de imagen|Representa el gráfico como una imagen con codificación base64 al escalar el gráfico a las dimensiones especificadas.|
+|[Delete](../api/chart-delete.md)|None|Elimina el objeto chart.|
+|[Setdata](../api/chart-setdata.md)|None|Restablece los datos de origen del gráfico.|
+|[Setposition](../api/chart-setposition.md)|None|Coloca el gráfico con respecto a las celdas de la hoja de cálculo.|
+|[List](../api/chart-list.md) | Colección de [WorkbookChart](chart.md) |Obtiene la colección de objetos chart. |
+|[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|Obtiene un gráfico en función de su posición en la colección.|
+|[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|Crea un gráfico.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |height|Double|Representa el alto, en puntos, del objeto de gráfico.|
 |id|string|Obtiene un gráfico en función de su posición en la colección. Solo lectura.|
@@ -30,26 +40,26 @@ Representa un objeto de gráfico de una hoja de cálculo.
 |width|double|Representa el ancho, en puntos, del objeto graph.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|axes|[ChartAxes](chartaxes.md)|Representa los ejes del gráfico. Solo lectura.|
-|dataLabels|[ChartDataLabels](chartdatalabels.md)|Representa la clase DataLabels del gráfico. Solo lectura.|
-|format|[ChartAreaFormat](chartareaformat.md)|Encapsula las propiedades de formato del área del gráfico. Solo lectura.|
-|legend|[ChartLegend](chartlegend.md)|Representa la leyenda del gráfico. Solo lectura.|
-|series|Colección [ChartSeries](chartseries.md)|Representa una sola serie o una colección de series del gráfico. Solo lectura.|
-|title|[ChartTitle](charttitle.md)|Representa el título del gráfico especificado, incluido el texto, la visibilidad, la posición y el formato del título. Solo lectura.|
-|worksheet|[Worksheet](worksheet.md)|La hoja de cálculo que contiene el gráfico actual. Solo lectura.|
+|axes|[WorkbookChartAxes](chartaxes.md)|Representa los ejes del gráfico. Solo lectura.|
+|dataLabels|[WorkbookChartDataLabels](chartdatalabels.md)|Representa la clase DataLabels del gráfico. Solo lectura.|
+|format|[WorkbookChartAreaFormat](chartareaformat.md)|Encapsula las propiedades de formato del área del gráfico. Solo lectura.|
+|legend|[WorkbookChartLegend](chartlegend.md)|Representa la leyenda del gráfico. Solo lectura.|
+|series|Colección de [WorkbookChartSeries](chartseries.md)|Representa una sola serie o una colección de series del gráfico. Solo lectura.|
+|title|[WorkbookChartTitle](charttitle.md)|Representa el título del gráfico especificado, incluido el texto, la visibilidad, la posición y el formato del título. Solo lectura.|
+|worksheet|[WorkbookWorksheet](worksheet.md)|La hoja de cálculo que contiene el gráfico actual. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chart"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChart"
 }-->
 
 ```json

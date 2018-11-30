@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso notebookLinks
+description: Vínculos para abrir un bloc de notas de OneNote.
+ms.openlocfilehash: 713779d3bab12222df7a405c1dccb4e6cd4cb235
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030308"
+---
 # <a name="notebooklinks-resource-type"></a>Tipo de recurso notebookLinks
 
 Vínculos para abrir un bloc de notas de OneNote.
@@ -22,7 +32,7 @@ Aquí tiene una representación JSON del recurso.
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Abre el bloc de notas en el cliente nativo de OneNote si está instalado.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Abre el bloc de notas en OneNote Online.|

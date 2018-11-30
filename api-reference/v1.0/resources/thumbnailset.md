@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ThumbnailSet
+ms.openlocfilehash: 2ba45363b684142b91aac62d4b2a5b0d371d6b3d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030173"
+---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
 
 El recurso **ThumbnailSet** es una colección de claves de recursos [thumbnail](thumbnail.md). Se usa para representar un conjunto de miniaturas asociadas a un DriveItem.
@@ -6,21 +18,27 @@ El recurso **ThumbnailSet** es una colección de claves de recursos [thumbnail](
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": ["source", "small", "medium", "large"],
-  "openType": true,
+  "optionalProperties": [
+    "source",
+    "small",
+    "medium",
+    "large"
+  ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.thumbnailSet"
-} -->
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.thumbnailSet",
+  "openType": true
+}-->
 
 ```json
 {
   "id": "string (identifier)",
-  "large": {"@odata.type": "microsoft.graph.thumbnail"},
-  "medium": {"@odata.type": "microsoft.graph.thumbnail"},
-  "small": {"@odata.type": "microsoft.graph.thumbnail"},
-  "source": {"@odata.type": "microsoft.graph.thumbnail"}
+  "large": { "@odata.type": "microsoft.graph.thumbnail" },
+  "medium": { "@odata.type": "microsoft.graph.thumbnail" },
+  "small": { "@odata.type": "microsoft.graph.thumbnail" },
+  "source": { "@odata.type": "microsoft.graph.thumbnail" }
 }
 ```
 
@@ -38,8 +56,7 @@ Aquí tiene una representación JSON del recurso.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnailSet resource",
-  "keywords": "",
+  "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/ThumbnailSet"
+} -->
