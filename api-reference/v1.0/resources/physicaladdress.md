@@ -1,10 +1,20 @@
+---
+title: Tipo de recurso physicalAddress
+description: Representa la dirección postal de un recurso, como un contacto o un evento.
+ms.openlocfilehash: eb2c1ea6a73d7f6eb5d3d43b877f50dc39a2b17e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030473"
+---
 # <a name="physicaladdress-resource-type"></a>Tipo de recurso physicalAddress
 
 Representa la dirección postal de un recurso, como un contacto o un evento.
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |city|String|Ciudad.|
 |countryOrRegion|String|País o región. Se trata de un valor de cadena de formato libre, por ejemplo, "Estados Unidos".|
