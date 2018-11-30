@@ -1,38 +1,50 @@
-# <a name="conversation-resource-type"></a>Tipo de recurso conversation
+---
+title: Tipo de recurso conversation
+description: Una conversación es una colección de hilos y un hilo contiene publicaciones de ese hilo. Todos los hilos y publicaciones de una conversación comparten el mismo asunto.
+ms.openlocfilehash: 8a4a83fdc109eb047a22afbd3b15ad2d575f0795
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27083447"
+---
+# <a name="conversation-resource-type"></a><span data-ttu-id="b1e1b-104">Tipo de recurso conversation</span><span class="sxs-lookup"><span data-stu-id="b1e1b-104">conversation resource type</span></span>
 
-Una conversación es una colección de [hilos](conversationthread.md) y un hilo contiene publicaciones de ese hilo. Todos los hilos y publicaciones de una conversación comparten el mismo asunto.
+> <span data-ttu-id="b1e1b-105">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b1e1b-106">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-106">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="methods"></a>Métodos
+<span data-ttu-id="b1e1b-p103">Una conversación es una colección de [hilos](conversationthread.md) y un hilo contiene publicaciones de ese hilo. Todos los hilos y publicaciones de una conversación comparten el mismo asunto.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-p103">A conversation is a collection of [threads](conversationthread.md), and a thread contains posts to that thread. All threads and posts in a conversation share the same subject.</span></span>
 
-| Método       | Tipo de valor devuelto  |Descripción|
+<span data-ttu-id="b1e1b-109">Este recurso es compatible con la suscripción a [las notificaciones de cambios](/graph/webhooks).</span><span class="sxs-lookup"><span data-stu-id="b1e1b-109">This resource supports subscribing to [change notifications](/graph/webhooks).</span></span>
+
+## <a name="methods"></a><span data-ttu-id="b1e1b-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="b1e1b-110">Methods</span></span>
+
+| <span data-ttu-id="b1e1b-111">Método</span><span class="sxs-lookup"><span data-stu-id="b1e1b-111">Method</span></span>       | <span data-ttu-id="b1e1b-112">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="b1e1b-112">Return Type</span></span>  |<span data-ttu-id="b1e1b-113">Descripción</span><span class="sxs-lookup"><span data-stu-id="b1e1b-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Enumerar conversaciones](../api/group_list_conversations.md) | Colección [conversation](conversation.md) |Obtenga la lista de conversaciones en este grupo.|
-|[Crear](../api/group_post_conversations.md) |[conversation](conversation.md)| Cree una conversación al incluir un hilo y una publicación.|
-|[Obtener conversación](../api/conversation_get.md) | [conversation](conversation.md) |Lea las propiedades y las relaciones del objeto de conversación.|
-|[Eliminar](../api/conversation_delete.md) | Ninguno |Elimine el objeto de conversación. |
-|[Enumerar hilos de conversación](../api/conversation_list_threads.md) |Colección [conversationThread](conversationthread.md)| Obtenga todos los hilos de una conversación de grupo.|
-|[Crear hilo de conversación](../api/conversation_post_threads.md) |Colección [conversationThread](conversationthread.md)| Cree un hilo en la conversación especificada.|
+|[<span data-ttu-id="b1e1b-114">Enumerar conversaciones</span><span class="sxs-lookup"><span data-stu-id="b1e1b-114">List conversations</span></span>](../api/group-list-conversations.md) | <span data-ttu-id="b1e1b-115">Colección [conversation](conversation.md)</span><span class="sxs-lookup"><span data-stu-id="b1e1b-115">[conversation](conversation.md) collection</span></span> |<span data-ttu-id="b1e1b-116">Obtenga la lista de conversaciones en este grupo.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-116">Get the list of conversations in this group.</span></span>|
+|[<span data-ttu-id="b1e1b-117">Crear</span><span class="sxs-lookup"><span data-stu-id="b1e1b-117">Create</span></span>](../api/group-post-conversations.md) |[<span data-ttu-id="b1e1b-118">conversation</span><span class="sxs-lookup"><span data-stu-id="b1e1b-118">conversation</span></span>](conversation.md)| <span data-ttu-id="b1e1b-119">Cree una conversación al incluir un hilo y una publicación.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-119">Create a new conversation by including a thread and a post.</span></span>|
+|[<span data-ttu-id="b1e1b-120">Obtener conversación</span><span class="sxs-lookup"><span data-stu-id="b1e1b-120">Get conversation</span></span>](../api/conversation-get.md) | [<span data-ttu-id="b1e1b-121">conversation</span><span class="sxs-lookup"><span data-stu-id="b1e1b-121">conversation</span></span>](conversation.md) |<span data-ttu-id="b1e1b-122">Lea las propiedades y las relaciones del objeto de conversación.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-122">Read properties and relationships of conversation object.</span></span>|
+|[<span data-ttu-id="b1e1b-123">Eliminar</span><span class="sxs-lookup"><span data-stu-id="b1e1b-123">Delete</span></span>](../api/conversation-delete.md) | <span data-ttu-id="b1e1b-124">Ninguno</span><span class="sxs-lookup"><span data-stu-id="b1e1b-124">None</span></span> |<span data-ttu-id="b1e1b-125">Elimine el objeto de conversación.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-125">Delete conversation object.</span></span> |
+|[<span data-ttu-id="b1e1b-126">Enumerar hilos de conversación</span><span class="sxs-lookup"><span data-stu-id="b1e1b-126">List conversation threads</span></span>](../api/conversation-list-threads.md) |<span data-ttu-id="b1e1b-127">Colección [conversationThread](conversationthread.md)</span><span class="sxs-lookup"><span data-stu-id="b1e1b-127">[conversationThread](conversationthread.md) collection</span></span>| <span data-ttu-id="b1e1b-128">Obtenga todos los hilos de una conversación de grupo.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-128">Get all the threads in a group conversation.</span></span>|
+|[<span data-ttu-id="b1e1b-129">Crear hilo de conversación</span><span class="sxs-lookup"><span data-stu-id="b1e1b-129">Create conversation thread</span></span>](../api/conversation-post-threads.md) |<span data-ttu-id="b1e1b-130">Colección [conversationThread](conversationthread.md)</span><span class="sxs-lookup"><span data-stu-id="b1e1b-130">[conversationThread](conversationthread.md) collection</span></span>| <span data-ttu-id="b1e1b-131">Cree un hilo en la conversación especificada.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-131">Create a thread in the specified conversation.</span></span>|
 
-
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## <a name="properties"></a><span data-ttu-id="b1e1b-132">Propiedades</span><span class="sxs-lookup"><span data-stu-id="b1e1b-132">Properties</span></span>
+| <span data-ttu-id="b1e1b-133">Propiedad</span><span class="sxs-lookup"><span data-stu-id="b1e1b-133">Property</span></span>     | <span data-ttu-id="b1e1b-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="b1e1b-134">Type</span></span>   |<span data-ttu-id="b1e1b-135">Descripción</span><span class="sxs-lookup"><span data-stu-id="b1e1b-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|hasAttachments|Boolean|Indica si alguna de las publicaciones de esta conversación tiene al menos un dato adjunto.|
-|id|String|El identificador único de las conversaciones. Solo lectura.|
-|lastDeliveredDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|preview|String|Un breve resumen del cuerpo de la última publicación de esta conversación.|
-|topic|String|El tema de la conversación. Esta propiedad se puede establecer al crear la conversación, pero no se puede actualizar.|
-|uniqueSenders|Colección String|Todos los usuarios que envían un mensaje a esta conversación.|
+|<span data-ttu-id="b1e1b-136">hasAttachments</span><span class="sxs-lookup"><span data-stu-id="b1e1b-136">hasAttachments</span></span>|<span data-ttu-id="b1e1b-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="b1e1b-137">Boolean</span></span>|<span data-ttu-id="b1e1b-138">Indica si alguna de las publicaciones de esta conversación tiene al menos un dato adjunto.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-138">Indicates whether any of the posts within this Conversation has at least one attachment.</span></span>|
+|<span data-ttu-id="b1e1b-139">id</span><span class="sxs-lookup"><span data-stu-id="b1e1b-139">id</span></span>|<span data-ttu-id="b1e1b-140">String</span><span class="sxs-lookup"><span data-stu-id="b1e1b-140">String</span></span>|<span data-ttu-id="b1e1b-p104">El identificador único de las conversaciones. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-p104">The conversations's unique identifier. Read-only.</span></span>|
+|<span data-ttu-id="b1e1b-143">lastDeliveredDateTime</span><span class="sxs-lookup"><span data-stu-id="b1e1b-143">lastDeliveredDateTime</span></span>|<span data-ttu-id="b1e1b-144">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b1e1b-144">DateTimeOffset</span></span>|<span data-ttu-id="b1e1b-p105">El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="b1e1b-p105">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="b1e1b-147">preview</span><span class="sxs-lookup"><span data-stu-id="b1e1b-147">preview</span></span>|<span data-ttu-id="b1e1b-148">String</span><span class="sxs-lookup"><span data-stu-id="b1e1b-148">String</span></span>|<span data-ttu-id="b1e1b-149">Un breve resumen del cuerpo de la última publicación de esta conversación.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-149">A short summary from the body of the latest post in this converstaion.</span></span>|
+|<span data-ttu-id="b1e1b-150">topic</span><span class="sxs-lookup"><span data-stu-id="b1e1b-150">topic</span></span>|<span data-ttu-id="b1e1b-151">String</span><span class="sxs-lookup"><span data-stu-id="b1e1b-151">String</span></span>|<span data-ttu-id="b1e1b-p106">El tema de la conversación. Esta propiedad se puede establecer al crear la conversación, pero no se puede actualizar.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-p106">The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.</span></span>|
+|<span data-ttu-id="b1e1b-154">uniqueSenders</span><span class="sxs-lookup"><span data-stu-id="b1e1b-154">uniqueSenders</span></span>|<span data-ttu-id="b1e1b-155">Colección String</span><span class="sxs-lookup"><span data-stu-id="b1e1b-155">String collection</span></span>|<span data-ttu-id="b1e1b-156">Todos los usuarios que envían un mensaje a esta conversación.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-156">All the users that sent a message to this Conversation.</span></span>|
 
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+## <a name="relationships"></a><span data-ttu-id="b1e1b-157">Relaciones</span><span class="sxs-lookup"><span data-stu-id="b1e1b-157">Relationships</span></span>
+| <span data-ttu-id="b1e1b-158">Relación</span><span class="sxs-lookup"><span data-stu-id="b1e1b-158">Relationship</span></span> | <span data-ttu-id="b1e1b-159">Tipo</span><span class="sxs-lookup"><span data-stu-id="b1e1b-159">Type</span></span>   |<span data-ttu-id="b1e1b-160">Descripción</span><span class="sxs-lookup"><span data-stu-id="b1e1b-160">Description</span></span>|
 |:---------------|:--------|:----------|
-|threads|Colección [conversationThread](conversationthread.md)|Una colección de todos los hilos de la conversación. Una propiedad de navegación. Solo lectura. Admite valores NULL.|
+|<span data-ttu-id="b1e1b-161">threads</span><span class="sxs-lookup"><span data-stu-id="b1e1b-161">threads</span></span>|<span data-ttu-id="b1e1b-162">Colección [conversationThread](conversationthread.md)</span><span class="sxs-lookup"><span data-stu-id="b1e1b-162">[conversationThread](conversationthread.md) collection</span></span>|<span data-ttu-id="b1e1b-p107">Una colección de todos los hilos de la conversación. Una propiedad de navegación. Solo lectura. Admite valores NULL.</span><span class="sxs-lookup"><span data-stu-id="b1e1b-p107">A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="b1e1b-167">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b1e1b-167">JSON representation</span></span>
 
-## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="b1e1b-168">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="b1e1b-168">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
