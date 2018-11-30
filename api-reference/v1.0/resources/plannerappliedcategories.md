@@ -1,23 +1,29 @@
-# Tipo de recurso plannerAppliedCategories
-<a id="plannerappliedcategories-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerAppliedCategories
+description: El recurso **AppliedCategoriesCollection** representa la colección de categorías (y etiquetas) que se han aplicado a una tarea. Forma parte del objeto plannerTask.
+ms.openlocfilehash: 77a322ea3c7cd694e8ca42368cac82a639a42440
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032397"
+---
+# <a name="plannerappliedcategories-resource-type"></a>Tipo de recurso plannerAppliedCategories
 
 
 El recurso **AppliedCategoriesCollection** representa la colección de categorías (o de etiquetas) que se han aplicado a una tarea. Forma parte del objeto [plannerTask](plannertask.md). Puede haber hasta 6 categorías aplicadas a una tarea. Las descripciones de las categorías (por ejemplo, `category1`, `category2`, etc.) forman parte del objeto [plan details](plannerplandetails.md). Este es un tipo abierto.
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 El cliente puede definir las propiedades de un tipo abierto. En este caso, el cliente debe proporcionar `category1`, `category2`, `category3`, `category4`, `category5` o `category6` como propiedades con sus valores como booleano `true` cuando se apliquen las categorías correspondientes en la tarea. A continuación se muestra un ejemplo. Si no se aplican, las propiedades se quitan automáticamente estableciendo sus valores en el booleano `false`. 
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerAppliedCategories"
 }-->
 

@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso Icon
+description: Representa un icono de celda.
+ms.openlocfilehash: 9485a831241ce92be3f8e7c4df5173285f926bbf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031392"
+---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 
 Representa un icono de celda.
@@ -7,14 +17,14 @@ Representa un icono de celda.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon_get.md) | [Icon](icon.md) |Lee las propiedades y relaciones del objeto icon.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)    |Actualiza el objeto Icon. |
+|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Lee las propiedades y relaciones del objeto icon.|
+|[Update](../api/icon-update.md) | [Icon](icon.md)  |Actualiza el objeto Icon. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|int|Representa el índice del icono en el conjunto concreto.|
-|set|string|Representa el conjunto al que pertenece el icono. Valores posibles: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
+|set|string|Representa el conjunto de que el icono de forma parte de. Los valores posibles son: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars` , `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -29,7 +39,7 @@ Aquí tiene una representación JSON del recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json

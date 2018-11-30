@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: GeoCoordinates
+ms.openlocfilehash: 0a4af14f08b94f0ba64f33838322fb0210bcda15
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031621"
+---
 # <a name="geocoordinates-resource-type"></a>Tipo de recurso GeoCoordinates
 
 El recurso **GeoCoordinates** proporciona las coordenadas geográficas y la elevación de una ubicación en función de metadatos contenidos en el archivo. Si un [**DriveItem**](driveitem.md) tiene una faceta **location** no null, el elemento representa un archivo que tiene asociada una ubicación conocida.
@@ -24,22 +36,20 @@ Aquí tiene una representación JSON del recurso
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad  | Tipo   | Descripción                                                    |
-|:----------|:-------|:---------------------------------------------------------------|
-| altitude  | Doble | Opcional. Altitud (alto) en pies sobre el nivel del mar del elemento. Solo lectura. |
-| latitude  | Doble | Opcional. Latitud en formato decimal del elemento. Solo lectura.   |
-| longitude | Doble | Opcional. Longitud en formato decimal del elemento. Solo lectura.  |
+| Propiedad  | Tipo   | Descripción
+|:----------|:-------|:--------------------------------------------------------
+| altitude  | Doble | Opcional. Altitud (alto) en pies sobre el nivel del mar del elemento. Solo lectura.
+| latitude  | Doble | Opcional. Latitud en formato decimal del elemento. Solo lectura.
+| longitude | Doble | Opcional. Longitud en formato decimal del elemento. Solo lectura.
 
 ## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "geoCoordinates resource",
-  "keywords": "",
+  "description": "The location facet provides geographic location related properties for an item",
+  "keywords": "location,geographic,item,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Location"
+} -->

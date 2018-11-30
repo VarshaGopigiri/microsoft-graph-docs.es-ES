@@ -1,3 +1,13 @@
+---
+title: Configurar el mensaje de invitación
+description: El objeto invitedUserMessageInfo le permite configurar el mensaje de invitación.
+ms.openlocfilehash: c8258d2b90d1aa5f5081b271ccc70fcb7408b132
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031804"
+---
 # <a name="configuring-the-invitation-message"></a>Configurar el mensaje de invitación
 
 El objeto invitedUserMessageInfo le permite configurar el mensaje de [invitación](invitation.md).
@@ -6,7 +16,7 @@ El objeto invitedUserMessageInfo le permite configurar el mensaje de [invitació
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|ccRecipients|[Recipient](recipient.md)|Destinatarios adicionales a los que se debe enviar el mensaje de invitación. Actualmente se admite solo 1 destinatario adicional.|
+|ccRecipients|Colección [Recipient](recipient.md)|Destinatarios adicionales a los que se debe enviar el mensaje de invitación. Actualmente se admite solo 1 destinatario adicional.|
 |customizedMessageBody|String|Cuerpo del mensaje personalizado que quiere enviar si no quiere el mensaje predeterminado.|
 |messageLanguage|String|El idioma en el que quiere enviar el mensaje predeterminado. Si se especifica el customizedMessageBody, esta propiedad se omite y el mensaje se envía con el customizedMessageBody. El formato de idioma debe estar en ISO 639. El valor predeterminado es en-US.|
 
