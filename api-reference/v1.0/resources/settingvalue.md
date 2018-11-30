@@ -1,17 +1,27 @@
-# <a name="settingvalue-resource-type"></a><span data-ttu-id="b4b03-101">Tipo de recurso settingValue</span><span class="sxs-lookup"><span data-stu-id="b4b03-101">settingValue resource type</span></span>
+---
+title: Tipo de recurso settingValue
+description: Una configuración que representa un par nombre-valor.
+ms.openlocfilehash: b47c5c746117390cfd59db71d832928e482403b9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032673"
+---
+# <a name="settingvalue-resource-type"></a><span data-ttu-id="8b106-103">Tipo de recurso settingValue</span><span class="sxs-lookup"><span data-stu-id="8b106-103">settingValue resource type</span></span>
 
-<span data-ttu-id="b4b03-102">Una configuración que representa un par nombre-valor.</span><span class="sxs-lookup"><span data-stu-id="b4b03-102">A setting represented by a name/value pair.</span></span>
+<span data-ttu-id="8b106-104">Una configuración que representa un par nombre-valor.</span><span class="sxs-lookup"><span data-stu-id="8b106-104">A setting represented by a name/value pair.</span></span>
 
-### <a name="properties"></a><span data-ttu-id="b4b03-103">Propiedades</span><span class="sxs-lookup"><span data-stu-id="b4b03-103">Properties</span></span>
+### <a name="properties"></a><span data-ttu-id="8b106-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="8b106-105">Properties</span></span>
 
-| <span data-ttu-id="b4b03-104">Propiedad</span><span class="sxs-lookup"><span data-stu-id="b4b03-104">Property</span></span> | <span data-ttu-id="b4b03-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="b4b03-105">Type</span></span> | <span data-ttu-id="b4b03-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="b4b03-106">Description</span></span> |
+| <span data-ttu-id="8b106-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="8b106-106">Property</span></span> | <span data-ttu-id="8b106-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="8b106-107">Type</span></span> | <span data-ttu-id="8b106-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="8b106-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b4b03-107">name</span><span class="sxs-lookup"><span data-stu-id="b4b03-107">name</span></span>|<span data-ttu-id="b4b03-108">String</span><span class="sxs-lookup"><span data-stu-id="b4b03-108">String</span></span>| <span data-ttu-id="b4b03-109">Nombre de la configuración (según lo definido por la plantilla [groupSettingTemplate](groupsettingtemplate.md)).</span><span class="sxs-lookup"><span data-stu-id="b4b03-109">Name of the setting (as defined by the [groupSettingTemplate](groupsettingtemplate.md)).</span></span> |
-|<span data-ttu-id="b4b03-110">value</span><span class="sxs-lookup"><span data-stu-id="b4b03-110">value</span></span>|<span data-ttu-id="b4b03-111">String</span><span class="sxs-lookup"><span data-stu-id="b4b03-111">String</span></span>| <span data-ttu-id="b4b03-112">Valor de la configuración.</span><span class="sxs-lookup"><span data-stu-id="b4b03-112">Value of the setting.</span></span> |
+|<span data-ttu-id="8b106-109">name</span><span class="sxs-lookup"><span data-stu-id="8b106-109">name</span></span>|<span data-ttu-id="8b106-110">String</span><span class="sxs-lookup"><span data-stu-id="8b106-110">String</span></span>| <span data-ttu-id="8b106-111">Nombre de la configuración (según lo definido por la plantilla [groupSettingTemplate](groupsettingtemplate.md)).</span><span class="sxs-lookup"><span data-stu-id="8b106-111">Name of the setting (as defined by the [groupSettingTemplate](groupsettingtemplate.md)).</span></span> |
+|<span data-ttu-id="8b106-112">value</span><span class="sxs-lookup"><span data-stu-id="8b106-112">value</span></span>|<span data-ttu-id="8b106-113">String</span><span class="sxs-lookup"><span data-stu-id="8b106-113">String</span></span>| <span data-ttu-id="8b106-114">Valor de la configuración.</span><span class="sxs-lookup"><span data-stu-id="8b106-114">Value of the setting.</span></span> |
 
-### <a name="json-representation"></a><span data-ttu-id="b4b03-113">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b4b03-113">JSON representation</span></span>
+### <a name="json-representation"></a><span data-ttu-id="8b106-115">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="8b106-115">JSON representation</span></span>
 
-<span data-ttu-id="b4b03-114">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="b4b03-114">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8b106-116">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="8b106-116">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
