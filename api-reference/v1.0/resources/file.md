@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Archivo
+ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030402"
+---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
 El recurso **File** agrupa en una sola estructura los elementos de datos relacionados con archivos.
@@ -25,21 +37,17 @@ Aquí tiene una representación JSON del recurso.
 
 | Propiedad | Tipo                    | Descripción                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| algoritmos hash   | [HashesType](hashes.md) | Algoritmos hash de contenido binario del archivo, si están disponibles. Solo lectura.                                                                                    |
+| algoritmos hash   | [Hashes](hashes.md) | Algoritmos hash de contenido binario del archivo, si están disponibles. Solo lectura.                                                                                    |
 | mimeType | string                  | Tipo MIME para el archivo. Viene determinado por la lógica del servidor y puede que no sea el valor proporcionado cuando el archivo se cargó. Solo lectura. |
 
 ## <a name="remarks"></a>Observaciones 
 
 Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "file resource",
-  "keywords": "",
+  "description": "The file facet describes properties of a file",
+  "keywords": "file,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/File"
+} -->

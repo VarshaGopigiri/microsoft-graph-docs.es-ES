@@ -1,16 +1,54 @@
+---
+title: Tipo de recurso Workbook
+description: Workbook es el objeto de nivel superior que contiene los objetos de libro relacionados, como hojas de cálculo, tablas, intervalos, etc.
+ms.openlocfilehash: 6575cc2d49e4b30e78e07989f38600ae64d5c5a5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030630"
+---
 # <a name="workbook-resource-type"></a>Tipo de recurso Workbook
 
 Workbook es el objeto de nivel superior que contiene los objetos de libro relacionados, como hojas de cálculo, tablas, intervalos, etc.
 
+## <a name="json-representation"></a>Representación JSON
+
+Aquí tiene una representación JSON del recurso
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
+
 ## <a name="properties"></a>Propiedades
 Ninguno
 
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+## <a name="methods"></a>Métodos
+
+| Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
-|names|Colección [NamedItem](nameditem.md)|Representa una colección de elementos con nombre en el ámbito del libro (intervalos y constantes con nombre). Solo lectura.|
-|tables|Colección [Table](table.md)|Representa una colección de tablas asociadas con el libro. Solo lectura.|
-|worksheets|Colección [Worksheet](worksheet.md)|Representa una colección de hojas de cálculo asociadas con el libro. Solo lectura.|
+|[Crear una sesión](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Crear una sesión de libro para iniciar una sesión persistente o no persistente.|
+|[Cerrar sesión](../api/workbook-closesession.md) | Ninguno |Cerrar una sesión existente.|
+|[Actualizar sesión](../api/workbook-refreshsession.md) | Ninguno |Actualizar una sesión existente.|
+
+
+## <a name="relationships"></a>Relaciones
+| Relación | Tipo   |Descripción|
+|:---------------|:--------|:----------|
+|names|Colección de [WorkbookNamedItem](nameditem.md)|Representa una colección de elementos con nombre en el ámbito del libro (intervalos y constantes con nombre). Solo lectura.|
+|tables|Colección de [WorkbookTable](table.md)|Representa una colección de tablas asociadas con el libro. Solo lectura.|
+|worksheets|Colección de [WorkbookWorksheet](worksheet.md)|Representa una colección de hojas de cálculo asociadas con el libro. Solo lectura.|
 
 ## <a name="functions"></a>Funciones
 
@@ -20,16 +58,29 @@ La lista completa de funciones admitidas se encuentra [aquí](https://support.of
 
 _Notas importantes:_ 
 * El parámetro de entrada de intervalo se suministra mediante un objeto range en lugar de la cadena de dirección de intervalo.  
-* El parámetro de índice es 1 indexado, a diferencia del índice 0 usado en la mayoría de las API. 
+* El parámetro de índice es “1 indexado”, a diferencia del “índice 0” usado en la mayoría de las API. 
 
-Ejemplo: 
+Ejemplo: **BUSCARV**
 
-En el ejemplo siguiente, para llamar a la función `vlookup`, se pasan el valor de búsqueda, el rango de entrada y el valor que se devolverá. 
+En una hoja de cálculo de Excel, la función `vlookup` admite estos argumentos:
+
+1. El valor que quiere buscar, también llamado el valor de búsqueda.
+2. El rango donde se encuentra el valor de búsqueda. Recuerde que el valor de búsqueda siempre tiene que estar en la primera columna del rango para que BUSCARV funcione correctamente. Por ejemplo, si el valor de búsqueda se encuentra en la celda C2, el rango tiene que empezar con C.
+3. El número de columna en el rango que contiene el valor devuelto. Por ejemplo, si especifica B2:D11 como el rango, B será la primera columna, C la segunda, etc.
+4. De forma opcional, puede especificar VERDADERO si quiere obtener una coincidencia aproximada, o bien FALSO si quiere obtener una coincidencia exacta del valor devuelto. Si no especifica nada, el valor predeterminado será siempre VERDADERO o coincidencia aproximada.
+
+Dentro de una celda, la función `vlookup` es similar a esta: 
+
+= BUSCARV(valor de búsqueda, rango que contiene el valor de búsqueda, el número de columna en el rango que contiene el valor devuelto, de forma opcional, especifique VERDADERO para obtener una coincidencia aproximada o FALSO para una coincidencia exacta)
+
+(Vea la documentación de la [Función de Excel BUSCARV](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
+
+En el ejemplo siguiente, se muestra cómo realizar una llamada a la función `vlookup` y pasar estos parámetros con la API de REST de Excel.
 
 Solicitud: 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -45,11 +96,11 @@ workbook-session-id: {session-id}
 Respuesta:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
     "@odata.type": "#microsoft.graph.workbookFunctionResult",
     "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/root/workbook/functions/vlookup()",
     "error": null,
@@ -57,14 +108,22 @@ content-type: application/json;odata.metadata
 }
 ```
 
-Ejemplo: 
+Ejemplo: `median`
 
-En el ejemplo siguiente, para llamar a la función `median`, se pasan los intervalos de entrada en una matriz. 
+En una hoja de cálculo de Excel, la función `median` admite una matriz de uno o más rangos de entrada.
+
+Dentro de una celda, la función `median` es similar a este ejemplo:
+
+=MEDIANA(A2:A6)
+
+(Vea la documentación de la [Función de Excel MEDIANA](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
+
+En el ejemplo siguiente, se muestra cómo realizar una llamada a la función `median` y uno o más rangos de entrada con la API de REST de Excel. 
 
 Solicitud: 
 
 ```http 
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/median
+POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
@@ -80,11 +139,11 @@ workbook-session-id: {session-id}
 Respuesta:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookFunctionResult",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#workbookFunctionResult",
   "@odata.type": "#microsoft.graph.workbookFunctionResult",
   "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
   "error": null,

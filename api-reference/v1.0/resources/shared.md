@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Compartidos
+ms.openlocfilehash: 0a94a1d5ddf671151cf786d9ff93ae4f9e012a7b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030695"
+---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
 El recurso **Shared** indica que se ha compartido un objeto DriveItem con otros usuarios. El recurso incluye información sobre cómo se comparte el elemento.
@@ -5,8 +17,6 @@ El recurso **Shared** indica que se ha compartido un objeto DriveItem con otros 
 Si un objeto [**DriveItem**](driveitem.md) tiene una faceta **shared** que no es null, el elemento se ha compartido.
 
 ## <a name="json-representation"></a>Representación JSON
-
-Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
@@ -16,8 +26,8 @@ Aquí tiene una representación JSON del recurso
 
 ```json
 {
-  "owner": {"@odata.type": "microsoft.graph.identitySet"},
-  "scope": "public | organization | users",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "scope": "anonymous | organization | users",
   "sharedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "sharedDateTime": "datetime"
 }
@@ -25,31 +35,33 @@ Aquí tiene una representación JSON del recurso
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad       | Tipo                          | Descripción                                                                                        |
-| :------------- | :---------------------------- | :------------------------------------------------------------------------------------------------- |
-| owner          | [IdentitySet](identityset.md) | La identidad del propietario del elemento compartido. Solo lectura.                                           |
-| scope          | String                        | Indica el ámbito sobre cómo se comparte el elemento: `anonymous`, `organization` o `users`. Solo lectura. |
-| sharedBy       | [identitySet](identityset.md) | La identidad del usuario que ha compartido el elemento. Solo lectura.                                           |
-| sharedDateTime | DateTimeOffset                | Fecha y hora UTC de la última vez que se compartió el elemento. Solo lectura.                                         |
+| Propiedad       | Tipo                          | Descripción
+| :------------- |:------------------------------|:----------------------------
+| owner          | [IdentitySet](identityset.md) | La identidad del propietario del elemento compartido. Solo lectura.
+| scope          | String                        | Indica el ámbito sobre cómo se comparte el elemento: `anonymous`, `organization` o `users`. Solo lectura.
+| sharedBy       | [identitySet](identityset.md) | La identidad del usuario que ha compartido el elemento. Solo lectura.
+| sharedDateTime | DateTimeOffset                | Fecha y hora UTC de la última vez que se compartió el elemento. Solo lectura.
 
-## <a name="scope-values"></a>Valores del ámbito
+## <a name="scope-options"></a>Opciones de ámbito
 
-| Valor        | Descripción                                                                           |
-|:-------------|:--------------------------------------------------------------------------------------|
-| public       | El elemento se comparte mediante un vínculo que le funciona a cualquier usuario con el vínculo.               |
-| organization | El elemento se comparte mediante un vínculo que le funciona a cualquier usuario de la organización del propietario. |
-| users        | El elemento se comparte solo con usuarios específicos.                                          |
+| Valor          | Descripción                                                                           |
+|:---------------|:--------------------------------------------------------------------------------------|
+| `anonymous`    | El elemento se comparte mediante un vínculo que le funciona a cualquier usuario con el vínculo.               |
+| `organization` | El elemento se comparte mediante un vínculo que le funciona a cualquier usuario de la organización del propietario. |
+| `users`        | El elemento se comparte solo con usuarios específicos.                                          |
 
 ## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre las facetas de **driveItem**, consulte [**driveItem**](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "shared resource",
-  "keywords": "",
+  "description": "The shared facet provides info about shared items.",
+  "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/shared.md:
+      Found potential enums in resource example that weren't defined in a table:(anonymous,organization,users) are in resource, but () are in table"
+  ],
+  "tocPath": "Facets/Shared"
+} -->

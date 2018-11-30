@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso groupSettingTemplate
+description: Las plantillas de configuración de grupo representan configuraciones definidas por el sistema disponibles para el inquilino. La configuración de grupo se puede crear según las plantillas de **groupSettingTemplates** disponibles y se pueden cambiar los valores predeterminados. Las plantillas de configuración de grupo no se pueden crear, actualizar ni eliminar. Esta configuración puede representar configuración para todo el inquilino o una para un grupo específico. Actualmente, las únicas plantillas disponibles se aplican a grupos de Office 365 e incluyen opciones como las que establecen si los usuarios pueden crear grupos o no, o si pueden invitar a usuarios de fuera de la organización para convertirse en miembros de un grupo.
+ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032156"
+---
 # <a name="groupsettingtemplate-resource-type"></a>Tipo de recurso groupSettingTemplate
 
 Las plantillas de configuración de grupo representan configuraciones definidas por el sistema disponibles para el inquilino. La [configuración de grupo](groupsetting.md) se puede crear según las plantillas de **groupSettingTemplates** disponibles y se pueden cambiar los valores predeterminados. Las plantillas de configuración de grupo no se pueden crear, actualizar ni eliminar. Esta configuración puede representar configuración para todo el inquilino o una para un grupo específico. Actualmente, las únicas plantillas disponibles se aplican a grupos de Office 365 e incluyen opciones como las que establecen si los usuarios pueden crear grupos o no, o si pueden invitar a usuarios de fuera de la organización para convertirse en miembros de un grupo.
@@ -6,8 +16,8 @@ Las plantillas de configuración de grupo representan configuraciones definidas 
 
 | Método | Tipo de valor devuelto | Descripción |
 |:---------------|:--------|:----------|
-|[Get groupSettingTemplate](../api/groupsettingtemplate_get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Lee las propiedades específicas de uno de los objetos groupSettingTemplate definido por el sistema. |
-|[List groupSettingTemplate](../api/groupsettingtemplate_list.md) | [Colección de groupSettingTemplate](groupsettingtemplate.md) |Enumera todos los objetos groupSettingTemplate definidos por el sistema.|
+|[Get groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | Lee las propiedades específicas de uno de los objetos groupSettingTemplate definido por el sistema. |
+|[List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [Colección de groupSettingTemplate](groupsettingtemplate.md) |Enumera todos los objetos groupSettingTemplate definidos por el sistema.|
 
 ## <a name="properties"></a>Propiedades
 
@@ -27,11 +37,12 @@ Ninguna.
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

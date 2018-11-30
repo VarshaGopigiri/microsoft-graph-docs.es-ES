@@ -1,21 +1,46 @@
-# <a name="subscription-resource-type"></a>Tipo de recurso Subscription
-Una suscripción permite que una aplicación cliente reciba notificaciones sobre los datos de Microsoft Graph. Actualmente, las suscripciones están habilitadas para los conjuntos de datos siguientes:
+---
+title: tipo de recurso de suscripción
+description: 'Una suscripción a permite que una aplicación de cliente recibir notificaciones sobre cambios en los datos en Microsoft Graph. Actualmente, las suscripciones están habilitadas para los siguientes recursos:'
+ms.openlocfilehash: 5ece39954d661c6b7ef948d0ed7d514782fbceae
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032421"
+---
+# <a name="subscription-resource-type"></a>tipo de recurso de suscripción
 
-1. Correo, eventos y contactos de Outlook
-1. Conversaciones de los grupos de Office.
-1. Elementos raíz de la unidad de OneDrive 
+Una suscripción a permite que una aplicación de cliente recibir notificaciones sobre cambios en los datos en Microsoft Graph. Actualmente, las suscripciones están habilitadas para los siguientes recursos:
 
+- Correo, eventos y los contactos de Outlook.
+- Conversaciones de los grupos de Office.
+- Los elementos raíz de unidad de OneDrive.
+- Los usuarios y grupos de Azure Active Directory.
+- Alertas de la API de seguridad de Microsoft Graph.
 
 ## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.subscription"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscription",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false,
+        "sortable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -23,43 +48,53 @@ Aquí tiene una representación JSON del recurso.
   "changeType": "string",
   "notificationUrl": "string",
   "resource": "string",
-  "expirationDateTime": "string (timestamp)",
+  "applicationId" : "string",
+  "expirationDateTime": "String (timestamp)",
   "id": "string (identifier)",
-  "clientState": "string"
+  "clientState": "string",
+  "creatorId": "string"
 }
-
 ```
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|changeType|string|Indica el tipo de cambio en el recurso suscrito que generará una notificación. Los valores admitidos son: `created`, `updated`, `deleted`. Se pueden combinar varios valores mediante una lista separada por comas.|
-|notificationUrl|string|La dirección URL del extremo que recibirá las notificaciones. Esta dirección URL tiene que usar el protocolo HTTPS.|
-|recurso|string|Especifica el recurso al que se le supervisarán los cambios. No incluya la dirección URL base ("https://graph.microsoft.com/v1.0/").|
-|expirationDateTime|[dateTime](http://tools.ietf.org/html/rfc3339)|Especifica la fecha y hora en que expira la suscripción de webhook. El tiempo está en UTC y puede ser un periodo de tiempo desde la creación de la suscripción que varía para el recurso al que se está suscrito.  Consulte los valores máximos en la siguiente tabla.|
-|clientState|string|Especifica el valor de la propiedad `clientState` enviado por el servicio en cada notificación. Se permite una longitud máxima de 128 caracteres. El cliente puede comprobar que la notificación viene del servicio si compara el valor de la propiedad `clientState` enviado con la suscripción con el valor de la propiedad `clientState` recibido con cada notificación.|
-|id|string|Identificador único de la suscripción. Solo lectura.|
 
-## <a name="maximum-expiration-times-per-resource"></a>Tiempos de expiración máximos por recurso
-| Recurso | Tiempo de expiración máximo |
-|:---------------------|:--------------------|
-|Correo| 4230 minutos.|
-|Calendario| 4230 minutos.|
-|Contactos| 4230 minutos.|
-|Conversaciones de grupo| 4230 minutos.|
-|Elementos raíz de la unidad| 86 400 minutos.|
+## <a name="properties"></a>Propiedades
+
+| Propiedad | Tipo | Descripción |
+|:---------|:-----|:------------|
+| changeType | string | Obligatorio. Indica el tipo de cambio en el recurso suscrito que generará una notificación. Los valores admitidos son: `created`, `updated`, `deleted`. Se pueden combinar varios valores mediante una lista separada por comas.<br><br>Nota: Las notificaciones de elemento de raíz de unidad sólo son compatibles con el `updated` changeType. Admiten notificaciones de usuario y de grupo `updated` y `deleted` changeType.|
+| notificationUrl | string | Obligatorio. La dirección URL del extremo que va a recibir las notificaciones. Esta dirección URL debe hacer uso de la HTTPS protocolo. |
+| resource | string | Obligatorio. Especifica el recurso al que se van a supervisar para que los cambios. No incluya la dirección URL base (`https://graph.microsoft.com/v1.0/`). |
+| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obligatorio. Especifica la fecha y hora en que expira la suscripción de webhook. La hora está en UTC y puede ser un periodo de tiempo desde la creación de la suscripción que varía para el recurso al que se está suscrito.  Consulte la tabla siguiente para la duración máxima de la suscripción compatible. |
+| clientState | string | Opcional. Especifica el valor de la propiedad `clientState` enviado por el servicio en cada notificación. Se permite una longitud máxima de 128 caracteres. El cliente puede comprobar que la notificación viene del servicio si compara el valor de la propiedad `clientState` enviado con la suscripción con el valor de la propiedad `clientState` recibido con cada notificación. |
+| identificador | string | Identificador único de la suscripción. Solo lectura. |
+| applicationId | string | Identificador de la aplicación utilizada para crear la suscripción. Solo lectura. |
+| Creador de | string | Identificador del usuario o de la entidad de seguridad de servicio que creó la suscripción. Si la aplicación usada delegado permisos para crear la suscripción, este campo contiene el identificador del usuario ha iniciado sesión de que la aplicación llama en nombre. Si la aplicación usa los permisos de aplicación, este campo contiene el identificador de la entidad de seguridad de servicio correspondiente a la aplicación. Solo lectura. |
+
+## <a name="maximum-length-of-subscription-per-resource-type"></a>Duración máxima de la suscripción por tipo de recurso
+
+| Recurso            | Tiempo de expiración máximo  |
+|:--------------------|:-------------------------|
+| Correo                | 4230 minutos (en 3 días)    |
+| Calendario            | 4230 minutos (en 3 días)    |
+| Contactos            | 4230 minutos (en 3 días)    |
+| Conversaciones de grupo | 4230 minutos (en 3 días)    |
+| Elementos raíz de la unidad    | 4230 minutos (en 3 días)    |
+| Alertas de seguridad     | 43200 minutos (en 30 días)  |
+
+> **Nota:** Las aplicaciones existentes y nuevas aplicaciones no deben superar el valor admitido. En el futuro, se producirá un error en las solicitudes para crear o renovar una suscripción más allá del valor máximo.
 
 ## <a name="relationships"></a>Relaciones
-Ninguno
 
+Ninguno
 
 ## <a name="methods"></a>Métodos
 
-| Método           | Tipo de valor devuelto    |Descripción|
-|:---------------|:--------|:----------|
-|[Crear suscripción](../api/subscription_post_subscriptions.md) | [subscription](subscription.md) |Suscripción a una aplicación de escucha para recibir notificaciones cuando cambian los datos de Microsoft Graph.|
-|[Actualizar suscripción](../api/subscription_update.md) | [subscription](subscription.md) |Renueva una suscripción al actualizar su tiempo de expiración.|
-|[Obtener suscripción](../api/subscription_get.md) | [subscription](subscription.md) |Lee las propiedades y relaciones del objeto subscription.|
-|[Eliminar suscripción](../api/subscription_delete.md) | Ninguno |Elimina un objeto subscription.|
+| Método | Tipo de valor devuelto | Descripción |
+|:-------|:------------|:------------|
+| [Crear suscripción](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Suscripción a una aplicación de escucha para recibir notificaciones cuando cambian los datos de Microsoft Graph. |
+| [Actualizar suscripción](../api/subscription-update.md) | [subscription](subscription.md) | Renueva una suscripción al actualizar su tiempo de expiración. |
+| [Suscripciones de lista](../api/subscription-list.md) | [subscription](subscription.md) | Listas de suscripciones activas. |
+| [Obtener suscripción](../api/subscription-get.md) | [subscription](subscription.md) | Lee las propiedades y relaciones del objeto subscription. |
+| [Eliminar suscripción](../api/subscription-delete.md) | Ninguno |Elimina un objeto subscription. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

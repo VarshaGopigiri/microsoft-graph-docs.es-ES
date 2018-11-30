@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso TableSort
+description: Administra operaciones de ordenación en objetos Table.
+ms.openlocfilehash: 3696608f13e4a56b71a84bc2d287300e9e54cfb2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032678"
+---
 # <a name="tablesort-resource-type"></a>Tipo de recurso TableSort
 
 Administra operaciones de ordenación en objetos Table.
@@ -7,21 +17,17 @@ Administra operaciones de ordenación en objetos Table.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Lee las propiedades y relaciones del objeto tableSort.|
-|[Apply](../api/tablesort_apply.md)|None|Realiza una operación de ordenación.|
-|[Clear](../api/tablesort_clear.md)|None|Borra la ordenación que se aplica actualmente en la tabla. Aunque esto no modifica la ordenación de la tabla, borra el estado de los botones de encabezado.|
-|[Reapply](../api/tablesort_reapply.md)|None|Vuelve a aplicar los parámetros de ordenación actuales a la tabla.|
+|[Get TableSort](../api/tablesort-get.md) | [WorkbookTableSort](tablesort.md) |Lee las propiedades y relaciones del objeto tableSort.|
+|[Apply](../api/tablesort-apply.md)|None|Realiza una operación de ordenación.|
+|[Clear](../api/tablesort-clear.md)|None|Borra la ordenación que se aplica actualmente en la tabla. Aunque esto no modifica la ordenación de la tabla, borra el estado de los botones de encabezado.|
+|[Reapply](../api/tablesort-reapply.md)|None|Vuelve a aplicar los parámetros de ordenación actuales a la tabla.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
+|fields|Colección de [WorkbookSortField](sortfield.md)|Representa las condiciones actuales que se usaron por última vez para ordenar la tabla. Solo lectura.|
 |matchCase|boolean|Indica si última ordenación de la tabla distinguía mayúsculas de minúsculas. Solo lectura.|
-|method|string|Representa el método de ordenación de caracteres chinos usado por última vez para ordenar la tabla. Valores posibles: `PinYin`, `StrokeCount`. Solo lectura.|
-
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|Representa las condiciones actuales que se usaron por última vez para ordenar la tabla. Solo lectura.|
+|method|string|Representa el método utilizado por última vez para ordenar la tabla de orden de los caracteres chinos. Los valores posibles son: `PinYin`, `StrokeCount`. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -32,13 +38,15 @@ Aquí tiene una representación JSON del recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.tableSort"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableSort"
 }-->
 
 ```json
 {
   "matchCase": true,
-  "method": "string"
+  "method": "string",
+  "fields": [{ "@odata.type": "microsoft.graph.workbookSortField" }]
 }
 
 ```

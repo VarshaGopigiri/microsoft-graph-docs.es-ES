@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso passwordProfile
+description: Contiene el perfil de contraseña asociado al usuario. La propiedad **passwordProfile** de la entidad user es un objeto **passwordProfile**.
+ms.openlocfilehash: ee933b75b3dc536cbfcb33502cdda0d63680174c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031358"
+---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
 Contiene el perfil de contraseña asociado al usuario. La propiedad **passwordProfile** de la entidad [user](user.md) es un objeto **passwordProfile**.
@@ -18,7 +28,7 @@ Aquí tiene una representación JSON del recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json

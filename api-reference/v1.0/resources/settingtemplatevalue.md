@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso settingTemplateValue
+description: Representa una definición de configuración de plantilla individual, incluido el valor predeterminado de la configuración, en caso de que la configuración no tenga instancias.
+ms.openlocfilehash: 00e424e36338855d8ef603d06c7a9ee52a99c621
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032080"
+---
 # <a name="settingtemplatevalue-resource-type"></a>Tipo de recurso settingTemplateValue
 
 Representa una definición de configuración de plantilla individual, incluido el valor predeterminado de la configuración, en caso de que la configuración no tenga instancias.

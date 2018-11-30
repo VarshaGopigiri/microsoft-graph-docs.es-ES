@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso ChartLegend
+description: Representa la leyenda de un gráfico.
+ms.openlocfilehash: 9066e69da4100c711f9b0b19165a58d94a8bb142
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029748"
+---
 # <a name="chartlegend-resource-type"></a>Tipo de recurso ChartLegend
 
 Representa la leyenda de un gráfico.
@@ -7,20 +17,20 @@ Representa la leyenda de un gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |Lee las propiedades y relaciones del objeto chartLegend.|
-|[Update](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)    |Actualiza el objeto ChartLegend. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |Lee las propiedades y relaciones del objeto chartLegend.|
+|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md) |Actualiza el objeto ChartLegend. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |overlay|boolean|Valor booleano que indica si la leyenda del gráfico debe superponerse al cuerpo principal del gráfico.|
-|position|string|Representa la posición de la leyenda del gráfico. Valores posibles: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|position|string|Representa la posición de la leyenda del gráfico. Los valores posibles son: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|Valor booleano que representa la visibilidad de un objeto ChartLegend.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|format|[ChartLegendFormat](chartlegendformat.md)|Representa el formato de una leyenda del gráfico, que incluye el formato de relleno y de fuente. Solo lectura.|
+|format|[WorkbookChartLegendFormat](chartlegendformat.md)|Representa el formato de una leyenda del gráfico, que incluye el formato de relleno y de fuente. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -28,17 +38,19 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 }-->
 
 ```json
 {
   "overlay": true,
   "position": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
 }
 
 ```

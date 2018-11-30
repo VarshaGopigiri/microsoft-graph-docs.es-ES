@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso verifiedDomain
+description: Especifica un dominio para un inquilino. La propiedad **verifiedDomains** de la entidad organization es una colección de **VerifiedDomain**.
+ms.openlocfilehash: 21b6dd89dcc8b990046952d9ae7abcfe8ce02bca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029951"
+---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
 
 Especifica un dominio para un inquilino. La propiedad **verifiedDomains** de la entidad [organization](organization.md) es una colección de **VerifiedDomain**.
@@ -21,7 +31,7 @@ Aquí tiene una representación JSON del recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json

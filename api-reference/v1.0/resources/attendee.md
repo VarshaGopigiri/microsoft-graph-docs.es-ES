@@ -1,15 +1,25 @@
+---
+title: Tipo de recurso attendee
+description: Asistente a un evento. Esto puede ser una persona o un recurso, como una sala de reuniones o equipamiento que se ha configurado como un recurso en el servidor Exchange del espacio empresarial.
+ms.openlocfilehash: 7c9040b563840c22eec1dd7456892fc7ff83ee4f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032715"
+---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
-Asistente a un evento.
+Asistente a un evento. Esto puede ser una persona o un recurso, como una sala de reuniones o equipamiento que se ha configurado como un recurso en el servidor Exchange del espacio empresarial.
 
-Derivadas de [attachment](attendeebase.md).
+Derivadas de [attendeeBase](attendeebase.md).
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|Respuesta del asistente (ninguna, aceptada, rechazada, etc.) para el evento y fecha y hora en que se envió la respuesta.|
-|type|String|Tipo de asistente: `Required`, `Optional`, `Resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Incluye el nombre y la dirección de SMTP del asistente.|
+|type|String|Tipo de asistente: `required`, `optional`, `resource`.|
+|emailAddress|[emailAddress](emailaddress.md)|Incluye el nombre y la dirección de SMTP del asistente.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -17,6 +27,7 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso FormatProtection
+description: Representa la protección de formato de un objeto range.
+ms.openlocfilehash: b3954763d7c611c0db90008ff7aa74f672c51a4d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029769"
+---
 # <a name="formatprotection-resource-type"></a>Tipo de recurso FormatProtection
 
 Representa la protección de formato de un objeto range.
@@ -7,11 +17,11 @@ Representa la protección de formato de un objeto range.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get FormatProtection](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |Lee las propiedades y relaciones del objeto formatProtection.|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)    |Actualiza el objeto FormatProtection. |
+|[Get FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Lee las propiedades y relaciones del objeto formatProtection.|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |Actualiza el objeto FormatProtection. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |formulaHidden|boolean|Indica si Excel oculta la fórmula de las celdas del rango. Un valor null indica que el rango no tiene una configuración de fórmula oculta uniforme.|
 |locked|boolean|Indica si Excel bloquea las celdas del objeto. Un valor nulo indica que todo el rango no tiene una configuración de bloqueo uniforme.|
@@ -26,10 +36,11 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 }-->
 
 ```json

@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso conversationThread
+description: Un recurso conversationThread es una colección de posts.
+ms.openlocfilehash: 7fc248957ed81a9d02d6f2d404110690b350ca1a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032216"
+---
 # <a name="conversationthread-resource-type"></a>Tipo de recurso conversationThread
 Un recurso conversationThread es una colección de [posts](post.md).
 
@@ -7,16 +17,16 @@ La colección de destinatarios de la última publicación son los destinatarios 
 
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
-|[Enumerar hilos](../api/group_list_threads.md) | Colección [conversationThread](conversationthread.md) |Obtenga todos los hilos de un grupo.|
-|[Crear hilo](../api/group_post_threads.md) | [conversationThread](conversationthread.md) |Inicie una nueva conversación creando primero un hilo. Se crean una conversación, un hilo de conversación y una publicación en el grupo.|
-|[Obtener conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Obtenga un hilo específico que pertenece a un grupo. |
-|[Actualizar](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Actualice el objeto conversationThread. |
-|[Eliminar](../api/conversationthread_delete.md) | Ninguno |Elimine el objeto conversationThread. |
-|[Responder](../api/conversationthread_reply.md)|Ninguno|Responda a este hilo mediante la creación de una nueva entidad Post.|
-|[Enumerar publicaciones](../api/conversationthread_list_posts.md) |Colección [post](post.md)| Obtenga las publicaciones del hilo especificado. |
+|[Enumerar hilos](../api/group-list-threads.md) | Colección [conversationThread](conversationthread.md) |Obtenga todos los hilos de un grupo.|
+|[Crear hilo](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Inicie una nueva conversación creando primero un hilo. Se crean una conversación, un hilo de conversación y una publicación en el grupo.|
+|[Obtener conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Obtenga un hilo específico que pertenece a un grupo. |
+|[Actualizar](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Actualice el objeto conversationThread. |
+|[Eliminar](../api/conversationthread-delete.md) | Ninguno |Elimine el objeto conversationThread. |
+|[Responder](../api/conversationthread-reply.md)|Ninguno|Responda a este hilo mediante la creación de una nueva entidad Post.|
+|[Enumerar publicaciones](../api/conversationthread-list-posts.md) |Colección [post](post.md)| Obtenga las publicaciones del hilo especificado. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|String| Solo lectura.|
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del hilo.|
@@ -29,22 +39,34 @@ La colección de destinatarios de la última publicación son los destinatarios 
 |isLocked|Boolean|Indica si el hilo está bloqueado.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |posts|Colección [post](post.md)| Solo lectura. Admite valores NULL.|
-
 
 ## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

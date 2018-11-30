@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso notebook
+description: Bloc de notas de OneNote.
+ms.openlocfilehash: b84cb85cea58939a5414c51ce58c82b684ca0997
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031458"
+---
 # <a name="notebook-resource-type"></a>Tipo de recurso notebook
 
 Bloc de notas de OneNote.
@@ -8,6 +18,7 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "sectionGroups",
     "sections"
@@ -34,7 +45,7 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
@@ -48,24 +59,25 @@ Aquí tiene una representación JSON del recurso
 |sectionGroupsUrl|String|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del bloc de notas. Solo lectura.|
 |sectionsUrl|String|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del bloc de notas. Solo lectura.|
 |self|String|El punto de conexión donde puede obtener información detallada sobre el bloc de notas. Solo lectura.|
-|userRole|String|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
+|userRole|onenoteUserRole|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |sectionGroups|Colección [SectionGroup](sectiongroup.md)|Los grupos de secciones del bloc de notas. Solo lectura. Admite valores NULL.|
-|sections|Colección [Section](section.md)|Secciones del bloc de notas. Solo lectura. Admite valores NULL.|
+|sections|Colección de [OnenoteSection](section.md)|Secciones del bloc de notas. Solo lectura. Admite valores NULL.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Obtener bloc de notas](../api/notebook_get.md) | [Notebook](notebook.md) |Leer las propiedades y las relaciones del bloc de notas.|
-|[Crear grupo de secciones](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crear un grupo de secciones publicándolo en el bloc de notas especificado de la colección sectionGroups.|
-|[Enumerar grupos de secciones](../api/notebook_list_sectiongroups.md) |Colección [SectionGroup](sectiongroup.md)| Obtener una colección de grupos de secciones en el bloc de notas especificado.|
-|[Crear sección](../api/notebook_post_sections.md) |[Section](section.md)| Crear una sección publicándola en el bloc de notas especificado de la colección de secciones.|
-|[Enumerar secciones](../api/notebook_list_sections.md) |Colección [Section](section.md)| Obtener una colección de secciones en el bloc de notas especificado.|
-|[copyNotebook](../api/notebook_copynotebook.md)| Ninguno | Copia un bloc de notas.|
+|[Obtener bloc de notas](../api/notebook-get.md) | [Notebook](notebook.md) |Leer las propiedades y las relaciones del bloc de notas.|
+|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | Colección [recentNotebook](recentnotebook.md) | Obtener una colección de los blocs de notas a los que ha tenido acceso más recientemente el usuario. |
+|[Crear grupo de secciones](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crear un grupo de secciones publicándolo en el bloc de notas especificado de la colección sectionGroups.|
+|[Enumerar grupos de secciones](../api/notebook-list-sectiongroups.md) |Colección [SectionGroup](sectiongroup.md)| Obtener una colección de grupos de secciones en el bloc de notas especificado.|
+|[Crear sección](../api/notebook-post-sections.md) |[OnenoteSection](section.md)| Crear una sección publicándola en el bloc de notas especificado de la colección de secciones.|
+|[Enumerar secciones](../api/notebook-list-sections.md) |Colección de [OnenoteSection](section.md)| Obtener una colección de secciones en el bloc de notas especificado.|
+|[copyNotebook](../api/notebook-copynotebook.md)| Ninguno | Copia un bloc de notas.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

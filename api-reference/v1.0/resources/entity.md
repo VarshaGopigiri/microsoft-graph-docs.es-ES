@@ -1,24 +1,22 @@
+---
+title: Tipo de recurso entity
+description: Ninguno
+ms.openlocfilehash: 381e1df86d96f416a36eca58c1b3f6a7f3e58f01
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030236"
+---
 # <a name="entity-resource-type"></a>Tipo de recurso entity
 
-
-## <a name="methods"></a>Métodos
-
-| Método       | Tipo de valor devuelto  |Descripción|
-|:---------------|:--------|:----------|
-|[Get entity](../api/entity_get.md) | [entity](entity.md) |Lee las propiedades y relaciones del objeto entity.|
-|[Delete](../api/entity_delete.md) | None |Elimina el objeto entity. |
-
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|String| Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
-
-
-
-
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -26,6 +24,8 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "abstract": "true",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],

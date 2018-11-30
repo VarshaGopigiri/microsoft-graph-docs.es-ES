@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso profilePhoto
+description: Foto de perfil de un usuario, grupo o un contacto de Outlook al que se accede desde Exchange Online. Son datos binarios no codificados en base 64.
+ms.openlocfilehash: c5f74e1dcd48e42a2e17d5a64e6ed4b9e9cca5e4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032579"
+---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso profilePhoto
 Foto de perfil de un usuario, grupo o un contacto de Outlook al que se accede desde Exchange Online. Son datos binarios no codificados en base 64.
 
@@ -7,8 +17,8 @@ Los tamaños de fotos HD admitidos en Exchange Online son los siguientes: '48x48
 
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Obtiene el **profilePhoto** especificado o sus metadatos (propiedades profilePhoto).|
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Asigna una foto al usuario, grupo o contacto que se especifique. La foto debe estar en formato binario. Reemplaza la foto existente, si existe.|
+|[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Obtiene el **profilePhoto** especificado o sus metadatos (propiedades profilePhoto).|
+|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Asigna una foto al usuario, grupo o contacto que se especifique. La foto debe estar en formato binario. Reemplaza la foto existente, si existe.|
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
@@ -25,11 +35,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->

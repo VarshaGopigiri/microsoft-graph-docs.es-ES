@@ -1,22 +1,29 @@
-# Tipo de recurso plannerCategoryDescriptions
-<a id="plannercategorydescriptions-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerCategoryDescriptions
+description: 'El recurso **plannerCategoryDescriptions** representa las etiquetas descriptivas de las categorías que se han definido para un plan. Pertenece al objeto plan details. Puede haber hasta 6 categorías definidas. '
+ms.openlocfilehash: e71cbd1f41d23747691b3738b5a46ff302a72168
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029607"
+---
+# <a name="plannercategorydescriptions-resource-type"></a>Tipo de recurso plannerCategoryDescriptions
 
 El recurso **plannerCategoryDescriptions** representa las etiquetas descriptivas de las categorías que se han definido para un plan. Pertenece al objeto [plan details](plannerplandetails.md). Puede haber hasta 6 categorías definidas. 
 
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |category1|String|Etiqueta asociada a la categoría 1|
-|category2|Cadena|Etiqueta asociada a la categoría 2|
-|category3|Cadena|Etiqueta asociada a la categoría 3|
-|category4|Cadena|Etiqueta asociada a la categoría 4|
-|category5|Cadena|Etiqueta asociada a la categoría 5|
-|category6|Cadena|Etiqueta asociada a la categoría 6|
+|category2|String|Etiqueta asociada a la categoría 2|
+|category3|String|Etiqueta asociada a la categoría 3|
+|category4|String|Etiqueta asociada a la categoría 4|
+|category5|String|Etiqueta asociada a la categoría 5|
+|category6|String|Etiqueta asociada a la categoría 6|
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {

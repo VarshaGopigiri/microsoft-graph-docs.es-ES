@@ -1,23 +1,29 @@
-# Tipo de recurso plannerExternalReferences
-<a id="plannerexternalreferences-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerExternalReferences
+description: El recurso **plannerExternalReferences** representa la colección de referencias de una tarea. Este es un tipo abierto. Forma parte del objeto task details. El valor del par propiedad-valor es el objeto externalReference.
+ms.openlocfilehash: 6c1141ebdfd95fef5706c36ecf38d6c1ca0b8783
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029948"
+---
+# <a name="plannerexternalreferences-resource-type"></a>Tipo de recurso plannerExternalReferences
 
 El recurso **plannerExternalReferences** representa la colección de referencias de una tarea. Este es un tipo abierto. Forma parte del objeto [task details](plannertaskdetails.md). El valor del par propiedad-valor es el objeto [externalReference](plannerexternalreference.md).
 
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 El cliente puede definir las propiedades de un tipo abierto. En este caso, el cliente debe proporcionar **direcciones URL válidas** a partir de protocolos **HTTP/HTTPS** como propiedades y sus valores deben ser los objetos [externalReference](plannerexternalreference.md). De acuerdo con OData, los nombres de propiedad de los tipos abiertos no pueden contener los caracteres siguientes: `.`, `:` y `%`. Por este motivo, deberán codificarse. A continuación se muestra un ejemplo. Para quitar una referencia, establezca el valor de la propiedad en `null`.
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerExternalReferences"
 }-->
 

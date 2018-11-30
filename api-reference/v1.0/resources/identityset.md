@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: IdentitySet
+ms.openlocfilehash: ea49f904197b2f4a661b781576f06240e41cf808
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032152"
+---
 # <a name="identityset-resource-type"></a>Tipo de recurso IdentitySet
 
 El recurso **IdentitySet** es una colección de claves de recursos [identity](identity.md). Se usa para representar un conjunto de identidades asociadas a diversos eventos para un elemento, como _creado por_ o _última modificación_.
@@ -6,12 +18,9 @@ El recurso **IdentitySet** es una colección de claves de recursos [identity](id
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "user", "device", "application" ],
-  "@odata.type": "microsoft.graph.identitySet"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
+       "optionalProperties": ["user", "application", "device"],
+       "openType": true } -->
 ```json
 {
   "application": {"@odata.type": "microsoft.graph.identity"},
@@ -37,8 +46,7 @@ Consulte [DriveItem](driveitem.md) para obtener información sobre el uso de rec
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identitySet resource",
-  "keywords": "",
+  "description": "Identity set is a collection of identities",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/IdentitySet"
+} -->

@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso inferenceClassificationOverride
+description: Representa el reemplazo de un usuario sobre cómo se deben clasificar siempre los mensajes entrantes de un remitente determinado.
+ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030409"
+---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
 Representa el reemplazo de un usuario sobre cómo se deben clasificar siempre los mensajes entrantes de un remitente determinado.
@@ -7,13 +17,13 @@ Representa el reemplazo de un usuario sobre cómo se deben clasificar siempre lo
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |Cambie el campo **ClassifyAs** de un reemplazo tal y como se especifica. |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | None |Elimina un reemplazo especificado por su identificador. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Cambie el campo **ClassifyAs** de una invalidación tal como se especifica. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | None |Elimina un reemplazo especificado por su identificador. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|classifyAs|string| Especifica cómo se deben clasificar siempre los mensajes entrantes de un remitente determinado. Valores posibles: `focused`, `other`.|
+|classifyAs|inferenceClassificationType| Especifica cómo los mensajes entrantes de una determinada siempre debe clasificarse como remitente. Los valores posibles son: `focused`, `other`.|
 |id|string| Identificador único del reemplazo. Solo lectura.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Información de la dirección de correo del remitente para el que se creó el reemplazo.|
 
@@ -27,6 +37,7 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

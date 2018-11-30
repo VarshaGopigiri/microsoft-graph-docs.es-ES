@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso assignedLicense
+description: Representa una licencia asignada a un usuario. La propiedad **assignedLicenses** de la entidad user es una colección de **assignedLicense**.
+ms.openlocfilehash: 48863a9acdcfa173a3f0c1a2a008516360ffdf9b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029738"
+---
 # <a name="assignedlicense-resource-type"></a>Tipo de recurso assignedLicense
 
 Representa una licencia asignada a un usuario. La propiedad **assignedLicenses** de la entidad [user](user.md) es una colección de **assignedLicense**.

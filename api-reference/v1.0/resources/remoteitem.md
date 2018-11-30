@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: RemoteItem
+ms.openlocfilehash: df613c674ab2aed8857112ba01d3a77c15dcd81a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031539"
+---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
 El recurso **remoteItem** indica que un objeto [**driveItem**](driveitem.md) hace referencia a un elemento que existe en otra unidad. Este recurso proporciona los identificadores únicos de la unidad de origen y del elemento de destino.
@@ -27,8 +39,8 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "size": 1024,
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
+  "size": 1024,
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -52,18 +64,20 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
 | shared               | [shared](shared.md)                 | Indica que el elemento se ha compartido con otros usuarios y proporciona información sobre el estado del elemento compartido. Solo lectura.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Proporciona interoperabilidad entre elementos de OneDrive para la Empresa y SharePoint con el conjunto completo de identificadores de elementos. Solo lectura.                                          |
 | size                 | Int64                               | Tamaño del elemento remoto. Solo lectura.                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | Si el elemento actual también está disponible como una carpeta especial, se devuelve esta faceta. Solo lectura.                                                                     |
+| specialFolder        | [specialFolder][]                   | Si el elemento actual también está disponible como una carpeta especial, se devuelve esta faceta. Solo lectura.                                                                     |
 | webDavUrl            | Url                                 | Dirección URL compatible con DAV del elemento.                                                                                                                                  |
 | webUrl               | Url                                 | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                         |
+
+[specialFolder]: specialfolder.md
 
 ## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre las facetas de un objeto **driveItem**, consulte [driveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->

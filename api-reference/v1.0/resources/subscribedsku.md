@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso subscribedSku
+description: Contiene información acerca de una SKU de servicio a la que la empresa está suscrita.
+ms.openlocfilehash: 5a3c3515d4d902810db32acf10b4cee6a889bfc9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031422"
+---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
 Contiene información acerca de una SKU de servicio a la que la empresa está suscrita.
@@ -7,11 +17,11 @@ Solo se admite la operación de lectura con las SKU suscritas; no se admiten las
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Lea las propiedades y relaciones del objeto subscribedSku.|
-|[Enumerar subscribedsku](../api/subscribedsku_list.md) | Colección [subscribedSku](subscribedsku.md) |Recupere la lista de suscripciones comerciales que ha adquirido una organización.|
+|[Get subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Lea las propiedades y relaciones del objeto subscribedSku.|
+|[Lista subscribedsku](../api/subscribedsku-list.md) | Colección [subscribedSku](subscribedsku.md) |Recupere la lista de suscripciones comerciales que ha adquirido una organización.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |appliesTo|String| Por ejemplo, "usuario" o "empresa". |
 |capabilityStatus|String| Por ejemplo, "habilitado". |
@@ -29,13 +39,25 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

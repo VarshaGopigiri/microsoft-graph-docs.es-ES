@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso NamedItem
+description: Representa un nombre definido para un rango de celdas o un valor. Los nombres pueden ser objetos primitivos con nombre (como puede verse en el tipo siguiente), un objeto de rango o una referencia a un rango. Este objeto puede usarse para obtener un objeto de rango asociado a nombres.
+ms.openlocfilehash: 683bc93fdd9c14005b70cb125cf09eba5c8075a8
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032582"
+---
 # <a name="nameditem-resource-type"></a>Tipo de recurso NamedItem
 
 Representa un nombre definido para un rango de celdas o un valor. Los nombres pueden ser objetos primitivos con nombre (como puede verse en el tipo siguiente), un objeto de rango o una referencia a un rango. Este objeto puede usarse para obtener un objeto de rango asociado a nombres.
@@ -7,12 +17,12 @@ Representa un nombre definido para un rango de celdas o un valor. Los nombres pu
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem_add.md)|[NamedItem](nameditem.md)|Agrega un nuevo nombre a la colección del ámbito especificado.|
-|[AddFormulaLocal](../api/nameditem_addformulalocal.md)|[NamedItem](nameditem.md)|Agrega un nuevo nombre a la colección del ámbito especificado empleando la configuración regional del usuario para la fórmula.|
-|[Get NamedItem](../api/nameditem_get.md) | [NamedItem](nameditem.md) |Lee las propiedades y relaciones del objeto namedItem.|
-|[Update](../api/nameditem_update.md) | [NamedItem](nameditem.md)   |Actualiza el objeto NamedItem. |
-|[Range](../api/nameditem_range.md)|[Range](range.md)|Devuelve el objeto de intervalo asociado al nombre. Produce una excepción si el tipo del elemento con nombre no es un rango.|
-|[List](../api/nameditem_list.md) | Colección [NamedItem](nameditem.md) |Obtiene la colección de objetos namedItem. |
+|[Add](../api/nameditem-add.md)|[WorkbookNamedItem](nameditem.md)|Agrega un nuevo nombre a la colección del ámbito especificado.|
+|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[WorkbookNamedItem](nameditem.md)|Agrega un nuevo nombre a la colección del ámbito especificado empleando la configuración regional del usuario para la fórmula.|
+|[Get NamedItem](../api/nameditem-get.md) | [WorkbookNamedItem](nameditem.md) |Lee las propiedades y relaciones del objeto namedItem.|
+|[Update](../api/nameditem-update.md) | [WorkbookNamedItem](nameditem.md)   |Actualiza el objeto NamedItem. |
+|[Range](../api/nameditem-range.md)|[Range](range.md)|Devuelve el objeto de intervalo asociado al nombre. Produce una excepción si el tipo del elemento con nombre no es un intervalo.|
+|[List](../api/nameditem-list.md) | Colección de [WorkbookNamedItem](nameditem.md) |Obtiene la colección de objetos namedItem. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
@@ -20,14 +30,14 @@ Representa un nombre definido para un rango de celdas o un valor. Los nombres pu
 |name|string|Nombre del objeto. Solo lectura.|
 |comment|string|Representa el comentario asociado a este nombre.|
 |scope|string|Indica si el nombre está en el ámbito del libro o de una hoja de cálculo específica. Solo lectura.|
-|type|string|Indica el tipo de referencia que está asociado al nombre. Valores posibles: `String`, `Integer`, `Double`, `Boolean`, `Range`. Solo lectura.|
-|value|object|Representa la fórmula a la que debe hacer referencia el nombre, según su definición. Por ejemplo =Sheet14!$B$2:$H$12, =4.75, etc. Solo lectura.|
+|type|string|Indica qué tipo de referencia está asociado con el nombre. Los valores posibles son: `String`, `Integer`, `Double`, `Boolean`, `Range`. Solo lectura.|
+|valor|Json|Representa la fórmula a la que debe hacer referencia el nombre, según su definición. Por ejemplo =Sheet14!$B$2:$H$12, =4.75, etc. Solo lectura.|
 |visible|boolean|Especifica si el objeto está visible o no.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)|Devuelve la hoja de cálculo que tiene como ámbito el elemento con nombre. Solo está disponible si el elemento tiene como ámbito la hoja de cálculo. Solo lectura.|
+|worksheet|[WorkbookWorksheet](worksheet.md)|Devuelve la hoja de cálculo que tiene como ámbito el elemento con nombre. Solo está disponible si el elemento tiene como ámbito la hoja de cálculo. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -38,7 +48,8 @@ Aquí tiene una representación JSON del recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.namedItem"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 }-->
 
 ```json
@@ -47,7 +58,7 @@ Aquí tiene una representación JSON del recurso.
   "comment": "string",
   "scope": "string",
   "type": "string",
-  "value": {"@odata.type": "microsoft.graph.range"},
+  "value": {"@odata.type": "microsoft.graph.Json"},
   "visible": true
   
 }
