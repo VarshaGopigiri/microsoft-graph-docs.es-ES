@@ -1,11 +1,42 @@
-<span data-ttu-id="b81f4-p104">Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.</span><span class="sxs-lookup"><span data-stu-id="b81f4-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.|
+---
+title: Tipo de recurso plannerUser
+description: El recurso **plannerUser** proporcionan acceso a los recursos de organizador para un usuario. No contiene todas las propiedades utilizables.
+ms.openlocfilehash: 777886a61d702198ec03ea844fb9fced761047ba
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030688"
+---
+# <a name="planneruser-resource-type"></a><span data-ttu-id="deacb-104">Tipo de recurso plannerUser</span><span class="sxs-lookup"><span data-stu-id="deacb-104">plannerUser resource type</span></span>
 
-## <span data-ttu-id="b81f4-136">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b81f4-136">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
-<span data-ttu-id="b81f4-137">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="b81f4-137">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="deacb-p102">El recurso **plannerUser** proporciona acceso a los recursos Planner de un [usuario](user.md). No contiene ninguna propiedad utilizable.</span><span class="sxs-lookup"><span data-stu-id="deacb-p102">The **plannerUser** resource provide access to Planner resources for a [user](user.md). It doesn't contain any usable properties.</span></span>
+
+
+## <a name="methods"></a><span data-ttu-id="deacb-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="deacb-107">Methods</span></span>
+
+| <span data-ttu-id="deacb-108">Método</span><span class="sxs-lookup"><span data-stu-id="deacb-108">Method</span></span>           | <span data-ttu-id="deacb-109">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="deacb-109">Return Type</span></span>    |<span data-ttu-id="deacb-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="deacb-110">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="deacb-111">Enumerar planes</span><span class="sxs-lookup"><span data-stu-id="deacb-111">List plans</span></span>](../api/planneruser-list-plans.md) |<span data-ttu-id="deacb-112">Colección [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="deacb-112">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="deacb-113">Obtenga una colección de objetos **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="deacb-113">Get a **plannerPlan** object collection.</span></span>|
+|[<span data-ttu-id="deacb-114">Enumerar tareas</span><span class="sxs-lookup"><span data-stu-id="deacb-114">List tasks</span></span>](../api/planneruser-list-tasks.md) |<span data-ttu-id="deacb-115">Colección [plannerTask](plannertask.md)</span><span class="sxs-lookup"><span data-stu-id="deacb-115">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="deacb-116">Obtenga una colección de objetos **plannerTask**.</span><span class="sxs-lookup"><span data-stu-id="deacb-116">Get a **plannerTask** object collection.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="deacb-117">Propiedades</span><span class="sxs-lookup"><span data-stu-id="deacb-117">Properties</span></span>
+| <span data-ttu-id="deacb-118">Propiedad</span><span class="sxs-lookup"><span data-stu-id="deacb-118">Property</span></span>     | <span data-ttu-id="deacb-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="deacb-119">Type</span></span>   |<span data-ttu-id="deacb-120">Descripción</span><span class="sxs-lookup"><span data-stu-id="deacb-120">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="deacb-121">id</span><span class="sxs-lookup"><span data-stu-id="deacb-121">id</span></span>|<span data-ttu-id="deacb-122">String</span><span class="sxs-lookup"><span data-stu-id="deacb-122">String</span></span>| <span data-ttu-id="deacb-p103">Solo lectura. Identificador del planenrUser</span><span class="sxs-lookup"><span data-stu-id="deacb-p103">Read-only. Identifier of the planenrUser</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="deacb-125">Relaciones</span><span class="sxs-lookup"><span data-stu-id="deacb-125">Relationships</span></span>
+| <span data-ttu-id="deacb-126">Relación</span><span class="sxs-lookup"><span data-stu-id="deacb-126">Relationship</span></span> | <span data-ttu-id="deacb-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="deacb-127">Type</span></span>   |<span data-ttu-id="deacb-128">Descripción</span><span class="sxs-lookup"><span data-stu-id="deacb-128">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="deacb-129">plans</span><span class="sxs-lookup"><span data-stu-id="deacb-129">plans</span></span>|<span data-ttu-id="deacb-130">Colección [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="deacb-130">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="deacb-p104">Solo lectura. Admite valores NULL. Devuelve las [plannerTasks](plannertask.md) asignadas al usuario.</span><span class="sxs-lookup"><span data-stu-id="deacb-p104">Read-only. Nullable. Returns the [plannerTasks](plannertask.md) assigned to the user.</span></span>|
+|<span data-ttu-id="deacb-134">tasks</span><span class="sxs-lookup"><span data-stu-id="deacb-134">tasks</span></span>|<span data-ttu-id="deacb-135">Colección [plannerTask](plannertask.md)</span><span class="sxs-lookup"><span data-stu-id="deacb-135">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="deacb-p105">Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.</span><span class="sxs-lookup"><span data-stu-id="deacb-p105">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="deacb-139">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="deacb-139">JSON representation</span></span>
+<span data-ttu-id="deacb-140">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="deacb-140">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
