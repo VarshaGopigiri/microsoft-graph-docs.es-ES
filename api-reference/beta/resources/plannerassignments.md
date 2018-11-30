@@ -1,11 +1,21 @@
-# Tipo de recurso plannerAssignments
-<a id="plannerassignments-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerAssignments
+description: 'El recurso **plannerAssignments** representa las asignaciones de un recurso de plannerTask. Este tipo es un tipo abierto. Cada nombre de la propiedad en este tipo '
+ms.openlocfilehash: b6a6448dac465b8d8ed64c7326ca3475b624c056
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27084072"
+---
+# <a name="plannerassignments-resource-type"></a>Tipo de recurso plannerAssignments
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 El recurso **plannerAssignments** representa las asignaciones de un recurso [plannerTask](plannertask.md). Este tipo es un tipo abierto. Cada nombre de propiedad de este tipo es el identificador de un objeto de usuario al que se ha asignado una tarea. Se pueden asignar los usuarios a las tareas creando nuevas propiedades denominadas con sus identificadores, con un objeto [plannerassignment](plannerassignment.md) con la propiedad orderHint cumplimentada como valor. Se puede anular la asignación de la tarea a las personas asignadas estableciendo en null la propiedad denominada con su identificador.
 
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 El cliente puede definir las propiedades de un tipo abierto. En este caso, el cliente debe proporcionar los identificadores de los usuarios asignados como nombres de propiedad. La propiedad se debe establecer en un objeto **plannerAssignment** para crear o modificar las personas asignadas o en null para quitarlas.
 
 Ejemplo:

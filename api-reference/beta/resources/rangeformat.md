@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso RangeFormat
+description: Objeto de formato que encapsula la fuente, el relleno, los bordes, la alineación y otras propiedades del rango.
+ms.openlocfilehash: dc1eb1fd06370dff554e1245245ec24cdf5a6658
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27086465"
+---
 # <a name="rangeformat-resource-type"></a>Tipo de recurso RangeFormat
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Objeto de formato que encapsula la fuente, el relleno, los bordes, la alineación y otras propiedades del rango.
 
@@ -7,15 +19,15 @@ Objeto de formato que encapsula la fuente, el relleno, los bordes, la alineació
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get RangeFormat](../api/rangeformat_get.md) | [RangeFormat](rangeformat.md) |Lee las propiedades y relaciones del objeto rangeFormat.|
-|[Create RangeBorder](../api/rangeformat_post_borders.md) |[RangeBorder](rangeborder.md)| Crea un RangeBorder publicándolo en la colección borders.|
-|[List borders](../api/rangeformat_list_borders.md) |Colección [RangeBorder](rangeborder.md)| Obtiene una colección de objetos RangeBorder.|
-|[Update](../api/rangeformat_update.md) | [RangeFormat](rangeformat.md)    |Actualiza el objeto RangeFormat. |
-|[Autofitcolumns](../api/rangeformat_autofitcolumns.md)|None|Cambia el ancho de las columnas del rango actual para obtener el ajuste perfecto (según los datos actuales de las columnas).|
-|[Autofitrows](../api/rangeformat_autofitrows.md)|None|Cambia el alto de las filas del rango actual para obtener el ajuste perfecto (según los datos actuales de las columnas).|
+|[Get RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Lee las propiedades y relaciones del objeto rangeFormat.|
+|[Create RangeBorder](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| Crea un RangeBorder publicándolo en la colección borders.|
+|[List borders](../api/rangeformat-list-borders.md) |Colección [RangeBorder](rangeborder.md)| Obtiene una colección de objetos RangeBorder.|
+|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |Actualiza el objeto RangeFormat. |
+|[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|Cambia el ancho de las columnas del rango actual para obtener el ajuste perfecto (según los datos actuales de las columnas).|
+|[Autofitrows](../api/rangeformat-autofitrows.md)|None|Cambia el alto de las filas del rango actual para obtener el ajuste perfecto (según los datos actuales de las columnas).|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |columnWidth|double|Obtiene o establece el ancho de todas las columnas del rango. Si los anchos de columna no son uniformes, se devolverá null.|
 |horizontalAlignment|string|Representa la alineación horizontal del objeto especificado. Valores posibles: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
@@ -24,7 +36,7 @@ Objeto de formato que encapsula la fuente, el relleno, los bordes, la alineació
 |wrapText|boolean|Indica si Excel ajusta el texto del objeto. Un valor null indica que el intervalo no tiene una configuración de ajuste uniforme.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |borders|Colección [RangeBorder](rangeborder.md)|Colección de objetos border que se aplican al rango global seleccionado. Solo lectura.|
 |fill|[RangeFill](rangefill.md)|Devuelve el objeto de relleno definido en el rango global. Solo lectura.|

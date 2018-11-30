@@ -1,0 +1,118 @@
+---
+title: Tipo de recurso organization
+description: 'Representa a un inquilino de Azure Active Directory. '
+ms.openlocfilehash: 0dc7b55053ba70272c4e639dba4b62160f58f435
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27085812"
+---
+# <a name="organization-resource-type"></a>Tipo de recurso organization
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+Representa a un inquilino de Azure Active Directory. 
+
+Este recurso le permite agregar sus propios datos a las propiedades personalizadas mediante [extensiones](/graph/extensibility-overview).
+
+Sólo las operaciones de lectura y la actualización son compatibles con los inquilinos; crear y eliminar no son compatibles. Se hereda de [directoryObject](directoryobject.md).
+
+## <a name="methods"></a>Métodos
+
+| Método       | Tipo de valor devuelto  |Descripción|
+|:---------------|:--------|:----------|
+|[Obtener organización](../api/organization-get.md) | [organization](organization.md) |Lea las propiedades y las relaciones del objeto organization.|
+|[Actualizar](../api/organization-update.md) | [organization](organization.md)  |Actualizar el objeto organization. Las únicas propiedades que pueden actualizarse son: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** y **privacyProfile**. |
+|**Extensiones abiertas**| | |
+|[Crear extensión abierta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o un recurso existente.|
+|[Obtener extensión abierta](../api/opentypeextension-get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtiene una extensión abierta identificada por el nombre de extensión.|
+|**Extensiones de esquema**| | |
+|[Agregar valores de extensión de esquema](/graph/extensibility-schema-groups) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
+
+## <a name="properties"></a>Propiedades
+| Propiedad     | Tipo   |Descripción|
+|:---------------|:--------|:----------|
+|assignedPlans|Colección [assignedPlan](assignedplan.md)|La colección de planes de servicio asociados con el inquilino. No admite valores NULL.            |
+|ciudad|String| Nombre de la ciudad de la dirección de la organización. |
+|companyLastDirSyncTime|DateTimeOffset|La fecha y hora en que se ha sincronizado por última vez el inquilino con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
+|country|String| Nombre del país o región de la dirección de la organización. |
+|countryLetterCode|String| Abreviatura del país o región de la organización. |
+|deletionTimestamp|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
+|dirSyncEnabled|Boolean|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado).|
+|displayName|String|El nombre para mostrar del inquilino.|
+|id|String|El identificador único del inquilino. Hereda de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
+|isMultipleDataLocationsForServicesEnabled|Booleano|**true** si la organización está habilitado; Multi-Geo **false** si la organización no está habilitado para Multi-ubican; **null** (valor predeterminado). Solo lectura. Para obtener más información, vea [OneDrive en línea Multi-ubican](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|marketingNotificationEmails|Colección String| No admite valores NULL.            |
+|objectType|String|Una cadena que identifica el tipo de objeto. Para los inquilinos, el valor es siempre "Company". |
+|postalCode|String| Código postal de la dirección de la organización. |
+|preferredLanguage|String| El idioma preferido de la organización. Debe seguir el código ISO 639-1; por ejemplo, "es". |
+|privacyProfile|[privacyProfile](privacyprofile.md)| Perfil de privacidad de una organización.            |
+|provisionedPlans|Colección [ProvisionedPlan](provisionedplan.md)| No admite valores NULL.            |
+|provisioningErrors|Colección ProvisioningError| No admite valores NULL.            |
+|securityComplianceNotificationMails|Colección String||
+|securityComplianceNotificationPhones|Colección String||
+|state|String| Nombre del estado de la dirección de la organización. |
+|street|String| Nombre de la calle de la dirección de la organización. |
+|technicalNotificationMails|Colección String| No admite valores NULL. |
+|telephoneNumber|String| Número de teléfono de la organización. |
+|verifiedDomains|Colección [VerifiedDomain](verifieddomain.md)|La colección de dominios asociados a este inquilino. No admite valores NULL.            |
+
+## <a name="relationships"></a>Relaciones
+| extensiones | colección de [extensión](extension.md) | La colección de extensiones de open definidas para el recurso de la organización. Acepta valores NULL. |
+
+## <a name="json-representation"></a>Representación JSON
+
+Aquí tiene una representación JSON del recurso
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "extensions"
+  ],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.organization"
+}-->
+
+```json
+{
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "businessPhones": ["string"],
+  "city": "string",
+  "country": "string",
+  "countryLetterCode": "string",
+  "displayName": "string",
+  "id": "string (identifier)",
+  "isMultipleDataLocationsForServicesEnabled": "boolean",
+  "marketingNotificationEmails": ["string"],
+  "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesSyncEnabled": true,
+  "postalCode": "string",
+  "preferredLanguage": "string",
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
+  "securityComplianceNotificationMails": ["string"],
+  "securityComplianceNotificationPhones": ["string"],
+  "state": "string",
+  "street": "string",
+  "technicalNotificationMails": ["string"],
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
+}
+
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Agregar datos personalizados a los recursos mediante extensiones](/graph/extensibility-overview)
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](/graph/extensibility-open-users)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](/graph/extensibility-schema-groups)
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "organization resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

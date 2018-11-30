@@ -1,0 +1,23 @@
+---
+title: Informes de uso de dispositivos de Microsoft Teams
+description: 'Use los informes de uso de dispositivos de Microsoft Teams para obtener información sobre el uso del dispositivo Microsoft Teams en su organización. '
+ms.openlocfilehash: 22476c0891111d5f160e528477aab78ca5cc2e90
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27083931"
+---
+# <a name="microsoft-teams-device-usage-reports"></a>Informes de uso de dispositivos de Microsoft Teams
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción. Estas API no se admiten en China de Microsoft Graph operado por 21Vianet.
+
+Use los informes de uso de dispositivos de Microsoft Teams para obtener información sobre el uso del dispositivo Microsoft Teams en su organización. 
+
+## <a name="methods"></a>Métodos
+
+| Método                                   | Tipo de valor devuelto                              | Descripción                              |
+| :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
+| [Obtener detalles del usuario](../api/reportroot-getteamsdeviceusageuserdetail.md) | [teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md) | Obtenga información sobre el uso de los dispositivos de Microsoft Teams por usuario. |
+| [Obtener recuentos de usuario](../api/reportroot-getteamsdeviceusageusercounts.md) | [teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md) | Obtenga el número de usuarios únicos diario por tipo de dispositivo. |
+| [Obtener recuento de distribución de usuarios](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | [teamsDeviceUsagedistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) | Obtenga el número de usuarios únicos por tipo de dispositivo durante el período de tiempo seleccionado. |

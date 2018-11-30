@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso multiValueLegacyExtendedProperty
+description: Propiedad extendida que contiene una colección de valores.
+ms.openlocfilehash: efb871594028b5c2d54b1c081f901717b754c8ca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27087028"
+---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Tipo de recurso multiValueLegacyExtendedProperty
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Propiedad extendida que contiene una colección de valores.
 
@@ -8,11 +20,11 @@ Consulte el artículo de [información general sobre las propiedades extendidas]
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | Instancia de recurso admitida: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md) o [contactFolder](../resources/contactfolder.md). Tenga en cuenta que no se admite [post](../resources/post.md) de grupo. | Crea una **multiValueLegacyExtendedProperty** en una instancia nueva o existente de un recurso compatible. |
-|[Get](../api/multivaluelegacyextendedproperty_get.md) |Instancia de recurso admitida ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md) o [post](../resources/post.md) de grupo) expandida con un objeto [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md). |Obtiene una instancia del recurso con una propiedad extendida mediante `$expand`.|
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | Una instancia de recursos admitidos: [mensaje](../resources/message.md), [mailFolder](../resources/mailfolder.md), [eventos](../resources/event.md), [calendario](../resources/calendar.md), [póngase en contacto con](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [tarea de Outlook](../resources/outlooktask.md)o [carpeta de tareas de Outlook](../resources/outlooktaskfolder.md). Tenga en cuenta que no se admite ese grupo [registrar](../resources/post.md) . | Crea una **multiValueLegacyExtendedProperty** en una instancia nueva o existente de un recurso compatible. |
+|[Get](../api/multivaluelegacyextendedproperty-get.md) |Una instancia de recursos admitidos ([mensaje](../resources/message.md), [mailFolder](../resources/mailfolder.md), [eventos](../resources/event.md), [calendario](../resources/calendar.md), [póngase en contacto con](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [tarea de Outlook](../resources/outlooktask.md), [carpeta de tareas de Outlook](../resources/outlooktaskfolder.md)o grupo [registrar](../resources/post.md)) expandido con un [ multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) objeto. |Obtiene una instancia del recurso con una propiedad extendida mediante `$expand`.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|string|Identificador de la propiedad. Solo lectura.|
 |value|colección string|Colección de valores de propiedad.|

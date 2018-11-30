@@ -1,16 +1,28 @@
+---
+title: Tipo de recurso ChartAreaFormat
+description: Encapsula las propiedades de formato del área del gráfico en general.
+ms.openlocfilehash: 1629faa007fa239e93c2e942af13570d4b46c488
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27085378"
+---
 # <a name="chartareaformat-resource-type"></a>Tipo de recurso ChartAreaFormat
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Encapsula las propiedades de formato del área del gráfico en general.
 
 
 ## <a name="methods"></a>Métodos
-None
+Ninguno
 
 ## <a name="properties"></a>Propiedades
 Ninguno
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Representa el formato de relleno de un objeto, que incluye información del formato de fondo. Solo lectura.|
 |font|[ChartFont](chartfont.md)|Representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) del objeto actual. Solo lectura.|

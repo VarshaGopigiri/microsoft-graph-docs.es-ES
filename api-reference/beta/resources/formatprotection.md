@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso FormatProtection
+description: Representa la protección de formato de un objeto range.
+ms.openlocfilehash: 5f2a4968b018a952b24bb18a75a4f6d5aff55b00
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27087745"
+---
 # <a name="formatprotection-resource-type"></a>Tipo de recurso FormatProtection
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa la protección de formato de un objeto range.
 
@@ -7,11 +19,11 @@ Representa la protección de formato de un objeto range.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get FormatProtection](../api/formatprotection_get.md) | [FormatProtection](formatprotection.md) |Lee las propiedades y relaciones del objeto formatProtection.|
-|[Update](../api/formatprotection_update.md) | [FormatProtection](formatprotection.md)    |Actualiza el objeto FormatProtection. |
+|[Get FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |Lee las propiedades y relaciones del objeto formatProtection.|
+|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |Actualiza el objeto FormatProtection. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |formulaHidden|boolean|Indica si Excel oculta la fórmula de las celdas del rango. Un valor null indica que el rango no tiene una configuración de fórmula oculta uniforme.|
 |locked|boolean|Indica si Excel bloquea las celdas del objeto. Un valor nulo indica que todo el rango no tiene una configuración de bloqueo uniforme.|

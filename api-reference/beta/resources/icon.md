@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso Icon
+description: Representa un icono de celda.
+ms.openlocfilehash: fd3e0682a7eb73dd4e3286e11d9f9680755db265
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27085172"
+---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa un icono de celda.
 
@@ -7,11 +19,11 @@ Representa un icono de celda.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon_get.md) | [Icon](icon.md) |Lee las propiedades y relaciones del objeto icon.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)    |Actualiza el objeto Icon. |
+|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Lee las propiedades y relaciones del objeto icon.|
+|[Update](../api/icon-update.md) | [Icon](icon.md)  |Actualiza el objeto Icon. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|int|Representa el índice del icono en el conjunto concreto.|
 |set|string|Representa el conjunto al que pertenece el icono. Valores posibles: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
