@@ -1,44 +1,68 @@
-# <a name="identityset-resource-type"></a>Tipo de recurso IdentitySet
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: IdentitySet
+ms.openlocfilehash: 71620da04ea9d7f67d69422ce175182d406d44f5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27086245"
+---
+# <a name="identityset-resource-type"></a>tipo de recurso identitySet
 
 El recurso **IdentitySet** es una colección de claves de recursos [identity](identity.md). Se usa para representar un conjunto de identidades asociadas a diversos eventos para un elemento, como _creado por_ o _última modificación_.
 
 ## <a name="json-representation"></a>Representación JSON
 
-Aquí tiene una representación JSON del recurso.
+La siguiente es una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "user", "device", "application" ],
-  "@odata.type": "microsoft.graph.identitySet"
-}-->
-
+  "@odata.type": "microsoft.graph.identitySet",
+  "optionalProperties": [
+    "application",
+    "applicationInstance",
+    "device",
+    "encrypted",
+    "guest",
+    "phone",
+    "user"
+  ],
+  "openType": true
+} -->
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "device": {"@odata.type": "microsoft.graph.identity"},
-  "user": {"@odata.type": "microsoft.graph.identity"}
+  "application": {"@odata.type": "#microsoft.graph.identity"},
+  "applicationInstance": {"@odata.type": "#microsoft.graph.identity"},
+  "device": {"@odata.type": "#microsoft.graph.identity"},
+  "encrypted": {"@odata.type": "#microsoft.graph.identity"},
+  "guest": {"@odata.type": "#microsoft.graph.identity"},
+  "phone": {"@odata.type": "#microsoft.graph.identity"},
+  "user": {"@odata.type": "#microsoft.graph.identity"}
 }
 ```
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad    | Tipo                    | Descripción                                            |
-|:------------|:------------------------|:-------------------------------------------------------|
-| application | [Identity](identity.md) | Opcional. Aplicación asociada a esta acción. |
-| Dispositivo      | [Identity](identity.md) | Opcional. Dispositivo asociado a esta acción.      |
-| usuario        | [Identity](identity.md) | Opcional. Usuario asociado a esta acción.        |
+| Propiedad    | Tipo                    | Descripción                                             |
+|:------------|:------------------------|:--------------------------------------------------------|
+| application | [Identity](identity.md) | Opcional. Aplicación asociada a esta acción.  |
+| Dispositivo      | [Identity](identity.md) | Opcional. Dispositivo asociado a esta acción.       |
+| phone       | [identity](identity.md) | Opcional. El número de teléfono asociado con esta acción. |
+| usuario        | [Identity](identity.md) | Opcional. Usuario asociado a esta acción.         |
 
 ## <a name="remarks"></a>Observaciones 
 
-Consulte [DriveItem](driveitem.md) para obtener información sobre el uso de recursos **IdentitySet**.
+Vea la [llamada](call.md) para el uso de recursos de **IdentitySet** .
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identitySet resource",
-  "keywords": "",
+  "description": "Identity set is a collection of identities",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/IdentitySet"
+} -->

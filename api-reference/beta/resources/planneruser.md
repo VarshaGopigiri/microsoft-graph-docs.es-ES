@@ -1,33 +1,46 @@
-<a id="planneruser-resource-type" class="xliff"></a>
-# Tipo de recurso plannerUser
+---
+title: Tipo de recurso plannerUser
+description: 'El recurso **plannerUser** proporciona acceso a los recursos del organizador para un usuario. '
+ms.openlocfilehash: 592a26daacd1bd6d0a780ca0180d3ec5a57b6eb1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27087236"
+---
+# <a name="planneruser-resource-type"></a>Tipo de recurso plannerUser
 
-El recurso **plannerUser** proporciona acceso a los recursos Planner de un [usuario](user.md). No contiene ninguna propiedad utilizable.
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+El recurso **plannerUser** proporciona acceso a los recursos de organizador para un [usuario](user.md). 
 
 
-<a id="methods" class="xliff"></a>
-## Métodos
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Enumerar planes](../api/planneruser_list_plans.md) |Colección [plannerPlan](plannerplan.md)| Obtenga una colección de objetos **plannerPlan**.|
-|[Enumerar tareas](../api/planneruser_list_tasks.md) |Colección [plannerTask](plannertask.md)| Obtenga una colección de objetos **plannerTask**.|
+|[Enumerar tareas](../api/planneruser-list-tasks.md) |Colección [plannerTask](plannertask.md)| Obtenga el [plannerTasks](plannertask.md) asignados al usuario.|
+|[Lista favoritePlans](../api/planneruser-list-favoriteplans.md) |Colección [plannerPlan](plannerplan.md)| Obtenga el [plannerPlans](plannerplan.md) marcados como favoritas por el usuario.|
+|[Lista recentPlans](../api/planneruser-list-recentplans.md) |Colección [plannerPlan](plannerplan.md)| Obtenga el [plannerPlans](plannerplan.md) visto recientemente por el usuario.|
+|[Update](../api/planneruser-update.md) | [plannerUser](planneruser.md)| Actualizar un objeto **plannerUser** . |
 
-<a id="properties" class="xliff"></a>
-## Propiedades
+
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura. Identificador del planenrUser|
+|id|String| Solo lectura. Identificador de la plannerUser|
+|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| Una colección que contiene las referencias a los planes de que el usuario ha marcado como favoritos.|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| Una colección que contiene referencias a los planes que se han visto recientemente por el usuario en las aplicaciones que admiten los planes de recientes.|
 
-<a id="relationships" class="xliff"></a>
-## Relaciones
+## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|plans|Colección [plannerPlan](plannerplan.md)| Solo lectura. Admite valores NULL. Devuelve las [plannerTasks](plannertask.md) asignadas al usuario.|
-|tasks|Colección [plannerTask](plannertask.md)| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) compartidos con el usuario.|
+|tasks|Colección [plannerTask](plannertask.md)| Solo lectura. Admite valores NULL. Devuelve las [plannerTasks](plannertask.md) asignadas al usuario.|
+|favoritePlans|Colección [plannerPlan](plannerplan.md)| Solo lectura. Admite valores NULL. Devuelve el [plannerPlans](plannerplan.md) que el usuario marcado como favoritos.|
+|recentPlans|Colección [plannerPlan](plannerplan.md)| Solo lectura. Admite valores NULL. Devuelve el [plannerPlans](plannerplan.md) que se han visto recientemente por el usuario en las aplicaciones que admiten los planes de recientes. |
 
-<a id="json-representation" class="xliff"></a>
-## Representación JSON
-Aquí tiene una representación JSON del recurso.
+## <a name="json-representation"></a>Representación JSON
+La siguiente es una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +52,9 @@ Aquí tiene una representación JSON del recurso.
 
 ```json
 {
-  "id": "String (identifier)"
+  "favoritePlanReferences": {"@odata.type": "microsoft.graph.plannerFavoritePlanReferenceCollection"},
+  "id": "String (identifier)",
+  "recentPlanReferences": {"@odata.type": "microsoft.graph.plannerRecentPlanReferenceCollection"}
 }
 
 ```

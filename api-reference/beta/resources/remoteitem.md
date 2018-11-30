@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: RemoteItem
+ms.openlocfilehash: 0eb418d5a3f1fb65f6f59bd7babf87bed1d440dc
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27083835"
+---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 El recurso **remoteItem** indica que un objeto [**driveItem**](driveitem.md) hace referencia a un elemento que existe en otra unidad. Este recurso proporciona los identificadores únicos de la unidad de origen y del elemento de destino.
 
@@ -28,7 +42,6 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -36,15 +49,15 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de la propiedad        | Tipo                                | Descripción                                                                                                                                                       |
+| Nombre de propiedad        | Tipo                                | Descripción                                                                                                                                                       |
 | :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| createdBy            | [IdentitySet](identityset.md)       | Identidad del usuario, el dispositivo y la aplicación que ha creado el elemento. Solo lectura.                                                                                  |
+| createdBy            | [IdentitySet](identityset.md)       | Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.                                                                                  |
 | createdDateTime      | Timestamp                           | Fecha y hora de creación del elemento. Solo lectura.                                                                                                                        |
-| archivo                 | [File](file.md)                     | Indica que el elemento remoto es un archivo. Solo lectura.                                                                                                              |
+| file                 | [File](file.md)                     | Indica que el elemento remoto es un archivo. Solo lectura.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Información sobre el elemento remoto del sistema de archivos local. Solo lectura.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indica que el elemento remoto es una carpeta. Solo lectura.                                                                                                            |
 | id                   | String                              | Identificador único del elemento remoto en su unidad. Solo lectura.                                                                                                    |
-| lastModifiedBy       | [IdentitySet](identityset.md)       | Identidad del usuario, el dispositivo y la aplicación que ha modificado por última vez el elemento. Solo lectura.                                                                            |
+| lastModifiedBy       | [IdentitySet](identityset.md)       | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Fecha y hora de la última modificación del elemento. Solo lectura.                                                                                                              |
 | name                 | String                              | Opcional. Nombre de archivo del elemento remoto. Solo lectura.                                                                                                                 |
 | paquete              | [Package](package.md)               | Si está presente, indica que este elemento es un paquete en lugar de una carpeta o archivo. Los paquetes se tratan como archivos en algunos contextos y como carpetas en otros. Solo lectura. |
@@ -52,7 +65,6 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
 | shared               | [shared](shared.md)                 | Indica que el elemento se ha compartido con otros usuarios y proporciona información sobre el estado del elemento compartido. Solo lectura.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Proporciona interoperabilidad entre elementos de OneDrive para la Empresa y SharePoint con el conjunto completo de identificadores de elementos. Solo lectura.                                          |
 | size                 | Int64                               | Tamaño del elemento remoto. Solo lectura.                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | Si el elemento actual también está disponible como una carpeta especial, se devuelve esta faceta. Solo lectura.                                                                     |
 | webDavUrl            | Url                                 | Dirección URL compatible con DAV del elemento.                                                                                                                                  |
 | webUrl               | Url                                 | Dirección URL que muestra el recurso en el explorador. Solo lectura.                                                                                                         |
 
@@ -60,10 +72,10 @@ Los objetos [**DriveItem**](driveitem.md) con una faceta **remoteItem** que no s
 
 Para obtener más información sobre las facetas de un objeto **driveItem**, consulte [driveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->

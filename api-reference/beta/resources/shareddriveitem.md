@@ -1,6 +1,20 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharedDriveItem
+ms.openlocfilehash: 44d8a7c2bab9f19ff7b7680aea2e2a88fc2ef245
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27083204"
+---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
-El recurso **sharedDriveItem** se devuelve al usar la API [Shares](../api/shares_get.md) para obtener acceso a un objeto [driveItem](driveitem.md) compartido.
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+El recurso **sharedDriveItem** se devuelve al usar la API [Shares](../api/shares-get.md) para obtener acceso a un objeto [driveItem](driveitem.md) compartido.
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -10,21 +24,24 @@ El recurso **sharedDriveItem** deriva de [**baseItem**](baseitem.md) y hereda la
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.sharedDriveItem"
 }-->
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "permission": { "@odata.type": "microsoft.graph.permission" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,29 +55,41 @@ El recurso **sharedDriveItem** deriva de [**baseItem**](baseitem.md) y hereda la
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo                                  | Descripción                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| elementos        | Collection([DriveItem](driveitem.md)) | Una colección de recursos **driveItem** compartidos. Esta colección no se puede enumerar, pero se puede acceder a los elementos mediante su identificador único.                                                                        |
-| root         | [DriveItem](driveitem.md)             | El objeto **driveItem** compartido de nivel superior. Si se comparte un único archivo, este elemento es el archivo. Si se comparte una carpeta, este elemento será la carpeta. Puede usar las facetas del elemento para determinar qué caso se aplica. |
-| driveItem    | [driveItem](driveitem.md)             | Un objeto **driveItem** para el recurso que se ha compartido.  Es idéntico a la propiedad **root**.                                                                                                             |
-| site         | [site](site.md)                       | Un recurso **site** que contiene el elemento que se ha compartido.                                                                                                                                                |
+| Nombre de la relación | Tipo                | Descripción
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem] | Usado para obtener acceso al recurso **driveItem** subyacente.
+| **list**          | [**list**][list]           | Usado para obtener acceso al recurso **list** subyacente.
+| **listItem**      | [**listItem**][listItem]   | Usado para obtener acceso al recurso **listItem** subyacente.
+| **permission**    | [**permiso**][permission] | Utilizado para tener acceso el **permiso** que representa el vínculo de uso compartido subyacente
+| **site**          | [**site**][site]           | Usado para obtener acceso al recurso **site** subyacente.
+
+O bien, para recursos **driveItem** compartidos de cuentas personales de OneDrive, también se pueden usar las siguientes relaciones.
+
+| Nombre de la relación | Tipo                         | Descripción
+| ------------------|:-----------------------------|:-----------------------------------
+| **items**         | Colección [**driveItem**][driveItem] | Todos los recursos driveItem que se incluyen en la raíz de uso compartido. Esta colección no se puede enumerar.
+| **driveItem**     | [**driveItem**][driveItem]            | Usado para obtener acceso al recurso **driveItem** subyacente.
+
+[driveItem]: driveitem.md
+[list]: list.md
+[listItem]: listitem.md
+[permission]: permission.md
+[site]: site.md
 
 ## <a name="methods"></a>Métodos
 
 | Método                                  | Ruta de acceso a REST                |
 | :-------------------------------------- | :----------------------- |
-| [Obtener el elemento compartido](../api/shares_get.md) | `GET /shares/{share-id}` |
+| [Obtener el elemento compartido](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

@@ -1,4 +1,16 @@
+---
+title: Trabajar con archivos en Microsoft Graph
+description: Puede utilizar Microsoft Graph para crear una aplicación que se conecte con archivos a través de las bibliotecas de documentos de OneDrive, OneDrive para la Empresa y SharePoint. Con Microsoft Graph puede crear una variedad de experiencias con archivos almacenados en Office 365, desde simplemente almacenar documentos de usuario a escenarios complejos de uso compartido de archivos.
+ms.openlocfilehash: 6b25f279fbbc6386e110647cc25e882f7a388220
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27085349"
+---
 # <a name="working-with-files-in-microsoft-graph"></a>Trabajar con archivos en Microsoft Graph
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Puede utilizar Microsoft Graph para crear una aplicación que se conecte con archivos a través de las bibliotecas de documentos de OneDrive, OneDrive para la Empresa y SharePoint. Con Microsoft Graph puede crear una variedad de experiencias con archivos almacenados en Office 365, desde simplemente almacenar documentos de usuario a escenarios complejos de uso compartido de archivos.
 
@@ -11,7 +23,7 @@ La mayor parte de la interacción con archivos se produce mediante la interacci�
 
 ```json
 {
-  "@content.downloadUrl":"http://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
+  "@content.downloadUrl":"https://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
   "createdDateTime": "2016-09-16T03:37:04.72Z",
   "cTag": "aYzpENDY0OEYwNkM5MUQ5RDNEITU0OTI3LjI1Ng",
   "eTag": "aRDQ2NDhGMDZDOTFEOUQzRCE1NDkyNy4w",
@@ -89,8 +101,8 @@ Para obtener más información acerca de cómo trabajar con carpetas compartidas
 
 ## <a name="sharing-and-permissions"></a>Uso compartido y permisos
 
-Una de las acciones más comunes en las bibliotecas de documentos de OneDrive y SharePoint es compartir contenido con otras personas. Microsoft Graph permite que su aplicación pueda crear [vínculos para compartir](../api/item_createLink.md), [agregar permisos y enviar invitaciones](../api/item_invite.md) a los elementos de una unidad.
+Una de las acciones más comunes en las bibliotecas de documentos de OneDrive y SharePoint es compartir contenido con otras personas. Microsoft Graph permite que su aplicación pueda crear [vínculos para compartir](../api/driveitem-createlink.md), [agregar permisos y enviar invitaciones](../api/driveitem-invite.md) a los elementos de una unidad.
 
-Microsoft Graph también permite que su aplicación pueda [acceder a contenido compartido](../api/shares_get.md) directamente desde un vínculo para compartir.
+Microsoft Graph también permite que su aplicación pueda [acceder a contenido compartido](../api/shares-get.md) directamente desde un vínculo para compartir.
 
  

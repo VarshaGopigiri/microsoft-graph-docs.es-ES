@@ -1,0 +1,131 @@
+---
+title: Get mailFolder
+description: Recupere las propiedades y las relaciones de un objeto de carpeta de mensajes.
+ms.openlocfilehash: 669ebca608d5df6532ee2f1b10a4217eecfb60d1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27085479"
+---
+# <a name="get-mailfolder"></a>Get mailFolder
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+Recupere las propiedades y las relaciones de un objeto de carpeta de mensajes.
+
+Hay dos escenarios donde una aplicación puede obtener la carpeta de correo de otro usuario:
+
+* Si la aplicación tiene permisos de aplicación, o bien,
+* Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de correo con ese usuario o, se le concede acceso delegado a ese usuario. Consulte los [Detalles y un ejemplo](/graph/outlook-share-messages-folders).
+
+
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Mail.Read, Mail.ReadWrite    |
+|Delegado (cuenta personal de Microsoft) | Mail.Read, Mail.ReadWrite    |
+|Aplicación | Mail.Read, Mail.ReadWrite |
+
+## <a name="http-request"></a>Solicitud HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}
+GET /users/{id | userPrincipalName}/mailFolders/{id}
+```
+
+## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
+Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
+
+## <a name="request-headers"></a>Encabezados de solicitud
+| Nombre       | Tipo | Descripción|
+|:-----------|:------|:----------|
+| Authorization  | string  | {token} de portador. Obligatorio. |
+
+## <a name="request-body"></a>Cuerpo de la solicitud
+No proporcione un cuerpo de solicitud para este método.
+
+## <a name="response"></a>Respuesta
+Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [mailFolder](../resources/mailfolder.md) en el cuerpo de la respuesta.
+
+## <a name="example-1"></a>Ejemplo 1
+#### <a name="request-1"></a>Solicitud 1
+Aquí tiene un ejemplo de la solicitud.
+<!-- {
+  "blockType": "request",
+  "name": "get_mailfolder"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+```
+
+#### <a name="response-1"></a>Respuesta 1
+Aquí tiene un ejemplo de la respuesta.
+ >**Nota:** el objeto de respuesta que se muestra aquí podría ser más cortos para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 179
+
+{
+    "id": "AAMkAGVmMDEzM",
+    "displayName": "Inbox",
+    "parentFolderId": "AAMkAGVmMDEzI",
+    "childFolderCount": 2,
+    "unreadItemCount": 59,
+    "totalItemCount": 60,
+    "wellKnownName": "inbox"
+}
+```
+
+## <a name="example-2"></a>Ejemplo 2
+#### <a name="request-2"></a>Solicitud 2
+El siguiente es un ejemplo de la carpeta de búsqueda de la solicitud.
+<!-- {
+  "blockType": "request",
+  "name": "get_mailSearchfolder"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+```
+
+#### <a name="response-2"></a>Respuesta 2
+Aquí tiene un ejemplo de la respuesta.
+ >**Nota:** el objeto de respuesta que se muestra aquí podría ser más cortos para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 179
+
+{
+    "id": "AAMkAGVmMDEzM",
+    "displayName": "Inbox",
+    "parentFolderId": "AAMkAGVmMDEzI",
+    "childFolderCount": 2,
+    "unreadItemCount": 59,
+    "totalItemCount": 60,
+    "wellKnownName": "inbox"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get mailFolder",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

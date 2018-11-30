@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartFont
+description: Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un objeto de gráfico.
+ms.openlocfilehash: a0aa3150cb6ad31b4ad635253fd6ae35647b5ff7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27087062"
+---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un objeto de gráfico.
 
@@ -7,18 +19,18 @@ Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fue
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Lee las propiedades y relaciones del objeto chartFont.|
-|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)    |Actualiza el objeto ChartFont. |
+|[Get ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |Lee las propiedades y relaciones del objeto chartFont.|
+|[Update](../api/chartfont-update.md) | [ChartFont](chartfont.md)   |Actualiza el objeto ChartFont. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |bold|boolean|Representa el estado de negrita de la fuente.|
 |color|string|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
 |italic|boolean|Representa el estado de cursiva de la fuente.|
 |name|string|Nombre de fuente (por ejemplo, "Calibri")|
 |Tamaño|Double|Tamaño de la fuente (por ejemplo, 11).|
-|Subrayado|string|Tipo de subrayado aplicado a la fuente. Valores posibles: `None`, `Single`.|
+|underline|string|Tipo de subrayado aplicado a la fuente. Valores posibles: `None`, `Single`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

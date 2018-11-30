@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso FilterCriteria
+description: Representa los criterios de filtrado que se aplican a una columna.
+ms.openlocfilehash: dbcc57ff940fec525b712eb11ac44209f5f8a4d2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27083840"
+---
 # <a name="filtercriteria-resource-type"></a>Tipo de recurso FilterCriteria
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa los criterios de filtrado que se aplican a una columna.
 
