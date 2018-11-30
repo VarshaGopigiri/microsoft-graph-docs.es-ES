@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Cuota
+ms.openlocfilehash: 54eb88bdc048c6b63bb6f2d0a23fb05023663ca7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029605"
+---
 # <a name="quota-resource-type"></a>Tipo de recurso Quota
 
 El recurso **quota** proporciona detalles sobre las limitaciones de espacio en un recurso [Drive](drive.md).
@@ -41,12 +53,14 @@ Aquí tiene una representación JSON del recurso.
 | `critical` | La cuota restante es inferior al 1 % del espacio total de cuota.                                                                                                                       |
 | `exceeded` | La cuota usada ha superado la cuota total. No se pueden agregar nuevos archivos ni carpetas en la unidad hasta que esté por debajo de la cantidad total de cuota o se adquiera más espacio de almacenamiento. |
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/quota.md:
+      Found potential enums in resource example that weren't defined in a table:(normal, nearing,critical,exceeded) are in resource, but () are in table"
+  ],
+  "tocPath": "Facets/Quota"
+} -->

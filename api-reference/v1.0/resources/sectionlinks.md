@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso sectionLinks
+description: Vínculos para abrir una sección de OneNote.
+ms.openlocfilehash: 4ca6221992c75f410839538d8080c084c8486903
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029653"
+---
 # <a name="sectionlinks-resource-type"></a>Tipo de recurso sectionLinks
 
 Vínculos para abrir una sección de OneNote.
@@ -22,7 +32,7 @@ Aquí tiene una representación JSON del recurso.
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Abre la sección en el cliente nativo de OneNote si está instalado.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Abre la sección en OneNote Online.|

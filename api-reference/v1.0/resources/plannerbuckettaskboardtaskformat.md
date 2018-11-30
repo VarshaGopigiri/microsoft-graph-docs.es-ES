@@ -1,38 +1,42 @@
-# Tipo de recurso plannerBucketTaskBoardTaskFormat
-<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerBucketTaskBoardTaskFormat
+description: El recurso **plannerBucketTaskBoardTaskFormat** representa la información usada para procesar una tarea correctamente en la vista Depósitos del panel de tareas (una vista organizada por tareas dentro de los depósitos a los que están asignadas). Cada task tendrá un objeto **plannerBucketTaskBoardTaskFormat** asociado.
+ms.openlocfilehash: 7fb15bf59b2c7ffc0a515baff7b3f0dda8be179f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029000"
+---
+# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Tipo de recurso plannerBucketTaskBoardTaskFormat
 
 El recurso **plannerBucketTaskBoardTaskFormat** representa la información usada para procesar una tarea correctamente en la vista Depósitos del panel de tareas (una vista organizada por tareas dentro de los depósitos a los que están asignadas). Cada [task](plannertask.md) tendrá un objeto **plannerBucketTaskBoardTaskFormat** asociado.
 
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Obtener plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leer las propiedades y las relaciones del objeto **plannerBucketTaskBoardTaskFormat**.|
-|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Actualizar el objeto **plannerBucketTaskBoardTaskFormat**. |
+|[Obtener plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leer las propiedades y las relaciones del objeto **plannerBucketTaskBoardTaskFormat**.|
+|[Update](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Actualizar el objeto **plannerBucketTaskBoardTaskFormat**. |
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Identificador del recurso. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
-|orderHint|Cadena|Sugerencia usada para ordenar tareas en la vista Depósito del panel de tareas. El formato se define tal como se describe [aquí](planner_order_hint_format.md).|
+|id|String| Solo lectura. Identificador del recurso. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
+|orderHint|String|Sugerencia usada para ordenar tareas en la vista Depósito del panel de tareas. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
 
-## Relaciones
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relaciones
 Ninguno
 
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerBucketTaskBoardTaskFormat"
 }-->
 

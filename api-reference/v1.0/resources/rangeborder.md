@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso RangeBorder
+description: Representa el borde de un objeto.
+ms.openlocfilehash: 30d5548ba867dc652c700985d65a6db01ce8bc99
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029634"
+---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
 
 Representa el borde de un objeto.
@@ -7,19 +17,19 @@ Representa el borde de un objeto.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder_get.md) | [RangeBorder](rangeborder.md) |Lee las propiedades y relaciones del objeto rangeBorder.|
-|[Update](../api/rangeborder_update.md) | [RangeBorder](rangeborder.md)    |Actualiza el objeto RangeBorder. |
-|[List](../api/rangeborder_list.md) | Colección [RangeBorder](rangeborder.md) |Obtiene la colección de objetos rangeBorder. |
-|[Itemat](../api/rangebordercollection_itemat.md)|[RangeBorder](rangeborder.md)|Obtiene un objeto de borde mediante su índice.|
+|[Get RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |Lee las propiedades y relaciones del objeto rangeBorder.|
+|[Update](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md) |Actualiza el objeto RangeBorder. |
+|[List](../api/rangeborder-list.md) | Colección de [WorkbookRangeBorder](rangeborder.md) |Obtiene la colección de objetos rangeBorder. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|Obtiene un objeto de borde mediante su índice.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |color|string|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
-|id|string|Representa el identificador de borde. Valores posibles: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Solo lectura.|
-|sideIndex|string|Valor constante que indica el lado específico del borde. Valores posibles: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Solo lectura.|
-|style|string|Una de las constantes de estilo de línea que especifica el estilo de línea del borde. Valores posibles: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
-|weight|string|Especifica el grosor del borde alrededor de un rango. Valores posibles: `Hairline`, `Thin`, `Medium`, `Thick`.|
+|id|string|Representa el identificador del borde. Los valores posibles son: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Solo lectura.|
+|sideIndex|string|Valor constante que indica el lado específico del borde. Los valores posibles son: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Solo lectura.|
+|style|string|Una de las constantes de estilo de línea que especifica el estilo de línea para el borde. Los valores posibles son: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
+|weight|string|Especifica el grosor del borde que rodea un rango. Los valores posibles son: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -29,12 +39,11 @@ Ninguno
 
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeBorder"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeBorder"
 }-->
 
 ```json

@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso patternedRecurrence
+description: Patrón e intervalo de periodicidad.
+ms.openlocfilehash: 10a90db032cd7461e28bc096fd6213df44f3ea45
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029602"
+---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
 
 Patrón e intervalo de periodicidad.
@@ -17,7 +27,7 @@ Aquí tiene una representación JSON del recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.patternedrecurrence"
+  "@odata.type": "microsoft.graph.patternedRecurrence"
 }-->
 
 ```json
