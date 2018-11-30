@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso settingValue
+description: Una configuración que representa un par nombre-valor.
+ms.openlocfilehash: b47c5c746117390cfd59db71d832928e482403b9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032673"
+---
 # <a name="settingvalue-resource-type"></a>Tipo de recurso settingValue
 
 Una configuración que representa un par nombre-valor.

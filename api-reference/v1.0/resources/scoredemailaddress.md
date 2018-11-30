@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso scoredEmailAddress
+description: Representa una dirección de correo electrónico con puntuación.
+ms.openlocfilehash: 9cdd33a6df9eefca0f7a00c5fe8b17832e0056d9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032670"
+---
 # <a name="scoredemailaddress-resource-type"></a>Tipo de recurso scoredEmailAddress
 
 Representa una dirección de correo electrónico con puntuación.
@@ -24,7 +34,7 @@ Aquí tiene una representación JSON del recurso.
 ```json
 {
   "address": "string",
-  "relevanceScore": 1024
+  "relevanceScore": 1024.0
 }
 ```
 
