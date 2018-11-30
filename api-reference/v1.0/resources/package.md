@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Paquete
+ms.openlocfilehash: 12ae750a0f4fbe0e951554308d4041928c31a16d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031510"
+---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 
 El recurso **Package** indica que un objeto DriveItem es el elemento de nivel superior en un "paquete" o una colección de elementos que deben tratarse como una colección en lugar de elementos individuales.
@@ -11,15 +23,17 @@ Los objetos DriveItem con la faceta **package** no incluyen una faceta **folder*
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
 ```json
 {
-  "type": "string"
+  "type": "oneNote"
 }
 ```
 
-| Nombre de propiedad | Tipo   | Descripción                                                                                                                                                                      |
-|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**      | string | Una cadena que indica el tipo de paquete. Mientras que `oneNote` es el único valor definido actualmente, debe esperar que se devuelvan otros tipos de paquetes y debe controlarlos en consecuencia. |
+## <a name="properties"></a>Propiedades
 
-## <a name="remarks"></a>Comentarios 
+| Nombre de la propiedad | Tipo   | Descripción                                                                                                                                                                      |
+|:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| type          | string | Una cadena que indica el tipo de paquete. Mientras `oneNote` es el único valor definido actualmente, deben esperar otros tipos de paquetes que se devolverá y controlarlas según corresponda. |
+
+## <a name="remarks"></a>Observaciones 
 
 Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
 
@@ -28,5 +42,6 @@ Para obtener más información sobre las facetas de un objeto DriveItem, consult
   "type": "#page.annotation",
   "description": "The Package facet indicates that an item is the root of a special collection of items that should be treated as a single unit.",
   "keywords": "package, facet, onenote",
-  "section": "documentation"
+  "section": "documentation",
+  "tocPath": "Facets/Package"
 } -->

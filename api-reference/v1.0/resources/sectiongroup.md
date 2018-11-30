@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso sectionGroup
+description: Un grupo de secciones en un bloc de notas de OneNote. Los grupos de secciones pueden contener secciones y grupos de secciones.
+ms.openlocfilehash: 4714d0d163e9ddd01373f50bf38fa0971da0609b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031050"
+---
 # <a name="sectiongroup-resource-type"></a>Tipo de recurso sectionGroup
 
 Un grupo de secciones en un bloc de notas de OneNote. Los grupos de secciones pueden contener secciones y grupos de secciones.
@@ -8,13 +18,14 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntityHierarchyModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSectionGroup",
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -39,7 +50,7 @@ Aquí tiene una representación JSON del recurso.
 |id|String|El identificador único del grupo de secciones. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el grupo de secciones. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|displayName|Cadena|El nombre del grupo de secciones.|
+|displayName|String|El nombre del grupo de secciones.|
 |sectionGroupsUrl|Cadena|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del grupo de secciones. Solo lectura.|
 |sectionsUrl|Cadena|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del grupo de secciones. Solo lectura.|
 |self|String|El punto de conexión donde puede obtener información detallada sobre el grupo de secciones. Solo lectura.|
@@ -50,17 +61,17 @@ Aquí tiene una representación JSON del recurso.
 |parentNotebook|[Notebook](notebook.md)|Bloc de notas que contiene el grupo de secciones. Solo lectura.|
 |parentSectionGroup|[SectionGroup](sectiongroup.md)|Grupo de secciones que contiene el grupo de secciones. Solo lectura.|
 |sectionGroups|Colección [SectionGroup](sectiongroup.md)|Grupos de secciones de la sección. Solo lectura. Admite valores NULL.|
-|sections|Colección [Section](section.md)|Secciones del grupo de secciones. Solo lectura. Admite valores NULL.|
+|sections|Colección de [OnenoteSection](section.md)|Secciones del grupo de secciones. Solo lectura. Admite valores NULL.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Obtener grupo de secciones](../api/sectiongroup_get.md) | [SectionGroup](sectiongroup.md) |Leer las propiedades y las relaciones del grupo de secciones.|
-|[Crear grupo de secciones](../api/sectiongroup_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crear un grupo de secciones publicándolo en el grupo de secciones especificado de la colección sectionGroups.|
-|[Enumerar grupos de secciones](../api/sectiongroup_list_sectiongroups.md) |Colección [SectionGroup](sectiongroup.md)| Obtener una colección de grupos de secciones en el grupo de secciones especificado.|
-|[Crear sección](../api/sectiongroup_post_sections.md) |[Section](section.md)| Crear una sección publicándola en el grupo de secciones especificado de la colección de secciones.|
-|[Enumerar secciones](../api/sectiongroup_list_sections.md) |Colección [Section](section.md)| Obtener una colección de secciones en el grupo de secciones especificado.|
+|[Obtener grupo de secciones](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |Leer las propiedades y las relaciones del grupo de secciones.|
+|[Crear grupo de secciones](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crear un grupo de secciones publicándolo en el grupo de secciones especificado de la colección sectionGroups.|
+|[Enumerar grupos de secciones](../api/sectiongroup-list-sectiongroups.md) |Colección [SectionGroup](sectiongroup.md)| Obtener una colección de grupos de secciones en el grupo de secciones especificado.|
+|[Crear sección](../api/sectiongroup-post-sections.md) |[OnenoteSection](section.md)| Crear una sección publicándola en el grupo de secciones especificado de la colección de secciones.|
+|[Enumerar secciones](../api/sectiongroup-list-sections.md) |Colección de [OnenoteSection](section.md)| Obtener una colección de secciones en el grupo de secciones especificado.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

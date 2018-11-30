@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso fileAttachment
+description: 'Un archivo (como un archivo de texto o un documento de Word) conectado a un evento, mensaje o post. El **contentBytes** '
+ms.openlocfilehash: 97c9b22c379b00fa76a9dee45389e57269e6fc20
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032034"
+---
 # <a name="fileattachment-resource-type"></a>Tipo de recurso fileAttachment
 
 Un archivo (como un archivo de texto o un documento de Word) adjunto a un evento, mensaje o publicación. La propiedad **contentBytes** contiene el contenido codificado en base64 del archivo.  
@@ -13,13 +23,13 @@ Derivadas de [attachment](attachment.md).
 
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Lea las propiedades y las relaciones del objeto fileAttachment.|
-|[Eliminar](../api/attachment_delete.md) | Ninguno |Elimine el objeto fileAttachment. |
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Lea las propiedades y las relaciones del objeto fileAttachment.|
+|[Eliminar](../api/attachment-delete.md) | Ninguno |Elimine el objeto fileAttachment. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|El contenido binario del archivo.|
+|contentBytes|Binario|El contenido del archivo codificado en base64.|
 |contentId|String|El identificador de los datos de adjuntos del almacén de Exchange.|
 |contentLocation|String|El identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de los datos adjuntos.|
 |contentType|String|El tipo de contenido de los datos adjuntos.|
@@ -39,6 +49,7 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
   "optionalProperties": [
 
   ],
