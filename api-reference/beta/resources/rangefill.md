@@ -1,28 +1,40 @@
-# <a name="rangefill-resource-type"></a>Tipo de recurso RangeFill
+---
+title: Tipo de recurso RangeFill
+description: Representa el fondo de un objeto de rango.
+ms.openlocfilehash: 11806d95900c6e4ea1d4bf6ce4f4800bf5f6f66b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27089980"
+---
+# <a name="rangefill-resource-type"></a><span data-ttu-id="4e68a-103">Tipo de recurso RangeFill</span><span class="sxs-lookup"><span data-stu-id="4e68a-103">RangeFill resource type</span></span>
 
-Representa el fondo de un objeto de rango.
+> <span data-ttu-id="4e68a-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="4e68a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4e68a-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="4e68a-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="4e68a-106">Representa el fondo de un objeto de rango.</span><span class="sxs-lookup"><span data-stu-id="4e68a-106">Represents the background of a range object.</span></span>
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="4e68a-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="4e68a-107">Methods</span></span>
 
-| Método           | Tipo de valor devuelto    |Descripción|
+| <span data-ttu-id="4e68a-108">Método</span><span class="sxs-lookup"><span data-stu-id="4e68a-108">Method</span></span>           | <span data-ttu-id="4e68a-109">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="4e68a-109">Return Type</span></span>    |<span data-ttu-id="4e68a-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="4e68a-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Lee las propiedades y relaciones del objeto rangeFill.|
-|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |Actualiza el objeto RangeFill. |
-|[Clear](../api/rangefill_clear.md)|None|Restablece el fondo del rango.|
+|[<span data-ttu-id="4e68a-111">Get RangeFill</span><span class="sxs-lookup"><span data-stu-id="4e68a-111">Get RangeFill</span></span>](../api/rangefill-get.md) | [<span data-ttu-id="4e68a-112">RangeFill</span><span class="sxs-lookup"><span data-stu-id="4e68a-112">RangeFill</span></span>](rangefill.md) |<span data-ttu-id="4e68a-113">Lee las propiedades y relaciones del objeto rangeFill.</span><span class="sxs-lookup"><span data-stu-id="4e68a-113">Read properties and relationships of rangeFill object.</span></span>|
+|[<span data-ttu-id="4e68a-114">Update</span><span class="sxs-lookup"><span data-stu-id="4e68a-114">Update</span></span>](../api/rangefill-update.md) | [<span data-ttu-id="4e68a-115">RangeFill</span><span class="sxs-lookup"><span data-stu-id="4e68a-115">RangeFill</span></span>](rangefill.md)   |<span data-ttu-id="4e68a-116">Actualiza el objeto RangeFill.</span><span class="sxs-lookup"><span data-stu-id="4e68a-116">Update RangeFill object.</span></span> |
+|[<span data-ttu-id="4e68a-117">Clear</span><span class="sxs-lookup"><span data-stu-id="4e68a-117">Clear</span></span>](../api/rangefill-clear.md)|<span data-ttu-id="4e68a-118">None</span><span class="sxs-lookup"><span data-stu-id="4e68a-118">None</span></span>|<span data-ttu-id="4e68a-119">Restablece el fondo del rango.</span><span class="sxs-lookup"><span data-stu-id="4e68a-119">Resets the range background.</span></span>|
 
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## <a name="properties"></a><span data-ttu-id="4e68a-120">Propiedades</span><span class="sxs-lookup"><span data-stu-id="4e68a-120">Properties</span></span>
+| <span data-ttu-id="4e68a-121">Propiedad</span><span class="sxs-lookup"><span data-stu-id="4e68a-121">Property</span></span>     | <span data-ttu-id="4e68a-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="4e68a-122">Type</span></span>   |<span data-ttu-id="4e68a-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="4e68a-123">Description</span></span>|
 |:---------------|:--------|:----------|
-|color|string|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
+|<span data-ttu-id="4e68a-124">color</span><span class="sxs-lookup"><span data-stu-id="4e68a-124">color</span></span>|<span data-ttu-id="4e68a-125">string</span><span class="sxs-lookup"><span data-stu-id="4e68a-125">string</span></span>|<span data-ttu-id="4e68a-126">Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").</span><span class="sxs-lookup"><span data-stu-id="4e68a-126">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")</span></span>|
 
-## <a name="relationships"></a>Relaciones
-Ninguno
+## <a name="relationships"></a><span data-ttu-id="4e68a-127">Relaciones</span><span class="sxs-lookup"><span data-stu-id="4e68a-127">Relationships</span></span>
+<span data-ttu-id="4e68a-128">Ninguno</span><span class="sxs-lookup"><span data-stu-id="4e68a-128">None</span></span>
 
 
-## <a name="json-representation"></a>Representación JSON
+## <a name="json-representation"></a><span data-ttu-id="4e68a-129">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="4e68a-129">JSON representation</span></span>
 
-Aquí tiene una representación JSON del recurso.
+<span data-ttu-id="4e68a-130">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="4e68a-130">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
