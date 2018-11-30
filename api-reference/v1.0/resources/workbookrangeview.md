@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso rangeView
+description: RangeView representa un conjunto de celdas visibles del intervalo primario.
+ms.openlocfilehash: e7a19464e52f694705f2e22795513110ae7cbd89
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028698"
+---
 # <a name="rangeview-resource-type"></a>Tipo de recurso rangeView
 RangeView representa un conjunto de celdas visibles del intervalo primario.
 
@@ -5,13 +15,14 @@ RangeView representa un conjunto de celdas visibles del intervalo primario.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[List rows](../api/workbookrangeview_list_rows.md) |Colección [workbookRangeView](workbookrangeview.md)| Obtenga una colección de objetos workbookRangeView.|
-|[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|Obtengaun elemento de vista de rango basándose en el índice.|
-|[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Devuelve el objeto de rango asociado a la vista de rango.|
+|[List rows](../api/workbookrangeview-list-rows.md) |Colección [workbookRangeView](workbookrangeview.md)| Obtenga una colección de objetos workbookRangeView.|
+|[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|Obtengaun elemento de vista de rango basándose en el índice.|
+|[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|Devuelve el objeto de rango asociado a la vista de rango.|
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
+|cellAddresses|Json|Representa las direcciones de celda
 |columnCount|Int32|Devuelve el número de columnas visibles. Solo lectura.|
 |formulas|Json|Representa la fórmula en notación de estilo A1. |
 |formulasLocal|Json|Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.    |
@@ -20,7 +31,7 @@ RangeView representa un conjunto de celdas visibles del intervalo primario.
 |numberFormat|Json|Representa el código de formato numérico de Excel para la celda especificada. Solo lectura. |
 |rowCount|Int32|Devuelve el número de filas visibles. Solo lectura.  |
 |text|Json|Valores de texto del rango especificado. El valor Text no dependerá del ancho de la celda. La sustitución del signo # que tiene lugar en la interfaz de usuario de Excel no afectará al valor de texto devuelto por la API. Solo lectura.    |
-|valueTypes|Json|Representa el tipo de datos de cada celda. Solo lectura. Los valores posibles son: Unknown, Empty, String, Integer, Double, Boolean, Error. |
+|valueTypes|Json|Representa el tipo de datos de cada celda. Solo lectura. Los valores posibles son: desconocido, vacío, String, Integer, Double, Boolean, Error. |
 |values|Json|Representa los valores sin formato de la vista del intervalo especificado. Los datos devueltos pueden ser de tipo cadena, número o booleano. La celda que contenga un error devolverá la cadena de error.   |
 
 ## <a name="relationships"></a>Relaciones
@@ -32,6 +43,7 @@ RangeView representa un conjunto de celdas visibles del intervalo primario.
 Aquí tiene una representación JSON del recurso.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->
@@ -42,7 +54,6 @@ Aquí tiene una representación JSON del recurso.
   "formulas": "Json",
   "formulasLocal": "Json",
   "formulasR1C1": "Json",
-  "id": "String (identifier)",
   "index": 1024,
   "numberFormat": "Json",
   "rowCount": 1024,

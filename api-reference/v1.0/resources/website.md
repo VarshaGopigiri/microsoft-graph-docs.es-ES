@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso website
+description: Representa un sitio web.
+ms.openlocfilehash: 14934aae418581f4c75c880be67bf51fd0bc293c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029132"
+---
 # <a name="website-resource-type"></a>Tipo de recurso website
 
 Representa un sitio web.
@@ -6,7 +16,7 @@ Representa un sitio web.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|type|String| Valores posibles: `other`, `home`, `work`, `blog`, `profile`.|
+|type|websiteType| Los valores posibles son: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|Dirección URL del sitio web.|
 |displayName|string|Nombre para mostrar del sitio web.|
 

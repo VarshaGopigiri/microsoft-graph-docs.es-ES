@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso dateTimeTimeZone
+description: Describe la fecha, la hora y la zona horaria de un momento dado.
+ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029021"
+---
 # <a name="datetimetimezone-resource-type"></a>Tipo de recurso dateTimeTimeZone
 
 Describe la fecha, la hora y la zona horaria de un momento dado.
@@ -5,8 +15,8 @@ Describe la fecha, la hora y la zona horaria de un momento dado.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|DateTime|String|Un único momento dado en una fecha combinada y la representación de tiempo (`<date>T<time>`).|
-|TimeZone|String|Uno de los siguientes nombres de zona horaria.|
+|dateTime|String|Un único momento dado en una fecha combinada y la representación de tiempo (`<date>T<time>`).|
+|timeZone|String|Uno de los siguientes nombres de zona horaria.|
 
 La propiedad _TimeZone_ puede establecerse en cualquiera de las zonas horarias compatibles con Windows, así como los nombres de zona horaria siguientes.
 
@@ -104,7 +114,7 @@ Asia/Damasco
 
 Africa/Johannesburg
 
-Europe/Kiev
+Europe/Kyiv (Kiev)
 
 Europe/Istanbul
 
@@ -138,7 +148,7 @@ Asia/Kabul
 
 Asia/Karachi
 
-Asia/Tashkent
+Asia/Toshkent (Tashkent)
 
 Asia/Kolkata
 
@@ -146,13 +156,13 @@ Asia/Colombo
 
 Asia/Kathmandu
 
-Asia/Almaty
+Asia/Astana (Almaty)
 
 Asia/Dhaka
 
 Asia/Yekaterinburg
 
-Asia/Rangoon
+Asia/Yangon (Rangoon)
 
 Asia/Bangkok
 

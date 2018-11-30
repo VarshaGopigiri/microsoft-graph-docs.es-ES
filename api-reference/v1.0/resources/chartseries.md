@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso ChartSeries
+description: Representa una serie de un gráfico.
+ms.openlocfilehash: 970a35511b1851e09c47257bf3f67d05228d4454
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029053"
+---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
 Representa una serie de un gráfico.
@@ -7,23 +17,23 @@ Representa una serie de un gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries_get.md) | [ChartSeries](chartseries.md) |Lee las propiedades y relaciones del objeto chartSeries.|
-|[Create ChartPoints](../api/chartseries_post_points.md) |[ChartPoints](chartpoint.md)| Crea un nuevo ChartPoints publicándolo en la colección points.|
-|[List points](../api/chartseries_list_points.md) |Colección [ChartPoints](chartpoint.md)| Obtiene la colección de objetos ChartPoints.|
-|[Update](../api/chartseries_update.md) | [ChartSeries](chartseries.md)    |Actualiza el objeto ChartSeries. |
-|[List](../api/chartseries_list.md) | Colección [ChartSeries](chartseries.md) |Obtiene la colección de objetos chartSeries. |
-|[Itemat](../api/chartseriescollection_itemat.md)|[ChartSeries](chartseries.md)|Recupera una serie en función de su posición en la colección.|
+|[Get ChartSeries](../api/chartseries-get.md) | [WorkbookChartSeries](chartseries.md) |Lee las propiedades y relaciones del objeto chartSeries.|
+|[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Crea un nuevo ChartPoints publicándolo en la colección points.|
+|[List points](../api/chartseries-list-points.md) |Colección [ChartPoints](chartpoint.md)| Obtiene la colección de objetos ChartPoints.|
+|[Update](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |Actualiza el objeto ChartSeries. |
+|[List](../api/chartseries-list.md) | Colección de [WorkbookChartSeries](chartseries.md) |Obtiene la colección de objetos chartSeries. |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Recupera una serie en función de su posición en la colección.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |name|string|Representa el nombre de una serie de un gráfico.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|format|[ChartSeriesFormat](chartseriesformat.md)|Representa el formato de una serie del gráfico, que incluye el formato de relleno y de línea. Solo lectura.|
-|points|Colección [ChartPoints](chartpoint.md)|Representa una colección de todos los puntos de la serie. Solo lectura.|
+|format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Representa el formato de una serie del gráfico, que incluye el formato de relleno y de línea. Solo lectura.|
+|points|Colección de [WorkbookChartPoint](chartpoint.md)|Representa una colección de todos los puntos de la serie. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -31,10 +41,11 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json
