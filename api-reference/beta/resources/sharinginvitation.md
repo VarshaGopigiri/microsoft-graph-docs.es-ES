@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingInvitation
+ms.openlocfilehash: ba909158ce0ba28b6af20b8dbff858c65f07cbe9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27089192"
+---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 El recurso **SharingInvitation** agrupa en una sola estructura los elementos de datos relacionados con invitaciones.
 
@@ -29,7 +43,7 @@ Aquí tiene una representación JSON del recurso
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | email          | String                        | Dirección de correo proporcionada para el destinatario de la invitación para compartir. Solo lectura.                                          |
 | invitedBy      | [identitySet](identityset.md) | Proporciona información sobre quién envió la invitación que creó este permiso, si esa información está disponible. Solo lectura. |
-| signInRequired | Booleano                       | Si `true` el destinatario de la invitación necesita iniciar sesión para obtener acceso al elemento compartido. Solo lectura.                     |
+| signInRequired | Boolean                       | Si `true` el destinatario de la invitación necesita iniciar sesión para obtener acceso al elemento compartido. Solo lectura.                     |
 
 ## <a name="remarks"></a>Comentarios 
 
@@ -40,8 +54,8 @@ Para obtener más información sobre las facetas de un objeto DriveItem, consult
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingInvitation resource",
-  "keywords": "",
+  "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->

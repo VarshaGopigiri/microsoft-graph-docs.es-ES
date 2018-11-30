@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartFill
+description: Representa el formato de relleno de un elemento de gráfico.
+ms.openlocfilehash: f24caa0f06d147ad1ab1f0c8d45cae71d5e619c2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27089956"
+---
 # <a name="chartfill-resource-type"></a>Tipo de recurso ChartFill
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa el formato de relleno de un elemento de gráfico.
 
@@ -7,14 +19,14 @@ Representa el formato de relleno de un elemento de gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill_clear.md)|None|Borra el color de relleno de un elemento de gráfico.|
-|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|None|Establece el formato de relleno de un elemento de gráfico en un color uniforme.|
+|[Clear](../api/chartfill-clear.md)|None|Borra el color de relleno de un elemento de gráfico.|
+|[Setsolidcolor](../api/chartfill-setsolidcolor.md)|None|Establece el formato de relleno de un elemento de gráfico en un color uniforme.|
 
 ## <a name="properties"></a>Propiedades
 Ninguno
 
 ## <a name="relationships"></a>Relaciones
-None
+Ninguno
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
