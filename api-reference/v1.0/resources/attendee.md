@@ -1,22 +1,33 @@
-# <a name="attendee-resource-type"></a><span data-ttu-id="75dba-101">Tipo de recurso attendee</span><span class="sxs-lookup"><span data-stu-id="75dba-101">attendee resource type</span></span>
+---
+title: Tipo de recurso attendee
+description: Asistente a un evento. Esto puede ser una persona o un recurso, como una sala de reuniones o equipamiento que se ha configurado como un recurso en el servidor Exchange del espacio empresarial.
+ms.openlocfilehash: 7c9040b563840c22eec1dd7456892fc7ff83ee4f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032715"
+---
+# <a name="attendee-resource-type"></a><span data-ttu-id="7cef9-104">Tipo de recurso attendee</span><span class="sxs-lookup"><span data-stu-id="7cef9-104">attendee resource type</span></span>
 
-<span data-ttu-id="75dba-102">Asistente a un evento.</span><span class="sxs-lookup"><span data-stu-id="75dba-102">An event attendee.</span></span>
+<span data-ttu-id="7cef9-105">Asistente a un evento.</span><span class="sxs-lookup"><span data-stu-id="7cef9-105">An event attendee.</span></span> <span data-ttu-id="7cef9-106">Esto puede ser una persona o un recurso, como una sala de reuniones o equipamiento que se ha configurado como un recurso en el servidor Exchange del espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="7cef9-106">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
 
-<span data-ttu-id="75dba-103">Derivadas de [attachment](attendeebase.md).</span><span class="sxs-lookup"><span data-stu-id="75dba-103">Derived from [attendeeBase](attendeebase.md).</span></span>
+<span data-ttu-id="7cef9-107">Derivadas de [attendeeBase](attendeebase.md).</span><span class="sxs-lookup"><span data-stu-id="7cef9-107">Derived from [attendeeBase](attendeebase.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="75dba-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="75dba-104">Properties</span></span>
-| <span data-ttu-id="75dba-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="75dba-105">Property</span></span>     | <span data-ttu-id="75dba-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="75dba-106">Type</span></span>   |<span data-ttu-id="75dba-107">Descripción</span><span class="sxs-lookup"><span data-stu-id="75dba-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7cef9-108">Propiedades</span><span class="sxs-lookup"><span data-stu-id="7cef9-108">Properties</span></span>
+| <span data-ttu-id="7cef9-109">Propiedad</span><span class="sxs-lookup"><span data-stu-id="7cef9-109">Property</span></span>     | <span data-ttu-id="7cef9-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="7cef9-110">Type</span></span>   |<span data-ttu-id="7cef9-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="7cef9-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="75dba-108">status</span><span class="sxs-lookup"><span data-stu-id="75dba-108">status</span></span>|[<span data-ttu-id="75dba-109">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="75dba-109">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="75dba-110">Respuesta del asistente (ninguna, aceptada, rechazada, etc.) para el evento y fecha y hora en que se envió la respuesta.</span><span class="sxs-lookup"><span data-stu-id="75dba-110">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
-|<span data-ttu-id="75dba-111">type</span><span class="sxs-lookup"><span data-stu-id="75dba-111">type</span></span>|<span data-ttu-id="75dba-112">String</span><span class="sxs-lookup"><span data-stu-id="75dba-112">String</span></span>|<span data-ttu-id="75dba-113">Tipo de asistente: `Required`, `Optional`, `Resource`.</span><span class="sxs-lookup"><span data-stu-id="75dba-113">The attendee type: `Required`, `Optional`, `Resource`.</span></span>|
-|<span data-ttu-id="75dba-114">emailAddress</span><span class="sxs-lookup"><span data-stu-id="75dba-114">emailAddress</span></span>|[<span data-ttu-id="75dba-115">emailAddress</span><span class="sxs-lookup"><span data-stu-id="75dba-115">emailAddress</span></span>](emailAddress.md)|<span data-ttu-id="75dba-116">Incluye el nombre y la dirección de SMTP del asistente.</span><span class="sxs-lookup"><span data-stu-id="75dba-116">Includes the name and SMTP address of the attendee.</span></span>|
+|<span data-ttu-id="7cef9-112">status</span><span class="sxs-lookup"><span data-stu-id="7cef9-112">status</span></span>|[<span data-ttu-id="7cef9-113">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="7cef9-113">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="7cef9-114">Respuesta del asistente (ninguna, aceptada, rechazada, etc.) para el evento y fecha y hora en que se envió la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7cef9-114">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
+|<span data-ttu-id="7cef9-115">type</span><span class="sxs-lookup"><span data-stu-id="7cef9-115">type</span></span>|<span data-ttu-id="7cef9-116">String</span><span class="sxs-lookup"><span data-stu-id="7cef9-116">String</span></span>|<span data-ttu-id="7cef9-117">Tipo de asistente: `required`, `optional`, `resource`.</span><span class="sxs-lookup"><span data-stu-id="7cef9-117">The attendee type: `required`, `optional`, `resource`.</span></span>|
+|<span data-ttu-id="7cef9-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="7cef9-118">emailAddress</span></span>|[<span data-ttu-id="7cef9-119">emailAddress</span><span class="sxs-lookup"><span data-stu-id="7cef9-119">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="7cef9-120">Incluye el nombre y la dirección de SMTP del asistente.</span><span class="sxs-lookup"><span data-stu-id="7cef9-120">Includes the name and SMTP address of the attendee.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="75dba-117">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="75dba-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7cef9-121">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="7cef9-121">JSON representation</span></span>
 
-<span data-ttu-id="75dba-118">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="75dba-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="7cef9-122">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="7cef9-122">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

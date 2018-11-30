@@ -3,19 +3,20 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
-ms.openlocfilehash: 80e41b379b9b4ce51a3ee6c910447a22f43356c3
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
-ms.translationtype: HT
+ms.openlocfilehash: 810554620e747d3160a6d8c74913518b8590c19d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031868"
 ---
-# <a name="textcolumn-resource-type"></a><span data-ttu-id="6beba-102">Tipo de recurso TextColumn</span><span class="sxs-lookup"><span data-stu-id="6beba-102">TextColumn resource type</span></span>
+# <a name="textcolumn-resource-type"></a><span data-ttu-id="a38e2-102">Tipo de recurso TextColumn</span><span class="sxs-lookup"><span data-stu-id="a38e2-102">TextColumn resource type</span></span>
 
-<span data-ttu-id="6beba-103">El recurso **TextColumn** en un recurso [columnDefinition](columnDefinition.md) indica que los valores de la columna son texto.</span><span class="sxs-lookup"><span data-stu-id="6beba-103">The **textColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are text.</span></span>
+<span data-ttu-id="a38e2-103">El recurso **TextColumn** en un recurso [columnDefinition](columndefinition.md) indica que los valores de la columna son texto.</span><span class="sxs-lookup"><span data-stu-id="a38e2-103">The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6beba-104">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="6beba-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a38e2-104">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="a38e2-104">JSON representation</span></span>
 
-<span data-ttu-id="6beba-105">A continuación se incluye una representación JSON de un recurso **TextColumn**.</span><span class="sxs-lookup"><span data-stu-id="6beba-105">Here is a JSON representation of a **baseItem** resource.</span></span>
+<span data-ttu-id="a38e2-105">A continuación se incluye una representación JSON de un recurso **TextColumn**.</span><span class="sxs-lookup"><span data-stu-id="a38e2-105">Here is a JSON representation of a **textColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.textColumn" } -->
 
 ```json
@@ -28,20 +29,24 @@ ms.lasthandoff: 09/28/2017
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="6beba-106">Propiedades</span><span class="sxs-lookup"><span data-stu-id="6beba-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a38e2-106">Propiedades</span><span class="sxs-lookup"><span data-stu-id="a38e2-106">Properties</span></span>
 
-| <span data-ttu-id="6beba-107">Nombre de la propiedad</span><span class="sxs-lookup"><span data-stu-id="6beba-107">Property name</span></span>                   | <span data-ttu-id="6beba-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="6beba-108">Type</span></span>   | <span data-ttu-id="6beba-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="6beba-109">Description</span></span>
-|:--------------------------------|:-------|:-----------------------------------------------
-| <span data-ttu-id="6beba-110">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="6beba-110">**allowMultipleLines**</span></span>          | <span data-ttu-id="6beba-111">string</span><span class="sxs-lookup"><span data-stu-id="6beba-111">string</span></span> | <span data-ttu-id="6beba-112">Si se permiten varias líneas de texto.</span><span class="sxs-lookup"><span data-stu-id="6beba-112">Whether to allow multiple lines of text.</span></span>
-| <span data-ttu-id="6beba-113">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="6beba-113">**appendChangesToExistingText**</span></span> | <span data-ttu-id="6beba-114">string</span><span class="sxs-lookup"><span data-stu-id="6beba-114">string</span></span> | <span data-ttu-id="6beba-115">Si las actualizaciones de esta columna deben reemplazar el texto existente o anexarse a este.</span><span class="sxs-lookup"><span data-stu-id="6beba-115">Whether updates to this column should replace existing text, or append to it.</span></span>
-| <span data-ttu-id="6beba-116">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="6beba-116">**linesForEditing**</span></span>             | <span data-ttu-id="6beba-117">int</span><span class="sxs-lookup"><span data-stu-id="6beba-117">int</span></span>    | <span data-ttu-id="6beba-118">El tamaño del cuadro de texto.</span><span class="sxs-lookup"><span data-stu-id="6beba-118">The size of the text box.</span></span>
-| <span data-ttu-id="6beba-119">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="6beba-119">**maxLength**</span></span>                   | <span data-ttu-id="6beba-120">int</span><span class="sxs-lookup"><span data-stu-id="6beba-120">int</span></span>    | <span data-ttu-id="6beba-121">El número máximo de caracteres del valor.</span><span class="sxs-lookup"><span data-stu-id="6beba-121">The maximum number of characters for the value.</span></span>
-| <span data-ttu-id="6beba-122">**textType**</span><span class="sxs-lookup"><span data-stu-id="6beba-122">**textType**</span></span>                    | <span data-ttu-id="6beba-123">string</span><span class="sxs-lookup"><span data-stu-id="6beba-123">string</span></span> | <span data-ttu-id="6beba-124">El tipo de texto que se almacena.</span><span class="sxs-lookup"><span data-stu-id="6beba-124">The type of text being stored.</span></span> <span data-ttu-id="6beba-125">Debe ser `plain` o `richText`</span><span class="sxs-lookup"><span data-stu-id="6beba-125">Must be one of `plain` or `richText`</span></span>
+| <span data-ttu-id="a38e2-107">Nombre de la propiedad</span><span class="sxs-lookup"><span data-stu-id="a38e2-107">Property name</span></span>                   | <span data-ttu-id="a38e2-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a38e2-108">Type</span></span>    | <span data-ttu-id="a38e2-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="a38e2-109">Description</span></span>
+|:--------------------------------|:--------|:---------------------------------
+| <span data-ttu-id="a38e2-110">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="a38e2-110">**allowMultipleLines**</span></span>          | <span data-ttu-id="a38e2-111">boolean</span><span class="sxs-lookup"><span data-stu-id="a38e2-111">boolean</span></span> | <span data-ttu-id="a38e2-112">Si se permiten varias líneas de texto.</span><span class="sxs-lookup"><span data-stu-id="a38e2-112">Whether to allow multiple lines of text.</span></span>
+| <span data-ttu-id="a38e2-113">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="a38e2-113">**appendChangesToExistingText**</span></span> | <span data-ttu-id="a38e2-114">boolean</span><span class="sxs-lookup"><span data-stu-id="a38e2-114">boolean</span></span> | <span data-ttu-id="a38e2-115">Si las actualizaciones de esta columna deben reemplazar el texto existente o anexarse a este.</span><span class="sxs-lookup"><span data-stu-id="a38e2-115">Whether updates to this column should replace existing text, or append to it.</span></span>
+| <span data-ttu-id="a38e2-116">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="a38e2-116">**linesForEditing**</span></span>             | <span data-ttu-id="a38e2-117">int32</span><span class="sxs-lookup"><span data-stu-id="a38e2-117">int32</span></span>   | <span data-ttu-id="a38e2-118">El tamaño del cuadro de texto.</span><span class="sxs-lookup"><span data-stu-id="a38e2-118">The size of the text box.</span></span>
+| <span data-ttu-id="a38e2-119">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="a38e2-119">**maxLength**</span></span>                   | <span data-ttu-id="a38e2-120">int32</span><span class="sxs-lookup"><span data-stu-id="a38e2-120">int32</span></span>   | <span data-ttu-id="a38e2-121">El número máximo de caracteres del valor.</span><span class="sxs-lookup"><span data-stu-id="a38e2-121">The maximum number of characters for the value.</span></span>
+| <span data-ttu-id="a38e2-122">**textType**</span><span class="sxs-lookup"><span data-stu-id="a38e2-122">**textType**</span></span>                    | <span data-ttu-id="a38e2-123">string</span><span class="sxs-lookup"><span data-stu-id="a38e2-123">string</span></span>  | <span data-ttu-id="a38e2-124">El tipo de texto que se almacena.</span><span class="sxs-lookup"><span data-stu-id="a38e2-124">The type of text being stored.</span></span> <span data-ttu-id="a38e2-125">Debe ser `plain` o `richText`</span><span class="sxs-lookup"><span data-stu-id="a38e2-125">Must be one of `plain` or `richText`</span></span>
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/textcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(plain,richText) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/TextColumn"
 } -->
