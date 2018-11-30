@@ -1,39 +1,49 @@
-# <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
+---
+title: Tipo de recurso calendarGroup
+description: Un grupo de calendarios de usuario.
+ms.openlocfilehash: 4ff927e4bcf8bcd54f3cfe6756895d59e43e44b4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27083253"
+---
+# <a name="calendargroup-resource-type"></a><span data-ttu-id="ddb1b-103">Tipo de recurso calendarGroup</span><span class="sxs-lookup"><span data-stu-id="ddb1b-103">calendarGroup resource type</span></span>
 
-Un grupo de calendarios.
+> <span data-ttu-id="ddb1b-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ddb1b-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-105">Use of these APIs in production applications is not supported.</span></span>
 
-**Nota** Outlook.com solo admite el grupo de calendarios predeterminado que es accesible mediante el acceso directo ../me/calendars. No se puede eliminar ese grupo de calendarios.
+<span data-ttu-id="ddb1b-106">Un grupo de calendarios de usuario.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-106">A group of user calendars.</span></span>
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="ddb1b-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="ddb1b-107">Methods</span></span>
 
-| Método       | Tipo de valor devuelto  |Descripción|
-|:---------------|:--------|:----------|
-|[List calendar groups](../api/user_list_calendargroups.md) |Colección [Calendar](calendar.md)| Obtiene los grupos de calendarios del usuario.|
-|[Create calendar group](../api/user_post_calendargroups.md) |[Calendar](calendar.md)| Crea un grupo de calendarios.|
-|[Get calendar group](../api/calendargroup_get.md) | [calendarGroup](calendargroup.md) |Lee las propiedades y relaciones de un objeto de grupo de calendarios.|
-|[Update](../api/calendargroup_update.md) | [calendarGroup](calendargroup.md) |Actualiza el objeto calendarGroup. |
-|[Delete](../api/calendargroup_delete.md) | None |Elimina el objeto calendarGroup. |
-|[List calendars](../api/calendargroup_list_calendars.md) |Colección [Calendar](calendar.md)| Muestra la lista de calendarios de un grupo de calendarios.|
-|[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Crea un calendario en un grupo de calendarios.|
+| <span data-ttu-id="ddb1b-108">Método</span><span class="sxs-lookup"><span data-stu-id="ddb1b-108">Method</span></span>                                                      | <span data-ttu-id="ddb1b-109">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="ddb1b-109">Return Type</span></span>                        | <span data-ttu-id="ddb1b-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="ddb1b-110">Description</span></span>                                                   |
+| :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
+| [<span data-ttu-id="ddb1b-111">List calendar groups</span><span class="sxs-lookup"><span data-stu-id="ddb1b-111">List calendar groups</span></span>](../api/user-list-calendargroups.md)  | <span data-ttu-id="ddb1b-112">Colección [Calendar](calendar.md)</span><span class="sxs-lookup"><span data-stu-id="ddb1b-112">[Calendar](calendar.md) collection</span></span> | <span data-ttu-id="ddb1b-113">Obtiene los grupos de calendarios del usuario.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-113">Get the user's calendar groups.</span></span>                               |
+| [<span data-ttu-id="ddb1b-114">Create calendar group</span><span class="sxs-lookup"><span data-stu-id="ddb1b-114">Create calendar group</span></span>](../api/user-post-calendargroups.md) | [<span data-ttu-id="ddb1b-115">Calendar</span><span class="sxs-lookup"><span data-stu-id="ddb1b-115">Calendar</span></span>](calendar.md)            | <span data-ttu-id="ddb1b-116">Crea un grupo de calendarios.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-116">Create a new calendar group.</span></span>                                  |
+| [<span data-ttu-id="ddb1b-117">Get calendar group</span><span class="sxs-lookup"><span data-stu-id="ddb1b-117">Get calendar group</span></span>](../api/calendargroup-get.md)           | [<span data-ttu-id="ddb1b-118">calendarGroup</span><span class="sxs-lookup"><span data-stu-id="ddb1b-118">calendarGroup</span></span>](calendargroup.md)  | <span data-ttu-id="ddb1b-119">Lee las propiedades y relaciones de un objeto de grupo de calendarios.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-119">Read properties and relationships of a calendar group object.</span></span> |
+| [<span data-ttu-id="ddb1b-120">Update</span><span class="sxs-lookup"><span data-stu-id="ddb1b-120">Update</span></span>](../api/calendargroup-update.md)                    | [<span data-ttu-id="ddb1b-121">calendarGroup</span><span class="sxs-lookup"><span data-stu-id="ddb1b-121">calendarGroup</span></span>](calendargroup.md)  | <span data-ttu-id="ddb1b-122">Actualiza el objeto calendarGroup.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-122">Update calendarGroup object.</span></span>                                  |
+| [<span data-ttu-id="ddb1b-123">Delete</span><span class="sxs-lookup"><span data-stu-id="ddb1b-123">Delete</span></span>](../api/calendargroup-delete.md)                    | <span data-ttu-id="ddb1b-124">None</span><span class="sxs-lookup"><span data-stu-id="ddb1b-124">None</span></span>                               | <span data-ttu-id="ddb1b-125">Elimina el objeto calendarGroup.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-125">Delete calendarGroup object.</span></span>                                  |
+| [<span data-ttu-id="ddb1b-126">List calendars</span><span class="sxs-lookup"><span data-stu-id="ddb1b-126">List calendars</span></span>](../api/calendargroup-list-calendars.md)    | <span data-ttu-id="ddb1b-127">Colección [Calendar](calendar.md)</span><span class="sxs-lookup"><span data-stu-id="ddb1b-127">[Calendar](calendar.md) collection</span></span> | <span data-ttu-id="ddb1b-128">Muestra la lista de calendarios de un grupo de calendarios.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-128">List calendars in a calendar group.</span></span>                           |
+| [<span data-ttu-id="ddb1b-129">Create Calendar</span><span class="sxs-lookup"><span data-stu-id="ddb1b-129">Create Calendar</span></span>](../api/calendargroup-post-calendars.md)   | [<span data-ttu-id="ddb1b-130">Calendar</span><span class="sxs-lookup"><span data-stu-id="ddb1b-130">Calendar</span></span>](calendar.md)            | <span data-ttu-id="ddb1b-131">Crea un calendario en un grupo de calendarios.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-131">Create a new Calendar in a calendar group.</span></span>                    |
 
+## <a name="properties"></a><span data-ttu-id="ddb1b-132">Propiedades</span><span class="sxs-lookup"><span data-stu-id="ddb1b-132">Properties</span></span>
 
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|name|String|Nombre del grupo.|
-|changeKey|String|Identifica la versión del grupo de calendarios. Cada vez que cambia el grupo de calendarios, cambia también ChangeKey. Permite que Exchange aplique los cambios a la versión correcta del objeto. Solo lectura.|
-|classId|Guid|Identificador de la clase. Solo lectura.|
-|id|String|Identificador único del grupo. Solo lectura.|
+| <span data-ttu-id="ddb1b-133">Propiedad</span><span class="sxs-lookup"><span data-stu-id="ddb1b-133">Property</span></span>  | <span data-ttu-id="ddb1b-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="ddb1b-134">Type</span></span>   | <span data-ttu-id="ddb1b-135">Descripción</span><span class="sxs-lookup"><span data-stu-id="ddb1b-135">Description</span></span>                                                                                                                                                                                               |
+| :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span data-ttu-id="ddb1b-136">name</span><span class="sxs-lookup"><span data-stu-id="ddb1b-136">name</span></span>      | <span data-ttu-id="ddb1b-137">String</span><span class="sxs-lookup"><span data-stu-id="ddb1b-137">String</span></span> | <span data-ttu-id="ddb1b-138">Nombre del grupo.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-138">The group name.</span></span>                                                                                                                                                                                           |
+| <span data-ttu-id="ddb1b-139">changeKey</span><span class="sxs-lookup"><span data-stu-id="ddb1b-139">changeKey</span></span> | <span data-ttu-id="ddb1b-140">String</span><span class="sxs-lookup"><span data-stu-id="ddb1b-140">String</span></span> | <span data-ttu-id="ddb1b-p102">Identifica la versión del grupo de calendarios. Cada vez que cambia el grupo de calendarios, cambia también ChangeKey. Permite que Exchange aplique los cambios a la versión correcta del objeto. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-p102">Identifies the version of the calendar group. Every time the calendar group is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.</span></span> |
+| <span data-ttu-id="ddb1b-145">classId</span><span class="sxs-lookup"><span data-stu-id="ddb1b-145">classId</span></span>   | <span data-ttu-id="ddb1b-146">Guid</span><span class="sxs-lookup"><span data-stu-id="ddb1b-146">Guid</span></span>   | <span data-ttu-id="ddb1b-p103">Identificador de la clase. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-p103">The class identifier. Read-only.</span></span>                                                                                                                                                                          |
+| <span data-ttu-id="ddb1b-149">id</span><span class="sxs-lookup"><span data-stu-id="ddb1b-149">id</span></span>        | <span data-ttu-id="ddb1b-150">String</span><span class="sxs-lookup"><span data-stu-id="ddb1b-150">String</span></span> | <span data-ttu-id="ddb1b-p104">Identificador único del grupo. Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-p104">The group's unique identifier. Read-only.</span></span>                                                                                                                                                                 |
 
-## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
-|:---------------|:--------|:----------|
-|calendars|Colección [calendar](calendar.md)|Calendarios del grupo de calendarios. Propiedad de navegación. Solo lectura. Admite valores NULL.|
+## <a name="relationships"></a><span data-ttu-id="ddb1b-153">Relaciones</span><span class="sxs-lookup"><span data-stu-id="ddb1b-153">Relationships</span></span>
 
+| <span data-ttu-id="ddb1b-154">Relación</span><span class="sxs-lookup"><span data-stu-id="ddb1b-154">Relationship</span></span> | <span data-ttu-id="ddb1b-155">Tipo</span><span class="sxs-lookup"><span data-stu-id="ddb1b-155">Type</span></span>                               | <span data-ttu-id="ddb1b-156">Descripción</span><span class="sxs-lookup"><span data-stu-id="ddb1b-156">Description</span></span>                                                                    |
+| :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
+| <span data-ttu-id="ddb1b-157">calendars</span><span class="sxs-lookup"><span data-stu-id="ddb1b-157">calendars</span></span>    | <span data-ttu-id="ddb1b-158">Colección [calendar](calendar.md)</span><span class="sxs-lookup"><span data-stu-id="ddb1b-158">[Calendar](calendar.md) collection</span></span> | <span data-ttu-id="ddb1b-p105">Calendarios del grupo de calendarios. Propiedad de navegación. Solo lectura. Admite valores NULL.</span><span class="sxs-lookup"><span data-stu-id="ddb1b-p105">The calendars in the calendar group. Navigation property. Read-only. Nullable.</span></span> |
 
-## <a name="json-representation"></a>Representación JSON
+## <a name="json-representation"></a><span data-ttu-id="ddb1b-163">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="ddb1b-163">JSON representation</span></span>
 
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="ddb1b-164">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="ddb1b-164">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,12 +61,11 @@ Aquí tiene una representación JSON del recurso
   "id": "string (identifier)",
   "name": "string"
 }
-
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!-- {
   "type": "#page.annotation",
   "description": "calendarGroup resource",
