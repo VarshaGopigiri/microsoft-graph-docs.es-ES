@@ -1,9 +1,21 @@
+---
+title: Tipo de recurso FilterDatetime
+description: Representa cómo se filtra una fecha cuando se filtran valores.
+ms.openlocfilehash: d3cb0df48a1116a64a72413aa64cabdec46da6d9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27087337"
+---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa cómo se filtra una fecha cuando se filtran valores.
 
-## <a name="properties"></a>Properties
-| Propiedad       | Tipo    |Descripción|
+## <a name="properties"></a>Propiedades
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |fecha|string|La fecha en formato ISO8601 usada para filtrar los datos.|
 |specificity|string|El grado de especificidad de la fecha que se usará para mantener datos. Por ejemplo, si la fecha es 02-04-2005 y la especificidad se establece en "mes", la operación de filtrado conservará todas las filas con fecha de abril de 2009. Valores posibles: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|

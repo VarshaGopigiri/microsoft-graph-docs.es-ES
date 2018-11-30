@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso onenoteOperationError
+description: Error de una operación de OneNote que no se pudo completar.
+ms.openlocfilehash: 3e09bd4b4ec0a8fc36113c278ebe7cab25392ecf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028986"
+---
 # <a name="onenoteoperationerror-resource-type"></a>Tipo de recurso onenoteOperationError
 
 Error de una operación de OneNote que no se pudo completar.
@@ -22,7 +32,7 @@ Aquí tiene una representación JSON del recurso.
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |código|string|Código de error.|
 |message|string|Mensaje de error.|

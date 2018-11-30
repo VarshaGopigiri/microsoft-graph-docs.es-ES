@@ -1,0 +1,46 @@
+---
+title: tipo de recurso educationIdentityMatchingConfiguration
+description: Define la configuración para que coincidan con las identidades de perfil de datos de school. Estas identidades incluyen estudiantes y profesores. En función de esta configuración, los usuarios se actualizará en el directorio.
+ms.openlocfilehash: b189735340c121a56c48ae21518989cf8e1634f9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27090286"
+---
+## <a name="educationidentitymatchingconfiguration-resource-type"></a>tipo de recurso educationIdentityMatchingConfiguration
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+Define la configuración para que coincidan con las identidades de perfil de datos de school. Estas identidades incluyen estudiantes y profesores. En función de esta configuración, los usuarios se actualizará en el directorio.
+
+> **Nota:** Ningún usuario se crea cuando se selecciona este recurso.
+
+## <a name="properties"></a>Propiedades
+
+| Propiedad | Tipo | Descripción |
+|:-|:-|:-|
+| **matchingOptions** | colección de [educationIdentityMatchingOptions](educationidentitymatchingoptions.md) | Asignación entre la cuenta de usuario y las opciones para usar para identificar de forma única al usuario que actualice. |
+
+## <a name="json-representation"></a>Representación JSON
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "#microsoft.graph.educationIdentityMatchingConfiguration"
+}-->
+
+```json
+{
+    "@odata.type": "#microsoft.graph.educationIdentityMatchingConfiguration",
+    "matchingOptions": [
+        {
+            "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+            "sourcePropertyName": "String",
+            "targetPropertyName": "String",
+            "targetDomain": "String"
+        }
+    ]
+}
+```

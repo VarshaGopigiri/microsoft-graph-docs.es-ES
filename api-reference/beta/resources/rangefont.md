@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso RangeFont
+description: Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un objeto.
+ms.openlocfilehash: fc1f3e35bb2ea612dd462d97075ad9757e27bf22
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27083790"
+---
 # <a name="rangefont-resource-type"></a>Tipo de recurso RangeFont
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un objeto.
 
@@ -7,11 +19,11 @@ Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fue
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Lee las propiedades y relaciones del objeto rangeFont.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)    |Actualiza el objeto RangeFont. |
+|[Get RangeFont](../api/rangefont-get.md) | [RangeFont](rangefont.md) |Lee las propiedades y relaciones del objeto rangeFont.|
+|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |Actualiza el objeto RangeFont. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |bold|boolean|Representa el estado de negrita de la fuente.|
 |color|string|Representación del código de color HTML del color del texto. Por ejemplo, #FF0000 representa el rojo.|
