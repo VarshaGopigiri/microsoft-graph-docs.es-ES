@@ -1,11 +1,39 @@
-<span data-ttu-id="fa3c1-p103">Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) propiedad del grupo.</span><span class="sxs-lookup"><span data-stu-id="fa3c1-p103">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>| Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) propiedad del grupo.|
+---
+title: Tipo de recurso plannerGroup
+description: El recurso **plannerGroup** proporciona acceso a los recursos de organizador para un grupo. No contiene todas las propiedades utilizables.
+ms.openlocfilehash: 3a2bb9cfd90a36f6b0a2148e0d789ac97b2199fb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27031043"
+---
+# <a name="plannergroup-resource-type"></a><span data-ttu-id="9a73c-104">Tipo de recurso plannerGroup</span><span class="sxs-lookup"><span data-stu-id="9a73c-104">plannerGroup resource type</span></span>
 
-## <span data-ttu-id="fa3c1-128">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="fa3c1-128">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
-<span data-ttu-id="fa3c1-129">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="fa3c1-129">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9a73c-p102">El recurso **plannerGroup** proporciona acceso a los recursos Planner de un [grupo](group.md). No contiene ninguna propiedad utilizable.</span><span class="sxs-lookup"><span data-stu-id="9a73c-p102">The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="9a73c-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="9a73c-107">Methods</span></span>
+
+| <span data-ttu-id="9a73c-108">Método</span><span class="sxs-lookup"><span data-stu-id="9a73c-108">Method</span></span>           | <span data-ttu-id="9a73c-109">Tipo de valor devuelto</span><span class="sxs-lookup"><span data-stu-id="9a73c-109">Return Type</span></span>    |<span data-ttu-id="9a73c-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="9a73c-110">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="9a73c-111">Enumerar planes</span><span class="sxs-lookup"><span data-stu-id="9a73c-111">List plans</span></span>](../api/plannergroup-list-plans.md) |<span data-ttu-id="9a73c-112">Colección [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="9a73c-112">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="9a73c-113">Obtenga una colección de objetos **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="9a73c-113">Get a **plannerPlan** object collection.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="9a73c-114">Propiedades</span><span class="sxs-lookup"><span data-stu-id="9a73c-114">Properties</span></span>
+| <span data-ttu-id="9a73c-115">Propiedad</span><span class="sxs-lookup"><span data-stu-id="9a73c-115">Property</span></span>     | <span data-ttu-id="9a73c-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="9a73c-116">Type</span></span>   |<span data-ttu-id="9a73c-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="9a73c-117">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="9a73c-118">id</span><span class="sxs-lookup"><span data-stu-id="9a73c-118">id</span></span>|<span data-ttu-id="9a73c-119">Cadena</span><span class="sxs-lookup"><span data-stu-id="9a73c-119">String</span></span>| <span data-ttu-id="9a73c-p103">Solo lectura. Identificador del **plannerGroup**</span><span class="sxs-lookup"><span data-stu-id="9a73c-p103">Read-only. Identifier of the **plannerGroup**</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="9a73c-122">Relaciones</span><span class="sxs-lookup"><span data-stu-id="9a73c-122">Relationships</span></span>
+| <span data-ttu-id="9a73c-123">Relación</span><span class="sxs-lookup"><span data-stu-id="9a73c-123">Relationship</span></span> | <span data-ttu-id="9a73c-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="9a73c-124">Type</span></span>   |<span data-ttu-id="9a73c-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="9a73c-125">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="9a73c-126">plans</span><span class="sxs-lookup"><span data-stu-id="9a73c-126">plans</span></span>|<span data-ttu-id="9a73c-127">Colección [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="9a73c-127">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="9a73c-p104">Solo lectura. Admite valores NULL. Devuelve los [plannerPlans](plannerplan.md) propiedad del grupo.</span><span class="sxs-lookup"><span data-stu-id="9a73c-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="9a73c-131">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="9a73c-131">JSON representation</span></span>
+<span data-ttu-id="9a73c-132">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="9a73c-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
