@@ -1,8 +1,23 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+ms.openlocfilehash: 2c316119aeac5208a77f00e04fefcdd2a34cdd7d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27088149"
+---
 # <a name="specialfolder-resource-type"></a>Tipo de recurso SpecialFolder
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 El recurso **SpecialFolder** agrupa en una sola estructura los elementos de datos relacionados con carpetas especiales.
 
-Si un objeto **DriveItem** tiene una faceta **specialFolder** que no es null, el elemento representa una carpeta especial (con nombre). Se puede acceder a las carpetas especiales directamente a través de la [colección de carpetas especiales](../api/drive_special.md).
+Si un objeto **DriveItem** tiene una faceta **specialFolder** que no es NULL, el elemento representa una carpeta especial (con nombre).
+Se puede obtener acceso a las carpetas especiales directamente a través de la [colección de carpetas especiales](../api/drive-get-specialfolder.md).
 
 Las carpetas especiales proporcionan alias simples para acceder a carpetas conocidas sin necesidad de buscar la carpeta por su ruta (que requeriría localización) o hacer referencia a la carpeta con un identificador. Si una carpeta especial cambia de nombre o se mueve a otra ubicación de la unidad, esta sintaxis seguirá devolviendo esa carpeta.
 
@@ -52,8 +67,8 @@ Para obtener más información sobre las facetas de un objeto DriveItem, consult
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->

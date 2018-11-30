@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartDataLabels
+description: Representa una colección de todas las etiquetas de datos en un punto del gráfico.
+ms.openlocfilehash: d226c5edb3fecc3a2e27fae32060f786f790d7e7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27088353"
+---
 # <a name="chartdatalabels-resource-type"></a>Tipo de recurso ChartDataLabels
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa una colección de todas las etiquetas de datos en un punto del gráfico.
 
@@ -7,11 +19,11 @@ Representa una colección de todas las etiquetas de datos en un punto del gráfi
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels_get.md) | [ChartDataLabels](chartdatalabels.md) |Lee las propiedades y relaciones del objeto chartDataLabels.|
-|[Update](../api/chartdatalabels_update.md) | [ChartDataLabels](chartdatalabels.md)    |Actualiza el objeto ChartDataLabels. |
+|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Lee las propiedades y relaciones del objeto chartDataLabels.|
+|[Update](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |Actualiza el objeto ChartDataLabels. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |position|string|Valor DataLabelPosition que representa la posición de la etiqueta de datos. Valores posibles: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |separator|string|Cadena que representa el separador empleado para las etiquetas de datos de un gráfico.|
@@ -23,7 +35,7 @@ Representa una colección de todas las etiquetas de datos en un punto del gráfi
 |showValue|boolean|Valor booleano que representa si el valor de la etiqueta de datos es visible o no.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |format|[ChartDataLabelFormat](chartdatalabelformat.md)|Representa el formato de las etiquetas de datos del gráfico, que incluye el formato de relleno y de fuente. Solo lectura.|
 

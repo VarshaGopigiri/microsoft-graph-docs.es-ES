@@ -1,9 +1,21 @@
+---
+title: Tipo de recurso SortField
+description: Representa una condición en una operación de ordenación.
+ms.openlocfilehash: bb5915e9d9637912b97c0425819acd15a6ed40ca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27088903"
+---
 # <a name="sortfield-resource-type"></a>Tipo de recurso SortField
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa una condición en una operación de ordenación.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |ascending|boolean|Representa si la ordenación se realiza en orden ascendente.|
 |color|string|Representa el color que es el destino de la condición si la ordenación se realiza según la fuente o el color de celda.|
@@ -12,9 +24,9 @@ Representa una condición en una operación de ordenación.
 |sortOn|string|Representa el tipo de ordenación de esta condición. Valores posibles: `Value`, `CellColor`, `FontColor`, `Icon`.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|icon|[Icon](icon.md)|Representa el icono que es el destino de la condición si la ordenación se realiza según el icono de la celda.|
+|icono|[Icon](icon.md)|Representa el icono que es el destino de la condición si la ordenación se realiza según el icono de la celda.|
 
 ## <a name="json-representation"></a>Representación JSON
 

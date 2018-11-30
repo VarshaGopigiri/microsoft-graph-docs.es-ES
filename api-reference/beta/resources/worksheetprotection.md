@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso WorksheetProtection
+description: Representa la protección de un objeto de hoja.
+ms.openlocfilehash: 8886117df669201a0c8a6f9fda1df18bb47cc4a4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27090436"
+---
 # <a name="worksheetprotection-resource-type"></a>Tipo de recurso WorksheetProtection
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa la protección de un objeto de hoja.
 
@@ -7,19 +19,19 @@ Representa la protección de un objeto de hoja.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorksheetProtection](worksheetprotection.md) |Lee las propiedades y relaciones del objeto worksheetProtection.|
-|[Protect](../api/worksheetprotection_protect.md)|Ninguno|Proteger una hoja de cálculo. Produce una excepción si se ha protegido la hoja de cálculo.|
-|[Unprotect](../api/worksheetprotection_unprotect.md)|None|Desprotege una hoja de cálculo.|
+|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |Lee las propiedades y relaciones del objeto worksheetProtection.|
+|[Protect](../api/worksheetprotection-protect.md)|Ninguno|Proteger una hoja de cálculo. Produce una excepción si se ha protegido la hoja de cálculo.|
+|[Unprotect](../api/worksheetprotection-unprotect.md)|None|Desprotege una hoja de cálculo.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |protected|boolean|Indica si la hoja de cálculo está protegida.  Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Opciones de protección de la hoja. Solo lectura.|
+|opciones|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Opciones de protección de la hoja. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 

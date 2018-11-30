@@ -1,17 +1,28 @@
+---
+title: Tipo de recurso verifiedDomain
+description: Especifica un dominio para un inquilino. La propiedad **verifiedDomains** de la entidad organization es una colección de **VerifiedDomain**.
+ms.openlocfilehash: 810b5fea0fbaf82eeb452c0f5c6032679590ff49
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27088433"
+---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Especifica un dominio para un inquilino. La propiedad **verifiedDomains** de la entidad [organization](organization.md) es una colección de **VerifiedDomain**.
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |capabilities|String|Por ejemplo, "Email", "OfficeCommunicationsOnline".|
 |isDefault|Boolean|                **true** si se trata del dominio predeterminado asociado al inquilino; de lo contrario, **false**.            |
 |isInitial|Boolean|**true** si se trata del dominio inicial asociado al inquilino; de lo contrario, **false**.|
 |name|String|Nombre del dominio; por ejemplo, "contoso.onmicrosoft.com".|
 |type|String|Por ejemplo, "Administrado".|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

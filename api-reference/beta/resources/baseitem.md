@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: BaseItem
+ms.openlocfilehash: d70a75be0be4d7ecbd010288cb313b8394736932
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27091082"
+---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 El recurso **baseItem** es un recurso abstracto que contiene un conjunto común de propiedades compartidas entre varios tipos de recursos. Recursos derivados de **baseItem**:
 
@@ -45,9 +59,9 @@ A continuación se incluye una representación JSON del recurso **baseItem**.
 | lastModifiedDateTime | dateTimeOffset    | Fecha y hora de la última modificación del elemento. Solo lectura.                                   |
 | name                 | string            | Nombre del elemento. Lectura y escritura.                                                      |
 | parentReference      | [itemReference][] | Información primaria, si el elemento tiene un elemento primario. Lectura y escritura.                              |
-| webUrl               | string (URL)      | Dirección URL que muestra el recurso en el explorador. Solo lectura.                              |
+| webUrl               | string (url)      | Dirección URL que muestra el recurso en el explorador. Solo lectura.                              |
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
 
 ## <a name="remarks"></a>Observaciones
@@ -61,8 +75,5 @@ El tipo `baseItem` no debe utilizarse directamente.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->
