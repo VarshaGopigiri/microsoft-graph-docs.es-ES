@@ -1,19 +1,29 @@
-# Tipo de recurso Contract
-<a id="contract-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso Contract
+description: Representa una asociación existente que tiene el espacio empresarial asociado con un espacio empresarial del cliente.
+ms.openlocfilehash: 7465a54c735b7c1e6f9d5ecb8bf79420b8de45c3
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27090342"
+---
+# <a name="contract-resource-type"></a>Tipo de recurso Contract
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
 Representa una asociación existente que tiene el espacio empresarial asociado con un espacio empresarial del cliente.
 
 > **Importante:** Solo existe en los inquilinos asociados. Los inquilinos asociados son los inquilinos de Azure AD que pertenecen a los socios de Microsoft que forman parte de los programas [Proveedor de soluciones en la nube de Microsoft](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication o Microsoft Advisor.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de valor devuelto | Descripción |
 |:---------------|:--------|:----------|
-|[Obtener contrato](../api/contract_get.md) | Contrato |Lea las propiedades de un objeto de un contrato específico. |
-|[Enumerar contratos](../api/contract_list.md) | Colección de contratos | Lista de contratos de los inquilinos asociados. |
+|[Obtener contrato](../api/contract-get.md) | Contrato |Lea las propiedades de un objeto de un contrato específico. |
+|[Enumerar contratos](../api/contract-list.md) | Colección de contratos | Lista de contratos de los inquilinos asociados. |
 
-## Propiedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propiedades
 | Propiedad   | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |contractType|Cadena|Tipo de contrato.<br><br>Los valores posibles son:<br> *SyndicationPartner* - socio que tan solo revende y administra O365 e Intune para este cliente. Revenden y dan soporte a sus clientes.<br> *BreadthPartner*: socio que tiene la capacidad de proporcionar soporte administrativo a este cliente. En cambio, no se le permite revender a los clientes.<br>*ResellerPartner*: socio que es similar a un socio de distribución ("syndication partner"), salvo que el socio no tenga acceso exclusivo a un inquilino. En el caso de la distribución, el cliente no puede comprar suscripciones adicionales directas de Microsoft u otros socios.|
@@ -22,13 +32,11 @@ Representa una asociación existente que tiene el espacio empresarial asociado c
 |displayName|String|Una copia del nombre que se muestra del inquilino del cliente. La copia se realiza cuando se establece la asociación con el cliente. No se actualiza automáticamente si el nombre que se muestra del inquino del cliente cambia.|
 |id|String| El identificador único del socio. Clave, solo lectura. |
 
-## Relaciones
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relaciones
 Ninguno
 
 
-## Representación JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {

@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartTitle
+description: Representa un objeto de título de gráfico de un gráfico.
+ms.openlocfilehash: ce2091c0cbd2435d96a1a931f7e46d6e2b8fb920
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27090704"
+---
 # <a name="charttitle-resource-type"></a>Tipo de recurso ChartTitle
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa un objeto de título de gráfico de un gráfico.
 
@@ -7,18 +19,18 @@ Representa un objeto de título de gráfico de un gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Lee las propiedades y relaciones del objeto chartTitle.|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |Actualiza el objeto ChartTitle. |
+|[Get ChartTitle](../api/charttitle-get.md) | [ChartTitle](charttitle.md) |Lee las propiedades y relaciones del objeto chartTitle.|
+|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |Actualiza el objeto ChartTitle. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |overlay|boolean|Valor booleano que representa si el título del gráfico se superpondrá al gráfico o no.|
 |text|string|Representa el texto del título de un gráfico.|
 |visible|boolean|Valor booleano que representa la visibilidad de un objeto de título del gráfico.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |format|[ChartTitleFormat](charttitleformat.md)|Representa el formato de un título del gráfico, que incluye el formato de relleno y de fuente. Solo lectura.|
 
