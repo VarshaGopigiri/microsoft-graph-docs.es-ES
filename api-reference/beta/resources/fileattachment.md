@@ -1,6 +1,18 @@
+---
+title: Tipo de recurso fileAttachment
+description: Un archivo (como un archivo de texto o un documento de Word) adjunto a un evento
+ms.openlocfilehash: 2a43ebbc78d831e907bfd19d647e4b7e398abe90
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27087341"
+---
 # <a name="fileattachment-resource-type"></a>Tipo de recurso fileAttachment
 
-Un archivo (como un archivo de texto o un documento de Word) adjunto a un evento, mensaje o publicación. La propiedad **contentBytes** contiene el contenido codificado en base64 del archivo.  
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+Un archivo (como un archivo de texto o un documento de Word) adjunto a un [evento](../resources/event.md), [mensaje](../resources/message.md), [tarea de Outlook](../resources/outlooktask.md)o [Publicar](../resources/post.md). La propiedad **contentBytes** contiene el contenido con codificación base64 del archivo.  
 
 Al crear un archivo adjunto, incluya lo siguiente en el cuerpo de la solicitud:
 
@@ -13,14 +25,13 @@ Derivadas de [attachment](attachment.md).
 
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Lea las propiedades y las relaciones del objeto fileAttachment.|
-|[Eliminar](../api/attachment_delete.md) | Ninguno |Elimine el objeto fileAttachment. |
-
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Lea las propiedades y las relaciones del objeto fileAttachment.|
+|[Eliminar](../api/attachment-delete.md) | Ninguno |Elimine el objeto fileAttachment. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|El contenido binario del archivo.|
+|contentBytes|Binario|El contenido del archivo codificado en base64.|
 |contentId|String|El identificador de los datos de adjuntos del almacén de Exchange.|
 |contentLocation|String|El identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de los datos adjuntos.|
 |contentType|String|El tipo de contenido de los datos adjuntos.|

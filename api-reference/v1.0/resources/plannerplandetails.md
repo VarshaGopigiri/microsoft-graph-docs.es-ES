@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso plannerPlanDetails
+description: El recurso **plannerPlanDetails** representa la información adicional de un plan. Cada objeto plan tiene un objeto details.
+ms.openlocfilehash: eac0082c72e46101d8d02367f8c13aef5e921d17
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029170"
+---
 # <a name="plannerplandetails-resource-type"></a>Tipo de recurso plannerPlanDetails
 
 
@@ -8,14 +18,14 @@ El recurso **plannerPlanDetails** representa la información adicional de un pla
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Obtener plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Leer las propiedades y las relaciones del objeto **plannerPlanDetails**.|
-|[Update](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |Actualizar el objeto **plannerPlanDetails**. |
+|[Obtener plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |Leer las propiedades y las relaciones del objeto **plannerPlanDetails**.|
+|[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |Actualizar el objeto **plannerPlanDetails**. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Objeto que especifica las descripciones de las seis categorías que pueden estar asociadas a las tareas del plan|
-|id|String| Solo lectura. Id. de los detalles del plan. Tiene 28 caracteres y distingue entre mayúsculas y minúsculas. La [validación del formato](planner_identifiers_disclaimer.md) se efectúa en el servicio.|
+|id|String| Solo lectura. Identificador de los detalles del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Conjunto de identificadores de usuario con el que se comparte este plan. Si está aprovechando los grupos de Office 365, use la API de grupos para administrar la pertenencia a los grupos a fin de compartir el plan del [grupo](group.md). También puede agregar los miembros existentes del grupo a esta colección, aunque no es necesario que obtengan acceso al plan propiedad del grupo. |
 
 ## <a name="relationships"></a>Relaciones
@@ -25,11 +35,10 @@ Ninguno
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerPlanDetails"
 }-->
 
