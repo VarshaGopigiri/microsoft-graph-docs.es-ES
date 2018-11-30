@@ -1,31 +1,38 @@
-<a id="domaindnstxtrecord-resource-type" class="xliff"></a>
-# Tipo de recurso domainDnsTxtRecord
+---
+title: Tipo de recurso domainDnsTxtRecord
+description: Representa un registro TXT agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad DomainDnsRecord.
+ms.openlocfilehash: 2c49f42c2044d58855d293d39c0e5110091e4495
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27090172"
+---
+# <a name="domaindnstxtrecord-resource-type"></a>Tipo de recurso domainDnsTxtRecord
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa un registro TXT agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad [DomainDnsRecord](domaindnsrecord.md).
 
-<a id="methods" class="xliff"></a>
-## Métodos
+## <a name="methods"></a>Métodos
 No se admiten las consultas directas a este recurso. Consulte el tema [domain](domain.md) para obtener información sobre cómo efectuar consultas para los registros de servicios de dominio.
 
-<a id="properties" class="xliff"></a>
-## Propiedades
+## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura. |
 |isOptional|Booleano| Si es false, el cliente debe configurar el registro TXT en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
 |label|Cadena| Valor que se debe usar al configurar la propiedad *name* del registro TXT en el host DNS.|
 |recordType|Cadena| Tipo de registro DNS. El valor es siempre *Txt*. Clave |
-|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro TXT.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
+|supportedService|String| Servicio o función de Microsoft Online que tiene una dependencia en el registro TXT.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
 |text|Cadena| Valor que se usa al configurar la propiedad *text* en el host DNS. |
 |ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL |
 
-<a id="relationships" class="xliff"></a>
-## Relaciones
+## <a name="relationships"></a>Relaciones
 Ninguno
 
 
-<a id="json-representation" class="xliff"></a>
-## Representación JSON
+## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.
 
 <!-- {

@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso RangeBorder
+description: Representa el borde de un objeto.
+ms.openlocfilehash: ace494607d7e5803bf0ab0be5d5b3c86be875dcb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27090697"
+---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Representa el borde de un objeto.
 
@@ -7,13 +19,13 @@ Representa el borde de un objeto.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder_get.md) | [RangeBorder](rangeborder.md) |Lee las propiedades y relaciones del objeto rangeBorder.|
-|[Update](../api/rangeborder_update.md) | [RangeBorder](rangeborder.md)    |Actualiza el objeto RangeBorder. |
-|[List](../api/rangeborder_list.md) | Colección [RangeBorder](rangeborder.md) |Obtiene la colección de objetos rangeBorder. |
-|[Itemat](../api/rangebordercollection_itemat.md)|[RangeBorder](rangeborder.md)|Obtiene un objeto de borde mediante su índice.|
+|[Get RangeBorder](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |Lee las propiedades y relaciones del objeto rangeBorder.|
+|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |Actualiza el objeto RangeBorder. |
+|[List](../api/rangeborder-list.md) | Colección [RangeBorder](rangeborder.md) |Obtiene la colección de objetos rangeBorder. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|Obtiene un objeto de borde mediante su índice.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |color|string|Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").|
 |id|string|Representa el identificador de borde. Valores posibles: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`, `DiagonalUp`. Solo lectura.|
