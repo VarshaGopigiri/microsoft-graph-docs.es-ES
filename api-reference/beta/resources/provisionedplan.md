@@ -1,15 +1,26 @@
+---
+title: Tipo de recurso provisionedPlan
+description: La propiedad **provisionedPlans** de la entidad user y la entidad organization es una colección de **provisionedPlan**.
+ms.openlocfilehash: efaf4dc2916189e2bf6a8078a693059369f7cb2b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27086728"
+---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 La propiedad **provisionedPlans** de la entidad [user](user.md) y la entidad [organization](organization.md) es una colección de **provisionedPlan**.
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |capabilityStatus|String|Por ejemplo, "Habilitado".|
 |provisioningStatus|String|Por ejemplo, "Correcto".|
 |service|String|Nombre del servicio; por ejemplo, "AccessControlS2S".|
-
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -1,41 +1,60 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharePointIds
+ms.openlocfilehash: 6cf2e574ea6d2a5cf5344dcf4d7ef5532a6a5b16
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27086467"
+---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 El recurso **SharePointIds** agrupa en una sola estructura los distintos identificadores de un elemento almacenado en un sitio de SharePoint o en OneDrive para la Empresa.
 
 **Nota:** los elementos devueltos de OneDrive Personal no incluyen una faceta **SharePointIds**.
 
-### <a name="json-representation"></a>Representación JSON
+## <a name="json-representation"></a>Representación JSON
 
 Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [ "listId", "listItemId", "listItemUniqueId", "siteId", "siteUrl", "webId" ],
   "@odata.type": "microsoft.graph.sharepointIds"
 }-->
+
 ```json
 {
     "listId": "string",
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "siteUrl": "url",
+    "tenantId": "string",
     "webId": "string"
 }
 ```
 
-### <a name="properties"></a>Propiedades
+## <a name="properties"></a>Propiedades
 
-| Propiedad          | Tipo    | Descripción                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | string  | Identificador único de la lista del elemento en SharePoint.                          |
-| listItemId        | string  | Identificador entero del elemento en la lista que lo contiene.                    |
-| listItemUniqueId  | string  | Identificador único del elemento contenido en OneDrive para la Empresa o en un sitio de SharePoint. |
-| siteId            | string  | Identificador único de la colección de sitios del elemento. |
-| webId             | string  | Identificador único del sitio del elemento.                          |
+| Propiedad         | Tipo         | Descripción
+|:-----------------|:-------------|:-------------------------------------------
+| listId           | string       | Identificador único (guid) de la lista del elemento en SharePoint.
+| listItemId       | string       | Identificador entero del elemento en la lista que lo contiene.
+| listItemUniqueId | string       | Identificador único (GUID) del elemento contenido en OneDrive para la Empresa o en un sitio de SharePoint.
+| siteId           | string       | Identificador único (guid) de la colección de sitios del elemento (SPSite).
+| siteUrl          | string (URL) | La URL de SharePoint del sitio que contiene el elemento.
+| tenantId         | string       | Identificador único (guid) del arrendamiento.
+| webId            | string       | Identificador único (guid) del sitio del elemento (SPWeb).
 
-## <a name="remarks"></a>Comentarios 
+## <a name="remarks"></a>Observaciones
 
-Para obtener más información sobre las facetas de un objeto DriveItem, consulte [DriveItem](driveitem.md).
+Para obtener más información sobre las facetas de **driveItem**, consulte [**driveItem**](driveitem.md).
 
 
 
@@ -43,8 +62,8 @@ Para obtener más información sobre las facetas de un objeto DriveItem, consult
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "The SharepointIds facet provides Sharepoint ids associated with an item.",
+  "keywords": "item, unique, id, csom, facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SharepointIds"
+} -->
