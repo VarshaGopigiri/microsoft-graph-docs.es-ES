@@ -1,10 +1,20 @@
-# <a name="attendeeavailability-resource-type"></a>Tipo de recurso attendeeAvailability
+---
+title: Tipo de recurso attendeeAvailability
+description: El tipo y la disponibilidad de un asistente.
+ms.openlocfilehash: 446dfb77d8f85021f41795038c3c1d597c6f1a6d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029421"
+---
+# <a name="attendeeavailability-resource-type"></a><span data-ttu-id="0c980-103">Tipo de recurso attendeeAvailability</span><span class="sxs-lookup"><span data-stu-id="0c980-103">attendeeAvailability resource type</span></span>
 
-El tipo y la disponibilidad de un asistente.
+<span data-ttu-id="0c980-104">El tipo y la disponibilidad de un asistente.</span><span class="sxs-lookup"><span data-stu-id="0c980-104">The type and availability of an attendee.</span></span>
 
-## <a name="json-representation"></a>Representación JSON
+## <a name="json-representation"></a><span data-ttu-id="0c980-105">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="0c980-105">JSON representation</span></span>
 
-Aquí tiene una representación JSON del recurso
+<span data-ttu-id="0c980-106">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="0c980-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -21,11 +31,11 @@ Aquí tiene una representación JSON del recurso
 }
 
 ```
-## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+## <a name="properties"></a><span data-ttu-id="0c980-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="0c980-107">Properties</span></span>
+| <span data-ttu-id="0c980-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="0c980-108">Property</span></span>     | <span data-ttu-id="0c980-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="0c980-109">Type</span></span>   |<span data-ttu-id="0c980-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="0c980-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|asistente|[AttendeeBase](attendeebase.md)|El tipo de asistente, ya sea una persona o un recurso, y en caso de ser una persona, si es obligatorio u opcional.|
-|disponibilidad|String| El estado de disponibilidad del asistente. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|<span data-ttu-id="0c980-111">asistente</span><span class="sxs-lookup"><span data-stu-id="0c980-111">attendee</span></span>|[<span data-ttu-id="0c980-112">AttendeeBase</span><span class="sxs-lookup"><span data-stu-id="0c980-112">AttendeeBase</span></span>](attendeebase.md)|<span data-ttu-id="0c980-113">El tipo de asistente, ya sea una persona o un recurso, y en caso de ser una persona, si es obligatorio u opcional.</span><span class="sxs-lookup"><span data-stu-id="0c980-113">The type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.</span></span>|
+|<span data-ttu-id="0c980-114">disponibilidad</span><span class="sxs-lookup"><span data-stu-id="0c980-114">availability</span></span>|<span data-ttu-id="0c980-115">freeBusyStatus</span><span class="sxs-lookup"><span data-stu-id="0c980-115">freeBusyStatus</span></span>| <span data-ttu-id="0c980-116">El estado de disponibilidad del asistente.</span><span class="sxs-lookup"><span data-stu-id="0c980-116">The availability status of the attendee.</span></span> <span data-ttu-id="0c980-117">Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span><span class="sxs-lookup"><span data-stu-id="0c980-117">The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
