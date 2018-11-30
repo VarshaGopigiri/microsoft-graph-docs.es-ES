@@ -1,32 +1,43 @@
+---
+title: Tipo de recurso contact
+description: Un contacto es un elemento de Outlook donde puede organizar y guardar información sobre las personas y organizaciones con las que se comunica. Los contactos se contienen en carpetas de contactos.
+ms.openlocfilehash: 28278a6d41fb294d2be9b9f475462b8a32409eb5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27030442"
+---
 # <a name="contact-resource-type"></a>Tipo de recurso contact
 
 Un contacto es un elemento de Outlook donde puede organizar y guardar información sobre las personas y organizaciones con las que se comunica. Los contactos se contienen en carpetas de contactos.
 
 Este recurso admite:
 
-- que agregue sus propios datos a las propiedades personalizadas mediante [extensiones](../../../concepts/extensibility_overview.md);
-- que use una [consulta delta](../../../concepts/delta_query_overview.md) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/contact_delta.md).
+- Adición de sus propios datos a las propiedades personalizadas como [extensiones](/graph/extensibility-overview).
+- Suscribirse a [las notificaciones de cambios](/graph/webhooks).
+- que use una [consulta delta](/graph/delta-query-overview) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/contact-delta.md).
 
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
-|[Obtener contacto](../api/contact_get.md) | [contact](contact.md) |Lea las propiedades y las relaciones del objeto de contacto.|
-|[Crear](../api/user_post_contacts.md) | [contact](contact.md) |Agregue un contacto a la carpeta de contactos raíz o al extremo de contactos de otra carpeta de contactos.|
-|[Actualizar](../api/contact_update.md) | [contact](contact.md) |Actualice el objeto de contacto. |
-|[Eliminar](../api/contact_delete.md) | Ninguno |Elimine el objeto contact. |
-|[delta](../api/contact_delta.md)|Colección [contact](contact.md)| Obtiene un conjunto de contactos que se hayan agregado, eliminado o actualizado en una carpeta determinada.|
+|[Obtener contacto](../api/contact-get.md) | [contact](contact.md) |Lea las propiedades y las relaciones del objeto de contacto.|
+|[Crear](../api/user-post-contacts.md) | [contact](contact.md) |Agregue un contacto a la carpeta de contactos raíz o al extremo de contactos de otra carpeta de contactos.|
+|[Actualizar](../api/contact-update.md) | [contact](contact.md) |Actualice el objeto de contacto. |
+|[Eliminar](../api/contact-delete.md) | Ninguno |Elimine el objeto contact. |
+|[delta](../api/contact-delta.md)|Colección [contact](contact.md)| Obtiene un conjunto de contactos que se hayan agregado, eliminado o actualizado en una carpeta determinada.|
 |**Extensiones abiertas**| | |
-|[Crear extensión abierta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o existente de un recurso.|
-|[Obtener extensión abierta](../api/opentypeextension_get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga un objeto u objetos de extensión abierta identificados por nombre o por nombre completo.|
+|[Crear extensión abierta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crea una extensión abierta y agrega propiedades personalizadas en una instancia nueva o existente de un recurso.|
+|[Obtener extensión abierta](../api/opentypeextension-get.md) |Colección [openTypeExtension](opentypeextension.md)| Obtenga un objeto u objetos de extensión abierta identificados por nombre o por nombre completo.|
 |**Extensiones de esquema**| | |
-|[Agregar valores de extensión de esquema](../../../concepts/extensibility_schema_groups.md) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
+|[Agregar valores de extensión de esquema](/graph/extensibility-schema-groups) || Cree una definición de extensión de esquema y, después, úsela para agregar datos escritos personalizados a un recurso.|
 |**Propiedades extendidas**| | |
-|[Crear propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contact](contact.md)  |Cree una o varias propiedades extendidas de valor único en un contacto nuevo o existente.   |
-|[Obtener contacto con propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Obtenga contactos que contienen una propiedad extendida de valor único mediante el uso de `$expand` o `$filter`. |
-|[Crear propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contact](contact.md) | Cree una o varias propiedades extendidas de varios valores en un contacto nuevo o existente.  |
-|[Obtener contacto con propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Obtenga un contacto que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
+|[Crear propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Cree una o varias propiedades extendidas de valor único en un contacto nuevo o existente.   |
+|[Obtener contacto con propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Obtenga contactos que contienen una propiedad extendida de valor único mediante el uso de `$expand` o `$filter`. |
+|[Crear propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | Cree una o varias propiedades extendidas de varios valores en un contacto nuevo o existente.  |
+|[Obtener contacto con propiedad extendida de varios valores](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Obtenga un contacto que contiene una propiedad extendida de varios valores mediante el uso de `$expand`. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
@@ -42,7 +53,7 @@ Este recurso admite:
 |companyName|String|El nombre de la empresa del contacto.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el contacto. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |departamento|String|El departamento del contacto.|
-|displayName|String|El nombre para mostrar del contacto.|
+|displayName|String|El nombre para mostrar del contacto. Puede especificar el nombre para mostrar en una operación de [creación](../api/user-post-contacts.md) o [actualización](../api/contact-update.md) . Tenga en cuenta que las actualizaciones posteriores a otras propiedades pueden causar un valor generado automáticamente sobrescribir el valor de displayName que haya especificado. Para conservar un valor existente, siempre incluirla como displayName en una operación [de actualización](../api/contact-update.md) .|
 |emailAddresses|Colección [EmailAddress](emailaddress.md)|Las direcciones de correo electrónico del contacto.|
 |fileAs|String|El nombre con el que se ha archivado el contacto.|
 |generation|String|La generación del contacto.|
@@ -84,6 +95,8 @@ Aquí tiene una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.outlookItem",
+  "openType": true,
   "optionalProperties": [
     "extensions",
     "multiValueExtendedProperties",
@@ -91,7 +104,26 @@ Aquí tiene una representación JSON del recurso
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.contact"
+  "@odata.type": "microsoft.graph.contact",
+  "@odata.annotations": [
+    {
+      "property": "extensions",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "photo",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -142,11 +174,11 @@ Aquí tiene una representación JSON del recurso
 
 ## <a name="see-also"></a>Consulte también
 
-- [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](../../../concepts/delta_query_overview.md)
-- [Obtener los cambios incrementales en los mensajes de una carpeta](../../../concepts/delta_query_messages.md)
-- [Agregar datos personalizados a los recursos mediante extensiones](../../../concepts/extensibility_overview.md)
-- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](../../../concepts/extensibility_open_users.md)
-- [Agregar datos personalizados a los grupos mediante extensiones de esquema](../../../concepts/extensibility_schema_groups.md)
+- [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](/graph/delta-query-overview)
+- [Obtener los cambios incrementales en los mensajes de una carpeta](/graph/delta-query-messages)
+- [Agregar datos personalizados a los recursos mediante extensiones](/graph/extensibility-overview)
+- [Agregar datos personalizados a los usuarios mediante extensiones abiertas](/graph/extensibility-open-users)
+- [Agregar datos personalizados a los grupos mediante extensiones de esquema](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
