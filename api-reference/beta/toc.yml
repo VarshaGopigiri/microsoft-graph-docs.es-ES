@@ -7423,7 +7423,7 @@ items:
               - name: Lista de los equipos
                 href: api/user-list-joinedteams.md
               - name: Lista de todos los equipos
-                href: /en-us/concepts/teams-list-all-teams
+                href: /graph/teams-list-all-teams?toc=./ref/toc.json
           - name: Grupo (equipo)
             href: resources/group.md
             items:

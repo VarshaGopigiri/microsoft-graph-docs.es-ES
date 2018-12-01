@@ -1,20 +1,20 @@
 ---
 title: Usar el organizador de la API de REST
 description: Puede usar la API de organizador en Microsoft Graph para crear tareas y asignarlas a los usuarios de un grupo de Office 365.
-ms.openlocfilehash: 1befd7a7e504aa8f568c9b28bc8a08322064bd37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b1ec3f6e179f05a41fa30aec1697c9bfcefad7ee
+ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030537"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123955"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar el organizador de la API de REST
 
 Puede usar la API de organizador en Microsoft Graph para crear tareas y asignarlas a los usuarios de un grupo de Office 365.
 
-Antes de empezar a trabajar con la API de organizador, merece la pena comprender cómo los objetos principales se relacionan entre sí, así como para los grupos de Office 365.
+Antes de empezar a trabajar con la API de organizador, desea comprender cómo los objetos principales se relacionan entre sí, así como para los grupos de Office 365.
 
-## <a name="groups"></a>Groups
+## <a name="office-365-groups"></a>Grupos de Office 365
 
 Los grupos de Office 365 son los propietarios de los planes de la API de organizador.
 Para [obtener los planes que pertenecen a un grupo](../api/plannergroup-list-plans.md), realizar la siguiente solicitud HTTP.
@@ -47,7 +47,7 @@ Los recursos de Planner se organizan en objetos básicos y objetos de detalle. L
 
 ## <a name="visualization"></a>Visualización
 
-Además de datos de la tarea y del plan, la API de Planner también ofrece recursos para proporcionar la visualización común de datos de los clientes. Hay varios tipos de datos de visualización disponibles para las tareas:
+Aparte de los datos de tareas y plan, la API de organizador también proporciona recursos para la creación de una visualización de datos comunes entre los clientes. Varios tipos de datos de visualización están disponibles para tareas, como se muestra en la siguiente tabla.
 
 | Las tareas se muestran como                                                                        | Las tareas se ordenan con información de                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -59,11 +59,13 @@ Además de datos de la tarea y del plan, la API de Planner también ofrece recur
 
 Las columnas personalizadas del panel de tareas de depósito se representan mediante objetos [bucket](plannerbucket.md) y su orden mediante la propiedad `orderHint` en el objeto.
 
-El orden se controla mediante los principios indicados en [Planner order hints](planner-order-hint-format.md) (Sugerencias sobre el orden de Planner).
+El orden se controla mediante los principios descritos en [sugerencias de orden del organizador](planner-order-hint-format.md).
 
 ## <a name="planner-resource-versioning"></a>Control de versiones de los recursos de Planner
 
-Planner controla las versiones de todos los recursos mediante ETags. Estas ETags se devuelven con la propiedad `@odata.etag` de cada recurso, y las solicitudes `PATCH` y `DELETE` requieren que se especifique con el encabezado `If-Match` la última ETag conocida por el cliente. Planner permite realizar cambios en las versiones anteriores de los recursos, siempre y cuando el cambio deseado no entre en conflicto con los cambios más recientes aceptados por el servicio de Planner en el mismo recurso. Los clientes pueden identificar qué ETag del recurso es más reciente si calculan qué valor de ETag es mayor en una comparación de cadenas ordinal. Cada recurso tiene una ETag independiente. No se pueden comparar valores de ETag de recursos diferentes, incluidos los que tienen relaciones de contención. Se espera que las aplicaciones cliente controlen dos códigos de estado de error (409 y 412) relacionados con el control de versiones. Para ello, leen la versión más reciente del elemento y resuelven los cambios que entran en conflicto.
+Versiones de organizador todos los recursos mediante **etags**. Estos **etags** se devuelven con `@odata.etag` (propiedad) en cada recurso. `PATCH`y `DELETE` solicitudes requieren la última **etag** conocidos por el cliente que se especifique con una `If-Match` encabezado.
+Organizador de permite que los cambios realizados en las versiones anteriores de recursos, si el cambio previsto no entre en conflicto con los cambios más recientes aceptados por el servicio de organizador en el mismo recurso. Los clientes pueden identificar qué **etag** para el mismo recurso es más reciente mediante el cálculo de qué valor **etag** es mayor en comparación de cadenas ordinal. Cada recurso tiene un único **valor etag**. Los valores de eTag para los distintos recursos, las relaciones de contención, incluidas no se pueden comparar.
+Las aplicaciones cliente se espera que controlen el control de versiones relacionados con [códigos de error](/graph/errors) **409** y **412** al leer la versión más reciente del elemento y resolver los cambios en conflicto.
 
 ## <a name="common-planner-error-conditions"></a>Condiciones de error comunes de Planner
 
@@ -71,7 +73,7 @@ Además de los [errores generales](/graph/errors) que se aplican a Microsoft Gra
 
 ### <a name="400-bad-request"></a>400 Solicitud incorrecta
 
-Hay varios casos comunes en los que las solicitudes `POST` y `PATCH` pueden obtener un código de estado 400. Entre los problemas frecuentes se incluyen los siguientes:
+En algunos escenarios comunes, `POST` y `PATCH` solicitudes pueden devolver un código de 400 estado. Las siguientes son algunas de las causas comunes:
 
 * Las propiedades de tipo abierto no son del tipo correcto, o el tipo no se ha especificado, o no contienen ninguna propiedad. Por ejemplo, las propiedades [plannerAssignments](plannerassignments.md) con valores complejos necesitan declarar la propiedad `@odata.type` con el valor `microsoft.graph.plannerAssignment`.
 * Los valores de sugerencia de orden no tienen el [formato correcto](planner-order-hint-format.md). Por ejemplo, un valor de sugerencia de orden se ha establecido directamente en el valor devuelto al cliente.
@@ -79,7 +81,8 @@ Hay varios casos comunes en los que las solicitudes `POST` y `PATCH` pueden obte
 
 ### <a name="403-forbidden"></a>403 Prohibido
 
-Además de los errores generales, la API de Planner también devuelve este código de estado cuando se ha excedido un límite definido por el servicio. Si este es el caso, la propiedad `code` del tipo de recurso de error indicará el tipo del límite superado por la solicitud. Los valores posibles para los tipos de límite incluyen los siguientes:
+Además de los errores generales, la API de organizador también devuelve el código de 403 estado cuando se ha superado un límite definido por el servicio. Si este es el caso, el `code` (propiedad) en el tipo de recurso de error que le indicará el tipo de la excede el límite por la solicitud.
+Los siguientes son los valores posibles para los tipos de límite.
 
 | Valor                         | Descripción                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -94,8 +97,10 @@ Además de los errores generales, la API de Planner también devuelve este códi
 | MaximumReferencesOnTask       | La propiedad `references` del recurso [plannerTaskDetails](plannertaskdetails.md) contiene demasiados valores.                                                                                          |
 | MaximumChecklistItemsOnTask   | La propiedad `checklist` del recurso [plannerTaskDetails](plannertaskdetails.md) contiene demasiados valores.                                                                                           |
 | MaximumAssigneesInTasks       | La propiedad `assignments` del recurso [plannerTask](plannertask.md) contiene demasiados valores.                                                                                                       |
+| MaximumPlannerPlans       | El grupo ya contiene un Plan. Actualmente, los grupos sólo pueden contener un Plan. **Nota:** Algunas aplicaciones de Microsoft pueden superar este límite. En el futuro, extenderemos esta funcionalidad para todas las aplicaciones.                                                                                                      |
 
 ### <a name="412-precondition-failed"></a>412 Error de condición previa 
 
-Todas las solicitudes `POST`, `PATCH` y `DELETE` de la API de Planner requieren que se especifique un encabezado `If-Match` con el último valor de ETag conocido del recurso que está sujeto a la solicitud. Además, se puede devolver el código de estado 412 si el valor de ETag especificado en la solicitud ya no coincide con una versión del recurso del servicio. En este caso, los clientes deben volver a leer el recurso y obtener una nueva ETag.
+Todas las API de plana `POST`, `PATCH`, y `DELETE` las solicitudes requieren la `If-Match` encabezado a especificarse con el último valor conocido etag del recurso que está sujeto a la solicitud.
+También se puede devolver el código de 412 estado si el valor de etag especificado en la solicitud ya no coincide con una versión del recurso en el servicio. En este caso, los clientes deben volver a leer el recurso y obtener un nuevo valor de etag.
 
