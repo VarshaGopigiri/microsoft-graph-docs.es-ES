@@ -1,0 +1,101 @@
+---
+title: Crear sectionGroup
+description: Crea un grupo de sección en el grupo de sección especificado.
+ms.openlocfilehash: 721c605976f39fd2401b55224e1a3235e8b5b64b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032098"
+---
+# <a name="create-sectiongroup"></a>Crear sectionGroup
+
+Crea un [grupo de sección](../resources/sectiongroup.md) en el grupo de sección especificado.
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
+
+|Tipo de permiso      | Permisos (de menos a más privilegiados)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (cuenta profesional o educativa) | Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegado (cuenta personal de Microsoft) | Notes.Create, Notes.ReadWrite    |
+|Aplicación | Notes.ReadWrite.All |
+
+## <a name="http-request"></a>Solicitud HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/onenote/sectionGroups/{id}/sectionGroups
+POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sectionGroups
+POST /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
+POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
+```
+## <a name="request-headers"></a>Encabezados de solicitud
+| Nombre       | Tipo | Descripción|
+|:---------------|:--------|:----------|
+| Authorization  | string  | {token} de portador. Obligatorio. |
+| Content-Type | string | `application/json` |
+
+## <a name="request-body"></a>Cuerpo de la solicitud
+En el cuerpo de la solicitud, asigne un nombre al grupo de sección.
+
+En el mismo nivel de jerarquía, los nombres de grupo de sección deben ser únicos. El nombre no puede contener más de 50 caracteres ni los caracteres siguientes: ?*\/:<>|&#''%~
+
+## <a name="response"></a>Respuesta
+
+Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y un objeto [sectionGroup](../resources/sectiongroup.md) en el cuerpo de la respuesta.
+
+## <a name="example"></a>Ejemplo
+##### <a name="request"></a>Solicitud
+Aquí tiene un ejemplo de la solicitud.
+<!-- {
+  "blockType": "request",
+  "name": "create_sectiongroup_from_sectiongroup"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sectionGroups
+Content-type: application/json
+Content-length: 30
+
+{
+  "displayName": "Section group name"
+}
+```
+##### <a name="response"></a>Respuesta
+Aquí tiene un ejemplo de la respuesta. Nota: El objeto de respuesta que aparece aquí esté truncado para abreviar. Se devolverán todas las propiedades de una llamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sectionGroup"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 305
+
+{
+  "sectionsUrl": "sectionsUrl-value",
+  "sectionGroupsUrl": "sectionGroupsUrl-value",
+  "displayName": "name-value",  
+  "createdBy": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  },
+  "lastModifiedBy": {
+    "user": {
+      "id": "id-value",
+      "displayName": "displayName-value"
+    }
+  }
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create SectionGroup",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

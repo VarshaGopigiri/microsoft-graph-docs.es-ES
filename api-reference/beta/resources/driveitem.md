@@ -3,14 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 4cf9766c81f1b1676d82c78e2f248b8d8c91e5b3
+ms.openlocfilehash: 1344d9a82459704354fc20a07c329949c4f5fc23
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032588"
+ms.locfileid: "27089014"
 ---
-# <a name="driveitem-resource-type"></a>Tipo de recurso DriveItem
+# <a name="driveitem-resource-type"></a>tipo de recurso driveItem
+
+> **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 El recurso **driveItem** representa un archivo, una carpeta u otro elemento almacenado en una unidad. Todos los objetos del sistema de archivos en OneDrive y SharePoint se devuelven como recursos de **driveItem**.
 
@@ -45,7 +47,6 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
-  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -68,12 +69,12 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
   "webDavUrl": "string",
 
   /* relationships */
-  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
-  "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "content": { "@odata.type": "Edm.Stream" },
+  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
+  "versions": [ {"@odata.type": "Collection(microsoft.graph.driveItemVersion)"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -98,7 +99,6 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 | Propiedad             | Tipo               | Descripción
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Metadatos de audio, si el elemento es un archivo de audio. Solo lectura.
-| content              | Secuencia             | La secuencia de contenido, si el elemento representa un archivo.
 | createdBy            | [identitySet][]    | Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.
 | createdDateTime      | DateTimeOffset     | Fecha y hora de creación del elemento. Solo lectura.
 | cTag                 | String             | Un eTag del contenido del elemento. No se cambia este eTag si solo se modifican los metadatos. **Nota** Esta propiedad no se devuelve si el elemento es una carpeta. Solo lectura.
@@ -133,16 +133,16 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación       | Tipo                        | Descripción
-|:-------------------|:----------------------------|:--------------------------
-| children           | colección de driveItem        | Colección que contiene objetos Item de los elementos secundarios inmediatos del elemento. Solo los elementos que representan carpetas tienen elementos secundarios. Solo lectura. Admite valores NULL.
-| createdByUser      | [user][]                    | Identidad del usuario que ha creado el elemento. Solo lectura.
-| lastModifiedByUser | [user][]                    | Identidad del usuario que ha modificado por última vez el elemento. Solo lectura.
-| listItem           | [listItem][]                | Para las unidades en SharePoint, el elemento de lista de biblioteca de documentos asociada. Solo lectura. Admite valores NULL.
-| permissions        | Colección [permission][]   | El conjunto de permisos del elemento. Solo lectura. Admite valores NULL.
-| miniaturas         | Colección [thumbnailSet][] | Colección que contiene objetos [ThumbnailSet][] asociados al elemento. Para obtener más información, consulte [obtener miniaturas][]. Solo lectura. Admite valores NULL.
+| Relación       | Tipo                            | Descripción
+|:-------------------|:--------------------------------|:--------------------------
+| activities         | Colección [itemActivity][]     | Lista de actividades recientes que tuvieron lugar en este elemento.
+| análisis          | recursos de [itemAnalytics][]      | Análisis acerca de las actividades de vista que tuvieron lugar en este elemento.
+| content            | Secuencia                          | La secuencia de contenido, si el elemento representa un archivo.
+| children           | Colección driveItem            | Colección que contiene objetos Item de los elementos secundarios inmediatos del elemento. Solo los elementos que representan carpetas tienen elementos secundarios. Solo lectura. Admite valores NULL.
+| listItem           | [listItem][]                    | Para las unidades en SharePoint, el elemento de lista de biblioteca de documentos asociada. Solo lectura. Admite valores NULL.
+| permissions        | Colección [permission][]       | El conjunto de permisos del elemento. Solo lectura. Admite valores NULL.
+| miniaturas         | Colección [thumbnailSet][]     | Colección que contiene objetos [ThumbnailSet][] asociados al elemento. Para obtener más información, consulte [obtener miniaturas][]. Solo lectura. Admite valores NULL.
 | versiones           | colección de [driveItemVersion][] | La lista de las versiones anteriores del elemento. Para obtener más información, vea [Introducción a las versiones anteriores][]. Solo lectura. Admite valores NULL.
-| libro de trabajo           | [workbook][]                | Para los archivos que son hojas de cálculo de Excel, tiene acceso a la API para trabajar con contenido de la hoja de cálculo del libro. Admite valores NULL.
 
 ## <a name="instance-attributes"></a>Atributos de instancia
 
@@ -154,13 +154,17 @@ Los atributos de instancia son propiedades con comportamientos especiales. Estas
 | @microsoft.graph.downloadUrl      | string | Una dirección URL que puede utilizarse para descargar el contenido de este archivo. No es necesaria la autenticación con esta dirección URL. Solo lectura.
 | @microsoft.graph.sourceUrl        | string | Al emitir una solicitud PUT, esta anotación de instancia puede utilizarse para indicar al servicio que descargue el contenido de la dirección URL y lo guarde como el archivo. Solo escritura.
 
-**Nota:** El valor @microsoft.graph.downloadUrl es una dirección URL de corta duración y no puede almacenarse en caché. La dirección URL solo estará disponible durante un breve período de tiempo (1 hora) antes de ser invalidada.
+**Nota:** El valor de @microsoft.graph.downloadUrl es una dirección URL de corta duración y no se puede almacenar en caché.
+La dirección URL sólo estará disponible durante un breve período de tiempo (1 hora) antes de se haya invalidado. Quitar permisos de archivo para un usuario no puede invalidar inmediatamente la dirección URL.
 
 ## <a name="methods"></a>Métodos
 
 | Método                                                   | Ruta de acceso a REST
 |:---------------------------------------------------------|:------------------
 | [Obtener elemento](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
+| [Enumerar actividades](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
+| [Obtener análisis][]                                        | `GET /drive/items/{item-id}/analytics`
+| [Obtener las actividades por intervalo][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [Enumerar elementos secundarios](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [Enumerar versiones](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
 | [Crear elemento](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
@@ -178,9 +182,12 @@ Los atributos de instancia son propiedades con comportamientos especiales. Estas
 | [Agregar permisos](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Enumerar permisos](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Eliminar permiso](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Obtener WebSocket canal][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Vista previa del artículo][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
+[Obtener análisis]: ../api/itemanalytics-get.md
+[Obtener las actividades por intervalo]: ../api/itemactivity-getbyinterval.md
 
 ## <a name="remarks"></a>Observaciones
 
@@ -196,10 +203,14 @@ En las bibliotecas de documentos de OneDrive para la Empresa o SharePoint, no se
 [folder]: folder.md
 [Introducción a las versiones anteriores]: ../api/driveitem-list-versions.md
 [obtener miniaturas]: ../api/driveitem-list-thumbnails.md
+[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
+[List activities]: ../api/activities-list.md
 [listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
@@ -212,10 +223,11 @@ En las bibliotecas de documentos de OneDrive para la Empresa o SharePoint, no se
 [specialFolder]: specialfolder.md
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
-[workbook]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Item is the main data model in the OneDrive API. Everything is an item.",

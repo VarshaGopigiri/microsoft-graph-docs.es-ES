@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ItemReference
+ms.openlocfilehash: 3af3af4b366c61119ba48aaebdc461e356f23464
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27028854"
+---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
 El recurso **ItemReference** proporciona información necesaria para dirigir un [DriveItem](driveitem.md) a través de la API.
@@ -15,6 +27,7 @@ Aquí tiene una representación JSON del recurso
 ```json
 {
   "driveId": "string",
+  "driveType": "personal | business | documentLibrary",
   "id": "string",
   "name": "string",
   "path": "string",
@@ -25,14 +38,19 @@ Aquí tiene una representación JSON del recurso
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad      | Tipo                              | Descripción                                                                                                |
-| :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| driveId       | String                            | Identificador único de la instancia de la unidad que contiene el elemento. Solo lectura.                                 |
-| id            | String                            | Identificador único del elemento en la unidad. Solo lectura.                                                     |
-| name          | String                            | El nombre del elemento al que se hace referencia. Solo lectura.                                                          |
-| path          | String                            | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.                                                  |
-| shareId       | Cadena                            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares](../api/shares_get.md). |
-| sharepointIds | [sharepointIds](sharepointids.md) | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.                                   |
+| Propiedad      | Tipo              | Descripción
+|:--------------|:------------------|:-----------------------------------------
+| driveId       | Cadena            | Identificador único de la instancia de la unidad que contiene el elemento. Solo lectura.
+| driveType     | Cadena            | Identifica el tipo de unidad. Consulte el recurso [drive][] para ver los valores.
+| id            | String            | Identificador único del elemento en la unidad. Solo lectura.
+| name          | String            | El nombre del elemento al que se hace referencia. Solo lectura.
+| path          | String            | Ruta de acceso que se puede usar para navegar hasta el elemento. Solo lectura.
+| shareId       | Cadena            | Un identificador único para un recurso compartido al que se puede tener acceso a través de la API [Shares][].
+| sharepointIds | [sharepointIds][] | Devuelve los identificadores útiles para la compatibilidad con REST de SharePoint. Solo lectura.
+
+[drive]: ../resources/drive.md
+[sharepointIds]: ../resources/sharepointids.md
+[Shares]: ../api/shares-get.md
 
 ## <a name="remarks"></a>Comentarios
 
@@ -50,8 +68,11 @@ Para recuperar la ruta de acceso legible de una ruta de navegación, puede ignor
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "itemReference resource",
-  "keywords": "",
+  "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
+  "tocPath": "Resources/ItemReference"
+} -->

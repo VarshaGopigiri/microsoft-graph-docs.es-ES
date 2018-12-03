@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso ChartTitle
+description: Representa un objeto de título de gráfico de un gráfico.
+ms.openlocfilehash: 44777d939e67d2e8b5563cf3edb0b5bfddeeef9a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27029595"
+---
 # <a name="charttitle-resource-type"></a>Tipo de recurso ChartTitle
 
 Representa un objeto de título de gráfico de un gráfico.
@@ -7,20 +17,20 @@ Representa un objeto de título de gráfico de un gráfico.
 
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Lee las propiedades y relaciones del objeto chartTitle.|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |Actualiza el objeto ChartTitle. |
+|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |Lee las propiedades y relaciones del objeto chartTitle.|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |Actualiza el objeto ChartTitle. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad       | Tipo    |Descripción|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |overlay|boolean|Valor booleano que representa si el título del gráfico se superpondrá al gráfico o no.|
 |text|string|Representa el texto del título de un gráfico.|
 |visible|boolean|Valor booleano que representa la visibilidad de un objeto de título del gráfico.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo    |Descripción|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|Representa el formato de un título del gráfico, que incluye el formato de relleno y de fuente. Solo lectura.|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|Representa el formato de un título del gráfico, que incluye el formato de relleno y de fuente. Solo lectura.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -28,10 +38,11 @@ Aquí tiene una representación JSON del recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json
