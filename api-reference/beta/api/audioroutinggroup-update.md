@@ -1,12 +1,12 @@
 ---
 title: Actualizar el grupo de enrutamiento de audio
 description: Modificar orígenes y receptores de un audioRoutingGroup.
-ms.openlocfilehash: a6b5d2ed3c11733f7a8e46ed4db61def05395c5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6edbe0512b13de75645c3094b258de46c21956e9
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085631"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156029"
 ---
 # <a name="update-audio-routing-group"></a>Actualizar el grupo de enrutamiento de audio
 
@@ -21,7 +21,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (cuenta profesional o educativa)     | No se admite                       |
 | Delegado (cuenta personal de Microsoft) | No se admite                       |
-| Aplicación     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicación     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

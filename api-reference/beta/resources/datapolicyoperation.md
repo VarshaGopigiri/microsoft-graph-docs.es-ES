@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso dataPolicyOperation
 description: Representa una operación de la directiva de datos enviados. Contiene la información necesaria para realizar un seguimiento del estado de una operación. Por ejemplo, un administrador de la compañía puede enviar una solicitud de operación de directiva de datos para exportar datos de un empleado de la compañía y, a continuación, más adelante realizar un seguimiento de dicha solicitud.
-ms.openlocfilehash: e6763f4050157658ea0a7f4d1e6f52668ed6e4b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088625"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156036"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
 
@@ -30,6 +30,7 @@ Representa una operación de la directiva de datos enviados. Contiene la informa
 |storageLocation|String|La ubicación de la dirección URL a donde se va a exportar datos para las solicitudes de exportación.|
 |userId|String|El identificador para el usuario en quien se realiza la operación.|
 |submittedDateTime|DateTimeOffset|Representa para esta operación de datos se envió la solicitud, en la hora UTC, con el formato ISO 8601. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
+|progreso|Doble|Especifica el progreso de una operación.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
@@ -54,7 +55,8 @@ Aquí tiene una representación JSON del recurso.
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "progress": "Double"
 }
 
 ```

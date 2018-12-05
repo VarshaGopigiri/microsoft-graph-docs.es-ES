@@ -1,12 +1,12 @@
 ---
 title: Obtener el grupo de enrutamiento de audio
 description: Recuperar las propiedades y relaciones de un objeto audioRoutingGroup.
-ms.openlocfilehash: ce1c8afea4932427a700970a16d3ec22a7f14d8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 4da3ceb829cf1a2e59fa34c7073fe7f54126a199
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084678"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156015"
 ---
 # <a name="get-audio-routing-group"></a>Obtener el grupo de enrutamiento de audio
 
@@ -21,7 +21,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (cuenta profesional o educativa)     | No se admite                               |
 | Delegado (cuenta personal de Microsoft) | No se admite                               |
-| Aplicación     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicación     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

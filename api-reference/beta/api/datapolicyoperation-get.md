@@ -1,12 +1,12 @@
 ---
 title: Obtener dataPolicyOperation
 description: Recuperar las propiedades del objeto dataPolicyOperation.
-ms.openlocfilehash: f2894b7cc23d6a5d35a03c7626ca9cb4640a9fcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fbc94719f9944adb25f7dd744cf0b15b179f3a5d
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084566"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156022"
 ---
 # <a name="get-datapolicyoperation"></a>Obtener dataPolicyOperation
 
@@ -24,7 +24,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /dataPolicyOperations/<id>
+GET /dataPolicyOperations/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -43,7 +43,7 @@ Si tiene éxito, este método devuelve una `200 OK` objeto de código y [dataPol
   "name": "get_datapolicyoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/dataPolicyOperations/<id>
+GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 ##### <a name="response"></a>Respuesta
 Nota: Es posible que el objeto de respuesta que aparezca aquí esté truncado para abreviar. Todas las propiedades se devolverán de una llamada real.
@@ -63,7 +63,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

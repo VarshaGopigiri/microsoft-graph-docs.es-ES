@@ -1,12 +1,12 @@
 ---
 title: Crear grupo de enrutamiento de audio
 description: Crear un nuevo **audioRoutingGroup**.
-ms.openlocfilehash: 9e42fb085887cee22ccc8eac0997adf0464e0d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0dd506f3cf02e59d5a34c7184f4e596f6ff9e1fd
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084958"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156043"
 ---
 # <a name="create-audio-routing-group"></a>Crear grupo de enrutamiento de audio
 
@@ -21,7 +21,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (cuenta profesional o educativa)     | No admitida.                               |
 | Delegado (cuenta personal de Microsoft) | No admitida.                               |
-| Aplicación     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicación     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

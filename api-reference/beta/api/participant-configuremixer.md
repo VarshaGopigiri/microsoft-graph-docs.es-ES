@@ -1,12 +1,12 @@
 ---
 title: 'participante: configureMixer'
 description: Configurar cómo audio mixto para los diferentes participantes en una conversación entre varias partes.
-ms.openlocfilehash: 32d50d165ed7beb69b99e5d0940b49acbce8f45c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 58ccdcb345d55ae28b30dd5ded6b95ef5b30fe81
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084320"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156007"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
@@ -21,7 +21,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 | :-------------- | :------------------------------------------ |
 | Delegado (cuenta profesional o educativa)     | No se admite        |
 | Delegado (cuenta personal de Microsoft) | No se admite        |
-| Aplicación     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicación     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
