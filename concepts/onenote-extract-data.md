@@ -3,7 +3,7 @@ title: 'Usar las etiquetas div de la API de OneNote para extraer datos de captur
 description: " Blocs de notas de empresa en Office 365"
 ms.openlocfilehash: 201c20261d47e66df877e0138670b96ee377b7cb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092849"

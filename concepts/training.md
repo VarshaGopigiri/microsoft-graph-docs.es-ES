@@ -3,7 +3,7 @@ title: Aprendizaje de Microsoft Graph
 description: Los ejercicios de aprendizaje de Microsoft Graph son tutoriales paso a paso que le ayudarán a crear una aplicación básica que usa la autenticación de Azure Active Directory y accede a los datos a través de Microsoft Graph.
 ms.openlocfilehash: 4704377c7d54e1d2052f471e5d2b5c18ed6b9867
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092811"

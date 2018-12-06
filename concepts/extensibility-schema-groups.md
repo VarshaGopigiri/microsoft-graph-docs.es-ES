@@ -3,7 +3,7 @@ title: 'Agregar datos personalizados a los grupos mediante extensiones de esquem
 description: 'Vamos a guiarle a través de un ejemplo para demostrarle cómo usar las *extensiones de esquema*. '
 ms.openlocfilehash: 098853ffaa5292313c71259e97fb8f1a8063fec4
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092837"

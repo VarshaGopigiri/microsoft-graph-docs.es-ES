@@ -3,7 +3,7 @@ title: 'Crear aplicaciones para varios dispositivos con tecnología de Project R
 description: 'Puede usar Project Rome para crear experiencias transversales entre dispositivos y plataformas sin problemas, lo que reduce la fricción para los usuarios y contribuye a fomentar la interacción de las aplicaciones. Para que las aplicaciones compartan datos entre varios dispositivos y plataformas con las API de Project Rome, debe configurar una aplicación para varios dispositivos que incluya información sobre las aplicaciones específicas de la plataforma. '
 ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092887"
@@ -68,8 +68,8 @@ Debe recopilar todos los identificadores de aplicación para varios dispositivos
 
 Para buscar los identificadores:
 
-* **windows_universal**: especifique un AUMID por aplicación para UWP. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/es-ES/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]) y [Application](https://docs.microsoft.com/es-ES/uwp/schemas/appxpackage/appxmanifestschema/element-application) (Aplicación).
-* **windows_win32**: especifique un AUMID por aplicación. En aplicaciones win32, tendrá que usar un script para recuperar esta información. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/es-ES/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]).
+* **windows_universal**: especifique un AUMID por aplicación para UWP. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]) y [Application](https://docs.microsoft.com/es-ES/uwp/schemas/appxpackage/appxmanifestschema/element-application) (Aplicación).
+* **windows_win32**: especifique un AUMID por aplicación. En aplicaciones win32, tendrá que usar un script para recuperar esta información. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]).
 * **android**: para más información, vea [Cambiar el nombre de paquete](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios**: para más información, vea [Bundle](https://developer.apple.com/documentation/foundation/bundle) y [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644) (Propiedades requeridas, localizables y editables).
 * **msa**: inicie sesión en el [Portal de registro de aplicaciones](https://apps.dev.microsoft.com). Puede ver el identificador de aplicación y el identificador de cliente de cualquiera de las aplicaciones. Se admiten tanto los identificadores del SDK de Live (valores hexadecimales) como los de aplicaciones convergentes (GUID).   
@@ -94,7 +94,7 @@ Si ha decidido configurar la aplicación para varios dispositivos en el Centro d
 Para buscar los identificadores:
 
 * 
-  **Servicio de notificaciones de Windows**: vea [Registering your app and receiving the credentials for your cloud service](https://docs.microsoft.com/es-ES/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) (Registrar la aplicación y recibir las credenciales del servicio en la nube) y el [Portal de registro de aplicaciones](https://apps.dev.microsoft.com).
+  **Servicio de notificaciones de Windows**: vea [Registering your app and receiving the credentials for your cloud service](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) (Registrar la aplicación y recibir las credenciales del servicio en la nube) y el [Portal de registro de aplicaciones](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service**: vea [APNs Overview](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) (Información general sobre el APNs).
 * **Google Cloud Messaging**: vea [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -141,8 +141,8 @@ En el ejemplo siguiente se incluyen todos los identificadores de plataforma vál
 
 Para buscar los identificadores:
 
-* **windows_universal**: especifique un AUMID por aplicación para UWP. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/es-ES/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]) y [Application](https://docs.microsoft.com/es-ES/uwp/schemas/appxpackage/appxmanifestschema/element-application) (Aplicación).
-* **windows_win32**: especifique un AUMID por aplicación. En aplicaciones win32, tendrá que usar un script para recuperar esta información. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/es-ES/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]).
+* **windows_universal**: especifique un AUMID por aplicación para UWP. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]) y [Application](https://docs.microsoft.com/es-ES/uwp/schemas/appxpackage/appxmanifestschema/element-application) (Aplicación).
+* **windows_win32**: especifique un AUMID por aplicación. En aplicaciones win32, tendrá que usar un script para recuperar esta información. Para más información, vea [Find the Application User Model ID of an installed app (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) (Buscar el identificador de modelo de usuario de la aplicación de una aplicación instalada [Industry 8.1]).
 * **android**: para más información, vea [Cambiar el nombre de paquete](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios**: para más información, vea [Bundle](https://developer.apple.com/documentation/foundation/bundle) y [Required, localizable, and editable properties](https://help.apple.com/itunes-connect/developer/#/devfc3066644) (Propiedades requeridas, localizables y editables).
 * **msa**: inicie sesión en el [Portal de registro de aplicaciones](https://apps.dev.microsoft.com). Puede ver el identificador de aplicación y el identificador de cliente de cualquiera de las aplicaciones. Se admiten tanto los identificadores del SDK de Live (valores hexadecimales) como los de aplicaciones convergentes (GUID).   

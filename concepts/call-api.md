@@ -3,7 +3,7 @@ title: Llamar a la API de Microsoft Graph
 description: 'Para tener acceso y manipular un recurso de Microsoft Graph, se debe llamar a las direcciones URL del recurso y especificarlas mediante una de las siguientes operaciones:   '
 ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092846"

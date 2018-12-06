@@ -3,7 +3,7 @@ title: Información general sobre la API de contenido y sitios de SharePoint
 description: SharePoint es su intranet móvil inteligente. Con SharePoint, los usuarios pueden compartir y administrar contenido, conocimientos y aplicaciones para mejorar el trabajo en equipo, buscar información y colaborar en la organización. Puede usar la API de REST de SharePoint en Microsoft Graph para integrar sus soluciones con contenidos y sitios de SharePoint.
 ms.openlocfilehash: e71ef735cadf13ddb05799431fcf74ae9b3fa463
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092912"

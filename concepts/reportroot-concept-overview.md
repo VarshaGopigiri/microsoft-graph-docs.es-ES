@@ -3,7 +3,7 @@ title: Información general sobre la API de informes de Microsoft Graph
 description: Los informes de uso en el Centro de administración de Microsoft 365 permiten a los administradores comprender el uso de su empresa de servicios de Office 365. Puede usar la API de informes de Microsoft Graph para realizar la integración con los informes de uso de Office 365.
 ms.openlocfilehash: d923d0003a276be15620998c53693a9bab7116d5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092897"

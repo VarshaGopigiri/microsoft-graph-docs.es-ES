@@ -3,7 +3,7 @@ title: Introducción a la conexión a los datos de Microsoft Graph (versión pre
 description: 'Microsoft Graph contiene datos enriquecidos sobre los trabajadores y su lugar de trabajo, incluida información sobre cómo trabajan y cómo se comunican, colaboran o gestionan su tiempo. La conexión a los datos de Microsoft Graph transfiere estos datos a Microsoft Azure, proporcionándote así acceso a las mejores herramientas de desarrollo y hospedaje para trabajar dichos datos. Esto permite a los clientes beneficiarse de aplicaciones innovadoras o específicas del sector que aumentan la productividad, pero sin dejar de mantener pleno control sobre sus datos de Microsoft Graph. Microsoft ofrece lo que desea cualquier cliente: el control más seguro.'
 ms.openlocfilehash: cce6046c9ed9b57171e998b1cb17c4e92fa0fcb5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092854"

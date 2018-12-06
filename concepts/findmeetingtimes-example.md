@@ -3,7 +3,7 @@ title: Buscar horas posibles para una reunión en el Calendario de Outlook
 description: 'Buscar un horario y un lugar comunes para reunirse en un área profesional o académica a menudo conlleva sobrecargas. Las aplicaciones de Microsoft Graph pueden usar '
 ms.openlocfilehash: 92390509f68d469cf9912e9e903a2576b8fa7506
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092953"

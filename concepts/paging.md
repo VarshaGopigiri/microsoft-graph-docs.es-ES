@@ -3,7 +3,7 @@ title: 'Paginación de los datos de Microsoft Graph en la aplicación '
 description: 'La propiedad odata.nextLink` en la respuesta que contiene una dirección URL a la siguiente página de resultados. '
 ms.openlocfilehash: 9a9224a6dc710fa70ebec2448bf2eef2238968ca
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092911"

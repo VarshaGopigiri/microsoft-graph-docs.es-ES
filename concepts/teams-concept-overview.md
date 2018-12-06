@@ -3,7 +3,7 @@ title: Introducción a la API de Microsoft Teams
 description: 'Microsoft Teams es el centro definitivo para el trabajo en equipo y las comunicaciones inteligentes. '
 ms.openlocfilehash: 1f210bf529769c96f22c2c7180d3736cdc9ed776
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092864"
@@ -21,7 +21,7 @@ Para reunir al nuevo equipo para discutir sobre el problema empresarial, [agregu
 
 ![Automatice los ciclos de vida del equipo creando un equipo, agregando a miembros y propietarios, estableciendo la configuración del equipo, agregando canales y pestañas, instalando aplicaciones y archivando o eliminando el equipo cuando llegue el momento de hacerlo.](images/teams-lifecycle.png)
 
-Cuando se solucione el problema empresarial y ya no necesite el equipo, use la API de Microsoft Teams [archivar](/graph/api/team-archive?view=graph-rest-1.0) o [eliminar](/graph/api/group-delete?view=graph-rest-1.0) el equipo.  Si conoce la duración máxima del equipo virtual al crearlo, establezca una [directiva de expiración de grupo de Office 365](https://support.office.com/es-ES/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) para el equipo para eliminarlo automáticamente de acuerdo con la fecha de la directiva.
+Cuando se solucione el problema empresarial y ya no necesite el equipo, use la API de Microsoft Teams [archivar](/graph/api/team-archive?view=graph-rest-1.0) o [eliminar](/graph/api/group-delete?view=graph-rest-1.0) el equipo.  Si conoce la duración máxima del equipo virtual al crearlo, establezca una [directiva de expiración de grupo de Office 365](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) para el equipo para eliminarlo automáticamente de acuerdo con la fecha de la directiva.
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>Trabajar incluso cuando nadie esté disponible
 

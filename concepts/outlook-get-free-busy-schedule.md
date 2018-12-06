@@ -3,7 +3,7 @@ title: Obtener la programación de disponibilidad de usuarios y recursos (versi�
 description: En el trabajo o la escuela, es común querer ver cuándo un usuario está libre para una reunión o mirar la disponibilidad de un equipo, sala o equipamiento durante un período de tiempo.
 ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092916"

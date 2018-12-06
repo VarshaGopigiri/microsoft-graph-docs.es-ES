@@ -3,7 +3,7 @@ title: Información general sobre la API de Microsoft Bookings
 description: 'Microsoft Bookings proporciona aplicaciones en línea y móviles que hacen que la programación de citas sea simple y eficiente para pequeñas empresas y sus clientes. Las empresas pequeñas que proporcionan sus servicios en forma de cita, como talleres, peluquerías y bufetes de abogados, pueden beneficiarse de tener sus reservas administradas, de forma que se libera tiempo para la tarea más importante: hacer crecer el negocio. Microsoft Bookings está disponible para negocios que tengan una suscripción de Office 365 Empresa Premium.'
 ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092898"
@@ -39,6 +39,6 @@ Vea la [API de Microsoft Bookings en Microsoft Graph beta](/graph/api/resources/
 Obtenga más información sobre:
 
 - 
-  [Microsoft Bookings](https://support.office.com/es-ES/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) y otras [aplicaciones empresariales de Office 365](https://support.office.com/es-ES/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+  [Microsoft Bookings](https://support.office.com/es-ES/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) y otras [aplicaciones empresariales de Office 365](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Usar la API de Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) en Microsoft Graph.
 

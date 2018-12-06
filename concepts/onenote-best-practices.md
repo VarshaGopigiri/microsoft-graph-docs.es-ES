@@ -3,7 +3,7 @@ title: Procedimientos recomendados para trabajar con las API de OneNote en Micro
 description: Este artículo proporciona recomendaciones para el trabajo con las API de OneNote en Microsoft Graph. Estas recomendaciones se basan en respuestas a preguntas comunes que se hacen en Stack Overflow y Twitter.
 ms.openlocfilehash: d7135b09c11150181a479b6b9a00ab11247de11c
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092871"

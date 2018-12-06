@@ -3,7 +3,7 @@ title: Experiencias multidispositivo en Microsoft Graph
 description: 'En el mundo actual de varios dispositivos, la forma en que los consumidores usan los dispositivos abarca distintas plataformas y factores de forma: pueden leer las noticias de la mañana en sus tabletas, consultar el correo electrónico en el teléfono al ir al trabajo, y usar el equipo PC de escritorio en la oficina. Por la noche, puede que vean películas en las consolas multimedia del hogar y usen altavoces inteligentes para informarse sobre las noticias del día. El cliente medio usa varios dispositivos y plataformas a lo largo del día. '
 ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092790"

@@ -3,7 +3,7 @@ title: Obtener mensajes de Outlook en una carpeta compartida o delegada
 description: 'Estos temas también tienen sección similar: lista de eventos, obtener evento, obtener calendario, lista de contactos, obtener contactos, obtener la carpeta de contactos.'
 ms.openlocfilehash: d9e04527879cb32f14dc8d74a814a54150c5b2d0
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092862"

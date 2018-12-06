@@ -3,7 +3,7 @@ title: Obtener tokens de acceso para llamar a Microsoft Graph
 description: 'Para llamar a Microsoft Graph, su aplicación debe adquirir un token de acceso de Azure Active Directory (Azure AD), el servicio de identidad en la nube de Microsoft. El token de acceso contiene información (o notificaciones) sobre la aplicación y los permisos que tiene para los recursos y las API disponibles a través de Microsoft Graph. Para obtener un token de acceso, la aplicación debe poder autenticarse con Azure AD y disponer de la autorización de un usuario o un administrador para tener acceso a los recursos de Microsoft Graph que necesita. '
 ms.openlocfilehash: 2dc05d2edf1e5096b525d880b7d363f2e98721b0
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092767"

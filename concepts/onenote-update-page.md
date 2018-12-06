@@ -3,7 +3,7 @@ title: Actualizar el contenido de la página de OneNote
 description: " Blocs de notas de empresa en Office 365"
 ms.openlocfilehash: 746520c5071dba0cf11d2fde02daa502522c56f6
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092839"

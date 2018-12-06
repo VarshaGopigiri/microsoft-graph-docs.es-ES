@@ -3,7 +3,7 @@ title: Llamar a los servicios de Office 365 en Visual Studio 2017 con la API de 
 description: Puede utilizar Servicios conectados en Visual Studio a fin de configurar su aplicación para llamar a la API de Microsoft Graph. En este artículo se describe cómo obtener una foto de perfil del usuario que ha iniciado sesión, cargarla en OneDrive y enviar un correo electrónico con un vínculo para compartir a la foto.
 ms.openlocfilehash: 33469dec7014d81ed55c2efceb96a26c2651d239
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092845"

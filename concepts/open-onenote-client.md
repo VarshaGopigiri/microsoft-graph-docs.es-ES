@@ -3,7 +3,7 @@ title: Abrir el cliente de OneNote
 description: 'Puede usar la propiedad **links** de una página o un bloc de notas para abrir una aplicación de OneNote en una página o bloc de notas determinado. '
 ms.openlocfilehash: c82507243488777e557b18e599edb86b2ac15622
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092880"

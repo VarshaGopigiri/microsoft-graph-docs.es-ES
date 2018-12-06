@@ -3,7 +3,7 @@ title: Información general sobre la API de contactos personales de Outlook
 description: Los contactos de Outlook le permiten almacenar datos de contactos personales y forma parte del centro de mensajes de Outlook en Office 365. En Outlook, puede administrar correos electrónicos, programar reuniones, buscar información sobre los usuarios de una organización, iniciar conversaciones en línea, compartir archivos y colaborar en grupos.
 ms.openlocfilehash: 0e8967fbb89b2d39e002826e9eb3f7f792c37a11
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092762"

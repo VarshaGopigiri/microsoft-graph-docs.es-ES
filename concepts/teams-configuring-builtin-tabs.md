@@ -3,7 +3,7 @@ title: Configuración de los tipos de pestañas integradas en Microsoft Teams
 description: 'Crear o configurar una pestaña de Microsoft Teams mediante las API de Microsoft Graph, '
 ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092817"
@@ -15,7 +15,7 @@ En este artículo se explica cómo obtener esos valores para los tipos de pesta�
 
 ## <a name="custom-tabs"></a>Pestañas personalizadas
 
-Para usar Microsoft Graph para configurar una pestaña asociada a un [proveedor de pestañas](https://docs.microsoft.com/es-ES/microsoftteams/platform/concepts/tabs/tabs-overview) que haya escrito, identifique el `entityId`, `contentUrl`, `removeUrl`, y `websiteUrl` que la interfaz de usuario de configuración de la aplicación [ proporciona a Microsoft Teams](https://docs.microsoft.com/es-ES/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) y coloque los mismos valores de `entityId`, `contentUrl`, `removeUrl` y `websiteUrl` en Microsoft Graph.
+Para usar Microsoft Graph para configurar una pestaña asociada a un [proveedor de pestañas](https://docs.microsoft.com/es-ES/microsoftteams/platform/concepts/tabs/tabs-overview) que haya escrito, identifique el `entityId`, `contentUrl`, `removeUrl`, y `websiteUrl` que la interfaz de usuario de configuración de la aplicación [ proporciona a Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) y coloque los mismos valores de `entityId`, `contentUrl`, `removeUrl` y `websiteUrl` en Microsoft Graph.
 
 El `teamsAppId` es el mismo que el `id` en el [esquema de manifiesto de aplicación para Microsoft Teams](https://docs.microsoft.com/es-ES/microsoftteams/platform/resources/schema/manifest-schema).
 

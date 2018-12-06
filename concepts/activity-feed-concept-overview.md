@@ -3,7 +3,7 @@ title: Usar la API de fuente de actividades en Microsoft Graph para facilitar ex
 description: Al usar las actividades, estas experiencias de Microsoft pueden facilitar la interacción con la aplicación. También puede mostrar actividades en las aplicaciones para ayudar a los usuarios a continuar con lo que estaban haciendo en cualquier dispositivo y desde cualquier plataforma, como Windows, Android y iOS.
 ms.openlocfilehash: 768326a5a18962f28aebe2e66b7dbd2a95b1a7bb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092765"

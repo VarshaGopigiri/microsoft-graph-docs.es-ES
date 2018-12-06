@@ -3,7 +3,7 @@ title: Usar las API de REST para acceder a los buzones en las implementaciones h
 description: Microsoft Graph siempre ha proporcionado acceso a buzones de cliente en la nube en Exchange Online como parte de Office 365.
 ms.openlocfilehash: 78b324765c580e76f080e2e8023e52617b3851f3
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27092780"
@@ -45,6 +45,6 @@ Microsoft Graph ofrece apertura (compatibilidad con estándares abiertos como JS
 Los administradores de TI pueden encontrar más información en los siguientes recursos:
 
 - 
-  [Implementaciones híbridas de Exchange Server](https://technet.microsoft.com/es-ES/library/jj200581(v=exchg.150).aspx)
+  [Implementaciones híbridas de Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
 - [Lanzamiento de la actualización acumulativa de septiembre de 2016](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [Requisitos de la arquitectura local de la API de REST](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)
