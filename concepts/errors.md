@@ -1,10 +1,20 @@
+---
+title: Respuestas de error de Microsoft Graph y tipos de recursos
+description: "  "
+ms.openlocfilehash: a4641b4e4de5adcb3ce6b935aaabe504d76e6676
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27092795"
+---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respuestas de error de Microsoft Graph y tipos de recursos
 
 <!--In this article:
   
--    [Status code](#msg_status_code)
--    [Error resource type](#msg_error_resource_type)
--    [Code property](#msg_code_property)
+-   [Status code](#msg-status-code)
+-   [Error resource type](#msg-error-resource-type)
+-   [Code property](#msg-code-property)
 
 <a name="msg_error_response"> </a> -->
 
@@ -18,7 +28,7 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Solicitud incorrecta (Bad Request)                     | No se puede procesar la solicitud porque es incorrecta o tiene un formato no válido.                                                                       |
 | 401         | No autorizado (Unauthorized)                    | La información de autenticación requerida no se encuentra o no es válida para el recurso.                                                   |
-| 403         | Prohibido (Forbidden)                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes.                                                 |
+| 403         | Prohibido (Forbidden)                       | Se denegó el acceso al recurso solicitado. Puede que el usuario no tenga permisos suficientes. <br /><br /> **Importante:** Si se aplican las directivas de acceso condicional a un recurso, puede que se devuelva un error HTTP 403; Forbidden error = insufficent_claims. Para obtener más información sobre Microsoft Graph y el acceso condicional vea [Instrucciones para desarrolladores para Acceso condicional de Azure Active Directory](https://docs.microsoft.com/es-ES/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | No encontrado (Not Found)                       | El recurso solicitado no existe.                                                                                                  |
 | 405         | Método no permitido (Method Not Allowed)              | No se permite el método HTTP de la solicitud en el recurso.                                                                         |
 | 406         | No es aceptable (Not Acceptable)                  | Este servicio no es compatible con el formato solicitado en el encabezado Accept.                                                                |
@@ -29,7 +39,8 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 | 413         | Entidad de solicitud demasiado grande (Request Entity Too Large)        | El tamaño de la solicitud supera el límite máximo.                                                                                            |
 | 415         | Tipo de medio no compatible (Unsupported Media Type)          | El tipo de contenido de la solicitud es un formato que no es compatible con el servicio.                                                      |
 | 416         | El rango solicitado no se cumple (Requested Range Not Satisfiable) | El rango de bytes especificado no es válido o no está disponible.                                                                                    |
-| 422         | Entidad no procesable (Unprocessable Entity)            | No se puede procesar la solicitud porque es semánticamente incorrecta.                                                                       |
+| 422         | Entidad no procesable (Unprocessable Entity)            | No se puede procesar la solicitud porque es semánticamente incorrecta.                                                                        |
+| 423         | Bloqueado                          | El recurso al que está accediendo está bloqueado.                                                                                          |
 | 429         | Demasiadas solicitudes (Too Many Requests)               | La aplicación del cliente se ha limitado y no debería intentar repetir la solicitud hasta haya transcurrido un periodo de tiempo.                |
 | 500         | Error interno del servidor (Internal Server Error)           | Se produjo un error interno del servidor al procesar la solicitud.                                                                       |
 | 501         | No implementado (Not Implemented)                 | La característica solicitada no se implementó.                                                                                               |
@@ -40,7 +51,7 @@ La siguiente tabla enumera y describe los códigos de estado HTTP que se pueden 
 
 La respuesta de error es un solo objeto JSON que contiene una propiedad única denominada **error**. Este objeto incluye todos los detalles del error. Puede usar la información devuelta aquí en lugar o además del código de estado HTTP. A continuación se muestra un ejemplo de un cuerpo completo de error JSON.
 
-<!-- { "blockType": "example", "@odata.type": "sample.error", "expectError": true, "name": "example-error-response"} -->
+<!-- { "blockType": "ignored", "@odata.type": "odata.error", "expectError": true, "name": "example-error-response" } -->
 ```json
 {
   "error": {
@@ -60,13 +71,13 @@ La respuesta de error es un solo objeto JSON que contiene una propiedad única d
 
 El recurso de error se devuelve cuando se produce un error en el procesamiento de una solicitud.
 
-Las respuestas de error siguen la definición en la especificación [OData v4](http://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) de las respuestas de error.
+Las respuestas de error siguen la definición en la especificación [OData v4](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091) de las respuestas de error.
 
 ### <a name="json-representation"></a>Representación JSON
 
 El recurso de error se compone de estos recursos:
 
-<!-- { "blockType": "resource", "@odata.type": "sample.error" } -->
+<!-- { "blockType": "resource", "@odata.type": "odata.error" } -->
 ```json
 {
   "error": { "@odata.type": "odata.error" }  
@@ -91,13 +102,6 @@ En la respuesta del error se encuentra un recurso de error que incluye las sigui
 | **code**       | string                 | Una cadena de código de error para el error que se ha producido                                                            |
 | **message**    | string                 | Un mensaje preparado de desarrollador sobre el error que se ha producido. Esto no debe mostrarse al usuario directamente. |
 | **innererror** | error object           | Opcional. Objetos de error adicionales que pueden ser más específicos que el error de nivel superior.                     |
-<!-- {
-  "type": "#page.annotation",
-  "description": "Understand the error format for the API and error codes.",
-  "keywords": "error response, error, error codes, innererror, message, code",
-  "section": "documentation",
-  "tocPath": "Misc/Error Responses"
-} -->
 
 <!--<a name="msg_code_property"> </a> -->
 
@@ -197,4 +201,16 @@ A continuación, se presentan algunos errores adicionales que su aplicación pue
 <!-- ##Additional Resources##
 
 - [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](http://dev.office.com/hands-on-labs/4585) -->
+- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Understand the error format for the API and error codes.",
+  "keywords": "error response, error, error codes, innererror, message, code",
+  "section": "documentation",
+  "suppressions": [
+    " Warning: /concepts/errors.md:
+      Multiple resources found in file, but we only support one per file. 'odata.error,odata.error'. Skipping."
+  ],
+  "tocPath": "Misc/Error Responses"
+} -->
