@@ -1,0 +1,239 @@
+name: Documentos de Graph
+items:
+  - name: Información general de Microsoft Graph
+    href: overview.md
+    expanded: true
+    items:
+      - name: Explorar
+        expanded: true
+        items:
+          - name: Servicios en Microsoft Graph
+            href: overview-major-services.md
+            expanded: true
+            items:
+              - name: Usuarios con los que puede contactar
+                href: users-you-can-reach.md
+                items:
+                  - name: Implementaciones de nube nacionales
+                    href: deployments.md
+                  - name: Implementaciones híbridas (versión preliminar)
+                    href: hybrid-rest-support.md
+              - name: Control de versiones y soporte técnico
+                href: versioning-and-support.md
+              - name: Términos de uso
+                href: 'https://developer.microsoft.com/graph/terms-of-use'
+          - name: Conexión de datos de Microsoft Graph (versión preliminar)
+            href: data-connect-overview.md
+          - name: Aprendizaje
+            href: training.md
+            items:
+              - name: ASP.NET
+                href: /graph/training/aspnet-tutorial/
+              - name: Microsoft Flow
+                href: /graph/training/flow-tutorial/
+              - name: Node.js
+                href: /graph/training/node-tutorial/
+              - name: PHP
+                href: /graph/training/php-tutorial/
+              - name: Python
+                href: /graph/training/python-tutorial/
+              - name: Ruby
+                href: /graph/training/ruby-tutorial/
+              - name: React
+                href: /graph/training/react-tutorial/
+              - name: UWP
+                href: /graph/training/uwp-tutorial/
+      - name: Aprender
+        expanded: true
+        items:
+          - name: Usuarios
+            href: azuread-users-concept-overview.md
+          - name: Grupos
+            href: office365-groups-concept-overview.md
+          - name: Calendario
+            href: outlook-calendar-concept-overview.md
+            items:
+              - name: Buscar horas de reunión
+                href: findmeetingtimes-example.md
+              - name: Obtener la programación de disponibilidad
+                href: outlook-get-free-busy-schedule.md
+              - name: Programar eventos periódicos
+                href: outlook-schedule-recurring-events.md
+              - name: Obtener eventos compartidos
+                href: outlook-get-shared-events-calendars.md
+              - name: Identificador inmutable (vista previa)
+                href: outlook-immutable-id.md
+          - name: Experiencias entre dispositivos
+            href: cross-device-concept-overview.md
+            items:
+              - name: Noticias de actividad
+                href: activity-feed-concept-overview.md
+              - name: Retransmisión de dispositivo (versión preliminar)
+                href: device-relay-concept-overview.md
+              - name: Notificaciones (versión preliminar)
+                href: notifications-concept-overview.md
+              - name: Crear aplicaciones para varios dispositivos
+                href: cross-device-app-configuration.md
+          - name: Reserva de cliente (versión preliminar)
+            href: booking-concept-overview.md
+          - name: Acceso de datos (versión preliminar)
+            href: data-connect-concept-overview.md
+            items:
+              - name: Introducción
+                href: data-connect-get-started.md
+          - name: Dispositivos y aplicaciones
+            href: intune-concept-overview.md
+          - name: Educación
+            href: education-concept-overview.md
+          - name: Archivos
+            href: onedrive-concept-overview.md
+          - name: Identidad y acceso
+            href: azuread-identity-access-management-concept-overview.md
+          - name: Correo
+            href: outlook-mail-concept-overview.md
+            items:
+              - name: Crear y enviar mensajes
+                href: outlook-create-send-messages.md
+              - name: Organizar mensajes
+                href: outlook-organize-messages.md
+              - name: Obtener mensajes compartidos
+                href: outlook-share-messages-folders.md
+              - name: Identificador inmutable (vista previa)
+                href: outlook-immutable-id.md
+          - name: Notas
+            href: integrate-with-onenote.md
+            items:
+              - name: Obtener contenido de OneNote
+                href: onenote-get-content.md
+              - name: Abrir el cliente de OneNote
+                href: open-onenote-client.md
+              - name: Crear páginas
+                href: onenote-create-page.md
+              - name: Actualizar contenido de la página
+                href: onenote-update-page.md
+              - name: 'Agregar imágenes, vídeos y archivos'
+                href: onenote-images-files.md
+              - name: Crear elementos con posición absoluta
+                href: onenote-abs-pos.md
+              - name: Extraer datos
+                href: onenote-extract-data.md
+              - name: Usar etiquetas de nota
+                href: onenote-note-tags.md
+              - name: RECURSOS
+              - name: HTML de entrada y salida
+                href: onenote-input-output-html.md
+              - name: Procedimientos recomendados
+                href: onenote-best-practices.md
+              - name: Instrucciones de personalización de marcas
+                href: onenote-branding.md
+              - name: Códigos de error
+                href: onenote-error-codes.md
+          - name: Contactos personales
+            href: outlook-contacts-concept-overview.md
+            items:
+              - name: Obtener contactos compartidos
+                href: outlook-get-shared-contacts-folders.md
+              - name: Identificador inmutable (vista previa)
+                href: outlook-immutable-id.md
+          - name: Informes
+            href: reportroot-concept-overview.md
+          - name: Seguridad
+            href: security-concept-overview.md
+            items:
+              - name: Flujo de datos
+                href: security-dataflow.md
+              - name: Autorización
+                href: security-authorization.md
+              - name: Integración con un SIEM
+                href: security-siemintegration.md
+                items:
+                  - name: Splunk
+                    href: security-splunk-siemintegration.md
+                  - name: QRadar
+                    href: security-qradar-siemintegration.md
+          - name: Listas y sitios
+            href: sharepoint-concept-overview.md
+          - name: Inteligencia social
+            href: social-intel-concept-overview.md
+            items:
+              - name: Obtener información sobre los contactos
+                href: people-example.md
+          - name: Tareas y planes
+            href: planner-concept-overview.md
+          - name: Trabajo en equipo
+            href: teams-concept-overview.md
+          - name: Libros y gráficos
+            href: excel-concept-overview.md
+            items:
+              - name: Administrar sesiones
+                href: excel-manage-sessions.md
+              - name: Mostrar una imagen del gráfico
+                href: excel-display-chart-image.md
+              - name: Usar funciones de libro
+                href: excel-use-functions.md
+              - name: Actualizar un formato de rango
+                href: excel-update-range-format.md
+              - name: Escribir datos en un libro
+                href: excel-write-to-workbook.md
+      - name: Desarrollo
+        expanded: true
+        items:
+          - name: Obtener tokens de autenticación
+            href: auth-overview.md
+            items:
+              - name: Registrar la aplicación
+                href: auth-register-app-v2.md
+              - name: Obtener acceso en nombre de un usuario
+                href: auth-v2-user.md
+              - name: Obtener acceso sin un usuario
+                href: auth-v2-service.md
+              - name: Permisos
+                href: permissions-reference.md
+              - name: Administrar el acceso de la aplicación (CSP)
+                href: auth-cloudsolutionprovider.md
+          - name: Usar la API
+            href: use-the-api.md
+            items:
+              - name: Paginación
+                href: paging.md
+              - name: Usar parámetros de consulta
+                href: query-parameters.md
+              - name: Solicitudes de lote
+                href: json-batching.md
+              - name: Limitación
+                href: throttling.md
+              - name: Notificaciones de cambios
+                href: webhooks.md
+              - name: Control de cambios
+                href: delta-query-overview.md
+                items:
+                  - name: Obtener cambios de los eventos (ejemplo)
+                    href: delta-query-events.md
+                  - name: Obtener cambios de los grupos (ejemplo)
+                    href: delta-query-groups.md
+                  - name: Obtener cambios de los mensajes (ejemplo)
+                    href: delta-query-messages.md
+                  - name: Obtener cambios de los usuarios (ejemplo)
+                    href: delta-query-users.md
+              - name: Agregar datos personalizados
+                href: extensibility-overview.md
+                items:
+                  - name: Usar extensiones abiertas (ejemplo)
+                    href: extensibility-open-users.md
+                  - name: Usar extensiones de esquema (ejemplo)
+                    href: extensibility-schema-groups.md
+          - name: Resources
+            expanded: true
+            items:
+              - name: Procedimientos recomendados
+                href: best-practices-concept.md
+              - name: Problemas conocidos
+                href: known-issues.md
+              - name: Registro de cambios
+                href: changelog.md
+              - name: Errores
+                href: errors.md
+      - name: Referencia de v1.0
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+      - name: Referencia beta
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
