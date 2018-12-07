@@ -1,10 +1,10 @@
 ---
 title: Usar la API de contactos de Microsoft Graph para obtener información sobre los contactos más relevantes para usted
-description: Las aplicaciones de Microsoft Graph pueden usar la API de personas para recuperar las personas que son más relevantes para un usuario. La relevancia se determina por el usuario patrones de comunicación y colaboración y las relaciones de negocios. Personas pueden ser locales contactos, los contactos de social redes o desde el directorio de la organización y personas de communications reciente (por ejemplo, correo electrónico y Skype). Además de generar este conocimiento, la API de personas también proporciona aproximada coincidente Buscar soporte técnico y la capacidad para recuperar la lista de usuarios relevantes a otro usuario en la organización del usuario que ha iniciado sesión.
+description: Las aplicaciones de Microsoft Graph usar la API de contactos para recuperar los contactos más relevantes para un usuario. La relevancia viene determinada por las relaciones empresariales y los patrones de comunicación y colaboración del usuario. Los contactos pueden ser contactos locales, contactos de las redes sociales o el directorio de la organización y contactos de comunicaciones recientes (como de correo electrónico y Skype). Además de generar esta información, la API de contactos ofrece también compatibilidad con la búsqueda de coincidencia aproximada y la posibilidad de recuperar la lista de usuarios relevantes para otro usuario de la organización del usuario que ha iniciado sesión.
 ms.date: 12/04/2018
 ms.openlocfilehash: b01ca4538c3155bbb30224b1f92d6e7ae55c5878
 ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/05/2018
 ms.locfileid: "27156057"
@@ -17,10 +17,10 @@ Las aplicaciones de Microsoft Graph usar la API de contactos para recuperar los 
 
 Para llamar a la API de contactos de Microsoft Graph, la aplicación necesitará los permisos adecuados:
 
-* People.Read: úselo para realizar llamadas API de contactos generales (por ejemplo, `https://graph.microsoft.com/v1.0/me/people/`). People.Read necesita el consentimiento del usuario final.
-* People.Read.All - necesarios para recuperar las personas más relevantes para un usuario especificado en la organización del usuario que ha iniciado sesión (`https://graph.microsoft.com/v1.0/users('{id}')/people`) las llamadas. People.Read.All requiere consentimiento de administración.
+* People.Read: úselo para realizar llamadas API de Contactos generales (por ejemplo, `https://graph.microsoft.com/v1.0/me/people/`). People.Read requiere el consentimiento del usuario final.
+* People.Read.All: se requiere para recuperar los contactos más relevantes al usuario específico para llamadas de la organización (`https://graph.microsoft.com/v1.0/users('{id}')/people`) del usuario que ha iniciado sesión. People.Read.All requiere el consentimiento del administrador.
 
-## <a name="browse-people"></a>Examinar personas
+## <a name="browse-people"></a>Buscar personas
 
 Las solicitudes de esta sección obtienen los contactos más relevantes para el usuario que inició la sesión (`/me`), o bien un usuario específico en la organización del usuario que inició la sesión. Estas solicitudes necesitan el permiso People.Read o People.Read.All, respectivamente. De forma predeterminada, cada respuesta devuelve 10 registros, pero puede cambiar esto con el parámetro de consulta *$top*.
 
