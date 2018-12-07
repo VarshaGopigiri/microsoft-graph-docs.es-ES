@@ -1,12 +1,12 @@
 ---
 title: Tipo de recurso organization
 description: 'Representa a un inquilino de Azure Active Directory. '
-ms.openlocfilehash: 0dc7b55053ba70272c4e639dba4b62160f58f435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085812"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191147"
 ---
 # <a name="organization-resource-type"></a>Tipo de recurso organization
 
@@ -38,6 +38,7 @@ Sólo las operaciones de lectura y la actualización son compatibles con los inq
 |companyLastDirSyncTime|DateTimeOffset|La fecha y hora en que se ha sincronizado por última vez el inquilino con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |country|String| Nombre del país o región de la dirección de la organización. |
 |countryLetterCode|String| Abreviatura del país o región de la organización. |
+|createdDateTime|DateTimeOffset| Marca de hora de cuándo se creó la organización. El valor no puede modificarse y se rellena automáticamente cuando se crea la organización. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |
 |deletionTimestamp|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |dirSyncEnabled|Boolean|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado).|
 |displayName|String|El nombre para mostrar del inquilino.|

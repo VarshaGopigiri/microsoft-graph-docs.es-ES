@@ -1,12 +1,12 @@
 ---
 title: Obtener governanceRoleAssignmentRequest
 description: 'Obtenga una governanceRoleAssignmentRequest. '
-ms.openlocfilehash: 4dca14c081edc9cd3609bd4eab1c79a10953e433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: aac41bd8443d6066a7866462624a072db57b35da
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087721"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191098"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Obtener governanceRoleAssignmentRequest
 
@@ -17,7 +17,7 @@ Obtenga una [governanceRoleAssignmentRequest](../resources/governanceroleassignm
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-|Tipo de permiso      | Permissions              |
+|Tipo de permiso      | Permisos              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
@@ -78,8 +78,6 @@ Content-length: 279
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"2018-05-09T21:26:15.73-07:00",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",

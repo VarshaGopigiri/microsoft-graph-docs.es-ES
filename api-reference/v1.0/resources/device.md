@@ -1,12 +1,12 @@
 ---
 title: Tipo de recurso device
 description: Representa un dispositivo registrado en la organización. Los dispositivos se crean en la nube con el servicio de registro de dispositivos o Intune. Las directivas de acceso condicional los usan para la autenticación multifactor. Estos dispositivos pueden ir desde equipos portátiles y de escritorio hasta teléfonos y tabletas. Se hereda de directoryObject.
-ms.openlocfilehash: a6d295be8d109a6a575eb6685087ed4fecb2c3a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c32267001b309b0f701ed17d30b29f93f64f0936
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029485"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191168"
 ---
 # <a name="device-resource-type"></a>Tipo de recurso device
 
@@ -23,6 +23,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |[Enumerar dispositivos](../api/device-list.md) | Colección [device](device.md)| Recupere una lista de dispositivos registrados en el directorio. |
 |[Actualizar dispositivo](../api/device-update.md) | [device](device.md) |Actualice las propiedades de un objeto device. |
 |[Eliminar dispositivo](../api/device-delete.md) | Ninguno |Elimine un objeto device. |
+|[Enumerar memberOf](../api/device-list-memberof.md) |Colección [directoryObject](directoryobject.md)| Los grupos que el dispositivo es miembro directo de la lista. |
 |[Enumerar registeredOwners](../api/device-list-registeredowners.md) |Colección [directoryObject](directoryobject.md)| Obtenga los usuarios que son propietarios registrados del dispositivo de la propiedad de navegación registeredOwners.|
 |[Enumerar registeredUsers](../api/device-list-registeredusers.md) |Colección [directoryObject](directoryobject.md)| Obtenga los usuarios registrados del dispositivo de la propiedad de navegación registeredUsers.|
 |**Extensiones abiertas**| | |
@@ -43,7 +44,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |displayName|String|El nombre para mostrar del dispositivo. Necesario. |
 |id|String|El identificador único del dispositivo. Hereda de [directoryObject](directoryobject.md). Clave, no admite valores NULL. Solo lectura.|
 |isCompliant|Boolean|**true** si el dispositivo cumple con las directivas de administración de dispositivos móviles (MDM); en caso contrario, **false**. Solo lectura. Esto sólo se pueden actualizar por Intune para cualquier tipo de sistema operativo del dispositivo o por un [aprobado MDM aplicación](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos de sistema operativo Windows.|
-|isManaged|Booleano|**true** si una aplicación de administración de dispositivos móviles (MDM) administra el dispositivo; en caso contrario, **false**. Esto sólo se pueden actualizar por Intune para cualquier tipo de sistema operativo del dispositivo o por un [aprobado MDM aplicación](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos de sistema operativo Windows. |
+|isManaged|Boolean|**true** si una aplicación de administración de dispositivos móviles (MDM) administra el dispositivo; en caso contrario, **false**. Esto sólo se pueden actualizar por Intune para cualquier tipo de sistema operativo del dispositivo o por un [aprobado MDM aplicación](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos de sistema operativo Windows. |
 |onPremisesLastSyncDateTime|DateTimeOffset|La última hora en que se ha sincronizado el objeto con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'` Solo lectura.|
 |onPremisesSyncEnabled|Booleano|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. |
 |operatingSystem|String| El tipo de sistema operativo del dispositivo. Necesario. |
@@ -55,6 +56,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el dispositivo. Solo lectura. Admite valores NULL.|
+|memberOf|Colección [directoryObject](directoryobject.md)|Grupos a los que pertenece este grupo. Métodos HTTP: GET (compatible con todos los grupos). Solo lectura. Admite valores NULL.|
 |registeredOwners|Colección [directoryObject](directoryobject.md)|Usuario que ha unido el dispositivo a la nube o que ha registrado su dispositivo personal. El propietario registrado se establece en el momento del registro. Actualmente, solo puede haber un propietario. Solo lectura. Admite valores NULL. |
 |registeredUsers|Colección [directoryObject](directoryobject.md)|Colección de usuarios registrados del dispositivo. En el caso de los dispositivos unidos a la nube y los dispositivos personales registrados, los usuarios registrados se establecen en el mismo valor que los propietarios registrados en el momento del registro. Solo lectura. Admite valores NULL.|
 

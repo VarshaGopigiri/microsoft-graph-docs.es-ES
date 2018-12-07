@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso governanceRoleAssignment
 description: Representa la asignación de un usuario o grupo a una función.
-ms.openlocfilehash: e29ab163c837ee04f141bdc496abeac760d6a372
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083816"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191140"
 ---
 # <a name="governanceroleassignment-resource-type"></a>tipo de recurso governanceRoleAssignment
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
@@ -15,8 +15,8 @@ Representa la asignación de un usuario o grupo a una función.
 
 Administración de identidad con privilegios (PIM) admite dos tipos de asignaciones:
 
-1. Asignación activa - representa el acceso directo a los recursos.
-2. Asignación optan - representa una fase intermedia de acceso con privilegios a los recursos entre sin acceso y el acceso directo. Los administradores pueden asignar temporalmente a los usuarios o grupos a `eligible assignment` de antemano. Cada vez que se necesita el acceso para los miembros de los usuarios o grupos, `activation` en el `eligible assignment` es necesario para obtener el acceso instantáneo a los recursos para varias horas. Después de la activación, un `active assignment` se creará para que los miembros de los usuarios o grupos indicar el estado activado.
+1. Asignación activa - representa el acceso directo/activa a los recursos.
+2. Asignación optan - representa una fase intermedia de acceso con privilegios a los recursos entre sin acceso y el acceso directo. Los administradores pueden asignar a los usuarios o grupos a `eligible assignment` de antemano y cada vez que se necesita el acceso, `activation` en el `eligible assignment` es necesario para obtener el acceso instantáneo a los recursos para varias horas. Después de la activación, un `active assignment` se creará para que los miembros de los usuarios o grupos indicar el estado activado.
 
 ## <a name="methods"></a>Métodos
 
@@ -32,12 +32,11 @@ No `POST`, `PUT`, `PATCH`, o `DELETE` operaciones son compatibles con el `roleAs
 | Propiedad  | Tipo      |Descripción|
 |:----------|:----------|:----------|
 |id         |String     |El identificador de la asignación de roles. Está en formato de GUID.|
-|resourceId |Cadena     |Necesario. El identificador del recurso que está asociada la asignación de roles. |
-|roleDefinitionId|Cadena|Necesario. El identificador de la definición de roles que está asociada la asignación de roles. |
-|///SubjectID|Cadena       |Necesario. El identificador del sujeto que está asociada la asignación de roles. |
+|resourceId |Cadena     |Obligatorio. El identificador del recurso que está asociada la asignación de roles. |
+|roleDefinitionId|Cadena|Obligatorio. El identificador de la definición de roles que está asociada la asignación de roles. |
+|///SubjectID|Cadena       |Obligatorio. El identificador del sujeto que está asociada la asignación de roles. |
 |linkedEligibleRoleAssignmentId|String|Si se trata de un `active assignment` y creado debido a la activación en un `eligible assignment`, que representa el identificador de la que `eligible assignment`; De lo contrario, el valor es `null`. |
 |externalId   |String     |El identificador externo el recurso que se usa para identificar la asignación de roles en el proveedor.|
-|isPermanent|Booleano    |Indica si la asignación de roles es una asignación permanente.|
 |startDateTime|DateTimeOffset|La hora de inicio de la asignación de roles. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|Para una asignación de roles de no permanente, es la hora cuando la asignación de rol caducará. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |assignmentState|String  |El estado de la asignación. El valor puede ser <ul><li> `Eligible`para asignación optan</li><li> `Active`-Si está asignada directamente `Active` por los administradores, o activado en una asignación optan por los usuarios.</li></ul>|
@@ -73,7 +72,6 @@ Aquí tiene una representación JSON del recurso.
   "subjectId": "String",
   "linkedEligibleRoleAssignmentId": "String",
   "externalId": "String",
-  "isPermanent": true,
   "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "assignmentState": "String",

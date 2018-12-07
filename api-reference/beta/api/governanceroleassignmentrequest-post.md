@@ -1,12 +1,12 @@
 ---
 title: Crear governanceRoleAssignmentRequest
 description: Cree una solicitud de asignación de rol para representar la operación que desee en una asignación de roles. En la siguiente tabla se enumera las operaciones.
-ms.openlocfilehash: b0d9edab1182d4a6fa620cfb953df1cb8af20c66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086018"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191175"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Crear governanceRoleAssignmentRequest
 
@@ -30,7 +30,7 @@ Cree una solicitud de asignación de rol para representar la operación que dese
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-|Tipo de permiso      | Permissions              |
+|Tipo de permiso      | Permisos              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
@@ -42,17 +42,14 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método no **no** hay compatibilidad con [los parámetros de consulta de OData](/graph/query-parameters).
-
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Autorización  | Portador {código}|
 | Tipo de contenido  | application/json|
 
-### <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
+## <a name="request-body"></a>Cuerpo de la solicitud
+En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 | Propiedad     | Tipo    |Obligatorio|  Descripción|
 |:---------------|:--------|:----------|:----------|
@@ -64,11 +61,11 @@ En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [
 |motivo|String| |Necesita la razón por la que se proporcionará para la solicitud de asignación de rol para auditoría y revise el propósito.|
 |programación|[governanceSchedule](../resources/governanceschedule.md)| | La programación de la solicitud de asignación de rol. Para tipo de solicitud de `UserAdd`, `AdminAdd`, `AdminUpdate`, y `AdminExtend`, es necesario.|
 
-### <a name="response"></a>Respuesta
-Si tiene éxito, este método devuelve una `201, Created` código de respuesta y un objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) en el cuerpo de la respuesta.
+## <a name="response"></a>Respuesta
+Si tiene éxito, este método devuelve una `201 Created` código de respuesta y un objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) en el cuerpo de la respuesta.
 
-## <a name="error-codes"></a>Códigos de error
-Esta API sigue el estándar de los códigos de HTTP, además de los códigos de error que aparecen en la siguiente tabla.
+### <a name="error-codes"></a>Códigos de error
+Esta API devuelve los códigos de error HTTP estándares. Además, también devuelve los códigos de error que aparecen en la siguiente tabla.
 
 |Código de error     | Mensaje de error              | Detalles |
 |:--------------------| :---------------------|:--------------------|
@@ -80,10 +77,13 @@ Esta API sigue el estándar de los códigos de HTTP, además de los códigos de 
 | 400 BadRequest | RoleAssignmentDoesNotExist    | El [governanceRoleAssignment](../resources/governanceroleassignment.md) solicitado se actualizó y ampliar no existe en el sistema.
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | La [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no cumple las políticas internas y no se puede crear.
 
-## <a name="example-1"></a>Ejemplo 1
+## <a name="examples"></a>Ejemplos
+Los siguientes ejemplos muestran cómo usar esta API.
+
+### <a name="example-1"></a>Ejemplo 1
 En este ejemplo, los administradores asignan nawu@fimdev.net usuario a la función de lector de facturación.
 
- >**Nota:** Además de los permisos, en este ejemplo se requiere que el solicitante puede tener al menos uno `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso. 
+ >**Nota:** Además de los permisos, en este ejemplo se requiere que el solicitante tiene al menos una `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso. 
 
 | Propiedad     | Tipo    |Obligatorio|  Valor |
 |:---------------|:--------|:----------|:----------|
@@ -137,8 +137,6 @@ Content-length: 226
     "type": "AdminAdd",
     "assignmentState": "Eligible",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
-    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
     "reason": "Evaluate Only",
     "status": {
         "status": "InProgress",
@@ -167,7 +165,7 @@ Content-length: 226
 }
 ```
 
-## <a name="example-2"></a>Ejemplo 2
+### <a name="example-2"></a>Ejemplo 2
 En este ejemplo, el usuario nawu@fimdev.net activa la función de lector de facturación optan.
 
 | Propiedad     | Tipo    |Obligatorio|  Valor |
@@ -222,8 +220,6 @@ Content-type: application/json
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
-    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
     "reason": "Activate the owner role",
     "status": {
         "status": "InProgress",
@@ -264,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3"></a>Ejemplo 3
+### <a name="example-3"></a>Ejemplo 3
 En este ejemplo, el usuario nawu@fimdev.net desactiva la función de lector de facturación activada.
 
 | Propiedad     | Tipo    |Obligatorio|  Valor |
@@ -315,8 +311,6 @@ Content-length: 226
     "type": "UserRemove",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": null,
-    "roleAssignmentEndDateTime": null,
     "reason": "Evaluate only",
     "schedule": null,
     "status": {
@@ -330,7 +324,7 @@ Content-length: 226
 ### <a name="example-4"></a>Ejemplo 4
 En este ejemplo, los administradores de quitar el usuario nawu@fimdev.net de la función de lector de facturación.
 
- >**Nota:** Además el ámbito de permisos, en este ejemplo se requiere que el solicitante puede tener al menos uno `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso.
+ >**Nota:** Además de los permisos, en este ejemplo se requiere que el solicitante tiene al menos una `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso.
  
 | Propiedad     | Tipo    |Obligatorio|  Valor |
 |:---------------|:--------|:----------|:----------|
@@ -379,8 +373,6 @@ Content-length: 226
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",
@@ -394,7 +386,8 @@ Content-length: 226
 ### <a name="example-5"></a>Ejemplo 5
 En este ejemplo, los administradores actualizar la asignación de rol para el usuario nawu@fimdev.net al propietario.
 
- >**Nota:** Además el ámbito de permisos, en este ejemplo se requiere que el solicitante puede tener al menos uno `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso. 
+ >**Nota:** Además de los permisos, en este ejemplo se requiere que el solicitante tiene al menos una `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso. 
+
 | Propiedad     | Tipo    |Obligatorio|  Valor |
 |:---------------|:--------|:----------|:----------|
 |resourceId|Cadena|Sí|\<resourceId\>|
@@ -447,8 +440,6 @@ Content-length: 226
   "type":"AdminUpdate",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
-  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
   "reason":null,
   "status":{
     "status":"InProgress",
@@ -475,7 +466,7 @@ Content-length: 226
 ### <a name="example-6"></a>Ejemplo 6
 En este ejemplo se extiende la asignación de roles a punto de expirar para usuario ANUJCUSER a la API de administración de servicio colaborador.
 
- >**Nota:** Además el ámbito de permisos, en este ejemplo se requiere que el solicitante puede tener al menos uno `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso.
+ >**Nota:** Aparte de los permisos, en este ejemplo se requiere que el solicitante tiene al menos una `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso.
  
 | Propiedad     | Tipo    |Obligatorio|  Valor |
 |:---------------|:--------|:----------|:----------|
@@ -530,8 +521,6 @@ Content-length: 226
   "type":"AdminExtend",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
-  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
   "reason":"extend role assignment",
   "status":{
     "status":"InProgress",

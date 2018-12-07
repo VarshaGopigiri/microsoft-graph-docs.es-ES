@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso governanceResource
 description: Representa los recursos que se pueden administrar mediante la administración de identidad con privilegios (PIM). Para obtener recursos de Azure, puede ser una suscripción a un grupo de recursos y un recurso, como una máquina virtual, una base de datos de SQL, etcetera.
-ms.openlocfilehash: 9e47f1295f9498796d51414a0a97acbe51fe1aae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 6a048680c3b9bb614287e764d547a20bd09b5d25
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087423"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191133"
 ---
 # <a name="governanceresource-resource-type"></a>tipo de recurso governanceResource
 
@@ -20,7 +20,8 @@ Representa los recursos que se pueden administrar mediante la administración de
 | Método          | Tipo de valor devuelto |Descripción|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | colección de [governanceResource](../resources/governanceresource.md)|Una colección de recursos que el solicitante tiene acceso a los de la lista.|
-|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Propiedades de lectura y las relaciones de una entidad de recurso especificado por id.|
+|[Obtener](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Propiedades de lectura y las relaciones de una entidad de recurso especificado por id.|
+|[Registrar](../api/governanceresource-register.md) | |Registrar un grupo de suscripción o administración no administrado Azure al servicio PIM. |
 
 No `POST`, `PUT`, `PATCH`, `DELETE` son compatibles con `roleDefinitions` conjunto de entidades por ahora.
 
@@ -28,11 +29,12 @@ No `POST`, `PUT`, `PATCH`, `DELETE` son compatibles con `roleDefinitions` conjun
 | Propiedad          |Tipo         |Descripción|
 |:------------------|:----------|:----------|
 |id                 |String     |El identificador del recurso. Está en formato de GUID.|
-|externalId           |String   |El identificador externo del recurso, que representa su identificador original en la base de datos externo. Por ejemplo, el identificador de un recurso de suscripción externo puede ser "/ suscripciones/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
-|type               |Cadena     |Necesario. Tipo de recurso. Por ejemplo, para los recursos de Azure, el tipo podría ser "Suscripción", "ResourceGroup", "Microsoft.Sql/server", etcetera.|
+|externalId           |String   |El identificador externo del recurso, que representa su identificador original en el sistema externo. Por ejemplo, el identificador de un recurso de suscripción externo puede ser "/ suscripciones/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
+|type               |Cadena     |Obligatorio. Tipo de recurso. Por ejemplo, para los recursos de Azure, el tipo podría ser "Suscripción", "ResourceGroup", "Microsoft.Sql/server", etcetera.|
 |displayName        |String     |El nombre para mostrar del recurso.|
 |status             |String     |El estado de un recurso determinado. Por ejemplo, podría representar si el recurso está bloqueado o no (valores: `Active` / `Locked`). Nota: Esta propiedad puede ampliarse en el futuro para admitir escenarios más.|
-|onboardDateTime|DateTimeOffset      |Representa la fecha hora cuando se inicia el recurso administrado por PIM.|
+|registeredDateTime|DateTimeOffset      |Representa la fecha y hora cuando el recurso está registrado en PIM.|
+|registeredRoot|String      |ExternalId del ámbito de raíz del recurso que está registrado en PIM. Ámbito de la raíz puede ser el primario, principal o superiores recursos antecesor.|
 |roleAssignmentCount|Int32      |Opcional. El número de asignaciones de roles para el recurso determinado. Para obtener la propiedad, por favor, use explícitamente `$select=roleAssignmentCount` en la consulta.|
 |roleDefinitionCount|Int32      |Opcional. El número de definiciones de roles para el recurso determinado. Para obtener la propiedad, por favor, use explícitamente `$select=roleDefinitionCount` en la consulta.|
 |permissions|[governancePermission](../resources/governancepermission.md)      |Opcional. Representa el estado de acceso del solicitante para el recurso. Para obtener la propiedad, por favor, use explícitamente `$select=permissions` en la consulta.|
@@ -48,7 +50,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` son compatibles con `roleDefinitions` conjun
 
 ## <a name="json-representation"></a>Representación JSON
 
-Aquí tiene una representación JSON del recurso.
+La siguiente es una representación JSON del recurso
 
 <!-- {
   "blockType": "resource",
@@ -63,7 +65,9 @@ Aquí tiene una representación JSON del recurso.
   "externalId": "String",
   "type": "String",
   "displayName": "String",
-  "status": "String"
+  "status": "String",
+  "registeredDateTime": "String (timestamp)",
+  "registeredRoot": "String"
 }
 
 ```

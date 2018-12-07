@@ -1,12 +1,12 @@
 ---
 title: Registro de cambios para Microsoft Graph
 description: Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.
-ms.openlocfilehash: f7930e73cbfb1a8bf924e72ea790167bb263ba6a
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156071"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184563"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Registro de cambios de Microsoft Graph
 
@@ -20,7 +20,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 | **Tipo de cambio** | **Versión** | **Descripción**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adición        | beta        | Se ha agregado una nueva **progress** a [dataPolicyOperation](../api-reference/beta/resources/dataPolicyOperation) Especifica el progreso de una operación.
+| Adición        | beta        | Se ha agregado una nueva **progress** a [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta) Especifica el progreso de una operación.
 
 ### <a name="microsoft-teams-apis"></a>Las API de Microsoft Teams
 
@@ -118,10 +118,10 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 ### <a name="directory-apis"></a>API de directorio
 
-| **Tipo de cambio** | **Versión**   | **Descripción**                          | 
-| :-------------- | :------------ | :--------------------------------------- | 
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 | Adición | Beta | Se agregó la propiedad **licenseAssignmentStates** a la entidad [User](/graph/api/resources/user?view=graph-rest-beta) para [Licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Adición | Beta | Se agregó el recurso **licenseAssignmentState** para [Licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Adición | Beta | Se agregó el recurso **licenseAssignmentState** para [Licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Adición | Beta | Se agregaron las propiedades **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** y **membersWithLicenseErrors** a la entidad [Group](/graph/api/resources/group?view=graph-rest-beta) para [Licencias basadas en grupos](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 
 ### <a name="microsoft-intune-apis"></a>API de Microsoft Intune

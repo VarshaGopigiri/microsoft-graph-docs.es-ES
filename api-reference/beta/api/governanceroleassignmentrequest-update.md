@@ -1,12 +1,12 @@
 ---
 title: Actualizar governanceRoleAssignmentRequests
 description: Permiten a los administradores actualizar sus decisiones (`AdminApproved` o `AdminDenied`) en governanceRoleAssignmentRequests que se encuentran en estado de `PendingAdminDecision`.
-ms.openlocfilehash: 0f52b810b861e18a679ae8aea4ffdf7fd2d67abd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090626"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191154"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Actualizar governanceRoleAssignmentRequests
 
@@ -17,13 +17,13 @@ Permiten a los administradores actualizar sus decisiones (`AdminApproved` o `Adm
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-|Tipo de permiso      | Permissions              |
+>**Nota:** Esta API también requiere que el solicitante tiene al menos una `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso al que pertenece el [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
+
+|Tipo de permiso      | Permisos              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | PrivilegedAccess.ReadWrite.AzureResources |
-
-Además del ámbito de permiso, esta API requiere el solicitante puede tener al menos uno `Active` asignación de roles de administrador (`owner` o `user access administrator`) en el recurso, que pertenece el [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -31,14 +31,15 @@ Además del ámbito de permiso, esta API requiere el solicitante puede tener al 
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
 
-### <a name="request-headers"></a>Encabezados de solicitud
+## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre           | Descripción|
 |:---------------|:----------|
 | Autorización  | Portador {código}|
 | Tipo de contenido  | application/json|
 
-### <a name="request-body"></a>Cuerpo de la solicitud
-|Parameters      |Tipo                   |Obligatorio |Descripción|
+## <a name="request-body"></a>Cuerpo de la solicitud
+
+|Parámetros      |Tipo                   |Obligatorio |Descripción|
 |:-------------|:----------------------|:--------|:----------|
 |motivo        |String                 |✓        |El motivo por el Administrador de su decisión.|
 |toma de decisiones        |String                 |✓        |La Decisión del Administrador de la solicitud de asignación de rol. El valor debe actualizarse como `AdminApproved` o `AdminDenied`.|
@@ -47,9 +48,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ### <a name="response"></a>Respuesta
 Este método sólo se puede aplicar a las solicitudes que se encuentran en estado de `PendingAdminDecision`.
 
-Si se ejecuta correctamente, este método devuelve el código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.
 
-### <a name="example"></a>Ejemplo
+## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
 <!-- {
   "blockType": "request",
