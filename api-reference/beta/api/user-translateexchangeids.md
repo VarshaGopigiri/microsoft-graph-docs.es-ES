@@ -1,12 +1,12 @@
 ---
 title: 'usuario: translateExchangeIds'
 description: Traducir identificadores de recursos relacionados con Outlook entre formatos.
-ms.openlocfilehash: 0c6e74ad0bb9676f261ed0202757b1e036b09c85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087586"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184493"
 ---
 # <a name="user-translateexchangeids"></a>usuario: translateExchangeIds
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="response"></a>Respuesta
 
-Si tiene éxito, este método devuelve `200 OK` código de respuesta y una colección de [convertIdResult](../resources/meetingtimesuggestionsresult.md) en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve `200 OK` código de respuesta y una colección de [convertIdResult](../resources/convertidresult.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
 

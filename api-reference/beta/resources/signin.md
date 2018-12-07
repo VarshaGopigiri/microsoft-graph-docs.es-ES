@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de inicio de sesión
 description: 'Este recurso detalla usuario o aplicación de inicio de sesión de actividad en el directorio. '
-ms.openlocfilehash: 2bc6c8b961f0626a6409d9be868235f285f48e52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090008"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184542"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de inicio de sesión
 Este recurso detalla usuario o aplicación de inicio de sesión de actividad en el directorio. 
@@ -23,7 +23,6 @@ Este recurso detalla usuario o aplicación de inicio de sesión de actividad en 
 |:---------------|:--------|:----------|
 |appDisplayName|String|Hace referencia al nombre de la aplicación que se muestra en el Portal de Azure.|
 |appId|cadena|Hace referencia a los GUID único que representa el identificador de aplicación en Azure Active Directory.|
-|authenticationProcessingDetails|`authenticationProcessingDetails`|Proporciona los detalles asociados con procesador de autenticación.|
 |clientAppUsed|String|Proporciona al cliente heredado usado para inicio de sesión de activty.E.g. incluye el explorador, Active Sync de Exchange, los clientes modernos, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|colección de [conditionalAccessPolicy](conditionalaccesspolicy.md)|Proporciona una lista de las directivas de acceso condicional que se desencadenan por la actividad de inicio de sesión correspondiente.|
 |conditionalAccessStatus|string| Proporciona el estado de la directiva de acceso condicional desencadenada. Los valores posibles son: `success`, `failure`, `notApplied` y `unknownFutureValue`.|
@@ -41,7 +40,7 @@ Este recurso detalla usuario o aplicación de inicio de sesión de actividad en 
 |riskDetail|`riskDetail`|Proporciona la razón de' ' detrás de un estado específico de un usuario arriesgado, inicio de sesión o un evento de riesgo. Los valores posibles son: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. El valor `none` significa que ninguna acción se ha realizado hasta el momento en que el usuario o el inicio de sesión.|
 |riskLevelAggregated|`riskLevel`|Proporciona el nivel de riesgo agregada. Los valores posibles son: `none`, `low`, `medium`, `high`, `hidden`, y `unknownFutureValue`. El valor `hidden` significa que el usuario o el inicio de sesión no se ha habilitado para protección de la identidad de AD de Azure.|
 |riskLevelDuringSignIn|`riskLevel`|Proporciona el nivel de riesgo durante el inicio de sesión. Los valores posibles son: `none`, `low`, `medium`, `high`, `hidden`, y `unknownFutureValue`. El valor `hidden` significa que el usuario o el inicio de sesión no se ha habilitado para protección de la identidad de AD de Azure.|
-|riskEventTypes|`riskEventTypes`|Proporciona la lista de tipos de eventos de riesgo asociado con el inicio de sesión. Los valores posibles son: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecurePasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`y `unknownFutureValue`. El valor `hidden` significa que el usuario o el inicio de sesión no se ha habilitado para protección de la identidad de AD de Azure.|
+|riskEventTypes|`riskEventTypes`|Proporciona la lista de tipos de eventos de riesgo asociado con el inicio de sesión. Los valores posibles son: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, y `unknownFutureValue`.|
 |riskState|`riskState`|Proporciona el estado riesgo de un usuario arriesgado, inicio de sesión o un evento de riesgo. Los valores posibles son: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Proporciona la MFA relacionadas con la información como es necesario MFA, estado de MFA para el inicio de sesión de correspondiente.|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Proporciona información detallada acerca de la ubicación de red.|
@@ -91,7 +90,14 @@ Aquí tiene una representación JSON del recurso.
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskLevel": "string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "string",
+  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 

@@ -1,12 +1,12 @@
 ---
 title: Usar la API de seguridad de Microsoft Graph
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 556725597b7b020bc7ef5b55857ae59dfb127e80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: dff91665fc288bf1714d1975f3ec2e109f576530
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088559"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184535"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar la API de seguridad de Microsoft Graph
 
@@ -27,14 +27,14 @@ Las alertas son posibles problemas de seguridad dentro de inquilino de un client
 
 Las soluciones de Microsoft Graph seguridad integrada va a recibir alertas de los siguientes proveedores de seguridad:
 
-- Centro de seguridad de Azure
-- Protección de identidad de Azure Active Directory
-- Protección de la información de Azure
-- Seguridad de aplicaciones de nube de Microsoft
-- Windows Defender una protección avanzada
-- Microsoft Intune (privada preview)
-- Office 365 (próximamente)
-- Azure avanzada protección contra amenazas (próximamente)
+- [Centro de seguridad de Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
+- [Protección de identidad de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
+- [Seguridad de aplicaciones de nube de Microsoft](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
+- [Windows Defender una protección avanzada](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
+- [Protección de la información de Azure](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(vista previa)**
+- Microsoft Intune **(privada preview)**
+- Office 365 **(próximamente)**
+- Protección contra amenazas de avanzada Azure **(próximamente)**
 - Soluciones de socios, como el marco de aplicaciones de redes de Palo Alto
 
 > **Nota:** Los proveedores de nuevo continuamente son incorporación al ecosistema de seguridad de Microsoft Graph.

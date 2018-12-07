@@ -1,16 +1,18 @@
 ---
 title: Respuestas de error de la API de seguridad de Microsoft Graph
-description: Errores en la API de seguridad de Microsoft Graph en Microsoft Graph se devuelven mediante código de estado HTTP 206 parcial contenido estándar y se entregan por medio de un encabezado de advertencia.
-ms.openlocfilehash: 35af0a1ed4c4bf7f6e1afb36039f812ab59f64dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Errores en la API de seguridad de Microsoft Graph se devuelven mediante el código de estado HTTP 206 parcial contenido estándar y se entregan a través de un encabezado de advertencia.
+ms.openlocfilehash: 9ac124f763e7668471f89beffb968cb883217e80
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032406"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184500"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respuestas de error de la API de seguridad de Microsoft Graph
 
-Errores en la API de seguridad de Microsoft Graph en Microsoft Graph se devuelven mediante código de estado HTTP 206 parcial contenido estándar y se entregan por medio de un encabezado de advertencia.
+Errores en la API de seguridad de Microsoft Graph se devuelven mediante el código de estado HTTP 206 parcial contenido estándar y se entregan a través de un encabezado de advertencia.
+
+## <a name="errors"></a>Errores
 
 La API de seguridad de Microsoft Graph es un servicio federado que recibe varias respuestas de todos los proveedores de datos. Cuando se recibe un error HTTP por la API de seguridad de Microsoft Graph, bien va a volver a enviar un encabezado de advertencia en el siguiente formato:<!-- { "blockType": "ignored" } -->
 
@@ -35,7 +37,7 @@ Un usuario solicita `security/alerts/{alert_id}`.
     Provider 3: 200 (success)
     Provider 4: 403 (customer has not licensed this provider)
 
-Dado que 404 y 200 son las condiciones previstas, el encabezado de advertencia contiene lo siguiente: 
+Dado que 404 y 200 son las condiciones previstas, el encabezado de advertencia contiene lo siguiente:
 
 ```HTTP
 Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
@@ -44,6 +46,12 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 > **Nota:** Cada encabezado HTTP es una colección de subelementos, por lo que los usuarios pueden enumerar el encabezado de advertencia y compruebe todos los elementos.
 
+## <a name="constraints"></a>Restricciones
+
+El `$top` parámetro de consulta de OData tiene un límite de 1000 alertas y una combinación de `$top`  +  `$skip` parámetros no pueden superar los 6000 alertas de consulta de OData. Por ejemplo, `/security/alerts?$top=10&$skip=5990` devolverá un `200 OK` código de respuesta, pero `/security/alerts?$top=10&$skip=5991` devolverá un `400 Bad Request` código de respuesta.
+
+Una solución alternativa para este límite es usar el `$filter` parámetro de consulta de OData con la `eventDateTime` de la entidad de alerta de la API de seguridad de Microsoft Graph, con `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` y reemplazar el valor de fecha y hora con la última alerta (6000th). También puede establecer un intervalo para la `eventDateTime`; Por ejemplo, *filtro de $ alerts? = eventDateTime **gt** 2018-11 -**11**T00:00:00.000Z & eventDateTime **lt** 2018-11 -**12**T00:00:00.000Z*
+
 ## <a name="see-also"></a>Vea también
 
-Si tiene problemas con la autorización, consulte nuestro [blog post](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).
+Si tiene problemas con la autorización, vea [autorización y la API de seguridad de Microsoft Graph](/graph/security-authorization).
