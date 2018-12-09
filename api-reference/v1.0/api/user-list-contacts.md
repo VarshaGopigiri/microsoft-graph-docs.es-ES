@@ -1,12 +1,12 @@
 ---
 title: List contacts
 description: Obtener una colección de contacto desde la carpeta Contactos predeterminada del usuario que ha iniciado sesión.
-ms.openlocfilehash: 296844eb4eea93c5bd46e8028f3423fe797142ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9322810d90f38c0b7643379f22a90a89cf7070df
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030792"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209736"
 ---
 # <a name="list-contacts"></a>List contacts
 
@@ -48,11 +48,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
+Puede usar el `$filter` parámetro de consulta para filtrar contactos según sus direcciones de correo electrónico:
 
-Por ejemplo, puede usar el parámetro de consulta `$filter` para filtrar contactos en función del dominio de sus direcciones de correo:
+<!-- { "blockType": "ignored" } -->
+``` http
+GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
+```
 
-`https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq '@domain.com')`
+Tenga en cuenta que puede usar `$filter`, `any`y el `eq` operador en sólo la propiedad subcaracterística de **dirección** de instancias de una colección de **emailAddresses** . Es decir, no se puede filtrar en el **nombre** o cualquier otra propiedad subcaracterística de una instancia de **emailAddresses**, ni tampoco puede aplicar cualquier otro operador o funcionar con `filter`, tales como `ne`, `le`, y `startswith()`.
+
+Para obtener información general sobre la `$filter` parámetro de consulta, vea [parámetros de consulta de OData](/graph/query-parameters).
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Crear equipo
-description: Crear un nuevo equipo en un grupo.
-ms.openlocfilehash: 2e0331724006d18a0c02227427e7251b1d7e096d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Crear equipo de grupo
+description: Crear un nuevo equipo de un grupo.
+ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090020"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209673"
 ---
-# <a name="create-team"></a>Crear equipo
+# <a name="create-team-from-group"></a>Crear equipo de grupo
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
-Crear un nuevo [equipo](../resources/team.md) en un [grupo](../resources/group.md).
+Crear un nuevo [equipo](../resources/team.md) de un [grupo](../resources/group.md).
 
 Para poder crear un equipo, el grupo debe tener un propietario menos uno.
 

@@ -3,19 +3,19 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Convertir a otros formatos
-ms.openlocfilehash: f3dfe3b01cac66754b9a8151a2bb46adee157741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d5fbeeb28e2c0d2bf23652f451f87d12b1a06435
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029867"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209708"
 ---
 # <a name="download-a-file-in-another-format"></a>Descargar un archivo en otro formato
 
 Use esta API para recuperar el contenido de un elemento en un formato determinado.
 No todos los archivos pueden convertirse a todos los formatos.
 
-Para descargar el elemento en su formato original, vea [descargar el contenido de un elemento](driveitem-get-content.md).
+Para descargar el elemento en su formato original, vea [Descargar contenido de un elemento](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
 

@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de equipo
 description: 'Un equipo en Microsoft Teams es una colección de canales. '
-ms.openlocfilehash: 5ebb4dbc2c5913d69b69bdb244d8a7cfc83cec8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 610aca1a95c877bd6246a501a8eea64ee761e58d
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087249"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209701"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipo
 
@@ -22,7 +22,8 @@ Para obtener más información sobre cómo trabajar con los miembros de los equi
 
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
-|[Crear equipo](../api/team-put-teams.md) | [equipo](team.md) | Crear un nuevo equipo o agregar un equipo a un grupo existente.|
+|[Crear equipo](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Crear un equipo desde el principio. |
+|[Crear equipo de grupo](../api/team-put-teams.md) | [equipo](team.md) | Crear un nuevo equipo o agregar un equipo a un grupo existente.|
 |[Obtener el equipo](../api/team-get.md) | [equipo](team.md) | Recuperar las propiedades y relaciones del equipo especificado.|
 |[Equipo de actualización](../api/team-update.md) | [equipo](team.md) |Actualizar las propiedades del equipo especificado. |
 |[Eliminar grupo](/graph/api/group-delete?view=graph-rest-1.0) | Ninguno |Eliminar el equipo y el grupo asociado. |
@@ -40,6 +41,11 @@ Para obtener más información sobre cómo trabajar con los miembros de los equi
 
 | Propiedad | Tipo   | Descripción |
 |:---------------|:--------|:----------|
+|displayName|string| El nombre del equipo. |
+|descripción|string| Una descripción opcional para el equipo. |
+|classification|string| Una etiqueta opcional. Normalmente, se describe la confidencialidad de datos o empresarial del equipo. Debe coincidir con uno de un conjunto preconfigurado en Active directory del inquilino. |
+|especialización|[teamSpecialization](teamspecialization.md)| Opcional. Indica si el equipo está destinado a un caso de uso concreto.  Cada especialización del equipo tiene acceso a comportamientos únicos y experiencias dirigidas a su caso de uso. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| La visibilidad de una el equipo y grupo. El valor predeterminado es público. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Opciones para configurar el uso de Giphy, memes y pegatinas en el equipo.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el equipo.|
 |isArchived|Booleano|Si este equipo está en modo de sólo lectura. |
@@ -54,6 +60,8 @@ Para obtener más información sobre cómo trabajar con los miembros de los equi
 |aplicaciones|colección de [teamsApp](teamsapp.md)| (Obsoleto) Las aplicaciones instaladas en este equipo.|
 |canales|colección de [canal](channel.md)|La colección de canales de & mensajes asociados con el equipo.|
 |installedApps|colección de [teamsAppInstallation](teamsappinstallation.md)|Las aplicaciones instaladas en este equipo.|
+|owners|[user](user.md)| La lista de propietarios de este equipo. |
+|template|[teamsTemplate](teamstemplate.md)| La plantilla que se creó en este equipo. |
 
 ## <a name="json-representation"></a>Representación JSON
 
