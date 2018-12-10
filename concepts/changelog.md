@@ -1,12 +1,12 @@
 ---
 title: Registro de cambios para Microsoft Graph
 description: Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.
-ms.openlocfilehash: 6f42282844fd0dbed5c5df2ffdda86fd7eb559b5
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: 03dc6e993ff219ca38b16c6db7bbbb5ebc0ccb48
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191217"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209771"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Registro de cambios de Microsoft Graph
 
@@ -21,9 +21,31 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 | Tipo de cambio | Versión                                    | Descripción                              |
 | :---------- | :----------------------------------------- | :--------------------------------------- |
 | Adición    | Beta | Se agregó la propiedad `createdDateTime` al recurso [organización](/graph/api/resources/organization?view=graph-rest-beta).|
-| Adición | v1.0 | Se agregó el método `memberOf` para obtener la [pertenencia](/graph/api/device-list-memberOf?view=graph-rest-1.0) directa de un [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). Se ha agregado este método para obtener la lista de pertenencias incluyendo las pertenencias anidadas.|
+| Adición | v1.0 | Se agregó el método `memberOf` para obtener la [pertenencia](/graph/api/device-list-memberOf?view=graph-rest-1.0) directa de un [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). Se ha agregado este método para obtener la lista de pertenencias, incluidas las pertenencias anidadas.|
 
-### <a name="privileged-identity-management-apis"></a>API de Privileged Identity Management
+### <a name="microsoft-teams-apis"></a>Las API de Microsoft Teams
+
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adición |beta| Se ha introducido el nuevo tipo de recurso [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Adición |beta| Se ha introducido el nuevo tipo de recurso [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Adición |beta| Se han agregado las propiedades isFavoriteByDefault, mail y webUrl a [channel](/graph/api/resources/channel?view=graph-rest-beta).|
+|Adición |beta| Se ha agregado la propiedad displayName a [team](/graph/api/resources/team?view=graph-rest-beta)|
+|Adición |beta| Se ha agregado la propiedad description a [team](/graph/api/resources/team?view=graph-rest-beta)|
+|Adición |beta| Se ha agregado la propiedad classification a [team](/graph/api/resources/team?view=graph-rest-beta)|
+|Adición |beta| Se ha agregado la propiedad [specialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) a [team](/graph/api/resources/team?view=graph-rest-beta)|
+|Adición |beta| Se ha agregado la propiedad [visibility](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) a [team](/graph/api/resources/team?view=graph-rest-beta)|
+|Adición |beta| Se ha agregado la propiedad [template](/graph/api/resources/teamstemplate?view=graph-rest-beta) a [team](/graph/api/resources/team?view=graph-rest-beta)|
+|Adición |beta| Se ha agregado la colección owners a [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a teamVisibilityType.|
+|Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a giphyRatingType.|
+|Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a teamsAsyncOperationType.|
+|Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a teamsAsyncOperationStatus.|
+|Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a teamsAppDistributionMethod.|
+|Adición |beta| Se ha introducido el nuevo recurso [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+
+
+### <a name="privileged-identity-management-apis"></a>Las API de Privileged Identity Management
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -33,7 +55,6 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 | Eliminación | beta | Se eliminó la propiedad `isPermanent` en la entidad [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
 | Eliminación | beta | Se eliminó la propiedad `roleAssignmentStartDateTime` en la entidad [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 | Eliminación | beta | Se eliminó la propiedad `roleAssignmentEndDateTime` en la entidad [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
-
 
 ## <a name="november-2018"></a>Noviembre de 2018
 
