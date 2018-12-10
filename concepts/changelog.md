@@ -1,18 +1,39 @@
 ---
 title: Registro de cambios para Microsoft Graph
 description: Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.
-ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: 6f42282844fd0dbed5c5df2ffdda86fd7eb559b5
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184563"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191217"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Registro de cambios de Microsoft Graph
 
 Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.
 
 Para obtener más información sobre problemas conocidos con las API de Microsoft Graph, vea [Problemas conocidos](known-issues.md).
+
+## <a name="december-2018"></a>Diciembre de 2018
+
+### <a name="directory-apis"></a>API de directorio
+
+| Tipo de cambio | Versión                                    | Descripción                              |
+| :---------- | :----------------------------------------- | :--------------------------------------- |
+| Adición    | Beta | Se agregó la propiedad `createdDateTime` al recurso [organización](/graph/api/resources/organization?view=graph-rest-beta).|
+| Adición | v1.0 | Se agregó el método `memberOf` para obtener la [pertenencia](/graph/api/device-list-memberOf?view=graph-rest-1.0) directa de un [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). Se ha agregado este método para obtener la lista de pertenencias incluyendo las pertenencias anidadas.|
+
+### <a name="privileged-identity-management-apis"></a>API de Privileged Identity Management
+
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adición | beta | Se agregó la propiedad `registeredRoot` a la entidad [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta).|
+| Cambio | beta | Se cambió el nombre de la propiedad `onboardDateTime` de la entidad [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) a `registeredDateTime`.|
+| Adición | beta | Se agregó una nueva acción [register resource](/graph/api/governanceresource-register?view=graph-rest-beta).|
+| Eliminación | beta | Se eliminó la propiedad `isPermanent` en la entidad [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
+| Eliminación | beta | Se eliminó la propiedad `roleAssignmentStartDateTime` en la entidad [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+| Eliminación | beta | Se eliminó la propiedad `roleAssignmentEndDateTime` en la entidad [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+
 
 ## <a name="november-2018"></a>Noviembre de 2018
 
@@ -2805,7 +2826,7 @@ Se agregó soporte para la pertenencia a grupos dinámicos con la API de vista p
 
 ### <a name="users"></a>Usuarios
 
-| **Tipo de cambio** | **Version**   | **Descripción**                          |
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Cambio          | V1.0 y beta | _displayName_ ahora se devuelve para cuentas Microsoft. |
 

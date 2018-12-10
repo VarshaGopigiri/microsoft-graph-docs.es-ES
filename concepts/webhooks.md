@@ -1,12 +1,12 @@
 ---
 title: Configurar las notificaciones de cambios en los datos de usuario
 description: La API de Microsoft Graph utiliza un mecanismo webhook para entregar notificaciones a los clientes. Un cliente es un servicio web que configura su propia dirección URL para recibir notificaciones. Las aplicaciones cliente utilizan notificaciones para actualizar su estado cuando se producen cambios.
-ms.openlocfilehash: faaa1be8330118f1cbebf5362903f0e114816b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e9c0c33aa18735d183d88836d33a99c8f12da560
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092928"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184549"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar las notificaciones de cambios en los datos de usuario
 
@@ -97,6 +97,8 @@ Content-Type: application/json
 ```
 
 Se necesitan las propiedades `changeType`, `notificationUrl`, `resource` y `expirationDateTime`. Vea las definiciones y los valores de las propiedades en [Tipo de recurso de suscripción](/graph/api/resources/subscription?view=graph-rest-1.0).
+
+La propiedad `resource` Especifica el recurso al que se le supervisarán los cambios. Por ejemplo, puede crear una suscripción a una carpeta de correo específica: `me/mailFolders('inbox')/messages` o en representación de otro usuario dado por el consentimiento de un administrador: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Aunque `clientState` no se necesita, tiene que incluirse para cumplir nuestro proceso de control de notificaciones recomendado. El establecimiento de esta propiedad le permitirá confirmar que las notificaciones que recibe proceden del servicio de Microsoft Graph. Por eso, el valor de la propiedad debe permanecer secreto y ser conocido solo por la aplicación y el servicio de Microsoft Graph.
 
