@@ -1,12 +1,12 @@
 ---
 title: Eliminar ficha de canal
 description: 'Quita (libera) una ficha desde el canal especificado dentro de un equipo. '
-ms.openlocfilehash: 975f046b3da279ddcda2f3f13be89ee7c45b21a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bcede601f036e8e3c40659b74a593c99e2e60af3
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090025"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222488"
 ---
 # <a name="delete-tab-from-channel"></a>Eliminar ficha de canal
 
@@ -22,6 +22,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.ReadWrite.All |
+
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

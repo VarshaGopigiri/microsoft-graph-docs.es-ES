@@ -1,12 +1,12 @@
 ---
 title: Unarchive equipo
 description: Restaurar un equipo archivado. Esto restaura la capacidad de los usuarios enviar mensajes y editar el equipo, respetando por la configuración de inquilino y del equipo. Los equipos se archivan con la API de archivo.
-ms.openlocfilehash: 6016529f20781a66aa8c36771a56942cb471ee7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7ea400e93efceed7b8a35de24339739bcaa9d74f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088311"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222461"
 ---
 # <a name="unarchive-team"></a>Unarchive equipo
 
@@ -24,6 +24,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.ReadWrite.All    |
+
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

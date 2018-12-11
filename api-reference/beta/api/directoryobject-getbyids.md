@@ -1,12 +1,12 @@
 ---
 title: Obtener objetos de directorio a partir de una lista de identificadores
 description: Seleccione ' opción de consulta no está disponible para esta operación.
-ms.openlocfilehash: 87fa774910c1ea6795b6df65ee0f5538d12296bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e6f987a3269b209c5df71b4961cf73081286a76d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084070"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222453"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obtener objetos de directorio a partir de una lista de identificadores
 
@@ -16,7 +16,7 @@ Devuelve los objetos de directorio especificados en una lista de identificadores
 
 Algunos usos comunes de esta función son:
 
-* Resolver identificadores devueltos por funciones (que devuelven colecciones de identificadores) como [getMemberObjects](directoryobject-getmemberobjects.md) o [getMemberGroups](directoryobject-getmembergroups.md) a sus objetos del directorio de copia de seguridad.
+* Resolver identificadores devueltos por funciones (que devuelven colecciones de identificadores) como [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) o [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta) a sus objetos del directorio de copia de seguridad.
 * Resolver identificadores que conserva la aplicación en un almacén externo para sus objetos del directorio de copia de seguridad.
 
 ## <a name="permissions"></a>Permisos
@@ -35,7 +35,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -52,7 +52,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 | Parámetro   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |ids|Colección string| Una colección de identificadores para devolverles objetos. Se pueden especificar hasta 1000 identificadores. |
-|types|Colección string| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos para buscar. Si no se especifica, el valor predeterminado es [directoryObject](../resources/directoryobject.md), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que se deriva de `directoryObject` pueden especificarse en la colección; Por ejemplo: [usuario](../resources/user.md), [grupo](../resources/group.md), [dispositivo](../resources/device.md)y así sucesivamente. Los valores no distinguen mayúsculas de minúsculas.|
+|types|Colección string| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos para buscar. Si no se especifica, el valor predeterminado es [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que se deriva de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) puede especificarse en la colección; Por ejemplo: [usuario](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta)y así sucesivamente. Para buscar referencias a un socio de [Proveedor de soluciones de nube](https://partner.microsoft.com/en-us/cloud-solution-provider) organización especificar [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Si no se especifica, el valor predeterminado es [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contiene todos los tipos de recursos definidos en el directorio, excepto para las referencias a una organización asociada de [Proveedor de soluciones de nube](https://partner.microsoft.com/en-us/cloud-solution-provider) . Los valores no distinguen mayúsculas de minúsculas.|
 
 ## <a name="response"></a>Respuesta
 
@@ -64,7 +64,7 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `200 
 
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_getById"
+  "name": "directoryobject_getByIds"
 }-->
 
 ```http

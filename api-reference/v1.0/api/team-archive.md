@@ -1,12 +1,12 @@
 ---
 title: Equipo de archivo
 description: 'Archivar el equipo especificado. '
-ms.openlocfilehash: 414b45a3dd2f03aba29b3393db3ef547472a8950
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 80c8d372c0b70548cdd887270d387f258bb92ff6
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030791"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222404"
 ---
 # <a name="archive-team"></a>Equipo de archivo
 
@@ -29,6 +29,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.ReadWrite.All    |
+
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

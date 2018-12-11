@@ -1,12 +1,12 @@
 ---
 title: Canales de lista
 description: Recuperar la lista de canales en este equipo.
-ms.openlocfilehash: a37ca4e6012dd287b1b637fe3ddb3cfc2aaf5518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 024751f0d77889249d2f2dcf6b2bb1f709128db1
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084008"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222544"
 ---
 # <a name="list-channels"></a>Canales de lista
 
@@ -23,6 +23,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta profesional o educativa) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.Read.All, Group.ReadWrite.All    |
+
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

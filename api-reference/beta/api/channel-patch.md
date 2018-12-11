@@ -1,12 +1,12 @@
 ---
 title: Canal de revisión
 description: Actualizar las propiedades del canal especificado.
-ms.openlocfilehash: 833b5cf4999f43e9de799691a9f6d7a98318d4fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: c7cc2db83fbab0e04f1620d71c4c7cf7a69b526f
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083319"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222383"
 ---
 # <a name="patch-channel"></a>Canal de revisión
 
@@ -24,6 +24,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.ReadWrite.All |
+
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->

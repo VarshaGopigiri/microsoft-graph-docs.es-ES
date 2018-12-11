@@ -1,12 +1,12 @@
 ---
 title: Equipo de actualización
 description: Actualizar las propiedades del equipo especificado.
-ms.openlocfilehash: 27cbf8f571752a27fb68727fe2695a0250f5dc75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 23f65ef1cd1948941bd814a521bdaa0984553dff
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028921"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222607"
 ---
 # <a name="update-team"></a>Equipo de actualización
 
@@ -24,11 +24,14 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.Read.All, Group.ReadWrite.All    |
 
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
+
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}
 ```
+
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado       | Valor |
 |:---------------|:--------|

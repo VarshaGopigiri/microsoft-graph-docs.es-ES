@@ -1,12 +1,12 @@
 ---
 title: Fichas de lista de canal
 description: 'Recuperar la lista de fichas en el canal especificado dentro de un equipo. '
-ms.openlocfilehash: 3d86b9fd4980309adeb952c71affd943b1587808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 4efbe8508fc125d87268adfb05c23b99ab2c3d4b
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031164"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222376"
 ---
 # <a name="list-tabs-in-channel"></a>Fichas de lista de canal
 
@@ -22,6 +22,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All, Group.Read.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 | Aplicación                            | Group.Read.All, Group.ReadWrite.All         |
+
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 

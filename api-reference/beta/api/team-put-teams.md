@@ -1,12 +1,12 @@
 ---
 title: Crear equipo de grupo
 description: Crear un nuevo equipo de un grupo.
-ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: d43c9032811c2ddc1733117642f9e2ae4f343a7e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209673"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222635"
 ---
 # <a name="create-team-from-group"></a>Crear equipo de grupo
 
@@ -27,6 +27,8 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.ReadWrite.All |
+
+> **Nota**: esta API es compatible con permisos de administrador. Global Administradores y administradores de servicios de Microsoft Teams pueden tener acceso a los grupos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 

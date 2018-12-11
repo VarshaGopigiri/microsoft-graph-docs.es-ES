@@ -1,12 +1,12 @@
 ---
 title: Obtener la ficha
 description: 'Recuperar las propiedades y relaciones de la ficha especificada seleccionada. '
-ms.openlocfilehash: 57bd7d8b11b0bf20d54bf8da16cdd41220320fcd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7bef495fbb37a878a291f2aac6004d386e932cbd
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083419"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222411"
 ---
 # <a name="get-tab"></a>Obtener la ficha
 
@@ -23,7 +23,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | Group.Read.All, Group.ReadWrite.All |
 
-> Actualmente, se admiten sólo [delegar permisos](/graph/permissions-reference) para esta operación.
+> **Nota**: esta API es compatible con permisos de administrador. Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.
 
 ## <a name="http-request"></a>Solicitud HTTP
 ```http

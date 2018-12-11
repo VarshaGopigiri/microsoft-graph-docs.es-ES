@@ -1,12 +1,12 @@
 ---
 title: Obtener acceso sin un usuario
 description: 'Algunas aplicaciones realizan llamadas a Microsoft Graph con su propia identidad, en lugar de hacerlo en nombre de un usuario. En muchos casos, son servicios en segundo plano o demonios que se ejecutan en un servidor sin que un usuario iniciara la sesión. Un ejemplo de una aplicación de este tipo podría ser un servicio de archivado de correo electrónico que se activa y se ejecuta de noche. En algunos casos, puede que las aplicaciones de servidores donde un usuario inicie la sesión necesiten realizar llamadas a Microsoft Graph con su propia identidad. Por ejemplo, puede que una aplicación tenga que usar una función que necesite privilegios más elevados en una organización que los asignados al usuario que inició la sesión.  '
-ms.openlocfilehash: 25eb9686153e997079de3f17f88d017c336d3a61
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 62bea47d8d4926a4d618ebc0c434b6fe2baad376
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092873"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222467"
 ---
 # <a name="get-access-without-a-user"></a>Obtener acceso sin un usuario
 
@@ -121,7 +121,7 @@ Se envía una solicitud POST al punto de conexión `/token` de v2.0 para adquiri
 ```
 // Line breaks are for legibility only.
 
-POST /{tenant}/oauth2/v2.0/token HTTP/1.1
+POST https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
