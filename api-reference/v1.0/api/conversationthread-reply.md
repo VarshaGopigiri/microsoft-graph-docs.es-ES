@@ -1,12 +1,12 @@
 ---
 title: 'conversationThread: reply'
 description: 'Responder a un subproceso en una conversación en grupo y agregue una nueva entrada a ella. Puede especificar la conversación primario '
-ms.openlocfilehash: ca252cb578c0b04cddead455ca046d13180626e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9e191a53b2427b8c9def2acf15d48b7c8605437f
+ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031169"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245081"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -19,7 +19,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | Group.ReadWrite.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
-|Aplicación | Group.ReadWrite.All |
+|Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
