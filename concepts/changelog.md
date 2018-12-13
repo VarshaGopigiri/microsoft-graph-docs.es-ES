@@ -1,12 +1,12 @@
 ---
 title: Registro de cambios para Microsoft Graph
 description: Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.
-ms.openlocfilehash: 03dc6e993ff219ca38b16c6db7bbbb5ebc0ccb48
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: e8b4671d527bac65d1855c21d7612077ed18203e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209771"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222663"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Registro de cambios de Microsoft Graph
 
@@ -18,9 +18,10 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 ### <a name="directory-apis"></a>API de directorio
 
-| Tipo de cambio | Versión                                    | Descripción                              |
-| :---------- | :----------------------------------------- | :--------------------------------------- |
-| Adición    | Beta | Se agregó la propiedad `createdDateTime` al recurso [organización](/graph/api/resources/organization?view=graph-rest-beta).|
+| **Tipo de cambio** | **Versión**   | **Descripción**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adición | beta | Se agregó el nuevo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
+| Adición | beta | Se agregó la propiedad `createdDateTime` al recurso [organización](/graph/api/resources/organization?view=graph-rest-beta).|
 | Adición | v1.0 | Se agregó el método `memberOf` para obtener la [pertenencia](/graph/api/device-list-memberOf?view=graph-rest-1.0) directa de un [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). Se ha agregado este método para obtener la lista de pertenencias, incluidas las pertenencias anidadas.|
 
 ### <a name="microsoft-teams-apis"></a>Las API de Microsoft Teams
@@ -42,10 +43,10 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 |Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a teamsAsyncOperationType.|
 |Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a teamsAsyncOperationStatus.|
 |Adición |beta| Se ha introducido el nuevo miembro de enumeración unknownFutureValue a teamsAppDistributionMethod.|
-|Adición |beta| Se ha introducido el nuevo recurso [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Adición |beta| Se introdujo el nuevo recurso [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Adición | v1.0 | Se agregó la compatibilidad con permisos de administrador a las operaciones de [equipo](/graph/api/resources/team?view=graph-rest-1.0), [canal](/graph/api/resources/channel?view=graph-rest-1.0) y [pestaña](/graph/api/resources/teamstab?view=graph-rest-1.0). |
 
-
-### <a name="privileged-identity-management-apis"></a>Las API de Privileged Identity Management
+### <a name="privileged-identity-management-apis"></a>API de Privileged Identity Management
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |

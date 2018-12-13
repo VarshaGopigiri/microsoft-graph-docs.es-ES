@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de inicio de sesión
 description: 'Este recurso detalla usuario o aplicación de inicio de sesión de actividad en el directorio. '
-ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184542"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241079"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de inicio de sesión
 Este recurso detalla usuario o aplicación de inicio de sesión de actividad en el directorio. 
@@ -37,9 +37,9 @@ Este recurso detalla usuario o aplicación de inicio de sesión de actividad en 
 |ipAddress|cadena|Proporciona la dirección IP del cliente desde donde se produjo el inicio de sesión.|
 |location|[signInLocation](signinlocation.md)|Proporciona la ciudad, estado y código de país de carta 2 desde donde se produjo el inicio de sesión.|
 |processingTimeInMilliseconds|Int|Proporciona la solicitud de tiempo en milisegundos de STS de AD de procesamiento|
-|riskDetail|`riskDetail`|Proporciona la razón de' ' detrás de un estado específico de un usuario arriesgado, inicio de sesión o un evento de riesgo. Los valores posibles son: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. El valor `none` significa que ninguna acción se ha realizado hasta el momento en que el usuario o el inicio de sesión.|
-|riskLevelAggregated|`riskLevel`|Proporciona el nivel de riesgo agregada. Los valores posibles son: `none`, `low`, `medium`, `high`, `hidden`, y `unknownFutureValue`. El valor `hidden` significa que el usuario o el inicio de sesión no se ha habilitado para protección de la identidad de AD de Azure.|
-|riskLevelDuringSignIn|`riskLevel`|Proporciona el nivel de riesgo durante el inicio de sesión. Los valores posibles son: `none`, `low`, `medium`, `high`, `hidden`, y `unknownFutureValue`. El valor `hidden` significa que el usuario o el inicio de sesión no se ha habilitado para protección de la identidad de AD de Azure.|
+|riskDetail|`riskDetail`|Proporciona la razón de' ' detrás de un estado específico de un usuario arriesgado, inicio de sesión o un evento de riesgo. Los valores posibles son: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. El valor `none` significa que ninguna acción se ha realizado hasta el momento en que el usuario o el inicio de sesión. **Nota:** Detalles de esta propiedad sólo están disponibles para los clientes de P2 de Azure AD Premium. Se devolverán todos los demás clientes `hidden`.|
+|riskLevelAggregated|`riskLevel`|Proporciona el nivel de riesgo agregada. Los valores posibles son: `none`, `low`, `medium`, `high`, `hidden`, y `unknownFutureValue`. El valor `hidden` significa que el usuario o el inicio de sesión no se ha habilitado para protección de la identidad de AD de Azure. **Nota:** Detalles de esta propiedad sólo están disponibles para los clientes de P2 de Azure AD Premium. Se devolverán todos los demás clientes `hidden`.|
+|riskLevelDuringSignIn|`riskLevel`|Proporciona el nivel de riesgo durante el inicio de sesión. Los valores posibles son: `none`, `low`, `medium`, `high`, `hidden`, y `unknownFutureValue`. El valor `hidden` significa que el usuario o el inicio de sesión no se ha habilitado para protección de la identidad de AD de Azure. **Nota:** Detalles de esta propiedad sólo están disponibles para los clientes de P2 de Azure AD Premium. Se devolverán todos los demás clientes `hidden`.|
 |riskEventTypes|`riskEventTypes`|Proporciona la lista de tipos de eventos de riesgo asociado con el inicio de sesión. Los valores posibles son: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, y `unknownFutureValue`.|
 |riskState|`riskState`|Proporciona el estado riesgo de un usuario arriesgado, inicio de sesión o un evento de riesgo. Los valores posibles son: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Proporciona la MFA relacionadas con la información como es necesario MFA, estado de MFA para el inicio de sesión de correspondiente.|

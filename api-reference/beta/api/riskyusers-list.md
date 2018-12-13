@@ -1,18 +1,21 @@
 ---
 title: Lista riskyUsers
 description: Recuperar las propiedades y relaciones de un objeto **riskyUsers** .
-ms.openlocfilehash: 152171ff098bb58e8cbb247ca687841e77594ead
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d800f37c1e7e2d03edc0273d30e2be37c799d0d4
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091132"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241044"
 ---
 # <a name="list-riskyusers"></a>Lista riskyUsers
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Recuperar las propiedades y relaciones de un objeto **riskyUsers** .
+
+> **Nota:** Esta API requiere una licencia de P2 de Azure AD Premium.
+
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
