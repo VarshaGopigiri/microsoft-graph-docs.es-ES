@@ -1,18 +1,25 @@
 ---
 title: Usar parámetros de consulta para personalizar respuestas
 description: Microsoft Graph proporciona parámetros de consulta opcionales que puede usar para especificar y controlar la cantidad de datos devueltos en una respuesta. Se admiten los siguientes parámetros de consulta.
-ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+ms.openlocfilehash: b79192a028be278ab38dc28f1d9d913b3bcb7209
+ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27092959"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245109"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parámetros de consulta para personalizar respuestas
 
-Microsoft Graph proporciona parámetros de consulta opcionales que puede usar para especificar y controlar la cantidad de datos devueltos en una respuesta. Se admiten los siguientes parámetros de consulta.
+Microsoft Graph admite parámetros de consulta opcionales que puede usar para especificar y controlar la cantidad de datos devueltos en una respuesta. La compatibilidad con los parámetros de consulta exactos varía de una operación API a otra y, en función de la API, puede diferir entre los puntos de conexión de las versiones 1.0 y beta. 
 
->**Nota:** Haga clic en los ejemplos para probarlos en [Probador de Graph][graph-explorer].
+> **Nota:** en los puntos de conexión de las versiones 1.0 y beta, el prefijo `$` es opcional. Por ejemplo, en lugar de `$filter`, puede usar `filter`.
+
+Los parámetros de consulta pueden ser opciones de consulta de sistema de OData u otros parámetros de consulta. 
+
+## <a name="odata-system-query-options"></a>Opciones de consulta de sistema de OData
+Una operación de API de Microsoft Graph podría admitir una o varias de las siguientes opciones de consulta de sistema de OData. Estas opciones de consulta son compatibles con el [lenguaje de consulta de OData V4][odata-query].
+
+>**Nota:** haga clic en los ejemplos para probarlos en el [Probador de Graph][graph-explorer].
 
 | Nombre                     | Descripción | Ejemplo
 |:-------------------------|:------------|:---------|
@@ -24,14 +31,14 @@ Microsoft Graph proporciona parámetros de consulta opcionales que puede usar pa
 | [$search](#search-parameter)       | Devuelve los resultados en función de los criterios de búsqueda. Actualmente, se admite en las colecciones de **mensajes** y **usuarios**.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filtra las propiedades (columnas).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Indexa en un conjunto de resultados. También se usa en algunas API para implementar la paginación y se puede usar junto a `$top` para paginar manualmente los resultados. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken-parameter) | Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `/users?$skiptoken=X%274453707402000100000017...`|
 | [$top](#top-parameter)             | Establece el tamaño de la página de resultados. |[`/users?$top=2`][top-example]
 
 
+## <a name="other-query-parameters"></a>Otros parámetros de consulta
 
-Estos parámetros son compatibles con el [lenguaje de consulta de OData V4][odata-query]. No todos los parámetros se admiten en todas las API de Microsoft Graph, y la compatibilidad puede variar considerablemente entre los puntos de conexión `v1.0` y `beta`. 
-
-> **Nota:** En los puntos de conexión `beta` y `v1.0`, el prefijo `$` es opcional. Por ejemplo, en lugar de `$filter`, puede usar `filter`. 
+| Nombre                     | Descripción | Ejemplo
+|:-------------------------|:------------|:---------|
+| [$skipToken](#skiptoken-parameter) | Recupera la siguiente página de resultados de conjuntos de resultados que abarcan varias páginas. (Algunas API usan `$skip` en su lugar). | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## <a name="encoding-query-parameters"></a>Codificación de parámetros de consulta
 
