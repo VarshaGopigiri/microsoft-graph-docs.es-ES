@@ -1,12 +1,12 @@
 ---
 title: Tipo de recurso group
 description: Representa un grupo de Azure Active Directory (AD Azure), que puede ser un grupo de Office 365, un equipo en Microsoft Teams, un grupo dinámico o un grupo de seguridad.
-ms.openlocfilehash: a1a200918c34f5e2fa220a88d3c69871d6b93ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d48448991b75946f9ac60a037fee3b083601954a
+ms.sourcegitcommit: 5747eb595bf0c7c391b2a5219c3ae9b6a48df26b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089492"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "27265237"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso group
 
@@ -28,8 +28,8 @@ Este recurso admite:
 | Método       | Tipo de valor devuelto  |Descripción|
 |:---------------|:--------|:----------|
 |**Administración de grupos**| | |
-|[Crear grupo](../api/group-post-groups.md) | [group](group.md) |Crear un nuevo grupo tal como se especifica. Puede ser un grupo de Office 365, el grupo dinámico, el grupo de seguridad o el equipo.|
-|[Obtener grupo](../api/group-get.md) | [group](group.md) |Propiedades de lectura y las relaciones de objeto de grupo.|
+|[Crear grupo](../api/group-post-groups.md) | [grupo](group.md) |Crear un nuevo grupo tal como se especifica. Puede ser un grupo de Office 365, el grupo dinámico, el grupo de seguridad o el equipo.|
+|[Obtener grupo](../api/group-get.md) | [grupo](group.md) |Propiedades de lectura y las relaciones de objeto de grupo.|
 |[Grupo de actualización](../api/group-update.md) | Ninguno |Actualiza las propiedades de un objeto de grupo. |
 |[Eliminar grupo](../api/group-delete.md) | Ninguno |Elimina el objeto de grupo. |
 |[delta](../api/group-delta.md)|Colección group| Obtiene los cambios incrementales de grupos. |
@@ -89,7 +89,7 @@ Este recurso admite:
 |[addFavorite](../api/group-addfavorite.md)|Ninguno|Agrega el grupo a la lista de grupos favoritos del usuario actual. Compatible solo con grupos de Office 365.|
 |[removeFavorite](../api/group-removefavorite.md)|Ninguno|Quita el grupo de la lista de grupos favoritos del usuario actual. Solo es compatible con Grupos de Office 365.|
 |[Enumerar memberOf](../api/group-list-memberof.md) |Colección [directoryObject](directoryobject.md)| Obtiene los grupos y las unidades administrativas de los que el usuario es miembro directo desde la propiedad de navegación **memberOf**.|
-|[Lista joinedTeams](../api/user-list-joinedteams.md) |Colección [group](group.md)| Obtenga el Teams Microsoft que el usuario es miembro directo.|
+|[Enumerar joinedTeams](../api/user-list-joinedteams.md) |Colección [group](group.md)| Obtenga el Teams Microsoft que el usuario es miembro directo.|
 |[subscribeByMail](../api/group-subscribebymail.md)|Ninguno|Establezca la propiedad isSubscribedByMail en **true**. Permitiendo al usuario actual recibir las conversaciones de correo electrónico. Compatible con sólo los grupos de Office 365.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|Ninguno|Establezca la propiedad isSubscribedByMail en **false**. Deshabilitar al usuario actual de las conversaciones de correo electrónico de recepción. Compatible con sólo los grupos de Office 365.|
 |[resetUnseenCount](../api/group-resetunseencount.md)|Ninguno|Restablecer la unseenCount en 0 de todas las entradas del blog que el usuario actual no ha visto desde la última visita. Compatible con sólo los grupos de Office 365.|
@@ -97,7 +97,7 @@ Este recurso admite:
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Booleano|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
+|allowExternalSenders|Boolean|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
 |assignedLicenses|Colección [assignedLicense](assignedlicense.md)|Las licencias que están asignadas al grupo. Solo lectura.|
 |autoSubscribeNewMembers|Booleano|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico. Puede establecer esta propiedad en una solicitud PATCH del grupo; no la establezca en la solicitud POST inicial que crea el grupo.|
 |classification|String|Describe una clasificación para el grupo (como impacto en el negocio bajo, medio o alto). Los valores válidos para esta propiedad se definen mediante la creación de un valor [setting](directorysetting.md) ClassificationList, basado en la [definición de plantilla](directorysettingtemplate.md).|
@@ -116,7 +116,7 @@ Este recurso admite:
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica la última vez en que el objeto se ha sincronizado con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. Es compatible con $filter.|
 |onPremisesProvisioningErrors|colección de [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Errores al usar el producto de sincronización de Microsoft durante el aprovisionamiento. |
 |onPremisesSecurityIdentifier|String|Contiene el identificador de seguridad local (SID) del grupo que se sincroniza desde un recurso local a la nube. Solo lectura. |
-|onPremisesSyncEnabled|Booleano|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. Es compatible con $filter.|
+|onPremisesSyncEnabled|Boolean|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura. Es compatible con $filter.|
 |preferredDataLocation|String|La ubicación de datos preferido para el grupo. Para obtener más información, vea [OneDrive en línea Multi-ubican](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|El idioma preferido para un grupo de Office 365. Debe seguir el código ISO 639-1; Por ejemplo, "en-US".|
 |proxyAddresses|Colección string| Por ejemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` el operador **any** es necesario para las expresiones de filtro en las propiedades multivalor. Solo lectura. No admite valores NULL. Es compatible con $filter. |
@@ -145,11 +145,13 @@ Aquí es lo que significa cada valor de la propiedad de **visibilidad** :
 |calendario|[calendario](calendar.md)|El calendario del grupo. Solo lectura.|
 |calendarView|Colección [event](event.md)|La vista Calendario del calendario. Solo lectura.|
 |conversations|Colección [conversation](conversation.md)|Las conversaciones del grupo.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| Solo lectura.|
-|Unidad|[drive](drive.md)|La unidad del grupo. Solo lectura.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| El usuario (o la aplicación) que creó el grupo. NOTA: No se establece si el usuario es un administrador. Solo lectura.|
+|Unidad|[drive](drive.md)|Unidad de predeterminado del grupo. Solo lectura.|
+|drives|Colección [drive](drive.md)|Unidades del grupo. Solo lectura.|
 |extremos|Colección de [extremo](endpoint.md)| Extremos para el grupo. Solo lectura. Admite valores NULL.|
 |events|Colección [event](event.md)|Eventos del grupo.|
-|extensions|Colección [Extension](extension.md)|La colección de extensiones de open definidas para el grupo. Admite valores NULL.|
+|extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el grupo. Solo lectura. Admite valores NULL.|
+|groupLifecyclePolicies|Colección de [groupLifecyclePolicy](grouplifecyclepolicy.md)|La colección de las directivas de ciclo de vida para este grupo. Solo lectura. Admite valores NULL.|
 |memberOf|Colección [directoryObject](directoryobject.md)|Grupos y unidades administrativas que este grupo es un miembro de. Métodos HTTP: Obtener (versión admitida para todos los grupos). Solo lectura. Admite valores NULL.|
 |members|Colección [directoryObject](directoryobject.md)| Los usuarios, contactos y grupos que son miembros de este grupo. Métodos HTTP: Obtener (versión admitida para todos los grupos), registrar (compatible con grupos de seguridad y grupos de seguridad habilitados para correo), eliminar (sólo admitida grupos de seguridad) de sólo lectura. Admite valores NULL.|
 |membersWithLicenseErrors|Colección de [usuario](user.md)|Una lista de miembros del grupo con errores de la licencia de esta asignación de licencias basadas en grupos. Solo lectura.|
