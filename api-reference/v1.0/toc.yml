@@ -5,7 +5,7 @@ items:
   - name: Obtener tokens de autenticación
     href: /graph/auth-overview?toc=./ref/toc.json
     items:
-      - name: Registrar su aplicación
+      - name: Registrar la aplicación
         href: /graph/auth-register-app-v2?toc=./ref/toc.json
       - name: Obtener acceso en nombre de un usuario
         href: /graph/auth-v2-user?toc=./ref/toc.json
@@ -18,7 +18,7 @@ items:
   - name: Usar la API
     href: /graph/use-the-api?toc=./ref/toc.json
     items:
-      - name: Paging
+      - name: Paginación
         href: /graph/paging?toc=./ref/toc.json
       - name: Usar parámetros de consulta
         href: /graph/query-parameters?toc=./ref/toc.json
@@ -28,25 +28,25 @@ items:
         href: /graph/throttling?toc=./ref/toc.json
       - name: Notificaciones de cambios
         href: /graph/webhooks?toc=./ref/toc.json
-      - name: Realizar un seguimiento de cambios
+      - name: Control de cambios
         href: /graph/delta-query-overview?toc=./ref/toc.json
         items:
-          - name: Obtener los cambios de eventos (ejemplo)
+          - name: Obtener cambios de los eventos (ejemplo)
             href: /graph/delta-query-events?toc=./ref/toc.json
-          - name: Obtener los cambios a grupos (ejemplo)
+          - name: Obtener cambios de los grupos (ejemplo)
             href: /graph/delta-query-groups?toc=./ref/toc.json
-          - name: Obtener los cambios realizados en los mensajes (ejemplo)
+          - name: Obtener cambios de los mensajes (ejemplo)
             href: /graph/delta-query-messages?toc=./ref/toc.json
-          - name: Obtener los cambios a los usuarios (ejemplo)
+          - name: Obtener cambios de los usuarios (ejemplo)
             href: /graph/delta-query-users?toc=./ref/toc.json
       - name: Agregar datos personalizados
         href: /graph/extensibility-overview?toc=./ref/toc.json
         items:
-          - name: Uso de extensiones open (ejemplo)
+          - name: Usar extensiones abiertas (ejemplo)
             href: /graph/extensibility-open-users?toc=./ref/toc.json
-          - name: Uso de extensiones de esquema (ejemplo)
+          - name: Usar extensiones de esquema (ejemplo)
             href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-      - name: Recursos
+      - name: Resources
         items:
           - name: Procedimientos recomendados
             href: /graph/best-practices-concept?toc=./ref/toc.json
@@ -63,7 +63,7 @@ items:
       - name: Usuarios
         href: resources/users.md
         items:
-          - name: User
+          - name: Usuario
             href: resources/user.md
             items:
               - name: Enumerar usuarios
@@ -97,7 +97,7 @@ items:
                 href: api/user-list-calendarview.md
               - name: Vista de aviso
                 href: api/user-reminderview.md
-              - name: API de búsqueda de horas para reuniones
+              - name: Buscar horas de reunión
                 href: api/user-findmeetingtimes.md
           - name: Contactos
             href: resources/contact.md
@@ -131,6 +131,8 @@ items:
                 href: api/user-checkmembergroups.md
               - name: Obtener objetos por los identificadores de
                 href: api/directoryobject-getbyids.md
+              - name: Exportar datos personales
+                href: api/user-exportpersonaldata.md
           - name: Unidad de disco
             href: resources/drive.md
             items:
@@ -530,7 +532,7 @@ items:
                 href: api/calendar-post-events.md
               - name: Vista de aviso
                 href: api/user-reminderview.md
-              - name: API de búsqueda de horas para reuniones
+              - name: Buscar horas de reunión
                 href: api/user-findmeetingtimes.md
           - name: Vista de calendario
             href: api/user-list-calendarview.md
@@ -591,7 +593,7 @@ items:
       - name: Experiencias entre dispositivos
         href: resources/project-rome-overview.md
         items:
-          - name: Fuente de actividades
+          - name: Noticias de actividad
             href: resources/activity-feed-api-overview.md
             items:
               - name: Actividad
@@ -623,9 +625,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-androidlobapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-androidlobapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-androidlobapp-create.md
                   - name: Delete
                     href: api/intune-apps-androidlobapp-delete.md
@@ -638,9 +640,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-androidstoreapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-androidstoreapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-androidstoreapp-create.md
                   - name: Delete
                     href: api/intune-apps-androidstoreapp-delete.md
@@ -653,9 +655,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-books-deviceinstallstate-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-books-deviceinstallstate-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-books-deviceinstallstate-create.md
                   - name: Delete
                     href: api/intune-books-deviceinstallstate-delete.md
@@ -664,7 +666,7 @@ items:
               - name: Resumen de la instalación de e-book
                 href: resources/intune-books-ebookinstallsummary.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-books-ebookinstallsummary-get.md
                   - name: Update
                     href: api/intune-books-ebookinstallsummary-update.md
@@ -679,9 +681,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-ioslobapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-ioslobapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-ioslobapp-create.md
                   - name: Delete
                     href: api/intune-apps-ioslobapp-delete.md
@@ -696,9 +698,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-iosmobileappconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-iosmobileappconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-iosmobileappconfiguration-create.md
                   - name: Delete
                     href: api/intune-apps-iosmobileappconfiguration-delete.md
@@ -709,9 +711,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-iosstoreapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-iosstoreapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-iosstoreapp-create.md
                   - name: Delete
                     href: api/intune-apps-iosstoreapp-delete.md
@@ -724,9 +726,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-iosvppapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-iosvppapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-iosvppapp-create.md
                   - name: Delete
                     href: api/intune-apps-iosvppapp-delete.md
@@ -739,9 +741,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-books-iosvppebook-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-books-iosvppebook-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-books-iosvppebook-create.md
                   - name: Delete
                     href: api/intune-books-iosvppebook-delete.md
@@ -752,9 +754,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-books-iosvppebookassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-books-iosvppebookassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-books-iosvppebookassignment-create.md
                   - name: Delete
                     href: api/intune-books-iosvppebookassignment-delete.md
@@ -765,9 +767,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-macosofficesuiteapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-macosofficesuiteapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-macosofficesuiteapp-create.md
                   - name: Delete
                     href: api/intune-apps-macosofficesuiteapp-delete.md
@@ -778,9 +780,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-managedandroidlobapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-managedandroidlobapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-managedandroidlobapp-create.md
                   - name: Delete
                     href: api/intune-apps-managedandroidlobapp-delete.md
@@ -791,9 +793,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-managedandroidstoreapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-managedandroidstoreapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-managedandroidstoreapp-create.md
                   - name: Delete
                     href: api/intune-apps-managedandroidstoreapp-delete.md
@@ -804,7 +806,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-managedapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-managedapp-get.md
               - name: Disponibilidad de la aplicación administrada
                 href: resources/intune-apps-managedappavailability.md
@@ -813,7 +815,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-manageddevicemobileappconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-manageddevicemobileappconfiguration-get.md
                   - name: asignar acción
                     href: api/intune-apps-manageddevicemobileappconfiguration-assign.md
@@ -822,9 +824,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-manageddevicemobileappconfigurationassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-manageddevicemobileappconfigurationassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-manageddevicemobileappconfigurationassignment-create.md
                   - name: Delete
                     href: api/intune-apps-manageddevicemobileappconfigurationassignment-delete.md
@@ -835,9 +837,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-create.md
                   - name: Delete
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete.md
@@ -846,7 +848,7 @@ items:
               - name: Resumen del dispositivo de la configuración de aplicaciones para móviles del dispositivo administrado
                 href: resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicesummary-get.md
                   - name: Update
                     href: api/intune-apps-manageddevicemobileappconfigurationdevicesummary-update.md
@@ -855,9 +857,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-create.md
                   - name: Delete
                     href: api/intune-apps-manageddevicemobileappconfigurationuserstatus-delete.md
@@ -866,7 +868,7 @@ items:
               - name: Resumen del usuario de la configuración de aplicaciones para móviles del dispositivo administrado
                 href: resources/intune-apps-manageddevicemobileappconfigurationusersummary.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md
                   - name: Update
                     href: api/intune-apps-manageddevicemobileappconfigurationusersummary-update.md
@@ -875,7 +877,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-books-managedebook-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-books-managedebook-get.md
                   - name: asignar acción
                     href: api/intune-books-managedebook-assign.md
@@ -884,9 +886,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-books-managedebookassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-books-managedebookassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-books-managedebookassignment-create.md
                   - name: Delete
                     href: api/intune-books-managedebookassignment-delete.md
@@ -897,9 +899,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-managedioslobapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-managedioslobapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-managedioslobapp-create.md
                   - name: Delete
                     href: api/intune-apps-managedioslobapp-delete.md
@@ -910,9 +912,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-managediosstoreapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-managediosstoreapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-managediosstoreapp-create.md
                   - name: Delete
                     href: api/intune-apps-managediosstoreapp-delete.md
@@ -923,7 +925,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-managedmobilelobapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-managedmobilelobapp-get.md
               - name: Tipo de clave de configuración de aplicación MDM
                 href: resources/intune-apps-mdmappconfigkeytype.md
@@ -932,9 +934,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-microsoftstoreforbusinessapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-microsoftstoreforbusinessapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-microsoftstoreforbusinessapp-create.md
                   - name: Delete
                     href: api/intune-apps-microsoftstoreforbusinessapp-delete.md
@@ -949,7 +951,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-mobileapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-mobileapp-get.md
                   - name: asignar acción
                     href: api/intune-apps-mobileapp-assign.md
@@ -958,9 +960,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-mobileappassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-mobileappassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-mobileappassignment-create.md
                   - name: Delete
                     href: api/intune-apps-mobileappassignment-delete.md
@@ -973,9 +975,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-mobileappcategory-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-mobileappcategory-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-mobileappcategory-create.md
                   - name: Delete
                     href: api/intune-apps-mobileappcategory-delete.md
@@ -986,9 +988,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-mobileappcontent-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-mobileappcontent-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-mobileappcontent-create.md
                   - name: Delete
                     href: api/intune-apps-mobileappcontent-delete.md
@@ -999,9 +1001,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-mobileappcontentfile-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-mobileappcontentfile-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-mobileappcontentfile-create.md
                   - name: Delete
                     href: api/intune-apps-mobileappcontentfile-delete.md
@@ -1020,16 +1022,16 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-mobilelobapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-mobilelobapp-get.md
               - name: Resumen de estado de instalación del usuario
                 href: resources/intune-books-userinstallstatesummary.md
                 items:
                   - name: Lista
                     href: api/intune-books-userinstallstatesummary-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-books-userinstallstatesummary-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-books-userinstallstatesummary-create.md
                   - name: Delete
                     href: api/intune-books-userinstallstatesummary-delete.md
@@ -1042,9 +1044,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-webapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-webapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-webapp-create.md
                   - name: Delete
                     href: api/intune-apps-webapp-delete.md
@@ -1061,9 +1063,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-windowsmobilemsi-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-windowsmobilemsi-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-windowsmobilemsi-create.md
                   - name: Delete
                     href: api/intune-apps-windowsmobilemsi-delete.md
@@ -1074,9 +1076,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-apps-windowsuniversalappx-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-apps-windowsuniversalappx-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-apps-windowsuniversalappx-create.md
                   - name: Delete
                     href: api/intune-apps-windowsuniversalappx-delete.md
@@ -1090,9 +1092,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-companyterms-termsandconditions-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-companyterms-termsandconditions-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-companyterms-termsandconditions-create.md
                   - name: Delete
                     href: api/intune-companyterms-termsandconditions-delete.md
@@ -1103,9 +1105,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-companyterms-termsandconditionsacceptancestatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-companyterms-termsandconditionsacceptancestatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-companyterms-termsandconditionsacceptancestatus-create.md
                   - name: Delete
                     href: api/intune-companyterms-termsandconditionsacceptancestatus-delete.md
@@ -1116,9 +1118,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-companyterms-termsandconditionsassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-companyterms-termsandconditionsassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-companyterms-termsandconditionsassignment-create.md
                   - name: Delete
                     href: api/intune-companyterms-termsandconditionsassignment-delete.md
@@ -1132,9 +1134,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md
                   - name: Delete
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
@@ -1149,9 +1151,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
                   - name: Delete
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md
@@ -1167,9 +1169,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-androidcompliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-androidcompliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-androidcompliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-androidcompliancepolicy-delete.md
@@ -1180,9 +1182,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-androidcustomconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-androidcustomconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-androidcustomconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-androidcustomconfiguration-delete.md
@@ -1193,9 +1195,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-androidgeneraldeviceconfiguration-delete.md
@@ -1208,9 +1210,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-androidworkprofilecompliancepolicy-delete.md
@@ -1223,9 +1225,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md
@@ -1238,9 +1240,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete.md
@@ -1259,7 +1261,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
               - name: Portapapeles de bloque de aplicación guardián del uso compartido de tipo
                 href: resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md
@@ -1290,9 +1292,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecomplianceactionitem-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecomplianceactionitem-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-devicecomplianceactionitem-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-devicecomplianceactionitem-delete.md
@@ -1303,7 +1305,7 @@ items:
               - name: Información general del dispositivo sobre el cumplimiento de dispositivos
                 href: resources/intune-deviceconfig-devicecompliancedeviceoverview.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
@@ -1312,9 +1314,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-devicecompliancedevicestatus-delete.md
@@ -1325,7 +1327,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecompliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancepolicy-get.md
                   - name: asignar acción
                     href: api/intune-deviceconfig-devicecompliancepolicy-assign.md
@@ -1336,9 +1338,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecompliancepolicyassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancepolicyassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-devicecompliancepolicyassignment-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-devicecompliancepolicyassignment-delete.md
@@ -1347,7 +1349,7 @@ items:
               - name: Resumen de estado de dispositivo de directiva de cumplimiento de dispositivos
                 href: resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
@@ -1358,9 +1360,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-delete.md
@@ -1371,9 +1373,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-delete.md
@@ -1384,9 +1386,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-devicecompliancesettingstate-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-devicecompliancesettingstate-delete.md
@@ -1395,7 +1397,7 @@ items:
               - name: Información general del usuario de cumplimiento de dispositivos
                 href: resources/intune-deviceconfig-devicecomplianceuseroverview.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecomplianceuseroverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-devicecomplianceuseroverview-update.md
@@ -1404,9 +1406,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
@@ -1417,7 +1419,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-deviceconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-deviceconfiguration-get.md
                   - name: asignar acción
                     href: api/intune-deviceconfig-deviceconfiguration-assign.md
@@ -1426,9 +1428,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationassignment-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-deviceconfigurationassignment-delete.md
@@ -1437,14 +1439,14 @@ items:
               - name: Información general del dispositivo sobre la configuración de dispositivos
                 href: resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md
               - name: Resumen de estado de dispositivo de configuración de dispositivo
                 href: resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatesummary-update.md
@@ -1453,9 +1455,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatus-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-deviceconfigurationdevicestatus-delete.md
@@ -1466,7 +1468,7 @@ items:
               - name: Información general del usuario sobre la configuración de dispositivos
                 href: resources/intune-deviceconfig-deviceconfigurationuseroverview.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-deviceconfigurationuseroverview-get.md
                   - name: Update
                     href: api/intune-deviceconfig-deviceconfigurationuseroverview-update.md
@@ -1475,9 +1477,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-deviceconfigurationuserstatus-delete.md
@@ -1504,9 +1506,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-editionupgradeconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-editionupgradeconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-editionupgradeconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-editionupgradeconfiguration-delete.md
@@ -1527,16 +1529,16 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-ioscertificateprofile-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-ioscertificateprofile-get.md
               - name: Directiva de cumplimiento de iOS
                 href: resources/intune-deviceconfig-ioscompliancepolicy.md
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-ioscompliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-ioscompliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-ioscompliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-ioscompliancepolicy-delete.md
@@ -1547,9 +1549,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-ioscustomconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-ioscustomconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-ioscustomconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
@@ -1560,9 +1562,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-iosdevicefeaturesconfiguration-delete.md
@@ -1573,9 +1575,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-delete.md
@@ -1602,9 +1604,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-iosupdateconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-iosupdateconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-iosupdateconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-iosupdateconfiguration-delete.md
@@ -1615,9 +1617,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-iosupdatedevicestatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-iosupdatedevicestatus-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-iosupdatedevicestatus-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-iosupdatedevicestatus-delete.md
@@ -1630,9 +1632,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-macoscompliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-macoscompliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-macoscompliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
@@ -1643,9 +1645,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-macoscustomconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-macoscustomconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-macoscustomconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-macoscustomconfiguration-delete.md
@@ -1656,9 +1658,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-macosdevicefeaturesconfiguration-delete.md
@@ -1669,9 +1671,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-macosgeneraldeviceconfiguration-delete.md
@@ -1766,9 +1768,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-settingstatedevicesummary-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-settingstatedevicesummary-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-settingstatedevicesummary-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-settingstatedevicesummary-delete.md
@@ -1785,9 +1787,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-sharedpcconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-sharedpcconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-sharedpcconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-sharedpcconfiguration-delete.md
@@ -1798,7 +1800,7 @@ items:
               - name: Resumen del estado de la actualización de software
                 href: resources/intune-deviceconfig-softwareupdatestatussummary.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-softwareupdatestatussummary-get.md
                   - name: Update
                     href: api/intune-deviceconfig-softwareupdatestatussummary-update.md
@@ -1817,9 +1819,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10compliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10compliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10compliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10compliancepolicy-delete.md
@@ -1830,9 +1832,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10customconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10customconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10customconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10customconfiguration-delete.md
@@ -1845,9 +1847,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10endpointprotectionconfiguration-delete.md
@@ -1858,9 +1860,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-delete.md
@@ -1871,9 +1873,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10generalconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10generalconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10generalconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10generalconfiguration-delete.md
@@ -1884,9 +1886,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10mobilecompliancepolicy-delete.md
@@ -1899,9 +1901,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10secureassessmentconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10secureassessmentconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10secureassessmentconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10secureassessmentconfiguration-delete.md
@@ -1912,9 +1914,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows10teamgeneralconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows10teamgeneralconfiguration-delete.md
@@ -1925,9 +1927,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows81compliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows81compliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows81compliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows81compliancepolicy-delete.md
@@ -1938,9 +1940,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windows81generalconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windows81generalconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windows81generalconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windows81generalconfiguration-delete.md
@@ -1951,9 +1953,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
@@ -1968,9 +1970,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windowsphone81compliancepolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81compliancepolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windowsphone81compliancepolicy-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windowsphone81compliancepolicy-delete.md
@@ -1981,9 +1983,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windowsphone81customconfiguration-delete.md
@@ -1994,9 +1996,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windowsphone81generalconfiguration-delete.md
@@ -2015,9 +2017,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-create.md
                   - name: Delete
                     href: api/intune-deviceconfig-windowsupdateforbusinessconfiguration-delete.md
@@ -2039,7 +2041,7 @@ items:
               - name: Certificado de notificación de inserción de Apple
                 href: resources/intune-devices-applepushnotificationcertificate.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-devices-applepushnotificationcertificate-get.md
                   - name: Update
                     href: api/intune-devices-applepushnotificationcertificate-update.md
@@ -2050,9 +2052,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-auditing-auditevent-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-auditing-auditevent-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-auditing-auditevent-create.md
                   - name: Delete
                     href: api/intune-auditing-auditevent-delete.md
@@ -2073,9 +2075,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-devices-detectedapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-devices-detectedapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-devices-detectedapp-create.md
                   - name: Delete
                     href: api/intune-devices-detectedapp-delete.md
@@ -2104,9 +2106,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
                   - name: Delete
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
@@ -2121,9 +2123,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
                   - name: Delete
                     href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
@@ -2134,9 +2136,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-notification-localizednotificationmessage-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-notification-localizednotificationmessage-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-notification-localizednotificationmessage-create.md
                   - name: Delete
                     href: api/intune-notification-localizednotificationmessage-delete.md
@@ -2149,9 +2151,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-devices-manageddevice-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-devices-manageddevice-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-devices-manageddevice-create.md
                   - name: Delete
                     href: api/intune-devices-manageddevice-delete.md
@@ -2196,7 +2198,7 @@ items:
               - name: Resumen de dispositivos administrados
                 href: resources/intune-devices-manageddeviceoverview.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-devices-manageddeviceoverview-get.md
                   - name: Update
                     href: api/intune-devices-manageddeviceoverview-update.md
@@ -2211,9 +2213,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-notification-notificationmessagetemplate-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-notification-notificationmessagetemplate-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-notification-notificationmessagetemplate-create.md
                   - name: Delete
                     href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -2230,9 +2232,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-remoteassistance-remoteassistancepartner-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-remoteassistance-remoteassistancepartner-create.md
                   - name: Delete
                     href: api/intune-remoteassistance-remoteassistancepartner-delete.md
@@ -2264,9 +2266,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-androidmanagedappprotection-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-androidmanagedappprotection-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-androidmanagedappprotection-create.md
                   - name: Delete
                     href: api/intune-mam-androidmanagedappprotection-delete.md
@@ -2277,9 +2279,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-androidmanagedappregistration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-androidmanagedappregistration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-androidmanagedappregistration-create.md
               - name: Identificador de aplicaciones para móviles de Android
                 href: resources/intune-mam-androidmobileappidentifier.md
@@ -2290,9 +2292,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-defaultmanagedappprotection-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-defaultmanagedappprotection-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-defaultmanagedappprotection-create.md
                   - name: Delete
                     href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -2303,9 +2305,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-iosmanagedappprotection-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-iosmanagedappprotection-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-iosmanagedappprotection-create.md
                   - name: Delete
                     href: api/intune-mam-iosmanagedappprotection-delete.md
@@ -2316,7 +2318,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-iosmanagedappregistration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-iosmanagedappregistration-get.md
               - name: Identificador de aplicaciones para móviles de iOS
                 href: resources/intune-mam-iosmobileappidentifier.md
@@ -2337,7 +2339,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-managedappconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedappconfiguration-get.md
               - name: Administra el tipo de cifrado de datos de aplicación
                 href: resources/intune-mam-managedappdataencryptiontype.md
@@ -2354,9 +2356,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-managedappoperation-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedappoperation-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-managedappoperation-create.md
                   - name: Delete
                     href: api/intune-mam-managedappoperation-delete.md
@@ -2369,14 +2371,14 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-managedapppolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedapppolicy-get.md
                   - name: Acción targetApps
                     href: api/intune-mam-managedapppolicy-targetapps.md
               - name: Resumen de implementación de directivas de aplicaciones administradas
                 href: resources/intune-mam-managedapppolicydeploymentsummary.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedapppolicydeploymentsummary-get.md
                   - name: Update
                     href: api/intune-mam-managedapppolicydeploymentsummary-update.md
@@ -2387,7 +2389,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-managedappprotection-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedappprotection-get.md
                   - name: Acción targetApps
                     href: api/intune-mam-managedappprotection-targetapps.md
@@ -2396,30 +2398,30 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-managedappregistration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedappregistration-get.md
               - name: Estado de las aplicaciones administradas
                 href: resources/intune-mam-managedappstatus.md
                 items:
                   - name: Lista
                     href: api/intune-mam-managedappstatus-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedappstatus-get.md
               - name: Estado de las aplicaciones administradas sin procesar
                 href: resources/intune-mam-managedappstatusraw.md
                 items:
                   - name: Lista
                     href: api/intune-mam-managedappstatusraw-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedappstatusraw-get.md
               - name: Aplicación móvil administrada
                 href: resources/intune-mam-managedmobileapp.md
                 items:
                   - name: Lista
                     href: api/intune-mam-managedmobileapp-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-managedmobileapp-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-managedmobileapp-create.md
                   - name: Delete
                     href: api/intune-mam-managedmobileapp-delete.md
@@ -2430,9 +2432,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
                   - name: Delete
                     href: api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
@@ -2447,9 +2449,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-targetedmanagedappconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-targetedmanagedappconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-targetedmanagedappconfiguration-create.md
                   - name: Delete
                     href: api/intune-mam-targetedmanagedappconfiguration-delete.md
@@ -2464,7 +2466,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-targetedmanagedapppolicyassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-targetedmanagedapppolicyassignment-get.md
                   - name: Delete
                     href: api/intune-mam-targetedmanagedapppolicyassignment-delete.md
@@ -2475,7 +2477,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-targetedmanagedappprotection-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-targetedmanagedappprotection-get.md
                   - name: asignar acción
                     href: api/intune-mam-targetedmanagedappprotection-assign.md
@@ -2484,7 +2486,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-windowsinformationprotection-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-windowsinformationprotection-get.md
                   - name: asignar acción
                     href: api/intune-mam-windowsinformationprotection-assign.md
@@ -2495,9 +2497,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-create.md
                   - name: Delete
                     href: api/intune-wip-windowsinformationprotectionapplearningsummary-delete.md
@@ -2508,9 +2510,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
                   - name: Delete
                     href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
@@ -2529,9 +2531,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-create.md
                   - name: Delete
                     href: api/intune-wip-windowsinformationprotectionnetworklearningsummary-delete.md
@@ -2544,9 +2546,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-mam-windowsinformationprotectionpolicy-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-mam-windowsinformationprotectionpolicy-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-mam-windowsinformationprotectionpolicy-create.md
                   - name: Delete
                     href: api/intune-mam-windowsinformationprotectionpolicy-delete.md
@@ -2566,7 +2568,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-deviceenrollmentconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-deviceenrollmentconfiguration-get.md
                   - name: Acción setPriority
                     href: api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md
@@ -2577,9 +2579,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-deviceenrollmentlimitconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-deviceenrollmentlimitconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-deviceenrollmentlimitconfiguration-create.md
                   - name: Delete
                     href: api/intune-onboarding-deviceenrollmentlimitconfiguration-delete.md
@@ -2592,9 +2594,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-create.md
                   - name: Delete
                     href: api/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration-delete.md
@@ -2605,9 +2607,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-create.md
                   - name: Delete
                     href: api/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration-delete.md
@@ -2618,9 +2620,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-devicemanagementexchangeconnector-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-devicemanagementexchangeconnector-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-devicemanagementexchangeconnector-create.md
                   - name: Delete
                     href: api/intune-onboarding-devicemanagementexchangeconnector-delete.md
@@ -2639,9 +2641,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-devicemanagementpartner-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-devicemanagementpartner-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-devicemanagementpartner-create.md
                   - name: Delete
                     href: api/intune-onboarding-devicemanagementpartner-delete.md
@@ -2658,9 +2660,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-enrollmentconfigurationassignment-create.md
                   - name: Delete
                     href: api/intune-onboarding-enrollmentconfigurationassignment-delete.md
@@ -2675,9 +2677,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-mobilethreatdefenseconnector-create.md
                   - name: Delete
                     href: api/intune-onboarding-mobilethreatdefenseconnector-delete.md
@@ -2688,7 +2690,7 @@ items:
               - name: Configuración de acceso condicional local
                 href: resources/intune-onboarding-onpremisesconditionalaccesssettings.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
                   - name: Update
                     href: api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
@@ -2697,7 +2699,7 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-organization-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-organization-get.md
                   - name: Update
                     href: api/intune-onboarding-organization-update.md
@@ -2710,9 +2712,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-onboarding-vpptoken-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-onboarding-vpptoken-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-onboarding-vpptoken-create.md
                   - name: Delete
                     href: api/intune-onboarding-vpptoken-delete.md
@@ -2736,9 +2738,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-rbac-deviceandappmanagementroleassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-rbac-deviceandappmanagementroleassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-rbac-deviceandappmanagementroleassignment-create.md
                   - name: Delete
                     href: api/intune-rbac-deviceandappmanagementroleassignment-delete.md
@@ -2749,9 +2751,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-rbac-deviceandappmanagementroledefinition-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-rbac-deviceandappmanagementroledefinition-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-rbac-deviceandappmanagementroledefinition-create.md
                   - name: Delete
                     href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
@@ -2764,9 +2766,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-rbac-resourceoperation-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-rbac-resourceoperation-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-rbac-resourceoperation-create.md
                   - name: Delete
                     href: api/intune-rbac-resourceoperation-delete.md
@@ -2777,9 +2779,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-rbac-roleassignment-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-rbac-roleassignment-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-rbac-roleassignment-create.md
                   - name: Delete
                     href: api/intune-rbac-roleassignment-delete.md
@@ -2790,9 +2792,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-rbac-roledefinition-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-rbac-roledefinition-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-rbac-roledefinition-create.md
                   - name: Delete
                     href: api/intune-rbac-roledefinition-delete.md
@@ -2814,7 +2816,7 @@ items:
               - name: Administración de aplicaciones de dispositivo
                 href: resources/intune-shared-deviceappmanagement.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-shared-deviceappmanagement-get.md
                   - name: Update
                     href: api/intune-shared-deviceappmanagement-update.md
@@ -2825,9 +2827,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-shared-devicecategory-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-shared-devicecategory-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-shared-devicecategory-create.md
                   - name: Delete
                     href: api/intune-shared-devicecategory-delete.md
@@ -2836,7 +2838,7 @@ items:
               - name: Administración de dispositivos
                 href: resources/intune-shared-devicemanagement.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-shared-devicemanagement-get.md
                   - name: Update
                     href: api/intune-shared-devicemanagement-update.md
@@ -2853,7 +2855,7 @@ items:
               - name: Raíz de informes
                 href: resources/intune-shared-reportroot.md
                 items:
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-shared-reportroot-get.md
                   - name: Update
                     href: api/intune-shared-reportroot-update.md
@@ -2861,14 +2863,14 @@ items:
                 href: resources/intune-shared-saveduistategenerationoptions.md
               - name: URI
                 href: resources/intune-shared-uri.md
-              - name: User
+              - name: Usuario
                 href: resources/intune-shared-user.md
                 items:
                   - name: Lista
                     href: api/intune-shared-user-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-shared-user-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-shared-user-create.md
                   - name: Delete
                     href: api/intune-shared-user-delete.md
@@ -2888,9 +2890,9 @@ items:
                 items:
                   - name: Lista
                     href: api/intune-tem-telecomexpensemanagementpartner-list.md
-                  - name: Obtener
+                  - name: Get
                     href: api/intune-tem-telecomexpensemanagementpartner-get.md
-                  - name: Crear
+                  - name: Create
                     href: api/intune-tem-telecomexpensemanagementpartner-create.md
                   - name: Delete
                     href: api/intune-tem-telecomexpensemanagementpartner-delete.md
@@ -3009,7 +3011,7 @@ items:
                 href: api/driveitem-createuploadsession.md
               - name: Buscar elementos
                 href: api/driveitem-search.md
-              - name: Realizar un seguimiento de cambios
+              - name: Control de cambios
                 href: api/driveitem-delta.md
               - name: Enumerar versiones
                 href: api/driveitem-list-versions.md
@@ -3042,6 +3044,11 @@ items:
                 href: api/contract-get.md
               - name: Enumerar contratos
                 href: api/contract-list.md
+          - name: Operación de la directiva de datos
+            href: resources/datapolicyoperation.md
+            items:
+              - name: Obtener la operación de la directiva de datos
+                href: api/datapolicyoperation-get.md
           - name: Elementos eliminados
             href: resources/directory.md
             items:
@@ -3055,7 +3062,7 @@ items:
                 href: api/directory-deleteditems-restore.md
               - name: Lista de los elementos eliminados de propiedad de usuario
                 href: api/directory-deleteditems-user-owned.md
-          - name: Dispositivo
+          - name: Device
             href: resources/device.md
             items:
               - name: List devices
@@ -3395,7 +3402,7 @@ items:
                 href: api/page-delete.md
               - name: Copie en la sección
                 href: api/page-copytosection.md
-          - name: Recursos
+          - name: Resources
             href: resources/resource.md
             items:
               - name: Obtener recurso
