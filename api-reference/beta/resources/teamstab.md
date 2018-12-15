@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso teamsTab
 description: 'Una teamsTab es una ficha que ha anclado (adjunto) a un canal dentro de un equipo. '
-ms.openlocfilehash: cba82432f6ade7baa591c3abb7e099ec7f6e9d5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 102d4c0b766d8a0d9bdf22cb2ed76f5e06d87ad5
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086641"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283622"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
@@ -33,7 +33,7 @@ Una teamsTab es una [ficha](../resources/teamstab.md) que ha anclado (adjunto) a
 |  displayName            |   string                  |  Nombre de la ficha.     |
 |  name            |   string                  |  (Obsoleto) Nombre de la ficha.     |
 |  teamsAppId           |   string             |  Identificador de la definición de aplicación de la ficha. No se puede cambiar este valor después de la creación de la ficha.     |
-|  sortOrderIndex  |   int                     |  Índice del orden utilizado para la ordenación de las fichas     |
+|  sortOrderIndex  |   int                     |  Índice del orden utilizado para la ordenación de las fichas.     |
 |  webUrl          |   string                  |  Dirección url del vínculo profundo de la instancia de ficha. Solo lectura.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contenedor de configuración personalizada que se aplican a una ficha. La ficha se considera configurado sólo una vez que se establece esta propiedad.     |
 

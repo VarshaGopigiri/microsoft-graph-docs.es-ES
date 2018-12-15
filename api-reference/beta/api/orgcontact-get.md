@@ -1,12 +1,12 @@
 ---
 title: Obtener orgContact
 description: Recuperar las propiedades y relaciones del objeto orgcontact.
-ms.openlocfilehash: 178d670c55cdd904c604e1be1f6fb0aef3a4b953
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9297297bf341d622070c6ca200d99087588a8ce6
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084419"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283615"
 ---
 # <a name="get-orgcontact"></a>Obtener orgContact
 
@@ -31,9 +31,9 @@ GET /contacts/{id}
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
@@ -64,14 +64,25 @@ Content-type: application/json
 Content-length: 222
 
 {
-  "businessPhones": [
-    "businessPhones-value"
+  "addresses":[
+      {
+        "city": "string",
+        "countryOrRegion": "string",
+        "officeLocation": "string",
+        "postalCode": "string",
+        "state": "string",
+        "street": "string"
+      }
   ],
-  "city": "city-value",
   "companyName": "companyName-value",
-  "country": "country-value",
   "department": "department-value",
-  "displayName": "displayName-value"
+  "displayName": "displayName-value",
+  "phones":[
+      {
+        "type": "string",
+        "number": "string"
+      }
+  ]
 }
 ```
 
