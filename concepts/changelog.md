@@ -1,12 +1,12 @@
 ---
 title: Registro de cambios para Microsoft Graph
 description: Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.
-ms.openlocfilehash: e8b4671d527bac65d1855c21d7612077ed18203e
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222663"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283734"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Registro de cambios de Microsoft Graph
 
@@ -16,13 +16,22 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 
 ## <a name="december-2018"></a>Diciembre de 2018
 
-### <a name="directory-apis"></a>API de directorio
+### <a name="data-policy-api"></a>Directiva de datos de API
+
+| **Tipo de cambio** | **Versión** | **Descripción**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Adición |v1.0| Se agregó la nueva entidad [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0). Representa una operación de directiva de datos enviados con fines de seguimiento.
+|Adición |v1.0| Se agregó la acción [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) a [users](/graph/api/resources/users?view=graph-rest-1.0). Esta acción envía una solicitud de operación de directiva de datos para exportar datos personales de un usuario almacenados por Microsoft. |
+|Adición |v1.0| Se agregó el método [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0). Esto recupera las propiedades del objeto dataPolicyOperation.|
+
+### <a name="directory-apis"></a>Las API de directorio
 
 | **Tipo de cambio** | **Versión**   | **Descripción**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adición | beta | Se agregó el nuevo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Adición | beta | Se agregó la propiedad `createdDateTime` al recurso [organización](/graph/api/resources/organization?view=graph-rest-beta).|
-| Adición | v1.0 | Se agregó el método `memberOf` para obtener la [pertenencia](/graph/api/device-list-memberOf?view=graph-rest-1.0) directa de un [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). Se ha agregado este método para obtener la lista de pertenencias, incluidas las pertenencias anidadas.|
+| Adición | v1.0 | Se agregó el método `memberOf` para obtener la [pertenencia](/graph/api/device-list-memberOf?view=graph-rest-1.0) directa de un [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). Se agregó este método para obtener la lista de pertenencias, incluidas las pertenencias anidadas.|
+| Cambio    | Beta | Se reestructuró el recurso [contactos de la organización](/graph/api/resources/orgcontact?view=graph-rest-beta). Las propiedades de la dirección física (`city`, `country`, `postalCode`, `streetAddress`, y `state`) y `officeLocation` están ahora en una colección `addresses` (del nuevo tipo de recurso [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta)); `mobilePhone`, `businessPhones` y `faxNumber` están ahora en una colección `phones`. También se agregaron `companyName` y `imAddresses`|
 
 ### <a name="microsoft-teams-apis"></a>Las API de Microsoft Teams
 

@@ -1,18 +1,18 @@
 ---
-title: Crear y enviar mensajes de Outlook
+title: Automatizar la creación, el envío y el procesamiento de mensajes
 description: Los correos electrónicos se representan mediante el recurso message en Microsoft Graph.
-ms.openlocfilehash: 49670df0d5d735e412a0fd97e3404fab044f6f50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9eba9e04426bdf1339d9ae287c1cf085bcf3b500
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092882"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283692"
 ---
-# <a name="create-and-send-outlook-messages"></a>Crear y enviar mensajes de Outlook
+# <a name="automate-creating-sending-and-processing-messages"></a>Automatizar la creación, el envío y el procesamiento de mensajes
 
 Los correos electrónicos se representan mediante el recurso [message](/graph/api/resources/message?view=graph-rest-1.0) en Microsoft Graph.
 
-De forma predeterminada, los mensajes se identifican por un identificador de entrada único en la propiedad **id**. Un proveedor de almacenamiento asigna a un mensaje un identificador de entidad cuando el mensaje se guarda inicialmente como un borrador o se envía. Ese identificador cambia cuando el mensaje se copia o se mueve a otra carpeta, almacenamiento o archivo .PST.
+De forma predeterminada, los mensajes se identifican por un identificador de entrada único en la propiedad **id**. Cuando se crea y se guarda inicialmente como borrador un mensaje o se envía, el proveedor de almacén asigna al mensaje un id. de entrada. De manera predeterminada, ese id. cambia cuando el mensaje se copia o se mueve a otra carpeta, almacén o archivo .PST. Se hace referencia el mensaje con su Id. actual para un procesamiento adicional.
 
 ## <a name="creating-and-sending-mail"></a>Crear y enviar correo electrónico
 
@@ -22,26 +22,49 @@ De forma similar, cuando responde a un correo electrónico, puede crear y enviar
 
 Para distinguir un borrador de un mensaje enviado mediante programación, consulte la propiedad **isDraft**.
 
-De forma predeterminada, los borradores se guardan en la carpeta `Drafts` y los mensajes enviados en la carpeta `Sent Items`. Para mayor comodidad, puede identificar las carpetas Drafts y SentItems por sus [nombres de carpeta correspondientes conocidos](/graph/api/resources/mailfolder?view=graph-rest-1.0). Por ejemplo, puede hacer lo siguiente para [obtener los mensajes](/graph/api/user-list-messages?view=graph-rest-1.0) en la carpeta Drafts:
+De forma predeterminada, los borradores se guardan en la carpeta `Drafts` y los mensajes enviados en la carpeta `Sent Items`. Para mayor comodidad, puede identificar las carpetas Borradores y Elementos enviados por sus [nombres de carpeta conocidos](/graph/api/resources/mailfolder?view=graph-rest-1.0) correspondientes. 
 
+### <a name="setting-the-from-and-sender-properties"></a>Configuración de las propiedades from y sender
+
+Cuando se redacta un mensaje, en la mayoría de los casos, Outlook establece las propiedades **from** y **sender** para el mismo usuario que haya iniciado sesión. Puede actualizar estas propiedades en las siguientes situaciones:
+
+- La propiedad **from** se puede cambiar si el administrador de Exchange ha asignado los derechos **sendAs** del buzón a otros usuarios. El administrador puede realizar esta acción si selecciona **Permisos del buzón** del propietario del buzón en Azure Portal, o si usa el Centro de administración de Exchange o un cmdlet Add-ADPermission de Windows PowerShell. Después, puede configurar mediante programación la propiedad **from** para uno de los usuarios que tiene derechos **sendAs** de ese buzón.
+- La propiedad **sender** se puede cambiar si el propietario del buzón ha delegado uno o más usuarios para que puedan enviar mensajes desde ese buzón. El propietario del buzón puede delegar en Outlook. Cuando un delegado envía un mensaje en nombre del propietario del buzón, Outlook establece la propiedad **sender** en la cuenta del delegado y la propiedad **from** sigue siendo el propietario del buzón. Mediante programación, puede configurar la propiedad **sender** para un usuario que tiene permisos de delegado en ese buzón.
+
+## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Usar Sugerencias de correo electrónico para comprobar el estado del destinatario y ahorrar tiempo (versión preliminar)
+
+Use [Sugerencias de correo electrónico](/graph/api/resources/mailtips?view=graph-rest-beta) para tomar decisiones inteligentes antes de enviar un correo electrónico.
+Las Sugerencias de correo electrónico pueden proporcionarle información, como que el buzón del destinatario está limitado a determinados remitentes o si se necesita aprobación para enviar un correo electrónico al destinatario.
+
+
+## <a name="reading-messages-with-control-over-the-body-format-returned"></a>Se devolvió la lectura de mensajes con control del formato de cuerpo. 
+
+También puede [leer un mensaje](/graph/api/message-get?view=graph-rest-1.0) en un buzón haciendo referencia a su Id.:
+
+<!-- {
+  "blockType": "ignored",
+  "sampleKeys": ["AAMkADhMGAAA="]
+}-->
+```http
+GET /me/messages/AAMkADhMGAAA=
+```
+
+Puede [recibir mensajes](/graph/api/user-list-messages?view=graph-rest-1.0) en una carpeta específica. Por ejemplo, para leer mensajes en la carpeta de borradores del usuario que haya iniciado sesión:
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailfolders('Drafts')
 ```
 
-### <a name="body-format-and-malicious-script"></a>Formato de cuerpo y script malintencionado
+El cuerpo del mensaje de Outlook puede ser un HTML o un texto, con HTML como el tipo de cuerpo del mensaje predeterminado que se devuelve en una respuesta GET.
 
-<!-- Remove the following 2 sections from the message.md topics
--->
-
-El cuerpo del mensaje puede ser HTML o texto, con HTML como el tipo de cuerpo del mensaje predeterminado que se devuelve en una respuesta GET.
-
-Cuando [obtenga un mensaje](/graph/api/message-get?view=graph-rest-1.0), puede especificar el siguiente encabezado de solicitud para devolver las propiedades **body** y **uniqueBody** en el formato del texto:
+Al recibir un mensaje, puede especificar el siguiente encabezado de solicitud para devolver las propiedades **body** y **uniqueBody** en el formato del texto:
 
 ```http
 Prefer: outlook.body-content-type="text"
 ```
 
-Puede especificar el siguiente encabezado o, simplemente omita el encabezado, para obtener el cuerpo del mensaje en formato HTML:
+Puede especificar el siguiente encabezado o, simplemente, omitir el encabezado, para obtener el cuerpo del mensaje en formato HTML:
 
 ```http
 Prefer: outlook.body-content-type="html"
@@ -60,19 +83,7 @@ Para obtener todo el contenido HTML original, incluya el siguiente encabezado de
 Prefer: outlook.allow-unsafe-html
 ```
 
-### <a name="differentiating-the-from-and-sender-properties"></a>Diferenciar de las propiedades from y sender
-
-Cuando se redacta un mensaje, en la mayoría de los casos, Outlook establece las propiedades **from** y **sender** para el mismo usuario que haya iniciado sesión. Puede actualizar estas propiedades en las siguientes situaciones:
-
-- La propiedad **from** se puede cambiar si el administrador de Exchange ha asignado los derechos **sendAs** del buzón a otros usuarios. El administrador puede realizar esta acción si selecciona **Permisos del buzón** del propietario del buzón en Azure Portal, o si usa el Centro de administración de Exchange o un cmdlet Add-ADPermission de Windows PowerShell. Después, puede configurar mediante programación la propiedad **from** para uno de los usuarios que tiene derechos **sendAs** de ese buzón.
-- La propiedad **sender** se puede cambiar si el propietario del buzón ha delegado uno o más usuarios para que puedan enviar mensajes desde ese buzón. El propietario del buzón puede delegar en Outlook. Cuando un delegado envía un mensaje en nombre del propietario del buzón, Outlook establece la propiedad **sender** en la cuenta del delegado y la propiedad **from** sigue siendo el propietario del buzón. Mediante programación, puede configurar la propiedad **sender** para un usuario que tiene permisos de delegado en ese buzón.
-
-## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Usar Sugerencias de correo electrónico para comprobar el estado del destinatario y ahorrar tiempo (versión preliminar)
-
-Use [Sugerencias de correo electrónico](/graph/api/resources/mailtips?view=graph-rest-beta) para tomar decisiones inteligentes antes de enviar un correo electrónico.
-Las sugerencias de correo electrónico pueden proporcionarle información, como que el buzón del destinatario está limitado a determinados remitentes o si se necesita aprobación para enviar un correo electrónico al destinatario.
-
-## <a name="integrating-with--social-gesture-preview"></a>Integración con gesto de redes sociales "@" (versión preliminar)
+## <a name="integrating-with--social-gesture-preview"></a>Integración con gesto de redes sociales "@" (vista previa)
 
 Las @menciones son notificaciones para avisar a los usuarios si se les menciona en los mensajes. El recurso [mention](/graph/api/resources/mention?view=graph-rest-beta) permite a las aplicaciones configurar y obtener el gesto de redes sociales en línea común, el prefijo "@", en los mensajes de correo electrónico.
 Puede:
@@ -95,4 +106,5 @@ Aproveche las ventajas de las siguientes funciones comunes que se comparten entr
 Obtenga más información sobre:
 
 - [¿Por qué integrar con el correo de Outlook?](outlook-mail-concept-overview.md)
+- [Obtener identificadores inmutables para recursos de Outlook (vista previa)](outlook-immutable-id.md)
 - [Usar la API de correo](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) y sus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) en Microsoft Graph v1.0.
