@@ -1,28 +1,29 @@
 ---
 title: Obtener managedEBookAssignment
 description: Lea las propiedades y las relaciones del objeto managedEBookAssignment.
-ms.openlocfilehash: d7537212b2d1c22fa3e2e2709ab7f37165b7015b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea88a296849d109ac6a38fa39774d5be7be18133
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031477"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323026"
 ---
-# <a name="get-managedebookassignment"></a><span data-ttu-id="73891-103">Obtener managedEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="73891-103">Get managedEBookAssignment</span></span>
+# <a name="get-managedebookassignment"></a><span data-ttu-id="5f457-103">Obtener managedEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="5f457-103">Get managedEBookAssignment</span></span>
 
-> <span data-ttu-id="73891-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="73891-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5f457-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="5f457-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="73891-105">Lea las propiedades y las relaciones del objeto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="73891-105">Read properties and relationships of the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="73891-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="73891-106">Prerequisites</span></span>
-<span data-ttu-id="73891-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="73891-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5f457-105">Lea las propiedades y las relaciones del objeto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="5f457-105">Read properties and relationships of the [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5f457-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="5f457-106">Prerequisites</span></span>
+<span data-ttu-id="5f457-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5f457-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="73891-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="73891-109">Permission type</span></span>|<span data-ttu-id="73891-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="73891-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5f457-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="5f457-109">Permission type</span></span>|<span data-ttu-id="5f457-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="5f457-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="73891-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="73891-111">Delegated (work or school account)</span></span>|<span data-ttu-id="73891-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="73891-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="73891-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="73891-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="73891-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="73891-114">Not supported.</span></span>|
-|<span data-ttu-id="73891-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="73891-115">Application</span></span>|<span data-ttu-id="73891-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="73891-116">Not supported.</span></span>|
+|<span data-ttu-id="5f457-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="5f457-111">Delegated (work or school account)</span></span>|<span data-ttu-id="5f457-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="5f457-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="5f457-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5f457-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5f457-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="5f457-114">Not supported.</span></span>|
+|<span data-ttu-id="5f457-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="5f457-115">Application</span></span>|<span data-ttu-id="5f457-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="5f457-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="73891-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="73891-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5f457-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="5f457-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -31,29 +32,29 @@ ms.locfileid: "27031477"
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="73891-118">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="73891-118">Optional query parameters</span></span>
-<span data-ttu-id="73891-119">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="73891-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="73891-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="73891-120">Request headers</span></span>
-|<span data-ttu-id="73891-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="73891-121">Header</span></span>|<span data-ttu-id="73891-122">Valor</span><span class="sxs-lookup"><span data-stu-id="73891-122">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="5f457-118">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="5f457-118">Optional query parameters</span></span>
+<span data-ttu-id="5f457-119">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5f457-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5f457-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="5f457-120">Request headers</span></span>
+|<span data-ttu-id="5f457-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="5f457-121">Header</span></span>|<span data-ttu-id="5f457-122">Valor</span><span class="sxs-lookup"><span data-stu-id="5f457-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="73891-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="73891-123">Authorization</span></span>|<span data-ttu-id="73891-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="73891-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="73891-125">Aceptar</span><span class="sxs-lookup"><span data-stu-id="73891-125">Accept</span></span>|<span data-ttu-id="73891-126">application/json</span><span class="sxs-lookup"><span data-stu-id="73891-126">application/json</span></span>|
+|<span data-ttu-id="5f457-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="5f457-123">Authorization</span></span>|<span data-ttu-id="5f457-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="5f457-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5f457-125">Aceptar</span><span class="sxs-lookup"><span data-stu-id="5f457-125">Accept</span></span>|<span data-ttu-id="5f457-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5f457-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="73891-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="73891-127">Request body</span></span>
-<span data-ttu-id="73891-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="73891-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5f457-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="5f457-127">Request body</span></span>
+<span data-ttu-id="5f457-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="5f457-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="73891-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="73891-129">Response</span></span>
-<span data-ttu-id="73891-130">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="73891-130">If successful, this method returns a `200 OK` response code and [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5f457-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5f457-129">Response</span></span>
+<span data-ttu-id="5f457-130">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5f457-130">If successful, this method returns a `200 OK` response code and [managedEBookAssignment](../resources/intune-books-managedebookassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="73891-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="73891-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="73891-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="73891-132">Request</span></span>
-<span data-ttu-id="73891-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="73891-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5f457-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="5f457-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="5f457-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="5f457-132">Request</span></span>
+<span data-ttu-id="5f457-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="5f457-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="73891-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="73891-134">Response</span></span>
-<span data-ttu-id="73891-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="73891-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5f457-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5f457-134">Response</span></span>
+<span data-ttu-id="5f457-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="5f457-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
