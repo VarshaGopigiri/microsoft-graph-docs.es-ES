@@ -1,26 +1,27 @@
 ---
 title: 'RangeFill: clear'
 description: Restablece el fondo del rango.
-ms.openlocfilehash: 98e2abb6ac56ea709b62f59f183056448fc4235b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 31ff1dd2576641f256c867519145162d8da42907
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032677"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324013"
 ---
-# <a name="rangefill-clear"></a><span data-ttu-id="6123d-103">RangeFill: clear</span><span class="sxs-lookup"><span data-stu-id="6123d-103">RangeFill: clear</span></span>
+# <a name="rangefill-clear"></a><span data-ttu-id="a02bb-103">RangeFill: clear</span><span class="sxs-lookup"><span data-stu-id="a02bb-103">RangeFill: clear</span></span>
 
-<span data-ttu-id="6123d-104">Restablece el fondo del rango.</span><span class="sxs-lookup"><span data-stu-id="6123d-104">Resets the range background.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6123d-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="6123d-105">Permissions</span></span>
-<span data-ttu-id="6123d-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6123d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a02bb-104">Restablece el fondo del rango.</span><span class="sxs-lookup"><span data-stu-id="a02bb-104">Resets the range background.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a02bb-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="a02bb-105">Permissions</span></span>
+<span data-ttu-id="a02bb-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a02bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6123d-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6123d-108">Permission type</span></span>      | <span data-ttu-id="6123d-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6123d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a02bb-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="a02bb-108">Permission type</span></span>      | <span data-ttu-id="a02bb-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="a02bb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6123d-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6123d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6123d-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6123d-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6123d-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6123d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6123d-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6123d-113">Not supported.</span></span>    |
-|<span data-ttu-id="6123d-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6123d-114">Application</span></span> | <span data-ttu-id="6123d-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6123d-115">Not supported.</span></span> |
+|<span data-ttu-id="a02bb-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="a02bb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a02bb-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a02bb-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a02bb-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a02bb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a02bb-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="a02bb-113">Not supported.</span></span>    |
+|<span data-ttu-id="a02bb-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="a02bb-114">Application</span></span> | <span data-ttu-id="a02bb-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="a02bb-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6123d-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6123d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a02bb-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="a02bb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/format/fill/clear
@@ -28,22 +29,22 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6123d-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6123d-117">Request headers</span></span>
-| <span data-ttu-id="6123d-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="6123d-118">Name</span></span>       | <span data-ttu-id="6123d-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="6123d-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a02bb-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="a02bb-117">Request headers</span></span>
+| <span data-ttu-id="a02bb-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="a02bb-118">Name</span></span>       | <span data-ttu-id="a02bb-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="a02bb-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6123d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6123d-120">Authorization</span></span>  | <span data-ttu-id="6123d-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="6123d-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6123d-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6123d-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="6123d-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="6123d-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a02bb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a02bb-120">Authorization</span></span>  | <span data-ttu-id="a02bb-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="a02bb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a02bb-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a02bb-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a02bb-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="a02bb-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6123d-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6123d-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a02bb-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="a02bb-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="6123d-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6123d-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a02bb-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a02bb-127">Response</span></span>
 
-<span data-ttu-id="6123d-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6123d-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="a02bb-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a02bb-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6123d-130">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6123d-130">Example</span></span>
-<span data-ttu-id="6123d-131">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="6123d-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="6123d-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6123d-132">Request</span></span>
-<span data-ttu-id="6123d-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6123d-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a02bb-130">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a02bb-130">Example</span></span>
+<span data-ttu-id="a02bb-131">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="a02bb-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a02bb-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a02bb-132">Request</span></span>
+<span data-ttu-id="a02bb-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a02bb-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangefill_clear"
@@ -52,8 +53,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/fill/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="6123d-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6123d-134">Response</span></span>
-<span data-ttu-id="6123d-135">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6123d-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a02bb-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a02bb-134">Response</span></span>
+<span data-ttu-id="a02bb-135">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a02bb-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
