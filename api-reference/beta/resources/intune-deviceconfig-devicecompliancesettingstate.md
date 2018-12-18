@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceComplianceSettingState
 description: Estados de configuración de cumplimiento del dispositivo para un dispositivo determinado.
-ms.openlocfilehash: 4fe524f5a737b5e80201f961a48870cb6e0f0928
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4fe74d529d0768f773652ce0bbc6aa37f221db9e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088196"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326498"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 
@@ -38,7 +39,7 @@ Estados de configuración de cumplimiento del dispositivo para un dispositivo de
 |userName|String|El nombre de usuario que se está notificando|
 |userPrincipalName|String|El nombre principal de usuario que se está notificando|
 |deviceModel|String|El modelo de dispositivo que se está notificando|
-|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 
 ## <a name="relationships"></a>Relaciones

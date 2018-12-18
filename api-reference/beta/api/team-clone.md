@@ -1,12 +1,13 @@
 ---
 title: Clonación de un equipo
 description: Crear una copia de un equipo. Esta operación también crea una copia del grupo correspondiente.
-ms.openlocfilehash: b49fa4262fe65be03b99f2107e9ef1b2799bfeb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 79ae6f770e009f262adbda4872ddc51af626688f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091072"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361932"
 ---
 # <a name="clone-a-team"></a>Clonación de un equipo
 

@@ -1,12 +1,13 @@
 ---
 title: Actualizar windows10CustomConfiguration
 description: Actualice las propiedades de un objeto windows10CustomConfiguration.
-ms.openlocfilehash: 6cee327a6a233141dd04c858d28121d3720267bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ca09c829adfad05724075b2934693b693b9056d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030681"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361302"
 ---
 # <a name="update-windows10customconfiguration"></a>Actualizar windows10CustomConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

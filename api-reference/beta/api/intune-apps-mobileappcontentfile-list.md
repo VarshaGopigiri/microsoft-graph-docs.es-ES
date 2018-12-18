@@ -1,12 +1,13 @@
 ---
 title: Enumerar mobileAppContentFiles
 description: Enumere las propiedades y las relaciones de los objetos mobileAppContentFile.
-ms.openlocfilehash: 73291cfc543bb990c1abf6561d139772edfe4d99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cc03ebec18871234bd69587208d2fd3aa46c8da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089298"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353014"
 ---
 # <a name="list-mobileappcontentfiles"></a>Enumerar mobileAppContentFiles
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

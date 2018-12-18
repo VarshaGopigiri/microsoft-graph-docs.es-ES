@@ -1,12 +1,13 @@
 ---
 title: Quitar un miembro
 description: Utilice esta API para quitar a un miembro (usuario o grupo) desde una unidad administrativa.
-ms.openlocfilehash: dbf8ceaf66436ff44ea014ae5383e2f669fc7466
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 0b7b03042982b1eb50d9dfd7382186f0b3d28469
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084352"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353420"
 ---
 # <a name="remove-a-member"></a>Quitar un miembro
 

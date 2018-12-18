@@ -1,12 +1,13 @@
 ---
 title: Enumerar propietarios
 description: Recuperar una lista de objetos de directoryObject.
-ms.openlocfilehash: 2db43b62d1d30813ed80e6d612e5c0d2770e283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 8b8cb478867639afa07f986c86f38e2460a17338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083703"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325868"
 ---
 # <a name="list-owners"></a>Enumerar propietarios
 
@@ -31,9 +32,9 @@ GET /applications/{id}/owners
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

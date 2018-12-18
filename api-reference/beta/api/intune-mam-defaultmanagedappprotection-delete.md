@@ -1,12 +1,13 @@
 ---
 title: Eliminar defaultManagedAppProtection
 description: Elimina un defaultManagedAppProtection.
-ms.openlocfilehash: 3f4803662e67f4c643c2e2abf1d51f987a9f5ff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5b77782052be135f7caf8d084409cfa766c156f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354715"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>Eliminar defaultManagedAppProtection
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProte
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

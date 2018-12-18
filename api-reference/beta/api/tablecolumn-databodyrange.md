@@ -1,12 +1,13 @@
 ---
 title: 'TableColumn: DataBodyRange'
 description: Obtiene el objeto de rango asociado al cuerpo de datos de la columna.
-ms.openlocfilehash: 3210e93a968119da140714a106549fb080abdf76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: bc00186c39d4b77c0fdd9c0d4cc3e518dc78a63f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088674"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354393"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 

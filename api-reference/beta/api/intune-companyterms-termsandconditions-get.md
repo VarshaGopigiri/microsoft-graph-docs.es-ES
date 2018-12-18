@@ -1,12 +1,13 @@
 ---
 title: Obtener termsAndConditions
 description: Lea las propiedades y las relaciones del objeto termsAndConditions.
-ms.openlocfilehash: 3c7923ddb14e02f11c7431cf8c790f862e532d33
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f0fe2114f7a4db978141665fb0b9348d80f328c6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090003"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324741"
 ---
 # <a name="get-termsandconditions"></a>Obtener termsAndConditions
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

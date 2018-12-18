@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceManagementPartner
 description: Entidad que representa una conexión a un partner de administración de dispositivos.
-ms.openlocfilehash: c682b700636ad80f20719e40f35a929cf740c7a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2174f81f7b9c5e73c3bc42a54cb030cf50c216d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089930"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354043"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Tipo de recurso deviceManagementPartner
 

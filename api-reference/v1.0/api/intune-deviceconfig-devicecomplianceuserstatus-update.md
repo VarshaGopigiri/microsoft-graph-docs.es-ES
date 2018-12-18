@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceComplianceUserStatus
 description: Actualice las propiedades de un objeto deviceComplianceUserStatus.
-ms.openlocfilehash: a3994c12cc4e28b034746b8af21ece4f63eb85dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee15016b3055f4b51230cc17638151551c9f8c63
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353063"
 ---
 # <a name="update-devicecomplianceuserstatus"></a>Actualizar deviceComplianceUserStatus
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

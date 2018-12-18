@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsInformationProtectionPolicy
 description: Elimina un windowsInformationProtectionPolicy.
-ms.openlocfilehash: a643c410ee4cb89c5c7878da87baba78d3642a36
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e6958773428c9ea6d420cf6561a952cafe59592c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031075"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354414"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Eliminar windowsInformationProtectionPolicy
 
@@ -34,7 +35,7 @@ DELETE /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInforma
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

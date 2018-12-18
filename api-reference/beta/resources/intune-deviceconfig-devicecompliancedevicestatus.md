@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceComplianceDeviceStatus
 description: Todavía no documentado
-ms.openlocfilehash: e40b113c193c405846b9070db578cf48acd0951e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d316b81d66ede87b945803e19850545547ddf18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088840"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327051"
 ---
 # <a name="devicecompliancedevicestatus-resource-type"></a>Tipo de recurso deviceComplianceDeviceStatus
 

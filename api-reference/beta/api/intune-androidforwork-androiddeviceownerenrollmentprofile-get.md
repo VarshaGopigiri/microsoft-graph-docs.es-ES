@@ -1,12 +1,13 @@
 ---
 title: Obtener androidDeviceOwnerEnrollmentProfile
 description: Leer las propiedades y las relaciones del objeto androidDeviceOwnerEnrollmentProfile.
-ms.openlocfilehash: d61a289efd84de15a3260fac3f5cf3425f57e303
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: af18430221961faf765ddb91c35fb0375c3dd45c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353049"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a>Obtener androidDeviceOwnerEnrollmentProfile
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

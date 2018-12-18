@@ -1,12 +1,13 @@
 ---
 title: Obtener softwareUpdateStatusSummary
 description: Lea las propiedades y las relaciones del objeto softwareUpdateStatusSummary.
-ms.openlocfilehash: f22c63235848bfe86f5ced684c66103a7203bedd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f490db4042c03233f2613e44b6a6f90460f9345
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354029"
 ---
 # <a name="get-softwareupdatestatussummary"></a>Obtener softwareUpdateStatusSummary
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

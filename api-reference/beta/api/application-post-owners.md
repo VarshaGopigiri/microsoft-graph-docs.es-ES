@@ -1,12 +1,13 @@
 ---
 title: Crear propietario
 description: Utilice esta API para crear un nuevo propietario.
-ms.openlocfilehash: fdfbaf31b954b7621b7c59fc61741c12644aaf4b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 60aaec55b0cc2994bd9f001b1af81a64a6ddca14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084661"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353448"
 ---
 # <a name="create-owner"></a>Crear propietario
 
@@ -29,9 +30,9 @@ POST /applications/{id}/owners
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryObject](../resources/directoryobject.md).

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso androidForWorkSettings
 description: Configuración de Android for Work
-ms.openlocfilehash: 3c7aca729f145bb69447e442b7daddbfcf90c8c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a3bedbed986e10c0df1cae94d3302d16607e3f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083782"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361715"
 ---
 # <a name="androidforworksettings-resource-type"></a>Tipo de recurso androidForWorkSettings
 
@@ -37,7 +38,7 @@ Configuración de Android for Work
 |lastModifiedDateTime|DateTimeOffset|Última hora de modificación para la configuración de Android for Work|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Indica qué usuarios pueden inscribirse dispositivos para Android para administración de dispositivos de trabajo. Los valores posibles son: `none`, `all`, `targeted` y `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Colección String|Especifica los grupos de AAD que pueden inscribir dispositivos en la administración de dispositivos de Android for Work si se establece enrollmentTarget en "Dirigido"|
-|deviceOwnerManagementEnabled|Booleano|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
+|deviceOwnerManagementEnabled|Boolean|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

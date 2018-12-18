@@ -1,12 +1,13 @@
 ---
 title: getRoleScopeTagsByResource (función)
 description: Todavía no documentado
-ms.openlocfilehash: c6ccea13ee3b3314099573cb79625e1084ffdc13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 535a27312f5a869745f9906dee848229da40f9a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088807"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354820"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource (función)
 
@@ -37,7 +38,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

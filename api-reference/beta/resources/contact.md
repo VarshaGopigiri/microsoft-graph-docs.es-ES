@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso contact
 description: Un contacto es un elemento de Outlook donde puede organizar y guardar información sobre las personas y organizaciones con las que se comunica. Los contactos se contienen en carpetas de contactos.
-ms.openlocfilehash: 1f18118855417727a441b25c008cee9a0e826aff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 761fdd3ed6f9c4c9982c1bb7c23bfbff28409ce9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085713"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354190"
 ---
 # <a name="contact-resource-type"></a>Tipo de recurso contact
 
@@ -113,7 +114,7 @@ Aquí tiene una representación JSON del recurso
 |surname|String|Los apellidos del contacto.|
 |title|String|El título del contacto.|
 |websites |Colección [website](website.md)|Sitios Web asociados con el contacto. |
-|weddingAnniversary |Fecha |Aniversario de boda del contacto. |
+|weddingAnniversary |Date |Aniversario de boda del contacto. |
 |yomiCompanyName|String|El nombre fonético japonés de la empresa del contacto.|
 |yomiGivenName|String|El nombre (nombre de pila) fonético japonés del contacto.|
 |yomiSurname|String|El apellido fonético japonés del contacto.|
