@@ -1,12 +1,13 @@
 ---
 title: 'Organizador: delta'
 description: Recupera los cambios realizados en los objetos que el usuario está suscrito a.
-ms.openlocfilehash: 7c866946f0c9a873b99ee4efd6d9e2c7ce646be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088494"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323369"
 ---
 # <a name="planner-delta"></a>Organizador: delta
 
@@ -79,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>Respuesta
 Aquí tiene un ejemplo de la respuesta.
 
->**Nota:** El objeto de respuesta que se muestra podría ser más cortos para mejorar la legibilidad. Se devolverán todas las propiedades modificadas desde una llamada real.
+>**Nota:** Puede que se acorte el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades modificadas desde una llamada real.
 
 <!-- {
   "blockType": "response",

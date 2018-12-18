@@ -1,12 +1,13 @@
 ---
 title: Enumerar managedAppOperations
 description: Enumere las propiedades y las relaciones de los objetos managedAppOperation.
-ms.openlocfilehash: f858a0a70b7c97321a4d6d503b238363253624f7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d9b24bca1f19a672dcb99aedcf7efa9b200d660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088340"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318674"
 ---
 # <a name="list-managedappoperations"></a>Enumerar managedAppOperations
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/oper
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

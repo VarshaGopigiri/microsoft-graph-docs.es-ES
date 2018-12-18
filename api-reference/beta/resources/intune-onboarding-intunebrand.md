@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso intuneBrand
 description: intuneBrand contiene datos que se usan para personalizar las aplicaciones del Portal de empresa, así como el portal web del usuario final.
-ms.openlocfilehash: b8ed558e2be032110470cc4e2c64d27d8011af1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f59920d927e96f2c74e44670134e74a0db27dd7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088850"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323544"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 

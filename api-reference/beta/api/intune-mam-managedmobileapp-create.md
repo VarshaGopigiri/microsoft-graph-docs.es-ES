@@ -1,12 +1,13 @@
 ---
 title: Crear managedMobileApp
 description: Cree un objeto managedMobileApp.
-ms.openlocfilehash: cb62ebcf6649762ba86b68d94ce84893707954bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07db13e6f38039c153eed44f401f3e2d846840ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087199"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321199"
 ---
 # <a name="create-managedmobileapp"></a>Crear managedMobileApp
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

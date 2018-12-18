@@ -1,12 +1,13 @@
 ---
 title: Crear un grupo con un equipo de Microsoft Teams
 description: 'Crear un grupo que incluya un equipo consta de dos pasos: '
-ms.openlocfilehash: 530b3625a1aa1d020bff841196e3b83a2eb99a4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: ea11d0ee7ee4e6e1d0bf6dc10ab8c9d064aa3610
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092823"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313891"
 ---
 # <a name="creating-a-group-with-a-microsoft-teams-team"></a>Crear un grupo con un equipo de Microsoft Teams
 

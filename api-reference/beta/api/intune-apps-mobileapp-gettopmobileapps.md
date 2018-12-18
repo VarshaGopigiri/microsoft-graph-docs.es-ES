@@ -1,12 +1,13 @@
 ---
 title: getTopMobileApps (función)
 description: Todavía no documentado
-ms.openlocfilehash: fc622b1044068cfd4805278eff064af46cf68f0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03157e744358f4d76e781d33ae056104cf0a1130
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090607"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322732"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps (función)
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

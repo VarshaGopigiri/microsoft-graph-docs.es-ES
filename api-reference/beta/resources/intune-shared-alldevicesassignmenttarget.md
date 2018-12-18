@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso allDevicesAssignmentTarget
 description: Representa una tarea para todos los dispositivos administrados en el espacio empresarial.
-ms.openlocfilehash: 31b9caed400c51befddcbb56bd83d144a58cc18c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 645dbe95c137af2e9ef08c76c42834366c933a53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326946"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Tipo de recurso allDevicesAssignmentTarget
 

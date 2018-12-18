@@ -1,12 +1,13 @@
 ---
 title: Obtener importedWindowsAutopilotDeviceIdentityUpload
 description: Leer las propiedades y las relaciones del objeto importedWindowsAutopilotDeviceIdentityUpload.
-ms.openlocfilehash: bc91ede68e3c9cf069f43cda99dabeb17321c792
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e38f24d9526d4da6e39507df68bae5143d20278e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085196"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323908"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentityupload"></a>Obtener importedWindowsAutopilotDeviceIdentityUpload
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso organization
 description: El recurso organization representa una instancia de la configuración global y los recursos que funcionan y se aprovisionan en el nivel del espacio empresarial.
-ms.openlocfilehash: e7e49e5676e412ea0e174b2e158b98efea8e0c7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 447ad5bb87c3c5783ba9097097fbc08281442a0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086783"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323432"
 ---
 # <a name="organization-resource-type"></a>Tipo de recurso organization
 

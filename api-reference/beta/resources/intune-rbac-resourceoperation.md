@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso resourceOperation
 description: " operación se usa para asignar un recurso de MobileApp a un grupo de seguridad AAD.  No se pueden modificar las operaciones de recursos para los roles integrados."
-ms.openlocfilehash: 2aed25c7558d674abb39fdb4147b722afe69c0f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9108181fe4d1c3cf241d879d5c1e4315d84d4eeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323299"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -33,7 +34,7 @@ Define una operación o una acción que puede realizar un recurso (o entidad) de
 |resourceName|String|Nombre del recurso en el que se realiza esta operación.|
 |actionName|String|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
 |description|String|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
-|enabledForScopeValidation|Booleano|Determina si el permiso se valida para ámbitos definidos por la asignación de roles.|
+|enabledForScopeValidation|Boolean|Determina si el permiso se valida para ámbitos definidos por la asignación de roles.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

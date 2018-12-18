@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso onenote
 description: Punto de entrada para los recursos de OneNote.
-ms.openlocfilehash: c1b875b686015df8134103b0793a1e342e7f4b89
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: b145dc36c761d1f389b28454b9900305ac259809
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085327"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323635"
 ---
 # <a name="onenote-resource-type"></a>Tipo de recurso onenote
 

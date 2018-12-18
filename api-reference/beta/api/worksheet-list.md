@@ -1,12 +1,13 @@
 ---
 title: List WorksheetCollection
 description: Recuperar una lista de objetos worksheet.
-ms.openlocfilehash: d583dd289f06eb7f548f758881882f435b3de69e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 23688e9f1159d9864c39720b7e4f2676eec6b43a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322144"
 ---
 # <a name="list-worksheetcollection"></a>List WorksheetCollection
 

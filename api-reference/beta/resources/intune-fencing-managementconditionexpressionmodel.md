@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso managementConditionExpressionModel
 description: Un modelo de expresión de condición de administración es una representación del modelo de una expresión de condición de administración.
-ms.openlocfilehash: 0bbb870d702c20b295ec4064007ded7fad6ce618
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5f580dd7d33ebadc7e7fce0b05fbebf36cb83d58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085857"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321738"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>tipo de recurso managementConditionExpressionModel
 

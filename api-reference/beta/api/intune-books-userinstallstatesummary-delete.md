@@ -1,12 +1,13 @@
 ---
 title: Eliminar userInstallStateSummary
 description: Elimina un userInstallStateSummary
-ms.openlocfilehash: 3a2bdcfa1fbced6cf60343fe998b8133c0aac177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 854be19ec7c1def053992b3b690bdc8acd15cd94
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089278"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327254"
 ---
 # <a name="delete-userinstallstatesummary"></a>Eliminar userInstallStateSummary
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

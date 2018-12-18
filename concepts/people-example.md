@@ -2,12 +2,13 @@
 title: Usar la API de contactos de Microsoft Graph para obtener información sobre los contactos más relevantes para usted
 description: Las aplicaciones de Microsoft Graph usar la API de contactos para recuperar los contactos más relevantes para un usuario. La relevancia viene determinada por las relaciones empresariales y los patrones de comunicación y colaboración del usuario. Los contactos pueden ser contactos locales, contactos de las redes sociales o el directorio de la organización y contactos de comunicaciones recientes (como de correo electrónico y Skype). Además de generar esta información, la API de contactos ofrece también compatibilidad con la búsqueda de coincidencia aproximada y la posibilidad de recuperar la lista de usuarios relevantes para otro usuario de la organización del usuario que ha iniciado sesión.
 ms.date: 12/04/2018
-ms.openlocfilehash: b01ca4538c3155bbb30224b1f92d6e7ae55c5878
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: simonhult
+ms.openlocfilehash: e5cfc5abb7bac06f0355ebc2a2b70460050aa7e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156057"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306856"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar la API de contactos de Microsoft Graph para obtener información sobre los contactos más relevantes para usted
 

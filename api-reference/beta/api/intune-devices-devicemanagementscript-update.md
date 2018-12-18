@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceManagementScript
 description: Actualizar las propiedades de un objeto deviceManagementScript.
-ms.openlocfilehash: d88579f130607b08b0d34620b701be5c239bc03f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086282"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325315"
 ---
 # <a name="update-devicemanagementscript"></a>Actualizar deviceManagementScript
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -54,7 +55,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |createdDateTime|DateTimeOffset|La fecha y hora de que creación de la secuencia de comandos de administración de dispositivos.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de que última modificación de la secuencia de comandos de administración de dispositivos.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica el tipo de la secuencia de comandos de administración de dispositivos se ejecuta en el contexto de ejecución. Los valores posibles son: `system` y `user`.|
-|enforceSignatureCheck|Booleano|Indicar si se debe comprobar la firma de la secuencia de comandos.|
+|enforceSignatureCheck|Boolean|Indicar si se debe comprobar la firma de la secuencia de comandos.|
 |fileName|String|Nombre de archivo de secuencia de comandos.|
 
 

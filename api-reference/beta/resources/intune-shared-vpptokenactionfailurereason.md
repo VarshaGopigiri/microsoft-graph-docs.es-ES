@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración vppTokenActionFailureReason
 description: Error de acción de token de posibles tipos de razones para un programa de compra de volumen de Apple.
-ms.openlocfilehash: 0fece0417a5585540f15e3f8a8631fd30eaa414e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f36b92238b097f50990bbdb2f3c3584b2ff48901
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085751"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320968"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>tipo de enumeración vppTokenActionFailureReason
 

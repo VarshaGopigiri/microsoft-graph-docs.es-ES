@@ -1,12 +1,13 @@
 ---
 title: Integrar alertas de la API de seguridad de Microsoft Graph con IBM QRadar SIEM mediante Azure Monitor
 description: Los proveedores de seguridad de Microsoft Graph se pueden administrar a través de un único extremo REST. Este extremo se puede configurar en Azure Monitor, que es compatible con conectores para varios productos SIEM. Las instrucciones de los pasos 1 y 2 de este artículo son para todos los conectores de Azure Monitor que admiten el consumo a través de centros de eventos. En este artículo se describe la integración completa del conector QRadar SIEM.
-ms.openlocfilehash: 107435c463116c002c86955559209d2dffd4d688
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: 663ff74741bdb3847cc0b47b56651c28bceef8f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092833"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309264"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Integrar alertas de la API de seguridad de Microsoft Graph con IBM QRadar SIEM mediante Azure Monitor
 

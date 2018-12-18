@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración weeklySchedule
 description: Valores posibles para una programación semanal.
-ms.openlocfilehash: dd78fb98a250ecdec9c63110dacfbeb646532801
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8154233497496627d20cb08fbeb28b6e147f548b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030814"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320247"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enumeración weeklySchedule
 

@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsInformationProtectionAppLockerFile
 description: Lea las propiedades y las relaciones del objeto windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: f5e035ec59819d29ef99a96993cf59816fcf0e5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4c23d4aacfdba6bc6dd2482c583bc160462f646
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031496"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323551"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>Obtener windowsInformationProtectionAppLockerFile
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: List attachments
 description: Recupera una lista de objetos attachment asociados a una publicación.
-ms.openlocfilehash: 57fd3c5bde221017900f44baa5ee2506cd85c495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f03cf2b9039c88690ddd4078ebe7c843b2e1766a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321612"
 ---
 # <a name="list-attachments"></a>List attachments
 

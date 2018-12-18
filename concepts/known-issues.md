@@ -1,12 +1,13 @@
 ---
 title: Problemas conocidos de Microsoft Graph
 description: En este artículo, se describen los problemas conocidos de Microsoft Graph. Para obtener información sobre las actualizaciones más recientes, consulte el Registro de cambios de Microsoft Graph.
-ms.openlocfilehash: 254e40fa9a249ba0a23308b0c40a732b567eb6a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jthake-msft
+ms.openlocfilehash: e39cdb13a93c19a4a4829c69dc4b1090fd67d206
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092835"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329165"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conocidos de Microsoft Graph
 

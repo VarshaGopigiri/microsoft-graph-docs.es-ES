@@ -1,12 +1,13 @@
 ---
 title: Configuración de Active directory de la lista
 description: Recuperar una lista de los objetos de configuración de Active directory.
-ms.openlocfilehash: 844d2102b9bfd98e2ba0a585a7eb04c8e46b6a52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 2d3c7d24009fb0068376629aa50197678774f683
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319043"
 ---
 # <a name="list-directory-settings"></a>Configuración de Active directory de la lista
 

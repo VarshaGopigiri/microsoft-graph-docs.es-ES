@@ -1,12 +1,13 @@
 ---
 title: Crear windows10EnterpriseModernAppManagementConfiguration
 description: Cree un objeto windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: 0d324d2b6cdc2efa79a952418afb5459295931b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0e04d717c1bed1803472c90dbffdba3b11a32aa4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318210"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>Crear windows10EnterpriseModernAppManagementConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|uninstallBuiltInApps|Booleano|Indica si se desinstalará o no una lista fija de aplicaciones integradas de Windows.|
+|uninstallBuiltInApps|Boolean|Indica si se desinstalará o no una lista fija de aplicaciones integradas de Windows.|
 
 
 

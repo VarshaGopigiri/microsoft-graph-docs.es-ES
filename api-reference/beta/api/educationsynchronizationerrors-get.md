@@ -1,12 +1,13 @@
 ---
 title: Obtener educationSynchronizationErrors
 description: 'Obtenga los errores generados durante la validación o durante una sincronización de un perfil de sincronización de datos de school específicos en el inquilino. '
-ms.openlocfilehash: 8d4341eafa515f79de6dda2f40f22c990ed5926c
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: mmast-msft
+ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209666"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322158"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obtener educationSynchronizationErrors
 
@@ -30,9 +31,9 @@ GET /synchronizationProfiles/{id}/errors
 Este método admite los siguientes [Parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ayudar a personalizar la respuesta: $filter, $orderby, $top, $skip y $count.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

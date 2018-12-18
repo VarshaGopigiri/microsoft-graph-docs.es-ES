@@ -1,12 +1,13 @@
 ---
 title: Crear macOSGeneralDeviceConfiguration
 description: Crear un objeto macOSGeneralDeviceConfiguration.
-ms.openlocfilehash: 357f563efffa7d08ef0dab4a66d9b7534b5d95b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 507bce00208b932bbf67cbf52ca71ae11c60a7f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029567"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330005"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Crear macOSGeneralDeviceConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -61,7 +62,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad que se requieren antes de que se agote el tiempo de espera de la pantalla.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
-|passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
+|passwordRequired|Boolean|Si quiere requerir o no una contraseña.|
 
 
 

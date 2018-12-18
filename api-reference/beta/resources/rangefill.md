@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso RangeFill
 description: Representa el fondo de un objeto de rango.
-ms.openlocfilehash: 11806d95900c6e4ea1d4bf6ce4f4800bf5f6f66b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 21d40b1ec65ad49241af30912c3c05e114c7008d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089980"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323712"
 ---
 # <a name="rangefill-resource-type"></a>Tipo de recurso RangeFill
 
@@ -20,7 +21,7 @@ Representa el fondo de un objeto de rango.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get RangeFill](../api/rangefill-get.md) | [RangeFill](rangefill.md) |Lee las propiedades y relaciones del objeto rangeFill.|
-|[Update](../api/rangefill-update.md) | [RangeFill](rangefill.md)   |Actualiza el objeto RangeFill. |
+|[Actualizar](../api/rangefill-update.md) | [RangeFill](rangefill.md)   |Actualiza el objeto RangeFill. |
 |[Clear](../api/rangefill-clear.md)|None|Restablece el fondo del rango.|
 
 ## <a name="properties"></a>Propiedades

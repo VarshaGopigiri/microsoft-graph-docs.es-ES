@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsInformationProtectionNetworkLearningSummary
 description: Elimina un windowsInformationProtectionNetworkLearningSummary.
-ms.openlocfilehash: 13e4dec6a57b98ab9d1310484cb683ecf3f7312d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f9749a77a85db40741fdcbb8d8065e622ef0e6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320443"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>Eliminar windowsInformationProtectionNetworkLearningSummary
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{w
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

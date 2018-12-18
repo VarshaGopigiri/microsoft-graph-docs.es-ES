@@ -1,12 +1,13 @@
 ---
 title: Introducción a la conexión a los datos de Microsoft Graph (versión preliminar)
 description: 'Para poder usar la conexión a los datos de Microsoft Graph, un administrador de Office 365 debe realizar dos acciones; ambas habilitan al administrador a controlar el movimiento de datos a través de una administración con privilegios de acceso (PAM). '
-ms.openlocfilehash: eb21f0d850f64694514c0ecd82f03de687606a56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: ajacks-msft
+ms.openlocfilehash: 1cd8d5734b0fd8b48df8a49fe0a833583c21148d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092789"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312085"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Introducción a la conexión a los datos de Microsoft Graph (versión preliminar)
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración deviceManagementExchangeAccessStateReason
 description: Razón del estado del dispositivo Exchange acceso.
-ms.openlocfilehash: 691992262cf318a8fdc30573ea9bf5c0f0b29cf1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d51e9656c841a86d282eb1b5654da042f91866fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029280"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323446"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessStateReason
 

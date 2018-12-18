@@ -1,12 +1,13 @@
 ---
 title: Enumerar macOSDeviceFeaturesConfigurations
 description: Enumere las propiedades y las relaciones de los objetos macOSDeviceFeaturesConfiguration.
-ms.openlocfilehash: 883929b6cf12d9da7699c1402c966bee8b0a229a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ac4c7ad035f973ebd0ad4a5c3d17a51a8f75f5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087147"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325518"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Enumerar macOSDeviceFeaturesConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

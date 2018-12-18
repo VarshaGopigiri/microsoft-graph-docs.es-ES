@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración firewallCertificateRevocationListCheckMethodType
 description: Valores posibles para firewallCertificateRevocationListCheckMethod
-ms.openlocfilehash: 425c4d6711bff2218f19303f746ff9e2b6a60033
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 302037187addfb8606c6c1e60a9369eb1f7c2ed5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088334"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320716"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enumeración firewallCertificateRevocationListCheckMethodType
 

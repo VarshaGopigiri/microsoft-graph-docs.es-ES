@@ -1,12 +1,13 @@
 ---
 title: Obtener acceso en nombre de un usuario
 description: 'Para usar Microsoft Graph para leer y escribir recursos en nombre de un usuario, la aplicación debe obtener un token de acceso de Azure AD y adjuntarlo a las solicitudes que envía a Microsoft Graph. El flujo de autenticación exacto que se use para obtener tokens de acceso dependerá de la clase de aplicación que se esté desarrollando y de si se quiere usar OpenID Connect para iniciar la sesión del usuario en la aplicación. Un flujo habitual que usan las aplicaciones nativas y móviles y también algunas aplicaciones web es el flujo de concesión del código de autorización de OAuth 2.0. En este tema, veremos un ejemplo del uso de este flujo. '
-ms.openlocfilehash: 136bb917595885f188c2ad6958dc107021b58d10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 80c421898014be09d3ffbd2213bee9e4ec20cfb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092893"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317321"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obtener acceso en nombre de un usuario
 Para usar Microsoft Graph para leer y escribir recursos en nombre de un usuario, la aplicación debe obtener un token de acceso de Azure AD y adjuntarlo a las solicitudes que envía a Microsoft Graph. El flujo de autenticación exacto que se use para obtener tokens de acceso dependerá de la clase de aplicación que se esté desarrollando y de si se quiere usar OpenID Connect para iniciar la sesión del usuario en la aplicación. Un flujo habitual que usan las aplicaciones nativas y móviles y también algunas aplicaciones web es el flujo de concesión del código de autorización de OAuth 2.0. En este tema, veremos un ejemplo del uso de este flujo. 

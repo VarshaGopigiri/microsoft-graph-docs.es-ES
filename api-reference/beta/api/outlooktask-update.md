@@ -1,12 +1,13 @@
 ---
 title: Actualizar outlooktask
 description: Cambiar las propiedades modificables de una tarea de Outlook.
-ms.openlocfilehash: 1e2afb7fb69b4f305ffc69d0f40960edf9b6ca2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 0a162c81ef32cb35e930b000678234ede20e4874
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325707"
 ---
 # <a name="update-outlooktask"></a>Actualizar outlooktask
 
@@ -52,7 +53,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha en la zona horaria especificada que se ha finalizado la tarea.|
 |createdDateTime|DateTimeOffset|La fecha y la hora cuando se creó la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad usa formato ISO 8601. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha en la zona horaria especificada que se va finalizado la tarea.|
-|hasAttachments|Booleano|Se establece en true si la tarea tiene datos adjuntos.|
+|hasAttachments|Boolean|Se establece en true si la tarea tiene datos adjuntos.|
 |importance|string|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle al usuario de la tarea.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de última modificación de la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad utiliza el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|

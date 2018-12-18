@@ -1,12 +1,13 @@
 ---
 title: Crear deviceConfigurationAssignment
 description: Cree un objeto deviceConfigurationAssignment.
-ms.openlocfilehash: 366c4b68b6518999e696adf0363f93c7d29faec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87d5ba51fce59340b869e6b78b7227546ab67df1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087638"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321451"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Crear deviceConfigurationAssignment
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

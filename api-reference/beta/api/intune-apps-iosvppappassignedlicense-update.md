@@ -1,12 +1,13 @@
 ---
 title: Actualizar iosVppAppAssignedLicense
 description: Actualizar las propiedades de un objeto iosVppAppAssignedLicense.
-ms.openlocfilehash: 3ee2cc2f64a604a2f83bc92288f2828436209cc8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e15aba6cf5ca5225210e946f04a6b1bff82cdd83
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322326"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Actualizar iosVppAppAssignedLicense
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |userEmailAddress|String|La dirección de correo electrónico del usuario.|
 |userId|String|El identificador de usuario.|
 |userName|String|El nombre de usuario.|
-|userPrincipalName|String|El nombre principal de usuario.|
+|userPrincipalName|String|El nombre principal del usuario.|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Obtener identificadores inmutables para recursos de Outlook
 description: 'Los elementos de Outlook (mensajes, eventos, contactos, tareas) tienen un comportamiento interesante que probablemente no ha observado nunca o le ha provocado gran frustración: el cambio de ID. No sucede con frecuencia, solo si se mueve el elemento, pero puede provocar problemas reales para las aplicaciones que almacenan identificadores sin conexión para su uso posterior. Los identificadores inmutables permiten que la aplicación obtenga un ID que no cambia durante toda la duración del elemento.'
-ms.openlocfilehash: a7b188c968ad6e0bf93f92ec99cb473075f29a4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 34d88ed2cbc39902f1240757367beb112cc007b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315200"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Obtener identificadores inmutables para recursos de Outlook
 

@@ -1,12 +1,13 @@
 ---
 title: Crear un subproceso de chat
 description: Crear un nuevo subproceso de chat en el canal especificado mediante el suministro de los mensajes de raíz.
-ms.openlocfilehash: 9a2a35a086c6689d1b76a56b70cd3637ec23c3a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: fcd1c08c05b29d2150f4c436eac7765f40900920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083354"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325616"
 ---
 # <a name="create-chat-thread"></a>Crear un subproceso de chat
 
@@ -31,9 +32,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /teams/{id}/channels/{id}/chatThreads
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [chatThread](../resources/chatthread.md) que contiene la propiedad rootMessage.

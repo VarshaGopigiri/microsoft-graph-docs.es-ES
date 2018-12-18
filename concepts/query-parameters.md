@@ -1,12 +1,13 @@
 ---
 title: Usar parámetros de consulta para personalizar respuestas
 description: Microsoft Graph proporciona parámetros de consulta opcionales que puede usar para especificar y controlar la cantidad de datos devueltos en una respuesta. Se admiten los siguientes parámetros de consulta.
-ms.openlocfilehash: b79192a028be278ab38dc28f1d9d913b3bcb7209
-ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
+author: piotrci
+ms.openlocfilehash: 6cdc4ce0f502e941e24a6197e7ba4b65cac13b20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27245109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311840"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parámetros de consulta para personalizar respuestas
 

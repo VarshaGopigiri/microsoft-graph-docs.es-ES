@@ -1,12 +1,13 @@
 ---
 title: Obtener deviceManagement
 description: Lea las propiedades y las relaciones del objeto deviceManagement.
-ms.openlocfilehash: adc45ed789e3e636282fee851997c3fbcc8d8318
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ebe44a865b76e2375b5c8df999d89697d6e94351
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323936"
 ---
 # <a name="get-devicemanagement"></a>Obtener deviceManagement
 
@@ -60,7 +61,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

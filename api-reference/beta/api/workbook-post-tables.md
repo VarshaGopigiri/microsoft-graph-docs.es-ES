@@ -1,12 +1,13 @@
 ---
 title: Crear tabla
 description: Use esta API para crear un objeto Table.
-ms.openlocfilehash: f82ea610a9c458a5cfbba9985cecba80d7ce3dc3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 75d4199b4c5cefcb17acccfedfb5c45a3f296de0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091094"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321626"
 ---
 # <a name="create-table"></a>Crear tabla
 
@@ -37,7 +38,7 @@ POST /workbook/tables/$/add
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro           | Tipo      |Descripción|
+| Parámetro           | Type      |Descripción|
 |:---------------|:----------|:----------|
 | Dirección  | string| Dirección de intervalo. Si llama a esta API desde la ruta de acceso `worksheets/{id or name}/tables/add`, no tiene que proporcionar el prefijo del nombre de hoja en la dirección. En cambio, si la llama desde la ruta de acceso `workbook/tables/add`, deberá proporcionar el nombre de la hoja en la que se debe crear la tabla (ejemplo: `sheet1!A1:D4`)|
 | hasHeaders  | boolean|Valor booleano que indica si el intervalo tiene etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en false), Excel generará de forma automática el encabezado desplazando los datos hacia abajo una fila.|

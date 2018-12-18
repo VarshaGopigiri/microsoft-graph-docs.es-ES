@@ -1,12 +1,13 @@
 ---
 title: Obtener mobileApp
 description: Lea las propiedades y las relaciones del objeto mobileApp.
-ms.openlocfilehash: 302f858a819522040eb8d378fd697981ab1dd2bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 65ed02218e28b64d3749834d4eee5d57a05e8d74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323579"
 ---
 # <a name="get-mobileapp"></a>Obtener mobileApp
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

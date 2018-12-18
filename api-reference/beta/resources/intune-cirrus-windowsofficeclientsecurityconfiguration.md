@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsOfficeClientSecurityConfiguration
 description: Todavía no documentado
-ms.openlocfilehash: a8094505f043b850dcc95df68a0d56420e2690fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51c07fa58e392523940687dd178dd2aebe94f327
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083185"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318840"
 ---
 # <a name="windowsofficeclientsecurityconfiguration-resource-type"></a>tipo de recurso windowsOfficeClientSecurityConfiguration
 

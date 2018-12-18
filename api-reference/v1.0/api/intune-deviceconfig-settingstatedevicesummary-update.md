@@ -1,12 +1,13 @@
 ---
 title: Actualizar settingStateDeviceSummary
 description: Actualice las propiedades de un objeto settingStateDeviceSummary.
-ms.openlocfilehash: 18d4687714893b862bbd89f5d72f4018f5ef9a11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 531b8f80aff08e2b8e4faa1444ecc0b264d39a4d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323593"
 ---
 # <a name="update-settingstatedevicesummary"></a>Actualizar settingStateDeviceSummary
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

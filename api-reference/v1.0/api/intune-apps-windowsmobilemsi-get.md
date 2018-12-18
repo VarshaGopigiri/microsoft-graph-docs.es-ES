@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsMobileMSI
 description: Lea las propiedades y las relaciones del objeto windowsMobileMSI.
-ms.openlocfilehash: bdfe5f8b000c15ae0b5d1fe12eb51ceebda1e433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d73f2c0923a80e0417086cac7ca43e6598ce4460
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323180"
 ---
 # <a name="get-windowsmobilemsi"></a>Obtener windowsMobileMSI
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
