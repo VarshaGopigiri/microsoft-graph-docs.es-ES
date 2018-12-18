@@ -1,12 +1,13 @@
 ---
 title: 'educationSynchronizationProfile: uploadUrl'
 description: Recuperar una firma acceso compartido (SAS) para cargar archivos de origen para el almacenamiento de Azure blob para un perfil de sincronización de datos de school específicos en el inquilino. El token de SAS tiene una validez de una hora.
-ms.openlocfilehash: cf685b56718664ca68e0fde697872fe624c7e7b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 15a4536e21307067ac55783edd9eac675ae4144b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341065"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -21,7 +22,7 @@ La carga se proporciona la dirección URL sólo para el [proveedor de datos CSV]
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-| Tipo de permiso | Permissions |
+| Tipo de permiso | Permisos |
 |:-----------|:----------|
 | Delegado (cuenta profesional o educativa) | EduAdministration.ReadWrite |
 |Delegado (cuenta Microsoft personal|No admitida.|
@@ -34,9 +35,9 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

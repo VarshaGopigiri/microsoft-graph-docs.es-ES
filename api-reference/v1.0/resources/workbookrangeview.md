@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso rangeView
 description: RangeView representa un conjunto de celdas visibles del intervalo primario.
-ms.openlocfilehash: e7a19464e52f694705f2e22795513110ae7cbd89
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3d8530623a19eb3a5990c0e863e41c169d0b4f72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028698"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334135"
 ---
 # <a name="rangeview-resource-type"></a>Tipo de recurso rangeView
 RangeView representa un conjunto de celdas visibles del intervalo primario.

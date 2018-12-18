@@ -1,12 +1,13 @@
 ---
 title: Eliminar advancedThreatProtectionOnboardingDeviceSettingState
 description: Elimina un advancedThreatProtectionOnboardingDeviceSettingState.
-ms.openlocfilehash: 171fa331ae6dcb2c9fc193376df61c27e29d3485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b6082f84253b3ad1fe43f28433e00b2b341a64f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088388"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344650"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>Eliminar advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advanced
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

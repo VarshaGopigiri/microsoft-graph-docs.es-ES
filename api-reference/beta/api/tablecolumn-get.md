@@ -1,12 +1,13 @@
 ---
 title: Get TableColumn
 description: Recuperar las propiedades y relaciones del objeto tablecolumn.
-ms.openlocfilehash: 56564f932eb5178eda23197169c42481b5671cee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: cefded09893e9d9edf061bf6309d2b281b34458b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089387"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362800"
 ---
 # <a name="get-tablecolumn"></a>Get TableColumn
 

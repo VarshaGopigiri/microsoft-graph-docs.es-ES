@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetCollection: add'
 description: .Activate() en él.
-ms.openlocfilehash: b4e6f8f3c9972c844f491309436bc92003ec588c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 560a66c4beb589fbb736f0aa27784827740c0440
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363581"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |name|string|Opcional. Nombre de la hoja de cálculo que se va a agregar. Si se especifica, el nombre debe ser único. Si no se especifica, Excel determina el nombre de la nueva hoja de cálculo.|
 

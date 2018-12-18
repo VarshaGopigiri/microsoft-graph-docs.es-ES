@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración deviceEnrollmentType
 description: Posibles maneras de agregar un dispositivo móvil a la administración.
-ms.openlocfilehash: 5c921e30f642e1d44d675f8bee7a5b79c53ce428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: db66ca30758c11230282f7f3a1f6966089d6883b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339329"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeración deviceEnrollmentType
 

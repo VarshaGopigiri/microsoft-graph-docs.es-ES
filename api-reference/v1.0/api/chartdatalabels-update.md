@@ -1,12 +1,13 @@
 ---
 title: Actualizar chartdatalabels
 description: Actualizar las propiedades del objeto chartdatalabels.
-ms.openlocfilehash: d0e7628bc342d83dfd349104105428bb81c4c8f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 86799ea99bbd4f5e2eecdc5ff72745619a46a5a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029677"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335766"
 ---
 # <a name="update-chartdatalabels"></a>Actualizar chartdatalabels
 

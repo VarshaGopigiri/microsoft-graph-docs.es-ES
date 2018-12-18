@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso hardwareInformation
 description: Información de hardware de un dispositivo determinado.
-ms.openlocfilehash: 90762426ef3d7b550b9a6fe89343e54d797b3a51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c483aa800d920a50392d21c326cd20dea7b72e18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087551"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334527"
 ---
 # <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
 
@@ -30,9 +31,9 @@ Información de hardware de un dispositivo determinado.
 |cellularTechnology|String|Tecnología de telefonía móvil del dispositivo|
 |wifiMac|String|Dirección MAC de WiFi del dispositivo|
 |operatingSystemLanguage|String|Idioma del sistema operativo del dispositivo|
-|isSupervised|Booleano|Modo de supervisión del dispositivo|
-|isEncrypted|Booleano|Estado de cifrado del dispositivo|
-|isSharedDevice|Booleano|IPad compartida|
+|isSupervised|Boolean|Modo de supervisión del dispositivo|
+|isEncrypted|Boolean|Estado de cifrado del dispositivo|
+|isSharedDevice|Boolean|IPad compartida|
 |sharedDeviceCachedUsers|colección de [sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)|Todos los usuarios en el dispositivo de Apple compartido|
 |tpmSpecificationVersion|String|Cadena que especifica la versión de la especificación.|
 |operatingSystemEdition|String|Cadena que especifica la edición del sistema operativo.|

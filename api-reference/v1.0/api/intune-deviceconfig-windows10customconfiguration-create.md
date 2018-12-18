@@ -1,12 +1,13 @@
 ---
 title: Crear windows10CustomConfiguration
 description: Cree un objeto windows10CustomConfiguration.
-ms.openlocfilehash: c7c180b26cd5e25aba9ff36d0190ab455000f839
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe23261967e3f350ac1432ebe2869d23cfd6fc89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030736"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338272"
 ---
 # <a name="create-windows10customconfiguration"></a>Crear windows10CustomConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

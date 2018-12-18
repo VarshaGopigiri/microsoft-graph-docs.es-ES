@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso targetedManagedAppConfiguration
 description: Configuración que se usa para proporcionar un conjunto de ajustes personalizados tal cual para todos los usuarios del grupo de seguridad de destino
-ms.openlocfilehash: d854c632c03d4ffbfe85b24b8dcf27f9de2f4eff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ab50d04c6c04ff616019ce5ca42f4452fe11494
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339651"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>Tipo de recurso targetedManagedAppConfiguration
 
@@ -38,7 +39,7 @@ Hereda de [managedAppConfiguration](../resources/intune-mam-managedappconfigurat
 |version|String|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |customSettings|Colección [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Un conjunto de pares de clave de cadena y valor de cadena que se va a enviar a las aplicaciones para aquellos usuarios que tienen limitada la configuración, sin modificar por este servicio. Heredado de [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|
 |deployedAppCount|Int32|Número de aplicaciones en las que se implementará la directiva actual.|
-|isAssigned|Booleano|Indica si la directiva se implementará en los grupos de inclusión o no.|
+|isAssigned|Boolean|Indica si la directiva se implementará en los grupos de inclusión o no.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

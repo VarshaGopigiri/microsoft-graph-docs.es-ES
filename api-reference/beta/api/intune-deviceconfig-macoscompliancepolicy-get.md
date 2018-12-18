@@ -1,12 +1,13 @@
 ---
 title: Obtener macOSCompliancePolicy
 description: Lea las propiedades y las relaciones del objeto macOSCompliancePolicy.
-ms.openlocfilehash: b5a7c0946ae0f032616f185fb7426bb852faf64e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f3521f07e5bd6249abfdff5f4b1ef59902adf39a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088255"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333491"
 ---
 # <a name="get-macoscompliancepolicy"></a>Obtener macOSCompliancePolicy
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

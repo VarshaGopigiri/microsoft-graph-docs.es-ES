@@ -1,12 +1,13 @@
 ---
 title: Acción remoteLock
 description: Bloqueo remoto
-ms.openlocfilehash: de94140e1c4d8a7214af63bd3b6d884d312c24fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d601ad92b37bdf2b4b943588c47414373904eaee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337733"
 ---
 # <a name="remotelock-action"></a>Acción remoteLock
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

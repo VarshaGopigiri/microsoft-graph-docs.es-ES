@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsUniversalAppXContainedApp
 description: Elimina un windowsUniversalAppXContainedApp.
-ms.openlocfilehash: 2240b3915fca15eb4ba8ac5c8622625880de4821
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7974d28bc62d54880efd9c11a24862a6bfcc21bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084893"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333680"
 ---
 # <a name="delete-windowsuniversalappxcontainedapp"></a>Eliminar windowsUniversalAppXContainedApp
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniv
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: 'Range: EntireColumn'
 description: Obtiene un objeto que representa toda la columna del rango.
-ms.openlocfilehash: 6ca7b588740f179cdd4c987cb5dea4f9e193e2c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 5754ca40bcb22e7b7bcd05413f1fe2a61ffff437
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361813"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 

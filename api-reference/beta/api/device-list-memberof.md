@@ -1,12 +1,13 @@
 ---
 title: Grupos de dispositivos de la lista
 description: Obtener los grupos a los que este dispositivo es miembro directo. Esta operación no es transitiva.
-ms.openlocfilehash: fae373a896a2fc048257a5dc6cd9eb07a85ec677
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: tfitzmac
+ms.openlocfilehash: da0001ab6a609e6f262aa6880306977b9c655b01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184472"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336494"
 ---
 # <a name="list-device-groups"></a>Grupos de dispositivos de la lista
 

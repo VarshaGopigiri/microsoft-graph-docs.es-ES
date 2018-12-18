@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsInformationProtectionAppLearningSummary
 description: Lea las propiedades y las relaciones del objeto windowsInformationProtectionAppLearningSummary.
-ms.openlocfilehash: 226ad63f7c55757270ae3d4ff3bf2cb2d4b37fa8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fce6f6d4238b1f28c792fbfa025148c0b6d2eb96
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086340"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333547"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Obtener windowsInformationProtectionAppLearningSummary
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

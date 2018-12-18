@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso ExtendeKeyUsage
 description: Definición de uso de clave extendida personalizada
-ms.openlocfilehash: bbf869dd32c384a12aa8e80e8a3b5984e699de48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b6155a0fbb234cb0b2081a8a4a226a8d218dbc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083198"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337292"
 ---
 # <a name="extendedkeyusage-resource-type"></a>tipo de recurso ExtendeKeyUsage
 

@@ -1,12 +1,13 @@
 ---
 title: Mencione el tipo de recurso
-description: 'Representa una notificación a una persona en función de la dirección de correo electrónico de la persona. Este tipo de notificación es también conocida como '
-ms.openlocfilehash: 7e70c6a84665b474ea4d8421f60e78687ebb49b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Representa una notificación a una persona en función de la dirección de correo electrónico de la persona.
+author: simonhult
+ms.openlocfilehash: a9c00daed067ecd41f0f687687ac9bf7f86d6f2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334233"
 ---
 # <a name="mention-resource-type"></a>Mencione el tipo de recurso
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationSynchronizationProfile
 description: Representa un conjunto de configuraciones que se usa para sincronizar la información de la lista de participantes desde un directorio de origen para Azure Active Directory (AD Azure) y entidades de educación. Este recurso proporciona una representación mediante programación utilizada en la sincronización de datos de School.
-ms.openlocfilehash: 89b605a7044526975f8caa6d7a1b6a716f012921
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 43cf3ebd882c1e2dd86ada5621abbcd28b0e84c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090459"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363742"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso educationSynchronizationProfile
 

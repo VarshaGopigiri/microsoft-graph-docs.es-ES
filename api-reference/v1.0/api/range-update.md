@@ -1,12 +1,13 @@
 ---
 title: Update range
 description: Actualizar las propiedades del objeto de rango.
-ms.openlocfilehash: c02dbc7cec4aa53f5b857f4d82ae9d7a7b4e8a3b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3af876a73a8e7c401512c9aafc38e677769f868e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029284"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354953"
 ---
 # <a name="update-range"></a>Update range
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso macOSCompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para Mac OS.
-ms.openlocfilehash: 3e91dbc6c9b5c3fdb8be3bbce899c7671a4715fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8b210c5c8c0b5f961bc5a6079ed165667884fb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029447"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340883"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Tipo de recurso macOSCompliancePolicy
 
@@ -34,7 +35,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
+|passwordRequired|Boolean|Si quiere requerir o no una contraseña.|
 |passwordBlockSimple|Booleano|Indica si se van a bloquear las contraseñas simples.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 65535|
 |passwordMinimumLength|Int32|Longitud mínima de la contraseña. Valores válidos de 4 a 14|
@@ -48,9 +49,9 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |deviceThreatProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
 |storageRequireEncryption|Booleano|Exige el cifrado en dispositivos Mac OS.|
-|firewallEnabled|Booleano|Si el firewall se debe habilitar o no.|
-|firewallBlockAllIncoming|Booleano|Corresponde a la opción "Bloquear todas las conexiones entrantes".|
-|firewallEnableStealthMode|Booleano|Corresponde a "Habilitar modo silencioso".|
+|firewallEnabled|Boolean|Si el firewall se debe habilitar o no.|
+|firewallBlockAllIncoming|Boolean|Corresponde a la opción "Bloquear todas las conexiones entrantes".|
+|firewallEnableStealthMode|Boolean|Corresponde a "Habilitar modo silencioso".|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

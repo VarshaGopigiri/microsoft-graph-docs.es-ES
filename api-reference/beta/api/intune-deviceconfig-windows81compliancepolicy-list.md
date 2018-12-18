@@ -1,12 +1,13 @@
 ---
 title: Enumerar windows81CompliancePolicies
 description: Enumere las propiedades y las relaciones de los objetos windows81CompliancePolicy.
-ms.openlocfilehash: 2bca199a6b87d300763cdf66a83c472e5fcfd950
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 217ec11f7c2283d8eae90129896b00823211da81
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086736"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333078"
 ---
 # <a name="list-windows81compliancepolicies"></a>Enumerar windows81CompliancePolicies
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

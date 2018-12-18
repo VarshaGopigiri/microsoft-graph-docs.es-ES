@@ -1,12 +1,13 @@
 ---
 title: Enumerar deviceManagementPartners
 description: Enumere las propiedades y las relaciones de los objetos deviceManagementPartner.
-ms.openlocfilehash: 65bad35fa29823bb3b19f7ec49e39017363d4991
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a950aadd1ca05892c9092cf6a7b9d2262ed0f72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333784"
 ---
 # <a name="list-devicemanagementpartners"></a>Enumerar deviceManagementPartners
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

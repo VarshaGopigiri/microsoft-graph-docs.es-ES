@@ -1,12 +1,13 @@
 ---
 title: Lista windows81CertificateProfileBases
 description: Propiedades de la lista y relaciones de los objetos windows81CertificateProfileBase.
-ms.openlocfilehash: f9b7cbc509edc1db397a29564d4983f1690ece1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 310f49f36e53df3e9aef31b180c13a71280cca08
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087575"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344747"
 ---
 # <a name="list-windows81certificateprofilebases"></a>Lista windows81CertificateProfileBases
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

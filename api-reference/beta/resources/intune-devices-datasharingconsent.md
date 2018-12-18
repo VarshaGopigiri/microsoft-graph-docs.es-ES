@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso dataSharingConsent
 description: Uso compartido de datos consienten de información.
-ms.openlocfilehash: 152b367161dc9a734a20e007ac1b2c0d02d0c99f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 250ad388a5c619a6fd2753d172734145ea720776
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342941"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso dataSharingConsent
 
@@ -31,7 +32,7 @@ Uso compartido de datos consienten de información.
 |id|String|El consentimiento de uso compartido de datos Id.|
 |nombreDescriptivoDeServicio|String|El nombre para mostrar del flujo de trabajo del servicio|
 |termsUrl|String|El TermsUrl para los datos de uso compartido de consentimiento|
-|concedido|Booleano|El estado de concedidos para los datos de uso compartido de consentimiento|
+|concedido|Boolean|El estado de concedidos para los datos de uso compartido de consentimiento|
 |grantDateTime|DateTimeOffset|Esta cuenta se le conceden el consentimiento de tiempo|
 |grantedByUpn|String|El Upn del usuario que concederse el consentimiento para esta cuenta|
 |grantedByUserId|String|El identificador de usuario del usuario que concederse el consentimiento para esta cuenta|

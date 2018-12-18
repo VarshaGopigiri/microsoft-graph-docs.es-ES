@@ -1,12 +1,13 @@
 ---
 title: Llamar a Microsoft Graph desde una aplicación del proveedor de soluciones en la nube
 description: En este tema se describe cómo habilitar el acceso de la aplicación a datos de clientes administrados por el asociado a través de Microsoft Graph mediante el flujo de concesión del código de autorización o del flujo de credenciales de cliente de servicio a servicio.
-ms.openlocfilehash: a14c610090a1232c72ec2fde4469dd1cd1d6f694
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 3640cde7fb3b1c49e87a0e06e293aba8c656e264
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092858"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361869"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Llamar a Microsoft Graph desde una aplicación del proveedor de soluciones en la nube
 

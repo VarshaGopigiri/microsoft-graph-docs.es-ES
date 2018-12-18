@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamsUserActivityCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 39e90b4c9dc6b9929959139ba67ddb090d143e38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: f67540f4172993b1076d9590438262b0d4da1846
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089801"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334520"
 ---
 # <a name="teamsuseractivitycounts-resource-type"></a>tipo de recurso teamsUserActivityCounts
 
@@ -14,8 +15,8 @@ ms.locfileid: "27089801"
 
 | Propiedad            | Tipo   |
 | :------------------ | :----- |
-| reportRefreshDate   | Fecha   |
-| reportDate          | Fecha   |
+| reportRefreshDate   | Date   |
+| reportDate          | Date   |
 | teamChatMessages    | Int64  |
 | privateChatMessages | Int64  |
 | llamadas               | Int64  |

@@ -1,12 +1,13 @@
 ---
 title: Obtener bloc de notas
 description: Recupera las propiedades y las relaciones de un objeto notebook.
-ms.openlocfilehash: 9dd264dd2498e0c775629b9e178b7660426a8d69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 1c4ef1db34f115e3904ff48b871e52f969b08d5a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334086"
 ---
 # <a name="get-notebook"></a>Obtener bloc de notas
 
@@ -36,9 +37,9 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 `sections` y `sectionGroups` son valores de `expand` para los blocs de notas.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

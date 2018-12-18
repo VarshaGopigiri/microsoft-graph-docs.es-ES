@@ -1,12 +1,13 @@
 ---
 title: Enumerar targetedManagedAppPolicyAssignments
 description: Enumere las propiedades y los relaciones de los objetos targetedManagedAppPolicyAssignment.
-ms.openlocfilehash: 078a745ca270fd1bd507439fb468df6fd7f7056d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bc482707ee2c58e5778df68926f997f20ef68801
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030031"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362569"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Enumerar targetedManagedAppPolicyAssignments
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

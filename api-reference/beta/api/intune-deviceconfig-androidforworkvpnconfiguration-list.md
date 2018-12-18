@@ -1,12 +1,13 @@
 ---
 title: Lista androidForWorkVpnConfigurations
 description: Propiedades de la lista y relaciones de los objetos androidForWorkVpnConfiguration.
-ms.openlocfilehash: 1df58a72700b77344574ae41bd70313b890bc882
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca56e8033563166f80aa5e364f716b9bc4c38c0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085295"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344726"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>Lista androidForWorkVpnConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Lista win32LobApps
 description: Propiedades de la lista y relaciones de los objetos win32LobApp.
-ms.openlocfilehash: ffb4e677ab7481e0bdab94f7300c9ba20e04f8fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b26ac4dffa7e93598a16189086a51f9f8663d15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091000"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333638"
 ---
 # <a name="list-win32lobapps"></a>Lista win32LobApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

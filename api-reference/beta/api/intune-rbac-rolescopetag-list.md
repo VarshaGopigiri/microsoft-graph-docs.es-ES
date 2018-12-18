@@ -1,12 +1,13 @@
 ---
 title: Lista roleScopeTags
 description: Propiedades de la lista y relaciones de los objetos roleScopeTag.
-ms.openlocfilehash: 632c40126197ca7905ad4075c3da7688ed258441
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 786276f5e0d74871ebf38fce235f584911bebb20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083759"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337803"
 ---
 # <a name="list-rolescopetags"></a>Lista roleScopeTags
 
@@ -37,7 +38,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

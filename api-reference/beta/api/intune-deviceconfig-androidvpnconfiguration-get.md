@@ -1,12 +1,13 @@
 ---
 title: Obtener androidVpnConfiguration
 description: Leer las propiedades y las relaciones del objeto androidVpnConfiguration.
-ms.openlocfilehash: e6f863a589f042cb27098ea8f82cf2c61a424b29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2f2040cf04c272d75c82c692975464407b2a7a38
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335899"
 ---
 # <a name="get-androidvpnconfiguration"></a>Obtener androidVpnConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso resourceVisualization
 description: Tipo complejo que contiene las propiedades de conocimientos.
-ms.openlocfilehash: 3ed61a8547e072938fc073d90f2592baf4c08fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088207"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333540"
 ---
 # <a name="resourcevisualization-resource-type"></a>tipo de recurso resourceVisualization
 
@@ -48,13 +49,13 @@ Aquí tiene una representación JSON del recurso
 -   PowerPoint
 -   Word
 -   Excel
--   Pdf
+-   PDF
 -   OneNote
 -   OneNotePage
 -   InfoPath
 -   Visio
 -   Publisher
--   Proyecto
+-   Project
 -   Access
 -   Correo
 -   CSV
@@ -68,8 +69,8 @@ Aquí tiene una representación JSON del recurso
 -   Xml
 -   Story
 -   ExternalContent
--   Carpeta
--   Otro
+-   Folder
+-   Otros
 
 Consulta de ejemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -77,7 +78,7 @@ Consulta de ejemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filt
 Los tipos admitidos pueden variar en función de en los contenedores desde la que el [entendimiento](insights.md) devuelve los archivos. Por ejemplo, solo los conocimientos [compartidos](insights-shared.md) devuelve los archivos de 'Lista desplegable', 'Cuadro' y 'GDrive'.
 
 -   OneDriveBusiness
--   Sitio
+-   Site
 -   Correo
 -   Lista desplegable
 -   Cuadro

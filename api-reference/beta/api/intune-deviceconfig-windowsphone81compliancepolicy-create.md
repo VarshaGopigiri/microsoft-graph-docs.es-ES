@@ -1,12 +1,13 @@
 ---
 title: Crear windowsPhone81CompliancePolicy
 description: Cree un objeto windowsPhone81CompliancePolicy.
-ms.openlocfilehash: 7bb9c6d77af5f1f2be730b8b7cdca533a1304731
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 031e9cb9fcd27b3ece1c6fc97a4a56f5f09ed767
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087170"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336123"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>Crear windowsPhone81CompliancePolicy
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -60,7 +61,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
-|passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
+|passwordRequired|Boolean|Si quiere requerir o no una contraseña.|
 |osMinimumVersion|String|Versión mínima de Windows Phone.|
 |osMaximumVersion|String|Versión máxima de Windows Phone.|
 |storageRequireEncryption|Booleano|Requerir el cifrado en dispositivos de Windows Phone.|

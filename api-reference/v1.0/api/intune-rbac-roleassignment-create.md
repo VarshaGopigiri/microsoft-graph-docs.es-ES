@@ -1,12 +1,13 @@
 ---
 title: Crear roleAssignment
 description: Cree un objeto roleAssignment.
-ms.openlocfilehash: 887e802371c8545baf44bca81da9b79455eb262d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac3a8ee5b007c918a9b655cb2f396c872f9f2d92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362240"
 ---
 # <a name="create-roleassignment"></a>Crear roleAssignment
 
@@ -34,7 +35,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

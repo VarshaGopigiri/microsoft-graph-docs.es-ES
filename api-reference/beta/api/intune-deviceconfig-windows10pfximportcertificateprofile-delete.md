@@ -1,12 +1,13 @@
 ---
 title: Eliminar windows10PFXImportCertificateProfile
 description: Elimina un windows10PFXImportCertificateProfile.
-ms.openlocfilehash: 380c4a6f7e9bb3c236564d731425aea706996087
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c44d079106de4d2ab4284c6d446f3660fc0c5178
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090496"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340463"
 ---
 # <a name="delete-windows10pfximportcertificateprofile"></a>Eliminar windows10PFXImportCertificateProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Obtener managedAppPolicy
 description: Incluya en una lista las propiedades y las relaciones de los objetos managedAppPolicy.
-ms.openlocfilehash: 04daf977169d2e0c28ac034fc95807877d2d495c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07f9078bb602adf800f818697627bdc3c174b819
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086073"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363791"
 ---
 # <a name="get-managedapppolicy"></a>Obtener managedAppPolicy
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

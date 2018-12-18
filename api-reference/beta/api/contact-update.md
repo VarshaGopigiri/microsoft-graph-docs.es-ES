@@ -1,12 +1,13 @@
 ---
 title: Actualizar contacto
 description: Actualizar las propiedades del objeto de contacto.
-ms.openlocfilehash: 2fbf597ebc8a6c65141c64ae42ae42266f14cbde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: d25efb55a090c4c0b5fa750b64a0b2a905327a76
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085640"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334107"
 ---
 # <a name="update-contact"></a>Actualizar contacto
 
@@ -77,7 +78,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |surname|String|Los apellidos del contacto.|
 |title|String|El título del contacto.|
 |websites |Colección [website](../resources/website.md)|Sitios Web asociados con el contacto. |
-|weddingAnniversary |Fecha |Aniversario de boda del contacto. |
+|weddingAnniversary |Date |Aniversario de boda del contacto. |
 |yomiCompanyName|String|El nombre fonético japonés de la empresa del contacto. Esta propiedad es opcional.|
 |yomiGivenName|String|El nombre (nombre de pila) fonético japonés del contacto. Esta propiedad es opcional.|
 |yomiSurname|String|El apellido fonético japonés del contacto. Esta propiedad es opcional.|

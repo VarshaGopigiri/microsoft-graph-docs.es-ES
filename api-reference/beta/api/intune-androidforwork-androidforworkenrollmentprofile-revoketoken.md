@@ -1,12 +1,13 @@
 ---
 title: Acción revokeToken
 description: Todavía no documentado
-ms.openlocfilehash: 0faa49f48514d224e1671c6f914087e630b8bad3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b4577a895f89bdfeceb200eefd134e737e434efc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083922"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363749"
 ---
 # <a name="revoketoken-action"></a>Acción revokeToken
 
@@ -36,7 +37,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollmen
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

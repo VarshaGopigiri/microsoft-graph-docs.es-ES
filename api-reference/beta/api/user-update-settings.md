@@ -1,12 +1,13 @@
 ---
 title: Configuración de actualización
 description: 'Actualizar las propiedades del objeto settings. '
-ms.openlocfilehash: 53b5fb2ce37aa9d80466face5ec03d1b54e87c09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 61d44c1c726b91bc21d9fc5498cd2ba11a5a830b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089964"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363784"
 ---
 # <a name="update-settings"></a>Configuración de actualización
 
@@ -49,7 +50,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booleano|En el valor true deshabilita el acceso de delegado a la API de [tendencias](../resources/insights-trending.md) y deshabilitar el acceso a los documentos de Office profundizar para el usuario. Configuración en true también afecta a la relevancia del contenido que se muestra en Office 365: por ejemplo, los sitios que se sugiere en la página principal de SharePoint y la vista de detección en OneDrive para la empresa muestran resultados menos relevantes. Esta configuración refleja el estado de control en [Office profundizar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Boolean|En el valor true deshabilita el acceso de delegado a la API de [tendencias](../resources/insights-trending.md) y deshabilitar el acceso a los documentos de Office profundizar para el usuario. Configuración en true también afecta a la relevancia del contenido que se muestra en Office 365: por ejemplo, los sitios que se sugiere en la página principal de SharePoint y la vista de detección en OneDrive para la empresa muestran resultados menos relevantes. Esta configuración refleja el estado de control en [Office profundizar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Ejemplo 
 

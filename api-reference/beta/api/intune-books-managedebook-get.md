@@ -1,12 +1,13 @@
 ---
 title: Obtener managedEBook
 description: Lea las propiedades y las relaciones del objeto managedEBook.
-ms.openlocfilehash: 23cee2ebefd27e82c28b85072c29d690c62ffcc3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: deedba26273a2ae019c6cb1fc9d493a79921a6b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089322"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333113"
 ---
 # <a name="get-managedebook"></a>Obtener managedEBook
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

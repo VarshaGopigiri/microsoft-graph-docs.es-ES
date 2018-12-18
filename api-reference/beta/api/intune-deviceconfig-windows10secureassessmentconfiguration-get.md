@@ -1,12 +1,13 @@
 ---
 title: Obtener windows10SecureAssessmentConfiguration
 description: Lea las propiedades y las relaciones del objeto windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: 1d60390d71db914124076b2855b6f26e25737510
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 95370134e1c4b37aa49caf9f17f76d81898ccd03
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090498"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333393"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>Obtener windows10SecureAssessmentConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

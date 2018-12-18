@@ -1,12 +1,13 @@
 ---
 title: Acción beginOnboarding
 description: Todavía no documentado
-ms.openlocfilehash: a410558bccd5c0d76e9515e14dd161bfc9a3b3d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5d9d164e359484f6823c67c80169dbcef5116c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030944"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337313"
 ---
 # <a name="beginonboarding-action"></a>Acción beginOnboarding
 
@@ -34,7 +35,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/begi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

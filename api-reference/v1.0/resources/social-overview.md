@@ -1,12 +1,13 @@
 ---
 title: Información general sobre contactos
 description: Microsoft Graph proporciona acceso a datos prácticos de contacto.
-ms.openlocfilehash: 43ecee4f42aa20b3f24e1e5e95629976b8b50e53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 31dce1ccd2355eda53e8edafc739fa0f598e4431
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335276"
 ---
 # <a name="people-overview"></a>Información general sobre contactos
 

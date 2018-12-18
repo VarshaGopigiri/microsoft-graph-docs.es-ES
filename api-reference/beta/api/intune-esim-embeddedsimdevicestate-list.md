@@ -1,12 +1,13 @@
 ---
 title: Lista embeddedSIMDeviceStates
 description: Propiedades de la lista y relaciones de los objetos embeddedSIMDeviceState.
-ms.openlocfilehash: 9ffa9a4c90a051d6d7a4f5f1d7ce0b1787b8255f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e3f68a0152e6919d5bf96847404b1d3d4f100e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087495"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342920"
 ---
 # <a name="list-embeddedsimdevicestates"></a>Lista embeddedSIMDeviceStates
 
@@ -36,7 +37,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

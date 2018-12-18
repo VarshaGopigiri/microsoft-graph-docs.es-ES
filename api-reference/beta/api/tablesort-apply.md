@@ -1,12 +1,13 @@
 ---
 title: 'TableSort: apply'
 description: Realizar una operación de ordenación.
-ms.openlocfilehash: 4c99ff84e88154cc4eb287f4a834590f685d535b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ed5b862227986e9e280462d0118f2286dd1c9107
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083413"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333127"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |fields|SortField|La lista de condiciones por las que realizar la ordenación.|
 |matchCase|boolean|Opcional. Indica si la ordenación de cadenas distingue mayúsculas de minúsculas.|

@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsPhone81VpnConfiguration
 description: Elimina un windowsPhone81VpnConfiguration.
-ms.openlocfilehash: 3629bb76be61245b798f3f0aec1dc2b797d0ec7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 171c3fafaca7a34ec8482474dd8107dd161f7c4d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333043"
 ---
 # <a name="delete-windowsphone81vpnconfiguration"></a>Eliminar windowsPhone81VpnConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

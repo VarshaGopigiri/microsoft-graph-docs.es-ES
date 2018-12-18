@@ -1,12 +1,13 @@
 ---
 title: Actualizar gráfico
 description: Actualizar las propiedades del objeto chart.
-ms.openlocfilehash: af0e04808d94ebd233da07d7de0df871548a551f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ab7ab0ed0d9a58eab48450190a6819ee7ee1a441
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029676"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338209"
 ---
 # <a name="update-chart"></a>Actualizar gráfico
 
