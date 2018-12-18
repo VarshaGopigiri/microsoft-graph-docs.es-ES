@@ -1,29 +1,30 @@
 ---
 title: tipo de recurso teamsAppDefinition
 description: Los detalles de una versión de un teamsApp.
-ms.openlocfilehash: 34ec74c00dccca48df3b65758e1739cd29b19e7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 43bd4262008a29668739e78d4b598da1e77e3d4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351642"
 ---
-# <a name="teamsappdefinition-resource-type"></a><span data-ttu-id="b8b91-103">tipo de recurso teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="b8b91-103">teamsAppDefinition resource type</span></span>
+# <a name="teamsappdefinition-resource-type"></a><span data-ttu-id="f5ecd-103">tipo de recurso teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="f5ecd-103">teamsAppDefinition resource type</span></span>
 
 
 
-<span data-ttu-id="b8b91-104">Los detalles de una versión de un [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="b8b91-104">The details of one version of a [teamsApp](teamsapp.md).</span></span>
+<span data-ttu-id="f5ecd-104">Los detalles de una versión de un [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="f5ecd-104">The details of one version of a [teamsApp](teamsapp.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b8b91-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="b8b91-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f5ecd-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="f5ecd-105">Properties</span></span>
 
-| <span data-ttu-id="b8b91-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="b8b91-106">Property</span></span>            | <span data-ttu-id="b8b91-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="b8b91-107">Type</span></span>     | <span data-ttu-id="b8b91-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="b8b91-108">Description</span></span> |
+| <span data-ttu-id="f5ecd-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="f5ecd-106">Property</span></span>            | <span data-ttu-id="f5ecd-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="f5ecd-107">Type</span></span>     | <span data-ttu-id="f5ecd-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="f5ecd-108">Description</span></span> |
 |:------------------- |:-------- |:----------- |
-| <span data-ttu-id="b8b91-109">id</span><span class="sxs-lookup"><span data-stu-id="b8b91-109">id</span></span>                  | <span data-ttu-id="b8b91-110">string</span><span class="sxs-lookup"><span data-stu-id="b8b91-110">string</span></span>   | <span data-ttu-id="b8b91-111">Un identificador único (no el identificador de aplicación de los equipos).</span><span class="sxs-lookup"><span data-stu-id="b8b91-111">A unique id (not the teams appid).</span></span> |
-| <span data-ttu-id="b8b91-112">teamsAppId</span><span class="sxs-lookup"><span data-stu-id="b8b91-112">teamsAppId</span></span>          | <span data-ttu-id="b8b91-113">string</span><span class="sxs-lookup"><span data-stu-id="b8b91-113">string</span></span>   | <span data-ttu-id="b8b91-114">El identificador de manifiesto de la aplicación de los equipos.</span><span class="sxs-lookup"><span data-stu-id="b8b91-114">The id from the Teams App manifest.</span></span> |
-| <span data-ttu-id="b8b91-115">displayName</span><span class="sxs-lookup"><span data-stu-id="b8b91-115">displayName</span></span>         | <span data-ttu-id="b8b91-116">string</span><span class="sxs-lookup"><span data-stu-id="b8b91-116">string</span></span>   | <span data-ttu-id="b8b91-117">El nombre de la aplicación proporcionada por el desarrollador de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="b8b91-117">The name of the app provided by the app developer.</span></span> |
-| <span data-ttu-id="b8b91-118">version</span><span class="sxs-lookup"><span data-stu-id="b8b91-118">version</span></span>             | <span data-ttu-id="b8b91-119">string</span><span class="sxs-lookup"><span data-stu-id="b8b91-119">string</span></span>   | <span data-ttu-id="b8b91-120">El número de versión de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="b8b91-120">The version number of the application.</span></span> |
+| <span data-ttu-id="f5ecd-109">id</span><span class="sxs-lookup"><span data-stu-id="f5ecd-109">id</span></span>                  | <span data-ttu-id="f5ecd-110">string</span><span class="sxs-lookup"><span data-stu-id="f5ecd-110">string</span></span>   | <span data-ttu-id="f5ecd-111">Un identificador único (no el identificador de aplicación de los equipos).</span><span class="sxs-lookup"><span data-stu-id="f5ecd-111">A unique id (not the teams appid).</span></span> |
+| <span data-ttu-id="f5ecd-112">teamsAppId</span><span class="sxs-lookup"><span data-stu-id="f5ecd-112">teamsAppId</span></span>          | <span data-ttu-id="f5ecd-113">string</span><span class="sxs-lookup"><span data-stu-id="f5ecd-113">string</span></span>   | <span data-ttu-id="f5ecd-114">El identificador de manifiesto de la aplicación de los equipos.</span><span class="sxs-lookup"><span data-stu-id="f5ecd-114">The id from the Teams App manifest.</span></span> |
+| <span data-ttu-id="f5ecd-115">displayName</span><span class="sxs-lookup"><span data-stu-id="f5ecd-115">displayName</span></span>         | <span data-ttu-id="f5ecd-116">string</span><span class="sxs-lookup"><span data-stu-id="f5ecd-116">string</span></span>   | <span data-ttu-id="f5ecd-117">El nombre de la aplicación proporcionada por el desarrollador de aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="f5ecd-117">The name of the app provided by the app developer.</span></span> |
+| <span data-ttu-id="f5ecd-118">version</span><span class="sxs-lookup"><span data-stu-id="f5ecd-118">version</span></span>             | <span data-ttu-id="f5ecd-119">string</span><span class="sxs-lookup"><span data-stu-id="f5ecd-119">string</span></span>   | <span data-ttu-id="f5ecd-120">El número de versión de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="f5ecd-120">The version number of the application.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="b8b91-121">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b8b91-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f5ecd-121">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="f5ecd-121">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,11 +41,11 @@ ms.locfileid: "27028978"
 }
 ```
 
-# <a name="see-also"></a><span data-ttu-id="b8b91-122">Vea también</span><span class="sxs-lookup"><span data-stu-id="b8b91-122">See also</span></span>
+# <a name="see-also"></a><span data-ttu-id="f5ecd-122">Vea también</span><span class="sxs-lookup"><span data-stu-id="f5ecd-122">See also</span></span>
 
-- [<span data-ttu-id="b8b91-123">teamsApp</span><span class="sxs-lookup"><span data-stu-id="b8b91-123">teamsApp</span></span>](teamsapp.md)
-- [<span data-ttu-id="b8b91-124">teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="b8b91-124">teamsAppInstallation</span></span>](teamsappinstallation.md)
-- [<span data-ttu-id="b8b91-125">teamsTab</span><span class="sxs-lookup"><span data-stu-id="b8b91-125">teamsTab</span></span>](../resources/teamstab.md)
+- [<span data-ttu-id="f5ecd-123">teamsApp</span><span class="sxs-lookup"><span data-stu-id="f5ecd-123">teamsApp</span></span>](teamsapp.md)
+- [<span data-ttu-id="f5ecd-124">teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="f5ecd-124">teamsAppInstallation</span></span>](teamsappinstallation.md)
+- [<span data-ttu-id="f5ecd-125">teamsTab</span><span class="sxs-lookup"><span data-stu-id="f5ecd-125">teamsTab</span></span>](../resources/teamstab.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

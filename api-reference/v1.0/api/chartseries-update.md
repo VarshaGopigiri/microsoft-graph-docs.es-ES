@@ -1,49 +1,50 @@
 ---
 title: Actualizar chartseries
 description: Actualizar las propiedades del objeto chartserie.
-ms.openlocfilehash: ea238fcf9cd3b03b99527bb0f9ab11440a8ed111
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ad477e0c03eba4af78fc088a2f45f76976ec9c80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355597"
 ---
-# <a name="update-chartseries"></a><span data-ttu-id="d112c-103">Actualizar chartseries</span><span class="sxs-lookup"><span data-stu-id="d112c-103">Update chartseries</span></span>
+# <a name="update-chartseries"></a><span data-ttu-id="120ce-103">Actualizar chartseries</span><span class="sxs-lookup"><span data-stu-id="120ce-103">Update chartseries</span></span>
 
-<span data-ttu-id="d112c-104">Actualizar las propiedades del objeto chartserie.</span><span class="sxs-lookup"><span data-stu-id="d112c-104">Update the properties of chartseries object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d112c-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="d112c-105">Permissions</span></span>
-<span data-ttu-id="d112c-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d112c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="120ce-104">Actualizar las propiedades del objeto chartserie.</span><span class="sxs-lookup"><span data-stu-id="120ce-104">Update the properties of chartseries object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="120ce-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="120ce-105">Permissions</span></span>
+<span data-ttu-id="120ce-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="120ce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d112c-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="d112c-108">Permission type</span></span>      | <span data-ttu-id="d112c-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="d112c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="120ce-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="120ce-108">Permission type</span></span>      | <span data-ttu-id="120ce-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="120ce-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d112c-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="d112c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d112c-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d112c-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="d112c-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d112c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d112c-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d112c-113">Not supported.</span></span>    |
-|<span data-ttu-id="d112c-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="d112c-114">Application</span></span> | <span data-ttu-id="d112c-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d112c-115">Not supported.</span></span> |
+|<span data-ttu-id="120ce-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="120ce-110">Delegated (work or school account)</span></span> | <span data-ttu-id="120ce-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="120ce-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="120ce-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="120ce-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="120ce-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="120ce-113">Not supported.</span></span>    |
+|<span data-ttu-id="120ce-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="120ce-114">Application</span></span> | <span data-ttu-id="120ce-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="120ce-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d112c-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d112c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="120ce-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="120ce-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="d112c-117">Encabezados de solicitud opcionales</span><span class="sxs-lookup"><span data-stu-id="d112c-117">Optional request headers</span></span>
-| <span data-ttu-id="d112c-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="d112c-118">Name</span></span>       | <span data-ttu-id="d112c-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="d112c-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="120ce-117">Encabezados de solicitud opcionales</span><span class="sxs-lookup"><span data-stu-id="120ce-117">Optional request headers</span></span>
+| <span data-ttu-id="120ce-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="120ce-118">Name</span></span>       | <span data-ttu-id="120ce-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="120ce-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="d112c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d112c-120">Authorization</span></span>  | <span data-ttu-id="d112c-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d112c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d112c-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="d112c-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="d112c-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="d112c-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="120ce-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="120ce-120">Authorization</span></span>  | <span data-ttu-id="120ce-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="120ce-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="120ce-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="120ce-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="120ce-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="120ce-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d112c-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="d112c-126">Request body</span></span>
-<span data-ttu-id="d112c-p104">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="d112c-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="120ce-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="120ce-126">Request body</span></span>
+<span data-ttu-id="120ce-p104">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="120ce-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="d112c-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="d112c-130">Property</span></span>     | <span data-ttu-id="d112c-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d112c-131">Type</span></span>   |<span data-ttu-id="d112c-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="d112c-132">Description</span></span>|
+| <span data-ttu-id="120ce-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="120ce-130">Property</span></span>     | <span data-ttu-id="120ce-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="120ce-131">Type</span></span>   |<span data-ttu-id="120ce-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="120ce-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d112c-133">name</span><span class="sxs-lookup"><span data-stu-id="d112c-133">name</span></span>|<span data-ttu-id="d112c-134">string</span><span class="sxs-lookup"><span data-stu-id="d112c-134">string</span></span>|<span data-ttu-id="d112c-135">Representa el nombre de una serie de un gráfico.</span><span class="sxs-lookup"><span data-stu-id="d112c-135">Represents the name of a series in a chart.</span></span>|
+|<span data-ttu-id="120ce-133">name</span><span class="sxs-lookup"><span data-stu-id="120ce-133">name</span></span>|<span data-ttu-id="120ce-134">string</span><span class="sxs-lookup"><span data-stu-id="120ce-134">string</span></span>|<span data-ttu-id="120ce-135">Representa el nombre de una serie de un gráfico.</span><span class="sxs-lookup"><span data-stu-id="120ce-135">Represents the name of a series in a chart.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d112c-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d112c-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="120ce-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="120ce-136">Response</span></span>
 
-<span data-ttu-id="d112c-137">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y el objeto [WorkbookChartSeries](../resources/chartseries.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d112c-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartSeries](../resources/chartseries.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d112c-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d112c-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d112c-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d112c-139">Request</span></span>
-<span data-ttu-id="d112c-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d112c-140">Here is an example of the request.</span></span>
+<span data-ttu-id="120ce-137">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y el objeto [WorkbookChartSeries](../resources/chartseries.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="120ce-137">If successful, this method returns a `200 OK` response code and updated [WorkbookChartSeries](../resources/chartseries.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="120ce-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="120ce-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="120ce-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="120ce-139">Request</span></span>
+<span data-ttu-id="120ce-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="120ce-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartseries"
@@ -57,8 +58,8 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="d112c-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d112c-141">Response</span></span>
-<span data-ttu-id="d112c-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d112c-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="120ce-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="120ce-141">Response</span></span>
+<span data-ttu-id="120ce-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="120ce-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
