@@ -1,12 +1,13 @@
 ---
 title: Obtener macOSTrustedRootCertificate
 description: Leer las propiedades y las relaciones del objeto macOSTrustedRootCertificate.
-ms.openlocfilehash: a64fc76f2083f427210a9970d6d4b77e8674c6b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 519d30222be929eb4094a69a4d6c69da42c027df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330355"
 ---
 # <a name="get-macostrustedrootcertificate"></a>Obtener macOSTrustedRootCertificate
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

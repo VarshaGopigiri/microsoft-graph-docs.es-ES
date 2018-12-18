@@ -1,12 +1,13 @@
 ---
 title: Actualizar windows81CompliancePolicy
 description: Actualice las propiedades de un objeto windows81CompliancePolicy.
-ms.openlocfilehash: 52e76e1be627633f6bba0a78c451afb8b184d265
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e212739d14b05ea8038bbeb1aeefca7660b6cc3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332763"
 ---
 # <a name="update-windows81compliancepolicy"></a>Actualizar windows81CompliancePolicy
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Booleano|Exige una contraseña para desbloquear el dispositivo Windows.|
+|passwordRequired|Boolean|Exige una contraseña para desbloquear el dispositivo Windows.|
 |passwordBlockSimple|Booleano|Indica si quiere bloquear o no la contraseña simple.|
 |passwordExpirationDays|Int32|Expiración de la contraseña en días.|
 |passwordMinimumLength|Int32|La longitud mínima de contraseña.|
@@ -60,7 +61,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que impide su reutilización. Valores válidos de 0 a 24|
 |osMinimumVersion|String|Versión mínima de Windows 8.1.|
 |osMaximumVersion|String|Versión máxima de Windows 8.1.|
-|storageRequireEncryption|Booleano|Indica si quiere requerir o no el cifrado en un dispositivo Windows 8.1.|
+|storageRequireEncryption|Boolean|Indica si quiere requerir o no el cifrado en un dispositivo Windows 8.1.|
 
 
 

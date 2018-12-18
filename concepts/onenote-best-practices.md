@@ -1,12 +1,13 @@
 ---
 title: Procedimientos recomendados para trabajar con las API de OneNote en Microsoft Graph.
 description: Este artículo proporciona recomendaciones para el trabajo con las API de OneNote en Microsoft Graph. Estas recomendaciones se basan en respuestas a preguntas comunes que se hacen en Stack Overflow y Twitter.
-ms.openlocfilehash: d7135b09c11150181a479b6b9a00ab11247de11c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: f02976424ea39935e38d45b7eb2f80ba66319c7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332168"
 ---
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Procedimientos recomendados para trabajar con las API de OneNote en Microsoft Graph.
 

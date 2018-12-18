@@ -1,12 +1,13 @@
 ---
 title: Acción de sincronización
 description: Todavía no documentado
-ms.openlocfilehash: 4385656565465ced016b64212c3b312523e44e8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 736805eaa569b25b2d6ebfb955279e15318d91d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031013"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332700"
 ---
 # <a name="sync-action"></a>Acción de sincronización
 
@@ -34,7 +35,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

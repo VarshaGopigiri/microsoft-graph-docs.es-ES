@@ -1,12 +1,13 @@
 ---
 title: Automatizar la creación, el envío y el procesamiento de mensajes
 description: Los correos electrónicos se representan mediante el recurso message en Microsoft Graph.
-ms.openlocfilehash: 9eba9e04426bdf1339d9ae287c1cf085bcf3b500
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+author: angelgolfer-ms
+ms.openlocfilehash: fa549395ad55f0eb2d2d16748250fda1745d8b92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332532"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Automatizar la creación, el envío y el procesamiento de mensajes
 

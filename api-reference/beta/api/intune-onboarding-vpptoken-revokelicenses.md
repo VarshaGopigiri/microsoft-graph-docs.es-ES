@@ -1,12 +1,13 @@
 ---
 title: acción revokeLicenses
 description: Revocar licencias asociadas con un appleVolumePurchaseProgramToken específico
-ms.openlocfilehash: 9c8d3142a28845390ef7261c408d2d4bc77643c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b5551f29da23aeaf6a024e5ea41588211a69bd0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085010"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330789"
 ---
 # <a name="revokelicenses-action"></a>acción revokeLicenses
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/revokeLicenses
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

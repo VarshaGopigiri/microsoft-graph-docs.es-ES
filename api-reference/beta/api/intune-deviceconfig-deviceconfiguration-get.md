@@ -1,12 +1,13 @@
 ---
 title: Obtener deviceConfiguration
 description: Lea las propiedades y las relaciones del objeto deviceConfiguration.
-ms.openlocfilehash: 801863f889d215bd4bc1a0044d28b703433dd3cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d183e983df5f225a6f209a1e3467183bcd4af8d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088629"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330803"
 ---
 # <a name="get-deviceconfiguration"></a>Obtener deviceConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

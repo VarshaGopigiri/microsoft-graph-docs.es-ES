@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso androidPermissionAction
 description: Asignación entre un permiso de aplicación de Android y la acción Android debe realizar cuando se solicita ese permiso.
-ms.openlocfilehash: e65f9b28169e231e34b5a7a46316821f77639233
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 90117b30dae765151e79d8ad1c2ae1afaa5a42ff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331139"
 ---
 # <a name="androidpermissionaction-resource-type"></a>tipo de recurso androidPermissionAction
 
