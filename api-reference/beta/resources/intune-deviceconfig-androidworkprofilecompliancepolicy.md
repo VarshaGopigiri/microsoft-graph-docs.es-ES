@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso androidWorkProfileCompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para Android perfil de trabajo.
-ms.openlocfilehash: ddaf62ea170e7d3e231ee0a2eef40e454f1e564d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 09276ead1588fcbb623d927b859d9f9b012bf88f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087148"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313352"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>tipo de recurso androidWorkProfileCompliancePolicy
 
@@ -43,21 +44,21 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 365|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear.|
-|securityPreventInstallAppsFromUnknownSources|Booleano|Exigir que los dispositivos impidan la instalación de aplicaciones de orígenes desconocidos.|
+|securityPreventInstallAppsFromUnknownSources|Boolean|Exigir que los dispositivos impidan la instalación de aplicaciones de orígenes desconocidos.|
 |securityDisableUsbDebugging|Booleano|Deshabilitar la depuración USB en dispositivos Android.|
-|securityRequireVerifyApps|Booleano|Exigir que la característica Verificar aplicaciones de Android esté activada.|
+|securityRequireVerifyApps|Boolean|Exigir que la característica Verificar aplicaciones de Android esté activada.|
 |deviceThreatProtectionEnabled|Booleano|Exigir que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
-|securityBlockJailbrokenDevices|Booleano|No pueden usarse dispositivos con jailbreak o rooting.|
+|securityBlockJailbrokenDevices|Boolean|No pueden usarse dispositivos con jailbreak o rooting.|
 |osMinimumVersion|String|Versión mínima de Android.|
 |osMaximumVersion|String|Versión máxima de Android.|
 |minAndroidSecurityPatchLevel|String|Nivel de revisión de seguridad mínimo de Android.|
 |storageRequireEncryption|Booleano|Exigir cifrado en dispositivos Android.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Booleano|Exigir que el dispositivo supere la comprobación de integridad básica de SafetyNet.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Exigir que el dispositivo supere la comprobación de integridad básica de SafetyNet.|
 |securityRequireSafetyNetAttestationCertifiedDevice|Booleano|Exigir que el dispositivo supere la comprobación de dispositivos certificados de SafetyNet.|
-|securityRequireGooglePlayServices|Booleano|Exigir que Google Play Services esté instalado y habilitado en el dispositivo.|
+|securityRequireGooglePlayServices|Boolean|Exigir que Google Play Services esté instalado y habilitado en el dispositivo.|
 |securityRequireUpToDateSecurityProviders|Booleano|Exigir que el dispositivo tenga los proveedores de seguridad actualizados. El dispositivo requerirá que Google Play Services esté instalado y habilitado.|
-|securityRequireCompanyPortalAppIntegrity|Booleano|Requerir que el dispositivo pase la comprobación de integridad en tiempo de ejecución de la aplicación del cliente del Portal de empresa.|
+|securityRequireCompanyPortalAppIntegrity|Boolean|Requerir que el dispositivo pase la comprobación de integridad en tiempo de ejecución de la aplicación del cliente del Portal de empresa.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

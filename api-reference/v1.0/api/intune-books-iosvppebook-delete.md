@@ -1,12 +1,13 @@
 ---
 title: Eliminar iosVppEBook
 description: Elimina un iosVppEBook.
-ms.openlocfilehash: 2e9b2eeedfc8511daf958da6dce33b07b73d1239
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33fd091df734ae6c6d176a4df8413efba859e795
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028811"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311357"
 ---
 # <a name="delete-iosvppebook"></a>Eliminar iosVppEBook
 
@@ -34,7 +35,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedAppPolicy
 description: El recurso ManagedAppPolicy representa un tipo base para las directivas específicas de la plataforma.
-ms.openlocfilehash: ab87690e611effa239a8471612dbb201ea6b75b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d971f99c4f081d5b40179d406f6a50acf5812e4f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313464"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 

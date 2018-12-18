@@ -1,12 +1,13 @@
 ---
 title: Crear hilo
 description: Cree un nuevo hilo en la conversación especificada.
-ms.openlocfilehash: d545cc8fcc9ac78e9fcda1a7722bb622bf0d72ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5fafbcae4a7dcf451d8bb707dd19456cc9da3f90
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084025"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313849"
 ---
 # <a name="create-thread"></a>Crear hilo
 
@@ -33,9 +34,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /groups/{id}/conversations/{id}/threads
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [ConversationThread](../resources/conversationthread.md).

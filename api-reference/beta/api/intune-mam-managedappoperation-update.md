@@ -1,12 +1,13 @@
 ---
 title: Actualizar managedAppOperation
 description: Actualice las propiedades de un objeto managedAppOperation.
-ms.openlocfilehash: 793b4eb48a0f70c0b1877aebd40969fba334e65e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ec9e327f1eae83eca31661742c241cec58740bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087528"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312946"
 ---
 # <a name="update-managedappoperation"></a>Actualizar managedAppOperation
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |displayName|String|El nombre de la operación.|
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
-|estado|String|El estado actual de la operación|
+|state|String|El estado actual de la operación|
 |id|String|Clave de la entidad.|
 |version|String|Versión de la entidad.|
 

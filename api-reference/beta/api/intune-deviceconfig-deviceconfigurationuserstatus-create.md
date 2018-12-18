@@ -1,12 +1,13 @@
 ---
 title: Crear deviceConfigurationUserStatus
 description: Cree un objeto deviceConfigurationUserStatus.
-ms.openlocfilehash: 26cd6242558a8af1da665a2668e4cd07ddcd68b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d12b141fd45b89e7330595594f1110c65f8b4d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089945"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311651"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>Crear deviceConfigurationUserStatus
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

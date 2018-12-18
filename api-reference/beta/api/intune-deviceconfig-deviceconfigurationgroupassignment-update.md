@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceConfigurationGroupAssignment
 description: Actualizar las propiedades de un objeto deviceConfigurationGroupAssignment.
-ms.openlocfilehash: 303ecefdccafc133c4680bc0fd7eb866b682fded
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088241"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313884"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Actualizar deviceConfigurationGroupAssignment
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -56,7 +57,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |:---|:---|:---|
 |id|String|Clave de la entidad.|
 |targetGroupId|String|El identificador del grupo AAD, nuestro destino son para la configuración del dispositivo.|
-|excludeGroup|Booleano|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
+|excludeGroup|Boolean|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
 
 
 

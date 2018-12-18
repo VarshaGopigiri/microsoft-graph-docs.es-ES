@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración managedAppDataStorageLocation
 description: Ubicaciones de almacenamiento donde aplicaciones administradas potencialmente pueden almacenar sus datos
-ms.openlocfilehash: d6307dd24e33bc6fbc6eaf582bec7dfd457b9038
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4521a209e499185d07dec5edef9e89ff7c6e5f5d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312540"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>tipo de enumeración managedAppDataStorageLocation
 

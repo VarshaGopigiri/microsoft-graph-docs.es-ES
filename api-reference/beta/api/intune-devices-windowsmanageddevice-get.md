@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsManagedDevice
 description: Leer las propiedades y las relaciones del objeto windowsManagedDevice.
-ms.openlocfilehash: 9e15fe9357a8ebc14868ef24043e5131acfc84c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51d5adb884779a850c9689ec8b25704cde916a13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086288"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314059"
 ---
 # <a name="get-windowsmanageddevice"></a>Obtener windowsManagedDevice
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

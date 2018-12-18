@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso mediaContentRatingFrance
 description: Todavía no documentado
-ms.openlocfilehash: dabadb4d03181d3cd66db582005c4ec58f28aa9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef16120633618dfef86906554eaabd9eb41a95e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085067"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312708"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>Tipo de recurso mediaContentRatingFrance
 

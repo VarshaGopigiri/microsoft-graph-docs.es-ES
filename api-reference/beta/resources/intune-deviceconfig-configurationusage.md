@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración configurationUsage
 description: Posibles valores de la lista de ConfigurationUsage.
-ms.openlocfilehash: 3849aa339a0f9ae3585d8c574a14a02136d5fc3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ecfbb77404e3f50c484680c7e3868ae3da3c228
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088745"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311644"
 ---
 # <a name="configurationusage-enum-type"></a>tipo de enumeración configurationUsage
 

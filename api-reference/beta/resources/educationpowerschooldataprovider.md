@@ -1,12 +1,13 @@
 ---
 title: recursos de educationPowerSchoolDataProvider
 description: Se usa para configurar el perfil de sincronización de datos de school cuando PowerSchool se utiliza como el origen de entrada.
-ms.openlocfilehash: 4c58d3b8baf1569aaeff68375b2dd3643db8b063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 714866d03c70aae8ea03a27b63fb3efbb4fa5ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088538"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312806"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>recursos de educationPowerSchoolDataProvider
 
@@ -25,7 +26,7 @@ Deriva de [educationSynchronizationDataProvider](educationsynchronizationdatapro
 | **clientSecret** | String |  El secreto de cliente para autenticar la conexión a la instancia de PowerSchool. |
 | **schoolsIds** | Colección String |  La lista de escuelas para sincronizar. |
 | **schoolYear** | String |  El año escolar para sincronizar. |
-| **allowTeachersInMultipleSchools** | Booleano |  Indica si el origen tiene varios identificadores para un solo alumno o profesor. |
+| **allowTeachersInMultipleSchools** | Boolean |  Indica si el origen tiene varios identificadores para un solo alumno o profesor. |
 | **personalizaciones** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Personalización opcional que se aplicará a los perfiles de sincronización.|
 
 ## <a name="json-representation"></a>Representación JSON

@@ -1,12 +1,13 @@
 ---
 title: Actualizar telecomExpenseManagementPartner
 description: Actualice las propiedades de un objeto telecomExpenseManagementPartner.
-ms.openlocfilehash: 600ceb9fc5f7ec00659438516772d37867a8a207
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1560a744d88da79a8b7878e03807d43e5659dd98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313919"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Actualizar telecomExpenseManagementPartner
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |displayName|String|Nombre para mostrar del partner de TEM.|
 |url|String|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
 |appAuthorized|Booleano|Si se ha autorizado a la aplicación de AAD del partner para que obtenga acceso a Intune.|
-|enabled|Booleano|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
+|enabled|Boolean|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|
 
 

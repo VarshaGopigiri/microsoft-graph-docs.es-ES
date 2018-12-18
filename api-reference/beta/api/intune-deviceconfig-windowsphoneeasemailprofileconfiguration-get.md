@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsPhoneEASEmailProfileConfiguration
 description: Leer las propiedades y las relaciones del objeto windowsPhoneEASEmailProfileConfiguration.
-ms.openlocfilehash: 1b80bce173223e7ba48e13f3e5eae998e7ba4856
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a25e9c7ed4855ac6b2f3ee528bcc5e6ca355f52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313016"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>Obtener windowsPhoneEASEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

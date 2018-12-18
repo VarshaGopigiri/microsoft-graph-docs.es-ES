@@ -1,12 +1,13 @@
 ---
 title: Delete directoryObject
 description: Elimina un directoryObject.
-ms.openlocfilehash: 2ecd16163a7241b34adc74ebc1aa8c11406cb800
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: dec525e72b523e7bbe95996d4c863c68e01baa15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031975"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313205"
 ---
 # <a name="delete-directoryobject"></a>Delete directoryObject
 
@@ -29,9 +30,9 @@ DELETE /directoryObjects/{id}
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

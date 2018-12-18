@@ -1,12 +1,13 @@
 ---
 title: Obtener iosVppEBook
 description: Lea las propiedades y las relaciones del objeto iosVppEBook.
-ms.openlocfilehash: 60b3e33037626673c3c6a12143f04e6059060e63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b0b8acd2cbb50bfe2e9674532dc974d24528388
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313541"
 ---
 # <a name="get-iosvppebook"></a>Obtener iosVppEBook
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

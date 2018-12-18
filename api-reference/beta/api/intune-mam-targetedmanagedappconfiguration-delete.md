@@ -1,12 +1,13 @@
 ---
 title: Eliminar targetedManagedAppConfiguration
 description: Elimina un targetedManagedAppConfiguration.
-ms.openlocfilehash: e0a4d01e68eb5bff9a5663a36dbefdb2cb972024
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca0119194daf1215871f4dc3c0db917c46663784
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087799"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312120"
 ---
 # <a name="delete-targetedmanagedappconfiguration"></a>Eliminar targetedManagedAppConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Enumerar miembros
 description: Utilice esta API para obtener los miembros de lista (de usuario y de grupo) en una unidad administrativa.
-ms.openlocfilehash: c2d86992ccffd9d0ec4df90f5209ed5d6881ed16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: d373c8353928d8e8d5d8b398aa09e62d457ba665
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085964"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311665"
 ---
 # <a name="list-members"></a>Enumerar miembros
 

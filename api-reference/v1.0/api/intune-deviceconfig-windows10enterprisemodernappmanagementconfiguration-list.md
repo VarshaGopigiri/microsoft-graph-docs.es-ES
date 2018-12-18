@@ -1,12 +1,13 @@
 ---
 title: Enumerar windows10EnterpriseModernAppManagementConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: 0b6e2e155d9d5dbc0c1bfa3cfc95153580873f40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c5a5155f45888bb06fef1a2e1513dfbc12395d71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311329"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Enumerar windows10EnterpriseModernAppManagementConfigurations
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

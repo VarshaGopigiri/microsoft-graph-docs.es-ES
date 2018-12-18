@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceManagementExchangeConnector
 description: Entidad que representa una conexión a un entorno de Exchange.
-ms.openlocfilehash: 272c467171063abd784b7c8de5804045ad8d2f95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 726afd7957f8e95d38b68065b1bc99f884a9208d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312029"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Tipo de recurso deviceManagementExchangeConnector
 

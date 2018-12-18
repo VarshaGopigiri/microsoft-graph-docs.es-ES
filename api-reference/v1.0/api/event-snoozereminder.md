@@ -1,12 +1,13 @@
 ---
 title: 'event: snoozeReminder'
 description: Posponer un aviso para un evento en un calendario de usuario hasta una nueva hora.
-ms.openlocfilehash: 9e47a128afd8caa9c771011c98e3c6c98c4ee612
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9e78e917190847fe1121c71a0ba185d11b697676
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028857"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313072"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -40,15 +41,15 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |newReminderTime|DateTimeTimeZone|Nueva fecha y hora para desencadenar el aviso.|
 

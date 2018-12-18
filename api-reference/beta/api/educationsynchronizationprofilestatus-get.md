@@ -1,12 +1,13 @@
 ---
 title: Obtener el estado de un educationSynchronizationProfile
 description: Obtener el estado de un perfil de sincronización de datos de school específicos en el inquilino. La respuesta indicará el estado de la sincronización.
-ms.openlocfilehash: 87ced84dc0960eb6d5808fb8d21bc40d9d9e64e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084006"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313576"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Obtener el estado de un educationSynchronizationProfile
 
@@ -30,9 +31,9 @@ GET /synchronizationProfiles/{id}/profileStatus
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

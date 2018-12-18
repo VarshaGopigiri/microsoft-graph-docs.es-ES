@@ -1,12 +1,13 @@
 ---
 title: 'TableColumnCollection: ItemAt'
 description: Obtiene una columna en función de su posición en la colección.
-ms.openlocfilehash: 2fc8950b08c378a8f1610699b1819fb4bc1bc7fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: bcb72a511bfed9adcc0219a5b85402b1931a795d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314066"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |index|number|Valor de índice del objeto que se va a recuperar. Indizado con cero.|
 

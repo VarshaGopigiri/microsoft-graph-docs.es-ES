@@ -1,12 +1,13 @@
 ---
 title: checkMemberGroups
 description: Comprueba la pertenencia a en la lista especificada de grupos. Devuelve desde la lista de los grupos de los cuales
-ms.openlocfilehash: c6e232a6c34c0bbffdb41695a51694a688fecc7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 613faacdbd2651700f264cdf89ec396b54752b76
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083537"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310601"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -47,7 +48,7 @@ POST /users/{id | userPrincipalName}/checkMemberGroups
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro | Tipo   | Descripción           |
+| Parámetro | Type   | Descripción           |
 | :-------- | :----- | :-------------------- |
 | groupIds  | String | Matriz de identificadores de grupo |
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso del usuario
 description: Representa una cuenta de usuario de Azure AD. Se hereda de directoryObject.
-ms.openlocfilehash: 893a5bef5fd3a2fce730c5f971ceca523e260be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 65d113ef86159ebc45160f2caa31fa51c9aa7571
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032131"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312484"
 ---
 # <a name="user-resource-type"></a>tipo de recurso del usuario
 

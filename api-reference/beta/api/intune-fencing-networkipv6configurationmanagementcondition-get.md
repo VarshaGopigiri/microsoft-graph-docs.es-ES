@@ -1,12 +1,13 @@
 ---
 title: Obtener networkIPv6ConfigurationManagementCondition
 description: Leer las propiedades y las relaciones del objeto networkIPv6ConfigurationManagementCondition.
-ms.openlocfilehash: acd7c5d08f0b926f411a468c8c0d03814d23a114
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ca4417a66c869a65cc7ff3a6ed9700801452140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086714"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312785"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>Obtener networkIPv6ConfigurationManagementCondition
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

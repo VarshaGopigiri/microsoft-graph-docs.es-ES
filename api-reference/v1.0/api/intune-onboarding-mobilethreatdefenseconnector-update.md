@@ -1,12 +1,13 @@
 ---
 title: Actualizar mobileThreatDefenseConnector
 description: Actualice las propiedades de un objeto mobileThreatDefenseConnector.
-ms.openlocfilehash: f493a7c79c887d094a7cd5b4d913a78c880b6df0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd53fb377adb160db1700b088e293217bdee5292
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029214"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313947"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>Actualizar mobileThreatDefenseConnector
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedAppProtection
 description: Directiva que se usa para configurar las opciones de administración detallada de un conjunto de aplicaciones específico
-ms.openlocfilehash: 565ec8b2658ba93f6163845f5bb79255bf3d45f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd67c482ab3f255361f23b290b48a44fdd11dec5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084242"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311266"
 ---
 # <a name="managedappprotection-resource-type"></a>Tipo de recurso managedAppProtection
 
@@ -38,24 +39,24 @@ Hereda de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |periodOnlineBeforeAccessCheck|Duración|El período tras el cual se comprueba el acceso cuando el dispositivo está conectado a Internet.|
 |allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Orígenes desde los que permite la transferencia de datos. Los valores posibles son: `allApps`, `managedApps` y `none`.|
 |allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Destinos a los que permite la transferencia de datos. Los valores posibles son: `allApps`, `managedApps` y `none`.|
-|organizationalCredentialsRequired|Booleano|Indica si son necesarias las credenciales de la organización para usar la aplicación.|
+|organizationalCredentialsRequired|Boolean|Indica si son necesarias las credenciales de la organización para usar la aplicación.|
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|El nivel al que puede compartirse el Portapapeles entre aplicaciones en el dispositivo administrado. Los valores posibles son: `allApps`, `managedAppsWithPasteIn`, `managedApps` y `blocked`.|
-|dataBackupBlocked|Booleano|Indica si se bloquea la copia de seguridad de los datos de la aplicación administrada.|
-|deviceComplianceRequired|Booleano|Indica si se requiere el cumplimiento del dispositivo.|
-|managedBrowserToOpenLinksRequired|Booleano|Indica si se deberían abrir los vínculos de Internet en la aplicación del explorador administrado.|
-|saveAsBlocked|Booleano|Indica si los usuarios pueden usar el elemento de menú "Guardar como" para guardar una copia de los archivos protegidos.|
+|dataBackupBlocked|Boolean|Indica si se bloquea la copia de seguridad de los datos de la aplicación administrada.|
+|deviceComplianceRequired|Boolean|Indica si se requiere el cumplimiento del dispositivo.|
+|managedBrowserToOpenLinksRequired|Boolean|Indica si se deberían abrir los vínculos de Internet en la aplicación del explorador administrado.|
+|saveAsBlocked|Boolean|Indica si los usuarios pueden usar el elemento de menú "Guardar como" para guardar una copia de los archivos protegidos.|
 |periodOfflineBeforeWipeIsEnforced|Duración|La cantidad de tiempo que una aplicación puede estar desconectada de Internet antes de que se borren los datos administrados.|
-|pinRequired|Booleano|Indica si se requiere un PIN de nivel de aplicación.|
+|pinRequired|Boolean|Indica si se requiere un PIN de nivel de aplicación.|
 |maximumPinRetries|Int32|Número máximo de reintentos de pin incorrecto intentos antes de la aplicación administrada se bloquea o se borre.|
-|simplePinBlocked|Booleano|Indica si simplePin está bloqueado.|
+|simplePinBlocked|Boolean|Indica si simplePin está bloqueado.|
 |minimumPinLength|Int32|Longitud mínima de PIN necesaria para un PIN de nivel de aplicación si PinRequired se establece en True|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|Conjunto de caracteres que se puede usar para un PIN de nivel de aplicación si PinRequired se establece en True. Los valores posibles son: `numeric` y `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duración|TimePeriod antes de que se deba restablecer el PIN de todos los niveles si PinRequired se establece en True.|
 |allowedDataStorageLocations|colección de [managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md)|Ubicaciones de almacenamiento de datos en las que un usuario puede almacenar datos administrados.|
-|contactSyncBlocked|Booleano|Indica si se pueden sincronizar los contactos en el dispositivo del usuario.|
-|printBlocked|Booleano|Indica si se puede imprimir desde las aplicaciones administradas.|
-|fingerprintBlocked|Booleano|Indica si se permite el uso del lector de huella digital en lugar de un PIN si PinRequired se establece en True.|
-|disableAppPinIfDevicePinIsSet|Booleano|Indica si es necesario el uso del PIN de la aplicación si se establece el PIN del dispositivo.|
+|contactSyncBlocked|Boolean|Indica si se pueden sincronizar los contactos en el dispositivo del usuario.|
+|printBlocked|Boolean|Indica si se puede imprimir desde las aplicaciones administradas.|
+|fingerprintBlocked|Boolean|Indica si se permite el uso del lector de huella digital en lugar de un PIN si PinRequired se establece en True.|
+|disableAppPinIfDevicePinIsSet|Boolean|Indica si es necesario el uso del PIN de la aplicación si se establece el PIN del dispositivo.|
 |minimumRequiredOsVersion|String|Las versiones anteriores a la versión especificada impedirán que la aplicación administrada obtenga acceso a los datos de la compañía.|
 |minimumWarningOsVersion|String|Las versiones anteriores a la versión especificada provocarán un mensaje de advertencia en la aplicación administrada que intenta obtener acceso a los datos de la compañía.|
 |minimumRequiredAppVersion|String|Las versiones anteriores a la versión especificada impedirán que la aplicación administrada obtenga acceso a los datos de la compañía.|

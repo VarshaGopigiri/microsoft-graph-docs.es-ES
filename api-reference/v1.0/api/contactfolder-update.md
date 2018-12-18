@@ -1,12 +1,13 @@
 ---
 title: Actualizar contactfolder
 description: Actualiza las propiedades del objeto contactfolder.
-ms.openlocfilehash: 410dc0962278b63650637efb2ed67f7cf038b677
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 1bed74aa9efd6f8d82677d3c50feedc03fa34fe3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310720"
 ---
 # <a name="update-contactfolder"></a>Actualizar contactfolder
 

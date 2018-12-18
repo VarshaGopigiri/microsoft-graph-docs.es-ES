@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso directoryAudit
 description: Este recurso representa los elementos de auditoría de Active directory y su colección
-ms.openlocfilehash: 8656bd910cd5b84d7760f973b160d91efe08abe1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082932"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312792"
 ---
 # <a name="directoryaudit-resource-type"></a>tipo de recurso directoryAudit
 Este recurso representa los elementos de auditoría de Active directory y su colección
@@ -31,7 +32,7 @@ Este recurso representa los elementos de auditoría de Active directory y su col
 |id|String| Indica el identificador único para la actividad. Esto es un GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Indica información sobre el usuario o aplicación iniciadas por la actividad.|
 |loggedByService|String|Indica información en el que la actividad iniciadas por el servicio (por ejemplo: administración de contraseñas sin intervención del administrador, directorios principales, B2C, los usuarios invitados, Microsoft Identity Manager, con privilegios de administración de identidades.|
-|result|string| Indica el resultado de la actividad. Los valores posibles son: `success`, `failure`, `timeout`, `unknownFutureValue`.||
+|Resultado|string| Indica el resultado de la actividad. Los valores posibles son: `success`, `failure`, `timeout`, `unknownFutureValue`.||
 |resultReason|String|Indica el motivo del error si el resultado es "Error" o "tiempo de espera".|
 |targetResources|colección de [targetResource](targetresource.md)|Indica información en la que el recurso se cambió debido a la actividad. Tipo de recurso de destino puede ser usuario, dispositivo, Active Directory, aplicación, rol, grupo, directiva u otra.
 

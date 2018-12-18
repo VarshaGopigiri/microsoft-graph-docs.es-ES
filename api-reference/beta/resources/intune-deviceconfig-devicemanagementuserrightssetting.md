@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso deviceManagementUserRightsSetting
 description: Representa una configuración de permisos de usuario.
-ms.openlocfilehash: e657c15a76700ef87283220254937ec685c57784
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c58a1d3e9a352561a1abec87fa4efa90c599fd7a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313702"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>tipo de recurso deviceManagementUserRightsSetting
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Chart
 description: Representa un objeto de gráfico de una hoja de cálculo.
-ms.openlocfilehash: bada94032dcc00e3f6294b20559f44044570f2ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c8cbc297c3906a913a6b5962ea8bb0a048d70005
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030114"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311749"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
@@ -20,9 +21,9 @@ Representa un objeto de gráfico de una hoja de cálculo.
 |[Get Chart](../api/chart-get.md) | [WorkbookChart](chart.md) |Lee las propiedades y relaciones del objeto chart.|
 |[Create ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Crea un ChartSeries publicándolo en la colección series.|
 |[List series](../api/chart-list-series.md) |Colección de [WorkbookChartSeries](chartseries.md)| Obtiene una colección de objetos ChartSeries.|
-|[Update](../api/chart-update.md) | [WorkbookChart](chart.md)   |Actualiza el objeto Chart. |
+|[Actualizar](../api/chart-update.md) | [WorkbookChart](chart.md)   |Actualiza el objeto Chart. |
 |[Image](../api/chart-image.md)|Cadena codificada en base64 de imagen|Representa el gráfico como una imagen con codificación base64 al escalar el gráfico a las dimensiones especificadas.|
-|[Delete](../api/chart-delete.md)|None|Elimina el objeto chart.|
+|[Eliminar](../api/chart-delete.md)|None|Elimina el objeto chart.|
 |[Setdata](../api/chart-setdata.md)|None|Restablece los datos de origen del gráfico.|
 |[Setposition](../api/chart-setposition.md)|None|Coloca el gráfico con respecto a las celdas de la hoja de cálculo.|
 |[List](../api/chart-list.md) | Colección de [WorkbookChart](chart.md) |Obtiene la colección de objetos chart. |

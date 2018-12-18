@@ -1,12 +1,13 @@
 ---
 title: acción wipeManagedAppRegistrationByDeviceTag
 description: Emite una operación de borrado en un registro de la aplicación con la etiqueta del dispositivo especificado.
-ms.openlocfilehash: 7ea037eecb0a581dd55d212fe541391f24d0819f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54b5e969d66bff44d0ed19561546ebdc1bdb2c4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090891"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312162"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>acción wipeManagedAppRegistrationByDeviceTag
 
@@ -40,7 +41,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
