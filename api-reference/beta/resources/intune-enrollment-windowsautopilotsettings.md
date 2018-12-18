@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsAutopilotSettings
 description: El recurso windowsAutopilotSettings representa una cuenta de piloto automático de Windows a los datos de sincronización con el servicio de sincronización de datos de dispositivos de Windows.
-ms.openlocfilehash: 41caab7578be08a56ecad94bbae11c43945037c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d502af67cc1a68c56e1bdd74965e77224947b5d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087185"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344635"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>tipo de recurso windowsAutopilotSettings
 

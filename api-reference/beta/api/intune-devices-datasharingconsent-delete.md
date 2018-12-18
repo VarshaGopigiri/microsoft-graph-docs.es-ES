@@ -1,12 +1,13 @@
 ---
 title: Eliminar dataSharingConsent
 description: Elimina un dataSharingConsent.
-ms.openlocfilehash: 6c7bc3528a9d6c8ff4e9df07aa2c360572050091
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aef28ba2eaeccfe31404ee7bda166a2aa299abfd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088965"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355100"
 ---
 # <a name="delete-datasharingconsent"></a>Eliminar dataSharingConsent
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

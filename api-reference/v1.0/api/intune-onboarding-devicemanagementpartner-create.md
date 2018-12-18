@@ -1,12 +1,13 @@
 ---
 title: Crear deviceManagementPartner
 description: Cree un objeto deviceManagementPartner.
-ms.openlocfilehash: 038bfecf443972921c7aeacc508e9b1b81331cf4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11c8da3a5073f17e6bf104de4fc4fb081c36811b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031751"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337075"
 ---
 # <a name="create-devicemanagementpartner"></a>Crear deviceManagementPartner
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceManagementPartners
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

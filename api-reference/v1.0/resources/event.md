@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de evento
 description: Un evento de un calendario.
-ms.openlocfilehash: 33226ac04bcf0dc8365ee56bf70bfa1a381b5ebc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2caa1cb51da5f9d9ae8808b574e2787fbb63da46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028859"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356598"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 

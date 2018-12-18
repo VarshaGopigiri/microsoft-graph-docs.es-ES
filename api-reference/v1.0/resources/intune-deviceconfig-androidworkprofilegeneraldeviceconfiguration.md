@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso androidWorkProfileGeneralDeviceConfiguration
 description: Configuración de dispositivo general de perfil de trabajo Android.
-ms.openlocfilehash: 89329bbe4bce88153b56df3e2567688d910e9543
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fbcbb87e8ae9c9d4a36f196b18b6577f423c90a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029185"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337698"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>tipo de recurso androidWorkProfileGeneralDeviceConfiguration
 
@@ -35,7 +36,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |passwordBlockFingerprintUnlock|Booleano|Indica si se va a impedir el desbloqueo por huella dactilar.|
-|passwordBlockTrustAgents|Booleano|Indica si se van a bloquear Smart Lock y otros agentes de confianza.|
+|passwordBlockTrustAgents|Boolean|Indica si se van a bloquear Smart Lock y otros agentes de confianza.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 365|
 |passwordMinimumLength|Int32|Longitud mínima de las contraseñas. Valores válidos de 4 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
@@ -43,17 +44,17 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica. Valores válidos de 4 a 11|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric` y `alphanumericWithSymbols`.|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Tipo de datos de uso compartido está permitido. Los valores posibles son: `deviceDefault`, `preventAny`, `allowPersonalToWork` y `noRestrictions`.|
-|workProfileBlockNotificationsWhileDeviceLocked|Booleano|Indica si se deben bloquear las notificaciones al dispositivo bloqueado.|
-|workProfileBlockAddingAccounts|Booleano|Impedir que los usuarios agregar o quitar cuentas en el perfil de trabajo.|
-|workProfileBluetoothEnableContactSharing|Booleano|Permitir que los dispositivos bluetooth tener acceso a los contactos de la empresa.|
-|workProfileBlockScreenCapture|Booleano|Captura de pantalla de bloque en el perfil de trabajo.|
-|workProfileBlockCrossProfileCallerId|Booleano|Identificador de autor de la llamada de perfil bloque para mostrar trabajo en perfil personal.|
-|workProfileBlockCamera|Booleano|Cámara de perfil de trabajo de bloque.|
-|workProfileBlockCrossProfileContactsSearch|Booleano|Disponibilidad de los contactos del perfil de trabajo bloque en perfil personal.|
-|workProfileBlockCrossProfileCopyPaste|Booleano|Valor booleano que indica si la opción no permitir la entre perfil copiado y pegado está habilitado.|
+|workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indica si se deben bloquear las notificaciones al dispositivo bloqueado.|
+|workProfileBlockAddingAccounts|Boolean|Impedir que los usuarios agregar o quitar cuentas en el perfil de trabajo.|
+|workProfileBluetoothEnableContactSharing|Boolean|Permitir que los dispositivos bluetooth tener acceso a los contactos de la empresa.|
+|workProfileBlockScreenCapture|Boolean|Captura de pantalla de bloque en el perfil de trabajo.|
+|workProfileBlockCrossProfileCallerId|Boolean|Identificador de autor de la llamada de perfil bloque para mostrar trabajo en perfil personal.|
+|workProfileBlockCamera|Boolean|Cámara de perfil de trabajo de bloque.|
+|workProfileBlockCrossProfileContactsSearch|Boolean|Disponibilidad de los contactos del perfil de trabajo bloque en perfil personal.|
+|workProfileBlockCrossProfileCopyPaste|Boolean|Valor booleano que indica si la opción no permitir la entre perfil copiado y pegado está habilitado.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `prompt`, `autoGrant` y `autoDeny`.|
-|workProfilePasswordBlockFingerprintUnlock|Booleano|Indica si se deben bloquear la huella digital de desbloqueo para el perfil de trabajo.|
-|workProfilePasswordBlockTrustAgents|Booleano|Indica si se deben bloquear bloqueo inteligentes y otros agentes de confianza para el perfil de trabajo.|
+|workProfilePasswordBlockFingerprintUnlock|Boolean|Indica si se deben bloquear la huella digital de desbloqueo para el perfil de trabajo.|
+|workProfilePasswordBlockTrustAgents|Boolean|Indica si se deben bloquear bloqueo inteligentes y otros agentes de confianza para el perfil de trabajo.|
 |workProfilePasswordExpirationDays|Int32|Expira el número de días antes de la contraseña de perfil de trabajo. Valores válidos de 1 a 365|
 |workProfilePasswordMinimumLength|Int32|Longitud mínima de contraseña de perfil de trabajo. Valores válidos de 4 a 16|
 |workProfilePasswordMinNumericCharacters|Int32|Nº mínimo de caracteres numéricos que requiere en contraseña de perfil de trabajo. Valores válidos de 1 a 10|
@@ -66,8 +67,8 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Número de contraseñas de perfil de trabajo anterior a bloquear. Valores válidos de 0 a 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Número de errores permitidos antes de que se ha quitado el perfil de trabajo y todos los datos corporativos eliminados de inicio de sesión. Valores válidos de 4 a 11|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Tipo de contraseña de perfil de trabajo que se requiere. Los valores posibles son: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric` y `alphanumericWithSymbols`.|
-|workProfileRequirePassword|Booleano|Se requiere contraseña o no para el perfil de trabajo|
-|securityRequireVerifyApps|Booleano|Requiere que la característica Verificar aplicaciones de Android esté activada.|
+|workProfileRequirePassword|Boolean|Se requiere contraseña o no para el perfil de trabajo|
+|securityRequireVerifyApps|Boolean|Requiere que la característica Verificar aplicaciones de Android esté activada.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

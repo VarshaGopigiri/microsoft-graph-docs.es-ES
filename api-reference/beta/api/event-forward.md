@@ -1,12 +1,13 @@
 ---
 title: 'evento: hacia delante'
 description: 'Esta acción permite que el organizador o el Asistente de un evento de reunión para desviar la '
-ms.openlocfilehash: 09a98f82e72eef7b223dfccb1f4433c3206f0f7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 77f2c99b1adc7fcece353120e4692b37fd65a78f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083021"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355996"
 ---
 # <a name="event-forward"></a>evento: hacia delante
 
@@ -47,15 +48,15 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |Comment|String|Comentario que se va a incluir. Puede ser una cadena vacía.|
 |ToRecipients|Colección [recipient](../resources/recipient.md)|La lista de destinatarios a la que se reenviará el evento.|

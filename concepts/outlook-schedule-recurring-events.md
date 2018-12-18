@@ -1,12 +1,13 @@
 ---
 title: Programar citas repetidas como eventos periódicos en Outlook
 description: Los eventos periódicos son una parte importante del Calendario de Outlook. Ya sea una reunión semanal personal con su jefe o una reunión de revisión de todo un departamento que tiene lugar el segundo martes de cada mes, los eventos periódicos facilitan la tarea al crear el evento una sola vez y que el servidor complete el resto de la serie.
-ms.openlocfilehash: 1af082a32d79f6011e93a7fc0c5fc9d553d16712
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 85d856cd9f59ee7df643ff74ed4b3dd9f48ba3a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340078"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Programar citas repetidas como eventos periódicos en Outlook
 

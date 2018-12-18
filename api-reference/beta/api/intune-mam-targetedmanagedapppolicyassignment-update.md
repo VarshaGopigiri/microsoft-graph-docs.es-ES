@@ -1,12 +1,13 @@
 ---
 title: Actualizar targetedManagedAppPolicyAssignment
 description: Actualice las propiedades de un objeto targetedManagedAppPolicyAssignment.
-ms.openlocfilehash: f165b66b016080d3461d8a512812373615e16a27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c0343d1790cf457dba5a28a999af5cc91eca66c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084332"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358929"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Actualizar targetedManagedAppPolicyAssignment
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

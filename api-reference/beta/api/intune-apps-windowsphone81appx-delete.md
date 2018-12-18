@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsPhone81AppX
 description: Elimina un windowsPhone81AppX.
-ms.openlocfilehash: 72d0f0eae4c5cbb1d30c0fdf93b2c2a8d633083e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff815a74d09b739146f36f248a601a75fe06bccf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356332"
 ---
 # <a name="delete-windowsphone81appx"></a>Eliminar windowsPhone81AppX
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

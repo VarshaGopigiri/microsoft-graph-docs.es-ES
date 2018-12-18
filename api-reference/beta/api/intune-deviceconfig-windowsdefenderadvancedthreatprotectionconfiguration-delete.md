@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsDefenderAdvancedThreatProtectionConfiguration
 description: Elimina un windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: 669442c7d86033b47179b43e0d85bf536a73cff3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c70d9995328c7ab70136f8a536765a0635ad5e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090874"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355142"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>Eliminar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

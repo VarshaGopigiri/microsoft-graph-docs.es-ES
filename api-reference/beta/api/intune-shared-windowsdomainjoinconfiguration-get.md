@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsDomainJoinConfiguration
 description: Leer las propiedades y las relaciones del objeto windowsDomainJoinConfiguration.
-ms.openlocfilehash: b3b76a902b4a740d142e1027f04d1f98f5fb32aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94c3b69d13b3b4d4d14a1af9c78f858e1eb50879
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085697"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342241"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Obtener windowsDomainJoinConfiguration
 
@@ -58,7 +59,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

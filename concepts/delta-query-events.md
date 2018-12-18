@@ -1,12 +1,13 @@
 ---
 title: 'Obtener los cambios incrementales en los eventos en una vista de calendario '
 description: 'Una vista de calendario es una colección de eventos en un intervalo de fecha y hora del calendario predeterminado (../me/calendarview). '
-ms.openlocfilehash: 68e4053c29fd95f04ff0b031bf519301e63dc08a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: adfc8e8fb595e721781901f80c7d730b06112b72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092857"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334842"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obtener los cambios incrementales en los eventos en una vista de calendario 
 

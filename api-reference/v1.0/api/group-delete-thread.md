@@ -1,12 +1,13 @@
 ---
 title: Eliminar hilo de conversación
 description: Elimina un objeto de conversación.
-ms.openlocfilehash: e6b7d697078df2e11d78031158790f9835a78850
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b8dc8d2675804fabbd6c6b5dcbb7d30ad34a211c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029973"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339448"
 ---
 # <a name="delete-conversation-thread"></a>Eliminar hilo de conversación
 Elimina un objeto de [conversación](../resources/conversationthread.md).
@@ -27,9 +28,9 @@ DELETE /groups/{id}/threads/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

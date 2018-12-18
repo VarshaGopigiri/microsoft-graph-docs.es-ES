@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso intuneBrandingProfile
 description: Esta entidad contiene datos que se usan para personalizar la apariencia de nivel de inquilino de las aplicaciones de Portal de empresa, así como el portal web del usuario final.
-ms.openlocfilehash: b85f33731f91a5b239a00a2a537f5e0fdbef56a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e37105653f441da6aeb8d549b7690b8044de3186
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083494"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357158"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
@@ -30,7 +31,7 @@ Esta entidad contiene datos que se usan para personalizar la apariencia de nivel
 |id|String|Clave de perfil|
 |nombre del perfil|String|Nombre del perfil|
 |profileDescription|String|Descripción del perfil|
-|isDefaultProfile|Booleano|Presenta si se utiliza el perfil de forma predeterminada.|
+|isDefaultProfile|Boolean|Presenta si se utiliza el perfil de forma predeterminada.|
 |createdDateTime|DateTimeOffset|Cuando se creó el BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Cuando el BrandingProfile se modificó por última vez.|
 |displayName|Cadena|Nombre de la compañía u organización que se muestra a los usuarios finales.|

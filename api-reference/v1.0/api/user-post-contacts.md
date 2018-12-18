@@ -1,12 +1,13 @@
 ---
 title: Create Contact
 description: Agrega un contacto a la carpeta de contactos raíz o al extremo de contactos de otra carpeta de contactos.
-ms.openlocfilehash: dea355a848b2df1715f02c5042d31221ae3e49b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: bb6e9cc223ef547bfafb190be4381f828a0c230f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029448"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337901"
 ---
 # <a name="create-contact"></a>Create Contact
 

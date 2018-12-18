@@ -1,12 +1,13 @@
 ---
 title: 'user: reminderView'
 description: 'Devuelve una lista de los avisos de calendario entre las horas de inicio y finalización especificadas. '
-ms.openlocfilehash: d1e84620102400bebb9da7b7d14f77ae9e560dc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2e0b0e8bb76ee50a9af7246739e4ab8da973d3a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029511"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356794"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 Devuelve una lista de los avisos de calendario entre las horas de inicio y finalización especificadas. 
@@ -29,7 +30,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>Parámetros de función
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de función con valores.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |startDateTime|String|Fecha y hora de inicio del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|Fecha y hora de finalización del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T20:00:00.0000000".|

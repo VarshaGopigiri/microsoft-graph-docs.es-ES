@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsUniversalAppXContainedApp
 description: Una clase que representa una aplicación de contenido de una aplicación de WindowsUniversalAppX.
-ms.openlocfilehash: a2025174135fd19b0b8925f9deccad1f2217d018
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19afa6a677d51613b6a4a18368c53cc5a12a4df7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087771"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360147"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>tipo de recurso windowsUniversalAppXContainedApp
 

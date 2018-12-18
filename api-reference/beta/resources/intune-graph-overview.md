@@ -1,12 +1,13 @@
 ---
 title: Usar la API de Graph de Intune
 description: " No se admiten las implementaciones híbridas de Intune. "
-ms.openlocfilehash: 2502b5209e9935fc923570947c38c0467534f4ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cecce61dba0ddfc044c2e06e0e16d68401fcafb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087987"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357249"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabajar con Intune en Microsoft Graph  
 
@@ -16,13 +17,13 @@ ms.locfileid: "27087987"
 
 La API de Microsoft Graph para Intune permite el acceso mediante programación a la información de Intune para su espacio empresarial; la API realiza las mismas operaciones de Intune que las que están disponibles a través de **Azure Portal**.  
 
-En los escenarios de administración de dispositivos móviles (MDM), la API de Graph para Intune admite implementaciones independientes; no se admiten las [implementaciones híbridas](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) de Intune. 
+Para escenarios de administración (MDM) del dispositivo móvil, la API de Microsoft Graph para Intune admite implementaciones independientes; No se admiten Intune [implementaciones híbridas](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) . 
 
-## <a name="using-the-intune-graph-api"></a>Usar la API de Graph de Intune
+## <a name="using-the-microsoft-graph-api-for-intune"></a>Uso de la API de Microsoft Graph para Intune
 
-En el Microsoft Graph, Intune proporciona datos de la misma manera igual que otros servicios de nube, con la navegación de información y la relación de entidad enriquecido.Utilizar Microsoft Graph para combinar la información de otros servicios y Intune para crear aplicaciones de servicio de entre completas para profesionales de TI o los usuarios finales.     
+En Microsoft Graph, Intune proporciona datos de la misma manera igual que otros servicios de nube, con la navegación de información y la relación de entidad enriquecido.Utilizar Microsoft Graph para combinar la información de otros servicios y Intune para crear aplicaciones de servicio de entre completas para profesionales de TI o los usuarios finales.     
 
-Este es un ejemplo de cómo puede determinar si una aplicación está instalada en el dispositivo de un usuario: 
+En el ejemplo siguiente se muestra cómo se puede saber si una aplicación está instalada en el dispositivo del usuario: 
 
 1. Obtenga de Azure Active Directory una lista de dispositivos registrados para un usuario: 
 
@@ -37,14 +38,12 @@ Este es un ejemplo de cómo puede determinar si una aplicación está instalada 
     https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
 
-## <a name="using-graph-permission-scopes"></a>Uso de ámbitos de permiso de gráfico
+## <a name="using-microsoft-graph-permissions"></a>Uso de permisos de Microsoft Graph
 
-Gráfico de Microsof controla el acceso a los recursos mediante ámbitos de permisos. Como desarrollador, debe especificar los ámbitos de permisos que necesita para tener acceso a los recursos de Intune. Normalmente, los ámbitos de permisos se especifican en el portal de Azure Active Directory. Para obtener más información, consulte [Ámbitos de permiso de Microsoft Graph](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) y [Ámbitos de permisos de Intune](https://developer.microsoft.com/graph/docs/authorization/permission_scopes#permission-scopes-in-preview).
+Gráfico de Microsof controla el acceso a recursos a través de los permisos. Como desarrollador, debe especificar los permisos que necesita tener acceso a recursos de Intune. Normalmente, especifique los permisos en el portal de Azure Active Directory. Para obtener más información, vea [referencia de permisos de Microsoft Graph](https://docs.microsoft.com/en-us/graph/permissions-reference).
 
-## <a name="to-use-the-table-of-contents-on-the-microsoft-graph-site"></a>Para usar la tabla de contenido en el sitio de Microsoft Graph
-  
-Puede examinar la tabla de contenido (en el panel izquierdo del sitio) para buscar los elementos de la documentación de API de gráfico Intune y recursos que desea ver.
+## <a name="next-steps"></a>Pasos siguientes
 
-1. Haga clic en **Referencia de /Beta** para abrir a los documentos de la versión beta.
-2. Desplácese hacia abajo y haga clic en **Intune**.
-3. Siga haciendo clic en subsecciones debajo **Intune** para los elementos de la API 
+- Obtenga información sobre [cómo usar Azure AD](https://docs.microsoft.com/en-us/intune/intune-graph-apis) para obtener acceso a la API de Microsoft Graph para Intune.  
+- Explore los [ejemplos de PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples), que muestran cómo usar la API de Microsoft Graph para Intune en contexto de ejemplos de trabajo.
+

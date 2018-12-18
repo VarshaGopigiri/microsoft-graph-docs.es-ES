@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsManagementAppHealthState
 description: Entidad de estado de mantenimiento de aplicación de Windows management.
-ms.openlocfilehash: 8c8f35d25e42b8f833acb0cb86b313c37006b0b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ff77ce54a99ed71a8f4b3498a469342b2e46367
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359706"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>tipo de recurso windowsManagementAppHealthState
 

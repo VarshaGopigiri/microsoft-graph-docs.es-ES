@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceConfigurationDeviceStateSummary
 description: Todavía no documentado
-ms.openlocfilehash: 7e34420c8ac7c4c05d0eff38d68844b49cd2376d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97fee3d615ef710ebc07ae6d0090695b533f8752
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086600"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357039"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>Tipo de recurso deviceConfigurationDeviceStateSummary
 

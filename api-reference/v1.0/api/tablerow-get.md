@@ -1,12 +1,13 @@
 ---
 title: Get TableRow
 description: Recuperar las propiedades y relaciones del objeto tablerow.
-ms.openlocfilehash: 330f29b58b05754f9feebac80a46c1b8745c70a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 26fe5cd6292b93df956f34876120dbfe4861ca2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032360"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345111"
 ---
 # <a name="get-tablerow"></a>Get TableRow
 

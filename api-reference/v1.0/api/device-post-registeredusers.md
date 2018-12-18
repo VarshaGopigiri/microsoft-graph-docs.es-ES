@@ -1,12 +1,13 @@
 ---
 title: Create registeredUser
 description: Agrega un usuario registrado para el dispositivo.
-ms.openlocfilehash: 986c0c4e4c89d2ac724f3c19bde381d4d1624f2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 765e82106fdfd23a6805a0bbda176635b279557d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029207"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353749"
 ---
 # <a name="create-registereduser"></a>Create registeredUser
 
@@ -29,9 +30,9 @@ POST /devices/{id}/registeredUsers/$ref
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryObject](../resources/directoryobject.md).

@@ -1,12 +1,13 @@
 ---
 title: Enumerar iosUpdateDeviceStatuses
 description: Enumere las propiedades y las relaciones de los objetos iosUpdateDeviceStatus.
-ms.openlocfilehash: 4e7cbe8c1899aa4efa17da610be9f85ba6143872
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a708fe9a8e27cafd3ffe96123b0cc88ce12c0a2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032051"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357935"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Enumerar iosUpdateDeviceStatuses
 
@@ -34,7 +35,7 @@ GET /deviceManagement/iosUpdateStatuses
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

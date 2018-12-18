@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: rowsBelow'
 description: Obtiene un número determinado de filas debajo de un rango dado.
-ms.openlocfilehash: cab5fd162e8df1fda7f8376b87580e7a882f2a7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 863c6e13a89b06f2325e26f4510b0ca12eac76c6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030469"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342864"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -30,7 +31,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |count|Int32| Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.|
 

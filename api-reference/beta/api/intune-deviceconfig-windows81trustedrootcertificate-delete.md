@@ -1,12 +1,13 @@
 ---
 title: Eliminar windows81TrustedRootCertificate
 description: Elimina un windows81TrustedRootCertificate.
-ms.openlocfilehash: ee8259fa2cca7b9a058f830c7f1767cef4f94e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9aa3da629f1e74b675ce72e8820c3af1ff9bbb71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355387"
 ---
 # <a name="delete-windows81trustedrootcertificate"></a>Eliminar windows81TrustedRootCertificate
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

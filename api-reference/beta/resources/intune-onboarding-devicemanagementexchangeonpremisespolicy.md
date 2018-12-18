@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso deviceManagementExchangeOnPremisesPolicy
 description: Entidad de singleton que representa la directiva local de Exchange configurada para un inquilino.
-ms.openlocfilehash: 92b31ce52a2c7efd343a863f5994657d100af71a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84ef0e5794ed6cf7986bde7d08b876e54e7a6c8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084808"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337215"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>tipo de recurso deviceManagementExchangeOnPremisesPolicy
 

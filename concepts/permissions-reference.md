@@ -1,12 +1,13 @@
 ---
 title: 'Referencia de permisos de Microsoft Graph '
 description: 'Microsoft Graph expone permisos pormenorizados que controlan el acceso que las aplicaciones tienen a recursos como usuarios, grupos y correo. Como desarrollador, usted decide qué permisos de Microsoft Graph solicita la aplicación. Cuando un usuario inicia sesión en su aplicación, se le ofrece la opción (o, en algunos casos, a un administrador) de dar su consentimiento a estos permisos. Si el usuario consiente, la aplicación tiene acceso a los recursos y las API que ha solicitado. En el caso de las aplicaciones que no requieren que un usuario haya iniciado sesión, un administrador puede dar su consentimiento previo a los permisos al instalar la aplicación o durante el registro. '
-ms.openlocfilehash: 3d6831c3c50818904a20a7dac2d3bf33c1baf515
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: c90fd13299f92dd3bd48067528088e755fe2afe7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334793"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referencia de permisos de Microsoft Graph 
 Microsoft Graph expone permisos pormenorizados que controlan el acceso que las aplicaciones tienen a recursos como usuarios, grupos y correo. Como desarrollador, usted decide qué permisos de Microsoft Graph solicita la aplicación. Cuando un usuario inicia sesión en su aplicación, se le ofrece la opción (o, en algunos casos, a un administrador) de dar su consentimiento a estos permisos. Si el usuario consiente, la aplicación tiene acceso a los recursos y las API que ha solicitado. En el caso de las aplicaciones que no requieren que un usuario haya iniciado sesión, un administrador puede dar su consentimiento previo a los permisos al instalar la aplicación o durante el registro. 

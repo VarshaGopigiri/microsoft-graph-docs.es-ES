@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso symantecCodeSigningCertificate
 description: Todavía no documentado
-ms.openlocfilehash: f867f5bf6b0cad43f32dcc5ad9320421eee6d5c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 979502f51674b32f10627762d08d8216a466dff9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086387"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357242"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso symantecCodeSigningCertificate
 

@@ -1,12 +1,13 @@
 ---
 title: Enumerar windowsInformationProtections
 description: Enumere las propiedades y las relaciones de los objetos windowsInformationProtection.
-ms.openlocfilehash: 6f3634c858c45268ddd5451cb473e84faaa02704
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e26ab1c5d67e775ce0be04039892f153b73d42f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353805"
 ---
 # <a name="list-windowsinformationprotections"></a>Enumerar windowsInformationProtections
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

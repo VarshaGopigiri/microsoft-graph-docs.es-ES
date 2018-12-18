@@ -1,12 +1,13 @@
 ---
 title: 'usuario: translateExchangeIds'
 description: Traducir identificadores de recursos relacionados con Outlook entre formatos.
-ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: dkershaw10
+ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360581"
 ---
 # <a name="user-translateexchangeids"></a>usuario: translateExchangeIds
 
@@ -41,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-| Parámetro | Tipo | Descripción |
+| Parámetro | Type | Descripción |
 |:----------|:-----|:------------|
 | inputIds | Colección de Edm.String | Una colección de identificadores para convertir. Todos los identificadores de la colección deben tener el mismo tipo de identificador de origen y deben ser el de los elementos en el mismo buzón. Tamaño máximo de esta colección es 1000 cadenas. |
 | sourceIdType | exchangeIdFormat | El tipo de identificador de los identificadores en el `InputIds` parámetro. |

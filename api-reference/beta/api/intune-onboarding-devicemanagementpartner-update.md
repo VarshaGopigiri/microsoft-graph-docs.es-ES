@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceManagementPartner
 description: Actualice las propiedades de un objeto deviceManagementPartner.
-ms.openlocfilehash: 06dd0099657dd9b697027637c2b5388c1c8b12be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 47aba10ebe744d4f8211081e5c947df4d61599ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085983"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356325"
 ---
 # <a name="update-devicemanagementpartner"></a>Actualizar deviceManagementPartner
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

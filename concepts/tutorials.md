@@ -1,12 +1,13 @@
 ---
 title: Tutoriales de Microsoft Graph
 description: Los tutoriales de Microsoft Graph son ejercicios de aprendizaje paso a paso que le guiarán en los conceptos básicos de Microsoft Graph, incluyendo cómo crear una aplicación básica que usa la autenticación de Azure Active Directory y accede a los datos a través de Microsoft Graph.
-ms.openlocfilehash: 988e734e790533b13b670516d9304fed92b543c9
-ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
+author: jasonjoh
+ms.openlocfilehash: a040f3b805b62de9245fc53a4e6e2abb3f805877
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27247749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339672"
 ---
 # <a name="microsoft-graph-tutorials"></a>Tutoriales de Microsoft Graph
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso remoteLockActionResult
 description: Bloquear el resultado de la acción con un PIN de desbloqueo
-ms.openlocfilehash: e0fff0a9ee389a1a73db1ad19ea3eba55a04989d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 44d56b2ee20629d1cefbf965c72e5f6cc17fb0a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031208"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353693"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Tipo de recurso remoteLockActionResult
 

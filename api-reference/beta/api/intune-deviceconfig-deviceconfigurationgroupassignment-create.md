@@ -1,12 +1,13 @@
 ---
 title: Crear deviceConfigurationGroupAssignment
 description: Crear un nuevo objeto deviceConfigurationGroupAssignment.
-ms.openlocfilehash: 3e349664a1458b13be357dbabf7e9a1a8e14025e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c07356d3cf63699fda95e2be6fe361841e0b0d95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355107"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Crear deviceConfigurationGroupAssignment
 
@@ -44,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -56,7 +57,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |:---|:---|:---|
 |id|String|Clave de la entidad.|
 |targetGroupId|String|El identificador del grupo AAD, nuestro destino son para la configuración del dispositivo.|
-|excludeGroup|Booleano|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
+|excludeGroup|Boolean|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
 
 
 

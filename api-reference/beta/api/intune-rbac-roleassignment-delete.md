@@ -1,12 +1,13 @@
 ---
 title: Eliminar roleAssignment
 description: Elimina un roleAssignment.
-ms.openlocfilehash: 337be91c3d8a82501e6aeedb3aee74cd3a812aa4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 158767075a08a9ad3cb197ca70a0106d889030e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342304"
 ---
 # <a name="delete-roleassignment"></a>Eliminar roleAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso audioRoutingGroup
 description: El grupo de enrutamiento de audio almacena una ruta de audio privada entre los participantes en una conversación entre varias partes. Origen es el participante propio y los receptores son un subconjunto de los otros participantes de la conversación entre varias partes.
-ms.openlocfilehash: 98c58e39773567f13a2723e94c0413efd2841cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083500"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344474"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
 
@@ -21,8 +22,8 @@ El grupo de enrutamiento de audio almacena una ruta de audio privada entre los p
 | Método                                                  | Tipo de valor devuelto                               | Descripción                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Obtener audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Leer las propiedades y las relaciones del objeto audioRoutingGroup.|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Actualizar lista de receptores.                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | Ninguno                                      | Eliminar el grupo de enrutamiento de audio.              |
+| [Actualizar](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Actualizar lista de receptores.                       |
+| [Eliminar](../api/audioroutinggroup-delete.md)            | Ninguno                                      | Eliminar el grupo de enrutamiento de audio.              |
 
 ## <a name="properties"></a>Propiedades
 

@@ -1,12 +1,13 @@
 ---
 title: Lista submittedResources
 description: Lista de los recursos que se han enviado oficialmente para la clasificación. El estudiante que posee el envío no puede cambiar la lista enviada sin volver a enviar la asignación. Este es un contenedor para el recurso real y puede contener un puntero al recurso de asignación real si este recurso se copió desde la asignación.
-ms.openlocfilehash: dba648d8a73ad2f2f91da7d7414214a62580cc99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 9689d9687127006f38884107d0b015e571fd6ab0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088103"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356143"
 ---
 # <a name="list-submittedresources"></a>Lista submittedResources
 

@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsPhoneXAP
 description: Leer las propiedades y las relaciones del objeto windowsPhoneXAP.
-ms.openlocfilehash: 6c682accaa8739986c87ba0d5cc131a3519ec0f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 710cfa237685d9db313f4f20710d070e100f1312
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362478"
 ---
 # <a name="get-windowsphonexap"></a>Obtener windowsPhoneXAP
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

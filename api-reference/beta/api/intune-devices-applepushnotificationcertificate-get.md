@@ -1,12 +1,13 @@
 ---
 title: Obtener applePushNotificationCertificate
 description: Lea las propiedades y las relaciones del objeto applePushNotificationCertificate.
-ms.openlocfilehash: 9b9cd38019749b548c00baff0e0411b50a780df8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b7cf69922386b6b025bf23b4ddbcfeefc67bbb8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357725"
 ---
 # <a name="get-applepushnotificationcertificate"></a>Obtener applePushNotificationCertificate
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

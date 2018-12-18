@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windows10EnrollmentCompletionPageConfiguration
 description: Todavía no documentado
-ms.openlocfilehash: 630adf40f62ca7b47594439c71951e3a6a85b2d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 975fd7adeb33a0fd3f2c638087558beca76551b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086528"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356570"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>tipo de recurso windows10EnrollmentCompletionPageConfiguration
 
@@ -37,13 +38,13 @@ Hereda de [deviceEnrollmentConfiguration](../resources/intune-onboarding-devicee
 |createdDateTime|DateTimeOffset|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Booleano|Mostrar u ocultar el progreso de la instalación para el usuario|
-|blockDeviceSetupRetryByUser|Booleano|Permitir al usuario que vuelva a intentar la instalación en caso de error de instalación|
-|allowDeviceResetOnInstallFailure|Booleano|Permitir o bloquear el dispositivo restablecer en caso de error de instalación|
-|allowLogCollectionOnInstallFailure|Booleano|Permitir o bloquear registro colección en caso de error de instalación|
+|showInstallationProgress|Boolean|Mostrar u ocultar el progreso de la instalación para el usuario|
+|blockDeviceSetupRetryByUser|Boolean|Permitir al usuario que vuelva a intentar la instalación en caso de error de instalación|
+|allowDeviceResetOnInstallFailure|Boolean|Permitir o bloquear el dispositivo restablecer en caso de error de instalación|
+|allowLogCollectionOnInstallFailure|Boolean|Permitir o bloquear registro colección en caso de error de instalación|
 |customErrorMessage|String|Establecer el mensaje de error personalizado para mostrar al producirse un error de instalación|
 |installProgressTimeoutInMinutes|Int32|Establecer tiempo de espera de progreso de la instalación en minutos|
-|allowDeviceUseOnInstallFailure|Booleano|Permitir que el usuario continuar utilizando el dispositivo en caso de error de instalación|
+|allowDeviceUseOnInstallFailure|Boolean|Permitir que el usuario continuar utilizando el dispositivo en caso de error de instalación|
 |selectedMobileAppIds|Colección String|Aplicaciones seleccionadas para realizar un seguimiento del estado de la instalación|
 
 ## <a name="relationships"></a>Relaciones

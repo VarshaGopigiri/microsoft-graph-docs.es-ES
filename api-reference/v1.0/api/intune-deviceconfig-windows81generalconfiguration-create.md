@@ -1,12 +1,13 @@
 ---
 title: Crear windows81GeneralConfiguration
 description: Crear un objeto windows81GeneralConfiguration.
-ms.openlocfilehash: a9184e6bde7d61751d00bec23dfa710126c75bb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a289e987732964c2427736f868eb42219bd04ec5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028999"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344341"
 ---
 # <a name="create-windows81generalconfiguration"></a>Crear windows81GeneralConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|accountsBlockAddingNonMicrosoftAccountEmail|Booleano|Indica si se va a impedir que el usuario agregue cuentas de correo electrónico en el dispositivo que no están asociadas a una cuenta de Microsoft.|
+|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indica si se va a impedir que el usuario agregue cuentas de correo electrónico en el dispositivo que no están asociadas a una cuenta de Microsoft.|
 |applyOnlyToWindows81|Booleano|Valor que indica si esta directiva se aplica solo a Windows 8.1. Esta propiedad es de solo lectura.|
 |browserBlockAutofill|Booleano|Indica si se va a bloquear el autorrelleno.|
 |browserBlockAutomaticDetectionOfIntranetSites|Booleano|Indica si se va a bloquear la detección automática de sitios de intranet.|
@@ -69,7 +70,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |browserRequireFirewall|Booleano|Indica si se va a requerir un firewall.|
 |browserRequireFraudWarning|Booleano|Indica si se va a requerir una advertencia de fraude.|
 |browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|Nivel de seguridad de los sitios de confianza. Los valores posibles son: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh` y `high`.|
-|cellularBlockDataRoaming|Booleano|Indica si se va a bloquear la itinerancia de datos.|
+|cellularBlockDataRoaming|Boolean|Indica si se va a bloquear la itinerancia de datos.|
 |diagnosticsBlockDataSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
 |passwordBlockPicturePasswordAndPin|Booleano|Indica si se va a impedir que el usuario utilice una contraseña de imágenes y un PIN.|
 |passwordExpirationDays|Int32|Expiración de la contraseña en días.|

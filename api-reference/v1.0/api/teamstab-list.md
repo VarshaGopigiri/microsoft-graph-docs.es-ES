@@ -1,12 +1,13 @@
 ---
 title: Fichas de lista de canal
 description: 'Recuperar la lista de fichas en el canal especificado dentro de un equipo. '
-ms.openlocfilehash: 4efbe8508fc125d87268adfb05c23b99ab2c3d4b
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: b8d5c55fa02d859a419823ad171fbcc9221a609e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344572"
 ---
 # <a name="list-tabs-in-channel"></a>Fichas de lista de canal
 

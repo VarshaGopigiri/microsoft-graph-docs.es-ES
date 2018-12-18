@@ -1,12 +1,13 @@
 ---
 title: Obtener educationSubmissionResource
-description: " lista de recursos y se deben considerar trabajo en proceso por un estudiante. Este recurso se empaqueta con un puntero al recurso de asignación posible si se copió desde la asignación."
-ms.openlocfilehash: 1bba0b8b4e89b0f3bc564f48187cfe46fc49cf46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Recupera las propiedades de un recurso específico asociado con el envío. Este recurso se encuentra en la lista de recursos 'trabajo' y se debe considerar trabajo en proceso por un estudiante. Este recurso se empaqueta con un puntero al recurso de asignación posible si se copió desde la asignación.
+author: dipakboyed
+ms.openlocfilehash: d7c1e6fcbe97a9a0a4c1735e37798097f2605b30
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361918"
 ---
 # <a name="get-educationsubmissionresource"></a>Obtener educationSubmissionResource
 

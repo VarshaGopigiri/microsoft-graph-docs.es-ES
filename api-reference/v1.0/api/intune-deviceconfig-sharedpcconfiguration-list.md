@@ -1,12 +1,13 @@
 ---
 title: Enumerar sharedPCConfigurations
 description: Enumere las propiedades y las relaciones de los objetos sharedPCConfiguration.
-ms.openlocfilehash: 18cd0562dbb53b796923f76bff5156a306b51962
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7266db5644b748828889351bd6e1f21d556ba8a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337677"
 ---
 # <a name="list-sharedpcconfigurations"></a>Enumerar sharedPCConfigurations
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

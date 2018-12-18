@@ -1,12 +1,13 @@
 ---
 title: Actualizar androidManagedStoreAccountEnterpriseSettings
 description: Actualizar las propiedades de un objeto androidManagedStoreAccountEnterpriseSettings.
-ms.openlocfilehash: 383c9225076e9e68e9b34d89b7fe904ccf747224
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee5fda9e9c6ce92cdf44ec878c2c5835ceed2c49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086255"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356031"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Actualizar androidManagedStoreAccountEnterpriseSettings
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -55,7 +56,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |lastModifiedDateTime|DateTimeOffset|Hora de última modificación de la configuración de la empresa para Android|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indica qué usuarios pueden inscribirse dispositivos en administración de dispositivos Android empresariales. Los valores posibles son: `none`, `all`, `targeted` y `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Colección String|Especifica los grupos de AAD que pueden inscribir dispositivos en la administración de dispositivos de Android for Work si se establece enrollmentTarget en "Dirigido"|
-|deviceOwnerManagementEnabled|Booleano|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
+|deviceOwnerManagementEnabled|Boolean|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
 
 
 

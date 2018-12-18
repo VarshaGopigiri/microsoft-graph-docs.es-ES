@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Todavía no documentado
-ms.openlocfilehash: 6d3732652a161c145147d0f7d297e65a01f36dfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 268d05b8bf20fddc28e331d5bde73286bb13fc6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088014"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356878"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -42,7 +43,7 @@ Hereda de [deviceEnrollmentConfiguration](../resources/intune-onboarding-devicee
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
-|estado|[Habilitación de](../resources/intune-shared-enablement.md)|Todavía no está documentada. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
+|state|[Habilitación de](../resources/intune-shared-enablement.md)|Todavía no está documentada. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
 |securityDeviceRequired|Booleano|Todavía no documentado|
 |unlockWithBiometricsEnabled|Booleano|Todavía no documentado|
 |remotePassportEnabled|Booleano|Todavía no documentado|

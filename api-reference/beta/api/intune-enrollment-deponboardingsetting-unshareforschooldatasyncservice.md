@@ -1,12 +1,13 @@
 ---
 title: acción unshareForSchoolDataSyncService
 description: Todavía no documentado
-ms.openlocfilehash: 1767e9665c4f99fc2942787a3aade04ffccf8e8e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 59de3bb7e9668555af130d20e7f06b4acdf7169b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341009"
 ---
 # <a name="unshareforschooldatasyncservice-action"></a>acción unshareForSchoolDataSyncService
 
@@ -36,7 +37,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/unshareFor
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

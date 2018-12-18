@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso networkIPv4ConfigurationManagementCondition
 description: Configuración de red IPv4 se pueden definir las condiciones de administración basada en la configuración que se activará cuando un dispositivo detecta cierta IP. Un IP config administración de las condiciones sólo se considerarán TRUE cuando la conexión de red está activa.
-ms.openlocfilehash: f8727fdf67f9602799b0ddacdb94c2c8570d72b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eba20d0ef5db1667cad2ffb85b9477c9044b28b9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089132"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344264"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv4ConfigurationManagementCondition
 

@@ -1,12 +1,13 @@
 ---
 title: Configuración del dispositivo en Microsoft Intune
 description: Use la carga de trabajo de la configuración de dispositivos de Microsoft Intune para administrar la configuración y las características en todos los dispositivos que administre.
-ms.openlocfilehash: 93b402906411bb9e36bb1e97eb077dd0ca756f95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a49e52a855ae146c53f93c681c085a5035b52bb4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029343"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342850"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuración del dispositivo en Microsoft Intune
 

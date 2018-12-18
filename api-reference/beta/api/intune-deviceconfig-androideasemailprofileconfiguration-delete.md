@@ -1,12 +1,13 @@
 ---
 title: Eliminar androidEasEmailProfileConfiguration
 description: Elimina un androidEasEmailProfileConfiguration.
-ms.openlocfilehash: 00975b9cfe8804637d989ee42d5e77f4643db57e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 853c6d46c2bf5747e031c626de82edcf90ebb871
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089732"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357459"
 ---
 # <a name="delete-androideasemailprofileconfiguration"></a>Eliminar androidEasEmailProfileConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

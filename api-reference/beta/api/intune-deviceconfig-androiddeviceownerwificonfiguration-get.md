@@ -1,12 +1,13 @@
 ---
 title: Obtener androidDeviceOwnerWiFiConfiguration
 description: Leer las propiedades y las relaciones del objeto androidDeviceOwnerWiFiConfiguration.
-ms.openlocfilehash: df327e42ce57e7026ab1e642ff4b687eb3f15e64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 040fc0223fa1a6922013c2ec747f3ac9cd87c769
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087269"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354988"
 ---
 # <a name="get-androiddeviceownerwificonfiguration"></a>Obtener androidDeviceOwnerWiFiConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

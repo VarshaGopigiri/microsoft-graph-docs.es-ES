@@ -1,14 +1,15 @@
 ---
-title: Lista joinedTeams
+title: Enumerar joinedTeams
 description: Obtener los grupos de usuarios en Microsoft Teams que el usuario es miembro directo.
-ms.openlocfilehash: 8eabc9a27de2deb80153c9cbec5e8266dd38ed7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1fdc3ac9f2f09e31af71cdb4707dd84adf2c74a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343844"
 ---
-# <a name="list-joinedteams"></a>Lista joinedTeams
+# <a name="list-joinedteams"></a>Enumerar joinedTeams
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 

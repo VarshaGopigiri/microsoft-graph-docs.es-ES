@@ -1,12 +1,13 @@
 ---
 title: Crear windowsDefenderAdvancedThreatProtectionConfiguration
 description: Cree un objeto windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: 84de15adc3178ae13530ba43c8361f636573f30b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31db5f1c254ebe5721748c4e8f35907c49b72217
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030220"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355506"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Crear windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -51,7 +52,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowSampleSharing|Booleano|Regla "Permitir el uso compartido de muestras" de Windows Defender AdvancedThreatProtection|
-|enableExpeditedTelemetryReporting|Booleano|Acelere la frecuencia de informes de telemetría de Protección contra amenazas avanzada de Windows Defender.|
+|enableExpeditedTelemetryReporting|Boolean|Acelere la frecuencia de informes de telemetría de Protección contra amenazas avanzada de Windows Defender.|
 
 
 
