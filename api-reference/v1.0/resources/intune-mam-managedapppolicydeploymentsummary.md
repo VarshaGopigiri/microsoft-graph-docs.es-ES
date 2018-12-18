@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedAppPolicyDeploymentSummary
 description: El objeto ManagedAppEntity es el tipo de entidad base para todos los demás tipos de entidad en flujos de trabajo de administración de aplicaciones.
-ms.openlocfilehash: 13343497ebbe50b9a4dddee9bc91eb618366272a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1714a98e4ea6aa04eb7a91c4b6aace1dc78c01fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031910"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302159"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummary
 

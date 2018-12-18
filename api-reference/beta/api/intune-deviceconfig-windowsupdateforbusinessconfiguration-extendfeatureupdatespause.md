@@ -1,12 +1,13 @@
 ---
 title: acción extendFeatureUpdatesPause
 description: Ampliar característica Actualizaciones pausa para una actualización de Windows para llamar de negocio.
-ms.openlocfilehash: c569d0295cf448568dfb6b39da6d32896e8a4218
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 24e1e2101b740d3c33e92ab52c40958a99d56078
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090873"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301396"
 ---
 # <a name="extendfeatureupdatespause-action"></a>acción extendFeatureUpdatesPause
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: unsubmit'
-description: . Durante el proceso de envío, se copiarán todos los recursos de submittedResources al depósito workingResources. El profesor buscará en la lista de recursos de trabajo para la clasificación.
-ms.openlocfilehash: 610b5a69a06c29d2e2b9b1fa6eb501a56d59b076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 'Una acción que indica que desea trabajar en el envío de la asignación después de se ha activado un estudiante. Esta acción sólo puede consultarse por el alumno. '
+author: dipakboyed
+ms.openlocfilehash: a61f2e9c05691266ae9248ca95700f173e0ee0b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084005"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304231"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 

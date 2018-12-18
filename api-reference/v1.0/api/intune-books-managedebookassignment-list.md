@@ -1,12 +1,13 @@
 ---
 title: Enumerar managedEBookAssignments
 description: Enumere las propiedades y las relaciones de los objetos managedEBookAssignment.
-ms.openlocfilehash: ed6ccb04f351b05718c99dc31e7f7d0c53a5f908
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb4f824c22a8d72a2b083606b8c9367bd15579a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029130"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303540"
 ---
 # <a name="list-managedebookassignments"></a>Enumerar managedEBookAssignments
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

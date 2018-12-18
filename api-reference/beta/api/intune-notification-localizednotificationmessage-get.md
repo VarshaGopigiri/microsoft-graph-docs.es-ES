@@ -1,12 +1,13 @@
 ---
 title: Obtener localizedNotificationMessage
 description: Lea las propiedades y las relaciones del objeto localizedNotificationMessage.
-ms.openlocfilehash: 6539d7238823e96ad1f446d684e5703c3c9b0b53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ed176a3f7d79ba0cf99a0a6deab77f23b3a3904
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082916"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302166"
 ---
 # <a name="get-localizednotificationmessage"></a>Obtener localizedNotificationMessage
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

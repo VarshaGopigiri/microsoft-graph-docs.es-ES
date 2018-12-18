@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso RangeBorder
 description: Representa el borde de un objeto.
-ms.openlocfilehash: ace494607d7e5803bf0ab0be5d5b3c86be875dcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2aa8807949724766930c5938d1ee6e06db98212a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090697"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301221"
 ---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
 
@@ -20,7 +21,7 @@ Representa el borde de un objeto.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get RangeBorder](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |Lee las propiedades y relaciones del objeto rangeBorder.|
-|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |Actualiza el objeto RangeBorder. |
+|[Actualizar](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |Actualiza el objeto RangeBorder. |
 |[List](../api/rangeborder-list.md) | Colección [RangeBorder](rangeborder.md) |Obtiene la colección de objetos rangeBorder. |
 |[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|Obtiene un objeto de borde mediante su índice.|
 

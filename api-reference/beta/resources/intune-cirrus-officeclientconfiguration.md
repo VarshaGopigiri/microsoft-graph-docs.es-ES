@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso officeClientConfiguration
 description: Configuración de cliente de Office.
-ms.openlocfilehash: de510d7a57c10d1f74a3e58856afb9233243ec17
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086109"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303839"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso officeClientConfiguration
 

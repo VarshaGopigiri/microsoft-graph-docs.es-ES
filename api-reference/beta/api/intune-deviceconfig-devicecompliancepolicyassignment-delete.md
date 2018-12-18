@@ -1,12 +1,13 @@
 ---
 title: Eliminar deviceCompliancePolicyAssignment
 description: Elimina un deviceCompliancePolicyAssignment.
-ms.openlocfilehash: f66caf71e20ba67d57547c07e439ff30e4125735
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5f90c89094b99e5e7cb0b761dfe636e1a53cadb3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083496"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302432"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>Eliminar deviceCompliancePolicyAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/ass
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

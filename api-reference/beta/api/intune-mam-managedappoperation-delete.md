@@ -1,12 +1,13 @@
 ---
 title: Eliminar managedAppOperation
 description: Elimina un managedAppOperation.
-ms.openlocfilehash: 28cb23a5134124f55c421fa66db546e1729ef3d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 32e26f3c71537f75a62cab9c5fe7c9b8a8f8d127
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085457"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304273"
 ---
 # <a name="delete-managedappoperation"></a>Eliminar managedAppOperation
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/o
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso exclusionGroupAssignmentTarget
 description: Representa un grupo que debería excluirse de una tarea.
-ms.openlocfilehash: fdbb463687d75791965db2ef05abfea1a269d1a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8193ac714f7f68dc371454c809c3eaa3176f8453
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031227"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304518"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Tipo de recurso exclusionGroupAssignmentTarget
 

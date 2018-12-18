@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso roleAssignment
 description: El recurso de la asignación de roles. Las asignaciones de roles unen la definición de rol con miembros y ámbitos. Puede haber una o más asignaciones de roles por rol. Esto se aplica a los roles integrados y personalizados.
-ms.openlocfilehash: a0c3e1d6a9f9611a67916075cdc6a2f90210d89d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5c4b09151a7957f52dbaa525f696b89479a898ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086439"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302103"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 

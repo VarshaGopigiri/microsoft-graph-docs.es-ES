@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsAutopilotDeploymentProfile
 description: Perfil de implementación piloto automático de Windows
-ms.openlocfilehash: ed109af370d73d22d46198b206ba42dc4ebab2da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9534a9c252c3ab678bf2dea83d497c9541f30c47
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084513"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301445"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfile
 
@@ -32,7 +33,7 @@ Perfil de implementación piloto automático de Windows
 |lastModifiedDateTime|DateTimeOffset|Perfil modificó por última vez el tiempo|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Fuera de la experiencia del cuadro Configuración|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Configuración de pantalla de estado de inscripción|
-|extractHardwareHash|Booleano|Extracción de HardwareHash para el perfil|
+|extractHardwareHash|Boolean|Extracción de HardwareHash para el perfil|
 |deviceNameTemplate|String|La plantilla usada para el nombre del dispositivo de piloto automático. Esto puede ser un texto personalizado y también puede contener el número de serie del dispositivo, o bien un número generado aleatoriamente. La longitud total del texto generado por la plantilla puede ser no más de 15 caracteres.|
 
 ## <a name="relationships"></a>Relaciones

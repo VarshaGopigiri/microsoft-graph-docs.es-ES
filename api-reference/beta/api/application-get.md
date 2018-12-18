@@ -1,12 +1,13 @@
 ---
 title: Obtener la aplicación
 description: Recuperar las propiedades y relaciones del objeto application.
-ms.openlocfilehash: 6e1b3f9771205b8b7decb4650993953dd6df2acb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: a041cbc4e97a59500106542b88e754b9c495f985
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084671"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303496"
 ---
 # <a name="get-application"></a>Obtener la aplicación
 
@@ -32,9 +33,9 @@ GET /applications/{id}
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

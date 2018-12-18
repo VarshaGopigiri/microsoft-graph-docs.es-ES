@@ -1,12 +1,13 @@
 ---
 title: Obtener macOSLobApp
 description: Leer las propiedades y las relaciones del objeto macOSLobApp.
-ms.openlocfilehash: a8af89d1fd1aea8c64404f7c254f92c6155196ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 539f11276c2e2899dba5e594050c4d126b59d8db
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302621"
 ---
 # <a name="get-macoslobapp"></a>Obtener macOSLobApp
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

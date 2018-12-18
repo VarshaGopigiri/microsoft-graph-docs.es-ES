@@ -1,12 +1,13 @@
 ---
 title: Acción setPriority
 description: Todavía no documentado
-ms.openlocfilehash: 5c446dcc1951e459e736048d34218faee5745428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9d4eb0beb72187a71771148985466a5f72644a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303944"
 ---
 # <a name="setpriority-action"></a>Acción setPriority
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

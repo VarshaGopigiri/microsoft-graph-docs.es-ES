@@ -1,12 +1,13 @@
 ---
 title: Eliminar enrollmentTroubleshootingEvent
 description: Elimina un enrollmentTroubleshootingEvent.
-ms.openlocfilehash: 4c0c709bbb1a45b61d186be42850e97daf43c2d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91ccff92e22bc6598a46b244b2852ec466c36bfb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031082"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301907"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>Eliminar enrollmentTroubleshootingEvent
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

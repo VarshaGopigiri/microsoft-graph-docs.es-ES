@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceConfigurationUserStateSummary
 description: Actualizar las propiedades de un objeto deviceConfigurationUserStateSummary.
-ms.openlocfilehash: fd22d51f9d52f97c080cace5c6cf434ccaff2416
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a11c4447fee84116b68416ba78f610e8067a6104
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301571"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Actualizar deviceConfigurationUserStateSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

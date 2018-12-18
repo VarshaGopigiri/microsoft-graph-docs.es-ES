@@ -1,12 +1,13 @@
 ---
 title: Obtener windows81CompliancePolicy
 description: Lea las propiedades y las relaciones del objeto windows81CompliancePolicy.
-ms.openlocfilehash: 7e7b104c547c3a703d47aec8c6d952ad34cf7dac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a156ec9d40d3e952b635a8a0dccbf2e46a4001d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030403"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301207"
 ---
 # <a name="get-windows81compliancepolicy"></a>Obtener windows81CompliancePolicy
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

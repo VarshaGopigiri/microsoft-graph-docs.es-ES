@@ -1,12 +1,13 @@
 ---
 title: Eliminar windows81CompliancePolicy
 description: Elimina un windows81CompliancePolicy.
-ms.openlocfilehash: 16756a028a84fd94a88f16046a1a3b0380307702
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 849905dcf678039c68eb501d822ca2301f514fbf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304602"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Eliminar windows81CompliancePolicy
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

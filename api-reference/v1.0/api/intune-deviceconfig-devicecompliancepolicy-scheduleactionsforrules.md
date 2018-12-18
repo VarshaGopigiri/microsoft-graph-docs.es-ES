@@ -1,12 +1,13 @@
 ---
 title: Acción scheduleActionsForRules
 description: Todavía no documentado
-ms.openlocfilehash: 7df79c4428834cda8a739a9afb1919282c9e1dbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5e0b8802ca6d1b99a548b418eb3600c14650af0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031983"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303825"
 ---
 # <a name="scheduleactionsforrules-action"></a>Acción scheduleActionsForRules
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

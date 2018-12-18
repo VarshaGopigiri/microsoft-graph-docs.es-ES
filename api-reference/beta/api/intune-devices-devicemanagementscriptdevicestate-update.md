@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceManagementScriptDeviceState
 description: Actualizar las propiedades de un objeto deviceManagementScriptDeviceState.
-ms.openlocfilehash: 790b13615d9f00d1e8441f444aeb0340454de098
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5dee56ac260642d1a0c105d62ee26499d7276df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086628"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305316"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Actualizar deviceManagementScriptDeviceState
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

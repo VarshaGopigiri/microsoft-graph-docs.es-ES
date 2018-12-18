@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosStoreAppAssignmentSettings
 description: Contiene las propiedades que se usan para asignar a un grupo una aplicación móvil de la tienda iOS.
-ms.openlocfilehash: 5509227dd28d7d89c9afcd8c6abeb89db6096ddf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19a9ba760a0e375d6afa4c504fd57e6ecac4d2ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087755"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303951"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Tipo de recurso iosStoreAppAssignmentSettings
 

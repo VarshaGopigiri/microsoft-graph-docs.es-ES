@@ -1,12 +1,13 @@
 ---
 title: Obtener webApp
 description: Lea las propiedades y las relaciones del objeto webApp.
-ms.openlocfilehash: 805786a61f16eb100c2cedd8dd82fc564f132b7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a3804e956fd542a85be49d2c89d69b8ee592d5b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085825"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302936"
 ---
 # <a name="get-webapp"></a>Obtener webApp
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: 'llamar a: registro'
 description: Registro de la llamada.
-ms.openlocfilehash: 2d876b30205594e162ac9f5aa1b2068058efea7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085628"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303552"
 ---
 # <a name="call-record"></a>llamar a: registro
 
@@ -38,15 +39,15 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Type    |Descripción|
 |:---------------|:--------|:----------|
 |solicita|colección de [mediaprompt](../resources/mediaprompt.md) | Colección de indicaciones para reproducir (si hay alguno) antes de la grabación se iniciará. Los clientes pueden elegir especificar la acción "playPrompt" por separado o especificar como parte de "registro" - principalmente todos los registros están precedido por un símbolo del sistema |
-|bargeInAllowed|Booleano| Permitir que los usuarios escriban opción antes de que finalice el símbolo del sistema.                                                                 |
+|bargeInAllowed|Boolean| Permitir que los usuarios escriban opción antes de que finalice el símbolo del sistema.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Silencio inicial máximo permitido desde el momento en que se inicia la operación de registro antes de la operación de conmutación por error y tiempo de espera. Si se está reproduciendo un símbolo del sistema, este temporizador se inicia después de que finalice el símbolo del sistema. |
 |maxSilenceTimeoutInSeconds|Int32| El tiempo de espera máximo silencio en segundos.|
 |maxRecordDurationInSeconds|Int32| La duración de registro máximo en segundos.|
-|playBeep|Booleano| Emite un pitido tras reproducir el símbolo del sistema.|
-|streamWhileRecording|Booleano|Si se establece en true, una ubicación de recursos será proporcionado en cuanto se inicia la grabación. |
+|playBeep|Boolean| Emite un pitido tras reproducir el símbolo del sistema.|
+|streamWhileRecording|Boolean|Si se establece en true, una ubicación de recursos será proporcionado en cuanto se inicia la grabación. |
 |stopTones|Colección String|Detener tonos especificados para finalizar la grabación.|
 |clientContext|String|El contexto de cliente.|
 

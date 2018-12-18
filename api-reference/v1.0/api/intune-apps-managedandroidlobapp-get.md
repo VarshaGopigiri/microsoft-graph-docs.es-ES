@@ -1,12 +1,13 @@
 ---
 title: Obtener managedAndroidLobApp
 description: Lea las propiedades y las relaciones del objeto managedAndroidLobApp.
-ms.openlocfilehash: 0051c86c7ad759fc5a79225209e338ca17164bd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2697e809a6b259758d12c7a4ce1cc8dd39f68a1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029706"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305470"
 ---
 # <a name="get-managedandroidlobapp"></a>Obtener managedAndroidLobApp
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

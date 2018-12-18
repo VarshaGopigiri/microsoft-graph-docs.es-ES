@@ -1,12 +1,13 @@
 ---
 title: Enumerar educationClasses
 description: Recupere una lista de las clases de un centro educativo.
-ms.openlocfilehash: de98692f13c280b1e5cb4b66d17335466bfe7a57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 92cbc992876827b455efa9cf17aa43d549e95df0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031836"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27300864"
 ---
 # <a name="list-educationclasses"></a>Enumerar educationClasses
 

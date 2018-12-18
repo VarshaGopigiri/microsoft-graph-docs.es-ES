@@ -1,12 +1,13 @@
 ---
 title: Eliminar iosUpdateDeviceStatus
 description: Elimina un iosUpdateDeviceStatus.
-ms.openlocfilehash: be7935e076f65ee0c21272f4894d4b1d207dfe08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 62a6733fb0765a48928501c8876308d6aa50cb0c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084501"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302299"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>Eliminar iosUpdateDeviceStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Lista educationSynchronizationProfiles
 description: Recupere la colección de perfiles de sincronización de datos de school en el inquilino.
-ms.openlocfilehash: a303178a930f207aa92e7a49c769afbc06a7e1e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d7ee2b643259eec6c9106ab6ff89245ab79a3044
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084004"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303104"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Lista educationSynchronizationProfiles
 
@@ -33,9 +34,9 @@ GET /synchronizationProfiles
 Este método admite los siguientes [Parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ayudar a personalizar la respuesta: $filter, $orderby, $top, $skip y $count.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

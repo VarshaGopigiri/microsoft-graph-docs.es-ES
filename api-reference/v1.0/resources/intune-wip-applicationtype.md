@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración applicationType
 description: Posibles tipos de aplicación
-ms.openlocfilehash: be996b949ff6741227c62f7d9cbfb345c251ade0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0485e6642ed4b4df68442f7a2dd840c047d6308f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032277"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303370"
 ---
 # <a name="applicationtype-enum-type"></a>tipo de enumeración applicationType
 

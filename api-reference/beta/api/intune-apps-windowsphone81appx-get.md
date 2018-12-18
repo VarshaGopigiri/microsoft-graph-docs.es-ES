@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsPhone81AppX
 description: Leer las propiedades y las relaciones del objeto windowsPhone81AppX.
-ms.openlocfilehash: e0648a200018ea0e1c23046bfaa0a6854dc586cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e7c58e88fc701222ae290c9774f5a56f01f7960
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304980"
 ---
 # <a name="get-windowsphone81appx"></a>Obtener windowsPhone81AppX
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Actualizar userInstallStateSummary
 description: Actualice las propiedades de un objeto userInstallStateSummary.
-ms.openlocfilehash: a5c3f1278a8c9696b65663eaaeafcb76e1e09840
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ead5cbb33e8a03f12ac94c256b67d12a08575d5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028720"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303048"
 ---
 # <a name="update-userinstallstatesummary"></a>Actualizar userInstallStateSummary
 
@@ -34,7 +35,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

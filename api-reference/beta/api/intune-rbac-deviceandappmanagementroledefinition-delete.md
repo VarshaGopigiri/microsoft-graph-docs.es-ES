@@ -1,12 +1,13 @@
 ---
 title: Eliminar deviceAndAppManagementRoleDefinition
 description: Elimina undeviceAndAppManagementRoleDefinition.
-ms.openlocfilehash: c7eaf1eab38ebc209fbafd0c94a73dc8c9099ea4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 21b6d98e49959f4f11b2ad5d2cb8593e34844a9e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083052"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302754"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>Eliminar deviceAndAppManagementRoleDefinition
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

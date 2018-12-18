@@ -1,12 +1,13 @@
 ---
 title: Delete mailFolder
 description: Eliminar el mailFolder especificado.
-ms.openlocfilehash: e01f631141147373d1c2010d4313ad833c057df2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: ea2edfe07554ef0a5e1144dd1aeed00b7dd46155
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032479"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301102"
 ---
 # <a name="delete-mailfolder"></a>Delete mailFolder
 
@@ -32,9 +33,9 @@ DELETE /me/mailFolders/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

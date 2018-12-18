@@ -1,12 +1,13 @@
 ---
 title: Enumerar serviceConfigurationRecords
 description: Recupera una lista de los objetos domainDnsRecord necesarios para habilitar los servicios para el dominio.
-ms.openlocfilehash: 92cc0695fa4128fcd32a59aee210fc63a35ac412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 067315499b1557f667578f17f687ad21bb166dc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029078"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302943"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Enumerar serviceConfigurationRecords
 

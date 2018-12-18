@@ -1,12 +1,13 @@
 ---
 title: Crear macOSCompliancePolicy
 description: Cree un objeto macOSCompliancePolicy.
-ms.openlocfilehash: 78d5be45cf5339be669835e8471eb421a6b96889
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 615d60cc91d4ca463331b6352d29734640d6f5fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029870"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302236"
 ---
 # <a name="create-macoscompliancepolicy"></a>Crear macOSCompliancePolicy
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
+|passwordRequired|Boolean|Si quiere requerir o no una contraseña.|
 |passwordBlockSimple|Booleano|Indica si se van a bloquear las contraseñas simples.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 65535|
 |passwordMinimumLength|Int32|Longitud mínima de la contraseña. Valores válidos de 4 a 14|
@@ -64,9 +65,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |deviceThreatProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
 |storageRequireEncryption|Booleano|Exige el cifrado en dispositivos Mac OS.|
-|firewallEnabled|Booleano|Si el firewall se debe habilitar o no.|
-|firewallBlockAllIncoming|Booleano|Corresponde a la opción "Bloquear todas las conexiones entrantes".|
-|firewallEnableStealthMode|Booleano|Corresponde a "Habilitar modo silencioso".|
+|firewallEnabled|Boolean|Si el firewall se debe habilitar o no.|
+|firewallBlockAllIncoming|Boolean|Corresponde a la opción "Bloquear todas las conexiones entrantes".|
+|firewallEnableStealthMode|Boolean|Corresponde a "Habilitar modo silencioso".|
 
 
 

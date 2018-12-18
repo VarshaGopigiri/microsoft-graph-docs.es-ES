@@ -1,12 +1,13 @@
 ---
 title: Crear windowsUniversalAppXContainedApp
 description: Crear un nuevo objeto windowsUniversalAppXContainedApp.
-ms.openlocfilehash: 156af7a32e6041fbe06bc4f3dca4071425e5b468
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97f50a79194af878569327073ae8911bf08199f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302817"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Crear windowsUniversalAppXContainedApp
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

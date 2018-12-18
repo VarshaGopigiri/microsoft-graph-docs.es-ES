@@ -1,12 +1,12 @@
 ---
 title: Trabajar con recursos de Azure Active Directory en Microsoft Graph
-description: 'Con Microsoft Graph, puede obtener acceso a recursos de Azure Active Directory (AD Azure) para habilitar escenarios como la administración de roles de administrador (directorio), invitar a los usuarios externos a una organización y, si es un proveedor de soluciones de la nube (CSP), administrar su datos del cliente. Microsoft Graph proporciona también pueden usar métodos aplicaciones, por ejemplo, para detectar información acerca de la pertenencia transitiva grupos y roles de los usuarios. '
-ms.openlocfilehash: 4f33004e5bacf71c2e7cd3af5bad78448983dec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft Graph para Azure Active Directory (AD Azure) proporciona la API de REST para ayudar a administrar su organización, recursos y activos.
+ms.openlocfilehash: 85f44df36057220e4ea26eb8d9342e9fd1df5bb6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305386"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabajar con recursos de Azure Active Directory en Microsoft Graph
 
@@ -17,7 +17,7 @@ Con Microsoft Graph, puede tener acceso a recursos de [Azure Active Directory (A
 > **Nota**: Algunos recursos de Azure AD se documentan en otras secciones de la referencia de la API. Para obtener más información, vea [Usuarios](users.md) y [Grupos](group.md).
 
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Autorización
  
 Para llamar a las API de Microsoft Graph en recursos de Azure AD, la aplicación necesitará los permisos adecuados. Muchas de las API expuestas en recursos de Azure AD necesitan uno de los [permisos de _directorio_](/graph/permissions-reference#directory-permissions). Los permisos de directorio tienen privilegios muy elevados y siempre necesitan el consentimiento del administrador. 
 

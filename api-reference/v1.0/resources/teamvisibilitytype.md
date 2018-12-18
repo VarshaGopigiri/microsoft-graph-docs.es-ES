@@ -1,12 +1,13 @@
 ---
 title: Members
 description: 'Describe la visibilidad de un equipo. '
-ms.openlocfilehash: b0ba8102e02e6eb3ee551c27b3ca9da672ac45a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: c18efcb6853882f7cf9411776eb69e11248e9bfe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031811"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303580"
 ---
 #<a name="teamvisibilitytype-enum-type"></a>tipo de enumeración teamVisibilityType
 

@@ -1,12 +1,13 @@
 ---
 title: Crear windowsPhone81CustomConfiguration
 description: Cree un objeto windowsPhone81CustomConfiguration.
-ms.openlocfilehash: cf3b897fe86350be5c2bd1c243d0dce3147e2c05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02701baa092b32ecdb2519780d05de42c6c73447
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301354"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>Crear windowsPhone81CustomConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

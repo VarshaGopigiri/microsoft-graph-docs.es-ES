@@ -1,12 +1,13 @@
 ---
 title: Crear iosVppEBookAssignment
 description: Cree un objeto iosVppEBookAssignment.
-ms.openlocfilehash: 192f5e006fa89f3dbf25a320967af68fbd06f7ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dd829dfd22b38a6ca4b88e1fc110db4f9e2128ea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088411"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302467"
 ---
 # <a name="create-iosvppebookassignment"></a>Crear iosVppEBookAssignment
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

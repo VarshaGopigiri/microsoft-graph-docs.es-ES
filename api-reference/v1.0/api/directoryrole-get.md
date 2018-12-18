@@ -1,12 +1,13 @@
 ---
 title: Get directoryRole
 description: Recupera las propiedades de un objeto directoryRole.
-ms.openlocfilehash: b5d32d875b6642a85236be676c1834c6e94717af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: b5f25179c18a28aa3c12dd54c7230b5444dff3f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029865"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305302"
 ---
 # <a name="get-directoryrole"></a>Get directoryRole
 
@@ -30,9 +31,9 @@ GET /directoryRoles/{id}
 Este método **no** es compatible con los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para facilitar la personalización de la respuesta (por ejemplo, aquí no se admite $filter).
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

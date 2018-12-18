@@ -1,12 +1,13 @@
 ---
 title: Restaurar elemento eliminado
 description: 'Restaura un elemento eliminado recientemente de la carpeta Elementos eliminados. '
-ms.openlocfilehash: 3fa47d269cefaf54994b57f8f06a92a8ac8fc4b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 3a78d2d481fb26c6c6b56770375d4ce23f007bd5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030982"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301319"
 ---
 # <a name="restore-deleted-item"></a>Restaurar elemento eliminado
 

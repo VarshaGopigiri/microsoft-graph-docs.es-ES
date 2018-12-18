@@ -1,12 +1,13 @@
 ---
 title: Eliminar androidManagedStoreApp
 description: Elimina un androidManagedStoreApp.
-ms.openlocfilehash: fd49198c03c335111d98574570e2666a26759ac6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb45432e2e81991de77fb6ed9f799c5a5ecb9d28
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302355"
 ---
 # <a name="delete-androidmanagedstoreapp"></a>Eliminar androidManagedStoreApp
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

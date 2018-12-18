@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 description: Representa información de un usuario local o el grupo que se utiliza para establecer los derechos de usuario.
-ms.openlocfilehash: bf81a36a8e102bea4c3e8fb56e45bf7822cf31a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: baabd2f3bb9e3bce44d172cd83f61f57c5c2c98d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087309"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303734"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 

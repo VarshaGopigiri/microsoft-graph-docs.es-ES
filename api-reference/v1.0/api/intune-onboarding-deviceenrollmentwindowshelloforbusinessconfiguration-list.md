@@ -1,12 +1,13 @@
 ---
 title: Enumerar deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: Enumere las propiedades y las relaciones de los objetos deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: be1e717a03daecc1f9c37ad00831cd1413781f2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a3cb02ce561ccd618269eaee1e0d8495d7ff7f6c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304301"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Enumerar deviceEnrollmentWindowsHelloForBusinessConfigurations
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

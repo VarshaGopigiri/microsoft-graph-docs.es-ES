@@ -1,12 +1,13 @@
 ---
 title: Actualizar termsAndConditionsAssignment
 description: Actualice las propiedades de un objeto termsAndConditionsAssignment.
-ms.openlocfilehash: 17a442b2a028542d3c40a07de5987a937763aa58
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b55ec01c6bac55f9b1d72a5aad5f931bed6b6b2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031964"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301410"
 ---
 # <a name="update-termsandconditionsassignment"></a>Actualizar termsAndConditionsAssignment
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
