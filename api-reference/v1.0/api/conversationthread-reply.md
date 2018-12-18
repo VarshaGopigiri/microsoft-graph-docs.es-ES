@@ -1,12 +1,13 @@
 ---
 title: 'conversationThread: reply'
 description: 'Responder a un subproceso en una conversación en grupo y agregue una nueva entrada a ella. Puede especificar la conversación primario '
-ms.openlocfilehash: 9e191a53b2427b8c9def2acf15d48b7c8605437f
-ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
+author: dkershaw10
+ms.openlocfilehash: c31b6dd08aa888c44a8c12044848e96ffd05de57
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27245081"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353721"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -36,7 +37,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|La nueva publicación con que se responde.|
 

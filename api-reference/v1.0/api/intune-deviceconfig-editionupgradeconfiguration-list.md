@@ -1,12 +1,13 @@
 ---
 title: Enumerar editionUpgradeConfigurations
 description: Enumere las propiedades y las relaciones de los objetos editionUpgradeConfiguration.
-ms.openlocfilehash: 1b60625a37fb95fefc5748b4feef460341d9ebc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e3dc33fbecf05f65eac49adf50c747ce5545ed3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031137"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355093"
 ---
 # <a name="list-editionupgradeconfigurations"></a>Enumerar editionUpgradeConfigurations
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Actualizar termsAndConditionsAcceptanceStatus
 description: Actualice las propiedades de un objeto termsAndConditionsAcceptanceStatus.
-ms.openlocfilehash: 4078cc304e85b360b7156235105fc9a0e4949402
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2f1cf0dea9ccb6c23fe55ce201bd3a6939d5976f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029138"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354274"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Actualizar termsAndConditionsAcceptanceStatus
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

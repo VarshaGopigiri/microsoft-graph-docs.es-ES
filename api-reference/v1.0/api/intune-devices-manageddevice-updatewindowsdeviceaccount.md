@@ -1,12 +1,13 @@
 ---
 title: Acción updateWindowsDeviceAccount
 description: Todavía no documentado
-ms.openlocfilehash: da11fef02b5a2d47e2ca2dbf242e7e54ff5e55ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9d7ae04e3fdbecdef75cbf905257510b5a6a893b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030314"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356871"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>Acción updateWindowsDeviceAccount
 
@@ -36,7 +37,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Crear iosMobileAppConfiguration
 description: Crear un nuevo objeto iosMobileAppConfiguration.
-ms.openlocfilehash: 24bd4b7a606ce95a146d0ce5273ba268766bb6c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2437b71851a6476bb8607c46c4158dd6cb8337d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355562"
 ---
 # <a name="create-iosmobileappconfiguration"></a>Crear iosMobileAppConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
