@@ -1,12 +1,13 @@
 ---
 title: Eliminar androidForWorkEnterpriseWiFiConfiguration
 description: Elimina un androidForWorkEnterpriseWiFiConfiguration.
-ms.openlocfilehash: 8d16f89dc8340f56b258b50eb7c1ff77c74651cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02375c78a4441ac99f2a21ee0933054c5e62810b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087618"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333015"
 ---
 # <a name="delete-androidforworkenterprisewificonfiguration"></a>Eliminar androidForWorkEnterpriseWiFiConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

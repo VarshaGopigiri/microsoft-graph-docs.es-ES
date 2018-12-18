@@ -1,12 +1,13 @@
 ---
 title: Delete group
 description: Elimina el grupo.
-ms.openlocfilehash: c4a4f1cb370ec24a8b6bb0f5528e9983d47f206f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6377c3d7865ebcc1ef13a649afbde083163e7048
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032002"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326281"
 ---
 # <a name="delete-group"></a>Delete group
 Elimina el grupo.
@@ -27,9 +28,9 @@ DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

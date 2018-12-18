@@ -1,14 +1,15 @@
 ---
-title: tipo de recurso outlookTask
+title: Tipo de recurso outlookTask
 description: 'Un elemento de Outlook que puede realizar un seguimiento de un elemento de trabajo. '
-ms.openlocfilehash: c197591d40b4c65e9a7ab5e047e9a93c522e6400
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335234"
 ---
-# <a name="outlooktask-resource-type"></a>tipo de recurso outlookTask
+# <a name="outlooktask-resource-type"></a>Tipo de recurso outlookTask
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
@@ -36,8 +37,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Obtener las propiedades y relaciones de una tarea de Outlook en el buzón del usuario.|
-|[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Cambiar las propiedades grabables de una tarea de Outlook. |
-|[Delete](../api/outlooktask-delete.md) | Ninguno |Eliminar la tarea especificada en el buzón del usuario. |
+|[Actualizar](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Cambiar las propiedades grabables de una tarea de Outlook. |
+|[Eliminar](../api/outlooktask-delete.md) | Ninguno |Eliminar la tarea especificada en el buzón del usuario. |
 |[Complete](../api/outlooktask-complete.md)|colección de [outlookTask](outlooktask.md)|Completar una tarea de Outlook que establece la propiedad **completedDateTime** a la fecha actual y la propiedad **status** para `completed`.|
 |**Datos adjuntos**| | |
 |[Enumerar datos adjuntos](../api/outlooktask-list-attachments.md) |Colección de [datos adjuntos](attachment.md)| Obtener todos los datos adjuntos en una tarea de Outlook.|
@@ -58,7 +59,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha en la zona horaria especificada que se ha finalizado la tarea.|
 |createdDateTime|DateTimeOffset|La fecha y la hora cuando se creó la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad usa formato ISO 8601. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha en la zona horaria especificada que se va finalizado la tarea.|
-|hasAttachments|Booleano|Se establece en true si la tarea tiene datos adjuntos.|
+|hasAttachments|Boolean|Se establece en true si la tarea tiene datos adjuntos.|
 |id|String|El identificador único de la tarea. Solo lectura.|
 |importance|string|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle al usuario de la tarea.|

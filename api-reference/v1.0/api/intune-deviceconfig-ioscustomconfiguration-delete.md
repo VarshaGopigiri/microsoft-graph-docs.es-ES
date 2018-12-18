@@ -1,12 +1,13 @@
 ---
 title: Eliminar iosCustomConfiguration
 description: Elimina un iosCustomConfiguration.
-ms.openlocfilehash: 1d7f926411fec68563cc9beb6f4e21ce69568c9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 45b7193deb7fd52ddeeeb78274b41be7f9dc0160
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032439"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332126"
 ---
 # <a name="delete-ioscustomconfiguration"></a>Eliminar iosCustomConfiguration
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

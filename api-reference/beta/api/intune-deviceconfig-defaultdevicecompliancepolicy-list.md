@@ -1,12 +1,13 @@
 ---
 title: Lista defaultDeviceCompliancePolicies
 description: Propiedades de la lista y relaciones de los objetos defaultDeviceCompliancePolicy.
-ms.openlocfilehash: 4822024f8fcb7214113a59b07e402abe91257e20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: da41612b61383545d6b7e162633406e26ea40547
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329928"
 ---
 # <a name="list-defaultdevicecompliancepolicies"></a>Lista defaultDeviceCompliancePolicies
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

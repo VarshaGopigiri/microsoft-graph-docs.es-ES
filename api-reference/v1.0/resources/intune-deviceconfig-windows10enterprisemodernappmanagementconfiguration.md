@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windows10EnterpriseModernAppManagementConfiguration
 description: Configuración de administración de aplicaciones modernas de Windows 10 Enterprise.
-ms.openlocfilehash: 73d110715a4496452a478bea903873e700dd62b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 12ac8aca2ef16c09154db68786d806376e80cf43
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030298"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324440"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>Tipo de recurso windows10EnterpriseModernAppManagementConfiguration
 
@@ -34,7 +35,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|uninstallBuiltInApps|Booleano|Indica si se desinstalará o no una lista fija de aplicaciones integradas de Windows.|
+|uninstallBuiltInApps|Boolean|Indica si se desinstalará o no una lista fija de aplicaciones integradas de Windows.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

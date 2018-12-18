@@ -1,12 +1,13 @@
 ---
 title: Incluir en una lista detectedApps
 description: Enumere las propiedades y las relaciones de los objetos detectedApp.
-ms.openlocfilehash: 1f56f00d9a872e0d6187522ec795d11ce292225a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a307336773ff5b39f7335709f7d62ea8770d364a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030872"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335388"
 ---
 # <a name="list-detectedapps"></a>Incluir en una lista detectedApps
 
@@ -34,7 +35,7 @@ GET /deviceManagement/detectedApps
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

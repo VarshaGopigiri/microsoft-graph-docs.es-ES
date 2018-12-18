@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso conversationThread
 description: Un recurso conversationThread es una colección de posts.
-ms.openlocfilehash: 7fc248957ed81a9d02d6f2d404110690b350ca1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1456b32a26b279b917930740ca220025e8858590
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032216"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332175"
 ---
 # <a name="conversationthread-resource-type"></a>Tipo de recurso conversationThread
 Un recurso conversationThread es una colección de [posts](post.md).

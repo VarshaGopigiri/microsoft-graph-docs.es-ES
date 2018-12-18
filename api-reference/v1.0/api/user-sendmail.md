@@ -1,12 +1,13 @@
 ---
 title: Enviar correo
 description: Envía el mensaje especificado en el cuerpo de la solicitud. De manera predeterminada, el mensaje se guarda en la carpeta Elementos enviados.
-ms.openlocfilehash: 6d8150f7292747e7c1d182395f9a98b1a199389f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a818ec5cc455b6ca78c920be57ad34155a03a1bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029242"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333295"
 ---
 # <a name="send-mail"></a>Enviar correo
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |mensaje|[Message](../resources/message.md)|Mensaje que se va a enviar. Obligatorio.|
 |saveToSentItems|Boolean|Indica si se va a guardar el mensaje en Elementos enviados. Especifíquelo solo si el parámetro es falso, de forma predeterminada es verdadero.  Opcional. |

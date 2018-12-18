@@ -1,12 +1,13 @@
 ---
 title: Actualizar importedWindowsAutopilotDeviceIdentity
 description: Actualiza las propiedades de un objeto importedWindowsAutopilotDeviceIdentity.
-ms.openlocfilehash: ec784e6f0032e0167c9b9339d65568d923ee3c74
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba28b77811082b6339987f173d874e453a91aa75
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032299"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334268"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Actualizar importedWindowsAutopilotDeviceIdentity
 
@@ -35,7 +36,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

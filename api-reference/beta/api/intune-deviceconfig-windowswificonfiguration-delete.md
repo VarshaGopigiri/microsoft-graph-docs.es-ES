@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsWifiConfiguration
 description: Elimina un windowsWifiConfiguration.
-ms.openlocfilehash: 1f7eb10c93ab6344711fc7a8e86765a3897c75cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef47e32a8a9ff8dffd60f61b29dc89b44d0701e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085732"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332490"
 ---
 # <a name="delete-windowswificonfiguration"></a>Eliminar windowsWifiConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

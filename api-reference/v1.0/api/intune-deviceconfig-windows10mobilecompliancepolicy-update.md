@@ -1,12 +1,13 @@
 ---
 title: Actualizar windows10MobileCompliancePolicy
 description: Actualice las propiedades de un objeto windows10MobileCompliancePolicy.
-ms.openlocfilehash: 33f1c716aa564af2d933136969aed57f8514d487
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 696b5c0cb2e51b4f49c656e876940323151e5cba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326239"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Actualizar windows10MobileCompliancePolicy
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

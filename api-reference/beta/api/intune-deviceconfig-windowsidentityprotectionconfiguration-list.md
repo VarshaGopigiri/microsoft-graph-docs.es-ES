@@ -1,12 +1,13 @@
 ---
 title: Lista windowsIdentityProtectionConfigurations
 description: Propiedades de la lista y relaciones de los objetos windowsIdentityProtectionConfiguration.
-ms.openlocfilehash: 6f19d01a001596faff582793ce72048d8e02d376
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ce4e97da0477cbc79015271b36b86dfebef6a4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086031"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331307"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>Lista windowsIdentityProtectionConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso eventMessageRequest
 description: Un mensaje que representa una convocatoria de reunión.
-ms.openlocfilehash: b63778d868000c57d8a900b67d0554c6f6bef2bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089065"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335647"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso eventMessageRequest
 
@@ -91,8 +92,8 @@ Aquí tiene una representación JSON del recurso
 |importance|String| La importancia del mensaje: `Low`, `Normal` y `High`.|
 |inferenceClassification|String| Los valores posibles son: `Focused` y `Other`.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
-|isDraft|Booleano|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
-|isOutOfDate|Booleano|Indica si esta solicitud de reunión se ha realizado obsoleta por una solicitud más reciente.|
+|isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
+|isOutOfDate|Boolean|Indica si esta solicitud de reunión se ha realizado obsoleta por una solicitud más reciente.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora de la última modificación del mensaje.|
@@ -126,7 +127,7 @@ Aquí tiene una representación JSON del recurso
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Lee las propiedades y las relaciones del objeto eventMessage.|
-|[Crear datos adjuntos](../api/eventmessage-post-attachments.md) |[Dato adjunto](attachment.md)| Crea un dato adjunto nuevo publicándolo en la colección de datos adjuntos.|
+|[Crear datos adjuntos](../api/eventmessage-post-attachments.md) |[Datos adjuntos](attachment.md)| Crea un dato adjunto nuevo publicándolo en la colección de datos adjuntos.|
 |[Enumerar datos adjuntos](../api/eventmessage-list-attachments.md) |Colección [attachment](attachment.md)| Obtiene una colección de objetos de datos adjuntos.|
 |[Actualizar](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Actualiza el objeto eventMessage. |
 |[Eliminar](../api/eventmessage-delete.md) | Ninguno |Elimina el objeto eventMessage. |

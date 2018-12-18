@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsKioskActiveDirectoryGroup
 description: La clase que se usa para identificar un grupo de Active Directory de Azure para la configuración de quiosco
-ms.openlocfilehash: 18e876b50bdc8c8946bd511348d6ed3a6fc8fe5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 618b93182d17d485a35d2567f45c218c6117658f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331780"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>tipo de recurso windowsKioskActiveDirectoryGroup
 

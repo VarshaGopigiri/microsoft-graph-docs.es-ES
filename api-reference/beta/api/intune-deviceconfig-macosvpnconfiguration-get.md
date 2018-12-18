@@ -1,12 +1,13 @@
 ---
 title: Obtener macOSVpnConfiguration
 description: Leer las propiedades y las relaciones del objeto macOSVpnConfiguration.
-ms.openlocfilehash: 382869759bee49e85f95a47a66c68b0908e00ae0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1ce22b619db9b59dd89f53885ed9b48c360af8f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087749"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335857"
 ---
 # <a name="get-macosvpnconfiguration"></a>Obtener macOSVpnConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

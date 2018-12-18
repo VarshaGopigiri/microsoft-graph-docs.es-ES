@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 description: Entidad del resumen de aprendizaje sobre la red de Windows Information Protection.
-ms.openlocfilehash: 3b678e8dca28fca425b04e5722e54f63d3b20ba2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed66e40c9a7358b19fc7a852485e138214a2aad8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088868"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334856"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 

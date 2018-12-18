@@ -1,12 +1,13 @@
 ---
 title: Crear grupo
 description: 'Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:'
-ms.openlocfilehash: 63cb04ad1b7bd8bfbe0798b53f28b5b16e0b795f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2fff86d3bc86a8e78c295b1a4553006ac416ddd1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029763"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322963"
 ---
 # <a name="create-group"></a>Crear grupo
 Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:
@@ -33,9 +34,9 @@ POST /groups
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la siguiente tabla se muestra las propiedades del recurso de [grupo](../resources/group.md) para especificar cuando se crea un grupo. 

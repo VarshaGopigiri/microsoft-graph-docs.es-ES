@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso osVersionCount
 description: Recuento de dispositivos con malware para cada versión del sistema operativo
-ms.openlocfilehash: 7892761bd0dc20f09ab2deb47549aeb157e25644
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccc031c6060604b36166b4869d02f08854dfdd2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332000"
 ---
 # <a name="osversioncount-resource-type"></a>tipo de recurso osVersionCount
 

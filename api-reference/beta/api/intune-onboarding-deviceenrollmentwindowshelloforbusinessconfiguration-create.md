@@ -1,12 +1,13 @@
 ---
 title: Crear deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Cree un objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: d653affdbe724fd80dc665839d73f49ee2fc15c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f45ad5764521c8ab94ab4742764ee4a73ddfc660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085521"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335073"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Crear deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -58,7 +59,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
-|estado|[Habilitación de](../resources/intune-shared-enablement.md)|Todavía no está documentada. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
+|state|[Habilitación de](../resources/intune-shared-enablement.md)|Todavía no está documentada. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
 |securityDeviceRequired|Booleano|Todavía no documentado|
 |unlockWithBiometricsEnabled|Booleano|Todavía no documentado|
 |remotePassportEnabled|Booleano|Todavía no documentado|

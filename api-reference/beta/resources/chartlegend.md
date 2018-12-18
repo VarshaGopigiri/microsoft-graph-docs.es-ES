@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartLegend
 description: Representa la leyenda de un gráfico.
-ms.openlocfilehash: d01eee45245d17fb142ddb75b70a6cde6a89213c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 67a55f0286bcf57157cd9912bb03ba0bd6506517
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089882"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326407"
 ---
 # <a name="chartlegend-resource-type"></a>Tipo de recurso ChartLegend
 
@@ -20,7 +21,7 @@ Representa la leyenda de un gráfico.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get ChartLegend](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |Lee las propiedades y relaciones del objeto chartLegend.|
-|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |Actualiza el objeto ChartLegend. |
+|[Actualizar](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |Actualiza el objeto ChartLegend. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

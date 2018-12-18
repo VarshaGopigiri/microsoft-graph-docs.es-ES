@@ -1,12 +1,13 @@
 ---
 title: Crear cartToClassAssociation
 description: Crear un nuevo objeto cartToClassAssociation.
-ms.openlocfilehash: 87e4a21a998e4226d429bfd92fca5560b9d716e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ed7ef088acca7908ece1e0b5e61797bb54a2e9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090153"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330656"
 ---
 # <a name="create-carttoclassassociation"></a>Crear cartToClassAssociation
 
@@ -36,7 +37,7 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Get ChartAxis
 description: Recuperar las propiedades y las relaciones del objeto chartaxis.
-ms.openlocfilehash: 9738c49d768f45ae1ce134d36b227995f1b2df4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1ced1a11acb125e0c1411a2e08507b580919c705
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028890"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335773"
 ---
 # <a name="get-chartaxis"></a>Get ChartAxis
 

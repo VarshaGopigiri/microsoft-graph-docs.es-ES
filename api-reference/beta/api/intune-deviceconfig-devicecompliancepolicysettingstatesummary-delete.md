@@ -1,12 +1,13 @@
 ---
 title: Eliminar deviceCompliancePolicySettingStateSummary
 description: Elimina un deviceCompliancePolicySettingStateSummary.
-ms.openlocfilehash: d6b1d965b184e189f98f8f9495824eacdd3b324f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7f56c2fd222f50cb57b9f86a4c7cc9f49c709f06
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084530"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332924"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Eliminar deviceCompliancePolicySettingStateSummary
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

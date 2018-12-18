@@ -1,12 +1,13 @@
 ---
 title: Actualizar depOnboardingSetting
 description: Actualizar las propiedades de un objeto depOnboardingSetting.
-ms.openlocfilehash: 931df96b837610044a8c9337fa1fbd5de2a3d52d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d4a50c485da98a182562ca5bd353d71dd854b4f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083210"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326785"
 ---
 # <a name="update-deponboardingsetting"></a>Actualizar depOnboardingSetting
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -52,13 +53,13 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |lastModifiedDateTime|DateTimeOffset|Cuando el servicio fue onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Cuando el syned último servicio con Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Cuando Intune solicitada por última vez una sincronización.|
-|shareTokenWithSchoolDataSyncService|Booleano|Si el símbolo (token) de la característica Dep compartir está habilitada o no con el servicio de sincronización de datos de School.|
+|shareTokenWithSchoolDataSyncService|Boolean|Si el símbolo (token) de la característica Dep compartir está habilitada o no con el servicio de sincronización de datos de School.|
 |lastSyncErrorCode|Int32|Código de error que informa Apple durante la última sincronización de la característica dep.|
 |TokenType en|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtiene o establece el tipo de símbolo (token) de la característica Dep. Los valores posibles son: `none`, `dep` y `appleSchoolManager`.|
 |tokenName|String|Nombre descriptivo para la característica Dep símbolo (token)|
 |syncedDeviceCount|Int32|Obtiene sincronizado recuento de dispositivo|
 |defaultProfileDisplayName|String|Obtiene sincronizado recuento de dispositivo|
-|dataSharingConsentGranted|Booleano|Concede de consentimiento para uso compartido con Apple Dep servicio de datos|
+|dataSharingConsentGranted|Boolean|Concede de consentimiento para uso compartido con Apple Dep servicio de datos|
 
 
 

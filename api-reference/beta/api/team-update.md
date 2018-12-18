@@ -1,12 +1,13 @@
 ---
 title: Equipo de actualización
 description: Actualizar las propiedades del equipo especificado.
-ms.openlocfilehash: e5148b21fa832c45e1f89c1296fd0df64aaf71e0
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 19a3c55295bc54fcd7f1c9e24f88e386fc4dc2bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222481"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331923"
 ---
 # <a name="update-team"></a>Equipo de actualización
 

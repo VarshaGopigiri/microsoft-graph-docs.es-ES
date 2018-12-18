@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsKioskAzureADUser
 description: La clase que se usa para identificar una cuenta de usuario de AzureAD para la configuración de quiosco
-ms.openlocfilehash: 22e71ab10ac7fb755050e8d6e5d19568bef2fae8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4048b4cbea592af350af20bf433ca00ac6d4980
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086327"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330075"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>tipo de recurso windowsKioskAzureADUser
 

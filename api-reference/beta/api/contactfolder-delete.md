@@ -1,12 +1,13 @@
 ---
 title: Eliminar contactFolder.
 description: Elimina una contactFolder que no sea la predeterminada.
-ms.openlocfilehash: dd1ed79981051a1fbbc362e8f586281aa2659b57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 26ff5f9a2ef78d33fd60b498e891f031891b6f17
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086933"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334016"
 ---
 # <a name="delete-contactfolder"></a>Eliminar contactFolder.
 
@@ -29,9 +30,9 @@ DELETE /me/contactFolders/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

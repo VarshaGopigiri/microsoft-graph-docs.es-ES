@@ -1,12 +1,13 @@
 ---
 title: Obtener targetedManagedAppPolicyAssignment
 description: Lea las propiedades y los relaciones del objeto targetedManagedAppPolicyAssignment.
-ms.openlocfilehash: 863c3aad782e7badc97008df1c8fb755b77f2f89
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c37e804d221071136876a31029867ed63e2aec3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336228"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>Obtener targetedManagedAppPolicyAssignment
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

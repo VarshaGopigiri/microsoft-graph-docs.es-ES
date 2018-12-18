@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración win32LobAppMsiPackageType
 description: Indica el tipo de paquete de un Win32LobApp de MSI.
-ms.openlocfilehash: 64b3c4a3b7b946df9bb4e7e932e4cab2a0b6b97b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7caf13d48dda3cf8e1b88605c575ae5f6322c6fe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089157"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335682"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>tipo de enumeración win32LobAppMsiPackageType
 

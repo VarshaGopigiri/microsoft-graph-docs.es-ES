@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración androidForWorkDefaultAppPermissionPolicyType
 description: Tipo de directiva de permisos de aplicación de Android para trabajo predeterminada.
-ms.openlocfilehash: dd444a948591070e0695d5218daab1e1781c2ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 75e04b762a1c573bf47a14ed5b850fe909818bfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085407"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328913"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>tipo de enumeración androidForWorkDefaultAppPermissionPolicyType
 
@@ -19,7 +20,7 @@ Tipo de directiva de permisos de aplicación de Android para trabajo predetermin
 |Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
-|símbolo del sistema|1|El mensaje.|
+|prompt|1|El mensaje.|
 |autoGrant|2|Concesión automática.|
 |autoDeny|3|Denegar automáticamente.|
 

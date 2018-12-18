@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso directoryObjectPartnerReference
 description: Representa una referencia a un objeto de directorio en un inquilino de socio. Se hereda de directoryObject.
-ms.openlocfilehash: ebdd7380eaa6b59488aca46120339f7175b640fa
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: lleonard-msft
+ms.openlocfilehash: 37a60c126ef74f3073f258ba799cf276fda4f5cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27224130"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336949"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración windowsHelloForBusinessPinUsage
 description: Windows Hello para opciones de uso de pin de negocio
-ms.openlocfilehash: 7f199a25d08f95e967c3bd48491a83ad7a54a1bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91581880adbdb4074af7ecfd25f7e2e7387b60eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031465"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336760"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enumeración windowsHelloForBusinessPinUsage
 

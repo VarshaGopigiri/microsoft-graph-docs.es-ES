@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso mobileAppTroubleshootingAppStateHistory
 description: Elemento de historial de contenidos en el evento de solución de problemas de aplicación móvil.
-ms.openlocfilehash: 415d018d3650819bce8defe651af8df77e3c6032
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ebe38b852c6c6926b69e75379bc1a029ade0bb98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085514"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332161"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppStateHistory
 

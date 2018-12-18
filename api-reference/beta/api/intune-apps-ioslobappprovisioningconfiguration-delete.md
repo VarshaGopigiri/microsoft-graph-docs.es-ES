@@ -1,12 +1,13 @@
 ---
 title: Eliminar iosLobAppProvisioningConfiguration
 description: Elimina un iosLobAppProvisioningConfiguration.
-ms.openlocfilehash: 1a2557474ee3862cc3962337e5c64cc6821b690e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 382e067e56f367f3c4b6535c20f848d2db0ebe5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083950"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335542"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>Eliminar iosLobAppProvisioningConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

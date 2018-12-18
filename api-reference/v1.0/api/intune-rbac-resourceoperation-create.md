@@ -1,12 +1,13 @@
 ---
 title: Crear resourceOperation
 description: Cree un objeto resourceOperation.
-ms.openlocfilehash: 40f8c7175c5f6ad5e2885fe7e893bba118458be1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f75cfee95b798a38942f70e313f4c18dda7aabe8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328710"
 ---
 # <a name="create-resourceoperation"></a>Crear resourceOperation
 
@@ -34,7 +35,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

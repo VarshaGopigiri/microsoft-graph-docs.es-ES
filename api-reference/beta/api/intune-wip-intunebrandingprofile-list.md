@@ -1,12 +1,13 @@
 ---
 title: Lista intuneBrandingProfiles
 description: Propiedades de la lista y relaciones de los objetos intuneBrandingProfile.
-ms.openlocfilehash: 0c7fa1a191de73ea5042e319489633388b1f95df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 864cdd86eac9f0b22eb66ecc930a1f900e9e83e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089146"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336263"
 ---
 # <a name="list-intunebrandingprofiles"></a>Lista intuneBrandingProfiles
 
@@ -36,7 +37,7 @@ GET /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

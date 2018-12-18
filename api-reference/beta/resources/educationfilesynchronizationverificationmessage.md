@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationFileSynchronizationVerificationMessage
 description: Representa un error devuelto al cliente en respuesta a una solicitud para iniciar la sincronización de perfiles de datos de school basada en CSV. El recurso va a contener errores derivados de la comprobación. Los usuarios deben corregir los datos de origen antes de reiniciar la solicitud para sincronizar con Azure Active Directory (AD Azure).
-ms.openlocfilehash: cf685e0619c5600340df68ba86ecaef11a8a435d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: f2826f779aac3ba41146b6677f3d1e0364be92a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083529"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336067"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>tipo de recurso educationFileSynchronizationVerificationMessage
 

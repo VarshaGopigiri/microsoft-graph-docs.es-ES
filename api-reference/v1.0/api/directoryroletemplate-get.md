@@ -1,12 +1,13 @@
 ---
 title: Get directoryRoleTemplate
 description: Recupera las propiedades y relaciones de un objeto directoryroletemplate.
-ms.openlocfilehash: 2d5a49f149edfddc8ccc0fd199632a9832c133a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 1b001f0f648b1ac23c7f7b9445ee5f0f3b6a2354
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333820"
 ---
 # <a name="get-directoryroletemplate"></a>Get directoryRoleTemplate
 
@@ -29,9 +30,9 @@ GET /directoryRoleTemplates/{id}
 Este método **no** es compatible con los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para facilitar la personalización de la respuesta (por ejemplo, aquí no se admite $filter).
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

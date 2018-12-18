@@ -1,12 +1,13 @@
 ---
 title: Eliminar deviceEnrollmentLimitConfiguration
 description: Elimina un deviceEnrollmentLimitConfiguration.
-ms.openlocfilehash: a12e5d3d7733f2c6fb3825d341b06548fe193994
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31ae7c60f6a7014ef2203f11a60e4ff3b7d8c522
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082919"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336277"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>Eliminar deviceEnrollmentLimitConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

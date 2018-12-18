@@ -1,12 +1,13 @@
 ---
 title: Enumerar profesores
 description: Recupere una lista de profesores de una clase. Los tokens delegados deben ser miembros de la clase para obtener la lista de profesores.
-ms.openlocfilehash: 890bb08625852a221a64f1f70408f5bec22e81db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 665f98c9d637358529d581a286a764ebfb93d7d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031107"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331601"
 ---
 # <a name="list-teachers"></a>Enumerar profesores
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración androidWorkProfileRequiredPasswordType
 description: Perfil de trabajo Android requiere contraseña, escriba.
-ms.openlocfilehash: f9cdf225f9fe7dfc42fb728bad615a7abde11bef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 64b5dfcd5b919a428ef6823856dbf67102a316c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029045"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331664"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>tipo de enumeración androidWorkProfileRequiredPasswordType
 

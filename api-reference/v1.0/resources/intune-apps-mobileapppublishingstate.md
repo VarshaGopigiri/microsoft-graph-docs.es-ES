@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración mobileAppPublishingState
 description: Indica el estado de publicación de una aplicación.
-ms.openlocfilehash: 458c38f6e53bc5590d4414d8c288cdd88739bcc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c1c89bc67a6f5c9732089b5f85ded77986b16689
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031481"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329557"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>tipo de enumeración mobileAppPublishingState
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración teamsAsyncOperationStatus
 description: Describe el estado actual de un teamsAsyncOperation.
-ms.openlocfilehash: f553242ace983651b8d4fda77370de712f9d08b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 49b5b81999714627b1a1acd42df208594123b262
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084099"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332007"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enumeración teamsAsyncOperationStatus
 

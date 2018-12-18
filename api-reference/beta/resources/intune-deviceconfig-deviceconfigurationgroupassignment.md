@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso deviceConfigurationGroupAssignment
 description: Asignación de grupo de configuración de dispositivo.
-ms.openlocfilehash: 8e4f5b5d2e90b646e7b3c085b33a9a8c0f2a90c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 648edd8122c4e14ad06a6e8b19e5fb83a042affa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088364"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334639"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>tipo de recurso deviceConfigurationGroupAssignment
 
@@ -29,7 +30,7 @@ Asignación de grupo de configuración de dispositivo.
 |:---|:---|:---|
 |id|String|Clave de la entidad.|
 |targetGroupId|String|El identificador del grupo AAD, nuestro destino son para la configuración del dispositivo.|
-|excludeGroup|Booleano|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
+|excludeGroup|Boolean|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|
