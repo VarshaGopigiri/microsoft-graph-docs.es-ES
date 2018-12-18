@@ -1,12 +1,13 @@
 ---
 title: Obtener iosImportedPFXCertificateProfile
 description: Leer las propiedades y las relaciones del objeto iosImportedPFXCertificateProfile.
-ms.openlocfilehash: d9be44dd4ff9099212fc0c9729272cb7e034bdd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d12dfdad92a672d4515ae6190d6ce5de73845b3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350872"
 ---
 # <a name="get-iosimportedpfxcertificateprofile"></a>Obtener iosImportedPFXCertificateProfile
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

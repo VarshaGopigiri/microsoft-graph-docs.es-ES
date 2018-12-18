@@ -1,12 +1,13 @@
 ---
 title: Create registeredOwner
 description: Agrega un usuario como propietario registrado del dispositivo.
-ms.openlocfilehash: 976f4f788716ad1e739ceeaaa1db61963b002f45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f261ed82990f482b804617d66a02dc03244500f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351068"
 ---
 # <a name="create-registeredowner"></a>Create registeredOwner
 
@@ -28,9 +29,9 @@ POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryObject](../resources/directoryobject.md).

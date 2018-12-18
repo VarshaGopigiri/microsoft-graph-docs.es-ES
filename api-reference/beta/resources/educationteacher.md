@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso educationTeacher
 description: Información adicional que se agrega a un educationUser que se presenta cuando el primaryRole de un usuario es `teacher`.
-ms.openlocfilehash: 37fd46ee00f82b518d91969b1793147be859efdf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: ca174381fe8722c5b96848ced1d0e09b469068f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351663"
 ---
 # <a name="educationteacher-resource-type"></a>Tipo de recurso educationTeacher
 

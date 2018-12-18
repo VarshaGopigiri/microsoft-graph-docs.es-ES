@@ -1,12 +1,13 @@
 ---
 title: Crear circularGeofenceManagementCondition
 description: Crear un nuevo objeto circularGeofenceManagementCondition.
-ms.openlocfilehash: 1d25e2e8f712683462e7751b4ca874403b750da2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe99dd39aeeee3f9db3e15bdb61c0f3df1c937ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352118"
 ---
 # <a name="create-circulargeofencemanagementcondition"></a>Crear circularGeofenceManagementCondition
 
@@ -37,7 +38,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Eliminar macOSWiFiConfiguration
 description: Elimina un macOSWiFiConfiguration.
-ms.openlocfilehash: 8bc4bd78bd0744d2aa0737a4e030b18e4b7cb9c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e8bdfaffb59648b5ac11eb1b3bcf1c7f3a0fe91
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355513"
 ---
 # <a name="delete-macoswificonfiguration"></a>Eliminar macOSWiFiConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

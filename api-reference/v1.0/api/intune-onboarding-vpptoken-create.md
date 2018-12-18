@@ -1,12 +1,13 @@
 ---
 title: Crear vppToken
 description: Crea un nuevo objeto vppToken.
-ms.openlocfilehash: fb33bcb1770dd50c95707a60edde121a9667f1e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 029af74ac49b6e95412f32a82bf57e69a78ffe4f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351320"
 ---
 # <a name="create-vpptoken"></a>Crear vppToken
 
@@ -34,7 +35,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

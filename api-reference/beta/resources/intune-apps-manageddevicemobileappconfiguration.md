@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedDeviceMobileAppConfiguration
 description: Una clase abstracta para la configuración de aplicaciones móviles para dispositivos inscritos.
-ms.openlocfilehash: c829e720e8d998428e778e5b7bf20e5fe465dfd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a533d5d7c15a32d811a7fd23f9ab39b89db9b7da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083036"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352041"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfiguration
 

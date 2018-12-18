@@ -1,12 +1,13 @@
 ---
 title: Obtener managedIOSStoreApp
 description: Lea las propiedades y las relaciones del objeto managedIOSStoreApp.
-ms.openlocfilehash: f6a06bdb6295bce4e5a46284cba57b1730cc3174
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cebe7a431b7b41f3f1cb05e4464e932118322516
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032013"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351544"
 ---
 # <a name="get-managediosstoreapp"></a>Obtener managedIOSStoreApp
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

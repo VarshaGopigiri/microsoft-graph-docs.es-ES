@@ -1,12 +1,13 @@
 ---
 title: 'group: resetUnseenCount'
 description: Restablecer el unseenCount de todas las entradas del blog que el usuario actual no ha visto desde la última visita. Compatible con sólo los grupos de Office 365.
-ms.openlocfilehash: b6218176f097759870aad4a3a2908759862002e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f63a3668bc9059819c09bdc43dd78a138196a241
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090424"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350158"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 

@@ -1,12 +1,13 @@
 ---
 title: Actualizar androidForWorkSettings
 description: Actualice las propiedades de un objeto androidForWorkSettings.
-ms.openlocfilehash: 58d47117dd574dd6adf96f0ebeb46768c8c7368b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5514de226d138291743c5b017a50682e91e1e9ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352545"
 ---
 # <a name="update-androidforworksettings"></a>Actualizar androidForWorkSettings
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/androidForWorkSettings
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -55,7 +56,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |lastModifiedDateTime|DateTimeOffset|Última hora de modificación para la configuración de Android for Work|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Indica qué usuarios pueden inscribirse dispositivos para Android para administración de dispositivos de trabajo. Los valores posibles son: `none`, `all`, `targeted` y `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Colección String|Especifica los grupos de AAD que pueden inscribir dispositivos en la administración de dispositivos de Android for Work si se establece enrollmentTarget en "Dirigido"|
-|deviceOwnerManagementEnabled|Booleano|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
+|deviceOwnerManagementEnabled|Boolean|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
 
 
 

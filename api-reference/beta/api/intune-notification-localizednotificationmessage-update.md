@@ -1,12 +1,13 @@
 ---
 title: Actualizar localizedNotificationMessage
 description: Actualice las propiedades de un objeto localizedNotificationMessage.
-ms.openlocfilehash: d61f97d44e4c5b2e6f5b17e1538620f774200a18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 915a053501f40633be8662fb7196a84ff9db4b1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084335"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351796"
 ---
 # <a name="update-localizednotificationmessage"></a>Actualizar localizedNotificationMessage
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -51,7 +52,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |configuración regional|String|La configuración regional para la que se destina este mensaje.|
 |subject|String|El asunto de la plantilla del mensaje.|
 |messageTemplate|String|El contenido de la plantilla del mensaje.|
-|isDefault|Booleano|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
+|isDefault|Boolean|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
 
 
 

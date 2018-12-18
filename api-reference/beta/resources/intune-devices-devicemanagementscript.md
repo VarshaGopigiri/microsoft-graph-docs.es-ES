@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso deviceManagementScript
 description: Intune proporcionará al cliente la capacidad de ejecutar sus secuencias de comandos de Powershell en los dispositivos de Azure Active Directory se unió a windows inscritos 10. La secuencia de comandos se puede ejecutar una vez o periódicamente.
-ms.openlocfilehash: c9d1a20eeaeb9b825fbdb553c702bf85ae272f25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085802"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351425"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso deviceManagementScript
 
@@ -36,7 +37,7 @@ Intune proporcionará al cliente la capacidad de ejecutar sus secuencias de coma
 |createdDateTime|DateTimeOffset|La fecha y hora de que creación de la secuencia de comandos de administración de dispositivos.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de que última modificación de la secuencia de comandos de administración de dispositivos.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica el tipo de la secuencia de comandos de administración de dispositivos se ejecuta en el contexto de ejecución. Los valores posibles son: `system` y `user`.|
-|enforceSignatureCheck|Booleano|Indicar si se debe comprobar la firma de la secuencia de comandos.|
+|enforceSignatureCheck|Boolean|Indicar si se debe comprobar la firma de la secuencia de comandos.|
 |fileName|String|Nombre de archivo de secuencia de comandos.|
 
 ## <a name="relationships"></a>Relaciones

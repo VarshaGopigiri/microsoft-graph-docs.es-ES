@@ -1,12 +1,13 @@
 ---
 title: Obtener mobileAppContentFile
 description: Lea las propiedades y las relaciones del objeto mobileAppContentFile.
-ms.openlocfilehash: b34b92f48dca7fb70bcd7e40f6b81d7a10d187de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f72f132b8c6e1c1b08a487abd95391f639683a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088098"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350599"
 ---
 # <a name="get-mobileappcontentfile"></a>Obtener mobileAppContentFile
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

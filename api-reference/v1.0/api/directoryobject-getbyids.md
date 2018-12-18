@@ -1,12 +1,13 @@
 ---
 title: Obtener objetos de directorio a partir de una lista de identificadores
 description: Seleccione ' opción de consulta no está disponible para esta operación.
-ms.openlocfilehash: 4a2b765d71fe799195a4afcd404ba21718fa87c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350508"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obtener objetos de directorio a partir de una lista de identificadores
 
@@ -38,16 +39,16 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro   | Tipo |Descripción|
+| Parámetro   | Type |Descripción|
 |:---------------|:--------|:----------|
 |ids|Colección string| Una colección de identificadores para devolverles objetos. Se pueden especificar hasta 1000 identificadores. |
 |types|Colección string| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos para buscar. Si no se especifica, el valor predeterminado es [directoryObject](../resources/directoryobject.md), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que se deriva de `directoryObject` pueden especificarse en la colección; Por ejemplo: [usuario](../resources/user.md), [grupo](../resources/group.md), [dispositivo](../resources/device.md)y así sucesivamente. Los valores no distinguen mayúsculas de minúsculas.|

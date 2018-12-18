@@ -1,12 +1,13 @@
 ---
 title: Obtener managedDeviceMobileAppConfigurationDeviceStatus
 description: Leer las propiedades y las relaciones del objeto managedDeviceMobileAppConfigurationDeviceStatus.
-ms.openlocfilehash: 2dfa08ae817c2ffbf4fcfdf241eb190942efe904
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 86a0bcf94cdfb06b3d6c70352983321a8d91a7c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085533"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352881"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>Obtener managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

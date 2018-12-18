@@ -1,12 +1,13 @@
 ---
 title: 'participante: configureMixer'
 description: Configurar cómo audio mixto para los diferentes participantes en una conversación entre varias partes.
-ms.openlocfilehash: 58ccdcb345d55ae28b30dd5ded6b95ef5b30fe81
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: e300d842ce0bad870160d2f3788b059de6d41784
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156007"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351992"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Type    |Descripción|
 |:---------------|:--------|:----------|
 |participantMixerLevels|colección de [participantMixerLevel](../resources/participantmixerlevel.md)| Configuración del Mezclador de niveles para indicar participante de audio.|
 |clientContext|String|El contexto de cliente.|

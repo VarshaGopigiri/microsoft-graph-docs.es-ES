@@ -1,12 +1,13 @@
 ---
 title: Obtener androidStoreApp
 description: Lea las propiedades y las relaciones del objeto androidStoreApp.
-ms.openlocfilehash: 6dac1708444de2f4e53570649837b3926ad1c292
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ab705f2b8c009ecc7ab6f27257b6bf4572188fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030678"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351467"
 ---
 # <a name="get-androidstoreapp"></a>Obtener androidStoreApp
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

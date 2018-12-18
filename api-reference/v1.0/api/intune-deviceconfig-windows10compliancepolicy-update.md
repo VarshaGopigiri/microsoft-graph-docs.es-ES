@@ -1,12 +1,13 @@
 ---
 title: Actualizar windows10CompliancePolicy
 description: Actualice las propiedades de un objeto windows10CompliancePolicy.
-ms.openlocfilehash: ab2d9c76f46ed00f5a0ae20620d8562a9439ad23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2e1fe8fb9894e15ed1b122760ddb9d6536ca60f6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350179"
 ---
 # <a name="update-windows10compliancepolicy"></a>Actualizar windows10CompliancePolicy
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Booleano|Exige una contraseña para desbloquear el dispositivo Windows.|
+|passwordRequired|Boolean|Exige una contraseña para desbloquear el dispositivo Windows.|
 |passwordBlockSimple|Booleano|Indica si quiere bloquear o no la contraseña simple.|
 |passwordRequiredToUnlockFromIdle|Booleano|Exige una contraseña para desbloquear el dispositivo inactivo.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|

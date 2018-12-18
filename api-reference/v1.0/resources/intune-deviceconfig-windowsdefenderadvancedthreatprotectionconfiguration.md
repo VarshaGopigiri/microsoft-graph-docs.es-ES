@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 description: Configuración de Protección contra amenazas avanzada de Windows Defender.
-ms.openlocfilehash: 343f6a6cd019460343e9103c77bdb1c15896d35f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 349310a08b279bc56ee85ef4d07b5f6a6f7f03e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029522"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350060"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -35,7 +36,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowSampleSharing|Booleano|Regla "Permitir el uso compartido de muestras" de Windows Defender AdvancedThreatProtection|
-|enableExpeditedTelemetryReporting|Booleano|Acelere la frecuencia de informes de telemetría de Protección contra amenazas avanzada de Windows Defender.|
+|enableExpeditedTelemetryReporting|Boolean|Acelere la frecuencia de informes de telemetría de Protección contra amenazas avanzada de Windows Defender.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración folderProtectionType
 description: Valores posibles de protección de carpeta
-ms.openlocfilehash: a02f1602f8b9a962124fb7bf2a9731662a6f3057
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 93df62da9bb5d849cba86b52384f45bfe7bd760f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350606"
 ---
 # <a name="folderprotectiontype-enum-type"></a>tipo de enumeración folderProtectionType
 

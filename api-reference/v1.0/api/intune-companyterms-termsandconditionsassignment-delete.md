@@ -1,12 +1,13 @@
 ---
 title: Eliminar termsAndConditionsAssignment
 description: Elimina un termsAndConditionsAssignment
-ms.openlocfilehash: c0d51e399d710df4f4c4fb75259c1ada0501f82b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 33512787976a0c1dad8dd9f79cfa7c1a30ca0d36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350795"
 ---
 # <a name="delete-termsandconditionsassignment"></a>Eliminar termsAndConditionsAssignment
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

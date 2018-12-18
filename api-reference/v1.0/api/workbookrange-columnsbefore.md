@@ -1,12 +1,13 @@
 ---
 title: 'workbookRange: columnsBefore'
 description: Obtiene un número determinado de columnas a la izquierda del rango especificado.
-ms.openlocfilehash: c6214baadd520637554038b0f344efaa066533ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f1c97de44daceb4243d3320451b0b3c558b82163
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032245"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350354"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -30,7 +31,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |count|Int32|Opcional. El número de columnas que se va a incluir en el rango resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.|
 

@@ -1,12 +1,13 @@
 ---
 title: 'TableColumnCollection: add'
 description: Agrega una nueva columna a la tabla.
-ms.openlocfilehash: 64b6fd2c91642c3f7dd6f5d3e6aaa89b526a28a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a0897dc4eff387d14643b0a067ef92ad79755614
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350025"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |index|number|Especifica la posición relativa de la nueva columna. La columna anterior en esta posición se desplaza hacia la derecha. El valor de índice debe ser igual o menor que el valor de índice de la última columna, por lo que no puede usarse para agregar una columna al final de la tabla. Indizado con cero.|
 |values|(boolean, string o number)|Opcional. Matriz bidimensional de valores sin formato de la columna de la tabla.|

@@ -1,12 +1,13 @@
 ---
 title: Crear windows10MobileCompliancePolicy
 description: Crear un objeto windows10MobileCompliancePolicy.
-ms.openlocfilehash: 692c8d5188e59223648d3bacbf01286502c70e82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 83212832e52014635d6ea577ade775f823a76e59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087519"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352895"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>Crear windows10MobileCompliancePolicy
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -69,7 +70,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |secureBootEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; el arranque seguro está habilitado.|
 |codeIntegrityEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos.|
 |storageRequireEncryption|Booleano|Exige el cifrado en dispositivos Windows.|
-|activeFirewallRequired|Booleano|Requiere un servidor de seguridad activo en los dispositivos de Windows.|
+|activeFirewallRequired|Boolean|Requiere un servidor de seguridad activo en los dispositivos de Windows.|
 |validOperatingSystemBuildRanges|colección de [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|El sistema operativo válido crear rangos en los dispositivos de Windows. Esta colección puede contener un máximo de 10 000 elementos.|
 
 

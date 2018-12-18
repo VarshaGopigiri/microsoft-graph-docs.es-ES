@@ -1,12 +1,13 @@
 ---
 title: Obtener mobileAppIntentAndState
 description: Leer las propiedades y las relaciones del objeto mobileAppIntentAndState.
-ms.openlocfilehash: 837165f713aea00061b721a41003adc479a46b4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 18a73a1ca4c8c832ff4d69c1a61c876f4d88e2a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085704"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352671"
 ---
 # <a name="get-mobileappintentandstate"></a>Obtener mobileAppIntentAndState
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

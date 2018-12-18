@@ -1,12 +1,13 @@
 ---
 title: Obtener androidForWorkGeneralDeviceConfiguration
 description: Leer las propiedades y las relaciones del objeto androidForWorkGeneralDeviceConfiguration.
-ms.openlocfilehash: 37db9cbbb41fa7f44fa1a6ddacaf732f5436ac36
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 88478f99c69a197e6648c27fa90a3793b4620cb3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089736"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354897"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>Obtener androidForWorkGeneralDeviceConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

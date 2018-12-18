@@ -1,12 +1,13 @@
 ---
 title: Obtener deviceManagementExchangeConnector
 description: Lea las propiedades y las relaciones del objeto deviceManagementExchangeConnector.
-ms.openlocfilehash: c9d3eda0c845acb2b611d2416d12676c0f2905e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 98507354a3f0501d22d24e28177c9769f744153b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091120"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351831"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Obtener deviceManagementExchangeConnector
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

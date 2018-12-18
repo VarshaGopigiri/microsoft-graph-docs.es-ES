@@ -1,12 +1,13 @@
 ---
 title: 'participante: silenciar'
 description: Desactivar a un participante específico en la llamada.
-ms.openlocfilehash: 939fd0fd94304318786b0ecb7ae72da28b55e4b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: ea84b2944b9a9dd75a72f05f6fa5c4327068e271
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085931"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350074"
 ---
 # <a name="participant-mute"></a>participante: silenciar
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Type    |Descripción|
 |:---------------|:--------|:----------|
 |clientContext|String|El contexto de cliente.|
 

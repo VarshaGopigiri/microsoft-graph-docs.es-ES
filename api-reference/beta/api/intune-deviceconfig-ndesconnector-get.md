@@ -1,12 +1,13 @@
 ---
 title: Obtener ndesConnector
 description: Leer las propiedades y las relaciones del objeto ndesConnector.
-ms.openlocfilehash: 3b9bc4efce46125e1d833da23ffc7cec4e8aae7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccff6dd13e37ccee19b9f86b91adcf2f6bbc9960
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085106"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352797"
 ---
 # <a name="get-ndesconnector"></a>Obtener ndesConnector
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

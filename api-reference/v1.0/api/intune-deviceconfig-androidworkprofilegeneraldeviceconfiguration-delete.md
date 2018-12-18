@@ -1,12 +1,13 @@
 ---
 title: Eliminar androidWorkProfileGeneralDeviceConfiguration
 description: Elimina un androidWorkProfileGeneralDeviceConfiguration.
-ms.openlocfilehash: d51e44a870ca1dac9031e8fb49a06a2540e94648
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4d9fc28fd367afed7e647af43ecee09cd37a85ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030257"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350347"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>Eliminar androidWorkProfileGeneralDeviceConfiguration
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

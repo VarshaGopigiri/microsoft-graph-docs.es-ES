@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windows10CompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para Windows 10.
-ms.openlocfilehash: efae6e687e972a21e9732613ea07e74465f664b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d67b3cb7b7d01f46240bdd53020ae6f0dd948158
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351285"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Tipo de recurso windows10CompliancePolicy
 
@@ -34,7 +35,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Booleano|Exige una contraseña para desbloquear el dispositivo Windows.|
+|passwordRequired|Boolean|Exige una contraseña para desbloquear el dispositivo Windows.|
 |passwordBlockSimple|Booleano|Indica si quiere bloquear o no la contraseña simple.|
 |passwordRequiredToUnlockFromIdle|Booleano|Exige una contraseña para desbloquear el dispositivo inactivo.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|

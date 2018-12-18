@@ -1,12 +1,13 @@
 ---
 title: Obtener windows10EasEmailProfileConfiguration
 description: Leer las propiedades y las relaciones del objeto windows10EasEmailProfileConfiguration.
-ms.openlocfilehash: c65abcfb8cd7219a7ab63013733a3bc5077483fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9990b00d68c0fd61fce0461a09574939dd52fe13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352139"
 ---
 # <a name="get-windows10easemailprofileconfiguration"></a>Obtener windows10EasEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

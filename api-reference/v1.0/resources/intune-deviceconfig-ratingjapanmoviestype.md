@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración ratingJapanMoviesType
 description: Películas clasificación etiquetas en Japón
-ms.openlocfilehash: 8c9f80d306290717e7c0d405e63bbc7c738f44a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c82a1f4e9a02ead429da8e74666341f5eedeef90
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028726"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352363"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>tipo de enumeración ratingJapanMoviesType
 

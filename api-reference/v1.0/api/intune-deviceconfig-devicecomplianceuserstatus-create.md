@@ -1,12 +1,13 @@
 ---
 title: Crear deviceComplianceUserStatus
 description: Cree un objeto deviceComplianceUserStatus.
-ms.openlocfilehash: ab4b20f463ec6d8e30b02ebc8eceb33b9637ed51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b5627999c3cbb3d895c7433fc71b6db2effd418
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353700"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Crear deviceComplianceUserStatus
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

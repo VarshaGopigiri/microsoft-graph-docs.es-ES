@@ -1,12 +1,13 @@
 ---
 title: Guía de limitación de Microsoft Graph
 description: La limitación restringe el número de llamadas simultáneas a un servicio para evitar el uso excesivo de los recursos. Microsoft Graph está diseñado para admitir un gran volumen de solicitudes. Si se produce un número abrumador de solicitudes, la limitación ayuda a mantener un rendimiento y fiabilidad óptimos del servicio Microsoft Graph.
-ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: d8f0c2098c76beaae65c5d84cc82e58949a0cebd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353217"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Guía de limitación de Microsoft Graph
 

@@ -1,12 +1,13 @@
 ---
 title: Actualizar iosUpdateDeviceStatus
 description: Actualice las propiedades de un objeto iosUpdateDeviceStatus.
-ms.openlocfilehash: 2b652dd6208dee20f164d57c92a8f0d322a58d8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2fab69e918d92e07ed28f3e12aa59db9d50c53b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350214"
 ---
 # <a name="update-iosupdatedevicestatus"></a>Actualizar iosUpdateDeviceStatus
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
