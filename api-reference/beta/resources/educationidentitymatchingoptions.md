@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationIdentityMatchingOptions
 description: Proporciona una asignación entre una propiedad de origen y una propiedad de destino para que coincidan con las cuentas de usuario. La propiedad source debe existir en el origen de datos. La propiedad de destino debe ser una propiedad válida en Azure Active Directory (AD Azure).
-ms.openlocfilehash: 2cabb255648f4089d437912a97bb7d29ff286779
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: bc2b99654d8e27d52ed92d9b55a32fdff8e730f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088550"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325434"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>tipo de recurso educationIdentityMatchingOptions
 

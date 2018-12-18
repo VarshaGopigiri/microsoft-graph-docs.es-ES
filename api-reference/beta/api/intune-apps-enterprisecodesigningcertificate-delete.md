@@ -1,12 +1,13 @@
 ---
 title: Eliminar enterpriseCodeSigningCertificate
 description: Elimina un enterpriseCodeSigningCertificate.
-ms.openlocfilehash: 3927b0a1588c9adc6cf1fb89918620aedf041148
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec733f23e30dc00d62496e9b2bbd1f90236bf2d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343851"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>Eliminar enterpriseCodeSigningCertificate
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSig
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

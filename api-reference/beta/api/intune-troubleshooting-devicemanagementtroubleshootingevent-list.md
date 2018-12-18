@@ -1,12 +1,13 @@
 ---
 title: Enumerar deviceManagementTroubleshootingEvents
 description: Enumere las propiedades y las relaciones de los objetos deviceManagementTroubleshootingEvent.
-ms.openlocfilehash: 23986beff3cf4d1874131b0341ef2ba118797c7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d159e6f851c1e3635a85be2ab123436e267493b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089835"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325280"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Enumerar deviceManagementTroubleshootingEvents
 
@@ -36,7 +37,7 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Eliminación de aplicación
 description: Elimina una aplicación.
-ms.openlocfilehash: fc1f315de3e12574d51c58c56c1f37f39bdcd980
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: e19ca94be2d8599f250908ab2aaa33d64b513b8d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343501"
 ---
 # <a name="delete-application"></a>Eliminación de aplicación
 
@@ -30,9 +31,9 @@ DELETE /applications/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

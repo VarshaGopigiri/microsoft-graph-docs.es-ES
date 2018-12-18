@@ -1,12 +1,13 @@
 ---
 title: Obtener microsoftStoreForBusinessApp
 description: Lea las propiedades y las relaciones del objeto microsoftStoreForBusinessApp.
-ms.openlocfilehash: 38c4560925160e06fd3335f53fec3ff23507b37b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 52bd1170d0f310dae2401f261fe5f92dd3444787
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032276"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343746"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Obtener microsoftStoreForBusinessApp
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

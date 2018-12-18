@@ -1,12 +1,13 @@
 ---
 title: Eliminar termsAndConditionsAcceptanceStatus
 description: Elimina un termsAndConditionsAcceptanceStatus.
-ms.openlocfilehash: d0ca800fbf9e131cd53a855d45bd2b571b35dd15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f43a59630d476e8333777a287f738b7f900cdbe4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359923"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Eliminar termsAndConditionsAcceptanceStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

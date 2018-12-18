@@ -1,12 +1,13 @@
 ---
 title: Lista androidForWorkWiFiConfigurations
 description: Propiedades de la lista y relaciones de los objetos androidForWorkWiFiConfiguration.
-ms.openlocfilehash: fcbaeced17e48575112e10a3cf593ef5f5b4592e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c07471de02b19e2bd3c201e5e36a63580e509268
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344999"
 ---
 # <a name="list-androidforworkwificonfigurations"></a>Lista androidForWorkWiFiConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Eliminar calendario
 description: Elimina un calendario que no sea el predeterminado.
-ms.openlocfilehash: ea020f5e8d10414fffceb0e44fd6e6f39ada294e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2285287911fcca961304c8b46d3508db554f95a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029346"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359244"
 ---
 # <a name="delete-calendar"></a>Eliminar calendario
 
@@ -35,9 +36,9 @@ DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre           |  Tipo    | Descripción|
+| Nombre           |  Type    | Descripción|
 |:---------------|:---------|:----------|
-| Authorization  |  string  | {token} de portador. Obligatorio. |
+| Autorización  |  string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

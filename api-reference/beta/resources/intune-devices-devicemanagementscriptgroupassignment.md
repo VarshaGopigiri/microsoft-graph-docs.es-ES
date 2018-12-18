@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso deviceManagementScriptGroupAssignment
 description: Contiene propiedades que se usan para asignar una secuencia de comandos de administración de dispositivos a un grupo.
-ms.openlocfilehash: e5128403e239f17cbd450726300da1aef3ada193
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 446e293ee3d4c0cc2071f6a93e01bcdf8cf72a2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086788"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345944"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>tipo de recurso deviceManagementScriptGroupAssignment
 

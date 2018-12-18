@@ -1,12 +1,13 @@
 ---
 title: Enumerar mdmWindowsInformationProtectionPolicies
 description: Enumere las propiedades y las relaciones de los objetos mdmWindowsInformationProtectionPolicy.
-ms.openlocfilehash: 46646fd279af29bbc3899627a7d3a3905c6eb209
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 065280f3897bf1eb3981a48c67aed089866187f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028934"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323866"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Enumerar mdmWindowsInformationProtectionPolicies
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

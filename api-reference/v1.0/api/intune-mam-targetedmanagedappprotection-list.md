@@ -1,12 +1,13 @@
 ---
 title: Enumerar targetedManagedAppProtections
 description: Enumere las propiedades y los relaciones de los objetos targetedManagedAppProtection.
-ms.openlocfilehash: 030f666cdfb75d133ec63d3192b77ccfb38419a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ba4564e9a1995356d7210c039394df30d040446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029947"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359272"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Enumerar targetedManagedAppProtections
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

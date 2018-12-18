@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración vppTokenSyncStatus
 description: Estados de sincronización posibles asociados con un token de programa de compra de volumen de Apple.
-ms.openlocfilehash: 443eb87299fbb052edf8788d07b029c68d58c2fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 18a0fcf9f4d22d7904cb76d1fc45d80b14dfc7d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089282"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344243"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>tipo de enumeración vppTokenSyncStatus
 

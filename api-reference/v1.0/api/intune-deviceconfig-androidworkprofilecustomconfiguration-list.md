@@ -1,12 +1,13 @@
 ---
 title: Lista androidWorkProfileCustomConfigurations
 description: Propiedades de la lista y relaciones de los objetos androidWorkProfileCustomConfiguration.
-ms.openlocfilehash: 419cc4fa47e99691beb65dfbbf83c97df445cc4b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b81e25f4168c41d9859d9e142ddf195ade7fd598
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358887"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>Lista androidWorkProfileCustomConfigurations
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

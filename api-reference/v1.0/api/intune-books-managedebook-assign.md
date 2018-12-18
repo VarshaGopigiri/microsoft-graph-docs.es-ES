@@ -1,12 +1,13 @@
 ---
 title: asignar acción
 description: Todavía no documentado
-ms.openlocfilehash: 8fba9faba192a8a6aa86ac8c999cd1000c26d2dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fae5747fc058f1bcea7d4bafd02fa965c7c355ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030245"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326022"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -34,7 +35,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

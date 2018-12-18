@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración networkSingleSignOnType
 description: Wi-Fi red inicio de sesión único en la configuración del tipo.
-ms.openlocfilehash: f880da2485fbf8825441d5891a3d664a63067e30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d88f9a4c4d0bde58c3093a736a767acc0d2abe33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089005"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345265"
 ---
 # <a name="networksinglesignontype-enum-type"></a>tipo de enumeración networkSingleSignOnType
 

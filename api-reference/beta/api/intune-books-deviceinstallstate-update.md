@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceInstallState
 description: Actualice las propiedades de un objeto deviceInstallState.
-ms.openlocfilehash: bef58a3497a49fd027d67594ae8d8bcd26342d3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f674b1c732b5804fd83c89620612354e8daccfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089524"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325637"
 ---
 # <a name="update-deviceinstallstate"></a>Actualizar deviceInstallState
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

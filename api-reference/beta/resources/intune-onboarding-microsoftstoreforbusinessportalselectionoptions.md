@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración microsoftStoreForBusinessPortalSelectionOptions
 description: Del portal al que administración sincroniza las Store Microsoft disponibles para las aplicaciones de negocio. Esto está disponible en la consola de administración Intune.
-ms.openlocfilehash: 0e000bcf2c7f3bedf3b463098fa137f9954c461b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc1e95b4dea6bf1de6439c4c0a12ad4888ff6bb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359384"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de enumeración microsoftStoreForBusinessPortalSelectionOptions
 

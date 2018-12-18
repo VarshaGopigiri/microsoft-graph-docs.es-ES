@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de equipo
 description: 'Un equipo en Microsoft Teams es una colección de canales. '
-ms.openlocfilehash: 610aca1a95c877bd6246a501a8eea64ee761e58d
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 0ed654bf4c8d627dd9466f9263b121f85800b853
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209701"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345488"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipo
 
@@ -48,7 +49,7 @@ Para obtener más información sobre cómo trabajar con los miembros de los equi
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| La visibilidad de una el equipo y grupo. El valor predeterminado es público. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Opciones para configurar el uso de Giphy, memes y pegatinas en el equipo.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el equipo.|
-|isArchived|Booleano|Si este equipo está en modo de sólo lectura. |
+|isArchived|Boolean|Si este equipo está en modo de sólo lectura. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configuración para configurar si los miembros pueden realizar determinadas acciones, por ejemplo, creación de canales y agrega bots, en el equipo.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |La configuración de mensajería y menciones en el equipo.|
 |webUrl|cadena (sólo lectura) | Un hipervínculo que se vaya al equipo en el cliente de Microsoft Teams. Esta es la URL que se obtiene cuando haga clic en un equipo en el cliente de Microsoft Teams y seleccione **obtener el vínculo al equipo**. Esta dirección URL debe se trata como un objeto binario opaco y no puede analizar. |

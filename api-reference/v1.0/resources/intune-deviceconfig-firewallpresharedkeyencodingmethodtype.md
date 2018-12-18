@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración firewallPreSharedKeyEncodingMethodType
 description: Valores posibles para firewallPreSharedKeyEncodingMethod
-ms.openlocfilehash: 238d2b0845b0d79ea109cea5b326914815d600de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b8ab119c58aec6e62c0a32ccf310f43eab029573
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030798"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343592"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>tipo de enumeración firewallPreSharedKeyEncodingMethodType
 

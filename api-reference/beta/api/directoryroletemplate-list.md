@@ -1,12 +1,13 @@
 ---
 title: List directoryRoleTemplates
 description: Recuperar una lista de objetos de directoryroletemplate.
-ms.openlocfilehash: 58d88187c7b7791ca0b4308fdd6224c6bebc4a8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: bc61c7b4c41fd3d5a6a884cf27c6f86c09aabf94
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346133"
 ---
 # <a name="list-directoryroletemplates"></a>List directoryRoleTemplates
 
@@ -31,9 +32,9 @@ GET /directoryRoleTemplates
 Este método **no** es compatible con los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para facilitar la personalización de la respuesta (por ejemplo, aquí no se admite $filter).
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

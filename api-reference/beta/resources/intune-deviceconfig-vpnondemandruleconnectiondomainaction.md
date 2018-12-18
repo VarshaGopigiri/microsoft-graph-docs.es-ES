@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración vpnOnDemandRuleConnectionDomainAction
 description: Acción de dominio de conexión de regla de petición VPN.
-ms.openlocfilehash: 2674ba942b4740f546fb585dbacad6c577222c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 676204205b241214bcda3bdf89444a23d06c88ab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090637"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359741"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>tipo de enumeración vpnOnDemandRuleConnectionDomainAction
 

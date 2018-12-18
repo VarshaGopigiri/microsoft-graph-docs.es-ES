@@ -1,12 +1,13 @@
 ---
 title: Obtener editionUpgradeConfiguration
 description: Lea las propiedades y las relaciones del objeto editionUpgradeConfiguration.
-ms.openlocfilehash: df28e408dfca8a619f20c78a3b7e9b0ec35cd0d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6ea561ba244c9a0f4bc452c11070858b45112d89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344096"
 ---
 # <a name="get-editionupgradeconfiguration"></a>Obtener editionUpgradeConfiguration
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

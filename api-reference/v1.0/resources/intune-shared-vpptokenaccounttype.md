@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración vppTokenAccountType
 description: Tipos posibles de un token de programa de compra de volumen de Apple.
-ms.openlocfilehash: ae1d4b8d92d034dca8c52fbb94576f5add72d051
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 002af5091eb0eb540b2bf31434a173670ab548fe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029853"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344019"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>tipo de enumeración vppTokenAccountType
 

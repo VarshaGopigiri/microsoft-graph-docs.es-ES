@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso outlookTaskGroup
 description: 'Un grupo de carpetas (outlookTaskFolder) que contienen las tareas de Outlook (colección de objetos de outlookTask). '
-ms.openlocfilehash: 4896b114bf04b7e1703886453f21a4e015c9e7d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9fed69e1401f2b11ae3630a3c4cef66fd9446920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089944"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359398"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
 
@@ -24,8 +25,8 @@ En Outlook, hay un grupo de tareas predeterminada `My Tasks` que no se puede cam
 |[Obtener outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Obtener las propiedades y relaciones del grupo de tareas de Outlook especificado.|
 |[Crear outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Crear una carpeta de tareas de Outlook.|
 |[Lista taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |colección de [outlookTaskFolder](outlooktaskfolder.md)| Obtener una colección de carpetas de tareas de Outlook.|
-|[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Actualizar las propiedades modificables de un grupo de tareas de Outlook. |
-|[Delete](../api/outlooktaskgroup-delete.md) | Ninguno |Eliminar el grupo de tareas de Outlook especificado. |
+|[Actualizar](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Actualizar las propiedades modificables de un grupo de tareas de Outlook. |
+|[Eliminar](../api/outlooktaskgroup-delete.md) | Ninguno |Eliminar el grupo de tareas de Outlook especificado. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
@@ -33,7 +34,7 @@ En Outlook, hay un grupo de tareas predeterminada `My Tasks` que no se puede cam
 |changeKey|String|La versión del grupo de tareas.|
 |groupKey|Edm.Guid|El identificador GUID único para el grupo de tareas.|
 |id|String|El identificador de cadena único del grupo de tareas. Solo lectura.|
-|isDefaultGroup|Booleano|Es True si el grupo de tareas es el grupo de tareas predeterminada.|
+|isDefaultGroup|Boolean|Es True si el grupo de tareas es el grupo de tareas predeterminada.|
 |name|String|El nombre del grupo de tareas.|
 
 ## <a name="relationships"></a>Relaciones

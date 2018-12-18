@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso RangeBorder
 description: Representa el borde de un objeto.
-ms.openlocfilehash: 30d5548ba867dc652c700985d65a6db01ce8bc99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: c6166e1cfebc0759ad25fda5c0e8ec471af07b11
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029634"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359153"
 ---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
 
@@ -18,7 +19,7 @@ Representa el borde de un objeto.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get RangeBorder](../api/rangeborder-get.md) | [WorkbookRangeBorder](rangeborder.md) |Lee las propiedades y relaciones del objeto rangeBorder.|
-|[Update](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md) |Actualiza el objeto RangeBorder. |
+|[Actualizar](../api/rangeborder-update.md) | [WorkbookRangeBorder](rangeborder.md) |Actualiza el objeto RangeBorder. |
 |[List](../api/rangeborder-list.md) | Colección de [WorkbookRangeBorder](rangeborder.md) |Obtiene la colección de objetos rangeBorder. |
 |[Itemat](../api/rangebordercollection-itemat.md)|[WorkbookRangeBorder](rangeborder.md)|Obtiene un objeto de borde mediante su índice.|
 

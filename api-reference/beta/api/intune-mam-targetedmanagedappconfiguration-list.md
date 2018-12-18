@@ -1,12 +1,13 @@
 ---
 title: Enumerar targetedManagedAppConfigurations
 description: Enumere las propiedades y las relaciones de los objetos targetedManagedAppConfiguration.
-ms.openlocfilehash: d3d943285604e8fc6764479059935caa73fddfc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fc9b6bd3c2851a46ebbdb5bfe4929f8609ed5a2f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087525"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324048"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>Enumerar targetedManagedAppConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

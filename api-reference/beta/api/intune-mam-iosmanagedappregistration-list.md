@@ -1,12 +1,13 @@
 ---
 title: Enumerar iosManagedAppRegistrations
 description: Enumere las propiedades y las relaciones de los objetos iosManagedAppRegistration.
-ms.openlocfilehash: 2ca0ec9d669f8778754f74a9d6d056da368bb086
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05bb64f17a199e05e8247163cc1de94b7a01b598
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087447"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345797"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Enumerar iosManagedAppRegistrations
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

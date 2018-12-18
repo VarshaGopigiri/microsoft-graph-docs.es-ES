@@ -1,12 +1,13 @@
 ---
 title: Crear importedDeviceIdentityResult
 description: Crear un nuevo objeto importedDeviceIdentityResult.
-ms.openlocfilehash: 4dec2ac709274dd30e3412a299bb1b561c9514b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2613cd100ccb1803464907821d56eb75fc4024fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090093"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359720"
 ---
 # <a name="create-importeddeviceidentityresult"></a>Crear importedDeviceIdentityResult
 
@@ -36,7 +37,7 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -55,7 +56,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |descripción|String|La descripción del dispositivo Inherited desde [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|El estado del dispositivo en Intune se hereda de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Los valores posibles son: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|La plataforma del dispositivo. Se hereda de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Los valores posibles son: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
-|status|Booleano|Estado de identidad de dispositivo importada|
+|status|Boolean|Estado de identidad de dispositivo importada|
 
 
 

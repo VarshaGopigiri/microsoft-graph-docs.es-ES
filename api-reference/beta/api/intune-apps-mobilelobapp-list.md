@@ -1,12 +1,13 @@
 ---
 title: Enumerar mobileLobApps
 description: Enumere las propiedades y las relaciones de los objetos mobileLobApp.
-ms.openlocfilehash: 2691bd626e57a68774efb0be0434e1223d479588
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e2f923c3cdbd20f333f639b7b19dbf039a714ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090227"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345006"
 ---
 # <a name="list-mobilelobapps"></a>Enumerar mobileLobApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Update worksheet
 description: Actualizar las propiedades del objeto worksheet.
-ms.openlocfilehash: 893bfb8ea9f5f6852550f072ea43421709705e2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 249fb16fea3c7086411bfa9f11a2ea23926b4b5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028651"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344082"
 ---
 # <a name="update-worksheet"></a>Update worksheet
 

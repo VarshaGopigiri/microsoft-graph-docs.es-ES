@@ -1,12 +1,13 @@
 ---
 title: Actualizar enrollmentConfigurationAssignment
 description: Actualice las propiedades de un objeto enrollmentConfigurationAssignment.
-ms.openlocfilehash: b23b532ae66f3fe4102ad3e03c2ba6e1aff6daa8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4da6f09574f1f8e9c3812f3cf2540790ae73ca8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089196"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362296"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Actualizar enrollmentConfigurationAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

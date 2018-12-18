@@ -1,12 +1,13 @@
 ---
 title: Lista windows10EasEmailProfileConfigurations
 description: Propiedades de la lista y relaciones de los objetos windows10EasEmailProfileConfiguration.
-ms.openlocfilehash: 9a5f10e0b57d2fa426434698392fe7741d68fb6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1db881087d6937e4d339c8e88f379d8836f22469
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345426"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>Lista windows10EasEmailProfileConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

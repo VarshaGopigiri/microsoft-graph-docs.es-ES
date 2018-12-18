@@ -1,12 +1,13 @@
 ---
 title: Actualizar managedDevice
 description: Actualiza las propiedades de un objeto managedDevice.
-ms.openlocfilehash: 4e4f0cc7213a20477227683431fdd8af6e06bb9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 85803f6d5474ecc0e0e2f05cf974d705d4d47737
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032363"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358754"
 ---
 # <a name="update-manageddevice"></a>Actualizar managedDevice
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -58,23 +59,23 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |jailBroken|String|Indica si se trata de un dispositivo liberado o con permisos elevados.|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de administración del dispositivo. Intune, EAS, etc. Los valores posibles son: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf` y `googleCloudDevicePolicyController`.|
 |osVersion|String|Versión del sistema operativo del dispositivo.|
-|easActivated|Booleano|Indica si el dispositivo tiene Exchange ActiveSync activado.|
+|easActivated|Boolean|Indica si el dispositivo tiene Exchange ActiveSync activado.|
 |easDeviceId|String|Identificador de Exchange ActiveSync del dispositivo.|
 |easActivationDateTime|DateTimeOffset|Hora de activación de Exchange ActivationSync del dispositivo.|
-|azureADRegistered|Booleano|Indica si el dispositivo está registrado en Azure Active Directory.|
+|azureADRegistered|Boolean|Indica si el dispositivo está registrado en Azure Active Directory.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Tipo de inscripción del dispositivo. Los valores posibles son: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin` y `windowsCoManagement`.|
 |activationLockBypassCode|String|Código que permite que se omita el bloqueo de activación en un dispositivo.|
 |emailAddress|String|Direcciones de correo electrónico del usuario asociado al dispositivo.|
 |azureADDeviceId|String|Identificador único del dispositivo de Azure Active Directory. Solo lectura.|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Estado de registro del dispositivo. Los valores posibles son: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment` y `unknown`.|
 |deviceCategoryDisplayName|String|Nombre para mostrar de la categoría de dispositivo.|
-|isSupervised|Booleano|Estado supervisado del dispositivo.|
+|isSupervised|Boolean|Estado supervisado del dispositivo.|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que el dispositivo estableció contacto con Exchange.|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `allowed`, `blocked` y `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Motivo del estado de acceso del dispositivo en Exchange. Los valores posibles son: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword` y `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|Dirección URL que permite que se establezca una sesión remota con el dispositivo.|
 |remoteAssistanceSessionErrorDetails|String|Cadena de error que identifica los problemas al crear objetos de la sesión de asistencia remota.|
-|isEncrypted|Booleano|Estado del cifrado del dispositivo.|
+|isEncrypted|Boolean|Estado del cifrado del dispositivo.|
 |userPrincipalName|String|Nombre principal de usuario del dispositivo.|
 |model|String|Modelo del dispositivo.|
 |manufacturer|String|Fabricante del dispositivo.|

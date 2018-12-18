@@ -1,12 +1,13 @@
 ---
 title: Obtener iosManagedAppProtection
 description: Lea las propiedades y las relaciones del objeto iosManagedAppProtection.
-ms.openlocfilehash: 468467c14e74682d2acf400ad6dab18fef86f193
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd4f6eeac74952f34a737cfef80c4af115caa6ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028764"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359440"
 ---
 # <a name="get-iosmanagedappprotection"></a>Obtener iosManagedAppProtection
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

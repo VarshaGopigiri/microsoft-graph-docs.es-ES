@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsAutopilotDeploymentProfile
 description: Leer las propiedades y las relaciones del objeto windowsAutopilotDeploymentProfile.
-ms.openlocfilehash: bead2a0affd4f5a8d683a8153903fa2d5d5cd042
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e913aeac27a66ea5b139cb5ec4f03e24055e7c49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090300"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344579"
 ---
 # <a name="get-windowsautopilotdeploymentprofile"></a>Obtener windowsAutopilotDeploymentProfile
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
