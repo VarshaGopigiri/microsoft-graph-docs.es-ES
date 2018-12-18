@@ -1,30 +1,31 @@
 ---
 title: Crear un equipo
 description: Crear un nuevo equipo.
-ms.openlocfilehash: 3f2fa97af217d6109f169e5b2ef75a0c71bde2e7
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: c77ca5ab76640c9c310b628f4eee106e7443fee7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210170"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362842"
 ---
-# <a name="create-team"></a><span data-ttu-id="e4012-103">Crear equipo</span><span class="sxs-lookup"><span data-stu-id="e4012-103">Create team</span></span>
+# <a name="create-team"></a><span data-ttu-id="32a4e-103">Crear equipo</span><span class="sxs-lookup"><span data-stu-id="32a4e-103">Create team</span></span>
 
-> <span data-ttu-id="e4012-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="e4012-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e4012-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="e4012-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="32a4e-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="32a4e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="32a4e-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="32a4e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e4012-106">Crear un nuevo [equipo](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="e4012-106">Create a new [team](../resources/team.md).</span></span>
+<span data-ttu-id="32a4e-106">Crear un nuevo [equipo](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="32a4e-106">Create a new [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e4012-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="e4012-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="32a4e-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="32a4e-107">Permissions</span></span>
 
-<span data-ttu-id="e4012-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e4012-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="32a4e-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32a4e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e4012-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="e4012-110">Permission type</span></span>                        | <span data-ttu-id="e4012-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="e4012-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="32a4e-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="32a4e-110">Permission type</span></span>                        | <span data-ttu-id="32a4e-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="32a4e-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="e4012-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="e4012-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e4012-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4012-113">Group.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="e4012-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e4012-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4012-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="e4012-115">Not supported.</span></span>                              |
-| <span data-ttu-id="e4012-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="e4012-116">Application</span></span>                            | <span data-ttu-id="e4012-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4012-117">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="32a4e-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="32a4e-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="32a4e-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32a4e-113">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="32a4e-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="32a4e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32a4e-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="32a4e-115">Not supported.</span></span>                              |
+| <span data-ttu-id="32a4e-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="32a4e-116">Application</span></span>                            | <span data-ttu-id="32a4e-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32a4e-117">Group.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="e4012-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="e4012-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="32a4e-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="32a4e-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -32,28 +33,28 @@ ms.locfileid: "27210170"
 POST /teams
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e4012-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="e4012-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="32a4e-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="32a4e-119">Request headers</span></span>
 
-| <span data-ttu-id="e4012-120">Encabezado</span><span class="sxs-lookup"><span data-stu-id="e4012-120">Header</span></span>        | <span data-ttu-id="e4012-121">Valor</span><span class="sxs-lookup"><span data-stu-id="e4012-121">Value</span></span>                     |
+| <span data-ttu-id="32a4e-120">Encabezado</span><span class="sxs-lookup"><span data-stu-id="32a4e-120">Header</span></span>        | <span data-ttu-id="32a4e-121">Valor</span><span class="sxs-lookup"><span data-stu-id="32a4e-121">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="e4012-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4012-122">Authorization</span></span> | <span data-ttu-id="e4012-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="e4012-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="e4012-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e4012-125">Content-Type</span></span>  | <span data-ttu-id="e4012-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e4012-126">application/json</span></span>          |
+| <span data-ttu-id="32a4e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="32a4e-122">Authorization</span></span> | <span data-ttu-id="32a4e-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="32a4e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="32a4e-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="32a4e-125">Content-Type</span></span>  | <span data-ttu-id="32a4e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="32a4e-126">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="e4012-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="e4012-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="32a4e-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="32a4e-127">Request body</span></span>
 
-<span data-ttu-id="e4012-128">En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto de [equipo](../resources/team.md) .</span><span class="sxs-lookup"><span data-stu-id="e4012-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="32a4e-128">En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto de [equipo](../resources/team.md) .</span><span class="sxs-lookup"><span data-stu-id="32a4e-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e4012-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e4012-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="32a4e-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="32a4e-129">Response</span></span>
 
-<span data-ttu-id="e4012-130">Si tiene éxito, esta API devuelve una `202 Accepted` respuesta que contiene un vínculo a la [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="e4012-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
+<span data-ttu-id="32a4e-130">Si tiene éxito, esta API devuelve una `202 Accepted` respuesta que contiene un vínculo a la [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="32a4e-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e4012-131">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="e4012-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="32a4e-131">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="32a4e-131">Examples</span></span>
 
-### <a name="example---delegated-permissions"></a><span data-ttu-id="e4012-132">Por ejemplo, los permisos delegados</span><span class="sxs-lookup"><span data-stu-id="e4012-132">Example - delegated permissions</span></span>
+### <a name="example---delegated-permissions"></a><span data-ttu-id="32a4e-132">Por ejemplo, los permisos delegados</span><span class="sxs-lookup"><span data-stu-id="32a4e-132">Example - delegated permissions</span></span>
 
-<span data-ttu-id="e4012-133">Este es un ejemplo de una solicitud mínima.</span><span class="sxs-lookup"><span data-stu-id="e4012-133">Here is an example of a minimal request.</span></span> <span data-ttu-id="e4012-134">Si se omite otras propiedades, el cliente está tomando implícitamente valores predeterminados de la plantilla predefinida representada por `template`.</span><span class="sxs-lookup"><span data-stu-id="e4012-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
+<span data-ttu-id="32a4e-133">Este es un ejemplo de una solicitud mínima.</span><span class="sxs-lookup"><span data-stu-id="32a4e-133">Here is an example of a minimal request.</span></span> <span data-ttu-id="32a4e-134">Si se omite otras propiedades, el cliente está tomando implícitamente valores predeterminados de la plantilla predefinida representada por `template`.</span><span class="sxs-lookup"><span data-stu-id="32a4e-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e4012-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e4012-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="32a4e-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="32a4e-135">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -65,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="e4012-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e4012-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="32a4e-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="32a4e-136">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -76,11 +77,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="e4012-137">Ejemplo: creación de un equipo con una aplicación instalada, varios canales con fichas anclados con permisos de delegados</span><span class="sxs-lookup"><span data-stu-id="e4012-137">Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
+### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="32a4e-137">Ejemplo: creación de un equipo con una aplicación instalada, varios canales con fichas anclados con permisos de delegados</span><span class="sxs-lookup"><span data-stu-id="32a4e-137">Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
 
-<span data-ttu-id="e4012-138">Aquí es la solicitud con una carga completa.</span><span class="sxs-lookup"><span data-stu-id="e4012-138">Here is request with a full payload.</span></span> <span data-ttu-id="e4012-139">El cliente puede invalidar los valores en la plantilla de base y agregar a los elementos con valores de matriz en la medida permitida por las reglas de validación para el `specialization`.</span><span class="sxs-lookup"><span data-stu-id="e4012-139">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
+<span data-ttu-id="32a4e-138">Aquí es la solicitud con una carga completa.</span><span class="sxs-lookup"><span data-stu-id="32a4e-138">Here is request with a full payload.</span></span> <span data-ttu-id="32a4e-139">El cliente puede invalidar los valores en la plantilla de base y agregar a los elementos con valores de matriz en la medida permitida por las reglas de validación para el `specialization`.</span><span class="sxs-lookup"><span data-stu-id="32a4e-139">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e4012-140">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e4012-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="32a4e-140">Solicitud</span><span class="sxs-lookup"><span data-stu-id="32a4e-140">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -163,7 +164,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="e4012-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e4012-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="32a4e-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="32a4e-141">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -174,11 +175,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a><span data-ttu-id="e4012-142">Por ejemplo, los permisos de aplicación</span><span class="sxs-lookup"><span data-stu-id="e4012-142">Example - application permissions</span></span>
+### <a name="example---application-permissions"></a><span data-ttu-id="32a4e-142">Por ejemplo, los permisos de aplicación</span><span class="sxs-lookup"><span data-stu-id="32a4e-142">Example - application permissions</span></span>
 
-<span data-ttu-id="e4012-143">Este es un ejemplo de una solicitud mínima con permisos de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="e4012-143">Here is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="e4012-144">Si se omite otras propiedades, el cliente está tomando implícitamente valores predeterminados de la plantilla predefinida representada por `template`.</span><span class="sxs-lookup"><span data-stu-id="e4012-144">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span> <span data-ttu-id="e4012-145">Cuando emitir una solicitud con permisos de la aplicación de un [usuario](../resources/user.md) debe especificarse en el `owners` colección.</span><span class="sxs-lookup"><span data-stu-id="e4012-145">When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
+<span data-ttu-id="32a4e-143">Este es un ejemplo de una solicitud mínima con permisos de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="32a4e-143">Here is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="32a4e-144">Si se omite otras propiedades, el cliente está tomando implícitamente valores predeterminados de la plantilla predefinida representada por `template`.</span><span class="sxs-lookup"><span data-stu-id="32a4e-144">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span> <span data-ttu-id="32a4e-145">Cuando emitir una solicitud con permisos de la aplicación de un [usuario](../resources/user.md) debe especificarse en el `owners` colección.</span><span class="sxs-lookup"><span data-stu-id="32a4e-145">When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e4012-146">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e4012-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="32a4e-146">Solicitud</span><span class="sxs-lookup"><span data-stu-id="32a4e-146">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -193,7 +194,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="e4012-147">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e4012-147">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="32a4e-147">Respuesta</span><span class="sxs-lookup"><span data-stu-id="32a4e-147">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -204,6 +205,6 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e4012-148">Vea también</span><span class="sxs-lookup"><span data-stu-id="e4012-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32a4e-148">Vea también</span><span class="sxs-lookup"><span data-stu-id="32a4e-148">See also</span></span>
 
-- [<span data-ttu-id="e4012-149">Creación de un grupo con un equipo</span><span class="sxs-lookup"><span data-stu-id="e4012-149">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="32a4e-149">Creación de un grupo con un equipo</span><span class="sxs-lookup"><span data-stu-id="32a4e-149">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)

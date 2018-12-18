@@ -1,54 +1,55 @@
 ---
 title: Eliminar groupLifecyclePolicy
 description: Elimina un objeto groupLifecyclePolicy
-ms.openlocfilehash: 0e291ec0d05f03153f18974ad0aad29f2a8a86d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 41c679a9fa2a55a0137d1197f08515e64750d4dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361967"
 ---
-# <a name="delete-grouplifecyclepolicy"></a><span data-ttu-id="2f2a7-103">Eliminar groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="2f2a7-103">Delete groupLifecyclePolicy</span></span>
+# <a name="delete-grouplifecyclepolicy"></a><span data-ttu-id="85afa-103">Eliminar groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="85afa-103">Delete groupLifecyclePolicy</span></span>
 
-> <span data-ttu-id="2f2a7-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="2f2a7-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2f2a7-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="2f2a7-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="85afa-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="85afa-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="85afa-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="85afa-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="2f2a7-106">Elimina un objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)</span><span class="sxs-lookup"><span data-stu-id="2f2a7-106">Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
+<span data-ttu-id="85afa-106">Elimina un objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md)</span><span class="sxs-lookup"><span data-stu-id="85afa-106">Deletes a [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2f2a7-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="2f2a7-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="85afa-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="85afa-107">Permissions</span></span>
 
-<span data-ttu-id="2f2a7-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f2a7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="85afa-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85afa-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2f2a7-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="2f2a7-110">Permission type</span></span>      | <span data-ttu-id="2f2a7-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="2f2a7-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="85afa-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="85afa-110">Permission type</span></span>      | <span data-ttu-id="85afa-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="85afa-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2f2a7-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="2f2a7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2f2a7-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f2a7-113">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2f2a7-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2f2a7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2f2a7-115">No admitido</span><span class="sxs-lookup"><span data-stu-id="2f2a7-115">Not supported</span></span> |
-|<span data-ttu-id="2f2a7-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="2f2a7-116">Application</span></span> | <span data-ttu-id="2f2a7-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f2a7-117">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="85afa-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="85afa-112">Delegated (work or school account)</span></span> | <span data-ttu-id="85afa-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85afa-113">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="85afa-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="85afa-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85afa-115">No admitido</span><span class="sxs-lookup"><span data-stu-id="85afa-115">Not supported</span></span> |
+|<span data-ttu-id="85afa-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="85afa-116">Application</span></span> | <span data-ttu-id="85afa-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85afa-117">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2f2a7-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="2f2a7-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85afa-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="85afa-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groupLifecyclePolicies/{id}
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2f2a7-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="2f2a7-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="85afa-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="85afa-119">Request headers</span></span>
 
-| <span data-ttu-id="2f2a7-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="2f2a7-120">Name</span></span> | <span data-ttu-id="2f2a7-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="2f2a7-121">Description</span></span> |
+| <span data-ttu-id="85afa-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="85afa-120">Name</span></span> | <span data-ttu-id="85afa-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="85afa-121">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="2f2a7-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2f2a7-122">Authorization</span></span> | <span data-ttu-id="2f2a7-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="2f2a7-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2f2a7-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2f2a7-125">Content-Type</span></span>  | <span data-ttu-id="2f2a7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2f2a7-126">application/json</span></span> |
+| <span data-ttu-id="85afa-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="85afa-122">Authorization</span></span> | <span data-ttu-id="85afa-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="85afa-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="85afa-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="85afa-125">Content-Type</span></span>  | <span data-ttu-id="85afa-126">application/json</span><span class="sxs-lookup"><span data-stu-id="85afa-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2f2a7-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="2f2a7-127">Request body</span></span>
-<span data-ttu-id="2f2a7-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="2f2a7-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="85afa-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="85afa-127">Request body</span></span>
+<span data-ttu-id="85afa-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="85afa-128">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="2f2a7-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2f2a7-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="85afa-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="85afa-129">Response</span></span>
 
-<span data-ttu-id="2f2a7-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2f2a7-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="85afa-p104">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="85afa-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2f2a7-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2f2a7-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="85afa-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="85afa-132">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="2f2a7-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="2f2a7-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="85afa-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="85afa-133">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -57,7 +58,7 @@ DELETE /groupLifecyclePolicies/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="2f2a7-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2f2a7-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="85afa-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="85afa-134">Response</span></span>
 
 <!-- {
   "blockType": "response",
