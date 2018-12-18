@@ -1,61 +1,62 @@
 ---
 title: Fichas de lista de canal
 description: 'Recuperar la lista de fichas en el canal especificado dentro de un equipo. '
-ms.openlocfilehash: 4efbe8508fc125d87268adfb05c23b99ab2c3d4b
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: b8d5c55fa02d859a419823ad171fbcc9221a609e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344572"
 ---
-# <a name="list-tabs-in-channel"></a><span data-ttu-id="d98c4-103">Fichas de lista de canal</span><span class="sxs-lookup"><span data-stu-id="d98c4-103">List tabs in channel</span></span>
+# <a name="list-tabs-in-channel"></a><span data-ttu-id="05da4-103">Fichas de lista de canal</span><span class="sxs-lookup"><span data-stu-id="05da4-103">List tabs in channel</span></span>
 
 
 
-<span data-ttu-id="d98c4-104">Recuperar la lista de [fichas](../resources/teamstab.md) en el [canal](../resources/channel.md) especificado dentro de un [equipo](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="d98c4-104">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="05da4-104">Recuperar la lista de [fichas](../resources/teamstab.md) en el [canal](../resources/channel.md) especificado dentro de un [equipo](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="05da4-104">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="d98c4-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="d98c4-105">Permissions</span></span>
-<span data-ttu-id="d98c4-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d98c4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="05da4-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="05da4-105">Permissions</span></span>
+<span data-ttu-id="05da4-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05da4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d98c4-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="d98c4-108">Permission type</span></span>      | <span data-ttu-id="d98c4-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="d98c4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="05da4-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="05da4-108">Permission type</span></span>      | <span data-ttu-id="05da4-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="05da4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d98c4-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="d98c4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d98c4-111">Group.ReadWrite.All, Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="d98c4-111">Group.ReadWrite.All, Group.Read.All</span></span>    |
-|<span data-ttu-id="d98c4-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d98c4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d98c4-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d98c4-113">Not supported.</span></span>    |
-| <span data-ttu-id="d98c4-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="d98c4-114">Application</span></span>                            | <span data-ttu-id="d98c4-115">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d98c4-115">Group.Read.All, Group.ReadWrite.All</span></span>         |
+|<span data-ttu-id="05da4-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="05da4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="05da4-111">Group.ReadWrite.All, Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="05da4-111">Group.ReadWrite.All, Group.Read.All</span></span>    |
+|<span data-ttu-id="05da4-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="05da4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05da4-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="05da4-113">Not supported.</span></span>    |
+| <span data-ttu-id="05da4-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="05da4-114">Application</span></span>                            | <span data-ttu-id="05da4-115">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="05da4-115">Group.Read.All, Group.ReadWrite.All</span></span>         |
 
-> <span data-ttu-id="d98c4-116">**Nota**: esta API es compatible con permisos de administrador.</span><span class="sxs-lookup"><span data-stu-id="d98c4-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="d98c4-117">Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.</span><span class="sxs-lookup"><span data-stu-id="d98c4-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="05da4-116">**Nota**: esta API es compatible con permisos de administrador.</span><span class="sxs-lookup"><span data-stu-id="05da4-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="05da4-117">Los administradores globales y los administradores de servicios de Microsoft Teams pueden tener acceso a los equipos que no son miembros de.</span><span class="sxs-lookup"><span data-stu-id="05da4-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d98c4-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d98c4-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="05da4-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="05da4-118">HTTP request</span></span>
 
 ```http
 GET /teams/{id}/channels/{id}/tabs
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d98c4-119">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="d98c4-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="05da4-119">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="05da4-119">Optional query parameters</span></span>
 
-<span data-ttu-id="d98c4-120">Este método admite la $filter, $select, y $expanda [parámetros de consulta de OData](/graph/query-parameters) para ayudar a personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d98c4-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="05da4-120">Este método admite la $filter, $select, y $expanda [parámetros de consulta de OData](/graph/query-parameters) para ayudar a personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="05da4-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d98c4-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="d98c4-121">Request headers</span></span>
-| <span data-ttu-id="d98c4-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="d98c4-122">Header</span></span>       | <span data-ttu-id="d98c4-123">Valor</span><span class="sxs-lookup"><span data-stu-id="d98c4-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="05da4-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="05da4-121">Request headers</span></span>
+| <span data-ttu-id="05da4-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="05da4-122">Header</span></span>       | <span data-ttu-id="05da4-123">Valor</span><span class="sxs-lookup"><span data-stu-id="05da4-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d98c4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d98c4-124">Authorization</span></span>  | <span data-ttu-id="d98c4-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d98c4-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="05da4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="05da4-124">Authorization</span></span>  | <span data-ttu-id="05da4-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="05da4-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d98c4-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="d98c4-127">Request body</span></span>
-<span data-ttu-id="d98c4-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="d98c4-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="05da4-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="05da4-127">Request body</span></span>
+<span data-ttu-id="05da4-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="05da4-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d98c4-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d98c4-129">Response</span></span>
-<span data-ttu-id="d98c4-130">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y la colección de objetos de [las fichas](../resources/teamstab.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d98c4-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="05da4-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="05da4-129">Response</span></span>
+<span data-ttu-id="05da4-130">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y la colección de objetos de [las fichas](../resources/teamstab.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="05da4-130">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d98c4-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d98c4-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="d98c4-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d98c4-132">Request</span></span>
-<span data-ttu-id="d98c4-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d98c4-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="05da4-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="05da4-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="05da4-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="05da4-132">Request</span></span>
+<span data-ttu-id="05da4-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="05da4-133">The following is an example of the request.</span></span>
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 ```
 
-#### <a name="response"></a><span data-ttu-id="d98c4-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d98c4-134">Response</span></span>
-<span data-ttu-id="d98c4-135">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d98c4-135">The following is an example of the response.</span></span>
-><span data-ttu-id="d98c4-p104">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d98c4-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="05da4-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="05da4-134">Response</span></span>
+<span data-ttu-id="05da4-135">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="05da4-135">The following is an example of the response.</span></span>
+><span data-ttu-id="05da4-p104">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="05da4-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
