@@ -1,12 +1,13 @@
 ---
 title: Enumerar windowsPhone81CustomConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windowsPhone81CustomConfiguration.
-ms.openlocfilehash: 14b5c5dceaf044ab9988714f6a202f1ec38e18cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c12126afc281ee3f0fb3dec6047d5350ee66f00
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031867"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315592"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Enumerar windowsPhone81CustomConfigurations
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: 'Range: Row'
 description: Obtiene una fila contenida en el rango.
-ms.openlocfilehash: a1cb0adbc6f35b48b095486838ab73d4a9cad3be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d758af607fa80314abe6c3f90e611eb87ac62914
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315032"
 ---
 # <a name="range-row"></a>Range: Row
 
@@ -37,7 +38,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/row
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |row|Int32|Número de fila del intervalo que se va a recuperar. Indizado con cero.|
 

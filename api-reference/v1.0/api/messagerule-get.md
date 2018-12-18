@@ -1,12 +1,13 @@
 ---
 title: Obtener regla
 description: Obtener las propiedades y relaciones de un objeto messageRule.
-ms.openlocfilehash: fa71a8447656fbf89fffe60bccec27d46d17c92a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: cd89c8f3c287ba4df18a2ff42462ed8ef6aa48b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314514"
 ---
 # <a name="get-rule"></a>Obtener regla
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceConfiguration
 description: Configuración de dispositivos.
-ms.openlocfilehash: ccfd34fbc05de7815b8aa199da305f57917bdced
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d1c765ff643950947f23192969078dd12028c2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088421"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315739"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -31,7 +32,7 @@ Configuración de dispositivos.
 |id|String|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad.|
-|supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura.|
+|supportsScopeTags|Boolean|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|

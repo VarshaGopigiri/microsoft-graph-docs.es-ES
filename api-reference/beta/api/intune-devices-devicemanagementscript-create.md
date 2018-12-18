@@ -1,12 +1,13 @@
 ---
 title: Crear deviceManagementScript
 description: Crear un nuevo objeto deviceManagementScript.
-ms.openlocfilehash: feb3463e679e77a1702a38f8cc7fd0edb28170d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 862b9c3ba50f879e92e47b50e6efaf0bcf41927a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090678"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315438"
 ---
 # <a name="create-devicemanagementscript"></a>Crear deviceManagementScript
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -54,7 +55,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |createdDateTime|DateTimeOffset|La fecha y hora de que creación de la secuencia de comandos de administración de dispositivos.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de que última modificación de la secuencia de comandos de administración de dispositivos.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica el tipo de la secuencia de comandos de administración de dispositivos se ejecuta en el contexto de ejecución. Los valores posibles son: `system` y `user`.|
-|enforceSignatureCheck|Booleano|Indicar si se debe comprobar la firma de la secuencia de comandos.|
+|enforceSignatureCheck|Boolean|Indicar si se debe comprobar la firma de la secuencia de comandos.|
 |fileName|String|Nombre de archivo de secuencia de comandos.|
 
 

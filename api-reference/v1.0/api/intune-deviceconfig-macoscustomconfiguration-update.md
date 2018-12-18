@@ -1,12 +1,13 @@
 ---
 title: Actualizar macOSCustomConfiguration
 description: Actualice las propiedades de un objeto macOSCustomConfiguration.
-ms.openlocfilehash: efa13ebb778027769f9527ca6a0cf5139bb0f082
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d27b4e0821317e719dc9a7bbdae41c95721678f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031971"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314360"
 ---
 # <a name="update-macoscustomconfiguration"></a>Actualizar macOSCustomConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

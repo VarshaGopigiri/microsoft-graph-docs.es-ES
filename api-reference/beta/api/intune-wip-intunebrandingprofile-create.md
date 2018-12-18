@@ -1,12 +1,13 @@
 ---
 title: Crear intuneBrandingProfile
 description: Crear un nuevo objeto intuneBrandingProfile.
-ms.openlocfilehash: 42a90e6a5488e8f9e37fa5c3a5fda18a9d4f424f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086437"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314878"
 ---
 # <a name="create-intunebrandingprofile"></a>Crear intuneBrandingProfile
 
@@ -36,7 +37,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,7 +50,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |id|String|Clave de perfil|
 |nombre del perfil|String|Nombre del perfil|
 |profileDescription|String|Descripción del perfil|
-|isDefaultProfile|Booleano|Presenta si se utiliza el perfil de forma predeterminada.|
+|isDefaultProfile|Boolean|Presenta si se utiliza el perfil de forma predeterminada.|
 |createdDateTime|DateTimeOffset|Cuando se creó el BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Cuando el BrandingProfile se modificó por última vez.|
 |displayName|Cadena|Nombre de la compañía u organización que se muestra a los usuarios finales.|

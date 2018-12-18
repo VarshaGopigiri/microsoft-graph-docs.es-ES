@@ -1,12 +1,13 @@
 ---
 title: Crear sharedPCConfiguration
 description: Crear un objeto sharedPCConfiguration.
-ms.openlocfilehash: 3033bc44c683db6f574e794eb9a7d409b6de5ea7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53a59f4c63d044cf29a777136bb6418a202285b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032171"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314507"
 ---
 # <a name="create-sharedpcconfiguration"></a>Crear sharedPCConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

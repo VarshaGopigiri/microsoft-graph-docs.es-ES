@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración administratorConfiguredDeviceComplianceState
 description: Administrador configurado el estado de cumplimiento de normas de dispositivo Enum
-ms.openlocfilehash: dbb2654b639330abb70b87d99b5db6e8a8d5bcfb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e1b76c40f0e5f815e42efa0a4fef776aeb3e0b00
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314871"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>tipo de enumeración administratorConfiguredDeviceComplianceState
 

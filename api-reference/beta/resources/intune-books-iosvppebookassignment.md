@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosVppEBookAssignment
 description: Contiene las propiedades que se usan para asignar a un grupo un libro electrónico de VPP para iOS.
-ms.openlocfilehash: c4ce93dcbc9680bdd7439e71aa2ab585295cd4d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1383c3370c7074e615d9b95300bbd57d940fc81f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088752"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314276"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Tipo de recurso iosVppEBookAssignment
 

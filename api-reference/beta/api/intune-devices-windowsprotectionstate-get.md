@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsProtectionState
 description: Leer las propiedades y las relaciones del objeto windowsProtectionState.
-ms.openlocfilehash: 064b47a9595838d0e77a5378b6238e9f6fd227b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6baa42445c1f117b1f86ccc5fa726f4d6f939378
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315172"
 ---
 # <a name="get-windowsprotectionstate"></a>Obtener windowsProtectionState
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

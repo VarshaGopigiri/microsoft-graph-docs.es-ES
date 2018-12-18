@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartSeries
 description: Representa una serie de un gráfico.
-ms.openlocfilehash: 970a35511b1851e09c47257bf3f67d05228d4454
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 60cd3e29f1b2c2f106fae0fdfb76b18657d68120
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029053"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314493"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
@@ -20,7 +21,7 @@ Representa una serie de un gráfico.
 |[Get ChartSeries](../api/chartseries-get.md) | [WorkbookChartSeries](chartseries.md) |Lee las propiedades y relaciones del objeto chartSeries.|
 |[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Crea un nuevo ChartPoints publicándolo en la colección points.|
 |[List points](../api/chartseries-list-points.md) |Colección [ChartPoints](chartpoint.md)| Obtiene la colección de objetos ChartPoints.|
-|[Update](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |Actualiza el objeto ChartSeries. |
+|[Actualizar](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |Actualiza el objeto ChartSeries. |
 |[List](../api/chartseries-list.md) | Colección de [WorkbookChartSeries](chartseries.md) |Obtiene la colección de objetos chartSeries. |
 |[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Recupera una serie en función de su posición en la colección.|
 

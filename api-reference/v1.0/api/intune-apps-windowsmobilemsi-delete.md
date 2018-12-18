@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsMobileMSI
 description: Elimina un windowsMobileMSI.
-ms.openlocfilehash: 7d130ec2f369d39608d75a4b76437ba468ff2318
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4161e489b1ee0f68bb444af4f0fef432456a5447
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031550"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314836"
 ---
 # <a name="delete-windowsmobilemsi"></a>Eliminar windowsMobileMSI
 
@@ -34,7 +35,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

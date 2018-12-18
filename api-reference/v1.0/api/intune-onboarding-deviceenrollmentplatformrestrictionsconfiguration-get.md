@@ -1,12 +1,13 @@
 ---
 title: Obtener deviceEnrollmentPlatformRestrictionsConfiguration
 description: Lea las propiedades y las relaciones del objeto deviceEnrollmentPlatformRestrictionsConfiguration.
-ms.openlocfilehash: c9925c530470b01aa63717c482446894394e0993
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a597b1cefb9db784c79e9ba5fc182a7cb410b161
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032520"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315319"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Obtener deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
