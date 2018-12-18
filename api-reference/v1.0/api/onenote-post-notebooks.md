@@ -1,12 +1,13 @@
 ---
 title: Crear bloc de notas
 description: Crea un bloc de notas de OneNote.
-ms.openlocfilehash: 38e92f402b5372292cdd30ed60cae81c1e0d46cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 00703bd93a45d1109249fb0081f642866a0f16c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031627"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320086"
 ---
 # <a name="create-notebook"></a>Crear bloc de notas
 
@@ -29,9 +30,9 @@ POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartPoint
 description: Representa un punto de una serie de un gráfico.
-ms.openlocfilehash: 93c89bca61f27924621df0376bdf50e925e25c86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b2d1fab0c76100aae1a5606690772a0aa3854f42
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031933"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316229"
 ---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
 

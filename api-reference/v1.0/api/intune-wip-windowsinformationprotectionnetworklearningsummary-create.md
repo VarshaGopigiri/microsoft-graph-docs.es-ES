@@ -1,12 +1,13 @@
 ---
 title: Crear windowsInformationProtectionNetworkLearningSummary
 description: Cree un objeto windowsInformationProtectionNetworkLearningSummary.
-ms.openlocfilehash: 55ec7f58b3c7bac3d90798bc7e7b940043f1ac94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: daa85ae02a94594c03b110c9a407f41db02c1c8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031644"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319127"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Crear windowsInformationProtectionNetworkLearningSummary
 
@@ -34,7 +35,7 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

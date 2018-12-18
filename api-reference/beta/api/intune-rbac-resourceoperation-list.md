@@ -1,12 +1,13 @@
 ---
 title: Enumerar resourceOperations
 description: Enumere las propiedades y las relaciones de los objetos resourceOperation.
-ms.openlocfilehash: 7110a16e2713e950d5018d4904272feddbd56dec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 210e7dfe8d321efccff6f5e985d0fa64a26d9f84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087359"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321507"
 ---
 # <a name="list-resourceoperations"></a>Enumerar resourceOperations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

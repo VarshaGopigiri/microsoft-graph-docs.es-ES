@@ -1,12 +1,13 @@
 ---
 title: Eliminar androidDeviceOwnerWiFiConfiguration
 description: Elimina un androidDeviceOwnerWiFiConfiguration.
-ms.openlocfilehash: e40547fe0c8545543200c446b6698a3db056dbb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2636578a531af2e32b2843065f8353f4661152fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317524"
 ---
 # <a name="delete-androiddeviceownerwificonfiguration"></a>Eliminar androidDeviceOwnerWiFiConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

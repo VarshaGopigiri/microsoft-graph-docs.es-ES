@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsManagementApp
 description: Leer las propiedades y las relaciones del objeto windowsManagementApp.
-ms.openlocfilehash: b5a614a4bfdf68d94bef266f6013bade627cc7f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc1baf7e8d85d315d2778102b0e86f3c51178abb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082904"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316579"
 ---
 # <a name="get-windowsmanagementapp"></a>Obtener windowsManagementApp
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

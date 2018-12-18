@@ -1,12 +1,13 @@
 ---
 title: Crear windowsAutopilotDeviceIdentity
 description: Crear un nuevo objeto windowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 9a68b5db287732add986bc703668c75b9245f962
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1e4a9d43755fff787efa08a8c727e6ddc35fa904
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316019"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Crear windowsAutopilotDeviceIdentity
 
@@ -37,7 +38,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

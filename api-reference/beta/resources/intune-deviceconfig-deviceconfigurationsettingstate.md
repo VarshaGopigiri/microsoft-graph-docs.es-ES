@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceConfigurationSettingState
 description: Estado de la configuración de dispositivos de un dispositivo determinado.
-ms.openlocfilehash: 551b5ccb215492f48d9cd26bcf8b7e2cb80ed787
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ca50fe6a6186578739b166b1239a309824d1e51
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316117"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>Tipo de recurso deviceConfigurationSettingState
 

@@ -1,12 +1,13 @@
 ---
 title: Agregar datos adjuntos
 description: 'Use esta API para agregar un objeto attachment a un mensaje. '
-ms.openlocfilehash: 965f1c0efe74d44bcea3d0dab9d9b1091deeb2e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 6f6a25f940429637e4b04f200e9a0fcee067c011
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083762"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318910"
 ---
 # <a name="add-attachment"></a>Agregar datos adjuntos
 
@@ -51,9 +52,9 @@ POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

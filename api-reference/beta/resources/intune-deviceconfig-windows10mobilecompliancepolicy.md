@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windows10MobileCompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para Windows 10 Mobile.
-ms.openlocfilehash: b060608a0bb3a51b0c5788d786e02d5ade6fb419
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: db404563e02bc76d47e0380f74db1f8f0c058842
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083687"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322627"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>Tipo de recurso windows10MobileCompliancePolicy
 
@@ -53,7 +54,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |secureBootEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; el arranque seguro está habilitado.|
 |codeIntegrityEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos.|
 |storageRequireEncryption|Booleano|Exige el cifrado en dispositivos Windows.|
-|activeFirewallRequired|Booleano|Requiere un servidor de seguridad activo en los dispositivos de Windows.|
+|activeFirewallRequired|Boolean|Requiere un servidor de seguridad activo en los dispositivos de Windows.|
 |validOperatingSystemBuildRanges|colección de [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|El sistema operativo válido crear rangos en los dispositivos de Windows. Esta colección puede contener un máximo de 10 000 elementos.|
 
 ## <a name="relationships"></a>Relaciones

@@ -1,12 +1,13 @@
 ---
 title: Función getEffectivePermissions
 description: Recupera los permisos efectivos del usuario autenticado actualmente
-ms.openlocfilehash: 0d07045c4db64f6bb9418907cea618480d959522
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d4b277b0a5a3d5cc0584b602ad28c2e2e96e2b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031076"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317006"
 ---
 # <a name="geteffectivepermissions-function"></a>Función getEffectivePermissions
 
@@ -36,7 +37,7 @@ GET /deviceManagement/getEffectivePermissions
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

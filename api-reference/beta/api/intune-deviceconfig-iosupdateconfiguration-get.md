@@ -1,12 +1,13 @@
 ---
 title: Obtener iosUpdateConfiguration
 description: Lea las propiedades y las relaciones del objeto iosUpdateConfiguration.
-ms.openlocfilehash: 5a3e83db1c402cc0707978b598e0d1a9454713f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3bb2d9391338a7b7a4e70f97f9600af794530cf7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086133"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315872"
 ---
 # <a name="get-iosupdateconfiguration"></a>Obtener iosUpdateConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

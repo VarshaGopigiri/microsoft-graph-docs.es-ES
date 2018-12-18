@@ -1,12 +1,13 @@
 ---
 title: List devices
 description: 'Recupere una lista de dispositivos registrados en el directorio. '
-ms.openlocfilehash: 3e8d6b61dd9eb59e3475fa8c5d095ea649f0b9f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04275c3d6356fbf28434b7bbe6ebfbd54f6bba8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088119"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320289"
 ---
 # <a name="list-devices"></a>List devices
 
@@ -32,9 +33,9 @@ GET /devices
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

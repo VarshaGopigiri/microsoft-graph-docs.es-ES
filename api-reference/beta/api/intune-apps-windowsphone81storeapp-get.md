@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsPhone81StoreApp
 description: Leer las propiedades y las relaciones del objeto windowsPhone81StoreApp.
-ms.openlocfilehash: 65a242a1ac906ee07ac7be98afa945db10b9e048
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea7a0fc6f379523cf6e5485578c9092ea9a5c02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088280"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323222"
 ---
 # <a name="get-windowsphone81storeapp"></a>Obtener windowsPhone81StoreApp
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

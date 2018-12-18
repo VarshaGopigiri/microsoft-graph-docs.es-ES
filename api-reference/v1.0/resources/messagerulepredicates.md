@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso messageRulePredicates
 description: Representa el conjunto de condiciones y excepciones que están disponibles para una regla.
-ms.openlocfilehash: 4f11c5711468cda5c76fa5b4ec46cf64ea9727b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 802edc817a583e6049edb057bd4e2d2e0da268d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320485"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Tipo de recurso messageRulePredicates
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración eapType
 description: Tipos de configuración de protocolo de autenticación (EAP) extensible.
-ms.openlocfilehash: 871971878c741a8f7cd8a8f352e7b40e44562c38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e95924209b8137a1c5d35896c0195e9e962d7af9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083487"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319547"
 ---
 # <a name="eaptype-enum-type"></a>tipo de enumeración eapType
 

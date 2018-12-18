@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso vpnRoute
 description: Definición de la ruta de VPN.
-ms.openlocfilehash: 385ed5f369660805afa8cf935273b6689fc90173
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 64d755c4f21b47e928c64348a2f1d6dad1f7206a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088448"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322025"
 ---
 # <a name="vpnroute-resource-type"></a>tipo de recurso vpnRoute
 

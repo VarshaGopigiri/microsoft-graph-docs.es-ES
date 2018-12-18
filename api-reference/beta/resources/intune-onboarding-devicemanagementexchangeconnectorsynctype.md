@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración deviceManagementExchangeConnectorSyncType
 description: El tipo de sincronización de conector de Exchange solicitada.
-ms.openlocfilehash: 96117a7d11ca49cd39b60cb932bbb985ccf50d2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcad9b1455d488c9243b57f607281b39857cbf25
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086099"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316852"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>tipo de enumeración deviceManagementExchangeConnectorSyncType
 

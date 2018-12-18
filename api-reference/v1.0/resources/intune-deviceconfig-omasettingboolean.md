@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso omaSettingBoolean
 description: Definición booleana de la configuración de OMA.
-ms.openlocfilehash: 1c0cc1d90374b7720fd9ba95e7488a09167f7842
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 10101217d1c0f07931cb847e1c14f36844c8dc9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029981"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323285"
 ---
 # <a name="omasettingboolean-resource-type"></a>Tipo de recurso omaSettingBoolean
 

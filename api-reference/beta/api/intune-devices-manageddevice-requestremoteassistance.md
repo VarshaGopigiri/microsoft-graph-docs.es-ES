@@ -1,12 +1,13 @@
 ---
 title: Acción requestRemoteAssistance
 description: Solicitar asistencia remota
-ms.openlocfilehash: b33b8ef0c9af355325d2d27d0db476338766c741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30d84f939fbd7d411bce21eca284d951f4c5cd43
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089405"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321486"
 ---
 # <a name="requestremoteassistance-action"></a>Acción requestRemoteAssistance
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

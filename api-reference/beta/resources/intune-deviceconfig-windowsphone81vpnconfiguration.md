@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsPhone81VpnConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar a la 8.1 de Windows Phone para conectarse al extremo VPN que desee. Mediante la especificación de los tipos de seguridad y el método de autenticación esperen por el extremo VPN que puede realizar la conexión VPN transparente para el usuario final.
-ms.openlocfilehash: 6d26167f6e5f3ba04fa5334c34fd730b92c64eaa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 309a848965d666d8d89ee619441af8f5ca25b6fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317202"
 ---
 # <a name="windowsphone81vpnconfiguration-resource-type"></a>tipo de recurso windowsPhone81VpnConfiguration
 
@@ -33,7 +34,7 @@ Hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81
 |id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -44,12 +45,12 @@ Hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81
 |applyOnlyToWindows81|Booleano|Valor que indica si esta directiva se aplica solo a Windows 8.1. Esta propiedad es de solo lectura. Se hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |connectionType|[windowsVpnConnectionType](../resources/intune-deviceconfig-windowsvpnconnectiontype.md)|Tipo de conexión. Se hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md). Los valores posibles son: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect` y `checkPointCapsuleVpn`.|
 |loginGroupOrDomain|String|Grupo de inicio de sesión o dominio cuando se establece el tipo de conexión a Dell SonicWALL Mobile conexión. Se hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|enableSplitTunneling|Booleano|Habilitar túnel dividido para la VPN. Se hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|enableSplitTunneling|Boolean|Habilitar túnel dividido para la VPN. Se hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |proxyServer|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|Servidor proxy. Se hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|bypassVpnOnCompanyWifi|Booleano|Desvío de VPN en compañía Wi-Fi.|
-|bypassVpnOnHomeWifi|Booleano|Desvío de VPN en la página principal de Wi-Fi.|
+|bypassVpnOnCompanyWifi|Boolean|Desvío de VPN en compañía Wi-Fi.|
+|bypassVpnOnHomeWifi|Boolean|Desvío de VPN en la página principal de Wi-Fi.|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Método de autenticación. Los valores posibles son: `certificate` y `usernameAndPassword`.|
-|rememberUserCredentials|Booleano|Recuerde que las credenciales de usuario.|
+|rememberUserCredentials|Boolean|Recuerde que las credenciales de usuario.|
 |dnsSuffixSearchList|Colección String|Lista de búsqueda de sufijos DNS.|
 
 ## <a name="relationships"></a>Relaciones

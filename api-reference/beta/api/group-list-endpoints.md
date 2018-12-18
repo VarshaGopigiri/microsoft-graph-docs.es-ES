@@ -1,12 +1,13 @@
 ---
 title: Extremos de lista
 description: Recuperar una lista de objetos de extremo.
-ms.openlocfilehash: 350cf31897a22b5cc6342a7e1fc6537f49fb2daa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: d455cb8a5d1fb07a3d97cea376d9e2e49266892d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084990"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315949"
 ---
 # <a name="list-endpoints"></a>Extremos de lista
 

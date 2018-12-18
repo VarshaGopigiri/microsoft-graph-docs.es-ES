@@ -1,12 +1,13 @@
 ---
 title: Crear conversación
 description: 'Crea una nueva conversación incluyendo un hilo y una publicación. '
-ms.openlocfilehash: 7bbfea5f7b083340191d752e436747b898154f59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ac3fa0e20f5045788e35b47a2ca496b4561187b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316733"
 ---
 # <a name="create-conversation"></a>Crear conversación
 Crea una [conversación](../resources/conversation.md) nueva al incluir un hilo y una publicación. 

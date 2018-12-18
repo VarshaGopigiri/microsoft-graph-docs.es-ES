@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamsAsyncOperation
 description: 'Una operación asincrónica de Microsoft Teams es una operación que va más allá de la duración de una única solicitud de API. '
-ms.openlocfilehash: 4ec60a5f0137c45a9bc0488b31b76f80799e0545
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: fd64f99c20505a8e670c865faa039e9db3174ed6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031359"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320611"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>tipo de recurso teamsAsyncOperation
 

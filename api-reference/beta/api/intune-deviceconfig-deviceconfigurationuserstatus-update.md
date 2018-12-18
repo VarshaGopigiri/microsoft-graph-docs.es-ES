@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceConfigurationUserStatus
 description: Actualice las propiedades de un objeto deviceConfigurationUserStatus.
-ms.openlocfilehash: c8d34042be1e5166880c0a23ab9ec7fd0126df01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11ad78aa074eb42e57d8c74af6d20b039e164a28
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317818"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>Actualizar deviceConfigurationUserStatus
 
@@ -44,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

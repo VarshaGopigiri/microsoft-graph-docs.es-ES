@@ -1,12 +1,13 @@
 ---
 title: Actualizar la aplicación
 description: Actualizar las propiedades del objeto application.
-ms.openlocfilehash: eaf3eaaab7e14407c6c778e4e38711b2842ed46c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: e664e212f81bab9f4e8b49bce60b4ec045fa5787
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316691"
 ---
 # <a name="update-application"></a>Actualizar la aplicación
 
@@ -29,16 +30,16 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 PATCH /applications/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|allowPublicClient|Booleano| Especifica si la aplicación puede actuar como un cliente público. Por ejemplo, una aplicación instalada que se ejecutan en un dispositivo móvil. El valor predeterminado es *false*. |
+|allowPublicClient|Boolean| Especifica si la aplicación puede actuar como un cliente público. Por ejemplo, una aplicación instalada que se ejecutan en un dispositivo móvil. El valor predeterminado es *false*. |
 |API|[API](../resources/api.md)| Especifica la configuración para una aplicación de API. |
 |appRoles|colección de [función de aplicación](../resources/approle.md)|La colección de funciones de aplicación que se puede declarar una aplicación. Estos roles pueden asignarse a usuarios, grupos o entidades de seguridad del servicio. No admite valores NULL.|
 |applicationAliases|Colección String| El URI que identifica la aplicación. Para obtener más información, vea [objetos de la aplicación y los objetos a principales de servicio](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). El operador *any* es necesario para las expresiones de filtro en las propiedades multivalor. No admite valores NULL. |
@@ -54,7 +55,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |preAuthorizedApplications|colección de [preAuthorizedApplication](../resources/preauthorizedapplication.md)| Enumera las aplicaciones y los permisos solicitados para consentimiento implícito. Requiere un administrador que se ha proporcionado el consentimiento a la aplicación. preAuthorizedApplications no requieren el usuario da su consentimiento a los permisos solicitados. Los permisos enumerados en preAuthorizedApplications no requieren el consentimiento de usuario. Sin embargo, los permisos solicitados adicionales no aparece en preAuthorizedApplications requieren el consentimiento de usuario. |
 |requiredResourceAccess|colección de [requiredResourceAccess](../resources/requiredresourceaccess.md)|Especifica los recursos que esta aplicación requiere acceso a y el conjunto de ámbitos de OAuth de permisos y funciones de las aplicaciones que necesita en cada uno de esos recursos. Esta configuración previa a la de acceso a los recursos necesarios unidades de la experiencia de consentimiento. No admite valores NULL.|
 |de cierre|Colección String| Cadenas personalizadas que se pueden usar para clasificar e identificar la aplicación. |
-|web|[web](../resources/web.md)| Especifica la configuración para una aplicación web. |
+|web|[Web](../resources/web.md)| Especifica la configuración para una aplicación web. |
 
 ## <a name="response"></a>Respuesta
 

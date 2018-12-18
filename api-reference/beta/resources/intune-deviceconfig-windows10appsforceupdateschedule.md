@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windows10AppsForceUpdateSchedule
 description: Programación de actualización de Windows 10 force para aplicaciones
-ms.openlocfilehash: 89bbee05c3a76df6999c0d3d16caa591f903c45a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 851f22e092f2669dfc44911783df6182cda1dc6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087052"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323705"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>tipo de recurso windows10AppsForceUpdateSchedule
 
@@ -20,7 +21,7 @@ Programación de actualización de Windows 10 force para aplicaciones
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Reinicie la hora de inicio para la fuerza.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Programación de periodicidad. Los valores posibles son: `none`, `daily`, `weekly` y `monthly`.|
-|runImmediatelyIfAfterStartDateTime|Booleano|Si es true, ejecuta la tarea inmediatamente si StartDateTime se encuentra en el pasado, else, se ejecuta a la siguiente repetición.|
+|runImmediatelyIfAfterStartDateTime|Boolean|Si es true, ejecuta la tarea inmediatamente si StartDateTime se encuentra en el pasado, else, se ejecuta a la siguiente repetición.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

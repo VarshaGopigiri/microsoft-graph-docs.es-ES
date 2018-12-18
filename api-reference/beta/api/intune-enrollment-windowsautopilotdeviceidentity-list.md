@@ -1,12 +1,13 @@
 ---
 title: Lista windowsAutopilotDeviceIdentities
 description: Propiedades de la lista y relaciones de los objetos windowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 13ded8463d696b6eecdb11c84f9d40f1ba414e8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 998a1af97c4ae6173fdfed8b36a84c91ccd20f80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085089"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316068"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Lista windowsAutopilotDeviceIdentities
 
@@ -37,7 +38,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

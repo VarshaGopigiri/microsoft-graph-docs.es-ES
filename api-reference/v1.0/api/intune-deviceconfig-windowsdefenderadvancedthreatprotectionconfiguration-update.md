@@ -1,12 +1,13 @@
 ---
 title: Actualizar windowsDefenderAdvancedThreatProtectionConfiguration
 description: Actualice las propiedades de un objeto windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: 59fca8540c5c2f5e499f709c2a4547274fde800f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49e8a1fb44933d3ff43c38f1b4b3b0e71a6a7b2d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319834"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Actualizar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -51,7 +52,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowSampleSharing|Booleano|Regla "Permitir el uso compartido de muestras" de Windows Defender AdvancedThreatProtection|
-|enableExpeditedTelemetryReporting|Booleano|Acelere la frecuencia de informes de telemetría de Protección contra amenazas avanzada de Windows Defender.|
+|enableExpeditedTelemetryReporting|Boolean|Acelere la frecuencia de informes de telemetría de Protección contra amenazas avanzada de Windows Defender.|
 
 
 

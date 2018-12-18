@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso userActivationCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 022b73310a54877889efebabbb6e8fc4ab71fb65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 396f6182d000df6d701e8c0cbad3dd02a258c4c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322921"
 ---
 # <a name="useractivationcounts-resource-type"></a>tipo de recurso userActivationCounts
 
@@ -15,13 +16,13 @@ ms.locfileid: "27086141"
 | Propiedad          | Tipo   | Descripción                              |
 | :---------------- | :----- | ---------------------------------------- |
 | ProductType ofrece       | String | El tipo de producto, como "Office 365 ProPlus", "Cliente del proyecto" o "Visio Pro para Office 365". |
-| lastActivatedDate | Fecha   | La fecha de la última activación.       |
+| lastActivatedDate | Date   | La fecha de la última activación.       |
 | Windows           | Int64  | El número de activación en Windows. Este número incluye cada activación en cualquier equipo de Windows. |
 | mac               | Int64  | El número de activación en Mac OS.          |
 | windows10Mobile   | Int64  | La activación contar en 10 de Windows mobile. |
 | IOS               | Int64  | El número de activación en iOS.             |
 | Android           | Int64  | El número de activación en un dispositivo Android.  |
-| activatedOnSharedComputer   | Booleano | True si el usuario utiliza el producto en un equipo compartido antes. |
+| activatedOnSharedComputer   | Boolean | True si el usuario utiliza el producto en un equipo compartido antes. |
 
 ## <a name="json-representation"></a>Representación JSON
 

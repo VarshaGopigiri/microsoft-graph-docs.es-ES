@@ -1,12 +1,13 @@
 ---
 title: acción enableLegacyPcManagement
 description: Todavía no documentado
-ms.openlocfilehash: aac634c2e39ad02b3812b1c45df636c5bedc52dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f911be27dee293a1e968809eff1bf1646d3e69de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087627"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317811"
 ---
 # <a name="enablelegacypcmanagement-action"></a>acción enableLegacyPcManagement
 
@@ -36,7 +37,7 @@ POST /deviceManagement/enableLegacyPcManagement
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

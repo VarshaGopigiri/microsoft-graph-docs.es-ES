@@ -1,12 +1,13 @@
 ---
 title: Enumerar fotos
 description: Recupere una lista de objetos profilePhoto.
-ms.openlocfilehash: c6f7ea9b530e08f2a3b348396e004a9b4341e4fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2597d532d28614bb595ffe44aa6705187619aa44
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085844"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315823"
 ---
 # <a name="list-photos"></a>Enumerar fotos
 
@@ -34,9 +35,9 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

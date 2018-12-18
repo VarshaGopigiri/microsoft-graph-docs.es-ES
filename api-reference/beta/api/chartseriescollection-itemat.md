@@ -1,12 +1,13 @@
 ---
 title: 'ChartSeriesCollection: ItemAt'
 description: Recupera una serie en función de su posición en la colección.
-ms.openlocfilehash: 7699a1048efcd81531d646f14d11443db8fc67d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e1027919034688fd90380497a42b77707fa1de72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086256"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316439"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series/ItemAt
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |index|number|Valor de índice del objeto que se va a recuperar. Indizado con cero.|
 

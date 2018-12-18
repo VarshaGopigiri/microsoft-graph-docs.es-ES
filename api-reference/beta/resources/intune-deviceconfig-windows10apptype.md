@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración windows10AppType
 description: Tipo de aplicación para Windows 10.
-ms.openlocfilehash: c3d0cada500c7724215c616535a11b8126f4f5fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c75f8d97ecaa3db4a917042b75dab49d8a313300
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088925"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321997"
 ---
 # <a name="windows10apptype-enum-type"></a>tipo de enumeración windows10AppType
 

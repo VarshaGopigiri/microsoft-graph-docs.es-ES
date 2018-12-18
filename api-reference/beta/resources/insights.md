@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de conocimientos
 description: Perspectivas son relaciones calculadas utilizando análisis avanzado y técnicas de aprendizaje de una máquina. Por ejemplo, puede identificar documentos de OneDrive tendencias alrededor de los usuarios.
-ms.openlocfilehash: 2eda6e8a5a7bd6329dc6b5acc785688377c0ac22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: f3269134f4a80462359a11d603c3f843be0c62f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318602"
 ---
 # <a name="insights-resource-type"></a>tipo de recurso de conocimientos
 

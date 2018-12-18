@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceCategory
 description: Actualice las propiedades de un objeto deviceCategory.
-ms.openlocfilehash: bd01264d6e7e07a71c683c948fe6b01fd3822f5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8676067ff4ce34358bcfd8400d28e1d73bd11f68
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321521"
 ---
 # <a name="update-devicecategory"></a>Actualizar deviceCategory
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: 'dominio: forceDelete'
 description: Elimina un dominio mediante una operación asincrónica.
-ms.openlocfilehash: 590ba49a4aff99385a2584b3d544d7682a030eb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4af5b70fca7600538d4212768243d8de82eb79ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084573"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316215"
 ---
 # <a name="domain-forcedelete"></a>dominio: forceDelete
 
@@ -59,9 +60,9 @@ POST /domains/{id}/forceDelete
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Booleano| Opción para deshabilitar las cuentas de usuario cuyo nombre ha cambiado. Si una cuenta de usuario está deshabilitada, el usuario no podrá iniciar sesión.<br>*Es true* (valor predeterminado) - usuario cambió como parte de una operación de cuentas están deshabilitadas.<br>*False* : las cuentas de usuario para cambiar el nombre como parte de esta operación no estén deshabilitados. |
+|disableUserAccounts|Boolean| Opción para deshabilitar las cuentas de usuario cuyo nombre ha cambiado. Si una cuenta de usuario está deshabilitada, el usuario no podrá iniciar sesión.<br>*Es true* (valor predeterminado) - usuario cambió como parte de una operación de cuentas están deshabilitadas.<br>*False* : las cuentas de usuario para cambiar el nombre como parte de esta operación no estén deshabilitados. |
 
 ## <a name="response"></a>Respuesta
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso compartido
 description: 'Una idea que representa los archivos compartidos con o por un usuario específico. Se admiten los siguientes archivos compartidos:'
-ms.openlocfilehash: 786e3cc94a3c108b30cca880491dab5725014570
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: fc48fe3c591d981bd6229c26aaccb85552f4836f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088115"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315809"
 ---
 # <a name="shared-resource-type"></a>tipo de recurso compartido
 

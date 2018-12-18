@@ -1,12 +1,13 @@
 ---
 title: Enumerar deviceConfigurationAssignments
 description: Enumere las propiedades y las relaciones de los objetos deviceConfigurationAssignment.
-ms.openlocfilehash: 51d4ea7c0c5a49b59777d5deaa364a8791a7db8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 605eda7354fc6af240e076427989eec05877e455
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084210"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319141"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Enumerar deviceConfigurationAssignments
 
@@ -44,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

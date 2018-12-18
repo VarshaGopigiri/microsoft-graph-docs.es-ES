@@ -1,12 +1,13 @@
 ---
 title: Cómo proteger los datos empresariales de aplicaciones con Microsoft Intune
 description: Las directivas de protección de aplicaciones de Microsoft Intune ayudan a proteger los datos empresariales y evitar la pérdida de datos.
-ms.openlocfilehash: d6a6f8fbacfdd1337da6f5560532df307a52ce9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d3b9d5d6a9169146c5a6c1dd3ab0473f7eabf4f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086313"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318014"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Cómo proteger los datos empresariales de aplicaciones con Microsoft Intune
 

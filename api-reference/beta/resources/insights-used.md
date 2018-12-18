@@ -1,12 +1,13 @@
 ---
 title: utiliza el tipo de recurso
-description: 'Una idea que representa documentos usados por un usuario específico. Los conocimientos devuelve los documentos más importantes que se pueden ve ni tener acceso a un usuario. Esto incluye documentos en:'
-ms.openlocfilehash: 3c82d268a67ef52d0ddfdad9193558080048ad6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Una idea que representa documentos usados por un usuario específico. Los conocimientos devuelve los documentos más importantes que se pueden ve ni tener acceso a un usuario.
+author: simonhult
+ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323488"
 ---
 # <a name="used-resource-type"></a>utiliza el tipo de recurso
 

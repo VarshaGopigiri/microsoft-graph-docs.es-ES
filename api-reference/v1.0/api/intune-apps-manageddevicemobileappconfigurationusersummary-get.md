@@ -1,12 +1,13 @@
 ---
 title: Obtener managedDeviceMobileAppConfigurationUserSummary
 description: Lea las propiedades y las relaciones del objeto managedDeviceMobileAppConfigurationUserSummary.
-ms.openlocfilehash: 64f526c9e0a91aab9c9d96cdf3fba1c92dd0c935
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c86b7523d9f70e593e59408e10103f3d0d971c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030755"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318406"
 ---
 # <a name="get-manageddevicemobileappconfigurationusersummary"></a>Obtener managedDeviceMobileAppConfigurationUserSummary
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

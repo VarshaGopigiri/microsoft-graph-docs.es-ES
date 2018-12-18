@@ -1,12 +1,13 @@
 ---
 title: Lista advancedThreatProtectionOnboardingDeviceSettingStates
 description: Propiedades de la lista y relaciones de los objetos advancedThreatProtectionOnboardingDeviceSettingState.
-ms.openlocfilehash: 5349bcb31f2c586602c4415d919c1f2e569ae4fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f0dec60ad0cfa9fb57ba7580d5c28fb9e084468
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322354"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>Lista advancedThreatProtectionOnboardingDeviceSettingStates
 
@@ -36,7 +37,7 @@ GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedThr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

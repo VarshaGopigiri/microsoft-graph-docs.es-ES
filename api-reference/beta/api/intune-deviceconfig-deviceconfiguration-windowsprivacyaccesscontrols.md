@@ -1,12 +1,13 @@
 ---
 title: acción windowsPrivacyAccessControls
 description: Todavía no documentado
-ms.openlocfilehash: b9b8a3e9d5042d4bb896ac4a0f310f78d7bd78a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 301091be00f31ee0b4d86f6ec78f32c0adf34016
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088380"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321045"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>acción windowsPrivacyAccessControls
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

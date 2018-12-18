@@ -1,12 +1,13 @@
 ---
 title: Actualizar networkIPv4ConfigurationManagementCondition
 description: Actualizar las propiedades de un objeto networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: 21f378b3ce7926e1e0b89f6f448cfcadebce9c69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 15ced5b6e4f92d25945ab76144e5a30438bb258f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090104"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317286"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>Actualizar networkIPv4ConfigurationManagementCondition
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

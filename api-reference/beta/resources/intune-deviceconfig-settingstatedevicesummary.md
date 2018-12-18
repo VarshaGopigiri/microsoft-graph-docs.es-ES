@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso settingStateDeviceSummary
 description: Directiva de cumplimiento y configuración del dispositivo para ver un resumen de estado de la configuración
-ms.openlocfilehash: 9f2cca6be1773a7698dcc56fab00f9979e4ee071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dff6f8966d321aa706fceabceb14a418ae8433f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084516"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318539"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Tipo de recurso settingStateDeviceSummary
 

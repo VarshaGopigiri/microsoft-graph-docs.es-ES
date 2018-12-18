@@ -1,12 +1,13 @@
 ---
 title: Crear educationSubmissionResource
 description: 'Agrega un recurso a la lista de recursos. Esta acción sólo puede realizarse por los estudiantes a quien se asigna este envío. Esta acción no se realizará correctamente si no está establecido el indicador **allowStudentsToAddResources** en true. Si desea que el autor de la llamada crear un nuevo recurso de archivo, se debe cargar el archivo a la carpeta de recursos que está asociada con el envío. Si el archivo no existe o no está en esa carpeta, se producirá un error en la solicitud POST. '
-ms.openlocfilehash: c49022cc8ff830ad4842901be8a678875ea9b2a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 71d06e996213c133ed9c48d5d3e320a785e122ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089802"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321304"
 ---
 # <a name="create-educationsubmissionresource"></a>Crear educationSubmissionResource
 

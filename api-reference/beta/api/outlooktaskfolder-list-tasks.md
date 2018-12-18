@@ -1,12 +1,13 @@
 ---
 title: Enumerar tareas
 description: Obtenga todas las tareas de Outlook en la carpeta especificada.
-ms.openlocfilehash: 51e69fe61a15acd9ae290706ccdfb1e84afac9e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4dc2e48e12cc03a0e7c95cb9e03e100b5f9922d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087857"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320506"
 ---
 # <a name="list-tasks"></a>Enumerar tareas
 

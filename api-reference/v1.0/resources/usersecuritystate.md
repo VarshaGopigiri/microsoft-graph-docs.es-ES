@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso userSecurityState
 description: Contiene información de estado acerca de la cuenta de usuario.
-ms.openlocfilehash: dbb4b6600cc11a75c84f2f0b233535d012309f88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5347ec599b88ffa65138c44cfb294339585484c8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031126"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319491"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso userSecurityState
 
@@ -20,7 +21,7 @@ Contiene información de estado acerca de la cuenta de usuario.
 |accountName|String|Nombre de cuenta de la cuenta de usuario (sin dominio de Active Directory o dominio DNS) - (también denominada `mailNickName`).|
 |domainName|String|Dominio de NetBIOS o Active Directory de la cuenta de usuario (es decir, el formato dominio\cuenta).|
 |emailRole|emailRole|Para las alertas relacionadas con el correo electrónico - correo electrónico de una cuenta de usuario 'rol'. Los valores posibles son: `unknown`, `sender` y `recipient`.|
-|isVpn|Booleano|Indica si el usuario se conectó a través de una red privada virtual.|
+|isVpn|Boolean|Indica si el usuario se conectó a través de una red privada virtual.|
 |logonDateTime|DateTimeOffset|Hora a la que el inicio de sesión se produjo. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |ID de registro|String|Identificador de usuario de inicio de sesión.|
 |logonIp|String|Dirección IP de. que la solicitud de inicio de sesión se originó.|

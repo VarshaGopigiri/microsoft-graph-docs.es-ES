@@ -1,12 +1,13 @@
 ---
 title: Obtener directoryObject
 description: Recuperar las propiedades y relaciones del objeto directoryobject.
-ms.openlocfilehash: ed1e765cb7cbde38cbb47a8dfdd58b018d142e7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 52862d10c8361ea8ba365d06dcbaf0ce06b2779f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087700"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316376"
 ---
 # <a name="get-directoryobject"></a>Obtener directoryObject
 
@@ -30,9 +31,9 @@ GET /directoryObjects/{id}
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: Lista recentPlans
 description: Recuperar una lista de plannerPlans visto recientemente por un usuario. Puede actualizar planes vistos recientemente mediante la actualización de los recursos de plannerUser.
-ms.openlocfilehash: 58c4d786dfdf596df8786db93c32e88b0cf93dfd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 68ed0cf626207e0cf02b6d32187598c3cf68d9d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089836"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322513"
 ---
 # <a name="list-recentplans"></a>Lista recentPlans
 
@@ -32,7 +33,7 @@ GET /users/<id>/planner/recentPlans
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {código} del portador. Necesario.|
+| Autorización  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

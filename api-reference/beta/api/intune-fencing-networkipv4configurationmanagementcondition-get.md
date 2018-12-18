@@ -1,12 +1,13 @@
 ---
 title: Obtener networkIPv4ConfigurationManagementCondition
 description: Leer las propiedades y las relaciones del objeto networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: ab6b216b031b457206440f3b01ffffdf7e325248
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13e202d1347705edd4d26e01a65668dba971f73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088757"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319498"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Obtener networkIPv4ConfigurationManagementCondition
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

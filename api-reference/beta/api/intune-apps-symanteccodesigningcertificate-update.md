@@ -1,12 +1,13 @@
 ---
 title: Actualizar symantecCodeSigningCertificate
 description: Actualizar las propiedades de un objeto symantecCodeSigningCertificate.
-ms.openlocfilehash: a6122997a4bc0c76521612b5b17a9c42cd944664
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fe3580f0160c50c2580580ff3515a7842ccf610d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089056"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318063"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Actualizar symantecCodeSigningCertificate
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

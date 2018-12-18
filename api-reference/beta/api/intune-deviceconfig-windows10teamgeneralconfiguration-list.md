@@ -1,12 +1,13 @@
 ---
 title: Enumerar windows10TeamGeneralConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windows10TeamGeneralConfiguration.
-ms.openlocfilehash: 350f67c881d1c154df3bb9066c9cb23321817104
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8776e14c41930ce84ee765e4a92fb467fdd01cfc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087200"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315970"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Enumerar windows10TeamGeneralConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

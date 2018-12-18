@@ -1,12 +1,13 @@
 ---
 title: Obtener windows81VpnConfiguration
 description: Leer las propiedades y las relaciones del objeto windows81VpnConfiguration.
-ms.openlocfilehash: 7acf4c88bcd08696f05564fdf94a7328cee8d412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48dfc98e2b24dc27229d15cf8c9a2edbc41ad8a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085436"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319904"
 ---
 # <a name="get-windows81vpnconfiguration"></a>Obtener windows81VpnConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

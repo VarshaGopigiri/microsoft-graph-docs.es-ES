@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceAndAppManagementAssignmentTarget
 description: Tipo base para los objetivos de la tarea.
-ms.openlocfilehash: a4d0a3c50bd63c2381b7b7dea5275449c8248436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d655bd9f8f18087916eb4943ffdb2cbf8921b790
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320793"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentTarget
 

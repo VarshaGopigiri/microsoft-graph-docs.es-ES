@@ -1,12 +1,13 @@
 ---
 title: Obtener androidWorkProfileCompliancePolicy
 description: Leer las propiedades y las relaciones del objeto androidWorkProfileCompliancePolicy.
-ms.openlocfilehash: cc4724968280201c883f7d6016caaeecc8910628
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5426fe184f370c84701913db28ec98d397db10ec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031752"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322067"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Obtener androidWorkProfileCompliancePolicy
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de configuración
 description: 'La configuración del usuario actual. '
-ms.openlocfilehash: 8bce7239a04dacaff5f942b8f106ff45565b7974
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 81a89d726374cb9640e163d13f10825390e91c23
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316642"
 ---
 # <a name="settings-resource-type"></a>tipo de recurso de configuración
 
@@ -29,8 +30,8 @@ Este recurso admite:
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booleano|Cuando se establece en true, el acceso de delegado para el usuario [tendencias](insights-trending.md) API está deshabilitada. Cuando se deshabilitan establecido en true, documentos en profundizar de Office del usuario. Cuando se establece en true, la relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y se ve afectada la vista del descubrir en OneDrive para la empresa. Los usuarios pueden controlar esta configuración en [Office profundizar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Booleano|Refleja la [Configuración del nivel de organización](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) de controlar el acceso de delegado a la [tendencia de](insights-trending.md) API. Cuando establece en true, la organización no tiene acceso a Office profundizar. La relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y la vista de detección en OneDrive para la empresa se ve afectada de toda la organización. Esta configuración es de sólo lectura y sólo se puede cambiar por los administradores en el [Centro de administración de SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Boolean|Cuando se establece en true, el acceso de delegado para el usuario [tendencias](insights-trending.md) API está deshabilitada. Cuando se deshabilitan establecido en true, documentos en profundizar de Office del usuario. Cuando se establece en true, la relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y se ve afectada la vista del descubrir en OneDrive para la empresa. Los usuarios pueden controlar esta configuración en [Office profundizar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Boolean|Refleja la [Configuración del nivel de organización](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) de controlar el acceso de delegado a la [tendencia de](insights-trending.md) API. Cuando establece en true, la organización no tiene acceso a Office profundizar. La relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y la vista de detección en OneDrive para la empresa se ve afectada de toda la organización. Esta configuración es de sólo lectura y sólo se puede cambiar por los administradores en el [Centro de administración de SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="json-representation"></a>Representación JSON
 

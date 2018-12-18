@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsOfficeClientConfiguration
 description: Obtener un objeto de directiva de seguridad que no sean específicos windowsOfficeClientConfiguration.
-ms.openlocfilehash: 13da04a61616bcd6b5776188cc0c73d9b49eeb02
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51f11f57eae10acc888c364f55e08bc6ee14afc3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317776"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>Obtener windowsOfficeClientConfiguration
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
