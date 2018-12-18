@@ -1,16 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
-ms.date: 09/10/2017
-ms.topic: conceptual
-ms.openlocfilehash: 687ed04d3ddcede391e9f16a2046cb186a093323
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Trabajar con acciones de larga duración (beta)
+description: Este artículo describe cómo trabajar con acciones de ejecución prolongada.
+ms.openlocfilehash: 73e00efd88b2656cc842c3c46f8a2241315ba184
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092816"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354533"
 ---
-# <a name="working-with-long-running-actions-beta"></a>Trabajar con acciones de larga duración (beta)
+# <a name="working-with-long-running-actions-beta"></a>Trabajar con acciones de ejecución prolongada (beta)
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 

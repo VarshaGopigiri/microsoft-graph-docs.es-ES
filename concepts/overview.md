@@ -1,12 +1,13 @@
 ---
 title: Información general de Microsoft Graph
-description: " Seguridad y Windows 10. "
-ms.openlocfilehash: 7d8ed0d16ed24e20d1b48a1e44f573dce24d838f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Microsoft Graph es la puerta de enlace a datos y la inteligencia de Microsoft 365. Microsoft Graph proporciona un modelo de programación unificado que puede usar para aprovechar la gran cantidad de datos en Office 365, Enterprise Mobility + Security y Windows 10.
+author: jthake-msft
+ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349045"
 ---
 # <a name="overview-of-microsoft-graph"></a>Información general de Microsoft Graph
 

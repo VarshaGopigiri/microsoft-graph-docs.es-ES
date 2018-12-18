@@ -1,12 +1,13 @@
 ---
 title: Información general sobre análisis e inteligencia social en Microsoft Graph
-description: 'Los cientos de millones de usuarios de los servicios en la nube de Microsoft 365 forman parte del núcleo de Microsoft Graph. Cuidadosamente, los datos de los usuarios se administran y protegen y, con la autorización correcta, se facilita su disponibilidad con los servicios de Microsoft Graph para impulsar la productividad y la creatividad en las empresas. Como los datos de los usuarios son ubicuos en Microsoft Graph, los datos derivados de las interacciones sociales de los usuarios resultan especialmente interesantes. Proporciona información inteligente que puede responder a preguntas como las siguientes:'
-ms.openlocfilehash: 518d7cb773ae32199c38f2eb8459d785b2750f18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Los cientos de millones de usuarios de los servicios en la nube de Microsoft 365 forman parte del núcleo de Microsoft Graph. Cuidadosamente, los datos de los usuarios se administran y protegen y, con la autorización correcta, se facilita su disponibilidad con los servicios de Microsoft Graph para impulsar la productividad y la creatividad en las empresas. Como los datos de los usuarios son ubicuos en Microsoft Graph, los datos derivados de las interacciones sociales de los usuarios resultan especialmente interesantes.
+author: simonhult
+ms.openlocfilehash: b4fd267f577f8427bd13ba314183d7f9b345c8d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314591"
 ---
 # <a name="overview-of-social-intelligence-and-analytics-in-microsoft-graph"></a>Información general sobre análisis e inteligencia social en Microsoft Graph
 
