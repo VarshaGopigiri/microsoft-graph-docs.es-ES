@@ -1,12 +1,13 @@
 ---
 title: Obtener androidWorkProfilePkcsCertificateProfile
 description: Leer las propiedades y las relaciones del objeto androidWorkProfilePkcsCertificateProfile.
-ms.openlocfilehash: cc12079e00c025bcc6d8c8c8de98fda45798c0d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 76dcbcc6325f9688c10928422456694354033a55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087739"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305603"
 ---
 # <a name="get-androidworkprofilepkcscertificateprofile"></a>Obtener androidWorkProfilePkcsCertificateProfile
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

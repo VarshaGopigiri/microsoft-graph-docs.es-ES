@@ -1,12 +1,13 @@
 ---
 title: Reanudar la sincronización en un educationSynchronizationProfile
 description: Reanudar la sincronización de un perfil de sincronización de datos de school específicos en el inquilino.
-ms.openlocfilehash: a184c6d7903da891d93275f87501ab38f83c3e88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: fd148db59d34f6455ba01e721453972f9cf65be4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305652"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Reanudar la sincronización en un educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ Reanudar la sincronización de escuela específico datos en un [perfil de sincro
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-| Tipo de permiso | Permissions |
+| Tipo de permiso | Permisos |
 |:-----------|:----------|
 | Delegado (cuenta profesional o educativa) | EduAdministration.ReadWrite |
 |Delegado (cuenta Microsoft personal|No admitida.|
@@ -30,9 +31,9 @@ POST /synchronizationProfiles/{id}/resume
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

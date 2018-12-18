@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: versión'
 description: " indica que se ha realizado la clasificación. Esta acción sólo puede realizarse por el profesor."
-ms.openlocfilehash: b521938737f9a3d8208c56ef5ee1b4091d075738
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 9a21c45198ccd0ef933d58721c2d594cf29443bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085918"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308592"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: versión
 

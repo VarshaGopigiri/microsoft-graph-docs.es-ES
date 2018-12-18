@@ -1,12 +1,13 @@
 ---
 title: Obtener androidManagedStoreAccountEnterpriseSettings
 description: Leer las propiedades y las relaciones del objeto androidManagedStoreAccountEnterpriseSettings.
-ms.openlocfilehash: 69e6d4c6fc35b0aed7abff0b02d001fe5e378c5e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e47c9c1456d35932fb040561c8d54cdfd78932e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087255"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306646"
 ---
 # <a name="get-androidmanagedstoreaccountenterprisesettings"></a>Obtener androidManagedStoreAccountEnterpriseSettings
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

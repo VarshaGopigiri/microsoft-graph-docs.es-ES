@@ -1,12 +1,13 @@
 ---
 title: Eliminar intuneBrandingProfile
 description: Elimina un intuneBrandingProfile.
-ms.openlocfilehash: dd847330c148ec89c2341771c1d54797e516dbbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dcb76f76528c88afbda800ae03159ac984617181
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308662"
 ---
 # <a name="delete-intunebrandingprofile"></a>Eliminar intuneBrandingProfile
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

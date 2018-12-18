@@ -1,12 +1,13 @@
 ---
 title: Actualizar windowsWifiConfiguration
 description: Actualizar las propiedades de un objeto windowsWifiConfiguration.
-ms.openlocfilehash: 9a989a13c64432450d5fcd3a385223fb5c8f318d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cd1d8ba372daf63561bf94763994fedafb24f46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082958"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310286"
 ---
 # <a name="update-windowswificonfiguration"></a>Actualizar windowsWifiConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -51,7 +52,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -61,14 +62,14 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Especificar el tipo de límite de conexión intencionadas para la conexión wifi. Los valores posibles son: `unrestricted`, `fixed` y `variable`.|
 |SSID|String|Especifique el SSID de la conexión wifi.|
 |networkName|String|Especifique el nombre de la configuración de red.|
-|connectAutomatically|Booleano|Especifique si la conexión wifi debe conectarse automáticamente cuando en el rango.|
-|connectToPreferredNetwork|Booleano|Especifique si la conexión wifi debe conectarse a redes más preferidas cuando ya está conectado a éste.  Requiere ConnectAutomatically sea true.|
-|connectWhenNetworkNameIsHidden|Booleano|Especifique si la conexión wifi debe conectarse automáticamente incluso cuando el SSID no sea de difusión.|
+|connectAutomatically|Boolean|Especifique si la conexión wifi debe conectarse automáticamente cuando en el rango.|
+|connectToPreferredNetwork|Boolean|Especifique si la conexión wifi debe conectarse a redes más preferidas cuando ya está conectado a éste.  Requiere ConnectAutomatically sea true.|
+|connectWhenNetworkNameIsHidden|Boolean|Especifique si la conexión wifi debe conectarse automáticamente incluso cuando el SSID no sea de difusión.|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Especificar la configuración para la configuración de Wi-Fi del proxy. Los valores posibles son: `none`, `manual` y `automatic`.|
 |proxyManualAddress|String|Especifique la dirección IP del servidor proxy.|
 |proxyManualPort|Int32|Especifique el puerto del servidor proxy.|
 |proxyAutomaticConfigurationUrl|String|Especifique la dirección URL de la secuencia de comandos de configuración de servidor proxy.|
-|forceFIPSCompliance|Booleano|Especifique si debe forzarse la compatibilidad con FIPS.|
+|forceFIPSCompliance|Boolean|Especifique si debe forzarse la compatibilidad con FIPS.|
 
 
 

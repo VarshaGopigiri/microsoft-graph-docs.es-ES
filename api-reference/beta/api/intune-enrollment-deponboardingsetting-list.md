@@ -1,12 +1,13 @@
 ---
 title: Lista depOnboardingSettings
 description: Propiedades de la lista y relaciones de los objetos depOnboardingSetting.
-ms.openlocfilehash: 9f1f4d7574083d3ee2c85112400b5fc6c5c39b85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e3a84246f20b6939e156172f77c76a9baac18b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305582"
 ---
 # <a name="list-deponboardingsettings"></a>Lista depOnboardingSettings
 
@@ -36,7 +37,7 @@ GET /deviceManagement/depOnboardingSettings
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

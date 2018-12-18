@@ -1,12 +1,13 @@
 ---
 title: Enumerar windows10CompliancePolicies
 description: Enumere las propiedades y las relaciones de los objetos windows10CompliancePolicy.
-ms.openlocfilehash: 1c720fec61495988399f9069c16503486b0497c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4c385464c758aed782b7dd1ea8f5d6d51f92c1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088969"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308102"
 ---
 # <a name="list-windows10compliancepolicies"></a>Enumerar windows10CompliancePolicies
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

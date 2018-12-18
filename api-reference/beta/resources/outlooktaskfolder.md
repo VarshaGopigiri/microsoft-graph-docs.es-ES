@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso outlookTaskFolder
 description: 'Una carpeta que contiene las tareas de Outlook (colección de objetos de outlookTask). '
-ms.openlocfilehash: e3fb9d73dbd9458048749331d14f933d838d4243
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088655"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306212"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>tipo de recurso outlookTaskFolder
 
@@ -24,8 +25,8 @@ En Outlook, el grupo de tareas de forma predeterminada, `My Tasks`, contiene una
 |[Obtener outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Obtener las propiedades y relaciones de la carpeta de tareas de Outlook especificada.|
 |[Crear outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Crear una tarea de Outlook en la carpeta de la tarea especificada.|
 |[Enumerar tareas](../api/outlooktaskfolder-list-tasks.md) |colección de [outlookTask](outlooktask.md)| Obtenga todas las tareas de Outlook en la carpeta especificada.|
-|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Actualizar las propiedades modificables de una carpeta de tarea de Outlook. |
-|[Delete](../api/outlooktaskfolder-delete.md) | Ninguno |Elimine la carpeta de tareas de Outlook especificada.|
+|[Actualizar](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Actualizar las propiedades modificables de una carpeta de tarea de Outlook. |
+|[Eliminar](../api/outlooktaskfolder-delete.md) | Ninguno |Elimine la carpeta de tareas de Outlook especificada.|
 |**Propiedades extendidas**| | |
 |[Crear propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Cree una o más propiedades extendidas de valor único en una carpeta de tareas de Outlook nueva o existente.   |
 |[Obtener la carpeta de tareas con la propiedad extendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Obtener las carpetas de tareas de Outlook que contienen un valor único propiedad extendida mediante el uso de `$expand` o `$filter`. |
@@ -37,7 +38,7 @@ En Outlook, el grupo de tareas de forma predeterminada, `My Tasks`, contiene una
 |:---------------|:--------|:----------|
 |changeKey|String|La versión de la carpeta de tareas.|
 |id|String|El identificador de la carpeta de tareas, único en el buzón del usuario. Solo lectura.|
-|isDefaultFolder|Booleano|Es True si la carpeta es la carpeta de tareas predeterminada.|
+|isDefaultFolder|Boolean|Es True si la carpeta es la carpeta de tareas predeterminada.|
 |name|String|El nombre de la carpeta de tareas.|
 |parentGroupKey|Guid|El identificador GUID único para el grupo primario de la carpeta de la tarea.|
 

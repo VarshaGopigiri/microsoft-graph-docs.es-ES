@@ -1,12 +1,13 @@
 ---
 title: List columns
 description: Recuperar una lista de objetos tablecolumn.
-ms.openlocfilehash: 3d7a70ec21f812418d5b00db2672ca8ddd910f2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 18bd254a1d45e95d35862c33a59e9ce1c70de6ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089158"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306807"
 ---
 # <a name="list-columns"></a>List columns
 

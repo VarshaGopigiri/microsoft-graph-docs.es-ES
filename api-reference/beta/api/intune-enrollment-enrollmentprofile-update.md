@@ -1,12 +1,13 @@
 ---
 title: Actualizar enrollmentProfile
 description: Actualizar las propiedades de un objeto enrollmentProfile.
-ms.openlocfilehash: 6d8d0b6650c1094f1d2c46ab197eeb1781e097d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088987"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308319"
 ---
 # <a name="update-enrollmentprofile"></a>Actualizar enrollmentProfile
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,9 +50,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |id|Cadena|El GUID para el objeto|
 |displayName|String|Nombre del perfil|
 |descripción|String|Descripción del perfil|
-|requiresUserAuthentication|Booleano|Indica si el perfil requiere autenticación de usuario|
+|requiresUserAuthentication|Boolean|Indica si el perfil requiere autenticación de usuario|
 |configurationEndpointUrl|String|Dirección url de extremo de configuración que se usará para inscripción|
-|enableAuthenticationViaCompanyPortal|Booleano|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa.|
+|enableAuthenticationViaCompanyPortal|Boolean|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa.|
 
 
 

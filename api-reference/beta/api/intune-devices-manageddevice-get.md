@@ -1,12 +1,13 @@
 ---
 title: Obtener managedDevice
 description: Lea las propiedades y las relaciones del objeto managedDevice.
-ms.openlocfilehash: 3e07c63fe136d77668cc8e370131875eb782a9e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30d7faff117c7df1373fd38ee53149197346654f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307871"
 ---
 # <a name="get-manageddevice"></a>Obtener managedDevice
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

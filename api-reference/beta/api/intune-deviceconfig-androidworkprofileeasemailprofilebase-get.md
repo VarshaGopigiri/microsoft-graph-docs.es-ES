@@ -1,12 +1,13 @@
 ---
 title: Obtener androidWorkProfileEasEmailProfileBase
 description: Leer las propiedades y las relaciones del objeto androidWorkProfileEasEmailProfileBase.
-ms.openlocfilehash: b0a0bd924bfc65267f9808c2e072693d7ea83879
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5617fb07f0330700f1915cc8282482be1d5a16c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086942"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308200"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>Obtener androidWorkProfileEasEmailProfileBase
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

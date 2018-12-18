@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso win32LobAppFileSystemDetection
 description: Contiene la ruta de acceso de archivo o carpeta para detectar una aplicación de Win32
-ms.openlocfilehash: 914c4f550b480bf16b2048945e66542311653338
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 26d65c8a1fcf70032c780b3e6e00a198a8ff2c30
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089682"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306877"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>tipo de recurso win32LobAppFileSystemDetection
 
@@ -23,7 +24,7 @@ Hereda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.m
 |:---|:---|:---|
 |ruta de acceso|String|La ruta de acceso de archivo o carpeta para detectar la aplicación de línea de negocio (LoB) de Win32|
 |fileOrFolderName|String|El nombre de archivo o carpeta para detectar la aplicación de línea de negocio (LoB) de Win32|
-|check32BitOn64System|Booleano|Un valor que indica si este archivo o carpeta para comprobar la aplicación de 32 bits en el sistema de 64 bits|
+|check32BitOn64System|Boolean|Un valor que indica si este archivo o carpeta para comprobar la aplicación de 32 bits en el sistema de 64 bits|
 |tipo de detección|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|El tipo de detección del sistema de archivos. Los valores posibles son: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|El operador para la detección de archivos o carpetas. Los valores posibles son: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan` y `lessThanOrEqual`.|
 |detectionValue|String|El valor de detección de archivo o carpeta|

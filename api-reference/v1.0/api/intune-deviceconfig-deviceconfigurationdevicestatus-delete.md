@@ -1,12 +1,13 @@
 ---
 title: Eliminar deviceConfigurationDeviceStatus
 description: Elimina un deviceConfigurationDeviceStatus
-ms.openlocfilehash: f9985ad9b94bce229045ae0b698957ad4372aa11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c46b5cab776e1a047339f9280d73ee8924327124
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307311"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>Eliminar deviceConfigurationDeviceStatus
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStat
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

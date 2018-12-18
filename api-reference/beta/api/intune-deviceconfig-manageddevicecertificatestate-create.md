@@ -1,12 +1,13 @@
 ---
 title: Crear managedDeviceCertificateState
 description: Crear un nuevo objeto managedDeviceCertificateState.
-ms.openlocfilehash: 7369b6d4eb8c5639fd928c5ff2be46b9db8dc10e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 22b8a0db82e86b9136ee997a821223afe608b51a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305960"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Crear managedDeviceCertificateState
 
@@ -52,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

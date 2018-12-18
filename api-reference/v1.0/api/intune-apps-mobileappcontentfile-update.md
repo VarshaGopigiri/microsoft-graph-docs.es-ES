@@ -1,12 +1,13 @@
 ---
 title: Actualizar mobileAppContentFile
 description: Actualice las propiedades de un objeto mobileAppContentFile.
-ms.openlocfilehash: b3a25c3ccce6598f12d6742546cca0f61679a138
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7117fe10ca2f191607c6d5a4823cc39a9fcc8cb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029277"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309607"
 ---
 # <a name="update-mobileappcontentfile"></a>Actualizar mobileAppContentFile
 
@@ -34,7 +35,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |azureStorageUri|String|El URI de Azure Storage.|
-|isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
+|isCommitted|Boolean|Un valor que indica si el archivo está confirmado.|
 |id|String|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
 |name|String|El nombre del archivo.|

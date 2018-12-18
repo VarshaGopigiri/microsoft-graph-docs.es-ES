@@ -1,12 +1,13 @@
 ---
 title: 'Range: Intersection'
 description: Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados.
-ms.openlocfilehash: e2480630435a8fdf7195af1d174e6141e5f068c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e35bf93a07930b34e984df4a84d5ed30b907ea15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029089"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309691"
 ---
 # <a name="range-intersection"></a>Range: Intersection
 
@@ -37,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |anotherRange|string|Objeto de intervalo o dirección de intervalo que se usará para determinar la intersección de los intervalos.|
 

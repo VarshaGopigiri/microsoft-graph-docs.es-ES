@@ -1,12 +1,13 @@
 ---
 title: Actualizar roleAssignment
 description: Actualice las propiedades de un objeto roleAssignment.
-ms.openlocfilehash: 64ec4aa3c885ce2c9de475faef1e00fd14f2576d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d2fec52b4338229f53f8abd0d08f04f2c2d569
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085024"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308879"
 ---
 # <a name="update-roleassignment"></a>Actualizar roleAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

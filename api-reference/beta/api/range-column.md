@@ -1,12 +1,13 @@
 ---
 title: 'Range: Column'
 description: Obtiene una columna contenida en el rango.
-ms.openlocfilehash: dde991dff164f5abab34c0acccc4127ece76b673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6606562be4005528978696e2fe4e23fae991278d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088714"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310167"
 ---
 # <a name="range-column"></a>Range: Column
 
@@ -39,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |column|number|Número de columna del intervalo que se va a recuperar. Indizado con cero.|
 

@@ -1,12 +1,13 @@
 ---
 title: Forzar la eliminación de dominio
 description: Elimina un dominio mediante una operación asincrónica de larga duración.
-ms.openlocfilehash: 20f00679998070b95af65292cadf83d76aa2add1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 85839d8bf7d36925661d0202c053574288763dc6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032522"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309117"
 ---
 # <a name="force-domain-deletion"></a>Forzar la eliminación de dominio
 
@@ -57,7 +58,7 @@ POST /domains/{id}/forceDelete
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro | Tipo | Descripción |
+| Parámetro | Type | Descripción |
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Opción para deshabilitar las cuentas de usuario que han cambiado de nombre. Si una cuenta de usuario está deshabilitada, el usuario no podrá iniciar sesión. Si establece en **true** la `users` actualizados tal como parte de esta operación se deshabilitará.  Valor predeterminado es **true**. |
 

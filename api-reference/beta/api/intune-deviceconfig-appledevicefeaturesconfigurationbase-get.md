@@ -1,12 +1,13 @@
 ---
 title: Obtener appleDeviceFeaturesConfigurationBase
 description: Lea las propiedades y las relaciones del objeto appleDeviceFeaturesConfigurationBase.
-ms.openlocfilehash: 1f2058f7f38f1033e243f635a7cc17245a7e7b26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 683b3b46a30382daf1901c18131e3c86dd144d74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090144"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308417"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Obtener appleDeviceFeaturesConfigurationBase
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

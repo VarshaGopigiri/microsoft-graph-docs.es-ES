@@ -1,12 +1,13 @@
 ---
 title: Crear windowsPhone81GeneralConfiguration
 description: Crear un objeto windowsPhone81GeneralConfiguration.
-ms.openlocfilehash: 8598e728be574e09f79bb8e7a384b76416bf79f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 23e98acd93fc5851df690b7f06ee0bac3a16ce70
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030047"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307087"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Crear windowsPhone81GeneralConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,19 +51,19 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|applyOnlyToWindowsPhone81|Booleano|Valor que indica si esta directiva se aplica solo a Windows Phone 8.1. Esta propiedad es de solo lectura.|
+|applyOnlyToWindowsPhone81|Boolean|Valor que indica si esta directiva se aplica solo a Windows Phone 8.1. Esta propiedad es de solo lectura.|
 |appsBlockCopyPaste|Booleano|Indica si se va a impedir cortar y pegar.|
-|bluetoothBlocked|Booleano|Indica si se va a bloquear Bluetooth.|
+|bluetoothBlocked|Boolean|Indica si se va a bloquear Bluetooth.|
 |cameraBlocked|Booleano|Indica si se va a bloquear la cámara.|
 |cellularBlockWifiTethering|Booleano|Indica si se va a bloquear el tethering Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
 |compliantAppsList|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que se encuentra en la AppComplianceList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
-|emailBlockAddingAccounts|Booleano|Indica si se van a bloquear las cuentas de correo electrónico personalizadas.|
+|diagnosticDataBlockSubmission|Boolean|Indica si se va a bloquear el envío de datos de diagnóstico.|
+|emailBlockAddingAccounts|Boolean|Indica si se van a bloquear las cuentas de correo electrónico personalizadas.|
 |locationServicesBlocked|Booleano|Indica si se van a bloquear los servicios de ubicación.|
-|microsoftAccountBlocked|Booleano|Indica si se va a bloquear el uso de una cuenta de Microsoft.|
-|nfcBlocked|Booleano|Indica si se va a bloquear la transmisión de datos en proximidad.|
-|passwordBlockSimple|Booleano|Indica si se va a bloquear la sincronización del calendario.|
+|microsoftAccountBlocked|Boolean|Indica si se va a bloquear el uso de una cuenta de Microsoft.|
+|nfcBlocked|Boolean|Indica si se va a bloquear la transmisión de datos en proximidad.|
+|passwordBlockSimple|Boolean|Indica si se va a bloquear la sincronización del calendario.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña.|
 |passwordMinimumLength|Int32|Longitud mínima de las contraseñas.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
@@ -70,15 +71,15 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
-|passwordRequired|Booleano|Indica si se va a requerir una contraseña.|
-|screenCaptureBlocked|Booleano|Indica si se van a impedir las capturas de pantalla.|
+|passwordRequired|Boolean|Indica si se va a requerir una contraseña.|
+|screenCaptureBlocked|Boolean|Indica si se van a impedir las capturas de pantalla.|
 |storageBlockRemovableStorage|Booleano|Indica si se va a impedir el almacenamiento extraíble.|
-|storageRequireEncryption|Booleano|Indica si se va a requerir cifrado.|
-|webBrowserBlocked|Booleano|Indica si se va a bloquear el explorador web.|
+|storageRequireEncryption|Boolean|Indica si se va a requerir cifrado.|
+|webBrowserBlocked|Boolean|Indica si se va a bloquear el explorador web.|
 |wifiBlocked|Booleano|Indica si se va a bloquear el uso de Wi-Fi.|
 |wifiBlockAutomaticConnectHotspots|Booleano|Indica si se va a bloquear automáticamente la conexión a zonas Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
 |wifiBlockHotspotReporting|Booleano|Indica si se van a bloquear los informes de zona Wi-Fi. No tiene impacto si se bloquea el Wi-Fi.|
-|windowsStoreBlocked|Booleano|Indica si se va a bloquear la Tienda Windows.|
+|windowsStoreBlocked|Boolean|Indica si se va a bloquear la Tienda Windows.|
 
 
 

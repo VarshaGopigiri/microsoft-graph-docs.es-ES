@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración healthState
 description: Indica el estado de mantenimiento de la aplicación de administración de Windows.
-ms.openlocfilehash: d52b894983795c9cb46d92dce6985e4aab3dd94d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 831caf85b5beb4c90721aea44054b85d64817c84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090943"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308725"
 ---
 # <a name="healthstate-enum-type"></a>tipo de enumeración healthState
 

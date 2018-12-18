@@ -1,12 +1,13 @@
 ---
 title: List contacts
 description: Obtener una colección de contacto desde la carpeta Contactos predeterminada del usuario que ha iniciado sesión.
-ms.openlocfilehash: 9322810d90f38c0b7643379f22a90a89cf7070df
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: dkershaw10
+ms.openlocfilehash: a4fa40b66280ea3447c1d07a531a596a42c14ed2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209736"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307501"
 ---
 # <a name="list-contacts"></a>List contacts
 

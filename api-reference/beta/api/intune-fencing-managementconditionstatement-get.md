@@ -1,12 +1,13 @@
 ---
 title: Obtener managementConditionStatement
 description: Leer las propiedades y las relaciones del objeto managementConditionStatement.
-ms.openlocfilehash: 8a89c1c83e1d38e061bcb738331f538a93e6c13d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1a5800fdeedd755240fae9c8691341f0fc20214a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308312"
 ---
 # <a name="get-managementconditionstatement"></a>Obtener managementConditionStatement
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

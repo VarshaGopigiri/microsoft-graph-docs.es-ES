@@ -1,12 +1,13 @@
 ---
 title: Eliminar mobileAppAssignment
 description: Elimina un mobileAppAssignment.
-ms.openlocfilehash: 3a0eb4f0172352b5227a830286ccc86986711a49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 55f9f1b776414d9baf0b5a19fb43ddd18baab2e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090955"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308158"
 ---
 # <a name="delete-mobileappassignment"></a>Eliminar mobileAppAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssig
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosLobAppAssignmentSettings
 description: Contiene las propiedades que se usan para asignar a un grupo una aplicación móvil de línea de negocio para iOS.
-ms.openlocfilehash: 29642e7ba4d834d4481d5bc04b0d82a7046f544d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 78de511bdbdf2e4a8b16d9ce32a790329d2eb3c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032040"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306093"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Tipo de recurso iosLobAppAssignmentSettings
 

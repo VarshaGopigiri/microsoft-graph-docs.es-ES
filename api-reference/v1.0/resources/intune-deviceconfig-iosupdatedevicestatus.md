@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosUpdateDeviceStatus
 description: Todavía no documentado
-ms.openlocfilehash: dbbd5ef334cbb525ce4119e0f84bebc23cdff186
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee7366c83cbe8a65c128944cc17abfc9dd2cf0df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032106"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309250"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Tipo de recurso iosUpdateDeviceStatus
 

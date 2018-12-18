@@ -1,12 +1,13 @@
 ---
 title: Get contactFolder
 description: Obtiene una carpeta de contactos mediante el id. de carpeta de contactos.
-ms.openlocfilehash: 9bc65841ab81d8486b2996f504b8edf6b1b8d758
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 4d898a4e983f9b1c8d1dac3499de1123a85c030f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030057"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310482"
 ---
 # <a name="get-contactfolder"></a>Get contactFolder
 
@@ -36,9 +37,9 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso importedDeviceIdentityResult
 description: El recurso importedDeviceIdentityResult representa el resultado de intentar importar una identidad de dispositivo.
-ms.openlocfilehash: cd7b70bb0535a02dfa4cf6b09a70fc22b1e7a469
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 060ebbebb38cd258e57ca30794e44e5e651d5fe2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310174"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>tipo de recurso importedDeviceIdentityResult
 
@@ -39,7 +40,7 @@ Hereda de [importedDeviceIdentity](../resources/intune-enrollment-importeddevice
 |descripción|String|La descripción del dispositivo Inherited desde [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|El estado del dispositivo en Intune se hereda de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Los valores posibles son: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|La plataforma del dispositivo. Se hereda de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Los valores posibles son: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
-|status|Booleano|Estado de identidad de dispositivo importada|
+|status|Boolean|Estado de identidad de dispositivo importada|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

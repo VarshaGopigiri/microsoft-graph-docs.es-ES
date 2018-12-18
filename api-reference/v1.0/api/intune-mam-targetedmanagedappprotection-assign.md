@@ -1,12 +1,13 @@
 ---
 title: asignar acción
 description: Todavía no documentado
-ms.openlocfilehash: 928067d1058df303c6963d54d4322c2b41ddddb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4150e1b9ef98fc91e7cd7a83a21e34b5f602071
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028558"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309649"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

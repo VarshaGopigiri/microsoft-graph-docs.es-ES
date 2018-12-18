@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsKioskUser
 description: La clase base de usuario utilizada para identificar la información de cuenta para la configuración de quiosco
-ms.openlocfilehash: 403378e2df38aff88f82d3cbf98161bfa7480267
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 40814a24607f8aa378767080b9107e3c1e4abafe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084407"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306530"
 ---
 # <a name="windowskioskuser-resource-type"></a>tipo de recurso windowsKioskUser
 

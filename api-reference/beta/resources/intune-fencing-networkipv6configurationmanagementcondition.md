@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso networkIPv6ConfigurationManagementCondition
 description: Configuración de red de IPv6 se pueden definir las condiciones de administración basada en la configuración que se activará cuando un dispositivo detecta cierta IP. Una condición de administración de configuración IP sólo se considerarán TRUE cuando la conexión de red está activa.
-ms.openlocfilehash: b62cd29b56764fa1affd97a373e68907f9c28ff1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de74fddad090993f6829180ba6f5eaea9cdaf59a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083262"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305743"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv6ConfigurationManagementCondition
 

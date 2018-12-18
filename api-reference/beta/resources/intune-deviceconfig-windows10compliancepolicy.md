@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windows10CompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para Windows 10.
-ms.openlocfilehash: b153ef661104a4160cb57af312d88e1069842bd7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a2a88ee828204ff1ee5bdd8bfb22431b3e3de0f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308536"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Tipo de recurso windows10CompliancePolicy
 
@@ -37,7 +38,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passwordRequired|Booleano|Exige una contraseña para desbloquear el dispositivo Windows.|
+|passwordRequired|Boolean|Exige una contraseña para desbloquear el dispositivo Windows.|
 |passwordBlockSimple|Booleano|Indica si quiere bloquear o no la contraseña simple.|
 |passwordRequiredToUnlockFromIdle|Booleano|Exige una contraseña para desbloquear el dispositivo inactivo.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesaria una contraseña.|
@@ -56,17 +57,17 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |secureBootEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos; el arranque seguro está habilitado.|
 |codeIntegrityEnabled|Booleano|Exige que la atestación de estado de dispositivo Windows notifique los dispositivos como correctos.|
 |storageRequireEncryption|Booleano|Exige el cifrado en dispositivos Windows.|
-|activeFirewallRequired|Booleano|Requiere un servidor de seguridad activo en los dispositivos de Windows.|
-|defenderEnabled|Booleano|Requieren Windows Defender Antimalware en los dispositivos de Windows.|
+|activeFirewallRequired|Boolean|Requiere un servidor de seguridad activo en los dispositivos de Windows.|
+|defenderEnabled|Boolean|Requieren Windows Defender Antimalware en los dispositivos de Windows.|
 |defenderVersion|String|Requiere la versión mínima de Windows Defender Antimalware en los dispositivos de Windows.|
-|signatureOutOfDate|Booleano|Requieren Windows Defender Antimalware firma ser actualizados en los dispositivos de Windows.|
-|rtpEnabled|Booleano|Requerir protección en tiempo real de Windows Defender Antimalware en los dispositivos de Windows.|
-|antivirusRequired|Booleano|Requieren cualquier solución Antivirus registrado con el centro de seguridad de Windows que esté en y supervisión (por ejemplo, Symantec, Windows Defender).|
-|antiSpywareRequired|Booleano|Requieren cualquier solución de anti spyware registrado con el centro de seguridad de Windows que esté en y supervisión (por ejemplo, Symantec, Windows Defender).|
+|signatureOutOfDate|Boolean|Requieren Windows Defender Antimalware firma ser actualizados en los dispositivos de Windows.|
+|rtpEnabled|Boolean|Requerir protección en tiempo real de Windows Defender Antimalware en los dispositivos de Windows.|
+|antivirusRequired|Boolean|Requieren cualquier solución Antivirus registrado con el centro de seguridad de Windows que esté en y supervisión (por ejemplo, Symantec, Windows Defender).|
+|antiSpywareRequired|Boolean|Requieren cualquier solución de anti spyware registrado con el centro de seguridad de Windows que esté en y supervisión (por ejemplo, Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|colección de [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|El sistema operativo válido crear rangos en los dispositivos de Windows. Esta colección puede contener un máximo de 10 000 elementos.|
 |deviceThreatProtectionEnabled|Booleano|Exigir que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Requieren el nivel de riesgo mínimo de protección contra amenazas de dispositivo para informar de incumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Booleano|Se requieren para tener en cuenta el estado de cumplimiento de SCCM en cuenta para el estado de cumplimiento Intune.|
+|configurationManagerComplianceRequired|Boolean|Se requieren para tener en cuenta el estado de cumplimiento de SCCM en cuenta para el estado de cumplimiento Intune.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

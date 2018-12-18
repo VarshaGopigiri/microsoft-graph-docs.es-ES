@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso applePushNotificationCertificate
 description: Certificado de notificación de inserción de Apple.
-ms.openlocfilehash: 94707f157c1667593c0f5a25234be52b1c7c5955
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11c03712cc482a882452a9b64867090260863075
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306653"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 

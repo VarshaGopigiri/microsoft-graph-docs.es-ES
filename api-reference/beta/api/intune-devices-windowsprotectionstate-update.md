@@ -1,12 +1,13 @@
 ---
 title: Actualizar windowsProtectionState
 description: Actualizar las propiedades de un objeto windowsProtectionState.
-ms.openlocfilehash: f1323baa9a6611e5f6057456fbbefbaddefa626e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308711"
 ---
 # <a name="update-windowsprotectionstate"></a>Actualizar windowsProtectionState
 
@@ -37,7 +38,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,15 +49,15 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|String|El identificador único para el objeto de estado de protección de dispositivo. Esto es el identificador de dispositivo del dispositivo|
-|malwareProtectionEnabled|Booleano|Protección contra malware está habilitado o no|
+|malwareProtectionEnabled|Boolean|Protección contra malware está habilitado o no|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado del equipo (como clean o pendiente de examen completo o pendientes reinicio etcetera). Los valores posibles son: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Booleano|¿Protección en tiempo real está habilitada o no?|
-|networkInspectionSystemEnabled|Booleano|¿Sistema de control de red habilitado o no?|
-|quickScanOverdue|Booleano|¿Rápido examinar vencidas o no?|
-|fullScanOverdue|Booleano|¿Total de examen vencida o no?|
-|signatureUpdateOverdue|Booleano|¿Firma caducada o no?|
-|rebootRequired|Booleano|¿Es necesario reiniciar o no?|
-|fullScanRequired|Booleano|¿Examen completo o no necesario?|
+|realTimeProtectionEnabled|Boolean|¿Protección en tiempo real está habilitada o no?|
+|networkInspectionSystemEnabled|Boolean|¿Sistema de control de red habilitado o no?|
+|quickScanOverdue|Boolean|¿Rápido examinar vencidas o no?|
+|fullScanOverdue|Boolean|¿Total de examen vencida o no?|
+|signatureUpdateOverdue|Boolean|¿Firma caducada o no?|
+|rebootRequired|Boolean|¿Es necesario reiniciar o no?|
+|fullScanRequired|Boolean|¿Examen completo o no necesario?|
 |engineVersion|String|Versión del motor de actual extremo protección|
 |signatureVersion|String|Versión actual de las definiciones de malware|
 |antiMalwareVersion|String|Actual de protección contra malware versión|

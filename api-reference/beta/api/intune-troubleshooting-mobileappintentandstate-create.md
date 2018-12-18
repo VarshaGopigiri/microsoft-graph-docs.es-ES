@@ -1,12 +1,13 @@
 ---
 title: Crear mobileAppIntentAndState
 description: Crear un nuevo objeto mobileAppIntentAndState.
-ms.openlocfilehash: 75ed07d1bc9dfddb914ec3a825cb31b038873cd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 590cbb01e8b1f41ce1a1c43be7c3a97872ea737a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308704"
 ---
 # <a name="create-mobileappintentandstate"></a>Crear mobileAppIntentAndState
 
@@ -36,7 +37,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

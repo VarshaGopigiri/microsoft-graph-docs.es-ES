@@ -1,12 +1,13 @@
 ---
 title: asignar acción
 description: Reemplazar todos los grupos para una directiva.
-ms.openlocfilehash: dd892444d60338b73df4209eef00069667e15d48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089318"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307829"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -36,7 +37,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

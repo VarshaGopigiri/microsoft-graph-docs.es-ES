@@ -1,12 +1,13 @@
 ---
 title: Enumerar blocs de notas
 description: Recupera una lista de objetos notebook.
-ms.openlocfilehash: 429c02d0032453fc00a7517af32cac8b9d3c66f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: c5925d858b7cbd567b018bd5d8491f2f20b33f66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031398"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309831"
 ---
 # <a name="list-notebooks"></a>Enumerar blocs de notas
 
@@ -36,9 +37,9 @@ El criterio de ordenación predeterminado es `name asc`.
 `sections` y `sectionGroups` son valores de `expand` para los blocs de notas.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

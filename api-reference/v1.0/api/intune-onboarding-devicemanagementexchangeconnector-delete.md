@@ -1,12 +1,13 @@
 ---
 title: Eliminar deviceManagementExchangeConnector
 description: Elimina un deviceManagementExchangeConnector.
-ms.openlocfilehash: ae9ff4bf4c6bdd1cbd76a0ff4f0d369e26c8bde9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 45a52675739698233a769980cb532ee11f9b2057
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307633"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>Eliminar deviceManagementExchangeConnector
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

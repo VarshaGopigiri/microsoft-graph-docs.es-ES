@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceEnrollmentPlatformRestrictionsConfiguration
 description: Actualice las propiedades de un objeto deviceEnrollmentPlatformRestrictionsConfiguration.
-ms.openlocfilehash: 2f78952d3eeae8f88e66ca1b5441141b7172153f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc7ac904df5ae18b0476cfeeb2d1c98a6533a7c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308207"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>Actualizar deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

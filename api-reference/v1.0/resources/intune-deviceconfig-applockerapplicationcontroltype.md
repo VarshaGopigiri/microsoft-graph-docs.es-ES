@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración appLockerApplicationControlType
 description: Posibles valores de tipos de Control de aplicación de AppLocker
-ms.openlocfilehash: 703cc18dfee49a01adb3cd4f61c5d7e99e30fb00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d53c2d0f7996edfab610e4206f4d2815ba4000b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029140"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310265"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>tipo de enumeración appLockerApplicationControlType
 

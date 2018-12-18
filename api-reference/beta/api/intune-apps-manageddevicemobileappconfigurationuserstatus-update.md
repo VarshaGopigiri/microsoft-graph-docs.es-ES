@@ -1,12 +1,13 @@
 ---
 title: Actualizar managedDeviceMobileAppConfigurationUserStatus
 description: Actualice las propiedades de un objeto managedDeviceMobileAppConfigurationUserStatus.
-ms.openlocfilehash: 8fdcb93c01bd2132a69c2bb41de5ff8a5ecf801d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e76c6ef607c97cb0f2fb4572cbea4009bc80fd7c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089034"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310538"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Actualizar managedDeviceMobileAppConfigurationUserStatus
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

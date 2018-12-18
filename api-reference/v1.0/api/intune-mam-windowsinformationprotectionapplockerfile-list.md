@@ -1,12 +1,13 @@
 ---
 title: Enumerar windowsInformationProtectionAppLockerFiles
 description: Enumere las propiedades y las relaciones de los objetos windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: 6d383ba2073b245e405871ba3cd39e480970c3d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d0c33fc5b529e4ab1028e811f6f0024c5ea8f63b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309558"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>Enumerar windowsInformationProtectionAppLockerFiles
 
@@ -37,7 +38,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

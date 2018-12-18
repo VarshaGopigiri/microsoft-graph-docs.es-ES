@@ -1,12 +1,13 @@
 ---
 title: Enumerar organizaciones
 description: Lea las propiedades y las relaciones de los objetos organization.
-ms.openlocfilehash: fcef4a39ff3b78beb2b4a094b544e36c93190406
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ad5c23d038274de62a7ab4f4e9c0a467918e754
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031547"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309068"
 ---
 # <a name="list-organizations"></a>Enumerar organizaciones
 
@@ -34,7 +35,7 @@ GET /organization
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Crear iosDeviceFeaturesConfiguration
 description: Cree un objeto iosDeviceFeaturesConfiguration.
-ms.openlocfilehash: 5e5f4fec99d987149c5b620d94910fd2c0df9b9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9467e42e16d88e0d1bfa02ea0996a8930d5d6cdd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307423"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Crear iosDeviceFeaturesConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

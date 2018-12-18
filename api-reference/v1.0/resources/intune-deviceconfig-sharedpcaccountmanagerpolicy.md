@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso sharedPCAccountManagerPolicy
 description: Directiva de administrador de cuentas de PC compartido. Solo se aplica cuando el administrador de cuentas está activado.
-ms.openlocfilehash: 72616fbecd20ab43db6aafcb9ecbce00530cb4db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7eafffbfac115c95cbf2c62be630cf7958965ce9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032663"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306570"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Tipo de recurso sharedPCAccountManagerPolicy
 

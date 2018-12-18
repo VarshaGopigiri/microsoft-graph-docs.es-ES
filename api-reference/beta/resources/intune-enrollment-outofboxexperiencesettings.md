@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso outOfBoxExperienceSettings
 description: Fuera de la experiencia del cuadro Configuración
-ms.openlocfilehash: 7d685c7e229828309e2ee759396215c3cd8dfac9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545fbe5c27063397a4d08c40729227804ebfc56d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090534"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308410"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
 
@@ -18,12 +19,12 @@ Fuera de la experiencia del cuadro Configuración
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|hidePrivacySettings|Booleano|Mostrar u ocultar opciones de privacidad para los usuarios|
-|hideEULA|Booleano|Mostrar u ocultar los términos de licencia para el usuario|
+|hidePrivacySettings|Boolean|Mostrar u ocultar opciones de privacidad para los usuarios|
+|hideEULA|Boolean|Mostrar u ocultar los términos de licencia para el usuario|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuario. Los valores posibles son: `administrator` y `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticación de combinación AAD. Los valores posibles son: `singleUser` y `shared`.|
-|skipKeyboardSelectionPage|Booleano|Si el conjunto y, a continuación, omitir la selección de teclado página si se establecen el idioma y región|
-|hideEscapeLink|Booleano|Si se establece en true, a continuación, el usuario no se puede iniciar a través de con una cuenta diferente, en el inicio de sesión de compañía|
+|skipKeyboardSelectionPage|Boolean|Si el conjunto y, a continuación, omitir la selección de teclado página si se establecen el idioma y región|
+|hideEscapeLink|Boolean|Si se establece en true, a continuación, el usuario no se puede iniciar a través de con una cuenta diferente, en el inicio de sesión de compañía|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

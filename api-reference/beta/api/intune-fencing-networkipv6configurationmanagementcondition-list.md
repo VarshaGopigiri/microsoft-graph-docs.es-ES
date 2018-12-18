@@ -1,12 +1,13 @@
 ---
 title: Lista networkIPv6ConfigurationManagementConditions
 description: Propiedades de la lista y relaciones de los objetos networkIPv6ConfigurationManagementCondition.
-ms.openlocfilehash: eb71bd64369a0cf02fff8e0390ba779a106d9684
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad138f098413cc09c06bc25e48d603d43f3d45a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305617"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>Lista networkIPv6ConfigurationManagementConditions
 
@@ -37,7 +38,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

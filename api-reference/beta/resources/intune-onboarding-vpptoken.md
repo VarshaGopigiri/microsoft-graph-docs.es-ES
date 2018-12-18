@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso vppToken
 description: Compra varias licencias para aplicaciones de aplicaciones iOS a través del programa de compras por volumen de Apple para la empresa o el ámbito educativo. Esto implica configurar una cuenta de Apple VPP desde el sitio web de Apple y cargar el token de Apple VPP empresarial o educativo en Intune. A continuación, puede sincronizar la información de compra por volumen con Intune y realizar un seguimiento de su uso de la aplicación de compra por volumen. Puede cargar varios token de Apple VPP empresarial o educativo.
-ms.openlocfilehash: 48b7b455cc4e8af99ccfb33dfa5cc7c4a7989e15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd4fdcda2af6964b7ad506d8f1b08b23586b4af9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306842"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 
@@ -43,10 +44,10 @@ Compra varias licencias para aplicaciones de aplicaciones iOS a través del prog
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Estado de sincronización actual de la última sincronización de la aplicación que se activó con el Token del programa de compras por volumen de Apple. Los valores posibles son: `none`, `inProgress`, `completed` y `failed`. Los valores posibles son: `none`, `inProgress`, `completed` y `failed`.|
 |automaticallyUpdateApps|Booleano|Si las aplicaciones para el token VPP se actualizarán automáticamente o no.|
 |countryOrRegion|Cadena|Si las aplicaciones para el token VPP se actualizarán automáticamente o no.|
-|dataSharingConsentGranted|Booleano|Concede de consentimiento para uso compartido con el programa de compra de Apple por volumen de datos.|
+|dataSharingConsentGranted|Boolean|Concede de consentimiento para uso compartido con el programa de compra de Apple por volumen de datos.|
 |displayName|String|Un administrador especifica el nombre descriptivo del token.|
 |locationName|String|Ubicación de token devuelto desde VPP de Apple.|
-|claimTokenManagementFromExternalMdm|Booleano|Administración de consentimiento para permitir que afirma token administración de MDM. externo|
+|claimTokenManagementFromExternalMdm|Boolean|Administración de consentimiento para permitir que afirma token administración de MDM. externo|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -1,12 +1,13 @@
 ---
 title: Enumerar iosVppEBookAssignments
 description: Enumere las propiedades y las relaciones de los objetos iosVppEBookAssignment.
-ms.openlocfilehash: f6e03361a3413c772517ab92deed6e7c9dc2322b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec1540956ef9972dd4dddc75921bec006953a8b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028881"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309257"
 ---
 # <a name="list-iosvppebookassignments"></a>Enumerar iosVppEBookAssignments
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

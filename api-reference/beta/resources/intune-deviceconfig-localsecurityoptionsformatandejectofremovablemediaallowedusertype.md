@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType
 description: Valores posibles para LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
-ms.openlocfilehash: a6c3a3ad6cf087b78a6380a3024c417958644cf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e2422cfa77f8348f2e449d92c52a838b37760900
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083605"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305799"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>tipo de enumeración localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType
 

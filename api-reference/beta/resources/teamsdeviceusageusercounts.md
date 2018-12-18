@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamsDeviceUsageUserCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 9640af67efc18f0a70c636673169e884ce82d971
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 1255a8e1e92bb461d5c100c72e9030f57db5f8fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306513"
 ---
 # <a name="teamsdeviceusageusercounts-resource-type"></a>tipo de recurso teamsDeviceUsageUserCounts
 
@@ -14,14 +15,14 @@ ms.locfileid: "27090433"
 
 | Propiedad          | Tipo   |
 | :---------------- | :----- |
-| reportRefreshDate | Fecha   |
+| reportRefreshDate | Date   |
 | web               | Int64  |
 | windowsPhone      | Int64  |
 | androidPhone      | Int64  |
 | IOS               | Int64  |
 | mac               | Int64  |
 | Windows           | Int64  |
-| reportDate        | Fecha   |
+| reportDate        | Date   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>Representación JSON

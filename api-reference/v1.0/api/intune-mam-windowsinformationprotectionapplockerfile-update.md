@@ -1,12 +1,13 @@
 ---
 title: Actualizar windowsInformationProtectionAppLockerFile
 description: Actualice las propiedades de un objeto windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: c54a29650dc47c5cc6e5e9535ee55846a8e3439b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdf14722d82da5afa2d51cb87b8e8c6ea69b9bf5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031546"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309838"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Actualizar windowsInformationProtectionAppLockerFile
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

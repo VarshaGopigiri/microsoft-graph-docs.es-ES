@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso embeddedSIMActivationCodePool
 description: Un grupo representa un grupo de códigos de activación de SIM incrustados.
-ms.openlocfilehash: f6c80d82d4be6a794547e3ec0b93d4206d7edbe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f756488d4e00e3d69bebf0e484f01aeec5650a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089470"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307143"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>tipo de recurso embeddedSIMActivationCodePool
 

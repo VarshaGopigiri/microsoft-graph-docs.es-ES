@@ -1,12 +1,13 @@
 ---
 title: Actualizar intuneBrandingProfile
 description: Actualizar las propiedades de un objeto intuneBrandingProfile.
-ms.openlocfilehash: 094de592e0e8d80472f1b0c6ed3d751ac79ba863
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4321b0197e30126c4d83371a31425af1d8e73bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309950"
 ---
 # <a name="update-intunebrandingprofile"></a>Actualizar intuneBrandingProfile
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,7 +50,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |id|String|Clave de perfil|
 |nombre del perfil|String|Nombre del perfil|
 |profileDescription|String|Descripción del perfil|
-|isDefaultProfile|Booleano|Presenta si se utiliza el perfil de forma predeterminada.|
+|isDefaultProfile|Boolean|Presenta si se utiliza el perfil de forma predeterminada.|
 |createdDateTime|DateTimeOffset|Cuando se creó el BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Cuando el BrandingProfile se modificó por última vez.|
 |displayName|Cadena|Nombre de la compañía u organización que se muestra a los usuarios finales.|
