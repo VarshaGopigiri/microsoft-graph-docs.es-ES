@@ -1,12 +1,13 @@
 ---
 title: Crear dataSharingConsent
 description: Crear un nuevo objeto dataSharingConsent.
-ms.openlocfilehash: 9973820ad8354e78f05569b8e1b46da680c2fa0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07d76bbd92d2741571683bb7614b3336c10d9058
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085739"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349675"
 ---
 # <a name="create-datasharingconsent"></a>Crear dataSharingConsent
 
@@ -36,7 +37,7 @@ POST /deviceManagement/dataSharingConsents
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,7 +50,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |id|String|El consentimiento de uso compartido de datos Id.|
 |nombreDescriptivoDeServicio|String|El nombre para mostrar del flujo de trabajo del servicio|
 |termsUrl|String|El TermsUrl para los datos de uso compartido de consentimiento|
-|concedido|Booleano|El estado de concedidos para los datos de uso compartido de consentimiento|
+|concedido|Boolean|El estado de concedidos para los datos de uso compartido de consentimiento|
 |grantDateTime|DateTimeOffset|Esta cuenta se le conceden el consentimiento de tiempo|
 |grantedByUpn|String|El Upn del usuario que concederse el consentimiento para esta cuenta|
 |grantedByUserId|String|El identificador de usuario del usuario que concederse el consentimiento para esta cuenta|

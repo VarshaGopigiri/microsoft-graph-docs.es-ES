@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración binaryManagementConditionExpressionOperatorType
 description: Operadores binarios compatibles para expresiones de condición de administración.
-ms.openlocfilehash: e1f58715f4e900c30a52bbe7a9db01e45a081d09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090700"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346959"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>tipo de enumeración binaryManagementConditionExpressionOperatorType
 

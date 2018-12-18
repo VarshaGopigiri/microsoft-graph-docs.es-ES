@@ -1,12 +1,13 @@
 ---
 title: Enumerar managedIOSStoreApps
 description: Enumere las propiedades y las relaciones de los objetos managedIOSStoreApp.
-ms.openlocfilehash: 388a22e30391bc430ae5cb7eea61b3a6e0392606
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 01e3789ae9e6bd1c372c70d2afebcf62c4eabd97
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089038"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349878"
 ---
 # <a name="list-managediosstoreapps"></a>Enumerar managedIOSStoreApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

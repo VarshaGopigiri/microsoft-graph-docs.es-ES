@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosCompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para iOS.
-ms.openlocfilehash: c8a0b997778df60dda94c571fa7796dcf521cca0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdd6c4f6c6efdc8bbe1872cc4dd0c153a76c908f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347862"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>Tipo de recurso iosCompliancePolicy
 
@@ -34,17 +35,17 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|passcodeBlockSimple|Booleano|Indica si se van a bloquear los códigos de acceso simples.|
+|passcodeBlockSimple|Boolean|Indica si se van a bloquear los códigos de acceso simples.|
 |passcodeExpirationDays|Int32|Número de días antes de que expire el código de acceso. Valores válidos de 1 a 65535|
 |passcodeMinimumLength|Int32|Longitud mínima de los códigos de acceso. Valores válidos de 4 a 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inactividad antes de que sea necesario un código de acceso.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acceso anteriores que bloquear. Valores válidos de 1 a 24.|
 |passcodeMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de código de acceso necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
-|passcodeRequired|Booleano|Indica si se va a requerir un código de acceso.|
+|passcodeRequired|Boolean|Indica si se va a requerir un código de acceso.|
 |osMinimumVersion|String|Versión mínima de iOS.|
 |osMaximumVersion|String|Versión máxima de iOS.|
-|securityBlockJailbrokenDevices|Booleano|No pueden usarse dispositivos con jailbreak o rooting.|
+|securityBlockJailbrokenDevices|Boolean|No pueden usarse dispositivos con jailbreak o rooting.|
 |deviceThreatProtectionEnabled|Booleano|Requiere que los dispositivos hayan habilitado la protección contra amenazas de dispositivo.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir que el nivel de riesgo mínimo de Mobile Threat Protection informe del no cumplimiento. Los valores posibles son: `unavailable`, `secured`, `low`, `medium`, `high` y `notSet`.|
 |managedEmailProfileRequired|Booleano|Indica si quiere requerir o no un perfil de correo electrónico administrado.|

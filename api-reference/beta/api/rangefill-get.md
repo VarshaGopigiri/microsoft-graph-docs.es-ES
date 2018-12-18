@@ -1,12 +1,13 @@
 ---
 title: Get RangeFill
 description: Recuperar las propiedades y relaciones del objeto rangefill.
-ms.openlocfilehash: 908e9709c1b29ba99db0e0aae287c5f924e4b822
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 25c564de285676ee9ac7a7df9675ef4c66b42277
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090833"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347974"
 ---
 # <a name="get-rangefill"></a>Get RangeFill
 

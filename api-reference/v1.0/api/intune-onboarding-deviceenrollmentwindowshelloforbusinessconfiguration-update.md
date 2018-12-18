@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Actualice las propiedades de un objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: f91067a57dc4da7dc7d4850f72fbe267f364c6e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc443dc6804c994b8dc94ce71ca1e693e0afc43c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032668"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349080"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Actualizar deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -56,7 +57,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Todavía no está documentada. Los valores posibles son: `allowed`, `required` y `disallowed`.|
-|estado|[Habilitación de](../resources/intune-onboarding-enablement.md)|Todavía no está documentada. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
+|state|[Habilitación de](../resources/intune-onboarding-enablement.md)|Todavía no está documentada. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
 |securityDeviceRequired|Booleano|Todavía no documentado|
 |unlockWithBiometricsEnabled|Booleano|Todavía no documentado|
 |remotePassportEnabled|Booleano|Todavía no documentado|

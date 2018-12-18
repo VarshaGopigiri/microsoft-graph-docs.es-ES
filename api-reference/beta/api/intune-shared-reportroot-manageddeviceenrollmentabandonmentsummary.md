@@ -1,12 +1,13 @@
 ---
 title: managedDeviceEnrollmentAbandonmentSummary (función)
 description: Metadatos para el informe de resumen de abandono de inscripción
-ms.openlocfilehash: a9197ec93829f1270f2cd19956632cf09c00f7b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 133f04da7256ec8f1bbec93c9614ce1dfcd477a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088822"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349514"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>managedDeviceEnrollmentAbandonmentSummary (función)
 
@@ -37,7 +38,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

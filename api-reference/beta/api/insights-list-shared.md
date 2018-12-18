@@ -1,12 +1,13 @@
 ---
 title: Lista compartida
 description: Insight calculado que devuelve la lista de archivos compartidos con un usuario.
-ms.openlocfilehash: 589cb8da4ecb82149d11e0ad518d5a37749cc3da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 5d8c4632f2ccb48cc83c3467ddfe0c973f390947
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090427"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345818"
 ---
 # <a name="list-shared"></a>Lista compartida
 

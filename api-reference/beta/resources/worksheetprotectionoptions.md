@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso WorksheetProtectionOptions
 description: Representa las opciones de protección de hoja.
-ms.openlocfilehash: 2944663c62edd6533a12afe8e24cdd4f84f038fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 772c8b5eca7e9754a6bbc00e43cac102680974a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084382"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348576"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>Tipo de recurso WorksheetProtectionOptions
 

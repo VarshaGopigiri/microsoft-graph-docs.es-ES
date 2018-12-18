@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración androidRequiredPasswordType
 description: Tipo de contraseña requerida para Android.
-ms.openlocfilehash: f4f95308791aa443b6eb4b4fd38c70fe2d47b4b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e9b757dc86bf71462f7f987cedfcd9e04497880e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031694"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349220"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeración androidRequiredPasswordType
 

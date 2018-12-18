@@ -1,12 +1,13 @@
 ---
 title: Eliminar networkIPv4ConfigurationManagementCondition
 description: Elimina un networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: bcd1243de51c73a204e50104e912e3cc37867b86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 513f4fcfd05419ed66dde8d0ad1e6ae560dfef96
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345272"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>Eliminar networkIPv4ConfigurationManagementCondition
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

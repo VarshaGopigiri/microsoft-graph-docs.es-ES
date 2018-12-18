@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsEnrollmentStatusScreenSettings
 description: Configuración de pantalla de estado de inscripción
-ms.openlocfilehash: 5ec77e41634a2db9f44fd4146cb5266ca00923e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ccf2565d722a09de5f08ebe7333436729ce1b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084252"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346931"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>tipo de recurso windowsEnrollmentStatusScreenSettings
 
@@ -18,13 +19,13 @@ Configuración de pantalla de estado de inscripción
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|hideInstallationProgress|Booleano|Mostrar u ocultar el progreso de la instalación para el usuario|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|Booleano|Permitir o bloquear al usuario que utilice el dispositivo antes de la instalación de perfiles y la aplicación completa|
-|blockDeviceSetupRetryByUser|Booleano|Permitir al usuario que vuelva a intentar la instalación en caso de error de instalación|
-|allowLogCollectionOnInstallFailure|Booleano|Permitir o bloquear registro colección en caso de error de instalación|
+|hideInstallationProgress|Boolean|Mostrar u ocultar el progreso de la instalación para el usuario|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|Permitir o bloquear al usuario que utilice el dispositivo antes de la instalación de perfiles y la aplicación completa|
+|blockDeviceSetupRetryByUser|Boolean|Permitir al usuario que vuelva a intentar la instalación en caso de error de instalación|
+|allowLogCollectionOnInstallFailure|Boolean|Permitir o bloquear registro colección en caso de error de instalación|
 |customErrorMessage|String|Establecer el mensaje de error personalizado para mostrar al producirse un error de instalación|
 |installProgressTimeoutInMinutes|Int32|Establecer tiempo de espera de progreso de la instalación en minutos|
-|allowDeviceUseOnInstallFailure|Booleano|Permitir que el usuario continuar utilizando el dispositivo en caso de error de instalación|
+|allowDeviceUseOnInstallFailure|Boolean|Permitir que el usuario continuar utilizando el dispositivo en caso de error de instalación|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -1,12 +1,13 @@
 ---
 title: Actualizar managedDeviceOverview
 description: Actualice las propiedades de un objeto managedDeviceOverview.
-ms.openlocfilehash: 31a061a5c75e312901d642071255716272dfe564
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 004ebc370c0223b807c722bd40ce53021379e00d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086650"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349584"
 ---
 # <a name="update-manageddeviceoverview"></a>Actualizar managedDeviceOverview
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

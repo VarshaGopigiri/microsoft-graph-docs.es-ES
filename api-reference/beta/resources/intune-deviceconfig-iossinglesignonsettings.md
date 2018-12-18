@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso iosSingleSignOnSettings
 description: configuración de autenticación de Kerberos para el inicio de sesión único de iOS
-ms.openlocfilehash: a63848dc27afd037a6834a67c0736f86c06ac1fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6bde13865c1d6b34c433a92005681b247b99d984
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089626"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347372"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>tipo de recurso iosSingleSignOnSettings
 

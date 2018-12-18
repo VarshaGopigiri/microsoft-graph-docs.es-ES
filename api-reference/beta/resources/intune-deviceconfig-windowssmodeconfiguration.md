@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración windowsSModeConfiguration
 description: Las posibles opciones para configurar el modo de S desbloquear
-ms.openlocfilehash: b96e601927adc90c3daadc9658a8fdcb71661d3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 592eb58a13d1f78caadb5b46acac5b43e6c97384
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344705"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>tipo de enumeración windowsSModeConfiguration
 

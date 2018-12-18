@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración iosNotificationAlertType
 description: Tipo de configuración de la alerta de notificación.
-ms.openlocfilehash: a9b26276ecd3edd5847cb5672831ac3cf8edf57c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f2321515cc243edc9c14a79bb90713b124d16e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347260"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>tipo de enumeración iosNotificationAlertType
 

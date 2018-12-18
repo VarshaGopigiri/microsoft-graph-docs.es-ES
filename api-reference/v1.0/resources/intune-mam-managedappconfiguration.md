@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedAppConfiguration
 description: Configuración usada para proporcionar un conjunto de configuración personalizada tal cual a aplicaciones para usuarios que tienen limitada la configuración.
-ms.openlocfilehash: 42544aeacda4494a7757a15bef75a493d96fe0cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4b20c642f49b2f110ced2f72a5a54a6583b561f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346910"
 ---
 # <a name="managedappconfiguration-resource-type"></a>Tipo de recurso managedAppConfiguration
 

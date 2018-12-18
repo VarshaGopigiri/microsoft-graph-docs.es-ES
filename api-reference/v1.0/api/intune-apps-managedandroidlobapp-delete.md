@@ -1,12 +1,13 @@
 ---
 title: Eliminar managedAndroidLobApp
 description: Elimina un managedAndroidLobApp.
-ms.openlocfilehash: 2aaf56ca59834d3814fc7533669cd2ce8617a2a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5483ef54f86a9627ecad777ca34e15ffe1dd447
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032139"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349976"
 ---
 # <a name="delete-managedandroidlobapp"></a>Eliminar managedAndroidLobApp
 
@@ -34,7 +35,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

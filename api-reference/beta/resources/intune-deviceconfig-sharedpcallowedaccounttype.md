@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración sharedPCAllowedAccountType
 description: Tipo de cuentas que se permiten compartir el PC.
-ms.openlocfilehash: 6fcc8052587935a2145f8dd46907f29e427f3ff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97e6dda043043346e5a1310ef049013eb11e5027
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349248"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>tipo de enumeración sharedPCAllowedAccountType
 

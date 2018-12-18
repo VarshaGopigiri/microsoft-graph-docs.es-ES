@@ -1,12 +1,13 @@
 ---
 title: Enumerar deviceComplianceActionItems
 description: Enumere las propiedades y las relaciones de los objetos deviceComplianceActionItem.
-ms.openlocfilehash: 11e87ce644043d4f990c805bc65c7ea833f345b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eba2212581f1cfd1e5c753682f733fdcc83aa369
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346833"
 ---
 # <a name="list-devicecomplianceactionitems"></a>Enumerar deviceComplianceActionItems
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

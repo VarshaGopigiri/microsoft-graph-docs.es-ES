@@ -1,12 +1,13 @@
 ---
 title: Crear targetedManagedAppConfiguration
 description: Cree un objeto targetedManagedAppConfiguration.
-ms.openlocfilehash: 0bf32ede52b1fc09ff8729248df75de0ca14a94d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 36183c117ecf3e8d6c48dbd3e92e02a16535dbc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349038"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>Crear targetedManagedAppConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -52,7 +53,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |version|String|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |customSettings|Colección [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Un conjunto de pares de clave de cadena y valor de cadena que se va a enviar a las aplicaciones para aquellos usuarios que tienen limitada la configuración, sin modificar por este servicio. Heredado de [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|
 |deployedAppCount|Int32|Número de aplicaciones en las que se implementará la directiva actual.|
-|isAssigned|Booleano|Indica si la directiva se implementará en los grupos de inclusión.|
+|isAssigned|Boolean|Indica si la directiva se implementará en los grupos de inclusión.|
 
 
 

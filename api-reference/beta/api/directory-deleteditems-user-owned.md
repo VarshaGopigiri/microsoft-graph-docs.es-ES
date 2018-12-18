@@ -1,12 +1,13 @@
 ---
-title: Permissions
+title: Permisos
 description: 'Recupera una lista de los elementos recientemente eliminados que pertenecen al usuario especificado.  '
-ms.openlocfilehash: 6d455fc7646c7e9c2b3fb62f48e098a5daeacff2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5363adb943ac8c240e0f168246f7d17b3addf086
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088128"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348485"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Lista de los elementos eliminados que pertenecen a un usuario**
 
@@ -49,7 +50,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 El cuerpo de solicitud requiere los siguientes parámetros:
 
-| Parámetro    | Tipo |Descripción|
+| Parámetro    | Type |Descripción|
 |:---------------|:--------|:----------|
 |userId|String|Identificador del propietario.|
 |type|String|Tipo de objetos que posea para devolver; `Group` actualmente es el único valor admitido.|

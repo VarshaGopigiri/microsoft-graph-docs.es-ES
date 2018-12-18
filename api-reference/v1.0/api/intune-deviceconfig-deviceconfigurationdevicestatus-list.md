@@ -1,12 +1,13 @@
 ---
 title: Enumerar deviceConfigurationDeviceStatuses
 description: Enumere las propiedades y las relaciones de los objetos deviceConfigurationDeviceStatus.
-ms.openlocfilehash: 5914c6a63a533c9c659f44072b21dd5f0b99c579
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 13eb5d81fd9d0527c6004eebf7aa909c6f4049ec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031074"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348464"
 ---
 # <a name="list-deviceconfigurationdevicestatuses"></a>Enumerar deviceConfigurationDeviceStatuses
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuse
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

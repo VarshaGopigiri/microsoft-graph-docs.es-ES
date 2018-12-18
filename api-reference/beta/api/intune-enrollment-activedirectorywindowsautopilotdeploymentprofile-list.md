@@ -1,12 +1,13 @@
 ---
 title: Lista activeDirectoryWindowsAutopilotDeploymentProfiles
 description: Propiedades de la lista y relaciones de los objetos activeDirectoryWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: 052c2ae0eb35076f2dd6bb19024015bd9ccc2a5e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3175a0bf9ec26d3ecb7cc1bd92eb356dd2c5f00c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085326"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348387"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>Lista activeDirectoryWindowsAutopilotDeploymentProfiles
 
@@ -36,7 +37,7 @@ GET /deviceManagement/windowsAutopilotDeploymentProfiles
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

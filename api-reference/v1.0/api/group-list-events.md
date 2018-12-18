@@ -1,12 +1,13 @@
 ---
 title: List events
 description: Recupera una lista de objetos event.
-ms.openlocfilehash: ec91a899dc8ffb36ca06a0e3554be46f33c72ed0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 12ad3cd2704d31b68aec033381b9c6c5bc23a7fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029566"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349164"
 ---
 # <a name="list-events"></a>List events
 Recupera una lista de objetos [event](../resources/event.md).
@@ -31,9 +32,9 @@ GET /groups/{id}/calendar/events
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción |
+| Nombre       | Type | Descripción |
 |:---------------|:--------|:--------|
-| Authorization  | string | {token} de portador. Obligatorio.  |
+| Autorización  | string | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 | Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 

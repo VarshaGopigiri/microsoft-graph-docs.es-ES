@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso managementConditionStatement
 description: Una instrucción de condición de administración es un grupo de condiciones de administración que habilitar o deshabilitar las configuraciones de dispositivo o la aplicación cuando se cumplen todas las condiciones de administración contenido.
-ms.openlocfilehash: 98b76ce96550d894f8b32f6f6174d5c565e322ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087512"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347680"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 

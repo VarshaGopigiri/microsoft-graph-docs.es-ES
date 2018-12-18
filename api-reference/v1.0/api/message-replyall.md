@@ -1,12 +1,13 @@
 ---
 title: 'message: replyAll'
 description: Responde a todos los remitentes de un mensaje. El mensaje se guarda en la carpeta Elementos enviados.
-ms.openlocfilehash: ce6ee75912834b14b4a3b5e1d3b03b929f209dfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: cefe4d92d23cb9531f6fa66f74d1c9af87ef429e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031302"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348989"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -30,15 +31,15 @@ POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |comment|String|Comentario que se va a incluir. Puede ser una cadena vacía.|
 

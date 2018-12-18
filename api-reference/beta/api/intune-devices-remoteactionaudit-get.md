@@ -1,12 +1,13 @@
 ---
 title: Obtener remoteActionAudit
 description: Leer las propiedades y las relaciones del objeto remoteActionAudit.
-ms.openlocfilehash: 31810cc001e853fdd02ed0d280684136b5df6991
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5400eefe34419a725681d8870bfae513d192237
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087128"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349542"
 ---
 # <a name="get-remoteactionaudit"></a>Obtener remoteActionAudit
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

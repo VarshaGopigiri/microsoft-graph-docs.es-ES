@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración certificateDestinationStore
 description: Valores posibles para el almacén de destino de certificados.
-ms.openlocfilehash: f6ef47ec765399cd7b69dcf4b8e0bfafe92c62a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1e7bfd7f5e6c6b6e2e4e44d461cfccdc09877f47
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087560"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347561"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>tipo de enumeración certificateDestinationStore
 

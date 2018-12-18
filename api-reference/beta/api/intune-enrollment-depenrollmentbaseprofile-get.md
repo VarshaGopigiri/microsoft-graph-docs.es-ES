@@ -1,12 +1,13 @@
 ---
 title: Obtener depEnrollmentBaseProfile
 description: Leer las propiedades y las relaciones del objeto depEnrollmentBaseProfile.
-ms.openlocfilehash: 16c80005587691a819595672f2b4e0f104c8215f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd0d895aa435c37e67aa7a83a6618a1e2af23219
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342325"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>Obtener depEnrollmentBaseProfile
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

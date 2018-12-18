@@ -1,12 +1,13 @@
 ---
 title: Acción bypassActivationLock
 description: Omitir bloqueo de activación
-ms.openlocfilehash: 284efa6e1e15173ed028617334b5ee05237ad75f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 285c333b395956fbba156766652c9c8e08c8eef3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346952"
 ---
 # <a name="bypassactivationlock-action"></a>Acción bypassActivationLock
 
@@ -36,7 +37,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

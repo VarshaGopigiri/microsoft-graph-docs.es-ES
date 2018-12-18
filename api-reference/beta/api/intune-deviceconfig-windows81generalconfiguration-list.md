@@ -1,12 +1,13 @@
 ---
 title: Enumerar windows81GeneralConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windows81GeneralConfiguration.
-ms.openlocfilehash: 09ebff265df940360eb6484be4da94949a975ae0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a208d0d487d96b6c82af67df4dbc830b45e127d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090690"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349668"
 ---
 # <a name="list-windows81generalconfigurations"></a>Enumerar windows81GeneralConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

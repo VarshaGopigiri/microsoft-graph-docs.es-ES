@@ -1,12 +1,13 @@
 ---
 title: Enumerar iosCertificateProfiles
 description: Enumere las propiedades y las relaciones de los objetos iosCertificateProfile.
-ms.openlocfilehash: 8d683340014892f5154fdda5a614d4de55205747
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cbf64ec3cccc2e972931c4c2598d02acbd4d57a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031136"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348401"
 ---
 # <a name="list-ioscertificateprofiles"></a>Enumerar iosCertificateProfiles
 
@@ -34,7 +35,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

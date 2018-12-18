@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso del usuario
 description: Representa una cuenta de usuario de Azure AD. Se hereda de directoryObject.
-ms.openlocfilehash: 496e349162ddffe918c2d293cc9032cff6fd14c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c9d776091bba18a9459505b7d35d7ff15479cffe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090064"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348205"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso del usuario
 
@@ -49,7 +50,7 @@ Este recurso admite:
 |[Enumerar administrador](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obtiene el usuario o el contacto que es administrador de este usuario desde la propiedad de navegación manager.|
 |[Enumerar memberOf](../api/user-list-memberof.md) |Colección [directoryObject](directoryobject.md)| Obtener los grupos, las funciones de Active directory y unidades administrativas que el usuario es miembro directo de la propiedad de navegación de miembro.|
 |[Miembro de lista transitiva](../api/user-list-transitivememberof.md) |Colección [directoryObject](directoryobject.md)| Lista de grupos, roles de Active directory y unidades administrativas que el usuario es un miembro de. Esta operación es transitiva e incluye los grupos que el usuario es un miembro anidado de. |
-|[Lista joinedTeams](../api/user-list-joinedteams.md) |colección [Groups](group.md)| Obtenga el Teams Microsoft que el usuario es miembro directo de la propiedad de navegación joinedTeams.|
+|[Enumerar joinedTeams](../api/user-list-joinedteams.md) |colección [Groups](group.md)| Obtenga el Teams Microsoft que el usuario es miembro directo de la propiedad de navegación joinedTeams.|
 |[Enumerar ownedDevices](../api/user-list-owneddevices.md) |Colección [directoryObject](directoryobject.md)| Obtiene los dispositivos que son propiedad del usuario desde la propiedad de navegación ownedDevices.|
 |[Enumerar ownedObjects](../api/user-list-ownedobjects.md) |Colección [directoryObject](directoryobject.md)| Obtiene los objetos de directorio que son propiedad del usuario desde la propiedad de navegación ownedObjects.|
 |[Enumerar plannerTasks](../api/planneruser-list-tasks.md) |Colección [plannerTask](plannertask.md)| Obtener plannerTasks asignados al usuario.|
@@ -133,7 +134,7 @@ Este recurso admite:
 |refreshTokensValidFromDateTime|DateTimeOffset| Los tokens de actualización o tokens de sesiones (cookies de sesión) emiten antes de este momento no son válidos, y aplicaciones producirá un error cuando se usa una actualización no válida o un símbolo (token) de las sesiones para adquirir un acceso delegado token (para obtener acceso a las API, como Microsoft Graph).  En este caso, la aplicación necesitará adquirir un nuevo token de actualización mediante la realización de una solicitud al extremo de autorizar. Solo lectura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para restablecer.|
 |responsibilities|Colección string|Una lista para que el usuario enumere sus responsabilidades.|
 |schools|Colección string|Una lista para que el usuario enumere las escuelas a las que ha ido.|
-|showInAddressList|Booleano|**true** si la lista global de direcciones de Outlook debe contener este usuario, en caso contrario, **false**. Si no se establece, esto se tratará como **true**. Para los usuarios invitados a través del Administrador de la invitación, esta propiedad se establecerá en **false**.|
+|showInAddressList|Boolean|**true** si la lista global de direcciones de Outlook debe contener este usuario, en caso contrario, **false**. Si no se establece, esto se tratará como **true**. Para los usuarios invitados a través del Administrador de la invitación, esta propiedad se establecerá en **false**.|
 |skills|Colección string|Una lista para que el usuario enumere sus aptitudes.|
 |state|String|El estado o la provincia de la dirección del usuario. Es compatible con $filter.|
 |streetAddress|String|La dirección postal del lugar de trabajo del usuario.|

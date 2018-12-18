@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso edgeSearchEngineBase
 description: Permite que los administradores de TI configuren un motor de búsqueda predeterminado para dispositivos controlados por MDM. Los usuarios pueden invalidarla y cambiar su motor de búsqueda predeterminado, siempre que no se establezca la directiva AllowSearchEngineCustomization.
-ms.openlocfilehash: b6f006d1bdedc2b6fafaf29565fff6b3dcbb0a5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c60dd1786f5a211947c02f1a9f5f048737ba3788
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346504"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>Tipo de recurso edgeSearchEngineBase
 

@@ -1,12 +1,13 @@
 ---
 title: Agregar la contraseña de la aplicación
 description: Agrega una contraseña segura a una aplicación.
-ms.openlocfilehash: 78ccb6cced055ca7f2d2ab201e844a9f50f36939
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 88aa499cd478511aacba94c0d28c96592c79a5d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083695"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348744"
 ---
 # <a name="add-application-password"></a>Agregar la contraseña de la aplicación
 
@@ -30,9 +31,9 @@ POST /applications/{id}/addPassword
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: Crear un educationSynchronizationProfile
 description: 'Crear una solicitud de un nuevo perfil de sincronización de datos de school en el inquilino. Consultar el estado para obtener el estado de los perfiles. '
-ms.openlocfilehash: 0d2c4126ab92e376919ee0b69378754828a924a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 20c4a7f4dd1512a52bed4a12d1642b8d1138d0e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345314"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Crear un educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ Crear una solicitud para un nuevo de datos de school [perfil de sincronización]
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-| Tipo de permiso | Permissions |
+| Tipo de permiso | Permisos |
 |:-----------|:----------|
 | Delegado (cuenta profesional o educativa) | EduAdministration.ReadWrite |
 |Delegado (cuenta Microsoft personal|No admitida.|
@@ -30,9 +31,9 @@ POST /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 | Content-Type | string | Application/json. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

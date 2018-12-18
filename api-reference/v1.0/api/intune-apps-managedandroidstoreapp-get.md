@@ -1,12 +1,13 @@
 ---
 title: Obtener managedAndroidStoreApp
 description: Lea las propiedades y las relaciones del objeto managedAndroidStoreApp.
-ms.openlocfilehash: c116c8843228b5ea92edaaf6735b3fd2495b582a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 914102e24b2c594bcd1302cbcf7579470c28ae16
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347673"
 ---
 # <a name="get-managedandroidstoreapp"></a>Obtener managedAndroidStoreApp
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

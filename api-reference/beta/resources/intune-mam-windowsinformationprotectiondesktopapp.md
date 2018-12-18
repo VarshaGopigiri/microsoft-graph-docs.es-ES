@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsInformationProtectionDesktopApp
 description: Aplicación de escritorio de Windows Information Protection
-ms.openlocfilehash: e3d296307bdb2b657addb478645f1945612964ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f0d86bac5ff5ec2caee4e6d44990043606a8da6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349143"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>Tipo de recurso windowsInformationProtectionDesktopApp
 

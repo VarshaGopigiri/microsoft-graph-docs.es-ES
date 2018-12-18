@@ -1,12 +1,13 @@
 ---
 title: Actualizar macOSDeviceFeaturesConfiguration
 description: Actualice las propiedades de un objeto macOSDeviceFeaturesConfiguration.
-ms.openlocfilehash: 35d58ce81fe5299a5845dc62b7521406865d9a37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aecefa3e348613fa2aa0f9974f2aafbce56c8051
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348457"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Actualizar macOSDeviceFeaturesConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

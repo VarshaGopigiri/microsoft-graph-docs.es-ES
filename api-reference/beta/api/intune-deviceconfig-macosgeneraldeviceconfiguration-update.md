@@ -1,12 +1,13 @@
 ---
 title: Actualizar macOSGeneralDeviceConfiguration
 description: Actualice las propiedades de un objeto macOSGeneralDeviceConfiguration.
-ms.openlocfilehash: aad4f0ed0c0b4d30842e2e643526c0d42ff4f1a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84ea867f10a99f985e7789cab2071183b34751c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348492"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>Actualizar macOSGeneralDeviceConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -51,7 +52,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -67,28 +68,28 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad que se requieren antes de que se agote el tiempo de espera de la pantalla.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
-|passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
-|keychainBlockCloudSync|Booleano|Indica si está o no iCloud llaves sincronización bloqueados (Mac OS 10.12 y versiones posteriores).|
-|airPrintBlocked|Booleano|Indica si está o no AirPrint bloqueados (Mac OS 10.12 y versiones posteriores).|
-|airPrintForceTrustedTLS|Booleano|Indica si los certificados de confianza son necesarios para la comunicación de impresión de TLS (Mac OS 10.13 y versiones posteriores).|
-|airPrintBlockiBeaconDiscovery|Booleano|Indica si se bloquea en iBeacon detección de impresoras AirPrint. Esto evita falsas balizas de AirPrint Bluetooth de suplantación de identidad para el tráfico de red (Mac OS 10.3 y versiones posteriores).|
-|safariBlockAutofill|Booleano|Indica si se va a impedir que el usuario use la opción de autorrellenado en Safari.|
-|cameraBlocked|Booleano|Indica si se va a impedir que el usuario obtenga acceso a la cámara del dispositivo.|
-|iTunesBlockMusicService|Booleano|Indica si se deben bloquear el servicio de música y revertir la aplicación de música en modo clásico.|
-|spotlightBlockInternetResults|Booleano|Indica si se deben bloquear aspectos destacados de devolver los resultados de una búsqueda de Internet.|
-|keyboardBlockDictation|Booleano|Indica si desea impedir que el usuario usa la entrada dictation o no.|
-|definitionLookupBlocked|Booleano|Indica si se deben bloquear la búsqueda de definición.|
-|appleWatchBlockAutoUnlock|Booleano|Indica si o a los usuarios de bloque de desbloqueo de su Mac con Apple Watch.|
-|iTunesBlockFileSharing|Booleano|Indica si está o no esta opción Bloquear los archivos de bienestar transfiere mediante iTunes.|
-|iCloudBlockDocumentSync|Booleano|Indica si se va a impedir la sincronización de documentos de iCloud.|
-|iCloudBlockMail|Booleano|Indica si se deben bloquear iCloud de sincronización de correo.|
-|iCloudBlockAddressBook|Booleano|Indica si se deben bloquear iCloud de sincronización de contactos.|
-|iCloudBlockCalendar|Booleano|Indica si se deben bloquear iCloud sincronización calendarios de.|
-|iCloudBlockReminders|Booleano|Indica si se deben bloquear iCloud sincronización avisos de.|
-|iCloudBlockBookmarks|Booleano|Indica si se deben bloquear iCloud sincronización marcadores de.|
-|iCloudBlockNotes|Booleano|Indica si se deben bloquear iCloud de sincronización de notas.|
-|airDropBlocked|Booleano|Indica si se va a permitir AirDrop o no.|
-|passwordBlockModification|Booleano|Indica si se va a permitir la modificación del código de acceso o no.|
+|passwordRequired|Boolean|Si quiere requerir o no una contraseña.|
+|keychainBlockCloudSync|Boolean|Indica si está o no iCloud llaves sincronización bloqueados (Mac OS 10.12 y versiones posteriores).|
+|airPrintBlocked|Boolean|Indica si está o no AirPrint bloqueados (Mac OS 10.12 y versiones posteriores).|
+|airPrintForceTrustedTLS|Boolean|Indica si los certificados de confianza son necesarios para la comunicación de impresión de TLS (Mac OS 10.13 y versiones posteriores).|
+|airPrintBlockiBeaconDiscovery|Boolean|Indica si se bloquea en iBeacon detección de impresoras AirPrint. Esto evita falsas balizas de AirPrint Bluetooth de suplantación de identidad para el tráfico de red (Mac OS 10.3 y versiones posteriores).|
+|safariBlockAutofill|Boolean|Indica si se va a impedir que el usuario use la opción de autorrellenado en Safari.|
+|cameraBlocked|Boolean|Indica si se va a impedir que el usuario obtenga acceso a la cámara del dispositivo.|
+|iTunesBlockMusicService|Boolean|Indica si se deben bloquear el servicio de música y revertir la aplicación de música en modo clásico.|
+|spotlightBlockInternetResults|Boolean|Indica si se deben bloquear aspectos destacados de devolver los resultados de una búsqueda de Internet.|
+|keyboardBlockDictation|Boolean|Indica si desea impedir que el usuario usa la entrada dictation o no.|
+|definitionLookupBlocked|Boolean|Indica si se deben bloquear la búsqueda de definición.|
+|appleWatchBlockAutoUnlock|Boolean|Indica si o a los usuarios de bloque de desbloqueo de su Mac con Apple Watch.|
+|iTunesBlockFileSharing|Boolean|Indica si está o no esta opción Bloquear los archivos de bienestar transfiere mediante iTunes.|
+|iCloudBlockDocumentSync|Boolean|Indica si se va a impedir la sincronización de documentos de iCloud.|
+|iCloudBlockMail|Boolean|Indica si se deben bloquear iCloud de sincronización de correo.|
+|iCloudBlockAddressBook|Boolean|Indica si se deben bloquear iCloud de sincronización de contactos.|
+|iCloudBlockCalendar|Boolean|Indica si se deben bloquear iCloud sincronización calendarios de.|
+|iCloudBlockReminders|Boolean|Indica si se deben bloquear iCloud sincronización avisos de.|
+|iCloudBlockBookmarks|Boolean|Indica si se deben bloquear iCloud sincronización marcadores de.|
+|iCloudBlockNotes|Boolean|Indica si se deben bloquear iCloud de sincronización de notas.|
+|airDropBlocked|Boolean|Indica si se va a permitir AirDrop o no.|
+|passwordBlockModification|Boolean|Indica si se va a permitir la modificación del código de acceso o no.|
 |passwordBlockFingerprintUnlock|Booleano|Indica si se va a impedir el desbloqueo por huella dactilar.|
 
 

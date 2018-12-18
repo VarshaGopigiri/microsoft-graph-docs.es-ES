@@ -1,12 +1,13 @@
 ---
 title: Registrar una aplicación con el punto de conexión v2.0 de Azure AD
 description: 'La aplicación debe estar registrada en Azure AD. Registrar la aplicación establece un identificador de aplicación único y otros valores que la aplicación utiliza para autenticarse con Azure AD y obtener tokens. En el caso del punto de conexión v2.0 de Azure AD, registre su aplicación con el Portal de registro de aplicaciones de Microsoft. Puede usar una cuenta de Microsoft o una cuenta profesional o educativa para registrar la aplicación. Dependiendo del tipo de aplicación que esté desarrollando, debe copiar una o varias propiedades durante el registro para utilizarlas al configurar la autenticación y autorización para la aplicación. '
-ms.openlocfilehash: 552ae1c98a401589345f3dc78fbe40dc7cd70ca9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: jackson-woods
+ms.openlocfilehash: 10f955e63cbf6fd53dc357fd8772ac3364b8c84a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092799"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348835"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrar una aplicación con el punto de conexión v2.0 de Azure AD
 

@@ -1,12 +1,13 @@
 ---
 title: Actualizar hilo de conversación
 description: Actualiza un objeto de conversación.
-ms.openlocfilehash: e66a65c42a3616968f528ba3c2a1dda0d160e7f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: db4b30d50bd616680f88949906cb96480668c612
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030723"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348597"
 ---
 # <a name="update-conversation-thread"></a>Actualizar hilo de conversación
 Actualiza un objeto de [conversación](../resources/conversationthread.md).
@@ -27,9 +28,9 @@ PATCH /groups/{id}/threads/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.

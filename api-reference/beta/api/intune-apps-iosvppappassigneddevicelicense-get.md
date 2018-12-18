@@ -1,12 +1,13 @@
 ---
 title: Obtener iosVppAppAssignedDeviceLicense
 description: Leer las propiedades y las relaciones del objeto iosVppAppAssignedDeviceLicense.
-ms.openlocfilehash: 5703e387b706763c80759ee534440b6c77fc857d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 09cb73db85cea9b62414bd2bad66fd3563c4082e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085566"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348163"
 ---
 # <a name="get-iosvppappassigneddevicelicense"></a>Obtener iosVppAppAssignedDeviceLicense
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

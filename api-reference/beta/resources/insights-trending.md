@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de tendencias
 description: Relación enriquecida conecta un usuario a los documentos que se tendencias alrededor del usuario (son relevante para el usuario). Archivos de OneDrive, y los archivos almacenados en sitios de grupo de SharePoint pueden tendencias alrededor del usuario.
-ms.openlocfilehash: 7d240c4358047ca9ba3d6b8340fbfb7d893a6a1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087163"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348002"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendencias
 

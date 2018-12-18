@@ -1,12 +1,13 @@
 ---
 title: Obtener officeSuiteApp
 description: Leer las propiedades y las relaciones del objeto officeSuiteApp.
-ms.openlocfilehash: a6e9090a9285a428b2a9934a5bd973456204c871
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e90833113bdb626d5d61d9c52027efdd6cc6b073
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348730"
 ---
 # <a name="get-officesuiteapp"></a>Obtener officeSuiteApp
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso usageDetails
 description: Tipo complejo que contiene las propiedades de elementos utilizados. Obtener información sobre cuándo obtuvo acceso por última vez el recurso (ver) y modificar (Editar) por el usuario.
-ms.openlocfilehash: c74b1436abcfa4993728371a79d2371a667a16d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: ef5efcfce439e9d08784637cb02657d7cd37adf7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349353"
 ---
 # <a name="usagedetails-resource-type"></a>tipo de recurso usageDetails
 

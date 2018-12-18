@@ -1,12 +1,13 @@
 ---
 title: Crear androidManagedAppRegistration
 description: Cree un objeto androidManagedAppRegistration.
-ms.openlocfilehash: c1054b5c07784044071f8674a778bb1d4b98a46b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c05c698179f2f8fa54ab12282be6e397b9275408
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028818"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339511"
 ---
 # <a name="create-androidmanagedappregistration"></a>Crear androidManagedAppRegistration
 
@@ -34,7 +35,7 @@ POST /deviceAppManagement/managedAppRegistrations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

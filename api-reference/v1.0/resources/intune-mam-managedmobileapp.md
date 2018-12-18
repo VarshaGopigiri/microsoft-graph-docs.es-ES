@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedMobileApp
 description: El identificador de la implementación de una aplicación.
-ms.openlocfilehash: 7915ef27dccfeef681475161261f36b64b79ff23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf36295e27bc6198b6f8d0c53854c81dbd3ae30f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032625"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346875"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
 

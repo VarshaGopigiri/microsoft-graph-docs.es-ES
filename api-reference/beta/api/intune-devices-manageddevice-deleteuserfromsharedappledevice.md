@@ -1,12 +1,13 @@
 ---
 title: Acción deleteUserFromSharedAppleDevice
 description: Eliminar usuario del dispositivo Apple compartido
-ms.openlocfilehash: ad776fb984aeabad7830f47079719200ab16220b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68b3e9b700e70c9c5d16c97d20edf6471f7d1fbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085734"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347988"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Acción deleteUserFromSharedAppleDevice
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

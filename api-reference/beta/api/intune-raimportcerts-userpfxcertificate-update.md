@@ -1,12 +1,13 @@
 ---
 title: Actualizar userPFXCertificate
 description: Actualizar las propiedades de un objeto userPFXCertificate.
-ms.openlocfilehash: 9fde1e8ff073df7acf76119ace0848616424951a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48f60d9a11942fee657eebb5c8bbf33e50d24fe9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082929"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347610"
 ---
 # <a name="update-userpfxcertificate"></a>Actualizar userPFXCertificate
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

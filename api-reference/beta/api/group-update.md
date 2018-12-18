@@ -1,12 +1,13 @@
 ---
 title: Actualizar grupo
 description: Actualiza las propiedades de un objeto de grupo.
-ms.openlocfilehash: 1a87bc3e6599d37cab25e3e98c9dcf63d7d078e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 801143f0bb0a0e5012cf946e52cf4fd4cff34556
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348436"
 ---
 # <a name="update-group"></a>Actualizar grupo
 
@@ -34,9 +35,9 @@ PATCH /groups/{id}
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -44,7 +45,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Booleano|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
+|allowExternalSenders|Boolean|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
 |autoSubscribeNewMembers|Booleano|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico.|
 |descripción|String|Una descripción opcional del grupo. |
 |displayName|String|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|

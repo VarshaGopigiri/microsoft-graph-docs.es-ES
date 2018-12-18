@@ -1,12 +1,13 @@
 ---
 title: Crear deviceAndAppManagementRoleDefinition
 description: Cree un objeto deviceAndAppManagementRoleDefinition.
-ms.openlocfilehash: 71ac4a42dcf0795ad9e1e26d20be5be09fbf0705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad338b53aa49d140e36754d36a92f1eda4a6000a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031965"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348520"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>Crear deviceAndAppManagementRoleDefinition
 
@@ -34,7 +35,7 @@ POST /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |displayName|String|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |descripción|String|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|Colección [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|isBuiltIn|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|isBuiltIn|Boolean|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 
 
