@@ -1,12 +1,13 @@
 ---
 title: Eliminar detectedApp
 description: Elimina un detectedApp.
-ms.openlocfilehash: 0484de719fdbd79db5f949fdbedadb35993f401d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1503e3bf7191d0c8088eb4e32d0190970f01d6f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029803"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334660"
 ---
 # <a name="delete-detectedapp"></a>Eliminar detectedApp
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/detectedApps/{detectedAppId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Crear deviceComplianceDeviceStatus
 description: Cree un objeto deviceComplianceDeviceStatus.
-ms.openlocfilehash: c3c43b6c6ee49f0c4b962cd35d0cead9d4900bf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fe754290e8fbc218bb0011034ae471f0e5fe84a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030356"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334541"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Crear deviceComplianceDeviceStatus
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Obtener onPremisesConditionalAccessSettings
 description: Lea las propiedades y las relaciones del objeto onPremisesConditionalAccessSettings.
-ms.openlocfilehash: 3cc90209a55fc051266f29decfd21a25ce43aa44
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 630c7edc640932f2c1cd651e5c54e8fc15c1b1dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082948"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325805"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Obtener onPremisesConditionalAccessSettings
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

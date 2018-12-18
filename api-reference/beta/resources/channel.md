@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de canal
 description: 'Un canal es una colección de chatMessages dentro de un equipo. '
-ms.openlocfilehash: e69c0e7cdef347c59006b1dcce192e7949c2f07e
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 18a3293b757e641eab98b166a43ce023762ccc6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209715"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326778"
 ---
 # <a name="channel-resource-type"></a>tipo de recurso de canal
 
@@ -33,8 +34,8 @@ Un canal es una colección de [chatMessages](chatmessage.md) dentro de un [equip
 |description|String|Descripción textual opcional para el canal.|
 |displayName|String|Nombre de canal tal y como aparecerá para el usuario en Microsoft Teams.|
 |id|String|Identificador único de la de los canales. Solo lectura.|
-|isFavoriteByDefault|Booleano|Si el canal automáticamente se debe marcar 'favorito' para todos los miembros del equipo. Valor predeterminado: `false`.|
-|email|Booleano| La dirección de correo electrónico para el envío de mensajes para el canal. Solo lectura.|
+|isFavoriteByDefault|Boolean|Si el canal automáticamente se debe marcar 'favorito' para todos los miembros del equipo. Valor predeterminado: `false`.|
+|email|Boolean| La dirección de correo electrónico para el envío de mensajes para el canal. Solo lectura.|
 |webUrl|String|Un hipervínculo que se desplazará el canal en Microsoft Teams. Esta es la URL que se obtiene cuando haga clic en un canal en Microsoft Teams y seleccione vínculo Get a canal. Esta dirección URL debe se trata como un objeto binario opaco y no puede analizar. Solo lectura.|
 
 

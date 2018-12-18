@@ -1,12 +1,13 @@
 ---
 title: Obtener deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Lea las propiedades y las relaciones del objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: 3c58b4b7689cf3b25fc16e65b8b4db95a3fbb897
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5ee2052854582c6892f6609647207fbe9d9c358
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088359"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361204"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Obtener deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

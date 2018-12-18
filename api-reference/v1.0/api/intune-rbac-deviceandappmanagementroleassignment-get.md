@@ -1,12 +1,13 @@
 ---
 title: Obtener deviceAndAppManagementRoleAssignment
 description: Lea las propiedades y las relaciones del objeto deviceAndAppManagementRoleAssignment.
-ms.openlocfilehash: 9791019c586b322c96506059ab36bc7c6705c980
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e6c279a50ee70caebf31c484774bc747e6f1b2d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030238"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331272"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>Obtener deviceAndAppManagementRoleAssignment
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

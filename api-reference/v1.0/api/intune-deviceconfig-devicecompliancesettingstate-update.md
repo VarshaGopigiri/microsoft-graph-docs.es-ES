@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceComplianceSettingState
 description: Actualice las propiedades de un objeto deviceComplianceSettingState.
-ms.openlocfilehash: 583cd56930347f1e8fda9ada9e5e2c6b4effd62a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7183493e8b45198c4f1cadd1e8fbc2e7e738478d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028719"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330152"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Actualizar deviceComplianceSettingState
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -54,7 +55,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |userName|String|El nombre de usuario que se está notificando|
 |userPrincipalName|String|El nombre principal de usuario que se está notificando|
 |deviceModel|String|El modelo de dispositivo que se está notificando|
-|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 
 

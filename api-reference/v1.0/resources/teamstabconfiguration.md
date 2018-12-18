@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamsTabConfiguration (Open Type)
 description: La configuración que determinan el contenido de una ficha.
-ms.openlocfilehash: 4d04ca9128760ee6fed9c0fa704fa991384ac17a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 281d27dfec1efa83859fad262e1b25fd06b5f4cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028841"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344964"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>tipo de recurso teamsTabConfiguration (Open Type)
 

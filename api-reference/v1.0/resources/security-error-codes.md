@@ -1,12 +1,13 @@
 ---
 title: Respuestas de error de la API de seguridad de Microsoft Graph
 description: Errores en la API de seguridad de Microsoft Graph se devuelven mediante el código de estado HTTP 206 parcial contenido estándar y se entregan a través de un encabezado de advertencia.
-ms.openlocfilehash: 9ac124f763e7668471f89beffb968cb883217e80
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: 6685d69f202696e33422d9bd3a877cba02fd10dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184500"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329655"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respuestas de error de la API de seguridad de Microsoft Graph
 

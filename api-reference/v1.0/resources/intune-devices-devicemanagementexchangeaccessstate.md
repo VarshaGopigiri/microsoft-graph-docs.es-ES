@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración deviceManagementExchangeAccessState
 description: Estado de acceso de dispositivo de Exchange.
-ms.openlocfilehash: e4891656a85f91c520c783d9e5ce6beac8b08253
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 37db054314375411dc237746ca6ca3bdb99e9016
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029767"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328724"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessState
 

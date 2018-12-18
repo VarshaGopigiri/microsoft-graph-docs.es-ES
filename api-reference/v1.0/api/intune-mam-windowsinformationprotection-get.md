@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsInformationProtection
 description: Lea las propiedades y las relaciones del objeto windowsInformationProtection.
-ms.openlocfilehash: 4d751a06229bec10cb3ca0908b4ece4e1a882f04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7a4bc083941c70e26c434176ddf7272cf81e0d4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032301"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362654"
 ---
 # <a name="get-windowsinformationprotection"></a>Obtener windowsInformationProtection
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

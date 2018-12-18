@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsAssignedAccessProfile
 description: Perfil de acceso asignado para Windows.
-ms.openlocfilehash: 2fc23bfed54ef850050b177589d5b4c0c79c22cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b01f362c31f6e2791a00d8ff02a7ecd5b798e3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328794"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>tipo de recurso windowsAssignedAccessProfile
 
@@ -29,7 +30,7 @@ Perfil de acceso asignado para Windows.
 |:---|:---|:---|
 |id|String|Clave de la entidad.|
 |nombre del perfil|String|Esto es un nombre descriptivo usado para identificar un grupo de aplicaciones, el diseño de estas aplicaciones en el menú Inicio y los usuarios a quienes se asigna esta configuración de quiosco.|
-|showTaskBar|Booleano|Esta opción le permite al administrador especificar si se muestra la barra de tareas o no.|
+|showTaskBar|Boolean|Esta opción le permite al administrador especificar si se muestra la barra de tareas o no.|
 |appUserModelIds|Colección String|Estos son el único almacén de aplicaciones de Windows que estará disponible para iniciar desde el menú Inicio.|
 |desktopAppPaths|Colección String|Estas son las rutas de acceso de las aplicaciones de escritorio que estará disponible en el menú Inicio y las aplicaciones sólo el usuario podrá iniciar.|
 |cuentas de usuario|Colección String|Las cuentas de usuario que se bloqueará a esta configuración de quiosco.|

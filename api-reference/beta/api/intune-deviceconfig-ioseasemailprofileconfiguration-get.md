@@ -1,12 +1,13 @@
 ---
 title: Obtener iosEasEmailProfileConfiguration
 description: Leer las propiedades y las relaciones del objeto iosEasEmailProfileConfiguration.
-ms.openlocfilehash: a2d9f48027edc0557b6956dd7495afd473eb2974
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d5b253e2469e05fda63ef3a3a0fbb5b4aae14e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083282"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328073"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Obtener iosEasEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

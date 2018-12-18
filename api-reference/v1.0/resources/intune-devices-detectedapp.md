@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso detectedApp
 description: Una aplicación administrada o no administrada que está instalada en un dispositivo administrado. Las aplicaciones no administradas solo aparecerán para los dispositivos marcados como propiedad de la empresa.
-ms.openlocfilehash: 90bcee3599ebba98fb2757907e4f89906fd3fef5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27e3595156699cd345215959a78a7642399c43bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031404"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359279"
 ---
 # <a name="detectedapp-resource-type"></a>Tipo de recurso detectedApp
 

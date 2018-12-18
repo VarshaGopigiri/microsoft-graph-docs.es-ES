@@ -1,12 +1,13 @@
 ---
 title: Enumerar defaultManagedAppProtections
 description: Enumere las propiedades y las relaciones de los objetos defaultManagedAppProtection.
-ms.openlocfilehash: 12e4f948ab808150ca602bc0f0b21591540e080c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73e4013e458e1ad540f75cf42ed00e638c781758
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031252"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343494"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Enumerar defaultManagedAppProtections
 
@@ -34,7 +35,7 @@ GET /deviceAppManagement/defaultManagedAppProtections
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

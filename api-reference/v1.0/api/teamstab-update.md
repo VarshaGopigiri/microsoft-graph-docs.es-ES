@@ -1,12 +1,13 @@
 ---
 title: Ficha de actualización
 description: Actualizar las propiedades de la ficha especificada seleccionada.
-ms.openlocfilehash: 4accb02de6ae4bc7a30a69ca64ab536c7f68bf77
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 6594585721ddbe57ea56229ae37ebb85f9dfff66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222502"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359167"
 ---
 # <a name="update-tab"></a>Ficha de actualización
 

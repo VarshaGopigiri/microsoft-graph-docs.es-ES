@@ -1,12 +1,13 @@
 ---
 title: Eliminar ndesConnector
 description: Elimina un ndesConnector.
-ms.openlocfilehash: 4f9429b0f5d2632aad2aa4a6f848c2d1756a86d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea890f4ca2a4951f670473def343a58ebe4a0a9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089872"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338405"
 ---
 # <a name="delete-ndesconnector"></a>Eliminar ndesConnector
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/ndesConnectors/{ndesConnectorId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

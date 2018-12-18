@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso enterpriseCodeSigningCertificate
 description: Todavía no documentado
-ms.openlocfilehash: 39a33ba019bd5d7e393f38dbb4701374ac7c5304
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328703"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>tipo de recurso enterpriseCodeSigningCertificate
 

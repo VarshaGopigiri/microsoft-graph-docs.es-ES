@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso de dominio
 description: Representa un dominio asociado al inquilino.
-ms.openlocfilehash: c3a130f00afd3c9136b8ae8238f37cf99d5a6fc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: f548e54bd1aaf53d2850ffdb30f18d38644e257c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029095"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326204"
 ---
 # <a name="domain-resource-type"></a>Tipo de recurso de dominio
 

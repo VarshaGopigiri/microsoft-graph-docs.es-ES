@@ -1,12 +1,13 @@
 ---
 title: Lista locationManagementConditions
 description: Propiedades de la lista y relaciones de los objetos locationManagementCondition.
-ms.openlocfilehash: 1a58cafecd93a246ecb7d285ad15c841bfe32cdd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd45730df931828eb4c9bb8c92f4cb85628601be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335724"
 ---
 # <a name="list-locationmanagementconditions"></a>Lista locationManagementConditions
 
@@ -37,7 +38,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

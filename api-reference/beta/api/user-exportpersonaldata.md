@@ -1,12 +1,12 @@
 ---
 title: 'usuario: exportPersonalData'
 description: Envía una solicitud de operación de la directiva de datos, realizada por un administrador de la compañía para exportar datos de un usuario organizativa.
-ms.openlocfilehash: aceab65992bde3092676a2bfa144498f07f06095
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 27a299a4cfa6ccc3016a1f706b452840aa5dc396
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089362"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329130"
 ---
 # <a name="user-exportpersonaldata"></a>usuario: exportPersonalData
 
@@ -17,9 +17,9 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) |  User.Export.All  |
-|Delegado (cuenta personal de Microsoft) |  No disponible  |
-|Aplicación | User.Export.All |
+|Delegado (cuenta profesional o educativa) |  User.Export.All y User.Read.All  |
+|Delegado (cuenta personal de Microsoft) |  No aplicable  |
+|Aplicación | User.Export.All y User.Read.All |
 
 >Nota: Exportación sólo puede realizarse por un administrador de la compañía cuando se usa el permiso delegado.
 
@@ -37,7 +37,7 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |storageLocation|String|Esto es una dirección URL de firma (SAS) de acceso compartido a una cuenta de almacenamiento de Azure, para que se deben exportar los datos.|
 

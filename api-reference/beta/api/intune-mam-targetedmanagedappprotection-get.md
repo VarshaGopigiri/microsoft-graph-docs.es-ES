@@ -1,12 +1,13 @@
 ---
 title: Obtener targetedManagedAppProtection
 description: Lea las propiedades y las relaciones del objeto targetedManagedAppProtection.
-ms.openlocfilehash: da57858b9ba896d36eba3f92d54adc4ba7689b3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 515525914e42c6d429c6addce74eec0f4e58b609
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330740"
 ---
 # <a name="get-targetedmanagedappprotection"></a>Obtener targetedManagedAppProtection
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso plannerFavoritePlanReferenceCollection
 description: " el valor es el objeto plannerFavoritePlanReference."
-ms.openlocfilehash: 78544e17604a0938cc0e88969e2542fc26bdff1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 056cb7b9ba728aa9dfe44ae4b90e550876461d6b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344229"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>tipo de recurso plannerFavoritePlanReferenceCollection
 

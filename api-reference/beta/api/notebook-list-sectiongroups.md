@@ -1,12 +1,13 @@
 ---
 title: Enumerar sectionGroups
 description: Recupera una lista de grupos de sección desde el bloc de notas especificado.
-ms.openlocfilehash: cdb5ef5b1c98f9e1632ef1cd7c6c5d5885e8d682
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: faf096ff101c3c4abaeb95075bcc493910e3c18f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086012"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324384"
 ---
 # <a name="list-sectiongroups"></a>Enumerar sectionGroups
 
@@ -38,9 +39,9 @@ El criterio de ordenación predeterminado es `name asc`.
 La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades `id`, `displayName` y `self`. Los valores válidos de `expand` de los grupos de secciones son `sections`, `sectionGroups`, `parentNotebook` y `parentSectionGroup`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

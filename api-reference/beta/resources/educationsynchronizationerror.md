@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationSynchronizationError
 description: Representa un error durante la validación de perfiles de datos de escuela o sincronización. Se genera un error único para cada entrada que se produce un error al validar y sincronizar con Azure Active Directory (AD Azure).
-ms.openlocfilehash: 91a633ab4056e8e86854a0e2d45ae13e22da19a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d950e906a506c3cf1ee5bc5b627200dc79c1d0fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083769"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336004"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>tipo de recurso educationSynchronizationError
 

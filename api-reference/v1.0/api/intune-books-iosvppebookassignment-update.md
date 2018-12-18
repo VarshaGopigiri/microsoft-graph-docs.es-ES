@@ -1,12 +1,13 @@
 ---
 title: Actualizar iosVppEBookAssignment
 description: Actualice las propiedades de un objeto iosVppEBookAssignment.
-ms.openlocfilehash: 2eee8125fe9fa6141b84f6d7dbdd74190ddeca6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a4970b41cae2ab164a1164970d15d0a8afec344
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330537"
 ---
 # <a name="update-iosvppebookassignment"></a>Actualizar iosVppEBookAssignment
 
@@ -34,7 +35,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

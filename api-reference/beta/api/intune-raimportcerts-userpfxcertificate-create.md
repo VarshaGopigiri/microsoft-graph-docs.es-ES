@@ -1,12 +1,13 @@
 ---
 title: Crear userPFXCertificate
 description: Crear un nuevo objeto userPFXCertificate.
-ms.openlocfilehash: 3f9ec2d223911191ea9e137bb2d50b5f5d03bb73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f577189dc2e8a420bc4f62d0c7d59510c610ac9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087896"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337740"
 ---
 # <a name="create-userpfxcertificate"></a>Crear userPFXCertificate
 
@@ -36,7 +37,7 @@ POST /deviceManagement/userPfxCertificates
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

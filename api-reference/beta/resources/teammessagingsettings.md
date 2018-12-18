@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamMessagingSettings
 description: La configuración de mensajería y menciones en el equipo.
-ms.openlocfilehash: 51a0fb53079e8fd79f469f022efb2f293e9a6cba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 94a102e6d0937651c990e61f4895c715b3c4bd95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344250"
 ---
 # <a name="teammessagingsettings-resource-type"></a>tipo de recurso teamMessagingSettings
 
@@ -17,11 +18,11 @@ La configuración de mensajería y menciones en el [equipo](team.md).
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Booleano|Si se establece en true, los usuarios puede editar sus mensajes.|
-|allowUserDeleteMessages|Booleano|Si se establece en true, los usuarios puede eliminar sus mensajes.|
-|allowOwnerDeleteMessages|Booleano|Si se establece en true, propietarios puede eliminar cualquier mensaje.|
-|allowTeamMentions|Booleano|Si establece en true, se permiten menciones de @team.|
-|allowChannelMentions|Booleano|Si establece en true, se permiten menciones de @channel.|
+|allowUserEditMessages|Boolean|Si se establece en true, los usuarios puede editar sus mensajes.|
+|allowUserDeleteMessages|Boolean|Si se establece en true, los usuarios puede eliminar sus mensajes.|
+|allowOwnerDeleteMessages|Boolean|Si se establece en true, propietarios puede eliminar cualquier mensaje.|
+|allowTeamMentions|Boolean|Si establece en true, se permiten menciones de @team.|
+|allowChannelMentions|Boolean|Si establece en true, se permiten menciones de @channel.|
 
 ## <a name="json-representation"></a>Representación JSON
 

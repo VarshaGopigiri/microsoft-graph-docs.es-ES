@@ -1,12 +1,13 @@
 ---
 title: Obtener macOSEndpointProtectionConfiguration
 description: Leer las propiedades y las relaciones del objeto macOSEndpointProtectionConfiguration.
-ms.openlocfilehash: 5f784635f2473d4ee61a234c3f96606b23d82f71
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 90d96b8acc210d0fa04f34b72606de5913554243
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086944"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325163"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>Obtener macOSEndpointProtectionConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsManagementAppHealthState
 description: Elimina un windowsManagementAppHealthState.
-ms.openlocfilehash: 32716b879804ef08eeaf5d94b65a5cec774c652c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 42d8ddcded88d43e49627830cc73b8be525ef817
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083802"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362408"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>Eliminar windowsManagementAppHealthState
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagement
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

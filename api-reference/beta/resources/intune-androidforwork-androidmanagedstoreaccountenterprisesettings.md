@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso androidManagedStoreAccountEnterpriseSettings
 description: Configuración de la empresa para un Android administrados cuenta de almacenamiento.
-ms.openlocfilehash: 976e4e2ea9d6e01a81f8f821388a1d4390908754
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c0dfea72e9d6a24b4d76cc839259acd642d51fa9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087758"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326295"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>tipo de recurso androidManagedStoreAccountEnterpriseSettings
 
@@ -38,7 +39,7 @@ Configuración de la empresa para un Android administrados cuenta de almacenamie
 |lastModifiedDateTime|DateTimeOffset|Hora de última modificación de la configuración de la empresa para Android|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indica qué usuarios pueden inscribirse dispositivos en administración de dispositivos Android empresariales. Los valores posibles son: `none`, `all`, `targeted` y `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Colección String|Especifica los grupos de AAD que pueden inscribir dispositivos en la administración de dispositivos de Android for Work si se establece enrollmentTarget en "Dirigido"|
-|deviceOwnerManagementEnabled|Booleano|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
+|deviceOwnerManagementEnabled|Boolean|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

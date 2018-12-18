@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso microsoftStoreForBusinessContainedApp
 description: Una clase que representa una aplicación de contenidos de un MicrosoftStoreForBusinessApp.
-ms.openlocfilehash: e0d934f8f4220556fcc5c65c1c5547abf4cc415b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4ba31870ab98c509a16814bd52179e1f2deab63
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084973"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328290"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>tipo de recurso microsoftStoreForBusinessContainedApp
 

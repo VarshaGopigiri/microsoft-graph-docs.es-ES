@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso iosEduCertificateSettings
 description: Confianza certificados raíz y PFX para iOS EDU.
-ms.openlocfilehash: 348b8231ed87c46180c54eb5ebfe24d671c9015b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e373a7c878dd06870b13a32c428f837d741964c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084931"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332329"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso iosEduCertificateSettings
 

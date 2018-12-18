@@ -1,12 +1,13 @@
 ---
 title: Obtener windows10MobileCompliancePolicy
 description: Lea las propiedades y las relaciones del objeto windows10MobileCompliancePolicy.
-ms.openlocfilehash: 35f37d4df4ea8862b8fb5ec7a3505a95e73cfae8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c13137adb02cce6e2c17a97e523954018baa5ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325973"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>Obtener windows10MobileCompliancePolicy
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

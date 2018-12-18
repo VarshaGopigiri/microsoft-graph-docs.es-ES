@@ -1,12 +1,13 @@
 ---
 title: Agregar un miembro
 description: Utilice esta API para agregar a un miembro (usuario o grupo) a una unidad administrativa.
-ms.openlocfilehash: d969be353a1ae41f0b1ba0d302b497596804e325
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: be47dbf06c5f59c0a4aaaea4f8c8b4aa8c3ce902
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084077"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339231"
 ---
 # <a name="add-a-member"></a>Agregar un miembro
 

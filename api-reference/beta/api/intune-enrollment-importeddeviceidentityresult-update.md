@@ -1,12 +1,13 @@
 ---
 title: Actualizar importedDeviceIdentityResult
 description: Actualizar las propiedades de un objeto importedDeviceIdentityResult.
-ms.openlocfilehash: f6b875d19e789010a1a130dcb31ef115acb07cfc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c698810bb3fe88f52d8fcba11d8c29aeb508fe6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086106"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332441"
 ---
 # <a name="update-importeddeviceidentityresult"></a>Actualizar importedDeviceIdentityResult
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -55,7 +56,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |descripción|String|La descripción del dispositivo Inherited desde [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|El estado del dispositivo en Intune se hereda de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Los valores posibles son: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|La plataforma del dispositivo. Se hereda de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md). Los valores posibles son: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
-|status|Booleano|Estado de identidad de dispositivo importada|
+|status|Boolean|Estado de identidad de dispositivo importada|
 
 
 

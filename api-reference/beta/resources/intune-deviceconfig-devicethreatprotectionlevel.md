@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración deviceThreatProtectionLevel
 description: Niveles de protección de amenaza de dispositivo para la API de protección de amenaza de dispositivo.
-ms.openlocfilehash: 900ae43f962e0a7d122588fa35db6827d4accfc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8fdb336b60ad5f17bd5fcfb730c59238dbba55a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085581"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336011"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>tipo de enumeración deviceThreatProtectionLevel
 

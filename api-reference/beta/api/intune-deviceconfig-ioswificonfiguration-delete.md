@@ -1,12 +1,13 @@
 ---
 title: Eliminar iosWiFiConfiguration
 description: Elimina un iosWiFiConfiguration.
-ms.openlocfilehash: f5603e2f8b85496194093b5b1d4d48446a5ddc8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3bbe9fd841c8e19c573d6849827a0e370036e6af
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327443"
 ---
 # <a name="delete-ioswificonfiguration"></a>Eliminar iosWiFiConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

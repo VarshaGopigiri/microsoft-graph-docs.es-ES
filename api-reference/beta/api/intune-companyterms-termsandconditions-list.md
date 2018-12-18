@@ -1,12 +1,13 @@
 ---
 title: Enumerar termsAndConditionses
 description: Enumere las propiedades y las relaciones de los objetos termsAndConditions.
-ms.openlocfilehash: a1ea48bcc5fa024a4e946f9c7275dc0916a2cda6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a5613484d25c84b5cb01e631d97e93280e5c060
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327555"
 ---
 # <a name="list-termsandconditionses"></a>Enumerar termsAndConditionses
 
@@ -36,7 +37,7 @@ GET /deviceManagement/termsAndConditions
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

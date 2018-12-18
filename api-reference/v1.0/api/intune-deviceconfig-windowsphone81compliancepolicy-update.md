@@ -1,12 +1,13 @@
 ---
 title: Actualizar windowsPhone81CompliancePolicy
 description: Actualice las propiedades de un objeto windowsPhone81CompliancePolicy.
-ms.openlocfilehash: a022a6823af42e897b6ae6f68230c0e2ac7861e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b017d25570b3cd220fa150b1be49516c02e3467a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028944"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362345"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>Actualizar windowsPhone81CompliancePolicy
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -57,7 +58,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
-|passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
+|passwordRequired|Boolean|Si quiere requerir o no una contraseña.|
 |osMinimumVersion|String|Versión mínima de Windows Phone.|
 |osMaximumVersion|String|Versión máxima de Windows Phone.|
 |storageRequireEncryption|Booleano|Requerir el cifrado en dispositivos de Windows Phone.|

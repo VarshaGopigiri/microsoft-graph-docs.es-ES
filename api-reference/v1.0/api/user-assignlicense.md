@@ -1,12 +1,13 @@
 ---
 title: assignLicense
 description: Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar los planes específicos asociados a una suscripción.
-ms.openlocfilehash: 93b28385296d2ef3b05b200b3b63d77369647df7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 26c65c0597d5c066af1388087aef07e181076e7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029226"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326401"
 ---
 # <a name="assignlicense"></a>assignLicense
 Agrega o quita suscripciones del usuario. También puede habilitar y deshabilitar los planes específicos asociados a una suscripción.
@@ -34,7 +35,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Type   |Descripción|
 |:---------------|:--------|:----------|
 |addLicenses|Colección de AssignedLicense|Colección de objetos [assignedLicense](../resources/assignedlicense.md) que especifican las licencias que se van a agregar. Puede deshabilitar planes asociados a una licencia estableciendo la propiedad **disabledPlans** en un objeto [assignedLicense](../resources/assignedlicense.md).|
 |removeLicenses|Colección Guid|Colección de GUID que identifican las licencias que se van a quitar.|
