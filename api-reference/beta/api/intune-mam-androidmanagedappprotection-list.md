@@ -1,12 +1,13 @@
 ---
 title: Enumerar androidManagedAppProtections
 description: Enumere las propiedades y las relaciones de los objetos androidManagedAppProtection.
-ms.openlocfilehash: f662e710282ea718f8aefe38cdac7e0351bc0476
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5ef8d09df2af166f5a672b06ac2dc3d3792fc82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086368"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359657"
 ---
 # <a name="list-androidmanagedappprotections"></a>Enumerar androidManagedAppProtections
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/androidManagedAppProtections
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

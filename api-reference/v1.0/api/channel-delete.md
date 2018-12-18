@@ -1,12 +1,13 @@
 ---
 title: Eliminación de canal
 description: Eliminar el canal.
-ms.openlocfilehash: f24471a4f93c50d722290feb9093514c34f4cc2f
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: e3500c536deca45b7444e149477c399cf1609a52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222351"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359559"
 ---
 # <a name="delete-channel"></a>Eliminación de canal
 

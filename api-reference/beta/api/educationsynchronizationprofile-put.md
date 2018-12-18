@@ -1,12 +1,13 @@
 ---
 title: Actualizar un educationSynchronizationProfile
 description: Actualizar las propiedades de un perfil de sincronización de datos de escuela existente en el inquilino.
-ms.openlocfilehash: 9f670a04dfb3c5465683883eeaf4eeed543e830a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086202"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361470"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Actualizar un educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ Actualizar las propiedades de una existente de datos school [perfil de sincroniz
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-| Tipo de permiso | Permissions |
+| Tipo de permiso | Permisos |
 |:-----------|:----------|
 | Delegado (cuenta profesional o educativa) | EduAdministration.ReadWrite |
 |Delegado (cuenta Microsoft personal|No admitida.|
@@ -30,9 +31,9 @@ PUT /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 | Content-Type | string | application/json. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

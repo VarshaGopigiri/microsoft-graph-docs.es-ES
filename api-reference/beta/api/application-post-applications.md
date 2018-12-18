@@ -1,12 +1,13 @@
 ---
 title: Crear la aplicación
 description: Utilice esta API para crear una nueva aplicación.
-ms.openlocfilehash: d192f543d123c29cf2686c203ffc8c7c69b1bcc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 9530c94598eeb2413af67782b50bbf70f415e2a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084657"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361533"
 ---
 # <a name="create-application"></a>Crear la aplicación
 
@@ -31,9 +32,9 @@ POST /applications
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [application](../resources/application.md) .

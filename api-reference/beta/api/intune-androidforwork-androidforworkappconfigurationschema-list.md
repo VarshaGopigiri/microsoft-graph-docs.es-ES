@@ -1,12 +1,13 @@
 ---
 title: Enumerar androidForWorkAppConfigurationSchemas
 description: Enumere las propiedades y las relaciones de los objetos androidForWorkAppConfigurationSchema.
-ms.openlocfilehash: ee318997d239836d38ad5b3ce93b2a223cc73bf9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 140a49f8cbb93b6c1990dd80ee4eaec8e23c1859
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088051"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358936"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a>Enumerar androidForWorkAppConfigurationSchemas
 
@@ -36,7 +37,7 @@ GET /deviceManagement/androidForWorkAppConfigurationSchemas
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso termsAndConditionsAcceptanceStatus
 description: C) de la directiva a un usuario determinado. Los usuarios deben aceptar la versión más actualizada de los términos para conservar el acceso al Portal de empresa.
-ms.openlocfilehash: 331d80481624caa0083414e7b3a8f12ba414991f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e7788cb34cb6c4e2a173af9bae77e66adb549da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031400"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360714"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 

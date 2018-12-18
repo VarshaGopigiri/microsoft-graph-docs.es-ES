@@ -1,12 +1,13 @@
 ---
 title: Eliminar windows10PkcsCertificateProfile
 description: Elimina un windows10PkcsCertificateProfile.
-ms.openlocfilehash: c534a054a545159375c908dcf4272c463170cf06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcefbd78f6f634bbe2e01cca3e64e74b6f72d63e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088977"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360987"
 ---
 # <a name="delete-windows10pkcscertificateprofile"></a>Eliminar windows10PkcsCertificateProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

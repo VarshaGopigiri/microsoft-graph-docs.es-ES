@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamsApp
 description: Una aplicación en el catálogo de aplicaciones de Microsoft Teams.
-ms.openlocfilehash: f8a96355c572287fc8bacc48f9a72e5da8d0f380
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 207974800e44e0db29b8c42f260a1ac16a18902f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031123"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359587"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 

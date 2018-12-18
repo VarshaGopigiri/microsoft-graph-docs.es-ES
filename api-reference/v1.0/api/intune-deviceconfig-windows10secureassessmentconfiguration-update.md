@@ -1,12 +1,13 @@
 ---
 title: Actualizar windows10SecureAssessmentConfiguration
 description: Actualice las propiedades de un objeto windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: e5368da89299845205e65930b444fa826052d72c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 253623674e1e4c989ae619a4640cb2d3f38b07b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028786"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357746"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>Actualizar windows10SecureAssessmentConfiguration
 
@@ -34,7 +35,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -53,7 +54,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |launchUri|String|Vínculo de dirección URL a una evaluación que se carga automáticamente al iniciar el explorador de evaluaciones seguras. Tiene que ser una dirección URL válida (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|Cuenta usada al configurar el dispositivo Windows para realizar la prueba. El usuario puede ser una cuenta de dominio (dominio\usuario), una cuenta de AAD (nombredeusuario@espacioempresarial.com) o una cuenta local (nombredeusuario).|
 |allowPrinting|Booleano|Indica si se va a permitir que la aplicación imprima durante la prueba.|
-|allowScreenCapture|Booleano|Indica si se va a permitir la funcionalidad de captura de pantalla durante una prueba.|
+|allowScreenCapture|Boolean|Indica si se va a permitir la funcionalidad de captura de pantalla durante una prueba.|
 |allowTextSuggestion|Booleano|Indica si se van a permitir las sugerencias de texto durante la prueba.|
 
 

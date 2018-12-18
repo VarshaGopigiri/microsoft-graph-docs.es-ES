@@ -1,12 +1,13 @@
 ---
 title: Obtener roleAssignment
 description: Lea las propiedades y las relaciones del objeto roleAssignment.
-ms.openlocfilehash: 53ff476be536d1e524cd71035a66f91c6fafb2b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 916e673da74f9da0fe8d678e2d8f763ac9842cae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029114"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360910"
 ---
 # <a name="get-roleassignment"></a>Obtener roleAssignment
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

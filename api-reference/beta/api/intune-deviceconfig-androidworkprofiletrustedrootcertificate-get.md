@@ -1,12 +1,13 @@
 ---
 title: Obtener androidWorkProfileTrustedRootCertificate
 description: Leer las propiedades y las relaciones del objeto androidWorkProfileTrustedRootCertificate.
-ms.openlocfilehash: 66e323258e2b9aa677d3b73ed2e4dbd31e9417fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 473568f12b90af2af6e085202243dff1257059b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083879"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360084"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>Obtener androidWorkProfileTrustedRootCertificate
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

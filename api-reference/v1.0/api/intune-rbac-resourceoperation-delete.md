@@ -1,12 +1,13 @@
 ---
 title: Eliminar resourceOperation
 description: Elimina un resourceOperation.
-ms.openlocfilehash: 944af765b1814448f56c91cb17082519f1cf9d40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd128b79d5afb74f96df097179dc6a962fd1e4e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030506"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361001"
 ---
 # <a name="delete-resourceoperation"></a>Eliminar resourceOperation
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

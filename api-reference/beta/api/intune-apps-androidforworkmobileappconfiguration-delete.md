@@ -1,12 +1,13 @@
 ---
 title: Eliminar androidForWorkMobileAppConfiguration
 description: Elimina un androidForWorkMobileAppConfiguration.
-ms.openlocfilehash: e5e1c9cd39b8f456dce4540611d1c4fa5e24a74f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b676beff1877421a6db78fc93751b0c4e7c1a789
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083565"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360595"
 ---
 # <a name="delete-androidforworkmobileappconfiguration"></a>Eliminar androidForWorkMobileAppConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

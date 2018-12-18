@@ -1,12 +1,13 @@
 ---
 title: Crear managedDeviceMobileAppConfigurationUserStatus
 description: Cree un objeto managedDeviceMobileAppConfigurationUserStatus.
-ms.openlocfilehash: 94a3cc37cfed0faf36ab0d96026cc61a33b76668
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 180e664df4b3e946415b6b4cf0dde09d9b82a659
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358558"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Crear managedDeviceMobileAppConfigurationUserStatus
 
@@ -34,7 +35,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

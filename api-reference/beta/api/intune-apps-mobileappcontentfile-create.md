@@ -1,12 +1,13 @@
 ---
 title: Crear mobileAppContentFile
 description: Cree un objeto mobileAppContentFile.
-ms.openlocfilehash: eb464009ad897917c3a23c334c5428494e363808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 456ac0f136c8d118dcc0b3fcbe165170da918aa6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356633"
 ---
 # <a name="create-mobileappcontentfile"></a>Crear mobileAppContentFile
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -47,7 +48,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |azureStorageUri|String|El URI de Azure Storage.|
-|isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
+|isCommitted|Boolean|Un valor que indica si el archivo está confirmado.|
 |id|String|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
 |name|String|El nombre del archivo.|
@@ -56,8 +57,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |azureStorageUriExpirationDateTime|DateTimeOffset|La hora en que expira el URI de Azure Storage.|
 |manifiesto|Binario|La información del manifiesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|El estado de la solicitud de carga actual. Los valores posibles son: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` y `commitFileTimedOut`.|
-|isFrameworkFile|Booleano|Un valor que indica si el archivo es un archivo de framework.|
-|isDependency|Booleano|Si el archivo de contenido es una dependencia para el archivo de contenido principal.|
+|isFrameworkFile|Boolean|Un valor que indica si el archivo es un archivo de framework.|
+|isDependency|Boolean|Si el archivo de contenido es una dependencia para el archivo de contenido principal.|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso omaSettingFloatingPoint
 description: Definición de punto flotante de la configuración de OMA.
-ms.openlocfilehash: 649e3b3d7716122610ac60291ef58cc25e32c4e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: efed2112f85ee0600fcbe499616a7f3e787beb59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030313"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360756"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Tipo de recurso omaSettingFloatingPoint
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso allLicensedUsersAssignmentTarget
 description: Representa una tarea para todos los usuarios con licencia en el espacio empresarial.
-ms.openlocfilehash: 713a205e72171d4f3a30aa605481d59ba8d4a002
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 514f52113c7d52c37d9b6360f79ca87324c44e73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089877"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357599"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>Tipo de recurso allLicensedUsersAssignmentTarget
 

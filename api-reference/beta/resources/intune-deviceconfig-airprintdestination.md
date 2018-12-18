@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso airPrintDestination
 description: Representa un destino de AirPrint.
-ms.openlocfilehash: a1f30f5c71a8ee79bb537ad4ae1f20ce8a05d184
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 046f85c65d382b34e6920f30f6b2718f817371a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085471"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361057"
 ---
 # <a name="airprintdestination-resource-type"></a>tipo de recurso airPrintDestination
 
@@ -21,7 +22,7 @@ Representa un destino de AirPrint.
 |ipAddress|cadena|La dirección IP de destino AirPrint.|
 |resourcePath|String|La ruta de acceso de recursos asociados con la impresora. Esto corresponde al parámetro de la _ipps.tcp Bonjour registro rp. Por ejemplo: Canon_MG5300_series/impresoras, impresoras/Xerox_Phaser_7600, ipp, print y Epson_IPP_Printer.|
 |port|Int32|El puerto de escucha del destino AirPrint. Si no se especifica esta clave AirPrint va a usar el puerto predeterminado. Disponible en iOS 11.0 y versiones posteriores.|
-|forceTls|Booleano|Si es true conexiones AirPrint están protegidas por la seguridad de capa de transporte (TLS). Valor predeterminado es false. Disponible en iOS 11.0 y versiones posteriores.|
+|forceTls|Boolean|Si es true conexiones AirPrint están protegidas por la seguridad de capa de transporte (TLS). Valor predeterminado es false. Disponible en iOS 11.0 y versiones posteriores.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

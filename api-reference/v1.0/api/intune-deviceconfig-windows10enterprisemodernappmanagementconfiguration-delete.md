@@ -1,12 +1,13 @@
 ---
 title: Eliminar windows10EnterpriseModernAppManagementConfiguration
 description: Elimina un windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: 8e7c34b70e6979a3a2c0d8686725721c69f1dddc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7acc1309cf8e9d5857f55ec424b7ce8456953214
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029137"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360399"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>Eliminar windows10EnterpriseModernAppManagementConfiguration
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

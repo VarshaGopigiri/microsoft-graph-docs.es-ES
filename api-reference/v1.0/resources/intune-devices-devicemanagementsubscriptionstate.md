@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración deviceManagementSubscriptionState
 description: Estado de suscripción de administración de dispositivos móviles del espacio empresarial.
-ms.openlocfilehash: 9e1dc0936a1fc54ed361ebb3338e10dee9a1357c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0e841cdc4e710f623aeaecf3de8a5db61cae8f8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031015"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356850"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>tipo de enumeración deviceManagementSubscriptionState
 
@@ -16,12 +17,12 @@ Estado de suscripción de administración de dispositivos móviles del espacio e
 ## <a name="members"></a>Miembros
 |Miembro	|Valor|Descripción|
 |:---|:---|:---|
-|pendiente|0|Pendiente|
+|pendiente|0|Pending|
 |activo|1|Activo|
 |warning|2|Advertencia|
 |deshabilitado|3|Deshabilitado|
-|deleted|4|Eliminados|
-|bloqueado|5|Bloqueado|
+|deleted|4|Deleted|
+|bloqueado|5|Blocked|
 |lockedOut|8|LockedOut|
 
 

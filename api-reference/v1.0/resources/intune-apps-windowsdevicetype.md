@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración windowsDeviceType
 description: Contiene las propiedades de tipo de dispositivo de Windows.
-ms.openlocfilehash: 9a2ca8d67254c3ea8f64e20f954b84d07060fbc1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 74f169f66ab2fe1bf29fbd4a08c07c540367947f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031619"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360693"
 ---
 # <a name="windowsdevicetype-enum-type"></a>tipo de enumeración windowsDeviceType
 
@@ -18,7 +19,7 @@ Contiene las propiedades de tipo de dispositivo de Windows.
 |:---|:---|:---|
 |ninguno|0|Sin marcadores establecidos.|
 |escritorio|1|Si no se admite el tipo de dispositivo de escritorio Windows.|
-|mobile|2|Si no se admite el tipo de dispositivo de Windows Mobile.|
+|móvil|2|Si no se admite el tipo de dispositivo de Windows Mobile.|
 |holográfica|4|Si no se admite el tipo de dispositivo de Windows holográfica.|
 |equipo|8|Si no se admite el tipo de dispositivo de Windows del equipo.|
 

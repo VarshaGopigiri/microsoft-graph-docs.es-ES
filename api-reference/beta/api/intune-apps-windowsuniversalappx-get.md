@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsUniversalAppX
 description: Lea las propiedades y las relaciones del objeto windowsUniversalAppX.
-ms.openlocfilehash: 73fb12485202487c9c7415c419dfa2121aaa065f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11b09ba6b276e36d50c1fe860b4bd3cd4115dbf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358509"
 ---
 # <a name="get-windowsuniversalappx"></a>Obtener windowsUniversalAppX
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

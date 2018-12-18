@@ -1,12 +1,13 @@
 ---
 title: Lista androidManagedStoreAppConfigurationSchemas
 description: Propiedades de la lista y relaciones de los objetos androidManagedStoreAppConfigurationSchema.
-ms.openlocfilehash: 6e83dbc951410fcb9142b069c6c8d9ee0c20c0a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b13d49d1fa350d21001d9075f28eedc19191086
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358677"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>Lista androidManagedStoreAppConfigurationSchemas
 
@@ -36,7 +37,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

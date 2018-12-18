@@ -1,12 +1,13 @@
 ---
 title: Lista azureADWindowsAutopilotDeploymentProfiles
 description: Propiedades de la lista y relaciones de los objetos azureADWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: 2dc3e28309aa9ab18e58c939737a56458d77b973
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0f68bf3856050fed0300498166eebc42a4cc13a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085087"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356346"
 ---
 # <a name="list-azureadwindowsautopilotdeploymentprofiles"></a>Lista azureADWindowsAutopilotDeploymentProfiles
 
@@ -36,7 +37,7 @@ GET /deviceManagement/windowsAutopilotDeploymentProfiles
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

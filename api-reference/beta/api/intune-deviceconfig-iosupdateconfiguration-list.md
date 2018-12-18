@@ -1,12 +1,13 @@
 ---
 title: Enumerar iosUpdateConfigurations
 description: Enumere las propiedades y las relaciones de los objetos iosUpdateConfiguration.
-ms.openlocfilehash: 9214f906ae7eaa8338852b0aa84d9dbce08c61d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34149169708886f48ac38ad7bdc49fa898d12ed4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090514"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360413"
 ---
 # <a name="list-iosupdateconfigurations"></a>Enumerar iosUpdateConfigurations
 
@@ -37,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

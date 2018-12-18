@@ -1,12 +1,13 @@
 ---
 title: Actualizar windows10EnrollmentCompletionPageConfiguration
 description: Actualizar las propiedades de un objeto windows10EnrollmentCompletionPageConfiguration.
-ms.openlocfilehash: b3566d7b476c17557bdfc15f8ff9d86763123ab2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bcc62cc4bea069a6a29ce2d321578a86145a0446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360049"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Actualizar windows10EnrollmentCompletionPageConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -53,13 +54,13 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |createdDateTime|DateTimeOffset|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|Todavía no documentado Heredado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Booleano|Mostrar u ocultar el progreso de la instalación para el usuario|
-|blockDeviceSetupRetryByUser|Booleano|Permitir al usuario que vuelva a intentar la instalación en caso de error de instalación|
-|allowDeviceResetOnInstallFailure|Booleano|Permitir o bloquear el dispositivo restablecer en caso de error de instalación|
-|allowLogCollectionOnInstallFailure|Booleano|Permitir o bloquear registro colección en caso de error de instalación|
+|showInstallationProgress|Boolean|Mostrar u ocultar el progreso de la instalación para el usuario|
+|blockDeviceSetupRetryByUser|Boolean|Permitir al usuario que vuelva a intentar la instalación en caso de error de instalación|
+|allowDeviceResetOnInstallFailure|Boolean|Permitir o bloquear el dispositivo restablecer en caso de error de instalación|
+|allowLogCollectionOnInstallFailure|Boolean|Permitir o bloquear registro colección en caso de error de instalación|
 |customErrorMessage|String|Establecer el mensaje de error personalizado para mostrar al producirse un error de instalación|
 |installProgressTimeoutInMinutes|Int32|Establecer tiempo de espera de progreso de la instalación en minutos|
-|allowDeviceUseOnInstallFailure|Booleano|Permitir que el usuario continuar utilizando el dispositivo en caso de error de instalación|
+|allowDeviceUseOnInstallFailure|Boolean|Permitir que el usuario continuar utilizando el dispositivo en caso de error de instalación|
 |selectedMobileAppIds|Colección String|Aplicaciones seleccionadas para realizar un seguimiento del estado de la instalación|
 
 

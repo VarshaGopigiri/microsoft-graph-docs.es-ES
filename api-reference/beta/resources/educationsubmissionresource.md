@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationSubmissionResource
 description: 'Un contenedor alrededor de un recurso para su uso en una presentación. El contenedor agrega un puntero al recurso de asignación si esto se copió desde la asignación.  '
-ms.openlocfilehash: 243d0d8683683df19f7787f7cf6298770950455f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: bfbf2f522106f5a1e2033898cbb2702223d3e241
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089256"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361561"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>tipo de recurso educationSubmissionResource
 
@@ -20,7 +21,7 @@ Un contenedor alrededor de un recurso para su uso en una presentación. El conte
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Leer las propiedades y relaciones de un objeto **educationSubmissionResource** .|
-|[Delete](../api/educationsubmissionresource-delete.md) | Ninguno |Eliminación de un objeto **educationSubmissionResource** . |
+|[Eliminar](../api/educationsubmissionresource-delete.md) | Ninguno |Eliminación de un objeto **educationSubmissionResource** . |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

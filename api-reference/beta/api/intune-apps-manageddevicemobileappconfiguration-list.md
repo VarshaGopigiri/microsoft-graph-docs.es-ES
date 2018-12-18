@@ -1,12 +1,13 @@
 ---
 title: Enumerar managedDeviceMobileAppConfigurations
 description: Enumere las propiedades y las relaciones de los objetos managedDeviceMobileAppConfiguration.
-ms.openlocfilehash: 47d6645719d76597f77628e16bfb11300c44c0fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e82c250fb0fb3406d5bb97be4a6cb1711a789adf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083552"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358992"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>Enumerar managedDeviceMobileAppConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

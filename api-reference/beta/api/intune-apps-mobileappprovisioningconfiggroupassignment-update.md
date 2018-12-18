@@ -1,12 +1,13 @@
 ---
 title: Actualizar mobileAppProvisioningConfigGroupAssignment
 description: Actualizar las propiedades de un objeto mobileAppProvisioningConfigGroupAssignment.
-ms.openlocfilehash: 81e9efc268130cbdc2baf44e098d6f11a949e90f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c113c16234cb51146aa2e627d39405f740d6aab3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088405"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359146"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Actualizar mobileAppProvisioningConfigGroupAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

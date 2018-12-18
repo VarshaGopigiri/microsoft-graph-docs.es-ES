@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso iosLobAppProvisioningConfigurationAssignment
 description: Una clase que contiene las propiedades usadas para la asignación de grupo de un iOS aprovisionamiento de la aplicación de LOB y configuración.
-ms.openlocfilehash: 6a540914057ed4a2d785566719f95ffcd4bbc50e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 795fe7e07fdd5a79e4d3d99f7d081bd458452473
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358222"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>tipo de recurso iosLobAppProvisioningConfigurationAssignment
 

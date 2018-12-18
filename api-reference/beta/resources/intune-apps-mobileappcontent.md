@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso mobileAppContent
 description: Contiene las propiedades del contenido de una versión de aplicación específica. Cada mobileAppContent puede tener varios mobileAppContentFile.
-ms.openlocfilehash: e57c4c0823636143962ac5fe1c50f4377e731f84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8cc5bd6e3c7aa5f08236d2662821a9a5d03707d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086763"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360350"
 ---
 # <a name="mobileappcontent-resource-type"></a>Tipo de recurso mobileAppContent
 

@@ -1,12 +1,13 @@
 ---
 title: Eliminar defaultDeviceCompliancePolicy
 description: Elimina un defaultDeviceCompliancePolicy.
-ms.openlocfilehash: e17fc99a482821e53e38cd76196b2ade4a0c426c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed6bddf1b09dfedd59c75499c39ca7d39c0044ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356087"
 ---
 # <a name="delete-defaultdevicecompliancepolicy"></a>Eliminar defaultDeviceCompliancePolicy
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

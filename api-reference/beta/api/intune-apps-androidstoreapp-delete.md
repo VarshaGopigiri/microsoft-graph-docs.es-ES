@@ -1,12 +1,13 @@
 ---
 title: Eliminar androidStoreApp
 description: Elimina un androidStoreApp.
-ms.openlocfilehash: 3e90aeb81163ae1cd9a6e957a83a4aaa074bb9f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c49a2ac2c0261df3fa59a4807eec220c34f76bd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083586"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361519"
 ---
 # <a name="delete-androidstoreapp"></a>Eliminar androidStoreApp
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

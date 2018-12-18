@@ -1,12 +1,13 @@
 ---
 title: Crear deviceEnrollmentLimitConfiguration
 description: Cree un objeto deviceEnrollmentLimitConfiguration.
-ms.openlocfilehash: 6a8cb46b022f68082bd3d291c87e612bde06ab4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdb9fee09f43890280ef0beb79d6d57d9def67f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359671"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>Crear deviceEnrollmentLimitConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

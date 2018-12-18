@@ -1,12 +1,13 @@
 ---
 title: acción getTargetedUsersAndDevices
 description: Todavía no documentado
-ms.openlocfilehash: 95d3c93e15c3f52dc80dc55b6afe6e1dd11b9030
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0893a3942b3423d2bcb1aebeb77c893b0098b50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083884"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357641"
 ---
 # <a name="gettargetedusersanddevices-action"></a>acción getTargetedUsersAndDevices
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

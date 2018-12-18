@@ -1,12 +1,13 @@
 ---
 title: Eliminar managedMobileApp
 description: Elimina un managedMobileApp.
-ms.openlocfilehash: 95c8bcf5704cce00ed5b256dd5ab4993d4af76d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea2efb72282ad60e09e3f33370ea6edf0036961a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083678"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358950"
 ---
 # <a name="delete-managedmobileapp"></a>Eliminar managedMobileApp
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
