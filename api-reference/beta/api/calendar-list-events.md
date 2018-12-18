@@ -1,12 +1,13 @@
 ---
 title: List events
 description: Recupera una lista de eventos de un calendario.  La lista contiene patrones de serie y reuniones de instancia única.
-ms.openlocfilehash: 4052f75abf4340d4acddbb79c1d318c7d1ca0f29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 3cf431d600f36350d8654e9624b596222fcbff8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084094"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341884"
 ---
 # <a name="list-events"></a>List events
 
@@ -48,9 +49,9 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción |
+| Nombre       | Type | Descripción |
 |:---------------|:--------|:--------|
-| Authorization  | string | {token} de portador. Obligatorio.  |
+| Autorización  | string | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Obtener la ficha
 description: 'Recuperar las propiedades y relaciones de la ficha especificada seleccionada. '
-ms.openlocfilehash: 6dcc850bb42487cd8ca7f9cc9f7330b59fa965cc
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 30c98258585db9443e2481db5a9fb8c304b8d72b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222621"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339588"
 ---
 # <a name="get-tab"></a>Obtener la ficha
 

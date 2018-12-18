@@ -1,12 +1,13 @@
 ---
 title: Actualizar iosEasEmailProfileConfiguration
 description: Actualizar las propiedades de un objeto iosEasEmailProfileConfiguration.
-ms.openlocfilehash: e73b5e441d99831e8b89b897a09a5809dab6d1ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a330d3c56386da5c440bbe58573f977c876d8481
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343293"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>Actualizar iosEasEmailProfileConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -51,7 +52,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -62,16 +63,16 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |customDomainName|String|Valor de nombre de dominio personalizado utilizado durante la generación de un perfil de correo electrónico antes de instalar en el dispositivo. Se hereda de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Nombre de la cuenta.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Método de autenticación para este perfil de correo electrónico. Los valores posibles son: `usernameAndPassword` y `certificate`.|
-|blockMovingMessagesToOtherEmailAccounts|Booleano|Indica si se deben bloquear mover mensajes a otras cuentas de correo electrónico.|
-|blockSendingEmailFromThirdPartyApps|Booleano|Indica si se deben bloquear el envío de correo electrónico desde aplicaciones de otros fabricantes.|
-|blockSyncingRecentlyUsedEmailAddresses|Booleano|Indica si se deben bloquear sincronización usados recientemente direcciones de correo electrónico, por ejemplo, - al redactar correo electrónico nuevo.|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|Indica si se deben bloquear mover mensajes a otras cuentas de correo electrónico.|
+|blockSendingEmailFromThirdPartyApps|Boolean|Indica si se deben bloquear el envío de correo electrónico desde aplicaciones de otros fabricantes.|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|Indica si se deben bloquear sincronización usados recientemente direcciones de correo electrónico, por ejemplo, - al redactar correo electrónico nuevo.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duración de correo electrónico de tiempo se debe sincronizar volver a. . Los valores posibles son: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth` y `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Atributo de correo electrónico que se seleccionan de AAD y se insertan en este perfil antes de instalar en el dispositivo. Los valores posibles son: `userPrincipalName` y `primarySmtpAddress`.|
 |hostName|String|Ubicación de Exchange esa dirección (URL) que la aplicación de correo nativo se conecta a.|
-|requireSmime|Booleano|Indica si se va a usar certificados S/MIME o no.|
-|smimeEnablePerMessageSwitch|Booleano|Indica si se debe o no permitir que los mensajes de correo electrónico sin cifrar.|
-|requireSsl|Booleano|Indica si se va a usar SSL o no.|
-|useOAuth|Booleano|Especifica si la conexión debe usar OAuth para la autenticación.|
+|requireSmime|Boolean|Indica si se va a usar certificados S/MIME o no.|
+|smimeEnablePerMessageSwitch|Boolean|Indica si se debe o no permitir que los mensajes de correo electrónico sin cifrar.|
+|requireSsl|Boolean|Indica si se va a usar SSL o no.|
+|useOAuth|Boolean|Especifica si la conexión debe usar OAuth para la autenticación.|
 
 
 

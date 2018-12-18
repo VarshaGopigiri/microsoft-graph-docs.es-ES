@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsCertificateProfileBase
 description: Leer las propiedades y las relaciones del objeto windowsCertificateProfileBase.
-ms.openlocfilehash: fc44f98665db8308ede020d52c64130081866fe0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e887b1547f62cba87121cad833368146cc58dcd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088778"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341240"
 ---
 # <a name="get-windowscertificateprofilebase"></a>Obtener windowsCertificateProfileBase
 
@@ -39,7 +40,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

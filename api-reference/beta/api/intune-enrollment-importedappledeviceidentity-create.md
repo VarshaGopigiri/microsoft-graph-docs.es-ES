@@ -1,12 +1,13 @@
 ---
 title: Crear importedAppleDeviceIdentity
 description: Crear un nuevo objeto importedAppleDeviceIdentity.
-ms.openlocfilehash: dae2d56990c9f6cdfb5c0adc5c6a457ade52e161
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f329e520659bea7332a84c78ed32f1abf071744d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083870"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338874"
 ---
 # <a name="create-importedappledeviceidentity"></a>Crear importedAppleDeviceIdentity
 
@@ -36,7 +37,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |serialNumber|String|Número de serie del dispositivo|
 |requestedEnrollmentProfileId|String|Administración de identificador de perfil de inscripción tenga la intención de aplicar al dispositivo durante la inscripción siguiente|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|El perfil de tiempo de inscripción se asignó al dispositivo|
-|isSupervised|Booleano|Indica si el dispositivo de Apple es supervisado. Es más información en:https://support.apple.com/en-us/HT202837|
+|isSupervised|Boolean|Indica si el dispositivo de Apple es supervisado. Es más información en:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Origen de detección del dispositivo de Apple. Los valores posibles son: `unknown`, `adminImport` y `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Crear fecha hora del dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última vez fecha ponerse en contacto del dispositivo|

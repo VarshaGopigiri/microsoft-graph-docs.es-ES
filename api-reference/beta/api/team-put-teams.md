@@ -1,12 +1,13 @@
 ---
 title: Crear equipo de grupo
 description: Crear un nuevo equipo de un grupo.
-ms.openlocfilehash: d43c9032811c2ddc1733117642f9e2ae4f343a7e
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: c9b3b686d9327872f7e5a68fe325141e256c6f53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330299"
 ---
 # <a name="create-team-from-group"></a>Crear equipo de grupo
 

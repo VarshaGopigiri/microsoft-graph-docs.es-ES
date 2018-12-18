@@ -1,12 +1,13 @@
 ---
 title: 'llamar a: rechazar'
 description: Rechazar una llamada entrante.
-ms.openlocfilehash: 4731d377021871569fcec895af832aeea66b3431
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343459"
 ---
 # <a name="call-reject"></a>llamar a: rechazar
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Type    |Descripción|
 |:---------------|:--------|:----------|
 |motivo|String|La razón de rechazo.|
 

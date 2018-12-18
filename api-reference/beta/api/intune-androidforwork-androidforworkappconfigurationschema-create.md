@@ -1,12 +1,13 @@
 ---
 title: Crear androidForWorkAppConfigurationSchema
 description: Cree un objeto androidForWorkAppConfigurationSchema.
-ms.openlocfilehash: 1978bd62d9d2d22d3056a88a246f15902305c390
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92974019e98a1dc8403d5672f631de7849caebc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353189"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>Crear androidForWorkAppConfigurationSchema
 
@@ -36,7 +37,7 @@ POST /deviceManagement/androidForWorkAppConfigurationSchemas
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

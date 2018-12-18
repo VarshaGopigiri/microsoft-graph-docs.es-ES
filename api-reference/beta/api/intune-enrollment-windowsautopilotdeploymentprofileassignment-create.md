@@ -1,12 +1,13 @@
 ---
 title: Crear windowsAutopilotDeploymentProfileAssignment
 description: Crear un nuevo objeto windowsAutopilotDeploymentProfileAssignment.
-ms.openlocfilehash: 7c6e6e41711a89f5e9690f16a569b5a4afbe91c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c73cd0c8f32ea5b5e84afb5873700a6523186059
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338853"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Crear windowsAutopilotDeploymentProfileAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

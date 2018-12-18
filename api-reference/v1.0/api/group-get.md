@@ -1,12 +1,13 @@
 ---
 title: Obtener grupo
 description: Obtiene las propiedades y relaciones de un objeto de grupo.
-ms.openlocfilehash: fbae878043580a9c5495b0462290e1da7af3bdd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: aed805172759971740d1576b4b3040934116cd66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340316"
 ---
 # <a name="get-group"></a>Obtener grupo
 Obtiene las propiedades y relaciones de un objeto de grupo.
@@ -65,9 +66,9 @@ GET /groups/{id}
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

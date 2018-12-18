@@ -1,12 +1,13 @@
 ---
 title: Recursos de la lista
 description: Lista de los recursos asociados con este envío. El objeto **submissionResource** es que un contenedor alrededor del objeto de recurso real el alumno está trabajando en. El contenedor también incluye un puntero a los recursos de la asignación, si esto se copió desde la asignación durante el proceso de asignar. Estos recursos son la copia de trabajo de la asignación. El **submittedResources** son los recursos que se han enviado oficialmente a ser clasificados.
-ms.openlocfilehash: 0035f34b734cb4335fd1fd9ec3eece9183eed67b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: d63c731798003a2312ee5fbff534cde88d4b9ecf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084650"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341072"
 ---
 # <a name="list-resources"></a>Recursos de la lista
 

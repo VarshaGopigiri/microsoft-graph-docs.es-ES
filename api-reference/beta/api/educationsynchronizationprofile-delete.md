@@ -1,12 +1,13 @@
 ---
 title: Eliminar un educationSynchronizationProfile
 description: Eliminar un perfil de sincronización de datos de school en el inquilino según el identificador.
-ms.openlocfilehash: 829b723b48eb9a15750bc9d0e00ba50d432e8ab6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087776"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343305"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Eliminar un educationSynchronizationProfile
 
@@ -17,7 +18,7 @@ Eliminar school datos en un [perfil de sincronización](../resources/educationsy
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-| Tipo de permiso | Permissions |
+| Tipo de permiso | Permisos |
 |:-----------|:----------|
 | Delegado (cuenta profesional o educativa) | EduAdministration.ReadWrite |
 
@@ -28,9 +29,9 @@ DELETE /synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Tipo | Descripción|
+| Nombre       | Type | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 |Delegado (cuenta Microsoft personal|No admitida.|
 |Aplicación|No admitida.|
 

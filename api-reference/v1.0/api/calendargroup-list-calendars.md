@@ -1,12 +1,13 @@
 ---
 title: List calendars
 description: Recupera una lista de calendarios que pertenecen a un grupo de calendarios.
-ms.openlocfilehash: af4ad93d0544fa90bbf9ae8dd31c7907ef7bc1bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e150d25976cda8cde52a70669fb38333f2a95fd2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029112"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341387"
 ---
 # <a name="list-calendars"></a>List calendars
 
@@ -46,9 +47,9 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre          | Tipo   | Descripción               |
+| Nombre          | Type   | Descripción               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | {token} de portador. Obligatorio. |
+| Autorización | string | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

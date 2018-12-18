@@ -1,12 +1,13 @@
 ---
 title: Eliminar circularGeofenceManagementCondition
 description: Elimina un circularGeofenceManagementCondition.
-ms.openlocfilehash: cc51da50fabf7854cc350cd1f9ec8228f70725dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed7ee0be1b96cefbdbd2e648accd01db29693d5d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338993"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>Eliminar circularGeofenceManagementCondition
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

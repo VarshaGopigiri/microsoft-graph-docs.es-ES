@@ -1,12 +1,13 @@
 ---
 title: Participantes de la lista
 description: Recuperar una lista de objetos de participantes en la llamada.
-ms.openlocfilehash: a18dc609204712f1b7c7b31150975543277ffa67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0ffb48a862f7c0ba547521eb9e0e96f3c1d38dff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084964"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339123"
 ---
 # <a name="list-participants"></a>Participantes de la lista
 

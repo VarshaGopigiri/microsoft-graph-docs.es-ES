@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsUniversalAppX
 description: Elimina un windowsUniversalAppX.
-ms.openlocfilehash: b4fe2e7560090865b85c8737b5a6a76abe46a5b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c39bcc856640a3990dab59fe015f6b3e10ab5af0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339924"
 ---
 # <a name="delete-windowsuniversalappx"></a>Eliminar windowsUniversalAppX
 
@@ -34,7 +35,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

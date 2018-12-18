@@ -1,12 +1,13 @@
 ---
 title: Actualizar windowsPrivacyDataAccessControlItem
 description: Actualizar las propiedades de un objeto windowsPrivacyDataAccessControlItem.
-ms.openlocfilehash: 289bb7eaf00d0ac81adf676157e77a16c1fe1d9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38389049c03d822feb4c3791dfee65e327e1afea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086382"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324160"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>Actualizar windowsPrivacyDataAccessControlItem
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

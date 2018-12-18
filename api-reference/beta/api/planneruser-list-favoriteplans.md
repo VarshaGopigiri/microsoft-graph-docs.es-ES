@@ -1,12 +1,13 @@
 ---
 title: Lista favoritePlans
 description: Recuperar una lista de plannerPlans que están marcados como favoritos por un usuario. Puede marcar un plan como favoritos mediante la actualización de los recursos de plannerUser.
-ms.openlocfilehash: e9e3cf3cd348430a3512d15ac2e0cdc68d24d258
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085368"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324587"
 ---
 # <a name="list-favoriteplans"></a>Lista favoritePlans
 
@@ -35,7 +36,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {código} del portador. Necesario.|
+| Autorización  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

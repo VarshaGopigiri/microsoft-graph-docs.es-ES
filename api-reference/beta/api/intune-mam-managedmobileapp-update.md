@@ -1,12 +1,13 @@
 ---
 title: Actualizar managedMobileApp
 description: Actualice las propiedades de un objeto managedMobileApp.
-ms.openlocfilehash: c15e46562b43aa87f9dafe85be2b8dde93ff21f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 22c4a19100303095681c18d5acf6692b0b706f53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338706"
 ---
 # <a name="update-managedmobileapp"></a>Actualizar managedMobileApp
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

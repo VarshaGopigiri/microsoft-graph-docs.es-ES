@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso post
 description: Representa un elemento Post individual dentro en una entidad conversationThread.
-ms.openlocfilehash: 11ba79153b8d2a972c952fb3d224832fc1fe2eb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: dcbf62d5415273ebd805fc930c746282519f386a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030721"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340043"
 ---
 # <a name="post-resource-type"></a>Tipo de recurso post
 Representa un elemento Post individual dentro en una entidad [conversationThread](conversationthread.md).

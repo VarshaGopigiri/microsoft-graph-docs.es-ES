@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración safeSearchFilterType
 description: Especifica qué nivel de búsqueda segura (filtrado de contenido para adultos) es necesario
-ms.openlocfilehash: cf4f61e1b9e4e9f4fcfd94e6372ce517f3b735e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eb0c7cfb862364ddc4703c89d19ea844ada6466d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030394"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343200"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>tipo de enumeración safeSearchFilterType
 

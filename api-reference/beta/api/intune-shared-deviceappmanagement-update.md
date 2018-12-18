@@ -1,12 +1,13 @@
 ---
 title: Actualizar deviceAppManagement
 description: Actualice las propiedades de un objeto deviceAppManagement.
-ms.openlocfilehash: e842e81f098a42e064be1aa00616a84d7f08eb34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5a4b3cfa1af7eb4a465c951a4a10f4c19944d8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088336"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324027"
 ---
 # <a name="update-deviceappmanagement"></a>Actualizar deviceAppManagement
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |id|String|Clave de la entidad.|
 |**Incorporación**|
-|isEnabledForMicrosoftStoreForBusiness|Booleano|Indica si la cuenta está habilitada para la sincronización de aplicaciones de Microsoft Store para Empresas.|
+|isEnabledForMicrosoftStoreForBusiness|Boolean|Indica si la cuenta está habilitada para la sincronización de aplicaciones de Microsoft Store para Empresas.|
 |microsoftStoreForBusinessLanguage|String|Información local que se usa para sincronizar las aplicaciones de Microsoft Store para Empresas. Referencias culturales que son específicas de un país o región. Los nombres de dichas referencias culturales siguen RFC 4646 (Windows Vista y versiones posteriores). El formato es <languagecode2>-<country/regioncode2>, donde <languagecode2> es un código de dos letras en minúsculas proveniente de ISO 639-1 y <country/regioncode2> es un código de dos letras en mayúsculas derivado de ISO 3166. Por ejemplo, en-US para inglés (Estados Unidos) es una referencia cultural específica.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|La última vez que se completó una sincronización de aplicaciones desde Microsoft Store para Empresas.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que se sincronizaron correctamente las aplicaciones de Microsoft Store para Empresas en la cuenta.|

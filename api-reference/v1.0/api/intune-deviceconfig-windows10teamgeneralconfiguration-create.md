@@ -1,12 +1,13 @@
 ---
 title: Crear windows10TeamGeneralConfiguration
 description: Cree un objeto windows10TeamGeneralConfiguration.
-ms.openlocfilehash: 9adeb52b52606f4362c6a1b570d77035e5139616
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1634de20684f751dbb540b2fa619cd9153d8b0f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029818"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340295"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>Crear windows10TeamGeneralConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Lista ndesConnectors
 description: Propiedades de la lista y relaciones de los objetos ndesConnector.
-ms.openlocfilehash: eb3737cea78ad7fa97bb40d05b5ac836e444b7a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd91f4aad8a3e4969594e34a7f8124411687c9be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340925"
 ---
 # <a name="list-ndesconnectors"></a>Lista ndesConnectors
 
@@ -36,7 +37,7 @@ GET /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

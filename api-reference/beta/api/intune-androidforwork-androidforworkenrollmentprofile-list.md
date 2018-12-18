@@ -1,12 +1,13 @@
 ---
 title: Enumerar androidForWorkEnrollmentProfiles
 description: Enumere las propiedades y las relaciones de los objetos androidForWorkEnrollmentProfile.
-ms.openlocfilehash: b12e93a6895ff9b7245082f3b2c3cfbe3f940461
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f01037e67a87ee38d6458dd8f2612473970e6680
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086509"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340792"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Enumerar androidForWorkEnrollmentProfiles
 
@@ -36,7 +37,7 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

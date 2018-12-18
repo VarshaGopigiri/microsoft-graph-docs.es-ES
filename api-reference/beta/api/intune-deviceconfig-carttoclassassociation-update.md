@@ -1,12 +1,13 @@
 ---
 title: Actualizar cartToClassAssociation
 description: Actualizar las propiedades de un objeto cartToClassAssociation.
-ms.openlocfilehash: ecdfdca855920c26e607f24771e41392f74d7095
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43b272a5fa2871daebbf7cfeea890ba0b9e204e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088284"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343019"
 ---
 # <a name="update-carttoclassassociation"></a>Actualizar cartToClassAssociation
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración windows10EditionType
 description: Tipo de edición del 10 de Windows.
-ms.openlocfilehash: ee80bb602ee888f86e2c12c755aec7596c15ff3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc7d198e523fe01a4e10887bc0a8cbb13bac345a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088935"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327793"
 ---
 # <a name="windows10editiontype-enum-type"></a>tipo de enumeración windows10EditionType
 

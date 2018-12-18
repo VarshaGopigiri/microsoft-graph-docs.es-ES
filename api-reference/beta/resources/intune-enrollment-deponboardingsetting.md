@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso depOnboardingSetting
 description: El depOnboardingSetting representa una instancia del servicio de Apple DEP que se va a onboarded a Intune. La instancia de servicio onboarded administra la utiliza para sincronizar datos entre Apple y Intune un Token de Apple.
-ms.openlocfilehash: 7991b03b8307db10d3a300b1b85be3fc1b825819
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac38b1716dd156c95fda9cee8fb76a9f75921b0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090574"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341163"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso depOnboardingSetting
 
@@ -38,13 +39,13 @@ El depOnboardingSetting representa una instancia del servicio de Apple DEP que s
 |lastModifiedDateTime|DateTimeOffset|Cuando el servicio fue onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Cuando el syned último servicio con Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Cuando Intune solicitada por última vez una sincronización.|
-|shareTokenWithSchoolDataSyncService|Booleano|Si el símbolo (token) de la característica Dep compartir está habilitada o no con el servicio de sincronización de datos de School.|
+|shareTokenWithSchoolDataSyncService|Boolean|Si el símbolo (token) de la característica Dep compartir está habilitada o no con el servicio de sincronización de datos de School.|
 |lastSyncErrorCode|Int32|Código de error que informa Apple durante la última sincronización de la característica dep.|
 |TokenType en|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtiene o establece el tipo de símbolo (token) de la característica Dep. Los valores posibles son: `none`, `dep` y `appleSchoolManager`.|
 |tokenName|String|Nombre descriptivo para la característica Dep símbolo (token)|
 |syncedDeviceCount|Int32|Obtiene sincronizado recuento de dispositivo|
 |defaultProfileDisplayName|String|Obtiene sincronizado recuento de dispositivo|
-|dataSharingConsentGranted|Booleano|Concede de consentimiento para uso compartido con Apple Dep servicio de datos|
+|dataSharingConsentGranted|Boolean|Concede de consentimiento para uso compartido con Apple Dep servicio de datos|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

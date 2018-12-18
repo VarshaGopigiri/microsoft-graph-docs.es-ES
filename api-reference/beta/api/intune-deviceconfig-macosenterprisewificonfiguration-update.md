@@ -1,12 +1,13 @@
 ---
 title: Actualizar macOSEnterpriseWiFiConfiguration
 description: Actualizar las propiedades de un objeto macOSEnterpriseWiFiConfiguration.
-ms.openlocfilehash: becaa5ab8597621c2cb89a1bfc79112474ed3e75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ebf8f6b67a9fc7914bda24e3ad857be7025dc8a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087976"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338650"
 ---
 # <a name="update-macosenterprisewificonfiguration"></a>Actualizar macOSEnterpriseWiFiConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -51,15 +52,15 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |networkName|String|Nombre de red se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |SSID|String|Esto es el nombre de la red Wi-Fi que se difunde a todos los dispositivos. Se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
-|connectAutomatically|Booleano|Conectar automáticamente cuando esta red esté en el intervalo. Si se establece en true omitirá el símbolo del sistema del usuario y el dispositivo se conecte automáticamente a la red Wi-Fi. Se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Booleano|Conectar cuando la red no sea de difusión su nombre (SSID). Cuando se establece en true, este perfil fuerza el dispositivo para conectarse a una red que no difundir su SSID para todos los dispositivos. Se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|connectAutomatically|Boolean|Conectar automáticamente cuando esta red esté en el intervalo. Si se establece en true omitirá el símbolo del sistema del usuario y el dispositivo se conecte automáticamente a la red Wi-Fi. Se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Boolean|Conectar cuando la red no sea de difusión su nombre (SSID). Cuando se establece en true, este perfil fuerza el dispositivo para conectarse a una red que no difundir su SSID para todos los dispositivos. Se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Indica si el extremo de Wi-Fi utiliza un tipo de EAP en función de seguridad. Se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md). Los valores posibles son: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Tipo de proxy para esta conexión Wi-Fi Inherited desde [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md). Los valores posibles son: `none`, `manual` y `automatic`.|
 |proxyManualAddress|String|Nombre de host DNS o dirección IP del servidor proxy cuando se selecciona la configuración manual. Se hereda de [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md)|

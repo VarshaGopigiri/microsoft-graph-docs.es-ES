@@ -1,12 +1,13 @@
 ---
 title: Actualizar sideLoadingKey
 description: Actualizar las propiedades de un objeto sideLoadingKey.
-ms.openlocfilehash: 5c9071a47726f602fcd07fd47341c70f7b4b2f38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d616db947defb8e08926e40df23590c7d27e84d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337383"
 ---
 # <a name="update-sideloadingkey"></a>Actualizar sideLoadingKey
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

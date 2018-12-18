@@ -1,12 +1,13 @@
 ---
 title: Actualizar iosVppAppAssignedDeviceLicense
 description: Actualizar las propiedades de un objeto iosVppAppAssignedDeviceLicense.
-ms.openlocfilehash: 8e2d623dd1d5c3b1f69fb62244a8eb20af3b3f95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 69ccb35896864a29bf594da74afeb702a4b963bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084259"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353231"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>Actualizar iosVppAppAssignedDeviceLicense
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,7 +51,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |userEmailAddress|String|La dirección de correo electrónico del usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|El identificador de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|El nombre de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|String|El nombre principal de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|String|El nombre principal del usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |managedDeviceId|String|El identificador de dispositivo administrado.|
 |deviceName|String|El nombre del dispositivo.|
 

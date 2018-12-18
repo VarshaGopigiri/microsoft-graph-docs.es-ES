@@ -1,12 +1,13 @@
 ---
 title: Crear androidCustomConfiguration
 description: Cree un objeto androidCustomConfiguration.
-ms.openlocfilehash: 7ce26b92d25f062a7dacb44a09ebe2250b680dd1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17b516b652ed542aefb25c3f5fc89748e544b092
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032334"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339364"
 ---
 # <a name="create-androidcustomconfiguration"></a>Crear androidCustomConfiguration
 
@@ -34,7 +35,7 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

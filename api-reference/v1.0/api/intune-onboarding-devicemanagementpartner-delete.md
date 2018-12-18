@@ -1,12 +1,13 @@
 ---
 title: Eliminar deviceManagementPartner
 description: Elimina un deviceManagementPartner.
-ms.openlocfilehash: d93575e38c37837bbff7b35d7321482c3e844b54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 559d724e251656442807ab3d167ec5ad6607530e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031864"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340169"
 ---
 # <a name="delete-devicemanagementpartner"></a>Eliminar deviceManagementPartner
 
@@ -34,7 +35,7 @@ DELETE /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

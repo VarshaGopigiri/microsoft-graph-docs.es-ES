@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsUpdateForBusinessConfiguration
 description: Configuración de actualización de Windows para empresas.
-ms.openlocfilehash: 264381dded8fd05e5d35cd8a0b97d82635f66578
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d64d841b58c051b1878b8537324b0233c58a407c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330306"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Tipo de recurso windowsUpdateForBusinessConfiguration
 
@@ -37,12 +38,12 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Modo de optimización de la entrega. Los valores posibles son: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload` y `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Características de la versión preliminar. Los valores posibles son: `userDefined`, `settingsOnly`, `settingsAndExperimentations` y `notAllowed`.|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Modo de actualización automático. Los valores posibles son: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime` y `autoInstallAndRebootWithoutEndUserControl`.|
-|microsoftUpdateServiceAllowed|Booleano|Permitir el servicio de Microsoft Update|
+|microsoftUpdateServiceAllowed|Boolean|Permitir el servicio de Microsoft Update|
 |driversExcluded|Booleano|Excluir controladores de Windows Update|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Programación de instalación|
 |qualityUpdatesDeferralPeriodInDays|Int32|Aplazar actualizaciones de calidad el siguiente número de días|
 |featureUpdatesDeferralPeriodInDays|Int32|Aplazar actualizaciones de características el siguiente número de días|
-|qualityUpdatesPaused|Booleano|Pausar las actualizaciones de calidad|
+|qualityUpdatesPaused|Boolean|Pausar las actualizaciones de calidad|
 |featureUpdatesPaused|Booleano|Pausar las actualizaciones de características|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Quality Updates Pause Expiry datetime|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Fecha y hora de expiración del pausado de actualizaciones de características|

@@ -1,12 +1,13 @@
 ---
 title: Eliminar importedDeviceIdentityResult
 description: Elimina un importedDeviceIdentityResult.
-ms.openlocfilehash: 911fbae85431d663efbd26afc288cdbf355c4d57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9fd04bdd1c57a5dae19024bbc3d44f9a05a850be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083843"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340526"
 ---
 # <a name="delete-importeddeviceidentityresult"></a>Eliminar importedDeviceIdentityResult
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

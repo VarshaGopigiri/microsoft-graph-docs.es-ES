@@ -1,12 +1,13 @@
 ---
 title: 'llamar a: respuesta'
 description: Responder a una llamada entrante.
-ms.openlocfilehash: d2cf1030179d8822fd4620224addbabb95c5482f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083694"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343207"
 ---
 # <a name="call-answer"></a>llamar a: respuesta
 
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro        | Tipo                                     |Descripción                                                                                                                                    |
+| Parámetro        | Type                                     |Descripción                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |El identificador de suscripción o de devolución de llamada en la que se entregarán las devoluciones de llamada. (Obligatorio)                                                               |
 |acceptedModalities|Colección String                         |La lista de Aceptar modalidades. Los valores posibles son: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Obligatorio) |

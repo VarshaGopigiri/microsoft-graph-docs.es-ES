@@ -1,12 +1,13 @@
 ---
 title: Eliminar windowsOfficeClientConfiguration
 description: Eliminar una directiva de seguridad que no sean específica.
-ms.openlocfilehash: a7911fd7f0f4b2079f9396d29c6a690e5caea62c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca6b26d423219e18c6886445875cc4abe85adc9f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088263"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324377"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>Eliminar windowsOfficeClientConfiguration
 
@@ -36,7 +37,7 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -1,12 +1,13 @@
 ---
 title: Obtener windows10TeamGeneralConfiguration
 description: Lea las propiedades y las relaciones del objeto windows10TeamGeneralConfiguration.
-ms.openlocfilehash: 4102eefba37ab0071415d4b609082046f5b690df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f5bff7f16ff3252e445569c313d47b862e26b50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088991"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341667"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>Obtener windows10TeamGeneralConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

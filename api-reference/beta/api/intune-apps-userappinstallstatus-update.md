@@ -1,12 +1,13 @@
 ---
 title: Actualizar userAppInstallStatus
 description: Actualizar las propiedades de un objeto userAppInstallStatus.
-ms.openlocfilehash: 352ba84a5829132c78d9a3c4636531978da95d41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ce3ec17f443f90bd4d31df1ec0ee46269334b5f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084054"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341534"
 ---
 # <a name="update-userappinstallstatus"></a>Actualizar userAppInstallStatus
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

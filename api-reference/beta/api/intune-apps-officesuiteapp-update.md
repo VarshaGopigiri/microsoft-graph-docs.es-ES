@@ -1,12 +1,13 @@
 ---
 title: Actualizar officeSuiteApp
 description: Actualizar las propiedades de un objeto officeSuiteApp.
-ms.openlocfilehash: b98a7da8d268894adce8c9f5bb9790c924e8b64c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 444bf90622d47d803a311e29d504dd8517369768
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337943"
 ---
 # <a name="update-officesuiteapp"></a>Actualizar officeSuiteApp
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -55,7 +56,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Icono grande que se mostrará en los detalles de la aplicación y se usa para cargar el icono. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Booleano|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Boolean|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|La dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|La dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -63,15 +64,15 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |notas|String|Notas de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|El estado de carga. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Se hereda de [mobileApp](../resources/intune-apps-mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
-|autoAcceptEula|Booleano|El valor que acepte al CLUF automáticamente en el dispositivo de la para el usuario final.|
+|autoAcceptEula|Boolean|El valor que acepte al CLUF automáticamente en el dispositivo de la para el usuario final.|
 |Datos|colección de [officeProductId](../resources/intune-apps-officeproductid.md)|Los identificadores de producto que representan la SKU del conjunto de aplicaciones de Office365. Los valores posibles son: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail` y `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|La propiedad para representar las aplicaciones que se excluirán del producto seleccionado de Office365 Id.|
-|useSharedComputerActivation|Booleano|La propiedad para representar si se usa la activación del equipo compartido no para el conjunto de aplicaciones de Office365 app.|
+|useSharedComputerActivation|Boolean|La propiedad para representar si se usa la activación del equipo compartido no para el conjunto de aplicaciones de Office365 app.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|La propiedad para representar el canal de actualización de Office365. Los valores posibles son: `none`, `current`, `deferred`, `firstReleaseCurrent` y `firstReleaseDeferred`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|La propiedad para representar la versión de conjunto de programas de aplicación de Office365. Los valores posibles son: `none`, `x86`, `x64`, `arm` y `neutral`.|
 |localesToInstall|Colección String|La propiedad para representar las configuraciones regionales que se instalan cuando se instala las aplicaciones de Office365. Se utiliza 6033 de RFC estándar. Ref:https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Para especificar el nivel de presentación para la interfaz de usuario de instalación progreso del programa de instalación en el dispositivo. Los valores posibles son: `none` y `full`.|
-|shouldUninstallOlderVersionsOfOffice|Booleano|La propiedad para determinar si debe desinstalar MSI de Office existente si se implementa un conjunto de aplicaciones de la aplicación Office365 en el dispositivo o no.|
+|shouldUninstallOlderVersionsOfOffice|Boolean|La propiedad para determinar si debe desinstalar MSI de Office existente si se implementa un conjunto de aplicaciones de la aplicación Office365 en el dispositivo o no.|
 |targetVersion|String|La propiedad para representar la versión de destino específico para el conjunto de aplicaciones de la aplicación de Office365 que debe se mantuvo implementado en los dispositivos.|
 |updateVersion|String|La propiedad para representar la versión de actualización en la que está disponible para el conjunto de aplicaciones de la aplicación Office365 la versión de destino específica.|
 

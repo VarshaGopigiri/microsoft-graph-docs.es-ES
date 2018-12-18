@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartDataLabels
 description: Representa una colección de todas las etiquetas de datos en un punto del gráfico.
-ms.openlocfilehash: d226c5edb3fecc3a2e27fae32060f786f790d7e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ef1880fcbf1f74f99f6b323c06b8fd35812f340a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088353"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352181"
 ---
 # <a name="chartdatalabels-resource-type"></a>Tipo de recurso ChartDataLabels
 
@@ -20,7 +21,7 @@ Representa una colección de todas las etiquetas de datos en un punto del gráfi
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get ChartDataLabels](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Lee las propiedades y relaciones del objeto chartDataLabels.|
-|[Update](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |Actualiza el objeto ChartDataLabels. |
+|[Actualizar](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |Actualiza el objeto ChartDataLabels. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

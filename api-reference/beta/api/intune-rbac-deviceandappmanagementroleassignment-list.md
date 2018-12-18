@@ -1,12 +1,13 @@
 ---
 title: Enumerar deviceAndAppManagementRoleAssignments
 description: Enumere las propiedades y las relaciones de los objetos deviceAndAppManagementRoleAssignment.
-ms.openlocfilehash: 577b7b06b9c0017a40c3537e3e08636309458691
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c224d3c094330d948c2ce30a2213044a77a36428
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088371"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341898"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Enumerar deviceAndAppManagementRoleAssignments
 
@@ -36,7 +37,7 @@ GET /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

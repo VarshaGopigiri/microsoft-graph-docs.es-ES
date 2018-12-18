@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsPhone81CompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para Windows 8.1 Mobile.
-ms.openlocfilehash: a90f0669373a411adc186cb2770f8880dc34d071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad221b831bef095235fa2b90b4ded7c441b5ed30
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030299"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330320"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>Tipo de recurso windowsPhone81CompliancePolicy
 
@@ -41,7 +42,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |passwordMinimumCharacterSetCount|Int32|Número de juegos de caracteres necesarios en la contraseña.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de contraseña necesaria. Los valores posibles son: `deviceDefault`, `alphanumeric` y `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
-|passwordRequired|Booleano|Si quiere requerir o no una contraseña.|
+|passwordRequired|Boolean|Si quiere requerir o no una contraseña.|
 |osMinimumVersion|String|Versión mínima de Windows Phone.|
 |osMaximumVersion|String|Versión máxima de Windows Phone.|
 |storageRequireEncryption|Booleano|Requerir el cifrado en dispositivos de Windows Phone.|

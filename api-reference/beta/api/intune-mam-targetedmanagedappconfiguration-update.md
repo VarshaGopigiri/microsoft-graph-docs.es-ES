@@ -1,12 +1,13 @@
 ---
 title: Actualizar targetedManagedAppConfiguration
 description: Actualice las propiedades de un objeto targetedManagedAppConfiguration.
-ms.openlocfilehash: 097665b53250c90bbe553d72b2e82dabac6a11ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 658a4710ae85c45a1480ee228e1713d2fa59a8e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342003"
 ---
 # <a name="update-targetedmanagedappconfiguration"></a>Actualizar targetedManagedAppConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -54,7 +55,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |version|String|Versión de la entidad. Heredado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |customSettings|Colección [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Un conjunto de pares de clave de cadena y valor de cadena que se va a enviar a las aplicaciones para aquellos usuarios que tienen limitada la configuración, sin modificar por este servicio. Heredado de [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|
 |deployedAppCount|Int32|Número de aplicaciones en las que se implementará la directiva actual.|
-|isAssigned|Booleano|Indica si la directiva se implementará en los grupos de inclusión.|
+|isAssigned|Boolean|Indica si la directiva se implementará en los grupos de inclusión.|
 
 
 

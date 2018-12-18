@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso educationTerm
 description: Período. Representa una parte designada del año académico. Se usa en educationClass.
-ms.openlocfilehash: a74ea283f153a535008003e6875018eb12a35d15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 319eedbaebde4f1e76c2f1b3e124c0dad2642538
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353091"
 ---
 # <a name="educationterm-resource-type"></a>Tipo de recurso educationTerm
 

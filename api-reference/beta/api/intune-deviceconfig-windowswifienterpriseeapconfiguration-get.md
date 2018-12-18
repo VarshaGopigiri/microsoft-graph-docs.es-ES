@@ -1,12 +1,13 @@
 ---
 title: Obtener windowsWifiEnterpriseEAPConfiguration
 description: Leer las propiedades y las relaciones del objeto windowsWifiEnterpriseEAPConfiguration.
-ms.openlocfilehash: 8d4b718bdae430e21386a3fa035fe153340acfa6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f46acbf55be1f03d902760cfb523a7f3ce321da4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339987"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>Obtener windowsWifiEnterpriseEAPConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

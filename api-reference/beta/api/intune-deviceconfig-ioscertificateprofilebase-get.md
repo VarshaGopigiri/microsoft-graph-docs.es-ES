@@ -1,12 +1,13 @@
 ---
 title: Obtener iosCertificateProfileBase
 description: Leer las propiedades y las relaciones del objeto iosCertificateProfileBase.
-ms.openlocfilehash: eb3fd30c51931ee4cc88e8b276c0592b21367589
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad8fdce37faebcb6f5bf71b372f67bc7a744a0cd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088631"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338594"
 ---
 # <a name="get-ioscertificateprofilebase"></a>Obtener iosCertificateProfileBase
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

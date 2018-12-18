@@ -1,12 +1,13 @@
 ---
 title: Lista windowsOfficeClientConfigurations
 description: Propiedades de la lista y relaciones de los objetos windowsOfficeClientConfiguration.
-ms.openlocfilehash: 0e14dc2ede95d0b1b5fcb4830e47292d2d604f7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 256ad449a12c8188346110d4ba5b7510d9657898
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083278"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340575"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>Lista windowsOfficeClientConfigurations
 
@@ -36,7 +37,7 @@ GET /officeConfiguration/clientConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

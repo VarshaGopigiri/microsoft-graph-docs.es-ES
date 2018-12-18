@@ -1,12 +1,13 @@
 ---
 title: Eliminar iosMobileAppConfiguration
 description: Elimina una iosMobileAppConfiguration.
-ms.openlocfilehash: e1420170635a04d2e01f568b19bea5c0400b4b0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9a47484c837d8b31e8ef31e974f627083ffe0f59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090011"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353119"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Eliminar iosMobileAppConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

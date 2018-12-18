@@ -1,12 +1,13 @@
 ---
 title: Obtener azureADWindowsAutopilotDeploymentProfile
 description: Leer las propiedades y las relaciones del objeto azureADWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: 2b9813c22ca0fa773c3775ac348470f8def260f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac9f1fa8ea4fad943402839645ff61bf8db921f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087810"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338475"
 ---
 # <a name="get-azureadwindowsautopilotdeploymentprofile"></a>Obtener azureADWindowsAutopilotDeploymentProfile
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

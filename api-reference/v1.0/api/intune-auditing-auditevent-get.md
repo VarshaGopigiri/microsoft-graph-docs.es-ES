@@ -1,12 +1,13 @@
 ---
 title: Obtener auditEvent
 description: Lea las propiedades y las relaciones del objeto auditEvent.
-ms.openlocfilehash: 07ad8006619a22425a46f4679dccc9b50edf4af6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4bcc13b5cce4e90e2a1b0ce31311723252d07c4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029621"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339259"
 ---
 # <a name="get-auditevent"></a>Obtener auditEvent
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

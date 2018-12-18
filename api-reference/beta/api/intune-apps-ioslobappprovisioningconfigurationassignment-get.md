@@ -1,12 +1,13 @@
 ---
 title: Obtener iosLobAppProvisioningConfigurationAssignment
 description: Leer las propiedades y las relaciones del objeto iosLobAppProvisioningConfigurationAssignment.
-ms.openlocfilehash: d2eb5ae3f68395bb4c33b7ec5f760e1f49cef5a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8cfd13e432be5d9e0272fba476f5d7a611d2bf75
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087613"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338790"
 ---
 # <a name="get-ioslobappprovisioningconfigurationassignment"></a>Obtener iosLobAppProvisioningConfigurationAssignment
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

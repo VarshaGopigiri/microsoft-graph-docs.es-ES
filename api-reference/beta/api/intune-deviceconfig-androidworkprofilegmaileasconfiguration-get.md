@@ -1,12 +1,13 @@
 ---
 title: Obtener androidWorkProfileGmailEasConfiguration
 description: Leer las propiedades y las relaciones del objeto androidWorkProfileGmailEasConfiguration.
-ms.openlocfilehash: 2b6499104d302234ca7ffe0b571b69c5aa784bea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 74f2313ea6092732445c65543a1be2c145201111
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087594"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338328"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>Obtener androidWorkProfileGmailEasConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
+|Autorización|Se requiere &lt;token&gt; de portador.|
 |Aceptar|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

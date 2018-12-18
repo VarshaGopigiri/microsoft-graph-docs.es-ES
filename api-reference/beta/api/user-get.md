@@ -1,12 +1,13 @@
 ---
 title: Obtener un usuario
 description: Recupere las propiedades y las relaciones del objeto de usuario.
-ms.openlocfilehash: f5392e25736fb93fd112413e00012eea78dc2449
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: eb2b3efe96e3fd4e4608ae045addaf8a1fe6911a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090651"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341576"
 ---
 # <a name="get-a-user"></a>Obtener un usuario
 

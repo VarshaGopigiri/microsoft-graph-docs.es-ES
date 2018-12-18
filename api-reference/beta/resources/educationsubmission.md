@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationSubmission
 description: Envíos de pertenecen a una asignación. Un envío representa los recursos que un turn individual (o de grupo) en una asignación y la calificación o comentarios que se devuelve.
-ms.openlocfilehash: f0b1cc9ccd169d29c31eb96bb6305f6d7cdcd6b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 5535aef4db988e0f4c4417128b5b53bbed884cc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083815"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328024"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso educationSubmission
 
@@ -24,7 +25,7 @@ Envíos se crean automáticamente cuando se publica una asignación. El envío p
 |[Obtener educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Leer las propiedades y relaciones de un objeto **educationSubmission** .|
 |[Recursos de la lista](../api/educationsubmission-list-resources.md) |colección de [educationSubmissionResource](educationsubmissionresource.md)| Obtener una colección de objetos **educationSubmissionResource** .|
 |[Lista submittedResources](../api/educationsubmission-list-submittedresources.md) |colección de [educationSubmissionResource](educationsubmissionresource.md)| Obtener una colección de objetos **educationSubmissionResource** .|
-|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Actualizar un objeto **educationSubmission** . |
+|[Actualizar](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Actualizar un objeto **educationSubmission** . |
 |[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Un profesor usa retorno para indicar que se puede mostrar los comentarios de remuneración al alumno.|
 |[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Un estudiante usos de envío para activar en la asignación. Esto copiará los recursos en la carpeta **submittedResources** para la clasificación y actualiza el estado.|
 |[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Un alumno utiliza la unsubmit para mover el estado de la presentación de back enviado a trabajar. Esto copiará los recursos en la carpeta **workingResources** para la clasificación y actualiza el estado.|

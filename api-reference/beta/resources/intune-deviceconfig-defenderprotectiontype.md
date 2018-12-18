@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración defenderProtectionType
 description: Valores posibles de protección Defender
-ms.openlocfilehash: 2623f28e61f38d37656da65bfa475ccd1063b57c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b71e7c1b9212e38a0f208121a7153b1512326a98
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339707"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>tipo de enumeración defenderProtectionType
 

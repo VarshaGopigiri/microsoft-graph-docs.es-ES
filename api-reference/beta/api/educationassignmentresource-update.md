@@ -1,12 +1,13 @@
 ---
 title: Actualizar educationAssignmentResource
 description: 'Actualizar las propiedades de recurso asociado con una asignación. Sólo los profesores en una clase pueden cambiar los objetos de recurso de asignación.  '
-ms.openlocfilehash: 761dc4f656a41d8d984443b17d87b1b0961a2a8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084030"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343221"
 ---
 # <a name="update-educationassignmentresource"></a>Actualizar educationAssignmentResource
 
@@ -39,7 +40,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Booleano| Indica si este recurso se debe copiar al objeto de recurso de cada student cuando se publicó la asignación.|
+|distributeForStudentWork|Boolean| Indica si este recurso se debe copiar al objeto de recurso de cada student cuando se publicó la asignación.|
 |resource|educationResource| Objeto de recurso. |
 
 ## <a name="response"></a>Respuesta
