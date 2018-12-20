@@ -1,28 +1,31 @@
 ---
-title: tipo de recurso de notificación
-description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: c09927cbe133c945b83a3bfc1b0eb74ef00bce2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: tipo de recurso commsNotification
+description: Comunicaciones base tipo de notificación que se publicará por los servidores de comunicaciones para notificar a los cambios.
+author: VinodRavichandran
+ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089599"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380271"
 ---
-# <a name="notification-resource-type"></a><span data-ttu-id="d1801-103">tipo de recurso de notificación</span><span class="sxs-lookup"><span data-stu-id="d1801-103">notification resource type</span></span>
+# <a name="commsnotification-resource-type"></a><span data-ttu-id="af876-103">tipo de recurso commsNotification</span><span class="sxs-lookup"><span data-stu-id="af876-103">commsNotification resource type</span></span>
 
-> <span data-ttu-id="d1801-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="d1801-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d1801-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="d1801-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="af876-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="af876-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="af876-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="af876-105">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d1801-106">Propiedades</span><span class="sxs-lookup"><span data-stu-id="d1801-106">Properties</span></span>
-| <span data-ttu-id="d1801-107">Propiedad</span><span class="sxs-lookup"><span data-stu-id="d1801-107">Property</span></span>       | <span data-ttu-id="d1801-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="d1801-108">Type</span></span>    | <span data-ttu-id="d1801-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="d1801-109">Description</span></span>                                                |
+<span data-ttu-id="af876-106">Comunicaciones base tipo de notificación que se publicará por los servidores de comunicaciones para notificar a los cambios.</span><span class="sxs-lookup"><span data-stu-id="af876-106">Communications notification base type that is published by Communications servers to notify changes.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="af876-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="af876-107">Properties</span></span>
+| <span data-ttu-id="af876-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="af876-108">Property</span></span>       | <span data-ttu-id="af876-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="af876-109">Type</span></span>    | <span data-ttu-id="af876-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="af876-110">Description</span></span>                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| <span data-ttu-id="d1801-110">changeType</span><span class="sxs-lookup"><span data-stu-id="d1801-110">changeType</span></span>     | <span data-ttu-id="d1801-111">String</span><span class="sxs-lookup"><span data-stu-id="d1801-111">String</span></span>  | <span data-ttu-id="d1801-112">Los valores posibles son: `created`, `updated` y `deleted`.</span><span class="sxs-lookup"><span data-stu-id="d1801-112">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
-| <span data-ttu-id="d1801-113">resource</span><span class="sxs-lookup"><span data-stu-id="d1801-113">resource</span></span>       | <span data-ttu-id="d1801-114">String</span><span class="sxs-lookup"><span data-stu-id="d1801-114">String</span></span>  | <span data-ttu-id="d1801-115">URI del recurso que se ha cambiado.</span><span class="sxs-lookup"><span data-stu-id="d1801-115">URI of the resource that was changed.</span></span>                      |
+| <span data-ttu-id="af876-111">changeType</span><span class="sxs-lookup"><span data-stu-id="af876-111">changeType</span></span>     | <span data-ttu-id="af876-112">String</span><span class="sxs-lookup"><span data-stu-id="af876-112">String</span></span>  | <span data-ttu-id="af876-113">Los valores posibles son: `created`, `updated` y `deleted`.</span><span class="sxs-lookup"><span data-stu-id="af876-113">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
+| <span data-ttu-id="af876-114">resource</span><span class="sxs-lookup"><span data-stu-id="af876-114">resource</span></span>       | <span data-ttu-id="af876-115">String</span><span class="sxs-lookup"><span data-stu-id="af876-115">String</span></span>  | <span data-ttu-id="af876-116">URI del recurso que se ha cambiado.</span><span class="sxs-lookup"><span data-stu-id="af876-116">URI of the resource that was changed.</span></span>                      |
 
-> <span data-ttu-id="d1801-116">**Nota:** `resourceData` está disponible como datos adicionales.</span><span class="sxs-lookup"><span data-stu-id="d1801-116">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="d1801-117">Es una entidad o Collection(entity) según el número de empaquetado en la notificación de cambios.</span><span class="sxs-lookup"><span data-stu-id="d1801-117">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
+> <span data-ttu-id="af876-117">**Nota:** `resourceData` está disponible como datos adicionales.</span><span class="sxs-lookup"><span data-stu-id="af876-117">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="af876-118">Es una entidad o Collection(entity) según el número de empaquetado en la notificación de cambios.</span><span class="sxs-lookup"><span data-stu-id="af876-118">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d1801-118">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="d1801-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="af876-119">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="af876-119">JSON representation</span></span>
 
-<span data-ttu-id="d1801-119">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="d1801-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="af876-120">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="af876-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -90,7 +93,7 @@ ms.locfileid: "27089599"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notification resource",
+  "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
