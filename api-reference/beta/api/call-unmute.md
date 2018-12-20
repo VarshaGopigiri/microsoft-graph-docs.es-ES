@@ -2,12 +2,12 @@
 title: 'llamar a: reactivar audio'
 description: Permite a la aplicación reactivar el audio de sí mismo.
 author: VinodRavichandran
-ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: abd5abdf0e91a24e2f8de4d5fbb3fa0cc1d7b243
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343473"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380404"
 ---
 # <a name="call-unmute"></a>llamar a: reactivar audio
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/unmute
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Type    |Descripción|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |clientContext|String|El contexto de cliente.|
 
@@ -54,7 +54,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "call_unmute"
+  "name": "call-unmute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/unmute

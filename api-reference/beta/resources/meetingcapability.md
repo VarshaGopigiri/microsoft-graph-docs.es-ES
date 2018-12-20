@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso meetingCapability
 description: Contiene las funciones de una reunión
-ms.openlocfilehash: 438193d08ab5542f07d4cbf61704520d81433e50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086418"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380250"
 ---
 # <a name="meetingcapability-resource-type"></a>tipo de recurso meetingCapability
 
@@ -16,10 +17,11 @@ Contiene las funciones de una reunión
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad       | Tipo    | Descripción|
-|:---------------|:--------|:----------|
-| allowAnonymousUsersToDialOut | Booleano | Indica si se permiten hacer llamadas de los usuarios anónimos en una reunión. |
-| autoAdmittedUsers | String | Los valores posibles son: `everyoneInCompany` y `everyone`. |
+| Propiedad                          | Tipo    | Descripción                                                        |
+|:----------------------------------|:--------|:-------------------------------------------------------------------|
+| allowAnonymousUsersToDialOut      | Booleano | Indica si se permiten hacer llamadas de los usuarios anónimos en una reunión. |
+| allowAnonymousUsersToStartMeeting | Booleano | Indica si se permiten a los usuarios anónimos para iniciar una reunión.  |
+| autoAdmittedUsers                 | String  | Los valores posibles son: `everyoneInCompany` y `everyone`.              |
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -35,6 +37,7 @@ La siguiente es una representación JSON del recurso
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
+  "allowAnonymousUsersToStartMeeting": true,
   "autoAdmittedUsers": "everyoneInCompany | everyone"
 }
 ```

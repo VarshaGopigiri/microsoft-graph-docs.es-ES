@@ -1,12 +1,13 @@
 ---
 title: Grupos de enrutamiento de audio de lista
 description: Recuperar una lista de objetos de **audioRoutingGroup** .
-ms.openlocfilehash: d188d8478b8bf57f45f0fa15eed9973cafba7b2f
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 7ed00bbd3d000e71afe55a5e663408139174640b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156008"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380138"
 ---
 # <a name="list-audio-routing-groups"></a>Grupos de enrutamiento de audio de lista
 
@@ -31,7 +32,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método es compatible con los [parámetros de consulta de OData](/graph/query-parameters) para ayudar a personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre          | Descripción               |
@@ -51,7 +52,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroups"
+  "name": "get-audioRoutingGroups"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups

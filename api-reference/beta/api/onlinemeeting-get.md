@@ -1,12 +1,13 @@
 ---
 title: Get de reunión en línea
 description: Recuperar las propiedades y relaciones de un objeto **onlineMeeting** .
-ms.openlocfilehash: 117b1f76212be0ece00d0e1c82f2106faf1fd275
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087061"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380383"
 ---
 # <a name="get-online-meeting"></a>Get de reunión en línea
 
@@ -35,7 +36,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método es compatible con los [parámetros de consulta de OData](/graph/query-parameters) para ayudar a personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre          | Descripción               |
@@ -55,7 +56,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "get_onlineMeeting"
+  "name": "get-onlineMeeting"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}

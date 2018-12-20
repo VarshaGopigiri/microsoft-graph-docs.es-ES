@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de llamada
 description: El recurso **de llamadas** se crea cuando hay una llamada entrante de la aplicación o la aplicación crea una nueva llamada saliente a través de un `POST` en `app/calls`.
-ms.openlocfilehash: 8819f03b844f1d67a56f8bbd9e6eca0608de92ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3acc0b04a5cb4357857c948a4b28feef22863a02
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088240"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380572"
 ---
 # <a name="call-resource-type"></a>tipo de recurso de llamada
 
@@ -37,7 +38,7 @@ Aunque la misma identidad no puede ser invitada varias veces, es posible para un
 | [Crear audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Crear un nuevo audioRoutingGroup por la publicación de la colección audioRoutingGroups. |
 | [Lista audioRoutingGroups](../api/call-list-audioroutinggroups.md) | colección de [audioRoutingGroup](audioroutinggroup.md)|Obtener una colección de objetos audioRoutingGroup.  |
 | **Respuesta interactiva de voz**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [commsOperation](commsoperation.md)               | Reproducir el símbolo del sistema en la llamada.                     |
+| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Reproducir el símbolo del sistema en la llamada.                     |
 | [Registro](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Registro de la llamada.                             |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancelar el proceso de medios.                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Suscribirse a tonos DTMF.                     |
@@ -67,7 +68,7 @@ Aunque la misma identidad no puede ser invitada varias veces, es posible para un
 | ringingTimeoutInSeconds | Int32                                                                                              | Tiempo de espera de llamadas para las llamadas salientes de punto a punto                                                                                                                                                     |
 | routingPolicies     | Colección String                                                                                      | Los valores posibles son: `none`, `noMissedCall`, `disableForwardingExceptPhone` y `disableForwarding`.                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | El autor de la llamada.                                                                                                                                                                         |
-| estado               | String                                                                                                 | El estado de la llamada. Los valores posibles son: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating` y `terminated`. Solo lectura. Servidor que se generó.                         |
+| state               | String                                                                                                 | El estado de la llamada. Los valores posibles son: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating` y `terminated`. Solo lectura. Servidor que se generó.                         |
 | subject             | String                                                                                                 | El asunto de la conversación.                                                                                                                                                                    |
 | objetivos             | colección de [participantInfo](participantinfo.md)                                                       | Los destinos de la llamada.                                                                                                                                                                            |
 | tenantId            | String                                                                                                 | tenantId en Azure Active Directory.                                                                                                                                                                 |

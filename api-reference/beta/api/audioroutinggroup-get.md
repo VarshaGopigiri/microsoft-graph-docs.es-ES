@@ -2,12 +2,12 @@
 title: Obtener el grupo de enrutamiento de audio
 description: Recuperar las propiedades y relaciones de un objeto audioRoutingGroup.
 author: VinodRavichandran
-ms.openlocfilehash: e6aca0300287e502fd065d69db1ce4855a42b823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 5f9a7771f31350dc30ed96e9eb81b40cc855b380
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331426"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380432"
 ---
 # <a name="get-audio-routing-group"></a>Obtener el grupo de enrutamiento de audio
 
@@ -22,7 +22,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (cuenta profesional o educativa)     | No se admite                               |
 | Delegado (cuenta personal de Microsoft) | No se admite                               |
-| Aplicación     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicación                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método es compatible con los [parámetros de consulta de OData](/graph/query-parameters) para ayudar a personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre          | Descripción               |
@@ -52,7 +52,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "get_audioRoutingGroup"
+  "name": "get-audioRoutingGroup"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

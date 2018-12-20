@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso invitationParticipantInfo
 description: El **InvitationParticipant** se usa para representar un conjunto de identidades asociado con una invitación a una conversación y proporciona los parámetros de invitación adicionales.
-ms.openlocfilehash: 8b00625dad1c41121b0359586742301e16d163fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: f833fcd0c555dfcc88da4027313ed7f40da81428
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085515"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380488"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 

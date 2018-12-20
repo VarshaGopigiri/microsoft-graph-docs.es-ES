@@ -2,12 +2,12 @@
 title: 'llamar a: registro'
 description: Registro de la llamada.
 author: VinodRavichandran
-ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303552"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380523"
 ---
 # <a name="call-record"></a>llamar a: registro
 
@@ -39,15 +39,15 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Type    |Descripción|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |solicita|colección de [mediaprompt](../resources/mediaprompt.md) | Colección de indicaciones para reproducir (si hay alguno) antes de la grabación se iniciará. Los clientes pueden elegir especificar la acción "playPrompt" por separado o especificar como parte de "registro" - principalmente todos los registros están precedido por un símbolo del sistema |
-|bargeInAllowed|Boolean| Permitir que los usuarios escriban opción antes de que finalice el símbolo del sistema.                                                                 |
+|bargeInAllowed|Booleano| Permitir que los usuarios escriban opción antes de que finalice el símbolo del sistema.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Silencio inicial máximo permitido desde el momento en que se inicia la operación de registro antes de la operación de conmutación por error y tiempo de espera. Si se está reproduciendo un símbolo del sistema, este temporizador se inicia después de que finalice el símbolo del sistema. |
 |maxSilenceTimeoutInSeconds|Int32| El tiempo de espera máximo silencio en segundos.|
 |maxRecordDurationInSeconds|Int32| La duración de registro máximo en segundos.|
-|playBeep|Boolean| Emite un pitido tras reproducir el símbolo del sistema.|
-|streamWhileRecording|Boolean|Si se establece en true, una ubicación de recursos será proporcionado en cuanto se inicia la grabación. |
+|playBeep|Booleano| Emite un pitido tras reproducir el símbolo del sistema.|
+|streamWhileRecording|Booleano|Si se establece en true, una ubicación de recursos será proporcionado en cuanto se inicia la grabación. |
 |stopTones|Colección String|Detener tonos especificados para finalizar la grabación.|
 |clientContext|String|El contexto de cliente.|
 
@@ -62,7 +62,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "call_record"
+  "name": "call-record"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/record

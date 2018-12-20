@@ -1,16 +1,19 @@
 ---
 title: tipo de recurso recordingInfo
-description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 92af3fcb52ab08f3f25a2c16cc720a4053a9bdfa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Información de grabación de un participante.
+author: VinodRavichandran
+ms.openlocfilehash: 709edcc6d473ce610cbba7f628e4ebc5057b779c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086466"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380306"
 ---
 # <a name="recordinginfo-resource-type"></a>tipo de recurso recordingInfo
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+Información de grabación de un participante.
 
 ## <a name="properties"></a>Propiedades
 

@@ -2,12 +2,12 @@
 title: 'participante: configureMixer'
 description: Configurar cómo audio mixto para los diferentes participantes en una conversación entre varias partes.
 author: VinodRavichandran
-ms.openlocfilehash: e300d842ce0bad870160d2f3788b059de6d41784
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c15cbc8a8de5a9ba7d7f3c20d20f99bf61006dbf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351992"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380473"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Type    |Descripción|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |participantMixerLevels|colección de [participantMixerLevel](../resources/participantmixerlevel.md)| Configuración del Mezclador de niveles para indicar participante de audio.|
 |clientContext|String|El contexto de cliente.|
@@ -55,7 +55,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "participant_configureMixer"
+  "name": "participant-configureMixer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/configureMixer

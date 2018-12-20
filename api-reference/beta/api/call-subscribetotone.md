@@ -1,13 +1,13 @@
 ---
 title: 'llamar a: subscribeToTone'
-description: " número de teléfono."
+description: Suscribirse a DTMF (multifrecuencia de tono dual señalización). Esto le permite recibir una notificación cuando el usuario presiona teclas en un teléfono 'teclado'.
 author: VinodRavichandran
-ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328304"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380439"
 ---
 # <a name="call-subscribetotone"></a>llamar a: subscribeToTone
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Type    | Descripción |
+| Parámetro      | Tipo    | Descripción |
 |:---------------|:--------|:------------|
 | clientContext  | String  | El contexto de cliente. |
 
@@ -54,7 +54,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "call_subscribeToTone"
+  "name": "call-subscribeToTone"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone

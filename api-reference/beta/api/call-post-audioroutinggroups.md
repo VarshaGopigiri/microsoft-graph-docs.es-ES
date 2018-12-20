@@ -1,12 +1,13 @@
 ---
 title: Crear grupo de enrutamiento de audio
 description: Crear un nuevo **audioRoutingGroup**.
-ms.openlocfilehash: 0dd506f3cf02e59d5a34c7184f4e596f6ff9e1fd
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 96279e1ee3eb9050c74b2696917af1bf42c4ff1c
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156043"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380537"
 ---
 # <a name="create-audio-routing-group"></a>Crear grupo de enrutamiento de audio
 
@@ -21,7 +22,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (cuenta profesional o educativa)     | No admitida.                               |
 | Delegado (cuenta personal de Microsoft) | No admitida.                               |
-| Aplicación     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicación                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +51,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "create_audioRoutingGroup_from_call"
+  "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
@@ -109,7 +110,7 @@ Content-Length: 233
 
 <!-- {
   "blockType": "example",
-  "name": "create_audioRoutingGroup_from_call",
+  "name": "create-audioRoutingGroup-from-call",
   "@odata.type": "microsoft.graph.audioRoutingGroup"
 }-->
 

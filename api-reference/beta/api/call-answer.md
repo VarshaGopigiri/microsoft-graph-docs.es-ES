@@ -2,12 +2,12 @@
 title: 'llamar a: respuesta'
 description: Responder a una llamada entrante.
 author: VinodRavichandran
-ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c7de038e2323ab844590c884e15a639a3839dd86
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343207"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380516"
 ---
 # <a name="call-answer"></a>llamar a: respuesta
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro        | Type                                     |Descripción                                                                                                                                    |
+| Parámetro        | Tipo                                     |Descripción                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |El identificador de suscripción o de devolución de llamada en la que se entregarán las devoluciones de llamada. (Obligatorio)                                                               |
 |acceptedModalities|Colección String                         |La lista de Aceptar modalidades. Los valores posibles son: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Obligatorio) |
@@ -56,7 +56,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {
@@ -320,7 +320,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {

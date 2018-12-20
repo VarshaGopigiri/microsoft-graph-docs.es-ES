@@ -2,12 +2,12 @@
 title: Actualizar el grupo de enrutamiento de audio
 description: Modificar orígenes y receptores de un audioRoutingGroup.
 author: VinodRavichandran
-ms.openlocfilehash: ae9e67a9f116a9c1e9dec2b5d742f13917374718
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: f1fac21e2d52818ee068bfe64e8db7853332d993
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336690"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380369"
 ---
 # <a name="update-audio-routing-group"></a>Actualizar el grupo de enrutamiento de audio
 
@@ -55,7 +55,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "update_audioRoutingGroup"
+  "name": "update-audioRoutingGroup"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

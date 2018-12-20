@@ -2,12 +2,12 @@
 title: 'llamar a: rechazar'
 description: Rechazar una llamada entrante.
 author: VinodRavichandran
-ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 8354593d32dce9a2b8d917db2dd6702d692a2b3f
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343459"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380362"
 ---
 # <a name="call-reject"></a>llamar a: rechazar
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Type    |Descripción|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |motivo|String|La razón de rechazo.|
 
@@ -111,7 +111,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "call_reject"
+  "name": "call-reject"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/reject

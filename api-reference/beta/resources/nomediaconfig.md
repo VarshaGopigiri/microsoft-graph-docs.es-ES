@@ -1,16 +1,19 @@
 ---
 title: tipo de recurso noMediaConfig
-description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 7b30c51bedc337fd1c1b3e1a3009a37e5834ab4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Configuración de medios para que indica que no hay ningún medio.
+author: VinodRavichandran
+ms.openlocfilehash: 29d5230150a035d8ed2dd1223f66df4a8f4f30f2
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084337"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380187"
 ---
 # <a name="nomediaconfig-resource-type"></a>tipo de recurso noMediaConfig
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+Configuración de medios para que indica que no hay ningún medio.
 
 ## <a name="properties"></a>Propiedades
 

@@ -1,16 +1,19 @@
 ---
 title: tipo de recurso organizerMeetingInfo
-description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 00a7978c44c82ddd6b34802f29188a554e7e0b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Información de la reunión que contiene el organizador de la reunión.
+author: VinodRavichandran
+ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087014"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380215"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>tipo de recurso organizerMeetingInfo
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
+
+Información de la reunión que contiene el organizador de la reunión.
 
 ## <a name="properties"></a>Propiedades
 

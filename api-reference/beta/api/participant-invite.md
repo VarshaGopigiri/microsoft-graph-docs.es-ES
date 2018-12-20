@@ -2,12 +2,12 @@
 title: 'participante: invitar a'
 description: Invitar a participantes a la llamada activa.
 author: VinodRavichandran
-ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335283"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380530"
 ---
 # <a name="participant-invite"></a>participante: invitar a
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Type    |Descripción|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |participants|colección de [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Para invitar a los participantes.|
 |clientContext|String|El contexto de cliente.|
@@ -54,7 +54,7 @@ Los siguientes ejemplos se muestra cómo llamar a esta API.
 En el ejemplo siguiente se muestra la solicitud.
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite

@@ -1,12 +1,13 @@
 ---
 title: Obtener participante
 description: Recuperar las propiedades y relaciones de un objeto **participante** .
-ms.openlocfilehash: 4e97278b7ac93d784884c789f4da089e63e195ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 8a306c3397a10222692022999194fe12c9501f87
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083756"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380194"
 ---
 # <a name="get-participant"></a>Obtener participante
 
@@ -31,7 +32,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método es compatible con los [parámetros de consulta de OData](/graph/query-parameters) para ayudar a personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre          | Descripción               |
@@ -50,7 +51,7 @@ Si tiene éxito, este método devuelve una `200 OK` código de respuesta y un ob
 En el ejemplo siguiente se muestra la solicitud.
 <!-- {
   "blockType": "request",
-  "name": "get_participant"
+  "name": "get-participant"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}

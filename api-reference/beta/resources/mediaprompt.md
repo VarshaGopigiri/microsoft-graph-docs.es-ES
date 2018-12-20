@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso mediaPrompt
 description: El tipo de mediaPrompt.
-ms.openlocfilehash: 1a782d391110d35b07b551e44ebd3b931dbcadba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 4782772f463a613a759ad3b2b25cb05e7e160555
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089246"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380292"
 ---
 # <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
 

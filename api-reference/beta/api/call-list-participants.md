@@ -2,12 +2,12 @@
 title: Participantes de la lista
 description: Recuperar una lista de objetos de participantes en la llamada.
 author: VinodRavichandran
-ms.openlocfilehash: 0ffb48a862f7c0ba547521eb9e0e96f3c1d38dff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c22e276f7b7bb1ddd0a082bd54f0b5b8d93226c1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339123"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380446"
 ---
 # <a name="list-participants"></a>Participantes de la lista
 
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}/participants
 ```
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
+Este método es compatible con los [parámetros de consulta de OData](/graph/query-parameters) para ayudar a personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre          | Descripción               |
@@ -54,7 +54,7 @@ En el ejemplo siguiente se muestra la solicitud.
 
 <!-- {
   "blockType": "request",
-  "name": "get_participants"
+  "name": "get-participants"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants

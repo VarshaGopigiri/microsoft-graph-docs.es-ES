@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso onlineMeeting
 description: Captura información acerca de la reunión, incluida la dirección URL de la combinación, la lista de los asistentes y la descripción.
-ms.openlocfilehash: 73e45f7f2c04df469f2c2fb0faf1c8a0f8680a64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3a2b26ac212bd7a77428dab9f5618db8165de65b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084087"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380481"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
