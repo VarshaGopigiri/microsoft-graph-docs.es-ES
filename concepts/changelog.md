@@ -2,12 +2,12 @@
 title: Registro de cambios para Microsoft Graph
 description: Este registro de cambios abarca las modificaciones de Microsoft Graph, incluidas las API de Microsoft Graph del punto de conexión beta y v1.0.
 author: jthake-msft
-ms.openlocfilehash: 57bdb5da28edb2f3493e8f564316a19399bb9a70
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+ms.openlocfilehash: e4afc0f2b3a0302493f2d4d25f5c90777d5ffe73
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380600"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413200"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Registro de cambios de Microsoft Graph
 
@@ -356,7 +356,7 @@ Para obtener más información sobre problemas conocidos con las API de Microsof
 | **Tipo de cambio** | **Versión** | **Descripción**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adición        | Beta       | Se han agregado las API de puntuación segura a las [API para seguridad](/graph/api/resources/securescore-api-overview?view=graph-rest-beta), incluidos los siguientes recursos y operaciones:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (y entidades relacionadas)<br/>[Lista secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Lista secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Actualizar secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
-| Adición        | Beta        | Se introdujo el nuevo tipo complejo [secureScoreControlStateUpdate](/graph/api/resources/secureScoreControlStateUpdate/team?view=graph-rest-beta) |
+| Adición        | Beta        | Se introdujo el nuevo tipo complejo [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
 
 
 
