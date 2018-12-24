@@ -3,12 +3,12 @@ title: Obtener eventos de Outlook en un calendario compartido o delegado
 description: >
   En Outlook, los clientes pueden compartir un calendario con otros usuarios y permitirles ver o modificar los eventos de ese calendario. Los clientes también pueden nominar un delegado que actúe en su nombre, para recibir o responder a convocatorias de reunión y crear o cambiar elementos en el calendario.
 author: angelgolfer-ms
-ms.openlocfilehash: 8ceb6a49b971c5ad01f27b53c0f3cd3cf047865d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ef4de6cedeeb9a5688f250652eef0cd6cd5f5183
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346567"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413151"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>Obtener eventos de Outlook en un calendario compartido o delegado
 
@@ -18,6 +18,8 @@ En Outlook, los clientes pueden compartir un calendario con otros usuarios y per
 Mediante programación, Microsoft Graph admite obtener eventos en calendarios que se han compartido con otros usuarios, así como obtener calendarios compartidos. El soporte también se aplica a los calendarios que se han delegado.
 
 Por ejemplo, Garth ha compartido con John su calendario predeterminado y le ha concedido el acceso de lectura. Si John ha iniciado sesión en la aplicación y ha proporcionado permisos delegados (Calendars.Read.Shared o Calendars.ReadWrite.Shared), la aplicación podrá acceder al calendario predeterminado de Garth y a los eventos en dicho calendario, tal y como se describe a continuación.
+
+> **Nota** Los permisos de uso compartidos (Calendars.Read.Shared o Calendars.ReadWrite.Shared) le permiten leer o escribir eventos en una carpeta compartida o delegada. No admiten la [suscripción a notificaciones de cambios](webhooks.md) en elementos de dichas carpetas. Para configurar las suscripciones de notificación de cambios a los eventos en un calendario compartido o delegado, o cualquier otro calendario de recursos de un usuario en el espacio empresarial, use los permisos de aplicación Calendars.Read.
 
 ## <a name="get-an-event-in-the-shared-calendar"></a>Obtener un evento en el calendario compartido
 

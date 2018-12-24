@@ -1,25 +1,23 @@
 ---
 title: Obtener mensajes de Outlook en una carpeta compartida o delegada
-description: 'Estos temas también tienen sección similar: lista de eventos, obtener evento, obtener calendario, lista de contactos, obtener contactos, obtener la carpeta de contactos.'
+description: Outlook permite a los clientes compartir carpetas entre ellos y proporcionar acceso de lectura, creación, edición o eliminación a las carpetas individuales. Outlook también permite a un cliente delegar en otro usuario para actuar en nombre del cliente.
 author: angelgolfer-ms
-ms.openlocfilehash: d90fa5d37fd7a07e4069bd5bcc0eb46f0cae29a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: cdb2228c64647497674402825577942323c3d2ff
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320114"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413179"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obtener mensajes de Outlook en una carpeta compartida o delegada
-
-<!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.
-These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder.
--->
 
 Outlook permite a los clientes compartir carpetas entre ellos y proporcionar acceso de "lectura", "creación", "edición" o "eliminación" a las carpetas individuales. Outlook también permite a un cliente delegar en otro usuario en nombre del cliente y tener acceso a carpetas de correo específico o a todo buzón del cliente; esto también se denomina "delegación" en Outlook.
 
 Mediante programación, Microsoft Graph admite la recepción de mensajes en carpetas de correo que se han compartido con otros usuarios, así como obtener esas carpetas compartidas. El soporte también se aplica a los calendarios que se han delegado.
 
 Por ejemplo, Jorge ha compartido con Juan y se le ha dado acceso de lectura a la Bandeja de entrada de Jorge. Si Juan ha iniciado sesión en la aplicación y proporciona permisos delegados (Mail.Read.Shared o Mail.ReadWrite.Shared), la aplicación podrá acceder al correo de Jorge y a su Bandeja de entrada tal como se describe a continuación.
+
+> **Nota** Los permisos de uso compartidos (Mail.Read.Shared o Mail.ReadWrite.Shared) le permiten leer o escribir mensajes en una carpeta compartida o delegada. No admiten la [suscripción a notificaciones de cambios](webhooks.md) en elementos de dichas carpetas. Para configurar las suscripciones de notificación de cambios a los mensajes en una carpeta compartida o delegada, o cualquier otra carpeta de correo de un usuario en el espacio empresarial, use los permisos de aplicación Mail.Read.
 
 ## <a name="get-a-message-in-the-shared-folder"></a>Obtener un mensaje en la carpeta compartida
 
