@@ -67,7 +67,8 @@ Por ejemplo, la siguiente solicitud devolverá tanto la colección de **contacto
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
+
+  [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
 >**Nota:** `$count` no se admite con colecciones de recursos que se derivan de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como las colecciones de [usuarios](/graph/api/resources/user?view=graph-rest-1.0) o [grupos](/graph/api/resources/group?view=graph-rest-1.0).
@@ -84,7 +85,8 @@ En el ejemplo siguiente se obtiene la información de la unidad raíz junto con 
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
+
+  [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
 Con algunas colecciones de recursos, también se pueden especificar las propiedades que se van a devolver en los recursos expandidos si se agrega un parámetro `$select`. En el ejemplo siguiente se realiza la misma consulta que en el anterior, pero se usa una instrucción [`$select`](#select-parameter) para limitar las propiedades devueltas para los elementos secundarios expandidos a las propiedades **id** y **name**.
 
@@ -168,7 +170,8 @@ También puede ordenar por entidades de tipo complejo. La solicitud siguiente ob
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
+
+  [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 Para ordenar los resultados en orden ascendente o descendente, anexe `asc` o `desc` al nombre del campo, separado por un espacio. Por ejemplo, `?$orderby=name%20desc`.
 
@@ -178,7 +181,8 @@ Con algunas API se pueden ordenar los resultados por varias propiedades. Por eje
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
+
+  [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 Si especifica $filter, el servidor deducirá un criterio de ordenación para los resultados. Si usa tanto `$orderby` como `$filter`, porque el servidor siempre deduce un criterio de ordenación para los resultados de un `$filter`, las propiedades del `$filter` deben estar primero en `$orderby`, antes que cualquier otra propiedad y deben estar en el orden en el que aparecen en el parámetro `$filter`. 
 
@@ -188,7 +192,8 @@ En el siguiente ejemplo, se muestra una consulta filtrada por las propiedades **
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+
+  [Probar en el Probador de Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Nota:** Con recursos de Azure AD que se derivan de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como [user](/graph/api/resources/user?view=graph-rest-1.0) y [group](/graph/api/resources/group?view=graph-rest-1.0), no se puede combinar `$orderby` con expresiones`$filter`. 
 
