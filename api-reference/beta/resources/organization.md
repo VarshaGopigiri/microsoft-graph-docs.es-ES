@@ -1,22 +1,20 @@
 ---
 title: Tipo de recurso organization
 description: 'Representa a un inquilino de Azure Active Directory. '
-ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: 1d13d10c79d2dfc39ec187265533cb6ea17a683b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191147"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748573"
 ---
 # <a name="organization-resource-type"></a>Tipo de recurso organization
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
-Representa a un inquilino de Azure Active Directory. 
+Representa al inquilino de Azure Active Directory que el usuario o la aplicación ha iniciado sesión en. Sólo las operaciones de lectura y la actualización son compatibles con este recurso; crear y eliminar no son compatibles. Se hereda de [directoryObject](directoryobject.md).
 
 Este recurso le permite agregar sus propios datos a las propiedades personalizadas mediante [extensiones](/graph/extensibility-overview).
-
-Sólo las operaciones de lectura y la actualización son compatibles con los inquilinos; crear y eliminar no son compatibles. Se hereda de [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -34,12 +32,13 @@ Sólo las operaciones de lectura y la actualización son compatibles con los inq
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |assignedPlans|Colección [assignedPlan](assignedplan.md)|La colección de planes de servicio asociados con el inquilino. No admite valores NULL.            |
+| businessPhones                      | Colección String                                         | Número de teléfono de la organización. **Nota:** Aunque se trata de una colección de cadenas, solo se puede establecer un número para esta propiedad.                                                                                            |
 |ciudad|String| Nombre de la ciudad de la dirección de la organización. |
 |companyLastDirSyncTime|DateTimeOffset|La fecha y hora en que se ha sincronizado por última vez el inquilino con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |country|String| Nombre del país o región de la dirección de la organización. |
 |countryLetterCode|String| Abreviatura del país o región de la organización. |
 |createdDateTime|DateTimeOffset| Marca de hora de cuándo se creó la organización. El valor no puede modificarse y se rellena automáticamente cuando se crea la organización. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |
-|deletionTimestamp|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
+| deletedDateTime                    | DateTimeOffset                                                    | Representa la fecha y hora de cuando se ha eliminado el inquilino de Azure AD con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.                                                                                     |
 |dirSyncEnabled|Boolean|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado).|
 |displayName|String|El nombre para mostrar del inquilino.|
 |id|String|El identificador único del inquilino. Hereda de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
@@ -56,11 +55,13 @@ Sólo las operaciones de lectura y la actualización son compatibles con los inq
 |state|String| Nombre del estado de la dirección de la organización. |
 |street|String| Nombre de la calle de la dirección de la organización. |
 |technicalNotificationMails|Colección String| No admite valores NULL. |
-|telephoneNumber|String| Número de teléfono de la organización. |
 |verifiedDomains|Colección [VerifiedDomain](verifieddomain.md)|La colección de dominios asociados a este inquilino. No admite valores NULL.            |
 
 ## <a name="relationships"></a>Relaciones
-| extensiones | colección de [extensión](extension.md) | La colección de extensiones de open definidas para el recurso de la organización. Acepta valores NULL. |
+
+| Relación     | Tipo   |Descripción|
+|:---------------|:--------|:----------|
+|extensions|Colección de [extensiones](extension.md)|La colección de extensiones de open definidas para el recurso de la organización. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -82,10 +83,13 @@ Aquí tiene una representación JSON del recurso
   "city": "string",
   "country": "string",
   "countryLetterCode": "string",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
+  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -99,7 +103,6 @@ Aquí tiene una representación JSON del recurso
   "technicalNotificationMails": ["string"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
-
 ```
 
 ## <a name="see-also"></a>Vea también

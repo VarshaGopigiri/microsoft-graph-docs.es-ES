@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Carga de archivos reanudable
-ms.openlocfilehash: 09f76b4427df446b2f063827029473a11dba6341
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083748"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748440"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Cargar archivos de gran tamaño con una sesión de carga
 
@@ -365,7 +365,7 @@ If-Match: {etag or ctag}
 
 **Nota:** Puede usar los encabezados `@microsoft.graph.conflictBehavior` y `if-match` como se esperaba en esta llamada.
 
-### <a name="http-response"></a>Respuesta HTTP
+### <a name="response"></a>Respuesta
 
 Si el archivo puede confirmarse con los nuevos metadatos, se devolverá una respuesta `HTTP 201 Created` o `HTTP 200 OK` con los metadatos Item para el archivo cargado.
 

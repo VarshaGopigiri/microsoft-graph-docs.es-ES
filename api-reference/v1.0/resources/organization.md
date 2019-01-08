@@ -1,19 +1,18 @@
 ---
 title: Tipo de recurso organization
 description: " crear y eliminar no son compatibles. Se hereda de directoryObject."
-ms.openlocfilehash: 0059e14f5b007ff651870a48073d47ed3b4db108
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b98455c52d963d4e523253dc2a3b75137be9e854
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031545"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748335"
 ---
 # <a name="organization-resource-type"></a>Tipo de recurso organization
 
-Representa un inquilino de Azure Active Directory. Solo se admiten las operaciones de lectura y actualización en los inquilinos; la creación y eliminación no son compatibles. Se hereda de [directoryObject](directoryobject.md).
+Representa al inquilino de Azure Active Directory que el usuario o la aplicación ha iniciado sesión en. Sólo las operaciones de lectura y la actualización son compatibles con este recurso; crear y eliminar no son compatibles. Se hereda de [directoryObject](directoryobject.md).
 
 Este recurso le permite agregar sus propios datos a las propiedades personalizadas mediante [extensiones](/graph/extensibility-overview).
-
 
 ## <a name="methods"></a>Métodos
 
@@ -32,17 +31,18 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | Propiedad                             | Tipo                                                              | Descripción                                                                                                                                                                                                                                                                          |
 |:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | assignedPlans                        | Colección [assignedPlan](assignedplan.md)                        | La colección de planes de servicio asociados con el inquilino. No admite valores NULL.                                                                                                                                                                                                            |
+| businessPhones                      | Colección String                                         | Número de teléfono de la organización. Nota: Aunque se trata de una colección de cadenas, se puede establecer un solo número para esta propiedad.                                                                                            |
 | ciudad                                 | String                                                            | Nombre de la ciudad de la dirección de la organización.                                                                                                                                                                                                                                        |
-| companyLastDirSyncTime               | DateTimeOffset                                                    | La fecha y hora en que se ha sincronizado por última vez el inquilino con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'` |
 | country                              | String                                                            | Nombre del país o región de la dirección de la organización.                                                                                                                                                                                                                              |
 | countryLetterCode                    | String                                                            | Abreviatura del país o región de la organización.                                                                                                                                                                                                                                     |
-| deletionTimestamp                    | DateTimeOffset                                                    | El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`                                                                                     |
-| dirSyncEnabled                       | Boolean                                                           | **true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado).                        |
+|createdDateTime|DateTimeOffset| Marca de hora de cuándo se creó la organización. El valor no puede modificarse y se rellena automáticamente cuando se crea la organización. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |
+| deletedDateTime                    | DateTimeOffset                                                    | Representa la fecha y hora de cuando se ha eliminado el inquilino de Azure AD con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.                                                                                     |
 | displayName                          | String                                                            | El nombre para mostrar del inquilino.                                                                                                                                                                                                                                                     |
 | id                                   | String                                                            | El identificador único del inquilino. Hereda de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.                                                                                                                                                            |
 |isMultipleDataLocationsForServicesEnabled|Booleano|**true** si la organización está habilitado; Multi-Geo **false** si la organización no está habilitado para Multi-ubican; **null** (valor predeterminado). Solo lectura. Para obtener más información, vea [OneDrive en línea Multi-ubican](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 | marketingNotificationEmails          | Colección String                                                 | No admite valores NULL.                                                                                                                                                                                                                                                                        |
-| objectType                           | String                                                            | Una cadena que identifica el tipo de objeto. Para los inquilinos, el valor es siempre "Company".                                                                                                                                                                                                 |
+| onPremisesLastSyncDateTime               | DateTimeOffset                                                    | La fecha y hora en que el inquilino se ha sincronizado por última vez con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |
+| onPremisesSyncEnabled                       | Booleano                                                           | **true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado).                        |
 | postalCode                           | String                                                            | Código postal de la dirección de la organización.                                                                                                                                                                                                                                      |
 | preferredLanguage                    | String                                                            | El idioma preferido de la organización. Debe seguir el código ISO 639-1; por ejemplo, "es".                                                                                                                                                                                         |
 | privacyProfile                       | [privacyProfile](privacyprofile.md)                               | Perfil de privacidad de una organización.                                                                                                                                                                                                                                              |
@@ -52,7 +52,6 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | state                                | String                                                            | Nombre del estado de la dirección de la organización.                                                                                                                                                                                                                                       |
 | street                               | String                                                            | Nombre de la calle de la dirección de la organización.                                                                                                                                                                                                                                          |
 | technicalNotificationMails           | Colección String                                                 | No admite valores NULL.                                                                                                                                                                                                                                                                        |
-| telephoneNumber                      | String                                                            | Número de teléfono de la organización.                                                                                                                                                                                                                                                |
 | verifiedDomains                      | Colección [VerifiedDomain](verifieddomain.md)                    | La colección de dominios asociados a este inquilino. No admite valores NULL.                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relaciones
@@ -62,7 +61,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 
 ## <a name="json-representation"></a>Representación JSON
 
-Aquí tiene una representación JSON del recurso
+Aquí tiene una representación JSON del recurso.
 
 <!--{
   "blockType": "resource",
@@ -80,16 +79,14 @@ Aquí tiene una representación JSON del recurso
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["string"],
   "city": "string",
-  "companyLastDirSyncTime": "2018-05-12T13:09:20.111Z",
   "country": "string",
   "countryLetterCode": "string",
-  "deletionTimestamp": "2018-05-12T15:37:52.763Z",
-  "dirSyncEnabled": true,
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
-  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -101,10 +98,8 @@ Aquí tiene una representación JSON del recurso
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
-  "telephoneNumber": "555-555-6568",
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
-
 ```
 
 ## <a name="see-also"></a>Vea también

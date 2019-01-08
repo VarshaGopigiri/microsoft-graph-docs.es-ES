@@ -2,24 +2,30 @@
 title: tipo de recurso de evento
 description: Un evento de un calendario.
 author: angelgolfer-ms
-ms.openlocfilehash: 45b5131b14e9bf50c8dc0bc3db869b706a3068ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340652"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748489"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
-Un evento de un calendario.
+Un evento en un calendario del [usuario](user.md) o del calendario predeterminado de un [grupo](group.md)de Office 365.
 
 Este recurso admite:
 
 - Adición de sus propios datos a las propiedades personalizadas como [extensiones](/graph/extensibility-overview).
 - Suscribirse a [las notificaciones de cambios](/graph/webhooks).
 - que use una [consulta delta](/graph/delta-query-overview) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/event-delta.md).
+
+> **Nota:** Existen algunas pequeñas diferencias en la forma en que puede interactuar con los calendarios de usuario, grupo y sus eventos:
+
+ - Puede organizar sólo los calendarios de usuario en un [calendarGroup](calendargroup.md).
+ - Outlook acepta automáticamente todas las convocatorias de reunión en nombre de grupos. Para los calendarios de _usuario_ sólo puede [Aceptar](../api/event-accept.md), [Aceptar provisionalmente](../api/event-tentativelyaccept.md)o [Rechazar](../api/event-decline.md) las convocatorias de reunión.
+  - Outlook no admite avisos para eventos de grupo. Para los calendarios de _usuario_ sólo puede [Posponer](../api/event-snoozereminder.md) o [Descartar](../api/event-dismissreminder.md) un [aviso](reminder.md) .
 
 ## <a name="json-representation"></a>Representación JSON
 
@@ -142,13 +148,13 @@ Aquí tiene una representación JSON del recurso
 |[Actualizar](../api/event-update.md) | [evento](event.md)   |Actualiza el mensaje de evento. |
 |[Eliminar](../api/event-delete.md) | Ninguno |Elimina el objeto de evento. |
 |[cancel](../api/event-cancel.md) | Ninguno | Enviar mensaje de cancelación desde el organizador a todos los asistentes y cancelar la reunión especificada. |
-|[Aceptar](../api/event-accept.md)|Ninguno|Acepta el evento especificado.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|Ninguno|Acepta provisionalmente el evento especificado.|
-|[Rechazar](../api/event-decline.md)|Ninguno|Rechaza la invitación al evento especificado.|
+|[Aceptar](../api/event-accept.md)|Ninguno|Acepte el evento especificado en un calendario del usuario.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|Ninguno|Aceptar provisionalmente el evento especificado en un calendario del usuario.|
+|[Rechazar](../api/event-decline.md)|Ninguno|Rechazar la invitación para el evento especificado en un calendario del usuario.|
 |[forward](../api/event-forward.md)|Ninguno|Permite el organizador o el Asistente de un evento de reunión reenviar la convocatoria de reunión a un destinatario nuevo.|
 |[delta](../api/event-delta.md)|Colección [event](event.md)|Obtenga un conjunto de eventos que se han agregado, eliminado o actualizado en una **calendarView** (un intervalo de eventos) del calendario principal del usuario.|
-|[dismissReminder](../api/event-dismissreminder.md)|Ninguno|Descarta el aviso para el evento especificado.|
-|[snoozeReminder](../api/event-snoozereminder.md)|Ninguno|Pospone el aviso para el evento especificado.|
+|[dismissReminder](../api/event-dismissreminder.md)|Ninguno|Descartar el aviso para el evento especificado en un calendario del usuario.|
+|[snoozeReminder](../api/event-snoozereminder.md)|Ninguno|Posponer un aviso para el evento especificado en un calendario de usuario hasta una nueva hora.|
 |[Enumerar instancias](../api/event-list-instances.md) |Colección [event](event.md)| Obtiene una colección de objetos de evento.|
 |**Datos adjuntos**| | |
 |[Enumerar datos adjuntos](../api/event-list-attachments.md) |Colección [attachment](attachment.md)| Obtener todos los datos adjuntos en un evento.|

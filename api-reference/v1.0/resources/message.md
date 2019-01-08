@@ -2,12 +2,12 @@
 title: tipo de recurso de mensaje
 description: Un mensaje en un mailFolder.
 author: angelgolfer-ms
-ms.openlocfilehash: a77a50835dcba41555fa646c94c66d05b15e3e48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310293"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748580"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensaje
 
@@ -73,7 +73,7 @@ Este recurso admite:
 |internetMessageHeaders | Colección [internetMessageHeader](internetmessageheader.md) | Una colección de encabezados de mensaje definido por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). El conjunto incluye los encabezados de mensaje que indica la ruta de acceso de red realizada por un mensaje desde el remitente al destinatario. También puede contener encabezados de mensaje personalizado que contienen datos de aplicación para el mensaje. |
 |internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
-|isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
+|isDraft|Booleano|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora de la última modificación del mensaje.|
@@ -92,9 +92,9 @@ Este recurso admite:
 | Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |attachments|Colección [attachment](attachment.md)|Los datos adjuntos [fileAttachment](fileattachment.md) y [itemAttachment](itemattachment.md) del mensaje.|
-|extensions|Colección [Extension](extension.md)|La colección de extensiones abiertas definidas para el mensaje. Solo lectura. Admite valores NULL.|
-|multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el mensaje. Solo lectura. Admite valores NULL.|
-|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el mensaje. Solo lectura. Admite valores NULL.|
+|extensions|Colección de [extensiones](extension.md)|La colección de extensiones de open definidas para el mensaje. Admite valores NULL.|
+|multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidos para el mensaje. Admite valores NULL.|
+|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definido para el mensaje. Admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
 

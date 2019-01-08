@@ -2,18 +2,18 @@
 title: 'user: reminderView'
 description: 'Devuelve una lista de los avisos de calendario entre las horas de inicio y finalización especificadas. '
 author: dkershaw10
-ms.openlocfilehash: 875e71e03cf3d43e3f7fadabfea65cecd1e3761c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9f71617d1775579e913df814a2e9aecd61ba7402
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352552"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748244"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
-Devuelve una lista de los avisos de calendario entre las horas de inicio y finalización especificadas. 
+Devolver una lista de los avisos de eventos en un calendario de usuario dentro de la especificada tiempos inicial y final. 
 
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
@@ -33,7 +33,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>Parámetros de función
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de función con valores.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |startDateTime|String|Fecha y hora de inicio del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|Fecha y hora de finalización del evento para el que se configura el aviso. El valor se representa en formato ISO 8601, por ejemplo, "2015-11-08T20:00:00.0000000".|

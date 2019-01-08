@@ -1,12 +1,12 @@
 ---
 title: Lista grupo transitivas (miembros de)
 description: Obtener una lista de los miembros del grupo. Un grupo puede tener los usuarios, contactos, dispositivos, entidades de seguridad de servicio y otros grupos como miembros. Esta operación es transitiva y también devolverá una lista plana de todos los miembros anidados.
-ms.openlocfilehash: a3cdc0048db3b3d1aa90b5d3426d22439a18b298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086532"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748559"
 ---
 # <a name="list-group-transitive-members"></a>Lista grupo transitivas (miembros de)
 
@@ -63,7 +63,7 @@ Aquí tiene un ejemplo de la solicitud.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
 ### <a name="response"></a>Respuesta

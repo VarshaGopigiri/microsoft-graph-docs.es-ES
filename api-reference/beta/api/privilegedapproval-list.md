@@ -1,12 +1,12 @@
 ---
 title: Lista privilegedApproval
 description: Recuperar una lista de objetos de privilegedapproval.
-ms.openlocfilehash: 69e558a734f86dd72b35e61d9f8ceab52b9f981e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 35b3e2cf6b4034731c8ddf9d1af41e129acbfe3f
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089587"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748174"
 ---
 # <a name="list-privilegedapproval"></a>Lista privilegedApproval
 
@@ -21,7 +21,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    |
+|Delegado (cuenta profesional o educativa) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | No admitida. |
 

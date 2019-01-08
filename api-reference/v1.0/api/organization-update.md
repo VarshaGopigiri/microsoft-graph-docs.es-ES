@@ -1,16 +1,17 @@
 ---
 title: Actualizar organización
 description: Actualice las propiedades de la organización autenticada actualmente.
-ms.openlocfilehash: ac07f3ded31f8d6c7169d24208ed7e8cf967e07a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031775"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748531"
 ---
 # <a name="update-organization"></a>Actualizar organización
 
-Actualice las propiedades de la organización autenticada actualmente.
+Actualice las propiedades de la organización autenticada actualmente. En este caso, `organization` se define como una colección de exactamente un registro, y por lo que se debe especificar su **identificador** en la solicitud.  El **identificador** es también conocida como **tenantId** de la organización.
+
 
 ## <a name="permissions"></a>Permisos
 
@@ -27,7 +28,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization
+PATCH /organization/{id}
 
 ```
 
@@ -38,6 +39,7 @@ PATCH /organization
 | Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
@@ -62,7 +64,7 @@ Si se ejecuta correctamente, este método devuelve un código de respuesta `204 
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
 Content-length: 411
 

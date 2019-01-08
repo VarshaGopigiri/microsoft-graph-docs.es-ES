@@ -2,16 +2,16 @@
 title: tipo de recurso de evento
 description: Un evento de un calendario.
 author: angelgolfer-ms
-ms.openlocfilehash: 2caa1cb51da5f9d9ae8808b574e2787fbb63da46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 3bb597f8e8e157f0a75b2538b233ee57934827c5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356598"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748517"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
-Un evento de un calendario.
+Un evento en un calendario del [usuario](user.md) o del calendario predeterminado de un [grupo](group.md)de Office 365.
 
 Este recurso admite:
 
@@ -19,6 +19,11 @@ Este recurso admite:
 - Suscribirse a [las notificaciones de cambios](/graph/webhooks).
 - que use una [consulta delta](/graph/delta-query-overview) para realizar un seguimiento de los aumentos incrementales, las eliminaciones y las actualizaciones proporcionando una función [delta](../api/event-delta.md).
 
+> **Nota:** Existen algunas pequeñas diferencias en la forma en que puede interactuar con los calendarios de usuario, grupo y sus eventos:
+
+ - Puede organizar sólo los calendarios de usuario en un [calendarGroup](calendargroup.md).
+ - Outlook acepta automáticamente todas las convocatorias de reunión en nombre de grupos. Para los calendarios de _usuario_ sólo puede [Aceptar](../api/event-accept.md), [Aceptar provisionalmente](../api/event-tentativelyaccept.md)o [Rechazar](../api/event-decline.md) las convocatorias de reunión.
+  - Outlook no admite avisos para eventos de grupo. Para los calendarios de _usuario_ sólo puede [Posponer](../api/event-snoozereminder.md) o [Descartar](../api/event-dismissreminder.md) un [aviso](reminder.md) .
 
 ## <a name="methods"></a>Métodos
 
@@ -29,12 +34,12 @@ Este recurso admite:
 |[Obtener evento](../api/event-get.md) | [evento](event.md) |Lee las propiedades y las relaciones del objeto de evento.|
 |[Actualizar](../api/event-update.md) | [evento](event.md) |Actualiza el mensaje de evento. |
 |[Eliminar](../api/event-delete.md) | Ninguno |Elimina el objeto de evento. |
-|[Aceptar](../api/event-accept.md)|Ninguno|Acepta el evento especificado.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|Ninguno|Acepta provisionalmente el evento especificado.|
-|[Rechazar](../api/event-decline.md)|Ninguno|Rechaza la invitación al evento especificado.|
+|[Aceptar](../api/event-accept.md)|Ninguno|Acepte el evento especificado en un calendario del usuario.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|Ninguno|Aceptar provisionalmente el evento especificado en un calendario del usuario.|
+|[Rechazar](../api/event-decline.md)|Ninguno|Rechazar la invitación para el evento especificado en un calendario del usuario.|
 |[delta](../api/event-delta.md)|Colección [event](event.md)|Obtenga un conjunto de eventos que se han agregado, eliminado o actualizado en una **calendarView** (un intervalo de eventos) del calendario principal del usuario.|
-|[dismissReminder](../api/event-dismissreminder.md)|Ninguno|Descarta el aviso para el evento especificado.|
-|[snoozeReminder](../api/event-snoozereminder.md)|Ninguno|Pospone el aviso para el evento especificado.|
+|[dismissReminder](../api/event-dismissreminder.md)|Ninguno|Descartar el aviso para el evento especificado en un calendario del usuario.|
+|[snoozeReminder](../api/event-snoozereminder.md)|Ninguno|Posponer un aviso para el evento especificado en un calendario de usuario hasta una nueva hora.|
 |[Enumerar instancias](../api/event-list-instances.md) |Colección [event](event.md)| Obtiene las instancias (repeticiones) de un evento durante un intervalo de tiempo especificado. Si el evento es de tipo `SeriesMaster`, devuelve las repeticiones y excepciones del evento en el intervalo de tiempo especificado.|
 |**Datos adjuntos**| | |
 |[Enumerar datos adjuntos](../api/event-list-attachments.md) |Colección [attachment](attachment.md)| Obtener todos los datos adjuntos en un evento.|
@@ -59,7 +64,7 @@ Este recurso admite:
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |finalización|[dateTimeTimeZone](datetimetimezone.md)|La fecha, la hora y la zona horaria en que finaliza el evento.|
 |hasAttachments|Booleano|Se establece como true si el evento tiene datos adjuntos.|
-|iCalUId|Cadena|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes. Solo lectura.|
+|iCalUId|String|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes. Solo lectura.|
 |id|String| Solo lectura.|
 |importance|importance|Importancia del evento. Los valores posibles son: `low`, `normal`, `high`.|
 |isAllDay|Booleano|Se establece como true si el evento dura todo el día.|

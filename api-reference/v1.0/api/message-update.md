@@ -2,16 +2,16 @@
 title: Actualizar mensaje
 description: Actualice las propiedades del objeto de mensaje.
 author: angelgolfer-ms
-ms.openlocfilehash: b8f39dc9648203f86749ba06b88bf2f74b79d88a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c15d4ac183b41b2ab927fc39e175df80626f348e
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337544"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748510"
 ---
 # <a name="update-message"></a>Actualizar mensaje
 
-Actualice las propiedades del objeto de mensaje.
+Actualizar las propiedades de un objeto de mensaje.
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
@@ -30,30 +30,32 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 ## <a name="request-body"></a>Cuerpo de la solicitud
-En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado. Son propiedades Writable/Updatable
+En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado. Las siguientes propiedades se pueden actualizar.
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|Los destinatarios de CCO del mensaje. Actualizable sólo si isDraft = true.|
+|bccRecipients|Recipient|Los destinatarios de CCO del mensaje. |
+|body|ItemBody|El cuerpo del mensaje. Actualizable sólo si isDraft = true.|
 |categories|Colección String|Las categorías asociadas al mensaje.|
-|ccRecipients|Colección Recipient|Los destinatarios de Cc del mensaje. Actualizable sólo si isDraft = true.|
-|from|Recipient|El propietario del buzón y el remitente del mensaje. Actualizable sólo si isDraft = true. Debe corresponder con el buzón real que se usa.|
+|ccRecipients|Colección Recipient|Los destinatarios de Cc del mensaje. |
+|from|Recipient|El propietario del buzón y el remitente del mensaje. Debe corresponder con el buzón real que se usa.|
 |importance|String|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | La clasificación del mensaje para el usuario, basándose en la relevancia inferida o importancia, o en un reemplazo explícito. Los valores posibles son: `focused` o `other`. |
 |internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Actualizable sólo si isDraft = true.|
-|isRead|Booleano|Indica si se ha leído el mensaje.|
-|replyTo|Colección Recipient|Las direcciones de correo electrónico que se utilizan al responder. Actualizable sólo si isDraft = true.|
-|sender|Recipient|La cuenta que se utiliza realmente para generar el mensaje. Actualizable sólo si isDraft = true y cuándo enviar un mensaje desde un [buzón compartido](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)o enviar un mensaje como un [delegado](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). En cualquier caso, el valor debe corresponder al buzón real que se usa.|
-|toRecipients|Colección Recipient|Los destinatarios para el mensaje. Actualizable sólo si isDraft = true.|
-|body|ItemBody|El cuerpo del mensaje. Actualizable sólo si isDraft = true.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
+|isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
+|multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidos para el mensaje. Admite valores NULL.|
+|replyTo|Colección Recipient|Las direcciones de correo electrónico que se utilizan al responder. Actualizable sólo si isDraft = true.|
+|sender|Recipient|La cuenta que se utiliza realmente para generar el mensaje. Actualizable cuando se envía un mensaje desde un [buzón compartido](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)o enviar un mensaje como un [delegado](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). En cualquier caso, el valor debe corresponder al buzón real que se usa.|
+|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definido para el mensaje. Admite valores NULL.|
 |subject|String|El asunto del mensaje. Actualizable sólo si isDraft = true.|
+|toRecipients|Colección Recipient|Los destinatarios para el mensaje.|
 
 Dado que el recurso **message** admite [extensiones](/graph/extensibility-overview), puede utilizar la operación `PATCH` para agregar, actualizar o eliminar sus propios datos específicos de la aplicación en las propiedades personalizadas de una extensión en una instancia **message** existente.
 

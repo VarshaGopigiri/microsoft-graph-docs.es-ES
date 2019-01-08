@@ -3,12 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: Obtener estadísticas de actividad de elemento por intervalo
-ms.openlocfilehash: 0b5a9782528e75d4d50734dedc49460d30252410
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3b3c7139678715a11365f2551c318dcf66e68e7a
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086082"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748195"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obtener estadísticas de actividad de elemento por intervalo
 
@@ -44,7 +44,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Nombre           | Valor              | Descripción
+| Parámetro      | Tipo               | Descripción
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | cadena (marca de tiempo) | La hora de inicio a través del cual a las actividades de agregado.
 | endDateTime    | cadena (marca de tiempo) | La hora de finalización a través del cual a las actividades de agregado.

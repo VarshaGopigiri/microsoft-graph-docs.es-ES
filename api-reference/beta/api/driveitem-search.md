@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Buscar archivos
-ms.openlocfilehash: d829df35d9cd766c2273d694148671802ca58bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8dc02d1d1469865fc952fb6394dba17e0386f510
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084033"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748419"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Buscar objetos DriveItem dentro de una unidad
 
@@ -45,9 +45,9 @@ Este método admite los [parámetros de consulta OData](/graph/query-parameters)
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Nombre | Valor  | Descripción                                                                                                                          |
+| Parámetro | Tipo  | Descripción                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | El texto de la consulta usado para buscar elementos. Los valores pueden coincidir en varios campos, como el nombre de archivo, los metadatos y el contenido de los archivos. |
+| q  | string | El texto de la consulta usado para buscar elementos. Los valores pueden coincidir en varios campos, como el nombre de archivo, los metadatos y el contenido de los archivos. |
 
 ## <a name="example"></a>Ejemplo
 

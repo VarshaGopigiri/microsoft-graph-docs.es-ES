@@ -1,12 +1,12 @@
 ---
 title: Obtener privilegedApproval
 description: Recuperar las propiedades y relaciones del objeto privilegedapproval.
-ms.openlocfilehash: 77db18f46bbdfec6a5a9a62e4e481facaab6cb8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9fb7aee3184413aa51dc553e5a2bcd694076d579
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089145"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748202"
 ---
 # <a name="get-privilegedapproval"></a>Obtener privilegedApproval
 
@@ -19,7 +19,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    |
+|Delegado (cuenta profesional o educativa) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All   |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | No admitida. |
 

@@ -1,12 +1,12 @@
 ---
 title: Actualizar privilegedapproval
 description: Actualizar las propiedades del objeto privilegedapproval.
-ms.openlocfilehash: 566351ba89d0173718320640e6fa45b0650aaf0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084331"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748356"
 ---
 # <a name="update-privilegedapproval"></a>Actualizar privilegedapproval
 
@@ -19,7 +19,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (cuenta profesional o educativa) | Directory.AccessAsUser.All    |
+|Delegado (cuenta profesional o educativa) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |
 |Aplicación | No admitida. |
 
@@ -50,7 +50,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 ## <a name="response"></a>Respuesta
 
-Si tiene éxito, este método devuelve una `200 OK` código de respuesta y actualizada [privilegedApproval](../resources/privilegedapproval.md) objeto en el cuerpo de la respuesta.
+Si tiene éxito, este método devuelve una `204 No Content` código de respuesta
 
 Tenga en cuenta que el inquilino debe estar registrado en PIM. De lo contrario, se devolverá el código de estado HTTP 403 Prohibido.
 
@@ -62,16 +62,13 @@ Aquí tiene un ejemplo de la solicitud.
   "name": "update_privilegedapproval"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedApproval/<id>
+PATCH https://graph.microsoft.com/beta/privilegedApproval{request-id}
 Content-type: application/json
 Content-length: 180
 
 {
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
   "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
+  "approverReason": "approverReason-value"
 }
 ```
 ##### <a name="response"></a>Respuesta
@@ -82,18 +79,7 @@ Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta q
   "@odata.type": "microsoft.graph.privilegedApproval"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 200
-
-{
-  "id": "id-value",
-  "userId": "userId-value",
-  "roleId": "roleId-value",
-  "approvalType": "approvalType-value",
-  "approvalState": "approvalState-value",
-  "approvalDuration": "datetime-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -2,12 +2,12 @@
 title: Eliminar categoría de Outlook
 description: Eliminar el objeto outlookCategory especificado.
 author: angelgolfer-ms
-ms.openlocfilehash: ded640425c30352cc83d4adaa02c76ed2bcfa170
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: b82125c33c7b11274bfee80d9d1949ea776745c4
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301040"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748496"
 ---
 # <a name="delete-outlook-category"></a>Eliminar categoría de Outlook
 
@@ -29,8 +29,6 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 DELETE /me/outlook/masterCategories/{id}
 DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
-Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|

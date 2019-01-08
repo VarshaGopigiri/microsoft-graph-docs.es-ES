@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obtenga carpetas especiales.
-ms.openlocfilehash: cbf7e3c3f5add9fd147ef8a8e8add7496ddbed7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8b8b1186682421a5ab564272fd473cb72819202d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088133"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748503"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtener una carpeta especial por su nombre
 
@@ -57,7 +57,7 @@ Los siguientes nombres de carpetas especiales están disponibles en OneDrive y O
 
 Este método admite los [parámetros de consulta OData](/graph/query-parameters) `$expand` y `$select` para personalizar la respuesta.
 
-## <a name="http-response"></a>Respuesta HTTP
+## <a name="response"></a>Respuesta
 
 Este método devuelve un código de respuesta `200 OK` y un objeto [driveItem](../resources/driveitem.md) en el cuerpo de la respuesta.
 
@@ -91,7 +91,7 @@ Para solicitar los elementos secundarios de una carpeta especial, puede solicita
 GET /me/drive/special/{name}/children
 ```
 
-### <a name="http-response"></a>Respuesta HTTP
+### <a name="response"></a>Respuesta
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 

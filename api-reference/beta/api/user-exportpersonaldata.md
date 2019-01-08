@@ -1,12 +1,12 @@
 ---
 title: 'usuario: exportPersonalData'
 description: Envía una solicitud de operación de la directiva de datos, realizada por un administrador de la compañía para exportar datos de un usuario organizativa.
-ms.openlocfilehash: 27a299a4cfa6ccc3016a1f706b452840aa5dc396
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ffde9af132fbb15706fe54af8a6b3aaeba07d12b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329130"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748272"
 ---
 # <a name="user-exportpersonaldata"></a>usuario: exportPersonalData
 
@@ -21,7 +21,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Delegado (cuenta personal de Microsoft) |  No aplicable  |
 |Aplicación | User.Export.All y User.Read.All |
 
->Nota: Exportación sólo puede realizarse por un administrador de la compañía cuando se usa el permiso delegado.
+>**Nota:** Cuando se usa el permiso delegado exportación sólo puede realizarse por un administrador de la compañía.
 
 ## <a name="http-request"></a>Solicitud HTTP
 <!-- { "blockType": "ignored" } -->
@@ -30,19 +30,25 @@ POST /users/<id>/exportPersonalData
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Descripción|
+| Nombre       | Descripción |
 |:---------------|:----------|
 | Autorización  | Bearer {token}|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción |
 |:---------------|:--------|:----------|
 |storageLocation|String|Esto es una dirección URL de firma (SAS) de acceso compartido a una cuenta de almacenamiento de Azure, para que se deben exportar los datos.|
 
 ## <a name="response"></a>Respuesta
-Si se ejecuta correctamente, este método devuelve el código de respuesta `200, OK`. No devuelve nada en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted`. No devuelve nada en el cuerpo de la respuesta. La respuesta contiene los siguientes encabezados.
+
+| Nombre       | Descripción |
+|:---------------|:----------|
+| Location  | Dirección URL para comprobar el estado de la solicitud. |
+| Retry-After  | Período de tiempo en segundos. Maker solicitud debe esperar a que esto durante cuánto tiempo después de enviar una solicitud para comprobar el estado. |
+
 
 ## <a name="example"></a>Ejemplo
 ##### <a name="request"></a>Solicitud
@@ -59,15 +65,22 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-
 ##### <a name="response"></a>Respuesta
+
+```
+{
+  Location: https://graph.microsoft.com/beta/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
+  Retry-After: 60
+}
+```
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

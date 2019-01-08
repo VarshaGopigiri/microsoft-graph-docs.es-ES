@@ -2,12 +2,12 @@
 title: tipo de recurso de mensaje
 description: Un mensaje en una carpeta de buzón de correo.
 author: angelgolfer-ms
-ms.openlocfilehash: e0c1b539baa16c60904c5c9a726bac6cb5c7d557
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d6bef72e1ac7634bee7f78a645828f0f73f9d09e
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353672"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748483"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensaje
 
@@ -104,7 +104,7 @@ Aquí tiene una representación JSON del recurso
 |internetMessageHeaders | Colección [internetMessageHeader](internetmessageheader.md) | Una colección de encabezados de mensaje definido por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). El conjunto incluye los encabezados de mensaje que indica la ruta de acceso de red realizada por un mensaje desde el remitente al destinatario. También puede contener encabezados de mensaje personalizado que contienen datos de aplicación para el mensaje. |
 |internetMessageId | String | El identificador de mensaje en el formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Actualizable sólo si **isDraft** es true.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
-|isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
+|isDraft|Booleano|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora de la última modificación del mensaje.|
@@ -118,7 +118,7 @@ Aquí tiene una representación JSON del recurso
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del mensaje.|
 |uniqueBody|[itemBody](itembody.md)|La parte del cuerpo del mensaje que es única del mensaje actual. El elemento **uniqueBody** no se devuelve de manera predeterminada, pero puede recuperarse para cualquier mensaje con la consulta `?$select=uniqueBody`. Puede mostrarse en formato de texto o HTML.|
 |unsubscribeData|String|Las entradas válidas se analizan desde el encabezado cancelar su suscripción de lista.  Se trata de los datos para el comando de correo en el encabezado de cancelar su suscripción de lista si la propiedad UnsubscribeEnabled es true.|
-|unsubscribeEnabled|Boolean|Indica si el mensaje está habilitado para cancelar la suscripción.  Su valueTrue si la cancelación de suscripción de lista de encabezado se ajusta al rfc 2369.|
+|unsubscribeEnabled|Booleano|Indica si el mensaje está habilitado para cancelar la suscripción.  Su valueTrue si la cancelación de suscripción de lista de encabezado se ajusta al rfc 2369.|
 |webLink|String|La dirección URL para abrir el mensaje en Outlook Web App.<br><br>Puede anexar un argumento ispopout al final de la dirección URL para cambiar cómo se muestra el mensaje. Si ispopout no está presente o se establece en 1, se muestra el mensaje en una ventana emergente. Si ispopout se establece en 0, el navegador mostrará el mensaje en el panel de revisión de Outlook Web App.<br><br>El mensaje se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br><br>Se puede acceder a esta dirección URL desde un iFrame.|
 
 
@@ -128,8 +128,8 @@ Aquí tiene una representación JSON del recurso
 |attachments|Colección [attachment](attachment.md)|Los datos adjuntos [fileAttachment](fileattachment.md) y [itemAttachment](itemattachment.md) del mensaje.|
 |extensions|Colección [Extension](extension.md)| La colección de extensiones de open definidas para el mensaje. Admite valores NULL.|
 |menciones|[mencione](mention.md) colección | Una colección de menciones en el mensaje, ordenadas por la **createdDateTime** desde la más reciente a la más antigua. De forma predeterminada, un `GET` /mensajes no devuelve esta propiedad a menos que aplique `$expand` en la propiedad.|
-|multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidas para el mensaje. Solo lectura. Admite valores NULL.|
-|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definidas para el mensaje. Solo lectura. Admite valores NULL.|
+|multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| La colección de propiedades extendidas de varios valores definidos para el mensaje. Admite valores NULL.|
+|singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definido para el mensaje. Admite valores NULL.|
 
 ## <a name="methods"></a>Métodos
 

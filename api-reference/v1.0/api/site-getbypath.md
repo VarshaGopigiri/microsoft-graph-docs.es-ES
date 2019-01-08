@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obtener un sitio de SharePoint mediante la ruta de acceso
-ms.openlocfilehash: 8a99a631c05e2587b6ab7cafe8dd568403759637
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 5cac58e32df30435eb927a466ead6f0b5d9c9468
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032626"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748524"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obtener un recurso de sitio mediante la ruta de acceso
 
@@ -46,7 +46,7 @@ Para obtener acceso al sitio de SharePoint de raíz con una ruta relativa:
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## <a name="http-response"></a>Respuesta HTTP
+## <a name="response"></a>Respuesta
 
 Este método devuelve un recurso [site][] para el sitio al que se hace referencia mediante el identificador único.
 
