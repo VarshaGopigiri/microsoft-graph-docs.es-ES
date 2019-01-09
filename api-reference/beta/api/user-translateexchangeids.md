@@ -2,12 +2,12 @@
 title: 'usuario: translateExchangeIds'
 description: Traducir identificadores de recursos relacionados con Outlook entre formatos.
 author: dkershaw10
-ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360581"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771824"
 ---
 # <a name="user-translateexchangeids"></a>usuario: translateExchangeIds
 
@@ -42,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-| Parámetro | Type | Descripción |
+| Parámetro | Tipo | Descripción |
 |:----------|:-----|:------------|
 | inputIds | Colección de Edm.String | Una colección de identificadores para convertir. Todos los identificadores de la colección deben tener el mismo tipo de identificador de origen y deben ser el de los elementos en el mismo buzón. Tamaño máximo de esta colección es 1000 cadenas. |
 | sourceIdType | exchangeIdFormat | El tipo de identificador de los identificadores en el `InputIds` parámetro. |
@@ -54,9 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | propiedad entryId | El formato de identificador de entrada binario utilizado por los clientes MAPI. |
 | ewsId | El formato de identificador utilizado por los clientes de servicios Web de Exchange. |
-| immutableEntryId | El formato de identificador inmutable compatible con MAPI. |
+| immutableEntryId | El formato binario del identificador de inmutable compatible con MAPI. |
 | restId | El formato de identificador predeterminado utilizado por Microsoft Graph. |
 | restImmutableEntryId | El formato de identificador inmutable utilizado por Microsoft Graph. |
+
+Los formatos binarios (`entryId` y `immutableEntryId`) están con codificación base64 de seguridad de URL. Dirección URL safeness se implementa mediante la modificación de la codificación base64 de los datos binarios de la siguiente manera:
+
+- Reemplace `+` con`-`
+- Reemplace `/` con`_`
+- Quitar los caracteres de relleno final (`=`)
+- Agregar un número entero hasta el final de la cadena que indica el número de caracteres de relleno se encontraba en el original (`0`, `1`, o `2`)
 
 ## <a name="response"></a>Respuesta
 
@@ -66,7 +73,7 @@ Si tiene éxito, este método devuelve `200 OK` código de respuesta y una colec
 
 En el ejemplo siguiente se muestra cómo convertir varios identificadores desde el formato de la API de REST normal (`restId`) para el formato inmutable REST (`restImmutableEntryId`).
 
-##### <a name="request"></a>Solicitud
+### <a name="request"></a>Solicitud
 
 Aquí está la solicitud de ejemplo.
 <!-- {
@@ -88,7 +95,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Respuesta
+### <a name="response"></a>Respuesta
 
 Aquí está la respuesta de ejemplo
 <!-- {

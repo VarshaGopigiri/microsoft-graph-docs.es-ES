@@ -2,12 +2,12 @@
 title: Actualizar outlooktask
 description: Cambiar las propiedades modificables de una tarea de Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: 0a162c81ef32cb35e930b000678234ede20e4874
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325707"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771733"
 ---
 # <a name="update-outlooktask"></a>Actualizar outlooktask
 
@@ -20,6 +20,7 @@ La propiedad **completedDateTime** se puede establecer mediante la acción **com
 De forma predeterminada, esta operación (y las operaciones de tarea POST, GET y [completar](../api/outlooktask-complete.md) ) devuelve propiedades relacionadas con la fecha en UTC. Puede usar el `Prefer: outlook.timezone` encabezado para que todas las propiedades relacionadas con la fecha en la respuesta representada en una zona horaria diferente a la hora UTC.
 
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
@@ -29,22 +30,26 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
+PATCH /me/outlook/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
-PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 ```
-## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
+
+## <a name="request-headers"></a>Encabezados de solicitud
+
 | Nombre       | Descripción|
 |:-----------|:-----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Prefer: outlook.timezone | Especifica la zona horaria de propiedades de tiempo en la respuesta, que sería en UTC si no se especifica este encabezado. Opcional.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
+
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |assignedTo|String|El nombre de la persona que se le ha asignado la tarea.|
 |body|[itemBody](../resources/itembody.md)|El cuerpo de la tarea que normalmente contiene información acerca de la tarea. Tenga en cuenta que sólo el tipo HTML es compatible.|
@@ -53,7 +58,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha en la zona horaria especificada que se ha finalizado la tarea.|
 |createdDateTime|DateTimeOffset|La fecha y la hora cuando se creó la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad usa formato ISO 8601. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha en la zona horaria especificada que se va finalizado la tarea.|
-|hasAttachments|Boolean|Se establece en true si la tarea tiene datos adjuntos.|
+|hasAttachments|Booleano|Se establece en true si la tarea tiene datos adjuntos.|
 |importance|string|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle al usuario de la tarea.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de última modificación de la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad utiliza el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
@@ -69,13 +74,17 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 ## <a name="response"></a>Respuesta
 
 Si tiene éxito, este método devuelve una `200 OK` código de respuesta y actualizada [outlookTask](../resources/outlooktask.md) objeto en el cuerpo de la respuesta.
+
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+
+### <a name="request"></a>Solicitud
+
 El siguiente ejemplo se modifica la propiedad **dueDateTime** y usa el `Prefer: outlook.timezone` encabezado para especificar expresar las propiedades relacionadas con la fecha en la respuesta en la hora estándar (EST).
 <!-- {
   "blockType": "request",
   "name": "update_outlooktask"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTHgwAAA=')
 
@@ -90,13 +99,16 @@ Content-length: 76
   }
 }
 ```
-##### <a name="response"></a>Respuesta
+
+### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

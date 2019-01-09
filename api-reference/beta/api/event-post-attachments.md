@@ -2,19 +2,21 @@
 title: Agregar datos adjuntos
 description: Utilice esta API para agregar datos adjuntos a un evento. Desde allí
 author: angelgolfer-ms
-ms.openlocfilehash: 2f55646c8f0f115640ced91a90ef16d40599b3b3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 071ecdecf3ac7fd835c7c5004463661b685be003
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355961"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771775"
 ---
 # <a name="add-attachment"></a>Agregar datos adjuntos
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Use esta API para agregar un objeto [attachment](../resources/attachment.md) a un evento. Puesto que actualmente hay un límite de 4 MB en el tamaño total de cada solicitud REST, esto limita el tamaño de los datos adjuntos que agregar a menos de 4 MB.
+
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
@@ -24,47 +26,27 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitud HTTP
-Los datos adjuntos para un [evento](../resources/event.md) en el usuario de forma predeterminada [calendario](../resources/calendar.md).
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
 ```
 
 <!--
 POST /groups/{id}/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
-Datos adjuntos de un [event](../resources/event.md) en un [calendar](../resources/calendar.md) perteneciente al [calendarGroup](../resources/calendargroup.md) predeterminado del usuario.
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-Datos adjuntos de un [event](../resources/event.md) en un [calendar](../resources/calendar.md) perteneciente al [calendarGroup](../resources/calendargroup.md) de un usuario.
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
+
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [attachment](../resources/attachment.md).
 
 ## <a name="response"></a>Respuesta
@@ -73,33 +55,37 @@ Si se ejecuta correctamente, este método devuelve el código de respuesta `201 
 
 ## <a name="example-file-attachment"></a>Ejemplo (datos adjuntos del archivo)
 
-##### <a name="request"></a>Solicitud
+### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [attachment](../resources/attachment.md).
 
-##### <a name="response"></a>Respuesta
+### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-Length: 735
@@ -121,7 +107,7 @@ Content-Length: 735
 
 ## <a name="example-item-attachment"></a>Ejemplo (datos adjuntos del elemento)
 
-##### <a name="request"></a>Solicitud
+### <a name="request"></a>Solicitud
 
 Este es un ejemplo que adjunta un evento con otro evento como datos adjuntos del elemento.
 
@@ -129,6 +115,7 @@ Este es un ejemplo que adjunta un evento con otro evento como datos adjuntos del
   "blockType": "request",
   "name": "create_item_attachment_from_event"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
 Content-type: application/json
@@ -136,7 +123,7 @@ Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "Holiday event", 
+  "name": "Holiday event",
   "item": {
         "@odata.type": "microsoft.graph.event",
         "subject": "Discuss gifts for children",
@@ -156,13 +143,15 @@ Content-length: 600
 }
 ```
 
-##### <a name="response"></a>Respuesta
+### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-type: application/json
@@ -183,7 +172,8 @@ Content-length: 162
 
 ## <a name="example-reference-attachment"></a>Ejemplo (datos adjuntos de referencia)
 
-##### <a name="request"></a>Solicitud
+### <a name="request"></a>Solicitud
+
 Este es un ejemplo de una solicitud que agrega un dato adjunto de referencia a un evento existente.
 Los puntos de datos adjuntos en una carpeta de OneDrive.
 <!-- {
@@ -192,28 +182,30 @@ Los puntos de datos adjuntos en una carpeta de OneDrive.
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
-```
+```http
 POST https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments
 Content-type: application/json
 Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "name": "Personal pictures",
+    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+    "providerType": "oneDriveConsumer",
+    "permission": "Edit",
+    "isFolder": "True"
+}
 ```
 
-##### <a name="response"></a>Respuesta
+### <a name="response"></a>Respuesta
+
 Este es un ejemplo de una respuesta completa.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP 201 Created
 

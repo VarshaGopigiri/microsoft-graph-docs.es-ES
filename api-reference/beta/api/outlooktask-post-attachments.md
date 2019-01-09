@@ -2,19 +2,21 @@
 title: Crear datos adjuntos
 description: Utilice esta API para agregar datos adjuntos a un outlookTask.
 author: angelgolfer-ms
-ms.openlocfilehash: 9b4f74ee469783cd6e143446cd3fc28f28000aa8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 3b3cc5d6d4357e74c0b63166a492eafe97813b06
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355688"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771677"
 ---
 # <a name="create-attachment"></a>Crear dato adjunto
 
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
 
 Utilice esta API para agregar [datos adjuntos](../resources/attachment.md) a un [outlookTask](../resources/outlooktask.md).
+
 ## <a name="permissions"></a>Permisos
+
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
 |Tipo de permiso      | Permisos (de menos a más privilegiados)              |
@@ -24,20 +26,23 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 |Aplicación | No admitida. |
 
 ## <a name="http-request"></a>Solicitud HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
-POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/attachments
-POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/attachments
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/outlook/tasks/{id}/attachments
+POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 ```
+
 ## <a name="request-headers"></a>Encabezados de solicitud
+
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
 | Content-Type | Una cadena que representa el tipo de datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
+
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [attachment](../resources/attachment.md).
 
 ## <a name="response"></a>Respuesta
@@ -45,12 +50,15 @@ En el cuerpo de la solicitud, proporcione una representación JSON del objeto [a
 Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [attachment](../resources/attachment.md) en el cuerpo de la respuesta.
 
 ## <a name="example"></a>Ejemplo
-##### <a name="request"></a>Solicitud
+
+### <a name="request"></a>Solicitud
+
 Aquí tiene un ejemplo de la solicitud.
 <!-- {
   "blockType": "request",
   "name": "create_attachment_from_outlooktask"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 Content-type: application/json
@@ -64,14 +72,16 @@ Content-length: 142
   "isInline": true
 }
 ```
-En el cuerpo de la solicitud, proporcione una representación JSON del objeto [attachment](../resources/attachment.md).
-##### <a name="response"></a>Respuesta
+
+### <a name="response"></a>Respuesta
+
 Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json

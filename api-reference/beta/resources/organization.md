@@ -1,12 +1,12 @@
 ---
 title: Tipo de recurso organization
 description: 'Representa a un inquilino de Azure Active Directory. '
-ms.openlocfilehash: 1d13d10c79d2dfc39ec187265533cb6ea17a683b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+ms.openlocfilehash: 2e9a9a32411164e270e2eb3a8830fa811ba5f9cb
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748573"
+ms.locfileid: "27771831"
 ---
 # <a name="organization-resource-type"></a>Tipo de recurso organization
 
@@ -41,7 +41,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 | deletedDateTime                    | DateTimeOffset                                                    | Representa la fecha y hora de cuando se ha eliminado el inquilino de Azure AD con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.                                                                                     |
 |dirSyncEnabled|Boolean|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado).|
 |displayName|String|El nombre para mostrar del inquilino.|
-|id|String|El identificador único del inquilino. Hereda de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
+|id|String|El identificador de inquilino, un identificador único que representa la organización (o inquilino). Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
 |isMultipleDataLocationsForServicesEnabled|Booleano|**true** si la organización está habilitado; Multi-Geo **false** si la organización no está habilitado para Multi-ubican; **null** (valor predeterminado). Solo lectura. Para obtener más información, vea [OneDrive en línea Multi-ubican](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Colección String| No admite valores NULL.            |
 |objectType|String|Una cadena que identifica el tipo de objeto. Para los inquilinos, el valor es siempre "Company". |
