@@ -224,7 +224,7 @@ items:
                     href: extensibility-open-users.md
                   - name: Usar extensiones de esquema (ejemplo)
                     href: extensibility-schema-groups.md
-          - name: Resources
+          - name: Recursos
             expanded: true
             items:
               - name: Procedimientos recomendados
