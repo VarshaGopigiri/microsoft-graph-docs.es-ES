@@ -2,12 +2,12 @@
 title: Problemas conocidos de Microsoft Graph
 description: En este artículo, se describen los problemas conocidos de Microsoft Graph. Para obtener información sobre las actualizaciones más recientes, consulte el Registro de cambios de Microsoft Graph.
 author: jthake-msft
-ms.openlocfilehash: e39cdb13a93c19a4a4829c69dc4b1090fd67d206
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 314b1cf1adab9f7454b6b7e3a3c3acf492d0648c
+ms.sourcegitcommit: 6e34c6995e4217a471950d76fdcf0731e6a17d0e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329165"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27791662"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conocidos de Microsoft Graph
 
@@ -38,21 +38,11 @@ Para ver los problemas conocidos al usar la consulta de delta, vea la [sección 
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="application-permissions"></a>Permisos de la aplicación
-
-Al realizar cambios en los equipos y canales con permisos de aplicación, Microsoft Teams representa el mensaje de control publicado en el canal General con un nombre en blanco, en lugar del nombre de la aplicación. Este problema se corregirá en una actualización futura. La corrección actualizará retroactivamente los mensajes de control que ya se han publicado.
-
 ### <a name="create-chat-thread-api"></a>Crear una API de conversación de chat
 
 La API actual para [crear una conversación de chat](/graph/api/channel-post-chatthreads?view=graph-rest-beta) se reemplazará con una API más compleja y coherente con el esquema de [lista de mensajes del canal](/graph/api/channel-list-messages?view=graph-rest-beta).
 
-### <a name="graph-explorer-and-v10"></a>Probador de Graph y versión 1.0
-
-Las consultas de ejemplo del Probador de Graph todavía no se han actualizado para la versión 1.0.
-Todavía puede escribir consultas para la versión 1.0 en el cuadro de texto en la parte superior.
-Asegúrese de que ha configurado el Probador de Graph con los permisos adecuados, como Group.ReadWrite.All y User.Read.All.
-
-### <a name="graph-explorer-and-global-admins"></a>El Probador de Graph y los administradores globales
+### <a name="graph-explorer-and-global-admins"></a>El Explorador de Graph y los administradores globales
 
 Actualmente, el Probador de Graph permite que los administradores globales manipulen equipos de los que no son propietarios o miembros, pero con otras aplicaciones que intentan realizar las mismas llamadas API se producirán un error si el usuario actual no es un miembro o el propietario del equipo.
 
