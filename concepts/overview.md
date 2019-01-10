@@ -76,7 +76,7 @@ Consulte algunos escenarios comunes para trabajar con la API de Microsoft Graph.
 La conexión de datos de Microsoft Graph permite el acceso masivo, en lugar de un acceso tradicional y transaccional, a los datos de Office 365. Con el conjunto masivo de datos de Office 365, puede usar herramientas de Azure para crear aplicaciones inteligentes que:
 
 - Buscan el experto más cercano sobre un tema de la organización 
-- Automatizan la creación del knowledge base
+- Automatizan la creación del conocimiento base
 - Analizan las convocatorias de reunión para proporcionar información sobre el uso de la sala de conferencias
 - Detectan el fraude con datos de comunicación y productividad
 
