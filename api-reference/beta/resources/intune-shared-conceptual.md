@@ -1,12 +1,13 @@
 ---
 title: Recursos compartidos en Intune de Microsoft
 description: Estos extremos se usan en varias API de gráfico de Microsoft para los flujos de trabajo Intune.  La intención, el propósito y los permisos necesarios para usar un recurso determinado varía según el contexto de la llamada subyacente y el flujo de trabajo específico.  Además, determinados métodos, propiedades y acciones se admiten sólo para flujos de trabajo específicos.
-ms.openlocfilehash: a0e896b2aed219679ec45804dc94b22b7cb9d727
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c381ba84c9240a2b8e7428a3c055b8baf35fb243
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852629"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartidos en Intune de Microsoft
 
@@ -47,7 +48,7 @@ Los siguientes recursos de gráfico se comparten entre los flujos de trabajo Int
 - [Estado de ejecución](intune-shared-runstate.md)
 - [Guarda las opciones de generación de estado de la interfaz de usuario](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Usuario](intune-shared-user.md)
 - [Tipo de símbolo (token) de cuenta VPP](intune-shared-vpptokenaccounttype.md)
 - [Motivo del error VPP acción símbolo (token)](intune-shared-vpptokenactionfailurereason.md)
 - [Configuración de combinación de dominio de Windows](intune-shared-windowsdomainjoinconfiguration.md)

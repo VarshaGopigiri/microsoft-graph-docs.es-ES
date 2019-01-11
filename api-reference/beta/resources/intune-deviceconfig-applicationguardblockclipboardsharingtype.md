@@ -2,12 +2,13 @@
 title: tipo de enumeración applicationGuardBlockClipboardSharingType
 description: Valores posibles para applicationGuardBlockClipboardSharingType
 author: tfitzmac
-ms.openlocfilehash: d55945c0e229801bab9a338a475e6ef6fd5e8b02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f11df623a3b7dcf79df351fac7d6eeee80c254ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851495"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>tipo de enumeración applicationGuardBlockClipboardSharingType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27311511"
 
 Valores posibles para applicationGuardBlockClipboardSharingType
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|No configurado|
 |blockBoth|1|Portapapeles de bloque para compartir datos desde el Host al contenedor y del contenedor a Host|

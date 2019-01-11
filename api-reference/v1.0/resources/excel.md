@@ -1,12 +1,13 @@
 ---
 title: Trabajar con Excel en Microsoft Graph
 description: 'Puede usar Microsoft Graph para permitir que las aplicaciones web y móviles lean y modifiquen libros de Excel almacenados en OneDrive para la Empresa, un sitio de SharePoint o una unidad de grupo. El recurso `Workbook` (o el archivo de Excel) contiene todos los demás recursos de Excel mediante relaciones. Puede obtener acceso a un libro a través de la API de Drive si identifica la ubicación del archivo en la dirección URL. Por ejemplo:'
-ms.openlocfilehash: b08ee4d6a82d4d45d75e53d568102a9c6f322a01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 30129637586b9bfdd6e06ca48f9612d0d067268e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028916"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849934"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabajar con Excel en Microsoft Graph
 

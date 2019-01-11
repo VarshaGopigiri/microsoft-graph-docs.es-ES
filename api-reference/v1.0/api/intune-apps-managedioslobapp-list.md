@@ -2,12 +2,13 @@
 title: Enumerar managedIOSLobApps
 description: Enumere las propiedades y las relaciones de los objetos managedIOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: 3dc053035c66fd7be477d6d8991247d5137b23f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a440b38a3d8c8b2c6d8d4f1ca1ea95320e5dd2f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853518"
 ---
 # <a name="list-managedioslobapps"></a>Enumerar managedIOSLobApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: Obtener synchronizationJob
 description: Recuperar el trabajo de sincronización existente y sus propiedades.
-ms.openlocfilehash: c0c999d5b9ce168ba3f21af20ec5cff026d68f8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5e6be3cc707fdb70b80c6bd2ebe924232aaa674c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850319"
 ---
 # <a name="get-synchronizationjob"></a>Obtener synchronizationJob
 
@@ -33,7 +34,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 | Nombre           | Tipo    | Descripción|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

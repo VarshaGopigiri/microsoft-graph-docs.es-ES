@@ -2,12 +2,13 @@
 title: Obtener deviceConfigurationDeviceStatus
 description: Lea las propiedades y las relaciones del objeto deviceConfigurationDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: aec946d5d0daf05989aaf970019563708df10bf6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63110ec5c71e773e66a15318f16a97c73b13581f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852300"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>Obtener deviceConfigurationDeviceStatus
 
@@ -48,7 +49,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: tipo de enumeración androidManagedStoreAccountEnrollmentTarget
 description: Android para administración de dispositivos de trabajo identificación de tipo para la cuenta
 author: tfitzmac
-ms.openlocfilehash: c6de12afa46d5b3cb32c2492db4c7f6dd683bb59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c37b234e128f27694aafbf75b5083622bf39fe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852433"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>tipo de enumeración androidManagedStoreAccountEnrollmentTarget
 
@@ -17,9 +18,9 @@ ms.locfileid: "27327513"
 
 Android para administración de dispositivos de trabajo identificación de tipo para la cuenta
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Todavía no documentado|
+|none|0|Todavía no documentado|
 |all|1|Todavía no documentado|
 |destino|2|Todavía no documentado|
 |targetedAsEnrollmentRestrictions|3|Todavía no documentado|

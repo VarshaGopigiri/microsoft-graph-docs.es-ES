@@ -2,12 +2,13 @@
 title: Obtener educationSynchronizationErrors
 description: 'Obtenga los errores generados durante la validación o durante una sincronización de un perfil de sincronización de datos de school específicos en el inquilino. '
 author: mmast-msft
-ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b0504ae8ef7c463afb4041a89bfb4229833b63e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854008"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obtener educationSynchronizationErrors
 
@@ -31,7 +32,7 @@ GET /synchronizationProfiles/{id}/errors
 Este método admite los siguientes [Parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ayudar a personalizar la respuesta: $filter, $orderby, $top, $skip y $count.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 

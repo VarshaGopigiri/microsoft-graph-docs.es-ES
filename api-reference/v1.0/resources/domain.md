@@ -2,12 +2,13 @@
 title: Tipo de recurso de dominio
 description: Representa un dominio asociado al inquilino.
 author: lleonard-msft
-ms.openlocfilehash: f548e54bd1aaf53d2850ffdb30f18d38644e257c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7bf09d86be2b8ec95b8b2f11e74b44c69bc33cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326204"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851810"
 ---
 # <a name="domain-resource-type"></a>Tipo de recurso de dominio
 
@@ -47,7 +48,7 @@ Para asociar un dominio a un espacio empresarial:
 |:---------------|:--------|:----------|
 |authenticationType|Cadena| Indica el tipo de autenticación configurado para el dominio. El valor es *Managed* (administrado) o *Federated* (federado).<br> *Managed* indica un dominio administrado en la nube donde Azure AD realiza la autenticación del usuario.<br>*Federated* indica que la autenticación está asociada a un proveedor de identidad como la instancia local de Active Directory del inquilino a través de los Servicios de federación de Active Directory. No admite valores NULL |
 |availabilityStatus|String| Esta propiedad es siempre NULL, excepto cuando se usa la acción de [comprobación](../api/domain-verify.md). Cuando se usa la acción de [comprobación](../api/domain-verify.md), se devuelve una entidad de **dominio** en la respuesta. La propiedad **availabilityStatus** de la entidad de **dominio** en la respuesta es *AvailableImmediately* o *EmailVerifiedDomainTakeoverScheduled*.|
-|id|String| Especifica el nombre completo del dominio. Clave, inmutable, no acepta valores NULL, único |
+|id|Cadena| Especifica el nombre completo del dominio. Clave, inmutable, no acepta valores NULL, único |
 |isAdminManaged|Boolean| El valor de la propiedad es falso si la administración de registros DNS del dominio se ha delegado a Office 365. En caso contrario, el valor es verdadero. No admite valores NULL |
 |isDefault|Boolean| Es verdadero si este es el dominio predeterminado que se utiliza para la creación de usuarios. Solo hay un dominio predeterminado por empresa. No admite valores NULL |
 |isInitial|Boolean| Es verdadero si se trata del dominio inicial creado por Microsoft Online Services (companyname.onmicrosoft.com). Solo hay un dominio inicial por empresa. No admite valores NULL |

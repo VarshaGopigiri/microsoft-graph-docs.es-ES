@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso bookingReminder
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: f5f7b30c296433dd96ffa14a75e3f0286e8a16a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f1708d4ac9606ad5c862cb9b1bc73e1ddcfec4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853868"
 ---
 # <a name="bookingreminder-resource-type"></a>tipo de recurso bookingReminder
 
@@ -16,11 +17,11 @@ Representa cuándo y a quienes se debe enviar un recordatorio de correo electró
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |message|String|El mensaje en el aviso.|
 |desplazamiento|Duración|La cantidad de tiempo antes del inicio de una cita que se debe enviar el aviso. Se mostrará en formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|destinatarios|String| Las personas que shouold recibir el aviso. Los valores posibles son: `allAttendees`, `staff` y `customer`.|
+|destinatarios|Cadena| Las personas que shouold recibir el aviso. Los valores posibles son: `allAttendees`, `staff` y `customer`.|
 
 ## <a name="json-representation"></a>Representación JSON
 

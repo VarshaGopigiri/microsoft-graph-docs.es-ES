@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
-ms.openlocfilehash: 067cf88773b5f5d69b2b3538a2ddeab6741631a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854253"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso itemActivityStat
 
@@ -42,7 +43,7 @@ El recurso **itemActivityStat** proporciona información acerca de las actividad
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad         | Tipo                    | Descripción
+| Propiedad         | Tipo                    | Description
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Indica que las estadísticas de este intervalo están basadas en datos incompletos. Solo lectura.
 | isTrending       | Booleano                 | Indica si el elemento es "tendencias". Solo lectura.

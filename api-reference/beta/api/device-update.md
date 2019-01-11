@@ -2,12 +2,13 @@
 title: Actualizar device
 description: Actualizar las propiedades de un dispositivo.
 author: tfitzmac
-ms.openlocfilehash: df86581c1edb531e822204698486358fac29f106
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37c9dc2d363ad2b2b6f91bc04879250bab6f0ad2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849570"
 ---
 # <a name="update-device"></a>Actualizar device
 
@@ -35,7 +36,7 @@ PATCH /devices/{id}
 > Nota: El "id" de la solicitud es la propiedad "id" del dispositivo, no la propiedad "deviceId".
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

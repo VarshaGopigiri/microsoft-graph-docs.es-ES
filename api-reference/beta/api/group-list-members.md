@@ -1,12 +1,13 @@
 ---
 title: Lista de miembros de grupo
 description: Obtener una lista de los miembros del grupo directa. Un grupo puede tener los usuarios, contactos, dispositivos, entidades de seguridad de servicio y otros grupos como miembros. Esta operación no es transitiva.
-ms.openlocfilehash: 788939d2b81e7e5667b3a6164c7e44b83ce63a3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: af54ef994fb0f62af43bf9f9ce3cd5fe5d2b1503
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083927"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854141"
 ---
 # <a name="list-group-members"></a>Lista de miembros de grupo
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](/graph/query-paramete
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

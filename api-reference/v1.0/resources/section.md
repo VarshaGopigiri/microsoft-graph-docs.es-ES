@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso section
 description: Una sección en un bloc de notas de OneNote. Las secciones pueden contener páginas.
-ms.openlocfilehash: e0e2d650993ff3c8bcda688be305cf296a2dfdb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f9cb5a8e3ddf9cf4a045103e4ecc7909653d797c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853238"
 ---
 # <a name="section-resource-type"></a>Tipo de recurso section
 
@@ -47,14 +48,14 @@ Aquí tiene una representación JSON del recurso.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó la sección. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|String|El identificador único de la sección.  Solo lectura.|
+|id|Cadena|El identificador único de la sección.  Solo lectura.|
 |isDefault|Booleano|Indica si se trata de la sección predeterminada del usuario. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó la sección por última vez. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |vínculos|[SectionLinks](sectionlinks.md)|Vínculos para abrir la sección. El vínculo `oneNoteClientURL` abre la sección en el cliente nativo de OneNote si está instalado. El vínculo `oneNoteWebURL` abre la sección en OneNote Online.|
-|displayName|String|Nombre de la sección. |
+|displayName|Cadena|Nombre de la sección. |
 |pagesUrl|Cadena|El punto de conexión `pages` donde puede obtener información detallada de todas las páginas de la sección. Solo lectura.|
-|self|String|El punto de conexión donde puede obtener información detallada sobre la sección. Solo lectura.|
+|self|Cadena|El punto de conexión donde puede obtener información detallada sobre la sección. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

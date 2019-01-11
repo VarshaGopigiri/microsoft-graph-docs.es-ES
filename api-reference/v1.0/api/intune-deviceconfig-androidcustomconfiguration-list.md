@@ -2,12 +2,13 @@
 title: Enumerar androidCustomConfigurations
 description: Enumere las propiedades y las relaciones de los objetos androidCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 0597cc28a6b1adfc82934ee82faee1f080485cf9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a55008ab85f745ec5fd32a509e56dc95fea12ed4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353679"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850578"
 ---
 # <a name="list-androidcustomconfigurations"></a>Enumerar androidCustomConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

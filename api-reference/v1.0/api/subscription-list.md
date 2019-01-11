@@ -1,18 +1,19 @@
 ---
 title: Suscripciones de lista
 description: Recuperar las propiedades y relaciones de suscripciones de webhook, según el identificador de la aplicación, el usuario y el rol del usuario con un inquilino.
-ms.openlocfilehash: df52fd51de120002a7eff57b32715b281744be93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 663586cc769f04be631e1f3c1bdf86bc4f798022
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032195"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850417"
 ---
 # <a name="list-subscriptions"></a>Suscripciones de lista
 
 Recuperar las propiedades y relaciones de suscripciones de webhook, según el identificador de la aplicación, el usuario y el rol del usuario con un inquilino.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Esta API admite los siguientes ámbitos de permisos; Para obtener más información, incluido cómo elegir permisos, vea [permisos](/graph/permissions-reference).
 
@@ -59,7 +60,7 @@ Este método no es compatible con los [Parámetros de consulta de OData](https:/
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

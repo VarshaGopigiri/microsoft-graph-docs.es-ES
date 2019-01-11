@@ -1,12 +1,13 @@
 ---
 title: 'directoryObject: delta'
 description: 'Get recién creado, actualizar o eliminar objetos de Active directory de los siguientes tipos: usuario, grupo y contacto organizativa, en una consulta de delta único. Vea control de cambios para obtener información detallada.'
-ms.openlocfilehash: 98674a141c0567defb06da7b1ccd95a209aaa4f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 823107bce56d77c4e9c29a77405ac014443f5190
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085018"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854498"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 

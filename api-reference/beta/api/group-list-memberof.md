@@ -2,12 +2,13 @@
 title: Miembro del grupo de lista
 description: Obtener grupos y unidades administrativas que el grupo es miembro directo.
 author: dkershaw10
-ms.openlocfilehash: fa8977cd128fdb51296b31dac2ee959aea8c80b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a1badf9e52c9d0bc3319178f36d62d1327d3c63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853336"
 ---
 # <a name="list-group-memberof"></a>Miembro del grupo de lista
 
@@ -37,7 +38,7 @@ GET /groups/{id}/memberOf
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

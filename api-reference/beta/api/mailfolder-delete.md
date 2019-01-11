@@ -2,12 +2,13 @@
 title: Delete mailFolder
 description: Eliminar el mailFolder especificado o mailSearchFolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 99cff1e4e07a5df0d2a338a42f866db6172bcbd5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46a47bc10560269ae78977fb6ada1d177c46e45e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851558"
 ---
 # <a name="delete-mailfolder"></a>Delete mailFolder
 
@@ -35,7 +36,7 @@ DELETE /me/mailFolders/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

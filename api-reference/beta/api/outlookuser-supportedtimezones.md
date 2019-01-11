@@ -1,12 +1,13 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: Obtener la lista de zonas horarias compatibles con el usuario, según la configuración del servidor de buzones del usuario.
-ms.openlocfilehash: 9feb5e883b1516cdefe9e1b439bf59a0f3b9dd8f
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 9c44d79cbadebb5842bb3940e3ca41ae14672375
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852006"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -46,7 +47,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

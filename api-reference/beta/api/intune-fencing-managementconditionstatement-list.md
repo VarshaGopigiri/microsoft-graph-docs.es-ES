@@ -2,12 +2,13 @@
 title: Lista managementConditionStatements
 description: Propiedades de la lista y relaciones de los objetos managementConditionStatement.
 author: tfitzmac
-ms.openlocfilehash: 6b151a441417ab9083b0db077921d5d3c33ca121
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b97d7375918b672967932692095572779c8aa48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325393"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854274"
 ---
 # <a name="list-managementconditionstatements"></a>Lista managementConditionStatements
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

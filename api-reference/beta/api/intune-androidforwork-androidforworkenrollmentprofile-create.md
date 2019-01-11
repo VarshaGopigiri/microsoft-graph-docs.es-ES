@@ -2,12 +2,13 @@
 title: Crear androidForWorkEnrollmentProfile
 description: Cree un objeto androidForWorkEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 794179968afc4f39c809373b3425c076f7a591a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2890bba72a16933e0a45009a573044b65c099e9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854205"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Crear androidForWorkEnrollmentProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto androidForWorkEnrollmentProfile.
@@ -47,16 +48,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|accountId|String|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
-|id|String|GUID único del perfil de inscripción.|
-|displayName|String|Nombre para mostrar del perfil de inscripción.|
-|descripción|String|Descripción del perfil de inscripción.|
+|accountId|Cadena|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
+|id|Cadena|GUID único del perfil de inscripción.|
+|displayName|Cadena|Nombre para mostrar del perfil de inscripción.|
+|descripción|Cadena|Descripción del perfil de inscripción.|
 |createdDateTime|DateTimeOffset|Fecha y hora en que se creó el perfil de inscripción.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en que se modificó el perfil de inscripción por última vez.|
-|tokenValue|String|Valor del token creado más recientemente para este perfil de inscripción.|
+|tokenValue|Cadena|Valor del token creado más recientemente para este perfil de inscripción.|
 |tokenExpirationDateTime|DateTimeOffset|Fecha y hora en que expirará el token creado más recientemente.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que se han inscrito con este perfil de inscripción.|
-|qrCodeContent|String|Cadena usada para generar un código QR para el token.|
+|qrCodeContent|Cadena|Cadena usada para generar un código QR para el token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadena usada para generar un código QR para el token.|
 
 

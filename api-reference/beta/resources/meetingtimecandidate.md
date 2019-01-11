@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso meetingTimeCandidate
 description: 'Una sugerencia de reunión que incluye información como el tiempo de la reunión, la probabilidad de asistencia, individual '
-ms.openlocfilehash: 56aae66cf4c532108d2db2f8f4cfc71487f09150
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bbd237e9bfebac0b6d3f27b343ec1294d9e21881
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853035"
 ---
 # <a name="meetingtimecandidate-resource-type"></a>tipo de recurso meetingTimeCandidate
 
@@ -44,8 +45,8 @@ Aquí tiene una representación JSON del recurso
 |confidence|Doble|Un porcentaje que representa la probabilidad de que asistan todos los convocados.|
 |locations|Colección [location](location.md)|Una matriz que especifica el nombre y la ubicación geográfica de cada ubicación de reunión para esta sugerencia de reunión.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Un período de tiempo sugerido para la reunión.|
-|organizerAvailability|String| Disponibilidad del organizador de la reunión para esta sugerencia de reunión. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|suggestionHint|String|Razón para proponer hora de la reunión.|
+|organizerAvailability|Cadena| Disponibilidad del organizador de la reunión para esta sugerencia de reunión. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|suggestionHint|Cadena|Razón para proponer hora de la reunión.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -2,12 +2,13 @@
 title: Get WorksheetProtection
 description: Recuperar las propiedades y relaciones del objeto worksheetprotection.
 author: lumine2008
-ms.openlocfilehash: 335492707cc3411d39fa5c95b1668dd1768fd8cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d18b20b9d4af7dc9351c90039290cf93d2aec741
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853945"
 ---
 # <a name="get-worksheetprotection"></a>Get WorksheetProtection
 

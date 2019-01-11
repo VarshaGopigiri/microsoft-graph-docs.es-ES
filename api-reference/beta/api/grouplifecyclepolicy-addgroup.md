@@ -2,12 +2,13 @@
 title: 'groupLifecyclePolicy: addGroup'
 description: Agrega un grupo a una directiva de ciclo de vida.
 author: dkershaw10
-ms.openlocfilehash: 57af4383c471832acbffb4136a057c91a1d061d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac0bf455ba2d4aa5f1f6add5827124581ce663b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327912"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853364"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
@@ -42,7 +43,7 @@ POST /groupLifecyclePolicies/{id}/addGroup
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro | Type | Descripción |
+| Parámetro | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |groupId|Guid| El id. del grupo para agregar a la directiva. |
 

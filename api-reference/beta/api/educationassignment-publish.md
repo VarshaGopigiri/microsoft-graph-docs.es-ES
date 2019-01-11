@@ -1,12 +1,13 @@
 ---
 title: 'educationAssignment: publicar'
 description: Esta acción cambia el estado de una asignación de su estado de borrador original para el estado publicado. Sólo un profesor en la clase puede realizar esta llamada. Cuando una asignación se encuentra en estado de borrador, los alumnos no verán la asignación ni se producirá ningún objeto de envío. Cuando se llama a esta API, se crean objetos de envío y la asignación aparece en la lista de student.
-ms.openlocfilehash: d5de5a45d437662dbcd2bf869aef93502a3669f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 09261da506113f53c6b6b9ff98af69c7dba4c784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083997"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854743"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publicar
 

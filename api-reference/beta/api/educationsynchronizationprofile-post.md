@@ -2,12 +2,13 @@
 title: Crear un educationSynchronizationProfile
 description: 'Crear una solicitud de un nuevo perfil de sincronización de datos de school en el inquilino. Consultar el estado para obtener el estado de los perfiles. '
 author: mmast-msft
-ms.openlocfilehash: 20c4a7f4dd1512a52bed4a12d1642b8d1138d0e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5ce12f43af4e32691c34038a9a0c0527d314c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853854"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Crear un educationSynchronizationProfile
 
@@ -31,10 +32,10 @@ POST /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
-| Content-Type | string | Application/json. Obligatorio. |
+| Content-Type | string | Application/json. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) .

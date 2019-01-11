@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso keyCredential
 description: Contiene una credencial de clave asociada con una aplicación o una entidad de seguridad de servicio. La propiedad **keyCredentials** de las entidades de la aplicación y servicePrincipal es una colección de **keyCredential**.
-ms.openlocfilehash: d4509360c0425c255566b9f77b9ecd96cf349dec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0319568dad271f13b396d2f75a71839e85c96c40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083462"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851565"
 ---
 # <a name="keycredential-resource-type"></a>tipo de recurso keyCredential
 
@@ -40,14 +41,14 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binario| Identificador de clave personalizado |
 |endDateTime|DateTimeOffset|La fecha y hora de caducidad de la credencial. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |Id|Guid|Identificador único (GUID) de la clave.|
 |startDateTime|DateTimeOffset|La fecha y la hora en que la credencial es válida. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|type|String|El tipo de credencial clave; Por ejemplo, "Simétrico".|
-|uso|String|Una cadena que describa el objetivo para el que se puede usar la clave; Por ejemplo, "comprobar".|
+|type|Cadena|El tipo de credencial clave; Por ejemplo, "Simétrico".|
+|uso|Cadena|Una cadena que describa el objetivo para el que se puede usar la clave; Por ejemplo, "comprobar".|
 |key|Binary|            |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

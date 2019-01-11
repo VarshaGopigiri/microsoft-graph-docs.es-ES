@@ -2,12 +2,13 @@
 title: Actualizar termsAndConditionsAssignment
 description: Actualice las propiedades de un objeto termsAndConditionsAssignment.
 author: tfitzmac
-ms.openlocfilehash: b55ec01c6bac55f9b1d72a5aad5f931bed6b6b2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79b8595015496605711d2304d22381171ef3ef34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851460"
 ---
 # <a name="update-termsandconditionsassignment"></a>Actualizar termsAndConditionsAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la entidad.|
+|id|Cadena|Identificador único de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
 
 

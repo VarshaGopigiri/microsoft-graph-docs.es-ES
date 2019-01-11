@@ -2,12 +2,13 @@
 title: 'ChartCollection: ItemAt'
 description: Obtiene un gráfico en función de su posición en la colección.
 author: lumine2008
-ms.openlocfilehash: 6490958908e7f6093e2d307764dd422026205f46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ebb673d3b9f1ffc5cdcbe0f64d3a9365818c707
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854568"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|number|Valor de índice del objeto que se va a recuperar. Indizado con cero.|
 

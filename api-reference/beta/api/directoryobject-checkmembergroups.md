@@ -1,12 +1,13 @@
 ---
 title: Comprobar grupos de miembro
 description: Comprueba la pertenencia a en una lista especificada de grupos y devuelve desde esa lista de esos grupos
-ms.openlocfilehash: b7baccd19b9d5a84ecbca4d75bca053eb51bc3f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854043"
 ---
 # <a name="check-member-groups"></a>Comprobar grupos de miembro
 
@@ -36,7 +37,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

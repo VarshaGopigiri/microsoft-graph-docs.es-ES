@@ -1,12 +1,13 @@
 ---
 title: Trabajar con API para el ámbito educativo en Microsoft Graph
 description: La formación API en Microsoft Graph mejorar datos con la información que es pertinente para escenarios de educación, incluidas escuelas, a los alumnos, profesores, clases, inscripción y asignaciones y recursos de Office 365. Esto hace que resulte fácil compilar soluciones que se integran con recursos educativos.
-ms.openlocfilehash: 610a16af6993397ae9162fb27add97cd6c5af0ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f04ee2817a7346710608df0e97a89251103acc9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852475"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Trabajar con API para el ámbito educativo en Microsoft Graph
 
@@ -95,7 +96,7 @@ La API de asignación admite los siguientes escenarios:
 
 Los siguientes son algunos casos de uso común para la formación relacionados con la asignación de API.
 
-|Caso de uso|Descripción|Vea también|
+|Caso de uso|Description|Vea también|
 |:-------|:----------|:-------|
 |Crear asignaciones|Un sistema externo puede crear una asignación para la clase y adjuntar recursos a la asignación.|[Crear asignación](../api/educationassignment-post-resources.md)|
 |Leer la información de asignación|Una aplicación de análisis puede obtener información sobre las asignaciones y los envíos de estudiantes, incluidas las fechas y remuneración.|[Obtener la asignación](../api/educationassignment-get.md)|
