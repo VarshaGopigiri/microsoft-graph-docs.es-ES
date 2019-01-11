@@ -3,31 +3,32 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Eliminar el acceso a un elemento
-ms.openlocfilehash: a9f98bd7d05f56044aa4193a9ef8e3f565ab22aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4f22082c8f9ce540d3c1c1188c8f9c5ff06ab525
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810027"
 ---
-# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a><span data-ttu-id="799f5-102">Eliminar un permiso de uso compartido de un archivo o una carpeta</span><span class="sxs-lookup"><span data-stu-id="799f5-102">Delete a sharing permission from a file or folder</span></span>
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a><span data-ttu-id="712e8-102">Eliminar un permiso de uso compartido de un archivo o una carpeta</span><span class="sxs-lookup"><span data-stu-id="712e8-102">Delete a sharing permission from a file or folder</span></span>
 
-<span data-ttu-id="799f5-103">Quita el acceso a un [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="799f5-103">Remove access to a [DriveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="712e8-103">Quita el acceso a un [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="712e8-103">Remove access to a [DriveItem](../resources/driveitem.md).</span></span>
 
-<span data-ttu-id="799f5-104">Solo se pueden eliminar los permisos de uso compartido **no** heredados.</span><span class="sxs-lookup"><span data-stu-id="799f5-104">Only sharing permissions that are **not** inherited can be deleted.</span></span>
-<span data-ttu-id="799f5-105">La propiedad **inheritedFrom** debe ser `null`.</span><span class="sxs-lookup"><span data-stu-id="799f5-105">The **inheritedFrom** property must be `null`.</span></span>
+<span data-ttu-id="712e8-104">Solo se pueden eliminar los permisos de uso compartido **no** heredados.</span><span class="sxs-lookup"><span data-stu-id="712e8-104">Only sharing permissions that are **not** inherited can be deleted.</span></span>
+<span data-ttu-id="712e8-105">La propiedad **inheritedFrom** debe ser `null`.</span><span class="sxs-lookup"><span data-stu-id="712e8-105">The **inheritedFrom** property must be `null`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="799f5-106">Permisos</span><span class="sxs-lookup"><span data-stu-id="799f5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="712e8-106">Permisos</span><span class="sxs-lookup"><span data-stu-id="712e8-106">Permissions</span></span>
 
-<span data-ttu-id="799f5-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="799f5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="712e8-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="712e8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="799f5-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="799f5-109">Permission type</span></span>      | <span data-ttu-id="799f5-110">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="799f5-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="712e8-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="712e8-109">Permission type</span></span>      | <span data-ttu-id="712e8-110">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="712e8-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="799f5-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="799f5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="799f5-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="799f5-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="799f5-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="799f5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="799f5-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="799f5-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="799f5-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="799f5-115">Application</span></span> | <span data-ttu-id="799f5-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="799f5-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="712e8-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="712e8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="712e8-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="712e8-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="712e8-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="712e8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="712e8-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="712e8-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="712e8-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="712e8-115">Application</span></span> | <span data-ttu-id="712e8-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="712e8-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="799f5-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="799f5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="712e8-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="712e8-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,19 +40,19 @@ DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="799f5-118">Encabezados de solicitud opcionales</span><span class="sxs-lookup"><span data-stu-id="799f5-118">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="712e8-118">Encabezados de solicitud opcionales</span><span class="sxs-lookup"><span data-stu-id="712e8-118">Optional request headers</span></span>
 
-| <span data-ttu-id="799f5-119">Nombre</span><span class="sxs-lookup"><span data-stu-id="799f5-119">Name</span></span>          | <span data-ttu-id="799f5-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="799f5-120">Type</span></span>   | <span data-ttu-id="799f5-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="799f5-121">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="712e8-119">Nombre</span><span class="sxs-lookup"><span data-stu-id="712e8-119">Name</span></span>          | <span data-ttu-id="712e8-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="712e8-120">Type</span></span>   | <span data-ttu-id="712e8-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="712e8-121">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="799f5-122">if-match</span><span class="sxs-lookup"><span data-stu-id="799f5-122">if-match</span></span>      | <span data-ttu-id="799f5-123">string</span><span class="sxs-lookup"><span data-stu-id="799f5-123">string</span></span> | <span data-ttu-id="799f5-124">Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará.</span><span class="sxs-lookup"><span data-stu-id="799f5-124">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="712e8-122">if-match</span><span class="sxs-lookup"><span data-stu-id="712e8-122">if-match</span></span>      | <span data-ttu-id="712e8-123">string</span><span class="sxs-lookup"><span data-stu-id="712e8-123">string</span></span> | <span data-ttu-id="712e8-124">Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada no coincide con la etiqueta actual del archivo, se devuelve una respuesta `412 Precondition Failed` y el elemento no se borrará.</span><span class="sxs-lookup"><span data-stu-id="712e8-124">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="799f5-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="799f5-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="712e8-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="712e8-125">Response</span></span>
 
-<span data-ttu-id="799f5-126">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="799f5-126">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="712e8-126">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="712e8-126">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="799f5-127">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="799f5-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="712e8-127">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="712e8-127">Example</span></span>
 
-<span data-ttu-id="799f5-128">En este ejemplo, se quita el permiso identificado como {perm-id} del elemento {item-id} del OneDrive del usuario actual.</span><span class="sxs-lookup"><span data-stu-id="799f5-128">This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.</span></span>
+<span data-ttu-id="712e8-128">En este ejemplo, se quita el permiso identificado como {perm-id} del elemento {item-id} del OneDrive del usuario actual.</span><span class="sxs-lookup"><span data-stu-id="712e8-128">This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.</span></span>
 
 <!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
@@ -59,7 +60,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-### <a name="response"></a><span data-ttu-id="799f5-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="799f5-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="712e8-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="712e8-129">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": false } -->
 
@@ -67,9 +68,9 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a><span data-ttu-id="799f5-130">Comentarios</span><span class="sxs-lookup"><span data-stu-id="799f5-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="712e8-130">Comentarios</span><span class="sxs-lookup"><span data-stu-id="712e8-130">Remarks</span></span>
 
-* <span data-ttu-id="799f5-131">Los [Drives](../resources/drive.md) con un **driveType** de `personal` (OneDrive Personal) no pueden crear ni modificar permisos en la DriveItem raíz.</span><span class="sxs-lookup"><span data-stu-id="799f5-131">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
+* <span data-ttu-id="712e8-131">Los [Drives](../resources/drive.md) con un **driveType** de `personal` (OneDrive Personal) no pueden crear ni modificar permisos en la DriveItem raíz.</span><span class="sxs-lookup"><span data-stu-id="712e8-131">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
