@@ -1,12 +1,13 @@
 ---
 title: 'grupo: getMemberGroups'
 description: Devuelve todos los grupos de los que el grupo que se especifique sea miembro. La comprobación es transitiva, a diferencia de la lectura de la propiedad de navegación memberOf, que devuelve solo los grupos de los que el grupo es miembro directo.
-ms.openlocfilehash: 6a68bf620561ff9e2212423dee8a37075e9e09e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0c5162e79921e6069d22861060e6c652d1a7de3f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887210"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
@@ -40,7 +41,7 @@ POST /groups/{id}/getMemberGroups
 
 | Nombre          | Tipo   | Descripción               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | {token} de portador. Obligatorio. |
+| Autorización | string | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

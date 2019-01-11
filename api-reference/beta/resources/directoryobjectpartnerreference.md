@@ -2,12 +2,13 @@
 title: tipo de recurso directoryObjectPartnerReference
 description: Representa una referencia a un objeto de directorio en un inquilino de socio. Se hereda de directoryObject.
 author: lleonard-msft
-ms.openlocfilehash: 37a60c126ef74f3073f258ba799cf276fda4f5cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46d0f749ac77e7d51e03314e78cfccf494dcc6fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884864"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
 
@@ -19,10 +20,10 @@ Representa una referencia a un objeto de Active directory en una organización a
 
 | Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
-|description|String| Descripción del objeto devuelto. Solo lectura. |
-|displayName|String| Nombre del objeto de Active directory que se devuelve, al igual que el grupo o la aplicación. Solo lectura. |
+|description|Cadena| Descripción del objeto devuelto. Solo lectura. |
+|displayName|Cadena| Nombre del objeto de Active directory que se devuelve, al igual que el grupo o la aplicación. Solo lectura. |
 |externalPartnerTenantId|Guid| El identificador de inquilino para el inquilino de socio. Solo lectura. |
-|id|String| El identificador único para el recurso. Heredado de [directoryObject](directoryobject.md?view=graph-rest-beta). Solo lectura. |
+|id|Cadena| El identificador único para el recurso. Heredado de [directoryObject](directoryobject.md?view=graph-rest-beta). Solo lectura. |
 |objectType|String| El tipo del objeto que se hace referencia en el inquilino de socio. Solo lectura. |
 
 ## <a name="json-representation"></a>Representación JSON

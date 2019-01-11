@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceConfiguration
 description: Configuración de dispositivos.
 author: tfitzmac
-ms.openlocfilehash: 5624b52c4c92f49b5ce5300cd3e1abc45afe2e9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 255826460a81544d27620807d569ce3857e1034e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884045"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -24,11 +25,11 @@ Configuración de dispositivos.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones

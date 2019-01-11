@@ -2,12 +2,13 @@
 title: 'user: reminderView'
 description: 'Devuelve una lista de los avisos de calendario entre las horas de inicio y finalización especificadas. '
 author: dkershaw10
-ms.openlocfilehash: 9f71617d1775579e913df814a2e9aecd61ba7402
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 4edcc4a6a46cbdee1233ad7496fa231bba8bfd27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886082"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 

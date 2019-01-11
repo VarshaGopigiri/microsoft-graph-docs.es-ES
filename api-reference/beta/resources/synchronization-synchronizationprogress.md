@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationProgress
 description: Representa el progreso de un synchronizationJob hasta su finalización.
-ms.openlocfilehash: 412b7754dac97a36efe082026ab360569c0fe789
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c1168cdac6a073842cb5e08d165572591d2d8e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090765"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885389"
 ---
 # <a name="synchronizationprogress-resource-type"></a>tipo de recurso synchronizationProgress
 
@@ -16,12 +17,12 @@ Representa el progreso de un [synchronizationJob](synchronization-synchronizatio
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                              | Tipo      | Descripción    |
+| Propiedad                              | Tipo      | Description    |
 |:--------------------------------------|:----------|:---------------|
 |completedUnits|Int32|El numerador de una relación de progreso; el número de unidades de cambios ya procesados.|
 |progressObservationDateTime|DateTimeOffset|La hora de una observación de progreso como un desplazamiento en minutos de la hora UTC.|
 |totalUnits|Int32|El denominador de una relación de progreso; un número de unidades de los cambios que va a procesar para llevar a cabo la sincronización.|
-|unidades|String|Una descripción opcional de las unidades.|
+|unidades|Cadena|Una descripción opcional de las unidades.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

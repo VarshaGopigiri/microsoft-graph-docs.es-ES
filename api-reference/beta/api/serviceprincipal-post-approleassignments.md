@@ -1,12 +1,13 @@
 ---
 title: Crear appRoleAssignment
 description: Utilice esta API para crear un nuevo appRoleAssignment.
-ms.openlocfilehash: f75d20927d3452dcc8f0fc79cb330366d65da745
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ce498312f294ff11b97f12b136a6f48ebb4d3791
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089564"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886985"
 ---
 # <a name="create-approleassignment"></a>Crear appRoleAssignment
 
@@ -32,7 +33,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [appRoleAssignment](../resources/approleassignment.md) .

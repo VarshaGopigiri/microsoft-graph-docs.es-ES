@@ -2,12 +2,13 @@
 title: Crear mobileAppIntentAndState
 description: Crear un nuevo objeto mobileAppIntentAndState.
 author: tfitzmac
-ms.openlocfilehash: 590cbb01e8b1f41ce1a1c43be7c3a97872ea737a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bbd6e6053054045e2a95aebfc92acfd8a5d25052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886460"
 ---
 # <a name="create-mobileappintentandstate"></a>Crear mobileAppIntentAndState
 
@@ -38,7 +39,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto mobileAppIntentAndState.
@@ -47,9 +48,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID para el objeto|
-|managedDeviceIdentifier|String|Identificador del dispositivo creado o recopilado por Intune.|
-|userId|String|Identificador del usuario que intentó inscribir el dispositivo.|
+|id|Cadena|UUID para el objeto|
+|managedDeviceIdentifier|Cadena|Identificador del dispositivo creado o recopilado por Intune.|
+|userId|Cadena|Identificador del usuario que intentó inscribir el dispositivo.|
 |mobileAppList|colección de [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|La lista de calidades de carga y Estados para el inquilino.|
 
 

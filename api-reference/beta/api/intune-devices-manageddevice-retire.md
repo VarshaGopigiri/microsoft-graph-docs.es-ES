@@ -2,12 +2,13 @@
 title: Acción retire
 description: Retirar un dispositivo
 author: tfitzmac
-ms.openlocfilehash: 9e1fc11bc3f2501f5b6df7910cb5b024268cecfc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ce9ff6cd1ce5ff3bae53fdf10cb6b33756a508b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882515"
 ---
 # <a name="retire-action"></a>Acción retire
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

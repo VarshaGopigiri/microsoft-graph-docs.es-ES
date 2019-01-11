@@ -1,12 +1,13 @@
 ---
 title: Lista secureScoreControlProfiles
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 33d0f6059d66350c9fa763097277f83c041e96ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cd13e4349119202f5f9e026973f3a90ee99f1019
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884556"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Lista secureScoreControlProfiles
 
@@ -36,7 +37,7 @@ GET /security/secureScoreControlProfiles
 
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {código} del portador. Necesario.|
+| Autorización  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

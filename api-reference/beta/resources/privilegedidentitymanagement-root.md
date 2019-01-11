@@ -1,12 +1,13 @@
 ---
 title: Administración de identidades de Azure con privilegios de AD
 description: Aquí es la lista de los métodos proporcionados por el servicio de administración de identidades con privilegios.
-ms.openlocfilehash: ec060c4dc233677f1333e9588e4fb888f8dff9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c1108711c96dd253f784a418a396ca30507c5f7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082937"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884066"
 ---
 # <a name="azure-ad-privileged-identity-management"></a>Administración de identidades de Azure con privilegios de AD
 
@@ -29,7 +30,7 @@ El servicio se fundamentan en OData. Para filtrar los resultados de la consulta,
 |[Crear privilegedRoleAssignment](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Para crear un nuevo privilegedRoleAssignment (asignación de rol), la publicación de la colección privilegedRoleAssignments.|
 |[Lista privilegedRoleAssignment](../api/privilegedroleassignment-list.md) | colección de [privilegedRoleAssignment](privilegedroleassignment.md) |Obtener la colección de objetos privilegedRoleAssignment. La colección contiene todas las asignaciones de roles para la organización. Cada privilegedRoleAssignment representa una asignación de roles a un usuario. |
 |[Obtener privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md)|Obtener el objeto privilegedRoleAssignment con el identificador de asignación especificada. |
-|[Eliminar privilegedRoleAssignment](../api/privilegedroleassignment-delete.md) | Ninguna. |Eliminar el objeto privilegedRoleAssignment. |
+|[Eliminar privilegedRoleAssignment](../api/privilegedroleassignment-delete.md) | Ninguno. |Eliminar el objeto privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Hacer que la asignación de rol como permanente. |
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Hacer que la asignación de rol como elegibles. |
 |[Mi](../api/privilegedroleassignment-my.md) | colección de [privilegedRoleAssignment](privilegedroleassignment.md)|Obtener las asignaciones de funciones del solicitante. |

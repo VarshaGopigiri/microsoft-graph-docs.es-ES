@@ -2,12 +2,13 @@
 title: Eliminar androidLobApp
 description: Elimina un androidLobApp.
 author: tfitzmac
-ms.openlocfilehash: 101082725986f50a7b2a09f7cc66ba8b8e05709b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: de6d3a9a2a4026fa019f509a3ee5800946fd3610
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357970"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883149"
 ---
 # <a name="delete-androidlobapp"></a>Eliminar androidLobApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

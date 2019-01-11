@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceConfigurationUserOverview
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 74f56723702b50e855cc99f108950c708545fa5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0103d6eda14e2411a3ece16a7dcff8eef50d9b9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883975"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Tipo de recurso deviceConfigurationUserOverview
 
@@ -23,7 +24,7 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |pendingCount|Int32|Número de usuarios pendientes|
 |notApplicableCount|Int32|Número de usuarios no es aplicable.|
 |successCount|Int32|Número de usuarios correctos|

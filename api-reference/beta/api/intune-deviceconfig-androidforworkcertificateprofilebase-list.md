@@ -2,12 +2,13 @@
 title: Lista androidForWorkCertificateProfileBases
 description: Propiedades de la lista y relaciones de los objetos androidForWorkCertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 2a0bd2de1408ad6fa41bb8b1e7be9d691460ceb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f5ece38b7e4fe066d9fc81b287c149b5bce47ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882400"
 ---
 # <a name="list-androidforworkcertificateprofilebases"></a>Lista androidForWorkCertificateProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

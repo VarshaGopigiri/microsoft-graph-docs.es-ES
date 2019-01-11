@@ -2,12 +2,13 @@
 title: tipo de recurso appHostedMediaConfig
 description: Pila de medios alojado por la aplicación.
 author: VinodRavichandran
-ms.openlocfilehash: b96d6ff836ab36e5561c9ba3958123178e2fbde9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 583964a6c7cd65ae4e8341f7fcba92d754916b36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884570"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
 
@@ -17,9 +18,9 @@ Pila de medios alojado por la aplicación.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                          | Tipo    | Descripción                                                     |
+| Propiedad                          | Tipo    | Description                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| BLOB                              | String  | El blob de configuración de medios generado por el agente de medios inteligentes.    |
+| BLOB                              | Cadena  | El blob de configuración de medios generado por el agente de medios inteligentes.    |
 | removeFromDefaultAudioGroup       | Booleano | Quitar el grupo predeterminado de audio en audio                       |
 
 ## <a name="json-representation"></a>Representación JSON

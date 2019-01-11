@@ -1,12 +1,13 @@
 ---
 title: Introducción a API de sincronización de Azure AD
 description: ') le permite automatizar la creación, mantenimiento y la eliminación de las identidades en la nube aplicaciones (software como un servicio o SaaS) como lista desplegable, fuerza de ventas, ServiceNow y mucho más. Puede usar las API de sincronización en Microsoft Graph para administrar la sincronización de identidad mediante programación, incluidos:'
-ms.openlocfilehash: ff3acb00801c9b04b8257345b06100297e11710c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089794"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884689"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Introducción a API de sincronización de Azure AD
 
@@ -53,7 +54,7 @@ Para obtener más información, vea [plantilla de sincronización](synchronizati
 
 Trabajar con la sincronización de API principalmente implica el acceso a los recursos [synchronizationJob](synchronization-synchronizationjob.md) y [synchronizationSchema](synchronization-synchronizationschema.md) . Para encontrar el recurso [synchronizationJob](synchronization-synchronizationjob.md) , debe conocer el identificador del objeto entidad de seguridad que pertenece el trabajo de sincronización. Los siguientes ejemplos muestran cómo trabajar con los recursos **synchronizationJob** y **synchronizationSchema** .
 
-### <a name="authorization"></a>Authorization
+### <a name="authorization"></a>Autorización
 
 La API de sincronización de Azure AD utiliza OAuth 2.0 para la autorización. Antes de realizar las solicitudes de la API, debe obtener un token de acceso. Para obtener más información, vea [tokens de acceso Get para llamar a Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Para obtener acceso a recursos de sincronización, la aplicación necesita permisos de Directory.ReadWrite.All. Para obtener más información, vea [permisos de Active Directory](/graph/permissions-reference#directory-permissions).
 
@@ -68,7 +69,7 @@ En el ejemplo siguiente se muestra cómo buscar el objeto de entidad de segurida
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-**Response**
+**Respuesta**
 
 <!-- { "blockType": "ignored" } -->
 ```http

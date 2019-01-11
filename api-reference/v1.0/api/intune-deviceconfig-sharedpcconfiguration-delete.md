@@ -2,12 +2,13 @@
 title: Eliminar sharedPCConfiguration
 description: Elimina un sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: aca06e7a2d0d3ce6aaa28a7b86274c8c4f44acc3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2564f8cfbd7d9648f7a9362da10f3d00d18c6be9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304399"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883277"
 ---
 # <a name="delete-sharedpcconfiguration"></a>Eliminar sharedPCConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

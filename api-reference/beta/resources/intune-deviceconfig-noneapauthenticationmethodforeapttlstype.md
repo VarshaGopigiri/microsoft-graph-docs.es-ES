@@ -2,12 +2,13 @@
 title: tipo de enumeración nonEapAuthenticationMethodForEapTtlsType
 description: Métodos no EAP para la autenticación.
 author: tfitzmac
-ms.openlocfilehash: 57d24189da1a6bc5f552ad32d2be9c4557539dab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27673d4245f9bea1ef24c25034497b4d5bf7aebd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884185"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>tipo de enumeración nonEapAuthenticationMethodForEapTtlsType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27357270"
 
 Métodos no EAP para la autenticación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |Admiten|0|Contraseña no cifrada (PAP).|
 |challengeHandshakeAuthenticationProtocol|1|Protocolo de autenticación de desafío mutuo (CHAP).|

@@ -1,12 +1,13 @@
 ---
 title: Obtener governanceResource
 description: Recuperar las propiedades y relaciones de un objeto governanceResource.
-ms.openlocfilehash: 55fcea026a2816f33ab6064ea5828d3af4526690
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 16442ea971a635aedfd89f09c48ffddf14c83b95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888035"
 ---
 # <a name="get-governanceresource"></a>Obtener governanceResource
 

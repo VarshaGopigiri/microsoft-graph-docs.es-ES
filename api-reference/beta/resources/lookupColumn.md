@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: LookupColumn
-ms.openlocfilehash: 92eb43dad2ceca173fba79ad7d40f51f488a992c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1c7ab364777e1e3f82bb78d8e0940cf4f85576a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885711"
 ---
 # <a name="lookupcolumn-resource-type"></a>Tipo de recurso LookupColumn
 
@@ -33,7 +34,7 @@ A continuación se incluye una representación JSON de un recurso **LookupColumn
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad             | Tipo    | Descripción
+| Nombre de la propiedad             | Tipo    | Descripción
 |:--------------------------|:--------|:---------------------------------------
 | **allowMultipleValues**   | boolean | Indica si se pueden seleccionar varios valores desde el origen.
 | **allowUnlimitedLength**  | boolean | Indica si los valores de la columna deben poder superar el límite estándar de 255 caracteres.

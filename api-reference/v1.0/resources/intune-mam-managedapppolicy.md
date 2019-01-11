@@ -2,12 +2,13 @@
 title: Tipo de recurso managedAppPolicy
 description: El recurso ManagedAppPolicy representa un tipo base para las directivas específicas de la plataforma.
 author: tfitzmac
-ms.openlocfilehash: b1efe085bc2fc43804049ff4b091e10c458b9a98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5766e3a467a157bac0d876fd0178dc3ba1cb94e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310552"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888085"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 
@@ -24,12 +25,12 @@ El recurso ManagedAppPolicy representa un tipo base para las directivas específ
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|String|Nombre para mostrar de la directiva.|
-|descripción|String|La descripción de la directiva.|
+|displayName|Cadena|Nombre para mostrar de la directiva.|
+|descripción|Cadena|La descripción de la directiva.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación de la directiva.|
 |lastModifiedDateTime|DateTimeOffset|Última vez que se modificó la directiva.|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

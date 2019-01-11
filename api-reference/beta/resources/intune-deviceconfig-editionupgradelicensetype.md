@@ -2,12 +2,13 @@
 title: tipo de enumeración editionUpgradeLicenseType
 description: Tipo de actualización de licencia de edición
 author: tfitzmac
-ms.openlocfilehash: bfaa9cd53e27cedd99026991537e27db9cfbf209
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 90fb91094a8d8dae6ecb1f742edda382e5059791
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318399"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883184"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>tipo de enumeración editionUpgradeLicenseType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27318399"
 
 Tipo de actualización de licencia de edición
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |productKey|0|Tipo de clave de producto|
 |licenseFile|1|Tipo de archivo de licencia|

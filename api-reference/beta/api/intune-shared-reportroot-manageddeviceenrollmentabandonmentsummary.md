@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentAbandonmentSummary (función)
 description: Metadatos para el informe de resumen de abandono de inscripción
 author: tfitzmac
-ms.openlocfilehash: 133f04da7256ec8f1bbec93c9614ce1dfcd477a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c96df67827857e763d67329ce83a81d3bfa39720
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885403"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>managedDeviceEnrollmentAbandonmentSummary (función)
 
@@ -39,18 +40,18 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |skip|Int32|Todavía no documentado|
 |top|Int32|Todavía no documentado|
-|filter|String|Todavía no documentado|
-|skipToken|String|Todavía no documentado|
+|filter|Cadena|Todavía no documentado|
+|skipToken|Cadena|Todavía no documentado|
 
 
 

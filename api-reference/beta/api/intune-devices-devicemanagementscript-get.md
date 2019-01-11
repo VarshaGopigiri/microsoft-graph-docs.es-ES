@@ -2,12 +2,13 @@
 title: Obtener deviceManagementScript
 description: Leer las propiedades y las relaciones del objeto deviceManagementScript.
 author: tfitzmac
-ms.openlocfilehash: 830f7f98795333f22eab30655169e954d38ab782
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b369c57357b9ed07e0ff82ba29c60add61d74b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882281"
 ---
 # <a name="get-devicemanagementscript"></a>Obtener deviceManagementScript
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

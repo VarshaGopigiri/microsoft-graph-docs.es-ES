@@ -2,12 +2,13 @@
 title: tipo de enumeración managedAppFlaggedReason
 description: La razón por la que se ha marcado un usuario
 author: tfitzmac
-ms.openlocfilehash: 395cd446863b88fade45c7160302cd05132f1d52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15c4041b4511ab71ac16520297d5c8bb3e63b4e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888042"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>tipo de enumeración managedAppFlaggedReason
 
@@ -17,9 +18,9 @@ ms.locfileid: "27358425"
 
 La razón por la que se ha marcado un usuario
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|No existe ningún problema.|
+|none|0|No existe ningún problema.|
 |rootedDevice|1|El registro de la aplicación se está ejecutando en un dispositivo con raíz o desbloqueado.|
 
 

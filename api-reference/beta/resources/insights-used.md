@@ -2,12 +2,13 @@
 title: utiliza el tipo de recurso
 description: Una idea que representa documentos usados por un usuario específico. Los conocimientos devuelve los documentos más importantes que se pueden ve ni tener acceso a un usuario.
 author: simonhult
-ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb41fcb7cef5c9e39f9100ebd1d8c2640f06e2d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885536"
 ---
 # <a name="used-resource-type"></a>utiliza el tipo de recurso
 
@@ -28,7 +29,7 @@ Una idea que representa documentos usados por un usuario específico. Los conoci
 
 | Propiedad              | Tipo                      | Descripción  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Identificador único de la relación. Solo lectura.        |
+| id                    | Cadena                    | Identificador único de la relación. Solo lectura.        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | Obtener información acerca de cuándo por última vez el elemento de ve y modifica el usuario. Solo lectura.     |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propiedades que puede usar para visualizar el documento en su experiencia. Solo lectura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propiedades de la referencia del documento usado, por ejemplo, la dirección url y el tipo de documento. Solo lectura     |

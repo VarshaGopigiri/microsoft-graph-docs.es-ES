@@ -2,12 +2,13 @@
 title: Mostrar groupLifecyclePolicies
 description: Recupera una lista de objetos groupLifecyclePolicy a la que pertenece un grupo.
 author: dkershaw10
-ms.openlocfilehash: 9433716e8c2a6f91a15ca23a7aa915974d757bd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b9559078e7859dc8b90240e513a8f4e03bccb69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883226"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Mostrar groupLifecyclePolicies
 

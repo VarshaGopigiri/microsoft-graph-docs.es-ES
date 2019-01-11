@@ -2,12 +2,13 @@
 title: Add directory role member
 description: Usa esta API para crear un miembro de rol de directorio.
 author: lleonard-msft
-ms.openlocfilehash: e82907c47667072fa7234a6d7444298a5e4546f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11b06eac57d0850e8df5233bba47966f6b7932d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347127"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886642"
 ---
 # <a name="add-directory-role-member"></a>Add directory role member
 
@@ -29,7 +30,7 @@ POST /directoryRoles/{id}/members/$ref
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json  |

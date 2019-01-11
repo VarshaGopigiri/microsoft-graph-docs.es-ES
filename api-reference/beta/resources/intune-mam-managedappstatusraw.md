@@ -2,12 +2,13 @@
 title: Tipo de recurso managedAppStatusRaw
 description: Representa un informe de estado sin tipo sobre la configuración y la protección de la aplicación de las organizaciones.
 author: tfitzmac
-ms.openlocfilehash: 9b7c957451e3fc92ad79ef10433e26bf39fd1c48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 975f43d064718b8457b40be707a54a0ea0eb69f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884017"
 ---
 # <a name="managedappstatusraw-resource-type"></a>Tipo de recurso managedAppStatusRaw
 
@@ -29,8 +30,8 @@ Hereda de [managedAppStatus](../resources/intune-mam-managedappstatus.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|String|Nombre descriptivo del informe de estado. Heredado de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
-|id|String|Clave de la entidad. Heredado de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
-|version|String|Versión de la entidad. Heredado de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
+|id|Cadena|Clave de la entidad. Heredado de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
+|version|Cadena|Versión de la entidad. Heredado de [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |content|[Json](../resources/intune-mam-json.md)|Contenido del informe de estado.|
 
 ## <a name="relationships"></a>Relaciones

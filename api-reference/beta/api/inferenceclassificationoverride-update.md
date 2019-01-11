@@ -1,12 +1,13 @@
 ---
 title: Actualizar inferenceClassificationOverride
 description: 'Cambiar el campo **classifyAs** de una bandeja de entrada dirigidos a invalidar tal como se especifica. '
-ms.openlocfilehash: 696b3826bf09d3e0f706a3c3fdfba620e416ef22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b9d462bc09f69b07d5b6b4bce031932e1b702b44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887909"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Actualizar inferenceClassificationOverride
 
@@ -39,7 +40,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsDeviceHealthState
 description: Estado de protección de extremo de equipo
 author: tfitzmac
-ms.openlocfilehash: b794f8121132e396459f9198c644084690fe95b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91869502d0d61c25c6eb8dd67ba4e8e32d28fbb2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885928"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>tipo de enumeración windowsDeviceHealthState
 
@@ -17,7 +18,7 @@ ms.locfileid: "27326330"
 
 Estado de protección de extremo de equipo
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |clean|0|Equipo está limpio y no se requiere ninguna acción|
 |fullScanPending|1|Equipo está en estado de examen completo pendiente|

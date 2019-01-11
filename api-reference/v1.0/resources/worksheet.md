@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Worksheet
 description: Una hoja de cálculo de Excel es una cuadrícula de celdas. Puede contener datos, tablas, gráficos, etc.
-ms.openlocfilehash: 3d2f5a62c8568a8717909c0fbf051566cab3a880
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 50d531aee3ed242f30be2c225ae9cd38bd6c6e89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028710"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884815"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso TableColumn
 description: Representa una columna en una tabla.
 author: lumine2008
-ms.openlocfilehash: d2d83859c15a24624d8711a7ef86e3b0c89448e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c2506c34e25ba4b3754e1fd7b13557b21176e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882120"
 ---
 # <a name="tablecolumn-resource-type"></a>Tipo de recurso TableColumn
 

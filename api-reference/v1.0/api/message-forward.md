@@ -2,12 +2,13 @@
 title: 'message: forward'
 description: Reenvía un mensaje. El mensaje se guarda en la carpeta Elementos enviados.
 author: angelgolfer-ms
-ms.openlocfilehash: fe1b5f9498d8be417818168b83abc56da8986bd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c547b34cdafc3b9706cd5704dd84fb0866c38a50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884780"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -31,7 +32,7 @@ POST /me/mailFolders/{id}/messages/{id}/forward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |comment|String|Comentario que se va a incluir. Puede ser una cadena vacía.|
 |toRecipients|Colección [Recipient](../resources/recipient.md)|La lista de destinatarios.|

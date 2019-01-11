@@ -1,12 +1,13 @@
 ---
 title: Trabajar con archivos en Microsoft Graph
 description: Puede utilizar Microsoft Graph para crear una aplicación que se conecte con archivos a través de las bibliotecas de documentos de OneDrive, OneDrive para la Empresa y SharePoint. Con Microsoft Graph puede crear una variedad de experiencias con archivos almacenados en Office 365, desde simplemente almacenar documentos de usuario a escenarios complejos de uso compartido de archivos.
-ms.openlocfilehash: 6b25f279fbbc6386e110647cc25e882f7a388220
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8b44324987b94c824ed71da558b9ee3e5ded2d83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887167"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Trabajar con archivos en Microsoft Graph
 

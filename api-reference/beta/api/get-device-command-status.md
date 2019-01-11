@@ -1,12 +1,13 @@
 ---
 title: Obtener el estado del comando de dispositivo
 description: Obtener el estado de un comando en un dispositivo. Para obtener la lista completa de códigos de estado, vea la lista de actionStatus.
-ms.openlocfilehash: 1e51d3b4366e87d9802518a50fe348d3ba0f250d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9dca743a50f248abee76fb4d54352df3d400ada1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883135"
 ---
 # <a name="get-device-command-status"></a>Obtener el estado del comando de dispositivo
 

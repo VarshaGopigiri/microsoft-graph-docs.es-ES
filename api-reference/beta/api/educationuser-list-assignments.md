@@ -1,12 +1,13 @@
 ---
 title: Asignaciones de listas
 description: Devuelve una lista de las asignaciones asignadas a un usuario para todas las clases. Este espacio de nombres de utilidad permite que un autor de la llamada buscar las asignaciones de todos los de un estudiante en una única llamada en lugar de tener que solicitar las asignaciones de cada clase. La lista de asignación contiene lo que se necesita para obtener la información detallada para la asignación de espacio de nombres de clase. Todas las otras operaciones en la asignación deben usar el espacio de nombres de clase.
-ms.openlocfilehash: 7c70d6bab1f143caa232e2be89a1f02870d251ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92a52f38a305515824a34e87bc3d23d16a2be4c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084304"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883207"
 ---
 # <a name="list-assignments"></a>Asignaciones de listas
 

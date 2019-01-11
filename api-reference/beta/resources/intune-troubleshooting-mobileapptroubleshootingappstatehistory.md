@@ -2,12 +2,13 @@
 title: tipo de recurso mobileAppTroubleshootingAppStateHistory
 description: Elemento de historial de contenidos en el evento de solución de problemas de aplicación móvil.
 author: tfitzmac
-ms.openlocfilehash: ebe38b852c6c6926b69e75379bc1a029ade0bb98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65ee72ed0c265f2e989e82dfdcc28d27605d4753
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885571"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppStateHistory
 
@@ -20,7 +21,7 @@ Elemento de historial de contenidos en el evento de solución de problemas de ap
 Hereda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Tiempo que se produjo el elemento de historial. Se hereda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|Identificador de grupo de seguridad AAD a la que se ha destinado. Los valores posibles son: `unknown`, `installCommandSent`, `installed`, `uninstalled` y `userRequestedInstall`.|

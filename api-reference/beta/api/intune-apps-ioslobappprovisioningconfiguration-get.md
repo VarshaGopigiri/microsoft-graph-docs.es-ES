@@ -2,12 +2,13 @@
 title: Obtener iosLobAppProvisioningConfiguration
 description: Leer las propiedades y las relaciones del objeto iosLobAppProvisioningConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 73faa38e0c9b0e4b0ef1f7ec4eda9b06d6b33588
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 942818ef47c6fecabb2dc4cb8870fda8a3e289f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832714"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Obtener iosLobAppProvisioningConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

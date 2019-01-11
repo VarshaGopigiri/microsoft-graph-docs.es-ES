@@ -1,18 +1,19 @@
 ---
 title: tipo de recurso office365ActiveUserCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 63d0469f5531d68a7b81c37014103a02e977e870
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 887f9b08d7f46aac023fbd0f34e6174e5f422760
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882722"
 ---
 # <a name="office365activeusercounts-resource-type"></a>tipo de recurso office365ActiveUserCounts
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad          | Tipo   | Descripción                              |
+| Propiedad          | Tipo   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Fecha   | La fecha más reciente del contenido.          |
 | office365         | Int64  | El número de usuarios activos en Office 365. Este número incluye todos los usuarios activos en Exchange, OneDrive, SharePoint, Skype para profesionales, Yammer y Microsoft Teams. Puede encontrar la definición de usuario activo para cada producto en la descripción de la propiedad respectivos. |
@@ -23,7 +24,7 @@ ms.locfileid: "27086521"
 | yammer            | Int64  | El número de usuarios activos en Yammer. Cualquier usuario que puede enviar, leer o mensajes se considera un usuario activo. |
 | equipos             | Int64  | El número de usuarios activos en Microsoft Teams. Cualquier usuario que mensajes expuestos en los canales de equipo, los mensajes enviados en las sesiones de chat privado o participaron en las reuniones o las llamadas se considera un usuario activo. |
 | reportDate        | Fecha   | La fecha en la que se activa un número de usuarios. |
-| reportPeriod      | String | El número de días que cubre el informe.    |
+| reportPeriod      | Cadena | El número de días que cubre el informe.    |
 
 ## <a name="json-representation"></a>Representación JSON
 

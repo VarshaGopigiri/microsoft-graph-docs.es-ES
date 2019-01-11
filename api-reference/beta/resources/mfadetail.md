@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso mfaDetail
 description: 'Indica los detalles MFA para una sesión específica. Incluye el método de autenticación usado para iniciar sesión, así como detalles de autenticación (por ejemplo: teléfono, SMS o correo de voz) '
-ms.openlocfilehash: a377c8648ebc8a6e3eb10fb6b0b87df066f8f2cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5069045fd202d443a94a80f7333f12ab5e707ada
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086421"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883744"
 ---
 # <a name="mfadetail-resource-type"></a>tipo de recurso mfaDetail
 Indica los detalles MFA para una sesión específica. Incluye el método de autenticación usado para iniciar sesión, así como detalles de autenticación (por ejemplo: teléfono, SMS o correo de voz) 
@@ -14,10 +15,10 @@ Indica los detalles MFA para una sesión específica. Incluye el método de aute
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|authDetail|String|Indica el detalle de la autenticación MFA para la actividad de inicio de sesión correspondiente cuando el MFA requerido es "Sí".|
-|método authMethod|String|Indica los métodos de autenticación MFA (SMS, teléfono, aplicación Authenticator son algunas del valor) para la actividad de inicio de sesión correspondiente cuando el campo MFA necesario es "Yes".|
+|authDetail|Cadena|Indica el detalle de la autenticación MFA para la actividad de inicio de sesión correspondiente cuando el MFA requerido es "Sí".|
+|método authMethod|Cadena|Indica los métodos de autenticación MFA (SMS, teléfono, aplicación Authenticator son algunas del valor) para la actividad de inicio de sesión correspondiente cuando el campo MFA necesario es "Yes".|
 
 ## <a name="json-representation"></a>Representación JSON
 

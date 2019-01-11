@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Cuota
-ms.openlocfilehash: f4518021da8ad180b91472feb52199678c2edc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a63b41253569dbb3d666a76b0a7495839ef61b12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882414"
 ---
 # <a name="quota-resource-type"></a>tipo de recurso de cuota
 
@@ -41,13 +42,13 @@ Aquí tiene una representación JSON del recurso.
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad | Tipo   | Descripción                                                                 |
+| Nombre de la propiedad | Tipo   | Descripción                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
 | total         | Int64  | Espacio total de almacenamiento permitido, en bytes. Solo lectura.                           |
 | used          | Int64  | Espacio total usado, en bytes. Solo lectura.                                      |
 | remaining     | Int64  | Espacio total restante antes de alcanzar el límite de cuota, en bytes. Solo lectura. |
 | deleted       | Int64  | Espacio total consumido por los archivos de la Papelera de reciclaje, en bytes. Solo lectura.      |
-| estado         | string | Valor de enumeración que indica el estado del espacio de almacenamiento. Solo lectura. |
+| state         | string | Valor de enumeración que indica el estado del espacio de almacenamiento. Solo lectura. |
 | storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Información acerca de los planes de cuota de almacenamiento de información de la unidad. Sólo en OneDrive Personal.|
 
 ### <a name="state-enumeration-values"></a>Valores de estado (enumeración)

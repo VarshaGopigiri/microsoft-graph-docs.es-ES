@@ -2,12 +2,13 @@
 title: 'workbookRange: columnsAfter'
 description: Obtiene un número determinado de columnas a la derecha del rango especificado.
 author: lumine2008
-ms.openlocfilehash: b80657c6afb7709049a1e0ccaa3c3b232f5501c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49d2f19622d55297abe9748dff4b91a7a219fda8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886173"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -31,7 +32,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |count|Int32|Opcional. El número de columnas que se incluirán en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede utilizar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1|
 

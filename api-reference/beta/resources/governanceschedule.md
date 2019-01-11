@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso governanceSchedule
 description: 'Representa la programación de un governanceRoleAssignmentRequest. Para una solicitud de asignación de rol, la programación controla cuándo se debe realizar la operación de asignación de rol, cuándo se debe detener la asignación de roles y la frecuencia con que realizar la operación de asignación de rol. '
-ms.openlocfilehash: 6eff3977aa7806c975f968b8706f2e8c21e5d99e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8bf36b786adbd8064ee0c00c0ce293408c6e2b7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882316"
 ---
 # <a name="governanceschedule-resource-type"></a>tipo de recurso governanceSchedule
 
@@ -21,7 +22,7 @@ Representa la programación de un [governanceRoleAssignmentRequest](../resources
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|La hora de inicio de la asignación de roles. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|La hora de finalización de la asignación de roles. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. *Nota: si el valor es `null`, indica una asignación permanente.*|
-|type|String|Tipo de programación de la asignación de roles. Sólo `Once` es compatible con este momento.
+|type|Cadena|Tipo de programación de la asignación de roles. Sólo `Once` es compatible con este momento.
 |duration|Duración|La duración de una asignación de roles. Está en formato de un objeto TimeSpan.|
 
 ## <a name="json-representation"></a>Representación JSON

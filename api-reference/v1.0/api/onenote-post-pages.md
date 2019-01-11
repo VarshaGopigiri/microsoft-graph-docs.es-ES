@@ -2,12 +2,13 @@
 title: Crear página
 description: Cree una página de OneNote en la sección predeterminada del bloc de notas predeterminado.
 author: Jewan-microsoft
-ms.openlocfilehash: 7d8faf66d95bdeaf5e566a70026f1bc894cc2803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 373ed0a8e63014efe853843fc111c638617b868a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884444"
 ---
 # <a name="create-page"></a>Crear página
 
@@ -36,7 +37,7 @@ POST /sites/{id}/onenote/pages
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud  
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `text/html` o `application/xhtml+xml` para el contenido HTML, también para la parte requerida "Presentación" de las solicitudes de varias partes. Las solicitudes de varias partes usan el tipo de contenido `multipart/form-data; boundary=your-boundary`. |

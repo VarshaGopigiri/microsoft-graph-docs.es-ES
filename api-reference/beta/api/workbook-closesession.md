@@ -2,12 +2,13 @@
 title: Cerrar sesión
 description: 'Use esta API para cerrar una sesión existente del libro. '
 author: lumine2008
-ms.openlocfilehash: b44e708616bd6f115c166f5c66d74a54fb3734b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9caf1a6b055522966ff35c8c1726642d57df262
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324965"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883679"
 ---
 # <a name="close-session"></a>Cerrar sesión
 

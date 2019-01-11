@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de conector
 description: Aquí tiene una representación JSON del recurso.
-ms.openlocfilehash: 6d4cb7e5ca1a5384dbb6c8be92e7ce4eb107388a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884626"
 ---
 # <a name="connector-resource-type"></a>tipo de recurso de conector
 
@@ -27,15 +28,15 @@ ms.locfileid: "27089600"
 |[Enumerar memberOf](../api/connector-list-memberof.md) |colección de [connectorGroup](connectorgroup.md)| Obtenga el objeto connectorGroup asociado con el conector.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|externalIp|String|La dirección IP externa como detectados por el servicio para la máquina de conector. Solo lectura|
-|id|String| El identificador del objeto del conector. <BR>Solo lectura.|
-|nombreEquipo|String| El nombre de la máquina que se está ejecutando el conector. <BR>Solo lectura|
+|externalIp|Cadena|La dirección IP externa como detectados por el servicio para la máquina de conector. Solo lectura|
+|id|Cadena| El identificador del objeto del conector. <BR>Solo lectura.|
+|nombreEquipo|Cadena| El nombre de la máquina que se está ejecutando el conector. <BR>Solo lectura|
 |status|string| Indica el estado del conector. Los valores posibles son: `active` y `inactive`. Solo lectura |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |memberOf|colección de [connectorGroup](connectorgroup.md)| El connectorGroup que la conexión es un miembro de.<br>Solo lectura. |
 

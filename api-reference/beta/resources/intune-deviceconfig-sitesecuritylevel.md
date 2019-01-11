@@ -2,12 +2,13 @@
 title: tipo de enumeración siteSecurityLevel
 description: Valores posibles para el nivel de seguridad de sitios.
 author: tfitzmac
-ms.openlocfilehash: 58138b6a3c2e7ff245a1dfa78fabea2d7db01ba5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6010b699ea7915462debede5dbda7e3a4f01b518
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885452"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>tipo de enumeración siteSecurityLevel
 
@@ -17,7 +18,7 @@ ms.locfileid: "27307514"
 
 Valores posibles para el nivel de seguridad de sitios.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |baja|1|Bajo.|

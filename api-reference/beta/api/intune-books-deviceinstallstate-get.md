@@ -2,12 +2,13 @@
 title: Obtener deviceInstallState
 description: Lea las propiedades y las relaciones del objeto deviceInstallState.
 author: tfitzmac
-ms.openlocfilehash: a01272118b837460c664e45baeb00948f29a2ad5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 686024fb72a32857104470152b56ae64e7d9140e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883464"
 ---
 # <a name="get-deviceinstallstate"></a>Obtener deviceInstallState
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

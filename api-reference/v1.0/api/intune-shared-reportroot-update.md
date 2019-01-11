@@ -2,12 +2,13 @@
 title: Actualizar reportRoot
 description: Actualice las propiedades de un objeto reportRoot.
 author: tfitzmac
-ms.openlocfilehash: a8beb97dc236ec9a4db4584619184613268ce071
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ba6c192b69975eef2f60b09f5bb2fc43e43d51b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885193"
 ---
 # <a name="update-reportroot"></a>Actualizar reportRoot
 
@@ -38,7 +39,7 @@ PATCH /reports
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [reportRoot](../resources/intune-shared-reportroot.md).

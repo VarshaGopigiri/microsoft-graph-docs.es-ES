@@ -2,12 +2,13 @@
 title: tipo de enumeración defenderSecurityCenterNotificationsFromAppType
 description: Valores posibles para defenderSecurityCenterNotificationsFromApp
 author: tfitzmac
-ms.openlocfilehash: 13bba5deea6bf399654c8d08f449039d52f31371
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c44cb63fb18f60fa94171d7fe6cfe56d99b97672
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347281"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883156"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>tipo de enumeración defenderSecurityCenterNotificationsFromAppType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347281"
 
 Valores posibles para defenderSecurityCenterNotificationsFromApp
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|No configurado|
 |blockNoncriticalNotifications|1|Bloquear las notificaciones que no sean críticos|

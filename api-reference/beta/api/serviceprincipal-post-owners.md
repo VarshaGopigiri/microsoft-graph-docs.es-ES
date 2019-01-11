@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: agregar propietario'
 description: Utilice esta API para agregar un propietario para la entidad de seguridad de servicio.
-ms.openlocfilehash: 79ffb0d8d6c680b517421455cee011b3764c8f15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1bfb82589c730512ba877a94b55d565a6a44d4b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887160"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: agregar propietario
 
@@ -32,7 +33,7 @@ POST /servicePrincipals/{id}/owners
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryObject](../resources/directoryobject.md).

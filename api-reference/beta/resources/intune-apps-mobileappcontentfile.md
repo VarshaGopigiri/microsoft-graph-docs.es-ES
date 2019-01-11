@@ -2,12 +2,13 @@
 title: Tipo de recurso mobileAppContentFile
 description: Contiene las propiedades de un archivo instalador único que está asociado a una versión de mobileAppContent determinada.
 author: tfitzmac
-ms.openlocfilehash: 4fd72fd43355cda820113797af627be6bdb37a98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7b4f05d75d2894664188b0ae6176def8011b2de7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348667"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851158"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -30,18 +31,18 @@ Contiene las propiedades de un archivo instalador único que está asociado a un
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|azureStorageUri|String|El URI de Azure Storage.|
-|isCommitted|Boolean|Un valor que indica si el archivo está confirmado.|
-|id|String|El Id. de archivo.|
+|azureStorageUri|Cadena|El URI de Azure Storage.|
+|isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
+|id|Cadena|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
-|name|String|El nombre del archivo.|
+|name|Cadena|El nombre del archivo.|
 |size|Int64|El tamaño del archivo antes del cifrado.|
 |sizeEncrypted|Int64|El tamaño del archivo después del cifrado.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|La hora en que expira el URI de Azure Storage.|
 |manifiesto|Binario|La información del manifiesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|El estado de la solicitud de carga actual. Los valores posibles son: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` y `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|Un valor que indica si el archivo es un archivo de framework.|
-|isDependency|Boolean|Si el archivo de contenido es una dependencia para el archivo de contenido principal.|
+|isFrameworkFile|Booleano|Un valor que indica si el archivo es un archivo de framework.|
+|isDependency|Booleano|Si el archivo de contenido es una dependencia para el archivo de contenido principal.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

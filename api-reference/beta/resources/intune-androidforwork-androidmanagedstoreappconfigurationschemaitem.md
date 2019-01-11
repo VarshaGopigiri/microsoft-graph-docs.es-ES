@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 description: Elemento de configuración único dentro de esquema de configuración personalizada de la aplicación Android.
-ms.openlocfilehash: 94ae8735800e4f79be2e7c61f8b971bafd8c394f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 05bf7e945ef645368c4b421b2180e4f4c342ec69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886649"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 

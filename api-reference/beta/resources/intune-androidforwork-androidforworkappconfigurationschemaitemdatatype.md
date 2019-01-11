@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración androidForWorkAppConfigurationSchemaItemDataType
 description: Tipo de datos para un elemento de configuración dentro de un Android para el esquema de la configuración personalizada de la aplicación de trabajo
-ms.openlocfilehash: cda4a7fe0d26050c9d8422cb5cfa866347ca9810
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff5ca9fedd3632960bf249dd40fb3e8a98ab23a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886628"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>tipo de enumeración androidForWorkAppConfigurationSchemaItemDataType
 
@@ -16,12 +17,12 @@ ms.locfileid: "27084772"
 
 Tipo de datos para un elemento de configuración dentro de un Android para el esquema de la configuración personalizada de la aplicación de trabajo
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |bool|0|Todavía no documentado|
 |integer|1|Todavía no documentado|
 |string|2|Todavía no documentado|
-|elección|3|Todavía no documentado|
+|choice|3|Todavía no documentado|
 |MultiSelect|4|Todavía no documentado|
 |bundle|5|Todavía no documentado|
 |bundleArray|6|Todavía no documentado|

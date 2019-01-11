@@ -2,12 +2,13 @@
 title: tipo de recurso windowsProtectionState
 description: Entidad de estado de protección de dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 636b969ddafde5976939df764ae1180e19a181c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a21cc27039f3119836e0027b2558cadadab1b5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884108"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>tipo de recurso windowsProtectionState
 
@@ -25,27 +26,27 @@ Entidad de estado de protección de dispositivo.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único para el objeto de estado de protección de dispositivo. Esto es el identificador de dispositivo del dispositivo|
-|malwareProtectionEnabled|Boolean|Protección contra malware está habilitado o no|
+|id|Cadena|El identificador único para el objeto de estado de protección de dispositivo. Esto es el identificador de dispositivo del dispositivo|
+|malwareProtectionEnabled|Booleano|Protección contra malware está habilitado o no|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado del equipo (como clean o pendiente de examen completo o pendientes reinicio etcetera). Los valores posibles son: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Boolean|¿Protección en tiempo real está habilitada o no?|
-|networkInspectionSystemEnabled|Boolean|¿Sistema de control de red habilitado o no?|
-|quickScanOverdue|Boolean|¿Rápido examinar vencidas o no?|
-|fullScanOverdue|Boolean|¿Total de examen vencida o no?|
-|signatureUpdateOverdue|Boolean|¿Firma caducada o no?|
-|rebootRequired|Boolean|¿Es necesario reiniciar o no?|
-|fullScanRequired|Boolean|¿Examen completo o no necesario?|
-|engineVersion|String|Versión del motor de actual extremo protección|
-|signatureVersion|String|Versión actual de las definiciones de malware|
-|antiMalwareVersion|String|Actual de protección contra malware versión|
+|realTimeProtectionEnabled|Booleano|¿Protección en tiempo real está habilitada o no?|
+|networkInspectionSystemEnabled|Booleano|¿Sistema de control de red habilitado o no?|
+|quickScanOverdue|Booleano|¿Rápido examinar vencidas o no?|
+|fullScanOverdue|Booleano|¿Total de examen vencida o no?|
+|signatureUpdateOverdue|Booleano|¿Firma caducada o no?|
+|rebootRequired|Booleano|¿Es necesario reiniciar o no?|
+|fullScanRequired|Booleano|¿Examen completo o no necesario?|
+|engineVersion|Cadena|Versión del motor de actual extremo protección|
+|signatureVersion|Cadena|Versión actual de las definiciones de malware|
+|antiMalwareVersion|Cadena|Actual de protección contra malware versión|
 |lastQuickScanDateTime|DateTimeOffset|Fecha y hora último análisis rápido|
 |lastFullScanDateTime|DateTimeOffset|Fecha y hora último análisis rápido|
-|lastQuickScanSignatureVersion|String|Última versión de firma de análisis rápido|
-|lastFullScanSignatureVersion|String|Última versión de firma de examen completo|
+|lastQuickScanSignatureVersion|Cadena|Última versión de firma de análisis rápido|
+|lastFullScanSignatureVersion|Cadena|Última versión de firma de examen completo|
 |lastReportedDateTime|DateTimeOffset|Último estado de mantenimiento de dispositivo el tiempo notificado|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |detectedMalwareState|colección de [windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md)|Lista de dispositivos de malware|
 

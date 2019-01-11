@@ -1,12 +1,13 @@
 ---
 title: Obtener objetos de miembro
 description: " Devuelve todos los grupos y roles de directorio de los que un usuario, grupo u objeto de directorio sea miembro. Esta función es transitiva. "
-ms.openlocfilehash: b9e0cd4221f4016ccc98302d194ceef8b1622707
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b7c4c09991d31141e12fb6cd900309f81e22f8e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815914"
 ---
 # <a name="get-member-objects"></a>Obtener objetos de miembro
 
@@ -34,7 +35,7 @@ POST /directoryObjects/{id}/getMemberObjects
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type   | string  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

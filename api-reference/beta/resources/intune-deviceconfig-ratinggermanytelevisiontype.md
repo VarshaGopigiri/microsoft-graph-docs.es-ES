@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingGermanyTelevisionType
 description: Etiquetas de clasificación de contenido de TV en Alemania
 author: tfitzmac
-ms.openlocfilehash: 4e619682d37dce6612624213de232893aa986694
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8d23ab7654e872c506ec430d982e4bcf0e139a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884031"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>tipo de enumeración ratingGermanyTelevisionType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27345363"
 
 Etiquetas de clasificación de contenido de TV en Alemania
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

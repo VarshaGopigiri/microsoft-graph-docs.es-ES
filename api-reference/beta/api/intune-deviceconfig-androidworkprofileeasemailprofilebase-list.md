@@ -2,12 +2,13 @@
 title: Lista androidWorkProfileEasEmailProfileBases
 description: Propiedades de la lista y relaciones de los objetos androidWorkProfileEasEmailProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 76b92ddb14b9eab878ac4b99390af2988dac6f84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54dfe18b37dd5f0324106f0070b65fb9e82efb1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308018"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887839"
 ---
 # <a name="list-androidworkprofileeasemailprofilebases"></a>Lista androidWorkProfileEasEmailProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

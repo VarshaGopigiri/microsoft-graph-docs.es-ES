@@ -2,12 +2,13 @@
 title: Tipo de recurso conversationThread
 description: Un recurso conversationThread es una colección de posts.
 author: dkershaw10
-ms.openlocfilehash: 1456b32a26b279b917930740ca220025e8858590
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89f57e90551efbea435181c35751d54168c498f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886432"
 ---
 # <a name="conversationthread-resource-type"></a>Tipo de recurso conversationThread
 Un recurso conversationThread es una colección de [posts](post.md).
@@ -29,7 +30,7 @@ La colección de destinatarios de la última publicación son los destinatarios 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del hilo.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios CC: del hilo.|
 |topic|String|El tema de la conversación. Esta propiedad se puede establecer al crear la conversación, pero no se puede actualizar.||

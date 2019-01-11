@@ -2,12 +2,13 @@
 title: tipo de recurso mediaPrompt
 description: El tipo de mediaPrompt.
 author: VinodRavichandran
-ms.openlocfilehash: 4782772f463a613a759ad3b2b25cb05e7e160555
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 31e1e0e1d842c758cddfb78a39b2dcc185e97ec9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380292"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884269"
 ---
 # <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
 
@@ -17,7 +18,7 @@ El tipo de mediaPrompt.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad    | Tipo                      | Descripción                                                                     |
+| Propiedad    | Tipo                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
 | bucle        | Int32                     | El recuento del bucle. el valor 0 indica que el bucle indefinido. El valor predeterminado es `1`. |
 | mediaInfo   | [mediaInfo](mediainfo.md) | La información de medios                                                           |

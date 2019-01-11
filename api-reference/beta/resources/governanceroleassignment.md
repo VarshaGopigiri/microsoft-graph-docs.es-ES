@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso governanceRoleAssignment
 description: Representa la asignación de un usuario o grupo a una función.
-ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882694"
 ---
 # <a name="governanceroleassignment-resource-type"></a>tipo de recurso governanceRoleAssignment
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
@@ -31,16 +32,16 @@ No `POST`, `PUT`, `PATCH`, o `DELETE` operaciones son compatibles con el `roleAs
 ## <a name="properties"></a>Propiedades
 | Propiedad  | Tipo      |Descripción|
 |:----------|:----------|:----------|
-|id         |String     |El identificador de la asignación de roles. Está en formato de GUID.|
-|resourceId |Cadena     |Obligatorio. El identificador del recurso que está asociada la asignación de roles. |
-|roleDefinitionId|Cadena|Obligatorio. El identificador de la definición de roles que está asociada la asignación de roles. |
-|///SubjectID|Cadena       |Obligatorio. El identificador del sujeto que está asociada la asignación de roles. |
-|linkedEligibleRoleAssignmentId|String|Si se trata de un `active assignment` y creado debido a la activación en un `eligible assignment`, que representa el identificador de la que `eligible assignment`; De lo contrario, el valor es `null`. |
+|id         |Cadena     |El identificador de la asignación de roles. Está en formato de GUID.|
+|resourceId |Cadena     |Necesario. El identificador del recurso que está asociada la asignación de roles. |
+|roleDefinitionId|Cadena|Necesario. El identificador de la definición de roles que está asociada la asignación de roles. |
+|///SubjectID|Cadena       |Necesario. El identificador del sujeto que está asociada la asignación de roles. |
+|linkedEligibleRoleAssignmentId|Cadena|Si se trata de un `active assignment` y creado debido a la activación en un `eligible assignment`, que representa el identificador de la que `eligible assignment`; De lo contrario, el valor es `null`. |
 |externalId   |String     |El identificador externo el recurso que se usa para identificar la asignación de roles en el proveedor.|
 |startDateTime|DateTimeOffset|La hora de inicio de la asignación de roles. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|Para una asignación de roles de no permanente, es la hora cuando la asignación de rol caducará. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|assignmentState|String  |El estado de la asignación. El valor puede ser <ul><li> `Eligible`para asignación optan</li><li> `Active`-Si está asignada directamente `Active` por los administradores, o activado en una asignación optan por los usuarios.</li></ul>|
-|memberType|String      |El tipo de miembro. El valor puede ser: <ul><li>`Inherited`-la asignación de roles se hereda de un ámbito de recurso primario</li><li>`Group`-la asignación de roles no se hereda, pero procede de la pertenencia de una asignación de grupo</li><li>`User`-ni se hereda la asignación de roles ni desde una asignación de grupo.</li></ul>|
+|assignmentState|Cadena  |El estado de la asignación. El valor puede ser <ul><li> `Eligible`para asignación optan</li><li> `Active`-Si está asignada directamente `Active` por los administradores, o activado en una asignación optan por los usuarios.</li></ul>|
+|memberType|Cadena      |El tipo de miembro. El valor puede ser: <ul><li>`Inherited`-la asignación de roles se hereda de un ámbito de recurso primario</li><li>`Group`-la asignación de roles no se hereda, pero procede de la pertenencia de una asignación de grupo</li><li>`User`-ni se hereda la asignación de roles ni desde una asignación de grupo.</li></ul>|
 
 
 ## <a name="relationships"></a>Relaciones

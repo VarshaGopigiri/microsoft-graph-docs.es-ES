@@ -2,12 +2,13 @@
 title: Actualizar evento
 description: Actualizar las propiedades del objeto event.
 author: angelgolfer-ms
-ms.openlocfilehash: 05612f50b038f491598b98c5661fac17238419df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09ebb87d33a7fe3d32281e6b83fde3bd7b3efefc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883065"
 ---
 # <a name="update-event"></a>Actualizar evento
 
@@ -44,7 +45,7 @@ PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 
@@ -65,10 +66,10 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | recurrence|PatternedRecurrence|El patrón de periodicidad del evento.|
 | reminderMinutesBeforeStart|Int32|El número de minutos antes de la hora de inicio del evento en que se producirá la alerta del recordatorio.|
 | responseRequested|Booleano|Se establece en true si el remitente quiere una respuesta cuando el evento se acepta o rechaza.|
-| sensitivity|String| Los valores posibles son: `normal`, `personal`, `private`, `confidential`.|
+| sensitivity|Cadena| Los valores posibles son: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|El estado que se mostrará. Los valores posibles son: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 | start|DateTimeTimeZone|La hora de inicio del evento. <br/><br/>De manera predeterminada, la hora de inicio está en formato UTC. Puede especificar una zona horaria opcional en StartTimeZone, expresar la hora de inicio en esa zona horaria e incluir una diferencia horaria de UTC. Tenga en cuenta que, si usa StartTimeZone, debe especificar también un valor para EndTimeZone.<br/><br/>En este ejemplo, se especifica el 25 de febrero de 2015, a las 7:34 p. m. en hora estándar del Pacífico: "2015-02-25T19:34:00-08:00".  |
-| subject|String|El texto de la línea de asunto del evento.|
+| subject|Cadena|El texto de la línea de asunto del evento.|
 
 Debido a que el recurso de **evento** es compatible con [las extensiones](/graph/extensibility-overview), puede usar el `PATCH` operación para agregar, actualizar o eliminar sus propios datos específicas de la aplicación en las propiedades personalizadas de una extensión en una instancia de **evento** existente.
 

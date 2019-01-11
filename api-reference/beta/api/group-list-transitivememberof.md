@@ -1,12 +1,13 @@
 ---
 title: Miembro de lista grupo transitiva
 description: Obtener grupos y unidades administrativas que el grupo es un miembro de.  Esta operación es transitiva y también incluirá todos los grupos que este grupo es un miembro anidado de. A diferencia de la introducción Office 365 grupos de un usuario, esto devuelve todos los tipos de grupos, no sólo Office 365 grupos.
-ms.openlocfilehash: e622ee484a4070560c38528bccfe7f12e2172d54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2dececa36b96cfae866afe2f03d4ebb926467ae0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887405"
 ---
 # <a name="list-group-transitive-memberof"></a>Miembro de lista grupo transitiva
 
@@ -36,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](/graph/query-paramete
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

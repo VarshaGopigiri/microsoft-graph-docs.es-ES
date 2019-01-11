@@ -2,12 +2,13 @@
 title: Actualizar windowsManagementApp
 description: Actualizar las propiedades de un objeto windowsManagementApp.
 author: tfitzmac
-ms.openlocfilehash: 4e14dc250167fed09969cea82b8291ce4bd9bf97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 182dd2ef39a322c38497dd8b714945724bf5b12e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886754"
 ---
 # <a name="update-windowsmanagementapp"></a>Actualizar windowsManagementApp
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) .
@@ -47,8 +48,8 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para la aplicación de administración de Windows|
-|availableVersion|String|Versión disponible de Windows management app.|
+|id|Cadena|Identificador único para la aplicación de administración de Windows|
+|availableVersion|Cadena|Versión disponible de Windows management app.|
 
 
 

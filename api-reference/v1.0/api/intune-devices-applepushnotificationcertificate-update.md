@@ -2,12 +2,13 @@
 title: Actualizar applePushNotificationCertificate
 description: Actualice las propiedades de un objeto applePushNotificationCertificate.
 author: tfitzmac
-ms.openlocfilehash: b81a6a9dc887ddfea387a904219bba529729d01a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b0726ba347e9dd2c74e2c35c16f60935ac39465
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335346"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884892"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Actualizar applePushNotificationCertificate
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).

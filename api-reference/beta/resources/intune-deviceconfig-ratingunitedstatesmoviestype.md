@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingUnitedStatesMoviesType
 description: Películas clasificación etiquetas en Estados Unidos
 author: tfitzmac
-ms.openlocfilehash: d408d16dd0f026a6e2ab3711a9600f1423db7f6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22861c0b05fc6a3dacbf520d03ee04b516dad3e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887846"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de enumeración ratingUnitedStatesMoviesType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27317230"
 
 Películas clasificación etiquetas en Estados Unidos
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las películas|
 |allBlocked|1|No permitir cualquier contenido de películas|

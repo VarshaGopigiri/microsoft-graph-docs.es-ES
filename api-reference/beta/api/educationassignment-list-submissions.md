@@ -2,12 +2,13 @@
 title: Envíos de lista
 description: Lista de todos los envíos asociados a esta asignación. Un profesor puede obtener todas las presentaciones mientras un estudiante sólo puede obtener los envíos que están asociadas.
 author: dipakboyed
-ms.openlocfilehash: ac7bd47b4cbc4549f38239c4a68504bd20b3a2e8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b807a1b19bdb47e3b184ffdce4a15b38740c574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308431"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883219"
 ---
 # <a name="list-submissions"></a>Envíos de lista
 

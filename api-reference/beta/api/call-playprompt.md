@@ -2,12 +2,13 @@
 title: 'llamar a: playPrompt'
 description: Reproducir un símbolo del sistema en la llamada.
 author: VinodRavichandran
-ms.openlocfilehash: e432375fdfc9d31822698997f4fda27180e08ac9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 47d4dac56f1424f71fff20f63c9d68f3f09d3926
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883660"
 ---
 # <a name="call-playprompt"></a>llamar a: playPrompt
 
@@ -40,10 +41,10 @@ POST /applications/{id}/calls/{id}/playPrompt
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
 |solicita|colección de [símbolo del sistema](../resources/prompt.md)||
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Si tiene éxito, este método devuelve `200 OK` objeto de código y [playPromptOperation](../resources/playPromptOperation.md) de respuesta en el cuerpo de la respuesta.

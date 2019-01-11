@@ -2,12 +2,13 @@
 title: insightIdentity
 description: Tipo complejo que contiene las propiedades de los elementos compartidos.
 author: simonhult
-ms.openlocfilehash: 648242b827c0390029522955b0fe6347b98100c4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 395c865a38ebe6ea84dc64857f441cd529e4f2d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886579"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -30,6 +31,6 @@ Aquí tiene una representación JSON del recurso
 
 | Propiedad              | Tipo          | Descripción  |
 | -------------         |-----------    | -------------|
-| displayName       | String          | El nombre para mostrar del usuario que comparte el elemento. |
-| id              | String        | El identificador del usuario que comparte el elemento.     |
-| address             | String      | La dirección de correo electrónico del usuario que comparte el elemento.  |
+| displayName       | Cadena          | El nombre para mostrar del usuario que comparte el elemento. |
+| id              | Cadena        | El identificador del usuario que comparte el elemento.     |
+| address             | Cadena      | La dirección de correo electrónico del usuario que comparte el elemento.  |

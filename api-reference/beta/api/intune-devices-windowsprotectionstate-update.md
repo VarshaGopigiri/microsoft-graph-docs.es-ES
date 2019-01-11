@@ -2,12 +2,13 @@
 title: Actualizar windowsProtectionState
 description: Actualizar las propiedades de un objeto windowsProtectionState.
 author: tfitzmac
-ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97a11b8a3a26bea6f59cf0791bc8f5356f6fdb85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308711"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886873"
 ---
 # <a name="update-windowsprotectionstate"></a>Actualizar windowsProtectionState
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .
@@ -48,23 +49,23 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único para el objeto de estado de protección de dispositivo. Esto es el identificador de dispositivo del dispositivo|
-|malwareProtectionEnabled|Boolean|Protección contra malware está habilitado o no|
+|id|Cadena|El identificador único para el objeto de estado de protección de dispositivo. Esto es el identificador de dispositivo del dispositivo|
+|malwareProtectionEnabled|Booleano|Protección contra malware está habilitado o no|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado del equipo (como clean o pendiente de examen completo o pendientes reinicio etcetera). Los valores posibles son: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Boolean|¿Protección en tiempo real está habilitada o no?|
-|networkInspectionSystemEnabled|Boolean|¿Sistema de control de red habilitado o no?|
-|quickScanOverdue|Boolean|¿Rápido examinar vencidas o no?|
-|fullScanOverdue|Boolean|¿Total de examen vencida o no?|
-|signatureUpdateOverdue|Boolean|¿Firma caducada o no?|
-|rebootRequired|Boolean|¿Es necesario reiniciar o no?|
-|fullScanRequired|Boolean|¿Examen completo o no necesario?|
-|engineVersion|String|Versión del motor de actual extremo protección|
-|signatureVersion|String|Versión actual de las definiciones de malware|
-|antiMalwareVersion|String|Actual de protección contra malware versión|
+|realTimeProtectionEnabled|Booleano|¿Protección en tiempo real está habilitada o no?|
+|networkInspectionSystemEnabled|Booleano|¿Sistema de control de red habilitado o no?|
+|quickScanOverdue|Booleano|¿Rápido examinar vencidas o no?|
+|fullScanOverdue|Booleano|¿Total de examen vencida o no?|
+|signatureUpdateOverdue|Booleano|¿Firma caducada o no?|
+|rebootRequired|Booleano|¿Es necesario reiniciar o no?|
+|fullScanRequired|Booleano|¿Examen completo o no necesario?|
+|engineVersion|Cadena|Versión del motor de actual extremo protección|
+|signatureVersion|Cadena|Versión actual de las definiciones de malware|
+|antiMalwareVersion|Cadena|Actual de protección contra malware versión|
 |lastQuickScanDateTime|DateTimeOffset|Fecha y hora último análisis rápido|
 |lastFullScanDateTime|DateTimeOffset|Fecha y hora último análisis rápido|
-|lastQuickScanSignatureVersion|String|Última versión de firma de análisis rápido|
-|lastFullScanSignatureVersion|String|Última versión de firma de examen completo|
+|lastQuickScanSignatureVersion|Cadena|Última versión de firma de análisis rápido|
+|lastFullScanSignatureVersion|Cadena|Última versión de firma de examen completo|
 |lastReportedDateTime|DateTimeOffset|Último estado de mantenimiento de dispositivo el tiempo notificado|
 
 

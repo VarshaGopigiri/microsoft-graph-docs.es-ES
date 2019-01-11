@@ -2,12 +2,13 @@
 title: Lista windows81WifiImportConfigurations
 description: Propiedades de la lista y relaciones de los objetos windows81WifiImportConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 144c78fd00ad46702b6a042d2d11018498325cc3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ee5c6c8ad2a4d686a7f9df8425f64b6f31a0b14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313968"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882470"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>Lista windows81WifiImportConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

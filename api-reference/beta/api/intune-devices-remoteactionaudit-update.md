@@ -2,12 +2,13 @@
 title: Actualizar remoteActionAudit
 description: Actualizar las propiedades de un objeto remoteActionAudit.
 author: tfitzmac
-ms.openlocfilehash: a27cd54246aaa1badc9bdbf54379c5d9d2a5a218
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 147f526218e70c788bdb3c60312e1ebe8591b125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886950"
 ---
 # <a name="update-remoteactionaudit"></a>Actualizar remoteActionAudit
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) .
@@ -47,14 +48,14 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|ID de informe.|
+|id|Cadena|ID de informe.|
 |deviceDisplayName|String|Nombre del dispositivo Intune.|
-|userName|String|\[en desuso\] use InitiatedByUserPrincipalName en su lugar.|
-|initiatedByUserPrincipalName|String|Usuario que inició la acción de dispositivo, formato es UPN.|
+|userName|Cadena|\[en desuso\] use InitiatedByUserPrincipalName en su lugar.|
+|initiatedByUserPrincipalName|Cadena|Usuario que inició la acción de dispositivo, formato es UPN.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|El nombre de la acción. Los valores posibles son: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Hora en que se emitió la acción, dado en UTC.|
-|deviceOwnerUserPrincipalName|String|UPN del propietario del dispositivo.|
-|deviceIMEI|String|IMEI del dispositivo.|
+|deviceOwnerUserPrincipalName|Cadena|UPN del propietario del dispositivo.|
+|deviceIMEI|Cadena|IMEI del dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de acción. Los valores posibles son: `none`, `pending`, `canceled`, `active`, `done`, `failed` y `notSupported`.|
 
 

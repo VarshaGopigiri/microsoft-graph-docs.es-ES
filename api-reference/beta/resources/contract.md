@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Contract
 description: Representa una asociación existente que tiene el espacio empresarial asociado con un espacio empresarial del cliente.
-ms.openlocfilehash: 7465a54c735b7c1e6f9d5ecb8bf79420b8de45c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e502c72003c6d65305430bc1bf5a539d7235b5ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815326"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso Contract
 
@@ -28,9 +29,9 @@ Representa una asociación existente que tiene el espacio empresarial asociado c
 |:---------------|:--------|:----------|
 |contractType|Cadena|Tipo de contrato.<br><br>Los valores posibles son:<br> *SyndicationPartner* - socio que tan solo revende y administra O365 e Intune para este cliente. Revenden y dan soporte a sus clientes.<br> *BreadthPartner*: socio que tiene la capacidad de proporcionar soporte administrativo a este cliente. En cambio, no se le permite revender a los clientes.<br>*ResellerPartner*: socio que es similar a un socio de distribución ("syndication partner"), salvo que el socio no tenga acceso exclusivo a un inquilino. En el caso de la distribución, el cliente no puede comprar suscripciones adicionales directas de Microsoft u otros socios.|
 |customerId|Guid|El identificador único para el inquilino del cliente al que hace referencia esta asociación. Corresponde a la propiedad del id. del recurso de organización del inquilino del cliente. |
-|defaultDomainName|String|Una copia del nombre de dominio predeterminado del inquilino del cliente. La copia se realiza cuando se establece la asociación con el cliente. No se actualiza automáticamente si el nombre de dominio predeterminado del inquino del cliente cambia.|
-|displayName|String|Una copia del nombre que se muestra del inquilino del cliente. La copia se realiza cuando se establece la asociación con el cliente. No se actualiza automáticamente si el nombre que se muestra del inquino del cliente cambia.|
-|id|String| El identificador único del socio. Clave, solo lectura. |
+|defaultDomainName|Cadena|Una copia del nombre de dominio predeterminado del inquilino del cliente. La copia se realiza cuando se establece la asociación con el cliente. No se actualiza automáticamente si el nombre de dominio predeterminado del inquino del cliente cambia.|
+|displayName|Cadena|Una copia del nombre que se muestra del inquilino del cliente. La copia se realiza cuando se establece la asociación con el cliente. No se actualiza automáticamente si el nombre que se muestra del inquino del cliente cambia.|
+|id|Cadena| El identificador único del socio. Clave, solo lectura. |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

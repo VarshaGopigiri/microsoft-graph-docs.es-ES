@@ -2,12 +2,13 @@
 title: tipo de recurso deviceConfigurationGroupAssignment
 description: Asignación de grupo de configuración de dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 648edd8122c4e14ad06a6e8b19e5fb83a042affa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b670ffd828634e244053b8a83e5f1f05f79ebbe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334639"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883982"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>tipo de recurso deviceConfigurationGroupAssignment
 
@@ -28,12 +29,12 @@ Asignación de grupo de configuración de dispositivo.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|targetGroupId|String|El identificador del grupo AAD, nuestro destino son para la configuración del dispositivo.|
-|excludeGroup|Boolean|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
+|id|Cadena|Clave de la entidad.|
+|targetGroupId|Cadena|El identificador del grupo AAD, nuestro destino son para la configuración del dispositivo.|
+|excludeGroup|Booleano|Indica si este grupo se deben excluir. Valores predeterminados que se debe incluir en el grupo|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|El vínculo de navegación a la configuración de dispositivo de destino.|
 

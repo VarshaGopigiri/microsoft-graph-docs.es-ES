@@ -2,12 +2,13 @@
 title: Actualizar mensaje
 description: Actualice las propiedades del objeto de mensaje.
 author: angelgolfer-ms
-ms.openlocfilehash: c15d4ac183b41b2ab927fc39e175df80626f348e
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: 24705fbf986f9ecf1142e66d189ae2071e1be223
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884787"
 ---
 # <a name="update-message"></a>Actualizar mensaje
 
@@ -32,7 +33,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado. Las siguientes propiedades se pueden actualizar.
@@ -44,8 +45,8 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |categories|Colección String|Las categorías asociadas al mensaje.|
 |ccRecipients|Colección Recipient|Los destinatarios de Cc del mensaje. |
 |from|Recipient|El propietario del buzón y el remitente del mensaje. Debe corresponder con el buzón real que se usa.|
-|importance|String|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | La clasificación del mensaje para el usuario, basándose en la relevancia inferida o importancia, o en un reemplazo explícito. Los valores posibles son: `focused` o `other`. |
+|importance|Cadena|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
+|inferenceClassification | Cadena | La clasificación del mensaje para el usuario, basándose en la relevancia inferida o importancia, o en un reemplazo explícito. Los valores posibles son: `focused` o `other`. |
 |internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Actualizable sólo si isDraft = true.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
@@ -54,7 +55,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |replyTo|Colección Recipient|Las direcciones de correo electrónico que se utilizan al responder. Actualizable sólo si isDraft = true.|
 |sender|Recipient|La cuenta que se utiliza realmente para generar el mensaje. Actualizable cuando se envía un mensaje desde un [buzón compartido](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)o enviar un mensaje como un [delegado](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). En cualquier caso, el valor debe corresponder al buzón real que se usa.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| La colección de propiedades extendidas de valor único definido para el mensaje. Admite valores NULL.|
-|subject|String|El asunto del mensaje. Actualizable sólo si isDraft = true.|
+|subject|Cadena|El asunto del mensaje. Actualizable sólo si isDraft = true.|
 |toRecipients|Colección Recipient|Los destinatarios para el mensaje.|
 
 Dado que el recurso **message** admite [extensiones](/graph/extensibility-overview), puede utilizar la operación `PATCH` para agregar, actualizar o eliminar sus propios datos específicos de la aplicación en las propiedades personalizadas de una extensión en una instancia **message** existente.

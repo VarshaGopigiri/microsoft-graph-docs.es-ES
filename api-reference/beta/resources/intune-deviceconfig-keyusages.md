@@ -2,12 +2,13 @@
 title: tipo enum keyUsages
 description: Opciones de uso de la clave.
 author: tfitzmac
-ms.openlocfilehash: cf13e124ae2d97120dae122c1b69003eb7c4b6a5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc270679624b6ce142092393693a5a34562e1a3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319036"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885795"
 ---
 # <a name="keyusages-enum-type"></a>tipo enum keyUsages
 
@@ -17,7 +18,7 @@ ms.locfileid: "27319036"
 
 Opciones de uso de la clave.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |keyEncipherment|1|Uso del cifrado de clave.|
 |digitalSignature|2|Uso de la firma digital.|

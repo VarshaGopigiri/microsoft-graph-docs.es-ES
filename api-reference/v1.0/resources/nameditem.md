@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso NamedItem
 description: Representa un nombre definido para un rango de celdas o un valor. Los nombres pueden ser objetos primitivos con nombre (como puede verse en el tipo siguiente), un objeto de rango o una referencia a un rango. Este objeto puede usarse para obtener un objeto de rango asociado a nombres.
-ms.openlocfilehash: 683bc93fdd9c14005b70cb125cf09eba5c8075a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e413361cc42a0f8f65e23e12d36b49d2c7bcebb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883828"
 ---
 # <a name="nameditem-resource-type"></a>Tipo de recurso NamedItem
 

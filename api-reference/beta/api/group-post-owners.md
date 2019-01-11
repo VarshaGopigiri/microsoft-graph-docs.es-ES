@@ -1,12 +1,13 @@
 ---
 title: Add group owner
 description: Agrega un usuario a los propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo.
-ms.openlocfilehash: 903c659722877263038860c7d2ff47b301b6d5c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3fe136b0ea76ae2d6f535af421d016bf27c58a6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308900"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883198"
 ---
 # <a name="add-group-owner"></a>Add group owner
 
@@ -31,7 +32,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /groups/{id}/owners/$ref
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

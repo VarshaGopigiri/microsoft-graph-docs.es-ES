@@ -2,12 +2,13 @@
 title: Enumerar deviceManagementExchangeConnectors
 description: Enumere las propiedades y las relaciones de los objetos deviceManagementExchangeConnector.
 author: tfitzmac
-ms.openlocfilehash: 7f3709e22dfc9f545be25500c5f1344ade81d6fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3814e5d971cd0a1c04a654cb135edc6b15c22603
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884211"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>Enumerar deviceManagementExchangeConnectors
 
@@ -36,7 +37,7 @@ GET /deviceManagement/exchangeConnectors
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
