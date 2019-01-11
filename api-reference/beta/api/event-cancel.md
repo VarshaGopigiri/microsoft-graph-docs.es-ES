@@ -2,12 +2,13 @@
 title: 'evento: Cancelar'
 description: 'Esta acción permite al organizador de una reunión enviar un mensaje de cancelación y cancelar el evento. '
 author: angelgolfer-ms
-ms.openlocfilehash: 5e32219be129d1b16e05badd1fb778f86d95849b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 482804d58078f148ed321a0c3489954fc9144f8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864627"
 ---
 # <a name="event-cancel"></a>evento: Cancelar
 
@@ -51,7 +52,7 @@ POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
@@ -59,7 +60,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |comment|String|Un comentario sobre la cancelación enviado a todos los asistentes. Opcional.|
 

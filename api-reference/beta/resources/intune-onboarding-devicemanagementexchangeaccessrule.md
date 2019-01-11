@@ -2,12 +2,13 @@
 title: tipo de recurso deviceManagementExchangeAccessRule
 description: Reglas de acceso de dispositivo en Exchange.
 author: tfitzmac
-ms.openlocfilehash: 3d56365bb30825c48139d746fe048649940b5d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d7f0e649d2c5f2f27a4623fa0f65cf43965f576
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855191"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>tipo de recurso deviceManagementExchangeAccessRule
 
@@ -17,7 +18,7 @@ ms.locfileid: "27339595"
 
 Reglas de acceso de dispositivo en Exchange.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Clase de dispositivo que se verán afectada por esta regla.|
 |accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Nivel de acceso para Exchange concedido por esta regla. Los valores posibles son: `none`, `allow`, `block` y `quarantine`.|

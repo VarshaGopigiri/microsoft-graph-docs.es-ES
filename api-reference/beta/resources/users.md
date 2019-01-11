@@ -1,12 +1,13 @@
 ---
 title: Trabajar con usuarios en Microsoft Graph
 description: Puede usar Microsoft Graph para crear experiencias de aplicaciones convincentes basadas en usuarios, sus relaciones con otros usuarios y grupos y su correo, calendario y archivos.
-ms.openlocfilehash: 0bc1e0b045703c73a22568912db978d50c5a0c15
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Priority
+ms.openlocfilehash: d9b699c008186f165a8be43ab4254213697710dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860833"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabajar con usuarios en Microsoft Graph
 

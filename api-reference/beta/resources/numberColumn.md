@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
-ms.openlocfilehash: 27d17d3e9b9d3d1debcd20f2beb916222801ebe9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a0f5d13381c82a42159d0802d850d9996aaf8b54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855184"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
@@ -32,7 +33,7 @@ A continuación se incluye una representación JSON de un recurso **numberColumn
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad      | Tipo   | Descripción
+| Nombre de la propiedad      | Tipo   | Descripción
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | El número de decimales que se mostrará. Consulte a continuación para obtener información sobre los valores posibles.
 | **displayAs**      | string | Cómo se debe presentar el valor en la experiencia de usuario. Debe ser `number` o `percentage`. Si no se especifica, se trata como `number`.

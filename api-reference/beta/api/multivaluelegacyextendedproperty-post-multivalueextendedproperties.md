@@ -1,12 +1,13 @@
 ---
 title: Crear propiedad extendida de varios valores
 description: 'Cree una o más propiedades extendidas de varios valores en una instancia nueva o existente de un recurso. '
-ms.openlocfilehash: 17f1bf0a4dd03de3704349fcfd496b768f60d56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54be6f428ac5d7b604093fdad3a03b48b89243a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087396"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863052"
 ---
 # <a name="create-multi-value-extended-property"></a>Crear propiedad extendida de varios valores
 

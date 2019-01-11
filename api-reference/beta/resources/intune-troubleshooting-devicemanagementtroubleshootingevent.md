@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceManagementTroubleshootingEvent
 description: Evento que representa un error general.
 author: tfitzmac
-ms.openlocfilehash: 30b77ff2ec4d1cdd6254109056b6de801743f2a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c640ec2988be09cd19a3e87a00ebb64a3b1be3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861667"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
@@ -28,9 +29,9 @@ Evento que representa un error general.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID para el objeto|
+|id|Cadena|UUID para el objeto|
 |eventDateTime|DateTimeOffset|Hora en que ocurrió el evento.|
-|correlationId|String|Id. utilizado para rastrear el error en el servicio.|
+|correlationId|Cadena|Id. utilizado para rastrear el error en el servicio.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

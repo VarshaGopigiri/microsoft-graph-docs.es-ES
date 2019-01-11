@@ -2,12 +2,13 @@
 title: Obtener androidLobApp
 description: Lea las propiedades y las relaciones del objeto androidLobApp.
 author: tfitzmac
-ms.openlocfilehash: 7ed993f85b03f13e0b5d2fc6f3f37cbce6151d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afd714e6bcfc3f7d56461c90d494a735c310f306
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859629"
 ---
 # <a name="get-androidlobapp"></a>Obtener androidLobApp
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

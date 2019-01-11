@@ -2,12 +2,13 @@
 title: Enumerar secciones
 description: Recupera una lista de los objetos de la sección.
 author: Jewan-microsoft
-ms.openlocfilehash: 074afecfcf358a349cfa251e3222cc4c2a2887ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11636dd2fbb0c39724b0036bdfa5db03bb12f0c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356458"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857697"
 ---
 # <a name="list-sections"></a>Enumerar secciones
 
@@ -39,7 +40,7 @@ El criterio de ordenación predeterminado es `name asc`.
 La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades `id`, `displayName` y `self`. Los valores válidos de `expand` para las secciones son `parentNotebook` y `parentSectionGroup`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |

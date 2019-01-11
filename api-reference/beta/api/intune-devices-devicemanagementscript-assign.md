@@ -2,12 +2,13 @@
 title: asignar acción
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 0264f5aff78058887e6f219d08812eb6857737ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eede97b2c2cddf666e99f2f979520e3f9e9546fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858229"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -38,14 +39,14 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |deviceManagementScriptGroupAssignments|colección de [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Todavía no documentado|
 |deviceManagementScriptAssignments|colección de [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|Todavía no documentado|

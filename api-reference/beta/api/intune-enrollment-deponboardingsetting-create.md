@@ -2,12 +2,13 @@
 title: Crear depOnboardingSetting
 description: Crear un nuevo objeto depOnboardingSetting.
 author: tfitzmac
-ms.openlocfilehash: 11f2e5217e4040a7d4345c9271b459e608075498
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89e46c715b5f888ae3c9f1fb02a0566da8485944
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330663"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854904"
 ---
 # <a name="create-deponboardingsetting"></a>Crear depOnboardingSetting
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto depOnboardingSetting.
@@ -47,19 +48,19 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID para el objeto|
+|id|Cadena|UUID para el objeto|
 |appleIdentifier|String|El identificador de Apple se utiliza para obtener el token actual.|
 |tokenExpirationDateTime|DateTimeOffset|Cuando caduca el token.|
 |lastModifiedDateTime|DateTimeOffset|Cuando el servicio fue onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Cuando el syned último servicio con Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Cuando Intune solicitada por última vez una sincronización.|
-|shareTokenWithSchoolDataSyncService|Boolean|Si el símbolo (token) de la característica Dep compartir está habilitada o no con el servicio de sincronización de datos de School.|
+|shareTokenWithSchoolDataSyncService|Booleano|Si el símbolo (token) de la característica Dep compartir está habilitada o no con el servicio de sincronización de datos de School.|
 |lastSyncErrorCode|Int32|Código de error que informa Apple durante la última sincronización de la característica dep.|
 |TokenType en|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtiene o establece el tipo de símbolo (token) de la característica Dep. Los valores posibles son: `none`, `dep` y `appleSchoolManager`.|
-|tokenName|String|Nombre descriptivo para la característica Dep símbolo (token)|
+|tokenName|Cadena|Nombre descriptivo para la característica Dep símbolo (token)|
 |syncedDeviceCount|Int32|Obtiene sincronizado recuento de dispositivo|
-|defaultProfileDisplayName|String|Obtiene sincronizado recuento de dispositivo|
-|dataSharingConsentGranted|Boolean|Concede de consentimiento para uso compartido con Apple Dep servicio de datos|
+|defaultProfileDisplayName|Cadena|Obtiene sincronizado recuento de dispositivo|
+|dataSharingConsentGranted|Booleano|Concede de consentimiento para uso compartido con Apple Dep servicio de datos|
 
 
 

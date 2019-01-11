@@ -1,12 +1,13 @@
 ---
 title: Crear sectionGroup
 description: Crea un grupo de sección en el grupo de sección especificado.
-ms.openlocfilehash: 62e88f65755006fb6cbb4755cd63ef02fbc19556
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5af01bd2a526d692b568fe121db7933a2887a006
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812960"
 ---
 # <a name="create-sectiongroup"></a>Crear sectionGroup
 
@@ -33,7 +34,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

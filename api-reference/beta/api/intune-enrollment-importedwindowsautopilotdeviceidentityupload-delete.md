@@ -2,12 +2,13 @@
 title: Eliminar importedWindowsAutopilotDeviceIdentityUpload
 description: Elimina un importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
-ms.openlocfilehash: 8b589ceb35862a28fb37aaff105b6e20188e9ba6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a7b270f6bf0c17c6781c3f04fbb97028d36d25d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863206"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>Eliminar importedWindowsAutopilotDeviceIdentityUpload
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{imported
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

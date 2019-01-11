@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso publicClient
 description: Especifica la configuración para que no sean Web App o la Api de Web. (por ejemplo, Mobile u otro pública cliente como una aplicación instalada que se ejecutan en un dispositivo de escritorio)
-ms.openlocfilehash: ba921fecb554a8749a9020508c538c68a7ff342e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c466c91f90ac8adc2bf3806fa212e0b01e6d2507
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083784"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864200"
 ---
 # <a name="publicclient-resource-type"></a>tipo de recurso publicClient
 
@@ -16,7 +17,7 @@ Especifica la configuración para que no sean Web App o la Api de Web. (por ejem
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------------|:--------|:----------|
 |redirectUris|Colección String| Especifica las direcciones URL que los tokens de usuario se envían a para el inicio de sesión o el redireccionamiento de los códigos de autorización de los URI que OAuth 2.0 y tokens de acceso se envían a. |
 

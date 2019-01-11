@@ -2,12 +2,13 @@
 title: Enumerar mobileApps
 description: Enumere las propiedades y las relaciones de los objetos mobileApp.
 author: tfitzmac
-ms.openlocfilehash: aafc9bfa6f602dd462bc8cfb95c83bce9324e655
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 339f07cd94f7663fa8756b8f147b8277c7b28925
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860294"
 ---
 # <a name="list-mobileapps"></a>Enumerar mobileApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: Acción requestSignupUrl
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 5a6e057842befe22dd2ad7035a76d013aca45e4e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7e1b732631df277f53a2c7c2ef45bbd70fcff5b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864459"
 ---
 # <a name="requestsignupurl-action"></a>Acción requestSignupUrl
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidForWorkSettings/requestSignupUrl
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.

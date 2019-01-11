@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Icon
 description: Representa un icono de celda.
-ms.openlocfilehash: fd3e0682a7eb73dd4e3286e11d9f9680755db265
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1b31632884c757d40be4a7c9639933439028382
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861694"
 ---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 

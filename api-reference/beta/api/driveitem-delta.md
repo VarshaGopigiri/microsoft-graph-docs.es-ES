@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sincronizar el contenido de una unidad
-ms.openlocfilehash: b16787a3939d514e3c84ea0f06b562cd3c689e76
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: a7d64b4ef6878e12be93a471a4ace87f0357ae40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809131"
 ---
 # <a name="track-changes-for-a-drive"></a>Control de cambios de una unidad
 
@@ -48,7 +49,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Parámetro   | Tipo  | Descripción                                                                                                                          |
+| Parámetro   | Tipo  | Description                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | string | Opcional. Si no se especifica, enumera el estado actual de la jerarquía. Si `latest`, devuelve vacío respuesta con un símbolo (token) delta más reciente. Si un token de delta anterior, devuelve el nuevo estado desde ese token.
 

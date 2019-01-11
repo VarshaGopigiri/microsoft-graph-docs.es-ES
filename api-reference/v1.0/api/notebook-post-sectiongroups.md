@@ -2,12 +2,13 @@
 title: Crear sectionGroup
 description: Crea un grupo de sección nuevo en el bloc de notas especificado.
 author: Jewan-microsoft
-ms.openlocfilehash: 72d092d3862d86f9ca79d43f26a9f1c2422e63d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf494e76ce222269c8e52dd840f9cfd4ee380316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854995"
 ---
 # <a name="create-sectiongroup"></a>Crear sectionGroup
 
@@ -30,7 +31,7 @@ POST /groups/{id}/onenote/notebooks/{id}/sectionGroups
 POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |

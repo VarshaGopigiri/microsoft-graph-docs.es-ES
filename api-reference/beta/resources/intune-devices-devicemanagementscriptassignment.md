@@ -2,12 +2,13 @@
 title: tipo de recurso deviceManagementScriptAssignment
 description: Contiene propiedades que se usan para asignar una secuencia de comandos de administración de dispositivos a un grupo.
 author: tfitzmac
-ms.openlocfilehash: d0b08363de392a337338bb2cd892359b8b9a9345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cc2da31d105ce9a8169607f3910c41801d86eb2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858754"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>tipo de recurso deviceManagementScriptAssignment
 
@@ -28,7 +29,7 @@ Contiene propiedades que se usan para asignar una secuencia de comandos de admin
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad de asignación de grupo de secuencia de comandos de dispositivo administración.|
+|id|Cadena|Clave de la entidad de asignación de grupo de secuencia de comandos de dispositivo administración.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|El identificador de grupo de Active Directory de Azure, nuestro destino son la secuencia de comandos.|
 
 ## <a name="relationships"></a>Relaciones

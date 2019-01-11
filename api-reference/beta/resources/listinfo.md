@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListInfo
-ms.openlocfilehash: fb955a89c8dfb7b399d15f00666f21899abdc33d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1a29099264c46f32e09b375a97ff49c13c99c6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858460"
 ---
 # <a name="listinfo-resource"></a>Recurso ListInfo
 
@@ -39,11 +40,11 @@ Aquí tiene una representación JSON del recurso.
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad           | Tipo    | Descripción
+| Nombre de la propiedad           | Tipo    | Descripción
 |:------------------------|:--------|:------------------------------------------------
 | **contentTypesEnabled** | Booleano | Si es `true`, indica que los tipos de contenido están habilitados para esta lista.
 | **hidden**              | Booleano | Si es `true`, indica que la lista no es visible normalmente en la experiencia del usuario de SharePoint.
-| **template**            | String  | Un valor enumerado que representa la plantilla de lista base usada al crear la lista. Los valores posibles incluyen `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` y más.
+| **template**            | Cadena  | Un valor enumerado que representa la plantilla de lista base usada al crear la lista. Los valores posibles incluyen `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` y más.
 
 ### <a name="remarks"></a>Comentarios
 

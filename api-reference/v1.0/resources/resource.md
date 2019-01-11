@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso OneNoteResource
 description: 'Imagen u otro recurso de archivo en una página de OneNote. '
-ms.openlocfilehash: a5be2602e2a015b278ed7c3e01c573a543c7c6a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed2fb0dd4b6e68c24da1f2441a157f734a5025f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855107"
 ---
 # <a name="onenoteresource-resource-type"></a>Tipo de recurso OneNoteResource
 
@@ -67,7 +68,7 @@ La etiqueta `object` (que representa archivos como PDF, DOCX y PNG) incluye el p
 | contentUrl           | Cadena (dirección url)    | La dirección URL para descargar el contenido
 
 ## <a name="relationships"></a>Relaciones
-Ninguna.
+Ninguno.
 
 
 ## <a name="methods"></a>Métodos

@@ -2,12 +2,13 @@
 title: tipo de recurso win32LobAppPowerShellScriptDetection
 description: Contiene las propiedades de la secuencia de comandos de PowerShell para detectar una aplicación de Win32
 author: tfitzmac
-ms.openlocfilehash: 7f69b2c066ae90cfcd805b3d3cfe57193046d440
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdd3c0e6864a3568b4f1efb7c1c18a25f3e7c84d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863031"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>tipo de recurso win32LobAppPowerShellScriptDetection
 
@@ -20,11 +21,11 @@ Contiene las propiedades de la secuencia de comandos de PowerShell para detectar
 Hereda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|enforceSignatureCheck|Boolean|Un valor que indica si se exige la comprobación de firma|
-|runAs32Bit|Boolean|Un valor que indica si este script se debe ejecutar como de 32 bits|
-|scriptContent|String|La base64 codificado contenido de la secuencia de comandos para detectar la aplicación de línea de negocio (LoB) de Win32|
+|enforceSignatureCheck|Booleano|Un valor que indica si se exige la comprobación de firma|
+|runAs32Bit|Booleano|Un valor que indica si este script se debe ejecutar como de 32 bits|
+|scriptContent|Cadena|La base64 codificado contenido de la secuencia de comandos para detectar la aplicación de línea de negocio (LoB) de Win32|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

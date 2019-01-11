@@ -2,12 +2,13 @@
 title: tipo de recurso educationIdentitySynchronizationConfiguration
 description: Clase base abstracta para todas las configuraciones school datos perfil identidad sincronización. Las clases derivadas definen el comportamiento para la sincronización de identidades. Los siguientes son los tipos derivados.
 author: mmast-msft
-ms.openlocfilehash: d32eb2b06cb76c578edf4a80e73e5bf6ec6b4757
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c04233dd7f0383d238f0a7e7245e9451fb764be6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869065"
 ---
 # <a name="educationidentitysynchronizationconfiguration-resource-type"></a>tipo de recurso educationIdentitySynchronizationConfiguration
 
@@ -16,7 +17,7 @@ ms.locfileid: "27334457"
 Clase base abstracta para todas las configuraciones school datos perfil identidad sincronización. Las clases derivadas definen el comportamiento para la sincronización de identidades. Los siguientes son los tipos derivados.
 
 ## <a name="derived-types"></a>Tipos derivados
-| Type | Descripción | 
+| Tipo | Description | 
 |:-|:-|
 | [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | Use este tipo para que coincida con las cuentas de usuario existentes en Azure Active Directory (AD Azure). |
 | [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | Use este tipo para crear nuevas cuentas de usuario en Azure AD. |

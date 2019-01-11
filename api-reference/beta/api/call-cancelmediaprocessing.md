@@ -2,12 +2,13 @@
 title: 'llamar a: cancelMediaProcessing'
 description: Medios cancela el procesamiento para todas las operaciones de registro o PlayPrompt en curso.
 author: VinodRavichandran
-ms.openlocfilehash: 5e95e4a1b56d7cea806e1a3d588403d81c200923
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9885e05bdca0d04daf597190eb118c81b8774c0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859454"
 ---
 # <a name="call-cancelmediaprocessing"></a>llamar a: cancelMediaProcessing
 
@@ -39,10 +40,10 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    | Descripción                                                    |
+| Parámetro      | Tipo    | Description                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
 | all            | Booleano | La marca que indica si se debe detener todas las operaciones o actual. |
-| clientContext  | String  | El contexto de cliente.                                            |
+| clientContext  | Cadena  | El contexto de cliente.                                            |
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta y un encabezado de ubicación con un uri para el [commsOperation](../resources/commsoperation.md) creado para esta solicitud.

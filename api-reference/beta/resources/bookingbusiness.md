@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso bookingBusiness
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 0ea11dcd16a129e6d6648be4b09435c5c052de9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861638"
 ---
 # <a name="bookingbusiness-resource-type"></a>tipo de recurso bookingBusiness
 
@@ -40,19 +41,19 @@ Representa una empresa en Microsoft Bookings. Esto es el objeto de nivel superio
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|La dirección de la empresa. La propiedad **address** , junto con el **teléfono** y **webSiteUrl**, aparecen en el pie de página de un página de programación de negocio.|
 |businessHours|colección de [bookingWorkHours](bookingworkhours.md)|Las horas de operación para la empresa.|
-|businessType|String|El tipo de negocio.|
-|defaultCurrencyIso|String|El código para la moneda que la empresa opera en Microsoft Bookings.|
-|displayName|String|El nombre de la empresa, las interfaces con los clientes. Este nombre aparece en la parte superior de la página de programación de empresa.|
+|businessType|Cadena|El tipo de negocio.|
+|defaultCurrencyIso|Cadena|El código para la moneda que la empresa opera en Microsoft Bookings.|
+|displayName|Cadena|El nombre de la empresa, las interfaces con los clientes. Este nombre aparece en la parte superior de la página de programación de empresa.|
 |email|String|La dirección de correo electrónico para el negocio.|
-|id|String|Un identificador de programación único para el negocio. Solo lectura.|
+|id|Cadena|Un identificador de programación único para el negocio. Solo lectura.|
 |isPublished|Booleano|La página de programación se realizó disponible para los clientes externos. Use las acciones de **Publicar** y **Cancelar la publicación** para establecer esta propiedad. Solo lectura.|
 |phone|String|El número de teléfono para el negocio. La propiedad de **teléfono** , junto con la **dirección** y **webSiteUrl**, aparecen en el pie de página de un página de programación de negocio.|
-|publicUrl|String|La dirección URL de la página de programación, que se establece después de [Publicar](../api/bookingbusiness-publish.md) o [Cancelar la publicación de](../api/bookingbusiness-unpublish.md) la página. Solo lectura.|
+|publicUrl|Cadena|La dirección URL de la página de programación, que se establece después de [Publicar](../api/bookingbusiness-publish.md) o [Cancelar la publicación de](../api/bookingbusiness-unpublish.md) la página. Solo lectura.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Especifica cómo se pueden crear reservas para este negocio.|
-|webSiteUrl|String|La dirección URL del sitio web de negocio. La propiedad **webSiteUrl** , junto con la **dirección**, **teléfono**, aparecen en el pie de página de una página de programación de negocio.|
+|webSiteUrl|Cadena|La dirección URL del sitio web de negocio. La propiedad **webSiteUrl** , junto con la **dirección**, **teléfono**, aparecen en el pie de página de una página de programación de negocio.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |appointments|colección de [bookingAppointment](bookingappointment.md)| Todas las citas de esta empresa. Solo lectura. Admite valores NULL.|
 |calendarView|colección de [bookingAppointment](bookingappointment.md)| El conjunto de citas de esta empresa en un intervalo de fechas especificado. Solo lectura. Admite valores NULL.|

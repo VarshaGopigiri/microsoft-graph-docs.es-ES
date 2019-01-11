@@ -2,12 +2,13 @@
 title: tipo de enumeración managedDevicePartnerReportedHealthState
 description: Estados de mantenimiento disponible para la API de estado de dispositivo
 author: tfitzmac
-ms.openlocfilehash: 41dcc927e85664acf28c7cc654fa01d00d1e4b52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3383edca25d6d4ac03a9b5536f3514412e2bf7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862058"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo de enumeración managedDevicePartnerReportedHealthState
 
@@ -17,7 +18,7 @@ ms.locfileid: "27321031"
 
 Estados de mantenimiento disponible para la API de estado de dispositivo
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Estado de mantenimiento del dispositivo no se ha notificado|
 |activado|1|Dispositivo se ha activado por un socio de defensa de amenaza móvil, pero aún no ha notificado mantenimiento.|

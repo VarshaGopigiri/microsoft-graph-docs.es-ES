@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windows10EndpointProtectionConfiguration
 description: Este tema proporciona descripciones de los métodos declarados, las propiedades y las relaciones expuestas por el recurso Windows10EndpointProtectionConfiguration.
-ms.openlocfilehash: 18c264fe7caf311a59e9fe52646bc55fef1c49a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 65a73a146d013fac60766254bfd2865f8e436846
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861953"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>Tipo de recurso windows10EndpointProtectionConfiguration
 
@@ -28,11 +29,11 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |firewallBlockStatefulFTP|Booleano|Bloquea las conexiones FTP con estado en el dispositivo.|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configura el tiempo de espera inactivo para asociaciones de seguridad, en segundos, de 300 a 3600 inclusive. Se trata del período tras el cual expiran y se eliminan las asociaciones de seguridad. Valores válidos de 300 a 3600.|
@@ -51,7 +52,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |defenderGuardedFoldersAllowedAppPaths|Colección String|Lista de rutas de acceso a exe que pueden obtener acceso a carpetas protegidas.|
 |defenderAdditionalGuardedFolders|Colección String|Lista de las rutas de acceso de carpeta que se van a agregar a la lista de carpetas protegidas.|
 |defenderExploitProtectionXml|Binario|Contenido XML que contiene información sobre detalles de protección contra vulnerabilidades de seguridad.|
-|defenderExploitProtectionXmlFileName|String|Nombre del archivo del que se obtuvo DefenderExploitProtectionXml.|
+|defenderExploitProtectionXmlFileName|Cadena|Nombre del archivo del que se obtuvo DefenderExploitProtectionXml.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Booleano|Indica si se va a impedir que el usuario invalide la configuración de protección contra vulnerabilidades.|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Permite que el administrador elija los tipos de aplicación que se permiten en los dispositivos. Los valores posibles son: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker` y `auditComponentsStoreAppsAndSmartlocker`.|
 |smartScreenEnableInShell|Booleano|Permite que los administradores de TI configuren SmartScreen para Windows.|

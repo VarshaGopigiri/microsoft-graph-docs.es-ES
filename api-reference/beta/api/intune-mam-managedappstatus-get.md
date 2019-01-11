@@ -2,12 +2,13 @@
 title: Obtener managedAppStatus
 description: Lea las propiedades y las relaciones del objeto managedAppStatus.
 author: tfitzmac
-ms.openlocfilehash: a8663224c98b1dad72672f6271181459ca86c02e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99d765ad51080fec87c2eb2f67fe94853d30e6ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859489"
 ---
 # <a name="get-managedappstatus"></a>Obtener managedAppStatus
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

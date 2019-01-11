@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obtener acceso a elementos compartidos
-ms.openlocfilehash: d3f6ef956501cded8af9ed641b2bb37666174cef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 46779e40862c7056cc60ef4be55595da5615e9f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086676"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864242"
 ---
 # <a name="accessing-shared-driveitems"></a>Acceder a objetos DriveItem compartidos
 
@@ -38,7 +39,7 @@ GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
 
 | Nombre del parámetro        | Valor    | Descripción                                                                         |
 |:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Obligatorio. Un token para compartir como se devuelve mediante la API o una dirección URL para compartir codificada correctamente. |
+| **sharingTokenOrUrl** | `string` | Necesario. Un token para compartir como se devuelve mediante la API o una dirección URL para compartir codificada correctamente. |
 
 ### <a name="encoding-sharing-urls"></a>Codificar direcciones URL para compartir
 

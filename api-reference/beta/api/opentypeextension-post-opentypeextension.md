@@ -1,12 +1,13 @@
 ---
 title: Crear extensión abierta
 description: Crear una extensión open (objeto openTypeExtension) y agregar propiedades personalizadas
-ms.openlocfilehash: 80747559d310f033419fe3b24add1dc27debb90e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 363bd629b5b7c9041f36ce039403717f715e202c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087441"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863038"
 ---
 # <a name="create-open-extension"></a>Crear extensión abierta
 
@@ -16,7 +17,7 @@ Crear una extensión open (objeto[openTypeExtension](../resources/opentypeextens
 
 > **Nota:** Si está creando extensiones open en recursos de Outlook, consulte **Consideraciones sobre específica de Outlook** en [openTypeExtension el tipo de recurso](../resources/opentypeextension.md#outlook-specific-considerations).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Según el recurso que está creando la extensión y el permiso solicitado tipo (delegada o de la aplicación), el permiso especificado en la tabla siguiente es la con privilegios mínimos necesarios para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 

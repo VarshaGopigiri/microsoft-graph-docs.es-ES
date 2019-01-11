@@ -2,12 +2,13 @@
 title: tipo de recurso teamsTabConfiguration (Open Type)
 description: La configuración que determinan el contenido de una ficha.
 author: nkramer
-ms.openlocfilehash: 281d27dfec1efa83859fad262e1b25fd06b5f4cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c33ab6d5102498ab26fcc609328c2562707883d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858474"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>tipo de recurso teamsTabConfiguration (Open Type)
 
@@ -21,7 +22,7 @@ Además de las propiedades que aparece a continuación, algunas aplicaciones de 
 |Propiedad|Tipo|Descripción|
 |-|-|-|
 |  entityId   |   string |  Identificador de la entidad hospedada por el proveedor de la ficha.     |
-|  contentUrl |   string |  Dirección URL utilizada para representar el contenido de la ficha en los equipos. Obligatorio.    |
+|  contentUrl |   string |  Dirección URL utilizada para representar el contenido de la ficha en los equipos. Necesario.    |
 |  removeUrl  |   string |  Dirección URL de los equipos cliente llamado cuando se quita una ficha mediante el cliente de los equipos.     |
 |  websiteUrl |   string |  Dirección URL para mostrar el contenido de la ficha fuera de los equipos.     |
 

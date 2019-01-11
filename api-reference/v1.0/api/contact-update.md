@@ -2,12 +2,13 @@
 title: Actualizar contacto
 description: Actualiza las propiedades de un objeto de contacto.
 author: angelgolfer-ms
-ms.openlocfilehash: 386f0d3f7673733de805893e16ab049d85d120a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e73257e0e2e27bb4ef89a50477e67840c484b0cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351236"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858341"
 ---
 # <a name="update-contact"></a>Actualizar contacto
 

@@ -1,12 +1,13 @@
 ---
 title: Obtener synchronizationSchema
 description: Recuperar el esquema para un trabajo de sincronización determinado o una plantilla.
-ms.openlocfilehash: 93624a334c928b6402851ebc566e6e29e341ca1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 768a35940593231bbc4fbd4c3f5498c7eb3243fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863472"
 ---
 # <a name="get-synchronizationschema"></a>Obtener synchronizationSchema
 
@@ -35,7 +36,7 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 | Nombre           | Tipo    | Descripción|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

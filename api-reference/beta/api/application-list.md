@@ -2,12 +2,13 @@
 title: Aplicaciones de lista
 description: Recuperar la lista de aplicaciones en esta organización.
 author: lleonard-msft
-ms.openlocfilehash: 138a9e6d238fde44d5b5c47781bbd93cb2b73f98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5443010f613f1978c3b88a9cc57237ca7b844805
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854981"
 ---
 # <a name="list-applications"></a>Aplicaciones de lista
 
@@ -34,7 +35,7 @@ GET /applications
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 

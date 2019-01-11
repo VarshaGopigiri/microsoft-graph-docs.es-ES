@@ -2,12 +2,13 @@
 title: Actualizar managedDeviceMobileAppConfigurationAssignment
 description: Actualice las propiedades de un objeto managedDeviceMobileAppConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: a9c1c7b1f0af2ec49080d6b6e225d3923b7f37b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58d28cb3e80f127f164e65861a15c230ef2d45fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864235"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Actualizar managedDeviceMobileAppConfigurationAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la entidad.|
+|id|Cadena|Identificador único de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
 
 

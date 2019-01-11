@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingIrelandTelevisionType
 description: Etiquetas de clasificación de contenido de TV en Irlanda
 author: tfitzmac
-ms.openlocfilehash: 40bff39bc943257267a03fdc0ddf1b99fa06dd18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37485c407a5261bbf23434ad524f95b28e8f1e48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360770"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860987"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enumeración ratingIrelandTelevisionType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360770"
 
 Etiquetas de clasificación de contenido de TV en Irlanda
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

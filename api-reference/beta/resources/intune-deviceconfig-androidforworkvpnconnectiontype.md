@@ -2,12 +2,13 @@
 title: tipo de enumeración androidForWorkVpnConnectionType
 description: Tipo de conexión de Android para VPN de trabajo.
 author: tfitzmac
-ms.openlocfilehash: cc6ccd0b178dd5170c5a8ccfc8cd273c09c5891a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38dba15764f016d830c3e0641c3f1410e91bc9a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860231"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>tipo de enumeración androidForWorkVpnConnectionType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27303601"
 
 Tipo de conexión de Android para VPN de trabajo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1|Impulsos seguro.|

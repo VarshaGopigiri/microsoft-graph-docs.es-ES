@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso groupSettingTemplate
 description: Las plantillas de configuración de grupo representan configuraciones definidas por el sistema disponibles para el inquilino. La configuración de grupo se puede crear según las plantillas de **groupSettingTemplates** disponibles y se pueden cambiar los valores predeterminados. Las plantillas de configuración de grupo no se pueden crear, actualizar ni eliminar. Esta configuración puede representar configuración para todo el inquilino o una para un grupo específico. Actualmente, las únicas plantillas disponibles se aplican a grupos de Office 365 e incluyen opciones como las que establecen si los usuarios pueden crear grupos o no, o si pueden invitar a usuarios de fuera de la organización para convertirse en miembros de un grupo.
-ms.openlocfilehash: 3c4111b2727e79e048778063b259611795733de4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c2e6b465226b8c1c69438fab37d874735e89ac52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859349"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>Tipo de recurso groupSettingTemplate
 

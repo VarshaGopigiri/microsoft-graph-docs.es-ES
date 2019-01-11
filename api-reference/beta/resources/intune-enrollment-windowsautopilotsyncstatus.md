@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsAutopilotSyncStatus
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 48b61be225ae4d1f3db54116f290149124f1a1b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6f750364c3788157d346a0e2ad42942c4679a96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859076"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>tipo de enumeración windowsAutopilotSyncStatus
 
@@ -17,7 +18,7 @@ ms.locfileid: "27305680"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Estado de la sincronización desconocido|
 |en curso|1|Sincronización está en curso|

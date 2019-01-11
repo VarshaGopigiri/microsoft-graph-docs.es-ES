@@ -1,12 +1,13 @@
 ---
 title: 'message: forward'
 description: 'Reenviar un mensaje, agregar un comentario o modificar las propiedades actualizables  '
-ms.openlocfilehash: 3edb96a90c99f1bc9eb2d8499e9cda83774a7ab3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b601ea1152e9f5b0c5796779967393b956fd2da0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864683"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

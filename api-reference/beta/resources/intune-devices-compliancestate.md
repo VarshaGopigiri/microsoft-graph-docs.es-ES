@@ -2,12 +2,13 @@
 title: tipo de enumeración complianceState
 description: Estado de cumplimiento.
 author: tfitzmac
-ms.openlocfilehash: 3fa0548c2a67aa5def5f859014f52e97bdda815b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3d496d6890d0da4d817ad9ba1f03e4b0825204d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861680"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de enumeración complianceState
 
@@ -17,7 +18,7 @@ ms.locfileid: "27321234"
 
 Estado de cumplimiento.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Unknown (desconocido).|
 |compatible con|1|Compatible con.|

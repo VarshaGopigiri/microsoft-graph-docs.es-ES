@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso bookingNamedEntity
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 1d82fcf6fcf7ffad6e60baea3f3e1118ec60345d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa307d0ee07b43a44210fc6ceaf4c74a29999caa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860504"
 ---
 # <a name="bookingnamedentity-resource-type"></a>tipo de recurso bookingNamedEntity
 
@@ -17,8 +18,8 @@ ms.locfileid: "27083612"
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|displayName|String|Un nombre para la entidad derivada, las interfaces con los clientes.|
-|id|String| El identificador de la entidad derivada. Solo lectura.|
+|displayName|Cadena|Un nombre para la entidad derivada, las interfaces con los clientes.|
+|id|Cadena| El identificador de la entidad derivada. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

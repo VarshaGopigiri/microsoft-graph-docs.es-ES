@@ -2,12 +2,13 @@
 title: List TableColumnCollection
 description: Recuperar una lista de objetos tablecolumn.
 author: lumine2008
-ms.openlocfilehash: b050d9e322df9aa6f6a07d509ccf7a17637e77e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14d1dd6e387dfc877638b811d7050edeffc4d3af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867756"
 ---
 # <a name="list-tablecolumncollection"></a>List TableColumnCollection
 

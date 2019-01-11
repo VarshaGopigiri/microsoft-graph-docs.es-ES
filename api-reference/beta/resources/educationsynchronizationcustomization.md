@@ -2,12 +2,13 @@
 title: tipo de recurso educationSynchronizationCustomization
 description: 'Proporciona opciones de configuración para personalizar la sincronización de perfiles de datos de school de las entidades de recurso. La personalización puede aplicarse a todas las entidades que se están sincronizadas. '
 author: mmast-msft
-ms.openlocfilehash: d4f67c9f56198350731c18fe3da8b512522c4d71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9294af5796daeefb394ed1625a9a36128ae7b2a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860903"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>tipo de recurso educationSynchronizationCustomization
 
@@ -19,12 +20,12 @@ Proporciona opciones de configuración para personalizar la sincronización de p
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:-|:-|:-|
 | **optionalPropertiesToSync** | colección de cadena |  La colección de nombres de propiedad para la sincronización. Si establece en null, todas las propiedades será sincronizado.       |
 | **synchronizationStartDate** | DateTime |  La fecha en la que debe comenzar la sincronización. Este valor debe establecerse en una fecha futura. Si se establece en null, el recurso se sincronizará cuando se complete la configuración del perfil. **Nota:** Esto sólo se aplica a la propiedad **StudentEnrollment** .      |
-|**isSyncDeferred** |Boolean | Indica si la sincronización de la entidad principal se aplaza hasta una fecha posterior. |
-| **allowDisplayNameUpdate** | Boolean |  Indica si el nombre para mostrar del recurso se puede sobrescribir con la sincronización.         |
+|**isSyncDeferred** |Booleano | Indica si la sincronización de la entidad principal se aplaza hasta una fecha posterior. |
+| **allowDisplayNameUpdate** | Booleano |  Indica si el nombre para mostrar del recurso se puede sobrescribir con la sincronización.         |
 
 
 ## <a name="json-representation"></a>Representación JSON

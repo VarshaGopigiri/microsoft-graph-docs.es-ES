@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso requiredResourceAccess
 description: Especifica el conjunto de OAuth 2.0 ámbitos de permisos y roles de la aplicación en el recurso especificado que una aplicación necesita tener acceso a. Los ámbitos de permisos especificados OAuth 2.0 pueden solicitarse por las aplicaciones de cliente (a través de la colección **requiredResourceAccess** ) cuando una llamada a una aplicación de recursos. La propiedad **requiredResourceAccess** de la entidad de la aplicación es una colección de **ReqiredResourceAccess**.
-ms.openlocfilehash: 937557f2f078ade1b336cfd00cd128d428d59cbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 473126365a7f0b3ba3ab0371322ff90bd36318e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856171"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>tipo de recurso requiredResourceAccess
 
@@ -35,10 +36,10 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |resourceAccess|Colección de [ResourceAccess](resourceaccess.md)|La lista de ámbitos de OAuth2.0 de permisos y roles de la aplicación que requiere la aplicación desde el recurso especificado.|
-|resourceAppId|String|El identificador único para el recurso que la aplicación necesita tener acceso a.  Debe ser igual que el **appId** declaradas en la aplicación de destino de recursos.|
+|resourceAppId|Cadena|El identificador único para el recurso que la aplicación necesita tener acceso a.  Debe ser igual que el **appId** declaradas en la aplicación de destino de recursos.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

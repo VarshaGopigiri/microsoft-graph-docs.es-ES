@@ -2,12 +2,13 @@
 title: Actualizar iosVpnConfiguration
 description: Actualizar las propiedades de un objeto iosVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: b45e0d9eb395e93e876cfd874859b595b1ffa1a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7a07d1e60cdc3437aada5296aeefd86a6e45ae9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355646"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858453"
 ---
 # <a name="update-iosvpnconfiguration"></a>Actualizar iosVpnConfiguration
 
@@ -40,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md) .
@@ -49,34 +50,34 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|connectionName|String|Nombre de la conexión que se muestra al usuario. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|connectionName|Cadena|Nombre de la conexión que se muestra al usuario. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Tipo de conexión. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Los valores posibles son: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`.|
-|loginGroupOrDomain|String|Grupo de inicio de sesión o dominio cuando se establece el tipo de conexión a Dell SonicWALL Mobile conexión. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|role|String|Función de tipo de conexión se establece en impulsos seguro. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|dominio kerberos|String|Dominio Kerberos cuando se establece el tipo de conexión a impulsos seguro. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|loginGroupOrDomain|Cadena|Grupo de inicio de sesión o dominio cuando se establece el tipo de conexión a Dell SonicWALL Mobile conexión. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|role|Cadena|Función de tipo de conexión se establece en impulsos seguro. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|dominio kerberos|Cadena|Dominio Kerberos cuando se establece el tipo de conexión a impulsos seguro. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |servidor|[servidor de VPN](../resources/intune-deviceconfig-vpnserver.md)|Servidor de VPN en la red. Asegúrese de que los usuarios finales pueden tener acceso a esta ubicación de red. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|identificador|String|Identificador proporcionado por el proveedor de VPN cuando se establece el tipo de conexión a VPN personalizado. Por ejemplo: AnyConnect de Cisco usa un identificador de la com.cisco.anyconnect.applevpn.plugin de formulario Inherited desde [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|identificador|Cadena|Identificador proporcionado por el proveedor de VPN cuando se establece el tipo de conexión a VPN personalizado. Por ejemplo: AnyConnect de Cisco usa un identificador de la com.cisco.anyconnect.applevpn.plugin de formulario Inherited desde [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |customData|colección [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Datos personalizados cuando se establece el tipo de conexión a VPN personalizado. Use este campo para habilitar la funcionalidad no admitida por Intune, pero disponible en la solución de VPN. Póngase en contacto con su proveedor de VPN para obtener información sobre cómo agregar estos pares de clave y valor. Esta colección puede contener un máximo de 25 elementos. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |customKeyValueData|Colección [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Datos personalizados cuando se establece el tipo de conexión a VPN personalizado. Use este campo para habilitar la funcionalidad no admitida por Intune, pero disponible en la solución de VPN. Póngase en contacto con su proveedor de VPN para obtener información sobre cómo agregar estos pares de clave y valor. Esta colección puede contener un máximo de 25 elementos. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|enableSplitTunneling|Boolean|Enviar todo el tráfico de red a través de VPN. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|enableSplitTunneling|Booleano|Enviar todo el tráfico de red a través de VPN. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Método de autenticación para esta conexión VPN. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Los valores posibles son: `certificate` y `usernameAndPassword`.|
-|enablePerApp|Boolean|Si se establece en true, crea de carga por aplicación VPN que más adelante se puede asociar con las aplicaciones que pueden desencadenar este conexiones VPN en dispositivo de iOS del usuario final. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|enablePerApp|Booleano|Si se establece en true, crea de carga por aplicación VPN que más adelante se puede asociar con las aplicaciones que pueden desencadenar este conexiones VPN en dispositivo de iOS del usuario final. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |safariDomains|Colección String|Dominios de Safari cuando está habilitada esta VPN por la configuración de la aplicación. Además de las aplicaciones asociadas con esta VPN, dominios de Safari especifiquen aquí también podrá desencadenar esta conexión VPN. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |onDemandRules|colección de [vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md)|Reglas de On Demand. Esta colección puede contener un máximo de 500 elementos. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Servidor proxy. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|optInToDeviceIdSharing|Boolean|Participar en uso compartido de identificador del dispositivo a los clientes de vpn de terceros para su uso durante la validación de control de acceso de red. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|optInToDeviceIdSharing|Booleano|Participar en uso compartido de identificador del dispositivo a los clientes de vpn de terceros para su uso durante la validación de control de acceso de red. Se hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |tipo de proveedor|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|Tipo de proveedor de VPN por cada aplicación. Los valores posibles son: `notConfigured`, `appProxy` y `packetTunnel`.|
-|userDomain|String|Sólo Zscaler. Escriba un dominio estático para rellenar previamente el campo de inicio de sesión con en la aplicación Zscaler. Si se deja vacía, se utilizará el dominio del usuario Azure Active Directory.|
-|strictEnforcement|Boolean|Sólo Zscaler. Bloques de tráfico de red hasta que el usuario cierre sesión en la aplicación Zscaler. "True" significa que el tráfico se bloquea.|
-|cloudName|String|Sólo Zscaler. Nube de Zscaler que está asignado el usuario.|
+|userDomain|Cadena|Sólo Zscaler. Escriba un dominio estático para rellenar previamente el campo de inicio de sesión con en la aplicación Zscaler. Si se deja vacía, se utilizará el dominio del usuario Azure Active Directory.|
+|strictEnforcement|Booleano|Sólo Zscaler. Bloques de tráfico de red hasta que el usuario cierre sesión en la aplicación Zscaler. "True" significa que el tráfico se bloquea.|
+|cloudName|Cadena|Sólo Zscaler. Nube de Zscaler que está asignado el usuario.|
 |excludeList|Colección String|Sólo Zscaler. Lista de direcciones de red que no se envían a través de la nube de Zscaler.|
 
 

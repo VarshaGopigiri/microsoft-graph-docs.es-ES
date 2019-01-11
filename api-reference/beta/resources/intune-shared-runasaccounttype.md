@@ -2,12 +2,13 @@
 title: tipo de enumeración runAsAccountType
 description: Indica el contexto de ejecución de una secuencia de comandos de administración de dispositivo o una aplicación.
 author: tfitzmac
-ms.openlocfilehash: 118e7ca2e4e9e7e9cdccab9adff8745e7e8bcee8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f0fbd29b0f50320da4979f4274e0dd58a79b84b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874098"
 ---
 # <a name="runasaccounttype-enum-type"></a>tipo de enumeración runAsAccountType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308501"
 
 Indica el contexto de ejecución de una secuencia de comandos de administración de dispositivo o una aplicación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |system|0|Contexto del sistema|
 |usuario|1|Contexto de usuario|

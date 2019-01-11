@@ -2,12 +2,13 @@
 title: Actualizar usuario
 description: Actualiza las propiedades de un objeto de usuario.
 author: tfitzmac
-ms.openlocfilehash: c4fb2bde10d913b6bd9c30a34b6e1b9e8169a9e6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f52e49c86e0e333fbf4f8c52b71c2850c73bc533
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317391"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861946"
 ---
 # <a name="update-user"></a>Actualizar usuario
 
@@ -46,7 +47,7 @@ PATCH /users/{usersId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

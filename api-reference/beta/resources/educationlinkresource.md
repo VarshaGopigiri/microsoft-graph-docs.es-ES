@@ -2,12 +2,13 @@
 title: tipo de recurso educationLinkResource
 description: Una subclase de educationResource. Este recurso es un vínculo y no tener todos los datos asociados con él.
 author: mmast-msft
-ms.openlocfilehash: 02a55eeea25ab2c27d6c5848fbc178ff535d5e33
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 330e56b0be114128a6ea91f8f870f820fde74cef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349808"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863220"
 ---
 # <a name="educationlinkresource-resource-type"></a>tipo de recurso educationLinkResource
 
@@ -17,9 +18,9 @@ Una subclase de [educationResource](educationresource.md). Este recurso es un v�
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|vincular|String|Dirección URL del recurso.|
+|vincular|Cadena|Dirección URL del recurso.|
 
 ## <a name="json-representation"></a>Representación JSON
 

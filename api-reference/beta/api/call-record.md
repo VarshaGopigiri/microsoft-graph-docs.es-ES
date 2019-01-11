@@ -2,12 +2,13 @@
 title: 'llamar a: registro'
 description: Registro de la llamada.
 author: VinodRavichandran
-ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859580"
 ---
 # <a name="call-record"></a>llamar a: registro
 
@@ -39,7 +40,7 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
 |solicita|colección de [mediaprompt](../resources/mediaprompt.md) | Colección de indicaciones para reproducir (si hay alguno) antes de la grabación se iniciará. Los clientes pueden elegir especificar la acción "playPrompt" por separado o especificar como parte de "registro" - principalmente todos los registros están precedido por un símbolo del sistema |
 |bargeInAllowed|Booleano| Permitir que los usuarios escriban opción antes de que finalice el símbolo del sistema.                                                                 |
@@ -49,7 +50,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |playBeep|Booleano| Emite un pitido tras reproducir el símbolo del sistema.|
 |streamWhileRecording|Booleano|Si se establece en true, una ubicación de recursos será proporcionado en cuanto se inicia la grabación. |
 |stopTones|Colección String|Detener tonos especificados para finalizar la grabación.|
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta y un encabezado de ubicación con un uri para el [commsOperation](../resources/commsoperation.md) creado para esta solicitud.
