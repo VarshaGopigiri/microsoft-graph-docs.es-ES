@@ -2,53 +2,54 @@
 title: Obtener administrativeUnit
 description: Recuperar las propiedades y relaciones de un objeto administrativeUnit.
 author: lleonard-msft
-ms.openlocfilehash: ff087591191780edaaf88981654d3431ac1308d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 12c7931d0ff2e26a5298cf3fecf92a7bee55e9ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849297"
 ---
-# <a name="get-administrativeunit"></a><span data-ttu-id="fe403-103">Obtener administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="fe403-103">Get administrativeUnit</span></span>
+# <a name="get-administrativeunit"></a><span data-ttu-id="4198a-103">Obtener administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="4198a-103">Get administrativeUnit</span></span>
 
-> <span data-ttu-id="fe403-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="fe403-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fe403-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="fe403-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4198a-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="4198a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4198a-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="4198a-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="fe403-106">Recuperar las propiedades y relaciones de un objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="fe403-106">Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+<span data-ttu-id="4198a-106">Recuperar las propiedades y relaciones de un objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="4198a-106">Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
 
-<span data-ttu-id="fe403-107">Puesto que el recurso **administrativeUnit** admite [extensiones](/graph/extensibility-overview), también se puede usar el `GET` operación para obtener las propiedades personalizadas y los datos de extensión en una instancia de **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="fe403-107">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.</span></span>
+<span data-ttu-id="4198a-107">Puesto que el recurso **administrativeUnit** admite [extensiones](/graph/extensibility-overview), también se puede usar el `GET` operación para obtener las propiedades personalizadas y los datos de extensión en una instancia de **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="4198a-107">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fe403-108">Permisos</span><span class="sxs-lookup"><span data-stu-id="fe403-108">Permissions</span></span>
-<span data-ttu-id="fe403-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe403-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4198a-108">Permisos</span><span class="sxs-lookup"><span data-stu-id="4198a-108">Permissions</span></span>
+<span data-ttu-id="4198a-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4198a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="fe403-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="fe403-111">Permission type</span></span>      | <span data-ttu-id="fe403-112">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="fe403-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4198a-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="4198a-111">Permission type</span></span>      | <span data-ttu-id="4198a-112">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="4198a-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fe403-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="fe403-113">Delegated (work or school account)</span></span> | <span data-ttu-id="fe403-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fe403-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="fe403-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fe403-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe403-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="fe403-116">Not supported.</span></span>    |
-|<span data-ttu-id="fe403-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="fe403-117">Application</span></span> | <span data-ttu-id="fe403-118">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe403-118">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="4198a-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="4198a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="4198a-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4198a-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="4198a-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4198a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4198a-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="4198a-116">Not supported.</span></span>    |
+|<span data-ttu-id="4198a-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="4198a-117">Application</span></span> | <span data-ttu-id="4198a-118">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4198a-118">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fe403-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="fe403-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4198a-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4198a-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="fe403-120">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="fe403-120">Optional query parameters</span></span>
-<span data-ttu-id="fe403-121">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="fe403-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4198a-120">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="4198a-120">Optional query parameters</span></span>
+<span data-ttu-id="4198a-121">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4198a-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="fe403-122">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="fe403-122">Request headers</span></span>
-| <span data-ttu-id="fe403-123">Nombre</span><span class="sxs-lookup"><span data-stu-id="fe403-123">Name</span></span>      |<span data-ttu-id="fe403-124">Descripción</span><span class="sxs-lookup"><span data-stu-id="fe403-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4198a-122">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4198a-122">Request headers</span></span>
+| <span data-ttu-id="4198a-123">Nombre</span><span class="sxs-lookup"><span data-stu-id="4198a-123">Name</span></span>      |<span data-ttu-id="4198a-124">Descripción</span><span class="sxs-lookup"><span data-stu-id="4198a-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="fe403-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="fe403-125">Authorization</span></span>  | <span data-ttu-id="fe403-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="fe403-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4198a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="4198a-125">Authorization</span></span>  | <span data-ttu-id="4198a-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="4198a-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fe403-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="fe403-128">Request body</span></span>
-<span data-ttu-id="fe403-129">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="fe403-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4198a-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4198a-128">Request body</span></span>
+<span data-ttu-id="4198a-129">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="4198a-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fe403-130">Respuesta</span><span class="sxs-lookup"><span data-stu-id="fe403-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4198a-130">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4198a-130">Response</span></span>
 
-<span data-ttu-id="fe403-131">Si tiene éxito, este método devuelve una `200 OK` objeto de código y [administrativeUnit](../resources/administrativeunit.md) de respuesta en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="fe403-131">If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="fe403-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="fe403-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fe403-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="fe403-133">Request</span></span>
-<span data-ttu-id="fe403-134">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="fe403-134">Here is an example of the request.</span></span>
+<span data-ttu-id="4198a-131">Si tiene éxito, este método devuelve una `200 OK` objeto de código y [administrativeUnit](../resources/administrativeunit.md) de respuesta en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4198a-131">If successful, this method returns a `200 OK` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4198a-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4198a-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4198a-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="4198a-133">Request</span></span>
+<span data-ttu-id="4198a-134">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4198a-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_administrativeunit"
@@ -56,8 +57,8 @@ GET /administrativeUnits/{id}
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="fe403-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="fe403-135">Response</span></span>
-<span data-ttu-id="fe403-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="fe403-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4198a-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4198a-135">Response</span></span>
+<span data-ttu-id="4198a-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="4198a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,10 +77,10 @@ Content-length: 134
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="fe403-139">Vea también</span><span class="sxs-lookup"><span data-stu-id="fe403-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4198a-139">Vea también</span><span class="sxs-lookup"><span data-stu-id="4198a-139">See also</span></span>
 
-- [<span data-ttu-id="fe403-140">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="fe403-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="fe403-141">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="fe403-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="4198a-140">Agregar datos personalizados a los recursos mediante extensiones</span><span class="sxs-lookup"><span data-stu-id="4198a-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="4198a-141">Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="4198a-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->
