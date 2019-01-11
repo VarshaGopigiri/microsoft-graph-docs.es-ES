@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso mailFolder
 description: Carpeta de recurso en el buzón de un usuario, como Bandeja de entrada y Borradores. Las carpetas de correo pueden contener mensajes, otros elementos de Outlook y carpetas de correo secundarias.
-ms.openlocfilehash: 49fd4571e3ebe35e04e4da4276c1816829ebc599
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a44819f0248e8d6e410e2c6bd57e727ae719b1d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881623"
 ---
 # <a name="mailfolder-resource-type"></a>Tipo de recurso mailFolder
 
@@ -27,7 +28,7 @@ GET /me/mailFolders/drafts
 
 Nombres conocidos trabajar independientemente de la configuración regional del buzón de correo del usuario, por lo que la consulta anterior devolverá siempre carpeta de borradores del usuario, independientemente de cómo se denomina.
 
-| Nombre de la carpeta conocidos | Descripción |
+| Nombre de la carpeta conocidos | Description |
 |:-----------------------|:------------|
 | archivo | Los mensajes de la carpeta de archivo se envían a cuando se usa la característica de archivo de One_Click en los clientes de Outlook que lo admitan. **Nota:** no es el mismo que la característica de buzón de archivo de Exchange online. |
 | desorden | Los mensajes con prioridad baja desorden carpeta se mueven a cuando se usa la característica de desorden. |
@@ -73,11 +74,11 @@ Nombres conocidos trabajar independientemente de la configuración regional del 
 |:---------|:-----|:------------|
 |childFolderCount|Int32|El número de objetos mailFolder secundarios inmediatos en el objeto mailFolder actual.|
 |displayName|String|El nombre para mostrar del objeto mailFolder.|
-|id|String|Identificador único del mailFolder.|
+|id|Cadena|Identificador único del mailFolder.|
 |parentFolderId|String|El identificador único del objeto mailFolder principal del objeto mailFolder.|
 |totalItemCount|Int32|El número de elementos en el objeto mailFolder.|
 |unreadItemCount|Int32|El número de elementos en el objeto mailFolder marcados como no leídos.|
-|wellKnownName|String|El nombre de la carpeta conocida para la carpeta. Los valores posibles indicados anteriormente. Esta propiedad sólo se establece para carpetas predeterminadas creadas por Outlook. Para otras carpetas, esta propiedad es **null**.|
+|wellKnownName|Cadena|El nombre de la carpeta conocida para la carpeta. Los valores posibles indicados anteriormente. Esta propiedad sólo se establece para carpetas predeterminadas creadas por Outlook. Para otras carpetas, esta propiedad es **null**.|
 
 **Acceder a recuentos de elementos de forma eficaz**
 

@@ -2,12 +2,13 @@
 title: Lista androidWorkProfilePkcsCertificateProfiles
 description: Propiedades de la lista y relaciones de los objetos androidWorkProfilePkcsCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 66b724592c604a847e674cacf154b38b14509b47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9bc739b6f8c56760dd4736f938d9e24be6e263f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878151"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>Lista androidWorkProfilePkcsCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

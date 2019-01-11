@@ -2,12 +2,13 @@
 title: Actualizar enrollmentConfigurationAssignment
 description: Actualice las propiedades de un objeto enrollmentConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: c05856fbdcd3f5930ac5c40b10c53c7dedbc97ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2e6d23c54f0864772ccc75b6dc63078dc5abf361
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339567"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875932"
 ---
 # <a name="update-enrollmentconfigurationassignment"></a>Actualizar enrollmentConfigurationAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Todavía no documentado|
 
 

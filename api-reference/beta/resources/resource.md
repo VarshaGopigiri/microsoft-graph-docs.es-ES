@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso resource
 description: 'Imagen u otro recurso de archivo en una página de OneNote. '
-ms.openlocfilehash: 8e0e049cab613c7c1a72c8c96e21bac77c507ae1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8ba7b2afb5b083e4fe5250ef499043029a1195b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879523"
 ---
 # <a name="resource-resource-type"></a>Tipo de recurso resource
 
@@ -58,7 +59,7 @@ La etiqueta `object` (que representa archivos como PDF, DOCX y PNG) incluye el p
 Ninguna.
 
 ## <a name="relationships"></a>Relaciones
-Ninguna.
+Ninguno.
 
 
 ## <a name="methods"></a>Métodos

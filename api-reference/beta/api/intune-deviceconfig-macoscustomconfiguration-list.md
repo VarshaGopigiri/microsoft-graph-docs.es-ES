@@ -2,12 +2,13 @@
 title: Enumerar macOSCustomConfigurations
 description: Enumere las propiedades y las relaciones de los objetos macOSCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9c2783d5d6f8f8b2f88c98b322b5a53b5947e1d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6438d18f97c3f0dd663b09fc956b5550808f2d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882085"
 ---
 # <a name="list-macoscustomconfigurations"></a>Enumerar macOSCustomConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

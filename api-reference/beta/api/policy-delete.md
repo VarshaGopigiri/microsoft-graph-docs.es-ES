@@ -1,12 +1,13 @@
 ---
 title: Eliminar directiva
 description: Eliminar una directiva.
-ms.openlocfilehash: 37ed08e7f53db726a46821c08d68c955afdacc5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 66772865fdff5ebf4b111cae91e60b00707bf6a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875367"
 ---
 # <a name="delete-policy"></a>Eliminar directiva
 
@@ -31,7 +32,7 @@ DELETE /policies/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

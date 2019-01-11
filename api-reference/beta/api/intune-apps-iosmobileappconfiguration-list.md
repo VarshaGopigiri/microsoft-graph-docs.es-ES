@@ -2,12 +2,13 @@
 title: Enumerar iosMobileAppConfigurations
 description: Enumera las propiedades y las relaciones de los objetos iosMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3d56946ec2183cd486e9b1ffcebb2979590dfe82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f161d86bf7065e3ad04a8dff057e4d44cfc3955
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313989"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875099"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Enumerar iosMobileAppConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

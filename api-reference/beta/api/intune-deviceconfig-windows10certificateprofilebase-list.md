@@ -2,12 +2,13 @@
 title: Lista windows10CertificateProfileBases
 description: Propiedades de la lista y relaciones de los objetos windows10CertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 6efda26760ecbcb50bba6334f8934489f75bab31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 152c8920fecfc34e5ff3b69dc2b94d6f8ce38dc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881070"
 ---
 # <a name="list-windows10certificateprofilebases"></a>Lista windows10CertificateProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: tipo de recurso educationSubmissionResource
 description: 'Un contenedor alrededor de un recurso para su uso en una presentación. El contenedor agrega un puntero al recurso de asignación si esto se copió desde la asignación.  '
 author: dipakboyed
-ms.openlocfilehash: bfbf2f522106f5a1e2033898cbb2702223d3e241
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8703072fccb77a2577db6ce0717647e79a47fdc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875988"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>tipo de recurso educationSubmissionResource
 
@@ -21,13 +22,13 @@ Un contenedor alrededor de un recurso para su uso en una presentación. El conte
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Leer las propiedades y relaciones de un objeto **educationSubmissionResource** .|
-|[Eliminar](../api/educationsubmissionresource-delete.md) | Ninguno |Eliminación de un objeto **educationSubmissionResource** . |
+|[Delete](../api/educationsubmissionresource-delete.md) | Ninguno |Eliminación de un objeto **educationSubmissionResource** . |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|Puntero a la asignación desde la que se ha copiado este recurso. Si es null, el alumno carga el recurso.|
-|id|String| Solo lectura.|
+|assignmentResourceUrl|Cadena|Puntero a la asignación desde la que se ha copiado este recurso. Si es null, el alumno carga el recurso.|
+|id|Cadena| Solo lectura.|
 |resource|[educationResource](educationresource.md)|Objeto de recurso.|
 
 ## <a name="relationships"></a>Relaciones

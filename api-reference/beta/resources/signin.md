@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de inicio de sesión
 description: 'Este recurso detalla usuario o aplicación de inicio de sesión de actividad en el directorio. '
-ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Priority
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889071"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de inicio de sesión
 Este recurso detalla usuario o aplicación de inicio de sesión de actividad en el directorio. 
@@ -19,21 +20,21 @@ Este recurso detalla usuario o aplicación de inicio de sesión de actividad en 
 |[Obtener el inicio de sesión](../api/signin-get.md) | [inicio de sesión](signin.md) |Leer las propiedades y relaciones de objeto de inicio de sesión.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String|Hace referencia al nombre de la aplicación que se muestra en el Portal de Azure.|
+|appDisplayName|Cadena|Hace referencia al nombre de la aplicación que se muestra en el Portal de Azure.|
 |appId|cadena|Hace referencia a los GUID único que representa el identificador de aplicación en Azure Active Directory.|
-|clientAppUsed|String|Proporciona al cliente heredado usado para inicio de sesión de activty.E.g. incluye el explorador, Active Sync de Exchange, los clientes modernos, IMAP, MAPI, SMTP, POP.|
+|clientAppUsed|Cadena|Proporciona al cliente heredado usado para inicio de sesión de activty.E.g. incluye el explorador, Active Sync de Exchange, los clientes modernos, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|colección de [conditionalAccessPolicy](conditionalaccesspolicy.md)|Proporciona una lista de las directivas de acceso condicional que se desencadenan por la actividad de inicio de sesión correspondiente.|
 |conditionalAccessStatus|string| Proporciona el estado de la directiva de acceso condicional desencadenada. Los valores posibles son: `success`, `failure`, `notApplied` y `unknownFutureValue`.|
-|originalRequestId|String|El identificador de la solicitud de la primera solicitud en la secuencia de autenticación.|
+|originalRequestId|Cadena|El identificador de la solicitud de la primera solicitud en la secuencia de autenticación.|
 |isInteractive|Booleano|Indica si un inicio de sesión es interactivo o no.|
-|tokenIssuerName|String|Nombre de la identidad del proveedor (por ejemplo, sts.microsoft.com)|
-|tokenIssuerType|String|Proporciona el tipo de identityProvider. Los valores posibles son `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
-|correlationId|String|Hace referencia al identificador que se envía desde el cliente cuando se inicia en el inicio de sesión. Esto se usa para solucionar problemas de la actividad de inicio de sesión correspondiente al llamar al departamento de soporte técnico o soporte técnico.|
+|tokenIssuerName|Cadena|Nombre de la identidad del proveedor (por ejemplo, sts.microsoft.com)|
+|tokenIssuerType|Cadena|Proporciona el tipo de identityProvider. Los valores posibles son `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
+|correlationId|Cadena|Hace referencia al identificador que se envía desde el cliente cuando se inicia en el inicio de sesión. Esto se usa para solucionar problemas de la actividad de inicio de sesión correspondiente al llamar al departamento de soporte técnico o soporte técnico.|
 |createdDateTime|DateTimeOffset|Proporciona la fecha y hora que en el inicio de sesión se ha iniciado. El tipo de marca de tiempo es siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |deviceDetail|[deviceDetail](devicedetail.md)|Proporciona la información del dispositivo desde donde se produjo el inicio de sesión. Se inclules información como deviceId, sistema operativo, explorador. |
-|id|String|Indica el identificador único que representa la actividad de inicio de sesión.|
+|id|Cadena|Indica el identificador único que representa la actividad de inicio de sesión.|
 |ipAddress|cadena|Proporciona la dirección IP del cliente desde donde se produjo el inicio de sesión.|
 |location|[signInLocation](signinlocation.md)|Proporciona la ciudad, estado y código de país de carta 2 desde donde se produjo el inicio de sesión.|
 |processingTimeInMilliseconds|Int|Proporciona la solicitud de tiempo en milisegundos de STS de AD de procesamiento|
@@ -46,12 +47,12 @@ Este recurso detalla usuario o aplicación de inicio de sesión de actividad en 
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Proporciona información detallada acerca de la ubicación de red.|
 |riskLevel|string| Proporciona el nivel de riesgo asociado con el inicio de sesión. Los valores posibles son: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Proporciona el estado de inicio de sesión. Los valores posibles son `Success` y `Failure`.|
-|userDisplayName|String|Indica el nombre del usuario de la presentación.|
-|userId|String|Indica el identificador de usuario del usuario.|
-|userPrincipalName|String|Indica el UPN del usuario.|
-|resourceDisplayName|String|Indica el nombre del recurso que el usuario inició sesión en|
+|userDisplayName|Cadena|Indica el nombre del usuario de la presentación.|
+|userId|Cadena|Indica el identificador de usuario del usuario.|
+|userPrincipalName|Cadena|Indica el UPN del usuario.|
+|resourceDisplayName|Cadena|Indica el nombre del recurso que el usuario inició sesión en|
 |resourceId|cadena|Indica el identificador del recurso que el usuario inició sesión en.|
-|authenticationMethodsUsed|String|Indica la lista de métodos de autenticación que se usan|
+|authenticationMethodsUsed|Cadena|Indica la lista de métodos de autenticación que se usan|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

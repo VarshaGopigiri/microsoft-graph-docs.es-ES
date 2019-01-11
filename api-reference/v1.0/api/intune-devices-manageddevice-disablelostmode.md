@@ -2,12 +2,13 @@
 title: Acción disableLostMode
 description: Deshabilitar modo Perdido
 author: tfitzmac
-ms.openlocfilehash: d03d518506d51e8053ea32ad9e30bb9913ce06f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 882a7da9e11a76984d233d374c5b0493660f7626
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343998"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874364"
 ---
 # <a name="disablelostmode-action"></a>Acción disableLostMode
 
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

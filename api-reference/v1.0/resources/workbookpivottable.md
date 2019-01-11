@@ -2,12 +2,13 @@
 title: Tipo de recurso PivotTable
 description: Representa una tabla dinámica de Excel.
 author: lumine2008
-ms.openlocfilehash: 68075aebeac9c0846e48739daf65e5bf97e4d6f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d500d4bc88608b032262cfae505385bf7ed3f072
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889211"
 ---
 # <a name="pivottable-resource-type"></a>Tipo de recurso PivotTable
 
@@ -25,7 +26,7 @@ Representa una tabla dinámica de Excel.
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |id|Cadena| ID la tabla dinámica.   Solo lectura.|
-|name|String|Nombre de la tabla dinámica.    |
+|name|Cadena|Nombre de la tabla dinámica.    |
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

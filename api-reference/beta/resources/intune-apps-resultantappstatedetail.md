@@ -2,12 +2,13 @@
 title: tipo de enumeración resultantAppStateDetail
 description: Enum que indica obtener más información acerca de por qué una aplicación tiene un determinado estado de instalación.
 author: tfitzmac
-ms.openlocfilehash: e06e8afb6ebb5e22abf11d9cd53150bed5288052
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c5eb8c921be7c14a45c979a57ffcaa0704d9b4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352531"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874147"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enumeración resultantAppStateDetail
 
@@ -17,7 +18,7 @@ ms.locfileid: "27352531"
 
 Enum que indica obtener más información acerca de por qué una aplicación tiene un determinado estado de instalación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |noAdditionalDetails|0|No hay detalles adicionales están disponibles.|
 |seeInstallErrorCode|2000|No se pudo instalar la aplicación. Vea la propiedad de código de error para obtener más detalles.|

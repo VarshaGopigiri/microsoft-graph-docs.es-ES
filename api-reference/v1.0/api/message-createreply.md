@@ -1,12 +1,13 @@
 ---
 title: 'message: createReply'
 description: Cree un borrador de la respuesta al mensaje especificado. Después, puede actualizar el borrador para agregar el contenido de la respuesta al **cuerpo**, cambiar otras propiedades del mensaje o, simplemente, enviar el borrador.
-ms.openlocfilehash: 0b98b7f5baea1067097d09b27c13872ef6fc139f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92fc487ad4fe57a7439e367e4238aeff3ddfd7ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874211"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -32,7 +33,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: tipo de recurso teamsApp
 description: Una aplicación en el catálogo de aplicaciones de Microsoft Teams.
 author: nkramer
-ms.openlocfilehash: 207974800e44e0db29b8c42f260a1ac16a18902f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 8f3e5b094b46376bd9ad5e9e888d76f8a995fed3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880832"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -37,7 +38,7 @@ Los usuarios pueden ver estas aplicaciones en la Store Teams Microsoft, y estas 
 
 ### <a name="teamsappdistributionmethod-values"></a>valores de teamsAppDistributionMethod
 
-|Member|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |almacén|0| La aplicación está disponible para todos los inquilinos a través de la tienda de aplicaciones Microsoft Teams.|
 |organización|1|La aplicación sólo está disponible en este inquilino.|
@@ -45,7 +46,7 @@ Los usuarios pueden ver estas aplicaciones en la Store Teams Microsoft, y estas 
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo   | Descripción |
+| Relación | Tipo   | Description |
 |:---------------|:--------|:----------|
 |appDefinitions|colección de [teamsAppDefinition](teamsappdefinition.md)| Los detalles de cada versión de la aplicación. |
 
