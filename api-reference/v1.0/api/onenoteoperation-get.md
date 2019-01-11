@@ -1,12 +1,13 @@
 ---
 title: Obtener onenoteOperation
 description: 'Obtenga el estado de una operación de larga duración de OneNote. Esto se aplica a las operaciones que devuelvan el encabezado **Operation-Location** en la respuesta, como `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup` y `and CopyToSection`.   '
-ms.openlocfilehash: 67f11fb29d34b0d8cd2968cdc1dd5addabb3c0a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c402c5d334ab3b1fb34b2991ffcdb94c89bd5da3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031399"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894330"
 ---
 # <a name="get-onenoteoperation"></a>Obtener onenoteOperation
 
@@ -41,7 +42,7 @@ Ninguno.
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

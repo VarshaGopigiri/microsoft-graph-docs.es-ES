@@ -2,12 +2,13 @@
 title: Tipo de recurso userInstallStateSummary
 description: Contiene las propiedades del resumen del estado de la instalación para un usuario.
 author: tfitzmac
-ms.openlocfilehash: 4ba06d5b96774b5bca6d26a088aecc984a052ddb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e63bf8a5f6ab982a8542f483ad8f017c00b1496
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894554"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Tipo de recurso userInstallStateSummary
 
@@ -26,7 +27,7 @@ Contiene las propiedades del resumen del estado de la instalación para un usuar
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |userName|String|Nombre de usuario.|
 |installedDeviceCount|Int32|Número de dispositivos instalados.|
 |failedDeviceCount|Int32|Número de dispositivos erróneos.|

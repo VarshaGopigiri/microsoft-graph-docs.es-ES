@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 4cf9766c81f1b1676d82c78e2f248b8d8c91e5b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9de5de7f945177b1ab5c9f9107a32129f0f38c10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894561"
 ---
 # <a name="driveitem-resource-type"></a>Tipo de recurso DriveItem
 
@@ -103,17 +104,17 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 | createdDateTime      | DateTimeOffset     | Fecha y hora de creación del elemento. Solo lectura.
 | cTag                 | String             | Un eTag del contenido del elemento. No se cambia este eTag si solo se modifican los metadatos. **Nota** Esta propiedad no se devuelve si el elemento es una carpeta. Solo lectura.
 | deleted              | [deleted][]        | Información sobre el estado del elemento eliminado. Solo lectura.
-| description          | String             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
-| eTag                 | String             | ETag de todo el elemento (metadatos + contenido). Solo lectura.
+| description          | Cadena             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
+| eTag                 | Cadena             | ETag de todo el elemento (metadatos + contenido). Solo lectura.
 | file                 | [file][]           | Metadatos de archivo, si el elemento es un archivo. Solo lectura.
 | fileSystemInfo       | [fileSystemInfo][] | Información del sistema de archivos del cliente. Lectura y escritura.
 | folder               | [folder][]         | Metadatos de carpeta, si el elemento es una carpeta. Solo lectura.
-| id                   | String             | El identificador único del elemento dentro del Drive. Solo lectura.
+| id                   | Cadena             | El identificador único del elemento dentro del Drive. Solo lectura.
 | image                | [image][]          | Metadatos de imagen, si el elemento es una imagen. Solo lectura.
 | lastModifiedBy       | [identitySet][]    | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.
 | lastModifiedDateTime | DateTimeOffset     | Fecha y hora de la última modificación del elemento. Solo lectura.
 | location             | [geoCoordinates][] | Metadatos de ubicación, si el elemento tiene datos de ubicación. Solo lectura.
-| name                 | String             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
+| name                 | Cadena             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
 | paquete              | [package][]        | Si está presente, indica que este elemento es un paquete en lugar de una carpeta o archivo. Los paquetes se tratan como archivos en algunos contextos y como carpetas en otros. Solo lectura.
 | parentReference      | [itemReference][]  | Información primaria, si el elemento tiene un elemento primario. Lectura y escritura.
 | photo                | [photo][]          | Metadatos de foto, si el elemento es una foto. Solo lectura.
@@ -127,7 +128,7 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 | specialFolder        | [specialFolder][]  | Si el elemento actual también está disponible como una carpeta especial, se devuelve esta faceta. Solo lectura.
 | video                | [video][]          | Metadatos de vídeo, si el elemento es un vídeo. Solo lectura.
 | webDavUrl            | String             | Dirección URL compatible con WebDAV del elemento.
-| webUrl               | String             | Dirección URL que muestra el recurso en el explorador. Solo lectura.
+| webUrl               | Cadena             | Dirección URL que muestra el recurso en el explorador. Solo lectura.
 
 **Nota:** Las propiedades eTag y cTag funcionan de forma diferente en los contenedores (carpetas). El valor de cTag se modifica cuando se cambia el contenido o los metadatos de cualquier descendiente de la carpeta. El valor de eTag solo se modifica cuando se cambian las propiedades de la carpeta, excepto las propiedades que derivan de descendientes (como **childCount** o **lastModifiedDateTime**).
 
@@ -148,7 +149,7 @@ El recurso **driveItem** deriva de [**baseItem**][baseItem] y hereda las propied
 
 Los atributos de instancia son propiedades con comportamientos especiales. Estas propiedades son temporales y o bien a) definen el comportamiento que debería tener el servicio o b) proporcionan valores de propiedad a corto plazo, como una dirección URL de descarga de un elemento que expira.
 
-| Nombre de propiedad                     | Tipo   | Descripción
+| Nombre de la propiedad                     | Tipo   | Descripción
 |:----------------------------------|:-------|:--------------------------------
 | @microsoft.graph.conflictBehavior | string | El comportamiento de resolución de conflictos para las acciones que crean un nuevo elemento. Puede utilizar los valores de *fail*, *replace*, o *rename*. El valor predeterminado de PUT es *replace*. Nunca se devuelve un elemento con esta anotación. Solo escritura.
 | @microsoft.graph.downloadUrl      | string | Una dirección URL que puede utilizarse para descargar el contenido de este archivo. No es necesaria la autenticación con esta dirección URL. Solo lectura.

@@ -2,12 +2,13 @@
 title: tipo de enumeración androidForWorkCrossProfileDataSharingType
 description: Android para trabajo entre el uso compartido de tipo de datos de perfil.
 author: tfitzmac
-ms.openlocfilehash: c2ed9206a59b03cf6391d81d236135fc878a93f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17506ba1b63aec4b6c29233cc81edccbcf09f694
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894533"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>tipo de enumeración androidForWorkCrossProfileDataSharingType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360735"
 
 Android para trabajo entre el uso compartido de tipo de datos de perfil.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
 |preventAny|1|Impedir que cualquier uso compartido.|

@@ -1,12 +1,13 @@
 ---
 title: Obtener el inicio de sesión
 description: Recupera los inicios de sesión de usuario de Azure AD para el inquilino. Inicios de sesión que son interactivas en naturaleza (donde un nombre de usuario y contraseña se pasa como parte de símbolo (token) de autorización) y los inicios de sesión federados correctos actualmente se incluyen en los registros de inicio de sesión.
-ms.openlocfilehash: 1934af9b918dc976ef7f3fc6cdd21c04f6fcc705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894498"
 ---
 # <a name="get-signin"></a>Obtener el inicio de sesión
 Recupera los inicios de sesión de usuario de Azure AD para el inquilino. Inicios de sesión que son interactivas en naturaleza (donde un nombre de usuario y contraseña se pasa como parte de símbolo (token) de autorización) y los inicios de sesión federados correctos actualmente se incluyen en los registros de inicio de sesión.

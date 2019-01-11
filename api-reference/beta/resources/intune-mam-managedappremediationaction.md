@@ -2,12 +2,13 @@
 title: tipo de enumeración managedAppRemediationAction
 description: Un administrador que inició la acción que se aplique en una aplicación administrada.
 author: tfitzmac
-ms.openlocfilehash: c464520051edcd5c3904f3b4b5bd5343dc043891
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ecc4b61400cac841a9a699f2d8e3e99e2f543a74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894204"
 ---
 # <a name="managedappremediationaction-enum-type"></a>tipo de enumeración managedAppRemediationAction
 
@@ -17,7 +18,7 @@ ms.locfileid: "27306660"
 
 Un administrador que inició la acción que se aplique en una aplicación administrada.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |bloque|0|aplicación y los datos correspondientes de la compañía se va a bloquear|
 |Barrido|1|aplicación y los datos de la empresa correspondiente a ser borrado|

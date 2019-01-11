@@ -1,12 +1,13 @@
 ---
 title: tipo de filtro de recurso
 description: Determina qué objetos se deben aprovisionar a la aplicación. Por ejemplo, es posible que desee sólo los usuarios de aprovisionamiento que se encuentran en los Estados Unidos. Cuando un filtro de ámbito está presente, se omitirá los objetos que no cumplen con el filtro durante la sincronización.
-ms.openlocfilehash: 72885cfbd49083ce80b96cd389286d5c50937ffb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 754271e9d33159a14d1abf356280dd619643002f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894414"
 ---
 # <a name="filter-resource-type"></a>tipo de filtro de recurso
 
@@ -21,7 +22,7 @@ Se considera como un objeto en el ámbito para el conjunto de grupo (conjunto de
 Para obtener más información, vea [aplicación basada en el atributo de aprovisionamiento con filtros de ámbito](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-scoping-filters)
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |categoryFilterGroups|colección de [filterGroup](synchronization-filtergroup.md)|`*Experimental*`Filtrar conjunto de grupo que se usa para decidir si objeto dado pertenece y se debe procesar como parte de este objeto de asignación. Se considera como un objeto en el ámbito *Si cualquiera de los grupos de la colección se evalúa a `true` *.|
 |grupos|colección de [filterGroup](synchronization-filtergroup.md)|Filtrar conjunto de grupo que se usa para decidir si el objeto dado es en el ámbito de aprovisionamiento. **Éste es el filtro que debe usarse en la mayoría de los casos**. Si un objeto que se utiliza para satisfacer este filtro en un momento dado y, a continuación, el objeto o el filtro se ha cambiado por lo que el filtro no satisfecho, ya existe el objeto * obtener aprovisionará desaprovisionamiento ". Se considera como un objeto en el ámbito *Si cualquiera de los grupos de la colección se evalúa a `true` *.|

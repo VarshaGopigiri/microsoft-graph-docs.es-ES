@@ -2,12 +2,13 @@
 title: 'groupLifecyclePolicy: removeGroup'
 description: Quita un grupo de una directiva de ciclo de vida.
 author: dkershaw10
-ms.openlocfilehash: f1fcd8aedc74353d2224b7a670c40b43deb4cd16
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: faf394e411301d268a307151d98ec84a9b4e19a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894133"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -42,7 +43,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro | Type | Descripción |
+| Parámetro | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |groupId|Guid| El id. del grupo para quitar de la directiva.|
 

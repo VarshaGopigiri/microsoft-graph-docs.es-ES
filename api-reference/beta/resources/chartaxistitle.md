@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartAxisTitle
 description: Representa el título del eje de un gráfico.
 author: lumine2008
-ms.openlocfilehash: f787e4572c0b0f499740e2ba1e790fec1ce7ba61
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a78219e5833f7f85cde571dc984959b642ebe4d4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357298"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894183"
 ---
 # <a name="chartaxistitle-resource-type"></a>Tipo de recurso ChartAxisTitle
 
@@ -21,7 +22,7 @@ Representa el título del eje de un gráfico.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |Lee las propiedades y relaciones del objeto chartAxisTitle.|
-|[Actualizar](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |Actualiza el objeto ChartAxisTitle. |
+|[Update](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |Actualiza el objeto ChartAxisTitle. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

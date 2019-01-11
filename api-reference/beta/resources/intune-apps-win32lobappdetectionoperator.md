@@ -2,12 +2,13 @@
 title: tipo de enumeración win32LobAppDetectionOperator
 description: Contiene las propiedades de operador de detección.
 author: tfitzmac
-ms.openlocfilehash: b2c2d9398e9b5540e8da642b3d78f3709d24c93b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0eaeb6fde80b24e69794bd21d976ae3447b6df81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894267"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>tipo de enumeración win32LobAppDetectionOperator
 
@@ -17,7 +18,7 @@ ms.locfileid: "27315886"
 
 Contiene las propiedades de operador de detección.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|No configurado.|
 |igual|1|Operador igual.|

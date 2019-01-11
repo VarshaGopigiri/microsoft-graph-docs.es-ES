@@ -2,12 +2,13 @@
 title: 'participante: invitar a'
 description: Invitar a participantes a la llamada activa.
 author: VinodRavichandran
-ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d87e7863583c45a200bb2d077134b66500b23b08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894316"
 ---
 # <a name="participant-invite"></a>participante: invitar a
 
@@ -39,10 +40,10 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
 |participants|colección de [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Para invitar a los participantes.|
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta y un encabezado de ubicación con un uri para el [commsOperation](../resources/commsoperation.md) creado para esta solicitud.

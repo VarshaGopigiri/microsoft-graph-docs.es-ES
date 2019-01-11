@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso enrollmentProfile
 description: El recurso enrollmentProfile representa una colección de configuraciones que debe proporcionarse previo a la inscripción para habilitar la inscripción de ciertos dispositivos cuyas identidades han sido previamente por fases. Las identidades del dispositivo previamente por fases se asignan a este tipo de perfil para aplicar las configuraciones del perfil en inscripción del dispositivo correspondiente.
-ms.openlocfilehash: 884fee5c6851e79d96cd036294e5e5485d6df66a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894309"
 ---
 # <a name="enrollmentprofile-resource-type"></a>tipo de recurso enrollmentProfile
 
@@ -24,17 +25,17 @@ El recurso enrollmentProfile representa una colección de configuraciones que de
 |[Eliminar enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|Ninguno|Elimina un [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
 |[Actualizar enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Actualizar las propiedades de un objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .|
 |[acción setDefaultProfile](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Ninguno|Todavía no documentado|
-|[exportMobileConfig (función)](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|Exporta la configuración móvil|
+|[exportMobileConfig (función)](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Cadena|Exporta la configuración móvil|
 |[acción updateDeviceProfileAssignment](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Ninguno|Todavía no documentado|
 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|El GUID para el objeto|
-|displayName|String|Nombre del perfil|
-|descripción|String|Descripción del perfil|
+|displayName|Cadena|Nombre del perfil|
+|descripción|Cadena|Descripción del perfil|
 |requiresUserAuthentication|Booleano|Indica si el perfil requiere autenticación de usuario|
-|configurationEndpointUrl|String|Dirección url de extremo de configuración que se usará para inscripción|
+|configurationEndpointUrl|Cadena|Dirección url de extremo de configuración que se usará para inscripción|
 |enableAuthenticationViaCompanyPortal|Booleano|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa.|
 
 ## <a name="relationships"></a>Relaciones
