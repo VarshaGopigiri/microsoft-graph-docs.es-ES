@@ -2,49 +2,50 @@
 title: Get TableSort
 description: Recuperar las propiedades y relaciones del objeto tablesort.
 author: lumine2008
-ms.openlocfilehash: 41017260bd1b04798d2e62cce8a7fc7dac287f25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01cb4f6eaca0463d2fdc96c3dcefffdb9d6a0842
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861432"
 ---
-# <a name="get-tablesort"></a><span data-ttu-id="5ffff-103">Get TableSort</span><span class="sxs-lookup"><span data-stu-id="5ffff-103">Get TableSort</span></span>
+# <a name="get-tablesort"></a><span data-ttu-id="9d977-103">Get TableSort</span><span class="sxs-lookup"><span data-stu-id="9d977-103">Get TableSort</span></span>
 
-<span data-ttu-id="5ffff-104">Recuperar las propiedades y relaciones del objeto tablesort.</span><span class="sxs-lookup"><span data-stu-id="5ffff-104">Retrieve the properties and relationships of tablesort object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5ffff-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="5ffff-105">Permissions</span></span>
-<span data-ttu-id="5ffff-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5ffff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9d977-104">Recuperar las propiedades y relaciones del objeto tablesort.</span><span class="sxs-lookup"><span data-stu-id="9d977-104">Retrieve the properties and relationships of tablesort object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9d977-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="9d977-105">Permissions</span></span>
+<span data-ttu-id="9d977-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d977-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5ffff-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="5ffff-108">Permission type</span></span>      | <span data-ttu-id="5ffff-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="5ffff-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9d977-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="9d977-108">Permission type</span></span>      | <span data-ttu-id="9d977-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="9d977-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5ffff-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="5ffff-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5ffff-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5ffff-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5ffff-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5ffff-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ffff-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="5ffff-113">Not supported.</span></span>    |
-|<span data-ttu-id="5ffff-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="5ffff-114">Application</span></span> | <span data-ttu-id="5ffff-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="5ffff-115">Not supported.</span></span> |
+|<span data-ttu-id="9d977-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="9d977-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9d977-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9d977-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9d977-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9d977-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9d977-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9d977-113">Not supported.</span></span>    |
+|<span data-ttu-id="9d977-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="9d977-114">Application</span></span> | <span data-ttu-id="9d977-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9d977-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5ffff-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="5ffff-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9d977-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9d977-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/sort
 GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5ffff-117">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="5ffff-117">Optional query parameters</span></span>
-<span data-ttu-id="5ffff-118">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5ffff-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9d977-117">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="9d977-117">Optional query parameters</span></span>
+<span data-ttu-id="9d977-118">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9d977-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5ffff-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="5ffff-119">Request headers</span></span>
-| <span data-ttu-id="5ffff-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="5ffff-120">Name</span></span>      |<span data-ttu-id="5ffff-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="5ffff-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9d977-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9d977-119">Request headers</span></span>
+| <span data-ttu-id="9d977-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="9d977-120">Name</span></span>      |<span data-ttu-id="9d977-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="9d977-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="5ffff-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ffff-122">Authorization</span></span>  | <span data-ttu-id="5ffff-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="5ffff-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5ffff-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5ffff-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="5ffff-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="5ffff-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="9d977-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9d977-122">Authorization</span></span>  | <span data-ttu-id="9d977-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9d977-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9d977-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="9d977-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="9d977-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="9d977-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5ffff-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="5ffff-128">Request body</span></span>
-<span data-ttu-id="5ffff-129">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="5ffff-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9d977-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9d977-128">Request body</span></span>
+<span data-ttu-id="9d977-129">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="9d977-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5ffff-130">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5ffff-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9d977-130">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9d977-130">Response</span></span>
 
-<span data-ttu-id="5ffff-131">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y [WorkbookTableSort](../resources/tablesort.md) objeto en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5ffff-131">If successful, this method returns a `200 OK` response code and [WorkbookTableSort](../resources/tablesort.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5ffff-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="5ffff-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5ffff-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="5ffff-133">Request</span></span>
-<span data-ttu-id="5ffff-134">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="5ffff-134">Here is an example of the request.</span></span>
+<span data-ttu-id="9d977-131">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y [WorkbookTableSort](../resources/tablesort.md) objeto en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9d977-131">If successful, this method returns a `200 OK` response code and [WorkbookTableSort](../resources/tablesort.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9d977-132">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9d977-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9d977-133">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9d977-133">Request</span></span>
+<span data-ttu-id="9d977-134">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9d977-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_tablesort"
@@ -52,8 +53,8 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort
 ```
-##### <a name="response"></a><span data-ttu-id="5ffff-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5ffff-135">Response</span></span>
-<span data-ttu-id="5ffff-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="5ffff-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9d977-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9d977-135">Response</span></span>
+<span data-ttu-id="9d977-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="9d977-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

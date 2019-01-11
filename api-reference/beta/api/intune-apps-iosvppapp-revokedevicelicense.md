@@ -2,30 +2,31 @@
 title: acción revokeDeviceLicense
 description: REVOKE asignado iOS VPP dispositivo licencia para dada la aplicación.
 author: tfitzmac
-ms.openlocfilehash: 17ae2ed812d5c5b5a35926934d748fb730aafacf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a8dca4ea62e08e9d34727dd2142a156ba2d8dee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353133"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864977"
 ---
-# <a name="revokedevicelicense-action"></a><span data-ttu-id="9eed8-103">acción revokeDeviceLicense</span><span class="sxs-lookup"><span data-stu-id="9eed8-103">revokeDeviceLicense action</span></span>
+# <a name="revokedevicelicense-action"></a><span data-ttu-id="96564-103">acción revokeDeviceLicense</span><span class="sxs-lookup"><span data-stu-id="96564-103">revokeDeviceLicense action</span></span>
 
-> <span data-ttu-id="9eed8-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="9eed8-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9eed8-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="9eed8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="96564-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="96564-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="96564-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="96564-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9eed8-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="9eed8-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="96564-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="96564-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="9eed8-107">REVOKE asignado iOS VPP dispositivo licencia para dada la aplicación.</span><span class="sxs-lookup"><span data-stu-id="9eed8-107">Revoke assigned iOS VPP device license for given app.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9eed8-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="9eed8-108">Prerequisites</span></span>
-<span data-ttu-id="9eed8-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9eed8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="96564-107">REVOKE asignado iOS VPP dispositivo licencia para dada la aplicación.</span><span class="sxs-lookup"><span data-stu-id="96564-107">Revoke assigned iOS VPP device license for given app.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="96564-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="96564-108">Prerequisites</span></span>
+<span data-ttu-id="96564-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96564-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9eed8-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="9eed8-111">Permission type</span></span>|<span data-ttu-id="9eed8-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="9eed8-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="96564-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="96564-111">Permission type</span></span>|<span data-ttu-id="96564-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="96564-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9eed8-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="9eed8-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9eed8-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9eed8-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="9eed8-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9eed8-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9eed8-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9eed8-116">Not supported.</span></span>|
-|<span data-ttu-id="9eed8-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="9eed8-117">Application</span></span>|<span data-ttu-id="9eed8-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9eed8-118">Not supported.</span></span>|
+|<span data-ttu-id="96564-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="96564-113">Delegated (work or school account)</span></span>|<span data-ttu-id="96564-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96564-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="96564-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="96564-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="96564-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="96564-116">Not supported.</span></span>|
+|<span data-ttu-id="96564-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="96564-117">Application</span></span>|<span data-ttu-id="96564-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="96564-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9eed8-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9eed8-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96564-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="96564-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,30 +37,30 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeDeviceLicense
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9eed8-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9eed8-120">Request headers</span></span>
-|<span data-ttu-id="9eed8-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="9eed8-121">Header</span></span>|<span data-ttu-id="9eed8-122">Valor</span><span class="sxs-lookup"><span data-stu-id="9eed8-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="96564-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="96564-120">Request headers</span></span>
+|<span data-ttu-id="96564-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="96564-121">Header</span></span>|<span data-ttu-id="96564-122">Valor</span><span class="sxs-lookup"><span data-stu-id="96564-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9eed8-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="9eed8-123">Authorization</span></span>|<span data-ttu-id="9eed8-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="9eed8-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9eed8-125">Aceptar</span><span class="sxs-lookup"><span data-stu-id="9eed8-125">Accept</span></span>|<span data-ttu-id="9eed8-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9eed8-126">application/json</span></span>|
+|<span data-ttu-id="96564-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="96564-123">Authorization</span></span>|<span data-ttu-id="96564-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="96564-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="96564-125">Accept</span><span class="sxs-lookup"><span data-stu-id="96564-125">Accept</span></span>|<span data-ttu-id="96564-126">application/json</span><span class="sxs-lookup"><span data-stu-id="96564-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9eed8-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9eed8-127">Request body</span></span>
-<span data-ttu-id="9eed8-128">En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.</span><span class="sxs-lookup"><span data-stu-id="9eed8-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96564-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="96564-127">Request body</span></span>
+<span data-ttu-id="96564-128">En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.</span><span class="sxs-lookup"><span data-stu-id="96564-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="9eed8-129">La siguiente tabla muestra los parámetros que se pueden usar con esta acción.</span><span class="sxs-lookup"><span data-stu-id="9eed8-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="96564-129">La siguiente tabla muestra los parámetros que se pueden usar con esta acción.</span><span class="sxs-lookup"><span data-stu-id="96564-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="9eed8-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="9eed8-130">Property</span></span>|<span data-ttu-id="9eed8-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="9eed8-131">Type</span></span>|<span data-ttu-id="9eed8-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="9eed8-132">Description</span></span>|
+|<span data-ttu-id="96564-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="96564-130">Property</span></span>|<span data-ttu-id="96564-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="96564-131">Type</span></span>|<span data-ttu-id="96564-132">Description</span><span class="sxs-lookup"><span data-stu-id="96564-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9eed8-133">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="9eed8-133">managedDeviceId</span></span>|<span data-ttu-id="9eed8-134">String</span><span class="sxs-lookup"><span data-stu-id="9eed8-134">String</span></span>|<span data-ttu-id="9eed8-135">DeviceId para quienes licencia de aplicaciones asignado es que se desea revocar</span><span class="sxs-lookup"><span data-stu-id="9eed8-135">DeviceId for whom assigned app license is to be revoked</span></span>|
-|<span data-ttu-id="9eed8-136">notifyManagedDevices</span><span class="sxs-lookup"><span data-stu-id="9eed8-136">notifyManagedDevices</span></span>|<span data-ttu-id="9eed8-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="9eed8-137">Boolean</span></span>|<span data-ttu-id="9eed8-138">Valor Boolean que indica si se debe enviar notificación de revoke para dispositivos</span><span class="sxs-lookup"><span data-stu-id="9eed8-138">Boolean that indicates if revoke notification should be sent to device</span></span>|
+|<span data-ttu-id="96564-133">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="96564-133">managedDeviceId</span></span>|<span data-ttu-id="96564-134">Cadena</span><span class="sxs-lookup"><span data-stu-id="96564-134">String</span></span>|<span data-ttu-id="96564-135">DeviceId para quienes licencia de aplicaciones asignado es que se desea revocar</span><span class="sxs-lookup"><span data-stu-id="96564-135">DeviceId for whom assigned app license is to be revoked</span></span>|
+|<span data-ttu-id="96564-136">notifyManagedDevices</span><span class="sxs-lookup"><span data-stu-id="96564-136">notifyManagedDevices</span></span>|<span data-ttu-id="96564-137">Booleano</span><span class="sxs-lookup"><span data-stu-id="96564-137">Boolean</span></span>|<span data-ttu-id="96564-138">Valor Boolean que indica si se debe enviar notificación de revoke para dispositivos</span><span class="sxs-lookup"><span data-stu-id="96564-138">Boolean that indicates if revoke notification should be sent to device</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9eed8-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9eed8-139">Response</span></span>
-<span data-ttu-id="9eed8-140">Si se ejecuta correctamente, esta acción devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9eed8-140">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="96564-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="96564-139">Response</span></span>
+<span data-ttu-id="96564-140">Si se ejecuta correctamente, esta acción devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="96564-140">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9eed8-141">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9eed8-141">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9eed8-142">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9eed8-142">Request</span></span>
-<span data-ttu-id="9eed8-143">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9eed8-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="96564-141">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="96564-141">Example</span></span>
+### <a name="request"></a><span data-ttu-id="96564-142">Solicitud</span><span class="sxs-lookup"><span data-stu-id="96564-142">Request</span></span>
+<span data-ttu-id="96564-143">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="96564-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/revokeDeviceLicense
 
@@ -72,8 +73,8 @@ Content-length: 85
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9eed8-144">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9eed8-144">Response</span></span>
-<span data-ttu-id="9eed8-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="9eed8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="96564-144">Respuesta</span><span class="sxs-lookup"><span data-stu-id="96564-144">Response</span></span>
+<span data-ttu-id="96564-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="96564-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

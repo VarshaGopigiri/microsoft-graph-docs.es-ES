@@ -2,25 +2,26 @@
 title: tipo de enumeración vppTokenAccountType
 description: Tipos posibles de un token de programa de compra de volumen de Apple.
 author: tfitzmac
-ms.openlocfilehash: f4f7caa3deaf11aaa9fe02935b32bbe3e1a0e9e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d17c4555b46e1251780a90db5e6935bbb865c40a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861449"
 ---
-# <a name="vpptokenaccounttype-enum-type"></a><span data-ttu-id="a6724-103">tipo de enumeración vppTokenAccountType</span><span class="sxs-lookup"><span data-stu-id="a6724-103">vppTokenAccountType enum type</span></span>
+# <a name="vpptokenaccounttype-enum-type"></a><span data-ttu-id="bc4f6-103">tipo de enumeración vppTokenAccountType</span><span class="sxs-lookup"><span data-stu-id="bc4f6-103">vppTokenAccountType enum type</span></span>
 
-> <span data-ttu-id="a6724-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="a6724-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a6724-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="a6724-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bc4f6-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="bc4f6-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bc4f6-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="bc4f6-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="a6724-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="a6724-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bc4f6-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="bc4f6-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="a6724-107">Tipos posibles de un token de programa de compra de volumen de Apple.</span><span class="sxs-lookup"><span data-stu-id="a6724-107">Possible types of an Apple Volume Purchase Program token.</span></span>
-## <a name="members"></a><span data-ttu-id="a6724-108">Miembros</span><span class="sxs-lookup"><span data-stu-id="a6724-108">Members</span></span>
-|<span data-ttu-id="a6724-109">Miembro	</span><span class="sxs-lookup"><span data-stu-id="a6724-109">Member</span></span>|<span data-ttu-id="a6724-110">Valor</span><span class="sxs-lookup"><span data-stu-id="a6724-110">Value</span></span>|<span data-ttu-id="a6724-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="a6724-111">Description</span></span>|
+<span data-ttu-id="bc4f6-107">Tipos posibles de un token de programa de compra de volumen de Apple.</span><span class="sxs-lookup"><span data-stu-id="bc4f6-107">Possible types of an Apple Volume Purchase Program token.</span></span>
+## <a name="members"></a><span data-ttu-id="bc4f6-108">Miembros</span><span class="sxs-lookup"><span data-stu-id="bc4f6-108">Members</span></span>
+|<span data-ttu-id="bc4f6-109">Miembro	</span><span class="sxs-lookup"><span data-stu-id="bc4f6-109">Member</span></span>|<span data-ttu-id="bc4f6-110">Valor</span><span class="sxs-lookup"><span data-stu-id="bc4f6-110">Value</span></span>|<span data-ttu-id="bc4f6-111">Description</span><span class="sxs-lookup"><span data-stu-id="bc4f6-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a6724-112">empresarial</span><span class="sxs-lookup"><span data-stu-id="a6724-112">business</span></span>|<span data-ttu-id="a6724-113">0</span><span class="sxs-lookup"><span data-stu-id="a6724-113">0</span></span>|<span data-ttu-id="a6724-114">Programa de compra de volumen de Apple símbolo (token) asociado con un programa de negocio.</span><span class="sxs-lookup"><span data-stu-id="a6724-114">Apple Volume Purchase Program token associated with an business program.</span></span>|
-|<span data-ttu-id="a6724-115">ámbito educativo</span><span class="sxs-lookup"><span data-stu-id="a6724-115">education</span></span>|<span data-ttu-id="a6724-116">1</span><span class="sxs-lookup"><span data-stu-id="a6724-116">1</span></span>|<span data-ttu-id="a6724-117">Programa de compra de volumen de Apple símbolo (token) asociado con un programa de formación.</span><span class="sxs-lookup"><span data-stu-id="a6724-117">Apple Volume Purchase Program token associated with an education program.</span></span>|
+|<span data-ttu-id="bc4f6-112">empresarial</span><span class="sxs-lookup"><span data-stu-id="bc4f6-112">business</span></span>|<span data-ttu-id="bc4f6-113">0</span><span class="sxs-lookup"><span data-stu-id="bc4f6-113">0</span></span>|<span data-ttu-id="bc4f6-114">Programa de compra de volumen de Apple símbolo (token) asociado con un programa de negocio.</span><span class="sxs-lookup"><span data-stu-id="bc4f6-114">Apple Volume Purchase Program token associated with an business program.</span></span>|
+|<span data-ttu-id="bc4f6-115">ámbito educativo</span><span class="sxs-lookup"><span data-stu-id="bc4f6-115">education</span></span>|<span data-ttu-id="bc4f6-116">1</span><span class="sxs-lookup"><span data-stu-id="bc4f6-116">1</span></span>|<span data-ttu-id="bc4f6-117">Programa de compra de volumen de Apple símbolo (token) asociado con un programa de formación.</span><span class="sxs-lookup"><span data-stu-id="bc4f6-117">Apple Volume Purchase Program token associated with an education program.</span></span>|
 
 
 
