@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceComplianceUserOverview
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: fd11bb0949e9279b826cfc12e4c89a9f6b34ff53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31b5666fd7d99c3ff71819ef06c144dd14550167
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817566"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Tipo de recurso deviceComplianceUserOverview
 
@@ -23,7 +24,7 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |pendingCount|Int32|Número de usuarios pendientes|
 |notApplicableCount|Int32|Número de usuarios no es aplicable.|
 |successCount|Int32|Número de usuarios correctos|

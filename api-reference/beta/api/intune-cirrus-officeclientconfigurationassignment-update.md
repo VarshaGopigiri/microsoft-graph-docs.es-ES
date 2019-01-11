@@ -2,12 +2,13 @@
 title: Actualizar officeClientConfigurationAssignment
 description: Actualizar las propiedades de un objeto officeClientConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 78b0ae28bc61bc0d8d8c083502c6f6ef2cf7d0fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3d2fab5dc8793f566973e2d3e2d9bf968cbf30a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343039"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817531"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Actualizar officeClientConfigurationAssignment
 
@@ -38,7 +39,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) .
@@ -47,7 +48,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Todavía no documentado|
 
 

@@ -2,12 +2,13 @@
 title: Actualizar deviceComplianceScheduledActionForRule
 description: Actualice las propiedades de un objeto deviceComplianceScheduledActionForRule.
 author: tfitzmac
-ms.openlocfilehash: e63602cf39aa89bfdcda2db900d993d8e0a56d9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e12282024216582941ac4ed63108194a863cdc03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818308"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>Actualizar deviceComplianceScheduledActionForRule
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |ruleName|String|Nombre de la regla a la que se aplica esta acción programada.|
 
 

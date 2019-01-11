@@ -1,12 +1,13 @@
 ---
 title: Obtener informe de activaciones de Office 365
 description: Los informes de activación de Office 365 pueden ofrecerle una vista de los usuarios que activaron sus suscripciones de Office 365 como mínimo en un dispositivo. Estos informes ofrecen un desglose de las activaciones de suscripciones de Office 365 ProPlus, Project y Visio Pro para Office 365, así como el desglose de las activaciones en dispositivos y equipos de escritorio. Estos informes pueden resultarle útiles para identificar los usuarios que puede que necesiten soporte técnico adicional para activar su suscripción a Office.
-ms.openlocfilehash: 33fcb8841a4af51377029a4446a040370aa68217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6e91025c43a9dd6d7196fef3b4496883057ee0df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818279"
 ---
 # <a name="office-365-activations-reports"></a>Obtener informe de activaciones de Office 365
 

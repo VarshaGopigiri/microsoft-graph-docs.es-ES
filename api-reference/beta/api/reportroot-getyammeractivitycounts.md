@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerActivityCounts'
 description: Obtiene las tendencias sobre el número de actividades de Yammer en la organización y el número de mensajes que se publicaron, leyeron y etiquetaron como “Me gusta”.
-ms.openlocfilehash: 1181e98646706e41d7a40b0d3f6ee8f2686bbb1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 05d6a5265bab2f4cc647b9cc7849606e6bb97a66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086337"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817776"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 

@@ -2,12 +2,13 @@
 title: Eliminar androidManagedStoreAppConfiguration
 description: Elimina un androidManagedStoreAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a874f3cca2e596f79fd4d30b54c531b9049a702f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 224b45e4fac0c8b235eaea2ed304fb9df46aba95
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818112"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>Eliminar androidManagedStoreAppConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

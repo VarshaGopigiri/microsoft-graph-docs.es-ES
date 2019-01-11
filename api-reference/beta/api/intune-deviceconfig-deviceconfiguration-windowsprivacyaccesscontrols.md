@@ -2,12 +2,13 @@
 title: acción windowsPrivacyAccessControls
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 301091be00f31ee0b4d86f6ec78f32c0adf34016
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a9f91a84809b7b1f853360728704905cdde6457
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817118"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>acción windowsPrivacyAccessControls
 
@@ -40,14 +41,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |windowsPrivacyAccessControls|colección de [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|Todavía no documentado|
 

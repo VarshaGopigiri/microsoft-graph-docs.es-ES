@@ -2,12 +2,13 @@
 title: tipo de recurso meetingInfo
 description: La información especificada para crear o unirse a una reunión de la reunión.
 author: VinodRavichandran
-ms.openlocfilehash: f8039f05a2f25e254f7aefd740055babc1598dc1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 24ac0247fd39569276f2cb288646eca578447e07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817755"
 ---
 # <a name="meetinginfo-resource-type"></a>tipo de recurso meetingInfo
 
@@ -17,7 +18,7 @@ La información especificada para crear o unirse a una reunión de la reunión.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad       | Tipo    | Descripción|
+| Propiedad       | Tipo    | Description|
 |:---------------|:--------|:----------|
 | allowConversationWithoutHost | Booleano |  |
 

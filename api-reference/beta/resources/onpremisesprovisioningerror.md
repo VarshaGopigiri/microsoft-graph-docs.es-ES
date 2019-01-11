@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso onPremisesProvisioningError
 description: Representa los errores de sincronización de Active directory para el usuario, grupo o entidades organizativas de contacto cuando sincronización local de directorios en Azure Active Directory.
-ms.openlocfilehash: 9fa7850d39c9f7a490135a127938fc7fae30b6f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ea9efcd4d9db5cf7cc5b8f0a18b35345d06c3fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817741"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>tipo de recurso onPremisesProvisioningError
 
@@ -20,7 +21,7 @@ Representa los errores de sincronización de Active directory para las entidades
 |:---------------|:--------|:----------|
 |categoría|String| Categoría del error de aprovisionamiento. Nota: Actualmente, hay un único valor posible. Valor posible: *PropertyConflict* - indica un valor de propiedad no es único. Otros objetos contienen el mismo valor para la propiedad. |
 |occurredDateTime|DateTimeOffset| La fecha y la hora a la que se produjo el error. |
-|propertyCausingError|String| Nombre de la propiedad de Active directory que provoca el error. Los valores posibles actuales: *UserPrincipalName* o *ProxyAddress* |
+|propertyCausingError|Cadena| Nombre de la propiedad de Active directory que provoca el error. Los valores posibles actuales: *UserPrincipalName* o *ProxyAddress* |
 |valor|String| Valor de la propiedad que provoca el error. |
 
 ## <a name="json-representation"></a>Representación JSON

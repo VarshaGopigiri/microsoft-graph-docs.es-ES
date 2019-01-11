@@ -2,12 +2,13 @@
 title: tipo de enumeración mdmAuthority
 description: Entidad de administración de dispositivos móviles.
 author: tfitzmac
-ms.openlocfilehash: d4efb5f0debb5c18fac78e4ce0381d91848bc08f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb5eb293783910b79809c48c970bb1547b25dd4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816796"
 ---
 # <a name="mdmauthority-enum-type"></a>tipo de enumeración mdmAuthority
 
@@ -17,7 +18,7 @@ ms.locfileid: "27344145"
 
 Entidad de administración de dispositivos móviles.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Desconocido|
 |Intune|1|Intune|

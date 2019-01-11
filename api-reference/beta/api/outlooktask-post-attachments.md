@@ -2,12 +2,13 @@
 title: Crear datos adjuntos
 description: Utilice esta API para agregar datos adjuntos a un outlookTask.
 author: angelgolfer-ms
-ms.openlocfilehash: 3b3cc5d6d4357e74c0b63166a492eafe97813b06
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 55d9615e138d6eb87bd4a7b12a72c0d915825fdf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816908"
 ---
 # <a name="create-attachment"></a>Crear dato adjunto
 
@@ -39,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Nombre       | Descripción|
 |:---------------|:----------|
 | Authorization  | {token} de portador. Obligatorio. |
-| Content-Type | Una cadena que representa el tipo de datos en el cuerpo de una entidad. Obligatorio. |
+| Content-Type | Una cadena que representa el tipo de datos en el cuerpo de una entidad. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
 

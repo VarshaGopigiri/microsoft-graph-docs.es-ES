@@ -2,12 +2,13 @@
 title: Eliminar windowsPrivacyDataAccessControlItem
 description: Elimina un windowsPrivacyDataAccessControlItem.
 author: tfitzmac
-ms.openlocfilehash: 76931f9481659e244e1c0235ee19732dd40854a2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ae787c039199fcc1567d764a200f678682ba057f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311133"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816698"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>Eliminar windowsPrivacyDataAccessControlItem
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso programControl
 description: En el anuncio de Azure access revisa la característica, el objeto de control de programa representa un control, vincular una revisión de acceso a un programa.
-ms.openlocfilehash: 03e70ffdf0607eeb11abaf1b12065b4092294d23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086150"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817825"
 ---
 # <a name="programcontrol-resource-type"></a>tipo de recurso programControl
 
@@ -20,10 +21,10 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el obj
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Crear programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Agregar un programControl a un programa.|
-|[Eliminar programControl](../api/programcontrol-delete.md) |     Ninguna.   |   Quitar un programControl de un programa.|
+|[Eliminar programControl](../api/programcontrol-delete.md) |     Ninguno.   |   Quitar un programControl de un programa.|
 |[Lista programControls](../api/programcontrol-list.md) | colección de [programControl](programcontrol.md)| Controles de lista a través de todos los programas en el inquilino.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 |Tipo de permiso                        | Permisos (de menos a más privilegiados)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -32,7 +33,7 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el obj
 |Aplicación                            | No admitida. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | El identificador asignado a la característica del vínculo entre el programa y control                                      |
 | `programId`              |`String`                | El programId del programa de este control es una parte de. Necesarios en crear.                            |
@@ -45,7 +46,7 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el obj
 | `resource`               |`programResource`       | El recurso, un grupo o una aplicación, el objetivo de la revisión de acceso del control de este programa.                   |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `program`                |[programa](program.md)               | El programa de. que este control forma parte.                                                |
 
@@ -89,7 +90,7 @@ El recurso de programa, dentro de un objeto de control de programa, es una repre
 
 Este tipo se hereda de `microsoft.graph.identity` y tiene una propiedad adicional:
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `type`               |`String`  | Tipo del recurso, que indica si es un grupo o una aplicación. |     
 
