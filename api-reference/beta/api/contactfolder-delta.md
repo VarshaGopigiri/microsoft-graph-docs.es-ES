@@ -1,12 +1,13 @@
 ---
 title: 'contactFolder: delta'
 description: Obtenga un conjunto de carpetas de contactos que se hayan agregado, eliminado o quitado del buzón del usuario.
-ms.openlocfilehash: 3ba1d09fb280389f3b6dd1ea3af4aa8601d4ca37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 671ce371a65757f6f2561644c19164d523dfcc31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085992"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809313"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -49,7 +50,7 @@ Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud G
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 

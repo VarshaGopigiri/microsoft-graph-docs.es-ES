@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso orgContact
 description: Aquí tiene una representación JSON del recurso
-ms.openlocfilehash: 90d25d3ef7688372e4e961220bc454a2b5607344
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283671"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832973"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso orgContact
 
@@ -27,28 +28,28 @@ ms.locfileid: "27283671"
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | addresses                    | [physicalOfficeAddress](physicalofficeaddress.md)            | Direcciones postales para este contacto de la organización. Por ahora un contacto sólo puede tener una dirección física. |
 | companyName                  | String                                                    | Nombre de la compañía que este contacto organizativa pertenecen a.                                                                                                                                                                                                                                                                                                                 |
-| department                   | String                                                     | El nombre del departamento en el que trabaja el contacto.                                                                                                                                                                                                                                                                                                                                |
-| displayName                  | String                                                     | Nombre para mostrar para este contacto de la organización.                                                                                                                                                                                                                                                                                                                                   |
-| givenName                    | String                                                     | Nombre para este contacto de la organización.                                                                                                                                                                                                                                                                                                                                     |
-| id                           | String                                                     | Identificador único para este contacto de la organización.                                                                                                                                                                                                                                                                                                                             |
+| department                   | Cadena                                                     | El nombre del departamento en el que trabaja el contacto.                                                                                                                                                                                                                                                                                                                                |
+| displayName                  | Cadena                                                     | Nombre para mostrar para este contacto de la organización.                                                                                                                                                                                                                                                                                                                                   |
+| givenName                    | Cadena                                                     | Nombre para este contacto de la organización.                                                                                                                                                                                                                                                                                                                                     |
+| id                           | Cadena                                                     | Identificador único para este contacto de la organización.                                                                                                                                                                                                                                                                                                                             |
 | imAddresses                  | Colección String                          | Lista de direcciones de mensajería instantánea para este contacto de la organización. Por ahora un contacto sólo puede tener una dirección SIP.                                                                                                                                                                                                                        |
-| jobTitle                     | String                                                     | Título del trabajo para este contacto de la organización.                                                                                                                                                                                                                                                                                                                                      |
-|mail|String| La dirección SMTP para el contacto, por ejemplo, "jeff@contoso.onmicrosoft.com". |
-| mailNickname                 | String                                                     | Alias de correo electrónico (parte de la dirección de correo electrónico pendiente previamente el símbolo @) para este contacto de la organización.                                                                                                                                                                                                                                                                                |
+| jobTitle                     | Cadena                                                     | Título del trabajo para este contacto de la organización.                                                                                                                                                                                                                                                                                                                                      |
+|mail|Cadena| La dirección SMTP para el contacto, por ejemplo, "jeff@contoso.onmicrosoft.com". |
+| mailNickname                 | Cadena                                                     | Alias de correo electrónico (parte de la dirección de correo electrónico pendiente previamente el símbolo @) para este contacto de la organización.                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | Fecha y hora cuando este contacto organizativa por última sincronizan desde AD local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 tendrá este aspecto: ' 2014-01-01T00:00:00Z'.   |
 | onPremisesProvisioningErrors |colección de [onPremisesProvisioningError](onpremisesprovisioningerror.md)       | Lista de cualquier sincronización de aprovisionamiento de errores para este contacto de la organización.                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|Boolean|**es true** si este objeto se sincroniza de un directorio local; **false** si este objeto se ha originalmente sincronizado desde un directorio local, pero es ya no sincronizado y ahora definirlas en Exchange; **null** si este objeto nunca se sincronizaron desde un directorio local (valor predeterminado).|
+|onPremisesSyncEnabled|Booleano|**es true** si este objeto se sincroniza de un directorio local; **false** si este objeto se ha originalmente sincronizado desde un directorio local, pero es ya no sincronizado y ahora definirlas en Exchange; **null** si este objeto nunca se sincronizaron desde un directorio local (valor predeterminado).|
 | phones                       | Colección [phone](phone.md)                            | Lista de teléfonos para este contacto de la organización. Pueden ser tipos de teléfono móvil, empresarial y businessFax. Sólo uno de cada tipo de nunca puede estar presente en la colección.                                                                                                                       |
 | proxyAddresses               | Colección string                                         | Por ejemplo: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. El operador **any** es necesario para las expresiones de filtro en las propiedades multivalor. Compatible con \$filtro.                                                                                                                                                                               |
-| surname                      | String                                                     | Apellidos para este contacto de la organización.                          |
+| surname                      | Cadena                                                     | Apellidos para este contacto de la organización.                          |
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |directReports|Colección [directoryObject](directoryobject.md)| Informes de directos del contacto. (Los usuarios y contactos que tienen su propiedad administrador establecer a este contacto.)  Es de sólo lectura. Admite valores NULL.|
 |manager|[directoryObject](directoryobject.md)| El usuario o el contacto que es administrador de este contacto. Solo lectura.|

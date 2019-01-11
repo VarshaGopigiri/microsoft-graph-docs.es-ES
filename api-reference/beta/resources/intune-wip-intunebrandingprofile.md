@@ -2,12 +2,13 @@
 title: tipo de recurso intuneBrandingProfile
 description: Esta entidad contiene datos que se usan para personalizar la apariencia de nivel de inquilino de las aplicaciones de Portal de empresa, así como el portal web del usuario final.
 author: tfitzmac
-ms.openlocfilehash: e37105653f441da6aeb8d549b7690b8044de3186
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d2ee2fee902b4aca542810dc058b7d16aaedb9c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820611"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
@@ -28,10 +29,10 @@ Esta entidad contiene datos que se usan para personalizar la apariencia de nivel
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de perfil|
-|nombre del perfil|String|Nombre del perfil|
-|profileDescription|String|Descripción del perfil|
-|isDefaultProfile|Boolean|Presenta si se utiliza el perfil de forma predeterminada.|
+|id|Cadena|Clave de perfil|
+|nombre del perfil|Cadena|Nombre del perfil|
+|profileDescription|Cadena|Descripción del perfil|
+|isDefaultProfile|Booleano|Presenta si se utiliza el perfil de forma predeterminada.|
 |createdDateTime|DateTimeOffset|Cuando se creó el BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Cuando el BrandingProfile se modificó por última vez.|
 |displayName|Cadena|Nombre de la compañía u organización que se muestra a los usuarios finales.|

@@ -1,19 +1,20 @@
 ---
 title: Tipo de recurso dateTimeTimeZone
 description: Describe la fecha, la hora y la zona horaria de un momento dado.
-ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827331"
 ---
 # <a name="datetimetimezone-resource-type"></a>Tipo de recurso dateTimeTimeZone
 
 Describe la fecha, la hora y la zona horaria de un momento dado.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |dateTime|String|Un único momento dado en una fecha combinada y la representación de tiempo (`<date>T<time>`).|
 |timeZone|String|Uno de los siguientes nombres de zona horaria.|

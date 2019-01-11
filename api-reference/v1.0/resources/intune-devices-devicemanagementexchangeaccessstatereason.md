@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceManagementExchangeAccessStateReason
 description: Razón del estado del dispositivo Exchange acceso.
 author: tfitzmac
-ms.openlocfilehash: d51e9656c841a86d282eb1b5654da042f91866fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 96bcc60daa0ec69788856413bf1d253d8b0cabfc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834799"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessStateReason
 
@@ -15,9 +16,9 @@ ms.locfileid: "27323446"
 
 Razón del estado del dispositivo Exchange acceso.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Ninguna razón de estado de access detectada desde Exchange|
+|none|0|Ninguna razón de estado de access detectada desde Exchange|
 |desconocido|1|Motivo del estado de acceso desconocido|
 |exchangeGlobalRule|2|Estado de acceso determinado por regla Global de Exchange|
 |exchangeIndividualRule|3|Estado de acceso determinado por regla Individual de Exchange|

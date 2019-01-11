@@ -2,12 +2,13 @@
 title: List devices
 description: 'Recupere una lista de dispositivos registrados en el directorio. '
 author: tfitzmac
-ms.openlocfilehash: 04275c3d6356fbf28434b7bbe6ebfbd54f6bba8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4cbe2ad3f43cfda274901fb6cdc7322d1c1e523
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824580"
 ---
 # <a name="list-devices"></a>List devices
 
@@ -33,7 +34,7 @@ GET /devices
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

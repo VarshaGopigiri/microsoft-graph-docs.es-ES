@@ -2,12 +2,13 @@
 title: Actualizar iosVppEBook
 description: Actualice las propiedades de un objeto iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 275b8fa6f1c60b0381df09716da8ccf5985611df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8af46ca4e5e75e362043cfc74fc2745072ac033
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823383"
 ---
 # <a name="update-iosvppebook"></a>Actualizar iosVppEBook
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).
@@ -47,22 +48,22 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|String|Nombre del libro electrónico Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
-|descripción|String|Descripción. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
-|publicador|String|Publicador. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
+|id|Cadena|Clave de la entidad. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|Cadena|Nombre del libro electrónico Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
+|descripción|Cadena|Descripción. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
+|publicador|Cadena|Publicador. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|La fecha y la hora en que se publicó el libro electrónico. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Cubierta de libro. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|String|La dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|String|La dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|El Id. de token de VPP.|
-|appleId|String|El ID de Apple asociado a un token de VPP.|
-|vppOrganizationName|String|El nombre de la organización del token de VPP.|
+|appleId|Cadena|El ID de Apple asociado a un token de VPP.|
+|vppOrganizationName|Cadena|El nombre de la organización del token de VPP.|
 |géneros|Colección string|Géneros.|
-|language|String|Idioma.|
-|vendedor|String|Vendedor.|
+|language|Cadena|Idioma.|
+|vendedor|Cadena|Vendedor.|
 |totalLicenseCount|Int32|Número total de licencias.|
 |usedLicenseCount|Int32|Número de licencias usadas.|
 

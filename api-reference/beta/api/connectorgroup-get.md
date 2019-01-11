@@ -1,12 +1,13 @@
 ---
 title: Obtener connectorGroup
 description: Recuperar las propiedades de un objeto connectorGroup.
-ms.openlocfilehash: 8677432bf14559d47811218dc20cd0af6837dd3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: df809efdd9e89d34abf79893bb5a747e500a7a81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086262"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824307"
 ---
 # <a name="get-connectorgroup"></a>Obtener connectorGroup
 
@@ -33,7 +34,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | Bearer. Obligatorio|
+| Autorización  | Bearer. Obligatorio|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

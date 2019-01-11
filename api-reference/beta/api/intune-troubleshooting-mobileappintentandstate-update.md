@@ -2,12 +2,13 @@
 title: Actualizar mobileAppIntentAndState
 description: Actualizar las propiedades de un objeto mobileAppIntentAndState.
 author: tfitzmac
-ms.openlocfilehash: d219e6d9d146f71c4979973e7f6510010fe2fa92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd43c13d8e166563e60cb36cdcad980e25124aa5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303188"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827100"
 ---
 # <a name="update-mobileappintentandstate"></a>Actualizar mobileAppIntentAndState
 
@@ -38,7 +39,7 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .
@@ -47,9 +48,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID para el objeto|
-|managedDeviceIdentifier|String|Identificador del dispositivo creado o recopilado por Intune.|
-|userId|String|Identificador del usuario que intentó inscribir el dispositivo.|
+|id|Cadena|UUID para el objeto|
+|managedDeviceIdentifier|Cadena|Identificador del dispositivo creado o recopilado por Intune.|
+|userId|Cadena|Identificador del usuario que intentó inscribir el dispositivo.|
 |mobileAppList|colección de [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|La lista de calidades de carga y Estados para el inquilino.|
 
 

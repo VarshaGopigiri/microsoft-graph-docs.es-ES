@@ -1,12 +1,13 @@
 ---
 title: Obtener subscribedSku
 description: Recupera una suscripción comercial específica que ha adquirido una organización.
-ms.openlocfilehash: 72516fd527a268239aba7bb8e5e57757984af25a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a031e22e937f1c2b88538c70eb9456fb8c57b277
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087070"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863465"
 ---
 # <a name="get-subscribedsku"></a>Obtener subscribedSku
 
@@ -34,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

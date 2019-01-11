@@ -2,12 +2,13 @@
 title: tipo de enumeración signInAssistantOptions
 description: Valores para el SignInAssistantSettings.
 author: tfitzmac
-ms.openlocfilehash: 97bcb162168964283e2e741f33980a7cf2904e7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f80b67a40d0b551386b9f03273efb26e294d3520
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302124"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825399"
 ---
 # <a name="signinassistantoptions-enum-type"></a>tipo de enumeración signInAssistantOptions
 
@@ -17,7 +18,7 @@ ms.locfileid: "27302124"
 
 Valores para el SignInAssistantSettings.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|No configurado - wlidsvc inicio se establecerá en SERVICE_DEMAND_START.|
 |deshabilitado|1|Deshabilitado - wlidsvc inicio se establecerá como SERVICE_DISABLED.|

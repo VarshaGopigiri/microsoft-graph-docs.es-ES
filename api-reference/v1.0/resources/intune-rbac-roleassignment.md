@@ -2,12 +2,13 @@
 title: Tipo de recurso roleAssignment
 description: El recurso de la asignación de roles. Las asignaciones de roles unen la definición de rol con miembros y ámbitos. Puede haber una o más asignaciones de roles por rol. Esto se aplica a los roles integrados y personalizados.
 author: tfitzmac
-ms.openlocfilehash: 6af73146c47ab3565722497146944a0b301e6a56
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8506b87975b69f90cf561e776e557bb472f1ffd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846154"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 
@@ -26,9 +27,9 @@ El recurso de la asignación de roles. Las asignaciones de roles unen la definic
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
-|displayName|String|El nombre descriptivo o para mostrar de la asignación de roles.|
-|descripción|String|Descripción de la asignación de roles.|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|displayName|Cadena|El nombre descriptivo o para mostrar de la asignación de roles.|
+|descripción|Cadena|Descripción de la asignación de roles.|
 |resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory.|
 
 ## <a name="relationships"></a>Relaciones

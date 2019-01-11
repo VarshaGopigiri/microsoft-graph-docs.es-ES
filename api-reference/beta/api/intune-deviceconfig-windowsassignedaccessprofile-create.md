@@ -2,12 +2,13 @@
 title: Crear windowsAssignedAccessProfile
 description: Crear un nuevo objeto windowsAssignedAccessProfile.
 author: tfitzmac
-ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4db64578ec2d03f81d10110951a4caf93dc564c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304546"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827359"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>Crear windowsAssignedAccessProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto windowsAssignedAccessProfile.
@@ -47,9 +48,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|nombre del perfil|String|Esto es un nombre descriptivo usado para identificar un grupo de aplicaciones, el diseño de estas aplicaciones en el menú Inicio y los usuarios a quienes se asigna esta configuración de quiosco.|
-|showTaskBar|Boolean|Esta opción le permite al administrador especificar si se muestra la barra de tareas o no.|
+|id|Cadena|Clave de la entidad.|
+|nombre del perfil|Cadena|Esto es un nombre descriptivo usado para identificar un grupo de aplicaciones, el diseño de estas aplicaciones en el menú Inicio y los usuarios a quienes se asigna esta configuración de quiosco.|
+|showTaskBar|Booleano|Esta opción le permite al administrador especificar si se muestra la barra de tareas o no.|
 |appUserModelIds|Colección String|Estos son el único almacén de aplicaciones de Windows que estará disponible para iniciar desde el menú Inicio.|
 |desktopAppPaths|Colección String|Estas son las rutas de acceso de las aplicaciones de escritorio que estará disponible en el menú Inicio y las aplicaciones sólo el usuario podrá iniciar.|
 |cuentas de usuario|Colección String|Las cuentas de usuario que se bloqueará a esta configuración de quiosco.|

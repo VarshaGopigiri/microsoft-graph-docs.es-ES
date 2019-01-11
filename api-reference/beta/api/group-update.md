@@ -2,12 +2,13 @@
 title: Actualizar grupo
 description: Actualiza las propiedades de un objeto de grupo.
 author: dkershaw10
-ms.openlocfilehash: 801143f0bb0a0e5012cf946e52cf4fd4cff34556
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 87a9c167b3ba697831ad8b992fc38cb2fc4e7c47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848996"
 ---
 # <a name="update-group"></a>Actualizar grupo
 
@@ -35,7 +36,7 @@ PATCH /groups/{id}
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 
@@ -45,13 +46,13 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
+|allowExternalSenders|Booleano|El valor predeterminado es **false**. Indica si los usuarios externos a la organización pueden enviar mensajes al grupo.|
 |autoSubscribeNewMembers|Booleano|El valor predeterminado es **false**. Indica si los miembros agregados al grupo se suscribirán de forma automática para recibir notificaciones por correo electrónico.|
-|descripción|String|Una descripción opcional del grupo. |
-|displayName|String|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
+|descripción|Cadena|Una descripción opcional del grupo. |
+|displayName|Cadena|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
 |groupTypes|Colección string|Especifica el tipo de grupo que se va a crear. Los valores posibles son **Unified** para crear un grupo de Office 365 o **DynamicMembership** para grupos dinámicos.  Para los demás tipos de grupos, como los grupos con seguridad habilitada y los grupos de seguridad habilitados para correo electrónico, no establezca esta propiedad.|
 |mailEnabled|Boolean|Especifica si el grupo está habilitado para correo. Si la propiedad **securityEnabled** también es **true**, el grupo es un grupo de seguridad habilitado para correo electrónico; en caso contrario, el grupo es un grupo de distribución de Microsoft Exchange.|
-|mailNickname|String|El alias de correo del grupo. Esta propiedad debe especificarse al crear un grupo. Es compatible con $filter.|
+|mailNickname|Cadena|El alias de correo del grupo. Esta propiedad debe especificarse al crear un grupo. Es compatible con $filter.|
 |securityEnabled|Boolean|Especifica si el grupo es un grupo de seguridad. Si la propiedad **mailEnabled** también es true, el grupo es un grupo de seguridad habilitado para correo electrónico; de lo contrario, es un grupo de seguridad. Debe ser **false** para grupos de Office 365. Es compatible con $filter.|
 |visibility|String|Especifica la visibilidad de un grupo de Office 365. Los valores posibles son: **Private**, **Public** o vacío (que se interpreta como **Public**).|
 

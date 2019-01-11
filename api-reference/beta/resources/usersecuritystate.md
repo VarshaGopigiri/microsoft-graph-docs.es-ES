@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso userSecurityState
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: f530ac1a657b4049c17bdcdd40f1dd5ea734f278
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd471b06f20327eb38734276ea0562ab35db6358
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810118"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso userSecurityState
 
@@ -16,22 +17,22 @@ Contiene información de estado acerca de la cuenta de usuario.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad   | Tipo |Descripción|
+| Propiedad   | Tipo |Description|
 |:---------------|:--------|:----------|
-|aadUserId|String|AAD usuario identificador (GUID) - objeto representa la entidad de usuario físicos/multi-account.|
-|accountName|String|Nombre de cuenta de la cuenta de usuario (sin dominio de Active Directory o dominio DNS) - (también denominada `mailNickName`).|
+|aadUserId|Cadena|AAD usuario identificador (GUID) - objeto representa la entidad de usuario físicos/multi-account.|
+|accountName|Cadena|Nombre de cuenta de la cuenta de usuario (sin dominio de Active Directory o dominio DNS) - (también denominada `mailNickName`).|
 |domainName|String|Dominio de NetBIOS o Active Directory de la cuenta de usuario (es decir, el formato dominio\cuenta).|
 |emailRole|emailRole|Para las alertas relacionadas con el correo electrónico - correo electrónico de una cuenta de usuario 'rol'. Los valores posibles son: `unknown`, `sender` y `recipient`.|
 |isVpn|Booleano|Indica si el usuario se conectó a través de una red privada virtual.|
 |logonDateTime|DateTimeOffset|Hora a la que el inicio de sesión se produjo. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|ID de registro|String|Identificador de usuario de inicio de sesión.|
-|logonIp|String|Dirección IP de. que la solicitud de inicio de sesión se originó.|
-|logonLocation|String|Ubicación (mediante la asignación de direcciones IP) asociado a un evento de inicio de sesión de usuario por este usuario.|
+|ID de registro|Cadena|Identificador de usuario de inicio de sesión.|
+|logonIp|Cadena|Dirección IP de. que la solicitud de inicio de sesión se originó.|
+|logonLocation|Cadena|Ubicación (mediante la asignación de direcciones IP) asociado a un evento de inicio de sesión de usuario por este usuario.|
 |logonType|logonType|Método de inicio de sesión de usuario en. Los valores posibles son: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
-|onPremisesSecurityIdentifier|String|Active Directory (local) identificador de seguridad (SID) del usuario.|
-|riskScore|String|Puntuación de proveedor generado/calculada en el riesgo de la cuenta de usuario. Valor recomendado el rango de 0-1, lo que equivale a un porcentaje.|
+|onPremisesSecurityIdentifier|Cadena|Active Directory (local) identificador de seguridad (SID) del usuario.|
+|riskScore|Cadena|Puntuación de proveedor generado/calculada en el riesgo de la cuenta de usuario. Valor recomendado el rango de 0-1, lo que equivale a un porcentaje.|
 |userAccountType|userAccountSecurityType|Tipo de cuenta de usuario (pertenencia a grupos), por definición de Windows. Los valores posibles son: `unknown`, `standard`, `power` y `administrator`.|
-|userPrincipalName|String|Inicio de sesión de nombre de usuario - formato de internet: (nombre de cuenta de usuario) @(nombre de dominio DNS de cuenta de usuario).|
+|userPrincipalName|Cadena|Inicio de sesión de nombre de usuario - formato de internet: (nombre de cuenta de usuario) @(nombre de dominio DNS de cuenta de usuario).|
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -2,12 +2,13 @@
 title: Asignaciones de listas
 description: Recuperar una lista de objetos de asignación. Se permite un profesor para ver todos los objetos de asignación para la clase. Los alumnos sólo pueden ver las asignaciones que se les haya asignado.
 author: mmast-msft
-ms.openlocfilehash: c7fbab429b238a0ae7f1814066eedfe793096f02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a58406f26b45ccf3b16b6ff6bfa17e38b52590e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823922"
 ---
 # <a name="list-assignments"></a>Asignaciones de listas
 

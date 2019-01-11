@@ -2,12 +2,13 @@
 title: Tipo de recurso managedEBook
 description: Una clase abstracta que contiene las propiedades base para el libro electrónico Managed.
 author: tfitzmac
-ms.openlocfilehash: 7b826d7b0a11ce957a87154f276abc0e8168f45d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3bf01c2115f4a0224ab09e59a9049324e82fa855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834191"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -26,16 +27,16 @@ Una clase abstracta que contiene las propiedades base para el libro electrónico
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|displayName|String|Nombre del libro electrónico|
-|descripción|String|Descripción.|
-|publicador|String|Publicador.|
+|id|Cadena|Clave de la entidad.|
+|displayName|Cadena|Nombre del libro electrónico|
+|descripción|Cadena|Descripción.|
+|publicador|Cadena|Publicador.|
 |publishedDateTime|DateTimeOffset|La fecha y la hora en que se publicó el libro electrónico.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Cubierta de libro.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el archivo del libro electrónico.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el libro electrónico.|
-|informationUrl|String|La dirección URL para obtener más información.|
-|privacyInformationUrl|String|La dirección URL de la declaración de privacidad.|
+|informationUrl|Cadena|La dirección URL para obtener más información.|
+|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

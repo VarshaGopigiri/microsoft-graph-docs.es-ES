@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso privilegedApproval
 description: Representa una aprobación que se solicita en con privilegios de administración de identidades para obtener en una función.
-ms.openlocfilehash: 3f900ef4a141b2f71c303becd49789b86cefb1b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dee8cffba02270308c6786b2549b66aa5ad9dfa8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087035"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868351"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso privilegedApproval
 
@@ -26,21 +27,21 @@ Representa una aprobación que se solicita en con privilegios de administración
 |[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Obtenga las solicitudes de aprobación del solicitante.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |approvalDuration|Duración||
 |approvalState|string| Los valores posibles son: `pending`, `approved`, `denied`, `aborted` y `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Cadena||
+|approverReason|Cadena||
 |endDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|String| Solo lectura.|
-|requestorReason|String||
-|identificador de función|String||
+|id|Cadena| Solo lectura.|
+|requestorReason|Cadena||
+|identificador de función|Cadena||
 |startDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |userId|String||
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Solo lectura. Admite valores NULL.|
 |solicitud|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Solo lectura. La solicitud de asignación de roles para este objeto de aprobación|

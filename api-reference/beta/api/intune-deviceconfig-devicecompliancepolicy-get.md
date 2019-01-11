@@ -2,12 +2,13 @@
 title: Obtener deviceCompliancePolicy
 description: Lea las propiedades y las relaciones del objeto deviceCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 54c998f79e8b916e549751186e2967b0482e23bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5473d48a5868af2748d14e68ff1e12bbc8e6d0b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322795"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869478"
 ---
 # <a name="get-devicecompliancepolicy"></a>Obtener deviceCompliancePolicy
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

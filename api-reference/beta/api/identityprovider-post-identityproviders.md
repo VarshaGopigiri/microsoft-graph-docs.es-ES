@@ -1,12 +1,13 @@
 ---
 title: Crear identityProvider
 description: Crear un nuevo identityProvider especificando el nombre para mostrar, identityProvider tipo, identificador de cliente y el secreto de cliente.
-ms.openlocfilehash: 8786cbf6676567a0c6aaef5bf497f50cff1ce9a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 50ead5acbbda7725e44de55865d6fe2184c89647
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866237"
 ---
 # <a name="create-identityprovider"></a>Crear identityProvider
 
@@ -44,12 +45,12 @@ POST /identityProviders
 
 En el cuerpo de la solicitud, proporcionan una representación JSON del objeto [identityProvider](../resources/identityprovider.md) . Todas las propiedades enumeradas en la siguiente tabla son necesarias.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---------------|:--------|:----------|
-|clientId|String|El identificador de cliente para la aplicación. Este es el identificador de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
-|clientSecret|String|El secreto de cliente para la aplicación. Este es el secreto de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
-|name|String|El nombre para mostrar del proveedor de identidad.|
-|type|String|El tipo de proveedor de identidad. Debe ser uno de los siguientes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|clientId|Cadena|El identificador de cliente para la aplicación. Este es el identificador de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
+|clientSecret|Cadena|El secreto de cliente para la aplicación. Este es el secreto de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
+|name|Cadena|El nombre para mostrar del proveedor de identidad.|
+|type|Cadena|El tipo de proveedor de identidad. Debe ser uno de los siguientes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ## <a name="response"></a>Respuesta
 

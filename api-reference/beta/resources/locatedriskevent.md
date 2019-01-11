@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso locatedRiskEvent
 description: 'Un evento de riesgo detectado por Azure Active Directory protección de identidad que se basa en datos de ubicación. Tipos de eventos de riesgo encuentra incluyen:'
-ms.openlocfilehash: e84cff5985905977b6b1eeb75a9ef9703a2a2078
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 256c7a980fb9540e7e80337a5b8aad29fe73f26a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867560"
 ---
 # <a name="locatedriskevent-resource-type"></a>tipo de recurso locatedRiskEvent
 
@@ -27,7 +28,7 @@ Un evento de riesgo detectado por la [Protección de identidad de Azure Active D
 |[Obtener locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |Leer las propiedades y las relaciones del objeto locatedRiskEvent.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| La fecha y hora en que se ha cerrado el evento de riesgo|
 |createdDateTime|dateTimeOffset| La fecha y hora en que se creó el evento de riesgo. Siempre es mayor o igual que la fecha y hora del evento riesgo propio. Ésta es la propiedad correcta para utilizar como filtro al consultar los eventos de riesgo.|
@@ -43,7 +44,7 @@ Un evento de riesgo detectado por la [Protección de identidad de Azure Active D
 |userPrincipalName|string| El nombre principal de usuario del usuario en riesgo|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Solo lectura. Admite valores NULL.|
 

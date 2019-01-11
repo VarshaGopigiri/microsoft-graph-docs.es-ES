@@ -1,12 +1,13 @@
 ---
 title: Actualizar privilegedRoleSettings
 description: Actualizar la configuración de las funciones para la configuración de rol determinado. Se devuelve un objeto privilegedRoleSettings.
-ms.openlocfilehash: 0e0f6b7253a1c1d8570c0b91fac4b08bbd39dfff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7c117abfe774eae60e42dcbc5f748c10cacf5cd6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819323"
 ---
 # <a name="update-privilegedrolesettings"></a>Actualizar privilegedRoleSettings
 
@@ -41,18 +42,18 @@ En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto
 
 En la siguiente tabla se enumera las propiedades que puede proporcionar al actualizar una configuración de rol.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|La duración cuando se activa la función. Obligatorio.|
-|id|string|El identificador único para la configuración de las funciones. Solo lectura. Obligatorio.|
-|isMfaOnElevationConfigurable|boolean|**true** si mfaOnElevation es configurable. **false** si no se puede configurar mfaOnElevation. Obligatorio.|
+|elevationDuration|duration|La duración cuando se activa la función. Necesario.|
+|id|string|El identificador único para la configuración de las funciones. Solo lectura. Necesario.|
+|isMfaOnElevationConfigurable|boolean|**true** si mfaOnElevation es configurable. **false** si no se puede configurar mfaOnElevation. Necesario.|
 |lastGlobalAdmin|Booleano|Solo para uso interno.|
-|maxElavationDuration|duration|Duración máxima de la función activada. Obligatorio.|
-|mfaOnElevation|Booleano|**true** si MFA se requiere para activar la función. **false** si no es necesario MFA para activar la función. Obligatorio.|
-|minElevationDuration|duration|Duración mínima para la función activada. Obligatorio.|
-|notificationToUserOnElevation|Booleano|**true** si enviar notificación para el usuario final cuando se activa la función. **false** si no enviar notificación cuando se activa la función. Obligatorio.|
-|ticketingInfoOnElevation|Booleano|**true** si se requiere la información mediante vales cuándo activar la función. **false** si la información mediante vales no se requiere cuando se activa la función. Obligatorio.|
-|approvalOnElevation|Booleano|**true** si se requiere la aprobación cuando se activa la función. **false** si la aprobación no se requiere cuando se activa la función. Obligatorio.|
+|maxElavationDuration|duration|Duración máxima de la función activada. Necesario.|
+|mfaOnElevation|Booleano|**true** si MFA se requiere para activar la función. **false** si no es necesario MFA para activar la función. Necesario.|
+|minElevationDuration|duration|Duración mínima para la función activada. Necesario.|
+|notificationToUserOnElevation|Booleano|**true** si enviar notificación para el usuario final cuando se activa la función. **false** si no enviar notificación cuando se activa la función. Necesario.|
+|ticketingInfoOnElevation|Booleano|**true** si se requiere la información mediante vales cuándo activar la función. **false** si la información mediante vales no se requiere cuando se activa la función. Necesario.|
+|approvalOnElevation|Booleano|**true** si se requiere la aprobación cuando se activa la función. **false** si la aprobación no se requiere cuando se activa la función. Necesario.|
 |approverIds|matriz|Lista de identificadores de aprobación, si se necesita aprobación para la activación.|
 
 ## <a name="response"></a>Respuesta

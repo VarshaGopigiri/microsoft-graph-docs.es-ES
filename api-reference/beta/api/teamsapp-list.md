@@ -2,12 +2,13 @@
 title: Lista de las aplicaciones publicadas desde el catálogo de aplicaciones de Microsoft Teams
 description: 'Aplicaciones de lista desde el catálogo de aplicaciones de Microsoft Teams. '
 author: nkramer
-ms.openlocfilehash: 77867d5b75721fcb169da6ad6a8ff39c46de196e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4cd3d8d66caa384a064711987f4fcd7473083089
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863458"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Lista de las aplicaciones publicadas desde el catálogo de aplicaciones de Microsoft Teams
 
@@ -43,7 +44,7 @@ Este método admite la $filter, $select, y $expanda [parámetros de consulta de 
 | Authorization | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
-Ninguna.
+Ninguno.
 
 >**Nota:** Puede filtrar en cualquiera de los campos del objeto [teamsCatalogApp](../resources/teamsapp.md) para reducir la lista de resultados. Puede usar cualquiera de las siguientes operaciones de filtro: igual, no igual y, o bien y no.
 

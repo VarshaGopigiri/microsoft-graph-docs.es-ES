@@ -2,12 +2,13 @@
 title: Actualizar localizedNotificationMessage
 description: Actualice las propiedades de un objeto localizedNotificationMessage.
 author: tfitzmac
-ms.openlocfilehash: 117f648b2e8d8172338f00878cc715beac938525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c3bdab6064601bdd860949be484764ee5ede2356
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348828"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806163"
 ---
 # <a name="update-localizednotificationmessage"></a>Actualizar localizedNotificationMessage
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).
@@ -45,12 +46,12 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |configuración regional|String|La configuración regional para la que se destina este mensaje.|
 |subject|String|El asunto de la plantilla del mensaje.|
 |messageTemplate|String|El contenido de la plantilla del mensaje.|
-|isDefault|Boolean|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
+|isDefault|Booleano|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
 
 
 

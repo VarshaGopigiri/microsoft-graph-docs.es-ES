@@ -2,12 +2,13 @@
 title: getEncryptionPublicKey (función)
 description: Obtener una clave pública se utiliza para cifrar el programa de inscripción de dispositivos de Apple símbolo (token)
 author: tfitzmac
-ms.openlocfilehash: 206d5fa297a89537c8e94e72fbc6f69fb00ce056
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb373b862dc39d9636e59bf32ba00b84b7bf5563
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807633"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey (función)
 
@@ -38,7 +39,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

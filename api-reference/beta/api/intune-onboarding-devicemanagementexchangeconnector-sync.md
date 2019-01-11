@@ -2,12 +2,13 @@
 title: Acción de sincronización
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: fb9fa6aa7cd2e33ba75922b32dada12d5e80b470
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06c94a4c0e42f5ec1645e85f8ff091aab8863568
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835024"
 ---
 # <a name="sync-action"></a>Acción de sincronización
 
@@ -38,7 +39,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.

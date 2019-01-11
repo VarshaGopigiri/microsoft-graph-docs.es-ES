@@ -1,12 +1,13 @@
 ---
 title: Obtener multiValueLegacyExtendedProperty
 description: Expanda '.
-ms.openlocfilehash: c56afa8492954bcb68c5f36df00abdfce51cc2b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1d95e319637df17f04e706055245d5e19762a87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032103"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866328"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obtener multiValueLegacyExtendedProperty
 
@@ -96,7 +97,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 ```
 
 ## <a name="path-parameters"></a>Parámetros de ruta de acceso
-|Parámetro|Tipo|Descripción|
+|Parámetro|Tipo|Description|
 |:-----|:-----|:-----|
 |id_value|String|El identificador de la propiedad extendida que debe coincidir. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
 

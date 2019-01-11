@@ -2,12 +2,13 @@
 title: Crear deviceConfigurationConflictSummary
 description: Crear un nuevo objeto deviceConfigurationConflictSummary.
 author: tfitzmac
-ms.openlocfilehash: f39d272d817ca2244f5b0d932fc9c955a1253b27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e120e6ce3070012eb1dffcfb06cf77040c0f44cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323110"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812421"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Crear deviceConfigurationConflictSummary
 
@@ -38,17 +39,17 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto deviceConfigurationConflictSummary.
 
 La siguiente tabla muestran las propiedades que son necesarias cuando se crea el deviceConfigurationConflictSummary.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Colección [settingSource](../resources/intune-deviceconfig-settingsource.md)|El conjunto de directivas en conflicto con la configuración determinada|
-|id|String|El identificador para este conjunto de directivas en conflicto. Este identificador es los identificadores de todas las directivas en ConflictingDeviceConfigurations en orden lexicográfica separados por caracteres de subrayado.|
+|id|Cadena|El identificador para este conjunto de directivas en conflicto. Este identificador es los identificadores de todas las directivas en ConflictingDeviceConfigurations en orden lexicográfica separados por caracteres de subrayado.|
 |contributingSettings|Colección String|El conjunto de configuraciones en conflicto con las directivas determinadas|
 |deviceCheckinsImpacted|Int32|El recuento de protecciones afectado por la configuración y las directivas en conflicto|
 

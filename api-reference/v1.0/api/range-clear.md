@@ -1,12 +1,13 @@
 ---
 title: 'Range: clear'
 description: Borrar valores de rango, formato, relleno, borde, etc.
-ms.openlocfilehash: c4a320827031eed62727ef464551cd410d71b610
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8bf7bafd42947528c98a83819afd7b16f49d2e7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031655"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861918"
 ---
 # <a name="range-clear"></a>Range: clear
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso leakedCredentialsRiskEvent
 description: Un evento de riesgo detectado por Azure Active Directory identidad protección donde se han detectado credenciales de la cuenta en la naturaleza. Obtener información completa acerca de los eventos de riesgo puede encontrarse en la documentación de protección de la identidad de AD de Azure.
-ms.openlocfilehash: 2404564726c3ca7ee1f577b3d81daaa339941406
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7a8f2a8cf72b713fab30887fcc4d81b8a88e71ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089484"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815984"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>tipo de recurso leakedCredentialsRiskEvent
 
@@ -22,7 +23,7 @@ Un evento de riesgo detectado por la [Protección de identidad de Azure Active D
 |[Obtener leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) | [leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) |Leer las propiedades y las relaciones del objeto leakedCredentialsRiskEvent.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| La fecha y hora en que se ha cerrado el evento de riesgo|
 |createdDateTime|dateTimeOffset| La fecha y hora en que se creó el evento de riesgo. Siempre es mayor o igual que la fecha y hora del evento riesgo propio. Ésta es la propiedad correcta para utilizar como filtro al consultar los eventos de riesgo.|
@@ -36,7 +37,7 @@ Un evento de riesgo detectado por la [Protección de identidad de Azure Active D
 |userPrincipalName|string| El nombre principal de usuario del usuario en riesgo|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Solo lectura. Admite valores NULL.|
 

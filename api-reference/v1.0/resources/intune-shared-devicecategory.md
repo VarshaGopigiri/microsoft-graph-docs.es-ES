@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceCategory
 description: A continuación, estas categorías se pueden aplicar a un dispositivo en la consola de Azure de Intune o un usuario puede seleccionarlas durante la inscripción de dispositivos. Puede filtrar los informes y crear grupos de dispositivos de Azure Active Directory dinámicos según las categorías de dispositivos.
 author: tfitzmac
-ms.openlocfilehash: 9e40f656a7ce4d511cdb4c597c2419e8cf886c12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80f8f1f36198ecfab1021e30cb2f28fa4377852c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810839"
 ---
 # <a name="devicecategory-resource-type"></a>Tipo de recurso deviceCategory
 
@@ -27,10 +28,10 @@ Las categorías de dispositivo proporcionan una forma de organizar sus dispositi
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
+|id|Cadena|El identificador único de la categoría de dispositivo. Solo lectura.|
 |**Incorporación de redes**|
-|displayName|String|Nombre para mostrar de la categoría de dispositivo.|
-|descripción|String|Descripción opcional de la categoría de dispositivo.|
+|displayName|Cadena|Nombre para mostrar de la categoría de dispositivo.|
+|descripción|Cadena|Descripción opcional de la categoría de dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

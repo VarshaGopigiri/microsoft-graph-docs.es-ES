@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailActivityUserCounts'
 description: Le permite comprender tendencias sobre el número de usuarios únicos que realizan actividades de correo electrónico, como enviar, leer y recibir.
-ms.openlocfilehash: 71f68cce7cdce66151d2d4e64e84aba461da3cc0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: de31c804bde4de615ec2c431b1fd31868723d058
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085385"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856626"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 

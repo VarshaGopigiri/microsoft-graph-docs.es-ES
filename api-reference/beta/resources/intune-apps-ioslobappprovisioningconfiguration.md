@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso iosLobAppProvisioningConfiguration
 description: En este tema se ofrece descripciones de los métodos declarados, propiedades y relaciones expuestas por el recurso de configuración de aprovisionamiento de aplicaciones de Lob de IOS.
-ms.openlocfilehash: 07ae7c53f481aa6f2c9ad083881752591ab421fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0e89eb1caec8282dbd70fa71140bf9dff0ecd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866398"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>tipo de recurso iosLobAppProvisioningConfiguration
 
@@ -28,18 +29,18 @@ En este tema se ofrece descripciones de los métodos declarados, propiedades y r
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |expirationDateTime|DateTimeOffset|Fecha de caducidad opcional de perfiles y la hora.|
-|payloadFileName|String|Nombre de archivo de carga (*.mobileprovision | *.xml).|
+|payloadFileName|Cadena|Nombre de archivo de carga (*.mobileprovision | *.xml).|
 |carga útil|Binario|Carga útil. (Matriz de bytes codificada UTF8)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |groupAssignments|colección de [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|Las asignaciones de grupo asociado.|
 |asignaciones|colección de [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Las asignaciones de grupo asociado para IosLobAppProvisioningConfiguration.|

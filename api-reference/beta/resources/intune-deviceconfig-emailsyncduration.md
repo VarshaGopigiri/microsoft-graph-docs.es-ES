@@ -2,12 +2,13 @@
 title: tipo de enumeración emailSyncDuration
 description: Valores posibles para la duración de la sincronización de correo electrónico.
 author: tfitzmac
-ms.openlocfilehash: 512e20ad13c13fdf92e45cfe0a37792d97e17fbb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d83a1ceb82820ddc44d8753e8ed05e00de09e36e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819386"
 ---
 # <a name="emailsyncduration-enum-type"></a>tipo de enumeración emailSyncDuration
 
@@ -17,7 +18,7 @@ ms.locfileid: "27361169"
 
 Valores posibles para la duración de la sincronización de correo electrónico.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |undía|1|Sincronización de un día de correo electrónico.|

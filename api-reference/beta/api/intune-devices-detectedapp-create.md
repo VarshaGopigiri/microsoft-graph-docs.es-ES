@@ -2,12 +2,13 @@
 title: Crear detectedApp
 description: Cree un objeto detectedApp.
 author: tfitzmac
-ms.openlocfilehash: 6e48d1fc38316144eb8aa800667b17a505d1e0a2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da35940ba44790bdaec19a6c841bb5d90312b5f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357606"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856318"
 ---
 # <a name="create-detectedapp"></a>Crear detectedApp
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto detectedApp.
@@ -48,9 +49,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único de la aplicación detectada. Intune lo genera automáticamente en el momento en que se crea la aplicación. Solo lectura.|
-|displayName|String|Nombre de la aplicación detectada. Solo lectura|
-|version|String|Versión de la aplicación detectada. Solo lectura|
+|id|Cadena|El identificador único de la aplicación detectada. Intune lo genera automáticamente en el momento en que se crea la aplicación. Solo lectura.|
+|displayName|Cadena|Nombre de la aplicación detectada. Solo lectura|
+|version|Cadena|Versión de la aplicación detectada. Solo lectura|
 |sizeInByte|Int64|Tamaño en bytes de la aplicación detectada. Solo lectura|
 |deviceCount|Int32|El número de dispositivos que han instalado esta aplicación.|
 

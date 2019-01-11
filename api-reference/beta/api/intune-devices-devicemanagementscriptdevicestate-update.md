@@ -2,12 +2,13 @@
 title: Actualizar deviceManagementScriptDeviceState
 description: Actualizar las propiedades de un objeto deviceManagementScriptDeviceState.
 author: tfitzmac
-ms.openlocfilehash: a5dee56ac260642d1a0c105d62ee26499d7276df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15c9a951d63f99f02af5fc676176237323cc4864
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827345"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Actualizar deviceManagementScriptDeviceState
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
@@ -48,9 +49,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad de estado de dispositivo de secuencia de comandos de dispositivo administración.|
+|id|Cadena|Clave de la entidad de estado de dispositivo de secuencia de comandos de dispositivo administración.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado de la última ejecución de la secuencia de comandos de administración de dispositivos. Los valores posibles son: `unknown`, `success` y `fail`.|
-|resultMessage|String|Detalles de los resultados de la ejecución.|
+|resultMessage|Cadena|Detalles de los resultados de la ejecución.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez que se ejecuta la secuencia de comandos de administración de dispositivos.|
 |errorCode|Int32|Código de error correspondiente a la ejecución de la secuencia de comandos de administración de dispositivos con errores.|
 |errorDescription|Cadena|Descripción del error correspondiente a la ejecución de la secuencia de comandos de administración de dispositivos con errores.|

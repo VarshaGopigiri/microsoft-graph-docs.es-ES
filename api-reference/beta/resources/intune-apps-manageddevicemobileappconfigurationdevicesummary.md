@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedDeviceMobileAppConfigurationDeviceSummary
 description: Contiene las propiedades, las propiedades heredadas y las acciones para un resumen de estado de dispositivo de la configuración de aplicaciones móviles de MDM.
-ms.openlocfilehash: d31d9d7f05a445bf0538afcc67b11325e8de8527
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e395f0d3d1ceeacf9eb02c621eb0fbd7a30da907
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862625"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -24,7 +25,7 @@ Contiene las propiedades, las propiedades heredadas y las acciones para un resum
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |pendingCount|Int32|Número de dispositivos pendientes|
 |notApplicableCount|Int32|Número de dispositivos no aplicables|
 |notApplicablePlatformCount|Int32|Número de dispositivos no aplicables debido a la plataforma de error de coincidencia y la directiva|
