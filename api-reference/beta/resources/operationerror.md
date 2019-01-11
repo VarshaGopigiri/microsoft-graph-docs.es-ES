@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso operationError
 description: Se describen los errores en teamsAsyncOperation.
-ms.openlocfilehash: 0207f490328d377fedab72d2a5300baaf3645150
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 423f426df92e99754af0abf4c9c8088eea61d5ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085322"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890296"
 ---
 # <a name="operationerror-resource-type"></a>tipo de recurso operationError
 

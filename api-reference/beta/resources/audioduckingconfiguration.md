@@ -2,12 +2,13 @@
 title: tipo de recurso audioDuckingConfiguration
 description: Parámetros de sobra de otros orígenes (introducir paulatinamente dentro y fuera de otros orígenes).
 author: VinodRavichandran
-ms.openlocfilehash: e595e2a46f3e8bcbee2bb7ad0e3421216244db71
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 713e7012381bf6b727321494f81e75c88c66ebe6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891563"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>tipo de recurso audioDuckingConfiguration
 
@@ -17,7 +18,7 @@ Parámetros de sobra de otros orígenes (introducir paulatinamente dentro y fuer
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad      | Tipo     | Descripción                                                                     |
+| Propiedad      | Tipo     | Description                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
 | lowerLevel    | Int64    | El volumen de orígenes en por ciento cuando se va a ducked los orígenes.             |
 | rampActive    | Int64    | La cantidad de tiempo (en milisegundos) que tarda orígenes ducked "desaparecer". |

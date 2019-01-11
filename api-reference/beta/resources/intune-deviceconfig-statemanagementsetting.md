@@ -2,12 +2,13 @@
 title: tipo de enumeración stateManagementSetting
 description: Configuración de la administración de estado.
 author: tfitzmac
-ms.openlocfilehash: ddb2b281129c6882431714f0f8093b58db2464ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 917e524de340b1d14d2b4af39f671ec246aa1afb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889806"
 ---
 # <a name="statemanagementsetting-enum-type"></a>tipo de enumeración stateManagementSetting
 
@@ -17,7 +18,7 @@ ms.locfileid: "27325329"
 
 Configuración de la administración de estado.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|No configurado.|
 |bloqueado|1|Bloqueado.|

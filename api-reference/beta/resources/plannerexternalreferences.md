@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerExternalReferences
 description: El recurso **plannerExternalReferences** representa la colección de referencias de una tarea. Este es un tipo abierto. Forma parte del objeto task details. El valor del par propiedad-valor es el objeto externalReference.
-ms.openlocfilehash: cfd50c11956e421bd54bf29ad68a9c258f69cf20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7f32c0d7acc54f4bd96fd3b34478f80c882d55da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888791"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>Tipo de recurso plannerExternalReferences
 

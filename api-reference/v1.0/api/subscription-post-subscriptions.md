@@ -1,12 +1,13 @@
 ---
 title: Crear suscripción
 description: Suscripción a una aplicación de escucha para recibir notificaciones cuando cambian los datos en Microsoft Graph.
-ms.openlocfilehash: 72f9a2d97733901ea4d543045d85be60978c5e5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 07b2c055c49a79f1d9d3407ba8da5a5658766d20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889631"
 ---
 # <a name="create-subscription"></a>Crear suscripción
 
@@ -22,8 +23,8 @@ La creación de una suscripción requiere un ámbito de lectura para el recurso.
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| Grupos                      | Group.Read.All      |
+| Usuarios                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
 | Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
 |Alerta de seguridad| SecurityEvents.ReadWrite.All |
@@ -42,7 +43,7 @@ POST /subscriptions
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="response"></a>Respuesta
 
@@ -83,8 +84,8 @@ A continuación puede ver algunos valores válidos para la propiedad de recurso 
 |Correo|me/mailfolders("inbox")/messages<br />me/messages|
 |Contactos|me/contacts|
 |Calendarios|me/events|
-|Users|users|
-|Groups|grupos|
+|Usuarios|users|
+|Grupos|grupos|
 |Conversaciones|groups("*{id}*")/conversations|
 |Unidades|me/drive/root|
 |Alerta de seguridad|alertas de seguridad /? $filter = estado eq 'New'|

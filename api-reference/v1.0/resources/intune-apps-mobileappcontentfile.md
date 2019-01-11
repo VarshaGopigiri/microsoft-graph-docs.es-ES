@@ -2,12 +2,13 @@
 title: Tipo de recurso mobileAppContentFile
 description: Contiene las propiedades de un archivo instalador único que está asociado a una versión de mobileAppContent determinada.
 author: tfitzmac
-ms.openlocfilehash: 3ab62a5aa49062209fb18add293344fe68730c66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b27f34830c4266b35deafbc67b5c5536f10aec1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891479"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -28,11 +29,11 @@ Contiene las propiedades de un archivo instalador único que está asociado a un
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|azureStorageUri|String|El URI de Azure Storage.|
-|isCommitted|Boolean|Un valor que indica si el archivo está confirmado.|
-|id|String|El Id. de archivo.|
+|azureStorageUri|Cadena|El URI de Azure Storage.|
+|isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
+|id|Cadena|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
-|name|String|El nombre del archivo.|
+|name|Cadena|El nombre del archivo.|
 |size|Int64|El tamaño del archivo antes del cifrado.|
 |sizeEncrypted|Int64|El tamaño del archivo después del cifrado.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|La hora en que expira el URI de Azure Storage.|

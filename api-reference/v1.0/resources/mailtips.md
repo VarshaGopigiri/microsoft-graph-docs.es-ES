@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de sugerencias de correo electrónico
 description: 'Mensajes informativos acerca de un destinatario, que se muestran a los usuarios mientras que redactan un mensaje. Por ejemplo, un mensaje de fuera de la oficina '
-ms.openlocfilehash: 6c5d64248aa940b9449a93caad952bc7b4d13ca6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0506d10ad4b1c5eb473b04a30eb8d48334685574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029615"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891696"
 ---
 # <a name="mailtips-resource-type"></a>tipo de recurso de sugerencias de correo electrónico
 
@@ -14,10 +15,10 @@ Mensajes informativos acerca de un destinatario, que se muestran a los usuarios 
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Si se ha configurado el destinatario de correo sugerencias para la respuesta automática. |
-| customMailTip | String | Una sugerencia de correo personalizado que se puede establecer en el buzón del destinatario. |
+| customMailTip | Cadena | Una sugerencia de correo personalizado que se puede establecer en el buzón del destinatario. |
 | deliveryRestricted| Booleano | Si el buzón del destinatario está restringido, por ejemplo, aceptación de los mensajes de sólo una lista predefinida de remitentes, rechazar los mensajes de una lista predefinida de remitentes o aceptación de los mensajes de los remitentes autenticados sólo. |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | La dirección de correo electrónico del destinatario para obtener sugerencias de correo electrónico para. |
 | error | [mailTipsError](../resources/mailtipserror.md) | Errores que se producen durante la acción [getMailTips](../api/user-getmailtips.md) . |
@@ -33,7 +34,7 @@ Mensajes informativos acerca de un destinatario, que se muestran a los usuarios 
 
 | Valor
 |:-------------------------
-| ninguno
+| none
 | interno
 | externo
 | externalPartner

@@ -1,12 +1,13 @@
 ---
 title: 'message: createForward'
 description: Cree un borrador para reenviar el mensaje especificado. Después, puede actualizar el borrador para agregar contenido al **cuerpo**, cambiar otras propiedades del mensaje o, simplemente, enviar el borrador.
-ms.openlocfilehash: dda0ed8d40f480ec9660598cea24ae9a6f6c39ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 230fdfd4a1700e5bcbe2e1cb364de08d86c7be39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888266"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -37,7 +38,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

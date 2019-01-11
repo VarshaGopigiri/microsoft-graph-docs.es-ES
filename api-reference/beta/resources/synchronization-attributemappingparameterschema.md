@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso attributeMappingParameterSchema
 description: Describe un solo parámetro empleado en una attributeMappingFunctionSchema.
-ms.openlocfilehash: 164387a345f245f390d24b89a349e02ee2242041
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 083f89ebc5a74e6fd58a33925b2bfa46801b7961
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089840"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892172"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>tipo de recurso attributeMappingParameterSchema
 
@@ -16,10 +17,10 @@ Describe un solo parámetro empleado en una [attributeMappingFunctionSchema](../
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                   | Tipo                      | Descripción    |
+| Propiedad                   | Tipo                      | Description    |
 |:---------------------------|:-------------------------|:---------------|
 |allowMultipleOccurrences    |Booleano                   |El parámetro determinado se puede proporcionar varias veces (por ejemplo, cadenas de varias entradas en el `Concatenate(string,string,...)` (función)). |
-|name                        |String                    |Nombre del parámetro. |
+|name                        |Cadena                    |Nombre del parámetro. |
 |necesario                    |Booleano                   |`true`Si el parámetro es necesario; en caso contrario, `false`. |
 |type                        |String                    |Valores posibles: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. El valor predeterminado es `String`.|
 

@@ -2,12 +2,13 @@
 title: Eliminar windows10GeneralConfiguration
 description: Elimina un windows10GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 17a9a45de96c4cb0d8dd4c1dc2ff7bf92ea9c43a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 643b9bc5a0f7b8fa776a38adc53fc68711c86aff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890198"
 ---
 # <a name="delete-windows10generalconfiguration"></a>Eliminar windows10GeneralConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

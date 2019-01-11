@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso businessFlowTemplate
 description: En el anuncio de Azure access revisa la característica, el `businesFlowTemplate` representa una plantilla de flujo de profesionales de Azure AD. El identificador de una plantilla, por ejemplo, para revisar a los miembros de invitado de un grupo, se proporciona el autor de la llamada al crear una revisión de access.
-ms.openlocfilehash: 8faf1a1381f5cdcf4bfaab78adc7a6554479b427
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cad361d6c2d2aba70b2623ddf272e1eba42fd93b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889029"
 ---
 # <a name="businessflowtemplate-resource-type"></a>tipo de recurso businessFlowTemplate
 
@@ -24,7 +25,7 @@ Los objetos de plantilla de flujo de negocios se generan automáticamente cuando
 |[Lista businessFlowTemplates](../api/businessflowtemplate-list.md) | colección de [businessFlowTemplate](businessflowtemplate.md)| Obtener las plantillas de flujo de negocio adecuados tener acceso a las revisiones.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | El identificador asignado a la característica de la plantilla de flujo de negocio                                      |
 | `displayName`            |`String`                | El nombre de la plantilla de flujo de negocio                                                             |

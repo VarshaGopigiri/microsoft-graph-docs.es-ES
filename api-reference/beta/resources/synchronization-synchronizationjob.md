@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationJob
 description: Realiza la sincronización por sondeo para que los cambios en un directorio y la inserción de ellos en otro directorio, periódicamente que se ejecuta en segundo plano. El trabajo de sincronización siempre es específico de una instancia determinada de una aplicación en el inquilino. Como parte de la configuración del trabajo de sincronización, debe conceder autorización para leer y escribir objetos en el directorio de destino y personalizar el esquema de sincronización de la tarea.
-ms.openlocfilehash: 0e6428f2a088e5326f4412e743489c4d94b10296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892151"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso synchronizationJob
 
@@ -33,13 +34,13 @@ Realiza la sincronización por sondeo para que los cambios en un directorio y la
 
 | Propiedad      | Tipo      | Descripción    |
 |:--------------|:----------|:---------------|
-|id             |String                     |Identificador de trabajo de sincronización únicas. Solo lectura.|
+|id             |Cadena                     |Identificador de trabajo de sincronización únicas. Solo lectura.|
 |programación       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Programación que se usa para ejecutar el trabajo. Solo lectura.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Estado del trabajo, que incluye cuando se ejecutó el trabajo por última vez, el estado actual del trabajo y los errores.|
 |templateId     |String    |Identificador de la [plantilla de sincronización](synchronization-synchronizationtemplate.md) de en que este trabajo se basa.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |esquema|[synchronizationSchema](synchronization-synchronizationschema.md)| El esquema de sincronización configurado para el trabajo.|
 

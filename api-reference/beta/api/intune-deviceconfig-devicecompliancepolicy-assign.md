@@ -2,12 +2,13 @@
 title: asignar acción
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: ffac5ff9eb3cbc5ed3687954c7bbd518f340fda8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dfe23249462a1bd637995fcc1af42aff74c344cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807745"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.

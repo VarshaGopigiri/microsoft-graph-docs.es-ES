@@ -2,12 +2,13 @@
 title: Obtener objetos de directorio a partir de una lista de identificadores
 description: Seleccione ' opción de consulta no está disponible para esta operación.
 author: lleonard-msft
-ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b504fc69deecd6688f61c20c30e17133f80b1dc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889652"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obtener objetos de directorio a partir de una lista de identificadores
 
@@ -39,7 +40,7 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string | application/json  |
@@ -48,7 +49,7 @@ POST /directoryObjects/getByIds
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro   | Type |Descripción|
+| Parámetro   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |ids|Colección string| Una colección de identificadores para devolverles objetos. Se pueden especificar hasta 1000 identificadores. |
 |types|Colección string| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos para buscar. Si no se especifica, el valor predeterminado es [directoryObject](../resources/directoryobject.md), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que se deriva de `directoryObject` pueden especificarse en la colección; Por ejemplo: [usuario](../resources/user.md), [grupo](../resources/group.md), [dispositivo](../resources/device.md)y así sucesivamente. Los valores no distinguen mayúsculas de minúsculas.|

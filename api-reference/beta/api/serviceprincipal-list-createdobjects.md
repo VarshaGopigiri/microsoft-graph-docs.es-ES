@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: createdObjects de lista'
 description: Recuperar una lista de objetos de directoryobject.
-ms.openlocfilehash: 406d9bd18c662d00fd4e4ddb17598454197676b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 39ba6074cd3a5e57b18499fdf4a5b19c878f28cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890429"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: createdObjects de lista
 
@@ -34,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: Actualizar extensión abierta
 description: 'Actualice una extensión abierta (objeto openTypeExtension) con las propiedades del cuerpo de la solicitud:'
-ms.openlocfilehash: 986e5a466577aeb571e893b49a6b734c77027cb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5765dc8eb32950e3eb5cab951535cbc92bab0c58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891521"
 ---
 # <a name="update-open-extension"></a>Actualizar extensión abierta
 

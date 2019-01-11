@@ -2,12 +2,13 @@
 title: tipo de enumeración binaryManagementConditionExpressionOperatorType
 description: Operadores binarios compatibles para expresiones de condición de administración.
 author: tfitzmac
-ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b836dba7c45eacf0f2d8ffe425b301733e60759
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346959"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891073"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>tipo de enumeración binaryManagementConditionExpressionOperatorType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346959"
 
 Operadores binarios compatibles para expresiones de condición de administración.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |o|0|Se evalúa como un conjunto de operandos como true si y sólo si uno o varios de sus operandos están true.|
 |y|1|Se evalúa como un conjunto de operandos como true sólo si todos sus operandos son true.|

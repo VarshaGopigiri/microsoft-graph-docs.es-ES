@@ -2,12 +2,13 @@
 title: Actualizar androidManagedStoreAccountEnterpriseSettings
 description: Actualizar las propiedades de un objeto androidManagedStoreAccountEnterpriseSettings.
 author: tfitzmac
-ms.openlocfilehash: ee5fda9e9c6ce92cdf44ec878c2c5835ceed2c49
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1c6829a855a2d422906a9fbc0ba0527f77d1ac9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892501"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Actualizar androidManagedStoreAccountEnterpriseSettings
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) .
@@ -47,7 +48,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El Android almacenar el identificador de configuración de cuenta de empresa|
+|id|Cadena|El Android almacenar el identificador de configuración de cuenta de empresa|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Enlazar el estado del inquilino con la API de Google EMM. Los valores posibles son: `notBound`, `bound`, `boundAndValidated` y `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Última hora de finalización para la sincronización de la aplicación|
 |lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Resultado de la última sincronización de aplicación. Los valores posibles son: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -56,7 +57,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |lastModifiedDateTime|DateTimeOffset|Hora de última modificación de la configuración de la empresa para Android|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indica qué usuarios pueden inscribirse dispositivos en administración de dispositivos Android empresariales. Los valores posibles son: `none`, `all`, `targeted` y `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Colección String|Especifica los grupos de AAD que pueden inscribir dispositivos en la administración de dispositivos de Android for Work si se establece enrollmentTarget en "Dirigido"|
-|deviceOwnerManagementEnabled|Boolean|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
+|deviceOwnerManagementEnabled|Booleano|Indica si esta cuenta es flighting para la administración de propietario dispositivos Android con CloudDPC.|
 
 
 

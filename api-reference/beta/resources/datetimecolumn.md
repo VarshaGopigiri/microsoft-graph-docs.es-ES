@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: DateTimeColumn
-ms.openlocfilehash: 9854ad35c602ff474604f2ca88e7182c325e797d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 03ebb78adda52a9f98aec6635bbda48dd61e37e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083865"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889218"
 ---
 # <a name="datetimecolumn-resource-type"></a>Tipo de recurso DateTimeColumn
 
@@ -30,7 +31,7 @@ A continuación se incluye una representación JSON de un recurso **dateTimeColu
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad      | Tipo               | Descripción
+| Nombre de la propiedad      | Tipo               | Descripción
 |:-------------------|:-------------------|:----------------------------------------------
 | **displayAs**      | string             | Cómo se debe presentar el valor en la experiencia de usuario. Debe ser `default`, `friendly` o `standard`. Vea lo que se muestra a continuación para obtener más detalles. Si no se especifica, se trata como `default`.
 | **format**         | string             | Indica si el valor debe presentarse solo como una fecha o como fecha y hora. Debe ser `dateOnly` o `dateTime`

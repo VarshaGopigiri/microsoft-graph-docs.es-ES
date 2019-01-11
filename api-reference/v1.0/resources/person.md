@@ -2,12 +2,13 @@
 title: Tipo de recurso person
 description: Una agregación de información sobre un contacto de correo electrónico, contactos y redes sociales. Los contactos pueden ser contactos locales, contactos de las redes sociales o el directorio de la organización y contactos de comunicaciones recientes (como de correo electrónico y Skype).
 author: simonhult
-ms.openlocfilehash: 519f5ade493300bdaaafeade289cbefea687df58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d61d1393795408636ac8f5720e018bb4ea885cb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890996"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
@@ -30,7 +31,7 @@ Una agregación de información sobre un contacto de correo electrónico, contac
 |scoredEmailAddresses|Colección [scoredEmailAddress](scoredemailaddress.md)|Direcciones de correo electrónico del contacto.|
 |givenName|String|Nombre propio del contacto.|
 |id|String|Identificador único del contacto. Solo lectura.|
-|imAddress|String|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
+|imAddress|Cadena|Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) del servicio de mensajería instantánea correspondiente al usuario. Solo lectura.|
 |isFavorite|Boolean|`true` si el usuario ha marcado este contacto como favorito.|
 |jobTitle|String|Puesto del contacto.|
 |officeLocation|String|Ubicación de la oficina del contacto.|

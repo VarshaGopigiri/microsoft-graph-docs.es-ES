@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso Web
 description: Especifica la configuración para una aplicación web.
-ms.openlocfilehash: c040de0c323e57f20e04dcf662ea088b1018c144
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26efe59eda739597e7193fa1ff79443f3d64b5a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890205"
 ---
 # <a name="web-resource-type"></a>tipo de recurso Web
 
@@ -16,10 +17,10 @@ Especifica la configuración para una aplicación web.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Especifica si esta aplicación web puede solicitar tokens con el flujo de OAuth 2.0 implícita.|
-|logoutUrl|String| Especifica la dirección URL que usará el servicio de autorización de Microsoft para cerrar sesión de un usuario mediante [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back canal](https://openid.net/specs/openid-connect-backchannel-1_0.html) o protocolos de cierre de sesión SAML. |
+|logoutUrl|Cadena| Especifica la dirección URL que usará el servicio de autorización de Microsoft para cerrar sesión de un usuario mediante [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back canal](https://openid.net/specs/openid-connect-backchannel-1_0.html) o protocolos de cierre de sesión SAML. |
 |oauth2AllowImplicitFlow|Booleano| En desuso. No la use. | 
 |redirectUris|Colección String| Especifica las direcciones URL que los tokens de usuario se envían a para el inicio de sesión o el redireccionamiento de los códigos de autorización de los URI que OAuth 2.0 y tokens de acceso se envían a. |
 

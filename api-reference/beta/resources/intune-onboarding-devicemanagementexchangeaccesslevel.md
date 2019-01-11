@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceManagementExchangeAccessLevel
 description: Nivel de acceso de Exchange.
 author: tfitzmac
-ms.openlocfilehash: 8f163c5186c1fc8dac13a22d730870c52df66a06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03588e51a301bfcc4aac5eb3f9c0bfe0fbba9ea9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889554"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessLevel
 
@@ -17,9 +18,9 @@ ms.locfileid: "27320800"
 
 Nivel de acceso de Exchange.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|No se ha configurado ninguna regla de acceso de dispositivo en Exchange.|
+|none|0|No se ha configurado ninguna regla de acceso de dispositivo en Exchange.|
 |Permitir|1|Permitir el acceso de dispositivos a Exchange.|
 |bloque|2|Bloquear el dispositivo pueda tener acceso a Exchange.|
 |cuarentena|3|Poner en cuarentena el dispositivo en Exchange.|

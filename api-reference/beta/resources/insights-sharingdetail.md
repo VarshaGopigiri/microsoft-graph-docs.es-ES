@@ -2,12 +2,13 @@
 title: tipo de recurso sharingDetail
 description: 'Tipo complejo que contiene las propiedades de los elementos compartidos. '
 author: simonhult
-ms.openlocfilehash: 8454fd451f0659ff3ccad270df3414a850bee180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 463ba207d7b160bffb96319a994b82ee82f14b8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888462"
 ---
 # <a name="sharingdetail-resource-type"></a>tipo de recurso sharingDetail
 
@@ -30,10 +31,10 @@ Aquí tiene una representación JSON del recurso
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad              | Tipo          | Descripción  |
+| Propiedad              | Tipo          | Description  |
 | -------------         |-----------    | -------------|
 | sharedDateTime        | DateTimeOffset| La fecha y la hora que el archivo por última vez se ha compartido. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `2014-01-01T00:00:00Z`. Solo lectura.  |
-| sharingSubject        | String          | El asunto con el que se comparte el documento. |
-| sharingType             | String        | Determina la forma en el documento se ha compartido, puede ser un "Vínculo", "Datos adjuntos", "Grupo", "Sitio".     |
+| sharingSubject        | Cadena          | El asunto con el que se comparte el documento. |
+| sharingType             | Cadena        | Determina la forma en el documento se ha compartido, puede ser un "Vínculo", "Datos adjuntos", "Grupo", "Sitio".     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | El usuario que comparte el documento.  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |

@@ -2,12 +2,13 @@
 title: Tipo de recurso domainDnsTxtRecord
 description: Representa un registro TXT agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad DomainDnsRecord.
 author: lleonard-msft
-ms.openlocfilehash: b7714555a9d88a6af201d81083efea3eb20c660c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 81b55bafc07dda0900c57505805c5ac1ed2ebf51
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890030"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Tipo de recurso domainDnsTxtRecord
 
@@ -19,11 +20,11 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura. |
+|id|Cadena| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura. |
 |isOptional|Booleano| Si es false, el cliente debe configurar el registro TXT en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
 |label|Cadena| Valor que se debe usar al configurar la propiedad *name* del registro TXT en el host DNS.|
 |recordType|Cadena| Tipo de registro DNS. El valor es siempre *Txt*. Clave |
-|supportedService|String| Servicio o función de Microsoft Online que tiene una dependencia en el registro TXT.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
+|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro TXT.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
 |text|Cadena| Valor que se usa al configurar la propiedad *text* en el host DNS. |
 |ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL |
 

@@ -2,12 +2,13 @@
 title: tipo de enumeración macOSGatekeeperAppSources
 description: Opciones de origen de la aplicación para Mac OS equipo selector.
 author: tfitzmac
-ms.openlocfilehash: 323c913cf9136e26a060d98e399806370700094d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c784dba6a79b6a9d406e3632d2ac4beaf2a47ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888371"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>tipo de enumeración macOSGatekeeperAppSources
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342836"
 
 Opciones de origen de la aplicación para Mac OS equipo selector.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|Valor predeterminado de dispositivo, sin intención.|
 |macAppStore|1|Se pueden ejecutar sólo aplicaciones desde el AppStore Mac.|

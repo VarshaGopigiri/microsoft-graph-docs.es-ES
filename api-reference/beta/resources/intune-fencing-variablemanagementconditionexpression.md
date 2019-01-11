@@ -2,12 +2,13 @@
 title: tipo de recurso variableManagementConditionExpression
 description: El estado de administración de condición se evalúa como una expresión booleana.
 author: tfitzmac
-ms.openlocfilehash: 8a6ee46bd42139d519e845c7fe53ab3ae964833f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d0805f7c698f90cbcb10bfffdce9c95ce6705b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890156"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>tipo de recurso variableManagementConditionExpression
 
@@ -20,9 +21,9 @@ El estado de administración de condición se evalúa como una expresión boolea
 Hereda de [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|managementConditionId|String|El identificador de la condición de administración que se utiliza para evaluar la expresión.|
+|managementConditionId|Cadena|El identificador de la condición de administración que se utiliza para evaluar la expresión.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

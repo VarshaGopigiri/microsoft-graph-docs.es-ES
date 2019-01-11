@@ -1,12 +1,13 @@
 ---
 title: 'outlookTask: completa'
 description: 'Completar una tarea de Outlook que establece la propiedad **completedDateTime** a la fecha actual, '
-ms.openlocfilehash: 2a92fa0f95737581275f1b5516d68a7feab9578f
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 6a033624a1fafbc30b200550acc466f7fdb432d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771810"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891920"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: completa
 

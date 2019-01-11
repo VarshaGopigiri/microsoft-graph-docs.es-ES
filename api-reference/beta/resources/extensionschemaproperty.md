@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso extensionSchemaProperty
 description: Use los recursos **extensionSchemaProperty** para definir el nombre y el tipo de una propiedad como parte de una definición schemaExtension.
-ms.openlocfilehash: f699ccebefc849a7bf9cacc6dbda61cbcbb9896d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44769bab4a4f4b40a80d896bed2311554ea5e8ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889862"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -18,7 +19,7 @@ Use los recursos **extensionSchemaProperty** para definir el nombre y el tipo de
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|String| El nombre de la propiedad fuertemente tipada definido como parte de una extensión de esquema.|
+|name|Cadena| El nombre de la propiedad fuertemente tipada definido como parte de una extensión de esquema.|
 |type|String| Tipo de la propiedad que se define como parte de una extensión de esquema.  Los valores permitidos son *Binary, Boolean, DateTime, Integer* y *String*.  Consulte la tabla siguiente para obtener más detalles.|
 
 #### <a name="supported-property-data-types"></a>Tipos de datos de propiedad admitidos 
@@ -30,7 +31,7 @@ Se admiten los siguientes tipos de datos al definir una propiedad en una extensi
 | Booleano | No se admite para los mensajes, eventos y publicaciones. |
 | DateTime | Debe especificarse en el formato ISO 8601. Se almacenarán en UTC. |
 | Entero | Valor de 32 bits. No se admite para los mensajes, eventos y publicaciones. |
-| String | 256 caracteres como máximo. |
+| Cadena | 256 caracteres como máximo. |
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.

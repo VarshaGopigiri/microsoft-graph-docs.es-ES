@@ -2,12 +2,13 @@
 title: Crear managedAndroidLobApp
 description: Cree un objeto managedAndroidLobApp.
 author: tfitzmac
-ms.openlocfilehash: ed814dfac8849e8dd3517496152a2e0ae18e51ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5026406a36e523e535286ff82cc3017571e8a875
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337985"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892543"
 ---
 # <a name="create-managedandroidlobapp"></a>Crear managedAndroidLobApp
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto managedAndroidLobApp.
@@ -47,32 +48,32 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|String|Título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|descripción|String|Descripción de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publicador|String|Publicador de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Cadena|Clave de la entidad. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|Cadena|Título de la aplicación importado o proporcionado por el administrador. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|descripción|Cadena|Descripción de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publicador|Cadena|Publicador de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Icono grande que se mostrará en los detalles de la aplicación y se usa para cargar el icono. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolean|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|privacyInformationUrl|String|La dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|informationUrl|String|La dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|owner|String|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|developer|String|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notas|String|Notas de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Booleano|Valor que indica si el administrador ha marcado la aplicación como destacada. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|privacyInformationUrl|Cadena|La dirección URL de la declaración de privacidad. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|informationUrl|Cadena|La dirección URL para obtener más información. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|owner|Cadena|Propietario de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|developer|Cadena|Desarrollador de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
+|notas|Cadena|Notas de la aplicación. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|El estado de carga. Heredado de [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Estado de publicación de la aplicación. La aplicación no puede asignarse a menos que se publique. Se hereda de [mobileApp](../resources/intune-apps-mobileapp.md). Los valores posibles son: `notPublished`, `processing` y `published`.|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|Disponibilidad de la aplicación. Se hereda de [managedApp](../resources/intune-apps-managedapp.md). Los valores posibles son: `global` y `lineOfBusiness`.|
-|versión|String|Versión de la aplicación. Heredado de [managedApp](../resources/intune-apps-managedapp.md)|
-|committedContentVersion|String|Versión interna del contenido confirmado. Heredado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
-|fileName|String|Nombre del archivo de la aplicación de LOB principal. Heredado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
+|versión|Cadena|Versión de la aplicación. Heredado de [managedApp](../resources/intune-apps-managedapp.md)|
+|committedContentVersion|Cadena|Versión interna del contenido confirmado. Heredado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
+|fileName|Cadena|Nombre del archivo de la aplicación de LOB principal. Heredado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
 |size|Int64|Tamaño total, incluidos todos los archivos cargados. Heredado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
-|packageId|String|El identificador del paquete.|
-|identityName|String|Nombre de la identidad.|
+|packageId|Cadena|El identificador del paquete.|
+|identityName|Cadena|Nombre de la identidad.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|Valor del sistema operativo mínimo aplicable.|
-|versionName|String|Nombre de versión de la aplicación administrada de línea de negocio (LoB) de Android.|
-|versionCode|String|Código de versión de la aplicación administrada de línea de negocio (LoB) de Android.|
-|identityVersion|String|Versión de la identidad.|
+|versionName|Cadena|Nombre de versión de la aplicación administrada de línea de negocio (LoB) de Android.|
+|versionCode|Cadena|Código de versión de la aplicación administrada de línea de negocio (LoB) de Android.|
+|identityVersion|Cadena|Versión de la identidad.|
 
 
 

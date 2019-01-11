@@ -2,12 +2,13 @@
 title: tipo de enumeración managementAgentType
 description: Tipo de agente de administración.
 author: tfitzmac
-ms.openlocfilehash: b1f6db6eaea1a488831bec3d7ff61d6170414956
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66441a37b417cef13cbb09219a26a98250cbf610
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888490"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enumeración managementAgentType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27355520"
 
 Tipo de agente de administración.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |EAS|1|El dispositivo se administra mediante Exchange server.|
 |MDM|2|El dispositivo se administra mediante la Intune MDM.|

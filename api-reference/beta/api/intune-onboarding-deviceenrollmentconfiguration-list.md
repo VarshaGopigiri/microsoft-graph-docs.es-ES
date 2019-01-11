@@ -2,12 +2,13 @@
 title: Enumerar deviceEnrollmentConfigurations
 description: Enumere las propiedades y las relaciones de los objetos deviceEnrollmentConfiguration.
 author: tfitzmac
-ms.openlocfilehash: da1be6eb416e50654716fcd61a26443908ebc450
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 440f993e235789447dc200a4ce4851610a6798d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891934"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>Enumerar deviceEnrollmentConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

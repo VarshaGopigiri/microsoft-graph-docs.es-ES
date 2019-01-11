@@ -2,12 +2,13 @@
 title: tipo de plataforma de enum
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: cb36f18d4d98208d230a89d5a9407dcf31785fb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 70703bd3c962def0d10099986ebe07ff2923ee8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891906"
 ---
 # <a name="platform-enum-type"></a>tipo de plataforma de enum
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347470"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Plataforma de dispositivo desconocido|
 |IOS|1|Plataforma de dispositivo IOS|

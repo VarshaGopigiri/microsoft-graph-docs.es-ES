@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de la función de aplicación
 description: Representa una función de aplicación que pueden solicitarse por una aplicación de cliente al llamar a otra aplicación o que se puede usar para asignar una aplicación a usuarios o grupos en una función de la aplicación especificada. La propiedad **appRoles** de la entidad servicePrincipal y de la entidad de la aplicación es una colección de **función de aplicación**.
-ms.openlocfilehash: f87ef6f40fbeb18ec4b3a2373fb2a19e14da84a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 26fe11fc4f0c362de002c205c7e3b95a6ec4a314
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891549"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso de la función de aplicación
 
@@ -41,11 +42,11 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |allowedMemberTypes|Colección String|Especifica si esta definición de rol de aplicación se puede asignar a usuarios y grupos por valor a "User", o a otras aplicaciones (que tienen acceso a esta aplicación en escenarios de servicio de demonio) estableciendo a "Aplicación", o a ambos.|
-|descripción|String|Texto de ayuda que aparece en la asignación de la aplicación de administración de permisos y experiencias de consentimiento.|
-|displayName|String|Nombre para mostrar para el permiso que aparece en las experiencias de asignación de consentimiento y aplicación de administración.|
+|descripción|Cadena|Texto de ayuda que aparece en la asignación de la aplicación de administración de permisos y experiencias de consentimiento.|
+|displayName|Cadena|Nombre para mostrar para el permiso que aparece en las experiencias de asignación de consentimiento y aplicación de administración.|
 |id|Guid|Identificador único de la función dentro de la colección **appRoles** .|
 |isEnabled|Boolean|Al crear o actualizar una definición de rol, esto se debe establecer en **true** (que es el valor predeterminado). Para eliminar un rol, esto en primer lugar se debe establecer en **false**.  En ese momento, en una llamada posterior, se puede quitar este rol.|
 |valor|String|Especifica el valor de la notificación de roles que se debe esperar la aplicación en los tokens de autenticación y acceso.|

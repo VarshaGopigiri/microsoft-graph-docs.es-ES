@@ -2,12 +2,13 @@
 title: Enumerar windowsUpdateForBusinessConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windowsUpdateForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5b2f435e38ba551f23ff56126f9a14549db2e9e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ba7e3558d4b1e1b45f73ae7ab919546a8a759f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889512"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Enumerar windowsUpdateForBusinessConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceManagementExchangeAccessState
 description: Estado de acceso de dispositivo de Exchange.
 author: tfitzmac
-ms.openlocfilehash: 37db054314375411dc237746ca6ca3bdb99e9016
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73559bf01cfc619e38a30b0393a7d7f3a8754321
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328724"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889092"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessState
 
@@ -15,9 +16,9 @@ ms.locfileid: "27328724"
 
 Estado de acceso de dispositivo de Exchange.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|No hay ningún estado de acceso detectado desde Exchange|
+|none|0|No hay ningún estado de acceso detectado desde Exchange|
 |desconocido|1|Se desconoce el estado de acceso de dispositivo para Exchange|
 |permitido|2|Dispositivo tiene acceso a Exchange|
 |bloqueado|3|Dispositivo está bloqueado en Exchange|

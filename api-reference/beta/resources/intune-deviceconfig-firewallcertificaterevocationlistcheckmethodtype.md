@@ -2,12 +2,13 @@
 title: tipo de enumeración firewallCertificateRevocationListCheckMethodType
 description: Valores posibles para firewallCertificateRevocationListCheckMethod
 author: tfitzmac
-ms.openlocfilehash: 302037187addfb8606c6c1e60a9369eb1f7c2ed5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c300b1d3c73cc4ae19ef1282c00d00800243b4b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889281"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enumeración firewallCertificateRevocationListCheckMethodType
 
@@ -17,10 +18,10 @@ ms.locfileid: "27320716"
 
 Valores posibles para firewallCertificateRevocationListCheckMethod
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |deviceDefault|0|No hay un valor configurado mediante Intune, invalidar el valor predeterminado de dispositivo configurado por el usuario|
-|ninguno|1|No comprobar la lista de revocación de certificados|
+|none|1|No comprobar la lista de revocación de certificados|
 |intento de|2|Intente la comprobación de CRL y permitir que un certificado sólo si el certificado está confirmado por la comprobación de|
 |requerir|3|Requerir una comprobación CRL correcta antes de permitir que un certificado|
 

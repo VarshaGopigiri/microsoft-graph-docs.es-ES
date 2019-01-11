@@ -1,12 +1,13 @@
 ---
 title: Enviar comando de dispositivo
 description: 'Esta API permite capacidades de Roma de proyecto a un dispositivo asociado con una cuenta de Microsoft de comando. Después de realizar una llamada GET en `me/devices`, pase el identificador del dispositivo para emitir un comando al dispositivo. Se admiten dos tipos de comandos: LaunchURI y AppServices. Si está utilizando LaunchURI, especifique los parámetros de *tipo* y la *carga* . Para una llamada AppService, especifique el '
-ms.openlocfilehash: bf330ab1234ef6ce22c6a43711621827b628a7ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087087"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891990"
 ---
 # <a name="send-device-command"></a>Enviar comando de dispositivo
 
@@ -81,13 +82,13 @@ HTTP/1.1 201 OK
 |:----|:------|:------|
 |carga útil | Microsoft.Graph.JSON| Carga de enviar a un servicio de aplicación o para iniciar un identificador URI en un dispositivo. |
 |responsePayload | Microsoft.Graph.JSON| Carga devuelto desde el dispositivo de destino. |
-|postBackURI | String | Entrada de hacer una copia de URI que se va a enviar notificaciones posteriores de actualizaciones. |
-|packageFamilyName | String | Nombre de familia de Windows paquete de aplicación. |
-|appServiceName | String | Nombre del servicio de aplicación definido por la aplicación de destino. Requerido si iniciar un servicio de aplicación. |
-|type| String | LaunchURI o AppService. |
-|id| String | El identificador de un comando que se ha enviado al dispositivo. |
-|actionStatus | String | El [estado](get-device-command-status.md) de un comando. |
-|error| String| Cualquier error asociado con la solicitud de la aplicación de destino. |
+|postBackURI | Cadena | Entrada de hacer una copia de URI que se va a enviar notificaciones posteriores de actualizaciones. |
+|packageFamilyName | Cadena | Nombre de familia de Windows paquete de aplicación. |
+|appServiceName | Cadena | Nombre del servicio de aplicación definido por la aplicación de destino. Requerido si iniciar un servicio de aplicación. |
+|type| Cadena | LaunchURI o AppService. |
+|id| Cadena | El identificador de un comando que se ha enviado al dispositivo. |
+|actionStatus | Cadena | El [estado](get-device-command-status.md) de un comando. |
+|error| Cadena| Cualquier error asociado con la solicitud de la aplicación de destino. |
 
 ## <a name="launch-uri-example"></a>Ejemplo URI de inicio
 

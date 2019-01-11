@@ -2,12 +2,13 @@
 title: 'Range: UsedRange'
 description: Devuelve el rango usado del objeto de rango especificado.
 author: lumine2008
-ms.openlocfilehash: 108c19b5af6fcaf5b4c0792d9a71b8f32f1d6148
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 980d0cc8ac59c28e148a50c25b90b52baad51110
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301718"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889932"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -36,7 +37,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 | Workbook-Session-Id  | Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.|
 
 ## <a name="path-parameters"></a>Parámetros de ruta de acceso
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|Opcional. Solo tiene en cuenta las celdas con valores como celdas usadas.|
 

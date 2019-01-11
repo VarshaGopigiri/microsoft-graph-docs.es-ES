@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsPrivacyDataAccessLevel
 description: Determinar el nivel de acceso a la categoría de datos de privacidad de Windows específica.
 author: tfitzmac
-ms.openlocfilehash: 6eb1c1ea6eff28d90979da3ff998fd8442df353a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74ab32a703422203fec7a6c9ed1bc035e01949a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888777"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>tipo de enumeración windowsPrivacyDataAccessLevel
 
@@ -17,7 +18,7 @@ ms.locfileid: "27332413"
 
 Determinar el nivel de acceso a la categoría de datos de privacidad de Windows específica.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|Ningún nivel de acceso no especificado, del color. Es posible que se comportan de dispositivo ya sea como en UserInControl o ForceAllow. Es posible que dependen de los datos de privacidad sido tener acceso a las versiones de Windows y otros factores.|
 |forceAllow|1|Aplicaciones podrán tener acceso a los datos de privacidad especificado.|

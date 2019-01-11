@@ -2,12 +2,13 @@
 title: Lista androidWorkProfileNineWorkEasConfigurations
 description: Propiedades de la lista y relaciones de los objetos androidWorkProfileNineWorkEasConfiguration.
 author: tfitzmac
-ms.openlocfilehash: de920b389de6696a947907750c83cb97c274f12d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5654cc7125337d356c0395273a54e7b451bca92e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891913"
 ---
 # <a name="list-androidworkprofilenineworkeasconfigurations"></a>Lista androidWorkProfileNineWorkEasConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

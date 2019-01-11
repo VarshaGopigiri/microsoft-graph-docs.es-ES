@@ -2,12 +2,13 @@
 title: Actualizar evento
 description: Actualiza un objeto de evento.
 author: dkershaw10
-ms.openlocfilehash: c8aacc7df62bf336c355801e89e1b6bea5c2b1f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd287032c898e4a56983a77815ce12daef05dae9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321164"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892270"
 ---
 # <a name="update-event"></a>Actualizar evento
 Actualiza un objeto de [evento](../resources/event.md).
@@ -29,7 +30,7 @@ PATCH /groups/{id}/calendar/events/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

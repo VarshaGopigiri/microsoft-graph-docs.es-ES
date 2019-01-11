@@ -2,12 +2,13 @@
 title: tipo de recurso mediaStream
 description: El tipo de mediaStream.
 author: VinodRavichandran
-ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889617"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
 
@@ -17,13 +18,13 @@ El tipo de mediaStream.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad    | Tipo    | Descripción                                                                                                   |
+| Propiedad    | Tipo    | Description                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| dirección   | String  | La dirección. Los valores posibles son `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
-| label       | String  | La etiqueta de secuencia de medios.                                                                                       |
-| mediaType   | String  | El tipo de medios. Los valores posibles son `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| dirección   | Cadena  | La dirección. Los valores posibles son `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
+| label       | Cadena  | La etiqueta de secuencia de medios.                                                                                       |
+| mediaType   | Cadena  | El tipo de medios. Los valores posibles son `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
 | serverMuted | Booleano | Si se desactiva la multimedia por el servidor.                                                                          |
-| sourceId    | String  | El identificador de origen.                                                                                                |
+| sourceId    | Cadena  | El identificador de origen.                                                                                                |
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerTaskDetails
 description: El recurso **plannerTaskDetails** representa la información adicional de una tarea. Cada objeto task tiene un objeto details.
-ms.openlocfilehash: 3d5ab0b3a2f0c2e6c1abf284d5a87c2726c7aa15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0bec5b47d1472eae43906841c5074e4080672817
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888168"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
 
@@ -26,8 +27,8 @@ El recurso **plannerTaskDetails** representa la información adicional de una ta
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Colección de elementos de la lista de comprobación de la tarea.|
-|description|String|Descripción de la tarea|
-|id|String| Solo lectura. Identificador de los detalles de la tarea. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](tasks-identifiers-disclaimer.md) se realiza en el servicio.|
+|description|Cadena|Descripción de la tarea|
+|id|Cadena| Solo lectura. Identificador de los detalles de la tarea. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](tasks-identifiers-disclaimer.md) se realiza en el servicio.|
 |previewType|string|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|La colección de referencias de la tarea.|
 

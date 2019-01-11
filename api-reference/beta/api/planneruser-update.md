@@ -1,12 +1,13 @@
 ---
 title: Actualizar plannerUser
 description: Actualizar las propiedades de un objeto plannerUser. Puede usar esta operación para agregar o quitar los planes de lista de favoritos de los planes de un usuario e indicar que los planes del usuario ha visto recientemente.
-ms.openlocfilehash: 872bdaed0aff174abe01d350fa4d5304d4bcc620
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084449"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889057"
 ---
 # <a name="update-planneruser"></a>Actualizar plannerUser
 
@@ -31,13 +32,13 @@ PATCH /me/planner
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
 |:-----------|:-----------|
-| Authorization  | {código} del portador. Necesario.|
-| If-Match  | El último valor de ETag conocido para el **plannerUser** van a actualizar. Obligatorio.|
+| Autorización  | {código} del portador. Necesario.|
+| If-Match  | El último valor de ETag conocido para el **plannerUser** van a actualizar. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|Cambios realizados en la colección que contiene las referencias a los planes de que el usuario ha marcado como favorito.|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|Cambios realizados en la colección que contiene las referencias a los planes de que el usuario ha visto recientemente.|

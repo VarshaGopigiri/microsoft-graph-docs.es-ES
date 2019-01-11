@@ -2,12 +2,13 @@
 title: Actualizar termsAndConditionsGroupAssignment
 description: Actualizar las propiedades de un objeto termsAndConditionsGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: ccce1cad1bcddd68e69ba3cdcb417b0aabbe7136
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 003713e436e20dbcec9ee6ec1ab6999256fee0b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349661"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891213"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>Actualizar termsAndConditionsGroupAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .
@@ -47,8 +48,8 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la entidad.|
-|targetGroupId|String|Identificador único de un grupo que se asigna la directiva T & C a.|
+|id|Cadena|Identificador único de la entidad.|
+|targetGroupId|Cadena|Identificador único de un grupo que se asigna la directiva T & C a.|
 
 
 

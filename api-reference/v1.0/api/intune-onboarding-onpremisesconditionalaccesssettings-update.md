@@ -2,12 +2,13 @@
 title: Actualizar onPremisesConditionalAccessSettings
 description: Actualice las propiedades de un objeto onPremisesConditionalAccessSettings.
 author: tfitzmac
-ms.openlocfilehash: 255693dfa1bb53083f792da950333a5c05717f1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 761da1d549430c1f49f2d68b05194bffea661618
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346805"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889785"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Actualizar onPremisesConditionalAccessSettings
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |enabled|Booleano|Indica si está habilitado el acceso condicional local para esta organización|
 |includedGroups|Colección Guid|Grupos de usuarios a los que se dirigirá el acceso condicional local. Todos los usuarios de estos grupos deberán tener dispositivos móviles administrados y compatibles para tener acceso al correo.|
 |excludedGroups|Colección Guid|Grupos de usuarios que estarán exentos del acceso condicional local. Todos los usuarios de estos grupos estarán exentos de la directiva de acceso condicional.|

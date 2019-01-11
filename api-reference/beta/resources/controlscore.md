@@ -1,23 +1,24 @@
 ---
 title: " tipo de recurso controlScore"
 description: Este recurso contiene una puntuación de inquilinos y una descripción para un control individual.
-ms.openlocfilehash: 67059c1a7382416411709f02c609c90b20a673b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d8c2d73205f00a9dd5f2f28fcee3c33778bb3276
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891472"
 ---
 #  <a name="controlscore-resource-type"></a>tipo de recurso controlScore
 
 Este recurso contiene una puntuación de inquilinos y una descripción para un control individual.
 
-|Nombre |Tipo |Descripción |
+|Nombre |Tipo |Description |
 |:--|:--|:--|
-|   controlName |   String  |   Nombre único de control |
+|   controlName |   Cadena  |   Nombre único de control |
 |   score   |   Doble  |  Inquilino de lograr la puntuación para el control (día a día varía, dependiendo de las operaciones del inquilino en el control). |
-|   controlCategory |   String  |  Categoría de acción de control (identidad, datos, dispositivos, aplicaciones, infraestructura). |
-|   descripción |   String  |  Descripción del control. |
+|   controlCategory |   Cadena  |  Categoría de acción de control (identidad, datos, dispositivos, aplicaciones, infraestructura). |
+|   descripción |   Cadena  |  Descripción del control. |
 
 ## <a name="json-representation"></a>Representación JSON
 

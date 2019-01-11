@@ -1,12 +1,13 @@
 ---
 title: List contacts
 description: Obtener todos los contactos en el buzón del usuario que ha iniciado sesión (.../me/contacts), o desde la carpeta de contactos especificada.
-ms.openlocfilehash: e15080c9a4d5b0f8e388cc9556ded1ac90ce2823
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 304efe55a39d685ef5ce58281bfb407a43657a92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084639"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892368"
 ---
 # <a name="list-contacts"></a>List contacts
 
@@ -37,7 +38,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

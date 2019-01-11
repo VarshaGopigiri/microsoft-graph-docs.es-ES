@@ -2,12 +2,13 @@
 title: tipo de enumeración androidWorkProfileRequiredPasswordType
 description: Perfil de trabajo Android requiere contraseña, escriba.
 author: tfitzmac
-ms.openlocfilehash: 8d41b4c516ee4aa393ea3a26034e5f575b58fa02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e211fd0f793f710c31a303a73662af556c0794a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330236"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891528"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>tipo de enumeración androidWorkProfileRequiredPasswordType
 
@@ -17,11 +18,11 @@ ms.locfileid: "27330236"
 
 Perfil de trabajo Android requiere contraseña, escriba.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
 |lowSecurityBiometric|1|Contraseña biométrica en función de baja seguridad requerida.|
-|necesario|2|Obligatorio.|
+|necesario|2|Necesario.|
 |atLeastNumeric|3|Contraseña de al menos numérica requerida.|
 |numericComplex|4|Contraseña compleja numérico requerida.|
 |atLeastAlphabetic|5|Contraseña de al menos alfabético requerida.|

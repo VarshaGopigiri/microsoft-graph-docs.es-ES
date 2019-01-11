@@ -2,12 +2,13 @@
 title: tipo de enumeración mobileAppPublishingState
 description: Indica el estado de publicación de una aplicación.
 author: tfitzmac
-ms.openlocfilehash: 2415e2ba244d7766cbdc670c303643ec125c1091
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24a17e63570d46a1fd1771bf25e5bd0d397f9088
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302334"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890989"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>tipo de enumeración mobileAppPublishingState
 
@@ -17,7 +18,7 @@ ms.locfileid: "27302334"
 
 Indica el estado de publicación de una aplicación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |notPublished|0|La aplicación no se ha publicado aún.|
 |procesamiento|1|La aplicación está pendiente de procesamiento del servicio.|

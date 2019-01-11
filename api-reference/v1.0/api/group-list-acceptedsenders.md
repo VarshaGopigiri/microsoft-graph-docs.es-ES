@@ -2,12 +2,13 @@
 title: List acceptedSenders
 description: Obtiene una lista de usuarios o grupos que se encuentran en la lista de acceptedSenders de este grupo.
 author: dkershaw10
-ms.openlocfilehash: 15b2387ce726b83d8e7b8b10034061d454b42e39
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ce0adaf53c0f9940e582da88932f5e8d04aafc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892284"
 ---
 # <a name="list-acceptedsenders"></a>List acceptedSenders
 Obtiene una lista de usuarios o grupos que se encuentran en la lista de acceptedSenders de este grupo.
