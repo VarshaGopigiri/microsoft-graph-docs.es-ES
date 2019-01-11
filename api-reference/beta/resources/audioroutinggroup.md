@@ -2,12 +2,13 @@
 title: tipo de recurso audioRoutingGroup
 description: El grupo de enrutamiento de audio almacena una ruta de audio privada entre los participantes en una conversación entre varias partes. Origen es el participante propio y los receptores son un subconjunto de los otros participantes de la conversación entre varias partes.
 author: VinodRavichandran
-ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860651"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
 
@@ -22,16 +23,16 @@ El grupo de enrutamiento de audio almacena una ruta de audio privada entre los p
 | Método                                                  | Tipo de valor devuelto                               | Descripción                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Obtener audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Leer las propiedades y las relaciones del objeto audioRoutingGroup.|
-| [Actualizar](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Actualizar lista de receptores.                       |
-| [Eliminar](../api/audioroutinggroup-delete.md)            | Ninguno                                      | Eliminar el grupo de enrutamiento de audio.              |
+| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Actualizar lista de receptores.                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | Ninguno                                      | Eliminar el grupo de enrutamiento de audio.              |
 
 ## <a name="properties"></a>Propiedades
 
 | Propiedad      | Tipo              | Descripción                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Solo lectura. Servidor que se generó.                                         |
+| id            | Cadena            | Solo lectura. Servidor que se generó.                                         |
 | receptores de     | Colección de cadenas | Lista de la recepción de los identificadores de participantes.                                   |
-| routingMode   | String            | Modo de grupo de enrutamiento.  Los valores posibles son: `oneToOne` y `multicast`.   |
+| routingMode   | Cadena            | Modo de grupo de enrutamiento.  Los valores posibles son: `oneToOne` y `multicast`.   |
 | orígenes       | Colección de cadenas | Lista de identificadores de participantes de origen.                                      |
 
 > **Nota:** Modo de enrutamiento determina las restricciones en los orígenes y receptores. Se admiten sólo los siguientes grupos de enrutamiento.

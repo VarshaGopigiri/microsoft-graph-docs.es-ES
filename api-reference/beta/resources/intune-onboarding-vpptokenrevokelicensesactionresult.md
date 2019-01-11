@@ -2,12 +2,13 @@
 title: tipo de recurso vppTokenRevokeLicensesActionResult
 description: El estado de la acción de licencias revoke se realiza en el símbolo (token) de programa de compra de volumen de Apple.
 author: tfitzmac
-ms.openlocfilehash: a4188a269f9273b955fd29b32348dec82023b181
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7df9472be177bb52eba22ebf54f24e75c9a3539
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866496"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>tipo de recurso vppTokenRevokeLicensesActionResult
 
@@ -22,7 +23,7 @@ Hereda de [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionre
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|actionName|String|Nombre de la acción Inherited desde [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|actionName|Cadena|Nombre de la acción Inherited desde [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de la acción Inherited desde [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md). Los valores posibles son: `none`, `pending`, `canceled`, `active`, `done`, `failed` y `notSupported`.|
 |startDateTime|DateTimeOffset|Tiempo que se inició la acción se hereda de [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Tiempo por última vez el estado de acción actualizó Inherited desde [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|

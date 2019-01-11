@@ -2,12 +2,13 @@
 title: tipo de recurso cartToClassAssociation
 description: CartToClassAssociation para asociar carros de dispositivo con aulas.
 author: tfitzmac
-ms.openlocfilehash: f712759d82b5edf7d364658211f1f2142fb6eb87
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02a7d04b40d4d984f98f04eb653ee45ed436d099
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868036"
 ---
 # <a name="carttoclassassociation-resource-type"></a>tipo de recurso cartToClassAssociation
 
@@ -28,12 +29,12 @@ CartToClassAssociation para asociar carros de dispositivo con aulas.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |version|Int32|Versión de la CartToClassAssociation.|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
-|descripción|String|Descripción de la CartToClassAssociation proporcionada por el administrador.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|descripción|Cadena|Descripción de la CartToClassAssociation proporcionada por el administrador.|
 |deviceCartIds|Colección String|Identificadores de carros de dispositivo que se asociará con clases.|
 |classroomIds|Colección String|Identificadores de aulas que se asociará con carros de dispositivo.|
 

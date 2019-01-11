@@ -2,12 +2,13 @@
 title: Crear resourceOperation
 description: Cree un objeto resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: bc3b0c8193d77177b83f139827fad1a3a9686fb4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862604"
 ---
 # <a name="create-resourceoperation"></a>Crear resourceOperation
 
@@ -38,7 +39,7 @@ POST /deviceManagement/resourceOperations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto resourceOperation.
@@ -47,12 +48,12 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
-|resource|String|Categoría de recurso al que pertenece esta operación.|
-|resourceName|String|Nombre del recurso en el que se realiza esta operación.|
-|actionName|String|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
-|description|String|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
-|enabledForScopeValidation|Boolean|Determina si el permiso se valida para ámbitos definidos por la asignación de roles.|
+|id|Cadena|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
+|resource|Cadena|Categoría de recurso al que pertenece esta operación.|
+|resourceName|Cadena|Nombre del recurso en el que se realiza esta operación.|
+|actionName|Cadena|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
+|description|Cadena|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
+|enabledForScopeValidation|Booleano|Determina si el permiso se valida para ámbitos definidos por la asignación de roles.|
 
 
 

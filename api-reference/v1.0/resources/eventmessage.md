@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso eventMessage
 description: 'Un mensaje que representa una convocatoria, una cancelación o una respuesta de reunión (puede ser uno de los siguientes: aceptación, aceptación provisional o rechazo).'
-ms.openlocfilehash: c93f642d80fec8514af6a80afd8c47cd82569cd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83a7c0fa48f48536b468afe5f5e4f22031be50e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862751"
 ---
 # <a name="eventmessage-resource-type"></a>tipo de recurso eventMessage
 
@@ -53,18 +54,18 @@ Aparte de una convocatoria de reunión, una instancia de **eventMessage** puede 
 |:---------------|:--------|:----------|
 |bccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cco: del mensaje.|
 |body|[itemBody](itembody.md)|El cuerpo del mensaje. Puede mostrarse en formato de texto o HTML.|
-|bodyPreview|String|Los primeros 255 caracteres del cuerpo del mensaje. Se muestran en formato de texto.|
+|bodyPreview|Cadena|Los primeros 255 caracteres del cuerpo del mensaje. Se muestran en formato de texto.|
 |categories|Colección String|Las categorías asociadas al mensaje.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cc: del mensaje.|
-|changeKey|String|La versión del mensaje.|
-|conversationId|String|El identificador de la conversación a la que pertenece el correo electrónico.|
+|changeKey|Cadena|La versión del mensaje.|
+|conversationId|Cadena|El identificador de la conversación a la que pertenece el correo electrónico.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación del mensaje.|
 |flag|[followupFlag](followupflag.md)|Valor de marca que indica el estado, la fecha de inicio, la fecha de vencimiento o la fecha de finalización del mensaje.|
 |from|[recipient](recipient.md)|El propietario del buzón y el remitente del mensaje.|
 |hasAttachments|Booleano|Indica si el mensaje tiene datos adjuntos.|
 |id|String|Identificador único para el mensaje de evento (tenga en cuenta que si se mueve o se modifica un mensaje, puede cambiar este valor)|
 |importance|String| La importancia del mensaje: `low`, `normal` y `high`.|
-|inferenceClassification|String| Los valores posibles son: `focused`, `other`.|
+|inferenceClassification|Cadena| Los valores posibles son: `focused`, `other`.|
 |internetMessageHeaders | Colección [internetMessageHeader](internetmessageheader.md) | Colección de encabezados de mensajes, definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que proporcionan los detalles de la ruta en la red que sigue un mensaje desde el remitente hasta el destinatario. Solo lectura.|
 |internetMessageId |String |El identificador del mensaje en el formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indica si se solicita confirmación de lectura para el mensaje.|
@@ -73,15 +74,15 @@ Aparte de una convocatoria de reunión, una instancia de **eventMessage** puede 
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora de la última modificación del mensaje.|
 |meetingMessageType|meetingMessageType| El tipo de mensaje de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
-|parentFolderId|String|El identificador único para el mailFolder principal del mensaje.|
+|parentFolderId|Cadena|El identificador único para el mailFolder principal del mensaje.|
 |receivedDateTime|DateTimeOffset|La fecha y la hora en las que se recibió el mensaje.|
 |replyTo|Colección [recipient](recipient.md)|Las direcciones de correo electrónico que se utilizan al responder.|
 |sender|[recipient](recipient.md)|La cuenta que se utiliza realmente para generar el mensaje.|
 |sentDateTime|DateTimeOffset|La fecha y la hora de envío del mensaje.|
-|subject|String|El asunto del mensaje.|
+|subject|Cadena|El asunto del mensaje.|
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del mensaje.|
 |uniqueBody|[itemBody](itembody.md)|La parte del cuerpo del mensaje que es única del mensaje actual.|
-|webLink|String|La dirección URL para abrir el mensaje en Outlook Web App.<br><br>Puede anexar un argumento ispopout al final de la dirección URL para cambiar cómo se muestra el mensaje. Si ispopout no está presente o se establece en 1, se muestra el mensaje en una ventana emergente. Si ispopout se establece en 0, el navegador mostrará el mensaje en el panel de revisión de Outlook Web App.<br><br>El mensaje se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br><br>Se puede acceder a esta dirección URL desde un iFrame.|
+|webLink|Cadena|La dirección URL para abrir el mensaje en Outlook Web App.<br><br>Puede anexar un argumento ispopout al final de la dirección URL para cambiar cómo se muestra el mensaje. Si ispopout no está presente o se establece en 1, se muestra el mensaje en una ventana emergente. Si ispopout se establece en 0, el navegador mostrará el mensaje en el panel de revisión de Outlook Web App.<br><br>El mensaje se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br><br>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

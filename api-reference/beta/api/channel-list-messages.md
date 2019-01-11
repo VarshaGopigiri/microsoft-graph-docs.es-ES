@@ -1,12 +1,13 @@
 ---
 title: Mensajes del canal de lista
 description: 'Recuperar la lista de los mensajes (sin las respuestas) en un canal de un equipo. Para obtener las respuestas para un mensaje, llame a la lista de mensajes de respuesta o la respuesta de mensaje get API. '
-ms.openlocfilehash: b53b2616e88a07aa8f870304111680c4e842ef1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c972b84b0ec4de9389f8a0e861cafb74d7b23020
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867098"
 ---
 # <a name="list-channel-messages"></a>Mensajes del canal de lista
 

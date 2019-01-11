@@ -1,12 +1,13 @@
 ---
 title: Obtener singleValueLegacyExtendedProperty
 description: Puede obtener una instancia de un solo recurso expandida con una propiedad extendida específica o una colección de instancias de recursos
-ms.openlocfilehash: e9859adf2eea35037c82f36100a8fcb147f9ca3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49df9dcc6142086cead43731243c50911e2a7cc7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867252"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obtener singleValueLegacyExtendedProperty
 
@@ -201,7 +202,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```
 
 ## <a name="path-parameters"></a>Parámetros de ruta de acceso
-|Parámetro|Tipo|Descripción|
+|Parámetro|Tipo|Description|
 |:-----|:-----|:-----|
 |id_value|String|El identificador de la propiedad extendida que debe coincidir. Debe tener uno de los formatos compatibles. Consulte la [Información general de las propiedades extendidas de Outlook](../resources/extended-properties-overview.md) para obtener más información. Necesario.|
 |property_value |Cadena|El valor de la propiedad extendida que debe coincidir. Es necesario donde aparece en la sección anterior **Solicitud HTTP**. Si {property_value} no es una cadena, asegúrese de convertir explícitamente `ep/value` en el tipo de datos Edm apropiado cuando se compare con {property_value}. Vea la [solicitud 4](#request-4) a continuación para obtener ejemplos. |

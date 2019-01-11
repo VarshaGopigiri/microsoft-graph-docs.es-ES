@@ -1,12 +1,13 @@
 ---
 title: Usar la API de Microsoft Graph para trabajar con Microsoft Teams
 description: Microsoft Teams es un área de trabajo en función de chat en Office 365 que proporciona acceso integrado a calendarios específicos de equipo, archivos, notas de OneNote, planes de organizador y mucho más.
-ms.openlocfilehash: b42c33a34e0191eae236f675f29762834dfc29da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 196b7e3726609fe64f1621c0c1030dc6bfdd83be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866615"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar la API de Microsoft Graph para trabajar con Microsoft Teams
 
@@ -19,7 +20,7 @@ Microsoft Teams es un área de trabajo en función de chat en Office 365 que pro
 | Recurso | Métodos |
 |:---------------|:--------|
 |[equipo](../resources/team.md)| [los equipos de la lista](../api/user-list-joinedteams.md), [lista de todos los equipos](/graph/teams-list-all-teams), [crear](../api/team-put-teams.md), [leer](../api/team-get.md), [Actualizar](../api/team-update.md), [Eliminar](/graph/api/group-delete?view=graph-rest-1.0), [clon](../api/team-clone.md), [archivo](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Agregar a miembros](../api/group-post-members.md), [quitar a miembros](../api/group-delete-members.md), [Agregar propietario](../api/group-post-owners.md), [Quitar propietario](../api/group-delete-owners.md), [obtener archivos](drive.md), [obtener Bloc de notas](/graph/api/resources/notebook?view=graph-rest-1.0), [obtener los planes](plannergroup.md)y [obtener calendario](event.md) |
+|[grupo](../resources/group.md)| [Agregar a miembros](../api/group-post-members.md), [quitar a miembros](../api/group-delete-members.md), [Agregar propietario](../api/group-post-owners.md), [Quitar propietario](../api/group-delete-owners.md), [obtener archivos](drive.md), [obtener Bloc de notas](/graph/api/resources/notebook?view=graph-rest-1.0), [obtener los planes](plannergroup.md)y [obtener calendario](event.md) |
 |[canal](../resources/channel.md)|[lista](../api/channel-list.md), [crear](../api/channel-post.md), [leer](../api/channel-get.md), [Actualizar](../api/channel-patch.md), [Eliminar](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[lista](../api/teamstab-list.md), [crear](../api/teamstab-add.md), [leer](../api/teamstab-get.md), [Actualizar](../api/teamstab-update.md), [Eliminar](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[lista](../api/teamsapp-list.md), [Publicar](../api/teamsapp-publish.md), [Actualizar](../api/teamsapp-update.md), [Quitar](../api/teamsapp-delete.md)|
@@ -78,5 +79,5 @@ Si ninguno de esos usuarios ha iniciado sesión la aplicación de Microsoft Team
 
 ## <a name="see-also"></a>Vea también
 
-- [Introducción a la API de los equipos de Microsoft](/graph/teams-concept-overview)
+- [Introducción a la API de Microsoft Teams](/graph/teams-concept-overview)
 - Código de ejemplo: [Líneas aéreas Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [mini ejemplos de C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)

@@ -2,12 +2,13 @@
 title: 'llamar a: changeScreenSharingRole'
 description: Iniciar y detener el uso compartido de pantalla en la llamada. Esta API se usa para permitir que las aplicaciones compartir el contenido de la pantalla con los participantes de una llamada o una reunión.
 author: VinodRavichandran
-ms.openlocfilehash: a0f745fa6af1dbf97c19e95a70ca37350dacc408
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 64c85025a7aa1f3095fe6ddd8d7d398348a2a1ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380471"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865012"
 ---
 # <a name="call-changescreensharingrole"></a>llamar a: changeScreenSharingRole
 
@@ -39,9 +40,9 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
-|role|String|Los valores posibles son: 'Visor', 'Que comparte'|
+|role|Cadena|Los valores posibles son: 'Visor', 'Que comparte'|
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta.

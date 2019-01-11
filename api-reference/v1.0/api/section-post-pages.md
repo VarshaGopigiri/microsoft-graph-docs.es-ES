@@ -1,12 +1,13 @@
 ---
 title: Crear página
 description: Crea una página en la sección especificada.
-ms.openlocfilehash: ec4373af59ef8a324e8da8f685fc2ff01bde4a2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c4166d86f8547cbd008eab0796876b3639e4bc5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867833"
 ---
 # <a name="create-page"></a>Crear página
 
@@ -32,7 +33,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `text/html` o `application/xhtml+xml` para el contenido HTML, también para la parte requerida "Presentación" de las solicitudes de varias partes. Las solicitudes de varias partes usan el tipo de contenido `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

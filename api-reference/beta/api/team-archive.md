@@ -2,12 +2,13 @@
 title: Equipo de archivo
 description: 'Archivar el equipo especificado. '
 author: nkramer
-ms.openlocfilehash: 6e90b7ddaae68291a0d7e970618519ddaec660e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 984fbd7692f28ab2ebf8f3be0411447b51bf2d13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332651"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866195"
 ---
 # <a name="archive-team"></a>Equipo de archivo
 

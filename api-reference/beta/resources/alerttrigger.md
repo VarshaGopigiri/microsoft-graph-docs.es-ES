@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso alertTrigger
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 353f7dd09b11a2bfc509b53665c7f13ec390c80a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e375538806f09f85539f7a03e31c8a1ae041afdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866650"
 ---
 # <a name="alerttrigger-resource-type"></a>tipo de recurso alertTrigger
 
@@ -18,8 +19,8 @@ Contiene información acerca de las propiedades que desencadena una detección (
 
 | Propiedad   | Tipo|Descripción|
 |:---------------|:--------|:----------|
-|name|String|Nombre de la propiedad que actúa como un desencadenador de detección.|
-|type|String|Tipo de la propiedad en el par de clave: valor de interpretación. Por ejemplo, String, Boolean, etcetera.|
+|name|Cadena|Nombre de la propiedad que actúa como un desencadenador de detección.|
+|type|Cadena|Tipo de la propiedad en el par de clave: valor de interpretación. Por ejemplo, String, Boolean, etcetera.|
 |valor|String|Valor de la propiedad que actúa como un desencadenador de detección.|
 
 ## <a name="json-representation"></a>Representación JSON

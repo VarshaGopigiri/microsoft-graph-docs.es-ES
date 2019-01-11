@@ -2,12 +2,13 @@
 title: Obtener userPFXCertificate
 description: Leer las propiedades y las relaciones del objeto userPFXCertificate.
 author: tfitzmac
-ms.openlocfilehash: 19dd8ac9216585857524419d3da03a7f9784adb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 044ee2b822420d0996c8191438801557857b52cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862576"
 ---
 # <a name="get-userpfxcertificate"></a>Obtener userPFXCertificate
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: Lista signIns
 description: Recupera los inicios de sesión de usuario de Azure AD para el inquilino. Inicios de sesión que son interactivas en naturaleza (donde un nombre de usuario y contraseña se pasa como parte de símbolo (token) de autorización) y los inicios de sesión federados correctos actualmente se incluyen en los registros de inicio de sesión.  La signIns más recientes se devuelven en primer lugar.
-ms.openlocfilehash: 3abca59187dcc9667789e33bcefc1bcc51d5ab10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861792"
 ---
 # <a name="list-signins"></a>Lista signIns
 

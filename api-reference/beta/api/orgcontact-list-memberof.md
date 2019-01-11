@@ -1,12 +1,13 @@
 ---
 title: 'orgContact: miembro de lista'
 description: Recuperar la lista de grupos y unidades administrativas de que el contacto es un miembro.
-ms.openlocfilehash: 9b33cf9a4849ed4d97ab11d4791c703005115a5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 318936a49c4eeb56f05c685fc1a1ddd1eaad1a62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862691"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: miembro de lista
 
@@ -34,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

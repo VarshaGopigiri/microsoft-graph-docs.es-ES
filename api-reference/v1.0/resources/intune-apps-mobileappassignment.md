@@ -2,12 +2,13 @@
 title: Tipo de recurso mobileAppAssignment
 description: Una clase que contiene las propiedades que se usan para la asignación de grupo de una aplicación móvil.
 author: tfitzmac
-ms.openlocfilehash: fadc1cace3acd07ee5d42d77296a34cc34eb3027
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f621eeabbd806610461db69da344b0c31176ed01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327751"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862303"
 ---
 # <a name="mobileappassignment-resource-type"></a>Tipo de recurso mobileAppAssignment
 
@@ -26,7 +27,7 @@ Una clase que contiene las propiedades que se usan para la asignación de grupo 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |objetivo|[installIntent](../resources/intune-shared-installintent.md)|El objetivo de instalación definido por el administrador. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|La asignación de grupo de destino definida por el administrador.|
 |configuración|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|La asignación de la configuración para el destino definida por el administrador.|

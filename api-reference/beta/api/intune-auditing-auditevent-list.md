@@ -2,12 +2,13 @@
 title: Enumerar auditEvents
 description: Enumere las propiedades y las relaciones de los objetos auditEvent.
 author: tfitzmac
-ms.openlocfilehash: 4dd8ac91e44c080af1ffc49054947b73d17cdad5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3587dc98dd074a9ac6e92730870bbbaf7f24ff1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863822"
 ---
 # <a name="list-auditevents"></a>Enumerar auditEvents
 
@@ -38,7 +39,7 @@ GET /deviceManagement/auditEvents
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

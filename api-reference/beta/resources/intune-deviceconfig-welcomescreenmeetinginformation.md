@@ -2,12 +2,13 @@
 title: tipo de enumeración welcomeScreenMeetingInformation
 description: Valores posibles para la información de la reunión de pantalla de bienvenida.
 author: tfitzmac
-ms.openlocfilehash: f69f8d7497f5498f1d4a090b18c90a8a6edabeab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 28ec39638c3048a6fda0c5a0cdeca3cd848ad578
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861281"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>tipo de enumeración welcomeScreenMeetingInformation
 
@@ -17,7 +18,7 @@ ms.locfileid: "27315326"
 
 Valores posibles para la información de la reunión de pantalla de bienvenida.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |showOrganizerAndTimeOnly|1|Mostrar organizador y hora sólo.|

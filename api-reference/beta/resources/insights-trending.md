@@ -2,12 +2,13 @@
 title: tipo de recurso de tendencias
 description: Relación enriquecida conecta un usuario a los documentos que se tendencias alrededor del usuario (son relevante para el usuario). Archivos de OneDrive, y los archivos almacenados en sitios de grupo de SharePoint pueden tendencias alrededor del usuario.
 author: simonhult
-ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc0154d3985e5f6e1e4770bb7d10bc727a0eb0ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862387"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendencias
 
@@ -25,7 +26,7 @@ Relación enriquecida conecta un usuario a los documentos que se tendencias alre
 
 | Propiedad      | Tipo                              | Descripción  |
 | ------------- |---------------                    | -------------|
-| id                    | String                    | Identificador único de la relación. Solo lectura.        |
+| id                    | Cadena                    | Identificador único de la relación. Solo lectura.        |
 | weight                | Doble                    | Valor que indica cuánto el documento actualmente es tendencias. Cuanto mayor sea el número, más el documento está actualmente tendencias alrededor del usuario (más relevante es). Los documentos devueltos se ordenan por este valor.  |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Propiedades que puede usar para visualizar el documento en su experiencia. |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | Propiedades de la referencia del documento tendencia, como la dirección url y el tipo de documento. |

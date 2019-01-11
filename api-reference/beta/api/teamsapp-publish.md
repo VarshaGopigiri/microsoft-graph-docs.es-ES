@@ -2,12 +2,13 @@
 title: Permisos
 description: 'Publicar una aplicación en el catálogo de aplicaciones de Microsoft Teams. '
 author: nkramer
-ms.openlocfilehash: 01d552a013b3d1324893bd775611e797253ff261
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d6e98fc3c95485fc771a6db841021940b0c87a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864984"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicaciones en el catálogo de aplicaciones de la organización
 

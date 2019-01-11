@@ -1,12 +1,13 @@
 ---
 title: Enumerar reglas
 description: Obtener todos los objetos messageRule definidos para la Bandeja de entrada del usuario.
-ms.openlocfilehash: 9cd56e3ad7c63a2b8ad84758ac7d26c3c349810a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3145c1f2b2900971021b6799917996e23cf36866
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863367"
 ---
 # <a name="list-rules"></a>Enumerar reglas
 
@@ -34,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

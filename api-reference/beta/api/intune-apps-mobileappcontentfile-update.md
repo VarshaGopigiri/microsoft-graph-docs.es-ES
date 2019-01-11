@@ -2,12 +2,13 @@
 title: Actualizar mobileAppContentFile
 description: Actualice las propiedades de un objeto mobileAppContentFile.
 author: tfitzmac
-ms.openlocfilehash: ae091b562180c73c71ad9a58522face2c4457d53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b404be8c376bfaff89540eb22ce2cde5ddca2b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337936"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865481"
 ---
 # <a name="update-mobileappcontentfile"></a>Actualizar mobileAppContentFile
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md).
@@ -47,18 +48,18 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|azureStorageUri|String|El URI de Azure Storage.|
-|isCommitted|Boolean|Un valor que indica si el archivo está confirmado.|
-|id|String|El Id. de archivo.|
+|azureStorageUri|Cadena|El URI de Azure Storage.|
+|isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
+|id|Cadena|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
-|name|String|El nombre del archivo.|
+|name|Cadena|El nombre del archivo.|
 |size|Int64|El tamaño del archivo antes del cifrado.|
 |sizeEncrypted|Int64|El tamaño del archivo después del cifrado.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|La hora en que expira el URI de Azure Storage.|
 |manifiesto|Binario|La información del manifiesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|El estado de la solicitud de carga actual. Los valores posibles son: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed` y `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|Un valor que indica si el archivo es un archivo de framework.|
-|isDependency|Boolean|Si el archivo de contenido es una dependencia para el archivo de contenido principal.|
+|isFrameworkFile|Booleano|Un valor que indica si el archivo es un archivo de framework.|
+|isDependency|Booleano|Si el archivo de contenido es una dependencia para el archivo de contenido principal.|
 
 
 

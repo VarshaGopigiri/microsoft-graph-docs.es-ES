@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso groupLifecyclePolicy
 description: Representa una directiva de ciclo de vida de un grupo de Office 365. Una directiva de ciclo de vida de grupo permite a los administradores establecer un período de expiración para los grupos. Por ejemplo, después de 180 días, un grupo expira. Cuando un grupo llega a su expiración, sus propietarios deben renovar su grupo en el intervalo de tiempo definido por el administrador. Una vez renovado, la expiración del grupo se amplía por el número de días definidos en la directiva. Por ejemplo, la nueva expiración del grupo es 180 días después de la renovación. Si no se renueva el grupo, este expira y se elimina. El grupo se puede restaurar en un período de 30 días después de la eliminación.
-ms.openlocfilehash: c4a4d5b495f3bbb0d0c55b61a259f2105d0fea9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 271a3421599eaa58487cc7917c8dfaf4c382050d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861687"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>tipo de recurso groupLifecyclePolicy
 

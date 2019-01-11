@@ -2,12 +2,13 @@
 title: Actualizar windowsPrivacyDataAccessControlItem
 description: Actualizar las propiedades de un objeto windowsPrivacyDataAccessControlItem.
 author: tfitzmac
-ms.openlocfilehash: 38389049c03d822feb4c3791dfee65e327e1afea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a989f4c05bff61f86c93873ad817013b6fab2bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807129"
 ---
 # <a name="update-windowsprivacydataaccesscontrolitem"></a>Actualizar windowsPrivacyDataAccessControlItem
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md) .
@@ -47,11 +48,11 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|La clave de WindowsPrivacyDataAccessControlItem.|
+|id|Cadena|La clave de WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Esto indica un nivel de acceso para la categoría de datos de privacidad a la que se le dará la aplicación especificada a. Los valores posibles son: `notConfigured`, `forceAllow`, `forceDeny` y `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Esto indica una categoría de datos de privacidad al que se aplicará el control de acceso específico. Los valores posibles son: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices` .|
-|appPackageFamilyName|String|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
-|appDisplayName|String|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
+|appPackageFamilyName|Cadena|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
+|appDisplayName|Cadena|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
 
 
 

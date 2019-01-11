@@ -2,12 +2,13 @@
 title: Tipo de recurso messageRule
 description: Regla que se aplica a los mensajes de la Bandeja de entrada de un usuario.
 author: angelgolfer-ms
-ms.openlocfilehash: 1a8e0bb0c8540848c9a57bd59b7536688afd6926
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9336f2e35d6c68d86c3e92b5f94c024eff1e49a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862128"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
 

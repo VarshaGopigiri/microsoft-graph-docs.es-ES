@@ -2,12 +2,13 @@
 title: Agregar datos adjuntos
 description: Utilice esta API para agregar datos adjuntos a un evento. Desde allí
 author: angelgolfer-ms
-ms.openlocfilehash: 071ecdecf3ac7fd835c7c5004463661b685be003
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 09ca8f38dd2c69d2cb1b10b213bd0a5c5f4a25bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866181"
 ---
 # <a name="add-attachment"></a>Agregar datos adjuntos
 
@@ -42,7 +43,7 @@ POST /groups/{id}/events/{id}/attachments
 
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de solicitud

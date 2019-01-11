@@ -2,12 +2,13 @@
 title: Actualizar windowsOfficeClientConfiguration
 description: Una carga de la directiva de seguridad que no son específicos de una revisión.
 author: tfitzmac
-ms.openlocfilehash: 728fe7b6ffdb4b964488317551fdbaef139d2803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e13228c6fc467fa49b740c02b4b7068efb1ec42e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310755"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863878"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Actualizar windowsOfficeClientConfiguration
 
@@ -38,7 +39,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) .
@@ -47,11 +48,11 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|Cadena|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userPreferencePayload|Stream|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |policyPayload|Stream|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|descripción|String|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|displayName|String|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|descripción|Cadena|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|Cadena|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |prioridad|Int32|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |checkinStatuses|colección de [officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)|Aún no se han documentado Inherited desde [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

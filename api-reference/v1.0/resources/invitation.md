@@ -1,12 +1,13 @@
 ---
 title: administrador de invitaciones
 description: 'Use el Administrador de invitaciones para crear una invitación para agregar un usuario externo a la organización. '
-ms.openlocfilehash: c8b8bacaf85c36f24ec89b05594ff0880fa8c14e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 4e47131fd7e3128366d482c314c059d833c8e101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867441"
 ---
 # <a name="invitation-manager"></a>administrador de invitaciones
 

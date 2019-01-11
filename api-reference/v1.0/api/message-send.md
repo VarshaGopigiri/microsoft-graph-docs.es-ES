@@ -1,12 +1,13 @@
 ---
 title: 'message: send'
 description: Enviar un mensaje en la carpeta Borrador. El mensaje de borrador puede ser un borrador del mensaje nuevo, borrador de respuesta, borrador de responder a todos, o
-ms.openlocfilehash: 8fe04db6a7fe4a469374cd54a00f308e01341274
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: cd98c4965f7eee3e53fc24bad551a1b14e8c7521
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867448"
 ---
 # <a name="message-send"></a>message: send
 
@@ -35,8 +36,8 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Length | n?mero | 0. necesarios. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
+| Content-Length | number | 0. necesarios. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

@@ -2,12 +2,13 @@
 title: Eliminar deviceManagementScriptAssignment
 description: Elimina un deviceManagementScriptAssignment.
 author: tfitzmac
-ms.openlocfilehash: e579ae4a4463f6d600cd019e098f32e5d2a995ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79440d85595f59ba54543e01c42ab6da853cddc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864900"
 ---
 # <a name="delete-devicemanagementscriptassignment"></a>Eliminar deviceManagementScriptAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assi
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

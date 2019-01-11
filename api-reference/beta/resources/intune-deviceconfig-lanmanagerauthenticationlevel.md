@@ -2,12 +2,13 @@
 title: tipo de enumeración lanManagerAuthenticationLevel
 description: Valores posibles para LanManagerAuthenticationLevel
 author: tfitzmac
-ms.openlocfilehash: fd5d63f262b9b6e9a27060725e721cb81c495a57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 68af209a005dc1d7e8d25672f5e97e1d929ba25b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866916"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>tipo de enumeración lanManagerAuthenticationLevel
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308746"
 
 Valores posibles para LanManagerAuthenticationLevel
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |lmAndNltm|0|Enviar respuestas de LM y NTLM|
 |lmNtlmAndNtlmV2|1|Enviar la seguridad de sesión LM & NTLM de usar NTLMv2 si negociar|

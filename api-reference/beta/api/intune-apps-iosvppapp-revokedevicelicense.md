@@ -2,12 +2,13 @@
 title: acción revokeDeviceLicense
 description: REVOKE asignado iOS VPP dispositivo licencia para dada la aplicación.
 author: tfitzmac
-ms.openlocfilehash: 17ae2ed812d5c5b5a35926934d748fb730aafacf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a8dca4ea62e08e9d34727dd2142a156ba2d8dee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353133"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864977"
 ---
 # <a name="revokedevicelicense-action"></a>acción revokeDeviceLicense
 
@@ -40,17 +41,17 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|managedDeviceId|String|DeviceId para quienes licencia de aplicaciones asignado es que se desea revocar|
-|notifyManagedDevices|Boolean|Valor Boolean que indica si se debe enviar notificación de revoke para dispositivos|
+|managedDeviceId|Cadena|DeviceId para quienes licencia de aplicaciones asignado es que se desea revocar|
+|notifyManagedDevices|Booleano|Valor Boolean que indica si se debe enviar notificación de revoke para dispositivos|
 
 
 

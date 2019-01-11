@@ -2,12 +2,13 @@
 title: Eliminar iosTrustedRootCertificate
 description: Elimina un iosTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: f83669c4eb196ecd9de64c3be365301c388bdf5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd871691c9f5986e7dbf7979710ed316a73f5fcc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863808"
 ---
 # <a name="delete-iostrustedrootcertificate"></a>Eliminar iosTrustedRootCertificate
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

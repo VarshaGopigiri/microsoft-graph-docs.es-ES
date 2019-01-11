@@ -2,12 +2,13 @@
 title: Tipo de recurso outlookTask
 description: 'Un elemento de Outlook que puede realizar un seguimiento de un elemento de trabajo. '
 author: angelgolfer-ms
-ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 71f649c0ef5fd23caafc9bcd3e35282287d35372
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865565"
 ---
 # <a name="outlooktask-resource-type"></a>Tipo de recurso outlookTask
 
@@ -37,8 +38,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Obtener las propiedades y relaciones de una tarea de Outlook en el buzón del usuario.|
-|[Actualizar](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Cambiar las propiedades grabables de una tarea de Outlook. |
-|[Eliminar](../api/outlooktask-delete.md) | Ninguno |Eliminar la tarea especificada en el buzón del usuario. |
+|[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Cambiar las propiedades grabables de una tarea de Outlook. |
+|[Delete](../api/outlooktask-delete.md) | Ninguno |Eliminar la tarea especificada en el buzón del usuario. |
 |[Complete](../api/outlooktask-complete.md)|colección de [outlookTask](outlooktask.md)|Completar una tarea de Outlook que establece la propiedad **completedDateTime** a la fecha actual y la propiedad **status** para `completed`.|
 |**Datos adjuntos**| | |
 |[Enumerar datos adjuntos](../api/outlooktask-list-attachments.md) |Colección de [datos adjuntos](attachment.md)| Obtener todos los datos adjuntos en una tarea de Outlook.|
@@ -50,28 +51,28 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Obtener tarea con varios valor de propiedad extendida](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Obtener una tarea de Outlook que contiene una propiedad extendida de varios valor mediante el uso de `$expand`. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|assignedTo|String|El nombre de la persona que se le ha asignado la tarea.|
+|assignedTo|Cadena|El nombre de la persona que se le ha asignado la tarea.|
 |body|[itemBody](itembody.md)|El cuerpo de la tarea que normalmente contiene información acerca de la tarea. Tenga en cuenta que sólo el tipo HTML es compatible.|
 |categories|Colección String|Las categorías asociadas con la tarea. Cada categoría corresponde a la propiedad **displayName** de un [outlookCategory](outlookcategory.md) que ha definido el usuario.|
-|changeKey|String|La versión de la tarea.|
+|changeKey|Cadena|La versión de la tarea.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha en la zona horaria especificada que se ha finalizado la tarea.|
 |createdDateTime|DateTimeOffset|La fecha y la hora cuando se creó la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad usa formato ISO 8601. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha en la zona horaria especificada que se va finalizado la tarea.|
-|hasAttachments|Boolean|Se establece en true si la tarea tiene datos adjuntos.|
-|id|String|El identificador único de la tarea. Solo lectura.|
+|hasAttachments|Booleano|Se establece en true si la tarea tiene datos adjuntos.|
+|id|Cadena|El identificador único de la tarea. Solo lectura.|
 |importance|string|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle al usuario de la tarea.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de última modificación de la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad utiliza el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|owner|String|El nombre de la persona que creó la tarea.|
-|parentFolderId|String|El identificador único para la carpeta principal de la tarea.|
+|owner|Cadena|El nombre de la persona que creó la tarea.|
+|parentFolderId|Cadena|El identificador único para la carpeta principal de la tarea.|
 |periodicidad|[patternedRecurrence](patternedrecurrence.md)|El patrón de periodicidad de la tarea.|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha y hora para un aviso de la tarea que se produzca.|
 |sensitivity|string|Indica el nivel de privacidad para la tarea. Los valores posibles son: `normal`, `personal`, `private` y `confidential`.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha en la zona horaria especificada cuando la tarea que se va a comenzar.|
 |status|string|Indica el estado o el progreso de la tarea. Los valores posibles son: `notStarted`, `inProgress`, `completed`, `waitingOnOthers` y `deferred`.|
-|subject|String|Una breve descripción o el título de la tarea.|
+|subject|Cadena|Una breve descripción o el título de la tarea.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

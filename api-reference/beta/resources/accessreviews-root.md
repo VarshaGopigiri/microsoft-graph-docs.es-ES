@@ -1,12 +1,13 @@
 ---
 title: Revisa el acceso de Azure AD
 description: Puede usar AD Azure tener acceso a las revisiones para configurar revisiones de acceso única o recurrente para la certificación de derechos de acceso del usuario.
-ms.openlocfilehash: 33722c68429729e3996ad289d07146c95ee219ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 259a88bf95bfe0796e0ee46dd2d0a64c68831a64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860791"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisa el acceso de Azure AD
 
@@ -34,25 +35,25 @@ Tenga en cuenta que la característica de revisiones de access, incluida la API,
 |:---------------|:--------|:----------|
 |[Obtener accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obtenga una revisión de access con un identificador específico. |
 |[Crear accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Crear un nuevo accessReview. |
-|[Eliminar accessReview](../api/accessreview-delete.md) | Ninguna.   | Eliminar un accessReview. |
+|[Eliminar accessReview](../api/accessreview-delete.md) | Ninguno.   | Eliminar un accessReview. |
 |[Actualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Actualizar un accessReview. |
 |[Revisores accessReview de lista](../api/accessreview-listreviewers.md) |      colección de [IdentidadDeUsuario](useridentity.md)| Obtenga los revisores de un accessReview. |
-|[Agregar revisor accessReview](../api/accessreview-addreviewer.md) |      Ninguna.   |   Agregar un revisor a una accessReview. |
-|[Quitar accessReview revisor](../api/accessreview-removereviewer.md) | Ninguna.  |   Quitar un revisor de un accessReview. |
+|[Agregar revisor accessReview](../api/accessreview-addreviewer.md) |      Ninguno.   |   Agregar un revisor a una accessReview. |
+|[Quitar accessReview revisor](../api/accessreview-removereviewer.md) | Ninguno.  |   Quitar un revisor de un accessReview. |
 |[Lista decisiones de accessReview](../api/accessreview-listdecisions.md) |      colección de [accessReviewDecision](accessreviewdecision.md)| Obtenga las decisiones de un accessReview.|
 |[Mis decisiones accessReview de lista](../api/accessreview-listmydecisions.md) |     colección de [accessReviewDecision](accessreviewdecision.md)| Como revisor, obtener Mis decisiones de un accessReview.|
-|[Enviar aviso de accessReview](../api/accessreview-sendreminder.md) |        Ninguna.   |   Enviar un aviso a los revisores de un accessReview. |
-|[Detener accessReview](../api/accessreview-stop.md) |     Ninguna.   |   Detener una accessReview. |
-|[Restablecer las decisiones de accessReview](../api/accessreview-reset.md) |     Ninguna.   |   Restablecer las decisiones en un accessReview en curso.|
-|[Aplicar decisiones accessReview](../api/accessreview-apply.md) |     Ninguna.   |   Se aplican las decisiones de un accessReview completado.|
+|[Enviar aviso de accessReview](../api/accessreview-sendreminder.md) |        Ninguno.   |   Enviar un aviso a los revisores de un accessReview. |
+|[Detener accessReview](../api/accessreview-stop.md) |     Ninguno.   |   Detener una accessReview. |
+|[Restablecer las decisiones de accessReview](../api/accessreview-reset.md) |     Ninguno.   |   Restablecer las decisiones en un accessReview en curso.|
+|[Aplicar decisiones accessReview](../api/accessreview-apply.md) |     Ninguno.   |   Se aplican las decisiones de un accessReview completado.|
 |[Lista businessFlowTemplates](../api/businessflowtemplate-list.md) | colección de [businessFlowTemplate](businessflowtemplate.md)| Obtener las plantillas de flujo de negocio adecuados tener acceso a las revisiones.|
 |[Creación de programa](../api/program-create.md) |   [programa](program.md)   |   Crear un nuevo programa.|
-|[Eliminar programa](../api/program-delete.md) |   Ninguna.   |   Eliminar un programa.|
+|[Eliminar programa](../api/program-delete.md) |   Ninguno.   |   Eliminar un programa.|
 |[Programas de lista](../api/program-list.md) |  colección de [programa](program.md)|   Obtener una colección de todos los programas.|
 |[ProgramControls de lista de un programa](../api/program-listcontrols.md) |      colección de [programControl](programcontrol.md)| Obtener una colección de los controles de un programa.|
 |[Programa de actualización](../api/program-update.md) |   [programa](program.md)|  Actualizar un programa.|
 |[Crear programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Agregar un programControl a un programa.|
-|[Eliminar programControl](../api/programcontrol-delete.md) |     Ninguna.   |   Quitar un programControl de un programa.|
+|[Eliminar programControl](../api/programcontrol-delete.md) |     Ninguno.   |   Quitar un programControl de un programa.|
 |[Lista programControls](../api/programcontrol-list.md) | colección de [programControl](programcontrol.md)| Controles de lista a través de todos los programas en el inquilino.|
 |[Lista programControlTypes](../api/programcontroltype-list.md) | colección de [programControlType](programcontroltype.md)| Lista de tipos de control de programa. |
 

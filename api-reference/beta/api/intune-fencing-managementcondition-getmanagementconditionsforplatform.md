@@ -2,12 +2,13 @@
 title: getManagementConditionsForPlatform (función)
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: d0d36750f568102a69309615285c7460aa31aec3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 13871db2f5dd99de80caf1004baa96aaf6dcf146
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864928"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>getManagementConditionsForPlatform (función)
 
@@ -39,13 +40,13 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Todavía no documentado|
 

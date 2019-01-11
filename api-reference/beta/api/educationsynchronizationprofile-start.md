@@ -1,12 +1,13 @@
 ---
 title: Iniciar sincronización después de cargar archivos en un educationSynchronizationProfile
 description: Compruebe los archivos cargan en un perfil de sincronización de datos de school específicos en el inquilino. Si la comprobación se realiza correctamente, se iniciará la sincronización en el perfil. De lo contrario, la respuesta contendrá errores y advertencias. Si la respuesta contiene errores, no se iniciará la sincronización. Si la respuesta contiene sólo las advertencias, se iniciará la sincronización.
-ms.openlocfilehash: 4b123c5a90b65b333d881da471c475161b1c6507
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 465ab6a807fc6af10067d048459c440c7c567361
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866741"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar sincronización después de cargar archivos en un educationSynchronizationProfile
 
@@ -19,7 +20,7 @@ Compruebe los archivos cargan en school específico datos en un [perfil de sincr
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-| Tipo de permiso | Permissions |
+| Tipo de permiso | Permisos |
 |:-----------|:----------|
 | Delegado (cuenta profesional o educativa) | EduAdministration.ReadWrite |
 |Delegado (cuenta Microsoft personal|No admitida.|
@@ -34,7 +35,7 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

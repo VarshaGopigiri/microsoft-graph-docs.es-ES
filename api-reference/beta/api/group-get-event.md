@@ -2,12 +2,13 @@
 title: Obtener evento
 description: Obtiene un objeto de evento.
 author: dkershaw10
-ms.openlocfilehash: 88a19af3e9f57e4b4c5856b56387136ccdd876de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 724f5467c5d86dc571370f1db422019478b1c78e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864452"
 ---
 # <a name="get-event"></a>Obtener evento
 
@@ -35,7 +36,7 @@ GET /groups/{id}/calendar/events/{id}
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción |
+| Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
 | Autorización  | string | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |

@@ -1,12 +1,13 @@
 ---
 title: Actualizar privilegedapproval
 description: Actualizar las propiedades del objeto privilegedapproval.
-ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 0ddab7d7a628be8513c27114e1e4ec3d13477784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866888"
 ---
 # <a name="update-privilegedapproval"></a>Actualizar privilegedapproval
 
@@ -36,17 +37,17 @@ PATCH /privilegedApproval/<id>
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |approvalDuration|Duración||
 |approvalState|string| Los valores posibles son: `pending`, `approved`, `denied`, `aborted` y `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Cadena||
+|approverReason|Cadena||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
-|identificador de función|String||
+|requestorReason|Cadena||
+|identificador de función|Cadena||
 |startDateTime|DateTimeOffset||
-|userId|String||
+|userId|Cadena||
 
 ## <a name="response"></a>Respuesta
 

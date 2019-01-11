@@ -2,12 +2,13 @@
 title: Crear notificationMessageTemplate
 description: Cree un objeto notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: ac5a91d6a53719eac38f91e402a6f36f63ebdc36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f97f16298c48b787977330781e3aa95e68e4d28a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315599"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861777"
 ---
 # <a name="create-notificationmessagetemplate"></a>Crear notificationMessageTemplate
 
@@ -36,7 +37,7 @@ POST /deviceManagement/notificationMessageTemplates
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto notificationMessageTemplate.
@@ -45,10 +46,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre para mostrar de la plantilla de mensajes de notificación.|
-|defaultLocale|String|La configuración regional predeterminada de reserva para los casos en que la configuración regional solicitada no está disponible.|
+|displayName|Cadena|Nombre para mostrar de la plantilla de mensajes de notificación.|
+|defaultLocale|Cadena|La configuración regional predeterminada de reserva para los casos en que la configuración regional solicitada no está disponible.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Las opciones de personalización de marca de la plantilla de mensaje. La personalización de marca está definida en la consola de administración de Intune. Los valores posibles son: `none`, `includeCompanyLogo`, `includeCompanyName` y `includeContactInformation`.|
 
 

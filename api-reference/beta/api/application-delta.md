@@ -1,12 +1,13 @@
 ---
 title: 'aplicación: delta'
 description: Get recién creado, actualiza o elimina aplicaciones sin tener que realizar un acceso completo de lectura de la colección completa de recursos. Para obtener más información, vea Uso de consulta de Delta.
-ms.openlocfilehash: 6393e9a1340b2867e37a1f9f350ff50f2ba8a1cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 594b7c05afdc8e3e3c89e8d2fb8e59f25cf4d4ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825476"
 ---
 # <a name="application-delta"></a>aplicación: delta
 

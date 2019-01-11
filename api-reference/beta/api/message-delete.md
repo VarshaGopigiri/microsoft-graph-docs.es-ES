@@ -1,12 +1,13 @@
 ---
 title: Delete message
 description: Eliminar un mensaje en el buzón del usuario especificado, o eliminar una relación del mensaje.
-ms.openlocfilehash: 8f7429dfa4ee586f7bb6c263bdbb80971416d006
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a76c936f72ebd238ee6d7a898dfd6a3e0356036
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864529"
 ---
 # <a name="delete-message"></a>Delete message
 
@@ -48,7 +49,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

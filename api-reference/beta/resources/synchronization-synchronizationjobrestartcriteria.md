@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationJobRestartCriteria
 description: 'Define el ámbito de la [synchronizationJob: reinicie](../api/synchronization_synchronizationjob_restart.md) acción.'
-ms.openlocfilehash: edf5cf258750df72dda2c9754d3543e07fc32e39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e26bae2e418da22a2b56e3acb973e4111066df23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867882"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>tipo de recurso synchronizationJobRestartCriteria
 
@@ -15,9 +16,9 @@ ms.locfileid: "27083551"
 Define el ámbito de la [synchronizationJob: reinicie](../api/synchronization_synchronizationjob_restart.md) acción.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|resetScope|String| Combinación de separados por comas de los valores siguientes: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`. Uso `Full` si desea que todas las opciones.|
+|resetScope|Cadena| Combinación de separados por comas de los valores siguientes: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`. Uso `Full` si desea que todas las opciones.|
 
 ## <a name="json-representation"></a>Representación JSON
 

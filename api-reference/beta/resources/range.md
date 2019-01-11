@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Range
 description: El rango representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc.
-ms.openlocfilehash: 95951b45653309f1999ca5d8103c5c63a1249ada
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4b175cfc48ca4a0f55c430c6087ebbb907d6cb97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090015"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865698"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceComplianceSettingState
 description: Estados de configuración de cumplimiento del dispositivo para un dispositivo determinado.
 author: tfitzmac
-ms.openlocfilehash: 4fe74d529d0768f773652ce0bbc6aa37f221db9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 697072009243b3e7f008d59f43030badb16a55a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326498"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861841"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 
@@ -28,17 +29,17 @@ Estados de configuración de cumplimiento del dispositivo para un dispositivo de
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad|
+|id|Cadena|Clave de la entidad|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma del dispositivo. Los valores posibles son: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|ajustes|String|El nombre de la clase de configuración y el nombre de propiedad.|
-|settingName|String|El nombre de configuración que se está notificando|
-|deviceId|String|El identificador del dispositivo que se está notificando|
-|deviceName|String|El nombre del dispositivo que se está notificando|
-|userId|String|El identificador del usuario que se está notificando|
-|userEmail|String|La dirección de correo electrónico del usuario que se está notificando|
-|userName|String|El nombre de usuario que se está notificando|
-|userPrincipalName|String|El nombre principal de usuario que se está notificando|
-|deviceModel|String|El modelo de dispositivo que se está notificando|
+|ajustes|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
+|settingName|Cadena|El nombre de configuración que se está notificando|
+|deviceId|Cadena|El identificador del dispositivo que se está notificando|
+|deviceName|Cadena|El nombre del dispositivo que se está notificando|
+|userId|Cadena|El identificador del usuario que se está notificando|
+|userEmail|Cadena|La dirección de correo electrónico del usuario que se está notificando|
+|userName|Cadena|El nombre de usuario que se está notificando|
+|userPrincipalName|Cadena|El nombre principal de usuario que se está notificando|
+|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 

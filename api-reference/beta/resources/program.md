@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de programa
 description: 'En el anuncio de Azure access revisa la característica, un programa es un contenedor, manteniendo los controles de programa. Un inquilino puede tener uno o varios programas.  Cada control vincula una revisión de acceso a un programa, para que sea más fácil buscar relacionado acceso revisa.  '
-ms.openlocfilehash: cb08d0edb7487be95e159ed5e2a2546a92e7bce7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863906"
 ---
 # <a name="program-resource-type"></a>tipo de recurso de programa
 
@@ -22,12 +23,12 @@ Cada inquilino que ha en-efectuar Azure AD revisiones de acceso tiene uno de los
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Creación de programa](../api/program-create.md) |   [programa](program.md)   |   Crear un nuevo programa.|
-|[Eliminar programa](../api/program-delete.md) |   Ninguna.   |   Eliminar un programa.|
+|[Eliminar programa](../api/program-delete.md) |   Ninguno.   |   Eliminar un programa.|
 |[Programas de lista](../api/program-list.md) |  colección de [programa](program.md)|   Obtener una colección de todos los programas.|
 |[ProgramControls de lista de un programa](../api/program-listcontrols.md) |      colección de [programControl](programcontrol.md)| Obtener una colección de los controles de un programa.|
 |[Programa de actualización](../api/program-update.md) |   [programa](program.md)|  Actualizar un programa.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 |Tipo de permiso                        | Permisos (de menos a más privilegiados)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -37,14 +38,14 @@ Cada inquilino que ha en-efectuar Azure AD revisiones de acceso tiene uno de los
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `id`                        |`String`                              |  El identificador asignado a la característica del programa.                    |
 | `displayName`               |`String`                              |  El nombre del programa.  Necesarios en crear.                  |
 | `description`               |`String`                              |  La descripción del programa.           |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `controls`                  |[programControl](programcontrol.md) | Controles asociados con el programa. |
 

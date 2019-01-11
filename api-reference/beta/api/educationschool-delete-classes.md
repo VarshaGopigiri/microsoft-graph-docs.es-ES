@@ -2,12 +2,13 @@
 title: Quitar educationClass
 description: Elimine una clase de un centro educativo.
 author: mmast-msft
-ms.openlocfilehash: 7c69d03670adca93194c5761aa6f943ee9201ac8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac626310fb61fd0d0a73e86d5c52ad0b37e1dd32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319253"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866685"
 ---
 # <a name="remove-educationclass"></a>Quitar educationClass
 

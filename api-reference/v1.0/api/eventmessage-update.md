@@ -2,12 +2,13 @@
 title: Update eventMessage
 description: Actualiza las propiedades de un objeto eventMessage.
 author: angelgolfer-ms
-ms.openlocfilehash: 20c910ae2d6562a4bb9a593a0fac32269dbd413f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 128849b2b0a1a156ef68498b345ca30833922d82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867700"
 ---
 # <a name="update-eventmessage"></a>Update eventMessage
 
@@ -31,7 +32,7 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
@@ -41,7 +42,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |categories|String|Categorías asociadas al mensaje.|
-|importance|String|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
+|importance|Cadena|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|

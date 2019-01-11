@@ -2,12 +2,13 @@
 title: Enumerar managedAppStatusRaws
 description: Enumere las propiedades y las relaciones de los objetos managedAppStatusRaw.
 author: tfitzmac
-ms.openlocfilehash: 5f87e8056699a5f7b428a44bb36f4674864af223
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb7d20e07a0c439c64ac9a083bbf302051d324d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354589"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867749"
 ---
 # <a name="list-managedappstatusraws"></a>Enumerar managedAppStatusRaws
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppStatuses
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

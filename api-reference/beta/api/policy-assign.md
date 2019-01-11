@@ -1,12 +1,13 @@
 ---
 title: Asignar directiva
 description: Asigna una directiva a una aplicación o entidad de seguridad de servicio.
-ms.openlocfilehash: 25dee4ac43716949125795114318d2571d5b8647
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30ba92c1d0308f9c4846702008a203821ae2b7b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865460"
 ---
 # <a name="assign-policy"></a>Asignar directiva
 
@@ -37,7 +38,7 @@ POST /serviceprincipals/{id}/policies/$ref
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | application/json  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

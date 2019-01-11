@@ -2,12 +2,13 @@
 title: tipo de enumeración vppTokenAccountType
 description: Tipos posibles de un token de programa de compra de volumen de Apple.
 author: tfitzmac
-ms.openlocfilehash: f4f7caa3deaf11aaa9fe02935b32bbe3e1a0e9e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d17c4555b46e1251780a90db5e6935bbb865c40a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861449"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>tipo de enumeración vppTokenAccountType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27325049"
 
 Tipos posibles de un token de programa de compra de volumen de Apple.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |empresarial|0|Programa de compra de volumen de Apple símbolo (token) asociado con un programa de negocio.|
 |ámbito educativo|1|Programa de compra de volumen de Apple símbolo (token) asociado con un programa de formación.|

@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageDetail'
 description: Obtiene información sobre el uso de buzones.
-ms.openlocfilehash: 317d258a51250992c47b20675bb2cb580ce408dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 09fbb0ce1a4c652d4e24194b36edd790b1ec63f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865159"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 

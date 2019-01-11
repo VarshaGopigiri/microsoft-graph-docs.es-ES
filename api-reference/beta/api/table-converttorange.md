@@ -2,12 +2,13 @@
 title: 'Table: convertToRange'
 description: Convierte la tabla en un rango de celdas normal. Se conservan todos los datos.
 author: lumine2008
-ms.openlocfilehash: 7f05f21427e75ef3e86981f0ca52d1364ec86bf0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 27f4e406f7021c7fa2e61b39b376d61ab8b36784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306814"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866461"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 

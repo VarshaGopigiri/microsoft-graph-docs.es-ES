@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso objectDefinition
 description: Describe un objeto y sus atributos. Las definiciones de objeto forman parte de directoryDefinition, que se actualiza como parte de synchronizationSchema.
-ms.openlocfilehash: c4c2d54eb33f5140464e3e8aa479aa6baec72df8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866083"
 ---
 # <a name="objectdefinition-resource-type"></a>tipo de recurso objectDefinition
 
@@ -16,11 +17,11 @@ Describe un objeto y sus atributos. Las definiciones de objeto forman parte de [
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad      | Tipo      | Descripción    |
+| Propiedad      | Tipo      | Description    |
 |:--------------|:----------|:---------------|
 |atributos     |colección de [attributeDefinition](synchronization-attributedefinition.md)    | Define los atributos del objeto. |
 |metadatos       |colección de [metadataEntry](synchronization-metadataentry.md)   |Propiedades de extensión adicionales. A menos que se mencionan explícitamente, no se deben cambiar los valores de metadatos.|
-|name           |String     |Nombre del objeto. Debe ser único dentro de una definición de Active directory. No admite valores NULL.|
+|name           |Cadena     |Nombre del objeto. Debe ser único dentro de una definición de Active directory. No admite valores NULL.|
 
 ## <a name="json-representation"></a>Representación JSON
 

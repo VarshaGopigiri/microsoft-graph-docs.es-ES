@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingUnitedKingdomTelevisionType
 description: Etiquetas de clasificación de contenido de TV en Reino Unido
 author: tfitzmac
-ms.openlocfilehash: f023cc582dc1e73a00694222880d46fc1f3e3a67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03d09d6b8083e83f29476594cb2012f19a78fff2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333281"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865572"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>tipo de enumeración ratingUnitedKingdomTelevisionType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27333281"
 
 Etiquetas de clasificación de contenido de TV en Reino Unido
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

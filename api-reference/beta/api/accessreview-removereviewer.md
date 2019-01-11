@@ -1,12 +1,13 @@
 ---
 title: Quitar accessReview revisor
 description: 'En la característica de revisiones de access Azure AD, actualice un objeto accessReview existente para quitar un usuario como un revisor.  Esta operación sólo se permite para una revisión de acceso que no se ha completado y solo para una revisión de acceso donde se especifican explícitamente los revisores. Esta operación no es permitida para una revisión de access en la que los usuarios revisión su propio acceso y no está pensada para una revisión de access en la que se asignan los propietarios del grupo como los revisores. '
-ms.openlocfilehash: 2f2e1be904b98ed4dc2b3b34088b344e05b03473
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d33c1c2409b866a48d0684612f8c878e14dedb68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866027"
 ---
 # <a name="remove-accessreview-reviewer"></a>Quitar accessReview revisor
 
@@ -32,7 +33,7 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

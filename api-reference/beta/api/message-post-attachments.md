@@ -2,12 +2,13 @@
 title: Agregar datos adjuntos
 description: 'Use esta API para agregar un objeto attachment a un mensaje. '
 author: angelgolfer-ms
-ms.openlocfilehash: 6f6a25f940429637e4b04f200e9a0fcee067c011
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9457aa138068b3059b1fabbd606268f6e756b94e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318910"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862772"
 ---
 # <a name="add-attachment"></a>Agregar datos adjuntos
 
@@ -52,7 +53,7 @@ POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
