@@ -2,12 +2,13 @@
 title: Tipo de recurso managedDeviceMobileAppConfiguration
 description: Una clase abstracta para la configuración de aplicaciones móviles para dispositivos inscritos.
 author: tfitzmac
-ms.openlocfilehash: a533d5d7c15a32d811a7fd23f9ab39b89db9b7da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66c0a3da5c52b58c98e42a58133d7aeb8c186656
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352041"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831482"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfiguration
 
@@ -26,13 +27,13 @@ Una clase abstracta para la configuración de aplicaciones móviles para disposi
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |targetedMobileApps|Colección string|La aplicación asociada.|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta entidad de configuración de la aplicación.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones

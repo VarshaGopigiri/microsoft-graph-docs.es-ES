@@ -2,12 +2,13 @@
 title: Obtener deviceManagementExchangeOnPremisesPolicy
 description: Leer las propiedades y las relaciones del objeto deviceManagementExchangeOnPremisesPolicy.
 author: tfitzmac
-ms.openlocfilehash: 03e7bfcb1a09fd01d83e0dabcd99e31d69537446
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a587e369fc99f1f6b3a0ec7478271e1669a19aba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832946"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Obtener deviceManagementExchangeOnPremisesPolicy
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceCompliancePolicySettingState
 description: Estados de configuración de directivas de cumplimiento del dispositivo para un dispositivo determinado.
 author: tfitzmac
-ms.openlocfilehash: 3dcd63327a3518314619cd7add6ac6f23e69396b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63c60b2d7d714f7040c894da872c017e06ad0249
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832879"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 
@@ -26,7 +27,7 @@ Estados de configuración de directivas de cumplimiento del dispositivo para un 
 |userId|Cadena|UserId|
 |userName|Cadena|UserName|
 |userEmail|Cadena|UserEmail|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadena|UserPrincipalName.|
 |orígenes|Colección [settingSource](../resources/intune-deviceconfig-settingsource.md)|Directivas colaboradoras|
 |currentValue|Cadena|Valor actual de la configuración en el dispositivo|
 

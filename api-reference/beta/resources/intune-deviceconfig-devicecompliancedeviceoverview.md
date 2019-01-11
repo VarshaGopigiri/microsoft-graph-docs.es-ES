@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceComplianceDeviceOverview
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 17e37af04c61d29938dfe0dc33f12c025973d7b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bc512ceedb6b32e8eac663859a7c5f0b47c1c2c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833253"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>Tipo de recurso deviceComplianceDeviceOverview
 
@@ -25,7 +26,7 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |pendingCount|Int32|Número de dispositivos pendientes|
 |notApplicableCount|Int32|Número de dispositivos no aplicables|
 |notApplicablePlatformCount|Int32|Número de dispositivos no aplicables debido a la plataforma de error de coincidencia y la directiva|

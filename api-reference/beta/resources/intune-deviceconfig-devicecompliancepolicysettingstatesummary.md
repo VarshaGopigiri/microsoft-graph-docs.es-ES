@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceCompliancePolicySettingStateSummary
 description: Resumen de estado de la configuración de directiva cumplimiento de dispositivo en la cuenta.
 author: tfitzmac
-ms.openlocfilehash: d070dd0021cd9529c55f6f4a31d8a61d0cb32413
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e86527327560c7683f46fe1c0888d2ff295fe86d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314955"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830033"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingStateSummary
 
@@ -28,8 +29,8 @@ Resumen de estado de la configuración de directiva cumplimiento de dispositivo 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|ajustes|String|El nombre de la clase de configuración y el nombre de propiedad.|
+|id|Cadena|Clave de la entidad.|
+|ajustes|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
 |settingName|String|Nombre de la configuración.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plataforma de configuración. Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` y `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|

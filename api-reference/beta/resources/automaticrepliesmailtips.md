@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso automaticRepliesMailTips
 description: Sugerencias de correo electrónico acerca de las respuestas automáticas que se han configurado en un buzón de correo.
-ms.openlocfilehash: 51657578474710d40cfc3feabdf41e50e7105942
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 80ecaaa9fced0bcb00494b0414a86f0a11fd8996
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833232"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>tipo de recurso automaticRepliesMailTips
 
@@ -15,7 +16,7 @@ ms.locfileid: "27090892"
 [Sugerencias de correo electrónico](../resources/mailtips.md) acerca de las respuestas automáticas que se han configurado en un buzón de correo.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:-----|:-----|:-----|
 | message | String | El mensaje de respuesta automática. |
 | messageLanguage | [localeInfo](../resources/localeinfo.md) | El idioma que se encuentra el mensaje de respuesta automática en. |

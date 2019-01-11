@@ -1,12 +1,13 @@
 ---
 title: 'driveItem: vista previa'
 description: Esta acción le permite obtener corta duración puede incrustar las direcciones URL de un elemento con el fin de representar una vista previa temporal.
-ms.openlocfilehash: 51432e53d6986e680dda8508ef0069c7713b3a9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4487e18ed1921f4164c335ba477e0ae5b74e456a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833176"
 ---
 # <a name="driveitem-preview"></a>driveItem: vista previa
 
@@ -48,13 +49,13 @@ POST /shares/{shareId}/driveItem/preview
 El cuerpo de la solicitud define las propiedades de la dirección URL puede incrustar está solicitando la aplicación.
 La solicitud debe ser un objeto JSON con las siguientes propiedades.
 
-|   Nombre      |  Tipo         | Descripción
+|   Nombre      |  Tipo         | Description
 |:------------|:--------------|:-----------------------------------------------
 | Visor de      | string        | Opcional. Aplicación de vista previa para que utilice. `onedrive` o `office`. Si es null, se seleccionará automáticamente un visor adecuado.
 | sin cromo  | boolean       | Opcional. Si `true` (valor predeterminado), la vista incrustada no incluirá todos los controles.
 | allowEdit   | boolean       | Opcional. Si `true`, se puede editar el archivo desde la interfaz de usuario incrustado.
 | page        | cadena o número | Opcional. Número de página del documento para iniciar en, si procede. Especificado como cadena para los casos de uso futuro alrededor de tipos de archivo como ZIP.
-| zoom        | n?mero        | Opcional. Aumentar nivel para iniciar en, si procede.
+| zoom        | number        | Opcional. Aumentar nivel para iniciar en, si procede.
 
 ## <a name="response"></a>Respuesta
 
@@ -68,7 +69,7 @@ La solicitud debe ser un objeto JSON con las siguientes propiedades.
 
 La respuesta será un objeto JSON que contiene las siguientes propiedades:
 
-| Nombre           | Tipo   | Descripción
+| Nombre           | Tipo   | Description
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | Dirección URL adecuada para incrustar mediante HTTP GET (IFRAME, etcetera).
 | URL para exponer        | string | Dirección URL adecuada para incrustar el uso de HTTP POST (de envío de formulario, JS, etcetera.)

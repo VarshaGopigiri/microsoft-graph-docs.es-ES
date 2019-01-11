@@ -2,12 +2,13 @@
 title: Enumerar androidLobApps
 description: Enumere las propiedades y las relaciones de los objetos androidLobApp.
 author: tfitzmac
-ms.openlocfilehash: 0fc6231d21b3a33b7fc9e4afec2b2a6bc9ee4e47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b7338dfecfacf732816af2f2b6867485930ad8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326519"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833596"
 ---
 # <a name="list-androidlobapps"></a>Enumerar androidLobApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

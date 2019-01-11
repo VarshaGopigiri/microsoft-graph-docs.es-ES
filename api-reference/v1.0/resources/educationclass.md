@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso educationClass
 description: 'Representa una clase en un centro educativo. El recurso **educationClass** corresponde al grupo de Office 365 y comparte el mismo identificador. Los alumnos son miembros normales de la clase y los profesores son propietarios y tienen los derechos adecuados. Para que las experiencias de Office funcionen correctamente, los profesores deben ser miembros de las colecciones de profesores y de miembros.  '
-ms.openlocfilehash: 4d61ca209b61b8b2b65fbe92b7ba16854e11fb37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 97cf3b63cfb25a4c50df03c9c10212bd774c8b61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031255"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831853"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -49,7 +50,7 @@ Representa una clase en un centro educativo. El recurso **educationClass** corre
 |members|Colección [educationUser](../resources/educationuser.md)| Todos los usuarios de la clase. Admite valores NULL.|
 |schools|Colección [educationSchool](../resources/educationschool.md)| Todos los centros educativos a los que está asociada la clase. Admite valores NULL.|
 |teachers|Colección [educationUser](../resources/educationuser.md)|  Todos los profesores de la clase. Admite valores NULL.|
-|grupo|[group](../resources/group.md)| El grupo de Active directory correspondiente a esta clase.|
+|grupo|[grupo](../resources/group.md)| El grupo de Active directory correspondiente a esta clase.|
 
 ## <a name="json-representation"></a>Representación JSON
 

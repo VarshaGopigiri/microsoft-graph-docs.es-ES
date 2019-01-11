@@ -1,12 +1,13 @@
 ---
 title: Delete inferenceClassificationOverride
 description: Elimina un reemplazo especificado por su identificador.
-ms.openlocfilehash: ef4ff995e0e7f4392d9ca13835976076b3fdbe59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 303593fd666d24e2d3a1b095898c9756afd850bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832896"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Delete inferenceClassificationOverride
 
@@ -29,7 +30,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

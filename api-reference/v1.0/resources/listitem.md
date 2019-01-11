@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
-ms.openlocfilehash: b7293398314ea91dcb5ac6985031f91d6531e78f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: bee264fb46e08d55893f41ae6be2a64edb06c3fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031845"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833029"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -79,7 +80,7 @@ El recurso **listItem** tiene las siguientes propiedades.
 
 Las siguientes propiedades se heredan de **[baseItem][]**.
 
-| Nombre de propiedad        | Tipo              | Descripción
+| Nombre de la propiedad        | Tipo              | Descripción
 |:---------------------|:------------------|:----------------------------------
 | id                   | string            | El identificador único del elemento. Solo lectura.
 | name                 | string            | Nombre o título del elemento.
@@ -109,7 +110,7 @@ Las siguientes propiedades se heredan de **[baseItem][]**.
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[list]: list.md
+[lista]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 

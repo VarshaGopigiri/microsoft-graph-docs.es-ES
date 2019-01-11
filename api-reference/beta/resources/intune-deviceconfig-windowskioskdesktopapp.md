@@ -2,12 +2,13 @@
 title: tipo de recurso windowsKioskDesktopApp
 description: La clase base para un tipo de aplicaciones
 author: tfitzmac
-ms.openlocfilehash: a5ef4000b66f15f5951b49a152d25df30167004d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53eb615dcd1ba2b88c6cdd4bb5a1b76b83b67eaf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830978"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>tipo de recurso windowsKioskDesktopApp
 
@@ -20,13 +21,13 @@ La clase base para un tipo de aplicaciones
 Hereda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|El tamaño del mosaico de aplicación para el diseño de inicio Inherited desde [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Los valores posibles son: `hidden`, `small`, `medium`, `wide` y `large`.|
-|name|String|Representa el nombre descriptivo de una aplicación heredada de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|name|Cadena|Representa el nombre descriptivo de una aplicación heredada de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |ruta de acceso|String|Definir la ruta de acceso de una aplicación de escritorio|
-|desktopApplicationId|String|Definir la DesktopApplicationID de la aplicación|
-|desktopApplicationLinkPath|String|Definir la DesktopApplicationLinkPath de la aplicación|
+|desktopApplicationId|Cadena|Definir la DesktopApplicationID de la aplicación|
+|desktopApplicationLinkPath|Cadena|Definir la DesktopApplicationLinkPath de la aplicación|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

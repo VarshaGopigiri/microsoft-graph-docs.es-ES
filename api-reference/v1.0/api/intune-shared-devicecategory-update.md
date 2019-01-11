@@ -2,12 +2,13 @@
 title: Actualizar deviceCategory
 description: Actualice las propiedades de un objeto deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: 73980aa4c178ff610ce44dc3b832c8c931d72740
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38377c7b92983f10ad42284b7790782cde2264fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344306"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832980"
 ---
 # <a name="update-devicecategory"></a>Actualizar deviceCategory
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceCategory](../resources/intune-shared-devicecategory.md).
@@ -47,10 +48,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
+|id|Cadena|El identificador único de la categoría de dispositivo. Solo lectura.|
 |**Incorporación de redes**|
-|displayName|String|Nombre para mostrar de la categoría de dispositivo.|
-|descripción|String|Descripción opcional de la categoría de dispositivo.|
+|displayName|Cadena|Nombre para mostrar de la categoría de dispositivo.|
+|descripción|Cadena|Descripción opcional de la categoría de dispositivo.|
 
 
 

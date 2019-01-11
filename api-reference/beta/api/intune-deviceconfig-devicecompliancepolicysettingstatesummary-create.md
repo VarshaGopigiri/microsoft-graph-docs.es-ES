@@ -2,12 +2,13 @@
 title: Crear deviceCompliancePolicySettingStateSummary
 description: Cree un objeto deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 9184e10a507b0f701b3ce9bb774725c05e82a929
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9f64cca9ca75ea8d823e7aa0adedad6d3527666
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832693"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Crear deviceCompliancePolicySettingStateSummary
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceCompliancePolicySettingStateSummary.
@@ -47,8 +48,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|ajustes|String|El nombre de la clase de configuración y el nombre de propiedad.|
+|id|Cadena|Clave de la entidad.|
+|ajustes|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
 |settingName|String|Nombre de la configuración.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plataforma de configuración. Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` y `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
