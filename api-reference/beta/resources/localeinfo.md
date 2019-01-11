@@ -1,29 +1,30 @@
 ---
 title: Tipo de recurso localeInfo
 description: Información sobre la configuración regional, como el idioma preferido y el país o región del usuario que inició sesión.
-ms.openlocfilehash: 5dae464a4931fb094ae47cce600a95d55c6c3f93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfd5b0e318a2f78d382dccd10b23da167d8b5c8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888203"
 ---
-# <a name="localeinfo-resource-type"></a><span data-ttu-id="d9b2b-103">Tipo de recurso localeInfo</span><span class="sxs-lookup"><span data-stu-id="d9b2b-103">localeInfo resource type</span></span>
+# <a name="localeinfo-resource-type"></a><span data-ttu-id="9b0fc-103">Tipo de recurso localeInfo</span><span class="sxs-lookup"><span data-stu-id="9b0fc-103">localeInfo resource type</span></span>
 
-> <span data-ttu-id="d9b2b-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="d9b2b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d9b2b-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="d9b2b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9b0fc-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="9b0fc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9b0fc-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="9b0fc-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d9b2b-106">Información sobre la configuración regional, como el idioma preferido y el país o región del usuario que inició sesión.</span><span class="sxs-lookup"><span data-stu-id="d9b2b-106">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
+<span data-ttu-id="9b0fc-106">Información sobre la configuración regional, como el idioma preferido y el país o región del usuario que inició sesión.</span><span class="sxs-lookup"><span data-stu-id="9b0fc-106">Information about the locale, including the preferred language and country/region, of the signed-in user.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="d9b2b-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="d9b2b-107">Properties</span></span>
-| <span data-ttu-id="d9b2b-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="d9b2b-108">Property</span></span>     | <span data-ttu-id="d9b2b-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="d9b2b-109">Type</span></span>   |<span data-ttu-id="d9b2b-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="d9b2b-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9b0fc-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="9b0fc-107">Properties</span></span>
+| <span data-ttu-id="9b0fc-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="9b0fc-108">Property</span></span>     | <span data-ttu-id="9b0fc-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="9b0fc-109">Type</span></span>   |<span data-ttu-id="9b0fc-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="9b0fc-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d9b2b-111">configuración regional</span><span class="sxs-lookup"><span data-stu-id="d9b2b-111">locale</span></span>|<span data-ttu-id="d9b2b-112">string</span><span class="sxs-lookup"><span data-stu-id="d9b2b-112">string</span></span>|<span data-ttu-id="d9b2b-p102">Representación de la configuración regional del usuario, que incluye el idioma preferido y el país o región del usuario. Por ejemplo, "es-es". El componente de idioma sigue códigos de dos letras, tal y como se define en [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), y el componente de país sigue códigos de dos letras, tal y como se define en [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="d9b2b-p102">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
-|<span data-ttu-id="d9b2b-116">displayName</span><span class="sxs-lookup"><span data-stu-id="d9b2b-116">displayName</span></span>|<span data-ttu-id="d9b2b-117">string</span><span class="sxs-lookup"><span data-stu-id="d9b2b-117">string</span></span>|<span data-ttu-id="d9b2b-118">Nombre que representa la configuración regional del usuario en lenguaje natural, por ejemplo, "Inglés (Estados Unidos)".</span><span class="sxs-lookup"><span data-stu-id="d9b2b-118">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
+|<span data-ttu-id="9b0fc-111">configuración regional</span><span class="sxs-lookup"><span data-stu-id="9b0fc-111">locale</span></span>|<span data-ttu-id="9b0fc-112">string</span><span class="sxs-lookup"><span data-stu-id="9b0fc-112">string</span></span>|<span data-ttu-id="9b0fc-p102">Representación de la configuración regional del usuario, que incluye el idioma preferido y el país o región del usuario. Por ejemplo, "es-es". El componente de idioma sigue códigos de dos letras, tal y como se define en [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), y el componente de país sigue códigos de dos letras, tal y como se define en [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span><span class="sxs-lookup"><span data-stu-id="9b0fc-p102">A locale representation for the user, which includes the user's preferred language and country/region. For example, "en-us". The language component follows 2-letter codes as defined in [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), and the country component follows 2-letter codes as defined in [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).</span></span>|
+|<span data-ttu-id="9b0fc-116">displayName</span><span class="sxs-lookup"><span data-stu-id="9b0fc-116">displayName</span></span>|<span data-ttu-id="9b0fc-117">string</span><span class="sxs-lookup"><span data-stu-id="9b0fc-117">string</span></span>|<span data-ttu-id="9b0fc-118">Nombre que representa la configuración regional del usuario en lenguaje natural, por ejemplo, "Inglés (Estados Unidos)".</span><span class="sxs-lookup"><span data-stu-id="9b0fc-118">A name representing the user's locale in natural language, for example, "English (United States)".</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d9b2b-119">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="d9b2b-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9b0fc-119">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="9b0fc-119">JSON representation</span></span>
 
-<span data-ttu-id="d9b2b-120">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="d9b2b-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9b0fc-120">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="9b0fc-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
