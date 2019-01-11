@@ -2,12 +2,13 @@
 title: Obtener objetos de directorio a partir de una lista de identificadores
 description: Seleccione ' opción de consulta no está disponible para esta operación.
 author: lleonard-msft
-ms.openlocfilehash: 335a6ba915e714ebbd95ba818d14043037f38050
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4c63ea85113ec54dec8e5d818c3add1005aebb19
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336291"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888063"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obtener objetos de directorio a partir de una lista de identificadores
 
@@ -41,7 +42,7 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | application/json  |
@@ -50,7 +51,7 @@ POST /directoryObjects/getByIds
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro   | Type |Descripción|
+| Parámetro   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |ids|Colección string| Una colección de identificadores para devolverles objetos. Se pueden especificar hasta 1000 identificadores. |
 |types|Colección string| Una colección de tipos de recursos que especifica el conjunto de colecciones de recursos para buscar. Si no se especifica, el valor predeterminado es [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contiene todos los tipos de recursos definidos en el directorio. Cualquier objeto que se deriva de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) puede especificarse en la colección; Por ejemplo: [usuario](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta)y así sucesivamente. Para buscar referencias a un socio de [Proveedor de soluciones de nube](https://partner.microsoft.com/en-us/cloud-solution-provider) organización especificar [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Si no se especifica, el valor predeterminado es [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contiene todos los tipos de recursos definidos en el directorio, excepto para las referencias a una organización asociada de [Proveedor de soluciones de nube](https://partner.microsoft.com/en-us/cloud-solution-provider) . Los valores no distinguen mayúsculas de minúsculas.|

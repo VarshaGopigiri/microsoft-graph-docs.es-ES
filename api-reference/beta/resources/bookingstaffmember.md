@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso bookingStaffMember
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: ad8af6ead37bff4b60c5c4d5ef39ae7628cf100e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 382da1b0710b691a6563a40c03ed62397262911d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884458"
 ---
 # <a name="bookingstaffmember-resource-type"></a>tipo de recurso bookingStaffMember
 
@@ -33,14 +34,14 @@ Cuando las citas de reserva, la API de reservas tiene en cuenta la siguiente con
 |[Delete](../api/bookingstaffmember-delete.md) | Ninguno |Eliminar a un miembro del personal en el especificado [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Booleano|True significa que si el miembro del personal es un usuario de Office 365, la API de reservas debería comprobar disponibilidad de los empleados en su calendario personal en Office 365, antes de realizar una reserva. |
 |colorIndex|Int32|Identifica un color para representar al miembro del personal. El color se corresponde con la paleta de colores en la página de **Detalles del personal** en la aplicación de reservas.|
-|displayName|String|El nombre del miembro del personal, tal como se muestra a los clientes. Obligatorio.|
-|emailAddress|String|La dirección de correo electrónico del miembro del personal. Esto puede ser en el mismo arrendatario de Office 365 como la empresa o en un dominio de correo electrónico diferentes. Se puede usar esta dirección de correo electrónico si la propiedad **sendConfirmationsToOwner** está establecida en true en la directiva de programación de la empresa. Obligatorio.|
-|id|String| El identificador del miembro del personal, en un formato GUID. Solo lectura.|
-|role|string| La función del miembro del personal de la empresa. Los valores posibles son: `guest`, `administrator`, `viewer` y `externalGuest`. Obligatorio.|
+|displayName|Cadena|El nombre del miembro del personal, tal como se muestra a los clientes. Necesario.|
+|emailAddress|Cadena|La dirección de correo electrónico del miembro del personal. Esto puede ser en el mismo arrendatario de Office 365 como la empresa o en un dominio de correo electrónico diferentes. Se puede usar esta dirección de correo electrónico si la propiedad **sendConfirmationsToOwner** está establecida en true en la directiva de programación de la empresa. Necesario.|
+|id|Cadena| El identificador del miembro del personal, en un formato GUID. Solo lectura.|
+|role|string| La función del miembro del personal de la empresa. Los valores posibles son: `guest`, `administrator`, `viewer` y `externalGuest`. Necesario.|
 |useBusinessHours|Booleano|True significa que la disponibilidad de los empleados es como especificado en la propiedad **businessHours** de la empresa. False significa que la disponibilidad está determinada por el valor de la propiedad **workingHours** de los empleados.|
 |workingHours|colección de [bookingWorkHours](bookingworkhours.md)|El intervalo de horas de cada día de la semana en los que el miembro del personal está disponible para reserva. De forma predeterminada, se inicializan para ser la misma que la propiedad **businessHours** de la empresa.|
 

@@ -1,12 +1,13 @@
 ---
 title: Actualizar governanceRoleSetting
 description: Actualizar las propiedades de governanceRoleSetting.
-ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: e76d7955576d9d514a70b52b31f4d034362aac1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191119"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874910"
 ---
 # <a name="update-governancerolesetting"></a>Actualizar governanceRoleSetting
 
@@ -40,7 +41,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporciona los valores para [governanceRuleSettings](../resources/governancerulesetting.md) que necesitan actualizarse. 
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|La configuración de la regla que se evalúa cuando un administrador intenta agregar una asignación de rol aptos.|
 |adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|La configuración de la regla que se evalúa cuando un administrador intenta agregar una asignación de rol miembro directo.|

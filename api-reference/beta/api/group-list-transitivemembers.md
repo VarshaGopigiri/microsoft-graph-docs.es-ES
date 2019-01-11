@@ -1,12 +1,13 @@
 ---
 title: Lista grupo transitivas (miembros de)
 description: Obtener una lista de los miembros del grupo. Un grupo puede tener los usuarios, contactos, dispositivos, entidades de seguridad de servicio y otros grupos como miembros. Esta operación es transitiva y también devolverá una lista plana de todos los miembros anidados.
-ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: a89894bf17d12f7cd23350f466e9e1272fa0cb6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892221"
 ---
 # <a name="list-group-transitive-members"></a>Lista grupo transitivas (miembros de)
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](/graph/query-paramete
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

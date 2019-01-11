@@ -2,12 +2,13 @@
 title: 'ChartCollection: add'
 description: Crea un nuevo gráfico.
 author: lumine2008
-ms.openlocfilehash: 704afc9890e3921c69cdd7b746c0e362c4627511
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 51ad28568abe7445a85f813698736130f04ac48e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892424"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/charts/add
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |type|string|Representa el tipo de un gráfico.  Valores posibles: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
 |sourceData|string|Objeto Range correspondiente a los datos de origen.|

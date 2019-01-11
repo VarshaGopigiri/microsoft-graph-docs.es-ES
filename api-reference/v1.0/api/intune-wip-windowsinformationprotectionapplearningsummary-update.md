@@ -2,12 +2,13 @@
 title: Actualizar windowsInformationProtectionAppLearningSummary
 description: Actualice las propiedades de un objeto windowsInformationProtectionAppLearningSummary.
 author: tfitzmac
-ms.openlocfilehash: 92302f282987a4cc6c56fbf3347e419696f58ee4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 052a18270aab27603969d8abaeec88f86f0bc5e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882911"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Actualizar windowsInformationProtectionAppLearningSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).

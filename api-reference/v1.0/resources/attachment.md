@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso attachment
 description: Puede agregar contenido relacionado a un evento
-ms.openlocfilehash: 418d8d4e60d12fed5a54f994e14e996c65731926
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 284895871a0c6a80140ff248045b89d2de104c20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892333"
 ---
 # <a name="attachment-resource-type"></a>Tipo de recurso attachment
 
@@ -41,7 +42,7 @@ A continuación se muestran las propiedades base de cualquier recurso de datos a
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |contentType|String|El tipo MIME.|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |isInline|Boolean|`true` si los datos adjuntos son datos adjuntos en línea; de lo contrario, `false`.|
 |lastModifiedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |name|String|El nombre de archivo de los datos adjuntos.|

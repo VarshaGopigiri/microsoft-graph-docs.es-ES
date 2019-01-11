@@ -2,12 +2,13 @@
 title: tipo enum de habilitación
 description: 'Valores utilizados para indicar el estado de un dispositivo. '
 author: tfitzmac
-ms.openlocfilehash: 5b1d494fd116eab437b4654d396b029e1384a817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c77da7026640e9ad0a6f6f08f077d509cb411f22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888259"
 ---
 # <a name="enablement-enum-type"></a>tipo enum de habilitación
 
@@ -20,7 +21,7 @@ Valores utilizados para indicar el estado de un dispositivo.
 Tenga en cuenta que hay una diferencia entre deshabilitado y no está definida.
 
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|Valor predeterminado de dispositivo, sin intención.|
 |enabled|1|Habilita a la configuración en el dispositivo.|

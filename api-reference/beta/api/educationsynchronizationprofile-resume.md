@@ -2,12 +2,13 @@
 title: Reanudar la sincronización en un educationSynchronizationProfile
 description: Reanudar la sincronización de un perfil de sincronización de datos de school específicos en el inquilino.
 author: mmast-msft
-ms.openlocfilehash: fd148db59d34f6455ba01e721453972f9cf65be4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c68fb6d042d92fd0f1334dc498b175c27cbc4ced
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894211"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Reanudar la sincronización en un educationSynchronizationProfile
 
@@ -31,7 +32,7 @@ POST /synchronizationProfiles/{id}/resume
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 

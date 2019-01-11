@@ -2,12 +2,13 @@
 title: Actualizar deviceManagementExchangeOnPremisesPolicy
 description: Actualizar las propiedades de un objeto deviceManagementExchangeOnPremisesPolicy.
 author: tfitzmac
-ms.openlocfilehash: 260f20fd73320da901eedd1b95ff9b670f78e001
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cd001f6935836537fe06bd44af20ca9e6a6aa7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873972"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>Actualizar deviceManagementExchangeOnPremisesPolicy
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) .
@@ -48,7 +49,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |notificationContent|Binario|Texto de notificación que se van a enviar a los usuarios en cuarentena por esta directiva. Se trata de una matriz de bytes codificada con UTF8 HTML.|
 |defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Estado de acceso predeterminado en Exchange. Esta regla se aplica globalmente a toda la organización de Exchange. Los valores posibles son: `none`, `allow`, `block` y `quarantine`.|
 |accessRules|colección de [deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)|La lista de acceso de los dispositivos de reglas en Exchange. Las reglas de acceso se aplican globalmente a toda la organización de Exchange|

@@ -2,12 +2,13 @@
 title: tipo de recurso alertTrigger
 description: Contiene información acerca de las propiedades que desencadena una detección (existen propiedades de la entidad de alerta).
 author: Preetikr
-ms.openlocfilehash: f0888e6caf78d806909f818a8b72fb21320e7796
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dc8bb2b18380da50134aa67e742da89dea3c057
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894344"
 ---
 # <a name="alerttrigger-resource-type"></a>tipo de recurso alertTrigger
 
@@ -17,8 +18,8 @@ Contiene información acerca de las propiedades que desencadena una detección (
 
 | Propiedad   | Tipo|Descripción|
 |:---------------|:--------|:----------|
-|name|String|Nombre de la propiedad que actúa como un desencadenador de detección.|
-|type|String|Tipo de la propiedad en el par de clave: valor de interpretación. Por ejemplo, String, Boolean, etcetera.|
+|name|Cadena|Nombre de la propiedad que actúa como un desencadenador de detección.|
+|type|Cadena|Tipo de la propiedad en el par de clave: valor de interpretación. Por ejemplo, String, Boolean, etcetera.|
 |valor|String|Valor de la propiedad que actúa como un desencadenador de detección.|
 
 ## <a name="json-representation"></a>Representación JSON

@@ -2,12 +2,13 @@
 title: tipo de recurso educationSynchronizationProfile
 description: Representa un conjunto de configuraciones que se usa para sincronizar la información de la lista de participantes desde un directorio de origen para Azure Active Directory (AD Azure) y entidades de educación. Este recurso proporciona una representación mediante programación utilizada en la sincronización de datos de School.
 author: mmast-msft
-ms.openlocfilehash: 43cf3ebd882c1e2dd86ada5621abbcd28b0e84c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ed8cf39ff8ccd2b8cb4c5b5e31350fec6202d01
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363742"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882925"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso educationSynchronizationProfile
 
@@ -33,7 +34,7 @@ Representa un conjunto de configuraciones que se usa para sincronizar la informa
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:-|:-|:-|
 | **displayName** | string |  Nombre del perfil de configuración para la sincronización de identidades.         |
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  El proveedor de datos utilizado para el perfil.         |
@@ -43,7 +44,7 @@ Representa un conjunto de configuraciones que se usa para sincronizar la informa
 
 ## <a name="relationships"></a>Relaciones
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:-|:-|:-|
 | **errors** | colección de [educationSynchronizationError](educationsynchronizationerror.md)| Todos los errores asociados a este perfil de sincronización. |
 | **profileStatus** | [educationSynchronizationProfileStatus](educationsynchronizationprofilestatus.md) | El estado de sincronización. |

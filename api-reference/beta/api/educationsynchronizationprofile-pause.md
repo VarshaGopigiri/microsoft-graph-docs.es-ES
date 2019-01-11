@@ -2,12 +2,13 @@
 title: Sincronización de pausa en un educationSynchronizationProfile
 description: Detener la sincronización de un perfil de sincronización de datos de school específicos en el inquilino.
 author: mmast-msft
-ms.openlocfilehash: 14e94cf4a083e8f37b03f96b287a75aa40b7afed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97ded3f4fdf30e6bc56345abcc71f3466ef4ff61
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892325"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Sincronización de pausa en un educationSynchronizationProfile
 
@@ -31,7 +32,7 @@ POST /synchronizationProfiles/{id}/pause
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 

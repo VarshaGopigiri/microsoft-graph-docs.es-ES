@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso page
 description: Una página de un bloc de notas de OneNote.
-ms.openlocfilehash: 19380f06ad4706f623397681a020054e65eba029
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b7c92aaae401e022a79f7c3b72cb15b3093d0b7d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031917"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879712"
 ---
 # <a name="page-resource-type"></a>Tipo de recurso page
 
@@ -47,16 +48,16 @@ Aquí tiene una representación JSON del recurso.
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |content|Secuencia|Contenido HTML de la página.|
-|contentUrl|String|Dirección URL del contenido HTML de la página.  Solo lectura.|
-|createdByAppId|String|Identificador único de la aplicación que creó la página. Solo lectura.|
+|contentUrl|Cadena|Dirección URL del contenido HTML de la página.  Solo lectura.|
+|createdByAppId|Cadena|Identificador único de la aplicación que creó la página. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó la página. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|String|Identificador único de la página.  Solo lectura.|
+|id|Cadena|Identificador único de la página.  Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó la página por última vez. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |nivel|Int32|Nivel de sangría de la página. Solo lectura.|
 |vínculos|[PageLinks](pagelinks.md)|Vínculos para abrir la página. El vínculo `oneNoteClientURL` abre la página en el cliente nativo de OneNote si está instalado. El vínculo `oneNoteWebUrl` abre la página en OneNote Online. Solo lectura.|
 |order|Int32|El orden de la página dentro de su sección primaria. Solo lectura.|
-|self|String|El punto de conexión donde puede obtener información detallada sobre la página. Solo lectura.|
-|title|String|Título de la página. |
+|self|Cadena|El punto de conexión donde puede obtener información detallada sobre la página. Solo lectura.|
+|title|Cadena|Título de la página. |
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

@@ -1,12 +1,13 @@
 ---
 title: Obtener configuración del buzón del usuario
 description: 'Obtener mailboxSettings del usuario. Esto incluye la configuración de respuestas automáticas (informar a las personas automáticamente al '
-ms.openlocfilehash: fae1bb16ec533abf7f29d0aadc0f66ba33f5ec25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d1e2ce16d82e89e701bbe90386c28b76d1607c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880181"
 ---
 # <a name="get-user-mailbox-settings"></a>Obtener configuración del buzón del usuario
 
@@ -55,7 +56,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

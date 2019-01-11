@@ -1,12 +1,13 @@
 ---
 title: Activar directoryRole
 description: Active un rol de directorio. Para leer un rol de directorio o actualizar sus miembros, debe activarse primero en el inquilino. Solo se activan de manera predeterminada los administradores de la empresa y los roles del directorio de usuarios implícitos. Para acceder y asignar miembros a otro rol de directorio, primero debe activarlo con la plantilla de rol de directorio correspondiente (directoryRoleTemplate).
-ms.openlocfilehash: 2d2f51aab33520c95bda88eab8f98af12af36083
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9e3e962de4e25422cbf35f9efa8a83499cfe81bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031580"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885151"
 ---
 # <a name="activate-directoryrole"></a>Activar directoryRole
 
@@ -30,7 +31,7 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de solicitud
@@ -40,7 +41,7 @@ En la tabla siguiente, se muestran las propiedades necesarias al activar un rol 
 
 |Parámetro | Tipo | Descripción|
 |:---------|:---------|:---------|
-|roleTemplateId | string | Obligatorio. El identificador de [directoryRoleTemplate](../resources/directoryroletemplate.md) que se basa el rol. Esta es la única propiedad que se puede especificar en la solicitud.|
+|roleTemplateId | string | Necesario. El identificador de [directoryRoleTemplate](../resources/directoryroletemplate.md) que se basa el rol. Esta es la única propiedad que se puede especificar en la solicitud.|
 
 ## <a name="response"></a>Respuesta
 

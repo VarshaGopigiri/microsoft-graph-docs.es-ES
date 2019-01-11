@@ -2,12 +2,13 @@
 title: Función getManagedAppDiagnosticStatuses
 description: Obtiene estados de validación de diagnósticos de un usuario determinado.
 author: tfitzmac
-ms.openlocfilehash: 7318556fd6a87f9f71e5f0a68490a0293182c60d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af90cc194dc1e9c1a954a090c748ef679248d9d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888588"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>Función getManagedAppDiagnosticStatuses
 
@@ -37,7 +38,7 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

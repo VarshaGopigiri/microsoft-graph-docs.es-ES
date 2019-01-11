@@ -2,12 +2,13 @@
 title: Crear deviceComplianceUserStatus
 description: Cree un objeto deviceComplianceUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 417c6a2e87e274119fdbb480a7a2c8204dc81d3f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b421e9d53d38c4b9c35c92d9c2eeaf8db1de9afe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873867"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Crear deviceComplianceUserStatus
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceComplianceUserStatus.
@@ -47,12 +48,12 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |userDisplayName|String|Nombre de usuario de DevicePolicyStatus.|
 |devicesCount|Int32|Número de dispositivos para dicho usuario.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadena|UserPrincipalName.|
 
 
 

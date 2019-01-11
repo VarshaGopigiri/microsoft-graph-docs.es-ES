@@ -2,12 +2,13 @@
 title: Crear managedDeviceMobileAppConfigurationUserStatus
 description: Cree un objeto managedDeviceMobileAppConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 180e664df4b3e946415b6b4cf0dde09d9b82a659
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1608345f2549da48488bc16f2e5417feb2a4107
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869807"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Crear managedDeviceMobileAppConfigurationUserStatus
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto managedDeviceMobileAppConfigurationUserStatus.
@@ -45,12 +46,12 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |userDisplayName|String|Nombre de usuario de DevicePolicyStatus.|
 |devicesCount|Int32|Número de dispositivos para dicho usuario.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadena|UserPrincipalName.|
 
 
 

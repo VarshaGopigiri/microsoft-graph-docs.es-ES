@@ -2,12 +2,13 @@
 title: tipo de recurso mobileAppInstallStatus
 description: Contiene las propiedades para el estado de instalación de una aplicación para un dispositivo móvil.
 author: tfitzmac
-ms.openlocfilehash: ba2c0026d54235683a2f5d5b26c19b88ea11a9d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a81113001a1ff06b530b2b9249ee705b9cd5ac40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320891"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880503"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>tipo de recurso mobileAppInstallStatus
 
@@ -28,22 +29,22 @@ Contiene las propiedades para el estado de instalación de una aplicación para 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|deviceName|String|Nombre de dispositivo|
-|deviceId|String|Identificador de dispositivo|
+|id|Cadena|Clave de la entidad.|
+|deviceName|Cadena|Nombre de dispositivo|
+|deviceId|Cadena|Identificador de dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha hora de última sincronización|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|El estado de instalación de la aplicación. Los valores posibles son: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` y `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|El estado de instalación de la aplicación. Los valores posibles son: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown` y `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Detalle de estado de instalación de la aplicación. Los valores posibles son: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet` y `processorArchitectureNotApplicable`.|
 |errorCode|Int32|El error de código para la instalación o desinstalación de errores.|
-|osVersion|String|Versión del sistema operativo|
+|osVersion|Cadena|Versión del sistema operativo|
 |osDescription|String|Descripción del sistema operativo|
-|userName|String|Nombre de usuario del dispositivo|
-|userPrincipalName|String|Nombre principal de usuario|
-|displayVersion|String|Versión legible humano de la aplicación|
+|userName|Cadena|Nombre de usuario del dispositivo|
+|userPrincipalName|Cadena|Nombre principal de usuario|
+|displayVersion|Cadena|Versión legible humano de la aplicación|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |aplicación|[mobileApp](../resources/intune-apps-mobileapp.md)|El vínculo de navegación a la aplicación móvil.|
 

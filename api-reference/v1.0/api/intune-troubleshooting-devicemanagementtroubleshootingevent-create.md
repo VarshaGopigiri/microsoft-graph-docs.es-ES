@@ -2,12 +2,13 @@
 title: Crear deviceManagementTroubleshootingEvent
 description: Cree un objeto deviceManagementTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: a50e3a58ae9157dabe11e0268232714bea519b7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf620535aa8522429e17ee3a8af0bbfc487d3afe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343123"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884822"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Crear deviceManagementTroubleshootingEvent
 
@@ -36,7 +37,7 @@ POST /deviceManagement/troubleshootingEvents
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceManagementTroubleshootingEvent.
@@ -45,9 +46,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID para el objeto|
+|id|Cadena|UUID para el objeto|
 |eventDateTime|DateTimeOffset|Hora en que ocurrió el evento.|
-|correlationId|String|Id. utilizado para rastrear el error en el servicio.|
+|correlationId|Cadena|Id. utilizado para rastrear el error en el servicio.|
 
 
 

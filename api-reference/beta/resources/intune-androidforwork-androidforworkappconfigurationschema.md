@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso androidForWorkAppConfigurationSchema
 description: Esquema que describe la configuración personalizada de una aplicación de Android for Work.
-ms.openlocfilehash: f555c7e1b9c62024531f4c4fc57a3fd3df3336fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fecb4c3983254643704e6c5966212272f8f1d65e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882897"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchema
 

@@ -2,12 +2,13 @@
 title: Crear sección
 description: Crear un nuevo onenoteSection en el Bloc de notas especificada.
 author: Jewan-microsoft
-ms.openlocfilehash: 764102e845329f8ce4f6eb8cfe8732e6d5e54c9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b39ae58dd67e7eaa666845b108632eea4aa3ac57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336977"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882288"
 ---
 # <a name="create-section"></a>Crear sección
 
@@ -30,7 +31,7 @@ POST /groups/{id}/onenote/notebooks/{id}/sections
 POST /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |

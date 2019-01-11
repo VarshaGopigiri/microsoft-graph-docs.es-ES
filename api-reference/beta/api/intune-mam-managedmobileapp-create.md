@@ -2,12 +2,13 @@
 title: Crear managedMobileApp
 description: Cree un objeto managedMobileApp.
 author: tfitzmac
-ms.openlocfilehash: 07db13e6f38039c153eed44f401f3e2d846840ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e94b95e4dfea69aafdd426fd4c9a5deca676ce42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881105"
 ---
 # <a name="create-managedmobileapp"></a>Crear managedMobileApp
 
@@ -41,7 +42,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto managedMobileApp.
@@ -51,8 +52,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|El identificador de una aplicación con el tipo de sistema operativo.|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 
 

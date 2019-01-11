@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso oAuth2PermissionGrant
 description: Representa los ámbitos de OAuth 2.0 (delegado permisos) que se hayan concedido a una aplicación (representada por una entidad de seguridad de servicio) como parte del proceso de consentimiento de usuario o un administrador.
-ms.openlocfilehash: 8fc5154ddba1b78976dc3e24c6712f9fc8944f43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 835e4a2c1a8d19c9c21e706adbf2f10a6a505bb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884451"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso oAuth2PermissionGrant
 
@@ -40,13 +41,13 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|clientId|String| El identificador de la entidad de seguridad de servicio concedido da su consentimiento para suplantar al usuario al obtener acceso a los recursos (representado por la propiedad resourceId). |
-|consentType|String| Indica si su consentimiento le ha proporcionado por el administrador (en nombre de la organización) o de forma individual. Los valores posibles son *AllPrincipals* o *entidad de seguridad*. |
+|clientId|Cadena| El identificador de la entidad de seguridad de servicio concedido da su consentimiento para suplantar al usuario al obtener acceso a los recursos (representado por la propiedad resourceId). |
+|consentType|Cadena| Indica si su consentimiento le ha proporcionado por el administrador (en nombre de la organización) o de forma individual. Los valores posibles son *AllPrincipals* o *entidad de seguridad*. |
 |expiryTime|DateTimeOffset| Actualmente, se ignora el valor de tiempo de expiración. |
-|id|String| Identificador único. Solo lectura.|
-|principalId|String| Si consentType es *AllPrincipals* este valor es null, y el consentimiento se aplica a todos los usuarios de la organización. Si consentType es *Principal*, esta propiedad especifica el identificador del usuario que concede el consentimiento y se aplica únicamente para ese usuario. |
+|id|Cadena| Identificador único. Solo lectura.|
+|principalId|Cadena| Si consentType es *AllPrincipals* este valor es null, y el consentimiento se aplica a todos los usuarios de la organización. Si consentType es *Principal*, esta propiedad especifica el identificador del usuario que concede el consentimiento y se aplica únicamente para ese usuario. |
 |resourceId|cadena| Especifica el identificador de la entidad de seguridad de servicio de recurso al que se ha concedido acceso. |
 |scope|String| Especifica el valor de la notificación de [ámbito](/graph/permissions-reference) que se debe esperar a que la aplicación de recursos en el token de acceso de OAuth 2.0. Por ejemplo, *User.Read* |
 |startTime|DateTimeOffset| Actualmente, se ignora el valor de tiempo de inicio. |

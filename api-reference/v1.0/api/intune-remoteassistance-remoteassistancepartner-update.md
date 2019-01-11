@@ -2,12 +2,13 @@
 title: Actualizar remoteAssistancePartner
 description: Actualice las propiedades de un objeto remoteAssistancePartner.
 author: tfitzmac
-ms.openlocfilehash: 72896212da0be4fe3640d85c91c072fa89e77fed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 16b7c3f9d3125ca688f08faa22772c4335e02a8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871403"
 ---
 # <a name="update-remoteassistancepartner"></a>Actualizar remoteAssistancePartner
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).

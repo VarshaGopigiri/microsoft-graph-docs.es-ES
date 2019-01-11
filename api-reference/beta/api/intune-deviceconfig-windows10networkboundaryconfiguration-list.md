@@ -2,12 +2,13 @@
 title: Lista windows10NetworkBoundaryConfigurations
 description: Propiedades de la lista y relaciones de los objetos windows10NetworkBoundaryConfiguration.
 author: tfitzmac
-ms.openlocfilehash: b00f450e05d99c2fad5943093622762fc5b24772
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1bdc97e04db44abe4edea126a00e3ae247bf5b8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355541"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873540"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>Lista windows10NetworkBoundaryConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

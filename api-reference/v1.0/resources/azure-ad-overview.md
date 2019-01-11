@@ -1,12 +1,13 @@
 ---
 title: Trabajar con recursos de Azure Active Directory en Microsoft Graph
 description: 'Con Microsoft Graph, puede obtener acceso a recursos de Azure Active Directory (Azure AD) para habilitar escenarios, como administrar roles de administrador (directorio), invitar a usuarios externos a una organización y, si es un Proveedor de soluciones en la nube (CSP), administrar los datos de sus clientes. Microsoft Graph también ofrece métodos que las aplicaciones pueden usar para, por ejemplo, descubrir información sobre las pertenencias a roles y grupos transitivos de los usuarios. '
-ms.openlocfilehash: 737415f04bea5e149e1b3d9ba6d41c195cfb25fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5269725a130a2aada958ec5998f21bc6489696b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894337"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabajar con recursos de Azure Active Directory en Microsoft Graph
 
@@ -15,7 +16,7 @@ Con Microsoft Graph, puede obtener acceso a recursos de [Azure Active Directory 
 > **Nota**: Algunos recursos de Azure AD se documentan en otras secciones de la referencia de la API. Para obtener más información, vea [Usuarios](users.md) y [Grupos](group.md).
 
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Autorización
  
 Para llamar a las API de Microsoft Graph en recursos de Azure AD, la aplicación necesitará los permisos adecuados. Muchas de las API expuestas en recursos de Azure AD necesitan uno de los [permisos de _directorio_](/graph/permissions-reference#directory-permissions). Los permisos de directorio tienen privilegios muy elevados y siempre necesitan el consentimiento del administrador. 
 

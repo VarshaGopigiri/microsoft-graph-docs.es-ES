@@ -2,12 +2,13 @@
 title: Actualizar deviceConfigurationAssignment
 description: Actualice las propiedades de un objeto deviceConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 51b0269a72dbded4f8bdd157683bc321b55874d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c39a50f5cfba40cf4b41f654e75cd84e69b7f8cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894358"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Actualizar deviceConfigurationAssignment
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).

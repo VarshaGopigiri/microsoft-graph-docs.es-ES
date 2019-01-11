@@ -2,12 +2,13 @@
 title: Tipo de recurso remoteAssistancePartner
 description: Los recursos remoteAssistPartner representan los metadatos y el estado de un servicio de partner de asistencia remota específico.
 author: tfitzmac
-ms.openlocfilehash: cb4dee80995f00d82cb1ba95f40dd31b1b82f48c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da82d42d3ddfe673b912477aaacd034380c96be3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889407"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Tipo de recurso remoteAssistancePartner
 

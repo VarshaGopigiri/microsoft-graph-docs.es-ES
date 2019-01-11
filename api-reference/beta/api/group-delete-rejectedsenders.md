@@ -2,12 +2,13 @@
 title: Remove rejectedSender
 description: Quita un usuario o grupo de la lista de rejectedSenders.
 author: dkershaw10
-ms.openlocfilehash: cd84f14f15288207ff8c3362ea0295ae3eba1856
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5399caf73e089d69247ff0ab004793b778d3fb75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883562"
 ---
 # <a name="remove-rejectedsender"></a>Remove rejectedSender
 

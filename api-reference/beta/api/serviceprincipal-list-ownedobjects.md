@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipals: ownedObjects de lista'
 description: Recuperar una lista de objetos que pertenecen a la servicePrincipal.  Esto podría incluir aplicaciones o grupos.
-ms.openlocfilehash: 79ca70c5c86e535a7d8a11598509e7ebf61780a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f061a99c6389651985779ac71df2ced5a91ba527
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882869"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: ownedObjects de lista
 
@@ -34,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

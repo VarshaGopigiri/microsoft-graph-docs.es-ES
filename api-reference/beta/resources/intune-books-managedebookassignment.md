@@ -2,12 +2,13 @@
 title: Tipo de recurso managedEBookAssignment
 description: Contiene las propiedades que se usan para asignar un libro electrónico a un grupo.
 author: tfitzmac
-ms.openlocfilehash: 26694093b320be1518f92e97877a7331f3f78866
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a9ff543bf87e73a9aea02ac73b5f9ee0bf8e9c6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894351"
 ---
 # <a name="managedebookassignment-resource-type"></a>Tipo de recurso managedEBookAssignment
 
@@ -28,7 +29,7 @@ Contiene las propiedades que se usan para asignar un libro electrónico a un gru
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|El destino de la asignación para el libro electrónico.|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|El objetivo de instalación para el libro electrónico. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
 

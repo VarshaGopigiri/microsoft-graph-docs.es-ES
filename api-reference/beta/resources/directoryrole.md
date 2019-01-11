@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso directoryRole
 description: Representa un rol de Active directory de Azure AD. Las funciones de Active directory AD Azure también conocido como son *roles de administrador*. Para obtener más información acerca de las funciones de Active directory (Administrador), vea la asignación de roles de administrador en Azure AD. Con Microsoft Graph, puede asignar a usuarios a roles de Active directory para concederles los permisos de la función de destino. Para leer un rol de Active directory o actualizar a sus miembros, debe activarse en primer lugar en el inquilino. Sólo el rol de Active directory de administradores de la compañía se activa de forma predeterminada. Para activar otros roles de directorio disponible, envíe una solicitud POST con el identificador de la directoryRoleTemplate en el que se basa el rol de Active directory. Se hereda de directoryObject.
-ms.openlocfilehash: c3def9f75b62db1f07c648fed18f57f92f5c7f77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30f9b56652d3e4c7ebb1466941930cea0cf12ebf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085182"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876226"
 ---
 # <a name="directoryrole-resource-type"></a>Tipo de recurso directoryRole
 

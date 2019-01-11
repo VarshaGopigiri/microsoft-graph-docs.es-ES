@@ -1,12 +1,13 @@
 ---
 title: Actualizar governanceRoleAssignmentRequests
 description: Permiten a los administradores actualizar sus decisiones (`AdminApproved` o `AdminDenied`) en governanceRoleAssignmentRequests que se encuentran en estado de `PendingAdminDecision`.
-ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 3d68e06688922177e2a1a183a9fe4bfc6be6a91d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874938"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Actualizar governanceRoleAssignmentRequests
 
@@ -39,12 +40,12 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-|Parámetros      |Tipo                   |Obligatorio |Descripción|
+|Parámetros      |Tipo                   |Obligatorio |Description|
 |:-------------|:----------------------|:--------|:----------|
-|motivo        |String                 |✓        |El motivo por el Administrador de su decisión.|
-|toma de decisiones        |String                 |✓        |La Decisión del Administrador de la solicitud de asignación de rol. El valor debe actualizarse como `AdminApproved` o `AdminDenied`.|
+|motivo        |Cadena                 |✓        |El motivo por el Administrador de su decisión.|
+|toma de decisiones        |Cadena                 |✓        |La Decisión del Administrador de la solicitud de asignación de rol. El valor debe actualizarse como `AdminApproved` o `AdminDenied`.|
 |programación      |[governanceSchedule](../resources/governanceschedule.md)|        | La programación de la solicitud de asignación de rol. Para el estado de `AdminApproved`, es necesario.|
-|assignmentState      |String|         | Puede ser el estado de asignación y los valores `Eligible` o `Active`. Para la toma de decisiones de `AdminApproved`, es necesario. |
+|assignmentState      |Cadena|         | Puede ser el estado de asignación y los valores `Eligible` o `Active`. Para la toma de decisiones de `AdminApproved`, es necesario. |
 ### <a name="response"></a>Respuesta
 Este método sólo se puede aplicar a las solicitudes que se encuentran en estado de `PendingAdminDecision`.
 
