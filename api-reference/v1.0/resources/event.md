@@ -2,12 +2,13 @@
 title: tipo de recurso de evento
 description: Un evento de un calendario.
 author: angelgolfer-ms
-ms.openlocfilehash: 3bb597f8e8e157f0a75b2538b233ee57934827c5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: d083d860d77fe5bf777d14041de21ecc3308d838
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811742"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -58,14 +59,14 @@ Este recurso admite:
 |:---------------|:--------|:----------|
 |asistentes|Colección [attendee](attendee.md)|La colección de asistentes del evento.|
 |body|[itemBody](itembody.md)|El cuerpo del mensaje asociado al evento. Puede mostrarse en formato de texto o HTML.|
-|bodyPreview|String|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
+|bodyPreview|Cadena|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
 |categories|Colección string|Las categorías asociadas al evento.|
-|changeKey|String|Identifica la versión del objeto de evento. Cada vez que cambia el evento, cambia también ChangeKey. Esto permite que Exchange aplique los cambios a la versión correcta del objeto.|
+|changeKey|Cadena|Identifica la versión del objeto de evento. Cada vez que cambia el evento, cambia también ChangeKey. Esto permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |finalización|[dateTimeTimeZone](datetimetimezone.md)|La fecha, la hora y la zona horaria en que finaliza el evento.|
 |hasAttachments|Booleano|Se establece como true si el evento tiene datos adjuntos.|
-|iCalUId|String|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes. Solo lectura.|
-|id|String| Solo lectura.|
+|iCalUId|Cadena|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes. Solo lectura.|
+|id|Cadena| Solo lectura.|
 |importance|importance|Importancia del evento. Los valores posibles son: `low`, `normal`, `high`.|
 |isAllDay|Booleano|Se establece como true si el evento dura todo el día.|
 |isCancelled|Booleano|Se establece como true si el evento ha sido cancelado.|
@@ -74,7 +75,7 @@ Este recurso admite:
 |lastModifiedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |location|[ubicación](location.md)|La ubicación del evento.|
 |locations|Colección [location](location.md)|Ubicaciones donde se celebra el evento o en las que se asiste. Las propiedades **location** y **locations** siempre se corresponden entre sí. Si se actualiza la propiedad **location**, se eliminarían las ubicaciones anteriores de la colección **locations** y se reemplazarían por el nuevo valor de **location**. |
-|onlineMeetingUrl|String|Una dirección URL para una reunión en línea. La propiedad sólo se establece cuando el organizador especifica un evento como una reunión en línea, como una reunión de Skype. Solo lectura.|
+|onlineMeetingUrl|Cadena|Una dirección URL para una reunión en línea. La propiedad sólo se establece cuando el organizador especifica un evento como una reunión en línea, como una reunión de Skype. Solo lectura.|
 |organizador|[recipient](recipient.md)|El organizador del evento.|
 |originalEndTimeZone|Cadena|Zona horaria de finalización que se estableció cuando se creó el evento. Un valor de `tzone://Microsoft/Custom` indica que se ha establecido una zona horaria heredada en el cliente de escritorio de Outlook.|
 |originalStart|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
@@ -84,12 +85,12 @@ Este recurso admite:
 |responseRequested|Booleano|Se establece como true si el remitente quiere una respuesta cuando el evento se acepta o se rechaza.|
 |responseStatus|[responseStatus](responsestatus.md)|Indica el tipo de respuesta que se envía en respuesta a un mensaje de evento.|
 |confidencialidad|sensitivity| Los valores posibles son: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|String|El identificador para el elemento de patrón de serie periódica, si este evento es parte de una serie periódica.|
+|seriesMasterId|Cadena|El identificador para el elemento de patrón de serie periódica, si este evento es parte de una serie periódica.|
 |showAs|freeBusyStatus|El estado que se mostrará. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |inicio|[dateTimeTimeZone](datetimetimezone.md)|La fecha, la hora y la zona horaria en que comienza el evento.|
-|subject|String|El texto de la línea de asunto del evento.|
+|subject|Cadena|El texto de la línea de asunto del evento.|
 |type|eventType|El tipo de evento. Los valores posibles son: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Solo lectura.|
-|webLink|String|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
+|webLink|Cadena|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

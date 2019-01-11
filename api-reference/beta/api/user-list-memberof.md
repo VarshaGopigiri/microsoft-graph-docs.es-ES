@@ -1,12 +1,13 @@
 ---
 title: Miembro de usuario de lista
 description: Obtener grupos, roles de Active directory y unidades administrativas que el usuario es miembro directo. Esta operación no es transitiva.
-ms.openlocfilehash: 0d22189f35e41798929c10d63219a5f5688c42c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a00cba40c556aafdf22c66507f4f5d1885feae30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809978"
 ---
 # <a name="list-user-memberof"></a>Miembro de usuario de lista
 

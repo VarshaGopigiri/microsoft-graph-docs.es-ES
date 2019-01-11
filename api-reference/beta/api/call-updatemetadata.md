@@ -2,12 +2,13 @@
 title: 'llamar a: updateMetadata'
 description: Actualizar los metadatos de la aplicación asociado con una llamada.
 author: VinodRavichandran
-ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 2b736c56a7a517f0b68d656ab96933a34cf4a09d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813590"
 ---
 # <a name="call-updatemetadata"></a>llamar a: updateMetadata
 
@@ -39,10 +40,10 @@ POST /applications/{id}/calls/{id}/updateMetadata
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
-|metadatos|String|Un blob de datos proporcionados por el participante en la lista de participantes.|
-|clientContext|String|El contexto de cliente.|
+|metadatos|Cadena|Un blob de datos proporcionados por el participante en la lista de participantes.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta y un encabezado de ubicación con un uri para el [commsOperation](../resources/commsoperation.md) creado para esta solicitud.

@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentTopFailures (función)
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: dd62bffa153d56c279644eeaa99763c4220f27b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4c0c19de6d4e7694f20dff54844822e65f95fe9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816418"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>managedDeviceEnrollmentTopFailures (función)
 
@@ -39,7 +40,7 @@ GET /reports/managedDeviceEnrollmentTopFailures
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
@@ -47,7 +48,7 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|period|String|Todavía no documentado|
+|period|Cadena|Todavía no documentado|
 
 
 

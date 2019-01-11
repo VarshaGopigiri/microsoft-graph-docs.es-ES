@@ -2,12 +2,13 @@
 title: tipo de enumeración defenderPromptForSampleSubmission
 description: Valores posibles para solicitar información de usuario para el envío de ejemplos.
 author: tfitzmac
-ms.openlocfilehash: 36a9790b669c588205824be60d350d2750637b15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1419a719ea6fb3eff3ec2a5e0cdb3722173ef6cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312750"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809747"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enumeración defenderPromptForSampleSubmission
 
@@ -15,7 +16,7 @@ ms.locfileid: "27312750"
 
 Valores posibles para solicitar información de usuario para el envío de ejemplos.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |alwaysPrompt|1|Preguntar siempre.|

@@ -1,12 +1,13 @@
 ---
 title: Usar la API de gráfico de Microsoft para obtener las notificaciones de cambios
 description: La API de REST de Microsoft Graph usa un mecanismo webhook para entregar notificaciones a los clientes. Un cliente es un servicio web que configura su propia dirección URL para recibir notificaciones. Aplicaciones cliente usar notificaciones para actualizar su estado cuando se producen cambios. Para obtener más detalles, incluido cómo suscribirse a y controlar las notificaciones recibidas, vea el conjunto de seguridad de las notificaciones de los cambios en los datos de usuario.
-ms.openlocfilehash: 8be013eeee83f31a78fb5230a0de74847d8aed80
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: 9b1907d37115e21b41a9e957de9b7ae0a32fd311
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27091229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816474"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar la API de gráfico de Microsoft para obtener las notificaciones de cambios
 
@@ -26,7 +27,7 @@ Mediante la API de Microsoft Graph, una aplicación puede suscribirse a cambios 
 - Carpetas OneDrive personales de los usuarios
 - Alertas de seguridad
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 En general, las operaciones de suscripción requieren permiso de lectura en el recurso. Por ejemplo, para obtener notificaciones en mensajes, la aplicación necesita el permiso `Mail.Read`. En el artículo sobre cómo [crear suscripciones](../api/subscription-post-subscriptions.md) se muestran los permisos necesarios para cada tipo de recurso. En la siguiente tabla aparecen los tipos de permisos que la aplicación puede solicitar para usar webhooks con tipos de recurso concretos.
 

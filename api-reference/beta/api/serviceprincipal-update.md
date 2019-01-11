@@ -1,12 +1,13 @@
 ---
 title: Actualizar serviceprincipal
 description: Actualizar las propiedades del objeto serviceprincipal.
-ms.openlocfilehash: a24a8c949d48f577a3d7fe6208a1422819772801
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8d4eebe64ac9c0c658ae9c43e2e92045be67424
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813030"
 ---
 # <a name="update-serviceprincipal"></a>Actualizar serviceprincipal
 
@@ -30,7 +31,7 @@ PATCH /servicePrincipals/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
@@ -38,22 +39,22 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |accountEnabled|Booleano|                **true** si la cuenta de servicio de entidad de seguridad está habilitada; en caso contrario, **false**.            |
-|appDisplayName|String|El nombre para mostrar expuesto por la aplicación asociada.|
+|appDisplayName|Cadena|El nombre para mostrar expuesto por la aplicación asociada.|
 |appId|cadena|El identificador único para la aplicación asociada (su propiedad **appId** ).|
 |appRoleAssignmentRequired|Booleano|Especifica si un **appRoleAssignment** a un usuario o grupo es necesaria antes de Azure AD emitirá un usuario o un token de acceso a la aplicación.                            **Notas**: requiere la versión 1.5 o versiones posteriores, no acepta valores NULL.            |
 |appRoles|función de aplicación|Las funciones de aplicación expuestas por la aplicación asociada. Para obtener más información, vea la definición de la propiedad **appRoles** en la entidad de aplicación **notas**: requiere la versión 1.5 o versiones posteriores, no acepta valores NULL.            |
-|displayName|String|El nombre para mostrar para la entidad de seguridad de servicio.|
-|errorUrl|String|            |
-|página principal|String|La dirección URL a la página principal de la aplicación asociada.|
+|displayName|Cadena|El nombre para mostrar para la entidad de seguridad de servicio.|
+|errorUrl|Cadena|            |
+|página principal|Cadena|La dirección URL a la página principal de la aplicación asociada.|
 |keyCredentials|keyCredential|La colección de credenciales claves asociado con el servicio de entidad de seguridad.                            **Notas**: No admite valores NULL.            |
-|logoutUrl|String| Especifica la dirección URL que usará el servicio de autorización de Microsoft para cerrar sesión de un usuario mediante [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back canal](https://openid.net/specs/openid-connect-backchannel-1_0.html) o protocolos de cierre de sesión SAML. |
+|logoutUrl|Cadena| Especifica la dirección URL que usará el servicio de autorización de Microsoft para cerrar sesión de un usuario mediante [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back canal](https://openid.net/specs/openid-connect-backchannel-1_0.html) o protocolos de cierre de sesión SAML. |
 |oauth2Permissions|oAuth2Permission|Los permisos de OAuth 2.0 expuestos por la aplicación asociada. Para obtener más información, vea la definición de la propiedad **oauth2Permissions** en la entidad de la aplicación.                            **Notas**: requiere la versión 1.5 o versiones posteriores, no acepta valores NULL.            |
 |passwordCredentials|passwordCredential|La colección de credenciales de contraseña asociada con la entidad de seguridad de servicio.                            **Notas**: No admite valores NULL.            |
-|preferredTokenSigningKeyThumbprint|String|Reservado sólo para uso interno. No escribir ni en caso contrario, se basan en esta propiedad. Puede quitarse en versiones futuras.                            **Notas**: requiere la versión 1.5 o más reciente.            |
+|preferredTokenSigningKeyThumbprint|Cadena|Reservado sólo para uso interno. No escribir ni en caso contrario, se basan en esta propiedad. Puede quitarse en versiones futuras.                            **Notas**: requiere la versión 1.5 o más reciente.            |
 |publisherName|cadena|El nombre para mostrar del inquilino en el que se especifica la aplicación asociada.|
-|replyUrls|String|Las direcciones URL que los tokens de usuario se envían a para el inicio de sesión con la aplicación asociada o el redireccionamiento de códigos de autorización de los URI que OAuth 2.0 y tokens de acceso se envían a para la aplicación asociada.                            **Notas**: No admite valores NULL.            |
-|samlMetadataUrl|String|            |
-|servicePrincipalNames|String|El URI que identifica la aplicación asociada. Para obtener más información, vea [objetos de la aplicación y los objetos a principales de servicio](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Notas**: no acepta valores NULL, el operador **any** es necesario para las expresiones de filtro en las propiedades multivalor; Para obtener más información, vea [admiten consultas, filtros y las opciones de paginación](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|replyUrls|Cadena|Las direcciones URL que los tokens de usuario se envían a para el inicio de sesión con la aplicación asociada o el redireccionamiento de códigos de autorización de los URI que OAuth 2.0 y tokens de acceso se envían a para la aplicación asociada.                            **Notas**: No admite valores NULL.            |
+|samlMetadataUrl|Cadena|            |
+|servicePrincipalNames|Cadena|El URI que identifica la aplicación asociada. Para obtener más información, vea [objetos de la aplicación y los objetos a principales de servicio](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Notas**: no acepta valores NULL, el operador **any** es necesario para las expresiones de filtro en las propiedades multivalor; Para obtener más información, vea [admiten consultas, filtros y las opciones de paginación](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
 |de cierre|String|                                        **Notas**: no admite valores NULL.            |
 
 ## <a name="response"></a>Respuesta

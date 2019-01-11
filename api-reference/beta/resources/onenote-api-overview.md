@@ -1,12 +1,13 @@
 ---
 title: Usar la API de REST de OneNote
 description: 'Microsoft Graph permite a la aplicación obtener autorización para obtener acceso a blocs de notas OneNote de un usuario, en las secciones y páginas en una cuenta personal o la organización. Con la correspondiente delegada o permisos de aplicación, la aplicación pueden tener acceso a los datos de OneNote de cualquier usuario en un inquilino o el usuario ha iniciado sesión. '
-ms.openlocfilehash: 091dd18cbcfae2a4058aff71df14ed7aa5fd7a03
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 25817280fff570f0d87722fc8f3fadc9cf1c24d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815242"
 ---
 # <a name="use-the-onenote-rest-api"></a>Usar la API de REST de OneNote
 

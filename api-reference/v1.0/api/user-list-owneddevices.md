@@ -2,12 +2,13 @@
 title: List ownedDevices
 description: Obtiene la lista de dispositivos que son propiedad del usuario.
 author: dkershaw10
-ms.openlocfilehash: bae014e3916547cdd2782a7ec267df14eeda822d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0354dee0c08d93e4121a87a47ebd49324ecc98a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811406"
 ---
 # <a name="list-owneddevices"></a>List ownedDevices
 

@@ -2,12 +2,13 @@
 title: Eliminar deviceComplianceActionItem
 description: Elimina un deviceComplianceActionItem.
 author: tfitzmac
-ms.openlocfilehash: af7b2a6d8be6260a5244feef616452e2926045ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8646ac9626e31c5b95874d64f3da1ae6a36a1225
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810580"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>Eliminar deviceComplianceActionItem
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sch
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

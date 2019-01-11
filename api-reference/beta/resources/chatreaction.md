@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso chatMessageReaction
 description: 'Representa una reacción a una entidad de chatMessage. '
-ms.openlocfilehash: 1ad1f7948405a8891ec9aa13065b71108e9c47c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5020653ef02c1604aece46f3ff2c7ea1c82a75ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090853"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810069"
 ---
 # <a name="chatmessagereaction-resource-type"></a>tipo de recurso chatMessageReaction
 
@@ -15,7 +16,7 @@ Representa una reacción a una entidad de [chatMessage](chatmessage.md) .
 Una entidad de tipo `chatMessageReaction` se devuelve como parte de los [mensajes del canal de obtener](../api/channel-get-message.md) API, como parte de la entidad [chatMessage](chatmessage.md) .
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |reactionType|string| El tipo de reacción. Los valores planeados incluyen: <br><ul><li>Al igual que - como un mensaje, contenido está en blanco en este caso.</li><li>Emoji - Emoji reacción. Contenido se establece en el valor de la emoji unicode.</li><li>Etiqueta - contenido está establecido en la cadena de la etiqueta.</li></ul>|
 |createdDateTime|dateTimeOffset|Marca de tiempo UTC del mensaje raíz en formato ISO 8601.|

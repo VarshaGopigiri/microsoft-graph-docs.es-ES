@@ -2,12 +2,13 @@
 title: tipo de recurso dataSharingConsent
 description: Uso compartido de datos consienten de información.
 author: tfitzmac
-ms.openlocfilehash: 250ad388a5c619a6fd2753d172734145ea720776
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e199674606b677e11ac610219b16ab8d5dbf2015
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816369"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso dataSharingConsent
 
@@ -29,13 +30,13 @@ Uso compartido de datos consienten de información.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El consentimiento de uso compartido de datos Id.|
-|nombreDescriptivoDeServicio|String|El nombre para mostrar del flujo de trabajo del servicio|
-|termsUrl|String|El TermsUrl para los datos de uso compartido de consentimiento|
-|concedido|Boolean|El estado de concedidos para los datos de uso compartido de consentimiento|
+|id|Cadena|El consentimiento de uso compartido de datos Id.|
+|nombreDescriptivoDeServicio|Cadena|El nombre para mostrar del flujo de trabajo del servicio|
+|termsUrl|Cadena|El TermsUrl para los datos de uso compartido de consentimiento|
+|concedido|Booleano|El estado de concedidos para los datos de uso compartido de consentimiento|
 |grantDateTime|DateTimeOffset|Esta cuenta se le conceden el consentimiento de tiempo|
-|grantedByUpn|String|El Upn del usuario que concederse el consentimiento para esta cuenta|
-|grantedByUserId|String|El identificador de usuario del usuario que concederse el consentimiento para esta cuenta|
+|grantedByUpn|Cadena|El Upn del usuario que concederse el consentimiento para esta cuenta|
+|grantedByUserId|Cadena|El identificador de usuario del usuario que concederse el consentimiento para esta cuenta|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

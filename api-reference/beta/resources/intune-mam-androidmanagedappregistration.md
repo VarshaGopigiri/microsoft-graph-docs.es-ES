@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso androidManagedAppRegistration
 description: Representa los detalles de sincronización de una aplicación para Android, con capacidades de administración, para un usuario específico.
-ms.openlocfilehash: b47b331e8bc5180067723507156c952b6ed0c006
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4e922e2eb9cd6c3dee0fe0f4de5bebd58f6366a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086809"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809614"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>Tipo de recurso androidManagedAppRegistration
 
@@ -31,21 +32,21 @@ Hereda de [managedAppRegistration](../resources/intune-mam-managedappregistratio
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Fecha y hora de creación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización de la aplicación con el servicio de administración. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|applicationVersion|String|Versión de la aplicación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|managementSdkVersion|String|Versión del SDK de administración de la aplicación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|platformVersion|String|Versión del sistema operativo. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceType|String|Tipo de dispositivo host. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceTag|String|Etiqueta generada por el SDK de administración de la aplicación, que ayuda a relacionar las aplicaciones que se hospedan en el mismo dispositivo. No garantiza que las aplicaciones se relacionen en todas las condiciones. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceName|String|Nombre del dispositivo host. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|managedDeviceId|String|El identificador de dispositivo administrado del dispositivo host. Valor puede estar vacío, incluso cuando se administra el dispositivo host. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|azureADDeviceId|String|El identificador de dispositivo de Azure Active Directory del dispositivo host. Valor puede estar vacío, incluso cuando el dispositivo de host es Azure Active Directory registrada. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceModel|String|El modelo de dispositivo para el actual registro de la aplicación heredada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|entradas deviceManufacturer|String|El fabricante del dispositivo para el actual registro de la aplicación heredada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|applicationVersion|Cadena|Versión de la aplicación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|managementSdkVersion|Cadena|Versión del SDK de administración de la aplicación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|platformVersion|Cadena|Versión del sistema operativo. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceType|Cadena|Tipo de dispositivo host. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceTag|Cadena|Etiqueta generada por el SDK de administración de la aplicación, que ayuda a relacionar las aplicaciones que se hospedan en el mismo dispositivo. No garantiza que las aplicaciones se relacionen en todas las condiciones. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceName|Cadena|Nombre del dispositivo host. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|managedDeviceId|Cadena|El identificador de dispositivo administrado del dispositivo host. Valor puede estar vacío, incluso cuando se administra el dispositivo host. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|azureADDeviceId|Cadena|El identificador de dispositivo de Azure Active Directory del dispositivo host. Valor puede estar vacío, incluso cuando el dispositivo de host es Azure Active Directory registrada. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceModel|Cadena|El modelo de dispositivo para el actual registro de la aplicación heredada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|entradas deviceManufacturer|Cadena|El fabricante del dispositivo para el actual registro de la aplicación heredada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |flaggedReasons|colección de [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Cero o más razones por las que se ha marcado el registro de una aplicación. Por ejemplo, una aplicación que se ejecuta en un dispositivo liberado. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|userId|String|Identificador de usuario al que pertenece este registro de la aplicación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|userId|Cadena|Identificador de usuario al que pertenece este registro de la aplicación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Identificador del paquete de la aplicación. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|String|Clave de la entidad. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|version|String|Versión de la entidad. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|version|Cadena|Versión de la entidad. Heredado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

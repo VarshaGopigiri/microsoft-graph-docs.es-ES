@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Carga de archivos reanudable
-ms.openlocfilehash: aa62d92700ebe483fd23c7b3d7c2037c5b9950c0
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: 84c16f83113452d920c6c2f13a0e0f37577aa0f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812092"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Cargar archivos de gran tamaño con una sesión de carga
 
@@ -81,9 +82,9 @@ Por ejemplo, para controlar el comportamiento si ya existe el nombre de archivo,
 
 | Propiedad             | Tipo               | Descripción
 |:---------------------|:-------------------|:---------------------------------
-| description          | String             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
+| description          | Cadena             | Proporciona una descripción del elemento visible para el usuario. Lectura y escritura. Solo en OneDrive Personal
 | fileSystemInfo       | [fileSystemInfo][] | Información del sistema de archivos del cliente. Lectura y escritura.
-| name                 | String             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
+| name                 | Cadena             | El nombre del elemento (nombre de archivo y extensión). Lectura y escritura.
 
 ### <a name="request"></a>Solicitud
 

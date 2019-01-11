@@ -2,12 +2,13 @@
 title: Crear mailFolder
 description: Utilice esta API para crear un nuevo mailFolder secundarios.
 author: angelgolfer-ms
-ms.openlocfilehash: e893f28878b14fa76d8cda16a5b37f795ed235f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c031f0bd621778fc38801a80788f977d45fbaffb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816428"
 ---
 # <a name="create-mailfolder"></a>Crear mailFolder
 
@@ -40,14 +41,14 @@ Especifique la carpeta principal en la dirección URL de consulta como un identi
 
 | Encabezado | Valor |
 |:-------|:------|
-| Autorización | `Bearer {token}`. Obligatorio. |
-| Content-Type | `application/json`. Obligatorio. |
+| Autorización | `Bearer {token}`. Necesario. |
+| Content-Type | `application/json`. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros. **displayName** es la única propiedad que se puede escribir de un objeto [MailFolder](../resources/mailfolder.md).
 
-| Parámetro | Type | Descripción |
+| Parámetro | Tipo | Descripción |
 |:----------|:-----|:------------|
 |displayName|String|Nombre para mostrar de la nueva carpeta.|
 

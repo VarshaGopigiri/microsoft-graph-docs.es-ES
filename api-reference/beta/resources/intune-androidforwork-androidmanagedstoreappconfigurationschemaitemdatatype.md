@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración androidManagedStoreAppConfigurationSchemaItemDataType
 description: Tipo de datos para un elemento de configuración dentro de esquema de configuración personalizada de la aplicación para Android
-ms.openlocfilehash: 4cfaeb1ba02746c7f3307a7d388a2c6a503d3d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 185785fec7de9b87342703b41063ad49a0bd1bf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814878"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>tipo de enumeración androidManagedStoreAppConfigurationSchemaItemDataType
 
@@ -16,12 +17,12 @@ ms.locfileid: "27090701"
 
 Tipo de datos para un elemento de configuración dentro de esquema de configuración personalizada de la aplicación para Android
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |bool|0|Todavía no documentado|
 |integer|1|Todavía no documentado|
 |string|2|Todavía no documentado|
-|elección|3|Todavía no documentado|
+|choice|3|Todavía no documentado|
 |MultiSelect|4|Todavía no documentado|
 |bundle|5|Todavía no documentado|
 |bundleArray|6|Todavía no documentado|

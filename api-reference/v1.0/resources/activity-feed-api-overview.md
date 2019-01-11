@@ -1,12 +1,13 @@
 ---
 title: Usar la API de REST de fuente de actividades
 description: 'Puede usar la actividad de fuente API en Microsoft Graph para reanudar actiity de un usuario en dispositivos y plataformas. Solicitudes de API de fuentes de actividades se realizan en nombre de un usuario a través de permisos delegados y el permiso de actividad de usuario, que se puede usar con cuentas personales o trabajos y escolar. '
-ms.openlocfilehash: 25b7af22671256a6dd48536a7da232f16251184f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2c6da0e93b24914b5ca443b0b3617c04001a58dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811826"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Usar la API de REST de fuente de actividades
 

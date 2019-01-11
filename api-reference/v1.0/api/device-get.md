@@ -2,12 +2,13 @@
 title: Obtener device
 description: Obtiene las propiedades y relaciones de un objeto device.
 author: tfitzmac
-ms.openlocfilehash: 57032f29ace00a441aff7f68e9b61bd52e88e79b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1402b74f9af411a6d41ac9b37c5c54b4736de499
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310671"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811232"
 ---
 # <a name="get-device"></a>Obtener device
 
@@ -33,7 +34,7 @@ GET /devices/{id}
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

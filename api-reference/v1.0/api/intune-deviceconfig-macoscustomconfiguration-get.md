@@ -2,12 +2,13 @@
 title: Obtener macOSCustomConfiguration
 description: Lea las propiedades y las relaciones del objeto macOSCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 7f805f06bbd669b3ef82e2c487f9c7906f0065d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 265a8f6a10d4557301ee56c5ceab3fdfb335a767
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809369"
 ---
 # <a name="get-macoscustomconfiguration"></a>Obtener macOSCustomConfiguration
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

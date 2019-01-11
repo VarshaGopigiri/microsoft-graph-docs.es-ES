@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso iosVppAppAssignedLicense
 description: asignación de licencias por volumen compra programa iOS. Esta clase no es compatible con Crear, Eliminar ni Actualizar.
-ms.openlocfilehash: f1083934844f808c2630ecaeaa195734235e2a55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2264a83b7d0f5c5610a4a477ec9d1d33a6d943f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090469"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815590"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>tipo de recurso iosVppAppAssignedLicense
 
@@ -27,11 +28,11 @@ asignación de licencias por volumen compra programa iOS. Esta clase no es compa
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|userEmailAddress|String|La dirección de correo electrónico del usuario.|
-|userId|String|El identificador de usuario.|
-|userName|String|El nombre de usuario.|
-|userPrincipalName|String|El nombre principal de usuario.|
+|id|Cadena|Clave de la entidad.|
+|userEmailAddress|Cadena|La dirección de correo electrónico del usuario.|
+|userId|Cadena|El identificador de usuario.|
+|userName|Cadena|El nombre de usuario.|
+|userPrincipalName|Cadena|El nombre principal del usuario.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

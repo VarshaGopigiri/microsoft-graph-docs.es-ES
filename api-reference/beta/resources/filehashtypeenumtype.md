@@ -1,12 +1,13 @@
 ---
 title: enumeración fileHashType
 description: Enumeración de tipos de hash de archivo.
-ms.openlocfilehash: fbaa390ee8c543d2ed7c77cc05a11b519df0da9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e1c31aaea6c8cea40817efea61dc8654d3d17fae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083841"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816334"
 ---
 # <a name="filehashtype-enum"></a>enumeración fileHashType
 
@@ -16,7 +17,7 @@ Enumeración de tipos de hash de archivo.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Tipo desconocido.|
 |SHA1|1|Tipo de hash de SHA1.|

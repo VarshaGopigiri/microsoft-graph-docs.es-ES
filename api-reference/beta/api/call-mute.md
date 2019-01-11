@@ -2,12 +2,13 @@
 title: 'llamar a: silenciar'
 description: Permite a la aplicación silenciar a sí mismo.
 author: VinodRavichandran
-ms.openlocfilehash: dc1baddb65521f4874f108dd28c7e9ec7b778a25
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813443"
 ---
 # <a name="call-mute"></a>llamar a: silenciar
 
@@ -39,9 +40,9 @@ POST /applications/{id}/calls/{id}/mute
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Si tiene éxito, este método devuelve `200 OK` código de respuesta y un objeto [commsOperation](../resources/commsoperation.md) en el cuerpo de la respuesta.

@@ -2,12 +2,13 @@
 title: Delete directoryObject
 description: Elimina un directoryObject.
 author: lleonard-msft
-ms.openlocfilehash: dec525e72b523e7bbe95996d4c863c68e01baa15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c63600ba400041ebf420d5502e14af4a8cd75a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810853"
 ---
 # <a name="delete-directoryobject"></a>Delete directoryObject
 
@@ -30,7 +31,7 @@ DELETE /directoryObjects/{id}
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

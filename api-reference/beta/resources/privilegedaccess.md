@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso privilegedAccess
 description: " Por ejemplo, `privilegedAccess/azureResources` representa PIM administración con privilegios de acceso a los recursos de Azure."
-ms.openlocfilehash: af109c0cc355bfb282630d21cd02bb463b944f38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f4166fb539d627730c68c7e039fd8d672ff4c785
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810055"
 ---
 # <a name="privilegedaccess-resource-type"></a>tipo de recurso privilegedAccess
 
@@ -20,12 +21,12 @@ Representa un grupo de funcionalidades proporcionadas por el servicio de adminis
 ## <a name="properties"></a>Propiedades
 | Propiedad  | Tipo      |Descripción|
 |:----------|:----------|:----------|
-|id         |String     |El identificador del proveedor administrado por PIM.|
-|displayName|String     |El nombre para mostrar del proveedor administrado por PIM.|
+|id         |Cadena     |El identificador del proveedor administrado por PIM.|
+|displayName|Cadena     |El nombre para mostrar del proveedor administrado por PIM.|
 
 
 ## <a name="relationships"></a>Relaciones
-| Relación   | Tipo                                         |Descripción|
+| Relación   | Tipo                                         |Description|
 |:---------------|:---------------------------------------------|:----------|
 |recursos       |colección de [governanceResource](../resources/governanceresource.md)            |Una colección de recursos para el proveedor.|
 |roleAssignments |colección de [governanceRoleAssignment](../resources/governanceroleassignment.md)|Una colección de asignaciones de roles para el proveedor.|

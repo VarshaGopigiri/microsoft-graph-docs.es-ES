@@ -2,12 +2,13 @@
 title: 'llamar a: redirigir'
 description: Redirigir una llamada entrante.
 author: VinodRavichandran
-ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809474"
 ---
 # <a name="call-redirect"></a>llamar a: redirigir
 
@@ -39,10 +40,10 @@ POST /applications/{id}/calls/{id}/redirect
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
 |objetivos|colección de [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Los participantes de destino de la operación de redireccionamiento.|
-|targetDisposition|String|El valor posible es:`default`|
+|targetDisposition|Cadena|El valor posible es:`default`|
 |timeout|Int32|El tiempo de espera en segundos para la operación de redirección.|
 |maskCallee|Booleano|Indica si se va a enmascarar el destinatario de la llamada.|
 |maskCaller|Booleano|Indica si se va a enmascarar el autor de la llamada.|

@@ -2,12 +2,13 @@
 title: Obtener windows10CustomConfiguration
 description: Lea las propiedades y las relaciones del objeto windows10CustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8a52f9cd7aeefc560ff786a6e51e2bbec3047494
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5400bce1c3c9e49af9284070a82e7a9cb10bd3f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814570"
 ---
 # <a name="get-windows10customconfiguration"></a>Obtener windows10CustomConfiguration
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

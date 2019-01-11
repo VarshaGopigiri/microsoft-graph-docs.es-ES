@@ -2,12 +2,13 @@
 title: Tipo de recurso contact
 description: Un contacto es un elemento de Outlook donde puede organizar y guardar información sobre las personas y organizaciones con las que se comunica. Los contactos se contienen en carpetas de contactos.
 author: angelgolfer-ms
-ms.openlocfilehash: 761fdd3ed6f9c4c9982c1bb7c23bfbff28409ce9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 933d8a8fb5f55df487b90b537bed91d4ff79146b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815459"
 ---
 # <a name="contact-resource-type"></a>Tipo de recurso contact
 
@@ -93,7 +94,7 @@ Aquí tiene una representación JSON del recurso
 |emailAddresses|colección de [typedEmailAddress](typedemailaddress.md)|Las direcciones de correo electrónico del contacto.|
 |fileAs|String|El nombre con el que se ha archivado el contacto.|
 |flag|[followupFlag](followupflag.md)|El valor de marca que indica el estado, fecha de inicio, fecha de vencimiento o fecha de finalización para el contacto. |
-|gender |String |Género del contacto. |
+|gender |Cadena |Género del contacto. |
 |generation|String|La generación del contacto.|
 |givenName|String|El nombre del contacto.|
 |id|String|El identificador único del contacto. Solo lectura.|
@@ -114,7 +115,7 @@ Aquí tiene una representación JSON del recurso
 |surname|String|Los apellidos del contacto.|
 |title|String|El título del contacto.|
 |websites |Colección [website](website.md)|Sitios Web asociados con el contacto. |
-|weddingAnniversary |Date |Aniversario de boda del contacto. |
+|weddingAnniversary |Fecha |Aniversario de boda del contacto. |
 |yomiCompanyName|String|El nombre fonético japonés de la empresa del contacto.|
 |yomiGivenName|String|El nombre (nombre de pila) fonético japonés del contacto.|
 |yomiSurname|String|El apellido fonético japonés del contacto.|

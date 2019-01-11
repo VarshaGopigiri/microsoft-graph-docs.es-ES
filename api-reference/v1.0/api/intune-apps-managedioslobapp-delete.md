@@ -2,12 +2,13 @@
 title: Eliminar managedIOSLobApp
 description: Elimina un managedIOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: 50b2907e4d085f1327d36c341b4b6ba366fb0d73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21e5dccaeb300130d17806cf7a4986e0fd8d26d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813604"
 ---
 # <a name="delete-managedioslobapp"></a>Eliminar managedIOSLobApp
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

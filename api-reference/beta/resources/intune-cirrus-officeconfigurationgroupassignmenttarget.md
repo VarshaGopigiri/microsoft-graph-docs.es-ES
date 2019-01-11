@@ -2,12 +2,13 @@
 title: tipo de recurso officeConfigurationGroupAssignmentTarget
 description: Configuración de cliente de Office AAD grupo de destino de la asignación.
 author: tfitzmac
-ms.openlocfilehash: 82008de6e5cb64885e9e2d5804a00956da2ff434
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2fe6a668c1f490c167fe61496af14cf2654cebb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814773"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationGroupAssignmentTarget
 
@@ -22,7 +23,7 @@ Hereda de [officeConfigurationAssignmentTarget](../resources/intune-cirrus-offic
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|groupId|String|El identificador del grupo AAD, nuestro destino son para la configuración del dispositivo.|
+|groupId|Cadena|El identificador del grupo AAD, nuestro destino son para la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -2,12 +2,13 @@
 title: Enumerar windows10GeneralConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windows10GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5557a8bc16a1af01e1a024ee956caa1fbe2ed583
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d988b02c7fce0c3ef11f0c4ac4b3c12360fff1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307381"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809670"
 ---
 # <a name="list-windows10generalconfigurations"></a>Enumerar windows10GeneralConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

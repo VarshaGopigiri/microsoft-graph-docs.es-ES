@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso directoryRoleTemplate
 description: 'Representa una plantilla de rol de Active directory. Una plantilla de rol de Active directory especifica los valores de propiedad de un rol de Active directory (directoryRole). Hay un objeto de plantilla de rol asociados en el directorio para cada uno de los roles de Active directory que se pueden activar en un inquilino. Para leer un rol de Active directory o actualizar a sus miembros, debe activarse en primer lugar en el inquilino. Sólo el rol de Active directory de administradores de la compañía se activa de forma predeterminada. Para activar otros roles de Active directory disponibles enviar una solicitud POST para la `/directoryRoles` extremo con el identificador de la plantilla de rol de Active directory en el que se basa el rol de Active directory especificado en el parámetro **roleTemplateId** de la solicitud. Tras completar correctamente esta solicitud, a continuación, puede iniciar leer y asignar a miembros a la función de Active directory. **Nota**: una plantilla de rol de Active directory se expone para el rol de Active directory de los usuarios. La función de directorio de usuarios está implícita y no es visible para los clientes de Active directory. Todos los usuarios en el inquilino se asigna a este rol en la infraestructura. La función ya está activada. No use esta plantilla.'
-ms.openlocfilehash: e654ab8c14a0c5e831b2cbf818047fea0e2d95c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0603ee4424cf651c37bc1790b378c1472ba99216
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031668"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811462"
 ---
 # <a name="directoryroletemplate-resource-type"></a>Tipo de recurso directoryRoleTemplate
 
@@ -25,7 +26,7 @@ Representa una plantilla de rol de directorio. Una plantilla de rol de directori
 |:---------------|:--------|:----------|
 |description|String|La descripción del rol de directorio que se establecerá. Solo lectura.|
 |displayName|String|El nombre para mostrar del rol de directorio que se establecerá. Solo lectura. |
-|id|String|El identificador único de la plantilla. Hereda de [directoryObject](directoryobject.md). Especifique el **id** de la plantilla de rol de directorio de la propiedad **roleTemplateId** en la solicitud POST para activar un [directoryRole](directoryrole.md) en un inquilino. Clave, no admite valores NULL. Solo lectura.|
+|id|Cadena|El identificador único de la plantilla. Hereda de [directoryObject](directoryobject.md). Especifique el **id** de la plantilla de rol de directorio de la propiedad **roleTemplateId** en la solicitud POST para activar un [directoryRole](directoryrole.md) en un inquilino. Clave, no admite valores NULL. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

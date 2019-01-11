@@ -1,12 +1,13 @@
 ---
 title: ProgramControls de lista de un programa
 description: En la característica de revisiones de access Azure AD, enumera todos los objetos de programControl, vinculados a un programa en particular.
-ms.openlocfilehash: 78b28851dadfa1c24bc5bc0556b1c471e7bc09e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8895634b098474cdbeab695cbe730a1e2fd02e2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083133"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809341"
 ---
 # <a name="list-programcontrols-of-a-program"></a>ProgramControls de lista de un programa
 
@@ -30,7 +31,7 @@ GET /programs('{programId}')/controls
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

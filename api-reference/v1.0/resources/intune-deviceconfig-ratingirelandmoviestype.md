@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingIrelandMoviesType
 description: Películas clasificación etiquetas en Irlanda
 author: tfitzmac
-ms.openlocfilehash: bf36790325edfa665f504f161c1de59ebe7c5bbb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8c88b14f704b0904d2b8e961ebfb99ef1f55cfa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814346"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>tipo de enumeración ratingIrelandMoviesType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27349199"
 
 Películas clasificación etiquetas en Irlanda
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las películas|
 |allBlocked|1|No permitir cualquier contenido de películas|

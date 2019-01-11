@@ -1,12 +1,13 @@
 ---
 title: Actualizar approleassignment
 description: Actualizar las propiedades del objeto approleassignment.
-ms.openlocfilehash: 3c861afde396d9cab2f745c15c7de1d9a81c5dcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3d0f95e5413354a28e7b9b26e9b440f147c45931
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083712"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809635"
 ---
 # <a name="update-approleassignment"></a>Actualizar approleassignment
 
@@ -32,19 +33,19 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|La hora de creación de la concesión.|
 |id|Guid|El identificador de rol que se asignó a la entidad de seguridad.  Esta función se debe declarar por el de aplicación de destino recursos **resourceId** en su propiedad **appRoles** . Donde el recurso no declarar los permisos, debe especificarse un identificador predeterminado (identificador GUID cero).                            **Notas**: No admite valores NULL.            |
-|principalDisplayName|String|El nombre para mostrar de la entidad de seguridad que se ha concedido el acceso.|
+|principalDisplayName|Cadena|El nombre para mostrar de la entidad de seguridad que se ha concedido el acceso.|
 |principalId|Guid|El identificador único (**objectId**) para la entidad de seguridad que se van a conceder el acceso.                            **Notas**: necesarios.            |
-|principalType|String|El tipo de entidad de seguridad.  Esto puede ser "User", "ServicePrincipal" o "Grupo".|
-|resourceDisplayName|String|El nombre para mostrar del recurso al que se realizó la asignación.|
+|principalType|Cadena|El tipo de entidad de seguridad.  Esto puede ser "User", "ServicePrincipal" o "Grupo".|
+|resourceDisplayName|Cadena|El nombre para mostrar del recurso al que se realizó la asignación.|
 |resourceId|Guid|El identificador único (**objectId**) para el recurso de destino (entidad de seguridad de servicio) para el que se realizó la asignación.|
 
 ## <a name="response"></a>Respuesta

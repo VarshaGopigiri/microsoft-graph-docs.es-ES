@@ -2,12 +2,13 @@
 title: tipo de recurso deviceManagementScript
 description: Intune proporcionará al cliente la capacidad de ejecutar sus secuencias de comandos de Powershell en los dispositivos de Azure Active Directory se unió a windows inscritos 10. La secuencia de comandos se puede ejecutar una vez o periódicamente.
 author: tfitzmac
-ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811049"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso deviceManagementScript
 
@@ -29,19 +30,19 @@ Intune proporcionará al cliente la capacidad de ejecutar sus secuencias de coma
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para la secuencia de comandos de administración de dispositivos.|
-|displayName|String|Nombre de la secuencia de comandos de administración de dispositivos.|
-|descripción|String|Descripción opcional de la secuencia de comandos de administración de dispositivos.|
+|id|Cadena|Identificador único para la secuencia de comandos de administración de dispositivos.|
+|displayName|Cadena|Nombre de la secuencia de comandos de administración de dispositivos.|
+|descripción|Cadena|Descripción opcional de la secuencia de comandos de administración de dispositivos.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|El intervalo para ejecutar la secuencia de comandos. Si no ha definido la secuencia de comandos se ejecutará una vez|
 |scriptContent|Binario|El contenido de la secuencia de comandos.|
 |createdDateTime|DateTimeOffset|La fecha y hora de que creación de la secuencia de comandos de administración de dispositivos.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de que última modificación de la secuencia de comandos de administración de dispositivos.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica el tipo de la secuencia de comandos de administración de dispositivos se ejecuta en el contexto de ejecución. Los valores posibles son: `system` y `user`.|
-|enforceSignatureCheck|Boolean|Indicar si se debe comprobar la firma de la secuencia de comandos.|
-|fileName|String|Nombre de archivo de secuencia de comandos.|
+|enforceSignatureCheck|Booleano|Indicar si se debe comprobar la firma de la secuencia de comandos.|
+|fileName|Cadena|Nombre de archivo de secuencia de comandos.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|La lista de las asignaciones de grupo para la secuencia de comandos de administración de dispositivos.|
 |asignaciones|colección de [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|La lista de las asignaciones de grupo para la secuencia de comandos de administración de dispositivos.|

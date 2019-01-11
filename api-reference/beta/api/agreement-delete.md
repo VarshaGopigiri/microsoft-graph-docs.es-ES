@@ -1,12 +1,13 @@
 ---
 title: Eliminar contrato
 description: Eliminación de un objeto de contrato.
-ms.openlocfilehash: 919fc628e5f8ff9b6c016e085671f47ed6d56a5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2ebd62f9b367e48928c05b85e3a25c6d4b9bf285
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809299"
 ---
 # <a name="delete-agreement"></a>Eliminar contrato
 
@@ -30,7 +31,7 @@ DELETE /agreements/<id>
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

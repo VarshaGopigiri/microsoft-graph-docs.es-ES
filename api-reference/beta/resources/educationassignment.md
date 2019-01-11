@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationAssignment
 description: El recurso **educationAssignment** representa una tarea o una unidad de trabajo asignada a un miembro de estudiantes o equipo en una clase como parte de sus estudios. Sólo los profesores o los propietarios de equipo pueden crear asignaciones. Las asignaciones de contengan documentos y las tareas que el profesor va al alumno a trabajar en. Cada asignación alumno tiene un envío asociado que contiene cualquier trabajo de que su profesor más frecuentes se convierta. Un profesor puede agregar las puntuaciones y comentarios para el envío activado forma de los estudiantes.
-ms.openlocfilehash: c95197edd5f1ed821ca83171d74f0beee300eb1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086812"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812456"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
@@ -34,16 +35,16 @@ La asignación de API se exponen en el espacio de nombres de clase.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |allowLateSubmissions|Booleano| Identifica si se pueden enviar a los alumnos después de la fecha de vencimiento. Si esta propiedad no se especifica durante la creación, el valor predeterminado es true. |
 |allowStudentsToAddResourcesToSubmission|Booleano| Identifica si los alumnos pueden agregar sus propios recursos a una presentación o si sólo puede modificar los recursos agregados por el profesor. |
 |assignDateTime|DateTimeOffset|La fecha de cuándo debe activarse la asignación.  Si en el futuro, la asignación no se mostrará a los alumnos hasta esta fecha.  El tipo de **marca de tiempo** representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Los usuarios, o que toda clase debe recibir un objeto de envío una vez que se publicó la asignación. |
 |assignedDateTime|DateTimeOffset|El momento en que se publicó la asignación a los alumnos y la asignación se muestra en la escala de tiempo a los alumnos.  El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|classId|String| Clase que pertenece esta asignación. |
+|classId|Cadena| Clase que pertenece esta asignación. |
 |createdBy|[identitySet](identityset.md)| Quién creó la asignación. |
 |createdDateTime|DateTimeOffset|Momento cuándo se creó la asignación.  El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|displayName|String|Nombre de la asignación.|
+|displayName|Cadena|Nombre de la asignación.|
 |dueDateTime|DateTimeOffset|Fecha de la asignación de los alumnos vencimiento.  El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |Puntuar|[educationAssignmentGradeType](educationassignmentgradetype.md)|¿Cómo se corregirán la asignación. |
 |instrucciones|[itemBody](itembody.md)| Instrucciones para la asignación.  Esto junto con el nombre para mostrar indicar qué hacer los estudiantes. |
@@ -52,7 +53,7 @@ La asignación de API se exponen en el espacio de nombres de clase.
 |status|string| Estado de la **asignación**.  No se puede una revisión este valor.  Los valores posibles son: `draft`, `published` y `assigned`.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |recursos|colección de [educationAssignmentResource](educationassignmentresource.md)| Objetos de aprendizaje que están asociados con esta asignación.  Profesores sólo pueden modificar esta lista. Admite valores NULL.|
 |envíos|colección de [educationSubmission](educationsubmission.md)| Una vez publicado, hay un objeto de envío para cada estudiante que representa el trabajo y su calificación.  Solo lectura. Admite valores NULL.|

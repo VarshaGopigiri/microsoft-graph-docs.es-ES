@@ -2,12 +2,13 @@
 title: Lista androidDeviceOwnerWiFiConfigurations
 description: Propiedades de la lista y relaciones de los objetos androidDeviceOwnerWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5fd46f7f2de0477c94d7e5afe042bf7a891dc4e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed61bcd56c7a6c5307bd398385c7e53ce77cb4c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809453"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>Lista androidDeviceOwnerWiFiConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

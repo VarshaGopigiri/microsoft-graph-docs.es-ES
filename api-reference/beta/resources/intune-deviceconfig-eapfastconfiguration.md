@@ -2,12 +2,13 @@
 title: tipo de enumeración eapFastConfiguration
 description: Configuraciones disponibles para la configuración de EAP-FAST.
 author: tfitzmac
-ms.openlocfilehash: ba84adb86e9910df47bd236fd2bd348cbc9c8e6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 499d6595980bcb6bca1ea93687399e8988a3bed7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811091"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>tipo de enumeración eapFastConfiguration
 
@@ -17,7 +18,7 @@ ms.locfileid: "27326365"
 
 Configuraciones disponibles para la configuración de EAP-FAST.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |noProtectedAccessCredential|0|Usar EAP-FAST sin credenciales de acceso protegido (PAC).|
 |useProtectedAccessCredential|1|Uso protegida credenciales de acceso (PAC).|

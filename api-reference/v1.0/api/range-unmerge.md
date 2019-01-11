@@ -2,12 +2,13 @@
 title: 'Range: unmerge'
 description: Separar las celdas del rango en celdas independientes.
 author: lumine2008
-ms.openlocfilehash: 2b68ce5a034a274b1861d68db7a216cd797fa6c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 62cd7325941d5014d9bc04e64309e533363fe84b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334170"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812442"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 

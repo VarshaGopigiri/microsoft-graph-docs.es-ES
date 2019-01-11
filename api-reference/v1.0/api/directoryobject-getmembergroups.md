@@ -1,12 +1,13 @@
 ---
 title: Obtener grupos de miembro
 description: Devuelve todos los grupos de los que el usuario, grupo u objeto de directorio que se especifique sea miembro. Esta función es transitiva.
-ms.openlocfilehash: 370de10e1bba582270290877ba508ec4eebf47ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3556140aa0113c403f80d95e0a258be03f27125
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031985"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814654"
 ---
 # <a name="get-member-groups"></a>Obtener grupos de miembro
 
@@ -32,7 +33,7 @@ POST /directoryObjects/{id}/getMemberGroups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type   | string  | application/json  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

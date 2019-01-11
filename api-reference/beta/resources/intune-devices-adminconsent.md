@@ -2,12 +2,13 @@
 title: tipo de recurso adminConsent
 description: Información de consentimiento de administración.
 author: tfitzmac
-ms.openlocfilehash: 7e535eb3475745c8c8aabb2701d9b9e24b8d3b02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b6b2d9a8c32c9a1ce7e8587ebe853f7646b703a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815594"
 ---
 # <a name="adminconsent-resource-type"></a>tipo de recurso adminConsent
 
@@ -17,7 +18,7 @@ ms.locfileid: "27354085"
 
 Información de consentimiento de administración.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|El estado de consentimiento de administración de uso compartido de datos de usuarios y dispositivos para Apple. Los valores posibles son: `notConfigured`, `granted` y `notGranted`.|
 

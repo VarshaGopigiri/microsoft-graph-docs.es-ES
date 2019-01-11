@@ -2,12 +2,13 @@
 title: Tipo de recurso resourceOperation
 description: " operación se usa para asignar un recurso de MobileApp a un grupo de seguridad AAD.  No se pueden modificar las operaciones de recursos para los roles integrados."
 author: tfitzmac
-ms.openlocfilehash: fa004e2f1f41ca03d4b505599ef36e3548c1ab67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47dccffe445024e9e6b086b17f87789316db6585
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811854"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -26,10 +27,10 @@ Define una operación o una acción que puede realizar un recurso (o entidad) de
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
-|resourceName|String|Nombre del recurso en el que se realiza esta operación.|
-|actionName|String|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
-|description|String|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
+|id|Cadena|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
+|resourceName|Cadena|Nombre del recurso en el que se realiza esta operación.|
+|actionName|Cadena|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
+|description|Cadena|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

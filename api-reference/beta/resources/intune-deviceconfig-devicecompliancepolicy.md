@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceCompliancePolicy
 description: 'Esta es la clase base para la directiva de cumplimiento. Las directivas de cumplimiento son específicas de la plataforma y las directivas de cumplimiento por plataforma individual se heredan desde ahí. '
 author: tfitzmac
-ms.openlocfilehash: 6af25f0e72f43a91a7033329929773e9aad8be42
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8bf029c65d086e8389d5f4cd1a108cc795a785e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326225"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810125"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Tipo de recurso deviceCompliancePolicy
 
@@ -25,14 +26,14 @@ Esta es la clase base para la directiva de cumplimiento. Las directivas de cumpl
 |[Acción scheduleActionsForRules](../api/intune-deviceconfig-devicecompliancepolicy-scheduleactionsforrules.md)|Ninguna|Todavía no documentado|
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad.|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones

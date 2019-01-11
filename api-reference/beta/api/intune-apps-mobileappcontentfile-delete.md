@@ -2,12 +2,13 @@
 title: Eliminar mobileAppContentFile
 description: Elimina un mobileAppContentFile.
 author: tfitzmac
-ms.openlocfilehash: a36f68ed0770954f06f346473135d1bc297ef09b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b881e2d24a7b86101188a376f53284ff0eab1fca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322452"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813709"
 ---
 # <a name="delete-mobileappcontentfile"></a>Eliminar mobileAppContentFile
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppC
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

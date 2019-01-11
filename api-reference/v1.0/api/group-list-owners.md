@@ -1,12 +1,13 @@
 ---
 title: Enumerar propietarios
 description: 'Recupera una lista de propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo. '
-ms.openlocfilehash: 9bb7592827f5dfe9eef2aff0fa8917fe68f683dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a22e751d59d73b7bc3d3c00edafbce6c97f034f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814738"
 ---
 # <a name="list-owners"></a>Enumerar propietarios
 Recupera una lista de propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo. 
@@ -32,7 +33,7 @@ Este método admite los [parámetros de consulta de OData](/graph/query-paramete
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

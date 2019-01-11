@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsInformationProtectionPinCharacterRequirements
 description: Requisitos de carácter de PIN
 author: tfitzmac
-ms.openlocfilehash: 7eacbbf03862479779d908237271a5e860b7420d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bfc5adc0271d90102f86b6570de636b1799c5ca7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810020"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>tipo de enumeración windowsInformationProtectionPinCharacterRequirements
 
@@ -15,7 +16,7 @@ ms.locfileid: "27344271"
 
 Requisitos de carácter de PIN
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |notAllow|0|No permitir|
 |requireAtLeastOne|1|Requiere al menos uno|

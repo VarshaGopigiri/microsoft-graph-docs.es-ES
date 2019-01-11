@@ -1,12 +1,13 @@
 ---
 title: Obtener appRoleAssignment
 description: Recuperar las propiedades y relaciones del objeto approleassignment.
-ms.openlocfilehash: f61ea33a2625b06d4e121429946fa87d3acfecb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 465ef0365bee8c1dd002fa423232cc615fc45635
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809663"
 ---
 # <a name="get-approleassignment"></a>Obtener appRoleAssignment
 
@@ -35,7 +36,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

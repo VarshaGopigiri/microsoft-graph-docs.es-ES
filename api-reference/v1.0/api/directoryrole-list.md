@@ -2,12 +2,13 @@
 title: List directoryRoles
 description: Enumera los roles de directorio que están activados en el inquilino.
 author: lleonard-msft
-ms.openlocfilehash: c5639bac02fd002130657bc4e8b95f62d3bec986
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab9159b6209122e88ace271ca9a6df0c4daad4f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811357"
 ---
 # <a name="list-directoryroles"></a>List directoryRoles
 
@@ -30,7 +31,7 @@ GET /directoryRoles
 Este método **no** es compatible con los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para facilitar la personalización de la respuesta (por ejemplo, aquí no se admite $filter).
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

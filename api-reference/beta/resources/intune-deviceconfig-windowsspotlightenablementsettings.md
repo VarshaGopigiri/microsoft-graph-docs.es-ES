@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsSpotlightEnablementSettings
 description: Permite admind de TI establecer un motor de búsqueda predeterminado predefinidos para dispositivos controlados MDM
 author: tfitzmac
-ms.openlocfilehash: 704a02310e6d52beb29a401104fdbca80d0898eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 014ebc4aae67af4617a66822e4d5a3cbee7acabc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810552"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>tipo de enumeración windowsSpotlightEnablementSettings
 
@@ -17,7 +18,7 @@ ms.locfileid: "27339952"
 
 Permite admind de TI establecer un motor de búsqueda predeterminado predefinidos para dispositivos controlados MDM
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|Aspectos destacados en la pantalla de bloqueo no está configurado|
 |deshabilitado|1|Deshabilitar aspectos destacados de Windows en la pantalla de bloqueo|

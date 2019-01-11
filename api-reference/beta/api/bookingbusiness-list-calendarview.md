@@ -1,12 +1,13 @@
 ---
 title: Lista reservas calendarView
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: fed5cb09985ad00a3233899662148f5c4ce8ecd2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5abf88b4d0f0f5721ba3bcbf467406cfedfbe9f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809467"
 ---
 # <a name="list-bookings-calendarview"></a>Lista reservas calendarView
 
@@ -37,7 +38,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
 |start|DateTimeOffset|La fecha de inicio y la hora de un intervalo de tiempo, se representan en formato ISO 8601, como UTC o un desplazamiento de la hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2018 tendrá este aspecto: ' 2018-01-01T00:00:00Z', y el mismo tiempo en PST tendría el siguiente aspecto: ' 2017-12-31T16:00:00-08:00 '.|
 |end|DateTimeOffset|La fecha y hora finales de un intervalo de tiempo, se representan en formato ISO 8601, como UTC o un desplazamiento de la hora UTC. Por ejemplo, 3 am UTC en 1 de enero de 2018 tendría el siguiente aspecto: ' 2018-01-01T03:00:00Z', y el mismo tiempo en PST tendría el siguiente aspecto: ' 2017-12-31T19:00:00-08:00 '.|

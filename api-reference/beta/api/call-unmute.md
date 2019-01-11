@@ -2,12 +2,13 @@
 title: 'llamar a: reactivar audio'
 description: Permite a la aplicación reactivar el audio de sí mismo.
 author: VinodRavichandran
-ms.openlocfilehash: abd5abdf0e91a24e2f8de4d5fbb3fa0cc1d7b243
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3f010b7b7fb790b40455c8e09b785ffe29af0983
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813681"
 ---
 # <a name="call-unmute"></a>llamar a: reactivar audio
 
@@ -39,9 +40,9 @@ POST /applications/{id}/calls/{id}/unmute
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Si tiene éxito, este método devuelve `200 OK` objeto de código y [commsOperation](../resources/commsoperation.md) de respuesta en el cuerpo de la respuesta.

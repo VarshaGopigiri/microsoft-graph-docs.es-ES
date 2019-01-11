@@ -1,12 +1,13 @@
 ---
 title: Obtener las actividades del usuario
 description: Obtener las actividades de un usuario determinado. A diferencia de la **reciente** OData (función), se devolverán las actividades sin historiales. El permiso UserActivity.ReadWrite.CreatedByApp se aplicará filtrado adicional a la respuesta, para que se devuelvan únicamente las actividades creadas por la aplicación. Este filtrado del lado del servidor, se podría producir páginas vacías si el usuario está especialmente activo y otras aplicaciones han creado actividades más recientes. Para obtener las actividades de la aplicación, utilice la propiedad **nextLink** a paginar.
-ms.openlocfilehash: e8a2fb02ac1de5fa45f8413c7313176902ca1c6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8106d1c2cb740033fd81a21068aba5a15fd1b1b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809376"
 ---
 # <a name="get-user-activities"></a>Obtener las actividades del usuario
 
@@ -54,7 +55,7 @@ Los siguientes son algunos ejemplos de consultas compatibles con codificación U
 
 |Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
-|Authorization | string | {token} de portador. Obligatorio.|
+|Autorización | string | {token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

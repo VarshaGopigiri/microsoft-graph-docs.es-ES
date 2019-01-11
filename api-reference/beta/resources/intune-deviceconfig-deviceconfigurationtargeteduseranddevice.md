@@ -2,12 +2,13 @@
 title: tipo de recurso deviceConfigurationTargetedUserAndDevice
 description: Conflicto de resumen para un conjunto de directivas de configuración del dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 04b0e31d0f3f099389e4901eb654139d286f4bd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46355f78f23060ecc901c3f98f0e3f7d13101d1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809628"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso deviceConfigurationTargetedUserAndDevice
 
@@ -17,13 +18,13 @@ ms.locfileid: "27345244"
 
 Conflicto de resumen para un conjunto de directivas de configuración del dispositivo.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|deviceId|String|El identificador del dispositivo en el registro.|
-|deviceName|String|El nombre del dispositivo en el registro.|
-|userId|String|El identificador del usuario en el registro.|
-|userDisplayName|String|El nombre para mostrar del usuario en el registro|
-|userPrincipalName|String|El UPN del usuario en el registro.|
+|deviceId|Cadena|El identificador del dispositivo en el registro.|
+|deviceName|Cadena|El nombre del dispositivo en el registro.|
+|userId|Cadena|El identificador del usuario en el registro.|
+|userDisplayName|Cadena|El nombre para mostrar del usuario en el registro|
+|userPrincipalName|Cadena|El UPN del usuario en el registro.|
 |lastCheckinDateTime|DateTimeOffset|Última hora de protección para este par de usuario/dispositivo.|
 
 ## <a name="relationships"></a>Relaciones

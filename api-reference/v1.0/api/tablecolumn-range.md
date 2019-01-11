@@ -2,12 +2,13 @@
 title: 'TableColumn: Range'
 description: Obtiene el objeto de rango asociado a toda la columna.
 author: lumine2008
-ms.openlocfilehash: 25c49e9e131ea069877d80a4ff0a0b38d8f1acad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c71b1ec11e9d134ce7332ff699532189c17c127a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332483"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814584"
 ---
 # <a name="tablecolumn-range"></a>TableColumn: Range
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso passwordCredential
 description: Contiene una credencial de contraseña asociada con una aplicación o un servicio de entidad de seguridad. La propiedad **passwordCredentials** de la entidad servicePrincipal y de la entidad de la aplicación es una colección de **passwordCredential**.
-ms.openlocfilehash: 79d3f76606533cf639f52ed22cd93f353e18e977
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5cb995c00a7dcfcfb4bda331e24dcb4d732f04f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814444"
 ---
 # <a name="passwordcredential-resource-type"></a>tipo de recurso passwordCredential
 
@@ -39,13 +40,13 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binario|            |
 |endDateTime|DateTimeOffset|La fecha y hora de caducidad de la contraseña. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |Id|Guid|            |
 |startDateTime|DateTimeOffset|La fecha y la hora en que la contraseña es válida. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|secretText|String| Las contraseñas deben ser 16-64 caracteres de longitud |
+|secretText|Cadena| Las contraseñas deben ser 16-64 caracteres de longitud |
 |Sugerencia|String|  |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

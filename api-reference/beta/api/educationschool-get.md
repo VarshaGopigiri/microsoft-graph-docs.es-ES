@@ -2,12 +2,13 @@
 title: Obtener educationSchool
 description: Recupere las propiedades y relaciones del objeto de centro educativo.
 author: mmast-msft
-ms.openlocfilehash: 143d55ce3500f855fd912362f578d385347497c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f077cf3e614d6809a60e9fce03d82d0dee82f95b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813303"
 ---
 # <a name="get-educationschool"></a>Obtener educationSchool
 

@@ -1,12 +1,13 @@
 ---
 title: List manager
 description: Obtiene el administrador del usuario. Devuelve el usuario o el contacto asignado como administrador del usuario.
-ms.openlocfilehash: 3601b7c13eb97b288cc65e927432bd420105970a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f88aaf04596ade1a1cfd280af13efbc02affad6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814976"
 ---
 # <a name="list-manager"></a>List manager
 
