@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Cambiar los permisos de uso compartido
-ms.openlocfilehash: d6c710ca4d90bffba18cde316410480f1dde5821
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d972dc436b23fb62bb3df544584008eada0e99ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825343"
 ---
 # <a name="update-sharing-permission"></a>Actualizar permisos de uso compartido
 
@@ -51,7 +52,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad.
 Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad | Tipo              | Descripción                   |
+| Propiedad | Tipo              | Description                   |
 |:---------|:------------------|:------------------------------|
 | roles    | Colección String | Matriz de tipos de permisos. |
 

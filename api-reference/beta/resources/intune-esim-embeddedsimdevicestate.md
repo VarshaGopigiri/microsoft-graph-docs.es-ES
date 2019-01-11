@@ -2,12 +2,13 @@
 title: tipo de recurso embeddedSIMDeviceState
 description: Describe el estado de implementación incrustado de código activación de SIM en relación con un dispositivo.
 author: tfitzmac
-ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15e969037a93ee11c300f7b18b0c8afcb36d0ce1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881518"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>tipo de recurso embeddedSIMDeviceState
 
@@ -28,15 +29,15 @@ Describe el estado de implementación incrustado de código activación de SIM e
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para el estado del dispositivo SIM incrustado. Valor asignado al crear generada por el sistema.|
+|id|Cadena|Identificador único para el estado del dispositivo SIM incrustado. Valor asignado al crear generada por el sistema.|
 |createdDateTime|DateTimeOffset|La hora en que se creó el estado del dispositivo SIM incrustado. Servicio generado al lado.|
 |modifiedDateTime|DateTimeOffset|La hora en que se modificó por última vez el estado del dispositivo SIM incrustado. Se actualizó el lado de servicio.|
 |lastSyncDateTime|DateTimeOffset|El tiempo que el dispositivo SIM incrustado protegida por última vez. Se actualizó el lado de servicio.|
-|universalIntegratedCircuitCardIdentifier|String|La Universal circuito integrado tarjeta de identificador (UICCID) que identifica el hardware en el que es un perfil que se va a implementar.|
-|deviceName|String|Nombre de dispositivo al que estaba la suscripción a aprovisiona a JOE de escritorio, por ejemplo|
-|userName|String|Nombre de usuario que se aprovisionó la suscripción como, por ejemplo, joe@contoso.com|
+|universalIntegratedCircuitCardIdentifier|Cadena|La Universal circuito integrado tarjeta de identificador (UICCID) que identifica el hardware en el que es un perfil que se va a implementar.|
+|deviceName|Cadena|Nombre de dispositivo al que estaba la suscripción a aprovisiona a JOE de escritorio, por ejemplo|
+|userName|Cadena|Nombre de usuario que se aprovisionó la suscripción como, por ejemplo, joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|El estado de la operación de perfil aplicada al dispositivo. Los valores posibles son: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted` y `removedByUser`.|
-|stateDetails|String|Descripción del estado de aprovisionamiento de la cadena.|
+|stateDetails|Cadena|Descripción del estado de aprovisionamiento de la cadena.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartTitle
 description: Representa un objeto de título de gráfico de un gráfico.
 author: lumine2008
-ms.openlocfilehash: b3d685c68b14ebe3f49eb3dd9186838c977c1cac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc470e01ca6c312429422f871edbc7868c3d209d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864879"
 ---
 # <a name="charttitle-resource-type"></a>Tipo de recurso ChartTitle
 
@@ -21,7 +22,7 @@ Representa un objeto de título de gráfico de un gráfico.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get ChartTitle](../api/charttitle-get.md) | [ChartTitle](charttitle.md) |Lee las propiedades y relaciones del objeto chartTitle.|
-|[Actualizar](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |Actualiza el objeto ChartTitle. |
+|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |Actualiza el objeto ChartTitle. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

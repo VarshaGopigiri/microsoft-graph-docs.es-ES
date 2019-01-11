@@ -1,12 +1,13 @@
 ---
 title: Lista businessFlowTemplates
 description: Lista todos los objetos de businessFlowTemplate, en Azure AD tener acceso a la característica de revisiones.
-ms.openlocfilehash: 9c6dc976244c60151cb2c230430ab6b4d0dc4b43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 021a3c939c6642caf5200b5e9cc4e47b390019b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829501"
 ---
 # <a name="list-businessflowtemplates"></a>Lista businessFlowTemplates
 
@@ -30,7 +31,7 @@ GET /businessFlowTemplates
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

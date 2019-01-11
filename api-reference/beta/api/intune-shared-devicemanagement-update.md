@@ -2,12 +2,13 @@
 title: Actualizar deviceManagement
 description: Actualice las propiedades de un objeto deviceManagement.
 author: tfitzmac
-ms.openlocfilehash: 1808c18fd5e305871e0be2e47def97938384488c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd202c2a015b25234a7bf6ffdbedbd1b9f17eacd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323768"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846833"
 ---
 # <a name="update-devicemanagement"></a>Actualizar deviceManagement
 
@@ -59,7 +60,7 @@ PATCH /deviceManagement
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -69,10 +70,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para el dispositivo.|
+|id|Cadena|Identificador único para el dispositivo.|
 |**Configuración de dispositivos**|
 |intuneAccountId|GUID|Identificador de cuenta Intune para dado inquilino|
-|legacyPcManangementEnabled|Boolean|La propiedad para habilitar no MDM administrados heredado administración de PC para esta cuenta. Esta propiedad es de sólo lectura.|
+|legacyPcManangementEnabled|Booleano|La propiedad para habilitar no MDM administrados heredado administración de PC para esta cuenta. Esta propiedad es de sólo lectura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitido por inquilino.|
 |configuración|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configuración de niveles de cuenta.|
 |**Administración de dispositivos**|

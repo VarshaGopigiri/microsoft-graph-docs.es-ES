@@ -2,12 +2,13 @@
 title: Lista androidWorkProfileCompliancePolicies
 description: Propiedades de la lista y relaciones de los objetos androidWorkProfileCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 04e270e1ee824625b39b4a7101b95d6c063bbb64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c230e9236bfc1a54a8e6dc28cc689f0b691b840c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847687"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Lista androidWorkProfileCompliancePolicies
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

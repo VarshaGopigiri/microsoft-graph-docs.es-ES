@@ -2,12 +2,13 @@
 title: Tipo de recurso vppLicensingType
 description: Contiene las propiedades del tipo de licencia del Programa de Compras por Volumen (VPP) de iOS.
 author: tfitzmac
-ms.openlocfilehash: 83e68cc018b3e3f5948b105118bffbeb93010c2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d4b7983d20f22be5f8cce24a5c362926d00de55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351306"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851600"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Tipo de recurso vppLicensingType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27351306"
 
 Contiene las propiedades del tipo de licencia del Programa de Compras por Volumen (VPP) de iOS.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |supportUserLicensing|Booleano|Si el programa es compatible con el tipo de licencia de usuario.|
 |supportDeviceLicensing|Booleano|Si el programa es compatible con el tipo de licencia de dispositivo.|

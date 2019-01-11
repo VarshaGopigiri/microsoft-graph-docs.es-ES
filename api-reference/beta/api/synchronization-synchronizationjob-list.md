@@ -1,12 +1,13 @@
 ---
 title: Trabajos de sincronización de lista
 description: Lista de trabajos existentes para una instancia de aplicación determinada (entidad de seguridad de servicio).
-ms.openlocfilehash: 179a6906936fddbfc31ffc7b016de05908f2383a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: daf486ed8da41be2e13be622bc18b81711de3ff7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846959"
 ---
 # <a name="list-synchronization-jobs"></a>Trabajos de sincronización de lista
 
@@ -33,7 +34,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 | Nombre           | Tipo    | Descripción|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

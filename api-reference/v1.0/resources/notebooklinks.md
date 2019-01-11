@@ -2,12 +2,13 @@
 title: Tipo de recurso notebookLinks
 description: Vínculos para abrir un bloc de notas de OneNote.
 author: Jewan-microsoft
-ms.openlocfilehash: f263a255199dea844f62d322b4be010111c9c823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2666d7da98eeb6115a179ddbbadcd8b5e7f941d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826889"
 ---
 # <a name="notebooklinks-resource-type"></a>Tipo de recurso notebookLinks
 

@@ -2,12 +2,13 @@
 title: Actualizar windowsAutopilotDeviceIdentity
 description: Actualizar las propiedades de un objeto windowsAutopilotDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: b1ec7e17602becbf70d825711f2e2ea55b278fb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea1200951231b43b2d2fd9242c241a54518fb1c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853539"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Actualizar windowsAutopilotDeviceIdentity
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
@@ -53,15 +54,15 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Asignación de perfiles el estado detallado de los dispositivos de piloto automático de Windows. Los valores posibles son: `none` y `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Perfil de establece la hora del dispositivo de piloto automático de Windows.|
 |orderIdentifier|Cadena|Identificador del pedido del dispositivo de piloto automático de Windows.|
-|purchaseOrderIdentifier|String|Identificador del pedido de compra del dispositivo de piloto automático de Windows.|
+|purchaseOrderIdentifier|Cadena|Identificador del pedido de compra del dispositivo de piloto automático de Windows.|
 |serialNumber|Cadena|Número de serie del dispositivo Windows Autopilot.|
 |productKey|Cadena|Clave de producto del dispositivo Windows Autopilot.|
-|manufacturer|String|Fabricante OEM del dispositivo de piloto automático de Windows.|
-|model|String|Nombre del modelo del dispositivo de piloto automático de Windows.|
+|manufacturer|Cadena|Fabricante OEM del dispositivo de piloto automático de Windows.|
+|model|Cadena|Nombre del modelo del dispositivo de piloto automático de Windows.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Estado de inscripción Intune del dispositivo de piloto automático de Windows. Los valores posibles son: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune última contactado fecha hora del dispositivo de piloto automático de Windows.|
-|addressableUserName|String|Nombre de usuario direccionable.|
-|userPrincipalName|String|Nombre Principal de usuario.|
+|addressableUserName|Cadena|Nombre de usuario direccionable.|
+|userPrincipalName|Cadena|Nombre Principal de usuario.|
 
 
 

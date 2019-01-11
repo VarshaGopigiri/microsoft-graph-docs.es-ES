@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso objectMapping
 description: Define cómo se debe sincronizar un objeto determinado desde el directorio de origen al directorio de destino. En particular, que define cómo el objeto en el directorio de origen debe coincidir con un objeto de directorio de destino, ¿qué (si hay alguno) filtros de ámbito se debe utilizar para decidir si queremos aprovisionar un objeto determinado, y cómo los atributos de objeto deben transformarse continuas desde origen al directorio de destino.
-ms.openlocfilehash: 5ecf406c3dab2f8d6fdcecadda4d5ff7bbb4f4d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851754"
 ---
 # <a name="objectmapping-resource-type"></a>tipo de recurso objectMapping
 
@@ -18,16 +19,16 @@ Las asignaciones de objetos son la parte principal de la [regla de sincronizaci�
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad      | Tipo      | Descripción    |
+| Propiedad      | Tipo      | Description    |
 |:--------------|:----------|:---------------|
 |attributeMappings  |colección de [attributeMapping](synchronization-attributemapping.md)    | Las asignaciones de atributo definen qué atributos para asignar el objeto de origen en el objeto de destino y cómo debe fluyen. Un número de funciones está disponible para admitir la transformación de los valores de origen original.|
 |enabled        |Booleano    |Cuando `true`, esta asignación de objeto se procesará durante la sincronización. Cuando `false`, se omitirá esta asignación de objeto.|
 |flowTypes      |objectFlowType    |Qué tipos de flujo están habilitados para esta asignación de objeto. `Add`crea nuevos objetos en el directorio de destino, `Update` modifica los objetos existentes, y `Delete` desactiva los usuarios existentes. El valor predeterminado es `Add, Update, Delete`. |
 |metadatos       |colección de metadataEntry    |Propiedades de extensión adicionales. A menos que se mencionan explícitamente, no se deben cambiar los valores de metadatos.|
-|name           |String     |Fácil de usar el nombre de la asignación del objeto.|
-|ámbito          |[filter](synchronization-filter.md)     |Define un filtro que se utilizará al decidir si se debe aprovisionar un objeto determinado. Por ejemplo, es posible que desee sólo los usuarios de aprovisionamiento que se encuentran en los Estados Unidos.|
-|sourceObjectName           |String     |Nombre del objeto en el directorio de origen. Debe coincidir con el nombre del objeto de la [definición del directorio](synchronization-directorydefinition.md)de origen.|
-|targetObjectName           |String     |Nombre del objeto en el directorio de destino. Debe coincidir con el nombre del objeto de la [definición del directorio](synchronization-directorydefinition.md)de destino.|
+|name           |Cadena     |Fácil de usar el nombre de la asignación del objeto.|
+|scope          |[filter](synchronization-filter.md)     |Define un filtro que se utilizará al decidir si se debe aprovisionar un objeto determinado. Por ejemplo, es posible que desee sólo los usuarios de aprovisionamiento que se encuentran en los Estados Unidos.|
+|sourceObjectName           |Cadena     |Nombre del objeto en el directorio de origen. Debe coincidir con el nombre del objeto de la [definición del directorio](synchronization-directorydefinition.md)de origen.|
+|targetObjectName           |Cadena     |Nombre del objeto en el directorio de destino. Debe coincidir con el nombre del objeto de la [definición del directorio](synchronization-directorydefinition.md)de destino.|
 
 ## <a name="json-representation"></a>Representación JSON
 

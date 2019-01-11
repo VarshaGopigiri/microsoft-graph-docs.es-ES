@@ -2,12 +2,13 @@
 title: Crear deviceEnrollmentPlatformRestrictionsConfiguration
 description: Cree un objeto deviceEnrollmentPlatformRestrictionsConfiguration.
 author: tfitzmac
-ms.openlocfilehash: af34d4d845a3b0804391a1ba5b4f1dd3aa70730f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 82ff5652cb70cb05f8df5620ba1ef59f601d6645
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846931"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>Crear deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceEnrollmentPlatformRestrictionsConfiguration.

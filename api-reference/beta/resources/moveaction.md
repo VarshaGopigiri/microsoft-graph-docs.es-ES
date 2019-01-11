@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: MoveAction
-ms.openlocfilehash: d31cfc9a45b83f74058073ca18ca2df15a9914ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 40049b506c72af5aacddf461b22e1ddd280d7ad4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083923"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852902"
 ---
 # <a name="moveaction-resource-type"></a>Tipo de recurso MoveAction
 
@@ -35,7 +36,7 @@ La presencia del recurso **MoveAction** en un recurso [**itemActivity**][activit
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad | Tipo   | Descripción
+| Nombre de la propiedad | Tipo   | Descripción
 |:--------------|:-------|:----------------------------------------------------
 | from          | string | Nombre de la ubicación desde la que se movió el elemento.
 | to            | string | Nombre de la ubicación a la que se movió el elemento.

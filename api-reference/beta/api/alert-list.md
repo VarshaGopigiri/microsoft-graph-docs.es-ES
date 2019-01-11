@@ -1,12 +1,13 @@
 ---
 title: List alerts
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: e6ddf41616d27b41414386f83a9ce067411d92b9
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Normal
+ms.openlocfilehash: 6036514c2aeabe287fd019ce69157d4b7897af60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860210"
 ---
 # <a name="list-alerts"></a>List alerts
 
@@ -55,7 +56,7 @@ Para devolver un conjunto de propiedades alternativo, utilice la OData `$select`
 
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {código} del portador. Necesario.|
+| Autorización  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

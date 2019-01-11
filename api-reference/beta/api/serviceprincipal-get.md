@@ -1,12 +1,13 @@
 ---
 title: Obtener servicePrincipal
 description: Recuperar las propiedades y relaciones del objeto serviceprincipal.
-ms.openlocfilehash: 903bec11787b4b5acc5da688f7b73bf2bbd76262
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 97b1f05fe672d935a88648cb010d1e7cb9dfeaa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878893"
 ---
 # <a name="get-serviceprincipal"></a>Obtener servicePrincipal
 
@@ -34,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

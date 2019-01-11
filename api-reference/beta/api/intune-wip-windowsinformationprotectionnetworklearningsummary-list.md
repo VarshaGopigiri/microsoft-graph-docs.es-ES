@@ -2,12 +2,13 @@
 title: Enumerar windowsInformationProtectionNetworkLearningSummaries
 description: Enumere las propiedades y las relaciones de los objetos windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
-ms.openlocfilehash: fbbf5fe777d60ab2187b512629cee8fb3765ddd4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b99cfcf1db8126fa536a5e87248aa99c669921f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847239"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Enumerar windowsInformationProtectionNetworkLearningSummaries
 
@@ -38,7 +39,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

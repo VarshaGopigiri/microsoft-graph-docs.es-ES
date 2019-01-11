@@ -2,12 +2,13 @@
 title: tipo de enumeración teamSpecialization
 description: Describe el caso de uso especial para un equipo.
 author: nkramer
-ms.openlocfilehash: 2e17f03374457ff8ddd9d3941eb56bebbec2dde6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18e1993272a94df989066cf95d01b6a4f66fd8d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826043"
 ---
 # <a name="teamspecialization-enum-type"></a>tipo de enumeración teamSpecialization
 
@@ -17,7 +18,7 @@ Indica si el [equipo](../resources/team.md) está destinado a un caso de uso con
 
 ## <a name="members"></a>Miembros
 
-| Miembro	             | Valor | Descripción                                                                |
+| Miembro	             | Valor | Description                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
-| ninguno               | 0     | Tipo de un equipo que proporciona la experiencia de grupo estándar de forma predeterminada.          |
+| none               | 0     | Tipo de un equipo que proporciona la experiencia de grupo estándar de forma predeterminada.          |
 | unknownFutureValue | 7     | Sentinel valor reservado como un marcador de posición para una futura ampliación de la enumeración. |

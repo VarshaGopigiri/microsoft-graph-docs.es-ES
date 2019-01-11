@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso recurrencePattern
 description: Describe la frecuencia con la que se repite un evento periódico.
-ms.openlocfilehash: 1474b56475abc58eddcb4cd57488fffcedccb074
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 95b7ef01ad784b5d383190fd28381aa0c700dacf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878053"
 ---
 # <a name="recurrencepattern-resource-type"></a>Tipo de recurso recurrencePattern
 

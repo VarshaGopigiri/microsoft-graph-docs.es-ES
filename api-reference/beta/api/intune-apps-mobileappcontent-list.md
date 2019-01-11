@@ -2,12 +2,13 @@
 title: Enumerar mobileAppContents
 description: Enumere las propiedades y las relaciones de los objetos mobileAppContent.
 author: tfitzmac
-ms.openlocfilehash: abb91f1607431bdbc8013b21676ecf57142ddb78
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7bad446e73d5571c678dcb8a992c3f5b076c6029
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858901"
 ---
 # <a name="list-mobileappcontents"></a>Enumerar mobileAppContents
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileL
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

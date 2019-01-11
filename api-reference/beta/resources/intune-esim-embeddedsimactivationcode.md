@@ -2,12 +2,13 @@
 title: tipo de recurso embeddedSIMActivationCode
 description: El código de activación SIM incrustado como proporcionada por el operador móvil.
 author: tfitzmac
-ms.openlocfilehash: 4e768a4047b8ddc785b545d3b850128a8e44f256
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41976b92cfe6b6f695631dbd6c0d928c6ae99271
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878067"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>tipo de recurso embeddedSIMActivationCode
 
@@ -17,13 +18,13 @@ ms.locfileid: "27311791"
 
 El código de activación SIM incrustado como proporcionada por el operador móvil.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|integratedCircuitCardIdentifier|String|El identificador de tarjeta de circuito integrado (ICCID) para este de código de activación de SIM incrustado como proporcionado por el operador de telefonía móvil.
+|integratedCircuitCardIdentifier|Cadena|El identificador de tarjeta de circuito integrado (ICCID) para este de código de activación de SIM incrustado como proporcionado por el operador de telefonía móvil.
 La entrada debe coincidir con la siguiente expresión regular: ' ^\[0-9\]{19}\[0-9\]?$ '.|
-|matchingIdentifier|String|MatchingIdentifier (MatchingID) tal como se especifica en la GSMA asociación SGP.22 RSP especificación técnica sección 4.1.
+|matchingIdentifier|Cadena|MatchingIdentifier (MatchingID) tal como se especifica en la GSMA asociación SGP.22 RSP especificación técnica sección 4.1.
 La entrada debe coincidir con la siguiente expresión regular: ' ^\[a-zA-Z0-9\-\]* $'.|
-|smdpPlusServerAddress|String|El nombre de dominio completo de la SM-DP + servidor tal como se especifica en la especificación técnica de GSM asociación SPG.22 RSP.
+|smdpPlusServerAddress|Cadena|El nombre de dominio completo de la SM-DP + servidor tal como se especifica en la especificación técnica de GSM asociación SPG.22 RSP.
 La entrada debe coincidir con la siguiente expresión regular: ' ^ (\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+) *\.) +\[a-zA-Z\]{2,}$'.|
 
 ## <a name="relationships"></a>Relaciones

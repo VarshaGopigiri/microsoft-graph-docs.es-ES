@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceManagementExchangeAccessRuleType
 description: Criterios que define el tipo de dispositivo que se aplicará esta regla de acceso a
 author: tfitzmac
-ms.openlocfilehash: 8e0bc166de6396e1b56dd89a4545c9b12b2a71cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7e554e2abce401108078d5bd1f66c46f8a4838b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854862"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessRuleType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328537"
 
 Criterios que define el tipo de dispositivo que se aplicará esta regla de acceso a
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |familia de productos|0|Familia de dispositivos|
 |model|1|Modelo específico del dispositivo|

@@ -2,12 +2,13 @@
 title: tipo de enumeración appManagementLevel
 description: Niveles de administración de aplicaciones
 author: tfitzmac
-ms.openlocfilehash: e552055d7abd7f61c71243aa696acbbd263008e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 760d745a6f449ac5f2458db50e40953ead783e83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847001"
 ---
 # <a name="appmanagementlevel-enum-type"></a>tipo de enumeración appManagementLevel
 
@@ -17,7 +18,7 @@ ms.locfileid: "27301340"
 
 Niveles de administración de aplicaciones
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |no se especifica|0|Unspecified|
 |no administrado|1|No administrado|

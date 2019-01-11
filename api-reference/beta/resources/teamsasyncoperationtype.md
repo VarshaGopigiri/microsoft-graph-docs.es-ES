@@ -2,12 +2,13 @@
 title: tipo de enumeración teamsAsyncOperationType
 description: Tipos de teamsAsyncOperation. Se agregarán los miembros aquí como más async se admiten operaciones.
 author: nkramer
-ms.openlocfilehash: 4ae7f070ffcce377fb4112ed5a54b4ad22d7973f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18f167a2f365b724586b66afd00e9fa5c0508954
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847225"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>tipo de enumeración teamsAsyncOperationType
 
@@ -17,7 +18,7 @@ Tipos de [teamsAsyncOperation](teamsasyncoperation.md). Se agregarán los miembr
 
 ## <a name="members"></a>Miembros
 
-| Miembro	 | Valor| Descripción |
+| Miembro	 | Valor| Description |
 |:---------------|:--------|:----------|
 |No válido|0|Valor no válido.|
 |cloneTeam|1|Operación que se debe clonar un equipo.|

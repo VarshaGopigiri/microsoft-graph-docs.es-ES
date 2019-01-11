@@ -2,12 +2,13 @@
 title: tipo de recurso outlookTaskGroup
 description: 'Un grupo de carpetas (outlookTaskFolder) que contienen las tareas de Outlook (colección de objetos de outlookTask). '
 author: angelgolfer-ms
-ms.openlocfilehash: 9fed69e1401f2b11ae3630a3c4cef66fd9446920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878774"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
 
@@ -25,20 +26,20 @@ En Outlook, hay un grupo de tareas predeterminada `My Tasks` que no se puede cam
 |[Obtener outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Obtener las propiedades y relaciones del grupo de tareas de Outlook especificado.|
 |[Crear outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Crear una carpeta de tareas de Outlook.|
 |[Lista taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |colección de [outlookTaskFolder](outlooktaskfolder.md)| Obtener una colección de carpetas de tareas de Outlook.|
-|[Actualizar](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Actualizar las propiedades modificables de un grupo de tareas de Outlook. |
-|[Eliminar](../api/outlooktaskgroup-delete.md) | Ninguno |Eliminar el grupo de tareas de Outlook especificado. |
+|[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Actualizar las propiedades modificables de un grupo de tareas de Outlook. |
+|[Delete](../api/outlooktaskgroup-delete.md) | Ninguno |Eliminar el grupo de tareas de Outlook especificado. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|changeKey|String|La versión del grupo de tareas.|
+|changeKey|Cadena|La versión del grupo de tareas.|
 |groupKey|Edm.Guid|El identificador GUID único para el grupo de tareas.|
-|id|String|El identificador de cadena único del grupo de tareas. Solo lectura.|
-|isDefaultGroup|Boolean|Es True si el grupo de tareas es el grupo de tareas predeterminada.|
-|name|String|El nombre del grupo de tareas.|
+|id|Cadena|El identificador de cadena único del grupo de tareas. Solo lectura.|
+|isDefaultGroup|Booleano|Es True si el grupo de tareas es el grupo de tareas predeterminada.|
+|name|Cadena|El nombre del grupo de tareas.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |taskFolders|colección de [outlookTaskFolder](outlooktaskfolder.md)| La colección de carpetas de tareas en el grupo de tareas. Solo lectura. Admite valores NULL.|
 

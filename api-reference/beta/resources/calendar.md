@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso calendar
 description: Un calendario que es un contenedor de eventos. Puede ser un calendario de un usuario o el calendario predeterminado de un grupo de Office 365.
-ms.openlocfilehash: 90be98acace678b45626f812150362dfeed1f52d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: baa681d57109654aa29eed11cef4768d1599ba13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830677"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -47,7 +48,7 @@ Un calendario que es un contenedor de eventos. Puede ser un calendario de un [us
 |canViewPrivateItems |Booleano |Es verdadero si el usuario puede leer elementos del calendario que se marcaron como privados; de lo contrario, es falso. |
 |changeKey|String|Identifica la versión del objeto “calendar”. Cada vez que se cambia el calendario, también se cambia changeKey. Esto permite que Exchange aplique los cambios en la versión correcta del objeto. Solo lectura.|
 |color|String|Especifica el tema de color para distinguir el calendario de otros calendarios en una interfaz de usuario. Los valores de propiedad son: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|hexColor|String|Un color que representa el calendario. El color está representado por un número hexadecimal de 6 dígitos, 3 bytes. Cada byte representa uno de los componentes rojos, verdes y azules del color, en el intervalo de 00 a FF en notación hexadecimal. |
+|hexColor|Cadena|Un color que representa el calendario. El color está representado por un número hexadecimal de 6 dígitos, 3 bytes. Cada byte representa uno de los componentes rojos, verdes y azules del color, en el intervalo de 00 a FF en notación hexadecimal. |
 |id|String|Identificador único del grupo. Solo lectura.|
 |isDefaultCalendar|Booleano|Es True si este calendario es el calendario del usuario de forma predeterminada, false en caso contrario.|
 |isShared |Booleano |Es True si el usuario ha compartido el calendario con otros usuarios, es false en caso contrario. Dado que solo el usuario que creó el calendario se puede compartir, **isShared** y **isSharedWithMe** no pueden ser true para el mismo usuario. |

@@ -2,12 +2,13 @@
 title: Crear vppToken
 description: Crea un nuevo objeto vppToken.
 author: tfitzmac
-ms.openlocfilehash: ab4c4c061f7a527583768382f309ef8c9adcb709
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 015cb03b806d3cd4fc79f690c4ad5e1aa11a072a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846924"
 ---
 # <a name="create-vpptoken"></a>Crear vppToken
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/vppTokens
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto vppToken.
@@ -60,10 +61,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el vppTo
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Estado de sincronización actual de la última sincronización de la aplicación que se activó con el Token del programa de compras por volumen de Apple. Los valores posibles son: `none`, `inProgress`, `completed` y `failed`. Los valores posibles son: `none`, `inProgress`, `completed` y `failed`.|
 |automaticallyUpdateApps|Booleano|Si las aplicaciones para el token VPP se actualizarán automáticamente o no.|
 |countryOrRegion|Cadena|Si las aplicaciones para el token VPP se actualizarán automáticamente o no.|
-|dataSharingConsentGranted|Boolean|Concede de consentimiento para uso compartido con el programa de compra de Apple por volumen de datos.|
-|displayName|String|Un administrador especifica el nombre descriptivo del token.|
-|locationName|String|Ubicación de token devuelto desde VPP de Apple.|
-|claimTokenManagementFromExternalMdm|Boolean|Administración de consentimiento para permitir que afirma token administración de MDM. externo|
+|dataSharingConsentGranted|Booleano|Concede de consentimiento para uso compartido con el programa de compra de Apple por volumen de datos.|
+|displayName|Cadena|Un administrador especifica el nombre descriptivo del token.|
+|locationName|Cadena|Ubicación de token devuelto desde VPP de Apple.|
+|claimTokenManagementFromExternalMdm|Booleano|Administración de consentimiento para permitir que afirma token administración de MDM. externo|
 
 
 

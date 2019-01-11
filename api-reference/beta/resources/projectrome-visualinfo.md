@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso visualInfo
 description: Un tipo complejo para que representa la propiedad **visualElements** en el objeto de actividad.
-ms.openlocfilehash: ac895e854051cb487fa9afd0ff9ada972b97aa19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3e1dd3d7e4ecfaf5053f839f0ac0d0039692b2a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087245"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855317"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso visualInfo
 
@@ -22,7 +23,7 @@ Si no se proporciona una ficha personalizada, se generará una tarjeta simple me
 
 ## <a name="properties"></a>Propiedades
 
-|Nombre | Tipo | Descripción|
+|Nombre | Tipo | Description|
 |:----|:------|:-----------|
 |texto de presentación | Cadena | Necesario. Breve descripción de texto de la actividad de usuario único (por ejemplo, el nombre de documento en los casos donde una actividad hace referencia a la creación de documentos)|
 |descripción | Cadena | Opcional. Descripción de texto más larga de la actividad de usuario único (ejemplo: nombre, primera oración y metadatos de documentos)|

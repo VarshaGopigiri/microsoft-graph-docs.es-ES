@@ -2,12 +2,13 @@
 title: Get calendarGroup
 description: Recupera las propiedades y relaciones de un objeto de grupo de calendarios.
 author: angelgolfer-ms
-ms.openlocfilehash: fce49730733537b14eff145a6f6acd9fe4d82485
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c29290064ec877f3e8dafd7173292fefb4c2e958
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848387"
 ---
 # <a name="get-calendargroup"></a>Get calendarGroup
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre          | Type   | Descripción               |
+| Nombre          | Tipo   | Descripción               |
 | :------------ | :----- | :------------------------ |
 | Autorización | string | {token} de portador. Obligatorio. |
 

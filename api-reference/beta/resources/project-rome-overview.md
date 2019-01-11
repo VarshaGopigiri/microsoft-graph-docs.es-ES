@@ -1,12 +1,13 @@
 ---
 title: 'Usar la API de Microsoft Graph para trabajar con Project Roma '
 description: 'Roma de proyecto es una iniciativa de Microsoft para crear una plataforma que permite a los programadores de la aplicación crear grandes experiencias entre el dispositivo. Roma Project permite diferentes capacidades que se conectan los distintos servicios y los extremos de cliente cuando los signos de usuario con el mismo Microsoft cuenta o trabajan o escuela cuenta. Esto le permite implementar experiencias entre el dispositivo y multiplataforma que se centran en las tareas de usuario en lugar de dispositivos. '
-ms.openlocfilehash: f779c04a76331d27fdcae6436e758bacfc052f8e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085448"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830005"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar la API de Microsoft Graph para trabajar con Project Roma 
 
@@ -53,7 +54,7 @@ Puede usar las siguientes API de gráfico de Microsoft para comunicarse con otro
 - [Enviar un comando a un dispositivo](../api/send-device-command.md)
 - [Obtener el estado del comando](../api/get-device-command-status.md)
 
-## <a name="notifications"></a>Notifications
+## <a name="notifications"></a>Notificaciones
 
 Puede usar las API de notificaciones en Microsoft Graph para entregar notificaciones a través de varios extremos que ha iniciado sesión en el mismo usuario en. Puede dirigir un usuario directamente al registrar las notificaciones en lugar de preocuparse acerca de las direcciones o canales de dispositivo. De esta forma, puede centrarse en el diseño de los escenarios de notificación derecho en un humanos centrada, en lugar de una manera centrada en el dispositivo. 
 

@@ -2,12 +2,13 @@
 title: 'Range: UsedRange'
 description: Devuelve el rango usado del objeto de rango especificado.
 author: lumine2008
-ms.openlocfilehash: a2a4d4a2de3b86b8682421a62e4e0b6b2cb7c2b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3ace6df8491945e405dab1f33cf628e9b97fabe4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862016"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -40,7 +41,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |valuesOnly|boolean|Opcional. Solo tiene en cuenta las celdas con valores como celdas usadas.|
 

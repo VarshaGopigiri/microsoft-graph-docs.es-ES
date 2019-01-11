@@ -2,12 +2,13 @@
 title: Tipo de recurso managedAppPolicyDeploymentSummary
 description: El objeto ManagedAppEntity es el tipo de entidad base para todos los demás tipos de entidad en flujos de trabajo de administración de aplicaciones.
 author: tfitzmac
-ms.openlocfilehash: 872a5685cce5d7c422035670eb10d72185fd344f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: edc039f5f5da1b0cf0798fcd7055d5239926acf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878081"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummary
 
@@ -25,12 +26,12 @@ El objeto ManagedAppEntity es el tipo de entidad base para todos los demás tipo
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|String|Todavía no documentado|
+|displayName|Cadena|Todavía no documentado|
 |configurationDeployedUserCount|Int32|Todavía no documentado|
 |lastRefreshTime|DateTimeOffset|Todavía no documentado|
 |configurationDeploymentSummaryPerApp|Colección [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Todavía no documentado|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

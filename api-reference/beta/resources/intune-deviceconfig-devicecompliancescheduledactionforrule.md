@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceComplianceScheduledActionForRule
 description: Acción programada para la regla
 author: tfitzmac
-ms.openlocfilehash: 912a0722b85857aa64daa5339cc7730a4c0413ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f8947a24a29b0ae4c53469306ada5141ee5ce5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847939"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Tipo de recurso deviceComplianceScheduledActionForRule
 
@@ -28,7 +29,7 @@ Acción programada para la regla
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |ruleName|String|Nombre de la regla a la que se aplica esta acción programada.|
 
 ## <a name="relationships"></a>Relaciones

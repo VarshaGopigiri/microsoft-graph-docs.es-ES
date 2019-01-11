@@ -2,12 +2,13 @@
 title: tipo de recurso runSchedule
 description: Ejecutar la programación de una secuencia de comandos de administración de dispositivo periódica.
 author: tfitzmac
-ms.openlocfilehash: 11fc574d87099560937af59f7045b9bf4a8630e8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e7221424f5bc6896f1ecbbea72edf1f78b9f5221
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831398"
 ---
 # <a name="runschedule-resource-type"></a>tipo de recurso runSchedule
 

@@ -2,12 +2,13 @@
 title: tipo de enumeración notificationTemplateBrandingOptions
 description: Opciones de personalización de marca para la plantilla de mensaje. La personalización de marca está definida en la consola de administración de Intune.
 author: tfitzmac
-ms.openlocfilehash: e42dcf06be05fce5659311187673549da828361a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db7707c904192547667c19d93085c7a1fc9081ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848891"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enumeración notificationTemplateBrandingOptions
 
@@ -17,9 +18,9 @@ ms.locfileid: "27304252"
 
 Opciones de personalización de marca para la plantilla de mensaje. La personalización de marca está definida en la consola de administración de Intune.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Ninguna personalización de marca.|
+|none|0|Ninguna personalización de marca.|
 |includeCompanyLogo|1|Incluir el logotipo de la compañía.|
 |includeCompanyName|2|Incluir el nombre de la compañía.|
 |includeContactInformation|4|Incluir información de contacto.|

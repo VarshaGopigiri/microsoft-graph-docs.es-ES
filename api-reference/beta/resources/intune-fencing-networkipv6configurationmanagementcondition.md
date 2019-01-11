@@ -2,12 +2,13 @@
 title: tipo de recurso networkIPv6ConfigurationManagementCondition
 description: Configuración de red de IPv6 se pueden definir las condiciones de administración basada en la configuración que se activará cuando un dispositivo detecta cierta IP. Una condición de administración de configuración IP sólo se considerarán TRUE cuando la conexión de red está activa.
 author: tfitzmac
-ms.openlocfilehash: de74fddad090993f6829180ba6f5eaea9cdaf59a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5bb68ac270082df51e5d91b1e7f08bc9c1a7cbf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305743"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879558"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv6ConfigurationManagementCondition
 
@@ -32,21 +33,21 @@ Hereda de [networkManagementCondition](../resources/intune-fencing-networkmanage
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la condición de administración. Valor asignado al crear generada por el sistema. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Nombre único para la condición de administración. Se usa en expresiones de condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|String|El nombre definido de administración de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|descripción|String|El administrador define la descripción de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|Cadena|Identificador único de la condición de administración. Valor asignado al crear generada por el sistema. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|Cadena|Nombre único para la condición de administración. Se usa en expresiones de condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|Cadena|El nombre definido de administración de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|descripción|Cadena|El administrador define la descripción de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|La hora en que se creó la condición de administración. Servicio generado al lado. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|La hora en que se modificó por última vez la condición de administración. Se actualizó el lado de servicio. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|eTag|String|ETag de la condición de administración. Se actualizó el lado de servicio. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|eTag|Cadena|ETag de la condición de administración. Se actualizó el lado de servicio. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|colección de [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Las plataformas aplicables para esta condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV6Prefix|String|La subred IPv6 esté conectado al. Por ejemplo, 2001:db8:: / 32|
-|ipV6Gateway|String|La dirección de puerta de enlace de IPv6 para. Por ejemplo 2001:db8::1|
+|ipV6Prefix|Cadena|La subred IPv6 esté conectado al. Por ejemplo, 2001:db8:: / 32|
+|ipV6Gateway|Cadena|La dirección de puerta de enlace de IPv6 para. Por ejemplo 2001:db8::1|
 |ipV6DNSServerList|Colección String|Un servidores DNS IPv6 configurada para el adaptador.|
 |dnsSuffixList|Colección String|Sufijos DNS válidos para la red actual. Por ejemplo, seattle.contoso.com|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |managementConditionStatements|colección de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Las instrucciones de condición de administración asociadas a la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 

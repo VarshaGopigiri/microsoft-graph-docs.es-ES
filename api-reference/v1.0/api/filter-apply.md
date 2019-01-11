@@ -1,12 +1,13 @@
 ---
 title: 'Filter: apply'
 description: Aplicar los criterios de filtro especificados en la columna especificada.
-ms.openlocfilehash: b60c3da521f2b5700650450d308b7f26fcd4d1a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7223c1b3d7cd75356c459f366c1a230eeb06e59
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846147"
 ---
 # <a name="filter-apply"></a>Filter: apply
 

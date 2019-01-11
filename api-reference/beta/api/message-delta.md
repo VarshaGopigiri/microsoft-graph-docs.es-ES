@@ -1,12 +1,13 @@
 ---
 title: 'mensaje: delta'
 description: Obtenga un conjunto de mensajes que se hayan agregado, eliminado o actualizado en una carpeta determinada.
-ms.openlocfilehash: 4e11da5eef5200028d527731f62a50f9d3f6dc8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 149acc68081d8497567f07fe6d58f4b42a0c031d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091028"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852062"
 ---
 # <a name="message-delta"></a>mensaje: delta
 
@@ -53,7 +54,7 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 

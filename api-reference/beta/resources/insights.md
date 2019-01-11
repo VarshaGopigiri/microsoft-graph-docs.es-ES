@@ -2,12 +2,13 @@
 title: tipo de recurso de conocimientos
 description: Perspectivas son relaciones calculadas utilizando análisis avanzado y técnicas de aprendizaje de una máquina. Por ejemplo, puede identificar documentos de OneDrive tendencias alrededor de los usuarios.
 author: simonhult
-ms.openlocfilehash: f3269134f4a80462359a11d603c3f843be0c62f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9d7a1f141e3b6834edfa784a509a2de7968650d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318602"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878095"
 ---
 # <a name="insights-resource-type"></a>tipo de recurso de conocimientos
 
@@ -25,7 +26,7 @@ Se devuelve cada insight con un `resourceVisualization` y `resourceReference` el
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación      | Tipo          | Descripción  |
+| Relación      | Tipo          | Description  |
 | ------------- |---------------| -------------|
 | tendencias      | Colección de [tendencias](insights-trending.md)       | Identificación de documentos de tendencias de relación calculada. Tendencias de documentos pueden almacenarse en OneDrive o en sitios de SharePoint.   |
 | used      | Colección [se usa](insights-used.md)       | Calcula la relación de identificación de documentos, ver y modificar por un usuario. Incluye documentos que el usuario usado en OneDrive para la empresa, SharePoint, que se abren como datos adjuntos de correo electrónico y como datos adjuntos de vínculo de orígenes como cuadro de lista desplegable y unidad de Google.  |

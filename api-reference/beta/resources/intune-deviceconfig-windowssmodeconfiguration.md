@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsSModeConfiguration
 description: Las posibles opciones para configurar el modo de S desbloquear
 author: tfitzmac
-ms.openlocfilehash: 592eb58a13d1f78caadb5b46acac5b43e6c97384
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9e37bd51be1b5476e8b4590b92b3caeeed92ac45
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830740"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>tipo de enumeración windowsSModeConfiguration
 
@@ -17,7 +18,7 @@ ms.locfileid: "27344705"
 
 Las posibles opciones para configurar el modo de S desbloquear
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |noRestriction|0|Esta opción quitará todas las restricciones para desbloquear el modo S - predeterminada|
 |bloque|1|Esta opción bloqueará el usuario para desbloquear el dispositivo desde el modo de S|

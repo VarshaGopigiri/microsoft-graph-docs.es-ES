@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso daylightTimeZoneOffset
 description: Especifica cuándo una zona horaria cambia de la hora estándar al horario de verano.
-ms.openlocfilehash: 1504a3c1bb1b2d6c691aadf1d073a95453f76d2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 37e08ec0e695fd245678510ac4a40bc978b1a93e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825609"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Tipo de recurso daylightTimeZoneOffset
 

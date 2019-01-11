@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamsTab
 description: 'Una teamsTab es una ficha que ha anclado (adjunto) a un canal dentro de un equipo. '
-ms.openlocfilehash: 102d4c0b766d8a0d9bdf22cb2ed76f5e06d87ad5
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 34afb140ef1fceec9ac48d851725626bf9d452f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283622"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890569"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
@@ -39,7 +40,7 @@ Una teamsTab es una [ficha](../resources/teamstab.md) que ha anclado (adjunto) a
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo   | Descripción |
+| Relación | Tipo   | Description |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md) | La aplicación que está vinculada a la ficha. |
 

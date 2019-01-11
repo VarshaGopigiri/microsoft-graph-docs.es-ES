@@ -2,12 +2,13 @@
 title: Obtener evento
 description: Obtenga las propiedades y relaciones del objeto event especificado.
 author: angelgolfer-ms
-ms.openlocfilehash: 0dc01844049a2022499436518fe71e6b14c4ac9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 491bf4c60d8de5f85b8ddff91ebbc0703c7cdd97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828997"
 ---
 # <a name="get-event"></a>Obtener evento
 
@@ -68,7 +69,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Prefer: outlook.timezone | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |

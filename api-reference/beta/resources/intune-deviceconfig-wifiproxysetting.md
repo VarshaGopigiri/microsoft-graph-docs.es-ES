@@ -2,12 +2,13 @@
 title: tipo de enumeración wiFiProxySetting
 description: Configuración de Proxy de Wi-Fi.
 author: tfitzmac
-ms.openlocfilehash: 27355dbd26fd889c334843d831ef3f00c38c6591
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cbd4ff0eefb8ada0d71b78c51836638fdfccd59f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855359"
 ---
 # <a name="wifiproxysetting-enum-type"></a>tipo de enumeración wiFiProxySetting
 
@@ -17,9 +18,9 @@ ms.locfileid: "27332343"
 
 Configuración de Proxy de Wi-Fi.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|No hay Proxy.|
+|none|0|No hay Proxy.|
 |Manual|1|Configuración manual de Proxy a través de la dirección y el puerto.|
 |Automático|2|Configuración automática de Proxy a través de la dirección URL.|
 

@@ -2,12 +2,13 @@
 title: Eliminar androidManagedAppProtection
 description: Elimina un androidManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: a1031d1e6d05f5101ece05e8374ab0e3c0ff87d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cda9754696dde4ac26c322efd7588f1553b2e350
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864816"
 ---
 # <a name="delete-androidmanagedappprotection"></a>Eliminar androidManagedAppProtection
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProte
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

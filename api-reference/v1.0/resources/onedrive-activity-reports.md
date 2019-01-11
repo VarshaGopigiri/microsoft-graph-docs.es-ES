@@ -1,12 +1,13 @@
 ---
 title: Obtener informe de actividades de OneDrive
 description: Use los informes de actividades de OneDrive para obtener la actividad de cada usuario con licencia para usar OneDrive al analizar sus interacciones con archivos en OneDrive. Estos informes pueden ayudarle a comprender el nivel de colaboración al mostrarle el número de archivos compartidos.
-ms.openlocfilehash: 8568ccb0b77c8eb5f33bc44a72d9ccc5ae8dda0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bda056970d9147645926dc8753a747f3e6a38662
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878739"
 ---
 # <a name="onedrive-activity-reports"></a>Obtener informe de actividades de OneDrive
 

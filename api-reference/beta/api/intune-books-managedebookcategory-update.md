@@ -2,12 +2,13 @@
 title: Actualizar managedEBookCategory
 description: Actualizar las propiedades de un objeto managedEBookCategory.
 author: tfitzmac
-ms.openlocfilehash: 5dea4bce1750617367f972f64a734ac151d2676f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef8970fb32b94b17b9277c3d30fc72bbc582ea87
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853197"
 ---
 # <a name="update-managedebookcategory"></a>Actualizar managedEBookCategory
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [managedEBookCategory](../resources/intune-books-managedebookcategory.md) .
@@ -49,7 +50,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|String|La clave de la entidad.|
-|displayName|String|El nombre de la categoría del libro electrónico.|
+|displayName|Cadena|El nombre de la categoría del libro electrónico.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora que se modificó por última vez el ManagedEBookCategory.|
 
 

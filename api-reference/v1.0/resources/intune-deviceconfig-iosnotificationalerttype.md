@@ -2,12 +2,13 @@
 title: tipo de enumeración iosNotificationAlertType
 description: Tipo de configuración de la alerta de notificación.
 author: tfitzmac
-ms.openlocfilehash: 26da4afdec3adeadaf4dd1f8513243d411f430c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7530a0d63ce263636ae822c25f78deb57cf8083a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309530"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846889"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>tipo de enumeración iosNotificationAlertType
 
@@ -15,12 +16,12 @@ ms.locfileid: "27309530"
 
 Tipo de configuración de la alerta de notificación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
 |Banner|1|Pancarta.|
 |modal|2|Modal.|
-|ninguno|3|Ninguno.|
+|none|3|Ninguno.|
 
 
 

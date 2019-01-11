@@ -2,12 +2,13 @@
 title: Acción resetPasscode
 description: Restablecer código de acceso
 author: tfitzmac
-ms.openlocfilehash: 89a8cbd6bfc1d0208d22ea4e43b48f2e1c6963da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: be84428cde043885d67509a6e023f16cccd03f64
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315207"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882176"
 ---
 # <a name="resetpasscode-action"></a>Acción resetPasscode
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

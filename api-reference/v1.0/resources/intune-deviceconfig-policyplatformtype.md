@@ -2,12 +2,13 @@
 title: tipo de enumeración policyPlatformType
 description: Tipos de plataformas de Suppoorted para las directivas.
 author: tfitzmac
-ms.openlocfilehash: d661dbb559f1bcff6c3807ef9b9ec59b66660ac0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a61b0f206299e4ddff48570f2639c91a514f81f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343557"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855331"
 ---
 # <a name="policyplatformtype-enum-type"></a>tipo de enumeración policyPlatformType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27343557"
 
 Tipos de plataformas de Suppoorted para las directivas.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |Android|0|Android.|
 |iOS|2|iOS.|

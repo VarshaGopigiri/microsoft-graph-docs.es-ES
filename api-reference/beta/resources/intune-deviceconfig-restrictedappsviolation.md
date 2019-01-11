@@ -2,12 +2,13 @@
 title: tipo de recurso restrictedAppsViolation
 description: Infracción de perfil de configuración de aplicaciones restringido por dispositivo por usuario
 author: tfitzmac
-ms.openlocfilehash: cb614bc56f27281198fcecb73bae2b7beddfa266
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aefd9996805f0ee454bebc8871662b0ceac05a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849381"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>tipo de recurso restrictedAppsViolation
 
@@ -28,13 +29,13 @@ Infracción de perfil de configuración de aplicaciones restringido por disposit
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para el objeto. Creados a partir de accountId, deviceId, Id. de directiva y userId|
-|userId|String|Identificador único del usuario, debe ser el Guid|
-|userName|String|Nombre de usuario|
-|managedDeviceId|String|Identificador único de dispositivos administrados, debe ser el Guid|
-|deviceName|String|Nombre de dispositivo|
-|deviceConfigurationId|String|Identificador único de dispositivo configuración perfil, debe ser el Guid|
-|deviceConfigurationName|String|Nombre del perfil de configuración de dispositivo|
+|id|Cadena|Identificador único para el objeto. Creados a partir de accountId, deviceId, Id. de directiva y userId|
+|userId|Cadena|Identificador único del usuario, debe ser el Guid|
+|userName|Cadena|Nombre de usuario|
+|managedDeviceId|Cadena|Identificador único de dispositivos administrados, debe ser el Guid|
+|deviceName|Cadena|Nombre de dispositivo|
+|deviceConfigurationId|Cadena|Identificador único de dispositivo configuración perfil, debe ser el Guid|
+|deviceConfigurationName|Cadena|Nombre del perfil de configuración de dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` y `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado de aplicaciones restringidos. Los valores posibles son: `prohibitedApps` y `notApprovedApps`.|
 |restrictedApps|colección de [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicaciones restringidas infringidas|

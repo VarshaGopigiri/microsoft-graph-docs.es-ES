@@ -2,12 +2,13 @@
 title: Lista usada
 description: Insight calculado que devuelve la lista de archivos que se utiliza con un usuario.
 author: simonhult
-ms.openlocfilehash: 17f47e4e82d5cb038438b5d164c76371221de11a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a04c49447f0b615c39ad46aeede897fb2b281b5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854196"
 ---
 # <a name="list-used"></a>Lista usada
 

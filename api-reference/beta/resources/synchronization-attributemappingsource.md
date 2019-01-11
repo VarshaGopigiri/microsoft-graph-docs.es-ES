@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso attributeMappingSource
 description: 'Define cómo debe ser un valor extrajo (o transforma) desde el objeto de origen. Por ejemplo, puede ser un valor simple tomado de un atributo determinado en el objeto de origen, o puede ser una expresión de cadena concatenación/extracción/sustitución en función de varios atributos de origen más compleja. '
-ms.openlocfilehash: aeb39c829d7be081fe9ee08aa5845e6ced1194dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825014"
 ---
 # <a name="attributemappingsource-resource-type"></a>tipo de recurso attributeMappingSource
 
@@ -16,12 +17,12 @@ Define cómo debe ser un valor extrajo (o transforma) desde el objeto de origen.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad              | Tipo                      | Descripción               |
+| Propiedad              | Tipo                      | Description               |
 |:----------------------|:--------------------------|:--------------------------|
-|expresión             |String                     |Representación de la expresión equivalente de este objeto **attributeMappingSource** .|
-|name                   |String                     |Parámetro nombre de origen de la asignación. Según el valor de la propiedad **type** , esto puede ser el nombre de la función, el nombre del atributo de origen, o un valor constante que se va a utilizar. |
-|parameters             |colección de [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Si este objeto representa una función, enumera los parámetros de la función. Parámetros constan de objetos de **attributeMappingSource** ellos mismos, lo que permite para expresiones complejas. Si no es del **tipo** `Function`, esta propiedad será null o vacío matriz. |
-|type                   | String                    |El tipo de este origen de asignación de atributo. Los valores posibles son: `Attribute`, `Constant` y `Function`. El valor predeterminado es `Attribute`.| 
+|expresión             |Cadena                     |Representación de la expresión equivalente de este objeto **attributeMappingSource** .|
+|name                   |Cadena                     |Parámetro nombre de origen de la asignación. Según el valor de la propiedad **type** , esto puede ser el nombre de la función, el nombre del atributo de origen, o un valor constante que se va a utilizar. |
+|parámetros             |colección de [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Si este objeto representa una función, enumera los parámetros de la función. Parámetros constan de objetos de **attributeMappingSource** ellos mismos, lo que permite para expresiones complejas. Si no es del **tipo** `Function`, esta propiedad será null o vacío matriz. |
+|type                   | Cadena                    |El tipo de este origen de asignación de atributo. Los valores posibles son: `Attribute`, `Constant` y `Function`. El valor predeterminado es `Attribute`.| 
 
 ## <a name="json-representation"></a>Representación JSON
 

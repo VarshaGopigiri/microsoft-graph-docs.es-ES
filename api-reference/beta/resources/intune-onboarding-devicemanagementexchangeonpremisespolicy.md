@@ -2,12 +2,13 @@
 title: tipo de recurso deviceManagementExchangeOnPremisesPolicy
 description: Entidad de singleton que representa la directiva local de Exchange configurada para un inquilino.
 author: tfitzmac
-ms.openlocfilehash: 84ef0e5794ed6cf7986bde7d08b876e54e7a6c8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337215"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855002"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>tipo de recurso deviceManagementExchangeOnPremisesPolicy
 
@@ -25,14 +26,14 @@ Entidad de singleton que representa la directiva local de Exchange configurada p
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |notificationContent|Binario|Texto de notificación que se van a enviar a los usuarios en cuarentena por esta directiva. Se trata de una matriz de bytes codificada con UTF8 HTML.|
 |defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Estado de acceso predeterminado en Exchange. Esta regla se aplica globalmente a toda la organización de Exchange. Los valores posibles son: `none`, `allow`, `block` y `quarantine`.|
 |accessRules|colección de [deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)|La lista de acceso de los dispositivos de reglas en Exchange. Las reglas de acceso se aplican globalmente a toda la organización de Exchange|
 |knownDeviceClasses|colección de [deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|La lista de clases de dispositivo conocidos para Exchange|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|La configuración de acceso condicional local de Exchange. El acceso condicional local requiere que los dispositivos estén inscritos y sean compatibles para tener acceso al correo|
 

@@ -2,12 +2,13 @@
 title: Actualizar managedDeviceCertificateState
 description: Actualizar las propiedades de un objeto managedDeviceCertificateState.
 author: tfitzmac
-ms.openlocfilehash: 14c73bf219d8a568f8df0c4c55e3a1e3d0516abd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73f3424c416b36695dfae18dc4db6dbf085db685
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878179"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Actualizar managedDeviceCertificateState
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
@@ -63,7 +64,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma de dispositivo. Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` y `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Uso de la clave. Los valores posibles son: `keyEncipherment` y `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Unidades del período de validez. Los valores posibles son: `days`, `months` y `years`.|
@@ -72,20 +73,20 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nombre de sujeto. Los valores posibles son: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId` y `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Formato de nombre alternativo de sujeto. Los valores posibles son: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` y `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revocar el estado. Los valores posibles son: `none`, `pending`, `issued`, `failed` y `revoked`.|
-|certificateProfileDisplayName|String|Nombre para mostrar de perfil de certificado|
+|certificateProfileDisplayName|Cadena|Nombre para mostrar de perfil de certificado|
 |deviceDisplayName|String|Nombre para mostrar del dispositivo|
-|userDisplayName|String|Nombre para mostrar del usuario.|
+|userDisplayName|Cadena|Nombre para mostrar del usuario.|
 |certificateExpirationDateTime|DateTimeOffset|Fecha de caducidad del certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Último cambio de estado de emisión de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Último cambio de estado de emisión de certificado|
-|certificateIssuer|String|Emisor|
-|certificateThumbprint|String|Huella digital|
-|númeroSerieCertificado|String|Número de serie|
+|certificateIssuer|Cadena|Emisor|
+|certificateThumbprint|Cadena|Huella digital|
+|númeroSerieCertificado|Cadena|Número de serie|
 |certificateKeyLength|Int32|Longitud de clave|
-|certificateEnhancedKeyUsage|String|Uso mejorado de clave|
+|certificateEnhancedKeyUsage|Cadena|Uso mejorado de clave|
 |certificateValidityPeriod|Int32|Período de validez|
-|certificateSubjectNameFormatString|String|Cadena de formato de nombre de sujeto para formatos de nombre de sujeto personalizado|
-|certificateSubjectAlternativeNameFormatString|String|Cadena de formato de nombre alternativo de sujeto para formatos personalizados|
+|certificateSubjectNameFormatString|Cadena|Cadena de formato de nombre de sujeto para formatos de nombre de sujeto personalizado|
+|certificateSubjectAlternativeNameFormatString|Cadena|Cadena de formato de nombre alternativo de sujeto para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Fecha de emisión|
 |certificateErrorCode|Int32|Código de error|
 

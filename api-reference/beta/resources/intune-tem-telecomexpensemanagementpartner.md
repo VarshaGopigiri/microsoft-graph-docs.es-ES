@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso telecomExpenseManagementPartner
 description: Los recursos telecomExpenseManagementPartner representan los metadatos y el estado de un servicio TEM específico. Una vez que su organización haya incorporado a un partner, este puede estar habilitado o no para activar o desactivar la funcionalidad TEM.
-ms.openlocfilehash: 1418f40b5de113e3d46a20e6bf2bb190709def89
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5fdc80b67c92fb7e47a38fd57d3a52db3459763a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088860"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825301"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Tipo de recurso telecomExpenseManagementPartner
 
@@ -27,9 +28,9 @@ Los recursos telecomExpenseManagementPartner representan los metadatos y el esta
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único del partner de TEM.|
-|displayName|String|Nombre para mostrar del partner de TEM.|
-|url|String|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
+|id|Cadena|Identificador único del partner de TEM.|
+|displayName|Cadena|Nombre para mostrar del partner de TEM.|
+|url|Cadena|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
 |appAuthorized|Booleano|Si se ha autorizado a la aplicación de AAD del partner para que obtenga acceso a Intune.|
 |enabled|Booleano|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|

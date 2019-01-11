@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationError
 description: Representa un error que se produjo durante el proceso de sincronización.
-ms.openlocfilehash: a1e3725151a4e36772cd3b6079f787370f4c85dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc6b58444ac56303bfd2e41f1fcae17658f6aea9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847246"
 ---
 # <a name="synchronizationerror-resource-type"></a>tipo de recurso synchronizationError
 
@@ -19,7 +20,7 @@ Representa un error que se produjo durante el proceso de sincronización.
 <!-- Add descriptions for the properties. -->
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|código|String||
+|código|Cadena||
 |message|String||
 |tenantActionable|Booleano||
 

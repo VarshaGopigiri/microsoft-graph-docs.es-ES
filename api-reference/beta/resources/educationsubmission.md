@@ -2,12 +2,13 @@
 title: tipo de recurso educationSubmission
 description: Envíos de pertenecen a una asignación. Un envío representa los recursos que un turn individual (o de grupo) en una asignación y la calificación o comentarios que se devuelve.
 author: dipakboyed
-ms.openlocfilehash: 5535aef4db988e0f4c4417128b5b53bbed884cc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92d0799b0052383d1ec12511ce98b3263245da9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847820"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso educationSubmission
 
@@ -25,23 +26,23 @@ Envíos se crean automáticamente cuando se publica una asignación. El envío p
 |[Obtener educationSubmission](../api/educationsubmission-get.md) | [educationSubmission](educationsubmission.md) |Leer las propiedades y relaciones de un objeto **educationSubmission** .|
 |[Recursos de la lista](../api/educationsubmission-list-resources.md) |colección de [educationSubmissionResource](educationsubmissionresource.md)| Obtener una colección de objetos **educationSubmissionResource** .|
 |[Lista submittedResources](../api/educationsubmission-list-submittedresources.md) |colección de [educationSubmissionResource](educationsubmissionresource.md)| Obtener una colección de objetos **educationSubmissionResource** .|
-|[Actualizar](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Actualizar un objeto **educationSubmission** . |
+|[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Actualizar un objeto **educationSubmission** . |
 |[Return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Un profesor usa retorno para indicar que se puede mostrar los comentarios de remuneración al alumno.|
 |[Submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Un estudiante usos de envío para activar en la asignación. Esto copiará los recursos en la carpeta **submittedResources** para la clasificación y actualiza el estado.|
 |[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Un alumno utiliza la unsubmit para mover el estado de la presentación de back enviado a trabajar. Esto copiará los recursos en la carpeta **workingResources** para la clasificación y actualiza el estado.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |comentarios|[educationFeedback](educationfeedback.md)|Contiene la propiedad comentarios que almacena las notas del profesor volver a los alumnos.|
 |grade|[educationAssignmentGrade](educationassignmentgrade.md)|Contiene la información de calificación que un profesor se asigna a este envío.|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |destinatario|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Asignado a este envío.|
 |releasedBy|[identitySet](identityset.md)|Usuario que ha movido el estado de este envío liberar.|
 |releasedDateTime|DateTimeOffset|Momento en el tiempo cuando se publicó el envío. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |returnedBy|[identitySet](identityset.md)|Usuario que ha movido el estado de este envío a devolver.|
 |returnedDateTime|DateTimeOffset|Momento en el tiempo cuando se devolvió el envío. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|String|Carpeta donde deben almacenarse todos los recursos de archivo para este envío.|
+|resourcesFolderUrl|Cadena|Carpeta donde deben almacenarse todos los recursos de archivo para este envío.|
 |status|string| Solo lectura. Los valores posibles son: `working`, `submitted`, `released` y `returned`.|
 |submittedBy|[identitySet](identityset.md)|Usuario que ha había movido el recurso en el estado enviado.|
 |submittedDateTime|DateTimeOffset|Momento en el tiempo cuando se ha movido el envío en el estado enviado. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
@@ -49,7 +50,7 @@ Envíos se crean automáticamente cuando se publica una asignación. El envío p
 |unsubmittedDateTime|DateTimeOffset|Momento en el tiempo cuando el envío se ha movido de enviado en el estado de funcionamiento. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |recursos|colección de [educationSubmissionResource](educationsubmissionresource.md)| Admite valores NULL.|
 |submittedResources|colección de [educationSubmissionResource](educationsubmissionresource.md)| Solo lectura. Admite valores NULL.|

@@ -2,12 +2,13 @@
 title: Actualizar restrictedAppsViolation
 description: Actualizar las propiedades de un objeto restrictedAppsViolation.
 author: tfitzmac
-ms.openlocfilehash: a4f5886d0957ec1ac266ac4c4b9259265fbc0a55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 139a87dafc438e9710ff9494f8477658c61cca0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891577"
 ---
 # <a name="update-restrictedappsviolation"></a>Actualizar restrictedAppsViolation
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) .
@@ -47,13 +48,13 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para el objeto. Creados a partir de accountId, deviceId, Id. de directiva y userId|
-|userId|String|Identificador único del usuario, debe ser el Guid|
-|userName|String|Nombre de usuario|
-|managedDeviceId|String|Identificador único de dispositivos administrados, debe ser el Guid|
-|deviceName|String|Nombre de dispositivo|
-|deviceConfigurationId|String|Identificador único de dispositivo configuración perfil, debe ser el Guid|
-|deviceConfigurationName|String|Nombre del perfil de configuración de dispositivo|
+|id|Cadena|Identificador único para el objeto. Creados a partir de accountId, deviceId, Id. de directiva y userId|
+|userId|Cadena|Identificador único del usuario, debe ser el Guid|
+|userName|Cadena|Nombre de usuario|
+|managedDeviceId|Cadena|Identificador único de dispositivos administrados, debe ser el Guid|
+|deviceName|Cadena|Nombre de dispositivo|
+|deviceConfigurationId|Cadena|Identificador único de dispositivo configuración perfil, debe ser el Guid|
+|deviceConfigurationName|Cadena|Nombre del perfil de configuración de dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile` y `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado de aplicaciones restringidos. Los valores posibles son: `prohibitedApps` y `notApprovedApps`.|
 |restrictedApps|colección de [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicaciones restringidas infringidas|

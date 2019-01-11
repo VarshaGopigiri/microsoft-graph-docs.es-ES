@@ -2,12 +2,13 @@
 title: 'RangeBorderCollection: ItemAt'
 description: Obtiene un objeto de borde mediante su índice.
 author: lumine2008
-ms.openlocfilehash: 5a35f6592acd7735453da24e0f3e901d0a4af427
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a67fbb3e66a5f29dbd146f72b3457fcd4c8f5a80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315361"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863024"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -38,7 +39,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/itemAt
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|Int32|Valor de índice del objeto que se va a recuperar. Indizado con cero.|
 

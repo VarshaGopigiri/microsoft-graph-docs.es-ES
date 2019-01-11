@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso impossibleTravelRiskEvent
 description: Un evento de riesgo detectado por Azure Active Directory protección de identidad donde se producen inicios de sesión de cuenta dos desde ubicaciones atípicos para el usuario y sería imposible de viajes entre las ubicaciones de la duración entre la información de inicio de sesión complementos. completa acerca de eventos de riesgo pueden encontrarse en la documentación de protección de la identidad de AD de Azure.
-ms.openlocfilehash: 38e61927121f520e79fd1fec8b8e6443fa8b76e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9ce064a5ea724b498f3290f630a4169b1aef897
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083453"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846455"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>tipo de recurso impossibleTravelRiskEvent
 
@@ -22,7 +23,7 @@ Un evento de riesgo detectado por la [Protección de identidad de Azure Active D
 |[Obtener impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Leer las propiedades y las relaciones del objeto impossibleTravelRiskEvent.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| La fecha y hora en que se ha cerrado el evento de riesgo|
 |createdDateTime|dateTimeOffset| La fecha y hora en que se creó el evento de riesgo. Siempre es mayor o igual que la fecha y hora del evento riesgo propio. Ésta es la propiedad correcta para utilizar como filtro al consultar los eventos de riesgo.|
@@ -44,7 +45,7 @@ Un evento de riesgo detectado por la [Protección de identidad de Azure Active D
 |userPrincipalName|string| El nombre principal de usuario del usuario en riesgo|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Solo lectura. Admite valores NULL.|
 

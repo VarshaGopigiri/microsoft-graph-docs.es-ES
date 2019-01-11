@@ -2,12 +2,13 @@
 title: tipo de enumeración androidEapType
 description: Tipos de configuración de autenticación extensible (EAP) de protocolo.
 author: tfitzmac
-ms.openlocfilehash: 6a1133fa83c2daba414530eb46191f7263953bcd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 009000adbe5f84628bd7f15375391cd2c026e7e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852819"
 ---
 # <a name="androideaptype-enum-type"></a>tipo de enumeración androidEapType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27333232"
 
 Tipos de configuración de autenticación extensible (EAP) de protocolo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |eapTls|13|Extensible Authentication Protocol-Transport Layer Security (EAP-TLS).|
 |eapTtls|21|Autenticación extensible Protocolo de túnel Transport Layer Security (EAP-TTLS).|

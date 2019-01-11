@@ -2,12 +2,13 @@
 title: tipo de recurso mobileAppTroubleshootingEvent
 description: Estado de la instalación (evento) que representa una aplicación de dispositivo de los usuarios.
 author: tfitzmac
-ms.openlocfilehash: 92b16d0dd3678aed8cec810f27172e05f37f1ad8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8441015f594d227066db39f3f643cc8136637668
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846371"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>tipo de recurso mobileAppTroubleshootingEvent
 
@@ -31,11 +32,11 @@ Hereda de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshoo
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID del objeto. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|id|Cadena|UUID del objeto. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|Hora en que ocurrió el evento. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|correlationId|String|Id. utilizado para rastrear el error en el servicio. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|managedDeviceIdentifier|String|Identificador del dispositivo creado o recopilado por Intune.|
-|userId|String|Identificador del usuario que intentó inscribir el dispositivo.|
+|correlationId|Cadena|Id. utilizado para rastrear el error en el servicio. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|managedDeviceIdentifier|Cadena|Identificador del dispositivo creado o recopilado por Intune.|
+|userId|Cadena|Identificador del usuario que intentó inscribir el dispositivo.|
 |applicationId|cadena|Identificador de la aplicación Intune.|
 |historial de|colección de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Solución de problemas de elemento de historial de aplicación de Mobile Intune|
 

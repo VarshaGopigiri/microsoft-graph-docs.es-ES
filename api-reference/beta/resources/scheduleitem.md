@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso scheduleItem
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: a7a31f47cde92549a72299b22a40b10c6f7845c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e5d14826a27153af27648484554ec864d62ed6c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890436"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
 
@@ -21,8 +22,8 @@ Un elemento que se describe la disponibilidad de un usuario correspondiente a un
 |isPrivate |Booleano |La sensibilidad del evento correspondiente. Es True si el evento está marcado como `private`, false en caso contrario. |
 |location |String | La ubicación donde se conservan o atendido desde el evento correspondiente. Opcional.|
 |inicio |[dateTimeTimeZone](datetimetimezone.md) |La fecha, hora y zona horaria que se inicia el evento correspondiente. |
-|status |String | El estado de disponibilidad del usuario o recurso durante el evento correspondiente. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | Línea de asunto del evento correspondiente. Opcional.|
+|status |Cadena | El estado de disponibilidad del usuario o recurso durante el evento correspondiente. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
+|subject |Cadena | Línea de asunto del evento correspondiente. Opcional.|
 
 
 ## <a name="json-representation"></a>Representación JSON

@@ -2,12 +2,13 @@
 title: getTopMobileApps (función)
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 03157e744358f4d76e781d33ae056104cf0a1130
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f9299e2de7dca455d192637eba84ccc553d434
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322732"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879502"
 ---
 # <a name="gettopmobileapps-function"></a>getTopMobileApps (función)
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
@@ -46,7 +47,7 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|status|String|Todavía no documentado|
+|status|Cadena|Todavía no documentado|
 |count|Int64|Todavía no documentado|
 
 

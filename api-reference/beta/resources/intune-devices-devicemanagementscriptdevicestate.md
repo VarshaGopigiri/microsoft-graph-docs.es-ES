@@ -2,12 +2,13 @@
 title: tipo de recurso deviceManagementScriptDeviceState
 description: Contiene las propiedades de dispositivo de estado de la secuencia de comandos de administración de dispositivos de ejecución.
 author: tfitzmac
-ms.openlocfilehash: 5667de5351ea3130ab0c3e00a55013ada66ed01a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d67b7a43817864906984ce21c90536572b0747d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890541"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso deviceManagementScriptDeviceState
 
@@ -28,15 +29,15 @@ Contiene las propiedades de dispositivo de estado de la secuencia de comandos de
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad de estado de dispositivo de secuencia de comandos de dispositivo administración.|
+|id|Cadena|Clave de la entidad de estado de dispositivo de secuencia de comandos de dispositivo administración.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado de la última ejecución de la secuencia de comandos de administración de dispositivos. Los valores posibles son: `unknown`, `success` y `fail`.|
-|resultMessage|String|Detalles de los resultados de la ejecución.|
+|resultMessage|Cadena|Detalles de los resultados de la ejecución.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez que se ejecuta la secuencia de comandos de administración de dispositivos.|
 |errorCode|Int32|Código de error correspondiente a la ejecución de la secuencia de comandos de administración de dispositivos con errores.|
 |errorDescription|Cadena|Descripción del error correspondiente a la ejecución de la secuencia de comandos de administración de dispositivos con errores.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|Los dispositivos administrados que se ejecuta la secuencia de comandos de administración de dispositivos.|
 
