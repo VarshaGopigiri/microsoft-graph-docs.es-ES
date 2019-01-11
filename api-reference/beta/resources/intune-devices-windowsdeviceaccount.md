@@ -2,29 +2,30 @@
 title: Tipo de recurso windowsDeviceAccount
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 9ba97e6eadfe188b0e8c9f3ef90a56f738bf1993
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9625f702bda3057f0cfe2e4b376e0adb1523238
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326967"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876996"
 ---
-# <a name="windowsdeviceaccount-resource-type"></a><span data-ttu-id="cc5ac-103">Tipo de recurso windowsDeviceAccount</span><span class="sxs-lookup"><span data-stu-id="cc5ac-103">windowsDeviceAccount resource type</span></span>
+# <a name="windowsdeviceaccount-resource-type"></a><span data-ttu-id="bbb8e-103">Tipo de recurso windowsDeviceAccount</span><span class="sxs-lookup"><span data-stu-id="bbb8e-103">windowsDeviceAccount resource type</span></span>
 
-> <span data-ttu-id="cc5ac-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="cc5ac-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cc5ac-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="cc5ac-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bbb8e-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="bbb8e-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bbb8e-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="bbb8e-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="cc5ac-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="cc5ac-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bbb8e-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="bbb8e-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="cc5ac-107">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="cc5ac-107">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="cc5ac-108">Propiedades</span><span class="sxs-lookup"><span data-stu-id="cc5ac-108">Properties</span></span>
-|<span data-ttu-id="cc5ac-109">Propiedad</span><span class="sxs-lookup"><span data-stu-id="cc5ac-109">Property</span></span>|<span data-ttu-id="cc5ac-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="cc5ac-110">Type</span></span>|<span data-ttu-id="cc5ac-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="cc5ac-111">Description</span></span>|
+<span data-ttu-id="bbb8e-107">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="bbb8e-107">Not yet documented</span></span>
+## <a name="properties"></a><span data-ttu-id="bbb8e-108">Propiedades</span><span class="sxs-lookup"><span data-stu-id="bbb8e-108">Properties</span></span>
+|<span data-ttu-id="bbb8e-109">Propiedad</span><span class="sxs-lookup"><span data-stu-id="bbb8e-109">Property</span></span>|<span data-ttu-id="bbb8e-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="bbb8e-110">Type</span></span>|<span data-ttu-id="bbb8e-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="bbb8e-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cc5ac-112">password</span><span class="sxs-lookup"><span data-stu-id="cc5ac-112">password</span></span>|<span data-ttu-id="cc5ac-113">String</span><span class="sxs-lookup"><span data-stu-id="cc5ac-113">String</span></span>|<span data-ttu-id="cc5ac-114">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="cc5ac-114">Not yet documented</span></span>|
+|<span data-ttu-id="bbb8e-112">password</span><span class="sxs-lookup"><span data-stu-id="bbb8e-112">password</span></span>|<span data-ttu-id="bbb8e-113">String</span><span class="sxs-lookup"><span data-stu-id="bbb8e-113">String</span></span>|<span data-ttu-id="bbb8e-114">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="bbb8e-114">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="cc5ac-115">Relaciones</span><span class="sxs-lookup"><span data-stu-id="cc5ac-115">Relationships</span></span>
-<span data-ttu-id="cc5ac-116">Ninguna</span><span class="sxs-lookup"><span data-stu-id="cc5ac-116">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="cc5ac-117">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="cc5ac-117">JSON Representation</span></span>
-<span data-ttu-id="cc5ac-118">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="cc5ac-118">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="bbb8e-115">Relaciones</span><span class="sxs-lookup"><span data-stu-id="bbb8e-115">Relationships</span></span>
+<span data-ttu-id="bbb8e-116">Ninguna</span><span class="sxs-lookup"><span data-stu-id="bbb8e-116">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bbb8e-117">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="bbb8e-117">JSON Representation</span></span>
+<span data-ttu-id="bbb8e-118">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="bbb8e-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsDeviceAccount"
