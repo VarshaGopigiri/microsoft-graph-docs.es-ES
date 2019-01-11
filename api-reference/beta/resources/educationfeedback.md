@@ -2,30 +2,31 @@
 title: tipo de recurso educationFeedback
 description: Comentarios de un profesor para un estudiante. Esta propiedad representa la parte de texto de los comentarios junto con la que.
 author: mmast-msft
-ms.openlocfilehash: 934d1ec104133257bb1b767e8922c2379e3fd11a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d08f3bc5c7b4882693cdcbba41b364734c6ccef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873566"
 ---
-# <a name="educationfeedback-resource-type"></a><span data-ttu-id="b2676-104">tipo de recurso educationFeedback</span><span class="sxs-lookup"><span data-stu-id="b2676-104">educationFeedback resource type</span></span>
+# <a name="educationfeedback-resource-type"></a><span data-ttu-id="af94e-104">tipo de recurso educationFeedback</span><span class="sxs-lookup"><span data-stu-id="af94e-104">educationFeedback resource type</span></span>
 
-> <span data-ttu-id="b2676-105">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="b2676-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b2676-106">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="b2676-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="af94e-105">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="af94e-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="af94e-106">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="af94e-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="b2676-107">Comentarios de un profesor para un estudiante.</span><span class="sxs-lookup"><span data-stu-id="b2676-107">Feedback from a teacher to a student.</span></span> <span data-ttu-id="b2676-108">Esta propiedad representa la parte de texto de los comentarios junto con la que.</span><span class="sxs-lookup"><span data-stu-id="b2676-108">This property represents both the text part of the feedback along with the who.</span></span>
+<span data-ttu-id="af94e-107">Comentarios de un profesor para un estudiante.</span><span class="sxs-lookup"><span data-stu-id="af94e-107">Feedback from a teacher to a student.</span></span> <span data-ttu-id="af94e-108">Esta propiedad representa la parte de texto de los comentarios junto con la que.</span><span class="sxs-lookup"><span data-stu-id="af94e-108">This property represents both the text part of the feedback along with the who.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b2676-109">Propiedades</span><span class="sxs-lookup"><span data-stu-id="b2676-109">Properties</span></span>
-| <span data-ttu-id="b2676-110">Propiedad</span><span class="sxs-lookup"><span data-stu-id="b2676-110">Property</span></span>     | <span data-ttu-id="b2676-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="b2676-111">Type</span></span>   |<span data-ttu-id="b2676-112">Descripción</span><span class="sxs-lookup"><span data-stu-id="b2676-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="af94e-109">Propiedades</span><span class="sxs-lookup"><span data-stu-id="af94e-109">Properties</span></span>
+| <span data-ttu-id="af94e-110">Propiedad</span><span class="sxs-lookup"><span data-stu-id="af94e-110">Property</span></span>     | <span data-ttu-id="af94e-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="af94e-111">Type</span></span>   |<span data-ttu-id="af94e-112">Description</span><span class="sxs-lookup"><span data-stu-id="af94e-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b2676-113">feedbackBy</span><span class="sxs-lookup"><span data-stu-id="b2676-113">feedbackBy</span></span>|[<span data-ttu-id="b2676-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="b2676-114">identitySet</span></span>](identityset.md)|<span data-ttu-id="b2676-115">Usuario que creó los comentarios.</span><span class="sxs-lookup"><span data-stu-id="b2676-115">User who created the feedback.</span></span>|
-|<span data-ttu-id="b2676-116">feedbackDateTime</span><span class="sxs-lookup"><span data-stu-id="b2676-116">feedbackDateTime</span></span>|<span data-ttu-id="b2676-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b2676-117">DateTimeOffset</span></span>|<span data-ttu-id="b2676-118">Momento en el tiempo cuando se asignó los comentarios.</span><span class="sxs-lookup"><span data-stu-id="b2676-118">Moment in time when the feedback was given.</span></span> <span data-ttu-id="b2676-119">El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC.</span><span class="sxs-lookup"><span data-stu-id="b2676-119">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="b2676-120">Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="b2676-120">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="b2676-121">text</span><span class="sxs-lookup"><span data-stu-id="b2676-121">text</span></span>|[<span data-ttu-id="b2676-122">itemBody</span><span class="sxs-lookup"><span data-stu-id="b2676-122">itemBody</span></span>](itembody.md)|<span data-ttu-id="b2676-123">Comentarios.</span><span class="sxs-lookup"><span data-stu-id="b2676-123">Feedback.</span></span>|
+|<span data-ttu-id="af94e-113">feedbackBy</span><span class="sxs-lookup"><span data-stu-id="af94e-113">feedbackBy</span></span>|[<span data-ttu-id="af94e-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="af94e-114">identitySet</span></span>](identityset.md)|<span data-ttu-id="af94e-115">Usuario que creó los comentarios.</span><span class="sxs-lookup"><span data-stu-id="af94e-115">User who created the feedback.</span></span>|
+|<span data-ttu-id="af94e-116">feedbackDateTime</span><span class="sxs-lookup"><span data-stu-id="af94e-116">feedbackDateTime</span></span>|<span data-ttu-id="af94e-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="af94e-117">DateTimeOffset</span></span>|<span data-ttu-id="af94e-118">Momento en el tiempo cuando se asignó los comentarios.</span><span class="sxs-lookup"><span data-stu-id="af94e-118">Moment in time when the feedback was given.</span></span> <span data-ttu-id="af94e-119">El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC.</span><span class="sxs-lookup"><span data-stu-id="af94e-119">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="af94e-120">Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="af94e-120">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="af94e-121">text</span><span class="sxs-lookup"><span data-stu-id="af94e-121">text</span></span>|[<span data-ttu-id="af94e-122">itemBody</span><span class="sxs-lookup"><span data-stu-id="af94e-122">itemBody</span></span>](itembody.md)|<span data-ttu-id="af94e-123">Comentarios.</span><span class="sxs-lookup"><span data-stu-id="af94e-123">Feedback.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b2676-124">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="b2676-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="af94e-124">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="af94e-124">JSON representation</span></span>
 
-<span data-ttu-id="b2676-125">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="b2676-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="af94e-125">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="af94e-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
