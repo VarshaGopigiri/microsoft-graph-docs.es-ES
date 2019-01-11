@@ -1,12 +1,13 @@
 ---
 title: Obtener recurso
 description: Recupera los datos binarios de un objeto resource de un archivo o una imagen.
-ms.openlocfilehash: 81c07dca78381ede096c62eba73b0842ae294d55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f8150e0449009eef4d1afe2ce014ae848153382
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841261"
 ---
 # <a name="get-resource"></a>Obtener recurso
 
@@ -34,7 +35,7 @@ GET /sites/{id}/onenote/resources/{id}/content
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

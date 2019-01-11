@@ -2,12 +2,13 @@
 title: tipo de recurso eventMessageRequest
 description: Un mensaje que representa una convocatoria de reunión.
 author: angelgolfer-ms
-ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a4af3bef767213c977dde1195c89d1de02a0cf8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844026"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso eventMessageRequest
 
@@ -79,27 +80,27 @@ Aquí tiene una representación JSON del recurso
 |:---------------|:--------|:----------|
 |bccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cco: del mensaje.|
 |body|[itemBody](itembody.md)|El cuerpo del mensaje.|
-|bodyPreview|String|Los primeros 255 caracteres del cuerpo del mensaje.|
+|bodyPreview|Cadena|Los primeros 255 caracteres del cuerpo del mensaje.|
 |categories|Colección String|Las categorías asociadas al mensaje.|
 |ccRecipients|Colección [recipient](recipient.md)|Los destinatarios Cc: del mensaje.|
-|changeKey|String|La versión del mensaje.|
-|conversationId|String|El identificador de la conversación a la que pertenece el correo electrónico.|
+|changeKey|Cadena|La versión del mensaje.|
+|conversationId|Cadena|El identificador de la conversación a la que pertenece el correo electrónico.|
 |createdDateTime|DateTimeOffset|La fecha y la hora de creación del mensaje.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|La hora de finalización de la reunión solicitada.|
 |from|[recipient](recipient.md)|El propietario del buzón y el remitente del mensaje.|
 |hasAttachments|Booleano|Indica si el mensaje tiene datos adjuntos.|
-|id|String|Solo lectura.|
+|id|Cadena|Solo lectura.|
 |importance|String| La importancia del mensaje: `Low`, `Normal` y `High`.|
 |inferenceClassification|String| Los valores posibles son: `Focused` y `Other`.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
-|isDraft|Boolean|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
-|isOutOfDate|Boolean|Indica si esta solicitud de reunión se ha realizado obsoleta por una solicitud más reciente.|
+|isDraft|Booleano|Indica si el mensaje es un borrador. Un mensaje es un borrador si no se ha enviado todavía.|
+|isOutOfDate|Booleano|Indica si esta solicitud de reunión se ha realizado obsoleta por una solicitud más reciente.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora de la última modificación del mensaje.|
 |location|[Location](location.md)|La ubicación de la reunión solicitada.|
 |meetingMessageType|String| El tipo de mensaje de evento: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
-|parentFolderId|String|El identificador único para el mailFolder principal del mensaje.|
+|parentFolderId|Cadena|El identificador único para el mailFolder principal del mensaje.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|La hora de finalización anterior de la reunión solicitada.|
 |previousLocation|[Ubicación](location.md)|La ubicación anterior de la reunión solicitada.|
 |previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|La hora de inicio anterior de la reunión solicitada.|
@@ -109,11 +110,11 @@ Aquí tiene una representación JSON del recurso
 |sender|[recipient](recipient.md)|La cuenta que se utiliza realmente para generar el mensaje.|
 |sentDateTime|DateTimeOffset|La fecha y la hora de envío del mensaje.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|La hora de inicio de la reunión solicitada.|
-|subject|String|El asunto del mensaje.|
+|subject|Cadena|El asunto del mensaje.|
 |toRecipients|Colección [recipient](recipient.md)|Los destinatarios Para: del mensaje.|
-|type|String|El tipo de reunión solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|Cadena|El tipo de reunión solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|La parte del cuerpo del mensaje que es única del mensaje actual.|
-|webLink|String|La dirección URL para abrir el mensaje en Outlook Web App.<br><br>Puede anexar un argumento ispopout al final de la dirección URL para cambiar cómo se muestra el mensaje. Si ispopout no está presente o se establece en 1, se muestra el mensaje en una ventana emergente. Si ispopout se establece en 0, el navegador mostrará el mensaje en el panel de revisión de Outlook Web App.<br><br>El mensaje se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br><br>Se puede acceder a esta dirección URL desde un iFrame.|
+|webLink|Cadena|La dirección URL para abrir el mensaje en Outlook Web App.<br><br>Puede anexar un argumento ispopout al final de la dirección URL para cambiar cómo se muestra el mensaje. Si ispopout no está presente o se establece en 1, se muestra el mensaje en una ventana emergente. Si ispopout se establece en 0, el navegador mostrará el mensaje en el panel de revisión de Outlook Web App.<br><br>El mensaje se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br><br>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

@@ -2,12 +2,13 @@
 title: tipo de recurso windowsManagementAppHealthSummary
 description: Contiene las propiedades para el resumen de estado de la aplicación de administración de Windows.
 author: tfitzmac
-ms.openlocfilehash: 5717f96cbac534f2726ccf7bcfcbdb54d4c17b28
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 40ba93025059a85a11b061464d04bca4118b88bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843823"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>tipo de recurso windowsManagementAppHealthSummary
 
@@ -25,7 +26,7 @@ Contiene las propiedades para el resumen de estado de la aplicación de administ
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad resumen del estado de aplicación de Windows management.|
+|id|Cadena|Clave de la entidad resumen del estado de aplicación de Windows management.|
 |healthyDeviceCount|Int32|Recuento de dispositivo correcto.|
 |unhealthyDeviceCount|Int32|Recuento de dispositivo mal estado.|
 |unknownDeviceCount|Int32|Recuento de dispositivo desconocido.|

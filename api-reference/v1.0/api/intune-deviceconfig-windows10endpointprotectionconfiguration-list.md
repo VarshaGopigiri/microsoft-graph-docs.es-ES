@@ -2,12 +2,13 @@
 title: Enumerar windows10EndpointProtectionConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windows10EndpointProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 0435cbb3edb3a0f4ce94a71fa019fd3f982c25c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0b59e4a5275d270016946e79cdf00e862a67f1e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840939"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Enumerar windows10EndpointProtectionConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

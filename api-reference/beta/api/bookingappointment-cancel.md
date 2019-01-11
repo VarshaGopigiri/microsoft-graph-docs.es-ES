@@ -1,12 +1,13 @@
 ---
 title: 'bookingAppointment: Cancelar'
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 4cd7b511f997f32c134f70a976cd94c2ed910fb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffb800b5084177b05b62e1ba14b475b8a760d766
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844481"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: Cancelar
 
@@ -37,9 +38,9 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|Un mensaje para confirmar con el cliente que se ha cancelado la cita.|
+|cancellationMessage|Cadena|Un mensaje para confirmar con el cliente que se ha cancelado la cita.|
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No content`. No devuelve nada en el cuerpo de la respuesta.

@@ -2,12 +2,13 @@
 title: tipo de recurso iosSingleSignOnSettings
 description: configuración de autenticación de Kerberos para el inicio de sesión único de iOS
 author: tfitzmac
-ms.openlocfilehash: 6bde13865c1d6b34c433a92005681b247b99d984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841065"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>tipo de recurso iosSingleSignOnSettings
 
@@ -17,13 +18,13 @@ ms.locfileid: "27347372"
 
 configuración de autenticación de Kerberos para el inicio de sesión único de iOS
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |allowedAppsList|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de identificadores de aplicación que tienen permiso para utilizar este inicio de sesión. Si se omite este campo, el inicio de sesión se aplica a todas las aplicaciones en el dispositivo. Esta colección puede contener un máximo de 500 elementos.|
 |allowedUrls|Colección String|Lista de direcciones URL de HTTP que se debe coincidir con el fin de utilizar este inicio de sesión. Con iOS 9.0 o posterior, se puede usar un carácter comodín.|
-|displayName|String|El nombre para mostrar de la configuración de inicio de sesión que se muestra en el dispositivo receptor.|
-|kerberosPrincipalName|String|Un nombre principal de Kerberos. Si no se proporciona, el usuario se le pida durante la instalación del perfil.|
-|kerberosRealm|String|Un nombre de territorio Kerberos. Distingue entre mayúsculas y minúsculas.|
+|displayName|Cadena|El nombre para mostrar de la configuración de inicio de sesión que se muestra en el dispositivo receptor.|
+|kerberosPrincipalName|Cadena|Un nombre principal de Kerberos. Si no se proporciona, el usuario se le pida durante la instalación del perfil.|
+|kerberosRealm|Cadena|Un nombre de territorio Kerberos. Distingue entre mayúsculas y minúsculas.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

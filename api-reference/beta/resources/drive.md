@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Unidad de disco
-ms.openlocfilehash: c9926d0245b63a8d4545c4864b396624b82bf57a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 684a200d38aea52054bedb9eb4357c28e03b37e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840834"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidad
 
@@ -73,7 +74,7 @@ El recurso **drive** deriva de [**baseItem**](baseitem.md) y hereda las propieda
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | Identidad del usuario, del dispositivo o de la aplicación que ha creado el elemento. Solo lectura.                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | Fecha y hora de creación del elemento. Solo lectura.                                                                                                                                                                                       |
-| description          | String                        | Proporciona una descripción de la unidad visible para el usuario. Lectura y escritura.
+| description          | Cadena                        | Proporciona una descripción de la unidad visible para el usuario. Lectura y escritura.
 | driveType            | String                        | Describe el tipo de unidad que representa este recurso. Las unidades personales de OneDrive devolverán `personal`. OneDrive para la Empresa devolverá `business`. Las bibliotecas de documentos de SharePoint devolverán `documentLibrary`. Solo lectura. |
 | id                   | String                        | El identificador único de la unidad. Solo lectura.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura.                                                                                                                                           |

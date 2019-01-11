@@ -1,12 +1,13 @@
 ---
 title: Unarchive equipo
 description: Restaurar un equipo archivado. Esto restaura la capacidad de los usuarios enviar mensajes y editar el equipo, respetando por la configuración de inquilino y del equipo. Los equipos se archivan con la API de archivo.
-ms.openlocfilehash: 7507a58ef75939110d0c740e20d8540838bda204
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Normal
+ms.openlocfilehash: f203e10c4f82379efcc6da3aff96bc1bc5bf702e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222614"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840085"
 ---
 # <a name="unarchive-team"></a>Unarchive equipo
 

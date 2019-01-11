@@ -2,12 +2,13 @@
 title: Crear deviceCategory
 description: Cree un objeto deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: 1c01fd7c953a0b0fd148390d80aa27acb010daa3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59b6b581120f003167dafe230a2b9a8a485b4d74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843277"
 ---
 # <a name="create-devicecategory"></a>Crear deviceCategory
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCategories
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceCategory.
@@ -46,10 +47,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
+|id|Cadena|El identificador único de la categoría de dispositivo. Solo lectura.|
 |**Incorporación de redes**|
-|displayName|String|Nombre para mostrar de la categoría de dispositivo.|
-|descripción|String|Descripción opcional de la categoría de dispositivo.|
+|displayName|Cadena|Nombre para mostrar de la categoría de dispositivo.|
+|descripción|Cadena|Descripción opcional de la categoría de dispositivo.|
 
 
 

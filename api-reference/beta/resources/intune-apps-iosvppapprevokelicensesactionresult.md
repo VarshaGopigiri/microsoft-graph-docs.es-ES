@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso iosVppAppRevokeLicensesActionResult
 description: Define los resultados de acciones en iOS aplicaciones Vpp, contiene propiedades heredadas para ActionResult.
-ms.openlocfilehash: 1c6c1486d63ba5ce7c866dc2697d1a3eb2ee8e38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8ed57465e263245cfc18ca22899c2142d949855d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089895"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842087"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>tipo de recurso iosVppAppRevokeLicensesActionResult
 
@@ -16,10 +17,10 @@ ms.locfileid: "27089895"
 
 Define los resultados de acciones en iOS aplicaciones Vpp, contiene propiedades heredadas para ActionResult.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|userId|String|Identificador de usuario asociado con la acción.|
-|managedDeviceId|String|DeviceId asociado con la acción.|
+|userId|Cadena|Identificador de usuario asociado con la acción.|
+|managedDeviceId|Cadena|DeviceId asociado con la acción.|
 |totalLicensesCount|Int32|Un recuento del número de licencias para el que se ha intentado establecer revoke.|
 |failedLicensesCount|Int32|Un recuento del número de licencias para qué revoke no se pudo.|
 |actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|El motivo del error de acción de licencias revoke. Los valores posibles son: `none`, `appleFailure`, `internalError`, `expiredVppToken` y `expiredApplePushNotificationCertificate`.|

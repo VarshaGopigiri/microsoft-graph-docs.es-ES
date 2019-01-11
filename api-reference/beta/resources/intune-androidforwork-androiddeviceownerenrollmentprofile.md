@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso androidDeviceOwnerEnrollmentProfile
 description: Perfil de inscripción usado al inscribir dispositivos COSU mediante la administración en la nube de Google.
-ms.openlocfilehash: 0ca468a624f5b1793b09eb6b4d9d9e003cae3ac7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 17d8d00fb0c21d9474607e0cc388ce38687af0ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084204"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841877"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>tipo de recurso androidDeviceOwnerEnrollmentProfile
 
@@ -29,17 +30,17 @@ Perfil de inscripción usado al inscribir dispositivos COSU mediante la administ
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|accountId|String|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
-|id|String|GUID único del perfil de inscripción.|
-|displayName|String|Nombre para mostrar del perfil de inscripción.|
-|descripción|String|Descripción del perfil de inscripción.|
+|accountId|Cadena|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
+|id|Cadena|GUID único del perfil de inscripción.|
+|displayName|Cadena|Nombre para mostrar del perfil de inscripción.|
+|descripción|Cadena|Descripción del perfil de inscripción.|
 |createdDateTime|DateTimeOffset|Fecha y hora en que se creó el perfil de inscripción.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en que se modificó el perfil de inscripción por última vez.|
-|tokenValue|String|Valor del token creado más recientemente para este perfil de inscripción.|
+|tokenValue|Cadena|Valor del token creado más recientemente para este perfil de inscripción.|
 |tokenCreationDateTime|DateTimeOffset|Fecha hora en que se creó el token creado más recientemente.|
 |tokenExpirationDateTime|DateTimeOffset|Fecha y hora en que expirará el token creado más recientemente.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que se han inscrito con este perfil de inscripción.|
-|qrCodeContent|String|Cadena usada para generar un código QR para el token.|
+|qrCodeContent|Cadena|Cadena usada para generar un código QR para el token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadena usada para generar un código QR para el token.|
 
 ## <a name="relationships"></a>Relaciones

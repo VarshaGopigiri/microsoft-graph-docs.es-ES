@@ -1,12 +1,13 @@
 ---
 title: Lista programControls
 description: En la característica de revisiones de access Azure AD, incluya todos los objetos de programControl, a través de todos los programas en el inquilino.
-ms.openlocfilehash: 7e1dcb197a546e3aa823b731a9e7954803b36c2a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bc56fd5013bcf0013007b9d4264ab89eca02d43b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084136"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843956"
 ---
 # <a name="list-programcontrols"></a>Lista programControls
 
@@ -30,7 +31,7 @@ GET /programControls
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

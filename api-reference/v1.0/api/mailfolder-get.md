@@ -2,12 +2,13 @@
 title: Get mailFolder
 description: Recupere las propiedades y las relaciones de un objeto de carpeta de mensajes.
 author: angelgolfer-ms
-ms.openlocfilehash: ee4926b0d87988e0358d333ad347d895518dc1ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 6e26486503391973a94dde382836701e3f888ef2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344838"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845091"
 ---
 # <a name="get-mailfolder"></a>Get mailFolder
 
@@ -37,7 +38,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

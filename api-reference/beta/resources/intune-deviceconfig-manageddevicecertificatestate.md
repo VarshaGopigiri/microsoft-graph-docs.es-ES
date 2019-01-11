@@ -2,12 +2,13 @@
 title: tipo de recurso managedDeviceCertificateState
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: f26eb40d371c59a65f58bc87ac5a24d38f47a959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 087bd1e6ed1eb9c065d1c2f0f3a03941d77cc7bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844047"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>tipo de recurso managedDeviceCertificateState
 
@@ -28,7 +29,7 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma de dispositivo. Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` y `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Uso de la clave. Los valores posibles son: `keyEncipherment` y `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Unidades del período de validez. Los valores posibles son: `days`, `months` y `years`.|
@@ -37,20 +38,20 @@ Todavía no documentado
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nombre de sujeto. Los valores posibles son: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId` y `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Formato de nombre alternativo de sujeto. Los valores posibles son: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` y `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revocar el estado. Los valores posibles son: `none`, `pending`, `issued`, `failed` y `revoked`.|
-|certificateProfileDisplayName|String|Nombre para mostrar de perfil de certificado|
+|certificateProfileDisplayName|Cadena|Nombre para mostrar de perfil de certificado|
 |deviceDisplayName|String|Nombre para mostrar del dispositivo|
-|userDisplayName|String|Nombre para mostrar del usuario.|
+|userDisplayName|Cadena|Nombre para mostrar del usuario.|
 |certificateExpirationDateTime|DateTimeOffset|Fecha de caducidad del certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Último cambio de estado de emisión de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Último cambio de estado de emisión de certificado|
-|certificateIssuer|String|Emisor|
-|certificateThumbprint|String|Huella digital|
-|númeroSerieCertificado|String|Número de serie|
+|certificateIssuer|Cadena|Emisor|
+|certificateThumbprint|Cadena|Huella digital|
+|númeroSerieCertificado|Cadena|Número de serie|
 |certificateKeyLength|Int32|Longitud de clave|
-|certificateEnhancedKeyUsage|String|Uso mejorado de clave|
+|certificateEnhancedKeyUsage|Cadena|Uso mejorado de clave|
 |certificateValidityPeriod|Int32|Período de validez|
-|certificateSubjectNameFormatString|String|Cadena de formato de nombre de sujeto para formatos de nombre de sujeto personalizado|
-|certificateSubjectAlternativeNameFormatString|String|Cadena de formato de nombre alternativo de sujeto para formatos personalizados|
+|certificateSubjectNameFormatString|Cadena|Cadena de formato de nombre de sujeto para formatos de nombre de sujeto personalizado|
+|certificateSubjectAlternativeNameFormatString|Cadena|Cadena de formato de nombre alternativo de sujeto para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Fecha de emisión|
 |certificateErrorCode|Int32|Código de error|
 

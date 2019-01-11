@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso inferenceClassification
 description: 'Clasificación de mensajes de un usuario que permite poner el foco en los que son más relevantes o importantes para el usuario. '
-ms.openlocfilehash: 0fb1e01ad9710a0ff5f2de7f63808a6f3e988c13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8dfd76b31e452532181b46cdb0b5c321e92273a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029456"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840729"
 ---
 # <a name="inferenceclassification-resource-type"></a>Tipo de recurso inferenceClassification
 

@@ -2,12 +2,13 @@
 title: acción extendQualityUpdatesPause
 description: Extender calidad actualizaciones pausa para una actualización de Windows para llamar de negocio.
 author: tfitzmac
-ms.openlocfilehash: ea6f36922b438e5f643e073c4d5d2697a6f77efc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d189c3adabc87bca1d03e04cbea68531c7396be5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355611"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841429"
 ---
 # <a name="extendqualityupdatespause-action"></a>acción extendQualityUpdatesPause
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

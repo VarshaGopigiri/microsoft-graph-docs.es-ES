@@ -2,12 +2,13 @@
 title: tipo de recurso iosBookmark
 description: marcador de la dirección URL de iOS
 author: tfitzmac
-ms.openlocfilehash: e1577537e57365b2452e956e010f6c3f918bd743
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37cdcc1b886914b4b42e0a97e8947a565c75f5b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841002"
 ---
 # <a name="iosbookmark-resource-type"></a>tipo de recurso iosBookmark
 
@@ -19,9 +20,9 @@ marcador de la dirección URL de iOS
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|url|String|Dirección URL que permite acceder a|
-|bookmarkFolder|String|La carpeta en la que se debe agregar el marcador en Safari|
-|displayName|String|El nombre para mostrar del marcador|
+|url|Cadena|Dirección URL que permite acceder a|
+|bookmarkFolder|Cadena|La carpeta en la que se debe agregar el marcador en Safari|
+|displayName|Cadena|El nombre para mostrar del marcador|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

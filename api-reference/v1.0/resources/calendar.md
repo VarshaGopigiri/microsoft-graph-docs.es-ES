@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso calendar
 description: Un calendario que es un contenedor de eventos. Puede ser un calendario de un usuario o el calendario predeterminado de un grupo de Office 365.
-ms.openlocfilehash: 1c1797897c0efcd7d7196977f93b6a8c611f83f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: c567a37be651987f2ca5af08cf9837ba6f41076f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843249"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 

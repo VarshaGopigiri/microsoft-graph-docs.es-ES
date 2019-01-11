@@ -2,12 +2,13 @@
 title: Tipo de recurso groupSetting
 description: Comportamientos del control de configuración de grupo, como listas de palabras bloqueadas para los nombres para mostrar del grupo o si los usuarios invitados pueden ser propietarios del grupo.
 author: dkershaw10
-ms.openlocfilehash: c4e3f92b96aa1be5088cace4adeef3ae33d968b9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4508de9c03820031e47e3457e24dc39ed14c36a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840771"
 ---
 # <a name="groupsetting-resource-type"></a>Tipo de recurso groupSetting
 

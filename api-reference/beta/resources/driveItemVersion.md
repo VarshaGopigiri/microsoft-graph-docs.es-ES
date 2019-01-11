@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
 title: DriveItemVersion
-ms.openlocfilehash: 6abe10a14a4995231b12cf0c828325259775ffd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4267a82cc2dee7f0b9b301e13073f32cf95c6844
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841744"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
@@ -51,7 +52,7 @@ En la tabla anterior, los ejemplos usan `/drive`, pero hay varias solicitudes v�
 
 ## <a name="properties"></a>Propiedades
 
-|      Nombre de propiedad       |                         Tipo                         |                               Descripción                               |
+|      Nombre de la propiedad       |                         Tipo                         |                               Descripción                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | El identificador de la versión. Solo lectura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidad del usuario que modificó por última vez la versión. Solo lectura.        |

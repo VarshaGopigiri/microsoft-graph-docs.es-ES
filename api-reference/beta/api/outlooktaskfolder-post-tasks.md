@@ -2,12 +2,13 @@
 title: Crear outlookTask
 description: Crear una tarea de Outlook en la carpeta de la tarea especificada.
 author: angelgolfer-ms
-ms.openlocfilehash: 4d35c7de737e0de0f123dc9ee13f2f42e866d61d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 477ddf32b790da5b5d43560119d7a2529e773ad0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841422"
 ---
 # <a name="create-outlooktask"></a>Crear outlookTask
 

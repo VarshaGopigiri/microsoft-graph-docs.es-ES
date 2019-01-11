@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso managedDeviceMobileAppConfigurationDeviceStatus
 description: Contiene propiedades, las propiedades heredadas y acciones para un estado de configuración de aplicación móvil de MDM para un dispositivo.
-ms.openlocfilehash: 439be36b7658c7975f3e458520098e8cbd4e849b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9698c249d8075a7567c3f54defa3d20a475174ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029402"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841443"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>tipo de recurso managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -25,14 +26,14 @@ Contiene propiedades, las propiedades heredadas y acciones para un estado de con
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |deviceDisplayName|String|Nombre de dispositivo de DevicePolicyStatus.|
-|userName|String|El nombre de usuario que se está notificando|
-|deviceModel|String|El modelo de dispositivo que se está notificando|
+|userName|Cadena|El nombre de usuario que se está notificando|
+|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadena|UserPrincipalName.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

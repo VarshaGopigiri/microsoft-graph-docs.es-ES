@@ -1,12 +1,13 @@
 ---
 title: Programa de actualización
 description: En Azure AD tener acceso a la característica de revisiones, actualizar un objeto de programa existente.
-ms.openlocfilehash: e3d8ca75683a076f156e359431204517b60e7c6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9abe10a2a672984d14f1da821b7ae6244cbdf39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840337"
 ---
 # <a name="update-program"></a>Programa de actualización
 
@@ -30,14 +31,14 @@ PATCH /programs('{programId}')
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto de [programa](../resources/program.md) .
 
 En la siguiente tabla se muestra las propiedades que se pueden proporcionar al actualizar un programa.
 
-| Propiedad     | Tipo        | Descripción |
+| Propiedad     | Tipo        | Description |
 |:-------------|:------------|:------------|
 | `displayName`               |`String`                              |  El nombre del programa.                   |
 | `description`               |`String`                              |  La descripción del programa.           |

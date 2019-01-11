@@ -1,12 +1,13 @@
 ---
 title: Actualizar bookingcustomer
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: d28a2a30da1c626c65c65a1dc3cab000a06580d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ccfd7d496f796ea71568a58d48e62ed84c29abc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844348"
 ---
 # <a name="update-bookingcustomer"></a>Actualizar bookingcustomer
 
@@ -37,8 +38,8 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|displayName|String|El nombre del cliente.|
-|emailAddress|String|La dirección SMTP del cliente.|
+|displayName|Cadena|El nombre del cliente.|
+|emailAddress|Cadena|La dirección SMTP del cliente.|
 
 ## <a name="response"></a>Respuesta
 Si tiene éxito, este método devuelve una `200 OK` código de respuesta y actualizada [bookingCustomer](../resources/bookingcustomer.md) objeto en el cuerpo de la respuesta.

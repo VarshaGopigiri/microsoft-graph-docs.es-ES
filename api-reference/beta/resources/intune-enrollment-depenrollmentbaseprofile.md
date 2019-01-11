@@ -2,12 +2,13 @@
 title: tipo de recurso depEnrollmentBaseProfile
 description: El recurso DepEnrollmentBaseProfile representa un perfil de inscripción de programa de inscripción de dispositivos de Apple (DEP). Este tipo de perfil debe asignarse a los números de serie de Apple DEP antes de que los dispositivos correspondientes pueden inscribirse a través de DEP.
 author: tfitzmac
-ms.openlocfilehash: 26335fd3d35494b815dd43531ad54b4796dc861c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 16baaef2413bbbc169ef8823dc9043245cdfad91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844362"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>tipo de recurso depEnrollmentBaseProfile
 
@@ -28,28 +29,28 @@ Hereda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.m
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El GUID para el objeto Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|String|Nombre del perfil Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|descripción|String|Descripción del perfil Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Boolean|Indica si el perfil requiere autenticación de usuario Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|String|Dirección url de extremo de configuración se usa para inscripción se hereda desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa. Se hereda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|isDefault|Boolean|Indica si este es el perfil predeterminado|
-|supervisedModeEnabled|Boolean|Modo supervisado, True para habilitar, false en caso contrario. Vea https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obtener información adicional.|
-|supportDepartment|String|Información del departamento de soporte técnico|
-|passCodeDisabled|Boolean|Indica si se deshabilita el panel de código de acceso del programa de instalación|
-|isMandatory|Boolean|Indica si el perfil es obligatorio|
-|locationDisabled|Boolean|Indica si se deshabilita el panel del programa de instalación del servicio de ubicación|
-|supportPhoneNumber|String|Número de teléfono de soporte técnico|
-|profileRemovalDisabled|Boolean|Indica si está deshabilitada la opción de eliminación de perfiles|
-|restoreBlocked|Boolean|Indica si se bloquea el panel de restauración del programa de instalación|
-|appleIdDisabled|Boolean|Indica si se deshabilita el panel de Apple identificador del programa de instalación|
-|termsAndConditionsDisabled|Boolean|Indica si el panel del programa de instalación 'Términos y condiciones' está deshabilitado|
-|touchIdDisabled|Boolean|Indica si se deshabilita el panel de táctil identificador del programa de instalación|
-|applePayDisabled|Boolean|Indica si se deshabilita el panel de Apple pago del programa de instalación|
-|zoomDisabled|Boolean|Indica si se deshabilita el panel de zoom del programa de instalación|
-|siriDisabled|Boolean|Indica si se deshabilita el panel de siri el programa de instalación|
-|diagnosticsDisabled|Boolean|Indica si se deshabilita el panel de diagnóstico del programa de instalación|
+|id|Cadena|El GUID para el objeto Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|Cadena|Nombre del perfil Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|descripción|Cadena|Descripción del perfil Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Booleano|Indica si el perfil requiere autenticación de usuario Inherited desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|Cadena|Dirección url de extremo de configuración se usa para inscripción se hereda desde [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Booleano|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa. Se hereda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|isDefault|Booleano|Indica si este es el perfil predeterminado|
+|supervisedModeEnabled|Booleano|Modo supervisado, True para habilitar, false en caso contrario. Vea https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obtener información adicional.|
+|supportDepartment|Cadena|Información del departamento de soporte técnico|
+|passCodeDisabled|Booleano|Indica si se deshabilita el panel de código de acceso del programa de instalación|
+|isMandatory|Booleano|Indica si el perfil es obligatorio|
+|locationDisabled|Booleano|Indica si se deshabilita el panel del programa de instalación del servicio de ubicación|
+|supportPhoneNumber|Cadena|Número de teléfono de soporte técnico|
+|profileRemovalDisabled|Booleano|Indica si está deshabilitada la opción de eliminación de perfiles|
+|restoreBlocked|Booleano|Indica si se bloquea el panel de restauración del programa de instalación|
+|appleIdDisabled|Booleano|Indica si se deshabilita el panel de Apple identificador del programa de instalación|
+|termsAndConditionsDisabled|Booleano|Indica si el panel del programa de instalación 'Términos y condiciones' está deshabilitado|
+|touchIdDisabled|Booleano|Indica si se deshabilita el panel de táctil identificador del programa de instalación|
+|applePayDisabled|Booleano|Indica si se deshabilita el panel de Apple pago del programa de instalación|
+|zoomDisabled|Booleano|Indica si se deshabilita el panel de zoom del programa de instalación|
+|siriDisabled|Booleano|Indica si se deshabilita el panel de siri el programa de instalación|
+|diagnosticsDisabled|Booleano|Indica si se deshabilita el panel de diagnóstico del programa de instalación|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

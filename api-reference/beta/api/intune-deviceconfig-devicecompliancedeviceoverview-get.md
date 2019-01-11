@@ -2,12 +2,13 @@
 title: Obtener deviceComplianceDeviceOverview
 description: Lea las propiedades y las relaciones del objeto deviceComplianceDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: ae32034bbcdd664640050f5b25f40717a76fd297
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d67dbe6ba7c962b783ec3dff73fbca8213c8c3e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842031"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>Obtener deviceComplianceDeviceOverview
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

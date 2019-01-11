@@ -2,12 +2,13 @@
 title: tipo de recurso mobileAppTroubleshootingDeviceCheckinHistory
 description: Elemento de historial de contenidos en el evento de solución de problemas de aplicación móvil.
 author: tfitzmac
-ms.openlocfilehash: aadaf94a2b021e6207a1639ec215445d602b4c3f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b9d900e712e3c3b126dd36671049e8935f09a83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844950"
 ---
 # <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingDeviceCheckinHistory
 
@@ -20,7 +21,7 @@ Elemento de historial de contenidos en el evento de solución de problemas de ap
 Hereda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Tiempo que se produjo el elemento de historial. Se hereda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 

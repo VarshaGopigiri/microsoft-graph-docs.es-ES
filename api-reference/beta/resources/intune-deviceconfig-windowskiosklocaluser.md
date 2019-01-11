@@ -2,12 +2,13 @@
 title: tipo de recurso windowsKioskLocalUser
 description: La clase que se usa para identificar una cuenta local para la configuración de quiosco
 author: tfitzmac
-ms.openlocfilehash: 5ac98147172fd08fc9914a7d9302e3b074ca3246
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ab6a9dc0e3ea63ed5d9f60bb48b005aa98acab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844558"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>tipo de recurso windowsKioskLocalUser
 
@@ -20,9 +21,9 @@ La clase que se usa para identificar una cuenta local para la configuración de 
 Hereda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|userName|String|El usuario local que se bloqueará a esta configuración de quiosco|
+|userName|Cadena|El usuario local que se bloqueará a esta configuración de quiosco|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

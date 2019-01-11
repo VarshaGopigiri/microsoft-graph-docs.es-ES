@@ -2,12 +2,13 @@
 title: Tipo de recurso notificationMessageTemplate
 description: " sección. Use el objeto notificationMessageTemplate para crear sus propias notificaciones personalizadas para que elijan los administradores al configurar las acciones en caso de incumplimiento."
 author: tfitzmac
-ms.openlocfilehash: eae9d0ada0dcaf160b0b7dc8802af3ccbcfaa8f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 196f7809d288517807ef2b87bd8d577e902873d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844621"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Tipo de recurso notificationMessageTemplate
 
@@ -29,10 +30,10 @@ Los mensajes de notificación son mensajes que se envían a los usuarios finales
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre para mostrar de la plantilla de mensajes de notificación.|
-|defaultLocale|String|La configuración regional predeterminada de reserva para los casos en que la configuración regional solicitada no está disponible.|
+|displayName|Cadena|Nombre para mostrar de la plantilla de mensajes de notificación.|
+|defaultLocale|Cadena|La configuración regional predeterminada de reserva para los casos en que la configuración regional solicitada no está disponible.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Las opciones de personalización de marca de la plantilla de mensaje. La personalización de marca está definida en la consola de administración de Intune. Los valores posibles son: `none`, `includeCompanyLogo`, `includeCompanyName` y `includeContactInformation`.|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad.|
 

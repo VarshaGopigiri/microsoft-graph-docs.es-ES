@@ -1,12 +1,13 @@
 ---
 title: Obtener extensión abierta
 description: Obtenga una extensión abierta (objeto openTypeExtension) identificada por nombre o por nombre completo.
-ms.openlocfilehash: 599422384ed7e821f0ca50235fd164594bccd4d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ca2acb78d5a4731b57614476f11a6235a3b784bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090095"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844005"
 ---
 # <a name="get-open-extension"></a>Obtener extensión abierta
 
@@ -30,7 +31,7 @@ Dependiendo del recurso que contiene la extensión y el permiso solicitado tipo 
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.Read.All | No admitido | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [group](../resources/group.md) | Group.Read.All | No admitido | Group.Read.All |
+| [grupo](../resources/group.md) | Group.Read.All | No admitido | Group.Read.All |
 | [evento de grupo](../resources/event.md) | Group.Read.All | No admitido | No admitido |
 | [publicación de grupo](../resources/post.md) | Group.Read.All | No admitido | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 

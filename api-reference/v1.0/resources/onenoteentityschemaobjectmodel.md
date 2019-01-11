@@ -2,12 +2,13 @@
 title: recursos de onenoteEntitySchemaObjectModel
 description: Éste es un tipo base para las entidades de OneNote.
 author: Jewan-microsoft
-ms.openlocfilehash: a44d05a512b8e4ed2615296faae3f35bd7bd554f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ecdb17d48f8c8682af5970ea468fb2ad0118bbb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319449"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843886"
 ---
 # <a name="onenoteentityschemaobjectmodel-resource"></a>recursos de onenoteEntitySchemaObjectModel
 

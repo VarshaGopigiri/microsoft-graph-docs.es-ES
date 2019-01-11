@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso privilegedRoleSettings
 description: Representa la configuración de un rol con privilegios.
-ms.openlocfilehash: 14b4919d653de80c97f06aff507c011162c3c0e4
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: 971c48ce3ecdd2a219a111f3a11884377e20430c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27091227"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842745"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso privilegedRoleSettings
 
@@ -22,7 +23,7 @@ Representa la configuración de un rol con privilegios.
 |[Obtener privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Leer las propiedades y las relaciones del objeto privilegedRoleSettings.|
 |[Actualizar privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Actualizar el objeto privilegedRoleSettings.|
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|La duración cuando se activa la función.|
 |id|string| El identificador único para la configuración de las funciones. Solo lectura.|

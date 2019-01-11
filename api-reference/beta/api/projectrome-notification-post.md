@@ -1,12 +1,13 @@
 ---
 title: Crear y enviar una notificación
 description: 'Crear y enviar una notificación de identificación de un usuario a través de Microsoft Graph. La notificación se almacena en la notificación de Microsoft Graph fuente almacén y se envía a todos los clientes de la aplicación en todos los extremos de dispositivo que el usuario ha iniciado sesión en.  '
-ms.openlocfilehash: 7855d8b369a2efc6dada33c66c12ae76384a2760
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 67906aa56ace21d9d03cfe47c17acda38d8c680f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843905"
 ---
 # <a name="create-and-send-a-notification"></a>Crear y enviar una notificación
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
@@ -30,7 +31,7 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
-|Authorization | string |El encabezado authorization se utiliza para pasar las credenciales del usuario que realiza llamada. Bearer {token}. Obligatorio. |
+|Autorización | string |El encabezado authorization se utiliza para pasar las credenciales del usuario que realiza llamada. Bearer {token}. Necesario. |
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto de [notificación](../resources/projectrome-notification.md) .
 

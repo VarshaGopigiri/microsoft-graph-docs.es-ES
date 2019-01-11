@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartAxis
 description: Representa un solo eje de un gráfico.
 author: lumine2008
-ms.openlocfilehash: 766a1a6823cc83efb3ecaf7250f230216fc13cb0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 077afe6a384b77c9b4bb3b1bab6a0e257a9175a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842724"
 ---
 # <a name="chartaxis-resource-type"></a>Tipo de recurso ChartAxis
 
@@ -21,7 +22,7 @@ Representa un solo eje de un gráfico.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get ChartAxis](../api/chartaxis-get.md) | [ChartAxis](chartaxis.md) |Lee las propiedades y relaciones del objeto chartAxis.|
-|[Actualizar](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |Actualiza el objeto ChartAxis. |
+|[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |Actualiza el objeto ChartAxis. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

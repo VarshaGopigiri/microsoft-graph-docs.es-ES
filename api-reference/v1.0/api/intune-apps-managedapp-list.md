@@ -2,12 +2,13 @@
 title: Enumerar managedApps
 description: Enumere las propiedades y las relaciones de los objetos managedApp.
 author: tfitzmac
-ms.openlocfilehash: 86062047c11a44fa6586f1c0582dce78445291ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0669ec4c1e2c0eddd8217f30dc2f7705662fc1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362121"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843130"
 ---
 # <a name="list-managedapps"></a>Enumerar managedApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: tipo de enumeración androidForWorkBindStatus
 description: Enlazar el estado del inquilino con la API de Google en EMM
 author: tfitzmac
-ms.openlocfilehash: 56ec9c1d501d54a10f1fc8880086a56061fa865b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5959549aabe5d5059fe8929e2505515b781c21c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360889"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841884"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>tipo de enumeración androidForWorkBindStatus
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360889"
 
 Enlazar el estado del inquilino con la API de Google en EMM
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |notBound|0|Todavía no documentado|
 |enlazado|1|Todavía no documentado|

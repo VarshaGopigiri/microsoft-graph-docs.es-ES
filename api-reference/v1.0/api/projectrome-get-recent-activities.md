@@ -1,12 +1,13 @@
 ---
 title: Obtener las actividades recientes del usuario
 description: " API. El servicio consultará para la historyItems más reciente y, a continuación, extraer las actividades relacionadas. Las actividades se ordenarán según la más reciente **lastModified** en el **historyItem**. Esto significa que no se incluyan actividades sin **historyItems** en la respuesta. El permiso UserActivity.ReadWrite.CreatedByApp también aplicará filtrado adicional a la respuesta, para que se devuelvan únicamente las actividades creadas por la aplicación. Este filtrado del lado del servidor, se podría producir páginas vacías si el usuario está especialmente activo y otras aplicaciones han creado actividades más recientes. Para obtener las actividades de la aplicación, utilice la propiedad **nextLink** a paginar."
-ms.openlocfilehash: 79dc676edd279c0d01f6f30d5c34193237512248
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9ae67169395b3667e8ba6ef34ce6a4b9c4567ac5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029971"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844257"
 ---
 # <a name="get-recent-user-activities"></a>Obtener las actividades recientes del usuario
 
@@ -52,7 +53,7 @@ Los siguientes son algunos ejemplos de consultas compatibles con codificación d
 
 |Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
-|Authorization | string | {token} de portador. Obligatorio.|
+|Autorización | string | {token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

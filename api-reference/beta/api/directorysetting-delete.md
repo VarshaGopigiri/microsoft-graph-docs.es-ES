@@ -2,12 +2,13 @@
 title: Eliminar una configuración de Active directory
 description: Eliminar una configuración de Active directory.
 author: lleonard-msft
-ms.openlocfilehash: 94359db03bfd58af659b4891295063477fc658e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35954404b21eea883c9240bb1647feb85f490b16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843830"
 ---
 # <a name="delete-a-directory-setting"></a>Eliminar una configuración de Active directory
 

@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingAustraliaTelevisionType
 description: Etiquetas de clasificación de contenido de TV en Australia
 author: tfitzmac
-ms.openlocfilehash: 8444f7db49cc8a0453f58d4710334f0876e570c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 176e1d863fd2aa94ea48a2bf8aab515228ac31ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323061"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844691"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enumeración ratingAustraliaTelevisionType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27323061"
 
 Etiquetas de clasificación de contenido de TV en Australia
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

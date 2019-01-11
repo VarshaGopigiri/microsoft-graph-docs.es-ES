@@ -2,12 +2,13 @@
 title: tipo de recurso symantecCodeSigningCertificate
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 979502f51674b32f10627762d08d8216a466dff9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2e4f53e0ca7329f163b507677e2b91a4c02fe12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357242"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845013"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso symantecCodeSigningCertificate
 
@@ -30,9 +31,9 @@ Todavía no documentado
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|El estado de Cert aprovisiona o no configurado. Los valores posibles son: `notProvisioned` y `provisioned`.|
 |password|String|La contraseña requerida para el archivo .pfx.|
 |subjectName|cadena|El nombre de sujeto para el certificado.|
-|subject|String|El valor de asunto para el certificado.|
-|issuerName|String|El nombre para el certificado del emisor.|
-|emisor|String|El valor de emisor para el certificado.|
+|subject|Cadena|El valor de asunto para el certificado.|
+|issuerName|Cadena|El nombre para el certificado del emisor.|
+|emisor|Cadena|El valor de emisor para el certificado.|
 |expirationDateTime|DateTimeOffset|La fecha de caducidad del certificado.|
 |uploadDateTime|DateTimeOffset|El tipo del certificado de firma de código como Symantec Cert.|
 

@@ -1,12 +1,13 @@
 ---
 title: 'TableSort: clear'
 description: Borra la ordenación que se aplica actualmente en la tabla. Aunque esto no modifica la ordenación de la tabla, borra el estado de los botones de encabezado.
-ms.openlocfilehash: f93b640188faedc228c56b6e13497ade84190765
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1d7d695bfc1d1e6d951f44e0e3e7cde21c4e5904
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841331"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 

@@ -2,12 +2,13 @@
 title: tipo de recurso de canal
 description: 'Un canal es una colección de chatMessages dentro de un equipo. '
 author: nkramer
-ms.openlocfilehash: 18a3293b757e641eab98b166a43ce023762ccc6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 058632c9f56462195db0cd268fd0af262d4292f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326778"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842689"
 ---
 # <a name="channel-resource-type"></a>tipo de recurso de canal
 
@@ -31,16 +32,16 @@ Un canal es una colección de [chatMessages](chatmessage.md) dentro de un [equip
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|description|String|Descripción textual opcional para el canal.|
-|displayName|String|Nombre de canal tal y como aparecerá para el usuario en Microsoft Teams.|
-|id|String|Identificador único de la de los canales. Solo lectura.|
-|isFavoriteByDefault|Boolean|Si el canal automáticamente se debe marcar 'favorito' para todos los miembros del equipo. Valor predeterminado: `false`.|
-|email|Boolean| La dirección de correo electrónico para el envío de mensajes para el canal. Solo lectura.|
-|webUrl|String|Un hipervínculo que se desplazará el canal en Microsoft Teams. Esta es la URL que se obtiene cuando haga clic en un canal en Microsoft Teams y seleccione vínculo Get a canal. Esta dirección URL debe se trata como un objeto binario opaco y no puede analizar. Solo lectura.|
+|description|Cadena|Descripción textual opcional para el canal.|
+|displayName|Cadena|Nombre de canal tal y como aparecerá para el usuario en Microsoft Teams.|
+|id|Cadena|Identificador único de la de los canales. Solo lectura.|
+|isFavoriteByDefault|Booleano|Si el canal automáticamente se debe marcar 'favorito' para todos los miembros del equipo. Valor predeterminado: `false`.|
+|email|Booleano| La dirección de correo electrónico para el envío de mensajes para el canal. Solo lectura.|
+|webUrl|Cadena|Un hipervínculo que se desplazará el canal en Microsoft Teams. Esta es la URL que se obtiene cuando haga clic en un canal en Microsoft Teams y seleccione vínculo Get a canal. Esta dirección URL debe se trata como un objeto binario opaco y no puede analizar. Solo lectura.|
 
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |messages|colección de [chatMessage](chatmessage.md)|Una colección de todos los mensajes en el canal. Una propiedad de navegación. Admite valores NULL. Actualmente esta API sólo admite operaciones de lectura, pero finalmente será compatible con los mensajes de escritura demasiado.|
 |chatThreads|colección de [chatThread](chatthread.md)|(Esto se están quedando obsoletas en favor de la propiedad de los mensajes) chatThreads admite la creación de nuevos mensajes, pero no leer mensajes. ChatThreads es una propiedad de navegación y es Nullable.|

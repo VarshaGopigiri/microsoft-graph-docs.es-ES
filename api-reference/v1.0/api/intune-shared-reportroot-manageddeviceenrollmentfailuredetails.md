@@ -2,12 +2,13 @@
 title: managedDeviceEnrollmentFailureDetails (función)
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: e95a0590ee08fb29d2ae95cb68f0bded658ecf18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840372"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails (función)
 
@@ -37,18 +38,18 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |skip|Int32|Todavía no documentado|
 |top|Int32|Todavía no documentado|
-|filter|String|Todavía no documentado|
-|skipToken|String|Todavía no documentado|
+|filter|Cadena|Todavía no documentado|
+|skipToken|Cadena|Todavía no documentado|
 
 
 

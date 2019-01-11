@@ -2,12 +2,13 @@
 title: Incluir en una lista los nombres
 description: 'Recuperar una lista del elemento con nombre asociada a la hoja de cálculo. '
 author: lumine2008
-ms.openlocfilehash: d59693e4e946beae5b882fae543f1c5d644bd66b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0213f18d8364e495152169e41e73938e3b62a86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842703"
 ---
 # <a name="list-names"></a>Incluir en una lista los nombres
 

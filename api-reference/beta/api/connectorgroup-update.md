@@ -1,12 +1,13 @@
 ---
 title: Actualizar connectorGroups
 description: Actualizar las propiedades del objeto connectorgroup.
-ms.openlocfilehash: a9777394a3ecfc65a7c03c07643359ef3c763aca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9a4db622328edd4d3aea348fd078acdc832a9c52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843804"
 ---
 # <a name="update-connectorgroups"></a>Actualizar connectorGroups
 
@@ -30,15 +31,15 @@ PATCH /connectorGroups/{id}
 ## <a name="optional-request-headers"></a>Encabezados de solicitud opcionales
 | Nombre       | Descripción|
 |:-----------|:-----------|
-| Authorization  | Bearer. Obligatorio|
+| Autorización  | Bearer. Obligatorio|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Los valores posibles son: `applicationProxy`.|
-|name|String|El nombre de la connectorGroup.|
+|name|Cadena|El nombre de la connectorGroup.|
 
 ## <a name="response"></a>Respuesta
 

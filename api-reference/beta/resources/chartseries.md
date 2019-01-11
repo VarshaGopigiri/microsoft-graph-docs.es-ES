@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartSeries
 description: Representa una serie de un gráfico.
 author: lumine2008
-ms.openlocfilehash: 443b6b3dfea54b59ff92babc2776d9624bd28b20
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6742c30eca55426e54290ae689bfabd8e14ce70f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325287"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842633"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
@@ -23,7 +24,7 @@ Representa una serie de un gráfico.
 |[Get ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |Lee las propiedades y relaciones del objeto chartSeries.|
 |[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Crea un nuevo ChartPoints publicándolo en la colección points.|
 |[List points](../api/chartseries-list-points.md) |Colección [ChartPoints](chartpoint.md)| Obtiene la colección de objetos ChartPoints.|
-|[Actualizar](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |Actualiza el objeto ChartSeries. |
+|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |Actualiza el objeto ChartSeries. |
 |[List](../api/chartseries-list.md) | Colección [ChartSeries](chartseries.md) |Obtiene la colección de objetos chartSeries. |
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|Recupera una serie en función de su posición en la colección.|
 

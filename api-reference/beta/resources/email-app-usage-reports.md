@@ -1,12 +1,13 @@
 ---
 title: Informes de uso de aplicaciones de correo electrónico
 description: Puede ver cuántas aplicaciones de correo electrónico se utilizan para conectarse a Exchange Online. También puede ver qué versiones de aplicaciones de Outlook se usan, lo que le permitirá realizar un seguimiento de los usuarios que necesitan actualizar a versiones de Outlook compatibles.
-ms.openlocfilehash: 0511bfb2832bac761ed1e56dfb18a41fc93beb01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 019f510901cdf508e8373dc1f2dffb9090961ed1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088555"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843018"
 ---
 # <a name="email-app-usage-reports"></a>Informes de uso de aplicaciones de correo electrónico
 

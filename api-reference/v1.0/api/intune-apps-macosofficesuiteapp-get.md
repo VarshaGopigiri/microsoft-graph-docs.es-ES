@@ -2,12 +2,13 @@
 title: Obtener macOSOfficeSuiteApp
 description: Lea las propiedades y las relaciones del objeto macOSOfficeSuiteApp.
 author: tfitzmac
-ms.openlocfilehash: 828ce8c90e7e33abef398bfc1dcdc0953ed3f5f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f9e3210b71f17b45a537f4baeb87cc08e0399d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843067"
 ---
 # <a name="get-macosofficesuiteapp"></a>Obtener macOSOfficeSuiteApp
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

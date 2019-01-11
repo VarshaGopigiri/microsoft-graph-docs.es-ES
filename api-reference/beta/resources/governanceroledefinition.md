@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso governanceRoleDefinition
 description: Representa las definiciones de roles. Para obtener recursos de Azure, puede representar funciones de RBAC Azure, como propietario, lector, Colaborador, etcetera.
-ms.openlocfilehash: 057d74276b41abad47eb60ce48a99f1160c401ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842457"
 ---
 # <a name="governanceroledefinition-resource-type"></a>tipo de recurso governanceRoleDefinition
 
@@ -26,10 +27,10 @@ No `POST`, `PUT`, `PATCH`, `DELETE` es compatible con `roleDefinitions` conjunto
 ## <a name="properties"></a>Propiedades
 | Propiedad  | Tipo      |Descripción|
 |:----|:----------|:----------|:----------|
-|id         |String     |El identificador de la definición de roles. |
+|id         |Cadena     |El identificador de la definición de roles. |
 |resourceId |Cadena     |Necesario. El identificador de recurso asociado a la definición de roles. |
 |externalId   |String     |El identificador externo de la definición de roles.|
-|displayName|String     |El nombre para mostrar de la definición de roles.|
+|displayName|Cadena     |El nombre para mostrar de la definición de roles.|
 |subjectCount|Int32     |Opcional. El número de asuntos que se asignan al rol. Representa el estado de acceso del solicitante para el recurso. Para obtener la propiedad, por favor, use explícitamente `$select=subjectCount` en la consulta.|
 |eligibleAssignmentCount|Int32|Opcional. El número de asignaciones de roles optan asociado con la definición de roles. Para obtener la propiedad, por favor, use explícitamente `$select=eligibleAssignmentCount` en la consulta.|
 |activeAssignmentCount|Int32    |Opcional. El número de asignaciones de rol activo asociado con la definición de roles.  Para obtener la propiedad, por favor, use explícitamente `$select=activeAssignmentCount` en la consulta.|

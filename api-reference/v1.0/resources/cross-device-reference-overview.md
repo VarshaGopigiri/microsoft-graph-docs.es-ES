@@ -1,12 +1,13 @@
 ---
 title: Usar la API de Microsoft Graph para facilitar experiencias multidispositivo
 description: '{Esta es la versión de la versión 1.0. Contenido es similar a la existente project_rome_overview.md}.'
-ms.openlocfilehash: 4918a238dfaee3b36d7f13f21bbbd5c89e1ff554
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 20d04d6cb7b9f494939881293a105e54f293f92a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030235"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841310"
 ---
 # <a name="use-the-microsoft-graph-api-to-enable-cross-device-experiences"></a>Usar la API de Microsoft Graph para facilitar experiencias multidispositivo
 

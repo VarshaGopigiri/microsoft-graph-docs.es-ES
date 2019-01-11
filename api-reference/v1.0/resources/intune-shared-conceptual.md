@@ -1,12 +1,13 @@
 ---
 title: Recursos compartidos en Intune de Microsoft
 description: Estos extremos se usan en varias API de gráfico de Microsoft para los flujos de trabajo Intune.  La intención, el propósito y los permisos necesarios para usar un recurso determinado varía según el contexto de la llamada subyacente y el flujo de trabajo específico.  Además, determinados métodos, propiedades y acciones se admiten sólo para flujos de trabajo específicos.
-ms.openlocfilehash: 8355d3b4bcb9b4fdc7fc8c1874641117dad1d583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d0d615be8d185c5dfe24d58f6a2e371e6baf18c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032568"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840071"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartidos en Intune de Microsoft
 
@@ -31,5 +32,5 @@ Los siguientes recursos de gráfico se comparten entre los flujos de trabajo Int
 - [Raíz de informes](intune-shared-reportroot.md)
 - [Guarda las opciones de generación de estado de la interfaz de usuario](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Usuario](intune-shared-user.md)
 - [Tipo de símbolo (token) de cuenta VPP](intune-shared-vpptokenaccounttype.md)

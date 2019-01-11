@@ -2,12 +2,13 @@
 title: tipo de recurso embeddedSIMActivationCodePoolAssignment
 description: La entidad de asignación grupo incrustada del código de activación SIM asigna un embeddedSIMActivationCodePool específico a un grupo de dispositivos AAD.
 author: tfitzmac
-ms.openlocfilehash: 67d563a630fb1c1092416f1081c4decda0d9eaf4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8faac932014d4dc770748daa6a3d883b4e648d70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843312"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>tipo de recurso embeddedSIMActivationCodePoolAssignment
 
@@ -28,7 +29,7 @@ La entidad de asignación grupo incrustada del código de activación SIM asigna
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para la asignación de grupo de código de activación SIM incrustada. Valor asignado al crear generada por el sistema.|
+|id|Cadena|Identificador único para la asignación de grupo de código de activación SIM incrustada. Valor asignado al crear generada por el sistema.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|El tipo de grupos de destino mediante el grupo de código de activación de SIM incrustado.|
 
 ## <a name="relationships"></a>Relaciones

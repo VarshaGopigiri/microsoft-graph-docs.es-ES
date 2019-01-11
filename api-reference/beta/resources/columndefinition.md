@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
-ms.openlocfilehash: 9b99abe78b009786d489ec7f0c0fdce1e2945b1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844495"
 ---
 # <a name="columndefinition-resource-type"></a>tipo de recurso columnDefinition
 
@@ -58,7 +59,7 @@ Las columnas pueden contener datos de distintos tipos.
 Las propiedades siguientes indican qué tipo de datos almacena una columna, así como una configuración adicional para esos datos.
 Las propiedades relacionadas con el tipo (boolean, calculado, elección, moneda, fecha y hora, búsqueda, número, personOrGroup, texto) son mutuamente excluyentes: una columna sólo puede tener uno de ellos especificado.
 
-| Nombre de propiedad           | Tipo    | Descripción
+| Nombre de la propiedad           | Tipo    | Descripción
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Para las columnas de sitio, el nombre del grupo al que pertenece esta columna. Ayuda a organizar las columnas relacionadas.
 | **description**         | string  | Descripción de cara al usuario de la columna.

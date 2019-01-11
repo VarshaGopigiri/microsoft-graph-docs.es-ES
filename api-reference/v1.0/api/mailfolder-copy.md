@@ -2,12 +2,13 @@
 title: 'mailFolder: copy'
 description: Copia un objeto mailfolder y su contenido en otro objeto mailfolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 44df53219e00479cdc48d057286f1af410e13c77
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94470a21a1a640f4333419620e79eaf7b8d1130b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844097"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -35,14 +36,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Encabezado | Valor |
 |:-------|:------|
-| Autorización | `Bearer {token}`. Obligatorio. |
-| Content-Type | `application/json`. Obligatorio. |
+| Autorización | `Bearer {token}`. Necesario. |
+| Content-Type | `application/json`. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro | Type | Descripción |
+| Parámetro | Tipo | Descripción |
 |:----------|:-----|:------------|
 |destinationId|String|El identificador de la carpeta, o un nombre de carpeta conocida. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 

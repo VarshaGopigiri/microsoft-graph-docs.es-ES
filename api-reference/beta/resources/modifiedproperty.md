@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso modifiedProperty
 description: Indica todas las propiedades modificadas con valor anterior y el nuevo valor para cualquier recurso en Azure AD que se ha cambiado
-ms.openlocfilehash: c504969ee12798969aa39490e79cb5b60bdb5435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 91e5df357a40b2e44bb26edc5fb3bf6965a260e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844460"
 ---
 # <a name="modifiedproperty-resource-type"></a>tipo de recurso modifiedProperty
 Indica todas las propiedades modificadas con valor anterior y el nuevo valor para cualquier recurso en Azure AD que se ha cambiado
@@ -16,7 +17,7 @@ Indica todas las propiedades modificadas con valor anterior y el nuevo valor par
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|displayName|String|Indica el nombre de propiedad del atributo de destino que se ha modificado.|
+|displayName|Cadena|Indica el nombre de propiedad del atributo de destino que se ha modificado.|
 |newValue|cadena|Indica el valor actualizado de la propiedad.|
 |oldValue|cadena|Indica el valor anterior (antes de la actualización) para la propiedad.|
 

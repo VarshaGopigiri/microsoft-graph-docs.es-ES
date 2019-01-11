@@ -2,12 +2,13 @@
 title: tipo de enumeración runState
 description: Indica el tipo de estado de ejecución de la secuencia de comandos de administración de dispositivos.
 author: tfitzmac
-ms.openlocfilehash: 87c845c02bd5a1571ab2f6382acbcc92cf81170d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38831625e5f3fc5f3e05b599054c738482b0a6cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349276"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845006"
 ---
 # <a name="runstate-enum-type"></a>tipo de enumeración runState
 
@@ -17,7 +18,7 @@ ms.locfileid: "27349276"
 
 Indica el tipo de estado de ejecución de la secuencia de comandos de administración de dispositivos.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Resultado desconocido.|
 |correcto|1|Secuencia de comandos se ejecuta correctamente.|

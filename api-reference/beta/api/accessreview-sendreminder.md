@@ -1,12 +1,13 @@
 ---
 title: SendReminder accessReview
 description: 'En Azure AD tener acceso a la característica de revisiones, enviar un aviso a los revisores de un accessReview actualmente activa.  El objeto de destino puede ser una revisión de acceso única o una instancia de una revisión periódica de access. '
-ms.openlocfilehash: fd8c204db207ae9f58c4dd5e6337e65efe160824
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3fa5c648a1b159a54560ad03f70a4f0251624119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085955"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844201"
 ---
 # <a name="sendreminder-accessreview"></a>SendReminder accessReview
 
@@ -31,7 +32,7 @@ POST /accessReviews('<id>')/sendReminder()
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
