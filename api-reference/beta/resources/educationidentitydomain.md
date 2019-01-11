@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationIdentityDomain
 description: 'Representa la asignación entre un tipo de usuario de formación y el dominio al que pertenece la cuenta de usuario. El recurso de dominio forma parte de la configuración de creación de identidad. '
-ms.openlocfilehash: 8298e1eb38ae70f982719ee3a7d6588cd181bdd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5675499aca010f90deeb517210065ac4802d66b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807752"
 ---
 # <a name="educationidentitydomain-resource-type"></a>tipo de recurso educationIdentityDomain
 
@@ -16,7 +17,7 @@ Representa la asignación entre un tipo de usuario de formación y el dominio al
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:-|:-|:-|
 | **appliesTo** | string |  El tipo de función de usuario para asignar a la licencia. Los valores posibles son: `student` y `teacher`.      |
 | **name** | string |  Representa el dominio para la cuenta de usuario.         |

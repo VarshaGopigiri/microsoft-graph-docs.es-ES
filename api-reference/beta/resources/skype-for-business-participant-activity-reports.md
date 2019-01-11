@@ -1,12 +1,13 @@
 ---
 title: Obtener informe de actividades de participantes de Skype Empresarial
 description: Puede obtener detalles sobre la actividad de conferencia en toda la organización. Estos detalles son muy útiles para investigar, planear y tomar otras decisiones empresariales en la organización.
-ms.openlocfilehash: 987896f4dc57bdd63b54c87bdfafaddc25cbec4e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f6210bf6083d06ac06f43a18ab85dcb920420f98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815543"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Obtener informe de actividades de participantes de Skype Empresarial
 

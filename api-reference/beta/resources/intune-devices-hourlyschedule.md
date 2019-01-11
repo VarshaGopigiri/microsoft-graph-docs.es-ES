@@ -2,12 +2,13 @@
 title: tipo de recurso hourlySchedule
 description: Cada hora, ejecute la programación de una secuencia de comandos de administración de dispositivo periódica.
 author: tfitzmac
-ms.openlocfilehash: e73ff542b7de780d16d9f2bd76c11c2d0f92e8ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f22cc44fdd9017ef6db6f014e4a9b756d46d034
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317580"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811294"
 ---
 # <a name="hourlyschedule-resource-type"></a>tipo de recurso hourlySchedule
 
@@ -20,7 +21,7 @@ Cada hora, ejecute la programación de una secuencia de comandos de administraci
 Hereda de [runSchedule](../resources/intune-devices-runschedule.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |interval|Int32|Intervalo en el número de horas|
 

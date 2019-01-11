@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationStatus
 description: Representa el estado actual de la synchronizationJob.
-ms.openlocfilehash: cf1b1e79e5ad784f1f43a2e5bf082c68b41e96ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 01f30338d7f6d4388554df08bf91655136c24a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091085"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817034"
 ---
 # <a name="synchronizationstatus-resource-type"></a>tipo de recurso synchronizationStatus
 
@@ -18,7 +19,7 @@ Representa el estado actual de la [synchronizationJob](synchronization-synchroni
 
 | Propiedad                              | Tipo      | Descripción    |
 |:--------------------------------------|:----------|:---------------|
-|código|String|Código de estado de alto nivel del trabajo de sincronización. Los valores posibles son: `NotConfigured`, `NotRun`, `Active`, `Paused` y `Quarantine`.|
+|código|Cadena|Código de estado de alto nivel del trabajo de sincronización. Los valores posibles son: `NotConfigured`, `NotRun`, `Active`, `Paused` y `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Número de consecutivos veces este error del trabajo.|
 |escrowsPruned|Booleano|`true`Si se han eliminado depósitos de garantía del trabajo (errores de nivel de objeto) durante la sincronización inicial. Si durante la sincronización inicial, alcanza el umbral de errores que normalmente se debería colocar el trabajo en cuarentena, se pueden eliminar depósitos de garantía. En lugar de entrar en cuarentena, el proceso de sincronización borra los errores del trabajo y continúa hasta que se complete la sincronización inicial. Cuando se complete la sincronización inicial, el trabajo pausar y espere a que el cliente limpiar los errores.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalles de la última ejecución del trabajo.|
@@ -29,11 +30,11 @@ Representa el estado actual de la [synchronizationJob](synchronization-synchroni
 |steadyStateFirstAchievedTime|DateTimeOffset|El tiempo cuando se ha conseguido en primer lugar estado estable (no hay más cambios en el proceso). El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|El tiempo cuando se ha conseguido por última vez el estado estable (no hay más cambios en el proceso). El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|colección de [stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)|Recuento de los objetos sincronizados, enumeradas por tipo de objeto.|
-|troubleshootingUrl|String|En el caso de un error, la dirección URL con los pasos de solución de problemas para el problema.|
+|troubleshootingUrl|Cadena|En el caso de un error, la dirección URL con los pasos de solución de problemas para el problema.|
 
 ### <a name="synchronization-status-code-details"></a>Detalles del código de estado de sincronización
 
-| Valor                              | Descripción    |
+| Valor                              | Description    |
 |:-----------------------------------|:---------------|
 |No configurado                       |Trabajo no configuró y nunca se ejecuta. No hay autorización le ha proporcionado. |
 |NotRun                              |Trabajo se ha configurado y, posiblemente, se ha iniciado, pero no ha completado su primera ejecución.|

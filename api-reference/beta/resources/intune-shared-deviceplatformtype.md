@@ -2,12 +2,13 @@
 title: tipo de enumeración devicePlatformType
 description: Los tipos de plataforma compatibles.
 author: tfitzmac
-ms.openlocfilehash: 6609ea65eb7469155f4e1bf3f8d6e5ccc424d338
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53d3275b906276caefa9a655f12146fb73e0d7c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819337"
 ---
 # <a name="deviceplatformtype-enum-type"></a>tipo de enumeración devicePlatformType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27316222"
 
 Los tipos de plataforma compatibles.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |Android|0|Android.|
 |androidForWork|1|AndroidForWork.|

@@ -2,12 +2,13 @@
 title: 'educationSubmission: enviar'
 description: Una acción que indica que un estudiante se realiza con el trabajo y está listo para proporcionar en la asignación. Esta acción sólo puede consultarse por el alumno.
 author: dipakboyed
-ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef2ef84819a6bfbeeb83a012b4c26fe7cb56662c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343333"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808578"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: enviar
 

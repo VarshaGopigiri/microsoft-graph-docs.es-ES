@@ -2,12 +2,13 @@
 title: acción enableLostMode
 description: Habilitar el modo pierden
 author: tfitzmac
-ms.openlocfilehash: b75df200a57f5861515f1e5d3c867df8b3f08276
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807248"
 ---
 # <a name="enablelostmode-action"></a>acción enableLostMode
 
@@ -41,18 +42,18 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |message|String|Todavía no documentado|
-|phoneNumber|String|Todavía no documentado|
-|pie de página|String|Todavía no documentado|
+|phoneNumber|Cadena|Todavía no documentado|
+|pie de página|Cadena|Todavía no documentado|
 
 
 

@@ -2,12 +2,13 @@
 title: tipo de enumeración win32LobAppReturnCodeType
 description: Indica el tipo de código de retorno.
 author: tfitzmac
-ms.openlocfilehash: 31023cb2d8f5a0f645f31890e56ab9a55641bbf6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 684aa4f717adb0841c9f6c983c39afee2bf7210a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807304"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>tipo de enumeración win32LobAppReturnCodeType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27357956"
 
 Indica el tipo de código de retorno.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |failed|0|No se pudo.|
 |correcto|1|Correcto.|

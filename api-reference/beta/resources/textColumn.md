@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: TextColumn
-ms.openlocfilehash: 5ff280b6c969d9832e2f81f77dc32237f9905aad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 87a5e27544a49613d1d1e44cd6f3e0e3b7fcf8c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822571"
 ---
 # <a name="textcolumn-resource-type"></a>Tipo de recurso TextColumn
 
@@ -33,7 +34,7 @@ A continuación se incluye una representación JSON de un recurso **TextColumn**
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad                   | Tipo   | Descripción
+| Nombre de la propiedad                   | Tipo   | Descripción
 |:--------------------------------|:-------|:-----------------------------------------------
 | **allowMultipleLines**          | string | Si se permiten varias líneas de texto.
 | **appendChangesToExistingText** | string | Si las actualizaciones de esta columna deben reemplazar el texto existente o anexarse a este.

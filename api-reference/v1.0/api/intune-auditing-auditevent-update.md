@@ -2,12 +2,13 @@
 title: Actualizar auditEvent
 description: Actualice las propiedades de un objeto auditEvent.
 author: tfitzmac
-ms.openlocfilehash: 631144a0192af20580cdbf108d3acf7daa3d82f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 63da381029325977f7cdcf74b8de776c668e0656
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815718"
 ---
 # <a name="update-auditevent"></a>Actualizar auditEvent
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [auditEvent](../resources/intune-auditing-auditevent.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |displayName|String|Nombre para mostrar del evento.|
 |componentName|String|Nombre del componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuario y aplicación de AAD que están asociados al evento de auditoría.|

@@ -2,12 +2,13 @@
 title: Obtener remoteAssistancePartner
 description: Lea las propiedades y las relaciones del objeto remoteAssistancePartner.
 author: tfitzmac
-ms.openlocfilehash: 35b9a02919d656aa0b56617ee37d9d8c0675ee09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1212ca8d51ac0fd2a896800d5467624cd1c08570
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806724"
 ---
 # <a name="get-remoteassistancepartner"></a>Obtener remoteAssistancePartner
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

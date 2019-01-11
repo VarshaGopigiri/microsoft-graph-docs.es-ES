@@ -2,12 +2,13 @@
 title: Enumerar windowsUniversalAppXs
 description: Enumere las propiedades y las relaciones de los objetos windowsUniversalAppX.
 author: tfitzmac
-ms.openlocfilehash: b6e02fe8b6441211f71012d8e45a9a027c6622ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cea1fb11fe40db5234dd0c0f1a57539f804fe219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811147"
 ---
 # <a name="list-windowsuniversalappxs"></a>Enumerar windowsUniversalAppXs
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

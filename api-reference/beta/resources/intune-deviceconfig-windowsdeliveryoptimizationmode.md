@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsDeliveryOptimizationMode
 description: Modo de optimización de entrega para la distribución del mismo nivel
 author: tfitzmac
-ms.openlocfilehash: b23bdc80bd8b1fb151f9e138e1a1802140455c4e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e62416328e596737c36d920d6877773c905680c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333484"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807724"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeración windowsDeliveryOptimizationMode
 
@@ -17,7 +18,7 @@ ms.locfileid: "27333484"
 
 Modo de optimización de entrega para la distribución del mismo nivel
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Permitir al usuario que establezca.|
 |httpOnly|1|HTTP sólo, sin interconexión|

@@ -2,12 +2,13 @@
 title: Lista windowsUniversalAppXContainedApps
 description: Propiedades de la lista y relaciones de los objetos windowsUniversalAppXContainedApp.
 author: tfitzmac
-ms.openlocfilehash: f28efa8a32c45d297670789a7726319fd96cc0b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f5c7afb65c3628629d5349bca76c1b46467dfc9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808690"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Lista windowsUniversalAppXContainedApps
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

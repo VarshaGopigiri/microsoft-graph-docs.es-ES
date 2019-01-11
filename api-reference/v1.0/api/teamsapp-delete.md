@@ -1,12 +1,13 @@
 ---
-title: Permissions
+title: Permisos
 description: 'Quitar la aplicación de catálogo de aplicaciones de la organización (el catálogo de aplicaciones de inquilino). '
-ms.openlocfilehash: eb58c66b768efc653a0da479dc01bb3fec4901cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e19826407a5f809787beffc8211f77ddce21d043
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804931"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Quitar una aplicación de catálogo de aplicaciones de la organización
 
@@ -40,7 +41,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-Ninguna.
+Ninguno.
 
 >**Nota:** Use el identificador devuelto de la llamada [lista publica aplicaciones](./teamsapp-list.md) para hacer referencia a la aplicación que desea actualizar. No use el identificador del manifiesto del paquete de la aplicación de zip.
 

@@ -2,12 +2,13 @@
 title: tipo de recurso educationOrganization
 description: 'Entidades abstractas que se utiliza para modelar la uniformidad entre los tipos de organización diferentes en el sector de educación.  '
 author: mmast-msft
-ms.openlocfilehash: 54f281de29033418b6acb2f9821c5ebd1eaf4db0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9930a32e52e9380e26c6fa94095b3a7099beb70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822508"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso educationOrganization
 
@@ -18,8 +19,8 @@ Entidades abstractas que se utiliza para modelar la uniformidad entre los tipos 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|description|String| Descripción de la organización.|
-|displayName|String| Nombre para mostrar de organización.|
+|description|Cadena| Descripción de la organización.|
+|displayName|Cadena| Nombre para mostrar de organización.|
 |externalSource|string| Origen donde se creó esta organización. Los valores posibles son: `sis`, `manual` y `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relaciones

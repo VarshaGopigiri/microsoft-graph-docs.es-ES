@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso attributeMappingFunctionSchema
 description: Describe una función que se puede usar en una asignación de atributos para transformar los valores durante la sincronización.
-ms.openlocfilehash: 9760669bb29700bfa79c1cd375857b4fd673879b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7273534d281d8ea5eaf3709b530776295cd9c767
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822165"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>tipo de recurso attributeMappingFunctionSchema
 
@@ -24,8 +25,8 @@ Describe una función que se puede usar en una [asignación de atributos](synchr
 
 | Propiedad                   | Tipo                      | Descripción    |
 |:---------------------------|:-------------------------|:---------------|
-|name                        |String                    |Nombre del operador. |
-|parameters                  |colección de [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Colección de parámetros de la función.|
+|name                        |Cadena                    |Nombre del operador. |
+|parámetros                  |colección de [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Colección de parámetros de la función.|
 
 ## <a name="json-representation"></a>Representación JSON
 

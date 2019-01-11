@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso connectorGroup
 description: Aquí tiene una representación JSON del recurso.
-ms.openlocfilehash: a3131b887216f1f400f70ed8d607477f65793cc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 211efe5d8caae57457a6a5cc4fa95d145cd176f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088209"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823194"
 ---
 # <a name="connectorgroup-resource-type"></a>tipo de recurso connectorGroup
 
@@ -25,15 +26,15 @@ ms.locfileid: "27088209"
 |[Delete](../api/connectorgroup-delete.md) | Ninguno |Eliminar el objeto connectorGroup. Todos los conectores deben quitar antes de que se puede eliminar un grupo de conector. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| El tipo de conectores que se utilizará junto con el grupo. Los valores posibles son: `applicationProxy`.|
-|id|String| El identificador del objeto de la connectorGroup|
+|id|Cadena| El identificador del objeto de la connectorGroup|
 |isDefault|Booleano| Indica si la connectorGroup es el grupo predeterminado de conector. Sólo un conector grupo puede ser el connectorGroup de forma predeterminada y se establece el sistema.|
-|name|String| El nombre asociado con el connectorGroup.|
+|name|Cadena| El nombre asociado con el connectorGroup.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |aplicaciones|colección de la [aplicación](application.md)| Solo lectura. Admite valores NULL.|
 |members|colección de [conector](connector.md)| Solo lectura. Admite valores NULL.|

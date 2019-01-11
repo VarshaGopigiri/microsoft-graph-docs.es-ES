@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración managedAppClipboardSharingLevel
 description: Representa el nivel al que Portapapeles del dispositivo pueden compartirse entre aplicaciones
-ms.openlocfilehash: 71c4ab2d629fdfee3ded68612d7060a0fa069809
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 363e80b2242f5ac4d481389633aaa72fcc27894a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808179"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>tipo de enumeración managedAppClipboardSharingLevel
 
@@ -16,7 +17,7 @@ ms.locfileid: "27090612"
 
 Representa el nivel al que Portapapeles del dispositivo pueden compartirse entre aplicaciones
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allApps|0|Se permite el uso compartido entre todas las aplicaciones, o no administradas|
 |managedAppsWithPasteIn|1|Se permite el uso compartido entre todas las aplicaciones administradas con pegar en habilitado|

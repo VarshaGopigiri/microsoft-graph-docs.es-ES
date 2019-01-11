@@ -2,12 +2,13 @@
 title: tipo de enumeración appLockerApplicationControlType
 description: Posibles valores de tipos de Control de aplicación de AppLocker
 author: tfitzmac
-ms.openlocfilehash: 0d6190170d6f6695a3303047f9ccb193afd248f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ca34a44b1ea4e55199eb65283f839cb50e222da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807808"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>tipo de enumeración appLockerApplicationControlType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27330208"
 
 Posibles valores de tipos de Control de aplicación de AppLocker
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|Valor predeterminado de dispositivo, no se ha seleccionado ningún tipo de Control de la aplicación.|
 |enforceComponentsAndStoreApps|1|Exigir la aplicación de las aplicaciones de componente y almacenamiento de Windows.|

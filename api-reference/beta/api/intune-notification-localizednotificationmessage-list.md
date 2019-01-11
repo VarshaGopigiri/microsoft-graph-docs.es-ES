@@ -2,12 +2,13 @@
 title: Enumerar localizedNotificationMessages
 description: Enumere las propiedades y las relaciones de los objetos localizedNotificationMessage.
 author: tfitzmac
-ms.openlocfilehash: 070488840f04f21b8a96c8532c9f863ee5934299
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac56d692f0c9e4cd4e24a8ebb511d5dfba0ed7ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823614"
 ---
 # <a name="list-localizednotificationmessages"></a>Enumerar localizedNotificationMessages
 
@@ -38,7 +39,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

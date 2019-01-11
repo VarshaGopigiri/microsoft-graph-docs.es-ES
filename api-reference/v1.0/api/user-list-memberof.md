@@ -2,12 +2,13 @@
 title: List memberOf
 description: 'Obtiene todos los grupos y roles de directorio de los que el usuario sea miembro directo. '
 author: dkershaw10
-ms.openlocfilehash: 25f5d8d01f97bd2a3afe90f596dfb7c18eaad857
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: cd43e3853d25a55ac8c41f170736a8c37477906e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811378"
 ---
 # <a name="list-memberof"></a>Enumerar memberOf
 

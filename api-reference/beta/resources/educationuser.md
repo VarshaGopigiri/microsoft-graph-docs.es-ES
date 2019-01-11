@@ -2,12 +2,13 @@
 title: Tipo de recurso educationUser
 description: Usuario del sistema. Se trata de una variante específica del ámbito educativo del usuario con el mismo `id` que devolverá Microsoft Graph desde el punto de conexión `/users` no específico del ámbito educativo.
 author: mmast-msft
-ms.openlocfilehash: 10f11c8d621fc2558fa6a82ca1f5d2a0e2e3dc4a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a577fae0896ca4f32b0266f5353e963ce0c7d35a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822753"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -36,16 +37,16 @@ Este objeto ofrece un subconjunto de destino de propiedades del objeto [user](us
 |assignedPlans|Colección [assignedPlan](assignedplan.md)|Planes que se asignan al usuario. Solo lectura. No admite valores NULL. |
 |businessPhones|String collection|Números de teléfono del usuario. **Nota:** Aunque se trata de una colección de cadenas, solo se puede establecer un número para esta propiedad.|
 |createdBy|[identitySet](identityset.md)| Entidad que ha creado el usuario. |
-|department|String|El nombre del departamento en el que trabaja el usuario. Es compatible con $filter.|
+|department|Cadena|El nombre del departamento en el que trabaja el usuario. Es compatible con $filter.|
 |displayName|Cadena|Nombre del usuario que aparece en la libreta de direcciones. Suele ser la combinación del nombre del usuario, la inicial del segundo nombre y el apellido. Esta propiedad es necesaria al crearse un usuario y no puede borrarse durante las actualizaciones. Es compatible con $filter y $orderby.|
 |externalSource|`educationExternalSource`| Indica desde dónde se ha creado este usuario. Los valores posibles son: `sis`, `manual` y `unkownFutureValue`.|
-|givenName|String|Nombre (nombre de pila) del usuario. Es compatible con $filter.|
+|givenName|Cadena|Nombre (nombre de pila) del usuario. Es compatible con $filter.|
 |id|String|Identificador único del usuario. Se hereda de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
 |mail|String|Dirección SMTP del usuario (por ejemplo: "jeff@contoso.onmicrosoft.com"). Solo lectura. Es compatible con $filter.|
 |mailingAddress|[physicalAddress](physicaladdress.md)| Dirección de correo del usuario.|
-|mailNickname|String|Alias de correo del usuario. Esta propiedad debe especificarse al crear un usuario. Es compatible con $filter.|
+|mailNickname|Cadena|Alias de correo del usuario. Esta propiedad debe especificarse al crear un usuario. Es compatible con $filter.|
 |middleName| String | Segundo nombre del usuario.|
-|mobilePhone|String|Número de teléfono móvil principal del usuario.|
+|mobilePhone|Cadena|Número de teléfono móvil principal del usuario.|
 |passwordPolicies|Cadena|Especifica las directivas de contraseña del usuario. Este valor es una enumeración con un valor posible de "DisableStrongPassword" y permite especificar contraseñas menos seguras que la directiva predeterminada. También se puede especificar "DisablePasswordExpiration". Pueden especificarse los dos juntos; (por ejemplo: "DisablePasswordExpiration, DisableStrongPassword").|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica el perfil de contraseña del usuario. El perfil contiene la contraseña del usuario. Esta propiedad es necesaria cuando se crea un usuario. La contraseña del perfil debe cumplir los requisitos mínimos especificados por la propiedad **passwordPolicies**. De manera predeterminada, se requiere una contraseña segura.|
 |preferredLanguage|Cadena|Idioma preferido del usuario. Debe seguir el código ISO 639-1 (por ejemplo, "en-US").|
@@ -53,11 +54,11 @@ Este objeto ofrece un subconjunto de destino de propiedades del objeto [user](us
 |provisionedPlans|Colección [ProvisionedPlan](provisionedplan.md)|Planes que se aprovisionan para el usuario. Solo lectura. No admite valores NULL. |
 |residenceAddress|[physicalAddress](physicaladdress.md)| Dirección donde reside el usuario.|
 |student|[educationStudent](educationstudent.md)| Si el rol principal es alumno, este bloque contendrá datos específicos de alumnos.|
-|surname|String|Apellido (o apellidos) del usuario. Es compatible con $filter.|
+|surname|Cadena|Apellido (o apellidos) del usuario. Es compatible con $filter.|
 |teacher|[educationTeacher](educationteacher.md)| Si el rol principal es profesor, este bloque contendrá datos específicos de profesores.|
 |usageLocation|String|Código de país de dos letras (norma ISO 3166). Es necesario para los usuarios a quienes se van a asignar licencias debido a un requisito legal de comprobación de disponibilidad en los países o las regiones. Estos son algunos ejemplos: "US", "JP" y "GB". No admite valores NULL. Es compatible con $filter.|
 |userPrincipalName|String|El nombre principal del usuario (UPN) del usuario. El UPN es un nombre de inicio de sesión de Internet del usuario basado en la norma RFC 822. Por convención, se debe asignar al nombre de correo electrónico del usuario. El formato general es alias@dominio, donde el dominio debe estar presente en la colección de dominios verificados del inquilino. Esta propiedad es necesaria cuando se crea un usuario. Se puede acceder a los dominios verificados del inquilino desde la propiedad **verifiedDomains** en [organización](organization.md). Es compatible con $filter y $orderby.
-|userType|String|Un valor de cadena que puede utilizarse para clasificar los tipos de usuario en el directorio. Por ejemplo: "Miembro" e "Invitado". Es compatible con $filter.          |
+|userType|Cadena|Un valor de cadena que puede utilizarse para clasificar los tipos de usuario en el directorio. Por ejemplo: "Miembro" e "Invitado". Es compatible con $filter.          |
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

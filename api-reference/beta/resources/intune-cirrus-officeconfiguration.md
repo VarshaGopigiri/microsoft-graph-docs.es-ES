@@ -2,12 +2,13 @@
 title: tipo de recurso officeConfiguration
 description: Entidad singleton que actúa como un contenedor para todas las funcionalidades de administración de dispositivos.
 author: tfitzmac
-ms.openlocfilehash: bf74789d4debda00b21173ff2974db8224cd15f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 096a54db296181e58020bb9bc694056c0b9e949a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305547"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817264"
 ---
 # <a name="officeconfiguration-resource-type"></a>tipo de recurso officeConfiguration
 
@@ -25,12 +26,12 @@ Entidad singleton que actúa como un contenedor para todas las funcionalidades d
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador de la configuración de office.|
+|id|Cadena|Identificador de la configuración de office.|
 |tenantCheckinStatuses|colección de [officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)|Lista de comprobación de estado del cliente de office.|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entidad que describe el inquilino de verificación estatuas|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |clientConfigurations|colección de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Lista de configuración de cliente de office.|
 

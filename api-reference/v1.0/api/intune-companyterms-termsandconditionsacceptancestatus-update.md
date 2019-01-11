@@ -2,12 +2,13 @@
 title: Actualizar termsAndConditionsAcceptanceStatus
 description: Actualice las propiedades de un objeto termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: 2f1cf0dea9ccb6c23fe55ce201bd3a6939d5976f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 77dd0941670719f960b5388a86a8143c379bdb5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354274"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805820"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Actualizar termsAndConditionsAcceptanceStatus
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).
@@ -45,8 +46,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la entidad.|
-|userDisplayName|String|Nombre para mostrar del usuario cuya aceptación representa la entidad.|
+|id|Cadena|Identificador único de la entidad.|
+|userDisplayName|Cadena|Nombre para mostrar del usuario cuya aceptación representa la entidad.|
 |acceptedVersion|Int32|Número de versión más reciente de los TyC aceptados por el usuario.|
 |acceptedDateTime|DateTimeOffset|Fecha y hora en la que el usuario aceptó los términos por última vez.|
 

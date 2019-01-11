@@ -1,12 +1,13 @@
 ---
 title: Configurar la sincronización con los atributos de destino personalizado
 description: Puede personalizar el esquema de sincronización para incluir los atributos personalizados que se definen en el directorio de destino. En este artículo se describe cómo personalizar una suscripción a la fuerza de ventas mediante la adición de un nuevo campo denominado `officeCode`. Configurar la sincronización de Azure Active Directory (AD Azure) a la fuerza de ventas, y para cada usuario, rellenará la `officeCode` campo fuerza de ventas con el valor de la `extensionAttribute10` campo en Azure AD.
-ms.openlocfilehash: e043fa5e458a56312871567bb14598f9232e97eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a7612682794109a5f94318304c8a8898764ccb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806758"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar la sincronización con los atributos de destino personalizado
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Workbook
 description: Workbook es el objeto de nivel superior que contiene los objetos de libro relacionados, como hojas de cálculo, tablas, intervalos, etc.
-ms.openlocfilehash: 398ba5f4cea3fd6094c18b02cc1db277a6c43433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9479c6888dc27fd595db2313ab6a88617410530f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806800"
 ---
 # <a name="workbook-resource-type"></a>Tipo de recurso Workbook
 

@@ -2,12 +2,13 @@
 title: Actualizar la aplicación
 description: Actualizar las propiedades del objeto application.
 author: lleonard-msft
-ms.openlocfilehash: e664e212f81bab9f4e8b49bce60b4ec045fa5787
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316691"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819009"
 ---
 # <a name="update-application"></a>Actualizar la aplicación
 
@@ -30,23 +31,23 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 PATCH /applications/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolean| Especifica si la aplicación puede actuar como un cliente público. Por ejemplo, una aplicación instalada que se ejecutan en un dispositivo móvil. El valor predeterminado es *false*. |
+|allowPublicClient|Booleano| Especifica si la aplicación puede actuar como un cliente público. Por ejemplo, una aplicación instalada que se ejecutan en un dispositivo móvil. El valor predeterminado es *false*. |
 |API|[API](../resources/api.md)| Especifica la configuración para una aplicación de API. |
 |appRoles|colección de [función de aplicación](../resources/approle.md)|La colección de funciones de aplicación que se puede declarar una aplicación. Estos roles pueden asignarse a usuarios, grupos o entidades de seguridad del servicio. No admite valores NULL.|
 |applicationAliases|Colección String| El URI que identifica la aplicación. Para obtener más información, vea [objetos de la aplicación y los objetos a principales de servicio](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). El operador *any* es necesario para las expresiones de filtro en las propiedades multivalor. No admite valores NULL. |
 |createdDateTime|DateTimeOffset| La fecha y la hora que se registró la aplicación. |
 |deletedDateTime|DateTimeOffset| La fecha y la hora que se ha eliminado la aplicación. |
-|displayName|String|El nombre para mostrar para la aplicación. |
-|id|String|El identificador único para la aplicación. Heredado de [directoryObject](../resources/directoryobject.md). Clave. No admite valores NULL. Solo lectura. |
+|displayName|Cadena|El nombre para mostrar para la aplicación. |
+|id|Cadena|El identificador único para la aplicación. Heredado de [directoryObject](../resources/directoryobject.md). Clave. No admite valores NULL. Solo lectura. |
 |Info|[informationalUrl](../resources/informationalurl.md)| Información de perfil básico de la aplicación. | Especifica la configuración para los clientes instalados como dispositivos de escritorio o portátiles. |
 |keyCredentials|colección de [keyCredential](../resources/keycredential.md)|La colección de credenciales claves asociadas con la aplicación no acepta valores NULL. |
 |logo|Stream|El logotipo principal para la aplicación. No admite valores NULL. |

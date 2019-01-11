@@ -2,12 +2,13 @@
 title: Obtener managedAppOperation
 description: Lea las propiedades y las relaciones del objeto managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 81c2dba84da5acfb4717fee079b575bec06ca87f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f694c61ed7ea52ad5a5afb38f6c66d8e85aa48a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349409"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807059"
 ---
 # <a name="get-managedappoperation"></a>Obtener managedAppOperation
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

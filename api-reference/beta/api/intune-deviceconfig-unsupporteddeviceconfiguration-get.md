@@ -2,12 +2,13 @@
 title: Obtener unsupportedDeviceConfiguration
 description: Leer las propiedades y las relaciones del objeto unsupportedDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9b6b350356d59b3792ca533c3fa65053e7113fa7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ebff30e34436239a5c7ffec4d03cb83966a59d98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817418"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>Obtener unsupportedDeviceConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

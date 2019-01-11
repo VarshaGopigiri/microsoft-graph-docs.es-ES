@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso networkInterface
 description: Representa una tarjeta de interfaz de red (NIC) asociado con este host.
-ms.openlocfilehash: 7044b4f469e74424b0dc27ffa38c5feb081faa45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92ea26b76de8fa6ffbcdcf0bc64b85a08d0f51af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823306"
 ---
 # <a name="networkinterface-resource-type"></a>tipo de recurso networkInterface
 
@@ -16,11 +17,11 @@ Representa una tarjeta de interfaz de red (NIC) asociado con este host.
 
 | Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|description|String|Descripción de la NIC (por ejemplo, adaptador Ethernet, conexión de área Local del adaptador de red LAN inalámbrica * <> #, etcetera.).|
-|ipV4Address|String|Última dirección IPv4 asociado con esta NIC.|
-|ipV6Address|String|Última pública (también conocido como) dirección IPv6 global asociado con esta NIC.|
-|localIpV6Address|String|Última local (local de vínculo o local del sitio) dirección IPv6 asociada con esta NIC.|
-|dirección MAC|String|Dirección MAC de la NIC en este host.|
+|description|Cadena|Descripción de la NIC (por ejemplo, adaptador Ethernet, conexión de área Local del adaptador de red LAN inalámbrica * <> #, etcetera.).|
+|ipV4Address|Cadena|Última dirección IPv4 asociado con esta NIC.|
+|ipV6Address|Cadena|Última pública (también conocido como) dirección IPv6 global asociado con esta NIC.|
+|localIpV6Address|Cadena|Última local (local de vínculo o local del sitio) dirección IPv6 asociada con esta NIC.|
+|dirección MAC|Cadena|Dirección MAC de la NIC en este host.|
 
 ## <a name="json-representation"></a>Representación JSON
 

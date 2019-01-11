@@ -2,12 +2,13 @@
 title: Eliminar managementConditionStatement
 description: Elimina un managementConditionStatement.
 author: tfitzmac
-ms.openlocfilehash: 595218c9e04516b31d04e04897cdf8f6b9a0cba7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a5dc477d9c714b5cf1656b799cf0d044c7799a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316180"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813226"
 ---
 # <a name="delete-managementconditionstatement"></a>Eliminar managementConditionStatement
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

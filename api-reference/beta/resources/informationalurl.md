@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso informationalUrl
 description: Información de perfil básico de la aplicación.
-ms.openlocfilehash: c8a13f4f686fe3b6ffd460ab05342b7da9b4a808
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78fd03a2673b342d1a0c904f521fe5a0f8cba205
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088200"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816985"
 ---
 # <a name="informationalurl-resource-type"></a>tipo de recurso informationalUrl
 
@@ -16,12 +17,12 @@ Información de perfil básico de la aplicación.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------------|:--------|:----------|
-|de marketing|String| Vínculo a la aplicación de la página de marketing. Por ejemplo: https://www.contoso.com/app/marketing |
-|privacidad|String| Vínculo a la declaración de privacidad de la aplicación. Por ejemplo: https://www.contoso.com/app/privacy |
-|soporte técnico|String| Vínculo a la página de soporte técnico de la aplicación. Por ejemplo: https://www.contoso.com/app/support |
-|termsOfService|String| Vínculo a los términos de la aplicación de instrucción de servicio. Por ejemplo: https://www.contoso.com/app/termsofservice |
+|de marketing|Cadena| Vínculo a la aplicación de la página de marketing. Por ejemplo: https://www.contoso.com/app/marketing |
+|privacidad|Cadena| Vínculo a la declaración de privacidad de la aplicación. Por ejemplo: https://www.contoso.com/app/privacy |
+|soporte técnico|Cadena| Vínculo a la página de soporte técnico de la aplicación. Por ejemplo: https://www.contoso.com/app/support |
+|termsOfService|Cadena| Vínculo a los términos de la aplicación de instrucción de servicio. Por ejemplo: https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.

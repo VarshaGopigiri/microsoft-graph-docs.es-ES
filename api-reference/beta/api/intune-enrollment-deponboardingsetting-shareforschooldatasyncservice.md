@@ -2,12 +2,13 @@
 title: acción shareForSchoolDataSyncService
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 11b7d890a6fd6d0199fcfbc099cef38eab414c57
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 12fea3192dc5aa1e4c2c2416565126d2b8b47fc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814066"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>acción shareForSchoolDataSyncService
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/shareForSc
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

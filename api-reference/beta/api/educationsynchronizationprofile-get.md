@@ -2,12 +2,13 @@
 title: Obtener un educationSynchronizationProfile
 description: Recuperar un perfil de sincronización de datos de school en el inquilino según el identificador.
 author: mmast-msft
-ms.openlocfilehash: 6aa01f8c48bdaad58ae3a6a9c6ba719e91eb23a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25a791265719dc09c9297d30a6ff625ee093edc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823908"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Obtener un educationSynchronizationProfile
 
@@ -31,7 +32,7 @@ GET /synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 

@@ -2,12 +2,13 @@
 title: tipo de enumeración hashAlgorithms
 description: Opciones de algoritmo de hash.
 author: tfitzmac
-ms.openlocfilehash: eb02601cb1c0aa0782c05d42be37ec7c527f7c62
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d0dd3be7534f81c185d4cd051b4d7c77e4d8653
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819428"
 ---
 # <a name="hashalgorithms-enum-type"></a>tipo de enumeración hashAlgorithms
 
@@ -17,7 +18,7 @@ ms.locfileid: "27328122"
 
 Opciones de algoritmo de hash.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |SHA1|1|Algoritmo de Hash SHA-1.|
 |SHA2|2|Algoritmo de Hash SHA-2.|

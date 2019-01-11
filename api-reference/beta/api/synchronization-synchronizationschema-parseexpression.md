@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationSchema: parseExpression'
 description: '(.. / resources/synchronization_attributemappingsource.md) objeto. '
-ms.openlocfilehash: d6cc929681458ff00a806150aa8db9daf115548a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dbde03b9ae85377801ad894c8b8ca22c6baebc85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811028"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -40,9 +41,9 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
-|expresión               |String               |Expresión para analizar.|
+|expresión               |Cadena               |Expresión para analizar.|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Objeto de datos de prueba para evaluar la expresión con respecto a. Opcional.|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definición del atributo que se va a asignar a esta expresión. Opcional.|
 

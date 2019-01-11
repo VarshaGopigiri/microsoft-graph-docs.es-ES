@@ -2,12 +2,13 @@
 title: Obtener importedAppleDeviceIdentityResult
 description: Leer las propiedades y las relaciones del objeto importedAppleDeviceIdentityResult.
 author: tfitzmac
-ms.openlocfilehash: 99054c68f82f6da3d0d45f14ab51b116dd62394b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 865ffb9e720449ab0ceedefd2b8d4cd425e203bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817321"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>Obtener importedAppleDeviceIdentityResult
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

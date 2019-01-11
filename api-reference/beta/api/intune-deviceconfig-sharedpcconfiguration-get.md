@@ -2,12 +2,13 @@
 title: Obtener sharedPCConfiguration
 description: Lea las propiedades y las relaciones del objeto sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8e370d81aca64fb7fe82e173603cf9dbdd270f3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd5188c06d979fb9c81d382ae075b6e3b0fc10aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307851"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823019"
 ---
 # <a name="get-sharedpcconfiguration"></a>Obtener sharedPCConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: Obtener cartToClassAssociation
 description: Leer las propiedades y las relaciones del objeto cartToClassAssociation.
 author: tfitzmac
-ms.openlocfilehash: f7a787ef26317993b0bb9c9f0fd67d2e9ff6ab8f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38c31d28e361c06e6178a8943a345287d6c5f529
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817104"
 ---
 # <a name="get-carttoclassassociation"></a>Obtener cartToClassAssociation
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

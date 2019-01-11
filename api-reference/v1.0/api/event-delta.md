@@ -1,12 +1,13 @@
 ---
 title: 'event: delta'
 description: 'Obtener un conjunto de eventos que se han agregado, eliminado o actualizado en un **calendarView** (un intervalo de eventos) '
-ms.openlocfilehash: be91eba577e1d00d638ff8a6d57ac5fb437b43d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: f5901115e07e3816bf4fba9a0fa063a7c06ffb67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805519"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -50,7 +51,7 @@ Al hacer una consulta delta en una vista del calendario, se espera obtener todas
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 | Prefer | string | {Zona horaria}. Opcional, se supone la hora UTC si no se encuentra.|

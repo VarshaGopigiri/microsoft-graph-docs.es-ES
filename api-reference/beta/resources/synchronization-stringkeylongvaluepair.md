@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso stringKeyLongValuePair
 description: Representa un par de clave y valor donde la clave es una cadena y el valor es un valor Int64.
-ms.openlocfilehash: 0ceafbc4ab683469e616e068c0abc00804578908
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 21d081dcb488c406bc0971f6b1aeadacfcc8c208
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812239"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>tipo de recurso stringKeyLongValuePair
 
@@ -17,7 +18,7 @@ Representa un par de clave y valor donde la clave es una cadena y el valor es un
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|Key|String|Clave.|
+|Key|Cadena|Clave.|
 |valor|Int64|Valor.|
 
 ## <a name="json-representation"></a>Representación JSON

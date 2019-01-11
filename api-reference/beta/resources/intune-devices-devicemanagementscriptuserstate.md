@@ -2,12 +2,13 @@
 title: tipo de recurso deviceManagementScriptUserState
 description: Contiene las propiedades de usuario de ejecución de la secuencia de comandos de administración de dispositivos.
 author: tfitzmac
-ms.openlocfilehash: acce3d40d390c22d848b9ee3f8c94c997ae6da12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf355a6ab2c217fa802288f6d2f4f062a3c47f4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806030"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso deviceManagementScriptUserState
 
@@ -28,13 +29,13 @@ Contiene las propiedades de usuario de ejecución de la secuencia de comandos de
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad de estado de usuario de secuencia de comandos de dispositivo administración.|
+|id|Cadena|Clave de la entidad de estado de usuario de secuencia de comandos de dispositivo administración.|
 |successDeviceCount|Int32|Recuento de éxito de dispositivo para el usuario específico.|
 |errorDeviceCount|Int32|Número de dispositivo de error de usuario específico.|
-|userPrincipalName|String|Nombre de principio de usuario del usuario específico.|
+|userPrincipalName|Cadena|Nombre de principio de usuario del usuario específico.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |deviceRunStates|colección de [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Lista de los Estados de ejecución para esta secuencia de comandos en todos los dispositivos de usuario específico.|
 

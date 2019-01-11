@@ -2,12 +2,13 @@
 title: tipo de recurso embeddedSIMActivationCodePool
 description: Un grupo representa un grupo de códigos de activación de SIM incrustados.
 author: tfitzmac
-ms.openlocfilehash: 9f756488d4e00e3d69bebf0e484f01aeec5650a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6b5d67f90b8f0da701493380b2c3668b6d87f6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823516"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>tipo de recurso embeddedSIMActivationCodePool
 
@@ -29,8 +30,8 @@ Un grupo representa un grupo de códigos de activación de SIM incrustados.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para el grupo de código de activación de SIM incrustado. Valor asignado al crear generada por el sistema.|
-|displayName|String|El administrador definida por el nombre del grupo de código de activación SIM incrustado.|
+|id|Cadena|Identificador único para el grupo de código de activación de SIM incrustado. Valor asignado al crear generada por el sistema.|
+|displayName|Cadena|El administrador definida por el nombre del grupo de código de activación SIM incrustado.|
 |createdDateTime|DateTimeOffset|La hora en que se creó el grupo de código de activación de SIM incrustado. Servicio generado al lado.|
 |modifiedDateTime|DateTimeOffset|La hora en que se modificó por última vez el grupo de código de activación de SIM incrustado. Se actualizó el lado de servicio.|
 |activationCodes|colección de [embeddedSIMActivationCode](../resources/intune-esim-embeddedsimactivationcode.md)|Los códigos de activación que pertenecen a este grupo de servidores. Esta propiedad de navegación se usa para registrar los códigos de activación para Intune pero no se puede usar para leer los códigos de activación de Intune.|

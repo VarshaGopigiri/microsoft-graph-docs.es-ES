@@ -1,18 +1,19 @@
 ---
 title: tipo de recurso office365ServicesUserCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 975a70b040ac5886ea36219a5407f580a42aeadc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 18282aaa8dcd176a6eaa3a8176154670bfd6da9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808018"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>tipo de recurso office365ServicesUserCounts
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                 | Tipo   | Descripción                              |
+| Propiedad                 | Tipo   | Description                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Fecha   | La fecha más reciente del contenido.          |
 | exchangeActive           | Int64  | El número de usuarios activos en Exchange. Cualquier usuario que puedan leer y enviar correo electrónico se considera un usuario activo. |
@@ -27,7 +28,7 @@ ms.locfileid: "27084075"
 | yammerInactive           | Int64  | El número de usuarios inactivos en Yammer.  |
 | teamsActive              | Int64  | El número de usuarios activos en los equipos. Cualquier usuario que mensajes expuestos en los canales de equipo, los mensajes enviados en las sesiones de chat privado o participaron en las reuniones o las llamadas se considera un usuario activo. |
 | teamsInactive            | Int64  | El número de usuarios activos en los equipos.     |
-| reportPeriod             | String | El número de días que cubre el informe.    |
+| reportPeriod             | Cadena | El número de días que cubre el informe.    |
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -1,12 +1,13 @@
 ---
 title: Crear governanceRoleAssignmentRequest
 description: Cree una solicitud de asignación de rol para representar la operación que desee en una asignación de roles. En la siguiente tabla se enumera las operaciones.
-ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823775"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Crear governanceRoleAssignmentRequest
 
@@ -51,14 +52,14 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
-| Propiedad     | Tipo    |Obligatorio|  Descripción|
+| Propiedad     | Tipo    |Obligatorio|  Description|
 |:---------------|:--------|:----------|:----------|
 |resourceId|Cadena|Sí|El identificador del recurso.|
 |roleDefinitionId|Cadena|Sí|El identificador de la definición de roles.|
 |///SubjectID|Cadena|Sí|El identificador del tema.|
 |assignmentState|Cadena|Sí|El estado de asignación. El valor puede ser ``Eligible`` y ``Active``.|
 |type|Cadena|Sí|El tipo de solicitud. El valor puede ser `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`y `AdminExtend`.|
-|motivo|String| |Necesita la razón por la que se proporcionará para la solicitud de asignación de rol para auditoría y revise el propósito.|
+|motivo|Cadena| |Necesita la razón por la que se proporcionará para la solicitud de asignación de rol para auditoría y revise el propósito.|
 |programación|[governanceSchedule](../resources/governanceschedule.md)| | La programación de la solicitud de asignación de rol. Para tipo de solicitud de `UserAdd`, `AdminAdd`, `AdminUpdate`, y `AdminExtend`, es necesario.|
 
 ## <a name="response"></a>Respuesta
@@ -92,7 +93,7 @@ En este ejemplo, los administradores asignan nawu@fimdev.net usuario a la funci�
 |///SubjectID|Cadena|Sí|\<///SubjectID\>|
 |assignmentState|Cadena|Sí| Optan / activo|
 |type|Cadena|Sí| AdminAdd|
-|motivo|String| depende de la función configuración||
+|motivo|Cadena| depende de la función configuración||
 |programación|[governanceSchedule](../resources/governanceschedule.md)|Sí|        |
 ##### <a name="request"></a>Solicitud
 <!-- {
@@ -175,7 +176,7 @@ En este ejemplo, el usuario nawu@fimdev.net activa la función de lector de fact
 |///SubjectID|Cadena|Sí|\<///SubjectID\>|
 |assignmentState|Cadena|Sí| Activo|
 |type|Cadena|Sí| Comandos UserAdd|
-|motivo|String| depende de la función configuración||
+|motivo|Cadena| depende de la función configuración||
 |programación|[governanceSchedule](../resources/governanceschedule.md)|Sí|        |
 ##### <a name="request"></a>Solicitud
 <!-- {
@@ -395,7 +396,7 @@ En este ejemplo, los administradores actualizar la asignación de rol para el us
 |///SubjectID|Cadena|Sí|\<///SubjectID\>|
 |assignmentState|Cadena|Sí| Optan / activo|
 |type|Cadena|Sí| AdminUpdate|
-|motivo|String| depende de roleSettings||
+|motivo|Cadena| depende de roleSettings||
 |programación|[governanceSchedule](../resources/governanceschedule.md)|Sí|        |
 ##### <a name="request"></a>Solicitud
 <!-- {
@@ -475,7 +476,7 @@ En este ejemplo se extiende la asignación de roles a punto de expirar para usua
 |///SubjectID|Cadena|Sí|\<///SubjectID\>|
 |assignmentState|Cadena|Sí| Optan / activo |
 |type|Cadena|Sí| AdminExtend|
-|motivo|String| depende de roleSettings||
+|motivo|Cadena| depende de roleSettings||
 |programación|[governanceSchedule](../resources/governanceschedule.md)|Sí|        |
 ##### <a name="request"></a>Solicitud
 <!-- {

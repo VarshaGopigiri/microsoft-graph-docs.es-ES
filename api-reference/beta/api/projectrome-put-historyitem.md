@@ -1,12 +1,13 @@
 ---
 title: Crear o reemplazar un historyItem
 description: Crear un nuevo o reemplazar un elemento de historial existente para una actividad de usuario existente.
-ms.openlocfilehash: 068e5cb4b98879c1dba5eeef56517b99c3fe47c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 008e4bc8470ffddce4f60f71bdff68ca13ad39c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090828"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807892"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Crear o reemplazar un historyItem
 
@@ -39,7 +40,7 @@ Identificador debe ser un GUID.
 
 |Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
-|Authorization | string | {token} de portador. Obligatorio.|
+|Autorización | string | {token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

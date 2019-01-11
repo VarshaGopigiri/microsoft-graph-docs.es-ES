@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceManagement
 description: 'El recurso deviceManagement representa un contenedor cuyo contenido varía según el flujo de trabajo, incluidos:  '
-ms.openlocfilehash: 4e092c3d1ae318da47f52e6ccfb2d5efe577e8eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7517ac2c9560723c6c3c4dce2dc070b1ec96af3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822207"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -20,7 +21,7 @@ El recurso deviceManagement representa un contenedor cuyo contenido varía segú
 - Administración de dispositivos  
 - Protección de extremo  
 - Perfiles de inscripción  
-- Notifications  
+- Notificaciones  
 - Obtener información detallada, la configuración y las directivas de incorporación  
 - Directivas de acceso basado en roles (RBAC) de control  
 - Socios de asistencia remota  
@@ -41,7 +42,7 @@ El recurso deviceManagement representa un contenedor cuyo contenido varía segú
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único del dispositivo.|
+|id|Cadena|Identificador único del dispositivo.|
 |**Configuración de dispositivos**|
 |configuración|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configuración de niveles de cuenta.|
 |**Administración de dispositivos**|
@@ -50,7 +51,7 @@ El recurso deviceManagement representa un contenedor cuyo contenido varía segú
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contiene datos que se usan para personalizar las aplicaciones del Portal de empresa, así como el portal web del usuario final.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |**Auditoría**|
 |auditEvents|Colección [auditEvent](../resources/intune-auditing-auditevent.md)|Los eventos de auditoría|
@@ -72,7 +73,7 @@ El recurso deviceManagement representa un contenedor cuyo contenido varía segú
 |**Inscripción**|
 |importedWindowsAutopilotDeviceIdentities|Colección [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Colección de dispositivos importados de Windows Autopilot|
 |importedWindowsAutopilotDeviceIdentityUploads|colección de [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Colección de piloto automático de Windows para cargar los dispositivos.|
-|**Notifications**|
+|**Notificaciones**|
 |notificationMessageTemplates|Colección [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Las plantillas de mensajes de notificación.|
 |**Incorporación de redes**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|La configuración de acceso condicional local de Exchange. El acceso condicional local requiere que los dispositivos estén inscritos y sean compatibles para tener acceso al correo|

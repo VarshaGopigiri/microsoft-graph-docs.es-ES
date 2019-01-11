@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso meetingTimeCandidatesResult
 description: Una colección de sugerencias para la reunión, en caso de haberla, o el motivo de su cancelación, en caso de que se produzca.
-ms.openlocfilehash: 38ca5b6be15d3cd268403f7f95645a8aaf31cf9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b261295de43dcb0bfb94f85c833559430365002
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810657"
 ---
 # <a name="meetingtimecandidatesresult-resource-type"></a>tipo de recurso meetingTimeCandidatesResult
 
@@ -44,9 +45,9 @@ Aquí tiene una representación JSON del recurso
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|emptySuggestionsHint|String|Un motivo por el que no se devuelven sugerencias de reunión. Los valores posibles son: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` o `unknown`.|
+|emptySuggestionsHint|Cadena|Un motivo por el que no se devuelven sugerencias de reunión. Los valores posibles son: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` o `unknown`.|
 |meetingTimeSlots|colección de [meetingTimeCandidate](meetingtimecandidate.md)|Matriz de sugerencias de reunión.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

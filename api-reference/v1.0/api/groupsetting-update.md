@@ -2,12 +2,13 @@
 title: Actualizar una configuración de grupo
 description: Actualiza las propiedades de un objeto de configuración de grupo específico.
 author: dkershaw10
-ms.openlocfilehash: 07ab3114ce4ed5d8d932ff9183c62823ddfcf632
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1b677e9d1a00dc01aaf2455ac075fe20cbe4d1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339840"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804959"
 ---
 # <a name="update-a-group-setting"></a>Actualizar una configuración de grupo
 

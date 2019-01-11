@@ -1,12 +1,13 @@
 ---
 title: Crear suscripción
 description: Se suscribe a una aplicación de agente de escucha para recibir notificaciones cuando cambian los datos en un recurso de Microsoft Graph.
-ms.openlocfilehash: f524213871f8a9216ad7f7ec8da4ffb521a4a2aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b7f465e556d1fb752bcb2d3c962fd6444d462c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805057"
 ---
 # <a name="create-subscription"></a>Crear suscripción
 
@@ -14,7 +15,7 @@ ms.locfileid: "27090652"
 
 Se suscribe a una aplicación de agente de escucha para recibir notificaciones cuando cambian los datos en un recurso de Microsoft Graph.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Creación de una suscripción requiere permiso de lectura para el recurso para el que la aplicación va a recibir notificaciones. Por ejemplo, para obtener las notificaciones sobre los mensajes, la aplicación necesita la `Mail.Read` permiso. En la tabla siguiente se muestra el permiso propuesto que se requiere para cada recurso. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
@@ -24,8 +25,8 @@ Creación de una suscripción requiere permiso de lectura para el recurso para e
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| Grupos                      | Group.Read.All      |
+| Usuarios                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
 | Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
 | Alerta de seguridad              | SecurityEvents.ReadWrite.All |
@@ -44,7 +45,7 @@ POST /subscriptions
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="response"></a>Respuesta
 
@@ -83,8 +84,8 @@ Las siguientes son valores válidos para la propiedad de recurso:
 |Correo|me/mailfolders("inbox")/messages<br />me/messages|
 |Contactos|me/contacts|
 |Calendarios|me/events|
-|Users|users|
-|Groups|grupos|
+|Usuarios|users|
+|Grupos|grupos|
 |Conversaciones|groups("*{id}*")/conversations|
 |Unidades|me/drive/root|
 |Alerta de seguridad|alertas de seguridad /? $filter = estado eq 'New'|

@@ -2,12 +2,13 @@
 title: Tipo de recurso outlookItem
 description: Aquí tiene una representación JSON del recurso
 author: angelgolfer-ms
-ms.openlocfilehash: 4d375606a5104d48955561df3b904922a5daf042
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b88a450465798386ad57e82ff76896417301a606
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315025"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817636"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 
@@ -41,7 +42,7 @@ Aquí tiene una representación JSON del recurso
 |categories|String collection||
 |changeKey|String||
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relaciones

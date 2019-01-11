@@ -2,12 +2,13 @@
 title: Obtener iosVppEBookAssignment
 description: Lea las propiedades y las relaciones del objeto iosVppEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 73fd0914b7aa1c77907ee469cc1a9aeef54a7eed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8672892015548a2b8b67de297b028a6d717b7605
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804707"
 ---
 # <a name="get-iosvppebookassignment"></a>Obtener iosVppEBookAssignment
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

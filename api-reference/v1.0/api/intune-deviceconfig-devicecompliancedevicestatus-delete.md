@@ -2,12 +2,13 @@
 title: Eliminar deviceComplianceDeviceStatus
 description: Elimina un deviceComplianceDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: e84ab67867834cc5311015bc823ad39a7db15a7a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1b60260c3275f8fb0af2f38a4f935e20878748
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304707"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804945"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>Eliminar deviceComplianceDeviceStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

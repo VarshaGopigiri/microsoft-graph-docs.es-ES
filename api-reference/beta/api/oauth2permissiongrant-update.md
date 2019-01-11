@@ -1,12 +1,13 @@
 ---
 title: Actualizar oAuth2PermissionGrant
 description: Actualizar las propiedades del objeto oAuth2PermissionGrant.
-ms.openlocfilehash: fdf196e672b19a2775644dada4a33b036df83bf8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c01d62dfb7c0c6906ff860656ee87b5f6d40aed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084154"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822354"
 ---
 # <a name="update-oauth2permissiongrant"></a>Actualizar oAuth2PermissionGrant
 
@@ -35,7 +36,7 @@ PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.

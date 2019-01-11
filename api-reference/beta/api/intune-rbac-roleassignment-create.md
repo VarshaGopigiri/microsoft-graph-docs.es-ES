@@ -2,12 +2,13 @@
 title: Crear roleAssignment
 description: Cree un objeto roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: bf255b0d2c077cbba2e34e81d9730e51c4f5d813
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 486aaf7a47631f99c86150e08c8672f513e04337
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806681"
 ---
 # <a name="create-roleassignment"></a>Crear roleAssignment
 
@@ -38,7 +39,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto roleAssignment.
@@ -47,9 +48,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
-|displayName|String|El nombre descriptivo o para mostrar de la asignación de roles.|
-|descripción|String|Descripción de la asignación de roles.|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|displayName|Cadena|El nombre descriptivo o para mostrar de la asignación de roles.|
+|descripción|Cadena|Descripción de la asignación de roles.|
 |scopeMembers|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory.|
 |scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|Especifica el tipo de ámbito para una asignación de roles. El tipo predeterminado 'ResourceScope' permite la asignación de ResourceScopes. Para 'AllDevices', 'AllLicensedUsers' y 'AllDevicesAndLicensedUsers', la propiedad ResourceScopes debería dejarse vacía. Los valores posibles son: `resourceScope`, `allDevices`, `allLicensedUsers` y `allDevicesAndLicensedUsers`.|
 |resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory.|

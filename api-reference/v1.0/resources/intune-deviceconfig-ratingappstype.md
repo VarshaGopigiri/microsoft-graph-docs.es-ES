@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingAppsType
 description: Aplicaciones de clasificación como en el contenido de medios
 author: tfitzmac
-ms.openlocfilehash: e0340b9e1a188df6fd7fea0972ba4db8da2060e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fef3a964277267b73a8e6e4f4b3b8fa5afb9fb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360742"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822312"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enumeración ratingAppsType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27360742"
 
 Aplicaciones de clasificación como en el contenido de medios
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las aplicaciones|
 |allBlocked|1|No permitir cualquier contenido de aplicaciones|

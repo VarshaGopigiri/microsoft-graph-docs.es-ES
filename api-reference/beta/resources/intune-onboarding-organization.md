@@ -2,12 +2,13 @@
 title: Tipo de recurso organization
 description: El recurso organization representa una instancia de la configuración global y los recursos que funcionan y se aprovisionan en el nivel del espacio empresarial.
 author: tfitzmac
-ms.openlocfilehash: 447ad5bb87c3c5783ba9097097fbc08281442a0b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c6f99c378bc7fd53f473419a5ca4f4350f7c57b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812050"
 ---
 # <a name="organization-resource-type"></a>Tipo de recurso organization
 
@@ -27,7 +28,7 @@ El recurso organization representa una instancia de la configuración global y l
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El GUID para el objeto.|
+|id|Cadena|El GUID para el objeto.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Entidad de administración de dispositivos móviles. Los valores posibles son: `unknown`, `intune`, `sccm` y `office365`.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Configuración del conector del certificado.|
 

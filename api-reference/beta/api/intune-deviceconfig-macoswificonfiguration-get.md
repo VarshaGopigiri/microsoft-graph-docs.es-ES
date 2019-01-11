@@ -2,12 +2,13 @@
 title: Obtener macOSWiFiConfiguration
 description: Leer las propiedades y las relaciones del objeto macOSWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: da7920da6c61acef0f31914080e05aaac24fc101
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af0666d02dada6dfe694773b52b30e8b67f8dc83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822543"
 ---
 # <a name="get-macoswificonfiguration"></a>Obtener macOSWiFiConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

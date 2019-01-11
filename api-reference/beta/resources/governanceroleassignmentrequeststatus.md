@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso governanceRoleAssignmentRequestStatus
 description: Representa el estado de la governanceRoleAssignmentRequest.
-ms.openlocfilehash: 06b0f17513d5d796d3fe71cbd3888963bc4a34ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c5daac53661cc607d51e5bfd1ec9031cfa599fca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808074"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>tipo de recurso governanceRoleAssignmentRequestStatus
 
@@ -18,8 +19,8 @@ Representa el estado de la [governanceRoleAssignmentRequest](../resources/govern
 ## <a name="properties"></a>Propiedades
 Propiedad       | Tipo |Descripción|
 |:----|:-------------|:-----|
-|status |String| El estado de la solicitud de asignación de rol. El valor puede ser `InProgress` o `Closed`.|
-|Subestado |String| El estado de sub de la solicitud de asignación de rol. Los valores pueden ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, y `ProvisioningStarted`.|
+|status |Cadena| El estado de la solicitud de asignación de rol. El valor puede ser `InProgress` o `Closed`.|
+|Subestado |Cadena| El estado de sub de la solicitud de asignación de rol. Los valores pueden ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, y `ProvisioningStarted`.|
 |statusDetails       |colección [keyValue](../resources/keyvalue.md)| Los detalles del estado de la solicitud de asignación de rol. Representa los resultados de la evaluación de reglas diferentes. |
 
 ## <a name="json-representation"></a>Representación JSON

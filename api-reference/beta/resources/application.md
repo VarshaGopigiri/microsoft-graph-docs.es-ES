@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de aplicación
 description: 'Representa una aplicación. Cualquier aplicación que subcontrata autenticación para Azure Active Directory (AD Azure) se debe registrar en un directorio. Registro de aplicaciones implica que informará Azure AD acerca de la aplicación, incluida la dirección URL donde ha localizado, la dirección URL para enviar las respuestas después de la autenticación, el identificador URI para identificar la aplicación y mucho más. Para obtener más información, vea Conceptos básicos de registro de una aplicación en Azure AD. Se hereda de directoryObject. '
-ms.openlocfilehash: 66da35183b84d42d69d603cc840ba948d60d7bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805673"
 ---
 # <a name="application-resource-type"></a>tipo de recurso de aplicación
 
@@ -38,15 +39,15 @@ Este recurso admite:
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------------|:--------|:----------|
 |API|[API](api.md)| Especifica la configuración para una aplicación de API. |
 |appId| cadena | El identificador único para la aplicación que se asigna a una aplicación por Azure AD. No admite valores NULL. Solo lectura. |
 |appRoles|colección de [función de aplicación](approle.md)|La colección de funciones de aplicación que se puede declarar una aplicación. Estos roles pueden asignarse a usuarios, grupos o entidades de seguridad del servicio. No admite valores NULL.|
 |createdDateTime|DateTimeOffset| La fecha y la hora que se registró la aplicación. |
 |deletedDateTime|DateTimeOffset| La fecha y la hora que se ha eliminado la aplicación. |
-|displayName|String|El nombre para mostrar para la aplicación. |
-|id|String|El identificador único para la aplicación. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura. |
+|displayName|Cadena|El nombre para mostrar para la aplicación. |
+|id|Cadena|El identificador único para la aplicación. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura. |
 |identifierUris|Colección String| El URI que identifica la aplicación. Para obtener más información, vea [objetos de la aplicación y los objetos a principales de servicio](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). El operador *any* es necesario para las expresiones de filtro en las propiedades multivalor. No admite valores NULL. |
 |Info|[informationalUrl](informationalurl.md)| Información de perfil básico de la aplicación. |
 |isFallbackPublicClient|Booleano| Especifica el tipo de aplicación de reserva como pública cliente, como una aplicación instalada que se ejecutan en un dispositivo móvil. El valor predeterminado es *false* lo que significa que el tipo de aplicación de reserva es cliente confidencial, como la aplicación web. Hay ciertos escenarios donde Azure AD no puede determinar el tipo de aplicación de cliente (por ejemplo, [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flujo de dónde se configura sin especificar un URI de redireccionamiento). En esos casos Azure AD interpretará el tipo de aplicación en función del valor de esta propiedad.|
@@ -57,15 +58,15 @@ Este recurso admite:
 |parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Especifica la configuración de control parental para una aplicación.|
 |passwordCredentials|colección de [passwordCredential](passwordcredential.md)|La colección de credenciales de contraseña asociada con la aplicación. No admite valores NULL.|
 |publicClient|[publicClient](publicclient.md)| Especifica la configuración para los clientes instalados como dispositivos de escritorio o portátiles. |
-|publisherDomain| String | El dominio comprobado publisher para la aplicación. Solo lectura.|
+|publisherDomain| Cadena | El dominio comprobado publisher para la aplicación. Solo lectura.|
 |requiredResourceAccess|colección de [requiredResourceAccess](requiredresourceaccess.md)|Especifica los recursos que esta aplicación requiere acceso a y el conjunto de ámbitos de OAuth de permisos y funciones de las aplicaciones que necesita en cada uno de esos recursos. Esta configuración previa a la de acceso a los recursos necesarios unidades de la experiencia de consentimiento. No admite valores NULL.|
-|signInAudience | String | Especifica qué cuentas de Microsoft son compatibles con la aplicación actual. Los valores admitidos son:<ul><li>**AzureADMyOrg**: los usuarios con un Microsoft funciona o escuela cuenta en el inquilino de Azure AD de mi organización (es decir, inquilino único)</li><li>**AzureADMultipleOrgs**: los usuarios con un Microsoft funciona o escuela cuenta en el inquilino de Azure AD de la organización (es decir, varios inquilino)</li> <li>**AzureADandPersonalMicrosoftAccount**: los usuarios con una cuenta Microsoft personal o una cuenta de trabajo o escuela en el inquilino de Azure AD de la organización</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+|signInAudience | Cadena | Especifica qué cuentas de Microsoft son compatibles con la aplicación actual. Los valores admitidos son:<ul><li>**AzureADMyOrg**: los usuarios con un Microsoft funciona o escuela cuenta en el inquilino de Azure AD de mi organización (es decir, inquilino único)</li><li>**AzureADMultipleOrgs**: los usuarios con un Microsoft funciona o escuela cuenta en el inquilino de Azure AD de la organización (es decir, varios inquilino)</li> <li>**AzureADandPersonalMicrosoftAccount**: los usuarios con una cuenta Microsoft personal o una cuenta de trabajo o escuela en el inquilino de Azure AD de la organización</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |de cierre|Colección String| Cadenas personalizadas que se pueden usar para clasificar e identificar la aplicación. |
-|web|[web](web.md)| Especifica la configuración para una aplicación web. |
+|web|[Web](web.md)| Especifica la configuración para una aplicación web. |
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo | Descripción |
+| Relación | Tipo | Description |
 |:---------------|:--------|:----------|
 |llamadas           |colección [de llamadas](call.md)                  |Solo lectura. Admite valores NULL.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| El connectorGroup está usando la aplicación con el Proxy de aplicación de Azure AD. Admite valores NULL.|

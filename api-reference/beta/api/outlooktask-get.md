@@ -1,12 +1,13 @@
 ---
 title: Obtener outlookTask
 description: Obtener las propiedades y relaciones de una tarea de Outlook en el buzón del usuario.
-ms.openlocfilehash: f528ccbf3fa27b6c4cd6226e63f1feedab1954e4
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: f93bc46a1bbe3f7a6c145458606174b6e3a13f1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771684"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822228"
 ---
 # <a name="get-outlooktask"></a>Obtener outlookTask
 

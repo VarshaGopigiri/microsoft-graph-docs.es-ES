@@ -2,12 +2,13 @@
 title: tipo de recurso tokenMeetingInfo
 description: El tipo de tokenMeetingInfo.
 author: VinodRavichandran
-ms.openlocfilehash: 6fa66fef6f401db848a9ed3e92c5a1003a5294b6
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9a618906df450ce58f7428a76367e896b315591a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806982"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tipo de recurso tokenMeetingInfo
 
@@ -17,7 +18,7 @@ El tipo de tokenMeetingInfo.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                     | Tipo    | Descripción                                                                    |
+| Propiedad                     | Tipo    | Description                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
 | allowConversationWithoutHost | Booleano | Indica si puede continuar una conversación una vez que abandona el host de la conversación. |
 | token                        | Cadena  | El token de combinación o activar la reunión.                                        |

@@ -2,12 +2,13 @@
 title: tipo de recurso sharedAppleDeviceUser
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 4e16d691ed6286fb8046c0693292012e1e94a0ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ee74080b95328cf55813dc628ee7a517dff08e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806856"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>tipo de recurso sharedAppleDeviceUser
 
@@ -19,8 +20,8 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|userPrincipalName|String|Nombre de usuario|
-|dataToSync|Boolean|Datos para la sincronización|
+|userPrincipalName|Cadena|Nombre de usuario|
+|dataToSync|Booleano|Datos para la sincronización|
 |dataQuota|Int64|Cuota de datos|
 |dataUsed|Int64|Cuota de datos|
 

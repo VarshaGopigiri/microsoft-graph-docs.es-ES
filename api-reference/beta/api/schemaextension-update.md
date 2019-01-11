@@ -1,12 +1,13 @@
 ---
 title: Actualizar schemaExtensions
 description: Actualice las propiedades de la definición del schemaExtension especificado.
-ms.openlocfilehash: 783999a22f41300f8ea086d98e755d72b3520685
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4e9ebcb020fe5aa8a549a79405963feb462b61e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823565"
 ---
 # <a name="update-schemaextension"></a>Actualizar schemaExtensions
 
@@ -49,7 +50,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|description|String|Descripción de la extensión de esquema.|
+|description|Cadena|Descripción de la extensión de esquema.|
 |properties|Colección [extensionSchemaProperty](../resources/extensionschemaproperty.md)|La colección de nombres de propiedad y tipos que conforman la definición de la extensión de esquema. Solo se admiten cambios para agregar elementos. |
 |status|Cadena|El estado del ciclo de vida de la extensión de esquema. El estado inicial después de su creación es **InDevelopment**. Transiciones de los Estados posibles son de **InDevelopment** a **disponible** y **disponible** para **ya no se utiliza**.|
 |targetTypes|Colección string|Conjunto de tipos de Microsoft Graph (compatibles con extensiones) a los que se puede aplicar la extensión de esquema.  Solo se admiten cambios para agregar elementos.|

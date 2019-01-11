@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceGuardVirtualizationBasedSecurityHardwareRequirementState
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: a14fa73e681b36d1676b789e598ab497bc0d2aaa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78f849685846e64177197d7489129a95e9dde39e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360560"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808144"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>tipo de enumeración deviceGuardVirtualizationBasedSecurityHardwareRequirementState
 
@@ -17,7 +18,7 @@ ms.locfileid: "27360560"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |meetHardwareRequirements|0|Sistema cumpla los requisitos de configuración de hardware|
 |secureBootRequired|1|Inicialización segura necesario|

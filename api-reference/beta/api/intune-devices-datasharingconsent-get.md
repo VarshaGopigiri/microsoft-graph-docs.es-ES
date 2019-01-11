@@ -2,12 +2,13 @@
 title: Obtener dataSharingConsent
 description: Leer las propiedades y las relaciones del objeto dataSharingConsent.
 author: tfitzmac
-ms.openlocfilehash: 5cb961260d7d22479abc4c16acf83d6a91378d12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e24ba52caab0f2259426e483d4b03a14a195617a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807836"
 ---
 # <a name="get-datasharingconsent"></a>Obtener dataSharingConsent
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

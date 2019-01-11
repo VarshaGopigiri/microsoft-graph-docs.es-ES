@@ -2,12 +2,13 @@
 title: List attachments
 description: Recupera una lista de objetos attachment asociados a un mensaje.
 author: angelgolfer-ms
-ms.openlocfilehash: 9f083af679335eb0bf54fa9bd0eadfaa7a5a1250
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d89d05c80a8d2437f4940ace2a046f93ba67b82
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806688"
 ---
 # <a name="list-attachments"></a>List attachments
 
@@ -48,7 +49,7 @@ En concreto, puede usar el $expanda parámetro de consulta para incluir todos lo
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 
