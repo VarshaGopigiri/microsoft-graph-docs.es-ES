@@ -2,12 +2,13 @@
 title: tipo de enumeración emailSyncSchedule
 description: Valores posibles para la programación de sincronización de correo electrónico.
 author: tfitzmac
-ms.openlocfilehash: f0e6673064f7e483756dfcfec8ce074e809dfcf4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 178cba9e226b7f20e3fd917145e7bbd06f6c3a1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838398"
 ---
 # <a name="emailsyncschedule-enum-type"></a>tipo de enumeración emailSyncSchedule
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308683"
 
 Valores posibles para la programación de sincronización de correo electrónico.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |asMessagesArrive|1|Sincronizar que llegan mensajes.|

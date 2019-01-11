@@ -2,12 +2,13 @@
 title: Crear mobileAppProvisioningConfigGroupAssignment
 description: Crear un nuevo objeto mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: d97b8cd59a0ad170b93fb5127ab276ef2dd29003
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0cc03def8a3df440c1a4d98ee60dd30554a7086d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838041"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Crear mobileAppProvisioningConfigGroupAssignment
 
@@ -38,17 +39,17 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto mobileAppProvisioningConfigGroupAssignment.
 
 La siguiente tabla muestran las propiedades que son necesarias cuando se crea el mobileAppProvisioningConfigGroupAssignment.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|targetGroupId|String|El identificador del grupo AAD en la que se refiere a la aplicación de configuración de aprovisionamiento.|
-|id|String|Clave de la entidad.|
+|targetGroupId|Cadena|El identificador del grupo AAD en la que se refiere a la aplicación de configuración de aprovisionamiento.|
+|id|Cadena|Clave de la entidad.|
 
 
 

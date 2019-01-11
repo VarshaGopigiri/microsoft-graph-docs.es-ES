@@ -2,12 +2,13 @@
 title: tipo de recurso commsNotification
 description: Comunicaciones base tipo de notificación que se publicará por los servidores de comunicaciones para notificar a los cambios.
 author: VinodRavichandran
-ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 526ed88f4b1c5983a06b1830f5c0b0bb97cc874e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837152"
 ---
 # <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
 
@@ -18,8 +19,8 @@ Comunicaciones base tipo de notificación que se publicará por los servidores d
 ## <a name="properties"></a>Propiedades
 | Propiedad       | Tipo    | Descripción                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Los valores posibles son: `created`, `updated` y `deleted`.      |
-| resource       | String  | URI del recurso que se ha cambiado.                      |
+| changeType     | Cadena  | Los valores posibles son: `created`, `updated` y `deleted`.      |
+| resource       | Cadena  | URI del recurso que se ha cambiado.                      |
 
 > **Nota:** `resourceData` está disponible como datos adicionales. Es una entidad o Collection(entity) según el número de empaquetado en la notificación de cambios.
 

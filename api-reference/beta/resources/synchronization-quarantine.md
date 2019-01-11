@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationQuarantine
 description: Proporciona información sobre el estado de la cuarentena de un synchronizationJob.
-ms.openlocfilehash: b29da9644968ffe17abb02010f8aa5c304ca7905
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0077d48e69ed4c2c190d0b50a6fcfc1749626
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849731"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>tipo de recurso synchronizationQuarantine
 
@@ -15,11 +16,11 @@ ms.locfileid: "27083942"
 Proporciona información sobre el estado de la cuarentena de un [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |currentBegan|DateTimeOffset|Fecha y hora cuando la cuarentena por última vez evalúan e imponen. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |nextAttempt|DateTimeOffset|Fecha y hora en la que se realizó el siguiente intento para volver a evaluar la cuarentena. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|motivo|String|Un código que indica la razón por la que se impone la cuarentena. Los valores posibles son: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException` y `Unknown`.|
+|motivo|Cadena|Un código que indica la razón por la que se impone la cuarentena. Los valores posibles son: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException` y `Unknown`.|
 |seriesBegan|DateTimeOffset|Fecha y hora cuando la cuarentena en primer lugar se impone en esta serie (una serie se inicia cuando una cuarentena se impone en primer lugar y se restablece tan pronto como se eleva la cuarentena). El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |seriesCount|Int64|Número de veces en esta serie de la cuarentena se vuelve a evaluar y en vigor izquierda (una serie se inicia cuando se impone en primer lugar la cuarentena y se restablece tan pronto como se eleva cuarentena).|
 

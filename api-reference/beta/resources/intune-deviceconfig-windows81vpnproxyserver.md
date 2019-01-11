@@ -2,12 +2,13 @@
 title: tipo de recurso windows81VpnProxyServer
 description: Servidor de Proxy VPN.
 author: tfitzmac
-ms.openlocfilehash: 015df762d25e1a87a9ce29bd4efbc15e98ed7e08
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b694206fd65bad46c9176a9fc01586f00237bdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834716"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>tipo de recurso windows81VpnProxyServer
 
@@ -20,13 +21,13 @@ Servidor de Proxy VPN.
 Hereda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String|Url de secuencia de comandos de configuración automática del proxy. Se hereda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|address|String|Dirección. Se hereda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|Cadena|Url de secuencia de comandos de configuración automática del proxy. Se hereda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|address|Cadena|Dirección. Se hereda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |port|Int32|Puerto. Válido valores heredada de 0 a 65535 de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|Boolean|Detectar automáticamente la configuración de proxy.|
-|bypassProxyServerForLocalAddress|Boolean|No usar servidor proxy para direcciones locales.|
+|automaticallyDetectProxySettings|Booleano|Detectar automáticamente la configuración de proxy.|
+|bypassProxyServerForLocalAddress|Booleano|No usar servidor proxy para direcciones locales.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

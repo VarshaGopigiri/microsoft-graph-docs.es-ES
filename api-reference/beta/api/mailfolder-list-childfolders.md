@@ -2,12 +2,13 @@
 title: List childFolders
 description: 'Obtener la colección de la carpeta en la carpeta especificada. Puede usar el `.../me/MailFolders` acceso directo para obtener el nivel superior '
 author: angelgolfer-ms
-ms.openlocfilehash: b852e245ee0b553d83e144eb42a719060837ef68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3af208919b1f733e913d8ac374bb72608d8fa1aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837439"
 ---
 # <a name="list-childfolders"></a>List childFolders
 
@@ -35,7 +36,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

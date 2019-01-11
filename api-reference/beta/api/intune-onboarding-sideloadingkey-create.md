@@ -2,12 +2,13 @@
 title: Crear sideLoadingKey
 description: Crear un nuevo objeto sideLoadingKey.
 author: tfitzmac
-ms.openlocfilehash: 6edce1838499a73c2c28199a87c46fa44a10fe1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 178236e03d508eb8a5017b67a1795fceca72bdee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838874"
 ---
 # <a name="create-sideloadingkey"></a>Crear sideLoadingKey
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto sideLoadingKey.
@@ -47,12 +48,12 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Lado cargar clave identificador único.|
+|id|Cadena|Lado cargar clave identificador único.|
 |valor|String|Valor de clave de carga del lado, es valor de 5 x 5, separados por hiphens.|
-|displayName|String|Lado carga de clave de nombre que se muestra a la ITPro Admins.|
-|descripción|String|Clave de carga de descripción en el que se muestra a la ITPro Admins..|
+|displayName|Cadena|Lado carga de clave de nombre que se muestra a la ITPro Admins.|
+|descripción|Cadena|Clave de carga de descripción en el que se muestra a la ITPro Admins..|
 |totalActivation|Int32|Lado carga Total activación de la clave que se muestra a la ITPro Admins.|
-|lastUpdatedDateTime|String|Lado cargar clave última actualizado fecha que se muestra a la ITPro Admins.|
+|lastUpdatedDateTime|Cadena|Lado cargar clave última actualizado fecha que se muestra a la ITPro Admins.|
 
 
 

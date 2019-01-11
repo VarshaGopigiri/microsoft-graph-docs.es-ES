@@ -2,12 +2,13 @@
 title: Actualizar deviceManagementTroubleshootingEvent
 description: Actualice las propiedades de un objeto deviceManagementTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: ec4cf8d98d51ec369739158c3cf8f6daf2e2ac8e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0319e9ad7a56c0fb6214731694b7dd529db8e8e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358810"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836487"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>Actualizar deviceManagementTroubleshootingEvent
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).
@@ -47,9 +48,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID para el objeto|
+|id|Cadena|UUID para el objeto|
 |eventDateTime|DateTimeOffset|Hora en que ocurrió el evento.|
-|correlationId|String|Id. utilizado para rastrear el error en el servicio.|
+|correlationId|Cadena|Id. utilizado para rastrear el error en el servicio.|
 
 
 

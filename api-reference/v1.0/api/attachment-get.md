@@ -1,12 +1,13 @@
 ---
 title: Obtener datos adjuntos
 description: 'Leer las propiedades y relaciones de los datos adjuntos, adjunto a un evento '
-ms.openlocfilehash: 7405078f2c6408053e499a5fbb6aaac02f87f440
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b04f2a1d34d63c800854d3a9454d34ca3d1f2f7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845762"
 ---
 # <a name="get-attachment"></a>Obtener datos adjuntos
 
@@ -96,7 +97,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

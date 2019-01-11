@@ -1,12 +1,13 @@
 ---
 title: Obtener informe de actividades de correo electrónico
 description: Puede obtener una vista de alto nivel de tráfico de correo electrónico dentro de su organización desde la página informes. También puede navegar en el widget de actividad de correo electrónico para comprender las tendencias y los detalles de cada usuario de la actividad de correo electrónico de la organización.
-ms.openlocfilehash: 47ff9017216fa3fd333b383f7a603354775d1023
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 90af28ce5136f8b444bcd432e756d08558290977
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835052"
 ---
 # <a name="email-activity-reports"></a>Obtener informe de actividades de correo electrónico
 

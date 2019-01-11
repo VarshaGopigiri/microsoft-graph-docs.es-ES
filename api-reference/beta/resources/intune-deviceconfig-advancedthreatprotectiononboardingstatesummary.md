@@ -2,12 +2,13 @@
 title: tipo de recurso advancedThreatProtectionOnboardingStateSummary
 description: Windows defender avanzadas de amenazas incorporación estado resumen de protección a través de la cuenta.
 author: tfitzmac
-ms.openlocfilehash: 3a31d489374b87469d2ed6fb87bb70f8d89d710c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b700658c6ae7b486ae52f4ea226b7a6bab7f0af6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838223"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>tipo de recurso advancedThreatProtectionOnboardingStateSummary
 
@@ -25,7 +26,7 @@ Windows defender avanzadas de amenazas incorporación estado resumen de protecci
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único|
+|id|Cadena|Identificador único|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles|
@@ -36,7 +37,7 @@ Windows defender avanzadas de amenazas incorporación estado resumen de protecci
 |notAssignedDeviceCount|Int32|Número de dispositivos no asignados|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |advancedThreatProtectionOnboardingDeviceSettingStates|colección de [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Todavía no documentado|
 

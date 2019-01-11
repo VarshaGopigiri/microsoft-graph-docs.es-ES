@@ -1,12 +1,13 @@
 ---
 title: Actualizar plannertask
 description: Actualizar las propiedades del objeto **plannertask**.
-ms.openlocfilehash: aea85ef7a5e463153c84149c815f8e6dbd74075f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b753e62e463ecd3a19e16ddaca5d2fd03c90a44b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838762"
 ---
 # <a name="update-plannertask"></a>Actualizar plannertask
 
@@ -39,16 +40,16 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Categorías a las que se ha aplicado la tarea. Consulte [las categorías aplicadas](../resources/plannerappliedcategories.md) para ver los posibles valores.|
-|assigneePriority|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](../resources/planner-order-hint-format.md).|
+|assigneePriority|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|Conjunto de usuarios al que se asigna la tarea.|
-|bucketId|String|Identificador de cubo al que pertenece la tarea. Debe estar en el plan de que la tarea se encuentra en el cubo. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](../resources/tasks-identifiers-disclaimer.md) se realiza en el servicio. |
-|conversationThreadId|String|Identificador de subproceso de la conversación en la tarea. Es el identificador del objeto de subproceso de conversación creado en el grupo.|
+|bucketId|Cadena|Identificador de cubo al que pertenece la tarea. Debe estar en el plan de que la tarea se encuentra en el cubo. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](../resources/tasks-identifiers-disclaimer.md) se realiza en el servicio. |
+|conversationThreadId|Cadena|Identificador de subproceso de la conversación en la tarea. Es el identificador del objeto de subproceso de conversación creado en el grupo.|
 |dueDateTime|DateTimeOffset|Fecha y hora en que vence la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](../resources/planner-order-hint-format.md).|
+|orderHint|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|Porcentaje de finalización de la tarea. Si se establece en `100`, la tarea se considera finalizada. |
-|planId|String|Id. de plan al que pertenece la tarea.|
+|planId|Cadena|Id. de plan al que pertenece la tarea.|
 |startDateTime|DateTimeOffset|Fecha y hora en que comienza la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|title|String|Título de la tarea.|
+|title|Cadena|Título de la tarea.|
 
 ## <a name="response"></a>Respuesta
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso softwareUpdateStatusSummary
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 8813614be9f0fbc87839924a802fcb486a32ba8f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c297c61528f50aea023109f3a71ff877343d8ef3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838903"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Tipo de recurso softwareUpdateStatusSummary
 
@@ -23,7 +24,7 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |displayName|String|El nombre de la directiva.|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos no compatibles.|

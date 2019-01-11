@@ -1,12 +1,13 @@
 ---
 title: List overrides
 description: Obtenga las invalidaciones de centrada en la Bandeja de entrada que un usuario ha configurado para clasificar siempre los mensajes de determinados remitentes de forma específica.
-ms.openlocfilehash: 343faaacf47d16b723cd8aebc25a6df79ef7e3db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6d2d731858ad3a87cad10b4feb23378cb4dab992
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837558"
 ---
 # <a name="list-overrides"></a>List overrides
 
@@ -34,7 +35,7 @@ GET /users/{id}/inferenceClassification/overrides
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

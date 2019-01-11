@@ -1,12 +1,13 @@
 ---
 title: Eliminar una actividad
 description: Eliminar una actividad de usuario existente para su aplicación.
-ms.openlocfilehash: a4b32e00719772f6dcfb715fa69350edf9a8b48c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fab008e9a9d031aed12605f14bf447247c0227ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029490"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838153"
 ---
 # <a name="delete-an-activity"></a>Eliminar una actividad
 
@@ -35,7 +36,7 @@ DELETE /me/activities/{id}
 
 |Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
-|Authorization | string | {token} de portador. Obligatorio.|
+|Autorización | string | {token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

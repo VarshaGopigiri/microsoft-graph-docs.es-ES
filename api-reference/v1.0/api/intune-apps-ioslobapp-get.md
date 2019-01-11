@@ -2,12 +2,13 @@
 title: Obtener iosLobApp
 description: Lea las propiedades y las relaciones del objeto iosLobApp.
 author: tfitzmac
-ms.openlocfilehash: 6100193f25894ce85cb373bb232911f44a53c224
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 629a671d3261b8d8e884178a9d018879aa0bda0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836466"
 ---
 # <a name="get-ioslobapp"></a>Obtener iosLobApp
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

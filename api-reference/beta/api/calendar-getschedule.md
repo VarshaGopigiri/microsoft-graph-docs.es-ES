@@ -1,12 +1,13 @@
 ---
 title: 'calendario: getSchedule'
 description: Obtenga la información de disponibilidad para una colección de los usuarios, las listas de distribución o de recursos, para un período de tiempo especificado.
-ms.openlocfilehash: 5122cf34530f18f872e80863f259f348193d252e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084682"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844565"
 ---
 # <a name="calendar-getschedule"></a>calendario: getSchedule
 
@@ -33,16 +34,16 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
-| Content-Type  | string | Naturaleza de los datos en el cuerpo de una entidad, que es application/json. Obligatorio.  |
+| Autorización  | string  | {token} de portador. Obligatorio. |
+| Content-Type  | string | Naturaleza de los datos en el cuerpo de una entidad, que es application/json. Necesario.  |
 | Prefer: outlook.timezone | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|String|Representa la duración de un intervalo de tiempo en un **availabilityView** en la respuesta. El valor predeterminado es 30 minutos, como mínimo es 6, el máximo es 1440. Opcional.|
+|availabilityViewInterval|Cadena|Representa la duración de un intervalo de tiempo en un **availabilityView** en la respuesta. El valor predeterminado es 30 minutos, como mínimo es 6, el máximo es 1440. Opcional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha, hora y zona horaria que termina el período.|
 |programaciones|Colección String|Una colección de direcciones SMTP de los usuarios, listas de distribución o recursos para obtener información de disponibilidad.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha, hora y zona horaria que se inicia el período.|

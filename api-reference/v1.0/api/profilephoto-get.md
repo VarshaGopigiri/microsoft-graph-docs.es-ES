@@ -1,12 +1,13 @@
 ---
 title: Obtener foto
 description: Obtenga el objeto profilePhoto especificado o sus metadatos (propiedades profilePhoto).
-ms.openlocfilehash: 11411f3439cf0e85991bbac7d3ccf30ac535651c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 6b1a3e54b1145cc2fdcf8ed9e587652d4d7061c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833953"
 ---
 # <a name="get-photo"></a>Obtener foto
 
@@ -81,7 +82,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

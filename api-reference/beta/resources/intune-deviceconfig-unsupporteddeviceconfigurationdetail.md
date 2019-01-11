@@ -2,12 +2,13 @@
 title: tipo de recurso unsupportedDeviceConfigurationDetail
 description: Una descripción de por qué una entidad no es compatible.
 author: tfitzmac
-ms.openlocfilehash: 4cccf49366a803e5f964605a4dc4ba7f56707823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a213961e6b816917b061bc56c792cf9a60e3a2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839476"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso unsupportedDeviceConfigurationDetail
 
@@ -17,10 +18,10 @@ ms.locfileid: "27344054"
 
 Una descripción de por qué una entidad no es compatible.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |message|String|Un mensaje que explica por qué una entidad no es compatible.|
-|propertyName|String|Si el mensaje está relacionado con una propiedad concreta en la entidad original y, a continuación, el nombre de esa propiedad.|
+|propertyName|Cadena|Si el mensaje está relacionado con una propiedad concreta en la entidad original y, a continuación, el nombre de esa propiedad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

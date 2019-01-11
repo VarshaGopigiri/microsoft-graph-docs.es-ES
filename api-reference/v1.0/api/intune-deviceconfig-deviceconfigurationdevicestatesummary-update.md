@@ -2,12 +2,13 @@
 title: Actualizar deviceConfigurationDeviceStateSummary
 description: Actualice las propiedades de un objeto deviceConfigurationDeviceStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 9dd5e96762a750b015d6eb8dea7d1778ac36f66b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c11471cbf86806e914e939f2385f92440046c05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354260"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849836"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Actualizar deviceConfigurationDeviceStateSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles|

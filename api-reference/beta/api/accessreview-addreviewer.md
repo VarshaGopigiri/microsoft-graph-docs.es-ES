@@ -1,12 +1,13 @@
 ---
 title: Agregar revisor accessReview
 description: 'En la característica de revisiones de access Azure AD, actualice un objeto accessReview existente para agregar otro usuario como un revisor.  Esta operación sólo se permite para una revisión de acceso que no se ha completado y solo para una revisión de acceso donde se especifican explícitamente los revisores. Esta operación no es permitida para una revisión de access en la que los usuarios revisión su propio acceso y no está pensada para una revisión de access en la que se asignan los propietarios del grupo como los revisores. '
-ms.openlocfilehash: ac7722d1bea30659db6f6defe26c0a08ecd67caf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ab339a6538fc41d7e538c51251302c5e589367f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838769"
 ---
 # <a name="add-accessreview-reviewer"></a>Agregar revisor accessReview
 
@@ -32,14 +33,14 @@ POST /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON del identificador de un usuario que será un revisor.
 
 La siguiente tabla muestran las propiedades que se pueden proporcionar cuando se actualiza un accessReview.
 
-| Propiedad     | Tipo        | Descripción |
+| Propiedad     | Tipo        | Description |
 |:-------------|:------------|:------------|
 | `id`             |`String`                                                        | El identificador de usuario.  |
 

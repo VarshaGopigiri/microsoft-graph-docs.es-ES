@@ -1,12 +1,13 @@
 ---
 title: Identificadores de tareas
 description: 'Identificadores de objetos en las tareas son valores de cadena generados por el servicio. . Los valores son 28 caracteres de longitud y distinguen mayúsculas de minúsculas. Cuando se pasan como en, el servicio realizará una validación de formato básico del identificador, si el error de validación de formato, los llamadores recibirá una respuesta de error de solicitud incorrecta (400), que indica que este problema. Recibir este error indica un error en la aplicación que llama, tales como:'
-ms.openlocfilehash: d57ca282de87c2bce42b37d0be6d08dbe128c522
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb66f0a610d6fe7d383e078674ca349776ddb4e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836669"
 ---
 # <a name="identifiers-in-tasks"></a>Identificadores de tareas
 

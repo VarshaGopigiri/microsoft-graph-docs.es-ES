@@ -2,12 +2,13 @@
 title: Obtener deviceComplianceSettingState
 description: Lea las propiedades y las relaciones del objeto deviceComplianceSettingState.
 author: tfitzmac
-ms.openlocfilehash: cf50f681a646f6277216c68b1d6c299bcfd41469
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1d949dc33927260b7c9daf54da2259b1eb062231
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839105"
 ---
 # <a name="get-devicecompliancesettingstate"></a>Obtener deviceComplianceSettingState
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

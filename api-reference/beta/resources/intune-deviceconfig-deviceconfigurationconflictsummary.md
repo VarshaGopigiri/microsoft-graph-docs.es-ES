@@ -2,12 +2,13 @@
 title: tipo de recurso deviceConfigurationConflictSummary
 description: Conflicto de resumen para un conjunto de directivas de configuración del dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 1c0caefc497c18fe7a8504324e048cec0e53bd3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8d84a4240059ff9772fefd9737ad27d8fbae7a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308991"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843340"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>tipo de recurso deviceConfigurationConflictSummary
 
@@ -26,10 +27,10 @@ Conflicto de resumen para un conjunto de directivas de configuración del dispos
 |[Actualizar deviceConfigurationConflictSummary](../api/intune-deviceconfig-deviceconfigurationconflictsummary-update.md)|[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Actualizar las propiedades de un objeto [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .|
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Colección [settingSource](../resources/intune-deviceconfig-settingsource.md)|El conjunto de directivas en conflicto con la configuración determinada|
-|id|String|El identificador para este conjunto de directivas en conflicto. Este identificador es los identificadores de todas las directivas en ConflictingDeviceConfigurations en orden lexicográfica separados por caracteres de subrayado.|
+|id|Cadena|El identificador para este conjunto de directivas en conflicto. Este identificador es los identificadores de todas las directivas en ConflictingDeviceConfigurations en orden lexicográfica separados por caracteres de subrayado.|
 |contributingSettings|Colección String|El conjunto de configuraciones en conflicto con las directivas determinadas|
 |deviceCheckinsImpacted|Int32|El recuento de protecciones afectado por la configuración y las directivas en conflicto|
 

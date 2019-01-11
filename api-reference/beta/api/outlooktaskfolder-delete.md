@@ -2,12 +2,13 @@
 title: Eliminar outlookTaskFolder
 description: Elimine la carpeta de tareas de Outlook especificada.
 author: angelgolfer-ms
-ms.openlocfilehash: c3024bb6f9fad987d98370787427880739993b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8fd5a62113ee9ad66a7ca080f5b4d2593834c2d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836361"
 ---
 # <a name="delete-outlooktaskfolder"></a>Eliminar outlookTaskFolder
 

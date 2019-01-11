@@ -1,12 +1,13 @@
 ---
 title: Delete subscription
 description: Elimina una suscripción.
-ms.openlocfilehash: be2c32f0915e8718203e46489be9861bf0f05451
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1e2efb9835e5e625bdac0385b5011cfe5c8c64b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084734"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842052"
 ---
 # <a name="delete-subscription"></a>Eliminar suscripción
 
@@ -24,8 +25,8 @@ En la tabla siguiente se muestra el permiso propuesto que se requiere para cada 
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| Grupos                      | Group.Read.All      |
+| Usuarios                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
 | Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
 | Alerta de seguridad              | SecurityEvents.ReadWrite.All |
@@ -44,7 +45,7 @@ DELETE /subscriptions/{id}
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

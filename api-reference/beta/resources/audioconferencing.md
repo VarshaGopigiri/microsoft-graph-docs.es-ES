@@ -2,12 +2,13 @@
 title: tipo de recurso de audioconferencia
 description: Representa la información de acceso telefónica de un onlineMeeting.
 author: VinodRavichandran
-ms.openlocfilehash: 4e2ee26e6f9a86d50efcb21cd95b84b207488ef1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9bd8343f29a797a24044f02aa2a00bd098c35007
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843627"
 ---
 # <a name="audioconferencing-resource-type"></a>tipo de recurso de audioconferencia
 
@@ -17,13 +18,13 @@ Representa la información de acceso telefónica de un [onlineMeeting](onlinemee
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad            | Tipo    | Descripción                                                                    |
+| Propiedad            | Tipo    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | Una dirección URL a la página web accesibles de forma externa que contiene la información de marcado. |
-| leaderPasscode      | String  | La contraseña de coordinador necesaria para conectarse al proveedor de conferencia de Audio.      |
-| participantPasscode | String  | La contraseña de participantes necesaria para conectarse al proveedor de conferencia de Audio. |
-| tollFreeNumber      | String  | El número gratuito para conectarse al proveedor de conferencia de Audio.              |
-| tollNumber          | String  | El número de teléfono de pago para conectarse al proveedor de conferencia de Audio.                   |
+| dialinUrl           | Cadena  | Una dirección URL a la página web accesibles de forma externa que contiene la información de marcado. |
+| leaderPasscode      | Cadena  | La contraseña de coordinador necesaria para conectarse al proveedor de conferencia de Audio.      |
+| participantPasscode | Cadena  | La contraseña de participantes necesaria para conectarse al proveedor de conferencia de Audio. |
+| tollFreeNumber      | Cadena  | El número gratuito para conectarse al proveedor de conferencia de Audio.              |
+| tollNumber          | Cadena  | El número de teléfono de pago para conectarse al proveedor de conferencia de Audio.                   |
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -2,12 +2,13 @@
 title: Eliminar miembro del rol de directorio
 description: Elimine un miembro de un directoryRole.
 author: lleonard-msft
-ms.openlocfilehash: c2b0f8896ca2cc13ebb9f53900638875ade365bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57b99ec59765d58a96ae43919e7907d480e8817a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843326"
 ---
 # <a name="remove-directory-role-member"></a>Eliminar miembro del rol de directorio
 
@@ -36,7 +37,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

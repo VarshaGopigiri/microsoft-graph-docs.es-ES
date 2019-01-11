@@ -1,12 +1,13 @@
 ---
 title: 'usuario: exportPersonalData'
 description: Envía una solicitud de operación de la directiva de datos, realizada por un administrador de la compañía para exportar datos de un usuario organizativa.
-ms.openlocfilehash: ffde9af132fbb15706fe54af8a6b3aaeba07d12b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: d660994868e331fb8c1813bb9ff90aebe4790e9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845342"
 ---
 # <a name="user-exportpersonaldata"></a>usuario: exportPersonalData
 
@@ -37,9 +38,9 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción |
+| Parámetro    | Tipo   |Description |
 |:---------------|:--------|:----------|
-|storageLocation|String|Esto es una dirección URL de firma (SAS) de acceso compartido a una cuenta de almacenamiento de Azure, para que se deben exportar los datos.|
+|storageLocation|Cadena|Esto es una dirección URL de firma (SAS) de acceso compartido a una cuenta de almacenamiento de Azure, para que se deben exportar los datos.|
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted`. No devuelve nada en el cuerpo de la respuesta. La respuesta contiene los siguientes encabezados.

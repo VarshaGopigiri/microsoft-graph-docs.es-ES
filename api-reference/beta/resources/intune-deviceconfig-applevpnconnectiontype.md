@@ -2,12 +2,13 @@
 title: tipo de enumeración appleVpnConnectionType
 description: Tipo de conexión VPN de Apple.
 author: tfitzmac
-ms.openlocfilehash: 0904dbff2c9d30b362e3a024f4ff57fbd0769bb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46469b21fecdec5f4a7bb97d09eed9c9345914b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348562"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842164"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>tipo de enumeración appleVpnConnectionType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27348562"
 
 Tipo de conexión VPN de Apple.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1|Impulsos seguro.|

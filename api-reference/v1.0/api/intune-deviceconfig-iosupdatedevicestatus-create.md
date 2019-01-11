@@ -2,12 +2,13 @@
 title: Crear iosUpdateDeviceStatus
 description: Cree un objeto iosUpdateDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: aa953684b79b4bca2453f55de9be5754a29ba86c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f299c169c14cc48528e08c819e68411913b8db9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833925"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Crear iosUpdateDeviceStatus
 
@@ -36,7 +37,7 @@ POST /deviceManagement/iosUpdateStatuses
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto iosUpdateDeviceStatus.
@@ -45,18 +46,18 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Estado de la instalación del informe de directiva. Los valores posibles son: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
 |osVersion|String|La versión del dispositivo que se está notificando.|
 |deviceId|String|El identificador del dispositivo que se está notificando.|
 |userId|String|El identificador del usuario que se está notificando.|
 |deviceDisplayName|String|Nombre de dispositivo de DevicePolicyStatus.|
-|userName|String|El nombre de usuario que se está notificando|
-|deviceModel|String|El modelo de dispositivo que se está notificando|
+|userName|Cadena|El nombre de usuario que se está notificando|
+|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadena|UserPrincipalName.|
 
 
 

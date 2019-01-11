@@ -1,12 +1,13 @@
 ---
 title: Contrato de actualización
 description: Actualizar las propiedades de un objeto de contrato.
-ms.openlocfilehash: b9405a8c469876a349b5c1b0c00e6f6a5f225e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b16a503b33193fa453ca52481854879ae4dcd121
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838734"
 ---
 # <a name="update-agreement"></a>Contrato de actualización
 
@@ -30,14 +31,14 @@ PATCH /agreements/<id>
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-|displayName|String|Nombre para mostrar del contrato.|
+|displayName|Cadena|Nombre para mostrar del contrato.|
 |isViewingBeforeAcceptanceRequired|Booleano|Si el usuario tiene que expandir y ver el contrato antes de Aceptar.|
 
 ## <a name="response"></a>Respuesta

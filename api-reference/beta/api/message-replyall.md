@@ -2,12 +2,13 @@
 title: 'message: replyAll'
 description: 'Responder a todos los destinatarios de un mensaje mediante la especificación de un comentario y modificación de las propiedades actualizables '
 author: angelgolfer-ms
-ms.openlocfilehash: 035212224bca5cb6d173be9ea447cf16406ebf36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5377de8737445f61d34e1d1148af9376cb7e9658
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843305"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -42,7 +43,7 @@ POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |comment|String|Comentario que se va a incluir. Puede ser una cadena vacía.|
 |mensaje|[message](../resources/message.md)|Cualquier propiedad grabable para actualizar en el mensaje de respuesta.|

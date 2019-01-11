@@ -2,12 +2,13 @@
 title: Lista windowsPhone81VpnConfigurations
 description: Propiedades de la lista y relaciones de los objetos windowsPhone81VpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ba72ae3fd409dcc08cef51b7b66767691923b44e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a25937c9b4f98a9fa54de4459b9e8228db1b23e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305029"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836522"
 ---
 # <a name="list-windowsphone81vpnconfigurations"></a>Lista windowsPhone81VpnConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

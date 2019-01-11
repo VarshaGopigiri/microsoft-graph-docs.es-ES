@@ -1,12 +1,13 @@
 ---
 title: Configurar la sincronización con los atributos de extensión de Active directory
 description: 'Puede personalizar el esquema de sincronización para incluir los atributos de extensión de Active directory de Azure Active Directory (AD Azure). En este artículo se describe cómo usar un atributo de extensión de Active directory (**extension_9d98asdfl15980a_Nickname**) para rellenar el valor de User.CommunityNickname en la fuerza de ventas. En este escenario, debe conectar de Azure AD configurado para aprovisionar un número de atributos de extensión de Active directory de Windows Server Active Directory local a Azure AD. '
-ms.openlocfilehash: fa29e405b235107cd6773444085e7b409441c90e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 093d78b1e47e412a97ac8a4306c432465e24b5e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850102"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar la sincronización con los atributos de extensión de Active directory
 

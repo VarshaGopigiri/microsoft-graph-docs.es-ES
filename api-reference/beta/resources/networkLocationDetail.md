@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso networkLocationDetail
 description: Indica los detalles asociados con la ubicación de red. .
-ms.openlocfilehash: 5dd1410318d380a1b943de6a7dbb0d739172cc76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087629"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834324"
 ---
 # <a name="networklocationdetail-resource-type"></a>tipo de recurso networkLocationDetail
 Indica los detalles asociados con la ubicación de red. .
@@ -14,10 +15,10 @@ Indica los detalles asociados con la ubicación de red. .
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|networkType|String|Proporciona el tipo de la red. Los valores posibles son `intranet`, `extranet`, `namedNetwork`, y `trusted`.|
-|networkName|String|Nombre de la red.|
+|networkType|Cadena|Proporciona el tipo de la red. Los valores posibles son `intranet`, `extranet`, `namedNetwork`, y `trusted`.|
+|networkName|Cadena|Nombre de la red.|
 
 
 ## <a name="json-representation"></a>Representación JSON

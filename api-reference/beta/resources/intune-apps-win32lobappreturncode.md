@@ -2,12 +2,13 @@
 title: tipo de recurso win32LobAppReturnCode
 description: Contiene las propiedades de código de retorno para una aplicación de Win32
 author: tfitzmac
-ms.openlocfilehash: 1ac6b01240e25d1a0163148e61851d6e9405aa44
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f635c49ece6a1083ef3a89271faf76e01206e9ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849822"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>tipo de recurso win32LobAppReturnCode
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346238"
 
 Contiene las propiedades de código de retorno para una aplicación de Win32
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |returnCode|Int32|Código de retorno.|
 |type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|El tipo de código de retorno. Los valores posibles son: `failed`, `success`, `softReboot`, `hardReboot` y `retry`.|

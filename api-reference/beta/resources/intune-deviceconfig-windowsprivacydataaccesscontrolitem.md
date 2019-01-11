@@ -2,12 +2,13 @@
 title: tipo de recurso windowsPrivacyDataAccessControlItem
 description: Especificar el nivel de control de acceso por categoría de datos de privacidad
 author: tfitzmac
-ms.openlocfilehash: 3655282d7b3b6ff31268f9fe536a4a8f6ac85341
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3672ff7bd0c968f60cc80797545aa8bb13d2bb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314990"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837425"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>tipo de recurso windowsPrivacyDataAccessControlItem
 
@@ -28,11 +29,11 @@ Especificar el nivel de control de acceso por categoría de datos de privacidad
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|La clave de WindowsPrivacyDataAccessControlItem.|
+|id|Cadena|La clave de WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Esto indica un nivel de acceso para la categoría de datos de privacidad a la que se le dará la aplicación especificada a. Los valores posibles son: `notConfigured`, `forceAllow`, `forceDeny` y `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Esto indica una categoría de datos de privacidad al que se aplicará el control de acceso específico. Los valores posibles son: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices` .|
-|appPackageFamilyName|String|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
-|appDisplayName|String|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
+|appPackageFamilyName|Cadena|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
+|appDisplayName|Cadena|El nombre de la familia de paquete de una aplicación de Windows. Cuando se establece, se aplica el nivel de acceso a la aplicación especificada.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

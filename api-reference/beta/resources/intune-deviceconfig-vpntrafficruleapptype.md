@@ -2,12 +2,13 @@
 title: tipo de enumeración vpnTrafficRuleAppType
 description: Indica el tipo de aplicación que está asociada una regla de tráfico VPN.
 author: tfitzmac
-ms.openlocfilehash: 3ab20bf62029e57c93c80d5f49d964abb58a883d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 71e0af722c690188b3bb0e9dc33327f443cc9086
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835815"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>tipo de enumeración vpnTrafficRuleAppType
 
@@ -17,9 +18,9 @@ ms.locfileid: "27347358"
 
 Indica el tipo de aplicación que está asociada una regla de tráfico VPN.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|La regla de tráfico no está asociada con una aplicación.|
+|none|0|La regla de tráfico no está asociada con una aplicación.|
 |escritorio|1|La regla de tráfico está asociada con una aplicación de escritorio.|
 |universal|2|La regla de tráfico está asociada con una aplicación Universal.|
 

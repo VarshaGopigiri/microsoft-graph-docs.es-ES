@@ -1,12 +1,13 @@
 ---
 title: 'bookingBusiness: cancelar la publicación'
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 7d0e083eded3ce0c1328c9532358cf7a054db52b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc2556b62ab3b9a32ca278704864265c2de4d25e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085338"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838790"
 ---
 # <a name="bookingbusiness-unpublish"></a>bookingBusiness: cancelar la publicación
 

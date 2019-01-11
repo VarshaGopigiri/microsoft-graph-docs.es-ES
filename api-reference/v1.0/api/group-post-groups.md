@@ -2,12 +2,13 @@
 title: Crear grupo
 description: 'Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:'
 author: dkershaw10
-ms.openlocfilehash: 2fff86d3bc86a8e78c295b1a4553006ac416ddd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 3f6a73b6fd2dcf76bb1ebd0fab4c02a673a1be8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849423"
 ---
 # <a name="create-group"></a>Crear grupo
 Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:
@@ -34,7 +35,7 @@ POST /groups
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 
@@ -43,10 +44,10 @@ En la siguiente tabla se muestra las propiedades del recurso de [grupo](../resou
 
 | Propiedad | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| displayName | string | El nombre para mostrar en la libreta de direcciones del grupo. Obligatorio. |
-| mailEnabled | boolean | Establézcalo en **true** para grupos habilitados para correo. Debe establecer en **true** si la creación de un grupo de Office 365. Debe establecer en **false** si crear dinámico o grupo de seguridad. Obligatorio. |
-| mailNickname | string | El alias de correo del grupo. Obligatorio. |
-| securityEnabled | boolean | Establecer en **true** para grupos de seguridad. Debe establecer en **true** si la creación de un grupo de seguridad o dinámicos. Debe establecer en **false** si la creación de un grupo de Office 365. Obligatorio. |
+| displayName | string | El nombre para mostrar en la libreta de direcciones del grupo. Necesario. |
+| mailEnabled | boolean | Establézcalo en **true** para grupos habilitados para correo. Debe establecer en **true** si la creación de un grupo de Office 365. Debe establecer en **false** si crear dinámico o grupo de seguridad. Necesario. |
+| mailNickname | string | El alias de correo del grupo. Necesario. |
+| securityEnabled | boolean | Establecer en **true** para grupos de seguridad. Debe establecer en **true** si la creación de un grupo de seguridad o dinámicos. Debe establecer en **false** si la creación de un grupo de Office 365. Necesario. |
 | owners | colección string | Esta propiedad representa los propietarios para el grupo en tiempo de creación. Opcional. |
 | members | colección string | Esta propiedad representa a los miembros para el grupo en tiempo de creación. Opcional. |
 

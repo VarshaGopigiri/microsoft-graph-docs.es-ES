@@ -2,12 +2,13 @@
 title: Crear termsAndConditions
 description: Cree un objeto termsAndConditions.
 author: tfitzmac
-ms.openlocfilehash: 1eaa9f8a24082813abb3ffbda2c188a1a4e632b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2cd2350f3faa04883e3e65312b103c7cef96d41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835850"
 ---
 # <a name="create-termsandconditions"></a>Crear termsAndConditions
 
@@ -36,7 +37,7 @@ POST /deviceManagement/termsAndConditions
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto termsAndConditions.
@@ -45,14 +46,14 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la directiva de TyC.|
+|id|Cadena|Identificador único de la directiva de TyC.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre proporcionado por el administrador de la directiva de TyC. |
-|description|String|Descripción de la directiva de TyC proporcionada por el administrador.|
-|title|String|Título de los términos y condiciones proporcionado por el administrador. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
-|bodyText|String|Texto de cuerpo de los términos y condiciones proporcionado por el administrador, normalmente los propios términos. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
-|acceptanceStatement|String|Explicación de los términos y condiciones proporcionada por el administrador, normalmente describe lo que implica aceptar los términos y condiciones de la directiva de TyC. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la directiva de TyC. |
+|description|Cadena|Descripción de la directiva de TyC proporcionada por el administrador.|
+|title|Cadena|Título de los términos y condiciones proporcionado por el administrador. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|bodyText|Cadena|Texto de cuerpo de los términos y condiciones proporcionado por el administrador, normalmente los propios términos. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|acceptanceStatement|Cadena|Explicación de los términos y condiciones proporcionada por el administrador, normalmente describe lo que implica aceptar los términos y condiciones de la directiva de TyC. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
 |version|Int32|Entero que indica la versión actual de los términos. Aumenta cuando un administrador realiza un cambio en los términos y quiere que los usuarios tengan que volver a aceptar la directiva de TyC modificada.|
 
 

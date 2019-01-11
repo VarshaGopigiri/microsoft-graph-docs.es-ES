@@ -2,12 +2,13 @@
 title: Eliminar mobileAppInstallStatus
 description: Elimina un mobileAppInstallStatus.
 author: tfitzmac
-ms.openlocfilehash: 286ddc4f70989ac0725bbaeaea9b91d5991446fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 924a89ab0ac2c8b6aec7e1e08bd186949bdaa25c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849164"
 ---
 # <a name="delete-mobileappinstallstatus"></a>Eliminar mobileAppInstallStatus
 
@@ -39,7 +40,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstal
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

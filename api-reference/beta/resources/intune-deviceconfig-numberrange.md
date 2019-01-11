@@ -2,12 +2,13 @@
 title: tipo de recurso numberRange
 description: Definición del intervalo de números.
 author: tfitzmac
-ms.openlocfilehash: 7b9703524e1562a7367a3c5b9bf0212e29620429
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b428320fd66263149b6d443a15c6a0e1eee744a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314661"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845707"
 ---
 # <a name="numberrange-resource-type"></a>tipo de recurso numberRange
 
@@ -17,7 +18,7 @@ ms.locfileid: "27314661"
 
 Definición del intervalo de números.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |lowerNumber|Int32|Número inferior.|
 |upperNumber|Int32|Número superior.|

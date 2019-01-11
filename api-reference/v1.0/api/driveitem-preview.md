@@ -1,12 +1,13 @@
 ---
 title: 'driveItem: vista previa'
 description: Esta acción le permite obtener corta duración puede incrustar las direcciones URL de un elemento con el fin de representar una vista previa temporal.
-ms.openlocfilehash: 741e449c972ad372aae30d9921cdb3b7fa1fc40d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c04a73d514dfb5a92030c4c2016579d469063f9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850774"
 ---
 # <a name="driveitem-preview"></a>driveItem: vista previa
 
@@ -49,7 +50,7 @@ La solicitud debe ser un objeto JSON con las siguientes propiedades.
 |   Nombre      |  Tipo         | Descripción
 |:------------|:--------------|:-----------------------------------------------
 | page        | cadena o número | Opcional. Número de página del documento para iniciar en, si procede. Especificado como cadena para los casos de uso futuro alrededor de tipos de archivo como ZIP.
-| zoom        | n?mero        | Opcional. Aumentar nivel para iniciar en, si procede.
+| zoom        | number        | Opcional. Aumentar nivel para iniciar en, si procede.
 
 ## <a name="response"></a>Respuesta
 
@@ -63,7 +64,7 @@ La solicitud debe ser un objeto JSON con las siguientes propiedades.
 
 La respuesta será un objeto JSON que contiene las siguientes propiedades:
 
-| Nombre           | Tipo   | Descripción
+| Nombre           | Tipo   | Description
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | Dirección URL adecuada para incrustar mediante HTTP GET (IFRAME, etcetera).
 | URL para exponer        | string | Dirección URL adecuada para incrustar el uso de HTTP POST (de envío de formulario, JS, etcetera.)

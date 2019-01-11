@@ -1,12 +1,13 @@
 ---
 title: 'workbookRangeView: itemAt'
 description: Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea Permisos.
-ms.openlocfilehash: c19a2480202b1528a1d09ffd6151835a357c14ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2fc5c638bbe55f3209d629415023ece7d81e6c29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087074"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834779"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
 

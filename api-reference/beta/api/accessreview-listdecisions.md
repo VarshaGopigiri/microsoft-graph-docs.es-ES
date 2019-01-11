@@ -1,12 +1,13 @@
 ---
 title: Lista decisiones de accessReview
 description: En el anuncio de Azure access revisa la característica, recuperar las decisiones de un objeto accessReview.
-ms.openlocfilehash: d8cf89706f053dfee6e98cdf23d2539874ac6997
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ade39abbf63c4e1eb71a6fa25fd3febd8a24c41b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849752"
 ---
 # <a name="list-accessreview-decisions"></a>Lista decisiones de accessReview
 
@@ -33,7 +34,7 @@ GET /accessReviews('{reviewId}')/decisions
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.
@@ -83,10 +84,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Obtener accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recuperar una revisión de access. |
 |[Mis decisiones accessReview de lista](accessreview-listmydecisions.md) |        colección de [accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, obtener Mis decisiones de un accessReview.|
-|[Enviar aviso de accessReview](accessreview-sendreminder.md) |       Ninguna.   |   Enviar un aviso a los revisores de un accessReview. |
-|[Detener accessReview](accessreview-stop.md) |        Ninguna.   |   Detener una accessReview. |
-|[Restablecer las decisiones de accessReview](accessreview-reset.md) |        Ninguna.   |   Restablecer las decisiones en un accessReview en curso.|
-|[Aplicar decisiones accessReview](accessreview-apply.md) |        Ninguna.   |   Se aplican las decisiones de un accessReview completado.|
+|[Enviar aviso de accessReview](accessreview-sendreminder.md) |       Ninguno.   |   Enviar un aviso a los revisores de un accessReview. |
+|[Detener accessReview](accessreview-stop.md) |        Ninguno.   |   Detener una accessReview. |
+|[Restablecer las decisiones de accessReview](accessreview-reset.md) |        Ninguno.   |   Restablecer las decisiones en un accessReview en curso.|
+|[Aplicar decisiones accessReview](accessreview-apply.md) |        Ninguno.   |   Se aplican las decisiones de un accessReview completado.|
 
 
 <!-- {

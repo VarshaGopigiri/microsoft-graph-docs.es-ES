@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de contrato
 description: Representa un condiciones de personalizable del inquilino de uso que se crean y administran con Azure Active Directory (AD Azure). Puede usar los siguientes métodos para crear y administrar la característica de Azure Active Directory condiciones de uso según su situación.
-ms.openlocfilehash: 2e5c9087cd809f9c067150654d420fda533ca61b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8c082ed6229b44cc3a3d4cba6dd8645feee5d07c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845349"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
@@ -31,8 +32,8 @@ Representa un condiciones de personalizable del inquilino de uso que se crean y 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-|displayName|String|Nombre para mostrar del contrato.|
-|id|String| Solo lectura.|
+|displayName|Cadena|Nombre para mostrar del contrato.|
+|id|Cadena| Solo lectura.|
 |isViewingBeforeAcceptanceRequired|Booleano|Indica si el usuario tiene que expandir y ver el contrato antes de Aceptar.|
 
 ## <a name="relationships"></a>Relaciones

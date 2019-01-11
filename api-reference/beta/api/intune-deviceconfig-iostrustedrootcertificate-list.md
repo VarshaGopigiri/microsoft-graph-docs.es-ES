@@ -2,12 +2,13 @@
 title: Lista iosTrustedRootCertificates
 description: Propiedades de la lista y relaciones de los objetos iosTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 644cc698a9d147ed14c85801a2c7699995d03e87
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4eb4e4e9a23e67a9cd9d7c9dd331319d789b7d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837138"
 ---
 # <a name="list-iostrustedrootcertificates"></a>Lista iosTrustedRootCertificates
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

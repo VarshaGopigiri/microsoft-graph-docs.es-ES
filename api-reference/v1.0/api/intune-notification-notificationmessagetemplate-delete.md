@@ -2,12 +2,13 @@
 title: Eliminar notificationMessageTemplate
 description: Elimina un notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: e96282d028b9d5db7c7258b8db96a2c9ca884786
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a5cf523ebd306c108cfe2e1888038b7fd4ee6d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834772"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Eliminar notificationMessageTemplate
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTempla
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: Enumerar páginas
 description: Recupera una página de objetos page desde la sección especificada.
-ms.openlocfilehash: 5fe7e5dad2368d5c3de4d2a2904059801bb0e82b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d7745ffea6eb07528a76d29a1ff0d456f1d4a47e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836011"
 ---
 # <a name="list-pages"></a>Enumerar páginas
 
@@ -38,7 +39,7 @@ La respuesta predeterminada expande `parentSection` y selecciona las propiedades
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
