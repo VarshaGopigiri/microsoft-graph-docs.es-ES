@@ -2,47 +2,48 @@
 title: Remove rejectedSender
 description: Quita un usuario o grupo de la lista de rejectedSenders.
 author: dkershaw10
-ms.openlocfilehash: ea70f367fc547e08697746b3a582135e3254f8fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6033b1991807aac1b3edfff10ff407f0b667df7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830530"
 ---
-# <a name="remove-rejectedsender"></a><span data-ttu-id="f4b5e-103">Remove rejectedSender</span><span class="sxs-lookup"><span data-stu-id="f4b5e-103">Remove rejectedSender</span></span>
-<span data-ttu-id="f4b5e-104">Quita un usuario o grupo de la lista de rejectedSenders.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-104">Remove a user or group from the rejectedSenders list.</span></span>
+# <a name="remove-rejectedsender"></a><span data-ttu-id="02f0a-103">Remove rejectedSender</span><span class="sxs-lookup"><span data-stu-id="02f0a-103">Remove rejectedSender</span></span>
+<span data-ttu-id="02f0a-104">Quita un usuario o grupo de la lista de rejectedSenders.</span><span class="sxs-lookup"><span data-stu-id="02f0a-104">Remove a user or group from the rejectedSenders list.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4b5e-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="f4b5e-105">Permissions</span></span>
-<span data-ttu-id="f4b5e-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f4b5e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="02f0a-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="02f0a-105">Permissions</span></span>
+<span data-ttu-id="02f0a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="02f0a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f4b5e-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="f4b5e-108">Permission type</span></span>                        | <span data-ttu-id="f4b5e-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="f4b5e-109">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="02f0a-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="02f0a-108">Permission type</span></span>                        | <span data-ttu-id="02f0a-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="02f0a-109">Permissions (from least to most privileged)</span></span>  |
 |:---------------------------------------|:-------------------------------------------- |
-| <span data-ttu-id="f4b5e-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="f4b5e-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4b5e-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f4b5e-111">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="f4b5e-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f4b5e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4b5e-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-113">Not supported.</span></span> |
-| <span data-ttu-id="f4b5e-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="f4b5e-114">Application</span></span>                            | <span data-ttu-id="f4b5e-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-115">Not supported.</span></span> |
+| <span data-ttu-id="02f0a-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="02f0a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="02f0a-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02f0a-111">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="02f0a-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="02f0a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02f0a-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="02f0a-113">Not supported.</span></span> |
+| <span data-ttu-id="02f0a-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="02f0a-114">Application</span></span>                            | <span data-ttu-id="02f0a-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="02f0a-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f4b5e-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="f4b5e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="02f0a-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="02f0a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f4b5e-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="f4b5e-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="02f0a-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="02f0a-117">Request headers</span></span>
 
-| <span data-ttu-id="f4b5e-118">Encabezado</span><span class="sxs-lookup"><span data-stu-id="f4b5e-118">Header</span></span>         | <span data-ttu-id="f4b5e-119">Valor</span><span class="sxs-lookup"><span data-stu-id="f4b5e-119">Value</span></span>                      |
+| <span data-ttu-id="02f0a-118">Encabezado</span><span class="sxs-lookup"><span data-stu-id="02f0a-118">Header</span></span>         | <span data-ttu-id="02f0a-119">Valor</span><span class="sxs-lookup"><span data-stu-id="02f0a-119">Value</span></span>                      |
 |:---------------|:---------------------------|
-| <span data-ttu-id="f4b5e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4b5e-120">Authorization</span></span>  | <span data-ttu-id="f4b5e-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-p102">Bearer {token}. Required.</span></span> 
+| <span data-ttu-id="02f0a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="02f0a-120">Authorization</span></span>  | <span data-ttu-id="02f0a-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="02f0a-p102">Bearer {token}. Required.</span></span> 
 
-## <a name="request-body"></a><span data-ttu-id="f4b5e-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="f4b5e-123">Request body</span></span>
-<span data-ttu-id="f4b5e-124">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="02f0a-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="02f0a-123">Request body</span></span>
+<span data-ttu-id="02f0a-124">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="02f0a-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f4b5e-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f4b5e-125">Response</span></span>
-<span data-ttu-id="f4b5e-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="02f0a-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="02f0a-125">Response</span></span>
+<span data-ttu-id="02f0a-p103">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="02f0a-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f4b5e-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="f4b5e-128">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="f4b5e-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="f4b5e-129">Request</span></span>
-<span data-ttu-id="f4b5e-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="02f0a-128">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="02f0a-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="02f0a-129">Solicitud</span><span class="sxs-lookup"><span data-stu-id="02f0a-129">Request</span></span>
+<span data-ttu-id="02f0a-130">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="02f0a-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "remove_rejectedSender_from_group"
@@ -51,8 +52,8 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="f4b5e-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f4b5e-131">Response</span></span>
-<span data-ttu-id="f4b5e-132">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f4b5e-132">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="02f0a-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="02f0a-131">Response</span></span>
+<span data-ttu-id="02f0a-132">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="02f0a-132">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
