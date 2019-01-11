@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso extension
 description: Tipo abstracto para admitir el tipo abierto de OData v4 openTypeExtension.
-ms.openlocfilehash: 1b3d735e0997ca128b539bff9a05c9c7c56799df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2633c8a28c1be1a670a80834ce869b5156fc1de9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834674"
 ---
 # <a name="extension-resource-type"></a>Tipo de recurso extension
 
@@ -36,7 +37,7 @@ Aquí tiene una representación JSON del recurso
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

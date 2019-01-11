@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración defenderThreatAction
 description: Acción de predeterminada del Defender tomar detecta las amenazas de Malware.
-ms.openlocfilehash: d6a4ccbc9725c230f6abc7bd9ee1e38a30d5d133
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7e448e6fae0ebbb0f14a3b7932e6f306a70588b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083159"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837873"
 ---
 # <a name="defenderthreataction-enum-type"></a>tipo de enumeración defenderThreatAction
 
@@ -16,7 +17,7 @@ ms.locfileid: "27083159"
 
 Acción de predeterminada del Defender tomar detecta las amenazas de Malware.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |deviceDefault|0|Aplicar la acción en función de la definición de actualización.|
 |clean|1|Limpiar la amenaza detectada.|

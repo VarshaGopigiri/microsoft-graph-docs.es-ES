@@ -2,12 +2,13 @@
 title: Crear windowsInformationProtectionAppLockerFile
 description: Cree un objeto windowsInformationProtectionAppLockerFile.
 author: tfitzmac
-ms.openlocfilehash: affd7838727ee79e4eef79a87b4dd4358cf4bb6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e5076b30d577c74551ccd5718ce6d41c3f345e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834359"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Crear windowsInformationProtectionAppLockerFile
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto windowsInformationProtectionAppLockerFile.
@@ -51,8 +52,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |displayName|String|El nombre descriptivo|
 |fileHash|String|Hash del archivo SHA256|
 |file|Binario|Archivo como una matriz de bytes|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 
 

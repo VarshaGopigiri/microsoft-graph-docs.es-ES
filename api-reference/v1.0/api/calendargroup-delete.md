@@ -2,12 +2,13 @@
 title: Eliminar calendarGroup
 description: Elimine un grupo de calendarios que no sea el predeterminado.
 author: angelgolfer-ms
-ms.openlocfilehash: dcb788f29b9e4b00408f4177f5785e6441084332
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f2623077c49a38f121db331f96185d2d91c8032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839630"
 ---
 # <a name="delete-calendargroup"></a>Eliminar calendarGroup
 
@@ -34,7 +35,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 
-| Nombre          | Type   | Descripción               |
+| Nombre          | Tipo   | Descripción               |
 | :------------ | :----- | :------------------------ |
 | Autorización | string | {token} de portador. Obligatorio. |
 

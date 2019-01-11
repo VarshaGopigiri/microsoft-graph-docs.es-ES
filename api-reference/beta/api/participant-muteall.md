@@ -2,12 +2,13 @@
 title: 'participante: muteAll'
 description: Silenciar a todos los participantes de la llamada.
 author: VinodRavichandran
-ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7141c5f8ee190fd3df8cca3f30f14c537165986b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380502"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837810"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -39,10 +40,10 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
 |participants|Colección String|Los participantes que se ha desactivado.|
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Si tiene éxito, este método devuelve `200 OK` objeto de código y [commsOperation](../resources/commsoperation.md) de respuesta en el cuerpo de la respuesta.

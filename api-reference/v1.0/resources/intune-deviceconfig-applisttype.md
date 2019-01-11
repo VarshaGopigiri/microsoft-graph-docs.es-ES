@@ -2,12 +2,13 @@
 title: tipo de enumeración appListType
 description: Posibles valores de la lista de aplicaciones de cumplimiento.
 author: tfitzmac
-ms.openlocfilehash: ab5d8f45343b017693906b13be25c88d5b06e8f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76c13c26812fd8ab7c8e1224b55e616502b514ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354722"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839273"
 ---
 # <a name="applisttype-enum-type"></a>tipo de enumeración appListType
 
@@ -15,9 +16,9 @@ ms.locfileid: "27354722"
 
 Posibles valores de la lista de aplicaciones de cumplimiento.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Valor predeterminado, sin intención.|
+|none|0|Valor predeterminado, sin intención.|
 |appsInListCompliant|1|La lista representa las aplicaciones que se considerarán compatibles con (solo son compatibles con las aplicaciones de la lista).|
 |appsNotInListCompliant|2|La lista representa las aplicaciones que se considerarán no conformes (todas las aplicaciones son compatibles excepto en la lista de aplicaciones).|
 

@@ -1,12 +1,13 @@
 ---
 title: Lista servicePrincipals
 description: Recuperar una lista de objetos de servicePrincipal.
-ms.openlocfilehash: deb0fdc0634d7702beaba5b4066b4e83b28c267b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d7e0a9a34ac0ab7a166c40336671ec4d0a89ddd6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837614"
 ---
 # <a name="list-serviceprincipals"></a>Lista servicePrincipals
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre | Descripción |
 |:----------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

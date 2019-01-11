@@ -1,12 +1,13 @@
 ---
 title: Actualizar educationassignment
 description: Actualizar el objeto de asignación. Sólo los profesores en la clase pueden hacerlo. Tenga en cuenta que no se puede usar una solicitud de revisión para cambiar el estado de una asignación. Utilice la acción de publicación para cambiar el estado de la asignación.
-ms.openlocfilehash: 8b23b7ac4b971856ed7a96b4991fca2e5220d069
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838293"
 ---
 # <a name="update-educationassignment"></a>Actualizar educationassignment
 
@@ -37,13 +38,13 @@ PATCH /education/classes/{id}/assignments/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |allowLateSubmissions|Booleano| Si se pueden enviar envíos después de la fecha de vencimiento.|
 |allowStudentsToAddResourcesToSubmission|Booleano| Si un estudiante puede agregar recursos a una presentación. Indica si los únicos elementos en el envío proceden de la lista de recursos de la asignación. |
 |assignDateTime|DateTimeOffset| Fecha de que la asignación debe publicarse a los alumnos. |
 |assignTo|educationAssignmentRecipient| Alumnos que obtener la asignación.|
-|displayName|String| Nombre de asignación. |
+|displayName|Cadena| Nombre de asignación. |
 |dueDateTime|DateTimeOffset| Asignación de fecha es de vencimiento. |
 |Puntuar|educationAssignmentGradeType| ¿Cómo se corregirán la asignación.|
 |instrucciones|itemBody| Instrucciones que se proporcionará a los alumnos junto con la asignación. |

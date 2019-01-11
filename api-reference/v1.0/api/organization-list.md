@@ -1,12 +1,13 @@
 ---
 title: List organization
 description: Recupera una lista de objetos organization.
-ms.openlocfilehash: 9a66fac482e5bc4a6fe822210ae274abdb725360
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8a394599b6aaf4807e5eba96d6fc58d90422e0ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839679"
 ---
 # <a name="list-organization"></a>List organization
 
@@ -34,7 +35,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

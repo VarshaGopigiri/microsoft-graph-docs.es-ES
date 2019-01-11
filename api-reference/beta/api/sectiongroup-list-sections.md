@@ -1,12 +1,13 @@
 ---
 title: Enumerar secciones
 description: Recupera una lista de objetos section desde el grupo de sección especificado.
-ms.openlocfilehash: 2660cd35c103017ff4f3aa6e070f151b290658aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cf31f8e132019b8afce204d0058516fd330f45d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836102"
 ---
 # <a name="list-sections"></a>Enumerar secciones
 
@@ -41,7 +42,7 @@ La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

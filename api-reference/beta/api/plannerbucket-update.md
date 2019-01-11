@@ -1,12 +1,13 @@
 ---
 title: Actualizar plannerbucket
 description: Actualizar las propiedades del objeto **plannerbucket**.
-ms.openlocfilehash: 22414bb7aaa3155974679a765eb4b83f1c98fd6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c2a3e0daec852e4c871a42b1bbc88dcc950afa6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088317"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836046"
 ---
 # <a name="update-plannerbucket"></a>Actualizar plannerbucket
 
@@ -38,9 +39,9 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|String|Nombre del depósito.|
+|name|Cadena|Nombre del depósito.|
 |orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define en [Using order hints in Planner](../resources/planner-order-hint-format.md) (Usar sugerencias de orden en Planner).|
-|planId|String|Id. de plan al que pertenece el depósito.|
+|planId|Cadena|Id. de plan al que pertenece el depósito.|
 
 ## <a name="response"></a>Respuesta
 

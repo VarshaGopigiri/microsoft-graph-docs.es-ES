@@ -1,12 +1,13 @@
 ---
 title: 'synchronizationJob: validateCredentials'
 description: Validar que las credenciales son válidas en el inquilino.
-ms.openlocfilehash: b4f488787474158172800fe23d7d0ae78ef6a366
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b78d6f7b3ff197607897fbdce123aa1e7e646afc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834925"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -37,7 +38,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
 |useSavedCredentials|Booleano|Cuando `true`, el `credentials` se ignorará el parámetro y en su lugar se validará las credenciales guardadas anteriormente (si hay alguno). |
 |credenciales|colección de [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciales para validar. Cuándo se omite la `useSavedCredentials` parámetro es `true`.|

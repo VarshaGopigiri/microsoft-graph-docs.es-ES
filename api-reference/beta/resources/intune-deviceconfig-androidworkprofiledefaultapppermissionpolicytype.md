@@ -2,12 +2,13 @@
 title: tipo de enumeración androidWorkProfileDefaultAppPermissionPolicyType
 description: Android perfil de trabajo predeterminado permiso directiva tipo de aplicación.
 author: tfitzmac
-ms.openlocfilehash: 2c038adc67a83b98885af1b46c4c29c45aaaf0ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a2ba4bca2fd9a91b47ec4c4d986f2554ff4d3d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836067"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>tipo de enumeración androidWorkProfileDefaultAppPermissionPolicyType
 
@@ -17,10 +18,10 @@ ms.locfileid: "27327184"
 
 Android perfil de trabajo predeterminado permiso directiva tipo de aplicación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
-|prompt|1|El mensaje.|
+|símbolo del sistema|1|El mensaje.|
 |autoGrant|2|Concesión automática.|
 |autoDeny|3|Denegar automáticamente.|
 

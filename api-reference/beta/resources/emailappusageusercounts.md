@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso emailAppUsageUserCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: c8669c8a34987bc1e71152ae717f9be3ba101107
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a018776f092e9b7f378e8069666d015e1cd3e4a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088549"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835451"
 ---
 # <a name="emailappusageusercounts-resource-type"></a>tipo de recurso emailAppUsageUserCounts
 

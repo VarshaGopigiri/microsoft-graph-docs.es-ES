@@ -2,12 +2,13 @@
 title: Obtener iosStoreApp
 description: Lea las propiedades y las relaciones del objeto iosStoreApp.
 author: tfitzmac
-ms.openlocfilehash: f6a8f2c08eeaa44604f3d9c4d65f77d9f1a53232
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c2b59ccbf630f7675f69ec9b9a3071f8b98b4eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837740"
 ---
 # <a name="get-iosstoreapp"></a>Obtener iosStoreApp
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso filterGroup
 description: Define un conjunto de cláusulas que debe cumplir un objeto que deben considerarse en ámbito. Se considera como un objeto en el ámbito del grupo (el grupo se evalúa a `true`) sólo si todas las cláusulas del grupo se evalúan a `true`.
-ms.openlocfilehash: d49f7a4364f1d8ce3e1c4daba3bb331cf9a9c001
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 174c02518069e949c49887d9e21e778e8455509a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089281"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836116"
 ---
 # <a name="filtergroup-resource-type"></a>tipo de recurso filterGroup
 
@@ -15,10 +16,10 @@ ms.locfileid: "27089281"
 Define un conjunto de cláusulas que debe cumplir un objeto que deben considerarse en ámbito. Se considera como un objeto en el ámbito del grupo (el grupo se evalúa a `true`) sólo si todas las cláusulas del grupo se evalúan a `true`.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |cláusulas|colección [filterClause](synchronization-filterclause.md)|Filtrar cláusulas (condiciones) de este grupo. Deben cumplirse todas las cláusulas de un grupo en orden para el grupo de filtro evaluar a `true`.|
-|name|String|Nombre legible del grupo de filtro.|
+|name|Cadena|Nombre legible del grupo de filtro.|
 
 ## <a name="json-representation"></a>Representación JSON
 

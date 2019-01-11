@@ -2,12 +2,13 @@
 title: Acción targetApps
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: ef8623efc272d4812bb1430bebd41f02effdb2a7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3751dde9dcb54cffdfacd7a186ed8be7545869a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346098"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835843"
 ---
 # <a name="targetapps-action"></a>Acción targetApps
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.

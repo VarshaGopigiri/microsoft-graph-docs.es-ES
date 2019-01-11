@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsStartMenuAppListVisibilityType
 description: Tipo de visibilidad de lista de aplicación de menú de inicio.
 author: tfitzmac
-ms.openlocfilehash: a3abe3bdc902fc81db781300d4b05cb34c72a67e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cc8440f05b818eab7b02e6df016b47ecd3a8d3b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839280"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>tipo de enumeración windowsStartMenuAppListVisibilityType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27329536"
 
 Tipo de visibilidad de lista de aplicación de menú de inicio.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario. Valor predeterminado.|
 |Contraer|1|Contraer la lista de aplicaciones en el menú Inicio.|

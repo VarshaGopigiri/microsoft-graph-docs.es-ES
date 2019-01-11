@@ -2,12 +2,13 @@
 title: Enumerar deviceCompliancePolicyAssignments
 description: Enumere las propiedades y las relaciones de los objetos deviceCompliancePolicyAssignment.
 author: tfitzmac
-ms.openlocfilehash: e1979293e28eb71f142f4631b636ae2f44994e80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a300fae9d8e6a39557b9da39ca33fdd0aa5c046c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839350"
 ---
 # <a name="list-devicecompliancepolicyassignments"></a>Enumerar deviceCompliancePolicyAssignments
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

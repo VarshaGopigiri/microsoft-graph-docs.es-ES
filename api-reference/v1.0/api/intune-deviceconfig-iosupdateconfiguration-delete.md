@@ -2,12 +2,13 @@
 title: Eliminar iosUpdateConfiguration
 description: Elimina un iosUpdateConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 08d7d0a8bee77165878f185c2136a36dec3ef0f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ddfa396050f4eb9a2a78e0112c57929d4d19937a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343711"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834352"
 ---
 # <a name="delete-iosupdateconfiguration"></a>Eliminar iosUpdateConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

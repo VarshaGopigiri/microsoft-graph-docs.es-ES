@@ -1,12 +1,13 @@
 ---
 title: Create MailFolder
 description: Usa esta API para crear una carpeta de correo en la carpeta raíz del buzón del usuario.
-ms.openlocfilehash: 6e6b42197dcb5b968a59303d2e9c8c8b1ddf6feb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fd625e221eea67d08407dc332d47880ce21f21e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838426"
 ---
 # <a name="create-mailfolder"></a>Create MailFolder
 

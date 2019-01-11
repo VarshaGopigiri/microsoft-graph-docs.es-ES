@@ -2,12 +2,13 @@
 title: Crear hilo de conversación
 description: 'Inicie una nueva conversación de grupo creando primero un hilo de conversación. '
 author: dkershaw10
-ms.openlocfilehash: e3517c3a933d428a8ba5b719ba72d0967ce1ae71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0c5ea3e8a36071bc78d4a65add47e14fa7fe9fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352006"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837978"
 ---
 # <a name="create-conversation-thread"></a>Crear hilo de conversación
 Inicie una nueva conversación de grupo creando primero un hilo de conversación. 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso signInLocation
 description: Proporciona la ciudad, estado y país o región desde donde ha ocurrido en el inicio de sesión.
-ms.openlocfilehash: a3d4f6ca5ec18e70960f45a3da1bb06d51ee1e65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087242"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839140"
 ---
 # <a name="signinlocation-resource-type"></a>tipo de recurso signInLocation
 Proporciona la ciudad, estado y país o región desde donde ha ocurrido en el inicio de sesión.
@@ -16,10 +17,10 @@ Proporciona la ciudad, estado y país o región desde donde ha ocurrido en el in
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|city|String|Proporciona la ciudad donde se originó en el inicio de sesión. Esto se calcula utilizando la información de latitud y longitud de la actividad de inicio de sesión.|
-|countryOrRegion|String|Proporciona la información de código de país (código de 2 letras) donde se originó en el inicio de sesión.  Esto se calcula utilizando la información de latitud y longitud de la actividad de inicio de sesión.|
+|city|Cadena|Proporciona la ciudad donde se originó en el inicio de sesión. Esto se calcula utilizando la información de latitud y longitud de la actividad de inicio de sesión.|
+|countryOrRegion|Cadena|Proporciona la información de código de país (código de 2 letras) donde se originó en el inicio de sesión.  Esto se calcula utilizando la información de latitud y longitud de la actividad de inicio de sesión.|
 |coordenadas geográficas|[geoCoordinates](geocoordinates.md)|Proporciona la latitud, longitud y altitud donde se originó en el inicio de sesión.|
-|estado|String|Proporciona el estado donde se originó en el inicio de sesión. Esto se calcula utilizando la información de latitud y longitud de la actividad de inicio de sesión.|
+|state|Cadena|Proporciona el estado donde se originó en el inicio de sesión. Esto se calcula utilizando la información de latitud y longitud de la actividad de inicio de sesión.|
 
 ## <a name="json-representation"></a>Representación JSON
 

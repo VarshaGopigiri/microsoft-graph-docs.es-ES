@@ -2,12 +2,13 @@
 title: tipo de recurso windowsUniversalAppXContainedApp
 description: Una clase que representa una aplicación de contenido de una aplicación de WindowsUniversalAppX.
 author: tfitzmac
-ms.openlocfilehash: 19afa6a677d51613b6a4a18368c53cc5a12a4df7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7b9c814b73ce08bacdba97b40b5b7f07362606e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837719"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>tipo de recurso windowsUniversalAppXContainedApp
 
@@ -31,8 +32,8 @@ Hereda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Se hereda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|El identificador del modelo de usuario de aplicación de la aplicación contenido de una aplicación de WindowsUniversalAppX.|
+|id|Cadena|Clave de la entidad. Se hereda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Cadena|El identificador del modelo de usuario de aplicación de la aplicación contenido de una aplicación de WindowsUniversalAppX.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

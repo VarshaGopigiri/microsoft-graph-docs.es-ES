@@ -2,12 +2,13 @@
 title: 'participante: configureMixer'
 description: Configurar cómo audio mixto para los diferentes participantes en una conversación entre varias partes.
 author: VinodRavichandran
-ms.openlocfilehash: c15cbc8a8de5a9ba7d7f3c20d20f99bf61006dbf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6fa8e7395eb39a3d0a2c05daa8eb215377f3976f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836291"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
@@ -39,10 +40,10 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
 |participantMixerLevels|colección de [participantMixerLevel](../resources/participantmixerlevel.md)| Configuración del Mezclador de niveles para indicar participante de audio.|
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta y un encabezado de ubicación con un uri para el [commsOperation](../resources/commsoperation.md) creado para esta solicitud.

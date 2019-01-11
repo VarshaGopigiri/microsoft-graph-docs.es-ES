@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso profilePhoto
 description: Una imagen de perfil de un usuario, grupo o un contacto de Outlook tiene acceso desde Exchange Online o Azure Active Directory (AAD). Es datos binarios no codificados en base-64.
-ms.openlocfilehash: 61123542ce66c1e999fb6d90c154a78dbb77df50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7754d70c4e59b13b1b0003022ddc0f185cc18ae2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837074"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso profilePhoto
 

@@ -2,12 +2,13 @@
 title: Eliminar deviceConfigurationAssignment
 description: Elimina un deviceConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: e056b2ab6a4f5e6ba84ab6aa3bc48f47473d3763
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: efb420b3e53e801344ac65de16b9ef43caca2b2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839322"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>Eliminar deviceConfigurationAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignment
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

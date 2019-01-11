@@ -1,12 +1,13 @@
 ---
 title: Update subscription
 description: Renueva una suscripción ampliando su tiempo de expiración.
-ms.openlocfilehash: e2021e22d84ad9e05429db7980d37cbd1574843c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63bcf8f4084053356819601cd6306ad3ff5238c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085074"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836123"
 ---
 # <a name="update-subscription"></a>Actualizar suscripción
 
@@ -26,8 +27,8 @@ En la tabla siguiente se muestra el permiso propuesto que se requiere para cada 
 | Conversaciones               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensajes                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| Grupos                      | Group.Read.All      |
+| Usuarios                       | User.Read.All       |
 | Unidad de disco (OneDrive del usuario)    | Files.ReadWrite     |
 | Unidades (contenido de SharePoint compartido y unidades) | Files.ReadWrite.All |
 |Alerta de seguridad               | SecurityEvents.ReadWrite.All |
@@ -46,7 +47,7 @@ PATCH /subscriptions/{id}
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="response"></a>Respuesta
 

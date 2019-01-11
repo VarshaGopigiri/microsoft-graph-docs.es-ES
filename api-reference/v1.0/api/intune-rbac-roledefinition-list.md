@@ -2,12 +2,13 @@
 title: Enumerar roleDefinitions
 description: Enumere las propiedades y las relaciones de los objetos roleDefinition.
 author: tfitzmac
-ms.openlocfilehash: 2aa23644d075c03aeb5b19551672214f15e0f4bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 117ee436ad63d0d28654935ab0271ff3700821b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837705"
 ---
 # <a name="list-roledefinitions"></a>Enumerar roleDefinitions
 
@@ -36,7 +37,7 @@ GET /deviceManagement/roleDefinitions
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

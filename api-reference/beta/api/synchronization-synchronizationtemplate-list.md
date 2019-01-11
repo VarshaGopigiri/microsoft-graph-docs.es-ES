@@ -1,12 +1,13 @@
 ---
 title: Lista de plantillas de sincronización existente
 description: Las plantillas de sincronización asociadas con una aplicación determinada o una entidad de seguridad de servicio de la lista.
-ms.openlocfilehash: 0842d5923368fa0df72af03e51d45dc3444e6dce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49e9e257322886fe294807207276f8b6d6919909
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839441"
 ---
 # <a name="list-existing-synchronization-templates"></a>Lista de plantillas de sincronización existente
 
@@ -34,7 +35,7 @@ GET applications/{id}/synchronization/templates
 
 | Nombre           | Tipo    | Descripción|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

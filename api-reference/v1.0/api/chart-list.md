@@ -2,12 +2,13 @@
 title: List ChartCollection
 description: Recuperar una lista de objetos chart.
 author: lumine2008
-ms.openlocfilehash: 677e76deb00726c725f25ad7ac1ec9b5f0c77af3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9df91acc1d189e57154e130db9fe9b4d5910198a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839651"
 ---
 # <a name="list-chartcollection"></a>List ChartCollection
 

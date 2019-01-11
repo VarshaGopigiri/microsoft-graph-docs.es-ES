@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso targetResourceServicePrincipal
 description: Indica la ServicePrincipalId para el recurso que resulta afectada la actividad de auditoría. Deriva el recurso targetResource.
-ms.openlocfilehash: 6d6e19997f4bfead771fc0230207df62dde6c6cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 37bd63851ca9169afb669c710ef4cb2c150ea615
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839602"
 ---
 # <a name="targetresourceserviceprincipal-resource-type"></a>tipo de recurso targetResourceServicePrincipal
 Indica la ServicePrincipalId para el recurso que resulta afectada la actividad de auditoría. Deriva el recurso [targetResource](targetresource.md) .
@@ -14,7 +15,7 @@ Indica la ServicePrincipalId para el recurso que resulta afectada la actividad d
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |appId|cadena|Indica el identificador único de la aplicación. Hace referencia al identificador de la aplicación para una aplicación de específico.|
 
