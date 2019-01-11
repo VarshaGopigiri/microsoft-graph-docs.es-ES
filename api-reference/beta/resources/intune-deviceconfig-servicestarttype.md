@@ -2,12 +2,13 @@
 title: tipo de enumeración serviceStartType
 description: Tipo de inicio de los posibles valores del servicio de xbox
 author: tfitzmac
-ms.openlocfilehash: f859e0620abe9953f974778d3a816d7814572476
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89cb74a05fcda01c97806f060b5ca9cf4a9fe437
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839994"
 ---
 # <a name="servicestarttype-enum-type"></a>tipo de enumeración serviceStartType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27308067"
 
 Tipo de inicio de los posibles valores del servicio de xbox
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |Manual|0|Type(default) de inicio manual de servicio|
 |Automático|1|Tipo de inicio automático del servicio|

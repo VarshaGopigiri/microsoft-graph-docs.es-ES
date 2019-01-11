@@ -2,12 +2,13 @@
 title: tipo de recurso vpnTrafficRule
 description: Definición de la regla de tráfico de VPN.
 author: tfitzmac
-ms.openlocfilehash: 39303510fdfef39cbcb99df3f824ce29bcbfd65c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b7a4a1841850c0276e50068b9e9c7d1ce69e765
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840225"
 ---
 # <a name="vpntrafficrule-resource-type"></a>tipo de recurso vpnTrafficRule
 
@@ -19,7 +20,7 @@ Definición de la regla de tráfico de VPN.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|name|String|Nombre.|
+|name|Cadena|Nombre.|
 |protocolos|Int32|Protocolos (0-255). Valores válidos de 0 a 255|
 |localPortRanges|colección de [numberRange](../resources/intune-deviceconfig-numberrange.md)|Intervalo de puertos locales se puede establecer sólo al protocolo es TCP o UDP (6 o 17). Esta colección puede contener un máximo de 500 elementos.|
 |remotePortRanges|colección de [numberRange](../resources/intune-deviceconfig-numberrange.md)|Intervalo de puertos remotos se puede establecer sólo al protocolo es TCP o UDP (6 o 17). Esta colección puede contener un máximo de 500 elementos.|
@@ -28,7 +29,7 @@ Definición de la regla de tráfico de VPN.
 |appId|cadena|Identificador de la aplicación, si se desencadena esta regla de tráfico por una aplicación.|
 |tipo de aplicación|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Tipo de aplicación, si se desencadena esta regla de tráfico por una aplicación. Los valores posibles son: `none`, `desktop` y `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Cuando aplicación desencadena, indica si se debe habilitar el túnel dividido a lo largo de esta ruta. Los valores posibles son: `none`, `splitTunnel` y `forceTunnel`.|
-|notificaciones|String|Notificaciones asociados con esta regla de tráfico.|
+|notificaciones|Cadena|Notificaciones asociados con esta regla de tráfico.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

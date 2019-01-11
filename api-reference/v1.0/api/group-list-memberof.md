@@ -2,12 +2,13 @@
 title: List memberOf
 description: 'Obtiene grupos de los que el grupo sea miembro directo. '
 author: dkershaw10
-ms.openlocfilehash: 5cd563c8697a0d93ca2d11c42b3b8c19b0ce7ec9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d7cfb9e21b05abc24b792e5e1288953c41492901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840295"
 ---
 # <a name="list-memberof"></a>List memberOf
 Obtiene grupos de los que el grupo sea miembro directo. 
@@ -33,7 +34,7 @@ GET /groups/{id}/memberOf
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

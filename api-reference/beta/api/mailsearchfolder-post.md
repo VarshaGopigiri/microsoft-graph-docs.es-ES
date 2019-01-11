@@ -1,12 +1,13 @@
 ---
 title: Crear mailSearchFolder
 description: Utilice esta API para crear un nuevo mailSearchFolder en el buzón del usuario especificado.
-ms.openlocfilehash: a35827a6b9164c8d4c1c0fe54a1897b2271fc5d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07c6b96bc2dec35d06b5563673012ca0eafb3885
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089150"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840190"
 ---
 # <a name="create-mailsearchfolder"></a>Crear mailSearchFolder
 
@@ -39,8 +40,8 @@ Especifique la carpeta principal en la dirección URL de consulta como un identi
 
 | Encabezado | Valor |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Obligatorio. |
-| Content-Type | `application/json`. Obligatorio. |
+| Autorización | `Bearer {token}`. Necesario. |
+| Content-Type | `application/json`. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -48,11 +49,11 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro | Tipo | Descripción |
 |:----------|:-----|:------------|
-| @odata.type | String | El tipo de carpeta que se creará. Se establece en "microsoft.graph.mailSearchFolder". |
+| @odata.type | Cadena | El tipo de carpeta que se creará. Se establece en "microsoft.graph.mailSearchFolder". |
 | displayName | String | Nombre para mostrar de la nueva carpeta.|
 | includeNestedFolders | Booleano | ¿Cómo se debe recorrer la jerarquía de carpetas de buzón de correo. `true`significa que debe ser una búsqueda en profundidad mientras `false` significa que se debe realizar una búsqueda no exhaustivos en su lugar. |
 | sourceFolderIDs | Colección String | Las carpetas de buzón de correo que deben ser extraídas. |
-| filterQuery | String | La consulta de OData para filtrar los mensajes. |
+| filterQuery | Cadena | La consulta de OData para filtrar los mensajes. |
 
 ## <a name="response"></a>Respuesta
 

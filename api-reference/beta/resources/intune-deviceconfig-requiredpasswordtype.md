@@ -2,12 +2,13 @@
 title: tipo de enumeración requiredPasswordType
 description: Valores posibles de contraseñas necesarias.
 author: tfitzmac
-ms.openlocfilehash: d4a46b800e7643eeefe1ada2282e437eb543cf9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39bf880de1cc8ea63af605e868ae37f7b32894bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313660"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839931"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>tipo de enumeración requiredPasswordType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27313660"
 
 Valores posibles de contraseñas necesarias.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
 |alfanuméricos|1|Se requiere una contraseña alfanumérica.|

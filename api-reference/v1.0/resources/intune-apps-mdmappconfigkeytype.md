@@ -2,12 +2,13 @@
 title: tipo de enumeración mdmAppConfigKeyType
 description: Tipos de clave de configuración de aplicación.
 author: tfitzmac
-ms.openlocfilehash: a241346ec26455917dc3e4245cd67757757a096f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 88cb744ff495b2bd26d3be674bd028962569d1f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805414"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>tipo de enumeración mdmAppConfigKeyType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27307122"
 
 Tipos de clave de configuración de aplicación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |stringType|0|Todavía no documentado|
 |integerType|1|Todavía no documentado|

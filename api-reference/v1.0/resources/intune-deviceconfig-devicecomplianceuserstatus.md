@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceComplianceUserStatus
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: caed46772cd17a08b7da68a696914153cb47878a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3ea0e4fc1cc736457992be3ed00de7e6a8ccc51
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839882"
 ---
 # <a name="devicecomplianceuserstatus-resource-type"></a>Tipo de recurso deviceComplianceUserStatus
 
@@ -26,12 +27,12 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |userDisplayName|String|Nombre de usuario de DevicePolicyStatus.|
 |devicesCount|Int32|Número de dispositivos para dicho usuario.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|String|UserPrincipalName.|
+|userPrincipalName|Cadena|UserPrincipalName.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna
