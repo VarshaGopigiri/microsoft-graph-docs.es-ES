@@ -2,12 +2,13 @@
 title: Obtener iosGeneralDeviceConfiguration
 description: Lea las propiedades y las relaciones del objeto iosGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9acae7b6402e6a8e46001d9949a15ecb0d93d4ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec94dc1c2e50ac3881aebda5a5d05d7f6c2014bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869135"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Obtener iosGeneralDeviceConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerChecklistItem
 description: El recurso **plannerChecklistItem** representa un elemento de la lista de comprobación de una tarea. La lista de comprobación en una tarea está representado por el objeto de comprobación.
-ms.openlocfilehash: 846c1877fb421c9070eff7c041983367a7beb29b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 116d85ecfad403409933ea485c71dd0f1ebeae9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086430"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866482"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>Tipo de recurso plannerChecklistItem
 
@@ -22,7 +23,7 @@ El recurso **plannerChecklistItem** representa un elemento de la lista de compro
 |lastModifiedBy|[identitySet](identityset.md)| Solo lectura. Id. del usuario que lo modificó por última vez.|
 |lastModifiedDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se modificó por última vez. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |orderHint|Cadena|Se usa para establecer el orden relativo de los elementos de la lista de comprobación. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
-|title|String|Título del elemento de la lista de comprobación|
+|title|Cadena|Título del elemento de la lista de comprobación|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.

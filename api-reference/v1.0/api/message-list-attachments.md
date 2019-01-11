@@ -2,12 +2,13 @@
 title: List attachments
 description: Recupera una lista de objetos attachment asociados a un mensaje.
 author: angelgolfer-ms
-ms.openlocfilehash: 740616e0f2da0a941f6dc49944d81168dcc7d2c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b4f86871e31dcaaf9303d0cbd19e7d178137a9a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867028"
 ---
 # <a name="list-attachments"></a>List attachments
 
@@ -40,7 +41,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

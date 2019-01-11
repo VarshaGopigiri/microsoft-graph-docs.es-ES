@@ -2,12 +2,13 @@
 title: Crear networkIPv4ConfigurationManagementCondition
 description: Crear un nuevo objeto networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
-ms.openlocfilehash: 60d79584af38ca709d597b4919a7e6dc4171ff73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06ec52303deb9bb000441dd0c4c47707a6e41863
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824762"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>Crear networkIPv4ConfigurationManagementCondition
 
@@ -39,7 +40,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto networkIPv4ConfigurationManagementCondition.
@@ -48,17 +49,17 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la condición de administración. Valor asignado al crear generada por el sistema. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|String|Nombre único para la condición de administración. Se usa en expresiones de condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|String|El nombre definido de administración de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|descripción|String|El administrador define la descripción de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|Cadena|Identificador único de la condición de administración. Valor asignado al crear generada por el sistema. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|Cadena|Nombre único para la condición de administración. Se usa en expresiones de condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|Cadena|El nombre definido de administración de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|descripción|Cadena|El administrador define la descripción de la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|La hora en que se creó la condición de administración. Servicio generado al lado. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|La hora en que se modificó por última vez la condición de administración. Se actualizó el lado de servicio. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|eTag|String|ETag de la condición de administración. Se actualizó el lado de servicio. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|eTag|Cadena|ETag de la condición de administración. Se actualizó el lado de servicio. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|colección de [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Las plataformas aplicables para esta condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md). Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` y `androidWorkProfile`.|
-|ipV4Prefix|String|La subred IPv4 a estar conectado a. Por ejemplo, 10.0.0.0/8|
-|ipV4Gateway|String|La dirección IPv4 de la puerta de enlace. Por ejemplo, 10.0.0.0|
-|ipV4DHCPServer|String|La dirección IPv4 del servidor DHCP para el adaptador.|
+|ipV4Prefix|Cadena|La subred IPv4 a estar conectado a. Por ejemplo, 10.0.0.0/8|
+|ipV4Gateway|Cadena|La dirección IPv4 de la puerta de enlace. Por ejemplo, 10.0.0.0|
+|ipV4DHCPServer|Cadena|La dirección IPv4 del servidor DHCP para el adaptador.|
 |ipV4DNSServerList|Colección String|Los servidores DNS de IPv4 configurados para el adaptador.|
 |dnsSuffixList|Colección String|Sufijos DNS válidos para la red actual. Por ejemplo, seattle.contoso.com|
 

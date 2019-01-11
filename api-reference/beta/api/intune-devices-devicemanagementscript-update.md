@@ -2,12 +2,13 @@
 title: Actualizar deviceManagementScript
 description: Actualizar las propiedades de un objeto deviceManagementScript.
 author: tfitzmac
-ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaca6501f0a1c0fd206583af4e976b9afe9ac2cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325315"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869296"
 ---
 # <a name="update-devicemanagementscript"></a>Actualizar deviceManagementScript
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
@@ -47,16 +48,16 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para la secuencia de comandos de administración de dispositivos.|
-|displayName|String|Nombre de la secuencia de comandos de administración de dispositivos.|
-|descripción|String|Descripción opcional de la secuencia de comandos de administración de dispositivos.|
+|id|Cadena|Identificador único para la secuencia de comandos de administración de dispositivos.|
+|displayName|Cadena|Nombre de la secuencia de comandos de administración de dispositivos.|
+|descripción|Cadena|Descripción opcional de la secuencia de comandos de administración de dispositivos.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|El intervalo para ejecutar la secuencia de comandos. Si no ha definido la secuencia de comandos se ejecutará una vez|
 |scriptContent|Binario|El contenido de la secuencia de comandos.|
 |createdDateTime|DateTimeOffset|La fecha y hora de que creación de la secuencia de comandos de administración de dispositivos.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de que última modificación de la secuencia de comandos de administración de dispositivos.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica el tipo de la secuencia de comandos de administración de dispositivos se ejecuta en el contexto de ejecución. Los valores posibles son: `system` y `user`.|
-|enforceSignatureCheck|Boolean|Indicar si se debe comprobar la firma de la secuencia de comandos.|
-|fileName|String|Nombre de archivo de secuencia de comandos.|
+|enforceSignatureCheck|Booleano|Indicar si se debe comprobar la firma de la secuencia de comandos.|
+|fileName|Cadena|Nombre de archivo de secuencia de comandos.|
 
 
 

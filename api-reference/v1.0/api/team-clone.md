@@ -2,12 +2,13 @@
 title: Clonación de un equipo
 description: Crear una copia de un equipo. Esta operación también crea una copia del grupo correspondiente.
 author: nkramer
-ms.openlocfilehash: 21671ccbe440a57f6d745f9587c09b4432e25c35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9239e58f28e4214ee82acad3d2c893f52fafefde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805757"
 ---
 # <a name="clone-a-team"></a>Clonación de un equipo
 
@@ -51,12 +52,12 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |classification|Cadena (opcional)|Describe una clasificación para el grupo (por ejemplo, el impacto de negocio bajo, medio o alto). Si no se especifica la clasificación, la clasificación se copiarán desde el equipo original o grupo.|
 |descripción|Cadena (opcional)|Una descripción opcional del grupo. Si no se especifica esta propiedad, se va a dejar en blanco.|
-|displayName|String|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
-|mailNickname|String|El alias de correo para el grupo, único en la organización. Esta propiedad debe especificarse cuando se crea un grupo. Es compatible con $filter. Si no se especifica esta propiedad, se calculará de la propiedad displayName. Problema conocido: esta propiedad se omite actualmente.|
+|displayName|Cadena|El nombre para mostrar del grupo. Esta propiedad es necesaria cuando se crea un grupo y no se puede borrar durante las actualizaciones. Es compatible con $filter y $orderby.|
+|mailNickname|Cadena|El alias de correo para el grupo, único en la organización. Esta propiedad debe especificarse cuando se crea un grupo. Es compatible con $filter. Si no se especifica esta propiedad, se calculará de la propiedad displayName. Problema conocido: esta propiedad se omite actualmente.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Una lista separados por comas de los elementos que se debe clonar. Los elementos legales son "aplicaciones, las fichas, configuración, canales, los miembros".|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (opcional)| Especifica la visibilidad del grupo. Los valores posibles son: **privada**, **pública**. Si no se especifica la visibilidad, la visibilidad se copiarán desde el equipo original o grupo. Si el equipo que se está clonando es un equipo de **educationClass** , se omite el parámetro visibilidad y visibilidad del nuevo grupo se establecerá en HiddenMembership.|
 

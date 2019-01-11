@@ -2,12 +2,13 @@
 title: Crear deviceComplianceScheduledActionForRule
 description: Cree un objeto deviceComplianceScheduledActionForRule.
 author: tfitzmac
-ms.openlocfilehash: adc4e488d387c5f5087ded96e585a882ee424707
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa9d0cf3c403d243c6cc9a21f3737f68bdb60c7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345832"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869149"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Crear deviceComplianceScheduledActionForRule
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceComplianceScheduledActionForRule.
@@ -47,7 +48,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |ruleName|String|Nombre de la regla a la que se aplica esta acción programada.|
 
 

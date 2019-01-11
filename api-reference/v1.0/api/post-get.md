@@ -2,12 +2,13 @@
 title: Obtener publicación
 description: 'Obtenga las propiedades y relaciones de una publicación de un hilo determinado. Puede especificar tanto el primario '
 author: dkershaw10
-ms.openlocfilehash: f21f2a55e3bf456030131a2b14a6d9db5739a43f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9644b4be1ac1a64274703aecddca257e5559759e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825329"
 ---
 # <a name="get-post"></a>Obtener publicación
 

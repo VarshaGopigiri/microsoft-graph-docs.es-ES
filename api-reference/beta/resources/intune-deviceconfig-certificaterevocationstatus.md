@@ -2,12 +2,13 @@
 title: tipo de enumeración certificateRevocationStatus
 description: Estado de revocación del certificado.
 author: tfitzmac
-ms.openlocfilehash: d41845ba882136c15d944c8a7f91083e6fa47cdb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d24d515f992ed396c3530595240a107852d83e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868309"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>tipo de enumeración certificateRevocationStatus
 
@@ -17,9 +18,9 @@ ms.locfileid: "27358229"
 
 Estado de revocación del certificado.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|No se ha revocado.|
+|none|0|No se ha revocado.|
 |pendiente|1|Revocación pendientes.|
 |emitido|2|Comando de revocación emitido.|
 |failed|3|No se pudo revocación.|

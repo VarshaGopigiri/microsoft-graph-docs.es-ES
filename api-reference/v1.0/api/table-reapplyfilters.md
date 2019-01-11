@@ -2,12 +2,13 @@
 title: 'Table: reapplyFilters'
 description: Vuelve a aplicar todos los filtros aplicados actualmente en la tabla.
 author: lumine2008
-ms.openlocfilehash: 9a98d07734b174f0f8d3180c6aa0cbd5437da63d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ffeb1881cecc932e9c8c7bb70672a6f03fefc534
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808165"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 

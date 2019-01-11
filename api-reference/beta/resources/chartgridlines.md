@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartGridlines
 description: Representa las líneas de cuadrícula principales o secundarias del eje de un gráfico.
 author: lumine2008
-ms.openlocfilehash: 263bbefad519fef8b12080cb7b2bfd74ce1a331f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7747564b2f72287ef6ec2c6cc1f912695f58218e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807829"
 ---
 # <a name="chartgridlines-resource-type"></a>Tipo de recurso ChartGridlines
 
@@ -21,7 +22,7 @@ Representa las líneas de división principales o secundarias del eje de un grá
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get ChartGridlines](../api/chartgridlines-get.md) | [ChartGridlines](chartgridlines.md) |Lee las propiedades y relaciones del objeto chartGridlines.|
-|[Actualizar](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |Actualiza el objeto ChartGridlines. |
+|[Update](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |Actualiza el objeto ChartGridlines. |
 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|

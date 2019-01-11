@@ -2,12 +2,13 @@
 title: 'mailFolder: move'
 description: Mueve un objeto mailfolder y su contenido a otro objeto mailfolder.
 author: angelgolfer-ms
-ms.openlocfilehash: d818bacf0caa58bb852e0ff28b6351be63119cf6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73783dfb61d074396248701a1c24d563cacb2426
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805631"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -36,14 +37,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | Encabezado | Valor |
 |:-------|:------|
-| Autorización | `Bearer {token}`. Obligatorio. |
-| Content-Type | `application/json`. Obligatorio. |
+| Autorización | `Bearer {token}`. Necesario. |
+| Content-Type | `application/json`. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro | Type | Descripción |
+| Parámetro | Tipo | Descripción |
 |:----------|:-----|:------------|
 |destinationId|String|El identificador de la carpeta, o un nombre de carpeta conocida. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 

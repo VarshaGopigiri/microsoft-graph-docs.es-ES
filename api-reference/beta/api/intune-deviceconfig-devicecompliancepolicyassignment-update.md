@@ -2,12 +2,13 @@
 title: Actualizar deviceCompliancePolicyAssignment
 description: Actualice las propiedades de un objeto deviceCompliancePolicyAssignment.
 author: tfitzmac
-ms.openlocfilehash: 3c968232fdcc629376e5d7cc22758dd626d7f2a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b86a3e338574aa97f463a9c7a52b41a5fea1e4b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327240"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868799"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>Actualizar deviceCompliancePolicyAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assi
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).
@@ -47,7 +48,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de la asignación de directivas de cumplimiento|
 
 

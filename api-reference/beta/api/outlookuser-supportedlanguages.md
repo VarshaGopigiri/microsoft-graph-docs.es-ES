@@ -1,12 +1,13 @@
 ---
 title: 'outlookUser: supportedLanguages'
 description: Obtener una lista de idiomas y configuraciones regionales compatibles con el usuario, según la configuración del servidor de buzones del usuario.
-ms.openlocfilehash: ac1b9693121f3ba3f180b53532bb6a6c917e2108
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8d3a830a34d4b6d59bae1a601562ab6d70f7a39f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083373"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868582"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 
@@ -35,7 +36,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

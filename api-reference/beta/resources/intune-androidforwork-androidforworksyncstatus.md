@@ -2,12 +2,13 @@
 title: tipo de enumeración androidForWorkSyncStatus
 description: Estado de la sincronización del inquilino con la API de Google en EMM
 author: tfitzmac
-ms.openlocfilehash: 937abe8d814144f1bda65f87f48ac363ad71d76e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0149c76c3f06a0c8cad754431b852d637ba185d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807920"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>tipo de enumeración androidForWorkSyncStatus
 
@@ -24,7 +25,7 @@ Estado de la sincronización del inquilino con la API de Google en EMM
 |androidForWorkApiError|2|Todavía no documentado|
 |managementServiceError|3|Todavía no documentado|
 |unknownError|4|Todavía no documentado|
-|ninguno|5|Todavía no documentado|
+|none|5|Todavía no documentado|
 
 
 

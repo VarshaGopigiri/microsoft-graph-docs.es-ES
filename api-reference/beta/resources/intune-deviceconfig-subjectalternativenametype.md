@@ -2,12 +2,13 @@
 title: tipo de enumeración subjectAlternativeNameType
 description: Opciones de nombre alternativo del sujeto.
 author: tfitzmac
-ms.openlocfilehash: 2c1249c90998a24eca63da7d80e580ac497aa9b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 914c4d577cc478e42e7982b9480bc8e43b8d88de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869548"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>tipo de enumeración subjectAlternativeNameType
 
@@ -17,9 +18,9 @@ ms.locfileid: "27326659"
 
 Opciones de nombre alternativo del sujeto.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Ningún nombre alternativo del sujeto.|
+|none|0|Ningún nombre alternativo del sujeto.|
 |emailAddress|1|Dirección de correo electrónico.|
 |userPrincipalName|2|Nombre principal de usuario (UPN).|
 |customAzureADAttribute|4|Atributo de AD de Azure personalizado.|

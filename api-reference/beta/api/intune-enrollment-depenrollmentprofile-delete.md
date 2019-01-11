@@ -2,12 +2,13 @@
 title: Eliminar depEnrollmentProfile
 description: Elimina un depEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: eabcb0ced33c8267d0a09664984f75cb88c91884
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43e98cad5e73c01b3d062dfebb869261bc1c9afa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868484"
 ---
 # <a name="delete-depenrollmentprofile"></a>Eliminar depEnrollmentProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollme
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,12 +1,13 @@
 ---
 title: 'message: reply'
 description: 'Responder al remitente de un mensaje, agregar un comentario o modificar las propiedades actualizables todo en una **respuesta** de llamada. '
-ms.openlocfilehash: 93130e8a877b9a7bdc553646037f583fd8da84fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3844969c8c4bbec9026aee8477db968d5a3b0e52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827464"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

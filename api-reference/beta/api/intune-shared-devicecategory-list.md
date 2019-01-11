@@ -2,12 +2,13 @@
 title: Enumerar deviceCategories
 description: Enumere las propiedades y las relaciones de los objetos deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: c5cc37f375a56d1e1ca005841af83936760deb69
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9f3b484a3a518028e826f34092e7295a8a9d7d6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327163"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868533"
 ---
 # <a name="list-devicecategories"></a>Enumerar deviceCategories
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceCategories
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
