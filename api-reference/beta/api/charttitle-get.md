@@ -2,50 +2,51 @@
 title: Get ChartTitle
 description: Recuperar las propiedades y relaciones del objeto charttitle.
 author: lumine2008
-ms.openlocfilehash: 435878fe20d2a9e1c73837169904bf113bf925a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 85cddea6b2fe81357b67296b70a4987eb8d8273c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843417"
 ---
-# <a name="get-charttitle"></a><span data-ttu-id="afcee-103">Get ChartTitle</span><span class="sxs-lookup"><span data-stu-id="afcee-103">Get ChartTitle</span></span>
+# <a name="get-charttitle"></a><span data-ttu-id="3730e-103">Get ChartTitle</span><span class="sxs-lookup"><span data-stu-id="3730e-103">Get ChartTitle</span></span>
 
-> <span data-ttu-id="afcee-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="afcee-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="afcee-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="afcee-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3730e-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="3730e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3730e-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="3730e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="afcee-106">Recuperar las propiedades y relaciones del objeto charttitle.</span><span class="sxs-lookup"><span data-stu-id="afcee-106">Retrieve the properties and relationships of charttitle object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="afcee-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="afcee-107">Permissions</span></span>
-<span data-ttu-id="afcee-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="afcee-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3730e-106">Recuperar las propiedades y relaciones del objeto charttitle.</span><span class="sxs-lookup"><span data-stu-id="3730e-106">Retrieve the properties and relationships of charttitle object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3730e-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="3730e-107">Permissions</span></span>
+<span data-ttu-id="3730e-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3730e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="afcee-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="afcee-110">Permission type</span></span>      | <span data-ttu-id="afcee-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="afcee-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3730e-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="3730e-110">Permission type</span></span>      | <span data-ttu-id="3730e-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="3730e-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="afcee-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="afcee-112">Delegated (work or school account)</span></span> | <span data-ttu-id="afcee-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="afcee-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="afcee-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="afcee-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="afcee-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="afcee-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="afcee-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="afcee-116">Application</span></span> | <span data-ttu-id="afcee-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="afcee-117">Not supported.</span></span> |
+|<span data-ttu-id="3730e-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="3730e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3730e-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3730e-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3730e-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3730e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3730e-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3730e-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="3730e-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="3730e-116">Application</span></span> | <span data-ttu-id="3730e-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="3730e-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="afcee-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="afcee-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3730e-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="3730e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/charts(<name>)/title
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="afcee-119">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="afcee-119">Optional query parameters</span></span>
-<span data-ttu-id="afcee-120">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="afcee-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3730e-119">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="3730e-119">Optional query parameters</span></span>
+<span data-ttu-id="3730e-120">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3730e-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="afcee-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="afcee-121">Request headers</span></span>
-| <span data-ttu-id="afcee-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="afcee-122">Name</span></span>      |<span data-ttu-id="afcee-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="afcee-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3730e-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="3730e-121">Request headers</span></span>
+| <span data-ttu-id="3730e-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="3730e-122">Name</span></span>      |<span data-ttu-id="3730e-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="3730e-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="afcee-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="afcee-124">Authorization</span></span>  | <span data-ttu-id="afcee-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="afcee-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="afcee-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="afcee-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="afcee-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="afcee-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="3730e-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="3730e-124">Authorization</span></span>  | <span data-ttu-id="3730e-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="3730e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3730e-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="3730e-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="3730e-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="3730e-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="afcee-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="afcee-130">Request body</span></span>
-<span data-ttu-id="afcee-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="afcee-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3730e-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="3730e-130">Request body</span></span>
+<span data-ttu-id="3730e-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="3730e-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="afcee-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="afcee-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3730e-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3730e-132">Response</span></span>
 
-<span data-ttu-id="afcee-133">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [ChartTitle](../resources/charttitle.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="afcee-133">If successful, this method returns a `200 OK` response code and [ChartTitle](../resources/charttitle.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="afcee-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="afcee-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="afcee-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="afcee-135">Request</span></span>
-<span data-ttu-id="afcee-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="afcee-136">Here is an example of the request.</span></span>
+<span data-ttu-id="3730e-133">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [ChartTitle](../resources/charttitle.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3730e-133">If successful, this method returns a `200 OK` response code and [ChartTitle](../resources/charttitle.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3730e-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3730e-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3730e-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="3730e-135">Request</span></span>
+<span data-ttu-id="3730e-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="3730e-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_charttitle"
@@ -53,8 +54,8 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/title
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/title
 ```
-##### <a name="response"></a><span data-ttu-id="afcee-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="afcee-137">Response</span></span>
-<span data-ttu-id="afcee-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="afcee-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3730e-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3730e-137">Response</span></span>
+<span data-ttu-id="3730e-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="3730e-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
