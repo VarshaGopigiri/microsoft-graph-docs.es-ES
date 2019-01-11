@@ -2,30 +2,31 @@
 title: Lista windowsPhoneEASEmailProfileConfigurations
 description: Propiedades de la lista y relaciones de los objetos windowsPhoneEASEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 299752c983a5fc19b39e3d9b33f3786a201dfcb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cff80f2c1e22cf8c84b872e9d006251225486c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807570"
 ---
-# <a name="list-windowsphoneeasemailprofileconfigurations"></a><span data-ttu-id="6cf98-103">Lista windowsPhoneEASEmailProfileConfigurations</span><span class="sxs-lookup"><span data-stu-id="6cf98-103">List windowsPhoneEASEmailProfileConfigurations</span></span>
+# <a name="list-windowsphoneeasemailprofileconfigurations"></a><span data-ttu-id="f8cb0-103">Lista windowsPhoneEASEmailProfileConfigurations</span><span class="sxs-lookup"><span data-stu-id="f8cb0-103">List windowsPhoneEASEmailProfileConfigurations</span></span>
 
-> <span data-ttu-id="6cf98-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="6cf98-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6cf98-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="6cf98-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f8cb0-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f8cb0-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="6cf98-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="6cf98-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f8cb0-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6cf98-107">Propiedades de la lista y relaciones de los objetos [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="6cf98-107">List properties and relationships of the [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6cf98-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="6cf98-108">Prerequisites</span></span>
-<span data-ttu-id="6cf98-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6cf98-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f8cb0-107">Propiedades de la lista y relaciones de los objetos [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="f8cb0-107">List properties and relationships of the [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f8cb0-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="f8cb0-108">Prerequisites</span></span>
+<span data-ttu-id="f8cb0-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f8cb0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6cf98-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6cf98-111">Permission type</span></span>|<span data-ttu-id="6cf98-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6cf98-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f8cb0-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="f8cb0-111">Permission type</span></span>|<span data-ttu-id="f8cb0-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="f8cb0-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6cf98-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6cf98-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6cf98-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="6cf98-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="6cf98-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6cf98-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6cf98-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6cf98-116">Not supported.</span></span>|
-|<span data-ttu-id="6cf98-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6cf98-117">Application</span></span>|<span data-ttu-id="6cf98-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6cf98-118">Not supported.</span></span>|
+|<span data-ttu-id="f8cb0-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="f8cb0-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f8cb0-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f8cb0-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="f8cb0-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f8cb0-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f8cb0-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-116">Not supported.</span></span>|
+|<span data-ttu-id="f8cb0-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="f8cb0-117">Application</span></span>|<span data-ttu-id="f8cb0-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6cf98-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6cf98-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f8cb0-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="f8cb0-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,27 +36,27 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6cf98-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6cf98-120">Request headers</span></span>
-|<span data-ttu-id="6cf98-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="6cf98-121">Header</span></span>|<span data-ttu-id="6cf98-122">Valor</span><span class="sxs-lookup"><span data-stu-id="6cf98-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f8cb0-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="f8cb0-120">Request headers</span></span>
+|<span data-ttu-id="f8cb0-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="f8cb0-121">Header</span></span>|<span data-ttu-id="f8cb0-122">Valor</span><span class="sxs-lookup"><span data-stu-id="f8cb0-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6cf98-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="6cf98-123">Authorization</span></span>|<span data-ttu-id="6cf98-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="6cf98-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6cf98-125">Aceptar</span><span class="sxs-lookup"><span data-stu-id="6cf98-125">Accept</span></span>|<span data-ttu-id="6cf98-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6cf98-126">application/json</span></span>|
+|<span data-ttu-id="f8cb0-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="f8cb0-123">Authorization</span></span>|<span data-ttu-id="f8cb0-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f8cb0-125">Accept</span><span class="sxs-lookup"><span data-stu-id="f8cb0-125">Accept</span></span>|<span data-ttu-id="f8cb0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f8cb0-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6cf98-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6cf98-127">Request body</span></span>
-<span data-ttu-id="6cf98-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="6cf98-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f8cb0-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="f8cb0-127">Request body</span></span>
+<span data-ttu-id="f8cb0-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6cf98-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6cf98-129">Response</span></span>
-<span data-ttu-id="6cf98-130">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y una colección de objetos de [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6cf98-130">If successful, this method returns a `200 OK` response code and a collection of [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f8cb0-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f8cb0-129">Response</span></span>
+<span data-ttu-id="f8cb0-130">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y una colección de objetos de [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-130">If successful, this method returns a `200 OK` response code and a collection of [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6cf98-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6cf98-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6cf98-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6cf98-132">Request</span></span>
-<span data-ttu-id="6cf98-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6cf98-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f8cb0-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="f8cb0-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f8cb0-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="f8cb0-132">Request</span></span>
+<span data-ttu-id="f8cb0-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="6cf98-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6cf98-134">Response</span></span>
-<span data-ttu-id="6cf98-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="6cf98-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f8cb0-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="f8cb0-134">Response</span></span>
+<span data-ttu-id="f8cb0-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="f8cb0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

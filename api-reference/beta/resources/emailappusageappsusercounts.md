@@ -1,34 +1,35 @@
 ---
 title: tipo de recurso emailAppUsageAppsUserCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: e588a671129c6aa131bce781e3a6db0d44128f6d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: efbc4ce75293237813e9a835cb45ff0bf0ec4b26
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807822"
 ---
-# <a name="emailappusageappsusercounts-resource-type"></a><span data-ttu-id="e4708-103">tipo de recurso emailAppUsageAppsUserCounts</span><span class="sxs-lookup"><span data-stu-id="e4708-103">emailAppUsageAppsUserCounts resource type</span></span>
+# <a name="emailappusageappsusercounts-resource-type"></a><span data-ttu-id="fb2bf-103">tipo de recurso emailAppUsageAppsUserCounts</span><span class="sxs-lookup"><span data-stu-id="fb2bf-103">emailAppUsageAppsUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e4708-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e4708-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fb2bf-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="fb2bf-104">Properties</span></span>
 
-| <span data-ttu-id="e4708-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="e4708-105">Property</span></span>          | <span data-ttu-id="e4708-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="e4708-106">Type</span></span>   |
+| <span data-ttu-id="fb2bf-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="fb2bf-105">Property</span></span>          | <span data-ttu-id="fb2bf-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="fb2bf-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="e4708-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="e4708-107">reportRefreshDate</span></span> | <span data-ttu-id="e4708-108">Fecha</span><span class="sxs-lookup"><span data-stu-id="e4708-108">Date</span></span>   |
-| <span data-ttu-id="e4708-109">mailForMac</span><span class="sxs-lookup"><span data-stu-id="e4708-109">mailForMac</span></span>        | <span data-ttu-id="e4708-110">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-110">Int64</span></span>  |
-| <span data-ttu-id="e4708-111">outlookForMac</span><span class="sxs-lookup"><span data-stu-id="e4708-111">outlookForMac</span></span>     | <span data-ttu-id="e4708-112">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-112">Int64</span></span>  |
-| <span data-ttu-id="e4708-113">outlookForWindows</span><span class="sxs-lookup"><span data-stu-id="e4708-113">outlookForWindows</span></span> | <span data-ttu-id="e4708-114">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-114">Int64</span></span>  |
-| <span data-ttu-id="e4708-115">outlookForMobile</span><span class="sxs-lookup"><span data-stu-id="e4708-115">outlookForMobile</span></span>  | <span data-ttu-id="e4708-116">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-116">Int64</span></span>  |
-| <span data-ttu-id="e4708-117">otherForMobile</span><span class="sxs-lookup"><span data-stu-id="e4708-117">otherForMobile</span></span>    | <span data-ttu-id="e4708-118">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-118">Int64</span></span>  |
-| <span data-ttu-id="e4708-119">outlookForWeb</span><span class="sxs-lookup"><span data-stu-id="e4708-119">outlookForWeb</span></span>     | <span data-ttu-id="e4708-120">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-120">Int64</span></span>  |
-| <span data-ttu-id="e4708-121">pop3App</span><span class="sxs-lookup"><span data-stu-id="e4708-121">pop3App</span></span>           | <span data-ttu-id="e4708-122">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-122">Int64</span></span>  |
-| <span data-ttu-id="e4708-123">imap4App</span><span class="sxs-lookup"><span data-stu-id="e4708-123">imap4App</span></span>          | <span data-ttu-id="e4708-124">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-124">Int64</span></span>  |
-| <span data-ttu-id="e4708-125">smtpApp</span><span class="sxs-lookup"><span data-stu-id="e4708-125">smtpApp</span></span>           | <span data-ttu-id="e4708-126">Int64</span><span class="sxs-lookup"><span data-stu-id="e4708-126">Int64</span></span>  |
-| <span data-ttu-id="e4708-127">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="e4708-127">reportPeriod</span></span>      | <span data-ttu-id="e4708-128">String</span><span class="sxs-lookup"><span data-stu-id="e4708-128">String</span></span> |
+| <span data-ttu-id="fb2bf-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="fb2bf-107">reportRefreshDate</span></span> | <span data-ttu-id="fb2bf-108">Fecha</span><span class="sxs-lookup"><span data-stu-id="fb2bf-108">Date</span></span>   |
+| <span data-ttu-id="fb2bf-109">mailForMac</span><span class="sxs-lookup"><span data-stu-id="fb2bf-109">mailForMac</span></span>        | <span data-ttu-id="fb2bf-110">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-110">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-111">outlookForMac</span><span class="sxs-lookup"><span data-stu-id="fb2bf-111">outlookForMac</span></span>     | <span data-ttu-id="fb2bf-112">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-112">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-113">outlookForWindows</span><span class="sxs-lookup"><span data-stu-id="fb2bf-113">outlookForWindows</span></span> | <span data-ttu-id="fb2bf-114">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-114">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-115">outlookForMobile</span><span class="sxs-lookup"><span data-stu-id="fb2bf-115">outlookForMobile</span></span>  | <span data-ttu-id="fb2bf-116">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-116">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-117">otherForMobile</span><span class="sxs-lookup"><span data-stu-id="fb2bf-117">otherForMobile</span></span>    | <span data-ttu-id="fb2bf-118">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-118">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-119">outlookForWeb</span><span class="sxs-lookup"><span data-stu-id="fb2bf-119">outlookForWeb</span></span>     | <span data-ttu-id="fb2bf-120">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-120">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-121">pop3App</span><span class="sxs-lookup"><span data-stu-id="fb2bf-121">pop3App</span></span>           | <span data-ttu-id="fb2bf-122">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-122">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-123">imap4App</span><span class="sxs-lookup"><span data-stu-id="fb2bf-123">imap4App</span></span>          | <span data-ttu-id="fb2bf-124">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-124">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-125">smtpApp</span><span class="sxs-lookup"><span data-stu-id="fb2bf-125">smtpApp</span></span>           | <span data-ttu-id="fb2bf-126">Int64</span><span class="sxs-lookup"><span data-stu-id="fb2bf-126">Int64</span></span>  |
+| <span data-ttu-id="fb2bf-127">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="fb2bf-127">reportPeriod</span></span>      | <span data-ttu-id="fb2bf-128">String</span><span class="sxs-lookup"><span data-stu-id="fb2bf-128">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="e4708-129">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="e4708-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fb2bf-129">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="fb2bf-129">JSON representation</span></span>
 
-<span data-ttu-id="e4708-130">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="e4708-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fb2bf-130">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="fb2bf-130">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

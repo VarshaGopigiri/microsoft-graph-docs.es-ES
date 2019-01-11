@@ -2,29 +2,30 @@
 title: tipo de recurso managedDeviceCleanupSettings
 description: Definir la regla cuando el administrador desea que los dispositivos limpiar.
 author: tfitzmac
-ms.openlocfilehash: 84650c4d2d182fe0da30ced56786a2c0216a6358
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 755fc90b957427c4b9f8ee9007decea320141601
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304091"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808977"
 ---
-# <a name="manageddevicecleanupsettings-resource-type"></a><span data-ttu-id="1d614-103">tipo de recurso managedDeviceCleanupSettings</span><span class="sxs-lookup"><span data-stu-id="1d614-103">managedDeviceCleanupSettings resource type</span></span>
+# <a name="manageddevicecleanupsettings-resource-type"></a><span data-ttu-id="92c29-103">tipo de recurso managedDeviceCleanupSettings</span><span class="sxs-lookup"><span data-stu-id="92c29-103">managedDeviceCleanupSettings resource type</span></span>
 
-> <span data-ttu-id="1d614-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="1d614-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1d614-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="1d614-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="92c29-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="92c29-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="92c29-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="92c29-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="1d614-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="1d614-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="92c29-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="92c29-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="1d614-107">Definir la regla cuando el administrador desea que los dispositivos limpiar.</span><span class="sxs-lookup"><span data-stu-id="1d614-107">Define the rule when the admin wants the devices to be cleaned up.</span></span>
-## <a name="properties"></a><span data-ttu-id="1d614-108">Propiedades</span><span class="sxs-lookup"><span data-stu-id="1d614-108">Properties</span></span>
-|<span data-ttu-id="1d614-109">Propiedad</span><span class="sxs-lookup"><span data-stu-id="1d614-109">Property</span></span>|<span data-ttu-id="1d614-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="1d614-110">Type</span></span>|<span data-ttu-id="1d614-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="1d614-111">Description</span></span>|
+<span data-ttu-id="92c29-107">Definir la regla cuando el administrador desea que los dispositivos limpiar.</span><span class="sxs-lookup"><span data-stu-id="92c29-107">Define the rule when the admin wants the devices to be cleaned up.</span></span>
+## <a name="properties"></a><span data-ttu-id="92c29-108">Propiedades</span><span class="sxs-lookup"><span data-stu-id="92c29-108">Properties</span></span>
+|<span data-ttu-id="92c29-109">Propiedad</span><span class="sxs-lookup"><span data-stu-id="92c29-109">Property</span></span>|<span data-ttu-id="92c29-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="92c29-110">Type</span></span>|<span data-ttu-id="92c29-111">Description</span><span class="sxs-lookup"><span data-stu-id="92c29-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1d614-112">deviceInactivityBeforeRetirementInDays</span><span class="sxs-lookup"><span data-stu-id="1d614-112">deviceInactivityBeforeRetirementInDays</span></span>|<span data-ttu-id="1d614-113">String</span><span class="sxs-lookup"><span data-stu-id="1d614-113">String</span></span>|<span data-ttu-id="1d614-114">Número de días cuando el dispositivo no ha contactado Intune.</span><span class="sxs-lookup"><span data-stu-id="1d614-114">Number of days when the device has not contacted Intune.</span></span>|
+|<span data-ttu-id="92c29-112">deviceInactivityBeforeRetirementInDays</span><span class="sxs-lookup"><span data-stu-id="92c29-112">deviceInactivityBeforeRetirementInDays</span></span>|<span data-ttu-id="92c29-113">Cadena</span><span class="sxs-lookup"><span data-stu-id="92c29-113">String</span></span>|<span data-ttu-id="92c29-114">Número de días cuando el dispositivo no ha contactado Intune.</span><span class="sxs-lookup"><span data-stu-id="92c29-114">Number of days when the device has not contacted Intune.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1d614-115">Relaciones</span><span class="sxs-lookup"><span data-stu-id="1d614-115">Relationships</span></span>
-<span data-ttu-id="1d614-116">Ninguna</span><span class="sxs-lookup"><span data-stu-id="1d614-116">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="1d614-117">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="1d614-117">JSON Representation</span></span>
-<span data-ttu-id="1d614-118">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="1d614-118">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="92c29-115">Relaciones</span><span class="sxs-lookup"><span data-stu-id="92c29-115">Relationships</span></span>
+<span data-ttu-id="92c29-116">Ninguna</span><span class="sxs-lookup"><span data-stu-id="92c29-116">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="92c29-117">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="92c29-117">JSON Representation</span></span>
+<span data-ttu-id="92c29-118">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="92c29-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedDeviceCleanupSettings"
