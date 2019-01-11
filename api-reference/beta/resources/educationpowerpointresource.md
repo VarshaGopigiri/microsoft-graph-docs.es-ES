@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationPowerPointResource
 description: 'Una subclase de educationResource. Éste es un recurso de PowerPoint. Se debe cargar el archivo de PowerPoint en el directorio **fileResource** asociado con el '
-ms.openlocfilehash: a83a78449ecb7c64f62557ddfa642ab02b55c206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 763a529e97b12c93d8f10aa6855c20818c02da67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845461"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>tipo de recurso educationPowerPointResource
 
@@ -16,9 +17,9 @@ Una subclase de [educationResource](educationresource.md). Éste es un recurso d
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|fileUrl|String|Ubicación del archivo en el disco.|
+|fileUrl|Cadena|Ubicación del archivo en el disco.|
 
 ## <a name="json-representation"></a>Representación JSON
 

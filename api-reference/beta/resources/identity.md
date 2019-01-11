@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/14/2017
 title: Identidad
-ms.openlocfilehash: 66dcd979718665af650edbfc50a46ece7c2c4c06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1cd28f4c2932e4196605c408470948e5b570894
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084773"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847589"
 ---
 # <a name="identity-resource-type"></a>tipo de recurso de identidad
 
@@ -35,7 +36,7 @@ El recurso **Identity** representa una identidad de un _actor_. Por ejemplo, un 
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName         | String | El nombre para mostrar de la identidad. Tenga en cuenta que puede que no esté siempre disponible o actualizado. Por ejemplo, si un usuario cambia su nombre para mostrar, la API puede mostrar el nuevo valor en una respuesta futura, pero los elementos asociados con el usuario no estarán modificados al usar [delta](../api/driveitem-delta.md).  |
 | id                  | String | Identificador único de la identidad.                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | Identidad única del inquilino (opcional).                                                                                                                                                                                                                                                                             |
+| tenantId            | Cadena | Identidad única del inquilino (opcional).                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>Comentarios
 

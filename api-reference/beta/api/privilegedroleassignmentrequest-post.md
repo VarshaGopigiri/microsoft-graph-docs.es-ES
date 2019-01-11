@@ -1,12 +1,13 @@
 ---
 title: Crear privilegedRoleAssignmentRequest
 description: Crear un objeto privilegedroleassignmentrequest.
-ms.openlocfilehash: e262682b5a5e8bffa7fb089ae783f3bb7e67803c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f1b88415e5671e38ad557cc28200569a42a9630
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847776"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Crear privilegedRoleAssignmentRequest
 
@@ -37,12 +38,12 @@ POST /privilegedRoleAssignmentRequests
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
 
-| Propiedad     | Tipo    |  Descripción|
+| Propiedad     | Tipo    |  Description|
 |:---------------|:--------|:----------|
-|identificador de función|String|El identificador de la función. Obligatorio.|
-|type|String|Representa el tipo de la operación en la asignación de roles. El valor puede ser `AdminAdd`: administradores agregar usuarios a funciones; `UserAdd`: Los usuarios agregar las asignaciones de roles. Obligatorio.|
-|assignmentState|String|El estado de la asignación. El valor puede ser `Eligible` para asignación optan `Active` - si está asignada directamente `Active` por los administradores, o activado en una asignación optan por los usuarios. Los valores posibles son: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked` y `RequestExpired`. Obligatorio.|
-|motivo|String|Necesita la razón por la que se proporcionará para la solicitud de asignación de rol para auditoría y revise el propósito.|
+|identificador de función|Cadena|El identificador de la función. Obligatorio.|
+|type|Cadena|Representa el tipo de la operación en la asignación de roles. El valor puede ser `AdminAdd`: administradores agregar usuarios a funciones; `UserAdd`: Los usuarios agregar las asignaciones de roles. Necesario.|
+|assignmentState|Cadena|El estado de la asignación. El valor puede ser `Eligible` para asignación optan `Active` - si está asignada directamente `Active` por los administradores, o activado en una asignación optan por los usuarios. Los valores posibles son: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked` y `RequestExpired`. Necesario.|
+|motivo|Cadena|Necesita la razón por la que se proporcionará para la solicitud de asignación de rol para auditoría y revise el propósito.|
 |programación|[governanceSchedule](../resources/governanceschedule.md)|La programación de la solicitud de asignación de rol.|
 
 ## <a name="response"></a>Respuesta

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosNetworkUsageRule
 description: Las reglas de uso de red permiten a las empresas especificar cómo las aplicaciones administradas usan las redes, como las redes de datos de telefonía móvil.
-ms.openlocfilehash: 211cbc52f596bbe62647a14c84bd5fd5178fdfc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 85b01c4cca324c0c344cc837da117efa05ae0ae4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845771"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Tipo de recurso iosNetworkUsageRule
 

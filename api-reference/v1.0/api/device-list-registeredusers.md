@@ -2,12 +2,13 @@
 title: List registeredUsers
 description: Recupera una lista de usuarios que son usuarios registrados del dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 7b6f861e275ea36eb864aee5958c94055e8e8168
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58b691bbf71dde1aa6247cfa19164f8cc44b3674
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846392"
 ---
 # <a name="list-registeredusers"></a>List registeredUsers
 
@@ -33,7 +34,7 @@ GET /devices/{id}/registeredUsers
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

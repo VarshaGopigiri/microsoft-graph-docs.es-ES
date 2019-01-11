@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de API
 description: Especifica la configuración para una aplicación Web API.
-ms.openlocfilehash: b5b07ccb5a66027f9eb755754842f6e2e2ae708e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 50c21c31fec7434514408e1a214c6edf2b838c98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845213"
 ---
 # <a name="api-resource-type"></a>tipo de recurso de API
 
@@ -16,7 +17,7 @@ Especifica la configuración para una aplicación Web API.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------------|:--------|:----------|
 |requestedAccessTokenVersion|Int32| Especifica la versión de token de acceso aceptados para el recurso de API actual. Los valores posibles son 1 ó 2.  |
 |oauth2PermissionScopes|colección de [permissionScope](permissionscope.md)| La colección de los ámbitos de permiso de OAuth 2.0 que expone la web de aplicación de la API (recurso) a las aplicaciones cliente. Estos ámbitos de permisos pueden concederse a las aplicaciones cliente durante su consentimiento. |

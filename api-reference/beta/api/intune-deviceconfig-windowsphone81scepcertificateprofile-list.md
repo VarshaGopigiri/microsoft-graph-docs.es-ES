@@ -2,12 +2,13 @@
 title: Lista windowsPhone81SCEPCertificateProfiles
 description: Propiedades de la lista y relaciones de los objetos windowsPhone81SCEPCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: b2b99031363f08238e048ef1d918fa731a6217e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b842026f6ba8fab51161324c752d510d72115653
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312694"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847183"
 ---
 # <a name="list-windowsphone81scepcertificateprofiles"></a>Lista windowsPhone81SCEPCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

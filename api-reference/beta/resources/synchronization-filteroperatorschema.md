@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso filterOperatorSchema
 description: Describe un operador que se puede usar en un filtro.
-ms.openlocfilehash: 1a4e21aea2b65073a00c9797065f6788a66e2334
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0d26fb58b77369b70ab185fa8ad5214d6b6c1e71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848282"
 ---
 # <a name="filteroperatorschema-resource-type"></a>tipo de recurso filterOperatorSchema
 
@@ -16,11 +17,11 @@ Describe un operador que se puede usar en un [filtro](synchronization-filter.md)
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                   | Tipo                      | Descripción    |
+| Propiedad                   | Tipo                      | Description    |
 |:---------------------------|:--------------------------|:---------------|
-|aridad                       |String          |Aridad del operador. Los valores posibles son: `Binary` y `Unary`. El valor predeterminado es `Binary`.|
+|aridad                       |Cadena          |Aridad del operador. Los valores posibles son: `Binary` y `Unary`. El valor predeterminado es `Binary`.|
 |multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Los valores posibles son: `All` y `Any`. Se aplica sólo a los atributos de múltiples valores. `All`significa que todos los valores deben satisfacer la condición. `Any`significa que tiene al menos un valor satisfacer la condición. El valor predeterminado es `All`.|
-|name                        |String                     |Nombre del operador. |
+|name                        |Cadena                     |Nombre del operador. |
 |supportedAttributeTypes     |Colección String         |Tipos admitidos por el operador de atributo. Los valores posibles son: `Boolean`, `Binary`, `Reference`, `Integer` y `String`.|
 
 ## <a name="json-representation"></a>Representación JSON

@@ -1,12 +1,13 @@
 ---
 title: Crear inferenceClassificationOverride
 description: 'Crear un reemplazo para un remitente identificado por una dirección SMTP. Los mensajes futuros de esa dirección SMTP se clasifica de forma coherente '
-ms.openlocfilehash: f068984598ce841b2e7af52c1ed1d25c0e101d10
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 37648d699d4d54b2995af6bf847347c6537a414d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848695"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Crear inferenceClassificationOverride
 
@@ -36,7 +37,7 @@ POST /users/{id}/inferenceClassification/overrides
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsArchitecture
 description: Contiene las propiedades de la arquitectura de Windows.
 author: tfitzmac
-ms.openlocfilehash: 4b62c31083ac2952507faad6836f8d5c8a484d50
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b594179f978c772b91ef6eb50ca1f78a36fbd07a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848548"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeración windowsArchitecture
 
@@ -17,9 +18,9 @@ ms.locfileid: "27346672"
 
 Contiene las propiedades de la arquitectura de Windows.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Sin marcadores establecidos.|
+|none|0|Sin marcadores establecidos.|
 |x86|1|Si la X86 es compatible con el tipo de arquitectura de Windows.|
 |x64|2|Si la X64 es compatible con el tipo de arquitectura de Windows.|
 |ARM|4|Si no se admite el tipo de arquitectura de Windows de Arm.|

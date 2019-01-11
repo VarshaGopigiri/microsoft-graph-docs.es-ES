@@ -2,12 +2,13 @@
 title: tipo de recurso windowsKioskAzureADUser
 description: La clase que se usa para identificar una cuenta de usuario de AzureAD para la configuración de quiosco
 author: tfitzmac
-ms.openlocfilehash: e4048b4cbea592af350af20bf433ca00ac6d4980
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57b48bcdbac3f95da37704222cded29ba61cd32d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845888"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>tipo de recurso windowsKioskAzureADUser
 
@@ -20,10 +21,10 @@ La clase que se usa para identificar una cuenta de usuario de AzureAD para la co
 Hereda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|userId|String|El identificador del usuario AzureAD que se bloqueará a esta configuración de quiosco|
-|userPrincipalName|String|Las cuentas de usuario que se bloqueará a esta configuración de quiosco|
+|userId|Cadena|El identificador del usuario AzureAD que se bloqueará a esta configuración de quiosco|
+|userPrincipalName|Cadena|Las cuentas de usuario que se bloqueará a esta configuración de quiosco|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

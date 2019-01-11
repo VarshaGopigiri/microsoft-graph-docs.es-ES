@@ -2,12 +2,13 @@
 title: Obtener windows81GeneralConfiguration
 description: Lea las propiedades y las relaciones del objeto windows81GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2a7977a83cbd84326142940962c01de948beb6f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af82b508083a1bb7f90633822438129f337525f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847484"
 ---
 # <a name="get-windows81generalconfiguration"></a>Obtener windows81GeneralConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

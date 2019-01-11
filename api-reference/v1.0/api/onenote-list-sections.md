@@ -2,12 +2,13 @@
 title: Enumerar secciones
 description: Recuperar una lista de objetos de onenoteSection.
 author: Jewan-microsoft
-ms.openlocfilehash: ea81becff41f6560e7674b209d72b50666588c74
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 044f0ae49c3f69c4a7a5d4a33af1d4aeab609213
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845307"
 ---
 # <a name="list-sections"></a>Enumerar secciones
 
@@ -37,7 +38,7 @@ El criterio de ordenación predeterminado es `name asc`.
 La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades `id`, `displayName` y `self`. Los valores válidos de `expand` para las secciones son `parentNotebook` y `parentSectionGroup`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |

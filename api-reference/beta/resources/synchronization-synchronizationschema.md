@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationSchema
 description: Define los objetos que se va a ser sincronizado y cómo se sincronizarán. El esquema de sincronización contiene la mayoría de la información de configuración para un trabajo de sincronización determinado. Normalmente, va a personalizar algunas de las asignaciones de atributo, o agregar un filtro de ámbito para sincronizar solo los objetos que cumplen una condición determinada.
-ms.openlocfilehash: 13e57db5f78af2d3f0a8243d247fe5c3f3d5e0af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086463"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847323"
 ---
 # <a name="synchronizationschema-resource-type"></a>tipo de recurso synchronizationSchema
 
@@ -42,11 +43,11 @@ En las secciones siguientes se describen los componentes de alto nivel del esque
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad      | Tipo      | Descripción    |
+| Propiedad      | Tipo      | Description    |
 |:--------------|:----------|:---------------|
 |directories            |colección de [directoryDefinition](synchronization-directorydefinition.md)   |Describe los objetos que forman parte de la [synchronizationJob](synchronization-synchronizationjob.md) o [synchronizationTemplate](synchronization-synchronizationtemplate.md)y directorios. |
 |synchronizationRules   |colección de [synchronizationRule](synchronization-synchronizationrule.md)   |Una colección de reglas de sincronización configurado para el [synchronizationJob](synchronization-synchronizationjob.md) o [synchronizationTemplate](synchronization-synchronizationtemplate.md), |
-|version                |String                             |La versión del esquema, que se actualizan automáticamente con todos los cambios de esquema.|
+|version                |Cadena                             |La versión del esquema, que se actualizan automáticamente con todos los cambios de esquema.|
 
 
 ## <a name="json-representation"></a>Representación JSON

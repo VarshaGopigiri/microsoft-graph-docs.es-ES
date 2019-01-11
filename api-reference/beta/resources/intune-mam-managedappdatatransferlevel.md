@@ -2,12 +2,13 @@
 title: tipo de enumeración managedAppDataTransferLevel
 description: Datos que se pueden transferir desde y hacia estas clases de aplicaciones
 author: tfitzmac
-ms.openlocfilehash: 41e813e9ea3450a349966ec8a212fa45dd419625
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 218888cb9b122e9017e24d77df3e5a8cb93d1bfe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331917"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847785"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>tipo de enumeración managedAppDataTransferLevel
 
@@ -17,11 +18,11 @@ ms.locfileid: "27331917"
 
 Datos que se pueden transferir desde y hacia estas clases de aplicaciones
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allApps|0|Todas las aplicaciones.|
 |managedApps|1|Aplicaciones administradas.|
-|ninguno|2|No hay aplicaciones.|
+|none|2|No hay aplicaciones.|
 
 
 

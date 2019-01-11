@@ -1,12 +1,13 @@
 ---
 title: Obtener oAuth2Permissiongrant
 description: Recuperar las propiedades y relaciones del objeto oAuth2Permissiongrant.
-ms.openlocfilehash: f5df8e647c2e71df67f7ac3fad6a81e8f2383f8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bc0ae18b6fcf23f808e1bbd9ea667d24269da8cc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846063"
 ---
 # <a name="get-oauth2permissiongrant"></a>Obtener oAuth2Permissiongrant
 
@@ -37,7 +38,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

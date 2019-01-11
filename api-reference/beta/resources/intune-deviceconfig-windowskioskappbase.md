@@ -2,12 +2,13 @@
 title: tipo de recurso windowsKioskAppBase
 description: La clase base para un tipo de aplicaciones
 author: tfitzmac
-ms.openlocfilehash: 2afccff07d15fa1f2dfeff6a4ae9029494faa521
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa83243959105b09707fa28a53271d8f95c5fd1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307451"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845160"
 ---
 # <a name="windowskioskappbase-resource-type"></a>tipo de recurso windowsKioskAppBase
 
@@ -17,10 +18,10 @@ ms.locfileid: "27307451"
 
 La clase base para un tipo de aplicaciones
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|El tamaño del icono de aplicación para el diseño de inicio. Los valores posibles son: `hidden`, `small`, `medium`, `wide` y `large`.|
-|name|String|Representa el nombre descriptivo de una aplicación|
+|name|Cadena|Representa el nombre descriptivo de una aplicación|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

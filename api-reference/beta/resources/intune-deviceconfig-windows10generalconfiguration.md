@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windows10GeneralConfiguration
 description: Este tema proporciona descripciones de los métodos declarados, las propiedades y las relaciones expuestas por el recurso windows10GeneralConfiguration.
-ms.openlocfilehash: f911e243e0749e540a9bdcae115f876690ed976e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a4fa24d6ef11608d19649925debf3a4855b61e98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845510"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 
@@ -30,35 +31,35 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Programación de actualización de Windows 10 force para las aplicaciones.|
 |enableAutomaticRedeployment|Booleano|Permitir a los usuarios con derechos administrativos para eliminar todos los datos de usuario y la configuración con CTRL + Win + R en la pantalla de bloqueo de dispositivo para que pueda volver a configurar automáticamente el dispositivo y reinscrito en administración.|
-|assignedAccessSingleModeUserName|String|Esta configuración de directiva permite que para definir la cuenta de usuario que se bloqueará al único modo de quiosco de aplicación.|
-|assignedAccessSingleModeAppUserModelId|String|Esta configuración de directiva permite que para definir el identificador de modelo de usuario aplicación (AUMID) que se bloqueará al único modo de quiosco de aplicación.|
+|assignedAccessSingleModeUserName|Cadena|Esta configuración de directiva permite que para definir la cuenta de usuario que se bloqueará al único modo de quiosco de aplicación.|
+|assignedAccessSingleModeAppUserModelId|Cadena|Esta configuración de directiva permite que para definir el identificador de modelo de usuario aplicación (AUMID) que se bloqueará al único modo de quiosco de aplicación.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controla el servicio NT de cuenta de inicio de sesión Ayudante de Microsoft (wlidsvc). Los valores posibles son: `notConfigured` y `disabled`.|
 |authenticationAllowSecondaryDevice|Booleano|Permite que los dispositivos de autenticación secundario para que funcione con Windows.|
 |authenticationAllowFIDODevice|Booleano|Indica si se va a permitir la autenticación mediante BOBI dispositivo (o nohttps://fidoalliance.org/)|
 |cryptographyAllowFipsAlgorithmPolicy|Booleano|Especifique si desea permitir o no permitir la directiva de Federal Information Processing Standard (FIPS).|
 |displayAppListWithGdiDPIScalingTurnedOn|Colección String|Lista de aplicaciones heredadas que tienen GDI activado de escala de PPP.|
 |displayAppListWithGdiDPIScalingTurnedOff|Colección String|Lista de aplicaciones heredadas que tienen GDI desactivado de escala de PPP.|
-|enterpriseCloudPrintDiscoveryEndPoint|String|Punto de conexión para la detección de impresoras en la nube.|
-|enterpriseCloudPrintOAuthAuthority|String|Punto de conexión de autenticación para la adquisición de tokens de OAuth.|
-|enterpriseCloudPrintOAuthClientIdentifier|String|GUID de una aplicación cliente autorizado a recuperar los tokens de OAuth de la autoridad OAuth.|
-|enterpriseCloudPrintResourceIdentifier|String|URI del recurso de OAuth para el servicio de impresión, tal y como está configurado en el portal de Azure.|
+|enterpriseCloudPrintDiscoveryEndPoint|Cadena|Punto de conexión para la detección de impresoras en la nube.|
+|enterpriseCloudPrintOAuthAuthority|Cadena|Punto de conexión de autenticación para la adquisición de tokens de OAuth.|
+|enterpriseCloudPrintOAuthClientIdentifier|Cadena|GUID de una aplicación cliente autorizado a recuperar los tokens de OAuth de la autoridad OAuth.|
+|enterpriseCloudPrintResourceIdentifier|Cadena|URI del recurso de OAuth para el servicio de impresión, tal y como está configurado en el portal de Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Número máximo de impresoras que se deben consultar desde un punto de conexión de detección. Se trata de una configuración solo para móviles. Valores válidos de 1 a 65535|
-|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI del recurso de OAuth para la detección de impresoras, tal y como está configurado en el portal de Azure.|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|Cadena|URI del recurso de OAuth para la detección de impresoras, tal y como está configurado en el portal de Azure.|
 |messagingBlockSync|Booleano|Indica si se deben bloquear el mensaje de texto copia de seguridad y restauración y mensajería en cualquier lugar.|
 |messagingBlockMMS|Booleano|Indica si se va a bloquear o no el envío o recepción el MMS funcionalidad en el dispositivo.|
 |messagingBlockRichCommunicationServices|Booleano|Indica si se va a bloquear o no el envío o recepción del conmutador funcionalidad en el dispositivo.|
 |printerNames|Colección String|Aprovisionar automáticamente las impresoras en función de sus nombres (nombres de host de red).|
-|printerDefaultName|String|Nombre (nombre de host de red) de una impresora instalada.|
+|printerDefaultName|Cadena|Nombre (nombre de host de red) de una impresora instalada.|
 |printerBlockAddition|Booleano|Impedir la instalación de usuario de impresoras adicionales de configuración de las impresoras.|
 |searchBlockDiacritics|Booleano|Especifica si la búsqueda puede usar diacríticos.|
 |searchDisableAutoLanguageDetection|Booleano|Especifica si se va a utilizar la detección automática de idioma al crear índices de contenido y propiedades.|
@@ -73,13 +74,13 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |securityBlockAzureADJoinedDevicesAutoEncryption|Booleano|Especifique si desea permitir el cifrado de automáticas de dispositivos durante OOBE cuando el dispositivo está Azure AD Unido (sólo escritorio).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Obtiene o establece un valor que permite que el dispositivo envíe datos de diagnóstico y telemetría de uso, como Watson. Los valores posibles son: `userDefined`, `none`, `basic`, `enhanced` y `full`.|
 |oneDriveDisableFileSync|Booleano|Obtiene o establece un valor que permite que los administradores de TI impidan que las aplicaciones y características funcionen con archivos en OneDrive.|
-|systemTelemetryProxyServer|String|Obtiene o establece el nombre de dominio completo (FQDN) o la dirección IP de un servidor proxy para reenviar solicitudes de telemetría y experiencias de usuario conectado.|
+|systemTelemetryProxyServer|Cadena|Obtiene o establece el nombre de dominio completo (FQDN) o la dirección IP de un servidor proxy para reenviar solicitudes de telemetría y experiencias de usuario conectado.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controla el acceso de usuarios al área de trabajo de entrada de lápiz, desde el escritorio y desde encima de la pantalla de bloqueo. Los valores posibles son: `notConfigured`, `enabled` y `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controla el acceso de usuarios al área de trabajo de entrada de lápiz, desde el escritorio y desde encima de la pantalla de bloqueo. Los valores posibles son: `notConfigured`, `blocked` y `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Booleano|Especifique si desea mostrar sugerencias de aplicación recomendada en el área de trabajo de entrada de lápiz.|
 |smartScreenEnableAppInstallControl|Booleano|Permite que los administradores de TI controlen si los usuarios pueden instalar aplicaciones desde lugares que no sean la Tienda.|
-|personalizationDesktopImageUrl|String|Dirección URL http o https a una imagen jpg, jpeg o png que debe descargarse y usarse como la imagen de escritorio, o dirección URL de archivo a una imagen local en el sistema de archivos que debe usarse como la imagen de escritorio.|
-|personalizationLockScreenImageUrl|String|Dirección URL http o https a una imagen jpg, jpeg o png que debe descargarse y usarse como la imagen de pantalla de bloqueo, o dirección URL de archivo a una imagen local en el sistema de archivos que debe usarse como la imagen de pantalla de bloqueo.|
+|personalizationDesktopImageUrl|Cadena|Dirección URL http o https a una imagen jpg, jpeg o png que debe descargarse y usarse como la imagen de escritorio, o dirección URL de archivo a una imagen local en el sistema de archivos que debe usarse como la imagen de escritorio.|
+|personalizationLockScreenImageUrl|Cadena|Dirección URL http o https a una imagen jpg, jpeg o png que debe descargarse y usarse como la imagen de pantalla de bloqueo, o dirección URL de archivo a una imagen local en el sistema de archivos que debe usarse como la imagen de pantalla de bloqueo.|
 |bluetoothAllowedServices|Colección String|Especificar una lista de servicios y perfiles Bluetooth permitidos en cadenas de formato hexadecimal.|
 |bluetoothBlockAdvertising|Booleano|Indica si se va a impedir que el usuario utilice anuncios de Bluetooth.|
 |bluetoothBlockDiscoverableMode|Booleano|Indica si se va a impedir que el usuario utilice el modo visible de Bluetooth.|
@@ -100,7 +101,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |edgeDisableFirstRunPage|Booleano|Bloquear la página web de Microsoft que se abre la primera vez que se usa Microsoft Edge. Esta directiva permite que las empresas (por ejemplo, las inscritas en configuraciones de cero emisiones) bloqueen esta página.|
 |edgeBlockLiveTileDataCollection|Booleano|Bloquear la recopilación de información por parte de Microsoft para la creación de iconos dinámicos cuando los usuarios anclan un sitio a la pantalla Inicio desde Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Booleano|Habilitar la sincronización de favoritos entre Internet Explorer y Microsoft Edge. Las adiciones, los cambios de orden, las eliminaciones y las modificaciones de favoritos se comparten entre los dos exploradores.|
-|edgeFavoritesListLocation|String|La ubicación de la lista de favoritos para aprovisionar. Puede ser un archivo local, la red local o la ubicación http.|
+|edgeFavoritesListLocation|Cadena|La ubicación de la lista de favoritos para aprovisionar. Puede ser un archivo local, la red local o la ubicación http.|
 |edgeBlockEditFavorites|Booleano|Indica si se deben bloquear al usuario de hacer cambios en los favoritos.|
 |cellularBlockDataWhenRoaming|Booleano|Indica si se va a impedir que el usuario utilice los datos móviles en itinerancia.|
 |cellularBlockVpn|Booleano|Indica si se va a impedir que el usuario utilice VPN en redes de telefonía móvil.|
@@ -210,7 +211,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|Especifica el tipo de luz de foco. Los valores posibles son: `notConfigured`, `disabled` y `enabled`.|
 |networkProxyApplySettingsDeviceWide|Booleano|Si se establece, la configuración de proxy se aplicará a todos los procesos y cuentas en el dispositivo. En caso contrario, se aplicará a la cuenta de usuario que está inscrita en MDM.|
 |networkProxyDisableAutoDetect|Booleano|Deshabilitar la detección automática de la configuración. Si está habilitada, el sistema intentará encontrar la ruta de acceso a un script de configuración automática de proxy (PAC).|
-|networkProxyAutomaticConfigurationUrl|String|Dirección al script de configuración automática de proxy (PAC) que quiera usar.|
+|networkProxyAutomaticConfigurationUrl|Cadena|Dirección al script de configuración automática de proxy (PAC) que quiera usar.|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Especifica la configuración manual del servidor proxy.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Booleano|Indica si se va a impedir que el usuario agregue cuentas de correo electrónico en el dispositivo que no están asociadas a una cuenta de Microsoft.|
 |antiTheftModeBlocked|Booleano|Indica si se va a impedir que el usuario seleccione una preferencia de modo antirrobo (solo Windows 10 Mobile).|
@@ -227,8 +228,8 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |edgeBlockSearchSuggestions|Booleano|Indica si se va a impedir que el usuario utilice las sugerencias de búsqueda en la barra de direcciones.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Booleano|Indica si se va a impedir que el usuario envíe tráfico de Intranet a Internet Explorer desde Edge.|
 |edgeRequireSmartScreen|Booleano|Indica si se va a requerir que el usuario use el filtro de pantalla inteligente.|
-|edgeEnterpriseModeSiteListLocation|String|Indica la ubicación de la lista de sitios del modo de empresa. Puede ser un archivo local, la red local o la ubicación http.|
-|edgeFirstRunUrl|String|Primera dirección URL que se ejecuta al abrir el explorador Edge por primera vez.|
+|edgeEnterpriseModeSiteListLocation|Cadena|Indica la ubicación de la lista de sitios del modo de empresa. Puede ser un archivo local, la red local o la ubicación http.|
+|edgeFirstRunUrl|Cadena|Primera dirección URL que se ejecuta al abrir el explorador Edge por primera vez.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Permite que los administradores de TI configuren un motor de búsqueda predeterminado para dispositivos controlados por MDM. Los usuarios pueden invalidarla y cambiar su motor de búsqueda predeterminado, siempre que no se establezca la directiva AllowSearchEngineCustomization.|
 |edgeHomepageUrls|Colección String|Lista de direcciones URL de páginas principales que se muestran en dispositivos inscritos en MDM en el explorador Edge.|
 |edgeBlockAccessToAboutFlags|Booleano|Indica si se va a impedir el acceso a las marcas de información en el explorador Edge.|
@@ -280,7 +281,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |dataProtectionBlockDirectMemoryAccess|Booleano|Esta configuración de directiva permite bloquear el acceso directo a memoria (DMA) para todos los hot acoplable PCI puertos dirección descendente hasta que un usuario inicia sesión en Windows.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

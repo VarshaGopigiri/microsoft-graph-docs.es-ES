@@ -2,12 +2,13 @@
 title: Delete device
 description: Elimina un dispositivo registrado.
 author: tfitzmac
-ms.openlocfilehash: ae2f4b458ebd18c366c2b8aecf6b203ff5d42cda
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eec8a198c783a0c04ba1e20d73095701c471b5cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342906"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845671"
 ---
 # <a name="delete-device"></a>Delete device
 
@@ -31,7 +32,7 @@ DELETE /devices/{id}
 > Nota: El "id" de la solicitud es la propiedad "id" del dispositivo, no la propiedad "deviceId".
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

@@ -2,12 +2,13 @@
 title: Eliminar iosCompliancePolicy
 description: Elimina un iosCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 863d41b258cb0c30adb1d0dd9f3ac66651cfcf31
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2dcd17808afb622c6dfef297ee44ae5b31cab956
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847869"
 ---
 # <a name="delete-ioscompliancepolicy"></a>Eliminar iosCompliancePolicy
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,13 @@
 title: Eliminar windows10EndpointProtectionConfiguration
 description: Elimina un windows10EndpointProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 179f873012c73536a63d94c348a273e755b773e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a2549b0f3043e7ac7b1543a662129978f05b9a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847281"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>Eliminar windows10EndpointProtectionConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
