@@ -2,12 +2,13 @@
 title: 'Table: TotalRowRange'
 description: Obtiene el objeto de rango asociado a la fila de totales de la tabla.
 author: lumine2008
-ms.openlocfilehash: 2e71abde4073888b80d3ef8f3603e8d5ed8b9da1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dab971a08bbf50687c557e7c91ff4dd9753425ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826505"
 ---
 # <a name="table-totalrowrange"></a>Table: TotalRowRange
 

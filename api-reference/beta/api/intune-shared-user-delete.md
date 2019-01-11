@@ -2,12 +2,13 @@
 title: Eliminar usuario
 description: Elimina un user.
 author: tfitzmac
-ms.openlocfilehash: 950e267a929bc1c04627e94207bc933bff4466cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6adc1e40e522746a9bfa687366f2492717ac83ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827275"
 ---
 # <a name="delete-user"></a>Eliminar usuario
 
@@ -44,7 +45,7 @@ DELETE /users/{usersId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

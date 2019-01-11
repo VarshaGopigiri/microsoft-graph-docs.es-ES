@@ -1,12 +1,13 @@
 ---
 title: Crear synchronizationTemplate
 description: Crear una nueva plantilla de sincronización para una aplicación determinada.
-ms.openlocfilehash: 1c7bc08eee4088796123d3c7fa2cac5c83becac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b52c2ef180781faf8c93ce335d5f22ca8ae57cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085092"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822704"
 ---
 # <a name="create-synchronizationtemplate"></a>Crear synchronizationTemplate
 
@@ -33,7 +34,7 @@ POST /applications/{id}/synchronization/templates/
 
 | Nombre           | Tipo    | Descripción|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

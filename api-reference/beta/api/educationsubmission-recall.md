@@ -2,12 +2,13 @@
 title: 'educationSubmission: recuperación'
 description: 'Indica que un estudiante desea recuperar un envío. Esta acción sólo puede realizarse mediante un estudiante. '
 author: dipakboyed
-ms.openlocfilehash: ad49302ac9010923d0da2e31686ae4f6967bb50b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a94d1c66764128d15c1017b664f9d4a6bd3f57fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828766"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: recuperación
 

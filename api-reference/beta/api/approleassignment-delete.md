@@ -1,12 +1,13 @@
 ---
 title: Eliminar appRoleAssignment
 description: Eliminar appRoleAssignment.
-ms.openlocfilehash: 1673f3f04d03154242497682da3fcbdaf4248412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5802ba04cfe8aa5ab12a27bb013d8a36a17096e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084663"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814199"
 ---
 # <a name="delete-approleassignment"></a>Eliminar appRoleAssignment
 
@@ -33,7 +34,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

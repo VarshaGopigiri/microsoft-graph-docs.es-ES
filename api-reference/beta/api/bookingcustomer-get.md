@@ -1,12 +1,13 @@
 ---
 title: Obtener bookingCustomer
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 81037f38c65fe12bb97484170b5fb87b44221d57
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4c17b1d80b6f105c35554012313736fee46b0b36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818714"
 ---
 # <a name="get-bookingcustomer"></a>Obtener bookingCustomer
 

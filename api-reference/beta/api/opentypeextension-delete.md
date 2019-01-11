@@ -1,12 +1,13 @@
 ---
 title: Eliminar extensión abierta
 description: 'Elimina una extensión abierta (objeto openTypeExtension) de la instancia especificada de un recurso. '
-ms.openlocfilehash: 852573241e65e1a68ecbb308a67f79ee4ec14ab8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 57b496692a976610b458f1452a179dbdb26467ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826953"
 ---
 # <a name="delete-open-extension"></a>Eliminar extensión abierta
 

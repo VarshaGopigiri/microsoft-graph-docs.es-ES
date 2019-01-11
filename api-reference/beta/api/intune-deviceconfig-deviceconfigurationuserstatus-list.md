@@ -2,12 +2,13 @@
 title: Enumerar deviceConfigurationUserStatuses
 description: Enumere las propiedades y las relaciones de los objetos deviceConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 3f8c1910cfc06a40b477f8a4010caaf167b060a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5da16c1d1495359c138fc34491f100955fa72c33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827968"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>Enumerar deviceConfigurationUserStatuses
 
@@ -46,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

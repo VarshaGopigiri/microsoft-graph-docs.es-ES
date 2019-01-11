@@ -2,12 +2,13 @@
 title: tipo de recurso managementCertificateWithThumbprint
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 03846890822cae02a2eb04fc058895992119c98a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8f18e7fc117f00f99346267f544abc7d12db17e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348940"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827219"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>tipo de recurso managementCertificateWithThumbprint
 
@@ -17,9 +18,9 @@ ms.locfileid: "27348940"
 
 Todavía no documentado
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|huella digital|String|La huella digital del certificado de administración|
+|huella digital|Cadena|La huella digital del certificado de administración|
 |certificado|String|El certificado de administración codificada en Base 64|
 
 ## <a name="relationships"></a>Relaciones

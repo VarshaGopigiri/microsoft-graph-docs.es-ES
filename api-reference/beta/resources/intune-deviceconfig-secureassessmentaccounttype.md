@@ -2,12 +2,13 @@
 title: tipo de enumeración secureAssessmentAccountType
 description: Tipo de cuentas que se permiten en Windows10SecureAssessment ConfigurationAccount.
 author: tfitzmac
-ms.openlocfilehash: faf504410336bdc491c29b676aaa1b57cd0a5ee2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5b1f8a3d03c0e7b9e91c68ff5a87611fcaa6f31e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826057"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>tipo de enumeración secureAssessmentAccountType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27362226"
 
 Tipo de cuentas que se permiten en Windows10SecureAssessment ConfigurationAccount.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |azureADAccount|0|Indica una cuenta de Azure AD en formato de AzureAD\ username@tenant.com.|
 |domainAccount|1|Indica una cuenta de dominio en el formato de dominio\usuario o user@domain.com.|

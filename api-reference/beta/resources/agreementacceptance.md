@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso agreementAcceptance
 description: Representa el estado actual de un usuario dentro de ámbito de condiciones personalizable de una compañía de uso con tecnología de Azure Active Directory (AD Azure).
-ms.openlocfilehash: 23221fe88a65b003c8d26aca99eaf1f03d935722
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1c8a5e40fe6a12daf23566ae902ddf61f3ee4df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828288"
 ---
 # <a name="agreementacceptance-resource-type"></a>tipo de recurso agreementAcceptance
 
@@ -25,17 +26,17 @@ Representa el estado actual de un usuario dentro de ámbito de condiciones perso
 -->
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo        | Descripción |
+| Propiedad     | Tipo        | Description |
 |:-------------|:------------|:------------|
-|agreementFileId|String|Identificador del archivo de contrato aceptado por el usuario.|
-|agreementId|String|Identificador del contrato.|
-|id|String| Solo lectura.|
+|agreementFileId|Cadena|Identificador del archivo de contrato aceptado por el usuario.|
+|agreementId|Cadena|Identificador del contrato.|
+|id|Cadena| Solo lectura.|
 |recordedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|estado|string| Los valores posibles son: `accepted` y `declined`.|
-|userDisplayName|String|Nombre para mostrar del usuario cuando se registró la aceptación.|
-|userEmail|String|Correo electrónico del usuario cuando se registró la aceptación.|
-|userId|String|Identificador del usuario que ha aceptado el contrato.|
-|userPrincipalName|String|UPN del usuario cuando se registró la aceptación.|
+|state|string| Los valores posibles son: `accepted` y `declined`.|
+|userDisplayName|Cadena|Nombre para mostrar del usuario cuando se registró la aceptación.|
+|userEmail|Cadena|Correo electrónico del usuario cuando se registró la aceptación.|
+|userId|Cadena|Identificador del usuario que ha aceptado el contrato.|
+|userPrincipalName|Cadena|UPN del usuario cuando se registró la aceptación.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

@@ -1,12 +1,13 @@
 ---
 title: Crear educationAssignment
 description: 'Crea una nueva asignación. Sólo los profesores en una clase pueden crear una asignación. Inician las asignaciones en el estado de borrador, lo que significa que los alumnos no verán la asignación hasta que se llama a publicar.  '
-ms.openlocfilehash: 9a6af2a0c0689ca2118ce4d06a55d7b27a70a4ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6bcc1f44be9d811335d24cea7502c0752052c5ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824188"
 ---
 # <a name="create-educationassignment"></a>Crear educationAssignment
 

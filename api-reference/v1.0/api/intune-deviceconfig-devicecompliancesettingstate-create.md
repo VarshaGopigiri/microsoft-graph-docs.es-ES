@@ -2,12 +2,13 @@
 title: Crear deviceComplianceSettingState
 description: Cree un objeto deviceComplianceSettingState.
 author: tfitzmac
-ms.openlocfilehash: 4f7b8558a631f107f31ff393aca4d2951dfcccf4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1da7aed12ae0c2c3f77a066295d7f98f55b55f8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312330"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819855"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Crear deviceComplianceSettingState
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto deviceComplianceSettingState.
@@ -45,16 +46,16 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad|
-|ajustes|String|El nombre de la clase de configuración y el nombre de propiedad.|
-|settingName|String|El nombre de configuración que se está notificando|
-|deviceId|String|El identificador del dispositivo que se está notificando|
-|deviceName|String|El nombre del dispositivo que se está notificando|
-|userId|String|El identificador del usuario que se está notificando|
-|userEmail|String|La dirección de correo electrónico del usuario que se está notificando|
-|userName|String|El nombre de usuario que se está notificando|
-|userPrincipalName|String|El nombre principal de usuario que se está notificando|
-|deviceModel|String|El modelo de dispositivo que se está notificando|
+|id|Cadena|Clave de la entidad|
+|ajustes|Cadena|El nombre de la clase de configuración y el nombre de propiedad.|
+|settingName|Cadena|El nombre de configuración que se está notificando|
+|deviceId|Cadena|El identificador del dispositivo que se está notificando|
+|deviceName|Cadena|El nombre del dispositivo que se está notificando|
+|userId|Cadena|El identificador del usuario que se está notificando|
+|userEmail|Cadena|La dirección de correo electrónico del usuario que se está notificando|
+|userName|Cadena|El nombre de usuario que se está notificando|
+|userPrincipalName|Cadena|El nombre principal de usuario que se está notificando|
+|deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|El estado de cumplimiento de la configuración. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 

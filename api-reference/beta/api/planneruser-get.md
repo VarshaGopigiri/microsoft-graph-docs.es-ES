@@ -1,12 +1,13 @@
 ---
 title: Obtener plannerUser
 description: 'Recuperar las propiedades y relaciones de un objeto plannerUser. Las propiedades devueltas incluyen planes favoritos del usuario y planes de visto recientemente. '
-ms.openlocfilehash: fca4b37560ad0c6cd7e05aee56ebdeb1e6509101
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1abffddb2ddbefdcd0aaeddedffe94ae8ad605d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810643"
 ---
 # <a name="get-planneruser"></a>Obtener plannerUser
 
@@ -32,7 +33,7 @@ GET /users/<id>/planner
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {código} del portador. Necesario.|
+| Autorización  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

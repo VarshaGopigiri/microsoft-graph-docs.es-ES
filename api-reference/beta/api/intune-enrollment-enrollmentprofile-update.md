@@ -2,12 +2,13 @@
 title: Actualizar enrollmentProfile
 description: Actualizar las propiedades de un objeto enrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308319"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822599"
 ---
 # <a name="update-enrollmentprofile"></a>Actualizar enrollmentProfile
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .
@@ -48,11 +49,11 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|El GUID para el objeto|
-|displayName|String|Nombre del perfil|
-|descripción|String|Descripción del perfil|
-|requiresUserAuthentication|Boolean|Indica si el perfil requiere autenticación de usuario|
-|configurationEndpointUrl|String|Dirección url de extremo de configuración que se usará para inscripción|
-|enableAuthenticationViaCompanyPortal|Boolean|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa.|
+|displayName|Cadena|Nombre del perfil|
+|descripción|Cadena|Descripción del perfil|
+|requiresUserAuthentication|Booleano|Indica si el perfil requiere autenticación de usuario|
+|configurationEndpointUrl|Cadena|Dirección url de extremo de configuración que se usará para inscripción|
+|enableAuthenticationViaCompanyPortal|Booleano|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa.|
 
 
 

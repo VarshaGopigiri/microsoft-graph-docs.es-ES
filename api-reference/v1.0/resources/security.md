@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de seguridad
 description: El recurso de seguridad es el punto de entrada para el modelo de objetos de seguridad. Devuelve un recurso de seguridad singleton. No contiene todas las propiedades utilizables.
-ms.openlocfilehash: ddf00e46135733ef18c18918c0c365134138671f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2486bf9cae2ffad471c1bacb8b7ca01c6bef4ee7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029528"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827016"
 ---
 # <a name="security-resource-type"></a>tipo de recurso de seguridad
 
@@ -24,7 +25,7 @@ El recurso de seguridad es el punto de entrada para el modelo de objetos de segu
 Ninguno
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo        | Descripción |
+| Relación | Tipo        | Description |
 |:-------------|:------------|:------------|
 |alerts|colección de [alerta](alert.md)| Solo lectura. Admite valores NULL.|
 

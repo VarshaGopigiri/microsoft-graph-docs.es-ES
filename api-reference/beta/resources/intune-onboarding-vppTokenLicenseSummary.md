@@ -2,12 +2,13 @@
 title: tipo de recurso vppTokenLicenseSummary
 description: Resumen de la licencia de una aplicación determinada en un símbolo (token).
 author: tfitzmac
-ms.openlocfilehash: 7847c6265ed526d50215567918698c7732adf947
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e5972341aa3b390ae226d19f7d85fe918345c627
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824867"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>tipo de recurso vppTokenLicenseSummary
 
@@ -17,10 +18,10 @@ ms.locfileid: "27319981"
 
 Resumen de la licencia de una aplicación determinada en un símbolo (token).
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
-|vppTokenId|String|Identificador del token VPP.|
-|Id. de Apple|String|Identificador de Apple asociado al token del Programa de Compras por Volumen de Apple especificado.|
+|vppTokenId|Cadena|Identificador del token VPP.|
+|Id. de Apple|Cadena|Identificador de Apple asociado al token del Programa de Compras por Volumen de Apple especificado.|
 |organizationName|Cadena|La organización asociada con el Token de programa de compra de Apple por volumen.|
 |availableLicenseCount|Int32|El número de licencias VPP disponibles.|
 |usedLicenseCount|Int32|Número de licencias VPP en uso.|

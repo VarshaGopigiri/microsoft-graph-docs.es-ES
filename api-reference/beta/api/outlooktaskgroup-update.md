@@ -2,12 +2,13 @@
 title: Actualizar outlooktaskgroup
 description: Actualizar las propiedades modificables de un grupo de tareas de Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: 40d146f90bf512ec9afa8790d7f02d4039dd53cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0287d7a94dcfb74e43e22571b20fd52d5f888740
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827352"
 ---
 # <a name="update-outlooktaskgroup"></a>Actualizar outlooktaskgroup
 
@@ -40,7 +41,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|String|El nombre del grupo de tareas.|
+|name|Cadena|El nombre del grupo de tareas.|
 
 ## <a name="response"></a>Respuesta
 

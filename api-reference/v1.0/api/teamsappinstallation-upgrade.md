@@ -2,12 +2,13 @@
 title: Actualización de una aplicación en un equipo
 description: Actualiza una instalación de la aplicación en un equipo
 author: nkramer
-ms.openlocfilehash: 7f3787d6c22f6def80c8d36950ae3beadfd36b90
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36ddc41e6c15def1c5570fc49c3b151c87a63421
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311931"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826603"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Actualización de una aplicación en un equipo
 

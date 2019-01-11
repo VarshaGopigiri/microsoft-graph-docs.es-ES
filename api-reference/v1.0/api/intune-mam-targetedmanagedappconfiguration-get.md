@@ -2,12 +2,13 @@
 title: Obtener targetedManagedAppConfiguration
 description: Lea las propiedades y las relaciones del objeto targetedManagedAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: f40ae61063967239642ba3cc16403b7fcb7b04e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99e584684053716c9916a2cf8424a34cf751810b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824979"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Obtener targetedManagedAppConfiguration
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

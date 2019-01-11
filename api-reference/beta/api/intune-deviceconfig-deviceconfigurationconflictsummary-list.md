@@ -2,12 +2,13 @@
 title: Lista deviceConfigurationConflictSummaries
 description: Propiedades de la lista y relaciones de los objetos deviceConfigurationConflictSummary.
 author: tfitzmac
-ms.openlocfilehash: e1390cd776769400508feec73564c5e7d5593261
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19677c1de67b53f1d0c127f237e6e9a8de7748d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827926"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>Lista deviceConfigurationConflictSummaries
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurationConflictSummary
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

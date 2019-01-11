@@ -2,12 +2,13 @@
 title: Actualizar androidDeviceOwnerEnrollmentProfile
 description: Actualizar las propiedades de un objeto androidDeviceOwnerEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 136b11dd16023b3394d5c5cf084123acbef93c6d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18ecb9728cd1f178112bc8542f147edc8af472a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814157"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>Actualizar androidDeviceOwnerEnrollmentProfile
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
@@ -47,17 +48,17 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|accountId|String|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
-|id|String|GUID único del perfil de inscripción.|
-|displayName|String|Nombre para mostrar del perfil de inscripción.|
-|descripción|String|Descripción del perfil de inscripción.|
+|accountId|Cadena|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
+|id|Cadena|GUID único del perfil de inscripción.|
+|displayName|Cadena|Nombre para mostrar del perfil de inscripción.|
+|descripción|Cadena|Descripción del perfil de inscripción.|
 |createdDateTime|DateTimeOffset|Fecha y hora en que se creó el perfil de inscripción.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en que se modificó el perfil de inscripción por última vez.|
-|tokenValue|String|Valor del token creado más recientemente para este perfil de inscripción.|
+|tokenValue|Cadena|Valor del token creado más recientemente para este perfil de inscripción.|
 |tokenCreationDateTime|DateTimeOffset|Fecha hora en que se creó el token creado más recientemente.|
 |tokenExpirationDateTime|DateTimeOffset|Fecha y hora en que expirará el token creado más recientemente.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que se han inscrito con este perfil de inscripción.|
-|qrCodeContent|String|Cadena usada para generar un código QR para el token.|
+|qrCodeContent|Cadena|Cadena usada para generar un código QR para el token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadena usada para generar un código QR para el token.|
 
 

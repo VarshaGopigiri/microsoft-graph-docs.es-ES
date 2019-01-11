@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso programControlType
 description: 'En el anuncio de Azure access revisa la característica, el tipo de control de programa se utiliza cuando el control se asocia un control a un programa, para indicar el tipo de revisión de access es para.  '
-ms.openlocfilehash: 8fc406648d8f8c943920507a5734f47d2add1b4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0091c23fd5d537e7c1fd62051778e56b510a3dab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087124"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808235"
 ---
 # <a name="programcontroltype-resource-type"></a>tipo de recurso programControlType
 
@@ -24,7 +25,7 @@ Los objetos de tipo de control de programa se generan automáticamente cuando el
 |[Lista programControlTypes](../api/programcontroltype-list.md) | colección de [programControlType](programcontroltype.md)| Lista de tipos de control de programa. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | El identificador asignado a la función del tipo de control de programa                                      |
 | `displayName`            |`String`                | El nombre del tipo de control de programa                                                             |

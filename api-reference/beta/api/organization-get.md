@@ -1,12 +1,13 @@
 ---
 title: Get organization
 description: Recupera las propiedades y relaciones de la organización actualmente autenticada.
-ms.openlocfilehash: f3d2ca5c6881a06f397101a0050fe29f8a646614
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: f8076d36c47ea9d517b43eb827d702350c364132
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826756"
 ---
 # <a name="get-organization"></a>Get organization
 
@@ -44,7 +45,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

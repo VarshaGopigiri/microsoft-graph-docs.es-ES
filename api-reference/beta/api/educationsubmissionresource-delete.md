@@ -2,12 +2,13 @@
 title: Eliminar educationSubmissionResource
 description: Elimina un recurso de la presentación. Esto puede realizarse sólo por el alumno. Si el recurso se copió desde la asignación, se creará una nueva copia del recurso después de que se elimina la copia actual.
 author: dipakboyed
-ms.openlocfilehash: d56df6cee3884556186554d9c24ae09ed802c4f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94e73f7b4c6c0c0bc85b21ee3e651f8e61234e80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313275"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828815"
 ---
 # <a name="delete-educationsubmissionresource"></a>Eliminar educationSubmissionResource
 

@@ -2,12 +2,13 @@
 title: 'llamar a: transferencia'
 description: Transferir una llamada activa.
 author: VinodRavichandran
-ms.openlocfilehash: 71d250453051c705dcc0646a8e4ad298253d0ee6
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 5e1a26a1b3da1af8666d8fc5bcbba619c9fad97b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824902"
 ---
 # <a name="call-transfer"></a>llamar a: transferencia
 
@@ -39,10 +40,10 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Descripción|
+| Parámetro      | Tipo    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|El participante que es el destino de la transferencia.|
-|clientContext|String|El contexto de cliente.|
+|clientContext|Cadena|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta.

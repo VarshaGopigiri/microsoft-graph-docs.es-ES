@@ -1,12 +1,13 @@
 ---
 title: Introducción a la API de registro de auditoría de Azure AD
 description: Azure Active Directory (AD Azure) realiza un seguimiento de las métricas de actividad e inicio de sesión de usuario y auditoría de crea informes de registro que le ayudarán a comprender la forma en que los usuarios tener acceso y aprovechan los servicios de Azure AD. Usar la API de gráfico de Microsoft para Azure AD para analizar los datos subyacentes de estos informes y para crear soluciones personalizadas adaptadas a necesidades específicas de su organización.
-ms.openlocfilehash: b25e9820d4f6df0c6a38fc9784a37ce8a82ceeb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 07d285ce4e7fbf736900c1d6d4acdf159b451424
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826225"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Introducción a la API de registro de auditoría de Azure AD
 

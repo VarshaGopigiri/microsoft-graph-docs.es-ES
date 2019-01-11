@@ -2,12 +2,13 @@
 title: Crear managementConditionStatement
 description: Crear un nuevo objeto managementConditionStatement.
 author: tfitzmac
-ms.openlocfilehash: 5402faee0c7ace84957f3ff6a2ef65844f5a527e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da085e2aa384e2ee3d4eedd611cfe14945b8fe1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806443"
 ---
 # <a name="create-managementconditionstatement"></a>Crear managementConditionStatement
 
@@ -39,7 +40,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto managementConditionStatement.
@@ -48,13 +49,13 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la instrucción de condición de administración. Valor asignado al crear generada por el sistema.|
-|displayName|String|El nombre definido de administración de la instrucción de condición de administración.|
-|descripción|String|El administrador define la descripción de la instrucción de condición de administración.|
+|id|Cadena|Identificador único de la instrucción de condición de administración. Valor asignado al crear generada por el sistema.|
+|displayName|Cadena|El nombre definido de administración de la instrucción de condición de administración.|
+|descripción|Cadena|El administrador define la descripción de la instrucción de condición de administración.|
 |createdDateTime|DateTimeOffset|La hora en que se creó la instrucción de condición de administración. Servicio generado al lado.|
 |modifiedDateTime|DateTimeOffset|La hora en que se modificó por última vez la instrucción de condición de administración. Se actualizó el lado de servicio.|
 |expresión|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|La expresión de instrucción de condición de administración que se usa para evaluar si una administración condición instrucción estaba activada o desactivada.|
-|eTag|String|ETag de la instrucción de condición de administración. Se actualizó el lado de servicio.|
+|eTag|Cadena|ETag de la instrucción de condición de administración. Se actualizó el lado de servicio.|
 |applicablePlatforms|colección de [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Las plataformas aplicables para esta instrucción de condición de administración.
 Esto se calcula a partir de ¿está buscando las condiciones de administración asociadas a la administración de la condición de la instrucción y buscar la intersección de plataformas aplicables. Los valores posibles son: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater` y `androidWorkProfile`.|
 

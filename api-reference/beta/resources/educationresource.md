@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationResource
 description: Una superclase para todos los objetos de recursos en el sistema. Un recurso está asociado a una **asignación** o **envío**, que representa el objeto de aprendizaje que se va a
-ms.openlocfilehash: b7e64a946992bb0b43c5bfe50e8d92b5f7176856
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827562"
 ---
 # <a name="educationresource-resource-type"></a>tipo de recurso educationResource
 
@@ -22,7 +23,7 @@ Este recurso almacena las propiedades comunes en todos los tipos de recursos.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Quién creó el recurso.|
 |createdDateTime|Momento en el tiempo cuando se creó el recurso.  DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|displayName|String|Nombre para mostrar del recurso.|
+|displayName|Cadena|Nombre para mostrar del recurso.|
 |lastModifiedBy|[identitySet](identityset.md)|¿Quién fue el último usuario para modificar el recurso.|
 |lastModifiedDateTime|DateTimeOffset|Momento en el tiempo cuando se modificó por última vez el recurso.  El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 

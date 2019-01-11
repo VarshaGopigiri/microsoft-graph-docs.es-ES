@@ -2,12 +2,13 @@
 title: 'usuario: getMailTips'
 description: Obtenga las sugerencias de correo electrónico de uno o más destinatarios como disponible para el usuario ha iniciado sesión.
 author: dkershaw10
-ms.openlocfilehash: 198e45647ce51997a8d92da63a5f63f03d05a675
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49c1614a2e53563039d22b9c2823a7bb35379f3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332686"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808655"
 ---
 # <a name="user-getmailtips"></a>usuario: getMailTips
 
@@ -41,10 +42,10 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |EmailAddresses|Colección String|Una colección de direcciones SMTP de los destinatarios para obtener sugerencias de correo electrónico para.|
-|MailTipsOptions|String|Una enumeración de indicadores que representa las sugerencias de correo electrónico solicitado. Los valores posibles son: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, y `totalMemberCount`.|
+|MailTipsOptions|Cadena|Una enumeración de indicadores que representa las sugerencias de correo electrónico solicitado. Los valores posibles son: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, y `totalMemberCount`.|
 
 ## <a name="response"></a>Respuesta
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso skypeForBusinessActivityUserDetail
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 7a2438d0c4ecbaf6ae06e240ee6fd456c87c180f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089356"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828654"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>tipo de recurso skypeForBusinessActivityUserDetail
 
@@ -43,7 +44,7 @@ ms.locfileid: "27089356"
 | participatedConferenceWebCount          | Int64             |
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
 | reportRefreshDate                        | Fecha              |
-| userPrincipalName                        | String            |
+| userPrincipalName                        | Cadena            |
 | isDeleted                                | Booleano           |
 | deletedDate                              | Fecha              |
 | lastActivityDate                         | Fecha              |

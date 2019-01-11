@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ServicesUserCounts'
 description: Obtiene el número de usuarios por tipo de actividad y servicio.
-ms.openlocfilehash: 9f331852c5ba47643e11ea6cfa86167669557aae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd196e971a55acd3c3beebe8d8e526f443fbe62b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085699"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827583"
 ---
 # <a name="reportroot-getoffice365servicesusercounts"></a>reportRoot: getOffice365ServicesUserCounts
 

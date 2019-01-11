@@ -2,12 +2,13 @@
 title: Agregar datos adjuntos
 description: Use esta API para crear datos adjuntos.
 author: angelgolfer-ms
-ms.openlocfilehash: 0c5f82a04339c2171ad9b3b566a949b2397c40b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e56da5a4b6f57506800e07e3f8e2b09ed7ef6f46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824083"
 ---
 # <a name="add-attachment"></a>Agregar datos adjuntos
 
@@ -39,7 +40,7 @@ POST /me/messages/{id}/attachments
 POST /users/{id|userPrincipalName}/messages/{id}/attachments
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |

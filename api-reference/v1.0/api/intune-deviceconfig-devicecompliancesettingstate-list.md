@@ -2,12 +2,13 @@
 title: Lista deviceComplianceSettingStates
 description: Enumere las propiedades y las relaciones de los objetos deviceComplianceSettingState.
 author: tfitzmac
-ms.openlocfilehash: a282b306478cc1ff2ecbe7f86a063183eee0edd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8bf4734c3adc53c3cd09da1bb74607cbf50ef330
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809117"
 ---
 # <a name="list-devicecompliancesettingstates"></a>Lista deviceComplianceSettingStates
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

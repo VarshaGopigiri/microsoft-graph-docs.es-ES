@@ -1,12 +1,13 @@
 ---
 title: valores de timeZoneStandard
 description: " Valor"
-ms.openlocfilehash: 7212a3ca1394ce73357aa9c22550a79f638ea973
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825735"
 ---
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
@@ -18,7 +19,7 @@ ms.locfileid: "27029520"
 
 ### <a name="freebusystatus-values"></a>valores de freeBusyStatus
 
-| Member            |Valor
+| Miembro	            |Valor
 |:------------------|:-------
 | libre              | 0
 | provisional         | 1
@@ -41,7 +42,7 @@ ms.locfileid: "27029520"
 
 | Valor
 |:-------------------------
-| ninguno
+| none
 | contactsOnly
 | all
 
@@ -57,7 +58,7 @@ ms.locfileid: "27029520"
 
 ### <a name="calendarcolor-values"></a>valores de calendarColor
 
-| Member     | Valor
+| Miembro	     | Valor
 |:-----------|:----------
 | Automático       | -1
 | lightBlue  | 0
@@ -125,7 +126,7 @@ ms.locfileid: "27029520"
 |:---------------------
 | student
 | teacher
-| ninguno
+| none
 | unknownFutureValue
 
 
@@ -133,7 +134,7 @@ ms.locfileid: "27029520"
 
 | Valor
 |:-----------------
-| ninguno
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -165,7 +166,7 @@ ms.locfileid: "27029520"
 | deviceDefault
 | Banner
 | modal
-| ninguno
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -236,7 +237,7 @@ ms.locfileid: "27029520"
 
 ### <a name="onenoteuserrole-values"></a>valores de onenoteUserRole
 
-| Member      | Valor
+| Miembro	      | Valor
 |:------------|:------------
 | Owner       | 0
 | Colaborador | 1
@@ -258,7 +259,7 @@ ms.locfileid: "27029520"
 
 | Valor
 |:-------------------------
-| Replace
+| Reemplazar
 | Anexar
 | Delete
 | Insertar
@@ -278,7 +279,7 @@ ms.locfileid: "27029520"
 |:-------------------------
 | página principal
 | empresarial
-| mobile
+| móvil
 | otros
 | Ayudante
 | Fax particular
@@ -367,7 +368,7 @@ ms.locfileid: "27029520"
 
 | Valor
 |:-------------------------
-| ninguno
+| none
 | organizador
 | tentativelyAccepted
 | aceptado
@@ -398,9 +399,9 @@ ms.locfileid: "27029520"
 
 ### <a name="categorycolor-values"></a>valores de categoryColor
 
-| Member   |Valor    
+| Miembro	   |Valor    
 |:---------|:--------
-| ninguno     | -1      
+| none     | -1      
 | preset0  | 0       
 | preset1  | 1       
 | preset2  | 2       
@@ -435,7 +436,7 @@ Valores posibles comentarios en la alerta proporcionado por un analista.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Unknown (desconocido).|
 |truePositive|1|Alerta es true positivo.|
@@ -448,7 +449,7 @@ Enumeración de tipos de hash de archivo.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Tipo desconocido.|
 |SHA1|1|Tipo de hash de SHA1.|
@@ -466,7 +467,7 @@ Enumeración para la dirección de la conexión de red (entrante y saliente).
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Conexión desconocida.|
 |de entrada|1|Conexión de entrada.|
@@ -478,7 +479,7 @@ Enumeración para el estado de las conexiones.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Estado de conexión desconocido.|
 |ha intentado|1|Intenta establecer la conexión.|
@@ -492,7 +493,7 @@ Valores de nivel de la integridad de los posibles del proceso.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Unknown (desconocido).|
 |no es de confianza|10|Es el nivel de integridad Untrusted.|
@@ -507,7 +508,7 @@ Enumeración para el registro secciones tal como se define por [https://docs.mic
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Subárbol desconocido.|
 |currentConfig|1|Subárbol HKEY_CURRENT_CONFIG.|
@@ -523,7 +524,7 @@ Operación que ha cambiado el nombre de la clave del registro o valor.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Tipo de valor del registro desconocido.|
 |create|1|Crear el registro.|
@@ -536,7 +537,7 @@ Tipos de enumeración de valor del registro tal como se define por [https://docs
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Tipo de valor del registro desconocido.|
 |binario|1|Tipo de valor del Registro REG_BINARY.|
@@ -546,7 +547,7 @@ Tipos de enumeración de valor del registro tal como se define por [https://docs
 |expandSz|5| Tipo de valor del Registro REG_EXPAND_SZ.|
 |vincular|6| Tipo de valor del registro REG_LINK.|
 |multiSz|7| Tipo de valor del Registro REG_MULTI_SZ.|
-|ninguno|8| Tipo de valor REG_NONE del registro.|
+|none|8| Tipo de valor REG_NONE del registro.|
 |QWORD|9| Tipo de valor del Registro REG_QWORD.|
 |qwordlittleEndian|10| Tipo de valor del registro REG_QWORD_LITTLE_ENDIAN.|
 |sz|11| Tipo de valor del Registro REG_SZ.|
@@ -557,7 +558,7 @@ Enumeración de gravedad de alertas.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Gravedad es desconocida.|
 |informativo|1|Gravedad es sólo para información.|
@@ -571,7 +572,7 @@ Posibles valores de un estado de ciclo de vida de alerta (escenario).
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Estado desconocido.|
 |newAlert|10| Alerta es nuevo.|
@@ -584,7 +585,7 @@ Valores posibles para funciones de correo electrónico.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Rol desconocido.|
 |sender|1|Remitente del correo electrónico.|
@@ -596,7 +597,7 @@ Valores posibles para el método de inicio de sesión de usuario.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|-1|Unknown (desconocido).|
 |interactiva|0|Inicio de sesión es interactivo.|
@@ -611,7 +612,7 @@ Valores posibles para los tipos de cuenta de usuario (pertenencia a grupos), por
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|-1|Unknown (desconocido).|
 |estándar|0|Miembro del grupo de usuarios estándar.|

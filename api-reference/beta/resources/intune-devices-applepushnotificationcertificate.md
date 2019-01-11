@@ -2,12 +2,13 @@
 title: Tipo de recurso applePushNotificationCertificate
 description: Certificado de notificación de inserción de Apple.
 author: tfitzmac
-ms.openlocfilehash: 11c03712cc482a882452a9b64867090260863075
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3cc0b4a3e35027f79dd79ab065de9632e9585873
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810867"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 
@@ -31,8 +32,8 @@ Certificado de notificación de inserción de Apple.
 |topicIdentifier|String|Id. del tema|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación del certificado de notificación push de Apple.|
 |expirationDateTime|DateTimeOffset|Fecha y hora de la expiración del certificado de notificación push de Apple.|
-|certificateUploadStatus|String|El estado de carga del certificado.|
-|certificateUploadFailureReason|String|No se pudo la razón por la carga de certificado.|
+|certificateUploadStatus|Cadena|El estado de carga del certificado.|
+|certificateUploadFailureReason|Cadena|No se pudo la razón por la carga de certificado.|
 |certificado|String|Todavía no documentado|
 
 ## <a name="relationships"></a>Relaciones

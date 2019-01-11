@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso accessReview
 description: 'En el anuncio de Azure access revisa la característica, el `accessReview` representa una revisión de access.  '
-ms.openlocfilehash: 1ad1edc9d3909ea2648f2644e1ba5438ce981c2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826078"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -21,19 +22,19 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el `ac
 |:---------------|:--------|:----------|
 |[Obtener accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obtenga una revisión de access con un identificador específico. |
 |[Crear accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Crear un nuevo accessReview. |
-|[Eliminar accessReview](../api/accessreview-delete.md) | Ninguna.   | Eliminar un accessReview. |
+|[Eliminar accessReview](../api/accessreview-delete.md) | Ninguno.   | Eliminar un accessReview. |
 |[Actualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Actualizar un accessReview. |
 |[Revisores accessReview de lista](../api/accessreview-listreviewers.md) |      colección de [IdentidadDeUsuario](useridentity.md)| Obtenga los revisores de un accessReview. |
-|[Agregar revisor accessReview](../api/accessreview-addreviewer.md) |      Ninguna.   |   Agregar un revisor a una accessReview. |
-|[Quitar accessReview revisor](../api/accessreview-removereviewer.md) | Ninguna.  |   Quitar un revisor de un accessReview. |
+|[Agregar revisor accessReview](../api/accessreview-addreviewer.md) |      Ninguno.   |   Agregar un revisor a una accessReview. |
+|[Quitar accessReview revisor](../api/accessreview-removereviewer.md) | Ninguno.  |   Quitar un revisor de un accessReview. |
 |[Lista decisiones de accessReview](../api/accessreview-listdecisions.md) |      colección de [accessReviewDecision](accessreviewdecision.md)| Obtenga las decisiones de un accessReview.|
 |[Mis decisiones accessReview de lista](../api/accessreview-listmydecisions.md) |     colección de [accessReviewDecision](accessreviewdecision.md)| Como revisor, obtener Mis decisiones de un accessReview.|
-|[Enviar aviso de accessReview](../api/accessreview-sendreminder.md) |        Ninguna.   |   Enviar un aviso a los revisores de un accessReview. |
-|[Detener accessReview](../api/accessreview-stop.md) |     Ninguna.   |   Detener una accessReview. |
-|[Restablecer las decisiones de accessReview](../api/accessreview-reset.md) |     Ninguna.   |   Restablecer las decisiones en un accessReview en curso.|
-|[Aplicar decisiones accessReview](../api/accessreview-apply.md) |     Ninguna.   |   Se aplican las decisiones de un accessReview completado.|
+|[Enviar aviso de accessReview](../api/accessreview-sendreminder.md) |        Ninguno.   |   Enviar un aviso a los revisores de un accessReview. |
+|[Detener accessReview](../api/accessreview-stop.md) |     Ninguno.   |   Detener una accessReview. |
+|[Restablecer las decisiones de accessReview](../api/accessreview-reset.md) |     Ninguno.   |   Restablecer las decisiones en un accessReview en curso.|
+|[Aplicar decisiones accessReview](../api/accessreview-apply.md) |     Ninguno.   |   Se aplican las decisiones de un accessReview completado.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 |Tipo de permiso                        | Permisos (de menos a más privilegiados)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -43,7 +44,7 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el `ac
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | El identificador único asignado a la característica de una revisión de access. |
 | `displayName`             |`String`                                                        | Nombre de la revisión de acceso. Necesarios en crear. |
@@ -64,7 +65,7 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el `ac
 
 
 
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 | `reviewers`               |colección de [IdentidadDeUsuario](useridentity.md)                     | La colección de los revisores de una revisión de access, si access revisión reviewerType es del tipo `delegate`. |
 | `decisions`               |colección de [accessReviewDecision](accessreviewdecision.md) | La colección de decisiones para esta revisión de access. |
@@ -113,7 +114,7 @@ Aquí tiene una representación JSON del recurso.
 
 El `accessReviewSettings` proporciona una configuración adicional al crear una revisión de acceso para controlar el comportamiento de la característica cuando se inicia una revisión de access.  Este tipo tiene las siguientes propiedades: 
 
-| Propiedad                     | Tipo                      | Descripción |
+| Propiedad                     | Tipo                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | Marcar para indicar si está habilitado el envío de mensajes de correo electrónico a los revisores y el creador de la revisión.                |
 | `remindersEnabled`|`Boolean`       | Marcar para indicar si están habilitados los correos electrónicos de aviso envío a los revisores.       |
@@ -131,7 +132,7 @@ El `accessReviewSettings` proporciona una configuración adicional al crear una 
 
 El `autoReviewSettings` está incrustada dentro de la configuración de la revisión de acceso y especifica el comportamiento de la característica cuando se completa una revisión de access.  El tipo tiene una propiedad, `notReviewedResult`.
 
-| Propiedad                     | Tipo     | Descripción                          |
+| Propiedad                     | Tipo     | Description                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | Debe ser `Approve`, `Deny` o `Recommendation`. |
 
@@ -140,7 +141,7 @@ El `autoReviewSettings` está incrustada dentro de la configuración de la revis
 
 El `accessReviewRecurrenceSettings` está incrustada dentro de la configuración de la revisión de acceso y especifica que la revisión de access se repite a intervalos regulares.  Este tipo tiene las siguientes propiedades:
 
-| Propiedad                     | Tipo                                                                                                          | Descripción |
+| Propiedad                     | Tipo                                                                                                          | Description |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | El intervalo de periodicidad, que debe ser uno de `onetime`, `weekly`, `monthly`, `quarterly` o `annual`.                                                                   |
 | `recurrenceEndType`|`String` | Cómo la periodicidad finalizará. Puede ser una de `Never`, que no hay ningún fin explícito de la serie de periodicidad, `Endby`, que la periodicidad finaliza en una fecha determinada, y `occurrences`, que la serie finaliza después de haber completado cierto número de instancias de la revisión. |

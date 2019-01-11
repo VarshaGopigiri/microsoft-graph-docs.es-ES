@@ -2,12 +2,13 @@
 title: acción assignedAccessMultiModeProfiles
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 24ab12236044c08ab17b50acb5d7cc486fadcafa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09183d5328b7dbbc92fa6052990e71b40df838ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828080"
 ---
 # <a name="assignedaccessmultimodeprofiles-action"></a>acción assignedAccessMultiModeProfiles
 
@@ -40,14 +41,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |assignedAccessMultiModeProfiles|colección de [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md)|Todavía no documentado|
 

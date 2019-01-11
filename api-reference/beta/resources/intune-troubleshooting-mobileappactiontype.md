@@ -2,12 +2,13 @@
 title: tipo de enumeración mobileAppActionType
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 1116231da1e4db409ceefd0e3394fc96159149fe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39be7b8bb7899f0949765bb63ae9efa3df4ebab7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347421"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808942"
 ---
 # <a name="mobileappactiontype-enum-type"></a>tipo de enumeración mobileAppActionType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347421"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Resultado desconocido.|
 |installCommandSent|1|Se ha enviado el comando de instalación de la aplicación.|

@@ -2,12 +2,13 @@
 title: tipo de recurso de canal
 description: 'Un canal es una colección de los mensajes dentro de un equipo. '
 author: nkramer
-ms.openlocfilehash: f9ab71213180732a0c8c626d5b32b9074bd135d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9a7b12646f36152bef17cec2d206e8e84abdcbbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337089"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826568"
 ---
 # <a name="channel-resource-type"></a>tipo de recurso de canal
 
@@ -29,12 +30,12 @@ Un canal es una colección de los mensajes dentro de un [equipo](../resources/te
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|description|String|Descripción textual opcional para el canal.|
-|displayName|String|Nombre de canal tal y como aparecerá para el usuario en Microsoft Teams.|
-|id|String|Identificador único de la de los canales. Solo lectura.|
+|description|Cadena|Descripción textual opcional para el canal.|
+|displayName|Cadena|Nombre de canal tal y como aparecerá para el usuario en Microsoft Teams.|
+|id|Cadena|Identificador único de la de los canales. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |fichas|colección de [teamsTab](../resources/teamstab.md)|Una colección de todas las fichas en el canal. Una propiedad de navegación.|
 

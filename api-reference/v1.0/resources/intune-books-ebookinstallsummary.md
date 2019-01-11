@@ -2,12 +2,13 @@
 title: Tipo de recurso eBookInstallSummary
 description: Contiene las propiedades del resumen de la instalación de un libro para un dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 4f94c82a0d7cd234206586829981c62ba7d0a959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b33f319106c39e11931726fcebcc8d5aa8d6ba46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825784"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 
@@ -23,7 +24,7 @@ Contiene las propiedades del resumen de la instalación de un libro para un disp
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |installedDeviceCount|Int32|Número de dispositivos que han instalado correctamente este libro.|
 |failedDeviceCount|Int32|Número de dispositivos que no han podido instalar este libro.|
 |notInstalledDeviceCount|Int32|Número de dispositivos que no han instalado este libro.|

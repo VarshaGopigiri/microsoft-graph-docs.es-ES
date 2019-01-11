@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
-ms.openlocfilehash: eaf73cf54671393b61cc37b5a5d1922060640882
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: daee18357e3f19f646a816070ca41a660f7b7ed3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029837"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810951"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -54,7 +55,7 @@ A continuación se incluye una representación JSON del recurso **baseItem**.
 | id                   | string            | El identificador único de la unidad. Solo lectura.                                         |
 | createdBy            | [identitySet][]   | Identidad del usuario, del dispositivo o de la aplicación que ha creado el elemento. Solo lectura.        |
 | createdDateTime      | dateTimeOffset    | Fecha y hora de creación del elemento. Solo lectura.                                             |
-| description          | String            | Proporciona una descripción del elemento visible para el usuario. Opcional.                             |
+| description          | Cadena            | Proporciona una descripción del elemento visible para el usuario. Opcional.                             |
 | eTag                 | string            | ETag para el elemento. Solo lectura.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identidad del usuario, el dispositivo y la aplicación que modificó por última vez el elemento. Solo lectura. |
 | lastModifiedDateTime | dateTimeOffset    | Fecha y hora de la última modificación del elemento. Solo lectura.                                   |
@@ -64,7 +65,7 @@ A continuación se incluye una representación JSON del recurso **baseItem**.
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación       | Tipo     | Descripción
+| Relación       | Tipo     | Description
 |:-------------------|:---------|:---------------------------------------------
 | createdByUser      | [user][] | Identidad del usuario que ha creado el elemento. Solo lectura.
 | lastModifiedByUser | [user][] | Identidad del usuario que ha modificado por última vez el elemento. Solo lectura.

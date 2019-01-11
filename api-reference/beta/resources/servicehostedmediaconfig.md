@@ -2,12 +2,13 @@
 title: tipo de recurso serviceHostedMediaConfig
 description: El tipo de serviceHostedMediaConfig.
 author: VinodRavichandran
-ms.openlocfilehash: 544c1d3bce934064092e0f9c74b888686e49d426
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ec2ff24ef0bb45a9b49ecf2d0dc5e7419318b5af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828703"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso serviceHostedMediaConfig
 
@@ -17,7 +18,7 @@ El tipo de serviceHostedMediaConfig.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                    | Tipo                                                        | Descripción                                       |
+| Propiedad                    | Tipo                                                        | Description                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | colección de [mediaInfo](mediainfo.md)                        | La lista de medios para recuperar previamente.                   |
 | removeFromDefaultAudioGroup | Booleano                                                     | Quitar a participante automática de grupo de audio predeterminado. |

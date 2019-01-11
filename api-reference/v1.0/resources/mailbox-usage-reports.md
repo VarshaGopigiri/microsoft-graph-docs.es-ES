@@ -1,12 +1,13 @@
 ---
 title: Informes de uso de buzones
 description: Use los informes de uso de buzones para obtener información sobre los usuarios con un buzón y su nivel de actividad, que se basa principalmente en los correos electrónicos enviados y recibidos. También puede ver cuánto almacenamiento usa cada buzón y cuantos buzones están próximos a sus cuotas de almacenamiento.
-ms.openlocfilehash: 6ebaa1e829d4f97f8fa354a42a175a8f392e0c69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a802b392d6dda1e7a56fecbee9cc489f1833caba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826295"
 ---
 # <a name="mailbox-usage-reports"></a>Informes de uso de buzones
 

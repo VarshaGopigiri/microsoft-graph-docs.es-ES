@@ -2,12 +2,13 @@
 title: Restablecer la sincronización en un educationSynchronizationProfile
 description: Restablecer la sincronización de un perfil de sincronización de datos de school específicos en el inquilino.
 author: mmast-msft
-ms.openlocfilehash: 29d21318737ceba3bd380eaf20a9500a6a711857
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54352d29280d671aaddc152307d8669f64c11bdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362443"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808543"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Restablecer la sincronización en un educationSynchronizationProfile
 
@@ -33,7 +34,7 @@ POST /synchronizationProfiles/{id}/reset
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 

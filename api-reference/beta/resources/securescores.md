@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso secureScores
 description: 'parte superior = n, donde n = número de días de datos que desea recuperar. '
-ms.openlocfilehash: 96d5c487bb854559b0128d93ea8e0783fcc61f0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828738"
 ---
 # <a name="securescores-resource-type"></a>tipo de recurso secureScores
 
@@ -25,11 +26,11 @@ Representa la puntuación de seguro de un inquilino por día de los resultados d
 ## <a name="properties"></a>Propiedades
 Que contiene propiedades de tipo de entidad de la seguridad del inquilino puntuación (datos de instantánea diaria).
 
-|Propiedad |Tipo |Descripción |
+|Propiedad |Tipo |Description |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   Identificador de cadena GUID para el inquilino.  |
+|   azureTenantId   |   Cadena  |   Identificador de cadena GUID para el inquilino.  |
 |   createdDateTime |   DateTimeOffset  |   La fecha cuando se crea la entidad.  |
-|   id  |   String  |   Combinación de azureTenantId_createdDateTime.   |
+|   id  |   Cadena  |   Combinación de azureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Con una licencia de recuento de usuarios del inquilino determinado.    |
 |   activeUserCount |   Int32   |   Recuento de usuario activo del inquilino determinado.  |
 |   currentScore    |   Doble  |   Puntuación actual del inquilino alcanzado en la fecha especificada.    |

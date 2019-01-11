@@ -2,12 +2,13 @@
 title: Enumerar miembros
 description: Recupera una lista de los usuarios que están asignados al rol de directorio.  Solo los usuarios se pueden asignar a un rol de directorio.
 author: lleonard-msft
-ms.openlocfilehash: 8bd0f67d6ca565dac6dfae501f5bc5c829f4db3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d7f0ee776646933743cd1fefb63eaa620ffe7ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824811"
 ---
 # <a name="list-members"></a>Enumerar miembros
 
@@ -32,7 +33,7 @@ GET /directoryRoles/{id}/members
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

@@ -2,12 +2,13 @@
 title: 'Range: merge'
 description: Combinar las celdas del rango en una región de la hoja de cálculo.
 author: lumine2008
-ms.openlocfilehash: 628acea9c86ff7cf8b460fb5db2abb7157c85146
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e6c5f0b56ddaff77802d8258d4c2226c538a5d90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806240"
 ---
 # <a name="range-merge"></a>Range: merge
 
@@ -40,7 +41,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |across|boolean|Opcional. Verdadero para que se combinen las celdas de cada fila del rango especificado como celdas combinadas distintas. El valor predeterminado es falso.|
 

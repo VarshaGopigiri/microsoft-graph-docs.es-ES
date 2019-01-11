@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso iosVppAppAssignedDeviceLicense
 description: asignación de licencias por volumen compra programa dispositivo iOS. Esta clase no es compatible con Crear, Eliminar ni Actualizar.
-ms.openlocfilehash: 3adc3ea1de5f0e27d367c47ca88c978f18f15655
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5c7f378def53950fd4dfbcd76b2a2820506ed7d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828332"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>tipo de recurso iosVppAppAssignedDeviceLicense
 
@@ -30,13 +31,13 @@ Hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedl
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|String|La dirección de correo electrónico del usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userId|String|El identificador de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userName|String|El nombre de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|String|El nombre principal de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|managedDeviceId|String|El identificador de dispositivo administrado.|
-|deviceName|String|El nombre del dispositivo.|
+|id|Cadena|Clave de la entidad. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|Cadena|La dirección de correo electrónico del usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userId|Cadena|El identificador de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userName|Cadena|El nombre de usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|Cadena|El nombre principal del usuario. Se hereda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|managedDeviceId|Cadena|El identificador de dispositivo administrado.|
+|deviceName|Cadena|El nombre del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

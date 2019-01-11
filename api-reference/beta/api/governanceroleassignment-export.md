@@ -1,12 +1,13 @@
 ---
 title: Exportar governanceRoleAssignmentRequests
 description: Recuperar una colección de governanceRoleAssignmentRequests en el formato `application/octet-stream`, que se puede analizar como un archivo .csv en el explorador.
-ms.openlocfilehash: 8b9e64faeb8134f5b0bb964d296b1bab309021d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10fd7c720bf7b6f162a4d8c2189e81a9205e53ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828731"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Exportar governanceRoleAssignmentRequests
 
@@ -17,7 +18,7 @@ Recuperar una colección de [governanceRoleAssignmentRequests](../resources/gove
 ## <a name="permissions"></a>Permisos
 Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).
 
-|Tipo de permiso      | Permissions              |
+|Tipo de permiso      | Permisos              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (cuenta profesional o educativa) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (cuenta personal de Microsoft) | No admitida.    |

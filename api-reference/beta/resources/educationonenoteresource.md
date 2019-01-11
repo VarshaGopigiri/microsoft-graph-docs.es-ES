@@ -2,12 +2,13 @@
 title: tipo de recurso educationOneNoteResource
 description: 'Una subclase de educationResource. Esto representa la ubicación de la página de OneNote.  '
 author: mmast-msft
-ms.openlocfilehash: dc6fc6a71da12a27cb589e072371814e4bc33cc1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9dea19683786d22c48af2eedd6239ffe76441ef2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825931"
 ---
 # <a name="educationonenoteresource-resource-type"></a>tipo de recurso educationOneNoteResource
 
@@ -16,10 +17,10 @@ ms.locfileid: "27359867"
 Una subclase de [educationResource](educationresource.md). Esto representa la ubicación de la página de OneNote.  
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|pageUrl|String|La dirección URL Microsoft Graph a la página de OneNote.|
-|sectionName|String|Nombre de la sección que se deben copiar en distribuciones o que se han copiado en.|
+|pageUrl|Cadena|La dirección URL Microsoft Graph a la página de OneNote.|
+|sectionName|Cadena|Nombre de la sección que se deben copiar en distribuciones o que se han copiado en.|
 
 ## <a name="json-representation"></a>Representación JSON
 

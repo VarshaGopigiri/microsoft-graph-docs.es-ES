@@ -2,12 +2,13 @@
 title: acción updateDeviceProfileAssignment
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 9f9fb1b628d12dd1eacb2a30dfefa82a3736c23e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8423468957225c4dc79ad15b5c7d91199243ba0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818770"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>acción updateDeviceProfileAssignment
 
@@ -38,14 +39,14 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |DeviceID|Colección de cadenas|Todavía no documentado|
 

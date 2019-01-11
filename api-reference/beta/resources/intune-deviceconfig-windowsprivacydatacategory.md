@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsPrivacyDataCategory
 description: Especificador de categoría de Windows privacidad datos para el acceso a datos de privacidad.
 author: tfitzmac
-ms.openlocfilehash: f5a9f0fc23e7fa5f3036b8653609db694f6932dd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b533b9ecbf08f09760b57bb0d2bac7080746e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826757"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>tipo de enumeración windowsPrivacyDataCategory
 
@@ -17,7 +18,7 @@ ms.locfileid: "27304952"
 
 Especificador de categoría de Windows privacidad datos para el acceso a datos de privacidad.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|Ningún nivel de acceso no especificado, del color. Es posible que se comportan de dispositivo ya sea como en UserInControl o ForceAllow. Es posible que dependen de los datos de privacidad sido tener acceso a las versiones de Windows y otros factores.|
 |accountInfo|1|Permiten el nombre del usuario de acceso de aplicaciones, imágenes y otra información de cuenta creado en la cuenta de Microsoft. Se agregó en Windows 10, versión 1607.|

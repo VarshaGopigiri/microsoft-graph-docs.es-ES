@@ -2,12 +2,13 @@
 title: Crear roleScopeTag
 description: Crear un nuevo objeto roleScopeTag.
 author: tfitzmac
-ms.openlocfilehash: 2aaede673afa4346a1defbc9449a4e08d9d1c614
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 205269e93ba0f24afc37ef64d4c2ed0da1036ca1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827443"
 ---
 # <a name="create-rolescopetag"></a>Crear roleScopeTag
 
@@ -39,7 +40,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto roleScopeTag.
@@ -48,9 +49,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
-|displayName|String|El para mostrar o el nombre descriptivo de la etiqueta de ámbito de función.|
-|descripción|String|Descripción de la etiqueta de ámbito de función.|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|displayName|Cadena|El para mostrar o el nombre descriptivo de la etiqueta de ámbito de función.|
+|descripción|Cadena|Descripción de la etiqueta de ámbito de función.|
 
 
 

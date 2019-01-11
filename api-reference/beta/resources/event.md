@@ -2,12 +2,13 @@
 title: tipo de recurso de evento
 description: Un evento de un calendario.
 author: angelgolfer-ms
-ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: b1986a6d463e1750fea05144e5a8520c62e5a94a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826764"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -95,13 +96,13 @@ Aquí tiene una representación JSON del recurso
 |:---------------|:--------|:----------|
 |attendees|Colección de [ATTENDEE](attendee.md)|La colección de asistentes del evento.|
 |body|[ItemBody](itembody.md)|El cuerpo del mensaje asociado al evento. Puede mostrarse en formato de texto o HTML.|
-|bodyPreview|String|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
+|bodyPreview|Cadena|La vista previa del mensaje asociado al evento. Se muestran en formato de texto.|
 |categories|Colección string|Las categorías asociadas al evento. Cada categoría corresponde a la propiedad **displayName** de un [outlookCategory](outlookcategory.md) definidos para el usuario.|
-|changeKey|String|Identifica la versión del objeto de evento. Cada vez que cambia el evento, cambia también ChangeKey. Esto permite que Exchange aplique los cambios a la versión correcta del objeto.|
+|changeKey|Cadena|Identifica la versión del objeto de evento. Cada vez que cambia el evento, cambia también ChangeKey. Esto permite que Exchange aplique los cambios a la versión correcta del objeto.|
 |createdDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|La fecha y hora en que finaliza el evento.|
 |hasAttachments|Booleano|Se establece como true si el evento tiene datos adjuntos.|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 |importance|String|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isAllDay|Booleano|Se establece como true si el evento dura todo el día.|
 |isCancelled|Booleano|Se establece como true si el evento ha sido cancelado.|
@@ -110,7 +111,7 @@ Aquí tiene una representación JSON del recurso
 |lastModifiedDateTime|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|La ubicación del evento.|
 |locations|Colección de [ubicación](location.md)|Ubicaciones donde se celebra el evento o en las que se asiste. Las propiedades **location** y **locations** siempre se corresponden entre sí. Si se actualiza la propiedad **location**, se eliminarían las ubicaciones anteriores de la colección **locations** y se reemplazarían por el nuevo valor de **location**. |
-|onlineMeetingUrl|String|Una dirección URL para una reunión en línea. La propiedad sólo se establece cuando el organizador especifica un evento como una reunión en línea, como Skype. Solo lectura.|
+|onlineMeetingUrl|Cadena|Una dirección URL para una reunión en línea. La propiedad sólo se establece cuando el organizador especifica un evento como una reunión en línea, como Skype. Solo lectura.|
 |organizador|[Recipient](recipient.md)|El organizador del evento.|
 |originalEndTimeZone|Cadena|Zona horaria de finalización que se estableció cuando se creó el evento. Un valor de `tzone://Microsoft/Custom` indica que se ha establecido una zona horaria heredada en el cliente de escritorio de Outlook.|
 |originalStart|DateTimeOffset|El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
@@ -119,14 +120,14 @@ Aquí tiene una representación JSON del recurso
 |reminderMinutesBeforeStart|Int32|El número de minutos antes de la hora de inicio del evento en que se producirá la alerta del recordatorio.|
 |responseRequested|Booleano|Se establece como true si el remitente quiere una respuesta cuando el evento se acepta o se rechaza.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indica el tipo de respuesta que se envía en respuesta a un mensaje de evento.|
-|confidencialidad|String| Los valores posibles son: `normal`, `personal`, `private` y `confidential`.|
-|seriesMasterId|String|El identificador para el elemento de patrón de serie periódica, si este evento es parte de una serie periódica.|
+|confidencialidad|Cadena| Los valores posibles son: `normal`, `personal`, `private` y `confidential`.|
+|seriesMasterId|Cadena|El identificador para el elemento de patrón de serie periódica, si este evento es parte de una serie periódica.|
 |showAs|String|El estado que se mostrará. Los valores posibles son: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[DateTimeTimeZone](datetimetimezone.md)|La hora de inicio del evento.|
-|subject|String|El texto de la línea de asunto del evento.|
+|subject|Cadena|El texto de la línea de asunto del evento.|
 |type|String|El tipo de evento. Los valores posibles son: `singleInstance`, `occurrence`, `exception` y `seriesMaster`. Solo lectura|
-|UID|String|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes. **Nota:** esta propiedad tiene el mismo objetivo que el `iCalUid` (propiedad) en el [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0) en el extremo de la versión 1.0, pero no se garantiza que tienen el mismo valor.|
-|webLink|String|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
+|UID|Cadena|Un identificador único que comparten todas las instancias de un evento a través de calendarios diferentes. **Nota:** esta propiedad tiene el mismo objetivo que el `iCalUid` (propiedad) en el [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0) en el extremo de la versión 1.0, pero no se garantiza que tienen el mismo valor.|
+|webLink|Cadena|La dirección URL para abrir el evento en Outlook Web App.<br/><br/>El evento se abrirá en el navegador si está conectado a su buzón mediante Outlook Web App. Se le pedirá que inicie sesión si no la ha iniciado ya en el navegador.<br/><br/>Se puede acceder a esta dirección URL desde un iFrame.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

@@ -1,12 +1,13 @@
 ---
 title: Enumerar clases
 description: 'Recupere una lista de los objetos de clase. Tenga en cuenta que si se usa el token delegado, los miembros solo pueden ver información sobre sus propias clases. '
-ms.openlocfilehash: c7bcb5e48ed76381f1a59a955d98059812b573a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f5cde95f6dc577a0f0330d2ead9291c07db47053
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089332"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809201"
 ---
 # <a name="list-classes"></a>Enumerar clases
 

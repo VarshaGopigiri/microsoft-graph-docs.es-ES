@@ -2,12 +2,13 @@
 title: Tipo de recurso omaSettingStringXml
 description: Definición de la cadena XML de la configuración de OMA.
 author: tfitzmac
-ms.openlocfilehash: c7f7d07a94550d86e6507e9202195d09e9555f60
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 263325829895c87a3aa8b443970f92df667a04ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332014"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829592"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Tipo de recurso omaSettingStringXml
 
@@ -21,7 +22,7 @@ Hereda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|cadena|Nombre para mostrar. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descripción|String|Descripción. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|descripción|Cadena|Descripción. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|cadena|OMA. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|cadena|Nombre de archivo asociado a la propiedad de valor (*.xml).|
 |valor|Binario|Valor. (Matriz de bytes codificada UTF8)|

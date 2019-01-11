@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso mentionsPreview
 description: Representa información acerca de los objetos de mención en una instancia de recursos.
-ms.openlocfilehash: cf6bed3cdfb2d3f541438da0c06fcf8f4873c17e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1534b7f0ef48a80d0faaaa09880b91cb270e8eca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826113"
 ---
 # <a name="mentionspreview-resource-type"></a>tipo de recurso mentionsPreview
 
@@ -15,7 +16,7 @@ ms.locfileid: "27089766"
 Representa información sobre los objetos [mencione](../resources/mention.md) en una instancia de recursos.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 | isMentioned | Booleano | Es True si el usuario ha iniciado sesión se menciona en la instancia de recurso primario. Solo lectura. Filtro de admite. |
 

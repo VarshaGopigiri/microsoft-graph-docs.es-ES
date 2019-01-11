@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso historyItem
 description: Representa un elemento de historial para una actividad en una aplicación. Actividades de usuario representan un destino único dentro de la aplicación - por ejemplo, un programa de TV, un documento o una campaña actual en un juego de vídeo. Cuando un usuario se activa con esa actividad, la contratación se captura como un elemento de historial que indica la hora de inicio y finalización para esa actividad. Como el usuario volver a contrata con esa actividad a través del tiempo, se registran varios elementos de historial para una actividad de usuario único.
-ms.openlocfilehash: 5687e592a65e162c105d97c90cd7a6f8f578d303
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7eb6d72b55530d1938c9c092dd5b80f54929a3e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825777"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso historyItem
 
@@ -32,14 +33,14 @@ Cuando una aplicación crea una sesión, se debe agregar un objeto **historyItem
 |createdDateTime | DateTimeOffset | Establecido por el servidor. Fecha y hora en UTC cuando se creó el objeto en el servidor.|
 |lastModifiedDateTime | DateTimeOffset | Establecido por el servidor. Fecha y hora en UTC cuando se modificó el objeto en el servidor.|
 |id | Cadena | Necesario. GUID del conjunto de clientes para el objeto **historyItem** .|
-|startedDateTime | DateTimeOffset | Obligatorio. DateTime de UTC cuando se inició la **historyItem** (sesión de actividad). Requerida para el historial de escala de tiempo.|
+|startedDateTime | DateTimeOffset | Necesario. DateTime de UTC cuando se inició la **historyItem** (sesión de actividad). Requerida para el historial de escala de tiempo.|
 |lastActiveDateTime | DateTimeOffset | Opcional. DateTime de UTC cuando la **historyItem** (sesión actividad) se entiende por última vez como estado activo o terminado - si es nulo, **historyItem** debe estar en curso.|
 |expirationDateTime | DateTimeOffset | Opcional. DateTime de UTC cuando el **historyItem** experimentará eliminar disco duro. Se puede establecer por el cliente.|
 |activeDurationSeconds | int | Opcional. La duración de contratación de usuario activo. Si no se proporciona, esto se calcula a partir de la **startedDateTime** y **lastActiveDateTime**.|
 
 ## <a name="relationships"></a>Relaciones
 
-|Relación | Tipo | Descripción|
+|Relación | Tipo | Description|
 |:------------|:-----|:-----------|
 |actividad| [activity](../resources/projectrome-activity.md) | Opcional. NavigationProperty/contención; propiedad de navegación a la actividad asociada.|
 

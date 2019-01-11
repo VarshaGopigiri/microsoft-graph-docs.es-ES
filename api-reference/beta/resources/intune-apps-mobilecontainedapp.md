@@ -2,12 +2,13 @@
 title: tipo de recurso mobileContainedApp
 description: Una clase abstracta que representa una aplicación de contenidos en una mobileApp que actúa como un paquete.
 author: tfitzmac
-ms.openlocfilehash: 314225c46247bd122c825f0f883378513445ce0a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b81ee4ca194d1d01e3d834b3287f6b400e712a27
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826288"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>tipo de recurso mobileContainedApp
 
@@ -25,7 +26,7 @@ Una clase abstracta que representa una aplicación de contenidos en una mobileAp
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

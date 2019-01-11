@@ -1,12 +1,13 @@
 ---
 title: Lista connectorGroups
 description: Recuperar una lista de objetos de connectorgroup.
-ms.openlocfilehash: 284684312aec1e7409ed7ebf51d7c18e93ad4da8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a9629e045487e7f29c84f3f24be0abedbe846ea8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808364"
 ---
 # <a name="list-connectorgroups"></a>Lista connectorGroups
 
@@ -33,7 +34,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | Bearer. Obligatorio|
+| Autorización  | Bearer. Obligatorio|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

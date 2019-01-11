@@ -2,12 +2,13 @@
 title: Actualizar educationsubmission
 description: Agregue una calificación y comentarios a una presentación. Profesores solo pueden realizar esta operación. Tenga en cuenta que no tiene acceso a las propiedades de remuneración el permiso básico y, por lo tanto, no se puede escribir en calificación o comentarios. Esta acción no liberar remuneración y los comentarios al alumno. Un profesor debe realizar una acción de liberación explícita para los datos de calificación que se devuelven a los estudiantes.
 author: dipakboyed
-ms.openlocfilehash: 2a63091eb8778ee9a67f55ecb3b18680f80f017d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 516940f9a6dd43460aa0ceb9b955c41dc89196c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318686"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828787"
 ---
 # <a name="update-educationsubmission"></a>Actualizar educationsubmission
 
@@ -39,7 +40,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 <!-- Provide the property descriptions. -->
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |comentarios|educationFeedback||
 |grade|educationAssignmentGrade||

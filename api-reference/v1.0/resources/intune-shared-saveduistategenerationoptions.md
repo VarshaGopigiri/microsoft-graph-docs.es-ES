@@ -2,12 +2,13 @@
 title: tipo de enumeración savedUIStateGenerationOptions
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 9074f057a9bc660551da4114c0fe6e2a481271b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 341d851bf5a43381507e98bdb666e0d1e34a6bf4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826400"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>tipo de enumeración savedUIStateGenerationOptions
 
@@ -15,9 +16,9 @@ ms.locfileid: "27301284"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Todavía no documentado|
+|none|0|Todavía no documentado|
 |omitSilverlightPolicyReferences|1|Todavía no documentado|
 
 

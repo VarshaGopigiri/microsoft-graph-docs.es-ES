@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso imageInfo
 description: Un tipo complejo para que representa la propiedad **atribución** en el elemento visualInfo del objeto de actividad.
-ms.openlocfilehash: dbd04c5350d618540ebdffcb38a2bc11bfef6129
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828570"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
 
@@ -16,10 +17,10 @@ Un tipo complejo para que representa la propiedad **atribución** en el elemento
 
 ## <a name="properties"></a>Propiedades
 
-|Nombre | Tipo | Descripción|
+|Nombre | Tipo | Description|
 |:----|:-----|:-----------|
-|iconUrl | String | Opcional; URI que señala a un icono que representa la aplicación que se usa para generar la actividad|
-|alternateText | String | Opcional; contenido accesible de texto alternativo para la imagen|
+|iconUrl | Cadena | Opcional; URI que señala a un icono que representa la aplicación que se usa para generar la actividad|
+|alternateText | Cadena | Opcional; contenido accesible de texto alternativo para la imagen|
 |addImageQuery | Booleano | Opcional; parámetro utilizado para indicar el servidor es capaz de procesar imagen dinámicamente en respuesta a parametrización. Por ejemplo: una imagen de contraste alto|
 
 ## <a name="json-representation"></a>Representación JSON

@@ -1,12 +1,13 @@
 ---
 title: Actualizar bookingstaffmember
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 99501f31ccd2b810d6a0c7f836d5b70bb98f223b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ba2ea126f916b6bd91b83bdd81e24d30fae8ac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824986"
 ---
 # <a name="update-bookingstaffmember"></a>Actualizar bookingstaffmember
 
@@ -35,12 +36,12 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Booleano|True significa que, si el miembro del personal es un usuario de Office 365, la API de reservas usa calendario personal de los empleados en Office 365, así como la propiedad **workingHours** para determinar la disponibilidad. |
 |colorIndex|Int32|Identifica un color para representar al miembro del personal. El color se corresponde con la paleta de colores en la página de **Detalles del personal** en la aplicación de reservas.|
-|displayName|String|El nombre del miembro del personal, tal como se muestra a los clientes.|
-|emailAddress|String|La dirección de correo electrónico del miembro del personal. Esto puede ser en el mismo arrendatario de Office 365 como la empresa o en un dominio de correo electrónico diferentes. Se utiliza esta dirección de correo electrónico si la propiedad **sendConfirmationsToOwner** está establecida en true en la directiva de programación de la empresa.|
+|displayName|Cadena|El nombre del miembro del personal, tal como se muestra a los clientes.|
+|emailAddress|Cadena|La dirección de correo electrónico del miembro del personal. Esto puede ser en el mismo arrendatario de Office 365 como la empresa o en un dominio de correo electrónico diferentes. Se utiliza esta dirección de correo electrónico si la propiedad **sendConfirmationsToOwner** está establecida en true en la directiva de programación de la empresa.|
 |role|string| La función del miembro del personal de la empresa. Los valores posibles son: `guest`, `administrator`, `viewer` y `externalGuest`.|
 |useBusinessHours|Booleano|True significa que la disponibilidad de los empleados se determina por la propiedad **businessHours** de la empresa. False significa que la disponibilidad está determinada por el valor de la propiedad **workingHouse** de los empleados.|
 |workingHours|colección de [bookingWorkHours](../resources/bookingworkhours.md)|El intervalo de horas de cada día de la semana en los que el miembro del personal está disponible para reserva.|

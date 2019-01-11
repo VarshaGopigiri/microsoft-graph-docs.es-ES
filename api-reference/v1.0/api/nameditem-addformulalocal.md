@@ -1,12 +1,13 @@
 ---
 title: 'Agregar FormulaLocal del elemento con nombre '
 description: Agrega un nuevo nombre a la colección del ámbito especificado, empleando la configuración regional del usuario para la fórmula.
-ms.openlocfilehash: 5e4279447143e1b004d468bdcaa9f7b4c2bf8c8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 24232699220a025c19a4e2141d15ac76f0ad807f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814178"
 ---
 # <a name="add-named-item-formulalocal"></a>Agregar FormulaLocal del elemento con nombre 
 Agrega un nuevo nombre a la colección del ámbito especificado, empleando la configuración regional del usuario para la fórmula.

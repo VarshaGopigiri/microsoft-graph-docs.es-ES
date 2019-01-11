@@ -2,12 +2,13 @@
 title: Lista iosVpnConfigurations
 description: Propiedades de la lista y relaciones de los objetos iosVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: eeebea3787c5a37baa16a29c0f00a973903bffc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a13501285ccaaf3322da917eefc0e7face70eda2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812988"
 ---
 # <a name="list-iosvpnconfigurations"></a>Lista iosVpnConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

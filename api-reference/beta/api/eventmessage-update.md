@@ -2,12 +2,13 @@
 title: Update eventMessage
 description: Actualiza las propiedades de un objeto eventMessage.
 author: angelgolfer-ms
-ms.openlocfilehash: 922f17528b864c8cdfae39a4df475a0a61f40103
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6af0d681c9e0de820dd34cf659991df648c2e7f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809222"
 ---
 # <a name="update-eventmessage"></a>Update eventMessage
 
@@ -33,7 +34,7 @@ PATCH /me/mailFolders/{id}/messages/{id}
 PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
