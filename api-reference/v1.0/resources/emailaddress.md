@@ -1,26 +1,27 @@
 ---
 title: Tipo de recurso emailAddress
 description: Nombre y dirección de correo de un contacto o destinatario del mensaje.
-ms.openlocfilehash: 962b2f36af9e292125edc3da8606cd532b8c2ec0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5ea1919e5c5f389c9b7fece508e8339f722b725a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27028927"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826890"
 ---
-# <a name="emailaddress-resource-type"></a><span data-ttu-id="a384a-103">Tipo de recurso emailAddress</span><span class="sxs-lookup"><span data-stu-id="a384a-103">emailAddress resource type</span></span>
+# <a name="emailaddress-resource-type"></a><span data-ttu-id="224e4-103">Tipo de recurso emailAddress</span><span class="sxs-lookup"><span data-stu-id="224e4-103">emailAddress resource type</span></span>
 
-<span data-ttu-id="a384a-104">Nombre y dirección de correo de un contacto o destinatario del mensaje.</span><span class="sxs-lookup"><span data-stu-id="a384a-104">The name and email address of a contact or message recipient.</span></span>
+<span data-ttu-id="224e4-104">Nombre y dirección de correo de un contacto o destinatario del mensaje.</span><span class="sxs-lookup"><span data-stu-id="224e4-104">The name and email address of a contact or message recipient.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a384a-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="a384a-105">Properties</span></span>
-| <span data-ttu-id="a384a-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="a384a-106">Property</span></span>     | <span data-ttu-id="a384a-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="a384a-107">Type</span></span>   |<span data-ttu-id="a384a-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="a384a-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="224e4-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="224e4-105">Properties</span></span>
+| <span data-ttu-id="224e4-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="224e4-106">Property</span></span>     | <span data-ttu-id="224e4-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="224e4-107">Type</span></span>   |<span data-ttu-id="224e4-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="224e4-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a384a-109">address</span><span class="sxs-lookup"><span data-stu-id="a384a-109">address</span></span>|<span data-ttu-id="a384a-110">String</span><span class="sxs-lookup"><span data-stu-id="a384a-110">String</span></span>|<span data-ttu-id="a384a-111">Dirección de correo de la persona o entidad.</span><span class="sxs-lookup"><span data-stu-id="a384a-111">The email address of the person or entity.</span></span>|
-|<span data-ttu-id="a384a-112">name</span><span class="sxs-lookup"><span data-stu-id="a384a-112">name</span></span>|<span data-ttu-id="a384a-113">String</span><span class="sxs-lookup"><span data-stu-id="a384a-113">String</span></span>|<span data-ttu-id="a384a-114">Nombre para mostrar de la persona o entidad.</span><span class="sxs-lookup"><span data-stu-id="a384a-114">The display name of the person or entity.</span></span>|
+|<span data-ttu-id="224e4-109">address</span><span class="sxs-lookup"><span data-stu-id="224e4-109">address</span></span>|<span data-ttu-id="224e4-110">String</span><span class="sxs-lookup"><span data-stu-id="224e4-110">String</span></span>|<span data-ttu-id="224e4-111">Dirección de correo de la persona o entidad.</span><span class="sxs-lookup"><span data-stu-id="224e4-111">The email address of the person or entity.</span></span>|
+|<span data-ttu-id="224e4-112">name</span><span class="sxs-lookup"><span data-stu-id="224e4-112">name</span></span>|<span data-ttu-id="224e4-113">String</span><span class="sxs-lookup"><span data-stu-id="224e4-113">String</span></span>|<span data-ttu-id="224e4-114">Nombre para mostrar de la persona o entidad.</span><span class="sxs-lookup"><span data-stu-id="224e4-114">The display name of the person or entity.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a384a-115">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="a384a-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="224e4-115">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="224e4-115">JSON representation</span></span>
 
-<span data-ttu-id="a384a-116">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="a384a-116">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="224e4-116">Aquí tiene una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="224e4-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

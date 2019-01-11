@@ -2,28 +2,29 @@
 title: Eliminar enrollmentConfigurationAssignment
 description: Elimina un enrollmentConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: aa809a2a69ec5e40470b9b95e9ca51dec13b9f10
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3af630f24c5a976cc8d1be948a542f18f0c4c70c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850067"
 ---
-# <a name="delete-enrollmentconfigurationassignment"></a><span data-ttu-id="3ab7a-103">Eliminar enrollmentConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="3ab7a-103">Delete enrollmentConfigurationAssignment</span></span>
+# <a name="delete-enrollmentconfigurationassignment"></a><span data-ttu-id="0ad30-103">Eliminar enrollmentConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="0ad30-103">Delete enrollmentConfigurationAssignment</span></span>
 
-> <span data-ttu-id="3ab7a-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0ad30-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="0ad30-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="3ab7a-105">Elimina un [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="3ab7a-105">Deletes a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="3ab7a-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="3ab7a-106">Prerequisites</span></span>
-<span data-ttu-id="3ab7a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3ab7a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0ad30-105">Elimina un [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="0ad30-105">Deletes a [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0ad30-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="0ad30-106">Prerequisites</span></span>
+<span data-ttu-id="0ad30-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ad30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3ab7a-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="3ab7a-109">Permission type</span></span>|<span data-ttu-id="3ab7a-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="3ab7a-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0ad30-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="0ad30-109">Permission type</span></span>|<span data-ttu-id="0ad30-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="0ad30-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3ab7a-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="3ab7a-111">Delegated (work or school account)</span></span>|<span data-ttu-id="3ab7a-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3ab7a-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="3ab7a-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3ab7a-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3ab7a-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-114">Not supported.</span></span>|
-|<span data-ttu-id="3ab7a-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="3ab7a-115">Application</span></span>|<span data-ttu-id="3ab7a-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-116">Not supported.</span></span>|
+|<span data-ttu-id="0ad30-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="0ad30-111">Delegated (work or school account)</span></span>|<span data-ttu-id="0ad30-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0ad30-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="0ad30-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0ad30-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0ad30-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0ad30-114">Not supported.</span></span>|
+|<span data-ttu-id="0ad30-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="0ad30-115">Application</span></span>|<span data-ttu-id="0ad30-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0ad30-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3ab7a-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="3ab7a-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ad30-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="0ad30-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,27 +33,27 @@ ms.locfileid: "27355037"
 DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3ab7a-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="3ab7a-118">Request headers</span></span>
-|<span data-ttu-id="3ab7a-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="3ab7a-119">Header</span></span>|<span data-ttu-id="3ab7a-120">Valor</span><span class="sxs-lookup"><span data-stu-id="3ab7a-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0ad30-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="0ad30-118">Request headers</span></span>
+|<span data-ttu-id="0ad30-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="0ad30-119">Header</span></span>|<span data-ttu-id="0ad30-120">Valor</span><span class="sxs-lookup"><span data-stu-id="0ad30-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3ab7a-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="3ab7a-121">Authorization</span></span>|<span data-ttu-id="3ab7a-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3ab7a-123">Aceptar</span><span class="sxs-lookup"><span data-stu-id="3ab7a-123">Accept</span></span>|<span data-ttu-id="3ab7a-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3ab7a-124">application/json</span></span>|
+|<span data-ttu-id="0ad30-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="0ad30-121">Authorization</span></span>|<span data-ttu-id="0ad30-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="0ad30-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0ad30-123">Accept</span><span class="sxs-lookup"><span data-stu-id="0ad30-123">Accept</span></span>|<span data-ttu-id="0ad30-124">application/json</span><span class="sxs-lookup"><span data-stu-id="0ad30-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3ab7a-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="3ab7a-125">Request body</span></span>
-<span data-ttu-id="3ab7a-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0ad30-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="0ad30-125">Request body</span></span>
+<span data-ttu-id="0ad30-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="0ad30-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3ab7a-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3ab7a-127">Response</span></span>
-<span data-ttu-id="3ab7a-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-128">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="0ad30-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0ad30-127">Response</span></span>
+<span data-ttu-id="0ad30-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="0ad30-128">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3ab7a-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3ab7a-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="3ab7a-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="3ab7a-130">Request</span></span>
-<span data-ttu-id="3ab7a-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0ad30-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0ad30-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="0ad30-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="0ad30-130">Request</span></span>
+<span data-ttu-id="0ad30-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="0ad30-131">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="3ab7a-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3ab7a-132">Response</span></span>
-<span data-ttu-id="3ab7a-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="3ab7a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0ad30-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0ad30-132">Response</span></span>
+<span data-ttu-id="0ad30-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="0ad30-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

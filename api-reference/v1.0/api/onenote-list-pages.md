@@ -2,26 +2,27 @@
 title: Enumerar páginas
 description: Recupera una lista de objetos page.
 author: Jewan-microsoft
-ms.openlocfilehash: aeb2fe975a6a058ebf4165dcdec0fd1f133c02ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f06404437fbd5dc34cef6d81e5b3d692bf5ce101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829368"
 ---
-# <a name="list-pages"></a><span data-ttu-id="db55a-103">Enumerar páginas</span><span class="sxs-lookup"><span data-stu-id="db55a-103">List pages</span></span>
+# <a name="list-pages"></a><span data-ttu-id="13f4a-103">Enumerar páginas</span><span class="sxs-lookup"><span data-stu-id="13f4a-103">List pages</span></span>
 
-<span data-ttu-id="db55a-104">Recupera una lista de objetos [page](../resources/page.md).</span><span class="sxs-lookup"><span data-stu-id="db55a-104">Retrieve a list of [page](../resources/page.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="db55a-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="db55a-105">Permissions</span></span>
-<span data-ttu-id="db55a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db55a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="13f4a-104">Recupera una lista de objetos [page](../resources/page.md).</span><span class="sxs-lookup"><span data-stu-id="13f4a-104">Retrieve a list of [page](../resources/page.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="13f4a-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="13f4a-105">Permissions</span></span>
+<span data-ttu-id="13f4a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="13f4a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="db55a-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="db55a-108">Permission type</span></span>      | <span data-ttu-id="db55a-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="db55a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="13f4a-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="13f4a-108">Permission type</span></span>      | <span data-ttu-id="13f4a-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="13f4a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="db55a-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="db55a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="db55a-111">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db55a-111">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="db55a-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="db55a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db55a-113">Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="db55a-113">Notes.Read, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="db55a-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="db55a-114">Application</span></span> | <span data-ttu-id="db55a-115">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db55a-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="13f4a-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="13f4a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="13f4a-111">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13f4a-111">Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="13f4a-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="13f4a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="13f4a-113">Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="13f4a-113">Notes.Read, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="13f4a-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="13f4a-114">Application</span></span> | <span data-ttu-id="13f4a-115">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13f4a-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="db55a-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="db55a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="13f4a-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="13f4a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onenote/pages
@@ -29,34 +30,34 @@ GET /users/{id | userPrincipalName}/onenote/pages
 GET /groups/{id}/onenote/pages
 GET /sites/{id}/onenote/pages
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="db55a-117">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="db55a-117">Optional query parameters</span></span>
-<span data-ttu-id="db55a-118">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="db55a-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="13f4a-117">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="13f4a-117">Optional query parameters</span></span>
+<span data-ttu-id="13f4a-118">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="13f4a-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="db55a-p102">La consulta predeterminada para páginas devuelve las primeras 20 páginas ordenadas por `lastModifiedTime desc`. Si la consulta predeterminada devuelve más de 20 páginas, la respuesta contendrá un `@odata.nextLink` que podrá usar para revisar el conjunto de resultados. El número máximo de páginas devueltas para una solicitud `top` es de 100.</span><span class="sxs-lookup"><span data-stu-id="db55a-p102">The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`. If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set. The maximum number of pages returned for a `top` request is 100.</span></span>
+<span data-ttu-id="13f4a-p102">La consulta predeterminada para páginas devuelve las primeras 20 páginas ordenadas por `lastModifiedTime desc`. Si la consulta predeterminada devuelve más de 20 páginas, la respuesta contendrá un `@odata.nextLink` que podrá usar para revisar el conjunto de resultados. El número máximo de páginas devueltas para una solicitud `top` es de 100.</span><span class="sxs-lookup"><span data-stu-id="13f4a-p102">The default query for pages returns the top 20 pages ordered by `lastModifiedTime desc`. If the default query returns more than 20 pages, the response contains an `@odata.nextLink` that you can use to page through the result set. The maximum number of pages returned for a `top` request is 100.</span></span>
 
-<span data-ttu-id="db55a-p103">La respuesta predeterminada expande `parentSection` y selecciona las propiedades `id`, `displayName` y `self` de la sección. Los valores válidos de `expand` de las páginas son `parentNotebook` y `parentSection`.</span><span class="sxs-lookup"><span data-stu-id="db55a-p103">The default response expands `parentSection` and selects the section's `id`, `displayName`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
+<span data-ttu-id="13f4a-p103">La respuesta predeterminada expande `parentSection` y selecciona las propiedades `id`, `displayName` y `self` de la sección. Los valores válidos de `expand` de las páginas son `parentNotebook` y `parentSection`.</span><span class="sxs-lookup"><span data-stu-id="13f4a-p103">The default response expands `parentSection` and selects the section's `id`, `displayName`, and `self` properties. Valid `expand` values for pages are `parentNotebook` and `parentSection`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="db55a-124">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="db55a-124">Request headers</span></span>
-| <span data-ttu-id="db55a-125">Nombre</span><span class="sxs-lookup"><span data-stu-id="db55a-125">Name</span></span>       | <span data-ttu-id="db55a-126">Type</span><span class="sxs-lookup"><span data-stu-id="db55a-126">Type</span></span> | <span data-ttu-id="db55a-127">Descripción</span><span class="sxs-lookup"><span data-stu-id="db55a-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="13f4a-124">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="13f4a-124">Request headers</span></span>
+| <span data-ttu-id="13f4a-125">Nombre</span><span class="sxs-lookup"><span data-stu-id="13f4a-125">Name</span></span>       | <span data-ttu-id="13f4a-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="13f4a-126">Type</span></span> | <span data-ttu-id="13f4a-127">Descripción</span><span class="sxs-lookup"><span data-stu-id="13f4a-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="db55a-128">Autorización</span><span class="sxs-lookup"><span data-stu-id="db55a-128">Authorization</span></span>  | <span data-ttu-id="db55a-129">string</span><span class="sxs-lookup"><span data-stu-id="db55a-129">string</span></span>  | <span data-ttu-id="db55a-p104">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="db55a-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="db55a-132">Aceptar</span><span class="sxs-lookup"><span data-stu-id="db55a-132">Accept</span></span> | <span data-ttu-id="db55a-133">string</span><span class="sxs-lookup"><span data-stu-id="db55a-133">string</span></span> | `application/json` |
+| <span data-ttu-id="13f4a-128">Autorización</span><span class="sxs-lookup"><span data-stu-id="13f4a-128">Authorization</span></span>  | <span data-ttu-id="13f4a-129">string</span><span class="sxs-lookup"><span data-stu-id="13f4a-129">string</span></span>  | <span data-ttu-id="13f4a-p104">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="13f4a-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="13f4a-132">Aceptar</span><span class="sxs-lookup"><span data-stu-id="13f4a-132">Accept</span></span> | <span data-ttu-id="13f4a-133">string</span><span class="sxs-lookup"><span data-stu-id="13f4a-133">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="db55a-134">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="db55a-134">Request body</span></span>
-<span data-ttu-id="db55a-135">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="db55a-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="13f4a-134">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="13f4a-134">Request body</span></span>
+<span data-ttu-id="13f4a-135">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="13f4a-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="db55a-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="db55a-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="13f4a-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="13f4a-136">Response</span></span>
 
-<span data-ttu-id="db55a-137">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [page](../resources/page.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="db55a-137">If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="db55a-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="db55a-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="db55a-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="db55a-139">Request</span></span>
-<span data-ttu-id="db55a-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="db55a-140">Here is an example of the request.</span></span>
+<span data-ttu-id="13f4a-137">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [page](../resources/page.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="13f4a-137">If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="13f4a-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="13f4a-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="13f4a-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="13f4a-139">Request</span></span>
+<span data-ttu-id="13f4a-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="13f4a-140">Here is an example of the request.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
-##### <a name="response"></a><span data-ttu-id="db55a-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="db55a-141">Response</span></span>
-<span data-ttu-id="db55a-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="db55a-142">Here is an example of the response.</span></span> <span data-ttu-id="db55a-143">Nota: El objeto de respuesta que se muestra aquí se trunca por razones de brevedad.</span><span class="sxs-lookup"><span data-stu-id="db55a-143">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="db55a-144">Todas las propiedades se devolverán desde una llamada real.</span><span class="sxs-lookup"><span data-stu-id="db55a-144">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="13f4a-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="13f4a-141">Response</span></span>
+<span data-ttu-id="13f4a-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="13f4a-142">Here is an example of the response.</span></span> <span data-ttu-id="13f4a-143">Nota: El objeto de respuesta que se muestra aquí se trunca por razones de brevedad.</span><span class="sxs-lookup"><span data-stu-id="13f4a-143">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="13f4a-144">Todas las propiedades se devolverán desde una llamada real.</span><span class="sxs-lookup"><span data-stu-id="13f4a-144">All of the properties will be returned from an actual call.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

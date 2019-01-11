@@ -2,30 +2,31 @@
 title: tipo de recurso resultInfo
 description: El tipo de resultInfo.
 author: VinodRavichandran
-ms.openlocfilehash: db208ed214213ec906dac18b65140f010014fc6c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ca814fd5c44f0f811099faed53354d08ce8befdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855282"
 ---
-# <a name="resultinfo-resource-type"></a><span data-ttu-id="132fa-103">tipo de recurso resultInfo</span><span class="sxs-lookup"><span data-stu-id="132fa-103">resultInfo resource type</span></span>
+# <a name="resultinfo-resource-type"></a><span data-ttu-id="fd600-103">tipo de recurso resultInfo</span><span class="sxs-lookup"><span data-stu-id="fd600-103">resultInfo resource type</span></span>
 
-> <span data-ttu-id="132fa-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="132fa-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="132fa-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="132fa-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fd600-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="fd600-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fd600-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="fd600-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="132fa-106">El tipo de resultInfo.</span><span class="sxs-lookup"><span data-stu-id="132fa-106">The resultInfo type.</span></span>
+<span data-ttu-id="fd600-106">El tipo de resultInfo.</span><span class="sxs-lookup"><span data-stu-id="fd600-106">The resultInfo type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="132fa-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="132fa-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fd600-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="fd600-107">Properties</span></span>
 
-| <span data-ttu-id="132fa-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="132fa-108">Property</span></span> | <span data-ttu-id="132fa-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="132fa-109">Type</span></span>   | <span data-ttu-id="132fa-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="132fa-110">Description</span></span>          |
+| <span data-ttu-id="fd600-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="fd600-108">Property</span></span> | <span data-ttu-id="fd600-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="fd600-109">Type</span></span>   | <span data-ttu-id="fd600-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="fd600-110">Description</span></span>          |
 | :------- | :----- | :------------------  |
-| <span data-ttu-id="132fa-111">código</span><span class="sxs-lookup"><span data-stu-id="132fa-111">code</span></span>     | <span data-ttu-id="132fa-112">String</span><span class="sxs-lookup"><span data-stu-id="132fa-112">String</span></span> | <span data-ttu-id="132fa-113">El código de resultado.</span><span class="sxs-lookup"><span data-stu-id="132fa-113">The result code.</span></span>     |
-| <span data-ttu-id="132fa-114">message</span><span class="sxs-lookup"><span data-stu-id="132fa-114">message</span></span>  | <span data-ttu-id="132fa-115">String</span><span class="sxs-lookup"><span data-stu-id="132fa-115">String</span></span> | <span data-ttu-id="132fa-116">El mensaje.</span><span class="sxs-lookup"><span data-stu-id="132fa-116">The message.</span></span>         |
-| <span data-ttu-id="132fa-117">subCode</span><span class="sxs-lookup"><span data-stu-id="132fa-117">subCode</span></span>  | <span data-ttu-id="132fa-118">String</span><span class="sxs-lookup"><span data-stu-id="132fa-118">String</span></span> | <span data-ttu-id="132fa-119">El código de resultado subcaracterística.</span><span class="sxs-lookup"><span data-stu-id="132fa-119">The result sub-code.</span></span> |
+| <span data-ttu-id="fd600-111">código</span><span class="sxs-lookup"><span data-stu-id="fd600-111">code</span></span>     | <span data-ttu-id="fd600-112">Cadena</span><span class="sxs-lookup"><span data-stu-id="fd600-112">String</span></span> | <span data-ttu-id="fd600-113">El código de resultado.</span><span class="sxs-lookup"><span data-stu-id="fd600-113">The result code.</span></span>     |
+| <span data-ttu-id="fd600-114">message</span><span class="sxs-lookup"><span data-stu-id="fd600-114">message</span></span>  | <span data-ttu-id="fd600-115">String</span><span class="sxs-lookup"><span data-stu-id="fd600-115">String</span></span> | <span data-ttu-id="fd600-116">El mensaje.</span><span class="sxs-lookup"><span data-stu-id="fd600-116">The message.</span></span>         |
+| <span data-ttu-id="fd600-117">subCode</span><span class="sxs-lookup"><span data-stu-id="fd600-117">subCode</span></span>  | <span data-ttu-id="fd600-118">Cadena</span><span class="sxs-lookup"><span data-stu-id="fd600-118">String</span></span> | <span data-ttu-id="fd600-119">El código de resultado subcaracterística.</span><span class="sxs-lookup"><span data-stu-id="fd600-119">The result sub-code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="132fa-120">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="132fa-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fd600-120">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="fd600-120">JSON representation</span></span>
 
-<span data-ttu-id="132fa-121">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="132fa-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fd600-121">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="fd600-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,7 +43,7 @@ ms.locfileid: "27380411"
 }
 ```
 
-## <a name="example-error-result"></a><span data-ttu-id="132fa-122">Resultado de Error de ejemplo</span><span class="sxs-lookup"><span data-stu-id="132fa-122">Example Error result</span></span>
+## <a name="example-error-result"></a><span data-ttu-id="fd600-122">Resultado de Error de ejemplo</span><span class="sxs-lookup"><span data-stu-id="fd600-122">Example Error result</span></span>
 
 <!-- {
   "blockType": "example",
@@ -56,7 +57,7 @@ ms.locfileid: "27380411"
 }
 ```
 
-## <a name="example-generic-success-result"></a><span data-ttu-id="132fa-123">Resultados de ejemplo genérico de éxito</span><span class="sxs-lookup"><span data-stu-id="132fa-123">Example Generic success result</span></span>
+## <a name="example-generic-success-result"></a><span data-ttu-id="fd600-123">Resultados de ejemplo genérico de éxito</span><span class="sxs-lookup"><span data-stu-id="fd600-123">Example Generic success result</span></span>
 
 <!-- {
   "blockType": "example",
@@ -70,7 +71,7 @@ ms.locfileid: "27380411"
 }
 ```
 
-## <a name="example-record-success-result"></a><span data-ttu-id="132fa-124">Resultado de correcto de registro de ejemplo</span><span class="sxs-lookup"><span data-stu-id="132fa-124">Example Record Success result</span></span>
+## <a name="example-record-success-result"></a><span data-ttu-id="fd600-124">Resultado de correcto de registro de ejemplo</span><span class="sxs-lookup"><span data-stu-id="fd600-124">Example Record Success result</span></span>
 
 <!-- {
   "blockType": "example",
