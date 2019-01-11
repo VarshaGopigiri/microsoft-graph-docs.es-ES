@@ -2,12 +2,13 @@
 title: Obtener educationSubmittedSubmissionResource
 description: Devuelve un recurso enviado. Esto estará disponible para un profesor después de que ha enviado un estudiante y estará disponible para los estudiantes después de que el profesor ha publicado la presentación.  Tenga en cuenta que los profesores pueden dejar notas en algunos recursos.
 author: dipakboyed
-ms.openlocfilehash: a956f7b18125f01798f804ab577450030a626b3a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74458ca4ce8d462b3e59cab2bf531937cf4f973e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808676"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>Obtener educationSubmittedSubmissionResource
 

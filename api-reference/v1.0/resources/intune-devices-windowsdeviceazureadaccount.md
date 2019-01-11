@@ -2,12 +2,13 @@
 title: Tipo de recurso windowsDeviceAzureADAccount
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: a6abae06e16d33f92c7f275890ec62ce294367da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4557fc5875b232727de8025a7640240807dda135
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804462"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Tipo de recurso windowsDeviceAzureADAccount
 
@@ -21,7 +22,7 @@ Hereda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccoun
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |password|cadena|Todavía no documentado. Heredado de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|String|Todavía no documentado|
+|userPrincipalName|Cadena|Todavía no documentado|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

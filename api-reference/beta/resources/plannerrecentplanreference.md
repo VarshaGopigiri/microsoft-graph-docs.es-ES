@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso plannerRecentPlanReference
 description: 'El recurso **plannerRecentPlanReference** escriba representa una referencia a un plannerPlan que recientemente se ha visto por un usuario. '
-ms.openlocfilehash: ac774ffbf7ebdfe45211cf50c2ce065921de30f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6ac17cd0a99d384cbc1f42e2e0d243c582204101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805680"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>tipo de recurso plannerRecentPlanReference
 
@@ -17,10 +18,10 @@ Aplicaciones deben tener en cuenta que las entradas de **plannerRecentPlanRefere
 Se recomienda que aplicaciones notificar a los usuarios cuando hay discrepancias y mantener actualizadas las entradas.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |lastAccessedDateTime|DateTimeOffset|La fecha y la hora que el plan fue la última vez por el usuario. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|planTitle|String|El título del plan en el momento de ve el usuario lo.|
+|planTitle|Cadena|El título del plan en el momento de ve el usuario lo.|
 
 ## <a name="json-representation"></a>Representación JSON
 

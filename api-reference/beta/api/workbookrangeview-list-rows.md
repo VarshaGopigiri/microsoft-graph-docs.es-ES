@@ -2,12 +2,13 @@
 title: Listar filas de rangeView
 description: Recuperar una lista de objetos de vista de rango.
 author: lumine2008
-ms.openlocfilehash: f6832294cc92b1e5b5e04bd73996aef9c638f069
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c2a0ef40464819e42ccc09a440abedb80d84993
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805729"
 ---
 # <a name="list-rangeview-rows"></a>Listar filas de rangeView
 

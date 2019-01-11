@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso windowsWifiEnterpriseEAPConfiguration
 description: Esta entidad ofrece descripciones de los métodos declarados, propiedades y relaciones expuestas por el CSP Wifi.
-ms.openlocfilehash: 5ed685d5dc25b3adea2a11a632c66dbe68fbebf5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b2406d0d41c1cbe6624bf55dcaa39faa848f238
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085552"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805764"
 ---
 # <a name="windowswifienterpriseeapconfiguration-resource-type"></a>tipo de recurso windowsWifiEnterpriseEAPConfiguration
 
@@ -30,26 +31,26 @@ Hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswif
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|preSharedKey|String|Ésta es la clave previamente compartida para la red Wi-Fi Personal WPA. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|preSharedKey|Cadena|Ésta es la clave previamente compartida para la red Wi-Fi Personal WPA. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Especificar el tipo de seguridad Wifi. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Los valores posibles son: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Especificar el tipo de límite de conexión intencionadas para la conexión wifi. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Los valores posibles son: `unrestricted`, `fixed` y `variable`.|
-|SSID|String|Especifique el SSID de la conexión wifi. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|networkName|String|Especifique el nombre de la configuración de red. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|SSID|Cadena|Especifique el SSID de la conexión wifi. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|networkName|Cadena|Especifique el nombre de la configuración de red. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |connectAutomatically|Booleano|Especifique si la conexión wifi debe conectarse automáticamente cuando en el rango. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |connectToPreferredNetwork|Booleano|Especifique si la conexión wifi debe conectarse a redes más preferidas cuando ya está conectado a éste.  Requiere ConnectAutomatically sea true. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |connectWhenNetworkNameIsHidden|Booleano|Especifique si la conexión wifi debe conectarse automáticamente incluso cuando el SSID no sea de difusión. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Especificar la configuración del proxy para la configuración de Wi-Fi Inherited desde [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Los valores posibles son: `none`, `manual` y `automatic`.|
-|proxyManualAddress|String|Especifique la dirección IP del servidor proxy. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxyManualAddress|Cadena|Especifique la dirección IP del servidor proxy. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxyManualPort|Int32|Especifique el puerto del servidor proxy. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|proxyAutomaticConfigurationUrl|String|Especifique la dirección URL de la secuencia de comandos de configuración de servidor proxy. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|proxyAutomaticConfigurationUrl|Cadena|Especifique la dirección URL de la secuencia de comandos de configuración de servidor proxy. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |forceFIPSCompliance|Booleano|Especifique si debe forzarse la compatibilidad con FIPS. Se hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|Especifique el inicio de sesión único de red en tipo. Los valores posibles son: `disabled`, `prelogon` y `postlogon`.|
 |maximumAuthenticationTimeoutInSeconds|Int32|Especificar el tiempo de espera de autenticación máximo (en segundos).  Intervalo válido: 1-120|
@@ -63,10 +64,10 @@ Hereda de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswif
 |trustedServerCertificateNames|Colección String|Especifique los nombres de certificado de servidor de confianza.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Especifique el método de autenticación. Los valores posibles son: `certificate` y `usernameAndPassword`.|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Especificar el protocolo de autenticación interna para EAP TTLS. Los valores posibles son: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap` y `microsoftChapVersionTwo`.|
-|outerIdentityPrivacyTemporaryValue|String|Especifique la cadena que va a reemplazar los nombres de usuario para privacidad cuando se utiliza EAP TTLS o PEAP.|
+|outerIdentityPrivacyTemporaryValue|Cadena|Especifique la cadena que va a reemplazar los nombres de usuario para privacidad cuando se utiliza EAP TTLS o PEAP.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
