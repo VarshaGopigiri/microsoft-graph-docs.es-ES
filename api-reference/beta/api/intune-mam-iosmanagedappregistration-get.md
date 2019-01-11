@@ -2,12 +2,13 @@
 title: Obtener iosManagedAppRegistration
 description: Lea las propiedades y las relaciones del objeto iosManagedAppRegistration.
 author: tfitzmac
-ms.openlocfilehash: 8d0a93b9cddce5c21d923758b783ab7e40d5b27b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5365d6d653ce35fd1ffedc857abcd098a0c8b5b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354694"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821955"
 ---
 # <a name="get-iosmanagedappregistration"></a>Obtener iosManagedAppRegistration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -1,18 +1,19 @@
 ---
 title: " tipo de recurso complianceInformation"
 description: Este recurso contiene cumplimiento seguro de los datos asociados con el control de puntuación.
-ms.openlocfilehash: a32670c6d11d391834358b769ae938a67b3d8aad
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7a3968e6e043d2019100870061c5e34b03b1b8bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380962"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820604"
 ---
 #  <a name="complianceinformation-resource-type"></a>tipo de recurso complianceInformation
 
 Contiene el cumplimiento seguro de los datos asociados con el control de puntuación.
 
-|Propiedad |Tipo |Descripción |
+|Propiedad |Tipo |Description |
 |:--|:--|:--|
 |certificationName | string | Nombre de certificación de cumplimiento de normas (por ejemplo, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
 |certificationControls | colección de [certificationControl](certificationcontrol.md) | Colección de los controles de certificación asociados con la certificación |

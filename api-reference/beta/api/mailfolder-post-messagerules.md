@@ -2,12 +2,13 @@
 title: Crear regla
 description: 'Crear un objeto messageRule especificando un conjunto de condiciones y acciones. '
 author: angelgolfer-ms
-ms.openlocfilehash: 4b127c4634650648062e9c41789d5fc076b3ea67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34224240ec931bdc07e3ad8a262528f94600393b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821052"
 ---
 # <a name="create-rule"></a>Crear regla
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los parámetros que se aplican a la regla. Estos son los parámetros de cuerpo que suelen usarse al crear reglas. Puede especificar cualquier otra propiedad **messageRule** modificable que corresponda en el cuerpo de la solicitud.
 
-| Parámetro       | Type|Descripción|
+| Parámetro       | Tipo|Descripción|
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Acciones que se van a realizar en un mensaje cuando las condiciones correspondientes, si las hubiera, se cumplan. Necesario.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Condiciones que, cuando se cumplan, activarán las acciones correspondientes a esa regla. Opcional.|

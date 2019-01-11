@@ -2,12 +2,13 @@
 title: Actualizar un educationSynchronizationProfile
 description: Actualizar las propiedades de un perfil de sincronización de datos de escuela existente en el inquilino.
 author: mmast-msft
-ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9f5ee2866d1e898035355a389b0358347d4d00b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361470"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818532"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Actualizar un educationSynchronizationProfile
 
@@ -31,7 +32,7 @@ PUT /synchronizationProfiles
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 | Content-Type | string | application/json. Obligatorio. |

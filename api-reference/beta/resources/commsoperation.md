@@ -2,12 +2,13 @@
 title: tipo de recurso commsOperation
 description: El estado de determinadas operaciones de larga duración.
 author: VinodRavichandran
-ms.openlocfilehash: 09d3f81e8f6307850d94cfab43f98426dae47a5f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d70ad6535d5ae829de4b9bac3c5b9fea9b53188b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821451"
 ---
 # <a name="commsoperation-resource-type"></a>tipo de recurso commsOperation
 
@@ -20,14 +21,14 @@ Ninguno
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad           | Tipo                        | Descripción                                                                     |
+| Propiedad           | Tipo                        | Description                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | El contexto de cliente.                                                             |
+| clientContext      | Cadena                      | El contexto de cliente.                                                             |
 | createdDateTime    | DateTimeOffset              | La hora de inicio de la operación.                                                |
-| id                 | String                      | Id. de operación. Solo lectura. Servidor que se generó.                                  |
+| id                 | Cadena                      | Id. de operación. Solo lectura. Servidor que se generó.                                  |
 | lastActionDateTime | DateTimeOffset              | Hora de la última acción de la operación.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | La información del resultado. Solo lectura. Servidor que se generó.                            |
-| status             | String                      | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`. Solo lectura. |
+| status             | Cadena                      | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`. Solo lectura. |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

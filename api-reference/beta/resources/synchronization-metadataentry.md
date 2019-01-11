@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso metadataEntry
 description: Metadatos para el objeto dado.
-ms.openlocfilehash: 8fed980c5310b0a9f13a6f3269dde90fad083751
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffdb2dd3b6729320b5991b1158e10d145e339968
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083929"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819484"
 ---
 # <a name="metadataentry-resource-type"></a>tipo de recurso metadataEntry
 
@@ -17,7 +18,7 @@ Metadatos para el objeto dado.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|Key|String|Nombre de la propiedad de metadatos.|
+|Key|Cadena|Nombre de la propiedad de metadatos.|
 |valor|String|Valor de la propiedad de metadatos.|
 
 ## <a name="json-representation"></a>Representación JSON

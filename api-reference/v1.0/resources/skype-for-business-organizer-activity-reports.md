@@ -1,12 +1,13 @@
 ---
 title: Obtener informe de actividades de organizador de Skype Empresarial
 description: Puede usar los informes de actividades de organizador de Skype Empresarial para obtener información sobre las actividades de conferencias organizadas en la organización. Estos detalles son muy útiles para investigar, planear y tomar otras decisiones empresariales en la organización.
-ms.openlocfilehash: 3e5936a6b435c5916bc16f0571f633f7bc983211
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3b0d9943ab2ec73cadd7984c383f79582b084a32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820800"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Obtener informe de actividades de organizador de Skype Empresarial
 

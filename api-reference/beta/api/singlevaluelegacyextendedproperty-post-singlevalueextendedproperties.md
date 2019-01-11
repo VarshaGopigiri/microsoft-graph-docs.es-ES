@@ -1,12 +1,13 @@
 ---
 title: Crear propiedad extendida de valor único
 description: 'Cree una o varias propiedades extendidas de valor único en una instancia nueva o existente de un recurso. '
-ms.openlocfilehash: c55ab01ecde214feb38857e8d77f83eb3bfbabc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4a647b2872899e3756d95483b91525a2843122b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821612"
 ---
 # <a name="create-single-value-extended-property"></a>Crear propiedad extendida de valor único
 

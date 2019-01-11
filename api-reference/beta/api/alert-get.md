@@ -1,12 +1,13 @@
 ---
 title: Get alert
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 5f5a7330476de71308680b41e87e51d5d228b2e0
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+localization_priority: Normal
+ms.openlocfilehash: b8e3acbabab70c04f2dfa479b39f458950dfb6b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820247"
 ---
 # <a name="get-alert"></a>Get alert
 
@@ -36,7 +37,7 @@ GET /security/alerts/{id}
 
 | Nombre      |Descripción|
 |:----------|:----------|
-| Authorization  | {código} del portador. Necesario.|
+| Autorización  | {código} del portador. Necesario.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

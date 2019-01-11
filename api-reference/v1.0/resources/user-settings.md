@@ -2,12 +2,13 @@
 title: tipo de recurso de configuración
 description: 'La configuración del usuario actual. '
 author: dkershaw10
-ms.openlocfilehash: c6a130dc9232114110735ebb0a98b0beeecbf835
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0ba342ba7644e005fd8711616625957bc4a1f284
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314500"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821143"
 ---
 # <a name="settings-resource-type"></a>tipo de recurso de configuración
 
@@ -26,10 +27,10 @@ Este recurso admite:
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|Cuando se establece en true, el acceso de delegado para el usuario [tendencias](/graph/api/resources/insights-trending?view=graph-rest-beta) API está deshabilitada. Cuando se deshabilitan establecido en true, documentos en profundizar de Office del usuario. Cuando se establece en true, la relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y se ve afectada la vista del descubrir en OneDrive para la empresa. Los usuarios pueden controlar esta configuración en [Office profundizar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Boolean|Refleja la [Configuración del nivel de organización](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) de controlar el acceso de delegado a la [tendencia de](/graph/api/resources/insights-trending?view=graph-rest-beta) API. Cuando establece en true, la organización no tiene acceso a Office profundizar. La relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y la vista de detección en OneDrive para la empresa se ve afectada de toda la organización. Esta configuración es de sólo lectura y sólo se puede cambiar por los administradores en el [Centro de administración de SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Booleano|Cuando se establece en true, el acceso de delegado para el usuario [tendencias](/graph/api/resources/insights-trending?view=graph-rest-beta) API está deshabilitada. Cuando se deshabilitan establecido en true, documentos en profundizar de Office del usuario. Cuando se establece en true, la relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y se ve afectada la vista del descubrir en OneDrive para la empresa. Los usuarios pueden controlar esta configuración en [Office profundizar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Booleano|Refleja la [Configuración del nivel de organización](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) de controlar el acceso de delegado a la [tendencia de](/graph/api/resources/insights-trending?view=graph-rest-beta) API. Cuando establece en true, la organización no tiene acceso a Office profundizar. La relevancia del contenido que se muestra en Office 365, por ejemplo en los sitios que se sugiere en la página principal de SharePoint y la vista de detección en OneDrive para la empresa se ve afectada de toda la organización. Esta configuración es de sólo lectura y sólo se puede cambiar por los administradores en el [Centro de administración de SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 
 ## <a name="json-representation"></a>Representación JSON

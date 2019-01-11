@@ -2,12 +2,13 @@
 title: Tipo de recurso managedMobileApp
 description: El identificador de la implementación de una aplicación.
 author: tfitzmac
-ms.openlocfilehash: cf36295e27bc6198b6f8d0c53854c81dbd3ae30f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1c020166da2fb8e33d9649935f89ef22e556e7d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819704"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
 
@@ -27,8 +28,8 @@ El identificador de la implementación de una aplicación.
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|El identificador de una aplicación con el tipo de sistema operativo.|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

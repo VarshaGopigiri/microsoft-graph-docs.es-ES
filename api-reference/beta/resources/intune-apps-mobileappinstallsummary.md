@@ -2,12 +2,13 @@
 title: tipo de recurso mobileAppInstallSummary
 description: Contiene las propiedades para el resumen de la instalación de una aplicación móvil.
 author: tfitzmac
-ms.openlocfilehash: d998e0fe5b136afe7aa18741c5c91fcde9adcc37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b730f73b8a86c8acba531ab0d30a67b2f8e7a7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820359"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso mobileAppInstallSummary
 
@@ -25,7 +26,7 @@ Contiene las propiedades para el resumen de la instalación de una aplicación m
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |installedDeviceCount|Int32|Número de dispositivos que haya instalado correctamente esta aplicación.|
 |failedDeviceCount|Int32|Número de dispositivos que no haya podido instalar esta aplicación.|
 |notApplicableDeviceCount|Int32|Número de dispositivos que no son aplicables para esta aplicación.|

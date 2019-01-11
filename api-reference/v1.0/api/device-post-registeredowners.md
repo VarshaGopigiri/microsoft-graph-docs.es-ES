@@ -2,12 +2,13 @@
 title: Create registeredOwner
 description: Agrega un usuario como propietario registrado del dispositivo.
 author: tfitzmac
-ms.openlocfilehash: f261ed82990f482b804617d66a02dc03244500f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 295c48c586a6ddf31b1ceef15b9f1137227ba3ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820527"
 ---
 # <a name="create-registeredowner"></a>Create registeredOwner
 
@@ -29,7 +30,7 @@ POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

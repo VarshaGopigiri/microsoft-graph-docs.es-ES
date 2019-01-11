@@ -2,12 +2,13 @@
 title: tipo de recurso mobileAppIntentAndState
 description: La intención de MobileApp y el estado de instalación para un dispositivo dado.
 author: tfitzmac
-ms.openlocfilehash: 40ffbac3f86ccce3037a6585fa608dd4055bd428
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 037faeb02f18f304153dbe19fef640cc1183ddcd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356059"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819799"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>tipo de recurso mobileAppIntentAndState
 
@@ -28,9 +29,9 @@ La intención de MobileApp y el estado de instalación para un dispositivo dado.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID para el objeto|
-|managedDeviceIdentifier|String|Identificador del dispositivo creado o recopilado por Intune.|
-|userId|String|Identificador del usuario que intentó inscribir el dispositivo.|
+|id|Cadena|UUID para el objeto|
+|managedDeviceIdentifier|Cadena|Identificador del dispositivo creado o recopilado por Intune.|
+|userId|Cadena|Identificador del usuario que intentó inscribir el dispositivo.|
 |mobileAppList|colección de [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|La lista de calidades de carga y Estados para el inquilino.|
 
 ## <a name="relationships"></a>Relaciones

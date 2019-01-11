@@ -2,12 +2,13 @@
 title: Enumerar iosCustomConfigurations
 description: Enumere las propiedades y las relaciones de los objetos iosCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 09a0d9a22c124bdc4c5d9532b712b6ece0ba5987
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b0b0965131043cb36e391b1afe12ab16acac4cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820583"
 ---
 # <a name="list-ioscustomconfigurations"></a>Enumerar iosCustomConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

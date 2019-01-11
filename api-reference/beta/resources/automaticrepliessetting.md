@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso automaticRepliesSetting
 description: 'Opciones de configuración para notificar automáticamente al remitente de un correo electrónico entrante con un mensaje desde la '
-ms.openlocfilehash: 040180da2b58481b96e1e249763c61f03355afec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0160197a4fafe10b7f78be9124da3b6260bfcee6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090857"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820660"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Tipo de recurso automaticRepliesSetting
 
@@ -23,7 +24,7 @@ Opciones de configuración para notificar de forma automática al remitente de u
 |internalReplyMessage|string|La respuesta automática para enviar a la audiencia interna de la organización del usuario que ha iniciado sesión, si **Status** es `AlwaysEnabled` o `Scheduled`. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha y hora en que se establece la finalización de las respuestas automáticas, si **Status** se establece en `Scheduled`. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|La fecha y hora en que se establece el inicio de las respuestas automáticas, si **Status** se establece en `Scheduled`.|
-|status|String|Estado de las configuraciones para las respuestas automáticas. Los valores posibles son: `disabled`, `alwaysEnabled`, `scheduled`.|
+|status|Cadena|Estado de las configuraciones para las respuestas automáticas. Los valores posibles son: `disabled`, `alwaysEnabled`, `scheduled`.|
 
 ## <a name="json-representation"></a>Representación JSON
 

@@ -2,12 +2,13 @@
 title: tipo de recurso teamsTemplate
 description: Describe la entidad teamsTemplate.
 author: nkramer
-ms.openlocfilehash: b4e32448f864048fdcb54dc001b21b262df2bba3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e847c7ef0b13dd9c4281c17939164128be8b6a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818875"
 ---
 # <a name="teamstemplate-resource-type"></a>tipo de recurso teamsTemplate
 
@@ -19,7 +20,7 @@ Una plantilla de equipo es un blueprint para la creación de un [equipo](../reso
 
 | Propiedad            | Tipo     | Descripción |
 |:------------------- |:-------- |:----------- |
-| id                  | String   | Identificador único de la plantilla. No puede ser null. |
+| id                  | Cadena   | Identificador único de la plantilla. No puede ser null. |
 
 ## <a name="json-representation"></a>Representación JSON
 

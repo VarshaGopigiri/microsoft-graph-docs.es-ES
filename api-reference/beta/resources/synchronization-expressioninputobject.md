@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso expressionInputObject
 description: 'Representa un objeto que se utilizará como datos de comprobación de la entrada cuando la [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) acción realiza una evaluación de la expresión.'
-ms.openlocfilehash: 06b7344f7e6418db0557f2b12dfa7e964b9d5ab7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: acf0fa5125d863224de6df76d46109b9888f8ddf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820114"
 ---
 # <a name="expressioninputobject-resource-type"></a>tipo de recurso expressionInputObject
 
@@ -15,7 +16,7 @@ ms.locfileid: "27090000"
 Representa un objeto que se utilizará como datos de comprobación de la entrada cuando la [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) acción realiza una evaluación de la expresión.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |definición|[objectDefinition](synchronization-objectdefinition.md)|Definición del objeto de prueba.|
 |propiedades|colección de [stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)|Valores de propiedad del objeto de prueba.|

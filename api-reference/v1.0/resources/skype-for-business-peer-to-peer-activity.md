@@ -1,12 +1,13 @@
 ---
 title: Informe de actividades de punto a punto de Skype Empresarial
 description: Puede usar los informes de actividades de punto a punto de Skype Empresarial para obtener detalles sobre actividades de punto a punto en la organización. Estos detalles son muy útiles para investigar, planear y tomar otras decisiones empresariales en la organización.
-ms.openlocfilehash: 08021570e70847bf230997b991e5901f887d0e4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 491c0df411ff84de7a08ef5a96b2a0d1a77dcbe8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820905"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Informe de actividades de punto a punto de Skype Empresarial
 

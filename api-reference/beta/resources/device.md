@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso device
 description: Representa un dispositivo registrado en el directorio. Los dispositivos se crean en la nube con el servicio de registro de dispositivos o Intune. Las directivas de acceso condicional los usan para la autenticación multifactor. Estos dispositivos pueden ir desde equipos portátiles y de escritorio hasta teléfonos y tabletas. Se hereda de directoryObject.
-ms.openlocfilehash: 41fc53790c9c12415606e9f6f993407e97068fe6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c39e466d6cf0e1dff3b62ff9acbb2123cafceb0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091042"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821675"
 ---
 # <a name="device-resource-type"></a>Tipo de recurso device
 
@@ -50,15 +51,15 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |onPremisesLastSyncDateTime|DateTimeOffset|La última hora en que se ha sincronizado el objeto con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'` Solo lectura. |
 |onPremisesSyncEnabled|Booleano|**true** si este objeto está sincronizado desde un directorio local; **false** si este objeto se ha sincronizado originalmente desde un directorio local, pero ya no está sincronizado; **null** si este objeto no se ha sincronizado nunca desde un directorio local (valor predeterminado). Solo lectura.|
 |operatingSystem|String| El tipo de sistema operativo del dispositivo. Necesario. |
-|operatingSystemVersion|String| Versión del sistema operativo del dispositivo. Obligatorio. |
+|operatingSystemVersion|String| Versión del sistema operativo del dispositivo. Necesario. |
 |physicalIds|Colección String| Solo para uso interno. No admite valores NULL. |
 |trustType|String| Tipo de confianza del dispositivo que se ha unido. Solo lectura. Valores posibles: <br />**Área de trabajo**: indica *dispositivos personales BYOD*.<br />**AzureAd**: dispositivos unidos solo a la nube.<br />**ServerAd**: dispositivos unidos al dominio local que se han unido a Azure AD. Para más información, vea [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction). |
 |Name| Cadena | Nombre descriptivo de un dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
-|Status | String| Dispositivo está en línea o sin conexión. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
-|Plataforma |String|Plataforma de dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma.|
-|Kind| String| Factor de forma de dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
-|Model| String| Modelo de dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
-|Fabricante| String| Fabricante del dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
+|Estado | Cadena| Dispositivo está en línea o sin conexión. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
+|Plataforma |Cadena|Plataforma de dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma.|
+|Kind| Cadena| Factor de forma de dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
+|Model| Cadena| Modelo de dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
+|Fabricante| Cadena| Fabricante del dispositivo. Devuelve sólo si el usuario cierra con una cuenta de Microsoft como parte del proyecto Roma. |
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

@@ -2,12 +2,13 @@
 title: Create TableColumn
 description: Use esta API para crear un objeto TableColumn.
 author: lumine2008
-ms.openlocfilehash: 8dd2ce889fcd5d6677ca3aeef2f8c544325bdbac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8c315cd4de26dd610a99e7df66b67856e17b3fb0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820730"
 ---
 # <a name="create-tablecolumn"></a>Create TableColumn
 

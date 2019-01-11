@@ -2,12 +2,13 @@
 title: tipo de enumeración defenderScheduleScanDay
 description: 'Valores posibles de DefenderScheduleScanDay '
 author: tfitzmac
-ms.openlocfilehash: 9c028e24aae3421a8f7aef23161443c8cf796e1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fd7bd34ddda9adabb774dda849926b980136d54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820835"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>tipo de enumeración defenderScheduleScanDay
 
@@ -17,7 +18,7 @@ ms.locfileid: "27346511"
 
 Valores posibles de DefenderScheduleScanDay 
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |cotidianas|0|Cada día|
 |lunes|1|lunes|

@@ -2,12 +2,13 @@
 title: Eliminar windows81GeneralConfiguration
 description: Elimina un windows81GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 338c4c34c576f01727fc4123f465cc831ec83e4f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab75233ee24d9617fd89037ba26f5916549aaf66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823474"
 ---
 # <a name="delete-windows81generalconfiguration"></a>Eliminar windows81GeneralConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

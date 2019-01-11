@@ -2,12 +2,13 @@
 title: tipo de enumeración vpnOnDemandRuleConnectionDomainAction
 description: Acción de dominio de conexión de regla de petición VPN.
 author: tfitzmac
-ms.openlocfilehash: 676204205b241214bcda3bdf89444a23d06c88ab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 05608fe202980cdb3dcd1c3128df4d2882d1c16a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359741"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821346"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>tipo de enumeración vpnOnDemandRuleConnectionDomainAction
 
@@ -17,7 +18,7 @@ ms.locfileid: "27359741"
 
 Acción de dominio de conexión de regla de petición VPN.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |connectIfNeeded|0|Conectar si es necesario.|
 |neverConnect|1|Nunca se conectan.|

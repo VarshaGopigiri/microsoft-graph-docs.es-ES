@@ -2,12 +2,13 @@
 title: tipo de enumeración prereleaseFeatures
 description: Valores posibles para las características anteriores a la versión.
 author: tfitzmac
-ms.openlocfilehash: d2a01822250854f2bb71542e5057de0b11405abf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78faf2e9360154b3562cbc52c97ff5f6c4e75219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342199"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821262"
 ---
 # <a name="prereleasefeatures-enum-type"></a>tipo de enumeración prereleaseFeatures
 
@@ -17,7 +18,7 @@ ms.locfileid: "27342199"
 
 Valores posibles para las características anteriores a la versión.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |settingsOnly|1|Características de configuración preliminares sólo.|

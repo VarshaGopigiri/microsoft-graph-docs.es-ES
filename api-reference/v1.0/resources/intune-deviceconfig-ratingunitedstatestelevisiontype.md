@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingUnitedStatesTelevisionType
 description: Etiquetas de clasificación de contenido de TV de Estados Unidos
 author: tfitzmac
-ms.openlocfilehash: 2b03a053851248bcd1238b2464c2a4f8879a5580
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6570ca0ee7a6edba91409fb51efbfb50bbb983e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328389"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819988"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enumeración ratingUnitedStatesTelevisionType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27328389"
 
 Etiquetas de clasificación de contenido de TV de Estados Unidos
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso plannerPlanContext
 description: El recurso **plannerPlanContext** representa la relación de una plannerPlan para una experiencia de usuario fuera del organizador. Planes en el organizador pueden se exponen en otras experiencias, como Microsoft Teams, realizar un seguimiento de trabajo en el contexto de esa experiencia.
-ms.openlocfilehash: 84512c03081a3e1fd2b15456c64cecf3f9c39435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087301"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820982"
 ---
 # <a name="plannerplancontext-resource-type"></a>tipo de recurso plannerPlanContext
 
@@ -18,12 +19,12 @@ La experiencia de que la entrada de **plannerPlanContext** reresents se puede id
  - 00000003-0000-0ff1-CE00-000000000000: la entrada de contexto pertenece a SharePoint.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|associationType|String|Admite valores NULL. Un tipo definido por la aplicación de la asociación entre el [plannerPlan](plannerplan.md) y la aplicación. La aplicación puede utilizar esta información para realizar un seguimiento de los distintos tipos de relaciones en el mismo [plannerPlan](plannerplan.md).|
+|associationType|Cadena|Admite valores NULL. Un tipo definido por la aplicación de la asociación entre el [plannerPlan](plannerplan.md) y la aplicación. La aplicación puede utilizar esta información para realizar un seguimiento de los distintos tipos de relaciones en el mismo [plannerPlan](plannerplan.md).|
 |createdDateTime|DateTimeOffset|Solo lectura. La fecha y la hora cuando se creó el **plannerPlanContext** . El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |displayNameSegments|Colección String|Los segmentos del nombre de la experiencia del externo. Segmentos representan una estructura jerárquica que permite que otras aplicaciones mostrar la relación.|
-|ownerAppId|String|Solo lectura. Identificador de la aplicación que creó el **plannerPlanContext**.|
+|ownerAppId|Cadena|Solo lectura. Identificador de la aplicación que creó el **plannerPlanContext**.|
 
 ## <a name="json-representation"></a>Representación JSON
 

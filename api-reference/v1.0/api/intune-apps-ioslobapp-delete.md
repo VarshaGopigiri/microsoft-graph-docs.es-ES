@@ -2,12 +2,13 @@
 title: Eliminar iosLobApp
 description: Elimina un iosLobApp.
 author: tfitzmac
-ms.openlocfilehash: 71c7932ad118656674689592864ed12d7705da32
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a02eba853bfd35650d42895eb85c84b1b39e642
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819652"
 ---
 # <a name="delete-ioslobapp"></a>Eliminar iosLobApp
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

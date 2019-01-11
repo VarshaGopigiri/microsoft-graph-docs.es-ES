@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsInformationProtectionEnforcementLevel
 description: Valores posibles para los niveles de cumplimiento de protección de trabajo en curso
 author: tfitzmac
-ms.openlocfilehash: 84f60f0e4f59206d420219e8547160c85202f9cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b3ffff4e1d78ed8796f4b5be8768db99d6b4ae3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313268"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820191"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>tipo de enumeración windowsInformationProtectionEnforcementLevel
 
@@ -15,7 +16,7 @@ ms.locfileid: "27313268"
 
 Valores posibles para los niveles de cumplimiento de protección de trabajo en curso
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |noProtection|0|No cumplimiento de protección de|
 |encryptAndAuditOnly|1|Cifrar y sólo de auditoría|

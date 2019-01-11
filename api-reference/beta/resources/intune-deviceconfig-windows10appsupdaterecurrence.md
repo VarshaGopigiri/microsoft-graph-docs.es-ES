@@ -2,12 +2,13 @@
 title: tipo de enumeración windows10AppsUpdateRecurrence
 description: Actualización de los valores posibles para la aplicación de Windows10 periodicidad.
 author: tfitzmac
-ms.openlocfilehash: 940c5ad7affc6b46288942b5d307c0f0dbfece7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 447b8334b9db65d37a61278d7ada8b241fbcb576
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324307"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821549"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>tipo de enumeración windows10AppsUpdateRecurrence
 
@@ -17,9 +18,9 @@ ms.locfileid: "27324307"
 
 Actualización de los valores posibles para la aplicación de Windows10 periodicidad.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Valor predeterminado, especifica una sola aparición.|
+|none|0|Valor predeterminado, especifica una sola aparición.|
 |cada día|1|Diaria.|
 |semanal|2|Semanal.|
 |mensual|3|Mensual.|

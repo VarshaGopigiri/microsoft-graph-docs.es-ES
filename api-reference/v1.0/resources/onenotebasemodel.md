@@ -2,12 +2,13 @@
 title: recursos de onenoteEntityBaseModel
 description: Éste es el tipo base para las entidades de OneNote.
 author: Jewan-microsoft
-ms.openlocfilehash: 25e2da6732fd831c6bbec5ae86bddeae7b702aa5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c6a3d4916bf54eeec5856f51af87fa79e1f6e6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821234"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>recursos de onenoteEntityBaseModel
 
@@ -34,9 +35,9 @@ Aquí tiene una representación JSON del recurso.
 
 ```
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|self|String|El punto de conexión donde puede obtener información detallada sobre la página. Solo lectura.|
+|self|Cadena|El punto de conexión donde puede obtener información detallada sobre la página. Solo lectura.|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

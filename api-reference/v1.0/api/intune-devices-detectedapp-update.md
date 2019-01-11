@@ -2,12 +2,13 @@
 title: Actualizar detectedApp
 description: Actualice las propiedades de un objeto detectedApp.
 author: tfitzmac
-ms.openlocfilehash: f9fca5810ab40b9d1001b4c711ec62d9d5bfd36a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86b8eb3bc1bac0902ce36bd763c633f06919d2fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304875"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821934"
 ---
 # <a name="update-detectedapp"></a>Actualizar detectedApp
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [detectedApp](../resources/intune-devices-detectedapp.md).
@@ -45,9 +46,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único de la aplicación detectada. Intune lo genera automáticamente en el momento en que se crea la aplicación. Solo lectura.|
-|displayName|String|Nombre de la aplicación detectada. Solo lectura|
-|version|String|Versión de la aplicación detectada. Solo lectura|
+|id|Cadena|El identificador único de la aplicación detectada. Intune lo genera automáticamente en el momento en que se crea la aplicación. Solo lectura.|
+|displayName|Cadena|Nombre de la aplicación detectada. Solo lectura|
+|version|Cadena|Versión de la aplicación detectada. Solo lectura|
 |sizeInByte|Int64|Tamaño en bytes de la aplicación detectada. Solo lectura|
 |deviceCount|Int32|El número de dispositivos que han instalado esta aplicación.|
 

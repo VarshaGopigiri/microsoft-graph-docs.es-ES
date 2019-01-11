@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obtener un sitio de SharePoint mediante la ruta de acceso
-ms.openlocfilehash: 7d63fd3651ab870318af46a298d6b945f331eda8
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 09d9aef99f552079e8e5e4f7d0d260964a182786
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821535"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obtener un recurso de sitio mediante la ruta de acceso
 

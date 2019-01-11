@@ -2,12 +2,13 @@
 title: tipo de enumeración complianceStatus
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 53f0005af81f52e2c3d6cb0de553bb127d9004b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 235edb3ba87069a272a4282abe234ab333ab10a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820520"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de enumeración complianceStatus
 
@@ -17,7 +18,7 @@ ms.locfileid: "27357480"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Todavía no documentado|
 |No aplicable|1|Todavía no documentado|
