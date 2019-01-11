@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationAssignmentClassRecipient
 description: 'Se usa dentro de la propiedad assignment.assignTo. Cuando se establece a los destinatarios de clase, todos los alumnos en la clase a '
-ms.openlocfilehash: 7ea56fcc4db80bf9b225255a3d4ef55258cc98fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 66ccbd4d0105fa88c67645f1a153df288d4989ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856969"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>tipo de recurso educationAssignmentClassRecipient
 

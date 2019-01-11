@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso chatMessage
 description: Representa un mensaje de chat individuales dentro de una entidad de canal o chat. El mensaje puede ser un mensaje de raíz o parte de un subproceso que se define mediante la propiedad **replyToId** en el mensaje.
-ms.openlocfilehash: 1fba27567d5a1c80a36a5758925ec427735504cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855996"
 ---
 # <a name="chatmessage-resource-type"></a>tipo de recurso chatMessage
 
@@ -26,11 +27,11 @@ Representa un mensaje de chat individuales dentro de una entidad de [canal](chan
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura. Identificador único del mensaje.|
+|id|Cadena| Solo lectura. Identificador único del mensaje.|
 |replyToId| string | Identificador del mensaje de mensaje/raíz primario del subproceso |
 |from|[identitySet](identityset.md)| Detalles del remitente del mensaje|
 |etag| string | Número de versión del mensaje |
-|messageType|String|Los valores de tipo de mensaje, actual admitido son: mensajes, chatEvent, escribir|
+|messageType|Cadena|Los valores de tipo de mensaje, actual admitido son: mensajes, chatEvent, escribir|
 |createdDateTime|dateTimeOffset|Solo lectura. Marca de hora de cuándo se creó el mensaje|
 |lastModifiedDateTime|dateTimeOffset|Solo lectura. Marca de hora de cuando el mensaje fue editado o actualizado|
 |isDeleted|boolean|Representa si un mensaje se ha eliminado suave|

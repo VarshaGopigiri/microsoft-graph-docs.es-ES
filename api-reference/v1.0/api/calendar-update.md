@@ -1,12 +1,13 @@
 ---
 title: Actualizar calendario
 description: 'Actualiza las propiedades de un objeto de calendario. El calendario puede ser una de un usuario '
-ms.openlocfilehash: 112d5c5104c5871e7f9e59cbd98c6d46e3a12bbd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f56ce185718c2a639f32606b9db79f0154a824e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030275"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857116"
 ---
 # <a name="update-calendar"></a>Actualizar calendario
 

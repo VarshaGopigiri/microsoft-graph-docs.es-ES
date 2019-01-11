@@ -2,12 +2,13 @@
 title: Crear telecomExpenseManagementPartner
 description: Cree un objeto telecomExpenseManagementPartner.
 author: tfitzmac
-ms.openlocfilehash: e3b099bf71b586313a5cf67012c7f24ebc7e858c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1524b8aaedfad646cfee1371a3e8529f9e60c855
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856997"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Crear telecomExpenseManagementPartner
 
@@ -38,7 +39,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto telecomExpenseManagementPartner.
@@ -47,11 +48,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único del partner de TEM.|
-|displayName|String|Nombre para mostrar del partner de TEM.|
-|url|String|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
+|id|Cadena|Identificador único del partner de TEM.|
+|displayName|Cadena|Nombre para mostrar del partner de TEM.|
+|url|Cadena|Dirección URL del panel de control administrativo del partner de TEM, donde un administrador puede configurar el servicio de su TEM.|
 |appAuthorized|Booleano|Si se ha autorizado a la aplicación de AAD del partner para que obtenga acceso a Intune.|
-|enabled|Boolean|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
+|enabled|Booleano|Si la conexión de Intune al servicio de TEM está habilitada o deshabilitada.|
 |lastConnectionDateTime|DateTimeOffset|Marca de tiempo de la última solicitud enviada a Intune por el partner de TEM.|
 
 

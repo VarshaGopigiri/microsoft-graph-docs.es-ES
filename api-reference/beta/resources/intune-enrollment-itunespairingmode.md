@@ -2,12 +2,13 @@
 title: tipo de enumeración iTunesPairingMode
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 037f5cec162342491fae4692efa14a9845507e1a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78c46a5f9e49ef534c215f538e0d212e9bcb5a8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856906"
 ---
 # <a name="itunespairingmode-enum-type"></a>tipo de enumeración iTunesPairingMode
 
@@ -17,7 +18,7 @@ ms.locfileid: "27312323"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No permitir|0|No se permite el emparejamiento|
 |Permitir|1|El emparejamiento permitidos|

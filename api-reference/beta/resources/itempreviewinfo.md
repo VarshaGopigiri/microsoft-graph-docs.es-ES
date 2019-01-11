@@ -3,12 +3,13 @@ author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive para la API
-ms.openlocfilehash: 3fa9d10ae3aade7be96e81168b34df84698da1c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0f2a161b9b43a8d372b90530b1b9d9244f77d8e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857347"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Tipo de recurso ItemPreviewInfo
 
@@ -28,7 +29,7 @@ El recurso **ItemPreviewInfo** contiene información acerca de cómo incrustar u
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre           | Tipo   | Descripción
+| Nombre           | Tipo   | Description
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | Dirección URL adecuada para incrustar mediante HTTP GET (IFRAME, etcetera).
 | URL para exponer        | string | Dirección URL adecuada para incrustar el uso de HTTP POST (de envío de formulario, JS, etcetera.)

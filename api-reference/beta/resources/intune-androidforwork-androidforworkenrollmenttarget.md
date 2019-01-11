@@ -2,12 +2,13 @@
 title: tipo de enumeración androidForWorkEnrollmentTarget
 description: Android para administración de dispositivos de trabajo identificación de tipo para la cuenta
 author: tfitzmac
-ms.openlocfilehash: 75c446e65b8af1466bf1eb5988921c3e1a6b3ac9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec9ba5522871821bd84e7c3c8399dc3d9888b962
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852384"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>tipo de enumeración androidForWorkEnrollmentTarget
 
@@ -17,9 +18,9 @@ ms.locfileid: "27333106"
 
 Android para administración de dispositivos de trabajo identificación de tipo para la cuenta
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
-|ninguno|0|Todavía no documentado|
+|none|0|Todavía no documentado|
 |all|1|Todavía no documentado|
 |destino|2|Todavía no documentado|
 |targetedAsEnrollmentRestrictions|3|Todavía no documentado|

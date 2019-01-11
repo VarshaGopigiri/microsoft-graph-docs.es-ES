@@ -2,12 +2,13 @@
 title: Crear importedWindowsAutopilotDeviceIdentityUpload
 description: Crear un nuevo objeto importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
-ms.openlocfilehash: f4042129f33b617546e32d46435179af5c9d3282
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31c9aed97f5b0b4505e348db85db798fa9fa9bd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851824"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Crear importedWindowsAutopilotDeviceIdentityUpload
 
@@ -38,7 +39,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto importedWindowsAutopilotDeviceIdentityUpload.

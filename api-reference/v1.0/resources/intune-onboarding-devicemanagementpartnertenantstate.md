@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceManagementPartnerTenantState
 description: Estado de socio de este inquilino.
 author: tfitzmac
-ms.openlocfilehash: a597e038fc73ccaa730511ab3f27b0351600f6f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fd2529c2afd3589feab9a8cd4a796e78203858a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340036"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857337"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enumeración deviceManagementPartnerTenantState
 
@@ -15,7 +16,7 @@ ms.locfileid: "27340036"
 
 Estado de socio de este inquilino.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Se desconoce el estado de socio.|
 |no está disponible|1|Socio no está disponible.|

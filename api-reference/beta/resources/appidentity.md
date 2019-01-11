@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso appIdentity
 description: Indica la identidad de la aplicación que realiza la acción o se ha cambiado. Incluye el identificador de aplicación, el nombre, el identificador de entidad de seguridad de servicio y el nombre. Se llama a este recurso por la API de directoryAudit
-ms.openlocfilehash: 6fcbe8dbb1e17139111c5f1fa9e8681cd1b996a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec61782fca0ab4004fab5a55bd4774c0d64afb3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855786"
 ---
 # <a name="appidentity-resource-type"></a>tipo de recurso appIdentity
 Indica la identidad de la aplicación que realiza la acción o se ha cambiado. Incluye el identificador de aplicación, el nombre, el identificador de entidad de seguridad de servicio y el nombre. Se llama a este recurso por la API [directoryAudit](../api/directoryaudit-get.md)
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |appId|cadena|Hace referencia a los GUID único que representa el identificador de aplicación en Azure Active Directory.|
-|displayName|String|Hace referencia al nombre de la aplicación que se muestra en el Portal de Azure.|
-|servicePrincipalId|String|Hace referencia a los GUID único que indica el identificador de entidad de seguridad de servicio en Azure Active Directory para la aplicación correspondiente.|
+|displayName|Cadena|Hace referencia al nombre de la aplicación que se muestra en el Portal de Azure.|
+|servicePrincipalId|Cadena|Hace referencia a los GUID único que indica el identificador de entidad de seguridad de servicio en Azure Active Directory para la aplicación correspondiente.|
 |servicePrincipalName|cadena|Hace referencia al nombre Principal de servicio es el nombre de la aplicación en el inquilino. |
 
 ## <a name="json-representation"></a>Representación JSON

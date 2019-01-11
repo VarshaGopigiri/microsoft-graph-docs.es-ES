@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceAndAppManagementRoleDefinition
 description: 'El recurso de la definición de rol. La definición de rol es el pilar del acceso basado en roles en Intune. El rol combina un recurso de Intune, como una aplicación móvil, y los permisos de rol asociados para el recurso, como Creación o Lectura. Hay dos tipos de roles: personalizados e integrados. Los roles integrados no se pueden modificar. Tanto los roles personalizados como los integrados deben tener asignaciones que se aplicarán. Cree roles personalizados para definir un rol que permita que se combine cualquier recurso disponible y permiso de rol en un solo rol.'
-ms.openlocfilehash: 28e1ac6ff63328108385253e141a4a6b07c07535
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2f49510a071140ac71366cab3ad9258d2de1f26e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029546"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856920"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>Tipo de recurso deviceAndAppManagementRoleDefinition
 
@@ -28,9 +29,9 @@ Hereda de [roleDefinition](../resources/intune-rbac-roledefinition.md)
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|displayName|String|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|descripción|String|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|displayName|Cadena|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|descripción|Cadena|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|Colección [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltIn|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 

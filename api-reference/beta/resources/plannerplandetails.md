@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerPlanDetails
 description: El recurso **plannerPlanDetails** representa la información adicional de un plan. Cada objeto plan tiene un objeto details.
-ms.openlocfilehash: 1cce5727666bca705da67fccd1a3edf370c68127
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 117a2f69324180a7ef45dcf96c773f510bdbcb9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860161"
 ---
 # <a name="plannerplandetails-resource-type"></a>Tipo de recurso plannerPlanDetails
 
@@ -26,7 +27,7 @@ El recurso **plannerPlanDetails** representa la información adicional de un pla
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Objeto que especifica las descripciones de las seis categorías que pueden estar asociadas a las tareas del plan|
-|id|String| Solo lectura. El identificador de los detalles del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](tasks-identifiers-disclaimer.md) se realiza en el servicio.|
+|id|Cadena| Solo lectura. El identificador de los detalles del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](tasks-identifiers-disclaimer.md) se realiza en el servicio.|
 |sharedWith|[plannerUserIds](planneruserids.md)|El conjunto de identificadores que este plan se comparte con la de usuario. Si usa grupos de Office 365, use los grupos de API para administrar la pertenencia a grupos para compartir el plan [del grupo](group.md) . También puede agregar a los miembros existentes del grupo a esta colección, aunque no es necesario en orden para que tengan acceso el plan de propiedad del grupo. |
 |contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|Solo lectura. Una colección de información adicional asociada con las entradas de [plannerPlanContext](plannerplancontext.md) que se definen para el contenedor de [plannerPlan](plannerplan.md) . |
 

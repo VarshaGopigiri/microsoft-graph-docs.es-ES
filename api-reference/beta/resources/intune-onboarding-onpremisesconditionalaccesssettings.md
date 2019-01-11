@@ -2,12 +2,13 @@
 title: Tipo de recurso onPremisesConditionalAccessSettings
 description: Entidad singleton que representa la configuración de acceso condicional de Exchange local de un espacio empresarial.
 author: tfitzmac
-ms.openlocfilehash: d02553f0094a805ff1ba18926f6dbf2be0ceb32b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d21a74ecffebde15a2a0a89a79e7b6c95e1f53be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328605"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804546"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Tipo de recurso onPremisesConditionalAccessSettings
 
@@ -25,7 +26,7 @@ Entidad singleton que representa la configuración de acceso condicional de Exch
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Todavía no documentado|
+|id|Cadena|Todavía no documentado|
 |enabled|Booleano|Indica si está habilitado el acceso condicional local para esta organización|
 |includedGroups|Colección Guid|Grupos de usuarios a los que se dirigirá el acceso condicional local. Todos los usuarios de estos grupos deberán tener dispositivos móviles administrados y compatibles para tener acceso al correo.|
 |excludedGroups|Colección Guid|Grupos de usuarios que estarán exentos del acceso condicional local. Todos los usuarios de estos grupos estarán exentos de la directiva de acceso condicional.|

@@ -2,12 +2,13 @@
 title: Tipo de recurso Chart
 description: Representa un objeto de gráfico de una hoja de cálculo.
 author: lumine2008
-ms.openlocfilehash: cf03a768422fca50e68b88a64b9991aad878466f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d274b8ec505d15ea985af22627232dbe11dc3263
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325721"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856052"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
@@ -23,9 +24,9 @@ Representa un objeto de gráfico de una hoja de cálculo.
 |[Get Chart](../api/chart-get.md) | [Chart](chart.md) |Lee las propiedades y relaciones del objeto chart.|
 |[Create ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Crea un ChartSeries publicándolo en la colección series.|
 |[List series](../api/chart-list-series.md) |Colección [ChartSeries](chartseries.md)| Obtiene una colección de objetos ChartSeries.|
-|[Actualizar](../api/chart-update.md) | [Chart](chart.md)   |Actualiza el objeto Chart. |
+|[Update](../api/chart-update.md) | [Chart](chart.md)   |Actualiza el objeto Chart. |
 |[Image](../api/chart-image.md)|Cadena codificada en base64 de imagen|Representa el gráfico como una imagen con codificación base64 al escalar el gráfico a las dimensiones especificadas.|
-|[Eliminar](../api/chart-delete.md)|None|Elimina el objeto chart.|
+|[Delete](../api/chart-delete.md)|None|Elimina el objeto chart.|
 |[Setdata](../api/chart-setdata.md)|None|Restablece los datos de origen del gráfico.|
 |[Setposition](../api/chart-setposition.md)|None|Coloca el gráfico con respecto a las celdas de la hoja de cálculo.|
 |[List](../api/chart-list.md) | Colección [Chart](chart.md) |Obtiene la colección de objetos chart. |

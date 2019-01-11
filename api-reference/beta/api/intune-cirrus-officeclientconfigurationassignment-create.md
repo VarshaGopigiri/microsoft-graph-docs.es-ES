@@ -2,12 +2,13 @@
 title: Crear officeClientConfigurationAssignment
 description: Agregar un grupo de destino a una directiva existente.
 author: tfitzmac
-ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24eee1797c00fd6ef6e380e2fdde20c5147567af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858698"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Crear officeClientConfigurationAssignment
 
@@ -38,7 +39,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto officeClientConfigurationAssignment.
@@ -47,7 +48,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador de la OfficeConfigurationAssignment.|
+|id|Cadena|Identificador de la OfficeConfigurationAssignment.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|La asignación de destino definida por el administrador.|
 
 

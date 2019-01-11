@@ -2,12 +2,13 @@
 title: Actualizar deviceManagementScriptAssignment
 description: Actualizar las propiedades de un objeto deviceManagementScriptAssignment.
 author: tfitzmac
-ms.openlocfilehash: 6afe48222bf3d74a88fb683222edebd5af025f12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0689530f717b3ee8ecbd4ce6b967768912bdd41a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859020"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>Actualizar deviceManagementScriptAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) .
@@ -47,7 +48,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad de asignación de grupo de secuencia de comandos de dispositivo administración.|
+|id|Cadena|Clave de la entidad de asignación de grupo de secuencia de comandos de dispositivo administración.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|El identificador de grupo de Active Directory de Azure, nuestro destino son la secuencia de comandos.|
 
 

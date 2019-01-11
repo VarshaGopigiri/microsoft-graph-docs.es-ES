@@ -2,12 +2,13 @@
 title: tipo de enumeración resultantAppState
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 7b45353867abe77143fb97755aff457e0c81deb8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14d5469f6bbc5b261d8a9eb1f11a8b0ebd118d44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838335"
 ---
 # <a name="resultantappstate-enum-type"></a>tipo de enumeración resultantAppState
 
@@ -17,7 +18,7 @@ ms.locfileid: "27319428"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |instalado|1|Está instalada la aplicación sin errores|
 |failed|2|No se pudo instalar la aplicación.|

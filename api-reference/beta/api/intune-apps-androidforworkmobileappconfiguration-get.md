@@ -2,12 +2,13 @@
 title: Obtener androidForWorkMobileAppConfiguration
 description: Leer las propiedades y las relaciones del objeto androidForWorkMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: cad80705b5ba68970acd4ad71e3f0d5558a072f7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a5893b0e1b7ba2767721ca5bdb7051d3069e17d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859867"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Obtener androidForWorkMobileAppConfiguration
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

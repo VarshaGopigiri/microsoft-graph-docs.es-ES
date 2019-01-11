@@ -2,12 +2,13 @@
 title: recursos de onenoteEntityHierarchyModel
 description: Éste es un tipo base para las entidades de OneNote.
 author: Jewan-microsoft
-ms.openlocfilehash: a142e9206aefbb118f21b2f1a85d00cbc4a3a315
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9dbab25bb3afa69c434545fceaa6cbc869fb7dcc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858880"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>recursos de onenoteEntityHierarchyModel
 
@@ -40,7 +41,7 @@ Aquí tiene una representación JSON del recurso.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|displayName|String|El nombre del bloc de notas.|
+|displayName|Cadena|El nombre del bloc de notas.|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|

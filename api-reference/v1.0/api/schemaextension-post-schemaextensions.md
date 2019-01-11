@@ -1,12 +1,13 @@
 ---
 title: Crear schemaExtensions
 description: Crear una nueva definición de schemaExtension para extender a un tipo de recurso compatible.
-ms.openlocfilehash: b66cdc9d589520bbdf3557c4d1ea791f75def984
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 100602336f32ce7d13318650a7e473b7635f768c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030017"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857431"
 ---
 # <a name="create-schemaextension"></a>Crear schemaExtensions
 
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear una exte
 
 | Parámetro | Tipo | Descripción|
 |:---------------|:--------|:----------|
-|description|String|Descripción de la extensión de esquema.|
+|description|Cadena|Descripción de la extensión de esquema.|
 |id|Cadena|Identificador único para la definición de la extensión de esquema. <br>Puede asignar un valor de dos maneras: <ul><li>Concatenar el nombre de uno de los dominios comprobados con un nombre para la extensión del esquema con el fin de formar una cadena única en este formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Por ejemplo: `contoso_mySchema`. NOTA: Solo se admiten los dominios comprobados bajo los siguientes dominios de primer nivel: `.com`, `.net`, `.gov`, `.edu` o `.org`. </li><li>Proporcionar un nombre de esquema y permitir a Microsoft Graph utilizar ese nombre de esquema para completar la asignación del **id.** en este formato: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Un ejemplo sería `extkvbmkofy_mySchema`.</li></ul>Una vez creada, esta propiedad no se puede modificar. |
 |owner|String|(Opcional) El `appId` de la aplicación que es el propietario de la extensión del esquema. Esta propiedad se puede proporcionar en la creación, para establecer el propietario.  Si no se proporciona, entonces la aplicación de llamada `appId` se establecerá como la propietaria. Así, por ejemplo, si crea una nueva definición de extensión de esquema mediante el Probador de gráfico, **debe** proporcionar la propiedad owner. Una vez establecida, esta propiedad es de solo lectura y no se puede cambiar.|
 |properties|Colección [extensionSchemaProperty](../resources/extensionschemaproperty.md)|La colección de tipos y nombres de propiedad que conforman la definición de la extensión de esquema.|

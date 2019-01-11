@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationFileResource
 description: Una subclase de educationResource que representa un objeto de archivo que está asociado con la asignación o el envío.  En este caso, el archivo no es uno de los archivos especiales (Word, Excel etc.), pero es un archivo que no tiene un tratamiento especial dentro del sistema. El recurso de archivo debe almacenarse en el **Carpetarecurso** que está asociada con la asignación o el envío de a que este recurso se adjunta.
-ms.openlocfilehash: b3ba77b6b9243d987ad1137afe6d2206e47dadaf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5fda86b80030a2bc0c885b4dd90a384b7ede7fff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858089"
 ---
 # <a name="educationfileresource-resource-type"></a>tipo de recurso educationFileResource
 
@@ -15,9 +16,9 @@ ms.locfileid: "27087219"
 Una subclase de [educationResource](educationresource.md) que representa un objeto de archivo que está asociado con la asignación o el envío.  En este caso, el archivo no es uno de los archivos especiales (Word, Excel etc.), pero es un archivo que no tiene un tratamiento especial dentro del sistema. El recurso de archivo debe almacenarse en el **Carpetarecurso** que está asociada con la asignación o el envío de a que este recurso se adjunta.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|fileUrl|String|Ubicación en el disco del recurso de archivo.|
+|fileUrl|Cadena|Ubicación en el disco del recurso de archivo.|
 
 ## <a name="json-representation"></a>Representación JSON
 

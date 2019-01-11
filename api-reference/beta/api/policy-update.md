@@ -1,12 +1,13 @@
 ---
 title: Directiva de actualización
 description: Actualizar las propiedades de una directiva existente.
-ms.openlocfilehash: 426476b5545e511fe2da111acb1f47f38f32c96f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090282"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857158"
 ---
 # <a name="update-policy"></a>Directiva de actualización
 
@@ -31,18 +32,18 @@ PATCH /policies/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | application/json  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros que necesitan actualizarse. La siguiente tabla muestran los posibles parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
-|definición|String|La versión stringified del objeto de [Directiva](../resources/policy.md) .|
-|displayName|String|Un nombre personalizado para la directiva.|
+|definición|Cadena|La versión stringified del objeto de [Directiva](../resources/policy.md) .|
+|displayName|Cadena|Un nombre personalizado para la directiva.|
 |isOrganizationDefault|Booleano|Especifica si se aplica esta directiva de forma predeterminada.|
-|type|String|Especifica el tipo de directiva. Actualmente, debe ser "TokenLifetimePolicy"|
+|type|Cadena|Especifica el tipo de directiva. Actualmente, debe ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Respuesta
 

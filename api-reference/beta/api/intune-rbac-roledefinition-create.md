@@ -2,12 +2,13 @@
 title: Crear roleDefinition
 description: Cree un objeto roleDefinition.
 author: tfitzmac
-ms.openlocfilehash: 03134f270d49002c5882a1e65cb0c4454684cd4a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1e4b80388ecb74a4bd521e4b910a24ffb22af6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858985"
 ---
 # <a name="create-roledefinition"></a>Crear roleDefinition
 
@@ -38,7 +39,7 @@ POST /deviceManagement/roleDefinitions
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto roleDefinition.
@@ -47,13 +48,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
-|displayName|String|Nombre para mostrar de la definición de rol.|
-|description|String|Descripción de la definición de rol.|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|displayName|Cadena|Nombre para mostrar de la definición de rol.|
+|description|Cadena|Descripción de la definición de rol.|
 |permissions|Colección [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission.|
 |rolePermissions|Colección [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission.|
-|isBuiltInRoleDefinition|Boolean|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada.|
-|isBuiltIn|Boolean|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada.|
+|isBuiltInRoleDefinition|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada.|
+|isBuiltIn|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada.|
 
 
 

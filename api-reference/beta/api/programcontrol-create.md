@@ -1,12 +1,13 @@
 ---
 title: Crear programControl
 description: En Azure AD tener acceso a la característica de revisiones, crear un nuevo objeto programControl.  Esto vincula una revisión de acceso a un programa.
-ms.openlocfilehash: fa6a93b13391fd4b9e3c5816bb2a27259e730c0d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4dfbb76244a41867b8a57faa42f63dc728f59136
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851537"
 ---
 # <a name="create-programcontrol"></a>Crear programControl
 
@@ -38,14 +39,14 @@ POST /programControls
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [programControl](../resources/programcontrol.md) .
 
 La siguiente tabla muestran las propiedades que son necesarias cuando se crea un control de programa.
 
-| Propiedad     | Tipo        | Descripción |
+| Propiedad     | Tipo        | Description |
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | El programId del programa de este control se va a convertirse en una parte de.                             |
 | `controlId`              |`String`                | ControlId del control, en particular, el identificador de una revisión de access.                                                |

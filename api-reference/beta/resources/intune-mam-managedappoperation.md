@@ -2,12 +2,13 @@
 title: Tipo de recurso managedAppOperation
 description: Representa una operación que se aplica a un registro de la aplicación.
 author: tfitzmac
-ms.openlocfilehash: ab12d7e8d7014b1f7c1ea4d6e6dc8e8a81d804d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 962468c4d1464b827e234b0aac5452bbd0be576a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859041"
 ---
 # <a name="managedappoperation-resource-type"></a>Tipo de recurso managedAppOperation
 
@@ -28,11 +29,11 @@ Representa una operación que se aplica a un registro de la aplicación.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|String|El nombre de la operación.|
+|displayName|Cadena|El nombre de la operación.|
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
-|state|String|El estado actual de la operación|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|state|Cadena|El estado actual de la operación|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obtener unidad
-ms.openlocfilehash: 903eb9d5886bf2ec3b7f8672438f01482e754f9b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: d18ee7191747b2c625b62bdecec6d3bffdf0f57e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859663"
 ---
 # <a name="get-drive"></a>Obtener unidad
 
@@ -112,7 +113,7 @@ GET /drives/{driveId}
 
 | Nombre del parámetro | Valor  | Descripción                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | string | Obligatorio. El identificador de la unidad que se ha solicitado. |
+| _driveId_      | string | Necesario. El identificador de la unidad que se ha solicitado. |
 
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 

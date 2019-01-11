@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationTaskExecution
 description: Resuma los resultados de la ejecución del trabajo de sincronización.
-ms.openlocfilehash: 4aefba4bdf9ab850892344e6e34683e81d1a1afa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 99b6c66b15577ee4c6cbbf5ffe44e17cf0672696
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851509"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso synchronizationTaskExecution
 
@@ -15,9 +16,9 @@ ms.locfileid: "27086913"
 Resuma los resultados de la ejecución del trabajo de sincronización.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|activityIdentifier           |String |Identificador de la ejecución del trabajo.|
+|activityIdentifier           |Cadena |Identificador de la ejecución del trabajo.|
 |countEntitled                |Int64  |Recuento de procesado entradas que se han asignado a esta aplicación.|
 |countEntitledForProvisioning |Int64  |Recuento de procesado entradas que se han asignado para el aprovisionamiento.|
 |countEscrowed                |Int64  |Número de entradas que se han custodiadas (errores).|
@@ -28,7 +29,7 @@ Resuma los resultados de la ejecución del trabajo de sincronización.
 |countImportedDeltas          |Int64  |Número de cambios de delta importados.|
 |countImportedReferenceDeltas |Int64  |Recuento de cambios delta importados relativas a los cambios de referencia.|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|Si se ha encontrado un error, contiene un objeto **synchronizationError** con detalles.|
-|estado                        |String |Resumir los resultados de esta ejecución de código. Los valores posibles son: `Succeeded`, `Failed` y `EntryLevelErrors`.|
+|state                        |Cadena |Resumir los resultados de esta ejecución de código. Los valores posibles son: `Succeeded`, `Failed` y `EntryLevelErrors`.|
 |timeBegan                    |DateTimeOffset|Empezó a tiempo cuando se ejecuta este trabajo. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |timeEnded                    |DateTimeOffset|Finalizó el tiempo cuando se ejecuta este trabajo. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 

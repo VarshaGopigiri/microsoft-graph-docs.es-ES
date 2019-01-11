@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceRegistrationState
 description: Estado de registro de dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 9fdd5cd3a63472e841f0d97f8cbee3a0f548380d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2b755d213d39beb228afe603b2066b55416f14c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857326"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeración deviceRegistrationState
 
@@ -15,7 +16,7 @@ ms.locfileid: "27320094"
 
 Estado de registro de dispositivo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |no registradas|0|El dispositivo no está registrado.|
 |registrado|2|El dispositivo está registrado.|

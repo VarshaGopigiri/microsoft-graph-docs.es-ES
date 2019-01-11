@@ -2,12 +2,13 @@
 title: Actualizar deviceConfigurationUserOverview
 description: Actualice las propiedades de un objeto deviceConfigurationUserOverview.
 author: tfitzmac
-ms.openlocfilehash: 8b8feeec14bf8e9e3eafca8770461da611d05ae1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b4ba93e9b945ea4d368250eb481d42662e23f718
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855660"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>Actualizar deviceConfigurationUserOverview
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).
@@ -45,7 +46,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |pendingCount|Int32|Número de usuarios pendientes|
 |notApplicableCount|Int32|Número de usuarios no es aplicable.|
 |successCount|Int32|Número de usuarios correctos|

@@ -2,12 +2,13 @@
 title: Mencione el tipo de recurso
 description: Representa una notificación a una persona en función de la dirección de correo electrónico de la persona.
 author: simonhult
-ms.openlocfilehash: a9c00daed067ecd41f0f687687ac9bf7f86d6f2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ab60fafe00f14f69d79e482d0616576c73d1092
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858432"
 ---
 # <a name="mention-resource-type"></a>Mencione el tipo de recurso
 
@@ -53,13 +54,13 @@ Aquí tiene una representación JSON del recurso.
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|aplicación | String | El nombre de la aplicación donde se creó la mención. Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. |
-|clientReference | String | Un identificador único que representa a un elemento primario de la instancia de recurso. Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. |
+|aplicación | Cadena | El nombre de la aplicación donde se creó la mención. Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. |
+|clientReference | Cadena | Un identificador único que representa a un elemento primario de la instancia de recurso. Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. |
 |createdBy  | [emailAddress](../resources/emailaddress.md) | La información de correo electrónico del usuario que realizó la mención. |
 |createdDateTime  |DateTimeOffset |La fecha y hora en que se creó la mención en el cliente. |
-|deepLink | String | Un vínculo web profundo para el contexto de la mención en la instancia de recurso. Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. |
-|id | String| El identificador único de una mención en una instancia de recursos.|
-|mencionado | [emailAddress](../resources/emailaddress.md) | La información de correo electrónico de la persona se ha mencionado. Obligatorio. |
+|deepLink | Cadena | Un vínculo web profundo para el contexto de la mención en la instancia de recurso. Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. |
+|id | Cadena| El identificador único de una mención en una instancia de recursos.|
+|mencionado | [emailAddress](../resources/emailaddress.md) | La información de correo electrónico de la persona se ha mencionado. Necesario. |
 |mentionText | Cadena | Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. Para obtener las menciones que en un mensaje, vea la propiedad **bodyPreview** del mensaje en su lugar. |
 |serverCreatedDateTime | DateTimeOffset | La fecha y hora en que se creó la mención en el servidor. Opcional. No utilizado y el valor predeterminado como null para el **mensaje**. |
 

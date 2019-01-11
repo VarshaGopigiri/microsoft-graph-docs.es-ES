@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso teamFunSettings
 description: Opciones para configurar el uso de Giphy, memes y pegatinas en el equipo.
-ms.openlocfilehash: e8cf62b88a3afa3e5caf6b9425312d7a26af4d20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c53d3215e5f515361c66fe2d3d0ad10a5338e0c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852069"
 ---
 # <a name="teamfunsettings-resource-type"></a>tipo de recurso teamFunSettings
 
@@ -15,7 +16,7 @@ ms.locfileid: "27083556"
 Opciones para configurar el uso de Giphy, memes y pegatinas en el [equipo](team.md).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |allowGiphy|Booleano|Si establece en verdadero, permite el uso de Giphy.|
 |giphyContentRating|Cadena (enumeración)|Clasificación de contenido de Giphy. Los valores posibles son: `moderate` y `strict`.|

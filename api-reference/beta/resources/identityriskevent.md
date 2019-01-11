@@ -2,12 +2,13 @@
 title: tipo de recurso identityRiskEvent
 description: 'Un evento de riesgo detectado por la protección de identidad de Azure Active Directory. Es el tipo base para cada tipo de evento de riesgo específico:'
 author: cloudhandler
-ms.openlocfilehash: 4abe473b47d3ce52fd5b75b6adfd08dbc4af54fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0735599c260fac178b54ee4ba54a17f5ea027e23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351745"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859000"
 ---
 # <a name="identityriskevent-resource-type"></a>tipo de recurso identityRiskEvent
 
@@ -33,7 +34,7 @@ Obtener información completa acerca de los eventos de riesgo puede encontrarse 
 |[Obtener identityRiskEvent](../api/identityriskevent-get.md) | [identityRiskEvent](identityriskevent.md) |Leer las propiedades y las relaciones del objeto identityRiskEvent.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| La fecha y hora en que se ha cerrado el evento de riesgo|
 |createdDateTime|dateTimeOffset| La fecha y hora en que se creó el evento de riesgo. Siempre es mayor o igual que la fecha y hora del evento riesgo propio. Ésta es la propiedad correcta para utilizar como filtro al consultar los eventos de riesgo.|
@@ -47,7 +48,7 @@ Obtener información completa acerca de los eventos de riesgo puede encontrarse 
 |userPrincipalName|string| El nombre principal de usuario del usuario en riesgo|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Solo lectura. Admite valores NULL.|
 

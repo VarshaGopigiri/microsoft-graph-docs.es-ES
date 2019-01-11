@@ -2,12 +2,13 @@
 title: Tipo de recurso localizedNotificationMessage
 description: El contenido de texto de una plantilla de mensaje de notificación para la configuración regional.
 author: tfitzmac
-ms.openlocfilehash: b3fe7cbc2cdaf5a8afbedd228ca57c989aedfa03
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc4bf6df2d4ec8d19c80b5b2b12d7f2af3b6a9c9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860289"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>Tipo de recurso localizedNotificationMessage
 
@@ -26,12 +27,12 @@ El contenido de texto de una plantilla de mensaje de notificación para la confi
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |configuración regional|String|La configuración regional para la que se destina este mensaje.|
 |subject|String|El asunto de la plantilla del mensaje.|
 |messageTemplate|String|El contenido de la plantilla del mensaje.|
-|isDefault|Boolean|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
+|isDefault|Booleano|Marca para indicar si se trata de la configuración regional predeterminada para la reserva del idioma. Solo se puede establecer esta marca. Para eliminarla, establezca esta propiedad en true en otro mensaje de notificación localizado.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -2,12 +2,13 @@
 title: asignar acción
 description: Reemplazar todos los grupos para una directiva.
 author: tfitzmac
-ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b41ce4ec1c6e304168aebb4c53b4512b0a11f4b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307829"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858670"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -38,14 +39,14 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |officeConfigurationAssignments|colección de [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Lista de las asignaciones de configuración de office|
 

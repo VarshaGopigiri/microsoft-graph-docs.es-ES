@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
-ms.openlocfilehash: 094de0cbdb77fe427ba70b9418ced5cc6e9cc731
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c303436aafbdbb5167a992f405036b5e00e4d635
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084801"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856395"
 ---
 # <a name="sharinglink-resource-type"></a>tipo de recurso sharingLink
 
@@ -47,7 +48,7 @@ Aquí tiene una representación JSON del recurso.
 | type           | String        | El tipo del vínculo creado.
 | scope          | String        | El ámbito del vínculo representado por este permiso. El valor `anonymous` indica que cualquier usuario puede usar el vínculo, `organization` indica que solo pueden usar el vínculo los usuarios que han iniciado sesión en el mismo inquilino.
 | preventsDownload | Booleano       | Si es true, a continuación, el usuario sólo puede usar este vínculo para ver el elemento en la web y no puede usar para descargar el contenido del elemento. Sólo para OneDrive para profesionales y SharePoint.
-| webHtml        | String        | Para los vínculos `embed`, esta propiedad contiene el código HTML para un elemento `<iframe>` que insertará el elemento en una página web.
+| webHtml        | Cadena        | Para los vínculos `embed`, esta propiedad contiene el código HTML para un elemento `<iframe>` que insertará el elemento en una página web.
 | webUrl         | String        | Una dirección URL que abre el elemento en el explorador en el sitio web de OneDrive.
 
 [Identity]: identity.md
@@ -66,7 +67,7 @@ En la tabla siguiente define los valores posibles para la propiedad **type** .
 
 En la tabla siguiente define los valores posibles para la propiedad de **ámbito** .
 
-| Valor            | Descripción
+| Valor            | Description
 |:-----------------|:------------------------------------------------------------
 | `anonymous`      | Cualquier usuario con el vínculo tiene acceso, sin necesidad de iniciar sesión. Esto puede incluir personas fuera de la organización.
 | `organization`   | Cualquier usuario que ha iniciado sesión en su organización (inquilino) puede usar el vínculo para obtener acceso. Sólo está disponible en OneDrive para profesionales y SharePoint.

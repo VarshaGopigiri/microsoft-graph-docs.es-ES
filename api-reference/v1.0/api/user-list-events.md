@@ -1,12 +1,13 @@
 ---
 title: List events
 description: 'Para obtener una lista de objetos de eventos en el buzón del usuario. La lista contiene único '
-ms.openlocfilehash: 546e47de6b3d14b911462db19e7c739355445023
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a4766528e8a8e9ee71075377bccc5dfbeaaa4c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852041"
 ---
 # <a name="list-events"></a>List events
 
@@ -66,7 +67,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
-| Authorization  | string | {token} de portador. Obligatorio.  |
+| Autorización  | string | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 | Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationRule
 description: Define cómo se debe realizar la sincronización para el motor de sincronización, incluidos los objetos que desea sincronizar y en qué dirección, cómo los objetos desde el directorio de origen deben coincidir con los objetos en el directorio de destino y cómo los atributos debe transformarse cuando se está sincronizando desde el origen al directorio de destino.
-ms.openlocfilehash: c860228637a6cc3ad9137851408379bd7f779c75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a739db59a68ece026f9f13dfd22bafce8112f6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856163"
 ---
 # <a name="synchronizationrule-resource-type"></a>tipo de recurso synchronizationRule
 
@@ -20,16 +21,16 @@ Reglas de sincronización se actualizan como parte del [esquema de sincronizaci�
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad      | Tipo      | Descripción    |
+| Propiedad      | Tipo      | Description    |
 |:--------------|:----------|:---------------|
 |editable       |Booleano    |`true`Si la regla de sincronización se puede personalizar; `false` si esta regla es de sólo lectura y no se debe cambiar.|
-|id             |String     |Identificador de regla de sincronización. Debe ser uno de los identificadores reconocidos por el motor de sincronización. Admite la regla de identificadores pueden encontrarse en la plantilla de sincronización devuelta por la API.|
+|id             |Cadena     |Identificador de regla de sincronización. Debe ser uno de los identificadores reconocidos por el motor de sincronización. Admite la regla de identificadores pueden encontrarse en la plantilla de sincronización devuelta por la API.|
 |metadatos       |colección de [stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) |Propiedades de extensión adicionales. A menos que así lo indique explícitamente el equipo de soporte técnico, no se deben cambiar los valores de metadatos.|
-|name           |String     |Nombre legible de la regla de sincronización. No admite valores NULL.|
+|name           |Cadena     |Nombre legible de la regla de sincronización. No admite valores NULL.|
 |objectMappings |colección de [objectMapping](synchronization-objectmapping.md)    |Colección de asignaciones de objeto admitidos por la regla. Indica al motor de sincronización los objetos que se deben sincronizar.|
-|prioridad       |Entero    |Prioridad con respecto a las demás reglas en la [synchronizationSchema](synchronization-synchronizationschema.md). En primer lugar se procesarán las reglas con el número de prioridad más baja.|
-|sourceDirectoryName       |String    |Nombre del directorio de origen. Debe coincidir con una de las definiciones de Active directory en [synchronizationSchema](synchronization-synchronizationschema.md).|
-|targetDirectoryName       |String    |Nombre del directorio de destino. Debe coincidir con una de las definiciones de Active directory en [synchronizationSchema](synchronization-synchronizationschema.md).|
+|prioridad       |Integer    |Prioridad con respecto a las demás reglas en la [synchronizationSchema](synchronization-synchronizationschema.md). En primer lugar se procesarán las reglas con el número de prioridad más baja.|
+|sourceDirectoryName       |Cadena    |Nombre del directorio de origen. Debe coincidir con una de las definiciones de Active directory en [synchronizationSchema](synchronization-synchronizationschema.md).|
+|targetDirectoryName       |Cadena    |Nombre del directorio de destino. Debe coincidir con una de las definiciones de Active directory en [synchronizationSchema](synchronization-synchronizationschema.md).|
 
 ## <a name="json-representation"></a>Representación JSON
 

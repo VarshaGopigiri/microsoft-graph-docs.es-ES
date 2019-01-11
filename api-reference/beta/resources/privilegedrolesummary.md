@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso privilegedRoleSummary
 description: Las estadísticas de resumen para un rol determinado.
-ms.openlocfilehash: f6c66433651eff188ce6fdaa07c2422d3bb6e0ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b74b562a992f7795f3ae8e317608f1e370bc2a4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858621"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>tipo de recurso privilegedRoleSummary
 
@@ -22,7 +23,7 @@ Las estadísticas de resumen para un rol determinado.
 |[Obtener privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |Leer las propiedades y las relaciones del objeto privilegedRoleSummary.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|El número de usuarios que tienen el rol asignado y la función está activado.|
 |id|string| El identificador único para el rol. Solo lectura.|

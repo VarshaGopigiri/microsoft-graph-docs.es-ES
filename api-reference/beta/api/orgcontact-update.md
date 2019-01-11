@@ -1,12 +1,13 @@
 ---
 title: Actualizar orgcontact
 description: Actualizar las propiedades del objeto orgcontact.
-ms.openlocfilehash: 04bc5bef07fb49c2c4fe730e89517de2f364628a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f48795bef6ea1a4833379f54747cbf2c291b2454
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085370"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859069"
 ---
 # <a name="update-orgcontact"></a>Actualizar orgcontact
 
@@ -30,30 +31,30 @@ PATCH /contacts/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|city|String||
-|country|String||
-|department|String||
+|city|Cadena||
+|country|Cadena||
+|department|Cadena||
 |onPremisesSyncEnabled|Booleano||
-|displayName|String||
-|givenName|String||
-|jobTitle|String||
+|displayName|Cadena||
+|givenName|Cadena||
+|jobTitle|Cadena||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|mail|String||
-|mailNickname|String||
-|mobilePhone|String||
-|officeLocation|String||
-|postalCode|String||
+|mail|Cadena||
+|mailNickname|Cadena||
+|mobilePhone|Cadena||
+|officeLocation|Cadena||
+|postalCode|Cadena||
 |proxyAddresses|String||
-|state|String||
-|streetAddress|String||
-|surname|String||
+|state|Cadena||
+|streetAddress|Cadena||
+|surname|Cadena||
 |businessPhones|String||
 
 ## <a name="response"></a>Respuesta

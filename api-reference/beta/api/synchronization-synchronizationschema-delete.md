@@ -1,12 +1,13 @@
 ---
 title: Eliminar synchronizationSchema
 description: Elimina el esquema personalizado y restablece el esquema a la configuración predeterminada. Si se elimina el esquema en el contexto de la plantilla, restablece el esquema en el valor predeterminado uno asociado con la plantilla `factoryTag`.
-ms.openlocfilehash: 81c1a918b10e8f4553b3e99312f20bb538bfbe4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 281911d34355f598f4a3fe57b20c701dde36d4b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855891"
 ---
 # <a name="delete-synchronizationschema"></a>Eliminar synchronizationSchema
 
@@ -34,7 +35,7 @@ DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 
 | Nombre           | Tipo    | Descripción|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

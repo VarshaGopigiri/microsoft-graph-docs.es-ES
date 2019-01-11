@@ -2,12 +2,13 @@
 title: Actualizar deviceEnrollmentLimitConfiguration
 description: Actualice las propiedades de un objeto deviceEnrollmentLimitConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 32c75e34d3dc1e409c55497fe61d6c067c046a81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f41238c42159f40821b2913f51e0b46a1f21725d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345083"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804917"
 ---
 # <a name="update-deviceenrollmentlimitconfiguration"></a>Actualizar deviceEnrollmentLimitConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md).

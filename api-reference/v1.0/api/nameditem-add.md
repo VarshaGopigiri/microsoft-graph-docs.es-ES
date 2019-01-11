@@ -1,12 +1,13 @@
 ---
 title: Agregar un elemento con nombre
 description: Agrega un nuevo nombre a la colección del ámbito especificado, empleando la configuración regional del usuario para la fórmula.
-ms.openlocfilehash: f97d9589cc29203d660eedf6b323d1ba90794b22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eab6116768523d021577bef345151c3e62681fe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852615"
 ---
 # <a name="add-named-item"></a>Agregar un elemento con nombre
 

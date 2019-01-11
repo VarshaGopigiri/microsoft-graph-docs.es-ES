@@ -2,12 +2,13 @@
 title: Función verifyWindowsEnrollmentAutoDiscovery
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 3f981ae765981c067b08dc08dae96831f59d572b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07bba345af6856eed7bec596374b41e3003997a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344180"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859195"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Función verifyWindowsEnrollmentAutoDiscovery
 
@@ -37,7 +38,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.

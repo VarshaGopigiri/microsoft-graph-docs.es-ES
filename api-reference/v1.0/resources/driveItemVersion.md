@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso DriveItemVersion
 description: El recurso **DriveItemVersion** representa una versión específica de un DriveItem.
-ms.openlocfilehash: e257e800b0ac8ad4d94027f9c8040ffb3b20ea90
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfdc38ee7685511fc389300c431f915333deb92b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851691"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
@@ -53,7 +54,7 @@ En la tabla anterior, los ejemplos usan `/drive`, pero hay varias solicitudes v�
 
 ## <a name="properties"></a>Propiedades
 
-|      Nombre de propiedad       |                         Tipo                         |                               Descripción                               |
+|      Nombre de la propiedad       |                         Tipo                         |                               Descripción                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | El identificador de la versión. Solo lectura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidad del usuario que modificó por última vez la versión. Solo lectura.        |

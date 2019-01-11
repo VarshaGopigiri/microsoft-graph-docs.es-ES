@@ -2,12 +2,13 @@
 title: 'message: reply'
 description: Responde al remitente de un mensaje. El mensaje se guarda en la carpeta Elementos enviados.
 author: angelgolfer-ms
-ms.openlocfilehash: e52dc393edf92f4fecfda93166392be0249ca4c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ba3df6551aab9138e90fa5e3fc452f2929b4815
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856326"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -31,7 +32,7 @@ POST /me/mailFolders/{id}/messages/{id}/reply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
@@ -39,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |comment|String|Comentario que se va a incluir. Puede ser una cadena vacía.|
 

@@ -2,12 +2,13 @@
 title: Crear managedAppOperation
 description: Cree un objeto managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 6d1aa54df40829d461ed62f9cbe30f8a00b1e305
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4afd179a33202eb7780495228f94f23326c7268
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347113"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855212"
 ---
 # <a name="create-managedappoperation"></a>Crear managedAppOperation
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto managedAppOperation.
@@ -45,11 +46,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|String|El nombre de la operación.|
+|displayName|Cadena|El nombre de la operación.|
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
-|state|String|El estado actual de la operación|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|state|Cadena|El estado actual de la operación|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 
 

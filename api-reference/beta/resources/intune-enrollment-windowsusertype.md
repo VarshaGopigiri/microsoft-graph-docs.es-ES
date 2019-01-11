@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsUserType
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 145c0f007001621bc4e6e9e68fc06905615c8b21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 08d360ddbfcfa5ddbdf036b4b149898a71fd38a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856899"
 ---
 # <a name="windowsusertype-enum-type"></a>tipo de enumeración windowsUserType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27305148"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |Administrador|0|Todavía no documentado|
 |estándar|1|Todavía no documentado|

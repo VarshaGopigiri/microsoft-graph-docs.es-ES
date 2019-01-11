@@ -1,12 +1,13 @@
 ---
 title: List calendars
 description: 'Obtiene todos los calendarios del usuario (propiedad de navegación `/calendars`), los calendarios del grupo de calendarios predeterminado o de un grupo de calendarios específico. '
-ms.openlocfilehash: ca0a494510e8236f21b0700092af3dac926df558
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 3750f034d501ab06ee0b10e1b567f14f03cc4043
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030671"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857032"
 ---
 # <a name="list-calendars"></a>List calendars
 

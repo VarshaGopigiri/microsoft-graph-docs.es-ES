@@ -2,12 +2,13 @@
 title: tipo de enumeración androidUsernameSource
 description: Origen de nombre de usuario para Android.
 author: tfitzmac
-ms.openlocfilehash: 45a76a7b90e0bf38e91082a12bfe941f7c765d72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b48598ae9ea46684c56364e1901e162003e2066
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859104"
 ---
 # <a name="androidusernamesource-enum-type"></a>tipo de enumeración androidUsernameSource
 
@@ -17,7 +18,7 @@ ms.locfileid: "27315921"
 
 Origen de nombre de usuario para Android.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |usuario|0|El nombre de usuario.|
 |userPrincipalName|1|El nombre principal del usuario.|

@@ -2,12 +2,13 @@
 title: Actualizar deviceInstallState
 description: Actualice las propiedades de un objeto deviceInstallState.
 author: tfitzmac
-ms.openlocfilehash: ad7a840021e2d18ea73f4e7d010768e8f24e6220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0962abe32198d684a158547a3af390cccfab22d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855646"
 ---
 # <a name="update-deviceinstallstate"></a>Actualizar deviceInstallState
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
@@ -46,13 +47,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |deviceName|String|Nombre del dispositivo.|
 |deviceId|String|Id. del dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización.|
 |installState|[installState](../resources/intune-books-installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
 |errorCode|String|El código de error si hay errores de instalación.|
-|osVersion|String|Versión del sistema operativo.|
+|osVersion|Cadena|Versión del sistema operativo.|
 |osDescription|String|Descripción del sistema operativo.|
 |userName|String|Nombre de usuario del dispositivo.|
 

@@ -1,12 +1,13 @@
 ---
 title: Actualizar plannerAssignedToTaskBoardTaskFormat
 description: Actualizar las propiedades del objeto **plannerAssignedToTaskBoardTaskFormat**.
-ms.openlocfilehash: 7bf559b5962c895c1ce7b5d3192ab743bca3acb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2586e0d413ce6debcc90b720c2ec45773518507e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085672"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856808"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Actualizar plannerAssignedToTaskBoardTaskFormat
 
@@ -39,7 +40,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Diccionario de sugerencias de utilizadas en las tareas de orden en la vista AssignedTo del panel de tareas de. La clave de cada entrada es uno de los usuarios a que se asigna la tarea y el valor es la sugerencia de orden. El formato de cada valor se define en [con sugerencias de orden en Organizador (.. / resources/planner_order_hint_format.md).|
-|unassignedOrderHint|String|Valor de sugerencia que se utiliza para pedir la tarea en la vista AssignedTo del panel de tareas cuando la tarea no se asigna a cualquier persona, o si el diccionario orderHintsByAssignee no proporciona una sugerencia de orden para el usuario de la tarea se asigna a. El formato se define en las [sugerencias de orden de uso en el organizador](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|Cadena|Valor de sugerencia que se utiliza para pedir la tarea en la vista AssignedTo del panel de tareas cuando la tarea no se asigna a cualquier persona, o si el diccionario orderHintsByAssignee no proporciona una sugerencia de orden para el usuario de la tarea se asigna a. El formato se define en las [sugerencias de orden de uso en el organizador](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Respuesta
 

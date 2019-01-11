@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: Obtiene el número total de buzones de usuario en la organización y cuantos están activos cada día del período del informe. Un buzón se considera activo si el usuario envió o leyó cualquier correo electrónico.
-ms.openlocfilehash: 62165d7571ae90cf560d312b0220ea2a1bf560b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c1b15824ab5313d1c581509936a84f5af2daee84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856290"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 

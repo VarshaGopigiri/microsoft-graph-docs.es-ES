@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso termsAndConditions
 description: Contenido de las directivas de C se presenta a los usuarios tras su primer intento de inscribirse en Intune y posteriormente en ediciones donde un administrador necesario re aceptación. Permite que los administradores comuniquen las disposiciones que debe aceptar un usuario para tener los dispositivos inscritos en Intune.
-ms.openlocfilehash: b47efb4151357c355a5ec01fbfddb85f1c4cb786
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8f6de8e97d8399d0c251eadafdcdacf09176cb6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858607"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
@@ -27,19 +28,19 @@ Una entidad termsAndConditions representa los contenidos y metadatos de una dire
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la directiva de TyC.|
+|id|Cadena|Identificador único de la directiva de TyC.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
 |modifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre proporcionado por el administrador de la directiva de TyC. |
-|description|String|Descripción de la directiva de TyC proporcionada por el administrador.|
-|title|String|Título de los términos y condiciones proporcionado por el administrador. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
-|bodyText|String|Texto de cuerpo de los términos y condiciones proporcionado por el administrador, normalmente los propios términos. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
-|acceptanceStatement|String|Explicación de los términos y condiciones proporcionada por el administrador, normalmente describe lo que implica aceptar los términos y condiciones de la directiva de TyC. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la directiva de TyC. |
+|description|Cadena|Descripción de la directiva de TyC proporcionada por el administrador.|
+|title|Cadena|Título de los términos y condiciones proporcionado por el administrador. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|bodyText|Cadena|Texto de cuerpo de los términos y condiciones proporcionado por el administrador, normalmente los propios términos. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|acceptanceStatement|Cadena|Explicación de los términos y condiciones proporcionada por el administrador, normalmente describe lo que implica aceptar los términos y condiciones de la directiva de TyC. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
 |version|Int32|Entero que indica la versión actual de los términos. Aumenta cuando un administrador realiza un cambio en los términos y quiere que los usuarios tengan que volver a aceptar la directiva de TyC modificada.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |groupAssignments|colección de [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|La lista de las asignaciones de grupo para esta directiva T & C.|
 |asignaciones|Colección [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|La lista de asignaciones para esta directiva de TyC.|

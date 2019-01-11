@@ -1,12 +1,13 @@
 ---
 title: Update alert
 description: Actualizar una propiedad modificable **alerta** dentro de cualquier solución integrada para mantener sincronizados estado de la alerta y las asignaciones entre las soluciones. Este método actualiza cualquier solución que tiene un registro de la alerta de que se hace referencia a identificador.
-ms.openlocfilehash: 6516d00bc7a542c3aa00244664e08194d96a9640
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dc5c1197e344aa181d827acc654e24bd5a048a06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032554"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858096"
 ---
 # <a name="update-alert"></a>Update alert
 
@@ -35,16 +36,16 @@ PATCH /security/alerts/{alert_id}
 
 | Nombre       | Descripción|
 |:-----------|:-----------|
-| Authorization  | {código} del portador. Necesario.|
+| Autorización  | {código} del portador. Necesario.|
 |Prefer | devolver = representación |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcionar una representación JSON de los valores para los campos relevantes que deben actualizarse. El cuerpo **debe** contener el `vendorInformation` propiedad con válido `provider` y `vendor` campos. En la siguiente tabla se enumera los campos que se pueden actualizar para una alerta. Los valores para las propiedades existentes que no se incluyen en el cuerpo de la solicitud no cambiará. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad   | Tipo |Descripción|
+| Propiedad   | Tipo |Description|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nombre del analista de la alerta se asigna a para la evaluación de errores, investigación o corrección.|
+|assignedTo|Cadena|Nombre del analista de la alerta se asigna a para la evaluación de errores, investigación o corrección.|
 |closedDateTime|DateTimeOffset|Hora a la que se ha cerrado la alerta. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |comments|Colección String|Comentarios de los analistas de la alerta (para la administración de alertas del cliente).|
 |comentarios|alertFeedback|Comentarios de analistas de la alerta. Los valores posibles son: `unknown`, `truePositive`, `falsePositive` y `benignPositive`.|

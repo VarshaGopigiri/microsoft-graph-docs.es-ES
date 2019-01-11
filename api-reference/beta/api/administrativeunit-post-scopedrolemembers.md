@@ -1,12 +1,13 @@
 ---
 title: Agregar un scopedRoleMember
 description: 'Agregar un nuevo scopedRoleMembership. Nota: Actualmente se admiten sólo los roles de *Administrador de la cuenta de usuario* y *Administrador de departamento de soporte técnico* para las pertenencias a funciones con ámbito.'
-ms.openlocfilehash: bab8b1ba5d9093617f1aafb48d84f41badef2566
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e2ff1803ac0357fa8fef9e1cf68b2ff78f877895
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084076"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860022"
 ---
 # <a name="add-a-scopedrolemember"></a>Agregar un scopedRoleMember
 

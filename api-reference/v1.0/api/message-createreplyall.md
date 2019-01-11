@@ -1,12 +1,13 @@
 ---
 title: 'message: createReplyAll'
 description: Cree un borrador para responder al remitente y a todos los destinatarios del mensaje especificado. Después, puede actualizar el borrador para agregar el contenido de la respuesta al **cuerpo**, cambiar otras propiedades del mensaje o, simplemente, enviar el borrador.
-ms.openlocfilehash: a48e5bf7f3ae330ff31a2b8d2827259798186c64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d09de032dc515173219a00b19a64d64ba0b72195
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032484"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804784"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -32,7 +33,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

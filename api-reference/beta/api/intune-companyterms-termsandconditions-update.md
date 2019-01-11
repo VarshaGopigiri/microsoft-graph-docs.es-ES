@@ -2,12 +2,13 @@
 title: Actualizar termsAndConditions
 description: Actualice las propiedades de un objeto termsAndConditions.
 author: tfitzmac
-ms.openlocfilehash: 7394fe5f6838f7ca8c9d25a1b16ab5642bf03e81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7617e58dcae72f4f69c08c5f4dfa8c373df8edd1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852818"
 ---
 # <a name="update-termsandconditions"></a>Actualizar termsAndConditions
 
@@ -40,7 +41,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).
@@ -49,15 +50,15 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la directiva de TyC.|
+|id|Cadena|Identificador único de la directiva de TyC.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
 |modifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|String|Nombre proporcionado por el administrador de la directiva de TyC. |
-|description|String|Descripción de la directiva de TyC proporcionada por el administrador.|
-|title|String|Título de los términos y condiciones proporcionado por el administrador. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
-|bodyText|String|Texto de cuerpo de los términos y condiciones proporcionado por el administrador, normalmente los propios términos. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
-|acceptanceStatement|String|Explicación de los términos y condiciones proporcionada por el administrador, normalmente describe lo que implica aceptar los términos y condiciones de la directiva de TyC. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|displayName|Cadena|Nombre proporcionado por el administrador de la directiva de TyC. |
+|description|Cadena|Descripción de la directiva de TyC proporcionada por el administrador.|
+|title|Cadena|Título de los términos y condiciones proporcionado por el administrador. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|bodyText|Cadena|Texto de cuerpo de los términos y condiciones proporcionado por el administrador, normalmente los propios términos. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
+|acceptanceStatement|Cadena|Explicación de los términos y condiciones proporcionada por el administrador, normalmente describe lo que implica aceptar los términos y condiciones de la directiva de TyC. Se muestra a los usuarios cuando se les solicita que acepten la directiva de TyC.|
 |version|Int32|Entero que indica la versión actual de los términos. Aumenta cuando un administrador realiza un cambio en los términos y quiere que los usuarios tengan que volver a aceptar la directiva de TyC modificada.|
 
 

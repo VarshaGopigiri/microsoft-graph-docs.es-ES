@@ -2,12 +2,13 @@
 title: acción playLostModeSound
 description: Bloqueo remoto
 author: tfitzmac
-ms.openlocfilehash: 74ababc491876310ce8d7533cf6b1665b8a06661
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17d099a02ce42db71d1f64f4175ffd6166be97b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337880"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858068"
 ---
 # <a name="playlostmodesound-action"></a>acción playLostModeSound
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

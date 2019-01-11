@@ -2,12 +2,13 @@
 title: Actualizar windowsManagementAppHealthState
 description: Actualizar las propiedades de un objeto windowsManagementAppHealthState.
 author: tfitzmac
-ms.openlocfilehash: 72beed52f76531aacd3ba0c48e350954bd4ac525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4af20e28e47fa65c0e57ae5030c84bd23e74e3e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309089"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838636"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Actualizar windowsManagementAppHealthState
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .
@@ -47,12 +48,12 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para el estado de mantenimiento de aplicación de administración de Windows|
+|id|Cadena|Identificador único para el estado de mantenimiento de aplicación de administración de Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Estado de mantenimiento de aplicación de administración de Windows. Los valores posibles son: `unknown`, `healthy` y `unhealthy`.|
-|installedVersion|String|La versión instalada de aplicación de administración de Windows.|
+|installedVersion|Cadena|La versión instalada de aplicación de administración de Windows.|
 |lastCheckInDateTime|DateTimeOffset|Aplicación de administración de Windows última hora de protección.|
-|deviceName|String|Nombre del dispositivo con Windows está instalada la aplicación de administración.|
-|deviceOSVersion|String|Versión de sistema operativo de Windows 10 del dispositivo con Windows está instalada la aplicación de administración.|
+|deviceName|Cadena|Nombre del dispositivo con Windows está instalada la aplicación de administración.|
+|deviceOSVersion|Cadena|Versión de sistema operativo de Windows 10 del dispositivo con Windows está instalada la aplicación de administración.|
 
 
 

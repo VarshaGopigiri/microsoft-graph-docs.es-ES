@@ -2,12 +2,13 @@
 title: Enumerar usuarios
 description: Enumere las propiedades y las relaciones de los objetos user.
 author: tfitzmac
-ms.openlocfilehash: 9d68b6855a80262daf359950967517a4ec8faa8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f286cd3bdb49f99fcc8db52b1fee8c204ccdee7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856794"
 ---
 # <a name="list-users"></a>Enumerar usuarios
 
@@ -40,7 +41,7 @@ GET /users
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
