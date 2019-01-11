@@ -2,28 +2,29 @@
 title: Enumerar resourceOperations
 description: Enumere las propiedades y las relaciones de los objetos resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: af691d9f0563fa3b9805a512f234b35d1bad4d74
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8ef5899d4c34c514f4610011616df83980cb4a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883100"
 ---
-# <a name="list-resourceoperations"></a><span data-ttu-id="df11b-103">Enumerar resourceOperations</span><span class="sxs-lookup"><span data-stu-id="df11b-103">List resourceOperations</span></span>
+# <a name="list-resourceoperations"></a><span data-ttu-id="6dd59-103">Enumerar resourceOperations</span><span class="sxs-lookup"><span data-stu-id="6dd59-103">List resourceOperations</span></span>
 
-> <span data-ttu-id="df11b-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="df11b-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6dd59-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="6dd59-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="df11b-105">Enumere las propiedades y las relaciones de los objetos [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="df11b-105">List properties and relationships of the [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="df11b-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="df11b-106">Prerequisites</span></span>
-<span data-ttu-id="df11b-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="df11b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6dd59-105">Enumere las propiedades y las relaciones de los objetos [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="6dd59-105">List properties and relationships of the [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6dd59-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="6dd59-106">Prerequisites</span></span>
+<span data-ttu-id="6dd59-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6dd59-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df11b-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="df11b-109">Permission type</span></span>|<span data-ttu-id="df11b-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="df11b-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6dd59-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6dd59-109">Permission type</span></span>|<span data-ttu-id="6dd59-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6dd59-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="df11b-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="df11b-111">Delegated (work or school account)</span></span>|<span data-ttu-id="df11b-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="df11b-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="df11b-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="df11b-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="df11b-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="df11b-114">Not supported.</span></span>|
-|<span data-ttu-id="df11b-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="df11b-115">Application</span></span>|<span data-ttu-id="df11b-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="df11b-116">Not supported.</span></span>|
+|<span data-ttu-id="6dd59-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6dd59-111">Delegated (work or school account)</span></span>|<span data-ttu-id="6dd59-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="6dd59-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="6dd59-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6dd59-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6dd59-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6dd59-114">Not supported.</span></span>|
+|<span data-ttu-id="6dd59-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6dd59-115">Application</span></span>|<span data-ttu-id="6dd59-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6dd59-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="df11b-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="df11b-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6dd59-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6dd59-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -32,27 +33,27 @@ ms.locfileid: "27319197"
 GET /deviceManagement/resourceOperations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="df11b-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="df11b-118">Request headers</span></span>
-|<span data-ttu-id="df11b-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="df11b-119">Header</span></span>|<span data-ttu-id="df11b-120">Valor</span><span class="sxs-lookup"><span data-stu-id="df11b-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6dd59-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6dd59-118">Request headers</span></span>
+|<span data-ttu-id="6dd59-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="6dd59-119">Header</span></span>|<span data-ttu-id="6dd59-120">Valor</span><span class="sxs-lookup"><span data-stu-id="6dd59-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="df11b-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="df11b-121">Authorization</span></span>|<span data-ttu-id="df11b-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="df11b-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="df11b-123">Aceptar</span><span class="sxs-lookup"><span data-stu-id="df11b-123">Accept</span></span>|<span data-ttu-id="df11b-124">application/json</span><span class="sxs-lookup"><span data-stu-id="df11b-124">application/json</span></span>|
+|<span data-ttu-id="6dd59-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="6dd59-121">Authorization</span></span>|<span data-ttu-id="6dd59-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="6dd59-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6dd59-123">Accept</span><span class="sxs-lookup"><span data-stu-id="6dd59-123">Accept</span></span>|<span data-ttu-id="6dd59-124">application/json</span><span class="sxs-lookup"><span data-stu-id="6dd59-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="df11b-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="df11b-125">Request body</span></span>
-<span data-ttu-id="df11b-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="df11b-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6dd59-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6dd59-125">Request body</span></span>
+<span data-ttu-id="6dd59-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="6dd59-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="df11b-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="df11b-127">Response</span></span>
-<span data-ttu-id="df11b-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [resourceOperation](../resources/intune-rbac-resourceoperation.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="df11b-128">If successful, this method returns a `200 OK` response code and a collection of [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6dd59-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6dd59-127">Response</span></span>
+<span data-ttu-id="6dd59-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [resourceOperation](../resources/intune-rbac-resourceoperation.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6dd59-128">If successful, this method returns a `200 OK` response code and a collection of [resourceOperation](../resources/intune-rbac-resourceoperation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df11b-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="df11b-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="df11b-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="df11b-130">Request</span></span>
-<span data-ttu-id="df11b-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="df11b-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6dd59-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6dd59-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="6dd59-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6dd59-130">Request</span></span>
+<span data-ttu-id="6dd59-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6dd59-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/resourceOperations
 ```
 
-### <a name="response"></a><span data-ttu-id="df11b-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="df11b-132">Response</span></span>
-<span data-ttu-id="df11b-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="df11b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6dd59-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6dd59-132">Response</span></span>
+<span data-ttu-id="6dd59-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="6dd59-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
