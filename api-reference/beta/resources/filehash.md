@@ -1,27 +1,28 @@
 ---
 title: tipo de recurso fileHash
 description: Contiene información de estado acerca de los valores de hash de archivo (criptográficas y la ubicación).
-ms.openlocfilehash: 8f283046efc9b4af181cb33fb4e9ca63e4892b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f5d865a7ded230ca611b8628c3648ec1e331c67d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815648"
 ---
-# <a name="filehash-resource-type"></a><span data-ttu-id="55010-103">tipo de recurso fileHash</span><span class="sxs-lookup"><span data-stu-id="55010-103">fileHash resource type</span></span>
+# <a name="filehash-resource-type"></a><span data-ttu-id="d4273-103">tipo de recurso fileHash</span><span class="sxs-lookup"><span data-stu-id="d4273-103">fileHash resource type</span></span>
 
-<span data-ttu-id="55010-104">Contiene información de estado acerca de los valores de hash de archivo (criptográficas y la ubicación).</span><span class="sxs-lookup"><span data-stu-id="55010-104">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
+<span data-ttu-id="d4273-104">Contiene información de estado acerca de los valores de hash de archivo (criptográficas y la ubicación).</span><span class="sxs-lookup"><span data-stu-id="d4273-104">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="55010-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="55010-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d4273-105">Propiedades</span><span class="sxs-lookup"><span data-stu-id="d4273-105">Properties</span></span>
 
-| <span data-ttu-id="55010-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="55010-106">Property</span></span>     | <span data-ttu-id="55010-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="55010-107">Type</span></span>        | <span data-ttu-id="55010-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="55010-108">Description</span></span> |
+| <span data-ttu-id="d4273-106">Propiedad</span><span class="sxs-lookup"><span data-stu-id="d4273-106">Property</span></span>     | <span data-ttu-id="d4273-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="d4273-107">Type</span></span>        | <span data-ttu-id="d4273-108">Description</span><span class="sxs-lookup"><span data-stu-id="d4273-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="55010-109">hashType</span><span class="sxs-lookup"><span data-stu-id="55010-109">hashType</span></span>|<span data-ttu-id="55010-110">enumeración [fileHashType](filehashtypeenumtype.md)</span><span class="sxs-lookup"><span data-stu-id="55010-110">[fileHashType](filehashtypeenumtype.md) enum</span></span>|<span data-ttu-id="55010-111">Tipo de hash de archivo.</span><span class="sxs-lookup"><span data-stu-id="55010-111">File hash type.</span></span> <span data-ttu-id="55010-112">Los valores posibles son: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1` y `peSha256`.</span><span class="sxs-lookup"><span data-stu-id="55010-112">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
-|<span data-ttu-id="55010-113">hashValue</span><span class="sxs-lookup"><span data-stu-id="55010-113">hashValue</span></span>|<span data-ttu-id="55010-114">String</span><span class="sxs-lookup"><span data-stu-id="55010-114">String</span></span>|<span data-ttu-id="55010-115">Valor de hash de archivo.</span><span class="sxs-lookup"><span data-stu-id="55010-115">Value of the file hash.</span></span>|
+|<span data-ttu-id="d4273-109">hashType</span><span class="sxs-lookup"><span data-stu-id="d4273-109">hashType</span></span>|<span data-ttu-id="d4273-110">enumeración [fileHashType](filehashtypeenumtype.md)</span><span class="sxs-lookup"><span data-stu-id="d4273-110">[fileHashType](filehashtypeenumtype.md) enum</span></span>|<span data-ttu-id="d4273-111">Tipo de hash de archivo.</span><span class="sxs-lookup"><span data-stu-id="d4273-111">File hash type.</span></span> <span data-ttu-id="d4273-112">Los valores posibles son: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1` y `peSha256`.</span><span class="sxs-lookup"><span data-stu-id="d4273-112">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
+|<span data-ttu-id="d4273-113">hashValue</span><span class="sxs-lookup"><span data-stu-id="d4273-113">hashValue</span></span>|<span data-ttu-id="d4273-114">Cadena</span><span class="sxs-lookup"><span data-stu-id="d4273-114">String</span></span>|<span data-ttu-id="d4273-115">Valor de hash de archivo.</span><span class="sxs-lookup"><span data-stu-id="d4273-115">Value of the file hash.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="55010-116">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="55010-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d4273-116">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="d4273-116">JSON representation</span></span>
 
-<span data-ttu-id="55010-117">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="55010-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d4273-117">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="d4273-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
