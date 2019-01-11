@@ -2,12 +2,13 @@
 title: Get conversation
 description: Recupera las propiedades y relaciones del objeto conversation.
 author: dkershaw10
-ms.openlocfilehash: 7f5beb49140c898a4afeb059402c06fdade5f7ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7ff3447931c3818bb92f1d188557d22a5bc5a65e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874630"
 ---
 # <a name="get-conversation"></a>Obtener conversación
 

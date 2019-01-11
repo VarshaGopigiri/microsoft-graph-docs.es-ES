@@ -2,12 +2,13 @@
 title: exportDeviceAndAppManagementData (función)
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 3ec79080a2e4f6f5da3622dedfedc486231703ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7c4bc294d382cf1e1917a2c5a607a7c90107856
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872852"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>exportDeviceAndAppManagementData (función)
 
@@ -43,13 +44,13 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |skip|Int32|Todavía no documentado|
 |top|Int32|Todavía no documentado|

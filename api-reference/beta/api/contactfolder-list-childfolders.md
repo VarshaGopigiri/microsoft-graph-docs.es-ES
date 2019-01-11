@@ -2,12 +2,13 @@
 title: List childFolders
 description: Obtiene una colección de carpetas secundarias en la carpeta de contactos especificada.
 author: angelgolfer-ms
-ms.openlocfilehash: f5a6d351ad6832f7eea4067574d830d1bde80a23
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6238d3dbbe194b17e8170d888b70494e24d4c89a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870185"
 ---
 # <a name="list-childfolders"></a>List childFolders
 
@@ -32,7 +33,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

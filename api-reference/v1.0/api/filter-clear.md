@@ -1,12 +1,13 @@
 ---
 title: 'Filter: clear'
 description: Borrar el filtro de la columna especificada.
-ms.openlocfilehash: 85a9249cf70ffdd44b8b84e0d28bec63ca743ca1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bea500516e898fbbad2bbb881be437004405fb84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872243"
 ---
 # <a name="filter-clear"></a>Filter: clear
 

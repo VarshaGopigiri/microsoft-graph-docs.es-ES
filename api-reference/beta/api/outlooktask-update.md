@@ -2,12 +2,13 @@
 title: Actualizar outlooktask
 description: Cambiar las propiedades modificables de una tarea de Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874756"
 ---
 # <a name="update-outlooktask"></a>Actualizar outlooktask
 
@@ -49,12 +50,12 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------------|:--------|:----------|
-|assignedTo|String|El nombre de la persona que se le ha asignado la tarea.|
+|assignedTo|Cadena|El nombre de la persona que se le ha asignado la tarea.|
 |body|[itemBody](../resources/itembody.md)|El cuerpo de la tarea que normalmente contiene información acerca de la tarea. Tenga en cuenta que sólo el tipo HTML es compatible.|
 |categories|Colección String|Las categorías asociadas con la tarea.|
-|changeKey|String|La versión de la tarea.|
+|changeKey|Cadena|La versión de la tarea.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha en la zona horaria especificada que se ha finalizado la tarea.|
 |createdDateTime|DateTimeOffset|La fecha y la hora cuando se creó la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad usa formato ISO 8601. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha en la zona horaria especificada que se va finalizado la tarea.|
@@ -62,14 +63,14 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |importance|string|Importancia del evento. Los valores posibles son: `low`, `normal` y `high`.|
 |isReminderOn|Booleano|Se establece en true si se establece una alerta para recordarle al usuario de la tarea.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de última modificación de la tarea. De forma predeterminada, está en UTC. Puede proporcionar una zona horaria personalizada en el encabezado de solicitud. El valor de la propiedad utiliza el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|
-|owner|String|El nombre de la persona que creó la tarea.|
-|parentFolderId|String|El identificador único para la carpeta principal de la tarea.|
+|owner|Cadena|El nombre de la persona que creó la tarea.|
+|parentFolderId|Cadena|El identificador único para la carpeta principal de la tarea.|
 |periodicidad|[patternedRecurrence](../resources/patternedrecurrence.md)|El patrón de periodicidad de la tarea.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha y hora para un aviso de la tarea que se produzca.|
 |sensitivity|string|Indica el nivel de privacidad para la tarea. Los valores posibles son: `normal`, `personal`, `private` y `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|La fecha en la zona horaria especificada cuando la tarea que se va a comenzar.|
 |status|string|Indica el estado o el progreso de la tarea. Los valores posibles son: `notStarted`, `inProgress`, `completed`, `waitingOnOthers` y `deferred`.|
-|subject|String|Una breve descripción o el título de la tarea.|
+|subject|Cadena|Una breve descripción o el título de la tarea.|
 
 ## <a name="response"></a>Respuesta
 

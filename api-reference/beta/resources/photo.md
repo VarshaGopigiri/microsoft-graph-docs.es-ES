@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Foto
-ms.openlocfilehash: f61d37eecccd4bf08a2f8abbf4cda15dee5eb94d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed891f917ba8018aac349976df0455adfd269fdb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869387"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 

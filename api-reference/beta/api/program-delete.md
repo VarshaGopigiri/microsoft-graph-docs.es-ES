@@ -1,12 +1,13 @@
 ---
 title: Eliminar programa
 description: En AD Azure access revisiones característica, eliminar un objeto de programa.
-ms.openlocfilehash: c09dcc36bfc4fbf279e7b6c49ea24bba9153c071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10b8c1e6eab7b3a42b053f854ae5f08faefc2e12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088688"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872012"
 ---
 # <a name="delete-program"></a>Eliminar programa
 
@@ -34,7 +35,7 @@ DELETE /programs('<id>')
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

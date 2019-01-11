@@ -1,12 +1,13 @@
 ---
 title: Crear contrato
 description: Crear un nuevo objeto de contrato.
-ms.openlocfilehash: bfcab53b4233d133309c99a4825e184a42670458
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4768912a7c5be722878d6b910d6d68ded460c702
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084372"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870640"
 ---
 # <a name="create-agreement"></a>Crear contrato
 
@@ -30,7 +31,7 @@ POST /agreements
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de objeto de [acuerdo](../resources/agreement.md) .
@@ -39,11 +40,11 @@ En la tabla siguiente, se muestran las propiedades necesarias al crear un usuari
 
 | Propiedad     | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-|displayName|String|Nombre para mostrar del contrato.|
+|displayName|Cadena|Nombre para mostrar del contrato.|
 |isViewingBeforeAcceptanceRequired|Booleano|Indica si el usuario tiene que expandir y ver el contrato antes de Aceptar.|
-|archivos/nombre de archivo|String|Nombre del archivo de contrato (por ejemplo, TOU.pdf).|
+|archivos/nombre de archivo|Cadena|Nombre del archivo de contrato (por ejemplo, TOU.pdf).|
 |archivos/isDefault|Booleano|Indica si este es el archivo del contrato de forma predeterminada si ninguno de la referencia cultural coincide con la preferencia de cliente. Si ninguno de los archivos se marca como predeterminada, el primero de ellos se tratará como predeterminado.|
-|los archivos y el idioma|String|Referencia cultural del archivo de contrato en el formato languagecode2-país/regioncode2. languagecode2 es un código de dos letras en minúsculas proveniente de ISO 639-1. país/regioncode2 se deriva de ISO 3166 y normalmente consta de dos letras en mayúsculas, o una etiqueta de idioma BCP 47 (por ejemplo, en-US).|
+|los archivos y el idioma|Cadena|Referencia cultural del archivo de contrato en el formato languagecode2-país/regioncode2. languagecode2 es un código de dos letras en minúsculas proveniente de ISO 639-1. país/regioncode2 se deriva de ISO 3166 y normalmente consta de dos letras en mayúsculas, o una etiqueta de idioma BCP 47 (por ejemplo, en-US).|
 |archivos, fileData/datos|Binario|Datos que representan las condiciones de uso del documento PDF.|
 
 ## <a name="response"></a>Respuesta

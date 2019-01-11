@@ -2,12 +2,13 @@
 title: Enumerar páginas
 description: Recupera una lista de objetos page.
 author: Jewan-microsoft
-ms.openlocfilehash: 75673f046d062b22285213df0c20445cc41910be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b0d4186562b8bc3663a18f31ddba57321229b3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874539"
 ---
 # <a name="list-pages"></a>Enumerar páginas
 
@@ -39,7 +40,7 @@ La consulta predeterminada para páginas devuelve las primeras 20 páginas orden
 La respuesta predeterminada expande `parentSection` y selecciona las propiedades `id`, `displayName` y `self` de la sección. Los valores válidos de `expand` de las páginas son `parentNotebook` y `parentSection`.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |

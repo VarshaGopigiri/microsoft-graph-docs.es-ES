@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRole: selfActivate'
 description: Activar la función que se asigna al solicitante.
-ms.openlocfilehash: bff445bf1fa5d7c0dfbce080b4361b0479b7dcb7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9423d87714fcd4a7b7cce1dd5cd03bcef3e0ef9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089166"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872131"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -44,7 +45,7 @@ Tenga en cuenta que ``<id>`` es el identificador de rol de destino.
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
 |motivo|string|Opcional. Descripción sobre el motivo de la activación de este rol.|
 |duration|string|Opcional. Los valores válidos podrían ser ```min``` (duración de activación mínimo), ```default``` (duración predeterminada de activación para el rol), o un valor de tipo double para especificar cuántas horas es la activación. La duración especificada no se puede tener más de duración de activación de la función de la configuración de rol. |

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Actualizar un registro en una lista de SharePoint
-ms.openlocfilehash: a3d5ca140f56da1de5f4134fbe76f55b350e83a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0b6053f997422f396825aafe058dfd5252986ca1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083423"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872482"
 ---
 # <a name="update-an-item-in-a-list"></a>Actualizar un elemento en una lista
 

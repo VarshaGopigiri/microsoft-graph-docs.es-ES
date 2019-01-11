@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso accessReviewDecision
 description: En el anuncio de Azure access revisa la característica, el `accessReviewDecision` representa una decisión de revisión de Azure AD acceso de acceso de una entidad determinada.  Dentro de una revisión de access, o una instancia de una revisión periódica de acceso, hay una `accessReviewDecision` por usuario revisado.  Por ejemplo, si un grupo tiene dos invitados y que no sean uno Invitado como miembros y una revisión de acceso de los invitados se realiza para dicho grupo, a continuación, habrá dos objetos de toma de decisiones de revisión de access.  Si un revisor cambia su decisión o reemplaza a otro revisor, entonces el `accessReviewDecision` se ha actualizado.
-ms.openlocfilehash: 8eebbc6d99e6197da68731fe3a39d3b47e743573
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 208337f3427fad65499b400dee769d379c38dcb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870052"
 ---
 # <a name="accessreviewdecision-resource-type"></a>tipo de recurso accessReviewDecision
 
@@ -23,7 +24,7 @@ Ninguno.  Objetos de este tipo se crean automáticamente por la característica 
 
 Esta tabla muestra las propiedades de objetos de este tipo de bases. 
 
-| Propiedad                        | Tipo                         | Descripción                                                                                            |
+| Propiedad                        | Tipo                         | Description                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `id`                            |`String`                      | El identificador de la decisión dentro de la revisión de access.                                                                                     |
 | `accessReviewId`                |`String`                      | El identificador generado por la característica de la revisión de access.                                                                                       |
@@ -39,7 +40,7 @@ Esta tabla muestra las propiedades de objetos de este tipo de bases.
 
 Además, las propiedades adicionales pueden estar presentes según el tipo de objeto del objeto que poseen el acceso a la que se ha decidido.  Por ejemplo, si la decisión de revisión de acceso es la pertenencia a grupos de un usuario en particular o acceso a la aplicación, el usuario que potencialmente se va a tener su acceso se ha quitado se identifica a través de estas propiedades:
 
-| Propiedad                        | Tipo                         | Descripción                                                                                            |
+| Propiedad                        | Tipo                         | Description                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `userId`                            |`String`                      | El identificador de usuario cuyo acceso se ha revisado.                                                                                    |
 | `userDisplayName`                            |`String`                      | El nombre para mostrar del usuario cuyo acceso se ha revisado.                                                                                     |
@@ -49,7 +50,7 @@ Además, las propiedades adicionales pueden estar presentes según el tipo de ob
 
 ## <a name="relationships"></a>Relaciones
 
-Ninguna.  Objetos de este tipo se pueden recuperar desde una revisión de access con las relaciones de [las decisiones](../api/accessreview-listdecisions.md) y [mydecisions](../api/accessreview-listmydecisions.md) del objeto [accessReview](accessreview.md) .
+Ninguno.  Objetos de este tipo se pueden recuperar desde una revisión de access con las relaciones de [las decisiones](../api/accessreview-listdecisions.md) y [mydecisions](../api/accessreview-listmydecisions.md) del objeto [accessReview](accessreview.md) .
 
 ## <a name="see-also"></a>Vea también
 

@@ -2,12 +2,13 @@
 title: tipo de enumeración certificateDestinationStore
 description: Valores posibles para el almacén de destino de certificados.
 author: tfitzmac
-ms.openlocfilehash: 1e7bfd7f5e6c6b6e2e4e44d461cfccdc09877f47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 64b57a24749b4f7f64dd1ce0cb852dd23f799f92
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873965"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>tipo de enumeración certificateDestinationStore
 
@@ -17,7 +18,7 @@ ms.locfileid: "27347561"
 
 Valores posibles para el almacén de destino de certificados.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |computerCertStoreRoot|0|Almacén de certificados del equipo - raíz.|
 |computerCertStoreIntermediate|1|Almacén de certificados del equipo - intermedio.|

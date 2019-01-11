@@ -2,12 +2,13 @@
 title: Obtener deviceManagementScriptAssignment
 description: Leer las propiedades y las relaciones del objeto deviceManagementScriptAssignment.
 author: tfitzmac
-ms.openlocfilehash: 58360cb52c006c68e5a6da493a79fc86609dc5fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 114f6fa7661f3dadb557af7682a937956444f1a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310923"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874777"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>Obtener deviceManagementScriptAssignment
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

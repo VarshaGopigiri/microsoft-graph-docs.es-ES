@@ -2,12 +2,13 @@
 title: Actualizar deviceCategory
 description: Actualice las propiedades de un objeto deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: 8676067ff4ce34358bcfd8400d28e1d73bd11f68
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6c9a8babcab2eb49b28dee118a6912fcd8923e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321521"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872825"
 ---
 # <a name="update-devicecategory"></a>Actualizar deviceCategory
 
@@ -56,7 +57,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -66,10 +67,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
+|id|Cadena|El identificador único de la categoría de dispositivo. Solo lectura.|
 |**Incorporación de redes**|
-|descripción|String|Descripción opcional de la categoría de dispositivo.|
-|displayName|String|Nombre para mostrar de la categoría de dispositivo.|
+|descripción|Cadena|Descripción opcional de la categoría de dispositivo.|
+|displayName|Cadena|Nombre para mostrar de la categoría de dispositivo.|
 
 ## <a name="response"></a>Respuesta
 

@@ -2,12 +2,13 @@
 title: tipo de enumeración installIntent
 description: Valores posibles para la intención de instalar elegida por el administrador.
 author: tfitzmac
-ms.openlocfilehash: 6b14dae67f8590e3b38865b80a385babf032f16a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6849e333c6487029706c5a2485a174c10e665f46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303664"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871851"
 ---
 # <a name="installintent-enum-type"></a>tipo de enumeración installIntent
 
@@ -15,7 +16,7 @@ ms.locfileid: "27303664"
 
 Valores posibles para la intención de instalar elegida por el administrador.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |disponible|0|Intención de instalación disponibles.|
 |necesario|1|Intención de instalación necesarios.|

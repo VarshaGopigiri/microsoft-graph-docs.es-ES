@@ -2,12 +2,13 @@
 title: Obtener educationUser
 description: Recupere las propiedades y relaciones de un usuario.
 author: mmast-msft
-ms.openlocfilehash: df7b2de211b8950350e9d4418c053d0cc8b7b90b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3c1ae6b5af9eb6311cabcf6ee56e805af5602dbe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872257"
 ---
 # <a name="get-educationuser"></a>Obtener educationUser
 

@@ -2,12 +2,13 @@
 title: 'message: move'
 description: Mover un mensaje a una carpeta. Esto crea una nueva copia del mensaje en la carpeta de destino y quita el mensaje original.
 author: angelgolfer-ms
-ms.openlocfilehash: fd091e02251ed673fd4f226f2e5e3fa2c14f647b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 342c11e844d93ec9bf91b2a40db601e7c4a6b049
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870591"
 ---
 # <a name="message-move"></a>message: move
 
@@ -38,14 +39,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Encabezado | Valor |
 |:-------|:------|
-| Autorización | `Bearer {token}`. Obligatorio. |
-| Content-Type | `application/json`. Obligatorio. |
+| Autorización | `Bearer {token}`. Necesario. |
+| Content-Type | `application/json`. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro   | Type |Descripción|
+| Parámetro   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |destinationId|String|El identificador de la carpeta de destino, o un nombre de carpeta conocida. Para obtener una lista de los nombres de carpetas conocidos compatibles, vea [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 

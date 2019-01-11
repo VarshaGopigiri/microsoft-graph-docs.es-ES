@@ -2,12 +2,13 @@
 title: Obtener el estado de un educationSynchronizationProfile
 description: Obtener el estado de un perfil de sincronización de datos de school específicos en el inquilino. La respuesta indicará el estado de la sincronización.
 author: mmast-msft
-ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f371d86d188068a90b3a9503adea12fd38ba8e8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869963"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Obtener el estado de un educationSynchronizationProfile
 
@@ -31,7 +32,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 

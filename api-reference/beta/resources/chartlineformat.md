@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartLineFormat
 description: Encapsula las opciones de formato para los elementos de línea.
 author: lumine2008
-ms.openlocfilehash: be9d0d3f30deb608aee9873866442e0478c0056a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2b7e8bd5c0b489ed42baaa3939f7a839c74c3e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352188"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871137"
 ---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
 
@@ -21,7 +22,7 @@ Encapsula las opciones de formato para los elementos de línea.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Lee las propiedades y relaciones del objeto chartLineFormat.|
-|[Actualizar](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Actualiza el objeto ChartLineFormat. |
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Actualiza el objeto ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|None|Borra el formato de línea de un elemento de gráfico.|
 
 ## <a name="properties"></a>Propiedades

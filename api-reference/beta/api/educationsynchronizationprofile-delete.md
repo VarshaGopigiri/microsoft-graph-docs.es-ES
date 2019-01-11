@@ -2,12 +2,13 @@
 title: Eliminar un educationSynchronizationProfile
 description: Eliminar un perfil de sincronización de datos de school en el inquilino según el identificador.
 author: mmast-msft
-ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09cc19b22cfa433cef39c81a6cbeadeddcf52ace
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870367"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Eliminar un educationSynchronizationProfile
 
@@ -29,7 +30,7 @@ DELETE /synchronizationProfiles/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio.  |
 |Delegado (cuenta Microsoft personal|No admitida.|

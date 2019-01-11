@@ -1,12 +1,13 @@
 ---
 title: Actualizar plannertaskdetails
 description: Actualizar las propiedades del objeto **plannertaskdetails**.
-ms.openlocfilehash: e0f3768b1f6afcbbda6b7467973cf829beb3a072
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4c1ff4475f2479af22221a76ff693135e5daa7fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870724"
 ---
 # <a name="update-plannertaskdetails"></a>Actualizar plannertaskdetails
 
@@ -39,7 +40,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|Colección de elementos de la lista de comprobación de la tarea.|
-|description|String|Descripción de la tarea|
+|description|Cadena|Descripción de la tarea|
 |previewType|string|Establece el tipo de vista previa que aparece en la tarea. Los valores posibles son `automatic`, `noPreview`, `checklist`, `description` y `reference`. Si se establece en `automatic`, la aplicación que visualiza la tarea elige la vista previa mostrada.|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|La colección de referencias de la tarea.|
 

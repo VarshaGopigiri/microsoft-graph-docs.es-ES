@@ -2,12 +2,13 @@
 title: tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
 description: Elemento de historial de contenidos en el evento de solución de problemas de aplicación móvil.
 author: tfitzmac
-ms.openlocfilehash: 6d0192e8dde3cfc858629f7ae79e4b7de786740a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd7880a6d931fafda46ab4adf0668835438ddcb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870108"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
 
@@ -20,7 +21,7 @@ Elemento de historial de contenidos en el evento de solución de problemas de ap
 Hereda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Tiempo que se produjo el elemento de historial. Se hereda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado del elemento. Los valores posibles son: `unknown`, `success` y `fail`.|

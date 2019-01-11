@@ -1,12 +1,13 @@
 ---
 title: 'página: copyToSection'
 description: Copia una página en una sección específica.
-ms.openlocfilehash: eaa6aae4939856be14a47de1800d3691b53274ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 971d5eb47c6130ab7379e8b7db67d355b55c8d7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871501"
 ---
 # <a name="page-copytosection"></a>página: copyToSection
 Copia una página en una sección específica.
@@ -32,7 +33,7 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -40,8 +41,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parám
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|groupId|String|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
-|id|String|Obligatorio. El id. de la sección de destino.|
+|groupId|Cadena|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
+|id|Cadena|Obligatorio. El id. de la sección de destino.|
 
 ## <a name="response"></a>Respuesta
 

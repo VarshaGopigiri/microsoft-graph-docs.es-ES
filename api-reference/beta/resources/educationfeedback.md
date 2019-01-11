@@ -2,12 +2,13 @@
 title: tipo de recurso educationFeedback
 description: Comentarios de un profesor para un estudiante. Esta propiedad representa la parte de texto de los comentarios junto con la que.
 author: mmast-msft
-ms.openlocfilehash: 934d1ec104133257bb1b767e8922c2379e3fd11a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0d08f3bc5c7b4882693cdcbba41b364734c6ccef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873566"
 ---
 # <a name="educationfeedback-resource-type"></a>tipo de recurso educationFeedback
 
@@ -17,7 +18,7 @@ Comentarios de un profesor para un estudiante. Esta propiedad representa la part
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |feedbackBy|[identitySet](identityset.md)|Usuario que creó los comentarios.|
 |feedbackDateTime|DateTimeOffset|Momento en el tiempo cuando se asignó los comentarios. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|

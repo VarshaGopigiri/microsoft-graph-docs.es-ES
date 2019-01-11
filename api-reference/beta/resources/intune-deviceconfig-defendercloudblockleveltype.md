@@ -2,12 +2,13 @@
 title: tipo de enumeración defenderCloudBlockLevelType
 description: Posibles valores de nivel de bloque en la nube
 author: tfitzmac
-ms.openlocfilehash: c58c844097c18ff86beaef4a0e48d9b8a39043f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 51ed838b6abaaf36a69230b566c01b8d496c2a70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872075"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>tipo de enumeración defenderCloudBlockLevelType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27317447"
 
 Posibles valores de nivel de bloque en la nube
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|Valor predeterminado, se utiliza el bloqueo de Windows Defender Antivirus predeterminado de nivel y se proporciona una detección de segura sin aumentar el riesgo de detectar legítimos archivos|
 |alta|1|Alta aplica a un alto nivel de detección.|

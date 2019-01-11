@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso directoryDefinition
 description: Proporciona la información de motor de sincronización sobre un directorio y sus objetos. Este recurso indica al motor de sincronización, por ejemplo, que el directorio tiene objetos con nombre de **usuario** y **grupo**, los atributos que se admiten para los objetos y los tipos de dichos atributos. En orden para el objeto y el atributo a participar en las reglas de sincronización y las asignaciones de objetos, debe definirse como parte de la definición de Active directory.
-ms.openlocfilehash: ddc32237efc18d43da23d815aea00ee01b2650be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090681"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874525"
 ---
 # <a name="directorydefinition-resource-type"></a>tipo de recurso directoryDefinition
 
@@ -22,9 +23,9 @@ Definiciones de Active Directory se actualizan como parte del [esquema de sincro
 
 | Propiedad      | Tipo      | Descripción    |
 |:--------------|:----------|:---------------|
-|id           |String     |Identificador de directorio. No admite valores NULL.|
+|id           |Cadena     |Identificador de directorio. No admite valores NULL.|
 |metadatos       |colección de metadataEntry    |Propiedades de extensión adicionales. A menos que se mencionan explícitamente, no se deben cambiar los valores de metadatos.|
-|name           |String     |Nombre del directorio. Debe ser único en el [esquema de sincronización](synchronization-synchronizationschema.md). No admite valores NULL.|
+|name           |Cadena     |Nombre del directorio. Debe ser único en el [esquema de sincronización](synchronization-synchronizationschema.md). No admite valores NULL.|
 |objetos        |colección de [objectDefinition](synchronization-objectdefinition.md)    |Colección de objetos compatible con el directorio.|
 
 ## <a name="json-representation"></a>Representación JSON

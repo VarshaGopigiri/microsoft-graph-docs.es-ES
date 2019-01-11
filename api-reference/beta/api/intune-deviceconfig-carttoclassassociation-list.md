@@ -2,12 +2,13 @@
 title: Lista cartToClassAssociations
 description: Propiedades de la lista y relaciones de los objetos cartToClassAssociation.
 author: tfitzmac
-ms.openlocfilehash: 4eabf95b942ed94d9ad37f588f3f7882e19f276e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 792f8447410415295a80996fd3bddbf82d86198f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873727"
 ---
 # <a name="list-carttoclassassociations"></a>Lista cartToClassAssociations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/cartToClassAssociations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

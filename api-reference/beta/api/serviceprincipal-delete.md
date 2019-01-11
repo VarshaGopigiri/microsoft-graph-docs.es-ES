@@ -1,12 +1,13 @@
 ---
 title: Eliminar servicePrincipal
 description: Eliminar servicePrincipal.
-ms.openlocfilehash: 363c6a17a7181d72214329c3e6f50433d84a1786
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4e2cd3adeacc1e7c1f7e3c955f247800a63673b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873839"
 ---
 # <a name="delete-serviceprincipal"></a>Eliminar servicePrincipal
 
@@ -31,7 +32,7 @@ DELETE /servicePrincipals/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

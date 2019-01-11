@@ -2,12 +2,13 @@
 title: Enumerar contactos
 description: Recuperar una lista de objetos person ordenados por su relevancia para el usuario, que está determinado por relaciones comerciales y patrones de colaboración y comunicación del usuario.
 author: simonhult
-ms.openlocfilehash: 64d24111f295fd076024a889d050c8c48c104295
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3bd9c8cdd3737cbd8d96fd4f9b24f5382ce04793
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872782"
 ---
 # <a name="list-people"></a>Enumerar contactos
 

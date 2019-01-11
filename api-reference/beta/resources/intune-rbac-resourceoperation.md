@@ -2,12 +2,13 @@
 title: Tipo de recurso resourceOperation
 description: " operación se usa para asignar un recurso de MobileApp a un grupo de seguridad AAD.  No se pueden modificar las operaciones de recursos para los roles integrados."
 author: tfitzmac
-ms.openlocfilehash: 9108181fe4d1c3cf241d879d5c1e4315d84d4eeb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 20bdb309883c4aa713e94ac1346441544f67c774
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323299"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871704"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -29,12 +30,12 @@ Define una operación o una acción que puede realizar un recurso (o entidad) de
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
-|resource|String|Categoría de recurso al que pertenece esta operación.|
-|resourceName|String|Nombre del recurso en el que se realiza esta operación.|
-|actionName|String|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
-|description|String|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
-|enabledForScopeValidation|Boolean|Determina si el permiso se valida para ámbitos definidos por la asignación de roles.|
+|id|Cadena|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
+|resource|Cadena|Categoría de recurso al que pertenece esta operación.|
+|resourceName|Cadena|Nombre del recurso en el que se realiza esta operación.|
+|actionName|Cadena|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
+|description|Cadena|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
+|enabledForScopeValidation|Booleano|Determina si el permiso se valida para ámbitos definidos por la asignación de roles.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

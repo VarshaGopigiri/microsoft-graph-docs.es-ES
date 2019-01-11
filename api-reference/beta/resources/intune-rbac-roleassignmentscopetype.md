@@ -2,12 +2,13 @@
 title: tipo de enumeración roleAssignmentScopeType
 description: Especifica el tipo de ámbito para una asignación de roles.
 author: tfitzmac
-ms.openlocfilehash: 0a3286b3b7bc583323204ca39ff85e01869ddbe7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 738579fbd8bcda9ac438ada2f7746e020396d225
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871543"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>tipo de enumeración roleAssignmentScopeType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27343130"
 
 Especifica el tipo de ámbito para una asignación de roles.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |resourceScope|0|Permitir que las asignaciones para el ResourceScopes especificado.|
 |allDevices|1|Permitir que las asignaciones a todos los dispositivos de Intune.|

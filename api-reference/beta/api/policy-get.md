@@ -1,12 +1,13 @@
 ---
 title: Obtener la directiva
 description: Recuperar las propiedades de una directiva.
-ms.openlocfilehash: a6827813193d134f54c3274e2b035e241bb99dc5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9b3e23639bdeea673ccbe56bbce0c74443a99480
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870598"
 ---
 # <a name="get-policy"></a>Obtener la directiva
 
@@ -31,7 +32,7 @@ GET /policies/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sitio
-ms.openlocfilehash: d18487d9932227df0ce2de3320fcb71ce94ca735
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: fb91e9bada227f1a22cf862726ea0b6f658fe469
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088907"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871025"
 ---
 # <a name="site-resource-type"></a>tipo de recurso de sitio
 
@@ -43,7 +44,7 @@ El recurso **site** proporciona metadatos y relaciones para un sitio de SharePoi
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad            | Tipo               | Descripción
+| Nombre de la propiedad            | Tipo               | Descripción
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | El identificador único del elemento. Solo lectura.
 | **createdDateTime**      | DateTimeOffset     | La fecha y la hora de creación del elemento. Solo lectura.
@@ -59,7 +60,7 @@ El recurso **site** proporciona metadatos y relaciones para un sitio de SharePoi
 
 ## <a name="relationships"></a>Relaciones
 
-| Nombre de la relación | Tipo                             | Descripción
+| Nombre de la relación | Tipo                             | Description
 |:------------------|:---------------------------------|:----------------------
 | **análisis**     | recursos de [itemAnalytics][]       | Análisis acerca de las actividades de vista que tuvieron lugar en este sitio.
 | **columns**       | Collection([columnDefinition][]) | La colección de definiciones de columna reutilizables en listas en este sitio.
@@ -77,7 +78,7 @@ El recurso **site** proporciona metadatos y relaciones para un sitio de SharePoi
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
-[list]: list.md
+[lista]: list.md
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md

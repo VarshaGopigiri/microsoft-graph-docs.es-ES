@@ -2,12 +2,13 @@
 title: tipo de enumeración androidManagedStoreAccountAppSyncStatus
 description: Estado de la sincronización del inquilino con la API de Google en EMM
 author: tfitzmac
-ms.openlocfilehash: 38131e49734cc76809729dcedf7c133d4f624af5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5ff3f0bdba77a7451d141799aa2f60212983d4db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873461"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>tipo de enumeración androidManagedStoreAccountAppSyncStatus
 
@@ -24,7 +25,7 @@ Estado de la sincronización del inquilino con la API de Google en EMM
 |androidForWorkApiError|2|Todavía no documentado|
 |managementServiceError|3|Todavía no documentado|
 |unknownError|4|Todavía no documentado|
-|ninguno|5|Todavía no documentado|
+|none|5|Todavía no documentado|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración managedAppPinCharacterSet
 description: Juego de caracteres que se utiliza para la aplicación de un usuario PIN
-ms.openlocfilehash: 65b900828de5ed33dc5e457104d154764291098e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dce3d39869a4d41ee88866a1d7c8da0af425849a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029802"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871018"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>tipo de enumeración managedAppPinCharacterSet
 
@@ -14,7 +15,7 @@ ms.locfileid: "27029802"
 
 Juego de caracteres que se utiliza para la aplicación de un usuario PIN
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |numérico|0|Caracteres numéricos|
 |alphanumericAndSymbol|1|Caracteres alfanuméricos y simbólicos|

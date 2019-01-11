@@ -2,12 +2,13 @@
 title: Obtener androidManagedStoreAppConfigurationSchema
 description: Leer las propiedades y las relaciones del objeto androidManagedStoreAppConfigurationSchema.
 author: tfitzmac
-ms.openlocfilehash: 1c75c791c4db463eb0d6c796feb2d0e5479c33ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a30d1739239878e0851a6b74df2212b3b6ca46b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360602"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874651"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Obtener androidManagedStoreAppConfigurationSchema
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

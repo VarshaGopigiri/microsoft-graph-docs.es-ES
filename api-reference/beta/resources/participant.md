@@ -2,12 +2,13 @@
 title: tipo de recurso de participantes
 description: El tipo de participantes.
 author: VinodRavichandran
-ms.openlocfilehash: 3fcc5fc5d95ded3b5424370cd180fde38c1a65be
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c125589506dbd529d2b45df4171e9d54b346cbba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869835"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso de participantes
 
@@ -29,12 +30,12 @@ El tipo de participantes.
 
 | Propiedad             | Tipo                                     | Descripción                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | El identificador de participante.                                          |
+| id                   | Cadena                                   | El identificador de participante.                                          |
 | Info                 | [participantInfo](participantinfo.md)    | El participante del participante.                          |
 | isInLobby            | boolean                                  | True si el participante se encuentra en la sala de espera                          |
 | isMuted              | boolean                                  | True si se ha desactivado el participante (cliente o servidor ha desactivado)    |
 | mediaStreams         | colección de [mediaStream](mediastream.md) | La lista de flujos de medios.                                   |
-| metadatos             | String                                   | Un blob de datos proporcionados por el participante en la lista de participantes     |
+| metadatos             | Cadena                                   | Un blob de datos proporcionados por el participante en la lista de participantes     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Información sobre si el participante tiene capacidad de grabación. |
 
 ## <a name="relationships"></a>Relaciones

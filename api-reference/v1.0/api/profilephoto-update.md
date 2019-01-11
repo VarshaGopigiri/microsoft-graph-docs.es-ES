@@ -1,12 +1,13 @@
 ---
 title: Update profilephoto
 description: Actualizar la foto para el ha iniciado sesión **usuario**, o el **grupo** de especificado o **póngase en contacto con**. Desde allí
-ms.openlocfilehash: cf20ae6f59f0d912b8bd08a9be42591bb6f97127
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 39c5a0405a05d46cbd77f161cd45fb19c40d8b7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029041"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871823"
 ---
 # <a name="update-profilephoto"></a>Update profilephoto
 

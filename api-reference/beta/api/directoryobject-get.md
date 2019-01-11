@@ -2,12 +2,13 @@
 title: Obtener directoryObject
 description: Recuperar las propiedades y relaciones del objeto directoryobject.
 author: lleonard-msft
-ms.openlocfilehash: 52862d10c8361ea8ba365d06dcbaf0ce06b2779f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06209d068fdb7202ee88808255efd3c2238f21cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874742"
 ---
 # <a name="get-directoryobject"></a>Obtener directoryObject
 
@@ -31,7 +32,7 @@ GET /directoryObjects/{id}
 ## <a name="optional-query-parameters"></a>Parámetros de consulta opcionales
 Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

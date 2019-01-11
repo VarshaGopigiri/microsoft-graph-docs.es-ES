@@ -2,12 +2,13 @@
 title: Eliminar contactFolder.
 description: Elimina una contactFolder que no sea la predeterminada.
 author: angelgolfer-ms
-ms.openlocfilehash: 3111958deba7f18585d0594bd718ebd3155ac517
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c97cd4a049b6122cbc0e708ed114f0cc822658ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871431"
 ---
 # <a name="delete-contactfolder"></a>Eliminar contactFolder.
 
@@ -28,7 +29,7 @@ DELETE /me/contactFolders/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

@@ -1,12 +1,13 @@
 ---
 title: Get eventMessage
 description: Expanda el parámetro en la propiedad de navegación de **eventos** para obtener el evento asociado en el calendario de un asistente.
-ms.openlocfilehash: 06b306146a15d98bb327352f568869267f26c37d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea429ba661d9fd75c45adf50c1cec2bb5a2227cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032649"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873818"
 ---
 # <a name="get-eventmessage"></a>Get eventMessage
 
@@ -37,7 +38,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

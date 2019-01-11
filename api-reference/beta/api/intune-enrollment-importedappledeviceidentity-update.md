@@ -2,12 +2,13 @@
 title: Actualizar importedAppleDeviceIdentity
 description: Actualizar las propiedades de un objeto importedAppleDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: e2248a781ac4f6bb8ce238d12f2679217e7badd6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4019621eb6f69b288575a592b59b0018582c0b06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352090"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870507"
 ---
 # <a name="update-importedappledeviceidentity"></a>Actualizar importedAppleDeviceIdentity
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) .
@@ -47,15 +48,15 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|serialNumber|String|Número de serie del dispositivo|
-|requestedEnrollmentProfileId|String|Administración de identificador de perfil de inscripción tenga la intención de aplicar al dispositivo durante la inscripción siguiente|
+|id|Cadena|Clave de la entidad.|
+|serialNumber|Cadena|Número de serie del dispositivo|
+|requestedEnrollmentProfileId|Cadena|Administración de identificador de perfil de inscripción tenga la intención de aplicar al dispositivo durante la inscripción siguiente|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|El perfil de tiempo de inscripción se asignó al dispositivo|
-|isSupervised|Boolean|Indica si el dispositivo de Apple es supervisado. Es más información en:https://support.apple.com/en-us/HT202837|
+|isSupervised|Booleano|Indica si el dispositivo de Apple es supervisado. Es más información en:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Origen de detección del dispositivo de Apple. Los valores posibles son: `unknown`, `adminImport` y `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Crear fecha hora del dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última vez fecha ponerse en contacto del dispositivo|
-|descripción|String|La descripción del dispositivo|
+|descripción|Cadena|La descripción del dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|El estado del dispositivo en Intune. Los valores posibles son: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|La plataforma del dispositivo. Los valores posibles son: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

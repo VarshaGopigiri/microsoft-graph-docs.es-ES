@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso plannerFavoritePlanReference
 description: 'El recurso **plannerFavoritePlanReference** escriba representa una referencia a un plannerPlan que se ha marcado como un favorito por el usuario. '
-ms.openlocfilehash: bd399572dfce54ee7e46da6af60eb661484519de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b17846eaa1b9a9859d23735d18a191cae4872542
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871326"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>tipo de recurso plannerFavoritePlanReference
 
@@ -21,7 +22,7 @@ Se recomienda que los clientes notificar a los usuarios cuando hay discrepancias
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define en [Using order hints in Planner](planner-order-hint-format.md) (Usar sugerencias de orden en Planner).|
-|planTitle|String|Título del plan en el momento en que el usuario marca como favorito.|
+|planTitle|Cadena|Título del plan en el momento en que el usuario marca como favorito.|
 
 
 ## <a name="json-representation"></a>Representación JSON

@@ -2,12 +2,13 @@
 title: Crear enrollmentTroubleshootingEvent
 description: Cree un objeto enrollmentTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 213c81a66cca2696083f54a5e0fc4cad28cce9f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94e3f1f98a8400d7794863e7b3852d50be97b712
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309915"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872691"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Crear enrollmentTroubleshootingEvent
 
@@ -38,7 +39,7 @@ POST /deviceManagement/troubleshootingEvents
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto enrollmentTroubleshootingEvent.
@@ -47,17 +48,17 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|UUID del objeto. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|id|Cadena|UUID del objeto. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |eventDateTime|DateTimeOffset|Hora en que ocurrió el evento. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|correlationId|String|Id. utilizado para rastrear el error en el servicio. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
-|managedDeviceIdentifier|String|Identificador del dispositivo creado o recopilado por Intune.|
-|operatingSystem|String|Sistema operativo.|
-|osVersion|String|Versión del sistema operativo.|
-|userId|String|Identificador del usuario que intentó inscribir el dispositivo.|
-|deviceId|String|Identificador de dispositivo de Azure AD.|
+|correlationId|Cadena|Id. utilizado para rastrear el error en el servicio. Heredado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|managedDeviceIdentifier|Cadena|Identificador del dispositivo creado o recopilado por Intune.|
+|operatingSystem|Cadena|Sistema operativo.|
+|osVersion|Cadena|Versión del sistema operativo.|
+|userId|Cadena|Identificador del usuario que intentó inscribir el dispositivo.|
+|deviceId|Cadena|Identificador de dispositivo de Azure AD.|
 |enrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de la inscripción. Los valores posibles son: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin` y `windowsCoManagement`.|
 |failureCategory|[deviceEnrollmentFailureReason](../resources/intune-troubleshooting-deviceenrollmentfailurereason.md)|Categoría general del error. Los valores posibles son: `unknown`, `authentication`, `authorization`, `accountValidation`, `userValidation`, `deviceNotSupported`, `inMaintenance`, `badRequest`, `featureNotSupported`, `enrollmentRestrictionsEnforced`, `clientDisconnected` y `userAbandonment`.|
-|failureReason|String|Motivo del error detallado.|
+|failureReason|Cadena|Motivo del error detallado.|
 
 
 

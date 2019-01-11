@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso recurrenceRange
 description: 'Describe un intervalo de fechas durante el que se repite un evento periódico. '
-ms.openlocfilehash: 0e255c28ea2d1e72ae3219e082b3e62b166b1f4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031526"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872992"
 ---
 # <a name="recurrencerange-resource-type"></a>Tipo de recurso recurrenceRange
 
@@ -22,7 +23,7 @@ Puede especificar el intervalo de fechas para un evento periódico de tres maner
 |numberOfOccurrences|Int32|Número de veces que se repite el evento. Se requiere y debe ser positivo si **type** es `numbered`.|
 |recurrenceTimeZone|String |Zona horaria de las propiedades **startDate** y **endDate**. Opcional. Si no se especifica, se usa la zona horaria del evento.|
 |startDate|Fecha|Fecha en la que se inicia la aplicación del patrón de periodicidad. La primera repetición de la reunión puede ser esta fecha o una posterior, en función del patrón de periodicidad del evento. Debe ser el mismo valor que la propiedad **start** del [evento](event.md) periódico. Obligatorio.|
-|type|recurrenceRangeType|Intervalo de periodicidad. Los valores posibles son: `endDate`, `noEnd`, `numbered`. Obligatorio.|
+|type|recurrenceRangeType|Intervalo de periodicidad. Los valores posibles son: `endDate`, `noEnd`, `numbered`. Necesario.|
 
 Use la propiedad **type** para especificar los diferentes tipos de **recurrenceRange**. Tenga en cuenta las propiedades necesarias para cada tipo, tal como se describe en la tabla siguiente.
 

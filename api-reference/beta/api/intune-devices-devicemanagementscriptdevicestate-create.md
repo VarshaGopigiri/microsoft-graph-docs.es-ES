@@ -2,12 +2,13 @@
 title: Crear deviceManagementScriptDeviceState
 description: Crear un nuevo objeto deviceManagementScriptDeviceState.
 author: tfitzmac
-ms.openlocfilehash: 2b809c82e077bc75c354d3b8b1c09548eaacad64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4f2dcd346aaef4d71b0309f65b7f6a7005c4346
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304854"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874259"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Crear deviceManagementScriptDeviceState
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto deviceManagementScriptDeviceState.
@@ -48,9 +49,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad de estado de dispositivo de secuencia de comandos de dispositivo administración.|
+|id|Cadena|Clave de la entidad de estado de dispositivo de secuencia de comandos de dispositivo administración.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado de la última ejecución de la secuencia de comandos de administración de dispositivos. Los valores posibles son: `unknown`, `success` y `fail`.|
-|resultMessage|String|Detalles de los resultados de la ejecución.|
+|resultMessage|Cadena|Detalles de los resultados de la ejecución.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez que se ejecuta la secuencia de comandos de administración de dispositivos.|
 |errorCode|Int32|Código de error correspondiente a la ejecución de la secuencia de comandos de administración de dispositivos con errores.|
 |errorDescription|Cadena|Descripción del error correspondiente a la ejecución de la secuencia de comandos de administración de dispositivos con errores.|

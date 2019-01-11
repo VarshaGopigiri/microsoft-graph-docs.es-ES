@@ -2,12 +2,13 @@
 title: Acción disconnect
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 889e994f22d8b71f6e709524f00f95d794e5455a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc5543be0d427e8fac54d52f08ec65d485bdb428
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872313"
 ---
 # <a name="disconnect-action"></a>Acción disconnect
 
@@ -36,7 +37,7 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

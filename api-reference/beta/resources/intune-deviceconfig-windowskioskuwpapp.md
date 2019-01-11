@@ -2,12 +2,13 @@
 title: tipo de recurso windowsKioskUWPApp
 description: La clase base para un tipo de aplicaciones
 author: tfitzmac
-ms.openlocfilehash: 328a91065692a7b315ade5dae86c15d6def320eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305183"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871865"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>tipo de recurso windowsKioskUWPApp
 
@@ -20,13 +21,13 @@ La clase base para un tipo de aplicaciones
 Hereda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|El tamaño del mosaico de aplicación para el diseño de inicio Inherited desde [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Los valores posibles son: `hidden`, `small`, `medium`, `wide` y `large`.|
-|name|String|Representa el nombre descriptivo de una aplicación heredada de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appUserModelId|String|Esta es la única aplicación de usuario modelo de identificador (AUMID) que estará disponible para iniciar el uso en el modo de pantalla completa|
+|name|Cadena|Representa el nombre descriptivo de una aplicación heredada de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appUserModelId|Cadena|Esta es la única aplicación de usuario modelo de identificador (AUMID) que estará disponible para iniciar el uso en el modo de pantalla completa|
 |appId|cadena|Esto hace referencia a un App Intune que será destino para las mismas asignaciones de configuración de quiosco|
-|containedAppId|String|Esto hace referencia a una aplicación contenida desde un App Intune|
+|containedAppId|Cadena|Esto hace referencia a una aplicación contenida desde un App Intune|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

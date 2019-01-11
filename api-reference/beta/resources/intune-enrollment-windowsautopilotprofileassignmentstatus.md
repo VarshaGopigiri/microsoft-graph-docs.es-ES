@@ -2,12 +2,13 @@
 title: tipo de enumeración windowsAutopilotProfileAssignmentStatus
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 255aab9770305baa29e73278b3bfceec1079351a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48d08ad4d4c80c3d5a68cca5af36c958deaac819
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321003"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869647"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>tipo de enumeración windowsAutopilotProfileAssignmentStatus
 
@@ -17,7 +18,7 @@ ms.locfileid: "27321003"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Estado de asignación desconocido|
 |assignedInSync|1|Asignados correctamente en Intune y sincronización con programa piloto automático de Windows|

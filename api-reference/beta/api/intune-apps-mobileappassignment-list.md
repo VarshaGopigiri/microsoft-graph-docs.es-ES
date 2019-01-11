@@ -2,12 +2,13 @@
 title: Enumerar mobileAppAssignments
 description: Enumere las propiedades y las relaciones de los objetos mobileAppAssignment.
 author: tfitzmac
-ms.openlocfilehash: 91559a372bb0bf5f9f505e28c46d5a69acc09533
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c412c05a0a9e0755aba7b933379b7eda3e26a50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336389"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870182"
 ---
 # <a name="list-mobileappassignments"></a>Enumerar mobileAppAssignments
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

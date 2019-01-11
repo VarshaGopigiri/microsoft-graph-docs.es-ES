@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso subscribedSku
 description: Contiene información acerca de una SKU de servicio a la que la empresa está suscrita.
-ms.openlocfilehash: 5a3c3515d4d902810db32acf10b4cee6a889bfc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 17290890ff27fded1aaf5d7fdb2c0cdacee09b0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873720"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -23,14 +24,14 @@ Solo se admite la operación de lectura con las SKU suscritas; no se admiten las
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|appliesTo|String| Por ejemplo, "usuario" o "empresa". |
-|capabilityStatus|String| Por ejemplo, "habilitado". |
+|appliesTo|Cadena| Por ejemplo, "usuario" o "empresa". |
+|capabilityStatus|Cadena| Por ejemplo, "habilitado". |
 |consumedUnits|Int32| El número de licencias asignadas. |
-|id|String| El identificador único del recurso del objeto sku suscrito. Clave, no admite valores NULL. |
+|id|Cadena| El identificador único del recurso del objeto sku suscrito. Clave, no admite valores NULL. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Información sobre el número y el estado de las licencias prepagadas. |
 |servicePlans|Colección [servicePlanInfo](serviceplaninfo.md)| Información acerca de los planes de servicio que están disponibles con el SKU. No admite valores NULL |
 |skuId|Guid| El identificador único (GUID) para el SKU de servicio. |
-|skuPartNumber|String| La parte numérica del SKU, por ejemplo: "AAD_PREMIUM" o "RMSBASIC". |
+|skuPartNumber|Cadena| La parte numérica del SKU, por ejemplo: "AAD_PREMIUM" o "RMSBASIC". |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

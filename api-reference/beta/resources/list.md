@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Lista
-ms.openlocfilehash: b1538fd3eadd3cd00193519a32effdd7c3b61247
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 03121447e0b9d7d091005283ed12ef7d93e68108
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870465"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -82,7 +83,7 @@ A continuación se incluye una representación JSON del recurso **list**.
 
 El recurso **list** tiene las siguientes propiedades.
 
-| Nombre de propiedad    | Tipo                             | Descripción
+| Nombre de la propiedad    | Tipo                             | Descripción
 |:-----------------|:---------------------------------|:---------------------------
 | **columns**      | Collection([columnDefinition][]) | La colección de definiciones de campo de esta lista.
 | **contentTypes** | Collection([contentType][])      | La colección de tipos de contenido presentes en esta lista.
@@ -92,7 +93,7 @@ El recurso **list** tiene las siguientes propiedades.
 
 Las siguientes propiedades se heredan de **[baseItem][]**.
 
-| Nombre de propiedad            | Tipo             | Descripción
+| Nombre de la propiedad            | Tipo             | Descripción
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | El identificador único del elemento. Solo lectura.
 | **name**                 | string           | Nombre del elemento.

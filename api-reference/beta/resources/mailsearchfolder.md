@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso mailSearchFolder
 description: Una mailSearchFolder es una carpeta virtual en el buzón del usuario que contiene todos los elementos de correo electrónico que coincidan con los criterios de búsqueda especificada. mailSearchFolder hereda de mailFolder.
-ms.openlocfilehash: abce7c86e44fcee98042aecf753f0fdf4172365e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 62d4d8569977c99690e317a39a43bbc9d9dca3f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870395"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
@@ -27,12 +28,12 @@ Una mailSearchFolder es una carpeta virtual en el buzón del usuario que contien
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------------|:--------|:----------|
 | isSupported | Booleano | Indica si una carpeta de búsqueda se puede editar mediante la API de REST. |
 | includeNestedFolders | Booleano | Indica cómo se debe pasar por la jerarquía de carpetas de buzón de correo. `true`significa que debe ser una búsqueda en profundidad mientras `false` significa que se debe realizar una búsqueda no exhaustivos en su lugar. |
 | sourceFolderIDs | Colección String | Las carpetas de buzón de correo que deben ser extraídas. |
-| filterQuery | String | La consulta de OData para filtrar los mensajes. |
+| filterQuery | Cadena | La consulta de OData para filtrar los mensajes. |
 
 ## <a name="json-representation"></a>Representación JSON
 

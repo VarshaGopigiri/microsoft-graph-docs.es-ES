@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Compartir un archivo con un vínculo
-ms.openlocfilehash: b65efe24534d5b366f25241bea79c70967fbb73e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 222917a869487f8e0fd893d641436f001354dfb1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030686"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871130"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Crear un vínculo para compartir para un DriveItem
 
@@ -66,7 +67,7 @@ Se pueden usar los siguientes valores para el parámetro de **tipo**.
 Se permiten los siguientes valores para el parámetro **scope**.
 Si el parámetro **scope** no se especifica, se crea el tipo de vínculo predeterminado para la organización.
 
-| Valor          | Descripción
+| Valor          | Description
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | Cualquier usuario con el vínculo tiene acceso, sin necesidad de iniciar sesión. Esto puede incluir personas fuera de la organización. Compatibilidad con vínculo anónimo puede ser deshabilitado por un administrador.
 | `organization` | Cualquier usuario que ha iniciado sesión en su organización (inquilino) puede usar el vínculo para obtener acceso. Sólo está disponible en OneDrive para profesionales y SharePoint.

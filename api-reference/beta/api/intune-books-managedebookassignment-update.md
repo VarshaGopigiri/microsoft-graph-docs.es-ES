@@ -2,12 +2,13 @@
 title: Actualizar managedEBookAssignment
 description: Actualice las propiedades de un objeto managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 9ac5d51413a9539667a11ee15e5789d359c94d9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe5b44bbbbc11083166d8c225bb2b38bc8730ccc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869842"
 ---
 # <a name="update-managedebookassignment"></a>Actualizar managedEBookAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).
@@ -47,7 +48,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
+|id|Cadena|Clave de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|El destino de la asignación para el libro electrónico.|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|El objetivo de instalación para el libro electrónico. Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso openTypeExtension (extensiones abiertas)
 description: Extensiones Open (anteriormente conocidas como extensiones de datos de Office 365) proporcionan una forma sencilla de agregar propiedades sin tipo directamente en un recurso de Microsoft Graph.
-ms.openlocfilehash: f28ab43ddb3fd55efbca6738a0369fde37c906db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4bab83766d1fc44e96043689677713cb59084f4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085807"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870962"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensiones abiertas)
 

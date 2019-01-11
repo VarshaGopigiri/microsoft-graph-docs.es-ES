@@ -2,12 +2,13 @@
 title: Create RangeBorder
 description: Use esta API para crear un objeto RangeBorder.
 author: lumine2008
-ms.openlocfilehash: cf2db73c85b587288265a04dadb2b5b765029d3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2d87f4943158fa33d2cc09e600959bd7dc99087b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306016"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873090"
 ---
 # <a name="create-rangeborder"></a>Create RangeBorder
 

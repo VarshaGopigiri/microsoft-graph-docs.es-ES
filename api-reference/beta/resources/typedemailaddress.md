@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso typedEmailAddress
 description: Representa el nombre, direcciones de correo electrónico y su correspondiente tipo de dirección de correo electrónico de un contacto.
-ms.openlocfilehash: 3f40add32fbc219606b6d78041552fc108803d1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c77d3dddc3e2bfcac47e6ed245dad9223fe7f08c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871270"
 ---
 # <a name="typedemailaddress-resource-type"></a>tipo de recurso typedEmailAddress
 
@@ -17,10 +18,10 @@ Representa el nombre, direcciones de correo electrónico y su correspondiente ti
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|address|String|La dirección de correo electrónico de un contacto.|
-|name|String|El nombre para mostrar de un contacto.|
-|type |String |El tipo de dirección de correo electrónico. Los valores posibles son: `unknown`, `work`, `personal`, `main` y `other`. El valor predeterminado es `unknown`, lo que significa **dirección** no se ha establecido como un tipo específico. |
-|otherLabel |String  |Para especificar un tipo de dirección de correo electrónico personalizado, establezca el **tipo** en `other`y asignar **otherLabel** en una cadena personalizada. Por ejemplo, puede usar una dirección de correo electrónico específica para las actividades de voluntarias. Establecer **tipo de** `other`y establecer **otherLabel** en una cadena personalizada como `Volunteer work`. |
+|address|Cadena|La dirección de correo electrónico de un contacto.|
+|name|Cadena|El nombre para mostrar de un contacto.|
+|type |Cadena |El tipo de dirección de correo electrónico. Los valores posibles son: `unknown`, `work`, `personal`, `main` y `other`. El valor predeterminado es `unknown`, lo que significa **dirección** no se ha establecido como un tipo específico. |
+|otherLabel |Cadena  |Para especificar un tipo de dirección de correo electrónico personalizado, establezca el **tipo** en `other`y asignar **otherLabel** en una cadena personalizada. Por ejemplo, puede usar una dirección de correo electrónico específica para las actividades de voluntarias. Establecer **tipo de** `other`y establecer **otherLabel** en una cadena personalizada como `Volunteer work`. |
 
 ## <a name="json-representation"></a>Representación JSON
 

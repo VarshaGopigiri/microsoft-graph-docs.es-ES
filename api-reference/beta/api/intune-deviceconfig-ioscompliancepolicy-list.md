@@ -2,12 +2,13 @@
 title: Enumerar iosCompliancePolicies
 description: Enumere las propiedades y las relaciones de los objetos iosCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: db6c27034a993f3956f70ebe91efa4eb2ba38b67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 527661dc29a908cc3cb33835dd15a206f9fad6ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324706"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874413"
 ---
 # <a name="list-ioscompliancepolicies"></a>Enumerar iosCompliancePolicies
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

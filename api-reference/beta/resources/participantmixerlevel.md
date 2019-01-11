@@ -2,12 +2,13 @@
 title: tipo de recurso participantMixerLevel
 description: Configuración del Mezclador de niveles para indicar participante de audio
 author: VinodRavichandran
-ms.openlocfilehash: 9d5a5d740fbdf250f90b28539221e8231c0bf38c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 8a7b77c07240fbb5face70eb8ea21be55b85f1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874140"
 ---
 # <a name="participantmixerlevel-resource-type"></a>tipo de recurso participantMixerLevel
 
@@ -17,11 +18,11 @@ Configuración del Mezclador de niveles para indicar participante de audio
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad               | Tipo                                                      | Descripción                                                                                         |
+| Propiedad               | Tipo                                                      | Description                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | Evite                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuración de combinación personalizado (introducir paulatinamente de entrada y salida) de otras fuentes para este participante de sobra.       |
 | exclusiveMode          | boolean                                                   | Si deben quitarse orígenes sin nivel de origen explícitas de la combinación.                       |
-| participante            | String                                                    | El participante para el que se está configurando el mezclador.                                             |
+| participante            | Cadena                                                    | El participante para el que se está configurando el mezclador.                                             |
 | sourceLevels           | colección de [audioSourceLevel](audiosourcelevel.md)        | Configuración de nivel para otros orígenes.                                                              |
 
 ## <a name="json-representation"></a>Representación JSON

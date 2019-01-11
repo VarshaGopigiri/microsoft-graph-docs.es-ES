@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerPlan
 description: El recurso **plannerPlan** representa un plan en Office 365. Un plan de puede pertenecer a un grupo y contiene una colección de plannerTasks. También puede tener una colección de plannerBuckets. Cada objeto de plan tiene un objeto de detalles que puede contener más información acerca del plan. Para obtener más información acerca de las relaciones entre los grupos, los planes y tareas, vea organizador.
-ms.openlocfilehash: cd2990bc42929c4c501e676d05d7d643dd6f7d3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: cfcc94fab067cc76bb530edbdb8477183ebf3531
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873013"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 
@@ -25,9 +26,9 @@ El recurso **plannerPlan** representa un plan de Office 365. Un plan puede ser p
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se creó el plan. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|String| Solo lectura. Identificador del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
-|owner|String|Identificador del [grupo](group.md) que posee el plan. Un grupo válido debe existir antes de que se puede establecer en este campo. Una vez establecida, esta propiedad no se puede actualizar.|
-|title|String|Obligatorio. Título del plan.|
+|id|Cadena| Solo lectura. Identificador del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
+|owner|Cadena|Identificador del [grupo](group.md) que posee el plan. Un grupo válido debe existir antes de que se puede establecer en este campo. Una vez establecida, esta propiedad no se puede actualizar.|
+|title|Cadena|Obligatorio. Título del plan.|
 |createdBy|[identitySet](identityset.md)|Solo lectura. El usuario que creó el plan.|
 
 ## <a name="relationships"></a>Relaciones

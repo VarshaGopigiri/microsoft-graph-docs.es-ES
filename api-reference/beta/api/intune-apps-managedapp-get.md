@@ -2,12 +2,13 @@
 title: Obtener managedApp
 description: Lea las propiedades y las relaciones del objeto managedApp.
 author: tfitzmac
-ms.openlocfilehash: 6f6123c49fb94153d8503c29396825adbef177cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7a5b0a3128eef5d57c322e4faee99cdf56a039fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316047"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870073"
 ---
 # <a name="get-managedapp"></a>Obtener managedApp
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

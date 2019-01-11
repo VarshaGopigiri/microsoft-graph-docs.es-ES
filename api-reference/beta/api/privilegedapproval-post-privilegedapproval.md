@@ -1,12 +1,13 @@
 ---
 title: Crear privilegedApproval
 description: Utilice esta API para crear un nuevo privilegedApproval.
-ms.openlocfilehash: 549f4e37ae60cf81d73163c1badd35247113119b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 806a48ff66ad20dfdda05b0029975913c6dde28e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872082"
 ---
 # <a name="create-privilegedapproval"></a>Crear privilegedApproval
 

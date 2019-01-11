@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
-ms.openlocfilehash: 65cfe61dadd1708abffe2d01abbbb15f40d158ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088804"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871494"
 ---
 # <a name="sitepage-resource"></a>recursos de sitePage
 
@@ -75,7 +76,7 @@ Aquí es una representación JSON de un recurso de **sitePage** .
 
 El recurso **sitePage** tiene las siguientes propiedades.
 
-| Nombre de propiedad    | Tipo                         | Descripción
+| Nombre de la propiedad    | Tipo                         | Descripción
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | El tipo de contenido de la página.
 
@@ -83,7 +84,7 @@ El recurso **sitePage** tiene las siguientes propiedades.
 
 El recurso **sitePage** tiene los siguientes campos de contenido.
 
-| Nombre de propiedad      | Tipo                       | Descripción
+| Nombre de la propiedad      | Tipo                       | Descripción
 |:-------------------|:---------------------------|:---------------------------
 | title              | string                     | El título de la página.
 | pageLayout         | string                     | El nombre del diseño de página de la página.
@@ -93,13 +94,13 @@ El recurso **sitePage** tiene los siguientes campos de contenido.
 
 El recurso **sitePage** tiene los siguientes metadatos relacionados con la creación. La propiedad publishingState reflejará el estado desprotegido like o publicado de creación de páginas.
 
-| Nombre de propiedad          | Tipo                   | Descripción
+| Nombre de la propiedad          | Tipo                   | Description
 |:-----------------------|:-----------------------|:---------------------------
 | publishingState        | [publicationFacet][]   | El estado de publicación y la versión MM.mm de la página.
 
 Las siguientes propiedades se heredan de **[baseItem][]**.
 
-| Nombre de propiedad        | Tipo              | Descripción
+| Nombre de la propiedad        | Tipo              | Descripción
 |:---------------------|:------------------|:----------------------------------
 | id                   | string            | El identificador único del elemento. Solo lectura.
 | name                 | string            | Nombre o título del elemento.
@@ -119,7 +120,7 @@ El recurso **sitePage** no tiene relaciones con otros recursos.
 [columnDefinition]: columndefinition.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[list]: list.md
+[lista]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md

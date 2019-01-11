@@ -1,12 +1,13 @@
 ---
 title: Agregar conector a connectorGroup
 description: Utilice esta API para agregar un conector a un connectorGroup.
-ms.openlocfilehash: f5e7330dd5476daacda47a78400181ad3ebc0e2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0624356699b5354ddc5f11740e8561a3d6e2d851
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869996"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Agregar conector a connectorGroup
 
@@ -30,7 +31,7 @@ POST /connectorGroups/{id}/members/$ref
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Bearer. Obligatorio|
+| Autorización  | Bearer. Obligatorio|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de un vínculo a un objeto de [conector](../resources/connector.md) .

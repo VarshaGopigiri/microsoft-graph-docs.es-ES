@@ -2,12 +2,13 @@
 title: Eliminar androidForWorkCompliancePolicy
 description: Elimina un androidForWorkCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 49a5c896a277397ae023e4be72a99612f9834be7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 030f7fe92a9630e3791f020b1008a1abc4a18685
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873657"
 ---
 # <a name="delete-androidforworkcompliancepolicy"></a>Eliminar androidForWorkCompliancePolicy
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
