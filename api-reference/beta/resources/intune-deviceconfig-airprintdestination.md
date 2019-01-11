@@ -2,12 +2,13 @@
 title: tipo de recurso airPrintDestination
 description: Representa un destino de AirPrint.
 author: tfitzmac
-ms.openlocfilehash: 046f85c65d382b34e6920f30f6b2718f817371a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d1548737956d35d42fc077afe92de1885a54581
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878592"
 ---
 # <a name="airprintdestination-resource-type"></a>tipo de recurso airPrintDestination
 
@@ -17,12 +18,12 @@ ms.locfileid: "27361057"
 
 Representa un destino de AirPrint.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |ipAddress|cadena|La dirección IP de destino AirPrint.|
-|resourcePath|String|La ruta de acceso de recursos asociados con la impresora. Esto corresponde al parámetro de la _ipps.tcp Bonjour registro rp. Por ejemplo: Canon_MG5300_series/impresoras, impresoras/Xerox_Phaser_7600, ipp, print y Epson_IPP_Printer.|
+|resourcePath|Cadena|La ruta de acceso de recursos asociados con la impresora. Esto corresponde al parámetro de la _ipps.tcp Bonjour registro rp. Por ejemplo: Canon_MG5300_series/impresoras, impresoras/Xerox_Phaser_7600, ipp, print y Epson_IPP_Printer.|
 |port|Int32|El puerto de escucha del destino AirPrint. Si no se especifica esta clave AirPrint va a usar el puerto predeterminado. Disponible en iOS 11.0 y versiones posteriores.|
-|forceTls|Boolean|Si es true conexiones AirPrint están protegidas por la seguridad de capa de transporte (TLS). Valor predeterminado es false. Disponible en iOS 11.0 y versiones posteriores.|
+|forceTls|Booleano|Si es true conexiones AirPrint están protegidas por la seguridad de capa de transporte (TLS). Valor predeterminado es false. Disponible en iOS 11.0 y versiones posteriores.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

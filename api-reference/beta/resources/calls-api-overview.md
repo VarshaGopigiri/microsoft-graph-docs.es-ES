@@ -2,12 +2,13 @@
 title: Trabajar con las llamadas y API de reuniones en línea en Microsoft Graph
 description: Llama la Microsoft Graph y API de reuniones en línea, agrega una nueva dimensión a cómo las aplicaciones y los servicios pueden interactuar con los usuarios mediante la habilitación de características de vídeo y voz. La API permite crear llamadas y recibir llamadas de usuarios y aplicaciones en Microsoft Teams. Puede usar estas API para crear una aplicación de servicio (bot) que pueda actuar como un participante en una llamada o una reunión.
 author: VinodRavichandran
-ms.openlocfilehash: 1b7efc774dfee0e0617d5c4f99ba08351c9f2a1f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: d7912f587dcc0181a2edd4072f0e07aa643d66be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380565"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876534"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Trabajar con las llamadas y API de reuniones en línea en Microsoft Graph
 

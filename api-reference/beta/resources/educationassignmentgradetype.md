@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso educationAssignmentGradeType
 description: Representa cómo se corregirán una asignación. Esto se usa dentro de la propiedad **assignments.grading** .
-ms.openlocfilehash: 5f940a3177bebc2fd1694532d0103430e1857dea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 42ad1789ca7340466f89bf480904ebcd524507b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873363"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>tipo de recurso educationAssignmentGradeType
 

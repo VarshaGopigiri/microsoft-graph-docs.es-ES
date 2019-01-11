@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso extensionSchemaProperty
 description: Use los recursos **extensionSchemaProperty** para definir el nombre y el tipo de una propiedad como parte de una definición schemaExtension.
-ms.openlocfilehash: 1ea2fca1812765aab49d548dd3cd3ed0575e30aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029246"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880573"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -16,7 +17,7 @@ Use los recursos **extensionSchemaProperty** para definir el nombre y el tipo de
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|String| El nombre de la propiedad fuertemente tipada definida como parte de una extensión de esquema.|
+|name|Cadena| El nombre de la propiedad fuertemente tipada definida como parte de una extensión de esquema.|
 |tipo|String| Tipo de la propiedad que se define como parte de una extensión de esquema.  Los valores permitidos son *Binary, Boolean, DateTime, Integer* y *String*.  Consulte la tabla siguiente para obtener más detalles.|
 
 #### <a name="supported-property-data-types"></a>Tipos de datos de propiedad admitidos 

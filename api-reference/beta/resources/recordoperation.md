@@ -2,12 +2,13 @@
 title: tipo de recurso recordOperation
 description: El tipo de recordOperation
 author: VinodRavichandran
-ms.openlocfilehash: 54b39f30df1dd53a95260b549ae9fab2eedddfd8
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: be6a124fcd7175489679a8c2392218530d510e9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380425"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880020"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
 
@@ -17,17 +18,17 @@ El tipo de recordOperation
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                       | Tipo                        | Descripción                                                                                                                                       |
+| Propiedad                       | Tipo                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | El contexto de cliente.                                                                                                                               |
-| completionReason               | String                      | Los valores posibles son: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError` y `none`. |
+| clientContext                  | Cadena                      | El contexto de cliente.                                                                                                                               |
+| completionReason               | Cadena                      | Los valores posibles son: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError` y `none`. |
 | createdDateTime                | DateTimeOffset              | La hora de creación de la grabación.                                                                                                          |
-| id                             | String                      | Identificador de la operación de servidor. Es de sólo lectura. Servidor que se generó.                                                                                             |
+| id                             | Cadena                      | Identificador de la operación de servidor. Es de sólo lectura. Servidor que se generó.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | Hora de la última acción de la operación.                                                                                                     |
-| recordResourceAccessToken      | String                      | El token de acceso necesario para recuperar la grabación.                                                                                              |
-| recordResourceLocation         | String                      | La ubicación donde se encuentra la grabación.                                                                                                      |
+| recordResourceAccessToken      | Cadena                      | El token de acceso necesario para recuperar la grabación.                                                                                              |
+| recordResourceLocation         | Cadena                      | La ubicación donde se encuentra la grabación.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | La información del resultado.  Solo lectura. Servidor que se generó.                                                                                             |
-| status                         | String                      | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`. Solo lectura. Servidor que se generó.                                                 |
+| status                         | Cadena                      | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`. Solo lectura. Servidor que se generó.                                                 |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

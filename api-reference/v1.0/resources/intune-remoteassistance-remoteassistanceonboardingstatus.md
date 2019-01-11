@@ -2,12 +2,13 @@
 title: tipo de enumeración remoteAssistanceOnboardingStatus
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 18360c8194bf1384d9fa887286a701a0cc2fd1ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0dade07bafe1149eb76b46ffd3fd5b9242c2891
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311987"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880041"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>tipo de enumeración remoteAssistanceOnboardingStatus
 
@@ -15,7 +16,7 @@ ms.locfileid: "27311987"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |notOnboarded|0|Todavía no documentado|
 |incorporación de redes|1|Todavía no documentado|

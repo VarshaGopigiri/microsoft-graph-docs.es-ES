@@ -2,12 +2,13 @@
 title: Actualizar managedAppOperation
 description: Actualice las propiedades de un objeto managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 2bd0d326a4300bdae29484b547bbd5aa429728ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d4ddc127c6d35a44f10e6ad9ff6f1fef82462392
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875582"
 ---
 # <a name="update-managedappoperation"></a>Actualizar managedAppOperation
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [managedAppOperation](../resources/intune-mam-managedappoperation.md).
@@ -45,11 +46,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|String|El nombre de la operación.|
+|displayName|Cadena|El nombre de la operación.|
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
-|state|String|El estado actual de la operación|
-|id|String|Clave de la entidad.|
-|version|String|Versión de la entidad.|
+|state|Cadena|El estado actual de la operación|
+|id|Cadena|Clave de la entidad.|
+|version|Cadena|Versión de la entidad.|
 
 
 

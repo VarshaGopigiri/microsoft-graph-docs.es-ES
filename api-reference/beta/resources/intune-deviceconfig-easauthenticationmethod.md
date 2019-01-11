@@ -2,12 +2,13 @@
 title: tipo de enumeración easAuthenticationMethod
 description: Método de autenticación de Exchange Active Sync.
 author: tfitzmac
-ms.openlocfilehash: b0479b807a0b5f19df65626dcb9371407e784042
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d9f11080b236e1321fa7b7f529fd7021ca002f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875078"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>tipo de enumeración easAuthenticationMethod
 
@@ -17,7 +18,7 @@ ms.locfileid: "27329375"
 
 Método de autenticación de Exchange Active Sync.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |usernameAndPassword|0|Autenticar con un nombre de usuario y una contraseña.|
 |certificado|1|Realice la autenticación con un certificado.|

@@ -2,12 +2,13 @@
 title: tipo de recurso managedDeviceReportedApp
 description: Datos de aplicación para la creación de informes
 author: tfitzmac
-ms.openlocfilehash: 7fd01c5fd7553769653abd6e16ecc9ec40a79b8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 676b89e98f5d54367916a3f3219ab5fc02ddbd80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877220"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>tipo de recurso managedDeviceReportedApp
 
@@ -17,7 +18,7 @@ ms.locfileid: "27359496"
 
 Datos de aplicación para la creación de informes
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |appId|cadena|El identificador de la aplicación o de la agrupación de la aplicación|
 

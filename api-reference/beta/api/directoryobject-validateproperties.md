@@ -1,12 +1,13 @@
 ---
 title: 'directoryObject: validateProperties'
 description: Validar si el alias de correo o de nombre para mostrar de un grupo de Office 365 cumplen con las políticas de nomenclatura.  Los clientes pueden usar la API para determinar si un nombre para mostrar o alias de correo sean válido antes de intentar **crear** un grupo de Office 365. Para validar las propiedades de un grupo existente, utilice la función validateProperties para grupos.
-ms.openlocfilehash: 82592eff14829fdd8ae1d74c87f43402a3938adf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f38a30d86cf5b28eea6b9891687c4dbca4b78fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879824"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -39,11 +40,11 @@ POST /directoryObjects/validateProperties
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
-|entityType|String| `Group`es el tipo de entidad compatibles sólo. |
-|displayName|String| El nombre para mostrar del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
-|mailNickname|String| El alias de correo del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
+|entityType|Cadena| `Group`es el tipo de entidad compatibles sólo. |
+|displayName|Cadena| El nombre para mostrar del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
+|mailNickname|Cadena| El alias de correo del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
 |onBehalfOfUserId|Guid| El identificador de objeto del usuario para suplantar al llamar a la API. Los resultados de validación son para los atributos y los roles de la onBehalfOfUserId. |
 
 ## <a name="response"></a>Respuesta

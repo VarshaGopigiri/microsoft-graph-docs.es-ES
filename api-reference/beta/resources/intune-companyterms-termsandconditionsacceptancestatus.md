@@ -2,12 +2,13 @@
 title: Tipo de recurso termsAndConditionsAcceptanceStatus
 description: C) de la directiva a un usuario determinado. Los usuarios deben aceptar la versión más actualizada de los términos para conservar el acceso al Portal de empresa.
 author: tfitzmac
-ms.openlocfilehash: 8e504796be7dbec303bab8691ed171abc80b9a45
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 704f1ae0f149bf91b1036713ed47279bb665d2e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880734"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 
@@ -28,8 +29,8 @@ Una entidad termsAndConditionsAcceptanceStatus representa el estado de aceptaci�
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la entidad.|
-|userDisplayName|String|Nombre para mostrar del usuario cuya aceptación representa la entidad.|
+|id|Cadena|Identificador único de la entidad.|
+|userDisplayName|Cadena|Nombre para mostrar del usuario cuya aceptación representa la entidad.|
 |acceptedVersion|Int32|Número de versión más reciente de los TyC aceptados por el usuario.|
 |acceptedDateTime|DateTimeOffset|Fecha y hora en la que el usuario aceptó los términos por última vez.|
 

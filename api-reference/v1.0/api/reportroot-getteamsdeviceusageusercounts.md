@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageUserCounts'
 description: Obtenga el número de usuarios únicos diario de Microsoft Teams por tipo de dispositivo.
-ms.openlocfilehash: 977d13ce4d783d7ae4c04a29a69fce55f78d6b1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4a865a91436301ad932d50cf104df74fcf4ead85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878851"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 

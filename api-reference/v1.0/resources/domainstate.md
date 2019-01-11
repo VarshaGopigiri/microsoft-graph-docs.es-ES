@@ -2,12 +2,13 @@
 title: Tipo de recurso domainState
 description: Representa el estado de las operaciones asincrónicas programadas en un dominio.
 author: lleonard-msft
-ms.openlocfilehash: 08484f29202ab348e2eca443a95f63ffbe645220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f24a5a9c493dc1cea16cb9038b85dc0a793bdfee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880650"
 ---
 # <a name="domainstate-resource-type"></a>Tipo de recurso domainState
 
@@ -19,7 +20,7 @@ Representa el estado de las operaciones asincrónicas programadas en un dominio.
 |:---------------|:--------|:----------|
 | lastActionDateTime | DateTimeOffset | Marca de tiempo de la última actividad. El valor se actualiza cuando se programa una operación, se inicia la tarea asincrónica y cuando termina la operación. |
 | operación | Cadena | Tipo de operación asincrónica. Los valores pueden ser *ForceDelete* o *Verification* |
-| status | String | Estado actual de la operación. <br> *Programada*: La operación se ha programado, pero no se ha iniciado. <br> *En curso*: La tarea se ha iniciado y está en curso. <br> *Error*: Se ha producido un error en la operación. |
+| status | Cadena | Estado actual de la operación. <br> *Programada*: La operación se ha programado, pero no se ha iniciado. <br> *En curso*: La tarea se ha iniciado y está en curso. <br> *Error*: Se ha producido un error en la operación. |
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.

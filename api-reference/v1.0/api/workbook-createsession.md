@@ -2,12 +2,13 @@
 title: Crear una sesión
 description: 'Use esta API para crear una nueva sesión de libro. '
 author: lumine2008
-ms.openlocfilehash: 802a77884dcc283b520aa179d51aeb6e96a5c68e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6e05b4a86c9dc3a6a06ae62f6386ef622c16d6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340757"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877633"
 ---
 # <a name="create-session"></a>Crear una sesión
 

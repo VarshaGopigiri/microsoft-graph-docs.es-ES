@@ -1,12 +1,13 @@
 ---
 title: Programas de lista
 description: Lista todos los objetos de programa, en Azure AD tener acceso a la característica de revisiones.
-ms.openlocfilehash: fd934ec4dcfe4feb6167a6cf397be3669099c123
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9ea71e5377b7dcfe7ca6de7cfaf221e2c6dfcd98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084435"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876296"
 ---
 # <a name="list-programs"></a>Programas de lista
 
@@ -30,7 +31,7 @@ GET /programs
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

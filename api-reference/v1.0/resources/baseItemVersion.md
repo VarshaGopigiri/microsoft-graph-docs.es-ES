@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso BaseItemVersion
 description: El recurso **baseItemVersion** representa una versión anterior de un elemento o una entidad.
-ms.openlocfilehash: c4fc95fd419bf8b2f20ab202874ca31a2b1d63f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bd28f9c8dc5be2bc6422aca2eb756aba78b8e393
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876968"
 ---
 # <a name="baseitemversion-resource-type"></a>Tipo de recurso BaseItemVersion
 
@@ -34,7 +35,7 @@ El recurso **baseItemVersion** representa una versión anterior de un elemento o
 
 ## <a name="properties"></a>Propiedades
 
-|      Nombre de propiedad       |                         Tipo                         |                               Descripción                               |
+|      Nombre de la propiedad       |                         Tipo                         |                               Descripción                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | **id**                   | string                                               | El identificador de la versión. Solo lectura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidad del usuario que modificó por última vez la versión. Solo lectura.        |

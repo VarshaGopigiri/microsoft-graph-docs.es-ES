@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso sharePointActivityUserDetail
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: a5b6de8a4a9b82d9e6d34a2ae289f0c7589798ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4503739a7b2e13cade72951ae56ab410f22608b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880699"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>tipo de recurso sharePointActivityUserDetail
 
@@ -15,7 +16,7 @@ ms.locfileid: "27083811"
 | Propiedad                  | Tipo              |
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Fecha              |
-| userPrincipalName         | String            |
+| userPrincipalName         | Cadena            |
 | isDeleted                 | Booleano           |
 | deletedDate               | Fecha              |
 | lastActivityDate          | Fecha              |

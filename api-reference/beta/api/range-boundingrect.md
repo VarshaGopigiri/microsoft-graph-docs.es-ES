@@ -2,12 +2,13 @@
 title: 'Range: BoundingRect'
 description: .
 author: lumine2008
-ms.openlocfilehash: 937a6cfa7cbb1d1d95f27139aaa12a8ae444f887
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54a8fea095909d199f2cd2b74e2512f6c2f05a6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876618"
 ---
 # <a name="range-boundingrect"></a>Range: BoundingRect
 
@@ -40,7 +41,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/BoundingRect
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |anotherRange|string|Objeto o dirección de intervalo o nombre de intervalo.|
 

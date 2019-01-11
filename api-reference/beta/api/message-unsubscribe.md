@@ -2,12 +2,13 @@
 title: 'mensaje: cancelar su suscripción'
 description: Envía una solicitud de correo electrónico en nombre del usuario que ha iniciado sesión para cancelar la suscripción a una lista de distribución de correo electrónico. Utiliza la información de la `List-Unsubscribe` encabezado.
 author: angelgolfer-ms
-ms.openlocfilehash: e516a8aa68bde02f056e503da9c85d4e7a6f62fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877689"
 ---
 # <a name="message-unsubscribe"></a>mensaje: cancelar su suscripción
 
@@ -40,7 +41,7 @@ Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener 
 POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

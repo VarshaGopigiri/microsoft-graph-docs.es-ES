@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso cloudAppSecurityState
 description: Contiene información de estado acerca de la aplicación en la nube (destinationServiceName, destinationServiceIp).
-ms.openlocfilehash: 915044c3084e3d9a9435d602ecc7ec809d2168f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876807"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>tipo de recurso cloudAppSecurityState
 
@@ -14,11 +15,11 @@ Contiene información de estado acerca de la aplicación en la nube (destination
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad     | Tipo        | Descripción |
+| Propiedad     | Tipo        | Description |
 |:-------------|:------------|:------------|
-|destinationServiceIp|String|Dirección IP de destino de la conexión a la aplicación o servicio de nube.|
-|destinationServiceName|String|Nombre de aplicación o servicio de nube (por ejemplo "Fuerza de ventas", "Lista desplegable", etcetera).|
-|riskScore|String|Puntuación de proveedor generado/calculada en el riesgo de la aplicación o servicio de nube. Valor recomendado el rango de 0-1, lo que equivale a un porcentaje.|
+|destinationServiceIp|Cadena|Dirección IP de destino de la conexión a la aplicación o servicio de nube.|
+|destinationServiceName|Cadena|Nombre de aplicación o servicio de nube (por ejemplo "Fuerza de ventas", "Lista desplegable", etcetera).|
+|riskScore|Cadena|Puntuación de proveedor generado/calculada en el riesgo de la aplicación o servicio de nube. Valor recomendado el rango de 0-1, lo que equivale a un porcentaje.|
 
 ## <a name="json-representation"></a>Representación JSON
 

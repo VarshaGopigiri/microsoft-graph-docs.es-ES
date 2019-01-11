@@ -2,12 +2,13 @@
 title: Tipo de recurso notebook
 description: Bloc de notas de OneNote.
 author: Jewan-microsoft
-ms.openlocfilehash: b6301e53d1cc616897055df0185601400f87de54
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c39ac85dcfacb332a72c81d1d5f075a7a5021047
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362219"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876562"
 ---
 # <a name="notebook-resource-type"></a>Tipo de recurso notebook
 
@@ -51,17 +52,17 @@ Aquí tiene una representación JSON del recurso
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|String|El identificador único del bloc de notas. Solo lectura.|
+|id|Cadena|El identificador único del bloc de notas. Solo lectura.|
 |isDefault|Booleano|Indica si se trata del bloc de notas predeterminado del usuario. Solo lectura.|
 |isShared|Booleano|Indica si se comparte el bloc de notas. Si es true, además del propietario, otros usuarios pueden ver el contenido del bloc de notas. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |links|[NotebookLinks](notebooklinks.md)|Vínculos para abrir el bloc de notas. El vínculo `oneNoteClientURL` abre el bloc de notas en el cliente nativo de OneNote si está instalado. El vínculo `oneNoteWebURL` abre el bloc de notas en OneNote Online.|
-|displayName|String|El nombre del bloc de notas.|
-|sectionGroupsUrl|String|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del bloc de notas. Solo lectura.|
-|sectionsUrl|String|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del bloc de notas. Solo lectura.|
-|self|String|El punto de conexión donde puede obtener información detallada sobre el bloc de notas. Solo lectura.|
-|userRole|String|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
+|displayName|Cadena|El nombre del bloc de notas.|
+|sectionGroupsUrl|Cadena|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del bloc de notas. Solo lectura.|
+|sectionsUrl|Cadena|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del bloc de notas. Solo lectura.|
+|self|Cadena|El punto de conexión donde puede obtener información detallada sobre el bloc de notas. Solo lectura.|
+|userRole|Cadena|Los valores posibles son `Owner`, `Contributor`, `Reader` y `None`. Owner representa el acceso de nivel de propietario al bloc de notas. Contributor representa el acceso de lectura/escritura al bloc de notas. Reader representa el acceso de solo lectura al bloc de notas. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

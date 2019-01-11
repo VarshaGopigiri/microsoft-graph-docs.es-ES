@@ -2,12 +2,13 @@
 title: tipo de enumeración defenderSecurityCenterITContactDisplayType
 description: Valores posibles para defenderSecurityCenterITContactDisplay
 author: tfitzmac
-ms.openlocfilehash: 019bce4bc1c5b94da3cf1b8a3044638b0277f432
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fcdca31f22de0462dbc9020fb2f5fbd7af1c1abf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327191"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881896"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>tipo de enumeración defenderSecurityCenterITContactDisplayType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27327191"
 
 Valores posibles para defenderSecurityCenterITContactDisplay
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|No configurado|
 |displayInAppAndInNotifications|1|Mostrar en la aplicación en las notificaciones|

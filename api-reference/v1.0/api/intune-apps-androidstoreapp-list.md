@@ -2,12 +2,13 @@
 title: Enumerar androidStoreApps
 description: Enumere las propiedades y las relaciones de los objetos androidStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 78897f4663fd79d1a7c4209239b7807e011cfeb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4f96a07f3502d9dd94b71180e8668e055bbaf5e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881266"
 ---
 # <a name="list-androidstoreapps"></a>Enumerar androidStoreApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

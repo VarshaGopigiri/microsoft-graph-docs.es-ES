@@ -1,12 +1,13 @@
 ---
 title: Actualizar plannerPlan
 description: Actualizar las propiedades del objeto **plannerPlan** .
-ms.openlocfilehash: 477246b442971693c2748d9f2cde10ac46b8ef0a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6e15ff81f48a7e98a53cefea0bee5c33be24b34f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876450"
 ---
 # <a name="update-plannerplan"></a>Actualizar plannerPlan
 
@@ -41,8 +42,8 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|owner|String|`id` del [group](../resources/group.md) que tiene el plan. Para poder establecer este campo, debe existir un grupo válido. Una vez establecido, solo lo puede actualizar el propietario.|
-|title|String|Título del plan.|
+|owner|Cadena|`id` del [group](../resources/group.md) que tiene el plan. Para poder establecer este campo, debe existir un grupo válido. Una vez establecido, solo lo puede actualizar el propietario.|
+|title|Cadena|Título del plan.|
 
 ## <a name="response"></a>Respuesta
 

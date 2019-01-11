@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceComplianceActionType
 description: Programado acción tipo Enum
 author: tfitzmac
-ms.openlocfilehash: 9fd0a8bd045ad04fe0acf55f899e693d7fcce5d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2b89dbdaa3e67918b1b0c3e76eb6638e492994c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881875"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enumeración deviceComplianceActionType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27335689"
 
 Programado acción tipo Enum
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |noAction|0|Ninguna acción|
 |notificación|1|Enviar una notificación|

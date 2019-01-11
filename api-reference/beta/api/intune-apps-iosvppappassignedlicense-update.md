@@ -2,12 +2,13 @@
 title: Actualizar iosVppAppAssignedLicense
 description: Actualizar las propiedades de un objeto iosVppAppAssignedLicense.
 author: tfitzmac
-ms.openlocfilehash: e15aba6cf5ca5225210e946f04a6b1bff82cdd83
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 226a192e5a3da8071b5c31a523f97c60ecec8b09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322326"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879159"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Actualizar iosVppAppAssignedLicense
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) .
@@ -47,11 +48,11 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad.|
-|userEmailAddress|String|La dirección de correo electrónico del usuario.|
-|userId|String|El identificador de usuario.|
-|userName|String|El nombre de usuario.|
-|userPrincipalName|String|El nombre principal del usuario.|
+|id|Cadena|Clave de la entidad.|
+|userEmailAddress|Cadena|La dirección de correo electrónico del usuario.|
+|userId|Cadena|El identificador de usuario.|
+|userName|Cadena|El nombre de usuario.|
+|userPrincipalName|Cadena|El nombre principal del usuario.|
 
 
 

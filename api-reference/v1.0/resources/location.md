@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Location
 description: Representa información de ubicación de un evento.
-ms.openlocfilehash: 149af193864c2a0ecab67ab2c722c9c3b46e9293
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879803"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 
@@ -27,7 +28,7 @@ Según cómo se cree el evento, se espera que Outlook establezca la propiedad **
 | address | [physicalAddress](physicaladdress.md) |Dirección postal de la ubicación. |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Coordenadas geográficas y elevación de la ubicación. |
 | displayName  | String | Nombre asociado a la ubicación.                       |
-| locationEmailAddress | String | Dirección de correo electrónico opcional de la ubicación              |
+| locationEmailAddress | Cadena | Dirección de correo electrónico opcional de la ubicación              |
 | locationUri | String | URI opcional que representa la ubicación. |
 | locationType | locationType | Tipo de ubicación. Los valores posibles son: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Solo lectura.|
 | uniqueId | String | Solo para uso interno.|

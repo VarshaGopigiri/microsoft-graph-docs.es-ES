@@ -1,12 +1,13 @@
 ---
 title: Suscripciones de lista
 description: " Consulte los escenarios a continuación para obtener información detallada."
-ms.openlocfilehash: ad5e97a9b721a9e557e01dd4743b53a52c6dc8d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1b751b8632d82626e2ba87bf00a054b2be4f25f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090077"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876989"
 ---
 # <a name="list-subscriptions"></a>Suscripciones de lista
 
@@ -14,7 +15,7 @@ ms.locfileid: "27090077"
 
 Recuperar una lista de las suscripciones de webhook. El contenido de la respuesta depende del contexto en el que está llamando la aplicación; Consulte los escenarios a continuación para obtener información detallada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Esta API admite los siguientes ámbitos de permisos; Para obtener más información, incluido cómo elegir permisos, vea [permisos](/graph/permissions-reference).
 
@@ -61,7 +62,7 @@ Este método no es compatible con los [Parámetros de consulta de OData](https:/
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

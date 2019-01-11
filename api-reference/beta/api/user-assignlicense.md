@@ -1,12 +1,13 @@
 ---
 title: assignLicense
 description: Agregar o quitar licencias para el usuario habilitar o deshabilitar el uso de las ofertas de nube de Microsoft. Por ejemplo, una organización puede tener una suscripción a Office 365 Enterprise E3 con 100 licencias, y esta solicitud de una de las licencias asigna a un usuario determinado. También puede habilitar y deshabilitar planes específicos asociados a una suscripción. Para obtener más información acerca de las suscripciones y las licencias, consulte este artículo de Technet.
-ms.openlocfilehash: ecfe1f97e2e951998e0a62eea68412279eae524f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71287b47a0a42ce4f89635fe6a1769c78874ae36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091183"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876205"
 ---
 # <a name="assignlicense"></a>assignLicense
 

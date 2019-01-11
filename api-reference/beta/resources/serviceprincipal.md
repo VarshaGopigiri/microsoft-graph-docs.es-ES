@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso servicePrincipal
 description: Representa una instancia de una aplicación en un directorio. Se hereda de directoryObject.
-ms.openlocfilehash: c3a08efb1dea1109bd32d59a479260e14089783d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880209"
 ---
 # <a name="serviceprincipal-resource-type"></a>tipo de recurso servicePrincipal
 
@@ -65,27 +66,27 @@ Aquí tiene una representación JSON del recurso
 | Propiedad     | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |accountEnabled|Booleano| **true** si la cuenta de servicio de entidad de seguridad está habilitada; en caso contrario, **false**.            |
-|appDisplayName|String|El nombre para mostrar expuesto por la aplicación asociada.|
+|appDisplayName|Cadena|El nombre para mostrar expuesto por la aplicación asociada.|
 |appId|cadena|El identificador único para la aplicación asociada (su propiedad **appId** ).|
 |appRoleAssignmentRequired|Booleano|Especifica si un **appRoleAssignment** a un usuario o grupo es necesaria antes de Azure AD emitirá un usuario o un token de acceso a la aplicación. No admite valores NULL. |
 |appRoles|colección de [función de aplicación](approle.md)|Las funciones de aplicación expuestas por la aplicación asociada. Para obtener más información, vea la definición de la propiedad **appRoles** en la entidad de la [aplicación](application.md) . No admite valores NULL. |
-|displayName|String|El nombre para mostrar para la entidad de seguridad de servicio.|
-|errorUrl|String|            |
-|página principal|String|La dirección URL a la página principal de la aplicación asociada.|
+|displayName|Cadena|El nombre para mostrar para la entidad de seguridad de servicio.|
+|errorUrl|Cadena|            |
+|página principal|Cadena|La dirección URL a la página principal de la aplicación asociada.|
 |keyCredentials|colección de [keyCredential](keycredential.md)|La colección de credenciales claves asociado con el servicio de entidad de seguridad. No admite valores NULL.            |
-|logoutUrl|String| Especifica la dirección URL que usará el servicio de autorización de Microsoft para cerrar sesión de un usuario mediante [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back canal](https://openid.net/specs/openid-connect-backchannel-1_0.html) o protocolos de cierre de sesión SAML.  |
+|logoutUrl|Cadena| Especifica la dirección URL que usará el servicio de autorización de Microsoft para cerrar sesión de un usuario mediante [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back canal](https://openid.net/specs/openid-connect-backchannel-1_0.html) o protocolos de cierre de sesión SAML.  |
 |oauth2Permissions|colección de [oAuth2Permission](oauth2permission.md)|Los permisos de OAuth 2.0 expuestos por la aplicación asociada. Para obtener más información, vea la definición de la propiedad **oauth2Permissions** en la entidad de la [aplicación](application.md) . No admite valores NULL.            |
-|id|String|El identificador único para la entidad de seguridad de servicio. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
+|id|Cadena|El identificador único para la entidad de seguridad de servicio. Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.|
 |passwordCredentials|colección de [passwordCredential](passwordcredential.md)|La colección de credenciales de contraseña asociada con la entidad de seguridad de servicio. No admite valores NULL. |
-|preferredTokenSigningKeyThumbprint|String|Reservado sólo para uso interno. No escribir ni en caso contrario, se basan en esta propiedad. Puede quitarse en versiones futuras. |
+|preferredTokenSigningKeyThumbprint|Cadena|Reservado sólo para uso interno. No escribir ni en caso contrario, se basan en esta propiedad. Puede quitarse en versiones futuras. |
 |publisherName|cadena|El nombre para mostrar del inquilino en el que se especifica la aplicación asociada.|
 |replyUrls|Colección String|Las direcciones URL que los tokens de usuario se envían a para el inicio de sesión con la aplicación asociada o el redireccionamiento de códigos de autorización de los URI que OAuth 2.0 y tokens de acceso se envían a para la aplicación asociada. No admite valores NULL. |
-|samlMetadataUrl|String| |
+|samlMetadataUrl|Cadena| |
 |servicePrincipalNames|Colección String|El URI que identifica la aplicación asociada. Para obtener más información, vea [objetos de la aplicación y los objetos a principales de servicio](https://msdn.microsoft.com/library/azure/dn132633.aspx). El operador **any** es necesario para las expresiones de filtro en las propiedades multivalor.  No admite valores NULL. |
 |de cierre|Colección String| No admite valores NULL. |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo |Descripción|
+| Relación | Tipo |Description|
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Entidades de seguridad (usuarios, grupos y entidades de seguridad de servicio) que se asignan a esta entidad de seguridad de servicio. Solo lectura.|
 |appRoleAssignments|colección de [appRoleAssignment](approleassignment.md)|Aplicaciones que se asigna la entidad de seguridad de servicio a. Solo lectura. Admite valores NULL.|

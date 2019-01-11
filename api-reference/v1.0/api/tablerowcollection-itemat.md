@@ -2,12 +2,13 @@
 title: 'TableRowCollection: ItemAt'
 description: Obtiene una fila en función de su posición en la colección.
 author: lumine2008
-ms.openlocfilehash: 653f6154b36036f851ffc39d32e2e551b810dbfd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 017618e37be33e7f64ce01082e8fe16b23c03f13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880719"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |index|Int32|Valor de índice del objeto que se va a recuperar. Indizado con cero.|
 

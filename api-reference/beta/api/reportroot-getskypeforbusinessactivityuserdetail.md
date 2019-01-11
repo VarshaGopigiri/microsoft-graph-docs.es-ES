@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessActivityUserDetail'
 description: Obtiene información sobre la actividad de Skype Empresarial por usuario.
-ms.openlocfilehash: 39113039226b48bcefc2121acda5ff5e554d5cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43bf2d7f08bc9a0033bd04f98687c7d03be5f2ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872635"
 ---
 # <a name="reportroot-getskypeforbusinessactivityuserdetail"></a>reportRoot: getSkypeForBusinessActivityUserDetail
 

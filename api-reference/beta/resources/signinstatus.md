@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso signInStatus
 description: Proporciona el inicio de sesión de estado (correcto o error) de inicio de sesión de
-ms.openlocfilehash: cafa0dffe1b1d798d87225ac82901cf041d5e4fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089989"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878641"
 ---
 # <a name="signinstatus-resource-type"></a>tipo de recurso signInStatus
 Proporciona el inicio de sesión de estado (correcto o error) de inicio de sesión de
@@ -14,11 +15,11 @@ Proporciona el inicio de sesión de estado (correcto o error) de inicio de sesi�
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|additionalDetails|String|Proporciona detalles adicionales acerca de la actividad de inicio de sesión|
+|additionalDetails|Cadena|Proporciona detalles adicionales acerca de la actividad de inicio de sesión|
 |errorCode|Int32|Proporciona el código de error 5-6digit que se genera durante un error de inicio de sesión. Revise la [lista de códigos de error y los mensajes](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
-|failureReason|String|Proporciona el mensaje de error o el motivo del error para la actividad de inicio de sesión correspondiente. Revise la [lista de códigos de error y los mensajes](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|failureReason|Cadena|Proporciona el mensaje de error o el motivo del error para la actividad de inicio de sesión correspondiente. Revise la [lista de códigos de error y los mensajes](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 
 ## <a name="json-representation"></a>Representación JSON
 

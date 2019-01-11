@@ -2,12 +2,13 @@
 title: Actualizar hilo de conversación
 description: Actualiza un objeto de conversación.
 author: dkershaw10
-ms.openlocfilehash: 5d95beec5eb95d6a62538aba62c57bd367c824a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a54a450064fc886e18687c31bb05ddc25868326c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878921"
 ---
 # <a name="update-conversation-thread"></a>Actualizar hilo de conversación
 
@@ -31,7 +32,7 @@ PATCH /groups/{id}/threads/{id}
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

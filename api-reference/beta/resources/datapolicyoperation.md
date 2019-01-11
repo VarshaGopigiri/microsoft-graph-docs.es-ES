@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso dataPolicyOperation
 description: Representa una operación de la directiva de datos enviados. Contiene la información necesaria para realizar un seguimiento del estado de una operación. Por ejemplo, un administrador de la compañía puede enviar una solicitud de operación de directiva de datos para exportar datos de un empleado de la compañía y, a continuación, más adelante realizar un seguimiento de dicha solicitud.
-ms.openlocfilehash: 6e896fdfa60b733dd91e9da573d998c1949f0d9c
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+localization_priority: Normal
+ms.openlocfilehash: b56cfe766bbfcae9339805dd61ce816e372d02f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27156036"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876009"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
 
@@ -25,10 +26,10 @@ Representa una operación de la directiva de datos enviados. Contiene la informa
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Representa la solicitud para esta operación de la directiva de datos se ha completado, en la hora UTC, con el formato ISO 8601. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. NULL hasta que se complete la operación.|
-|id|String| Clave única para esta operación. |
+|id|Cadena| Clave única para esta operación. |
 |status|string| Los valores posibles son: `notStarted`, `running`, `complete`, `failed` y `unknownFutureValue`.|
-|storageLocation|String|La ubicación de la dirección URL a donde se va a exportar datos para las solicitudes de exportación.|
-|userId|String|El identificador para el usuario en quien se realiza la operación.|
+|storageLocation|Cadena|La ubicación de la dirección URL a donde se va a exportar datos para las solicitudes de exportación.|
+|userId|Cadena|El identificador para el usuario en quien se realiza la operación.|
 |submittedDateTime|DateTimeOffset|Representa para esta operación de datos se envió la solicitud, en la hora UTC, con el formato ISO 8601. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |progreso|Doble|Especifica el progreso de una operación.|
 

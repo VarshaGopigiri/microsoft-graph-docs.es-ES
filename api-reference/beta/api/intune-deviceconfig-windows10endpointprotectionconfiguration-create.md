@@ -1,12 +1,14 @@
 ---
 title: Crear windows10EndpointProtectionConfiguration
 description: Crea un objeto windows10EndpointProtectionConfiguration.
-ms.openlocfilehash: ba6dcb512b2a4989c8b1fe03953f810f390e2670
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+localization_priority: Normal
+ms.openlocfilehash: 0dc84af450130acd68e75e541d8863010a0c8238
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089295"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880244"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Crear windows10EndpointProtectionConfiguration
 
@@ -37,8 +39,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Authorization|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Autorización|Se requiere &lt;token&gt; de portador.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto windows10EndpointProtectionConfiguration.
@@ -47,13 +49,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Este derecho de usuario se utiliza por el Administrador de credenciales durante la copia de seguridad y restauración. Las credenciales guardadas de los usuarios podrían verse comprometidas si este privilegio se concede a otras entidades. Se admiten sólo los Estados no configurado y permitido|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Este derecho de usuario determina qué usuarios y grupos tienen permiso para conectarse al equipo a través de la red. Es compatible con el estado permitido.|
@@ -92,9 +94,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |localSecurityOptionsBlockMicrosoftAccounts|Booleano|Impedir que los usuarios agreguen nuevas cuentas de Microsoft a este equipo.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Booleano|Habilite las cuentas locales que no están protegido para iniciar sesión desde ubicaciones que no sean el dispositivo físico de contraseña. Es el comportamiento predeterminado|
 |localSecurityOptionsEnableAdministratorAccount|Booleano|Determina si la cuenta de administrador Local está habilitada o deshabilitada.|
-|localSecurityOptionsAdministratorAccountName|String|Definir un nombre de cuenta diferente que se asociará con el identificador de seguridad (SID) para la cuenta "Administrador".|
+|localSecurityOptionsAdministratorAccountName|Cadena|Definir un nombre de cuenta diferente que se asociará con el identificador de seguridad (SID) para la cuenta "Administrador".|
 |localSecurityOptionsEnableGuestAccount|Booleano|Determina si la cuenta de invitado está habilitada o deshabilitada.|
-|localSecurityOptionsGuestAccountName|String|Definir un nombre de cuenta diferente que se asociará con el identificador de seguridad (SID) para la cuenta "Invitado".|
+|localSecurityOptionsGuestAccountName|Cadena|Definir un nombre de cuenta diferente que se asociará con el identificador de seguridad (SID) para la cuenta "Invitado".|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Booleano|Impedir que se desacoplado sin tener que inicie sesión un equipo portátil.|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Booleano|Restringir instalar controladores de impresora como parte de la conexión a una impresora compartida a los administradores de únicamente.|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Booleano|Habilitación de esta configuración permite único usuario inició la sesión de forma interactiva a los medios de CD-ROM de access.|
@@ -104,11 +106,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |localSecurityOptionsDoNotRequireCtrlAltDel|Booleano|Requerir CTRL + ALT + SUPR que se debe presionar antes de que un usuario puede iniciar sesión.|
 |localSecurityOptionsHideLastSignedInUser|Booleano|No mostrar el nombre de usuario de la última persona que ha iniciado sesión en este dispositivo.|
 |localSecurityOptionsHideUsernameAtSignIn|Booleano|No mostrar el nombre de usuario de la persona que inicio de sesión para este dispositivo después de que se escriben las credenciales y antes de que se muestra el escritorio del dispositivo.|
-|localSecurityOptionsLogOnMessageTitle|String|Establecer el título del mensaje para los usuarios que intentan iniciar sesión.|
-|localSecurityOptionsLogOnMessageText|String|Establecer el texto del mensaje para los usuarios que intentan iniciar sesión.|
+|localSecurityOptionsLogOnMessageTitle|Cadena|Establecer el título del mensaje para los usuarios que intentan iniciar sesión.|
+|localSecurityOptionsLogOnMessageText|Cadena|Establecer el texto del mensaje para los usuarios que intentan iniciar sesión.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Booleano|Bloque PKU2U las solicitudes de autenticación para este dispositivo para utilizar las identidades en línea.|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Booleano|Auxiliares de la interfaz de usuario booleano de entidad LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Editar la cadena de lenguaje de definición de Descriptor de seguridad predeterminado para permitir o denegar a los usuarios y grupos para que las llamadas remotas al SAM.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Cadena|Editar la cadena de lenguaje de definición de Descriptor de seguridad predeterminado para permitir o denegar a los usuarios y grupos para que las llamadas remotas al SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Esta configuración de seguridad permite que un cliente requerir la negociación de cifrado de 128 bits o seguridad de sesión NTLMv2. Los valores posibles son: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption` y `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Esta configuración de seguridad permite a un servidor requerir la negociación de cifrado de 128 bits o seguridad de sesión NTLMv2. Los valores posibles son: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption` y `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Esta configuración de seguridad determina qué protocolo de autenticación de desafío/respuesta se usa para inicios de sesión de red. Los valores posibles son: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
@@ -147,10 +149,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |defenderSecurityCenterDisableRansomwareUI|Booleano|Se usa para deshabilitar la presentación de la zona de protección ransomware. |
 |defenderSecurityCenterDisableSecureBootUI|Booleano|Se usa para deshabilitar la presentación del área de inicialización segura en seguridad del dispositivo.|
 |defenderSecurityCenterDisableTroubleshootingUI|Booleano|Se usa para deshabilitar la visualización del proceso de seguridad de solución de problemas en la seguridad del dispositivo.|
-|defenderSecurityCenterOrganizationDisplayName|String|El nombre de la compañía que se muestra a los usuarios.|
-|defenderSecurityCenterHelpEmail|String|La dirección de correo electrónico que se mostrará a los usuarios.|
-|defenderSecurityCenterHelpPhone|String|El número de teléfono o el identificador de Skype que se muestra a los usuarios.|
-|defenderSecurityCenterHelpURL|String|El portal de Ayuda de dirección URL que se mostrará a los usuarios.|
+|defenderSecurityCenterOrganizationDisplayName|Cadena|El nombre de la compañía que se muestra a los usuarios.|
+|defenderSecurityCenterHelpEmail|Cadena|La dirección de correo electrónico que se mostrará a los usuarios.|
+|defenderSecurityCenterHelpPhone|Cadena|El número de teléfono o el identificador de Skype que se muestra a los usuarios.|
+|defenderSecurityCenterHelpURL|Cadena|El portal de Ayuda de dirección URL que se mostrará a los usuarios.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notificaciones para mostrar de las áreas de aplicación que se muestra. Los valores posibles son: `notConfigured`, `blockNoncriticalNotifications` y `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configurar dónde mostrar el contacto de TI información a los usuarios finales. Los valores posibles son: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp` y `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Booleano|Bloquea las conexiones FTP con estado en el dispositivo.|
@@ -194,7 +196,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |defenderAdditionalGuardedFolders|Colección String|Lista de las rutas de acceso de carpeta que se van a agregar a la lista de carpetas protegidas.|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Valor que indica el comportamiento de NetworkProtection. Los valores posibles son: `userDefined`, `enable` y `auditMode`.|
 |defenderExploitProtectionXml|Binario|Contenido XML que contiene información sobre detalles de protección contra vulnerabilidades de seguridad.|
-|defenderExploitProtectionXmlFileName|String|Nombre del archivo del que se obtuvo DefenderExploitProtectionXml.|
+|defenderExploitProtectionXmlFileName|Cadena|Nombre del archivo del que se obtuvo DefenderExploitProtectionXml.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Booleano|Indica si se va a impedir que el usuario invalide la configuración de protección contra vulnerabilidades.|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Permite que el administrador elija los tipos de aplicación que se permiten en los dispositivos. Los valores posibles son: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker` y `auditComponentsStoreAppsAndSmartlocker`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Activar Guard credenciales al nivel de seguridad de la plataforma con arranque seguro y seguridad en función de virtualización están habilitadas. Los valores posibles son: `notConfigured`, `enableWithUEFILock` y `enableWithoutUEFILock`.|

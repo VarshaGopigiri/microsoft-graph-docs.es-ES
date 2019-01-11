@@ -2,12 +2,13 @@
 title: Eliminar macOSEnterpriseWiFiConfiguration
 description: Elimina un macOSEnterpriseWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 29c3ce1f3f3f902577df6fa72812e0b865fbb94d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4a562ae02263e3af7f15a9da42bbf925023edeb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878312"
 ---
 # <a name="delete-macosenterprisewificonfiguration"></a>Eliminar macOSEnterpriseWiFiConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

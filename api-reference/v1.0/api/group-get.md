@@ -2,12 +2,13 @@
 title: Obtener grupo
 description: Obtiene las propiedades y relaciones de un objeto de grupo.
 author: dkershaw10
-ms.openlocfilehash: aed805172759971740d1576b4b3040934116cd66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 554a0b6bf6fcb4afb2a57f12e2c814cf5fa57951
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340316"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873412"
 ---
 # <a name="get-group"></a>Obtener grupo
 Obtiene las propiedades y relaciones de un objeto de grupo.
@@ -66,7 +67,7 @@ GET /groups/{id}
 Este método admite los [parámetros de consulta de OData](/graph/query-parameters) a modo de ayuda para personalizar la respuesta.
 
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
 | Autorización  | string  | {token} de portador. Obligatorio. |
 

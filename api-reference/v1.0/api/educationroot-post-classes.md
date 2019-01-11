@@ -1,12 +1,13 @@
 ---
 title: Crear educationClass
 description: Cree una clase. Esto también creará un grupo universal. Cuando se utiliza esta API para crear una clase, agregará propiedades especiales para el grupo, que se va a
-ms.openlocfilehash: d8b1bb178ac7fa199d5e7e4552d508513c6a0f3b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9a9a9b13560530adfe26b83af3025ce85be299c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032240"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880720"
 ---
 # <a name="create-educationclass"></a>Crear educationClass
 

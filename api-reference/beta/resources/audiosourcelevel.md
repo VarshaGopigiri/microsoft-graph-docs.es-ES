@@ -2,12 +2,13 @@
 title: tipo de recurso audioSourceLevel
 description: Configuración de nivel para otros orígenes.
 author: VinodRavichandran
-ms.openlocfilehash: 5d5abe7eba03891427b30ba1c8f63b15b3707e46
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: adf3c4805271d0a8d02d25fc8e7ecb547db10215
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880643"
 ---
 # <a name="audiosourcelevel-resource-type"></a>tipo de recurso audioSourceLevel
 
@@ -17,11 +18,11 @@ Configuración de nivel para otros orígenes.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad               | Tipo    | Descripción                                                                                         |
+| Propiedad               | Tipo    | Description                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
 | duckOthers             | Booleano | Permite que este origen agacha otros orígenes mientras está activa. Si se establece en true, nivel de sobra se ha establecido.|
 | nivel                  | Int64   | Nivel de la fuente de sobra si `duckOthers` está establecida en `true`.                                     |
-| participante            | String  | La secuencia de audio participantes de origen.                                                                |
+| participante            | Cadena  | La secuencia de audio participantes de origen.                                                                |
 
 ## <a name="json-representation"></a>Representación JSON
 

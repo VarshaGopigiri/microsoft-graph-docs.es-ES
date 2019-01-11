@@ -2,12 +2,13 @@
 title: Create Message
 description: Usa esta API para crear un objeto Message en una mailfolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 0db7150c358065c6333091fd27754a8da969d673
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d4bd1783d5ad2e04f99e1e3d3231a0aa9bd31fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878956"
 ---
 # <a name="create-message"></a>Create Message
 

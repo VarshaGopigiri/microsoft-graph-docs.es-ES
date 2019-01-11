@@ -1,12 +1,13 @@
 ---
 title: Eliminar connectorGroup
 description: Eliminar un connectorGroup.
-ms.openlocfilehash: 3ba4a5a06e25f2fb1568ab9d7d6e92104ea083de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9c767cfd5342e1588cae606816ca28c355404a1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879271"
 ---
 # <a name="delete-connectorgroup"></a>Eliminar connectorGroup
 
@@ -33,7 +34,7 @@ DELETE /connectorGroups/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Authorization  | Bearer. Obligatorio|
+| Autorización  | Bearer. Obligatorio|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

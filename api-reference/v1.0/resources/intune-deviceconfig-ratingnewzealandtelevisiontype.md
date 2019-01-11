@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingNewZealandTelevisionType
 description: Etiquetas de clasificación de contenido de TV en Nueva Zelanda
 author: tfitzmac
-ms.openlocfilehash: fd390f678cf2d44239fbc86abda369c22a396504
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fcafb9c202f9392d5dc3ba834e7c7e78d2592972
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875491"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>tipo de enumeración ratingNewZealandTelevisionType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27311903"
 
 Etiquetas de clasificación de contenido de TV en Nueva Zelanda
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

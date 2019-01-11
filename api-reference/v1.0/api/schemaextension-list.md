@@ -1,12 +1,13 @@
 ---
 title: Enumerar schemaExtensions
 description: 'Obtener una lista de objetos de schemaExtension creados por cualquier propietario en el inquilino actual (que puede ser de aplicaciones '
-ms.openlocfilehash: b5e11856156094cc797b9e620c8e2d3ff82da349
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bc8ac2ed0c96e112b5f5e47b9d84ecc16de7533b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032387"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880034"
 ---
 # <a name="list-schemaextensions"></a>Enumerar schemaExtensions
 

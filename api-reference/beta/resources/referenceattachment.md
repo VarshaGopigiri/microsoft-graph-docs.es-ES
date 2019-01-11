@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso referenceAttachment
 description: 'Un vínculo a una carpeta o archivo (como un archivo de texto o un documento de Word) en un OneDrive para la unidad de negocio en la nube o en otras ubicaciones de almacenamiento compatibles, adjunto '
-ms.openlocfilehash: e9885c3a0e5c7f723303d7d6461f4c07dbed6bf6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6a334b303bea7aff768733434b9ba882de237a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27088920"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880055"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
 
@@ -31,13 +32,13 @@ Derivado de [attachment](attachment.md).
 |isFolder|Booleano|Especifica si los datos adjuntos son un vínculo a una carpeta. Debe establecer como true si **sourceUrl** es un vínculo a una carpeta. Opcional.|
 |isInline|Boolean|Se establece en true si los datos adjuntos aparecen en insertados en el cuerpo del objeto embedding. Opcional.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y hora de la última modificación de los datos adjuntos. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Opcional.|
-|name|String|El texto que se muestra debajo del icono que representa al archivo adjunto incrustado. Esto no necesita ser el nombre de archivo real. Obligatorio.|
+|name|Cadena|El texto que se muestra debajo del icono que representa al archivo adjunto incrustado. Esto no necesita ser el nombre de archivo real. Necesario.|
 |permiso|ReferenceAttachmentPermissions|Especifica los permisos concedidos para los datos adjuntos con el tipo de proveedor en **tipo de proveedor**. Los valores posibles son: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView` y `organizationEdit`. Opcional.|
-|previewUrl|String|Se aplica a un adjunto de referencia de una imagen - dirección URL para obtener una imagen de vista previa. Use **thumbnailUrl** y **previewUrl** sólo cuando **sourceUrl** identifica un archivo de imagen. Opcional.|
+|previewUrl|Cadena|Se aplica a un adjunto de referencia de una imagen - dirección URL para obtener una imagen de vista previa. Use **thumbnailUrl** y **previewUrl** sólo cuando **sourceUrl** identifica un archivo de imagen. Opcional.|
 |tipo de proveedor|ReferenceAttachmentProviders|El tipo de proveedor que admite un dato adjunto de este contentType. Los valores posibles son: `other`, `oneDriveBusiness`, `oneDriveConsumer` y `dropbox`. Opcional.|
 |size|Int32|El tamaño de los metadatos en bytes que se almacenan en el mensaje para los datos adjuntos de referencia. Este valor no indica el tamaño del archivo real. Opcional.|
-|sourceUrl|String|URL para obtener el contenido del archivo adjunto. Si se trata de una dirección URL a una carpeta, a continuación, para que la carpeta que se muestre correctamente en Outlook o Outlook en la web, establecer **isFolder** en true. Obligatorio.|
-|thumbnailUrl|String|Se aplica a un adjunto de referencia de una imagen - dirección URL para obtener una imagen en miniatura. Use **thumbnailUrl** y **previewUrl** sólo cuando **sourceUrl** identifica un archivo de imagen. Opcional.|
+|sourceUrl|Cadena|URL para obtener el contenido del archivo adjunto. Si se trata de una dirección URL a una carpeta, a continuación, para que la carpeta que se muestre correctamente en Outlook o Outlook en la web, establecer **isFolder** en true. Necesario.|
+|thumbnailUrl|Cadena|Se aplica a un adjunto de referencia de una imagen - dirección URL para obtener una imagen en miniatura. Use **thumbnailUrl** y **previewUrl** sólo cuando **sourceUrl** identifica un archivo de imagen. Opcional.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

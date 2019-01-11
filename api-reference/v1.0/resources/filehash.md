@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso fileHash
 description: Contiene información de estado acerca de los valores de hash de archivo (criptográficas y la ubicación).
-ms.openlocfilehash: f7e1f5ceba700a30f1e68e0670ebcec40c3d6fd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d72812d1ad43999ea3ed5b28251d629b9380d47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27029770"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876772"
 ---
 # <a name="filehash-resource-type"></a>tipo de recurso fileHash
 
@@ -14,10 +15,10 @@ Contiene información de estado acerca de los valores de hash de archivo (cripto
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad     | Tipo        | Descripción |
+| Propiedad     | Tipo        | Description |
 |:-------------|:------------|:------------|
 |hashType|fileHashType|Tipo de hash de archivo. Los valores posibles son: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1` y `peSha256`.|
-|hashValue|String|Valor de hash de archivo.|
+|hashValue|Cadena|Valor de hash de archivo.|
 
 ## <a name="json-representation"></a>Representación JSON
 

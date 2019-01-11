@@ -1,12 +1,13 @@
 ---
 title: Directivas de la lista asignadas a la aplicación o entidad de seguridad de servicio
 description: Recupere los objetos de directiva asignados a una aplicación o un servicio de entidad de seguridad.
-ms.openlocfilehash: cfdcf3d8e6709080f4c8f7bfc3e2dbc256789f6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3c66eece645313f7039f12aec708cba4581fb4bb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085681"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875358"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Directivas de la lista asignadas a la aplicación o entidad de seguridad de servicio
 
@@ -34,7 +35,7 @@ GET /applications/{id}/policies
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

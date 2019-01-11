@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: CalculatedColumn
-ms.openlocfilehash: a5850961e680459af27f3e76965f0d3e1c97e923
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5433b5b5a76d313f8f34e460400906479e6d3d7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876058"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
 
@@ -31,7 +32,7 @@ A continuación se incluye una representación JSON de un recurso **calculatedCo
 
 ## <a name="properties"></a>Propiedades
 
-| Nombre de propiedad  | Tipo    | Descripción
+| Nombre de la propiedad  | Tipo    | Descripción
 |:---------------|:--------|:--------------------------------------------------
 | **format**     | string  | Para tipos de salida `dateTime`, el formato del valor. Debe ser `dateOnly` o `dateTime`.
 | **formula**    | string  | La fórmula usada para calcular el valor de esta columna.

@@ -2,12 +2,13 @@
 title: List worksheets
 description: Recuperar una lista de objetos worksheet.
 author: lumine2008
-ms.openlocfilehash: 218138a8bb9c15430c3693ab137afea9de91e059
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d337eac1ccc1d5543bcca605a30d57867fda63e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878844"
 ---
 # <a name="list-worksheets"></a>List worksheets
 

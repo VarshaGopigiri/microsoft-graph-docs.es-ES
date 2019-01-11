@@ -2,12 +2,13 @@
 title: tipo de recurso managementConditionStatement
 description: Una instrucción de condición de administración es un grupo de condiciones de administración que habilitar o deshabilitar las configuraciones de dispositivo o la aplicación cuando se cumplen todas las condiciones de administración contenido.
 author: tfitzmac
-ms.openlocfilehash: ca0966edd64166479361f42816e36fd278dbc6b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6281d151555c0c58a0eb608e9dafc754384369f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878403"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 
@@ -30,18 +31,18 @@ Una instrucción de condición de administración es un grupo de condiciones de 
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la instrucción de condición de administración. Valor asignado al crear generada por el sistema.|
-|displayName|String|El nombre definido de administración de la instrucción de condición de administración.|
-|descripción|String|El administrador define la descripción de la instrucción de condición de administración.|
+|id|Cadena|Identificador único de la instrucción de condición de administración. Valor asignado al crear generada por el sistema.|
+|displayName|Cadena|El nombre definido de administración de la instrucción de condición de administración.|
+|descripción|Cadena|El administrador define la descripción de la instrucción de condición de administración.|
 |createdDateTime|DateTimeOffset|La hora en que se creó la instrucción de condición de administración. Servicio generado al lado.|
 |modifiedDateTime|DateTimeOffset|La hora en que se modificó por última vez la instrucción de condición de administración. Se actualizó el lado de servicio.|
 |expresión|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|La expresión de instrucción de condición de administración que se usa para evaluar si una administración condición instrucción estaba activada o desactivada.|
-|eTag|String|ETag de la instrucción de condición de administración. Se actualizó el lado de servicio.|
+|eTag|Cadena|ETag de la instrucción de condición de administración. Se actualizó el lado de servicio.|
 |applicablePlatforms|colección de [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Las plataformas aplicables para esta instrucción de condición de administración.
 Esto se calcula a partir de ¿está buscando las condiciones de administración asociadas a la administración de la condición de la instrucción y buscar la intersección de plataformas aplicables.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |managementConditions|colección de [managementCondition](../resources/intune-fencing-managementcondition.md)|Las condiciones de administración que se asocia a la instrucción de condición de administración.|
 

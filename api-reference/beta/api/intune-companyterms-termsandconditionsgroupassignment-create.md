@@ -2,12 +2,13 @@
 title: Crear termsAndConditionsGroupAssignment
 description: Crear un nuevo objeto termsAndConditionsGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 54bcf9591cbfc9cd9369e434b11440a8247ea813
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d02e0f1a2e4f0a79f6baa9fec76a68c45ef3dec7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301389"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878585"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Crear termsAndConditionsGroupAssignment
 
@@ -38,7 +39,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto termsAndConditionsGroupAssignment.
@@ -47,8 +48,8 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la entidad.|
-|targetGroupId|String|Identificador único de un grupo que se asigna la directiva T & C a.|
+|id|Cadena|Identificador único de la entidad.|
+|targetGroupId|Cadena|Identificador único de un grupo que se asigna la directiva T & C a.|
 
 
 

@@ -2,12 +2,13 @@
 title: Acción updateWindowsDeviceAccount
 description: Todavía no documentado
 author: tfitzmac
-ms.openlocfilehash: 889a76b2f931419a45f5778dbce48d61055c6a33
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd7f27e166b1fc14ba148f17a374d2941d05b664
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877612"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>Acción updateWindowsDeviceAccount
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON de los parámetros.

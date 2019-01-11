@@ -2,12 +2,13 @@
 title: tipo de recurso vpnOnDemandRule
 description: Definición de la regla de petición de VPN.
 author: tfitzmac
-ms.openlocfilehash: 72b85971dc9c613026bb9e720ca55165845e0c9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd6e494975c8626a25380b3f037d702fb81e082b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352195"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875638"
 ---
 # <a name="vpnondemandrule-resource-type"></a>tipo de recurso vpnOnDemandRule
 
@@ -17,15 +18,15 @@ ms.locfileid: "27352195"
 
 Definición de la regla de petición de VPN.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |SSID|Colección String|Servicio de red establece identificadores (SSID).|
 |dnsSearchDomains|Colección String|Dominios de búsqueda DNS.|
-|probeUrl|String|Una dirección URL de sondeo. Si esta dirección URL es correctamente se capturaron (que devuelve un código de estado HTTP 200) sin el redireccionamiento, coincide esta regla.|
+|probeUrl|Cadena|Una dirección URL de sondeo. Si esta dirección URL es correctamente se capturaron (que devuelve un código de estado HTTP 200) sin el redireccionamiento, coincide esta regla.|
 |action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Acción. Los valores posibles son: `connect`, `evaluateConnection`, `ignore` y `disconnect`.|
 |domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Acción de dominio (sólo se aplica cuando la acción es evaluar la conexión). Los valores posibles son: `connectIfNeeded` y `neverConnect`.|
 |dominios|Colección String|Dominios (solo se aplica cuando la acción es evaluar la conexión).|
-|probeRequiredUrl|String|Sondeo obligatorio Url (solo se aplica cuando la acción es evaluar la conexión y DomainAction es conectar si es necesario).|
+|probeRequiredUrl|Cadena|Sondeo obligatorio Url (solo se aplica cuando la acción es evaluar la conexión y DomainAction es conectar si es necesario).|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

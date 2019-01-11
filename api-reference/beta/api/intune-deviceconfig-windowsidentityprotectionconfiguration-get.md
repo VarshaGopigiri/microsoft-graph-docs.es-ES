@@ -2,12 +2,13 @@
 title: Obtener windowsIdentityProtectionConfiguration
 description: Leer las propiedades y las relaciones del objeto windowsIdentityProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 57f7428244dd16755752f4b894455838faa01e14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fde8d4dcb8c7a5b94069466757d6c2ffb1351355
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304749"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881000"
 ---
 # <a name="get-windowsidentityprotectionconfiguration"></a>Obtener windowsIdentityProtectionConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

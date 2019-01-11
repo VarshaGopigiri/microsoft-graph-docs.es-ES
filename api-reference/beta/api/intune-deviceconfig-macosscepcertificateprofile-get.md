@@ -2,12 +2,13 @@
 title: Obtener macOSScepCertificateProfile
 description: Leer las propiedades y las relaciones del objeto macOSScepCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 5f44b0eae6f7a1c38897d9f90737c58f5d5e2c8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a9d5c1e96be4a1af054c7c819c44e4c16dc4087f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330117"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881560"
 ---
 # <a name="get-macosscepcertificateprofile"></a>Obtener macOSScepCertificateProfile
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

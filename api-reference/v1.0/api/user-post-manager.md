@@ -1,12 +1,13 @@
 ---
 title: Assign a manager
 description: Use esta API para asignar un administrador de usuarios.
-ms.openlocfilehash: ab48d0546b533fcc137d31cdc889072abf48fcfe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddbb73b5306188f2126f7817ddde6d02bde6f850
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877500"
 ---
 # <a name="assign-a-manager"></a>Assign a manager
 
@@ -30,7 +31,7 @@ PUT /users/{id}/manager/$ref
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryObject](../resources/directoryobject.md) o [user](../resources/user.md) que se va a agregar.
