@@ -1,27 +1,28 @@
 ---
 title: tipo de recurso skypeForBusinessParticipantActivityMinuteCounts
 description: La siguiente es una representación JSON del recurso
-ms.openlocfilehash: 47107670cdc06021a13fe99d11083e5145b29936
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 984a3a87cf2c4ae0298f6c82f9f82a7a6b3a409c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089993"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842766"
 ---
-# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a><span data-ttu-id="45f86-103">tipo de recurso skypeForBusinessParticipantActivityMinuteCounts</span><span class="sxs-lookup"><span data-stu-id="45f86-103">skypeForBusinessParticipantActivityMinuteCounts resource type</span></span>
+# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a><span data-ttu-id="f0fdf-103">tipo de recurso skypeForBusinessParticipantActivityMinuteCounts</span><span class="sxs-lookup"><span data-stu-id="f0fdf-103">skypeForBusinessParticipantActivityMinuteCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="45f86-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="45f86-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f0fdf-104">Propiedades</span><span class="sxs-lookup"><span data-stu-id="f0fdf-104">Properties</span></span>
 
-| <span data-ttu-id="45f86-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="45f86-105">Property</span></span>          | <span data-ttu-id="45f86-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="45f86-106">Type</span></span>   |
+| <span data-ttu-id="f0fdf-105">Propiedad</span><span class="sxs-lookup"><span data-stu-id="f0fdf-105">Property</span></span>          | <span data-ttu-id="f0fdf-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="f0fdf-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="45f86-107">Recurso</span><span class="sxs-lookup"><span data-stu-id="45f86-107">audioVideo</span></span>        | <span data-ttu-id="45f86-108">Int64</span><span class="sxs-lookup"><span data-stu-id="45f86-108">Int64</span></span>  |
-| <span data-ttu-id="45f86-109">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="45f86-109">reportRefreshDate</span></span> | <span data-ttu-id="45f86-110">Fecha</span><span class="sxs-lookup"><span data-stu-id="45f86-110">Date</span></span>   |
-| <span data-ttu-id="45f86-111">reportDate</span><span class="sxs-lookup"><span data-stu-id="45f86-111">reportDate</span></span>        | <span data-ttu-id="45f86-112">Fecha</span><span class="sxs-lookup"><span data-stu-id="45f86-112">Date</span></span>   |
-| <span data-ttu-id="45f86-113">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="45f86-113">reportPeriod</span></span>      | <span data-ttu-id="45f86-114">String</span><span class="sxs-lookup"><span data-stu-id="45f86-114">String</span></span> |
+| <span data-ttu-id="f0fdf-107">Recurso</span><span class="sxs-lookup"><span data-stu-id="f0fdf-107">audioVideo</span></span>        | <span data-ttu-id="f0fdf-108">Int64</span><span class="sxs-lookup"><span data-stu-id="f0fdf-108">Int64</span></span>  |
+| <span data-ttu-id="f0fdf-109">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="f0fdf-109">reportRefreshDate</span></span> | <span data-ttu-id="f0fdf-110">Fecha</span><span class="sxs-lookup"><span data-stu-id="f0fdf-110">Date</span></span>   |
+| <span data-ttu-id="f0fdf-111">reportDate</span><span class="sxs-lookup"><span data-stu-id="f0fdf-111">reportDate</span></span>        | <span data-ttu-id="f0fdf-112">Fecha</span><span class="sxs-lookup"><span data-stu-id="f0fdf-112">Date</span></span>   |
+| <span data-ttu-id="f0fdf-113">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="f0fdf-113">reportPeriod</span></span>      | <span data-ttu-id="f0fdf-114">String</span><span class="sxs-lookup"><span data-stu-id="f0fdf-114">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="45f86-115">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="45f86-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0fdf-115">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="f0fdf-115">JSON representation</span></span>
 
-<span data-ttu-id="45f86-116">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="45f86-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f0fdf-116">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="f0fdf-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

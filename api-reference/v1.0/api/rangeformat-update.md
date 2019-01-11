@@ -2,64 +2,65 @@
 title: Update rangeformat
 description: Actualizar las propiedades del objeto rangeformat.
 author: lumine2008
-ms.openlocfilehash: 0aea5712db6eb149356e1c3c9db85e5aebcebf17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 410c9fd705f0f91a48a0e0c6f542f4d539bcf914
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344621"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843095"
 ---
-# <a name="update-rangeformat"></a><span data-ttu-id="34889-103">Update rangeformat</span><span class="sxs-lookup"><span data-stu-id="34889-103">Update rangeformat</span></span>
+# <a name="update-rangeformat"></a><span data-ttu-id="d5954-103">Update rangeformat</span><span class="sxs-lookup"><span data-stu-id="d5954-103">Update rangeformat</span></span>
 
-<span data-ttu-id="34889-104">Actualizar las propiedades del objeto rangeformat.</span><span class="sxs-lookup"><span data-stu-id="34889-104">Update the properties of rangeformat object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="34889-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="34889-105">Permissions</span></span>
-<span data-ttu-id="34889-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="34889-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d5954-104">Actualizar las propiedades del objeto rangeformat.</span><span class="sxs-lookup"><span data-stu-id="d5954-104">Update the properties of rangeformat object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5954-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="d5954-105">Permissions</span></span>
+<span data-ttu-id="d5954-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5954-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="34889-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="34889-108">Permission type</span></span>      | <span data-ttu-id="34889-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="34889-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d5954-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="d5954-108">Permission type</span></span>      | <span data-ttu-id="d5954-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="d5954-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="34889-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="34889-110">Delegated (work or school account)</span></span> | <span data-ttu-id="34889-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="34889-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="34889-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="34889-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="34889-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="34889-113">Not supported.</span></span>    |
-|<span data-ttu-id="34889-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="34889-114">Application</span></span> | <span data-ttu-id="34889-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="34889-115">Not supported.</span></span> |
+|<span data-ttu-id="d5954-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="d5954-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d5954-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d5954-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d5954-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d5954-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5954-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d5954-113">Not supported.</span></span>    |
+|<span data-ttu-id="d5954-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="d5954-114">Application</span></span> | <span data-ttu-id="d5954-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d5954-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="34889-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="34889-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5954-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d5954-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
-## <a name="request-headers"></a><span data-ttu-id="34889-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-117">Request headers</span></span>
-| <span data-ttu-id="34889-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="34889-118">Name</span></span>       | <span data-ttu-id="34889-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="34889-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d5954-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-117">Request headers</span></span>
+| <span data-ttu-id="d5954-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="d5954-118">Name</span></span>       | <span data-ttu-id="d5954-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="d5954-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="34889-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="34889-120">Authorization</span></span>  | <span data-ttu-id="34889-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="34889-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="34889-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="34889-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="34889-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="34889-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="d5954-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5954-120">Authorization</span></span>  | <span data-ttu-id="d5954-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d5954-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5954-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="d5954-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="d5954-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="d5954-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="34889-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-126">Request body</span></span>
-<span data-ttu-id="34889-p104">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="34889-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5954-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-126">Request body</span></span>
+<span data-ttu-id="d5954-p104">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="d5954-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="34889-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="34889-130">Property</span></span>     | <span data-ttu-id="34889-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="34889-131">Type</span></span>   |<span data-ttu-id="34889-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="34889-132">Description</span></span>|
+| <span data-ttu-id="d5954-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="d5954-130">Property</span></span>     | <span data-ttu-id="d5954-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d5954-131">Type</span></span>   |<span data-ttu-id="d5954-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="d5954-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="34889-133">columnWidth</span><span class="sxs-lookup"><span data-stu-id="34889-133">columnWidth</span></span>|<span data-ttu-id="34889-134">double</span><span class="sxs-lookup"><span data-stu-id="34889-134">double</span></span>|<span data-ttu-id="34889-p105">Obtiene o establece el ancho de todas las columnas del rango. Si los anchos de columna no son uniformes, se devolverá null.</span><span class="sxs-lookup"><span data-stu-id="34889-p105">Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.</span></span>|
-|<span data-ttu-id="34889-137">horizontalAlignment</span><span class="sxs-lookup"><span data-stu-id="34889-137">horizontalAlignment</span></span>|<span data-ttu-id="34889-138">string</span><span class="sxs-lookup"><span data-stu-id="34889-138">string</span></span>|<span data-ttu-id="34889-139">Representa la alineación horizontal del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="34889-139">Represents the horizontal alignment for the specified object.</span></span> <span data-ttu-id="34889-140">Los valores posibles son: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="34889-140">The possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span></span>|
-|<span data-ttu-id="34889-141">rowHeight</span><span class="sxs-lookup"><span data-stu-id="34889-141">rowHeight</span></span>|<span data-ttu-id="34889-142">double</span><span class="sxs-lookup"><span data-stu-id="34889-142">double</span></span>|<span data-ttu-id="34889-p107">Obtiene o establece el alto de todas las filas del rango. Si los altos de fila no son uniformes, se devolverá null.</span><span class="sxs-lookup"><span data-stu-id="34889-p107">Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.</span></span>|
-|<span data-ttu-id="34889-145">verticalAlignment</span><span class="sxs-lookup"><span data-stu-id="34889-145">verticalAlignment</span></span>|<span data-ttu-id="34889-146">string</span><span class="sxs-lookup"><span data-stu-id="34889-146">string</span></span>|<span data-ttu-id="34889-147">Representa la alineación vertical del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="34889-147">Represents the vertical alignment for the specified object.</span></span> <span data-ttu-id="34889-148">Los valores posibles son: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="34889-148">The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span></span>|
-|<span data-ttu-id="34889-149">wrapText</span><span class="sxs-lookup"><span data-stu-id="34889-149">wrapText</span></span>|<span data-ttu-id="34889-150">boolean</span><span class="sxs-lookup"><span data-stu-id="34889-150">boolean</span></span>|<span data-ttu-id="34889-p109">Indica si Excel ajusta el texto del objeto. Un valor null indica que el intervalo no tiene una configuración de ajuste uniforme.</span><span class="sxs-lookup"><span data-stu-id="34889-p109">Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting</span></span>|
+|<span data-ttu-id="d5954-133">columnWidth</span><span class="sxs-lookup"><span data-stu-id="d5954-133">columnWidth</span></span>|<span data-ttu-id="d5954-134">double</span><span class="sxs-lookup"><span data-stu-id="d5954-134">double</span></span>|<span data-ttu-id="d5954-p105">Obtiene o establece el ancho de todas las columnas del rango. Si los anchos de columna no son uniformes, se devolverá null.</span><span class="sxs-lookup"><span data-stu-id="d5954-p105">Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.</span></span>|
+|<span data-ttu-id="d5954-137">horizontalAlignment</span><span class="sxs-lookup"><span data-stu-id="d5954-137">horizontalAlignment</span></span>|<span data-ttu-id="d5954-138">string</span><span class="sxs-lookup"><span data-stu-id="d5954-138">string</span></span>|<span data-ttu-id="d5954-139">Representa la alineación horizontal del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="d5954-139">Represents the horizontal alignment for the specified object.</span></span> <span data-ttu-id="d5954-140">Los valores posibles son: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="d5954-140">The possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.</span></span>|
+|<span data-ttu-id="d5954-141">rowHeight</span><span class="sxs-lookup"><span data-stu-id="d5954-141">rowHeight</span></span>|<span data-ttu-id="d5954-142">double</span><span class="sxs-lookup"><span data-stu-id="d5954-142">double</span></span>|<span data-ttu-id="d5954-p107">Obtiene o establece el alto de todas las filas del rango. Si los altos de fila no son uniformes, se devolverá null.</span><span class="sxs-lookup"><span data-stu-id="d5954-p107">Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.</span></span>|
+|<span data-ttu-id="d5954-145">verticalAlignment</span><span class="sxs-lookup"><span data-stu-id="d5954-145">verticalAlignment</span></span>|<span data-ttu-id="d5954-146">string</span><span class="sxs-lookup"><span data-stu-id="d5954-146">string</span></span>|<span data-ttu-id="d5954-147">Representa la alineación vertical del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="d5954-147">Represents the vertical alignment for the specified object.</span></span> <span data-ttu-id="d5954-148">Los valores posibles son: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span><span class="sxs-lookup"><span data-stu-id="d5954-148">The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.</span></span>|
+|<span data-ttu-id="d5954-149">wrapText</span><span class="sxs-lookup"><span data-stu-id="d5954-149">wrapText</span></span>|<span data-ttu-id="d5954-150">boolean</span><span class="sxs-lookup"><span data-stu-id="d5954-150">boolean</span></span>|<span data-ttu-id="d5954-p109">Indica si Excel ajusta el texto del objeto. Un valor null indica que el intervalo no tiene una configuración de ajuste uniforme.</span><span class="sxs-lookup"><span data-stu-id="d5954-p109">Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting</span></span>|
 
-## <a name="response"></a><span data-ttu-id="34889-153">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d5954-153">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-153">Response</span></span>
 
-<span data-ttu-id="34889-154">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y el objeto [WorkbookRangeFormat](../resources/rangeformat.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="34889-154">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="34889-155">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="34889-155">Example</span></span>
+<span data-ttu-id="d5954-154">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y el objeto [WorkbookRangeFormat](../resources/rangeformat.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d5954-154">If successful, this method returns a `200 OK` response code and updated [WorkbookRangeFormat](../resources/rangeformat.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d5954-155">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d5954-155">Example</span></span>
 
-### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a><span data-ttu-id="34889-156">Actualizar las propiedades de fuente, el relleno y el formato de tres celdas de la tabla</span><span class="sxs-lookup"><span data-stu-id="34889-156">Update the format, fill, and font properties in three table cells</span></span>
+### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a><span data-ttu-id="d5954-156">Actualizar las propiedades de fuente, el relleno y el formato de tres celdas de la tabla</span><span class="sxs-lookup"><span data-stu-id="d5954-156">Update the format, fill, and font properties in three table cells</span></span>
 
-<span data-ttu-id="34889-157">Los ejemplos siguientes muestran cómo actualizar las propiedades de las propiedades [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md)y [WorkbookRangeFont](../resources/rangefont.md) de un intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="34889-157">The following examples demonstrate how to update properties of the [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md), and [WorkbookRangeFont](../resources/rangefont.md) properties of a specified range.</span></span>
+<span data-ttu-id="d5954-157">Los ejemplos siguientes muestran cómo actualizar las propiedades de las propiedades [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md)y [WorkbookRangeFont](../resources/rangefont.md) de un intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="d5954-157">The following examples demonstrate how to update properties of the [WorkbookRangeFormat](../resources/rangeformat.md), [WorkbookRangeFill](../resources/rangefill.md), and [WorkbookRangeFont](../resources/rangefont.md) properties of a specified range.</span></span>
 
-<span data-ttu-id="34889-158">El resultado de este conjunto de solicitudes es una tabla con tres celdas con un formato como el de las tres celdas superiores de la siguiente imagen.</span><span class="sxs-lookup"><span data-stu-id="34889-158">The result of this set of requests is a table with three cells formatted like the top three cells in the image below.</span></span>
+<span data-ttu-id="d5954-158">El resultado de este conjunto de solicitudes es una tabla con tres celdas con un formato como el de las tres celdas superiores de la siguiente imagen.</span><span class="sxs-lookup"><span data-stu-id="d5954-158">The result of this set of requests is a table with three cells formatted like the top three cells in the image below.</span></span>
 
 ![Tabla de gráfico de Excel con tres celdas en las que se han actualizado las propiedades de fuente, el relleno y el formato.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-##### <a name="request"></a><span data-ttu-id="34889-160">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-160">Request</span></span>
-<span data-ttu-id="34889-161">Esta solicitud actualiza la alineación vertical, el alto de fila y el alto de columna de la primera celda.</span><span class="sxs-lookup"><span data-stu-id="34889-161">This request updates the vertical alignment, row height, and column height of the first cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-160">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-160">Request</span></span>
+<span data-ttu-id="d5954-161">Esta solicitud actualiza la alineación vertical, el alto de fila y el alto de columna de la primera celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-161">This request updates the vertical alignment, row height, and column height of the first cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -76,8 +77,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-162">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-162">Response</span></span>
-<span data-ttu-id="34889-p110">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-162">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-162">Response</span></span>
+<span data-ttu-id="d5954-p110">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,8 +97,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="34889-166">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-166">Request</span></span>
-<span data-ttu-id="34889-167">Esta solicitud actualiza el estilo de fuente, el tamaño y el color de la primera celda.</span><span class="sxs-lookup"><span data-stu-id="34889-167">This request updates the font style, size, and color of the first cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-166">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-166">Request</span></span>
+<span data-ttu-id="d5954-167">Esta solicitud actualiza el estilo de fuente, el tamaño y el color de la primera celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-167">This request updates the font style, size, and color of the first cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -113,8 +114,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-168">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-168">Response</span></span>
-<span data-ttu-id="34889-p111">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-168">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-168">Response</span></span>
+<span data-ttu-id="d5954-p111">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,8 +135,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="34889-172">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-172">Request</span></span>
-<span data-ttu-id="34889-173">Esta solicitud actualiza el color de fondo de la primera celda.</span><span class="sxs-lookup"><span data-stu-id="34889-173">This request updates the background color of the first cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-172">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-172">Request</span></span>
+<span data-ttu-id="d5954-173">Esta solicitud actualiza el color de fondo de la primera celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-173">This request updates the background color of the first cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -149,8 +150,8 @@ Content-type: application/json
   "color": "#FF0000"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-174">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-174">Response</span></span>
-<span data-ttu-id="34889-p112">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p112">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-174">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-174">Response</span></span>
+<span data-ttu-id="d5954-p112">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p112">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,8 +165,8 @@ Content-type: application/json
     "color": "#FF0000"
 }
 ```
-##### <a name="request"></a><span data-ttu-id="34889-178">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-178">Request</span></span>
-<span data-ttu-id="34889-179">Esta solicitud actualiza la alineación vertical, la alineación horizontal, el alto de fila y el alto de la columna de la segunda celda.</span><span class="sxs-lookup"><span data-stu-id="34889-179">This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-178">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-178">Request</span></span>
+<span data-ttu-id="d5954-179">Esta solicitud actualiza la alineación vertical, la alineación horizontal, el alto de fila y el alto de la columna de la segunda celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-179">This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -183,8 +184,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-180">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-180">Response</span></span>
-<span data-ttu-id="34889-p113">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-180">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-180">Response</span></span>
+<span data-ttu-id="d5954-p113">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -203,8 +204,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="34889-184">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-184">Request</span></span>
-<span data-ttu-id="34889-185">Esta solicitud actualiza el estilo de fuente y el tamaño de la segunda celda.</span><span class="sxs-lookup"><span data-stu-id="34889-185">This request updates the font style and size of the second cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-184">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-184">Request</span></span>
+<span data-ttu-id="d5954-185">Esta solicitud actualiza el estilo de fuente y el tamaño de la segunda celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-185">This request updates the font style and size of the second cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -219,8 +220,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-186">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-186">Response</span></span>
-<span data-ttu-id="34889-p114">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-186">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-186">Response</span></span>
+<span data-ttu-id="d5954-p114">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -240,8 +241,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="34889-190">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-190">Request</span></span>
-<span data-ttu-id="34889-191">Esta solicitud actualiza el color de fondo de la segunda celda.</span><span class="sxs-lookup"><span data-stu-id="34889-191">This request updates the background color of the second cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-190">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-190">Request</span></span>
+<span data-ttu-id="d5954-191">Esta solicitud actualiza el color de fondo de la segunda celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-191">This request updates the background color of the second cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -255,8 +256,8 @@ Content-type: application/json
   "color": "#00FF00"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-192">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-192">Response</span></span>
-<span data-ttu-id="34889-p115">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p115">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-192">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-192">Response</span></span>
+<span data-ttu-id="d5954-p115">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p115">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -271,8 +272,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="34889-196">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-196">Request</span></span>
-<span data-ttu-id="34889-197">Esta solicitud actualiza la alineación horizontal, la alineación vertical, el alto de fila y el alto de la columna de la tercera celda.</span><span class="sxs-lookup"><span data-stu-id="34889-197">This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-196">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-196">Request</span></span>
+<span data-ttu-id="d5954-197">Esta solicitud actualiza la alineación horizontal, la alineación vertical, el alto de fila y el alto de la columna de la tercera celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-197">This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -290,8 +291,8 @@ Content-type: application/json
   "wrapText": false
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-198">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-198">Response</span></span>
-<span data-ttu-id="34889-p116">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p116">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-198">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-198">Response</span></span>
+<span data-ttu-id="d5954-p116">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p116">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -310,8 +311,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="34889-202">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-202">Request</span></span>
-<span data-ttu-id="34889-203">Esta solicitud actualiza el estilo de fuente, el tamaño y el color de la tercera celda.</span><span class="sxs-lookup"><span data-stu-id="34889-203">This request updates the font style, size, and color of the third cell.</span></span> <span data-ttu-id="34889-204">Tenga en cuenta que la propiedad de subrayado toma como valores **simple** o **doble**.</span><span class="sxs-lookup"><span data-stu-id="34889-204">Note that the underline property takes **Single** or **Double** as values.</span></span>
+##### <a name="request"></a><span data-ttu-id="d5954-202">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-202">Request</span></span>
+<span data-ttu-id="d5954-203">Esta solicitud actualiza el estilo de fuente, el tamaño y el color de la tercera celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-203">This request updates the font style, size, and color of the third cell.</span></span> <span data-ttu-id="d5954-204">Tenga en cuenta que la propiedad de subrayado toma como valores **simple** o **doble**.</span><span class="sxs-lookup"><span data-stu-id="d5954-204">Note that the underline property takes **Single** or **Double** as values.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -327,8 +328,8 @@ Content-type: application/json
   "size": 26
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-205">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-205">Response</span></span>
-<span data-ttu-id="34889-p118">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p118">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-205">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-205">Response</span></span>
+<span data-ttu-id="d5954-p118">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p118">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -348,8 +349,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="34889-209">Solicitud</span><span class="sxs-lookup"><span data-stu-id="34889-209">Request</span></span>
-<span data-ttu-id="34889-210">Esta solicitud actualiza el color de fondo de la tercera celda.</span><span class="sxs-lookup"><span data-stu-id="34889-210">This request updates the background color of the third cell.</span></span> 
+##### <a name="request"></a><span data-ttu-id="d5954-209">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5954-209">Request</span></span>
+<span data-ttu-id="d5954-210">Esta solicitud actualiza el color de fondo de la tercera celda.</span><span class="sxs-lookup"><span data-stu-id="d5954-210">This request updates the background color of the third cell.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -363,8 +364,8 @@ Content-type: application/json
   "color": "#0000FF"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="34889-211">Respuesta</span><span class="sxs-lookup"><span data-stu-id="34889-211">Response</span></span>
-<span data-ttu-id="34889-p119">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="34889-p119">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5954-211">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5954-211">Response</span></span>
+<span data-ttu-id="d5954-p119">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5954-p119">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
