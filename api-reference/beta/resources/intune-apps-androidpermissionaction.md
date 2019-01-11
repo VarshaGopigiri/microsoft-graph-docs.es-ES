@@ -2,30 +2,31 @@
 title: tipo de recurso androidPermissionAction
 description: Asignación entre un permiso de aplicación de Android y la acción Android debe realizar cuando se solicita ese permiso.
 author: tfitzmac
-ms.openlocfilehash: 90117b30dae765151e79d8ad1c2ae1afaa5a42ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: daf72bbc5f8d1e32480adeda72c3f759255f54db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860539"
 ---
-# <a name="androidpermissionaction-resource-type"></a><span data-ttu-id="8e662-103">tipo de recurso androidPermissionAction</span><span class="sxs-lookup"><span data-stu-id="8e662-103">androidPermissionAction resource type</span></span>
+# <a name="androidpermissionaction-resource-type"></a><span data-ttu-id="132bc-103">tipo de recurso androidPermissionAction</span><span class="sxs-lookup"><span data-stu-id="132bc-103">androidPermissionAction resource type</span></span>
 
-> <span data-ttu-id="8e662-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="8e662-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8e662-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="8e662-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="132bc-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="132bc-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="132bc-105">No se permite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="132bc-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="8e662-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="8e662-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="132bc-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="132bc-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="8e662-107">Asignación entre un permiso de aplicación de Android y la acción Android debe realizar cuando se solicita ese permiso.</span><span class="sxs-lookup"><span data-stu-id="8e662-107">Mapping between an Android app permission and the action Android should take when that permission is requested.</span></span>
-## <a name="properties"></a><span data-ttu-id="8e662-108">Propiedades</span><span class="sxs-lookup"><span data-stu-id="8e662-108">Properties</span></span>
-|<span data-ttu-id="8e662-109">Propiedad</span><span class="sxs-lookup"><span data-stu-id="8e662-109">Property</span></span>|<span data-ttu-id="8e662-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="8e662-110">Type</span></span>|<span data-ttu-id="8e662-111">Descripción</span><span class="sxs-lookup"><span data-stu-id="8e662-111">Description</span></span>|
+<span data-ttu-id="132bc-107">Asignación entre un permiso de aplicación de Android y la acción Android debe realizar cuando se solicita ese permiso.</span><span class="sxs-lookup"><span data-stu-id="132bc-107">Mapping between an Android app permission and the action Android should take when that permission is requested.</span></span>
+## <a name="properties"></a><span data-ttu-id="132bc-108">Propiedades</span><span class="sxs-lookup"><span data-stu-id="132bc-108">Properties</span></span>
+|<span data-ttu-id="132bc-109">Propiedad</span><span class="sxs-lookup"><span data-stu-id="132bc-109">Property</span></span>|<span data-ttu-id="132bc-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="132bc-110">Type</span></span>|<span data-ttu-id="132bc-111">Description</span><span class="sxs-lookup"><span data-stu-id="132bc-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8e662-112">permiso</span><span class="sxs-lookup"><span data-stu-id="8e662-112">permission</span></span>|<span data-ttu-id="8e662-113">String</span><span class="sxs-lookup"><span data-stu-id="8e662-113">String</span></span>|<span data-ttu-id="8e662-114">Cadena de permiso Android, definida en la documentación oficial de Android.</span><span class="sxs-lookup"><span data-stu-id="8e662-114">Android permission string, defined in the official Android documentation.</span></span>  <span data-ttu-id="8e662-115">Ejemplo 'android.permission.READ_CONTACTS'.</span><span class="sxs-lookup"><span data-stu-id="8e662-115">Example 'android.permission.READ_CONTACTS'.</span></span>|
-|<span data-ttu-id="8e662-116">action</span><span class="sxs-lookup"><span data-stu-id="8e662-116">action</span></span>|[<span data-ttu-id="8e662-117">androidPermissionActionType</span><span class="sxs-lookup"><span data-stu-id="8e662-117">androidPermissionActionType</span></span>](../resources/intune-apps-androidpermissionactiontype.md)|<span data-ttu-id="8e662-118">Tipo de acción de permiso Android.</span><span class="sxs-lookup"><span data-stu-id="8e662-118">Type of Android permission action.</span></span> <span data-ttu-id="8e662-119">Los valores posibles son: `prompt`, `autoGrant` y `autoDeny`.</span><span class="sxs-lookup"><span data-stu-id="8e662-119">Possible values are: `prompt`, `autoGrant`, `autoDeny`.</span></span>|
+|<span data-ttu-id="132bc-112">permiso</span><span class="sxs-lookup"><span data-stu-id="132bc-112">permission</span></span>|<span data-ttu-id="132bc-113">Cadena</span><span class="sxs-lookup"><span data-stu-id="132bc-113">String</span></span>|<span data-ttu-id="132bc-114">Cadena de permiso Android, definida en la documentación oficial de Android.</span><span class="sxs-lookup"><span data-stu-id="132bc-114">Android permission string, defined in the official Android documentation.</span></span>  <span data-ttu-id="132bc-115">Ejemplo 'android.permission.READ_CONTACTS'.</span><span class="sxs-lookup"><span data-stu-id="132bc-115">Example 'android.permission.READ_CONTACTS'.</span></span>|
+|<span data-ttu-id="132bc-116">action</span><span class="sxs-lookup"><span data-stu-id="132bc-116">action</span></span>|[<span data-ttu-id="132bc-117">androidPermissionActionType</span><span class="sxs-lookup"><span data-stu-id="132bc-117">androidPermissionActionType</span></span>](../resources/intune-apps-androidpermissionactiontype.md)|<span data-ttu-id="132bc-118">Tipo de acción de permiso Android.</span><span class="sxs-lookup"><span data-stu-id="132bc-118">Type of Android permission action.</span></span> <span data-ttu-id="132bc-119">Los valores posibles son: `prompt`, `autoGrant` y `autoDeny`.</span><span class="sxs-lookup"><span data-stu-id="132bc-119">Possible values are: `prompt`, `autoGrant`, `autoDeny`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="8e662-120">Relaciones</span><span class="sxs-lookup"><span data-stu-id="8e662-120">Relationships</span></span>
-<span data-ttu-id="8e662-121">Ninguna</span><span class="sxs-lookup"><span data-stu-id="8e662-121">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="8e662-122">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="8e662-122">JSON Representation</span></span>
-<span data-ttu-id="8e662-123">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="8e662-123">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="132bc-120">Relaciones</span><span class="sxs-lookup"><span data-stu-id="132bc-120">Relationships</span></span>
+<span data-ttu-id="132bc-121">Ninguna</span><span class="sxs-lookup"><span data-stu-id="132bc-121">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="132bc-122">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="132bc-122">JSON Representation</span></span>
+<span data-ttu-id="132bc-123">Aquí tiene una representación JSON del recurso.</span><span class="sxs-lookup"><span data-stu-id="132bc-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidPermissionAction"
