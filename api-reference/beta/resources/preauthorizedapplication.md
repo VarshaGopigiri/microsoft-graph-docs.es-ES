@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso preAuthorizedApplication
 description: Representa una aplicación y los permisos solicitados para consentimiento implícito. Requiere un administrador que se ha proporcionado el consentimiento a la aplicación. preAuthorizedApplications no requieren el usuario da su consentimiento a los permisos solicitados. Los permisos enumerados en preAuthorizedApplications no requieren el consentimiento de usuario. Sin embargo, los permisos solicitados adicionales no aparece en preAuthorizedApplications requieren el consentimiento de usuario.
-ms.openlocfilehash: d299aefcac541407e0e42d0b0933e903afa3e84d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa26b8046b81db70300b8ff40abcbd2b84f3f0c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832798"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>tipo de recurso preAuthorizedApplication
 
@@ -16,7 +17,7 @@ Representa una aplicación y los permisos solicitados para consentimiento implí
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------------|:--------|:----------|
 |appId|cadena| El identificador único para la aplicación. |
 |permissionIds|Colección String| Se requiere el identificador único para el [publishedPermissionScope](permissionscope.md) o la [función de aplicación](approle.md) de la aplicación. |

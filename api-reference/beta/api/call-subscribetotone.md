@@ -2,12 +2,13 @@
 title: 'llamar a: subscribeToTone'
 description: Suscribirse a DTMF (multifrecuencia de tono dual señalización). Esto le permite recibir una notificación cuando el usuario presiona teclas en un teléfono 'teclado'.
 author: VinodRavichandran
-ms.openlocfilehash: 82f7632736dc187fae1313224a6cb6f4807e0dd1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 226edd59e7d826dd7304ae45ec58c360e8ef3191
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833435"
 ---
 # <a name="call-subscribetotone"></a>llamar a: subscribeToTone
 
@@ -39,9 +40,9 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    | Descripción |
+| Parámetro      | Tipo    | Description |
 |:---------------|:--------|:------------|
-| clientContext  | String  | El contexto de cliente. |
+| clientContext  | Cadena  | El contexto de cliente. |
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta y un encabezado de ubicación con un uri para el [commsOperation](../resources/commsoperation.md) creado para esta solicitud.

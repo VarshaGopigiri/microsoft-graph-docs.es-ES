@@ -1,12 +1,13 @@
 ---
 title: 'grupo: validateProperties'
 description: Validar si el alias de correo o de nombre para mostrar de un grupo de Office 365 cumplen con las políticas de nomenclatura. Los clientes pueden usar la API para determinar si un nombre para mostrar o alias de correo sean válido antes de intentar **Actualizar** un grupo de Office 365. Para validar las propiedades antes de crear un grupo, utilice la función validateProperties para los objetos de Active directory.
-ms.openlocfilehash: d7f2767908e6cbf9116bec769a1abc32731e4758
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833904"
 ---
 # <a name="group-validateproperties"></a>grupo: validateProperties
 
@@ -47,8 +48,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|displayName|String| El nombre para mostrar del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
-|mailNickname|String| El alias de correo del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
+|displayName|Cadena| El nombre para mostrar del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
+|mailNickname|Cadena| El alias de correo del grupo para validar. La propiedad no es necesaria individualmente. Sin embargo, al menos una propiedad (displayName o mailNickname) es necesaria. |
 |onBehalfOfUserId|Guid| El identificador de objeto del usuario para suplantar al llamar a la API. Los resultados de validación son para los atributos y los roles de la onBehalfOfUserId. |
 
 ## <a name="response"></a>Respuesta

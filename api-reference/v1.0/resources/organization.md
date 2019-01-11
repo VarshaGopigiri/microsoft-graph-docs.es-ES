@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso organization
 description: " crear y eliminar no son compatibles. Se hereda de directoryObject."
-ms.openlocfilehash: 5651e300c4ebfc7adbbccc7aef485a43263b4830
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Priority
+ms.openlocfilehash: 532ffc15e4e594f353bc125c47dd889525f49045
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771740"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833652"
 ---
 # <a name="organization-resource-type"></a>Tipo de recurso organization
 
@@ -38,7 +39,7 @@ Este recurso le permite agregar sus propios datos a las propiedades personalizad
 |createdDateTime|DateTimeOffset| Marca de hora de cuándo se creó la organización. El valor no puede modificarse y se rellena automáticamente cuando se crea la organización. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |
 | deletedDateTime                    | DateTimeOffset                                                    | Representa la fecha y hora de cuando se ha eliminado el inquilino de Azure AD con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.                                                                                     |
 | displayName                          | String                                                            | El nombre para mostrar del inquilino.                                                                                                                                                                                                                                                     |
-| id                                   | String                                                            | El identificador de inquilino, un identificador único que representa la organización (o inquilino). Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.                                                                                                                                                            |
+| id                                   | Cadena                                                            | El identificador de inquilino, un identificador único que representa la organización (o inquilino). Heredado de [directoryObject](directoryobject.md). Clave. No admite valores NULL. Solo lectura.                                                                                                                                                            |
 |isMultipleDataLocationsForServicesEnabled|Booleano|**true** si la organización está habilitado; Multi-Geo **false** si la organización no está habilitado para Multi-ubican; **null** (valor predeterminado). Solo lectura. Para obtener más información, vea [OneDrive en línea Multi-ubican](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 | marketingNotificationEmails          | Colección String                                                 | No admite valores NULL.                                                                                                                                                                                                                                                                        |
 | onPremisesLastSyncDateTime               | DateTimeOffset                                                    | La fecha y hora en que el inquilino se ha sincronizado por última vez con el directorio local. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura. |

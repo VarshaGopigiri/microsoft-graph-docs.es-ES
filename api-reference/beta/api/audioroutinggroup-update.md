@@ -2,12 +2,13 @@
 title: Actualizar el grupo de enrutamiento de audio
 description: Modificar orígenes y receptores de un audioRoutingGroup.
 author: VinodRavichandran
-ms.openlocfilehash: f1fac21e2d52818ee068bfe64e8db7853332d993
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b12d93d3cd8255cb735beaba7c78684a2b3b3a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833841"
 ---
 # <a name="update-audio-routing-group"></a>Actualizar el grupo de enrutamiento de audio
 
@@ -39,7 +40,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad       | Tipo    |Descripción|
+| Propiedad       | Tipo    |Description|
 |:---------------|:--------|:----------|
 | receptores de | Colección String | Los participantes de destino en la audioRoutingGroup. |
 | routingMode | String | Los valores posibles son: `oneToOne` y `multicast`. |

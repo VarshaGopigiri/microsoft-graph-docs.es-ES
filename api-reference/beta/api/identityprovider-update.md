@@ -1,12 +1,13 @@
 ---
 title: Actualizar identityProvider
 description: Actualizar las propiedades en un identityProvider existente.
-ms.openlocfilehash: b89b0f50ef2f62625a1707c3e77c32865adaec67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebe49fb562f77004edfa3504130fbf50f4d40003
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832812"
 ---
 # <a name="update-identityprovider"></a>Actualizar identityProvider
 
@@ -44,11 +45,11 @@ PATCH /identityProviders/{id}
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con una o varias propiedades que necesitan actualizarse.
 
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---------------|:--------|:----------|
-|clientId|String|El identificador de cliente para la aplicación. Este es el identificador de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
-|clientSecret|String|El secreto de cliente para la aplicación. Este es el secreto de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
-|name|String|El nombre para mostrar del proveedor de identidad.|
+|clientId|Cadena|El identificador de cliente para la aplicación. Este es el identificador de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
+|clientSecret|Cadena|El secreto de cliente para la aplicación. Este es el secreto de cliente que se obtuvieron cuando se registra la aplicación con el proveedor de identidad.|
+|name|Cadena|El nombre para mostrar del proveedor de identidad.|
 
 ## <a name="response"></a>Respuesta
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso parseExpressionResponse
 description: 'Representa la respuesta de la [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) acción.'
-ms.openlocfilehash: 625df0ca16135eaa35c5b679c79dea582c4012e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 550a46b0c27c2ca8d2d4c01baa975d8a204546f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832952"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>tipo de recurso parseExpressionResponse
 
@@ -15,7 +16,7 @@ ms.locfileid: "27090192"
 Representa la respuesta de la [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) acción.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
 |error|OData.Error|Detalles del error, si como resultado de la evaluación de expresiones en un error.|
 |evaluationResult|Colección String|Una colección de valores generados por la evaluación de la expresión.|

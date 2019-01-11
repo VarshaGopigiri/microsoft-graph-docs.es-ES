@@ -2,12 +2,13 @@
 title: tipo de recurso deviceManagementScriptGroupAssignment
 description: Contiene propiedades que se usan para asignar una secuencia de comandos de administración de dispositivos a un grupo.
 author: tfitzmac
-ms.openlocfilehash: 446e293ee3d4c0cc2071f6a93e01bcdf8cf72a2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6dfeca71b20ffae27f99fdd4af0909332338b4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832210"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>tipo de recurso deviceManagementScriptGroupAssignment
 
@@ -28,8 +29,8 @@ Contiene propiedades que se usan para asignar una secuencia de comandos de admin
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad de asignación de grupo de secuencia de comandos de dispositivo administración.|
-|targetGroupId|String|El identificador de grupo de Active Directory de Azure, nuestro destino son la secuencia de comandos.|
+|id|Cadena|Clave de la entidad de asignación de grupo de secuencia de comandos de dispositivo administración.|
+|targetGroupId|Cadena|El identificador de grupo de Active Directory de Azure, nuestro destino son la secuencia de comandos.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerTask
 description: El recurso **plannerTask** representa un plan de Office 365. Una tarea de Planner está contenida en una plan y puede asignarse a un depósito en un plan. Cada objeto de la tarea tiene un objeto details (detalles), que puede contener más información sobre la tarea. Vea Resumen para obtener más información sobre las relaciones entre grupo, plan y tarea.
-ms.openlocfilehash: 75fedd01913d89121912b336420d4cc063165250
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a4c9ffc9c3bcd3e4a7b9df3348cdfe355a648a8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031902"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832259"
 ---
 # <a name="plannertask-resource-type"></a>Tipo de recurso plannerTask
 
@@ -26,25 +27,25 @@ El recurso **plannerTask** representa un plan de Office 365. Una tarea de Planne
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Número de elementos de la lista de comprobación con el valor establecido en "false", que representan elementos incompletos.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|Categorías a las que se ha aplicado la tarea. Consulte [las categorías aplicadas](plannerappliedcategories.md) para ver los posibles valores.|
-|assigneePriority|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
+|assigneePriority|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|Conjunto de usuarios al que se asigna la tarea.|
-|bucketId|String|Identificador de cubo al que pertenece la tarea. Debe estar en el plan de que la tarea se encuentra en el cubo. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio. |
+|bucketId|Cadena|Identificador de cubo al que pertenece la tarea. Debe estar en el plan de que la tarea se encuentra en el cubo. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio. |
 |checklistItemCount|Int32|Número de elementos de lista de comprobación que están presentes en la tarea.|
 |completedBy|[identitySet](identityset.md)|Identidad del usuario que ha completado la tarea.|
 |completedDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que `'percentComplete'` de la tarea se establece en `'100'`. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|conversationThreadId|String|Id. de subproceso de la conversación en la tarea. Es el id. del objeto de subproceso de conversación creado en el grupo.|
+|conversationThreadId|Cadena|Id. de subproceso de la conversación en la tarea. Es el id. del objeto de subproceso de conversación creado en el grupo.|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario que ha creado la tarea.|
 |createdDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se crea la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|Fecha y hora en que vence la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Boolean|Solo lectura. El valor es `true` si el objeto de detalles de la tarea tiene una descripción que no está vacía y `false` lo contrario.|
-|id|String|Solo lectura. Identificador de la tarea. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
-|orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
+|id|Cadena|Solo lectura. Identificador de la tarea. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
+|orderHint|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
 |percentComplete|Int32|Porcentaje de finalización de la tarea. Si se establece en `100`, la tarea se considera finalizada. |
 |planId|Cadena|Id. de plan al que pertenece la tarea.|
 |previewType|plannerPreviewType|Esto establece el tipo de vista previa que se muestra en la tarea. Los valores posibles son: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Número de referencias externas que existen en la tarea.|
 |startDateTime|DateTimeOffset|Fecha y hora en que comienza la tarea. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenecen a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|title|String|Título de la tarea.|
+|title|Cadena|Título de la tarea.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

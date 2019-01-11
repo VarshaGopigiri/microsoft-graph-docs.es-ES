@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de directiva
 description: 'Representa una directiva de Azure AD. Las directivas son las reglas personalizadas que se pueden aplicar en las aplicaciones, entidades de seguridad de servicio, grupos o que están asignados a toda la organización. Actualmente, sólo está disponible un tipo de directiva:'
-ms.openlocfilehash: 05f4539d069c290a410d313102eeb7f87ce7eac2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc82dc32056b9da5c2ca1144e58b5b9e1fe326f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830929"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de directiva
 
@@ -30,12 +31,12 @@ Esta directiva se describe con más detalle a continuación.
 |[Directivas de la lista asignada](../api/policy-list-assigned.md)|Colección de directivas|Obtener todos los objetos de directiva asignados a una aplicación o un servicio de entidad de seguridad.|
 
 ### <a name="common-properties"></a>Propiedades comunes
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|definición|String|La versión de la directiva específica de la cadena. Véalo a continuación. Necesario.|
-|displayName|String|Un nombre personalizado para la directiva. Obligatorio.|
+|definición|Cadena|La versión de la directiva específica de la cadena. Véalo a continuación. Necesario.|
+|displayName|Cadena|Un nombre personalizado para la directiva. Necesario.|
 |IsOrganizationDefault|Booleano|Si establece en true, se activa esta directiva. Puede haber muchas directivas para el mismo tipo de directiva, pero se puede activar sólo uno como el valor predeterminado de la organización. Opcional, valor predeterminado es false.|
-|type|String|Especifica el tipo de directiva. Actualmente debe ser "TokenLifetimePolicy". Obligatorio.|
+|type|Cadena|Especifica el tipo de directiva. Actualmente debe ser "TokenLifetimePolicy". Necesario.|
 
 #### <a name="common-relationships"></a>Relaciones comunes
 |Relación|Tipo|Descripción|
@@ -57,15 +58,15 @@ Las siguientes propiedades de formulario del objeto JSON que representa una dire
 
 >Nota: Los valores máximos para las propiedades que se indican en "días" están quedando sin el número de días como indica el icono de 1 segundo. Por ejemplo, se especifica el valor máximo de 1 días como "23: 59:59".
 
-| Propiedad     | Tipo   |Descripción| Valor mínimo | Valor máximo | Valor predeterminado|
+| Propiedad     | Tipo   |Description| Valor mínimo | Valor máximo | Valor predeterminado|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|Controla cuánto **acceso y los tokens de identificador** se consideran válido.|10 minutos|1 día|1 hora|
-|MaxInactiveTime|String|Controla la antigüedad máxima que puede ser un token de actualización antes de que un cliente ya no puede utilizar para recuperar un par de token de acceso y actualización nueva para obtener acceso a un recurso.|10 minutos|90 días|14 días|
-|MaxAgeSingleFactor|String|Controles de cuánto un usuario puede seguir a usar tokens de actualización para obtener acceso o actualiza los nuevo pares de símbolo (token) después de la última vez que les autenticado correctamente con solo un factor único. Dado que solo factor se considera menos segura que la autenticación multifactor, se recomienda que esta directiva se establece en un valor igual o menor a la MultiFactorRefreshTokenMaxAge.|10 minutos|hasta revocado|365 días o hasta que revocado|
-|MaxAgeMultiFactor|String|Controles de cuánto un usuario puede seguir a usar tokens de actualización para obtener acceso o actualiza los nuevo pares de símbolo (token) después de la última vez que les autenticado correctamente con varios factores.|10 minutos|hasta revocado|365 días o hasta que revocado|
-|MaxAgeSessionSingleFactor|String|Controles de cuánto un usuario puede seguir a usar tokens de sesión para obtener nuevos tokens de identificador/sesión después de la última vez que les autenticado correctamente con solo un factor único. Dado que solo factor se considera menos segura que la autenticación multifactor, se recomienda que esta directiva se establece en un valor igual o menor a la MultiFactorSessionTokenMaxAge|10 minutos|hasta revocado|365 o revocado hasta|
-|MaxAgeSessionMultiFactor|String|Controles de cuánto un usuario puede seguir a usar tokens de sesión para obtener nuevos tokens de identificador/sesión después de la última vez que les autenticado correctamente con varios factores.|10 minutos|hasta revocado|365 o revocado hasta|
-|Version|Integer|Establezca el valor de 1. Obligatorio.|Ninguno|Ninguno|Ninguno|
+|AccessTokenLifetime|Cadena|Controla cuánto **acceso y los tokens de identificador** se consideran válido.|10 minutos|1 día|1 hora|
+|MaxInactiveTime|Cadena|Controla la antigüedad máxima que puede ser un token de actualización antes de que un cliente ya no puede utilizar para recuperar un par de token de acceso y actualización nueva para obtener acceso a un recurso.|10 minutos|90 días|14 días|
+|MaxAgeSingleFactor|Cadena|Controles de cuánto un usuario puede seguir a usar tokens de actualización para obtener acceso o actualiza los nuevo pares de símbolo (token) después de la última vez que les autenticado correctamente con solo un factor único. Dado que solo factor se considera menos segura que la autenticación multifactor, se recomienda que esta directiva se establece en un valor igual o menor a la MultiFactorRefreshTokenMaxAge.|10 minutos|hasta revocado|365 días o hasta que revocado|
+|MaxAgeMultiFactor|Cadena|Controles de cuánto un usuario puede seguir a usar tokens de actualización para obtener acceso o actualiza los nuevo pares de símbolo (token) después de la última vez que les autenticado correctamente con varios factores.|10 minutos|hasta revocado|365 días o hasta que revocado|
+|MaxAgeSessionSingleFactor|Cadena|Controles de cuánto un usuario puede seguir a usar tokens de sesión para obtener nuevos tokens de identificador/sesión después de la última vez que les autenticado correctamente con solo un factor único. Dado que solo factor se considera menos segura que la autenticación multifactor, se recomienda que esta directiva se establece en un valor igual o menor a la MultiFactorSessionTokenMaxAge|10 minutos|hasta revocado|365 o revocado hasta|
+|MaxAgeSessionMultiFactor|Cadena|Controles de cuánto un usuario puede seguir a usar tokens de sesión para obtener nuevos tokens de identificador/sesión después de la última vez que les autenticado correctamente con varios factores.|10 minutos|hasta revocado|365 o revocado hasta|
+|Version|Integer|Establezca el valor de 1. Necesario.|Ninguno|Ninguno|Ninguno|
 
 ## <a name="json-representation"></a>Representación JSON
 Aquí tiene una representación JSON del recurso.

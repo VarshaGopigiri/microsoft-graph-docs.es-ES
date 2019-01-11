@@ -2,12 +2,13 @@
 title: tipo de recurso unaryManagementConditionExpression
 description: Una expresión de condición de administración que se evalúa mediante una operación unario.
 author: tfitzmac
-ms.openlocfilehash: 43711e68d88bdf0854e8501377fbf3e30b25b3ec
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 619d931e53fbd65419e07ab1b2f27341ccb5dd41
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829774"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>tipo de recurso unaryManagementConditionExpression
 
@@ -20,7 +21,7 @@ Una expresión de condición de administración que se evalúa mediante una oper
 Hereda de [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|El operador utilizado en la evaluación de la operación unario. Los valores posibles son: `not`.|
 |operando|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|El operando de la operación unario.|

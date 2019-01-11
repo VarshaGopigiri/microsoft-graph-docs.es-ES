@@ -2,12 +2,13 @@
 title: Obtener educationAssignmentResource
 description: 'Obtener las propiedades de un recurso específico en una asignación.  '
 author: dipakboyed
-ms.openlocfilehash: 25c448f3247631c9129a837bd00842588bf152d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da96f7476e6feda2f27b0653393de8c2eaac3022
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832959"
 ---
 # <a name="get-educationassignmentresource"></a>Obtener educationAssignmentResource
 

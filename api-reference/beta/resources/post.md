@@ -2,12 +2,13 @@
 title: Tipo de recurso post
 description: Representa un elemento para exponer individuales dentro de una entidad de converstaionThread.
 author: dkershaw10
-ms.openlocfilehash: 6030bd5ef3c59edbad9712b549531a193b808b14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1912917347697a6f78876175e6fe9f9c160869e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363721"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834044"
 ---
 # <a name="post-resource-type"></a>Tipo de recurso post
 
@@ -70,8 +71,8 @@ Aquí tiene una representación JSON del recurso
 |createdDateTime|DateTimeOffset|Especifica cuándo se ha creado la publicación. El tipo DateTimeOffset representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|Se usa en escenarios de acceso delegado. Indica quién ha publicado el mensaje en nombre de otro usuario. Esta es la propiedad predeterminada.|
 |hasAttachments|Boolean|Indica si la publicación tiene al menos un dato adjunto. Esta es la propiedad predeterminada.|
-|id|String| Solo lectura.|
-|importance | String | La importancia de una entrada de grupo: `low`, `normal`, `high`. |
+|id|Cadena| Solo lectura.|
+|importance | Cadena | La importancia de una entrada de grupo: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Especifica cuándo se ha modificado por última vez la publicación. El tipo DateTimeOffset representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |newParticipants|Colección [recipient](recipient.md)|Participantes de la conversación que se han agregado al hilo como parte de esta publicación.|
 |receivedDateTime|DateTimeOffset|Especifica cuándo se ha recibido la publicación. El tipo DateTimeOffset representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|

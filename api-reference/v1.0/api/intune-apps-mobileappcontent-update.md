@@ -2,12 +2,13 @@
 title: Actualizar mobileAppContent
 description: Actualice las propiedades de un objeto mobileAppContent.
 author: tfitzmac
-ms.openlocfilehash: 2fcaaa92cd7bfde7eaafe1709b52d2e904d73169
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa5f9295d70124633728e5816c2d506d6f5aeff0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304133"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831181"
 ---
 # <a name="update-mobileappcontent"></a>Actualizar mobileAppContent
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto [mobileAppContent](../resources/intune-apps-mobileappcontent.md).

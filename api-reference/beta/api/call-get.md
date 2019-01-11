@@ -2,12 +2,13 @@
 title: Obtener la llamada
 description: Recuperar las propiedades y relaciones de un objeto de llamada.
 author: VinodRavichandran
-ms.openlocfilehash: df97b69f87a1562e56a96d84de1af740ab0aff65
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c209c263f2dfcffe274bf726296d7e6c427afa6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833554"
 ---
 # <a name="get-call"></a>Obtener la llamada
 

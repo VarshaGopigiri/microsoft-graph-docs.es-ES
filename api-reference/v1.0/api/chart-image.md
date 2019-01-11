@@ -2,12 +2,13 @@
 title: 'Chart: Image'
 description: Representa el gráfico como una imagen con codificación Base64 al escalar el gráfico a las dimensiones especificadas.
 author: lumine2008
-ms.openlocfilehash: ccf2ba82dad05508b0857122f0316be8afcd03bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f79f52e619281817c95f41efd8a96b3dcfa7d6e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831615"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -38,7 +39,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 ## <a name="path-parameters"></a>Parámetros de ruta de acceso
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |height|Int32|La altura deseada de la imagen resultante. Opcional.|
 |width|Int32|El ancho deseado de la imagen resultante. Opcional.|

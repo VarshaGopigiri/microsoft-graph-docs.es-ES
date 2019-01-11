@@ -1,12 +1,13 @@
 ---
 title: Obtener informes de uso de dispositivos de Skype Empresarial
 description: Puede usar los informes de uso de dispositivos de Skype Empresarial para obtener información sobre los tipos de clientes y dispositivos que se usan en la organización. Estos detalles son muy útiles para investigar, planear y tomar otras decisiones empresariales en la organización.
-ms.openlocfilehash: f7e005a7be7eea9643c40542c5bee0869c4e5e1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d9289b6e659f14a22553520a045eb3a2af00725a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834107"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Obtener informes de uso de dispositivos de Skype Empresarial
 

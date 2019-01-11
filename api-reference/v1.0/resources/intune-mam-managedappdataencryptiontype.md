@@ -2,12 +2,13 @@
 title: tipo de enumeración managedAppDataEncryptionType
 description: Representa el nivel a la que se cifran los datos de aplicación para las aplicaciones administradas
 author: tfitzmac
-ms.openlocfilehash: 3cbb733eb578ca839e32851d8a6d217f69d6799d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f57904d45b24f6aaae9d67394facb07692add67e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834149"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>tipo de enumeración managedAppDataEncryptionType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27330327"
 
 Representa el nivel a la que se cifran los datos de aplicación para las aplicaciones administradas
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |useDeviceSettings|0|Datos de aplicación se cifran en función de la configuración predeterminada en el dispositivo.|
 |afterDeviceRestart|1|Datos de aplicación se cifran cuando se reinicia el dispositivo.|

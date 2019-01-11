@@ -2,12 +2,13 @@
 title: Create ContactFolder
 description: 'Crea una contactFolder como elemento secundario de una carpeta especificada. '
 author: angelgolfer-ms
-ms.openlocfilehash: a6b638610ed487fe69d80254c36efc3478f476cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c636bd3f5edaf2447194d5dc058b761e8ec61674
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336487"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829011"
 ---
 # <a name="create-contactfolder"></a>Create ContactFolder
 

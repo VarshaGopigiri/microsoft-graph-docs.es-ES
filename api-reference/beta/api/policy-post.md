@@ -1,12 +1,13 @@
 ---
 title: Crear directiva
 description: Crear un nuevo objeto de directiva mediante la especificación de nombre para mostrar, el tipo de directiva y la descripción de la directiva.
-ms.openlocfilehash: fca6201d7afa6a78f15da0d37fb611e4114783e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27090281"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831237"
 ---
 # <a name="create-policy"></a>Crear directiva
 
@@ -33,7 +34,7 @@ POST /policies
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | application/json  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -41,11 +42,11 @@ En el cuerpo de la solicitud, proporcionan una representación JSON de objeto de
 
 En la siguiente tabla se muestra las propiedades que son necesarias para crear una directiva.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
-|definición|String|La versión de cadena del objeto de [Directiva](../resources/policy.md) .|
-|displayName|String|Un nombre personalizado para la directiva.|
-|type|String|Especifica el tipo de directiva. Actualmente, debe ser "TokenLifetimePolicy"|
+|definición|Cadena|La versión de cadena del objeto de [Directiva](../resources/policy.md) .|
+|displayName|Cadena|Un nombre personalizado para la directiva.|
+|type|Cadena|Especifica el tipo de directiva. Actualmente, debe ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Respuesta
 

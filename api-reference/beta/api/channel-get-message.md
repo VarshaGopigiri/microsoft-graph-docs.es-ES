@@ -2,12 +2,13 @@
 title: Obtener el mensaje de canal
 description: Recuperar un único mensaje (sin sus respuestas) en un canal de un equipo.
 author: nkramer
-ms.openlocfilehash: 2da10f4151cc1ddaaa1bddfe376f4035a6baa180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 202e2c341e58175e1807e1aa47c120f6c829a7c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309229"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829123"
 ---
 # <a name="get-channel-message"></a>Obtener el mensaje de canal
 

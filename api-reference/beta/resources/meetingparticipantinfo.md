@@ -2,12 +2,13 @@
 title: tipo de recurso meetingParticipantInfo
 description: Información acerca de un participante en una reunión.
 author: VinodRavichandran
-ms.openlocfilehash: 2bbb410ea26640ec05d66b5beb0c4b4ea24a42bd
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d7b5ae17bd3bfb566bce0da9814b86aab98173da
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380201"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834261"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>tipo de recurso meetingParticipantInfo
 
@@ -17,10 +18,10 @@ Información acerca de un participante en una reunión.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad       | Tipo                          | Descripción                              |
+| Propiedad       | Tipo                          | Description                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | identity       | [identitySet](identityset.md) | Información de identidad del participante. |
-| UPN            | String                        | Nombre principal de usuario del participante.  |
+| UPN            | Cadena                        | Nombre principal de usuario del participante.  |
 
 ## <a name="json-representation"></a>Representación JSON
 

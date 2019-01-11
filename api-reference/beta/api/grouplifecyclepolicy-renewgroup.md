@@ -1,12 +1,13 @@
 ---
 title: 'groupLifecyclePolicy: renewGroup'
 description: Renueva la expiración de un grupo. Cuando se renueva un grupo, la expiración del grupo se amplía por el número de días definidos en la directiva.
-ms.openlocfilehash: 13e1713d3d00e7feac0b23eae8a314e55341e20e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5472927769175912736f66a2d848f103cfb5b8c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085927"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833323"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 

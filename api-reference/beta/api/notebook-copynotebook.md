@@ -1,12 +1,13 @@
 ---
 title: 'bloc de notas: copyNotebook'
 description: Copia un bloc de notas a la carpeta Blocs de notas de la biblioteca de documentos de destino. Se crea la carpeta si no existe.
-ms.openlocfilehash: 4d22c6904f14d0ccc5d4f3de35cdf46fbd3afd6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ba9ed886ab0102a3ed66c31efbc420832e67d316
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833057"
 ---
 # <a name="notebook-copynotebook"></a>bloc de notas: copyNotebook
 
@@ -36,18 +37,18 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación. Puede enviarse un cuerpo vacío si no se necesita ninguno.
 
-| Parámetro    | Tipo   |Descripción|
+| Parámetro    | Tipo   |Description|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|El identificador del sitio de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
-|siteId|String|El identificador del sitio web de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
-|groupId|String|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
-|renameAs|String|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
+|siteCollectionId|Cadena|El identificador del sitio de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
+|siteId|Cadena|El identificador del sitio web de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
+|groupId|Cadena|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
+|renameAs|Cadena|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
 
 ## <a name="response"></a>Respuesta
 

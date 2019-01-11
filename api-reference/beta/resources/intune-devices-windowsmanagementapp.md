@@ -2,12 +2,13 @@
 title: tipo de recurso windowsManagementApp
 description: Entidad de aplicación de administración de Windows.
 author: tfitzmac
-ms.openlocfilehash: 641538644dc313234e27b0f518a26d8a38c612b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 47262f93e619690352cac9ae3f9a500d0dc77c20
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833419"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>tipo de recurso windowsManagementApp
 
@@ -25,11 +26,11 @@ Entidad de aplicación de administración de Windows.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único para la aplicación de administración de Windows|
-|availableVersion|String|Versión disponible de Windows management app.|
+|id|Cadena|Identificador único para la aplicación de administración de Windows|
+|availableVersion|Cadena|Versión disponible de Windows management app.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Mantenimiento de resumen para la aplicación de administración de Windows.|
 |healthStates|colección de [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|La lista de Estados de mantenimiento para la aplicación de administración de Windows instalada.|

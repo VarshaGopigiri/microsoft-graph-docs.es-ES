@@ -2,12 +2,13 @@
 title: tipo de enumeración ratingAustraliaMoviesType
 description: Películas clasificación etiquetas en Australia
 author: tfitzmac
-ms.openlocfilehash: 4e5d99b085e92d8e83c8d5c0951cf75a1efcb171
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe95e91077514022360d273dead76e694af3169b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829543"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enumeración ratingAustraliaMoviesType
 
@@ -15,7 +16,7 @@ ms.locfileid: "27327310"
 
 Películas clasificación etiquetas en Australia
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las películas|
 |allBlocked|1|No permitir cualquier contenido de películas|

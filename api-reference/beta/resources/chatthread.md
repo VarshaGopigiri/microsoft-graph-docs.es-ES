@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso chatThread
 description: Una chatThread es una colección de chatMessages en Microsoft Teams.
-ms.openlocfilehash: ef8f118ae4354a5e4197802708aecfa1fb6f8cb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5060d7ea846f5aedec5551aaf247642a36f73c1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27089968"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833246"
 ---
 # <a name="chatthread-resource-type"></a>tipo de recurso chatThread
 
@@ -25,10 +26,10 @@ Una chatThread es una colección de [chatMessages](chatmessage.md) en Microsoft 
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Solo lectura.|
+|id|Cadena| Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Descripción|
+| Relación | Tipo   |Description|
 |:---------------|:--------|:----------|
 |rootMessage|[chatMessage](chatmessage.md)| Admite valores NULL.|
 |chatMessages|colección de [chatMessage](chatmessage.md)| Admite valores NULL.|

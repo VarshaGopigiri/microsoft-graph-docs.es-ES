@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerExternalReference
 description: El recurso **plannerExternalReference** representa los metadatos de una referencia (los datos adjuntos como archivo, la dirección URL). Es el valor de pares de valor de la propiedad en el objeto externalReferences.
-ms.openlocfilehash: ad892b5e9f9a741e7a4994c509ac704ad1ca62a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 104fd17698d57339de5c0d7a2ec4c5f42b254f49
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833787"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Tipo de recurso plannerExternalReference
 
@@ -19,10 +20,10 @@ El recurso **plannerExternalReference** representa los metadatos de una referenc
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|alias|String|Nombre de alias para describir la referencia.|
+|alias|Cadena|Nombre de alias para describir la referencia.|
 |lastModifiedBy|[identitySet](identityset.md)|Solo lectura. Id. del usuario que lo modificó por última vez.|
 |lastModifiedDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se modificó por última vez. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|previewPriority|String|Se usa para establecer el orden de prioridad relativo en el que aparecerá la referencia como una vista previa de la tarea.|
+|previewPriority|Cadena|Se usa para establecer el orden de prioridad relativo en el que aparecerá la referencia como una vista previa de la tarea.|
 |tipo|Cadena|Se usa para describir el tipo de la referencia. Los tipos son `PowerPoint`, `Word`, `Excel` y `Other`.|
 
 ## <a name="json-representation"></a>Representación JSON

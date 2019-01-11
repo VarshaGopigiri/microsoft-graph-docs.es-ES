@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso targetResourceUser
 description: Indica el objeto de usuario que se ha agregado, actualiza o elimina los administradores como parte de la actividad de auditoría. Deriva el recurso targetResource.
-ms.openlocfilehash: 632d0551b3aba434c3309c8c874947708eb9a9f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9c71ead1b358b72a1b531abac56018fa71d084e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086431"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831932"
 ---
 # <a name="targetresourceuser-resource-type"></a>tipo de recurso targetResourceUser
 Indica el objeto de usuario que se ha agregado, actualiza o elimina los administradores como parte de la actividad de auditoría. Deriva el recurso [targetResource](targetresource.md) .
@@ -15,7 +16,7 @@ Indica el objeto de usuario que se ha agregado, actualiza o elimina los administ
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|userPrincipalName|String|Indica el identificador único del usuario. Hace referencia al identificador de usuario para un usuario específico.|
+|userPrincipalName|Cadena|Indica el identificador único del usuario. Hace referencia al identificador de usuario para un usuario específico.|
 
 ## <a name="json-representation"></a>Representación JSON
 

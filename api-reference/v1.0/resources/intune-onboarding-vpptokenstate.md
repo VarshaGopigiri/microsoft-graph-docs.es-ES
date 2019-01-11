@@ -2,12 +2,13 @@
 title: tipo de enumeración vppTokenState
 description: Estados posibles asociados con un token de programa de compra de volumen de Apple.
 author: tfitzmac
-ms.openlocfilehash: e034f9712e2ef40b40b209935ed96f07b35cdbb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89d28a07bb2c6abea2e2a10d9b5a0961e5efecff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321185"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834030"
 ---
 # <a name="vpptokenstate-enum-type"></a>tipo de enumeración vppTokenState
 
@@ -15,7 +16,7 @@ ms.locfileid: "27321185"
 
 Estados posibles asociados con un token de programa de compra de volumen de Apple.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Estado predeterminado.|
 |válido|1|Símbolo (token) es válido.|

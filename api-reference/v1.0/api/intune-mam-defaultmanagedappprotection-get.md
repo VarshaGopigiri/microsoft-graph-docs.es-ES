@@ -2,12 +2,13 @@
 title: Obtener defaultManagedAppProtection
 description: Lea las propiedades y las relaciones del objeto defaultManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 9d2b7a72f4adec0616533092ec8001d89a55dd13
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c14fa93de18bfdb649ff049a89c797ae74beae7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833792"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Obtener defaultManagedAppProtection
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

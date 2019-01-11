@@ -1,12 +1,13 @@
 ---
 title: Referencia de la API de REST de Microsoft Graph versión 1.0
 description: Bienvenido a la referencia de la API de REST de Microsoft Graph del punto de conexión de la versión 1.0.
-ms.openlocfilehash: 628b631a877a29dc416671c4a0c5f9a5c0b849ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 6e0dde56aae7857e9ae042f89ba5eb6b01737efa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032112"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829079"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referencia de la API de REST de Microsoft Graph versión 1.0
 

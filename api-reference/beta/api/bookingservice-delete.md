@@ -1,12 +1,13 @@
 ---
 title: Eliminar bookingService
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 0efdce0050c52738b54c6067b222daef89ab619d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7a44932d4b4f5c2287e48c4d821f0b6476615de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829578"
 ---
 # <a name="delete-bookingservice"></a>Eliminar bookingService
 

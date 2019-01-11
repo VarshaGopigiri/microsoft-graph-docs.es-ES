@@ -2,12 +2,13 @@
 title: tipo de recurso roleScopeTag
 description: Etiqueta de ámbito de rol
 author: tfitzmac
-ms.openlocfilehash: 49059ceddcd043f39f51c563c85ba8986b6fc61b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a48f74b9ecdb7a5f6eec87581fb0826160c4334b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830068"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 
@@ -28,9 +29,9 @@ Etiqueta de ámbito de rol
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
-|displayName|String|El para mostrar o el nombre descriptivo de la etiqueta de ámbito de función.|
-|descripción|String|Descripción de la etiqueta de ámbito de función.|
+|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|displayName|Cadena|El para mostrar o el nombre descriptivo de la etiqueta de ámbito de función.|
+|descripción|Cadena|Descripción de la etiqueta de ámbito de función.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

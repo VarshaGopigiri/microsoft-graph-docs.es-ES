@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso implicitGrantSettings
 description: Especifica si esta aplicación web puede solicitar tokens con el flujo de OAuth 2.0 implícita. Están disponibles para solicitar los tokens de acceso y el identificador como parte del flujo implícita de propiedades independientes. Para habilitar el flujo implícita, al menos una de las siguientes propiedades debe estar establecida en true.
-ms.openlocfilehash: 018cd422b56724811e1913ff0e94aea16d7c68f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 93a54ac0c0e4c6c32ebb99c9747d44d75f98af07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085474"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834268"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>tipo de recurso implicitGrantSettings
 
@@ -16,7 +17,7 @@ Especifica si esta aplicación web puede solicitar tokens con el flujo de OAuth 
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Descripción |
+| Propiedad | Tipo | Description |
 |:---------|:-----|:------------|
 |enableIdTokenIssuance| Booleano | Especifica si esta aplicación web puede solicitar un token de identificador con el flujo de OAuth 2.0 implícita.|
 |enableAccessTokenIssuance| Booleano | Especifica si esta aplicación web puede solicitar un token de acceso con el flujo de OAuth 2.0 implícita.|

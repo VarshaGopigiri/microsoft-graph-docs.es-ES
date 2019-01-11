@@ -1,12 +1,13 @@
 ---
 title: Enumerar miembros
 description: Obtener una lista de los miembros del grupo directa. Un grupo puede tener los usuarios, contactos y otros grupos como miembros.
-ms.openlocfilehash: d9e756ecdbedbd17a446b27d33d3fafc23822636
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: d7dfaede0e9deae6806499b504c6a58da2381ef5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833288"
 ---
 # <a name="list-members"></a>Enumerar miembros
 Obtiene una lista de los miembros directos del grupo. Un grupo puede tener usuarios, contactos y otros grupos como miembros. Esta operación no es transitiva.
@@ -32,7 +33,7 @@ Este método admite los [parámetros de consulta de OData](/graph/query-paramete
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Authorization  | string  | {token} de portador. Obligatorio. |
+| Autorización  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

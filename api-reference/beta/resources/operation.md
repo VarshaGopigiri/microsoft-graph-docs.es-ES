@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de la operación
 description: El estado de una operación de larga duración.
-ms.openlocfilehash: 71e6a1c47e1f3b18f1481700320779714d716bec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 760aeedb67b987fc22a5eef969e2214f6dfd05b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830348"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso de la operación
 
@@ -23,9 +24,9 @@ Ninguno
 | Propiedad           | Tipo            | Descripción                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | La hora de inicio de la operación.                                                |
-| id                 | String          | Id. de operación. Solo lectura. Servidor que se generó.                                  |
+| id                 | Cadena          | Id. de operación. Solo lectura. Servidor que se generó.                                  |
 | lastActionDateTime | DateTimeOffset  | Hora de la última acción de la operación.                                   |
-| status             | String          | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`. Solo lectura. |
+| status             | Cadena          | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`. Solo lectura. |
 
 ## <a name="relationships"></a>Relaciones
 

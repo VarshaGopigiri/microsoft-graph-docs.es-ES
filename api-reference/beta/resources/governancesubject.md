@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso governanceSubject
 description: Representa los usuarios, grupos y entidades de seguridad de servicio que se administra en la administración de identidad con privilegios (PIM).
-ms.openlocfilehash: c2129a0da488d4e7f425d6ef3596a955269e0da8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f3f8762c9136a3ae92269f6c06f52000fb73f710
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832595"
 ---
 # <a name="governancesubject-resource-type"></a>tipo de recurso governanceSubject
 
@@ -18,9 +19,9 @@ Representa los usuarios, grupos y entidades de seguridad de servicio que se admi
 ## <a name="properties"></a>Propiedades
 | Propiedad  | Tipo       |Descripción|
 |:----------|:----------|:----------|
-|id         |String     | El identificador del tema.|
-|type       |String     |El tipo de objeto. El valor puede ser ``User``, ``Group``, y ``ServicePrincipal``.|
-|displayName|String     |El nombre para mostrar del asunto.|
+|id         |Cadena     | El identificador del tema.|
+|type       |Cadena     |El tipo de objeto. El valor puede ser ``User``, ``Group``, y ``ServicePrincipal``.|
+|displayName|Cadena     |El nombre para mostrar del asunto.|
 |email      |String     |La dirección de correo electrónico del sujeto del usuario. Si el asunto es en otros tipos, está vacío.|
 |principalName|String   |El nombre principal del objeto de usuario. Si el asunto es en otros tipos, está vacío.|
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso domainDnsMxRecord
 description: Representa un registro MX agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad DomainDnsRecord.
 author: lleonard-msft
-ms.openlocfilehash: 562afbd6998ad1678f4f055dacf89af9b1ed4446
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6ffa526b359eed6bafa7f38562d5d61c4f4562a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830250"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>Tipo de recurso domainDnsMxRecord
 
@@ -21,13 +22,13 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
+|id|Cadena| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
 |isOptional|Booleano| Si es false, el cliente debe configurar el registro MX en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
 |label|Cadena| Valor que se usa al configurar la propiedad *alias/host/name* del registro MX en el host DNS. |
 |mailExchange|Cadena| Valor que se usa al configurar la propiedad *answer/destination/value* del registro MX en el host DNS.|
 |preference|Int32| Valor que se usa al configurar la propiedad *Preference/Priority* del registro MX en el host DNS. |
 |recordType|Cadena| Tipo de registro DNS. El valor es siempre *Mx*. Clave |
-|supportedService|String| Servicio o función de Microsoft Online que tiene una dependencia en el registro MX.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
+|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro MX.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
 |ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro MX en el host DNS. No admite valores NULL |
 
 ## <a name="relationships"></a>Relaciones

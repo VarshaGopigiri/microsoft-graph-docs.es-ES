@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso recentNotebook
 description: Bloc de notas de OneNote al que se ha accedido recientemente. Un **recentNotebook** es similar a un notebook pero tiene menos propiedades.
-ms.openlocfilehash: c3b717fcebdc229864aefe13c6452ce5eb95fc53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f2dd1ca642203cde36bb636b9cb2eb7c79344e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833834"
 ---
 # <a name="recentnotebook-resource-type"></a>Tipo de recurso recentNotebook
 
@@ -17,7 +18,7 @@ Bloc de notas de OneNote al que se ha accedido recientemente. Un **recentNoteboo
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|name|String|Nombre del bloc de notas.|
+|name|Cadena|Nombre del bloc de notas.|
 |lastAccessedTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el bloc de notas. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
 |links|[recentNotebookLinks](recentnotebooklinks.md)|Vínculos para abrir el bloc de notas. El vínculo `oneNoteClientURL` abre el bloc de notas en el cliente de OneNote si está instalado. El vínculo `oneNoteWebURL` abre el bloc de notas en OneNote Online.|
 |sourceService|String|Almacén de back-end donde reside el Bloc de notas, `OneDriveForBusiness` o `OneDrive`.|

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso stringKeyObjectValuePair
 description: Representa un par de clave y valor donde la clave es una cadena y el valor es un objeto JSON arbitrario. Esto es un tipo abierto de OData que espera tener una propiedad denominada `value` es un objeto JSON válido.
-ms.openlocfilehash: ae536b2aab87b9920c2afcbe324e30b5f5380dbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8545a4ef5a4931d3b886c95b4f39218bc418f53d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27086686"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831454"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>tipo de recurso stringKeyObjectValuePair
 
@@ -17,7 +18,7 @@ Representa un par de clave y valor donde la clave es una cadena y el valor es un
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|Key|String|Clave.|
+|Key|Cadena|Clave.|
 |valor|Cualquiera|Objeto JSON arbitrario.|
 
 ## <a name="json-representation"></a>Representación JSON

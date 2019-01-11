@@ -2,12 +2,13 @@
 title: tipo de enumeración deviceEnrollmentFailureReason
 description: Categorías de errores de nivel superior para la inscripción.
 author: tfitzmac
-ms.openlocfilehash: 7747008f00348a4671713a28c0d1e48e156e9b38
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 576d054a8d2e5563b0c54ace1c7ef2c08f9844f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834303"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enumeración deviceEnrollmentFailureReason
 
@@ -17,7 +18,7 @@ ms.locfileid: "27325084"
 
 Categorías de errores de nivel superior para la inscripción.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |desconocido|0|Valor predeterminado, el motivo del error es desconocido.|
 |autenticación|1|Error de autenticación|

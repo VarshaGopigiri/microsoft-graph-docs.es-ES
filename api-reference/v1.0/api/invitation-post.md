@@ -1,12 +1,13 @@
 ---
 title: Crear invitación
 description: Use esta API para crear una invitación. La invitación agrega un usuario externo a la organización.
-ms.openlocfilehash: 553204f469fcd6db8fb988070b43e75d8b679a74
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Priority
+ms.openlocfilehash: d885ab695f874996a017a75b37a53e91c3d61271
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771691"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830656"
 ---
 # <a name="create-invitation"></a>Crear invitación
 

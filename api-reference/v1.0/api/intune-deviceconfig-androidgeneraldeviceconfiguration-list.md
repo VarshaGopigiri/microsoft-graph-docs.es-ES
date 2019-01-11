@@ -2,12 +2,13 @@
 title: Enumerar androidGeneralDeviceConfigurations
 description: Enumere las propiedades y las relaciones de los objetos androidGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8e7fcf0b11e3e4cd21cce99ba0ab419c2f6c87e2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc5e20f5551b130777e008be46b0bd462f1d97ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319533"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831321"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>Enumerar androidGeneralDeviceConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

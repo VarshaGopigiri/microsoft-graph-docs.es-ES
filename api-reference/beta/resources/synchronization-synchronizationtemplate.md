@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso synchronizationTemplate
 description: " cualquier usuario puede recuperar la plantilla para ver la configuración predeterminada, incluido el esquema de sincronización."
-ms.openlocfilehash: 90850ad43fdd14fc38ff6ae8cfa97f47806a289d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e98d3fa16d0a80ac9353aaa75200d8cb24d3e904
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27087234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833078"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationTemplate
 
@@ -31,16 +32,16 @@ Puede proporcionar varias plantillas de una aplicación y designar una plantilla
 
 | Propiedad      | Tipo                      | Descripción                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |String                     |Identificador de plantilla único.|
+|id             |Cadena                     |Identificador de plantilla único.|
 |applicationId  |cadena                     |Identificador de la aplicación al que pertenece esta plantilla.|
 |Es el valor predeterminado.        |Booleano                    |`true`Si esta plantilla se recomienda que tenga el valor predeterminado de la aplicación.|
 |descripción    |String                     |Descripción de la plantilla.|
-|que se pueda detectar   |String                     |`true`Si esta plantilla debe aparecer en la colección de plantillas disponibles para la instancia de aplicación (entidad de seguridad de servicio).|
-|factoryTag     |String                     |Una de las etiquetas de fábrica Well-known compatibles con el motor de sincronización. La **factoryTag** indica que el motor de sincronización a qué implementación a utilizar al procesamiento de trabajos basados en esta plantilla.|
+|que se pueda detectar   |Cadena                     |`true`Si esta plantilla debe aparecer en la colección de plantillas disponibles para la instancia de aplicación (entidad de seguridad de servicio).|
+|factoryTag     |Cadena                     |Una de las etiquetas de fábrica Well-known compatibles con el motor de sincronización. La **factoryTag** indica que el motor de sincronización a qué implementación a utilizar al procesamiento de trabajos basados en esta plantilla.|
 |metadatos       |colección de metadataEntry   |Propiedades de extensión adicionales. A menos que se mencionan explícitamente, no se deben cambiar los valores de metadatos.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación      | Tipo      |Descripción|
+| Relación      | Tipo      |Description|
 |:------------------|:----------|:----------|
 |esquema             |[synchronizationSchema](synchronization-synchronizationschema.md)     |Esquema de sincronización predeterminado para las tareas basadas en esta plantilla.|
 

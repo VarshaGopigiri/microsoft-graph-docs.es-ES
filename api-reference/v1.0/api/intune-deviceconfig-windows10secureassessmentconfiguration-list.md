@@ -2,12 +2,13 @@
 title: Enumerar windows10SecureAssessmentConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windows10SecureAssessmentConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 520434de48da37d30d0945c429dfb7767096420c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8771fbbff958082d8baae2f3552eaf06f75a988
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320856"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831524"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Enumerar windows10SecureAssessmentConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

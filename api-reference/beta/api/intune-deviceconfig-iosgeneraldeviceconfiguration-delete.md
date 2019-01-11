@@ -2,12 +2,13 @@
 title: Eliminar iosGeneralDeviceConfiguration
 description: Elimina un iosGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3c0c3e846192df19a79ecae1ea07916c3426241b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2eee65afe58c61da619f4db5dce56932752d980d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831898"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Eliminar iosGeneralDeviceConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

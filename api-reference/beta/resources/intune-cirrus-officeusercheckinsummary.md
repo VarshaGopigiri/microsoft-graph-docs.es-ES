@@ -2,12 +2,13 @@
 title: tipo de recurso officeUserCheckinSummary
 description: Entidad que describe el inquilino protección de estadísticas.
 author: tfitzmac
-ms.openlocfilehash: 5064882f74a13feca726a6ebb91c34cf9a85af86
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c2470b1e531f1b268d6797fe2692baf0031728b3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834026"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>tipo de recurso officeUserCheckinSummary
 
@@ -17,7 +18,7 @@ ms.locfileid: "27306331"
 
 Entidad que describe el inquilino protección de estadísticas.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Descripción|
+|Propiedad|Tipo|Description|
 |:---|:---|:---|
 |succeededUserCount|Int32|Total de usuario correcta comprobar ins para los últimos 3 meses.|
 |failedUserCount|Int32|Total usuario erróneas comprobar ins para los últimos 3 meses.|

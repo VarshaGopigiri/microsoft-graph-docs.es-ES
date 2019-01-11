@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso filterClause
 description: Representa una aserción único que debe cumplir un objeto candidato y se evalúa alguna `true` (objeto cumple la aserción) o `false` (objeto no cumplen con la aserción).
-ms.openlocfilehash: 0861324849f224c4e750f0c7b926464280b9a377
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 89807a6086f661388c8d5b1d5f82bfe973c3af39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084367"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833862"
 ---
 # <a name="filterclause-resource-type"></a>tipo de recurso filterClause
 
@@ -15,10 +16,10 @@ ms.locfileid: "27084367"
 Representa una aserción único que debe cumplir un objeto candidato y se evalúa alguna `true` (objeto cumple la aserción) o `false` (objeto no cumplen con la aserción).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Descripción|
+| Propiedad     | Tipo   |Description|
 |:---------------|:--------|:----------|
-|operatorName|String|Nombre del operador que se aplicará a los operandos de origen y de destino. Debe ser uno de los operadores compatibles. Se pueden detectar los operadores compatibles.|
-|sourceOperandName|String|Nombre del operando de origen (el operando que se está probando). El nombre del operando de origen debe coincidir con uno de los nombres de atributo en el objeto de origen.|
+|operatorName|Cadena|Nombre del operador que se aplicará a los operandos de origen y de destino. Debe ser uno de los operadores compatibles. Se pueden detectar los operadores compatibles.|
+|sourceOperandName|Cadena|Nombre del operando de origen (el operando que se está probando). El nombre del operando de origen debe coincidir con uno de los nombres de atributo en el objeto de origen.|
 |targetOperand|[filterOperand](synchronization-filteroperand.md)|Valores que se probará contra el operando de origen.|
 
 ## <a name="json-representation"></a>Representación JSON

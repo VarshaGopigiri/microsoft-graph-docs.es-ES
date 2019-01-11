@@ -1,12 +1,13 @@
 ---
 title: tipo de enumeración androidDeviceOwnerAppAutoUpdatePolicyType
 description: Valores posibles del propietario del dispositivo Android, para los Estados de automático de la aplicación del dispositivo actualizan la directiva.
-ms.openlocfilehash: 0287a26b4974bc0b376341ca91791d1fa768a9e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 721d08220553bf6acfaac0f84bf0d71725c39ba6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27083151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834121"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>tipo de enumeración androidDeviceOwnerAppAutoUpdatePolicyType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27083151"
 
 Valores posibles del propietario del dispositivo Android, para los Estados de automático de la aplicación del dispositivo actualizan la directiva.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Descripción|
+|Miembro	|Valor|Description|
 |:---|:---|:---|
 |No configurado|0|No configurado; Este valor se omite.|
 |userChoice|1|El usuario puede controlar las actualizaciones automáticas.|

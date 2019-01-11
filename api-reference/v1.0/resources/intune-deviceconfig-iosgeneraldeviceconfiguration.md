@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosGeneralDeviceConfiguration
 description: Este tema proporciona descripciones de los métodos declarados, las propiedades y las relaciones expuestas por el recurso iosGeneralDeviceConfiguration.
-ms.openlocfilehash: 0ec7c8b5b242aa9a43ddbb0bdd7a305c75f6d9dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 258aa02ab4e59c8de677088b9b68e78b555e9109
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27030283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833302"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso iosGeneralDeviceConfiguration
 
@@ -28,11 +29,11 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountBlockModification|Booleano|Indica si se va a permitir la modificación de cuentas cuando el dispositivo está en modo supervisado.|
 |activationLockAllowWhenSupervised|Booleano|Indica si se va a permitir el bloqueo de activación cuando el dispositivo está en modo supervisado.|
@@ -109,14 +110,14 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |kioskModeAllowVoiceOverSettings|Booleano|Indica si se va a permitir el acceso a la configuración de voz en off en el modo de pantalla completa.|
 |kioskModeAllowVolumeButtons|Booleano|Indica si se va a permitir el uso de los botones de volumen en el modo de pantalla completa.|
 |kioskModeAllowZoomSettings|Booleano|Indica si se va a permitir el acceso a la configuración de zoom en el modo de pantalla completa.|
-|kioskModeAppStoreUrl|String|Dirección URL en la tienda de aplicaciones a la aplicación que se usará para el modo de pantalla completa. Úsela si KioskModeManagedAppId es desconocido.|
-|kioskModeBuiltInAppId|String|Identificador de aplicaciones integradas que se usará para el modo de pantalla completa. Se usa cuando no se establecen KioskModeManagedAppId y KioskModeAppStoreUrl.|
+|kioskModeAppStoreUrl|Cadena|Dirección URL en la tienda de aplicaciones a la aplicación que se usará para el modo de pantalla completa. Úsela si KioskModeManagedAppId es desconocido.|
+|kioskModeBuiltInAppId|Cadena|Identificador de aplicaciones integradas que se usará para el modo de pantalla completa. Se usa cuando no se establecen KioskModeManagedAppId y KioskModeAppStoreUrl.|
 |kioskModeRequireAssistiveTouch|Booleano|Indica si se va a requerir la AssistiveTouch en el modo de pantalla completa.|
 |kioskModeRequireColorInversion|Booleano|Indica si se va a requerir la inversión de color en el modo de pantalla completa.|
 |kioskModeRequireMonoAudio|Booleano|Indica si se va a requerir el audio mono en el modo de pantalla completa.|
 |kioskModeRequireVoiceOver|Booleano|Indica si se va a requerir la voz en off en el modo de pantalla completa.|
 |kioskModeRequireZoom|Booleano|Indica si se va a requerir el zoom en el modo de pantalla completa.|
-|kioskModeManagedAppId|String|identificador de la aplicación administrada de la aplicación que se usará para el modo de pantalla completa. Si se especifica KioskModeManagedAppId, entonces se omitirá KioskModeAppStoreUrl.|
+|kioskModeManagedAppId|Cadena|identificador de la aplicación administrada de la aplicación que se usará para el modo de pantalla completa. Si se especifica KioskModeManagedAppId, entonces se omitirá KioskModeAppStoreUrl.|
 |lockScreenBlockControlCenter|Booleano|Indica si se va a impedir que el usuario use el centro de control en la pantalla de bloqueo.|
 |lockScreenBlockNotificationView|Booleano|Indica si se va a impedir que el usuario use la visualización de notificaciones en la pantalla de bloqueo.|
 |lockScreenBlockPassbook|Booleano|Indica si se va a impedir que el usuario use Passbook cuando el dispositivo está bloqueado.|

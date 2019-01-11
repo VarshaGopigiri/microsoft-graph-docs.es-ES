@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso managementCondition
 description: Condiciones de administración son eventos que se pueden desencadenar dinámicamente como ubican-barreras, límites de tiempo y límites de la red.
-ms.openlocfilehash: 3c2bc1d7594e61642b96398bfb55d6aa38f3283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085177"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834114"
 ---
 # <a name="managementcondition-resource-type"></a>tipo de recurso managementCondition
 
@@ -25,17 +26,17 @@ Condiciones de administración son eventos que se pueden desencadenar dinámicam
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Identificador único de la condición de administración. Valor asignado al crear generada por el sistema.|
-|uniqueName|String|Nombre único para la condición de administración. Se usa en expresiones de condición de administración.|
-|displayName|String|El nombre definido de administración de la condición de administración.|
-|descripción|String|El administrador define la descripción de la condición de administración.|
+|id|Cadena|Identificador único de la condición de administración. Valor asignado al crear generada por el sistema.|
+|uniqueName|Cadena|Nombre único para la condición de administración. Se usa en expresiones de condición de administración.|
+|displayName|Cadena|El nombre definido de administración de la condición de administración.|
+|descripción|Cadena|El administrador define la descripción de la condición de administración.|
 |createdDateTime|DateTimeOffset|La hora en que se creó la condición de administración. Servicio generado al lado.|
 |modifiedDateTime|DateTimeOffset|La hora en que se modificó por última vez la condición de administración. Se actualizó el lado de servicio.|
-|eTag|String|ETag de la condición de administración. Se actualizó el lado de servicio.|
+|eTag|Cadena|ETag de la condición de administración. Se actualizó el lado de servicio.|
 |applicablePlatforms|colección de [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Las plataformas aplicables para esta condición de administración.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Descripción|
+|Relación|Tipo|Description|
 |:---|:---|:---|
 |managementConditionStatements|colección de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Las instrucciones de condición de administración asociadas a la condición de administración.|
 

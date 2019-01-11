@@ -1,12 +1,13 @@
 ---
 title: Revisores accessReview de lista
 description: En el anuncio de Azure access revisa la característica, recuperar los revisores de un objeto accessReview.
-ms.openlocfilehash: 24c8b3dacbbe1a5868c9ba82141f37b006dc7a75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 042887944902be9a603ae0581835c8d55355f8a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27084658"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829375"
 ---
 # <a name="list-accessreview-reviewers"></a>Revisores accessReview de lista
 
@@ -30,7 +31,7 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Obligatorio. |
+| Autorización | string | Bearer \{token\}. Necesario. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.
@@ -75,8 +76,8 @@ Content-type: application/json
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Obtener accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recuperar una revisión de access. |
-|[Agregar revisor accessReview](accessreview-addreviewer.md) |     Ninguna.   |   Agregar un revisor a una accessReview. |
-|[Quitar accessReview revisor](accessreview-removereviewer.md) | Ninguna. |   Quitar un revisor de un accessReview. |
+|[Agregar revisor accessReview](accessreview-addreviewer.md) |     Ninguno.   |   Agregar un revisor a una accessReview. |
+|[Quitar accessReview revisor](accessreview-removereviewer.md) | Ninguno. |   Quitar un revisor de un accessReview. |
 
 
 <!-- {
