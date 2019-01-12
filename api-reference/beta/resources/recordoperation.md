@@ -3,12 +3,13 @@ title: tipo de recurso recordOperation
 description: El tipo de recordOperation
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: be6a124fcd7175489679a8c2392218530d510e9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 2fdf8b6f1f00429e676d778c0095d4554fff4a18
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948748"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
 
@@ -18,7 +19,7 @@ El tipo de recordOperation
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                       | Tipo                        | Description                                                                                                                                       |
+| Propiedad                       | Tipo                        | Descripción                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | Cadena                      | El contexto de cliente.                                                                                                                               |
 | completionReason               | Cadena                      | Los valores posibles son: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError` y `none`. |

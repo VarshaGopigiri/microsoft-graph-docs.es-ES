@@ -3,12 +3,13 @@ title: Actualizar windowsInformationProtectionNetworkLearningSummary
 description: Actualice las propiedades de un objeto windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74df8f54ddec226372df1a4a49b7746f95b2c023
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 22c54ad54c63b0863a86e4b8ec0c20569b1862e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876919"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948613"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Actualizar windowsInformationProtectionNetworkLearningSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

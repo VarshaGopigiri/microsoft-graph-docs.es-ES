@@ -2,12 +2,14 @@
 title: Enumerar subscribedSkus
 description: Recupera la lista de suscripciones comerciales que ha adquirido una organización.
 localization_priority: Priority
-ms.openlocfilehash: bf382b697976ba264b610afb2946abb094f8ac4f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 93500903e0936f734eaab33ccf03c4b2a4a9483e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885242"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948621"
 ---
 # <a name="list-subscribedskus"></a>Enumerar subscribedSkus
 Recupera la lista de suscripciones comerciales que ha adquirido una organización.
@@ -33,7 +35,7 @@ Este método **no** es compatible con los [parámetros de consulta de OData](htt
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | &lt;token&gt; de portador. *Obligatorio* |
+| Authorization  | string  | &lt;token&gt; de portador. *Obligatorio* |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.
