@@ -3,12 +3,13 @@ title: tipo de recurso windowsKioskSingleUWPApp
 description: La clase que se usa para identificar la información de aplicación UWP para la configuración de quiosco
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c11469784e2c450b151c9a81a07f6c1568cf3a3a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c59af9f5828a56d6d55e0f2bc0dc486e45321e8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959096"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso windowsKioskSingleUWPApp
 
@@ -21,7 +22,7 @@ La clase que se usa para identificar la información de aplicación UWP para la 
 Hereda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)|Esta es la única aplicación de usuario modelo de identificador (AUMID) que estará disponible para iniciar el uso en el modo de pantalla completa|
 

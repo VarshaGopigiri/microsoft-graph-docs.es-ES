@@ -1,12 +1,14 @@
 ---
 title: Experiencias multidispositivo en Microsoft Graph
 description: 'En el mundo actual de varios dispositivos, la forma en que los consumidores usan los dispositivos abarca distintas plataformas y factores de forma: pueden leer las noticias de la mañana en sus tabletas, consultar el correo electrónico en el teléfono al ir al trabajo, y usar el equipo PC de escritorio en la oficina. Por la noche, puede que vean películas en las consolas multimedia del hogar y usen altavoces inteligentes para informarse sobre las noticias del día. El cliente medio usa varios dispositivos y plataformas a lo largo del día. '
-ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092790"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920690"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Experiencias multidispositivo en Microsoft Graph
 

@@ -2,12 +2,14 @@
 title: Conexión de datos de Microsoft Graph (versión preliminar)
 description: 'La conexión de datos de Microsoft Graph muestra los datos de Office 365 y los recursos de Microsoft Azure a través de una canalización de datos principales. Puede usar la conexión de datos de Microsoft Graph para desarrollar aplicaciones inteligentes que accedan a datos importantes mediante el uso de las mejores herramientas de desarrollo provistas por Microsoft, todo esto dentro de la nube segura de Microsoft. Mejorar la productividad es un desafío de todas las empresas. Esto significa que crear productos que incrementen la productividad de los trabajadores del conocimiento representa una enorme oportunidad. '
 author: ajacks-msft
-ms.openlocfilehash: 283ad9044eb5ae5bc53bb4b72e4d6d1f2434cfee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: data-connect
+ms.openlocfilehash: 412cfa0fd5a4638d3831c3f23a4e6d943549cb9e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914293"
 ---
 # <a name="microsoft-graph-data-connect-preview"></a>Conexión de datos de Microsoft Graph (versión preliminar)
 

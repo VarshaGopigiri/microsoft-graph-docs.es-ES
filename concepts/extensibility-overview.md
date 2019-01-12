@@ -2,12 +2,13 @@
 title: Agregar datos personalizados a los recursos mediante extensiones
 description: Microsoft Graph proporciona un único punto de conexión de API que le da acceso a información y datos centrados en personas enriquecidos a través de varios recursos como user y message. También puede extender Microsoft Graph con sus propios datos de aplicación. Puede agregar propiedades personalizadas a los recursos de Microsoft Graph sin necesidad de un almacén de datos externo.
 author: dkershaw10
-ms.openlocfilehash: ccbd86fda648bf30d46c9ad3c92afa92bed1f6a4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 7b1789fb12a971dab3b5ad591bc65fc49b85c76e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334961"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865096"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Agregar datos personalizados a los recursos mediante extensiones
 

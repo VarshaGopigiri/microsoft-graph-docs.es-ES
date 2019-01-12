@@ -2,12 +2,14 @@
 title: tipo de recurso circularGeofenceManagementCondition
 description: Contiene la información para definir una condición de administración ubican-barrera circular, un área de interés, para supervisar.
 localization_priority: Normal
-ms.openlocfilehash: de1f924cf1e56cbb1084122b01b001e21dd6b5f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: bd7ae4b50ab7ec1497544fe8247f5d6d7e80e083
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828892"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925367"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>tipo de recurso circularGeofenceManagementCondition
 
@@ -44,7 +46,7 @@ Hereda de [locationManagementCondition](../resources/intune-fencing-locationmana
 |radiusInMeters|Single|Radio en metros.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |managementConditionStatements|colección de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Las instrucciones de condición de administración asociadas a la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 

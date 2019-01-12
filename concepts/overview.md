@@ -2,12 +2,13 @@
 title: Información general de Microsoft Graph
 description: Microsoft Graph es la puerta de enlace a datos y la inteligencia de Microsoft 365. Microsoft Graph proporciona un modelo de programación unificado que puede usar para aprovechar la gran cantidad de datos en Office 365, Enterprise Mobility + Security y Windows 10.
 author: jthake-msft
-ms.openlocfilehash: 754580e0f5a6af628a2bf18c11a0a20d3c2d1329
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879915"
 ---
 # <a name="overview-of-microsoft-graph"></a>Información general de Microsoft Graph
 
@@ -46,8 +47,7 @@ Puede usar Microsoft Graph para crear experiencias en torno al contexto único d
 
 Puede realizar todas estas acciones, entre otras, con la API de Microsoft Graph.
 
->
-  **Note:** Al usar la API de Microsoft Graph, acepta las [Condiciones de uso de Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) y la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
+>**Note:** Al usar la API de Microsoft Graph, acepta las [Condiciones de uso de Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) y la [Declaración de privacidad de Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### <a name="popular-requests"></a>Solicitudes populares
 

@@ -1,12 +1,13 @@
 ---
 title: Recorrido por Microsoft Graph
 description: Además de utilizar la API de Microsoft Graph para leer y escribir datos, puede utilizar una serie de modelos de solicitud para realizar un recorrido entre los recursos de Microsoft Graph. El documento de metadatos también le ayuda a entender el modelo de datos de los recursos y las relaciones en Microsoft Graph.
-ms.openlocfilehash: 33f9ace57c7a0c3166e43a6ca1264174962752e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: dc4cafc00516f4222ba6ec860dd45ff96d608dd8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092797"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863836"
 ---
 # <a name="traverse-microsoft-graph"></a>Recorrido por Microsoft Graph
 

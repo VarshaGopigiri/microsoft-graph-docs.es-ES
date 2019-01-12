@@ -2,12 +2,14 @@
 title: Introducción a la API de tareas y planes de Planner
 description: Planner proporciona a los equipos una forma simple y visual de organizar su trabajo. Los clientes pueden usar Planner para crear planes, organizar y asignar tareas, compartir el progreso y colaborar en contenido.  Planner proporciona varias experiencias interactivas como un panel de tareas, una página de gráficos y una vista Programación, así como aplicaciones integradas en Office 365.
 author: TarkanSevilmis
-ms.openlocfilehash: cbe56021ad3aad08359b46b06a4ad2e285cac036
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: planner
+ms.openlocfilehash: c2e8be27eeb4f91b3030701e2f8416fecf29c2d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357165"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947074"
 ---
 # <a name="planner-tasks-and-plans-api-overview"></a>Introducción a la API de tareas y planes de Planner
 Planner proporciona a los equipos una forma simple y visual de organizar su trabajo. Los clientes pueden usar Planner para crear planes, organizar y asignar tareas, compartir el progreso y colaborar en contenido.  Planner proporciona varias experiencias interactivas como un panel de tareas, una página de gráficos y una vista Programación, así como aplicaciones integradas en Office 365.

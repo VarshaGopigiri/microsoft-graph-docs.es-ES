@@ -3,12 +3,13 @@ title: tipo de recurso androidDeviceOwnerWiFiConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar el dispositivo Android para conectarse al extremo de Wi-Fi deseado. Mediante la especificación de los tipos de seguridad y el método de autenticación esperen por el extremo de Wi-Fi que puede hacer que la conexión Wi-Fi transparente para el usuario final. Este perfil proporciona los tipos de seguridad limitado y más sencillo que el perfil de empresa Wi-Fi.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f0db7889058816a6c09d754d068a851a7612407d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c80c535b248091cbef270e546dc9a401809f2f15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880174"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958456"
 ---
 # <a name="androiddeviceownerwificonfiguration-resource-type"></a>tipo de recurso androidDeviceOwnerWiFiConfiguration
 
@@ -49,7 +50,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |preSharedKeyIsSet|Booleano|Ésta es la clave previamente compartida para la red Wi-Fi Personal WPA.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

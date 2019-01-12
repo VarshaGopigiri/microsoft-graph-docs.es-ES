@@ -2,12 +2,14 @@
 title: Información general sobre la API de calendario de Outlook
 description: El calendario de Outlook forma parte del centro de mensajería de Outlook en Office 365 que también le permite administrar correos electrónicos y contactos, buscar información sobre los usuarios de la organización.
 author: angelgolfer-ms
-ms.openlocfilehash: 44578d5ec37e25b66cceb11692a4519f6198ca1d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: f147f3b8edf67940cbb3d0d86a3c3b3c1018895f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952954"
 ---
 # <a name="outlook-calendar-api-overview"></a>Información general sobre la API de calendario de Outlook
 

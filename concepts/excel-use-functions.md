@@ -1,12 +1,15 @@
 ---
 title: Usar funciones de libro en Excel con Microsoft Graph
 description: 'Puede invocar cualquier función de libro con la sintaxis siguiente: `POST /workbook/functions/{function-name}`. Especifique los argumentos de la función en el cuerpo con un objeto JSON. Las cadenas `value` y `error` resultantes de la función se devuelven en el objeto de resultado de la función. El valor `error` de `null` indica que la función se ha ejecutado correctamente.'
-ms.openlocfilehash: 36b07277123ccb04de5607a513cee6f576be5550
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 868695eb6f3ab4ddd7354512477d4abcf0708d8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092948"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929980"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Usar funciones de libro en Excel con Microsoft Graph
 

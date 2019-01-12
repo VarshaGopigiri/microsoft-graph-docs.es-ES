@@ -2,18 +2,19 @@
 title: tipo de recurso office365ActiveUserCounts
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 887f9b08d7f46aac023fbd0f34e6174e5f422760
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 2eaeccb1fa3b67c6b3e1d2d7c88a1dfad4e40e88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882722"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959128"
 ---
 # <a name="office365activeusercounts-resource-type"></a>tipo de recurso office365ActiveUserCounts
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad          | Tipo   | Description                              |
+| Propiedad          | Tipo   | Descripción                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Fecha   | La fecha más reciente del contenido.          |
 | office365         | Int64  | El número de usuarios activos en Office 365. Este número incluye todos los usuarios activos en Exchange, OneDrive, SharePoint, Skype para profesionales, Yammer y Microsoft Teams. Puede encontrar la definición de usuario activo para cada producto en la descripción de la propiedad respectivos. |

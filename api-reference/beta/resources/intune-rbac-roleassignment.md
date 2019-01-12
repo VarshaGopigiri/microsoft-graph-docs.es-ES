@@ -3,12 +3,13 @@ title: Tipo de recurso roleAssignment
 description: El recurso de la asignación de roles. Las asignaciones de roles unen la definición de rol con miembros y ámbitos. Puede haber una o más asignaciones de roles por rol. Esto se aplica a los roles integrados y personalizados.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7cb3b07abc47224b2f96a35f4099d3a691b6c901
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d3f50e028bed17daf9acfe0eaf62776476b1bb61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927572"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 
