@@ -3,12 +3,13 @@ title: tipo de enumeración managedAppFlaggedReason
 description: La razón por la que se ha marcado un usuario
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 15c4041b4511ab71ac16520297d5c8bb3e63b4e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc4749a1a5b121362c34499511b7e207fb2c4e1e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888042"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961802"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>tipo de enumeración managedAppFlaggedReason
 
@@ -18,7 +19,7 @@ ms.locfileid: "27888042"
 
 La razón por la que se ha marcado un usuario
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|No existe ningún problema.|
 |rootedDevice|1|El registro de la aplicación se está ejecutando en un dispositivo con raíz o desbloqueado.|

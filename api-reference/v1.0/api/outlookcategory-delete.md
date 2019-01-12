@@ -3,12 +3,13 @@ title: Eliminar categoría de Outlook
 description: Eliminar el objeto outlookCategory especificado.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c54c35347f26a957e2779aa90f7f6a951ef48ada
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5c909176634d64245d5ff5521c0da68b02e8777b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839700"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972267"
 ---
 # <a name="delete-outlook-category"></a>Eliminar categoría de Outlook
 

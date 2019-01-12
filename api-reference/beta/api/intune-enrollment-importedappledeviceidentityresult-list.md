@@ -3,12 +3,13 @@ title: Lista importedAppleDeviceIdentityResults
 description: Propiedades de la lista y relaciones de los objetos importedAppleDeviceIdentityResult.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e8696335108045f9b89eef5ab8743db6c5442b21
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1437470bc125e5cf2ec3e42622981421cab7df7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877857"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973107"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>Lista importedAppleDeviceIdentityResults
 

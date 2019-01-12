@@ -3,12 +3,13 @@ title: Eliminar windows10ImportedPFXCertificateProfile
 description: Elimina un windows10ImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 795a6e9d2c9b53a31cb6a50298d9bb3047f2fd8d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1f38207b7ad8bb8d2b1d6f6490e9301e2ef6a0c2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868939"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973471"
 ---
 # <a name="delete-windows10importedpfxcertificateprofile"></a>Eliminar windows10ImportedPFXCertificateProfile
 

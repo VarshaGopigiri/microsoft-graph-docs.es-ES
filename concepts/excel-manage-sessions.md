@@ -1,12 +1,15 @@
 ---
 title: Administrar sesiones y persistencia Excel con Microsoft Graph
 description: Si la aplicación necesita hacer más de una o dos llamadas a la API de Excel, debería crear una sesión y pasar el identificador de sesión con cada solicitud. La presencia de un identificador de sesión en las solicitudes asegura que usa la API de Excel de la manera más eficiente posible.
-ms.openlocfilehash: 6fe869aaab62b47934c91194eeb75229d8215e9a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 151119a2a2861b64db126c8f49d0b916a6f563e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092783"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921692"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Administrar sesiones y persistencia Excel con Microsoft Graph
 

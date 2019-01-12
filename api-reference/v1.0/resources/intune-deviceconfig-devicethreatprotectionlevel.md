@@ -3,12 +3,13 @@ title: tipo de enumeración deviceThreatProtectionLevel
 description: Niveles de protección de amenaza de dispositivo para la API de protección de amenaza de dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa287d9259ed88f1b2240fd9bbdcaf77bcf9170e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a5b908b3d978c6a05897f466e43651b50f9931b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850585"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974989"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>tipo de enumeración deviceThreatProtectionLevel
 
@@ -16,7 +17,7 @@ ms.locfileid: "27850585"
 
 Niveles de protección de amenaza de dispositivo para la API de protección de amenaza de dispositivo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |no está disponible|0|Valor predeterminado. No la use.|
 |protegido|1|Requisitos de dispositivos de nivel de amenaza: protegido. Esto es el nivel más seguro y representa que no hay amenazas se han encontrado en el dispositivo.|

@@ -2,12 +2,14 @@
 title: Tipo de recurso subscribedSku
 description: " crear, update y delete no son compatibles. No se admiten expresiones de filtro de consulta. Se hereda de directoryObject."
 localization_priority: Normal
-ms.openlocfilehash: 07f40c766d7f46974cf99b9954f63a61c2c0c621
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 01dbbf8727ab361b3763e2343e7cc72a3676848b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829606"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960157"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 

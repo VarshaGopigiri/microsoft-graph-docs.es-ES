@@ -3,12 +3,13 @@ title: tipo de recurso de audioconferencia
 description: Representa la información de acceso telefónica de un onlineMeeting.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 9bd8343f29a797a24044f02aa2a00bd098c35007
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: cd65b094a17ad3fa470471c3ed6dd3908367e578
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843627"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977510"
 ---
 # <a name="audioconferencing-resource-type"></a>tipo de recurso de audioconferencia
 
@@ -18,7 +19,7 @@ Representa la información de acceso telefónica de un [onlineMeeting](onlinemee
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad            | Tipo    | Description                                                                    |
+| Propiedad            | Tipo    | Descripción                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | Cadena  | Una dirección URL a la página web accesibles de forma externa que contiene la información de marcado. |
 | leaderPasscode      | Cadena  | La contraseña de coordinador necesaria para conectarse al proveedor de conferencia de Audio.      |

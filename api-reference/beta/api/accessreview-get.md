@@ -2,12 +2,14 @@
 title: Obtener accessReview
 description: 'En el anuncio de Azure access revisa la característica, recuperar un objeto accessReview.  '
 localization_priority: Normal
-ms.openlocfilehash: 471cebe3dbfa60e6cc05e2be546504216163ee0f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: be946e07a7714dc744847d73ee49718237fac92e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926662"
 ---
 # <a name="get-accessreview"></a>Obtener accessReview
 
@@ -36,7 +38,7 @@ GET /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

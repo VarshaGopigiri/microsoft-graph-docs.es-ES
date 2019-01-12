@@ -3,12 +3,13 @@ title: Crear androidForWorkPkcsCertificateProfile
 description: Crear un nuevo objeto androidForWorkPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b30f7c3312406dcc0b732c0c9bcc1183d7f7ed66
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2718dac1c4b624983f445afa351e8e80882cb0ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832611"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963853"
 ---
 # <a name="create-androidforworkpkcscertificateprofile"></a>Crear androidForWorkPkcsCertificateProfile
 

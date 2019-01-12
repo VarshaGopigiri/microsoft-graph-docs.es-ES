@@ -3,12 +3,13 @@ title: tipo de recurso importedWindowsAutopilotDeviceIdentityUpload
 description: Importe los dispositivos de piloto automático de windows mediante carga.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da4a543dcc3275dd2c68943bab54c0ef7120a1b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 543cf39878dc5dd72f7ccd1c7b338b4092f0f800
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861246"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963657"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>tipo de recurso importedWindowsAutopilotDeviceIdentityUpload
 
@@ -33,7 +34,7 @@ Importe los dispositivos de piloto automático de windows mediante carga.
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Estado de la carga. Los valores posibles son: `noUpload`, `pending`, `complete` y `error`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |deviceIdentities|Colección [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Colección de todos los dispositivos de piloto automático como parte de esta carga.|
 

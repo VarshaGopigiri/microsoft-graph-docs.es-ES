@@ -3,12 +3,13 @@ title: acción setDeviceName
 description: Establecer el nombre de dispositivo del dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 006ca412c59df6c4e0184827e52b3d790d7ea8bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6593dded48a6c47d624da66c7fb5e4a2c1789393
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894106"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968970"
 ---
 # <a name="setdevicename-action"></a>acción setDeviceName
 
@@ -49,7 +50,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |deviceName|Cadena|Todavía no documentado|
 

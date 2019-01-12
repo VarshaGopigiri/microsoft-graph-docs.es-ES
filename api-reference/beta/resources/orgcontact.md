@@ -2,12 +2,14 @@
 title: tipo de recurso orgContact
 description: Aquí tiene una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 34f929e1b49c60269845d27bf0d8781a6d17b32c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832973"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918577"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso orgContact
 
@@ -28,7 +30,7 @@ ms.locfileid: "27832973"
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 | addresses                    | [physicalOfficeAddress](physicalofficeaddress.md)            | Direcciones postales para este contacto de la organización. Por ahora un contacto sólo puede tener una dirección física. |
 | companyName                  | String                                                    | Nombre de la compañía que este contacto organizativa pertenecen a.                                                                                                                                                                                                                                                                                                                 |
@@ -49,7 +51,7 @@ ms.locfileid: "27832973"
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo   |Description|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |directReports|Colección [directoryObject](directoryobject.md)| Informes de directos del contacto. (Los usuarios y contactos que tienen su propiedad administrador establecer a este contacto.)  Es de sólo lectura. Admite valores NULL.|
 |manager|[directoryObject](directoryobject.md)| El usuario o el contacto que es administrador de este contacto. Solo lectura.|

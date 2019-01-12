@@ -3,12 +3,13 @@ title: tipo de recurso de equipo
 description: 'Un equipo en Microsoft Teams es una colección de canales. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 7dff1bb05b2abe604963657d4691766eeeaae4ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878550"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976936"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipo
 
@@ -39,7 +40,7 @@ Para obtener más información sobre cómo trabajar con los miembros de los equi
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo   | Description |
+| Propiedad | Tipo   | Descripción |
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Opciones para configurar el uso de Giphy, memes y pegatinas en el equipo.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el equipo.|
@@ -50,7 +51,7 @@ Para obtener más información sobre cómo trabajar con los miembros de los equi
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo   | Description |
+| Relación | Tipo   | Descripción |
 |:---------------|:--------|:----------|
 |canales|colección de [canal](channel.md)|La colección de canales de & mensajes asociados con el equipo.|
 |installedApps|colección de [teamsAppInstallation](teamsappinstallation.md)|Las aplicaciones instaladas en este equipo.|

@@ -3,12 +3,13 @@ title: tipo de enumeración vpnTrafficRuleRoutingPolicyType
 description: Especifica la directiva de enrutamiento para una regla de tráfico VPN.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b44a2b58cc42e9f3f88964d79473327f4ca2b74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2c8ec4303dc16c7cb0606e4b9cf86594446f571e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855324"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974955"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>tipo de enumeración vpnTrafficRuleRoutingPolicyType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27855324"
 
 Especifica la directiva de enrutamiento para una regla de tráfico VPN.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|Ninguna directiva de enrutamiento especificada.|
 |splitTunnel|1|El tráfico de red para la aplicación especificada se enrutarán a través de la VPN.|
