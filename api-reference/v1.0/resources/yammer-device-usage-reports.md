@@ -2,12 +2,13 @@
 title: Obtener informes de uso de dispositivos de Yammer
 description: Los informes de uso de dispositivos para Yammer le ofrecen información sobre los dispositivos que usan los usuarios para interactuar en Yammer. Puede ver el número de usuarios por tipo de dispositivo durante un período de tiempo seleccionado y ver detalles por usuario.
 localization_priority: Normal
-ms.openlocfilehash: 8ead8d84007507debede65716a4ab1512b0f0d1b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 009d33b0a12f7785a5802f4880acb617f3652f77
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894050"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930400"
 ---
 # <a name="yammer-device-usage-reports"></a>Obtener informes de uso de dispositivos de Yammer
 

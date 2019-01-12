@@ -3,12 +3,13 @@ title: tipo de recurso win32LobAppPowerShellScriptDetection
 description: Contiene las propiedades de la secuencia de comandos de PowerShell para detectar una aplicación de Win32
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bdd3c0e6864a3568b4f1efb7c1c18a25f3e7c84d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 38a3df87ca5492b89000fc1090395d94c64e1888
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926970"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>tipo de recurso win32LobAppPowerShellScriptDetection
 
@@ -21,7 +22,7 @@ Contiene las propiedades de la secuencia de comandos de PowerShell para detectar
 Hereda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |enforceSignatureCheck|Booleano|Un valor que indica si se exige la comprobación de firma|
 |runAs32Bit|Booleano|Un valor que indica si este script se debe ejecutar como de 32 bits|

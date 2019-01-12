@@ -3,12 +3,13 @@ title: Lista androidForWorkWiFiConfigurations
 description: Propiedades de la lista y relaciones de los objetos androidForWorkWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 80496b55cf8efe78e60622612db68d48df112988
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3bc5da25202fb4c7e5385c39eeec1428926a3acb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929160"
 ---
 # <a name="list-androidforworkwificonfigurations"></a>Lista androidForWorkWiFiConfigurations
 

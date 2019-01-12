@@ -2,12 +2,14 @@
 title: tipo de enumeración ratingUnitedKingdomMoviesType
 description: Películas clasificación etiquetas en Reino Unido
 author: tfitzmac
-ms.openlocfilehash: ec8d134cc1ca3425c7503f6b072d37d88990191c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 1b1c29e579d3a22bdf848b6bd01bdf2261541938
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332392"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952695"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeración ratingUnitedKingdomMoviesType
 

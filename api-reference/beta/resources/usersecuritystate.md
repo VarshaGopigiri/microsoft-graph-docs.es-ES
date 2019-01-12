@@ -2,12 +2,14 @@
 title: tipo de recurso userSecurityState
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: dd471b06f20327eb38734276ea0562ab35db6358
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e7ac834e9defccf846f62b402c79ffe05370bf2b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961634"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso userSecurityState
 
@@ -17,7 +19,7 @@ Contiene información de estado acerca de la cuenta de usuario.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad   | Tipo |Description|
+| Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |aadUserId|Cadena|AAD usuario identificador (GUID) - objeto representa la entidad de usuario físicos/multi-account.|
 |accountName|Cadena|Nombre de cuenta de la cuenta de usuario (sin dominio de Active Directory o dominio DNS) - (también denominada `mailNickName`).|

@@ -2,12 +2,14 @@
 title: Crear accessReview
 description: En Azure AD tener acceso a la característica de revisiones, crear un nuevo objeto accessReview.
 localization_priority: Normal
-ms.openlocfilehash: 1ee5ce696f1d71c57adf9e6c5ee30c067536c8ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2bb8db52dd3e5086ba9559ef318a94b8ac3a3918
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851446"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942272"
 ---
 # <a name="create-accessreview"></a>Crear accessReview
 
@@ -36,14 +38,14 @@ POST /accessReviews
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [accessReview](../resources/accessreview.md) .
 
 La siguiente tabla muestran las propiedades que son necesarias cuando se crea un accessReview.
 
-| Propiedad     | Tipo        | Description |
+| Propiedad     | Tipo        | Descripción |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | Nombre de la revisión de acceso.  |
 | `startDateTime`           |`DateTimeOffset`                                                | La fecha y hora cuando la revisión está programada para que se inicie.  Esto debe ser una fecha en el futuro.   |

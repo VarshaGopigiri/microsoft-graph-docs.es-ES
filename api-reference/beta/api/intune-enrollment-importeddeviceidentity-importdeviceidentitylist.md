@@ -3,12 +3,13 @@ title: acción importDeviceIdentityList
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d960efba1bca6f080d8d5847c458dbfd9537013a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: deb721bcc086575a1dfee35f893da07b49f8ab69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851768"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930449"
 ---
 # <a name="importdeviceidentitylist-action"></a>acción importDeviceIdentityList
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |importedDeviceIdentities|colección de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Todavía no documentado|
 |overwriteImportedDeviceIdentities|Booleano|Todavía no documentado|

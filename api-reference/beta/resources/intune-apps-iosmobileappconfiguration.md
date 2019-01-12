@@ -2,12 +2,14 @@
 title: Tipo de recurso iosMobileAppConfiguration
 description: Contiene las propiedades, las propiedades heredadas y las acciones para las configuraciones de la aplicación móvil de iOS.
 localization_priority: Normal
-ms.openlocfilehash: 01ebda72b6be79455a691e88dca4cb8df5938b5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: c354a1248b782d08e751a1215edc9825de1da147
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886320"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912599"
 ---
 # <a name="iosmobileappconfiguration-resource-type"></a>Tipo de recurso iosMobileAppConfiguration
 

@@ -2,12 +2,14 @@
 title: Get eventMessage
 description: Expanda el parámetro en la propiedad de navegación de **eventos** para obtener el evento asociado en el calendario de un asistente.
 localization_priority: Normal
-ms.openlocfilehash: ea429ba661d9fd75c45adf50c1cec2bb5a2227cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 53428679904ba41ce5a539d62eba2a48cce4eedc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873818"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956706"
 ---
 # <a name="get-eventmessage"></a>Get eventMessage
 

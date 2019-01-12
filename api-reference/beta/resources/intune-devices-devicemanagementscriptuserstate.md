@@ -3,12 +3,13 @@ title: tipo de recurso deviceManagementScriptUserState
 description: Contiene las propiedades de usuario de ejecución de la secuencia de comandos de administración de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf355a6ab2c217fa802288f6d2f4f062a3c47f4b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d74e8276603355af58ccff50401f742c56147d7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942251"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso deviceManagementScriptUserState
 
@@ -35,7 +36,7 @@ Contiene las propiedades de usuario de ejecución de la secuencia de comandos de
 |userPrincipalName|Cadena|Nombre de principio de usuario del usuario específico.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |deviceRunStates|colección de [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Lista de los Estados de ejecución para esta secuencia de comandos en todos los dispositivos de usuario específico.|
 

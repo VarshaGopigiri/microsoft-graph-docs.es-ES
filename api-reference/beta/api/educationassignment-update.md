@@ -2,12 +2,14 @@
 title: Actualizar educationassignment
 description: Actualizar el objeto de asignación. Sólo los profesores en la clase pueden hacerlo. Tenga en cuenta que no se puede usar una solicitud de revisión para cambiar el estado de una asignación. Utilice la acción de publicación para cambiar el estado de la asignación.
 localization_priority: Normal
-ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838293"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960353"
 ---
 # <a name="update-educationassignment"></a>Actualizar educationassignment
 
@@ -38,7 +40,7 @@ PATCH /education/classes/{id}/assignments/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |allowLateSubmissions|Booleano| Si se pueden enviar envíos después de la fecha de vencimiento.|
 |allowStudentsToAddResourcesToSubmission|Booleano| Si un estudiante puede agregar recursos a una presentación. Indica si los únicos elementos en el envío proceden de la lista de recursos de la asignación. |

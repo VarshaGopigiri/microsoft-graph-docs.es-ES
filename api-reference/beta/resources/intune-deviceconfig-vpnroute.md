@@ -3,12 +3,13 @@ title: tipo de recurso vpnRoute
 description: Definición de la ruta de VPN.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eaa74a1cef7d2eee8148e240cd80ca72f94adcb4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 43924b76a76060ac6576657d172757a503204a82
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860574"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927593"
 ---
 # <a name="vpnroute-resource-type"></a>tipo de recurso vpnRoute
 
@@ -18,7 +19,7 @@ ms.locfileid: "27860574"
 
 Definición de la ruta de VPN.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |destinationPrefix|Cadena|Prefijo de destino (dirección IPv4 o v6).|
 |prefixSize|Int32|Tamaño del prefijo. (1-32). Valores válidos de 1 a 32|

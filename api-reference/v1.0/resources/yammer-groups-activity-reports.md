@@ -2,12 +2,13 @@
 title: Obtener informes de actividades de grupos de Yammer
 description: Puede usar los informes de actividades de grupos de Yammer para comprender en profundidad la actividad de los grupos de Yammer en la organización y conocer cuántos grupos de Yammer se crean y usan.
 localization_priority: Normal
-ms.openlocfilehash: 9f4c9fa3462517f630e6cacfd7d713d78fe22d3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 435def4b4eec50b4c706ac3cdd3cd91c843f8818
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845356"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927838"
 ---
 # <a name="yammer-groups-activity-reports"></a>Obtener informes de actividades de grupos de Yammer
 

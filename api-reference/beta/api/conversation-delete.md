@@ -3,12 +3,13 @@ title: Eliminar conversation
 description: Elimina la conversación.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: a52735b7c67fb52906e9afcafb98629168f70f89
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: addcbcafb0b19447133a75427d98e3500990f365
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941019"
 ---
 # <a name="delete-conversation"></a>Eliminar conversación
 

@@ -2,12 +2,14 @@
 title: tipo de IdentidadDeUsuario
 description: 'Para AD Azure access revisiones, este tipo representa una identidad de usuario de Azure AD para un revisor de una revisión de access.  '
 localization_priority: Normal
-ms.openlocfilehash: 5b629fff4c5cecd513777cc5004646aac5f1c85b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 80e8cc68d4fc2f642be6c748b762fe47c7489d59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839644"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932283"
 ---
 # <a name="useridentity-type"></a>tipo de IdentidadDeUsuario
 
@@ -23,7 +25,7 @@ Este tipo hereda de [identidad](identity.md) y tiene una propiedad adicional, el
 Ninguno.  Debe incluir los objetos de este tipo en el cuerpo de una solicitud al [crear un accessReview](../api/accessreview-create.md).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 | `displayName` | `String` | Nombre para mostrar de la identidad. Tenga en cuenta que esto es posible que no siempre esté disponible o actualizado.    |
 | `id`          | `String` | Identificador único de la identidad.  |

@@ -2,12 +2,14 @@
 title: 'grupo: delta'
 description: Get recién creado, actualiza o elimina grupos, incluidos los cambios de pertenencia de grupo, sin tener que realizar un acceso completo de lectura de la colección de todo grupo. Para obtener más información, vea Uso de consulta de Delta.
 localization_priority: Normal
-ms.openlocfilehash: d9032b6066184ddf993f7fa4645cae00ed1d48b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 344b9745a998dcfb1107a1af72691184732718b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815144"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952737"
 ---
 # <a name="group-delta"></a>grupo: delta
 Get recién creado, actualiza o elimina grupos, incluidos los cambios de pertenencia de grupo, sin tener que realizar un acceso completo de lectura de la colección de todo grupo. Para obtener más información, vea [Uso de consulta de Delta](/graph/delta-query-overview) .

@@ -3,12 +3,13 @@ title: tipo de enumeración nonEapAuthenticationMethodForPeap
 description: Métodos no EAP para la autenticación cuando PEAP es el tipo EAP seleccionado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ed6fab695f461ffe35ac201fe70aa1b2f5703faa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 573a020a046bbc089fa962165bb4d6329ac61d30
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870311"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949195"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>tipo de enumeración nonEapAuthenticationMethodForPeap
 
@@ -18,7 +19,7 @@ ms.locfileid: "27870311"
 
 Métodos no EAP para la autenticación cuando PEAP es el tipo EAP seleccionado.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|Ninguno.|
 |microsoftChapVersionTwo|1|Microsoft CHAP versión 2 (MS-CHAP v2).|

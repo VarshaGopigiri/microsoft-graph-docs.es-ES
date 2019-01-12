@@ -3,12 +3,13 @@ title: tipo de recurso customSubjectAlternativeName
 description: Definición de nombre alternativo del sujeto personalizada
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b8f0587e74e9c059ca3cbbda6af6947ded3b6bce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 069cc1f6d93c785e4fc774d7988e0fc80febbb12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841135"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954123"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>tipo de recurso customSubjectAlternativeName
 
@@ -18,7 +19,7 @@ ms.locfileid: "27841135"
 
 Definición de nombre alternativo del sujeto personalizada
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de SAN personalizado. Los valores posibles son: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` y `domainNameService`.|
 |name|Cadena|Nombre de SAN personalizado|

@@ -2,12 +2,13 @@
 title: Obtener informe de actividades de Skype Empresarial
 description: Puede obtener detalles sobre la actividad en toda la organización. Estos detalles pueden resultarle útiles para investigar, planear y tomar otras decisiones empresariales para la organización.
 localization_priority: Normal
-ms.openlocfilehash: f27efa2b07345d73ef0a5b0034aca4f0f3e25793
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: fcc40f0cba1e8a5f2304554088562af15c592964
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891626"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941677"
 ---
 # <a name="skype-for-business-activity-reports"></a>Obtener informe de actividades de Skype Empresarial
 

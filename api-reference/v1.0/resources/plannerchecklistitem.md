@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerChecklistItem
 description: El recurso **plannerChecklistItem** representa un elemento de la lista de comprobación de una tarea. La lista de comprobación en una tarea está representado por el objeto de comprobación.
 localization_priority: Normal
-ms.openlocfilehash: 6b1f2002b37fc38ae4a57857c01d188d787cc84f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 554391577fb0d48c2e0fd9fe265298e1dc1dd4fb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894218"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941670"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>Tipo de recurso plannerChecklistItem
 

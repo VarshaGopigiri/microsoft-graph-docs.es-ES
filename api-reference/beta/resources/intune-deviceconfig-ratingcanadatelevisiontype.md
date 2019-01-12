@@ -3,12 +3,13 @@ title: tipo de enumeración ratingCanadaTelevisionType
 description: Etiquetas de clasificación de contenido de TV en Canadá
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ae8eb2232b2efcf38c26ecd6d0a5f3c830913e36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e62339ddac6e6666e17ee5e83aee1f53f4a45fe3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890212"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949223"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>tipo de enumeración ratingCanadaTelevisionType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27890212"
 
 Etiquetas de clasificación de contenido de TV en Canadá
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

@@ -3,12 +3,13 @@ title: tipo de enumeración windowsArchitecture
 description: Contiene las propiedades de la arquitectura de Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b594179f978c772b91ef6eb50ca1f78a36fbd07a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b09430358585ccff97b09a5b6bf276412cea6fe6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848548"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957574"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeración windowsArchitecture
 
@@ -18,7 +19,7 @@ ms.locfileid: "27848548"
 
 Contiene las propiedades de la arquitectura de Windows.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|Sin marcadores establecidos.|
 |x86|1|Si la X86 es compatible con el tipo de arquitectura de Windows.|

@@ -3,12 +3,13 @@ title: tipo de enumeración managedAppDataEncryptionType
 description: Representa el nivel a la que se cifran los datos de aplicación para las aplicaciones administradas
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f57904d45b24f6aaae9d67394facb07692add67e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 08ac7a36e142a1d19dbaaeb0263ef095072a9e01
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834149"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956818"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>tipo de enumeración managedAppDataEncryptionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27834149"
 
 Representa el nivel a la que se cifran los datos de aplicación para las aplicaciones administradas
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |useDeviceSettings|0|Datos de aplicación se cifran en función de la configuración predeterminada en el dispositivo.|
 |afterDeviceRestart|1|Datos de aplicación se cifran cuando se reinicia el dispositivo.|

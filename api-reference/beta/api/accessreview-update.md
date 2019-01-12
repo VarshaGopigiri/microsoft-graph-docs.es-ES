@@ -2,12 +2,14 @@
 title: Actualizar accessReview
 description: En la característica de revisiones de access Azure AD, actualice un objeto accessReview existente para cambiar una o varias de sus propiedades.
 localization_priority: Normal
-ms.openlocfilehash: 65420b3682eb9d9f72d95beea624eb84429628ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e09219c1979f974b62f17c52163fc93b5d2d3c2a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833750"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941362"
 ---
 # <a name="update-accessreview"></a>Actualizar accessReview
 
@@ -35,14 +37,14 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON de parámetros de un objeto [accessReview](../resources/accessreview.md) .
 
 La siguiente tabla muestran las propiedades que se pueden proporcionar cuando se actualiza un accessReview.
 
-| Propiedad     | Tipo        | Description |
+| Propiedad     | Tipo        | Descripción |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | Nombre de la revisión de acceso.  |
 | `startDateTime`           |`DateTimeOffset`                                                | La fecha y hora cuando la revisión está programada para que se inicie.  Esto debe ser una fecha en el futuro.   |

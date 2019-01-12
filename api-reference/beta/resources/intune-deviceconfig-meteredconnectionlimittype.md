@@ -3,12 +3,13 @@ title: tipo de enumeración meteredConnectionLimitType
 description: Configuración de límite de conexión intencionadas.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0bed25406ddc61cb67331092d06e0e2881c7014c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 29ac92097712d3d145ad14d682ea47502b148c4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875715"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947998"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>tipo de enumeración meteredConnectionLimitType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27875715"
 
 Configuración de límite de conexión intencionadas.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |sin restricciones|0|Sin restricciones|
 |fijo|1|Fijo|

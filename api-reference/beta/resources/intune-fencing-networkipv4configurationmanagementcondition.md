@@ -3,12 +3,13 @@ title: tipo de recurso networkIPv4ConfigurationManagementCondition
 description: Configuración de red IPv4 se pueden definir las condiciones de administración basada en la configuración que se activará cuando un dispositivo detecta cierta IP. Un IP config administración de las condiciones sólo se considerarán TRUE cuando la conexión de red está activa.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 412f5de452e23eeb58f536655c4678526e996e07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847302"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962110"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv4ConfigurationManagementCondition
 
@@ -47,7 +48,7 @@ Hereda de [networkManagementCondition](../resources/intune-fencing-networkmanage
 |dnsSuffixList|Colección String|Sufijos DNS válidos para la red actual. Por ejemplo, seattle.contoso.com|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |managementConditionStatements|colección de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Las instrucciones de condición de administración asociadas a la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 

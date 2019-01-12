@@ -3,12 +3,13 @@ title: tipo de recurso androidWorkProfileGeneralDeviceConfiguration
 description: Configuración de dispositivo general de perfil de trabajo Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f640f5a6967a45c6ea83666f94cb239978dbdbe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a0bf28d15926d853a67bd181da1ea7c5f2ffcd2b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892480"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943679"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>tipo de recurso androidWorkProfileGeneralDeviceConfiguration
 
@@ -78,7 +79,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |vpnEnableAlwaysOnLockdownMode|Booleano|Habilitar el modo de bloqueo para siempre en VPN.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

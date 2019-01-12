@@ -2,12 +2,14 @@
 title: tipo de recurso managementConditionExpression
 description: Una expresión de condición de administración es una expresión que genera un valor booleano cuando se evalúa, es decir, uno de true o false, que indica que una instrucción de condición de administración está activada o desactivada. Una expresión de condición de administración puede estar formada por una combinación de las variables de la expresión y los operadores de expresiones con valores booleanos.
 localization_priority: Normal
-ms.openlocfilehash: f7f370b348ab13ef964eab1cc7025868e4380bac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b25469c3efb9f7985bf21ad47e83c34b47f96b64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857067"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941880"
 ---
 # <a name="managementconditionexpression-resource-type"></a>tipo de recurso managementConditionExpression
 

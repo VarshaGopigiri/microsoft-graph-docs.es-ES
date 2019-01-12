@@ -3,12 +3,13 @@ title: tipo de enumeración requiredPasswordType
 description: Valores posibles de contraseñas necesarias.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2e4be0a9f1cfeb023957556b92635dd249419f14
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2546abb6f01b3d9764a2a3f915e3f0add48016b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894015"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926984"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>tipo de enumeración requiredPasswordType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27894015"
 
 Valores posibles de contraseñas necesarias.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
 |alfanuméricos|1|Se requiere una contraseña alfanumérica.|

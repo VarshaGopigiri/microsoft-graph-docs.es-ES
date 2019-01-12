@@ -3,12 +3,13 @@ title: Actualizar defaultManagedAppProtection
 description: Actualice las propiedades de un objeto defaultManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: df4d6efc83c5975589707b519cdf208ceec1e8d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: efd6275e882784131e235fee01da42508a916038
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864095"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912606"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Actualizar defaultManagedAppProtection
 

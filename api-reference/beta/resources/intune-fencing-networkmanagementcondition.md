@@ -3,12 +3,13 @@ title: tipo de recurso networkManagementCondition
 description: Contiene la información para definir una condición de administración de la red.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d91ac60ae52f3317e8148e8bb4adcaf82afac53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 00ccc045892290ff03e68a109ccc01c4d5dbf8a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806513"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927047"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>tipo de recurso networkManagementCondition
 
@@ -39,7 +40,7 @@ Hereda de [managementCondition](../resources/intune-fencing-managementcondition.
 |applicablePlatforms|colección de [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Las plataformas aplicables para esta condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |managementConditionStatements|colección de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Las instrucciones de condición de administración asociadas a la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 

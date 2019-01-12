@@ -3,12 +3,13 @@ title: Actualizar educationAssignmentResource
 description: 'Actualizar las propiedades de recurso asociado con una asignación. Sólo los profesores en una clase pueden cambiar los objetos de recurso de asignación.  '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 91321cc124baa87a82f2f1f5fecc65365cafc18d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f4178b5d6e2dac956a9d3f20461fd789f9f8e740
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879313"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935881"
 ---
 # <a name="update-educationassignmentresource"></a>Actualizar educationAssignmentResource
 
@@ -39,7 +40,7 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Booleano| Indica si este recurso se debe copiar al objeto de recurso de cada student cuando se publicó la asignación.|
 |resource|educationResource| Objeto de recurso. |

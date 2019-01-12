@@ -2,12 +2,14 @@
 title: tipo de recurso bookingAppointment
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: aed5f26d69835c69021e8c3c8c5e27f5180d6c69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 0314c8a4d451625c2ee1df332c342c1871a098ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856115"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934096"
 ---
 # <a name="bookingappointment-resource-type"></a>tipo de recurso bookingAppointment
 
@@ -28,7 +30,7 @@ Representa una cita de atención al cliente para una [bookingService](bookingser
 |[Cancel](../api/bookingappointment-cancel.md)|Ninguno| Cancelar un objeto **bookingAppointment** .|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |customerEmailAddress|Cadena|La dirección SMTP de la [bookingCustomer](bookingcustomer.md) que se reserva la cita.|
 |customerId|Cadena|El identificador de la [bookingCustomer](bookingcustomer.md) para esta cita. Si no se especifica ningún identificador cuando se crea una cita, a continuación, se crea un nuevo objeto **bookingCustomer** . Una vez establecida, se debe tener en cuenta el **customerId** inmutable.|

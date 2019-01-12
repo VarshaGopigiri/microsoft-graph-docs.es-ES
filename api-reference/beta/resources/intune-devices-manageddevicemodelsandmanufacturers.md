@@ -3,12 +3,13 @@ title: tipo de recurso managedDeviceModelsAndManufacturers
 description: Modelos y fabricantes meatadata para los dispositivos administrados en la cuenta
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 86d9f9dd0642abab73f6b750b997c75851f6be02
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a1769f82153fd8184807877c484a4dc31ebda1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875624"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927530"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>tipo de recurso managedDeviceModelsAndManufacturers
 
@@ -18,7 +19,7 @@ ms.locfileid: "27875624"
 
 Modelos y fabricantes meatadata para los dispositivos administrados en la cuenta
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |deviceModels|Colección String|Lista de modelos para los dispositivos administrados en la cuenta|
 |deviceManufacturers|Colección String|Lista de fabricantes de los dispositivos administrados en la cuenta|

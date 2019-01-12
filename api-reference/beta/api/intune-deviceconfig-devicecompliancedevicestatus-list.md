@@ -3,12 +3,13 @@ title: Incluir en una lista deviceComplianceDeviceStatuses
 description: Enumere las propiedades y las relaciones de los objetos deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9d5a869083b8a0dceea57a644962af9196563599
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd7472893cd5dbb5abad6f892506e1778f534b29
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836760"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940326"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>Incluir en una lista deviceComplianceDeviceStatuses
 

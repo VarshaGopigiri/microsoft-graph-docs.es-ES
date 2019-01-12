@@ -3,12 +3,13 @@ title: tipo de recurso enterpriseCodeSigningCertificate
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 14ed023a831257dc28a9922e1e698a79ec13c951
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 84fe89d77901c330924c57937f9bb334beab979d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842136"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945898"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>tipo de recurso enterpriseCodeSigningCertificate
 

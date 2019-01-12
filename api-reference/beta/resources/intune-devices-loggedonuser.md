@@ -3,12 +3,13 @@ title: tipo de recurso loggedOnUser
 description: Ha iniciado la sesión de usuario
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e832c6452b73a6fad39723675acb129d79c2b888
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 056fae8051b70f2146930c8a2a1ae9505c0ec679
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859755"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962096"
 ---
 # <a name="loggedonuser-resource-type"></a>tipo de recurso loggedOnUser
 
@@ -18,7 +19,7 @@ ms.locfileid: "27859755"
 
 Ha iniciado la sesión de usuario
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |userId|Cadena|Identificador de usuario|
 |lastLogOnDateTime|DateTimeOffset|Fecha hora cuando el usuario inicia sesión|

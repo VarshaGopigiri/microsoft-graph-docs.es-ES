@@ -3,12 +3,13 @@ title: Actualizar windows81GeneralConfiguration
 description: Actualice las propiedades de un objeto windows81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13aeeab7afe6c7554815dcdb1a6b0d662bc5c0bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2ab7aaa63147e7c80b03a79db688ec1f3136c3e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828409"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928769"
 ---
 # <a name="update-windows81generalconfiguration"></a>Actualizar windows81GeneralConfiguration
 

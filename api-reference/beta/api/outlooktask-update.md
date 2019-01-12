@@ -3,12 +3,13 @@ title: Actualizar outlooktask
 description: Cambiar las propiedades modificables de una tarea de Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: c0d2ff13f3e7971e686389709fbdde027458ef67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874756"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964938"
 ---
 # <a name="update-outlooktask"></a>Actualizar outlooktask
 
@@ -50,7 +51,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad | Tipo | Description |
+| Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |assignedTo|Cadena|El nombre de la persona que se le ha asignado la tarea.|
 |body|[itemBody](../resources/itembody.md)|El cuerpo de la tarea que normalmente contiene información acerca de la tarea. Tenga en cuenta que sólo el tipo HTML es compatible.|

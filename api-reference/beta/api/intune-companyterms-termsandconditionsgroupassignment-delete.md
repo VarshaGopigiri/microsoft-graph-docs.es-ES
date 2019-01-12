@@ -3,12 +3,13 @@ title: Eliminar termsAndConditionsGroupAssignment
 description: Elimina un termsAndConditionsGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0ec31c6af14bc8025537be633ae2dd58490477ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a872ac501bcf612ce930de22164b56d1552c1c7e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933746"
 ---
 # <a name="delete-termsandconditionsgroupassignment"></a>Eliminar termsAndConditionsGroupAssignment
 

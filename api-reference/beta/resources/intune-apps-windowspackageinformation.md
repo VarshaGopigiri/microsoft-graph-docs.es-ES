@@ -3,12 +3,13 @@ title: tipo de recurso windowsPackageInformation
 description: Contiene las propiedades de la información del paquete para una línea de aplicación empresarial de Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f7f3cd593670e071ae62bdb287bcebeee01d555
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac0f9aad1cdba1eaaac12754fd4a4d0ad4a6db32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926851"
 ---
 # <a name="windowspackageinformation-resource-type"></a>tipo de recurso windowsPackageInformation
 
@@ -18,7 +19,7 @@ ms.locfileid: "27849535"
 
 Contiene las propiedades de la información del paquete para una línea de aplicación empresarial de Windows.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|La arquitectura de Windows para la que se puede ejecutar esta aplicación en. Los valores posibles son: `none`, `x86`, `x64`, `arm` y `neutral`.|
 |displayName|Cadena|El nombre para mostrar.|

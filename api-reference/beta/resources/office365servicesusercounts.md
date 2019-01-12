@@ -2,18 +2,19 @@
 title: tipo de recurso office365ServicesUserCounts
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 18282aaa8dcd176a6eaa3a8176154670bfd6da9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 54ae2020a5c02bba1469e3c6c0728024c72046bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808018"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957308"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>tipo de recurso office365ServicesUserCounts
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                 | Tipo   | Description                              |
+| Propiedad                 | Tipo   | Descripción                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Fecha   | La fecha más reciente del contenido.          |
 | exchangeActive           | Int64  | El número de usuarios activos en Exchange. Cualquier usuario que puedan leer y enviar correo electrónico se considera un usuario activo. |

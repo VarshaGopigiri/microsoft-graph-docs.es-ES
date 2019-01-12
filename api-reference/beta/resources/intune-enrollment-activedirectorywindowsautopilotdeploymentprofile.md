@@ -3,12 +3,13 @@ title: tipo de recurso activeDirectoryWindowsAutopilotDeploymentProfile
 description: Perfil de implementación piloto automático de Windows
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a7928487cf0377407738e88f8a4da6a994cb0bba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a9974c2569016ee4d34d0f5d52b99f33e981f448
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866755"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932836"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -44,7 +45,7 @@ Hereda de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-win
 |deviceNameTemplate|Cadena|La plantilla usada para el nombre del dispositivo de piloto automático. Esto puede ser un texto personalizado y también puede contener el número de serie del dispositivo, o bien un número generado aleatoriamente. La longitud total del texto generado por la plantilla puede ser no más de 15 caracteres. Se hereda de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |assignedDevices|colección de [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|La lista de dispositivos asignados para el perfil. Se hereda de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |asignaciones|colección de [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)|La lista de las asignaciones de grupo para el perfil. Se hereda de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
