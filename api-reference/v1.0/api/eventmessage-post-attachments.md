@@ -3,12 +3,13 @@ title: Agregar datos adjuntos
 description: Use esta API para crear datos adjuntos.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 59e1271e6b27b68e813cb0386c8041a2608a82e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 142de170aaf55a5c417be08a9fab4dafd7567ca3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806471"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991884"
 ---
 # <a name="add-attachment"></a>Agregar datos adjuntos
 
@@ -40,7 +41,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

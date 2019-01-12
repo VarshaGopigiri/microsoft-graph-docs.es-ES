@@ -3,12 +3,13 @@ title: tipo de enumeración edgeCookiePolicy
 description: Los posibles valores para especificar las cookies que se permiten en Microsoft Edge.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4f02a6f6ca87154ed67707da6ef554fe9a5c457
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b9fcb0d338239976b8e52ab34015c9687cb39276
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871697"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991814"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>tipo de enumeración edgeCookiePolicy
 
@@ -16,7 +17,7 @@ ms.locfileid: "27871697"
 
 Los posibles valores para especificar las cookies que se permiten en Microsoft Edge.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |userDefined|0|Permitir al usuario que establezca.|
 |Permitir|1|Permitir.|

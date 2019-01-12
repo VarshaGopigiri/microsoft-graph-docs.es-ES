@@ -3,12 +3,13 @@ title: Enviar correo
 description: Envía el mensaje especificado en el cuerpo de la solicitud. De manera predeterminada, el mensaje se guarda en la carpeta Elementos enviados.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 2b0ac9b478bccf5080b2e8971bdb1ada881f5b28
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 48e6087cb8393bb4f679cabfe73d5cb280a71907
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991431"
 ---
 # <a name="send-mail"></a>Enviar correo
 

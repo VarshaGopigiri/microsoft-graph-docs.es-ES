@@ -3,12 +3,13 @@ title: Crear androidForWorkEnrollmentProfile
 description: Cree un objeto androidForWorkEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2890bba72a16933e0a45009a573044b65c099e9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cc51a0a5eede602e0757571b186a7995d8f4867b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27992045"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Crear androidForWorkEnrollmentProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,10 +49,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|accountId|Cadena|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
+|accountId|String|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
 |id|Cadena|GUID único del perfil de inscripción.|
 |displayName|Cadena|Nombre para mostrar del perfil de inscripción.|
-|descripción|Cadena|Descripción del perfil de inscripción.|
+|descripción|String|Descripción del perfil de inscripción.|
 |createdDateTime|DateTimeOffset|Fecha y hora en que se creó el perfil de inscripción.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en que se modificó el perfil de inscripción por última vez.|
 |tokenValue|Cadena|Valor del token creado más recientemente para este perfil de inscripción.|
