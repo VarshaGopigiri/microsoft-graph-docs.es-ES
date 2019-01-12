@@ -2,12 +2,14 @@
 title: Tipo de recurso androidForWorkEnrollmentProfile
 description: Perfil de inscripción usado al inscribir dispositivos COSU mediante la administración en la nube de Google.
 localization_priority: Normal
-ms.openlocfilehash: a10e3a153cc21837ab015ab0c08e8c8b6ee0ac9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: fbb497bbf56aaa830f2932a31e39ef61981ae2dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890975"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957581"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Tipo de recurso androidForWorkEnrollmentProfile
 
@@ -30,10 +32,10 @@ Perfil de inscripción usado al inscribir dispositivos COSU mediante la administ
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|accountId|Cadena|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
+|accountId|String|GUID del espacio empresarial al que pertenece el perfil de inscripción.|
 |id|Cadena|GUID único del perfil de inscripción.|
 |displayName|Cadena|Nombre para mostrar del perfil de inscripción.|
-|descripción|Cadena|Descripción del perfil de inscripción.|
+|descripción|String|Descripción del perfil de inscripción.|
 |createdDateTime|DateTimeOffset|Fecha y hora en que se creó el perfil de inscripción.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en que se modificó el perfil de inscripción por última vez.|
 |tokenValue|Cadena|Valor del token creado más recientemente para este perfil de inscripción.|

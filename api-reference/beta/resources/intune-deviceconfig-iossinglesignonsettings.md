@@ -3,12 +3,13 @@ title: tipo de recurso iosSingleSignOnSettings
 description: configuración de autenticación de Kerberos para el inicio de sesión único de iOS
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54c5656de6262692324cce8ab71a0e100672c050
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841065"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952674"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>tipo de recurso iosSingleSignOnSettings
 
@@ -18,7 +19,7 @@ ms.locfileid: "27841065"
 
 configuración de autenticación de Kerberos para el inicio de sesión único de iOS
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |allowedAppsList|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de identificadores de aplicación que tienen permiso para utilizar este inicio de sesión. Si se omite este campo, el inicio de sesión se aplica a todas las aplicaciones en el dispositivo. Esta colección puede contener un máximo de 500 elementos.|
 |allowedUrls|Colección String|Lista de direcciones URL de HTTP que se debe coincidir con el fin de utilizar este inicio de sesión. Con iOS 9.0 o posterior, se puede usar un carácter comodín.|

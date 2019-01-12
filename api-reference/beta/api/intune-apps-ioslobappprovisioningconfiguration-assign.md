@@ -3,12 +3,13 @@ title: asignar acción
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7b7f92592a0ece8169b4f4148e71df5b6297ca7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 245530ea687c6a0ead115ff74ec8fea9f90bde90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824413"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964224"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |appProvisioningConfigurationGroupAssignments|colección de [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|Todavía no documentado|
 |iOSLobAppProvisioningConfigAssignments|colección de [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Todavía no documentado|

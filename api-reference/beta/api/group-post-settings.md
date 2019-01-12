@@ -3,12 +3,13 @@ title: Crear una configuración de Active directory en grupos
 description: Utilice esta API para crear una nueva configuración de Active directory para el grupo.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 7db7072f683515ee1e5765d80184c6c284671eee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 80cb36f450617ca62ac15909c345fef762f41d53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838587"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956594"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Crear una configuración de Active directory en grupos
 
@@ -32,7 +33,7 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Descripción|
 |:---------------|:----------|
-| Autorización  | Bearer <token>. Obligatorio|
+| Authorization  | Bearer <token>. Obligatorio|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [establecer](../resources/directorysetting.md) .

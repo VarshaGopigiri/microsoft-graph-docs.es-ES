@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerPlan
 description: El recurso **plannerPlan** representa un plan en Office 365. Un plan de puede pertenecer a un grupo y contiene una colección de plannerTasks. También puede tener una colección de plannerBuckets. Cada objeto de plan tiene un objeto de detalles que puede contener más información acerca del plan. Para obtener más información acerca de las relaciones entre los grupos, los planes y tareas, vea organizador.
 localization_priority: Normal
-ms.openlocfilehash: 4890daa6ad221a36cf0029b49ce39560fc80afcd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b5d95b1bfab7404007c3139833e54f155c10d9aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888105"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950525"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 
@@ -30,9 +32,9 @@ El recurso **plannerPlan** representa un plan en Office 365. Un plan de puede pe
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Solo lectura. Fecha y hora en que se creó el plan. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
-|id|Cadena| Solo lectura. Identificador del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](tasks-identifiers-disclaimer.md) se realiza en el servicio.|
-|owner|Cadena|Identificador del [grupo](group.md) que posee el plan. Un grupo válido debe existir antes de que se puede establecer en este campo. Una vez establecida, esta propiedad no se puede actualizar.|
-|title|Cadena|Obligatorio. Título del plan.|
+|id|String| Solo lectura. Identificador del plan. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](tasks-identifiers-disclaimer.md) se realiza en el servicio.|
+|owner|String|Identificador del [grupo](group.md) que posee el plan. Un grupo válido debe existir antes de que se puede establecer en este campo. Una vez establecida, esta propiedad no se puede actualizar.|
+|title|String|Obligatorio. Título del plan.|
 |createdBy|[identitySet](identityset.md)|Solo lectura. El usuario que creó el plan.|
 |contextos|[plannerPlanContextCollection](plannerplancontextcollection.md)| Solo lectura. Experiencias de usuario adicionales en el que se usa este plan, representado como entradas de [plannerPlanContext](plannerplancontext.md) .|
 

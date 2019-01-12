@@ -3,12 +3,13 @@ title: tipo de recurso sideLoadingKey
 description: Entidad de SideLoadingKey es necesario para Windows 8 y 8.1 dispositivos a instalar línea de las aplicaciones empresariales para un inquilino.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b08715ebc8cd19ab4086fd82013301ed89efd183
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a58b835706826362e0165282234872bc77d62e78
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960346"
 ---
 # <a name="sideloadingkey-resource-type"></a>tipo de recurso sideLoadingKey
 
@@ -29,12 +30,12 @@ Entidad de SideLoadingKey es necesario para Windows 8 y 8.1 dispositivos a insta
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Lado cargar clave identificador único.|
+|id|String|Lado cargar clave identificador único.|
 |valor|String|Valor de clave de carga del lado, es valor de 5 x 5, separados por hiphens.|
-|displayName|Cadena|Lado carga de clave de nombre que se muestra a la ITPro Admins.|
-|descripción|Cadena|Clave de carga de descripción en el que se muestra a la ITPro Admins..|
+|displayName|String|Lado carga de clave de nombre que se muestra a la ITPro Admins.|
+|descripción|String|Clave de carga de descripción en el que se muestra a la ITPro Admins..|
 |totalActivation|Int32|Lado carga Total activación de la clave que se muestra a la ITPro Admins.|
-|lastUpdatedDateTime|Cadena|Lado cargar clave última actualizado fecha que se muestra a la ITPro Admins.|
+|lastUpdatedDateTime|String|Lado cargar clave última actualizado fecha que se muestra a la ITPro Admins.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

@@ -3,12 +3,13 @@ title: Crear managedAppOperation
 description: Cree un objeto managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c4afd179a33202eb7780495228f94f23326c7268
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 297296dae82a172f68b04ca13eeb9200a33aaba0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855212"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964210"
 ---
 # <a name="create-managedappoperation"></a>Crear managedAppOperation
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -46,11 +47,11 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|displayName|Cadena|El nombre de la operación.|
+|displayName|String|El nombre de la operación.|
 |lastModifiedDateTime|DateTimeOffset|La última vez que se modificó el funcionamiento de la aplicación.|
-|state|Cadena|El estado actual de la operación|
-|id|Cadena|Clave de la entidad.|
-|version|Cadena|Versión de la entidad.|
+|state|String|El estado actual de la operación|
+|id|String|Clave de la entidad.|
+|version|String|Versión de la entidad.|
 
 
 

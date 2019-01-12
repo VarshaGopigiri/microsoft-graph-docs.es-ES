@@ -3,12 +3,13 @@ title: Crear deviceCategory
 description: Cree un objeto deviceCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 59b6b581120f003167dafe230a2b9a8a485b4d74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 709217670f946d92135c15b13b2c825703337daa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843277"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950455"
 ---
 # <a name="create-devicecategory"></a>Crear deviceCategory
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -47,10 +48,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|El identificador único de la categoría de dispositivo. Solo lectura.|
+|id|String|El identificador único de la categoría de dispositivo. Solo lectura.|
 |**Incorporación de redes**|
-|displayName|Cadena|Nombre para mostrar de la categoría de dispositivo.|
-|descripción|Cadena|Descripción opcional de la categoría de dispositivo.|
+|displayName|String|Nombre para mostrar de la categoría de dispositivo.|
+|descripción|String|Descripción opcional de la categoría de dispositivo.|
 
 
 

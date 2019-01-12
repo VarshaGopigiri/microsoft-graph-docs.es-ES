@@ -3,12 +3,13 @@ title: Tipo de recurso deviceConfiguration
 description: Configuración de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c789c114f422a6e541762fb33c311cfb75ffca85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 497d382b5b4b1a16c67144883be2b3d82362c4d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957595"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -30,17 +31,17 @@ Configuración de dispositivos.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad.|
 |supportsScopeTags|Booleano|Indica si la configuración del dispositivo subyacente admite la asignación de etiquetas de ámbito. No se permite la asignación a la propiedad ScopeTags cuando este valor es false y entidades no estará visibles para los usuarios con ámbito. Esto se produce para las directivas de heredado creadas en Silverlight y se puede resolver por eliminar y volver a crear la directiva en el Portal de Azure. Esta propiedad es de sólo lectura.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo.|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo.|

@@ -2,12 +2,14 @@
 title: Enumerar mensajes
 description: 'Obtenga los mensajes del buzón del usuario que ha iniciado sesión (incluidas las carpetas Elementos eliminados y Otros correos). '
 localization_priority: Normal
-ms.openlocfilehash: cc361c3f6a4f41d96eb058fdd5f1fd8ac1d015a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6cceffb3c464c4a31bca091c833e8817c4733b7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894603"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957665"
 ---
 # <a name="list-messages"></a>Enumerar mensajes
 
@@ -68,7 +70,7 @@ Puede usar el `$filter` parámetro en la propiedad **mentionsPreview** para obte
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Prefer: outlook.body-content-type | string | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

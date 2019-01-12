@@ -3,12 +3,13 @@ title: Obtener networkManagementCondition
 description: Leer las propiedades y las relaciones del objeto networkManagementCondition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c1244e3407a2a8f10fc9fe9ee557ec04e1ea8183
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5dea824d3148a7351dfcbfa8ded82246e2523dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953143"
 ---
 # <a name="get-networkmanagementcondition"></a>Obtener networkManagementCondition
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -2,12 +2,14 @@
 title: Tipo de recurso sectionGroup
 description: Un grupo de secciones en un bloc de notas de OneNote. Los grupos de secciones pueden contener secciones y grupos de secciones.
 localization_priority: Normal
-ms.openlocfilehash: f204c5422eb5f0f2580bfbed82ed28306dd0618f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ec27343121ba20ef65703f3df1d53e6c62ccc8e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806310"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961879"
 ---
 # <a name="sectiongroup-resource-type"></a>Tipo de recurso sectionGroup
 
@@ -48,13 +50,13 @@ Aquí tiene una representación JSON del recurso.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |createdDateTime|DateTimeOffset|La fecha y la hora en que se creó el grupo de secciones. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|id|Cadena|El identificador único del grupo de secciones. Solo lectura.|
+|id|String|El identificador único del grupo de secciones. Solo lectura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidad del usuario, el dispositivo y la aplicación que creó el elemento. Solo lectura.|
 |lastModifiedDateTime|DateTimeOffset|La fecha y la hora en que se modificó por última vez el grupo de secciones. La marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y siempre pertenece a la zona horaria UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`. Solo lectura.|
-|displayName|Cadena|El nombre del grupo de secciones.|
+|displayName|String|El nombre del grupo de secciones.|
 |sectionGroupsUrl|Cadena|La dirección URL de la propiedad de navegación `sectionGroups`, que devuelve todos los grupos de secciones del grupo de secciones. Solo lectura.|
 |sectionsUrl|Cadena|La dirección URL de la propiedad de navegación `sections`, que devuelve todas las secciones del grupo de secciones. Solo lectura.|
-|self|Cadena|El punto de conexión donde puede obtener información detallada sobre el grupo de secciones. Solo lectura.|
+|self|String|El punto de conexión donde puede obtener información detallada sobre el grupo de secciones. Solo lectura.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

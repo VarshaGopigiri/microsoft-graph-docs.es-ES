@@ -3,12 +3,13 @@ title: Tipo de recurso iosUpdateDeviceStatus
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 924f355508d0be83a0d524eff5c01e0bacef201f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 854b78ce7bc520d1d8d534ca92da16abd2cbc2df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871872"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954872"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Tipo de recurso iosUpdateDeviceStatus
 
@@ -29,19 +30,19 @@ Todavía no documentado
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Estado de la instalación del informe de directiva. Los valores posibles son: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`.|
 |osVersion|String|La versión del dispositivo que se está notificando.|
 |deviceId|String|El identificador del dispositivo que se está notificando.|
 |userId|String|El identificador del usuario que se está notificando.|
 |deviceDisplayName|String|Nombre de dispositivo de DevicePolicyStatus.|
-|userName|Cadena|El nombre de usuario que se está notificando|
+|userName|String|El nombre de usuario que se está notificando|
 |deviceModel|Cadena|El modelo de dispositivo que se está notificando|
 |platform|Int32|Plataforma del dispositivo que se notifica|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|La fecha y hora en que expira el período de gracia de cumplimiento del dispositivo|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|Cadena|UserPrincipalName.|
+|userPrincipalName|String|UserPrincipalName.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

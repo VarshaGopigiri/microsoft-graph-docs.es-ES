@@ -3,12 +3,13 @@ title: Crear iosVppEBookAssignment
 description: Cree un objeto iosVppEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 22f1290231f481c8cc6bfc55850afdf1fb90f4a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5ff460b702c943268d9992bd17e99fd54369548
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883401"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963972"
 ---
 # <a name="create-iosvppebookassignment"></a>Crear iosVppEBookAssignment
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Heredado de [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
+|id|String|Clave de la entidad. Heredado de [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|El destino de la asignación para el libro electrónico. Heredado de [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|El objetivo de instalación para el libro electrónico. Se hereda de [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Los valores posibles son: `available`, `required`, `uninstall` y `availableWithoutEnrollment`.|
 

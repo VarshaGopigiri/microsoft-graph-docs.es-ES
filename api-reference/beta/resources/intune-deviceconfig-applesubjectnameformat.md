@@ -3,12 +3,13 @@ title: tipo de enumeración appleSubjectNameFormat
 description: Opciones de formato de nombre de sujeto para dispositivos de Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8c6eb02507dbf2de71aeb0d156807dcb3bcf89d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c7712ac330075440701abb05665edd680e39629
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873069"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961144"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>tipo de enumeración appleSubjectNameFormat
 
@@ -18,7 +19,7 @@ ms.locfileid: "27873069"
 
 Opciones de formato de nombre de sujeto para dispositivos de Apple.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |commonName|0|Nombre común.|
 |commonNameAsEmail|1|Nombre común como correo electrónico.|

@@ -3,12 +3,13 @@ title: Eliminar managedAppOperation
 description: Elimina un managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4efb319ede18a2a38f7d881f3d6be56ef8fbbaac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e0ed29e2dc7d6520e879bd0e2a4269881d5c5345
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816453"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959296"
 ---
 # <a name="delete-managedappoperation"></a>Eliminar managedAppOperation
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/o
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

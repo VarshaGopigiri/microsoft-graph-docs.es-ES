@@ -3,12 +3,13 @@ title: 'llamar a: silenciar'
 description: Permite a la aplicación silenciar a sí mismo.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fa4baed5af378c58f8e25dbdc5413c1bef743c32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813443"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956664"
 ---
 # <a name="call-mute"></a>llamar a: silenciar
 
@@ -40,9 +41,9 @@ POST /applications/{id}/calls/{id}/mute
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Description|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
-|clientContext|Cadena|El contexto de cliente.|
+|clientContext|String|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Si tiene éxito, este método devuelve `200 OK` código de respuesta y un objeto [commsOperation](../resources/commsoperation.md) en el cuerpo de la respuesta.

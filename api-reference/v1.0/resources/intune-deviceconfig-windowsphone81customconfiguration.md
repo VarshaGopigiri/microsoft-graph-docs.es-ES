@@ -2,12 +2,14 @@
 title: Tipo de recurso windowsPhone81CustomConfiguration
 description: Este tema proporciona descripciones de los métodos declarados, las propiedades y las relaciones expuestas por el recurso windowsPhone81CustomConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: 2357b4cdb7d8243971d42230252bf0aee058ac11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 47c371e6b3eb978c7a829e3b14a41515a4ac354e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872726"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952366"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>Tipo de recurso windowsPhone81CustomConfiguration
 
@@ -29,11 +31,11 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |omaSettings|Colección [omaSetting](../resources/intune-deviceconfig-omasetting.md)|Configuración de OMA. Esta colección puede contener un máximo de 1000 elementos.|
 

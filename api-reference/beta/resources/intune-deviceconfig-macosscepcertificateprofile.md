@@ -3,12 +3,13 @@ title: tipo de recurso macOSScepCertificateProfile
 description: Perfil de certificado de Mac OS SCEP.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2e6c36be7a537cb64b30fe92e852e0cf1809129
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f28c17f4c9e1f8a530e0ad79f8d33c3c54bec35c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894512"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961115"
 ---
 # <a name="macosscepcertificateprofile-resource-type"></a>tipo de recurso macOSScepCertificateProfile
 
@@ -54,7 +55,7 @@ Hereda de [macOSCertificateProfileBase](../resources/intune-deviceconfig-macosce
 |subjectAlternativeNameFormatString|Cadena|Cadena personalizada que define el atributo AAD.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

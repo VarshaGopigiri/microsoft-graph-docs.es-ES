@@ -2,12 +2,13 @@
 title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: Obtenga información sobre la actividad de usuario de Microsoft Teams por usuario.
 localization_priority: Priority
-ms.openlocfilehash: d31dc76ed9165ebe264b696b4900ef271fc4c929
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: b968a5cb17ad588ffea678b05a5752e226b5eb5d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867210"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960710"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 

@@ -2,12 +2,14 @@
 title: List calendarView
 description: Obtenga las repeticiones, excepciones e instancias únicas de eventos en una vista de calendario definida por un intervalo de tiempo,
 localization_priority: Normal
-ms.openlocfilehash: e56149b7a3cc89d3e1d4d149a03e409222f65374
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 8339809f212bcd4bcdb8700826397a5ca234bdd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814339"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956838"
 ---
 # <a name="list-calendarview"></a>List calendarView
 
@@ -57,7 +59,7 @@ Este método también admite los [parámetros de consulta de OData](https://deve
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
-| Autorización  | string | {token} de portador. Obligatorio.  |
+| Authorization  | string | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

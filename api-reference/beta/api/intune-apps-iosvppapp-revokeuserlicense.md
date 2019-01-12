@@ -3,12 +3,13 @@ title: acción revokeUserLicense
 description: Licencia de usuario de REVOKE asignado iOS VPP para dado app.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 241306b812615bb804a3139082a439df9eeae059
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a9c4e61a66bc2a2705586af870708242f21416d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958470"
 ---
 # <a name="revokeuserlicense-action"></a>acción revokeUserLicense
 
@@ -40,7 +41,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,9 +49,9 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|userId|Cadena|UserId para quienes licencia de aplicaciones asignado es que se desea revocar|
+|userId|String|UserId para quienes licencia de aplicaciones asignado es que se desea revocar|
 |notifyManagedDevices|Booleano|Valor Boolean que indica si se debe enviar notificación de revoke para dispositivos|
 
 

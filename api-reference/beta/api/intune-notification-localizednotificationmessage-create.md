@@ -3,12 +3,13 @@ title: Crear localizedNotificationMessage
 description: Cree un objeto localizedNotificationMessage.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 555cfa1c6c34a99bf001b9c3b1f462f1a7d3e41c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf0187177a80428924af6276eaf9df6f6456e2d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853979"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950798"
 ---
 # <a name="create-localizednotificationmessage"></a>Crear localizedNotificationMessage
 
@@ -38,7 +39,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |configuración regional|String|La configuración regional para la que se destina este mensaje.|
 |subject|String|El asunto de la plantilla del mensaje.|

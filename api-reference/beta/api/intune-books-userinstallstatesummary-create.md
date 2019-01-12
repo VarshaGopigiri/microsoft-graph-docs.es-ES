@@ -3,12 +3,13 @@ title: Crear userInstallStateSummary
 description: Cree un objeto userInstallStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8346d64a550d1e13edb939fb8d79e4e60272cbd9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b738e79c832fbfde23bfa48a84573c6d5c8f3e98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864711"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950259"
 ---
 # <a name="create-userinstallstatesummary"></a>Crear userInstallStateSummary
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |userName|String|Nombre de usuario.|
 |installedDeviceCount|Int32|Número de dispositivos instalados.|
 |failedDeviceCount|Int32|Número de dispositivos erróneos.|

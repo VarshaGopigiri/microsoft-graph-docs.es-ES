@@ -1,14 +1,15 @@
 ---
 title: Enumerar páginas
 description: Recupera una lista de objetos page.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: f06404437fbd5dc34cef6d81e5b3d692bf5ce101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 5a7796bad3afbb7f30b6200f20b667fe53cc0c89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829368"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955649"
 ---
 # <a name="list-pages"></a>Enumerar páginas
 
@@ -40,7 +41,7 @@ La respuesta predeterminada expande `parentSection` y selecciona las propiedades
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

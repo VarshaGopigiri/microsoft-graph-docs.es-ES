@@ -2,12 +2,14 @@
 title: Crear directReport
 description: Utilice esta API para crear un nuevo directReport.
 localization_priority: Normal
-ms.openlocfilehash: 8119ea6972f1ea5b4e94e68ff4acd0dc8771c99f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6dd65104fa2876e21a6ce6d0c6f81289403a24c9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862562"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954550"
 ---
 # <a name="create-directreport"></a>Crear directReport
 
@@ -32,7 +34,7 @@ POST /contacts/{id}/directReports
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione una representación JSON del objeto [directoryObject](../resources/directoryobject.md).

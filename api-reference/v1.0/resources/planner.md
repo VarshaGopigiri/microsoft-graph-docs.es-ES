@@ -2,12 +2,14 @@
 title: Tipo de recurso planner
 description: El recurso **planner** es el punto de entrada para el modelo de objetos de Planner. Devuelve un recurso **planner** singleton.  No contiene ninguna propiedad utilizable.
 localization_priority: Normal
-ms.openlocfilehash: 35088001ca2e444c1f375426fc40ff13bd2eaaec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: f6d25238436b79dec0397df1d005e67e6b17239a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821261"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955138"
 ---
 # <a name="planner-resource-type"></a>Tipo de recurso planner
 

@@ -3,12 +3,13 @@ title: Enumerar deviceAndAppManagementRoleDefinitions
 description: Enumere las propiedades y las relaciones de los objetos deviceAndAppManagementRoleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 97919fd8a4fc61da2c54cdd53ebbdd19e20eafc3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bbf992b817014447ad06b014b4e2f0dd2dcd8f69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960458"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>Enumerar deviceAndAppManagementRoleDefinitions
 
@@ -36,7 +37,7 @@ GET /deviceManagement/roleDefinitions
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

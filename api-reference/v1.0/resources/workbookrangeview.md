@@ -3,12 +3,13 @@ title: Tipo de recurso rangeView
 description: RangeView representa un conjunto de celdas visibles del intervalo primario.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0fae95999de35b5bac42716a4c9ec8b16a5b1158
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810083"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957805"
 ---
 # <a name="rangeview-resource-type"></a>Tipo de recurso rangeView
 RangeView representa un conjunto de celdas visibles del intervalo primario.
@@ -22,7 +23,7 @@ RangeView representa un conjunto de celdas visibles del intervalo primario.
 |[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|Devuelve el objeto de rango asociado a la vista de rango.|
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |cellAddresses|Json|Representa las direcciones de celda
 |columnCount|Int32|Devuelve el número de columnas visibles. Solo lectura.|

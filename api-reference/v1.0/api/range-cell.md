@@ -2,12 +2,14 @@
 title: 'Range: Cell'
 description: Obtiene el objeto de intervalo que contiene la celda en función de los números de fila y columna. La celda puede estar fuera de los límites del intervalo principal, siempre y cuando permanezca dentro de la cuadrícula de la hoja de cálculo. La celda devuelta se ubica con respecto a la celda superior izquierda del intervalo.
 localization_priority: Normal
-ms.openlocfilehash: 3d72f78b6767dffe52e42ae210c24b9d96cc87d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a46f0e43a9eb1099c2df615b88f15576afa30e9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862982"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951484"
 ---
 # <a name="range-cell"></a>Range: Cell
 

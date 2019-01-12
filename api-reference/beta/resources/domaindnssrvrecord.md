@@ -3,12 +3,13 @@ title: Tipo de recurso domainDnsSrvRecord
 description: Representa un registro SRV agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: c06682753b752980530bf8cfd8f6a32b9bbd569a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: db8b64397bd8d2904567555759a40186f740a1ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810440"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962817"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Tipo de recurso domainDnsSrvRecord
 
@@ -22,7 +23,7 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
+|id|String| Identificador único asignado a esta entidad. No admite valores NULL, solo lectura.|
 |isOptional|Booleano| Si es false, el cliente debe configurar el registro SRV en el host DNS de Microsoft Online Services para que funcione correctamente con el dominio. |
 |label|Cadena| Valor que se usa al configurar la propiedad *name* del registro SRV en el host DNS. |
 |nameTarget|Cadena| Valor que se debe usar al configurar la propiedad *Target* del registro SRV en el host DNS. |
@@ -31,7 +32,7 @@ No se admiten las consultas directas a este recurso. Consulte el tema [domain](d
 |protocol|Cadena| Valor que se debe usar al configurar la propiedad *protocol* del registro SRV en el host DNS. |
 |recordType|Cadena|  Tipo de registro DNS. El valor es siempre *Srv*. Clave |
 |service|Cadena| Valor que se debe usar al configurar la propiedad *service* del registro SRV en el host DNS. |
-|supportedService|Cadena| Servicio o función de Microsoft Online que tiene una dependencia en el registro SRV.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
+|supportedService|String| Servicio o función de Microsoft Online que tiene una dependencia en el registro SRV.</br></br>Puede ser uno de los siguientes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer* o *Intune* |
 |ttl|Int32| Valor que se debe usar al configurar la propiedad de *período de vida (ttl)* del registro SRV en el host DNS. No admite valores NULL |
 |weight|Int32| Valor que se debe usar al configurar la propiedad *weight* del registro SRV en el host DNS. |
 

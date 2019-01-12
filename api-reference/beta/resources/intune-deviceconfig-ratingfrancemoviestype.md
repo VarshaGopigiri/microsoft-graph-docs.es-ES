@@ -3,12 +3,13 @@ title: tipo de enumeración ratingFranceMoviesType
 description: Películas valoración de las etiquetas de Francia
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 591d13f6f1b291334606d24c2d6b9cd5d48f2a3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3b9220b5c4ba406aadda930eb355f3d472929a03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894225"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957777"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>tipo de enumeración ratingFranceMoviesType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27894225"
 
 Películas valoración de las etiquetas de Francia
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las películas|
 |allBlocked|1|No permitir cualquier contenido de películas|

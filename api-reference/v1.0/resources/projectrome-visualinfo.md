@@ -2,12 +2,13 @@
 title: tipo de recurso visualInfo
 description: Un tipo complejo para que representa la propiedad **visualElements** en el objeto de actividad.
 localization_priority: Normal
-ms.openlocfilehash: be40c4718944f1a739a9532a02c3d249514a2a13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 416109bb1bb6625330ddfbbb32b8fb688b223134
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816481"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962649"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso visualInfo
 
@@ -21,9 +22,9 @@ Si no se proporciona una ficha personalizada, se generará una tarjeta simple me
 
 ## <a name="properties"></a>Propiedades
 
-|Nombre | Tipo | Description|
+|Nombre | Tipo | Descripción|
 |:----|:------|:-----------|
-|texto de presentación | Cadena | Necesario. Breve descripción de texto de la actividad de usuario único (por ejemplo, el nombre de documento en los casos donde una actividad hace referencia a la creación de documentos)|
+|texto de presentación | Cadena | Obligatorio. Breve descripción de texto de la actividad de usuario único (por ejemplo, el nombre de documento en los casos donde una actividad hace referencia a la creación de documentos)|
 |descripción | Cadena | Opcional. Descripción de texto más larga de la actividad de usuario único (ejemplo: nombre, primera oración y metadatos de documentos)|
 |backgroundColor | Cadena | Opcional. Color de fondo utilizado para representar la actividad en la interfaz de usuario - color de marca para el origen de la aplicación de la actividad. Debe ser un color hexadecimal válido|
 |content | Objeto JSON sin tipo | Opcional. Fragmento personalizado de datos - objeto JSON se usa para proporcionar contenido personalizado para representar la actividad en la interfaz de usuario del Shell de Windows|

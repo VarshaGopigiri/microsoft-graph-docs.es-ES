@@ -2,12 +2,14 @@
 title: 'orgContact: lista directReports'
 description: Obtenga los informes directos del contacto.
 localization_priority: Normal
-ms.openlocfilehash: f8008560b0ee24b7b3ee4d3ec5bccd53fa40bbfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8c4df50ec9131397d1af30256385051417db5587
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813121"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964434"
 ---
 # <a name="orgcontact-list-directreports"></a>orgContact: lista directReports
 
@@ -35,7 +37,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

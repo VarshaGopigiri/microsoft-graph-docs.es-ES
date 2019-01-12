@@ -3,12 +3,13 @@ title: Actualizar applePushNotificationCertificate
 description: Actualice las propiedades de un objeto applePushNotificationCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9eaca912e32c8575c692746040fc23535906466
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6cc1b113b964dbc2f2ffdaae1e52639ec2463f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821752"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964840"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Actualizar applePushNotificationCertificate
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -53,8 +54,8 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |topicIdentifier|String|Id. del tema|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora de la última modificación del certificado de notificación push de Apple.|
 |expirationDateTime|DateTimeOffset|Fecha y hora de la expiración del certificado de notificación push de Apple.|
-|certificateUploadStatus|Cadena|El estado de carga del certificado.|
-|certificateUploadFailureReason|Cadena|No se pudo la razón por la carga de certificado.|
+|certificateUploadStatus|String|El estado de carga del certificado.|
+|certificateUploadFailureReason|String|No se pudo la razón por la carga de certificado.|
 |certificado|String|Todavía no documentado|
 
 

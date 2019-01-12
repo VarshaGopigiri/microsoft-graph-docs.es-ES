@@ -3,12 +3,13 @@ title: tipo de recurso deviceManagementScriptRunSummary
 description: Contiene las propiedades para el resumen de la ejecución de una secuencia de comandos de administración de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2109822ce081fc18286722cb48209a4349aa2b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9676fc7f6792c3bd9771ab7ed1ccbeaa67826d3d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823544"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962040"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>tipo de recurso deviceManagementScriptRunSummary
 
@@ -26,7 +27,7 @@ Contiene las propiedades para el resumen de la ejecución de una secuencia de co
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la secuencia de comandos de administración de dispositivo ejecute entidad resumen.|
+|id|String|Clave de la secuencia de comandos de administración de dispositivo ejecute entidad resumen.|
 |successDeviceCount|Int32|Recuento de éxito de dispositivo.|
 |errorDeviceCount|Int32|Recuento de error de dispositivo.|
 |successUserCount|Int32|Recuento de usuario correcto.|

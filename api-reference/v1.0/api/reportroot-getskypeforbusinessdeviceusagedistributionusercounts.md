@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts'
 description: Obtiene el número de usuarios que usan dispositivos únicos en la organización. En el informe, se mostrará el número de usuarios por dispositivo, como Windows, teléfonos Windows, teléfonos Android, iPhone y iPad.
 localization_priority: Normal
-ms.openlocfilehash: e8c9fcb5bf61dfcb1731db823c1c0a4f1521f93a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 3282532aba58c63c210d8f58ab96b7313a9b2910
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831034"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954895"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 

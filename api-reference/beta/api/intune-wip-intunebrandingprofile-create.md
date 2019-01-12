@@ -3,12 +3,13 @@ title: Crear intuneBrandingProfile
 description: Crear un nuevo objeto intuneBrandingProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e8ec4990b333d18dd761772627665c5ecb04179
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 755de596da82aa2ef7a8d5bc142f43e6bf2ca4c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862023"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964546"
 ---
 # <a name="create-intunebrandingprofile"></a>Crear intuneBrandingProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,9 +49,9 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de perfil|
-|nombre del perfil|Cadena|Nombre del perfil|
-|profileDescription|Cadena|Descripción del perfil|
+|id|String|Clave de perfil|
+|nombre del perfil|String|Nombre del perfil|
+|profileDescription|String|Descripción del perfil|
 |isDefaultProfile|Booleano|Presenta si se utiliza el perfil de forma predeterminada.|
 |createdDateTime|DateTimeOffset|Cuando se creó el BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Cuando el BrandingProfile se modificó por última vez.|

@@ -3,12 +3,13 @@ title: Obtener managedAppStatus
 description: Lea las propiedades y las relaciones del objeto managedAppStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 99d765ad51080fec87c2eb2f67fe94853d30e6ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3d7e7ce1e5d4937d952210429fad46ece1c1b989
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859489"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953375"
 ---
 # <a name="get-managedappstatus"></a>Obtener managedAppStatus
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

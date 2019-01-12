@@ -2,12 +2,14 @@
 title: tipo de enumeración securityNetworkProtocol
 description: Valores posibles para el protocolo de red.
 localization_priority: Normal
-ms.openlocfilehash: 49437c67ec84bf90403658e9a188675c22a4e369
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: f5ab5497676360b96d51220d00e106169eba1df3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884633"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960437"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>tipo de enumeración securityNetworkProtocol
 
@@ -15,7 +17,7 @@ Valores posibles para el protocolo de red.
 
 ## <a name="members"></a>Miembros
 
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|-1|Protocolo desconocido.|
 |IP|0|Protocolo de Internet.|

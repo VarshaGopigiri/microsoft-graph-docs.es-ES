@@ -3,12 +3,13 @@ title: tipo de enumeración eapType
 description: Tipos de configuración de protocolo de autenticación (EAP) extensible.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 92c1cddd42f16556cbba51be7eb06a0f75c537a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1e894e10356711fd4522ff816750e986d8b8e57d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828899"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957812"
 ---
 # <a name="eaptype-enum-type"></a>tipo de enumeración eapType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27828899"
 
 Tipos de configuración de protocolo de autenticación (EAP) extensible.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |eapTls|13|EAP-Transport Layer Security (EAP-TLS).|
 |salto|17|Protocolo de autenticación Extensible ligero (LEAP).|

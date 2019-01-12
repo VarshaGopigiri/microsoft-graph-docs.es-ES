@@ -3,12 +3,13 @@ title: Actualizar deviceManagementScriptRunSummary
 description: Actualizar las propiedades de un objeto deviceManagementScriptRunSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7a82b01ccae7e3f5ca1e8c3b3b784791fe08df3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d2a0ba2a7dfbd44cd5e756010239caee285fe090
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858327"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954704"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Actualizar deviceManagementScriptRunSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la secuencia de comandos de administración de dispositivo ejecute entidad resumen.|
+|id|String|Clave de la secuencia de comandos de administración de dispositivo ejecute entidad resumen.|
 |successDeviceCount|Int32|Recuento de éxito de dispositivo.|
 |errorDeviceCount|Int32|Recuento de error de dispositivo.|
 |successUserCount|Int32|Recuento de usuario correcto.|

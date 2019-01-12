@@ -3,12 +3,13 @@ title: tipo de recurso riskyUsers
 description: Representa los usuarios de Azure AD que están en riesgo. Azure AD continuamente da como resultado el riesgo de usuario en función de diversas señales y aprendizaje de máquinas. Esta API proporciona acceso mediante programación a todos los usuarios en riesgo en su Azure AD.
 author: cloudhandler
 localization_priority: Normal
-ms.openlocfilehash: bb1dab6461a3b235d461720a68855f1e8f3f70d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 2e4cf47ea78583958c79750e0b2ad4fa12230d22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871557"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950735"
 ---
 # <a name="riskyusers-resource-type"></a>tipo de recurso riskyUsers
 
@@ -29,7 +30,7 @@ Para obtener más información acerca de los eventos de riesgo, vea [Protección
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad   | Tipo|Description|
+| Propiedad   | Tipo|Descripción|
 |:---------------|:--------|:----------|
 |`id`|`string`|Identificador único del usuario en riesgo|
 |`isDeleted`|`bool`|Indica si el usuario se elimina. Los valores posibles son: `true`,`false`|

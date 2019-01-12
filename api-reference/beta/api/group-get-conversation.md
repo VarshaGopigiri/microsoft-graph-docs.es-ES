@@ -3,12 +3,13 @@ title: Obtener conversación
 description: Obtiene un objeto de conversación.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 374fd472cf97e17586ea9e95c55f765c5d79dc34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 6dcc5e4bd9c5496e50b1e51f1a0b8ffd0ca2f570
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892375"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955621"
 ---
 # <a name="get-conversation"></a>Obtener conversación
 

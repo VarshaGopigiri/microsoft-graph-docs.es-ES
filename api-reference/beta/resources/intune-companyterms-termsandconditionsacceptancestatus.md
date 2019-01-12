@@ -3,12 +3,13 @@ title: Tipo de recurso termsAndConditionsAcceptanceStatus
 description: C) de la directiva a un usuario determinado. Los usuarios deben aceptar la versión más actualizada de los términos para conservar el acceso al Portal de empresa.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 704f1ae0f149bf91b1036713ed47279bb665d2e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c66b7ba799def675ab3b74ad2ea9b8ce2f7ec22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880734"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961081"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 

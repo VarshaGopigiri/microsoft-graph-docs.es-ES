@@ -3,12 +3,13 @@ title: tipo de enumeración windowsPrivacyDataAccessLevel
 description: Determinar el nivel de acceso a la categoría de datos de privacidad de Windows específica.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74ab32a703422203fec7a6c9ed1bc035e01949a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 64db5eb78708a0cfa835bd695ba01b2c267fc4fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888777"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959320"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>tipo de enumeración windowsPrivacyDataAccessLevel
 
@@ -18,7 +19,7 @@ ms.locfileid: "27888777"
 
 Determinar el nivel de acceso a la categoría de datos de privacidad de Windows específica.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |No configurado|0|Ningún nivel de acceso no especificado, del color. Es posible que se comportan de dispositivo ya sea como en UserInControl o ForceAllow. Es posible que dependen de los datos de privacidad sido tener acceso a las versiones de Windows y otros factores.|
 |forceAllow|1|Aplicaciones podrán tener acceso a los datos de privacidad especificado.|

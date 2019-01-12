@@ -2,12 +2,13 @@
 title: Get subscription
 description: Recupera las propiedades y relaciones de una suscripción.
 localization_priority: Priority
-ms.openlocfilehash: a9cdc93d958895deaeb8778b69651a898d5a94c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 4c55c81fdb26bb706ad270e5d53ded712ea69b22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840302"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956979"
 ---
 # <a name="get-subscription"></a>Get subscription
 
@@ -45,7 +46,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

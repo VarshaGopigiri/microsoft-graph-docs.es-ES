@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerTaskDetails
 description: El recurso **plannerTaskDetails** representa la información adicional de una tarea. Cada objeto task tiene un objeto details.
 localization_priority: Normal
-ms.openlocfilehash: a183ba0f9b19ea2de700913d29e9586442ba2c03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 75e17200dc52fff385c7be8fb0269a3da20464b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806578"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956013"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
 

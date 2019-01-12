@@ -3,12 +3,13 @@ title: Actualizar deviceManagementPartner
 description: Actualice las propiedades de un objeto deviceManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 83ba5bf2e022b6961182a8f8c1ac17dec79ed959
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 26646fc7afb04fb577f8cbf7d160869de8889e65
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956447"
 ---
 # <a name="update-devicemanagementpartner"></a>Actualizar deviceManagementPartner
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Todavía no documentado|
+|id|String|Todavía no documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Marca de tiempo del último latido después de habilitar la opción de administrador Conectarse a los partners de administración de dispositivos|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado de socio de este inquilino. Los valores posibles son: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicación de socio. Los valores posibles son: `unknown`, `singleTenantApp` y `multiTenantApp`.|

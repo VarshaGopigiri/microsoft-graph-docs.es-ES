@@ -3,12 +3,13 @@ title: Tipo de recurso deviceConfiguration
 description: Configuración de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 255826460a81544d27620807d569ce3857e1034e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a508a037dbd1271d30a226d9cf62fb0683b53af
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884045"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953150"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -25,11 +26,11 @@ Configuración de dispositivos.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones

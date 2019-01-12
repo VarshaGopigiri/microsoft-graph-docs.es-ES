@@ -3,12 +3,13 @@ title: tipo de enumeración runAsAccountType
 description: Indica el contexto de ejecución de una secuencia de comandos de administración de dispositivo o una aplicación.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1f0fbd29b0f50320da4979f4274e0dd58a79b84b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41a37aede909e905260f3759c2d0908d24aee2bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874098"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961103"
 ---
 # <a name="runasaccounttype-enum-type"></a>tipo de enumeración runAsAccountType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27874098"
 
 Indica el contexto de ejecución de una secuencia de comandos de administración de dispositivo o una aplicación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |system|0|Contexto del sistema|
 |usuario|1|Contexto de usuario|

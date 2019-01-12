@@ -3,12 +3,13 @@ title: Acción setPriority
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9fb5080cedb1025aa49e6195e646a7a877655f1e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 405c7094e0513d5162eb2120a73892904dbf8b6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826856"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954739"
 ---
 # <a name="setpriority-action"></a>Acción setPriority
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

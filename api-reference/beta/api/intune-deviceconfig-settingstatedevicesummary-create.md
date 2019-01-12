@@ -3,12 +3,13 @@ title: Crear settingStateDeviceSummary
 description: Cree un objeto settingStateDeviceSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06c9851a534f59be935791e1c1f435d2180bf9d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 31c887394daa3425d39a80a9986d4d2eb6ea818b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852111"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950357"
 ---
 # <a name="create-settingstatedevicesummary"></a>Crear settingStateDeviceSummary
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -57,7 +58,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |settingName|String|Nombre de la configuración|
 |instancePath|String|Nombre de InstancePath para la configuración|
 |unknownDeviceCount|Int32|Número de dispositivos desconocido para la configuración|

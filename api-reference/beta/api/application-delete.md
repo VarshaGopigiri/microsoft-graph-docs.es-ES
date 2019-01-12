@@ -3,12 +3,13 @@ title: Eliminación de aplicación
 description: Elimina una aplicación.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 46c02d0fc1730f5741175e5ab99e2082e60c8f48
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6c004e062c6804071fba99b07ad91eb9def6e77f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838818"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956825"
 ---
 # <a name="delete-application"></a>Eliminación de aplicación
 
@@ -34,7 +35,7 @@ DELETE /applications/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

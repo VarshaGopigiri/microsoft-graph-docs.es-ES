@@ -2,12 +2,14 @@
 title: Obtener sección
 description: Recupere las propiedades y las relaciones de un objeto section.
 localization_priority: Normal
-ms.openlocfilehash: b9746715d01a51f0a35da3936e64b850020629ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: ce475e0bdd8b5557eb2b6c457c6736ac635eb0be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846952"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953402"
 ---
 # <a name="get-section"></a>Obtener sección
 
@@ -39,7 +41,7 @@ La consulta predeterminada expande `parentNotebook` y selecciona sus propiedades
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Aceptar | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

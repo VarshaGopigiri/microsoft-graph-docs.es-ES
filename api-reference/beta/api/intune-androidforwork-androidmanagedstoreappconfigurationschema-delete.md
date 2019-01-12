@@ -3,12 +3,13 @@ title: Eliminar androidManagedStoreAppConfigurationSchema
 description: Elimina un androidManagedStoreAppConfigurationSchema.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb77605b8ab77b68c15a2b08378642007879d8df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4e06427007169b012d166b9db34d100a4ed5b148
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854715"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950840"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>Eliminar androidManagedStoreAppConfigurationSchema
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidMana
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

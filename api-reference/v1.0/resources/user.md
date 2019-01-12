@@ -3,12 +3,13 @@ title: tipo de recurso del usuario
 description: Representa una cuenta de usuario de Azure AD. Se hereda de directoryObject.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: d9f15cd6f0b3169370257578f841a1821593f351
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1845bdbc349712141c5e356acaaafb8ba1c49aba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862499"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964462"
 ---
 # <a name="user-resource-type"></a>tipo de recurso del usuario
 
@@ -134,7 +135,7 @@ Por ejemplo: Cameron es administrador de un directorio para una escuela de prima
 
 Esta propiedad de solo lectura se usa en los desarrolladores de aplicaciones de empresa para garantizar el control correcto de un usuario en función de su grupo de edad legal. Se calcula en función del usuario `ageGroup` y `consentProvidedForMinor` propiedades.
 
-| Valor    | #  |Description|
+| Valor    | #  |Descripción|
 |:---------------|:--------|:----------|
 |nulo|0|Valor predeterminado que no `ageGroup` se ha establecido para el usuario.|
 |minorWithoutParentalConsent |1|(Reservado para uso futuro)|
@@ -149,7 +150,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 
 #### <a name="agegroup-property"></a>ageGroup (propiedad)
 
-| Valor    | #  |Description|
+| Valor    | #  |Descripción|
 |:---------------|:--------|:----------|
 |nulo|0|Valor predeterminado que no `ageGroup` se ha establecido para el usuario.|
 |secundaria|1|El usuario se considere un secundarias.|
@@ -158,7 +159,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor (propiedad)
 
-| Valor    | #  |Description|
+| Valor    | #  |Descripción|
 |:---------------|:--------|:----------|
 |nulo|0|Valor predeterminado que no `consentProvidedForMinor` se ha establecido para el usuario.|
 |concedido|1|Se ha obtenido el consentimiento para que el usuario tenga una cuenta.|

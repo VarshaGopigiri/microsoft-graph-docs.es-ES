@@ -3,12 +3,13 @@ title: Tipo de recurso edgeSearchEngine
 description: Permite a los administradores de TI configurar un motor de búsqueda predeterminado predefinido para dispositivos controlados por MDM.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 08434805545de7814765f62e73898db7455b79ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b59fa163fe453d4f26dd71afa24edf9ac37d9d41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889267"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953241"
 ---
 # <a name="edgesearchengine-resource-type"></a>Tipo de recurso edgeSearchEngine
 

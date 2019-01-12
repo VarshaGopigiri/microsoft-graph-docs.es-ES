@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365GroupsActivityGroupCounts'
 description: Obtiene el número total diario de grupos y cuántos de ellos estuvieron activos según las conversaciones de correo electrónico, las publicaciones de Yammer y las actividades en archivos de SharePoint.
 localization_priority: Normal
-ms.openlocfilehash: fa48d561cdb70dbb2ce47b07444e1fd3782b1f42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 9ea971361975113a472670ae68fb94dcc2c153f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811679"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964637"
 ---
 # <a name="reportroot-getoffice365groupsactivitygroupcounts"></a>reportRoot: getOffice365GroupsActivityGroupCounts
 

@@ -3,12 +3,13 @@ title: Eliminar termsAndConditionsAssignment
 description: Elimina un termsAndConditionsAssignment
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bc71469d3c90e65fbf657106734176040a9c6de9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a548367fd6d37ebe1f58150d53abeb90cf6f6369
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960941"
 ---
 # <a name="delete-termsandconditionsassignment"></a>Eliminar termsAndConditionsAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
