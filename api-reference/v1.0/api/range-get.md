@@ -2,12 +2,14 @@
 title: Get Range
 description: Recuperar las propiedades y relaciones del objeto range.
 author: lumine2008
-ms.openlocfilehash: 3914f018da434536dca280fac2536e93e5496ea9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: excel
+ms.openlocfilehash: 7d7f12c4a2bbc40cf43be325dd0a600ff0c4ee4d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347253"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911934"
 ---
 # <a name="get-range"></a>Get Range
 

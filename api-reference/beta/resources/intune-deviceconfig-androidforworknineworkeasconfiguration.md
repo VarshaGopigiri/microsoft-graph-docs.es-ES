@@ -2,12 +2,14 @@
 title: tipo de recurso androidForWorkNineWorkEasConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar al cliente de correo electrónico de trabajo nueve en dispositivos Android para trabajo para comunicarse con un servidor de Exchange y correo electrónico, contactos, calendario, tareas y notas. Además, también puede especificar cuánto correo electrónico para la sincronización y con qué frecuencia debe sincronizar el dispositivo.
 localization_priority: Normal
-ms.openlocfilehash: 951c033fd8ee1f65b48b99045d4b9da86443a50e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b78a585852e004e5b4b4b6685abe521129b1b816
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848898"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913621"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>tipo de recurso androidForWorkNineWorkEasConfiguration
 
@@ -50,7 +52,7 @@ Hereda de [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-a
 |syncTasks|Booleano|Activa o desactiva la sincronización de tareas. Si establece en false tareas está desactivado en el dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

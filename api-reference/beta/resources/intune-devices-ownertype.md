@@ -3,12 +3,13 @@ title: tipo enum ownerType
 description: Tipo de propietario del dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 08d1021fea21b833371627dfde62f5b06399e3b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7a1151a96bccc2954097d5aafde6aa09fa0cf9e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890163"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911703"
 ---
 # <a name="ownertype-enum-type"></a>tipo enum ownerType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27890163"
 
 Tipo de propietario del dispositivo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Unknown (desconocido).|
 |company|1|Propiedad de empresa.|

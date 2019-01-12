@@ -3,12 +3,13 @@ title: tipo de recurso mobileAppProvisioningConfigGroupAssignment
 description: Contiene las propiedades que se usa para asignar una configuración de aprovisionamiento de aplicaciones a un grupo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32c5bb83fc3991d36c4e52a4350b0e05496b32fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6996bf29776910d8af3da08d63003889b817cfbf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840785"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912137"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>tipo de recurso mobileAppProvisioningConfigGroupAssignment
 
@@ -27,7 +28,7 @@ Contiene las propiedades que se usa para asignar una configuración de aprovisio
 |[Actualizar mobileAppProvisioningConfigGroupAssignment](../api/intune-apps-mobileappprovisioningconfiggroupassignment-update.md)|[mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|Actualizar las propiedades de un objeto [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) .|
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |targetGroupId|Cadena|El identificador del grupo AAD en la que se refiere a la aplicación de configuración de aprovisionamiento.|
 |id|Cadena|Clave de la entidad.|

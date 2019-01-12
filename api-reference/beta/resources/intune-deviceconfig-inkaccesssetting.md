@@ -3,12 +3,13 @@ title: tipo de enumeración inkAccessSetting
 description: Valores de la configuración de InkWorkspaceAccess.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 909989a8256fc1a68bb0dc1ec753fde090efc828
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ec6eac6c65abd24f5a8ec95fb8ee45aab299091c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845983"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911710"
 ---
 # <a name="inkaccesssetting-enum-type"></a>tipo de enumeración inkAccessSetting
 
@@ -18,7 +19,7 @@ ms.locfileid: "27845983"
 
 Valores de la configuración de InkWorkspaceAccess.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |No configurado|0|No configurado.|
 |enabled|1|Habilitado.|

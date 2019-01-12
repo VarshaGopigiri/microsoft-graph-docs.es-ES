@@ -3,12 +3,13 @@ title: Crear notificationMessageTemplate
 description: Cree un objeto notificationMessageTemplate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f97f16298c48b787977330781e3aa95e68e4d28a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d7e8fb5f7e718ec2ec1c0a0f5b35241ef408aaf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861777"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912354"
 ---
 # <a name="create-notificationmessagetemplate"></a>Crear notificationMessageTemplate
 
