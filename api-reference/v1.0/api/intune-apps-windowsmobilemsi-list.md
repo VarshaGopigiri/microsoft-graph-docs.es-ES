@@ -3,28 +3,29 @@ title: Enumerar windowsMobileMSIs
 description: Enumere las propiedades y las relaciones de los objetos windowsMobileMSI.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ce550886051158813cdf0e91eac3824dfeaedf63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 09438149ffc94f5c986d1f0e1f7ae791d7f7e865
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816026"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922588"
 ---
-# <a name="list-windowsmobilemsis"></a><span data-ttu-id="6bcda-103">Enumerar windowsMobileMSIs</span><span class="sxs-lookup"><span data-stu-id="6bcda-103">List windowsMobileMSIs</span></span>
+# <a name="list-windowsmobilemsis"></a><span data-ttu-id="b4f60-103">Enumerar windowsMobileMSIs</span><span class="sxs-lookup"><span data-stu-id="b4f60-103">List windowsMobileMSIs</span></span>
 
-> <span data-ttu-id="6bcda-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="6bcda-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="b4f60-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="b4f60-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6bcda-105">Enumere las propiedades y las relaciones de los objetos [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).</span><span class="sxs-lookup"><span data-stu-id="6bcda-105">List properties and relationships of the [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6bcda-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="6bcda-106">Prerequisites</span></span>
-<span data-ttu-id="6bcda-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6bcda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b4f60-105">Enumere las propiedades y las relaciones de los objetos [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).</span><span class="sxs-lookup"><span data-stu-id="b4f60-105">List properties and relationships of the [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b4f60-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="b4f60-106">Prerequisites</span></span>
+<span data-ttu-id="b4f60-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b4f60-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6bcda-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6bcda-109">Permission type</span></span>|<span data-ttu-id="6bcda-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6bcda-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b4f60-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="b4f60-109">Permission type</span></span>|<span data-ttu-id="b4f60-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="b4f60-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6bcda-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6bcda-111">Delegated (work or school account)</span></span>|<span data-ttu-id="6bcda-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="6bcda-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="6bcda-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6bcda-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6bcda-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6bcda-114">Not supported.</span></span>|
-|<span data-ttu-id="6bcda-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6bcda-115">Application</span></span>|<span data-ttu-id="6bcda-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6bcda-116">Not supported.</span></span>|
+|<span data-ttu-id="b4f60-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="b4f60-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b4f60-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="b4f60-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="b4f60-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b4f60-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b4f60-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="b4f60-114">Not supported.</span></span>|
+|<span data-ttu-id="b4f60-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="b4f60-115">Application</span></span>|<span data-ttu-id="b4f60-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="b4f60-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6bcda-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6bcda-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b4f60-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="b4f60-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27816026"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6bcda-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6bcda-118">Request headers</span></span>
-|<span data-ttu-id="6bcda-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="6bcda-119">Header</span></span>|<span data-ttu-id="6bcda-120">Valor</span><span class="sxs-lookup"><span data-stu-id="6bcda-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b4f60-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="b4f60-118">Request headers</span></span>
+|<span data-ttu-id="b4f60-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="b4f60-119">Header</span></span>|<span data-ttu-id="b4f60-120">Valor</span><span class="sxs-lookup"><span data-stu-id="b4f60-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6bcda-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="6bcda-121">Authorization</span></span>|<span data-ttu-id="6bcda-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="6bcda-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6bcda-123">Accept</span><span class="sxs-lookup"><span data-stu-id="6bcda-123">Accept</span></span>|<span data-ttu-id="6bcda-124">application/json</span><span class="sxs-lookup"><span data-stu-id="6bcda-124">application/json</span></span>|
+|<span data-ttu-id="b4f60-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="b4f60-121">Authorization</span></span>|<span data-ttu-id="b4f60-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="b4f60-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b4f60-123">Accept</span><span class="sxs-lookup"><span data-stu-id="b4f60-123">Accept</span></span>|<span data-ttu-id="b4f60-124">application/json</span><span class="sxs-lookup"><span data-stu-id="b4f60-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6bcda-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6bcda-125">Request body</span></span>
-<span data-ttu-id="6bcda-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="6bcda-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b4f60-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="b4f60-125">Request body</span></span>
+<span data-ttu-id="b4f60-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="b4f60-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6bcda-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6bcda-127">Response</span></span>
-<span data-ttu-id="6bcda-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6bcda-128">If successful, this method returns a `200 OK` response code and a collection of [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b4f60-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="b4f60-127">Response</span></span>
+<span data-ttu-id="b4f60-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="b4f60-128">If successful, this method returns a `200 OK` response code and a collection of [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6bcda-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6bcda-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6bcda-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6bcda-130">Request</span></span>
-<span data-ttu-id="6bcda-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6bcda-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b4f60-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="b4f60-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="b4f60-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="b4f60-130">Request</span></span>
+<span data-ttu-id="b4f60-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="b4f60-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a><span data-ttu-id="6bcda-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6bcda-132">Response</span></span>
-<span data-ttu-id="6bcda-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="6bcda-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b4f60-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="b4f60-132">Response</span></span>
+<span data-ttu-id="b4f60-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="b4f60-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

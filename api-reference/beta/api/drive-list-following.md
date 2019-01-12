@@ -3,31 +3,32 @@ author: chackman
 ms.author: chackman
 title: Elementos de lista seguido
 localization_priority: Normal
-ms.openlocfilehash: e8892bc96c53efef49f91d92b24b3ea97c937845
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 0489c14b943b6fa6eafb41932bb9bb906fea3351
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849437"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921482"
 ---
-# <a name="list-followed-items"></a><span data-ttu-id="086c1-102">Elementos de lista seguido</span><span class="sxs-lookup"><span data-stu-id="086c1-102">List followed items</span></span>
+# <a name="list-followed-items"></a><span data-ttu-id="ad799-102">Elementos de lista seguido</span><span class="sxs-lookup"><span data-stu-id="ad799-102">List followed items</span></span>
 
-> <span data-ttu-id="086c1-103">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="086c1-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="086c1-104">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="086c1-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ad799-103">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="ad799-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ad799-104">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="ad799-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="086c1-105">Lista de los [elementos](../resources/driveitem.md) que se han seguido por el usuario con la sesión.</span><span class="sxs-lookup"><span data-stu-id="086c1-105">List the [items](../resources/driveitem.md) that have been followed by the signed in user.</span></span>
-<span data-ttu-id="086c1-106">Esta colección incluye los elementos que se encuentran en la unidad del usuario, así como los elementos que tienen acceso a desde otras unidades.</span><span class="sxs-lookup"><span data-stu-id="086c1-106">This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="ad799-105">Lista de los [elementos](../resources/driveitem.md) que se han seguido por el usuario con la sesión.</span><span class="sxs-lookup"><span data-stu-id="ad799-105">List the [items](../resources/driveitem.md) that have been followed by the signed in user.</span></span>
+<span data-ttu-id="ad799-106">Esta colección incluye los elementos que se encuentran en la unidad del usuario, así como los elementos que tienen acceso a desde otras unidades.</span><span class="sxs-lookup"><span data-stu-id="ad799-106">This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="086c1-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="086c1-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ad799-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="ad799-107">Permissions</span></span>
 
-<span data-ttu-id="086c1-p103">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="086c1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad799-p103">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad799-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="086c1-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="086c1-110">Permission type</span></span>      | <span data-ttu-id="086c1-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="086c1-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ad799-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="ad799-110">Permission type</span></span>      | <span data-ttu-id="ad799-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="ad799-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="086c1-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="086c1-112">Delegated (work or school account)</span></span> | <span data-ttu-id="086c1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="086c1-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="086c1-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="086c1-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="086c1-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="086c1-115">Not supported.</span></span>    |
-|<span data-ttu-id="086c1-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="086c1-116">Application</span></span> | <span data-ttu-id="086c1-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="086c1-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ad799-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ad799-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ad799-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad799-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ad799-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ad799-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad799-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="ad799-115">Not supported.</span></span>    |
+|<span data-ttu-id="ad799-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ad799-116">Application</span></span> | <span data-ttu-id="ad799-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad799-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="086c1-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="086c1-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad799-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ad799-118">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
 
@@ -35,10 +36,10 @@ ms.locfileid: "27849437"
 GET /me/drive/following
 ```
 
-## <a name="response"></a><span data-ttu-id="086c1-119">Respuesta</span><span class="sxs-lookup"><span data-stu-id="086c1-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ad799-119">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ad799-119">Response</span></span>
 
-<span data-ttu-id="086c1-120">Este método devuelve una colección de recursos de [driveItem](../resources/driveitem.md) para los elementos que está siguiendo el propietario de la unidad.</span><span class="sxs-lookup"><span data-stu-id="086c1-120">This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.</span></span>
-<span data-ttu-id="086c1-121">Si no se encontraron elementos, se devuelve una colección vacía.</span><span class="sxs-lookup"><span data-stu-id="086c1-121">If no items were found, an empty collection is returned.</span></span>
+<span data-ttu-id="ad799-120">Este método devuelve una colección de recursos de [driveItem](../resources/driveitem.md) para los elementos que está siguiendo el propietario de la unidad.</span><span class="sxs-lookup"><span data-stu-id="ad799-120">This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.</span></span>
+<span data-ttu-id="ad799-121">Si no se encontraron elementos, se devuelve una colección vacía.</span><span class="sxs-lookup"><span data-stu-id="ad799-121">If no items were found, an empty collection is returned.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
