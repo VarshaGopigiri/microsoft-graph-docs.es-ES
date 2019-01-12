@@ -3,12 +3,13 @@ title: acción sendCustomNotificationToCompanyPortal
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ea1cb5a2bcdf18c38dfc144d57e7ee77a5d6fd2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92276ac8609f1699b1b4a4217452f121d8507f47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863332"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978854"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>acción sendCustomNotificationToCompanyPortal
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |notificationTitle|Cadena|Todavía no documentado|
 |notificationBody|Cadena|Todavía no documentado|

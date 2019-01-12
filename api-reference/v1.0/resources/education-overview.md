@@ -2,12 +2,14 @@
 title: Trabajar con API para el ámbito educativo en Microsoft Graph
 description: Las API para el ámbito educativo de Microsoft Graph mejoran los recursos y los datos de Office 365 con la información pertinente para los escenarios de educación, que incluye centros educativos, estudiantes, profesores, clases e inscripciones. Esto hace que resulte fácil compilar soluciones que se integran con recursos educativos.
 localization_priority: Priority
-ms.openlocfilehash: 8c2131c0806bf17e7241b0a95dc3094c6496505d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 1b12910899ce5645d8d3f69f96cb7a8f61ba0df5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880272"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975851"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Trabajar con API para el ámbito educativo en Microsoft Graph
 

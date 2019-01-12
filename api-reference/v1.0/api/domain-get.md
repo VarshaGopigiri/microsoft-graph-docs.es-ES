@@ -3,12 +3,13 @@ title: Obtener dominio
 description: Recupere las propiedades y las relaciones del objeto domain.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 4d49fe39f9e953b6e0bcdb4504a4f2296d5d4ff9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 93139514ae66b4af4c6ade8de8f068050b985451
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817223"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927359"
 ---
 # <a name="get-domain"></a>Obtener dominio
 

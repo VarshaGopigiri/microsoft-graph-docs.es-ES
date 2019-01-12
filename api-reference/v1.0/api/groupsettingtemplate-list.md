@@ -3,12 +3,13 @@ title: List groupSettingTemplates
 description: Las plantillas de configuración de grupo representan un conjunto de plantillas desde las que se pueden crear configuraciones de grupos para usarlas en un inquilino.  Con esta operación se recupera la lista de objetos groupSettingTemplates disponibles.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 476577de23bc0fe5c2df9ce37b2d9083105bb6f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d592b3e9ae084223a08364c7cd719e2b6d03c0ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869877"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962341"
 ---
 # <a name="list-groupsettingtemplates"></a>List groupSettingTemplates
 

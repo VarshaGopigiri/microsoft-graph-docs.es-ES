@@ -2,12 +2,14 @@
 title: Lista decisiones de accessReview
 description: En el anuncio de Azure access revisa la característica, recuperar las decisiones de un objeto accessReview.
 localization_priority: Normal
-ms.openlocfilehash: ade39abbf63c4e1eb71a6fa25fd3febd8a24c41b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4f89fdbce1c87ce9ef8a6ba8c5b7f9b7be410617
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849752"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927012"
 ---
 # <a name="list-accessreview-decisions"></a>Lista decisiones de accessReview
 
@@ -34,7 +36,7 @@ GET /accessReviews('{reviewId}')/decisions
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

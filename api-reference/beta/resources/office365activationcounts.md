@@ -2,18 +2,19 @@
 title: tipo de recurso office365ActivationCounts
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 30386b3833b8140d4c602e27cb3a78f3a68670dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 4787672df6462e8d1f343e4dace43ede7c79ff37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824993"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991184"
 ---
 # <a name="office365activationcounts-resource-type"></a>tipo de recurso office365ActivationCounts
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad          | Tipo   | Description                              |
+| Propiedad          | Tipo   | Descripción                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Fecha   | La fecha más reciente del contenido.          |
 | ProductType ofrece       | Cadena | El tipo de producto, como "Office 365 ProPlus", "Cliente del proyecto" o "Visio Pro para Office 365". |

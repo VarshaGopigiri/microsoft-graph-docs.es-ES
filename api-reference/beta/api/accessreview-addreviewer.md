@@ -2,12 +2,14 @@
 title: Agregar revisor accessReview
 description: 'En la característica de revisiones de access Azure AD, actualice un objeto accessReview existente para agregar otro usuario como un revisor.  Esta operación sólo se permite para una revisión de acceso que no se ha completado y solo para una revisión de acceso donde se especifican explícitamente los revisores. Esta operación no es permitida para una revisión de access en la que los usuarios revisión su propio acceso y no está pensada para una revisión de access en la que se asignan los propietarios del grupo como los revisores. '
 localization_priority: Normal
-ms.openlocfilehash: ab339a6538fc41d7e538c51251302c5e589367f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a7745cf6424f3aa8b9bca16f4db961801d203431
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838769"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956867"
 ---
 # <a name="add-accessreview-reviewer"></a>Agregar revisor accessReview
 
@@ -33,14 +35,14 @@ POST /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcionar una representación JSON del identificador de un usuario que será un revisor.
 
 La siguiente tabla muestran las propiedades que se pueden proporcionar cuando se actualiza un accessReview.
 
-| Propiedad     | Tipo        | Description |
+| Propiedad     | Tipo        | Descripción |
 |:-------------|:------------|:------------|
 | `id`             |`String`                                                        | El identificador de usuario.  |
 

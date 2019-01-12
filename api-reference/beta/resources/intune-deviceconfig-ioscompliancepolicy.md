@@ -3,12 +3,13 @@ title: Tipo de recurso iosCompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para iOS.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dbfff1a4dee9d9875c7bfe4fd27ddc3589ea0697
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0d675e7a418a65b2b87bd0f349f6b9398111d334
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830278"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957742"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>Tipo de recurso iosCompliancePolicy
 
@@ -30,7 +31,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |[Actualizar iosCompliancePolicy](../api/intune-deviceconfig-ioscompliancepolicy-update.md)|[iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md)|Actualice las propiedades de un objeto [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).|
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

@@ -2,12 +2,13 @@
 title: 'driveItem: vista previa'
 description: Esta acción le permite obtener corta duración puede incrustar las direcciones URL de un elemento con el fin de representar una vista previa temporal.
 localization_priority: Normal
-ms.openlocfilehash: 4487e18ed1921f4164c335ba477e0ae5b74e456a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833176"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980880"
 ---
 # <a name="driveitem-preview"></a>driveItem: vista previa
 
@@ -49,7 +50,7 @@ POST /shares/{shareId}/driveItem/preview
 El cuerpo de la solicitud define las propiedades de la dirección URL puede incrustar está solicitando la aplicación.
 La solicitud debe ser un objeto JSON con las siguientes propiedades.
 
-|   Nombre      |  Tipo         | Description
+|   Nombre      |  Tipo         | Descripción
 |:------------|:--------------|:-----------------------------------------------
 | Visor de      | string        | Opcional. Aplicación de vista previa para que utilice. `onedrive` o `office`. Si es null, se seleccionará automáticamente un visor adecuado.
 | sin cromo  | boolean       | Opcional. Si `true` (valor predeterminado), la vista incrustada no incluirá todos los controles.
@@ -69,7 +70,7 @@ La solicitud debe ser un objeto JSON con las siguientes propiedades.
 
 La respuesta será un objeto JSON que contiene las siguientes propiedades:
 
-| Nombre           | Tipo   | Description
+| Nombre           | Tipo   | Descripción
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | Dirección URL adecuada para incrustar mediante HTTP GET (IFRAME, etcetera).
 | URL para exponer        | string | Dirección URL adecuada para incrustar el uso de HTTP POST (de envío de formulario, JS, etcetera.)

@@ -2,12 +2,14 @@
 title: tipo de recurso windows10EasEmailProfileConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar al cliente de correo electrónico nativo (en Outlook) en los dispositivos de Windows 10 para comunicarse con un servidor de Exchange y obtener correo electrónico, contactos, calendario y tareas. Además, también puede especificar cuánto correo electrónico para la sincronización y con qué frecuencia debe sincronizar el dispositivo.
 localization_priority: Normal
-ms.openlocfilehash: be74fa183836c271f9a86b299c03c05972eccf0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 22aef1d92aa8c58f454ed3e1c12f6c5d353fd287
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816670"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962334"
 ---
 # <a name="windows10easemailprofileconfiguration-resource-type"></a>tipo de recurso windows10EasEmailProfileConfiguration
 
@@ -54,7 +56,7 @@ Hereda de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-ea
 |requireSsl|Booleano|Indica si se va a usar SSL o no.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

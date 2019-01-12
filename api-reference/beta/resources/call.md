@@ -3,12 +3,13 @@ title: tipo de recurso de llamada
 description: El recurso **de llamadas** se crea cuando hay una llamada entrante de la aplicación o la aplicación crea una nueva llamada saliente a través de un `POST` en `app/calls`.
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: d2748b410352effb7119a569bdf48c86f2f7c2ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6c303ebe01e6051a29a932d9547f20293cb07a53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958561"
 ---
 # <a name="call-resource-type"></a>tipo de recurso de llamada
 
@@ -51,7 +52,7 @@ Aunque la misma identidad no puede ser invitada varias veces, es posible para un
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad            | Tipo                                                                                                   | Description                                                                                                                                                                                         |
+| Propiedad            | Tipo                                                                                                   | Descripción                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activeModalities    | Colección de cadenas                                                                                      | La lista de modalidades activos. Los valores posibles son: `unknown`, `audio`, `video`, `videoBasedScreenSharing` y `data`. Solo lectura. Servidor que se generó.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | El participante que ha atendido la llamada. Solo lectura. Servidor que se generó.                                                                                                                                |
@@ -80,7 +81,7 @@ Aunque la misma identidad no puede ser invitada varias veces, es posible para un
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación        | Tipo                                                 | Description                                                         |
+| Relación        | Tipo                                                 | Descripción                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | audioRoutingGroups  | colección de [audioRoutingGroup](audioroutinggroup.md) | Solo lectura. Admite valores NULL.                                                |
 | operaciones          | colección de [commsOperation](commsoperation.md)       | Solo lectura. Admite valores NULL.                                                |

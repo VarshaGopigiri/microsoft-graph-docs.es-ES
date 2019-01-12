@@ -3,12 +3,13 @@ title: Clonación de un equipo
 description: Crear una copia de un equipo. Esta operación también crea una copia del grupo correspondiente.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 262cbe4bd17cc1ab3abded49b65868d0b8039e70
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4fb3769db0df6d2fc30d995098daee19b49e83b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854596"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958344"
 ---
 # <a name="clone-a-team"></a>Clonación de un equipo
 
@@ -52,7 +53,7 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |classification|Cadena (opcional)|Describe una clasificación para el grupo (por ejemplo, el impacto de negocio bajo, medio o alto). Los valores válidos para esta propiedad se definen mediante la creación de un valor de [configuración](../resources/directorysetting.md) ClassificationList, basado en la [definición de plantilla](../resources/directorysettingtemplate.md). Si no se especifica la clasificación, la clasificación se copiarán desde el equipo original o grupo.|
 |descripción|Cadena (opcional)|Una descripción opcional del grupo. Si no se especifica esta propiedad, se va a dejar en blanco.|

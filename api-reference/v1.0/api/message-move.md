@@ -3,12 +3,13 @@ title: 'message: move'
 description: Mover un mensaje a una carpeta. Esto crea una nueva copia del mensaje en la carpeta de destino y quita el mensaje original.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 342c11e844d93ec9bf91b2a40db601e7c4a6b049
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 0a6631bd6c8313751f9d34efc68d48fa0c38ffa9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870591"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977160"
 ---
 # <a name="message-move"></a>message: move
 
@@ -39,8 +40,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Encabezado | Valor |
 |:-------|:------|
-| Autorización | `Bearer {token}`. Necesario. |
-| Content-Type | `application/json`. Necesario. |
+| Autorización | `Bearer {token}`. Obligatorio. |
+| Content-Type | `application/json`. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

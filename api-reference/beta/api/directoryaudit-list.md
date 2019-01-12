@@ -2,12 +2,14 @@
 title: Lista directoryAudits
 description: Proporciona la lista de los registros de auditoría generados por Azure Active Directory. Incluye los registros de auditoría generados por los distintos servicios de Azure Active Directory como usuario, aplicación, dispositivo y administración de grupo, con privilegios de administración de identidades, revisiones de Access, los términos de uso, protección de la identidad, la administración de contraseñas (SSPR y administración restablecimientos de contraseña ), Self service etcetera de administración de grupo...
 localization_priority: Priority
-ms.openlocfilehash: 08b9cd5ded6771883a6d0f1129cf44a808515f8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829340"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921265"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 

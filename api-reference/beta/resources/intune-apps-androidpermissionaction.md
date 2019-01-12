@@ -3,12 +3,13 @@ title: tipo de recurso androidPermissionAction
 description: Asignación entre un permiso de aplicación de Android y la acción Android debe realizar cuando se solicita ese permiso.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: daf72bbc5f8d1e32480adeda72c3f759255f54db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ad7b438951b947cc515f1472dd1eae8caf472f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860539"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977125"
 ---
 # <a name="androidpermissionaction-resource-type"></a>tipo de recurso androidPermissionAction
 
@@ -18,7 +19,7 @@ ms.locfileid: "27860539"
 
 Asignación entre un permiso de aplicación de Android y la acción Android debe realizar cuando se solicita ese permiso.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |permiso|Cadena|Cadena de permiso Android, definida en la documentación oficial de Android.  Ejemplo 'android.permission.READ_CONTACTS'.|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Tipo de acción de permiso Android. Los valores posibles son: `prompt`, `autoGrant` y `autoDeny`.|

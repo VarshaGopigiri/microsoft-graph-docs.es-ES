@@ -3,12 +3,13 @@ title: tipo de recurso teamsDeviceUsageDistributionUserCounts
 description: La siguiente es una representación JSON del recurso
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: a02dfa5a5036d67a624656d715c0fb0d3c8194ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d398782cef79cdf92bc56502f7c6cbf1bcdee99d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868701"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979288"
 ---
 # <a name="teamsdeviceusagedistributionusercounts-resource-type"></a>tipo de recurso teamsDeviceUsageDistributionUserCounts
 

@@ -2,12 +2,14 @@
 title: Crear androidGeneralDeviceConfiguration
 description: Crear un objeto androidGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 67bbdf997c2157c7e3161ee1c37a7cdf47ac2d25
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: dcf27402456ab0e37d71ef82ff5e559a54df0b89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353756"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972519"
 ---
 # <a name="create-androidgeneraldeviceconfiguration"></a>Crear androidGeneralDeviceConfiguration
 
@@ -36,7 +38,7 @@ POST /deviceManagement/deviceConfigurations
 |Encabezado|Valor|
 |:---|:---|
 |Autorización|Se requiere &lt;token&gt; de portador.|
-|Aceptar|application/json|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, especifique una representación JSON del objeto androidGeneralDeviceConfiguration.
@@ -45,60 +47,60 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|String|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadena|Clave de la entidad. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versión de la configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |appsBlockClipboardSharing|Booleano|Indica si se va a bloquear el uso compartido del Portapapeles para copiar y pegar entre aplicaciones.|
-|appsBlockCopyPaste|Boolean|Indica si se va a impedir copiar y pegar en las aplicaciones.|
-|appsBlockYouTube|Boolean|Indica si se va a bloquear la aplicación YouTube.|
-|bluetoothBlocked|Boolean|Indica si se va a bloquear Bluetooth.|
+|appsBlockCopyPaste|Booleano|Indica si se va a impedir copiar y pegar en las aplicaciones.|
+|appsBlockYouTube|Booleano|Indica si se va a bloquear la aplicación YouTube.|
+|bluetoothBlocked|Booleano|Indica si se va a bloquear Bluetooth.|
 |cameraBlocked|Booleano|Indica si se va a bloquear el uso de la cámara.|
-|cellularBlockDataRoaming|Boolean|Indica si se va a bloquear la itinerancia de datos.|
-|cellularBlockMessaging|Boolean|Indica si se va a bloquear la mensajería SMS/MMS.|
-|cellularBlockVoiceRoaming|Boolean|Indica si se va a bloquear la itinerancia de voz.|
-|cellularBlockWiFiTethering|Boolean|Indica si se va a bloquear la sincronización de tethering Wi-Fi.|
+|cellularBlockDataRoaming|Booleano|Indica si se va a bloquear la itinerancia de datos.|
+|cellularBlockMessaging|Booleano|Indica si se va a bloquear la mensajería SMS/MMS.|
+|cellularBlockVoiceRoaming|Booleano|Indica si se va a bloquear la itinerancia de voz.|
+|cellularBlockWiFiTethering|Booleano|Indica si se va a bloquear la sincronización de tethering Wi-Fi.|
 |compliantAppsList|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicaciones en el cumplimiento (sea lista de permitidos o de bloqueados, controlado por CompliantAppListType). Esta colección puede contener un máximo de 10 000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Tipo de lista que se encuentra en la CompliantAppsList. Los valores posibles son: `none`, `appsInListCompliant` y `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Boolean|Indica si se va a bloquear el envío de datos de diagnóstico.|
+|diagnosticDataBlockSubmission|Booleano|Indica si se va a bloquear el envío de datos de diagnóstico.|
 |locationServicesBlocked|Booleano|Indica si se van a bloquear los servicios de ubicación.|
-|googleAccountBlockAutoSync|Boolean|Indica si se va a bloquear la sincronización automática de cuentas de Google.|
-|googlePlayStoreBlocked|Boolean|Indica si se va a bloquear la aplicación Google Play Store.|
-|kioskModeBlockSleepButton|Boolean|Indica si se va a bloquear el botón de suspensión de pantalla durante el modo de pantalla completa.|
-|kioskModeBlockVolumeButtons|Boolean|Indica si se van a bloquear los botones de volumen durante el modo de pantalla completa.|
+|googleAccountBlockAutoSync|Booleano|Indica si se va a bloquear la sincronización automática de cuentas de Google.|
+|googlePlayStoreBlocked|Booleano|Indica si se va a bloquear la aplicación Google Play Store.|
+|kioskModeBlockSleepButton|Booleano|Indica si se va a bloquear el botón de suspensión de pantalla durante el modo de pantalla completa.|
+|kioskModeBlockVolumeButtons|Booleano|Indica si se van a bloquear los botones de volumen durante el modo de pantalla completa.|
 |kioskModeApps|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicaciones que se podrán ejecutar cuando el dispositivo esté en modo de pantalla completa. Esta colección puede contener un máximo de 500 elementos.|
-|nfcBlocked|Boolean|Indica si se va a bloquear la transmisión de datos en proximidad.|
+|nfcBlocked|Booleano|Indica si se va a bloquear la transmisión de datos en proximidad.|
 |passwordBlockFingerprintUnlock|Booleano|Indica si se va a impedir el desbloqueo por huella dactilar.|
-|passwordBlockTrustAgents|Boolean|Indica si se van a bloquear Smart Lock y otros agentes de confianza.|
+|passwordBlockTrustAgents|Booleano|Indica si se van a bloquear Smart Lock y otros agentes de confianza.|
 |passwordExpirationDays|Int32|Número de días antes de que expire la contraseña. Valores válidos de 1 a 365|
 |passwordMinimumLength|Int32|Longitud mínima de las contraseñas. Valores válidos de 4 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inactividad antes de que se agote el tiempo de espera de la pantalla.|
 |passwordPreviousPasswordBlockCount|Int32|Número de contraseñas anteriores que bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número de errores de inicio de sesión permitidos antes del restablecimiento de fábrica. Valores válidos de 4 a 11|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Tipo de contraseña que es necesario. Los valores posibles son: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex` y `any`.|
-|passwordRequired|Boolean|Indica si se va a requerir una contraseña.|
-|powerOffBlocked|Boolean|Indica si se va a bloquear el apagado del dispositivo.|
-|factoryResetBlocked|Boolean|Indica si se va a impedir que el usuario realice un restablecimiento de fábrica.|
-|screenCaptureBlocked|Boolean|Indica si se van a impedir las capturas de pantalla.|
-|deviceSharingAllowed|Boolean|Indica si se va a permitir el modo de uso compartido del dispositivo.|
-|storageBlockGoogleBackup|Boolean|Indica si se va a bloquear Google Backup.|
-|storageBlockRemovableStorage|Boolean|Indica si se va a bloquear el uso de almacenamiento extraíble.|
-|storageRequireDeviceEncryption|Boolean|Indica si se va a requerir cifrado del dispositivo.|
-|storageRequireRemovableStorageEncryption|Boolean|Indica si se va a requerir cifrado del almacenamiento extraíble.|
-|voiceAssistantBlocked|Boolean|Indica si se va a bloquear el uso del asistente de voz.|
-|voiceDialingBlocked|Boolean|Indica si se va a bloquear la marcación por voz.|
-|webBrowserBlockPopups|Boolean|Indica si se van a bloquear los elementos emergentes en el explorador web.|
-|webBrowserBlockAutofill|Boolean|Indica si se va a bloquear la característica de autorrellenado del explorador web.|
-|webBrowserBlockJavaScript|Boolean|Indica si se va a bloquear JavaScript en el explorador web.|
-|webBrowserBlocked|Boolean|Indica si se va a bloquear el explorador web.|
+|passwordRequired|Booleano|Indica si se va a requerir una contraseña.|
+|powerOffBlocked|Booleano|Indica si se va a bloquear el apagado del dispositivo.|
+|factoryResetBlocked|Booleano|Indica si se va a impedir que el usuario realice un restablecimiento de fábrica.|
+|screenCaptureBlocked|Booleano|Indica si se van a impedir las capturas de pantalla.|
+|deviceSharingAllowed|Booleano|Indica si se va a permitir el modo de uso compartido del dispositivo.|
+|storageBlockGoogleBackup|Booleano|Indica si se va a bloquear Google Backup.|
+|storageBlockRemovableStorage|Booleano|Indica si se va a bloquear el uso de almacenamiento extraíble.|
+|storageRequireDeviceEncryption|Booleano|Indica si se va a requerir cifrado del dispositivo.|
+|storageRequireRemovableStorageEncryption|Booleano|Indica si se va a requerir cifrado del almacenamiento extraíble.|
+|voiceAssistantBlocked|Booleano|Indica si se va a bloquear el uso del asistente de voz.|
+|voiceDialingBlocked|Booleano|Indica si se va a bloquear la marcación por voz.|
+|webBrowserBlockPopups|Booleano|Indica si se van a bloquear los elementos emergentes en el explorador web.|
+|webBrowserBlockAutofill|Booleano|Indica si se va a bloquear la característica de autorrellenado del explorador web.|
+|webBrowserBlockJavaScript|Booleano|Indica si se va a bloquear JavaScript en el explorador web.|
+|webBrowserBlocked|Booleano|Indica si se va a bloquear el explorador web.|
 |webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Configuración de cookies en el explorador web. Los valores posibles son: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited` y `allowAlways`.|
-|wiFiBlocked|Boolean|Indica si se va a bloquear la sincronización de Wi-Fi.|
+|wiFiBlocked|Booleano|Indica si se va a bloquear la sincronización de Wi-Fi.|
 |appsInstallAllowList|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicaciones que se pueden instalar en el dispositivo KNOX. Esta colección puede contener un máximo de 500 elementos.|
 |appsLaunchBlockList|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicaciones cuyo inicio en el dispositivo KNOX está bloqueado. Esta colección puede contener un máximo de 500 elementos.|
 |appsHideList|Colección [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicaciones que se ocultarán en el dispositivo KNOX. Esta colección puede contener un máximo de 500 elementos.|
-|securityRequireVerifyApps|Boolean|Requerir que la característica Verificar aplicaciones de Android esté activada.|
+|securityRequireVerifyApps|Booleano|Requerir que la característica Verificar aplicaciones de Android esté activada.|
 
 
 

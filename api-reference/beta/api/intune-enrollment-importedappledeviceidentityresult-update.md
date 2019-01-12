@@ -3,12 +3,13 @@ title: Actualizar importedAppleDeviceIdentityResult
 description: Actualizar las propiedades de un objeto importedAppleDeviceIdentityResult.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0b977063c362646cee7051e742729f63fccecf9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 434bc2f19e708041b93ff79a8708f30bed086855
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836543"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915497"
 ---
 # <a name="update-importedappledeviceidentityresult"></a>Actualizar importedAppleDeviceIdentityResult
 

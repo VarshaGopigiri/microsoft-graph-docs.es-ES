@@ -3,12 +3,13 @@ title: tipo de plataforma de enum
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 70703bd3c962def0d10099986ebe07ff2923ee8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 833aec8527d77ae8b4cc40e0b34a664331b2e939
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891906"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958400"
 ---
 # <a name="platform-enum-type"></a>tipo de plataforma de enum
 
@@ -18,7 +19,7 @@ ms.locfileid: "27891906"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Plataforma de dispositivo desconocido|
 |IOS|1|Plataforma de dispositivo IOS|

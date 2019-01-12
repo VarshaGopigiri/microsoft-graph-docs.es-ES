@@ -2,12 +2,14 @@
 title: Tipo de recurso mailFolder
 description: Carpeta de recurso en el buzón de un usuario, como Bandeja de entrada y Borradores. Las carpetas de correo pueden contener mensajes, otros elementos de Outlook y carpetas de correo secundarias.
 localization_priority: Priority
-ms.openlocfilehash: 32af125f57e02394c4d01913aaf783df11809242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dbcb35ad0b131f4e714acd7f178fbbb1109b913c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888161"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920117"
 ---
 # <a name="mailfolder-resource-type"></a>Tipo de recurso mailFolder
 
@@ -26,7 +28,7 @@ GET /me/mailFolders/drafts
 
 Nombres conocidos trabajar independientemente de la configuración regional del buzón de correo del usuario, por lo que la consulta anterior devolverá siempre carpeta de borradores del usuario, independientemente de cómo se denomina.
 
-| Nombre de la carpeta conocidos | Description |
+| Nombre de la carpeta conocidos | Descripción |
 |:-----------------------|:------------|
 | archivo | Los mensajes de la carpeta de archivo se envían a cuando se usa la característica de archivo de One_Click en los clientes de Outlook que lo admitan. **Nota:** no es el mismo que la característica de buzón de archivo de Exchange online. |
 | desorden | Los mensajes con prioridad baja desorden carpeta se mueven a cuando se usa la característica de desorden. |
@@ -157,7 +159,7 @@ Aquí tiene una representación JSON del recurso
 }
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](/graph/delta-query-overview)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](/graph/delta-query-messages)

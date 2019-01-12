@@ -3,12 +3,13 @@ title: Actualizar androidDeviceOwnerEnrollmentProfile
 description: Actualizar las propiedades de un objeto androidDeviceOwnerEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 18ecb9728cd1f178112bc8542f147edc8af472a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f4b8e87f44259e2bf3db9460f71a376b107d28d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814157"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921286"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>Actualizar androidDeviceOwnerEnrollmentProfile
 

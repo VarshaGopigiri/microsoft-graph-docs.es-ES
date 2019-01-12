@@ -3,12 +3,13 @@ title: tipo de recurso teamsAppInstallation
 description: 'Un teamsApp instalado en un equipo. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 5eca63cb3385fa03f8dffadff0482dc79a1dcfe3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 30a7f05d7b814fbb36c632a88f2f4e71f135d781
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871515"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955348"
 ---
 # <a name="teamsappinstallation-resource-type"></a>tipo de recurso teamsAppInstallation
 
@@ -33,7 +34,7 @@ ms.locfileid: "27871515"
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación   | Tipo    | Description |
+| Relación   | Tipo    | Descripción |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| La aplicación que está instalada. |
 |teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| Los detalles de esta versión de la aplicación. |

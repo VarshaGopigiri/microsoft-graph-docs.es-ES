@@ -3,12 +3,13 @@ title: Get contactFolder
 description: Obtiene una carpeta de contactos mediante el id. de carpeta de contactos.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: a0ce1c112161e2828d9646232ce577ddb759ac79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5bab3c729795f70789c66b22899b412d5f6abdf0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815333"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923799"
 ---
 # <a name="get-contactfolder"></a>Get contactFolder
 

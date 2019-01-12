@@ -3,12 +3,13 @@ title: tipo de enumeración managementState
 description: Estado de administración de dispositivos en Microsoft Intune.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c439cf0ff830f471d2050eee81c91c6539e66d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d9d083c56df366b9f896432328d51c295f62190
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844656"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961949"
 ---
 # <a name="managementstate-enum-type"></a>tipo de enumeración managementState
 
@@ -18,7 +19,7 @@ ms.locfileid: "27844656"
 
 Estado de administración de dispositivos en Microsoft Intune.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |administrado|0|El dispositivo está bajo administración|
 |retirePending|1|Un comando de retirada se está produciendo en el dispositivo y en el proceso de unenrolling de administración|
