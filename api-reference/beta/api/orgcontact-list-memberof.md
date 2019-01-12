@@ -2,12 +2,14 @@
 title: 'orgContact: miembro de lista'
 description: Recuperar la lista de grupos y unidades administrativas de que el contacto es un miembro.
 localization_priority: Normal
-ms.openlocfilehash: 318936a49c4eeb56f05c685fc1a1ddd1eaad1a62
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d5ad10bd9edce09849799540bcbfbfda90d7bb28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862691"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920187"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: miembro de lista
 

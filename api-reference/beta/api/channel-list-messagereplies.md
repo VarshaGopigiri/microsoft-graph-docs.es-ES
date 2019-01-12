@@ -3,12 +3,13 @@ title: Respuestas de mensajes de canal de lista
 description: Lista de todas las respuestas de un mensaje en un canal de un equipo.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 6b2866bf2b6768eca4b6227f53ab50adec0ba5ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3648a1eedb53e1838344317c5cd71fe54f8704bf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849843"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922245"
 ---
 # <a name="list-channel-message-replies"></a>Respuestas de mensajes de canal de lista
 

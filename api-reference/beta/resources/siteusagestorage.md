@@ -2,12 +2,13 @@
 title: tipo de recurso siteUsageStorage
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 1f656feacdbba3418049bd9f3072270aa04af798
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: c136b776e0c96a8bc63a1c82ae2ad17f059026cc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879929"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928104"
 ---
 # <a name="siteusagestorage-resource-type"></a>tipo de recurso siteUsageStorage
 

@@ -3,12 +3,13 @@ title: tipo de recurso hardwareInformation
 description: Información de hardware de un dispositivo determinado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2684f1ff7e7a6407942ac61fae7d45ead16820d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0665152e3cc483f2303f458b79c891658651d91f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831830"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930316"
 ---
 # <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
 
@@ -18,7 +19,7 @@ ms.locfileid: "27831830"
 
 Información de hardware de un dispositivo determinado.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |serialNumber|Cadena|Número de serie.|
 |totalStorageSpace|Int64|Espacio de almacenamiento total del dispositivo.|

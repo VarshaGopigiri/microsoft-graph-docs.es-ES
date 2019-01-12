@@ -3,12 +3,13 @@ title: tipo de enumeración applicationType
 description: Posibles tipos de aplicación
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e18b32fe446768d965181a5e0684f6d615e2fc6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 13508c26dee1729ba856fcca51ab89ab08270cd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879628"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924289"
 ---
 # <a name="applicationtype-enum-type"></a>tipo de enumeración applicationType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27879628"
 
 Posibles tipos de aplicación
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |universal|1|La aplicación universal de windows|
 |escritorio|2|La aplicación de escritorio de windows|

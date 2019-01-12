@@ -2,12 +2,14 @@
 title: tipo de recurso mailSearchFolder
 description: Una mailSearchFolder es una carpeta virtual en el buzón del usuario que contiene todos los elementos de correo electrónico que coincidan con los criterios de búsqueda especificada. mailSearchFolder hereda de mailFolder.
 localization_priority: Normal
-ms.openlocfilehash: 62d4d8569977c99690e317a39a43bbc9d9dca3f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 1ba9ce248071e3d806383b4cd7e7550c1e3aa145
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870395"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920915"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
@@ -28,7 +30,7 @@ Una mailSearchFolder es una carpeta virtual en el buzón del usuario que contien
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Description |
+| Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
 | isSupported | Booleano | Indica si una carpeta de búsqueda se puede editar mediante la API de REST. |
 | includeNestedFolders | Booleano | Indica cómo se debe pasar por la jerarquía de carpetas de buzón de correo. `true`significa que debe ser una búsqueda en profundidad mientras `false` significa que se debe realizar una búsqueda no exhaustivos en su lugar. |

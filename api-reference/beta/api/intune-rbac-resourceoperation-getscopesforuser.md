@@ -3,12 +3,13 @@ title: getScopesForUser (función)
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b0cd9a14602ce090de5d79720415a1e52d3b3145
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 55d39ed67dc3aafff69a4e826d59c9933023788b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822425"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930792"
 ---
 # <a name="getscopesforuser-function"></a>getScopesForUser (función)
 
@@ -45,7 +46,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |UserID|Cadena|Todavía no documentado|
 

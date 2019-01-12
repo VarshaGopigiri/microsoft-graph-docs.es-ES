@@ -2,12 +2,14 @@
 title: Actualizar plannerUser
 description: Actualizar las propiedades de un objeto plannerUser. Puede usar esta operación para agregar o quitar los planes de lista de favoritos de los planes de un usuario e indicar que los planes del usuario ha visto recientemente.
 localization_priority: Normal
-ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 733743ffee8e29d66f2ebe411d127161e7e8eb2a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889057"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925892"
 ---
 # <a name="update-planneruser"></a>Actualizar plannerUser
 
@@ -33,12 +35,12 @@ PATCH /me/planner
 | Nombre       | Descripción|
 |:-----------|:-----------|
 | Autorización  | {código} del portador. Necesario.|
-| If-Match  | El último valor de ETag conocido para el **plannerUser** van a actualizar. Necesario.|
+| If-Match  | El último valor de ETag conocido para el **plannerUser** van a actualizar. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|Cambios realizados en la colección que contiene las referencias a los planes de que el usuario ha marcado como favorito.|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|Cambios realizados en la colección que contiene las referencias a los planes de que el usuario ha visto recientemente.|

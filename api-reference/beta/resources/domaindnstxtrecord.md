@@ -3,12 +3,13 @@ title: Tipo de recurso domainDnsTxtRecord
 description: Representa un registro TXT agregado al archivo de zona DNS de un dominio determinado en el inquilino. Heredado de la entidad DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 045e18b67f3a5fae93651cc59c3d2a16ee9e63f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f0cb76e0c90a681eae775a687999a43b741a2df2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811525"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918131"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Tipo de recurso domainDnsTxtRecord
 

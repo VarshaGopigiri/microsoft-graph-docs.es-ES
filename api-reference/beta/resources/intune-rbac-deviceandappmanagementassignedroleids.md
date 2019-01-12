@@ -3,12 +3,13 @@ title: tipo de recurso deviceAndAppManagementAssignedRoleIds
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1ae87f1a8430ef2539fe10e813390b0fbd68b267
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2dbabca28f9ed8aa491d01f6eada5dc11b76867b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846343"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923379"
 ---
 # <a name="deviceandappmanagementassignedroleids-resource-type"></a>tipo de recurso deviceAndAppManagementAssignedRoleIds
 
@@ -18,7 +19,7 @@ ms.locfileid: "27846343"
 
 Todavía no documentado
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleDefinitionIds|Colección Guid|Identificadores de definición de rol para las definiciones de roles asignados a un usuario específicas.|
 |roleAssignmentIds|Colección Guid|Identificadores de asignación de rol para las asignaciones de roles asignados a un usuario específicas.|

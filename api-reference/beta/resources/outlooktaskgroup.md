@@ -3,12 +3,13 @@ title: tipo de recurso outlookTaskGroup
 description: 'Un grupo de carpetas (outlookTaskFolder) que contienen las tareas de Outlook (colección de objetos de outlookTask). '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d1392e07f76d508fe30307294a54429a692f34e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878774"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923911"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
 
@@ -39,7 +40,7 @@ En Outlook, hay un grupo de tareas predeterminada `My Tasks` que no se puede cam
 |name|Cadena|El nombre del grupo de tareas.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Description|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |taskFolders|colección de [outlookTaskFolder](outlooktaskfolder.md)| La colección de carpetas de tareas en el grupo de tareas. Solo lectura. Admite valores NULL.|
 

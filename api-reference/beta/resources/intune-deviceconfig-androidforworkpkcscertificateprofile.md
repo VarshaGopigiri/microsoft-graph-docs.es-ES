@@ -3,12 +3,13 @@ title: tipo de recurso androidForWorkPkcsCertificateProfile
 description: Perfil de certificado para Android para PKCS de trabajo
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da55c08aa0f4a29330f91c3e27563a12e9e70fec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d1a2336c64aea1bd945081394db22ddbdaf5c6e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835780"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929938"
 ---
 # <a name="androidforworkpkcscertificateprofile-resource-type"></a>tipo de recurso androidForWorkPkcsCertificateProfile
 
@@ -52,7 +53,7 @@ Hereda de [androidForWorkCertificateProfileBase](../resources/intune-deviceconfi
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nombre alternativo de sujeto de certificado. Los valores posibles son: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute` y `domainNameService`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

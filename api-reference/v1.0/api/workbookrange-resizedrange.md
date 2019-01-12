@@ -2,12 +2,14 @@
 title: 'workbookRange: resizedRange'
 description: Obtiene un objeto de rango similar al objeto actual, pero con su esquina inferior derecha expandida (o contraída) mediante un número de filas y columnas.
 localization_priority: Normal
-ms.openlocfilehash: 7cdc1f06487a28bf80b4091c5d287fb3086801fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 4eb5aad208ecd7c60e45b2419b61570915bb7338
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885032"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931296"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 Obtiene un objeto de rango similar al objeto actual, pero con su esquina inferior derecha expandida (o contraída) mediante un número de filas y columnas.

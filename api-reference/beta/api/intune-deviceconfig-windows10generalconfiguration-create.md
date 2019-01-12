@@ -3,12 +3,13 @@ title: Crear windows10GeneralConfiguration
 description: Crear un objeto windows10GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6abaa9a330c564b38a1c30457b0c0bf3dcd491c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7cd5c8d2a12ba3407a2c4b2086b0debda5b891fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844831"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919179"
 ---
 # <a name="create-windows10generalconfiguration"></a>Crear windows10GeneralConfiguration
 

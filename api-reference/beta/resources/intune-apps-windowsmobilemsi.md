@@ -3,12 +3,13 @@ title: Tipo de recurso windowsMobileMSI
 description: Contiene las propiedades y las propiedades heredadas de la aplicación del conjunto de aplicaciones de línea de negocio de MSI para Windows Mobile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 28f9ead4f232f939454fdf698af605e57535c1ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d1dd985af905f517f12ad3b825f48043ce423bff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862394"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918111"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Tipo de recurso windowsMobileMSI
 

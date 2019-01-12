@@ -3,12 +3,13 @@ title: tipo de recurso androidWorkProfileCompliancePolicy
 description: Esta clase contiene la configuración de cumplimiento para Android perfil de trabajo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f3180c9f8a12aad8c17717265f37b81c44b0288
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 27dd435a83326427cf1583629e6cd77fc497fa32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850606"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918164"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>tipo de recurso androidWorkProfileCompliancePolicy
 
@@ -30,7 +31,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |[Actualizar androidWorkProfileCompliancePolicy](../api/intune-deviceconfig-androidworkprofilecompliancepolicy-update.md)|[androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)|Actualizar las propiedades de un objeto [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .|
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

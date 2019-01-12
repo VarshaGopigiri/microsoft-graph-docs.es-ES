@@ -2,12 +2,14 @@
 title: tipo de recurso bookingService
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 63eae84249501426c43ad73326cbf005009753be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 790adf49cfda1f787665a48e1b06bd77da27e1f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815445"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925164"
 ---
 # <a name="bookingservice-resource-type"></a>tipo de recurso bookingService
 
@@ -26,7 +28,7 @@ Representa información sobre un determinado servicio proporcionado por un [book
 |[Delete](../api/bookingservice-delete.md) | Ninguno |Eliminar un objeto **bookingService** en la [bookingbusiness](../resources/bookingbusiness.md)de especificado. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |defaultDuration|Duración|La longitud predeterminada del servicio, representado en número de días, horas, minutos y segundos. Por ejemplo, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|La ubicación física de forma predeterminada para el servicio.|

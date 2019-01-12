@@ -3,12 +3,13 @@ title: Actualizar androidPkcsCertificateProfile
 description: Actualizar las propiedades de un objeto androidPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4be9510a78bf5147455b434efd98b3804823e4ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 038cf8bc1d080139e7253da2f3c4cf8e20724446
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807849"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930180"
 ---
 # <a name="update-androidpkcscertificateprofile"></a>Actualizar androidPkcsCertificateProfile
 

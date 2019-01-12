@@ -3,12 +3,13 @@ title: Actualizar iosImportedPFXCertificateProfile
 description: Actualizar las propiedades de un objeto iosImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72ba56f932cc46cea8b1b967e61cbb7fe4123ea1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 19c8eaabd05bcafa545bdfa93677c68df9f28dfb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852104"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929686"
 ---
 # <a name="update-iosimportedpfxcertificateprofile"></a>Actualizar iosImportedPFXCertificateProfile
 

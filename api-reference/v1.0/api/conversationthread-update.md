@@ -2,12 +2,14 @@
 title: Update conversationthread
 description: Bloquea o desbloquea un hilo para permitir o impedir futuras publicaciones en el hilo.
 localization_priority: Normal
-ms.openlocfilehash: a7f0738314bc071d5d084903fdc46b7fac1cf8cd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: a4f09f77c5f11a0933956dd60c9b15ff6be3116f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927726"
 ---
 # <a name="update-conversationthread"></a>Update conversationthread
 

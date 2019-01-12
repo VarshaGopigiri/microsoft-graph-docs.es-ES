@@ -2,12 +2,14 @@
 title: Add group owner
 description: Agrega un usuario a los propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo.
 localization_priority: Priority
-ms.openlocfilehash: 435d4a2c89abbeb49fc6dbe914cc378d832a8235
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: b3057a270aa2c503d96747e173cc54b13013ce6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825308"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917996"
 ---
 # <a name="add-group-owner"></a>Add group owner
 Agrega un usuario a los propietarios del grupo. Los propietarios son un conjunto de usuarios no administradores que tienen permiso para modificar el objeto de grupo.

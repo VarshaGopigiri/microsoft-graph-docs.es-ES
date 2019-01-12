@@ -3,12 +3,13 @@ title: 'llamar a: transferencia'
 description: Transferir una llamada activa.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 5e1a26a1b3da1af8666d8fc5bcbba619c9fad97b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 34ddf14ae7a49aa8a0aeae1c1bc98b8a79c16384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824902"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921615"
 ---
 # <a name="call-transfer"></a>llamar a: transferencia
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Description|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|El participante que es el destino de la transferencia.|
 |clientContext|Cadena|El contexto de cliente.|

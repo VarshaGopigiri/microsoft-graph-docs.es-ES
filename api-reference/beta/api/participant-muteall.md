@@ -3,12 +3,13 @@ title: 'participante: muteAll'
 description: Silenciar a todos los participantes de la llamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7141c5f8ee190fd3df8cca3f30f14c537165986b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: e8cd6478aeb0b467d65f452417d5de43d335d89f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837810"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920152"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Description|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |participants|Colección String|Los participantes que se ha desactivado.|
 |clientContext|Cadena|El contexto de cliente.|

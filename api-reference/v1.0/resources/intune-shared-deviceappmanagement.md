@@ -3,12 +3,13 @@ title: Tipo de recurso deviceAppManagement
 description: Entidad singleton que actúa como un contenedor para todas las funcionalidades de administración de aplicaciones de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60acbdb63f3bd75bacbc2d2392cbb3ab64cc4b57
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c8aa9a481336812c3101a206695dd8d83a0401f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825651"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915560"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
@@ -36,7 +37,7 @@ Entidad singleton que actúa como un contenedor para todas las funcionalidades d
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Última vez que se sincronizaron correctamente las aplicaciones de Microsoft Store para Empresas en la cuenta.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |**Aplicaciones**|
 |mobileAppCategories|Colección [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Las categorías de las aplicaciones para móviles.|

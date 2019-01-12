@@ -2,12 +2,14 @@
 title: 'TableCollection: add'
 description: Crea una tabla nueva. La dirección de origen del rango determina la hoja de cálculo en la que se agregará la tabla. Si no se puede agregar la tabla (por ejemplo, porque la dirección no es válida o porque la tabla se superpondría con otra tabla), se producirá un error.
 localization_priority: Normal
-ms.openlocfilehash: 8053ce8e8d0ac62e096fa70255064e82a03630f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 75d39b32c651ad1633b48aa91514d4b2e118b136
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868449"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912928"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 

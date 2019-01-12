@@ -2,12 +2,14 @@
 title: Tipo de recurso meetingTimeSuggestionsResult
 description: Una colección de sugerencias para la reunión, en caso de haberla, o el motivo de su cancelación, en caso de que se produzca.
 localization_priority: Normal
-ms.openlocfilehash: 85a0c3ade54204cb78957e81325869197f403c5d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: ed3af37ba48a48f3bc864dc8d9ad67e729999398
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823698"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914188"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Tipo de recurso meetingTimeSuggestionsResult
 

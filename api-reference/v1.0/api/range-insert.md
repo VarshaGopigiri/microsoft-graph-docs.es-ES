@@ -2,12 +2,14 @@
 title: 'Range: insert'
 description: Inserta una celda o un intervalo de celdas en la hoja de cálculo en lugar de este intervalo y desplaza las demás celdas para crear espacio. Devuelve un objeto Range en el espacio que queda en blanco.
 localization_priority: Normal
-ms.openlocfilehash: 78cd2d4018a96428b7e5336d00ca20bada4abd36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: aa59abfd2b60454a73472fc5283d3c7212ee48ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804875"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929049"
 ---
 # <a name="range-insert"></a>Range: insert
 

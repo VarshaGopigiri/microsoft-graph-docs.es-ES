@@ -3,12 +3,13 @@ title: tipo de recurso officeConfiguration
 description: Entidad singleton que actúa como un contenedor para todas las funcionalidades de administración de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 096a54db296181e58020bb9bc694056c0b9e949a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 767782e26dd203e2ab5488b30520d8cbcf44d1e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817264"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921363"
 ---
 # <a name="officeconfiguration-resource-type"></a>tipo de recurso officeConfiguration
 
@@ -31,7 +32,7 @@ Entidad singleton que actúa como un contenedor para todas las funcionalidades d
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entidad que describe el inquilino de verificación estatuas|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |clientConfigurations|colección de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Lista de configuración de cliente de office.|
 

@@ -2,12 +2,13 @@
 title: 'reportRoot: getYammerActivityUserDetail'
 description: Obtiene información sobre las actividades de Yammer por usuario.
 localization_priority: Normal
-ms.openlocfilehash: da1337d6b925c7b729c950eeac35cc3a8981596e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 9e1efd17342dc7f6b4e1dca78afb76ca500f7b14
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839623"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913131"
 ---
 # <a name="reportroot-getyammeractivityuserdetail"></a>reportRoot: getYammerActivityUserDetail
 

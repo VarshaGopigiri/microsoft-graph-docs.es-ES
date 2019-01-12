@@ -3,12 +3,13 @@ title: tipo de enumeración applicationGuardBlockFileTransferType
 description: Valores posibles para applicationGuardBlockFileTransfer
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 02eb1989c0218b66688f158461c4a66fa8c0a38a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f6eb5c7c3f26fb62e73e9b1e103d111f6c652f5c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871956"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931268"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>tipo de enumeración applicationGuardBlockFileTransferType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27871956"
 
 Valores posibles para applicationGuardBlockFileTransfer
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |No configurado|0|No configurado|
 |blockImageAndTextFile|1|Portapapeles de bloque para transferir el archivo de imagen y texto|
