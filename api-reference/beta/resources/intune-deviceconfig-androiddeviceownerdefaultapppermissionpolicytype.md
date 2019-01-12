@@ -3,12 +3,13 @@ title: tipo de enumeración androidDeviceOwnerDefaultAppPermissionPolicyType
 description: Android propietario del dispositivo predeterminado permiso directiva tipo de aplicación.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a7ea8312bfe8f692f878180a16646cb9d7f07a86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fb03710edb29954355f8d82e245365bedd98eabd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807668"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927635"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>tipo de enumeración androidDeviceOwnerDefaultAppPermissionPolicyType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27807668"
 
 Android propietario del dispositivo predeterminado permiso directiva tipo de aplicación.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|Valor predeterminado de dispositivo, sin intención.|
 |símbolo del sistema|1|El mensaje.|

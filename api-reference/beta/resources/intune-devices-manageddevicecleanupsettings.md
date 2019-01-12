@@ -3,12 +3,13 @@ title: tipo de recurso managedDeviceCleanupSettings
 description: Definir la regla cuando el administrador desea que los dispositivos limpiar.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 755fc90b957427c4b9f8ee9007decea320141601
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 334b561ffa19d4161553f761ce65b7da7d9dbcfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961900"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso managedDeviceCleanupSettings
 
@@ -18,7 +19,7 @@ ms.locfileid: "27808977"
 
 Definir la regla cuando el administrador desea que los dispositivos limpiar.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |deviceInactivityBeforeRetirementInDays|Cadena|Número de días cuando el dispositivo no ha contactado Intune.|
 

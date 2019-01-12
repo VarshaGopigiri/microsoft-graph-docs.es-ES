@@ -3,12 +3,13 @@ title: Crear equipo de grupo
 description: Crear un nuevo equipo de un grupo.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: ee4ad11dd7b9c4aeaa40886a53dcd750953771a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 277a889201f6a161b2ed4191721616a11ead2f41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825763"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938695"
 ---
 # <a name="create-team-from-group"></a>Crear equipo de grupo
 

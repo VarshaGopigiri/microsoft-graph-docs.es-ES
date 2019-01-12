@@ -3,12 +3,13 @@ title: tipo de recurso airPrintDestination
 description: Representa un destino de AirPrint.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6d1548737956d35d42fc077afe92de1885a54581
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ede4f580557e75d206e0b429069acb13f81bcc5f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878592"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962516"
 ---
 # <a name="airprintdestination-resource-type"></a>tipo de recurso airPrintDestination
 
@@ -18,7 +19,7 @@ ms.locfileid: "27878592"
 
 Representa un destino de AirPrint.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |ipAddress|cadena|La dirección IP de destino AirPrint.|
 |resourcePath|Cadena|La ruta de acceso de recursos asociados con la impresora. Esto corresponde al parámetro de la _ipps.tcp Bonjour registro rp. Por ejemplo: Canon_MG5300_series/impresoras, impresoras/Xerox_Phaser_7600, ipp, print y Epson_IPP_Printer.|

@@ -3,12 +3,13 @@ title: Obtener resourceOperation
 description: Lea las propiedades y las relaciones del objeto resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 97090b8a93a26d6e28689586602bb065bc7eaba6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6fa01fe1c3de366c2564703d96c43fb2957526c9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840624"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933424"
 ---
 # <a name="get-resourceoperation"></a>Obtener resourceOperation
 

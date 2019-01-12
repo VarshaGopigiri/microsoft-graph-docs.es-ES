@@ -3,12 +3,13 @@ title: tipo de enumeración managedDeviceOwnerType
 description: Tipo de propietario del dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6d7edc33406988b320487b94a12149fb2134c2ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 811b705ef181b4d905c735c8672bcf96059c8126
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870717"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934936"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>tipo de enumeración managedDeviceOwnerType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27870717"
 
 Tipo de propietario del dispositivo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Unknown (desconocido).|
 |company|1|Propiedad de empresa.|

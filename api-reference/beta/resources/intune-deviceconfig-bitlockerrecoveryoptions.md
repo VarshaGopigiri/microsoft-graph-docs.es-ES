@@ -3,12 +3,13 @@ title: tipo de recurso bitLockerRecoveryOptions
 description: Opciones de recuperación de BitLocker.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eae2052f71d1b1d048072c70dc76437811c1cd8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 40ca273b46a1e104afbeac4cbafe967ba76faa22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924842"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>tipo de recurso bitLockerRecoveryOptions
 
@@ -18,7 +19,7 @@ ms.locfileid: "27806457"
 
 Opciones de recuperación de BitLocker.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |blockDataRecoveryAgent|Booleano|Indica si se debe bloquear el agente de recuperación de datos basada en certificados.|
 |recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica si los usuarios están permitidos o necesarios para generar una contraseña de recuperación de 48 dígitos para fijo o disco de sistema. Los valores posibles son: `blocked`, `required` y `allowed`.|

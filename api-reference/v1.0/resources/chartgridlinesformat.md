@@ -3,12 +3,13 @@ title: Tipo de recurso ChartGridlinesFormat
 description: Encapsula las propiedades de formato de las líneas de cuadrícula del gráfico.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8fde51cc220b20c533c3af122375047dd3276a9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: dd1e6d7f0a4ae9c17794035c8103cda8d189d5ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826463"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959611"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Tipo de recurso ChartGridlinesFormat
 

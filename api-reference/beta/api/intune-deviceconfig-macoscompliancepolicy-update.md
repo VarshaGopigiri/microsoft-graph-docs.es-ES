@@ -3,12 +3,13 @@ title: Actualizar macOSCompliancePolicy
 description: Actualice las propiedades de un objeto macOSCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93bf199d9024ebadd9a8960d53d9185a3dadd10c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 63484fddcba470d2534c54fa0b2d70e855f43df7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852244"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938849"
 ---
 # <a name="update-macoscompliancepolicy"></a>Actualizar macOSCompliancePolicy
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, especifique una representación JSON del objeto [m
 
 En la tabla siguiente se muestran las propiedades necesarias para crear el objeto [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

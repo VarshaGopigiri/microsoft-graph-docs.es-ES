@@ -3,12 +3,13 @@ title: Actualizar iosEducationDeviceConfiguration
 description: Actualizar las propiedades de un objeto iosEducationDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1b26f4bb2a2981bbb31c13a04da582e31e313c8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6171939ab07b09412908ec961ca8c1d5ce4c7962
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878697"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938912"
 ---
 # <a name="update-ioseducationdeviceconfiguration"></a>Actualizar iosEducationDeviceConfiguration
 

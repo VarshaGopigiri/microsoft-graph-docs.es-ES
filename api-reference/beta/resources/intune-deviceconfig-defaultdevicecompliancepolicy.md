@@ -3,12 +3,13 @@ title: tipo de recurso defaultDeviceCompliancePolicy
 description: Reglas de directivas de cumplimiento de normas de dispositivo de predeterminada que se aplican de cuenta toda.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4629a5fb4dbf49c9ff94a7a9606ac2ec36c71986
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ce7e7bf21639d5ae156ce3f3cc98f6c85585bf3c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891458"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924863"
 ---
 # <a name="defaultdevicecompliancepolicy-resource-type"></a>tipo de recurso defaultDeviceCompliancePolicy
 
@@ -30,7 +31,7 @@ Hereda de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompli
 |[Actualizar defaultDeviceCompliancePolicy](../api/intune-deviceconfig-defaultdevicecompliancepolicy-update.md)|[defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md)|Actualizar las propiedades de un objeto [defaultDeviceCompliancePolicy](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) .|
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

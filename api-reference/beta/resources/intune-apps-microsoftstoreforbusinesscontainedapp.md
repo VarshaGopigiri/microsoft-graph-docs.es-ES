@@ -3,12 +3,13 @@ title: tipo de recurso microsoftStoreForBusinessContainedApp
 description: Una clase que representa una aplicación de contenidos de un MicrosoftStoreForBusinessApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f783475e2f1f49745b29903689e75d854c233352
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 68c47798156eeda5fc72153fd49ff2714319696e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876975"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932850"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>tipo de recurso microsoftStoreForBusinessContainedApp
 

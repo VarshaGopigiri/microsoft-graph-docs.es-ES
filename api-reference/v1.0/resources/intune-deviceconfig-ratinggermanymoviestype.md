@@ -3,12 +3,13 @@ title: tipo de enumeración ratingGermanyMoviesType
 description: Películas clasificación etiquetas en Alemania
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a65408d7c16943c40d635fc7cc5713ace21478f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ef57f27d72204136e101b03dfa5e4af00ba39b1d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888507"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928678"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>tipo de enumeración ratingGermanyMoviesType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27888507"
 
 Películas clasificación etiquetas en Alemania
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las películas|
 |allBlocked|1|No permitir cualquier contenido de películas|

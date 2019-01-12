@@ -2,12 +2,14 @@
 title: Términos y condiciones de la empresa de Microsoft Intune
 description: Puede implementar los términos y condiciones de Intune a los grupos de usuarios para explicar cómo afectan la inscripción, el acceso a los recursos de trabajo y la aplicación Portal de empresa a los dispositivos y usuarios. Los usuarios deben aceptar los términos y condiciones para poder usar el Portal de empresa para inscribir su trabajo y obtener acceso a él.
 localization_priority: Normal
-ms.openlocfilehash: 23e4bf95e8538301efcb268d23aeadc2874e069f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: c9d5b41e0c672db5dfff82b6a70bc97214a56f4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870948"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925934"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Términos y condiciones de la empresa de Microsoft Intune
 

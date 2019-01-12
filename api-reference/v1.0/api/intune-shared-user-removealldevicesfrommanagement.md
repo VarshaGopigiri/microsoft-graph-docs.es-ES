@@ -3,12 +3,13 @@ title: Acción removeAllDevicesFromManagement
 description: Retirar todos los dispositivos de la administración para este usuario
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3f43d941775f726c73981b387ef60fd9e26cc955
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 62e0243fef90190fd1ca39c02bc2a7e568b475d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849647"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934292"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Acción removeAllDevicesFromManagement
 

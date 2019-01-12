@@ -3,12 +3,13 @@ title: Actualizar windowsPhoneEASEmailProfileConfiguration
 description: Actualizar las propiedades de un objeto windowsPhoneEASEmailProfileConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0dbbe1074185ed27512662ec8af0d6c053b9bb69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 97d59700908221d9c2e953fa234e3a68360840e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808242"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936294"
 ---
 # <a name="update-windowsphoneeasemailprofileconfiguration"></a>Actualizar windowsPhoneEASEmailProfileConfiguration
 

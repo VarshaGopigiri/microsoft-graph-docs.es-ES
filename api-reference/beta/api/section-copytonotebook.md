@@ -2,12 +2,14 @@
 title: 'sección: copyToNotebook'
 description: Copia una sección a un bloc de notas específico.
 localization_priority: Normal
-ms.openlocfilehash: 7213220711051f0d4edd926305bcdc983cfa259a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 65a3dd079f0ed67e7c754f22f805de8ed8368c87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878039"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928209"
 ---
 # <a name="section-copytonotebook"></a>sección: copyToNotebook
 
@@ -42,7 +44,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación.
 
-| Parámetro    | Tipo   |Description|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |siteCollectionId|Cadena|El identificador del sitio de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
 |siteId|Cadena|El identificador del sitio web de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|

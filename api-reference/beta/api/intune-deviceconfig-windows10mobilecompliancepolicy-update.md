@@ -3,12 +3,13 @@ title: Actualizar windows10MobileCompliancePolicy
 description: Actualice las propiedades de un objeto windows10MobileCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3956af618a5d6ed52e5385a0d09b4326ac9ef367
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 61b3110d732e11a264dec063c91415cad90d7ca6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849451"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929343"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Actualizar windows10MobileCompliancePolicy
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, especifique una representación JSON del objeto [w
 
 En la tabla siguiente se muestran las propiedades necesarias para crear el objeto [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md).
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

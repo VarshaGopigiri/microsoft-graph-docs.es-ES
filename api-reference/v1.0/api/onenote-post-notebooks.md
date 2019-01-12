@@ -1,14 +1,15 @@
 ---
 title: Crear bloc de notas
 description: Crea un bloc de notas de OneNote.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: e25dd76747b5fb34a7acfcfce84c2ec0ee3366f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 417d4ffc4e64d0b941da4316e574f6e819577c91
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832826"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931611"
 ---
 # <a name="create-notebook"></a>Crear bloc de notas
 

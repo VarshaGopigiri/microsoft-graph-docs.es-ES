@@ -3,12 +3,13 @@ title: tipo de enumeración ratingNewZealandMoviesType
 description: Películas clasificación etiquetas en Nueva Zelanda
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 220348375503cca6ab42a9573b8ed5b5850192e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 47f66e28992136104f9fc3317e470278001fb14e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884024"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952555"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enumeración ratingNewZealandMoviesType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27884024"
 
 Películas clasificación etiquetas en Nueva Zelanda
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las películas|
 |allBlocked|1|No permitir cualquier contenido de películas|

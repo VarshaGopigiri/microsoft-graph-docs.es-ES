@@ -3,12 +3,13 @@ title: Crear androidWorkProfileCompliancePolicy
 description: Crear un nuevo objeto androidWorkProfileCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 71435ca13e35562b0c553aa05b4fd168dfa6db32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 19dcffbad18221a452ce69503f716dc73fe177c3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929056"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>Crear androidWorkProfileCompliancePolicy
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, proporcionar una representación de JSON para el o
 
 La siguiente tabla muestran las propiedades que son necesarias cuando se crea el androidWorkProfileCompliancePolicy.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

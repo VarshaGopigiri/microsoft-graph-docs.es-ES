@@ -3,12 +3,13 @@ title: tipo de recurso managementConditionStatement
 description: Una instrucción de condición de administración es un grupo de condiciones de administración que habilitar o deshabilitar las configuraciones de dispositivo o la aplicación cuando se cumplen todas las condiciones de administración contenido.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6281d151555c0c58a0eb608e9dafc754384369f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82a99e878337cf04659b8bc7da7e821bd8afb6aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878403"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929987"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 
@@ -42,7 +43,7 @@ Una instrucción de condición de administración es un grupo de condiciones de 
 Esto se calcula a partir de ¿está buscando las condiciones de administración asociadas a la administración de la condición de la instrucción y buscar la intersección de plataformas aplicables.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |managementConditions|colección de [managementCondition](../resources/intune-fencing-managementcondition.md)|Las condiciones de administración que se asocia a la instrucción de condición de administración.|
 

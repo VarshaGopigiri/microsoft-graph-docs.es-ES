@@ -3,12 +3,13 @@ title: tipo de enumeración deviceEnrollmentFailureReason
 description: Categorías de errores de nivel superior para la inscripción.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 576d054a8d2e5563b0c54ace1c7ef2c08f9844f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 25834f9c6e972a5a12d3e8d1e2a1283646483000
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834303"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981038"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enumeración deviceEnrollmentFailureReason
 
@@ -18,7 +19,7 @@ ms.locfileid: "27834303"
 
 Categorías de errores de nivel superior para la inscripción.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Valor predeterminado, el motivo del error es desconocido.|
 |autenticación|1|Error de autenticación|

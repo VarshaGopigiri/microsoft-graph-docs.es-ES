@@ -3,12 +3,13 @@ title: tipo de enumeración ratingAppsType
 description: Aplicaciones de clasificación como en el contenido de medios
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c3399b7d1a9c7eb18467e2df0db217a96602493
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 709734a36010ded195a93b383adefc80f729c4fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861016"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953409"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enumeración ratingAppsType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27861016"
 
 Aplicaciones de clasificación como en el contenido de medios
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las aplicaciones|
 |allBlocked|1|No permitir cualquier contenido de aplicaciones|

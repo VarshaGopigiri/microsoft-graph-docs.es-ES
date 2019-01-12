@@ -3,12 +3,13 @@ title: tipo de recurso iosVpnConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar el dispositivo iOS para conectarse al extremo VPN que desee. Mediante la especificación de los tipos de seguridad y el método de autenticación esperen por el extremo VPN que puede realizar la conexión VPN transparente para el usuario final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4ab5b53c47022b106bbe337254d6f0b1043f83c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2cc9269a7e1c096b9378ed8baac32f91e4652858
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849521"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939080"
 ---
 # <a name="iosvpnconfiguration-resource-type"></a>tipo de recurso iosVpnConfiguration
 
@@ -63,7 +64,7 @@ Hereda de [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfi
 |excludeList|Colección String|Sólo Zscaler. Lista de direcciones de red que no se envían a través de la nube de Zscaler.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

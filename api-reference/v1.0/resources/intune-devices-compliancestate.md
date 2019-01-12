@@ -3,12 +3,13 @@ title: tipo de enumeración complianceState
 description: Estado de cumplimiento.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53b17f258f577e0842dbfc81c6341303f6b43799
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a4f4c359665eb1a0087f64802b5e7c829002fd6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820345"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940200"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de enumeración complianceState
 
@@ -16,7 +17,7 @@ ms.locfileid: "27820345"
 
 Estado de cumplimiento.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Unknown (desconocido).|
 |compatible con|1|Compatible con.|

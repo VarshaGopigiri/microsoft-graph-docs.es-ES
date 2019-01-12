@@ -3,12 +3,13 @@ title: tipo de recurso windowsNetworkIsolationPolicy
 description: Directiva de aislamiento de red de Windows
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 82026ba4d82b85a0275f83bb729b495e17ff5d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5bb427d519cf1f981997b70242095af22bf705df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834618"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940165"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>tipo de recurso windowsNetworkIsolationPolicy
 
@@ -18,7 +19,7 @@ ms.locfileid: "27834618"
 
 Directiva de aislamiento de red de Windows
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |enterpriseNetworkDomainNames|Colección String|Esta es la lista de dominios que forman parte de los límites de la empresa. Datos de uno de estos dominios que se envía a un dispositivo que se consideran datos de la empresa y protegidas. Estas ubicaciones se considerarán un destino para los datos de la empresa para compartirse a seguros.|
 |enterpriseCloudResources|Colección [proxiedDomain](../resources/intune-shared-proxieddomain.md)|Contiene una lista de dominios de recursos de empresa hospedadas en la nube que deben estar protegidos. Las conexiones a estos recursos se consideran datos empresariales. Si un proxy se corresponde con un recurso de nube, el tráfico al recurso de la nube se dirigirá a través de la red empresarial mediante el servidor proxy indicado (en el puerto 80). Un servidor proxy utilizado para este propósito también debe configurarse con la directiva de EnterpriseInternalProxyServers. Esta colección puede contener un máximo de 500 elementos.|

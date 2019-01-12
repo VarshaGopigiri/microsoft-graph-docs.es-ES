@@ -3,12 +3,13 @@ title: tipo de enumeración deviceManagementExchangeAccessState
 description: Estado de acceso de dispositivo de Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1b6d831eb226648dcdbdbe470c82df900a8464a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 03a407d0971059ed7a0a8bb0ffae2773bc788b31
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817851"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928398"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessState
 
@@ -18,7 +19,7 @@ ms.locfileid: "27817851"
 
 Estado de acceso de dispositivo de Exchange.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|No hay ningún estado de acceso detectado desde Exchange|
 |desconocido|1|Se desconoce el estado de acceso de dispositivo para Exchange|

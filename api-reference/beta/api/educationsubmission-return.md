@@ -3,12 +3,13 @@ title: 'educationSubmission: devolver'
 description: Esta acción hace que la calificación y comentarios asociados con este envío disponible para los estudiantes.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: e4e5802e819543679158a3940fcf35ca624bad71
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 39e57044571b43df0515755035e23a38980376fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887734"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930652"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: devolver
 

@@ -3,12 +3,13 @@ title: tipo de recurso windows81WifiImportConfiguration
 description: " Configuración de importación de Wi-Fi. Mediante la configuración de este perfil puede indicar a los dispositivos de Windows 8.1 (y versiones posteriores) para conectarse al extremo de Wi-Fi deseada. Conectar un dispositivo de Windows 8.1 a la red Wi-Fi deseada y extraiga el código XML de ese dispositivo a incrustar más adelante en este perfil de Wi-Fi."
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c567d9b82c301e262c83d69d013b459ed6a1636
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 11245d69efcc397cafa7798c3284b724e9ee2e90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826842"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932752"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>tipo de recurso windows81WifiImportConfiguration
 
@@ -45,7 +46,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |carga útil|Binario|Carga útil. (Matriz de bytes codificada UTF8). Este es el archivo XML que se guardó en el dispositivo que se usa para conectarse al extremo de Wi-Fi.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

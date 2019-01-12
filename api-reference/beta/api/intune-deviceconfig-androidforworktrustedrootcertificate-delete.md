@@ -3,12 +3,13 @@ title: Eliminar androidForWorkTrustedRootCertificate
 description: Elimina un androidForWorkTrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ab73a40b7e50bde91d352f65fa8295894c9e5927
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af039b7ebc602cdf9b354e753fd85e86a06adf94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812743"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929007"
 ---
 # <a name="delete-androidforworktrustedrootcertificate"></a>Eliminar androidForWorkTrustedRootCertificate
 

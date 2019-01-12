@@ -3,12 +3,13 @@ title: tipo de recurso androidForWorkEnterpriseWiFiConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar a la Android para dispositivos de trabajo para conectarse al extremo de Wi-Fi deseada. Mediante la especificación de los tipos de seguridad y el método de autenticación esperen por el extremo de Wi-Fi que puede hacer que la conexión Wi-Fi transparente para el usuario final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ae773eae8e126b7146b1946676364094f2e8187
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b43e2dd024a22ea1157be7a357be85d5eab1453
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894547"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932815"
 ---
 # <a name="androidforworkenterprisewificonfiguration-resource-type"></a>tipo de recurso androidForWorkEnterpriseWiFiConfiguration
 
@@ -52,7 +53,7 @@ Hereda de [androidForWorkWiFiConfiguration](../resources/intune-deviceconfig-and
 |outerIdentityPrivacyTemporaryValue|Cadena|Habilitar privacidad de identidad (identidad externa) cuando se configura el tipo de EAP a EAP-TTLS o PEAP. La cadena proporcionada aquí se usa para el nombre de usuario de los usuarios individuales de la máscara cuando intenten conectarse a la red Wi-Fi.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

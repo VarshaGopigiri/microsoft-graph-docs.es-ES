@@ -3,12 +3,13 @@ title: tipo de recurso depEnrollmentProfile
 description: El recurso depEnrollmentProfile representa un perfil de inscripción de programa de inscripción de dispositivos de Apple (DEP). Este tipo de perfil debe asignarse a los números de serie de Apple DEP antes de que los dispositivos correspondientes pueden inscribirse a través de DEP.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da2bd0415abfeefb6e7a330663ed51cb9e5de271
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 852bc809250cf8372be44674be458b122a561f15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849087"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933123"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>tipo de recurso depEnrollmentProfile
 

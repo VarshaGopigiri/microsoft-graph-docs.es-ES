@@ -3,12 +3,13 @@ title: recursos de educationOneRosterApiDataProvider
 description: Se usa para configurar el perfil de sincronización de datos de school cuando se usa la API OneRoster como el origen de entrada.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: a99343ed8026eda9ecf56925986f4a0bfe10b3ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 681a3331aba7bc84ac80911c4be8076d104f8a58
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938149"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>recursos de educationOneRosterApiDataProvider
 
@@ -20,7 +21,7 @@ Deriva de [educationSynchronizationDataProvider](educationsynchronizationdatapro
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Description |
+| Propiedad | Tipo | Descripción |
 |:-|:-|:-|
 | **connectionUrl** | Cadena | La dirección URL de conexión a la instancia de OneRoster. |
 | **schoolsIds** | Colección String |  La lista de sourcedIds school para sincronizar. |

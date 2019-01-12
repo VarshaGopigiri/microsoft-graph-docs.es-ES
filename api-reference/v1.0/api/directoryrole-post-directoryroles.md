@@ -2,12 +2,14 @@
 title: Activar directoryRole
 description: Active un rol de directorio. Para leer un rol de directorio o actualizar sus miembros, debe activarse primero en el inquilino. Solo se activan de manera predeterminada los administradores de la empresa y los roles del directorio de usuarios implícitos. Para acceder y asignar miembros a otro rol de directorio, primero debe activarlo con la plantilla de rol de directorio correspondiente (directoryRoleTemplate).
 localization_priority: Normal
-ms.openlocfilehash: 9e3e962de4e25422cbf35f9efa8a83499cfe81bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5d127580c0a4851c5a991ccc0646007ddf1298a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885151"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924919"
 ---
 # <a name="activate-directoryrole"></a>Activar directoryRole
 
@@ -41,7 +43,7 @@ En la tabla siguiente, se muestran las propiedades necesarias al activar un rol 
 
 |Parámetro | Tipo | Descripción|
 |:---------|:---------|:---------|
-|roleTemplateId | string | Necesario. El identificador de [directoryRoleTemplate](../resources/directoryroletemplate.md) que se basa el rol. Esta es la única propiedad que se puede especificar en la solicitud.|
+|roleTemplateId | string | Obligatorio. El identificador de [directoryRoleTemplate](../resources/directoryroletemplate.md) que se basa el rol. Esta es la única propiedad que se puede especificar en la solicitud.|
 
 ## <a name="response"></a>Respuesta
 

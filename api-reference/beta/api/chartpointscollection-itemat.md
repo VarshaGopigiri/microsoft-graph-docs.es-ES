@@ -3,12 +3,13 @@ title: 'ChartPointsCollection: ItemAt'
 description: Recuperar un punto en función de su posición dentro de la serie.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c497f0f15b3d1ddcdb3e5adb05d9e9d0b1ade57e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 5e377af01eb755847bcff1c158697d6b43f71caa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829018"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956384"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 

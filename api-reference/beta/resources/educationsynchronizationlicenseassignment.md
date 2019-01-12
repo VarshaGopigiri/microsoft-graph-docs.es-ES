@@ -3,12 +3,13 @@ title: tipo de recurso educationSynchronizationLicenseAssignment
 description: Representa la información de licencia para asignar a las cuentas de usuario. El recurso se usará para configurar asignaciones de licencias al crear nuevas cuentas de usuario.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 9100ba799c8981d5defdd74d6346a66859b2d53e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 757e080a8b2c6f3f01fa1663f10c9b0b98eaf4d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804911"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948278"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>tipo de recurso educationSynchronizationLicenseAssignment
 
@@ -18,7 +19,7 @@ Representa la información de licencia para asignar a las cuentas de usuario. El
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Description |
+| Propiedad | Tipo | Descripción |
 |:-|:-|:-|
 | **appliesTo** | string | El tipo de función de usuario para asignar a la licencia. Los valores posibles son: `student` y `teacher`.         |
 | **skuIds** | colección de cadenas |  Representa los identificadores SKU de las licencias para asignar.        |

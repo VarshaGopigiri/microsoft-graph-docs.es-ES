@@ -2,12 +2,13 @@
 title: Obtener extensión abierta
 description: Obtenga una extensión abierta (objeto openTypeExtension) identificada por nombre o por nombre completo.
 localization_priority: Normal
-ms.openlocfilehash: ca2acb78d5a4731b57614476f11a6235a3b784bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 33c26980382e29a3b640a53ac3397b4ee959fd92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935524"
 ---
 # <a name="get-open-extension"></a>Obtener extensión abierta
 

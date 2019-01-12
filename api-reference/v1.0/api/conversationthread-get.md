@@ -2,12 +2,14 @@
 title: Get conversationThread
 description: 'Obtenga un hilo específico que pertenece a un grupo. Puede especificar la conversación primario y el subproceso, o bien, '
 localization_priority: Normal
-ms.openlocfilehash: 61ec38651274cf71e87f362927de66873a6cca24
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 3aa5df3ae37c25507fe23574b448a0c3beb3fcea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894246"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924898"
 ---
 # <a name="get-conversationthread"></a>Get conversationThread
 

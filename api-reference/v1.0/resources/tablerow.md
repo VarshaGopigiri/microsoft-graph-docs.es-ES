@@ -2,12 +2,14 @@
 title: Tipo de recurso TableRow
 description: Representa una fila de una tabla.
 author: lumine2008
-ms.openlocfilehash: f34190aa4ac565d09ec8b07e96b2923f785b8d7c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: excel
+ms.openlocfilehash: c266476715da36bcdc0b621538722ba6320eba85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341338"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937512"
 ---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
@@ -19,9 +21,9 @@ Representa una fila de una tabla.
 | Método           | Tipo de valor devuelto    |Descripción|
 |:---------------|:--------|:----------|
 |[Get TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |Lee las propiedades y relaciones del objeto tableRow.|
-|[Actualizar](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Actualiza el objeto TableRow. |
+|[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Actualiza el objeto TableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Devuelve el objeto de rango asociado a toda la fila.|
-|[Eliminar](../api/tablerow-delete.md)|None|Elimina la fila de la tabla.|
+|[Delete](../api/tablerow-delete.md)|None|Elimina la fila de la tabla.|
 |[List](../api/tablerow-list.md) | Colección de [WorkbookTableRow](tablerow.md) |Obtiene la colección de objetos tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|Obtiene una fila en función de su posición en la colección.|
 |[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|Agrega una nueva fila a la tabla.|

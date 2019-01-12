@@ -2,12 +2,14 @@
 title: tipo de recurso administrativeUnit
 description: Una unidad administrativa proporciona un contenedor conceptual para los objetos de Active directory de usuario y de grupo. Uso de unidades administrativas, un administrador de la compañía ahora puede delegar responsabilidades administrativas para administrar los usuarios y grupos con ámbito a una unidad administrativa a un administrador regional o departamental o contenidos dentro de.
 localization_priority: Normal
-ms.openlocfilehash: 523214d7bd319d940f042d461b4903ff1f1475e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845412"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955320"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso administrativeUnit
 

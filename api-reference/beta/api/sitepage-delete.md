@@ -3,12 +3,14 @@ author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
 title: Eliminar una página de un sitio de SharePoint
-ms.openlocfilehash: c537acec2e205ffd556a35789f75be95e2b94017
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: sharepoint
+ms.openlocfilehash: b4ac336999484f6af97e41d08caa926fae4c055f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27085064"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950028"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Eliminar la página de la lista de las páginas del sitio de un sitio
 

@@ -3,12 +3,13 @@ title: tipo de enumeración windowsAutopilotProfileAssignmentDetailedStatus
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b8aef05c73fdedec5378a2b2ba5e40e4d52663c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8b31614debdf92eba5974da374907655f3d1fe51
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827268"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962138"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>tipo de enumeración windowsAutopilotProfileAssignmentDetailedStatus
 
@@ -18,7 +19,7 @@ ms.locfileid: "27827268"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|Ninguna asignación el estado detallado|
 |hardwareRequirementsNotMet|1|No se cumplen los requisitos de hardware. Esto puede ocurrir si un perfil de piloto automático Self-implementación se asigna a un dispositivo sin TPM 2.0.|

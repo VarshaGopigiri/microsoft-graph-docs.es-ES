@@ -3,12 +3,13 @@ title: tipo de enumeración signInAssistantOptions
 description: Valores para el SignInAssistantSettings.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f80b67a40d0b551386b9f03273efb26e294d3520
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ef8bd0252c429d5fe9ee8b0c02a07651140eb45d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934684"
 ---
 # <a name="signinassistantoptions-enum-type"></a>tipo de enumeración signInAssistantOptions
 
@@ -18,7 +19,7 @@ ms.locfileid: "27825399"
 
 Valores para el SignInAssistantSettings.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |No configurado|0|No configurado - wlidsvc inicio se establecerá en SERVICE_DEMAND_START.|
 |deshabilitado|1|Deshabilitado - wlidsvc inicio se establecerá como SERVICE_DISABLED.|
