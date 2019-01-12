@@ -2,12 +2,13 @@
 title: Usar la API de Microsoft Graph
 description: Microsoft Graph es una API para web REST que permite tener acceso a los recursos del servicio Microsoft Cloud. Después de registrar su aplicación y obtener tokens de autenticación para un usuario o servicio, puede realizar solicitudes a la API de Microsoft Graph.
 author: jackson-woods
-ms.openlocfilehash: 6f319540853e94497c6553b1bd44f7a8d3a33575
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0d4c49e2b2961b99afac2445976c3d56234262bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832846"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar la API de Microsoft Graph
 

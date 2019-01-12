@@ -2,12 +2,13 @@
 title: Obtener informe de actividades de Yammer
 description: Para comprender el nivel de compromiso de la organización con Yammer, puede que se genere cuánta actividad a través de la organización y el número de usuarios únicos que registrar, like y leer los mensajes en Yammer.
 localization_priority: Normal
-ms.openlocfilehash: 9895e37812b037b33f13682c3c56dacba5928d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 69c155df86cfe772e0c065bec0297a83fb7f3a8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823712"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912039"
 ---
 # <a name="yammer-activity-reports"></a>Obtener informe de actividades de Yammer
 

@@ -3,12 +3,13 @@ title: tipo de enumeración windowsInformationProtectionEnforcementLevel
 description: Valores posibles para los niveles de cumplimiento de protección de trabajo en curso
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5097682172281ece366a8f0389c314e2fb630190
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ed087465d05ba91bcdc1f8cff7fec0aba567420a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868372"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913411"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>tipo de enumeración windowsInformationProtectionEnforcementLevel
 
@@ -18,7 +19,7 @@ ms.locfileid: "27868372"
 
 Valores posibles para los niveles de cumplimiento de protección de trabajo en curso
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |noProtection|0|No cumplimiento de protección de|
 |encryptAndAuditOnly|1|Cifrar y sólo de auditoría|

@@ -1,12 +1,13 @@
 ---
 title: Implementaciones de nube nacionales
 description: Además de en nuestra red global de centros de datos, Servicios en la nube de Microsoft está disponible en tres nubes nacionales independientes. Estas versiones de nube nacional son las instancias aisladas de red físicas y lógicas de los servicios en la nube empresariales de Microsoft, que se confinan a los límites geográficos de países específicos y están operados por personal local. Para más información, vea Microsoft National Clouds.
-ms.openlocfilehash: b0f2ab257773faa14fe59566992bb1ed0dd77959
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b22fce675bc97d0f22833d89dab01afd18e06032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840421"
 ---
 # <a name="national-cloud-deployments"></a>Implementaciones de nube nacionales
 

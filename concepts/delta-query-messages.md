@@ -2,12 +2,13 @@
 title: Obtener los cambios incrementales en los mensajes de una carpeta
 description: La consulta de delta permite consultar las adiciones, eliminaciones o actualizaciones a los mensajes de una carpeta, por medio de una serie de
 author: piotrci
-ms.openlocfilehash: 4325826ee3d94766fac5bb345d4311bd03b1fb89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 0200c49c1a673a338af793649bb67f9628c2e8f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820912"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obtener los cambios incrementales en los mensajes de una carpeta
 

@@ -2,12 +2,13 @@
 title: Información general sobre la API de OneNote
 description: OneNote es un bloc de notas digital que permite a los clientes realizar un seguimiento de ideas y notas para el hogar, trabajo o escuela por voz, esbozando o escribiendo en la web, teléfonos, tabletas o el escritorio. Pueden organizar notas libremente, cambiar de dispositivo y retomar el trabajo donde lo dejaron, así como colaborar en las notas con otras personas en tiempo real.
 author: Jewan-microsoft
-ms.openlocfilehash: aa4f102d0e3db455fe41801b852bcc68d12f26ab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a3ca57e9bac52613fbe884368f79b31b5b5165e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335395"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825721"
 ---
 # <a name="onenote-api-overview"></a>Información general sobre la API de OneNote
 

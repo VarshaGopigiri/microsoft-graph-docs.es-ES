@@ -1,12 +1,13 @@
 ---
 title: 'Control de versiones, compatibilidad y directivas de cambios importantes en Microsoft Graph '
 description: Este artículo describe el soporte y las directivas de cambios importantes para Microsoft Graph y las versiones de la API de Microsoft Graph que están disponibles actualmente.
-ms.openlocfilehash: 2a2c7f338e4bc26dc61d9cf88855b9760ff22d6f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 273772aaf72031ca27801e54ede744960c601fd4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812841"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Control de versiones, compatibilidad y directivas de cambios importantes en Microsoft Graph 
 
