@@ -1,14 +1,15 @@
 ---
 title: Crear página
 description: Cree una página de OneNote en la sección predeterminada del bloc de notas predeterminado.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 373ed0a8e63014efe853843fc111c638617b868a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 799650628ae2436c2162adf2f1cbf692ee35d4f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884444"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983446"
 ---
 # <a name="create-page"></a>Crear página
 

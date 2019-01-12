@@ -3,12 +3,13 @@ title: tipo de recurso androidWorkProfileWiFiConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar el dispositivo Android perfil de trabajo para conectarse al extremo de Wi-Fi que desee. Mediante la especificación de los tipos de seguridad y el método de autenticación esperen por el extremo de Wi-Fi que puede hacer que la conexión Wi-Fi transparente para el usuario final. Este perfil proporciona los tipos de seguridad limitado y más sencillo que el perfil de empresa Wi-Fi.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4b95e6c80d892d14001e8dc2d6c60125971ad51
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b874f4f1d1ba20cfe588c88895cded13e114ad45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851257"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980464"
 ---
 # <a name="androidworkprofilewificonfiguration-resource-type"></a>tipo de recurso androidWorkProfileWiFiConfiguration
 
@@ -47,7 +48,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indica si el extremo de Wi-Fi utiliza un tipo de EAP en función de seguridad. Los valores posibles son: `open` y `wpaEnterprise`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

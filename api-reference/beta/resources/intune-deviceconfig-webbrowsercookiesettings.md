@@ -3,12 +3,13 @@ title: tipo de enumeración webBrowserCookieSettings
 description: Configuración de cookies de explorador Web.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9b0ee6c860e3960ef719556f6db83a8e94d55d46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54fe38b9227c38f3af13ec242ece2d0bd6c144fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889596"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927398"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>tipo de enumeración webBrowserCookieSettings
 
@@ -18,7 +19,7 @@ ms.locfileid: "27889596"
 
 Configuración de cookies de explorador Web.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |browserDefault|0|Valor predeterminado de explorador, sin intención.|
 |blockAlways|1|Bloquear siempre las cookies.|

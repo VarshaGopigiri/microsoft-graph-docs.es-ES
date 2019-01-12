@@ -3,12 +3,13 @@ title: Tipo de recurso defaultManagedAppProtection
 description: Directiva usada para configurar las opciones de administración detallada de un conjunto de aplicaciones específico para todos los usuarios a los que no se destina una directiva TargetedManagedAppProtection
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f29bc450ca2dfd8f58efe235263d50908d05ab12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2ec70076f7ee0fa30d40d527c1531258479a592b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945226"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>Tipo de recurso defaultManagedAppProtection
 

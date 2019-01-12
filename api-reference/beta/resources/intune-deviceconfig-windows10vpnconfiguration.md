@@ -3,12 +3,13 @@ title: tipo de recurso windows10VpnConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar el dispositivo de Windows 10 (escritorio o móvil) para conectarse al extremo VPN que desee. Mediante la especificación de los tipos de seguridad y el método de autenticación esperen por el extremo VPN que puede realizar la conexión VPN transparente para el usuario final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72617e1d91a6a9ce180e63733a209bcee7e204bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 775a4dfbeb46c27264b5539c51c63b29b488565b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816071"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937772"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>tipo de recurso windows10VpnConfiguration
 
@@ -66,7 +67,7 @@ Hereda de [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnc
 |dnsRules|colección de [vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md)|Reglas de DNS. Esta colección puede contener un máximo de 1000 elementos.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

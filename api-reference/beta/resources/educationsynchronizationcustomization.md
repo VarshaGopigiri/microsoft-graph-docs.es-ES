@@ -3,12 +3,13 @@ title: tipo de recurso educationSynchronizationCustomization
 description: 'Proporciona opciones de configuración para personalizar la sincronización de perfiles de datos de school de las entidades de recurso. La personalización puede aplicarse a todas las entidades que se están sincronizadas. '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 9294af5796daeefb394ed1625a9a36128ae7b2a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: c4e8810202dbae5fdc3d978bd27e0463f0424d2e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860903"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962873"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>tipo de recurso educationSynchronizationCustomization
 
@@ -20,7 +21,7 @@ Proporciona opciones de configuración para personalizar la sincronización de p
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Description |
+| Propiedad | Tipo | Descripción |
 |:-|:-|:-|
 | **optionalPropertiesToSync** | colección de cadena |  La colección de nombres de propiedad para la sincronización. Si establece en null, todas las propiedades será sincronizado.       |
 | **synchronizationStartDate** | DateTime |  La fecha en la que debe comenzar la sincronización. Este valor debe establecerse en una fecha futura. Si se establece en null, el recurso se sincronizará cuando se complete la configuración del perfil. **Nota:** Esto sólo se aplica a la propiedad **StudentEnrollment** .      |

@@ -2,12 +2,14 @@
 title: tipo de recurso directorySettingTemplate
 description: Plantillas de configuración de Active Directory representan definidas por el sistema de configuración disponible para el inquilino. Configuración de Active Directory se puede crear en función de la directorySettingTemplates disponibles y los valores que ha cambiado desde sus valores predeterminados. Plantillas de configuración de Active Directory no se crea, actualiza o elimina. Esta configuración puede representan la configuración de todo el inquilino, o puede representan la configuración de la entidad específica.  Actualmente, las plantillas sólo disponibles se aplican a los grupos de Office e incluyen opciones de configuración, como si los usuarios pueden crear grupos o invitar a personas de fuera de la organización para convertirse en miembros de un grupo.
 localization_priority: Normal
-ms.openlocfilehash: e0df923854059723ee83380f7aa0f6425cf2afb9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d950b94c71bae70474bf9cdb9eee76fb8a3d9134
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806149"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957637"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>tipo de recurso directorySettingTemplate
 

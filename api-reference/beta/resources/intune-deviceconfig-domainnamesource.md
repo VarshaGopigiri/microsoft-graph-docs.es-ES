@@ -3,12 +3,13 @@ title: tipo de enumeración domainNameSource
 description: Nombre de dominio origen.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 22235051f5cd721cd7bbf0097bae5809e1868c0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83f2ab6cb674cc983e9e57231aa3e758cffe0084
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862184"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962929"
 ---
 # <a name="domainnamesource-enum-type"></a>tipo de enumeración domainNameSource
 
@@ -18,7 +19,7 @@ ms.locfileid: "27862184"
 
 Nombre de dominio origen.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |fullDomainName|0|Nombre de dominio completo.|
 |NetBIOSDomainName.|1|nombre de dominio de NetBIOS.|

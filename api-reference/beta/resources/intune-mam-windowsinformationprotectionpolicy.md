@@ -3,12 +3,13 @@ title: Tipo de recurso windowsInformationProtectionPolicy
 description: Directiva para Windows Information Protection sin MDM
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 995ba2567f0bd57e19bc1980f3a8c4b45f6066d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fbb324a0bafbbd0a35a9a5b9490c4f86f9eee919
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884507"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962810"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>Tipo de recurso windowsInformationProtectionPolicy
 

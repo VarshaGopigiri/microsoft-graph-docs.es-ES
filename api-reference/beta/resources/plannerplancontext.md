@@ -2,12 +2,14 @@
 title: tipo de recurso plannerPlanContext
 description: El recurso **plannerPlanContext** representa la relación de una plannerPlan para una experiencia de usuario fuera del organizador. Planes en el organizador pueden se exponen en otras experiencias, como Microsoft Teams, realizar un seguimiento de trabajo en el contexto de esa experiencia.
 localization_priority: Normal
-ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: e118e32ea74332f0d8d0f958f7c55cd9980acb8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820982"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962894"
 ---
 # <a name="plannerplancontext-resource-type"></a>tipo de recurso plannerPlanContext
 
@@ -19,7 +21,7 @@ La experiencia de que la entrada de **plannerPlanContext** reresents se puede id
  - 00000003-0000-0ff1-CE00-000000000000: la entrada de contexto pertenece a SharePoint.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |associationType|Cadena|Admite valores NULL. Un tipo definido por la aplicación de la asociación entre el [plannerPlan](plannerplan.md) y la aplicación. La aplicación puede utilizar esta información para realizar un seguimiento de los distintos tipos de relaciones en el mismo [plannerPlan](plannerplan.md).|
 |createdDateTime|DateTimeOffset|Solo lectura. La fecha y la hora cuando se creó el **plannerPlanContext** . El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|

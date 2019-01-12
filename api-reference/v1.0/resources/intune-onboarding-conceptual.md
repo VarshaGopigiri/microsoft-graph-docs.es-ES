@@ -2,12 +2,14 @@
 title: Inscribir dispositivos para administrarlos en Intune
 description: " Inscripción (BYOD) permite a los usuarios inscribirse sus teléfonos personal, tabletas o PCs. La inscripción de dispositivos de propiedad corporativa permite escenarios de administración como el borrado remoto, dispositivos compartidos o afinidad de usuario para un dispositivo."
 localization_priority: Normal
-ms.openlocfilehash: de2a87c08851081891ee641db50a4ca1c64cb314
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 2e7f6e85e32137804556c64a1995bd2e78b04068
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841324"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917443"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Inscribir dispositivos para administrarlos en Intune
 

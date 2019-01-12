@@ -2,12 +2,14 @@
 title: tipo de enumeración defenderPotentiallyUnwantedAppAction
 description: Acción de Defender tomar detectado potencialmente no deseados aplicación (PUA).
 localization_priority: Normal
-ms.openlocfilehash: 9b04cd6daeae303910519d0735165171575d8c44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 96a3dd70ae0f56f2d0d5a9d6c4f87846e10bba45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858649"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938562"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>tipo de enumeración defenderPotentiallyUnwantedAppAction
 
@@ -17,7 +19,7 @@ ms.locfileid: "27858649"
 
 Acción de Defender tomar detectado potencialmente no deseados aplicación (PUA).
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|Protección de PUA está desactivada. Defender no protegerá contra aplicaciones potencialmente no deseadas.|
 |bloque|1|Protección de PUA está activada. Elementos detectados están bloqueados. Se muestran en el historial de junto con otras amenazas.|

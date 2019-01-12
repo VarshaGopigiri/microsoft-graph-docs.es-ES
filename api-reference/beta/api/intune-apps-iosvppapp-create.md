@@ -3,12 +3,13 @@ title: Crear iosVppApp
 description: Cree un objeto iosVppApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a51838694c93b4af27b41a170961110e2181d914
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 992f9cb41997579f3e218439261d2bbb47a85b64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964273"
 ---
 # <a name="create-iosvppapp"></a>Crear iosVppApp
 

@@ -3,12 +3,13 @@ title: tipo de enumeración firewallPacketQueueingMethodType
 description: Valores posibles para firewallPacketQueueingMethod
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1303287e521cf0b542047e8acaf122bc08a770a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3700df6d2eaf0dd0d2dde8a3f4a90be2e3684951
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823222"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940102"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enumeración firewallPacketQueueingMethodType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27823222"
 
 Valores posibles para firewallPacketQueueingMethod
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|No hay un valor configurado mediante Intune, invalidar el valor predeterminado de dispositivo configurado por el usuario|
 |deshabilitado|1|Deshabilitar la puesta en cola de paquetes|

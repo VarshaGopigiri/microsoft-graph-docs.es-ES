@@ -2,12 +2,14 @@
 title: Obtener plannerBucketTaskBoardTaskFormat
 description: Recuperar las propiedades y las relaciones del objeto **plannerBucketTaskBoardTaskFormat**.
 localization_priority: Normal
-ms.openlocfilehash: 6af278e28aedd98ac3bdab67c091f4c0f2361c12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b60e9093f621e146bcfd077e6c9b76c820240f10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945100"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>Obtener plannerBucketTaskBoardTaskFormat
 
