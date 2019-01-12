@@ -3,12 +3,13 @@ title: tipo de recurso easEmailProfileConfigurationBase
 description: Perfil de configuración de características de dispositivos de Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8a2fa699b8f7a458f2c70c74424d8dbc7197a76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 07456bd457d25fa5a0904bc99dc20ede375b3de5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835899"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966443"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>tipo de recurso easEmailProfileConfigurationBase
 
@@ -43,7 +44,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |customDomainName|Cadena|Valor de nombre de dominio personalizado utilizado durante la generación de un perfil de correo electrónico antes de instalar en el dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

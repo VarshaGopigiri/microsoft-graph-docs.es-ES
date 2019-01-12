@@ -3,12 +3,13 @@ title: Enumerar roleAssignments
 description: Enumere las propiedades y las relaciones de los objetos roleAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 534fdd1e971dc46033be4d07679969f2d1a4c221
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: da4b1ed6342aa283fe612891c0159b6eefc19d87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868099"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964455"
 ---
 # <a name="list-roleassignments"></a>Enumerar roleAssignments
 

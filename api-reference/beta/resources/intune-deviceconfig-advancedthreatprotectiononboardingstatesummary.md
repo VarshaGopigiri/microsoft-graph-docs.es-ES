@@ -3,12 +3,13 @@ title: tipo de recurso advancedThreatProtectionOnboardingStateSummary
 description: Windows defender avanzadas de amenazas incorporación estado resumen de protección a través de la cuenta.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b700658c6ae7b486ae52f4ea226b7a6bab7f0af6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c308f91862e1d709d92a45d0a83148df5c23fd88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838223"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966604"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>tipo de recurso advancedThreatProtectionOnboardingStateSummary
 
@@ -37,7 +38,7 @@ Windows defender avanzadas de amenazas incorporación estado resumen de protecci
 |notAssignedDeviceCount|Int32|Número de dispositivos no asignados|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |advancedThreatProtectionOnboardingDeviceSettingStates|colección de [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Todavía no documentado|
 

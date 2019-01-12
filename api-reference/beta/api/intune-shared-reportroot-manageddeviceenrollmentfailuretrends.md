@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentFailureTrends (función)
 description: Metadatos para el informe de tendencias de errores de inscripción
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c115ee0ada2297c237db839049f9cd33cb77e2ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 648053ad000b2a9988b46b0d68d62219ed967a3a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853491"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963636"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>managedDeviceEnrollmentFailureTrends (función)
 

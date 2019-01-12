@@ -3,12 +3,13 @@ title: tipo de recurso win32LobAppMsiInformation
 description: Contiene propiedades de la aplicación MSI para una aplicación de Win32.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e43b3dc9e46ed193b7547a7ce85863253445d30c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 04972e9e7fa909c220fe55ca6337be3ac44138ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846518"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967878"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>tipo de recurso win32LobAppMsiInformation
 
@@ -18,7 +19,7 @@ ms.locfileid: "27846518"
 
 Contiene propiedades de la aplicación MSI para una aplicación de Win32.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |productCode|Cadena|El código de producto MSI.|
 |productVersion|Cadena|La versión del producto MSI.|

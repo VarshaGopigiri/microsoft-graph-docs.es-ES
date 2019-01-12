@@ -3,12 +3,13 @@ title: tipo de recurso iosCertificateProfileBase
 description: iOS base del perfil de certificado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f3b958affd9c4660b1c56e97a7510addf9b0b340
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6f3d978a5511a5edce816dace625296d987a8590
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861862"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967437"
 ---
 # <a name="ioscertificateprofilebase-resource-type"></a>tipo de recurso iosCertificateProfileBase
 
@@ -44,7 +45,7 @@ Hereda de [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificat
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Escala para el período de validez del certificado. Los valores posibles son: `days`, `months` y `years`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

@@ -3,12 +3,13 @@ title: Crear deviceManagementExchangeConnector
 description: Cree un objeto deviceManagementExchangeConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63c0b8c45d6d27980a4c33da6c82b6beab6d56fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 72552f83ad36c5be2302180c7e57ef8bbadfa887
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877199"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963573"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Crear deviceManagementExchangeConnector
 

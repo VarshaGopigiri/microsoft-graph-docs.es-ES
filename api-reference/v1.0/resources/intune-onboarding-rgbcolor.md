@@ -2,12 +2,14 @@
 title: Tipo de recurso rgbColor
 description: Color en RGB.
 author: tfitzmac
-ms.openlocfilehash: b469533b8ee7e54e99b09be08870045d759f5322
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: fc40b5cc2ffff02bed89847386db6398f76b3953
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350963"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967010"
 ---
 # <a name="rgbcolor-resource-type"></a>Tipo de recurso rgbColor
 

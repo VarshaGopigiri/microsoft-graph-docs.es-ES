@@ -2,12 +2,14 @@
 title: Tipo de recurso termsAndConditions
 description: Contenido de las directivas de C se presenta a los usuarios tras su primer intento de inscribirse en Intune y posteriormente en ediciones donde un administrador necesario re aceptación. Permite que los administradores comuniquen las disposiciones que debe aceptar un usuario para tener los dispositivos inscritos en Intune.
 localization_priority: Normal
-ms.openlocfilehash: 8f6de8e97d8399d0c251eadafdcdacf09176cb6d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: aab2ca99726c6e5388dfa5641b19d7c40dd920de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858607"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965680"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
@@ -40,7 +42,7 @@ Una entidad termsAndConditions representa los contenidos y metadatos de una dire
 |version|Int32|Entero que indica la versión actual de los términos. Aumenta cuando un administrador realiza un cambio en los términos y quiere que los usuarios tengan que volver a aceptar la directiva de TyC modificada.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md)|La lista de las asignaciones de grupo para esta directiva T & C.|
 |asignaciones|Colección [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|La lista de asignaciones para esta directiva de TyC.|

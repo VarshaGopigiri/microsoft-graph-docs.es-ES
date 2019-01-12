@@ -2,12 +2,14 @@
 title: Control de acceso basado en roles en Microsoft Intune
 description: 'El control de acceso basado en roles de Intune determina quién puede realizar acciones en los objetos de Intune y realizar cambios en las aplicaciones administradas, los usuarios y los dispositivos.   '
 localization_priority: Normal
-ms.openlocfilehash: f581aac792295edffc15fa4c800c9a682b9e6c04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: caae38f5f5f7cdae16850eb88303b40017d15ef7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966814"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Control de acceso basado en roles en Microsoft Intune
 

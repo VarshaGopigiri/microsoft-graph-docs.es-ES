@@ -2,12 +2,14 @@
 title: Recursos compartidos en Intune de Microsoft
 description: Estos extremos se usan en varias API de gráfico de Microsoft para los flujos de trabajo Intune.  La intención, el propósito y los permisos necesarios para usar un recurso determinado varía según el contexto de la llamada subyacente y el flujo de trabajo específico.  Además, determinados métodos, propiedades y acciones se admiten sólo para flujos de trabajo específicos.
 localization_priority: Normal
-ms.openlocfilehash: d0d615be8d185c5dfe24d58f6a2e371e6baf18c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: cfb3acbb3b736fcb96d22773301ca6e2e3e4403f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840071"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966779"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartidos en Intune de Microsoft
 

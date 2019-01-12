@@ -3,12 +3,13 @@ title: tipo de recurso windowsManagementAppHealthSummary
 description: Contiene las propiedades para el resumen de estado de la aplicación de administración de Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 40ba93025059a85a11b061464d04bca4118b88bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d2e8dbc0af1d814ecd47210c4def5a7c7e02edd9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967464"
 ---
 # <a name="windowsmanagementapphealthsummary-resource-type"></a>tipo de recurso windowsManagementAppHealthSummary
 
