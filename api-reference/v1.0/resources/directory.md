@@ -2,12 +2,14 @@
 title: Tipo de recurso directory (elementos eliminados)
 description: . Los elementos eliminados seguirán estando disponible para su restauración durante 30 días. Después de 30 días, los elementos se eliminan permanentemente.
 localization_priority: Normal
-ms.openlocfilehash: e8ccecfd0d8cffa383ecc96cc908d31452db5fb0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 090b9bf476fcaa928f2c6358565ef86af627b8a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835773"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966989"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (elementos eliminados)
 
@@ -26,7 +28,7 @@ Actualmente, la funcionalidad de elementos eliminados solo es compatible con los
 |[Lista de los elementos eliminados que pertenecen a un usuario](../api/directory-deleteditems-user-owned.md) | Colección [directoryObject](directoryobject.md) | Se enumeran los elementos de Active directory que pertenecen a un usuario. |
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Description|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |deletedItems|Colección [directoryObject](directoryobject.md)| Elementos eliminados recientemente Solo lectura. Admite valores NULL.|
 

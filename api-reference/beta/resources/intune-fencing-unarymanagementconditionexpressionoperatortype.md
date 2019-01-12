@@ -3,12 +3,13 @@ title: tipo de enumeración unaryManagementConditionExpressionOperatorType
 description: Operadores compatibles para las expresiones de condición de administración unario
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0707c38a7cd806251b51e467c9d5d7d1b4075f14
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a8aa8058a923ef90918e1eb798817c6f8f88a1a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892053"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968396"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>tipo de enumeración unaryManagementConditionExpressionOperatorType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27892053"
 
 Operadores compatibles para las expresiones de condición de administración unario
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |
 not|0|Niega la evaluación del operando.|

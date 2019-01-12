@@ -2,18 +2,19 @@
 title: tipo de recurso office365ActiveUserDetail
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 462858f42b48560db4cd2f311ffdffd911504afe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 14c785069868783b1e248b41a5b339c9adb4710a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833960"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929287"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>tipo de recurso office365ActiveUserDetail
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                          | Tipo              | Description                              |
+| Propiedad                          | Tipo              | Descripción                              |
 | :-------------------------------- | :---------------- | ---------------------------------------- |
 | reportRefreshDate                 | Fecha              | La fecha más reciente del contenido.          |
 | userPrincipalName                 | Cadena            | El nombre principal de usuario (UPN) del usuario. El UPN es un nombre de inicio de sesión de estilo de Internet para el usuario según el estándar de Internet RFC 822. Por convención, esto se debe asignar al nombre de correo electrónico del usuario. El formato general es alias@domain, donde el dominio debe estar presente en la colección del inquilino de dominios verificados. Esta propiedad es necesaria cuando se crea un usuario. |

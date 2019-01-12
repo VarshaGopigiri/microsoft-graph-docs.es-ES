@@ -3,12 +3,13 @@ title: Crear windowsDefenderAdvancedThreatProtectionConfiguration
 description: Cree un objeto windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 073301ce6e00bc7d33926468158feb39c8ac67d4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54c540192a9f46b7a5857dbcc0344fcfd298cce0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932759"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Crear windowsDefenderAdvancedThreatProtectionConfiguration
 

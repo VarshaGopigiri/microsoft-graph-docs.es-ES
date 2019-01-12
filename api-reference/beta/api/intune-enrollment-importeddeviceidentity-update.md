@@ -3,12 +3,13 @@ title: Actualizar importedDeviceIdentity
 description: Actualizar las propiedades de un objeto importedDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9072c0b5e8a01c72352b9250b4167cdb5ec190fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a66ceb575363f8a48dd0d23e61a6ecbc994ea582
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838433"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973492"
 ---
 # <a name="update-importeddeviceidentity"></a>Actualizar importedDeviceIdentity
 

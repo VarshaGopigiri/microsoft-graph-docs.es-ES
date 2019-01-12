@@ -3,12 +3,13 @@ title: tipo de recurso managementConditionExpressionString
 description: Una cadena de expresión de condición de administración es una representación de cadena de una expresión de condición de administración.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 815d799bc37328062a717097fd27bc0870a315f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 872282914dc57be4e8e9bc7d476e7767907ec913
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811581"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968851"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>tipo de recurso managementConditionExpressionString
 

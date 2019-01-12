@@ -3,12 +3,13 @@ title: tipo de recurso deviceManagementScriptDeviceState
 description: Contiene las propiedades de dispositivo de estado de la secuencia de comandos de administración de dispositivos de ejecución.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d67b7a43817864906984ce21c90536572b0747d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f50026e549e9927b33ebe8a27b6206daecf0ea5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890541"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968858"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso deviceManagementScriptDeviceState
 
@@ -37,7 +38,7 @@ Contiene las propiedades de dispositivo de estado de la secuencia de comandos de
 |errorDescription|Cadena|Descripción del error correspondiente a la ejecución de la secuencia de comandos de administración de dispositivos con errores.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|Los dispositivos administrados que se ejecuta la secuencia de comandos de administración de dispositivos.|
 

@@ -3,12 +3,13 @@ title: Crear windowsInformationProtectionAppLockerFile
 description: Cree un objeto windowsInformationProtectionAppLockerFile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7e5076b30d577c74551ccd5718ce6d41c3f345e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a7b6bfb8271e6b462be1d18fd509da33aea836b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834359"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967598"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Crear windowsInformationProtectionAppLockerFile
 

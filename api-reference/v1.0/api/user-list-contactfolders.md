@@ -3,12 +3,13 @@ title: List contactFolders
 description: Obtiene la colección de la carpeta de contactos predeterminada del usuario que inició sesión.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 55558b8ea0db3c35d63abdffdef55d01488fe7e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 827c56766325ef574d1a81c6997bbef1259ec692
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857375"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969376"
 ---
 # <a name="list-contactfolders"></a>List contactFolders
 
