@@ -2,12 +2,14 @@
 title: tipo de recurso educationAssignmentPointsGradeType
 description: Se utiliza con la propiedad **assignments.grading** . Esto es una subclase de educationAssignmentGradeType.
 localization_priority: Normal
-ms.openlocfilehash: f00014eab1dbf7bc8eb78a8898c6abba9977e8a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: b603ccec0ddd5be5003353a5062e51554cb61c53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860973"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952667"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>tipo de recurso educationAssignmentPointsGradeType
 
@@ -18,7 +20,7 @@ Se utiliza con la propiedad **assignments.grading** . Esto es una subclase de [e
 Esto indica que la asignación es clasificada y almacena el número máximo de puntos de que cada alumno puede lograr en este elemento de trabajo. Cuando se establece en una asignación, cada envío obtendrá una propiedad [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) asociada para el almacenamiento de los puntos de cada alumno.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |maxPoints|Single| Max puntos posibles para esta asignación.  |
 

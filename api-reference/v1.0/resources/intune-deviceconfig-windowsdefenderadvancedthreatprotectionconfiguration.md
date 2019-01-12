@@ -3,12 +3,13 @@ title: Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 description: Configuración de Protección contra amenazas avanzada de Windows Defender.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dccee9c663d3e85e1767219252271faddf578a25
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0f2bce79527e66e38f2736179eb84f3d37e3661
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949972"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>Tipo de recurso windowsDefenderAdvancedThreatProtectionConfiguration
 

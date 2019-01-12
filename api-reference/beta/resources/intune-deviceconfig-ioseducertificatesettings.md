@@ -3,12 +3,13 @@ title: tipo de recurso iosEduCertificateSettings
 description: Confianza certificados raíz y PFX para iOS EDU.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf6b0da4d3ff7af562ae99e81e10f52351bd735d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c48883caa9479638b1a727272abdd0bc5762db9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948680"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso iosEduCertificateSettings
 
@@ -18,7 +19,7 @@ ms.locfileid: "27822081"
 
 Confianza certificados raíz y PFX para iOS EDU.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |trustedRootCertificate|Binario|Certificado raíz de confianza.|
 |certFileName|Cadena|Nombre de archivo para mostrar en la interfaz de usuario.|

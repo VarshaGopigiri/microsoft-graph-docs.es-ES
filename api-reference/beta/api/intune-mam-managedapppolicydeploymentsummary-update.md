@@ -3,12 +3,13 @@ title: Actualizar managedAppPolicyDeploymentSummary
 description: Actualice las propiedades de un objeto managedAppPolicyDeploymentSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 220443e5c75121083fb23758e42d7ec331bbee18
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 36f7cfb3607d34924f4b410a72310c88da4b220a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877429"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948754"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Actualizar managedAppPolicyDeploymentSummary
 

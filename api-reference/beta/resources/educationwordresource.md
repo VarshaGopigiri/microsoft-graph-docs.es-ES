@@ -2,12 +2,14 @@
 title: tipo de recurso educationWordResource
 description: 'Una subclase de educationResource. Éste es un recurso de documento de Word. Se debe cargar el archivo de palabras en el directorio **fileResource** asociado con el '
 localization_priority: Normal
-ms.openlocfilehash: 0fa366a6fb6de70d10a010cf5e0e11ffd26a3b94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: d67f77774b9d3c428fcfd98006115f0459989fdc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805141"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948320"
 ---
 # <a name="educationwordresource-resource-type"></a>tipo de recurso educationWordResource
 
@@ -17,7 +19,7 @@ Una subclase de [educationResource](educationresource.md). Éste es un recurso d
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |fileUrl|Cadena|Ubicación del archivo en el disco.|
 

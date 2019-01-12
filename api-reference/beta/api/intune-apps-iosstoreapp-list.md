@@ -3,12 +3,13 @@ title: Enumerar iosStoreApps
 description: Enumere las propiedades y las relaciones de los objetos iosStoreApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fad8adca56a5d8ffa0224c6002f4d97220475297
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: de770f36f6bcda88c0dfa83117ef2cd8b77af057
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838260"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949664"
 ---
 # <a name="list-iosstoreapps"></a>Enumerar iosStoreApps
 

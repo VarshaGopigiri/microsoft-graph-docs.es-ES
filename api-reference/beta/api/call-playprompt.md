@@ -3,12 +3,13 @@ title: 'llamar a: playPrompt'
 description: Reproducir un símbolo del sistema en la llamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 47d4dac56f1424f71fff20f63c9d68f3f09d3926
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bd2ba6430e6c49039d32a54413e03bd27be574f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883660"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951260"
 ---
 # <a name="call-playprompt"></a>llamar a: playPrompt
 
@@ -41,7 +42,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Description|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |solicita|colección de [símbolo del sistema](../resources/prompt.md)||
 |clientContext|Cadena|El contexto de cliente.|

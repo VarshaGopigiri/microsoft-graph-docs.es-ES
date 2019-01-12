@@ -3,12 +3,13 @@ title: Enumerar managedAppProtections
 description: Enumere las propiedades y las relaciones de los objetos managedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a7faca1fe1d84d5b4ac73cc63e1ed694c50358f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d660bd9155b71f941440f55a594d62209ad561f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950343"
 ---
 # <a name="list-managedappprotections"></a>Enumerar managedAppProtections
 

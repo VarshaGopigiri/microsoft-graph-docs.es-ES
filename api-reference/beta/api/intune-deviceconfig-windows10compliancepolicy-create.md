@@ -3,12 +3,13 @@ title: Crear windows10CompliancePolicy
 description: Cree un objeto windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ee738bc07ab0d246ecb5a61df244b08287a58d4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d09c30c9219ea3a9d927b6d550f98130a38ecbe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847806"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950147"
 ---
 # <a name="create-windows10compliancepolicy"></a>Crear windows10CompliancePolicy
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, especifique una representación JSON del objeto wi
 
 En la tabla siguiente se muestran las propiedades necesarias para crear el objeto windows10CompliancePolicy.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

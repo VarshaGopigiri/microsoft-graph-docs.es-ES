@@ -3,12 +3,13 @@ title: Obtener macOSEnterpriseWiFiConfiguration
 description: Leer las propiedades y las relaciones del objeto macOSEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 231a8549546ef84baf5fddd1edeb45ca105cabb4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 515eeee3a0faa4afc8e982186fe753a488116ab9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948761"
 ---
 # <a name="get-macosenterprisewificonfiguration"></a>Obtener macOSEnterpriseWiFiConfiguration
 

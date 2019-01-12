@@ -3,12 +3,13 @@ title: tipo de recurso iosWebContentFilterBase
 description: Representa un tipo de base de configuración de filtro de contenido Web de iOS. Una base abstracta y vacía. Autor de la llamada debe usar uno de los tipos derivados de las configuraciones.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c29648ddbcb39ae3f879a9b500ab1a3813fa584
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b59466bfe89570f95a4784e8e9bf6a4c4fde069e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856635"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949167"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>tipo de recurso iosWebContentFilterBase
 

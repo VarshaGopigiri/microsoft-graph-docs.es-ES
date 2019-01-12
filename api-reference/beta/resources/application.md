@@ -2,12 +2,14 @@
 title: tipo de recurso de aplicación
 description: 'Representa una aplicación. Cualquier aplicación que subcontrata autenticación para Azure Active Directory (AD Azure) se debe registrar en un directorio. Registro de aplicaciones implica que informará Azure AD acerca de la aplicación, incluida la dirección URL donde ha localizado, la dirección URL para enviar las respuestas después de la autenticación, el identificador URI para identificar la aplicación y mucho más. Para obtener más información, vea Conceptos básicos de registro de una aplicación en Azure AD. Se hereda de directoryObject. '
 localization_priority: Priority
-ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9fb5722640149471f6728ec6ab893cf388fa9b6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805673"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946682"
 ---
 # <a name="application-resource-type"></a>tipo de recurso de aplicación
 
@@ -39,7 +41,7 @@ Este recurso admite:
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Description |
+| Propiedad | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |API|[API](api.md)| Especifica la configuración para una aplicación de API. |
 |appId| cadena | El identificador único para la aplicación que se asigna a una aplicación por Azure AD. No admite valores NULL. Solo lectura. |
@@ -66,7 +68,7 @@ Este recurso admite:
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo | Description |
+| Relación | Tipo | Descripción |
 |:---------------|:--------|:----------|
 |llamadas           |colección [de llamadas](call.md)                  |Solo lectura. Admite valores NULL.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| El connectorGroup está usando la aplicación con el Proxy de aplicación de Azure AD. Admite valores NULL.|

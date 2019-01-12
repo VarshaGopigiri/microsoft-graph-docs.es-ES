@@ -2,12 +2,14 @@
 title: tipo de recurso de sugerencias de correo electrónico
 description: 'Mensajes informativos acerca de un destinatario, que se muestran a los usuarios mientras que redactan un mensaje. Por ejemplo, un mensaje de fuera de la oficina '
 localization_priority: Normal
-ms.openlocfilehash: 0506d10ad4b1c5eb473b04a30eb8d48334685574
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: d1ee1af2ae5b62d085942615ae0bd3ec320b19b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891696"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951806"
 ---
 # <a name="mailtips-resource-type"></a>tipo de recurso de sugerencias de correo electrónico
 
@@ -15,7 +17,7 @@ Mensajes informativos acerca de un destinatario, que se muestran a los usuarios 
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 | automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Si se ha configurado el destinatario de correo sugerencias para la respuesta automática. |
 | customMailTip | Cadena | Una sugerencia de correo personalizado que se puede establecer en el buzón del destinatario. |

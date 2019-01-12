@@ -3,12 +3,13 @@ title: Obtener depIOSEnrollmentProfile
 description: Leer las propiedades y las relaciones del objeto depIOSEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4b1e2539e157d815f94a3eb3358665de70de80a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d3306ef11266c30af5348472f10ca220117452bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808109"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954676"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Obtener depIOSEnrollmentProfile
 

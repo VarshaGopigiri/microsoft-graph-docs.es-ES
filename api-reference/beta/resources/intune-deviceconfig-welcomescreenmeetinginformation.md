@@ -3,12 +3,13 @@ title: tipo de enumeración welcomeScreenMeetingInformation
 description: Valores posibles para la información de la reunión de pantalla de bienvenida.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 28ec39638c3048a6fda0c5a0cdeca3cd848ad578
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3990363138a6f30df23866b2662e68e9e7c282f1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861281"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949713"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>tipo de enumeración welcomeScreenMeetingInformation
 
@@ -18,7 +19,7 @@ ms.locfileid: "27861281"
 
 Valores posibles para la información de la reunión de pantalla de bienvenida.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |showOrganizerAndTimeOnly|1|Mostrar organizador y hora sólo.|

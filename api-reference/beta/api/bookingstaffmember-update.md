@@ -2,12 +2,14 @@
 title: Actualizar bookingstaffmember
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 4ba2ea126f916b6bd91b83bdd81e24d30fae8ac4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 597647d86df8f34c7fb9a7eba93a5eccc1129f6c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824986"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952226"
 ---
 # <a name="update-bookingstaffmember"></a>Actualizar bookingstaffmember
 
@@ -36,7 +38,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Booleano|True significa que, si el miembro del personal es un usuario de Office 365, la API de reservas usa calendario personal de los empleados en Office 365, así como la propiedad **workingHours** para determinar la disponibilidad. |
 |colorIndex|Int32|Identifica un color para representar al miembro del personal. El color se corresponde con la paleta de colores en la página de **Detalles del personal** en la aplicación de reservas.|

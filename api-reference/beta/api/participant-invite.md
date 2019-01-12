@@ -3,12 +3,13 @@ title: 'participante: invitar a'
 description: Invitar a participantes a la llamada activa.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: d87e7863583c45a200bb2d077134b66500b23b08
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 5ba308b7d28fb2d2806f794ce6336c71068f6234
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894316"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954228"
 ---
 # <a name="participant-invite"></a>participante: invitar a
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Description|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |participants|colección de [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Para invitar a los participantes.|
 |clientContext|Cadena|El contexto de cliente.|

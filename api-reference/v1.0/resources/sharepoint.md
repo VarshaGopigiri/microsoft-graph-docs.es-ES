@@ -2,12 +2,13 @@
 title: Trabajar con sitios de SharePoint en Microsoft Graph
 description: 'La API de SharePoint en Microsoft Graph admite los siguientes escenarios principales:'
 localization_priority: Priority
-ms.openlocfilehash: 0beb3e5d7b56e072632c093613fee5534ec0e54b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: de3c4b91f0e53a9a4efaf135fc91364b1802b2ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860959"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946914"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Trabajar con sitios de SharePoint en Microsoft Graph
 

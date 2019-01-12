@@ -2,12 +2,14 @@
 title: tipo de recurso accessReview
 description: 'En el anuncio de Azure access revisa la característica, el `accessReview` representa una revisión de access.  '
 localization_priority: Normal
-ms.openlocfilehash: 283fed0f9e96ca9d0f9cdf06fdfee824326c038d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6d97382957b7c61625ec54af4c572962be839b4a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950665"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -44,7 +46,7 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el `ac
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | El identificador único asignado a la característica de una revisión de access. |
 | `displayName`             |`String`                                                        | Nombre de la revisión de acceso. Necesarios en crear. |
@@ -65,7 +67,7 @@ En la característica de [acceso revisa](accessreviews-root.md) Azure AD, el `ac
 
 
 
-| Relación | Tipo   |Description|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 | `reviewers`               |colección de [IdentidadDeUsuario](useridentity.md)                     | La colección de los revisores de una revisión de access, si access revisión reviewerType es del tipo `delegate`. |
 | `decisions`               |colección de [accessReviewDecision](accessreviewdecision.md) | La colección de decisiones para esta revisión de access. |
@@ -114,7 +116,7 @@ Aquí tiene una representación JSON del recurso.
 
 El `accessReviewSettings` proporciona una configuración adicional al crear una revisión de acceso para controlar el comportamiento de la característica cuando se inicia una revisión de access.  Este tipo tiene las siguientes propiedades: 
 
-| Propiedad                     | Tipo                      | Description |
+| Propiedad                     | Tipo                      | Descripción |
 | :--------------------------- | :------------------------ | :---------- |
 | `mailNotificationsEnabled`|`Boolean`                | Marcar para indicar si está habilitado el envío de mensajes de correo electrónico a los revisores y el creador de la revisión.                |
 | `remindersEnabled`|`Boolean`       | Marcar para indicar si están habilitados los correos electrónicos de aviso envío a los revisores.       |
@@ -132,7 +134,7 @@ El `accessReviewSettings` proporciona una configuración adicional al crear una 
 
 El `autoReviewSettings` está incrustada dentro de la configuración de la revisión de acceso y especifica el comportamiento de la característica cuando se completa una revisión de access.  El tipo tiene una propiedad, `notReviewedResult`.
 
-| Propiedad                     | Tipo     | Description                          |
+| Propiedad                     | Tipo     | Descripción                          |
 | :--------------------------- | :------  | :----------                          |
 | `notReviewedResult`          |`String`  | Debe ser `Approve`, `Deny` o `Recommendation`. |
 
@@ -141,7 +143,7 @@ El `autoReviewSettings` está incrustada dentro de la configuración de la revis
 
 El `accessReviewRecurrenceSettings` está incrustada dentro de la configuración de la revisión de acceso y especifica que la revisión de access se repite a intervalos regulares.  Este tipo tiene las siguientes propiedades:
 
-| Propiedad                     | Tipo                                                                                                          | Description |
+| Propiedad                     | Tipo                                                                                                          | Descripción |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | El intervalo de periodicidad, que debe ser uno de `onetime`, `weekly`, `monthly`, `quarterly` o `annual`.                                                                   |
 | `recurrenceEndType`|`String` | Cómo la periodicidad finalizará. Puede ser una de `Never`, que no hay ningún fin explícito de la serie de periodicidad, `Endby`, que la periodicidad finaliza en una fecha determinada, y `occurrences`, que la serie finaliza después de haber completado cierto número de instancias de la revisión. |

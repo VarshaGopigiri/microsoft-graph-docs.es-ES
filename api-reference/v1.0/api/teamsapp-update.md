@@ -3,12 +3,13 @@ title: Permisos
 description: 'Actualizar una aplicación que se publicaron anteriormente en el catálogo de aplicaciones de Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 305711206200e7f515ecdb4caff290e8a5a27269
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 44ca5870fd585ef7cd5aa0c0282eac42d41c1a18
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814647"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948525"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Actualizar aplicaciones publicadas en catálogo de aplicaciones de la organización
 

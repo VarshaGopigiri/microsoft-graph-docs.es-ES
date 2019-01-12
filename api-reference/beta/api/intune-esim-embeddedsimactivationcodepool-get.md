@@ -3,12 +3,13 @@ title: Obtener embeddedSIMActivationCodePool
 description: Leer las propiedades y las relaciones del objeto embeddedSIMActivationCodePool.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 123a8fa12555e9ff6722faafc73c16ee4e751544
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 411e291926fde8400ded0ddccd94c3b8a2a4c106
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892536"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949944"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>Obtener embeddedSIMActivationCodePool
 

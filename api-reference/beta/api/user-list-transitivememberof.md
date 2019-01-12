@@ -2,12 +2,14 @@
 title: Miembro de lista usuario transitiva
 description: Obtener grupos, roles de Active directory y unidades administrativas que el usuario es un miembro de. Esta solicitud de API es transitiva y también devolverá todos los grupos que el usuario es un miembro anidado de.
 localization_priority: Normal
-ms.openlocfilehash: eadb9722bc323ea056d015ac15c8aed975306eee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d4977d06b05b7b8d860023640f1e413afa3c3c64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887916"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953712"
 ---
 # <a name="list-user-transitive-memberof"></a>Miembro de lista usuario transitiva
 

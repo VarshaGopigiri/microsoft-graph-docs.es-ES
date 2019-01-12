@@ -3,12 +3,13 @@ title: Administrar las aplicaciones mediante Microsoft Intune
 description: 'Los siguientes recursos de Graph están disponibles para administrar las aplicaciones móviles en Intune:  '
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 84a1f796d234b9eadc33e6577e7ecf4a5bc4dd9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 988042a5e36cb87f6fedf3c8ba3764c56d955b98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835647"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951820"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Administrar las aplicaciones mediante Microsoft Intune
 

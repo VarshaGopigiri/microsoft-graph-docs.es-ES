@@ -2,12 +2,13 @@
 title: Informes de uso de sitio de SharePoint
 description: Puede obtener una vista de alto nivel del valor que va a obtener de SharePoint en cuanto al número total de archivos que los usuarios se almacenan en el almacenamiento de información consumido en todos estos sitios, cuántos archivos se usan activamente y sitios SharePoint. A continuación, puede ver detalles en el informe de uso del sitio de SharePoint para comprender las tendencias y por detalles a nivel de sitio para todos los sitios.
 localization_priority: Normal
-ms.openlocfilehash: 287abafdf279b2a249481ebc4445bfcd980ebc76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 964ec64a2cbb15d639a619cf8debd5fb5875245e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856145"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950532"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Informes de uso de sitio de SharePoint
 

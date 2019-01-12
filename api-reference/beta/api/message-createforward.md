@@ -3,12 +3,13 @@ title: 'message: createForward'
 description: 'Crear un borrador de mensaje de reenvío para incluir un comentario o actualizar las propiedades de mensaje  '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 7d8fa7fa70970e2bb1a5b506d768b3d04311c911
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 56f73ac798ef3440b66cb4c0de1192d3248d3a61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817671"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949076"
 ---
 # <a name="message-createforward"></a>message: createForward
 

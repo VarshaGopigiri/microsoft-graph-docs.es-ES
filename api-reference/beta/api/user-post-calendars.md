@@ -3,12 +3,13 @@ title: Create Calendar
 description: Use esta API para crear un calendario para un usuario.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 867641a47ca02e903c22a3338a0fe87f7c70bddf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a61094b857c06fd2da435ae11c5b7498e9e355ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887825"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949139"
 ---
 # <a name="create-calendar"></a>Create Calendar
 

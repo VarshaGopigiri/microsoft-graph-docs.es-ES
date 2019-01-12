@@ -3,12 +3,13 @@ title: acción getTargetedUsersAndDevices
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b30d931d95266d096ba2ad36e88e2ccdf5c788f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3530986f6e240d648b5383fc868e5ccdbe731e94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848191"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951169"
 ---
 # <a name="gettargetedusersanddevices-action"></a>acción getTargetedUsersAndDevices
 
@@ -47,7 +48,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |deviceConfigurationIds|Colección de cadenas|Todavía no documentado|
 

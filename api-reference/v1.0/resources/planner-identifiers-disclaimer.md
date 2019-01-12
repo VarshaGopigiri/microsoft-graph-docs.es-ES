@@ -2,12 +2,14 @@
 title: Identificadores de Planner
 description: 'Identificadores de objetos en Organizador son valores de cadena generados por el servicio. Los valores son 28 caracteres de longitud y distinguen mayúsculas de minúsculas. Cuando se pasan como en, el servicio realizará una validación de formato básico del identificador, si el error de validación de formato, los llamadores recibirá una respuesta de error de solicitud incorrecta (400), que indica que este problema. Recibir este error indica un error en la aplicación que llama, tales como:'
 localization_priority: Normal
-ms.openlocfilehash: 6efb1192de87082cae99fbcc058607a2239a618c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 75c284d576ed6f03691828309fab7ed899c1c066
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816594"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951862"
 ---
 # <a name="identifiers-in-planner"></a>Identificadores de Planner
 

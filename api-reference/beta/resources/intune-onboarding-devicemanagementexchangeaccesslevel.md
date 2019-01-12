@@ -3,12 +3,13 @@ title: tipo de enumeración deviceManagementExchangeAccessLevel
 description: Nivel de acceso de Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 03588e51a301bfcc4aac5eb3f9c0bfe0fbba9ea9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1d9654e526aec7263f12d0fdcb3af8c68f7ba20e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889554"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950035"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>tipo de enumeración deviceManagementExchangeAccessLevel
 
@@ -18,7 +19,7 @@ ms.locfileid: "27889554"
 
 Nivel de acceso de Exchange.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|No se ha configurado ninguna regla de acceso de dispositivo en Exchange.|
 |Permitir|1|Permitir el acceso de dispositivos a Exchange.|

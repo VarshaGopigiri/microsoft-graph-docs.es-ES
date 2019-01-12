@@ -2,12 +2,14 @@
 title: Crear categoría de Outlook
 description: Crear un objeto outlookCategory en la lista principal de categorías del usuario.
 localization_priority: Normal
-ms.openlocfilehash: 71bb00d96119b06fda624b02fa9b64be67313f6e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 8b16f75b6dd4c9c5ebad357532534fa15b6292c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949860"
 ---
 # <a name="create-outlook-category"></a>Crear categoría de Outlook
 

@@ -3,12 +3,13 @@ title: tipo de enumeración win32LobAppFileSystemDetectionType
 description: Contiene el tipo de detección de todos los archivos compatibles del sistema.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1748b98732e77c8da7360dbd7a4474235da31925
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 407bc9ae603f72419133cdfb7eb234fcf92d8fe6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947900"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>tipo de enumeración win32LobAppFileSystemDetectionType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27846567"
 
 Contiene el tipo de detección de todos los archivos compatibles del sistema.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |No configurado|0|No configurado.|
 |existe|1|Si el archivo o carpeta especificado existe.|

@@ -3,12 +3,13 @@ title: tipo de enumeración sharedPCAccountDeletionPolicyType
 description: Valores posibles para cuando se eliminan las cuentas en un equipo compartido.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d7f51f76e6164c973b213eb53526d5961bb2b627
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 081069f9462c426f24a1e3cf276730b1db40b191
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861036"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951953"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>tipo de enumeración sharedPCAccountDeletionPolicyType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27861036"
 
 Valores posibles para cuando se eliminan las cuentas en un equipo compartido.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |inmediato|0|Eliminar inmediatamente.|
 |diskSpaceThreshold|1|Eliminar en el umbral de espacio en disco.|

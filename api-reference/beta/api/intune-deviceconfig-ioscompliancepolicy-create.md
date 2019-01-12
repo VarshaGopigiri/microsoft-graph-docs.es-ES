@@ -3,12 +3,13 @@ title: Crear iosCompliancePolicy
 description: Crear un objeto iosCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bd5eca6a10492356f65449f2a1b98e6c79744b72
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8cce9c837f6333401025a7775387de2cc15204d0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948992"
 ---
 # <a name="create-ioscompliancepolicy"></a>Crear iosCompliancePolicy
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, especifique una representación JSON del objeto io
 
 En la tabla siguiente se muestran las propiedades necesarias para crear el objeto iosCompliancePolicy.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
