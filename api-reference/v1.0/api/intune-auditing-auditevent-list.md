@@ -3,28 +3,29 @@ title: Enumerar auditEvents
 description: Enumere las propiedades y las relaciones de los objetos auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 344e6a1413d95ede901d2cd6d3390ad83281af47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d95854ca00bc26eb93b857fecfad931e2ac4789d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839798"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972351"
 ---
-# <a name="list-auditevents"></a><span data-ttu-id="2c6df-103">Enumerar auditEvents</span><span class="sxs-lookup"><span data-stu-id="2c6df-103">List auditEvents</span></span>
+# <a name="list-auditevents"></a><span data-ttu-id="443e1-103">Enumerar auditEvents</span><span class="sxs-lookup"><span data-stu-id="443e1-103">List auditEvents</span></span>
 
-> <span data-ttu-id="2c6df-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="2c6df-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="443e1-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="443e1-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="2c6df-105">Enumere las propiedades y las relaciones de los objetos [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="2c6df-105">List properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="2c6df-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="2c6df-106">Prerequisites</span></span>
-<span data-ttu-id="2c6df-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c6df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="443e1-105">Enumere las propiedades y las relaciones de los objetos [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="443e1-105">List properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="443e1-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="443e1-106">Prerequisites</span></span>
+<span data-ttu-id="443e1-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="443e1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2c6df-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="2c6df-109">Permission type</span></span>|<span data-ttu-id="2c6df-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="2c6df-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="443e1-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="443e1-109">Permission type</span></span>|<span data-ttu-id="443e1-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="443e1-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2c6df-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="2c6df-111">Delegated (work or school account)</span></span>|<span data-ttu-id="2c6df-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="2c6df-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="2c6df-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2c6df-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2c6df-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="2c6df-114">Not supported.</span></span>|
-|<span data-ttu-id="2c6df-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="2c6df-115">Application</span></span>|<span data-ttu-id="2c6df-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="2c6df-116">Not supported.</span></span>|
+|<span data-ttu-id="443e1-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="443e1-111">Delegated (work or school account)</span></span>|<span data-ttu-id="443e1-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="443e1-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="443e1-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="443e1-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="443e1-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="443e1-114">Not supported.</span></span>|
+|<span data-ttu-id="443e1-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="443e1-115">Application</span></span>|<span data-ttu-id="443e1-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="443e1-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2c6df-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="2c6df-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="443e1-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="443e1-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ ms.locfileid: "27839798"
 GET /deviceManagement/auditEvents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2c6df-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="2c6df-118">Request headers</span></span>
-|<span data-ttu-id="2c6df-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="2c6df-119">Header</span></span>|<span data-ttu-id="2c6df-120">Valor</span><span class="sxs-lookup"><span data-stu-id="2c6df-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="443e1-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="443e1-118">Request headers</span></span>
+|<span data-ttu-id="443e1-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="443e1-119">Header</span></span>|<span data-ttu-id="443e1-120">Valor</span><span class="sxs-lookup"><span data-stu-id="443e1-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2c6df-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="2c6df-121">Authorization</span></span>|<span data-ttu-id="2c6df-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="2c6df-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2c6df-123">Accept</span><span class="sxs-lookup"><span data-stu-id="2c6df-123">Accept</span></span>|<span data-ttu-id="2c6df-124">application/json</span><span class="sxs-lookup"><span data-stu-id="2c6df-124">application/json</span></span>|
+|<span data-ttu-id="443e1-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="443e1-121">Authorization</span></span>|<span data-ttu-id="443e1-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="443e1-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="443e1-123">Accept</span><span class="sxs-lookup"><span data-stu-id="443e1-123">Accept</span></span>|<span data-ttu-id="443e1-124">application/json</span><span class="sxs-lookup"><span data-stu-id="443e1-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2c6df-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="2c6df-125">Request body</span></span>
-<span data-ttu-id="2c6df-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="2c6df-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="443e1-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="443e1-125">Request body</span></span>
+<span data-ttu-id="443e1-126">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="443e1-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2c6df-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2c6df-127">Response</span></span>
-<span data-ttu-id="2c6df-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [auditEvent](../resources/intune-auditing-auditevent.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2c6df-128">If successful, this method returns a `200 OK` response code and a collection of [auditEvent](../resources/intune-auditing-auditevent.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="443e1-127">Respuesta</span><span class="sxs-lookup"><span data-stu-id="443e1-127">Response</span></span>
+<span data-ttu-id="443e1-128">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y una colección de objetos [auditEvent](../resources/intune-auditing-auditevent.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="443e1-128">If successful, this method returns a `200 OK` response code and a collection of [auditEvent](../resources/intune-auditing-auditevent.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2c6df-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2c6df-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="2c6df-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="2c6df-130">Request</span></span>
-<span data-ttu-id="2c6df-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="2c6df-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="443e1-129">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="443e1-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="443e1-130">Solicitud</span><span class="sxs-lookup"><span data-stu-id="443e1-130">Request</span></span>
+<span data-ttu-id="443e1-131">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="443e1-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 ```
 
-### <a name="response"></a><span data-ttu-id="2c6df-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2c6df-132">Response</span></span>
-<span data-ttu-id="2c6df-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="2c6df-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="443e1-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="443e1-132">Response</span></span>
+<span data-ttu-id="443e1-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="443e1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

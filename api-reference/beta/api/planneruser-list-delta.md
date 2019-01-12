@@ -3,36 +3,37 @@ title: 'Organizador: delta'
 description: Recupera los cambios realizados en los objetos que el usuario está suscrito a.
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 4fe4ed9164c5baf9aea8819ba4f3140c23ec87d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 0e350eb65abf08efb2ba2cb395f3b92c7b9b93e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838643"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915966"
 ---
-# <a name="planner-delta"></a><span data-ttu-id="157ba-103">Organizador: delta</span><span class="sxs-lookup"><span data-stu-id="157ba-103">Planner: delta</span></span>
+# <a name="planner-delta"></a><span data-ttu-id="515ab-103">Organizador: delta</span><span class="sxs-lookup"><span data-stu-id="515ab-103">Planner: delta</span></span>
 
-> <span data-ttu-id="157ba-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="157ba-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="157ba-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="157ba-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="515ab-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="515ab-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="515ab-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="515ab-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="157ba-106">Recupera los cambios realizados en los objetos que el usuario está [suscrito](../resources/planner-overview.md#track-changes-using-delta-query) a.</span><span class="sxs-lookup"><span data-stu-id="157ba-106">Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.</span></span>
+<span data-ttu-id="515ab-106">Recupera los cambios realizados en los objetos que el usuario está [suscrito](../resources/planner-overview.md#track-changes-using-delta-query) a.</span><span class="sxs-lookup"><span data-stu-id="515ab-106">Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.</span></span>
 
-<span data-ttu-id="157ba-107">Este método permite que la aplicación realizar un seguimiento de los cambios a los objetos que el usuario puede obtener acceso desde dentro del organizador a través del tiempo.</span><span class="sxs-lookup"><span data-stu-id="157ba-107">This method allows your application to track changes to objects that the user can access from within Planner over time.</span></span>
+<span data-ttu-id="515ab-107">Este método permite que la aplicación realizar un seguimiento de los cambios a los objetos que el usuario puede obtener acceso desde dentro del organizador a través del tiempo.</span><span class="sxs-lookup"><span data-stu-id="515ab-107">This method allows your application to track changes to objects that the user can access from within Planner over time.</span></span>
 
-<span data-ttu-id="157ba-108">El valor devuelto de este método puede contener heterogéneo tipos de objetos desde el organizador.</span><span class="sxs-lookup"><span data-stu-id="157ba-108">The return value of this method might contain hetergenous types of objects from Planner.</span></span>
+<span data-ttu-id="515ab-108">El valor devuelto de este método puede contener heterogéneo tipos de objetos desde el organizador.</span><span class="sxs-lookup"><span data-stu-id="515ab-108">The return value of this method might contain hetergenous types of objects from Planner.</span></span>
 
-<span data-ttu-id="157ba-109">Para obtener más información sobre el seguimiento de los cambios en datos de Microsoft Graph, vea [utilizar query de delta para realizar un seguimiento de los cambios en datos de Microsoft Graph](/graph/delta-query-overview).</span><span class="sxs-lookup"><span data-stu-id="157ba-109">For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
+<span data-ttu-id="515ab-109">Para obtener más información sobre el seguimiento de los cambios en datos de Microsoft Graph, vea [utilizar query de delta para realizar un seguimiento de los cambios en datos de Microsoft Graph](/graph/delta-query-overview).</span><span class="sxs-lookup"><span data-stu-id="515ab-109">For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="157ba-110">Permisos</span><span class="sxs-lookup"><span data-stu-id="157ba-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="515ab-110">Permisos</span><span class="sxs-lookup"><span data-stu-id="515ab-110">Permissions</span></span>
 
-<span data-ttu-id="157ba-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="157ba-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="515ab-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="515ab-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="157ba-113">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="157ba-113">Permission type</span></span>      | <span data-ttu-id="157ba-114">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="157ba-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="515ab-113">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="515ab-113">Permission type</span></span>      | <span data-ttu-id="515ab-114">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="515ab-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="157ba-115">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="157ba-115">Delegated (work or school account)</span></span> | <span data-ttu-id="157ba-116">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="157ba-116">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="157ba-117">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="157ba-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="157ba-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="157ba-118">Not supported.</span></span>    |
-|<span data-ttu-id="157ba-119">Aplicación</span><span class="sxs-lookup"><span data-stu-id="157ba-119">Application</span></span> | <span data-ttu-id="157ba-120">No admitida.</span><span class="sxs-lookup"><span data-stu-id="157ba-120">Not supported.</span></span> |
+|<span data-ttu-id="515ab-115">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="515ab-115">Delegated (work or school account)</span></span> | <span data-ttu-id="515ab-116">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="515ab-116">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="515ab-117">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="515ab-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="515ab-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="515ab-118">Not supported.</span></span>    |
+|<span data-ttu-id="515ab-119">Aplicación</span><span class="sxs-lookup"><span data-stu-id="515ab-119">Application</span></span> | <span data-ttu-id="515ab-120">No admitida.</span><span class="sxs-lookup"><span data-stu-id="515ab-120">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="157ba-121">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="157ba-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="515ab-121">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="515ab-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,33 +42,33 @@ GET /me/planner/all/delta
 GET /users/<id>/planner/all/delta
 ```
 
-<span data-ttu-id="157ba-122">Sin parámetros adicionales de la consulta (como `$select`, `$expand`, o `$filter`) se admiten actualmente en la implementación de los planes de consultas de delta.</span><span class="sxs-lookup"><span data-stu-id="157ba-122">No additional query parameters (such as `$select`, `$expand`, or `$filter`) are currently supported on Planner's implementation of delta queries.</span></span>
+<span data-ttu-id="515ab-122">Sin parámetros adicionales de la consulta (como `$select`, `$expand`, o `$filter`) se admiten actualmente en la implementación de los planes de consultas de delta.</span><span class="sxs-lookup"><span data-stu-id="515ab-122">No additional query parameters (such as `$select`, `$expand`, or `$filter`) are currently supported on Planner's implementation of delta queries.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="157ba-123">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="157ba-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="515ab-123">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="515ab-123">Request headers</span></span>
 
-| <span data-ttu-id="157ba-124">Nombre</span><span class="sxs-lookup"><span data-stu-id="157ba-124">Name</span></span>           |<span data-ttu-id="157ba-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="157ba-125">Description</span></span>                |
+| <span data-ttu-id="515ab-124">Nombre</span><span class="sxs-lookup"><span data-stu-id="515ab-124">Name</span></span>           |<span data-ttu-id="515ab-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="515ab-125">Description</span></span>                |
 |:---------------|:--------------------------|
-| <span data-ttu-id="157ba-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="157ba-126">Authorization</span></span>  | <span data-ttu-id="157ba-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="157ba-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="515ab-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="515ab-126">Authorization</span></span>  | <span data-ttu-id="515ab-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="515ab-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="157ba-129">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="157ba-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="515ab-129">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="515ab-129">Request body</span></span>
 
-<span data-ttu-id="157ba-130">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="157ba-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="515ab-130">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="515ab-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="157ba-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="157ba-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="515ab-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="515ab-131">Response</span></span>
 
-<span data-ttu-id="157ba-132">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y una colección de cambios se apliquen a los objetos en el cuerpo de la respuesta y un vínculo de sincronización Delta que se deben seguir.</span><span class="sxs-lookup"><span data-stu-id="157ba-132">If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.</span></span>
+<span data-ttu-id="515ab-132">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y una colección de cambios se apliquen a los objetos en el cuerpo de la respuesta y un vínculo de sincronización Delta que se deben seguir.</span><span class="sxs-lookup"><span data-stu-id="515ab-132">If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.</span></span>
 
-<span data-ttu-id="157ba-133">Si el `deltaLink` que usará el autor de la llamada es incorrecto, este extremo devolverá HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="157ba-133">If the `deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.</span></span>
+<span data-ttu-id="515ab-133">Si el `deltaLink` que usará el autor de la llamada es incorrecto, este extremo devolverá HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="515ab-133">If the `deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.</span></span>
 
-<span data-ttu-id="157ba-134">Si el `deltaLink` que usará el autor de la llamada es demasiado antigua, este extremo devolverá HTTP 410.</span><span class="sxs-lookup"><span data-stu-id="157ba-134">If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.</span></span>
+<span data-ttu-id="515ab-134">Si el `deltaLink` que usará el autor de la llamada es demasiado antigua, este extremo devolverá HTTP 410.</span><span class="sxs-lookup"><span data-stu-id="515ab-134">If the `deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.</span></span>
 
-<span data-ttu-id="157ba-p104">Este método puede devolver cualquiera de los [códigos de estado HTTP](/graph/errors). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="157ba-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="515ab-p104">Este método puede devolver cualquiera de los [códigos de estado HTTP](/graph/errors). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="515ab-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="157ba-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="157ba-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="515ab-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="515ab-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="157ba-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="157ba-139">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="515ab-139">Solicitud</span><span class="sxs-lookup"><span data-stu-id="515ab-139">Request</span></span>
 
-<span data-ttu-id="157ba-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="157ba-140">Here is an example of the request.</span></span>
+<span data-ttu-id="515ab-140">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="515ab-140">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -78,10 +79,10 @@ GET /users/<id>/planner/all/delta
 GET https://graph.microsoft.com/beta/me/planner/all/delta
 ```
 
-##### <a name="response"></a><span data-ttu-id="157ba-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="157ba-141">Response</span></span>
-<span data-ttu-id="157ba-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="157ba-142">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="515ab-141">Respuesta</span><span class="sxs-lookup"><span data-stu-id="515ab-141">Response</span></span>
+<span data-ttu-id="515ab-142">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="515ab-142">Here is an example of the response.</span></span>
 
-><span data-ttu-id="157ba-143">**Nota:** Puede que se acorte el objeto de respuesta que se muestra aquí para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="157ba-143">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="157ba-144">Se devolverán todas las propiedades modificadas desde una llamada real.</span><span class="sxs-lookup"><span data-stu-id="157ba-144">All the changed properties will be returned from an actual call.</span></span>
+><span data-ttu-id="515ab-143">**Nota:** Puede que se acorte el objeto de respuesta que se muestra aquí para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="515ab-143">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="515ab-144">Se devolverán todas las propiedades modificadas desde una llamada real.</span><span class="sxs-lookup"><span data-stu-id="515ab-144">All the changed properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
