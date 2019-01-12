@@ -3,12 +3,13 @@ title: tipo de recurso binaryManagementConditionExpression
 description: Una expresión de condición de administración que se evalúa con una operación binaria.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 509e03e7d492289fc9615f7f8ad47bf13d5bead4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b15938d0bb29fdfdad8abb1b37b02ad1e6468cf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857053"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978539"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>tipo de recurso binaryManagementConditionExpression
 
@@ -21,7 +22,7 @@ Una expresión de condición de administración que se evalúa con una operació
 Hereda de [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |operator|[binaryManagementConditionExpressionOperatorType](../resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md)|El operador utilizado en la evaluación de la operación binaria. Los valores posibles son: `or` y `and`.|
 |firstOperand|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|El primer operando de la operación binaria.|

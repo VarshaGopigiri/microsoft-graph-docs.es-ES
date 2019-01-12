@@ -3,12 +3,13 @@ title: tipo de recurso androidWorkProfileTrustedRootCertificate
 description: Perfil de configuración de certificado de raíz de confianza de perfil de trabajo para Android
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 62075141423016a2f3df783de8f17ecd1382abbf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2bbcc5459b2ee60b5031d8af01ded5fb6ce10b12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853063"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973037"
 ---
 # <a name="androidworkprofiletrustedrootcertificate-resource-type"></a>tipo de recurso androidWorkProfileTrustedRootCertificate
 
@@ -44,7 +45,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |certFileName|Cadena|Nombre de archivo para mostrar en la interfaz de usuario.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

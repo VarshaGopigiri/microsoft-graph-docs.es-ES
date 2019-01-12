@@ -3,12 +3,13 @@ title: tipo de recurso windows10NetworkBoundaryConfiguration
 description: Configuración de límite de red Windows10
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e4a1082044aeff3b55fe5f99a30f2943c3104b1e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a04da68368bff3c08629b5677457932730d08f8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990722"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>tipo de recurso windows10NetworkBoundaryConfiguration
 
@@ -43,7 +44,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |windowsNetworkIsolationPolicy|[windowsNetworkIsolationPolicy](../resources/intune-deviceconfig-windowsnetworkisolationpolicy.md)|Directiva de aislamiento de red de Windows|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

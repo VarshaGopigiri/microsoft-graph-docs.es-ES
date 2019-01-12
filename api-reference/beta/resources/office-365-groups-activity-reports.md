@@ -2,12 +2,13 @@
 title: Obtener informes de actividades de Grupos de Office 365
 description: Puede obtener información sobre la actividad de los grupos de Office 365 en su organización y ver cuántos grupos de Office 365 se están crea y usa.
 localization_priority: Normal
-ms.openlocfilehash: 69d1e4e1b52a5221831c5c335c23fe1e1016c398
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 8db142bcc7ae283df41dd6809ab97e81c996c10a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850039"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971189"
 ---
 # <a name="office-365-groups-activity-reports"></a>Obtener informes de actividades de Grupos de Office 365
 

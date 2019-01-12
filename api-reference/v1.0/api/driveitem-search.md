@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Buscar archivos
 localization_priority: Priority
-ms.openlocfilehash: c51706bc3f8eb18ba571cc6896d9b350b2daf1c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: bf387d7c0b3ef3b161610bd8ba1d44685dd45764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868540"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976908"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Buscar objetos DriveItem dentro de una unidad
 
@@ -44,7 +45,7 @@ Este método admite los [parámetros de consulta OData](/graph/query-parameters)
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Parámetro | Tipo  | Description                                                                                                                          |
+| Parámetro | Tipo  | Descripción                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | q  | string | El texto de la consulta usado para buscar elementos. Los valores pueden coincidir en varios campos, como el nombre de archivo, los metadatos y el contenido de los archivos. |
 

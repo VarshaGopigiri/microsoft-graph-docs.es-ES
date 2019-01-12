@@ -3,12 +3,13 @@ title: Obtener objetos de directorio a partir de una lista de identificadores
 description: Seleccione ' opción de consulta no está disponible para esta operación.
 author: lleonard-msft
 localization_priority: Priority
-ms.openlocfilehash: b504fc69deecd6688f61c20c30e17133f80b1dc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2fab85844d810627ca4e44395477716eb0828ffa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889652"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986820"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obtener objetos de directorio a partir de una lista de identificadores
 

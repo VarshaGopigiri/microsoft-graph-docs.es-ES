@@ -3,12 +3,13 @@ title: 'llamar a: rechazar'
 description: Rechazar una llamada entrante.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 06037d86be99e162a57b54f77d7b4363062f5858
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d0d8e14b7c4f3c459432e1cf63efd86421cd9877
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971868"
 ---
 # <a name="call-reject"></a>llamar a: rechazar
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Description|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |motivo|Cadena|La razón de rechazo.|
 

@@ -2,12 +2,14 @@
 title: 'Worksheet: UsedRange'
 description: El rango usado es el rango más pequeño que abarque las celdas que tienen asignado un valor o un formato. Si la hoja de cálculo está en blanco, esta función devolverá la celda superior izquierda.
 localization_priority: Normal
-ms.openlocfilehash: edbe1a45f22ec07b0225be70549a2a7d59faf7eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 444a88dfaad3983948a139f2a3db304c200a1153
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894365"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975305"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 

@@ -3,12 +3,13 @@ title: Eliminar iosEduDeviceConfiguration
 description: Elimina un iosEduDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 976553dc72d4892dcb2fc311a7e3e2c6d9fb601f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fa19105702a5e186609f70c4bd9fd24befa20932
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823348"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991667"
 ---
 # <a name="delete-iosedudeviceconfiguration"></a>Eliminar iosEduDeviceConfiguration
 

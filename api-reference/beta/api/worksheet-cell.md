@@ -2,12 +2,14 @@
 title: 'Worksheet: Cell'
 description: Obtiene el objeto de rango que contiene la celda en función de los números de fila y columna. La celda puede estar fuera de los límites del rango principal, siempre y cuando permanezca dentro de la cuadrícula de la hoja de cálculo.
 localization_priority: Normal
-ms.openlocfilehash: 7338e2a7f079d37e783afeb99f50429e30b6c005
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 5b4771283922c4c41aeb3210040b3e95823cad81
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976068"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 

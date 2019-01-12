@@ -2,12 +2,13 @@
 title: tipo de recurso de notificación
 description: 'Representa una notificación que se publica en un servidor de aplicación que se dirige a un usuario especificado. La notificación se almacena en Microsoft Graph y se distribuye a los extremos de otro dispositivo que pertenecen al usuario. '
 localization_priority: Normal
-ms.openlocfilehash: cc68b95e01452e657187e42aa5f92bfec07f396a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: e920645e0d526893eff197b42ed5d6ef7f7c7b93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869541"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973079"
 ---
 # <a name="notification-resource-type"></a>tipo de recurso de notificación
 > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción.
@@ -24,7 +25,7 @@ Cuando un usuario actúa en una notificación visual, el cliente de la aplicaci�
 |[Creación de notificación](../api/projectrome-notification-post.md) | [notificación](projectrome-notification.md) |Crear y enviar una notificación. |
 
 ## <a name="properties"></a>Propiedades
-|Nombre | Tipo | Description|
+|Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
 | targetHostName | Cadena | Representa el nombre de host de la aplicación a la que desea que el servicio de llamadas registrar la notificación para el usuario determinado. |
 | appNotificationId | Cadena | Identificador único establecido por el servidor de aplicaciones de una notificación que se usa para identificar y dirigir una notificación individual. |

@@ -3,12 +3,13 @@ title: Enumerar windows10CompliancePolicies
 description: Enumere las propiedades y las relaciones de los objetos windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 001772c72acf72bc21c427456bae3ca893703856
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bb1bd35166dee3ecf738650cd60e3f48aed535e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870794"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920556"
 ---
 # <a name="list-windows10compliancepolicies"></a>Enumerar windows10CompliancePolicies
 

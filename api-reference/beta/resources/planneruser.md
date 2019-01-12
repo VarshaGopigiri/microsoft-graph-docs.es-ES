@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerUser
 description: 'El recurso **plannerUser** proporciona acceso a los recursos del organizador para un usuario. '
 localization_priority: Normal
-ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 1b240092e7476884399f88fad61551763f33fe69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820807"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928286"
 ---
 # <a name="planneruser-resource-type"></a>Tipo de recurso plannerUser
 

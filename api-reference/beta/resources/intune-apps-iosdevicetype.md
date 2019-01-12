@@ -3,12 +3,13 @@ title: Tipo de recurso iosDeviceType
 description: Contiene las propiedades de los posibles tipos de dispositivo iOS en los que se puede ejecutar la aplicación móvil.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8d475b129fa74439c1d5876b96579d556540177f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2fe1f686052468bbab5d7115541a631b77073d6e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884885"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977167"
 ---
 # <a name="iosdevicetype-resource-type"></a>Tipo de recurso iosDeviceType
 

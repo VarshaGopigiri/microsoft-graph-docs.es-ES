@@ -2,12 +2,14 @@
 title: Obtener sectionGroup
 description: Recupera las propiedades y relaciones de un objeto sectionGroup.
 localization_priority: Normal
-ms.openlocfilehash: b574c1a0cdfe8b615e24a7cf44a438c3eec139d4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: d5b86daa6ad8fb9aaaed5b72d60e2fa5665a1648
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871760"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919381"
 ---
 # <a name="get-sectiongroup"></a>Obtener sectionGroup
 

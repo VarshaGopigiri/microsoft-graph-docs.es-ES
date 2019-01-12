@@ -3,12 +3,13 @@ title: Tipo de recurso deviceCategory
 description: A continuación, estas categorías se pueden aplicar a un dispositivo en la consola de Azure de Intune o un usuario puede seleccionarlas durante la inscripción de dispositivos. Puede filtrar los informes y crear grupos de dispositivos de Azure Active Directory dinámicos según las categorías de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b61927b5d4c6e8c85ba454d241a0d61a20185579
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 885609c4bbbd01a9bf295e7c49a2790ce51b2941
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888826"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922217"
 ---
 # <a name="devicecategory-resource-type"></a>Tipo de recurso deviceCategory
 

@@ -3,12 +3,13 @@ title: tipo de recurso deviceManagementExchangeOnPremisesPolicy
 description: Entidad de singleton que representa la directiva local de Exchange configurada para un inquilino.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c4f513242694228b53268772d9b2910fa40bbd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855002"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990337"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>tipo de recurso deviceManagementExchangeOnPremisesPolicy
 
@@ -33,7 +34,7 @@ Entidad de singleton que representa la directiva local de Exchange configurada p
 |knownDeviceClasses|colección de [deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|La lista de clases de dispositivo conocidos para Exchange|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|La configuración de acceso condicional local de Exchange. El acceso condicional local requiere que los dispositivos estén inscritos y sean compatibles para tener acceso al correo|
 

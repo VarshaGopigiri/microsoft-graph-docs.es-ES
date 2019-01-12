@@ -3,12 +3,13 @@ title: tipo de enumeración certificateIssuanceStates
 description: Opciones de estado de emisión de certificado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 345dbc1fa6420d1179ec1bdb16558011b7680977
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 144d66dab7d9e8eb9400cb3f41398b011070749d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872138"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973338"
 ---
 # <a name="certificateissuancestates-enum-type"></a>tipo de enumeración certificateIssuanceStates
 
@@ -18,7 +19,7 @@ ms.locfileid: "27872138"
 
 Opciones de estado de emisión de certificado.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Todavía no documentado|
 |challengeIssued|1|Todavía no documentado|

@@ -2,12 +2,14 @@
 title: Obtener riskyUsers
 description: Recuperar las propiedades y relaciones de un objeto **riskyUsers** .
 localization_priority: Normal
-ms.openlocfilehash: da26be10b5a1aa631bd55f977ead806ed89c1406
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: cloudhandler
+ms.prod: security
+ms.openlocfilehash: cde236c0b4328e39f91c7a023f1fa8dbf95fcff7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891129"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977786"
 ---
 # <a name="get-riskyusers"></a>Obtener riskyUsers
 

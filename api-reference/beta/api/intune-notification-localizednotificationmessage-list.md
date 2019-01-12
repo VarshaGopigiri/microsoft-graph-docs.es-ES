@@ -3,12 +3,13 @@ title: Enumerar localizedNotificationMessages
 description: Enumere las propiedades y las relaciones de los objetos localizedNotificationMessage.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ac56d692f0c9e4cd4e24a8ebb511d5dfba0ed7ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f614c82c9a503a017304356438ed123eb6a8363c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990953"
 ---
 # <a name="list-localizednotificationmessages"></a>Enumerar localizedNotificationMessages
 

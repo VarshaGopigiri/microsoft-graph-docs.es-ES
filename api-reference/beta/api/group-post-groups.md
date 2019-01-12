@@ -3,12 +3,13 @@ title: Crear grupo
 description: 'Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:'
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 5876c1c327cd1095124675046089a0f8a71a7ca0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: d1ce182a0122f621ccd1ea464df7a734bb89f24c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887643"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991163"
 ---
 # <a name="create-group"></a>Crear grupo
 
@@ -47,10 +48,10 @@ En la siguiente tabla se muestra las propiedades del recurso de [grupo](../resou
 
 | Propiedad | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| displayName | string | El nombre para mostrar en la libreta de direcciones del grupo. Necesario. |
-| mailEnabled | boolean | Establézcalo en **true** para grupos habilitados para correo. Debe establecer en **true** si la creación de un grupo de Office 365. Debe establecer en **false** si crear dinámico o grupo de seguridad. Necesario. |
-| mailNickname | string | El alias de correo del grupo. Necesario. |
-| securityEnabled | boolean | Establecer en **true** para grupos de seguridad. Debe establecer en **true** si la creación de un grupo de seguridad o dinámicos. Debe establecer en **false** si la creación de un grupo de Office 365. Necesario. |
+| displayName | string | El nombre para mostrar en la libreta de direcciones del grupo. Obligatorio. |
+| mailEnabled | boolean | Establézcalo en **true** para grupos habilitados para correo. Debe establecer en **true** si la creación de un grupo de Office 365. Debe establecer en **false** si crear dinámico o grupo de seguridad. Obligatorio. |
+| mailNickname | string | El alias de correo del grupo. Obligatorio. |
+| securityEnabled | boolean | Establecer en **true** para grupos de seguridad. Debe establecer en **true** si la creación de un grupo de seguridad o dinámicos. Debe establecer en **false** si la creación de un grupo de Office 365. Obligatorio. |
 | owners | colección string | Esta propiedad representa los propietarios para el grupo en tiempo de creación. Opcional. |
 | members | colección string | Esta propiedad representa a los miembros para el grupo en tiempo de creación. Opcional. |
 

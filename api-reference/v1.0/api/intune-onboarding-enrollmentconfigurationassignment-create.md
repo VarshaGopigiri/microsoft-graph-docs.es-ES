@@ -3,12 +3,13 @@ title: Crear enrollmentConfigurationAssignment
 description: Cree un objeto enrollmentConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d378b9f4663a6f3770d00a0f7971d1bc4c3b01b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1ebab600348140378d72501701d370325d194287
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844094"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920271"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Crear enrollmentConfigurationAssignment
 

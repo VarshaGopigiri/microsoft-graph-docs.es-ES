@@ -2,12 +2,14 @@
 title: Crear bookingService
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 73e38c0abfeacb43d3ac7f4e28345ac56becb667
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 13a180a74866d79ecf4540a0feac58d044082a04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814297"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990351"
 ---
 # <a name="create-bookingservice"></a>Crear bookingService
 

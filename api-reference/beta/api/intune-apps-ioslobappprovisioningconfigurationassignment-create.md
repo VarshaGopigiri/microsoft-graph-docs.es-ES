@@ -3,12 +3,13 @@ title: Crear iosLobAppProvisioningConfigurationAssignment
 description: Crear un nuevo objeto iosLobAppProvisioningConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8a3c727dca795916bef14c0ae36d2218766c36a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e2138480d97047e7aa396becb24abb88feb4022
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854225"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925654"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>Crear iosLobAppProvisioningConfigurationAssignment
 

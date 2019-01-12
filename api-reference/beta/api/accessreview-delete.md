@@ -2,12 +2,14 @@
 title: Eliminar accessReview
 description: En AD Azure access revisiones característica, eliminar un objeto accessReview.
 localization_priority: Normal
-ms.openlocfilehash: b062931e58834e1b6a62c83791ec663865fb5c9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 21bfebd8e4c266669e441191bade72be692df51c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829459"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971763"
 ---
 # <a name="delete-accessreview"></a>Eliminar accessReview
 
@@ -31,7 +33,7 @@ DELETE /accessReviews('<id>')
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

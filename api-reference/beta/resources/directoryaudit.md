@@ -3,12 +3,13 @@ title: tipo de recurso directoryAudit
 description: Este recurso representa los elementos de auditoría de Active directory y su colección
 author: lleonard-msft
 localization_priority: Priority
-ms.openlocfilehash: f3b1aa12c18205379220a924be81b53bf6014900
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820513"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991786"
 ---
 # <a name="directoryaudit-resource-type"></a>tipo de recurso directoryAudit
 Este recurso representa los elementos de auditoría de Active directory y su colección
@@ -23,7 +24,7 @@ Este recurso representa los elementos de auditoría de Active directory y su col
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Indica la fecha y hora que se llevó a cabo la actividad. El tipo de marca de tiempo es siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|
 |activityDisplayName|Cadena|Indica el nombre de la actividad o el nombre de la operación (por ejemplo "Crear usuario", "Agregar miembros al grupo"). Para obtener una lista de actividades que se registran, hacer referencia a la [lista de actividades de Azure Ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|

@@ -2,12 +2,14 @@
 title: Tipo de recurso windows10GeneralConfiguration
 description: Este tema proporciona descripciones de los métodos declarados, las propiedades y las relaciones expuestas por el recurso windows10GeneralConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: 129240efc89fd2c533a031dec122fc9c4a14a801
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 8143ce82ff090194daaf1e4cc7eacd07e114b1d5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816229"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971098"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 

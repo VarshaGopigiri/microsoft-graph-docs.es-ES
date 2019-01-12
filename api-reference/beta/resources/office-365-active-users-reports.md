@@ -2,12 +2,13 @@
 title: Obtener informe de usuarios activos de Office 365
 description: Puede usar el informe de usuarios activos de Office 365 para averiguar cuántas licencias de producto están siendo utilizadas por las personas de su organización y explorar en profundidad para obtener información sobre qué usuarios están utilizando qué productos. Este informe puede ayudar a los administradores a identificar infrautilizados productos o los usuarios que podrían necesitar información o recursos de aprendizaje adicionales.
 localization_priority: Normal
-ms.openlocfilehash: d52588630dcb18a146f34ad66c154e3a64752266
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 958cf769a2b54f1d22cdc315ee250cb1e677c301
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970510"
 ---
 # <a name="office-365-active-users-reports"></a>Obtener informe de usuarios activos de Office 365
 

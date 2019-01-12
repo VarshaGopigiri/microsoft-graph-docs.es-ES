@@ -2,12 +2,14 @@
 title: Actualizar bookingappointment
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: baedaf0e894dfdda96c43ff9dc0cb47ce796db9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: c36f7033cb9a8f884436b4315399c794516a93ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809684"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917261"
 ---
 # <a name="update-bookingappointment"></a>Actualizar bookingappointment
 
@@ -36,7 +38,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |customerEmailAddress|Cadena|La dirección SMTP de la [bookingCustomer](../resources/bookingcustomer.md) que se reserva la cita.|
 |customerId|Cadena|El identificador de la [bookingCustomer](../resources/bookingcustomer.md) para esta cita. Si no se especifica ningún identificador cuando se crea una cita, a continuación, se crea un nuevo objeto **bookingCustomer** . Una vez establecida, se debe tener en cuenta el **customerId** inmutable.|

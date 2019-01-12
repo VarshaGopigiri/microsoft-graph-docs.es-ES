@@ -2,12 +2,14 @@
 title: Establecer el tipo de recurso
 description: Configuración del directorio puede crear en función de la directorySettingTemplates disponibles y se ha cambiado desde sus valores predeterminados. Esta configuración puede controlar comportamientos de entidad o una característica, en un nivel de todo el inquilino o en un nivel de la entidad específica. Cuando la misma configuración se define en el nivel de entidad todo el inquilino y específica, la configuración del nivel de entidad específica puede voluntaria de la configuración de todo el inquilino.  Por ejemplo, la configuración de todo el inquilino puede permitir que los invitados puedan ser invitados por los miembros de grupos existentes, pero una configuración de grupo específico puede voluntaria y no permitir que los invitados puedan ser invitados por los miembros del grupo. Actualmente configuraciones de definidas por el sistema sólo se rigen el comportamiento de los grupos de Office.
 localization_priority: Normal
-ms.openlocfilehash: 2687df732896abfb8ecf3b0651682228b84fa17b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: fbe1879a22b2dc7e69258d34f7e25c37bfd0cd5a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810145"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990554"
 ---
 # <a name="directorysetting-resource-type"></a>Establecer el tipo de recurso
 

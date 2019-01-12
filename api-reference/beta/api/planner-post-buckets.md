@@ -2,12 +2,14 @@
 title: Crear plannerBucket
 description: Use esta API para crear un objeto **plannerBucket**.
 localization_priority: Normal
-ms.openlocfilehash: 06eeec8fd477ff57a89dfaa71eee262ac8f0be7d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 03ca34760bbffd5858a2fd04b217dad49a9472d5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955789"
 ---
 # <a name="create-plannerbucket"></a>Crear plannerBucket
 

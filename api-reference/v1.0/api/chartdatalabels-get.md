@@ -3,12 +3,13 @@ title: Get ChartDataLabels
 description: Recuperar las propiedades y relaciones del objeto chartdatalabels.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 5938e43e0b514cc05d182500d81d538aafd92eaf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 336fef8e1f237e1aa54677dc96a055126335d7e2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871396"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974374"
 ---
 # <a name="get-chartdatalabels"></a>Get ChartDataLabels
 

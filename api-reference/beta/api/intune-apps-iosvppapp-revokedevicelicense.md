@@ -3,12 +3,13 @@ title: acción revokeDeviceLicense
 description: REVOKE asignado iOS VPP dispositivo licencia para dada la aplicación.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5a8dca4ea62e08e9d34727dd2142a156ba2d8dee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83d15f542799fb604a3d82d5ac6989087ff75bcf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979099"
 ---
 # <a name="revokedevicelicense-action"></a>acción revokeDeviceLicense
 
@@ -48,7 +49,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |managedDeviceId|Cadena|DeviceId para quienes licencia de aplicaciones asignado es que se desea revocar|
 |notifyManagedDevices|Booleano|Valor Boolean que indica si se debe enviar notificación de revoke para dispositivos|

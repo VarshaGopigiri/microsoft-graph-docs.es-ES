@@ -3,12 +3,13 @@ title: tipo enum deviceType
 description: Tipo de dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 868b6d5c57fccee8bbd8143d09e6f22c89672079
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a22f938a9d37a81b73ce3f6d3b5e0681e5626f7e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843816"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971637"
 ---
 # <a name="devicetype-enum-type"></a>tipo enum deviceType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27843816"
 
 Tipo de dispositivo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |escritorio|0|Escritorio.|
 |windowsRT|1|WindowsRT.|

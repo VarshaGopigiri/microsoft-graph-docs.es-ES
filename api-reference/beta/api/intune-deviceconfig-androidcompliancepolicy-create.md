@@ -3,12 +3,13 @@ title: Crear androidCompliancePolicy
 description: Cree un objeto androidCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf6b5d9ca8d509254dab08b420da55700f55351a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 58303104236896100cf2e4b3c81bfeed44992498
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860252"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990900"
 ---
 # <a name="create-androidcompliancepolicy"></a>Crear androidCompliancePolicy
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, especifique una representación JSON del objeto an
 
 En la tabla siguiente se muestran las propiedades necesarias para crear el objeto androidCompliancePolicy.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |roleScopeTagIds|Colección String|Lista de etiquetas de ámbito para esta instancia de entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |id|Cadena|Clave de la entidad. Heredado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|

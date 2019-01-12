@@ -3,12 +3,13 @@ title: tipo de recurso educationSynchronizationConnectionSettings
 description: 'Representa la configuración de conexión del proveedor. Esto permite que el sistema saber cómo conectarse al proveedor de API. '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 17fedb5094016bd3df3bd8262390eaa7eeb37537
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f9bb19ec9c09b06dd007eb2031f3dbb176eb12d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978231"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>tipo de recurso educationSynchronizationConnectionSettings
 
@@ -19,7 +20,7 @@ Representa la configuración de conexión del proveedor. Esto permite que el sis
 > **Nota:** Este tipo complejo es abstracta. Hacer referencia a los tipos específicos de la configuración de conexión que aparecen.
 
 ## <a name="derived-types"></a>Tipos derivados
-| Tipo | Description | 
+| Tipo | Descripción | 
 |:-|:-|
 | [**educationSynchronizationOAuth1ConnectionSettings**](educationsynchronizationoauth1connectionsettings.md) | Use este tipo para proporcionar la configuración de conexión de OAuth1. |
 | [**educationSynchronizationOAuth2ClientCredentialsConnectionSettings**](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | Use este tipo para proporcionar la configuración de conexión de concesión de las credenciales de cliente de OAuth2. |

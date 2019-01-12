@@ -2,12 +2,13 @@
 title: tipo de recurso imageInfo
 description: Un tipo complejo para que representa la propiedad **atribución** en el elemento visualInfo del objeto de actividad.
 localization_priority: Normal
-ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 347e07b70e8bad6dce8571dd1fbac5cd00d9abdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828570"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978693"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
 
@@ -17,7 +18,7 @@ Un tipo complejo para que representa la propiedad **atribución** en el elemento
 
 ## <a name="properties"></a>Propiedades
 
-|Nombre | Tipo | Description|
+|Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
 |iconUrl | Cadena | Opcional; URI que señala a un icono que representa la aplicación que se usa para generar la actividad|
 |alternateText | Cadena | Opcional; contenido accesible de texto alternativo para la imagen|

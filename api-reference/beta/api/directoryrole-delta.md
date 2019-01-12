@@ -2,12 +2,14 @@
 title: 'directoryRole: delta'
 description: Get recién creado, actualiza o elimina roles de Active directory sin tener que realizar un acceso completo de lectura de la colección completa de recursos. Para obtener más información, vea Uso de consulta de Delta.
 localization_priority: Normal
-ms.openlocfilehash: 9eb847f390b4f05f56945a6496325bbeaccdf410
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c5f17ed70426d8102870537354edf3cea9a723b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809124"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916750"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 

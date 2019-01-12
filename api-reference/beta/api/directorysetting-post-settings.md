@@ -2,12 +2,14 @@
 title: Crear una configuración de Active directory
 description: Utilice esta API para crear una nueva configuración, en función de las plantillas disponibles en directorySettingTemplates. Esta configuración puede ser en el nivel de inquilino o en un nivel de objeto (actualmente únicamente para los grupos). La solicitud de creación debe proporcionar settingValues para toda la configuración definida en la plantilla. Para la configuración específica de grupo, se puede establecer sólo la configuración que rigen si los miembros de un grupo pueden invitar a los usuarios invitados. Una vez que esté disponible la capacidad de agregar los usuarios invitados a un grupo que rige este comportamiento.
 localization_priority: Normal
-ms.openlocfilehash: 692ca0d68522b5b268e9ee670c694e5a5c6bee90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6754e8e4210da0161a6f0cd790dc355e4788e121
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848723"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921769"
 ---
 # <a name="create-a-directory-setting"></a>Crear una configuración de Active directory
 

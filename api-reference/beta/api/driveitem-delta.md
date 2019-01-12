@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Sincronizar el contenido de una unidad
 localization_priority: Normal
-ms.openlocfilehash: a7d64b4ef6878e12be93a471a4ace87f0357ae40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: b879b99fb03ab17af4701c96c4be973f1f752be9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991296"
 ---
 # <a name="track-changes-for-a-drive"></a>Control de cambios de una unidad
 
@@ -49,7 +50,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>Parámetros de función
 
-| Parámetro   | Tipo  | Description                                                                                                                          |
+| Parámetro   | Tipo  | Descripción                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | string | Opcional. Si no se especifica, enumera el estado actual de la jerarquía. Si `latest`, devuelve vacío respuesta con un símbolo (token) delta más reciente. Si un token de delta anterior, devuelve el nuevo estado desde ese token.
 

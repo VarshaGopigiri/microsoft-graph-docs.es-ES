@@ -2,12 +2,14 @@
 title: Tipo de recurso microsoftStoreForBusinessApp
 description: Aplicación de Microsoft Store para Empresas. Esta clase no es compatible con Crear, Eliminar ni Actualizar.
 localization_priority: Normal
-ms.openlocfilehash: c7fc509e498c42ebbadce22dd8fb5f03d0918eec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 4a6e77f48294d96ddd52f3cb992126ffbf4619a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826107"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919310"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>Tipo de recurso microsoftStoreForBusinessApp
 

@@ -3,12 +3,13 @@ title: tipo de recurso vpnProxyServer
 description: Servidor de Proxy VPN.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b4842444bc248e51e1967fcbef4a863ed50498c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 727d26af7f2c1801cd06fc98949109efec267f27
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867679"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955355"
 ---
 # <a name="vpnproxyserver-resource-type"></a>tipo de recurso vpnProxyServer
 
@@ -18,7 +19,7 @@ ms.locfileid: "27867679"
 
 Servidor de Proxy VPN.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |automaticConfigurationScriptUrl|Cadena|Url de secuencia de comandos de configuración automática del proxy.|
 |address|Cadena|Dirección.|

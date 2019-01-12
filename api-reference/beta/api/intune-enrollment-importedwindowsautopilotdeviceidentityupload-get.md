@@ -3,12 +3,13 @@ title: Obtener importedWindowsAutopilotDeviceIdentityUpload
 description: Leer las propiedades y las relaciones del objeto importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db39df4c3e20cb222ee4ae48036616c30dd10097
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5001e04fab38a6e253b08463559de0cc2935f2e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819890"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974738"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentityupload"></a>Obtener importedWindowsAutopilotDeviceIdentityUpload
 

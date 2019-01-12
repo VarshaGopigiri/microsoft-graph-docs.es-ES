@@ -3,12 +3,13 @@ title: tipo de recurso del usuario
 description: Representa una cuenta de usuario de Azure AD. Se hereda de directoryObject.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 1bec385ef452316e3c7c9eb79989fc10e534de26
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a9d3ca1c6f9c67cc2e41907dc22b9f1ec7d28b0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833309"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972652"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso del usuario
 
@@ -154,7 +155,7 @@ Por ejemplo: Cameron es administrador de un directorio para una escuela de prima
 
 Esta propiedad de solo lectura se usa en los desarrolladores de aplicaciones de empresa para garantizar el control correcto de un usuario en función de su grupo de edad legal. Se calcula en función del usuario `ageGroup` y `consentProvidedForMinor` propiedades.
 
-| Valor   | # |Description|
+| Valor   | # |Descripción|
 |:---------------|:--------|:----------|
 |nulo|0|Valor predeterminado que no `ageGroup` se ha establecido para el usuario.|
 |minorWithoutParentalConsent |1|(Reservado para uso futuro)|
@@ -169,7 +170,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 
 #### <a name="agegroup-property"></a>ageGroup (propiedad)
 
-| Valor    | # |Description|
+| Valor    | # |Descripción|
 |:---------------|:--------|:----------|
 |nulo|0|Valor predeterminado que no `ageGroup` se ha establecido para el usuario.|
 |secundaria|1|El usuario se considere un secundarias.|
@@ -178,7 +179,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor (propiedad)
 
-| Valor    | # |Description|
+| Valor    | # |Descripción|
 |:---------------|:--------|:----------|
 |nulo|0|Valor predeterminado que no `consentProvidedForMinor` se ha establecido para el usuario.|
 |concedido|1|Se ha obtenido el consentimiento para que el usuario tenga una cuenta.|
@@ -187,7 +188,7 @@ Las propiedades de consentimiento del menor y grupo de edad son propiedades opci
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo |Description|
+| Relación | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |agreementAcceptances|colección de [agreementAcceptance](agreementacceptance.md)| Términos del usuario de Estados de aceptación de uso. Solo lectura. Admite valores NULL.|
 |calendario|[calendario](calendar.md)|El calendario principal del usuario. Solo lectura.|

@@ -2,12 +2,14 @@
 title: Obtener directoryAudit
 description: Proporciona un elemento específico de registro de auditoría de Azure Active Directory (u obtiene). Incluye los registros de auditoría generados por los distintos servicios de Azure Active Directory como usuario, aplicación, dispositivo y administración de grupo, con privilegios de administración de identidades, revisiones de Access, los términos de uso, protección de la identidad, la administración de contraseñas (SSPR y administración restablecimientos de contraseña ), Self service etcetera de administración de grupo...
 localization_priority: Normal
-ms.openlocfilehash: e85c0c14e4f6c6a0aa3b8beca1ef9d05f4b82aa0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809275"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956321"
 ---
 # <a name="get-directoryaudit"></a>Obtener directoryAudit
 Proporciona un elemento específico de registro de auditoría de Azure Active Directory (u obtiene). Incluye los registros de auditoría generados por los distintos servicios de Azure Active Directory como usuario, aplicación, dispositivo y administración de grupo, con privilegios de administración de identidades, revisiones de Access, los términos de uso, protección de la identidad, la administración de contraseñas (SSPR y administración restablecimientos de contraseña ), Self service etcetera de administración de grupo...

@@ -3,12 +3,13 @@ title: tipo de recurso de evento
 description: Un evento de un calendario.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d083d860d77fe5bf777d14041de21ecc3308d838
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5288087a5288f31903dcc25fd4ef186c1bcf8783
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811742"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990813"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 

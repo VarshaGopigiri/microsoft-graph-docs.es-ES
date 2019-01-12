@@ -3,12 +3,13 @@ title: Crear windows81VpnConfiguration
 description: Crear un nuevo objeto windows81VpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47a8a4dab23952e83b8485b5193010199690ab79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e036ac960cf90d11987f88a19137b443dd4e178c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851838"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975914"
 ---
 # <a name="create-windows81vpnconfiguration"></a>Crear windows81VpnConfiguration
 
