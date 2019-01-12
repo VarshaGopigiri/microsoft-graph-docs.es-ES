@@ -3,30 +3,31 @@ title: Actualizar termsAndConditionsGroupAssignment
 description: Actualizar las propiedades de un objeto termsAndConditionsGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 003713e436e20dbcec9ee6ec1ab6999256fee0b2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f93efc985db56f12ac6cf01840a525915dd8a724
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891213"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929511"
 ---
-# <a name="update-termsandconditionsgroupassignment"></a><span data-ttu-id="3549c-103">Actualizar termsAndConditionsGroupAssignment</span><span class="sxs-lookup"><span data-stu-id="3549c-103">Update termsAndConditionsGroupAssignment</span></span>
+# <a name="update-termsandconditionsgroupassignment"></a><span data-ttu-id="95d23-103">Actualizar termsAndConditionsGroupAssignment</span><span class="sxs-lookup"><span data-stu-id="95d23-103">Update termsAndConditionsGroupAssignment</span></span>
 
-> <span data-ttu-id="3549c-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="3549c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3549c-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="3549c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="95d23-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="95d23-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="95d23-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="95d23-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="3549c-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="3549c-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="95d23-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="95d23-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="3549c-107">Actualizar las propiedades de un objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="3549c-107">Update the properties of a [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="3549c-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="3549c-108">Prerequisites</span></span>
-<span data-ttu-id="3549c-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3549c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="95d23-107">Actualizar las propiedades de un objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="95d23-107">Update the properties of a [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="95d23-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="95d23-108">Prerequisites</span></span>
+<span data-ttu-id="95d23-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95d23-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3549c-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="3549c-111">Permission type</span></span>|<span data-ttu-id="3549c-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="3549c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="95d23-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="95d23-111">Permission type</span></span>|<span data-ttu-id="95d23-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="95d23-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3549c-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="3549c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="3549c-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3549c-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="3549c-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3549c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3549c-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="3549c-116">Not supported.</span></span>|
-|<span data-ttu-id="3549c-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="3549c-117">Application</span></span>|<span data-ttu-id="3549c-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="3549c-118">Not supported.</span></span>|
+|<span data-ttu-id="95d23-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="95d23-113">Delegated (work or school account)</span></span>|<span data-ttu-id="95d23-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95d23-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="95d23-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="95d23-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="95d23-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="95d23-116">Not supported.</span></span>|
+|<span data-ttu-id="95d23-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="95d23-117">Application</span></span>|<span data-ttu-id="95d23-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="95d23-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3549c-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="3549c-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="95d23-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="95d23-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,30 +36,30 @@ ms.locfileid: "27891213"
 PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments/{termsAndConditionsGroupAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3549c-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="3549c-120">Request headers</span></span>
-|<span data-ttu-id="3549c-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="3549c-121">Header</span></span>|<span data-ttu-id="3549c-122">Valor</span><span class="sxs-lookup"><span data-stu-id="3549c-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="95d23-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="95d23-120">Request headers</span></span>
+|<span data-ttu-id="95d23-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="95d23-121">Header</span></span>|<span data-ttu-id="95d23-122">Valor</span><span class="sxs-lookup"><span data-stu-id="95d23-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3549c-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="3549c-123">Authorization</span></span>|<span data-ttu-id="3549c-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="3549c-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3549c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="3549c-125">Accept</span></span>|<span data-ttu-id="3549c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="3549c-126">application/json</span></span>|
+|<span data-ttu-id="95d23-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="95d23-123">Authorization</span></span>|<span data-ttu-id="95d23-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="95d23-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="95d23-125">Accept</span><span class="sxs-lookup"><span data-stu-id="95d23-125">Accept</span></span>|<span data-ttu-id="95d23-126">application/json</span><span class="sxs-lookup"><span data-stu-id="95d23-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3549c-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="3549c-127">Request body</span></span>
-<span data-ttu-id="3549c-128">En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="3549c-128">In the request body, supply a JSON representation for the [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="95d23-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="95d23-127">Request body</span></span>
+<span data-ttu-id="95d23-128">En el cuerpo de la solicitud, proporcionar una representación de JSON para el objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="95d23-128">In the request body, supply a JSON representation for the [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object.</span></span>
 
-<span data-ttu-id="3549c-129">La siguiente tabla muestran las propiedades que son necesarias cuando se crea el [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md).</span><span class="sxs-lookup"><span data-stu-id="3549c-129">The following table shows the properties that are required when you create the [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md).</span></span>
+<span data-ttu-id="95d23-129">La siguiente tabla muestran las propiedades que son necesarias cuando se crea el [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md).</span><span class="sxs-lookup"><span data-stu-id="95d23-129">The following table shows the properties that are required when you create the [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md).</span></span>
 
-|<span data-ttu-id="3549c-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="3549c-130">Property</span></span>|<span data-ttu-id="3549c-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="3549c-131">Type</span></span>|<span data-ttu-id="3549c-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="3549c-132">Description</span></span>|
+|<span data-ttu-id="95d23-130">Propiedad</span><span class="sxs-lookup"><span data-stu-id="95d23-130">Property</span></span>|<span data-ttu-id="95d23-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="95d23-131">Type</span></span>|<span data-ttu-id="95d23-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="95d23-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3549c-133">id</span><span class="sxs-lookup"><span data-stu-id="3549c-133">id</span></span>|<span data-ttu-id="3549c-134">Cadena</span><span class="sxs-lookup"><span data-stu-id="3549c-134">String</span></span>|<span data-ttu-id="3549c-135">Identificador único de la entidad.</span><span class="sxs-lookup"><span data-stu-id="3549c-135">Unique identifier of the entity.</span></span>|
-|<span data-ttu-id="3549c-136">targetGroupId</span><span class="sxs-lookup"><span data-stu-id="3549c-136">targetGroupId</span></span>|<span data-ttu-id="3549c-137">Cadena</span><span class="sxs-lookup"><span data-stu-id="3549c-137">String</span></span>|<span data-ttu-id="3549c-138">Identificador único de un grupo que se asigna la directiva T & C a.</span><span class="sxs-lookup"><span data-stu-id="3549c-138">Unique identifier of a group that the T&C policy is assigned to.</span></span>|
+|<span data-ttu-id="95d23-133">id</span><span class="sxs-lookup"><span data-stu-id="95d23-133">id</span></span>|<span data-ttu-id="95d23-134">Cadena</span><span class="sxs-lookup"><span data-stu-id="95d23-134">String</span></span>|<span data-ttu-id="95d23-135">Identificador único de la entidad.</span><span class="sxs-lookup"><span data-stu-id="95d23-135">Unique identifier of the entity.</span></span>|
+|<span data-ttu-id="95d23-136">targetGroupId</span><span class="sxs-lookup"><span data-stu-id="95d23-136">targetGroupId</span></span>|<span data-ttu-id="95d23-137">Cadena</span><span class="sxs-lookup"><span data-stu-id="95d23-137">String</span></span>|<span data-ttu-id="95d23-138">Identificador único de un grupo que se asigna la directiva T & C a.</span><span class="sxs-lookup"><span data-stu-id="95d23-138">Unique identifier of a group that the T&C policy is assigned to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="3549c-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3549c-139">Response</span></span>
-<span data-ttu-id="3549c-140">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y un objeto actualizado [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="3549c-140">If successful, this method returns a `200 OK` response code and an updated [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="95d23-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="95d23-139">Response</span></span>
+<span data-ttu-id="95d23-140">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y un objeto actualizado [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="95d23-140">If successful, this method returns a `200 OK` response code and an updated [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3549c-141">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="3549c-141">Example</span></span>
-### <a name="request"></a><span data-ttu-id="3549c-142">Solicitud</span><span class="sxs-lookup"><span data-stu-id="3549c-142">Request</span></span>
-<span data-ttu-id="3549c-143">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="3549c-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="95d23-141">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="95d23-141">Example</span></span>
+### <a name="request"></a><span data-ttu-id="95d23-142">Solicitud</span><span class="sxs-lookup"><span data-stu-id="95d23-142">Request</span></span>
+<span data-ttu-id="95d23-143">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="95d23-143">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments/{termsAndConditionsGroupAssignmentId}
 Content-type: application/json
@@ -69,8 +70,8 @@ Content-length: 48
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3549c-144">Respuesta</span><span class="sxs-lookup"><span data-stu-id="3549c-144">Response</span></span>
-<span data-ttu-id="3549c-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="3549c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="95d23-144">Respuesta</span><span class="sxs-lookup"><span data-stu-id="95d23-144">Response</span></span>
+<span data-ttu-id="95d23-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="95d23-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
