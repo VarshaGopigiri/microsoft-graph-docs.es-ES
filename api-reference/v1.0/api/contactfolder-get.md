@@ -3,54 +3,55 @@ title: Get contactFolder
 description: Obtiene una carpeta de contactos mediante el id. de carpeta de contactos.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: a0ce1c112161e2828d9646232ce577ddb759ac79
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5bab3c729795f70789c66b22899b412d5f6abdf0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815333"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923799"
 ---
-# <a name="get-contactfolder"></a><span data-ttu-id="1d17b-103">Get contactFolder</span><span class="sxs-lookup"><span data-stu-id="1d17b-103">Get contactFolder</span></span>
+# <a name="get-contactfolder"></a><span data-ttu-id="8210b-103">Get contactFolder</span><span class="sxs-lookup"><span data-stu-id="8210b-103">Get contactFolder</span></span>
 
-<span data-ttu-id="1d17b-104">Obtiene una carpeta de contactos mediante el id. de carpeta de contactos.</span><span class="sxs-lookup"><span data-stu-id="1d17b-104">Get a contact folder by using the contact folder ID.</span></span>
+<span data-ttu-id="8210b-104">Obtiene una carpeta de contactos mediante el id. de carpeta de contactos.</span><span class="sxs-lookup"><span data-stu-id="8210b-104">Get a contact folder by using the contact folder ID.</span></span>
 
-<span data-ttu-id="1d17b-105">Hay dos escenarios donde una aplicación puede obtener la carpeta de contactos de otro usuario:</span><span class="sxs-lookup"><span data-stu-id="1d17b-105">There are two scenarios where an app can get another user's contact folder:</span></span>
+<span data-ttu-id="8210b-105">Hay dos escenarios donde una aplicación puede obtener la carpeta de contactos de otro usuario:</span><span class="sxs-lookup"><span data-stu-id="8210b-105">There are two scenarios where an app can get another user's contact folder:</span></span>
 
-* <span data-ttu-id="1d17b-106">Si la aplicación tiene permisos de aplicación, o bien,</span><span class="sxs-lookup"><span data-stu-id="1d17b-106">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="1d17b-107">Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o, se le concede acceso delegado a ese usuario.</span><span class="sxs-lookup"><span data-stu-id="1d17b-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="1d17b-108">Consulte los [Detalles y un ejemplo](/graph/outlook-get-shared-contacts-folders).</span><span class="sxs-lookup"><span data-stu-id="1d17b-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
+* <span data-ttu-id="8210b-106">Si la aplicación tiene permisos de aplicación, o bien,</span><span class="sxs-lookup"><span data-stu-id="8210b-106">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="8210b-107">Si la aplicación tiene la adecuada delega [los permisos](#permissions) de un usuario y otro usuario ha compartido una carpeta de contactos con ese usuario o, se le concede acceso delegado a ese usuario.</span><span class="sxs-lookup"><span data-stu-id="8210b-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a contact folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="8210b-108">Consulte los [Detalles y un ejemplo](/graph/outlook-get-shared-contacts-folders).</span><span class="sxs-lookup"><span data-stu-id="8210b-108">See [details and an example](/graph/outlook-get-shared-contacts-folders).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="1d17b-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="1d17b-109">Permissions</span></span>
-<span data-ttu-id="1d17b-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d17b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8210b-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="8210b-109">Permissions</span></span>
+<span data-ttu-id="8210b-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8210b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1d17b-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="1d17b-112">Permission type</span></span>      | <span data-ttu-id="1d17b-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="1d17b-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8210b-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="8210b-112">Permission type</span></span>      | <span data-ttu-id="8210b-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="8210b-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1d17b-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="1d17b-114">Delegated (work or school account)</span></span> | <span data-ttu-id="1d17b-115">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1d17b-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="1d17b-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1d17b-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d17b-117">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1d17b-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="1d17b-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="1d17b-118">Application</span></span> | <span data-ttu-id="1d17b-119">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1d17b-119">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="8210b-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="8210b-114">Delegated (work or school account)</span></span> | <span data-ttu-id="8210b-115">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8210b-115">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="8210b-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8210b-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8210b-117">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8210b-117">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="8210b-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="8210b-118">Application</span></span> | <span data-ttu-id="8210b-119">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8210b-119">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1d17b-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="1d17b-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8210b-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="8210b-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1d17b-121">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="1d17b-121">Optional query parameters</span></span>
-<span data-ttu-id="1d17b-122">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1d17b-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1d17b-123">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="1d17b-123">Request headers</span></span>
-| <span data-ttu-id="1d17b-124">Nombre</span><span class="sxs-lookup"><span data-stu-id="1d17b-124">Name</span></span>       | <span data-ttu-id="1d17b-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="1d17b-125">Type</span></span> | <span data-ttu-id="1d17b-126">Descripción</span><span class="sxs-lookup"><span data-stu-id="1d17b-126">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="8210b-121">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="8210b-121">Optional query parameters</span></span>
+<span data-ttu-id="8210b-122">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8210b-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8210b-123">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="8210b-123">Request headers</span></span>
+| <span data-ttu-id="8210b-124">Nombre</span><span class="sxs-lookup"><span data-stu-id="8210b-124">Name</span></span>       | <span data-ttu-id="8210b-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="8210b-125">Type</span></span> | <span data-ttu-id="8210b-126">Descripción</span><span class="sxs-lookup"><span data-stu-id="8210b-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="1d17b-127">Autorización</span><span class="sxs-lookup"><span data-stu-id="1d17b-127">Authorization</span></span>  | <span data-ttu-id="1d17b-128">string</span><span class="sxs-lookup"><span data-stu-id="1d17b-128">string</span></span>  | <span data-ttu-id="1d17b-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="1d17b-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8210b-127">Autorización</span><span class="sxs-lookup"><span data-stu-id="8210b-127">Authorization</span></span>  | <span data-ttu-id="8210b-128">string</span><span class="sxs-lookup"><span data-stu-id="8210b-128">string</span></span>  | <span data-ttu-id="8210b-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="8210b-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1d17b-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="1d17b-131">Request body</span></span>
-<span data-ttu-id="1d17b-132">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="1d17b-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8210b-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="8210b-131">Request body</span></span>
+<span data-ttu-id="8210b-132">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="8210b-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1d17b-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1d17b-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8210b-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8210b-133">Response</span></span>
 
-<span data-ttu-id="1d17b-134">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [contactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1d17b-134">If successful, this method returns a `200 OK` response code and [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1d17b-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="1d17b-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1d17b-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="1d17b-136">Request</span></span>
-<span data-ttu-id="1d17b-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="1d17b-137">Here is an example of the request.</span></span>
+<span data-ttu-id="8210b-134">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [contactFolder](../resources/contactfolder.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8210b-134">If successful, this method returns a `200 OK` response code and [contactFolder](../resources/contactfolder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8210b-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8210b-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8210b-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="8210b-136">Request</span></span>
+<span data-ttu-id="8210b-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="8210b-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_contactfolder"
@@ -58,8 +59,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="1d17b-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1d17b-138">Response</span></span>
-<span data-ttu-id="1d17b-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="1d17b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8210b-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8210b-138">Response</span></span>
+<span data-ttu-id="8210b-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="8210b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

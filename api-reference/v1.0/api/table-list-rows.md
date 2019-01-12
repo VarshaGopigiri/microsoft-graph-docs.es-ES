@@ -3,49 +3,50 @@ title: List rows
 description: Recuperar una lista de objetos tablerow.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9e93b9a8469586d0105f0c170a4ee9f8ebe65ff9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 974d22b8a6118ee3b50c9e765facc06c9e7b496a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871991"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923778"
 ---
-# <a name="list-rows"></a><span data-ttu-id="95b41-103">List rows</span><span class="sxs-lookup"><span data-stu-id="95b41-103">List rows</span></span>
+# <a name="list-rows"></a><span data-ttu-id="d5b14-103">List rows</span><span class="sxs-lookup"><span data-stu-id="d5b14-103">List rows</span></span>
 
-<span data-ttu-id="95b41-104">Recuperar una lista de objetos tablerow.</span><span class="sxs-lookup"><span data-stu-id="95b41-104">Retrieve a list of tablerow objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="95b41-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="95b41-105">Permissions</span></span>
-<span data-ttu-id="95b41-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95b41-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d5b14-104">Recuperar una lista de objetos tablerow.</span><span class="sxs-lookup"><span data-stu-id="d5b14-104">Retrieve a list of tablerow objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5b14-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="d5b14-105">Permissions</span></span>
+<span data-ttu-id="d5b14-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5b14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="95b41-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="95b41-108">Permission type</span></span>      | <span data-ttu-id="95b41-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="95b41-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d5b14-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="d5b14-108">Permission type</span></span>      | <span data-ttu-id="d5b14-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="d5b14-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="95b41-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="95b41-110">Delegated (work or school account)</span></span> | <span data-ttu-id="95b41-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="95b41-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="95b41-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="95b41-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="95b41-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="95b41-113">Not supported.</span></span>    |
-|<span data-ttu-id="95b41-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="95b41-114">Application</span></span> | <span data-ttu-id="95b41-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="95b41-115">Not supported.</span></span> |
+|<span data-ttu-id="d5b14-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="d5b14-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d5b14-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d5b14-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d5b14-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d5b14-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5b14-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d5b14-113">Not supported.</span></span>    |
+|<span data-ttu-id="d5b14-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="d5b14-114">Application</span></span> | <span data-ttu-id="d5b14-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="d5b14-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="95b41-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="95b41-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5b14-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d5b14-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="95b41-117">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="95b41-117">Optional query parameters</span></span>
-<span data-ttu-id="95b41-118">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="95b41-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>  <span data-ttu-id="95b41-119">Con los resultados de confianza, use los parámetros de consulta [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) y [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) para examinar los resultados.</span><span class="sxs-lookup"><span data-stu-id="95b41-119">For reliable results, use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="95b41-120">Esto le ayudará a evitar problemas de rendimiento relacionados con grandes conjuntos de resultados.</span><span class="sxs-lookup"><span data-stu-id="95b41-120">This will help avoid performance problems related to large result sets.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d5b14-117">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="d5b14-117">Optional query parameters</span></span>
+<span data-ttu-id="d5b14-118">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d5b14-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>  <span data-ttu-id="d5b14-119">Con los resultados de confianza, use los parámetros de consulta [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) y [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) para examinar los resultados.</span><span class="sxs-lookup"><span data-stu-id="d5b14-119">For reliable results, use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="d5b14-120">Esto le ayudará a evitar problemas de rendimiento relacionados con grandes conjuntos de resultados.</span><span class="sxs-lookup"><span data-stu-id="d5b14-120">This will help avoid performance problems related to large result sets.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="95b41-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="95b41-121">Request headers</span></span>
-| <span data-ttu-id="95b41-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="95b41-122">Name</span></span>      |<span data-ttu-id="95b41-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="95b41-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d5b14-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="d5b14-121">Request headers</span></span>
+| <span data-ttu-id="d5b14-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="d5b14-122">Name</span></span>      |<span data-ttu-id="d5b14-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="d5b14-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="95b41-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="95b41-124">Authorization</span></span>  | <span data-ttu-id="95b41-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="95b41-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="95b41-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="95b41-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="95b41-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="95b41-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="d5b14-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5b14-124">Authorization</span></span>  | <span data-ttu-id="d5b14-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d5b14-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5b14-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="d5b14-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="d5b14-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="d5b14-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="95b41-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="95b41-130">Request body</span></span>
-<span data-ttu-id="95b41-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="95b41-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5b14-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="d5b14-130">Request body</span></span>
+<span data-ttu-id="d5b14-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="d5b14-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="95b41-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="95b41-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d5b14-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5b14-132">Response</span></span>
 
-<span data-ttu-id="95b41-133">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y la colección de objetos de [WorkbookTableRow](../resources/tablerow.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="95b41-133">If successful, this method returns a `200 OK` response code and collection of [WorkbookTableRow](../resources/tablerow.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="95b41-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="95b41-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="95b41-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="95b41-135">Request</span></span>
-<span data-ttu-id="95b41-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="95b41-136">Here is an example of the request.</span></span>
+<span data-ttu-id="d5b14-133">Si tiene éxito, este método devuelve una `200 OK` código de respuesta y la colección de objetos de [WorkbookTableRow](../resources/tablerow.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d5b14-133">If successful, this method returns a `200 OK` response code and collection of [WorkbookTableRow](../resources/tablerow.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d5b14-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d5b14-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d5b14-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d5b14-135">Request</span></span>
+<span data-ttu-id="d5b14-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d5b14-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_rows"
@@ -53,8 +54,8 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5
 ```
-##### <a name="response"></a><span data-ttu-id="95b41-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="95b41-137">Response</span></span>
-<span data-ttu-id="95b41-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="95b41-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5b14-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d5b14-137">Response</span></span>
+<span data-ttu-id="d5b14-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="d5b14-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,10 +76,10 @@ Content-length: 82
   ]
 }
 ```
-> <span data-ttu-id="95b41-141">
-  \*\*Nota\*\*: Use los parámetros de consulta [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) y [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) para examinar un gran número de filas.</span><span class="sxs-lookup"><span data-stu-id="95b41-141">**Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of rows.</span></span>
+> <span data-ttu-id="d5b14-141">
+  \*\*Nota\*\*: Use los parámetros de consulta [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) y [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) para examinar un gran número de filas.</span><span class="sxs-lookup"><span data-stu-id="d5b14-141">**Note:** Use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) and [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) query parameters to page through large numbers of rows.</span></span>
 
-<span data-ttu-id="95b41-142">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="95b41-142">Example:</span></span> 
+<span data-ttu-id="d5b14-142">Ejemplo:</span><span class="sxs-lookup"><span data-stu-id="d5b14-142">Example:</span></span> 
 
 `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5`
 `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5`
