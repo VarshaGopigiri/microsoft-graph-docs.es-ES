@@ -2,12 +2,14 @@
 title: Tipo de recurso iosUpdateConfiguration
 description: Configuración de actualización de iOS, le permite configurar el intervalo de horas de la semana para instalar actualizaciones de iOS
 localization_priority: Normal
-ms.openlocfilehash: 32d3350675ebcaa5bcb364262f5de053bfc23ae0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: dfc41b65a9c9738226713b24349386d8c88539cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816684"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930456"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>Tipo de recurso iosUpdateConfiguration
 

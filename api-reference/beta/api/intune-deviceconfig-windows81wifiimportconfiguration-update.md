@@ -3,12 +3,13 @@ title: Actualizar windows81WifiImportConfiguration
 description: Actualizar las propiedades de un objeto windows81WifiImportConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d0d37ec614030b4864aeefff1fe1aab50c4dfa82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 139a7d5df0227dfcf002f484a975b6d78227107f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880678"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914377"
 ---
 # <a name="update-windows81wifiimportconfiguration"></a>Actualizar windows81WifiImportConfiguration
 

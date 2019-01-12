@@ -3,12 +3,13 @@ title: tipo de enumeración windowsPrivacyDataCategory
 description: Especificador de categoría de Windows privacidad datos para el acceso a datos de privacidad.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f9b533b9ecbf08f09760b57bb0d2bac7080746e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 03a7e1d7f017d7c7df9c27257c8f2a3e01c861d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826757"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931191"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>tipo de enumeración windowsPrivacyDataCategory
 
@@ -18,7 +19,7 @@ ms.locfileid: "27826757"
 
 Especificador de categoría de Windows privacidad datos para el acceso a datos de privacidad.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |No configurado|0|Ningún nivel de acceso no especificado, del color. Es posible que se comportan de dispositivo ya sea como en UserInControl o ForceAllow. Es posible que dependen de los datos de privacidad sido tener acceso a las versiones de Windows y otros factores.|
 |accountInfo|1|Permiten el nombre del usuario de acceso de aplicaciones, imágenes y otra información de cuenta creado en la cuenta de Microsoft. Se agregó en Windows 10, versión 1607.|

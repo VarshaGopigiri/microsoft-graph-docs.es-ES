@@ -3,12 +3,13 @@ title: Enumerar iosVppApps
 description: Enumere las propiedades y las relaciones de los objetos iosVppApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7742a542f97a9135cb15c7744badcd1284c62c98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 326056f8df3c92b39ae14ebc4d7a1922ed5e3e44
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843151"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929924"
 ---
 # <a name="list-iosvppapps"></a>Enumerar iosVppApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

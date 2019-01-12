@@ -2,12 +2,14 @@
 title: 'contactFolder: delta'
 description: Obtenga un conjunto de carpetas de contactos que se hayan agregado, eliminado o quitado del buzón del usuario.
 localization_priority: Normal
-ms.openlocfilehash: 87474f4a70d4730bfb9d510c43c017d86883116a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 838f7e60a857fd27fb18158298b3c1109a73dd8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931744"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -48,7 +50,7 @@ Puede utilizar un parámetro de consulta `$select` como en cualquier solicitud G
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
@@ -104,7 +106,7 @@ Content-length: 254
 }
 ```
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](/graph/delta-query-overview)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](/graph/delta-query-messages)

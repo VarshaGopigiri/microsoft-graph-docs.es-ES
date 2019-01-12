@@ -3,12 +3,13 @@ title: Eliminar androidScepCertificateProfile
 description: Elimina un androidScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3d58165c8b399d6c364e4ee0299a0763d79739d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cff0ae78ef135b5f83f6ee1ace222a0b84c4a8eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882673"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928916"
 ---
 # <a name="delete-androidscepcertificateprofile"></a>Eliminar androidScepCertificateProfile
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

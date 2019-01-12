@@ -3,12 +3,13 @@ title: Crear importedDeviceIdentity
 description: Crear un nuevo objeto importedDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e3a6ca16d9bfa4a79d723816544e9a7bcf3f77df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9e0efa7cdccd24f01539840beb3d0a53342323a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870528"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930142"
 ---
 # <a name="create-importeddeviceidentity"></a>Crear importedDeviceIdentity
 
@@ -38,7 +39,7 @@ POST /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,13 +49,13 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador de la identidad del dispositivo importada|
-|importedDeviceIdentifier|Cadena|Identificador de dispositivo importada|
+|id|String|Identificador de la identidad del dispositivo importada|
+|importedDeviceIdentifier|String|Identificador de dispositivo importada|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidad de dispositivo importada. Los valores posibles son: `unknown`, `imei` y `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|DateTime última modificación de la descripción|
 |createdDateTime|DateTimeOffset|Crear fecha hora del dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última vez fecha ponerse en contacto del dispositivo|
-|descripción|Cadena|La descripción del dispositivo|
+|descripción|String|La descripción del dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|El estado del dispositivo en Intune. Los valores posibles son: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|La plataforma del dispositivo. Los valores posibles son: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

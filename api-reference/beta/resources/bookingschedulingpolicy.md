@@ -2,12 +2,14 @@
 title: tipo de recurso bookingSchedulingPolicy
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 15f9e0dea22a7cfb5eab437bcc023fe3387bb2ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 039d76b00787c9bf2e4f0bee4eb927a7628a9e76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914642"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>tipo de recurso bookingSchedulingPolicy
 
@@ -16,7 +18,7 @@ ms.locfileid: "27805366"
 Representa el conjunto de directivas que determinan cómo se deben crear citas en un calendario de Microsoft Bookings.
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |allowStaffSelection|Booleano|True si se debe permitir a los clientes elegir a una persona específica para la reserva.|
 |maximumAdvance|Duración|Número máximo de días de antelación que se puede realizar una reserva. Sigue el formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|

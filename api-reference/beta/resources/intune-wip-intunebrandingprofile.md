@@ -3,12 +3,13 @@ title: tipo de recurso intuneBrandingProfile
 description: Esta entidad contiene datos que se usan para personalizar la apariencia de nivel de inquilino de las aplicaciones de Portal de empresa, así como el portal web del usuario final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2ee2fee902b4aca542810dc058b7d16aaedb9c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820611"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930267"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 

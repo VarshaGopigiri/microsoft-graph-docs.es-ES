@@ -3,12 +3,13 @@ title: Crear iosEduDeviceConfiguration
 description: Crear un nuevo objeto iosEduDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41fa706bbd951dbcf44288baa5c0644108541865
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 85ae80a4246bc209c00aaaed2d2034458ad5db7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915175"
 ---
 # <a name="create-iosedudeviceconfiguration"></a>Crear iosEduDeviceConfiguration
 

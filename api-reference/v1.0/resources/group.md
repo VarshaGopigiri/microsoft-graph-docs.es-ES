@@ -2,12 +2,14 @@
 title: Tipo de recurso group
 description: Representa un grupo de Azure Active Directory (AD Azure), que puede ser un grupo de Office 365, un grupo dinámico o un grupo de seguridad.
 localization_priority: Priority
-ms.openlocfilehash: f4d4de207cdc8e3f9fbd312ad08639b85cbc87a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: d5b3ce7c8a7af318fdf8dc0eb46b08c57619071a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828017"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931849"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso group
 
@@ -120,7 +122,7 @@ Este recurso admite:
 
 Aquí es lo que significa cada valor de la propiedad de **visibilidad** :
  
-|Valor|Description|
+|Valor|Descripción|
 |:----|-----------|
 | `public` | Cualquier usuario puede unirse al grupo sin necesidad de permiso de propietario.<br>Cualquier usuario puede ver el contenido del grupo.|
 | `private` | Se necesita el permiso de propietario para unirse al grupo.<br>Que no sean miembros no pueden ver el contenido del grupo.|

@@ -3,12 +3,13 @@ title: Acción sendTestMessage
 description: Envía un mensaje de prueba con la notificationMessageTemplate especificada en la configuración regional predeterminada
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e84e73780dd331e291ae0fead438d42fdcd4c886
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: adde4145ea088d5e8304d83c78cd5be9fd136ffe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821822"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931562"
 ---
 # <a name="sendtestmessage-action"></a>Acción sendTestMessage
 
@@ -38,7 +39,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

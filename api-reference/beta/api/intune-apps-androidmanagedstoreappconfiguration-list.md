@@ -3,12 +3,13 @@ title: Lista androidManagedStoreAppConfigurations
 description: Propiedades de la lista y relaciones de los objetos androidManagedStoreAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 27d63dca0934d916ecbdfeb06be40c8fe9d6153c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 538de6c0c5a8e5ee65c78838ddb7a22b6ab5d645
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874511"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914657"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>Lista androidManagedStoreAppConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

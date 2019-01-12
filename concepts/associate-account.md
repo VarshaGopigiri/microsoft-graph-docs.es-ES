@@ -1,12 +1,13 @@
 ---
 title: Asociar la cuenta de Office 365 a Azure AD para crear y administrar aplicaciones
 description: 'Para autenticar las aplicaciones mediante Microsoft Azure Active Directory (Azure AD), debe registrarlas en Azure AD. Aquí es donde se almacena la información de las aplicaciones y de la cuenta de usuario de Office 365. Para administrar Azure AD a través de Azure Portal, necesita una suscripción a Microsoft Azure. Puede usar el portal en Microsoft Azure para administrar usuarios, roles y aplicaciones. '
-ms.openlocfilehash: 1a0935a88d985d8be72197c2652586bbbc19bd1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 815cc80fa8d25f52ac05a1bf80f9e9dfa89b9b4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27092851"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880160"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Asociar la cuenta de Office 365 a Azure AD para crear y administrar aplicaciones
 
