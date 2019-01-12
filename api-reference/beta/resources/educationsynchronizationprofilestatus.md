@@ -3,12 +3,13 @@ title: tipo de recurso educationSynchronizationProfileStatus
 description: 'Representa el estado de sincronización de un perfil de sincronización de datos de school. '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 4476ffc7c64fb5d9852c46e2b748587e79d427c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: d16619b0cf1e2c09358cf585b896b0c7c7d4f318
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858166"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928930"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>tipo de recurso educationSynchronizationProfileStatus
 
@@ -26,7 +27,7 @@ Representa el estado de sincronización del school datos [perfil de sincronizaci
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad | Tipo | Description |
+| Propiedad | Tipo | Descripción |
 |:-|:-|:-|
 | **status** | string | El estado de una sincronización. Los valores posibles son: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
 | **lastSynchronizationDateTime** | DateTimeOffset | Representa el tiempo cuando se han observado cambios más recientes en el directorio.  |

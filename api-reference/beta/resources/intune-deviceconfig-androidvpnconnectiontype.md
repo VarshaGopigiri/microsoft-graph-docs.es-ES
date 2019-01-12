@@ -3,12 +3,13 @@ title: tipo de enumeración androidVpnConnectionType
 description: Tipo de conexión VPN Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4ecd0db2a6e4d916b6ad5d2244b43990c99a4c4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 01dee5d50564d712dab436d6570aad1bb08f7519
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809992"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928755"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>tipo de enumeración androidVpnConnectionType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27809992"
 
 Tipo de conexión VPN Android.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |ciscoAnyConnect|0|Cisco AnyConnect.|
 |pulseSecure|1|Impulsos seguro.|

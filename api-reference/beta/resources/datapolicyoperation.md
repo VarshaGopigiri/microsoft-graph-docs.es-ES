@@ -2,12 +2,14 @@
 title: tipo de recurso dataPolicyOperation
 description: Representa una operación de la directiva de datos enviados. Contiene la información necesaria para realizar un seguimiento del estado de una operación. Por ejemplo, un administrador de la compañía puede enviar una solicitud de operación de directiva de datos para exportar datos de un empleado de la compañía y, a continuación, más adelante realizar un seguimiento de dicha solicitud.
 localization_priority: Normal
-ms.openlocfilehash: b56cfe766bbfcae9339805dd61ce816e372d02f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876009"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938751"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
 

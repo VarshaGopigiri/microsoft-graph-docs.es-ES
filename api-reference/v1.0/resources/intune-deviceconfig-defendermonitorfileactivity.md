@@ -3,12 +3,13 @@ title: tipo de enumeración defenderMonitorFileActivity
 description: Valores posibles para supervisar la actividad de archivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e8719fd5f07efa9d09dcf88ae02566f331904734
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d818264470543d077384f055cf2ef4004e019b26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871690"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937120"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>tipo de enumeración defenderMonitorFileActivity
 
@@ -16,7 +17,7 @@ ms.locfileid: "27871690"
 
 Valores posibles para supervisar la actividad de archivo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |deshabilitar|1|Deshabilitar supervisar la actividad de archivo.|

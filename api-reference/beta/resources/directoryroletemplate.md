@@ -2,12 +2,14 @@
 title: Tipo de recurso directoryRoleTemplate
 description: 'Representa una plantilla de rol de Active directory. Una plantilla de rol de Active directory especifica los valores de propiedad de un rol de Active directory (directoryRole). Hay un objeto de plantilla de rol asociados en el directorio para cada uno de los roles de Active directory que se pueden activar en un inquilino. Para leer un rol de Active directory o actualizar a sus miembros, debe activarse en primer lugar en el inquilino. Sólo el rol de Active directory de administradores de la compañía se activa de forma predeterminada. Para activar otros roles de Active directory disponibles enviar una solicitud POST para la `/directoryRoles` extremo con el identificador de la plantilla de rol de Active directory en el que se basa el rol de Active directory especificado en el parámetro **roleTemplateId** de la solicitud. Tras completar correctamente esta solicitud, a continuación, puede iniciar leer y asignar a miembros a la función de Active directory. **Nota**: una plantilla de rol de Active directory se expone para el rol de Active directory de los usuarios. La función de directorio de usuarios está implícita y no es visible para los clientes de Active directory. Todos los usuarios en el inquilino se asigna a este rol en la infraestructura. La función ya está activada. No use esta plantilla.'
 localization_priority: Normal
-ms.openlocfilehash: bffff81db3416c538031bce58cfc80580c06f48e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2b4a4e79c11f38991da88cd685983229c9f7da7b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821192"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938184"
 ---
 # <a name="directoryroletemplate-resource-type"></a>Tipo de recurso directoryRoleTemplate
 

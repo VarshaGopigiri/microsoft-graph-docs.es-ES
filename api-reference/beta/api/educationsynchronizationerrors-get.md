@@ -3,12 +3,13 @@ title: Obtener educationSynchronizationErrors
 description: 'Obtenga los errores generados durante la validación o durante una sincronización de un perfil de sincronización de datos de school específicos en el inquilino. '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 1b0504ae8ef7c463afb4041a89bfb4229833b63e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 6a15070b68e9cf249a6b6a7841ea24b0e265a24e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926144"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obtener educationSynchronizationErrors
 

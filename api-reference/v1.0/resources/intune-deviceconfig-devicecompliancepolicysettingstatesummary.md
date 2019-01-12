@@ -3,12 +3,13 @@ title: Tipo de recurso deviceCompliancePolicySettingStateSummary
 description: Resumen de estado de la configuración de directiva cumplimiento de dispositivo en la cuenta.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: afe2b1518aa2ac9c803cc41fce2efffabf4c44d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 73c5ad3df2b768d9cc1888de714876a2c963562e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914874"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingStateSummary
 

@@ -3,12 +3,13 @@ title: tipo de recurso androidForWorkEasEmailProfileBase
 description: Base para los perfiles de Android para EAS correo electrónico del trabajo
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1147c1cec6ddd5e46f03f0319f4ea847b6bbd369
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c1ec07113c5b3806edbc9ccd1f0d5c44bebc5efa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820863"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938051"
 ---
 # <a name="androidforworkeasemailprofilebase-resource-type"></a>tipo de recurso androidForWorkEasEmailProfileBase
 
@@ -45,7 +46,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Atributo de nombre de usuario que se seleccionan de AAD y se insertan en este perfil antes de instalar en el dispositivo. Los valores posibles son: `username`, `userPrincipalName`, `samAccountName` y `primarySmtpAddress`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

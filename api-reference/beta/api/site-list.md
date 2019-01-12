@@ -2,12 +2,13 @@
 title: Enumerar sitios
 description: El [de] [sitios] disponibles en una organización que coinciden con los criterios de filtro proporcionado y las opciones de consulta de la lista.
 localization_priority: Normal
-ms.openlocfilehash: 87ce5b68ccadffa6e0422c413ab79ee784f361c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 05c3480181126d528657d0efacde97051a178bfd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855822"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939570"
 ---
 # <a name="enumerate-sites"></a>Enumerar sitios
 
@@ -17,7 +18,7 @@ Lista de los [sitios][] disponibles en una organización que coinciden con los c
 
 Actualmente se admiten las siguientes opciones de consulta:
 
-| Instrucción de filtro             | Instrucción SELECT        | Description
+| Instrucción de filtro             | Instrucción SELECT        | Descripción
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Se enumeran todas las colecciones de sitios de nivel raíz de la organización. Es útil para descubrir el sitio principal para cada zona geográfica.
 

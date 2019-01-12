@@ -3,12 +3,13 @@ title: tipo de recurso windowsAutopilotDeviceIdentity
 description: El recurso windowsAutopilotDeviceIdentity representa un dispositivo de piloto automático de Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9fd7ac1f6cc97c16fc5ab393cc9b893386eb9e65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1b9f5a2d5be735d454280cf2f8774673da3ac7e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851159"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940235"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>tipo de recurso windowsAutopilotDeviceIdentity
 
@@ -47,7 +48,7 @@ El recurso windowsAutopilotDeviceIdentity representa un dispositivo de piloto au
 |userPrincipalName|Cadena|Nombre Principal de usuario.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |deploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Perfil de implementación asignado actualmente para el dispositivo de piloto automático de Windows.|
 |intendedDeploymentProfile|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Perfil de implementación pensada para ser asignado al dispositivo de piloto automático de Windows.|

@@ -2,12 +2,14 @@
 title: Obtener una plantilla de configuración de grupo
 description: Una plantilla de configuración de grupo representa una plantilla de configuración desde la que puede crearse la configuración para un arrendatario. Esta operación permite la recuperación de las propiedades del objeto groupSettingTemplate, incluyendo las configuraciones disponibles y sus valores predeterminados.
 localization_priority: Normal
-ms.openlocfilehash: 17e385c564337fcaa1255685e2b5808caec5cba4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ed817747f947f3f8ef7d71d235a40e4237039db1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934308"
 ---
 # <a name="get-a-group-setting-template"></a>Obtener una plantilla de configuración de grupo
 

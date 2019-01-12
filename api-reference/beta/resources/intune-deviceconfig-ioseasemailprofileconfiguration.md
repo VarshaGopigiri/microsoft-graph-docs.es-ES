@@ -2,12 +2,14 @@
 title: tipo de recurso iosEasEmailProfileConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar al cliente de correo electrónico nativo en dispositivos iOS para comunicarse con un servidor de Exchange y correo electrónico, contactos, calendario, avisos y notas. Además, también puede especificar cuánto correo electrónico para la sincronización y con qué frecuencia debe sincronizar el dispositivo.
 localization_priority: Normal
-ms.openlocfilehash: 32758fb8dd9aa02b93eb8129894f60a1fabce768
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 050970bc5b1e3835d0b3ad801969d42c79505992
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814997"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938345"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>tipo de recurso iosEasEmailProfileConfiguration
 
@@ -57,7 +59,7 @@ Hereda de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-ea
 |useOAuth|Booleano|Especifica si la conexión debe usar OAuth para la autenticación.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

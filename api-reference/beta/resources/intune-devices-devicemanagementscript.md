@@ -3,12 +3,13 @@ title: tipo de recurso deviceManagementScript
 description: Intune proporcionará al cliente la capacidad de ejecutar sus secuencias de comandos de Powershell en los dispositivos de Azure Active Directory se unió a windows inscritos 10. La secuencia de comandos se puede ejecutar una vez o periódicamente.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0f2747b966384e5e0abaf165ca463174b60ced8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811049"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932311"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso deviceManagementScript
 
@@ -42,7 +43,7 @@ Intune proporcionará al cliente la capacidad de ejecutar sus secuencias de coma
 |fileName|Cadena|Nombre de archivo de secuencia de comandos.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|La lista de las asignaciones de grupo para la secuencia de comandos de administración de dispositivos.|
 |asignaciones|colección de [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|La lista de las asignaciones de grupo para la secuencia de comandos de administración de dispositivos.|

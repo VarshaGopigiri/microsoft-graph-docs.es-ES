@@ -2,12 +2,14 @@
 title: 'usuario: exportPersonalData'
 description: Envía una solicitud de operación de la directiva de datos, realizada por un administrador de la compañía para exportar datos de un usuario organizativa.
 localization_priority: Normal
-ms.openlocfilehash: d660994868e331fb8c1813bb9ff90aebe4790e9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7f112d065b75da7dc525e667df78b0264be37d55
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934194"
 ---
 # <a name="user-exportpersonaldata"></a>usuario: exportPersonalData
 
@@ -38,7 +40,7 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Tipo   |Description |
+| Parámetro    | Tipo   |Descripción |
 |:---------------|:--------|:----------|
 |storageLocation|Cadena|Esto es una dirección URL de firma (SAS) de acceso compartido a una cuenta de almacenamiento de Azure, para que se deben exportar los datos.|
 

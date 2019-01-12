@@ -3,12 +3,13 @@ title: tipo de enumeración dayOfWeek
 description: Posibles valores de un día de la semana
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b184c992eee6211e18ca64b68b82a0bad7d1d31c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3852a999f191c1a29651164453a848476e8321c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851243"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913299"
 ---
 # <a name="dayofweek-enum-type"></a>tipo de enumeración dayOfWeek
 
@@ -18,7 +19,7 @@ ms.locfileid: "27851243"
 
 Posibles valores de un día de la semana
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |domingo|0|Domingo.|
 |lunes|1|Lunes.|

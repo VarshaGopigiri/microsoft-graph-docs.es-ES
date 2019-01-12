@@ -3,12 +3,13 @@ title: tipo de enumeración savedUIStateGenerationOptions
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 341d851bf5a43381507e98bdb666e0d1e34a6bf4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c987f91b3bcb686cb853b81514a487b8c9aa0625
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932164"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>tipo de enumeración savedUIStateGenerationOptions
 
@@ -16,7 +17,7 @@ ms.locfileid: "27826400"
 
 Todavía no documentado
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|Todavía no documentado|
 |omitSilverlightPolicyReferences|1|Todavía no documentado|

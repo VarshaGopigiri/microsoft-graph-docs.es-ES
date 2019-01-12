@@ -3,12 +3,13 @@ title: 'Range: UsedRange'
 description: Devuelve el rango usado del objeto de rango especificado.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 3ace6df8491945e405dab1f33cf628e9b97fabe4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0ae8f8bec1eea6f2e13b4c4248d55afbb28cf19d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862016"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928069"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 

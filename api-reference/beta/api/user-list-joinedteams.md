@@ -3,12 +3,13 @@ title: Enumerar joinedTeams
 description: Obtener los grupos de usuarios en Microsoft Teams que el usuario es miembro directo.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 4f412d8721439a948bec1b07f628ce1f27dcf717
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 839b6531318ca9fc8abb3fd3544566622d02a78b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839448"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938205"
 ---
 # <a name="list-joinedteams"></a>Enumerar joinedTeams
 

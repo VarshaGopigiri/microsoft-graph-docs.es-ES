@@ -2,12 +2,14 @@
 title: tipo de recurso androidForWorkGmailEasConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar al cliente de correo electrónico de Gmail en dispositivos Android para trabajo para comunicarse con un servidor de Exchange y correo electrónico, contactos, calendario, tareas y notas. Además, también puede especificar cuánto correo electrónico para la sincronización y con qué frecuencia debe sincronizar el dispositivo.
 localization_priority: Normal
-ms.openlocfilehash: e912ad1db2aaff82333c69f7fede37d4f16bf0e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f974da3c84a0db18517b7d9210623f631c30c037
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849234"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928636"
 ---
 # <a name="androidforworkgmaileasconfiguration-resource-type"></a>tipo de recurso androidForWorkGmailEasConfiguration
 
@@ -47,7 +49,7 @@ Hereda de [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-a
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Atributo de nombre de usuario que se seleccionan de AAD y se insertan en este perfil antes de instalar en el dispositivo. Se hereda de [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md). Los valores posibles son: `username`, `userPrincipalName`, `samAccountName` y `primarySmtpAddress`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

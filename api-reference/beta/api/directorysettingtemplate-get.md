@@ -2,12 +2,14 @@
 title: Obtener una plantilla de configuración de Active directory
 description: Una plantilla de configuración de Active directory representa una plantilla de configuración desde la que puede crearse la configuración dentro de un inquilino. Esta operación permite recuperar de las propiedades del objeto directorySettingTemplate, incluida la configuración disponible y sus valores predeterminados.
 localization_priority: Normal
-ms.openlocfilehash: 55312fd4d7e2a77821dc7ad18ca3f67bded261df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2fb9f8edbc374760f16496bd9ec5bcf666a09883
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888175"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935678"
 ---
 # <a name="get-a-directory-setting-template"></a>Obtener una plantilla de configuración de Active directory
 

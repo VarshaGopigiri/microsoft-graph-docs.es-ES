@@ -2,12 +2,14 @@
 title: Tipo de recurso managedDeviceMobileAppConfigurationUserStatus
 description: Contiene las propiedades, las propiedades heredadas y las acciones para un resumen de estado de configuración de aplicaciones móviles de MDM para un usuario.
 localization_priority: Normal
-ms.openlocfilehash: 1f7e9c0a20c52083434eada86836eb22fe87f994
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 4071702b634c0c56d8850a8e10c8bab3fe877f2b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820884"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937918"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationUserStatus
 

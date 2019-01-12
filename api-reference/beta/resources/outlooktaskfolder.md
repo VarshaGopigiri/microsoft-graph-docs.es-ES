@@ -3,12 +3,13 @@ title: tipo de recurso outlookTaskFolder
 description: 'Una carpeta que contiene las tareas de Outlook (colección de objetos de outlookTask). '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 6e5b1297bfae4d03c42988329e661979e899e2bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882932"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937694"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>tipo de recurso outlookTaskFolder
 
@@ -44,7 +45,7 @@ En Outlook, el grupo de tareas de forma predeterminada, `My Tasks`, contiene una
 |parentGroupKey|Guid|El identificador GUID único para el grupo primario de la carpeta de la tarea.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Description|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|Colección [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|La colección de propiedades extendidas de varios valores definidos para la carpeta tareas. Solo lectura. Admite valores NULL.|
 |singleValueExtendedProperties|Colección [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|La colección de propiedades extendidas de un solo valor definido para la carpeta tareas. Solo lectura. Admite valores NULL.|

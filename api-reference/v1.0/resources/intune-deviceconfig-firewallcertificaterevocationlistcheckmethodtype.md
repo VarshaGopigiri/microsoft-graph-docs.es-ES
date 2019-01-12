@@ -3,12 +3,13 @@ title: tipo de enumeración firewallCertificateRevocationListCheckMethodType
 description: Valores posibles para firewallCertificateRevocationListCheckMethod
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2beee8f7c4f049aa1918b7e1516c3ce586a8cad0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e479b10339ab515a17f67d85de0c8d43c1507825
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839952"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940060"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enumeración firewallCertificateRevocationListCheckMethodType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27839952"
 
 Valores posibles para firewallCertificateRevocationListCheckMethod
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|No hay un valor configurado mediante Intune, invalidar el valor predeterminado de dispositivo configurado por el usuario|
 |none|1|No comprobar la lista de revocación de certificados|

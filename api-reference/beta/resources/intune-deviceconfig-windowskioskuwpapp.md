@@ -3,12 +3,13 @@ title: tipo de recurso windowsKioskUWPApp
 description: La clase base para un tipo de aplicaciones
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8719fdd248276a657b96235c592f1bb62607b856
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871865"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934915"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>tipo de recurso windowsKioskUWPApp
 
@@ -21,7 +22,7 @@ La clase base para un tipo de aplicaciones
 Hereda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|El tamaño del mosaico de aplicación para el diseño de inicio Inherited desde [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Los valores posibles son: `hidden`, `small`, `medium`, `wide` y `large`.|
 |name|Cadena|Representa el nombre descriptivo de una aplicación heredada de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
