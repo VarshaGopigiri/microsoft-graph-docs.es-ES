@@ -3,51 +3,52 @@ title: Get Table
 description: Recuperar las propiedades y las relaciones del objeto table.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: af67248c78b0113f27da949c390323c20fa749d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 13565edc29949610e9d48396b7ff6ef51efffcd3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854400"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967535"
 ---
-# <a name="get-table"></a><span data-ttu-id="6b952-103">Get Table</span><span class="sxs-lookup"><span data-stu-id="6b952-103">Get Table</span></span>
+# <a name="get-table"></a><span data-ttu-id="1667d-103">Get Table</span><span class="sxs-lookup"><span data-stu-id="1667d-103">Get Table</span></span>
 
-> <span data-ttu-id="6b952-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="6b952-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6b952-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="6b952-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1667d-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="1667d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1667d-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="1667d-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6b952-106">Recuperar las propiedades y las relaciones del objeto table.</span><span class="sxs-lookup"><span data-stu-id="6b952-106">Retrieve the properties and relationships of table object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6b952-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="6b952-107">Permissions</span></span>
-<span data-ttu-id="6b952-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b952-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1667d-106">Recuperar las propiedades y las relaciones del objeto table.</span><span class="sxs-lookup"><span data-stu-id="1667d-106">Retrieve the properties and relationships of table object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1667d-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="1667d-107">Permissions</span></span>
+<span data-ttu-id="1667d-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1667d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6b952-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6b952-110">Permission type</span></span>      | <span data-ttu-id="6b952-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6b952-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1667d-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="1667d-110">Permission type</span></span>      | <span data-ttu-id="1667d-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="1667d-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6b952-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6b952-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6b952-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b952-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6b952-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6b952-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6b952-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6b952-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6b952-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6b952-116">Application</span></span> | <span data-ttu-id="6b952-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6b952-117">Not supported.</span></span> |
+|<span data-ttu-id="1667d-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="1667d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1667d-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1667d-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1667d-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1667d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1667d-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1667d-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="1667d-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="1667d-116">Application</span></span> | <span data-ttu-id="1667d-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="1667d-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6b952-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6b952-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1667d-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="1667d-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}
 GET /workbook/worksheets/{id|name}/tables/{id|name}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6b952-119">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="6b952-119">Optional query parameters</span></span>
-<span data-ttu-id="6b952-120">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6b952-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1667d-119">Parámetros de consulta opcionales</span><span class="sxs-lookup"><span data-stu-id="1667d-119">Optional query parameters</span></span>
+<span data-ttu-id="1667d-120">Este método admite los [parámetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) a modo de ayuda para personalizar la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1667d-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6b952-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6b952-121">Request headers</span></span>
-| <span data-ttu-id="6b952-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="6b952-122">Name</span></span>      |<span data-ttu-id="6b952-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="6b952-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1667d-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="1667d-121">Request headers</span></span>
+| <span data-ttu-id="1667d-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="1667d-122">Name</span></span>      |<span data-ttu-id="1667d-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="1667d-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="6b952-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="6b952-124">Authorization</span></span>  | <span data-ttu-id="6b952-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="6b952-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6b952-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6b952-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="6b952-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="6b952-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="1667d-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1667d-124">Authorization</span></span>  | <span data-ttu-id="1667d-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="1667d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1667d-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="1667d-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="1667d-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="1667d-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6b952-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6b952-130">Request body</span></span>
-<span data-ttu-id="6b952-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="6b952-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1667d-130">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="1667d-130">Request body</span></span>
+<span data-ttu-id="1667d-131">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="1667d-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6b952-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6b952-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1667d-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1667d-132">Response</span></span>
 
-<span data-ttu-id="6b952-133">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6b952-133">If successful, this method returns a `200 OK` response code and [Table](../resources/table.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6b952-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6b952-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6b952-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6b952-135">Request</span></span>
-<span data-ttu-id="6b952-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6b952-136">Here is an example of the request.</span></span>
+<span data-ttu-id="1667d-133">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [Table](../resources/table.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="1667d-133">If successful, this method returns a `200 OK` response code and [Table](../resources/table.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1667d-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="1667d-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1667d-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="1667d-135">Request</span></span>
+<span data-ttu-id="1667d-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="1667d-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_table"
@@ -55,8 +56,8 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}
 ```
-##### <a name="response"></a><span data-ttu-id="6b952-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6b952-137">Response</span></span>
-<span data-ttu-id="6b952-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="6b952-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1667d-137">Respuesta</span><span class="sxs-lookup"><span data-stu-id="1667d-137">Response</span></span>
+<span data-ttu-id="1667d-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="1667d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

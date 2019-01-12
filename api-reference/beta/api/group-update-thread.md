@@ -3,48 +3,49 @@ title: Actualizar hilo de conversación
 description: Actualiza un objeto de conversación.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: a54a450064fc886e18687c31bb05ddc25868326c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: defb7560a1d407a60ac813154ebd978f554e9763
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878921"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966261"
 ---
-# <a name="update-conversation-thread"></a><span data-ttu-id="8e50e-103">Actualizar hilo de conversación</span><span class="sxs-lookup"><span data-stu-id="8e50e-103">Update conversation thread</span></span>
+# <a name="update-conversation-thread"></a><span data-ttu-id="9f2b6-103">Actualizar hilo de conversación</span><span class="sxs-lookup"><span data-stu-id="9f2b6-103">Update conversation thread</span></span>
 
-> <span data-ttu-id="8e50e-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="8e50e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8e50e-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="8e50e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9f2b6-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9f2b6-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="8e50e-106">Actualiza un objeto de [conversación](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="8e50e-106">Update a [thread](../resources/conversationthread.md) object.</span></span>
+<span data-ttu-id="9f2b6-106">Actualiza un objeto de [conversación](../resources/conversationthread.md).</span><span class="sxs-lookup"><span data-stu-id="9f2b6-106">Update a [thread](../resources/conversationthread.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8e50e-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="8e50e-107">Permissions</span></span>
-<span data-ttu-id="8e50e-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8e50e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9f2b6-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="9f2b6-107">Permissions</span></span>
+<span data-ttu-id="9f2b6-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9f2b6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8e50e-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="8e50e-110">Permission type</span></span>      | <span data-ttu-id="8e50e-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="8e50e-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9f2b6-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="9f2b6-110">Permission type</span></span>      | <span data-ttu-id="9f2b6-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="9f2b6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8e50e-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="8e50e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8e50e-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8e50e-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8e50e-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8e50e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e50e-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="8e50e-115">Not supported.</span></span>    |
-|<span data-ttu-id="8e50e-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="8e50e-116">Application</span></span> | <span data-ttu-id="8e50e-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="8e50e-117">Not supported.</span></span> |
+|<span data-ttu-id="9f2b6-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="9f2b6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9f2b6-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9f2b6-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9f2b6-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9f2b6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9f2b6-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-115">Not supported.</span></span>    |
+|<span data-ttu-id="9f2b6-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="9f2b6-116">Application</span></span> | <span data-ttu-id="9f2b6-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8e50e-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="8e50e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9f2b6-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9f2b6-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groups/{id}/threads/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8e50e-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="8e50e-119">Request headers</span></span>
-| <span data-ttu-id="8e50e-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="8e50e-120">Name</span></span>       | <span data-ttu-id="8e50e-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="8e50e-121">Type</span></span> | <span data-ttu-id="8e50e-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="8e50e-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9f2b6-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9f2b6-119">Request headers</span></span>
+| <span data-ttu-id="9f2b6-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="9f2b6-120">Name</span></span>       | <span data-ttu-id="9f2b6-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="9f2b6-121">Type</span></span> | <span data-ttu-id="9f2b6-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="9f2b6-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8e50e-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="8e50e-123">Authorization</span></span>  | <span data-ttu-id="8e50e-124">string</span><span class="sxs-lookup"><span data-stu-id="8e50e-124">string</span></span>  | <span data-ttu-id="8e50e-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="8e50e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9f2b6-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="9f2b6-123">Authorization</span></span>  | <span data-ttu-id="9f2b6-124">string</span><span class="sxs-lookup"><span data-stu-id="9f2b6-124">string</span></span>  | <span data-ttu-id="9f2b6-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8e50e-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="8e50e-127">Request body</span></span>
-<span data-ttu-id="8e50e-p104">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="8e50e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9f2b6-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9f2b6-127">Request body</span></span>
+<span data-ttu-id="9f2b6-p104">En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8e50e-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8e50e-131">Response</span></span>
-<span data-ttu-id="8e50e-132">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="8e50e-132">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="9f2b6-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9f2b6-131">Response</span></span>
+<span data-ttu-id="9f2b6-132">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-132">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8e50e-133">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="8e50e-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="8e50e-134">Solicitud</span><span class="sxs-lookup"><span data-stu-id="8e50e-134">Request</span></span>
-<span data-ttu-id="8e50e-135">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="8e50e-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9f2b6-133">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9f2b6-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="9f2b6-134">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9f2b6-134">Request</span></span>
+<span data-ttu-id="9f2b6-135">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-135">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -68,8 +69,8 @@ Content-length: 655
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="8e50e-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="8e50e-136">Response</span></span>
-<span data-ttu-id="8e50e-137">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="8e50e-137">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="9f2b6-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9f2b6-136">Response</span></span>
+<span data-ttu-id="9f2b6-137">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9f2b6-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

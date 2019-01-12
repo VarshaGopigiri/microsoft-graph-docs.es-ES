@@ -3,28 +3,29 @@ title: 'ChartFill: setSolidColor'
 description: Establece el formato de relleno de un elemento de gráfico en un color uniforme.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: ffd5d4f954fea72963c7d443a5df6de12f1dc516
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e5c0a120becc53b6b7d06fdc1e5c43130b5a414b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854645"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975921"
 ---
-# <a name="chartfill-setsolidcolor"></a><span data-ttu-id="c7421-103">ChartFill: setSolidColor</span><span class="sxs-lookup"><span data-stu-id="c7421-103">ChartFill: setSolidColor</span></span>
+# <a name="chartfill-setsolidcolor"></a><span data-ttu-id="0e976-103">ChartFill: setSolidColor</span><span class="sxs-lookup"><span data-stu-id="0e976-103">ChartFill: setSolidColor</span></span>
 
-> <span data-ttu-id="c7421-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="c7421-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c7421-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="c7421-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0e976-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="0e976-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0e976-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="0e976-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="c7421-106">Establece el formato de relleno de un elemento de gráfico en un color uniforme.</span><span class="sxs-lookup"><span data-stu-id="c7421-106">Sets the fill formatting of a chart element to a uniform color.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c7421-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="c7421-107">Permissions</span></span>
-<span data-ttu-id="c7421-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7421-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0e976-106">Establece el formato de relleno de un elemento de gráfico en un color uniforme.</span><span class="sxs-lookup"><span data-stu-id="0e976-106">Sets the fill formatting of a chart element to a uniform color.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0e976-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="0e976-107">Permissions</span></span>
+<span data-ttu-id="0e976-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0e976-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c7421-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="c7421-110">Permission type</span></span>      | <span data-ttu-id="c7421-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="c7421-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0e976-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="0e976-110">Permission type</span></span>      | <span data-ttu-id="0e976-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="0e976-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c7421-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="c7421-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c7421-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c7421-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c7421-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c7421-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7421-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c7421-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c7421-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="c7421-116">Application</span></span> | <span data-ttu-id="c7421-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="c7421-117">Not supported.</span></span> |
+|<span data-ttu-id="0e976-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="0e976-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0e976-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0e976-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0e976-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0e976-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0e976-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0e976-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0e976-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="0e976-116">Application</span></span> | <span data-ttu-id="0e976-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0e976-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c7421-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="c7421-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0e976-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="0e976-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
@@ -32,27 +33,27 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidCol
 POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c7421-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="c7421-119">Request headers</span></span>
-| <span data-ttu-id="c7421-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="c7421-120">Name</span></span>       | <span data-ttu-id="c7421-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="c7421-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0e976-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="0e976-119">Request headers</span></span>
+| <span data-ttu-id="0e976-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="0e976-120">Name</span></span>       | <span data-ttu-id="0e976-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="0e976-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c7421-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c7421-122">Authorization</span></span>  | <span data-ttu-id="c7421-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c7421-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c7421-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c7421-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c7421-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="c7421-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="0e976-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0e976-122">Authorization</span></span>  | <span data-ttu-id="0e976-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="0e976-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0e976-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="0e976-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="0e976-p104">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="0e976-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c7421-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="c7421-128">Request body</span></span>
-<span data-ttu-id="c7421-129">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="c7421-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0e976-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="0e976-128">Request body</span></span>
+<span data-ttu-id="0e976-129">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="0e976-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c7421-130">Parámetro</span><span class="sxs-lookup"><span data-stu-id="c7421-130">Parameter</span></span>    | <span data-ttu-id="c7421-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="c7421-131">Type</span></span>   |<span data-ttu-id="c7421-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="c7421-132">Description</span></span>|
+| <span data-ttu-id="0e976-130">Parámetro</span><span class="sxs-lookup"><span data-stu-id="0e976-130">Parameter</span></span>    | <span data-ttu-id="0e976-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="0e976-131">Type</span></span>   |<span data-ttu-id="0e976-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="0e976-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c7421-133">color</span><span class="sxs-lookup"><span data-stu-id="c7421-133">color</span></span>|<span data-ttu-id="c7421-134">string</span><span class="sxs-lookup"><span data-stu-id="c7421-134">string</span></span>|<span data-ttu-id="c7421-135">Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").</span><span class="sxs-lookup"><span data-stu-id="c7421-135">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
+|<span data-ttu-id="0e976-133">color</span><span class="sxs-lookup"><span data-stu-id="0e976-133">color</span></span>|<span data-ttu-id="0e976-134">string</span><span class="sxs-lookup"><span data-stu-id="0e976-134">string</span></span>|<span data-ttu-id="0e976-135">Código de color HTML que representa el color de la línea de borde con el formato #RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").</span><span class="sxs-lookup"><span data-stu-id="0e976-135">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c7421-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c7421-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0e976-136">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0e976-136">Response</span></span>
 
-<span data-ttu-id="c7421-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c7421-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0e976-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="0e976-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c7421-139">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c7421-139">Example</span></span>
-<span data-ttu-id="c7421-140">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="c7421-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="c7421-141">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c7421-141">Request</span></span>
-<span data-ttu-id="c7421-142">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c7421-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0e976-139">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0e976-139">Example</span></span>
+<span data-ttu-id="0e976-140">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="0e976-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="0e976-141">Solicitud</span><span class="sxs-lookup"><span data-stu-id="0e976-141">Request</span></span>
+<span data-ttu-id="0e976-142">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="0e976-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartfill_setsolidcolor"
@@ -67,8 +68,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c7421-143">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c7421-143">Response</span></span>
-<span data-ttu-id="c7421-144">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c7421-144">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="0e976-143">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0e976-143">Response</span></span>
+<span data-ttu-id="0e976-144">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="0e976-144">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
