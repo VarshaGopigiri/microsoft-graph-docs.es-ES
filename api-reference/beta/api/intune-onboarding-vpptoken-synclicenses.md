@@ -3,30 +3,31 @@ title: Acción syncLicenses
 description: Sincroniza las licencias asociadas con un determinado appleVolumePurchaseProgramToken.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d62923b8385ffa090b4a435543eac9e425d7f471
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4567986ffc69df5badf1e97e843ea1db36f420bf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857172"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933291"
 ---
-# <a name="synclicenses-action"></a><span data-ttu-id="6cac7-103">Acción syncLicenses</span><span class="sxs-lookup"><span data-stu-id="6cac7-103">syncLicenses action</span></span>
+# <a name="synclicenses-action"></a><span data-ttu-id="7a59d-103">Acción syncLicenses</span><span class="sxs-lookup"><span data-stu-id="7a59d-103">syncLicenses action</span></span>
 
-> <span data-ttu-id="6cac7-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="6cac7-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6cac7-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="6cac7-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7a59d-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="7a59d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7a59d-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="7a59d-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="6cac7-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="6cac7-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="7a59d-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="7a59d-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6cac7-107">Sincroniza las licencias asociadas con un appleVolumePurchaseProgramToken específico.</span><span class="sxs-lookup"><span data-stu-id="6cac7-107">Syncs licenses associated with a specific appleVolumePurchaseProgramToken</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6cac7-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="6cac7-108">Prerequisites</span></span>
-<span data-ttu-id="6cac7-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6cac7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7a59d-107">Sincroniza las licencias asociadas con un appleVolumePurchaseProgramToken específico.</span><span class="sxs-lookup"><span data-stu-id="7a59d-107">Syncs licenses associated with a specific appleVolumePurchaseProgramToken</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7a59d-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="7a59d-108">Prerequisites</span></span>
+<span data-ttu-id="7a59d-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7a59d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6cac7-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6cac7-111">Permission type</span></span>|<span data-ttu-id="6cac7-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6cac7-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7a59d-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="7a59d-111">Permission type</span></span>|<span data-ttu-id="7a59d-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="7a59d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6cac7-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6cac7-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6cac7-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6cac7-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="6cac7-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6cac7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6cac7-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6cac7-116">Not supported.</span></span>|
-|<span data-ttu-id="6cac7-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6cac7-117">Application</span></span>|<span data-ttu-id="6cac7-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6cac7-118">Not supported.</span></span>|
+|<span data-ttu-id="7a59d-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="7a59d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7a59d-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a59d-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7a59d-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7a59d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7a59d-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="7a59d-116">Not supported.</span></span>|
+|<span data-ttu-id="7a59d-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="7a59d-117">Application</span></span>|<span data-ttu-id="7a59d-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="7a59d-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6cac7-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6cac7-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7a59d-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="7a59d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,27 +36,27 @@ ms.locfileid: "27857172"
 POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6cac7-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6cac7-120">Request headers</span></span>
-|<span data-ttu-id="6cac7-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="6cac7-121">Header</span></span>|<span data-ttu-id="6cac7-122">Valor</span><span class="sxs-lookup"><span data-stu-id="6cac7-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7a59d-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="7a59d-120">Request headers</span></span>
+|<span data-ttu-id="7a59d-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="7a59d-121">Header</span></span>|<span data-ttu-id="7a59d-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7a59d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6cac7-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="6cac7-123">Authorization</span></span>|<span data-ttu-id="6cac7-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="6cac7-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6cac7-125">Accept</span><span class="sxs-lookup"><span data-stu-id="6cac7-125">Accept</span></span>|<span data-ttu-id="6cac7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6cac7-126">application/json</span></span>|
+|<span data-ttu-id="7a59d-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="7a59d-123">Authorization</span></span>|<span data-ttu-id="7a59d-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="7a59d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7a59d-125">Accept</span><span class="sxs-lookup"><span data-stu-id="7a59d-125">Accept</span></span>|<span data-ttu-id="7a59d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7a59d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6cac7-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6cac7-127">Request body</span></span>
-<span data-ttu-id="6cac7-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="6cac7-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7a59d-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="7a59d-127">Request body</span></span>
+<span data-ttu-id="7a59d-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="7a59d-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6cac7-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6cac7-129">Response</span></span>
-<span data-ttu-id="6cac7-130">Si se ejecuta correctamente, esta acción devuelve un código de respuesta `200 OK` y un [vppToken](../resources/intune-onboarding-vpptoken.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6cac7-130">If successful, this action returns a `200 OK` response code and a [vppToken](../resources/intune-onboarding-vpptoken.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7a59d-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7a59d-129">Response</span></span>
+<span data-ttu-id="7a59d-130">Si se ejecuta correctamente, esta acción devuelve un código de respuesta `200 OK` y un [vppToken](../resources/intune-onboarding-vpptoken.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="7a59d-130">If successful, this action returns a `200 OK` response code and a [vppToken](../resources/intune-onboarding-vpptoken.md) in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6cac7-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6cac7-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6cac7-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6cac7-132">Request</span></span>
-<span data-ttu-id="6cac7-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6cac7-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7a59d-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="7a59d-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="7a59d-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="7a59d-132">Request</span></span>
+<span data-ttu-id="7a59d-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="7a59d-133">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
-### <a name="response"></a><span data-ttu-id="6cac7-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6cac7-134">Response</span></span>
-<span data-ttu-id="6cac7-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="6cac7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7a59d-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="7a59d-134">Response</span></span>
+<span data-ttu-id="7a59d-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="7a59d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

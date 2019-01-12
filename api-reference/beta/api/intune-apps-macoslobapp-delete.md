@@ -3,30 +3,31 @@ title: Eliminar macOSLobApp
 description: Elimina un macOSLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6bea41a75fed5cadbbc3b979324628b034f58ded
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c90a4b1707f0102c52afd34bec2a134e8061da1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934579"
 ---
-# <a name="delete-macoslobapp"></a><span data-ttu-id="26bbe-103">Eliminar macOSLobApp</span><span class="sxs-lookup"><span data-stu-id="26bbe-103">Delete macOSLobApp</span></span>
+# <a name="delete-macoslobapp"></a><span data-ttu-id="50b4c-103">Eliminar macOSLobApp</span><span class="sxs-lookup"><span data-stu-id="50b4c-103">Delete macOSLobApp</span></span>
 
-> <span data-ttu-id="26bbe-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="26bbe-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="26bbe-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="26bbe-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="50b4c-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="50b4c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="50b4c-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="50b4c-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="26bbe-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="26bbe-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="50b4c-106">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="50b4c-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="26bbe-107">Elimina un [macOSLobApp](../resources/intune-apps-macoslobapp.md).</span><span class="sxs-lookup"><span data-stu-id="26bbe-107">Deletes a [macOSLobApp](../resources/intune-apps-macoslobapp.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="26bbe-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="26bbe-108">Prerequisites</span></span>
-<span data-ttu-id="26bbe-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="26bbe-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="50b4c-107">Elimina un [macOSLobApp](../resources/intune-apps-macoslobapp.md).</span><span class="sxs-lookup"><span data-stu-id="50b4c-107">Deletes a [macOSLobApp](../resources/intune-apps-macoslobapp.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="50b4c-108">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="50b4c-108">Prerequisites</span></span>
+<span data-ttu-id="50b4c-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50b4c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="26bbe-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="26bbe-111">Permission type</span></span>|<span data-ttu-id="26bbe-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="26bbe-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="50b4c-111">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="50b4c-111">Permission type</span></span>|<span data-ttu-id="50b4c-112">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="50b4c-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="26bbe-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="26bbe-113">Delegated (work or school account)</span></span>|<span data-ttu-id="26bbe-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26bbe-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="26bbe-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="26bbe-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="26bbe-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="26bbe-116">Not supported.</span></span>|
-|<span data-ttu-id="26bbe-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="26bbe-117">Application</span></span>|<span data-ttu-id="26bbe-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="26bbe-118">Not supported.</span></span>|
+|<span data-ttu-id="50b4c-113">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="50b4c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="50b4c-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50b4c-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="50b4c-115">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="50b4c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="50b4c-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="50b4c-116">Not supported.</span></span>|
+|<span data-ttu-id="50b4c-117">Aplicación</span><span class="sxs-lookup"><span data-stu-id="50b4c-117">Application</span></span>|<span data-ttu-id="50b4c-118">No admitida.</span><span class="sxs-lookup"><span data-stu-id="50b4c-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="26bbe-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="26bbe-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50b4c-119">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="50b4c-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,27 +38,27 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstal
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="26bbe-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="26bbe-120">Request headers</span></span>
-|<span data-ttu-id="26bbe-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="26bbe-121">Header</span></span>|<span data-ttu-id="26bbe-122">Valor</span><span class="sxs-lookup"><span data-stu-id="26bbe-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="50b4c-120">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="50b4c-120">Request headers</span></span>
+|<span data-ttu-id="50b4c-121">Encabezado</span><span class="sxs-lookup"><span data-stu-id="50b4c-121">Header</span></span>|<span data-ttu-id="50b4c-122">Valor</span><span class="sxs-lookup"><span data-stu-id="50b4c-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="26bbe-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="26bbe-123">Authorization</span></span>|<span data-ttu-id="26bbe-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="26bbe-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="26bbe-125">Accept</span><span class="sxs-lookup"><span data-stu-id="26bbe-125">Accept</span></span>|<span data-ttu-id="26bbe-126">application/json</span><span class="sxs-lookup"><span data-stu-id="26bbe-126">application/json</span></span>|
+|<span data-ttu-id="50b4c-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="50b4c-123">Authorization</span></span>|<span data-ttu-id="50b4c-124">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="50b4c-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="50b4c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="50b4c-125">Accept</span></span>|<span data-ttu-id="50b4c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="50b4c-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="26bbe-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="26bbe-127">Request body</span></span>
-<span data-ttu-id="26bbe-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="26bbe-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="50b4c-127">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="50b4c-127">Request body</span></span>
+<span data-ttu-id="50b4c-128">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="50b4c-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="26bbe-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="26bbe-129">Response</span></span>
-<span data-ttu-id="26bbe-130">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="26bbe-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="50b4c-129">Respuesta</span><span class="sxs-lookup"><span data-stu-id="50b4c-129">Response</span></span>
+<span data-ttu-id="50b4c-130">Si se ejecuta correctamente, este método devuelve un código de respuesta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="50b4c-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="26bbe-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="26bbe-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="26bbe-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="26bbe-132">Request</span></span>
-<span data-ttu-id="26bbe-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="26bbe-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="50b4c-131">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="50b4c-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="50b4c-132">Solicitud</span><span class="sxs-lookup"><span data-stu-id="50b4c-132">Request</span></span>
+<span data-ttu-id="50b4c-133">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="50b4c-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a><span data-ttu-id="26bbe-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="26bbe-134">Response</span></span>
-<span data-ttu-id="26bbe-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="26bbe-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="50b4c-134">Respuesta</span><span class="sxs-lookup"><span data-stu-id="50b4c-134">Response</span></span>
+<span data-ttu-id="50b4c-p103">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="50b4c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
