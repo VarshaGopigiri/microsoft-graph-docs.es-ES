@@ -2,12 +2,14 @@
 title: 'bloc de notas: copyNotebook'
 description: Copia un bloc de notas a la carpeta Blocs de notas de la biblioteca de documentos de destino. Se crea la carpeta si no existe.
 localization_priority: Normal
-ms.openlocfilehash: 927cdd95a1cf39b27ac18faeeae11ccc56cfff6f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: aa684dcaa01f2a8c16be1c75a7b973ee8adb8eea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812771"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972932"
 ---
 # <a name="notebook-copynotebook"></a>bloc de notas: copyNotebook
 Copia un bloc de notas a la carpeta Blocs de notas de la biblioteca de documentos de destino. Se crea la carpeta si no existe.
@@ -33,7 +35,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -41,8 +43,8 @@ En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parám
 
 | Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|groupId|Cadena|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
-|renameAs|Cadena|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
+|groupId|String|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
+|renameAs|String|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
 
 ## <a name="response"></a>Respuesta
 

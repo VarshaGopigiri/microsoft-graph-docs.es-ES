@@ -3,12 +3,13 @@ title: Actualizar embeddedSIMActivationCodePoolAssignment
 description: Actualizar las propiedades de un objeto embeddedSIMActivationCodePoolAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b893ac21367ba96f66c4a2ba9ee20240225fcea1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5dca1f71f31cd793a0611165026330863dad29be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975382"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Actualizar embeddedSIMActivationCodePoolAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único para la asignación de grupo de código de activación SIM incrustada. Valor asignado al crear generada por el sistema.|
+|id|String|Identificador único para la asignación de grupo de código de activación SIM incrustada. Valor asignado al crear generada por el sistema.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|El tipo de grupos de destino mediante el grupo de código de activación de SIM incrustado.|
 
 

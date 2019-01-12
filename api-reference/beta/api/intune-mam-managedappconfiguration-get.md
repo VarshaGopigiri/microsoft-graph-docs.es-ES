@@ -3,12 +3,13 @@ title: Obtener managedAppConfiguration
 description: Lea las propiedades y las relaciones del objeto managedAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a572e0cac7870fafcddabf6704b3053b7a862cf2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 78c174d2e9ae525d6ef6d2cda116501b831dd44c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840974"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965470"
 ---
 # <a name="get-managedappconfiguration"></a>Obtener managedAppConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

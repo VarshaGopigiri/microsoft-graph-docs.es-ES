@@ -3,12 +3,13 @@ title: Eliminar evento
 description: Elimina un objeto de evento.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: e120910aa35aea0d7b8e74a356204e6aea2509d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 5973a3002b15531993e9bd2bcc1cd1615f3cdd02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813387"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965736"
 ---
 # <a name="delete-event"></a>Eliminar evento
 
@@ -35,7 +36,7 @@ DELETE /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

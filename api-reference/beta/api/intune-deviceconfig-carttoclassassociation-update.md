@@ -3,12 +3,13 @@ title: Actualizar cartToClassAssociation
 description: Actualizar las propiedades de un objeto cartToClassAssociation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da569d1452cff24b5e93d92eb96cbd5047fe6e0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a140aa3e14895cf0fc7dd5ca2be54afdb1d86052
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967682"
 ---
 # <a name="update-carttoclassassociation"></a>Actualizar cartToClassAssociation
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,12 +49,12 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
 |version|Int32|Versión de la CartToClassAssociation.|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
-|descripción|Cadena|Descripción de la CartToClassAssociation proporcionada por el administrador.|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|descripción|String|Descripción de la CartToClassAssociation proporcionada por el administrador.|
 |deviceCartIds|Colección String|Identificadores de carros de dispositivo que se asociará con clases.|
 |classroomIds|Colección String|Identificadores de aulas que se asociará con carros de dispositivo.|
 

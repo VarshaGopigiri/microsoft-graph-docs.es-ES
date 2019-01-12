@@ -3,12 +3,13 @@ title: tipo de enumeración userPfxPaddingScheme
 description: Valores admitidos para el esquema de relleno utilizado por el proveedor de cifrado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c588b31e4bfe6f78dbc09c199b56cabdef72198
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b381b23aa5aaf500c14eded8cb65ac7c0948d10c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889659"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965799"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>tipo de enumeración userPfxPaddingScheme
 
@@ -18,7 +19,7 @@ ms.locfileid: "27889659"
 
 Valores admitidos para el esquema de relleno utilizado por el proveedor de cifrado.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|Todavía no documentado|
 |PKCS1|1|Todavía no documentado|

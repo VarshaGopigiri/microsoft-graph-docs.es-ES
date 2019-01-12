@@ -3,12 +3,13 @@ title: Create Contact
 description: Agrega un contacto a la carpeta de contactos raíz o al extremo de contactos de otra carpeta de contactos.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 7f412310bac1f8767fdb62857d050ebcdc236fc5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b443a522d4f821861191bcbe7deeff2b6063b236
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967899"
 ---
 # <a name="create-contact"></a>Create Contact
 
@@ -165,7 +166,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](/graph/extensibility-overview)
 - [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](/graph/extensibility-open-users)

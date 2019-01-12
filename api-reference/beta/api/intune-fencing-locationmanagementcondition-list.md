@@ -3,12 +3,13 @@ title: Lista locationManagementConditions
 description: Propiedades de la lista y relaciones de los objetos locationManagementCondition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a7be9788aeab7a4969fe5e627d643760f6b21177
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0a5f02a8e3329b2b903d378eb609d5cc0e94e784
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817524"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969873"
 ---
 # <a name="list-locationmanagementconditions"></a>Lista locationManagementConditions
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

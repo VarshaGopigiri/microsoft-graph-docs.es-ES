@@ -3,12 +3,13 @@ title: 'event: accept'
 description: Acepte el evento especificado en un calendario del usuario.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 0ff048863f1e2077967c995e7e8806f6df7716ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5e89aa5cd934805fed9e8b08f93fed6d4e7cfe8d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814885"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972568"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -44,7 +45,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

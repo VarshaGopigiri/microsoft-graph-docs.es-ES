@@ -2,12 +2,13 @@
 title: Enumerar schemaExtensions
 description: 'Obtener una lista de objetos de schemaExtension creados por cualquier propietario en el inquilino actual (que puede ser de aplicaciones '
 localization_priority: Normal
-ms.openlocfilehash: bc8ac2ed0c96e112b5f5e47b9d84ecc16de7533b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 3949c73945f44857bbde2768ff9c79ec838063e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880034"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970300"
 ---
 # <a name="list-schemaextensions"></a>Enumerar schemaExtensions
 
@@ -87,7 +88,7 @@ Content-length: 274
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](/graph/extensibility-overview)
 - [Agregar datos personalizados a los grupos mediante extensiones de esquema](/graph/extensibility-schema-groups)

@@ -3,12 +3,13 @@ title: tipo de recurso depOnboardingSetting
 description: El depOnboardingSetting representa una instancia del servicio de Apple DEP que se va a onboarded a Intune. La instancia de servicio onboarded administra la utiliza para sincronizar datos entre Apple y Intune un Token de Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 56f49ce8635120b06344abe13376271a3eb0a796
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e4b45c4a14258fbe53e8cdfd8c5e83b8c858966b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970685"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso depOnboardingSetting
 
@@ -49,7 +50,7 @@ El depOnboardingSetting representa una instancia del servicio de Apple DEP que s
 |dataSharingConsentGranted|Booleano|Concede de consentimiento para uso compartido con Apple Dep servicio de datos|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|De forma predeterminada iOS perfil de inscripción|
 |defaultMacOsEnrollmentProfile|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|Perfil predeterminado de inscripción Mac OS|

@@ -3,12 +3,13 @@ title: Obtener windows10EnterpriseModernAppManagementConfiguration
 description: Lea las propiedades y las relaciones del objeto windows10EnterpriseModernAppManagementConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8490a72cbd3c8094ec663c5c24fe1d95532a27b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 095cbe9c34d6ae3d2545926a51437316af88e0eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881883"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968088"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Obtener windows10EnterpriseModernAppManagementConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

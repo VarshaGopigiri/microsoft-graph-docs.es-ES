@@ -3,12 +3,13 @@ title: Enumerar miembros
 description: Recupera una lista de los usuarios que están asignados al rol de directorio.  Solo los usuarios se pueden asignar a un rol de directorio.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 3d7f0ee776646933743cd1fefb63eaa620ffe7ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ad27b5d4a56bee9e149b9f6de87271a86e9945e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824811"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970811"
 ---
 # <a name="list-members"></a>Enumerar miembros
 
@@ -35,7 +36,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

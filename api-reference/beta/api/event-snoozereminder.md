@@ -3,12 +3,13 @@ title: 'event: snoozeReminder'
 description: Posponer un aviso para un evento en un calendario de usuario hasta una nueva hora.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 440b46b3cb2bebff8f3586e201a0503edcc59000
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 4197a231872341b7ba9c14057e32569b5c0f0c8e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966079"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 

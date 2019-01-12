@@ -3,12 +3,13 @@ title: Obtener educationAssignment
 description: " los profesores pueden ver todas las asignaciones de una clase."
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: f10b9e422e99bde6012de75f2c6bb445abc178ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 66279d72952a561a5e98be00ae268ca58c5dcc92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813492"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976404"
 ---
 # <a name="get-educationassignment"></a>Obtener educationAssignment
 

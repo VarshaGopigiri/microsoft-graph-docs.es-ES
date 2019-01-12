@@ -3,12 +3,13 @@ title: Actualizar sideLoadingKey
 description: Actualizar las propiedades de un objeto sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f4a6348df539924bdccbf3cacf8411442f877eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 116034afff02ac41647d781bbd85ec6f8dcaeec4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885634"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969936"
 ---
 # <a name="update-sideloadingkey"></a>Actualizar sideLoadingKey
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,12 +49,12 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Lado cargar clave identificador único.|
+|id|String|Lado cargar clave identificador único.|
 |valor|String|Valor de clave de carga del lado, es valor de 5 x 5, separados por hiphens.|
-|displayName|Cadena|Lado carga de clave de nombre que se muestra a la ITPro Admins.|
-|descripción|Cadena|Clave de carga de descripción en el que se muestra a la ITPro Admins..|
+|displayName|String|Lado carga de clave de nombre que se muestra a la ITPro Admins.|
+|descripción|String|Clave de carga de descripción en el que se muestra a la ITPro Admins..|
 |totalActivation|Int32|Lado carga Total activación de la clave que se muestra a la ITPro Admins.|
-|lastUpdatedDateTime|Cadena|Lado cargar clave última actualizado fecha que se muestra a la ITPro Admins.|
+|lastUpdatedDateTime|String|Lado cargar clave última actualizado fecha que se muestra a la ITPro Admins.|
 
 
 

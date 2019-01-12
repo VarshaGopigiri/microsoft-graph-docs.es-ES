@@ -3,12 +3,13 @@ title: 'educationSynchronizationProfile: uploadUrl'
 description: Recuperar una firma acceso compartido (SAS) para cargar archivos de origen para el almacenamiento de Azure blob para un perfil de sincronización de datos de school específicos en el inquilino. El token de SAS tiene una validez de una hora.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 2f6b10bda218bafbe18698defed138c39a45cc7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: e0119a583ea1cdc753b44a984af84a42173a4295
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894148"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969915"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -38,7 +39,7 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio.  |
+| Authorization  | string  | {token} de portador. Obligatorio.  |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

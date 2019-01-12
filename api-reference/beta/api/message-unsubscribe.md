@@ -3,12 +3,13 @@ title: 'mensaje: cancelar su suscripción'
 description: Envía una solicitud de correo electrónico en nombre del usuario que ha iniciado sesión para cancelar la suscripción a una lista de distribución de correo electrónico. Utiliza la información de la `List-Unsubscribe` encabezado.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 772c01c0522becc737d07d6e842c610a5abecc0d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877689"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968165"
 ---
 # <a name="message-unsubscribe"></a>mensaje: cancelar su suscripción
 
@@ -43,7 +44,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

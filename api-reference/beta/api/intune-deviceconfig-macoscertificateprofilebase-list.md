@@ -3,12 +3,13 @@ title: Lista macOSCertificateProfileBases
 description: Propiedades de la lista y relaciones de los objetos macOSCertificateProfileBase.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef249d6d59793e434b7734a71344de536c6dd72b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5943d0975c12b8879e651b3b9d45ca88230a86a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807080"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976292"
 ---
 # <a name="list-macoscertificateprofilebases"></a>Lista macOSCertificateProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

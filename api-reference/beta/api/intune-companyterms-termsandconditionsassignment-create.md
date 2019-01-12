@@ -3,12 +3,13 @@ title: Crear termsAndConditionsAssignment
 description: Cree un objeto termsAndConditionsAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60163cc1263a55232d52d577621b0749b95d3755
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 704aa0a3f86c3b65b3f2882af21010c46c02f1b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859888"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976138"
 ---
 # <a name="create-termsandconditionsassignment"></a>Crear termsAndConditionsAssignment
 
@@ -38,7 +39,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único de la entidad.|
+|id|String|Identificador único de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
 
 

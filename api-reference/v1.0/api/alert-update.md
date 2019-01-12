@@ -2,12 +2,14 @@
 title: Update alert
 description: Actualizar una propiedad modificable **alerta** dentro de cualquier solución integrada para mantener sincronizados estado de la alerta y las asignaciones entre las soluciones. Este método actualiza cualquier solución que tiene un registro de la alerta de que se hace referencia a identificador.
 localization_priority: Normal
-ms.openlocfilehash: dc5c1197e344aa181d827acc654e24bd5a048a06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 7b218daa56f7648bc888bbc0cd25619b22799325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858096"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966037"
 ---
 # <a name="update-alert"></a>Update alert
 
@@ -43,7 +45,7 @@ PATCH /security/alerts/{alert_id}
 
 En el cuerpo de la solicitud, proporcionar una representación JSON de los valores para los campos relevantes que deben actualizarse. El cuerpo **debe** contener el `vendorInformation` propiedad con válido `provider` y `vendor` campos. En la siguiente tabla se enumera los campos que se pueden actualizar para una alerta. Los valores para las propiedades existentes que no se incluyen en el cuerpo de la solicitud no cambiará. Para obtener el mejor rendimiento, no incluya valores existentes que no hayan cambiado.
 
-| Propiedad   | Tipo |Description|
+| Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
 |assignedTo|Cadena|Nombre del analista de la alerta se asigna a para la evaluación de errores, investigación o corrección.|
 |closedDateTime|DateTimeOffset|Hora a la que se ha cerrado la alerta. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, medianoche en la zona horaria UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`.|

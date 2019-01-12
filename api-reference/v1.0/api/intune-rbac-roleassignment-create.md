@@ -3,12 +3,13 @@ title: Crear roleAssignment
 description: Cree un objeto roleAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 769deaffbb153fe54bfe2e32c936868f9480efc6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0cb60cad1785de83c44772d6f1cbc00c9129861f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871032"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973786"
 ---
 # <a name="create-roleassignment"></a>Crear roleAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -46,9 +47,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente.|
-|displayName|Cadena|El nombre descriptivo o para mostrar de la asignación de roles.|
-|descripción|Cadena|Descripción de la asignación de roles.|
+|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente.|
+|displayName|String|El nombre descriptivo o para mostrar de la asignación de roles.|
+|descripción|String|Descripción de la asignación de roles.|
 |resourceScopes|Colección string|Lista de identificadores de grupos de seguridad de miembros del ámbito de roles.  Estos son los identificadores de Azure Active Directory.|
 
 

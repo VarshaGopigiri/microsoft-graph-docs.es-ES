@@ -3,12 +3,13 @@ title: tipo de recurso teamMessagingSettings
 description: La configuración de mensajería y menciones en el equipo.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: df80fbb828a400e736b2e8c3b73f949fe6bfd1ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: f8b643b752ab130433153e7a238a64d2960d6705
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967963"
 ---
 # <a name="teammessagingsettings-resource-type"></a>tipo de recurso teamMessagingSettings
 
@@ -17,7 +18,7 @@ ms.locfileid: "27878382"
 La configuración de mensajería y menciones en el [equipo](team.md).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |allowUserEditMessages|Booleano|Si se establece en true, los usuarios puede editar sus mensajes.|
 |allowUserDeleteMessages|Booleano|Si se establece en true, los usuarios puede eliminar sus mensajes.|

@@ -3,12 +3,13 @@ title: acción windowsPrivacyAccessControls
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8a9f91a84809b7b1f853360728704905cdde6457
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b79fc6e7c35f4338b602172bc0702498c762ec79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969866"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>acción windowsPrivacyAccessControls
 
@@ -48,7 +49,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |windowsPrivacyAccessControls|colección de [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|Todavía no documentado|
 

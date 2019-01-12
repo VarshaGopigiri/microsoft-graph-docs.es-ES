@@ -3,12 +3,13 @@ title: Tipo de recurso deviceCompliancePolicyAssignment
 description: Asignación de directivas de cumplimiento de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b1a22e2b78719083279dca09a37207b2a1caa57f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6a97fb0d420f2fbbcabcaceb80354c6640230273
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970922"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>Tipo de recurso deviceCompliancePolicyAssignment
 
@@ -27,7 +28,7 @@ Asignación de directivas de cumplimiento de dispositivos.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de la asignación de directivas de cumplimiento|
 
 ## <a name="relationships"></a>Relaciones

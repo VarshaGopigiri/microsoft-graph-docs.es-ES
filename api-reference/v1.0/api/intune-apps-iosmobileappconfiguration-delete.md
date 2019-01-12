@@ -3,12 +3,13 @@ title: Eliminar iosMobileAppConfiguration
 description: Elimina una iosMobileAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 68adc2e68c396d7a09f273717934e67676c6a742
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d48ceef4e3fefc5d2d9337d86ea3a31363e4503b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865168"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972470"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Eliminar iosMobileAppConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -2,12 +2,13 @@
 title: Suscripciones de lista
 description: Recuperar las propiedades y relaciones de suscripciones de webhook, según el identificador de la aplicación, el usuario y el rol del usuario con un inquilino.
 localization_priority: Priority
-ms.openlocfilehash: 663586cc769f04be631e1f3c1bdf86bc4f798022
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: c2e9446721f4390341c33f8b976893e4b1ab14be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972939"
 ---
 # <a name="list-subscriptions"></a>Suscripciones de lista
 
@@ -60,7 +61,7 @@ Este método no es compatible con los [Parámetros de consulta de OData](https:/
 
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

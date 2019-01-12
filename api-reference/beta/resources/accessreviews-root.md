@@ -2,12 +2,14 @@
 title: Revisa el acceso de Azure AD
 description: Puede usar AD Azure tener acceso a las revisiones para configurar revisiones de acceso única o recurrente para la certificación de derechos de acceso del usuario.
 localization_priority: Normal
-ms.openlocfilehash: 259a88bf95bfe0796e0ee46dd2d0a64c68831a64
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 24571e8d83d6d321ba2bf20d9beae9ba6487e286
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860791"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975354"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisa el acceso de Azure AD
 
@@ -58,7 +60,7 @@ Tenga en cuenta que la característica de revisiones de access, incluida la API,
 |[Lista programControlTypes](../api/programcontroltype-list.md) | colección de [programControlType](programcontroltype.md)| Lista de tipos de control de programa. |
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Revisa cómo un administrador puede administrar el acceso de usuarios con acceso de Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
 - [Revisa cómo un administrador puede administrar el acceso de invitado con acceso de Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)

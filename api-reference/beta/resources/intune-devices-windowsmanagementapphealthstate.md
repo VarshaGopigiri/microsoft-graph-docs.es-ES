@@ -3,12 +3,13 @@ title: tipo de recurso windowsManagementAppHealthState
 description: Entidad de estado de mantenimiento de aplicación de Windows management.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 23381aed47ade8f42937f6bc48cfff33b36d1fa7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8cf679cf1a5ac86c47354db2fc9f800647d309c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875302"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976474"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>tipo de recurso windowsManagementAppHealthState
 
@@ -29,12 +30,12 @@ Entidad de estado de mantenimiento de aplicación de Windows management.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único para el estado de mantenimiento de aplicación de administración de Windows|
+|id|String|Identificador único para el estado de mantenimiento de aplicación de administración de Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Estado de mantenimiento de aplicación de administración de Windows. Los valores posibles son: `unknown`, `healthy` y `unhealthy`.|
-|installedVersion|Cadena|La versión instalada de aplicación de administración de Windows.|
+|installedVersion|String|La versión instalada de aplicación de administración de Windows.|
 |lastCheckInDateTime|DateTimeOffset|Aplicación de administración de Windows última hora de protección.|
-|deviceName|Cadena|Nombre del dispositivo con Windows está instalada la aplicación de administración.|
-|deviceOSVersion|Cadena|Versión de sistema operativo de Windows 10 del dispositivo con Windows está instalada la aplicación de administración.|
+|deviceName|String|Nombre del dispositivo con Windows está instalada la aplicación de administración.|
+|deviceOSVersion|String|Versión de sistema operativo de Windows 10 del dispositivo con Windows está instalada la aplicación de administración.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

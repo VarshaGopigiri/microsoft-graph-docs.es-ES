@@ -3,12 +3,13 @@ title: Actualizar windows10EnterpriseModernAppManagementConfiguration
 description: Actualice las propiedades de un objeto windows10EnterpriseModernAppManagementConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5a6e545609c6b2e102b959d3d605d1d57dd3b609
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af4ec9fedd5e2168ecc851af1c86cc62254e9bc6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969789"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>Actualizar windows10EnterpriseModernAppManagementConfiguration
 

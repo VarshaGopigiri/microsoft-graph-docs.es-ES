@@ -2,12 +2,14 @@
 title: 'TableRowCollection: add'
 description: 'Agrega filas al final de la tabla. Tenga en cuenta que la API puede aceptar varios datos de las filas con esta API. Adición de una fila a la vez, se podría producir una degradación del rendimiento. El enfoque recomendado sería por lotes las filas juntos en una única llamada en lugar de realizar la inserción de fila única. Para obtener mejores resultados, recopilar las filas que se va a insertar en el lado de la aplicación y llevar a cabo las filas único Agregar operación. Experimente con el número de filas para determinar el número de filas que se use en la llamada a la API único ideal. '
 localization_priority: Normal
-ms.openlocfilehash: 2b9f1858f77c8c6378f7fc189144ab4c9062d562
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 45126e74b8b4a242481b7cba3ca8d2664c48cc7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969691"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 

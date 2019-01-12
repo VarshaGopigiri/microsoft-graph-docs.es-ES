@@ -2,12 +2,14 @@
 title: Grupos de lista dispositivos transitivos
 description: Obtener los grupos a los que el dispositivo es un miembro de. Esta solicitud de API es transitiva y también devolverá todos los grupos que el dispositivo es un miembro anidado de.
 localization_priority: Normal
-ms.openlocfilehash: c15080fa3af336ec0a2bd14f0dd7812719bff52a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4fe6d404c16b592be7aa931e294a3229355e9ab0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874973"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966359"
 ---
 # <a name="list-device-transitive-groups"></a>Grupos de lista dispositivos transitivos
 

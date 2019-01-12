@@ -2,12 +2,14 @@
 title: tipo de recurso deviceDetail
 description: Indica los detalles del dispositivo asociados con un dispositivo utilizado para iniciar sesión. Incluye información como el explorador del dispositivo y la información del sistema operativo, si el dispositivo es Azure AD administrado.
 localization_priority: Normal
-ms.openlocfilehash: ca4679a8c484b6dc5b36ef39d3d6d039537cbdbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 18d55e397cf6c892cd37aea930d446c630017a92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884843"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971364"
 ---
 # <a name="devicedetail-resource-type"></a>tipo de recurso deviceDetail
 Indica los detalles del dispositivo asociados con un dispositivo utilizado para iniciar sesión. Incluye información como el explorador del dispositivo y la información del sistema operativo, si el dispositivo es Azure AD administrado.
@@ -15,14 +17,14 @@ Indica los detalles del dispositivo asociados con un dispositivo utilizado para 
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|Explorador|Cadena|Indica la información del explorador del que se usa para iniciar sesión.|
-|deviceId|Cadena|Hace referencia a la UniqueID del dispositivo usado para iniciar sesión.|
-|displayName|Cadena|Hace referencia al nombre del dispositivo usado para iniciar sesión.|
+|Explorador|String|Indica la información del explorador del que se usa para iniciar sesión.|
+|deviceId|String|Hace referencia a la UniqueID del dispositivo usado para iniciar sesión.|
+|displayName|String|Hace referencia al nombre del dispositivo usado para iniciar sesión.|
 |isCompliant|Boolean|Indica si el dispositivo es compatible con o no.|
 |isManaged|Boolean|Indica si el dispositivo se administra o no.|
-|operatingSystem|Cadena|Indica el nombre del sistema operativo y versión que usa para iniciar sesión.|
+|operatingSystem|String|Indica el nombre del sistema operativo y versión que usa para iniciar sesión.|
 |trustType|String|Indica información de si el dispositivo que ha iniciado sesión está unido a dominio de área de trabajo se unió a, se unió a AzureAD. |
 
 ## <a name="json-representation"></a>Representación JSON

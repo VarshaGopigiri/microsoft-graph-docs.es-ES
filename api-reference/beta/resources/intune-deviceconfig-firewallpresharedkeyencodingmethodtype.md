@@ -3,12 +3,13 @@ title: tipo de enumeración firewallPreSharedKeyEncodingMethodType
 description: Valores posibles para firewallPreSharedKeyEncodingMethod
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2dd5eb58c4fe2e8729ab1adc4aa55ad0c701157f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 513a6c545fedc73add4e710ed784ef223d1f8539
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862156"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976355"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>tipo de enumeración firewallPreSharedKeyEncodingMethodType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27862156"
 
 Valores posibles para firewallPreSharedKeyEncodingMethod
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deviceDefault|0|No hay un valor configurado mediante Intune, invalidar el valor predeterminado de dispositivo configurado por el usuario|
 |none|1|No se ha codificado clave previamente compartida. En su lugar, se guarda en su formato de caracteres anchos|

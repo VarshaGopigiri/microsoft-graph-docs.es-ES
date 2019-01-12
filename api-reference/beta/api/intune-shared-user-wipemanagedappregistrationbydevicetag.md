@@ -3,12 +3,13 @@ title: acción wipeManagedAppRegistrationByDeviceTag
 description: Emite una operación de borrado en un registro de la aplicación con la etiqueta del dispositivo especificado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 68d3e2d2a356e23c4b83509c827aee4e18f72aac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f597a33dff637a87a4071dadf1a4f16a6e7ef461
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821843"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974073"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>acción wipeManagedAppRegistrationByDeviceTag
 
@@ -42,7 +43,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

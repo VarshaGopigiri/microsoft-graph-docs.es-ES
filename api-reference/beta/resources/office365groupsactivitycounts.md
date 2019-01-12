@@ -2,18 +2,19 @@
 title: tipo de recurso office365GroupsActivityCounts
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 87867071545a36f7aca1833a369f919317153bc6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 7e9f983d131d3b213689a48e10d8d23d3f99085b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874112"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968291"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>tipo de recurso office365GroupsActivityCounts
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad               | Tipo   | Description                              |
+| Propiedad               | Tipo   | Descripción                              |
 | :--------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate      | Fecha   | La fecha más reciente del contenido.          |
 | exchangeEmailsReceived | Int64  | El número de mensajes de correo electrónico recibidos por los buzones de grupo. |

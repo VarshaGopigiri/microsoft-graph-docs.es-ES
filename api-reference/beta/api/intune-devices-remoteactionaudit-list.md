@@ -3,12 +3,13 @@ title: Lista remoteActionAudits
 description: Propiedades de la lista y relaciones de los objetos remoteActionAudit.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6de4fdfd13e750fa06afa1436db1d4140152e312
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8124c5da95e01c1c0513e5f8ac88cd45d7943fd5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971175"
 ---
 # <a name="list-remoteactionaudits"></a>Lista remoteActionAudits
 

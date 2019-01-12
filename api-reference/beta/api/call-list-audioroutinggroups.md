@@ -3,12 +3,13 @@ title: Grupos de enrutamiento de audio de lista
 description: Recuperar una lista de objetos de **audioRoutingGroup** .
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 3db2e4c95d522985afa815da78d4f02e4fedf854
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 2df2095e8d76332e94a32f802be3f36239cd8988
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894435"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976243"
 ---
 # <a name="list-audio-routing-groups"></a>Grupos de enrutamiento de audio de lista
 

@@ -3,12 +3,13 @@ title: tipo de recurso compartido
 description: 'Una idea que representa los archivos compartidos con o por un usuario específico. Se admiten los siguientes archivos compartidos:'
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: 289523f836d7b8080f7317e4d11301c71314ba93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 2c3d91023e2d68704b54308dff9566673f71dfb0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880615"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973709"
 ---
 # <a name="shared-resource-type"></a>tipo de recurso compartido
 
@@ -31,7 +32,7 @@ Una idea que representa los archivos compartidos con o por un usuario específic
 
 | Propiedad              | Tipo                      | Descripción  |
 | -------------         |---------------            | -------------|
-| id                    | Cadena                    | Identificador único de la relación. Solo lectura.        |
+| id                    | String                    | Identificador único de la relación. Solo lectura.        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | Obtener información detallada sobre el elemento compartido. Solo lectura.        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propiedades que puede usar para visualizar el documento en su experiencia. Solo lectura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propiedades de la referencia del documento compartido, como la dirección url y el tipo de documento. Solo lectura       |

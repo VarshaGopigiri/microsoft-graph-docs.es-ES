@@ -3,12 +3,13 @@ title: tipo de recurso windowsVpnConfiguration
 description: Perfil de configuración de VPN de Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d3601515f62855df79d548c11db9d46438afdb68
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1f2f350044253bfcac4d9a527d6e888f8613d7a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976901"
 ---
 # <a name="windowsvpnconfiguration-resource-type"></a>tipo de recurso windowsVpnConfiguration
 
@@ -42,7 +43,7 @@ Hereda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigura
 |customXml|Binario|Comandos XML personalizados que configura la conexión VPN. (Matriz de bytes codificada UTF8)|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

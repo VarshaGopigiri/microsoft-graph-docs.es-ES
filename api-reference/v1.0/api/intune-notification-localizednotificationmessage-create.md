@@ -3,12 +3,13 @@ title: Crear localizedNotificationMessage
 description: Cree un objeto localizedNotificationMessage.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 10794b8f6a37a49650dd9e3dbd419b4ea1bf3f3f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd9b2568ccf80d2000271d597baf0a6ace6bf9ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811266"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968067"
 ---
 # <a name="create-localizednotificationmessage"></a>Crear localizedNotificationMessage
 

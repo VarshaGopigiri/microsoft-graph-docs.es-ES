@@ -3,12 +3,13 @@ title: acción revokeLicenses
 description: Revocar licencias asociadas con un appleVolumePurchaseProgramToken específico
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa439f6dd973b74ab1098cc73755897a55d018c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5817fabfc7a7b414b816c76e059d9cedd2243a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811749"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975438"
 ---
 # <a name="revokelicenses-action"></a>acción revokeLicenses
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |notifyManagedDevices|Booleano|Todavía no documentado|
 

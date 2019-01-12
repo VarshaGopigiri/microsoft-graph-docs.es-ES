@@ -3,12 +3,13 @@ title: tipo de enumeración subjectNameFormat
 description: Opciones de formato de nombre de sujeto.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 85a11e8690c360e405df2453229a039ea9f9b1dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 259af745567a0fc5de004f5a804d8bab00355f8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821339"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969593"
 ---
 # <a name="subjectnameformat-enum-type"></a>tipo de enumeración subjectNameFormat
 
@@ -18,7 +19,7 @@ ms.locfileid: "27821339"
 
 Opciones de formato de nombre de sujeto.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |commonName|0|Nombre común.|
 |commonNameIncludingEmail|1|Nombre común incluido el correo electrónico.|

@@ -3,12 +3,13 @@ title: tipo de recurso outOfBoxExperienceSettings
 description: Fuera de la experiencia del cuadro Configuración
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af276dd520df9ee3b257650e703813de355bed9a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 70f1fb573409a55dd1e586b8e88133c5535de894
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977293"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
 
@@ -18,7 +19,7 @@ ms.locfileid: "27882736"
 
 Fuera de la experiencia del cuadro Configuración
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |hidePrivacySettings|Booleano|Mostrar u ocultar opciones de privacidad para los usuarios|
 |hideEULA|Booleano|Mostrar u ocultar los términos de licencia para el usuario|

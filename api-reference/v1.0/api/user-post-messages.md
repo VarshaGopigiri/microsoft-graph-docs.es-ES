@@ -2,12 +2,14 @@
 title: Create Message
 description: Use esta API para crear un mensaje. Pueden crearse borradores en cualquier carpeta y, si quiere, actualizarlos antes de enviarlos. Para guardar en la carpeta Borradores, use el acceso directo /messages.
 localization_priority: Priority
-ms.openlocfilehash: 151c555e1195fcef243879c638fa36015395dc20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 295397e4c85e2096d69e7ba14432cc866b4094a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816236"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976145"
 ---
 # <a name="create-message"></a>Create Message
 
@@ -236,7 +238,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](/graph/extensibility-overview)
 - [Agregar datos personalizados a usuarios mediante extensiones abiertas (versión preliminar)](/graph/extensibility-open-users)

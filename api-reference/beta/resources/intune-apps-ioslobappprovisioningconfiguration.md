@@ -2,12 +2,14 @@
 title: tipo de recurso iosLobAppProvisioningConfiguration
 description: En este tema se ofrece descripciones de los métodos declarados, propiedades y relaciones expuestas por el recurso de configuración de aprovisionamiento de aplicaciones de Lob de IOS.
 localization_priority: Normal
-ms.openlocfilehash: fba0e89eb1caec8282dbd70fa71140bf9dff0ecd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 2d91508316ab0d164fbc2d4730e905112d82ba8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866398"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965610"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>tipo de recurso iosLobAppProvisioningConfiguration
 
@@ -29,18 +31,18 @@ En este tema se ofrece descripciones de los métodos declarados, propiedades y r
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |expirationDateTime|DateTimeOffset|Fecha de caducidad opcional de perfiles y la hora.|
-|payloadFileName|Cadena|Nombre de archivo de carga (*.mobileprovision | *.xml).|
+|payloadFileName|String|Nombre de archivo de carga (*.mobileprovision | *.xml).|
 |carga útil|Binario|Carga útil. (Matriz de bytes codificada UTF8)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md)|Las asignaciones de grupo asociado.|
 |asignaciones|colección de [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md)|Las asignaciones de grupo asociado para IosLobAppProvisioningConfiguration.|

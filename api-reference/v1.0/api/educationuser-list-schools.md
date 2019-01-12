@@ -3,12 +3,13 @@ title: Enumerar centros educativos
 description: Recupere una lista de centros educativos de un usuario.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 9124c827923d72c58e33b968a44050db33d1c2dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 0c0db5332cb5f7e3a48fcca802352c338f8ac4dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890919"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976768"
 ---
 # <a name="list-schools"></a>Enumerar centros educativos
 
