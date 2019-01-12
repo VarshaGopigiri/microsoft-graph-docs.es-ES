@@ -2,49 +2,51 @@
 title: 'group: removeFavorite'
 description: Quita el grupo de la lista de grupos favoritos del usuario actual. Solo es compatible con Grupos de Office 365.
 localization_priority: Normal
-ms.openlocfilehash: 7299c89bc95ce267adf0149cbf3ff3f76c3a52ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 9ed755add4771b062d004aaa35c55b9afd23a390
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951022"
 ---
-# <a name="group-removefavorite"></a><span data-ttu-id="97981-104">group: removeFavorite</span><span class="sxs-lookup"><span data-stu-id="97981-104">group: removeFavorite</span></span>
+# <a name="group-removefavorite"></a><span data-ttu-id="ab313-104">group: removeFavorite</span><span class="sxs-lookup"><span data-stu-id="ab313-104">group: removeFavorite</span></span>
 
-> <span data-ttu-id="97981-105">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="97981-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="97981-106">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="97981-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ab313-105">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="ab313-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ab313-106">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="ab313-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="97981-p103">Quita el grupo de la lista de grupos favoritos del usuario actual. Solo es compatible con Grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="97981-p103">Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.</span></span>
+<span data-ttu-id="ab313-p103">Quita el grupo de la lista de grupos favoritos del usuario actual. Solo es compatible con Grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="ab313-p103">Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="97981-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="97981-109">Permissions</span></span>
-<span data-ttu-id="97981-p104">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97981-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ab313-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="ab313-109">Permissions</span></span>
+<span data-ttu-id="ab313-p104">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ab313-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="97981-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="97981-112">Permission type</span></span>      | <span data-ttu-id="97981-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="97981-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ab313-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="ab313-112">Permission type</span></span>      | <span data-ttu-id="ab313-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="ab313-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="97981-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="97981-114">Delegated (work or school account)</span></span> | <span data-ttu-id="97981-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97981-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="97981-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="97981-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97981-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="97981-117">Not supported.</span></span>    |
-|<span data-ttu-id="97981-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="97981-118">Application</span></span> | <span data-ttu-id="97981-119">No admitida.</span><span class="sxs-lookup"><span data-stu-id="97981-119">Not supported.</span></span> |
+|<span data-ttu-id="ab313-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ab313-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ab313-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab313-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ab313-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ab313-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab313-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="ab313-117">Not supported.</span></span>    |
+|<span data-ttu-id="ab313-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ab313-118">Application</span></span> | <span data-ttu-id="ab313-119">No admitida.</span><span class="sxs-lookup"><span data-stu-id="ab313-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="97981-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="97981-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ab313-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ab313-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/removeFavorite
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="97981-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="97981-121">Request headers</span></span>
-| <span data-ttu-id="97981-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="97981-122">Header</span></span>       | <span data-ttu-id="97981-123">Valor</span><span class="sxs-lookup"><span data-stu-id="97981-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ab313-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="ab313-121">Request headers</span></span>
+| <span data-ttu-id="ab313-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="ab313-122">Header</span></span>       | <span data-ttu-id="ab313-123">Valor</span><span class="sxs-lookup"><span data-stu-id="ab313-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="97981-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="97981-124">Authorization</span></span>  | <span data-ttu-id="97981-p105">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="97981-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="97981-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="97981-127">Prefer</span></span> | <span data-ttu-id="97981-128">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="97981-128">return=minimal.</span></span> <span data-ttu-id="97981-129">Si el encabezado de respuesta “mínimo” se incluye en el encabezado de solicitud, una respuesta correcta devolverá un código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="97981-129">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="97981-130">Opcional.</span><span class="sxs-lookup"><span data-stu-id="97981-130">Optional.</span></span>  | 
+| <span data-ttu-id="ab313-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="ab313-124">Authorization</span></span>  | <span data-ttu-id="ab313-p105">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="ab313-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ab313-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="ab313-127">Prefer</span></span> | <span data-ttu-id="ab313-128">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="ab313-128">return=minimal.</span></span> <span data-ttu-id="ab313-129">Si el encabezado de respuesta “mínimo” se incluye en el encabezado de solicitud, una respuesta correcta devolverá un código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="ab313-129">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="ab313-130">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ab313-130">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="97981-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="97981-131">Request body</span></span>
-<span data-ttu-id="97981-132">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="97981-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ab313-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="ab313-131">Request body</span></span>
+<span data-ttu-id="ab313-132">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="ab313-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="97981-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="97981-133">Response</span></span>
-<span data-ttu-id="97981-p107">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="97981-p107">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ab313-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ab313-133">Response</span></span>
+<span data-ttu-id="ab313-p107">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ab313-p107">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="97981-136">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="97981-136">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="97981-137">Solicitud</span><span class="sxs-lookup"><span data-stu-id="97981-137">Request</span></span>
-<span data-ttu-id="97981-138">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="97981-138">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ab313-136">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ab313-136">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="ab313-137">Solicitud</span><span class="sxs-lookup"><span data-stu-id="ab313-137">Request</span></span>
+<span data-ttu-id="ab313-138">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="ab313-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_removefavorite"
@@ -53,8 +55,8 @@ POST /groups/{id}/removeFavorite
 POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 ```
 
-#### <a name="response"></a><span data-ttu-id="97981-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="97981-139">Response</span></span>
-<span data-ttu-id="97981-140">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="97981-140">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="ab313-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ab313-139">Response</span></span>
+<span data-ttu-id="ab313-140">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ab313-140">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

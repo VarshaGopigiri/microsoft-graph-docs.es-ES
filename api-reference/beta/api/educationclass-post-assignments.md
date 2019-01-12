@@ -2,50 +2,52 @@
 title: Crear educationAssignment
 description: 'Crea una nueva asignación. Sólo los profesores en una clase pueden crear una asignación. Inician las asignaciones en el estado de borrador, lo que significa que los alumnos no verán la asignación hasta que se llama a publicar.  '
 localization_priority: Normal
-ms.openlocfilehash: 6bcc1f44be9d811335d24cea7502c0752052c5ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f86c6c3cc94ada7865038a0e8ae4aff90285719e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824188"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950161"
 ---
-# <a name="create-educationassignment"></a><span data-ttu-id="45a79-105">Crear educationAssignment</span><span class="sxs-lookup"><span data-stu-id="45a79-105">Create educationAssignment</span></span>
+# <a name="create-educationassignment"></a><span data-ttu-id="5089a-105">Crear educationAssignment</span><span class="sxs-lookup"><span data-stu-id="5089a-105">Create educationAssignment</span></span>
 
-> <span data-ttu-id="45a79-106">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="45a79-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="45a79-107">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="45a79-107">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5089a-106">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="5089a-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5089a-107">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="5089a-107">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="45a79-108">Crea una nueva asignación.</span><span class="sxs-lookup"><span data-stu-id="45a79-108">Creates a new assignment.</span></span> <span data-ttu-id="45a79-109">Sólo los profesores en una clase pueden crear una asignación.</span><span class="sxs-lookup"><span data-stu-id="45a79-109">Only teachers in a class can create an assignment.</span></span> <span data-ttu-id="45a79-110">Inician las asignaciones en el estado de borrador, lo que significa que los alumnos no verán la asignación hasta que se llama a publicar.</span><span class="sxs-lookup"><span data-stu-id="45a79-110">Assignments start in the Draft state, which means that students will not see the assignment until publish is called.</span></span>  
+<span data-ttu-id="5089a-108">Crea una nueva asignación.</span><span class="sxs-lookup"><span data-stu-id="5089a-108">Creates a new assignment.</span></span> <span data-ttu-id="5089a-109">Sólo los profesores en una clase pueden crear una asignación.</span><span class="sxs-lookup"><span data-stu-id="5089a-109">Only teachers in a class can create an assignment.</span></span> <span data-ttu-id="5089a-110">Inician las asignaciones en el estado de borrador, lo que significa que los alumnos no verán la asignación hasta que se llama a publicar.</span><span class="sxs-lookup"><span data-stu-id="5089a-110">Assignments start in the Draft state, which means that students will not see the assignment until publish is called.</span></span>  
 
-## <a name="permissions"></a><span data-ttu-id="45a79-111">Permisos</span><span class="sxs-lookup"><span data-stu-id="45a79-111">Permissions</span></span>
-<span data-ttu-id="45a79-p104">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="45a79-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5089a-111">Permisos</span><span class="sxs-lookup"><span data-stu-id="5089a-111">Permissions</span></span>
+<span data-ttu-id="5089a-p104">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5089a-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45a79-114">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="45a79-114">Permission type</span></span>      | <span data-ttu-id="45a79-115">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="45a79-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5089a-114">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="5089a-114">Permission type</span></span>      | <span data-ttu-id="5089a-115">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="5089a-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="45a79-116">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="45a79-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="45a79-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="45a79-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="45a79-118">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="45a79-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="45a79-119">No admitida.</span><span class="sxs-lookup"><span data-stu-id="45a79-119">Not supported.</span></span>  |
-|<span data-ttu-id="45a79-120">Aplicación</span><span class="sxs-lookup"><span data-stu-id="45a79-120">Application</span></span> | <span data-ttu-id="45a79-121">No admitida.</span><span class="sxs-lookup"><span data-stu-id="45a79-121">Not supported.</span></span> | 
+|<span data-ttu-id="5089a-116">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="5089a-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="5089a-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5089a-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="5089a-118">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5089a-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="5089a-119">No admitida.</span><span class="sxs-lookup"><span data-stu-id="5089a-119">Not supported.</span></span>  |
+|<span data-ttu-id="5089a-120">Aplicación</span><span class="sxs-lookup"><span data-stu-id="5089a-120">Application</span></span> | <span data-ttu-id="5089a-121">No admitida.</span><span class="sxs-lookup"><span data-stu-id="5089a-121">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="45a79-122">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="45a79-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5089a-122">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="5089a-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="45a79-123">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="45a79-123">Request headers</span></span>
-| <span data-ttu-id="45a79-124">Encabezado</span><span class="sxs-lookup"><span data-stu-id="45a79-124">Header</span></span>       | <span data-ttu-id="45a79-125">Valor</span><span class="sxs-lookup"><span data-stu-id="45a79-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="5089a-123">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="5089a-123">Request headers</span></span>
+| <span data-ttu-id="5089a-124">Encabezado</span><span class="sxs-lookup"><span data-stu-id="5089a-124">Header</span></span>       | <span data-ttu-id="5089a-125">Valor</span><span class="sxs-lookup"><span data-stu-id="5089a-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="45a79-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="45a79-126">Authorization</span></span>  | <span data-ttu-id="45a79-p105">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="45a79-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="45a79-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="45a79-129">Content-Type</span></span>  | <span data-ttu-id="45a79-130">application/json</span><span class="sxs-lookup"><span data-stu-id="45a79-130">application/json</span></span>  |
+| <span data-ttu-id="5089a-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="5089a-126">Authorization</span></span>  | <span data-ttu-id="5089a-p105">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="5089a-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5089a-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5089a-129">Content-Type</span></span>  | <span data-ttu-id="5089a-130">application/json</span><span class="sxs-lookup"><span data-stu-id="5089a-130">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="45a79-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="45a79-131">Request body</span></span>
-<span data-ttu-id="45a79-132">En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [educationAssignment](../resources/educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="45a79-132">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5089a-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="5089a-131">Request body</span></span>
+<span data-ttu-id="5089a-132">En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [educationAssignment](../resources/educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="5089a-132">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="45a79-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="45a79-133">Response</span></span>
-<span data-ttu-id="45a79-134">Si tiene éxito, este método devuelve una `201 Created` código de respuesta y un objeto [educationAssignment](../resources/educationassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="45a79-134">If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5089a-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5089a-133">Response</span></span>
+<span data-ttu-id="5089a-134">Si tiene éxito, este método devuelve una `201 Created` código de respuesta y un objeto [educationAssignment](../resources/educationassignment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5089a-134">If successful, this method returns a `201 Created` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45a79-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="45a79-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="45a79-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="45a79-136">Request</span></span>
-<span data-ttu-id="45a79-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="45a79-137">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5089a-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="5089a-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5089a-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="5089a-136">Request</span></span>
+<span data-ttu-id="5089a-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="5089a-137">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationassignment_from_educationclass"
@@ -73,12 +75,12 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-<span data-ttu-id="45a79-138">En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [educationAssignment](../resources/educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="45a79-138">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
+<span data-ttu-id="5089a-138">En el cuerpo de la solicitud, proporcionar una representación JSON de un objeto [educationAssignment](../resources/educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="5089a-138">In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="45a79-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="45a79-139">Response</span></span>
-<span data-ttu-id="45a79-140">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="45a79-140">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="5089a-139">Respuesta</span><span class="sxs-lookup"><span data-stu-id="5089a-139">Response</span></span>
+<span data-ttu-id="5089a-140">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="5089a-140">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="45a79-p106">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="45a79-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="5089a-p106">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="5089a-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
