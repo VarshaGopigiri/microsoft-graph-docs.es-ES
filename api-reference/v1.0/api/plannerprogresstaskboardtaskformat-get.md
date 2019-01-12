@@ -2,48 +2,50 @@
 title: Obtener plannerProgressTaskBoardTaskFormat
 description: Recuperar las propiedades y las relaciones del objeto **plannerProgressTaskBoardTaskFormat**.
 localization_priority: Normal
-ms.openlocfilehash: 46a6987903654d228bc4a8e51dc6d3b90593af3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 828f54d43094f0cc08918321c4be51c547e3ddcc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823285"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933732"
 ---
-# <a name="get-plannerprogresstaskboardtaskformat"></a><span data-ttu-id="48d9a-103">Obtener plannerProgressTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="48d9a-103">Get plannerProgressTaskBoardTaskFormat</span></span>
+# <a name="get-plannerprogresstaskboardtaskformat"></a><span data-ttu-id="0b24b-103">Obtener plannerProgressTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="0b24b-103">Get plannerProgressTaskBoardTaskFormat</span></span>
 
-<span data-ttu-id="48d9a-104">Recuperar las propiedades y las relaciones del objeto **plannerProgressTaskBoardTaskFormat**.</span><span class="sxs-lookup"><span data-stu-id="48d9a-104">Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="48d9a-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="48d9a-105">Permissions</span></span>
-<span data-ttu-id="48d9a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48d9a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0b24b-104">Recuperar las propiedades y las relaciones del objeto **plannerProgressTaskBoardTaskFormat**.</span><span class="sxs-lookup"><span data-stu-id="0b24b-104">Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0b24b-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="0b24b-105">Permissions</span></span>
+<span data-ttu-id="0b24b-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0b24b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="48d9a-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="48d9a-108">Permission type</span></span>      | <span data-ttu-id="48d9a-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="48d9a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0b24b-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="0b24b-108">Permission type</span></span>      | <span data-ttu-id="0b24b-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="0b24b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="48d9a-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="48d9a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="48d9a-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="48d9a-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="48d9a-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="48d9a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48d9a-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="48d9a-113">Not supported.</span></span>    |
-|<span data-ttu-id="48d9a-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="48d9a-114">Application</span></span> | <span data-ttu-id="48d9a-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="48d9a-115">Not supported.</span></span> |
+|<span data-ttu-id="0b24b-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="0b24b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0b24b-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0b24b-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="0b24b-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0b24b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b24b-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0b24b-113">Not supported.</span></span>    |
+|<span data-ttu-id="0b24b-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="0b24b-114">Application</span></span> | <span data-ttu-id="0b24b-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="0b24b-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="48d9a-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="48d9a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b24b-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="0b24b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/tasks/{id}/progressTaskBoardFormat
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="48d9a-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="48d9a-117">Request headers</span></span>
-| <span data-ttu-id="48d9a-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="48d9a-118">Name</span></span>      |<span data-ttu-id="48d9a-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="48d9a-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0b24b-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="0b24b-117">Request headers</span></span>
+| <span data-ttu-id="0b24b-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="0b24b-118">Name</span></span>      |<span data-ttu-id="0b24b-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="0b24b-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="48d9a-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="48d9a-120">Authorization</span></span>  | <span data-ttu-id="48d9a-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="48d9a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0b24b-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="0b24b-120">Authorization</span></span>  | <span data-ttu-id="0b24b-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="0b24b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="48d9a-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="48d9a-123">Request body</span></span>
-<span data-ttu-id="48d9a-124">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="48d9a-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0b24b-123">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="0b24b-123">Request body</span></span>
+<span data-ttu-id="0b24b-124">No proporcione un cuerpo de solicitud para este método.</span><span class="sxs-lookup"><span data-stu-id="0b24b-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="48d9a-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="48d9a-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0b24b-125">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0b24b-125">Response</span></span>
 
-<span data-ttu-id="48d9a-126">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="48d9a-126">If successful, this method returns a `200 OK` response code and [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.</span></span>
+<span data-ttu-id="0b24b-126">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y el objeto [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="0b24b-126">If successful, this method returns a `200 OK` response code and [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.</span></span>
 
-<span data-ttu-id="48d9a-p103">Este método puede devolver cualquiera de los [códigos de estado HTTP](/graph/errors). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="48d9a-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="0b24b-p103">Este método puede devolver cualquiera de los [códigos de estado HTTP](/graph/errors). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="0b24b-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="48d9a-130">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="48d9a-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="48d9a-131">Solicitud</span><span class="sxs-lookup"><span data-stu-id="48d9a-131">Request</span></span>
-<span data-ttu-id="48d9a-132">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="48d9a-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0b24b-130">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="0b24b-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0b24b-131">Solicitud</span><span class="sxs-lookup"><span data-stu-id="0b24b-131">Request</span></span>
+<span data-ttu-id="0b24b-132">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="0b24b-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_plannerprogresstaskboardtaskformat"
@@ -51,8 +53,8 @@ GET /planner/tasks/{id}/progressTaskBoardFormat
 ```http
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFormat
 ```
-##### <a name="response"></a><span data-ttu-id="48d9a-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="48d9a-133">Response</span></span>
-<span data-ttu-id="48d9a-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="48d9a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0b24b-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="0b24b-133">Response</span></span>
+<span data-ttu-id="0b24b-p104">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="0b24b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

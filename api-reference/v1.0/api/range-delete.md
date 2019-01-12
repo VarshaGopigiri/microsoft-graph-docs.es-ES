@@ -3,26 +3,27 @@ title: 'Range: delete'
 description: Elimina las celdas asociadas al rango.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c08b570ff6dcd0694b2dc1fb9031149cc5ed7402
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 671dc5785aae4d912d60c2356fc7b1a204630c3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846644"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941607"
 ---
-# <a name="range-delete"></a><span data-ttu-id="bfa4c-103">Range: delete</span><span class="sxs-lookup"><span data-stu-id="bfa4c-103">Range: delete</span></span>
+# <a name="range-delete"></a><span data-ttu-id="2b094-103">Range: delete</span><span class="sxs-lookup"><span data-stu-id="2b094-103">Range: delete</span></span>
 
-<span data-ttu-id="bfa4c-104">Elimina las celdas asociadas al rango.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-104">Deletes the cells associated with the range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="bfa4c-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="bfa4c-105">Permissions</span></span>
-<span data-ttu-id="bfa4c-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bfa4c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2b094-104">Elimina las celdas asociadas al rango.</span><span class="sxs-lookup"><span data-stu-id="2b094-104">Deletes the cells associated with the range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2b094-105">Permisos</span><span class="sxs-lookup"><span data-stu-id="2b094-105">Permissions</span></span>
+<span data-ttu-id="2b094-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2b094-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bfa4c-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="bfa4c-108">Permission type</span></span>      | <span data-ttu-id="bfa4c-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="bfa4c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2b094-108">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="2b094-108">Permission type</span></span>      | <span data-ttu-id="2b094-109">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="2b094-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bfa4c-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="bfa4c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bfa4c-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bfa4c-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="bfa4c-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bfa4c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bfa4c-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-113">Not supported.</span></span>    |
-|<span data-ttu-id="bfa4c-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="bfa4c-114">Application</span></span> | <span data-ttu-id="bfa4c-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-115">Not supported.</span></span> |
+|<span data-ttu-id="2b094-110">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="2b094-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2b094-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2b094-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="2b094-112">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2b094-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2b094-113">No admitida.</span><span class="sxs-lookup"><span data-stu-id="2b094-113">Not supported.</span></span>    |
+|<span data-ttu-id="2b094-114">Aplicación</span><span class="sxs-lookup"><span data-stu-id="2b094-114">Application</span></span> | <span data-ttu-id="2b094-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="2b094-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bfa4c-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="bfa4c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2b094-116">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="2b094-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/delete
@@ -30,27 +31,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="bfa4c-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="bfa4c-117">Request headers</span></span>
-| <span data-ttu-id="bfa4c-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="bfa4c-118">Name</span></span>       | <span data-ttu-id="bfa4c-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="bfa4c-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2b094-117">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="2b094-117">Request headers</span></span>
+| <span data-ttu-id="2b094-118">Nombre</span><span class="sxs-lookup"><span data-stu-id="2b094-118">Name</span></span>       | <span data-ttu-id="2b094-119">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b094-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="bfa4c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="bfa4c-120">Authorization</span></span>  | <span data-ttu-id="bfa4c-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="bfa4c-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="bfa4c-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="bfa4c-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="2b094-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2b094-120">Authorization</span></span>  | <span data-ttu-id="2b094-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="2b094-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2b094-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2b094-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="2b094-p103">Identificador de sesión de libro que determina si los cambios se conservan o no. Opcional.</span><span class="sxs-lookup"><span data-stu-id="2b094-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bfa4c-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="bfa4c-126">Request body</span></span>
-<span data-ttu-id="bfa4c-127">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2b094-126">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="2b094-126">Request body</span></span>
+<span data-ttu-id="2b094-127">En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.</span><span class="sxs-lookup"><span data-stu-id="2b094-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="bfa4c-128">Parámetro</span><span class="sxs-lookup"><span data-stu-id="bfa4c-128">Parameter</span></span>    | <span data-ttu-id="bfa4c-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="bfa4c-129">Type</span></span>   |<span data-ttu-id="bfa4c-130">Descripción</span><span class="sxs-lookup"><span data-stu-id="bfa4c-130">Description</span></span>|
+| <span data-ttu-id="2b094-128">Parámetro</span><span class="sxs-lookup"><span data-stu-id="2b094-128">Parameter</span></span>    | <span data-ttu-id="2b094-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="2b094-129">Type</span></span>   |<span data-ttu-id="2b094-130">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b094-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bfa4c-131">Shift</span><span class="sxs-lookup"><span data-stu-id="bfa4c-131">shift</span></span>|<span data-ttu-id="bfa4c-132">string</span><span class="sxs-lookup"><span data-stu-id="bfa4c-132">string</span></span>|<span data-ttu-id="bfa4c-133">Especifica el modo de desplazar las celdas.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-133">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="bfa4c-134">Los valores posibles son: `Up`, `Left`.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-134">The possible values are: `Up`, `Left`.</span></span>|
+|<span data-ttu-id="2b094-131">Shift</span><span class="sxs-lookup"><span data-stu-id="2b094-131">shift</span></span>|<span data-ttu-id="2b094-132">string</span><span class="sxs-lookup"><span data-stu-id="2b094-132">string</span></span>|<span data-ttu-id="2b094-133">Especifica el modo de desplazar las celdas.</span><span class="sxs-lookup"><span data-stu-id="2b094-133">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="2b094-134">Los valores posibles son: `Up`, `Left`.</span><span class="sxs-lookup"><span data-stu-id="2b094-134">The possible values are: `Up`, `Left`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="bfa4c-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="bfa4c-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2b094-135">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2b094-135">Response</span></span>
 
-<span data-ttu-id="bfa4c-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2b094-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2b094-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bfa4c-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="bfa4c-138">Example</span></span>
-<span data-ttu-id="bfa4c-139">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="bfa4c-140">Solicitud</span><span class="sxs-lookup"><span data-stu-id="bfa4c-140">Request</span></span>
-<span data-ttu-id="bfa4c-141">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2b094-138">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="2b094-138">Example</span></span>
+<span data-ttu-id="2b094-139">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="2b094-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2b094-140">Solicitud</span><span class="sxs-lookup"><span data-stu-id="2b094-140">Request</span></span>
+<span data-ttu-id="2b094-141">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="2b094-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_delete"
@@ -65,8 +66,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="bfa4c-142">Respuesta</span><span class="sxs-lookup"><span data-stu-id="bfa4c-142">Response</span></span>
-<span data-ttu-id="bfa4c-143">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="bfa4c-143">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2b094-142">Respuesta</span><span class="sxs-lookup"><span data-stu-id="2b094-142">Response</span></span>
+<span data-ttu-id="2b094-143">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="2b094-143">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

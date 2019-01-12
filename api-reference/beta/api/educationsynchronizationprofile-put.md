@@ -3,49 +3,50 @@ title: Actualizar un educationSynchronizationProfile
 description: Actualizar las propiedades de un perfil de sincronización de datos de escuela existente en el inquilino.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: b9f5ee2866d1e898035355a389b0358347d4d00b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 07947127b0346a33528136921580646623576d28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818532"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935090"
 ---
-# <a name="update-an-educationsynchronizationprofile"></a><span data-ttu-id="62379-103">Actualizar un educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="62379-103">Update an educationSynchronizationProfile</span></span>
+# <a name="update-an-educationsynchronizationprofile"></a><span data-ttu-id="e7477-103">Actualizar un educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="e7477-103">Update an educationSynchronizationProfile</span></span>
 
-> <span data-ttu-id="62379-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="62379-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="62379-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="62379-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e7477-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="e7477-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e7477-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="e7477-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="62379-106">Actualizar las propiedades de una existente de datos school [perfil de sincronización](../resources/educationsynchronizationprofile.md) en el inquilino.</span><span class="sxs-lookup"><span data-stu-id="62379-106">Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
+<span data-ttu-id="e7477-106">Actualizar las propiedades de una existente de datos school [perfil de sincronización](../resources/educationsynchronizationprofile.md) en el inquilino.</span><span class="sxs-lookup"><span data-stu-id="e7477-106">Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="62379-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="62379-107">Permissions</span></span>
-<span data-ttu-id="62379-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="62379-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e7477-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="e7477-107">Permissions</span></span>
+<span data-ttu-id="e7477-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7477-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="62379-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="62379-110">Permission type</span></span> | <span data-ttu-id="62379-111">Permisos</span><span class="sxs-lookup"><span data-stu-id="62379-111">Permissions</span></span> |
+| <span data-ttu-id="e7477-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="e7477-110">Permission type</span></span> | <span data-ttu-id="e7477-111">Permisos</span><span class="sxs-lookup"><span data-stu-id="e7477-111">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="62379-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="62379-112">Delegated (work or school account)</span></span> | <span data-ttu-id="62379-113">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="62379-113">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="62379-114">Delegado (cuenta Microsoft personal</span><span class="sxs-lookup"><span data-stu-id="62379-114">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="62379-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="62379-115">Not supported.</span></span>|
-|<span data-ttu-id="62379-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="62379-116">Application</span></span>|<span data-ttu-id="62379-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="62379-117">Not supported.</span></span>|
+| <span data-ttu-id="e7477-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="e7477-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e7477-113">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e7477-113">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="e7477-114">Delegado (cuenta Microsoft personal</span><span class="sxs-lookup"><span data-stu-id="e7477-114">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="e7477-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="e7477-115">Not supported.</span></span>|
+|<span data-ttu-id="e7477-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="e7477-116">Application</span></span>|<span data-ttu-id="e7477-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="e7477-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="62379-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="62379-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7477-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="e7477-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /synchronizationProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="62379-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="62379-119">Request headers</span></span>
-| <span data-ttu-id="62379-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="62379-120">Name</span></span>       | <span data-ttu-id="62379-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="62379-121">Type</span></span> | <span data-ttu-id="62379-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="62379-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e7477-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="e7477-119">Request headers</span></span>
+| <span data-ttu-id="e7477-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="e7477-120">Name</span></span>       | <span data-ttu-id="e7477-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="e7477-121">Type</span></span> | <span data-ttu-id="e7477-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="e7477-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="62379-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="62379-123">Authorization</span></span>  | <span data-ttu-id="62379-124">string</span><span class="sxs-lookup"><span data-stu-id="62379-124">string</span></span>  | <span data-ttu-id="62379-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="62379-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="62379-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="62379-127">Content-Type</span></span> | <span data-ttu-id="62379-128">string</span><span class="sxs-lookup"><span data-stu-id="62379-128">string</span></span> | <span data-ttu-id="62379-p104">application/json. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="62379-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="e7477-123">Autorización</span><span class="sxs-lookup"><span data-stu-id="e7477-123">Authorization</span></span>  | <span data-ttu-id="e7477-124">string</span><span class="sxs-lookup"><span data-stu-id="e7477-124">string</span></span>  | <span data-ttu-id="e7477-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="e7477-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e7477-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e7477-127">Content-Type</span></span> | <span data-ttu-id="e7477-128">string</span><span class="sxs-lookup"><span data-stu-id="e7477-128">string</span></span> | <span data-ttu-id="e7477-p104">application/json. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="e7477-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="62379-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="62379-131">Request body</span></span>
-<span data-ttu-id="62379-132">En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="62379-132">In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7477-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="e7477-131">Request body</span></span>
+<span data-ttu-id="e7477-132">En el cuerpo de la solicitud, proporcionar una representación JSON del objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="e7477-132">In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="62379-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="62379-133">Response</span></span>
-<span data-ttu-id="62379-134">Si tiene éxito, este método devuelve una `202, Accepted` código de respuesta y un objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="62379-134">If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e7477-133">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e7477-133">Response</span></span>
+<span data-ttu-id="e7477-134">Si tiene éxito, este método devuelve una `202, Accepted` código de respuesta y un objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e7477-134">If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="62379-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="62379-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="62379-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="62379-136">Request</span></span>
-<span data-ttu-id="62379-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="62379-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e7477-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="e7477-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e7477-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="e7477-136">Request</span></span>
+<span data-ttu-id="e7477-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="e7477-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "update_synchronizationProfile"
@@ -97,10 +98,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="62379-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="62379-138">Response</span></span>
-<span data-ttu-id="62379-139">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="62379-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e7477-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="e7477-138">Response</span></span>
+<span data-ttu-id="e7477-139">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="e7477-139">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="62379-p105">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="62379-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="e7477-p105">**Nota:** Se puede acortar el objeto de respuesta que se muestra aquí para mejorar la legibilidad. Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="e7477-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
