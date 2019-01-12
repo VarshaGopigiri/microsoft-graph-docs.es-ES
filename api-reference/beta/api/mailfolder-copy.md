@@ -3,12 +3,13 @@ title: 'mailFolder: copy'
 description: Copia un objeto mailfolder y su contenido en otro objeto mailfolder.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 34078b54d5e02ed6ba569cc97a11edc738c0a187
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 4112145912f407bc0675ffdf9a602cfeabc262e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941229"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -39,8 +40,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 | Encabezado | Valor |
 |:-------|:------|
-| Autorización | `Bearer {token}`. Necesario. |
-| Content-Type | `application/json`. Necesario. |
+| Autorización | `Bearer {token}`. Obligatorio. |
+| Content-Type | `application/json`. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

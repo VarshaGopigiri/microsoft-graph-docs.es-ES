@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerPlanDetails
 description: El recurso **plannerPlanDetails** representa la información adicional de un plan. Cada objeto plan tiene un objeto details.
 localization_priority: Normal
-ms.openlocfilehash: 117a2f69324180a7ef45dcf96c773f510bdbcb9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: dfb142c8fbd6b2354a3a2d03d29480d119284146
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860161"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942384"
 ---
 # <a name="plannerplandetails-resource-type"></a>Tipo de recurso plannerPlanDetails
 

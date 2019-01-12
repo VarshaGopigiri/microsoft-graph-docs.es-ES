@@ -2,18 +2,19 @@
 title: tipo de recurso office365GroupsActivityStorage
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 9824d3d172a8578f8a25a049c2d0d3b407bbc47e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 180e60a52b397f969aa10cee5bc27bba934ad1e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862254"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944456"
 ---
 # <a name="office365groupsactivitystorage-resource-type"></a>tipo de recurso office365GroupsActivityStorage
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                  | Tipo   | Description                              |
+| Propiedad                  | Tipo   | Descripción                              |
 | :------------------------ | :----- | ---------------------------------------- |
 | reportRefreshDate         | Fecha   | La fecha más reciente del contenido.          |
 | mailboxStorageUsedInBytes | Int64  | El almacenamiento usado en el buzón de correo de grupo.       |

@@ -2,12 +2,14 @@
 title: Restablecer accessReview
 description: En la característica de revisiones de access Azure AD, restablecer las decisiones de un accessReview actualmente activa.  El objeto de destino puede ser una revisión de acceso única o una instancia de una revisión periódica de access.  Ya no se registran las decisiones anteriores, pero pueden continuar revisores actualizar las decisiones.
 localization_priority: Normal
-ms.openlocfilehash: 750b9e4da130a087350b7b78c53e71c835d12be1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0b1f107733543380dbd6ad095133f09befc03736
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941495"
 ---
 # <a name="reset-accessreview"></a>Restablecer accessReview
 
@@ -32,7 +34,7 @@ POST /accessReviews('<id>')/resetDecisions()
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

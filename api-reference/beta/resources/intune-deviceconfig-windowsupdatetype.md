@@ -3,12 +3,13 @@ title: tipo de enumeración windowsUpdateType
 description: Qué dispositivos de sucursal recibirá sus actualizaciones desde
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 15d2d46684d38b57690cc9c12d9c49eccd652e6f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1444af64043ac38685ca022b56b8856be77a0b70
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887041"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944351"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enumeración windowsUpdateType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27887041"
 
 Qué dispositivos de sucursal recibirá sus actualizaciones desde
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |userDefined|0|Permitir al usuario que establezca.|
 |all|1|Punto y anuales del canal (destino). Dispositivo Obtiene todas las actualizaciones aplicables característica de punto y anuales del canal (destino).|

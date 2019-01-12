@@ -3,12 +3,13 @@ title: Obtener la aplicación
 description: Recuperar las propiedades y relaciones del objeto application.
 author: lleonard-msft
 localization_priority: Priority
-ms.openlocfilehash: 0b83a2ee5ed94d9e793a8f1a37f5fb41acaedaf3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 444a95d437591bade674b350c67ec349b06f8d8c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941810"
 ---
 # <a name="get-application"></a>Obtener la aplicación
 

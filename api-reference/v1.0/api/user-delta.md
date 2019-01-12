@@ -1,12 +1,15 @@
 ---
 title: 'user: delta'
 description: Get recién creado, actualiza o elimina los usuarios sin tener que realizar un acceso completo de lectura de la colección completa de usuario. Vea control de cambios para obtener información detallada.
-ms.openlocfilehash: c460a15a63405a5f913096744b5eb150493c715d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6464e8ad975a5fc996c671df5a01df2988dbf79d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032732"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945618"
 ---
 # <a name="user-delta"></a>user: delta
 

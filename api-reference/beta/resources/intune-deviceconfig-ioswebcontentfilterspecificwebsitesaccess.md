@@ -2,12 +2,14 @@
 title: tipo de recurso iosWebContentFilterSpecificWebsitesAccess
 description: Representa un tipo de configuración de filtro de contenido Web, que instala marcadores de dirección URL en el explorador integrado de iOS iOS. Un escenario de ejemplo se encuentra en el aula donde los profesores gustaría a los alumnos para navegar por los sitios Web a través de marcadores de explorador configurados en sus dispositivos iOS y no hay acceso a otros sitios.
 localization_priority: Normal
-ms.openlocfilehash: 0dc3023c37311dc5fdeb2700b8a0fec58bdb4725
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 3b117aca95c43f36c216d6249221d689ae2da325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844957"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942699"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>tipo de recurso iosWebContentFilterSpecificWebsitesAccess
 
@@ -20,7 +22,7 @@ Representa un tipo de configuración de filtro de contenido Web, que instala mar
 Hereda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |specificWebsitesOnly|colección de [iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)|Marcadores de dirección URL que se va a instalar en el explorador integrado y el usuario sólo se permite tener acceso a sitios Web a través de marcadores. Esta colección puede contener un máximo de 500 elementos.|
 |websiteList|colección de [iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)|Marcadores de dirección URL que se va a instalar en el explorador integrado y el usuario sólo se permite tener acceso a sitios Web a través de marcadores. Esta colección puede contener un máximo de 500 elementos.|

@@ -2,12 +2,14 @@
 title: Lista bookingCurrencies
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 809ee9222f8ae997633becbe13f87539dd816b1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: e08385c887b1da6972caab83da068b0e537586db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849220"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941523"
 ---
 # <a name="list-bookingcurrencies"></a>Lista bookingCurrencies
 

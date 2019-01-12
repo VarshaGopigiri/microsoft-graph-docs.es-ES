@@ -3,12 +3,13 @@ title: Obtener appleVpnConfiguration
 description: Leer las propiedades y las relaciones del objeto appleVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8e4ce8cc77eac328effccf9b89a8a9923ea6d48e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 63375148ad04e383dd1642ec2031a26b8d160af9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863612"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943336"
 ---
 # <a name="get-applevpnconfiguration"></a>Obtener appleVpnConfiguration
 

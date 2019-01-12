@@ -2,12 +2,14 @@
 title: Detener accessReview
 description: En el anuncio de Azure access revisa la característica, detener una accessReview actualmente activa.  El objeto de destino puede ser una revisión de acceso única o una instancia de una revisión periódica de access.  (Para impedir que una revisión periódica de acceso iniciar instancias futuras, actualizarlo para cambiar su fecha de finalización programada).  Después de obtener el acceso revisar se detiene, revisores ya no pueden dar a la entrada y las decisiones de revisión de acceso se pueden aplicar.
 localization_priority: Normal
-ms.openlocfilehash: 57c0473b58b8ca4bbbb4e9f182b7da4582af4c38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8d71796272cf9852683688a47f3d78eebd849357
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860119"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941467"
 ---
 # <a name="stop-accessreview"></a>Detener accessReview
 
@@ -31,7 +33,7 @@ POST /accessReviews('<id>')/stop()
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Autorización | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

@@ -2,12 +2,14 @@
 title: Obtener subscribedSku
 description: Recupera una suscripción comercial específica que ha adquirido una organización.
 localization_priority: Normal
-ms.openlocfilehash: b867e59cbea04b181690f297f3c75df01ee0a0a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bf9a8213b4beaf62208b4857584da981367b6fcd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809964"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941824"
 ---
 # <a name="get-subscribedsku"></a>Obtener subscribedSku
 Recupera una suscripción comercial específica que ha adquirido una organización.

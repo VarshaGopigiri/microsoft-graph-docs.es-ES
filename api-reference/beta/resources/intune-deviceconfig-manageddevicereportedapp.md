@@ -3,12 +3,13 @@ title: tipo de recurso managedDeviceReportedApp
 description: Datos de aplicación para la creación de informes
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 676b89e98f5d54367916a3f3219ab5fc02ddbd80
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8aa9a4d825e2333e135a676fa1eeb88e7cfe079c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877220"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942979"
 ---
 # <a name="manageddevicereportedapp-resource-type"></a>tipo de recurso managedDeviceReportedApp
 
@@ -18,7 +19,7 @@ ms.locfileid: "27877220"
 
 Datos de aplicación para la creación de informes
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |appId|cadena|El identificador de la aplicación o de la agrupación de la aplicación|
 

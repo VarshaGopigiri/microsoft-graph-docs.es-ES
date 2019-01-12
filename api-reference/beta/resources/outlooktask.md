@@ -3,12 +3,13 @@ title: Tipo de recurso outlookTask
 description: 'Un elemento de Outlook que puede realizar un seguimiento de un elemento de trabajo. '
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 71f649c0ef5fd23caafc9bcd3e35282287d35372
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: f49c74af92037f430b72d7b9fffa4a85aba00942
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865565"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943278"
 ---
 # <a name="outlooktask-resource-type"></a>Tipo de recurso outlookTask
 
@@ -51,7 +52,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |[Obtener tarea con varios valor de propiedad extendida](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Obtener una tarea de Outlook que contiene una propiedad extendida de varios valor mediante el uso de `$expand`. |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |assignedTo|Cadena|El nombre de la persona que se le ha asignado la tarea.|
 |body|[itemBody](itembody.md)|El cuerpo de la tarea que normalmente contiene información acerca de la tarea. Tenga en cuenta que sólo el tipo HTML es compatible.|

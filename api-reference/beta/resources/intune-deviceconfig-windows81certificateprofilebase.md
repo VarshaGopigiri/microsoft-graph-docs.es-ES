@@ -3,12 +3,13 @@ title: tipo de recurso windows81CertificateProfileBase
 description: Configuración de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9536d9d4342d02e406731e046029dee30bc4804c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1bd6a308cd49cf8a49bcc68db7138e24703fabd1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946003"
 ---
 # <a name="windows81certificateprofilebase-resource-type"></a>tipo de recurso windows81CertificateProfileBase
 
@@ -47,7 +48,7 @@ Hereda de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windo
 |customSubjectAlternativeNames|colección de [customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md)|Configuración de Alterantive nombre de sujeto personalizado. Esta colección puede contener un máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
