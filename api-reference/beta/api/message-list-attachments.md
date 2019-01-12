@@ -3,12 +3,13 @@ title: List attachments
 description: Recupera una lista de objetos attachment asociados a un mensaje.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 0d89d05c80a8d2437f4940ace2a046f93ba67b82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 584b01114f22466673568d991c824a94c6d73dd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806688"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983488"
 ---
 # <a name="list-attachments"></a>List attachments
 

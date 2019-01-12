@@ -3,12 +3,13 @@ title: tipo de recurso audioRoutingGroup
 description: El grupo de enrutamiento de audio almacena una ruta de audio privada entre los participantes en una conversación entre varias partes. Origen es el participante propio y los receptores son un subconjunto de los otros participantes de la conversación entre varias partes.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860651"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980191"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
 

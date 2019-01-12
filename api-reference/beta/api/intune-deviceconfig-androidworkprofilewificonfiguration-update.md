@@ -3,12 +3,13 @@ title: Actualizar androidWorkProfileWiFiConfiguration
 description: Actualizar las propiedades de un objeto androidWorkProfileWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b160242ec5ae45f2a4af2a3232cdfe355b4ada96
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 229ace77c5e921c77a988608d7c2dacce5fc1bf4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813877"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983054"
 ---
 # <a name="update-androidworkprofilewificonfiguration"></a>Actualizar androidWorkProfileWiFiConfiguration
 

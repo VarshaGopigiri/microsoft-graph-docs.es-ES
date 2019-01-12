@@ -3,12 +3,13 @@ title: tipo de enumeración networkSingleSignOnType
 description: Wi-Fi red inicio de sesión único en la configuración del tipo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: abd333ffd59a3a287f371109f71bc1e3177a2b6e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e39c4296e235e47c339099cbe16d5bbd962c64ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877150"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982683"
 ---
 # <a name="networksinglesignontype-enum-type"></a>tipo de enumeración networkSingleSignOnType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27877150"
 
 Wi-Fi red inicio de sesión único en la configuración del tipo.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |deshabilitado|0|Deshabilitado|
 |inicio previo de sesión|1|Inicio de sesión previo|

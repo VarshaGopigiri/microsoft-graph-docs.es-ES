@@ -3,12 +3,13 @@ title: Tipo de recurso eBookInstallSummary
 description: Contiene las propiedades del resumen de la instalación de un libro para un dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b33f319106c39e11931726fcebcc8d5aa8d6ba46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a3d07dc2d1a1b7a117e001546cd5298765676bdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986155"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 

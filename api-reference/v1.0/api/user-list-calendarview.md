@@ -2,12 +2,14 @@
 title: List calendarView
 description: 'Obtenga las repeticiones, excepciones e instancias únicas de eventos en una vista de calendario definida por un intervalo de tiempo, desde el calendario del usuario de forma predeterminada, '
 localization_priority: Priority
-ms.openlocfilehash: 301573e5ecde07623c17dcf511ea70036f9a06ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2f90f1f5d3af6da0e84919128b362777268f4e0e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874385"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984230"
 ---
 # <a name="list-calendarview"></a>List calendarView
 

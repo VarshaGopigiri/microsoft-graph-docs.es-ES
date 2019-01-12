@@ -3,12 +3,13 @@ title: tipo enum keySize
 description: Opciones de tamaño de la clave.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 19e12557f5e266ca8f6d5fddd35487d6efb89b8a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 89dfaac4ce4041977d067cd202ee45f63dce2791
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851572"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982326"
 ---
 # <a name="keysize-enum-type"></a>tipo enum keySize
 
@@ -18,7 +19,7 @@ ms.locfileid: "27851572"
 
 Opciones de tamaño de la clave.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |size1024|0|1024 bits.|
 |size2048|1|2048 bits.|

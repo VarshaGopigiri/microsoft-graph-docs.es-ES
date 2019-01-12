@@ -2,12 +2,14 @@
 title: tipo de recurso iosVppAppRevokeLicensesActionResult
 description: Define los resultados de acciones en iOS aplicaciones Vpp, contiene propiedades heredadas para ActionResult.
 localization_priority: Normal
-ms.openlocfilehash: 8ed57465e263245cfc18ca22899c2142d949855d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 13bc69a0c04eb7b9742f6c549fd1ae976cf25561
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842087"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986995"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>tipo de recurso iosVppAppRevokeLicensesActionResult
 
@@ -17,7 +19,7 @@ ms.locfileid: "27842087"
 
 Define los resultados de acciones en iOS aplicaciones Vpp, contiene propiedades heredadas para ActionResult.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |userId|Cadena|Identificador de usuario asociado con la acción.|
 |managedDeviceId|Cadena|DeviceId asociado con la acción.|

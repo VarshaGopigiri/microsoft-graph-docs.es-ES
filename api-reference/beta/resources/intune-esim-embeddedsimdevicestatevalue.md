@@ -3,12 +3,13 @@ title: tipo de enumeración embeddedSIMDeviceStateValue
 description: Describe los diferentes Estados de un código de activación de SIM incrustado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a3974c0df65ef9f59242f390b7166e11c3e0c592
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 67dd3850db1e759ded578f551eb41636ec231084
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985966"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>tipo de enumeración embeddedSIMDeviceStateValue
 
@@ -18,7 +19,7 @@ ms.locfileid: "27886061"
 
 Describe los diferentes Estados de un código de activación de SIM incrustado.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |notEvaluated|0|Designa que el código de activación de SIM incrustado es gratuito y está disponible para ser asignado a un dispositivo.|
 |failed|1|Designa que Intune Service no se pudo entregar este perfil para un dispositivo.|

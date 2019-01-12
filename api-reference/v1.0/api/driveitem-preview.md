@@ -2,12 +2,13 @@
 title: 'driveItem: vista previa'
 description: Esta acción le permite obtener corta duración puede incrustar las direcciones URL de un elemento con el fin de representar una vista previa temporal.
 localization_priority: Normal
-ms.openlocfilehash: c04a73d514dfb5a92030c4c2016579d469063f9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: ae5140bf6164aedd051f04c2c43c361f16517e7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850774"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986078"
 ---
 # <a name="driveitem-preview"></a>driveItem: vista previa
 
@@ -64,7 +65,7 @@ La solicitud debe ser un objeto JSON con las siguientes propiedades.
 
 La respuesta será un objeto JSON que contiene las siguientes propiedades:
 
-| Nombre           | Tipo   | Description
+| Nombre           | Tipo   | Descripción
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | Dirección URL adecuada para incrustar mediante HTTP GET (IFRAME, etcetera).
 | URL para exponer        | string | Dirección URL adecuada para incrustar el uso de HTTP POST (de envío de formulario, JS, etcetera.)

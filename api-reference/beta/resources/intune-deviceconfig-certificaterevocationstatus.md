@@ -3,12 +3,13 @@ title: tipo de enumeración certificateRevocationStatus
 description: Estado de revocación del certificado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8d24d515f992ed396c3530595240a107852d83e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8c1c77e267da5528088a7a8ef6400a872790aaf3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868309"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983124"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>tipo de enumeración certificateRevocationStatus
 
@@ -18,7 +19,7 @@ ms.locfileid: "27868309"
 
 Estado de revocación del certificado.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|No se ha revocado.|
 |pendiente|1|Revocación pendientes.|

@@ -3,12 +3,13 @@ title: tipo de enumeración windowsAppStartLayoutTileSize
 description: El tamaño del mosaico de aplicación de Windows en el diseño de inicio.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dde8aff258e495fce58baafc40e44ba3041d2bc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 959d14b43715626703404e3f666c7261c1906fa1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891437"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984111"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enumeración windowsAppStartLayoutTileSize
 
@@ -18,7 +19,7 @@ ms.locfileid: "27891437"
 
 El tamaño del mosaico de aplicación de Windows en el diseño de inicio.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |hidden|0|Oculto.|
 |small|1|Pequeña 1 x 1.|

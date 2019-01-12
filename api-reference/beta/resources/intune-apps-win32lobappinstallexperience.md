@@ -3,12 +3,13 @@ title: tipo de recurso win32LobAppInstallExperience
 description: Contiene las propiedades de la experiencia de instalación para una aplicación de Win32
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 74e7dd5b036d42d85e49935f454f3050f604827b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9eeadf7bc97f53278ef59fe06795bc7120d5bc2c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866909"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986302"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>tipo de recurso win32LobAppInstallExperience
 
@@ -18,7 +19,7 @@ ms.locfileid: "27866909"
 
 Contiene las propiedades de la experiencia de instalación para una aplicación de Win32
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica el tipo de la aplicación se ejecuta en el contexto de ejecución. Los valores posibles son: `system` y `user`.|
 

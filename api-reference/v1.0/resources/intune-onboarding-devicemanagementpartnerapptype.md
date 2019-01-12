@@ -3,12 +3,13 @@ title: tipo de enumeración deviceManagementPartnerAppType
 description: Tipo de aplicación de socio.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 240e069e77acd2e00d410239a43842d1b6214684
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 683846129f63a2185772bb3b400fc4abd3d7b1cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833673"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990176"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>tipo de enumeración deviceManagementPartnerAppType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27833673"
 
 Tipo de aplicación de socio.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Tipo de aplicación de socio es desconocido.|
 |singleTenantApp|1|Aplicación de socio es único inquilino en AAD.|

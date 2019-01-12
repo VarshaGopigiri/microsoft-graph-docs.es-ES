@@ -3,12 +3,13 @@ title: Obtener webApp
 description: Lea las propiedades y las relaciones del objeto webApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2142d27d9ea80a00b5b7feffb0680efc8e771e39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b7cbf3b26099e0cd34b1fff342b10122e684b150
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990204"
 ---
 # <a name="get-webapp"></a>Obtener webApp
 

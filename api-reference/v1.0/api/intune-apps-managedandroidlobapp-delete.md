@@ -3,12 +3,13 @@ title: Eliminar managedAndroidLobApp
 description: Elimina un managedAndroidLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1a995c5f006e7946f517f128f41feb9fab202c93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d810b95c86fd206467946af5a5af0d997c6da726
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808284"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990197"
 ---
 # <a name="delete-managedandroidlobapp"></a>Eliminar managedAndroidLobApp
 

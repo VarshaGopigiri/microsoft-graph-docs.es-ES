@@ -3,12 +3,13 @@ title: tipo de enumeración deviceManagementExchangeConnectorType
 description: El tipo de conector de Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 07449df53aa65036ae55e63c514c1687fbbab86a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e9e50a4475ca2d57b3f38567703046588d4fb3c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888518"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986435"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>tipo de enumeración deviceManagementExchangeConnectorType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27888518"
 
 El tipo de conector de Exchange.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |Local|0|Se conecta al entorno de Exchange local.|
 |hospedado|1|Se conecta al entorno de Exchange de varios inquilino de Office 365|

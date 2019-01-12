@@ -3,12 +3,13 @@ title: Tipo de recurso configurationManagerClientEnabledFeatures
 description: Características habilitadas del cliente de Configuration Manager
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c69e0ae9528a31ec7512348931e9a6eb0b1dd7b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc1b994615c89b1a6e73785a5ebcdc85f0638953
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987597"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
 

@@ -3,12 +3,13 @@ title: Actualizar mobileAppContent
 description: Actualice las propiedades de un objeto mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5d793c25763de7a33cbb18bebc8888d0c5cfd512
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4ae200fb525eec613f3dbed91c261b5c378d9445
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980842"
 ---
 # <a name="update-mobileappcontent"></a>Actualizar mobileAppContent
 

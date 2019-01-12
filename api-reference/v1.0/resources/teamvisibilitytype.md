@@ -3,12 +3,13 @@ title: Miembros
 description: 'Describe la visibilidad de un equipo. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 76633f52cd0238d6ef63aa393b7d08a754fbde98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ea8868924681d3e8f8cd0b4f55ff947c085260e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990946"
 ---
 #<a name="teamvisibilitytype-enum-type"></a>tipo de enumeración teamVisibilityType
 
@@ -18,7 +19,7 @@ Describe la visibilidad de un [equipo](../resources/team.md).
 
 ## <a name="members"></a>Miembros
 
-| Miembro	 | Valor| Description |
+| Miembro	 | Valor| Descripción |
 |:---------------|:--------|:----------|
 |privada|0|Cualquier persona puede ver que el equipo, pero sólo el propietario puede agregar un usuario al equipo.|
 |public|1|Cualquier persona puede participar en el equipo.|

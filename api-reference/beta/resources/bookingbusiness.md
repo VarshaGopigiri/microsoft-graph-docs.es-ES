@@ -2,12 +2,14 @@
 title: tipo de recurso bookingBusiness
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: cf00239802cec9a705c24548649e38f3022383a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861638"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986218"
 ---
 # <a name="bookingbusiness-resource-type"></a>tipo de recurso bookingBusiness
 
@@ -53,7 +55,7 @@ Representa una empresa en Microsoft Bookings. Esto es el objeto de nivel superio
 |webSiteUrl|Cadena|La dirección URL del sitio web de negocio. La propiedad **webSiteUrl** , junto con la **dirección**, **teléfono**, aparecen en el pie de página de una página de programación de negocio.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Description|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |appointments|colección de [bookingAppointment](bookingappointment.md)| Todas las citas de esta empresa. Solo lectura. Admite valores NULL.|
 |calendarView|colección de [bookingAppointment](bookingappointment.md)| El conjunto de citas de esta empresa en un intervalo de fechas especificado. Solo lectura. Admite valores NULL.|

@@ -2,12 +2,14 @@
 title: tipo de recurso educationResource
 description: Una superclase para todos los objetos de recursos en el sistema. Un recurso está asociado a una **asignación** o **envío**, que representa el objeto de aprendizaje que se va a
 localization_priority: Normal
-ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 9ac84fd9d661f31186ea65e95c680456cdabe221
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827562"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982123"
 ---
 # <a name="educationresource-resource-type"></a>tipo de recurso educationResource
 

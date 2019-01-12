@@ -3,12 +3,13 @@ title: tipo de recurso windowsPhone81VpnConfiguration
 description: Proporcionando las configuraciones de este perfil puede indicar a la 8.1 de Windows Phone para conectarse al extremo VPN que desee. Mediante la especificación de los tipos de seguridad y el método de autenticación esperen por el extremo VPN que puede realizar la conexión VPN transparente para el usuario final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b415c41d41f9b29dbaf9eb5019bdf53e50f54192
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41d27504e7a8bb83385cd9707c9cdaeb08c6e927
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984559"
 ---
 # <a name="windowsphone81vpnconfiguration-resource-type"></a>tipo de recurso windowsPhone81VpnConfiguration
 
@@ -55,7 +56,7 @@ Hereda de [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81
 |dnsSuffixSearchList|Colección String|Lista de búsqueda de sufijos DNS.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

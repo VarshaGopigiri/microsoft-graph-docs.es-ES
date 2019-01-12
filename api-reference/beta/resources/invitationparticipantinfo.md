@@ -3,12 +3,13 @@ title: tipo de recurso invitationParticipantInfo
 description: El **InvitationParticipant** se usa para representar un conjunto de identidades asociado con una invitación a una conversación y proporciona los parámetros de invitación adicionales.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7a6fb418b7076b0f0a42dc05b6afe71dcda6a71e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8febd66915ee0b4fba26d9253cd56d67086e63bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982900"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 
@@ -18,7 +19,7 @@ El **InvitationParticipant** se usa para representar un conjunto de identidades 
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                           | Tipo                          | Description                                                                          |
+| Propiedad                           | Tipo                          | Descripción                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | Los valores posibles son: `default` y `voicemail`. |
 | identity                           | [identitySet](identityset.md) | El [identitySet](identityset.md) asociado con esta invitación.                   |

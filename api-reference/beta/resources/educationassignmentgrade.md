@@ -2,12 +2,14 @@
 title: tipo de recurso educationAssignmentGrade
 description: " Sin embargo, todos los tipos de clasificación (puntos, determinantes etc.) son subclases de este"
 localization_priority: Normal
-ms.openlocfilehash: 371346c6ff23623a118b9ee169e563e75e2429f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: ecdd92c84399ee17d2808301d997830725fb5642
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889015"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982361"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>tipo de recurso educationAssignmentGrade
 
@@ -17,7 +19,7 @@ Representa el objeto de **calificación** en una presentación. Esto es un tipo 
 
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |gradedBy|[identitySet](identityset.md)| Usuario que hizo la clasificación. |
 |gradedDateTime|DateTimeOffset| Momento en el tiempo cuando se aplicó la calificación a este objeto de envío. El tipo de marca de tiempo representa la información de fecha y hora con el formato ISO 8601 y está siempre en hora UTC. Por ejemplo, la medianoche UTC del 1 de enero de 2014 sería así: `'2014-01-01T00:00:00Z'`|

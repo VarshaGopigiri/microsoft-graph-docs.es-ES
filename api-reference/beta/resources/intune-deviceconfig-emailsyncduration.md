@@ -3,12 +3,13 @@ title: tipo de enumeración emailSyncDuration
 description: Valores posibles para la duración de la sincronización de correo electrónico.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d83a1ceb82820ddc44d8753e8ed05e00de09e36e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fcabbe69c10cd490732560ea856c39c5cfd8cb44
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819386"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986414"
 ---
 # <a name="emailsyncduration-enum-type"></a>tipo de enumeración emailSyncDuration
 
@@ -18,7 +19,7 @@ ms.locfileid: "27819386"
 
 Valores posibles para la duración de la sincronización de correo electrónico.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |undía|1|Sincronización de un día de correo electrónico.|

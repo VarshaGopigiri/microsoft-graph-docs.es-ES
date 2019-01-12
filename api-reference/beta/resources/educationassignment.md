@@ -2,12 +2,14 @@
 title: tipo de recurso educationAssignment
 description: El recurso **educationAssignment** representa una tarea o una unidad de trabajo asignada a un miembro de estudiantes o equipo en una clase como parte de sus estudios. Sólo los profesores o los propietarios de equipo pueden crear asignaciones. Las asignaciones de contengan documentos y las tareas que el profesor va al alumno a trabajar en. Cada asignación alumno tiene un envío asociado que contiene cualquier trabajo de que su profesor más frecuentes se convierta. Un profesor puede agregar las puntuaciones y comentarios para el envío activado forma de los estudiantes.
 localization_priority: Normal
-ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812456"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982263"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
@@ -53,7 +55,7 @@ La asignación de API se exponen en el espacio de nombres de clase.
 |status|string| Estado de la **asignación**.  No se puede una revisión este valor.  Los valores posibles son: `draft`, `published` y `assigned`.|
 
 ## <a name="relationships"></a>Relaciones
-| Relación | Tipo   |Description|
+| Relación | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |recursos|colección de [educationAssignmentResource](educationassignmentresource.md)| Objetos de aprendizaje que están asociados con esta asignación.  Profesores sólo pueden modificar esta lista. Admite valores NULL.|
 |envíos|colección de [educationSubmission](educationsubmission.md)| Una vez publicado, hay un objeto de envío para cada estudiante que representa el trabajo y su calificación.  Solo lectura. Admite valores NULL.|

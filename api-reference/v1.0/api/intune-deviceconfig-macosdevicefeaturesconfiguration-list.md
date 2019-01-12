@@ -3,12 +3,13 @@ title: Enumerar macOSDeviceFeaturesConfigurations
 description: Enumere las propiedades y las relaciones de los objetos macOSDeviceFeaturesConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7ff3369ef4348a4a677fff8c708cbefa09f8beab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6bee342ad88511afcdb3a52db476496ab3f4d869
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884998"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981465"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Enumerar macOSDeviceFeaturesConfigurations
 

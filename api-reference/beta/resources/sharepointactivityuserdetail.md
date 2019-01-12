@@ -2,12 +2,13 @@
 title: tipo de recurso sharePointActivityUserDetail
 description: La siguiente es una representación JSON del recurso
 localization_priority: Normal
-ms.openlocfilehash: 4503739a7b2e13cade72951ae56ab410f22608b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a7dc324d821dca26ff1083f1e48c258e1955d72f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880699"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979946"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>tipo de recurso sharePointActivityUserDetail
 

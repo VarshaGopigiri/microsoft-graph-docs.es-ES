@@ -2,12 +2,14 @@
 title: Tipo de recurso device
 description: Representa un dispositivo registrado en la organización. Los dispositivos se crean en la nube con el servicio de registro de dispositivos o Intune. Las directivas de acceso condicional los usan para la autenticación multifactor. Estos dispositivos pueden ir desde equipos portátiles y de escritorio hasta teléfonos y tabletas. Se hereda de directoryObject.
 localization_priority: Normal
-ms.openlocfilehash: 4b28b27439f911ff98f13e7d1ae88b873b1286f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ab03eed26f5e34c2ac149815b3ba66b37fc2090c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985000"
 ---
 # <a name="device-resource-type"></a>Tipo de recurso device
 
