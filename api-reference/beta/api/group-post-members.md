@@ -2,50 +2,52 @@
 title: Add member
 description: Use esta API para agregar un miembro a un grupo de Office 365, un grupo de seguridad o un grupo de seguridad habilitado para correo a través de la propiedad de navegación **members**.
 localization_priority: Normal
-ms.openlocfilehash: 74ad07ea9012385f896ba4c6c6aa18f44758e5bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: db0261b71f6499489b48deb099a572599b482d38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832868"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955530"
 ---
-# <a name="add-member"></a><span data-ttu-id="a1bad-103">Add member</span><span class="sxs-lookup"><span data-stu-id="a1bad-103">Add member</span></span>
+# <a name="add-member"></a><span data-ttu-id="24b0d-103">Add member</span><span class="sxs-lookup"><span data-stu-id="24b0d-103">Add member</span></span>
 
-> <span data-ttu-id="a1bad-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="a1bad-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a1bad-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="a1bad-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="24b0d-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="24b0d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="24b0d-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="24b0d-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="a1bad-106">Use esta API para agregar un miembro a un grupo de Office 365, un grupo de seguridad o un grupo de seguridad habilitado para correo a través de la propiedad de navegación **members**.</span><span class="sxs-lookup"><span data-stu-id="a1bad-106">Use this API to add a member to an Office 365 Group, a security group, or a mail-enabled security group through the **members** navigation property.</span></span>
+<span data-ttu-id="24b0d-106">Use esta API para agregar un miembro a un grupo de Office 365, un grupo de seguridad o un grupo de seguridad habilitado para correo a través de la propiedad de navegación **members**.</span><span class="sxs-lookup"><span data-stu-id="24b0d-106">Use this API to add a member to an Office 365 Group, a security group, or a mail-enabled security group through the **members** navigation property.</span></span>
 
-<span data-ttu-id="a1bad-107">Puede agregar usuarios u otros grupos.</span><span class="sxs-lookup"><span data-stu-id="a1bad-107">You can add users or other groups.</span></span> <span data-ttu-id="a1bad-108">Importante: Solo se pueden agregar usuarios a Grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="a1bad-108">Important: You can add only users to Office 365 Groups.</span></span>
+<span data-ttu-id="24b0d-107">Puede agregar usuarios u otros grupos.</span><span class="sxs-lookup"><span data-stu-id="24b0d-107">You can add users or other groups.</span></span> <span data-ttu-id="24b0d-108">Importante: Solo se pueden agregar usuarios a Grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="24b0d-108">Important: You can add only users to Office 365 Groups.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a1bad-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="a1bad-109">Permissions</span></span>
-<span data-ttu-id="a1bad-p103">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a1bad-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="24b0d-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="24b0d-109">Permissions</span></span>
+<span data-ttu-id="24b0d-p103">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="24b0d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a1bad-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="a1bad-112">Permission type</span></span>      | <span data-ttu-id="a1bad-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="a1bad-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="24b0d-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="24b0d-112">Permission type</span></span>      | <span data-ttu-id="24b0d-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="24b0d-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a1bad-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="a1bad-114">Delegated (work or school account)</span></span> | <span data-ttu-id="a1bad-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a1bad-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a1bad-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a1bad-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a1bad-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="a1bad-117">Not supported.</span></span>    |
-|<span data-ttu-id="a1bad-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="a1bad-118">Application</span></span> | <span data-ttu-id="a1bad-119">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a1bad-119">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="24b0d-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="24b0d-114">Delegated (work or school account)</span></span> | <span data-ttu-id="24b0d-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="24b0d-115">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="24b0d-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="24b0d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24b0d-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="24b0d-117">Not supported.</span></span>    |
+|<span data-ttu-id="24b0d-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="24b0d-118">Application</span></span> | <span data-ttu-id="24b0d-119">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24b0d-119">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a1bad-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="a1bad-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="24b0d-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="24b0d-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/members/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a1bad-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="a1bad-121">Request headers</span></span>
-| <span data-ttu-id="a1bad-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="a1bad-122">Name</span></span>       | <span data-ttu-id="a1bad-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="a1bad-123">Type</span></span> | <span data-ttu-id="a1bad-124">Descripción</span><span class="sxs-lookup"><span data-stu-id="a1bad-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="24b0d-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="24b0d-121">Request headers</span></span>
+| <span data-ttu-id="24b0d-122">Nombre</span><span class="sxs-lookup"><span data-stu-id="24b0d-122">Name</span></span>       | <span data-ttu-id="24b0d-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="24b0d-123">Type</span></span> | <span data-ttu-id="24b0d-124">Descripción</span><span class="sxs-lookup"><span data-stu-id="24b0d-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a1bad-125">Autorización</span><span class="sxs-lookup"><span data-stu-id="a1bad-125">Authorization</span></span>  | <span data-ttu-id="a1bad-126">string</span><span class="sxs-lookup"><span data-stu-id="a1bad-126">string</span></span>  | <span data-ttu-id="a1bad-p104">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="a1bad-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="24b0d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="24b0d-125">Authorization</span></span>  | <span data-ttu-id="24b0d-126">string</span><span class="sxs-lookup"><span data-stu-id="24b0d-126">string</span></span>  | <span data-ttu-id="24b0d-p104">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="24b0d-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a1bad-129">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="a1bad-129">Request body</span></span>
-<span data-ttu-id="a1bad-130">En el cuerpo de la solicitud, proporcione una representación JSON de un objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) o [group](../resources/group.md) que se va a agregar.</span><span class="sxs-lookup"><span data-stu-id="a1bad-130">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="24b0d-129">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="24b0d-129">Request body</span></span>
+<span data-ttu-id="24b0d-130">En el cuerpo de la solicitud, proporcione una representación JSON de un objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) o [group](../resources/group.md) que se va a agregar.</span><span class="sxs-lookup"><span data-stu-id="24b0d-130">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a1bad-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a1bad-131">Response</span></span>
-<span data-ttu-id="a1bad-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a1bad-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="24b0d-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="24b0d-131">Response</span></span>
+<span data-ttu-id="24b0d-p105">Si se ejecuta correctamente, este método devuelve el código de respuesta `204 No Content`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="24b0d-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a1bad-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="a1bad-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="a1bad-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="a1bad-135">Request</span></span>
-<span data-ttu-id="a1bad-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a1bad-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="24b0d-134">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="24b0d-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="24b0d-135">Solicitud</span><span class="sxs-lookup"><span data-stu-id="24b0d-135">Request</span></span>
+<span data-ttu-id="24b0d-136">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="24b0d-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "add_group_member"
@@ -59,11 +61,11 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
-<span data-ttu-id="a1bad-137">En el cuerpo de la solicitud, proporcionar una representación JSON de la `id` del objeto [directoryObject](../resources/directoryobject.md), [usuario](../resources/user.md)o [grupo](../resources/group.md) que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="a1bad-137">In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [group](../resources/group.md) object you want to add.</span></span>
+<span data-ttu-id="24b0d-137">En el cuerpo de la solicitud, proporcionar una representación JSON de la `id` del objeto [directoryObject](../resources/directoryobject.md), [usuario](../resources/user.md)o [grupo](../resources/group.md) que desea agregar.</span><span class="sxs-lookup"><span data-stu-id="24b0d-137">In the request body, supply a JSON representation of the `id` of the [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [group](../resources/group.md) object you want to add.</span></span>
 
-#### <a name="response"></a><span data-ttu-id="a1bad-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="a1bad-138">Response</span></span>
-<span data-ttu-id="a1bad-139">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a1bad-139">The following is an example of the response.</span></span>
-><span data-ttu-id="a1bad-140">**Nota:** el objeto de respuesta que se muestra aquí podría ser más cortos para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="a1bad-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a1bad-141">Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="a1bad-141">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="24b0d-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="24b0d-138">Response</span></span>
+<span data-ttu-id="24b0d-139">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="24b0d-139">The following is an example of the response.</span></span>
+><span data-ttu-id="24b0d-140">**Nota:** el objeto de respuesta que se muestra aquí podría ser más cortos para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="24b0d-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="24b0d-141">Se devolverán todas las propiedades de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="24b0d-141">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

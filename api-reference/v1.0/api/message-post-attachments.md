@@ -3,70 +3,71 @@ title: Agregar datos adjuntos
 description: 'Use esta API para agregar un objeto attachment a un mensaje. '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 089a82883adb1f0e5373d03a55fc0842b791aee3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 8a55331752eb435400b19b02760d974dea972a3e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814808"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954991"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="dbe8a-103">Agregar datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="dbe8a-103">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="c62e9-103">Agregar datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="c62e9-103">Add attachment</span></span>
 
-<span data-ttu-id="dbe8a-104">Use esta API para agregar un objeto [attachment](../resources/attachment.md) a un mensaje.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-104">Use this API to add an [attachment](../resources/attachment.md) to a message.</span></span> 
+<span data-ttu-id="c62e9-104">Use esta API para agregar un objeto [attachment](../resources/attachment.md) a un mensaje.</span><span class="sxs-lookup"><span data-stu-id="c62e9-104">Use this API to add an [attachment](../resources/attachment.md) to a message.</span></span> 
 
-<span data-ttu-id="dbe8a-105">Los datos adjuntos pueden ser de uno de los tipos siguientes:</span><span class="sxs-lookup"><span data-stu-id="dbe8a-105">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="c62e9-105">Los datos adjuntos pueden ser de uno de los tipos siguientes:</span><span class="sxs-lookup"><span data-stu-id="c62e9-105">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="dbe8a-106">Un archivo (recurso [fileAttachment](../resources/fileattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-106">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="dbe8a-107">Un elemento (contacto, evento o mensaje, representado por un recurso [itemAttachment](../resources/itemattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-107">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
-* <span data-ttu-id="dbe8a-108">Un vínculo a un archivo (recurso [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-108">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="c62e9-106">Un archivo (recurso [fileAttachment](../resources/fileattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="c62e9-106">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="c62e9-107">Un elemento (contacto, evento o mensaje, representado por un recurso [itemAttachment](../resources/itemattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="c62e9-107">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
+* <span data-ttu-id="c62e9-108">Un vínculo a un archivo (recurso [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="c62e9-108">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="dbe8a-109">Todos estos tipos de recursos de datos adjuntos se derivan del recurso [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-109">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="c62e9-109">Todos estos tipos de recursos de datos adjuntos se derivan del recurso [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="c62e9-109">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-<span data-ttu-id="dbe8a-110">Puede agregar datos adjuntos a un mensaje existente publicándolos en su colección de datos adjuntos, o puede agregar datos adjuntos a un mensaje que se [crea y envía en el acto](../api/user-sendmail.md).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-110">You can add an attachment to an existing message by posting to its attachments collection, or you can add an attachment to a message that is being [created and sent on the fly](../api/user-sendmail.md).</span></span>
+<span data-ttu-id="c62e9-110">Puede agregar datos adjuntos a un mensaje existente publicándolos en su colección de datos adjuntos, o puede agregar datos adjuntos a un mensaje que se [crea y envía en el acto](../api/user-sendmail.md).</span><span class="sxs-lookup"><span data-stu-id="c62e9-110">You can add an attachment to an existing message by posting to its attachments collection, or you can add an attachment to a message that is being [created and sent on the fly](../api/user-sendmail.md).</span></span>
 
-<span data-ttu-id="dbe8a-111">Puesto que actualmente hay un límite de 4 MB en el tamaño total de cada solicitud REST, esto limita el tamaño de los datos adjuntos que agregar a menos de 4 MB.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-111">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
-## <a name="permissions"></a><span data-ttu-id="dbe8a-112">Permisos</span><span class="sxs-lookup"><span data-stu-id="dbe8a-112">Permissions</span></span>
-<span data-ttu-id="dbe8a-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c62e9-111">Puesto que actualmente hay un límite de 4 MB en el tamaño total de cada solicitud REST, esto limita el tamaño de los datos adjuntos que agregar a menos de 4 MB.</span><span class="sxs-lookup"><span data-stu-id="c62e9-111">Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c62e9-112">Permisos</span><span class="sxs-lookup"><span data-stu-id="c62e9-112">Permissions</span></span>
+<span data-ttu-id="c62e9-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c62e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dbe8a-115">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="dbe8a-115">Permission type</span></span>      | <span data-ttu-id="dbe8a-116">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="dbe8a-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c62e9-115">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="c62e9-115">Permission type</span></span>      | <span data-ttu-id="c62e9-116">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="c62e9-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dbe8a-117">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="dbe8a-117">Delegated (work or school account)</span></span> | <span data-ttu-id="dbe8a-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dbe8a-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="dbe8a-119">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dbe8a-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dbe8a-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dbe8a-120">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="dbe8a-121">Aplicación</span><span class="sxs-lookup"><span data-stu-id="dbe8a-121">Application</span></span> | <span data-ttu-id="dbe8a-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dbe8a-122">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="c62e9-117">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="c62e9-117">Delegated (work or school account)</span></span> | <span data-ttu-id="c62e9-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c62e9-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="c62e9-119">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c62e9-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c62e9-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c62e9-120">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="c62e9-121">Aplicación</span><span class="sxs-lookup"><span data-stu-id="c62e9-121">Application</span></span> | <span data-ttu-id="c62e9-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c62e9-122">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dbe8a-123">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="dbe8a-123">HTTP request</span></span>
-<span data-ttu-id="dbe8a-124"><!-- { "blockType": "ignored" } -->Datos adjuntos de un [mensaje](../resources/message.md) en el buzón del usuario.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-124"><!-- { "blockType": "ignored" } --> Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+## <a name="http-request"></a><span data-ttu-id="c62e9-123">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="c62e9-123">HTTP request</span></span>
+<span data-ttu-id="c62e9-124"><!-- { "blockType": "ignored" } -->Datos adjuntos de un [mensaje](../resources/message.md) en el buzón del usuario.</span><span class="sxs-lookup"><span data-stu-id="c62e9-124"><!-- { "blockType": "ignored" } --> Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-<span data-ttu-id="dbe8a-125">Datos adjuntos de un [message](../resources/message.md) contenido en una [mailFolder](../resources/mailfolder.md) de nivel superior en el buzón de un usuario.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-125">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="c62e9-125">Datos adjuntos de un [message](../resources/message.md) contenido en una [mailFolder](../resources/mailfolder.md) de nivel superior en el buzón de un usuario.</span><span class="sxs-lookup"><span data-stu-id="c62e9-125">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 ```http
 POST /me/mailFolders/{id}/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-<span data-ttu-id="dbe8a-p102">Datos adjuntos de un [message](../resources/message.md) contenido en una carpeta secundaria de una [mailFolder](../resources/mailfolder.md) en el buzón de un usuario.  El ejemplo siguiente muestra un nivel de anidamiento, pero un mensaje puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="c62e9-p102">Datos adjuntos de un [message](../resources/message.md) contenido en una carpeta secundaria de una [mailFolder](../resources/mailfolder.md) en el buzón de un usuario.  El ejemplo siguiente muestra un nivel de anidamiento, pero un mensaje puede estar ubicado en un elemento secundario de un elemento secundario y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="c62e9-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 ```http
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="dbe8a-128">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="dbe8a-128">Request headers</span></span>
-| <span data-ttu-id="dbe8a-129">Nombre</span><span class="sxs-lookup"><span data-stu-id="dbe8a-129">Name</span></span>       | <span data-ttu-id="dbe8a-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="dbe8a-130">Type</span></span> | <span data-ttu-id="dbe8a-131">Descripción</span><span class="sxs-lookup"><span data-stu-id="dbe8a-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c62e9-128">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="c62e9-128">Request headers</span></span>
+| <span data-ttu-id="c62e9-129">Nombre</span><span class="sxs-lookup"><span data-stu-id="c62e9-129">Name</span></span>       | <span data-ttu-id="c62e9-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="c62e9-130">Type</span></span> | <span data-ttu-id="c62e9-131">Descripción</span><span class="sxs-lookup"><span data-stu-id="c62e9-131">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="dbe8a-132">Autorización</span><span class="sxs-lookup"><span data-stu-id="dbe8a-132">Authorization</span></span>  | <span data-ttu-id="dbe8a-133">string</span><span class="sxs-lookup"><span data-stu-id="dbe8a-133">string</span></span>  | <span data-ttu-id="dbe8a-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="dbe8a-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dbe8a-136">Content-Type</span></span> | <span data-ttu-id="dbe8a-137">string</span><span class="sxs-lookup"><span data-stu-id="dbe8a-137">string</span></span>  | <span data-ttu-id="dbe8a-p104">Naturaleza de los datos en el cuerpo de una entidad. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-p104">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="c62e9-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="c62e9-132">Authorization</span></span>  | <span data-ttu-id="c62e9-133">string</span><span class="sxs-lookup"><span data-stu-id="c62e9-133">string</span></span>  | <span data-ttu-id="c62e9-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c62e9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c62e9-136">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c62e9-136">Content-Type</span></span> | <span data-ttu-id="c62e9-137">string</span><span class="sxs-lookup"><span data-stu-id="c62e9-137">string</span></span>  | <span data-ttu-id="c62e9-p104">Naturaleza de los datos en el cuerpo de una entidad. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="c62e9-p104">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dbe8a-140">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="dbe8a-140">Request body</span></span>
-<span data-ttu-id="dbe8a-141">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-141">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c62e9-140">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="c62e9-140">Request body</span></span>
+<span data-ttu-id="c62e9-141">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [Attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="c62e9-141">In the request body, supply a JSON representation of [Attachment](../resources/attachment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dbe8a-142">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dbe8a-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c62e9-142">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c62e9-142">Response</span></span>
 
-<span data-ttu-id="dbe8a-143">Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [Attachment](../resources/attachment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-143">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
+<span data-ttu-id="c62e9-143">Si se ejecuta correctamente, este método devuelve el código de respuesta `201 Created` y el objeto [Attachment](../resources/attachment.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c62e9-143">If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.</span></span>
 
-## <a name="example-file-attachment"></a><span data-ttu-id="dbe8a-144">Ejemplo (datos adjuntos del archivo)</span><span class="sxs-lookup"><span data-stu-id="dbe8a-144">Example (file attachment)</span></span>
+## <a name="example-file-attachment"></a><span data-ttu-id="c62e9-144">Ejemplo (datos adjuntos del archivo)</span><span class="sxs-lookup"><span data-stu-id="c62e9-144">Example (file attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dbe8a-145">Solicitud</span><span class="sxs-lookup"><span data-stu-id="dbe8a-145">Request</span></span>
-<span data-ttu-id="dbe8a-146">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-146">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c62e9-145">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c62e9-145">Request</span></span>
+<span data-ttu-id="c62e9-146">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c62e9-146">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
@@ -84,9 +85,9 @@ Content-length: 142
 }
 ```
 
-<span data-ttu-id="dbe8a-147">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="dbe8a-147">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="dbe8a-148">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dbe8a-148">Response</span></span>
-<span data-ttu-id="dbe8a-149">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-149">Here is an example of the response.</span></span>
+<span data-ttu-id="c62e9-147">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="c62e9-147">In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="c62e9-148">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c62e9-148">Response</span></span>
+<span data-ttu-id="c62e9-149">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="c62e9-149">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,10 +112,10 @@ Content-length: 202
 
 ```
 
-## <a name="example-item-attachment"></a><span data-ttu-id="dbe8a-150">Ejemplo (datos adjuntos del elemento)</span><span class="sxs-lookup"><span data-stu-id="dbe8a-150">Example (item attachment)</span></span>
+## <a name="example-item-attachment"></a><span data-ttu-id="c62e9-150">Ejemplo (datos adjuntos del elemento)</span><span class="sxs-lookup"><span data-stu-id="c62e9-150">Example (item attachment)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dbe8a-151">Solicitud</span><span class="sxs-lookup"><span data-stu-id="dbe8a-151">Request</span></span>
-<span data-ttu-id="dbe8a-152">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-152">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c62e9-151">Solicitud</span><span class="sxs-lookup"><span data-stu-id="c62e9-151">Request</span></span>
+<span data-ttu-id="c62e9-152">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="c62e9-152">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkpsDRVK"],
@@ -148,8 +149,8 @@ Content-length: 200
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="dbe8a-153">Respuesta</span><span class="sxs-lookup"><span data-stu-id="dbe8a-153">Response</span></span>
-<span data-ttu-id="dbe8a-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="dbe8a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c62e9-153">Respuesta</span><span class="sxs-lookup"><span data-stu-id="c62e9-153">Response</span></span>
+<span data-ttu-id="c62e9-p105">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="c62e9-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
