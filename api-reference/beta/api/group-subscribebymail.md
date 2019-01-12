@@ -2,47 +2,49 @@
 title: 'group: subscribeByMail'
 description: Llamar a este método, se habilitará el usuario actual recibir notificaciones de correo electrónico para este grupo, sobre publicaciones nuevas, eventos y los archivos de ese grupo. Compatible con sólo los grupos de Office 365.
 localization_priority: Normal
-ms.openlocfilehash: 5cbb5d461f5e3cc71790f6546c6ebf638ffa31d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: da277a586a793c07067f793088b15d4570efbf1c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813170"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984678"
 ---
-# <a name="group-subscribebymail"></a><span data-ttu-id="42911-104">group: subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="42911-104">group: subscribeByMail</span></span>
+# <a name="group-subscribebymail"></a><span data-ttu-id="ce0ac-104">group: subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="ce0ac-104">group: subscribeByMail</span></span>
 
-> <span data-ttu-id="42911-105">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="42911-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="42911-106">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="42911-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ce0ac-105">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ce0ac-106">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="42911-107">Llamar a este método, se habilitará el usuario actual recibir notificaciones de correo electrónico para este grupo, sobre publicaciones nuevas, eventos y los archivos de ese grupo.</span><span class="sxs-lookup"><span data-stu-id="42911-107">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.</span></span> <span data-ttu-id="42911-108">Compatible con sólo los grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="42911-108">Supported for Office 365 Groups only.</span></span>
+<span data-ttu-id="ce0ac-107">Llamar a este método, se habilitará el usuario actual recibir notificaciones de correo electrónico para este grupo, sobre publicaciones nuevas, eventos y los archivos de ese grupo.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-107">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.</span></span> <span data-ttu-id="ce0ac-108">Compatible con sólo los grupos de Office 365.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-108">Supported for Office 365 Groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="42911-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="42911-109">Permissions</span></span>
-<span data-ttu-id="42911-p104">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42911-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ce0ac-109">Permisos</span><span class="sxs-lookup"><span data-stu-id="ce0ac-109">Permissions</span></span>
+<span data-ttu-id="ce0ac-p104">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce0ac-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="42911-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="42911-112">Permission type</span></span>      | <span data-ttu-id="42911-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="42911-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ce0ac-112">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="ce0ac-112">Permission type</span></span>      | <span data-ttu-id="ce0ac-113">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="ce0ac-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="42911-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="42911-114">Delegated (work or school account)</span></span> | <span data-ttu-id="42911-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42911-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="42911-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="42911-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42911-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="42911-117">Not supported.</span></span>    |
-|<span data-ttu-id="42911-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="42911-118">Application</span></span> | <span data-ttu-id="42911-119">No admitida.</span><span class="sxs-lookup"><span data-stu-id="42911-119">Not supported.</span></span> |
+|<span data-ttu-id="ce0ac-114">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="ce0ac-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ce0ac-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce0ac-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ce0ac-116">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ce0ac-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce0ac-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-117">Not supported.</span></span>    |
+|<span data-ttu-id="ce0ac-118">Aplicación</span><span class="sxs-lookup"><span data-stu-id="ce0ac-118">Application</span></span> | <span data-ttu-id="ce0ac-119">No admitida.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="42911-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="42911-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ce0ac-120">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="ce0ac-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/subscribeByMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="42911-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="42911-121">Request headers</span></span>
-| <span data-ttu-id="42911-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="42911-122">Header</span></span>       | <span data-ttu-id="42911-123">Valor</span><span class="sxs-lookup"><span data-stu-id="42911-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ce0ac-121">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="ce0ac-121">Request headers</span></span>
+| <span data-ttu-id="ce0ac-122">Encabezado</span><span class="sxs-lookup"><span data-stu-id="ce0ac-122">Header</span></span>       | <span data-ttu-id="ce0ac-123">Valor</span><span class="sxs-lookup"><span data-stu-id="ce0ac-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="42911-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="42911-124">Authorization</span></span>  | <span data-ttu-id="42911-p105">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="42911-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="42911-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="42911-127">Prefer</span></span> | <span data-ttu-id="42911-128">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="42911-128">return=minimal.</span></span> <span data-ttu-id="42911-129">Si el encabezado de respuesta “mínimo” se incluye en el encabezado de solicitud, una respuesta correcta devolverá un código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="42911-129">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="42911-130">Opcional.</span><span class="sxs-lookup"><span data-stu-id="42911-130">Optional.</span></span>  | 
+| <span data-ttu-id="ce0ac-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce0ac-124">Authorization</span></span>  | <span data-ttu-id="ce0ac-p105">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ce0ac-127">Prefer</span><span class="sxs-lookup"><span data-stu-id="ce0ac-127">Prefer</span></span> | <span data-ttu-id="ce0ac-128">return=minimal.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-128">return=minimal.</span></span> <span data-ttu-id="ce0ac-129">Si el encabezado de respuesta “mínimo” se incluye en el encabezado de solicitud, una respuesta correcta devolverá un código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-129">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="ce0ac-130">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-130">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="42911-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="42911-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ce0ac-131">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="ce0ac-131">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="42911-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="42911-132">Response</span></span>
-<span data-ttu-id="42911-p107">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="42911-p107">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ce0ac-132">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ce0ac-132">Response</span></span>
+<span data-ttu-id="ce0ac-p107">Si se ejecuta correctamente, este método devuelve el código de respuesta `200 OK`. No devuelve nada en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-p107">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="42911-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="42911-135">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="42911-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="42911-136">Request</span></span>
-<span data-ttu-id="42911-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="42911-137">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ce0ac-135">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ce0ac-135">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="ce0ac-136">Solicitud</span><span class="sxs-lookup"><span data-stu-id="ce0ac-136">Request</span></span>
+<span data-ttu-id="ce0ac-137">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-137">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
@@ -51,8 +53,8 @@ POST /groups/{id}/subscribeByMail
 POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 ```
 
-#### <a name="response"></a><span data-ttu-id="42911-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="42911-138">Response</span></span>
-<span data-ttu-id="42911-139">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="42911-139">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="ce0ac-138">Respuesta</span><span class="sxs-lookup"><span data-stu-id="ce0ac-138">Response</span></span>
+<span data-ttu-id="ce0ac-139">Este es un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="ce0ac-139">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

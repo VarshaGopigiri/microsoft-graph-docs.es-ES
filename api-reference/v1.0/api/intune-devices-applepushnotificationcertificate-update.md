@@ -3,28 +3,29 @@ title: Actualizar applePushNotificationCertificate
 description: Actualice las propiedades de un objeto applePushNotificationCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2b0726ba347e9dd2c74e2c35c16f60935ac39465
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 128769688dcde3f6549ee2d0963853892fd7efa2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884892"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986631"
 ---
-# <a name="update-applepushnotificationcertificate"></a><span data-ttu-id="4a2c5-103">Actualizar applePushNotificationCertificate</span><span class="sxs-lookup"><span data-stu-id="4a2c5-103">Update applePushNotificationCertificate</span></span>
+# <a name="update-applepushnotificationcertificate"></a><span data-ttu-id="4a5d7-103">Actualizar applePushNotificationCertificate</span><span class="sxs-lookup"><span data-stu-id="4a5d7-103">Update applePushNotificationCertificate</span></span>
 
-> <span data-ttu-id="4a2c5-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="4a5d7-104">**Nota:** El uso de las API de Microsoft Graph para configurar las directivas y los controles de Intune requiere que el cliente tenga la [licencia correcta](https://go.microsoft.com/fwlink/?linkid=839381) para el servicio Intune.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="4a2c5-105">Actualice las propiedades de un objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="4a2c5-105">Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="4a2c5-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="4a2c5-106">Prerequisites</span></span>
-<span data-ttu-id="4a2c5-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4a2c5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4a5d7-105">Actualice las propiedades de un objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="4a5d7-105">Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4a5d7-106">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="4a5d7-106">Prerequisites</span></span>
+<span data-ttu-id="4a5d7-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4a5d7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a2c5-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="4a2c5-109">Permission type</span></span>|<span data-ttu-id="4a2c5-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="4a2c5-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4a5d7-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="4a5d7-109">Permission type</span></span>|<span data-ttu-id="4a5d7-110">Permisos (de más a menos privilegiados)</span><span class="sxs-lookup"><span data-stu-id="4a5d7-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4a2c5-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="4a2c5-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4a2c5-112">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a2c5-112">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="4a2c5-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4a2c5-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4a2c5-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-114">Not supported.</span></span>|
-|<span data-ttu-id="4a2c5-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="4a2c5-115">Application</span></span>|<span data-ttu-id="4a2c5-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-116">Not supported.</span></span>|
+|<span data-ttu-id="4a5d7-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="4a5d7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="4a5d7-112">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a5d7-112">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="4a5d7-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4a5d7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4a5d7-114">No admitida.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-114">Not supported.</span></span>|
+|<span data-ttu-id="4a5d7-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="4a5d7-115">Application</span></span>|<span data-ttu-id="4a5d7-116">No admitida.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4a2c5-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4a2c5-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4a5d7-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="4a5d7-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,34 +34,34 @@ ms.locfileid: "27884892"
 PATCH /deviceManagement/applePushNotificationCertificate
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4a2c5-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4a2c5-118">Request headers</span></span>
-|<span data-ttu-id="4a2c5-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="4a2c5-119">Header</span></span>|<span data-ttu-id="4a2c5-120">Valor</span><span class="sxs-lookup"><span data-stu-id="4a2c5-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4a5d7-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="4a5d7-118">Request headers</span></span>
+|<span data-ttu-id="4a5d7-119">Encabezado</span><span class="sxs-lookup"><span data-stu-id="4a5d7-119">Header</span></span>|<span data-ttu-id="4a5d7-120">Valor</span><span class="sxs-lookup"><span data-stu-id="4a5d7-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4a2c5-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="4a2c5-121">Authorization</span></span>|<span data-ttu-id="4a2c5-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4a2c5-123">Accept</span><span class="sxs-lookup"><span data-stu-id="4a2c5-123">Accept</span></span>|<span data-ttu-id="4a2c5-124">application/json</span><span class="sxs-lookup"><span data-stu-id="4a2c5-124">application/json</span></span>|
+|<span data-ttu-id="4a5d7-121">Autorización</span><span class="sxs-lookup"><span data-stu-id="4a5d7-121">Authorization</span></span>|<span data-ttu-id="4a5d7-122">Se requiere &lt;token&gt; de portador.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4a5d7-123">Accept</span><span class="sxs-lookup"><span data-stu-id="4a5d7-123">Accept</span></span>|<span data-ttu-id="4a5d7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="4a5d7-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4a2c5-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4a2c5-125">Request body</span></span>
-<span data-ttu-id="4a2c5-126">En el cuerpo de la solicitud, especifique una representación JSON del objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="4a2c5-126">In the request body, supply a JSON representation for the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4a5d7-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="4a5d7-125">Request body</span></span>
+<span data-ttu-id="4a5d7-126">En el cuerpo de la solicitud, especifique una representación JSON del objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="4a5d7-126">In the request body, supply a JSON representation for the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.</span></span>
 
-<span data-ttu-id="4a2c5-127">En la tabla siguiente se muestran las propiedades necesarias para crear el objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="4a2c5-127">The following table shows the properties that are required when you create the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span></span>
+<span data-ttu-id="4a5d7-127">En la tabla siguiente se muestran las propiedades necesarias para crear el objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="4a5d7-127">The following table shows the properties that are required when you create the [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).</span></span>
 
-|<span data-ttu-id="4a2c5-128">Propiedad</span><span class="sxs-lookup"><span data-stu-id="4a2c5-128">Property</span></span>|<span data-ttu-id="4a2c5-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="4a2c5-129">Type</span></span>|<span data-ttu-id="4a2c5-130">Descripción</span><span class="sxs-lookup"><span data-stu-id="4a2c5-130">Description</span></span>|
+|<span data-ttu-id="4a5d7-128">Propiedad</span><span class="sxs-lookup"><span data-stu-id="4a5d7-128">Property</span></span>|<span data-ttu-id="4a5d7-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="4a5d7-129">Type</span></span>|<span data-ttu-id="4a5d7-130">Descripción</span><span class="sxs-lookup"><span data-stu-id="4a5d7-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4a2c5-131">id</span><span class="sxs-lookup"><span data-stu-id="4a2c5-131">id</span></span>|<span data-ttu-id="4a2c5-132">String</span><span class="sxs-lookup"><span data-stu-id="4a2c5-132">String</span></span>|<span data-ttu-id="4a2c5-133">Identificador único del certificado</span><span class="sxs-lookup"><span data-stu-id="4a2c5-133">Unique Identifier for the certificate</span></span>|
-|<span data-ttu-id="4a2c5-134">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="4a2c5-134">appleIdentifier</span></span>|<span data-ttu-id="4a2c5-135">String</span><span class="sxs-lookup"><span data-stu-id="4a2c5-135">String</span></span>|<span data-ttu-id="4a2c5-136">Id. de Apple de la cuenta que se usó para crear el certificado push MDM.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-136">Apple Id of the account used to create the MDM push certificate.</span></span>|
-|<span data-ttu-id="4a2c5-137">topicIdentifier</span><span class="sxs-lookup"><span data-stu-id="4a2c5-137">topicIdentifier</span></span>|<span data-ttu-id="4a2c5-138">String</span><span class="sxs-lookup"><span data-stu-id="4a2c5-138">String</span></span>|<span data-ttu-id="4a2c5-139">Id. del tema</span><span class="sxs-lookup"><span data-stu-id="4a2c5-139">Topic Id.</span></span>|
-|<span data-ttu-id="4a2c5-140">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4a2c5-140">lastModifiedDateTime</span></span>|<span data-ttu-id="4a2c5-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4a2c5-141">DateTimeOffset</span></span>|<span data-ttu-id="4a2c5-142">Fecha y hora de la última modificación del certificado de notificación push de Apple.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-142">Last modified date and time for Apple push notification certificate.</span></span>|
-|<span data-ttu-id="4a2c5-143">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="4a2c5-143">expirationDateTime</span></span>|<span data-ttu-id="4a2c5-144">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4a2c5-144">DateTimeOffset</span></span>|<span data-ttu-id="4a2c5-145">Fecha y hora de la expiración del certificado de notificación push de Apple.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-145">The expiration date and time for Apple push notification certificate.</span></span>|
-|<span data-ttu-id="4a2c5-146">certificado</span><span class="sxs-lookup"><span data-stu-id="4a2c5-146">certificate</span></span>|<span data-ttu-id="4a2c5-147">String</span><span class="sxs-lookup"><span data-stu-id="4a2c5-147">String</span></span>|<span data-ttu-id="4a2c5-148">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="4a2c5-148">Not yet documented</span></span>|
+|<span data-ttu-id="4a5d7-131">id</span><span class="sxs-lookup"><span data-stu-id="4a5d7-131">id</span></span>|<span data-ttu-id="4a5d7-132">String</span><span class="sxs-lookup"><span data-stu-id="4a5d7-132">String</span></span>|<span data-ttu-id="4a5d7-133">Identificador único del certificado</span><span class="sxs-lookup"><span data-stu-id="4a5d7-133">Unique Identifier for the certificate</span></span>|
+|<span data-ttu-id="4a5d7-134">appleIdentifier</span><span class="sxs-lookup"><span data-stu-id="4a5d7-134">appleIdentifier</span></span>|<span data-ttu-id="4a5d7-135">String</span><span class="sxs-lookup"><span data-stu-id="4a5d7-135">String</span></span>|<span data-ttu-id="4a5d7-136">Id. de Apple de la cuenta que se usó para crear el certificado push MDM.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-136">Apple Id of the account used to create the MDM push certificate.</span></span>|
+|<span data-ttu-id="4a5d7-137">topicIdentifier</span><span class="sxs-lookup"><span data-stu-id="4a5d7-137">topicIdentifier</span></span>|<span data-ttu-id="4a5d7-138">String</span><span class="sxs-lookup"><span data-stu-id="4a5d7-138">String</span></span>|<span data-ttu-id="4a5d7-139">Id. del tema</span><span class="sxs-lookup"><span data-stu-id="4a5d7-139">Topic Id.</span></span>|
+|<span data-ttu-id="4a5d7-140">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4a5d7-140">lastModifiedDateTime</span></span>|<span data-ttu-id="4a5d7-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4a5d7-141">DateTimeOffset</span></span>|<span data-ttu-id="4a5d7-142">Fecha y hora de la última modificación del certificado de notificación push de Apple.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-142">Last modified date and time for Apple push notification certificate.</span></span>|
+|<span data-ttu-id="4a5d7-143">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="4a5d7-143">expirationDateTime</span></span>|<span data-ttu-id="4a5d7-144">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4a5d7-144">DateTimeOffset</span></span>|<span data-ttu-id="4a5d7-145">Fecha y hora de la expiración del certificado de notificación push de Apple.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-145">The expiration date and time for Apple push notification certificate.</span></span>|
+|<span data-ttu-id="4a5d7-146">certificado</span><span class="sxs-lookup"><span data-stu-id="4a5d7-146">certificate</span></span>|<span data-ttu-id="4a5d7-147">String</span><span class="sxs-lookup"><span data-stu-id="4a5d7-147">String</span></span>|<span data-ttu-id="4a5d7-148">Todavía no documentado</span><span class="sxs-lookup"><span data-stu-id="4a5d7-148">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4a2c5-149">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4a2c5-149">Response</span></span>
-<span data-ttu-id="4a2c5-150">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-150">If successful, this method returns a `200 OK` response code and an updated [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4a5d7-149">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4a5d7-149">Response</span></span>
+<span data-ttu-id="4a5d7-150">Si se ejecuta correctamente, este método devuelve un código de respuesta `200 OK` y un objeto [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) actualizado en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-150">If successful, this method returns a `200 OK` response code and an updated [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a2c5-151">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4a2c5-151">Example</span></span>
-### <a name="request"></a><span data-ttu-id="4a2c5-152">Solicitud</span><span class="sxs-lookup"><span data-stu-id="4a2c5-152">Request</span></span>
-<span data-ttu-id="4a2c5-153">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-153">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4a5d7-151">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="4a5d7-151">Example</span></span>
+### <a name="request"></a><span data-ttu-id="4a5d7-152">Solicitud</span><span class="sxs-lookup"><span data-stu-id="4a5d7-152">Request</span></span>
+<span data-ttu-id="4a5d7-153">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-153">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
@@ -75,8 +76,8 @@ Content-length: 271
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4a2c5-154">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4a2c5-154">Response</span></span>
-<span data-ttu-id="4a2c5-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="4a2c5-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4a5d7-154">Respuesta</span><span class="sxs-lookup"><span data-stu-id="4a5d7-154">Response</span></span>
+<span data-ttu-id="4a5d7-p102">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="4a5d7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
