@@ -3,12 +3,13 @@ title: Tipo de recurso omaSettingInteger
 description: Definición del entero de la configuración de OMA.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f40d5d225c2b4b99573c482b39f886bcd463e9fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f46398e43f2a7ea224a07b1637deca2c3a6ed067
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987534"
 ---
 # <a name="omasettinginteger-resource-type"></a>Tipo de recurso omaSettingInteger
 
@@ -22,7 +23,7 @@ Hereda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |displayName|cadena|Nombre para mostrar. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descripción|Cadena|Descripción. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|descripción|String|Descripción. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|cadena|OMA. Heredado de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |valor|Int32|Valor.|
 

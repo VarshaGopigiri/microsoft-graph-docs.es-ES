@@ -2,12 +2,13 @@
 title: 'reportRoot: getYammerActivityUserCounts'
 description: Obtiene las tendencias sobre el número de usuarios únicos que publicaron, leyeron y etiquetaron como “Me gusta” mensajes de Yammer.
 localization_priority: Normal
-ms.openlocfilehash: 04a874a74740eadad72098c68eba5723e6d6368b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 1da8bdb8f12d66bd5e14176bd99cce4e1066a63b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887251"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984517"
 ---
 # <a name="reportroot-getyammeractivityusercounts"></a>reportRoot: getYammerActivityUserCounts
 

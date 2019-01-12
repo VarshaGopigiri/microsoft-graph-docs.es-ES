@@ -3,12 +3,13 @@ title: List threads
 description: Obtenga todos los hilos de un grupo.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: a15c9def749717f7134bc0a34cac868e0bc10897
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: a79a6fc2568ae550d2323a401c4e0fd22b6d9b09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984503"
 ---
 # <a name="list-threads"></a>List threads
 

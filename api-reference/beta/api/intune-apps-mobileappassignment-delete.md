@@ -3,12 +3,13 @@ title: Eliminar mobileAppAssignment
 description: Elimina un mobileAppAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 65d511a390a75412d363d70059728f95d0e59064
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c13037573e7b4247a9cb796be37c36d49b595deb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983971"
 ---
 # <a name="delete-mobileappassignment"></a>Eliminar mobileAppAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssig
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

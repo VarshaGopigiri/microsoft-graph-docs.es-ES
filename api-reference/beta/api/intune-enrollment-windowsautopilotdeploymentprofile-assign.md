@@ -3,12 +3,13 @@ title: asignar acción
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d938a70438e901e3135e3505fd581de820266870
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d1661b0a6a3a22e1ae08e54f33836aa065d430f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870346"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977902"
 ---
 # <a name="assign-action"></a>asignar acción
 
@@ -48,7 +49,7 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |DeviceID|Colección de cadenas|Todavía no documentado|
 

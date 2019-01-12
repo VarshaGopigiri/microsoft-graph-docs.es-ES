@@ -3,12 +3,13 @@ title: tipo de recurso windows81SCEPCertificateProfile
 description: " Perfil de certificado SCEP"
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 99c33d679d1c227414e6c6562d4ddbfc63d56f97
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 04fe22f8aa8897343d51ab0a16f2aa836e0d93a5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990736"
 ---
 # <a name="windows81scepcertificateprofile-resource-type"></a>tipo de recurso windows81SCEPCertificateProfile
 
@@ -57,7 +58,7 @@ Hereda de [windows81CertificateProfileBase](../resources/intune-deviceconfig-win
 |certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Certificado del almacén de destino. Los valores posibles son: `user` y `machine`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |groupAssignments|colección de [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|La lista de asignaciones de grupo para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |asignaciones|Colección [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|La lista de tareas para el perfil de configuración del dispositivo. Heredado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

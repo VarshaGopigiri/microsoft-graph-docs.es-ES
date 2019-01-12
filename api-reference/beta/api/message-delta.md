@@ -2,12 +2,14 @@
 title: 'mensaje: delta'
 description: Obtenga un conjunto de mensajes que se hayan agregado, eliminado o actualizado en una carpeta determinada.
 localization_priority: Normal
-ms.openlocfilehash: 149acc68081d8497567f07fe6d58f4b42a0c031d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7344b53e69916870e1c2705d6b251be2fff61721
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980527"
 ---
 # <a name="message-delta"></a>mensaje: delta
 

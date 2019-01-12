@@ -3,12 +3,13 @@ title: tipo de enumeración automaticUpdateMode
 description: Valores posibles para el modo de actualización automática.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 07a6b410289ea6455d0f6756efa7d1ec4d735ce4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a31c50b5d16f4b9be8db4f95f2bbd9bd0ca123e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987863"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enumeración automaticUpdateMode
 
@@ -16,7 +17,7 @@ ms.locfileid: "27849990"
 
 Valores posibles para el modo de actualización automática.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |notifyDownload|1|Notificar al descargarlos.|

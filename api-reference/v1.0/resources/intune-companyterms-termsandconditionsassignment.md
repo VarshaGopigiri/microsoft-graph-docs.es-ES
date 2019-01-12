@@ -3,12 +3,13 @@ title: Tipo de recurso termsAndConditionsAssignment
 description: C) de la directiva a un grupo determinado. Se solicitará a los usuarios del grupo que acepten los términos para inscribir sus dispositivos en Intune.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ba87e7b5f3b39f20befb1536f3a87583437eeee3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a7fca6763ec7214b2dfd111996e965f9e9c995ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889372"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979484"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>Tipo de recurso termsAndConditionsAssignment
 
@@ -27,7 +28,7 @@ Una entidad termsAndConditionsAssignment representa la asignación de una direct
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador único de la entidad.|
+|id|String|Identificador único de la entidad.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino de asignación al que está asignada la directiva de términos y condiciones.|
 
 ## <a name="relationships"></a>Relaciones

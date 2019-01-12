@@ -3,12 +3,13 @@ title: Tipo de recurso mobileAppContentFile
 description: Contiene las propiedades de un archivo instalador único que está asociado a una versión de mobileAppContent determinada.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b27f34830c4266b35deafbc67b5c5536f10aec1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6f745367a61a61511cdab35e556538631fa93962
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986092"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -29,11 +30,11 @@ Contiene las propiedades de un archivo instalador único que está asociado a un
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|azureStorageUri|Cadena|El URI de Azure Storage.|
+|azureStorageUri|String|El URI de Azure Storage.|
 |isCommitted|Booleano|Un valor que indica si el archivo está confirmado.|
 |id|Cadena|El Id. de archivo.|
 |createdDateTime|DateTimeOffset|La hora en que se ha creado el archivo.|
-|name|Cadena|El nombre del archivo.|
+|name|String|El nombre del archivo.|
 |size|Int64|El tamaño del archivo antes del cifrado.|
 |sizeEncrypted|Int64|El tamaño del archivo después del cifrado.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|La hora en que expira el URI de Azure Storage.|

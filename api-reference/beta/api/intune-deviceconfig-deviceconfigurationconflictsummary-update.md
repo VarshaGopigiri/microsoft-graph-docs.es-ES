@@ -3,12 +3,13 @@ title: Actualizar deviceConfigurationConflictSummary
 description: Actualizar las propiedades de un objeto deviceConfigurationConflictSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4fb01b5fe7321d25e6b1d7e346a029e830375247
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2f9bc6beef2fac86f0be79189db3bcf91f787237
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812764"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978308"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Actualizar deviceConfigurationConflictSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -46,10 +47,10 @@ En el cuerpo de la solicitud, proporcionar una representación de JSON para el o
 
 La siguiente tabla muestran las propiedades que son necesarias cuando se crea el [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Colección [settingSource](../resources/intune-deviceconfig-settingsource.md)|El conjunto de directivas en conflicto con la configuración determinada|
-|id|Cadena|El identificador para este conjunto de directivas en conflicto. Este identificador es los identificadores de todas las directivas en ConflictingDeviceConfigurations en orden lexicográfica separados por caracteres de subrayado.|
+|id|String|El identificador para este conjunto de directivas en conflicto. Este identificador es los identificadores de todas las directivas en ConflictingDeviceConfigurations en orden lexicográfica separados por caracteres de subrayado.|
 |contributingSettings|Colección String|El conjunto de configuraciones en conflicto con las directivas determinadas|
 |deviceCheckinsImpacted|Int32|El recuento de protecciones afectado por la configuración y las directivas en conflicto|
 

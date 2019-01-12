@@ -3,12 +3,13 @@ title: tipo de enumeración deviceEnrollmentType
 description: Posibles maneras de agregar un dispositivo móvil a la administración.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d27e57538927966ea741ae1da57f0a02f9de862d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 72acbdf412ebb91269fcdc3f851ffbc204e0274b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807204"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987758"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeración deviceEnrollmentType
 
@@ -17,7 +18,7 @@ ms.locfileid: "27807204"
 Posibles maneras de agregar un dispositivo móvil a la administración.
 
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|No se recopiló el valor predeterminado, el tipo de inscripción.|
 |userEnrollment|1|Inscripción impulsada de usuario a través del canal BYOD.|

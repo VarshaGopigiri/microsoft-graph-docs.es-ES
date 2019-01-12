@@ -3,12 +3,13 @@ title: Obtener iosVppApp
 description: Lea las propiedades y las relaciones del objeto iosVppApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3eb91c8356a3f50c0d7e98ee4d2e3218c5fa0f29
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ec5dfd213b0dcc051eeeae2924a8431a7f624a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985392"
 ---
 # <a name="get-iosvppapp"></a>Obtener iosVppApp
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

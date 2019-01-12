@@ -3,12 +3,13 @@ title: 'usuario: findRoomLists'
 description: Obtener las listas de salas definidas en un inquilino.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855737"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979295"
 ---
 # <a name="user-findroomlists"></a>usuario: findRoomLists
 
@@ -41,7 +42,7 @@ GET /users/<id>/findRoomLists
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 
 

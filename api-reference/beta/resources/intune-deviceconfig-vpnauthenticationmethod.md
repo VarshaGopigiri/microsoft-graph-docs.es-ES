@@ -3,12 +3,13 @@ title: tipo de enumeración vpnAuthenticationMethod
 description: Método de autenticación de VPN.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6954360a273a30457819dd865b34d771d1344b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c946f531502bd3361068c813eefc39416537e942
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888728"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986183"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>tipo de enumeración vpnAuthenticationMethod
 
@@ -18,7 +19,7 @@ ms.locfileid: "27888728"
 
 Método de autenticación de VPN.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |certificado|0|Realice la autenticación con un certificado.|
 |usernameAndPassword|1|Use el nombre de usuario y la contraseña para la autenticación.|

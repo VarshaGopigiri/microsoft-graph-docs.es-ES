@@ -3,12 +3,13 @@ title: Obtener deviceComplianceActionItem
 description: Lea las propiedades y las relaciones de los objetos deviceComplianceActionItem.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5499b64a98fd14467ab01f925928f5bf0b62ceb3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 007fbfdc8df421c505e947879e679d661f16cc56
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841667"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982914"
 ---
 # <a name="get-devicecomplianceactionitem"></a>Obtener deviceComplianceActionItem
 

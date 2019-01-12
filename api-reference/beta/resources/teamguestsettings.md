@@ -2,12 +2,14 @@
 title: tipo de recurso teamGuestSettings
 description: Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el equipo.
 localization_priority: Normal
-ms.openlocfilehash: 15644f3761329589a4d770e777ae5fd63751e6be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: d601ac704734f4c46e8b7bef9e8d3feb45905384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851544"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987296"
 ---
 # <a name="teamguestsettings-resource-type"></a>tipo de recurso teamGuestSettings
 
@@ -16,7 +18,7 @@ ms.locfileid: "27851544"
 Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el [equipo](team.md).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Booleano|Si se establece en true, invitados puede agregar y actualizar los canales.|
 |allowDeleteChannels|Booleano|Si se establece en true, invitados puede eliminar canales.|

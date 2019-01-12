@@ -3,12 +3,13 @@ title: tipo de recurso educationSubmissionResource
 description: 'Un contenedor alrededor de un recurso para su uso en una presentación. El contenedor agrega un puntero al recurso de asignación si esto se copió desde la asignación.  '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 8703072fccb77a2577db6ce0717647e79a47fdc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f242e4206c174634a3a8c3248942284798bb1550
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979183"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>tipo de recurso educationSubmissionResource
 
@@ -25,7 +26,7 @@ Un contenedor alrededor de un recurso para su uso en una presentación. El conte
 |[Delete](../api/educationsubmissionresource-delete.md) | Ninguno |Eliminación de un objeto **educationSubmissionResource** . |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |assignmentResourceUrl|Cadena|Puntero a la asignación desde la que se ha copiado este recurso. Si es null, el alumno carga el recurso.|
 |id|Cadena| Solo lectura.|

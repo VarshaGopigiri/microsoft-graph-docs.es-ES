@@ -3,12 +3,13 @@ title: Obtener deviceComplianceDeviceOverview
 description: Lea las propiedades y las relaciones del objeto deviceComplianceDeviceOverview.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d67dbe6ba7c962b783ec3dff73fbca8213c8c3e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 55fbce5619b1283207bacf5182de7d2c2c6eb896
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979190"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>Obtener deviceComplianceDeviceOverview
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

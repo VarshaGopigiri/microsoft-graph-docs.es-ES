@@ -3,18 +3,19 @@ title: tipo de recurso userActivationCounts
 description: La siguiente es una representación JSON del recurso
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: cae194545f13d312ee78b572659017752e43a6a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 535355d6be3f6b617d7eb293890aa05a517cfc3b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845293"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980352"
 ---
 # <a name="useractivationcounts-resource-type"></a>tipo de recurso userActivationCounts
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad          | Tipo   | Description                              |
+| Propiedad          | Tipo   | Descripción                              |
 | :---------------- | :----- | ---------------------------------------- |
 | ProductType ofrece       | Cadena | El tipo de producto, como "Office 365 ProPlus", "Cliente del proyecto" o "Visio Pro para Office 365". |
 | lastActivatedDate | Fecha   | La fecha de la última activación.       |

@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentFailureDetails (función)
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 128ad6e3985649b3dbaffa101c19f0b2440b0838
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840372"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980380"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails (función)
 
@@ -37,19 +38,19 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |skip|Int32|Todavía no documentado|
 |top|Int32|Todavía no documentado|
-|filter|Cadena|Todavía no documentado|
-|skipToken|Cadena|Todavía no documentado|
+|filter|String|Todavía no documentado|
+|skipToken|String|Todavía no documentado|
 
 
 

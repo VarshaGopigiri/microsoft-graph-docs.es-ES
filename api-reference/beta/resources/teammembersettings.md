@@ -2,12 +2,14 @@
 title: tipo de recurso teamMemberSettings
 description: Configuración para configurar si los miembros pueden realizar determinadas acciones, por ejemplo, creación de canales y agrega bots, en el equipo.
 localization_priority: Normal
-ms.openlocfilehash: 85f8794ea3564174c75f38228f3891bcd264df2e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3854481e89f04fa727b77c6b4f8699c62a16d739
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851383"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978252"
 ---
 # <a name="teammembersettings-resource-type"></a>tipo de recurso teamMemberSettings
 
@@ -16,7 +18,7 @@ ms.locfileid: "27851383"
 Configuración para configurar si los miembros pueden realizar determinadas acciones, por ejemplo, creación de canales y agrega bots, en el [equipo](team.md).
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Booleano|Si se establece a miembros es true, puede agregar y actualizar los canales.|
 |allowDeleteChannels|Booleano|Si se establece en true, miembros puede eliminar canales.|

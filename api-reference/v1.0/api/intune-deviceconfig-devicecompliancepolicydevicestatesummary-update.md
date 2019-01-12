@@ -3,12 +3,13 @@ title: Actualizar deviceCompliancePolicyDeviceStateSummary
 description: Actualice las propiedades de un objeto deviceCompliancePolicyDeviceStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 35f55096ed9307bc4a4c29cf98418b8f36b45cbd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c33e43f507aff3f887018e78fab4ed22263ce93
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807437"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979526"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Actualizar deviceCompliancePolicyDeviceStateSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Número de dispositivos que se encuentran en el período de gracia|
 |configManagerCount|Int32|Número de dispositivos cuyo cumplimiento lo administra System Center Configuration Manager|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |unknownDeviceCount|Int32|Número de dispositivos desconocidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos no aplicables|
 |compliantDeviceCount|Int32|Número de dispositivos compatibles|

@@ -3,12 +3,13 @@ title: Crear deviceInstallState
 description: Cree un objeto deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 244a03aa7c1f42c6e71591a3358ab7fca67a9b48
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfc1adae0175dcdf2c19d90d54bf597316919994
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853889"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990910"
 ---
 # <a name="create-deviceinstallstate"></a>Crear deviceInstallState
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,13 +50,13 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |deviceName|String|Nombre del dispositivo.|
 |deviceId|String|Id. del dispositivo|
 |lastSyncDateTime|DateTimeOffset|Fecha y hora de la última sincronización.|
 |installState|[installState](../resources/intune-books-installstate.md)|El estado de instalación del libro electrónico. Los valores posibles son: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed` y `unknown`.|
 |errorCode|String|El código de error si hay errores de instalación.|
-|osVersion|Cadena|Versión del sistema operativo.|
+|osVersion|String|Versión del sistema operativo.|
 |osDescription|String|Descripción del sistema operativo.|
 |userName|String|Nombre de usuario del dispositivo.|
 

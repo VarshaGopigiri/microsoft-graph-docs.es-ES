@@ -2,12 +2,14 @@
 title: tipo de recurso educationAssignmentResource
 description: Un objeto contenedor que almacena los recursos asociados a una asignación. El contenedor de agrega la propiedad **distributeForStudentWork** y se indica que se va este recurso
 localization_priority: Normal
-ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: eb0879737d0375bf2463268fe29f2c98f2b6ed51
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868841"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991352"
 ---
 # <a name="educationassignmentresource-resource-type"></a>tipo de recurso educationAssignmentResource
 
@@ -25,10 +27,10 @@ Un objeto contenedor que almacena los recursos asociados a una asignación. El c
 |[Delete](../api/educationassignmentresource-delete.md) | Ninguno |Eliminación de un objeto **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Propiedades
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Booleano|Indica si se debe copiar este recurso a cada envío estudiantes para el tipo de modificación y envío.|
-|id|Cadena| Identificador de este recurso. Solo lectura.|
+|id|String| Identificador de este recurso. Solo lectura.|
 |resource|[educationResource](educationresource.md)|Objeto de recurso que se ha asociado con esta asignación.|
 
 ## <a name="relationships"></a>Relaciones

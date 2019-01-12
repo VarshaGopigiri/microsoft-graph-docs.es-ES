@@ -3,12 +3,13 @@ title: List directoryRoleTemplates
 description: Recuperar una lista de objetos de directoryroletemplate.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: a61127b7fdd31ce55f44a42ac847c5ac50932cf6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b9e0f6b4d40e2549043a9d469462bdc52fc1033d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848569"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980737"
 ---
 # <a name="list-directoryroletemplates"></a>List directoryRoleTemplates
 
@@ -35,7 +36,7 @@ Este método **no** es compatible con los [parámetros de consulta de OData](htt
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

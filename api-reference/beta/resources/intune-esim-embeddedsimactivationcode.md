@@ -3,12 +3,13 @@ title: tipo de recurso embeddedSIMActivationCode
 description: El código de activación SIM incrustado como proporcionada por el operador móvil.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41976b92cfe6b6f695631dbd6c0d928c6ae99271
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af8bf020953dbc014f42aa6d363d3ca9e30db8a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878067"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987408"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>tipo de recurso embeddedSIMActivationCode
 
@@ -18,7 +19,7 @@ ms.locfileid: "27878067"
 
 El código de activación SIM incrustado como proporcionada por el operador móvil.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |integratedCircuitCardIdentifier|Cadena|El identificador de tarjeta de circuito integrado (ICCID) para este de código de activación de SIM incrustado como proporcionado por el operador de telefonía móvil.
 La entrada debe coincidir con la siguiente expresión regular: ' ^\[0-9\]{19}\[0-9\]?$ '.|

@@ -3,12 +3,13 @@ title: Obtener windows81TrustedRootCertificate
 description: Leer las propiedades y las relaciones del objeto windows81TrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 35bf33bcc9002e8b8f42d34a13ddcf52604297e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5bd6bdc6e5e91fe1ec4f10e751e035936fe683fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842865"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977804"
 ---
 # <a name="get-windows81trustedrootcertificate"></a>Obtener windows81TrustedRootCertificate
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -3,12 +3,13 @@ title: Actualizar windowsAutopilotDeploymentProfileAssignment
 description: Actualizar las propiedades de un objeto windowsAutopilotDeploymentProfileAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c5ee35e308b5a7392c3dff2c4ead307d9735e0b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 601fd03c2a7a088619d7fd5cbdb7149967de2946
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837578"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977857"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>Actualizar windowsAutopilotDeploymentProfileAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

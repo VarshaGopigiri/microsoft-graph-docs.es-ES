@@ -1,14 +1,15 @@
 ---
 title: Enumerar sectionGroups
 description: Recupera una lista de grupos de sección desde el bloc de notas especificado.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 91ea3188b32657ad83963f12214e9987aa785d0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: e24c0d9fb59c05b02d36402a2d181db0c696e3c4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869142"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983404"
 ---
 # <a name="list-sectiongroups"></a>Enumerar sectionGroups
 

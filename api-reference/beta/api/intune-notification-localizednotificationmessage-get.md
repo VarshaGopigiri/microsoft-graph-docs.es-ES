@@ -3,12 +3,13 @@ title: Obtener localizedNotificationMessage
 description: Lea las propiedades y las relaciones del objeto localizedNotificationMessage.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5ac4dcc167b44d243b0920bea62ce3ebf220d9b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2ef1e5ad26bc8d2541b9506b572747d3e9314904
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872943"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980331"
 ---
 # <a name="get-localizednotificationmessage"></a>Obtener localizedNotificationMessage
 

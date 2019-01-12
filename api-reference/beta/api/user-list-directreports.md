@@ -2,12 +2,14 @@
 title: List directReports
 description: Obtiene los subordinados directos del usuario. Devuelve los usuarios y los contactos para los que se asigna este usuario como administrador.
 localization_priority: Normal
-ms.openlocfilehash: 9a5a76b98dfd47d9a0d1d4daceeb6a93c4dc5163
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: da881d46b69153a85de225b895f6b1c2d622ff09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863437"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984440"
 ---
 # <a name="list-directreports"></a>List directReports
 

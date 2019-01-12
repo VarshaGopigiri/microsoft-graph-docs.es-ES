@@ -3,12 +3,13 @@ title: tipo de recurso depIOSEnrollmentProfile
 description: El recurso DepIOSEnrollmentProfile representa un perfil de inscripción de programa de inscripción de dispositivos de Apple (DEP) específico para la configuración de iOS. Este tipo de perfil debe asignarse a los números de serie de Apple DEP antes de que los dispositivos correspondientes pueden inscribirse a través de DEP.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49e681129c4961638d9443886a89ea05708385ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 92a5e277f0356445ae1dd36c3a643d73624e2207
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869863"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985616"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>tipo de recurso depIOSEnrollmentProfile
 

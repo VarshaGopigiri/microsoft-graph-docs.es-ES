@@ -3,12 +3,13 @@ title: acción assignUserToDevice
 description: Asigna el usuario a los dispositivos de piloto automático.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 33145d5852d80eef529cc58e34524c170bba62cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3c91107ade1ce04a1aef9bac0876335ca2093555
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859461"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979533"
 ---
 # <a name="assignusertodevice-action"></a>acción assignUserToDevice
 
@@ -39,7 +40,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,8 +50,8 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|userPrincipalName|Cadena|Todavía no documentado|
-|addressableUserName|Cadena|Todavía no documentado|
+|userPrincipalName|String|Todavía no documentado|
+|addressableUserName|String|Todavía no documentado|
 
 
 

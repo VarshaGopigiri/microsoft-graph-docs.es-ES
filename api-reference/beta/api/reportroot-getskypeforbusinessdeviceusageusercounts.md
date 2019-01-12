@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessDeviceUsageUserCounts'
 description: Obtiene las tendencias de uso sobre el número de usuarios de la organización que se conectaron con la aplicación de Skype Empresarial. También obtendrá un desglose por el tipo de dispositivo (Windows, teléfono Windows, teléfono Android, iPhone o iPad) donde se instaló y se usó la aplicación cliente de Skype Empresarial en la organización.
 localization_priority: Normal
-ms.openlocfilehash: 677899902bc90dbbf4ae31eba7c9bf6961f7a7d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: eaf134fdfa528f2e26783c07090a45a7d08831e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822319"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978560"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageUserCounts
 

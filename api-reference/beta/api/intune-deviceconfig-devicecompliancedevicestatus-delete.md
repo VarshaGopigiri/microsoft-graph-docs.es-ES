@@ -3,12 +3,13 @@ title: Eliminar deviceComplianceDeviceStatus
 description: Elimina un deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ee965b8fab7f6857ab0fc6385a9777a0acd89212
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3b9d6a224ce0e2ddbbeff2caf9316e36463edb47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853273"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980758"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>Eliminar deviceComplianceDeviceStatus
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

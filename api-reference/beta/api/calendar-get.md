@@ -2,12 +2,14 @@
 title: Obtener calendario
 description: 'Obtiene las propiedades y relaciones de un objeto de calendario. El calendario puede ser una de un usuario '
 localization_priority: Normal
-ms.openlocfilehash: 6c6deaaeb0cef1ae33c70a1140f835024dc093fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: d54d408966e359a99c16c91113ea5ba7eebb3d1d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829529"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990635"
 ---
 # <a name="get-calendar"></a>Obtener calendario
 
@@ -55,7 +57,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No proporcione un cuerpo de solicitud para este método.

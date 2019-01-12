@@ -3,12 +3,13 @@ title: Configuración de actualización
 description: 'Actualizar las propiedades del objeto settings. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: f39c0a2e98951bb61b0a9af1b5a1a196248d6118
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: be8ed27ecff80017cab56e1d3d20755cf68351cc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836249"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980275"
 ---
 # <a name="update-settings"></a>Configuración de actualización
 
@@ -47,7 +48,7 @@ PATCH https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/settings/
 
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |contributionToContentDiscoveryDisabled|Booleano|En el valor true deshabilita el acceso de delegado a la API de [tendencias](/graph/api/resources/insights-trending?view=graph-rest-beta) y deshabilitar el acceso a los documentos de Office profundizar para el usuario. Configuración en true también afecta a la relevancia del contenido que se muestra en Office 365: por ejemplo, los sitios que se sugiere en la página principal de SharePoint y la vista de detección en OneDrive para la empresa muestran resultados menos relevantes. Esta configuración refleja el estado de control en [Office profundizar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 

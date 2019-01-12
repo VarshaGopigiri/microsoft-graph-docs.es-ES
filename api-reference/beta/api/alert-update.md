@@ -1,12 +1,15 @@
 ---
 title: Update alert
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
-ms.openlocfilehash: 9f8040220c64310a04293d43c0c31704c3f49261
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 8b8e21334d9a94d6a41c1e283959bd6473c11e1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27091228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990624"
 ---
 # <a name="update-alert"></a>Update alert
 

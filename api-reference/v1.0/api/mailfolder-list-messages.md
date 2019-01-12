@@ -2,12 +2,14 @@
 title: List messages
 description: Obtiene todos los mensajes en el buzón del usuario que inició sesión o esos mensajes en una carpeta especificada en el buzón.
 localization_priority: Priority
-ms.openlocfilehash: a58d6e3c51cf85992129b3ba9c8e3996fa9841f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: f306554c29fa9c662a35c278cf73373e84e9780b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825371"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984769"
 ---
 # <a name="list-messages"></a>List messages
 

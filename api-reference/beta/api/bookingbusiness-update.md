@@ -2,12 +2,14 @@
 title: Actualizar bookingbusiness
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 53115469821bc39c05c4e7a262e5f9fc15b376ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 3f20d466614e35cce701999fabfb631e081a02ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825000"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991342"
 ---
 # <a name="update-bookingbusiness"></a>Actualizar bookingbusiness
 
@@ -40,13 +42,13 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|La dirección de la empresa.|
 |businessHours|colección de [bookingWorkHours](../resources/bookingworkhours.md)|Las horas de operación para la empresa.|
-|businessType|Cadena|El tipo de negocio.|
-|defaultCurrencyIso|Cadena|El código para la moneda que la empresa opera en Microsoft Bookings.|
-|displayName|Cadena|Un nombre para la empresa que interactúa con los clientes.|
+|businessType|String|El tipo de negocio.|
+|defaultCurrencyIso|String|El código para la moneda que la empresa opera en Microsoft Bookings.|
+|displayName|String|Un nombre para la empresa que interactúa con los clientes.|
 |email|String|La dirección de correo electrónico para el negocio.|
 |phone|String|El número de teléfono para el negocio.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Especifica cómo se pueden crear reservas para este negocio.|
-|webSiteUrl|Cadena|La dirección URL del sitio web de negocio.|
+|webSiteUrl|String|La dirección URL del sitio web de negocio.|
 
 ## <a name="response"></a>Respuesta
 Si se ejecuta correctamente, este método devuelve un código de respuesta `204, No Content`. No devuelve nada en el cuerpo de la respuesta.

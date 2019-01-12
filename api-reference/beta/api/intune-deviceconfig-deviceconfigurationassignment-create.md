@@ -3,12 +3,13 @@ title: Crear deviceConfigurationAssignment
 description: Cree un objeto deviceConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 076e8134892ac699670734255798f2297752acae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e555254f473b119b5a1e27cb2c5823e7863060fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979176"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Crear deviceConfigurationAssignment
 

@@ -2,12 +2,14 @@
 title: Tipo de recurso telecomExpenseManagementPartner
 description: Los recursos telecomExpenseManagementPartner representan los metadatos y el estado de un servicio TEM específico. Una vez que su organización haya incorporado a un partner, este puede estar habilitado o no para activar o desactivar la funcionalidad TEM.
 localization_priority: Normal
-ms.openlocfilehash: a0a2f3f3f4bbd0111ec8904c3b4d800da404f19a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: c515b21f5727bcb60588a6722cc3fd6b02719e36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981801"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Tipo de recurso telecomExpenseManagementPartner
 

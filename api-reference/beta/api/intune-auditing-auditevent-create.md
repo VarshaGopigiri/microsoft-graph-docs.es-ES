@@ -3,12 +3,13 @@ title: Crear auditEvent
 description: Cree un objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dcc7a84e22b86e4ec0f9e5d17eb05f75cbe83c6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6b673e2c7090ecfee3368d76f4690dd309ffdd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837887"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980282"
 ---
 # <a name="create-auditevent"></a>Crear auditEvent
 
@@ -38,7 +39,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |displayName|String|Nombre para mostrar del evento.|
 |componentName|String|Nombre del componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuario y aplicación de AAD que están asociados al evento de auditoría.|

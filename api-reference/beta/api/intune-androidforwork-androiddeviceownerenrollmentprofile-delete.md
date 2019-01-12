@@ -3,12 +3,13 @@ title: Eliminar androidDeviceOwnerEnrollmentProfile
 description: Elimina un androidDeviceOwnerEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 11dd6edfeb052cd0cc8901c01b271be7c3359284
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d6d3b1d58049a34992983af7299d4af45381eef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866720"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985350"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>Eliminar androidDeviceOwnerEnrollmentProfile
 

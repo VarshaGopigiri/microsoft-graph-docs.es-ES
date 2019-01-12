@@ -2,12 +2,14 @@
 title: Lista los dispositivos de usuario
 description: Obtener una lista de los dispositivos de usuario que admiten las capacidades de Roma de proyecto. Esto incluye la capacidad para iniciar una aplicación, o de mensajes o enviar datos a una aplicación. Una vez que se realice una llamada GET en Windows Millennium Edition / dispositivos, pase el identificador del dispositivo para enviar un comando al dispositivo.
 localization_priority: Normal
-ms.openlocfilehash: 455a134b2edcf64255a2818887c6ff68959a1202
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 04b67b770eec38d9e70a2263cd54212077335c85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855926"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983544"
 ---
 # <a name="list-user-devices"></a>Lista los dispositivos de usuario
 

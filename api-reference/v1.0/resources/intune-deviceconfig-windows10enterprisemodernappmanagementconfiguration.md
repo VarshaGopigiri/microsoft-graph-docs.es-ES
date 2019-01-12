@@ -3,12 +3,13 @@ title: Tipo de recurso windows10EnterpriseModernAppManagementConfiguration
 description: Configuración de administración de aplicaciones modernas de Windows 10 Enterprise.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a9a2456936e2c97966c4606c41151218e1c2c49d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d823844cf1c5980807ec67fe022ecffb6c6e729b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831230"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990680"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>Tipo de recurso windows10EnterpriseModernAppManagementConfiguration
 

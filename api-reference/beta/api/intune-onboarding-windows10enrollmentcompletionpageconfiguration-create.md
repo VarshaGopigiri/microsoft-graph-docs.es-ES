@@ -3,12 +3,13 @@ title: Crear windows10EnrollmentCompletionPageConfiguration
 description: Crear un nuevo objeto windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa459255e48323c5f4e614dc9d12f8ae89d2f4e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d64ca5e5df475368e9b4848f57141884df5dd86
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862730"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984497"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Crear windows10EnrollmentCompletionPageConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -59,7 +60,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |blockDeviceSetupRetryByUser|Booleano|Permitir al usuario que vuelva a intentar la instalación en caso de error de instalación|
 |allowDeviceResetOnInstallFailure|Booleano|Permitir o bloquear el dispositivo restablecer en caso de error de instalación|
 |allowLogCollectionOnInstallFailure|Booleano|Permitir o bloquear registro colección en caso de error de instalación|
-|customErrorMessage|Cadena|Establecer el mensaje de error personalizado para mostrar al producirse un error de instalación|
+|customErrorMessage|String|Establecer el mensaje de error personalizado para mostrar al producirse un error de instalación|
 |installProgressTimeoutInMinutes|Int32|Establecer tiempo de espera de progreso de la instalación en minutos|
 |allowDeviceUseOnInstallFailure|Booleano|Permitir que el usuario continuar utilizando el dispositivo en caso de error de instalación|
 |selectedMobileAppIds|Colección String|Aplicaciones seleccionadas para realizar un seguimiento del estado de la instalación|

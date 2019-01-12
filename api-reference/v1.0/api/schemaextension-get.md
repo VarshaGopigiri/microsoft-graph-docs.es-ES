@@ -2,12 +2,13 @@
 title: Obtener schemaExtensions
 description: Obtiene las propiedades de la definición schemaExtensions especificada.
 localization_priority: Normal
-ms.openlocfilehash: 694dd29bb9ed997512cf389888f4b69fa9ad290c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 70a4fdc5e51a5965098a6b0331a31c200b553ec9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810741"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980317"
 ---
 # <a name="get-schemaextension"></a>Obtener schemaExtensions
 Obtiene las propiedades de la definición [schemaExtensions](../resources/schemaextension.md) especificada.

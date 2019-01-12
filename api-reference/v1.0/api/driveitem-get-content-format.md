@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Convertir a otros formatos
 localization_priority: Priority
-ms.openlocfilehash: 86210d4364f771d2bf6f8d0ebbdd70634521cd67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: d33e03df0abcc9417c0fe5bc241e654185bd4313
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978553"
 ---
 # <a name="download-a-file-in-another-format"></a>Descargar un archivo en otro formato
 
@@ -50,7 +51,7 @@ Los siguientes valores son válidos para el parámetro **format** :
 
 | Nombre            | Valor   | Descripción                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | Cadena  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
+| _if-none-match_ | String  | Si se incluye el encabezado de la solicitud y la eTag (o cTag) proporcionada coincide con la etiqueta actual del archivo, se devuelve una respuesta `HTTP 304 Not Modified`. |
 
 ## <a name="example"></a>Ejemplo
 

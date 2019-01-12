@@ -3,12 +3,13 @@ title: tipo de recurso officeClientConfiguration
 description: Configuración de cliente de Office.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ddc1846afe96c99b616f28d6c831adca3eae960
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879635"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984062"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso officeClientConfiguration
 
@@ -28,11 +29,11 @@ Configuración de cliente de Office.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador de la directiva de configuración de cliente de office.|
+|id|String|Identificador de la directiva de configuración de cliente de office.|
 |userPreferencePayload|Stream|Configuración de preferencias de JSON de cadenas en formato binario, estos valores pueden ser anulados por el usuario.|
 |policyPayload|Stream|Configuración de la directiva JSON de cadenas en formato binario, no se puede cambiar estos valores por el usuario.|
-|descripción|Cadena|Todavía no documentado|
-|displayName|Cadena|Administración descripción proporcionada por el del cliente de office de directiva de configuración.|
+|descripción|String|Todavía no documentado|
+|displayName|String|Administración descripción proporcionada por el del cliente de office de directiva de configuración.|
 |lastModifiedDateTime|DateTime|Última marca de datetime modificada de la directiva.|
 |prioridad|Int32|Valor de prioridad debe ser un valor único para cada directiva de un inquilino y se usará para la resolución de conflictos, los valores más bajos significan prioridad sea alta.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Protección de resumen de usuario para la directiva.|

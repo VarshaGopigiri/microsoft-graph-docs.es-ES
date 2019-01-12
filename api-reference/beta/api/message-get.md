@@ -3,12 +3,13 @@ title: Obtener mensaje
 description: Recuperar las propiedades y relaciones del objeto de mensaje.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5c83d0e9a59a69ebf0e20cfa0f883301b827c84f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 0ed3eaf35b2d7ce01c98d8c21fde72aaf2e44ad1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852391"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979456"
 ---
 # <a name="get-message"></a>Obtener mensaje
 
@@ -63,7 +64,7 @@ Puede usar el `$expand` expandida del parámetro de consulta en la propiedad de 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Prefer: outlook.body-content-type | string | Formato de las propiedades **body** y **uniqueBody** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, las propiedades **body** y **uniqueBody** se devuelven en formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

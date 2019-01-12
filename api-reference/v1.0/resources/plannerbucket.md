@@ -3,12 +3,13 @@ title: Tipo de recurso plannerBucket
 description: ) para las tareas de un plan de Office 365. Está contenida en un plannerPlan y puede tener una colección de plannerTasks.
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 592d0e24f527d7ae343bd29e71a3dfdf0247720f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 8cfc25e5554b20d4f808c8929b53549f4c44d7a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831461"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982837"
 ---
 # <a name="plannerbucket-resource-type"></a>Tipo de recurso plannerBucket
 
@@ -29,10 +30,10 @@ El recurso **plannerBucket** representa un depósito (o "columna personalizada")
 ## <a name="properties"></a>Propiedades
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|id|Cadena| Solo lectura. Identificador del depósito de. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
-|name|Cadena|Nombre del depósito.|
-|orderHint|Cadena|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
-|planId|Cadena|Id. de plan al que pertenece el depósito.|
+|id|String| Solo lectura. Identificador del depósito de. Es 28 caracteres de largo y entre mayúsculas y minúsculas. [Validación de formato](planner-identifiers-disclaimer.md) se realiza en el servicio.|
+|name|String|Nombre del depósito.|
+|orderHint|String|Sugerencia que se usa para ordenar los elementos de este tipo en una vista de lista. El formato se define tal como se describe [aquí](planner-order-hint-format.md).|
+|planId|String|Id. de plan al que pertenece el depósito.|
 
 ## <a name="relationships"></a>Relaciones
 | Relación | Tipo   |Descripción|

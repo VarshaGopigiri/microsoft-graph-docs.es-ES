@@ -3,12 +3,13 @@ title: Crear grupo
 description: 'Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:'
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 3f6a73b6fd2dcf76bb1ebd0fab4c02a673a1be8e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 2a3e0e20622db47d410b578249df94f3354e75ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849423"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981549"
 ---
 # <a name="create-group"></a>Crear grupo
 Use esta API para crear un grupo como se especifica en el cuerpo de la solicitud. Puede crear uno de los tres tipos de grupos:
@@ -37,17 +38,17 @@ POST /groups
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la siguiente tabla se muestra las propiedades del recurso de [grupo](../resources/group.md) para especificar cuando se crea un grupo. 
 
 | Propiedad | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| displayName | string | El nombre para mostrar en la libreta de direcciones del grupo. Necesario. |
-| mailEnabled | boolean | Establézcalo en **true** para grupos habilitados para correo. Debe establecer en **true** si la creación de un grupo de Office 365. Debe establecer en **false** si crear dinámico o grupo de seguridad. Necesario. |
-| mailNickname | string | El alias de correo del grupo. Necesario. |
-| securityEnabled | boolean | Establecer en **true** para grupos de seguridad. Debe establecer en **true** si la creación de un grupo de seguridad o dinámicos. Debe establecer en **false** si la creación de un grupo de Office 365. Necesario. |
+| displayName | string | El nombre para mostrar en la libreta de direcciones del grupo. Obligatorio. |
+| mailEnabled | boolean | Establézcalo en **true** para grupos habilitados para correo. Debe establecer en **true** si la creación de un grupo de Office 365. Debe establecer en **false** si crear dinámico o grupo de seguridad. Obligatorio. |
+| mailNickname | string | El alias de correo del grupo. Obligatorio. |
+| securityEnabled | boolean | Establecer en **true** para grupos de seguridad. Debe establecer en **true** si la creación de un grupo de seguridad o dinámicos. Debe establecer en **false** si la creación de un grupo de Office 365. Obligatorio. |
 | owners | colección string | Esta propiedad representa los propietarios para el grupo en tiempo de creación. Opcional. |
 | members | colección string | Esta propiedad representa a los miembros para el grupo en tiempo de creación. Opcional. |
 

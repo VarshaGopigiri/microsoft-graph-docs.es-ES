@@ -3,12 +3,13 @@ title: tipo de recurso onlineMeeting
 description: Captura información acerca de la reunión, incluida la dirección URL de la combinación, la lista de los asistentes y la descripción.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: b1a0b09c0e7c792b0a9662c08daecd212c027c89
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6bae6cf22e8790050f0b77ab903c5702354ea1f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805162"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980401"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
@@ -24,9 +25,9 @@ Captura información acerca de la reunión, incluida la dirección URL de la com
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad                  | Tipo                                                   | Description                                                                                                                |
+| Propiedad                  | Tipo                                                   | Descripción                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | Cadena                                                 | El nivel de acceso que controla la admisión a la reunión en línea. Los valores posibles son: `everyone`, `invited`, `locked`, `sameEnterprise` y `unknown`. |
+| accessLevel               | String                                                 | El nivel de acceso que controla la admisión a la reunión en línea. Los valores posibles son: `everyone`, `invited`, `locked`, `sameEnterprise` y `unknown`. |
 | Audioconferencia         | [Audioconferencia](audioconferencing.md)              | Representa la información de acceso telefónica de un onlineMeeting. |
 | canceledDateTime          | DateTime                                               | La hora cuando se canceló la reunión. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | El chat asociado a esta reunión. |
@@ -34,13 +35,13 @@ Captura información acerca de la reunión, incluida la dirección URL de la com
 | endDateTime               | DateTime                                               | Hora de finalización de la reunión. |
 | entryExitAnnouncement     | Booleano                                                | El estado de anuncios de asistencia para la reunión en línea. Cuando se habilitan los anuncios de asistencia, la reunión en línea anunciar los nombres de la combinación de participantswho la reunión a través de audio. |
 | expirationDateTime        | DateTime                                               | La fecha de la hora Universal coordinada (UTC) y la hora después de la cual absoluta se puede eliminar la reunión en línea. El día y la hora deben estar comprendido entre un año antes y diez años después, la fecha y hora actuales en el servidor. |
-| id                        | Cadena                                                 | El identificador asociado con la reunión en línea. Usar en una solicitud GET HTTP como el identificador. Solo lectura. Servidor que se generó. |
+| id                        | String                                                 | El identificador asociado con la reunión en línea. Usar en una solicitud GET HTTP como el identificador. Solo lectura. Servidor que se generó. |
 | isCancelled               | Booleano                                                | Si se ha cancelado la reunión. |
-| joinUrl                   | Cadena                                                 | La dirección URL que se usa cuando se se unió a la reunión en línea desde la web. |
-| meetingType               | Cadena                                                 | Los valores posibles son: `meetNow`, `scheduled`, `recurring`,`broadcast` |
+| joinUrl                   | String                                                 | La dirección URL que se usa cuando se se unió a la reunión en línea desde la web. |
+| meetingType               | String                                                 | Los valores posibles son: `meetNow`, `scheduled`, `recurring`,`broadcast` |
 | participants              | [meetingParticipants](meetingparticipants.md)          | Los participantes asociados a la reunión en línea.  Esto incluye el organizador y los asistentes. |
 | startDateTime             | DateTime                                               | Hora de inicio de la reunión. |
-| subject                   | Cadena                                                 | El asunto de la reunión en línea. |
+| subject                   | String                                                 | El asunto de la reunión en línea. |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno
