@@ -3,12 +3,13 @@ title: Crear iosLobAppProvisioningConfiguration
 description: Crear un nuevo objeto iosLobAppProvisioningConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7879cc256a041b960f8d4e728e19bfa5f4f0ffe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5a39a91156ebba649a3463568517d9b55a7fdfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944764"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Crear iosLobAppProvisioningConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,14 +49,14 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |expirationDateTime|DateTimeOffset|Fecha de caducidad opcional de perfiles y la hora.|
-|payloadFileName|Cadena|Nombre de archivo de carga (*.mobileprovision | *.xml).|
+|payloadFileName|String|Nombre de archivo de carga (*.mobileprovision | *.xml).|
 |carga útil|Binario|Carga útil. (Matriz de bytes codificada UTF8)|
 |createdDateTime|DateTimeOffset|Fecha y hora en la que se creó el objeto.|
-|descripción|Cadena|Descripción proporcionada por el administrador de la configuración del dispositivo.|
+|descripción|String|Descripción proporcionada por el administrador de la configuración del dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|Fecha y hora en la que se modificó el objeto por última vez.|
-|displayName|Cadena|Nombre proporcionado por el administrador de la configuración del dispositivo.|
+|displayName|String|Nombre proporcionado por el administrador de la configuración del dispositivo.|
 |versión|Int32|Versión de la configuración del dispositivo.|
 
 

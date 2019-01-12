@@ -2,12 +2,13 @@
 title: Crear o reemplazar una actividad
 description: Crear una nueva o reemplazar una actividad de usuario existente para su aplicación. Si desea crear una actividad de usuario y su relacionados **historyItems** en una sola solicitud, puede usar Insertar profundo.
 localization_priority: Normal
-ms.openlocfilehash: 01fa9fff306dbd07af0964f27dd97b288b6bab67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: eca8e03e45a5a2d4ae6c4c08218189edcf98a03a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944750"
 ---
 # <a name="create-or-replace-an-activity"></a>Crear o reemplazar una actividad
 
@@ -40,7 +41,7 @@ PUT /me/activities/{appActivityId}
 
 |Nombre | Tipo | Descripción|
 |:----|:-----|:-----------|
-|Autorización | string | {token} de portador. Obligatorio.|
+|Authorization | string | {token} de portador. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 

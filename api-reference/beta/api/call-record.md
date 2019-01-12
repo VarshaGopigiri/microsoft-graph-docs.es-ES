@@ -3,12 +3,13 @@ title: 'llamar a: registro'
 description: Registro de la llamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859580"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936371"
 ---
 # <a name="call-record"></a>llamar a: registro
 
@@ -40,7 +41,7 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro      | Tipo    |Description|
+| Parámetro      | Tipo    |Descripción|
 |:---------------|:--------|:----------|
 |solicita|colección de [mediaprompt](../resources/mediaprompt.md) | Colección de indicaciones para reproducir (si hay alguno) antes de la grabación se iniciará. Los clientes pueden elegir especificar la acción "playPrompt" por separado o especificar como parte de "registro" - principalmente todos los registros están precedido por un símbolo del sistema |
 |bargeInAllowed|Booleano| Permitir que los usuarios escriban opción antes de que finalice el símbolo del sistema.                                                                 |
@@ -50,7 +51,7 @@ En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes par�
 |playBeep|Booleano| Emite un pitido tras reproducir el símbolo del sistema.|
 |streamWhileRecording|Booleano|Si se establece en true, una ubicación de recursos será proporcionado en cuanto se inicia la grabación. |
 |stopTones|Colección String|Detener tonos especificados para finalizar la grabación.|
-|clientContext|Cadena|El contexto de cliente.|
+|clientContext|String|El contexto de cliente.|
 
 ## <a name="response"></a>Respuesta
 Devuelve `202 Accepted` código de respuesta y un encabezado de ubicación con un uri para el [commsOperation](../resources/commsoperation.md) creado para esta solicitud.

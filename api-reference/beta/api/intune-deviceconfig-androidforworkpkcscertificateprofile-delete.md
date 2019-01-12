@@ -3,12 +3,13 @@ title: Eliminar androidForWorkPkcsCertificateProfile
 description: Elimina un androidForWorkPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2cc4bb9cb186f5a1b1ffe749fe17b476898ebd4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 30b8aa1a1db24f7ab2fc987f252af1e9038ce6ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878613"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943434"
 ---
 # <a name="delete-androidforworkpkcscertificateprofile"></a>Eliminar androidForWorkPkcsCertificateProfile
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

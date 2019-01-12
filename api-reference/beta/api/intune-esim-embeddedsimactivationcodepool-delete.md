@@ -3,12 +3,13 @@ title: Eliminar embeddedSIMActivationCodePool
 description: Elimina un embeddedSIMActivationCodePool.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2c767ad68282a9bf408a5e50024ac4d79c6718d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d558495cd7b82ab82cbd7d86e48146780e254eb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858117"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944568"
 ---
 # <a name="delete-embeddedsimactivationcodepool"></a>Eliminar embeddedSIMActivationCodePool
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCo
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

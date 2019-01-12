@@ -3,12 +3,13 @@ title: Acción commit
 description: Confirma un archivo de una aplicación determinada.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 396c308a906698eb79657db95f2a3d32f7686a56
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2d144108bd28c6428e35d985783fd1730e374e8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939899"
 ---
 # <a name="commit-action"></a>Acción commit
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

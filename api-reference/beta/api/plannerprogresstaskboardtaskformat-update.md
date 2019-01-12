@@ -2,12 +2,14 @@
 title: Actualizar plannerProgressTaskBoardTaskFormat
 description: Actualizar las propiedades del objeto **plannerProgressTaskBoardTaskFormat**.
 localization_priority: Normal
-ms.openlocfilehash: 4fedbf9bc5edf90b78545a7e7dec29257b471fd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 63654112e2a8192d2f84ea42252491f03a839602
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945191"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Actualizar plannerProgressTaskBoardTaskFormat
 
@@ -39,7 +41,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|orderHint|Cadena|Valor de sugerencia que se utiliza para pedir la tarea en la vista de progreso de la placa de tarea. El formato se define en las [sugerencias de orden de uso en el organizador](../resources/planner-order-hint-format.md).|
+|orderHint|String|Valor de sugerencia que se utiliza para pedir la tarea en la vista de progreso de la placa de tarea. El formato se define en las [sugerencias de orden de uso en el organizador](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Respuesta
 

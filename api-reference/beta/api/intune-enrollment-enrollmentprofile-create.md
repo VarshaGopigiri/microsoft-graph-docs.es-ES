@@ -3,12 +3,13 @@ title: Crear enrollmentProfile
 description: Crear un nuevo objeto enrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f10c8b04a19f541305dd63ec2f063a4fff1d8226
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf4133e636cd9eedf7737e2003d1ba733a6e08ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843991"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934145"
 ---
 # <a name="create-enrollmentprofile"></a>Crear enrollmentProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,10 +50,10 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|El GUID para el objeto|
-|displayName|Cadena|Nombre del perfil|
-|descripción|Cadena|Descripción del perfil|
+|displayName|String|Nombre del perfil|
+|descripción|String|Descripción del perfil|
 |requiresUserAuthentication|Booleano|Indica si el perfil requiere autenticación de usuario|
-|configurationEndpointUrl|Cadena|Dirección url de extremo de configuración que se usará para inscripción|
+|configurationEndpointUrl|String|Dirección url de extremo de configuración que se usará para inscripción|
 |enableAuthenticationViaCompanyPortal|Booleano|Indica para autenticarse con Apple Asistente para la instalación en lugar de Portal de empresa.|
 
 

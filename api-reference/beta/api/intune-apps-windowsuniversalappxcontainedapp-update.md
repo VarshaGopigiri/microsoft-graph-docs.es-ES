@@ -3,12 +3,13 @@ title: Actualizar windowsUniversalAppXContainedApp
 description: Actualizar las propiedades de un objeto windowsUniversalAppXContainedApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 642921c66bfbc996c5c3b0f3f16cf812c75a5618
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a00075adac27b22b0e533fa922eb9077c88344d0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941033"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>Actualizar windowsUniversalAppXContainedApp
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -50,8 +51,8 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Se hereda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|Cadena|El identificador del modelo de usuario de aplicación de la aplicación contenido de una aplicación de WindowsUniversalAppX.|
+|id|String|Clave de la entidad. Se hereda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String|El identificador del modelo de usuario de aplicación de la aplicación contenido de una aplicación de WindowsUniversalAppX.|
 
 
 

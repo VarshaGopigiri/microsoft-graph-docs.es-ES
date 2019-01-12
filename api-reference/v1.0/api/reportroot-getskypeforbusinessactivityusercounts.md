@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessActivityUserCounts'
 description: Obtiene las tendencias sobre el número de usuarios únicos que organizaron y participaron en sesiones de conferencia realizadas en la organización con Skype Empresarial. En el informe, también se incluye el número de sesiones de punto a punto.
 localization_priority: Normal
-ms.openlocfilehash: 6a10f6a31bf0fd4470d8df4b232c6a57bdd0d462
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d50348da7418cf91c26e9f42b62ad2061c67580e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934439"
 ---
 # <a name="reportroot-getskypeforbusinessactivityusercounts"></a>reportRoot: getSkypeForBusinessActivityUserCounts
 

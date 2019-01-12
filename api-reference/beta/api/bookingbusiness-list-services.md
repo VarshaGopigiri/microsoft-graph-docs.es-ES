@@ -2,12 +2,14 @@
 title: Servicios de la lista
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: ceb26fe3e628db30860620871d495e98e80b711d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 9f00ca7be7c3e6e3633a69a4a21df5e9a556096d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829655"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941712"
 ---
 # <a name="list-services"></a>Servicios de la lista
 

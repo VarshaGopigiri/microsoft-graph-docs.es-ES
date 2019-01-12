@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentAbandonmentDetails (función)
 description: Informe detallan de metadatos por abandono de inscripción
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e2031657c3aff7d09d126b6eff01beaf34813a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840792"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939913"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails (función)
 
@@ -39,19 +40,19 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En la dirección URL de la solicitud, proporcione los siguientes parámetros de consulta con valores.
 La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |skip|Int32|Todavía no documentado|
 |top|Int32|Todavía no documentado|
-|filter|Cadena|Todavía no documentado|
-|skipToken|Cadena|Todavía no documentado|
+|filter|String|Todavía no documentado|
+|skipToken|String|Todavía no documentado|
 
 
 

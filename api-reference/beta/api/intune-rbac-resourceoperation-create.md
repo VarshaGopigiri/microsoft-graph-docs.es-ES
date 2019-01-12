@@ -3,12 +3,13 @@ title: Crear resourceOperation
 description: Cree un objeto resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8aa701d51d51d326340ff5ebddc9cc97c5962402
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862604"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938667"
 ---
 # <a name="create-resourceoperation"></a>Crear resourceOperation
 
@@ -38,7 +39,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,10 +50,10 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |id|Cadena|Clave de la operación de recursos. Solo lectura, generada automáticamente.|
-|resource|Cadena|Categoría de recurso al que pertenece esta operación.|
-|resourceName|Cadena|Nombre del recurso en el que se realiza esta operación.|
+|resource|String|Categoría de recurso al que pertenece esta operación.|
+|resourceName|String|Nombre del recurso en el que se realiza esta operación.|
 |actionName|Cadena|Tipo de acción que va a realizar esta operación. El actionName debe ser conciso y limitado al menor número de palabras posible.|
-|description|Cadena|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
+|description|String|Descripción de la operación de recursos. La descripción se usa en el texto al pasar el mouse para la operación si se muestra en Azure Portal.|
 |enabledForScopeValidation|Booleano|Determina si el permiso se valida para ámbitos definidos por la asignación de roles.|
 
 

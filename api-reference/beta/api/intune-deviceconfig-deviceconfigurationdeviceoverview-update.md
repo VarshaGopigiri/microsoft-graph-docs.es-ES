@@ -3,12 +3,13 @@ title: Actualizar deviceConfigurationDeviceOverview
 description: Actualice las propiedades de un objeto deviceConfigurationDeviceOverview.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b91138cfd3a63a44cfe8b5cda502f165705fad7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 79ff57c147a165f1670be733b7d14113ee7de382
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863969"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939395"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Actualizar deviceConfigurationDeviceOverview
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -56,7 +57,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |pendingCount|Int32|Número de dispositivos pendientes|
 |notApplicableCount|Int32|Número de dispositivos no aplicables|
 |notApplicablePlatformCount|Int32|Número de dispositivos no aplicables debido a la plataforma de error de coincidencia y la directiva|

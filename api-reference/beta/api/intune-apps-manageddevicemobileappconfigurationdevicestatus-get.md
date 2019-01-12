@@ -3,12 +3,13 @@ title: Obtener managedDeviceMobileAppConfigurationDeviceStatus
 description: Leer las propiedades y las relaciones del objeto managedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fccf60e5ba74c6d110742e8cea9209735316a247
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 75b8745737bafc690569259e5f4b1970ba1081a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818315"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945002"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>Obtener managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -41,7 +42,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -3,12 +3,13 @@ title: Tipo de recurso managedAppRegistration
 description: El objeto ManagedAppEntity es el tipo de entidad base para todos los demás tipos de entidad en flujos de trabajo de administración de aplicaciones.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7543f7cf591e1e89c05359634b7c4ec55a327b33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a954c3465ba4bb4d2f7372ee544a00fcd8c2af7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825770"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937092"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -32,13 +33,13 @@ El recurso ManagedAppRegistration representa los detalles de una aplicación, co
 |managementSdkVersion|Cadena|Versión del SDK de administración de la aplicación|
 |platformVersion|Cadena|Versión del sistema operativo|
 |deviceType|Cadena|Tipo de dispositivo host|
-|deviceTag|Cadena|Etiqueta generada por el SDK de administración de la aplicación, que ayuda a relacionar las aplicaciones que se hospedan en el mismo dispositivo. No garantiza que las aplicaciones se relacionen en todas las condiciones.|
+|deviceTag|String|Etiqueta generada por el SDK de administración de la aplicación, que ayuda a relacionar las aplicaciones que se hospedan en el mismo dispositivo. No garantiza que las aplicaciones se relacionen en todas las condiciones.|
 |deviceName|Cadena|Nombre del dispositivo host|
 |flaggedReasons|colección de [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Cero o más razones por las que se ha marcado el registro de una aplicación. Por ejemplo, una aplicación que se ejecuta en el dispositivo liberado|
-|userId|Cadena|El identificador de usuario al que pertenece este registro de la aplicación.|
+|userId|String|El identificador de usuario al que pertenece este registro de la aplicación.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|El identificador del paquete de aplicación|
-|id|Cadena|Clave de la entidad.|
-|version|Cadena|Versión de la entidad.|
+|id|String|Clave de la entidad.|
+|version|String|Versión de la entidad.|
 
 ## <a name="relationships"></a>Relaciones
 |Relación|Tipo|Descripción|

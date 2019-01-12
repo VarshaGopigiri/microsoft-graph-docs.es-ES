@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal
-ms.openlocfilehash: f7293b986b5e6d77d0601cffb6b60edc5dfd2dd7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 9147d434a94380c4d178efdf80ccba90734bf96f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856031"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939045"
 ---
 # <a name="webpart-resource"></a>recursos de webPart
 
@@ -38,7 +39,7 @@ El recurso de **webPart** representa el tipo y la información de representació
 
 | Propiedad                | Tipo             | Descripción
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | Cadena           | Un identificador único que especifica el tipo de elemento Web. Solo lectura.
+| **type**                | String           | Un identificador único que especifica el tipo de elemento Web. Solo lectura.
 | **data**                | [sitePageData][] | Las propiedades necesarias para el elemento Web (varía según el elemento Web)
 
 [sitePageData]: sitepagedata.md

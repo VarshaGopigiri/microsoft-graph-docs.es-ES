@@ -3,12 +3,13 @@ title: tipo de enumeración windowsDeviceType
 description: Contiene las propiedades de tipo de dispositivo de Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 358a9b252af779c513c1d7d07f1fb6052ba4c615
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 90dc42f3747a3f5b6da036ed418561105ce4bd57
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946528"
 ---
 # <a name="windowsdevicetype-enum-type"></a>tipo de enumeración windowsDeviceType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27885564"
 
 Contiene las propiedades de tipo de dispositivo de Windows.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |none|0|Sin marcadores establecidos.|
 |escritorio|1|Si no se admite el tipo de dispositivo de escritorio Windows.|

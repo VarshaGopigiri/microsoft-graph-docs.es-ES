@@ -3,12 +3,13 @@ title: Obtener androidForWorkSettings
 description: Lea las propiedades y las relaciones del objeto androidForWorkSettings.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bfc8b61cbb4e4074659eac660fd2b7dbfc700ddc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 694055193f3ce66843f589637dfe95684009209b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892263"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946416"
 ---
 # <a name="get-androidforworksettings"></a>Obtener androidForWorkSettings
 
@@ -40,7 +41,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

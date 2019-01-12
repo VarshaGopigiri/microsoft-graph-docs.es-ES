@@ -3,12 +3,13 @@ title: Enumerar windows81GeneralConfigurations
 description: Enumere las propiedades y las relaciones de los objetos windows81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 42e17464ab42dec12921b3e4db879d274b09e430
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c3f2fa61491a110e88d2f3f74ad490998ceff724
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880370"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938450"
 ---
 # <a name="list-windows81generalconfigurations"></a>Enumerar windows81GeneralConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -3,12 +3,13 @@ title: managedDeviceEnrollmentTopFailures (función)
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c4c0c19de6d4e7694f20dff54844822e65f95fe9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 163a75a2ffa675f939086fecf3e9c4a155352aa1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934229"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>managedDeviceEnrollmentTopFailures (función)
 
@@ -39,7 +40,7 @@ GET /reports/managedDeviceEnrollmentTopFailures
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,7 +49,7 @@ La siguiente tabla muestra los parámetros que se pueden usar con esta función.
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|period|Cadena|Todavía no documentado|
+|period|String|Todavía no documentado|
 
 
 

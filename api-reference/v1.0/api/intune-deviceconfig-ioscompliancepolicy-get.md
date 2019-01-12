@@ -3,12 +3,13 @@ title: Obtener iosCompliancePolicy
 description: Lea las propiedades y las relaciones del objeto iosCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cfd7ea092053f6dd728b8a984a0a64292400bd8b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 027af90b3d4bdc0d745cffe5ef51f3bd69833d81
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855555"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941614"
 ---
 # <a name="get-ioscompliancepolicy"></a>Obtener iosCompliancePolicy
 
@@ -38,7 +39,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

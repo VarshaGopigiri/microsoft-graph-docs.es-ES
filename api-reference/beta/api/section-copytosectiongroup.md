@@ -2,12 +2,14 @@
 title: 'sección: copyToSectionGroup'
 description: Copia una sección a un grupo de secciones específico.
 localization_priority: Normal
-ms.openlocfilehash: 58907c479096843cdde82ab27eeb318a00fcd32f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 382828d1ce22fbfa6d1983893ee2349d4f061ecc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858684"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942972"
 ---
 # <a name="section-copytosectiongroup"></a>sección: copyToSectionGroup
 
@@ -37,19 +39,19 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación.
 
-| Parámetro    | Tipo   |Description|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
-|siteCollectionId|Cadena|El identificador del sitio de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
-|siteId|Cadena|El identificador del sitio web de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
-|groupId|Cadena|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
-|id|Cadena|Obligatorio. El id. del grupo de secciones de destino. |
-|renameAs|Cadena|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
+|siteCollectionId|String|El identificador del sitio de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
+|siteId|String|El identificador del sitio web de SharePoint para copiar a. Usar únicamente cuando se copia a un sitio de grupo de Office 365.|
+|groupId|String|El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.|
+|id|String|Obligatorio. El id. del grupo de secciones de destino. |
+|renameAs|String|El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||

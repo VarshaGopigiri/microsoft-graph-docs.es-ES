@@ -3,12 +3,13 @@ title: Obtener deviceManagement
 description: Lea las propiedades y las relaciones del objeto deviceManagement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 89156113d0b357bc0d7a76cadad8c2ab7e2e4b91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af4dc08832b09387774ad3ad1642b0103b3b7db9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816271"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936931"
 ---
 # <a name="get-devicemanagement"></a>Obtener deviceManagement
 
@@ -53,7 +54,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

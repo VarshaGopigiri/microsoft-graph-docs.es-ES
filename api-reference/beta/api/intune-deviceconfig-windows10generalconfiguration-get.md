@@ -3,12 +3,13 @@ title: Obtener windows10GeneralConfiguration
 description: Lea las propiedades y las relaciones del objeto windows10GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c21eb0522ea3c673fda6244e834323028bcec26c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a4b7690250862080e53fe5458e178a094672f2b6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816894"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947851"
 ---
 # <a name="get-windows10generalconfiguration"></a>Obtener windows10GeneralConfiguration
 
@@ -42,7 +43,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

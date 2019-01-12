@@ -2,12 +2,14 @@
 title: List calendarView
 description: Obtenga las repeticiones, excepciones e instancias únicas de eventos en una vista de calendario definida por un intervalo de tiempo, desde el calendario del usuario de forma predeterminada,
 localization_priority: Normal
-ms.openlocfilehash: 8db54c6ad12254957fd2c95509ddbebd34813906
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 57c3f184b89db2c0aa983c84db42f7bef1fc5269
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876079"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934964"
 ---
 # <a name="list-calendarview"></a>List calendarView
 
@@ -61,7 +63,7 @@ Este método también admite los [parámetros de consulta de OData](https://deve
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
-| Autorización  | string | {token} de portador. Obligatorio.  |
+| Authorization  | string | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 | Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 

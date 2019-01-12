@@ -3,12 +3,13 @@ title: Tipo de recurso androidForWorkSettings
 description: Configuración de Android for Work
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d96ebd30985b4bea50cf236b3315114db4c3e216
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2bbcb9f21750d1f1f3a07a1567bbf2f8f822e53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873797"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933571"
 ---
 # <a name="androidforworksettings-resource-type"></a>Tipo de recurso androidForWorkSettings
 

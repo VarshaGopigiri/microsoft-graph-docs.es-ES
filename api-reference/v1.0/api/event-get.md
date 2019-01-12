@@ -3,12 +3,13 @@ title: Obtener evento
 description: Obtenga las propiedades y relaciones del objeto event especificado.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: fa525081bf785267edd79823d2ddcba44a9db50a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 278fc8158534f7ffee90195aa76ed4a1f0ac8baf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937078"
 ---
 # <a name="get-event"></a>Obtener evento
 
@@ -72,7 +73,7 @@ Este método admite los [parámetros de consulta de OData](https://developer.mic
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:--------|:--------|
-| Autorización  | string | {token} de portador. Obligatorio.  |
+| Authorization  | string | {token} de portador. Obligatorio.  |
 | Prefer: outlook.timezone  | string | Se usa para especificar la zona horaria de las horas de inicio y final de la respuesta. Si no se especifican, estos valores de hora se devuelven en UTC. Opcional. |
 | Prefer: outlook.body-content-type | string | Formato de la propiedad **body** que se devolverá. Los valores pueden ser "text" o "html". Se devuelve un encabezado `Preference-Applied` como confirmación si se especifica este encabezado `Prefer`. Si no se especifica el encabezado, la propiedad **body** se devuelve en formato HTML. Opcional. |
 

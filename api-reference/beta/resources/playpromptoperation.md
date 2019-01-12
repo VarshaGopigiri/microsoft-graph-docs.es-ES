@@ -3,12 +3,13 @@ title: tipo de recurso playPromptOperation
 description: La operación de playPrompt para obtener el resultado de la acción playPrompt.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: bc18b8f64dedd3fa4d758778bbee37c6bcfd46c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d451418482d1adf1a4b7e16dc8a6eb8ca7febdb7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937820"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
 
@@ -18,15 +19,15 @@ La operación de playPrompt para obtener el resultado de la acción playPrompt.
 
 ## <a name="properties"></a>Propiedades
 
-| Propiedad            | Tipo                        | Description|
+| Propiedad            | Tipo                        | Descripción|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | Cadena                      | El contexto de cliente.                                                                |
-| completionReason    | Cadena                      | Los valores posibles son: `unknown`, `completedSuccessfully` y `mediaOperationCanceled`. |
+| clientContext       | String                      | El contexto de cliente.                                                                |
+| completionReason    | String                      | Los valores posibles son: `unknown`, `completedSuccessfully` y `mediaOperationCanceled`. |
 | createdDateTime     | DateTimeOffset              | La hora de inicio de la operación.                                                   |
-| id                  | Cadena                      | Solo lectura.                                                                         |
+| id                  | String                      | Solo lectura.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | Hora de la última acción de la operación.                                      |
 | resultInfo          | [resultInfo](resultInfo.md) | La información del resultado. Solo lectura. Servidor que se generó.                               |
-| status              | Cadena                      | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`.               |
+| status              | String                      | Los valores posibles son: `notStarted`, `running`, `completed` y `failed`.               |
 
 ## <a name="relationships"></a>Relaciones
 Ninguno

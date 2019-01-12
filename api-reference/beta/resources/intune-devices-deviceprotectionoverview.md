@@ -3,12 +3,13 @@ title: tipo de recurso deviceProtectionOverview
 description: Información de hardware de un dispositivo determinado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 12066877e380c022a1cd1ec49322ab51b8e59d65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f7b7c28474692c1b1df3b1d6a703e3dd43d05a15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811532"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944323"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso deviceProtectionOverview
 
@@ -18,7 +19,7 @@ ms.locfileid: "27811532"
 
 Información de hardware de un dispositivo determinado.
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |totalReportedDeviceCount|Int32|Recuento total del dispositivo.|
 |inactiveThreatAgentDeviceCount|Int32|Dispositivo con recuento de agente de amenaza inactivos|

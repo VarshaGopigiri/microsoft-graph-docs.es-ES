@@ -2,12 +2,14 @@
 title: tipo de enumeración managedAppClipboardSharingLevel
 description: Representa el nivel al que Portapapeles del dispositivo pueden compartirse entre aplicaciones
 localization_priority: Normal
-ms.openlocfilehash: 16d6e9154b3d6e683d9ddce0efd70a40c01c8994
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 349f0ee08b8e3bff4e627c58318e2c21fa00847c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814318"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946787"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>tipo de enumeración managedAppClipboardSharingLevel
 
@@ -15,7 +17,7 @@ ms.locfileid: "27814318"
 
 Representa el nivel al que Portapapeles del dispositivo pueden compartirse entre aplicaciones
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allApps|0|Se permite el uso compartido entre todas las aplicaciones, o no administradas|
 |managedAppsWithPasteIn|1|Se permite el uso compartido entre todas las aplicaciones administradas con pegar en habilitado|

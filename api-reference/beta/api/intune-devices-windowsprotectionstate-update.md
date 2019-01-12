@@ -3,12 +3,13 @@ title: Actualizar windowsProtectionState
 description: Actualizar las propiedades de un objeto windowsProtectionState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 97a11b8a3a26bea6f59cf0791bc8f5356f6fdb85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ce3c4fcd46e2d627f94e1728d38e9a8f0f91ad30
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939878"
 ---
 # <a name="update-windowsprotectionstate"></a>Actualizar windowsProtectionState
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,7 +50,7 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|El identificador único para el objeto de estado de protección de dispositivo. Esto es el identificador de dispositivo del dispositivo|
+|id|String|El identificador único para el objeto de estado de protección de dispositivo. Esto es el identificador de dispositivo del dispositivo|
 |malwareProtectionEnabled|Booleano|Protección contra malware está habilitado o no|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado del equipo (como clean o pendiente de examen completo o pendientes reinicio etcetera). Los valores posibles son: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Booleano|¿Protección en tiempo real está habilitada o no?|
@@ -59,13 +60,13 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 |signatureUpdateOverdue|Booleano|¿Firma caducada o no?|
 |rebootRequired|Booleano|¿Es necesario reiniciar o no?|
 |fullScanRequired|Booleano|¿Examen completo o no necesario?|
-|engineVersion|Cadena|Versión del motor de actual extremo protección|
-|signatureVersion|Cadena|Versión actual de las definiciones de malware|
-|antiMalwareVersion|Cadena|Actual de protección contra malware versión|
+|engineVersion|String|Versión del motor de actual extremo protección|
+|signatureVersion|String|Versión actual de las definiciones de malware|
+|antiMalwareVersion|String|Actual de protección contra malware versión|
 |lastQuickScanDateTime|DateTimeOffset|Fecha y hora último análisis rápido|
 |lastFullScanDateTime|DateTimeOffset|Fecha y hora último análisis rápido|
-|lastQuickScanSignatureVersion|Cadena|Última versión de firma de análisis rápido|
-|lastFullScanSignatureVersion|Cadena|Última versión de firma de examen completo|
+|lastQuickScanSignatureVersion|String|Última versión de firma de análisis rápido|
+|lastFullScanSignatureVersion|String|Última versión de firma de examen completo|
 |lastReportedDateTime|DateTimeOffset|Último estado de mantenimiento de dispositivo el tiempo notificado|
 
 

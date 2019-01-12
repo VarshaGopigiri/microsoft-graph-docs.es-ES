@@ -3,12 +3,13 @@ title: Update eventMessage
 description: Actualiza las propiedades de un objeto eventMessage.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 128849b2b0a1a156ef68498b345ca30833922d82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: a906dbbdb9a82e78a49ea41399e3791c9d52645b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867700"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943889"
 ---
 # <a name="update-eventmessage"></a>Update eventMessage
 
@@ -34,7 +35,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción|
 |:-----------|:------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento no debe incluir valores existentes que no hayan cambiado. Son propiedades Writable/Updatable
@@ -42,7 +43,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 | Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |categories|String|Categorías asociadas al mensaje.|
-|importance|Cadena|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
+|importance|String|La importancia del mensaje. Los valores posibles son: `Low`, `Normal`, `High`.|
 |isDeliveryReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|
 |isRead|Booleano|Indica si se ha leído el mensaje.|
 |isReadReceiptRequested|Booleano|Indica si se solicita confirmación de lectura para el mensaje.|

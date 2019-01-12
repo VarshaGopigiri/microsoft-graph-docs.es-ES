@@ -2,12 +2,14 @@
 title: Revisores accessReview de lista
 description: En el anuncio de Azure access revisa la característica, recuperar los revisores de un objeto accessReview.
 localization_priority: Normal
-ms.openlocfilehash: 042887944902be9a603ae0581835c8d55355f8a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8dca759f71f13af18c291f1af9843da6729ef701
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829375"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946815"
 ---
 # <a name="list-accessreview-reviewers"></a>Revisores accessReview de lista
 
@@ -31,7 +33,7 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Authorization | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

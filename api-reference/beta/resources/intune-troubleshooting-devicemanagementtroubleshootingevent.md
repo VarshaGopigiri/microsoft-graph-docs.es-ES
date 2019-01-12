@@ -3,12 +3,13 @@ title: Tipo de recurso deviceManagementTroubleshootingEvent
 description: Evento que representa un error general.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c640ec2988be09cd19a3e87a00ebb64a3b1be3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c801ae99f10bd376dd917546c4ae375123ed678
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861667"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945933"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
@@ -29,9 +30,9 @@ Evento que representa un error general.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|UUID para el objeto|
+|id|String|UUID para el objeto|
 |eventDateTime|DateTimeOffset|Hora en que ocurrió el evento.|
-|correlationId|Cadena|Id. utilizado para rastrear el error en el servicio.|
+|correlationId|String|Id. utilizado para rastrear el error en el servicio.|
 
 ## <a name="relationships"></a>Relaciones
 Ninguna

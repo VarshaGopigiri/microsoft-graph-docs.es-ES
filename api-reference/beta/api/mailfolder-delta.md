@@ -2,12 +2,14 @@
 title: 'mailFolder: delta'
 description: Obtenga un conjunto de carpetas de correo que se hayan agregado, eliminado o quitado del buzón del usuario.
 localization_priority: Normal
-ms.openlocfilehash: c26d11426c2b2066a4f5fc93b46b8e9b5b79973a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6ada2b7356742ee2d50402d77acb41ecb430fbae
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889351"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939563"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 

@@ -3,12 +3,13 @@ title: Enumerar mobileThreatDefenseConnectors
 description: Enumere las propiedades y las relaciones de los objetos mobileThreatDefenseConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3e026c0faa8f8bc3b2ac158abf72d8e50b584c30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 576aa6090fddc4c5425270ddf6d24b3590aafe7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872957"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945247"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>Enumerar mobileThreatDefenseConnectors
 

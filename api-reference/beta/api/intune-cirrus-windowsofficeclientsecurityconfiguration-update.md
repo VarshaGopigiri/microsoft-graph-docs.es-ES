@@ -3,12 +3,13 @@ title: Actualizar windowsOfficeClientSecurityConfiguration
 description: Actualizar las propiedades de un objeto windowsOfficeClientSecurityConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 52db50c1014833468b9eee435e06c96153aa5fc5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 212ff143d55525a462c6e0cfe6fce7c2d4a7189f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853392"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933928"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>Actualizar windowsOfficeClientSecurityConfiguration
 
@@ -38,7 +39,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,11 +49,11 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Identificador de la directiva de configuración de cliente de office. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|String|Identificador de la directiva de configuración de cliente de office. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |userPreferencePayload|Stream|Configuración de preferencias de JSON de cadenas en formato binario, estos valores pueden ser anulados por el usuario. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |policyPayload|Stream|Configuración de la directiva JSON de cadenas en formato binario, no se puede cambiar estos valores por el usuario. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|descripción|Cadena|Administración descripción proporcionada por el del cliente de office de directiva de configuración. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|displayName|Cadena|Admin proporcionada el nombre de la directiva de configuración de cliente de office. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|descripción|String|Administración descripción proporcionada por el del cliente de office de directiva de configuración. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|String|Admin proporcionada el nombre de la directiva de configuración de cliente de office. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |asignaciones|colección de [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)|La lista de las asignaciones de grupo para la directiva.. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |prioridad|Int32|Valor de prioridad debe ser un valor único para cada directiva de un inquilino y se usará para la resolución de conflictos, los valores más bajos significan prioridad sea alta. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |lastModifiedDateTime|DateTime|Última marca de datetime modificada de la directiva. Se hereda de [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

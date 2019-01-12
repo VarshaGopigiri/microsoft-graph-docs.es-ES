@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts'
 description: Obtiene tendencias de uso sobre la duración en minutos y el tipo de sesiones de conferencia realizadas y organizadas por usuarios de la organización. Entre los tipos de sesiones de conferencia, se incluyen sesiones de audio o vídeo, y sesiones de acceso telefónico local y aceptación de llamadas de Microsoft.
 localization_priority: Normal
-ms.openlocfilehash: bb002c467af1afd5c2c315e20f9f7d1d343ddf62
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: cfa809302996210cdf57560e1f461a2a1d73ef38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850942"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947950"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityminutecounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts
 

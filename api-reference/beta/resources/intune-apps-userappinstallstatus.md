@@ -3,12 +3,13 @@ title: tipo de recurso userAppInstallStatus
 description: Contiene las propiedades para el estado de instalación para un usuario.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f4d848a4fe4cd742df8a83184d539d7ff27290b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f17a504537b1230de175e033779441627f5f98be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885207"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938016"
 ---
 # <a name="userappinstallstatus-resource-type"></a>tipo de recurso userAppInstallStatus
 
@@ -29,15 +30,15 @@ Contiene las propiedades para el estado de instalación para un usuario.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |userName|String|Nombre de usuario.|
-|userPrincipalName|Cadena|Nombre Principal de usuario.|
+|userPrincipalName|String|Nombre Principal de usuario.|
 |installedDeviceCount|Int32|Número de dispositivos instalados.|
 |failedDeviceCount|Int32|Número de dispositivos erróneos.|
 |notInstalledDeviceCount|Int32|Número de dispositivos no instalados.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |aplicación|[mobileApp](../resources/intune-apps-mobileapp.md)|El vínculo de navegación a la aplicación móvil.|
 |deviceStatuses|colección de [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|El estado de instalación de la aplicación en los dispositivos.|

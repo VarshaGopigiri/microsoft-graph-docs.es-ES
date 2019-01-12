@@ -3,12 +3,13 @@ title: Crear importedWindowsAutopilotDeviceIdentity
 description: Crea un objeto importedWindowsAutopilotDeviceIdentity nuevo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 486e9760fcefb2f92be08c3939c77f3e561b9acb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe0b127db8309daddfc000d3c985a687739b68d4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877836"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939255"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Crear importedWindowsAutopilotDeviceIdentity
 
@@ -39,7 +40,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

@@ -3,12 +3,13 @@ title: Get ChartTitle
 description: Recuperar las propiedades y relaciones del objeto charttitle.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 85cddea6b2fe81357b67296b70a4987eb8d8273c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: be6450fc27df46549fbecc5c2a23c8e854d9407e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946381"
 ---
 # <a name="get-charttitle"></a>Get ChartTitle
 

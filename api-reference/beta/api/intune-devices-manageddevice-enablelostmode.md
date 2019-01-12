@@ -3,12 +3,13 @@ title: acción enableLostMode
 description: Habilitar el modo pierden
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0bd7d58a70d60b040b25dcb38574e16edb309599
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807248"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934327"
 ---
 # <a name="enablelostmode-action"></a>acción enableLostMode
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,11 +50,11 @@ En el cuerpo de la solicitud, proporcione una representación JSON de los parám
 
 La siguiente tabla muestra los parámetros que se pueden usar con esta acción.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |message|String|Todavía no documentado|
-|phoneNumber|Cadena|Todavía no documentado|
-|pie de página|Cadena|Todavía no documentado|
+|phoneNumber|String|Todavía no documentado|
+|pie de página|String|Todavía no documentado|
 
 
 

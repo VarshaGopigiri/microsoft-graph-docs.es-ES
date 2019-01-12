@@ -3,12 +3,13 @@ title: Actualizar deviceManagementExchangeConnector
 description: Actualice las propiedades de un objeto deviceManagementExchangeConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ad1dbcd71a6a5cb7fc44f1f82d166d2a76aa598c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d19f4ecd790b4edf712f878c19ae3998c1f217d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830208"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935041"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Actualizar deviceManagementExchangeConnector
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -46,7 +47,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Todavía no documentado|
+|id|String|Todavía no documentado|
 |lastSyncDateTime|DateTimeOffset|Última hora de sincronización para Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Estado del conector de Exchange. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
 |primarySmtpAddress|String|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|

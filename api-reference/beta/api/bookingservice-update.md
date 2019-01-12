@@ -2,12 +2,14 @@
 title: Actualizar bookingservice
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 6eee5949d5d8cee23821d726563b4687febd77a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 6830ebc8fc101c4c9ce60f6157ed6bfdab82748c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838923"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937043"
 ---
 # <a name="update-bookingservice"></a>Actualizar bookingservice
 
@@ -44,19 +46,19 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione los valores de los campos relevantes que deben actualizarse. Las propiedades existentes que no se incluyan en el cuerpo de la solicitud mantendrán los valores anteriores o se recalcularán según los cambios efectuados en otros valores de propiedad. Para obtener el mejor rendimiento, no debe incluir valores existentes que no hayan cambiado.
 
-| Propiedad     | Tipo   |Description|
+| Propiedad     | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |defaultDuration|Duración|La longitud predeterminada del servicio, representado en número de días, horas, minutos y segundos. Por ejemplo, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](../resources/location.md)|La ubicación física de forma predeterminada para el servicio.|
 |defaultPrice|Doble|El precio monetarios predeterminado para el servicio.|
 |defaultPriceType|string|Se carga el modo predeterminado en el servicio. Los valores posibles son: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs` y `notSet`.|
 |defaultReminders|colección de [bookingReminder](../resources/bookingreminder.md)|Establece el valor predeterminado de avisos para una cita de este servicio. El valor de esta propiedad está disponible sólo cuando se lee este **bookingService** por su identificador.|
-|descripción|Cadena|Una descripción de texto para el servicio.|
-|displayName|Cadena|Un nombre de servicio.|
-|emailAddress|Cadena|Una dirección de correo electrónico|
-|id|Cadena| Solo lectura.|
+|descripción|String|Una descripción de texto para el servicio.|
+|displayName|String|Un nombre de servicio.|
+|emailAddress|String|Una dirección de correo electrónico|
+|id|String| Solo lectura.|
 |isHiddenFromCustomers|Booleano|True significa que este servicio no está disponible para los clientes de reserva.|
-|notas|Cadena|Obtener información adicional acerca de este servicio.|
+|notas|String|Obtener información adicional acerca de este servicio.|
 |postBuffer|Duración|Finaliza el tiempo de búfer después de una cita para este servicio y antes de la siguiente cita del cliente se puede reservar.|
 |Búfer|Duración|El tiempo para poder iniciar una cita para este servicio de búfer.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|El conjunto de directivas que determinan cómo deben crearse y administrarse citas para este tipo de servicio.|

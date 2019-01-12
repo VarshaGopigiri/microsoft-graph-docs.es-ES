@@ -3,12 +3,13 @@ title: tipo de recurso androidManagedStoreAccountEnterpriseSettings
 description: Configuración de la empresa para un Android administrados cuenta de almacenamiento.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db31210da358a8b6b7ebc674699dab4c622ae670
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a14f0327c4a4c4cf2bc78e56b63686208e97d4b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869037"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933817"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>tipo de recurso androidManagedStoreAccountEnterpriseSettings
 

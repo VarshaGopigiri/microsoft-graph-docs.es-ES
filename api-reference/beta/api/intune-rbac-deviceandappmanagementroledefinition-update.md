@@ -3,12 +3,13 @@ title: Actualizar deviceAndAppManagementRoleDefinition
 description: Actualice las propiedades de un objeto deviceAndAppManagementRoleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f11266051e85e92d10eecded661f69c40626776b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 102c4c024d02977351f4b7eb6e3586141b3ff3d3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809340"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933606"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>Actualizar deviceAndAppManagementRoleDefinition
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -49,9 +50,9 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|displayName|Cadena|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|descripción|Cadena|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|id|String|Clave de la entidad. Es de solo lectura y generada automáticamente. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|displayName|String|Nombre para mostrar de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|descripción|String|Descripción de la definición de rol. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |permissions|Colección [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |rolePermissions|Colección [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de los permisos de rol que puede realizar este rol. Estos deben coincidir con el actionName que se definió como parte de rolePermission. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |isBuiltInRoleDefinition|Booleano|Tipo de rol. Se establece en True si está integrado o en False si es una definición de rol personalizada. Heredado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|

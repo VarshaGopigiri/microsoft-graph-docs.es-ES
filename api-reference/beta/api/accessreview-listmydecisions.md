@@ -2,12 +2,14 @@
 title: Mis decisiones accessReview de lista
 description: En la característica de revisiones de access Azure AD, recuperar las decisiones de un objeto accessReview para el usuario que realiza la llamada como revisor.
 localization_priority: Normal
-ms.openlocfilehash: 27ae3129810b6019ecf47e23f1e4cc48362df6fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 037b916bca45c74d1918b45e4e9e21b685bd8ae0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819015"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941502"
 ---
 # <a name="list-my-accessreview-decisions"></a>Mis decisiones accessReview de lista
 
@@ -31,7 +33,7 @@ GET /accessReviews('{reviewId}')/myDecisions
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre         | Tipo        | Descripción |
 |:-------------|:------------|:------------|
-| Autorización | string | Bearer \{token\}. Necesario. |
+| Authorization | string | Bearer \{token\}. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 No se debe suministrar ningún cuerpo de la solicitud.

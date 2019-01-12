@@ -2,12 +2,14 @@
 title: 'message: createReply'
 description: 'Cree un borrador de un mensaje de respuesta para incluir un comentario o actualizar las propiedades de mensaje '
 author: angelgolfer-ms
-ms.openlocfilehash: cf7bfb3ce584a17a3e4105d04c7e781b69c4901c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: 27e6aabe05cb732cd40242f3c17c822c920c062e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943742"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -38,15 +40,15 @@ POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 ## <a name="request-headers"></a>Encabezados de solicitud
-| Nombre       | Type | Descripción|
+| Nombre       | Tipo | Descripción|
 |:---------------|:--------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type | string  | Naturaleza de los datos en el cuerpo de una entidad. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros.
 
-| Parámetro    | Type   |Descripción|
+| Parámetro    | Tipo   |Descripción|
 |:---------------|:--------|:----------|
 |comment|String|Comentario que se va a incluir. Puede ser una cadena vacía.|
 |mensaje|[message](../resources/message.md)|Cualquier propiedad grabable para actualizar en el mensaje de respuesta.|

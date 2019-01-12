@@ -2,12 +2,14 @@
 title: 'mensaje: delta'
 description: Obtenga un conjunto de mensajes que se hayan agregado, eliminado o actualizado en una carpeta determinada.
 localization_priority: Priority
-ms.openlocfilehash: b0e5e5a295d7be92e1d4d45f2e079493f1633a45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 180d2378c52e5f01fa9b99d05fa783a8be2f9417
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888364"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936784"
 ---
 # <a name="message-delta"></a>mensaje: delta
 
@@ -52,7 +54,7 @@ El seguimiento de cambios en los mensajes conlleva al menos una llamada de una f
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 | Prefer | string  | odata.maxpagesize={x}. Opcional. |
 
@@ -111,7 +113,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Recursos adicionales
 
 - [Usar la consulta delta para realizar el seguimiento de los cambios en datos de Microsoft Graph](/graph/delta-query-overview)
 - [Obtener los cambios incrementales en los mensajes de una carpeta](/graph/delta-query-messages)

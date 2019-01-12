@@ -3,12 +3,13 @@ title: Acción de sincronización
 description: Todavía no documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06c94a4c0e42f5ec1645e85f8ff091aab8863568
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e42eab564e641036e343a4fa533144d767baf56c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835024"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944036"
 ---
 # <a name="sync-action"></a>Acción de sincronización
 
@@ -38,7 +39,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

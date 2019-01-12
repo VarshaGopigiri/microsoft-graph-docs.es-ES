@@ -3,12 +3,13 @@ title: Eliminar enrollmentTroubleshootingEvent
 description: Elimina un enrollmentTroubleshootingEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c34e53f7c23d4eb6c7c281b02d7fc77a945313f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 456870226fb10cf6e011746116948d9ae7c57f72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839658"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937603"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>Eliminar enrollmentTroubleshootingEvent
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

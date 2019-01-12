@@ -3,12 +3,13 @@ title: Actualizar deviceConfigurationUserStatus
 description: Actualice las propiedades de un objeto deviceConfigurationUserStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a530d3ea918a4b3e2b0d52cfdc3f8cfa87310fdf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8893df062b6080d00dea898008e52b8e4ea219f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863647"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938975"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>Actualizar deviceConfigurationUserStatus
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -56,12 +57,12 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |userDisplayName|String|Nombre de usuario de DevicePolicyStatus.|
 |devicesCount|Int32|Número de dispositivos para dicho usuario.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado de cumplimiento del informe de directiva. Los valores posibles son: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict` y `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Fecha y hora de la última modificación del informe de directiva.|
-|userPrincipalName|Cadena|UserPrincipalName.|
+|userPrincipalName|String|UserPrincipalName.|
 
 
 

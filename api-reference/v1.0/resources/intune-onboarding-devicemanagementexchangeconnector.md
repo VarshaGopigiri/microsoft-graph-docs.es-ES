@@ -3,12 +3,13 @@ title: Tipo de recurso deviceManagementExchangeConnector
 description: Entidad que representa una conexión a un entorno de Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5706bdefd9ef8f250bf26a63380c66874dbf25b9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1167cb4a56b4a378ee5b7e946fa3e748247c4612
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822095"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948412"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Tipo de recurso deviceManagementExchangeConnector
 
@@ -28,7 +29,7 @@ Entidad que representa una conexión a un entorno de Exchange.
 ## <a name="properties"></a>Propiedades
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Todavía no documentado|
+|id|String|Todavía no documentado|
 |lastSyncDateTime|DateTimeOffset|Última hora de sincronización para Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Estado del conector de Exchange. Los valores posibles son: `none`, `connectionPending`, `connected` y `disconnected`.|
 |primarySmtpAddress|String|Dirección de correo electrónico que se usó para configurar el Exchange Connector de Service To Service.|

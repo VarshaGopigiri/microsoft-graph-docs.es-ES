@@ -2,12 +2,14 @@
 title: 'usuario: findRooms'
 description: 'Obtenga todas las salas de reuniones en el inquilino del usuario o en una lista de salas específicas. '
 localization_priority: Priority
-ms.openlocfilehash: 12ddd4c6956d743322ff86c93c5d445f6966e29a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845419"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934012"
 ---
 # <a name="user-findrooms"></a>usuario: findRooms
 
@@ -47,14 +49,14 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 ## <a name="query-parameters"></a>Parámetros de consulta
 
-| Parámetro de consulta       | Tipo | Description |
+| Parámetro de consulta       | Tipo | Descripción |
 |:---------------|:----------|:----------|
 | RoomList | string | La dirección SMTP asociada con la lista de salas. Cada lista de salas está representada por una instancia de [emailAddress](../resources/emailaddress.md) que incluya una dirección SMTP. |
 
 ## <a name="request-headers"></a>Encabezados de solicitud
 | Nombre       | Tipo | Descripción |
 |:---------------|:----------|:----------|
-| Autorización  | string  | {token} de portador. Obligatorio. |
+| Authorization  | string  | {token} de portador. Obligatorio. |
 | Content-Type  | string  | application/json. Obligatorio. |
 
 

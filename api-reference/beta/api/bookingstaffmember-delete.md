@@ -2,12 +2,14 @@
 title: Eliminar bookingStaffMember
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Normal
-ms.openlocfilehash: 16ee4c5fa244e3507238abd0a696b31477173e11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 7aa2fd114a4d53b462dcd0b66e75808e52ef9ada
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946878"
 ---
 # <a name="delete-bookingstaffmember"></a>Eliminar bookingStaffMember
 

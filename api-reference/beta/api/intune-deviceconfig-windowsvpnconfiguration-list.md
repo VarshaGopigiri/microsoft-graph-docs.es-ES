@@ -3,12 +3,13 @@ title: Lista windowsVpnConfigurations
 description: Propiedades de la lista y relaciones de los objetos windowsVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6fa2ade3dfd2a4cb0d9199eb315a1b42736e9218
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cbf77b9dae93087331270c2b8e91dff49dd7e965
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873146"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944288"
 ---
 # <a name="list-windowsvpnconfigurations"></a>Lista windowsVpnConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

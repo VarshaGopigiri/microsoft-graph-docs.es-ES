@@ -3,12 +3,13 @@ title: Actualizar windowsAssignedAccessProfile
 description: Actualizar las propiedades de un objeto windowsAssignedAccessProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4bfa70208a456d7b7d2a2d0ae524d9edd9508cab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f82a1ad5a5bdea639ec3dc24f40a3c66c4a0fe1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867049"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940382"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>Actualizar windowsAssignedAccessProfile
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -48,8 +49,8 @@ La siguiente tabla muestran las propiedades que son necesarias cuando se crea el
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
-|nombre del perfil|Cadena|Esto es un nombre descriptivo usado para identificar un grupo de aplicaciones, el diseño de estas aplicaciones en el menú Inicio y los usuarios a quienes se asigna esta configuración de quiosco.|
+|id|String|Clave de la entidad.|
+|nombre del perfil|String|Esto es un nombre descriptivo usado para identificar un grupo de aplicaciones, el diseño de estas aplicaciones en el menú Inicio y los usuarios a quienes se asigna esta configuración de quiosco.|
 |showTaskBar|Booleano|Esta opción le permite al administrador especificar si se muestra la barra de tareas o no.|
 |appUserModelIds|Colección String|Estos son el único almacén de aplicaciones de Windows que estará disponible para iniciar desde el menú Inicio.|
 |desktopAppPaths|Colección String|Estas son las rutas de acceso de las aplicaciones de escritorio que estará disponible en el menú Inicio y las aplicaciones sólo el usuario podrá iniciar.|

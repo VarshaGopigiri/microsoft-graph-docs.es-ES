@@ -3,12 +3,13 @@ title: tipo de recurso teamsApp
 description: Una aplicación en el catálogo de aplicaciones de Microsoft Teams.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 8f3e5b094b46376bd9ad5e9e888d76f8a995fed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 2493b7f6adee51e5c5622585055cbd3cf2778656
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880832"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937449"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -38,7 +39,7 @@ Los usuarios pueden ver estas aplicaciones en la Store Teams Microsoft, y estas 
 
 ### <a name="teamsappdistributionmethod-values"></a>valores de teamsAppDistributionMethod
 
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |almacén|0| La aplicación está disponible para todos los inquilinos a través de la tienda de aplicaciones Microsoft Teams.|
 |organización|1|La aplicación sólo está disponible en este inquilino.|
@@ -46,7 +47,7 @@ Los usuarios pueden ver estas aplicaciones en la Store Teams Microsoft, y estas 
 
 ## <a name="relationships"></a>Relaciones
 
-| Relación | Tipo   | Description |
+| Relación | Tipo   | Descripción |
 |:---------------|:--------|:----------|
 |appDefinitions|colección de [teamsAppDefinition](teamsappdefinition.md)| Los detalles de cada versión de la aplicación. |
 
@@ -67,7 +68,7 @@ Los usuarios pueden ver estas aplicaciones en la Store Teams Microsoft, y estas 
 }
 ```
 
-# <a name="see-also"></a>Vea también
+# <a name="see-also"></a>Recursos adicionales
 
 - [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)

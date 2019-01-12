@@ -2,12 +2,13 @@
 title: Actualizar schemaExtensions
 description: Actualice las propiedades de la definición del schemaExtension especificado.
 localization_priority: Normal
-ms.openlocfilehash: 4e9ebcb020fe5aa8a549a79405963feb462b61e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: cdd0ac41e65e72ba16f5111c8b67869321f934dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823565"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938499"
 ---
 # <a name="update-schemaextension"></a>Actualizar schemaExtensions
 
@@ -50,7 +51,7 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 | Propiedad   | Tipo |Descripción|
 |:---------------|:--------|:----------|
-|description|Cadena|Descripción de la extensión de esquema.|
+|description|String|Descripción de la extensión de esquema.|
 |properties|Colección [extensionSchemaProperty](../resources/extensionschemaproperty.md)|La colección de nombres de propiedad y tipos que conforman la definición de la extensión de esquema. Solo se admiten cambios para agregar elementos. |
 |status|Cadena|El estado del ciclo de vida de la extensión de esquema. El estado inicial después de su creación es **InDevelopment**. Transiciones de los Estados posibles son de **InDevelopment** a **disponible** y **disponible** para **ya no se utiliza**.|
 |targetTypes|Colección string|Conjunto de tipos de Microsoft Graph (compatibles con extensiones) a los que se puede aplicar la extensión de esquema.  Solo se admiten cambios para agregar elementos.|
@@ -98,7 +99,7 @@ Content-length: 201
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Agregar datos personalizados a los recursos mediante extensiones](/graph/extensibility-overview)
 - [Agregar datos personalizados a los grupos mediante extensiones de esquema](/graph/extensibility-schema-groups)

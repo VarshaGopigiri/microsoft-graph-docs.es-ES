@@ -3,12 +3,13 @@ title: Eliminar roleAssignment
 description: Elimina un roleAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa7e906b2ab4944789488dcf24658eb4421bb420
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b27b964cd480310508bc9e9e456c50a4cea75437
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889967"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937036"
 ---
 # <a name="delete-roleassignment"></a>Eliminar roleAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud

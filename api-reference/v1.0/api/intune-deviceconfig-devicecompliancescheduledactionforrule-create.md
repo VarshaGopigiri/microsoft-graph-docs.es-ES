@@ -3,12 +3,13 @@ title: Crear deviceComplianceScheduledActionForRule
 description: Cree un objeto deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6eca5f5f381c069410477ff98004ac5ebd094ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fac03ca9bf037a92bdc36cbadbf1ac7da437e849
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870172"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941761"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Crear deviceComplianceScheduledActionForRule
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 ## <a name="request-headers"></a>Encabezados de solicitud
 |Encabezado|Valor|
 |:---|:---|
-|Autorización|Se requiere &lt;token&gt; de portador.|
+|Authorization|Se requiere &lt;token&gt; de portador.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -46,7 +47,7 @@ En la tabla siguiente se muestran las propiedades necesarias para crear el objet
 
 |Propiedad|Tipo|Descripción|
 |:---|:---|:---|
-|id|Cadena|Clave de la entidad.|
+|id|String|Clave de la entidad.|
 |ruleName|String|Nombre de la regla a la que se aplica esta acción programada.|
 
 
