@@ -2,12 +2,14 @@
 title: Organizar mensajes de Outlook
 description: 'Outlook permite a los clientes organizar sus mensajes como prefieran, tanto si quieren dejar todos sus mensajes en la carpeta Bandeja de entrada como si prefieren organizar sus mensajes en una estructura de carpetas tipo árbol dentro de la Bandeja de entrada para adaptarse a sus necesidades específicas. Puede filtrar, buscar u organizar los mensajes según le convenga en '
 author: angelgolfer-ms
-ms.openlocfilehash: cb75da8e800fccf13c639188b04b07b62c3c6431
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 6be52f7a2d0b97b9ff03a2fde0d2a7ff32e317ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307542"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981682"
 ---
 # <a name="organize-outlook-messages"></a>Organizar mensajes de Outlook
 

@@ -2,12 +2,14 @@
 title: Actualizar la configuración del buzón del usuario
 description: Actualice uno o varios valores de configuración del buzón del usuario. Esto incluye la configuración de las respuestas automáticas (avisar a los usuarios de forma automática tras la recepción de su correo electrónico), la configuración regional (idioma y país o región), la zona horaria y el horario laboral.
 localization_priority: Normal
-ms.openlocfilehash: cfc19337ed96a3cfefcfe5778807bc81e4c72fc7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 78547e19335a65410e201b872e9514abf4656096
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840647"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983803"
 ---
 # <a name="update-user-mailbox-settings"></a>Actualizar la configuración del buzón del usuario
 

@@ -2,12 +2,14 @@
 title: tipo de recurso accessReviewDecision
 description: En el anuncio de Azure access revisa la característica, el `accessReviewDecision` representa una decisión de revisión de Azure AD acceso de acceso de una entidad determinada.  Dentro de una revisión de access, o una instancia de una revisión periódica de acceso, hay una `accessReviewDecision` por usuario revisado.  Por ejemplo, si un grupo tiene dos invitados y que no sean uno Invitado como miembros y una revisión de acceso de los invitados se realiza para dicho grupo, a continuación, habrá dos objetos de toma de decisiones de revisión de access.  Si un revisor cambia su decisión o reemplaza a otro revisor, entonces el `accessReviewDecision` se ha actualizado.
 localization_priority: Normal
-ms.openlocfilehash: 208337f3427fad65499b400dee769d379c38dcb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b6b10a53726e12c37a598f8df735a3f70174c807
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870052"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977559"
 ---
 # <a name="accessreviewdecision-resource-type"></a>tipo de recurso accessReviewDecision
 
@@ -24,7 +26,7 @@ Ninguno.  Objetos de este tipo se crean automáticamente por la característica 
 
 Esta tabla muestra las propiedades de objetos de este tipo de bases. 
 
-| Propiedad                        | Tipo                         | Description                                                                                            |
+| Propiedad                        | Tipo                         | Descripción                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `id`                            |`String`                      | El identificador de la decisión dentro de la revisión de access.                                                                                     |
 | `accessReviewId`                |`String`                      | El identificador generado por la característica de la revisión de access.                                                                                       |
@@ -40,7 +42,7 @@ Esta tabla muestra las propiedades de objetos de este tipo de bases.
 
 Además, las propiedades adicionales pueden estar presentes según el tipo de objeto del objeto que poseen el acceso a la que se ha decidido.  Por ejemplo, si la decisión de revisión de acceso es la pertenencia a grupos de un usuario en particular o acceso a la aplicación, el usuario que potencialmente se va a tener su acceso se ha quitado se identifica a través de estas propiedades:
 
-| Propiedad                        | Tipo                         | Description                                                                                            |
+| Propiedad                        | Tipo                         | Descripción                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `userId`                            |`String`                      | El identificador de usuario cuyo acceso se ha revisado.                                                                                    |
 | `userDisplayName`                            |`String`                      | El nombre para mostrar del usuario cuyo acceso se ha revisado.                                                                                     |

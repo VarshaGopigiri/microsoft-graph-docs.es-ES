@@ -1,13 +1,15 @@
 ---
 title: El flujo de datos de la API de seguridad de Microsoft Graph
 description: La API de seguridad de Microsoft Graph federa solicitudes a todos los proveedores en el ecosistema de seguridad de Microsoft Graph. Esto se basa en el consentimiento del proveedor de seguridad proporcionado por la aplicación, como se muestra en el siguiente diagrama. El flujo de trabajo de consentimiento solo se aplica a los proveedores que no son de Microsoft.
-author: Preetikr
-ms.openlocfilehash: 5e70414409a35cc7fdef6fb85e6454e26a79bd38
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: preetikr
+localization_priority: Priority
+ms.prod: security
+ms.openlocfilehash: 47731520b9ae959212750aea4f9668d58ac85a08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354743"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987814"
 ---
 # <a name="microsoft-graph-security-api-data-flow"></a>El flujo de datos de la API de seguridad de Microsoft Graph
 

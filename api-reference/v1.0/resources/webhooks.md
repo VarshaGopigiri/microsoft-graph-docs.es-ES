@@ -2,12 +2,13 @@
 title: Usar la API de gráfico de Microsoft para obtener las notificaciones de cambios
 description: La API de REST de Microsoft Graph usa un mecanismo webhook para entregar notificaciones a los clientes. Un cliente es un servicio web que configura su propia dirección URL para recibir notificaciones. Aplicaciones cliente usar notificaciones para actualizar su estado cuando se producen cambios. Para obtener más detalles, incluido cómo suscribirse a y controlar las notificaciones recibidas, vea el conjunto de seguridad de las notificaciones de los cambios en los datos de usuario.
 localization_priority: Priority
-ms.openlocfilehash: e846e31870e2d14a1e7822cbb9f42682c8b2ac1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: cb522c50b2cd9fec007dd32d4257dd68fc56ea6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860868"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981416"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar la API de gráfico de Microsoft para obtener las notificaciones de cambios
 

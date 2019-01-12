@@ -2,12 +2,14 @@
 title: Obtener la programación de disponibilidad de usuarios y recursos (versión preliminar)
 description: En el trabajo o la escuela, es común querer ver cuándo un usuario está libre para una reunión o mirar la disponibilidad de un equipo, sala o equipamiento durante un período de tiempo.
 author: angelgolfer-ms
-ms.openlocfilehash: 2f201ed552200f7c8dd55b368a504b4eca1e3ba5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 18497a7178086fea25fb581fb2ba7c5c82fbe204
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317762"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981269"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Obtener la programación de disponibilidad de usuarios y recursos (versión preliminar)
 

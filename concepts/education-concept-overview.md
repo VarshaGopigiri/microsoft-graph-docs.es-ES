@@ -2,12 +2,14 @@
 title: Información general sobre la API de educación
 description: La API de educación de Microsoft Graph mejora los recursos de Office 365 con información relevante para escenarios del ámbito educativo, como información sobre centros educativos, clases, usuarios (alumnos y profesores), tareas y envíos. Esto le permite crear fácilmente soluciones que se integren con recursos educativos para distintos escenarios de clase y centros educativos.
 author: mmast-msft
-ms.openlocfilehash: 2085c9be619e3de5eb4df457579461445423113a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: education
+ms.openlocfilehash: 0d3f5360d0ef40283021a1e037c40df66d90dd92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344992"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985490"
 ---
 # <a name="education-api-overview"></a>Información general sobre la API de educación
 
