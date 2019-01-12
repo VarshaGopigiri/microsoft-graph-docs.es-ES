@@ -2,59 +2,61 @@
 title: Crear plannerPlan
 description: Use esta API para crear un objeto **plannerPlan**.
 localization_priority: Normal
-ms.openlocfilehash: 6f0b2dcca22aa065c0c05d990813d84865c56241
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: c7ed6ae0311bd821812c1ed5fed686dfb011e3e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840183"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918633"
 ---
-# <a name="create-plannerplan"></a><span data-ttu-id="6c430-103">Crear plannerPlan</span><span class="sxs-lookup"><span data-stu-id="6c430-103">Create plannerPlan</span></span>
+# <a name="create-plannerplan"></a><span data-ttu-id="9cc35-103">Crear plannerPlan</span><span class="sxs-lookup"><span data-stu-id="9cc35-103">Create plannerPlan</span></span>
 
-> <span data-ttu-id="6c430-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="6c430-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6c430-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="6c430-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9cc35-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="9cc35-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9cc35-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="9cc35-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6c430-106">Use esta API para crear un objeto **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="6c430-106">Use this API to create a new **plannerPlan**.</span></span>
+<span data-ttu-id="9cc35-106">Use esta API para crear un objeto **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="9cc35-106">Use this API to create a new **plannerPlan**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6c430-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="6c430-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9cc35-107">Permisos</span><span class="sxs-lookup"><span data-stu-id="9cc35-107">Permissions</span></span>
 
-<span data-ttu-id="6c430-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6c430-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9cc35-p102">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9cc35-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6c430-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="6c430-110">Permission type</span></span>                        | <span data-ttu-id="6c430-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="6c430-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="9cc35-110">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="9cc35-110">Permission type</span></span>                        | <span data-ttu-id="9cc35-111">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="9cc35-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="6c430-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="6c430-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="6c430-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6c430-113">Group.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="6c430-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6c430-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c430-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6c430-115">Not supported.</span></span>                              |
-| <span data-ttu-id="6c430-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="6c430-116">Application</span></span>                            | <span data-ttu-id="6c430-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="6c430-117">Not supported.</span></span>                              |
+| <span data-ttu-id="9cc35-112">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="9cc35-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="9cc35-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cc35-113">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="9cc35-114">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9cc35-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cc35-115">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9cc35-115">Not supported.</span></span>                              |
+| <span data-ttu-id="9cc35-116">Aplicación</span><span class="sxs-lookup"><span data-stu-id="9cc35-116">Application</span></span>                            | <span data-ttu-id="9cc35-117">No admitida.</span><span class="sxs-lookup"><span data-stu-id="9cc35-117">Not supported.</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="6c430-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="6c430-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9cc35-118">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="9cc35-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /planner/plans
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6c430-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="6c430-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9cc35-119">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="9cc35-119">Request headers</span></span>
 
-| <span data-ttu-id="6c430-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="6c430-120">Name</span></span>          | <span data-ttu-id="6c430-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="6c430-121">Description</span></span>               |
+| <span data-ttu-id="9cc35-120">Nombre</span><span class="sxs-lookup"><span data-stu-id="9cc35-120">Name</span></span>          | <span data-ttu-id="9cc35-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="9cc35-121">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="6c430-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6c430-122">Authorization</span></span> | <span data-ttu-id="6c430-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="6c430-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9cc35-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9cc35-122">Authorization</span></span> | <span data-ttu-id="9cc35-p103">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="9cc35-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6c430-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="6c430-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9cc35-125">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="9cc35-125">Request body</span></span>
 
-<span data-ttu-id="6c430-p104">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerPlan](../resources/plannerplan.md). La propiedad de propietario **plannerPlan** se debe establecer en un identificador de un objeto [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="6c430-p104">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object. The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.</span></span>
+<span data-ttu-id="9cc35-p104">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerPlan](../resources/plannerplan.md). La propiedad de propietario **plannerPlan** se debe establecer en un identificador de un objeto [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="9cc35-p104">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object. The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.</span></span>
 
-><span data-ttu-id="6c430-128">**Nota:** El usuario que está creando el plan debe ser miembro del grupo que será el propietario del plan.</span><span class="sxs-lookup"><span data-stu-id="6c430-128">**Note:** The user who is creating the plan must be a member of the group that will own the plan.</span></span> <span data-ttu-id="6c430-129">Cuando se crea un nuevo grupo mediante el uso de [Create group](../api/group-post-groups.md), no se agregan al grupo como un miembro.</span><span class="sxs-lookup"><span data-stu-id="6c430-129">When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member.</span></span> <span data-ttu-id="6c430-130">Una vez creado el grupo, agregarse como un miembro mediante el uso [grupo post (miembros)](../api/group-post-members.md).</span><span class="sxs-lookup"><span data-stu-id="6c430-130">After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).</span></span>
+><span data-ttu-id="9cc35-128">**Nota:** El usuario que está creando el plan debe ser miembro del grupo que será el propietario del plan.</span><span class="sxs-lookup"><span data-stu-id="9cc35-128">**Note:** The user who is creating the plan must be a member of the group that will own the plan.</span></span> <span data-ttu-id="9cc35-129">Cuando se crea un nuevo grupo mediante el uso de [Create group](../api/group-post-groups.md), no se agregan al grupo como un miembro.</span><span class="sxs-lookup"><span data-stu-id="9cc35-129">When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member.</span></span> <span data-ttu-id="9cc35-130">Una vez creado el grupo, agregarse como un miembro mediante el uso [grupo post (miembros)](../api/group-post-members.md).</span><span class="sxs-lookup"><span data-stu-id="9cc35-130">After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="6c430-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6c430-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9cc35-131">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9cc35-131">Response</span></span>
 
-<span data-ttu-id="6c430-132">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [plannerPlan](../resources/plannerplan.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6c430-132">If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
+<span data-ttu-id="9cc35-132">Si se ejecuta correctamente, este método devuelve un código de respuesta `201 Created` y el objeto [plannerPlan](../resources/plannerplan.md) en el cuerpo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9cc35-132">If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
 
-<span data-ttu-id="6c430-p106">Este método puede devolver cualquiera de los [códigos de estado HTTP](/graph/errors). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 400, 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="6c430-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="9cc35-p106">Este método puede devolver cualquiera de los [códigos de estado HTTP](/graph/errors). Los errores más comunes que deben controlar las aplicaciones de este método son las respuestas 400, 403 y 404. Para obtener más información sobre estos errores, vea [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions) (Condiciones de error habituales de Planner).</span><span class="sxs-lookup"><span data-stu-id="9cc35-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="6c430-136">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="6c430-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9cc35-136">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9cc35-136">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="6c430-137">Solicitud</span><span class="sxs-lookup"><span data-stu-id="6c430-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9cc35-137">Solicitud</span><span class="sxs-lookup"><span data-stu-id="9cc35-137">Request</span></span>
 
-<span data-ttu-id="6c430-138">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6c430-138">Here is an example of the request.</span></span>
+<span data-ttu-id="9cc35-138">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9cc35-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
@@ -70,11 +72,11 @@ Content-length: 381
 }
 ```
 
-<span data-ttu-id="6c430-139">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerPlan](../resources/plannerplan.md).</span><span class="sxs-lookup"><span data-stu-id="6c430-139">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.</span></span>
+<span data-ttu-id="9cc35-139">En el cuerpo de la solicitud, proporcione una representación JSON del objeto [plannerPlan](../resources/plannerplan.md).</span><span class="sxs-lookup"><span data-stu-id="9cc35-139">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.</span></span>
 
-### <a name="response"></a><span data-ttu-id="6c430-140">Respuesta</span><span class="sxs-lookup"><span data-stu-id="6c430-140">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9cc35-140">Respuesta</span><span class="sxs-lookup"><span data-stu-id="9cc35-140">Response</span></span>
 
-<span data-ttu-id="6c430-p107">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="6c430-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="9cc35-p107">Aquí tiene un ejemplo de la respuesta. Nota: Puede que el objeto de respuesta que aparece aquí se trunque para abreviar. Todas las propiedades se devolverán de una llamada real.</span><span class="sxs-lookup"><span data-stu-id="9cc35-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
