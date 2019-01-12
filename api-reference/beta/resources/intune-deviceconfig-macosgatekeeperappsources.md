@@ -3,12 +3,13 @@ title: tipo de enumeración macOSGatekeeperAppSources
 description: Opciones de origen de la aplicación para Mac OS equipo selector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6c784dba6a79b6a9d406e3632d2ac4beaf2a47ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c2c1d553408b7269a53f9fc3500493a44bc3645
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888371"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918118"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>tipo de enumeración macOSGatekeeperAppSources
 
@@ -18,7 +19,7 @@ ms.locfileid: "27888371"
 
 Opciones de origen de la aplicación para Mac OS equipo selector.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |No configurado|0|Valor predeterminado de dispositivo, sin intención.|
 |macAppStore|1|Se pueden ejecutar sólo aplicaciones desde el AppStore Mac.|

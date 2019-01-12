@@ -3,12 +3,13 @@ title: Quitar educationUser de un educationSchool
 description: Elimine un usuario de un centro educativo.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 0c4e4f1642ac30cebf76a058172b00fc7c2deca3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 1998f6043e4141de923a7b209e013a536920c10f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874868"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916729"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Quitar educationUser de un educationSchool
 

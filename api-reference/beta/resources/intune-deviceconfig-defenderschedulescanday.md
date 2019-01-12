@@ -3,12 +3,13 @@ title: tipo de enumeración defenderScheduleScanDay
 description: 'Valores posibles de DefenderScheduleScanDay '
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2fd7bd34ddda9adabb774dda849926b980136d54
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 51d7fa5a51cc0adda7e0ce6bcaa9c01a3d2fa607
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820835"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924352"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>tipo de enumeración defenderScheduleScanDay
 
@@ -18,7 +19,7 @@ ms.locfileid: "27820835"
 
 Valores posibles de DefenderScheduleScanDay 
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |cotidianas|0|Cada día|
 |lunes|1|lunes|

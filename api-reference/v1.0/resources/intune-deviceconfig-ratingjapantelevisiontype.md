@@ -3,12 +3,13 @@ title: tipo de enumeración ratingJapanTelevisionType
 description: Etiquetas de clasificación de contenido de TV en Japón
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1fd512a8aaf3952874b0f2a936c4a5c7a154c408
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c78b05ad0787737f0d468d63b6da78902cf8700f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811896"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920236"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>tipo de enumeración ratingJapanTelevisionType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27811896"
 
 Etiquetas de clasificación de contenido de TV en Japón
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que todos los TV muestra contenido|
 |allBlocked|1|No permitir que cualquier TV muestra contenido|

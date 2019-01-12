@@ -3,12 +3,13 @@ title: List calendars
 description: Recupera una lista de calendarios que pertenecen a un grupo de calendarios.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 55af5ab454b6afe534a1a8d2efa76de7a0e7f9d3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5852e43e32b58a714e44dcbcad2a77e3f1999bf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922938"
 ---
 # <a name="list-calendars"></a>List calendars
 

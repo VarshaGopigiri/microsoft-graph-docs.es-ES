@@ -2,12 +2,14 @@
 title: 'Range: OffsetRange'
 description: Obtiene un objeto que representa un intervalo desplazado con respecto al intervalo especificado. La dimensión del intervalo devuelto coincidirá con este intervalo. Si el intervalo resultante se fuerza fuera de los límites de la cuadrícula de la hoja de cálculo, se producirá una excepción.
 localization_priority: Normal
-ms.openlocfilehash: d1486c3ee4271d9e9acafeb2883ca4522f598d1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 4f1a513a33185dba976398e31caf4996005feb67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925801"
 ---
 # <a name="range-offsetrange"></a>Range: OffsetRange
 

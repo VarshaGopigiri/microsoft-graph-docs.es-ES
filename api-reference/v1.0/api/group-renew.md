@@ -2,12 +2,14 @@
 title: 'group: renew'
 description: Renueva la expiración de un grupo. Cuando se renueva un grupo, la expiración del grupo se amplía por el número de días definidos en la directiva.
 localization_priority: Normal
-ms.openlocfilehash: 401a1ff278be792b5e19af415e11a865e3a86bb4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 46a51d0a1d4bea5cebc4c3178f6776d80f313fbd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849353"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922735"
 ---
 # <a name="group-renew"></a>group: renew
 

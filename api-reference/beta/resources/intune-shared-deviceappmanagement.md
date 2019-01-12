@@ -3,12 +3,13 @@ title: Tipo de recurso deviceAppManagement
 description: Entidad singleton que actúa como un contenedor para todas las funcionalidades de administración de aplicaciones de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7be07f04c33dcb81ab0dfe350290fa95fb8c1679
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a68d9ff7b86adb1aa64f487b585fd505a40e7fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885109"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922147"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
@@ -37,7 +38,7 @@ Entidad singleton que actúa como un contenedor para todas las funcionalidades d
 |microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|La información del portal de usuario final se usa para sincronizar las aplicaciones de Portal de empresa Intune de Microsoft Store para la empresa. Hay tres opciones para elegir entre \['Sólo el portal de la empresa', 'Almacenar compañía del portal y privada', 'Sólo almacén privado'\]. Los valores posibles son: `none`, `companyPortal` y `privateStore`.|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |**Aplicaciones**|
 |enterpriseCodeSigningCertificates|colección de [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|El código de empresa de Windows certificado de firma.|

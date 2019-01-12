@@ -2,12 +2,14 @@
 title: tipo de recurso locationManagementCondition
 description: Contiene la información para definir una condición de administración de la ubicación, un área de interés, para supervisar.
 localization_priority: Normal
-ms.openlocfilehash: 85d3b638c81990a98623501b8dcb3ad0705f2e6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 541cf74decad641f6dc7751945e1d0ffceee1366
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832637"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922980"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>tipo de recurso locationManagementCondition
 
@@ -38,7 +40,7 @@ Hereda de [managementCondition](../resources/intune-fencing-managementcondition.
 |applicablePlatforms|colección de [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Las plataformas aplicables para esta condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 
 ## <a name="relationships"></a>Relaciones
-|Relación|Tipo|Description|
+|Relación|Tipo|Descripción|
 |:---|:---|:---|
 |managementConditionStatements|colección de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Las instrucciones de condición de administración asociadas a la condición de administración. Se hereda de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 

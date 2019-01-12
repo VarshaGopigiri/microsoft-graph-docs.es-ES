@@ -3,12 +3,13 @@ title: Crear windowsManagedDevice
 description: Crear un nuevo objeto windowsManagedDevice.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e23b24365d30954c4da1597ca9d7c14c554a73ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 25e51376e6dce43f7b2ba49e819b89789570895c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842661"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916659"
 ---
 # <a name="create-windowsmanageddevice"></a>Crear windowsManagedDevice
 

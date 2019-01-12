@@ -3,12 +3,13 @@ title: tipo de enumeración prereleaseFeatures
 description: Valores posibles para las características anteriores a la versión.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 78faf2e9360154b3562cbc52c97ff5f6c4e75219
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 25d9f74247780779ec229aacdb732276fd3c4003
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821262"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918171"
 ---
 # <a name="prereleasefeatures-enum-type"></a>tipo de enumeración prereleaseFeatures
 
@@ -18,7 +19,7 @@ ms.locfileid: "27821262"
 
 Valores posibles para las características anteriores a la versión.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |userDefined|0|Definido por el usuario, valor predeterminado, sin intención.|
 |settingsOnly|1|Características de configuración preliminares sólo.|

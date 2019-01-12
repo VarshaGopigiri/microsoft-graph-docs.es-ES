@@ -3,12 +3,13 @@ title: tipo de enumeración edgeSearchEngineType
 description: Permite admind de TI establecer un motor de búsqueda predeterminado predefinidos para dispositivos controlados MDM
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29845e90418649b965d5b0ca1e5d9df211d4ae43
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c528479d0cb3a04e5ff4cddf082f22616fba2111
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804805"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919928"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>tipo de enumeración edgeSearchEngineType
 
@@ -16,7 +17,7 @@ ms.locfileid: "27804805"
 
 Permite admind de TI establecer un motor de búsqueda predeterminado predefinidos para dispositivos controlados MDM
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |Es el valor predeterminado.|0|Usa la configuración de fábrica del borde para asignar el motor de búsqueda predeterminado según el mercado de usuario|
 |Bing|1|Establece a Bing como el motor de búsqueda predeterminado|

@@ -3,12 +3,13 @@ title: tipo de enumeración healthState
 description: Indica el estado de mantenimiento de la aplicación de administración de Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4b50023a71aaf33e2febf43e3ce96a1223eaa2ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b38dcefa57b467f688cc7b91ca2406250333ad1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878781"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922770"
 ---
 # <a name="healthstate-enum-type"></a>tipo de enumeración healthState
 
@@ -18,7 +19,7 @@ ms.locfileid: "27878781"
 
 Indica el estado de mantenimiento de la aplicación de administración de Windows.
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Estado desconocido.|
 |buen estado|1|Buen estado.|

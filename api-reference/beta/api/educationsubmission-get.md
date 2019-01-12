@@ -3,12 +3,13 @@ title: Obtener educationSubmission
 description: 'Recuperar un envío determinado. Un objeto de envío representa el trabajo de un alumno para una asignación. Los recursos asociados con el envío representan este trabajo. Sólo el alumno a que se asigna el envío puede ver y modificar la presentación. Un profesor tiene acceso total a todos los envíos. '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 4eacc6ce261566afdc6d712172d35a46f9d9e595
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: e58ca86361204a05fa1a71febe7ecfab3d91181a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915700"
 ---
 # <a name="get-educationsubmission"></a>Obtener educationSubmission
 

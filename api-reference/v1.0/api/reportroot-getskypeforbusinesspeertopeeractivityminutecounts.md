@@ -1,12 +1,14 @@
 ---
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts'
 description: Obtiene tendencias de uso sobre la duración en minutos y el tipo de sesiones de punto a punto realizadas en la organización. Entre los tipos de sesiones, se incluyen sesiones de audio y vídeo.
-ms.openlocfilehash: 9ca15c11711071269f3fdceb2dd2b061c4602f13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.prod: reports
+ms.openlocfilehash: 0c6a47aa59f2118ce1d50ceb4a80f511ec1c8d87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27031932"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920523"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityminutecounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 

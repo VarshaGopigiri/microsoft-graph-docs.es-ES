@@ -2,12 +2,14 @@
 title: Iniciar sincronización después de cargar archivos en un educationSynchronizationProfile
 description: Compruebe los archivos cargan en un perfil de sincronización de datos de school específicos en el inquilino. Si la comprobación se realiza correctamente, se iniciará la sincronización en el perfil. De lo contrario, la respuesta contendrá errores y advertencias. Si la respuesta contiene errores, no se iniciará la sincronización. Si la respuesta contiene sólo las advertencias, se iniciará la sincronización.
 localization_priority: Normal
-ms.openlocfilehash: 465ab6a807fc6af10067d048459c440c7c567361
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: efdc0863a1de58f7ebf46492b662e632972275c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866741"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915252"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar sincronización después de cargar archivos en un educationSynchronizationProfile
 

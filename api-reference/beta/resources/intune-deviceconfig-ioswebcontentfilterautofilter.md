@@ -2,12 +2,14 @@
 title: tipo de recurso iosWebContentFilterAutoFilter
 description: Representa un tipo de configuración de filtro de contenido Web, que habilita la característica de filtro automático de iOS y permite para control de acceso de dirección URL adicional de iOS. Cuando se construye sin valores de propiedad, el dispositivo iOS habilitará el filtro automático independientemente.
 localization_priority: Normal
-ms.openlocfilehash: 02576565ecf764d33312477531d6a76c61911cb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 03e3c4f51e673be1e2bada89e06a26048fe4e385
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916784"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>tipo de recurso iosWebContentFilterAutoFilter
 
@@ -20,7 +22,7 @@ Representa un tipo de configuración de filtro de contenido Web, que habilita la
 Hereda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)
 
 ## <a name="properties"></a>Propiedades
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |allowedUrls|Colección String|Direcciones URL adicionales permitidas para el acceso|
 |blockedUrls|Colección String|Bloqueada el acceso de las direcciones URL adicionales|

@@ -3,12 +3,13 @@ title: Tipo de recurso deviceOperatingSystemSummary
 description: Resumen de sistemas operativos de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0b69e8fa922df976a75a3750523da982582e073e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fbb82189e9d8153cef28e516169351272195fa30
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879509"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918465"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 

@@ -3,12 +3,13 @@ title: tipo de enumeración ratingCanadaMoviesType
 description: Películas clasificación etiquetas en Canadá
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c9443a673ab9e97ef6cb4967018f35bcb8b3b932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 469bbf1b177df8bdf40dcdfea4ef6b0c4721cd3c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826491"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918479"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>tipo de enumeración ratingCanadaMoviesType
 
@@ -18,7 +19,7 @@ ms.locfileid: "27826491"
 
 Películas clasificación etiquetas en Canadá
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |allAllowed|0|Valor predeterminado, permitir que el contenido de todas las películas|
 |allBlocked|1|No permitir cualquier contenido de películas|

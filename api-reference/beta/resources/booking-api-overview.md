@@ -2,12 +2,14 @@
 title: Usar la API de reservas de Microsoft en Microsoft Graph
 description: " > **Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción."
 localization_priority: Priority
-ms.openlocfilehash: def9260654baafe1953d629265c4b76a2afd2748
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 494b13016c20124e1a81f996d332c97c15e46852
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845538"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915735"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Usar la API de reservas de Microsoft en Microsoft Graph
 
@@ -77,7 +79,7 @@ Authorization: Bearer {access token}
 
 En la siguiente tabla se enumera las operaciones comunes para una empresa de la API de reservas.
 
-| Casos de uso        | Recursos de REST | Vea también |
+| Casos de uso        | Recursos de REST | Consulte también |
 |:---------------|:--------|:----------|
 | Crear, obtener, actualizar o eliminar una empresa | [bookingBusiness](bookingbusiness.md) | [Métodos de bookingBusiness](bookingbusiness.md#methods) |
 | Actualización de la directiva de programación | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Actualizar un bookingBusiness](../api/bookingbusiness-update.md) |

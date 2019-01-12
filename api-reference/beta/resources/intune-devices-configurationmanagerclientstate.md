@@ -3,12 +3,13 @@ title: tipo de enumeración configurationManagerClientState
 description: Estado de cliente del Administrador de configuración
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 36abbe4451a6e053387b27fce3e9a4e25dcc1a95
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fc6f3f2db68273097d70ba9dccc6844b86afa3f6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806254"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923890"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>tipo de enumeración configurationManagerClientState
 
@@ -18,7 +19,7 @@ ms.locfileid: "27806254"
 
 Estado de cliente del Administrador de configuración
 ## <a name="members"></a>Miembros
-|Miembro	|Valor|Description|
+|Miembro	|Valor|Descripción|
 |:---|:---|:---|
 |desconocido|0|Agente de configuración del administrador es más antiguo que 1806 o no está instalado o este dispositivo no ha desprotegido en Intune durante más de 30 días.|
 |instalado|1|El agente de configuración del administrador está instalado pero es posible que no se aparece en la consola de administrador de configuración todavía. Espere unas cuantas horas para que pueda actualizar.|

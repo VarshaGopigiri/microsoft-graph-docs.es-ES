@@ -3,12 +3,13 @@ title: Crear mobileAppProvisioningConfigGroupAssignment
 description: Crear un nuevo objeto mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0cc03def8a3df440c1a4d98ee60dd30554a7086d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d08b5001f5c9ef8abc42085fb9840f726ede4446
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838041"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925493"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Crear mobileAppProvisioningConfigGroupAssignment
 
@@ -46,7 +47,7 @@ En el cuerpo de la solicitud, proporcionar una representación de JSON para el o
 
 La siguiente tabla muestran las propiedades que son necesarias cuando se crea el mobileAppProvisioningConfigGroupAssignment.
 
-|Propiedad|Tipo|Description|
+|Propiedad|Tipo|Descripción|
 |:---|:---|:---|
 |targetGroupId|Cadena|El identificador del grupo AAD en la que se refiere a la aplicación de configuración de aprovisionamiento.|
 |id|Cadena|Clave de la entidad.|
