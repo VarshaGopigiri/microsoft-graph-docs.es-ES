@@ -2,56 +2,58 @@
 title: 'sección: copyToNotebook'
 description: Copia una sección a un bloc de notas específico.
 localization_priority: Normal
-ms.openlocfilehash: fae817d1d256de490a246a43dfbfe6ca3a8c4e3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: e122f8f7dfee82caa026ff569899516af4205ac2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856304"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991062"
 ---
-# <a name="section-copytonotebook"></a><span data-ttu-id="d6ffd-103">sección: copyToNotebook</span><span class="sxs-lookup"><span data-stu-id="d6ffd-103">section: copyToNotebook</span></span>
-<span data-ttu-id="d6ffd-104">Copia una sección a un bloc de notas específico.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-104">Copies a section to a specific notebook.</span></span>
+# <a name="section-copytonotebook"></a><span data-ttu-id="73eaf-103">sección: copyToNotebook</span><span class="sxs-lookup"><span data-stu-id="73eaf-103">section: copyToNotebook</span></span>
+<span data-ttu-id="73eaf-104">Copia una sección a un bloc de notas específico.</span><span class="sxs-lookup"><span data-stu-id="73eaf-104">Copies a section to a specific notebook.</span></span>
 
-<span data-ttu-id="d6ffd-105">En el caso de las operaciones de copia, siga un patrón de llamada asincrónico:  Llame primero a la acción de copiar y, a continuación, sondee el extremo de la operación para obtener el resultado.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-105">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d6ffd-106">Permisos</span><span class="sxs-lookup"><span data-stu-id="d6ffd-106">Permissions</span></span>
-<span data-ttu-id="d6ffd-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d6ffd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="73eaf-105">En el caso de las operaciones de copia, siga un patrón de llamada asincrónico:  Llame primero a la acción de copiar y, a continuación, sondee el extremo de la operación para obtener el resultado.</span><span class="sxs-lookup"><span data-stu-id="73eaf-105">For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.</span></span>
+## <a name="permissions"></a><span data-ttu-id="73eaf-106">Permisos</span><span class="sxs-lookup"><span data-stu-id="73eaf-106">Permissions</span></span>
+<span data-ttu-id="73eaf-p101">Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Permisos](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="73eaf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d6ffd-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="d6ffd-109">Permission type</span></span>      | <span data-ttu-id="d6ffd-110">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="d6ffd-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="73eaf-109">Tipo de permiso</span><span class="sxs-lookup"><span data-stu-id="73eaf-109">Permission type</span></span>      | <span data-ttu-id="73eaf-110">Permisos (de menos a más privilegiados)</span><span class="sxs-lookup"><span data-stu-id="73eaf-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d6ffd-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="d6ffd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d6ffd-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6ffd-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d6ffd-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d6ffd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d6ffd-114">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d6ffd-114">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="d6ffd-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="d6ffd-115">Application</span></span> | <span data-ttu-id="d6ffd-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6ffd-116">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="73eaf-111">Delegado (cuenta profesional o educativa)</span><span class="sxs-lookup"><span data-stu-id="73eaf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="73eaf-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="73eaf-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="73eaf-113">Delegado (cuenta personal de Microsoft)</span><span class="sxs-lookup"><span data-stu-id="73eaf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="73eaf-114">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="73eaf-114">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="73eaf-115">Aplicación</span><span class="sxs-lookup"><span data-stu-id="73eaf-115">Application</span></span> | <span data-ttu-id="73eaf-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="73eaf-116">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d6ffd-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="d6ffd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="73eaf-117">Solicitud HTTP</span><span class="sxs-lookup"><span data-stu-id="73eaf-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/copyToNotebook
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/copyToNotebook
 POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ```
-## <a name="request-headers"></a><span data-ttu-id="d6ffd-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="d6ffd-118">Request headers</span></span>
-| <span data-ttu-id="d6ffd-119">Nombre</span><span class="sxs-lookup"><span data-stu-id="d6ffd-119">Name</span></span>       | <span data-ttu-id="d6ffd-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="d6ffd-120">Type</span></span> | <span data-ttu-id="d6ffd-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="d6ffd-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="73eaf-118">Encabezados de solicitud</span><span class="sxs-lookup"><span data-stu-id="73eaf-118">Request headers</span></span>
+| <span data-ttu-id="73eaf-119">Nombre</span><span class="sxs-lookup"><span data-stu-id="73eaf-119">Name</span></span>       | <span data-ttu-id="73eaf-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="73eaf-120">Type</span></span> | <span data-ttu-id="73eaf-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="73eaf-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="d6ffd-122">Autorización</span><span class="sxs-lookup"><span data-stu-id="d6ffd-122">Authorization</span></span>  | <span data-ttu-id="d6ffd-123">string</span><span class="sxs-lookup"><span data-stu-id="d6ffd-123">string</span></span>  | <span data-ttu-id="d6ffd-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d6ffd-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d6ffd-126">Content-Type</span></span> | <span data-ttu-id="d6ffd-127">string</span><span class="sxs-lookup"><span data-stu-id="d6ffd-127">string</span></span> | `application/json` |
+| <span data-ttu-id="73eaf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="73eaf-122">Authorization</span></span>  | <span data-ttu-id="73eaf-123">string</span><span class="sxs-lookup"><span data-stu-id="73eaf-123">string</span></span>  | <span data-ttu-id="73eaf-p102">{token} de portador. Obligatorio.</span><span class="sxs-lookup"><span data-stu-id="73eaf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="73eaf-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="73eaf-126">Content-Type</span></span> | <span data-ttu-id="73eaf-127">string</span><span class="sxs-lookup"><span data-stu-id="73eaf-127">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="d6ffd-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="d6ffd-128">Request body</span></span>
-<span data-ttu-id="d6ffd-129">En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-129">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
+## <a name="request-body"></a><span data-ttu-id="73eaf-128">Cuerpo de la solicitud</span><span class="sxs-lookup"><span data-stu-id="73eaf-128">Request body</span></span>
+<span data-ttu-id="73eaf-129">En el cuerpo de la solicitud, proporcione un objeto JSON que contenga los parámetros que necesita la operación.</span><span class="sxs-lookup"><span data-stu-id="73eaf-129">In the request body, provide a JSON object that contains the parameters that your operation needs.</span></span>
 
-| <span data-ttu-id="d6ffd-130">Parámetro</span><span class="sxs-lookup"><span data-stu-id="d6ffd-130">Parameter</span></span>    | <span data-ttu-id="d6ffd-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d6ffd-131">Type</span></span>   |<span data-ttu-id="d6ffd-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="d6ffd-132">Description</span></span>|
+| <span data-ttu-id="73eaf-130">Parámetro</span><span class="sxs-lookup"><span data-stu-id="73eaf-130">Parameter</span></span>    | <span data-ttu-id="73eaf-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="73eaf-131">Type</span></span>   |<span data-ttu-id="73eaf-132">Descripción</span><span class="sxs-lookup"><span data-stu-id="73eaf-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d6ffd-133">groupId</span><span class="sxs-lookup"><span data-stu-id="d6ffd-133">groupId</span></span>|<span data-ttu-id="d6ffd-134">Cadena</span><span class="sxs-lookup"><span data-stu-id="d6ffd-134">String</span></span>|<span data-ttu-id="d6ffd-p103">El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-p103">The id of the group to copy to. Use only when copying to an Office 365 group.</span></span>|
-|<span data-ttu-id="d6ffd-137">id</span><span class="sxs-lookup"><span data-stu-id="d6ffd-137">id</span></span>|<span data-ttu-id="d6ffd-138">Cadena</span><span class="sxs-lookup"><span data-stu-id="d6ffd-138">String</span></span>|<span data-ttu-id="d6ffd-p104">Obligatorio. El id. del bloc de notas de destino.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-p104">Required. The id of the destination notebook.</span></span> |
-|<span data-ttu-id="d6ffd-141">renameAs</span><span class="sxs-lookup"><span data-stu-id="d6ffd-141">renameAs</span></span>|<span data-ttu-id="d6ffd-142">Cadena</span><span class="sxs-lookup"><span data-stu-id="d6ffd-142">String</span></span>|<span data-ttu-id="d6ffd-p105">El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-p105">The name of the copy. Defaults to the name of the existing item.</span></span> |
+|<span data-ttu-id="73eaf-133">groupId</span><span class="sxs-lookup"><span data-stu-id="73eaf-133">groupId</span></span>|<span data-ttu-id="73eaf-134">String</span><span class="sxs-lookup"><span data-stu-id="73eaf-134">String</span></span>|<span data-ttu-id="73eaf-p103">El id. del grupo al que se debe copiar. Debe usarse solo cuando copie a un grupo de Office 365.</span><span class="sxs-lookup"><span data-stu-id="73eaf-p103">The id of the group to copy to. Use only when copying to an Office 365 group.</span></span>|
+|<span data-ttu-id="73eaf-137">id</span><span class="sxs-lookup"><span data-stu-id="73eaf-137">id</span></span>|<span data-ttu-id="73eaf-138">String</span><span class="sxs-lookup"><span data-stu-id="73eaf-138">String</span></span>|<span data-ttu-id="73eaf-p104">Obligatorio. El id. del bloc de notas de destino.</span><span class="sxs-lookup"><span data-stu-id="73eaf-p104">Required. The id of the destination notebook.</span></span> |
+|<span data-ttu-id="73eaf-141">renameAs</span><span class="sxs-lookup"><span data-stu-id="73eaf-141">renameAs</span></span>|<span data-ttu-id="73eaf-142">String</span><span class="sxs-lookup"><span data-stu-id="73eaf-142">String</span></span>|<span data-ttu-id="73eaf-p105">El nombre de la copia. Tiene como valor predeterminado el nombre del elemento existente.</span><span class="sxs-lookup"><span data-stu-id="73eaf-p105">The name of the copy. Defaults to the name of the existing item.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="d6ffd-145">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d6ffd-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="73eaf-145">Respuesta</span><span class="sxs-lookup"><span data-stu-id="73eaf-145">Response</span></span>
 
-<span data-ttu-id="d6ffd-p106">Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted` y un encabezado `Operation-Location`. Sondee el extremo de Operation-Location para [obtener el estado de la operación de copia](onenoteoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="d6ffd-p106">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
+<span data-ttu-id="73eaf-p106">Si se ejecuta correctamente, este método devuelve un código de respuesta `202 Accepted` y un encabezado `Operation-Location`. Sondee el extremo de Operation-Location para [obtener el estado de la operación de copia](onenoteoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="73eaf-p106">If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="d6ffd-148">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d6ffd-148">Example</span></span>
-<span data-ttu-id="d6ffd-149">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-149">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="d6ffd-150">Solicitud</span><span class="sxs-lookup"><span data-stu-id="d6ffd-150">Request</span></span>
-<span data-ttu-id="d6ffd-151">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-151">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="73eaf-148">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="73eaf-148">Example</span></span>
+<span data-ttu-id="73eaf-149">Aquí tiene un ejemplo de cómo llamar a esta API.</span><span class="sxs-lookup"><span data-stu-id="73eaf-149">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="73eaf-150">Solicitud</span><span class="sxs-lookup"><span data-stu-id="73eaf-150">Request</span></span>
+<span data-ttu-id="73eaf-151">Aquí tiene un ejemplo de la solicitud.</span><span class="sxs-lookup"><span data-stu-id="73eaf-151">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "section_copytonotebook"
@@ -68,8 +70,8 @@ Content-length: 84
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="d6ffd-152">Respuesta</span><span class="sxs-lookup"><span data-stu-id="d6ffd-152">Response</span></span>
-<span data-ttu-id="d6ffd-153">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d6ffd-153">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="73eaf-152">Respuesta</span><span class="sxs-lookup"><span data-stu-id="73eaf-152">Response</span></span>
+<span data-ttu-id="73eaf-153">Aquí tiene un ejemplo de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="73eaf-153">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

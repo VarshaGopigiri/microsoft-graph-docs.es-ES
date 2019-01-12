@@ -2,28 +2,30 @@
 title: tipo de recurso teamGuestSettings
 description: Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el equipo.
 localization_priority: Normal
-ms.openlocfilehash: 15644f3761329589a4d770e777ae5fd63751e6be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: d601ac704734f4c46e8b7bef9e8d3feb45905384
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851544"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987296"
 ---
-# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="e5faf-103">tipo de recurso teamGuestSettings</span><span class="sxs-lookup"><span data-stu-id="e5faf-103">teamGuestSettings resource type</span></span>
+# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="2b9f3-103">tipo de recurso teamGuestSettings</span><span class="sxs-lookup"><span data-stu-id="2b9f3-103">teamGuestSettings resource type</span></span>
 
-> <span data-ttu-id="e5faf-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="e5faf-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e5faf-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="e5faf-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2b9f3-104">**Importante:** Las API de la versión /beta de Microsoft Graph son una versión preliminar y están sujetas a cambios.</span><span class="sxs-lookup"><span data-stu-id="2b9f3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2b9f3-105">No se admite el uso de estas API en aplicaciones de producción.</span><span class="sxs-lookup"><span data-stu-id="2b9f3-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e5faf-106">Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el [equipo](team.md).</span><span class="sxs-lookup"><span data-stu-id="e5faf-106">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
+<span data-ttu-id="2b9f3-106">Configuración para configurar si los invitados pueden crear, actualizar o eliminar los canales en el [equipo](team.md).</span><span class="sxs-lookup"><span data-stu-id="2b9f3-106">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e5faf-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="e5faf-107">Properties</span></span>
-| <span data-ttu-id="e5faf-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="e5faf-108">Property</span></span>     | <span data-ttu-id="e5faf-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="e5faf-109">Type</span></span>   |<span data-ttu-id="e5faf-110">Description</span><span class="sxs-lookup"><span data-stu-id="e5faf-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="2b9f3-107">Propiedades</span><span class="sxs-lookup"><span data-stu-id="2b9f3-107">Properties</span></span>
+| <span data-ttu-id="2b9f3-108">Propiedad</span><span class="sxs-lookup"><span data-stu-id="2b9f3-108">Property</span></span>     | <span data-ttu-id="2b9f3-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="2b9f3-109">Type</span></span>   |<span data-ttu-id="2b9f3-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b9f3-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e5faf-111">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="e5faf-111">allowCreateUpdateChannels</span></span>|<span data-ttu-id="e5faf-112">Booleano</span><span class="sxs-lookup"><span data-stu-id="e5faf-112">Boolean</span></span>|<span data-ttu-id="e5faf-113">Si se establece en true, invitados puede agregar y actualizar los canales.</span><span class="sxs-lookup"><span data-stu-id="e5faf-113">If set to true, guests can add and update channels.</span></span>|
-|<span data-ttu-id="e5faf-114">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="e5faf-114">allowDeleteChannels</span></span>|<span data-ttu-id="e5faf-115">Booleano</span><span class="sxs-lookup"><span data-stu-id="e5faf-115">Boolean</span></span>|<span data-ttu-id="e5faf-116">Si se establece en true, invitados puede eliminar canales.</span><span class="sxs-lookup"><span data-stu-id="e5faf-116">If set to true, guests can delete channels.</span></span>|
+|<span data-ttu-id="2b9f3-111">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="2b9f3-111">allowCreateUpdateChannels</span></span>|<span data-ttu-id="2b9f3-112">Booleano</span><span class="sxs-lookup"><span data-stu-id="2b9f3-112">Boolean</span></span>|<span data-ttu-id="2b9f3-113">Si se establece en true, invitados puede agregar y actualizar los canales.</span><span class="sxs-lookup"><span data-stu-id="2b9f3-113">If set to true, guests can add and update channels.</span></span>|
+|<span data-ttu-id="2b9f3-114">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="2b9f3-114">allowDeleteChannels</span></span>|<span data-ttu-id="2b9f3-115">Booleano</span><span class="sxs-lookup"><span data-stu-id="2b9f3-115">Boolean</span></span>|<span data-ttu-id="2b9f3-116">Si se establece en true, invitados puede eliminar canales.</span><span class="sxs-lookup"><span data-stu-id="2b9f3-116">If set to true, guests can delete channels.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e5faf-117">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="e5faf-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2b9f3-117">Representación JSON</span><span class="sxs-lookup"><span data-stu-id="2b9f3-117">JSON representation</span></span>
 
-<span data-ttu-id="e5faf-118">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="e5faf-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2b9f3-118">La siguiente es una representación JSON del recurso</span><span class="sxs-lookup"><span data-stu-id="2b9f3-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
